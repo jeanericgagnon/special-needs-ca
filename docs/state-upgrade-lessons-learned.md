@@ -252,3 +252,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Older State Refresh Scripts Must Not Regress Newer Family Repairs
 *   **Problem:** Georgia’s `batch37` blocker-refresh runner and test still expected legal aid to be blocked even after a later repair pass had already upgraded legal aid to reviewed statewide first-party coverage. Re-running the stale helper would have rewritten the packet back to an older, less truthful state.
 *   **Lesson:** Whenever a later state-specific repair changes one family’s packet truth, update any older refresh helpers and their tests that still rewrite that state’s summary, gap matrix, verified sources, or blocker queues. A state refresh script must never regress a newer reviewed family upgrade just because its own batch assumptions are stale.
+
+### Browser-Visible Official Pages Can Falsely Look Like Static 403s
+*   **Problem:** Georgia DBHDD region pages returned `403` in the low-token static fetch lane and were treated as dead or forbidden, while browser-visible official pages still exposed counties served and DD intake contacts.
+*   **Lesson:** Before final-blocking an official county-grade family on repeated static `403` shells, run one bounded browser-visible verification pass on the same reviewed official URLs. Treat a static/browser mismatch as a scraper-lane blocker that needs browser-assisted rehydration, not as proof that the official source family is gone.

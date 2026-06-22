@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T01:17:32.501Z",
+  "generatedAt": "2026-06-22T01:40:33.447Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 36,
@@ -698,7 +698,7 @@
       "familyStatuses": {
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "blocked_official_county_table_blank",
+        "developmental_disability_idd_authority": "blocked_browser_assisted_region_rehydration_required",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
@@ -712,7 +712,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_county_lookup_table_has_empty_county_cells",
+      "packetPrimaryGapReason": "browser_visible_official_region_pages_not_rehydrated_from_static_403_shells",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

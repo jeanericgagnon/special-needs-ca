@@ -1,0 +1,14 @@
+{
+  "batch": "batch_56_georgia_dd_browser_assisted_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_family": "developmental_disability_idd_authority",
+  "failure_code": "browser_visible_official_region_pages_not_rehydrated_from_static_403_shells",
+  "evidence_samples": 4,
+  "remaining_blockers": [
+    "developmental_disability_idd_authority",
+    "district_or_county_education_routing"
+  ]
+}

@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_county_lookup_table_has_empty_county_cells",
+  "primary_gap_reason": "browser_visible_official_region_pages_not_rehydrated_from_static_403_shells",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "developmental_disability_idd_authority",
@@ -44,9 +44,9 @@
     {
       "family": "developmental_disability_idd_authority",
       "severity": "critical",
-      "failure_code": "official_county_lookup_table_has_empty_county_cells",
-      "evidence": "Official DBHDD county table renders 159 region rows but 159/159 county cells are blank in static HTML, and the obvious same-domain region field-office leaves return 2 HTTP 403 responses, so county-to-region coverage remains unprovable from current official evidence.",
-      "next_action": "keep_blocked_until_official_county_names_or_machine_readable_mapping_are_exposed"
+      "failure_code": "browser_visible_official_region_pages_not_rehydrated_from_static_403_shells",
+      "evidence": "Live browser-visible official DBHDD Region 2, 3, and 6 field-office pages prove the region leaves are still active and include counties served plus intake contacts, but the low-token static fetch lane still records 403 shells for the region pages and reviewed saved evidence has not yet rehydrated all six regions into a deterministic 159-county map.",
+      "next_action": "rerun_dbhdd_region_pages_through_browser_assisted_county_extraction_for_all_six_regions"
     },
     {
       "family": "district_or_county_education_routing",

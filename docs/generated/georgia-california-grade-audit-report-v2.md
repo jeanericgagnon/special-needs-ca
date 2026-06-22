@@ -4,13 +4,13 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 159
-- primary_gap_reason: official_county_lookup_table_has_empty_county_cells
+- primary_gap_reason: browser_visible_official_region_pages_not_rehydrated_from_static_403_shells
 
 ## Family status
 
 - medicaid_state_health_coverage: verified_state_grade (statewide evidence is present at the required authority level)
 - medicaid_waiver_hcbs_disability_services: verified_state_grade (statewide evidence is present at the required authority level)
-- developmental_disability_idd_authority: blocked_official_county_table_blank (Official DBHDD county mapping remains unprovable because the live county table renders blank county cells in static HTML and the obvious same-domain region field-office leaves do not close county coverage.)
+- developmental_disability_idd_authority: blocked_browser_assisted_region_rehydration_required (Live browser-visible official DBHDD Region 2, 3, and 6 field-office pages prove the region leaves are still active and include counties served plus intake contacts, but the low-token static fetch lane still records 403 shells for the region pages and reviewed saved evidence has not yet rehydrated all six regions into a deterministic 159-county map.)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted (Reviewed district-owned education exact leaves verified (5) across the bounded Georgia packet evidence, but county-grade coverage still cannot be proven for all 159 counties without reopening broader district discovery.)
@@ -24,14 +24,14 @@
 
 ## Failure ledger
 
-- developmental_disability_idd_authority: official_county_lookup_table_has_empty_county_cells :: Official DBHDD county table renders 159 region rows but 159/159 county cells are blank in static HTML, and the obvious same-domain region field-office leaves return 2 HTTP 403 responses, so county-to-region coverage remains unprovable from current official evidence.
+- developmental_disability_idd_authority: browser_visible_official_region_pages_not_rehydrated_from_static_403_shells :: Live browser-visible official DBHDD Region 2, 3, and 6 field-office pages prove the region leaves are still active and include counties served plus intake contacts, but the low-token static fetch lane still records 403 shells for the region pages and reviewed saved evidence has not yet rehydrated all six regions into a deterministic 159-county map.
 - district_or_county_education_routing: bounded_official_district_leaf_packet_exhausted_before_county_grade_coverage :: Verified district-owned exact leaves remain limited to 5 reviewed pages across bounded Georgia packet evidence; that does not truthfully prove county-grade district routing statewide.
 
 ## Verified source samples
 
 - medicaid_state_health_coverage: verified_state_grade; samples=3; first=https://dph.georgia.gov/babies-cant-wait
 - medicaid_waiver_hcbs_disability_services: verified_state_grade; samples=2; first=https://dbhdd.georgia.gov/nowcomp
-- developmental_disability_idd_authority: blocked_official_county_table_blank; samples=3; first=https://dbhdd.georgia.gov/regional-field-office-county
+- developmental_disability_idd_authority: blocked_browser_assisted_region_rehydration_required; samples=4; first=https://dbhdd.georgia.gov/regional-field-office-county
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dph.georgia.gov/babies-cant-wait
 - special_education_idea_part_b: verified_state_grade; samples=3; first=https://www.csraresa.org
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted; samples=5; first=https://www.cherokeek12.net/divisions/curriculum-instruction/special-educationsection-504
@@ -45,13 +45,12 @@
 
 ## Next actions
 
-- [critical] developmental_disability_idd_authority: keep_blocked_until_official_county_names_or_machine_readable_mapping_are_exposed
+- [critical] developmental_disability_idd_authority: rerun_dbhdd_region_pages_through_browser_assisted_county_extraction_for_all_six_regions
 - [critical] district_or_county_education_routing: hold_blocked_until_new_exact_district_targets_are_authored
 
 ## Georgia final blocker decision
 
-- Developmental disability routing remains blocked because the official DBHDD county table still renders 159/159 blank county cells in static HTML, and the obvious same-domain region field-office leaves remain non-proving or forbidden.
-- District or county education routing remains blocked because only 5 reviewed district-owned leaves across the bounded packet evidence have been verified; that is not enough to truthfully prove county-grade routing across 159 Georgia counties without reopening broad district discovery.
-- Legal aid is now verified at the statewide support layer because Georgia Legal Services Program proves 154 counties outside Metro Atlanta and Atlanta Legal Aid proves Clayton, Cobb, DeKalb, Fulton, and Gwinnett county legal-aid routing from first-party pages.
-- Georgia Advocacy Office and Parent to Parent of Georgia remain upgraded out of the blocker list because verified first-party statewide evidence already existed on disk.
-- Georgia remains blocked and not index-safe until the DD county mapping and district-grade education families have county-grade proof.
+- Developmental disability routing remains blocked, but the old “region pages are forbidden/gone” story was too weak. Live browser-visible official DBHDD Region 2, 3, and 6 pages now prove the region leaves are still active and expose counties served plus DD intake contacts.
+- Georgia still cannot upgrade the DD family to California-grade in this pass because the low-token static fetch lane saved 403 shells for all six region pages and the reviewed artifact chain still has not rehydrated all six regions into a deterministic 159-county county-to-region map.
+- District or county education routing remains blocked because only 5 reviewed district-owned exact leaves across the bounded Georgia packet evidence have been verified; that is not enough to truthfully prove county-grade routing across 159 Georgia counties without reopening broad district discovery.
+- Georgia remains blocked and not index-safe until the DD family completes browser-assisted six-region rehydration and education gains new exact district-owned county leaves.
