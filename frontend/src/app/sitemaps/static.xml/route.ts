@@ -54,9 +54,9 @@ export async function GET() {
       }
     } else if (url.routeType === 'state-hub') {
       const stateProgs = stateProgramsMap[url.stateId] || [];
-      const dates = stateProgs.map(p => p.last_verified_date).filter(Boolean) as string[];
+      const dates = stateProgs.map((p: any) => p.last_verified_date).filter(Boolean) as string[];
       const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-      const scores = stateProgs.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+      const scores = stateProgs.map((p: any) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
       const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
       const policy = evaluateSeoPolicy({
@@ -64,9 +64,9 @@ export async function GET() {
         stateId: url.stateId,
         entityCount: stateProgs.length,
         confidenceScore: avgScore,
-        hasOfficialSource: stateProgs.length > 0 && stateProgs.some(p => !!p.official_source_url),
+        hasOfficialSource: stateProgs.length > 0 && stateProgs.some((p: any) => !!p.official_source_url),
         lastVerifiedDate: minDate,
-        hasNoPlaceholderData: stateProgs.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+        hasNoPlaceholderData: stateProgs.every((p: any) => assertNoPlaceholderData(JSON.stringify(p)))
       });
       if (shouldIncludeInSitemap(policy)) {
         filteredStaticUrls.push({ ...url, lastmod: minDate });
@@ -91,9 +91,9 @@ export async function GET() {
         const hasRequiredContactInfo = offices.length > 0;
         const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(details));
 
-        const rcDates = rcs.map(rc => rc.last_verified_date).filter(Boolean) as string[];
-        const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean) as string[];
-        const coDates = offices.map(co => co.last_verified_date).filter(Boolean) as string[];
+        const rcDates = rcs.map((rc: any) => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = countyDistricts.map((sd: any) => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = offices.map((co: any) => co.last_verified_date).filter(Boolean) as string[];
         const allDates = [...rcDates, ...sdDates, ...coDates];
         const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
@@ -103,9 +103,9 @@ export async function GET() {
           }
         }
 
-        const rcScores = rcs.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
-        const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
-        const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+        const rcScores = rcs.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const sdScores = countyDistricts.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const coScores = offices.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
         const allScores = [...rcScores, ...sdScores, ...coScores];
         const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
@@ -115,7 +115,7 @@ export async function GET() {
         }
 
         let countyHasOfficialSource = false;
-        if (rcs.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
+        if (rcs.some((rc: any) => !!rc.source_url) || countyDistricts.some((sd: any) => !!sd.source_url) || offices.some((co: any) => !!co.source_url)) {
           countyHasOfficialSource = true;
           hasOfficialSource = true;
         }
@@ -147,7 +147,7 @@ export async function GET() {
         lastVerifiedDate: minDate,
         confidenceScore: avgConfidenceScore,
         hasRealLocalAssets,
-        hasNoPlaceholderData: counties.every(c => assertNoPlaceholderData(JSON.stringify(c)))
+        hasNoPlaceholderData: counties.every((c: any) => assertNoPlaceholderData(JSON.stringify(c)))
       });
 
       if (shouldIncludeInSitemap(policy)) {
@@ -156,7 +156,7 @@ export async function GET() {
     }
   }
 
-  const xmlUrls = filteredStaticUrls.map(url => {
+  const xmlUrls = filteredStaticUrls.map((url: any) => {
     const lastmodTag = url.lastmod ? `\n    <lastmod>${url.lastmod}</lastmod>` : '';
     return `  <url>
     <loc>${baseUrl}${url.loc}</loc>${lastmodTag}
@@ -211,9 +211,9 @@ export async function GET() {
       }
     } else if (cluster.category === 'conditions') {
       const statePrograms = stateProgramsMap['california'] || [];
-      const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+      const dates = statePrograms.map((p: any) => p.last_verified_date).filter(Boolean) as string[];
       const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-      const scores = statePrograms.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+      const scores = statePrograms.map((p: any) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
       const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
       const policy = evaluateSeoPolicy({
@@ -221,9 +221,9 @@ export async function GET() {
         stateId: 'california',
         diagnosisId: cluster.slug,
         confidenceScore,
-        hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+        hasOfficialSource: statePrograms.length > 0 && statePrograms.some((p: any) => !!p.official_source_url),
         lastVerifiedDate: minDate,
-        hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+        hasNoPlaceholderData: statePrograms.every((p: any) => assertNoPlaceholderData(JSON.stringify(p)))
       });
 
       if (shouldIncludeInSitemap(policy)) {
