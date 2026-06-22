@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 99
-- primary_gap_reason: district_grade_education_still_unverified
+- primary_gap_reason: official_iowa_district_maps_and_aea_structures_expose_no_district_owned_special_education_leaves
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (Live Iowa HHS Disability Services now replaces the dead legacy DD packet root with a role-aligned statewide disability-services authority.)
 - early_intervention_part_c: verified_state_grade (Live Iowa HHS Early Intervention & Support now replaces the dead legacy early-start packet sample.)
 - special_education_idea_part_b: verified_state_grade (Live Iowa Department of Education special-education and dispute-resolution leaves now replace the stale generic home-page packet sample.)
-- district_or_county_education_routing: blocked_exact_district_or_county_leafs_unverified (Reviewed Iowa education pages expose school-district maps and AEA structural materials, but no district-owned or county-grade special-education routing leaf is preserved on disk.)
+- district_or_county_education_routing: blocked_structural_statewide_maps_only (Reviewed current Iowa Department of Education district-maps, special-education, dispute-resolution, and AEA structural pages. The official district-maps surface links only statewide map/geodata artifacts, and the AEA page remains structural statewide governance content rather than district-owned special-education routing. No district-owned or county-grade special-education leaf is preserved on disk.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (The live Iowa Workforce Development VR page now replaces the stale generic HHS packet sample.)
 - protection_and_advocacy: verified_state_grade (Reviewed first-party Disability Rights Iowa evidence now provides the statewide P&A route.)
 - parent_training_information_center: verified_state_grade (Reviewed first-party ASK PTIC leaf explicitly preserves Iowa statewide PTI designation, statewide scope, and U.S. Department of Education support.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: Reviewed Iowa special-education, dispute-resolution, district-maps, and AEA pages are statewide or structural only; no district-owned or county-grade special-education routing leaf is preserved on disk.
+- district_or_county_education_routing: official_iowa_district_maps_and_aea_structures_expose_no_district_owned_special_education_leaves :: Reviewed 2026-06-22 official Iowa district-maps and AEA pages. The district-maps page links statewide map and geodata artifacts such as 2025-26 Iowa Public School District Boundaries and district map downloads, but no district-owned special-education routing leaves. The AEA Performance & Accountability page remains statewide structural/governance content rather than county-grade or district-grade special-education routing proof.
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://hhs.iowa.gov/family-community/disability-services
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://hhs.iowa.gov/programs/programs-and-services/early-intervention-and-support
 - special_education_idea_part_b: verified_state_grade; samples=2; first=https://educate.iowa.gov/pk-12/special-education
-- district_or_county_education_routing: blocked_exact_district_or_county_leafs_unverified; samples=4; first=https://educate.iowa.gov/pk-12/special-education
+- district_or_county_education_routing: blocked_structural_statewide_maps_only; samples=4; first=https://educate.iowa.gov/pk-12/special-education
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://workforce.iowa.gov/vr
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://disabilityrightsiowa.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.askresource.org/about/what-ASK-does-do/parent-training-and-information-center-ptic
@@ -44,12 +44,9 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
+- [critical] district_or_county_education_routing: hold_blocked_until_reviewed_district_owned_special_education_leaves_are_authored
 
 ## Completion decision
 
-- Iowa is no longer UNSTARTED. The statewide packet has been truth-refreshed onto live replatformed Iowa HHS and Education leaves plus reviewed first-party statewide support evidence.
-- County-local upgrade: the reviewed Iowa HHS Office Locations page itself preserves structured county coverage directly in HTML, including county office entries like Adair County HHS, Adams County HHS, and Polk County HHS, so one official leaf now truthfully satisfies statewide county-local routing coverage.
-- VR upgrade: the legacy `ivrs.iowa.gov` root now redirects to the live Iowa Workforce Development page `workforce.iowa.gov/vr`, which explicitly provides Vocational Rehabilitation Services.
-- PTI upgrade: the first-party ASK PTIC leaf now explicitly states that ASK Resource Center has been Iowa’s PTIC since 1998, that Iowa has only one PTI, and that it operates statewide with U.S. Department of Education support.
 - Iowa remains BLOCKED and not index-safe because district_or_county_education_routing still lacks any reviewed district-owned or county-grade special-education routing leaf on disk.
+- The blocker is now sharper: the reviewed Iowa district-maps page only exposes statewide map and geodata artifacts, while the reviewed AEA page remains structural statewide content rather than local special-education routing proof.

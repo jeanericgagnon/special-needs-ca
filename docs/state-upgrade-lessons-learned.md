@@ -455,3 +455,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### PTI Successor Pattern: Use The Outgoing Center To Prove The Role Change, Then Verify The Incoming Center On Its Own First-Party Site
 *   **Lesson:** When a statewide PTI blocker turns into a successor question, do not rely on the old sample alone. For Illinois, FRCD explicitly documented that it stopped holding the PTIC role on October 1, 2025, and Family Matters’ own site separately proved it became the only federally funded statewide Illinois PTI. That pair of first-party pages closed the role-transition gap without broader nonprofit rediscovery.
+
+### Embedded County-Map Content Can Still Count Even When The Child County Hrefs 404
+*   **Lesson:** If an official county-office map page renders one fetched HTML document that already embeds county-by-county office details, do not fail it just because the decorative county hrefs 404. Indiana’s DFR county map preserved addresses, hours, phone, and ZIP routing for all 92 counties directly in the source HTML, so the family could be upgraded without re-fetching every broken child link.
