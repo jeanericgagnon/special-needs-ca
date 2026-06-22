@@ -1,10 +1,10 @@
 # Hawaii California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 91
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 5
-- primary_gap_reason: official_processing_centers_pdf_covers_four_counties_but_kalawao_unresolved
+- primary_gap_reason: all_critical_families_verified_with_kalawao_official_exception_path
 
 ## Family status
 
@@ -20,11 +20,7 @@
 - legal_aid: verified_state_grade (Reviewed first-party HDRC Advocacy and Assistance Application pages now preserve explicit legal representation, staff-attorney, grievance/appeals, and assistance-routing evidence for statewide legal-aid coverage.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_official_pdf_covers_four_counties_kalawao_unresolved (Official Hawaii DHS processing-centers PDF now replaces the DOI fallback for Honolulu, Hawaii, Kauai, and Maui counties, but Kalawao County still lacks explicit reviewed county-grade local-office proof and still points to a dead legacy locator root.)
-
-## Failure ledger
-
-- county_local_disability_resources: official_processing_centers_pdf_covers_four_counties_but_kalawao_unresolved :: Reviewed 2026-06-22 official Hawaii DHS local-office replacements. The official DHS State of Hawaii Processing Centers PDF at https://humanservices.hawaii.gov/wp-content/uploads/2018/04/Statewide-Processing-Centers-04-2018.pdf preserves named local processing centers with addresses and phones for Honolulu County (Kapolei, Koolau, KPT, OR&L, Pohulani, Wahiawa, Waianae, Waipahu), Kauai County (Lihue), Maui County (Maui Public Assistance, Molokai Unit, Lanai Sub-Unit), and Hawaii County (North Hilo, South Hilo, North Kona, South Kona, Kaʻu, Kamuela-Hamakua, Kohala). The only remaining Hawaii county-local gap is Kalawao County: its current row still depends on the dead legacy root https://dhhs.hawaii.gov/locations, and this bounded pass did not recover a reviewed official local-office leaf that explicitly names Kalawao County.
+- county_local_disability_resources: verified_state_grade (Official Hawaii county-local routing is now decision-complete. The official DHS processing-centers PDF preserves named local processing centers for Honolulu, Hawaii, Kauai, and Maui counties, and the official Hawaii DOH Kalaupapa page provides the reviewed Kalawao exception path: it states that HRS 326 places Kalawao County under the jurisdiction and control of DOH, and that Maui County provides assistance to Kalaupapa under a mutual aid agreement with DOH. Kalawao therefore does not require a normal county storefront leaf to satisfy truthful county-local routing.)
 
 ## Verified source samples
 
@@ -40,16 +36,11 @@
 - legal_aid: verified_state_grade; samples=2; first=https://hawaiidisabilityrights.org/advocacy-legal-representation-systematic-casework/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_official_pdf_covers_four_counties_kalawao_unresolved; samples=2; first=https://humanservices.hawaii.gov/wp-content/uploads/2018/04/Statewide-Processing-Centers-04-2018.pdf
+- county_local_disability_resources: verified_state_grade; samples=3; first=https://humanservices.hawaii.gov/wp-content/uploads/2018/04/Statewide-Processing-Centers-04-2018.pdf
 
-## Next actions
+## Hawaii clearance decision
 
-- [critical] county_local_disability_resources: hold_blocked_until_kalawao_county_has_reviewed_official_local_office_or_exception_path
-
-## Completion decision
-
-- Hawaii no longer depends on the fake dhhs early-intervention path; the live official EIS site now preserves statewide Part C authority and referral routing.
-- HIDOE special-education authority and district routing now come from accessible current official pages: What is Special Education, Child Find, Special Education Data and Reports, and the Complex Area Directory.
-- HDRC now truthfully satisfies statewide legal-aid coverage because its first-party Advocacy and Assistance Application pages explicitly preserve legal representation, staff-attorney, grievance/appeals, and assistance-routing evidence.
-- County/local disability resources improved materially: the official DHS processing-centers PDF now covers Honolulu, Hawaii, Kauai, and Maui counties with named local offices, but Kalawao County still lacks explicit reviewed county-grade office proof and still depends on a dead legacy locator root.
-- Hawaii therefore remains BLOCKED and not index-safe until Kalawao County has explicit reviewed official local-office coverage or a reviewed official exception path.
+- Hawaii is now COMPLETE and index-safe.
+- The last county-local blocker is cleared through an official exception path, not a fabricated storefront replacement.
+- Four counties keep reviewed local processing-center coverage from the official DHS PDF, and Kalawao County now has a reviewed first-party exception path on the official DOH Kalaupapa page.
+- The exception is narrow and truthful: the DOH page states that HRS 326 places Kalawao County under DOH jurisdiction and control, while Maui County provides assistance to Kalaupapa under mutual aid.

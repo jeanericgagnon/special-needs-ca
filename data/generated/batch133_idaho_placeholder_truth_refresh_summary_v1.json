@@ -1,0 +1,11 @@
+{
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "primary_gap_reason": "live_db_rows_still_reuse_statewide_placeholders_for_both_local_families",
+  "district_placeholder_rows": 44,
+  "county_dead_locator_rows": 27,
+  "county_generic_medicaid_rows": 18,
+  "lesson_added": false
+}

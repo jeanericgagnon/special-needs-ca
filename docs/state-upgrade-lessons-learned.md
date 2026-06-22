@@ -455,3 +455,18 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### PTI Successor Pattern: Use The Outgoing Center To Prove The Role Change, Then Verify The Incoming Center On Its Own First-Party Site
 *   **Lesson:** When a statewide PTI blocker turns into a successor question, do not rely on the old sample alone. For Illinois, FRCD explicitly documented that it stopped holding the PTIC role on October 1, 2025, and Family Matters’ own site separately proved it became the only federally funded statewide Illinois PTI. That pair of first-party pages closed the role-transition gap without broader nonprofit rediscovery.
+
+### Embedded County-Map Content Can Still Count Even When The Child County Hrefs 404
+*   **Lesson:** If an official county-office map page renders one fetched HTML document that already embeds county-by-county office details, do not fail it just because the decorative county hrefs 404. Indiana’s DFR county map preserved addresses, hours, phone, and ZIP routing for all 92 counties directly in the source HTML, so the family could be upgraded without re-fetching every broken child link.
+
+### One Shared Statewide Fallback URL Across Every County Row Is A Packet Placeholder Signal
+*   **Lesson:** If every county or district row in a blocked family points to the same statewide root, treat the DB inventory as placeholder-only and stop retrying that root as if it were local coverage. Arizona’s 15/15 `school_districts` rows all pointed at one challenged AZED page, and 14/15 `county_offices` rows all pointed at one DOI/AHCCCS placeholder, so the real next step was exact-leaf authoring, not more host retries.
+
+### Generic ArcGIS Instant-App Shells Do Not Count As County Contracts
+*   **Lesson:** If an official `*.maps.arcgis.com` app only fetches as a generic “Zone Lookup” shell and the public HTML exposes no county names, region names, or service/layer references, do not treat it as a county-routing contract. Georgia still stayed blocked because the DBHDD ArcGIS app revealed no public county-to-region evidence beyond the shell.
+
+### Official State-Administered County Exceptions Can Replace Impossible Local Storefront Proof
+*   **Lesson:** If a county is officially administered by a state agency rather than by a normal county government, a reviewed first-party exception page can satisfy the local-routing family. Hawaii cleared once the DOH Kalaupapa page explicitly stated that HRS 326 places Kalawao County under DOH jurisdiction and control, so the dead county storefront row no longer needed a fake county office replacement.
+
+### Named Office Labels Still Count As Placeholders When The URL Is Generic
+*   **Lesson:** Do not let a realistic office name fool the packet if the stored URL is still generic. Idaho looked partially repaired because rows were labeled `Boise Office`, `Blackfoot Office`, and `Idaho Falls Office`, but the live URLs still pointed at one generic Medicaid page or a dead legacy locator, so those rows were still placeholders until the exact office leaves were attached.

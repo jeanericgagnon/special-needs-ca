@@ -1,0 +1,13 @@
+{
+  "state": "hawaii",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "completeness_pct": 100,
+  "converted_family": "county_local_disability_resources",
+  "local_pdf_counties": 4,
+  "official_exception_counties": [
+    "kalawao-hi"
+  ],
+  "exception_source_url": "https://health.hawaii.gov/kalaupapaupdates/",
+  "lesson_added": false
+}

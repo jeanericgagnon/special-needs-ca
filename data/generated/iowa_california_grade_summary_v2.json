@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "district_grade_education_still_unverified",
+  "primary_gap_reason": "official_iowa_district_maps_and_aea_structures_expose_no_district_owned_special_education_leaves",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,9 +43,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Reviewed Iowa special-education, dispute-resolution, district-maps, and AEA pages are statewide or structural only; no district-owned or county-grade special-education routing leaf is preserved on disk.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "official_iowa_district_maps_and_aea_structures_expose_no_district_owned_special_education_leaves",
+      "evidence": "Reviewed 2026-06-22 official Iowa district-maps and AEA pages. The district-maps page links statewide map and geodata artifacts such as 2025-26 Iowa Public School District Boundaries and district map downloads, but no district-owned special-education routing leaves. The AEA Performance & Accountability page remains statewide structural/governance content rather than county-grade or district-grade special-education routing proof.",
+      "next_action": "hold_blocked_until_reviewed_district_owned_special_education_leaves_are_authored"
     }
   ]
 }

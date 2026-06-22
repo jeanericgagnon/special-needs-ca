@@ -3,16 +3,16 @@
   "state_code": "HI",
   "state_name": "Hawaii",
   "batch": "batch_15_procedure_hardening_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 5,
-  "completeness_pct": 91,
+  "completeness_pct": 100,
   "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_processing_centers_pdf_covers_four_counties_but_kalawao_unresolved",
+  "primary_gap_reason": "all_critical_families_verified_with_kalawao_official_exception_path",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -39,13 +39,5 @@
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "official_processing_centers_pdf_covers_four_counties_but_kalawao_unresolved",
-      "evidence": "Reviewed 2026-06-22 official Hawaii DHS local-office replacements. The official DHS State of Hawaii Processing Centers PDF at https://humanservices.hawaii.gov/wp-content/uploads/2018/04/Statewide-Processing-Centers-04-2018.pdf preserves named local processing centers with addresses and phones for Honolulu County (Kapolei, Koolau, KPT, OR&L, Pohulani, Wahiawa, Waianae, Waipahu), Kauai County (Lihue), Maui County (Maui Public Assistance, Molokai Unit, Lanai Sub-Unit), and Hawaii County (North Hilo, South Hilo, North Kona, South Kona, Kaʻu, Kamuela-Hamakua, Kohala). The only remaining Hawaii county-local gap is Kalawao County: its current row still depends on the dead legacy root https://dhhs.hawaii.gov/locations, and this bounded pass did not recover a reviewed official local-office leaf that explicitly names Kalawao County.",
-      "next_action": "hold_blocked_until_kalawao_county_has_reviewed_official_local_office_or_exception_path"
-    }
-  ]
+  "final_blockers": []
 }
