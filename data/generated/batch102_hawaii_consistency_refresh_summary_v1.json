@@ -1,0 +1,14 @@
+{
+  "state": "hawaii",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "realDddUrl": "https://health.hawaii.gov/ddd/",
+  "realDddContactUrl": "https://health.hawaii.gov/ddd/about/contact/",
+  "downgradedFamilies": [
+    "early_intervention_part_c"
+  ],
+  "refreshedFamilies": [
+    "developmental_disability_idd_authority"
+  ],
+  "blockerReason": "fake_domains_and_access_denied_leaves_broke_prior_hawaii_packet_truth"
+}

@@ -7,14 +7,15 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 5,
-  "completeness_pct": 67,
-  "strong_critical_families": 8,
-  "weak_critical_families": 3,
+  "completeness_pct": 58,
+  "strong_critical_families": 7,
+  "weak_critical_families": 4,
   "missing_critical_families": 1,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "fake_domains_and_access_denied_leaves_broke_prior_hawaii_packet_truth",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
+    "early_intervention_part_c",
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
@@ -26,11 +27,11 @@
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
-    "early_intervention_part_c",
     "district_or_county_education_routing",
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
     "parent_training_information_center",
+    "legal_aid",
     "able_program",
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
@@ -43,32 +44,39 @@
   ],
   "final_blockers": [
     {
+      "family": "early_intervention_part_c",
+      "severity": "critical",
+      "failure_code": "fake_domain_sample_requires_real_part_c_replacement",
+      "evidence": "The current Hawaii Early Intervention family still points to dhhs.hawaii.gov/earlystart, but that domain does not resolve in live checks and no reviewed real official Part C leaf is yet on disk.",
+      "next_action": "author_real_official_part_c_leaf"
+    },
+    {
       "family": "special_education_idea_part_b",
       "severity": "major",
-      "failure_code": "legacy_or_inventory_only_evidence",
-      "evidence": "Hawaii still relies on legacy statewide special-education evidence rather than a reviewed exact first-party IDEA Part B authority leaf.",
-      "next_action": "author_verified_state_manifest"
+      "failure_code": "official_special_education_leaf_access_denied",
+      "evidence": "The likely official Hawaii public schools special-education leaf (https://www.hawaiipublicschools.org/TeachingAndLearning/SpecializedPrograms/SpecialEducation/) redirects and then returns HTTP 403, so statewide IDEA Part B still lacks a reviewed exact authority leaf.",
+      "next_action": "author_reviewed_special_education_authority_leaf"
     },
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "District or county education routing still depends on statewide fallback evidence instead of county- or district-owned leaves for Hawaii’s counties.",
+      "failure_code": "statewide_school_root_only_and_special_education_leaf_403",
+      "evidence": "District routing still depends on the statewide Hawaii public schools root, and the likely special-education leaf (https://www.hawaiipublicschools.org/TeachingAndLearning/SpecializedPrograms/SpecialEducation/) returns HTTP 403 instead of county- or district-grade routing evidence.",
       "next_action": "author_county_or_district_exact_targets"
     },
     {
       "family": "legal_aid",
       "severity": "major",
       "failure_code": "reviewed_statewide_support_source_not_explicit_legal_aid_route",
-      "evidence": "Reviewed Hawaii Disability Rights Center evidence proves statewide rights-routing and assistance intake, but it does not preserve an explicit statewide legal-aid route.",
+      "evidence": "Reviewed Hawaii Disability Rights Center evidence proves statewide rights-routing, casework scope, and apply-for-assistance routing, but the saved first-party artifact does not preserve an explicit statewide legal-aid or legal-representation statement strong enough to satisfy the legal-aid family.",
       "next_action": "hold_blocked_until_reviewed_first_party_legal_help_route_is_verified"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "County/local disability resources still depend on generic statewide locator-style evidence instead of reviewed county-specific leaves.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "dead_locations_root_and_doi_directory_fallback",
+      "evidence": "County-local disability resources still depend on dhhs.hawaii.gov/locations, which does not resolve, plus DOI-derived office extracts rather than reviewed county-specific official leaves.",
+      "next_action": "author_reviewed_county_specific_office_leaves"
     }
   ]
 }

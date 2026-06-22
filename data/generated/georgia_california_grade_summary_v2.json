@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "browser_visible_official_region_pages_not_rehydrated_from_static_403_shells",
+  "primary_gap_reason": "official_region_pages_access_denied_and_county_lookup_not_county_mapped",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "developmental_disability_idd_authority",
@@ -44,9 +44,9 @@
     {
       "family": "developmental_disability_idd_authority",
       "severity": "critical",
-      "failure_code": "browser_visible_official_region_pages_not_rehydrated_from_static_403_shells",
-      "evidence": "Live browser-visible official DBHDD Region 2, 3, and 6 field-office pages prove the region leaves are still active and include counties served plus intake contacts, but the low-token static fetch lane still records 403 shells for the region pages and reviewed saved evidence has not yet rehydrated all six regions into a deterministic 159-county map.",
-      "next_action": "rerun_dbhdd_region_pages_through_browser_assisted_county_extraction_for_all_six_regions"
+      "failure_code": "official_region_pages_access_denied_and_county_lookup_not_county_mapped",
+      "evidence": "Live static and browser-assisted checks now agree that all six official DBHDD region field-office pages return access-denied shells instead of counties-served and intake content. The official county lookup page remains live, but its current rendered content only exposes repeated region links and no county names, so a deterministic 159-county county-to-region map still cannot be verified from the current official evidence.",
+      "next_action": "hold_blocked_until_reviewed_county_to_region_source_replaces_access_denied_region_pages"
     },
     {
       "family": "district_or_county_education_routing",

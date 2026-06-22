@@ -336,6 +336,18 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Live Homepage Navigation Can Rehydrate A Zero-Sample Statewide Family
 *   **Problem:** Delaware's statewide special-education family had fallen to zero preserved samples even though the live DOE homepage still linked to a current special-education leaf that resolved into the state's legacy special-education page.
 *   **Lesson:** When a statewide family shows zero verified samples, check the live homepage navigation before assuming the family is still legacy-only. A current nav link that resolves into a live legacy leaf can truthfully rehydrate the statewide family without solving the separate county-grade routing blocker.
+
+### A Live JS Locator Plus Appconfig Endpoint Hint Is A Browser-Lane Blocker, Not A Static-Scrape Miss
+*   **Problem:** Florida's remaining county-local office gap looked like a vague partial CSV issue until the live MyACCESS Community Partner Search proved to be a JS shell and appconfig.js exposed `officeMapping=/dataexchangeproxy`, while a bounded plain GET to that path still returned the shell.
+*   **Lesson:** When an official local-office locator returns only a JS shell but the first-party app config exposes an internal mapping endpoint, stop static rechecks and move the family to a browser-assisted or documented API-contract lane. Preserve the partial static coverage count and record the endpoint hint explicitly.
+
+### Browser-Assisted Rechecks Can Invalidate Older “Visible Page” Proof
+*   **Problem:** Georgia's DBHDD blocker still claimed Regions 2, 3, and 6 were browser-visible active pages, but a fresh bounded Playwright check showed all six region pages now return official access-denied shells while the county lookup page stays live.
+*   **Lesson:** When a blocker depends on older browser-visible evidence, recheck the same official pages before assuming the browser lane still clears them. If the browser now sees the same access-denied shell as static fetch, downgrade the family to a true official-access blocker and stop promising browser-assisted rehydration alone.
+
+### Dead `dhhs.<state>.gov` Samples Must Be Replaced Or Downgraded Immediately
+*   **Problem:** Hawaii still carried verified statewide DD and Early Intervention families on `dhhs.hawaii.gov` even though live checks showed the domain does not resolve, while the real DDD content lived on `health.hawaii.gov/ddd/`.
+*   **Lesson:** If a “verified” statewide family still points to a synthetic `dhhs.<state>.gov` root, live-check it before trusting the packet. Replace it with the real agency subdomain when one exists; otherwise downgrade the family instead of leaving fake-domain samples in verified state-grade rows.
 ### Official Early-Childhood Pages Can Preserve Part C Even When The Old Part C Domain Is Dead
 *   **Problem:** Kansas lost its old early-start root entirely, and the first likely Part C domain hint also died, but the live KSDE Early Childhood Special Education page still preserved birth-to-three entitlement, KDHE Part C administration, and the external local ITS directory pointer.
 *   **Lesson:** When a state's old Part C root is dead, check the live official early-childhood or preschool-special-education leaf on the education agency domain before opening broader discovery. If that page explicitly states who administers Part C and points families to the local intake network, it can repair the statewide Part C family.

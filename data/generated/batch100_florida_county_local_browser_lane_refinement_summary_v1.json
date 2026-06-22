@@ -1,0 +1,20 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "refined_family": "county_local_disability_resources",
+  "blocker_code": "official_myaccess_county_locator_requires_browser_assisted_or_api_contract_repair",
+  "next_action": "move_county_local_disability_resources_to_browser_assisted_myaccess_office_mapping_repair",
+  "evidence_checks": {
+    "cpcpsUrl": "https://myaccess.myflfamilies.com/Public/CPCPS",
+    "cpcpsStatus": 200,
+    "cpcpsTitle": "MyACCESS",
+    "cpcpsShellEvidence": "Bounded live fetch returned a JavaScript shell with no county office rows in static HTML and a noscript prompt requiring JavaScript.",
+    "appConfigUrl": "https://myaccess.myflfamilies.com/config/appconfig.js",
+    "appConfigOfficeMapping": "/dataexchangeproxy",
+    "officeMappingUrl": "https://myaccess.myflfamilies.com/dataexchangeproxy",
+    "officeMappingStatus": 200,
+    "officeMappingShellEvidence": "Bounded plain GET returned the same MyACCESS shell instead of county office result content, so the official county-local lane is not statically scrapeable as-is."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_family": "developmental_disability_idd_authority",
+  "blocker_code": "official_region_pages_access_denied_and_county_lookup_not_county_mapped",
+  "next_action": "hold_blocked_until_reviewed_county_to_region_source_replaces_access_denied_region_pages",
+  "access_denied_region_pages": 6,
+  "county_lookup_page_live": true
+}

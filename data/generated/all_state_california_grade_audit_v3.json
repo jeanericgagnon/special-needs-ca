@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T15:29:00.268Z",
+  "generatedAt": "2026-06-22T15:52:37.572Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 4,
@@ -490,14 +490,14 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "blocked_statewide_ct_sde_fallback_rows_only",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_doi_and_generic_locations_rows_only"
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
@@ -517,11 +517,11 @@
       "legacyManualReviewRate": 68.18,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 3,
-      "strongCriticalFamilies": 9,
-      "weakCriticalFamilies": 3,
+      "strongCriticalFamilies": 10,
+      "weakCriticalFamilies": 2,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 75,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "delaware",
         "state_code": "DE",
@@ -559,15 +559,15 @@
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
-        "special_education_idea_part_b": "legacy_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "special_education_idea_part_b": "verified_state_grade",
+        "district_or_county_education_routing": "blocked_statewide_de_doe_root_rows_only",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_doi_mirror_county_rows_only"
       },
       "packetGenerated": true,
       "packetBatch": "batch_14_procedure_hardening_states_v1",
@@ -637,11 +637,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_partial_official_county_locator"
+        "county_local_disability_resources": "blocked_browser_assisted_official_locator"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "official_family_resource_center_locator_partial_county_coverage",
+      "packetPrimaryGapReason": "official_myaccess_county_locator_requires_browser_assisted_or_api_contract_repair",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -697,7 +697,7 @@
       "familyStatuses": {
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "blocked_browser_assisted_region_rehydration_required",
+        "developmental_disability_idd_authority": "blocked_official_access_denied_region_pages",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
@@ -711,7 +711,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "browser_visible_official_region_pages_not_rehydrated_from_static_403_shells",
+      "packetPrimaryGapReason": "official_region_pages_access_denied_and_county_lookup_not_county_mapped",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -727,11 +727,11 @@
       "legacyManualReviewRate": 46.88,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 5,
-      "strongCriticalFamilies": 8,
-      "weakCriticalFamilies": 3,
+      "strongCriticalFamilies": 7,
+      "weakCriticalFamilies": 4,
       "missingCriticalFamilies": 1,
       "totalCriticalFamilies": 12,
-      "completenessPct": 67,
+      "completenessPct": 58,
       "dbMetrics": {
         "state_id": "hawaii",
         "state_code": "HI",
@@ -768,20 +768,20 @@
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "verified_state_grade",
-        "special_education_idea_part_b": "legacy_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "early_intervention_part_c": "missing",
+        "special_education_idea_part_b": "blocked_official_leaf_access_denied",
+        "district_or_county_education_routing": "blocked_statewide_school_root_only",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "blocked_reviewed_statewide_support_source_not_explicit_legal_aid_route",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_fake_domain_and_doi_fallback"
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetPrimaryGapReason": "fake_domains_and_access_denied_leaves_broke_prior_hawaii_packet_truth",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
