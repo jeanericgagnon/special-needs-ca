@@ -1,0 +1,16 @@
+{
+  "batch": "batch76_new_hampshire_statewide_family_truth_refresh_v1",
+  "state": "new-hampshire",
+  "classification_before": "UNSTARTED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "vocational_rehabilitation_pre_ets",
+    "protection_and_advocacy",
+    "legal_aid",
+    "county_local_disability_resources"
+  ]
+}
