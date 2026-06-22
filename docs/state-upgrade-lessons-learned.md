@@ -491,3 +491,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Public Bundles With Tiny County Stubs And Sample Rows Do Not Count As County Contracts
 *   **Lesson:** If a public app bundle exposes only a tiny county stub plus obvious sample or internal rows, do not treat it as a hidden county-results contract. Florida stayed blocked because the public bundle carried only Broward/Dade admin stubs alongside `BigOrganization10` and repeated `Second Harvest` sample data, not a real statewide office dataset.
+
+### ArcGIS Item Data Can Rescue A Generic Instant-App Shell
+*   **Lesson:** If an official ArcGIS Instant App only renders a generic shell, check the public `sharing/rest/content/items/<appid>/data?f=json` contract before final-blocking it. Georgia DBHDD looked blocked at the HTML shell, but the public item data exposed a live FeatureServer query with all 159 county-to-region DD mappings and contact fields.
