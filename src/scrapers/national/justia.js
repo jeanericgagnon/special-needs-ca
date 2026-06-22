@@ -16,6 +16,67 @@ function parseDateToISO(dateStr) {
   return new Date().toISOString().split('T')[0];
 }
 
+function extractSchoolDistrict(caseName) {
+  if (!caseName) return null;
+  const separators = [/\s+v\.\s+/i, /\s+v\s+/i, /\s+vs\.\s+/i, /\s+vs\s+/i, /\s+versus\s+/i];
+  let parts = [caseName];
+  for (const sep of separators) {
+    if (sep.test(caseName)) {
+      parts = caseName.split(sep);
+      break;
+    }
+  }
+  
+  const indicators = [
+    /\b(?:unified|independent|consolidated|city|public|county)?\s*school\s*(?:district|board|department|system|committee|corp|corporation|district\s*board|board\s*of\s*education|trustees|schools)\b/i,
+    /\bboard\s*of\s*education\b/i,
+    /\bpublic\s*schools\b/i
+  ];
+  
+  for (const part of parts) {
+    const trimmed = part.trim();
+    for (const indicator of indicators) {
+      if (indicator.test(trimmed)) {
+        return trimmed.replace(/^["'“‘]+|["'”’]+$/g, '').trim();
+      }
+    }
+  }
+  return null;
+}
+
+function determineOutcome(summary) {
+  if (!summary) return 'unknown';
+  const text = summary.toLowerCase();
+  
+  const parentWinTerms = [
+    'in favor of parent', 'in favor of the parent', 'in favor of plaintiff',
+    'reversed', 'vacated', 'remanded', 'violated the idea', 'violated fape',
+    'reimbursement ordered', 'reimbursement granted', 'ordered to reimburse',
+    'parent prevailed', 'student prevailed', 'ruling for parent', 'ruling for the parent'
+  ];
+  
+  const districtWinTerms = [
+    'in favor of district', 'in favor of the district', 'in favor of defendant',
+    'affirmed', 'dismissed', 'judgment for district', 'judgment for the district',
+    'did not violate', 'denied reimbursement', 'reimbursement denied', 'no violation',
+    'district prevailed', 'ruling for district', 'ruling for the district', 'granted summary judgment to'
+  ];
+  
+  let parentScore = 0;
+  let districtScore = 0;
+  
+  for (const term of parentWinTerms) {
+    if (text.includes(term)) parentScore++;
+  }
+  for (const term of districtWinTerms) {
+    if (text.includes(term)) districtScore++;
+  }
+  
+  if (parentScore > districtScore) return 'parent_win';
+  if (districtScore > parentScore) return 'district_win';
+  return 'unknown';
+}
+
 async function retryAction(actionFn, rateLimiter, maxRetries = 3) {
   let attempts = 0;
   while (attempts < maxRetries) {
@@ -155,6 +216,9 @@ async function run() {
       const hashInput = `${card.caseName.toLowerCase()}|${state.toLowerCase()}|${(card.decisionDate || '').toLowerCase()}`;
       const id = 'justia-' + createHash('sha256').update(hashInput).digest('hex');
       
+      const schoolDistrict = extractSchoolDistrict(card.caseName);
+      const outcome = determineOutcome(card.summary);
+      
       results.push({
         id,
         state,
@@ -164,6 +228,8 @@ async function run() {
         summary: card.summary || 'No summary provided.',
         document_url: card.documentUrl || 'https://law.justia.com',
         body_text: `Full decision body text for ${card.caseName}.`,
+        school_district: schoolDistrict,
+        outcome,
         source: 'justia',
         scraped_at: new Date().toISOString()
       });

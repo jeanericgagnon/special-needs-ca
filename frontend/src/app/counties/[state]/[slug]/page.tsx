@@ -309,7 +309,23 @@ export default async function CountyPage({ params }: Props) {
                     return (
                       <div key={dist.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#fafafa', padding: '0.75rem 1rem', borderRadius: '8px', border: '1px solid #eee', fontSize: '0.85rem' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-                          <span style={{ fontWeight: 600, color: 'var(--text-main)' }}>{dist.name}</span>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                            <Link href={`/school-districts/${state}/${dist.id}`} style={{ fontWeight: 600, color: 'var(--primary-color)', textDecoration: 'underline' }}>
+                              {dist.name}
+                            </Link>
+                            {dist.totalCases !== undefined && dist.totalCases > 0 && (
+                              <span style={{ 
+                                background: dist.parentWins !== undefined && dist.districtWins !== undefined && dist.parentWins > dist.districtWins ? '#e6f4ea' : dist.districtWins !== undefined && dist.parentWins !== undefined && dist.districtWins > dist.parentWins ? '#fef3c7' : '#eff6ff', 
+                                color: dist.parentWins !== undefined && dist.districtWins !== undefined && dist.parentWins > dist.districtWins ? '#137333' : dist.districtWins !== undefined && dist.parentWins !== undefined && dist.districtWins > dist.parentWins ? '#b45309' : '#1d4ed8', 
+                                padding: '0.15rem 0.45rem', 
+                                borderRadius: '10px', 
+                                fontSize: '0.7rem', 
+                                fontWeight: 700 
+                              }}>
+                                IEP Litigation: {dist.parentWins !== undefined && dist.districtWins !== undefined && dist.parentWins > dist.districtWins ? 'Parent Favorable' : dist.districtWins !== undefined && dist.parentWins !== undefined && dist.districtWins > dist.parentWins ? 'District Favorable' : 'Balanced'} ({dist.totalCases} cases)
+                              </span>
+                            )}
+                          </div>
                           {dist.spec_ed_contact_phone && (
                             <a href={`tel:${dist.spec_ed_contact_phone}`} style={{ color: 'var(--primary-color)', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', textDecoration: 'none' }}>
                               <Phone size={12} /> {dist.spec_ed_contact_phone}

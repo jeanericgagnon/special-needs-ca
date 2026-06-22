@@ -1231,6 +1231,20 @@ async function runPgMigrations(pool: Pool) {
       access_scope TEXT NOT NULL,
       created_at TEXT NOT NULL
     );
+    CREATE TABLE IF NOT EXISTS legal_decisions (
+      id TEXT PRIMARY KEY,
+      state TEXT NOT NULL,
+      case_name TEXT NOT NULL,
+      case_number TEXT,
+      decision_date TEXT,
+      summary TEXT,
+      document_url TEXT,
+      body_text TEXT,
+      source TEXT,
+      scraped_at TEXT,
+      school_district_id TEXT REFERENCES school_districts(id),
+      outcome TEXT
+    );
   `);
 }
 
@@ -1252,6 +1266,7 @@ async function syncSqliteToPg(pool: Pool) {
     { name: 'regional_centers', crawler: false },
     { name: 'selpas', crawler: false },
     { name: 'school_districts', crawler: false },
+    { name: 'legal_decisions', crawler: false },
     { name: 'resource_providers', crawler: false },
     { name: 'nonprofit_organizations', crawler: false },
     { name: 'sources', crawler: false },
@@ -2617,6 +2632,24 @@ function runMigrations(db: Database.Database) {
     }
   }
 
+  // Create legal_decisions table if not exists in SQLite
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS legal_decisions (
+      id TEXT PRIMARY KEY,
+      state TEXT NOT NULL,
+      case_name TEXT NOT NULL,
+      case_number TEXT,
+      decision_date TEXT,
+      summary TEXT,
+      document_url TEXT,
+      body_text TEXT,
+      source TEXT,
+      scraped_at TEXT,
+      school_district_id TEXT REFERENCES school_districts(id),
+      outcome TEXT
+    );
+  `);
+
   console.log('⚡ SQLite Database migrations completed successfully!');
 }
 
@@ -2673,6 +2706,10 @@ export interface SchoolDistrict {
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
+  totalCases?: number;
+  parentWins?: number;
+  districtWins?: number;
+  unknownWins?: number;
 }
 
 export interface NonprofitOrganization {
@@ -2950,6 +2987,7 @@ export interface IepAdvocate {
 export interface Program {
   id: number | string;
   source_url: string;
+  official_source_url?: string | null;
   program_name: string;
   target_demographic: string;
   age_limit_min: number;
@@ -3126,6 +3164,7 @@ export async function getProgramBySlug(slug: string): Promise<Program | null> {
       return {
         id: programRow.id,
         source_url: programRow.official_source_url || '',
+        official_source_url: programRow.official_source_url,
         program_name: programRow.name,
         target_demographic: programRow.who_it_is_for || '',
         age_limit_min: ageLimitMin,
@@ -3534,7 +3573,17 @@ export async function getCountyDetails(countyId: string) {
   if (!county) return undefined;
 
   const offices = await navigatorDb.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(countyId) as CountyOffice[];
-  const districts = await navigatorDb.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(countyId) as SchoolDistrict[];
+  const districts = await navigatorDb.prepare(`
+    SELECT sd.*, 
+      COUNT(ld.id) as totalCases,
+      SUM(CASE WHEN ld.outcome = 'parent_win' THEN 1 ELSE 0 END) as parentWins,
+      SUM(CASE WHEN ld.outcome = 'district_win' THEN 1 ELSE 0 END) as districtWins,
+      SUM(CASE WHEN ld.outcome NOT IN ('parent_win', 'district_win') OR ld.outcome IS NULL THEN 1 ELSE 0 END) as unknownWins
+    FROM school_districts sd
+    LEFT JOIN legal_decisions ld ON sd.id = ld.school_district_id
+    WHERE sd.county_id = ?
+    GROUP BY sd.id
+  `).all(countyId) as SchoolDistrict[];
   const nonprofits = await navigatorDb.prepare('SELECT * FROM nonprofit_organizations WHERE county_id = ?').all(countyId) as NonprofitOrganization[];
 
   // Get matching Regional Centers using junction table
@@ -5121,3 +5170,119 @@ export async function revokeShareToken(tokenId: string): Promise<boolean> {
     return false;
   }
 }
+
+export interface LegalDecision {
+  id: string;
+  state: string;
+  case_name: string;
+  case_number?: string | null;
+  decision_date?: string | null;
+  summary?: string | null;
+  document_url?: string | null;
+  body_text?: string | null;
+  source?: string | null;
+  scraped_at?: string | null;
+  school_district_id?: string | null;
+  outcome?: 'parent_win' | 'district_win' | 'unknown' | null;
+}
+
+export async function getSchoolDistrictById(id: string): Promise<SchoolDistrict | undefined> {
+  try {
+    return await navigatorDb.prepare('SELECT * FROM school_districts WHERE id = ?').get(id) as SchoolDistrict | undefined;
+  } catch (err) {
+    console.error(`Failed to get school district by id ${id}:`, err);
+    return undefined;
+  }
+}
+
+export async function getSchoolDistrictLitigation(districtId: string) {
+  try {
+    const cases = await navigatorDb.prepare('SELECT * FROM legal_decisions WHERE school_district_id = ? ORDER BY decision_date DESC').all(districtId) as LegalDecision[];
+    
+    let parentWins = 0;
+    let districtWins = 0;
+    let unknownWins = 0;
+    
+    for (const c of cases) {
+      if (c.outcome === 'parent_win') {
+        parentWins++;
+      } else if (c.outcome === 'district_win') {
+        districtWins++;
+      } else {
+        unknownWins++;
+      }
+    }
+    
+    return {
+      totalCases: cases.length,
+      parentWins,
+      districtWins,
+      unknownWins,
+      cases
+    };
+  } catch (err) {
+    console.error(`Failed to get school district litigation for ${districtId}:`, err);
+    return {
+      totalCases: 0,
+      parentWins: 0,
+      districtWins: 0,
+      unknownWins: 0,
+      cases: []
+    };
+  }
+}
+
+export async function getSchoolDistrictsWithLitigation() {
+  try {
+    // 1. Fetch all districts
+    const districts = await navigatorDb.prepare('SELECT * FROM school_districts ORDER BY name ASC').all() as SchoolDistrict[];
+    
+    // 2. Fetch case aggregations
+    const caseStats = await navigatorDb.prepare(`
+      SELECT 
+        school_district_id,
+        COUNT(*) as total_cases,
+        SUM(CASE WHEN outcome = 'parent_win' THEN 1 ELSE 0 END) as parent_wins,
+        SUM(CASE WHEN outcome = 'district_win' THEN 1 ELSE 0 END) as district_wins,
+        SUM(CASE WHEN outcome NOT IN ('parent_win', 'district_win') OR outcome IS NULL THEN 1 ELSE 0 END) as unknown_wins
+      FROM legal_decisions
+      GROUP BY school_district_id
+    `).all() as {
+      school_district_id: string;
+      total_cases: number;
+      parent_wins: number;
+      district_wins: number;
+      unknown_wins: number;
+    }[];
+
+    const statsMap = new Map(caseStats.map(s => [s.school_district_id, s]));
+
+    return districts.map(d => {
+      const stats = statsMap.get(d.id);
+      
+      // Infer state from county_id (e.g. "travis-tx" -> "TX")
+      let state = 'CA';
+      if (d.county_id && d.county_id.includes('-')) {
+        const parts = d.county_id.split('-');
+        const lastPart = parts[parts.length - 1];
+        if (lastPart.length === 2) {
+          state = lastPart.toUpperCase();
+        }
+      }
+
+      return {
+        ...d,
+        state,
+        totalCases: stats ? stats.total_cases : 0,
+        parentWins: stats ? stats.parent_wins : 0,
+        districtWins: stats ? stats.district_wins : 0,
+        unknownWins: stats ? stats.unknown_wins : 0,
+        parentWinRate: stats && stats.total_cases > 0 ? (stats.parent_wins / stats.total_cases) * 100 : 0
+      };
+    });
+  } catch (err) {
+    console.error('Failed to get school districts with litigation:', err);
+    return [];
+  }
+}
+

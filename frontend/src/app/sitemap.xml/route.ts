@@ -13,6 +13,14 @@ export async function GET() {
     <loc>${baseUrl}/sitemaps/counties.xml</loc>
     <lastmod>2026-05-31</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>${baseUrl}/sitemaps/districts.xml</loc>
+    <lastmod>2026-06-21</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>${baseUrl}/sitemaps/cities.xml</loc>
+    <lastmod>2026-06-21</lastmod>
+  </sitemap>
 </sitemapindex>`;
 
   return new NextResponse(xml, {

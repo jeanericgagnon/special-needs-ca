@@ -1,4 +1,5 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
+import { stateAuditStatus } from './seo-policy';
 
 export const INDEXABLE_STATE_IDS = [
   'california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia',
@@ -120,7 +121,8 @@ type CountyDetailsLike = {
 };
 
 export function isIndexableState(stateId: string): boolean {
-  return INDEXABLE_STATE_IDS.includes(stateId as (typeof INDEXABLE_STATE_IDS)[number]);
+  const status = stateAuditStatus(stateId);
+  return status !== null && status.indexSafe === true;
 }
 
 export function isAcceptablePublicVerificationStatus(status?: string | null): boolean {

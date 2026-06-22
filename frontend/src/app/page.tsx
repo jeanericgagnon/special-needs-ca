@@ -38,6 +38,37 @@ export default async function Home() {
           </Link>
         </div>
       )}
+      <div style={{ 
+        background: 'linear-gradient(90deg, #f8fafc 0%, #f1f5f9 100%)', 
+        borderBottom: '1px solid #cbd5e1', 
+        padding: '0.75rem 1rem', 
+        textAlign: 'center', 
+        fontSize: '0.9rem', 
+        color: '#334155', 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        gap: '0.5rem', 
+        flexWrap: 'wrap',
+        fontFamily: "'Outfit', sans-serif"
+      }}>
+        <span style={{ fontWeight: 500 }}>Compare IEP dispute win/loss rates & inclusion metrics across school districts:</span>
+        <Link href="/school-districts" style={{ 
+          color: 'var(--primary-color)', 
+          fontWeight: 700, 
+          textDecoration: 'none', 
+          display: 'inline-flex', 
+          alignItems: 'center', 
+          gap: '0.25rem',
+          borderBottom: '1.5px solid transparent',
+          transition: 'border-color 0.2s'
+        }}
+        onMouseEnter={(e) => e.currentTarget.style.borderColor = 'var(--primary-color)'}
+        onMouseLeave={(e) => e.currentTarget.style.borderColor = 'transparent'}
+        >
+          Explore School District Dashboards →
+        </Link>
+      </div>
       <WizardClient counties={counties} diagnosesList={DIAGNOSES} waitlists={waitlists} />
     </>
   );

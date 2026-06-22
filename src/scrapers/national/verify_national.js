@@ -292,7 +292,7 @@ async function main() {
     console.log(`[Verify] Connecting to SQLite database at ${DB_PATH}...`);
     const db = new Database(DB_PATH);
     try {
-      const tables = ['advocates', 'attorneys', 'legal_decisions', 'organizations'];
+      const tables = ['advocates', 'attorneys', 'legal_decisions', 'organizations', 'school_districts'];
       for (const table of tables) {
         const row = db.prepare(`SELECT name FROM sqlite_master WHERE type='table' AND name=?`).get(table);
         if (!row) {
@@ -362,6 +362,42 @@ async function main() {
         throw new Error(`Legal Decisions count mismatch: expected ${expectedDecisions}, got ${actualDecisions}`);
       }
       console.log('[Verify] Relational row counts are correct.');
+
+      // Validate that decisions are linked and outcome is populated
+      const decisions = db.prepare('SELECT id, case_name, school_district_id, outcome FROM legal_decisions').all();
+      for (const d of decisions) {
+        if (!d.school_district_id) {
+          throw new Error(`Decision ${d.id} (${d.case_name}) is missing school_district_id link.`);
+        }
+        if (!['parent_win', 'district_win'].includes(d.outcome)) {
+          throw new Error(`Decision ${d.id} has unexpected outcome value: ${d.outcome}`);
+        }
+      }
+      console.log('[Verify] All legal decisions correctly linked to school districts and outcomes.');
+
+      const winLossStats = db.prepare(`
+        SELECT 
+          sd.name as district_name,
+          sd.state as district_state,
+          SUM(case when ld.outcome = 'parent_win' then 1 else 0 end) as parent_wins,
+          SUM(case when ld.outcome = 'district_win' then 1 else 0 end) as district_wins,
+          COUNT(*) as total_cases
+        FROM school_districts sd
+        JOIN legal_decisions ld ON sd.id = ld.school_district_id
+        GROUP BY sd.id
+      `).all();
+
+      console.log('\n==================================================');
+      console.log('[Verify] Legal Precedents - School District Win/Loss Rates:');
+      for (const stat of winLossStats) {
+        const parentWinRate = ((stat.parent_wins / stat.total_cases) * 100).toFixed(1);
+        const districtWinRate = ((stat.district_wins / stat.total_cases) * 100).toFixed(1);
+        console.log(`  * ${stat.district_name} (${stat.district_state}):`);
+        console.log(`    Total cases: ${stat.total_cases}`);
+        console.log(`    Parent Wins: ${stat.parent_wins} (${parentWinRate}%)`);
+        console.log(`    District Wins: ${stat.district_wins} (${districtWinRate}%)`);
+      }
+      console.log('==================================================');
 
       // Re-run DB pipeline script a second time for idempotency check
       console.log('[Verify] Re-running DB pipeline for idempotency check...');

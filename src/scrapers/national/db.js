@@ -37,6 +37,13 @@ export function initDb(db) {
       scraped_at TEXT
     );
 
+    CREATE TABLE IF NOT EXISTS school_districts (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      state TEXT NOT NULL,
+      scraped_at TEXT
+    );
+
     CREATE TABLE IF NOT EXISTS legal_decisions (
       id TEXT PRIMARY KEY,
       state TEXT NOT NULL,
@@ -47,7 +54,9 @@ export function initDb(db) {
       document_url TEXT,
       body_text TEXT,
       source TEXT,
-      scraped_at TEXT
+      scraped_at TEXT,
+      school_district_id TEXT REFERENCES school_districts(id),
+      outcome TEXT
     );
 
     CREATE TABLE IF NOT EXISTS organizations (
@@ -63,6 +72,26 @@ export function initDb(db) {
       scraped_at TEXT
     );
   `);
+
+  // Programmatically add new columns to legal_decisions if they don't exist
+  try {
+    db.exec("ALTER TABLE legal_decisions ADD COLUMN school_district_id TEXT REFERENCES school_districts(id);");
+  } catch (e) {
+    // Column already exists
+  }
+  try {
+    db.exec("ALTER TABLE legal_decisions ADD COLUMN outcome TEXT;");
+  } catch (e) {
+    // Column already exists
+  }
+}
+
+function slugify(text) {
+  if (!text) return '';
+  return text.toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 function validateRecord(r, scraperName) {
@@ -134,9 +163,15 @@ function importFile(db, filePath, scraperName) {
       scraped_at = excluded.scraped_at;
   `);
 
+  const insertDistrict = db.prepare(`
+    INSERT INTO school_districts (id, name, state, scraped_at)
+    VALUES ($id, $name, $state, $scraped_at)
+    ON CONFLICT(id) DO NOTHING;
+  `);
+
   const insertDecision = db.prepare(`
-    INSERT INTO legal_decisions (id, state, case_name, case_number, decision_date, summary, document_url, body_text, source, scraped_at)
-    VALUES ($id, $state, $case_name, $case_number, $decision_date, $summary, $document_url, $body_text, $source, $scraped_at)
+    INSERT INTO legal_decisions (id, state, case_name, case_number, decision_date, summary, document_url, body_text, source, scraped_at, school_district_id, outcome)
+    VALUES ($id, $state, $case_name, $case_number, $decision_date, $summary, $document_url, $body_text, $source, $scraped_at, $school_district_id, $outcome)
     ON CONFLICT(id) DO UPDATE SET
       state = excluded.state,
       case_name = excluded.case_name,
@@ -146,7 +181,9 @@ function importFile(db, filePath, scraperName) {
       document_url = excluded.document_url,
       body_text = excluded.body_text,
       source = excluded.source,
-      scraped_at = excluded.scraped_at;
+      scraped_at = excluded.scraped_at,
+      school_district_id = excluded.school_district_id,
+      outcome = excluded.outcome;
   `);
 
   const insertOrganization = db.prepare(`
@@ -237,6 +274,17 @@ function importFile(db, filePath, scraperName) {
             });
           }
         } else if (scraperName === 'justia') {
+          let schoolDistrictId = null;
+          if (r.school_district) {
+            schoolDistrictId = `sd-${slugify(r.school_district)}-${r.state.toLowerCase()}`;
+            insertDistrict.run({
+              id: schoolDistrictId,
+              name: r.school_district,
+              state: r.state,
+              scraped_at: r.scraped_at || new Date().toISOString()
+            });
+          }
+
           insertDecision.run({
             id: r.id,
             state: r.state,
@@ -246,6 +294,8 @@ function importFile(db, filePath, scraperName) {
             summary: r.summary || null,
             document_url: r.document_url || null,
             body_text: r.body_text || null,
+            school_district_id: schoolDistrictId,
+            outcome: r.outcome || 'unknown',
             source: r.source || 'justia',
             scraped_at: r.scraped_at || new Date().toISOString()
           });

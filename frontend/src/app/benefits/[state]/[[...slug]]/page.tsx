@@ -27,6 +27,7 @@ import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
 import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
 import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
+import { stateAuditStatus, stateGapReason } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string; slug?: string[] }>;
@@ -179,7 +180,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function BenefitsCatchAll({ params }: Props) {
+async function InnerBenefitsCatchAll({ params }: Props) {
   const p = await params;
   const stateId = p.state;
   const slug = p.slug || [];
@@ -194,6 +195,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
   const stateCode = stateData.code.toUpperCase();
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
+  const isIndexedState = isIndexableState(stateData.id);
 
   // ==========================================
   // CASE 7: Programs Index (/benefits/[state]/programs)
@@ -414,7 +416,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
 
               <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
                 <a 
-                  href={program.source_url} 
+                  href={program.official_source_url || program.source_url} 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn-primary" 
@@ -1128,26 +1130,30 @@ export default async function BenefitsCatchAll({ params }: Props) {
       <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>
         
         {/* Dynamic JSON-LD structured data injection */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(governmentServicesSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(advocatesSchema) }}
-        />
+        {isIndexedState && (
+          <>
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(governmentServicesSchema) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(advocatesSchema) }}
+            />
+          </>
+        )}
 
         {/* Source-backed Trust Banner */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(var(--primary-rgb), 0.03)', border: '1px solid rgba(var(--primary-rgb), 0.08)', padding: '0.75rem 1.5rem', borderRadius: '16px', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '0.75rem' }} className="no-print">
@@ -1334,7 +1340,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
                         <Link href={`/benefits/${stateData.id}/program/${pSlug}`} style={{ textDecoration: 'none', color: 'var(--primary-color)', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
                           View Guide <ArrowRight size={12} />
                         </Link>
-                        <a href={prog.source_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'var(--text-light)' }}>
+                        <a href={prog.official_source_url || prog.source_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'var(--text-light)' }}>
                           Official Source ↗
                         </a>
                       </div>
@@ -1665,4 +1671,31 @@ export default async function BenefitsCatchAll({ params }: Props) {
   }
 
   notFound();
+}
+
+export default async function BenefitsCatchAll({ params }: Props) {
+  const p = await params;
+  const stateId = p.state;
+  const stateData = await getStateByIdOrCode(stateId);
+  const isIndexedState = stateData ? isIndexableState(stateData.id) : true;
+  const content = await InnerBenefitsCatchAll({ params });
+  if (!isIndexedState && stateData) {
+    const gapReason = stateGapReason(stateData.id);
+    return (
+      <div>
+        <div style={{ background: 'linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%)', borderBottom: '1px solid #fde68a', padding: '1rem 1.5rem', color: '#92400e', fontSize: '0.88rem', fontFamily: "'Outfit', sans-serif" }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+            <span>⚠️</span>
+            <div>
+              <strong style={{ display: 'block', fontSize: '0.9rem', marginBottom: '0.15rem' }}>Verification Pending &mdash; Not Yet Index-Safe</strong>
+              <p style={{ margin: 0, lineHeight: 1.4, color: '#b45309' }}>The official data-audit for {stateData.name} is currently incomplete. This page is served with a noindex robots policy.</p>
+              {gapReason && <div style={{ marginTop: '0.5rem', paddingLeft: '0.5rem', borderLeft: '3px solid #f59e0b', fontSize: '0.82rem', color: '#78350f' }}><strong>Known Blockers / Gap Audit:</strong> {gapReason}</div>}
+            </div>
+          </div>
+        </div>
+        {content}
+      </div>
+    );
+  }
+  return content;
 }

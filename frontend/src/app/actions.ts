@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use server'
 
-import { getProgramsByKeywords, getMatchedCorePrograms, getCountyDetails, Program, CoreProgramMatch, getStateByIdOrCode } from '@/lib/db';
+import { getProgramsByKeywords, getMatchedCorePrograms, getCountyDetails, Program, CoreProgramMatch, getStateByIdOrCode, getSchoolDistrictById, getSchoolDistrictLitigation } from '@/lib/db';
 import { hasNonNegatedKeyword } from '@/lib/negation';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import stateProgramsMapRaw from '@/lib/state_programs_map.json';
@@ -324,4 +324,16 @@ export async function submitSuggestionAction(formData: {
   } else {
     return { success: false, message: 'Failed to record suggestion. Please try again later.' };
   }
+}
+
+export async function getSchoolDistrictDetailsAction(id: string) {
+  const district = await getSchoolDistrictById(id);
+  if (!district) return null;
+  
+  const litigation = await getSchoolDistrictLitigation(id);
+  
+  return {
+    district,
+    litigation
+  };
 }
