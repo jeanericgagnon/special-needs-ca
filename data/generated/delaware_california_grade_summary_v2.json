@@ -3,14 +3,14 @@
   "state_code": "DE",
   "state_name": "Delaware",
   "batch": "batch_14_procedure_hardening_states_v1",
-  "classification": "UNSTARTED",
+  "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 3,
-  "completeness_pct": 50,
-  "strong_critical_families": 6,
-  "weak_critical_families": 4,
-  "missing_critical_families": 2,
+  "completeness_pct": 75,
+  "strong_critical_families": 9,
+  "weak_critical_families": 3,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "legacy_or_inventory_only_evidence",
   "recommended_batch": "batch_3_procedure_hardening",
@@ -19,10 +19,7 @@
     "county_local_disability_resources"
   ],
   "major_gap_families": [
-    "special_education_idea_part_b",
-    "protection_and_advocacy",
-    "parent_training_information_center",
-    "legal_aid"
+    "special_education_idea_part_b"
   ],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
