@@ -1,0 +1,30 @@
+{
+  "batch": "batch_58_alaska_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "legal_aid",
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "dlcak": {
+      "sourceUrl": "http://www.dlcak.org/",
+      "finalUrl": "https://www.dlcak.org/",
+      "pageTitle": ""
+    },
+    "stoneSoup": {
+      "sourceUrl": "https://www.stonesoupgroup.org/",
+      "finalUrl": "https://www.stonesoupgroup.org/",
+      "pageTitle": "Stone Soup Group | Supporting Alaskan Families who care for children with special needs."
+    }
+  }
+}

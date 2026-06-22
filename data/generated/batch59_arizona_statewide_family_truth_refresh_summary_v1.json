@@ -1,0 +1,29 @@
+{
+  "batch": "batch_59_arizona_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "protection_and_advocacy",
+    "legal_aid",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "parent_training_information_center",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "disabilityRightsArizona": {
+      "sourceUrl": "http://www.disabilityrightsaz.org/",
+      "finalUrl": "https://disabilityrightsaz.org/",
+      "pageTitle": "Disability Rights Arizona"
+    },
+    "encircleFamilies": {
+      "sourceUrl": "https://raisingspecialkids.org/",
+      "finalUrl": "https://encirclefamilies.org/",
+      "pageTitle": "Support for Families Raising Children with Disabilities - Encircle Families"
+    }
+  }
+}
