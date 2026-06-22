@@ -1,0 +1,14 @@
+{
+  "batch": "batch_53_new-york_legal_aid_statewide_repair_v1",
+  "generated_at": "2026-06-22T00:05:18.225Z",
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 75,
+  "legal_aid_source": "https://www.lawhelpny.org/",
+  "remaining_failure_families": [
+    "county_local_disability_resources",
+    "district_or_county_education_routing",
+    "parent_training_information_center"
+  ]
+}
