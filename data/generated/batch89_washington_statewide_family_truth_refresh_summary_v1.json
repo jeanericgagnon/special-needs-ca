@@ -1,0 +1,15 @@
+{
+  "batch": "batch89_washington_statewide_family_truth_refresh_v1",
+  "state": "washington",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources",
+    "protection_and_advocacy",
+    "legal_aid"
+  ]
+}
