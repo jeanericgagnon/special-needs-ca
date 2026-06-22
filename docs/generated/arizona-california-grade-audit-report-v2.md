@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 15
-- primary_gap_reason: challenged_official_roots_and_db_inventory_still_placeholder_only
+- primary_gap_reason: azed_and_des_hosts_challenged_but_ahcccs_exposes_partial_official_local_artifacts
 
 ## Family status
 
@@ -13,19 +13,19 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_zero_exact_leaf_packet (The Arizona education packet still contains 0 exact district-owned leaves, and the current DB inventory is still only statewide fallback coverage: 15/15 Arizona school_district rows point at the same challenged https://www.azed.gov/specialeducation root instead of district-owned special-education leaves. The obvious official replacement roots https://www.azed.gov/school-district-web-sites/, https://www.azed.gov/asd/school-district-web-sites/, https://www.azed.gov/exceptionalstudentservices/, and https://www.azed.gov/ess also returned the same Cloudflare challenge shell in bounded live checks. Until exact district-owned special-education or student-services targets are authored, the family remains blocked on statewide placeholders rather than on a runnable local repair queue.)
+- district_or_county_education_routing: blocked_zero_exact_leaf_packet (Arizona education remains blocked because the official AZED host challenges not only the statewide special-education root but also robots.txt and sitemap.xml, leaving 15/15 current district rows stuck on one statewide fallback URL. Exact district-routing proof must now come from district-owned leaves, not from further AZED-host probing.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (reviewed live first-party PTI designation text is present on the Encircle Families acknowledgements page)
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_zero_exact_leaf_packet (The Arizona county-local office packet still contains 0 exact office leaves, and the current DB inventory is still placeholder-only: 14/15 Arizona county_offices rows point at the DOI-derived FAA placeholder through https://www.azahcccs.gov/ and the remaining 1/15 row points at the generic legacy root https://dhhs.arizona.gov/locations. The obvious official replacement roots https://des.az.gov/office-locator, https://des.az.gov/services/basic-needs/apply-for-benefits/where-to-apply, and https://des.az.gov/find-your-local-office all returned the same Cloudflare challenge shell, while companion AHCCCS guesses https://www.azahcccs.gov/Members/GetCovered/Categories/where.html and https://www.azahcccs.gov/AHCCCS/Downloads/FFA.pdf returned 200 "Page/Document not found" shells. Until the stale county-root inventory is replaced with live official office roots or exact leaves, the family remains blocked on statewide placeholders rather than on a trustworthy local repair queue.)
+- county_local_disability_resources: blocked_zero_exact_leaf_packet (Arizona county-local routing is no longer blocked on a total absence of official candidates: DES remains challenge-blocked even at robots.txt and sitemap.xml, but accessible AHCCCS artifacts now provide a partial official office lane through live AHCCCS contacts, ALTCS Offices, and county-map/admin PDFs. The family remains blocked because those official AHCCCS artifacts have not yet been translated into full county-grade office mapping for all 15 counties.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: education_packet_scaffold_only_zero_exact_district_leaves :: Reviewed 2026-06-22 bounded live probes of Arizona Department of Education replacement candidates for district routing plus the current Arizona school_district DB rows. The existing statewide root https://www.azed.gov/specialeducation still returns the Cloudflare "Just a moment..." shell, and the likely replacement leaves https://www.azed.gov/school-district-web-sites/, https://www.azed.gov/asd/school-district-web-sites/, https://www.azed.gov/exceptionalstudentservices/, and https://www.azed.gov/ess also each returned HTTP 403 with cf-mitigated: challenge. The live DB inventory is still placeholder-only: 15/15 Arizona school_district rows point at the same statewide AZED root and are labeled as county fallback coverage rather than district-owned evidence pages. The authored packet at data/generated/arizona_district_or_county_education_routing_leaf_authoring_packet_v1.json still reports authoredExactLeafCount=0 across 15 affected counties, so no district-owned Arizona special-education or student-services leaf has yet been attached to the repair queue.
-- county_local_disability_resources: county_office_packet_empty_and_county_root_inventory_nonresolving :: Reviewed 2026-06-22 bounded live probes of Arizona local-office replacement candidates plus the current Arizona county_offices DB rows. Apache, Cochise, Coconino, Gila, Graham, La Paz, Mohave, Navajo, Pima, Pinal, Santa Cruz, Yavapai, and Yuma still rely on a DOI-derived FAA placeholder row through https://www.azahcccs.gov/, Greenlee still points at the generic legacy root https://dhhs.arizona.gov/locations, and Maricopa still lacks a reviewed county-specific official office leaf. The likely DES office replacements https://des.az.gov/office-locator, https://des.az.gov/services/basic-needs/apply-for-benefits/where-to-apply, and https://des.az.gov/find-your-local-office also each returned HTTP 403 with cf-mitigated: challenge, and the companion AHCCCS guesses https://www.azahcccs.gov/Members/GetCovered/Categories/where.html plus https://www.azahcccs.gov/AHCCCS/Downloads/FFA.pdf returned 200 "Page/Document not found" shells. The authored packet at data/generated/arizona_county_local_disability_resources_leaf_authoring_packet_v1.json still reports authoredExactLeafCount=0, so the county-local repair queue cannot yet be truthfully seeded from either the stale county-root inventory or the reviewed replacement roots.
+- district_or_county_education_routing: azed_host_blocks_root_robots_and_sitemap_so_district_leafs_must_come_from_district_sites :: Reviewed 2026-06-22 bounded live official Arizona education probes across the existing statewide root https://www.azed.gov/specialeducation plus host-level discovery surfaces https://www.azed.gov/robots.txt and https://www.azed.gov/sitemap.xml. All three returned HTTP 403 with the Cloudflare "Just a moment..." challenge shell, and the previously checked likely replacement leaves https://www.azed.gov/school-district-web-sites/, https://www.azed.gov/asd/school-district-web-sites/, https://www.azed.gov/exceptionalstudentservices/, and https://www.azed.gov/ess did the same. The current DB inventory remains placeholder-only at 15/15 statewide AZED fallback rows, so Arizona education cannot reopen on AZED-host discovery and now requires district-owned leaf authoring.
+- county_local_disability_resources: des_host_challenged_but_ahcccs_sitemap_exposes_partial_altcs_office_and_county_map_artifacts :: Reviewed 2026-06-22 bounded live official Arizona county-local probes across DES and AHCCCS hosts. The DES root and discovery surfaces https://des.az.gov/, https://des.az.gov/robots.txt, https://des.az.gov/sitemap.xml, https://des.az.gov/office-locator, https://des.az.gov/services/basic-needs/apply-for-benefits/where-to-apply, and https://des.az.gov/find-your-local-office all returned HTTP 403 with the Cloudflare "Just a moment..." challenge shell, so DES cannot currently seed exact office leaves. In contrast, the official AHCCCS host kept discovery open: https://www.azahcccs.gov/sitemap.xml and robots.txt returned 200, and the sitemap exposed live exact artifacts including https://www.azahcccs.gov/shared/AHCCCScontacts.html, https://www.azahcccs.gov/members/ALTCSlocations.html, https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf, and county-admin PDFs such as https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf. The ALTCS Offices page preserves named official offices in Phoenix, Tucson, and Yuma, but the current lane still lacks parsed county-to-office mapping for all 15 counties, so the stale DOI and legacy-placeholder county rows cannot yet be replaced truthfully.
 
 ## Verified source samples
 
@@ -34,23 +34,23 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.arizona.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.arizona.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.azed.gov/specialeducation
-- district_or_county_education_routing: blocked_zero_exact_leaf_packet; samples=3; first=https://www.azed.gov/specialeducation
+- district_or_county_education_routing: blocked_zero_exact_leaf_packet; samples=4; first=https://www.azed.gov/specialeducation
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://des.az.gov/ddd
 - protection_and_advocacy: verified_state_grade; samples=1; first=http://www.disabilityrightsaz.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://encirclefamilies.org/about-us/acknowledgements/
 - legal_aid: verified_state_grade; samples=1; first=http://www.disabilityrightsaz.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.azahcccs.gov
-- county_local_disability_resources: blocked_zero_exact_leaf_packet; samples=3; first=https://des.az.gov/
+- county_local_disability_resources: blocked_zero_exact_leaf_packet; samples=6; first=https://des.az.gov/
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_exact_district_owned_special_education_leaves_before_reopening_arizona_education
-- [critical] county_local_disability_resources: replace_nonresolving_county_root_seeds_before_authoring_arizona_county_local_leaves
+- [critical] district_or_county_education_routing: author_district_owned_special_education_or_student_services_leaves_from_local_district_sites_not_azed
+- [critical] county_local_disability_resources: extract_county_to_altcs_admin_mapping_from_accessible_ahcccs_office_and_county_map_artifacts_before_rewriting_county_rows
 
 ## Repair decision
 
 - Arizona remains BLOCKED and not index-safe.
-- Education is still blocked because 15/15 current Arizona district rows are the same challenged statewide ADE fallback URL, and no district-owned special-education leaf has been authored for any county.
-- County-local is still blocked because the current office inventory is still 14 DOI/AHCCCS placeholder rows plus 1 generic legacy locator row, and the reviewed DES/AHCCCS replacement roots remain challenge or not-found shells rather than county-grade office leaves.
-- Arizona should only reopen these families once exact district-owned or county-specific first-party targets are authored, not by retrying the same statewide placeholders or challenged roots.
+- Education is now a cleaner district-leaf authoring problem: the AZED host blocks the statewide root, robots.txt, and sitemap.xml, so further AZED-host discovery is not a useful lane.
+- County-local is no longer a total-candidate void: DES remains blocked, but AHCCCS exposes live ALTCS office and county-map artifacts that can seed a narrower official county-mapping lane once parsed and attached to counties.
+- Arizona should only reopen when district-owned education leaves and county-grade office mappings are attached from these exact official surfaces rather than from statewide placeholders.

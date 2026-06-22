@@ -1,0 +1,16 @@
+{
+  "batch": "batch_137_alaska_dfcs_reorg_root_check_v1",
+  "generated_at": "2026-06-22T00:00:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "dfcs_reorg_root_live": true,
+  "dfcs_reorg_root_repaired_county_directory": false,
+  "lesson_added": false
+}

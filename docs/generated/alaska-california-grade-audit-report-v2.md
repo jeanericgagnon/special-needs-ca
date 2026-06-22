@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404
+- primary_gap_reason: dfcs_reorg_root_relays_back_to_challenged_health_host_and_no_public_assistance_contacts_exist
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved (Official Alaska DPA/SDS office-location, default, contact, newer /en/ paths, robots.txt, and sitemap.xml all return the same Cloudflare challenge shell, the legacy dhss.alaska.gov/locations locator is HTTP 404, and a bounded browser-assisted check on the exact office-locations leaf still returns only the verification shell, so county-grade local-office evidence is blocked at the host level across both static and browser-assisted lanes.)
+- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved (The live Alaska DFCS reorg root does not repair county-grade office routing: its Services page only relays Adult Public Assistance and Medicaid users back to challenged health.alaska.gov leaves, its Department Contacts page has no Public Assistance or disability office-routing section, the exact health host office-locations leaf still returns the Cloudflare verification shell, and the legacy locator is HTTP 404.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404 :: Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, contact, newer /en/ paths, and the host-level robots.txt plus sitemap.xml surfaces. Every live health.alaska.gov candidate returned HTTP 403 with cf-mitigated: challenge and the Cloudflare "Just a moment..." shell, while the legacy official locator https://dhss.alaska.gov/locations returned HTTP 404 and the legacy dhss.alaska.gov DPA/DSDS aliases only 302 back into the same challenged host. A bounded browser-assisted check on the exact office-locations leaf still returned HTTP 403 plus the same Cloudflare "Performing security verification" shell, so the current official host is blocked in both static and browser-assisted lanes. No alternate official county-grade office leaf or document was recovered in this bounded pass.
+- county_local_disability_resources: dfcs_reorg_root_relays_back_to_challenged_health_host_and_no_public_assistance_contacts_exist :: Reviewed 2026-06-22 bounded live official Alaska reorg-host checks on https://dfcs.alaska.gov/Pages/default.aspx, https://dfcs.alaska.gov/Pages/Services.aspx, and https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx, plus the already-blocked exact health host leaf https://health.alaska.gov/dpa/Pages/office-locations.aspx. The reorg DFCS root is live and the Services page exposes Adult Public Assistance and Apply for Medicaid links, but both point families back to health.alaska.gov leaves instead of a reviewable local office directory. The DFCS Department Contacts page contains no Public Assistance, Medicaid, Senior and Disabilities, or office-location routing terms, while the exact health host office-locations leaf still returns HTTP 403 with the Cloudflare "Just a moment..." shell. The legacy official locator https://dhss.alaska.gov/locations remains HTTP 404, so no current official county-grade local-office replacement was recovered.
 
 ## Verified source samples
 
@@ -40,15 +40,15 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved; samples=5; first=https://health.alaska.gov/dpa/Pages/office-locations.aspx
+- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved; samples=7; first=https://dfcs.alaska.gov/Pages/default.aspx
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_local_office_directory_is_republished_or_current_official_host_stops_returning_verification_shells
+- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_a_reviewable_public_assistance_or_disability_office_directory_on_dfcs_or_the_health_host_challenge_clears
 
 ## Repair decision
 
 - The only remaining Alaska blocker is county/local disability resources.
-- This bounded pass confirmed the blocker is host-level on the current official Alaska DPA/SDS web stack, not one bad office leaf.
-- No alternate official county-grade office leaf or downloadable office directory was recovered during this pass.
-- Alaska remains BLOCKED and not index-safe until the official local-office directory is republished on a different reviewable official host or the current official host stops returning the Cloudflare verification shell in both static and browser-assisted lanes.
+- This bounded pass confirms the live DFCS reorg host is real but does not provide a Public Assistance or disability office directory that repairs county-grade routing.
+- The DFCS Services page only relays Adult Public Assistance and Medicaid users back to the same challenged health host, and the DFCS contacts page carries no program-specific office-routing section.
+- Alaska remains BLOCKED and not index-safe until the state publishes a reviewable office directory on DFCS or the challenged health host begins serving the current official office-locations content again.

@@ -1,0 +1,15 @@
+{
+  "batch": "batch_138_arizona_accessible_ahcccs_altcs_refresh_v1",
+  "generated_at": "2026-06-22T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "azed_host_discovery_blocked": true,
+  "des_host_discovery_blocked": true,
+  "ahcccs_accessible_local_artifacts_found": true,
+  "lesson_added": false
+}

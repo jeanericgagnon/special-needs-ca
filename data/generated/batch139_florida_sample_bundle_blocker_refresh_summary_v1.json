@@ -1,0 +1,22 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "blocker_family": "county_local_disability_resources",
+  "counties_cleared_via_csv": 34,
+  "counties_still_missing_public_contract": 33,
+  "shell_bytes": 5165,
+  "bundle_signal": "two_county_admin_stub_plus_sample_internal_rows",
+  "main_bundle_county_names": [
+    "Broward",
+    "Dade"
+  ],
+  "sample_rows_seen": [
+    "BigOrganization10",
+    "Second Harvest",
+    "Tallahassee",
+    "Baker"
+  ],
+  "lesson_added": false
+}

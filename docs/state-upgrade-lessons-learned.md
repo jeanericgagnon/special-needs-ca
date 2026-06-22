@@ -479,3 +479,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Statewide Map And Governance Pages Are Dead Ends When They Never Link Out To Local Education Operators
 *   **Lesson:** If a state education page only loops into statewide shapefiles, budgets, CASA forms, and internal special-education pages, stop treating it as a discovery lane for county routing. Iowa became cheaper once the district-maps and AEA pages were proven to expose no reviewed external AEA domains or district-owned special-education leaves, so future repair work should skip those statewide surfaces unless a new local outbound link appears.
+
+### Live Reorg Roots That Only Relay Back To A Blocked Host Do Not Repair Local Office Routing
+*   **Lesson:** If a new official reorg host loads but its service links only send families back to the same challenged or broken host, and its contacts page lacks the program-specific office-routing terms, treat it as a non-repairing relay surface. Do not count the reorg root as a local-office replacement.
+
+### When One Official Host Is Challenge-Blocked, Check Sibling Official Sitemaps Before Declaring The Whole Family Exhausted
+*   **Lesson:** If a state office host blocks even its root, `robots.txt`, and `sitemap.xml`, pivot once to sibling official domains in the same program family before stopping. In Arizona, `des.az.gov` and `azed.gov` stayed fully challenged, but `azahcccs.gov/sitemap.xml` remained open and exposed live office and county-admin artifacts that the blocked DES host never revealed.
+
+### Public Bundles With Tiny County Stubs And Sample Rows Still Fail The County-Grade Gate
+*   **Lesson:** If a public JS bundle exposes only a tiny county subset plus obvious sample or internal rows, do not treat it as a hidden statewide contract. Florida stayed blocked because the bundle showed just Broward/Dade admin stubs alongside sample rows like `BigOrganization10` and repeated `Second Harvest`, which is not county-grade proof for the rest of the state.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T20:38:02.413Z",
+  "generatedAt": "2026-06-22T20:57:40.699Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 10,
@@ -151,7 +151,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404",
+      "packetPrimaryGapReason": "dfcs_reorg_root_relays_back_to_challenged_health_host_and_no_public_assistance_contacts_exist",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "challenged_official_roots_and_db_inventory_still_placeholder_only",
+      "packetPrimaryGapReason": "azed_and_des_hosts_challenged_but_ahcccs_exposes_partial_official_local_artifacts",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -641,7 +641,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "official_myaccess_public_shell_and_proxy_do_not_expose_county_rows",
+      "packetPrimaryGapReason": "official_myaccess_bundle_exposes_sample_rows_and_two_county_admin_stub_not_public_statewide_contract",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

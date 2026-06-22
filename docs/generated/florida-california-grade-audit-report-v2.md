@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 67
-- primary_gap_reason: official_myaccess_public_shell_and_proxy_do_not_expose_county_rows
+- primary_gap_reason: official_myaccess_bundle_exposes_sample_rows_and_two_county_admin_stub_not_public_statewide_contract
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Florida legal aid sources are present in the Florida source pack and verified discovery artifacts.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_public_shell_and_proxy_without_county_rows (Official Florida DCF county-local routing remains split between a reviewed Family Resource Center CSV that covers 34/67 counties and a MyACCESS public shell/proxy lane that still does not expose a public county-row contract. The live app config still points officeMapping at /dataexchangeproxy, but the fetched UXModule.flPartnerLocation bundle only exposes blank form-schema fields like id/locationName/phoneNumber/streetAddress plus a county select control rather than a reviewed public county-result dataset.)
+- county_local_disability_resources: blocked_public_shell_and_proxy_without_county_rows (Official Florida DCF county-local routing remains split between a reviewed Family Resource Center CSV that covers 34/67 counties and a MyACCESS bundle lane that still does not expose a trustworthy public statewide county-results contract. The public app config still points officeMapping at /dataexchangeproxy, but the reviewed public main bundle only embeds a tiny Broward/Dade admin stub plus obvious sample/internal rows such as BigOrganization10 and repeated Second Harvest/Tallahassee examples rather than a county-grade office dataset for the remaining 33 counties.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_myaccess_public_shell_and_proxy_do_not_expose_county_rows :: Reviewed 2026-06-22 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/dataexchangeproxy, and the live official bundle https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js. The Family Resource Center CSV still preserves reviewed storefront coverage for only 34/67 Florida counties. The public CPCPS entry and plain GET to /dataexchangeproxy both return the same 5165-byte MyACCESS shell instead of county results. Appconfig still exposes officeMapping=/dataexchangeproxy, but the fetched flPartnerLocation bundle only exposes county form controls and a blank location template (`id`, `locationName`, `phoneNumber`, `faxNumber`, `streetAddress`) rather than a documented public county-office search response or downloadable county dataset. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.
+- county_local_disability_resources: official_myaccess_bundle_exposes_sample_rows_and_two_county_admin_stub_not_public_statewide_contract :: Reviewed 2026-06-22 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/dataexchangeproxy, the live official bundle https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js, and the public main bundle https://myaccess.myflfamilies.com/static/js/main.d43b0959.js. The Family Resource Center CSV still preserves reviewed storefront coverage for only 34/67 Florida counties. The public CPCPS entry and plain GET to /dataexchangeproxy still return the same 5165-byte MyACCESS shell, and appconfig still exposes officeMapping=/dataexchangeproxy. The partner-location bundle remains an admin/location form schema with blank fields like id/locationName/phoneNumber/streetAddress. The public main bundle does embed tiny data objects, but they are not a trustworthy statewide county-office contract: it only includes a two-county Broward/Dade admin stub plus obvious sample/internal rows such as orgFullName="BigOrganization10", repeated locationName="Second Harvest", fake Tallahassee/Baker sample addresses, and nonauthoritative contact values. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.
 
 ## Verified source samples
 
@@ -44,11 +44,11 @@
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_county_local_until_first_party_county_dataset_or_search_contract_is_publicly_documented
+- [critical] county_local_disability_resources: hold_county_local_until_first_party_county_dataset_or_documented_anonymous_search_contract_exists_beyond_sample_bundle_rows
 
 ## Repair decision
 
 - Florida remains BLOCKED and not index-safe.
 - The reviewed official Family Resource Center CSV still clears only 34 counties.
-- The remaining MyACCESS lane is still not a public county-results contract: the shell and proxy return only the public app chrome, and the reviewed JS bundle exposes form-schema fields instead of a downloadable or queryable county-office dataset.
-- Florida should only reopen county-local once a first-party county dataset or documented anonymous search contract is public for the remaining 33 counties.
+- The remaining MyACCESS lane is now a stronger negative finding: beyond the public shell and proxy, the public main bundle only exposes a two-county Broward/Dade admin stub plus obvious sample/internal rows, not a trustworthy statewide county-office result contract.
+- Florida should only reopen county-local once a first-party county dataset or documented anonymous search contract exists beyond those sample bundle rows.

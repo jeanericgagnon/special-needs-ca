@@ -1,0 +1,10 @@
+# Alaska DFCS Reorg Root Check Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- refined_family: county_local_disability_resources
+- failure_code: dfcs_reorg_root_relays_back_to_challenged_health_host_and_no_public_assistance_contacts_exist
+
+## Evidence
+
+- Reviewed 2026-06-22 bounded live official Alaska reorg-host checks on https://dfcs.alaska.gov/Pages/default.aspx, https://dfcs.alaska.gov/Pages/Services.aspx, and https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx, plus the already-blocked exact health host leaf https://health.alaska.gov/dpa/Pages/office-locations.aspx. The reorg DFCS root is live and the Services page exposes Adult Public Assistance and Apply for Medicaid links, but both point families back to health.alaska.gov leaves instead of a reviewable local office directory. The DFCS Department Contacts page contains no Public Assistance, Medicaid, Senior and Disabilities, or office-location routing terms, while the exact health host office-locations leaf still returns HTTP 403 with the Cloudflare "Just a moment..." shell. The legacy official locator https://dhss.alaska.gov/locations remains HTTP 404, so no current official county-grade local-office replacement was recovered.
