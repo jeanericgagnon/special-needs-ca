@@ -1,0 +1,23 @@
+{
+  "batch": "batch_73_mississippi_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "mississippi",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "vocational_rehabilitation_pre_ets",
+    "protection_and_advocacy",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "mspti": {
+      "sourceUrl": "https://mspti.org",
+      "finalUrl": "https://mspti.org/default.asp"
+    }
+  }
+}

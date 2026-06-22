@@ -3,13 +3,13 @@
   "state_code": "MS",
   "state_name": "Mississippi",
   "batch": "batch_5_procedure_hardening_states_v1",
-  "classification": "UNSTARTED",
+  "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 82,
-  "completeness_pct": 50,
-  "strong_critical_families": 6,
-  "weak_critical_families": 4,
+  "completeness_pct": 58,
+  "strong_critical_families": 7,
+  "weak_critical_families": 3,
   "missing_critical_families": 2,
   "total_critical_families": 12,
   "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
@@ -21,7 +21,6 @@
   "major_gap_families": [
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
-    "parent_training_information_center",
     "legal_aid"
   ],
   "verified_source_families_with_samples": [
@@ -42,5 +41,42 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ],
+  "final_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+      "evidence": "Reviewed Mississippi packet evidence still routes district or county education through generic statewide Mississippi special-education pages rather than county- or district-owned leaves.",
+      "next_action": "author_county_or_district_exact_targets"
+    },
+    {
+      "family": "vocational_rehabilitation_pre_ets",
+      "severity": "major",
+      "failure_code": "legacy_or_inventory_only_evidence",
+      "evidence": "The reviewed statewide MS CAP page helps VR and VRB clients, but it does not itself prove direct statewide VR / Pre-ETS routing at the required role purity.",
+      "next_action": "author_verified_state_manifest"
+    },
+    {
+      "family": "protection_and_advocacy",
+      "severity": "major",
+      "failure_code": "missing_required_source_family",
+      "evidence": "Mississippi still lacks reviewed first-party or authoritative statewide protection-and-advocacy evidence on disk.",
+      "next_action": "author_or_verify_statewide_source_family"
+    },
+    {
+      "family": "legal_aid",
+      "severity": "major",
+      "failure_code": "missing_required_source_family",
+      "evidence": "Mississippi still lacks reviewed first-party or authoritative statewide legal-aid evidence on disk.",
+      "next_action": "author_or_verify_statewide_source_family"
+    },
+    {
+      "family": "county_local_disability_resources",
+      "severity": "critical",
+      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+      "evidence": "County/local disability resources still depend on a generic statewide locations page instead of reviewed county-owned local routing evidence.",
+      "next_action": "author_county_or_district_exact_targets"
+    }
   ]
 }

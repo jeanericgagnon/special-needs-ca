@@ -264,3 +264,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Reviewed Raw First-Party HTML Can Repair A Rejected Support Page
 *   **Problem:** Hawaii’s LDAH page was rejected by the lightweight nonprofit validator because its contact details were rendered inside injected footer markup, yet the reviewed raw first-party HTML still preserved explicit Parent Training & Information Center designation text plus office-contact evidence.
 *   **Lesson:** When a reviewed first-party statewide support page is rejected only because lightweight extraction missed JS-injected contact blocks, inspect the saved raw HTML before preserving an `inventory_only` blocker. If the reviewed body itself clearly preserves explicit designation text and direct contact evidence, repair the packet from that artifact instead of reopening discovery.
+
+### First-Party 404 Shells Do Not Count As Statewide Support Proof
+*   **Problem:** Minnesota inherited Mid-Minnesota Legal Aid / Minnesota Disability Law Center evidence in the packet, but the reviewed first-party fetch preserved only a `Page not found` shell with site chrome, nav links, and contact snippets rather than a live role-aligned legal-aid or P&A leaf.
+*   **Lesson:** Do not preserve statewide support verification from a first-party 404 shell just because the page still shows the right organization name, navigation, or footer contact information. Demote the sample chain and keep the family blocked until a live role-aligned first-party leaf is reviewed.

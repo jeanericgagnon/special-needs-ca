@@ -1,0 +1,28 @@
+{
+  "batch": "batch_72_minnesota_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "parent_training_information_center",
+    "legal_aid"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "pacer": {
+      "sourceUrl": "https://www.pacer.org/",
+      "finalUrl": "https://www.pacer.org/"
+    },
+    "mndlc": {
+      "sourceUrl": "http://www.mndlc.org",
+      "finalUrl": "https://mylegalaid.org/"
+    }
+  }
+}
