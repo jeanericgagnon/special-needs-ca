@@ -1,0 +1,16 @@
+{
+  "batch": "batch_97_colorado_blocker_refinement_v1",
+  "generated_at": "2026-06-22T18:40:00.000Z",
+  "state": "colorado",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "education": "Reviewed current Colorado school_district rows on 2026-06-22. All 64 county-linked school_district rows still collapse to the same statewide CDE special-education URL https://www.cde.state.co.us/cdesped, including county fallback names like Adams, Alamosa, and Arapahoe, so no district-owned education leaf is currently verified for California-grade county routing.",
+    "countyLocal": "Reviewed current Colorado county_offices rows on 2026-06-22. At least 67 county-office rows for Colorado counties still use the DOI mirror https://doi.org/10.7910/DVN/AVRHMI with source_listed evidence levels, including Adams, Alamosa, Arapahoe, and Boulder, so county-local office routing is still backed by mirror data rather than reviewed county-owned leaves."
+  }
+}

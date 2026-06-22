@@ -54,7 +54,7 @@
       "family": "parent_training_information_center",
       "severity": "major",
       "failure_code": "reviewed_pti_source_is_regional_not_statewide",
-      "evidence": "Reviewed first-party Matrix Parents evidence on https://www.matrixparents.org/ preserves explicit PTI/FEC/FRC designation text, but the same page limits PTI service coverage to Marin, Napa, Solano, and Sonoma Counties rather than statewide California coverage.",
+      "evidence": "Reviewed 2026-06-22 bounded statewide-equivalent parent-center candidate set. Matrix Parents still preserves explicit PTI/FEC/FRC designation text, but its own scope stays limited to Marin, Napa, Solano, and Sonoma Counties; the official DDS Family Resource Centers Network URL https://www.dds.ca.gov/rc/frcn now returns 404; frcnca.org fails TLS protocol negotiation in the current lane; and supportforfamilies.org returns 403. No live fetched statewide California PTI or equivalent parent-center source is currently verified on disk.",
       "next_action": "hold_blocked_until_statewide_pti_or_equivalent_parent_center_source_is_verified"
     },
     {

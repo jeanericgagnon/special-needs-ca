@@ -317,6 +317,17 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Alaska's `health.alaska.gov` office-directory leaves looked blocked, and the follow-up check showed the same Cloudflare / 403 shell on `robots.txt` and sitemap endpoints too.
 *   **Lesson:** If the office leaf, `robots.txt`, and sitemap endpoints all return the same challenge shell, treat it as a domain-level fetch blocker in the current lane. Stop trying sibling office URLs and record the blocker as lane-wide until a different fetch method or reviewed alternate official domain exists.
 
+### PTI Designation Can Hide On Acknowledgements Or Grant-Funding Pages
+*   **Problem:** Arizona's Encircle Families homepage, About, services, FAQs, and resources pages all preserved real statewide support scope but still failed the PTI gate, while the live first-party acknowledgements page explicitly stated that Encircle Families is Arizona's Parent Training and Information (PTI) Center and cited IDEA Part D support.
+*   **Lesson:** When a real first-party parent-support site still lacks explicit PTI text on its main navigation leaves, check same-domain acknowledgements, funding, or grant-support pages before preserving the blocker. Those pages can carry the exact designation text needed to clear PTI without broad discovery.
+
+### Equivalent Parent-Center Blocks Need Exact Candidate-Failure Ledgers
+*   **Problem:** California's statewide PTI-equivalent lane looked generically blocked until the bounded candidate set was checked directly: Matrix Parents stayed regional, the official DDS FRCN root returned 404, frcnca.org failed TLS in the current lane, and Support for Families returned 403.
+*   **Lesson:** When a state allows a PTI-equivalent parent-center source, record the exact bounded candidate failures before leaving the family blocked. That turns a vague statewide-support gap into a resumable repair ledger and prevents rechecking the same dead or transport-broken roots later.
+
+### Whole-State Fallback Rows Should Be Counted Explicitly, Not Described Vaguely
+*   **Problem:** Colorado's local blockers were still summarized as generic inventory noise even though the live tables had a much sharper shape: all 64 education rows pointed to one statewide CDE special-education root, and at least 67 county-office rows still pointed to the same DOI mirror.
+*   **Lesson:** When a blocked local family collapses to one fallback source URL or mirror across most or all counties, replace generic inventory-count blocker text with exact row-count + source-URL evidence. That makes the blocker actionable without rereading the whole state packet.
 ### Official Early-Childhood Pages Can Preserve Part C Even When The Old Part C Domain Is Dead
 *   **Problem:** Kansas lost its old early-start root entirely, and the first likely Part C domain hint also died, but the live KSDE Early Childhood Special Education page still preserved birth-to-three entitlement, KDHE Part C administration, and the external local ITS directory pointer.
 *   **Lesson:** When a state's old Part C root is dead, check the live official early-childhood or preschool-special-education leaf on the education agency domain before opening broader discovery. If that page explicitly states who administers Part C and points families to the local intake network, it can repair the statewide Part C family.

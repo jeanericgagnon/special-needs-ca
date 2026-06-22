@@ -7,9 +7,9 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 15,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "official_browser_challenge_and_generic_local_fallbacks",
@@ -18,9 +18,7 @@
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "parent_training_information_center"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -44,17 +42,12 @@
     {
       "family": "district_or_county_education_routing",
       "failure_code": "official_education_root_challenge_and_county_fallback_only_rows",
-      "evidence": "Reviewed 2026-06-22 bounded browser-assisted fetches on Arizona Department of Education special-education leaves returned Cloudflare verification shells, and current Arizona school_district rows are still generic county fallback rows pointing at https://www.azed.gov/specialeducation instead of district-owned evidence pages."
+      "evidence": "Reviewed 2026-06-22 Arizona Department of Education special-education root plus robots.txt and sitemap endpoints. The leaf, root, robots.txt, and sitemap URLs all returned Cloudflare security-verification or 403 shells, while the current 15 Arizona school_district rows still point at https://www.azed.gov/specialeducation as generic county fallback evidence rather than district-owned pages."
     },
     {
       "family": "county_local_disability_resources",
       "failure_code": "official_local_office_roots_challenge_and_doi_fallback_rows",
-      "evidence": "Reviewed 2026-06-22 bounded browser-assisted fetches on Arizona DES roots returned Cloudflare verification shells, while current Arizona county_office rows are largely DOI-derived FAA placeholders or generic legacy location rows rather than reviewed county-specific official office leaves."
-    },
-    {
-      "family": "parent_training_information_center",
-      "failure_code": "reviewed_first_party_support_source_lacks_explicit_pti_designation",
-      "evidence": "Reviewed 2026-06-22 Encircle Families homepage, about, services, and resources leaves preserve statewide family-support and training evidence, but no live fetched first-party page preserves explicit PTI / Parent Training and Information Center designation text."
+      "evidence": "Reviewed 2026-06-22 Arizona DES root plus robots.txt and sitemap endpoints. The root, robots.txt, and sitemap URLs all returned Cloudflare security-verification or 403 shells, while 14 Arizona county_office rows still rely on the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and one row still points at the generic legacy locations root https://dhhs.arizona.gov/locations instead of reviewed county-specific official office leaves."
     }
   ]
 }
