@@ -1,0 +1,20 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "blocker_family": "county_local_disability_resources",
+  "blocker_code": "public_myaccess_bundle_contains_sample_rows_and_two_county_admin_stub_not_statewide_contract",
+  "counties_cleared_via_csv": 34,
+  "counties_still_missing_public_contract": 33,
+  "bundle_sample_county_rows": 2,
+  "bundle_sample_counties": [
+    "Broward",
+    "Dade"
+  ],
+  "sample_row_markers": [
+    "BigOrganization10",
+    "Second Harvest"
+  ],
+  "lesson_added": false
+}

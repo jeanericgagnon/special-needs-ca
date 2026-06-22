@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T20:57:40.699Z",
+  "generatedAt": "2026-06-22T20:58:38.142Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 10,
@@ -641,7 +641,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "official_myaccess_bundle_exposes_sample_rows_and_two_county_admin_stub_not_public_statewide_contract",
+      "packetPrimaryGapReason": "public_myaccess_bundle_contains_sample_rows_and_two_county_admin_stub_not_statewide_contract",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

@@ -488,3 +488,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Public Bundles With Tiny County Stubs And Sample Rows Still Fail The County-Grade Gate
 *   **Lesson:** If a public JS bundle exposes only a tiny county subset plus obvious sample or internal rows, do not treat it as a hidden statewide contract. Florida stayed blocked because the bundle showed just Broward/Dade admin stubs alongside sample rows like `BigOrganization10` and repeated `Second Harvest`, which is not county-grade proof for the rest of the state.
+
+### Public Bundles With Tiny County Stubs And Sample Rows Do Not Count As County Contracts
+*   **Lesson:** If a public app bundle exposes only a tiny county stub plus obvious sample or internal rows, do not treat it as a hidden county-results contract. Florida stayed blocked because the public bundle carried only Broward/Dade admin stubs alongside `BigOrganization10` and repeated `Second Harvest` sample data, not a real statewide office dataset.
