@@ -280,3 +280,15 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Official State District Directories Can Replace County Fallbacks In Borough-Based States
 *   **Problem:** Alaska's packet treated district routing as statewide fallback evidence even though DEED already exposed an official district-profiles search, district map, and district detail leaves with district-owned contact fields.
 *   **Lesson:** In borough-based or district-structured states, check the official state district directory before opening district-by-district discovery. If the directory deterministically resolves to district detail pages with address, phone, email, and superintendent fields, use that official directory chain to repair local education routing.
+
+### Live Parent-Support Leaves Do Not Prove PTI When Exact PTI Leaves Are Missing
+*   **Problem:** Alaska's Stone Soup Group site exposed live homepage, contact, FAQ, resource-guide, and parent-navigation leaves with statewide support and office evidence, but likely PTI-style leaves returned 404 and no fetched first-party page preserved explicit PTI designation text.
+*   **Lesson:** Do not upgrade a PTI family from strong parent-support or contact evidence alone. If the live first-party chain still lacks explicit `Parent Training and Information Center` text, and likely PTI leaves are 404 or missing, keep the family blocked and record that exact first-party designation gap.
+
+### Browser-Challenged State Roots Plus Generic County Fallback Rows Are A Terminal Local Blocker
+*   **Problem:** Arizona's AZED and DES roots both rendered Cloudflare verification shells in the bounded browser lane, while the current `school_districts` and `county_offices` rows still collapsed to statewide fallbacks or DOI-derived placeholders instead of reviewed local leaves.
+*   **Lesson:** When the live official state roots are browser-challenged and the current local rows are still generic fallbacks, stop calling the family `legacy_state_grade`. Reclassify it as a blocked local-proof family and preserve both truths: the official root is unreadable in the current lane, and the existing county/district rows are not exact evidence.
+
+### Official Searchable District And County Directories Can Clear Local-Proof Families Without County-Specific Packet Authoring
+*   **Problem:** Arkansas looked blocked because the packet only preserved statewide DESE and DHS roots plus generic county fallback rows, even though the live official Arkansas School Personnel Directory and DHS County Offices Map already exposed district-specific SPED/504 contacts and county-specific office leaves.
+*   **Lesson:** Before opening county-by-county authoring, check whether the state already runs one searchable official district directory and one searchable official county-office directory. If the district directory preserves district-level SPED/504 contact fields and the office directory resolves to county-specific office leaves, those official directory chains can satisfy local routing truthfully without separate county packet authoring.

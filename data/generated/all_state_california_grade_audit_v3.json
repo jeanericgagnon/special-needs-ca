@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T13:50:54.000Z",
+  "generatedAt": "2026-06-22T14:14:55.202Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 3,
-    "BLOCKED": 47
+    "COMPLETE": 4,
+    "BLOCKED": 46
   },
-  "indexSafeCount": 3,
+  "indexSafeCount": 4,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -151,7 +151,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "official_local_office_directory_challenge_and_missing_explicit_pti_designation",
+      "packetPrimaryGapReason": "official_local_office_directory_challenge_and_live_first_party_pti_designation_gap",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -210,26 +210,26 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "blocked_official_education_root_challenge_and_county_fallback_only_rows",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_official_local_office_roots_challenge_and_doi_fallback_rows"
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetPrimaryGapReason": "official_browser_challenge_and_generic_local_fallbacks",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "arkansas",
       "stateCode": "AR",
       "stateName": "Arkansas",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -237,11 +237,11 @@
       "legacyManualReviewRate": 58.9,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 75,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "arkansas",
         "state_code": "AR",
@@ -280,19 +280,19 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_6_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "california",

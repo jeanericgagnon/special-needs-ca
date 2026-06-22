@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_local_office_directory_challenge_and_missing_explicit_pti_designation",
+  "primary_gap_reason": "official_local_office_directory_challenge_and_live_first_party_pti_designation_gap",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -41,5 +41,16 @@
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": null
+  "final_blockers": [
+    {
+      "family": "county_local_disability_resources",
+      "failure_code": "official_local_directory_challenge_blocks_reviewed_county_grade_evidence",
+      "evidence": "Reviewed 2026-06-22 static and bounded browser-assisted checks both returned Cloudflare security-verification shells on Alaska DPA and SDS office-directory candidates, including office-locations and contact leaves on health.alaska.gov."
+    },
+    {
+      "family": "parent_training_information_center",
+      "failure_code": "reviewed_first_party_support_source_lacks_explicit_pti_designation",
+      "evidence": "Reviewed 2026-06-22 Stone Soup Group homepage, contact, history/mission, parent-navigation, FAQ, and family-resource-guide leaves preserve statewide support scope and offices, but no live fetched first-party page preserves explicit PTI / Parent Training and Information Center designation text; likely PTI-style leaves returned 404."
+    }
+  ]
 }
