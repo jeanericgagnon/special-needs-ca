@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_local_directories_exist_but_live_rows_still_lack_county_mapped_replacements",
+  "primary_gap_reason": "official_directories_now_expose_exact_district_and_office_targets_but_county_keyed_mappings_still_missing",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -44,16 +44,16 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_sde_district_directory_exists_but_no_county_mapped_special_education_contract",
-      "evidence": "Reviewed 2026-06-22 current official Idaho SDE sources including https://www.sde.idaho.gov/school-districts/, https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, and https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, plus the live school_district DB rows. The official /school-districts/ page exposes 106 district website links, proving local district leaves exist. But the fetched public markup exposes no county header, district header, address header, website header, phone header, or other county-mapped table contract, and the live DB inventory is still 44/44 statewide placeholders: every Idaho school_district row still reuses a statewide SDE URL rather than a reviewed county-mapped or district-owned routing leaf.",
-      "next_action": "author_county_mapped_district_routing_from_official_directory_or_hold_blocked"
+      "failure_code": "official_school_district_directory_exists_but_county_or_special_education_mapping_not_yet_reviewed",
+      "evidence": "Reviewed 2026-06-22 current official Idaho SDE pages: https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, https://www.sde.idaho.gov/about-us/idaho-schools/, and the official School Districts directory https://www.sde.idaho.gov/school-districts/ plus its public WordPress page JSON. The School Districts page explicitly says it is a complete list of Idaho K-12 districts and preserves 116 exact outbound district website links, but the directory is not county-keyed and does not expose district special-education contacts in reviewed public content. The live school_district table is still 44/44 statewide fallback rows, so county-grade education routing still cannot be verified.",
+      "next_action": "author_reviewed_district_targets_from_official_school_districts_directory_or_keep_county_routing_blocked"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_dhw_office_leaves_exist_but_live_rows_still_lack_county_to_office_mapping",
-      "evidence": "Reviewed 2026-06-22 current official Idaho DHW sources including https://healthandwelfare.idaho.gov/offices, https://healthandwelfare.idaho.gov/contact-us, and the official sitemap https://healthandwelfare.idaho.gov/sitemap.xml, plus live county_offices DB rows. The official sitemap exposes 23 exact office leaves such as /dhw/boise-office-westgate-building, /dhw/caldwell-office, and /dhw/idaho-falls-office, proving local office leaves exist. But the fetched public /offices page still exposes no county-to-office mapping contract, while 27 live county rows still use the dead legacy locator https://dhhs.idaho.gov/locations and the other 18 still point to the generic Medicaid page https://healthandwelfare.idaho.gov/services-programs/medicaid-health rather than exact office leaves.",
-      "next_action": "author_exact_county_to_office_mappings_from_official_office_leaves_or_hold_blocked"
+      "failure_code": "official_dhw_office_directory_exposes_27_exact_office_leaves_but_27_counties_still_lack_public_mapping",
+      "evidence": "Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us, https://healthandwelfare.idaho.gov/offices?page=0, https://healthandwelfare.idaho.gov/offices?page=1, https://healthandwelfare.idaho.gov/offices?page=2, and the DHW sitemap https://healthandwelfare.idaho.gov/sitemap.xml, plus live county_offices DB rows. The paginated official directory preserves 27 exact office entries and the sitemap preserves exact office leaves such as /dhw/boise-office-westgate-building, /dhw/pocatello-office-horizon-building, /dhw/blackfoot-office-blackfoot-services-complex, /dhw/caldwell-office, /dhw/idaho-falls-office, /dhw/payette-office, /dhw/rexburg-office, /dhw/sandpoint-ponderay-office, and /dhw/twin-falls-office-pole-line-building. Seventeen DOI-backed county rows already name-match official office leaves, but 27 county rows still use the dead legacy locator https://dhhs.idaho.gov/locations and the remaining DOI-backed Nampa office row lacks a reviewed exact official leaf. The public office search is city-or-ZIP only, so a county-to-office contract still cannot be verified.",
+      "next_action": "replace_17_named_doi_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_without_public_mapping"
     }
   ]
 }

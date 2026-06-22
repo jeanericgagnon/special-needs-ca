@@ -2,21 +2,19 @@
   "state": "indiana",
   "state_code": "IN",
   "state_name": "Indiana",
-  "batch": "batch_135_indiana_dead_contact_lane_refresh_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "batch": "batch_142_indiana_school_directory_completion_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 92,
-  "completeness_pct": 91,
-  "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_special_education_contact_lane_removed_and_no_official_search_replacement",
-  "recommended_batch": "batch_2_repair_blocked",
-  "critical_gap_families": [
-    "district_or_county_education_routing"
-  ],
+  "primary_gap_reason": "none",
+  "recommended_batch": "complete_maintain",
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -33,19 +31,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "official_special_education_contact_lane_removed_and_no_official_search_replacement",
-      "evidence": "Reviewed 2026-06-22 official Indiana DOE Special Education and Data Center pages. The page preserves the Special Education Director and Local Administrator Contact List only inside commented-out HTML, the Google Sheets edit/export/csv/preview paths for spreadsheet 1hRtp2zsG3WtdCf2ma69awNDkxTc65jLn all return HTTP 410 Gone, the bounded Indiana DOE site-search lane for the contact-list phrase returns 404, and the live 2025-2026 Indiana School Directory XLSX remains generic school/corporation metadata instead of district-grade special-education routing evidence.",
-      "next_action": "hold_blocked_until_indiana_doe_publishes_a_live_special_education_contact_or_district_grade_routing_source"
-    }
-  ]
+  "final_blockers": []
 }

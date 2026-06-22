@@ -500,3 +500,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Official Local Directories Can Prove Leaf Existence Without Proving County Mapping
 *   **Lesson:** When an official state directory or sitemap exposes many local leaves, split “local leaves exist” from “county mapping is verified.” Idaho SDE exposed 106 district links and Idaho DHW exposed 23 office leaves, but both families still stayed blocked because the public sources did not map those leaves back to counties and the live DB rows still used statewide placeholders.
+
+### Official Search APIs Can Expose Missed Exact Directories Without Broad Crawling
+*   **Lesson:** Before final-blocking a WordPress-based official education stack for “no exact local leaves,” query the site's own public search API. Idaho’s SDE packet missed `https://www.sde.idaho.gov/school-districts/`, and the official search endpoint exposed a complete district directory with 116 exact outbound district links even though the earlier packet only reviewed statewide special-education pages.
+
+### Official County-Mapped School Directory Spreadsheets Can Clear District Routing Without Special-Ed-Specific Contacts
+*   **Lesson:** If an official school-directory spreadsheet maps counties to local school corporations and preserves district-owned routing fields like homepage, superintendent email, phone, and address, it can satisfy district-or-county education routing even when a special-education-specific contact list is retired. Indiana cleared once the live official CORP sheet proved 92-county coverage.
