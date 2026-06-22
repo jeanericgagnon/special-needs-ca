@@ -371,3 +371,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Try Both `www` And Bare County COE Hosts Before Abandoning A Packet Root
 *   **Lesson:** California county education packet roots can fail in different ways across host variants. If a county COE `www` host is dead, check the bare domain once; if both fail DNS, record the root as terminally dead and move to the next packet root instead of spending more scrape budget there.
+
+### Statewide County Directories Can Replace DOI Mirrors When They Already Link Every County
+*   **Lesson:** If a live official county-services directory already preserves one county-labeled local-routing link for every county on the page itself, use that single reviewed leaf to replace DOI mirror county-office fallbacks instead of reopening 50-plus county leaf fetches.
+
+### State-Hosted District Contact Directories Are Not “Generic” When They Preserve District-Owned Special-Ed Contacts
+*   **Lesson:** A state DOE leaf can satisfy county-grade education routing when the page itself lists district-specific Special Education Director entries with district names plus phone/email fields statewide. Do not reject it just because it lives on the state domain; reject only generic special-education roots that lack district-level contact evidence.

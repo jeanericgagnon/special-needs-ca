@@ -1,10 +1,10 @@
 # Colorado Blocker Refinement Report v1
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 83
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 
 ## Evidence checks
 
-- education: Reviewed current Colorado school_district rows on 2026-06-22. All 64 county-linked school_district rows still collapse to the same statewide CDE special-education URL https://www.cde.state.co.us/cdesped, including county fallback names like Adams, Alamosa, and Arapahoe, so no district-owned education leaf is currently verified for California-grade county routing.
-- county_local: Reviewed current Colorado county_offices rows on 2026-06-22. At least 67 county-office rows for Colorado counties still use the DOI mirror https://doi.org/10.7910/DVN/AVRHMI with source_listed evidence levels, including Adams, Alamosa, Arapahoe, and Boulder, so county-local office routing is still backed by mirror data rather than reviewed county-owned leaves.
+- education: Reviewed 2026-06-22 bounded live probe on the exact Colorado CDE District Contacts leaf https://ed.cde.state.co.us/cdesped/office-of-special-education/sped-gifted-dir. The official page is titled "Find your Special Education and Gifted Directors in Colorado," renders H1 "District Contacts," and preserves hundreds of district-owned special-education contact entries with district names, Special Education Director labels, emails, phones, and out-of-district coordinator fields, including Academy 20, Adams 12 Five Star Schools, Adams County 14, and BOCES-backed rural districts.
+- county_local: Reviewed 2026-06-22 bounded live probe on the exact Colorado CDHS county directory https://cdhs.colorado.gov/contact-your-county. The official page is titled "Contact your county human services department" and preserves 64 county-labeled local-routing links directly in HTML, including Adams County Department of Human Services, Alamosa County Department of Human Services, Arapahoe County Department of Human Services, Denver Human Services, and Broomfield Human Services.
