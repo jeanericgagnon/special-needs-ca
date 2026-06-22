@@ -518,3 +518,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Embedded Help Links Inside A Public Portal Must Be Fetched Before They Count As Fallbacks
 *   **Lesson:** If a public portal embeds a “find a local office” help URL in its own error text, fetch that exact first-party URL before treating it as a fallback lane. Florida MyACCESS exposed `ess-storefronts-and-lobbies` in the bundle, but the page itself was a DCF 404 shell, so it did not repair county routing.
+
+### Use The Bundled PDF Runtime Before Declaring An Official PDF Fully Image-Only
+*   **Lesson:** Before preserving a PDF blocker as fully image-only, run one bounded extraction pass with the bundled workspace Python runtime. Arizona’s ALTCS county map still was not enough to clear county routing, but bundled `pypdf` recovered the county list and proved the lane was partially parseable even though the admin-office PDFs remained OCR-only blockers.

@@ -1,0 +1,17 @@
+{
+  "batch": "batch_144_arizona_partial_pdf_extraction_refinement_v1",
+  "generated_at": "2026-06-22T22:05:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "altcs_county_map_text_extractable": true,
+  "county_admin_pdf_text_extractable": false,
+  "lesson_added": false
+}
