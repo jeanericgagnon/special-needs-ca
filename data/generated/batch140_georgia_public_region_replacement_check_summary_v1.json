@@ -1,0 +1,12 @@
+{
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "blocker_family": "developmental_disability_idd_authority",
+  "county_lookup_blank_rows": 159,
+  "public_region_contact_leaves": 6,
+  "public_region_location_leaves": 6,
+  "county_mapping_contract_found": false,
+  "lesson_added": false
+}

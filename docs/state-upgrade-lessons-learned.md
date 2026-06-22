@@ -494,3 +494,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### ArcGIS Item Data Can Rescue A Generic Instant-App Shell
 *   **Lesson:** If an official ArcGIS Instant App only renders a generic shell, check the public `sharing/rest/content/items/<appid>/data?f=json` contract before final-blocking it. Georgia DBHDD looked blocked at the HTML shell, but the public item data exposed a live FeatureServer query with all 159 county-to-region DD mappings and contact fields.
+
+### Official Sitemap Siblings Can Repair Dead Legacy Slugs Without Repairing County Coverage
+*   **Lesson:** When a county lookup points to dead or unpublished legacy slugs, check the official sitemap for sibling `/contacts/...` or `/locations/...` leaves before declaring the whole family dead. But do not clear a county-grade family unless those replacement leaves also expose counties served or another public county-to-region contract. Georgia DBHDD had live replacement region leaves, but county mapping still stayed blocked.
+
+### Official Local Directories Can Prove Leaf Existence Without Proving County Mapping
+*   **Lesson:** When an official state directory or sitemap exposes many local leaves, split “local leaves exist” from “county mapping is verified.” Idaho SDE exposed 106 district links and Idaho DHW exposed 23 office leaves, but both families still stayed blocked because the public sources did not map those leaves back to counties and the live DB rows still used statewide placeholders.
