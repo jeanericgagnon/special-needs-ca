@@ -2,9 +2,9 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 83
+- completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: official_local_office_directory_challenge_and_live_first_party_pti_designation_gap
+- primary_gap_reason: official_local_directory_challenge_blocks_reviewed_county_grade_evidence
 
 ## Family status
 
@@ -16,16 +16,15 @@
 - district_or_county_education_routing: verified_state_grade (Official Alaska DEED district-profiles directory and district map pages preserve named district detail leaves with addresses, phones, emails, and superintendent contacts for Alaska local school systems, including borough districts plus REAA routing for unorganized areas.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (Reviewed first-party Disability Law Center of Alaska pages now preserve explicit Protection and Advocacy grant designations, including PADD, PAIMI, PAIR, and related federal P&A authorities on the DLCAK funding page.)
-- parent_training_information_center: blocked_reviewed_first_party_support_without_explicit_pti_designation (Reviewed live Stone Soup and Parent Center Hub artifacts preserve statewide support scope, but no fetched first-party or authoritative page preserves explicit Alaska PTI designation text; search and map-shell near-misses are not enough.)
+- parent_training_information_center: verified_state_grade (Reviewed authoritative Parent Center Hub Alaska leaf explicitly labels Stone Soup Group as Alaska PTI and preserves statewide Alaska contact evidence, so the PTI family is now verified even though Stone Soup Group’s own first-party pages still emphasize support scope instead of repeating the PTI designation.)
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved (Official Alaska DPA/SDS office-location, default, and contact roots all return the Cloudflare "Just a moment..." HTTP 403 shell in the current lane, so county-grade local-office evidence remains unreviewed.)
+- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved (Official Alaska DPA/SDS office-location, default, contact, and legacy dhss.alaska.gov alias roots all resolve to the same Cloudflare "Just a moment..." HTTP 403 shell in the current lane, so county-grade local-office evidence remains blocked at the domain level.)
 
 ## Failure ledger
 
-- parent_training_information_center: reviewed_first_party_support_source_lacks_explicit_pti_designation :: Reviewed 2026-06-22 live Stone Soup Group and Parent Center Hub artifacts. Stone Soup first-party pages still preserve statewide support and parent-navigation scope, but no fetched page preserves explicit PTI / Parent Training and Information Center designation text. Stone Soup search results echo the query in the page title ("Parent Training and Information") but only render generic search-results content, and the Parent Center Hub Alaska map asset only preserves the Alaska selector plus "Click to find a list of parent centers" without naming Stone Soup Group or an Alaska PTI. No fetched first-party or authoritative page yet preserves explicit Alaska PTI designation text.
-- county_local_disability_resources: official_local_directory_challenge_blocks_reviewed_county_grade_evidence :: Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots. Every checked office candidate returned HTTP 403 with the Cloudflare "Just a moment..." shell, so county-grade local-office evidence is blocked at the domain level in the current fetch lane rather than at one stale page.
+- county_local_disability_resources: official_local_directory_challenge_blocks_reviewed_county_grade_evidence :: Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots, plus legacy dhss.alaska.gov aliases that now redirect back to the same health.alaska.gov surfaces. Every checked office candidate returned HTTP 403 with the Cloudflare "Just a moment..." shell, so county-grade local-office evidence is blocked at the domain level rather than at one stale page.
 
 ## Verified source samples
 
@@ -37,7 +36,7 @@
 - district_or_county_education_routing: verified_state_grade; samples=20; first=https://education.alaska.gov/DOE_Rolodex/DistrictProfiles2000/DistrictProfilesSearch.cfm
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://dhss.alaska.gov/dsds
 - protection_and_advocacy: verified_state_grade; samples=2; first=https://www.dlcak.org/
-- parent_training_information_center: blocked_reviewed_first_party_support_without_explicit_pti_designation; samples=3; first=https://www.stonesoupgroup.org/
+- parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/alaska/
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
@@ -46,12 +45,11 @@
 ## Next actions
 
 - [critical] county_local_disability_resources: hold_blocked_until_official_local_office_directory_is_rehydrated_or_replaced_with_reviewed_first_party_office_listing
-- [major] parent_training_information_center: hold_blocked_until_explicit_pti_designation_is_preserved_from_live_first_party_source
 
 ## Repair decision
 
 - District or county education routing is verified from the official Alaska DEED district-profiles directory, district map, and district detail leaves.
 - Protection and advocacy remains verified from the DLCAK first-party funding and statewide advocacy pages.
-- Parent training and information center remains blocked because reviewed 2026-06-22 live stone soup group and parent center hub artifacts. stone soup first-party pages still preserve statewide support and parent-navigation scope, but no fetched page preserves explicit pti / parent training and information center designation text. stone soup search results echo the query in the page title ("parent training and information") but only render generic search-results content, and the parent center hub alaska map asset only preserves the alaska selector plus "click to find a list of parent centers" without naming stone soup group or an alaska pti. no fetched first-party or authoritative page yet preserves explicit alaska pti designation text.
-- County-local disability resources remain blocked because reviewed 2026-06-22 live official alaska dpa and sds office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots. every checked office candidate returned http 403 with the cloudflare "just a moment..." shell, so county-grade local-office evidence is blocked at the domain level in the current fetch lane rather than at one stale page.
-- Alaska is therefore still BLOCKED and not index-safe, but the remaining blockers are now narrower and more exact.
+- Parent training and information center is now verified from the authoritative Parent Center Hub Alaska leaf, which explicitly labels Stone Soup Group as Alaska PTI and preserves Alaska contact evidence.
+- County-local disability resources remain blocked because reviewed 2026-06-22 live official alaska dpa and sds office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots, plus legacy dhss.alaska.gov aliases that now redirect back to the same health.alaska.gov surfaces. every checked office candidate returned http 403 with the cloudflare "just a moment..." shell, so county-grade local-office evidence is blocked at the domain level rather than at one stale page.
+- Alaska is therefore still BLOCKED and not index-safe because one critical county-local family remains unresolved, but the PTI blocker is now cleared.

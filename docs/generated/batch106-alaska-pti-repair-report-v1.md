@@ -1,0 +1,11 @@
+# Alaska PTI Repair Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- repaired_family: parent_training_information_center
+- remaining_blockers: county_local_disability_resources
+
+## Evidence checks
+
+- pti: Reviewed 2026-06-22 live authoritative Parent Center Hub Alaska leaf https://www.parentcenterhub.org/findurcenter/alaska/ plus Stone Soup Group first-party pages. The Alaska leaf explicitly labels "Alaska PTI" and names Stone Soup Group with Anchorage address 307 E. Northern Lights Blvd., Suite 100, Anchorage, AK 99503, phone (877) 786-7327 / (907) 561-3701, email info@stonesoupgroup.org, and website http://www.stonesoupgroup.org. This now preserves authoritative explicit Alaska PTI designation text that the Stone Soup first-party pages themselves still do not repeat.
+- county_local: Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots, plus legacy dhss.alaska.gov aliases that now redirect back to the same health.alaska.gov surfaces. Every checked office candidate returned HTTP 403 with the Cloudflare "Just a moment..." shell, so county-grade local-office evidence is blocked at the domain level rather than at one stale page.

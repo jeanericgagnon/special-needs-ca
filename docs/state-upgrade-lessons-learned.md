@@ -386,3 +386,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Treat A Public Homepage’s Own CSV Fetch As The First-Party Data Contract
 *   **Lesson:** If the live official homepage JavaScript explicitly fetches a public CSV to populate county filters or map results, treat that CSV as the published county-coverage contract before chasing blocked browser-only locators. Florida’s Family Resource Center homepage itself fetches `providers.csv`, which proved the official dataset stops at 34 counties.
+
+### Parent Center Hub State Leafs Can Close PTI Gaps When First-Party Pages Omit The Label
+*   **Lesson:** When a state parent-center organization’s own site preserves real statewide support scope but not the PTI label, check the exact Parent Center Hub state leaf at `/findurcenter/<state>/`. Those reviewed state leaves can preserve the authoritative `State PTI` or `CPRC` designation plus the named organization and contact block without reopening broad directory discovery.
+
+### Full-Domain 403 Plus Fallback-Only Rows Means Packet Gap, Not Just Browser Gap
+*   **Lesson:** When an official state domain 403s on the root, robots.txt, sitemap, and obvious leaf guesses, check whether the live rows are still 100% statewide or DOI-style placeholders. If so, record the blocker as missing authored local leaf coverage too, so later repairs do not stall waiting on a browser lane that still has no exact local targets to verify.
+
+### On California DDS, The Replacement FRC Paths Matter More Than The Dead Legacy Root
+*   **Lesson:** If `https://www.dds.ca.gov/rc/frcn` is dead, do not stop there. Check the live DDS replacements under `/services/early-start/family-resource-center/` and `/services/early-start/family-resource-center/regional-center-early-start-intake-and-family-resource-centers/`; together they can preserve statewide equivalent parent-center mission text plus county-by-county FRC routing.

@@ -14,6 +14,8 @@ const INPUTS = {
   failure: path.join(generatedDir, 'arizona_failure_ledger_v2.jsonl'),
   verified: path.join(generatedDir, 'arizona_verified_sources_v1.jsonl'),
   next: path.join(generatedDir, 'arizona_next_action_queue_v2.jsonl'),
+  queue: path.join(generatedDir, 'all_state_priority_queue_v3.jsonl'),
+  lessons: path.join(repoRoot, 'docs', 'state-upgrade-lessons-learned.md'),
 };
 
 const OUTPUTS = {
@@ -23,8 +25,10 @@ const OUTPUTS = {
 };
 
 const PTI_EVIDENCE = 'Reviewed 2026-06-22 live Encircle Families acknowledgements page at https://encirclefamilies.org/about-us/acknowledgements/. The fetched first-party page explicitly says Encircle Families is Arizona’s Parent Training and Information (PTI) Center and cites IDEA Part D grant support, so the PTI family is now verified from live first-party designation text rather than inferred family-support scope.';
-const EDUCATION_EVIDENCE = 'Reviewed 2026-06-22 live Arizona Department of Education special-education candidates. The root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs all returned the Cloudflare "Just a moment..." HTTP 403 shell, while the current 15 Arizona school_district rows still point at https://www.azed.gov/specialeducation as generic county fallback evidence rather than district-owned pages.';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 live Arizona DES candidates. The root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap URLs all returned the Cloudflare "Just a moment..." HTTP 403 shell, while 14 Arizona county_office rows still rely on the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and one row still points at the generic legacy locations root https://dhhs.arizona.gov/locations instead of reviewed county-specific official office leaves.';
+const EDUCATION_EVIDENCE = 'Reviewed 2026-06-22 live Arizona Department of Education special-education candidates. The root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs all returned the Cloudflare "Just a moment..." HTTP 403 shell. The live school_district table currently contains 15/15 Arizona rows still pointing at https://www.azed.gov/specialeducation as generic county fallback evidence, and no authored district-owned Arizona leaf packet is currently present on disk to replace them.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 live Arizona DES candidates. The root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap URLs all returned the Cloudflare "Just a moment..." HTTP 403 shell. The live county_offices table currently contains 14 Arizona rows still anchored to the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and 1 row still anchored to the generic legacy root https://dhhs.arizona.gov/locations, and no authored Arizona county-office leaf packet is currently present on disk to replace them.';
+const LESSON_HEADING = '### Full-Domain 403 Plus Fallback-Only Rows Means Packet Gap, Not Just Browser Gap';
+const LESSON_BODY = '*   **Lesson:** When an official state domain 403s on the root, robots.txt, sitemap, and obvious leaf guesses, check whether the live rows are still 100% statewide or DOI-style placeholders. If so, record the blocker as missing authored local leaf coverage too, so later repairs do not stall waiting on a browser lane that still has no exact local targets to verify.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -47,6 +51,14 @@ function writeJson(filePath, value) {
 function writeJsonl(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, `${rows.map((row) => JSON.stringify(row)).join('\n')}${rows.length ? '\n' : ''}`);
+}
+
+function appendLessonIfMissing() {
+  const current = fs.readFileSync(INPUTS.lessons, 'utf8');
+  if (current.includes(LESSON_HEADING)) {
+    return;
+  }
+  fs.writeFileSync(INPUTS.lessons, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
 }
 
 function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
@@ -78,7 +90,7 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- Arizona now has reviewed live first-party PTI designation evidence on Encircle Families, so Parent Training and Information Center is no longer a blocker.',
-    '- Arizona still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence while the official AZED domain is challenged across the root plus obvious local-routing leaves, and county/local disability resources still depend on DOI or generic locator rows while the official DES domain is challenged across the root plus obvious office-locator leaves.',
+    '- Arizona still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence while the official AZED domain is challenged across the root plus obvious local-routing leaves and no district-owned Arizona leaf packet is yet authored on disk, and county/local disability resources still depend on DOI or generic locator rows while the official DES domain is challenged across the root plus obvious office-locator leaves and no reviewed county-office leaf packet is yet authored on disk.',
     '- Arizona is therefore still BLOCKED and not index-safe, but the final blockers are now limited to the two county- or district-grade local-proof families.',
     '',
     '## Evidence checks',
@@ -95,6 +107,7 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
   const failureRows = readJsonl(INPUTS.failure);
   const verifiedRows = readJsonl(INPUTS.verified);
   const nextRows = readJsonl(INPUTS.next);
+  const queueRows = readJsonl(INPUTS.queue);
 
   const updatedGapRows = gapRows.map((row) => {
     if (row.family === 'parent_training_information_center') {
@@ -174,10 +187,18 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
     .filter((row) => row.family !== 'parent_training_information_center')
     .map((row) => {
       if (row.family === 'district_or_county_education_routing') {
-        return { ...row, evidence: EDUCATION_EVIDENCE };
+        return {
+          ...row,
+          next_action: 'author_district_owned_exact_targets_then_reopen_when_local_education_leafs_exist',
+          evidence: EDUCATION_EVIDENCE,
+        };
       }
       if (row.family === 'county_local_disability_resources') {
-        return { ...row, evidence: COUNTY_EVIDENCE };
+        return {
+          ...row,
+          next_action: 'author_reviewed_county_specific_office_leaves_before_reopening_browser_lane',
+          evidence: COUNTY_EVIDENCE,
+        };
       }
       return row;
     });
@@ -187,6 +208,7 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
     completeness_pct: 83,
     strong_critical_families: 10,
     weak_critical_families: 2,
+    primary_gap_reason: 'full_domain_challenge_plus_missing_authored_local_leaf_packets',
     major_gap_families: [],
     final_blockers: [
       {
@@ -202,11 +224,23 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
     ],
   };
 
+  const updatedQueueRows = queueRows.map((row) => {
+    if (row.state === 'arizona') {
+      return {
+        ...row,
+        primary_gap_reason: 'full_domain_challenge_plus_missing_authored_local_leaf_packets',
+      };
+    }
+    return row;
+  });
+
   writeJsonl(INPUTS.gap, updatedGapRows);
   writeJsonl(INPUTS.failure, updatedFailureRows);
   writeJsonl(INPUTS.verified, updatedVerifiedRows);
   writeJsonl(INPUTS.next, updatedNextRows);
+  writeJsonl(INPUTS.queue, updatedQueueRows);
   writeJson(INPUTS.summary, updatedSummary);
+  appendLessonIfMissing();
   writeJson(OUTPUTS.summary, {
     batch: 'batch_95_arizona_blocker_refinement_v1',
     generated_at: '2026-06-22T18:00:00.000Z',

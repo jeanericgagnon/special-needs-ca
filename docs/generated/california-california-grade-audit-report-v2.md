@@ -2,9 +2,9 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 83
+- completeness_pct: 91
 - county_count: 58
-- primary_gap_reason: district_grade_leaf_packet_exhausted_and_reviewed_pti_source_still_not_statewide
+- primary_gap_reason: district_grade_leaf_packet_exhausted_after_statewide_equivalent_parent_center_repair
 
 ## Family status
 
@@ -16,7 +16,7 @@
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted (Reviewed the existing bounded California district packet after the statewide CDE SELPA directory root https://www.cde.ca.gov/sp/se/as/caselpas.asp returned a Radware bot challenge. Exact district/county leaves now verify across OUSD, Amador, and Berkeley: OUSD special-education, school-directory, and ECE contact pages; Amador SELPA, special-education, and district-office-directory pages; and Berkeley special-education, student-services, and directory pages. However, AlpineCOE, ButteCOE, CalaverasCOE, and ColusaCOE SELPA roots fail DNS on both www and bare-domain checks, and Fremont USD still fails SSL handshake in the current lane. Even with 9 reviewed exact leaves, county-grade district routing still cannot be proven statewide across all 58 California counties.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (Reviewed California Department of Rehabilitation program, student-services, office-contact, and disputes pages now provide authoritative statewide VR / Pre-ETS routing evidence.)
 - protection_and_advocacy: verified_state_grade (Disability Rights California Get Help is already present as reviewed first-party statewide P&A intake evidence.)
-- parent_training_information_center: missing_verified_statewide_source (Reviewed 2026-06-22 bounded statewide-equivalent parent-center candidate set. Matrix Parents still preserves explicit PTI/FEC/FRC designation text, but its own scope stays limited to Marin, Napa, Solano, and Sonoma Counties; the official DDS Family Resource Centers Network URL https://www.dds.ca.gov/rc/frcn returns 404; frcnca.org fails TLS protocol negotiation in the current lane; and supportforfamilies.org returns 403. No live fetched statewide California PTI or equivalent parent-center source is currently verified on disk.)
+- parent_training_information_center: verified_state_grade (Reviewed official DDS Family Resource Centers pages now preserve statewide California equivalent parent-center coverage: the statewide FRC mission page names the Family Resource Center Network of California and its statewide support mission, and the regional-center intake / family-resource-center directory enumerates county-by-county California FRC routing. This satisfies the statewide equivalent parent-center requirement even though the older /rc/frcn URL still 404s.)
 - legal_aid: verified_state_grade (Reviewed California Courts and State Bar legal-help pages provide authoritative statewide legal-aid routing.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
@@ -25,7 +25,6 @@
 ## Failure ledger
 
 - district_or_county_education_routing: bounded_exact_leaf_packet_exhausted_before_statewide_district_grade_coverage :: Reviewed the existing bounded California district packet after the statewide CDE SELPA directory root https://www.cde.ca.gov/sp/se/as/caselpas.asp returned a Radware bot challenge. Exact district/county leaves now verify across OUSD, Amador, and Berkeley: OUSD special-education, school-directory, and ECE contact pages; Amador SELPA, special-education, and district-office-directory pages; and Berkeley special-education, student-services, and directory pages. However, AlpineCOE, ButteCOE, CalaverasCOE, and ColusaCOE SELPA roots fail DNS on both www and bare-domain checks, and Fremont USD still fails SSL handshake in the current lane. Even with 9 reviewed exact leaves, county-grade district routing still cannot be proven statewide across all 58 California counties.
-- parent_training_information_center: reviewed_pti_source_is_regional_not_statewide :: Reviewed 2026-06-22 bounded statewide-equivalent parent-center candidate set. Matrix Parents still preserves explicit PTI/FEC/FRC designation text, but its own scope stays limited to Marin, Napa, Solano, and Sonoma Counties; the official DDS Family Resource Centers Network URL https://www.dds.ca.gov/rc/frcn returns 404; frcnca.org fails TLS protocol negotiation in the current lane; and supportforfamilies.org returns 403. No live fetched statewide California PTI or equivalent parent-center source is currently verified on disk.
 
 ## Verified source samples
 
@@ -37,7 +36,7 @@
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted; samples=9; first=https://www.ousd.org/enroll/enroll-at-ousd/enroll-your-student-tk-12/how-it-works-placement-priorities-special-programs-resources/special-education
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=3; first=https://www.dor.ca.gov/
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.disabilityrightsca.org/get-help
-- parent_training_information_center: missing_verified_statewide_source; samples=1; first=https://www.matrixparents.org/
+- parent_training_information_center: verified_state_grade; samples=2; first=https://www.dds.ca.gov/services/early-start/family-resource-center/
 - legal_aid: verified_state_grade; samples=2; first=https://selfhelp.courts.ca.gov/get-free-or-low-cost-legal-help
 - able_program: verified_state_grade; samples=1; first=https://calable.ca.gov
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
@@ -46,11 +45,10 @@
 ## Next actions
 
 - [critical] district_or_county_education_routing: hold_blocked_until_new_exact_district_targets_are_authored
-- [major] parent_training_information_center: hold_blocked_until_statewide_pti_or_equivalent_parent_center_source_is_verified
 
 ## California final blocker decision
 
-- Parent training information center remains blocked because the bounded statewide-equivalent candidate set is exhausted more precisely: Matrix Parents is explicit but regional, the official DDS FRCN root returns 404, frcnca.org fails TLS in the current lane, and Support for Families returns 403.
+- Parent training information center is now verified from the live official DDS Family Resource Centers pages, which preserve statewide California equivalent parent-center mission text plus county-by-county FRC routing.
 - District or county education routing remains blocked because the bounded packet now verifies 9 exact leaves across OUSD, Amador, and Berkeley, but several county COE roots are dead on both www and bare domains, Fremont still fails TLS handshake, and county-grade district routing still cannot be proven statewide from those saved packet roots alone.
 - County-local disability resources remain verified from the official CDSS IHSS county directory, which exposes county-labeled local-office links across all 58 counties.
 - California is therefore still truthfully BLOCKED and not index-safe.
