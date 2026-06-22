@@ -3,7 +3,7 @@
   "state_code": "MD",
   "state_name": "Maryland",
   "batch": "batch_12_procedure_hardening_states_v1",
-  "classification": "UNSTARTED",
+  "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 24,
@@ -41,5 +41,42 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ],
+  "final_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+      "evidence": "Reviewed Maryland packet evidence still routes district or county education through generic statewide Maryland special-education pages rather than county- or district-owned leaves.",
+      "next_action": "author_county_or_district_exact_targets"
+    },
+    {
+      "family": "protection_and_advocacy",
+      "severity": "major",
+      "failure_code": "missing_required_source_family",
+      "evidence": "Maryland still lacks reviewed first-party or authoritative statewide protection-and-advocacy evidence on disk.",
+      "next_action": "author_or_verify_statewide_source_family"
+    },
+    {
+      "family": "parent_training_information_center",
+      "severity": "major",
+      "failure_code": "reviewed_first_party_support_source_lacks_explicit_pti_designation",
+      "evidence": "Reviewed Parents’ Place of Maryland evidence proves Maryland statewide support and special-education information-center scope, but the saved first-party artifact does not preserve explicit PTI designation text.",
+      "next_action": "hold_blocked_until_explicit_pti_designation_is_preserved_from_reviewed_first_party_source"
+    },
+    {
+      "family": "legal_aid",
+      "severity": "major",
+      "failure_code": "missing_required_source_family",
+      "evidence": "Maryland still lacks reviewed first-party or authoritative statewide legal-aid evidence on disk.",
+      "next_action": "author_or_verify_statewide_source_family"
+    },
+    {
+      "family": "county_local_disability_resources",
+      "severity": "critical",
+      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+      "evidence": "County/local disability resources still depend on generic statewide location pages or structural dataset-derived rows instead of reviewed county-owned local routing evidence.",
+      "next_action": "author_county_or_district_exact_targets"
+    }
   ]
 }

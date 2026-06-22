@@ -1,0 +1,26 @@
+{
+  "batch": "batch_71_michigan_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "michigan",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "drmich": {
+      "sourceUrl": "https://drmich.org/",
+      "finalUrl": "https://www.drmich.org/"
+    },
+    "maf": {
+      "sourceUrl": "https://www.michiganallianceforfamilies.org/",
+      "finalUrl": "https://www.michiganallianceforfamilies.org/"
+    }
+  }
+}
