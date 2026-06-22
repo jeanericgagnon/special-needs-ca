@@ -1,0 +1,15 @@
+{
+  "batch": "batch77_new_jersey_statewide_family_truth_refresh_v1",
+  "state": "new-jersey",
+  "classification_before": "UNSTARTED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "protection_and_advocacy",
+    "legal_aid",
+    "county_local_disability_resources"
+  ]
+}
