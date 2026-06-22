@@ -2,9 +2,9 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 83
+- completeness_pct: 91
 - county_count: 8
-- primary_gap_reason: authenticated_public_edsight_directory_and_dds_pdf_archive_local_routing_are_the_last_connecticut_local_proof_blockers
+- primary_gap_reason: public_edsight_shell_does_not_yield_anonymous_district_records
 
 ## Family status
 
@@ -20,12 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_live_dds_replacement_needs_pdf_or_archive_extraction (Reviewed 2026-06-22 bounded live checks on the current Connecticut DDS regions hub https://portal.ct.gov/dds/about/dds-regions plus its linked official regional-contact-list PDF https://portal.ct.gov/-/media/DDS/Commissioner/Regional_Contact_List.pdf and town-finder archive https://portal.ct.gov/dds/searchable-archive/general/regionstownfinder/townfinder1. The live DDS hub is real, but the actionable local-routing evidence now lives in an unparsed PDF and searchable-archive town-finder path, while the older direct regional-office URLs from the sitemap return HTTP 404. Connecticut therefore has a reviewed official replacement source family, but not yet county-grade extracted local office evidence that can truthfully replace the DOI-backed office rows.)
+- county_local_disability_resources: verified_state_grade (Connecticut DDS county-local routing is now recoverable from live official first-party pages: the DDS Regions hub names the counties served by North, South, and West, and the public regional general-contact pages preserve region headquarters, satellite offices, phones, emails, and toll-free numbers. New Haven county remains dual-routed because the official hub assigns New Haven broadly to South while explicitly assigning Northern New Haven to West.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: public_edsight_shell_does_not_yield_anonymous_district_records :: Reviewed 2026-06-22 bounded live checks on the current Public EdSight district-finder shell https://public-edsight.ct.gov/overview/find-schools/find-school-district and its linked official OrgSearchReport endpoint https://edsight.ct.gov/SASStoredProcess/do?_keyword=&_program=%2FCTDOE%2FEdSight%2FRelease%2FReporting%2FPublic%2FReports%2FStoredProcesses%2FOrgSearchReport_SiteCore&orgtype=&orgdistrict=&orgname=Hartford&_select=Submit. The public shell renders anonymous navigation only, while the direct district query bounces to SAS Logon instead of returning public district records, so the official state directory surface still does not preserve county- or district-grade routing contacts that can replace Connecticut's statewide SDE fallback rows.
-- county_local_disability_resources: dds_regions_replacement_is_pdf_plus_archive_not_county_extracted :: Reviewed 2026-06-22 bounded live checks on the current Connecticut DDS regions hub https://portal.ct.gov/dds/about/dds-regions plus its linked official regional-contact-list PDF https://portal.ct.gov/-/media/DDS/Commissioner/Regional_Contact_List.pdf and town-finder archive https://portal.ct.gov/dds/searchable-archive/general/regionstownfinder/townfinder1. The live DDS hub is real, but the actionable local-routing evidence now lives in an unparsed PDF and searchable-archive town-finder path, while the older direct regional-office URLs from the sitemap return HTTP 404. Connecticut therefore has a reviewed official replacement source family, but not yet county-grade extracted local office evidence that can truthfully replace the DOI-backed office rows.
 
 ## Verified source samples
 
@@ -41,15 +40,15 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.disrightsct.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_live_dds_replacement_needs_pdf_or_archive_extraction; samples=3; first=https://portal.ct.gov/dds/about/dds-regions
+- county_local_disability_resources: verified_state_grade; samples=9; first=https://portal.ct.gov/dds/about/dds-regions
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: author_district_owned_exact_targets_or_browser_auth_edsight_query
-- [critical] county_local_disability_resources: extract_dds_regions_pdf_or_archive_townfinder
 
 ## Completion decision
 
-- Connecticut still cannot reach California-grade or become index-safe because the official education directory surface stops at a public finder shell plus a SAS-logon-gated district query, and the official DDS replacement for local office routing now lives in a PDF-plus-archive stack that has not yet been extracted into county-grade evidence.
-- CPAC is no longer a blocker because the live first-party About page explicitly preserves federally funded Parent Training and Information (PTI) Center designation text.
-- Connecticut is therefore still BLOCKED and not index-safe, but the remaining blockers are now narrowed to one authenticated education directory lane and one PDF/archive local-office extraction lane.
+- Connecticut still cannot reach California-grade or become index-safe because the official education directory surface stops at a public finder shell plus a SAS-logon-gated district query.
+- County/local disability resources are no longer blocked: the live DDS Regions hub names the counties served by North, South, and West, and the public region contact pages preserve headquarters, satellite offices, phones, and emails for those routes.
+- New Haven county remains dual-routed in the evidence chain because the official DDS hub assigns the county broadly to South while explicitly assigning Northern New Haven to West; that is preserved as a truthful multi-region county mapping rather than flattened into one fake county office.
+- Connecticut therefore remains BLOCKED and not index-safe, but the remaining blocker is now narrowed to the authenticated state education directory lane only.

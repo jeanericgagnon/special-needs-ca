@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T18:17:14.062Z",
+  "generatedAt": "2026-06-22T18:32:42.207Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 7,
@@ -210,18 +210,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_education_root_challenge_and_county_fallback_only_rows",
+        "district_or_county_education_routing": "blocked_zero_exact_leaf_packet",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_local_office_roots_challenge_and_doi_fallback_rows"
+        "county_local_disability_resources": "blocked_zero_exact_leaf_packet"
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_roots_challenged_and_local_leaf_packets_authored_but_unverified",
+      "packetPrimaryGapReason": "challenged_official_roots_and_zero_exact_leaf_targets_in_authoring_packets",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -447,11 +447,11 @@
       "legacyManualReviewRate": 51.06,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 8,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "connecticut",
         "state_code": "CT",
@@ -497,11 +497,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_dds_replacement_needs_pdf_or_archive_extraction"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "authenticated_public_edsight_directory_and_dds_pdf_archive_local_routing_are_the_last_connecticut_local_proof_blockers",
+      "packetPrimaryGapReason": "public_edsight_shell_does_not_yield_anonymous_district_records",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -2297,11 +2297,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_official_directory_returns_403"
+        "county_local_disability_resources": "blocked_health_hostwide_403"
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_county_directory_returns_http_403",
+      "packetPrimaryGapReason": "bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

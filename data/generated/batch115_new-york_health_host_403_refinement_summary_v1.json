@@ -1,0 +1,18 @@
+{
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 75,
+  "refined_family": "county_local_disability_resources",
+  "blocker_code": "bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement",
+  "next_action": "hold_blocked_until_public_health_ny_ldss_replacement_or_county_owned_locator_is_verified",
+  "lesson_added": false,
+  "evidence_checks": {
+    "ldss": "403",
+    "robots": "403",
+    "sitemap": "403",
+    "medicaidRoot": "403",
+    "medicaidRedesign": "403",
+    "publicSameHostReplacementVerified": false
+  }
+}

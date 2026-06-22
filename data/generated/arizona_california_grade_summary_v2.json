@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_roots_challenged_and_local_leaf_packets_authored_but_unverified",
+  "primary_gap_reason": "challenged_official_roots_and_zero_exact_leaf_targets_in_authoring_packets",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,13 +41,13 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "official_education_root_challenge_and_county_fallback_only_rows",
-      "evidence": "Reviewed 2026-06-22 live Arizona Department of Education special-education candidates. The root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs all returned the Cloudflare \"Just a moment...\" HTTP 403 shell. The live school_district table still contains 15/15 Arizona rows pointing at https://www.azed.gov/specialeducation as generic county fallback evidence, but a county-by-county local leaf authoring packet now exists on disk at data/generated/arizona_district_or_county_education_routing_leaf_authoring_packet_v1.json so later repairs can target district-owned leaves instead of re-reading the challenged state root."
+      "failure_code": "education_packet_scaffold_only_zero_exact_district_leaves",
+      "evidence": "Reviewed 2026-06-22 Arizona district-or-county education routing packet plus current blocker artifacts. The official AZED special-education lane remains challenge-blocked, and the authored packet at data/generated/arizona_district_or_county_education_routing_leaf_authoring_packet_v1.json still reports authoredExactLeafCount=0 across 15 affected counties. No district-owned Arizona special-education or student-services leaf has yet been attached to the repair queue, so the state packet still depends on generic https://www.azed.gov/specialeducation fallback rows."
     },
     {
       "family": "county_local_disability_resources",
-      "failure_code": "official_local_office_roots_challenge_and_doi_fallback_rows",
-      "evidence": "Reviewed 2026-06-22 live Arizona DES candidates. The root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap URLs all returned the Cloudflare \"Just a moment...\" HTTP 403 shell. The live county_offices table still contains 14 Arizona rows anchored to the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and 1 row anchored to the generic legacy root https://dhhs.arizona.gov/locations, but a county-by-county local office authoring packet now exists on disk at data/generated/arizona_county_local_disability_resources_leaf_authoring_packet_v1.json so later repairs can replace those fallback rows with reviewed county-specific leaves."
+      "failure_code": "county_office_packet_scaffold_only_zero_exact_office_leaves",
+      "evidence": "Reviewed 2026-06-22 Arizona county-local office packet plus current blocker artifacts. The official Arizona DES lane remains challenge-blocked, and the authored packet at data/generated/arizona_county_local_disability_resources_leaf_authoring_packet_v1.json still reports authoredExactLeafCount=0 across 15 affected counties. No exact county-specific or regional DES/FAA office leaf has yet been attached to the repair queue, so the state packet still depends on 14 DOI placeholder rows plus 1 generic legacy locator row."
     }
   ]
 }

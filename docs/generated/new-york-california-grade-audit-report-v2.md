@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 75
 - county_count: 62
-- primary_gap_reason: official_county_directory_returns_http_403
+- primary_gap_reason: bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (LawHelpNY now provides reviewed New York statewide legal-help routing from a first-party portal with county-based resource lookup.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_live_official_directory_returns_403 (The live official LDSS county directory https://www.health.ny.gov/health_care/medicaid/ldss.htm returned HTTP 403 during bounded verification, so the current county-office rows cannot remain California-grade local proof.)
+- county_local_disability_resources: blocked_health_hostwide_403 (The county-local blocker is host-wide, not just one dead LDSS page: bounded checks on the live health.ny.gov Medicaid lane returned HTTP 403 for ldss.htm, robots.txt, sitemap.xml, /health_care/medicaid/, and /health_care/medicaid/redesign/, so no public same-host replacement locator is currently verifiable from the official lane.)
 
 ## Failure ledger
 
-- county_local_disability_resources: live_official_ldss_directory_403_without_replacement_locator :: Official New York LDSS county directory returned HTTP 403 at https://www.health.ny.gov/health_care/medicaid/ldss.htm during bounded live verification, and no replacement live county-grade official locator is attached to the packet.
+- county_local_disability_resources: bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement :: Reviewed 2026-06-22 bounded live official checks on https://www.health.ny.gov/health_care/medicaid/ldss.htm, https://www.health.ny.gov/robots.txt, https://www.health.ny.gov/sitemap.xml, https://www.health.ny.gov/health_care/medicaid/, and https://www.health.ny.gov/health_care/medicaid/redesign/. All five bounded health.ny.gov Medicaid/host surfaces returned HTTP 403, so the failure is broader than one stale LDSS URL. No public same-host replacement locator was verified in this bounded pass, and the current county-office rows cannot remain California-grade local proof.
 - district_or_county_education_routing: bounded_boces_leaf_packet_exhausted_before_county_grade_coverage :: Verified exact leaves remain limited to 3 reviewed BOCES-owned pages; this does not truthfully prove district-grade routing statewide.
 - parent_training_information_center: reviewed_western_new_york_pti_source_not_statewide :: Reviewed Parent Network of WNY evidence from https://parentnetworkwny.org says the organization reaches families across WNY per year, which does not truthfully satisfy the statewide PTI gate.
 
@@ -42,19 +42,17 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.lawhelpny.org/
 - able_program: verified_state_grade; samples=1; first=https://www.mynyable.org/
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.health.ny.gov/health_care/medicaid/redesign/cdpap.htm
-- county_local_disability_resources: blocked_live_official_directory_returns_403; samples=3; first=https://www.health.ny.gov/health_care/medicaid/ldss.htm
+- county_local_disability_resources: blocked_health_hostwide_403; samples=3; first=https://www.health.ny.gov/health_care/medicaid/ldss.htm
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_live_official_ldss_directory_or_county_owned_locator_is_verified
+- [critical] county_local_disability_resources: hold_blocked_until_public_health_ny_ldss_replacement_or_county_owned_locator_is_verified
 - [critical] district_or_county_education_routing: hold_blocked_until_new_exact_district_targets_are_authored
 - [major] parent_training_information_center: hold_blocked_until_reviewed_statewide_new_york_pti_source_or_statewide_scope_proof_is_verified
 
 ## New York final blocker decision
 
-- County-local disability resources remain blocked because the official New York LDSS county directory at https://www.health.ny.gov/health_care/medicaid/ldss.htm returned HTTP 403 during bounded live verification, and no replacement live county-grade official locator is attached to the packet evidence chain.
+- County-local disability resources remain blocked because the official New York health.ny.gov Medicaid lane is failing at the host level, not just on one LDSS page: the bounded LDSS page, robots, sitemap, and nearby Medicaid roots all return 403, and no public same-host replacement locator is attached to the packet evidence chain.
 - District or county education routing remains blocked because only 3 reviewed BOCES-owned exact leaves have been verified; that is not enough to truthfully prove district-grade routing across all 62 New York counties without reopening broader district authoring.
-- Parent training information center remains below California-grade because the reviewed Parent Network of WNY evidence at http://parentnetworkwny.org/ is still explicitly scoped to Western New York support, not a truthful statewide PTI route.
-- Legal aid is now verified at the statewide support layer because LawHelpNY is a reviewed New York statewide legal-help portal with county-based resource routing and a free legal-services directory.
-- ACCES-VR and Disability Rights New York remain upgraded out of the blocker list because reviewed verified evidence already existed on disk and now anchors those statewide support families truthfully.
-- New York is therefore truthfully final-blocked and not index-safe until a live official county-office directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, and a statewide PTI route is proven beyond Western New York scope.
+- Parent training information center remains below California-grade because the reviewed Parent Network of WNY evidence is explicitly regional and this pass did not produce first-party statewide scope proof for a New York PTI route.
+- New York is therefore truthfully final-blocked and not index-safe until a public county-office directory or county-owned locator is verified, district-grade education leaves expand beyond the current bounded BOCES set, and a statewide PTI route is proven beyond regional scope.

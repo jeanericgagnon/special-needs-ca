@@ -12,7 +12,7 @@
   "weak_critical_families": 3,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_county_directory_returns_http_403",
+  "primary_gap_reason": "bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources",
@@ -46,9 +46,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "live_official_ldss_directory_403_without_replacement_locator",
-      "evidence": "Official New York LDSS county directory returned HTTP 403 at https://www.health.ny.gov/health_care/medicaid/ldss.htm during bounded live verification, and no replacement live county-grade official locator is attached to the packet.",
-      "next_action": "hold_blocked_until_live_official_ldss_directory_or_county_owned_locator_is_verified"
+      "failure_code": "bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement",
+      "evidence": "Reviewed 2026-06-22 bounded live official checks on https://www.health.ny.gov/health_care/medicaid/ldss.htm, https://www.health.ny.gov/robots.txt, https://www.health.ny.gov/sitemap.xml, https://www.health.ny.gov/health_care/medicaid/, and https://www.health.ny.gov/health_care/medicaid/redesign/. All five bounded health.ny.gov Medicaid/host surfaces returned HTTP 403, so the failure is broader than one stale LDSS URL. No public same-host replacement locator was verified in this bounded pass, and the current county-office rows cannot remain California-grade local proof.",
+      "next_action": "hold_blocked_until_public_health_ny_ldss_replacement_or_county_owned_locator_is_verified"
     },
     {
       "family": "district_or_county_education_routing",

@@ -419,3 +419,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Domain-Wide 404 Plus NXDOMAIN Replacement Is Stronger Than A Dead Leaf
 *   **Lesson:** If the root, sitemap, robots, and known child paths on an official domain all return `404`, and the obvious replacement authority subdomains are `NXDOMAIN`, classify the source family as retired at the domain level rather than as a single dead leaf. Ohio county-local routing stayed blocked because the whole `jfs.ohio.gov` family was retired and no live official replacement domain resolved.
+
+### Host-Wide 403 Across Root, Robots, And Sitemap Is Not A Single-Page Failure
+*   **Lesson:** If the target page, `robots.txt`, `sitemap.xml`, and the obvious same-host section roots all return `403`, treat the blocker as a host-wide public-access failure rather than as one stale page. New York county-local routing stayed blocked because the whole bounded `health.ny.gov` Medicaid lane was inaccessible, not just `ldss.htm`.
+
+### Packet Scaffolds Do Not Count As Runnable Exact-Leaf Queues
+*   **Lesson:** A state packet is not meaningfully “authored” just because a leaf-authoring JSON exists. If `authoredExactLeafCount=0`, keep the family blocked and route the next action to exact-target authoring, not to scraping or browser retries. Arizona’s challenged education and county-office families both needed this distinction.
+
+### Live Regional Contact Pages Can Retire A PDF-Only Blocker
+*   **Lesson:** If a state replaces dead county-office leaves with a live regional hub, check whether that hub also links public region-specific contact pages before stopping at the PDF. Connecticut DDS became county-grade again because the counties-served text lived on the hub while region headquarters and satellite contacts lived on the public North/South/West contact leaves.

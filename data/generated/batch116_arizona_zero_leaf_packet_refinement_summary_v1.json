@@ -1,0 +1,18 @@
+{
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "primary_gap_reason": "challenged_official_roots_and_zero_exact_leaf_targets_in_authoring_packets",
+  "packet_metrics": {
+    "educationAuthoredExactLeafCount": 0,
+    "countyAuthoredExactLeafCount": 0,
+    "educationAffectedCounties": 15,
+    "countyAffectedCounties": 15
+  },
+  "refined_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "lesson_added": false
+}
