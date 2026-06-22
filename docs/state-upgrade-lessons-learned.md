@@ -260,3 +260,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Reused Legacy Domains Must Be Treated As Drift, Not Evidence
 *   **Problem:** Arkansas inherited `adcpti.org` as a PTI hint, but the reviewed live page had drifted into unrelated Korean investment and betting content while the real Arkansas PTI evidence lived on The Center for Exceptional Families first-party domain.
 *   **Lesson:** When a legacy support-family domain now serves unrelated non-state content, treat it as explicit domain drift and remove it from evidence consideration immediately. Do not preserve it as weak inventory. Reconcile the packet against a reviewed first-party replacement only if the replacement itself explicitly preserves the role text and state scope.
+
+### Reviewed Raw First-Party HTML Can Repair A Rejected Support Page
+*   **Problem:** Hawaii’s LDAH page was rejected by the lightweight nonprofit validator because its contact details were rendered inside injected footer markup, yet the reviewed raw first-party HTML still preserved explicit Parent Training & Information Center designation text plus office-contact evidence.
+*   **Lesson:** When a reviewed first-party statewide support page is rejected only because lightweight extraction missed JS-injected contact blocks, inspect the saved raw HTML before preserving an `inventory_only` blocker. If the reviewed body itself clearly preserves explicit designation text and direct contact evidence, repair the packet from that artifact instead of reopening discovery.

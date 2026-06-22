@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-22T02:30:48.618Z",
+  "generatedAt": "2026-06-22T02:40:45.898Z",
   "stateCount": 50,
   "classifications": {
-    "BLOCKED": 19,
-    "UNSTARTED": 29,
+    "BLOCKED": 20,
+    "UNSTARTED": 28,
     "COMPLETE": 2
   },
   "indexSafeCount": 2,
@@ -719,7 +719,7 @@
       "stateId": "hawaii",
       "stateCode": "HI",
       "stateName": "Hawaii",
-      "classification": "UNSTARTED",
+      "classification": "BLOCKED",
       "indexSafe": false,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
@@ -728,11 +728,11 @@
       "legacyManualReviewRate": 46.88,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 5,
-      "strongCriticalFamilies": 6,
-      "weakCriticalFamilies": 4,
-      "missingCriticalFamilies": 2,
+      "strongCriticalFamilies": 8,
+      "weakCriticalFamilies": 3,
+      "missingCriticalFamilies": 1,
       "totalCriticalFamilies": 12,
-      "completenessPct": 50,
+      "completenessPct": 67,
       "dbMetrics": {
         "state_id": "hawaii",
         "state_code": "HI",
@@ -773,16 +773,16 @@
         "special_education_idea_part_b": "legacy_state_grade",
         "district_or_county_education_routing": "legacy_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "missing",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "blocked_reviewed_statewide_support_source_not_explicit_legal_aid_route",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "legacy_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence",
+      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

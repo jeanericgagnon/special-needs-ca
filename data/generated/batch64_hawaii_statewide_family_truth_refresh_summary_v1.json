@@ -1,0 +1,31 @@
+{
+  "batch": "batch_64_hawaii_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "hawaii",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid"
+  ],
+  "remaining_blockers": [
+    "special_education_idea_part_b",
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "hdrc": {
+      "sourceUrl": "http://www.hawaiidisabilityrights.org/",
+      "finalUrl": "https://hawaiidisabilityrights.org/",
+      "pageTitle": "Home - Hawaii Disability Rights Center"
+    },
+    "ldah": {
+      "sourceUrl": "http://www.ldahawaii.org/",
+      "finalUrl": "https://www.ldahawaii.org/",
+      "pageTitle": "LDAH - Leadership in Disabilities & Achievement of Hawai'i",
+      "validationStatus": "rejected"
+    }
+  }
+}
