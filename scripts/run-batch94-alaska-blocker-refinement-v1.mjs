@@ -22,8 +22,8 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'alaska-california-grade-audit-report-v2.md'),
 };
 
-const PTI_EVIDENCE = 'Reviewed 2026-06-22 Stone Soup Group sitemap plus exact history/mission, parent-navigation, FAQ, and family-resource-guide leaves. The live sitemap exposes real support/history/navigation pages, but no role-pure PTI leaf, while guessed PTI-style roots and generic About roots return 404. No fetched live first-party page preserves explicit PTI / Parent Training and Information Center designation text.';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 official Alaska DPA and SDS office-directory candidates plus health.alaska.gov robots.txt and sitemap endpoints. The office leaves, robots.txt, and sitemap URLs all returned Cloudflare security-verification or 403 shells, so the local-office blocker is domain-wide in the current fetch lane rather than one broken page.';
+const PTI_EVIDENCE = 'Reviewed 2026-06-22 live Stone Soup Group and Parent Center Hub artifacts. Stone Soup first-party pages still preserve statewide support and parent-navigation scope, but no fetched page preserves explicit PTI / Parent Training and Information Center designation text. Stone Soup search results echo the query in the page title ("Parent Training and Information") but only render generic search-results content, and the Parent Center Hub Alaska map asset only preserves the Alaska selector plus "Click to find a list of parent centers" without naming Stone Soup Group or an Alaska PTI. No fetched first-party or authoritative page yet preserves explicit Alaska PTI designation text.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots. Every checked office candidate returned HTTP 403 with the Cloudflare "Just a moment..." shell, so county-grade local-office evidence is blocked at the domain level in the current fetch lane rather than at one stale page.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -95,13 +95,13 @@ export function generateBatch94AlaskaBlockerRefinementV1() {
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
-        status_reason: 'Reviewed Stone Soup sitemap and exact live support/history/navigation leaves preserve statewide support scope, but no fetched first-party page preserves explicit PTI designation text and guessed PTI-style roots are absent or 404.',
+        status_reason: 'Reviewed live Stone Soup and Parent Center Hub artifacts preserve statewide support scope, but no fetched first-party or authoritative page preserves explicit Alaska PTI designation text; search and map-shell near-misses are not enough.',
       };
     }
     if (row.family === 'county_local_disability_resources') {
       return {
         ...row,
-        status_reason: 'Official Alaska DPA/SDS office leaves plus health.alaska.gov robots.txt and sitemap endpoints all return Cloudflare or 403 shells in the current lane, so county-grade local-office evidence remains unreviewed.',
+        status_reason: 'Official Alaska DPA/SDS office-location, default, and contact roots all return the Cloudflare "Just a moment..." HTTP 403 shell in the current lane, so county-grade local-office evidence remains unreviewed.',
       };
     }
     return row;
@@ -127,14 +127,14 @@ export function generateBatch94AlaskaBlockerRefinementV1() {
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
-        query_basis: 'Reviewed 2026-06-22 Stone Soup sitemap and exact live support/history/navigation leaves preserve statewide support scope, but no fetched live first-party page preserves explicit PTI designation text.',
+        query_basis: 'Reviewed 2026-06-22 live Stone Soup first-party pages plus Parent Center Hub Alaska map assets; statewide support scope is preserved but explicit Alaska PTI designation text is still absent.',
         blocker_evidence: PTI_EVIDENCE,
       };
     }
     if (row.family === 'county_local_disability_resources') {
       return {
         ...row,
-        query_basis: 'Reviewed official Alaska DPA/SDS office leaves plus health.alaska.gov robots.txt and sitemap endpoints; all returned Cloudflare or 403 shells in the current lane.',
+        query_basis: 'Reviewed live official Alaska DPA/SDS office-location, default, and contact roots on health.alaska.gov; all returned the Cloudflare "Just a moment..." HTTP 403 shell in the current lane.',
         blocker_evidence: COUNTY_EVIDENCE,
       };
     }

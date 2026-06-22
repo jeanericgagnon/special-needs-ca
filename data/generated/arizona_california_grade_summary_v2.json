@@ -42,12 +42,12 @@
     {
       "family": "district_or_county_education_routing",
       "failure_code": "official_education_root_challenge_and_county_fallback_only_rows",
-      "evidence": "Reviewed 2026-06-22 Arizona Department of Education special-education root plus robots.txt and sitemap endpoints. The leaf, root, robots.txt, and sitemap URLs all returned Cloudflare security-verification or 403 shells, while the current 15 Arizona school_district rows still point at https://www.azed.gov/specialeducation as generic county fallback evidence rather than district-owned pages."
+      "evidence": "Reviewed 2026-06-22 live Arizona Department of Education special-education candidates. The root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs all returned the Cloudflare \"Just a moment...\" HTTP 403 shell, while the current 15 Arizona school_district rows still point at https://www.azed.gov/specialeducation as generic county fallback evidence rather than district-owned pages."
     },
     {
       "family": "county_local_disability_resources",
       "failure_code": "official_local_office_roots_challenge_and_doi_fallback_rows",
-      "evidence": "Reviewed 2026-06-22 Arizona DES root plus robots.txt and sitemap endpoints. The root, robots.txt, and sitemap URLs all returned Cloudflare security-verification or 403 shells, while 14 Arizona county_office rows still rely on the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and one row still points at the generic legacy locations root https://dhhs.arizona.gov/locations instead of reviewed county-specific official office leaves."
+      "evidence": "Reviewed 2026-06-22 live Arizona DES candidates. The root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap URLs all returned the Cloudflare \"Just a moment...\" HTTP 403 shell, while 14 Arizona county_office rows still rely on the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and one row still points at the generic legacy locations root https://dhhs.arizona.gov/locations instead of reviewed county-specific official office leaves."
     }
   ]
 }

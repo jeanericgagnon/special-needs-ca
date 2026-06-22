@@ -42,10 +42,13 @@ assert.deepEqual(summary.final_blockers.map((row) => row.family), ['district_or_
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
 assert.equal(byFamily.get('parent_training_information_center').family_status, 'verified_state_grade');
 assert.match(byFamily.get('parent_training_information_center').status_reason, /acknowledgements page/i);
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /robots\.txt/i);
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /sitemap/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /parental-rights/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /dispute-resolution/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Just a moment/i);
 assert.match(byFamily.get('county_local_disability_resources').status_reason, /doi/i);
-assert.match(byFamily.get('county_local_disability_resources').status_reason, /robots\.txt/i);
+assert.match(byFamily.get('county_local_disability_resources').status_reason, /apply-benefits/i);
+assert.match(byFamily.get('county_local_disability_resources').status_reason, /office-locator/i);
+assert.match(byFamily.get('county_local_disability_resources').status_reason, /Just a moment/i);
 
 assert.equal(failureRows.some((row) => row.family === 'parent_training_information_center'), false);
 assert.equal(nextRows.some((row) => row.family === 'parent_training_information_center'), false);
@@ -62,6 +65,7 @@ assert.deepEqual(batchSummary.repaired_families, ['parent_training_information_c
 assert.deepEqual(batchSummary.remaining_blockers, ['district_or_county_education_routing', 'county_local_disability_resources']);
 assert.ok(report.includes('acknowledgements page'));
 assert.ok(report.includes('Arizona’s Parent Training and Information (PTI) Center'));
-assert.ok(report.includes('root, robots.txt, and sitemap endpoints'));
+assert.ok(report.includes('parental-rights'));
+assert.ok(report.includes('office-locator'));
 
 console.log('test-batch95-arizona-blocker-refinement-v1: ok');

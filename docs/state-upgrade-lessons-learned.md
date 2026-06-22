@@ -362,3 +362,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Live Official County Tables Can Still Fail Closed When The Key Cells Are Blank
 *   **Lesson:** Do not count a live official county-routing table just because it returns HTTP 200. Georgia DBHDD still fails county-grade DD routing because the official county page renders blank county cells and repeated region links, even before you consider the blocked region leaves.
+
+### Reflected Search Titles Are Not PTI Designation Evidence
+*   **Lesson:** Do not upgrade PTI from a first-party or authoritative search-results page that merely reflects the query in the title. Alaska's Stone Soup search page rendered `Parent Training and Information` in the title, but the body was only generic search results and did not name Stone Soup as the Alaska PTI.
+
+### Matching 403 Challenge Shells Across Sibling Office Roots Are A Domain-Level Block
+*   **Lesson:** When office-location, default, and contact roots on the same official domain all return the same Cloudflare `Just a moment...` HTTP 403 shell, stop guessing sibling URLs in the same lane. Treat the family as domain-level fetch blocked until a browser-reviewed or alternate official office listing is available.
+
+### Try Both `www` And Bare County COE Hosts Before Abandoning A Packet Root
+*   **Lesson:** California county education packet roots can fail in different ways across host variants. If a county COE `www` host is dead, check the bare domain once; if both fail DNS, record the root as terminally dead and move to the next packet root instead of spending more scrape budget there.

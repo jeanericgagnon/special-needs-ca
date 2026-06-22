@@ -33,7 +33,14 @@ assert.equal(result.classification, 'BLOCKED');
 assert.equal(result.index_safe, false);
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
-assert.equal(summary.completeness_pct, 75);
+assert.equal(summary.completeness_pct, 83);
+
+const educationGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
+assert.match(educationGap.status_reason, /9 reviewed exact leaves/i);
+assert.match(educationGap.status_reason, /Amador/i);
+assert.match(educationGap.status_reason, /Berkeley/i);
+assert.match(educationGap.status_reason, /Fremont .* SSL handshake/i);
+assert.match(educationGap.status_reason, /AlpineCOE, ButteCOE, CalaverasCOE, and ColusaCOE/i);
 
 const ptiGap = gapRows.find((row) => row.family === 'parent_training_information_center');
 assert.match(ptiGap.status_reason, /Matrix Parents/);
@@ -41,19 +48,38 @@ assert.match(ptiGap.status_reason, /returns 404/);
 assert.match(ptiGap.status_reason, /TLS protocol negotiation/);
 assert.match(ptiGap.status_reason, /returns 403/);
 
+const educationFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
+assert.match(educationFailure.evidence, /9 reviewed exact leaves/i);
+assert.match(educationFailure.evidence, /Amador/i);
+assert.match(educationFailure.evidence, /Berkeley/i);
+
 const ptiFailure = failureRows.find((row) => row.family === 'parent_training_information_center');
 assert.match(ptiFailure.evidence, /dds\.ca\.gov\/rc\/frcn/);
 assert.match(ptiFailure.evidence, /supportforfamilies\.org returns 403/);
+
+const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
+assert.match(educationVerified.query_basis, /Amador and Berkeley domains/i);
+assert.equal(educationVerified.sample_count, 9);
+assert.ok(educationVerified.samples.some((sample) => /amadorcoe\.org\/selpa/.test(sample.source_url)));
+assert.ok(educationVerified.samples.some((sample) => /berkeleyschools\.net\/departments\/special-education/.test(sample.source_url)));
 
 const ptiVerified = verifiedRows.find((row) => row.family === 'parent_training_information_center');
 assert.match(ptiVerified.query_basis, /bounded statewide-equivalent parent-center candidate set/);
 assert.match(ptiVerified.blocker_evidence, /frcnca\.org fails TLS/);
 
+const educationNext = nextRows.find((row) => row.family === 'district_or_county_education_routing');
+assert.match(educationNext.evidence, /9 reviewed exact leaves/i);
+
 const ptiNext = nextRows.find((row) => row.family === 'parent_training_information_center');
 assert.match(ptiNext.evidence, /No live fetched statewide California PTI or equivalent parent-center source/);
 
-assert.equal(batchSummary.refined_family, 'parent_training_information_center');
+assert.deepEqual(batchSummary.refined_families, ['district_or_county_education_routing', 'parent_training_information_center']);
+assert.match(batchSummary.evidence_checks.education, /9 reviewed exact leaves/i);
+assert.equal(batchSummary.completeness_pct, 83);
+assert.deepEqual(batchSummary.remaining_blockers, ['district_or_county_education_routing', 'parent_training_information_center']);
 assert.ok(report.includes('frcnca.org fails TLS'));
 assert.ok(report.includes('Support for Families returns 403'));
+assert.ok(report.includes('County-local disability resources remain verified'));
+assert.ok(report.includes('9 reviewed exact leaves'));
 
 console.log('test-batch96-california-blocker-refinement-v1: ok');

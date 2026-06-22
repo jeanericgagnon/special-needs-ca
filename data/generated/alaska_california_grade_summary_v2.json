@@ -45,12 +45,12 @@
     {
       "family": "county_local_disability_resources",
       "failure_code": "official_local_directory_challenge_blocks_reviewed_county_grade_evidence",
-      "evidence": "Reviewed 2026-06-22 official Alaska DPA and SDS office-directory candidates plus health.alaska.gov robots.txt and sitemap endpoints. The office leaves, robots.txt, and sitemap URLs all returned Cloudflare security-verification or 403 shells, so the local-office blocker is domain-wide in the current fetch lane rather than one broken page."
+      "evidence": "Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots. Every checked office candidate returned HTTP 403 with the Cloudflare \"Just a moment...\" shell, so county-grade local-office evidence is blocked at the domain level in the current fetch lane rather than at one stale page."
     },
     {
       "family": "parent_training_information_center",
       "failure_code": "reviewed_first_party_support_source_lacks_explicit_pti_designation",
-      "evidence": "Reviewed 2026-06-22 Stone Soup Group sitemap plus exact history/mission, parent-navigation, FAQ, and family-resource-guide leaves. The live sitemap exposes real support/history/navigation pages, but no role-pure PTI leaf, while guessed PTI-style roots and generic About roots return 404. No fetched live first-party page preserves explicit PTI / Parent Training and Information Center designation text."
+      "evidence": "Reviewed 2026-06-22 live Stone Soup Group and Parent Center Hub artifacts. Stone Soup first-party pages still preserve statewide support and parent-navigation scope, but no fetched page preserves explicit PTI / Parent Training and Information Center designation text. Stone Soup search results echo the query in the page title (\"Parent Training and Information\") but only render generic search-results content, and the Parent Center Hub Alaska map asset only preserves the Alaska selector plus \"Click to find a list of parent centers\" without naming Stone Soup Group or an Alaska PTI. No fetched first-party or authoritative page yet preserves explicit Alaska PTI designation text."
     }
   ]
 }

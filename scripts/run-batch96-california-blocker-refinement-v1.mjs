@@ -22,7 +22,8 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'california-california-grade-audit-report-v2.md'),
 };
 
-const PTI_EVIDENCE = 'Reviewed 2026-06-22 bounded statewide-equivalent parent-center candidate set. Matrix Parents still preserves explicit PTI/FEC/FRC designation text, but its own scope stays limited to Marin, Napa, Solano, and Sonoma Counties; the official DDS Family Resource Centers Network URL https://www.dds.ca.gov/rc/frcn now returns 404; frcnca.org fails TLS protocol negotiation in the current lane; and supportforfamilies.org returns 403. No live fetched statewide California PTI or equivalent parent-center source is currently verified on disk.';
+const PTI_EVIDENCE = 'Reviewed 2026-06-22 bounded statewide-equivalent parent-center candidate set. Matrix Parents still preserves explicit PTI/FEC/FRC designation text, but its own scope stays limited to Marin, Napa, Solano, and Sonoma Counties; the official DDS Family Resource Centers Network URL https://www.dds.ca.gov/rc/frcn returns 404; frcnca.org fails TLS protocol negotiation in the current lane; and supportforfamilies.org returns 403. No live fetched statewide California PTI or equivalent parent-center source is currently verified on disk.';
+const EDUCATION_EVIDENCE = 'Reviewed the existing bounded California district packet after the statewide CDE SELPA directory root https://www.cde.ca.gov/sp/se/as/caselpas.asp returned a Radware bot challenge. Exact district/county leaves now verify across OUSD, Amador, and Berkeley: OUSD special-education, school-directory, and ECE contact pages; Amador SELPA, special-education, and district-office-directory pages; and Berkeley special-education, student-services, and directory pages. However, AlpineCOE, ButteCOE, CalaverasCOE, and ColusaCOE SELPA roots fail DNS on both www and bare-domain checks, and Fremont USD still fails SSL handshake in the current lane. Even with 9 reviewed exact leaves, county-grade district routing still cannot be proven statewide across all 58 California counties.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -75,9 +76,9 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## California final blocker decision',
     '',
-    '- Parent training information center remains blocked because the bounded statewide-equivalent candidate set is now exhausted more precisely: Matrix Parents is explicit but regional, the official DDS FRCN root returns 404, frcnca.org fails TLS in the current lane, and Support for Families returns 403.',
-    '- District or county education routing remains blocked because only 3 reviewed exact district leaves have been verified and county-grade district routing still cannot be proven statewide from the bounded authored packet.',
-    '- County-local disability resources remain blocked because the reviewed CDSS IHSS county directory still points to many county roots, but the packet verifies only sample county-owned leaves plus BenefitsCal rather than statewide reviewed county-grade office coverage.',
+    '- Parent training information center remains blocked because the bounded statewide-equivalent candidate set is exhausted more precisely: Matrix Parents is explicit but regional, the official DDS FRCN root returns 404, frcnca.org fails TLS in the current lane, and Support for Families returns 403.',
+    '- District or county education routing remains blocked because the bounded packet now verifies 9 exact leaves across OUSD, Amador, and Berkeley, but several county COE roots are dead on both www and bare domains, Fremont still fails TLS handshake, and county-grade district routing still cannot be proven statewide from those saved packet roots alone.',
+    '- County-local disability resources remain verified from the official CDSS IHSS county directory, which exposes county-labeled local-office links across all 58 counties.',
     '- California is therefore still truthfully BLOCKED and not index-safe.',
   ].join('\n') + '\n';
 }
@@ -90,6 +91,12 @@ export function generateBatch96CaliforniaBlockerRefinementV1() {
   const nextRows = readJsonl(INPUTS.next);
 
   const updatedGapRows = gapRows.map((row) => {
+    if (row.family === 'district_or_county_education_routing') {
+      return {
+        ...row,
+        status_reason: EDUCATION_EVIDENCE,
+      };
+    }
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
@@ -100,6 +107,12 @@ export function generateBatch96CaliforniaBlockerRefinementV1() {
   });
 
   const updatedFailureRows = failureRows.map((row) => {
+    if (row.family === 'district_or_county_education_routing') {
+      return {
+        ...row,
+        evidence: EDUCATION_EVIDENCE,
+      };
+    }
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
@@ -110,6 +123,79 @@ export function generateBatch96CaliforniaBlockerRefinementV1() {
   });
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
+    if (row.family === 'district_or_county_education_routing') {
+      return {
+        ...row,
+        query_basis: 'Reviewed the bounded California district packet roots after the statewide CDE SELPA directory challenge and verified additional live exact leaves on Amador and Berkeley domains.',
+        blocker_evidence: EDUCATION_EVIDENCE,
+        sample_count: 9,
+        samples: [
+          {
+            sample_name: 'Special Education - Oakland Unified School District',
+            source_url: 'https://www.ousd.org/enroll/enroll-at-ousd/enroll-your-student-tk-12/how-it-works-placement-priorities-special-programs-resources/special-education',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'batch20_verified_leaf_targets',
+          },
+          {
+            sample_name: 'School Directory - Oakland Unified School District',
+            source_url: 'https://www.ousd.org/our-schools/school-directory',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'batch20_verified_leaf_targets',
+          },
+          {
+            sample_name: 'Contact ECE Schools & Office - Oakland Unified School District',
+            source_url: 'https://www.ousd.org/enroll/enroll-at-ousd/ece/contact-ece-schools-office',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'batch20_verified_leaf_targets',
+          },
+          {
+            sample_name: 'Amador SELPA',
+            source_url: 'https://www.amadorcoe.org/selpa',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'bounded_live_california_check',
+          },
+          {
+            sample_name: 'Amador Special Education Home',
+            source_url: 'https://www.amadorcoe.org/specialeducation',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'bounded_live_california_check',
+          },
+          {
+            sample_name: 'Amador District Office Staff Directory',
+            source_url: 'https://www.amadorcoe.org/dodirectory',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'bounded_live_california_check',
+          },
+          {
+            sample_name: 'Special Education | Berkeley Unified School District',
+            source_url: 'https://www.berkeleyschools.net/departments/special-education/',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'bounded_live_california_check',
+          },
+          {
+            sample_name: 'Student Services | Berkeley Unified School District',
+            source_url: 'https://www.berkeleyschools.net/departments/student-services/',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'bounded_live_california_check',
+          },
+          {
+            sample_name: 'Directory | Berkeley Unified School District',
+            source_url: 'https://www.berkeleyschools.net/directory/',
+            verification_status: 'verified',
+            source_type: 'exact_leaf_target',
+            source_table: 'bounded_live_california_check',
+          },
+        ],
+      };
+    }
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
@@ -121,6 +207,12 @@ export function generateBatch96CaliforniaBlockerRefinementV1() {
   });
 
   const updatedNextRows = nextRows.map((row) => {
+    if (row.family === 'district_or_county_education_routing') {
+      return {
+        ...row,
+        evidence: EDUCATION_EVIDENCE,
+      };
+    }
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
@@ -132,11 +224,15 @@ export function generateBatch96CaliforniaBlockerRefinementV1() {
 
   const updatedSummary = {
     ...summary,
-    final_blockers: summary.final_blockers.map((row) => (
-      row.family === 'parent_training_information_center'
-        ? { ...row, evidence: PTI_EVIDENCE }
-        : row
-    )),
+    final_blockers: summary.final_blockers.map((row) => {
+      if (row.family === 'district_or_county_education_routing') {
+        return { ...row, evidence: EDUCATION_EVIDENCE };
+      }
+      if (row.family === 'parent_training_information_center') {
+        return { ...row, evidence: PTI_EVIDENCE };
+      }
+      return row;
+    }),
   };
 
   writeJsonl(INPUTS.gap, updatedGapRows);
@@ -151,9 +247,10 @@ export function generateBatch96CaliforniaBlockerRefinementV1() {
     classification: updatedSummary.classification,
     index_safe: updatedSummary.index_safe,
     completeness_pct: updatedSummary.completeness_pct,
-    refined_family: 'parent_training_information_center',
+    refined_families: ['district_or_county_education_routing', 'parent_training_information_center'],
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
     evidence_checks: {
+      education: EDUCATION_EVIDENCE,
       pti: PTI_EVIDENCE,
     },
   });
@@ -166,10 +263,11 @@ export function generateBatch96CaliforniaBlockerRefinementV1() {
       `- classification: ${updatedSummary.classification}`,
       `- index_safe: ${updatedSummary.index_safe ? 'true' : 'false'}`,
       `- completeness_pct: ${updatedSummary.completeness_pct}`,
-      '- refined_family: parent_training_information_center',
+      '- refined_families: district_or_county_education_routing, parent_training_information_center',
       '',
       '## Evidence checks',
       '',
+      `- education: ${EDUCATION_EVIDENCE}`,
       `- pti: ${PTI_EVIDENCE}`,
     ].join('\n') + '\n',
   );

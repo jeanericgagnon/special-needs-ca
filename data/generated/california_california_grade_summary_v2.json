@@ -46,14 +46,14 @@
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "bounded_exact_leaf_packet_exhausted_before_statewide_district_grade_coverage",
-      "evidence": "Reviewed exact district leaves remain limited to 3 saved pages; that is not enough to truthfully prove county-grade district routing across all 58 California counties, and the official CDE SELPA directory root https://www.cde.ca.gov/sp/se/as/caselpas.asp now returns a Radware bot challenge in the bounded live lane instead of reviewable directory content.",
+      "evidence": "Reviewed the existing bounded California district packet after the statewide CDE SELPA directory root https://www.cde.ca.gov/sp/se/as/caselpas.asp returned a Radware bot challenge. Exact district/county leaves now verify across OUSD, Amador, and Berkeley: OUSD special-education, school-directory, and ECE contact pages; Amador SELPA, special-education, and district-office-directory pages; and Berkeley special-education, student-services, and directory pages. However, AlpineCOE, ButteCOE, CalaverasCOE, and ColusaCOE SELPA roots fail DNS on both www and bare-domain checks, and Fremont USD still fails SSL handshake in the current lane. Even with 9 reviewed exact leaves, county-grade district routing still cannot be proven statewide across all 58 California counties.",
       "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
     },
     {
       "family": "parent_training_information_center",
       "severity": "major",
       "failure_code": "reviewed_pti_source_is_regional_not_statewide",
-      "evidence": "Reviewed 2026-06-22 bounded statewide-equivalent parent-center candidate set. Matrix Parents still preserves explicit PTI/FEC/FRC designation text, but its own scope stays limited to Marin, Napa, Solano, and Sonoma Counties; the official DDS Family Resource Centers Network URL https://www.dds.ca.gov/rc/frcn now returns 404; frcnca.org fails TLS protocol negotiation in the current lane; and supportforfamilies.org returns 403. No live fetched statewide California PTI or equivalent parent-center source is currently verified on disk.",
+      "evidence": "Reviewed 2026-06-22 bounded statewide-equivalent parent-center candidate set. Matrix Parents still preserves explicit PTI/FEC/FRC designation text, but its own scope stays limited to Marin, Napa, Solano, and Sonoma Counties; the official DDS Family Resource Centers Network URL https://www.dds.ca.gov/rc/frcn returns 404; frcnca.org fails TLS protocol negotiation in the current lane; and supportforfamilies.org returns 403. No live fetched statewide California PTI or equivalent parent-center source is currently verified on disk.",
       "next_action": "hold_blocked_until_statewide_pti_or_equivalent_parent_center_source_is_verified"
     }
   ]
