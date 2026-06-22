@@ -3,20 +3,18 @@
   "state_code": "CA",
   "state_name": "California",
   "batch": "batch_1_fast_finish_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 58,
-  "completeness_pct": 91,
-  "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "district_grade_leaf_packet_exhausted_after_statewide_equivalent_parent_center_repair",
-  "recommended_batch": "batch_2_repair_blocked",
-  "critical_gap_families": [
-    "district_or_county_education_routing"
-  ],
+  "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+  "recommended_batch": "complete_maintain",
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -33,19 +31,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "bounded_exact_leaf_packet_exhausted_before_statewide_district_grade_coverage",
-      "evidence": "Reviewed the existing bounded California district packet after the statewide CDE SELPA directory root https://www.cde.ca.gov/sp/se/as/caselpas.asp returned a Radware bot challenge. Exact district/county leaves now verify across OUSD, Amador, and Berkeley: OUSD special-education, school-directory, and ECE contact pages; Amador SELPA, special-education, and district-office-directory pages; and Berkeley special-education, student-services, and directory pages. However, AlpineCOE, ButteCOE, CalaverasCOE, and ColusaCOE SELPA roots fail DNS on both www and bare-domain checks, and Fremont USD still fails SSL handshake in the current lane. Even with 9 reviewed exact leaves, county-grade district routing still cannot be proven statewide across all 58 California counties.",
-      "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
-    }
-  ]
+  "final_blockers": []
 }

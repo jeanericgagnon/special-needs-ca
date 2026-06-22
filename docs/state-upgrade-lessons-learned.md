@@ -407,3 +407,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Host-Level Challenge Plus Dead Legacy Locator Is A Terminal Local-Office Blocker
 *   **Lesson:** If a state office host blocks not just leaves but also `robots.txt` and `sitemap.xml` with `cf-mitigated: challenge`, and the last legacy locator URL is an official 404, treat the local-office family as host-level blocked and stop probing sibling paths until a new official host or browser-readable artifact appears.
+
+### Dead California COE `.org` Roots Can Move To `k12.ca.us` Or District-Owned Replacements
+*   **Lesson:** If a California county-office-of-education `.org` root dies or a legacy district host fails TLS, try the county `k12.ca.us` office host and any district-owned replacement domain before declaring the packet exhausted. California cleared its last education blocker by replacing dead `alpinecoe.org` and `colusacoe.org`-style assumptions with `alpinecoe.k12.ca.us`, `ccoe.net`, `ccoe.k12.ca.us`, and `fremontunified.org` exact leaves.
