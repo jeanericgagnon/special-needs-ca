@@ -218,7 +218,7 @@ export async function GET() {
           diagnosisId: diag,
           entityCount: sdList.length,
           confidenceScore: confScore,
-          hasOfficialSource: rcList.some(rc => !!rc.source_url) || sdList.some(sd => !!sd.source_url) || coList.some(co => !!co.source_url),
+          hasOfficialSource: rcList.some((rc: any) => !!rc.source_url) || sdList.some((sd: any) => !!sd.source_url) || coList.some((co: any) => !!co.source_url),
           lastVerifiedDate: today,
           hasRequiredContactInfo: coList.length > 0,
           hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(countyDetails))
