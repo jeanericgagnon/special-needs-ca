@@ -1,0 +1,15 @@
+{
+  "batch": "batch87_vermont_statewide_family_truth_refresh_v1",
+  "state": "vermont",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "legal_aid"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources",
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ]
+}
