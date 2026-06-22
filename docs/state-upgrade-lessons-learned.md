@@ -464,3 +464,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Generic ArcGIS Instant-App Shells Do Not Count As County Contracts
 *   **Lesson:** If an official `*.maps.arcgis.com` app only fetches as a generic “Zone Lookup” shell and the public HTML exposes no county names, region names, or service/layer references, do not treat it as a county-routing contract. Georgia still stayed blocked because the DBHDD ArcGIS app revealed no public county-to-region evidence beyond the shell.
+
+### Official State-Administered County Exceptions Can Replace Impossible Local Storefront Proof
+*   **Lesson:** If a county is officially administered by a state agency rather than by a normal county government, a reviewed first-party exception page can satisfy the local-routing family. Hawaii cleared once the DOH Kalaupapa page explicitly stated that HRS 326 places Kalawao County under DOH jurisdiction and control, so the dead county storefront row no longer needed a fake county office replacement.

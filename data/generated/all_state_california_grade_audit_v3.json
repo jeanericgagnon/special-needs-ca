@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T20:03:26.267Z",
+  "generatedAt": "2026-06-22T20:10:00.912Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 8,
-    "BLOCKED": 42
+    "COMPLETE": 9,
+    "BLOCKED": 41
   },
-  "indexSafeCount": 8,
+  "indexSafeCount": 9,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -718,8 +718,8 @@
       "stateId": "hawaii",
       "stateCode": "HI",
       "stateName": "Hawaii",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -728,10 +728,10 @@
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 5,
       "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "hawaii",
         "state_code": "HI",
@@ -777,11 +777,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_pdf_covers_four_counties_kalawao_unresolved"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_processing_centers_pdf_covers_four_counties_but_kalawao_unresolved",
+      "packetPrimaryGapReason": "all_critical_families_verified_with_kalawao_official_exception_path",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
