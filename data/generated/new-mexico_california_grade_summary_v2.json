@@ -7,18 +7,17 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 33,
-  "completeness_pct": 41,
-  "strong_critical_families": 5,
+  "completeness_pct": 50,
+  "strong_critical_families": 6,
   "weak_critical_families": 4,
-  "missing_critical_families": 3,
+  "missing_critical_families": 2,
   "total_critical_families": 12,
-  "primary_gap_reason": "stale_state_packet_sources_rejected_and_county_grade_leaf_proof_still_missing",
+  "primary_gap_reason": "county_grade_leaf_proof_still_missing_after_official_statewide_repairs",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
-    "medicaid_state_health_coverage",
-    "early_intervention_part_c",
     "district_or_county_education_routing",
-    "county_local_disability_resources"
+    "county_local_disability_resources",
+    "early_intervention_part_c"
   ],
   "major_gap_families": [
     "vocational_rehabilitation_pre_ets",
@@ -26,8 +25,10 @@
     "legal_aid"
   ],
   "verified_source_families_with_samples": [
+    "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
+    "early_intervention_part_c",
     "special_education_idea_part_b",
     "protection_and_advocacy",
     "parent_training_information_center",
@@ -41,20 +42,6 @@
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
   "final_blockers": [
-    {
-      "family": "medicaid_state_health_coverage",
-      "severity": "critical",
-      "failure_code": "legacy_medicaid_samples_dead_or_wrong_family",
-      "evidence": "The old HSD / MAD packet target returned http_404 (https://www.hsd.state.nm.us/mad) and the prior packet mixed unrelated ABLE and early-intervention samples into the Medicaid family.",
-      "next_action": "author_or_review_current_hca_medicaid_leaf"
-    },
-    {
-      "family": "early_intervention_part_c",
-      "severity": "critical",
-      "failure_code": "legacy_early_intervention_source_dead_and_no_reviewed_replacement",
-      "evidence": "The old dhhs.new-mexico.gov/earlystart packet source is dead and the reviewed HCA DDSD page is not a Part C / FIT / early-intervention source.",
-      "next_action": "author_or_review_current_official_part_c_fit_source"
-    },
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
@@ -89,6 +76,13 @@
       "failure_code": "generic_or_statewide_evidence_used_where_local_required",
       "evidence": "County-local packet rows still rely on stale HSD / dhhs paths or DOI mirror records instead of live county-owned or official county-grade office leaves.",
       "next_action": "author_county_local_exact_targets"
+    },
+    {
+      "family": "early_intervention_part_c",
+      "severity": "critical",
+      "failure_code": "statewide_fit_program_verified_but_county_grade_local_routing_missing",
+      "evidence": "The official ECECD FIT program page is live and role-aligned, but the packet still lacks reviewed county-grade FIT local-office or local-provider coverage.",
+      "next_action": "author_county_grade_fit_local_targets"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T00:09:35.599Z",
+  "generatedAt": "2026-06-22T00:31:15.629Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 36,
@@ -2168,11 +2168,11 @@
       "legacyManualReviewRate": 57.56,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 33,
-      "strongCriticalFamilies": 5,
+      "strongCriticalFamilies": 6,
       "weakCriticalFamilies": 4,
-      "missingCriticalFamilies": 3,
+      "missingCriticalFamilies": 2,
       "totalCriticalFamilies": 12,
-      "completenessPct": 41,
+      "completenessPct": 50,
       "dbMetrics": {
         "state_id": "new-mexico",
         "state_code": "NM",
@@ -2216,10 +2216,10 @@
         "criticalRolesVerifiedPct": 0
       },
       "familyStatuses": {
-        "medicaid_state_health_coverage": "blocked_live_medicaid_replacement_not_yet_reviewed",
+        "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "missing_reviewed_role_aligned_part_c_source",
+        "early_intervention_part_c": "blocked_county_grade_fit_local_routing_unverified",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
         "vocational_rehabilitation_pre_ets": "missing_reviewed_vr_or_pre_ets_source",
@@ -2232,7 +2232,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "stale_state_packet_sources_rejected_and_county_grade_leaf_proof_still_missing",
+      "packetPrimaryGapReason": "county_grade_leaf_proof_still_missing_after_official_statewide_repairs",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

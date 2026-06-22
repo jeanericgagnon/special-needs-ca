@@ -1,0 +1,22 @@
+{
+  "batch": "batch_55_new_mexico_official_leaf_repair_v1",
+  "generated_at": "2026-06-22T00:31:15.244Z",
+  "state": "new-mexico",
+  "classification": "BLOCKED",
+  "completeness_pct": 50,
+  "strong_critical_families": 6,
+  "weak_critical_families": 4,
+  "missing_critical_families": 2,
+  "repaired_families": [
+    {
+      "family": "medicaid_state_health_coverage",
+      "family_status": "verified_state_grade",
+      "sample_count": 2
+    },
+    {
+      "family": "early_intervention_part_c",
+      "family_status": "blocked_county_grade_fit_local_routing_unverified",
+      "sample_count": 1
+    }
+  ]
+}

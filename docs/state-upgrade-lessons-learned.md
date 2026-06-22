@@ -236,3 +236,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Official Interactive Locators Do Not Count As County-Grade Proof Until Their County Data Is Reviewed
 *   **Problem:** Nebraska exposed a live official county-office chain through a `Public Assistance Offices` page that linked to a GIS Experience Builder locator, but the fetched locator only rendered a generic `Experience` shell and did not preserve county rows or structured office evidence in the reviewed artifact chain.
 *   **Lesson:** A live official locator link is not county-grade proof by itself. Upgrade county-local routing only when the reviewed HTML, document, or extracted data preserves concrete county offices, counties served, or structured local routing evidence. Interactive locator shells stay blocked until the county data itself is reviewed.
+
+### Statewide Program Repair Must Not Erase A Remaining County-Grade Blocker
+*   **Problem:** New Mexico’s official ECECD FIT page and HCA Medicaid leaves were enough to repair stale or missing statewide source families, but they still did not prove county-grade local routing for FIT offices or county-local disability resources.
+*   **Lesson:** When a reviewed official statewide program leaf exists, upgrade the family from `missing` to the most accurate blocked state instead of leaving it missing or falsely promoting it to complete. A live statewide program page can truthfully repair the state-level source family while the county-grade gate remains blocked on local-office or district-owned proof.

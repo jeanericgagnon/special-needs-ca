@@ -57,17 +57,19 @@ function mockFetch(map) {
 
 function seedRepo(root) {
   writeJson(path.join(root, 'data', 'source_targets', 'new-mexico.json'), [
-    { source_url: 'https://www.nmhealth.org/about/ddsd', category: 'C. Developmental disability / DD / IDD services' },
-    { source_url: 'https://www.hsd.state.nm.us/mad', category: 'B. Medicaid / benefits / HHS' },
+    { source_url: 'https://www.hca.nm.gov/developmental-disabilities-supports-division/', category: 'C. Developmental disability / DD / IDD services' },
+    { source_url: 'https://www.hca.nm.gov/lookingforassistance/apply-for-benefits/', category: 'B. Medicaid / benefits / HHS' },
+    { source_url: 'https://www.nmececd.org/family-infant-toddler-fit-program/', category: 'E. Early intervention' },
     { source_url: 'https://webnew.ped.state.nm.us/bureaus/special-education/', category: 'F. Special education / IEP' },
-    { source_url: 'https://www.parentcenterhub.org/find-your-center/', category: 'H. Parent training / disability rights / legal aid' },
+    { source_url: 'https://drnm.org/', category: 'H. Parent training / disability rights / legal aid' },
+    { source_url: 'https://www.lawhelpnewmexico.org/', category: 'H. Parent training / disability rights / legal aid' },
   ]);
   writeJsonl(path.join(root, 'data', 'generated', 'state_source_unresolved_v2.jsonl'), [
-    { state: 'New Mexico', missing_role: 'main_dd_agency', best_candidate_url: 'https://www.nmhealth.org/about/ddsd' },
-    { state: 'New Mexico', missing_role: 'medicaid_application', best_candidate_url: 'https://www.hsd.state.nm.us/mad/apply-for-benefits/' },
+    { state: 'New Mexico', missing_role: 'main_dd_agency', best_candidate_url: 'https://www.hca.nm.gov/developmental-disabilities-supports-division/' },
+    { state: 'New Mexico', missing_role: 'medicaid_application', best_candidate_url: 'https://www.hca.nm.gov/lookingforassistance/apply-for-benefits/' },
   ]);
   writeJsonl(path.join(root, 'data', 'generated', 'state_source_candidates_v2.jsonl'), [
-    { state: 'New Mexico', source_role: 'main_dd_agency', url: 'https://www.nmhealth.org/about/ddsd', status: 'legacy_candidate' },
+    { state: 'New Mexico', source_role: 'main_dd_agency', url: 'https://www.hca.nm.gov/developmental-disabilities-supports-division/', status: 'legacy_candidate' },
   ]);
 }
 
@@ -79,30 +81,42 @@ async function testControlPlaneAndDiscovery() {
     dbPath: path.join(root, 'missing.db'),
   });
 
-  assert.ok(registryRows.some((row) => row.agency === 'New Mexico Health Care Authority' && row.official_domains.includes('nmhealth.org')));
+  assert.ok(registryRows.some((row) => row.agency === 'New Mexico Health Care Authority' && row.official_domains.includes('hca.nm.gov')));
+  assert.ok(registryRows.some((row) => row.agency === 'Early intervention / Part C' && row.official_domains.includes('nmececd.org')));
+  assert.ok(registryRows.some((row) => row.agency === 'Protection and Advocacy' && row.official_domains.includes('drnm.org')));
   assert.ok(roleRows.some((row) => row.role_id === 'main_dd_agency'));
   assert.equal(roleRows.filter((row) => row.role_id === 'main_dd_agency').length, 1);
   assert.ok(roleRows.every((row) => Array.isArray(row.allowed_domains)));
 
   const fetchImpl = mockFetch({
-    'https://www.nmhealth.org/about/ddsd': {
+    'https://www.hca.nm.gov/developmental-disabilities-supports-division/': {
       text: `
         <html><head><title>Developmental Disabilities Supports Division</title></head>
         <body>
           <h1>Developmental Disabilities Supports Division</h1>
-          <a href="/about/ddsd/eligibility">Eligibility</a>
-          <a href="/about/ddsd/apply">Apply for Services</a>
-          <a href="/about/ddsd/offices">Regional Offices</a>
+          <a href="/eligibility-determination/">Eligibility Determination</a>
+          <a href="/developmental-disabilities-supports-division/">Apply for Services</a>
+          <a href="/contact-us/">Contact Us</a>
         </body></html>`,
       headers: { 'content-type': 'text/html' },
     },
-    'https://www.hsd.state.nm.us/mad': {
+    'https://www.hca.nm.gov/lookingforassistance/apply-for-benefits/': {
       text: `
-        <html><head><title>New Mexico Medicaid</title></head>
+        <html><head><title>Apply For Benefits</title></head>
         <body>
-          <h1>Medicaid</h1>
-          <a href="/mad/apply-for-benefits/">Apply for Benefits</a>
-          <a href="/mad/eligibility/">Eligibility</a>
+          <h1>Apply For Benefits</h1>
+          <a href="/lookingforassistance/apply-for-benefits/">Apply for Benefits</a>
+          <a href="/lookingforassistance/">Medicaid Benefits</a>
+        </body></html>`,
+      headers: { 'content-type': 'text/html' },
+    },
+    'https://www.nmececd.org/family-infant-toddler-fit-program/': {
+      text: `
+        <html><head><title>Family Infant Toddler (FIT) Program</title></head>
+        <body>
+          <h1>Family Infant Toddler (FIT) Program</h1>
+          <a href="/regional-office-map/">Regional Office Map</a>
+          <a href="/family-infant-toddler-fit-program/">Make a Referral</a>
         </body></html>`,
       headers: { 'content-type': 'text/html' },
     },
@@ -114,11 +128,12 @@ async function testControlPlaneAndDiscovery() {
         </body></html>`,
       headers: { 'content-type': 'text/html' },
     },
-    'https://www.parentcenterhub.org/find-your-center/': {
+    'https://drnm.org/': {
       text: `
-        <html><head><title>Find Your Parent Center</title></head>
+        <html><head><title>Disability Rights New Mexico</title></head>
         <body>
-          <a href="/find-your-center/?state=nm">New Mexico Parent Center</a>
+          <h1>Disability Rights New Mexico</h1>
+          <a href="/get-help/">Get Help</a>
         </body></html>`,
       headers: { 'content-type': 'text/html' },
     },
@@ -126,7 +141,7 @@ async function testControlPlaneAndDiscovery() {
     'https://www.ssa.gov/benefits/disability/apply-child.html': { text: '<html><title>Apply for Child SSI</title><body><h1>Apply for Child SSI</h1></body></html>', headers: { 'content-type': 'text/html' } },
     'https://ablenrc.org/': { text: '<html><title>ABLE NRC</title><body><a href="/state-review/new-mexico/">New Mexico ABLE</a></body></html>', headers: { 'content-type': 'text/html' }, finalUrl: 'https://www.ablenrc.org/' },
     'https://www.ablenrc.org/': { text: '<html><title>ABLE NRC</title><body><a href="/state-review/new-mexico/">New Mexico ABLE</a></body></html>', headers: { 'content-type': 'text/html' } },
-    'https://www.parentcenterhub.org/': { text: '<html><title>Parent Center Hub</title><body><a href="/find-your-center/">Find Your Center</a></body></html>', headers: { 'content-type': 'text/html' } },
+    'https://www.lawhelpnewmexico.org/': { text: '<html><title>Law Help New Mexico</title><body><h1>Law Help New Mexico</h1></body></html>', headers: { 'content-type': 'text/html' } },
   });
 
   const candidates = await discoverNmCandidates({
@@ -138,7 +153,8 @@ async function testControlPlaneAndDiscovery() {
 
   assert.ok(candidates.some((row) => row.role_id === 'main_dd_agency'));
   assert.ok(candidates.some((row) => row.role_id === 'medicaid_application' && row.candidate_url.includes('/apply-for-benefits')));
-  assert.ok(!candidates.some((row) => row.role_id === 'medicaid_application' && row.candidate_url === 'https://www.hsd.state.nm.us/'));
+  assert.ok(candidates.some((row) => row.role_id === 'ei_part_c_program' && row.candidate_url.includes('/family-infant-toddler-fit-program/')));
+  assert.ok(!candidates.some((row) => row.role_id === 'medicaid_application' && row.candidate_url === 'https://www.hca.nm.gov/'));
 }
 
 async function testQueueAndVerification() {
@@ -154,12 +170,12 @@ async function testQueueAndVerification() {
       state: 'New Mexico',
       role_id: 'main_dd_agency',
       source_role: 'dd_routing',
-      candidate_url: 'https://www.nmhealth.org/about/ddsd',
+      candidate_url: 'https://www.hca.nm.gov/developmental-disabilities-supports-division/',
       discovery_method: 'official_site_navigation',
-      discovery_parent_url: 'https://www.nmhealth.org/about/ddsd',
+      discovery_parent_url: 'https://www.hca.nm.gov/developmental-disabilities-supports-division/',
       link_text_or_sitemap_evidence: 'Developmental Disabilities Supports Division',
       responsible_agency: 'New Mexico Health Care Authority',
-      allowed_domain_matched: 'nmhealth.org',
+      allowed_domain_matched: 'hca.nm.gov',
       existed_in_old_repo: true,
       candidate_reason: 'seed',
       estimated_relevance: 'high',
@@ -168,12 +184,12 @@ async function testQueueAndVerification() {
       state: 'New Mexico',
       role_id: 'medicaid_grievances_appeals',
       source_role: 'programs_benefits',
-      candidate_url: 'https://www.hsd.state.nm.us/mad/eligibility/',
+      candidate_url: 'https://www.hca.nm.gov/lookingforassistance/apply-for-benefits/',
       discovery_method: 'official_site_navigation',
-      discovery_parent_url: 'https://www.hsd.state.nm.us/mad',
+      discovery_parent_url: 'https://www.hca.nm.gov/lookingforassistance/apply-for-benefits/',
       link_text_or_sitemap_evidence: 'Eligibility',
       responsible_agency: 'New Mexico Human Services Department / Medicaid',
-      allowed_domain_matched: 'hsd.state.nm.us',
+      allowed_domain_matched: 'hca.nm.gov',
       existed_in_old_repo: false,
       candidate_reason: 'bad cross-role candidate',
       estimated_relevance: 'high',
@@ -205,7 +221,7 @@ async function testQueueAndVerification() {
 
   const fetchImpl = async (url) => {
     const value = String(url);
-    if (value === 'https://www.nmhealth.org/about/ddsd') {
+    if (value === 'https://www.hca.nm.gov/developmental-disabilities-supports-division/') {
       return {
         ok: true,
         status: 200,
@@ -217,7 +233,7 @@ async function testQueueAndVerification() {
         },
       };
     }
-    if (value === 'https://www.hsd.state.nm.us/mad/eligibility/') {
+    if (value === 'https://www.hca.nm.gov/lookingforassistance/apply-for-benefits/') {
       return {
         ok: true,
         status: 200,
@@ -225,7 +241,7 @@ async function testQueueAndVerification() {
         headers: { get: () => 'text/html' },
         body: null,
         async arrayBuffer() {
-          return Buffer.from('<html><title>Medicaid Eligibility</title><body><h1>Medicaid Eligibility</h1><p>Apply for Medicaid benefits.</p></body></html>');
+          return Buffer.from('<html><title>Apply For Benefits</title><body><h1>Apply For Benefits</h1><p>Apply for Medicaid benefits in New Mexico.</p></body></html>');
         },
       };
     }
