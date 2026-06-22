@@ -1,0 +1,15 @@
+{
+  "batch": "batch79_north_dakota_statewide_family_truth_refresh_v1",
+  "state": "north-dakota",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ]
+}

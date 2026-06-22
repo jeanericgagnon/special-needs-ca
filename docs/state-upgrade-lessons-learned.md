@@ -268,3 +268,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### First-Party 404 Shells Do Not Count As Statewide Support Proof
 *   **Problem:** Minnesota inherited Mid-Minnesota Legal Aid / Minnesota Disability Law Center evidence in the packet, but the reviewed first-party fetch preserved only a `Page not found` shell with site chrome, nav links, and contact snippets rather than a live role-aligned legal-aid or P&A leaf.
 *   **Lesson:** Do not preserve statewide support verification from a first-party 404 shell just because the page still shows the right organization name, navigation, or footer contact information. Demote the sample chain and keep the family blocked until a live role-aligned first-party leaf is reviewed.
+
+### PTI Navigation Alone Does Not Prove Statewide PTI Designation
+*   **Problem:** North Carolina’s reviewed ECAC homepage preserved strong family-support language and direct navigation to a `Parent Training and Information Center (PTI)` page, but the saved artifact chain did not include a fetched leaf that explicitly stated statewide PTI designation.
+*   **Lesson:** Do not upgrade a PTI family from homepage navigation alone. Keep the family `inventory_only` or blocked until the reviewed artifact chain preserves an explicit statewide PTI designation on the fetched page itself, not just a menu link or inferred organization role.
