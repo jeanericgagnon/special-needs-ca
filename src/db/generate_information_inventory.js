@@ -90,8 +90,9 @@ const fundingStatuses = extractConstArray(directoryFoundationSource, 'FUNDING_ST
 const claimStatuses = extractConstArray(directoryFoundationSource, 'CLAIM_STATUSES');
 const serviceTags = extractConstArray(directoryFoundationSource, 'DIRECTORY_SERVICE_TAGS');
 const servingTags = extractConstArray(directoryFoundationSource, 'DIRECTORY_SERVING_TAGS');
-const indexableStates = extractConstArray(publicTruthSource, 'INDEXABLE_STATE_IDS');
+const indexableStates = extractConstArray(publicTruthSource, 'PUBLIC_RENDERABLE_STATE_IDS');
 const verifiedDiagnosisSlugs = extractConstArray(publicTruthSource, 'VERIFIED_DIAGNOSIS_SLUGS');
+
 const publicVerificationStatuses = [...publicTruthSource.matchAll(/'([^']+)'/g)]
   .map((match) => match[1])
   .filter((value, index, arr) => ['official_verified', 'verified', 'human_verified', 'source_listed'].includes(value) && arr.indexOf(value) === index);

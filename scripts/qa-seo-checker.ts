@@ -69,6 +69,7 @@ const BANNED_PATTERNS = [
   { pattern: /\?\?\s*18(\.00)?\b/i, label: '?? 18 wage fallback' },
   { pattern: /typically 15 to 30 days/i, label: 'generic IEP timeline claim' },
   { pattern: /\bVERIFIED_STATES\b/i, label: 'legacy VERIFIED_STATES list' },
+  { pattern: /\bINDEXABLE_STATE_IDS\b/i, label: 'legacy INDEXABLE_STATE_IDS list' },
   { pattern: /confidence_score\s*.*?\/.*?5(\.0)?\b/i, label: 'manual division of confidence score by 5' }
 ];
 
@@ -530,6 +531,114 @@ function scanFilesForSchemaOverEmission() {
 // Run scanners
 scanFilesForSchemaOverEmission();
 scanFilesForBannedPatterns();
+
+function verifySitemapsUseCentralPolicy() {
+  console.log('\n--- Verifying Sitemaps Use Central Policy ---');
+  const sitemapFiles = [
+    'frontend/src/app/sitemaps/static.xml/route.ts',
+    'frontend/src/app/sitemaps/counties.xml/route.ts',
+    'frontend/src/app/sitemaps/cities.xml/route.ts',
+    'frontend/src/app/sitemaps/districts.xml/route.ts'
+  ];
+  
+  sitemapFiles.forEach(file => {
+    const filePath = path.resolve(__dirname, '..', file);
+    if (!fs.existsSync(filePath)) {
+      logError(`Sitemap file not found: ${file}`);
+      return;
+    }
+    const content = fs.readFileSync(filePath, 'utf8');
+    if (!content.includes('evaluateSeoPolicy')) {
+      logError(`Sitemap file ${file} does not use evaluateSeoPolicy!`);
+    } else {
+      logSuccess(`Sitemap ${file} correctly integrates central policy.`);
+    }
+  });
+}
+
+function verifyUnreadyRouteTypesAreNoindex() {
+  console.log('\n--- Verifying Unready Route Types Are Blocked ---');
+  
+  const cityPolicy = evaluateSeoPolicy({
+    routeType: 'city',
+    stateId: 'california',
+    countyId: 'los-angeles',
+    diagnosisId: 'autism-spectrum-disorder'
+  });
+  if (cityPolicy.index) {
+    logError("Gating failure: 'city' route type is indexable!");
+  } else {
+    logSuccess("'city' route type is correctly blocked.");
+  }
+  
+  const sdPolicy = evaluateSeoPolicy({
+    routeType: 'school-district',
+    stateId: 'california',
+    programId: 'los-angeles-unified'
+  });
+  if (sdPolicy.index) {
+    logError("Gating failure: 'school-district' route type is indexable!");
+  } else {
+    logSuccess("'school-district' route type is correctly blocked.");
+  }
+}
+
+async function verifyOfficialSourceHelper() {
+  console.log('\n--- Verifying hasOfficialProgramSource Helper ---');
+  const { hasOfficialProgramSource } = await import('../frontend/src/lib/seo-policy.js');
+  
+  const failCases = [
+    'https://www.dhcs.ca.gov',
+    'https://dhcs.ca.gov',
+    'https://www.ablefull.org',
+    'https://ablefull.org',
+    'http://example.com/test',
+    '',
+    'null',
+    'undefined',
+    '#'
+  ];
+  
+  let failed = false;
+  failCases.forEach(c => {
+    if (hasOfficialProgramSource(c)) {
+      logError(`hasOfficialProgramSource incorrectly accepted: "${c}"`);
+      failed = true;
+    }
+  });
+  
+  if (!hasOfficialProgramSource('https://www.medicaid.gov/some-waiver')) {
+    logError('hasOfficialProgramSource incorrectly rejected a valid URL: "https://www.medicaid.gov/some-waiver"');
+    failed = true;
+  }
+  
+  if (!failed) {
+    logSuccess('hasOfficialProgramSource behaves correctly.');
+  }
+}
+
+function verifyUnknownStateIsNoindexed() {
+  console.log('\n--- Verifying Mismatched / Unknown State Fail-Closed Gating ---');
+  const unknownPolicy = evaluateSeoPolicy({
+    routeType: 'state-hub',
+    stateId: 'unknown-state-id',
+    entityCount: 10,
+    confidenceScore: 0.95,
+    hasOfficialSource: true,
+    lastVerifiedDate: '2026-01-01',
+    hasNoPlaceholderData: true
+  });
+  if (unknownPolicy.index) {
+    logError("Gating failure: unknown state 'unknown-state-id' is indexable!");
+  } else {
+    logSuccess("Unknown state 'unknown-state-id' correctly fails closed (noindex).");
+  }
+}
+
+verifySitemapsUseCentralPolicy();
+verifyUnreadyRouteTypesAreNoindex();
+await verifyOfficialSourceHelper();
+verifyUnknownStateIsNoindexed();
 
 // 7. Pilot Environment Flag QA check
 console.log('\n--- Checking Nationwide Indexability Gating ---');

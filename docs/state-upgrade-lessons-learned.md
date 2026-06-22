@@ -470,3 +470,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Named Office Labels Still Count As Placeholders When The URL Is Generic
 *   **Lesson:** Do not let a realistic office name fool the packet if the stored URL is still generic. Idaho looked partially repaired because rows were labeled `Boise Office`, `Blackfoot Office`, and `Idaho Falls Office`, but the live URLs still pointed at one generic Medicaid page or a dead legacy locator, so those rows were still placeholders until the exact office leaves were attached.
+
+### Audit-Gated SEO Gating & Sitemap Consolidation
+*   **Lesson:** Never rely on hardcoded all-state allowlists to determine search engine indexation or sitemap inclusion. Always consult the active data-audit JSON and priority queue JSONL artifacts as the single source of truth. If audit data is missing, inconsistent, or malformed, fail closed (noindex and exclude from sitemaps). Gating is decoupled from rendering; blocked states may render for navigation and research, but must serve `noindex, follow` tags, display a clear "Verification Pending" disclosure banner, and withhold structured schemas to avoid validation errors. Normalizing official-source URL checks (using helpers like `hasOfficialProgramSource`) is mandatory to prevent accidental indexing of thin or generic pages.

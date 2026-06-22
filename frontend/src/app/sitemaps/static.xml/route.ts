@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, Program, getCounties, getCountyDetails } from '@/lib/db';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore } from '@/lib/seo-policy';
+import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
@@ -192,7 +192,7 @@ export async function GET() {
         routeType: 'program-guide',
         stateId,
         programId: cluster.slug,
-        hasOfficialSource: !!prog?.source_url,
+        hasOfficialSource: hasOfficialProgramSource(prog?.official_source_url),
         lastVerifiedDate: prog?.last_verified_date || null,
         confidenceScore,
         hasEligibilityRules,

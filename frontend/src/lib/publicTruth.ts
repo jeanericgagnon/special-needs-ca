@@ -1,7 +1,13 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
 import { stateAuditStatus } from './seo-policy';
 
-export const INDEXABLE_STATE_IDS = [
+/**
+ * PUBLIC_RENDERABLE_STATE_IDS defines all states that the application can render in the UI
+ * for navigation and user research.
+ * IMPORTANT: This is NOT an allowlist for search engine indexation. Indexability is strictly
+ * controlled by stateAuditStatus() via isIndexableState(stateId).
+ */
+export const PUBLIC_RENDERABLE_STATE_IDS = [
   'california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia',
   'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina',
   'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota',
@@ -10,6 +16,7 @@ export const INDEXABLE_STATE_IDS = [
   'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts',
   'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming',
 ] as const;
+
 
 export const VERIFIED_DIAGNOSIS_SLUGS = [
   'autism-spectrum-disorder',

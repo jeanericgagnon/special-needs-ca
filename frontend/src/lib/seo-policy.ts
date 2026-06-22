@@ -206,6 +206,34 @@ export function assertNoPlaceholderData(text: string | null | undefined): boolea
 }
 
 /**
+ * Verifies if a given program URL is a valid first-party official source,
+ * rejecting common fallbacks, mock URLs, and placeholders.
+ */
+export function hasOfficialProgramSource(url: string | null | undefined): boolean {
+  if (!url) return false;
+  const trimmed = url.trim().toLowerCase();
+  if (
+    trimmed === '' ||
+    trimmed === 'null' ||
+    trimmed === 'undefined' ||
+    trimmed === 'https://www.dhcs.ca.gov' ||
+    trimmed === 'https://dhcs.ca.gov' ||
+    trimmed === 'https://www.ablefull.org' ||
+    trimmed === 'https://ablefull.org' ||
+    trimmed.includes('example.com') ||
+    trimmed.startsWith('#')
+  ) {
+    return false;
+  }
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
+/**
  * Returns the canonical URL path for a given route pattern.
  */
 export function canonicalForRoute(

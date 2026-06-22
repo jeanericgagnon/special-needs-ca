@@ -6,32 +6,15 @@
  * behind each state.
  *
  * Classifications:
- *   exhaustive → California only. Full county × program × provider matrix.
- *   pilot      → All other 49 states. Source-backed pilot coverage.
- *               Priority states (TX/FL/NY/PA/IL/OH/GA) have priority-county
- *               seeding with verified agencies, waivers, and school districts.
- *               Remaining states include state DD/Medicaid agency routing,
- *               federal program guides, and early intervention resources.
+ *   exhaustive          -> California only. Full county x program x provider matrix.
+ *   reviewed            -> Completed and index-safe states (e.g. Florida, Pennsylvania).
+ *   gated (Texas)       -> Texas manual override due to Part C early intervention gaps.
+ *   research preview    -> Blocked/incomplete states. Served as noindex preview directories.
  */
 
 import React from 'react';
-import { ShieldCheck, Sparkles } from 'lucide-react';
-
-// States with full exhaustive launch-grade coverage
-const EXHAUSTIVE_STATES = new Set(['california']);
-
-const PRIORITY_PILOT_STATES = new Set([
-  'texas', 'florida', 'new-york', 'pennsylvania', 'illinois', 'ohio', 'georgia',
-  'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho',
-  'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia',
-  'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'
-]);
-
-export type CoverageLevel = 'exhaustive' | 'pilot';
-
-export function getStateCoverageLevel(stateId: string): CoverageLevel {
-  return EXHAUSTIVE_STATES.has(stateId.toLowerCase()) ? 'exhaustive' : 'pilot';
-}
+import { ShieldCheck, Sparkles, AlertTriangle, Eye } from 'lucide-react';
+import { stateAuditStatus, stateGapReason } from '@/lib/seo-policy';
 
 interface StateCoverageBadgeProps {
   stateId: string;
@@ -39,38 +22,102 @@ interface StateCoverageBadgeProps {
 }
 
 export function StateCoverageBadge({ stateId, stateName }: StateCoverageBadgeProps) {
-  const isPriority = PRIORITY_PILOT_STATES.has(stateId.toLowerCase());
-  const isExhaustive = EXHAUSTIVE_STATES.has(stateId.toLowerCase());
+  const normalizedStateId = stateId.toLowerCase().trim();
+  const audit = stateAuditStatus(normalizedStateId);
+  const gapReason = stateGapReason(normalizedStateId);
 
-  if (isExhaustive) {
+  // California is exhaustive
+  if (normalizedStateId === 'california') {
     return (
-      <div
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '0.4rem',
-          background: 'rgba(22, 163, 74, 0.08)',
-          border: '1px solid rgba(22, 163, 74, 0.25)',
-          color: '#16a34a',
-          borderRadius: '20px',
-          padding: '0.3rem 0.75rem',
-          fontSize: '0.72rem',
-          fontWeight: 700,
-          textTransform: 'uppercase',
-          letterSpacing: '0.06em',
-        }}
-      >
-        <ShieldCheck size={12} />
-        Exhaustive Launch-Grade Coverage
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', alignItems: 'flex-start' }}>
+        <div
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+            background: 'rgba(22, 163, 74, 0.08)',
+            border: '1px solid rgba(22, 163, 74, 0.25)',
+            color: '#16a34a',
+            borderRadius: '20px',
+            padding: '0.3rem 0.75rem',
+            fontSize: '0.72rem',
+            fontWeight: 700,
+            textTransform: 'uppercase',
+            letterSpacing: '0.06em',
+          }}
+        >
+          <ShieldCheck size={12} />
+          Exhaustive Launch-Grade Coverage
+        </div>
+        <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', maxWidth: '540px', lineHeight: 1.4 }}>
+          {stateName} has full county × program × provider matrix coverage. All local agency contacts, school districts, and provider details are fully verified.
+        </span>
       </div>
     );
   }
 
-  // All 49 non-CA states are pilot states
-  const subLabel = isPriority
-    ? `Priority counties in ${stateName} are seeded with verified state agency data, waiver programs, and school district records. Some local resources use statewide locator routing rather than direct office listings.`
-    : `${stateName} includes state DD/Medicaid agency routing, federal program guides, and early intervention resources. Local county resources route to the statewide ${stateName} service locator.`;
+  // Texas manual override / gated case
+  if (normalizedStateId === 'texas') {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', alignItems: 'flex-start' }}>
+        <div
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+            background: 'rgba(239, 68, 68, 0.08)',
+            border: '1px solid rgba(239, 68, 68, 0.25)',
+            color: '#ef4444',
+            borderRadius: '20px',
+            padding: '0.3rem 0.75rem',
+            fontSize: '0.72rem',
+            fontWeight: 700,
+            textTransform: 'uppercase',
+            letterSpacing: '0.06em',
+          }}
+        >
+          <AlertTriangle size={12} />
+          Gated Pending Audit Repair
+        </div>
+        <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', maxWidth: '540px', lineHeight: 1.4 }}>
+          Texas directories are temporarily gated from public search indexing pending verification of county-local evidence and Part C Early Childhood Intervention sample counts.
+          {gapReason && <span style={{ display: 'block', marginTop: '0.25rem', color: '#b91c1c' }}><strong>Gap Details:</strong> {gapReason}</span>}
+        </span>
+      </div>
+    );
+  }
 
+  // Complete & Index-safe states
+  if (audit !== null && audit.classification === 'COMPLETE' && audit.indexSafe === true) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', alignItems: 'flex-start' }}>
+        <div
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+            background: 'rgba(22, 163, 74, 0.08)',
+            border: '1px solid rgba(22, 163, 74, 0.25)',
+            color: '#16a34a',
+            borderRadius: '20px',
+            padding: '0.3rem 0.75rem',
+            fontSize: '0.72rem',
+            fontWeight: 700,
+            textTransform: 'uppercase',
+            letterSpacing: '0.06em',
+          }}
+        >
+          <ShieldCheck size={12} />
+          Source-Backed Reviewed Coverage
+        </div>
+        <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', maxWidth: '540px', lineHeight: 1.4 }}>
+          {stateName} has passed data-audit truth requirements. Program guides, eligibility rules, and school district contacts are officially verified.
+        </span>
+      </div>
+    );
+  }
+
+  // Blocked / Research preview states
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', alignItems: 'flex-start' }}>
       <div
@@ -78,9 +125,9 @@ export function StateCoverageBadge({ stateId, stateName }: StateCoverageBadgePro
           display: 'inline-flex',
           alignItems: 'center',
           gap: '0.4rem',
-          background: 'rgba(59, 130, 246, 0.08)',
-          border: '1px solid rgba(59, 130, 246, 0.25)',
-          color: '#2563eb',
+          background: 'rgba(245, 158, 11, 0.08)',
+          border: '1px solid rgba(245, 158, 11, 0.25)',
+          color: '#d97706',
           borderRadius: '20px',
           padding: '0.3rem 0.75rem',
           fontSize: '0.72rem',
@@ -89,11 +136,12 @@ export function StateCoverageBadge({ stateId, stateName }: StateCoverageBadgePro
           letterSpacing: '0.06em',
         }}
       >
-        <Sparkles size={12} />
-        Source-Backed Pilot Coverage
+        <Eye size={12} />
+        Research Preview &mdash; Verification Pending
       </div>
       <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', maxWidth: '540px', lineHeight: 1.4 }}>
-        {subLabel}
+        This directory is open for navigation and research, but is not indexed on search engines. Data verification for {stateName} is in progress.
+        {gapReason && <span style={{ display: 'block', marginTop: '0.25rem', color: '#b45309' }}><strong>Gap Details:</strong> {gapReason}</span>}
       </span>
     </div>
   );
