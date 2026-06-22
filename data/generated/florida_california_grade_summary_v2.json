@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_myaccess_county_locator_requires_browser_assisted_or_api_contract_repair",
+  "primary_gap_reason": "official_myaccess_locator_cloudfront_403_blocks_browser_lane",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -43,9 +43,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_myaccess_county_locator_requires_browser_assisted_or_api_contract_repair",
-      "evidence": "The official Family Resource Center page and same-domain providers.csv preserve reviewed storefront rows for only 34 of Florida’s 67 counties. The live first-party MyACCESS Community Partner Search at https://myaccess.myflfamilies.com/Public/CPCPS is a JavaScript shell, appconfig.js exposes officeMapping=/dataexchangeproxy, and a bounded plain GET to https://myaccess.myflfamilies.com/dataexchangeproxy returns the same shell instead of county results. The remaining 33 counties therefore require browser-assisted or documented API-contract extraction from the official first-party lane.",
-      "next_action": "move_county_local_disability_resources_to_browser_assisted_myaccess_office_mapping_repair"
+      "failure_code": "official_myaccess_locator_cloudfront_403_blocks_browser_lane",
+      "evidence": "The official Family Resource Center page and same-domain providers.csv still preserve reviewed storefront rows for only 34 of Florida’s 67 counties. Earlier bounded static fetches showed the first-party MyACCESS Community Partner Search shell at https://myaccess.myflfamilies.com/Public/CPCPS plus appconfig.js officeMapping=/dataexchangeproxy, but a fresh bounded Playwright probe on 2026-06-22 now receives an immediate CloudFront 403 document response with body text \"Request blocked\" before any in-browser search interaction. The remaining 33 counties therefore cannot be truthfully marked as browser-repairable from the current environment and stay blocked pending first-party reachability or a documented API contract.",
+      "next_action": "hold_county_local_until_first_party_locator_is_reachable_or_documented_api_contract_is_available"
     }
   ]
 }

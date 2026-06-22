@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T15:52:37.572Z",
+  "generatedAt": "2026-06-22T16:06:36.063Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 4,
@@ -307,11 +307,11 @@
       "legacyManualReviewRate": 70.65,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 58,
-      "strongCriticalFamilies": 9,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 10,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 1,
       "totalCriticalFamilies": 12,
-      "completenessPct": 75,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "california",
         "state_code": "CA",
@@ -357,11 +357,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_exact_leaf_repair_exhausted"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "county_grade_leaf_packets_exhausted_and_reviewed_pti_source_still_not_statewide",
+      "packetPrimaryGapReason": "district_grade_leaf_packet_exhausted_and_reviewed_pti_source_still_not_statewide",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -637,11 +637,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_browser_assisted_official_locator"
+        "county_local_disability_resources": "blocked_browser_lane_cloudfront_403"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "official_myaccess_county_locator_requires_browser_assisted_or_api_contract_repair",
+      "packetPrimaryGapReason": "official_myaccess_locator_cloudfront_403_blocks_browser_lane",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

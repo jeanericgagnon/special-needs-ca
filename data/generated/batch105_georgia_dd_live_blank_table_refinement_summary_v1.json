@@ -1,0 +1,14 @@
+{
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "refined_family": "developmental_disability_idd_authority",
+  "evidence_checks": {
+    "countyLookupUrl": "https://dbhdd.georgia.gov/regional-field-office-county",
+    "countyLookupStatus": 200,
+    "countyNamesPresent": false,
+    "alternateRegionalOfficesUrl": "https://dbhdd.georgia.gov/locations/regional-offices",
+    "alternateRegionalOfficesStatus": 404
+  }
+}

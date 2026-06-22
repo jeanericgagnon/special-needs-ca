@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 67
-- primary_gap_reason: official_myaccess_county_locator_requires_browser_assisted_or_api_contract_repair
+- primary_gap_reason: official_myaccess_locator_cloudfront_403_blocks_browser_lane
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Florida legal aid sources are present in the Florida source pack and verified discovery artifacts.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_browser_assisted_official_locator (The replatformed DCF Family Resource Center chain preserves reviewed storefront coverage for 34/67 counties, but the remaining county-grade office search now sits behind the live first-party MyACCESS Community Partner Search JavaScript shell and officeMapping dataexchangeproxy lane.)
+- county_local_disability_resources: blocked_browser_lane_cloudfront_403 (The replatformed DCF Family Resource Center chain preserves reviewed storefront coverage for 34/67 counties, but the remaining official MyACCESS county-locator lane now fails in the browser with an immediate CloudFront 403 Request blocked response.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_myaccess_county_locator_requires_browser_assisted_or_api_contract_repair :: The official Family Resource Center page and same-domain providers.csv preserve reviewed storefront rows for only 34 of Florida’s 67 counties. The live first-party MyACCESS Community Partner Search at https://myaccess.myflfamilies.com/Public/CPCPS is a JavaScript shell, appconfig.js exposes officeMapping=/dataexchangeproxy, and a bounded plain GET to https://myaccess.myflfamilies.com/dataexchangeproxy returns the same shell instead of county results. The remaining 33 counties therefore require browser-assisted or documented API-contract extraction from the official first-party lane.
+- county_local_disability_resources: official_myaccess_locator_cloudfront_403_blocks_browser_lane :: The official Family Resource Center page and same-domain providers.csv still preserve reviewed storefront rows for only 34 of Florida’s 67 counties. Earlier bounded static fetches showed the first-party MyACCESS Community Partner Search shell at https://myaccess.myflfamilies.com/Public/CPCPS plus appconfig.js officeMapping=/dataexchangeproxy, but a fresh bounded Playwright probe on 2026-06-22 now receives an immediate CloudFront 403 document response with body text "Request blocked" before any in-browser search interaction. The remaining 33 counties therefore cannot be truthfully marked as browser-repairable from the current environment and stay blocked pending first-party reachability or a documented API contract.
 
 ## Verified source samples
 
@@ -40,28 +40,14 @@
 - legal_aid: verified_state_grade; samples=2; first=https://bals.org
 - able_program: verified_state_grade; samples=1; first=https://www.ableunited.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_browser_assisted_official_locator; samples=34; first=https://familyresourcecenter.myflfamilies.com/providers.csv
+- county_local_disability_resources: blocked_browser_lane_cloudfront_403; samples=34; first=https://familyresourcecenter.myflfamilies.com/providers.csv
 
 ## Next actions
 
-- [critical] county_local_disability_resources: move_county_local_disability_resources_to_browser_assisted_myaccess_office_mapping_repair
+- [critical] county_local_disability_resources: hold_county_local_until_first_party_locator_is_reachable_or_documented_api_contract_is_available
 
 ## Florida repair decision
 
 - District or county education routing remains verified from the live official FDLRS county routing page.
-- County-local disability resources are still not California-grade complete. The reviewed Family Resource Center chain still covers only 34/67 counties, and the remaining official locator lane now resolves to the live first-party MyACCESS JS shell rather than static county office rows.
-- Florida therefore remains truthfully BLOCKED and not index-safe until the remaining 33 counties are repaired through a browser-assisted or documented API-contract extraction from the official MyACCESS office-mapping lane.
-
-## Evidence checks
-
-- Family Resource Center partial coverage: 34/67 counties remain preserved from reviewed same-domain storefront rows.
-- MyACCESS Community Partner Search: https://myaccess.myflfamilies.com/Public/CPCPS returned 200 with title "MyACCESS" but only a JavaScript shell and no county office rows in static HTML.
-- MyACCESS app config: https://myaccess.myflfamilies.com/config/appconfig.js exposes officeMapping=/dataexchangeproxy.
-- Office-mapping endpoint check: bounded plain GET to https://myaccess.myflfamilies.com/dataexchangeproxy returned 200 with the same shell, so the remaining county-local office evidence is browser-assisted or API-contract-only in the current lane.
-
-## Final family count
-
-- strong_critical_families: 11
-- weak_critical_families: 1
-- missing_critical_families: 0
-- county_local_disability_resources: blocked_browser_assisted_official_locator
+- County-local disability resources are still not California-grade complete. The reviewed Family Resource Center chain still covers only 34/67 counties, and the remaining official MyACCESS locator lane now fails even in the bounded browser lane with a CloudFront 403 Request blocked response.
+- Florida therefore remains truthfully BLOCKED and not index-safe until the first-party locator becomes reachable in-browser from the repair lane or the state exposes a documented office-mapping contract that can be verified without inference.

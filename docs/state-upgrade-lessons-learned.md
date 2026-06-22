@@ -351,3 +351,14 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Official Early-Childhood Pages Can Preserve Part C Even When The Old Part C Domain Is Dead
 *   **Problem:** Kansas lost its old early-start root entirely, and the first likely Part C domain hint also died, but the live KSDE Early Childhood Special Education page still preserved birth-to-three entitlement, KDHE Part C administration, and the external local ITS directory pointer.
 *   **Lesson:** When a state's old Part C root is dead, check the live official early-childhood or preschool-special-education leaf on the education agency domain before opening broader discovery. If that page explicitly states who administers Part C and points families to the local intake network, it can repair the statewide Part C family.
+
+## 3. Cross-State Repair Patterns
+
+### Official County Directories Can Count When They Enumerate Every County
+*   **Lesson:** A statewide official directory is county-grade enough when the fetched page itself enumerates every county with county-labeled local-routing links. California CDSS IHSS cleared county-local routing once the live page proved 58 county links on one official directory page, without needing 58 separate county re-fetches.
+
+### Browser Lanes Must Be Rechecked When Static JS Shell Evidence Looks Promising
+*   **Lesson:** If static fetches show a live JS shell plus config hints, still run one bounded browser probe before promising browser-assisted completion. Florida MyACCESS looked browser-repairable from static shell evidence, but Playwright hit an immediate CloudFront 403 document block, so the lane had to be downgraded from “needs automation” to “official browser access blocked.”
+
+### Live Official County Tables Can Still Fail Closed When The Key Cells Are Blank
+*   **Lesson:** Do not count a live official county-routing table just because it returns HTTP 200. Georgia DBHDD still fails county-grade DD routing because the official county page renders blank county cells and repeated region links, even before you consider the blocked region leaves.

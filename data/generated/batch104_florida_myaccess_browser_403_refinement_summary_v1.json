@@ -1,0 +1,16 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "refined_family": "county_local_disability_resources",
+  "blocker_code": "official_myaccess_locator_cloudfront_403_blocks_browser_lane",
+  "next_action": "hold_county_local_until_first_party_locator_is_reachable_or_documented_api_contract_is_available",
+  "evidence_checks": {
+    "staticShellHint": "https://myaccess.myflfamilies.com/Public/CPCPS",
+    "officeMappingHint": "/dataexchangeproxy",
+    "browserStatus": 403,
+    "browserTitle": "ERROR: The request could not be satisfied",
+    "browserBodyContains": "Request blocked"
+  }
+}
