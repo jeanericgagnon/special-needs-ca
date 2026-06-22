@@ -313,6 +313,10 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Iowa's reviewed ASK About page preserved real statewide family-support evidence but still failed the PTI gate, while the same-domain sitemap exposed a deeper leaf named `parent-training-and-information-center-ptic` with the exact designation text.
 *   **Lesson:** When a first-party About page is real but too generic for PTI, fetch the same-domain sitemap before reopening broader discovery. If the sitemap exposes a role-pure PTI leaf, verify that exact leaf and stop instead of leaving the family blocked on the generic About page.
 
+### Cloudflare On Robots And Sitemap Means The Office-Directory Blocker Is Domain-Wide
+*   **Problem:** Alaska's `health.alaska.gov` office-directory leaves looked blocked, and the follow-up check showed the same Cloudflare / 403 shell on `robots.txt` and sitemap endpoints too.
+*   **Lesson:** If the office leaf, `robots.txt`, and sitemap endpoints all return the same challenge shell, treat it as a domain-level fetch blocker in the current lane. Stop trying sibling office URLs and record the blocker as lane-wide until a different fetch method or reviewed alternate official domain exists.
+
 ### Official Early-Childhood Pages Can Preserve Part C Even When The Old Part C Domain Is Dead
 *   **Problem:** Kansas lost its old early-start root entirely, and the first likely Part C domain hint also died, but the live KSDE Early Childhood Special Education page still preserved birth-to-three entitlement, KDHE Part C administration, and the external local ITS directory pointer.
 *   **Lesson:** When a state's old Part C root is dead, check the live official early-childhood or preschool-special-education leaf on the education agency domain before opening broader discovery. If that page explicitly states who administers Part C and points families to the local intake network, it can repair the statewide Part C family.

@@ -45,12 +45,12 @@
     {
       "family": "county_local_disability_resources",
       "failure_code": "official_local_directory_challenge_blocks_reviewed_county_grade_evidence",
-      "evidence": "Reviewed 2026-06-22 static and bounded browser-assisted checks both returned Cloudflare security-verification shells on Alaska DPA and SDS office-directory candidates, including office-locations and contact leaves on health.alaska.gov."
+      "evidence": "Reviewed 2026-06-22 official Alaska DPA and SDS office-directory candidates plus health.alaska.gov robots.txt and sitemap endpoints. The office leaves, robots.txt, and sitemap URLs all returned Cloudflare security-verification or 403 shells, so the local-office blocker is domain-wide in the current fetch lane rather than one broken page."
     },
     {
       "family": "parent_training_information_center",
       "failure_code": "reviewed_first_party_support_source_lacks_explicit_pti_designation",
-      "evidence": "Reviewed 2026-06-22 Stone Soup Group homepage, contact, history/mission, parent-navigation, FAQ, and family-resource-guide leaves preserve statewide support scope and offices, but no live fetched first-party page preserves explicit PTI / Parent Training and Information Center designation text; likely PTI-style leaves returned 404."
+      "evidence": "Reviewed 2026-06-22 Stone Soup Group sitemap plus exact history/mission, parent-navigation, FAQ, and family-resource-guide leaves. The live sitemap exposes real support/history/navigation pages, but no role-pure PTI leaf, while guessed PTI-style roots and generic About roots return 404. No fetched live first-party page preserves explicit PTI / Parent Training and Information Center designation text."
     }
   ]
 }
