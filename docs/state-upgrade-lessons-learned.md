@@ -225,6 +225,10 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Problem:** Kentucky’s reviewed replacement URLs for DBHDID DD routing and HCBS waiver eligibility returned HTTP `200`, but both static fetch and Playwright render only produced a generic loading shell with no headings, contacts, eligibility text, or action content.
 *   **Lesson:** An HTTP `200` official page is still unverified when the rendered body is just a JavaScript loading shell. Do not preserve `verified_state_grade` from title or path alone; either capture the real role-aligned rendered content through a reviewed browser/API lane or downgrade the family until substantive evidence exists on disk.
 
+### Dead Packet Roots Do Not Invalidate Live Same-Agency Leaves
+*   **Problem:** Kentucky’s statewide packet treated Medicaid, HCBS waiver, Part C, and KDE special-education families as dead or missing because the old packet roots were stale, broken, or pointed at the wrong authority surface, even though live reviewed first-party leaves still existed on the same CHFS or KDE domains.
+*   **Lesson:** When an inherited packet root is dead or misaligned, do a bounded sibling-leaf check on the same reviewed state agency domain before leaving the family downgraded. A stale root should be replaced by a live role-pure official leaf when one exists, but that repair does not relax county-grade or district-grade requirements.
+
 ### Statewide Support Truth Can Survive A Local Staging Rejection
 *   **Problem:** Ohio’s Disability Rights Ohio page had already been accepted as first-party parsed evidence, but the staging lane still routed it to manual review because the nonprofit promotion path expected a county ID. That local-table constraint made the statewide P&A family look falsely missing in the packet.
 *   **Lesson:** When a reviewed first-party artifact clearly proves a statewide support family, do not let a county-level staging requirement erase that truth from the California-grade packet. Use the accepted artifact directly for packet evidence, and keep the local-table issue separate from the statewide gate.

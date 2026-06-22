@@ -7,19 +7,15 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 120,
-  "completeness_pct": 16,
-  "strong_critical_families": 2,
-  "weak_critical_families": 5,
-  "missing_critical_families": 5,
+  "completeness_pct": 50,
+  "strong_critical_families": 6,
+  "weak_critical_families": 4,
+  "missing_critical_families": 2,
   "total_critical_families": 12,
   "primary_gap_reason": "stale_statewide_packet_evidence_failed_live_truth_refresh_and_county_grade_local_leafs_remain_unverified",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
-    "medicaid_state_health_coverage",
-    "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
-    "early_intervention_part_c",
-    "special_education_idea_part_b",
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
@@ -29,6 +25,10 @@
     "legal_aid"
   ],
   "verified_source_families_with_samples": [
+    "medicaid_state_health_coverage",
+    "medicaid_waiver_hcbs_disability_services",
+    "early_intervention_part_c",
+    "special_education_idea_part_b",
     "protection_and_advocacy",
     "parent_training_information_center",
     "able_program",
@@ -42,39 +42,11 @@
   ],
   "final_blockers": [
     {
-      "family": "medicaid_state_health_coverage",
-      "severity": "critical",
-      "failure_code": "live_medicaid_root_404_and_no_reviewed_replacement",
-      "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 404 for the exact Kentucky Medicaid packet URL. The packet also mixed unrelated ABLE and early-intervention rows into the Medicaid family.",
-      "next_action": "author_or_review_current_kentucky_medicaid_leaf"
-    },
-    {
-      "family": "medicaid_waiver_hcbs_disability_services",
-      "severity": "critical",
-      "failure_code": "reviewed_exact_target_only_returns_js_loading_shell",
-      "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no waiver eligibility, application, or action text.",
-      "next_action": "browser_assisted_or_api_backed_dbhdid_waiver_capture"
-    },
-    {
       "family": "developmental_disability_idd_authority",
       "severity": "critical",
       "failure_code": "reviewed_exact_target_only_returns_js_loading_shell",
       "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no headings, contact signals, or role-aligned DD routing content.",
       "next_action": "browser_assisted_or_api_backed_dbhdid_dd_capture"
-    },
-    {
-      "family": "early_intervention_part_c",
-      "severity": "critical",
-      "failure_code": "legacy_early_intervention_source_dead_and_no_reviewed_replacement",
-      "evidence": "Kentucky still has no reviewed role-aligned Part C / First Steps source on disk after the old Early Start packet family went stale.",
-      "next_action": "author_or_review_current_official_part_c_source"
-    },
-    {
-      "family": "special_education_idea_part_b",
-      "severity": "critical",
-      "failure_code": "state_special_education_root_not_live_reviewed",
-      "evidence": "Reviewed 2026-06-21 targeted live probe failed DNS resolution for education.kentucky.gov, so the packet special-education root is not a live reviewed authority source.",
-      "next_action": "author_or_review_live_kde_special_education_leaf"
     },
     {
       "family": "district_or_county_education_routing",

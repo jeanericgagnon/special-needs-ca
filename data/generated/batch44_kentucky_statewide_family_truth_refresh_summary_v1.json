@@ -1,20 +1,20 @@
 {
   "state": "kentucky",
   "classification": "BLOCKED",
-  "completeness_pct": 16,
-  "strong_critical_families": 2,
-  "weak_critical_families": 5,
-  "missing_critical_families": 5,
+  "completeness_pct": 50,
+  "strong_critical_families": 6,
+  "weak_critical_families": 4,
+  "missing_critical_families": 2,
   "updated_families": [
     {
       "family": "medicaid_state_health_coverage",
-      "family_status": "missing_reviewed_role_pure_medicaid_source",
-      "sample_count": 0
+      "family_status": "verified_state_grade",
+      "sample_count": 2
     },
     {
       "family": "medicaid_waiver_hcbs_disability_services",
-      "family_status": "blocked_js_shell_waiver_target_unverified",
-      "sample_count": 0
+      "family_status": "verified_state_grade",
+      "sample_count": 1
     },
     {
       "family": "developmental_disability_idd_authority",
@@ -23,13 +23,13 @@
     },
     {
       "family": "early_intervention_part_c",
-      "family_status": "missing_reviewed_role_aligned_part_c_source",
-      "sample_count": 0
+      "family_status": "verified_state_grade",
+      "sample_count": 1
     },
     {
       "family": "special_education_idea_part_b",
-      "family_status": "missing_reviewed_state_special_education_source",
-      "sample_count": 0
+      "family_status": "verified_state_grade",
+      "sample_count": 1
     },
     {
       "family": "district_or_county_education_routing",
@@ -76,18 +76,25 @@
     "kypaAcceptedRecordId": "kentucky|nonprofit_support|00007-kentucky-nonprofit-support-kypa-net",
     "kyspinAcceptedRecordId": "kentucky|nonprofit_support|00009-kentucky-nonprofit-support-kyspin-com",
     "medicaidProbe": {
-      "url": "https://chfs.ky.gov/dms",
-      "finalUrl": "https://chfs.ky.gov/dms",
-      "status": 404,
-      "contentType": "text/html",
-      "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 404 for the exact Kentucky Medicaid packet URL."
+      "url": "https://www.chfs.ky.gov/agencies/dms/Pages/default.aspx",
+      "finalUrl": "https://www.chfs.ky.gov/agencies/dms/Pages/default.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 200 for the official Kentucky Department for Medicaid Services leaf with Medicaid program navigation and member information links."
+    },
+    "earlyInterventionProbe": {
+      "url": "https://www.chfs.ky.gov/agencies/dph/dmch/ecdb/Pages/keis.aspx",
+      "finalUrl": "https://www.chfs.ky.gov/agencies/dph/dmch/ecdb/Pages/keis.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 200 for the official Kentucky Early Intervention System leaf with Part C / First Steps program language and point-of-entry routing."
     },
     "specialEducationProbe": {
-      "url": "https://education.kentucky.gov/",
-      "finalUrl": "",
-      "status": 0,
-      "contentType": "",
-      "evidence": "Reviewed 2026-06-21 targeted live probe failed DNS resolution for education.kentucky.gov, so the packet special-education root is not a live reviewed authority source."
+      "url": "https://education.ky.gov/specialed/Pages/default.aspx",
+      "finalUrl": "https://www.education.ky.gov/specialed/Pages/default.aspx",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 200 for the KDE Exceptional Children and Early Learning leaf with special-education and dispute-resolution navigation."
     },
     "ddAuthorityProbe": {
       "url": "https://dbhdid.ky.gov/ddid",
@@ -97,11 +104,11 @@
       "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no headings, contact signals, or role-aligned DD routing content."
     },
     "waiverProbe": {
-      "url": "https://dbhdid.ky.gov/hcbs/eligibility",
-      "finalUrl": "https://dbhdid.ky.gov/hcbs/eligibility",
+      "url": "https://www.chfs.ky.gov/agencies/dms/dca/Pages/HCBSWaiverPrograms.aspx",
+      "finalUrl": "https://www.chfs.ky.gov/agencies/dms/dca/Pages/HCBSWaiverPrograms.aspx",
       "status": 200,
-      "contentType": "text/html",
-      "evidence": "Reviewed 2026-06-21 Playwright render returned only \"Loading to Department for Behavioral Health page.\" with no waiver eligibility, application, or action text."
+      "contentType": "text/html; charset=utf-8",
+      "evidence": "Reviewed 2026-06-21 targeted live probe returned HTTP 200 for the official Kentucky HCBS Waiver Programs leaf with waiver descriptions and contact/state operating agency routing."
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T00:31:15.629Z",
+  "generatedAt": "2026-06-22T01:12:15.954Z",
   "stateCount": 50,
   "classifications": {
     "UNSTARTED": 36,
@@ -1158,11 +1158,11 @@
       "legacyManualReviewRate": 60.3,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 120,
-      "strongCriticalFamilies": 2,
-      "weakCriticalFamilies": 5,
-      "missingCriticalFamilies": 5,
+      "strongCriticalFamilies": 6,
+      "weakCriticalFamilies": 4,
+      "missingCriticalFamilies": 2,
       "totalCriticalFamilies": 12,
-      "completenessPct": 16,
+      "completenessPct": 50,
       "dbMetrics": {
         "state_id": "kentucky",
         "state_code": "KY",
@@ -1196,11 +1196,11 @@
       },
       "sourcePackV2": null,
       "familyStatuses": {
-        "medicaid_state_health_coverage": "missing_reviewed_role_pure_medicaid_source",
-        "medicaid_waiver_hcbs_disability_services": "blocked_js_shell_waiver_target_unverified",
+        "medicaid_state_health_coverage": "verified_state_grade",
+        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "blocked_js_shell_dd_authority_target_unverified",
-        "early_intervention_part_c": "missing_reviewed_role_aligned_part_c_source",
-        "special_education_idea_part_b": "missing_reviewed_state_special_education_source",
+        "early_intervention_part_c": "verified_state_grade",
+        "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_exact_leaf_repair_not_started",
         "vocational_rehabilitation_pre_ets": "missing_reviewed_vr_or_pre_ets_source",
         "protection_and_advocacy": "verified_state_grade",

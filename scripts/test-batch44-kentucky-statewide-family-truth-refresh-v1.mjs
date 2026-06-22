@@ -33,17 +33,17 @@ const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/kentucky-cali
 assert.equal(result.classification, 'BLOCKED', 'Kentucky refresh must final-block the state.');
 assert.equal(summary.classification, 'BLOCKED', 'Kentucky packet summary must be blocked.');
 assert.equal(summary.index_safe, false, 'Kentucky must remain not index-safe.');
-assert.equal(summary.completeness_pct, 16, 'Kentucky completeness must reflect only the two strong critical families.');
-assert.equal(summary.strong_critical_families, 2, 'Kentucky should retain two strong critical families after the truth refresh.');
-assert.equal(summary.weak_critical_families, 5, 'Kentucky should retain five weak critical families after the truth refresh.');
-assert.equal(summary.missing_critical_families, 5, 'Kentucky should retain five missing critical families after the truth refresh.');
+assert.equal(summary.completeness_pct, 50, 'Kentucky completeness must reflect the repaired official statewide families while remaining blocked.');
+assert.equal(summary.strong_critical_families, 6, 'Kentucky should carry six strong critical families after the truth refresh.');
+assert.equal(summary.weak_critical_families, 4, 'Kentucky should retain four weak critical families after the truth refresh.');
+assert.equal(summary.missing_critical_families, 2, 'Kentucky should retain two missing critical families after the truth refresh.');
 
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
-assert.equal(byFamily.get('medicaid_state_health_coverage').family_status, 'missing_reviewed_role_pure_medicaid_source');
-assert.equal(byFamily.get('medicaid_waiver_hcbs_disability_services').family_status, 'blocked_js_shell_waiver_target_unverified');
+assert.equal(byFamily.get('medicaid_state_health_coverage').family_status, 'verified_state_grade');
+assert.equal(byFamily.get('medicaid_waiver_hcbs_disability_services').family_status, 'verified_state_grade');
 assert.equal(byFamily.get('developmental_disability_idd_authority').family_status, 'blocked_js_shell_dd_authority_target_unverified');
-assert.equal(byFamily.get('early_intervention_part_c').family_status, 'missing_reviewed_role_aligned_part_c_source');
-assert.equal(byFamily.get('special_education_idea_part_b').family_status, 'missing_reviewed_state_special_education_source');
+assert.equal(byFamily.get('early_intervention_part_c').family_status, 'verified_state_grade');
+assert.equal(byFamily.get('special_education_idea_part_b').family_status, 'verified_state_grade');
 assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_exact_leaf_repair_not_started');
 assert.equal(byFamily.get('vocational_rehabilitation_pre_ets').family_status, 'missing_reviewed_vr_or_pre_ets_source');
 assert.equal(byFamily.get('protection_and_advocacy').family_status, 'verified_state_grade');
@@ -52,21 +52,18 @@ assert.equal(byFamily.get('legal_aid').family_status, 'missing_reviewed_statewid
 assert.equal(byFamily.get('able_program').family_status, 'verified_state_grade');
 assert.equal(byFamily.get('county_local_disability_resources').family_status, 'blocked_generic_or_third_party_local_directory_only');
 
-assert.equal(failureRows.find((row) => row.family === 'medicaid_state_health_coverage').failure_code, 'live_medicaid_root_404_and_no_reviewed_replacement');
-assert.equal(failureRows.find((row) => row.family === 'medicaid_waiver_hcbs_disability_services').failure_code, 'reviewed_exact_target_only_returns_js_loading_shell');
 assert.equal(failureRows.find((row) => row.family === 'developmental_disability_idd_authority').failure_code, 'reviewed_exact_target_only_returns_js_loading_shell');
-assert.equal(failureRows.find((row) => row.family === 'special_education_idea_part_b').failure_code, 'state_special_education_root_not_live_reviewed');
 assert.equal(failureRows.find((row) => row.family === 'district_or_county_education_routing').failure_code, 'generic_or_statewide_evidence_used_where_local_required');
 assert.ok(!failureRows.some((row) => row.family === 'protection_and_advocacy'), 'Kentucky P&A must drop out of the failure ledger.');
+assert.ok(!failureRows.some((row) => row.family === 'medicaid_state_health_coverage'), 'Kentucky Medicaid must drop out of the failure ledger.');
+assert.ok(!failureRows.some((row) => row.family === 'medicaid_waiver_hcbs_disability_services'), 'Kentucky waivers must drop out of the failure ledger.');
+assert.ok(!failureRows.some((row) => row.family === 'early_intervention_part_c'), 'Kentucky early intervention must drop out of the failure ledger.');
+assert.ok(!failureRows.some((row) => row.family === 'special_education_idea_part_b'), 'Kentucky statewide special education must drop out of the failure ledger.');
 
 assert.deepEqual(
   nextRows.map((row) => row.family),
   [
-    'medicaid_state_health_coverage',
-    'medicaid_waiver_hcbs_disability_services',
     'developmental_disability_idd_authority',
-    'early_intervention_part_c',
-    'special_education_idea_part_b',
     'district_or_county_education_routing',
     'vocational_rehabilitation_pre_ets',
     'parent_training_information_center',
@@ -80,19 +77,23 @@ const verifiedByFamily = new Map(verifiedRows.map((row) => [row.family, row]));
 assert.equal(verifiedByFamily.get('protection_and_advocacy').sample_count, 1, 'Kentucky P&A must carry one reviewed KYPA sample.');
 assert.equal(verifiedByFamily.get('protection_and_advocacy').samples[0].source_url, 'https://kypa.net/', 'Kentucky P&A must use the reviewed KYPA final URL.');
 assert.equal(verifiedByFamily.get('parent_training_information_center').sample_count, 1, 'Kentucky PTI blocker should preserve the reviewed KY-SPIN sample.');
-assert.equal(verifiedByFamily.get('medicaid_state_health_coverage').sample_count, 0, 'Kentucky Medicaid state coverage must not preserve dead or mixed-family samples.');
-assert.equal(verifiedByFamily.get('medicaid_waiver_hcbs_disability_services').sample_count, 0, 'Kentucky waiver family must clear the misleading JS-shell sample.');
+assert.equal(verifiedByFamily.get('medicaid_state_health_coverage').sample_count, 2, 'Kentucky Medicaid state coverage must carry the reviewed CHFS / DMS sample chain.');
+assert.equal(verifiedByFamily.get('medicaid_waiver_hcbs_disability_services').sample_count, 1, 'Kentucky waiver family must carry the reviewed HCBS waiver leaf.');
 assert.equal(verifiedByFamily.get('developmental_disability_idd_authority').sample_count, 0, 'Kentucky DD authority must clear the misleading JS-shell sample.');
-assert.equal(verifiedByFamily.get('special_education_idea_part_b').sample_count, 0, 'Kentucky statewide special-education family must not preserve the dead education.kentucky.gov sample.');
-assert.equal(probes.medicaid.status, 404, 'Kentucky Medicaid probe must preserve the live 404 truth.');
-assert.equal(probes.specialEducation.status, 0, 'Kentucky KDE probe must preserve the DNS failure truth.');
+assert.equal(verifiedByFamily.get('early_intervention_part_c').sample_count, 1, 'Kentucky early intervention must carry the reviewed KEIS leaf.');
+assert.equal(verifiedByFamily.get('special_education_idea_part_b').sample_count, 1, 'Kentucky statewide special education must carry the reviewed KDE leaf.');
+assert.equal(probes.medicaid.status, 200, 'Kentucky Medicaid probe must preserve the live CHFS / DMS leaf truth.');
+assert.equal(probes.specialEducation.status, 200, 'Kentucky KDE probe must preserve the live special-education leaf truth.');
+assert.equal(probes.earlyIntervention.status, 200, 'Kentucky Part C probe must preserve the live KEIS leaf truth.');
 
 assert.ok(report.includes('designated protection and advocacy system in Kentucky'), 'Kentucky report must explain the KYPA upgrade.');
-assert.ok(report.includes('the exact CHFS/DMS packet source now fails live review with HTTP 404'), 'Kentucky report must explain the Medicaid downgrade.');
-assert.ok(report.includes('reviewed Playwright render of both exact targets returns only a loading shell'), 'Kentucky report must explain the DBHDID JS-shell blocker.');
-assert.ok(report.includes('education.kentucky.gov, which failed live DNS review'), 'Kentucky report must explain the dead KDE packet root.');
+assert.ok(report.includes('reviewed live CHFS / DMS leaves now provide role-pure statewide Medicaid authority'), 'Kentucky report must explain the Medicaid upgrade.');
+assert.ok(report.includes('reviewed live HCBS Waiver Programs evidence now proves statewide waiver entry'), 'Kentucky report must explain the waiver upgrade.');
+assert.ok(report.includes('reviewed exact DBHDID replacement still returns only a loading shell'), 'Kentucky report must explain the remaining DBHDID JS-shell blocker.');
+assert.ok(report.includes('reviewed live KDE Exceptional Children and Early Learning leaf now provides a current state special-education authority source'), 'Kentucky report must explain the KDE upgrade.');
 
 assert.equal(batchSummary.classification, 'BLOCKED', 'Kentucky batch summary must report blocked.');
-assert.equal(batchSummary.evidence_checks.medicaidProbe.status, 404, 'Kentucky batch summary must preserve the Medicaid live probe.');
+assert.equal(batchSummary.evidence_checks.medicaidProbe.status, 200, 'Kentucky batch summary must preserve the Medicaid live probe.');
+assert.equal(batchSummary.evidence_checks.specialEducationProbe.status, 200, 'Kentucky batch summary must preserve the KDE live probe.');
 
 console.log('test-batch44-kentucky-statewide-family-truth-refresh-v1: ok');
