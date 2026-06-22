@@ -543,6 +543,18 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Regional Disability-Authority Pages Can Satisfy Local Coverage When They Explicitly Name Covered Parishes
 *   **Lesson:** If an official state disability page enumerates each local district or authority, lists the covered parishes/counties, and preserves local phone/address or waiver-office contacts, that one page can satisfy county-local routing for grouped regions. Louisiana cleared once the LDH Local Governing Entities page proved all 64 parishes through 10 regional human-services districts and authorities.
 
+### SAU Workbooks Need Contact Fields Or A Working Search Contract Before They Clear District Routing
+*   **Lesson:** An official school-unit workbook that only lists organization names and IDs does not clear district routing by itself. Maine’s DOE workbook plus NEO SAU Contact Search was a strong lead, but the workbook lacked local contact fields and bounded contact-search submissions returned error pages, so the family stayed blocked.
+
+### Real District Office Lists Still Fail County-Grade Routing Without Coverage Labels
+*   **Lesson:** A live official district-office page is not enough when it only lists office addresses and phones. Maine’s DHHS District Office Locations page proved the offices were real, but without county or town coverage labels it still could not truthfully support county-local routing.
+
+### County-Enumerated Official Office Indexes Can Clear Local Routing Without County-By-County Discovery
+*   **Lesson:** If one official state root enumerates every county-equivalent leaf explicitly, it can clear county-local routing in one pass. Maryland DHS `local-offices/` exposed 24 named county or Baltimore City leaves with county-specific contact pages, so the blocker moved from generic statewide evidence to verified county-grade routing without separate discovery per county.
+
+### Official Postback Directory Bridges Are Worth One Replay Before Marking Education As Generic
+*   **Lesson:** If an official education directory uses a search-bridge page with hidden fields and an auto-submit form, replay that exact postback once before leaving a generic statewide blocker in place. Massachusetts DESE Profiles exposed a real Public School District directory contract through `search_link.aspx`, which sharpened the blocker from “generic statewide” to “directory exists but county-to-district mapping is still missing.”
+
 ### Same-Domain API Paths Still Fail Closed If The Official Contract Requires Auth
 *   **Lesson:** If a public bundle names a same-domain county-search endpoint, probe that exact endpoint once before promising a hidden public contract. Florida’s MyACCESS bundle exposed `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch`, but both returned `401 Unauthorized`, so the lane stayed blocked as authenticated-only rather than undocumented.
 

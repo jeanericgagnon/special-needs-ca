@@ -7,21 +7,18 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 14,
-  "completeness_pct": 67,
-  "strong_critical_families": 8,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
   "weak_critical_families": 2,
-  "missing_critical_families": 2,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "official_dese_profiles_district_directory_exists_but_county_to_district_routing_is_unmapped_and_mass_gov_local_office_pages_return_403_to_low_token_fetches",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "protection_and_advocacy",
-    "legal_aid"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -50,25 +47,11 @@
       "next_action": "author_county_or_district_exact_targets"
     },
     {
-      "family": "protection_and_advocacy",
-      "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Massachusetts still lacks reviewed first-party or authoritative statewide protection-and-advocacy evidence on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
-    },
-    {
-      "family": "legal_aid",
-      "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Massachusetts still lacks reviewed first-party or authoritative statewide legal-aid evidence on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
-    },
-    {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "County/local disability resources still depend on generic statewide location pages instead of reviewed county-owned local routing evidence.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "mass_gov_area_office_pages_return_403_and_no_alternate_county_grade_local_contract_is_on_disk",
+      "evidence": "The likely official Massachusetts local-office lane now narrows to Mass.gov DDS area-office pages, but bounded low-token fetches to the public org and area-office pages returned HTTP 403 and no alternate county-grade local office contract is preserved on disk.",
+      "next_action": "browser_assisted_or_cached_mass_gov_area_office_capture"
     }
   ]
 }
