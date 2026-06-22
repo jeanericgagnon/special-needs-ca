@@ -1,0 +1,16 @@
+{
+  "batch": "batch85_tennessee_statewide_family_truth_refresh_v1",
+  "state": "tennessee",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources",
+    "vocational_rehabilitation_pre_ets",
+    "legal_aid"
+  ]
+}
