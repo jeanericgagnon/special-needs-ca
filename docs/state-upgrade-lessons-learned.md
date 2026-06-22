@@ -531,6 +531,18 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Public District Map PDFs Can Still Fail The Routing Contract Even When Text Extraction Works
 *   **Lesson:** If an official school-district map PDF extracts cleanly but only yields county names plus district numbers without a stable join or local-contact fields, keep district routing blocked. Kansas’ live USD county map PDF was real and parseable, but it still did not preserve a reviewable county-to-district routing contract.
 
+### Letter-Indexed District Directories Plus Official Workbooks Can Clear Local Education Routing
+*   **Lesson:** If an official education directory exposes exact district detail leaves from a deterministic letter index and backs them with an official downloadable workbook of district IDs/names, that chain can replace generic statewide fallback evidence without broad district crawling. Kentucky cleared district routing from KDE Open House once the letter index, district detail pages, and NCES/ID workbook all lined up.
+
+### County Select Locators Can Count As County-Grade Office Proof When The Query Targets Are Public
+*   **Lesson:** If an official county-office locator publishes one public county select list that enumerates every county and its query-string leaves resolve to office pages with address, phone, and fax, the locator can satisfy county-local routing without authoring every county separately. Kentucky’s DCBS Local Office Search cleared once the root page plus 120 county options and sample county leaves were reviewed together.
+
+### Official District Workbooks Can Clear Local Education Routing Without District Crawls
+*   **Lesson:** If the state education agency publishes an official district or school directory workbook with a district-contact sheet and parish/county-coded local rows, use that workbook to replace fake district homepages instead of crawling individual district sites. Louisiana cleared once the LDOE School Directory workbook exposed a District Superintendents sheet and parish-coded school directory data.
+
+### Regional Disability-Authority Pages Can Satisfy Local Coverage When They Explicitly Name Covered Parishes
+*   **Lesson:** If an official state disability page enumerates each local district or authority, lists the covered parishes/counties, and preserves local phone/address or waiver-office contacts, that one page can satisfy county-local routing for grouped regions. Louisiana cleared once the LDH Local Governing Entities page proved all 64 parishes through 10 regional human-services districts and authorities.
+
 ### Same-Domain API Paths Still Fail Closed If The Official Contract Requires Auth
 *   **Lesson:** If a public bundle names a same-domain county-search endpoint, probe that exact endpoint once before promising a hidden public contract. Florida’s MyACCESS bundle exposed `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch`, but both returned `401 Unauthorized`, so the lane stayed blocked as authenticated-only rather than undocumented.
 
