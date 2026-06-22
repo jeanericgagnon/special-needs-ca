@@ -1,0 +1,13 @@
+{
+  "state": "illinois",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "repaired_families": [
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing"
+  ],
+  "lesson_added": false
+}

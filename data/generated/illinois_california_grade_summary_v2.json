@@ -7,19 +7,17 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 102,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 91,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "county_grade_coverage_still_incomplete_after_exact_target_verification",
+  "primary_gap_reason": "bounded_roe_leaf_packet_exhausted_before_county_grade_coverage",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
   ],
-  "major_gap_families": [
-    "parent_training_information_center"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -48,13 +46,6 @@
       "failure_code": "bounded_roe_leaf_packet_exhausted_before_county_grade_coverage",
       "evidence": "Verified exact leaves remain limited to 3 reviewed ROE-owned pages; this does not truthfully prove district-grade routing statewide.",
       "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
-    },
-    {
-      "family": "parent_training_information_center",
-      "severity": "major",
-      "failure_code": "reviewed_pti_sample_is_regional_and_designated_statewide_target_now_points_to_successor",
-      "evidence": "Reviewed PTI evidence currently points to https://www.fmptic.org, which is documented as serving downstate Illinois, while https://frcd.org now states that Family Matters PTIC became the official PTIC for Illinois as of October 1, 2025. The packet still lacks reviewed statewide proof for the designated PTI family.",
-      "next_action": "hold_blocked_until_reviewed_statewide_illinois_pti_source_is_verified"
     }
   ]
 }

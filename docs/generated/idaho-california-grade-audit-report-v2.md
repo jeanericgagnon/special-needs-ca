@@ -1,10 +1,10 @@
-# Idaho California-Grade Batch 65 Report v1
+# Idaho California-Grade Audit Report v2
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 75
+- completeness_pct: 83
 - county_count: 44
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: official_sde_special_education_stack_has_no_district_directory_or_local_leaves
 
 ## Family status
 
@@ -13,20 +13,19 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- district_or_county_education_routing: blocked_no_district_owned_or_county_mapped_leaves (Reviewed live Idaho SDE special-education authority, staff, parent-resources, and Idaho Schools pages. The current official stack preserves statewide authority and staff support, but the Idaho Schools page exposes no district entries and all 44 current district rows still reuse statewide SDE URLs instead of district-owned or county-mapped routing leaves.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
-- parent_training_information_center: blocked_reviewed_first_party_support_without_explicit_pti_designation (reviewed first-party statewide family-support evidence exists, but the saved artifact does not preserve explicit PTI designation text)
+- parent_training_information_center: verified_state_grade (Reviewed Idaho Parents Unlimited About page now preserves explicit Idaho Parent Training and Information Center designation text, while the Connect With Us page preserves statewide contact routing and Boise office details.)
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: blocked_named_office_leaves_only_partial_county_coverage (Reviewed live Idaho DHW Contact Us and /offices pages plus sitemap office leaves. The exact official directory now preserves named office pages such as Boise, Caldwell, Burley, Blackfoot, Idaho Falls, Sandpoint-Ponderay, and Lewiston, but current county routing still splits into 18 named-office rows and 27 storefront placeholders with no reviewed county-to-office mapping for the placeholder counties.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 5 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
-- parent_training_information_center: reviewed_first_party_support_source_lacks_explicit_pti_designation :: Reviewed Idaho Parents Unlimited evidence proves statewide family-support and training scope, but the saved first-party artifact does not preserve explicit PTI / Parent Training and Information designation text.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 5 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
+- district_or_county_education_routing: official_sde_special_education_stack_has_no_district_directory_or_local_leaves :: Reviewed 2026-06-22 current official Idaho SDE pages: https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, and https://www.sde.idaho.gov/about-us/idaho-schools/. These leaves preserve statewide authority, staff contacts, and parent resources, but the Idaho Schools page exposes no district entries or county mapping and current DB rows still use statewide SDE URLs for all 44 counties.
+- county_local_disability_resources: official_dhw_offices_directory_repairs_named_offices_but_27_counties_still_use_storefront_placeholders :: Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us and https://healthandwelfare.idaho.gov/offices, plus DHW sitemap office leaves such as Boise, Caldwell, Pocatello, Idaho Falls, Rexburg, Mountain Home, Grangeville, Moscow, Lewiston, and Sandpoint-Ponderay. This exact office stack repairs named office proof for many rows, but current county routing still includes 27 storefront placeholders with no reviewed county-to-office coverage.
 
 ## Verified source samples
 
@@ -35,26 +34,23 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.idaho.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.idaho.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.sde.idaho.gov/sped/
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.sde.idaho.gov/
+- district_or_county_education_routing: blocked_no_district_owned_or_county_mapped_leaves; samples=3; first=https://www.sde.idaho.gov/about-us/idaho-schools/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://healthandwelfare.idaho.gov
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://disabilityrightsidaho.org/
-- parent_training_information_center: blocked_reviewed_first_party_support_without_explicit_pti_designation; samples=1; first=https://ipulidaho.org/
+- parent_training_information_center: verified_state_grade; samples=2; first=https://ipulidaho.org/about_ipul/
 - legal_aid: verified_state_grade; samples=1; first=https://disabilityrightsidaho.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://dhhs.idaho.gov/locations
+- county_local_disability_resources: blocked_named_office_leaves_only_partial_county_coverage; samples=3; first=https://healthandwelfare.idaho.gov/offices
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] parent_training_information_center: hold_blocked_until_explicit_pti_designation_is_preserved_from_reviewed_first_party_source
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [critical] district_or_county_education_routing: hold_blocked_until_reviewed_district_owned_or_state_directory_county_mapping_leaves_exist
+- [critical] county_local_disability_resources: author_exact_office_leaf_mappings_or_hold_counties_blocked
 
 ## Completion decision
 
-- Idaho no longer belongs in UNSTARTED. Reviewed first-party Disability Rights Idaho and Idaho Parents Unlimited evidence already on disk now truthfully repairs the statewide support families that were previously left as missing or inventory-only.
-- Disability Rights Idaho is explicit enough for Protection and Advocacy because the reviewed first-party page preserves that DRI is the Protection and Advocacy agency for Idaho and serves the whole state.
-- Disability Rights Idaho is also explicit enough for statewide legal aid because the same reviewed first-party page preserves free legal services plus attorney and representation language for Idahoans with disabilities.
-- Idaho Parents Unlimited is preserved as real reviewed statewide family-support, training, and special-education help evidence, but the saved first-party artifact still does not preserve explicit PTI / Parent Training and Information designation text, so PTI remains blocked rather than being upgraded by assumption.
-- Idaho still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence instead of county- or district-owned leaves, county/local disability resources still depend on a generic statewide locator root rather than reviewed county leaves, and PTI remains below the explicit designation bar.
-- Idaho is therefore terminal BLOCKED, not COMPLETE.
+- Idaho Parents Unlimited now clears the PTI family because the reviewed first-party About page explicitly says the organization houses the Idaho Parent Training and Information Center, and the Connect With Us page preserves current statewide contact routing.
+- Idaho still cannot reach California-grade or become index-safe because district-or-county education routing remains statewide-only: the official SDE special-education, staff, parent-resources, and Idaho Schools pages preserve statewide authority and contacts, but not district-owned or county-mapped routing leaves.
+- County/local disability resources are sharper but still blocked: Idaho DHW now exposes an exact /offices directory and sitemap-backed office leaves for named offices, but the state packet still contains 27 storefront placeholders without reviewed county-to-office coverage.
+- Idaho therefore remains BLOCKED and not index-safe until district-routing and county-local families move from statewide or placeholder evidence to reviewed local routing proof.

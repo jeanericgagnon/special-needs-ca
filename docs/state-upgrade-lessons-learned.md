@@ -446,3 +446,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Embedded Official County Maps Can Close A Regional Routing Family Without Reopening District Discovery
 *   **Lesson:** When a live official education page looks sparse, inspect its embedded page JSON before reopening district discovery. Georgia’s official GaDOE RESA page carried a complete 159-county FIPS-to-RESA contract in `__NEXT_DATA__` / `AcfGeoMap`, which was enough to verify county-grade routing from one official source plus named RESA targets.
+
+### Official Site Search And Current WordPress Leaves Can Replace Dead Legacy Paths Without Broad Rediscovery
+*   **Lesson:** When an old state-host path 403s or dies, try the current official site search and live navigation before reopening broad discovery. Hawaii’s old public-schools `Pages/default.aspx` paths were unusable, but the current official search exposed live `what-is-special-education`, `child-find`, and `complex-area-directory` leaves that cleared multiple blockers in one bounded pass.
+
+### Idaho-Type Pattern: Official Sitemaps Can Expose Exact Office Leaves Even When The Visible Directory Only Looks Like One Generic Locator
+*   **Lesson:** When a state packet is blocked on a generic statewide office locator, check the official sitemap before reopening discovery. Idaho’s visible DHW `/offices` directory looked like one statewide page, but the sitemap exposed exact office leaves such as Boise, Caldwell, Pocatello, and Idaho Falls. That was enough to sharpen county-local blockers and separate real office coverage from placeholder county rows without broad crawling.
+
+### PTI Successor Pattern: Use The Outgoing Center To Prove The Role Change, Then Verify The Incoming Center On Its Own First-Party Site
+*   **Lesson:** When a statewide PTI blocker turns into a successor question, do not rely on the old sample alone. For Illinois, FRCD explicitly documented that it stopped holding the PTIC role on October 1, 2025, and Family Matters’ own site separately proved it became the only federally funded statewide Illinois PTI. That pair of first-party pages closed the role-transition gap without broader nonprofit rediscovery.
