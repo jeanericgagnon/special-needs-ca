@@ -1,0 +1,12 @@
+{
+  "state": "illinois",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "completeness_pct": 100,
+  "repaired_family": "district_or_county_education_routing",
+  "iarss_region_rows": 35,
+  "iarss_unique_county_ids": 101,
+  "cook_county_isc_rows": 3,
+  "replacement_directory_leaf": "https://iarss.org/single-location/roe-13/?directory_type=general",
+  "lesson_added": false
+}

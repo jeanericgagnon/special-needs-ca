@@ -470,3 +470,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Named Office Labels Still Count As Placeholders When The URL Is Generic
 *   **Lesson:** Do not let a realistic office name fool the packet if the stored URL is still generic. Idaho looked partially repaired because rows were labeled `Boise Office`, `Blackfoot Office`, and `Idaho Falls Office`, but the live URLs still pointed at one generic Medicaid page or a dead legacy locator, so those rows were still placeholders until the exact office leaves were attached.
+
+### Official State-Board Pages Can Adopt Linked County Maps When The County IDs Are Embedded Publicly
+*   **Lesson:** If an official state board page points families to a partner directory or interactive map, that linked source can satisfy county-grade routing when the public page embeds explicit county IDs plus routing targets. Illinois cleared once ISBE /roe linked the IARSS map, the IARSS source exposed 101 unique county IDs, Cook stayed covered by verified ISC rows, and the one weak ROE 13 outbound link was replaced with the reviewed IARSS directory listing instead of forcing 102 separate district leaves.

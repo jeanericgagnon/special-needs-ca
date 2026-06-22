@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T20:18:01.379Z",
+  "generatedAt": "2026-06-22T20:26:46.076Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 9,
-    "BLOCKED": 41
+    "COMPLETE": 10,
+    "BLOCKED": 40
   },
-  "indexSafeCount": 9,
+  "indexSafeCount": 10,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -858,8 +858,8 @@
       "stateId": "illinois",
       "stateCode": "IL",
       "stateName": "Illinois",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Pilot)",
       "legacyGateScore": 0,
@@ -867,11 +867,11 @@
       "legacyManualReviewRate": 0.38,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 102,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "illinois",
         "state_code": "IL",
@@ -920,7 +920,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -930,9 +930,9 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "bounded_roe_leaf_packet_exhausted_before_county_grade_coverage",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetBatch": "batch_134_illinois_iarss_county_map_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "indiana",
