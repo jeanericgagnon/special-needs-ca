@@ -395,3 +395,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### On California DDS, The Replacement FRC Paths Matter More Than The Dead Legacy Root
 *   **Lesson:** If `https://www.dds.ca.gov/rc/frcn` is dead, do not stop there. Check the live DDS replacements under `/services/early-start/family-resource-center/` and `/services/early-start/family-resource-center/regional-center-early-start-intake-and-family-resource-centers/`; together they can preserve statewide equivalent parent-center mission text plus county-by-county FRC routing.
+
+### Connecticut DDS Live Replacements Can Collapse Into PDF Plus Archive Lanes
+*   **Lesson:** When stale local-office packet URLs 404 but the live state agency hub survives, check the replacement hub for downloadable regional contact lists and archive town finders before concluding the family has no official replacement. Treat the family as a bounded PDF/archive extraction blocker, not a generic missing-source blocker.
+
+### Public Directory Shells Do Not Equal Anonymous Query Results
+*   **Lesson:** A public finder shell can still hide the real records behind an authenticated query endpoint. If the official query URL bounces to a login page, keep the family blocked and record the exact authenticated endpoint instead of counting the shell as district-grade evidence.
+
+### School-List Pages Can Leak County-Useful District Seeds Through Embedded Datasets
+*   **Lesson:** If a public school-list page looks generic, inspect the page source once before discarding it. Delaware’s DOE list page embedded a machine-readable district dataset plus report-card link template, which was enough to pick one real district per county and jump straight to first-party special-education leaves.

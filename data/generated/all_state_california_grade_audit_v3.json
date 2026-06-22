@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T16:06:36.063Z",
+  "generatedAt": "2026-06-22T17:28:54.853Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 4,
-    "BLOCKED": 46
+    "COMPLETE": 6,
+    "BLOCKED": 44
   },
-  "indexSafeCount": 4,
+  "indexSafeCount": 6,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -97,11 +97,11 @@
       "legacyManualReviewRate": 56.07,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 20,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "alaska",
         "state_code": "AK",
@@ -143,7 +143,7 @@
         "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
+        "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
@@ -151,7 +151,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "official_local_office_directory_challenge_and_live_first_party_pti_designation_gap",
+      "packetPrimaryGapReason": "official_local_directory_challenge_blocks_reviewed_county_grade_evidence",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_browser_challenge_and_generic_local_fallbacks",
+      "packetPrimaryGapReason": "full_domain_challenge_plus_missing_authored_local_leaf_packets",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -307,11 +307,11 @@
       "legacyManualReviewRate": 70.65,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 58,
-      "strongCriticalFamilies": 10,
+      "strongCriticalFamilies": 11,
       "weakCriticalFamilies": 1,
-      "missingCriticalFamilies": 1,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "california",
         "state_code": "CA",
@@ -353,7 +353,7 @@
         "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "missing_verified_statewide_source",
+        "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
@@ -361,15 +361,15 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "district_grade_leaf_packet_exhausted_and_reviewed_pti_source_still_not_statewide",
+      "packetPrimaryGapReason": "district_grade_leaf_packet_exhausted_after_statewide_equivalent_parent_center_repair",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
       "stateId": "colorado",
       "stateCode": "CO",
       "stateName": "Colorado",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -377,11 +377,11 @@
       "legacyManualReviewRate": 19.51,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 64,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "colorado",
         "state_code": "CO",
@@ -420,18 +420,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_statewide_cde_fallback_rows_only",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_doi_mirror_county_rows_only"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "district_grade_education_and_county_local_office_proof_still_unverified",
+      "packetPrimaryGapReason": "none",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -447,11 +447,11 @@
       "legacyManualReviewRate": 51.06,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 8,
-      "strongCriticalFamilies": 9,
-      "weakCriticalFamilies": 3,
+      "strongCriticalFamilies": 10,
+      "weakCriticalFamilies": 2,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 75,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "connecticut",
         "state_code": "CT",
@@ -490,26 +490,26 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_statewide_ct_sde_fallback_rows_only",
+        "district_or_county_education_routing": "blocked_public_edsight_shell_plus_sas_logon_query",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
+        "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_doi_and_generic_locations_rows_only"
+        "county_local_disability_resources": "blocked_live_dds_replacement_needs_pdf_or_archive_extraction"
       },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetPrimaryGapReason": "authenticated_public_edsight_directory_and_dds_pdf_archive_local_routing_are_the_last_connecticut_local_proof_blockers",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
       "stateId": "delaware",
       "stateCode": "DE",
       "stateName": "Delaware",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -517,11 +517,11 @@
       "legacyManualReviewRate": 68.18,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 3,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "delaware",
         "state_code": "DE",
@@ -560,18 +560,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_statewide_de_doe_root_rows_only",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_doi_mirror_county_rows_only"
+        "county_local_disability_resources": "verified_county_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_14_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "legacy_or_inventory_only_evidence",
+      "packetPrimaryGapReason": "none",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -637,11 +637,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_browser_lane_cloudfront_403"
+        "county_local_disability_resources": "blocked_official_csv_contract_partial"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "official_myaccess_locator_cloudfront_403_blocks_browser_lane",
+      "packetPrimaryGapReason": "official_family_resource_center_csv_only_covers_34_counties",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
