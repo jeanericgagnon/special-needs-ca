@@ -443,3 +443,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Exhausted Replacement Roots Should Be Written Into The Packet Before Another Challenged-Host Retry
 *   **Lesson:** When a challenged state host blocks the obvious replacement leaves too, record the exact exhausted URLs in the packet and stop guessing sibling roots. Arizona only became decision-complete after the packet named the challenged AZED `school-district-web-sites` / `ess` leaves and the DES office-locator guesses, plus the AHCCCS `Page/Document not found` companion URLs.
+
+### Embedded Official County Maps Can Close A Regional Routing Family Without Reopening District Discovery
+*   **Lesson:** When a live official education page looks sparse, inspect its embedded page JSON before reopening district discovery. Georgia’s official GaDOE RESA page carried a complete 159-county FIPS-to-RESA contract in `__NEXT_DATA__` / `AcfGeoMap`, which was enough to verify county-grade routing from one official source plus named RESA targets.

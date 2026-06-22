@@ -1,0 +1,18 @@
+{
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "repaired_family": "district_or_county_education_routing",
+  "countyMapMetrics": {
+    "regionCount": 16,
+    "totalCountyIds": 163,
+    "uniqueCountyIds": 159,
+    "duplicateIds": 4,
+    "duplicateIdsSameRegionOnly": true
+  },
+  "remaining_blockers": [
+    "developmental_disability_idd_authority"
+  ],
+  "lesson_added": false
+}

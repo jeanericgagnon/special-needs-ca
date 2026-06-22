@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T19:07:29.909Z",
+  "generatedAt": "2026-06-22T19:11:37.170Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 8,
@@ -657,11 +657,11 @@
       "legacyManualReviewRate": 38.69,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 159,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "georgia",
         "state_code": "GA",
@@ -700,7 +700,7 @@
         "developmental_disability_idd_authority": "blocked_unpublished_official_region_links",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
