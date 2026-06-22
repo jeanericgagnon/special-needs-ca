@@ -1,0 +1,16 @@
+{
+  "state": "indiana",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "refined_family": "district_or_county_education_routing",
+  "blocker_code": "official_special_education_contact_lane_removed_and_no_official_search_replacement",
+  "google_sheet_modes_checked": [
+    "edit",
+    "export_xlsx",
+    "export_csv",
+    "preview"
+  ],
+  "official_search_status": 404,
+  "lesson_added": false
+}

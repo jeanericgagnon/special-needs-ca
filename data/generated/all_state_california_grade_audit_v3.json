@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T20:18:01.379Z",
+  "generatedAt": "2026-06-22T20:38:02.413Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 9,
-    "BLOCKED": 41
+    "COMPLETE": 10,
+    "BLOCKED": 40
   },
-  "indexSafeCount": 9,
+  "indexSafeCount": 10,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -858,8 +858,8 @@
       "stateId": "illinois",
       "stateCode": "IL",
       "stateName": "Illinois",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Pilot)",
       "legacyGateScore": 0,
@@ -867,11 +867,11 @@
       "legacyManualReviewRate": 0.38,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 102,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "illinois",
         "state_code": "IL",
@@ -920,7 +920,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -930,9 +930,9 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "bounded_roe_leaf_packet_exhausted_before_county_grade_coverage",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetBatch": "batch_134_illinois_iarss_county_map_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "indiana",
@@ -990,7 +990,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_contact_list_gone_generic_directory_insufficient",
+        "district_or_county_education_routing": "blocked_official_contact_lane_removed",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1000,8 +1000,8 @@
         "county_local_disability_resources": "verified_county_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_8_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_special_education_contact_list_link_410_and_school_directory_not_role_specific",
+      "packetBatch": "batch_135_indiana_dead_contact_lane_refresh_v1",
+      "packetPrimaryGapReason": "official_special_education_contact_lane_removed_and_no_official_search_replacement",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -1060,7 +1060,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_structural_statewide_maps_only",
+        "district_or_county_education_routing": "blocked_statewide_structure_dead_end",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1070,8 +1070,8 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_48_iowa_statewide_family_truth_refresh_v1",
-      "packetPrimaryGapReason": "official_iowa_district_maps_and_aea_structures_expose_no_district_owned_special_education_leaves",
+      "packetBatch": "batch_136_iowa_statewide_structure_dead_end_refresh_v1",
+      "packetPrimaryGapReason": "official_iowa_education_pages_loop_only_to_statewide_structure_and_geodata",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

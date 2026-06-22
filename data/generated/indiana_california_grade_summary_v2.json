@@ -2,7 +2,7 @@
   "state": "indiana",
   "state_code": "IN",
   "state_name": "Indiana",
-  "batch": "batch_8_procedure_hardening_states_v1",
+  "batch": "batch_135_indiana_dead_contact_lane_refresh_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_special_education_contact_list_link_410_and_school_directory_not_role_specific",
+  "primary_gap_reason": "official_special_education_contact_lane_removed_and_no_official_search_replacement",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,9 +43,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_special_education_contact_list_link_410_and_school_directory_not_role_specific",
-      "evidence": "Reviewed 2026-06-22 official Indiana DOE Special Education and Data Center pages. The page still links a Special Education Director and Local Administrator Contact List at https://docs.google.com/spreadsheets/d/1hRtp2zsG3WtdCf2ma69awNDkxTc65jLn/edit#gid=1314039117, but that target now returns HTTP 410 Gone. The live 2025-2026 Indiana School Directory XLSX linked from the data-center page is a generic school/corporation directory and does not itself preserve special-education routing or local special-education contacts.",
-      "next_action": "hold_blocked_until_reviewed_district_grade_special_education_contact_source_replaces_dead_google_sheet"
+      "failure_code": "official_special_education_contact_lane_removed_and_no_official_search_replacement",
+      "evidence": "Reviewed 2026-06-22 official Indiana DOE Special Education and Data Center pages. The page preserves the Special Education Director and Local Administrator Contact List only inside commented-out HTML, the Google Sheets edit/export/csv/preview paths for spreadsheet 1hRtp2zsG3WtdCf2ma69awNDkxTc65jLn all return HTTP 410 Gone, the bounded Indiana DOE site-search lane for the contact-list phrase returns 404, and the live 2025-2026 Indiana School Directory XLSX remains generic school/corporation metadata instead of district-grade special-education routing evidence.",
+      "next_action": "hold_blocked_until_indiana_doe_publishes_a_live_special_education_contact_or_district_grade_routing_source"
     }
   ]
 }
