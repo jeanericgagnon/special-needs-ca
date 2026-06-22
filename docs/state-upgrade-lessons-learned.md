@@ -393,6 +393,15 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Parent Center Hub State Leafs Can Close PTI Gaps When First-Party Pages Omit The Label
 *   **Lesson:** When a state parent-center organization’s own site preserves real statewide support scope but not the PTI label, check the exact Parent Center Hub state leaf at `/findurcenter/<state>/`. Those reviewed state leaves can preserve the authoritative `State PTI` or `CPRC` designation plus the named organization and contact block without reopening broad directory discovery.
 
+### Degraded PTI Homepages Do Not Override A Clean Parent Center Hub State Leaf
+*   **Lesson:** If the designated PTI’s own root has degraded into an index page, parking page, or otherwise content-thin shell, keep the first-party failure noted but allow the exact Parent Center Hub state leaf to satisfy the statewide PTI family when it explicitly names the state PTI organization and preserves the full contact block.
+
+### ArcGIS Experience Builder Locators Can Hide Queryable Office Rows Behind Public Item Config
+*   **Lesson:** When an official county-office locator renders only a generic Experience Builder shell, check the public ArcGIS item JSON and linked web-map data before leaving it blocked. Nebraska’s locator exposed a public feature layer with office county/address/phone fields even though the HTML shell was content-thin.
+
+### Official County District Lists Can Clear Education Routing Without Crawling Every School Page
+*   **Lesson:** If a state education site publishes one reviewed page that maps every county district to its district-owned website, use that page as the county-to-district backbone and then run a bounded reachability check on the listed district domains. Nevada’s School and District Information page plus 17 live district homepages cleared the education-routing blocker without broader district discovery.
+
 ### Full-Domain 403 Plus Fallback-Only Rows Means Packet Gap, Not Just Browser Gap
 *   **Lesson:** When an official state domain 403s on the root, robots.txt, sitemap, and obvious leaf guesses, check whether the live rows are still 100% statewide or DOI-style placeholders. If so, record the blocker as missing authored local leaf coverage too, so later repairs do not stall waiting on a browser lane that still has no exact local targets to verify.
 

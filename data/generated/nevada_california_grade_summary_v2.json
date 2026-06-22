@@ -7,15 +7,14 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 17,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 92,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "legacy_local_locator_root_redirects_to_generic_dhs_homepage",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [],
@@ -42,18 +41,11 @@
   ],
   "final_blockers": [
     {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Nevada still routes district or county education through generic statewide Department of Education pages rather than county- or district-owned leaves.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Nevada county/local disability resources still depend on statewide locator or structural sources instead of reviewed county-owned local routing evidence.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "legacy_local_locator_root_redirects_to_generic_dhs_homepage",
+      "evidence": "The legacy Nevada county-local source root `dhhs.nv.gov/locations` now redirects to the generic Nevada Department of Human Services homepage, and reviewed DHS contact/location guesses did not preserve a county office directory or county-owned local routing leaves.",
+      "next_action": "author_exact_county_local_resource_targets"
     }
   ]
 }

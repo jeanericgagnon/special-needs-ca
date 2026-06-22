@@ -7,10 +7,10 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 56,
-  "completeness_pct": 58,
-  "strong_critical_families": 7,
-  "weak_critical_families": 4,
-  "missing_critical_families": 1,
+  "completeness_pct": 75,
+  "strong_critical_families": 9,
+  "weak_critical_families": 3,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
   "recommended_batch": "batch_3_procedure_hardening",
@@ -19,9 +19,7 @@
     "county_local_disability_resources"
   ],
   "major_gap_families": [
-    "protection_and_advocacy",
-    "parent_training_information_center",
-    "legal_aid"
+    "protection_and_advocacy"
   ],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -55,22 +53,8 @@
       "family": "protection_and_advocacy",
       "severity": "major",
       "failure_code": "reviewed_first_party_support_source_lacks_explicit_statewide_panda_designation",
-      "evidence": "Reviewed Disability Rights Montana evidence proves real statewide disability-rights support, but the saved first-party artifact does not preserve explicit statewide P&A system designation text.",
+      "evidence": "Reviewed Disability Rights Montana home, About, and Protection & Advocacy History pages preserve real statewide disability-rights support and P&A history context, but none of the saved first-party pages explicitly state that DRM is Montana's designated statewide Protection and Advocacy system.",
       "next_action": "hold_blocked_until_explicit_statewide_panda_designation_is_preserved_from_reviewed_first_party_source"
-    },
-    {
-      "family": "parent_training_information_center",
-      "severity": "major",
-      "failure_code": "legacy_or_inventory_only_evidence",
-      "evidence": "Montana still has no reviewed first-party PLUK or other statewide PTI artifact on disk; the current packet only preserves inventory-only hints.",
-      "next_action": "author_verified_state_manifest"
-    },
-    {
-      "family": "legal_aid",
-      "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Montana still lacks reviewed first-party or authoritative statewide legal-aid evidence on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
     },
     {
       "family": "county_local_disability_resources",

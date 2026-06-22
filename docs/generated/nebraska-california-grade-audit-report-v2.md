@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 93
-- primary_gap_reason: district_grade_education_and_interactive_county_locator_still_unverified
+- primary_gap_reason: district_grade_education_and_partial_county_office_layer_coverage
 
 ## Family status
 
@@ -20,12 +20,12 @@
 - legal_aid: verified_state_grade (Reviewed first-party Legal Aid of Nebraska evidence now provides a real statewide civil legal-aid route.)
 - able_program: verified_state_grade (Statewide evidence is present at the required authority level.)
 - ssi_ssa_federal_reference: verified_state_grade (Statewide evidence is present at the required authority level.)
-- county_local_disability_resources: blocked_official_interactive_locator_not_reviewed_county_grade (The reviewed Nebraska Public Assistance Offices chain is live, but the official GIS locator still renders only an interactive shell in the reviewed HTML and does not preserve county office rows.)
+- county_local_disability_resources: blocked_official_county_office_layer_partial_county_coverage (The reviewed Nebraska Public Assistance Offices chain now exposes a public ArcGIS feature layer with office rows, but it still does not preserve explicit county-to-office coverage for all 93 counties.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: Reviewed NDE special-education, complaint, mediation, and due-process leaves are live and role-pure, but no district-owned or county-grade education-routing leaf is currently preserved on disk.
-- county_local_disability_resources: official_interactive_locator_not_reviewed_county_grade :: Reviewed 2026-06-21 live probe returned title "Public Assistance Offices" and linked the official Nebraska Public Office Location Lookup, but the fetched page did not itself preserve county office rows. Reviewed 2026-06-21 live probe to the official Nebraska Public Office Location Lookup only rendered the generic title "Experience" and did not preserve county-grade office data in the reviewed HTML artifact.
+- county_local_disability_resources: official_county_office_layer_lacks_full_county_coverage :: Reviewed 2026-06-23 probes confirmed that the official Nebraska Public Assistance Offices chain exposes a public ArcGIS feature layer with 42 office rows and county/phone/address fields, but the layer only names 37 office counties and does not preserve explicit county-to-office coverage for the remaining counties.
 
 ## Verified source samples
 
@@ -41,12 +41,12 @@
 - legal_aid: verified_state_grade; samples=1; first=https://legalaidofnebraska.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_official_interactive_locator_not_reviewed_county_grade; samples=2; first=https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx
+- county_local_disability_resources: blocked_official_county_office_layer_partial_county_coverage; samples=3; first=https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [critical] county_local_disability_resources: extract_or_review_county_rows_from_official_locator
+- [critical] county_local_disability_resources: derive_county_to_host_office_coverage_from_official_layer_or_service_area_source
 
 ## Completion decision
 
@@ -56,6 +56,5 @@
 - Early intervention upgrade: `edn.ne.gov` is live and now replaces the dead legacy early-intervention packet sample with the reviewed Nebraska Early Development Network route.
 - Nebraska remains BLOCKED and not index-safe because two county-grade critical families still fail closed:
   - district_or_county_education_routing: Reviewed NDE special-education, complaint, mediation, and due-process leaves are live and role-pure, but no district-owned or county-grade education-routing leaf is currently preserved on disk.
-  - county_local_disability_resources: Reviewed 2026-06-21 live probe returned title "Public Assistance Offices" and linked the official Nebraska Public Office Location Lookup, but the fetched page did not itself preserve county office rows. Reviewed 2026-06-21 live probe to the official Nebraska Public Office Location Lookup only rendered the generic title "Experience" and did not preserve county-grade office data in the reviewed HTML artifact.
+  - county_local_disability_resources: Reviewed 2026-06-23 probes now confirm that the official Nebraska Public Assistance Offices chain exposes a public ArcGIS feature layer with 42 office rows and county/phone/address fields, but the layer only names 37 office counties and does not preserve explicit county-to-office coverage for the remaining counties.
 - The old dead `dhhs.nebraska.gov` packet roots have been replaced where live official successors were reviewable, including `dhhs.ne.gov`, `vr.nebraska.gov`, and `edn.ne.gov`.
-
