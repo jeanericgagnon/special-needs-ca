@@ -7,12 +7,12 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 82,
-  "completeness_pct": 58,
-  "strong_critical_families": 7,
+  "completeness_pct": 75,
+  "strong_critical_families": 9,
   "weak_critical_families": 3,
-  "missing_critical_families": 2,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "mdek12_local_directory_lanes_return_403_and_mdhs_county_office_paths_are_missing_or_unpublished",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -51,32 +51,25 @@
       "next_action": "author_county_or_district_exact_targets"
     },
     {
-      "family": "vocational_rehabilitation_pre_ets",
-      "severity": "major",
-      "failure_code": "legacy_or_inventory_only_evidence",
-      "evidence": "The reviewed statewide MS CAP page helps VR and VRB clients, but it does not itself prove direct statewide VR / Pre-ETS routing at the required role purity.",
-      "next_action": "author_verified_state_manifest"
-    },
-    {
       "family": "protection_and_advocacy",
       "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Mississippi still lacks reviewed first-party or authoritative statewide protection-and-advocacy evidence on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
+      "failure_code": "likely_p_and_a_domain_drms_ms_fails_tls_handshake_in_bounded_fetch",
+      "evidence": "The likely first-party Mississippi Protection and Advocacy domain drms.ms failed TLS handshake in bounded fetch mode, so explicit statewide P&A evidence is still unproven on disk.",
+      "next_action": "browser_or_alternate_client_probe_of_drms_ms"
     },
     {
       "family": "legal_aid",
       "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Mississippi still lacks reviewed first-party or authoritative statewide legal-aid evidence on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
+      "failure_code": null,
+      "evidence": "Reviewed Mississippi Center for Justice now preserves a live first-party statewide legal-justice route on disk.",
+      "next_action": "none_verified"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "County/local disability resources still depend on a generic statewide locations page instead of reviewed county-owned local routing evidence.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "mdhs_contact_root_is_live_but_county_office_location_paths_are_missing_or_unpublished",
+      "evidence": "The Mississippi DHS contact root is live, but the likely county-office location paths tested so far return 404 and do not expose a county-grade local office contract in bounded low-token mode.",
+      "next_action": "find_live_mdhs_county_office_directory_or_browser_capture"
     }
   ]
 }

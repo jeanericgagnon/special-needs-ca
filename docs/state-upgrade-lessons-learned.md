@@ -555,6 +555,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Official Postback Directory Bridges Are Worth One Replay Before Marking Education As Generic
 *   **Lesson:** If an official education directory uses a search-bridge page with hidden fields and an auto-submit form, replay that exact postback once before leaving a generic statewide blocker in place. Massachusetts DESE Profiles exposed a real Public School District directory contract through `search_link.aspx`, which sharpened the blocker from “generic statewide” to “directory exists but county-to-district mapping is still missing.”
 
+### Slow Official Composite Directories Still Count As Unresolved Until A Bounded Capture Succeeds
+*   **Lesson:** If an official office locator root links to a deeper composite directory, do not treat the deeper listing as usable until it returns within the bounded low-token fetch window. Michigan MDHHS exposed a live county-office root plus a composite directory URL, but the composite listing timed out and the DB still had zero reviewed county office rows, so the family stayed blocked.
+
 ### Same-Domain API Paths Still Fail Closed If The Official Contract Requires Auth
 *   **Lesson:** If a public bundle names a same-domain county-search endpoint, probe that exact endpoint once before promising a hidden public contract. Florida’s MyACCESS bundle exposed `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch`, but both returned `401 Unauthorized`, so the lane stayed blocked as authenticated-only rather than undocumented.
 

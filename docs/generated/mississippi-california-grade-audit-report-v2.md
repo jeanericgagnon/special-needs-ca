@@ -1,10 +1,10 @@
-# Mississippi California-Grade Batch 73 Report v1
+# Mississippi California-Grade Audit Report v2
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 58
+- completeness_pct: 75
 - county_count: 82
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: mdek12_local_directory_lanes_return_403_and_mdhs_county_office_paths_are_missing_or_unpublished
 
 ## Family status
 
@@ -13,22 +13,20 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
-- vocational_rehabilitation_pre_ets: inventory_only (only legacy inventory hints or weak role matches exist)
-- protection_and_advocacy: missing (no credible current evidence)
+- district_or_county_education_routing: blocked_mdek12_local_directory_paths_return_403 (The likely Mississippi local education directory lanes under mdek12.org return HTTP 403 in bounded low-token fetches, and the packet still falls back to statewide special-education evidence instead of district-owned leaves.)
+- vocational_rehabilitation_pre_ets: verified_state_grade (Reviewed MDRS first-party routing now preserves live statewide vocational rehabilitation and Pre-Employment Transition Services paths.)
+- protection_and_advocacy: blocked_likely_p_and_a_domain_tls_failure (The likely first-party Mississippi Protection and Advocacy domain drms.ms failed TLS handshake in bounded fetch mode, so explicit statewide P&A evidence is still unproven on disk.)
 - parent_training_information_center: verified_state_grade (reviewed first-party PTI evidence is present at the required authority level)
-- legal_aid: missing (no credible current evidence)
+- legal_aid: verified_state_grade (Reviewed Mississippi Center for Justice preserves a live first-party statewide legal-justice route on disk.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: blocked_mdhs_contact_root_live_but_county_office_paths_missing (The Mississippi DHS contact root is live, but the likely county-office location paths tested so far return 404 and do not expose a county-grade local office contract in bounded low-token mode.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 51 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
-- vocational_rehabilitation_pre_ets: legacy_or_inventory_only_evidence :: 4 inventory rows use DB-field agency labels; 51 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
-- protection_and_advocacy: missing_required_source_family :: Protection and advocacy has no strong California-grade evidence for Mississippi.
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for Mississippi.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 51 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
+- district_or_county_education_routing: mdek12_local_directory_paths_return_403 :: The likely Mississippi local education directory lanes under mdek12.org return HTTP 403 in bounded low-token fetches, and the packet still falls back to statewide special-education evidence instead of district-owned leaves.
+- protection_and_advocacy: likely_p_and_a_domain_drms_ms_fails_tls_handshake_in_bounded_fetch :: The likely first-party Mississippi Protection and Advocacy domain drms.ms failed TLS handshake in bounded fetch mode, so explicit statewide P&A evidence is still unproven on disk.
+- county_local_disability_resources: mdhs_contact_root_is_live_but_county_office_location_paths_are_missing_or_unpublished :: The Mississippi DHS contact root is live, but the likely county-office location paths tested so far return 404 and do not expose a county-grade local office contract in bounded low-token mode.
 
 ## Verified source samples
 
@@ -37,26 +35,26 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.mississippi.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.mississippi.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.mdek12.org/
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.mdek12.org/
-- vocational_rehabilitation_pre_ets: inventory_only; samples=1; first=https://www.dmh.ms.gov
-- protection_and_advocacy: missing; samples=0
-- parent_training_information_center: verified_state_grade; samples=1; first=https://mspti.org
-- legal_aid: missing; samples=0
+- district_or_county_education_routing: blocked_mdek12_local_directory_paths_return_403; samples=3; first=https://www.mdek12.org/OSE
+- vocational_rehabilitation_pre_ets: verified_state_grade; samples=2; first=https://www.mdrs.ms.gov/vocational-rehabilitation
+- protection_and_advocacy: blocked_likely_p_and_a_domain_tls_failure; samples=1; first=https://www.drms.ms/
+- parent_training_information_center: verified_state_grade; samples=1; first=https://www.mspti.org/
+- legal_aid: verified_state_grade; samples=1; first=https://mscenterforjustice.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
-- ssi_ssa_federal_reference: verified_state_grade; samples=3; first=https://www.ablenrc.org
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://dhhs.mississippi.gov/locations
+- ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/ssi
+- county_local_disability_resources: blocked_mdhs_contact_root_live_but_county_office_paths_missing; samples=3; first=https://www.mdhs.ms.gov/contact/
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] vocational_rehabilitation_pre_ets: author_verified_state_manifest
-- [major] protection_and_advocacy: author_or_verify_statewide_source_family
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [critical] district_or_county_education_routing: browser_or_alternate_client_probe_of_mdek12_directory_lanes
+- [major] protection_and_advocacy: browser_or_alternate_client_probe_of_drms_ms
+- [critical] county_local_disability_resources: find_live_mdhs_county_office_directory_or_browser_capture
 
 ## Completion decision
 
-- Mississippi no longer belongs in UNSTARTED. The packet already has enough reviewed on-disk evidence to repair PTI truthfully and to terminalize the remaining blockers without inflating county-grade readiness.
-- Mississippi PTI is explicit enough to verify because the reviewed first-party page itself says “Welcome to the Mississippi Parent Training and Information Center,” preserves family-support and IDEA/transition guidance, and preserves the federal Department of Education grant statement.
-- Mississippi still cannot reach California-grade or become index-safe because district or county education routing still depends on generic statewide fallback pages instead of county- or district-owned leaves, county/local disability resources still depend on a generic statewide locations page instead of reviewed county-owned local routing, statewide Protection and Advocacy plus legal-aid proof is still missing, and the reviewed statewide MS CAP page is not enough to prove direct statewide VR / Pre-ETS routing.
-- Mississippi is therefore terminal BLOCKED, not COMPLETE.
+- Mississippi remains `BLOCKED` and `index_safe=false`.
+- Vocational rehabilitation / Pre-ETS is now repaired through live MDRS first-party routing.
+- Legal aid is now repaired through Mississippi Center for Justice.
+- Education routing remains blocked because the likely MDEK12 local directory lanes return HTTP 403 in bounded low-token mode.
+- Protection and advocacy remains blocked because the likely first-party domain drms.ms fails TLS handshake in bounded fetch mode.
+- County/local disability resources remain blocked because MDHS contact is live but the likely county-office paths tested so far are 404 or unpublished.

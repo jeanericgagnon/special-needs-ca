@@ -1,10 +1,10 @@
-# Michigan California-Grade Batch 71 Report v1
+# Michigan California-Grade Audit Report v2
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 75
+- completeness_pct: 83
 - county_count: 83
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: eighty_one_michigan_district_rows_still_use_statewide_special_education_fallbacks_and_no_county_office_rows_are_backed_by_the_live_mdhhs_county_contract
 
 ## Family status
 
@@ -13,20 +13,19 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- district_or_county_education_routing: blocked_eighty_one_district_rows_still_on_statewide_mde_fallbacks (Michigan currently has 83 school_district rows, but only Oakland and Wayne are locally verified; the remaining 81 rows still depend on the statewide MDE special-education page instead of district- or ISD-owned local routing leaves.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (reviewed first-party PTI evidence is present at the required authority level)
-- legal_aid: missing (no credible current evidence)
+- legal_aid: verified_state_grade (Reviewed Michigan Legal Help first-party homepage preserves a statewide legal-help and legal-aid access route.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: blocked_live_mdhhs_county_directory_without_reviewed_db_rows (The official MDHHS county-offices root is live and exposes county and regional office leaves plus a composite county directory, but the current packet still has zero reviewed county_offices rows and the composite directory exceeded a bounded low-token fetch window.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for Michigan.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
+- district_or_county_education_routing: eighty_one_district_rows_still_depend_on_statewide_mde_special_education_fallbacks :: Michigan currently has 83 school_district rows, but only Oakland and Wayne are locally verified; the remaining 81 rows still depend on the statewide MDE special-education page instead of district- or ISD-owned local routing leaves.
+- county_local_disability_resources: live_mdhhs_county_directory_exists_but_db_has_zero_reviewed_county_rows_and_composite_directory_times_out :: The official MDHHS county-offices root is live and exposes county and regional office leaves plus a composite county directory, but the current packet still has zero reviewed county_offices rows and the composite directory exceeded a bounded low-token fetch window.
 
 ## Verified source samples
 
@@ -35,25 +34,23 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.michigan.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.michigan.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.michigan.gov/mde/services/special-education
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.detroitk12.org/admin/exceptional_education
+- district_or_county_education_routing: blocked_eighty_one_district_rows_still_on_statewide_mde_fallbacks; samples=3; first=https://www.detroitk12.org/admin/exceptional_education
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.michigan.gov/mdhhs
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://drmich.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.michiganallianceforfamilies.org/
-- legal_aid: missing; samples=0
+- legal_aid: verified_state_grade; samples=1; first=https://michiganlegalhelp.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
-- ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/ssi
+- county_local_disability_resources: blocked_live_mdhhs_county_directory_without_reviewed_db_rows; samples=3; first=https://www.michigan.gov/mdhhs/inside-mdhhs/county-offices
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [critical] district_or_county_education_routing: author_or_extract_district_or_isd_local_targets
+- [critical] county_local_disability_resources: capture_county_or_regional_office_mappings_from_live_mdhhs_directory
 
 ## Completion decision
 
-- Michigan no longer belongs in UNSTARTED. The packet already had enough reviewed on-disk evidence to repair statewide P&A and PTI truthfully.
-- Disability Rights Michigan is explicit enough for Protection and Advocacy because the reviewed first-party page states that DRM is the federally mandated protection and advocacy system for Michigan.
-- Michigan Alliance for Families is explicit enough for PTI because the reviewed first-party page states that it is Michigan's federally funded Parent Training and Information Center and preserves direct family-support contact routing.
-- Michigan still cannot reach California-grade or become index-safe because district or county education routing still depends on generic statewide fallback pages instead of county- or district-owned leaves, county/local disability resources still depend on a DOI dataset mirror rather than reviewed county-owned local routing, and statewide legal-aid proof is still missing.
-- Michigan is therefore terminal BLOCKED, not COMPLETE.
+- Michigan remains `BLOCKED` and `index_safe=false`.
+- Legal aid is now repaired through Michigan Legal Help.
+- Education routing remains blocked because only 2 of 83 district rows are locally verified and the remaining 81 still use statewide MDE fallback evidence.
+- County/local disability resources remain blocked because the live MDHHS county-office directory is not yet converted into reviewed county_offices rows, and the official composite directory exceeded a bounded low-token fetch window.
