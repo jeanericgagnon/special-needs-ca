@@ -1,0 +1,28 @@
+{
+  "batch": "batch_65_idaho_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "protection_and_advocacy",
+    "legal_aid",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "parent_training_information_center",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "disabilityRightsIdaho": {
+      "sourceUrl": "https://disabilityrightsidaho.org/",
+      "finalUrl": "https://www.disabilityrightsidaho.org/"
+    },
+    "idahoParentsUnlimited": {
+      "sourceUrl": "https://ipulidaho.org/",
+      "finalUrl": "https://ipulidaho.org/",
+      "pageTitle": "IPUL's Homepage - Idaho Parents Unlimited"
+    }
+  }
+}
