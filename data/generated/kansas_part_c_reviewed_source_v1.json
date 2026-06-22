@@ -1,0 +1,16 @@
+{
+  "state": "kansas",
+  "family": "early_intervention_part_c",
+  "source_url": "https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education",
+  "final_url": "https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education",
+  "verification_status": "verified",
+  "source_type": "official_first_party_reviewed_page",
+  "source_table": "bounded_live_kansas_check",
+  "fetched_at": "2026-06-22T15:04:18.000Z",
+  "page_title": "Early Childhood Special Education",
+  "evidence_snippet": "All Kansas infants and toddlers (birth to age 3) are entitled to a free developmental evaluation to determine if they are eligible for early intervention services. Kansas Early Childhood Developmental Services (KECDS) within the Kansas Department of Health and Environment (KDHE) administers early intervention services under Part C of the Individuals with Disabilities Education Act (IDEA). Visit www.itsofks.org to find your local Infant Toddler Services of Kansas program.",
+  "review_notes": [
+    "The old Kansas early-start root was fake and dead.",
+    "A live KSDE Early Childhood Special Education leaf preserves Kansas birth-to-three, early intervention, Part C, KDHE administration, and the local ITS routing pointer on one official page."
+  ]
+}

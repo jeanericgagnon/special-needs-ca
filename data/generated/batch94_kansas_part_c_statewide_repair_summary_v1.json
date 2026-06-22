@@ -1,0 +1,24 @@
+{
+  "batch": "batch_94_kansas_part_c_statewide_repair_v1",
+  "generated_at": "2026-06-22T15:04:18.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "early_intervention_part_c"
+  ],
+  "remaining_blockers": [
+    "medicaid_state_health_coverage",
+    "medicaid_waiver_hcbs_disability_services",
+    "developmental_disability_idd_authority",
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "earlyInterventionPartC": {
+      "sourceUrl": "https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education",
+      "finalUrl": "https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education",
+      "pageTitle": "Early Childhood Special Education"
+    }
+  }
+}

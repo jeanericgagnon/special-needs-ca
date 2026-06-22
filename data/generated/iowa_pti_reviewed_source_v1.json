@@ -1,0 +1,16 @@
+{
+  "state": "iowa",
+  "family": "parent_training_information_center",
+  "source_url": "https://www.askresource.org/about/what-ASK-does-do/parent-training-and-information-center-ptic",
+  "final_url": "https://www.askresource.org/about/what-ASK-does-do/parent-training-and-information-center-ptic",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_iowa_check",
+  "fetched_at": "2026-06-22T14:56:00.000Z",
+  "page_title": "Parent Training and Information Center (PTIC) | ASK Resource Center",
+  "evidence_snippet": "ASK Resource Center has been Iowa's Parent and Training Information Center (PTIC or PTI) since 1998. PTIs are also referred to as Parent Centers.",
+  "review_notes": [
+    "Exact same-domain PTI leaf found from the live sitemap after the generic About page failed the designation gate.",
+    "Leaf preserves explicit Iowa PTI identity and duration on the fetched first-party page."
+  ]
+}
