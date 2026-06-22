@@ -256,3 +256,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Browser-Visible Official Pages Can Falsely Look Like Static 403s
 *   **Problem:** Georgia DBHDD region pages returned `403` in the low-token static fetch lane and were treated as dead or forbidden, while browser-visible official pages still exposed counties served and DD intake contacts.
 *   **Lesson:** Before final-blocking an official county-grade family on repeated static `403` shells, run one bounded browser-visible verification pass on the same reviewed official URLs. Treat a static/browser mismatch as a scraper-lane blocker that needs browser-assisted rehydration, not as proof that the official source family is gone.
+
+### Reused Legacy Domains Must Be Treated As Drift, Not Evidence
+*   **Problem:** Arkansas inherited `adcpti.org` as a PTI hint, but the reviewed live page had drifted into unrelated Korean investment and betting content while the real Arkansas PTI evidence lived on The Center for Exceptional Families first-party domain.
+*   **Lesson:** When a legacy support-family domain now serves unrelated non-state content, treat it as explicit domain drift and remove it from evidence consideration immediately. Do not preserve it as weak inventory. Reconcile the packet against a reviewed first-party replacement only if the replacement itself explicitly preserves the role text and state scope.

@@ -1,0 +1,28 @@
+{
+  "batch": "batch_61_colorado_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "colorado",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "disabilityJustice": {
+      "sourceUrl": "https://disabilitylawco.org/",
+      "finalUrl": "https://disabilityjustice.co/",
+      "pageTitle": "Protecting Rights, Advancing Justice | Disability Justice"
+    },
+    "peakParentCenter": {
+      "sourceUrl": "https://peakparent.org",
+      "finalUrl": "https://www.peakparent.org/",
+      "pageTitle": "PEAK Parent Center - Peak Parent"
+    }
+  }
+}
