@@ -458,3 +458,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Embedded County-Map Content Can Still Count Even When The Child County Hrefs 404
 *   **Lesson:** If an official county-office map page renders one fetched HTML document that already embeds county-by-county office details, do not fail it just because the decorative county hrefs 404. Indiana’s DFR county map preserved addresses, hours, phone, and ZIP routing for all 92 counties directly in the source HTML, so the family could be upgraded without re-fetching every broken child link.
+
+### One Shared Statewide Fallback URL Across Every County Row Is A Packet Placeholder Signal
+*   **Lesson:** If every county or district row in a blocked family points to the same statewide root, treat the DB inventory as placeholder-only and stop retrying that root as if it were local coverage. Arizona’s 15/15 `school_districts` rows all pointed at one challenged AZED page, and 14/15 `county_offices` rows all pointed at one DOI/AHCCCS placeholder, so the real next step was exact-leaf authoring, not more host retries.
+
+### Generic ArcGIS Instant-App Shells Do Not Count As County Contracts
+*   **Lesson:** If an official `*.maps.arcgis.com` app only fetches as a generic “Zone Lookup” shell and the public HTML exposes no county names, region names, or service/layer references, do not treat it as a county-routing contract. Georgia still stayed blocked because the DBHDD ArcGIS app revealed no public county-to-region evidence beyond the shell.

@@ -1,0 +1,12 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "blocker_family": "county_local_disability_resources",
+  "counties_cleared_via_csv": 34,
+  "counties_still_missing_public_contract": 33,
+  "shell_bytes": 5165,
+  "bundle_signal": "county_form_controls_plus_blank_location_template",
+  "lesson_added": false
+}

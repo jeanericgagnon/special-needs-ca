@@ -10,7 +10,9 @@
     "challengedOfficialRoots": 8,
     "authoredExactLeafCount": 0,
     "nonresolvingCountyRootCount": 14,
-    "blockedCountyRootCount": 1
+    "blockedCountyRootCount": 1,
+    "doiPlaceholderRows": 14,
+    "genericLegacyLocatorRows": 1
   },
   "exact_target_goals": [
     "county or regional FAA office page",

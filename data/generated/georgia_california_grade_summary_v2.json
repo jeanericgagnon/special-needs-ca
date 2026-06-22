@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_county_page_points_to_unpublished_region_leaves",
+  "primary_gap_reason": "official_county_page_points_to_unpublished_region_leaves_and_no_public_replacement_contract",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "developmental_disability_idd_authority"
@@ -44,7 +44,7 @@
       "family": "developmental_disability_idd_authority",
       "severity": "critical",
       "failure_code": "official_county_page_points_to_unpublished_region_leaves",
-      "evidence": "Reviewed 2026-06-22 bounded live official HTML on https://dbhdd.georgia.gov/regional-field-office-county. The county table still renders empty county cells and repeated Region 1-6 links, but the live anchor markup now makes the failure mode explicit: each reviewed region link carries data-status-unpublished=\"1\", data-status-in-trash=\"1\", and aria-label=\"Not visible to public\". That means the current official county page is not exposing a public county-to-region routing contract, and the linked region leaves remain non-public/access-denied. A deterministic 159-county county-to-region map still cannot be verified from the current public official evidence.",
+      "evidence": "Reviewed 2026-06-22 bounded live official HTML on https://dbhdd.georgia.gov/regional-field-office-county plus exact replacement candidates https://dbhdd.georgia.gov/locations/regional-offices and https://dbhdd.maps.arcgis.com/apps/instant/lookup/index.html?appid=66e57defda7a442597357d9be5ec00bc. The county table still renders empty county cells and repeated Region 1-6 links, and each reviewed region link carries data-status-unpublished=\"1\", data-status-in-trash=\"1\", and aria-label=\"Not visible to public\". The older DBHDD regional-offices replacement root now returns HTTP 404. The reviewed ArcGIS app loads only a generic \"Zone Lookup\" shell; the fetched public source exposes no county names, region names, FeatureServer/MapServer reference, or other public county-to-region routing contract. A deterministic 159-county county-to-region map still cannot be verified from the current public official evidence.",
       "next_action": "hold_blocked_until_public_county_to_region_source_replaces_unpublished_region_links"
     }
   ]

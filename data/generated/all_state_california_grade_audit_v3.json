@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T19:50:33.939Z",
+  "generatedAt": "2026-06-22T20:03:26.267Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 8,
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "challenged_official_roots_zero_exact_education_leaves_and_nonresolving_county_root_inventory",
+      "packetPrimaryGapReason": "challenged_official_roots_and_db_inventory_still_placeholder_only",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -711,7 +711,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_county_page_points_to_unpublished_region_leaves",
+      "packetPrimaryGapReason": "official_county_page_points_to_unpublished_region_leaves_and_no_public_replacement_contract",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

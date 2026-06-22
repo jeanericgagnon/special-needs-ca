@@ -4,13 +4,13 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 159
-- primary_gap_reason: official_county_page_points_to_unpublished_region_leaves
+- primary_gap_reason: official_county_page_points_to_unpublished_region_leaves_and_no_public_replacement_contract
 
 ## Family status
 
 - medicaid_state_health_coverage: verified_state_grade (statewide evidence is present at the required authority level)
 - medicaid_waiver_hcbs_disability_services: verified_state_grade (statewide evidence is present at the required authority level)
-- developmental_disability_idd_authority: blocked_unpublished_official_region_links (The live official DBHDD county lookup page still fails county-grade proof: county cells are blank and the repeated Region links themselves are marked data-status-unpublished=1 with aria-label "Not visible to public", so the page points to unpublished region leaves rather than preserving a public county-to-region routing contract.)
+- developmental_disability_idd_authority: blocked_unpublished_official_region_links (The live official DBHDD county lookup page still fails county-grade proof: county cells are blank and the repeated Region links themselves are marked data-status-unpublished=1 with aria-label "Not visible to public", so the page points to unpublished region leaves rather than preserving a public county-to-region routing contract. The old replacement root https://dbhdd.georgia.gov/locations/regional-offices is now HTTP 404, and the reviewed dbhdd.maps.arcgis.com Zone Lookup app shell exposes no county/region/service contract in the fetched public source.)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
 - district_or_county_education_routing: verified_state_grade (The official GaDOE RESA page now preserves county-grade education routing from one first-party source: its embedded AcfGeoMap JSON maps 159 unique Georgia county IDs across 16 RESA regions and links each county cluster to an official RESA site, so county-grade regional education routing can be verified without reopening broad district-leaf discovery.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- developmental_disability_idd_authority: official_county_page_points_to_unpublished_region_leaves :: Reviewed 2026-06-22 bounded live official HTML on https://dbhdd.georgia.gov/regional-field-office-county. The county table still renders empty county cells and repeated Region 1-6 links, but the live anchor markup now makes the failure mode explicit: each reviewed region link carries data-status-unpublished="1", data-status-in-trash="1", and aria-label="Not visible to public". That means the current official county page is not exposing a public county-to-region routing contract, and the linked region leaves remain non-public/access-denied. A deterministic 159-county county-to-region map still cannot be verified from the current public official evidence.
+- developmental_disability_idd_authority: official_county_page_points_to_unpublished_region_leaves :: Reviewed 2026-06-22 bounded live official HTML on https://dbhdd.georgia.gov/regional-field-office-county plus exact replacement candidates https://dbhdd.georgia.gov/locations/regional-offices and https://dbhdd.maps.arcgis.com/apps/instant/lookup/index.html?appid=66e57defda7a442597357d9be5ec00bc. The county table still renders empty county cells and repeated Region 1-6 links, and each reviewed region link carries data-status-unpublished="1", data-status-in-trash="1", and aria-label="Not visible to public". The older DBHDD regional-offices replacement root now returns HTTP 404. The reviewed ArcGIS app loads only a generic "Zone Lookup" shell; the fetched public source exposes no county names, region names, FeatureServer/MapServer reference, or other public county-to-region routing contract. A deterministic 159-county county-to-region map still cannot be verified from the current public official evidence.
 
 ## Verified source samples
 
@@ -48,6 +48,7 @@
 
 ## Georgia final blocker decision
 
-- Developmental disability routing remains blocked because the live DBHDD county lookup page itself points only to unpublished region leaves and still does not expose a public county-to-region routing contract.
-- District or county education routing is now verified from the official GaDOE RESA county map, whose embedded first-party JSON covers 159/159 Georgia counties and links them to named RESA regional routing sites.
-- Georgia remains blocked and not index-safe because one critical DD family is still unresolved, not because education lacks county-grade proof.
+- Developmental disability routing remains blocked.
+- The public county lookup still points only to unpublished region leaves rather than a public county-to-region contract.
+- The old official replacement root is now a hard 404, and the reviewed DBHDD ArcGIS app is only a generic shell with no exposed county/region/service contract in fetched public source.
+- Georgia should reopen this family only if DBHDD republishes a public county-to-region source or a public official map/data contract becomes visible.
