@@ -1,0 +1,26 @@
+{
+  "batch": "batch_67_louisiana_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "louisiana",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "disabilityRightsLouisiana": {
+      "sourceUrl": "https://disabilityrightsla.org/",
+      "finalUrl": "https://disabilityrightsla.org/"
+    },
+    "laptic": {
+      "sourceUrl": "https://fhfofgno.org/laptic",
+      "finalUrl": "https://fhfofgno.org/laptic"
+    }
+  }
+}
