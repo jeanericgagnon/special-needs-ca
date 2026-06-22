@@ -52,8 +52,8 @@
     {
       "family": "parent_training_information_center",
       "severity": "major",
-      "failure_code": "reviewed_pti_sample_is_regional_and_designated_statewide_target_now_points_to_successor",
-      "evidence": "Reviewed PTI evidence currently points to https://www.fmptic.org, which is documented as serving downstate Illinois, while https://frcd.org now states that Family Matters PTIC became the official PTIC for Illinois as of October 1, 2025. The packet still lacks reviewed statewide proof for the designated PTI family.",
+      "failure_code": "reviewed_pti_sample_is_regional_not_statewide_designated_source",
+      "evidence": "Reviewed PTI evidence currently points to https://www.fmptic.org, which is documented as serving downstate Illinois rather than proving the designated statewide PTI target https://www.frcd.org.",
       "next_action": "hold_blocked_until_reviewed_statewide_illinois_pti_source_is_verified"
     }
   ]

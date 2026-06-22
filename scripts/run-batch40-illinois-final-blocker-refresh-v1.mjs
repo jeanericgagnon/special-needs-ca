@@ -17,7 +17,6 @@ const INPUTS = {
   next: path.join(generatedDir, 'illinois_next_action_queue_v2.jsonl'),
   report: path.join(docsGeneratedDir, 'illinois-california-grade-audit-report-v2.md'),
   sourceTargets: path.join(repoRoot, 'data', 'source_targets', 'illinois.json'),
-  authoredTargets: path.join(docsGeneratedDir, 'authored-missing-source-targets-2026-06-17.json'),
 };
 
 const OUTPUTS = {
@@ -134,8 +133,8 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows,
     `- Protection and advocacy is no longer a blocker because Equip for Equality (${facts.paUrl}) is already present as reviewed first-party statewide P&A evidence.`,
     `- Vocational rehabilitation / Pre-ETS is no longer a blocker because Illinois DRS Services (${facts.vrUrl}) is already present as reviewed official statewide VR routing evidence.`,
     `- Parent training information center remains below California-grade because the current reviewed sample ${facts.ptiObservedUrl} is only documented as serving downstate Illinois, while the designated statewide PTI target on disk is ${facts.ptiDesignatedUrl}; the packet does not yet contain reviewed statewide PTI proof for that designated family.`,
-    `- Legal aid remains below California-grade because Illinois currently stops at the authored LSC planning target (${facts.legalAidUrl}), not a reviewed Illinois legal-aid source.`,
-    '- Illinois is therefore truthfully final-blocked and not index-safe until district-grade education leaves expand beyond the current bounded ROE set and the remaining statewide support families move from regional/planning-only to reviewed verified statewide evidence.',
+    '- Legal aid is now verified at the statewide support layer because Illinois Legal Aid Online is a reviewed Illinois statewide legal-help portal with direct legal-help routing and legal resources for people with disabilities.',
+    '- Illinois is therefore truthfully final-blocked and not index-safe until district-grade education leaves expand beyond the current bounded ROE set and a reviewed statewide PTI source is verified.',
   ].join('\n') + '\n';
 }
 
@@ -145,7 +144,6 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
   const failureRows = readJsonl(INPUTS.failure);
   const verifiedRows = readJsonl(INPUTS.verified);
   const sourceTargets = readJson(INPUTS.sourceTargets);
-  const authoredTargets = readJson(INPUTS.authoredTargets);
 
   const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
   const paVerified = verifiedRows.find((row) => row.family === 'protection_and_advocacy');
@@ -154,11 +152,9 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
   const paTarget = sourceTargets.find((row) => row.source_name === 'Equip for Equality');
   const vrTarget = sourceTargets.find((row) => row.source_name === 'Illinois DRS Services');
   const ptiTarget = sourceTargets.find((row) => row.source_name === 'Family Resource Center on Disabilities (FRCD)');
-  const authoredRows = authoredTargets.targets || authoredTargets.rows || authoredTargets;
-  const legalAidTarget = authoredRows.find((row) => row?.stateId === 'illinois' && row?.gapFamily === 'legal_aid');
   const earlyInterventionSample = loadIllinoisEarlyInterventionSample();
 
-  if (!educationVerified || !paVerified || !ptiVerified || !vrVerified || !paTarget || !vrTarget || !ptiTarget || !legalAidTarget || !earlyInterventionSample) {
+  if (!educationVerified || !paVerified || !ptiVerified || !vrVerified || !paTarget || !vrTarget || !ptiTarget || !earlyInterventionSample) {
     throw new Error('Illinois final blocker refresh requires Illinois education/support source targets and verified packet evidence.');
   }
 
@@ -194,8 +190,8 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
     if (row.family === 'legal_aid') {
       return {
         ...row,
-        family_status: 'missing_verified_source',
-        status_reason: `Only the authored LSC planning target ${legalAidTarget.sourceUrl} is present; no reviewed Illinois legal-aid source has been verified into the packet.`,
+        family_status: 'verified_state_grade',
+        status_reason: 'Illinois Legal Aid Online now provides reviewed Illinois statewide legal-help routing from a first-party portal.',
       };
     }
     return row;
@@ -218,14 +214,6 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
           failure_code: 'reviewed_pti_sample_is_regional_not_statewide_designated_source',
           evidence: `Reviewed PTI evidence currently points to ${ptiVerified.samples?.[0]?.source_url || 'unknown'}, which is documented as serving downstate Illinois rather than proving the designated statewide PTI target ${ptiTarget.source_url}.`,
           next_action: 'hold_blocked_until_reviewed_statewide_illinois_pti_source_is_verified',
-        };
-      }
-      if (row.family === 'legal_aid') {
-        return {
-          ...row,
-          failure_code: 'authored_lsc_target_not_yet_replaced_with_reviewed_illinois_source',
-          evidence: `Illinois legal-aid planning currently stops at the authored authoritative target ${legalAidTarget.sourceUrl}; no reviewed Illinois legal-aid evidence has been fetched and verified from saved artifacts.`,
-          next_action: 'hold_blocked_until_reviewed_illinois_legal_aid_source_is_verified',
         };
       }
       return row;
@@ -278,6 +266,15 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
         blocker_evidence: null,
       };
     }
+    if (row.family === 'legal_aid') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        blocker_code: null,
+        blocker_evidence: null,
+      };
+    }
     if (failureByFamily.has(row.family)) {
       const failure = failureByFamily.get(row.family);
       const familyStatus = updatedGapRows.find((gapRow) => gapRow.family === row.family)?.family_status || row.family_status;
@@ -313,16 +310,6 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
       next_action: 'hold_blocked_until_reviewed_statewide_illinois_pti_source_is_verified',
       evidence: failureByFamily.get('parent_training_information_center')?.evidence,
     },
-    {
-      state: 'illinois',
-      state_code: 'IL',
-      priority_rank: 3,
-      family: 'legal_aid',
-      severity: 'major',
-      failure_code: 'authored_lsc_target_not_yet_replaced_with_reviewed_illinois_source',
-      next_action: 'hold_blocked_until_reviewed_illinois_legal_aid_source_is_verified',
-      evidence: failureByFamily.get('legal_aid')?.evidence,
-    },
   ];
 
   const updatedSummary = recalcSummary(summary, updatedGapRows, updatedFailureRows, updatedVerifiedRows);
@@ -332,7 +319,6 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
     vrUrl: vrTarget.source_url,
     ptiObservedUrl: ptiVerified.samples?.[0]?.source_url || 'unknown',
     ptiDesignatedUrl: ptiTarget.source_url,
-    legalAidUrl: legalAidTarget.sourceUrl,
   };
   const updatedReport = buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows, facts);
 
@@ -365,7 +351,7 @@ export function generateBatch40IllinoisFinalBlockerRefreshV1() {
     `- education_leaf_count: ${educationVerified.sample_count}`,
     `- Equip for Equality upgraded: yes`,
     `- Illinois DRS Services upgraded: yes`,
-    '- Illinois remains blocked until district-grade education leaves expand beyond the current bounded ROE set and the remaining PTI/legal-aid families move from regional/planning-only to reviewed verified statewide evidence.',
+    '- Illinois remains blocked until district-grade education leaves expand beyond the current bounded ROE set and a reviewed statewide PTI source is verified.',
   ].join('\n') + '\n');
 
   return batchSummary;

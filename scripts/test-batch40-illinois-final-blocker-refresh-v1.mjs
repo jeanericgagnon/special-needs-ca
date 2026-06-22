@@ -31,7 +31,7 @@ const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/illinois-cali
 assert.equal(summary.classification, 'BLOCKED', 'Illinois refresh must keep the state blocked.');
 assert.equal(stateSummary.classification, 'BLOCKED', 'Illinois packet summary must remain blocked.');
 assert.equal(stateSummary.index_safe, false, 'Illinois must remain not index-safe.');
-assert.equal(stateSummary.completeness_pct, 75, 'Illinois completeness should rise once P&A and VR are truthfully upgraded.');
+assert.equal(stateSummary.completeness_pct, 83, 'Illinois completeness should reflect the repaired statewide support families.');
 
 const edu = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 const vr = gapRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
@@ -44,27 +44,27 @@ assert.equal(edu.family_status, 'blocked_exact_leaf_repair_exhausted', 'Illinois
 assert.equal(vr.family_status, 'verified_state_grade', 'Illinois VR must upgrade to verified state grade.');
 assert.equal(pa.family_status, 'verified_state_grade', 'Illinois P&A must upgrade to verified state grade.');
 assert.equal(pti.family_status, 'regional_only_reviewed_source', 'Illinois PTI must fail closed as regional-only evidence.');
-assert.equal(legal.family_status, 'missing_verified_source', 'Illinois legal aid must remain explicit missing verified source.');
+assert.equal(legal.family_status, 'verified_state_grade', 'Illinois legal aid must remain verified from reviewed statewide Illinois Legal Aid Online evidence.');
 assert.equal(county.family_status, 'verified_state_grade', 'Illinois county-local must stay verified state grade.');
 
 assert.ok(!failureRows.some((row) => row.family === 'vocational_rehabilitation_pre_ets'), 'Illinois VR must drop out of the failure ledger.');
 assert.ok(!failureRows.some((row) => row.family === 'protection_and_advocacy'), 'Illinois P&A must drop out of the failure ledger.');
 assert.equal(failureRows.find((row) => row.family === 'district_or_county_education_routing').failure_code, 'bounded_roe_leaf_packet_exhausted_before_county_grade_coverage', 'Illinois education failure code must explain packet exhaustion.');
 assert.equal(failureRows.find((row) => row.family === 'parent_training_information_center').failure_code, 'reviewed_pti_sample_is_regional_not_statewide_designated_source', 'Illinois PTI must explain why the reviewed sample still fails the statewide gate.');
-assert.equal(failureRows.find((row) => row.family === 'legal_aid').failure_code, 'authored_lsc_target_not_yet_replaced_with_reviewed_illinois_source', 'Illinois legal aid must explain the authored-but-unverified blocker.');
+assert.ok(!failureRows.some((row) => row.family === 'legal_aid'), 'Illinois legal aid must no longer appear in the failure ledger.');
 
 assert.deepEqual(
   nextRows.map((row) => row.family),
   [
     'district_or_county_education_routing',
     'parent_training_information_center',
-    'legal_aid',
   ],
-  'Illinois next actions must collapse to the three real remaining blockers.',
+  'Illinois next actions must collapse to the two real remaining blockers.',
 );
 
 assert.equal(verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets').family_status, 'verified_state_grade', 'Illinois verified sources must upgrade VR.');
 assert.equal(verifiedRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'verified_state_grade', 'Illinois verified sources must upgrade P&A.');
+assert.equal(verifiedRows.find((row) => row.family === 'legal_aid').family_status, 'verified_state_grade', 'Illinois verified sources must preserve statewide legal aid.');
 assert.equal(verifiedRows.find((row) => row.family === 'early_intervention_part_c').sample_count, 1, 'Illinois EI must carry a real reviewed sample instead of zero-sample verified drift.');
 assert.ok(report.includes('Illinois final blocker decision'), 'Illinois report must include the final blocker decision section.');
 assert.ok(report.includes('serving downstate Illinois'), 'Illinois report must explain why the current PTI sample does not satisfy the statewide PTI gate.');

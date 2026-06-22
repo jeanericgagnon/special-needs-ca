@@ -1,10 +1,10 @@
 {
   "batch": "batch_40_illinois_final_blocker_refresh_v1",
-  "generated_at": "2026-06-21T21:55:57.130Z",
+  "generated_at": "2026-06-22T00:53:56.267Z",
   "state": "illinois",
   "classification": "BLOCKED",
   "index_safe": false,
-  "completeness_pct": 75,
+  "completeness_pct": 83,
   "education_leaf_count": 3,
-  "final_blocker_count": 3
+  "final_blocker_count": 2
 }
