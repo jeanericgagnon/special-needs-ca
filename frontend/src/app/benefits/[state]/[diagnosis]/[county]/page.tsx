@@ -12,7 +12,7 @@ import DirectoryFoundationPanel from '@/app/components/directory-foundation-pane
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
-import { getCountyDiagnosisTruthEligibility, isPublicDirectoryRecordEligible, isPublicRecordEligible } from '@/lib/publicTruth';
+import { getCountyDiagnosisTruthEligibility, isIndexableState, isPublicDirectoryRecordEligible, isPublicRecordEligible } from '@/lib/publicTruth';
 
 type Props = {
   params: Promise<{ state: string; diagnosis: string; county: string }>;
@@ -63,6 +63,7 @@ export default async function SEOLandingPage({ params }: Props) {
 
   const diagnosisFormatted = formatParam(p.diagnosis);
   const countyFormatted = formatParam(p.county);
+  const isIndexable = isIndexableState(stateId);
 
   // 1. Fetch County Details
   const countyData = await getCountyDetails(p.county);
@@ -250,27 +251,31 @@ export default async function SEOLandingPage({ params }: Props) {
     <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>
       
       {/* Dynamic JSON-LD Structured Data Injection */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localAdvocatesSchema) }}
-      />
-      {eligibleNonprofits.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(nonprofitSchema) }}
-        />
+      {isIndexable && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(localAdvocatesSchema) }}
+          />
+          {eligibleNonprofits.length > 0 && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(nonprofitSchema) }}
+            />
+          )}
+        </>
       )}
 
       {/* Hero Header */}

@@ -9,7 +9,7 @@ import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
 import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
-import { getCountyTruthEligibility, isPublicDirectoryRecordEligible, isPublicRecordEligible } from '@/lib/publicTruth';
+import { getCountyTruthEligibility, isIndexableState, isPublicDirectoryRecordEligible, isPublicRecordEligible } from '@/lib/publicTruth';
 
 function formatIntroCopy(text: string) {
   return text.split('\n').map((line, i) => {
@@ -98,6 +98,8 @@ export default async function CountyPage({ params }: Props) {
   const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
   const countyWage = countyDetails.ihss_wage_rate || 18.00;
+  const truth = getCountyTruthEligibility(stateData.id, countyDetails);
+  const isIndexable = isIndexableState(stateData.id) && truth.indexSafe;
   const eligibleRegionalCenters = (countyDetails.regionalCenters || []).filter(isPublicRecordEligible);
   const eligibleCountyOffices = (countyDetails.countyOffices || []).filter(isPublicRecordEligible);
   const eligibleSchoolDistricts = (countyDetails.schoolDistricts || []).filter(isPublicRecordEligible);
@@ -162,7 +164,7 @@ export default async function CountyPage({ params }: Props) {
 
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-      <SeoSchema data={[faqSchema, governmentOrganizationSchema]} />
+      {isIndexable && <SeoSchema data={[faqSchema, governmentOrganizationSchema]} />}
       
       {/* Back button */}
       <div style={{ marginBottom: '1.5rem' }}>
