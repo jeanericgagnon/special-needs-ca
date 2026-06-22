@@ -1,0 +1,17 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "refined_family": "county_local_disability_resources",
+  "blocker_code": "official_family_resource_center_csv_only_covers_34_counties",
+  "next_action": "hold_county_local_until_first_party_family_resource_center_dataset_expands_or_new_official_county_locator_is_published",
+  "evidence_checks": {
+    "homepageUrl": "https://familyresourcecenter.myflfamilies.com/",
+    "csvUrl": "https://familyresourcecenter.myflfamilies.com/providers.csv",
+    "homepageUsesCsvFetch": true,
+    "csvRowCount": 39,
+    "csvUniqueCountyCount": 34,
+    "remainingCountyGap": 33
+  }
+}

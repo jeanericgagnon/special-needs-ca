@@ -22,9 +22,9 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'connecticut-california-grade-audit-report-v2.md'),
 };
 
-const PTI_EVIDENCE = 'Reviewed 2026-06-22 live CPAC homepage plus bounded same-domain follow-ups. The homepage exposed only two same-domain links, likely About roots and sitemap endpoints returned 404, and no fetched first-party page preserved explicit PTI / Parent Training and Information designation text. CPAC still proves statewide Connecticut family-support and training scope, but not the exact PTI designation required for California-grade statewide support.';
-const EDUCATION_EVIDENCE = 'Reviewed current Connecticut school_district rows on 2026-06-22. Six county-linked rows still point to the statewide CDE special-education leaf https://portal.ct.gov/sde/special-education, and the remaining Fairfield and Hartford rows still point only to the generic CT SDE root https://portal.ct.gov/sde, so no district-owned education leaf is currently verified for any of Connecticut’s 8 counties.';
-const COUNTY_EVIDENCE = 'Reviewed current Connecticut county_offices rows on 2026-06-22. Eleven county-office rows still use the DOI mirror https://doi.org/10.7910/DVN/AVRHMI with source_listed evidence, and the remaining Tolland row still points only to the generic locations root https://dhhs.connecticut.gov/locations, so county-local office routing is not yet backed by reviewed county-owned leaves.';
+const PTI_EVIDENCE = 'Reviewed 2026-06-22 live first-party CPAC About page https://cpacinc.org/about.aspx. The page preserves the sentence "Beth is also the Director of CPAC\'s federally funded Parent Training and Information (PTI) Center project," so CPAC now has explicit first-party PTI designation evidence rather than only generic statewide family-support language.';
+const EDUCATION_EVIDENCE = 'Reviewed 2026-06-22 bounded live checks on the exact Connecticut SDE special-education leaf https://portal.ct.gov/sde/special-education, the generic SDE root https://portal.ct.gov/sde, and the official EdSight portal https://edsight.ct.gov/. The special-education leaf exposed no district-directory links beyond itself, the SDE root exposed only statewide Bureau/central-office and data-portal links, and EdSight described statewide reports about schools and districts but did not preserve district-owned special-education routing contacts. No district-grade education leaf is currently verified for any of Connecticut’s 8 counties.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 bounded live checks on the Connecticut DSS root https://portal.ct.gov/dss/home plus likely office-location leaves https://portal.ct.gov/dss/common-elements/office-locations and https://portal.ct.gov/dss/common-elements/search-dss-office-locations. The DSS home exposed statewide program/help and hearing links only, and both office-location guesses returned HTTP 404, so no reviewed official county office directory leaf currently replaces the DOI mirror office rows.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -77,8 +77,9 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## Completion decision',
     '',
-    '- Connecticut still cannot reach California-grade or become index-safe because district routing remains statewide-root fallback only across all 8 counties, county-local office routing still relies on DOI mirror plus one generic locations root row, and CPAC still lacks explicit PTI designation text in the reviewed first-party chain.',
-    '- Connecticut is therefore still BLOCKED and not index-safe, but the remaining blockers are now tied to exact row classes and bounded first-party PTI failure evidence.',
+    '- Connecticut still cannot reach California-grade or become index-safe because district routing remains unresolved after bounded checks of the exact SDE and EdSight leaves, and county-local office routing still lacks a reviewed official county office directory leaf after bounded DSS location-path checks.',
+    '- CPAC is no longer a blocker because the live first-party About page explicitly preserves federally funded Parent Training and Information (PTI) Center designation text.',
+    '- Connecticut is therefore still BLOCKED and not index-safe, but the remaining blockers are now reduced to the two local-proof families with sharper bounded-source evidence.',
   ].join('\n') + '\n';
 }
 
@@ -100,7 +101,8 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
-        status_reason: PTI_EVIDENCE,
+        family_status: 'verified_state_grade',
+        status_reason: 'The live first-party CPAC About page now explicitly preserves federally funded Parent Training and Information (PTI) Center designation text.',
       };
     }
     if (row.family === 'county_local_disability_resources') {
@@ -113,18 +115,14 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
     return row;
   });
 
-  const updatedFailureRows = failureRows.map((row) => {
+  const updatedFailureRows = failureRows
+    .filter((row) => row.family !== 'parent_training_information_center')
+    .map((row) => {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
         failure_code: 'all_counties_still_use_statewide_ct_sde_roots',
         evidence: EDUCATION_EVIDENCE,
-      };
-    }
-    if (row.family === 'parent_training_information_center') {
-      return {
-        ...row,
-        evidence: PTI_EVIDENCE,
       };
     }
     if (row.family === 'county_local_disability_resources') {
@@ -135,7 +133,7 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
       };
     }
     return row;
-  });
+    });
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
     if (row.family === 'district_or_county_education_routing') {
@@ -149,8 +147,24 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
     if (row.family === 'parent_training_information_center') {
       return {
         ...row,
-        query_basis: 'Reviewed 2026-06-22 live CPAC homepage plus bounded same-domain follow-ups after the saved first-party artifact remained too generic for PTI designation.',
-        blocker_evidence: PTI_EVIDENCE,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        query_basis: 'Reviewed live first-party CPAC About page now explicitly preserves Parent Training and Information Center designation text for Connecticut statewide family support.',
+        blocker_code: null,
+        blocker_evidence: null,
+        samples: [
+          {
+            sample_name: 'Connecticut Parent Advocacy Center PTI About page',
+            source_url: 'https://cpacinc.org/about.aspx',
+            final_url: 'https://cpacinc.org/about.aspx',
+            verification_status: 'official_verified',
+            source_type: 'official',
+            source_table: 'reviewed_live_probe',
+            fetched_at: '2026-06-22T00:00:00.000Z',
+            evidence_snippet: 'Beth is also the Director of CPAC\'s federally funded Parent Training and Information (PTI) Center project.',
+          },
+        ],
       };
     }
     if (row.family === 'county_local_disability_resources') {
@@ -164,18 +178,14 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
     return row;
   });
 
-  const updatedNextRows = nextRows.map((row) => {
+  const updatedNextRows = nextRows
+    .filter((row) => row.family !== 'parent_training_information_center')
+    .map((row) => {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
         failure_code: 'all_counties_still_use_statewide_ct_sde_roots',
         evidence: EDUCATION_EVIDENCE,
-      };
-    }
-    if (row.family === 'parent_training_information_center') {
-      return {
-        ...row,
-        evidence: PTI_EVIDENCE,
       };
     }
     if (row.family === 'county_local_disability_resources') {
@@ -186,10 +196,15 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
       };
     }
     return row;
-  });
+    });
 
   const updatedSummary = {
     ...summary,
+    completeness_pct: 83,
+    strong_critical_families: 10,
+    weak_critical_families: 2,
+    primary_gap_reason: 'district_grade_education_and_official_county_office_directory_leaves_still_missing',
+    major_gap_families: [],
     final_blockers: [
       {
         family: 'district_or_county_education_routing',
@@ -197,13 +212,6 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
         failure_code: 'all_counties_still_use_statewide_ct_sde_roots',
         evidence: EDUCATION_EVIDENCE,
         next_action: 'author_county_or_district_exact_targets',
-      },
-      {
-        family: 'parent_training_information_center',
-        severity: 'major',
-        failure_code: 'reviewed_first_party_support_source_lacks_explicit_pti_designation',
-        evidence: PTI_EVIDENCE,
-        next_action: 'hold_blocked_until_explicit_pti_designation_is_preserved_from_reviewed_first_party_source',
       },
       {
         family: 'county_local_disability_resources',
@@ -230,8 +238,8 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
     evidence_checks: {
       education: EDUCATION_EVIDENCE,
-      pti: PTI_EVIDENCE,
       countyLocal: COUNTY_EVIDENCE,
+      pti: PTI_EVIDENCE,
     },
   });
   fs.writeFileSync(OUTPUTS.stateReport, buildReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows));
@@ -247,8 +255,8 @@ export function generateBatch98ConnecticutBlockerRefinementV1() {
       '## Evidence checks',
       '',
       `- education: ${EDUCATION_EVIDENCE}`,
-      `- pti: ${PTI_EVIDENCE}`,
       `- county_local: ${COUNTY_EVIDENCE}`,
+      `- pti_repair: ${PTI_EVIDENCE}`,
     ].join('\n') + '\n',
   );
 

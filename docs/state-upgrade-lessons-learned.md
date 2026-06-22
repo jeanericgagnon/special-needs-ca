@@ -377,3 +377,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### State-Hosted District Contact Directories Are Not “Generic” When They Preserve District-Owned Special-Ed Contacts
 *   **Lesson:** A state DOE leaf can satisfy county-grade education routing when the page itself lists district-specific Special Education Director entries with district names plus phone/email fields statewide. Do not reject it just because it lives on the state domain; reject only generic special-education roots that lack district-level contact evidence.
+
+### Legacy Nonprofit PTI Sites May Hide Explicit Designation On `.aspx` About Leaves
+*   **Lesson:** If a family-support nonprofit homepage is real but the modern `/about/` path 404s, try the legacy `about.aspx` leaf once before leaving PTI blocked. Connecticut CPAC’s homepage looked too generic, but `about.aspx` explicitly preserved federally funded Parent Training and Information (PTI) Center designation text.
+
+### Check `robots.txt` When A WordPress State Site Returns 404 For `sitemap_index.xml`
+*   **Lesson:** If an official WordPress state site returns 404 for the common sitemap path, read `robots.txt` before giving up on bounded discovery. Delaware DOE exposed `wp-sitemap.xml` there, which was enough to find the official public-school-list leaves without broad searching.
+
+### Treat A Public Homepage’s Own CSV Fetch As The First-Party Data Contract
+*   **Lesson:** If the live official homepage JavaScript explicitly fetches a public CSV to populate county filters or map results, treat that CSV as the published county-coverage contract before chasing blocked browser-only locators. Florida’s Family Resource Center homepage itself fetches `providers.csv`, which proved the official dataset stops at 34 counties.

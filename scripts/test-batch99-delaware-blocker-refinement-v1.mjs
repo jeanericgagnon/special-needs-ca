@@ -33,25 +33,24 @@ assert.equal(result.classification, 'BLOCKED');
 assert.equal(result.index_safe, false);
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
-assert.equal(summary.completeness_pct, 83);
-assert.equal(summary.strong_critical_families, 10);
-assert.equal(summary.weak_critical_families, 2);
+assert.equal(summary.completeness_pct, 91);
+assert.equal(summary.strong_critical_families, 11);
+assert.equal(summary.weak_critical_families, 1);
 assert.deepEqual(summary.major_gap_families, []);
-assert.deepEqual(summary.final_blockers.map((row) => row.family), ['district_or_county_education_routing', 'county_local_disability_resources']);
+assert.deepEqual(summary.final_blockers.map((row) => row.family), ['district_or_county_education_routing']);
 
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
 assert.equal(byFamily.get('special_education_idea_part_b').family_status, 'verified_state_grade');
 assert.match(byFamily.get('special_education_idea_part_b').status_reason, /exact statewide special-education authority leaf/);
 assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_statewide_de_doe_root_rows_only');
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /All 3 county-linked district-routing rows/);
-assert.equal(byFamily.get('county_local_disability_resources').family_status, 'blocked_doi_mirror_county_rows_only');
-assert.match(byFamily.get('county_local_disability_resources').status_reason, /Nineteen county-office rows/);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /WordPress sitemap/);
+assert.equal(byFamily.get('county_local_disability_resources').family_status, 'verified_state_grade');
+assert.match(byFamily.get('county_local_disability_resources').status_reason, /State Service Centers page/);
 
 assert.equal(failureRows.some((row) => row.family === 'special_education_idea_part_b'), false);
+assert.equal(failureRows.some((row) => row.family === 'county_local_disability_resources'), false);
 const eduFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduFailure.failure_code, 'all_counties_still_use_statewide_de_doe_root');
-const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyFailure.failure_code, 'county_office_rows_still_backed_by_doi_mirror');
 
 const specialEdVerified = verifiedRows.find((row) => row.family === 'special_education_idea_part_b');
 assert.equal(specialEdVerified.family_status, 'verified_state_grade');
@@ -59,10 +58,17 @@ assert.equal(specialEdVerified.sample_count, 1);
 assert.match(specialEdVerified.samples[0].source_url, /families\/k12\/special-education/);
 assert.match(specialEdVerified.samples[0].final_url, /legacy\/home\/instruction-and-assessment\/exceptional-children\/special-education/);
 
+const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
+assert.equal(countyVerified.family_status, 'verified_state_grade');
+assert.equal(countyVerified.sample_count, 1);
+assert.equal(countyVerified.samples[0].source_url, 'https://dhss.delaware.gov/dss/division-of-social-services/state-service-centers/');
+assert.match(countyVerified.samples[0].evidence_snippet, /New Castle, Kent County, and Sussex County/);
+
 assert.equal(nextRows.some((row) => row.family === 'special_education_idea_part_b'), false);
-assert.equal(batchSummary.completeness_pct, 83);
-assert.deepEqual(batchSummary.repaired_families, ['special_education_idea_part_b']);
-assert.ok(report.includes('live DOE navigation exposes an exact current special-education leaf'));
-assert.ok(report.includes('district routing remains statewide-root fallback only across all 3 counties'));
+assert.equal(nextRows.some((row) => row.family === 'county_local_disability_resources'), false);
+assert.equal(batchSummary.completeness_pct, 91);
+assert.deepEqual(batchSummary.repaired_families, ['special_education_idea_part_b', 'county_local_disability_resources']);
+assert.ok(report.includes('State Service Centers page preserves county-grouped service-center listings'));
+assert.ok(report.includes('only the education local-proof family remains blocked'));
 
 console.log('test-batch99-delaware-blocker-refinement-v1: ok');

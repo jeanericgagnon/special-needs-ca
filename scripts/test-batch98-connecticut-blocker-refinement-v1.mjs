@@ -33,35 +33,43 @@ assert.equal(result.classification, 'BLOCKED');
 assert.equal(result.index_safe, false);
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
-assert.deepEqual(summary.final_blockers.map((row) => row.family), ['district_or_county_education_routing', 'parent_training_information_center', 'county_local_disability_resources']);
+assert.equal(summary.completeness_pct, 83);
+assert.equal(summary.strong_critical_families, 10);
+assert.equal(summary.weak_critical_families, 2);
+assert.deepEqual(summary.final_blockers.map((row) => row.family), ['district_or_county_education_routing', 'county_local_disability_resources']);
 
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
 assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_statewide_ct_sde_fallback_rows_only');
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Six county-linked rows/);
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Fairfield and Hartford/);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /special-education leaf/);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /EdSight/);
 assert.equal(byFamily.get('county_local_disability_resources').family_status, 'blocked_doi_and_generic_locations_rows_only');
-assert.match(byFamily.get('county_local_disability_resources').status_reason, /Eleven county-office rows/);
-assert.match(byFamily.get('county_local_disability_resources').status_reason, /Tolland row/);
-assert.match(byFamily.get('parent_training_information_center').status_reason, /homepage exposed only two same-domain links/);
-assert.match(byFamily.get('parent_training_information_center').status_reason, /returned 404/);
+assert.match(byFamily.get('county_local_disability_resources').status_reason, /office-location leaves/);
+assert.match(byFamily.get('county_local_disability_resources').status_reason, /HTTP 404/);
+assert.equal(byFamily.get('parent_training_information_center').family_status, 'verified_state_grade');
+assert.match(byFamily.get('parent_training_information_center').status_reason, /federally funded Parent Training and Information/);
 
 const eduFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduFailure.failure_code, 'all_counties_still_use_statewide_ct_sde_roots');
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyFailure.failure_code, 'county_office_rows_still_backed_by_doi_or_generic_locations_root');
+assert.ok(!failureRows.some((row) => row.family === 'parent_training_information_center'));
 
 const ptiVerified = verifiedRows.find((row) => row.family === 'parent_training_information_center');
-assert.match(ptiVerified.query_basis, /bounded same-domain follow-ups/);
-assert.match(ptiVerified.blocker_evidence, /only two same-domain links/);
-assert.match(ptiVerified.blocker_evidence, /preserved explicit PTI/);
+assert.equal(ptiVerified.family_status, 'verified_state_grade');
+assert.match(ptiVerified.query_basis, /explicitly preserves Parent Training and Information Center designation/);
+assert.equal(ptiVerified.blocker_code, null);
+assert.equal(ptiVerified.samples[0].source_url, 'https://cpacinc.org/about.aspx');
+assert.match(ptiVerified.samples[0].evidence_snippet, /Parent Training and Information/);
 
 const eduNext = nextRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduNext.failure_code, 'all_counties_still_use_statewide_ct_sde_roots');
 const countyNext = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyNext.failure_code, 'county_office_rows_still_backed_by_doi_or_generic_locations_root');
+assert.ok(!nextRows.some((row) => row.family === 'parent_training_information_center'));
 
 assert.equal(batchSummary.classification, 'BLOCKED');
-assert.ok(report.includes('one generic locations root row'));
-assert.ok(report.includes('only two same-domain links'));
+assert.ok(report.includes('CPAC is no longer a blocker'));
+assert.ok(report.includes('EdSight'));
+assert.ok(report.includes('bounded DSS location-path checks'));
 
 console.log('test-batch98-connecticut-blocker-refinement-v1: ok');

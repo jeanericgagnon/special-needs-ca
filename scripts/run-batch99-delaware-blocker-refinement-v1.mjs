@@ -23,8 +23,8 @@ const OUTPUTS = {
 };
 
 const SPECIAL_ED_EVIDENCE = 'Reviewed 2026-06-22 live Delaware DOE navigation and exact special-education leafs. The current DOE homepage exposes https://education.delaware.gov/families/k12/special-education/, which resolves to the live legacy special-education page at https://education.delaware.gov/legacy/home/instruction-and-assessment/exceptional-children/special-education/ and preserves statewide special-education authority evidence. This repairs the zero-sample statewide special_education_idea_part_b family, but it does not satisfy county- or district-grade routing.';
-const EDUCATION_ROUTING_EVIDENCE = 'Reviewed current Delaware school_district rows on 2026-06-22. All 3 county-linked district-routing rows still point only to the statewide Delaware DOE root https://www.doe.k12.de.us/ rather than district-owned special-education leaves, so no county-grade district routing page is currently verified for Kent, New Castle, or Sussex.';
-const COUNTY_EVIDENCE = 'Reviewed current Delaware county_offices rows on 2026-06-22. Nineteen county-office rows still use the DOI mirror https://doi.org/10.7910/DVN/AVRHMI with source_listed evidence, so county-local office routing remains backed by mirror data rather than reviewed county-owned leaves.';
+const EDUCATION_ROUTING_EVIDENCE = 'Reviewed 2026-06-22 bounded live Delaware DOE checks on the statewide special-education root, the legacy "For Districts and Charters" leaf, and the official public-school-list leaves discovered through the DOE WordPress sitemap. Those pages preserve statewide special-education authority and public-school list headings, but the fetched HTML still does not preserve district-owned special-education contact routing for Kent, New Castle, or Sussex. Delaware therefore still lacks county-grade district routing evidence.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 live official DHSS State Service Centers page https://dhss.delaware.gov/dss/division-of-social-services/state-service-centers/. The page preserves county-grouped local office routing directly in HTML for all three Delaware counties, including New Castle service centers in Wilmington/Newark/New Castle, Kent County centers in Dover and Smyrna, and Sussex County centers in Georgetown, Laurel, Seaford, Bridgeville, Milford, and Frankford.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -78,8 +78,9 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- Delaware now has reviewed statewide special-education authority evidence again, because the live DOE navigation exposes an exact current special-education leaf that resolves to the legacy special-education page.',
-    '- Delaware still cannot reach California-grade or become index-safe because district routing remains statewide-root fallback only across all 3 counties and county-local office routing still relies on DOI mirror rows instead of reviewed county-owned office leaves.',
-    '- Delaware is therefore still BLOCKED and not index-safe, but the remaining blockers are now limited to exact local-proof failures.',
+    '- Delaware now also has reviewed county-local office routing because the live DHSS State Service Centers page preserves county-grouped service-center listings directly in HTML for New Castle, Kent, and Sussex.',
+    '- Delaware still cannot reach California-grade or become index-safe because district routing remains unresolved after bounded DOE special-education, district-and-charter, and public-school-list checks failed to preserve district-owned special-education contacts.',
+    '- Delaware is therefore still BLOCKED and not index-safe, but only the education local-proof family remains blocked.',
   ].join('\n') + '\n';
 }
 
@@ -108,26 +109,19 @@ export function generateBatch99DelawareBlockerRefinementV1() {
     if (row.family === 'county_local_disability_resources') {
       return {
         ...row,
-        family_status: 'blocked_doi_mirror_county_rows_only',
-        status_reason: COUNTY_EVIDENCE,
+        family_status: 'verified_state_grade',
+        status_reason: 'The live DHSS State Service Centers page preserves county-grouped local office routing directly in HTML for New Castle, Kent, and Sussex.',
       };
     }
     return row;
   });
 
-  const updatedFailureRows = failureRows.filter((row) => row.family !== 'special_education_idea_part_b').map((row) => {
+  const updatedFailureRows = failureRows.filter((row) => !['special_education_idea_part_b', 'county_local_disability_resources'].includes(row.family)).map((row) => {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
         failure_code: 'all_counties_still_use_statewide_de_doe_root',
         evidence: EDUCATION_ROUTING_EVIDENCE,
-      };
-    }
-    if (row.family === 'county_local_disability_resources') {
-      return {
-        ...row,
-        failure_code: 'county_office_rows_still_backed_by_doi_mirror',
-        evidence: COUNTY_EVIDENCE,
       };
     }
     return row;
@@ -168,15 +162,30 @@ export function generateBatch99DelawareBlockerRefinementV1() {
     if (row.family === 'county_local_disability_resources') {
       return {
         ...row,
-        family_status: 'blocked_doi_mirror_county_rows_only',
-        blocker_code: 'county_office_rows_still_backed_by_doi_mirror',
-        blocker_evidence: COUNTY_EVIDENCE,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        query_basis: 'The reviewed Delaware DHSS State Service Centers page itself preserves county-grouped local office routing and replaces DOI mirror placeholders.',
+        blocker_code: null,
+        blocker_evidence: null,
+        samples: [
+          {
+            sample_name: 'Delaware DHSS State Service Centers',
+            source_url: 'https://dhss.delaware.gov/dss/division-of-social-services/state-service-centers/',
+            final_url: 'https://dhss.delaware.gov/dss/division-of-social-services/state-service-centers/',
+            verification_status: 'verified',
+            source_type: 'official_county_coverage_leaf',
+            source_table: 'reviewed_live_probe',
+            fetched_at: '2026-06-22T00:00:00.000Z',
+            evidence_snippet: 'The official State Service Centers page groups local office entries by New Castle, Kent County, and Sussex County and lists specific centers in Wilmington, Newark, New Castle, Dover, Smyrna, Georgetown, Laurel, Seaford, Bridgeville, Milford, and Frankford.',
+          },
+        ],
       };
     }
     return row;
   });
 
-  const updatedNextRows = nextRows.filter((row) => row.family !== 'special_education_idea_part_b').map((row) => {
+  const updatedNextRows = nextRows.filter((row) => !['special_education_idea_part_b', 'county_local_disability_resources'].includes(row.family)).map((row) => {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
@@ -184,21 +193,15 @@ export function generateBatch99DelawareBlockerRefinementV1() {
         evidence: EDUCATION_ROUTING_EVIDENCE,
       };
     }
-    if (row.family === 'county_local_disability_resources') {
-      return {
-        ...row,
-        failure_code: 'county_office_rows_still_backed_by_doi_mirror',
-        evidence: COUNTY_EVIDENCE,
-      };
-    }
     return row;
   });
 
   const updatedSummary = {
     ...summary,
-    completeness_pct: 83,
-    strong_critical_families: 10,
-    weak_critical_families: 2,
+    completeness_pct: 91,
+    strong_critical_families: 11,
+    weak_critical_families: 1,
+    primary_gap_reason: 'district_grade_education_leafs_still_missing',
     major_gap_families: [],
     final_blockers: [
       {
@@ -206,13 +209,6 @@ export function generateBatch99DelawareBlockerRefinementV1() {
         severity: 'critical',
         failure_code: 'all_counties_still_use_statewide_de_doe_root',
         evidence: EDUCATION_ROUTING_EVIDENCE,
-        next_action: 'author_county_or_district_exact_targets',
-      },
-      {
-        family: 'county_local_disability_resources',
-        severity: 'critical',
-        failure_code: 'county_office_rows_still_backed_by_doi_mirror',
-        evidence: COUNTY_EVIDENCE,
         next_action: 'author_county_or_district_exact_targets',
       },
     ],
@@ -230,7 +226,7 @@ export function generateBatch99DelawareBlockerRefinementV1() {
     classification: updatedSummary.classification,
     index_safe: updatedSummary.index_safe,
     completeness_pct: updatedSummary.completeness_pct,
-    repaired_families: ['special_education_idea_part_b'],
+    repaired_families: ['special_education_idea_part_b', 'county_local_disability_resources'],
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
     evidence_checks: {
       specialEducation: SPECIAL_ED_EVIDENCE,
@@ -247,7 +243,7 @@ export function generateBatch99DelawareBlockerRefinementV1() {
       `- classification: ${updatedSummary.classification}`,
       `- index_safe: ${updatedSummary.index_safe ? 'true' : 'false'}`,
       `- completeness_pct: ${updatedSummary.completeness_pct}`,
-      '- repaired_families: special_education_idea_part_b',
+      '- repaired_families: special_education_idea_part_b, county_local_disability_resources',
       '',
       '## Evidence checks',
       '',
