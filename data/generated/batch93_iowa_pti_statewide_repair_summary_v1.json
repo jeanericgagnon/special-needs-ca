@@ -1,0 +1,21 @@
+{
+  "batch": "batch_93_iowa_pti_statewide_repair_v1",
+  "generated_at": "2026-06-22T15:01:09.464Z",
+  "state": "iowa",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing"
+  ],
+  "evidence_checks": {
+    "pti": {
+      "sourceUrl": "https://www.askresource.org/about/what-ASK-does-do/parent-training-and-information-center-ptic",
+      "finalUrl": "https://www.askresource.org/about/what-ASK-does-do/parent-training-and-information-center-ptic",
+      "status": 200,
+      "evidenceSnippet": "ASK Resource Center has been Iowa’s Parent and Training Information Center (PTIC or PTI) since 1998. Iowa has only one PTI, and we operate statewide. The PTI is a federally funded project of the U.S. Department of Education."
+    }
+  }
+}

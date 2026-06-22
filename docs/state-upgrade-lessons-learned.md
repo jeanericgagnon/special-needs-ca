@@ -304,3 +304,11 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### County Leaf Packets Can Fail Because The Root Host Drifted, Not Because The County Lacks An Official Site
 *   **Problem:** California's bounded leaf packets carried some county roots that now drift or fail at the hostname level, while adjacent county variants such as `alpinecountyca.gov` still respond live and could support exact county-local authoring.
 *   **Lesson:** When a county/district leaf packet dies at `root_fetch_failed_0` or a redirect mismatch, probe the county's likely official hostname variants before declaring the family exhausted. Treat stale packet hosts as repair-first packet drift, not as evidence that local official coverage is impossible.
+
+### Legal-Aid Homepages Can Be Enough Even When Guessed Subpages 404
+*   **Problem:** Indiana Legal Services returned 404 on guessed `/about-us/` and `/get-help/` leaves, but the live homepage itself already preserved statewide free civil legal assistance language plus a direct Get Help route.
+*   **Lesson:** If a first-party legal-aid homepage explicitly says it provides free civil legal assistance statewide and exposes a direct help/apply route, clear the legal-aid family from the homepage and stop. Do not keep probing guessed subpaths once the role-pure homepage already satisfies the statewide gate.
+
+### Same-Domain Sitemaps Can Hide The Exact PTI Leaf One Level Past A Generic About Page
+*   **Problem:** Iowa's reviewed ASK About page preserved real statewide family-support evidence but still failed the PTI gate, while the same-domain sitemap exposed a deeper leaf named `parent-training-and-information-center-ptic` with the exact designation text.
+*   **Lesson:** When a first-party About page is real but too generic for PTI, fetch the same-domain sitemap before reopening broader discovery. If the sitemap exposes a role-pure PTI leaf, verify that exact leaf and stop instead of leaving the family blocked on the generic About page.

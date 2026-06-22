@@ -1,0 +1,34 @@
+{
+  "batch": "batch_88_indiana_legal_aid_and_pti_refresh_v1",
+  "generated_at": "2026-06-22T14:58:34.384Z",
+  "state": "indiana",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "legal_aid",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "parent_training_information_center",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "legalAid": {
+      "sourceUrl": "https://www.indianalegalservices.org/",
+      "finalUrl": "https://www.indianalegalservices.org/",
+      "status": 200,
+      "evidenceSnippet": "free civil legal assistance to eligible low-income residents throughout the state of Indiana."
+    },
+    "pti": {
+      "sourceUrls": [
+        "https://insource.org/",
+        "https://insource.org/about/",
+        "https://insource.org/get-help/",
+        "https://insource.org/contact-us/"
+      ],
+      "explicitDesignationPreserved": false,
+      "blockerEvidence": "Bounded live review of the INSOURCE home, about, get-help, and contact pages still preserves statewide Indiana parent-support and training scope, but does not preserve explicit PTI / Parent Training and Information Center designation text."
+    }
+  }
+}
