@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program } from '@/lib/db';
+import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState } from '@/lib/publicTruth';
 import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
@@ -73,7 +73,7 @@ export async function GET() {
     const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
     let countyHasOfficialSource = false;
-    if (rcs.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
+    if (rcs.some((rc: any) => !!rc.source_url) || countyDistricts.some((sd: any) => !!sd.source_url) || offices.some((co: any) => !!co.source_url)) {
       countyHasOfficialSource = true;
     }
 
@@ -155,9 +155,9 @@ export async function GET() {
   // 2. Diagnosis directories (/benefits/[state]/[diagnosis])
   for (const st of states) {
     const statePrograms = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(st.id) as Program[];
-    const dates = statePrograms.map(p => p.last_verified_date).filter(Boolean) as string[];
+    const dates = statePrograms.map((p: any) => p.last_verified_date).filter(Boolean) as string[];
     const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-    const scores = statePrograms.map(p => normalizeConfidenceScore(p.confidence_score)).filter((s): s is number => s !== null);
+    const scores = statePrograms.map((p: any) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
     const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
     for (const diag of diagnosesSlugs) {
@@ -166,9 +166,9 @@ export async function GET() {
         stateId: st.id,
         diagnosisId: diag,
         confidenceScore,
-        hasOfficialSource: statePrograms.length > 0 && statePrograms.some(p => !!p.official_source_url),
+        hasOfficialSource: statePrograms.length > 0 && statePrograms.some((p: any) => !!p.official_source_url),
         lastVerifiedDate: minDate,
-        hasNoPlaceholderData: statePrograms.every(p => assertNoPlaceholderData(JSON.stringify(p)))
+        hasNoPlaceholderData: statePrograms.every((p: any) => assertNoPlaceholderData(JSON.stringify(p)))
       });
 
       if (shouldIncludeInSitemap(policy)) {
