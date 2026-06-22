@@ -1,0 +1,16 @@
+{
+  "state": "maine",
+  "family": "legal_aid",
+  "source_url": "https://www.ptla.org/",
+  "final_url": "https://www.ptla.org/",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_maine_check",
+  "fetched_at": "2026-06-23T00:09:00.000Z",
+  "page_title": "Self-Help Tools | Pine Tree Legal Assistance",
+  "evidence_snippet": "Pine Tree Legal Assistance states that it provides free civil legal aid in Maine and preserves statewide legal-help topics including rental housing, money and debt, health and public benefits, domestic violence, and divorce and family matters.",
+  "review_notes": [
+    "The homepage itself is sufficient because it explicitly states free civil legal aid in Maine and exposes statewide help topics.",
+    "This is stronger statewide legal-aid proof than a bar referral or a single project page."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "state": "maryland",
+  "family": "parent_training_information_center",
+  "source_url": "https://www.ppmd.org/about-us/",
+  "final_url": "https://www.ppmd.org/about-us/",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_maryland_check",
+  "fetched_at": "2026-06-23T00:16:00.000Z",
+  "page_title": "About Us | Parents' Place of Maryland",
+  "evidence_snippet": "Parents’ Place supports families of children with disabilities and special health care needs. Serving as Maryland’s Parent Training and Information Center and Family-to-Family Health Information Center, Parents’ Place supports thousands of Maryland families each year.",
+  "review_notes": [
+    "The homepage preserved special-education information-center language, but the About page preserves the explicit Parent Training and Information Center designation needed for PTI verification."
+  ]
+}

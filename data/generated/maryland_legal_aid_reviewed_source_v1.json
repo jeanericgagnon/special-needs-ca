@@ -1,0 +1,15 @@
+{
+  "state": "maryland",
+  "family": "legal_aid",
+  "source_url": "https://www.mdlab.org/",
+  "final_url": "https://www.mdlab.org/",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_maryland_check",
+  "fetched_at": "2026-06-23T00:16:00.000Z",
+  "page_title": "Home - Maryland Legal Aid",
+  "evidence_snippet": "Maryland Legal Aid provides a full range of free civil legal services to financially eligible individuals from 12 office locations and preserves direct statewide Get Free Legal Help intake on the public page.",
+  "review_notes": [
+    "This is a direct statewide legal-aid source with named intake and office coverage, not just a general legal-information portal."
+  ]
+}

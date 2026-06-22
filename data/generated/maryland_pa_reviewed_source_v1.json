@@ -1,0 +1,15 @@
+{
+  "state": "maryland",
+  "family": "protection_and_advocacy",
+  "source_url": "https://disabilityrightsmd.org/about/",
+  "final_url": "https://disabilityrightsmd.org/about/",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_maryland_check",
+  "fetched_at": "2026-06-23T00:16:00.000Z",
+  "page_title": "About DRM - Disability Rights Maryland",
+  "evidence_snippet": "Disability Rights Maryland is Maryland’s designated Protection & Advocacy agency and is federally mandated to advance the civil rights of people with disabilities. DRM provides free legal services to Marylanders of any age with all types of disabilities.",
+  "review_notes": [
+    "The About page preserves the explicit designated Protection & Advocacy language needed for statewide P&A verification."
+  ]
+}
