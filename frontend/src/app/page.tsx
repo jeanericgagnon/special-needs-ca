@@ -53,19 +53,7 @@ export default async function Home() {
         fontFamily: "'Outfit', sans-serif"
       }}>
         <span style={{ fontWeight: 500 }}>Compare IEP dispute win/loss rates & inclusion metrics across school districts:</span>
-        <Link href="/school-districts" style={{ 
-          color: 'var(--primary-color)', 
-          fontWeight: 700, 
-          textDecoration: 'none', 
-          display: 'inline-flex', 
-          alignItems: 'center', 
-          gap: '0.25rem',
-          borderBottom: '1.5px solid transparent',
-          transition: 'border-color 0.2s'
-        }}
-        onMouseEnter={(e) => e.currentTarget.style.borderColor = 'var(--primary-color)'}
-        onMouseLeave={(e) => e.currentTarget.style.borderColor = 'transparent'}
-        >
+        <Link href="/school-districts" className="home-explore-link">
           Explore School District Dashboards →
         </Link>
       </div>
