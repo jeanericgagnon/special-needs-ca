@@ -1,0 +1,13 @@
+{
+  "batch": "batch_54_illinois_legal_aid_statewide_repair_v1",
+  "generated_at": "2026-06-22T00:09:35.256Z",
+  "state": "illinois",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "legal_aid_source": "https://www.illinoislegalaid.org/",
+  "remaining_failure_families": [
+    "district_or_county_education_routing",
+    "parent_training_information_center"
+  ]
+}
