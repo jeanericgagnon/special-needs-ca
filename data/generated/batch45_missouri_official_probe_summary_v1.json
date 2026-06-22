@@ -55,6 +55,20 @@
     "contentType": "text/html; charset=UTF-8",
     "evidence": "Reviewed 2026-06-21 live probe returned \"Employment Services | dmh.mo.gov\", but this is a generic DMH employment-services page and does not prove statewide vocational rehabilitation or Pre-ETS routing."
   },
+  "vrMain": {
+    "url": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation",
+    "finalUrl": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri Vocational Rehabilitation leaf with statewide VR contact, office-location, and youth-services routing."
+  },
+  "vrYouthServices": {
+    "url": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation/youth-services",
+    "finalUrl": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation/youth-services",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri Youth Services leaf with explicit Pre-Employment Transition Services (pre-ETS) language and student-disability routing."
+  },
   "legacyDdRoot": {
     "url": "https://dhhs.missouri.gov/dd",
     "finalUrl": "",
@@ -77,10 +91,10 @@
     "evidence": "Reviewed 2026-06-20 low-token fetch followed ptimpact.org to missouriparentsact.org and received HTTP 403, so the exact statewide PTI candidate could not be verified from fetched first-party evidence."
   },
   "desePartCGuess": {
-    "url": "https://dese.mo.gov/childhood/first-steps",
-    "finalUrl": "https://dese.mo.gov/childhood/first-steps",
-    "status": 404,
+    "url": "https://dese.mo.gov/childhood/early-intervention/first-steps",
+    "finalUrl": "https://dese.mo.gov/childhood/early-intervention/first-steps",
+    "status": 200,
     "contentType": "text/html; charset=UTF-8",
-    "evidence": "Reviewed 2026-06-21 bounded DESE repair pass did not surface a reviewed Part C / First Steps leaf, and the guessed DESE First Steps path returned HTTP 404."
+    "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri First Steps leaf with Part C, referral, SPOE, and Early Intervention contact language."
   }
 }

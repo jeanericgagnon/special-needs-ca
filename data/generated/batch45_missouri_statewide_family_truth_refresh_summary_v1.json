@@ -2,10 +2,10 @@
   "state": "missouri",
   "classification": "BLOCKED",
   "index_safe": false,
-  "completeness_pct": 58,
-  "strong_critical_families": 7,
+  "completeness_pct": 75,
+  "strong_critical_families": 9,
   "weak_critical_families": 2,
-  "missing_critical_families": 3,
+  "missing_critical_families": 1,
   "evidence_checks": {
     "medicaidHealthcare": {
       "url": "https://mydss.mo.gov/healthcare",
@@ -48,6 +48,20 @@
       "status": 200,
       "contentType": "text/html; charset=UTF-8",
       "evidence": "Reviewed 2026-06-21 live probe returned the exact DESE special-education leaf with title \"The Office of Special Education | Missouri Department of Elementary and Secondary Education\" and H1 \"The Office of Special Education.\""
+    },
+    "vrMain": {
+      "url": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation",
+      "finalUrl": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri Vocational Rehabilitation leaf with statewide VR contact, office-location, and youth-services routing."
+    },
+    "vrYouthServices": {
+      "url": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation/youth-services",
+      "finalUrl": "https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation/youth-services",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "evidence": "Reviewed 2026-06-21 live probe returned the exact Missouri Youth Services leaf with explicit Pre-Employment Transition Services (pre-ETS) language and student-disability routing."
     },
     "moadvocacyAcceptedFinalUrl": "https://www.moadvocacy.org/",
     "ptiBlocked": {
