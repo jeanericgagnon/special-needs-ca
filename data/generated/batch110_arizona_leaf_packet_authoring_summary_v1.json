@@ -1,0 +1,16 @@
+{
+  "batch": "batch_110_arizona_leaf_packet_authoring_v1",
+  "generated_at": "2026-06-22T18:30:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "authored_packets": [
+    "data/generated/arizona_district_or_county_education_routing_leaf_authoring_packet_v1.json",
+    "data/generated/arizona_county_local_disability_resources_leaf_authoring_packet_v1.json"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ]
+}

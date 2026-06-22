@@ -404,3 +404,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### School-List Pages Can Leak County-Useful District Seeds Through Embedded Datasets
 *   **Lesson:** If a public school-list page looks generic, inspect the page source once before discarding it. Delaware’s DOE list page embedded a machine-readable district dataset plus report-card link template, which was enough to pick one real district per county and jump straight to first-party special-education leaves.
+
+### Host-Level Challenge Plus Dead Legacy Locator Is A Terminal Local-Office Blocker
+*   **Lesson:** If a state office host blocks not just leaves but also `robots.txt` and `sitemap.xml` with `cf-mitigated: challenge`, and the last legacy locator URL is an official 404, treat the local-office family as host-level blocked and stop probing sibling paths until a new official host or browser-readable artifact appears.

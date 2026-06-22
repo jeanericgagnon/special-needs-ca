@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_local_directory_challenge_blocks_reviewed_county_grade_evidence",
+  "primary_gap_reason": "official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,8 +42,8 @@
   "final_blockers": [
     {
       "family": "county_local_disability_resources",
-      "failure_code": "official_local_directory_challenge_blocks_reviewed_county_grade_evidence",
-      "evidence": "Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots, plus legacy dhss.alaska.gov aliases that now redirect back to the same health.alaska.gov surfaces. Every checked office candidate returned HTTP 403 with the Cloudflare \"Just a moment...\" shell, so county-grade local-office evidence is blocked at the domain level rather than at one stale page."
+      "failure_code": "official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404",
+      "evidence": "Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, contact, newer /en/ paths, and the host-level robots.txt plus sitemap.xml surfaces. Every live health.alaska.gov candidate returned HTTP 403 with cf-mitigated: challenge and the Cloudflare \"Just a moment...\" shell, while the legacy official locator https://dhss.alaska.gov/locations returned HTTP 404 and the legacy dhss.alaska.gov DPA/DSDS aliases only 302 back into the same challenged host. No alternate official county-grade office leaf or document was recovered in this bounded pass."
     }
   ]
 }

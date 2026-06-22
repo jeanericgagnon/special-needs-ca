@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: official_local_directory_challenge_blocks_reviewed_county_grade_evidence
+- primary_gap_reason: official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved (Official Alaska DPA/SDS office-location, default, contact, and legacy dhss.alaska.gov alias roots all resolve to the same Cloudflare "Just a moment..." HTTP 403 shell in the current lane, so county-grade local-office evidence remains blocked at the domain level.)
+- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved (Official Alaska DPA/SDS office-location, default, contact, newer /en/ paths, robots.txt, and sitemap.xml all return the same Cloudflare challenge shell, while the legacy dhss.alaska.gov/locations locator is HTTP 404, so county-grade local-office evidence is blocked at the host level rather than at one stale leaf.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_local_directory_challenge_blocks_reviewed_county_grade_evidence :: Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots, plus legacy dhss.alaska.gov aliases that now redirect back to the same health.alaska.gov surfaces. Every checked office candidate returned HTTP 403 with the Cloudflare "Just a moment..." shell, so county-grade local-office evidence is blocked at the domain level rather than at one stale page.
+- county_local_disability_resources: official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404 :: Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, contact, newer /en/ paths, and the host-level robots.txt plus sitemap.xml surfaces. Every live health.alaska.gov candidate returned HTTP 403 with cf-mitigated: challenge and the Cloudflare "Just a moment..." shell, while the legacy official locator https://dhss.alaska.gov/locations returned HTTP 404 and the legacy dhss.alaska.gov DPA/DSDS aliases only 302 back into the same challenged host. No alternate official county-grade office leaf or document was recovered in this bounded pass.
 
 ## Verified source samples
 
@@ -40,16 +40,15 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved; samples=3; first=https://health.alaska.gov/dpa/Pages/office-locations.aspx
+- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved; samples=4; first=https://health.alaska.gov/dpa/Pages/office-locations.aspx
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_local_office_directory_is_rehydrated_or_replaced_with_reviewed_first_party_office_listing
+- [critical] county_local_disability_resources: hold_blocked_until_official_local_office_directory_is_republished_or_browser-readable_from_a_reviewable_official_host
 
 ## Repair decision
 
-- District or county education routing is verified from the official Alaska DEED district-profiles directory, district map, and district detail leaves.
-- Protection and advocacy remains verified from the DLCAK first-party funding and statewide advocacy pages.
-- Parent training and information center is now verified from the authoritative Parent Center Hub Alaska leaf, which explicitly labels Stone Soup Group as Alaska PTI and preserves Alaska contact evidence.
-- County-local disability resources remain blocked because reviewed 2026-06-22 live official alaska dpa and sds office-directory candidates on health.alaska.gov, including office-locations, default, and contact roots, plus legacy dhss.alaska.gov aliases that now redirect back to the same health.alaska.gov surfaces. every checked office candidate returned http 403 with the cloudflare "just a moment..." shell, so county-grade local-office evidence is blocked at the domain level rather than at one stale page.
-- Alaska is therefore still BLOCKED and not index-safe because one critical county-local family remains unresolved, but the PTI blocker is now cleared.
+- The only remaining Alaska blocker is county/local disability resources.
+- This bounded pass confirmed the blocker is host-level on the current official Alaska DPA/SDS web stack, not one bad office leaf.
+- No alternate official county-grade office leaf or downloadable office directory was recovered during this pass.
+- Alaska remains BLOCKED and not index-safe until the official local-office directory is republished on a reviewable host or a reviewable official browser lane can preserve county-grade evidence.

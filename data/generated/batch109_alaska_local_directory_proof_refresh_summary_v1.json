@@ -1,0 +1,15 @@
+{
+  "batch": "batch_109_alaska_local_directory_proof_refresh_v1",
+  "generated_at": "2026-06-22T17:40:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "host_level_block_confirmed": true,
+  "lesson_added": false
+}

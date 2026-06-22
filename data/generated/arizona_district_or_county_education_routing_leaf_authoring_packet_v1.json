@@ -1,0 +1,50 @@
+{
+  "state": "arizona",
+  "state_code": "AZ",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing generic statewide Arizona education fallback rows with district-owned special-education or student-services leaves.",
+  "current_problem_metrics": {
+    "genericFallbackCountyRows": 15,
+    "challengedOfficialRoots": 8,
+    "authoredExactLeafCount": 0
+  },
+  "exact_target_goals": [
+    "district special education page",
+    "student services or exceptional student services page",
+    "district special education contact or department page"
+  ],
+  "exact_target_terms": [
+    "special education",
+    "exceptional student services",
+    "student services",
+    "special services",
+    "parent rights",
+    "special education contact"
+  ],
+  "representative_sources": [
+    "https://www.azed.gov/specialeducation"
+  ],
+  "root_domains_to_review": [
+    "district-owned Arizona K-12 domains once identified from reviewed county/district routing work",
+    "https://www.azed.gov/specialeducation"
+  ],
+  "affected_counties": [
+    "apache-az",
+    "cochise-az",
+    "coconino-az",
+    "gila-az",
+    "graham-az",
+    "greenlee-az",
+    "la-paz-az",
+    "maricopa-az",
+    "mohave-az",
+    "navajo-az",
+    "pima-az",
+    "pinal-az",
+    "santa-cruz-az",
+    "yavapai-az",
+    "yuma-az"
+  ],
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is authored for every Arizona county without relying on the challenged AZED root."
+}

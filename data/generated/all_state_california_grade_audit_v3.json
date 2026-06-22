@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T17:28:54.853Z",
+  "generatedAt": "2026-06-22T17:43:06.058Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 6,
@@ -151,7 +151,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "official_local_directory_challenge_blocks_reviewed_county_grade_evidence",
+      "packetPrimaryGapReason": "official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "full_domain_challenge_plus_missing_authored_local_leaf_packets",
+      "packetPrimaryGapReason": "official_roots_challenged_and_local_leaf_packets_authored_but_unverified",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

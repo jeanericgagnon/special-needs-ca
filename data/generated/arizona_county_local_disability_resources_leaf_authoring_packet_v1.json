@@ -1,0 +1,53 @@
+{
+  "state": "arizona",
+  "state_code": "AZ",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing DOI and generic locator fallback rows with reviewed Arizona county-specific Medicaid or DES office leaves.",
+  "current_problem_metrics": {
+    "doiFallbackCountyRows": 14,
+    "genericLegacyRootRows": 1,
+    "challengedOfficialRoots": 8,
+    "authoredExactLeafCount": 0
+  },
+  "exact_target_goals": [
+    "county or regional FAA office page",
+    "county benefits office contact page",
+    "official office directory or locator leaf with address and phone"
+  ],
+  "exact_target_terms": [
+    "office",
+    "locations",
+    "family assistance administration",
+    "faa",
+    "benefits office",
+    "contact",
+    "address"
+  ],
+  "representative_sources": [
+    "https://doi.org/10.7910/DVN/AVRHMI",
+    "https://dhhs.arizona.gov/locations"
+  ],
+  "root_domains_to_review": [
+    "https://des.az.gov/",
+    "https://www.azahcccs.gov/"
+  ],
+  "affected_counties": [
+    "apache-az",
+    "cochise-az",
+    "coconino-az",
+    "gila-az",
+    "graham-az",
+    "greenlee-az",
+    "la-paz-az",
+    "maricopa-az",
+    "mohave-az",
+    "navajo-az",
+    "pima-az",
+    "pinal-az",
+    "santa-cruz-az",
+    "yavapai-az",
+    "yuma-az"
+  ],
+  "packet_complete_when": "At least one reviewed county-specific office leaf is authored for every Arizona county without relying on DOI or generic state-root placeholders."
+}
