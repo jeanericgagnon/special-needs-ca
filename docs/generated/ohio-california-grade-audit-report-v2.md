@@ -50,7 +50,8 @@
 
 ## Ohio final blocker decision
 
-- County-local disability resources remain blocked because the bounded live Ohio JFS county-directory roots all failed or returned 404, and the remaining fallback packet evidence is only a DOI-hosted dataset mirror (https://doi.org/10.7910/DVN/AVRHMI), not live official county-grade office proof.
+- County-local disability resources remain blocked because the bounded live Ohio JFS county-directory roots all failed or returned 404, and the remaining fallback packet evidence is only a DOI-hosted dataset mirror (https://doi.org/), not live official county-grade office proof.
 - District or county education routing remains blocked because only 6 reviewed ESC-owned exact leaves across 8 bounded Ohio packet roots have been verified; that is not enough to truthfully prove district-grade routing across all 88 Ohio counties without reopening broader district authoring.
 - Legal aid is now verified at the statewide support layer because Ohio Legal Help is a reviewed Ohio-specific first-party legal-help portal that explicitly offers legal information, forms, and lawyer connections.
-- Ohio remains blocked and not index-safe until the county-local and district-grade education families have county-grade proof.
+- Opportunities for Ohioans with Disabilities, Disability Rights Ohio, and OCECD remain upgraded out of the blocker list because reviewed first-party or verified database evidence already existed on disk and now anchors the packet truthfully.
+- Ohio is therefore truthfully final-blocked and not index-safe until new exact official county-office or district leaf targets are authored.

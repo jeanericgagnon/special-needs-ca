@@ -1,12 +1,12 @@
 {
   "batch": "batch_38_ohio_final_blocker_refresh_v1",
-  "generated_at": "2026-06-21T21:10:08.937Z",
+  "generated_at": "2026-06-22T00:46:41.194Z",
   "state": "ohio",
   "classification": "BLOCKED",
   "index_safe": false,
-  "completeness_pct": 50,
+  "completeness_pct": 83,
   "education_leaf_count": 6,
   "education_root_count": 8,
   "county_local_root_count": 1,
-  "final_blocker_count": 6
+  "final_blocker_count": 2
 }

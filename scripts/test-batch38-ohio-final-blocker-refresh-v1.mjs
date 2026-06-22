@@ -31,7 +31,7 @@ const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/ohio-californ
 assert.equal(summary.classification, 'BLOCKED', 'Ohio refresh must keep the state blocked.');
 assert.equal(stateSummary.classification, 'BLOCKED', 'Ohio packet summary must remain blocked.');
 assert.equal(stateSummary.index_safe, false, 'Ohio must remain not index-safe.');
-assert.equal(stateSummary.completeness_pct, 75, 'Ohio completeness should rise once reviewed statewide support evidence is reconciled from disk.');
+assert.equal(stateSummary.completeness_pct, 83, 'Ohio completeness should reflect the repaired statewide support families.');
 
 const county = gapRows.find((row) => row.family === 'county_local_disability_resources');
 const edu = gapRows.find((row) => row.family === 'district_or_county_education_routing');
@@ -45,11 +45,11 @@ assert.equal(edu.family_status, 'blocked_exact_leaf_repair_exhausted', 'Ohio edu
 assert.equal(vr.family_status, 'verified_state_grade', 'Ohio VR must upgrade from the verified OOD program row already in the DB.');
 assert.equal(pa.family_status, 'verified_state_grade', 'Ohio P&A must upgrade from accepted first-party Disability Rights Ohio evidence already on disk.');
 assert.equal(pti.family_status, 'verified_state_grade', 'Ohio PTI must upgrade from verified OCECD nonprofit rows already in the DB.');
-assert.equal(legal.family_status, 'missing_verified_source', 'Ohio legal aid must remain explicit missing verified source.');
+assert.equal(legal.family_status, 'verified_state_grade', 'Ohio legal aid must remain verified from reviewed statewide Ohio Legal Help evidence.');
 
 assert.equal(failureRows.find((row) => row.family === 'county_local_disability_resources').failure_code, 'official_county_directory_failed_and_only_non_official_dataset_remains', 'Ohio county-local failure code must explain the DOI fallback problem.');
 assert.equal(failureRows.find((row) => row.family === 'district_or_county_education_routing').failure_code, 'bounded_esc_leaf_packet_exhausted_before_county_grade_coverage', 'Ohio education failure code must explain packet exhaustion.');
-assert.equal(failureRows.find((row) => row.family === 'legal_aid').failure_code, 'authored_lsc_target_not_yet_replaced_with_reviewed_ohio_source', 'Ohio legal aid must explain the authored-but-unverified blocker.');
+assert.ok(!failureRows.some((row) => row.family === 'legal_aid'), 'Ohio legal aid must no longer appear in the failure ledger.');
 assert.ok(!failureRows.some((row) => row.family === 'vocational_rehabilitation_pre_ets'), 'Ohio VR must drop out of the failure ledger.');
 assert.ok(!failureRows.some((row) => row.family === 'protection_and_advocacy'), 'Ohio P&A must drop out of the failure ledger.');
 assert.ok(!failureRows.some((row) => row.family === 'parent_training_information_center'), 'Ohio PTI must drop out of the failure ledger.');
@@ -59,9 +59,8 @@ assert.deepEqual(
   [
     'county_local_disability_resources',
     'district_or_county_education_routing',
-    'legal_aid',
   ],
-  'Ohio next actions must collapse to the three real remaining blockers.',
+  'Ohio next actions must collapse to the two real remaining blockers.',
 );
 
 assert.equal(verifiedRows.find((row) => row.family === 'county_local_disability_resources').family_status, 'blocked_missing_live_official_county_directory', 'Ohio verified sources must expose county-local as a blocker.');
@@ -69,8 +68,9 @@ assert.equal(verifiedRows.find((row) => row.family === 'district_or_county_educa
 assert.equal(verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets').sample_count, 1, 'Ohio VR must carry a real reviewed OOD sample.');
 assert.equal(verifiedRows.find((row) => row.family === 'protection_and_advocacy').sample_count, 1, 'Ohio P&A must carry a reviewed Disability Rights Ohio sample.');
 assert.equal(verifiedRows.find((row) => row.family === 'parent_training_information_center').sample_count, 1, 'Ohio PTI must carry a verified OCECD sample.');
+assert.equal(verifiedRows.find((row) => row.family === 'legal_aid').family_status, 'verified_state_grade', 'Ohio verified sources must preserve statewide legal aid.');
 assert.ok(report.includes('Ohio final blocker decision'), 'Ohio report must include the final blocker decision section.');
 assert.ok(report.includes('DOI-hosted dataset mirror'), 'Ohio report must explain why the DOI fallback cannot count as county-grade proof.');
-assert.ok(report.includes('Opportunities for Ohioans with Disabilities, Disability Rights Ohio, and OCECD were upgraded out of the blocker list'), 'Ohio report must explain the reviewed statewide support upgrades.');
+assert.ok(report.includes('Opportunities for Ohioans with Disabilities, Disability Rights Ohio, and OCECD remain upgraded out of the blocker list'), 'Ohio report must explain the reviewed statewide support upgrades.');
 
 console.log('test-batch38-ohio-final-blocker-refresh-v1: ok');

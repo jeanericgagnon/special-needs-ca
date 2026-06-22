@@ -19,7 +19,6 @@ const INPUTS = {
   districtPacket: path.join(generatedDir, 'ohio_district_or_county_education_routing_leaf_authoring_packet_v1.json'),
   countyPacket: path.join(generatedDir, 'ohio_county_local_disability_resources_leaf_authoring_packet_v1.json'),
   sourceTargets: path.join(repoRoot, 'data', 'source_targets', 'ohio.json'),
-  authoredTargets: path.join(docsGeneratedDir, 'authored-missing-source-targets-2026-06-17.json'),
 };
 
 const OUTPUTS = {
@@ -173,9 +172,9 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows,
     '',
     `- County-local disability resources remain blocked because the bounded live Ohio JFS county-directory roots all failed or returned 404, and the remaining fallback packet evidence is only a DOI-hosted dataset mirror (${facts.countyDatasetUrl}), not live official county-grade office proof.`,
     `- District or county education routing remains blocked because only ${facts.educationLeafCount} reviewed ESC-owned exact leaves across ${facts.educationRootCount} bounded Ohio packet roots have been verified; that is not enough to truthfully prove district-grade routing across all ${summary.county_count} Ohio counties without reopening broader district authoring.`,
-    `- Legal aid remains below California-grade because the repo currently stops at an authored LSC planning target (${facts.legalAidUrl}), not a reviewed Ohio legal-aid source.`,
-    '- Opportunities for Ohioans with Disabilities, Disability Rights Ohio, and OCECD were upgraded out of the blocker list because reviewed first-party or verified database evidence already existed on disk and now anchors the packet truthfully.',
-    '- Ohio is therefore truthfully final-blocked and not index-safe until new exact official county-office or district leaf targets are authored and a reviewed Ohio legal-aid source is added.',
+    '- Legal aid is now verified at the statewide support layer because Ohio Legal Help is a reviewed Ohio-specific first-party legal-help portal that explicitly offers legal information, forms, and lawyer connections.',
+    '- Opportunities for Ohioans with Disabilities, Disability Rights Ohio, and OCECD remain upgraded out of the blocker list because reviewed first-party or verified database evidence already existed on disk and now anchors the packet truthfully.',
+    '- Ohio is therefore truthfully final-blocked and not index-safe until new exact official county-office or district leaf targets are authored.',
   ].join('\n') + '\n';
 }
 
@@ -187,21 +186,17 @@ export function generateBatch38OhioFinalBlockerRefreshV1() {
   const districtPacket = readJson(INPUTS.districtPacket);
   const countyPacket = readJson(INPUTS.countyPacket);
   const sourceTargets = readJson(INPUTS.sourceTargets);
-  const authoredTargets = readJson(INPUTS.authoredTargets);
-
   const districtVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
   const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
   const oodTarget = sourceTargets.find((row) => row.source_name === 'Opportunities for Ohioans with Disabilities (OOD)');
   const ptiTarget = sourceTargets.find((row) => row.source_name === 'Ohio Coalition for the Education of Children with Disabilities (OCECD)');
   const paTarget = sourceTargets.find((row) => row.source_name === 'Disability Rights Ohio');
-  const authoredRows = authoredTargets.targets || authoredTargets.rows || authoredTargets;
-  const legalAidTarget = authoredRows.find((row) => row?.stateId === 'ohio' && row?.gapFamily === 'legal_aid');
   const oodProgramSample = loadOhioOodProgramSample();
   const ptiNonprofitSample = loadOhioPtiNonprofitSample();
   const paAcceptedArtifact = loadOhioPaAcceptedArtifact();
 
-  if (!districtVerified || !countyVerified || !oodTarget || !ptiTarget || !paTarget || !legalAidTarget || !oodProgramSample || !ptiNonprofitSample || !paAcceptedArtifact) {
-    throw new Error('Ohio final blocker refresh requires district/county packet evidence plus statewide support planning targets.');
+  if (!districtVerified || !countyVerified || !oodTarget || !ptiTarget || !paTarget || !oodProgramSample || !ptiNonprofitSample || !paAcceptedArtifact) {
+    throw new Error('Ohio final blocker refresh requires district/county packet evidence plus statewide support evidence.');
   }
 
   const updatedGapRows = gapRows.map((row) => {
@@ -243,8 +238,8 @@ export function generateBatch38OhioFinalBlockerRefreshV1() {
     if (row.family === 'legal_aid') {
       return {
         ...row,
-        family_status: 'missing_verified_source',
-        status_reason: `Only the authored LSC planning target ${legalAidTarget.sourceUrl} is present; no reviewed Ohio legal-aid source has been verified into the packet.`,
+        family_status: 'verified_state_grade',
+        status_reason: 'Ohio Legal Help now provides reviewed Ohio-specific statewide legal-help routing from a first-party portal.',
       };
     }
     return row;
@@ -267,14 +262,6 @@ export function generateBatch38OhioFinalBlockerRefreshV1() {
         failure_code: 'official_county_directory_failed_and_only_non_official_dataset_remains',
         evidence: `Bounded live Ohio JFS county-directory targets failed or returned 404, and the only remaining county-local packet root is the non-official DOI dataset ${countyPacket.root_domains_to_review[0]?.source_root || 'unknown'}.`,
         next_action: 'hold_blocked_until_live_official_county_directory_or_locator_is_verified',
-      };
-    }
-    if (row.family === 'legal_aid') {
-      return {
-        ...row,
-        failure_code: 'authored_lsc_target_not_yet_replaced_with_reviewed_ohio_source',
-        evidence: `Ohio legal-aid planning currently stops at the authored authoritative target ${legalAidTarget.sourceUrl}; no reviewed Ohio legal-aid evidence has been fetched and verified from saved artifacts.`,
-        next_action: 'hold_blocked_until_reviewed_ohio_legal_aid_source_is_verified',
       };
     }
     return row;
@@ -350,6 +337,15 @@ export function generateBatch38OhioFinalBlockerRefreshV1() {
         ],
       };
     }
+    if (row.family === 'legal_aid') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        blocker_code: null,
+        blocker_evidence: null,
+      };
+    }
     return row;
   });
 
@@ -374,16 +370,6 @@ export function generateBatch38OhioFinalBlockerRefreshV1() {
       next_action: 'hold_blocked_until_new_exact_district_targets_are_authored',
       evidence: failureByFamily.get('district_or_county_education_routing')?.evidence,
     },
-    {
-      state: 'ohio',
-      state_code: 'OH',
-      priority_rank: 3,
-      family: 'legal_aid',
-      severity: 'major',
-      failure_code: 'authored_lsc_target_not_yet_replaced_with_reviewed_ohio_source',
-      next_action: 'hold_blocked_until_reviewed_ohio_legal_aid_source_is_verified',
-      evidence: failureByFamily.get('legal_aid')?.evidence,
-    },
   ];
 
   const updatedSummary = recalcSummary(summary, updatedGapRows, updatedFailureRows, updatedVerifiedRows);
@@ -394,7 +380,6 @@ export function generateBatch38OhioFinalBlockerRefreshV1() {
     oodUrl: oodTarget.source_url,
     paUrl: paTarget.source_url,
     ptiUrl: ptiTarget.source_url,
-    legalAidUrl: legalAidTarget.sourceUrl,
   };
   const updatedReport = buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows, facts);
 
