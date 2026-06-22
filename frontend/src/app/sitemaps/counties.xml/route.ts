@@ -66,9 +66,9 @@ export async function GET() {
     const allDates = [...rcDates, ...sdDates, ...coDates];
     const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-    const rcScores = rcs.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
-    const sdScores = countyDistricts.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
-    const coScores = offices.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+    const rcScores = rcs.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+    const sdScores = countyDistricts.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+    const coScores = offices.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
     const allScores = [...rcScores, ...sdScores, ...coScores];
     const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
@@ -205,9 +205,9 @@ export async function GET() {
         const sdList = countyDetails?.schoolDistricts || [];
         const coList = countyDetails?.countyOffices || [];
         const rcList = countyDetails?.regionalCenters || [];
-        const rcScores = rcList.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
-        const sdScores = sdList.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
-        const coScores = coList.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+        const rcScores = rcList.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const sdScores = sdList.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const coScores = coList.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
         const allScores = [...rcScores, ...sdScores, ...coScores];
         const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
