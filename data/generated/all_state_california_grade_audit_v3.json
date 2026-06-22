@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-22T04:06:25.616Z",
+  "generatedAt": "2026-06-22T04:12:09.921Z",
   "stateCount": 50,
   "classifications": {
-    "BLOCKED": 39,
+    "BLOCKED": 40,
     "COMPLETE": 2,
-    "UNSTARTED": 9
+    "UNSTARTED": 8
   },
   "indexSafeCount": 2,
   "incorrectlyIndexSafeStates": [],
@@ -2869,7 +2869,7 @@
       "stateId": "south-dakota",
       "stateCode": "SD",
       "stateName": "South Dakota",
-      "classification": "UNSTARTED",
+      "classification": "BLOCKED",
       "indexSafe": false,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
@@ -2878,11 +2878,11 @@
       "legacyManualReviewRate": 58.75,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 66,
-      "strongCriticalFamilies": 7,
+      "strongCriticalFamilies": 8,
       "weakCriticalFamilies": 3,
-      "missingCriticalFamilies": 2,
+      "missingCriticalFamilies": 1,
       "totalCriticalFamilies": 12,
-      "completenessPct": 58,
+      "completenessPct": 67,
       "dbMetrics": {
         "state_id": "south-dakota",
         "state_code": "SD",
@@ -2923,7 +2923,7 @@
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "legacy_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "missing",
+        "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "inventory_only",
         "legal_aid": "missing",
         "able_program": "verified_state_grade",
