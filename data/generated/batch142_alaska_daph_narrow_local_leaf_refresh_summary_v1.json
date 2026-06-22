@@ -1,0 +1,16 @@
+{
+  "batch": "batch_142_alaska_daph_narrow_local_leaf_refresh_v1",
+  "generated_at": "2026-06-22T21:23:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "dfcs_site_map_exposes_local_leaves": true,
+  "public_assistance_directory_recovered": false,
+  "lesson_added": false
+}

@@ -1,0 +1,10 @@
+# Alaska DAPH Narrow Local Leaf Refresh Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- refined_family: county_local_disability_resources
+- failure_code: dfcs_site_map_exposes_only_pioneer_home_local_leaves_while_public_assistance_office_routing_stays_blocked
+
+## Evidence
+
+- Reviewed 2026-06-22 bounded live official Alaska DFCS site-map, publications, search, and Alaska Pioneer Homes location leaves after the earlier reorg-host check. The DFCS site map and Publications page now prove the reorg host can publish exact local leaves, because they expose /daph/Pages/map.aspx and six named Alaska Pioneer Home location leaves. But those leaves are narrow Pioneer Home facility pages only, not Public Assistance, Medicaid, Senior and Disabilities, or county office-routing resources. The official DFCS search lane for public assistance still returns only the generic search shell without reviewed local-office results, the DFCS Services page still relays Adult Public Assistance and Medicaid users back to challenged health.alaska.gov leaves, and the exact health host office-locations leaf still returns HTTP 403 with the Cloudflare challenge shell. So Alaska now has proof that DFCS can host local pages, but no current official county-grade Public Assistance or disability office directory was recovered.

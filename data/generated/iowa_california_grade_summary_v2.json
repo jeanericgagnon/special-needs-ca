@@ -2,21 +2,19 @@
   "state": "iowa",
   "state_code": "IA",
   "state_name": "Iowa",
-  "batch": "batch_136_iowa_statewide_structure_dead_end_refresh_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "batch": "batch_143_iowa_district_directory_completion_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 99,
-  "completeness_pct": 91,
-  "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_iowa_education_pages_loop_only_to_statewide_structure_and_geodata",
-  "recommended_batch": "batch_2_repair_blocked",
-  "critical_gap_families": [
-    "district_or_county_education_routing"
-  ],
+  "primary_gap_reason": "none",
+  "recommended_batch": "complete_maintain",
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -33,19 +31,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "official_iowa_education_pages_loop_only_to_statewide_structure_and_geodata",
-      "evidence": "Reviewed 2026-06-22 official Iowa district-maps, special-education, dispute-resolution, and AEA Performance & Accountability pages. The district-maps page links statewide map/geodata artifacts such as 2025-26 Iowa Public School District Boundaries and internal DOE pages, while the AEA page links only statewide DOE structural, budget, CASA, and special-education pages. These official statewide surfaces expose no reviewed external AEA domains, no district-owned special-education leaves, and no county-grade routing contracts.",
-      "next_action": "hold_blocked_until_reviewed_district_owned_or_aea_owned_special_education_leaves_are_authored_outside_statewide_structure_pages"
-    }
-  ]
+  "final_blockers": []
 }

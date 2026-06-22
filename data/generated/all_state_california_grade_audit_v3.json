@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T21:19:34.963Z",
+  "generatedAt": "2026-06-22T21:29:32.052Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 11,
-    "BLOCKED": 39
+    "COMPLETE": 12,
+    "BLOCKED": 38
   },
-  "indexSafeCount": 11,
+  "indexSafeCount": 12,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -147,11 +147,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_local_directory_challenge_unresolved"
+        "county_local_disability_resources": "blocked_public_assistance_local_directory_missing_despite_other_dfcs_local_leaves"
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "dfcs_reorg_root_relays_back_to_challenged_health_host_and_no_public_assistance_contacts_exist",
+      "packetPrimaryGapReason": "dfcs_site_map_exposes_only_pioneer_home_local_leaves_while_public_assistance_office_routing_stays_blocked",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -217,11 +217,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_zero_exact_leaf_packet"
+        "county_local_disability_resources": "blocked_html_offices_verified_but_county_pdf_contract_unparsed"
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "azed_and_des_hosts_challenged_but_ahcccs_exposes_partial_official_local_artifacts",
+      "packetPrimaryGapReason": "azed_host_challenged_and_ahcccs_county_mapping_still_requires_pdf_extraction_or_reviewed_county_admin_leaves",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -1008,8 +1008,8 @@
       "stateId": "iowa",
       "stateCode": "IA",
       "stateName": "Iowa",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -1017,11 +1017,11 @@
       "legacyManualReviewRate": 59.16,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 99,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "iowa",
         "state_code": "IA",
@@ -1060,7 +1060,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_statewide_structure_dead_end",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1070,9 +1070,9 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_136_iowa_statewide_structure_dead_end_refresh_v1",
-      "packetPrimaryGapReason": "official_iowa_education_pages_loop_only_to_statewide_structure_and_geodata",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetBatch": "batch_143_iowa_district_directory_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "kansas",

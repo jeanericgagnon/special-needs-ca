@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: dfcs_reorg_root_relays_back_to_challenged_health_host_and_no_public_assistance_contacts_exist
+- primary_gap_reason: dfcs_site_map_exposes_only_pioneer_home_local_leaves_while_public_assistance_office_routing_stays_blocked
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved (The live Alaska DFCS reorg root does not repair county-grade office routing: its Services page only relays Adult Public Assistance and Medicaid users back to challenged health.alaska.gov leaves, its Department Contacts page has no Public Assistance or disability office-routing section, the exact health host office-locations leaf still returns the Cloudflare verification shell, and the legacy locator is HTTP 404.)
+- county_local_disability_resources: blocked_public_assistance_local_directory_missing_despite_other_dfcs_local_leaves (Official DFCS local leaves do exist on the reorg host, but only for the narrow Alaska Pioneer Homes program. DFCS still exposes no reviewed Public Assistance, Medicaid, Senior and Disabilities, or county office-routing leaf, its site search does not return a usable local-office result contract, and the exact health host office-locations lane remains challenged.)
 
 ## Failure ledger
 
-- county_local_disability_resources: dfcs_reorg_root_relays_back_to_challenged_health_host_and_no_public_assistance_contacts_exist :: Reviewed 2026-06-22 bounded live official Alaska reorg-host checks on https://dfcs.alaska.gov/Pages/default.aspx, https://dfcs.alaska.gov/Pages/Services.aspx, and https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx, plus the already-blocked exact health host leaf https://health.alaska.gov/dpa/Pages/office-locations.aspx. The reorg DFCS root is live and the Services page exposes Adult Public Assistance and Apply for Medicaid links, but both point families back to health.alaska.gov leaves instead of a reviewable local office directory. The DFCS Department Contacts page contains no Public Assistance, Medicaid, Senior and Disabilities, or office-location routing terms, while the exact health host office-locations leaf still returns HTTP 403 with the Cloudflare "Just a moment..." shell. The legacy official locator https://dhss.alaska.gov/locations remains HTTP 404, so no current official county-grade local-office replacement was recovered.
+- county_local_disability_resources: dfcs_site_map_exposes_only_pioneer_home_local_leaves_while_public_assistance_office_routing_stays_blocked :: Reviewed 2026-06-22 bounded live official Alaska DFCS site-map, publications, search, and Alaska Pioneer Homes location leaves after the earlier reorg-host check. The DFCS site map and Publications page now prove the reorg host can publish exact local leaves, because they expose /daph/Pages/map.aspx and six named Alaska Pioneer Home location leaves. But those leaves are narrow Pioneer Home facility pages only, not Public Assistance, Medicaid, Senior and Disabilities, or county office-routing resources. The official DFCS search lane for public assistance still returns only the generic search shell without reviewed local-office results, the DFCS Services page still relays Adult Public Assistance and Medicaid users back to challenged health.alaska.gov leaves, and the exact health host office-locations leaf still returns HTTP 403 with the Cloudflare challenge shell. So Alaska now has proof that DFCS can host local pages, but no current official county-grade Public Assistance or disability office directory was recovered.
 
 ## Verified source samples
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_official_local_directory_challenge_unresolved; samples=7; first=https://dfcs.alaska.gov/Pages/default.aspx
+- county_local_disability_resources: blocked_public_assistance_local_directory_missing_despite_other_dfcs_local_leaves; samples=9; first=https://dfcs.alaska.gov/Pages/Site-Map.aspx
 
 ## Next actions
 
@@ -49,6 +49,6 @@
 ## Repair decision
 
 - The only remaining Alaska blocker is county/local disability resources.
-- This bounded pass confirms the live DFCS reorg host is real but does not provide a Public Assistance or disability office directory that repairs county-grade routing.
-- The DFCS Services page only relays Adult Public Assistance and Medicaid users back to the same challenged health host, and the DFCS contacts page carries no program-specific office-routing section.
-- Alaska remains BLOCKED and not index-safe until the state publishes a reviewable office directory on DFCS or the challenged health host begins serving the current official office-locations content again.
+- This bounded pass proves the DFCS reorg host can publish exact local leaves, but the only reviewed local family it exposes is Alaska Pioneer Homes.
+- That narrows the blocker: Alaska is not missing local leaves in general, but it still lacks a reviewed Public Assistance, Medicaid, Senior and Disabilities, or county office-routing contract on DFCS, while the matching health host remains challenged.
+- Alaska remains BLOCKED and not index-safe until the state publishes a reviewable Public Assistance or disability office directory on DFCS or the challenged health host begins serving the current official office-locations content again.

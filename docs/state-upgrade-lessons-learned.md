@@ -506,3 +506,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Official County-Mapped School Directory Spreadsheets Can Clear District Routing Without Special-Ed-Specific Contacts
 *   **Lesson:** If an official school-directory spreadsheet maps counties to local school corporations and preserves district-owned routing fields like homepage, superintendent email, phone, and address, it can satisfy district-or-county education routing even when a special-education-specific contact list is retired. Indiana cleared once the live official CORP sheet proved 92-county coverage.
+
+### Narrow Program Local Leaves Do Not Repair A Broader County-Office Family
+*   **Lesson:** If an official site map proves the reorg host can publish exact local leaves, verify whether those leaves belong to the blocked program family before treating the host as repaired. Alaska DFCS exposed real Pioneer Home location pages, but that did not repair Public Assistance or disability office routing because the local leaves were for a different, narrower program.
+
+### Official District Directory Spreadsheets With County And AEA Columns Can Clear County-Grade Education Routing
+*   **Lesson:** If an official district directory explicitly assigns districts to counties and preserves county, AEA, district, phone, email, and website fields, it can clear county-grade education routing without needing separate district special-education contact leaves. Iowa cleared once the live DOE district directory proved all 99 counties had mapped district routing rows.
+
+### Image-Heavy Official PDFs Are Not County Contracts Until The County Text Is Reviewable
+*   **Lesson:** When the official HTML lane proves real local offices but the county mapping lives only in image-heavy PDFs, do not upgrade the county family yet. Record a parser or manual-review blocker explicitly; Arizona AHCCCS exposed seven real ALTCS offices, but county-grade routing still depended on PDFs whose county/admin text was not extractable in the current toolchain.
