@@ -1,0 +1,25 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "refined_family": "county_local_disability_resources",
+  "blocker_code": "official_myaccess_public_shell_and_proxy_do_not_expose_county_rows",
+  "next_action": "hold_county_local_until_first_party_county_dataset_or_search_contract_is_publicly_documented",
+  "lesson_added": false,
+  "evidence_checks": {
+    "csvUrl": "https://familyresourcecenter.myflfamilies.com/providers.csv",
+    "csvUniqueCountyCount": 34,
+    "remainingCountyGap": 33,
+    "cpcpsUrl": "https://myaccess.myflfamilies.com/Public/CPCPS",
+    "cpcpsStatus": 200,
+    "cpcpsTitle": "MyACCESS",
+    "proxyUrl": "https://myaccess.myflfamilies.com/dataexchangeproxy",
+    "proxyStatus": 200,
+    "proxyShellBytes": 5165,
+    "appconfigUrl": "https://myaccess.myflfamilies.com/config/appconfig.js",
+    "officeMapping": "/dataexchangeproxy",
+    "bundleUrl": "https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js",
+    "bundleFinding": "Admin/location-form module with county multi-select fields, not a documented public county-office result contract"
+  }
+}

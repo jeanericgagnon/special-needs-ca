@@ -33,7 +33,11 @@
   "root_domains_to_review": [
     "replace current DB county roots; 14 of 15 current Arizona county roots do not resolve and Maricopa returns HTTP 403",
     "https://des.az.gov/",
-    "https://www.azahcccs.gov/"
+    "https://des.az.gov/office-locator",
+    "https://des.az.gov/services/basic-needs/apply-for-benefits/where-to-apply",
+    "https://des.az.gov/find-your-local-office",
+    "https://www.azahcccs.gov/Members/GetCovered/Categories/where.html",
+    "https://www.azahcccs.gov/AHCCCS/Downloads/FFA.pdf"
   ],
   "affected_counties": [
     "apache-az",

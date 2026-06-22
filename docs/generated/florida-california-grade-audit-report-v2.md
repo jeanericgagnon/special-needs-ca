@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 67
-- primary_gap_reason: official_frc_csv_partial_and_myaccess_remaining_counties_browser_only
+- primary_gap_reason: official_myaccess_public_shell_and_proxy_do_not_expose_county_rows
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Florida legal aid sources are present in the Florida source pack and verified discovery artifacts.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_browser_only_remaining_county_locator_contract (Official Florida DCF local-routing proof is split between a reviewed first-party Family Resource Center CSV that covers only 34/67 counties and a remaining MyACCESS county-search lane that still renders as a JavaScript shell plus appconfig officeMapping contract rather than static county office evidence.)
+- county_local_disability_resources: blocked_public_shell_and_proxy_without_county_rows (Official Florida DCF county-local routing remains split between a reviewed Family Resource Center CSV that covers 34/67 counties and a MyACCESS public shell/proxy lane that still does not expose a public county-row contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_frc_csv_partial_and_myaccess_remaining_counties_browser_only :: Reviewed 2026-06-22 bounded live official checks on https://www.myflfamilies.com/sitemap.xml, https://www.myflfamilies.com/services/public-assistance, https://www.myflfamilies.com/services/public-assistance/applying-for-assistance, https://familyresourcecenter.myflfamilies.com/, https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, and https://myaccess.myflfamilies.com/config/appconfig.js. The public-assistance pages and sitemap expose the Family Resource Center and Community Partner Search surfaces, but no second static county-grade locator. The reviewed first-party providers.csv still covers only 39 rows across 34 unique Florida counties. The remaining MyACCESS Community Partner Search is a JavaScript shell, appconfig.js exposes officeMapping=/dataexchangeproxy, and the partner-location bundle shows county dropdown UI semantics without a reviewed static county-office dataset. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.
+- county_local_disability_resources: official_myaccess_public_shell_and_proxy_do_not_expose_county_rows :: Reviewed 2026-06-22 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/dataexchangeproxy, and the live official bundle https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js. The Family Resource Center CSV still preserves reviewed storefront coverage for only 34/67 Florida counties. The public CPCPS entry and plain GET to /dataexchangeproxy both return the same 5165-byte MyACCESS shell instead of county results. Appconfig exposes officeMapping=/dataexchangeproxy, but the fetched flPartnerLocation bundle is an admin/location-form module with county multi-select fields rather than a documented public county-office search response. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.
 
 ## Verified source samples
 
@@ -40,14 +40,14 @@
 - legal_aid: verified_state_grade; samples=2; first=https://bals.org
 - able_program: verified_state_grade; samples=1; first=https://www.ableunited.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_browser_only_remaining_county_locator_contract; samples=34; first=https://familyresourcecenter.myflfamilies.com/providers.csv
+- county_local_disability_resources: blocked_public_shell_and_proxy_without_county_rows; samples=34; first=https://familyresourcecenter.myflfamilies.com/providers.csv
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_county_local_until_browser_assisted_or_documented_myaccess_office_contract_yields_remaining_33_counties
+- [critical] county_local_disability_resources: hold_county_local_until_first_party_county_dataset_or_search_contract_is_publicly_documented
 
 ## Florida repair decision
 
 - District or county education routing remains verified from the live official FDLRS county routing page.
-- County-local disability resources remain the only blocker. The reviewed first-party Family Resource Center CSV truthfully covers 34 of 67 counties, while the remaining county search still sits behind the MyACCESS JavaScript shell and undocumented office-mapping contract.
-- Florida therefore remains truthfully BLOCKED and not index-safe until browser-assisted extraction or a documented first-party office-mapping contract yields county-grade evidence for the remaining 33 counties.
+- County-local disability resources remain the only blocker. The reviewed first-party Family Resource Center CSV truthfully covers 34 of 67 counties, while the public MyACCESS shell and proxy still do not expose county rows or a documented public county-search contract.
+- Florida therefore remains truthfully BLOCKED and not index-safe until a first-party county dataset or public search-response contract is exposed and verified.

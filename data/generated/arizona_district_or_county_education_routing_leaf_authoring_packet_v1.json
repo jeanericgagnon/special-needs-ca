@@ -26,8 +26,11 @@
     "https://www.azed.gov/specialeducation"
   ],
   "root_domains_to_review": [
-    "district-owned Arizona K-12 domains once identified from reviewed county/district routing work",
-    "https://www.azed.gov/specialeducation"
+    "https://www.azed.gov/specialeducation",
+    "https://www.azed.gov/school-district-web-sites/",
+    "https://www.azed.gov/asd/school-district-web-sites/",
+    "https://www.azed.gov/exceptionalstudentservices/",
+    "https://www.azed.gov/ess"
   ],
   "affected_counties": [
     "apache-az",

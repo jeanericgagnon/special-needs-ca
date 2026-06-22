@@ -1,0 +1,13 @@
+{
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "refined_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "exhaustedEducationReplacementRoots": 5,
+  "exhaustedCountyReplacementRoots": 7,
+  "lesson_added": false
+}

@@ -40,28 +40,33 @@ const countyGap = gapRows.find((row) => row.family === 'county_local_disability_
 assert.match(countyGap.status_reason, /robots\.txt/i);
 assert.match(countyGap.status_reason, /sitemap\.xml/i);
 assert.match(countyGap.status_reason, /HTTP 404/i);
+assert.match(countyGap.status_reason, /browser-assisted/i);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyFailure.failure_code, 'official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404');
 assert.match(countyFailure.evidence, /cf-mitigated: challenge/i);
 assert.match(countyFailure.evidence, /legacy official locator https:\/\/dhss\.alaska\.gov\/locations returned HTTP 404/i);
-assert.match(countyFailure.next_action, /republished_or_browser-readable/i);
+assert.match(countyFailure.evidence, /browser-assisted check/i);
+assert.match(countyFailure.next_action, /current_official_host_stops_returning_verification_shells/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyVerified.blocker_code, 'official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404');
-assert.equal(countyVerified.sample_count, 4);
-assert.equal(countyVerified.samples.length, 4);
+assert.equal(countyVerified.sample_count, 5);
+assert.equal(countyVerified.samples.length, 5);
 assert.ok(countyVerified.samples.some((sample) => sample.source_url === 'https://health.alaska.gov/sitemap.xml'));
 assert.ok(countyVerified.samples.some((sample) => sample.source_url === 'https://dhss.alaska.gov/locations'));
+assert.ok(countyVerified.samples.some((sample) => sample.source_type === 'official_browser_assisted_challenge'));
 
 const countyNext = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyNext.failure_code, 'official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404');
+assert.match(countyNext.evidence, /Performing security verification/i);
 assert.match(countyNext.evidence, /No alternate official county-grade office leaf or document was recovered/i);
 
 assert.equal(batchSummary.classification, 'BLOCKED');
 assert.deepEqual(batchSummary.refined_families, ['county_local_disability_resources']);
 assert.equal(batchSummary.host_level_block_confirmed, true);
 assert.ok(report.includes('host-level on the current official Alaska DPA/SDS web stack'));
-assert.ok(lessons.includes('Host-Level Challenge Plus Dead Legacy Locator Is A Terminal Local-Office Blocker'));
+assert.ok(report.includes('current official host stops returning the Cloudflare verification shell'));
+assert.ok(lessons.includes('Browser-Assisted Rechecks Should End A Challenge Lane'));
 
 console.log('test-batch109-alaska-local-directory-proof-refresh-v1: ok');

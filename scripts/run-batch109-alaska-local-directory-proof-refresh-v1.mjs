@@ -24,11 +24,11 @@ const OUTPUTS = {
 };
 
 const COUNTY_FAILURE_CODE = 'official_local_directory_domainwide_cloudflare_challenge_and_legacy_locator_404';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, contact, newer /en/ paths, and the host-level robots.txt plus sitemap.xml surfaces. Every live health.alaska.gov candidate returned HTTP 403 with cf-mitigated: challenge and the Cloudflare "Just a moment..." shell, while the legacy official locator https://dhss.alaska.gov/locations returned HTTP 404 and the legacy dhss.alaska.gov DPA/DSDS aliases only 302 back into the same challenged host. No alternate official county-grade office leaf or document was recovered in this bounded pass.';
-const COUNTY_STATUS_REASON = 'Official Alaska DPA/SDS office-location, default, contact, newer /en/ paths, robots.txt, and sitemap.xml all return the same Cloudflare challenge shell, while the legacy dhss.alaska.gov/locations locator is HTTP 404, so county-grade local-office evidence is blocked at the host level rather than at one stale leaf.';
-const COUNTY_NEXT_ACTION = 'hold_blocked_until_official_local_office_directory_is_republished_or_browser-readable_from_a_reviewable_official_host';
-const LESSON_HEADING = '### Host-Level Challenge Plus Dead Legacy Locator Is A Terminal Local-Office Blocker';
-const LESSON_BODY = '*   **Lesson:** If a state office host blocks not just leaves but also `robots.txt` and `sitemap.xml` with `cf-mitigated: challenge`, and the last legacy locator URL is an official 404, treat the local-office family as host-level blocked and stop probing sibling paths until a new official host or browser-readable artifact appears.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 live official Alaska DPA and SDS office-directory candidates on health.alaska.gov, including office-locations, default, contact, newer /en/ paths, and the host-level robots.txt plus sitemap.xml surfaces. Every live health.alaska.gov candidate returned HTTP 403 with cf-mitigated: challenge and the Cloudflare "Just a moment..." shell, while the legacy official locator https://dhss.alaska.gov/locations returned HTTP 404 and the legacy dhss.alaska.gov DPA/DSDS aliases only 302 back into the same challenged host. A bounded browser-assisted check on the exact office-locations leaf still returned HTTP 403 plus the same Cloudflare "Performing security verification" shell, so the current official host is blocked in both static and browser-assisted lanes. No alternate official county-grade office leaf or document was recovered in this bounded pass.';
+const COUNTY_STATUS_REASON = 'Official Alaska DPA/SDS office-location, default, contact, newer /en/ paths, robots.txt, and sitemap.xml all return the same Cloudflare challenge shell, the legacy dhss.alaska.gov/locations locator is HTTP 404, and a bounded browser-assisted check on the exact office-locations leaf still returns only the verification shell, so county-grade local-office evidence is blocked at the host level across both static and browser-assisted lanes.';
+const COUNTY_NEXT_ACTION = 'hold_blocked_until_official_local_office_directory_is_republished_or_current_official_host_stops_returning_verification_shells';
+const LESSON_HEADING = '### Browser-Assisted Rechecks Should End A Challenge Lane When The Exact Official Leaf Still Returns The Verification Shell';
+const LESSON_BODY = '*   **Lesson:** If the exact official leaf already fails static fetches and a bounded browser-assisted check still lands on the same `Just a moment...` or `Performing security verification` shell, treat the blocker as current-host-wide and stop reopening sibling URLs. Only a republished official host or a truly different official artifact should reopen the lane.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -91,7 +91,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '- The only remaining Alaska blocker is county/local disability resources.',
     '- This bounded pass confirmed the blocker is host-level on the current official Alaska DPA/SDS web stack, not one bad office leaf.',
     '- No alternate official county-grade office leaf or downloadable office directory was recovered during this pass.',
-    '- Alaska remains BLOCKED and not index-safe until the official local-office directory is republished on a reviewable host or a reviewable official browser lane can preserve county-grade evidence.',
+    '- Alaska remains BLOCKED and not index-safe until the official local-office directory is republished on a different reviewable official host or the current official host stops returning the Cloudflare verification shell in both static and browser-assisted lanes.',
   ].join('\n') + '\n';
 }
 
@@ -121,7 +121,7 @@ export function generateBatch109AlaskaLocalDirectoryProofRefreshV1() {
           query_basis: 'Reviewed live official Alaska DPA/SDS office-location, default, contact, newer /en/ paths, host-level robots.txt, sitemap.xml, and legacy dhss locator aliases; all live host paths resolved to the same Cloudflare challenge shell and the old locator is now a 404.',
           blocker_code: COUNTY_FAILURE_CODE,
           blocker_evidence: COUNTY_EVIDENCE,
-          sample_count: 4,
+          sample_count: 5,
           samples: [
             {
               sample_name: 'Alaska DPA Office Locations',
@@ -162,6 +162,16 @@ export function generateBatch109AlaskaLocalDirectoryProofRefreshV1() {
               source_table: 'reviewed_first_party_artifact',
               fetched_at: '2026-06-22T17:35:07.000Z',
               evidence_snippet: 'The legacy official locator path returned HTTP 404, so it cannot be used as a county-grade replacement for the challenged current host.',
+            },
+            {
+              sample_name: 'Alaska DPA Office Locations Browser Check',
+              source_url: 'https://health.alaska.gov/dpa/Pages/office-locations.aspx',
+              final_url: 'https://health.alaska.gov/dpa/Pages/office-locations.aspx',
+              verification_status: 'blocked',
+              source_type: 'official_browser_assisted_challenge',
+              source_table: 'reviewed_first_party_artifact',
+              fetched_at: '2026-06-22T20:24:00.000Z',
+              evidence_snippet: 'A bounded browser-assisted check on the exact office-locations leaf still returned HTTP 403 and the Cloudflare "Performing security verification" shell instead of office-by-area content.',
             },
           ],
         }

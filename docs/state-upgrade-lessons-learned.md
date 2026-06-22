@@ -434,3 +434,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### District-Controlled Sitemap Leaves Can Retire An Authenticated State Directory Blocker
 *   **Lesson:** If a state education directory is public-shell-only or auth-gated, do one bounded district-controlled sitemap pass before preserving the blocker. Connecticut cleared its last blocker because live district-owned pages like `Special Education`, `Student Services & Special Education`, and `Pupil Services` existed on district domains even though EdSight itself would not return anonymous district records.
+
+### Public Shell And Admin Bundle Evidence Must Be Separated Before Reopening A Blocked Portal Lane
+*   **Lesson:** If a public portal exposes a promising proxy path but the fetched same-domain JS module is really an admin/location-form bundle, do not reopen the lane as scrapeable. Florida stayed blocked because both `CPCPS` and `/dataexchangeproxy` returned the same shell while `UXModule.flPartnerLocation` only proved an internal location form with county fields, not a public county-office result contract.
+
+### Browser-Assisted Rechecks Should End A Challenge Lane When The Exact Official Leaf Still Returns The Verification Shell
+*   **Lesson:** If the exact official leaf already fails static fetches and a bounded browser-assisted check still lands on the same `Just a moment...` or `Performing security verification` shell, treat the blocker as current-host-wide and stop reopening sibling URLs. Only a republished official host or a truly different official artifact should reopen the lane.
+
+### Exhausted Replacement Roots Should Be Written Into The Packet Before Another Challenged-Host Retry
+*   **Lesson:** When a challenged state host blocks the obvious replacement leaves too, record the exact exhausted URLs in the packet and stop guessing sibling roots. Arizona only became decision-complete after the packet named the challenged AZED `school-district-web-sites` / `ess` leaves and the DES office-locator guesses, plus the AHCCCS `Page/Document not found` companion URLs.
