@@ -1,0 +1,28 @@
+{
+  "batch": "batch_57_alabama_statewide_family_truth_refresh_v1",
+  "generated_at": "2026-06-21T00:00:00.000Z",
+  "state": "alabama",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "updated_families": [
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_checks": {
+    "adap": {
+      "sourceUrl": "http://adap.ua.edu/",
+      "finalUrl": "https://sites.ua.edu/adap/",
+      "pageTitle": "Alabama Disabilities Advocacy Program &#8211; The Alabama Disabilities Advocacy Program (ADAP) provides legal services to Alabamians with disabilities to protect and promote their civil rights."
+    },
+    "apec": {
+      "sourceUrl": "https://alabamaparentcenter.com/",
+      "finalUrl": "https://alabamaparentcenter.com/web/",
+      "pageTitle": "home - Alabama Parent Education Center"
+    }
+  }
+}
