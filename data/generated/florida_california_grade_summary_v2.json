@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_family_resource_center_csv_only_covers_34_counties",
+  "primary_gap_reason": "official_frc_csv_partial_and_myaccess_remaining_counties_browser_only",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -43,9 +43,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_family_resource_center_csv_only_covers_34_counties",
-      "evidence": "Reviewed 2026-06-22 live first-party Family Resource Center homepage https://familyresourcecenter.myflfamilies.com/ and its published dataset https://familyresourcecenter.myflfamilies.com/providers.csv. The homepage JavaScript explicitly fetches providers.csv to populate the county filter, and the official CSV contains only 39 rows covering 34 unique Florida counties. The public first-party dataset therefore stops at 34/67 counties, so the remaining 33 counties are absent from the published county-local routing contract rather than merely hidden behind the blocked MyACCESS browser lane.",
-      "next_action": "hold_county_local_until_first_party_family_resource_center_dataset_expands_or_new_official_county_locator_is_published"
+      "failure_code": "official_frc_csv_partial_and_myaccess_remaining_counties_browser_only",
+      "evidence": "Reviewed 2026-06-22 bounded live official checks on https://www.myflfamilies.com/sitemap.xml, https://www.myflfamilies.com/services/public-assistance, https://www.myflfamilies.com/services/public-assistance/applying-for-assistance, https://familyresourcecenter.myflfamilies.com/, https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, and https://myaccess.myflfamilies.com/config/appconfig.js. The public-assistance pages and sitemap expose the Family Resource Center and Community Partner Search surfaces, but no second static county-grade locator. The reviewed first-party providers.csv still covers only 39 rows across 34 unique Florida counties. The remaining MyACCESS Community Partner Search is a JavaScript shell, appconfig.js exposes officeMapping=/dataexchangeproxy, and the partner-location bundle shows county dropdown UI semantics without a reviewed static county-office dataset. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.",
+      "next_action": "hold_county_local_until_browser_assisted_or_documented_myaccess_office_contract_yields_remaining_33_counties"
     }
   ]
 }

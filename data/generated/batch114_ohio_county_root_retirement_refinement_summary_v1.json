@@ -1,0 +1,20 @@
+{
+  "state": "ohio",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "refined_family": "county_local_disability_resources",
+  "blocker_code": "official_jfs_root_domain_retired_and_replacement_domains_unresolved",
+  "next_action": "hold_blocked_until_new_live_official_ohio_county_directory_or_locator_is_verified",
+  "lesson_added": false,
+  "evidence_checks": {
+    "jfsRoot": "404",
+    "jfsSitemap": "404",
+    "jfsRobots": "404",
+    "countyAgencies": "404",
+    "countyPdf": "404",
+    "odjfs": "dns_failure",
+    "jobandfamilyservices": "dns_failure",
+    "doiFallbackOnly": true
+  }
+}

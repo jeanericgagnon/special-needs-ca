@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 88
-- primary_gap_reason: official_county_directory_targets_unresolved_after_bounded_live_check
+- primary_gap_reason: official_jfs_root_domain_retired_and_replacement_domains_unresolved
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Ohio Legal Help now provides reviewed Ohio-specific statewide legal-help routing from a first-party portal.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_missing_live_official_county_directory (Bounded live Ohio JFS county-directory roots all failed or returned 404, and the remaining DOI-hosted dataset mirror is planning evidence only rather than live official county-grade office proof.)
+- county_local_disability_resources: blocked_retired_official_county_domain_family (The live official Ohio county-office family is now a root-retirement blocker, not just a stale PDF path. jfs.ohio.gov returns HTTP 404 across the root, sitemap, robots, county directory, and county-agencies paths, while the obvious odjfs.ohio.gov and jobandfamilyservices.ohio.gov replacement domains do not resolve.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_county_directory_failed_and_only_non_official_dataset_remains :: Bounded live Ohio JFS county-directory targets failed or returned 404, and the only remaining county-local packet root is the non-official DOI dataset https://doi.org/.
+- county_local_disability_resources: official_jfs_root_domain_retired_and_replacement_domains_unresolved :: Reviewed 2026-06-22 bounded live official checks on https://jfs.ohio.gov/, https://jfs.ohio.gov/sitemap.xml, https://jfs.ohio.gov/robots.txt, https://jfs.ohio.gov/county-agencies, https://jfs.ohio.gov/county/, https://jfs.ohio.gov/county/county_directory.pdf, https://jfs.ohio.gov/wps/portal/gov/jfs/, and https://jfs.ohio.gov/wps/portal/gov/jfs/county-agencies. All jfs.ohio.gov roots returned HTTP 404, while the obvious replacement authority domains https://odjfs.ohio.gov/ and https://jobandfamilyservices.ohio.gov/ failed DNS resolution. The remaining DOI-hosted county dataset is therefore planning evidence only, and no live official county-office directory or locator was verified in this bounded pass.
 - district_or_county_education_routing: bounded_esc_leaf_packet_exhausted_before_county_grade_coverage :: Verified exact leaves remain limited to 6 reviewed ESC-owned pages across 8 bounded Ohio packet roots (soesc.org, allencountyesc.org, youresc.k12.oh.us, ashtabulaesc.org, athensmeigs.com, auglaizeesc.org, ecoesc.org, brown.k12.oh.us); this does not truthfully prove district-grade routing statewide.
 
 ## Verified source samples
@@ -41,17 +41,15 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.ohiolegalhelp.org/
 - able_program: verified_state_grade; samples=1; first=https://www.stableaccount.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_missing_live_official_county_directory; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- county_local_disability_resources: blocked_retired_official_county_domain_family; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_live_official_county_directory_or_locator_is_verified
+- [critical] county_local_disability_resources: hold_blocked_until_new_live_official_ohio_county_directory_or_locator_is_verified
 - [critical] district_or_county_education_routing: hold_blocked_until_new_exact_district_targets_are_authored
 
 ## Ohio final blocker decision
 
-- County-local disability resources remain blocked because the bounded live Ohio JFS county-directory roots all failed or returned 404, and the remaining fallback packet evidence is only a DOI-hosted dataset mirror (https://doi.org/), not live official county-grade office proof.
+- County-local disability resources remain blocked because the live official Ohio JFS county-directory family now looks retired at the domain level: the root and all bounded child paths return 404, while the obvious replacement domains do not resolve.
 - District or county education routing remains blocked because only 6 reviewed ESC-owned exact leaves across 8 bounded Ohio packet roots have been verified; that is not enough to truthfully prove district-grade routing across all 88 Ohio counties without reopening broader district authoring.
-- Legal aid is now verified at the statewide support layer because Ohio Legal Help is a reviewed Ohio-specific first-party legal-help portal that explicitly offers legal information, forms, and lawyer connections.
-- Opportunities for Ohioans with Disabilities, Disability Rights Ohio, and OCECD remain upgraded out of the blocker list because reviewed first-party or verified database evidence already existed on disk and now anchors the packet truthfully.
-- Ohio is therefore truthfully final-blocked and not index-safe until new exact official county-office or district leaf targets are authored.
+- Ohio is therefore truthfully final-blocked and not index-safe until a new live official county-office directory or locator is verified and new exact district-owned education leaves are authored.

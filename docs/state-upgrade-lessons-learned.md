@@ -410,3 +410,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Dead California COE `.org` Roots Can Move To `k12.ca.us` Or District-Owned Replacements
 *   **Lesson:** If a California county-office-of-education `.org` root dies or a legacy district host fails TLS, try the county `k12.ca.us` office host and any district-owned replacement domain before declaring the packet exhausted. California cleared its last education blocker by replacing dead `alpinecoe.org` and `colusacoe.org`-style assumptions with `alpinecoe.k12.ca.us`, `ccoe.net`, `ccoe.k12.ca.us`, and `fremontunified.org` exact leaves.
+
+### Official App Config Hints Are Not County-Grade Evidence By Themselves
+*   **Lesson:** If an official portal app config exposes a promising endpoint like `officeMapping=/dataexchangeproxy`, do not treat that hint as verified county-routing proof unless a bounded same-domain check also yields reviewed county rows or a documented API contract. Florida still stays blocked because the remaining counties only appear behind a MyACCESS JavaScript shell and an undocumented office-mapping lane.
+
+### Unpublished Markup On Official Links Is A Public-Evidence Failure
+*   **Lesson:** If an official county or district lookup page links to leaves marked `data-status-unpublished="1"`, `data-status-in-trash="1"`, or `aria-label="Not visible to public"`, treat the link set as non-public evidence even when the page itself returns HTTP 200. Georgia DBHDD stayed blocked because the public county page pointed only to unpublished region leaves.
+
+### Domain-Wide 404 Plus NXDOMAIN Replacement Is Stronger Than A Dead Leaf
+*   **Lesson:** If the root, sitemap, robots, and known child paths on an official domain all return `404`, and the obvious replacement authority subdomains are `NXDOMAIN`, classify the source family as retired at the domain level rather than as a single dead leaf. Ohio county-local routing stayed blocked because the whole `jfs.ohio.gov` family was retired and no live official replacement domain resolved.

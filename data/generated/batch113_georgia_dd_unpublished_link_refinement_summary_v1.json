@@ -1,0 +1,19 @@
+{
+  "state": "georgia",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "refined_family": "developmental_disability_idd_authority",
+  "blocker_code": "official_county_page_points_to_unpublished_region_leaves",
+  "next_action": "hold_blocked_until_public_county_to_region_source_replaces_unpublished_region_links",
+  "lesson_added": false,
+  "evidence_checks": {
+    "countyLookupUrl": "https://dbhdd.georgia.gov/regional-field-office-county",
+    "countyCellsVisible": false,
+    "repeatedRegionLinksPresent": true,
+    "unpublishedMarker": "data-status-unpublished=1",
+    "inTrashMarker": "data-status-in-trash=1",
+    "notVisibleLabel": "aria-label=Not visible to public",
+    "publicCountyToRegionMapAvailable": false
+  }
+}

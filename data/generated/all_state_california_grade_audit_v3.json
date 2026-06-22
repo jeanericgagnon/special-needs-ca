@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T18:05:50.787Z",
+  "generatedAt": "2026-06-22T18:17:14.062Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 7,
@@ -637,11 +637,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_csv_contract_partial"
+        "county_local_disability_resources": "blocked_browser_only_remaining_county_locator_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "official_family_resource_center_csv_only_covers_34_counties",
+      "packetPrimaryGapReason": "official_frc_csv_partial_and_myaccess_remaining_counties_browser_only",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -697,7 +697,7 @@
       "familyStatuses": {
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "blocked_official_access_denied_region_pages",
+        "developmental_disability_idd_authority": "blocked_unpublished_official_region_links",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_exact_leaf_repair_exhausted",
@@ -711,7 +711,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_region_pages_access_denied_and_county_lookup_not_county_mapped",
+      "packetPrimaryGapReason": "official_county_page_points_to_unpublished_region_leaves",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -2507,11 +2507,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_missing_live_official_county_directory"
+        "county_local_disability_resources": "blocked_retired_official_county_domain_family"
       },
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_county_directory_targets_unresolved_after_bounded_live_check",
+      "packetPrimaryGapReason": "official_jfs_root_domain_retired_and_replacement_domains_unresolved",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

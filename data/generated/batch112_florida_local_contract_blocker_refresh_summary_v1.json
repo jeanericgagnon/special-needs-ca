@@ -1,0 +1,23 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "refined_family": "county_local_disability_resources",
+  "blocker_code": "official_frc_csv_partial_and_myaccess_remaining_counties_browser_only",
+  "next_action": "hold_county_local_until_browser_assisted_or_documented_myaccess_office_contract_yields_remaining_33_counties",
+  "lesson_added": false,
+  "evidence_checks": {
+    "sitemap": "https://www.myflfamilies.com/sitemap.xml",
+    "publicAssistance": "https://www.myflfamilies.com/services/public-assistance",
+    "applying": "https://www.myflfamilies.com/services/public-assistance/applying-for-assistance",
+    "familyResourceCenter": "https://familyresourcecenter.myflfamilies.com/",
+    "csvUrl": "https://familyresourcecenter.myflfamilies.com/providers.csv",
+    "csvUniqueCountyCount": 34,
+    "remainingCountyGap": 33,
+    "myaccess": "https://myaccess.myflfamilies.com/Public/CPCPS",
+    "appconfig": "https://myaccess.myflfamilies.com/config/appconfig.js",
+    "officeMapping": "/dataexchangeproxy",
+    "bundleSignal": "UXModule.flPartnerLocation county dropdown UI present but no reviewed static county-office dataset exposed in bounded inspection"
+  }
+}

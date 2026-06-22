@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_county_directory_targets_unresolved_after_bounded_live_check",
+  "primary_gap_reason": "official_jfs_root_domain_retired_and_replacement_domains_unresolved",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources",
@@ -44,9 +44,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_county_directory_failed_and_only_non_official_dataset_remains",
-      "evidence": "Bounded live Ohio JFS county-directory targets failed or returned 404, and the only remaining county-local packet root is the non-official DOI dataset https://doi.org/.",
-      "next_action": "hold_blocked_until_live_official_county_directory_or_locator_is_verified"
+      "failure_code": "official_jfs_root_domain_retired_and_replacement_domains_unresolved",
+      "evidence": "Reviewed 2026-06-22 bounded live official checks on https://jfs.ohio.gov/, https://jfs.ohio.gov/sitemap.xml, https://jfs.ohio.gov/robots.txt, https://jfs.ohio.gov/county-agencies, https://jfs.ohio.gov/county/, https://jfs.ohio.gov/county/county_directory.pdf, https://jfs.ohio.gov/wps/portal/gov/jfs/, and https://jfs.ohio.gov/wps/portal/gov/jfs/county-agencies. All jfs.ohio.gov roots returned HTTP 404, while the obvious replacement authority domains https://odjfs.ohio.gov/ and https://jobandfamilyservices.ohio.gov/ failed DNS resolution. The remaining DOI-hosted county dataset is therefore planning evidence only, and no live official county-office directory or locator was verified in this bounded pass.",
+      "next_action": "hold_blocked_until_new_live_official_ohio_county_directory_or_locator_is_verified"
     },
     {
       "family": "district_or_county_education_routing",
