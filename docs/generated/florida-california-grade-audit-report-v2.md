@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 67
-- primary_gap_reason: myaccess_embedded_local_office_help_link_is_dead_and_public_bundle_still_lacks_statewide_contract
+- primary_gap_reason: myaccess_accountmanagement_endpoints_exist_but_require_authentication_for_county_results
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Florida legal aid sources are present in the Florida source pack and verified discovery artifacts.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_public_shell_proxy_and_dead_help_link_without_county_rows (Official Florida DCF county-local routing remains blocked because neither the public MyACCESS shell nor the portal’s own embedded local-office help link yields a reviewable statewide county contract. The Family Resource Center CSV still stops at 34 counties, the MyACCESS bundle still exposes only Broward/Dade stubs plus sample data, and the DCF `ess-storefronts-and-lobbies` help path is now a dead 404 shell.)
+- county_local_disability_resources: blocked_public_csv_partial_authenticated_county_contract (Official Florida DCF county-local routing remains blocked because the public MyACCESS shell still clears only 34/67 counties through the Family Resource Center CSV, and the newly proven same-domain accountmanagement endpoints are not anonymous public contracts. The public bundle names `/accountmanagement/getZipCountyDetails` and `/accountmanagement/communityPartnerSearch`, but bounded POST probes return `401 Unauthorized`, so the remaining county-office results are authenticated-only rather than publicly reviewable.)
 
 ## Failure ledger
 
-- county_local_disability_resources: myaccess_embedded_local_office_help_link_is_dead_and_public_bundle_still_lacks_statewide_contract :: Reviewed 2026-06-22 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/dataexchangeproxy, https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js, https://myaccess.myflfamilies.com/static/js/main.d43b0959.js, and the first-party DCF help URL embedded in the public MyACCESS bundle: https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/ess-storefronts-and-lobbies. The Family Resource Center CSV still preserves reviewed storefront coverage for only 34/67 Florida counties. The public CPCPS entry and plain GET to /dataexchangeproxy both return the same 5165-byte MyACCESS shell instead of county results. Appconfig still exposes officeMapping=/dataexchangeproxy, but the fetched flPartnerLocation bundle only exposes blank location-entry schema fields plus ZIP/county handlers, and the public main bundle still embeds only two county-admin rows for Broward and Dade plus obvious sample rows such as `BigOrganization10` and repeated `Second Harvest` locations. The newly surfaced first-party DCF help link is not a hidden fallback contract either: it now returns the DCF 404 Page Not Found shell. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.
+- county_local_disability_resources: myaccess_accountmanagement_endpoints_exist_but_require_authentication_for_county_results :: Reviewed 2026-06-22 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails, and https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch. The Family Resource Center CSV still preserves reviewed storefront coverage for only 34/67 Florida counties. The public config and main bundle explicitly name partnerApproverServices=/accountmanagement and service paths `/getZipCountyDetails` plus `/communityPartnerSearch`, proving the MyACCESS lane does have a same-domain county-search contract. But bounded anonymous POST probes to those exact official endpoints returned HTTP 401 with `{"message":"Unauthorized"}` for ZIP and county sample payloads. The older public shell, plain GET proxy lane, Broward/Dade stub, sample rows, and dead `ess-storefronts-and-lobbies` help link still fail as public county-grade evidence. Florida therefore remains blocked not because no official contract exists, but because the remaining county-results contract is authenticated-only and not publicly reviewable for the other 33 counties.
 
 ## Verified source samples
 
@@ -40,15 +40,15 @@
 - legal_aid: verified_state_grade; samples=2; first=https://bals.org
 - able_program: verified_state_grade; samples=1; first=https://www.ableunited.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_public_shell_proxy_and_dead_help_link_without_county_rows; samples=37; first=https://familyresourcecenter.myflfamilies.com/providers.csv
+- county_local_disability_resources: blocked_public_csv_partial_authenticated_county_contract; samples=39; first=https://familyresourcecenter.myflfamilies.com/providers.csv
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_county_local_until_first_party_county_dataset_or_documented_anonymous_search_contract_covers_remaining_33_counties
+- [critical] county_local_disability_resources: hold_county_local_until_first_party_anonymous_county_dataset_or_public_office_contract_covers_remaining_33_counties
 
 ## Repair decision
 
 - Florida remains BLOCKED and not index-safe.
 - The reviewed official Family Resource Center CSV still clears only 34 counties.
-- The remaining MyACCESS lane is still not a reviewed county-results contract: the public shell and proxy expose only app chrome, the flPartnerLocation bundle is a location-entry form, the main bundle adds only Broward/Dade stubs plus sample rows, and the portal’s own embedded local-office help link now resolves to a DCF 404 page.
-- Florida should only reopen county-local once a first-party county dataset or documented anonymous search contract is public for the remaining 33 counties.
+- The remaining MyACCESS lane is sharper than a generic JS-shell blocker: the public bundle points at same-domain county-search endpoints, but bounded anonymous POST probes to `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch` return `401 Unauthorized`.
+- Florida should only reopen county-local once the state publishes an anonymous county dataset or another public office contract for the remaining 33 counties.

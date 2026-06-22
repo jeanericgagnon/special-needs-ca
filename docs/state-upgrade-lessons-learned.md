@@ -521,3 +521,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Use The Bundled PDF Runtime Before Declaring An Official PDF Fully Image-Only
 *   **Lesson:** Before preserving a PDF blocker as fully image-only, run one bounded extraction pass with the bundled workspace Python runtime. Arizona’s ALTCS county map still was not enough to clear county routing, but bundled `pypdf` recovered the county list and proved the lane was partially parseable even though the admin-office PDFs remained OCR-only blockers.
+
+### Same-Domain API Paths Still Fail Closed If The Official Contract Requires Auth
+*   **Lesson:** If a public bundle names a same-domain county-search endpoint, probe that exact endpoint once before promising a hidden public contract. Florida’s MyACCESS bundle exposed `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch`, but both returned `401 Unauthorized`, so the lane stayed blocked as authenticated-only rather than undocumented.
+
+### City Matches Inside An Office Directory Still Need Role Checks
+*   **Lesson:** If a blocked state still has one unresolved city-name office guess, verify that the city mention belongs to the right office role before treating it as progress. Idaho’s public DHW directory did mention Nampa, but only for Southwest Idaho Treatment Center, not for a county-benefits office leaf.

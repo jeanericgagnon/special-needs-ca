@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T21:34:39.792Z",
+  "generatedAt": "2026-06-22T21:42:40.359Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 13,
@@ -217,11 +217,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_html_offices_verified_but_county_pdf_contract_unparsed"
+        "county_local_disability_resources": "blocked_altcs_county_text_partial_admin_mapping_unresolved"
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "azed_host_challenged_and_ahcccs_county_mapping_still_requires_pdf_extraction_or_reviewed_county_admin_leaves",
+      "packetPrimaryGapReason": "azed_host_challenged_and_ahcccs_county_mapping_now_narrows_to_admin_pdf_ocr_or_reviewed_admin_leaves",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -637,11 +637,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_public_shell_proxy_and_dead_help_link_without_county_rows"
+        "county_local_disability_resources": "blocked_public_csv_partial_authenticated_county_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "myaccess_embedded_local_office_help_link_is_dead_and_public_bundle_still_lacks_statewide_contract",
+      "packetPrimaryGapReason": "myaccess_accountmanagement_endpoints_exist_but_require_authentication_for_county_results",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -847,11 +847,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_exact_office_leafs_exist_but_county_mapping_partial"
+        "county_local_disability_resources": "blocked_exact_office_leafs_exist_but_nampa_is_treatment_center_and_county_mapping_partial"
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_directories_now_expose_exact_district_and_office_targets_but_county_keyed_mappings_still_missing",
+      "packetPrimaryGapReason": "official_directories_now_expose_exact_targets_but_nampa_negative_proof_and_missing_county_mapping_keep_idaho_blocked",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

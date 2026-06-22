@@ -1,0 +1,19 @@
+{
+  "batch": "batch_145_florida_accountmanagement_401_refinement_v1",
+  "generated_at": "2026-06-22T22:22:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "authenticatedAccountmanagementEndpoints": [
+    "/accountmanagement/getZipCountyDetails",
+    "/accountmanagement/communityPartnerSearch"
+  ],
+  "anonymousProbeStatus": 401,
+  "lesson_added": false
+}
