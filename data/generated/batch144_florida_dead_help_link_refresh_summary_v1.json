@@ -1,0 +1,15 @@
+{
+  "batch": "batch_144_florida_dead_help_link_refresh_v1",
+  "generated_at": "2026-06-22T21:37:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "dead_help_link_confirmed": true,
+  "lesson_added": false
+}

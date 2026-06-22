@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "public_myaccess_bundle_contains_sample_rows_and_two_county_admin_stub_not_statewide_contract",
+  "primary_gap_reason": "myaccess_embedded_local_office_help_link_is_dead_and_public_bundle_still_lacks_statewide_contract",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -43,8 +43,8 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "public_myaccess_bundle_contains_sample_rows_and_two_county_admin_stub_not_statewide_contract",
-      "evidence": "Reviewed 2026-06-22 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/dataexchangeproxy, https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js, and https://myaccess.myflfamilies.com/static/js/main.d43b0959.js. The Family Resource Center CSV still preserves reviewed storefront coverage for only 34/67 Florida counties. The public CPCPS entry and plain GET to /dataexchangeproxy both return the same 5165-byte MyACCESS shell instead of county results. Appconfig still exposes officeMapping=/dataexchangeproxy, but the fetched flPartnerLocation bundle only exposes blank location-entry schema fields (`id`, `locationName`, `phoneNumber`, `faxNumber`, `streetAddress`, `county`) plus ZIP/county handlers. The public main bundle does not expose a statewide county-office dataset either: it embeds only two county-admin rows for Broward and Dade plus obvious internal/sample rows such as `BigOrganization10`, `Second Harvest`, and fake contact values. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.",
+      "failure_code": "myaccess_embedded_local_office_help_link_is_dead_and_public_bundle_still_lacks_statewide_contract",
+      "evidence": "Reviewed 2026-06-22 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/dataexchangeproxy, https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js, https://myaccess.myflfamilies.com/static/js/main.d43b0959.js, and the first-party DCF help URL embedded in the public MyACCESS bundle: https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/ess-storefronts-and-lobbies. The Family Resource Center CSV still preserves reviewed storefront coverage for only 34/67 Florida counties. The public CPCPS entry and plain GET to /dataexchangeproxy both return the same 5165-byte MyACCESS shell instead of county results. Appconfig still exposes officeMapping=/dataexchangeproxy, but the fetched flPartnerLocation bundle only exposes blank location-entry schema fields plus ZIP/county handlers, and the public main bundle still embeds only two county-admin rows for Broward and Dade plus obvious sample rows such as `BigOrganization10` and repeated `Second Harvest` locations. The newly surfaced first-party DCF help link is not a hidden fallback contract either: it now returns the DCF 404 Page Not Found shell. Florida therefore still lacks reviewed first-party county-grade local-routing evidence for the remaining 33 counties.",
       "next_action": "hold_county_local_until_first_party_county_dataset_or_documented_anonymous_search_contract_covers_remaining_33_counties"
     }
   ]
