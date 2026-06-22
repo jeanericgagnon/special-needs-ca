@@ -328,6 +328,14 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Whole-State Fallback Rows Should Be Counted Explicitly, Not Described Vaguely
 *   **Problem:** Colorado's local blockers were still summarized as generic inventory noise even though the live tables had a much sharper shape: all 64 education rows pointed to one statewide CDE special-education root, and at least 67 county-office rows still pointed to the same DOI mirror.
 *   **Lesson:** When a blocked local family collapses to one fallback source URL or mirror across most or all counties, replace generic inventory-count blocker text with exact row-count + source-URL evidence. That makes the blocker actionable without rereading the whole state packet.
+
+### Sparse First-Party Homepages Can Prove Bounded PTI Exhaustion Quickly
+*   **Problem:** Connecticut's CPAC homepage exposed only two same-domain links, common About and sitemap roots returned 404, and the bounded follow-up still never preserved explicit PTI text.
+*   **Lesson:** When a reviewed statewide family-support site has a very sparse homepage link graph, use that bounded same-domain check to close the PTI search quickly. If the homepage has almost no internal leaves and the likely About/sitemap roots are dead, record bounded exhaustion instead of reopening broad discovery.
+
+### Live Homepage Navigation Can Rehydrate A Zero-Sample Statewide Family
+*   **Problem:** Delaware's statewide special-education family had fallen to zero preserved samples even though the live DOE homepage still linked to a current special-education leaf that resolved into the state's legacy special-education page.
+*   **Lesson:** When a statewide family shows zero verified samples, check the live homepage navigation before assuming the family is still legacy-only. A current nav link that resolves into a live legacy leaf can truthfully rehydrate the statewide family without solving the separate county-grade routing blocker.
 ### Official Early-Childhood Pages Can Preserve Part C Even When The Old Part C Domain Is Dead
 *   **Problem:** Kansas lost its old early-start root entirely, and the first likely Part C domain hint also died, but the live KSDE Early Childhood Special Education page still preserved birth-to-three entitlement, KDHE Part C administration, and the external local ITS directory pointer.
 *   **Lesson:** When a state's old Part C root is dead, check the live official early-childhood or preschool-special-education leaf on the education agency domain before opening broader discovery. If that page explicitly states who administers Part C and points families to the local intake network, it can repair the statewide Part C family.

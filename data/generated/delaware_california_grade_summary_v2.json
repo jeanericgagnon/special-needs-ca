@@ -7,9 +7,9 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 3,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "legacy_or_inventory_only_evidence",
@@ -18,9 +18,7 @@
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "special_education_idea_part_b"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -39,5 +37,21 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+  ],
+  "final_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "all_counties_still_use_statewide_de_doe_root",
+      "evidence": "Reviewed current Delaware school_district rows on 2026-06-22. All 3 county-linked district-routing rows still point only to the statewide Delaware DOE root https://www.doe.k12.de.us/ rather than district-owned special-education leaves, so no county-grade district routing page is currently verified for Kent, New Castle, or Sussex.",
+      "next_action": "author_county_or_district_exact_targets"
+    },
+    {
+      "family": "county_local_disability_resources",
+      "severity": "critical",
+      "failure_code": "county_office_rows_still_backed_by_doi_mirror",
+      "evidence": "Reviewed current Delaware county_offices rows on 2026-06-22. Nineteen county-office rows still use the DOI mirror https://doi.org/10.7910/DVN/AVRHMI with source_listed evidence, so county-local office routing remains backed by mirror data rather than reviewed county-owned leaves.",
+      "next_action": "author_county_or_district_exact_targets"
+    }
   ]
 }
