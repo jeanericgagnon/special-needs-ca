@@ -10,7 +10,7 @@
 
 - medicaid_state_health_coverage: verified_state_grade (statewide evidence is present at the required authority level)
 - medicaid_waiver_hcbs_disability_services: verified_state_grade (statewide evidence is present at the required authority level)
-- developmental_disability_idd_authority: blocked_official_access_denied_region_pages (Live official DBHDD county lookup page still renders blank county cells and only repeated Region links, the alternate regional-offices path now returns an official 404, and the reviewed region leaves remain access denied.)
+- developmental_disability_idd_authority: blocked_official_access_denied_region_pages (A fresh bounded live check on 2026-06-22 confirms the official DBHDD county lookup page remains live but exposes no county form controls, no county option values, and only repeated Region links in the rendered HTML. The companion Regional Field Offices index no longer exposes usable region leaf links, the alternate regional-offices path still returns an official 404, and all six reviewed direct region field-office leaves remain access-denied. A deterministic 159-county county-to-region map still cannot be verified from the current official evidence.)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
 - district_or_county_education_routing: blocked_exact_leaf_repair_exhausted (Reviewed district-owned education exact leaves verified (5) across the bounded Georgia packet evidence, but county-grade coverage still cannot be proven for all 159 counties without reopening broader district discovery.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- developmental_disability_idd_authority: official_region_pages_access_denied_and_county_lookup_not_county_mapped :: A fresh bounded live check on 2026-06-22 shows the official DBHDD county lookup page https://dbhdd.georgia.gov/regional-field-office-county still returns HTTP 200 but renders blank county cells with only repeated Region links in the official HTML, while the alternate official regional-offices path https://dbhdd.georgia.gov/locations/regional-offices returns an official 404 page and the six same-domain region field-office leaves remain access-denied in prior reviewed checks. A deterministic 159-county county-to-region map still cannot be verified from the current official evidence.
+- developmental_disability_idd_authority: official_region_pages_access_denied_and_county_lookup_not_county_mapped :: A fresh bounded live check on 2026-06-22 confirms the official DBHDD county lookup page remains live but exposes no county form controls, no county option values, and only repeated Region links in the rendered HTML. The companion Regional Field Offices index no longer exposes usable region leaf links, the alternate regional-offices path still returns an official 404, and all six reviewed direct region field-office leaves remain access-denied. A deterministic 159-county county-to-region map still cannot be verified from the current official evidence.
 - district_or_county_education_routing: bounded_official_district_leaf_packet_exhausted_before_county_grade_coverage :: Verified district-owned exact leaves remain limited to 5 reviewed pages across bounded Georgia packet evidence; that does not truthfully prove county-grade district routing statewide.
 
 ## Verified source samples
@@ -48,9 +48,10 @@
 - [critical] developmental_disability_idd_authority: hold_blocked_until_reviewed_county_to_region_source_replaces_access_denied_region_pages
 - [critical] district_or_county_education_routing: hold_blocked_until_new_exact_district_targets_are_authored
 
-## Georgia repair decision
+## Georgia final blocker decision
 
-- County-local disability resources remain verified from the official DFCS county directory.
-- Developmental disability routing remains blocked because the official DBHDD county page is live but still does not expose county names in the HTML, the alternate official regional-offices path is now a 404, and the reviewed region field-office leaves remain non-proving.
-- District or county education routing remains blocked because only 5 reviewed exact district leaves are preserved on disk and county-grade district coverage still cannot be proven statewide.
-- Georgia therefore remains truthfully BLOCKED and not index-safe.
+- Developmental disability routing remains blocked, and the older “browser-visible region pages are active” claim is no longer accurate.
+- Live static and browser-assisted checks now agree that all six reviewed official DBHDD region field-office pages resolve to access-denied shells. Those pages preserve region identity in breadcrumbs, but they do not preserve counties served or intake content strongly enough to clear the family.
+- The official county lookup page still loads, but the current rendered content exposes repeated region links rather than county names, so the 159-county county-to-region map is still unverified.
+- District or county education routing remains blocked because only 5 reviewed district-owned exact leaves across the bounded Georgia packet evidence have been verified; that is not enough to truthfully prove county-grade routing across 159 Georgia counties without reopening broad district discovery.
+- Georgia remains blocked and not index-safe until a reviewed county-to-region source replaces the access-denied region pages and education gains new exact district-owned county leaves.

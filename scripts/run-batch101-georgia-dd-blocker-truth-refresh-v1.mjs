@@ -22,7 +22,7 @@ const OUTPUTS = {
 const DD_BLOCKER_CODE = 'official_region_pages_access_denied_and_county_lookup_not_county_mapped';
 const DD_STATUS = 'blocked_official_access_denied_region_pages';
 const DD_REASON =
-  'Live static and browser-assisted checks now agree that all six official DBHDD region field-office pages return access-denied shells instead of counties-served and intake content. The official county lookup page remains live, but its current rendered content only exposes repeated region links and no county names, so a deterministic 159-county county-to-region map still cannot be verified from the current official evidence.';
+  'A fresh bounded live check on 2026-06-22 confirms the official DBHDD county lookup page remains live but exposes no county form controls, no county option values, and only repeated Region links in the rendered HTML. The companion Regional Field Offices index no longer exposes usable region leaf links, the alternate regional-offices path still returns an official 404, and all six reviewed direct region field-office leaves remain access-denied. A deterministic 159-county county-to-region map still cannot be verified from the current official evidence.';
 const DD_NEXT_ACTION =
   'hold_blocked_until_reviewed_county_to_region_source_replaces_access_denied_region_pages';
 

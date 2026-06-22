@@ -37,7 +37,8 @@ assert.equal(summary.primary_gap_reason, 'official_region_pages_access_denied_an
 
 const ddGap = gapRows.find((row) => row.family === 'developmental_disability_idd_authority');
 assert.equal(ddGap.family_status, 'blocked_official_access_denied_region_pages');
-assert.ok(ddGap.status_reason.includes('all six official DBHDD region field-office pages return access-denied shells'));
+assert.ok(ddGap.status_reason.includes('no county form controls'));
+assert.ok(ddGap.status_reason.includes('all six reviewed direct region field-office leaves remain access-denied'));
 
 const ddFailure = failures.find((row) => row.family === 'developmental_disability_idd_authority');
 assert.equal(ddFailure.failure_code, 'official_region_pages_access_denied_and_county_lookup_not_county_mapped');
@@ -57,7 +58,7 @@ assert.equal(batchSummary.blocker_code, 'official_region_pages_access_denied_and
 assert.equal(batchSummary.access_denied_region_pages, 6);
 assert.equal(batchSummary.county_lookup_page_live, true);
 
-assert.ok(report.includes('all six reviewed official DBHDD region field-office pages resolve to access-denied shells'));
+assert.ok(report.includes('no county form controls'));
 assert.ok(report.includes('repeated region links rather than county names'));
 
 console.log('test-batch101-georgia-dd-blocker-truth-refresh-v1: ok');
