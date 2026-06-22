@@ -467,3 +467,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Official State-Administered County Exceptions Can Replace Impossible Local Storefront Proof
 *   **Lesson:** If a county is officially administered by a state agency rather than by a normal county government, a reviewed first-party exception page can satisfy the local-routing family. Hawaii cleared once the DOH Kalaupapa page explicitly stated that HRS 326 places Kalawao County under DOH jurisdiction and control, so the dead county storefront row no longer needed a fake county office replacement.
+
+### Named Office Labels Still Count As Placeholders When The URL Is Generic
+*   **Lesson:** Do not let a realistic office name fool the packet if the stored URL is still generic. Idaho looked partially repaired because rows were labeled `Boise Office`, `Blackfoot Office`, and `Idaho Falls Office`, but the live URLs still pointed at one generic Medicaid page or a dead legacy locator, so those rows were still placeholders until the exact office leaves were attached.

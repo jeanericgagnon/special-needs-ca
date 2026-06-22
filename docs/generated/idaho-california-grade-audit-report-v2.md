@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 44
-- primary_gap_reason: official_sde_special_education_stack_has_no_district_directory_or_local_leaves
+- primary_gap_reason: live_db_rows_still_reuse_statewide_placeholders_for_both_local_families
 
 ## Family status
 
@@ -13,19 +13,19 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_no_district_owned_or_county_mapped_leaves (Reviewed live Idaho SDE special-education authority, staff, parent-resources, and Idaho Schools pages. The current official stack preserves statewide authority and staff support, but the Idaho Schools page exposes no district entries and all 44 current district rows still reuse statewide SDE URLs instead of district-owned or county-mapped routing leaves.)
+- district_or_county_education_routing: blocked_no_district_owned_or_county_mapped_leaves (Reviewed live Idaho SDE special-education authority, staff, parent-resources, and Idaho Schools pages plus the current school_district DB inventory. The current official stack preserves statewide authority and staff support, but the live DB rows are still fully statewide placeholders: all 44 Idaho school_district rows reuse statewide SDE URLs instead of district-owned or county-mapped routing leaves. The Idaho Schools page exposes no district entries or county mapping in fetched public content, so district-grade education routing remains blocked.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (Reviewed Idaho Parents Unlimited About page now preserves explicit Idaho Parent Training and Information Center designation text, while the Connect With Us page preserves statewide contact routing and Boise office details.)
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_named_office_leaves_only_partial_county_coverage (Reviewed live Idaho DHW Contact Us and /offices pages plus sitemap office leaves. The exact official directory now preserves named office pages such as Boise, Caldwell, Burley, Blackfoot, Idaho Falls, Sandpoint-Ponderay, and Lewiston, but current county routing still splits into 18 named-office rows and 27 storefront placeholders with no reviewed county-to-office mapping for the placeholder counties.)
+- county_local_disability_resources: blocked_named_office_leaves_only_partial_county_coverage (Reviewed live Idaho DHW Contact Us and /offices pages plus the current county_offices DB inventory. The reviewed official stack now proves that exact DHW office leaves exist, but the live county routing table is still mostly placeholder-backed: 27 rows still use the dead legacy dhhs.idaho.gov/locations storefront root, while the remaining 18 rows still point to the generic Medicaid page https://healthandwelfare.idaho.gov/services-programs/medicaid-health instead of exact office leaves. Because the public /offices page does not expose county-to-office mapping in fetched public content, county-grade local routing remains blocked.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: official_sde_special_education_stack_has_no_district_directory_or_local_leaves :: Reviewed 2026-06-22 current official Idaho SDE pages: https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, and https://www.sde.idaho.gov/about-us/idaho-schools/. These leaves preserve statewide authority, staff contacts, and parent resources, but the Idaho Schools page exposes no district entries or county mapping and current DB rows still use statewide SDE URLs for all 44 counties.
-- county_local_disability_resources: official_dhw_offices_directory_repairs_named_offices_but_27_counties_still_use_storefront_placeholders :: Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us and https://healthandwelfare.idaho.gov/offices, plus DHW sitemap office leaves such as Boise, Caldwell, Pocatello, Idaho Falls, Rexburg, Mountain Home, Grangeville, Moscow, Lewiston, and Sandpoint-Ponderay. This exact office stack repairs named office proof for many rows, but current county routing still includes 27 storefront placeholders with no reviewed county-to-office coverage.
+- district_or_county_education_routing: official_sde_special_education_stack_has_no_district_directory_or_local_leaves :: Reviewed 2026-06-22 current official Idaho SDE pages: https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, and https://www.sde.idaho.gov/about-us/idaho-schools/, plus the live school_district DB rows. The official SDE stack preserves statewide authority, staff contacts, and parent resources, but the Idaho Schools page exposes no district entries or county mapping in fetched public content. The live DB inventory is still 44/44 statewide placeholders: every Idaho school_district row reuses a statewide SDE URL rather than a district-owned or county-mapped routing leaf.
+- county_local_disability_resources: official_dhw_offices_directory_repairs_named_offices_but_27_counties_still_use_storefront_placeholders :: Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us and https://healthandwelfare.idaho.gov/offices, plus live county_offices DB rows. The exact office stack repairs named office proof for many locations, but the live DB table is still placeholder-backed: 27 county rows use the dead legacy locator https://dhhs.idaho.gov/locations and the other 18 rows still point to the generic Medicaid page https://healthandwelfare.idaho.gov/services-programs/medicaid-health rather than exact office leaves. The public /offices page also exposes no county-to-office mapping in fetched public content, so a truthful county mapping still cannot be verified.
 
 ## Verified source samples
 
@@ -50,7 +50,6 @@
 
 ## Completion decision
 
-- Idaho Parents Unlimited now clears the PTI family because the reviewed first-party About page explicitly says the organization houses the Idaho Parent Training and Information Center, and the Connect With Us page preserves current statewide contact routing.
-- Idaho still cannot reach California-grade or become index-safe because district-or-county education routing remains statewide-only: the official SDE special-education, staff, parent-resources, and Idaho Schools pages preserve statewide authority and contacts, but not district-owned or county-mapped routing leaves.
-- County/local disability resources are sharper but still blocked: Idaho DHW now exposes an exact /offices directory and sitemap-backed office leaves for named offices, but the state packet still contains 27 storefront placeholders without reviewed county-to-office coverage.
-- Idaho therefore remains BLOCKED and not index-safe until district-routing and county-local families move from statewide or placeholder evidence to reviewed local routing proof.
+- Idaho remains BLOCKED and not index-safe.
+- Education is still blocked because all 44 current school_district rows are statewide placeholders and the reviewed Idaho Schools stack exposes no district or county mapping contract.
+- County-local is still blocked because 27 current office rows still use the dead legacy locator and the other 18 still point at one generic Medicaid page rather than exact office leaves, while the public offices page exposes no county mapping contract.

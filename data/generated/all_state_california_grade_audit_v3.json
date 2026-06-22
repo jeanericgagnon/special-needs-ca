@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T20:10:00.912Z",
+  "generatedAt": "2026-06-22T20:18:01.379Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 9,
@@ -851,7 +851,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_sde_special_education_stack_has_no_district_directory_or_local_leaves",
+      "packetPrimaryGapReason": "live_db_rows_still_reuse_statewide_placeholders_for_both_local_families",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
