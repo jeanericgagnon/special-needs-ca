@@ -7,20 +7,18 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 64,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
   "weak_critical_families": 2,
-  "missing_critical_families": 1,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "district_grade_education_and_county_local_office_proof_still_unverified",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "legal_aid"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",

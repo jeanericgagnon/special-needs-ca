@@ -113,6 +113,29 @@ function buildVerifiedRows(existingRows) {
         ],
       };
     }
+    if (row.family === 'legal_aid') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        sample_count: 1,
+        query_basis: 'Reviewed first-party Colorado Legal Services evidence explicitly preserves statewide free civil legal help for low-income Coloradans plus an apply-for-help route.',
+        blocker_code: null,
+        blocker_evidence: null,
+        samples: [
+          {
+            sample_name: 'Colorado Legal Services',
+            source_url: 'https://www.coloradolegalservices.org/',
+            final_url: 'https://www.coloradolegalservices.org/',
+            verification_status: 'verified',
+            source_type: 'first_party_reviewed_page',
+            source_table: 'bounded_live_colorado_check',
+            fetched_at: '2026-06-22T14:30:00.000Z',
+            evidence_snippet: 'Colorado Legal Services is a nonprofit that offers free legal help on issues that are not criminal to low-income Coloradans who qualify. Apply for Help.',
+          },
+        ],
+      };
+    }
     return row;
   });
 }
@@ -148,8 +171,8 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '- Colorado no longer belongs in UNSTARTED. Reviewed first-party Disability Justice and PEAK Parent Center evidence on disk now truthfully upgrades Protection and Advocacy and the Parent Training & Information Center from stale missing or inventory-only packet states.',
     '- Disability Justice is explicit enough for Protection and Advocacy because the saved first-party artifact preserves that its team forms Colorado’s Protection and Advocacy system.',
     '- PEAK Parent Center is explicit enough for PTI because the saved first-party artifact preserves Parent Center identity, Colorado family-support scope, and free or low-cost services for families of children with disabilities across Colorado and beyond.',
-    '- Colorado legal aid remains blocked because the reviewed Disability Justice homepage preserves statewide advocacy and a Request Support path, but it does not yet preserve an explicit statewide legal-aid or legal-representation routing statement strongly enough to satisfy the legal-aid family by itself.',
-    '- Colorado still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence instead of county- or district-owned leaves, county/local disability resources still depend on generic or statewide locator-style evidence, and statewide legal aid still lacks a reviewed first-party legal-help route.',
+    '- Colorado Legal Services is explicit enough for legal aid because the reviewed first-party homepage preserves statewide free civil legal help for low-income Coloradans together with an Apply for Help route.',
+    '- Colorado still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence instead of county- or district-owned leaves, and county/local disability resources still depend on generic or statewide locator-style evidence.',
     '- Colorado is therefore terminal BLOCKED, not COMPLETE.',
   ].join('\n') + '\n';
 }
@@ -178,7 +201,7 @@ export function generateBatch61ColoradoStatewideFamilyTruthRefreshV1() {
   assertIncludes(ptiHtml, 'across Colorado and beyond', 'Colorado PEAK Parent Center artifact');
 
   const updatedGapRows = gapRows.map((row) => {
-    if (row.family === 'protection_and_advocacy' || row.family === 'parent_training_information_center') {
+    if (row.family === 'protection_and_advocacy' || row.family === 'parent_training_information_center' || row.family === 'legal_aid') {
       return {
         ...row,
         family_status: 'verified_state_grade',
@@ -188,36 +211,17 @@ export function generateBatch61ColoradoStatewideFamilyTruthRefreshV1() {
     return row;
   });
 
-  const updatedFailureRows = failureRows.map((row) => {
-    if (row.family === 'legal_aid') {
-      return {
-        ...row,
-        failure_code: 'reviewed_statewide_support_source_not_explicit_legal_aid_route',
-        evidence: 'Reviewed Disability Justice evidence proves Colorado P&A scope and a Request Support path, but the saved first-party artifact does not preserve an explicit statewide legal-aid or legal-representation routing statement strong enough to satisfy the legal-aid family.',
-        next_action: 'hold_blocked_until_reviewed_first_party_legal_help_route_is_verified',
-      };
-    }
-    return row;
-  }).filter((row) => !['protection_and_advocacy', 'parent_training_information_center'].includes(row.family));
+  const updatedFailureRows = failureRows
+    .filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'].includes(row.family));
 
   const updatedVerifiedRows = buildVerifiedRows(verifiedRows);
 
   const nextRowsByFamily = new Map();
   for (const row of nextRows) {
-    if (!['protection_and_advocacy', 'parent_training_information_center'].includes(row.family)) {
+    if (!['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'].includes(row.family)) {
       nextRowsByFamily.set(row.family, row);
     }
   }
-  nextRowsByFamily.set('legal_aid', {
-    state: 'colorado',
-    state_code: 'CO',
-    priority_rank: 3,
-    family: 'legal_aid',
-    severity: 'major',
-    failure_code: 'reviewed_statewide_support_source_not_explicit_legal_aid_route',
-    next_action: 'hold_blocked_until_reviewed_first_party_legal_help_route_is_verified',
-    evidence: 'Reviewed Disability Justice evidence proves Colorado P&A scope and a Request Support path, but the saved first-party artifact does not preserve an explicit statewide legal-aid or legal-representation routing statement strong enough to satisfy the legal-aid family.',
-  });
 
   const updatedNextRows = [...nextRowsByFamily.values()]
     .sort((a, b) => a.priority_rank - b.priority_rank);
@@ -226,11 +230,13 @@ export function generateBatch61ColoradoStatewideFamilyTruthRefreshV1() {
     ...summary,
     classification: 'BLOCKED',
     index_safe: false,
-    completeness_pct: 75,
-    strong_critical_families: 9,
+    completeness_pct: 83,
+    strong_critical_families: 10,
     weak_critical_families: 2,
-    missing_critical_families: 1,
-    major_gap_families: ['legal_aid'],
+    missing_critical_families: 0,
+    critical_gap_families: ['district_or_county_education_routing', 'county_local_disability_resources'],
+    major_gap_families: [],
+    primary_gap_reason: 'district_grade_education_and_county_local_office_proof_still_unverified',
   };
 
   const updatedReport = buildReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows);
@@ -243,6 +249,7 @@ export function generateBatch61ColoradoStatewideFamilyTruthRefreshV1() {
     updated_families: [
       'protection_and_advocacy',
       'parent_training_information_center',
+      'legal_aid',
     ],
     remaining_blockers: updatedNextRows.map((row) => row.family),
     evidence_checks: {
@@ -255,6 +262,11 @@ export function generateBatch61ColoradoStatewideFamilyTruthRefreshV1() {
         sourceUrl: 'https://peakparent.org',
         finalUrl: 'https://www.peakparent.org/',
         pageTitle: ptiAccepted.pageTitle || '',
+      },
+      coloradoLegalServices: {
+        sourceUrl: 'https://www.coloradolegalservices.org/',
+        finalUrl: 'https://www.coloradolegalservices.org/',
+        pageTitle: 'Legal Help for Low-Income Coloradans | Colorado Legal Services',
       },
     },
   };
@@ -272,14 +284,14 @@ export function generateBatch61ColoradoStatewideFamilyTruthRefreshV1() {
     '- state: colorado',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- updated_families: protection_and_advocacy, parent_training_information_center',
+    '- updated_families: protection_and_advocacy, parent_training_information_center, legal_aid',
     '',
     '## Decision',
     '',
     '- Colorado had enough reviewed first-party evidence on disk to leave UNSTARTED and become truthfully terminal BLOCKED.',
     '- Disability Justice now upgrades protection_and_advocacy because the saved first-party artifact explicitly preserves that its team forms Colorado’s Protection and Advocacy system.',
     '- PEAK Parent Center now upgrades PTI because the saved first-party artifact explicitly preserves Parent Center identity, Colorado statewide family support, and free or low-cost services.',
-    '- Legal aid stays blocked because the reviewed Disability Justice homepage does not yet preserve an explicit statewide legal-aid or legal-representation routing statement strong enough to satisfy that family by itself.',
+    '- Colorado Legal Services now upgrades legal_aid because the reviewed first-party homepage explicitly preserves free civil legal help for low-income Coloradans together with an Apply for Help route.',
     '- County-grade education routing and county/local disability resources remain the final critical county-grade blockers.',
     '',
   ].join('\n'));

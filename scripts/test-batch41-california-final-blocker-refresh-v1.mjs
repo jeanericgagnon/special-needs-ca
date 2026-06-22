@@ -35,6 +35,7 @@ assert.equal(stateSummary.completeness_pct, 75, 'California completeness should 
 assert.equal(stateSummary.strong_critical_families, 9, 'California should have nine strong critical families after the truthful upgrades.');
 assert.equal(stateSummary.weak_critical_families, 2, 'California should retain only the two county-grade weak blockers.');
 assert.equal(stateSummary.missing_critical_families, 1, 'California should retain only the missing statewide PTI blocker.');
+assert.equal(stateSummary.primary_gap_reason, 'county_grade_leaf_packets_exhausted_and_reviewed_pti_source_still_not_statewide', 'California primary gap reason should reflect the reviewed-but-regional PTI truth.');
 
 const early = gapRows.find((row) => row.family === 'early_intervention_part_c');
 const edu = gapRows.find((row) => row.family === 'district_or_county_education_routing');
@@ -49,6 +50,7 @@ assert.equal(edu.family_status, 'blocked_exact_leaf_repair_exhausted', 'Californ
 assert.equal(vr.family_status, 'verified_state_grade', 'California VR must upgrade to verified state grade.');
 assert.equal(pa.family_status, 'verified_state_grade', 'California P&A must upgrade to verified state grade.');
 assert.equal(pti.family_status, 'missing_verified_statewide_source', 'California PTI must remain an explicit missing statewide reviewed source.');
+assert.ok(pti.status_reason.includes('Marin, Napa, Solano, and Sonoma Counties'), 'California PTI gap must explain the reviewed regional coverage limit.');
 assert.equal(legal.family_status, 'verified_state_grade', 'California legal aid must upgrade to verified state grade.');
 assert.equal(county.family_status, 'blocked_exact_leaf_repair_exhausted', 'California county-local must move to explicit exhausted-leaf blocker status.');
 
@@ -57,8 +59,10 @@ assert.ok(!failureRows.some((row) => row.family === 'vocational_rehabilitation_p
 assert.ok(!failureRows.some((row) => row.family === 'protection_and_advocacy'), 'California P&A must drop out of the failure ledger.');
 assert.ok(!failureRows.some((row) => row.family === 'legal_aid'), 'California legal aid must drop out of the failure ledger.');
 assert.equal(failureRows.find((row) => row.family === 'district_or_county_education_routing').failure_code, 'bounded_exact_leaf_packet_exhausted_before_statewide_district_grade_coverage', 'California education failure code must explain packet exhaustion.');
-assert.equal(failureRows.find((row) => row.family === 'parent_training_information_center').failure_code, 'designated_statewide_pti_target_not_reviewed_or_verified', 'California PTI must explain the missing reviewed statewide target.');
+assert.equal(failureRows.find((row) => row.family === 'parent_training_information_center').failure_code, 'reviewed_pti_source_is_regional_not_statewide', 'California PTI must explain the reviewed regional-but-not-statewide source truth.');
+assert.ok(failureRows.find((row) => row.family === 'parent_training_information_center').evidence.includes('Marin, Napa, Solano, and Sonoma Counties'), 'California PTI failure must preserve the regional coverage evidence.');
 assert.equal(failureRows.find((row) => row.family === 'county_local_disability_resources').failure_code, 'reviewed_county_examples_do_not_prove_statewide_county_grade_office_coverage', 'California county-local must explain why sample county leaves are not statewide proof.');
+assert.ok(failureRows.find((row) => row.family === 'county_local_disability_resources').evidence.includes('CDSS IHSS county directory'), 'California county-local failure must mention the live official IHSS directory truth.');
 
 assert.deepEqual(
   nextRows.map((row) => row.family),
@@ -75,10 +79,13 @@ assert.equal(verifiedRows.find((row) => row.family === 'vocational_rehabilitatio
 assert.equal(verifiedRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'verified_state_grade', 'California verified sources must upgrade P&A.');
 assert.equal(verifiedRows.find((row) => row.family === 'legal_aid').family_status, 'verified_state_grade', 'California verified sources must upgrade legal aid.');
 assert.equal(verifiedRows.find((row) => row.family === 'ssi_ssa_federal_reference').sample_count, 1, 'California SSI/SSA must be backed by a concrete reviewed sample.');
-assert.equal(verifiedRows.find((row) => row.family === 'parent_training_information_center').sample_count, 0, 'California PTI must not preserve misleading sample rows.');
+assert.equal(verifiedRows.find((row) => row.family === 'parent_training_information_center').sample_count, 1, 'California PTI should preserve the reviewed Matrix sample while staying blocked statewide.');
+assert.equal(verifiedRows.find((row) => row.family === 'parent_training_information_center').evidence_strength, 'medium', 'California PTI evidence should reflect reviewed but insufficient statewide proof.');
 
 assert.ok(report.includes('California final blocker decision'), 'California report must include the final blocker decision section.');
 assert.ok(report.includes('67 county headings'), 'California report must explain the structured county-coverage basis for Early Start.');
-assert.ok(report.includes('Matrix Parent Network and Resource Center'), 'California report must explain the missing reviewed PTI source against the designated statewide target.');
+assert.ok(report.includes('Matrix Parents page'), 'California report must explain the reviewed PTI source against the statewide target requirement.');
+assert.ok(report.includes('Marin, Napa, Solano, and Sonoma Counties'), 'California report must explain the regional PTI coverage limit.');
+assert.ok(report.includes('Radware browser challenge'), 'California report must explain the school-directory challenge blocker.');
 
 console.log('test-batch41-california-final-blocker-refresh-v1: ok');

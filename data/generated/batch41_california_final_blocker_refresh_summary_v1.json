@@ -26,7 +26,7 @@
     {
       "family": "parent_training_information_center",
       "severity": "major",
-      "failure_code": "designated_statewide_pti_target_not_reviewed_or_verified"
+      "failure_code": "reviewed_pti_source_is_regional_not_statewide"
     }
   ],
   "facts": {
@@ -37,6 +37,14 @@
     "legalAidJudiciaryUrl": "https://selfhelp.courts.ca.gov/get-free-or-low-cost-legal-help",
     "legalAidBarUrl": "https://www.calbar.ca.gov/public/legal-resources/free-legal-help",
     "ptiDesignatedUrl": "https://www.matrixparents.org/",
-    "educationLeafCount": 3
+    "ptiCounties": [
+      "Marin",
+      "Napa",
+      "Solano",
+      "Sonoma"
+    ],
+    "educationLeafCount": 3,
+    "ihssDirectoryUrl": "https://www.cdss.ca.gov/inforesources/county-ihss-offices",
+    "schoolDirectoryUrl": "https://www.cde.ca.gov/schooldirectory/"
   }
 }

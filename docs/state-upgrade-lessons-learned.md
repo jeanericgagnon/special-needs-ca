@@ -292,3 +292,11 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Official Searchable District And County Directories Can Clear Local-Proof Families Without County-Specific Packet Authoring
 *   **Problem:** Arkansas looked blocked because the packet only preserved statewide DESE and DHS roots plus generic county fallback rows, even though the live official Arkansas School Personnel Directory and DHS County Offices Map already exposed district-specific SPED/504 contacts and county-specific office leaves.
 *   **Lesson:** Before opening county-by-county authoring, check whether the state already runs one searchable official district directory and one searchable official county-office directory. If the district directory preserves district-level SPED/504 contact fields and the office directory resolves to county-specific office leaves, those official directory chains can satisfy local routing truthfully without separate county packet authoring.
+
+### Reviewed PTI Designation Can Still Fail The Statewide Gate On Scope
+*   **Problem:** California's Matrix Parents page is a live first-party page with explicit `Parent Training and Information Center (PTI)` text, but the same reviewed page limits PTI coverage to Marin, Napa, Solano, and Sonoma Counties.
+*   **Lesson:** When a reviewed PTI page preserves explicit designation text, promote it from `unreviewed` to the most accurate blocked state instead of leaving it missing. But do not clear a statewide PTI family unless the reviewed scope text itself proves statewide coverage rather than a regional multi-county footprint.
+
+### Exact First-Party Legal-Aid Homepages Beat Weak Planning Seeds
+*   **Problem:** Colorado legal aid looked missing because the packet only preserved an LSC planning seed and a statewide P&A page that was strong for advocacy but too weak for legal-representation routing.
+*   **Lesson:** If a legal-aid family is blocked on weak planning or advocacy evidence, try one bounded first-party legal-aid homepage check before reopening discovery. A reviewed homepage that explicitly says it offers free civil legal help to qualifying residents statewide and exposes an apply-for-help route is strong enough to clear the statewide legal-aid family.

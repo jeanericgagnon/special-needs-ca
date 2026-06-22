@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 1,
   "total_critical_families": 12,
-  "primary_gap_reason": "county_grade_leaf_packets_exhausted_and_statewide_pti_source_still_unverified",
+  "primary_gap_reason": "county_grade_leaf_packets_exhausted_and_reviewed_pti_source_still_not_statewide",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -30,6 +30,7 @@
     "district_or_county_education_routing",
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
+    "parent_training_information_center",
     "legal_aid",
     "able_program",
     "ssi_ssa_federal_reference",
@@ -52,15 +53,15 @@
     {
       "family": "parent_training_information_center",
       "severity": "major",
-      "failure_code": "designated_statewide_pti_target_not_reviewed_or_verified",
-      "evidence": "The designated statewide PTI source https://www.matrixparents.org/ is present only as a planning target; no reviewed first-party fetch evidence for that source exists in the current California packet.",
-      "next_action": "hold_blocked_until_reviewed_statewide_pti_source_is_verified"
+      "failure_code": "reviewed_pti_source_is_regional_not_statewide",
+      "evidence": "Reviewed first-party Matrix Parents evidence on https://www.matrixparents.org/ preserves explicit PTI/FEC/FRC designation text, but the same page limits PTI service coverage to Marin, Napa, Solano, and Sonoma Counties rather than statewide California coverage.",
+      "next_action": "hold_blocked_until_statewide_pti_or_equivalent_parent_center_source_is_verified"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
       "failure_code": "reviewed_county_examples_do_not_prove_statewide_county_grade_office_coverage",
-      "evidence": "The current packet still proves only sample county-owned office leaves plus BenefitsCal, not a statewide county-grade local-office directory or complete county-owned office coverage.",
+      "evidence": "The reviewed CDSS IHSS county directory https://www.cdss.ca.gov/inforesources/county-ihss-offices is live and lists county-specific links, but the packet still verifies only sample county-owned office leaves plus BenefitsCal, not statewide reviewed county-grade office coverage.",
       "next_action": "hold_blocked_until_new_exact_county_local_targets_are_authored"
     }
   ]

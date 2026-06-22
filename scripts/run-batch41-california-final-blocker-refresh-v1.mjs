@@ -99,7 +99,7 @@ function recalcSummary(summary, gapRows, failureRows, verifiedRows) {
     strong_critical_families: strong,
     weak_critical_families: weak,
     missing_critical_families: missing,
-    primary_gap_reason: 'county_grade_leaf_packets_exhausted_and_statewide_pti_source_still_unverified',
+    primary_gap_reason: 'county_grade_leaf_packets_exhausted_and_reviewed_pti_source_still_not_statewide',
     recommended_batch: 'batch_2_repair_blocked',
     critical_gap_families: failureRows.filter((row) => row.severity === 'critical').map((row) => row.family),
     major_gap_families: failureRows.filter((row) => row.severity === 'major').map((row) => row.family),
@@ -147,9 +147,9 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows,
     `- Vocational rehabilitation / Pre-ETS is no longer a blocker because reviewed California Department of Rehabilitation pages already prove statewide VR routing and student-services entry points, including ${facts.vrUrl}.`,
     `- Protection and advocacy is no longer a blocker because Disability Rights California Get Help (${facts.paUrl}) is already present as reviewed first-party statewide P&A intake evidence.`,
     `- Legal aid is no longer a blocker because reviewed California judiciary and State Bar pages (${facts.legalAidJudiciaryUrl} and ${facts.legalAidBarUrl}) already provide authoritative statewide legal-help routing.`,
-    `- Parent training information center remains blocked because the designated statewide PTI target on disk is Matrix Parent Network and Resource Center (${facts.ptiDesignatedUrl}), but the current California packet still has no reviewed first-party statewide PTI fetch evidence for that source.`,
-    `- District or county education routing remains blocked because only ${facts.educationLeafCount} reviewed exact district leaves have been verified, which does not truthfully prove county-grade district routing across all ${summary.county_count} California counties.`,
-    `- County-local disability resources remain blocked because the reviewed packet still proves only example county office leaves plus the statewide BenefitsCal intake portal, not a statewide county-grade local office directory or complete county-owned office coverage.`,
+    `- Parent training information center remains blocked because the reviewed first-party Matrix Parents page (${facts.ptiDesignatedUrl}) now proves explicit PTI/FEC/FRC designations, but its own scope text limits PTI coverage to ${facts.ptiCounties.join(', ')} Counties rather than statewide California coverage.`,
+    `- District or county education routing remains blocked because only ${facts.educationLeafCount} reviewed exact district leaves have been verified, the official California School Directory root (${facts.schoolDirectoryUrl}) now returns a Radware browser challenge in the bounded live lane, and the reviewed SELPA page remains regional rather than district-owned proof across all ${summary.county_count} California counties.`,
+    `- County-local disability resources remain blocked because the reviewed CDSS IHSS county directory (${facts.ihssDirectoryUrl}) is live and lists county-specific links, but the bounded packet still verifies only sample county-owned office leaves plus the statewide BenefitsCal intake portal; that is not enough reviewed county-grade office coverage statewide.`,
     '- California is therefore truthfully final-blocked and not index-safe until new exact district/county leaves are authored for education and county-local routing, and a reviewed statewide PTI source is verified.',
   ].join('\n') + '\n';
 }
@@ -168,10 +168,12 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
   const legalAidJudiciaryResult = scrapeResults.find((row) => row.url === 'https://selfhelp.courts.ca.gov/get-free-or-low-cost-legal-help');
   const legalAidBarResult = scrapeResults.find((row) => row.url === 'https://www.calbar.ca.gov/public/legal-resources/free-legal-help');
   const ptiTarget = sourceTargets.find((row) => row.source_name === 'Matrix Parent Network and Resource Center');
+  const ihssDirectoryUrl = 'https://www.cdss.ca.gov/inforesources/county-ihss-offices';
+  const schoolDirectoryUrl = 'https://www.cde.ca.gov/schooldirectory/';
   const ssiSample = loadCaliforniaSsiSample();
 
   if (!earlyStartResult || !vrResult || !paResult || !legalAidJudiciaryResult || !legalAidBarResult || !ptiTarget || !ssiSample) {
-    throw new Error('California refresh requires reviewed Early Start, VR, P&A, legal-aid, SSI evidence, and the designated PTI source target.');
+    throw new Error('California refresh requires reviewed Early Start, VR, P&A, legal-aid, SSI evidence, and the designated PTI target.');
   }
 
   const earlyStartHtml = readSavedHtml(earlyStartResult.saved_path);
@@ -218,7 +220,7 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
       return {
         ...row,
         family_status: 'missing_verified_statewide_source',
-        status_reason: `The designated statewide PTI target ${ptiTarget.source_url} exists in planning artifacts, but the current California packet still lacks reviewed first-party statewide PTI fetch evidence for that source.`,
+        status_reason: `Reviewed first-party Matrix Parents evidence now proves explicit PTI/FEC/FRC designations, but the saved scope text limits PTI coverage to Marin, Napa, Solano, and Sonoma Counties rather than statewide California coverage.`,
       };
     }
     if (row.family === 'legal_aid') {
@@ -253,16 +255,16 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
         return {
           ...row,
           severity: 'major',
-          failure_code: 'designated_statewide_pti_target_not_reviewed_or_verified',
-          evidence: `The designated statewide PTI source ${ptiTarget.source_url} is present only as a planning target; no reviewed first-party fetch evidence for that source exists in the current California packet.`,
-          next_action: 'hold_blocked_until_reviewed_statewide_pti_source_is_verified',
+          failure_code: 'reviewed_pti_source_is_regional_not_statewide',
+          evidence: `Reviewed first-party Matrix Parents evidence on ${ptiTarget.source_url} preserves explicit PTI/FEC/FRC designation text, but the same page limits PTI service coverage to Marin, Napa, Solano, and Sonoma Counties rather than statewide California coverage.`,
+          next_action: 'hold_blocked_until_statewide_pti_or_equivalent_parent_center_source_is_verified',
         };
       }
       if (row.family === 'county_local_disability_resources') {
         return {
           ...row,
           failure_code: 'reviewed_county_examples_do_not_prove_statewide_county_grade_office_coverage',
-          evidence: 'The current packet still proves only sample county-owned office leaves plus BenefitsCal, not a statewide county-grade local-office directory or complete county-owned office coverage.',
+          evidence: `The reviewed CDSS IHSS county directory ${ihssDirectoryUrl} is live and lists county-specific links, but the packet still verifies only sample county-owned office leaves plus BenefitsCal, not statewide reviewed county-grade office coverage.`,
           next_action: 'hold_blocked_until_new_exact_county_local_targets_are_authored',
         };
       }
@@ -354,11 +356,19 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
       return {
         ...row,
         family_status: 'missing_verified_statewide_source',
-        evidence_strength: 'missing',
-        sample_count: 0,
+        evidence_strength: 'medium',
+        sample_count: 1,
         blocker_code: failure.failure_code,
         blocker_evidence: failure.evidence,
-        samples: [],
+        samples: [
+          {
+            sample_name: 'Matrix Parents at Marin CIL',
+            source_url: ptiTarget.source_url,
+            verification_status: 'verified',
+            source_type: 'first_party_reviewed_page',
+            source_table: 'bounded_live_california_check',
+          },
+        ],
       };
     }
     if (row.family === 'legal_aid') {
@@ -446,8 +456,8 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
       priority_rank: 3,
       family: 'parent_training_information_center',
       severity: 'major',
-      failure_code: 'designated_statewide_pti_target_not_reviewed_or_verified',
-      next_action: 'hold_blocked_until_reviewed_statewide_pti_source_is_verified',
+      failure_code: 'reviewed_pti_source_is_regional_not_statewide',
+      next_action: 'hold_blocked_until_statewide_pti_or_equivalent_parent_center_source_is_verified',
       evidence: failureByFamily.get('parent_training_information_center')?.evidence,
     },
   ];
@@ -461,7 +471,10 @@ export function generateBatch41CaliforniaFinalBlockerRefreshV1() {
     legalAidJudiciaryUrl: legalAidJudiciaryResult.url,
     legalAidBarUrl: legalAidBarResult.url,
     ptiDesignatedUrl: ptiTarget.source_url,
+    ptiCounties: ['Marin', 'Napa', 'Solano', 'Sonoma'],
     educationLeafCount: educationVerified.sample_count,
+    ihssDirectoryUrl,
+    schoolDirectoryUrl,
   };
   const updatedReport = buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows, facts);
 
