@@ -2,24 +2,22 @@
   "state": "alaska",
   "state_code": "AK",
   "state_name": "Alaska",
-  "batch": "batch_13_procedure_hardening_states_v1",
+  "batch": "batch_80_alaska_truth_repair_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 20,
-  "completeness_pct": 67,
-  "strong_critical_families": 8,
-  "weak_critical_families": 3,
-  "missing_critical_families": 1,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "official_local_office_directory_challenge_and_missing_explicit_pti_designation",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [
-    "protection_and_advocacy",
     "parent_training_information_center"
   ],
   "verified_source_families_with_samples": [
@@ -42,5 +40,6 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
-  ]
+  ],
+  "final_blockers": null
 }

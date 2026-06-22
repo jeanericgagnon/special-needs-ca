@@ -276,3 +276,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Official WordPress JSON Endpoints Can Resolve Accordion-Heavy State Leaves Without A Browser Pass
 *   **Problem:** Alabama's live ALSDE and ADMH county-grade pages looked too thin in cheap HTML reads because the visible leaves were accordion-heavy and menu-noisy, which made the packet look like it still needed district discovery and locator review.
 *   **Lesson:** Before escalating an official WordPress state leaf to browser-assisted review, check the matching `wp-json/wp/v2/pages/<id>` rendered content. If the JSON body preserves county lists, LEA coordinators, regions served, office phones, or counties covered, use that reviewed first-party content directly and reconcile it against the state's county list.
+
+### Official State District Directories Can Replace County Fallbacks In Borough-Based States
+*   **Problem:** Alaska's packet treated district routing as statewide fallback evidence even though DEED already exposed an official district-profiles search, district map, and district detail leaves with district-owned contact fields.
+*   **Lesson:** In borough-based or district-structured states, check the official state district directory before opening district-by-district discovery. If the directory deterministically resolves to district detail pages with address, phone, email, and superintendent fields, use that official directory chain to repair local education routing.

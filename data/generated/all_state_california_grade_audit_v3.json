@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T13:39:55.601Z",
+  "generatedAt": "2026-06-22T13:50:54.000Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 3,
@@ -97,11 +97,11 @@
       "legacyManualReviewRate": 56.07,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 20,
-      "strongCriticalFamilies": 8,
-      "weakCriticalFamilies": 3,
-      "missingCriticalFamilies": 1,
+      "strongCriticalFamilies": 10,
+      "weakCriticalFamilies": 2,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 67,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "alaska",
         "state_code": "AK",
@@ -140,18 +140,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "blocked_reviewed_statewide_legal_advocacy_source_not_explicit_pa",
+        "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_official_local_directory_challenge_unresolved"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetBatch": "batch_80_alaska_truth_repair_v1",
+      "packetPrimaryGapReason": "official_local_office_directory_challenge_and_missing_explicit_pti_designation",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
