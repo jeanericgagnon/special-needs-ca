@@ -1,0 +1,15 @@
+{
+  "batch": "batch83_south_carolina_statewide_family_truth_refresh_v1",
+  "state": "south-carolina",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "protection_and_advocacy",
+    "legal_aid"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources",
+    "parent_training_information_center"
+  ]
+}
