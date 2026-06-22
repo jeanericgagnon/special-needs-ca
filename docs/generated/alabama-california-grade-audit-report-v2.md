@@ -1,10 +1,10 @@
-# Alabama California-Grade Batch 7 Report v1
+# Alabama California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 75
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 67
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: all_critical_families_verified_with_reviewed_first_party_or_official_evidence
 
 ## Family status
 
@@ -13,20 +13,18 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- district_or_county_education_routing: verified_state_grade (Official Alabama LEA Coordinators plus SES Regional Contacts pages preserve county- and LEA-specific education routing coverage across 67/67 Alabama counties on the live ALSDE domain.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (reviewed first-party PTI evidence is present at the required authority level)
-- legal_aid: missing (no credible current evidence)
+- legal_aid: verified_state_grade (Legal Services Alabama first-party home, services, and intake pages preserve a live statewide civil legal-aid route for low-income Alabamians and list multiple Alabama offices plus an apply-for-services intake path.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: verified_state_grade (Official Alabama Department of Mental Health regional offices page preserves Developmental Disabilities Services Region I-V office contacts and counties covered across 67/67 Alabama counties.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 7 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 8 generic roots need leaf verification
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for Alabama.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 7 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 8 generic roots need leaf verification
+- none
 
 ## Verified source samples
 
@@ -35,23 +33,37 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.alabama.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.alabama.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.alabamaachieves.org/
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.alabamaachieves.org/
+- district_or_county_education_routing: verified_state_grade; samples=67; first=https://www.alabamaachieves.org/compliance-monitoring/lea-coordinators/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://mh.alabama.gov
 - protection_and_advocacy: verified_state_grade; samples=1; first=http://adap.ua.edu/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://alabamaparentcenter.com/
-- legal_aid: missing; samples=0
+- legal_aid: verified_state_grade; samples=2; first=https://legalservicesalabama.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- county_local_disability_resources: verified_state_grade; samples=67; first=https://mh.alabama.gov/regional-offices/
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [info] maintenance: Preserve Alabama as COMPLETE/index_safe and rerun only maintenance truth audits unless new evidence regresses.
 
-## Completion decision
+## Alabama repair decision
 
-- Alabama no longer belongs in UNSTARTED. Reviewed first-party statewide support evidence on disk now truthfully upgrades Protection and Advocacy and the Parent Training & Information Center from stale missing/inventory-only packet states.
-- Alabama still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence instead of county- or district-owned leaves, county/local disability resources still depend on generic or statewide locator-style evidence, and legal aid still lacks a reviewed statewide first-party source family.
-- Alabama is therefore terminal BLOCKED, not COMPLETE: the statewide support families are now repaired, but the remaining county-grade routing gaps are explicit and still unresolved.
+- District or county education routing is now verified because the official ALSDE LEA Coordinators and SES Regional Contacts leaves together preserve county- and LEA-specific routing evidence across all 67 Alabama counties.
+- Legal aid is now verified because Legal Services Alabama preserves a first-party statewide civil legal-aid route for low-income Alabamians plus a live Apply for Services intake page.
+- County-local disability resources are now verified because the official Alabama Department of Mental Health regional-offices page preserves Developmental Disabilities Services Region I-V offices with exact counties covered across 67/67 Alabama counties.
+- Alabama is therefore California-grade COMPLETE and index-safe so long as future maintenance audits keep these exact reviewed leaves live.
+
+## Evidence checks
+
+- Education routing: Reviewed 2026-06-22 live probes returned official ALSDE titles "Alabama LEA Coordinators" and "Alabama SES - Regional Contacts", and the combined official wp-json content preserved named coordinator contacts plus county/LEA coverage across all 67 Alabama counties.
+- Legal aid: Reviewed 2026-06-22 live probes returned first-party Legal Services Alabama pages with the text "free, client-centered civil legal advocacy to low-income Alabamians" plus a live statewide Apply for Services intake route.
+- County-local disability resources: Reviewed 2026-06-22 official ADMH regional-offices content preserved Developmental Disabilities Services Region I-V office contacts and counties covered; normalized county reconciliation matched 67/67 Alabama counties exactly.
+
+## Final family count
+
+- strong_critical_families: 12
+- weak_critical_families: 0
+- missing_critical_families: 0
+- district_or_county_education_routing: verified_state_grade
+- legal_aid: verified_state_grade
+- county_local_disability_resources: verified_state_grade

@@ -272,3 +272,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### PTI Navigation Alone Does Not Prove Statewide PTI Designation
 *   **Problem:** North Carolina’s reviewed ECAC homepage preserved strong family-support language and direct navigation to a `Parent Training and Information Center (PTI)` page, but the saved artifact chain did not include a fetched leaf that explicitly stated statewide PTI designation.
 *   **Lesson:** Do not upgrade a PTI family from homepage navigation alone. Keep the family `inventory_only` or blocked until the reviewed artifact chain preserves an explicit statewide PTI designation on the fetched page itself, not just a menu link or inferred organization role.
+
+### Official WordPress JSON Endpoints Can Resolve Accordion-Heavy State Leaves Without A Browser Pass
+*   **Problem:** Alabama's live ALSDE and ADMH county-grade pages looked too thin in cheap HTML reads because the visible leaves were accordion-heavy and menu-noisy, which made the packet look like it still needed district discovery and locator review.
+*   **Lesson:** Before escalating an official WordPress state leaf to browser-assisted review, check the matching `wp-json/wp/v2/pages/<id>` rendered content. If the JSON body preserves county lists, LEA coordinators, regions served, office phones, or counties covered, use that reviewed first-party content directly and reconcile it against the state's county list.
