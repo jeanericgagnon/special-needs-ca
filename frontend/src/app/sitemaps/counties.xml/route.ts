@@ -60,15 +60,15 @@ export async function GET() {
     const hasRequiredContactInfo = offices.length > 0;
     const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(details));
 
-    const rcDates = rcs.map(rc => rc.last_verified_date).filter(Boolean) as string[];
-    const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean) as string[];
-    const coDates = offices.map(co => co.last_verified_date).filter(Boolean) as string[];
+    const rcDates = rcs.map((rc: any) => rc.last_verified_date).filter(Boolean) as string[];
+    const sdDates = countyDistricts.map((sd: any) => sd.last_verified_date).filter(Boolean) as string[];
+    const coDates = offices.map((co: any) => co.last_verified_date).filter(Boolean) as string[];
     const allDates = [...rcDates, ...sdDates, ...coDates];
     const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-    const rcScores = rcs.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
-    const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
-    const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+    const rcScores = rcs.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+    const sdScores = countyDistricts.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+    const coScores = offices.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
     const allScores = [...rcScores, ...sdScores, ...coScores];
     const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
@@ -205,9 +205,9 @@ export async function GET() {
         const sdList = countyDetails?.schoolDistricts || [];
         const coList = countyDetails?.countyOffices || [];
         const rcList = countyDetails?.regionalCenters || [];
-        const rcScores = rcList.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
-        const sdScores = sdList.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
-        const coScores = coList.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+        const rcScores = rcList.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+        const sdScores = sdList.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+        const coScores = coList.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
         const allScores = [...rcScores, ...sdScores, ...coScores];
         const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
