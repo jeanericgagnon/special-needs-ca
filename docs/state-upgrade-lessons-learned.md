@@ -473,3 +473,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Official State-Board Pages Can Adopt Linked County Maps When The County IDs Are Embedded Publicly
 *   **Lesson:** If an official state board page points families to a partner directory or interactive map, that linked source can satisfy county-grade routing when the public page embeds explicit county IDs plus routing targets. Illinois cleared once ISBE /roe linked the IARSS map, the IARSS source exposed 101 unique county IDs, Cook stayed covered by verified ISC rows, and the one weak ROE 13 outbound link was replaced with the reviewed IARSS directory listing instead of forcing 102 separate district leaves.
+
+### Commented-Out Official Links Plus 410 Exports Mean The Contact Lane Is Truly Retired
+*   **Lesson:** If an official page still advertises a contact list only inside commented-out HTML, treat that lane as retired unless a live replacement exists. Indiana was cheaper to classify once the edit, export, csv, and preview URLs for the old Google Sheet all returned 410 and the official site search produced no replacement, which avoided reprobing the same dead contact-list lane again.
+
+### Statewide Map And Governance Pages Are Dead Ends When They Never Link Out To Local Education Operators
+*   **Lesson:** If a state education page only loops into statewide shapefiles, budgets, CASA forms, and internal special-education pages, stop treating it as a discovery lane for county routing. Iowa became cheaper once the district-maps and AEA pages were proven to expose no reviewed external AEA domains or district-owned special-education leaves, so future repair work should skip those statewide surfaces unless a new local outbound link appears.
