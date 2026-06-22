@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T19:45:57.270Z",
+  "generatedAt": "2026-06-22T19:50:33.939Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 8,
@@ -1087,11 +1087,11 @@
       "legacyManualReviewRate": 59.21,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 105,
-      "strongCriticalFamilies": 7,
-      "weakCriticalFamilies": 5,
+      "strongCriticalFamilies": 5,
+      "weakCriticalFamilies": 7,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 58,
+      "completenessPct": 42,
       "dbMetrics": {
         "state_id": "kansas",
         "state_code": "KS",
@@ -1128,9 +1128,9 @@
         "medicaid_state_health_coverage": "blocked_live_medicaid_source_access_denied",
         "medicaid_waiver_hcbs_disability_services": "blocked_live_waiver_source_access_denied",
         "developmental_disability_idd_authority": "blocked_live_dd_authority_source_access_denied",
-        "early_intervention_part_c": "verified_state_grade",
-        "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
+        "early_intervention_part_c": "blocked_ksde_ecse_root_request_rejected",
+        "special_education_idea_part_b": "blocked_ksde_special_education_root_request_rejected",
+        "district_or_county_education_routing": "blocked_ksde_host_request_rejected_and_no_local_leafs",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1141,7 +1141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_medicaid_kdads_stack_blocked_and_local_district_proof_unverified",
+      "packetPrimaryGapReason": "ksde_request_rejected_shell_plus_kancare_kdads_access_blocked",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

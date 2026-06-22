@@ -1,0 +1,12 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 42,
+  "downgraded_families": [
+    "early_intervention_part_c",
+    "special_education_idea_part_b"
+  ],
+  "refined_family": "district_or_county_education_routing",
+  "lesson_added": false
+}
