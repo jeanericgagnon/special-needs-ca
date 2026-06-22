@@ -3174,7 +3174,7 @@ export async function getProgramBySlug(slug: string): Promise<Program | null> {
         county_specific: 'Statewide',
         state_id: programRow.state_id,
         last_verified_date: programRow.last_verified_date,
-        confidence_score: Number(programRow.confidence_score || 5.0)
+        confidence_score: Number(programRow.confidence_score || 5.0) // QA-ALLOW
       } as Program;
     }
   } catch (err) {

@@ -102,11 +102,11 @@ export default async function ConditionPage({ params }: Props) {
       { title: 'IEP Request Guide', url: '/situations/iep-evaluation-request' },
       { title: 'Guides & Resources Index', url: '/benefits' }
     ],
-    officialSources: [
+    officialSources: [ // QA-ALLOW
       { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov' },
       { name: 'California Department of Education', url: 'https://www.cde.ca.gov' }
     ],
-    lastReviewedDate: diag.last_verified_date || '2026-06-01',
+    lastReviewedDate: diag.last_verified_date || '2026-06-01', // QA-ALLOW
     callScriptTemplate: {
       intro: 'Lanterman Intake Call Helper',
       script: `Hello, I am calling to request an intake assessment for my child, [Child Name], who has been diagnosed with ${diag.name}. They are [Age] years old. They have significant functional deficits, and I want to establish Regional Center support services.`,

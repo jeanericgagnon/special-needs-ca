@@ -13,6 +13,7 @@
     "build:prototype": "vite build --config prototype_quarantine/vite.config.js",
     "lint": "eslint .",
     "lint:frontend": "npm --prefix frontend run lint",
+    "seo:qa": "npx tsx scripts/qa-seo-checker.ts",
     "crawl:advocates": "node src/scrapers/advocate_scraper.js",
     "crawl:fecs": "node src/scrapers/fec_scraper.js",
     "crawl:wrightslaw": "node src/scrapers/wrightslaw_scraper.js",

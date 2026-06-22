@@ -40,6 +40,24 @@ const insertRule = db.prepare(`
   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
+const originalRun = insertRule.run.bind(insertRule);
+insertRule.run = function(...args) {
+  const lastIdx = args.length - 1;
+  let reason = args[lastIdx];
+  if (reason && typeof reason === 'string') {
+    if (!reason.includes('(Screening Hint Only)')) {
+      reason = reason.trim();
+      if (reason.endsWith('.')) {
+        reason = reason.slice(0, -1) + ' (Screening Hint Only).';
+      } else {
+        reason = reason + ' (Screening Hint Only).';
+      }
+    }
+  }
+  args[lastIdx] = reason;
+  return originalRun(...args);
+};
+
 // State map helper for formatting trigger reasons
 const stateNameMap = {
   'alabama': 'Alabama', 'alaska': 'Alaska', 'arizona': 'Arizona', 'arkansas': 'Arkansas',

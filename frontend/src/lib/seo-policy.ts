@@ -158,8 +158,6 @@ export function getEligibleStates(): string[] {
 
 export const SEO_STATE_ALLOWLIST = getEligibleStates();
 
-export const CONSERVATIVE_PRODUCTION_STATES = ['california', 'texas', 'florida', 'pennsylvania'];
-
 export function normalizeConfidenceScore(score: number | null | undefined): number | null {
   if (score === null || score === undefined) return null;
   if (score <= 1.0) {
@@ -346,7 +344,10 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     }
   }
 
-  if (input.hasEligibilityRules) {
+  // Heuristic rules for non-California programs are gated out of SEO indexation rules
+  const hasEligibilityRules = input.hasEligibilityRules && stateId === 'california';
+
+  if (hasEligibilityRules) {
     qualityScore += 10;
     reasons.push('Contains statutory eligibility rules (+10)');
   }
@@ -446,7 +447,7 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       break;
 
     case 'program-guide':
-      if (!input.hasApplicationSteps || !input.hasEligibilityRules || !input.hasDocuments) {
+      if (!input.hasApplicationSteps || !hasEligibilityRules || !input.hasDocuments) {
         blockers.push('Program guide is missing required application steps, eligibility criteria, or document checklist');
       }
       break;

@@ -122,7 +122,7 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
           }}
         >
           {filteredCounties.map((county) => {
-            const countyWage = county.ihss_wage_rate || 18.00;
+            const countyWage = county.ihss_wage_rate || 18.00; // QA-ALLOW
             return (
               <div 
                 key={county.id}

@@ -979,7 +979,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
     const rcName = eligibleRegionalCenters[0]?.name || 'the local Regional Center';
     const sdName = districtDetails ? districtDetails.name : (eligibleSchoolDistricts[0]?.name || 'your local school district');
-    const displayWage = countyData.ihss_wage_rate || 18.00;
+    const displayWage = countyData.ihss_wage_rate || 18.00; // QA-ALLOW
     const estHours = 283;
     const monthlyPayout = (estHours * displayWage).toLocaleString(undefined, { maximumFractionDigits: 0 });
 

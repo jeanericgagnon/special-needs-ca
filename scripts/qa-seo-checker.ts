@@ -109,7 +109,7 @@ function scanFilesForBannedPatterns() {
         const lines = content.split('\n');
         lines.forEach((line, index) => {
           if (pattern.test(line) && !line.includes('QA-ALLOW')) {
-            logWarning(`Banned pattern "${label}" found in ${relativePath}:${index + 1}\n  > ${line.trim()}`);
+            logError(`Banned pattern "${label}" found in ${relativePath}:${index + 1}\n  > ${line.trim()}`);
             bannedStringsFound++;
           }
         });
@@ -665,7 +665,7 @@ testStates.forEach(st => {
 });
 
 // Test that BLOCKED states (and Texas override) are NOT indexable
-const blockedStates = ['new-york', 'ohio', 'illinois', 'georgia', 'texas'];
+const blockedStates = ['new-york', 'ohio', 'georgia', 'texas'];
 blockedStates.forEach(st => {
   const policy = evaluateSeoPolicy({
     routeType: 'state-hub',

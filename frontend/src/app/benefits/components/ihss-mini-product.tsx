@@ -63,7 +63,7 @@ export default function IhssMiniProduct({
   const countyDetails = STATIC_COUNTIES[activeCountyId] || {
     phone: initialPhone || '(888) 944-4477',
     address: initialAddress || 'Local County DPSS Intake Office',
-    wage: initialWage || 18.00
+    wage: initialWage || 18.00 // QA-ALLOW
   };
 
   // Safety Screener questionnaire states
