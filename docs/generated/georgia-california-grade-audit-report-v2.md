@@ -53,4 +53,5 @@
 - Developmental disability routing remains blocked because the official DBHDD county table still renders 159/159 blank county cells in static HTML, and the obvious same-domain region field-office leaves remain non-proving or forbidden.
 - District or county education routing remains blocked because only 5 reviewed district-owned leaves across the bounded packet evidence have been verified; that is not enough to truthfully prove county-grade routing across 159 Georgia counties without reopening broad district discovery.
 - Legal aid is now verified at the statewide support layer because Georgia Legal Services Program proves 154 counties outside Metro Atlanta and Atlanta Legal Aid proves Clayton, Cobb, DeKalb, Fulton, and Gwinnett county legal-aid routing from first-party pages.
+- Georgia Advocacy Office and Parent to Parent of Georgia remain upgraded out of the blocker list because verified first-party statewide evidence already existed on disk.
 - Georgia remains blocked and not index-safe until the DD county mapping and district-grade education families have county-grade proof.

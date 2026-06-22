@@ -1,15 +1,14 @@
 {
   "batch": "batch_37_georgia_final_blocker_refresh_v1",
-  "generated_at": "2026-06-21T20:43:14.273Z",
+  "generated_at": "2026-06-22T00:44:13.391Z",
   "state": "georgia",
   "classification": "BLOCKED",
   "index_safe": false,
-  "completeness_pct": 75,
+  "completeness_pct": 83,
   "dd_packet_root": "dbhdd.georgia.gov",
   "education_leaf_count": 5,
   "remaining_failure_families": [
     "developmental_disability_idd_authority",
-    "district_or_county_education_routing",
-    "legal_aid"
+    "district_or_county_education_routing"
   ]
 }

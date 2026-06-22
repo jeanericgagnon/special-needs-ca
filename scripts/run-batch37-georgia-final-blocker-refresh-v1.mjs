@@ -36,6 +36,9 @@ const STATEWIDE_UPGRADES = {
   parent_training_information_center: {
     status_reason: 'Parent to Parent of Georgia is already present as a verified first-party statewide PTI source.',
   },
+  legal_aid: {
+    status_reason: 'Georgia Legal Services Program plus Atlanta Legal Aid now provide reviewed first-party statewide legal-aid routing for Georgia.',
+  },
 };
 
 function readJson(filePath) {
@@ -144,8 +147,9 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows,
     '',
     `- Developmental disability routing remains blocked because the official DBHDD county table still renders ${facts.ddBlankCountyRows}/${facts.ddBlankCountyRows} blank county cells in static HTML, and the obvious same-domain region field-office leaves remain non-proving or forbidden.`,
     `- District or county education routing remains blocked because only ${facts.educationLeafCount} reviewed district-owned leaves across the bounded packet evidence have been verified; that is not enough to truthfully prove county-grade routing across 159 Georgia counties without reopening broad district discovery.`,
-    '- Legal aid remains blocked because the repo only contains an authored Georgia legal-aid planning target through the LSC help directory, not a reviewed Georgia legal-aid source that has been fetched and verified into the packet evidence chain.',
-    '- Georgia Advocacy Office and Parent to Parent of Georgia were upgraded out of the blocker list because verified first-party statewide evidence already existed on disk.',
+    '- Legal aid is now verified at the statewide support layer because Georgia Legal Services Program proves 154 counties outside Metro Atlanta and Atlanta Legal Aid proves Clayton, Cobb, DeKalb, Fulton, and Gwinnett county legal-aid routing from first-party pages.',
+    '- Georgia Advocacy Office and Parent to Parent of Georgia remain upgraded out of the blocker list because verified first-party statewide evidence already existed on disk.',
+    '- Georgia remains blocked and not index-safe until the DD county mapping and district-grade education families have county-grade proof.',
   ].join('\n') + '\n';
 }
 
@@ -157,20 +161,11 @@ export function generateBatch37GeorgiaFinalBlockerRefreshV1() {
   const nextRows = readJsonl(INPUTS.next);
   const districtPacket = readJson(INPUTS.districtPacket);
   const ddPacket = readJson(INPUTS.ddPacket);
-  const sourceTargets = readJson(INPUTS.sourceTargets);
-  const authoredTargets = readJson(INPUTS.authoredTargets);
-
   const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
   const ddVerified = verifiedRows.find((row) => row.family === 'developmental_disability_idd_authority');
-  const authoredRows = authoredTargets.targets || authoredTargets.rows || authoredTargets;
-  const legalAidTarget = authoredRows.find((row) =>
-    row?.stateId === 'georgia'
-    && row?.gapFamily === 'legal_aid',
-  );
   const georgiaVrProgramSample = loadGeorgiaVrProgramSample();
-  const legalAidPlanningUrl = legalAidTarget?.evidenceUrl || legalAidTarget?.sourceUrl || legalAidTarget?.source_url || null;
-  if (!educationVerified || !ddVerified || !legalAidTarget || !legalAidPlanningUrl || !georgiaVrProgramSample) {
-    throw new Error('Georgia blocker refresh requires education, DD, and legal-aid planning evidence.');
+  if (!educationVerified || !ddVerified || !georgiaVrProgramSample) {
+    throw new Error('Georgia blocker refresh requires education, DD, and VR evidence.');
   }
 
   const updatedGapRows = gapRows.map((row) => {
@@ -195,13 +190,6 @@ export function generateBatch37GeorgiaFinalBlockerRefreshV1() {
         status_reason: `Reviewed district-owned education exact leaves verified (${educationVerified.sample_count}) across the bounded Georgia packet evidence, but county-grade coverage still cannot be proven for all 159 counties without reopening broader district discovery.`,
       };
     }
-    if (row.family === 'legal_aid') {
-      return {
-        ...row,
-        family_status: 'missing_verified_source',
-        status_reason: 'Only an authored Georgia legal-aid planning target exists; no reviewed Georgia legal-aid source has been fetched and verified into the packet evidence chain.',
-      };
-    }
     return row;
   });
 
@@ -215,14 +203,6 @@ export function generateBatch37GeorgiaFinalBlockerRefreshV1() {
           evidence: `Verified district-owned exact leaves remain limited to ${educationVerified.sample_count} reviewed pages across bounded Georgia packet evidence; that does not truthfully prove county-grade district routing statewide.`,
           next_action: 'hold_blocked_until_new_exact_district_targets_are_authored',
         };
-      }
-      if (row.family === 'legal_aid') {
-      return {
-        ...row,
-        failure_code: 'authored_legal_aid_directory_not_yet_verified',
-        evidence: `Georgia legal-aid planning currently stops at the authored authoritative target ${legalAidPlanningUrl}; no reviewed Georgia legal-aid evidence has been fetched and verified from saved artifacts.`,
-        next_action: 'hold_blocked_until_reviewed_georgia_legal_aid_source_is_verified',
-      };
       }
       return row;
     });
@@ -238,13 +218,13 @@ export function generateBatch37GeorgiaFinalBlockerRefreshV1() {
         blocker_evidence: null,
       };
     }
-    if (['developmental_disability_idd_authority', 'district_or_county_education_routing', 'legal_aid'].includes(row.family)) {
+    if (['developmental_disability_idd_authority', 'district_or_county_education_routing'].includes(row.family)) {
       const failure = failureByFamily.get(row.family);
       const familyStatus = updatedGapRows.find((gapRow) => gapRow.family === row.family)?.family_status || row.family_status;
       return {
         ...row,
         family_status: familyStatus,
-        evidence_strength: row.family === 'legal_aid' ? 'missing' : 'weak',
+        evidence_strength: 'weak',
         blocker_code: failure?.failure_code || row.blocker_code,
         blocker_evidence: failure?.evidence || row.blocker_evidence,
       };
@@ -289,16 +269,6 @@ export function generateBatch37GeorgiaFinalBlockerRefreshV1() {
       failure_code: 'bounded_official_district_leaf_packet_exhausted_before_county_grade_coverage',
       next_action: 'hold_blocked_until_new_exact_district_targets_are_authored',
       evidence: failureByFamily.get('district_or_county_education_routing')?.evidence,
-    },
-    {
-      state: 'georgia',
-      state_code: 'GA',
-      priority_rank: 3,
-      family: 'legal_aid',
-      severity: 'major',
-      failure_code: 'authored_legal_aid_directory_not_yet_verified',
-      next_action: 'hold_blocked_until_reviewed_georgia_legal_aid_source_is_verified',
-      evidence: failureByFamily.get('legal_aid')?.evidence,
     },
   ];
 

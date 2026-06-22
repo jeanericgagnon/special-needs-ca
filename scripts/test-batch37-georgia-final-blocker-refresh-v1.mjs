@@ -31,7 +31,7 @@ const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/georgia-calif
 assert.equal(summary.classification, 'BLOCKED', 'Georgia refresh must keep the state blocked.');
 assert.equal(stateSummary.classification, 'BLOCKED', 'Georgia packet summary must remain blocked.');
 assert.equal(stateSummary.index_safe, false, 'Georgia must remain not index-safe.');
-assert.equal(stateSummary.completeness_pct, 75, 'Georgia completeness must rise after statewide family truth refresh.');
+assert.equal(stateSummary.completeness_pct, 83, 'Georgia completeness must reflect the repaired statewide support families.');
 
 const pa = gapRows.find((row) => row.family === 'protection_and_advocacy');
 const pti = gapRows.find((row) => row.family === 'parent_training_information_center');
@@ -42,20 +42,21 @@ assert.equal(pa.family_status, 'verified_state_grade', 'Georgia P&A must upgrade
 assert.equal(pti.family_status, 'verified_state_grade', 'Georgia PTI must upgrade to verified state grade.');
 assert.equal(dd.family_status, 'blocked_official_county_table_blank', 'Georgia DD must move to explicit blocked county-table status.');
 assert.equal(edu.family_status, 'blocked_exact_leaf_repair_exhausted', 'Georgia education must move to explicit exhausted-leaf blocker status.');
-assert.equal(legal.family_status, 'missing_verified_source', 'Georgia legal aid must remain explicit missing verified source.');
+assert.equal(legal.family_status, 'verified_state_grade', 'Georgia legal aid must remain verified from reviewed first-party statewide routing.');
 
 assert.ok(!failureRows.some((row) => row.family === 'protection_and_advocacy'), 'Georgia P&A must drop out of the failure ledger.');
 assert.ok(!failureRows.some((row) => row.family === 'parent_training_information_center'), 'Georgia PTI must drop out of the failure ledger.');
 assert.equal(failureRows.find((row) => row.family === 'district_or_county_education_routing').failure_code, 'bounded_official_district_leaf_packet_exhausted_before_county_grade_coverage', 'Georgia education failure code must explain packet exhaustion.');
-assert.equal(failureRows.find((row) => row.family === 'legal_aid').failure_code, 'authored_legal_aid_directory_not_yet_verified', 'Georgia legal aid must explain the authored-but-unverified blocker.');
+assert.ok(!failureRows.some((row) => row.family === 'legal_aid'), 'Georgia legal aid must no longer appear in the failure ledger.');
 
-assert.deepEqual(nextRows.map((row) => row.family), ['developmental_disability_idd_authority', 'district_or_county_education_routing', 'legal_aid'], 'Georgia next actions must collapse to the three real remaining blockers.');
+assert.deepEqual(nextRows.map((row) => row.family), ['developmental_disability_idd_authority', 'district_or_county_education_routing'], 'Georgia next actions must collapse to the two real remaining blockers.');
 assert.equal(verifiedRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'verified_state_grade', 'Georgia verified sources must upgrade P&A.');
 assert.equal(verifiedRows.find((row) => row.family === 'parent_training_information_center').family_status, 'verified_state_grade', 'Georgia verified sources must upgrade PTI.');
 const vr = verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
 assert.equal(vr.family_status, 'verified_state_grade', 'Georgia VR must remain verified.');
 assert.equal(vr.sample_count, 1, 'Georgia VR must carry one verified GVRA sample rather than a zero-sample verified row.');
 assert.equal(vr.samples[0].source_url, 'https://gvs.georgia.gov/', 'Georgia VR must point to the verified GVRA official source.');
+assert.equal(verifiedRows.find((row) => row.family === 'legal_aid').family_status, 'verified_state_grade', 'Georgia verified sources must preserve statewide legal aid.');
 assert.ok(report.includes('vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://gvs.georgia.gov/'), 'Georgia report must show the GVRA sample in verified sources.');
 assert.ok(report.includes('Georgia final blocker decision'), 'Georgia report must include the final blocker decision section.');
 

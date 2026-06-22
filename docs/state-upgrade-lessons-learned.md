@@ -240,3 +240,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Statewide Program Repair Must Not Erase A Remaining County-Grade Blocker
 *   **Problem:** New Mexico’s official ECECD FIT page and HCA Medicaid leaves were enough to repair stale or missing statewide source families, but they still did not prove county-grade local routing for FIT offices or county-local disability resources.
 *   **Lesson:** When a reviewed official statewide program leaf exists, upgrade the family from `missing` to the most accurate blocked state instead of leaving it missing or falsely promoting it to complete. A live statewide program page can truthfully repair the state-level source family while the county-grade gate remains blocked on local-office or district-owned proof.
+
+### Older State Refresh Scripts Must Not Regress Newer Family Repairs
+*   **Problem:** Georgia’s `batch37` blocker-refresh runner and test still expected legal aid to be blocked even after a later repair pass had already upgraded legal aid to reviewed statewide first-party coverage. Re-running the stale helper would have rewritten the packet back to an older, less truthful state.
+*   **Lesson:** Whenever a later state-specific repair changes one family’s packet truth, update any older refresh helpers and their tests that still rewrite that state’s summary, gap matrix, verified sources, or blocker queues. A state refresh script must never regress a newer reviewed family upgrade just because its own batch assumptions are stale.
