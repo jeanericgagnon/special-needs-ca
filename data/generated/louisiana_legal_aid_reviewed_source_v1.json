@@ -1,0 +1,16 @@
+{
+  "state": "louisiana",
+  "family": "legal_aid",
+  "source_url": "https://louisianalawhelp.org/find-legal-help",
+  "final_url": "https://louisianalawhelp.org/find-legal-help",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_louisiana_check",
+  "fetched_at": "2026-06-23T00:02:00.000Z",
+  "page_title": "LouisianaLawHelp.org | Find Legal Help Here",
+  "evidence_snippet": "LouisianaLawHelp.org provides free legal help routing for Louisianans, preserves legal aid organization search, and supports Find a Lawyer by parish with named legal-aid programs and Louisiana parish coverage.",
+  "review_notes": [
+    "This is a statewide legal-help portal with parish search and legal-aid organization routing, not a single-region office.",
+    "The portal is a stronger statewide legal-aid/help source than any one local legal-aid provider page."
+  ]
+}

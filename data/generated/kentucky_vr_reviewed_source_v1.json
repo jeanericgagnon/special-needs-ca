@@ -1,0 +1,16 @@
+{
+  "state": "kentucky",
+  "family": "vocational_rehabilitation_pre_ets",
+  "source_url": "https://kcc.ky.gov/Vocational-Rehabilitation/Pages/Kentucky-Office-of-Vocational-Rehabilitation.aspx",
+  "final_url": "https://kcc.ky.gov/Vocational-Rehabilitation/Pages/Kentucky-Office-of-Vocational-Rehabilitation.aspx",
+  "verification_status": "verified",
+  "source_type": "official_first_party_reviewed_page",
+  "source_table": "bounded_live_kentucky_check",
+  "fetched_at": "2026-06-22T23:48:00.000Z",
+  "page_title": "Vocational Rehabilitation - Kentucky Career Center",
+  "evidence_snippet": "The official Kentucky Career Center Vocational Rehabilitation page identifies the Kentucky Office of Vocational Rehabilitation (KYOVR), links to How to Apply for VR Services, and preserves statewide program navigation including field services, blind services, business services, and the Statewide Council for Vocational Rehabilitation.",
+  "review_notes": [
+    "The guessed OVR slugs on KDE and older packet hints were wrong, but the Kentucky Career Center navigation exposes the role-pure official VR leaf.",
+    "This is statewide VR evidence; county-grade local routing still requires separate local-office proof where needed."
+  ]
+}

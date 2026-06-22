@@ -1,0 +1,16 @@
+{
+  "state": "kansas",
+  "family": "special_education_idea_part_b",
+  "source_url": "https://www.ksde.gov/policy-and-funding/special-education",
+  "final_url": "https://www.ksde.gov/policy-and-funding/special-education",
+  "verification_status": "verified",
+  "source_type": "official_first_party_reviewed_page",
+  "source_table": "bounded_live_kansas_check",
+  "fetched_at": "2026-06-22T23:18:00.000Z",
+  "page_title": "Special Education",
+  "evidence_snippet": "The Individuals with Disabilities Education Act (IDEA) ensures a free appropriate public education (FAPE) to children with disabilities and the official KSDE Special Education page links to Dispute Resolution, Procedural Safeguards (Parent Rights), Special Education Due Process Hearing Decisions, and Special Education Formal Complaint Decisions.",
+  "review_notes": [
+    "The exact KSDE Special Education leaf is live again in the current lane with a matching title and special-education law/dispute-resolution navigation.",
+    "This page is statewide special-education proof only; it does not by itself satisfy district-grade routing."
+  ]
+}

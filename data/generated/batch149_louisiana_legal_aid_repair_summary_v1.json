@@ -1,0 +1,14 @@
+{
+  "state": "louisiana",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "upgraded_families": [
+    "legal_aid"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "lesson_added": true
+}

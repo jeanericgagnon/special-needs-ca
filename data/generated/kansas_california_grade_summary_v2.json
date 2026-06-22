@@ -7,24 +7,24 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 105,
-  "completeness_pct": 42,
-  "strong_critical_families": 5,
-  "weak_critical_families": 7,
+  "completeness_pct": 58,
+  "strong_critical_families": 7,
+  "weak_critical_families": 5,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "ksde_request_rejected_shell_plus_kancare_kdads_access_blocked",
+  "primary_gap_reason": "kancare_kdads_access_blocked_and_no_county_or_district_education_contract_preserved",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
-    "early_intervention_part_c",
-    "special_education_idea_part_b",
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
+    "early_intervention_part_c",
+    "special_education_idea_part_b",
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
     "parent_training_information_center",
@@ -61,25 +61,11 @@
       "next_action": "browser_assisted_or_reviewed_alt_official_dd_leaf"
     },
     {
-      "family": "early_intervention_part_c",
-      "severity": "critical",
-      "failure_code": "ksde_request_rejected_shell_on_exact_special_education_and_ecse_roots",
-      "evidence": "Reviewed 2026-06-22 live probe to https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education returned a 245-byte Request Rejected shell with support ID instead of Early Childhood Special Education or Part C content.",
-      "next_action": "browser_assisted_or_reviewed_alt_official_part_c_leaf"
-    },
-    {
-      "family": "special_education_idea_part_b",
-      "severity": "critical",
-      "failure_code": "ksde_request_rejected_shell_on_exact_special_education_and_ecse_roots",
-      "evidence": "Reviewed 2026-06-22 live probe to https://www.ksde.gov/policy-and-funding/special-education returned a 245-byte Request Rejected shell with support ID instead of special-education content.",
-      "next_action": "browser_assisted_or_reviewed_alt_official_special_education_leaf"
-    },
-    {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "ksde_request_rejected_shell_on_exact_special_education_and_ecse_roots",
-      "evidence": "Reviewed 2026-06-22 live probes to the KSDE root, Special Education root, and likely directory paths all returned the same 245-byte Request Rejected shell, while no reviewed district-owned or county-grade special-education leaf is preserved on disk.",
-      "next_action": "browser_assisted_or_author_exact_district_targets_after_host_access_is_restored"
+      "failure_code": "official_statewide_education_leaves_live_but_no_county_or_district_contract_preserved",
+      "evidence": "Reviewed 2026-06-22 live probes to the exact KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves now succeed, but the packet still preserves no extracted county-to-district routing contract or district-owned local special-education contact source.",
+      "next_action": "author_exact_district_routing_contract_from_official_datacentral_or_county_map_sources"
     },
     {
       "family": "county_local_disability_resources",

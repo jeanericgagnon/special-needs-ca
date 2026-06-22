@@ -1,0 +1,16 @@
+{
+  "state": "kentucky",
+  "family": "legal_aid",
+  "source_url": "https://www.kyjustice.org/",
+  "final_url": "https://www.kyjustice.org/",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_kentucky_check",
+  "fetched_at": "2026-06-22T23:48:00.000Z",
+  "page_title": "Kentucky Justice Online",
+  "evidence_snippet": "Kentucky Justice Online identifies itself as free legal help for Kentuckians and preserves statewide legal-help routing, including Apply For Free Help, Help Near You, and named Kentucky legal-aid organizations such as AppalReD Legal Aid, Kentucky Legal Aid, Legal Aid of the Bluegrass, and Legal Aid Society.",
+  "review_notes": [
+    "This is a statewide legal-help and referral surface, not just a single-region legal-aid office.",
+    "The page preserves both statewide intake language and the named regional legal-aid organizations it routes families to."
+  ]
+}

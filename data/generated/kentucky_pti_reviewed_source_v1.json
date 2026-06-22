@@ -1,0 +1,15 @@
+{
+  "state": "kentucky",
+  "family": "parent_training_information_center",
+  "source_url": "https://www.kyspin.com/about/",
+  "final_url": "https://www.kyspin.com/about/",
+  "verification_status": "verified",
+  "source_type": "first_party_reviewed_page",
+  "source_table": "bounded_live_kentucky_check",
+  "fetched_at": "2026-06-22T23:48:00.000Z",
+  "page_title": "About - KY-SPIN",
+  "evidence_snippet": "KY-SPIN, Inc. began in 1988 with the receipt of its first Parent Training and Information (PTI) grant from the United States Department of Education, Office of Special Education and Rehabilitation Services. That initial grant set in place a statewide center for families of persons of any age with any type of disability.",
+  "review_notes": [
+    "The KY-SPIN homepage was too generic for PTI designation, but the first-party About page explicitly preserves the PTI grant history and statewide center language."
+  ]
+}
