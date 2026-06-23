@@ -1,0 +1,18 @@
+{
+  "state": "north-dakota",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "district_owned_leaf_authoring_only",
+  "packet_complete_when": "Reviewed district-owned or county-grade local education leaves replace the current state-root-backed rows.",
+  "current_metrics": {
+    "countyTotal": 53,
+    "reviewedLocalLeaves": 0,
+    "genericRootsNeedingLeafVerification": 9,
+    "mislabeledStateRootRowsSeen": 3
+  },
+  "rejected_current_root": "https://www.nd.gov/",
+  "mislabeled_examples": [
+    "Burleigh Public Schools Special Education",
+    "Cass Public Schools Special Education",
+    "Adams County County fallback"
+  ]
+}

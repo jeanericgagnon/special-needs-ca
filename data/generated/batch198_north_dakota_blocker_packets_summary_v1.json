@@ -1,0 +1,13 @@
+{
+  "batch": "batch198_north_dakota_blocker_packets_v1",
+  "state": "north-dakota",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "educationPacketWritten": true,
+  "countyPacketWritten": true,
+  "legalAidPacketWritten": true,
+  "reviewedLocalLeaves": 0,
+  "doiBackedSampleRows": 3,
+  "reviewedStatewideLegalAidSources": 0,
+  "lesson_added": false
+}

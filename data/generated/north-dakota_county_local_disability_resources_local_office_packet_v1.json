@@ -1,0 +1,17 @@
+{
+  "state": "north-dakota",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_owned_directory_replacement_only",
+  "packet_complete_when": "DOI-backed Human Service Zone rows are replaced with reviewed county-owned or zone-owned first-party local office directories.",
+  "current_metrics": {
+    "countyTotal": 53,
+    "doiBackedSampleRows": 3,
+    "genericRootsNeedingLeafVerification": 9
+  },
+  "rejected_current_root": "https://doi.org/10.7910/DVN/AVRHMI",
+  "sample_counties_needing_replacement": [
+    "Adams",
+    "Barnes",
+    "Benson"
+  ]
+}

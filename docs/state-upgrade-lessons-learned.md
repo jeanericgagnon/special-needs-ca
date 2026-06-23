@@ -56,3 +56,6 @@
 
 ### PTI Navigation Alone Is Not Statewide PTI Designation Proof
 *   **Lesson:** If a parent-center homepage only exposes PTI navigation or general special-needs family-support language, do not count it as statewide PTI proof until a fetched first-party leaf explicitly preserves the designation or statewide scope. North Carolina ECAC was useful context, but the packet still needed a designation leaf.
+
+### State-Labeled Local Rows That Resolve To A State Root Still Count As Missing Local Proof
+*   **Lesson:** If rows are labeled with county or district names but their reviewed source URL still resolves to a generic state root, keep them in the local-leaf blocker lane. North Dakota had rows labeled like Burleigh or Cass special education, but the reviewed source was still just `nd.gov`, so they could not count as local routing proof.
