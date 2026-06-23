@@ -572,3 +572,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### City Matches Inside An Office Directory Still Need Role Checks
 *   **Lesson:** If a blocked state still has one unresolved city-name office guess, verify that the city mention belongs to the right office role before treating it as progress. Idaho’s public DHW directory did mention Nampa, but only for Southwest Idaho Treatment Center, not for a county-benefits office leaf.
+
+### Persistent Official 403s Should Stay As Exact Transport Blockers
+*   **Lesson:** If the official state education or DHHS root and the exact local-directory leaves all return HTTP 403 in bounded fetch, keep the family blocked on that exact transport failure instead of falling back to generic statewide or structural evidence. New Hampshire’s school-directory and DHHS district-office lanes were sharper once the blocker named the exact official paths that failed.
