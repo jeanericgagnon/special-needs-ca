@@ -5,10 +5,16 @@
   "packet_complete_when": "A reviewed deterministic county map covers all 33 New Mexico counties from the HCA field-office archive or same-host official county office followups.",
   "current_metrics": {
     "countyTotal": 33,
-    "reviewedArchivePages": 8,
+    "reviewedArchivePages": 12,
     "coveredCountiesFromArchive": 29,
     "missingCountyRemainder": 4,
-    "countyCompleteMapOnDisk": false
+    "countyCompleteMapOnDisk": false,
+    "emptyArchiveTailPages": [
+      9,
+      10,
+      11,
+      12
+    ]
   },
   "covered_counties": [
     "Bernalillo",
@@ -51,10 +57,11 @@
     "https://www.hca.nm.gov/lookingforassistance/field_offices_1/",
     "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/4/?et_blog",
     "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/7/?et_blog",
-    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/8/?et_blog",
+    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/9/?et_blog",
     "https://www.hca.nm.gov/2023/06/26/human-services-department-partners-with-union-and-harding-county-to-provide-expanded-access-to-services/"
   ],
   "missing_county_followup_notes": [
+    "Pages 9 through 12 are now reviewed and add no new county office posts beyond the first eight archive pages.",
     "Harding and Union only surfaced an HCA service-expansion article, not a county office-routing leaf.",
     "Mora only surfaced a SNAP-loss article, not a county office-routing leaf.",
     "Catron produced no bounded HCA county office hit in the current official-site search lane."

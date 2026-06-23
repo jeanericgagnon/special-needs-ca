@@ -1,0 +1,22 @@
+{
+  "batch": "batch254_new_mexico_archive_tail_refresh_v1",
+  "state": "new-mexico",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "reviewedArchivePages": 12,
+  "coveredCountiesFromArchive": 29,
+  "missingCountyRemainder": 4,
+  "missingCounties": [
+    "Catron",
+    "Harding",
+    "Mora",
+    "Union"
+  ],
+  "emptyArchiveTailPages": [
+    9,
+    10,
+    11,
+    12
+  ],
+  "lesson_added": true
+}

@@ -216,3 +216,6 @@
 
 ### Reuse The Same Queue Signature Across States, But Keep The Generic-Root Count State-Specific
 *   **Lesson:** When two states share the same weak-signal pattern, copy the blocker shape but not the exact root count. North Dakota matched North Carolina on `4 DB-field labels` and `49 federal-state mismatches`, but its local queues only had `9 generic roots` instead of `12`, so the state packet should preserve its own exact contamination count.
+
+### HTTP 200 Archive Tail Pages Can Still Be Empty
+*   **Lesson:** If later archive pagination keeps returning HTTP 200 but only repeats the generic archive shell with no new county terms or office posts, freeze the archive there instead of assuming more coverage may appear deeper. New Mexico HCA pages 9 through 12 all stayed live but added zero new office-routing counties beyond the 29 already proven by pages 1 through 8.
