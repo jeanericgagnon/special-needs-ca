@@ -605,3 +605,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Public ArcGIS School Maps Still Need Routing Fields, Not Just Geometry
 *   **Lesson:** If an official school map app exposes public ArcGIS item data, inspect the referenced webmap fields before treating it as a routing contract. Michigan’s app proved district and ISD geometry through fields like `FIPSCODE`, `NAME`, `DCODE`, and `ISD`, but it still lacked local routing contacts, district websites, or special-education evidence, so the education family stayed blocked.
+
+### Rendered Office Directories Can Still Be Scraper-Blocked
+*   **Lesson:** If an official office directory is readable in browser-style rendering but bounded raw fetches return `403`, keep the rendered content as reviewed evidence only and do not upgrade it to scraper-safe county proof. Alaska’s DPA offices page preserved real office text in rendered review, but the raw fetch still failed and the page still lacked borough/census-area coverage mapping.
+
+### Bigger Staging Files Do Not Cure Authenticated Local-Office Gaps
+*   **Lesson:** If an older staging artifact is broader than the current public office contract, inspect the row semantics before treating it as progress. Florida’s `staging_dcf_access_offices.json` had 61 rows, but they were still only `source_listed` community partners, kiosks, storefronts, and hubs rooted in generic MyACCESS rather than a newly reviewed anonymous county contract.
