@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 10,
+    "authoredExactLeafCount": 12,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 4,
     "publicExportContractVerified": true,
-    "reviewedDistrictOwnedLeafCount": 10
+    "reviewedDistrictOwnedLeafCount": 12
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -162,12 +162,14 @@
   "reviewed_local_leaf_counties": [
     "atchison-ks",
     "butler-ks",
+    "cowley-ks",
     "douglas-ks",
     "finney-ks",
     "johnson-ks",
     "leavenworth-ks",
     "riley-ks",
     "saline-ks",
+    "sedgwick-ks",
     "shawnee-ks",
     "wyandotte-ks"
   ],
@@ -187,7 +189,6 @@
     "cloud-ks",
     "coffey-ks",
     "comanche-ks",
-    "cowley-ks",
     "crawford-ks",
     "decatur-ks",
     "dickinson-ks",
@@ -250,7 +251,6 @@
     "rush-ks",
     "russell-ks",
     "scott-ks",
-    "sedgwick-ks",
     "seward-ks",
     "sheridan-ks",
     "sherman-ks",

@@ -1,0 +1,13 @@
+{
+  "state": "kansas",
+  "batch": "batch282_kansas_arkcity_derby_reviewed_leaves_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_count": 12,
+  "promoted_counties": [
+    "cowley-ks",
+    "sedgwick-ks"
+  ],
+  "retained_exact_non_match": "dickinson-ks",
+  "primary_gap_reason": "reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_12_counties_but_export_backed_county_grade_coverage_is_still_incomplete"
+}

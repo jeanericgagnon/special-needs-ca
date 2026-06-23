@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_results_stay_authenticated`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
-- Kansas: `reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_10_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
+- Kansas: `reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_12_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
@@ -38,51 +38,47 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Utah
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the DWS office-search app exposes a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`, but that API still publishes only office inventory fields like office name, address, coordinates, service code, and assistance instructions. It does not expose county fields, counties served, or another reusable county-to-office contract. A bounded reverse-geocode pass on the 45 unique official office coordinates also materializes physical offices in only 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point. Utah therefore remains BLOCKED and not index-safe.
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Reviewed local education-routing proof now covers 12/105 counties after Cowley cleared through Arkansas City USD 470 and Sedgwick cleared through Derby Public Schools, but Kansas still lacks county-grade local proof across the remaining packet and stays BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any first-party Utah county-complete office contract that explicitly maps counties to DWS, DHHS, or successor local offices.
-- Any public successor Utah office API field or companion endpoint that adds `county`, `countiesServed`, service-area, or district-style assignment data to the current office inventory.
-- Any official Utah successor local-office directory that explicitly closes the Daggett, Morgan, and Rich county remainder without inferred nearest-office routing.
+- More export-backed Kansas district-owned special-education or student-support leaves that stay role-exact on the live district host.
+- More district-linked cooperative routes where the district explicitly labels the path as local special-education services and the linked cooperative host clearly states the service scope, parent-rights path, or local IEP routing.
+- Exact non-match freezes for districts whose live pages are still generic program hubs, homepage-only, or sitemap-only content so they do not get re-tried loosely.
 
 ### Useful Official URLs Already Tried
 
-- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
-- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
-- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
-- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
-- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
-- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
-- [Public DWS office-services route](https://officesearch-api.jobs.utah.gov/api/v1/office-services)
-- [API OpenAPI endpoint attempt](https://officesearch-api.jobs.utah.gov/openapi.json)
-- [API Swagger UI attempt](https://officesearch-api.jobs.utah.gov/swagger-ui/index.html)
-- [API v3 docs attempt](https://officesearch-api.jobs.utah.gov/v3/api-docs)
-- [jobs.utah.gov sitemap.xml](https://jobs.utah.gov/sitemap.xml)
-- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
-- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
-- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
-- [Older DHHS locations route](https://dhhs.utah.gov/locations)
-- [Census reverse geocoder used only to county-key official office coordinates](https://geocoding.geo.census.gov/geocoder/geographies/coordinates)
+- [Kansas KSDE directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas 2025-2026 educational directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [Arkansas City USD 470 Special Education](https://www.usd470.com/academics/special-education)
+- [Derby Public Schools Special Education](https://www.derbyschools.com/academics/special-education)
+- [Leavenworth USD 453 Special Education](https://www.usd453.org/district-departments/special-education)
+- [Manhattan-Ogden USD 383 About Special Education](https://www.usd383.org/32689_3)
+- [Salina USD 305 site map](https://www.usd305.com/site-map)
+- [Salina USD 305 Administrative & Student Support](https://www.usd305.com/departments/administrative-student-support)
+- [CKCIE home](https://www.305ckcie.com/)
+- [CKCIE Parents](https://www.305ckcie.com/parents)
+- [Abilene Public Schools root](https://www.abileneschools.org/)
+- [Abilene Public Schools sitemap](https://www.abileneschools.org/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the 45 unique office records.
-- Any reviewed official Utah local-office directory that explicitly names counties served, especially where office names are city-based rather than county-based.
-- Any official Utah successor to the dead `serviceslocations.html` or `dhhs.utah.gov/locations` routes that exposes county-grade local-office coverage for Daggett, Morgan, and Rich.
-## Next State Order After Utah
+- Additional Kansas district-owned `special education`, `student support`, or `special services` leaves on export-backed district hosts for unresolved counties.
+- Additional district-linked cooperative hosts that explicitly state they provide special-education services across partner districts and preserve parent-rights or IEP routing on the same local stack.
+- Exact county-by-county non-match documentation where a district host is live but only exposes generic or non-role-bearing local pages.
+## Next State Order After Kansas
 
-1. Kansas
-2. Nebraska
-3. Nevada
-4. Florida
-5. Alaska
-6. South Carolina
-7. North Carolina
-8. New York
-9. Oklahoma
-10. Oregon10. Oregon10. Oregon10. Massachusetts
+1. Nebraska
+2. Florida
+3. Alaska
+4. South Carolina
+5. North Carolina
+6. New York
+7. Oklahoma
+8. Oregon
+9. Ohio
+10. Minnesota10. Minnesota10. Oregon10. Oregon10. Oregon10. Massachusetts

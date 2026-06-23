@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_10_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
+  "primary_gap_reason": "reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_12_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,8 +43,8 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_10_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
-      "evidence": "Reviewed 2026-06-23 one more bounded official Kansas district-routing pass using the KSDE export-backed district lane plus exact same-domain checks. Education routing still has reviewed local proof for 10/105 counties: atchison-ks, butler-ks, douglas-ks, finney-ks, johnson-ks, leavenworth-ks, riley-ks, saline-ks, shawnee-ks, wyandotte-ks. Sedgwick remains correctly frozen because Wichita USD 259 still exposes only generic site-map/search results and a non-role-exact `Special Schools and Programs` page. Dickinson is now frozen more tightly as another exact non-match: the official Abilene Public Schools host at https://www.abileneschools.org/ returned HTTP 200, its public sitemap at https://www.abileneschools.org/sitemap.xml also returned HTTP 200, but the bounded same-domain pass still found no role-exact special-education, student-services, procedural-safeguards, or parent-rights leaf on the district host. Kansas therefore stays blocked because county-grade local education proof is still incomplete across the remaining unresolved counties.",
+      "failure_code": "reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_12_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
+      "evidence": "Reviewed 2026-06-23 one more bounded official Kansas district-routing pass using only export-backed district hosts, official district-owned pages, and exact same-domain checks. Education routing now has reviewed local proof for 12/105 counties: atchison-ks, butler-ks, cowley-ks, douglas-ks, finney-ks, johnson-ks, leavenworth-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Two more counties now clear from exact district-owned Special Education leaves on live district hosts. Cowley clears because https://www.usd470.com/academics/special-education returned HTTP 200 with title and H1 `Special Education` on the official Arkansas City USD 470 domain. Sedgwick also now clears from a reviewed district-owned leaf even though Wichita USD 259 stayed generic: https://www.derbyschools.com/academics/special-education returned HTTP 200 with title and H1 `Special Education` on the official Derby Public Schools host. Dickinson remains a correct exact non-match freeze: the official Abilene Public Schools host at https://www.abileneschools.org/ and its public sitemap both returned HTTP 200, but the bounded same-domain pass still found no role-exact special-education, student-services, procedural-safeguards, or parent-rights leaf. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties.",
       "next_action": "continue_export_backed_district_and_affiliated_coop_leaf_authoring_county_by_county_and_keep_exact_non_matches_frozen"
     }
   ],
