@@ -1,0 +1,11 @@
+{
+  "batch": "batch_211_florida_ess_faq_customer_service_center_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "essFaqMentionsLocalServiceCenter": true,
+  "essFaqMentionsCustomerServiceCenter": true,
+  "publicCountyOfficeLeafExposed": false,
+  "communityLeafOnlyRoutesToPartnerSearch": true
+}
