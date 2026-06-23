@@ -1,0 +1,10 @@
+{
+  "batch": "batch_207_kansas_public_export_contract_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_export_contract_verified": true,
+  "sample_export_district": "D0435 Abilene USD 435",
+  "lessons_updated": false
+}

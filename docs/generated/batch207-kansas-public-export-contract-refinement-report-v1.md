@@ -1,0 +1,16 @@
+# Batch 207 Kansas Public Export Contract Refinement Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- refined_family: district_or_county_education_routing
+- failure_code: public_ksde_directory_export_contract_exists_but_not_yet_converted_into_reviewed_district_owned_special_education_leaves
+
+## Evidence
+
+- Reviewed 2026-06-23 bounded live official Kansas education probes on https://uapps.ksde.gov/Directory_Rpts/default.aspx and https://www.ksde.gov/data-and-reporting/directories, then reproduced one exact public report export using the live ASP.NET form contract (`__VIEWSTATE`, `__VIEWSTATEGENERATOR`, `__EVENTVALIDATION`, `ctl00$MainContent$ddDistricts=D0435`, `ctl00$MainContent$RadioGroup1=RadioUSD1`, `ctl00$MainContent$rblFormat=Excel`, `ctl00$MainContent$btnPrintSection1=Run Report`). The public Directory Reports app returned HTTP 200 on the same official host with `content-type: application/vnd.ms-excel` and `content-disposition: attachment ; filename=Directory.xls`. Bounded string extraction from that first-party export preserved the report title `SCHOOL DISTRICT SUPERINTENDENTS AND BOARD PRESIDENTS`, column names including `County Name`, `Superintendent Address`, `Phone`, and district-specific values for Abilene USD 435 such as `Abilene`, `Dickinson`, `785-263-2630`, and district email domains like `dsprinkle@abileneschools.org`, `cwest@abileneschools.org`, and `acornell@abileneschools.org`. The official KSDE Directories page also still publishes annual Kansas Educational Directory PDFs. Kansas therefore now has a public export-backed county join lane plus district-domain hints, but it remains blocked because no reviewed district-owned special-education or student-services leaves are yet preserved on disk for those districts.
+
+## Repair decision
+
+- Kansas remains blocked and not index-safe.
+- The public KSDE directory lane is now stronger than a dropdown-only inventory: a reproduced public export yields county and district contact fields on a first-party report.
+- That export-backed inventory still must be converted into reviewed district-owned special-education or student-services leaves before Kansas can clear.

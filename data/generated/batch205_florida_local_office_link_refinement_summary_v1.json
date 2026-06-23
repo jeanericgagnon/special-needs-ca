@@ -1,0 +1,10 @@
+{
+  "batch": "batch_205_florida_local_office_link_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "local_office_prose_without_leaf": true,
+  "extracted_public_leaf_count": 0,
+  "lessons_updated": false
+}

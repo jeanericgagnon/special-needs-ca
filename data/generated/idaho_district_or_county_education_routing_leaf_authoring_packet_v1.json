@@ -7,12 +7,12 @@
   "current_problem_metrics": {
     "statewideFallbackRows": 42,
     "genericRootRows": 2,
-    "authoredExactLeafCount": 3,
+    "authoredExactLeafCount": 5,
     "officialDistrictLinks": 116,
     "countyBearingDistrictNamesVisible": true,
     "explicitCountyFieldVisible": false,
     "districtSpecialEducationFieldsVisible": false,
-    "reviewedExactLeafCount": 3
+    "reviewedExactLeafCount": 5
   },
   "exact_target_goals": [
     "district special education page",
@@ -83,7 +83,7 @@
     "valley-id",
     "washington-id"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, and Bannock as seed examples.",
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, and Butte as seed examples.",
   "reviewed_exact_leaves": [
     {
       "county_id": "cassia-id",
@@ -118,6 +118,24 @@
         "procedural safeguards"
       ],
       "title": "Special Services - Pocatello-Chubbuck School District 25"
+    },
+    {
+      "county_id": "boundary-id",
+      "district_name": "Boundary County School District 101",
+      "exact_leaf_url": "https://www.bcsd101.com/page/special-services/",
+      "evidence_terms": [
+        "special services"
+      ],
+      "title": "Special Services | Boundary County School District 101"
+    },
+    {
+      "county_id": "butte-id",
+      "district_name": "Butte County Joint District",
+      "exact_leaf_url": "https://www.butteschooldistrict.org/departments/special_education",
+      "evidence_terms": [
+        "special education"
+      ],
+      "title": "Special Education - buttecountyschools"
     }
   ]
 }

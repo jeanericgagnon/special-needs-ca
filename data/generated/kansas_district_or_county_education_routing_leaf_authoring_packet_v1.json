@@ -2,7 +2,7 @@
   "state": "kansas",
   "state_code": "KS",
   "family": "district_or_county_education_routing",
-  "repair_lane": "county_district_leaf_repair",
+  "repair_lane": "public_export_backed_district_leaf_repair",
   "purpose": "Deterministic authoring packet for replacing Kansas statewide KSDE placeholder rows with reviewed district-owned education-routing leaves.",
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
@@ -11,7 +11,8 @@
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
-    "liveDirectoryRoots": 3
+    "liveDirectoryRoots": 4,
+    "publicExportContractVerified": true
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -39,6 +40,10 @@
     "https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5"
   ],
   "root_domains_to_review": [
+    "district-owned Kansas USD domains derived from the live KSDE Directory Reports export contract plus the annual directory artifacts",
+    "district-owned Kansas USD domains derived from the live KSDE Directory Reports export contract plus the annual directory artifacts",
+    "district-owned Kansas USD domains derived from the live KSDE Directory Reports export contract plus the annual directory artifacts",
+    "district-owned Kansas USD domains derived from the live KSDE Directory Reports export contract plus the annual directory artifacts",
     "district-owned Kansas USD domains reached from the live KSDE School District Maps, Directories, and Directory Reports roots",
     "https://www.ksde.gov/policy-and-funding/school-transportation/school-district-maps",
     "https://www.ksde.gov/data-and-reporting/directories",
@@ -152,5 +157,5 @@
     "woodson-ks",
     "wyandotte-ks"
   ],
-  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned education-routing leaf authored from the live KSDE directory roots or remains explicitly blocked where no district-owned local contract has been preserved."
+  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned education-routing leaf authored from the public KSDE export-backed district inventory or remains explicitly blocked where no district-owned local contract has been preserved."
 }

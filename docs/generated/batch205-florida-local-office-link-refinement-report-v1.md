@@ -1,0 +1,17 @@
+# Batch 205 Florida Local Office Link Refinement Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- refined_family: county_local_disability_resources
+- failure_code: public_assistance_pages_name_local_office_but_expose_no_public_county_office_leaf_and_myaccess_results_stay_authenticated
+
+## Evidence
+
+- Reviewed 2026-06-23 bounded live official checks on https://familyresourcecenter.myflfamilies.com/providers.csv, https://www.myflfamilies.com/contact-us, https://www.myflfamilies.com/contact-us/contacts.csv, https://www.myflfamilies.com/services/public-assistance, https://www.myflfamilies.com/services/public-assistance/applying-for-assistance, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails, https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch, and https://myaccess.myflfamilies.com/Help/HCINT, plus an exact href extraction from the two public-assistance pages. The Family Resource Center HTML and providers.csv still preserve reviewed storefront coverage for only 34/67 counties. The public Florida DCF contact-us page still loads a live first-party contacts.csv with explicit county coverage for all 67 counties, but a bounded role-field audit across all 109 public rows returned zero true matches for ACCESS, Medicaid, SNAP, TANF, economic self-sufficiency, food assistance, cash assistance, or customer service center. The only apparent `ESS` matches were false positives inside the street address `5920 Arlington Expressway`, not Office of Economic Self Sufficiency service labels. The public-assistance page openly names the Office of Economic Self Sufficiency and the applying-for-assistance page says families may turn in information at a local office, but the extracted official href set from those pages still only points to MyACCESS, Community Partner Search, ESS forms/manuals, Interview Tips, partner guides, and videos, with no public county office directory or local ESS office leaf. The public MyACCESS `Public/CPCPS` and `Help/HCINT` routes returned the same 5165-byte generic MyACCESS shell with the same `<title>MyACCESS</title>`, the same appconfig bootstrap, and no county, office, or storefront result rows. The first-party appconfig still exposes partnerApproverServices only under `/accountmanagement`, and bounded anonymous POST probes to the exact official `getZipCountyDetails` plus `communityPartnerSearch` endpoints still return HTTP 401 with `{"message":"Unauthorized"}`. Florida therefore remains blocked because the county-complete public contract is the wrong service role, the public local-office prose has no linked county-leaf contract, and the public-assistance county-result lane remains authenticated-only.
+
+## Repair decision
+
+- Florida remains blocked and not index-safe.
+- The official public-assistance page set references a local office only in prose; its extracted first-party href set still exposes no public county office leaf.
+- The public MyACCESS `Public/CPCPS` and `Help/HCINT` routes remain the same generic shell, and the exact county-result endpoints remain HTTP 401 under bounded anonymous probes.
+- The county-local family should only reopen if a first-party public county office directory or anonymous county-result lane appears.

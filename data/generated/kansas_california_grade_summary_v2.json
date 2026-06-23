@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "kansas_now_has_reviewed_first_party_dd_authority_but_public_district_inventory_is_still_not_converted_into_local_special_education_leaves",
+  "primary_gap_reason": "public_ksde_directory_export_contract_exists_but_not_yet_converted_into_reviewed_district_owned_special_education_leaves",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,9 +43,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "public_directory_reports_dropdown_and_annual_directory_pdfs_exist_but_no_reviewed_local_special_education_leaves",
-      "evidence": "Reviewed 2026-06-23 bounded live official Kansas education probes on https://uapps.ksde.gov/Directory_Rpts/default.aspx, https://datacentral.ksde.gov/default.aspx, and https://www.ksde.gov/data-and-reporting/directories, in addition to the existing live KSDE Special Education and School District Maps roots already preserved on disk. The public Directory Reports app is not just an empty root: its HTML preserves a real `Kansas Educational Directory Reports` home page with `Organizational Directory Reports`, `Educator Directory Reports`, a `Complete Directory` link, and a public district selector that includes `***ALL DISTRICTS***` plus specific district IDs and names such as `D0435 :: ABILENE USD 435`, `D0385 :: ANDOVER USD 385`, `D0409 :: ATCHISON PUBLIC SCHOOLS USD 409`, and many more. The official KSDE Directories page also publishes current annual `Kansas Educational Directory` PDFs for 2025-2026, 2024-2025, and 2023-2024, plus pictorial superintendent directory PDFs. So Kansas now has a concrete first-party district inventory lane. But a live DB reconciliation still shows all 105 Kansas school_district rows pointing at the same statewide placeholder website https://www.ksde.org/Default.aspx?tabid=101, and no reviewed district-owned special-education or student-services leaves are preserved on disk. Kansas education therefore remains blocked, but the next lane should start from the public dropdown and annual directory artifacts rather than from re-reading statewide KSDE roots.",
-      "next_action": "use_public_directory_dropdown_and_annual_directory_pdfs_to_author_reviewed_district_owned_special_education_leaves"
+      "failure_code": "public_ksde_directory_export_contract_exists_but_not_yet_converted_into_reviewed_district_owned_special_education_leaves",
+      "evidence": "Reviewed 2026-06-23 bounded live official Kansas education probes on https://uapps.ksde.gov/Directory_Rpts/default.aspx and https://www.ksde.gov/data-and-reporting/directories, then reproduced one exact public report export using the live ASP.NET form contract (`__VIEWSTATE`, `__VIEWSTATEGENERATOR`, `__EVENTVALIDATION`, `ctl00$MainContent$ddDistricts=D0435`, `ctl00$MainContent$RadioGroup1=RadioUSD1`, `ctl00$MainContent$rblFormat=Excel`, `ctl00$MainContent$btnPrintSection1=Run Report`). The public Directory Reports app returned HTTP 200 on the same official host with `content-type: application/vnd.ms-excel` and `content-disposition: attachment ; filename=Directory.xls`. Bounded string extraction from that first-party export preserved the report title `SCHOOL DISTRICT SUPERINTENDENTS AND BOARD PRESIDENTS`, column names including `County Name`, `Superintendent Address`, `Phone`, and district-specific values for Abilene USD 435 such as `Abilene`, `Dickinson`, `785-263-2630`, and district email domains like `dsprinkle@abileneschools.org`, `cwest@abileneschools.org`, and `acornell@abileneschools.org`. The official KSDE Directories page also still publishes annual Kansas Educational Directory PDFs. Kansas therefore now has a public export-backed county join lane plus district-domain hints, but it remains blocked because no reviewed district-owned special-education or student-services leaves are yet preserved on disk for those districts.",
+      "next_action": "use_public_directory_export_county_join_and_directory_artifacts_to_author_reviewed_district_owned_special_education_leaves"
     }
   ],
   "familyStatuses": {

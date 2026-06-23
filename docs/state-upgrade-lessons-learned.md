@@ -86,3 +86,12 @@
 
 ### Official District Detail Addresses Can Be County-Keyed Without Reopening A Challenged DOE Host
 *   **Lesson:** If a live official district-detail API preserves exact local addresses but omits county fields, county-key the roots with one bounded official geocoder pass instead of reopening the challenged statewide DOE host. Arizona's report-cards detail API plus the Census geocoder produced one reviewed district root for all 15 counties without broad search or district-site crawling.
+
+### Local-Office Prose Does Not Count Without A Linked Public Leaf
+*   **Lesson:** If an official benefits page says families can visit a "local office" but its exact first-party href set only leads to portal shells, partner search, forms, or guides, keep the county-local family blocked. Florida's applying-for-assistance page mentioned local offices, but no linked county office directory or ESS office leaf existed on the public page set.
+
+### District Sitemaps Can Yield Safe Exact Leaves Faster Than Homepage Chasing
+*   **Lesson:** If an official district sitemap already exposes a role-exact leaf like `/page/special-services/` or `/departments/special_education`, verify that exact URL before spending time on homepage navigation. Idaho's Boundary and Butte district sitemaps produced clean district-owned education leaves immediately.
+
+### Public ASP.NET Directory Exports Beat Dropdown Scraping When The Submit Contract Is Stable
+*   **Lesson:** If a first-party ASP.NET directory app exposes stable hidden fields and a submit button, reproduce the public export directly instead of scraping dropdown HTML alone. Kansas's KSDE Directory Reports app returned a real `Directory.xls` attachment once `__VIEWSTATE`, `__VIEWSTATEGENERATOR`, `__EVENTVALIDATION`, and the public report parameters were posted together.
