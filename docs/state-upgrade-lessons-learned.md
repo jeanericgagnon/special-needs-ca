@@ -294,3 +294,6 @@
 
 ### Official County-Keyed Datasets And County-Leaf Sitemaps Can Clear Local Families Without One-Off Leaf Authoring
 *   **Lesson:** If a state-managed dataset already preserves county-keyed district rows with phone and website fields, and the sister agency sitemap already preserves county-specific local-office leaves, treat those two public contracts as the county-grade repair lane before authoring dozens of exact local pages. North Carolina cleared once DPI's official School Report Card `rcd_location.xlsx` exposed 115 LEA rows spanning all 100 counties with zero blank phone or website fields, while the NCDHHS sitemap exposed 100 county-specific Local DSS leaves.
+
+### A Public State Portal Linking An Exact Successor Leaf Does Not Clear The Blocker If The Successor Host Still Fails
+*   **Lesson:** If a live state portal points to an exact official successor contact page, verify that exact leaf before treating the host family as repaired. New York `ny.gov` linked the precise OTDA `HEAP Local District Contact` page and benefits application files, but those exact OTDA leaves still reset, so the blocker stayed on the successor host family rather than clearing from the portal reference alone.

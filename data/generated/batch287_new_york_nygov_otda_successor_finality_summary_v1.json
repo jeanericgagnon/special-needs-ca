@@ -1,0 +1,11 @@
+{
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "healthNyBlockedSurfaceCount": 5,
+  "reviewedStatePortalSuccessorPages": 2,
+  "otdaExactSuccessorLeafFailures": 4,
+  "totalBoundedOtdaHostFailures": 9,
+  "lesson_added": false
+}

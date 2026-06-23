@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T22:29:30.318Z",
+  "generatedAt": "2026-06-23T22:37:24.158Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 24,
@@ -12,7 +12,7 @@
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a new completion lesson: county-keyed official datasets plus county-leaf sitemaps can clear local families without one-off leaf authoring.",
+  "lessonsUpdate": "Added a new blocker lesson: a public state portal linking an exact successor leaf does not clear the blocker if the successor host still fails.",
   "states": [
     {
       "stateId": "alabama",
@@ -2300,8 +2300,8 @@
         "county_local_disability_resources": "blocked_health_hostwide_403"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_2_repair_blocked_states_v1",
-      "packetPrimaryGapReason": "official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_no_public_ldss_replacement",
+      "packetBatch": "batch_287_new_york_nygov_otda_successor_finality_v1",
+      "packetPrimaryGapReason": "official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_nygov_linked_otda_successor_leaves_still_reset",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

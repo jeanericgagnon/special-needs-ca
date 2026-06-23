@@ -21,7 +21,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Nebraska: `official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
-- New York: `official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_no_public_ldss_replacement`
+- New York: `official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_nygov_linked_otda_successor_leaves_still_reset`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Ohio: `retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only`
 - Oklahoma: `official_osde_state_school_directory_clears_education_but_dead_dhhs_locator_host_and_planning_rows_still_block_county_local`
@@ -36,43 +36,39 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - West Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
-
-## Current Focus State: New York
+## Current Focus State: Oklahoma
 
 ### Blocker Reason
 
-New York still has two critical California-grade blockers. Education is no longer a statewide-root problem: the official NYSED Joint Management Teams and District Superintendents pages already cover the 57 non-NYC counties, but no reviewed borough-specific route is on disk yet for Bronx, Kings, New York/Manhattan, Queens, or Richmond. County-local is blocked separately because the old `health.ny.gov` LDSS lane is host-wide 403 and the obvious OTDA replacement host failed with connection resets.
+Oklahoma has one remaining California-grade blocker: `county_local_disability_resources`. Education is already cleared by the current official OSDE State School and District Directory, but the county-local lane still depends on a dead statewide locator host and DOI planning rows.
 
 ### Exact Evidence Needed
 
-- A reviewed official NYC borough special-education routing contract that covers Bronx, Kings, New York/Manhattan, Queens, and Richmond.
-- A public New York county-local replacement for the dead `health.ny.gov/health_care/medicaid/ldss.htm` lane, either as a state-managed replacement locator or county-owned local directory coverage.
-- Any official NYC or NYSED district/borough export that directly closes the borough remainder without falling back to generic statewide pages.
+- A live official Oklahoma county-grade local office directory that replaces the dead `https://dhhs.oklahoma.gov/locations` host.
+- County-owned or state-maintained local office leaves with real county routing, not planning placeholders or DOI mirrors.
+- Any public Oklahoma county-mapped office export, directory, or API that materializes county-local disability resource routing directly.
 
 ### Useful Official URLs Already Tried
 
-- [NYSED Joint Management Teams](https://www.p12.nysed.gov/ds/jmt.html)
-- [NYSED District Superintendents Directory](https://www.p12.nysed.gov/ds/superintendents.html)
-- [New York health LDSS page](https://www.health.ny.gov/health_care/medicaid/ldss.htm)
-- [New York health Medicaid root](https://www.health.ny.gov/health_care/medicaid/)
-- [OTDA working families DSS attempt](https://otda.ny.gov/workingfamilies/dss.asp)
-- [OTDA working families root](https://otda.ny.gov/workingfamilies/)
+- [Dead Oklahoma DHHS locator host](https://dhhs.oklahoma.gov/locations)
+- [Official Oklahoma State School Directory](https://oklahoma.gov/education/resources/state-school-directory.html)
+- [Official Oklahoma District Directory download lane](https://oklahoma.gov/education/resources/state-school-directory.html)
 
 ### Top Remaining Source-Scouting Targets
 
-- Official NYC DOE borough or district special-education routing pages with clear borough-specific scope.
-- Any public New York state or county-owned local assistance directory that truthfully replaces the blocked LDSS host family.
-- Any reviewed official export or directory contract that closes the five-borough education remainder without broad browsing.
+- Any current Oklahoma.gov county-local office directory replacing the dead DHHS locator host.
+- Any official county-owned DHS or local human-services office pages that preserve county identity and direct contact routing.
+- Any public Oklahoma directory export or API that maps counties to local assistance or disability-resource offices.
 
-## Next State Order After North Carolina
+## Next State Order After New York
 
-1. New York
-2. Oklahoma
-3. Oregon
-4. Ohio
-5. Minnesota
-6. Maine
-7. Idaho
-8. Arizona
-9. Massachusetts
-10. New Mexico
+1. Oklahoma
+2. Oregon
+3. Ohio
+4. Minnesota
+5. Maine
+6. Idaho
+7. Arizona
+8. Massachusetts
+9. New Mexico
+10. South Dakota
