@@ -376,12 +376,23 @@ export function generateBatch290NebraskaLiveFinalitySyncV1() {
   fs.writeFileSync(INPUTS.handoff, buildHandoff(updatedAllStateAudit));
 
   let allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
-  const staleKansasLine = '- Kansas remains blocked, but reviewed local education-routing proof now covers 14 of 105 counties after Newton USD 373 and Emporia USD 253 added two more district-host local leaves.';
-  if (!allStateReport.includes('- Nebraska remains blocked because the official county-local office stack still exposes no public county-to-office assignment contract beyond locator outputs.')) {
-    allStateReport = allStateReport.replace(
-      staleKansasLine,
-      `${staleKansasLine}\n- Nebraska remains blocked because the official county-local office stack still exposes no public county-to-office assignment contract beyond locator outputs.`
-    );
+  const nebraskaLine = '- Nebraska remains blocked because the official county-local office stack still exposes no public county-to-office assignment contract beyond locator outputs.';
+  const currentKansasLine = '- Kansas remains blocked, but reviewed local education-routing proof now covers 15 of 105 counties after Geary County USD 475 added one more district-host local leaf.';
+  const previousKansasLine = '- Kansas remains blocked, but reviewed local education-routing proof now covers 14 of 105 counties after Newton USD 373 and Emporia USD 253 added two more district-host local leaves.';
+  if (!allStateReport.includes(nebraskaLine)) {
+    if (allStateReport.includes(currentKansasLine)) {
+      allStateReport = allStateReport.replace(
+        currentKansasLine,
+        `${currentKansasLine}\n${nebraskaLine}`
+      );
+    } else if (allStateReport.includes(previousKansasLine)) {
+      allStateReport = allStateReport.replace(
+        previousKansasLine,
+        `${previousKansasLine}\n${nebraskaLine}`
+      );
+    } else {
+      allStateReport = `${allStateReport.trimEnd()}\n${nebraskaLine}\n`;
+    }
   }
   fs.writeFileSync(INPUTS.allStateReport, allStateReport);
 

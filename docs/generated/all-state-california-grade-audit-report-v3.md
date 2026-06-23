@@ -24,3 +24,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
 - Utah county-local routing is now explicitly sharpened to the live DWS office API plus its exact failure surfaces: the office payload still lacks county/service-area fields, `office-services` and the docs probes return `404`, the older DWS roots return `500`, and the county remainder is still explicit at Daggett, Morgan, and Rich.
 - Kansas remains blocked, but reviewed local education-routing proof now covers 15 of 105 counties after Geary County USD 475 added one more district-host local leaf.
+- Nebraska remains blocked because the official county-local office stack still exposes no public county-to-office assignment contract beyond locator outputs.
