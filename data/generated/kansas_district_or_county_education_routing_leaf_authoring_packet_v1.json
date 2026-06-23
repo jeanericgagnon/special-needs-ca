@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 6,
+    "authoredExactLeafCount": 7,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 4,
     "publicExportContractVerified": true,
-    "reviewedDistrictOwnedLeafCount": 6
+    "reviewedDistrictOwnedLeafCount": 7
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -165,7 +165,8 @@
     "douglas-ks",
     "finney-ks",
     "johnson-ks",
-    "shawnee-ks"
+    "shawnee-ks",
+    "wyandotte-ks"
   ],
   "unresolved_local_leaf_counties": [
     "allen-ks",
@@ -265,7 +266,6 @@
     "washington-ks",
     "wichita-ks",
     "wilson-ks",
-    "woodson-ks",
-    "wyandotte-ks"
+    "woodson-ks"
   ]
 }

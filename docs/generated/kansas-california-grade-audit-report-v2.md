@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 105
-- primary_gap_reason: reviewed_kansas_district_owned_leaves_exist_but_full_county_grade_coverage_is_incomplete
+- primary_gap_reason: reviewed_kansas_district_owned_leaves_now_cover_7_counties_but_full_county_grade_coverage_is_incomplete
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (Kansas DD authority now clears at state grade from reviewed first-party KDADS leaves. The live KDADS root renders HCBS and disability program navigation, the official Intellectual / Developmentally Disabled Information page is public, the Community Support Waiver page explicitly serves Kansans with intellectual and developmental disabilities, and the HCBS Leadership & Staff page names I/DD and waiver staff roles on the same official host. The old host-wide 403 claim is no longer accurate for browser-readable review.)
 - early_intervention_part_c: verified_state_grade (Reviewed live KSDE Early Childhood Special Education leaf again provides Kansas birth-to-three, Part C, KDHE administration, and the local ITS referral pointer.)
 - special_education_idea_part_b: verified_state_grade (Reviewed live KSDE Special Education leaf again provides a role-pure IDEA Part B root and links to dispute-resolution plus parent-rights leaves on the same official path.)
-- district_or_county_education_routing: blocked_reviewed_district_owned_leaves_exist_but_not_statewide_county_grade (Kansas is past a root-only blocker: reviewed district-owned special-education leaves now exist for 6/105 counties, but the education family remains blocked because county-grade local leaf coverage is still incomplete across the 105-county packet. Export-backed district domains are useful authoring hints, but they still fail closed unless a role-exact local leaf is preserved on the district-owned host.)
+- district_or_county_education_routing: blocked_reviewed_district_owned_leaves_exist_but_not_statewide_county_grade (Kansas is past a root-only blocker: reviewed district-owned special-education leaves now exist for 7/105 counties, but the education family remains blocked because county-grade local leaf coverage is still incomplete across the 105-county packet. Export-backed district domains are useful authoring hints, but they still fail closed unless a role-exact local leaf is preserved on the district-owned host.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (Reviewed live DCF Rehabilitation Services Program Overview page replaced the old KDADS misclassification.)
 - protection_and_advocacy: verified_state_grade (Reviewed first-party DRC Kansas evidence plus live About/Get Help pages prove the statewide protection-and-advocacy role and help path.)
 - parent_training_information_center: verified_state_grade (Reviewed first-party Families Together evidence explicitly states that it is Kansas’ federally designated PTI.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: reviewed_district_owned_special_education_leaves_exist_but_kansas_county_grade_coverage_is_still_incomplete :: Reviewed 2026-06-23 bounded Kansas district-owned exact leaf checks after the public KSDE export contract was proven. District-owned special-education leaves remain reviewed for 6/105 counties: atchison-ks, butler-ks, douglas-ks, finney-ks, johnson-ks, shawnee-ks. A final Sedgwick-only same-domain freeze pass then confirmed that Wichita USD 259 still has no role-exact local leaf on its public host: https://www.usd259.org/ returned a live homepage, https://www.usd259.org/site-map returned HTTP 200 with no role-exact special-education or student-services links, and the internal search pages for `special education` and `student services` also returned HTTP 200 but no matching role-exact links. The existing https://www.usd259.org/schools23/special-programs-and-schools page therefore remains only a generic district-owned special-programs page, not county-grade special-education routing. Kansas still remains blocked until reviewed district-owned local leaves expand county by county across the 105-county packet.
+- district_or_county_education_routing: reviewed_district_owned_special_education_leaves_exist_but_kansas_county_grade_coverage_is_still_incomplete :: Reviewed 2026-06-23 bounded Kansas district-owned exact leaf checks after the public KSDE export contract was proven. District-owned special-education leaves remain reviewed for 7/105 counties: atchison-ks, butler-ks, douglas-ks, finney-ks, johnson-ks, shawnee-ks, wyandotte-ks. A new bounded Wyandotte check showed the live district-owned Kansas City Kansas Public Schools root https://www.kckschools.org/ exposes an exact `/special-education` href on the homepage. Fetching https://www.kckschools.org/special-education returned HTTP 200 with title `Special Education - Kansas City Kansas Unified Schl Dist 500`, H1 `Special Education`, and body text preserving IDEA and Section 504 eligibility language on the district host. Sedgwick remains frozen as a non-match because https://www.usd259.org/schools23/special-programs-and-schools is still only a generic district-owned special-programs page rather than role-exact special-education routing. Kansas therefore now has one more reviewed district-owned local leaf, but county-grade education coverage is still incomplete across the 105-county packet.
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=4; first=https://www.kdads.ks.gov/
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.ksde.gov/policy-and-funding/special-education
-- district_or_county_education_routing: blocked_reviewed_district_owned_leaves_exist_but_not_statewide_county_grade; samples=12; first=https://www.usd409.net/page/special-education-services/
+- district_or_county_education_routing: blocked_reviewed_district_owned_leaves_exist_but_not_statewide_county_grade; samples=31; first=https://www.usd409.net/page/special-education-services/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dcf.ks.gov/services/RS/Pages/default.aspx
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.drckansas.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://familiestogetherinc.org/
@@ -44,11 +44,11 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: expand_reviewed_kansas_district_owned_special_education_leaves_from_public_export_backed_inventory_and_do_not_reprobe_sedgwick_without_new_role_exact_leaf
+- [critical] district_or_county_education_routing: expand_reviewed_kansas_district_owned_special_education_leaves_from_public_export_backed_inventory_and_keep_non_matching_district_pages_frozen
 
 ## Repair decision
 
 - Kansas remains BLOCKED and not index-safe.
-- Education still has real reviewed district-owned leaves for six counties.
-- Sedgwick is now fully frozen in the low-token lane: homepage, site-map, and internal search all stayed live but exposed no role-exact special-education or student-services leaf.
-- Kansas still does not clear until reviewed district-owned special-education or student-services leaves expand county by county across the remaining unresolved counties.
+- Education is sharper again because reviewed district-owned leaves now exist for seven counties instead of six.
+- Wyandotte now clears from the district-owned Kansas City Kansas Public Schools `/special-education` leaf.
+- Sedgwick remains frozen as a non-match, and Kansas still does not clear until reviewed district-owned special-education or student-services leaves expand county by county across the remaining unresolved counties.

@@ -189,3 +189,9 @@
 *   **Lesson:** If a district-owned host already failed obvious role-exact paths, one bounded pass across its public site map and internal search can be enough to freeze it as reviewed-without-leaf. Wichita USD 259 returned 200 on homepage, site-map, and internal search, but none exposed a role-exact special-education or student-services leaf.
 
 *   **Lesson:** If an official sitemap advertises county- or circuit-looking leaves, sample the live child URLs before treating them as discovery wins. Florida's `contact-us/circuit-*` URLs appeared in the sitemap but returned live 404s, so they could not upgrade the county-local packet.
+
+### District Homepages Can Expose Exact Leaves Even When XML Sitemaps 404
+*   **Lesson:** If a district-owned homepage itself exposes a role-exact href like `/special-education`, verify that exact leaf directly before spending more time on XML discovery. Kansas City Kansas Public Schools cleared Wyandotte from the homepage nav even though `/sitemap.xml` returned a district-branded 404 shell.
+
+### Revalidate “Recovered” Postback Lanes With The Literal Submit Value
+*   **Lesson:** If an earlier state note says a postback lane recovered, rerun the exact named submit with its literal current button value before promoting the lane. Maine NEO still exposed `action:SAUExport`, but a fresh Bangor `OrgId=42` replay with `Export to Excel` continued to return HTTP 500 shell HTML.

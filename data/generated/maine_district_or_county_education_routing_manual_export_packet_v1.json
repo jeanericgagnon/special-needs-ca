@@ -14,7 +14,7 @@
     "publicOrgSelectorEmbedded": true,
     "csrfTokenExposed": true,
     "sessionedPost500Confirmed": true,
-    "sessionedOrgIdTested": 364,
+    "sessionedOrgIdTested": 42,
     "reviewedTownSelectorLive": true,
     "reviewedOrgSelectorLive": true,
     "workbookStillDownloadable": true,
@@ -72,5 +72,5 @@
     "washington-me",
     "york-me"
   ],
-  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the live public selectors and municipality workbook are public but the bounded raw postback lane still fails to return reusable local contact rows."
+  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the live public selectors and municipality workbook are public but the bounded raw export replay still returns HTTP 500 shell HTML."
 }
