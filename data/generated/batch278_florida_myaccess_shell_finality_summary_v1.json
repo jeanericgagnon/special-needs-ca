@@ -1,0 +1,12 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "blocker_family": "county_local_disability_resources",
+  "providers_distinct_counties": 34,
+  "myaccess_shell_only_paths": [
+    "https://myaccess.myflfamilies.com/config/config.json",
+    "https://myaccess.myflfamilies.com/swagger",
+    "https://myaccess.myflfamilies.com/swagger/index.html"
+  ],
+  "myaccess_accountmanagement_services_still_configured": true
+}

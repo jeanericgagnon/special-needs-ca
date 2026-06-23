@@ -39,44 +39,49 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Florida
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Nebraska critical blocker. The exact DHHS Public Assistance Offices leaf is live, but the public office lane still has no county-to-office assignment artifact. One more bounded official pass confirmed the DHHS sitemap is dead, the public Web Experience item only describes a generic office lookup with computer/scanner/telephone filters, and the paired Web Map plus FeatureServer/MapServer roots still expose only office points, county boundaries, and `tables: []`.
+`county_local_disability_resources` is the only remaining Florida critical blocker. The live DCF local-offices leaf, the Family Resource Center storefront, the public contacts CSV, and the anonymous MyACCESS result endpoints are all readable enough to prove what is missing: Florida still has no county-complete public local-office contract. One more bounded pass also confirmed the MyACCESS public config still wires the search services through `/accountmanagement`, and the public `/swagger` paths only replay the same SPA shell.
 
 ### Exact Evidence Needed
 
-- Any official Nebraska DHHS county-to-office assignment table, export, or public document that explicitly maps all 93 counties to office coverage.
-- Any successor public locator artifact on the DHHS host or GIS host that adds service-area, region, assigned-counties, or other coverage fields beyond office contact cards.
-- Any reviewed official PDF, spreadsheet, or page on the DHHS stack that enumerates county coverage for the public assistance office lane.
+- A first-party Florida DCF or MyACCESS county-complete local-offices directory or export that maps all 67 counties to public assistance / ESS office routing.
+- An anonymous official MyACCESS county-result contract that returns real office or community-partner results without authentication.
+- A first-party Family Resource Center or DCF local-office lane that expands beyond the current 34-county storefront contract and publishes the full county set.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [Nebraska DHHS sitemap](https://dhhs.ne.gov/sitemap.xml)
-- [Nebraska Public Office Location web experience item](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457?f=json)
-- [Nebraska Public Office Location web experience data](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
-- [Nebraska Public Assistance Office Location web map item](https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825?f=json)
-- [Nebraska FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
-- [Nebraska MapServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/MapServer?f=pjson)
-- [Nebraska office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
-- [Nebraska distinct county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
+- [Florida DCF sitemap](https://www.myflfamilies.com/sitemap.xml)
+- [Florida DCF contact-us page](https://www.myflfamilies.com/contact-us)
+- [Florida DCF contacts.csv](https://www.myflfamilies.com/contact-us/contacts.csv)
+- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
+- [Florida Family Resource Center root](https://familyresourcecenter.myflfamilies.com/)
+- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
+- [MyACCESS Public CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
+- [MyACCESS Help HCINT](https://myaccess.myflfamilies.com/Help/HCINT)
+- [MyACCESS appconfig](https://myaccess.myflfamilies.com/config/appconfig.js)
+- [MyACCESS config.json shell](https://myaccess.myflfamilies.com/config/config.json)
+- [MyACCESS swagger shell](https://myaccess.myflfamilies.com/swagger)
+- [MyACCESS swagger index shell](https://myaccess.myflfamilies.com/swagger/index.html)
+- [MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
+- [MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any reviewed Nebraska DHHS public document or export outside the current locator that names county coverage for the public assistance office lane.
-- Any successor GIS layer or table on the official Nebraska host that introduces assigned counties, service areas, or regions.
-- Any future DHHS sitemap-backed office directory leaf that stops handing off to the generic locator and instead preserves county coverage directly.
-## Next State Order After Nebraska
+- Any official DCF or MyACCESS export or API path that materially extends the public county-local contract beyond the 34 counties in `providers.csv`.
+- Any exact first-party DCF county office page or local-office directory leaf that is linked from current public-assistance pages but not yet exposed in the current sitemap.
+- Any anonymous result lane on the official MyACCESS host that returns real county storefront or office rows without an authenticated `/accountmanagement` session.
+## Next State Order After Florida
 
-1. Nevada
-2. Florida
-3. Alaska
-4. South Carolina
-5. North Carolina
-6. New York
-7. Oklahoma
-8. Oregon
-9. Ohio
-10. Minnesota10. Minnesota10. Minnesota10. Minnesota10. Ohio10. Ohio10. Oregon10. Oregon
+1. Alaska
+2. South Carolina
+3. North Carolina
+4. New York
+5. Oklahoma
+6. Oregon
+7. Ohio
+8. Minnesota
+9. Maine
+10. Idaho10. Idaho10. Minnesota10. Minnesota10. Minnesota10. Minnesota10. Ohio10. Ohio10. Oregon10. Oregon
