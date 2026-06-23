@@ -1,0 +1,9 @@
+{
+  "batch": "batch_213_kansas_abilene_root_failure_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_root": "https://www.abileneschools.org/",
+  "lessons_updated": false
+}

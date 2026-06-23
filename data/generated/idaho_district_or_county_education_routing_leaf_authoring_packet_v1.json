@@ -7,12 +7,12 @@
   "current_problem_metrics": {
     "statewideFallbackRows": 42,
     "genericRootRows": 2,
-    "authoredExactLeafCount": 5,
+    "authoredExactLeafCount": 6,
     "officialDistrictLinks": 116,
     "countyBearingDistrictNamesVisible": true,
     "explicitCountyFieldVisible": false,
     "districtSpecialEducationFieldsVisible": false,
-    "reviewedExactLeafCount": 5
+    "reviewedExactLeafCount": 6
   },
   "exact_target_goals": [
     "district special education page",
@@ -83,7 +83,7 @@
     "valley-id",
     "washington-id"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, and Butte as seed examples.",
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, Butte, and Bonneville as seed examples.",
   "reviewed_exact_leaves": [
     {
       "county_id": "cassia-id",
@@ -136,6 +136,16 @@
         "special education"
       ],
       "title": "Special Education - buttecountyschools"
+    },
+    {
+      "county_id": "bonneville-id",
+      "district_name": "Bonneville Joint District #93",
+      "exact_leaf_url": "https://www.d93schools.org/special-education-programs-home",
+      "evidence_terms": [
+        "special education",
+        "exceptional"
+      ],
+      "title": "Special Education Programs"
     }
   ]
 }

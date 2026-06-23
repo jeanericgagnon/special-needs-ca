@@ -101,3 +101,9 @@
 
 ### If The Public All-District Export Errors, Fall Back To District-Scoped Exports
 *   **Lesson:** If a public directory app exposes an `***ALL DISTRICTS***` option but that broad export returns a generic problem shell, retry the same official submit contract with one exact district selector. Kansas `Directory_Rpts` still returned the full `Directory.xls` workbook from district-scoped submits even when the broad all-district attempt failed.
+
+### CMS Slugs Ending In `-home` Can Still Be Exact District Leaves
+*   **Lesson:** If an official district sitemap surfaces a role-exact slug that ends in `-home`, verify the title and body before rejecting it as generic navigation. Idaho's Bonneville Joint District #93 used `/special-education-programs-home`, but the fetched page title and body still preserved exact Special Education Programs evidence on the district-owned host.
+
+### Export-Backed District Domains Still Need A Role-Exact Leaf
+*   **Lesson:** If a first-party district export yields a clean district domain and even a live sitemap, keep the county blocked unless a role-exact special-education or student-services leaf survives bounded fetches on that host. Kansas's Abilene USD 435 root and sitemap were real, but every obvious special-ed path returned `Page Not Found`, so the export-backed root stayed authoring evidence only.

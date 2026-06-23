@@ -1,0 +1,11 @@
+{
+  "batch": "batch_214_maine_family_status_consistency_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "aligned_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ]
+}

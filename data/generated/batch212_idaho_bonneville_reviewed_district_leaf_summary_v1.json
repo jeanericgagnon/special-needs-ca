@@ -1,0 +1,11 @@
+{
+  "batch": "batch_212_idaho_bonneville_reviewed_district_leaf_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_exact_district_leaves": 6,
+  "promoted_from_sitemap_exact_leaves": 3,
+  "signal_only_district_roots": 1,
+  "lessons_updated": false
+}
