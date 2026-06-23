@@ -1,0 +1,10 @@
+{
+  "batch": "batch248_alaska_blocker_consistency_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "blocker_code": "browser_only_dpa_directory_lacks_borough_mapping_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves",
+  "verified_sample_count": 13
+}

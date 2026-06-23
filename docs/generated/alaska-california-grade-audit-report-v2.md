@@ -20,7 +20,7 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_dpa_directory_incomplete_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves (The official Alaska DPA offices page is only recoverable in browser-reviewed rendering and still stops at five regional headings and ten office-city leaves with no borough or census-area mapping. In the low-token fetch lane, the exact page URL, health-host search, and the exact Adult Public Assistance / Apply for Medicaid leaves linked from the live DFCS Services hub all fail closed through Cloudflare, while the DFCS site itself exposes no borough or census-area office contract. Alaska therefore still lacks a scraper-safe county-equivalent routing contract.)
+- county_local_disability_resources: blocked_dpa_directory_incomplete_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves (The official Alaska DPA offices page is only recoverable in browser-reviewed rendering and still stops at five regional headings and ten office-city leaves with no borough or census-area mapping. In the low-token fetch lane, the exact page URL, health-host public-assistance search URL, and the exact Adult Public Assistance / Apply for Medicaid leaves linked from the live DFCS Services hub all fail closed through Cloudflare, while the DFCS site itself exposes no borough or census-area office contract. Alaska therefore still lacks a scraper-safe county-equivalent routing contract.)
 
 ## Failure ledger
 
@@ -40,15 +40,16 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_dpa_directory_incomplete_and_all_official_successor_hosts_fail_closed; samples=19; first=https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/
+- county_local_disability_resources: blocked_dpa_directory_incomplete_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves; samples=13; first=https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_on_a_reviewable_official_surface_or_the_health_host_and_successor_gates_clear
+- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_on_a_reviewable_official_surface_or_replaces_the_dfcs_to_health_host_relay_with_a_reviewable_office_locator
 
 ## Repair decision
 
 - The only remaining Alaska blocker is county/local disability resources.
-- This bounded pass confirms the blocker is final for low-token repair on the current official host family: the DPA offices page is only recoverable in browser-reviewed rendering, remains incomplete for borough or census-area routing, and the same host challenge-blocks the exact page URL plus supporting discovery surfaces.
+- This bounded pass keeps the blocker final for low-token repair on the current official host family: the DPA offices page is only recoverable in browser-reviewed rendering, remains incomplete for borough or census-area routing, and the same host challenge-blocks the exact page URL plus supporting discovery surfaces.
+- The live DFCS successor hub does not repair that gap because its own HTML preserves no borough or census-area routing and its service leaves only relay families into challenge-blocked health-host pages.
 - Alternate official successors also fail closed: `my.alaska.gov` exposes only an anti-bot JS gate, `alaska.gov/search` does not expose a search contract for this family, and the legacy `dhss.alaska.gov` host preserves no public office successor lane.
-- Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping on a reviewable official surface or the health-host and successor gates clear.
+- Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping on a reviewable official surface or the DFCS-to-health-host relay is replaced by a reviewable office locator.

@@ -40,11 +40,11 @@
 - legal_aid: verified_state_grade; samples=2; first=https://bals.org
 - able_program: verified_state_grade; samples=1; first=https://www.ableunited.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_public_assistance_sitemap_without_county_office_leaf; samples=13; first=https://www.myflfamilies.com/contact-us
+- county_local_disability_resources: blocked_public_assistance_sitemap_dead_circuit_leaves_and_authenticated_only_results; samples=13; first=https://www.myflfamilies.com/contact-us
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_county_local_until_first_party_public_assistance_tree_exposes_county_leaf_or_anonymous_myaccess_results_exist
+- [critical] county_local_disability_resources: hold_county_local_until_first_party_public_assistance_tree_exposes_live_county_leaf_or_anonymous_myaccess_results_exist
 
 ## Repair decision
 

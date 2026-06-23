@@ -1,0 +1,10 @@
+{
+  "batch": "batch249_arizona_county_local_consistency_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "county_local_failure_code": "des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
+  "altcsRawHtmlVisibleOfficeCount": 7,
+  "partialCountyMapArtifacts": 1
+}

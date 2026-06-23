@@ -1,0 +1,10 @@
+{
+  "batch": "batch250_florida_packet_consistency_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "shellOnlyPublicRoutes": 2,
+  "deadCircuitLeavesLive404": true,
+  "representativeSourceCount": 14
+}

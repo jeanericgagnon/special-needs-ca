@@ -3,7 +3,7 @@
   "state_code": "FL",
   "family": "county_local_disability_resources",
   "repair_lane": "evidence_only_until_public_assistance_county_contract_exists",
-  "purpose": "Deterministic evidence packet for Florida county-local routing while county-complete public DCF contacts exist only as a wrong-role general service directory and the MyACCESS county-result lane stays authenticated-only.",
+  "purpose": "Deterministic evidence packet for Florida county-local routing while county-complete public DCF contacts exist only as a wrong-role general service directory, sitemap-advertised circuit leaves are dead, and the MyACCESS county-result lane stays shell-only or authenticated-only.",
   "current_problem_metrics": {
     "publicCountyCoverageRows": 34,
     "missingCountyCount": 33,
@@ -19,7 +19,11 @@
     "contactsCsvRows": 109,
     "publicCountyCompleteCircuitRows": 20,
     "publicCountyCompleteCoverage": 67,
-    "publicAssistanceCountyRows": 0
+    "publicAssistanceCountyRows": 0,
+    "deadCircuitLeavesAdvertisedInSitemap": true,
+    "deadCircuitLeavesLive404": true,
+    "shellOnlyPublicRoutes": 2,
+    "publicAssistanceSitemapEnumerated": true
   },
   "exact_target_goals": [
     "county office contact page",
@@ -42,12 +46,22 @@
     "https://familyresourcecenter.myflfamilies.com/providers.csv",
     "https://www.myflfamilies.com/contact-us",
     "https://www.myflfamilies.com/contact-us/contacts.csv",
+    "https://www.myflfamilies.com/services/public-assistance",
+    "https://www.myflfamilies.com/services/public-assistance/applying-for-assistance",
+    "https://www.myflfamilies.com/services/public-assistance/economic-self-sufficiency-frequently-asked-questions/",
+    "https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/community/",
+    "https://www.myflfamilies.com/sitemap.xml",
+    "https://myaccess.myflfamilies.com/Public/CPCPS",
+    "https://myaccess.myflfamilies.com/Help/HCINT",
     "https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails",
-    "https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch"
+    "https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch",
+    "https://myaccess.myflfamilies.com/config/appconfig.js"
   ],
   "root_domains_to_review": [
     "reviewable anonymous public Florida DCF or MyACCESS public-assistance county contracts only",
-    "do not treat county-complete general DCF contact rows or source_listed staging partner rows as ACCESS or Medicaid office evidence"
+    "do not treat county-complete general DCF contact rows or source_listed staging partner rows as ACCESS or Medicaid office evidence",
+    "do not reopen sitemap-advertised circuit leaves once they are confirmed live 404s",
+    "treat Public/CPCPS and Help/HCINT as one shell lane unless the returned HTML meaningfully diverges"
   ],
-  "packet_complete_when": "Florida can reopen only when a first-party public-assistance county dataset or another public office contract truthfully covers the remaining 33 storefront-gap counties, or when MyACCESS county-result endpoints become anonymously reviewable."
+  "packet_complete_when": "Florida can reopen only when a first-party public-assistance county dataset or other public office contract truthfully covers the remaining 33 storefront-gap counties, or when MyACCESS county-result endpoints become anonymously reviewable. Dead sitemap circuit leaves, shell-only public routes, and wrong-role county-complete contacts do not satisfy the family."
 }
