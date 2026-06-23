@@ -1,0 +1,17 @@
+{
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "primary_gap_reason": "official_directories_now_expose_exact_targets_but_nampa_negative_proof_and_missing_county_mapping_keep_idaho_blocked",
+  "authored_packets": [
+    "data/generated/idaho_district_or_county_education_routing_leaf_authoring_packet_v1.json",
+    "data/generated/idaho_county_local_disability_resources_leaf_authoring_packet_v1.json"
+  ],
+  "education_statewide_fallback_rows": 42,
+  "education_generic_root_rows": 2,
+  "county_doi_mirror_rows": 18,
+  "county_legacy_locator_rows": 27,
+  "county_unresolved_split_rows": 2,
+  "lesson_added": false
+}

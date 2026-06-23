@@ -1,0 +1,82 @@
+{
+  "state": "idaho",
+  "state_code": "ID",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing statewide Idaho SDE fallback rows with reviewed district-owned special-education or student-services leaves.",
+  "current_problem_metrics": {
+    "statewideFallbackRows": 42,
+    "genericRootRows": 2,
+    "authoredExactLeafCount": 0,
+    "officialDistrictLinks": 116
+  },
+  "exact_target_goals": [
+    "district special education page",
+    "district student services or exceptional student services page",
+    "district special education contact or department page"
+  ],
+  "exact_target_terms": [
+    "special education",
+    "student services",
+    "special services",
+    "exceptional student services",
+    "parent rights",
+    "procedural safeguards",
+    "special education contact"
+  ],
+  "representative_sources": [
+    "https://www.sde.idaho.gov/school-districts/",
+    "https://www.sde.idaho.gov/about-us/departments/special-education/"
+  ],
+  "root_domains_to_review": [
+    "district-owned Idaho K-12 domains reached from the official Idaho School Districts directory",
+    "https://www.sde.idaho.gov/school-districts/"
+  ],
+  "affected_counties": [
+    "ada-id",
+    "adams-id",
+    "bannock-id",
+    "bear-lake-id",
+    "benewah-id",
+    "bingham-id",
+    "blaine-id",
+    "boise-id",
+    "bonner-id",
+    "bonneville-id",
+    "boundary-id",
+    "butte-id",
+    "camas-id",
+    "canyon-id",
+    "caribou-id",
+    "cassia-id",
+    "clark-id",
+    "clearwater-id",
+    "custer-id",
+    "elmore-id",
+    "franklin-id",
+    "fremont-id",
+    "gem-id",
+    "gooding-id",
+    "idaho-id",
+    "jefferson-id",
+    "jerome-id",
+    "kootenai-id",
+    "latah-id",
+    "lemhi-id",
+    "lewis-id",
+    "lincoln-id",
+    "madison-id",
+    "minidoka-id",
+    "nez-perce-id",
+    "oneida-id",
+    "owyhee-id",
+    "payette-id",
+    "power-id",
+    "shoshone-id",
+    "teton-id",
+    "twin-falls-id",
+    "valley-id",
+    "washington-id"
+  ],
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is authored for every Idaho county without relying on the statewide SDE fallback URLs."
+}

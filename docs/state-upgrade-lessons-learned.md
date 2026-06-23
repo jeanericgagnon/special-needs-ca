@@ -632,3 +632,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Pair a Role-Pure Access Page With Same-Host County-Coverage APIs Before Writing Off a JavaScript DD App
 *   **Lesson:** If a DDID host looks like a JavaScript shell, inspect the linked role-pure agency pages on the parent CHFS site and one same-host JSON endpoint before keeping the family blocked. Kentucky completed once the CHFS `did.aspx` division page and `access-and-referral.aspx` intake page were paired with DBHDID’s public `api/cmhc/center-info` county/center/contact feed.
+
+### Turn A Sharpened Blocker Into A Deterministic Packet Before Rechecking The Same Statewide Directory
+*   **Lesson:** If a blocker is already sharp and the only remaining work is exact local leaf authoring, persist a state-specific packet from the current DB plus reviewed statewide directory evidence instead of re-reading the same statewide pages again. Idaho’s next honest step was not another pass on `school-districts/` or `/offices`, but a deterministic district/office packet that captures the fallback rows, exact leaf names, and unresolved county splits on disk.

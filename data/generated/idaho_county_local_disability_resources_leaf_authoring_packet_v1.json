@@ -1,0 +1,93 @@
+{
+  "state": "idaho",
+  "state_code": "ID",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_district_leaf_repair",
+  "purpose": "Deterministic authoring packet for replacing Idaho DOI and dead-locator office fallbacks with reviewed DHW office leaves where county mapping is publicly supportable.",
+  "current_problem_metrics": {
+    "doiMirrorRows": 18,
+    "legacyLocatorRows": 27,
+    "authoredExactLeafCount": 18,
+    "officialOfficeLeaves": 27,
+    "unresolvedDuplicateCountyRows": 2
+  },
+  "exact_target_goals": [
+    "exact DHW office leaf with address and phone",
+    "county-to-office contract if publicly available",
+    "resolved county mapping for duplicated county office guesses"
+  ],
+  "exact_target_terms": [
+    "office",
+    "service location",
+    "medicaid",
+    "benefits",
+    "address",
+    "phone",
+    "counties served"
+  ],
+  "representative_sources": [
+    "https://healthandwelfare.idaho.gov/offices",
+    "https://healthandwelfare.idaho.gov/sitemap.xml"
+  ],
+  "root_domains_to_review": [
+    "https://healthandwelfare.idaho.gov/offices",
+    "https://healthandwelfare.idaho.gov/sitemap.xml"
+  ],
+  "affected_counties": [
+    "ada-id",
+    "adams-id",
+    "bannock-id",
+    "bear-lake-id",
+    "benewah-id",
+    "bingham-id",
+    "blaine-id",
+    "boise-id",
+    "bonner-id",
+    "bonneville-id",
+    "boundary-id",
+    "butte-id",
+    "camas-id",
+    "canyon-id",
+    "caribou-id",
+    "cassia-id",
+    "clark-id",
+    "clearwater-id",
+    "custer-id",
+    "elmore-id",
+    "franklin-id",
+    "fremont-id",
+    "gem-id",
+    "gooding-id",
+    "idaho-id",
+    "jefferson-id",
+    "jerome-id",
+    "kootenai-id",
+    "latah-id",
+    "lemhi-id",
+    "lewis-id",
+    "lincoln-id",
+    "madison-id",
+    "minidoka-id",
+    "nez-perce-id",
+    "oneida-id",
+    "owyhee-id",
+    "payette-id",
+    "power-id",
+    "shoshone-id",
+    "teton-id",
+    "twin-falls-id",
+    "valley-id",
+    "washington-id"
+  ],
+  "unresolved_county_splits": [
+    {
+      "county_id": "canyon-id",
+      "competing_office_names": [
+        "Idaho DHW: Caldwell Office",
+        "Idaho DHW: Nampa Office"
+      ],
+      "reviewed_negative_proof": "Nampa mention resolves only to Southwest Idaho Treatment Center, not a county benefits office leaf."
+    }
+  ],
+  "packet_complete_when": "Every Idaho county row either points at a reviewed exact DHW office leaf with truthful county mapping support or remains explicitly blocked where the public office stack exposes no county-to-office contract."
+}
