@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "live_official_idaho_directory_pages_exist_but_still_do_not_expose_county_grade_contracts_for_education_or_dhw_office_routing",
+  "primary_gap_reason": "reviewed_idaho_district_leaves_exist_but_county_grade_education_and_dhw_mapping_remain_incomplete",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -44,9 +44,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_district_directory_has_116_links_but_zero_county_or_special_education_fields",
-      "evidence": "Reviewed 2026-06-23 live official Idaho SDE sources at https://www.sde.idaho.gov/school-districts/ and https://www.sde.idaho.gov/wp-json/wp/v2/pages/9049. The directory and public JSON preserve 116 exact outbound district website links, but only 12 county-bearing district names and no explicit county field, county filter, district special-education contact field, special-education heading, or student-services heading. Idaho therefore still lacks a public county-to-district education-routing contract, and the district leaf packet still has 0 authored reviewed local leaves.",
-      "next_action": "author_reviewed_special_education_or_special_services_leaves_from_official_district_roots_and_local_sitemap_navigation_signals"
+      "failure_code": "reviewed_district_special_services_leaves_exist_but_county_grade_mapping_is_still_incomplete",
+      "evidence": "Reviewed 2026-06-23 bounded live exact district leaf checks taken directly from the existing Idaho packet signals. https://www.cassiaschools.org/page/special-services/ returned HTTP 200 with title `Special Services | Cassia County School District` and preserved special-education, special-services, 504, and procedural-safeguards text on the district-owned page. https://www.payetteschools.org/our-district/departments/special-education returned HTTP 200 with title `Special Services - Payette Joint District` and preserved special-education and special-services text on the district-owned page. https://www.sd25.us/departments/special-services returned HTTP 200 with title `Special Services - Pocatello-Chubbuck School District 25` and preserved special-education, special-services, 504, and procedural-safeguards text on the district-owned page. Those reviewed exact leaves prove Idaho education has moved beyond root authoring for at least a small set of counties. But the statewide SDE directory still exposes no county-to-district contract, and the packet still does not carry reviewed local leaves across all counties, so Idaho remains blocked until that exact-leaf coverage expands county by county.",
+      "next_action": "expand_reviewed_exact_district_special_education_leaves_county_by_county_from_the_official_idaho_root_packet"
     },
     {
       "family": "county_local_disability_resources",

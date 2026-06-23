@@ -53,3 +53,4 @@
 - Arizona remains BLOCKED and not index-safe.
 - Education is sharper than the prior zero-root blocker: the official report-cards app now proves live district-detail roots and district website/address/phone fields, so the missing work is county-keyed root materialization plus exact special-education leaf verification, not another statewide-host guess.
 - County/local disability resources are still blocked separately because the DES office lane remains challenge-blocked and the accessible AHCCCS artifacts still do not preserve a county-to-office contract.
+

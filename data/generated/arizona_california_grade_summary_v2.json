@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "full_domain_challenge_plus_missing_authored_local_leaf_packets",
+  "primary_gap_reason": "des_host_challenge_plus_unmaterialized_report_cards_district_root_inventory",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,8 +41,8 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "official_report_cards_inventory_exists_but_county_keyed_district_roots_are_unauthored",
-      "evidence": "Reviewed 2026-06-23 live Arizona education blocker artifacts plus one bounded check of the official AZ School Report Cards host at https://azreportcards.azed.gov/. The main AZED root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs still return the Cloudflare \"Just a moment...\" HTTP 403 shell. But the sibling official report-cards app is browser-readable and its public API /api/Entity/GetEntityList returns a statewide district inventory, including Arizona LEA rows such as St Johns Unified District, Window Rock Unified District, and Chinle Unified District. The live school_district table still contains 15/15 Arizona rows pointing only at the statewide AZED fallback https://www.azed.gov/specialeducation, and the packet still lacks county-keyed district-owned root authoring or exact special-education leaves. Arizona education is therefore no longer blocked by zero official inventory; it is blocked because the accessible official inventory has not yet been converted into county-keyed district-owned roots and leaf evidence."
+      "failure_code": "official_report_cards_district_detail_roots_live_but_not_yet_county_keyed_or_leaf_verified",
+      "evidence": "Reviewed 2026-06-23 bounded official Arizona report-cards checks beyond the generic inventory call. The public AZ School Report Cards app still exposes /api/Entity/GetEntityList and the live district detail route /districts/Detail/<educationOrganizationId>. The app bundle also reveals the exact local-detail contract: /api/Entity/GetEntity?id=<educationOrganizationId>&fiscalYear=2025 returns district-specific fields including nameOfInstitution, webSite, telephone, and address, and sample live calls for St Johns Unified District (educationOrganizationId 4153), Window Rock Unified District (4154), and Round Valley Unified District (4155) returned first-party district websites plus district phones and addresses. Arizona education therefore is no longer blocked by zero local-root inventory; it is now blocked because those reviewable district roots have not yet been materialized into a county-keyed Arizona district inventory and no district-owned special-education leaves have been verified from them."
     },
     {
       "family": "county_local_disability_resources",

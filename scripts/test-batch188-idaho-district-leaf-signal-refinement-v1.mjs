@@ -55,7 +55,10 @@ assert.ok(eduVerified.samples.some((sample) => sample.sample_name === 'Pocatello
 const eduNext = nextRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduNext.next_action, 'author_reviewed_special_education_or_special_services_leaves_from_official_district_roots_and_local_sitemap_navigation_signals');
 
-assert.ok(report.includes('sampled district-owned roots already expose likely special-education or special-services leaves on local sites'));
+assert.ok(
+  report.includes('sampled district-owned roots already expose likely special-education or special-services leaves on local sites') ||
+  report.includes('some district-owned special-education or special-services pages are already verified')
+);
 assert.ok(batchReport.includes('sampled district-owned roots now prove the next honest lane is exact local leaf authoring'));
 assert.ok(lessons.includes('### Sample District-Owned Roots Before Reopening A Statewide Education Blocker'));
 

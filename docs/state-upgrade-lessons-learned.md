@@ -74,3 +74,12 @@
 
 ### A Live Successor Office-Finder Root Still Fails Closed Without A County Contract
 *   **Lesson:** If a dead legacy county-office host has a live successor root on the official state domain, verify whether the replacement actually preserves a county list or office extract before upgrading the family. Oregon ODHS had a live `Find an Office` page, but its static HTML still exposed no county contract, so the county-local family stayed blocked.
+
+### State-Hosted District Detail Apps Can Count As Local-Root Inventory Even When The Main DOE Host Is Challenged
+*   **Lesson:** If a sibling official report-card app exposes district detail routes plus API fields like district website, address, and telephone, treat that app as a real local-root inventory lane instead of leaving the state at `zero_root_inventory`. Arizona's `azreportcards.azed.gov` app exposed `/districts/Detail/<id>` and `/api/Entity/GetEntity?id=<id>&fiscalYear=2025`, which is enough to seed district-root authoring before district-owned special-education leaf checks.
+
+### Promote Exact District Leaves Once A Packet Signal Resolves Cleanly
+*   **Lesson:** When a packet already points to likely district-owned special-education or special-services leaves, verify those exact URLs before doing any more root work. Idaho moved from generic local signals to reviewed exact district leaves immediately once Cassia, Payette, and SD25 candidate paths were fetched directly.
+
+### Sample District-Owned Roots Before Reopening A Statewide Education Blocker
+*   **Lesson:** If an official state district directory already yields local domains, sample a few district-owned roots plus `robots.txt` or sitemap before rereading the state directory again. Idaho’s official SDE page still lacked county mapping, but Cassia, Payette, and SD25 immediately exposed likely `/special-services` or `/special-education` leaves on district-owned surfaces, which proved the next lane was exact local leaf authoring.

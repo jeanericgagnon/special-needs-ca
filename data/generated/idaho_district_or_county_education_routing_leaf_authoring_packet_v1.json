@@ -2,16 +2,17 @@
   "state": "idaho",
   "state_code": "ID",
   "family": "district_or_county_education_routing",
-  "repair_lane": "district_owned_leaf_authoring_only",
+  "repair_lane": "reviewed_exact_leaf_expansion_from_district_owned_roots",
   "purpose": "Deterministic authoring packet for replacing statewide Idaho SDE fallback rows with reviewed district-owned special-education or student-services leaves.",
   "current_problem_metrics": {
     "statewideFallbackRows": 42,
     "genericRootRows": 2,
-    "authoredExactLeafCount": 0,
+    "authoredExactLeafCount": 3,
     "officialDistrictLinks": 116,
     "countyBearingDistrictNamesVisible": true,
     "explicitCountyFieldVisible": false,
-    "districtSpecialEducationFieldsVisible": false
+    "districtSpecialEducationFieldsVisible": false,
+    "reviewedExactLeafCount": 3
   },
   "exact_target_goals": [
     "district special education page",
@@ -82,5 +83,41 @@
     "valley-id",
     "washington-id"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is authored for every Idaho county without relying on the statewide SDE fallback URLs or inferring county coverage from county-bearing district names alone."
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, and Bannock as seed examples.",
+  "reviewed_exact_leaves": [
+    {
+      "county_id": "cassia-id",
+      "district_name": "Cassia County School District",
+      "exact_leaf_url": "https://www.cassiaschools.org/page/special-services/",
+      "evidence_terms": [
+        "special education",
+        "special services",
+        "504",
+        "procedural safeguards"
+      ],
+      "title": "Special Services | Cassia County School District"
+    },
+    {
+      "county_id": "payette-id",
+      "district_name": "Payette Joint District",
+      "exact_leaf_url": "https://www.payetteschools.org/our-district/departments/special-education",
+      "evidence_terms": [
+        "special education",
+        "special services"
+      ],
+      "title": "Special Services - Payette Joint District"
+    },
+    {
+      "county_id": "bannock-id",
+      "district_name": "Pocatello-Chubbuck School District 25",
+      "exact_leaf_url": "https://www.sd25.us/departments/special-services",
+      "evidence_terms": [
+        "special education",
+        "special services",
+        "504",
+        "procedural safeguards"
+      ],
+      "title": "Special Services - Pocatello-Chubbuck School District 25"
+    }
+  ]
 }

@@ -2,8 +2,8 @@
   "state": "arizona",
   "state_code": "AZ",
   "family": "district_or_county_education_routing",
-  "repair_lane": "county_keyed_district_root_authoring_then_leaf_authoring",
-  "purpose": "Deterministic authoring packet for Arizona education that must first attach one district-owned root per affected county before any district special-education leaf verification can begin.",
+  "repair_lane": "report_cards_root_materialization_then_county_keyed_mapping_then_leaf_authoring",
+  "purpose": "Deterministic Arizona education packet that now has reviewable official district-detail roots on the AZ School Report Cards host and must convert them into county-keyed district root inventory before exact special-education leaf verification.",
   "current_problem_metrics": {
     "genericFallbackCountyRows": 15,
     "challengedOfficialRoots": 8,
@@ -12,10 +12,13 @@
     "azedHostExhaustedRoots": 8,
     "liveDistinctRootCount": 1,
     "stagingDistinctRootCount": 1,
-    "liveDistrictOwnedRootCount": 0,
-    "stagingDistrictOwnedRootCount": 0
+    "liveDistrictOwnedRootCount": 3,
+    "stagingDistrictOwnedRootCount": 0,
+    "reviewedOfficialDistrictInventoryRoots": 3,
+    "countyKeyedDistrictRootCount": 0
   },
   "exact_target_goals": [
+    "official district detail root per county",
     "district special education page",
     "student services or exceptional student services page",
     "district special education contact or department page"
@@ -29,13 +32,15 @@
     "special education contact"
   ],
   "representative_sources": [
-    "district-owned Arizona K-12 domains must be authored first from outside the challenged AZED host",
-    "https://www.azed.gov/specialeducation",
-    "https://www.education.arizona.gov"
+    "https://azreportcards.azed.gov/api/Entity/GetEntityList",
+    "https://azreportcards.azed.gov/districts/Detail/4153",
+    "https://azreportcards.azed.gov/api/Entity/GetEntity?id=4153&fiscalYear=2025",
+    "https://azed.gov/specialeducation"
   ],
   "root_domains_to_review": [
-    "county-keyed Arizona district-owned domains only",
-    "do not reopen AZED host discovery until the challenge clears on root, likely replacement leaves, robots.txt, and sitemap.xml"
+    "official report-cards district detail roots first",
+    "district-owned Arizona K-12 domains extracted from report-cards detail fields next",
+    "do not reopen challenged AZED host discovery until root, robots.txt, and sitemap.xml clear"
   ],
   "affected_counties": [
     "apache-az",
@@ -54,5 +59,37 @@
     "yavapai-az",
     "yuma-az"
   ],
-  "packet_complete_when": "At least one district-owned Arizona root is authored for every affected county and then at least one reviewed district-owned education-routing leaf is attached per county without relying on challenged AZED-host placeholders."
+  "packet_complete_when": "At least one reviewed Arizona district detail root or linked district-owned root is attached per affected county and then at least one reviewed district special-education or student-services leaf is attached per county without relying on generic AZED fallback rows.",
+  "reviewed_root_samples": [
+    {
+      "county_hint": "apache-az",
+      "educationOrganizationId": 4153,
+      "district_name": "St Johns Unified District",
+      "detail_url": "https://azreportcards.azed.gov/districts/Detail/4153",
+      "api_url": "https://azreportcards.azed.gov/api/Entity/GetEntity?id=4153&fiscalYear=2025",
+      "district_website": "http://www.sjusd.net",
+      "telephone": "928-337-2255",
+      "address": "450 S 13th W, St Johns, AZ85936"
+    },
+    {
+      "county_hint": "apache-az",
+      "educationOrganizationId": 4154,
+      "district_name": "Window Rock Unified District",
+      "detail_url": "https://azreportcards.azed.gov/districts/Detail/4154",
+      "api_url": "https://azreportcards.azed.gov/api/Entity/GetEntity?id=4154&fiscalYear=2025",
+      "district_website": "https://www.wrschool.net/",
+      "telephone": "928-729-6706",
+      "address": "Navajo Rte 12, Fort Defiance, AZ86504"
+    },
+    {
+      "county_hint": "apache-az",
+      "educationOrganizationId": 4155,
+      "district_name": "Round Valley Unified District",
+      "detail_url": "https://azreportcards.azed.gov/districts/Detail/4155",
+      "api_url": "https://azreportcards.azed.gov/api/Entity/GetEntity?id=4155&fiscalYear=2025",
+      "district_website": "https://www.elks.net",
+      "telephone": "928-333-6580",
+      "address": "940 E MARICOPA DR UNIT B, SPRINGERVILLE, AZ85938-5362"
+    }
+  ]
 }
