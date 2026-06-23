@@ -18,7 +18,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Maine: `public_maine_sau_selectors_and_workbook_are_live_but_search_and_export_replays_still_500_and_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_dds_locations_lane_still_lacks_county_export`
 - Minnesota: `mdeorg_root_and_analytics_routes_flap_to_radware_plus_mn_dhs_local_office_family_is_radware_challenged`
-- Nebraska: `official_public_office_app_has_only_two_public_layers_and_no_service_area_relationships`
+- Nebraska: `official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields`
 - Nevada: `live_welfare_office_pages_without_county_contract`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
@@ -40,56 +40,45 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Kansas
+## Current Focus State: Nebraska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is still the only critical blocker. Kansas now has reviewed district-owned special-education leaves for 8 of 105 counties, but county-grade local education routing is still incomplete.
+`county_local_disability_resources` is still the only critical blocker. Nebraska’s public DHHS office stack is fully inspectable, but it still exposes no county-assignment artifact: the public FeatureServer root has `tables: []`, both layers have empty relationships, and the office schema is contact-only.
 
 ### Exact Evidence Needed
 
-- More official district-owned special-education or student-services leaves tied to unresolved counties.
-- Official cooperative/interlocal pages are acceptable only if they preserve a role-pure local routing contract, not just a generic services overview.
-- Strongest remaining need: county-keyed local education routing for unresolved counties from official district or cooperative hosts.
+- Any official Nebraska county-to-office assignment artifact, service-area table, downloadable office coverage file, or public schema field that explicitly maps the remaining counties to office coverage.
+- A public DHHS or GIS artifact is required; generic office-location roots and county boundary layers are not enough.
+- Strongest remaining need: a reviewed official county coverage contract for the 56 counties not explicitly represented by the 37 distinct `USER_County` office values.
 
 ### Useful Official URLs Already Tried
 
-- [KSDE Directory Reports](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
-- [KSDE Directories](https://www.ksde.gov/data-and-reporting/directories)
-- [KSDE Special Education](https://www.ksde.gov/policy-and-funding/special-education)
-- [Leavenworth USD 453 Special Education](https://www.usd453.org/district-departments/special-education)
-- [Salina USD 305 Site Map](https://www.usd305.com/site-map)
-- [Salina USD 305 Administrative & Student Support](https://www.usd305.com/departments/administrative-student-support)
-- [CKCIE Early Childhood Special Education](https://www.305ckcie.com/departments/early-childhood-special-education)
-- [CKCIE Home](https://www.305ckcie.com/)
-- [Manhattan-Ogden USD 383 Sitemap](https://www.usd383.org/sitemap.xml)
-- [Manhattan-Ogden USD 383 search: special education](https://www.usd383.org/search-results?q=special%20education)
-- [Manhattan-Ogden USD 383 search: student services](https://www.usd383.org/search-results?q=student%20services)
+- [Nebraska Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
+- [Nebraska Public Office Location Experience](https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457)
+- [Nebraska office app config](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
+- [Nebraska office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
+- [Nebraska office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
+- [Nebraska office layer distinct county coverage](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
+- [Nebraska county layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1?f=pjson)
 
 ### Top Remaining Source-Scouting Targets
 
-- Official Kansas district-owned hosts discoverable from the KSDE public export contract for unresolved counties.
-- Official Kansas cooperative/interlocal special-education hosts linked from district site maps, but only where the cooperative page preserves county- or district-usable routing.
-- Unresolved high-signal counties after this pass:
-  - Riley County
-  - Saline County
-  - Sedgwick County
-  - Reno County
-  - Cowley County
-  - Leavenworth-adjacent remaining county districts if county coverage is still split
+- Official Nebraska DHHS or GIS artifacts outside the current FeatureServer pair that could expose service-area assignments.
+- Any official downloadable office coverage document, CSV/XLS/PDF, or ArcGIS related table not already exposed from the public service root.
+- Any official public query surface on the DHHS/GIS stack that returns county-to-office coverage instead of just office contact rows.
 
-## Next State Order After Kansas
+## Next State Order After Nebraska
 
-1. Nebraska
-2. Nevada
-3. Florida
-4. Alaska
-5. Ohio
-6. Minnesota
-7. Maine
-8. Idaho
-9. Arizona
-10. Massachusetts
-11. Oregon
-12. Oklahoma
-13. Utah
+1. Nevada
+2. Florida
+3. Alaska
+4. Ohio
+5. Minnesota
+6. Maine
+7. Idaho
+8. Arizona
+9. Massachusetts
+10. Oregon
+11. Oklahoma
+12. Utah

@@ -225,3 +225,6 @@
 
 ### District Site Maps Can Surface Cooperative Leads Without Clearing County-Grade Routing
 *   **Lesson:** If an official district site map labels a link as `Special Education Services` but sends users to a separate cooperative or interlocal host, treat that destination as a high-value local lead rather than an automatic county clear. Kansas Salina USD 305 linked `Special Education Services` into CKCIE, but the bounded pass still needed a role-pure local routing contract before promoting the county.
+
+### A Public FeatureServer With Tables Empty And Contact-Only Schema Is A Final Local-Office Blocker
+*   **Lesson:** If the public ArcGIS service root reports `tables: []` and the office layer schema contains only contact fields plus one county field, stop hunting for a hidden county-assignment join. Nebraska’s DHHS office stack was fully inspectable and still had no service-area fields, no related tables, and only 37 distinct counties across 42 office rows.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T17:33:53.148Z",
+  "generatedAt": "2026-06-23T17:38:29.166Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -1927,11 +1927,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_public_office_layers_without_service_area_relationships"
+        "county_local_disability_resources": "blocked_public_office_service_root_without_assignment_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch_47_nebraska_statewide_family_truth_refresh_v1",
-      "packetPrimaryGapReason": "official_public_office_app_has_only_two_public_layers_and_no_service_area_relationships",
+      "packetPrimaryGapReason": "official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

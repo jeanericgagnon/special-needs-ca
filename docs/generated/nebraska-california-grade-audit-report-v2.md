@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 93
-- primary_gap_reason: official_public_office_app_has_only_two_public_layers_and_no_service_area_relationships
+- primary_gap_reason: official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Legal Aid of Nebraska evidence now provides a real statewide civil legal-aid route.)
 - able_program: verified_state_grade (Statewide evidence is present at the required authority level.)
 - ssi_ssa_federal_reference: verified_state_grade (Statewide evidence is present at the required authority level.)
-- county_local_disability_resources: blocked_public_office_layers_without_service_area_relationships (Reviewed 2026-06-23 the live official Nebraska office ExperienceBuilder stack more tightly. The public app config is open, but it still resolves only to two public layers: the office feature layer and the county-boundary layer. The office layer exposes office contact fields such as address, phone, hours, and USER_County, but it has no relationships or related tables, and a bounded distinct-value query still returns only 37 distinct USER_County values across 42 public office rows while Nebraska has 93 counties. The county layer exposes only county geometry and identifiers and also has no relationships. Nebraska therefore still lacks a service-area or county-to-office contract for the remaining counties.)
+- county_local_disability_resources: blocked_public_office_service_root_without_assignment_contract (Reviewed 2026-06-23 the live official Nebraska office ExperienceBuilder stack to the schema level. The public app config still resolves only to the same office and county layers, the FeatureServer root reports `tables: []`, both public layers have empty relationship arrays, and the office schema contains only address/contact fields such as USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, USER_Scanning, and USER_Phone. There are still only 42 office rows and 37 distinct USER_County values for 93 counties, with no service-area, assigned-counties, region, or coverage fields. Nebraska therefore still lacks any public county-to-office assignment contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_public_office_app_has_only_two_public_layers_and_37_distinct_office_counties :: Reviewed 2026-06-23 the official Nebraska Public Office Location ExperienceBuilder config and backing feature service directly. The public app data at https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json is open, but the backing service still exposes only two public layers: https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0 for offices and /1 for counties. Layer 0 exposes office fields like USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, and USER_Scanning, but `relationships` is an empty array. A bounded distinct-value query on USER_County still returns only 37 distinct office counties across 42 public office rows. Layer 1 exposes only county boundary identifiers like NAME, COUNTYFP, GEOID, and NAMELSAD, and its `relationships` array is also empty. So the public Nebraska office stack has no hidden service-area relationship table and does not even carry explicit office-county rows for all 93 counties.
+- county_local_disability_resources: official_public_office_service_root_has_no_tables_no_relationships_and_only_37_distinct_counties :: Reviewed 2026-06-23 the official Nebraska Public Office Location ExperienceBuilder config, FeatureServer root, office layer schema, and bounded office-row sample directly. The public app data at https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json is open and still exposes only three data sources: the shared web map plus two derived feature layers. The service root at https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson reports exactly two layers, `tables: []`, and no extra public assignment table. Layer 0 still exposes only office contact fields like USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, USER_Scanning, and USER_Phone; it has no service-area or coverage fields, no multi-county USER_County values, and only 37 distinct counties across 42 office rows. Layer 1 remains only county geometry and identifier fields. So the official Nebraska county-local office stack is now final-blocked on missing public county-assignment data, not on an unresolved ArcGIS-discovery question.
 
 ## Verified source samples
 
@@ -40,14 +40,14 @@
 - legal_aid: verified_state_grade; samples=1; first=https://legalaidofnebraska.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_public_office_layers_without_service_area_relationships; samples=3; first=https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json
+- county_local_disability_resources: blocked_public_office_service_root_without_assignment_contract; samples=4; first=https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_or_county_assignment_contract_exists
+- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_table_or_county_assignment_artifact_exists
 
 ## Completion decision
 
 - Nebraska remains BLOCKED and index_safe=false.
 - district_or_county_education_routing is still verified_county_grade through the live official NDE county-selectable directory host.
-- county_local_disability_resources remains blocked because the public office app still exposes only 37 distinct office counties across 42 office rows, with no service-area relationships to bridge the remaining counties.
+- county_local_disability_resources is now final-blocked more tightly: the public FeatureServer root exposes no tables, both layers have empty relationships, and the office schema has no service-area or coverage fields to bridge the missing counties.

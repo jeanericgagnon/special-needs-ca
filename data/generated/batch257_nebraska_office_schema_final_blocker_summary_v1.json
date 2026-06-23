@@ -1,0 +1,12 @@
+{
+  "batch": "batch257_nebraska_office_schema_final_blocker_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "service_root_tables_present": false,
+  "office_schema_has_service_area_fields": false,
+  "office_layer_has_multi_county_values": false,
+  "distinct_office_counties": 37,
+  "lessons_updated": true
+}
