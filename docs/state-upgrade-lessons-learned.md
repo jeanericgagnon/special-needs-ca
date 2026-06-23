@@ -285,3 +285,6 @@
 
 ### ExperienceBuilder Datasource Registries Can Prove There Is No Hidden Public County Contract
 *   **Lesson:** If a public ExperienceBuilder app's datasource registry materializes only the shared web map plus widget-output layers, treat that as affirmative evidence that there is no hidden public assignment table on the app surface. Nebraska's office locator exposed only the web map, a closest-office output, and an ArcGIS geocoder layer, which confirmed the blocker was a true missing county contract rather than an undiscovered public datasource.
+
+### When Public App Config Rewires To A Shell Endpoint, Treat The Shell As The Real Contract
+*   **Lesson:** If a public app config rewires a workflow from named endpoints to a generic shell endpoint, verify the new endpoint directly before carrying older endpoint names forward. Florida’s MyACCESS config now points `officeMapping` at `/dataexchangeproxy`, but that route replays the same shell as the public pages, so the blocker is the shell contract itself, not the older `getZipCountyDetails` naming.

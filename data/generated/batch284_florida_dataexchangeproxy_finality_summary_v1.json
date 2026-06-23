@@ -1,0 +1,12 @@
+{
+  "batch": "batch284_florida_dataexchangeproxy_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "failure_code": "official_family_resource_center_still_partial_and_myaccess_office_mapping_now_resolves_only_to_public_shell_contract",
+  "distinct_storefront_counties": 34,
+  "public_dataexchangeproxy_replays_shell": true,
+  "lessons_updated": false
+}
