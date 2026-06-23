@@ -85,4 +85,4 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 7. Oregon
 8. Ohio
 9. Minnesota
-10. Maine10. Maine10. Maine10. Maine
+10. Maine
