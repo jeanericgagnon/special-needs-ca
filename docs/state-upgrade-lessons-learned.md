@@ -600,6 +600,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### An Accessible Sitemap Can Prove There Is No Hidden County-Office Contract
 *   **Lesson:** If the accessible official host stays open, filter its live sitemap once for `office`, `locator`, `county`, and program-specific terms before escalating a county-local family into open-ended discovery. Arizona AHCCCS exposed only the known ALTCS county map plus county-admin/support-letter PDFs and no overlooked county-office locator leaf, which made it safe to keep the family blocked instead of guessing hidden office routes.
 
+### Mine Local Artifacts Before Re-Browsing A Challenged Host
+*   **Lesson:** If a blocked family already shows `authoredExactLeafCount=0` and the live DB rows still all point at one statewide fallback, search the repo and DB for exact local domains before reopening browser work on the challenged state host. Arizona’s `AZED` and `DES` lanes still had zero district-owned or county-specific leaves anywhere on disk, so the truthful next step stayed author-first instead of another host-level probe loop.
+
 ### Exact Local Leaves Still Stay Blocked If The Public Directory Never Names Counties
 *   **Lesson:** When an official district or office directory exposes real local leaves, run one bounded text check for county labels and role-specific fields before reopening mapping work. Idaho’s SDE district directory exposed 116 district links and DHW exposed 27 office leaves, but the public pages still lacked county terms like `Canyon County` and lacked district special-education fields, so both families stayed blocked on missing county-keyed routing rather than on “no exact leaves.”
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T02:36:55.101Z",
+  "generatedAt": "2026-06-23T03:02:54.550Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 16,
@@ -847,11 +847,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_exact_office_leafs_exist_but_public_directory_lacks_county_terms"
+        "county_local_disability_resources": "blocked_exact_office_leafs_exist_but_nampa_is_treatment_center_and_county_mapping_partial"
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_directories_expose_exact_leaves_but_public_pages_still_lack_county_keyed_routing",
+      "packetPrimaryGapReason": "official_directories_now_expose_exact_targets_but_nampa_negative_proof_and_missing_county_mapping_keep_idaho_blocked",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -1140,7 +1140,7 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_147_kansas_ksde_leaf_rehydration_v1",
+      "packetBatch": "batch_4_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "kansas_dd_authority_still_access_blocked_and_no_county_or_district_education_contract_preserved",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
