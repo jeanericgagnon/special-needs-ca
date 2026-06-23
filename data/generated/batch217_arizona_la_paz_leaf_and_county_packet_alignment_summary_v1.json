@@ -1,0 +1,36 @@
+{
+  "batch": "batch_217_arizona_la_paz_leaf_and_county_packet_alignment_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "verified_district_leaf_count": 8,
+  "unresolved_district_leaf_count": 7,
+  "repaired_counties": [
+    "la-paz-az"
+  ],
+  "education_verified_counties": [
+    "apache-az",
+    "graham-az",
+    "greenlee-az",
+    "la-paz-az",
+    "maricopa-az",
+    "pinal-az",
+    "santa-cruz-az",
+    "yuma-az"
+  ],
+  "education_unresolved_counties": [
+    "cochise-az",
+    "coconino-az",
+    "gila-az",
+    "mohave-az",
+    "navajo-az",
+    "pima-az",
+    "yavapai-az"
+  ],
+  "county_packet_exact_leaf_count": 0,
+  "lesson_added": false,
+  "consistency_fixes": [
+    "county_local_packet_exists_but_zero_exact_leaves"
+  ]
+}

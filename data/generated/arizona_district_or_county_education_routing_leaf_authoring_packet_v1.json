@@ -7,7 +7,7 @@
   "current_problem_metrics": {
     "genericFallbackCountyRows": 15,
     "challengedOfficialRoots": 8,
-    "authoredExactLeafCount": 7,
+    "authoredExactLeafCount": 8,
     "statewideFallbackRows": 15,
     "azedHostExhaustedRoots": 8,
     "liveDistinctRootCount": 1,
@@ -17,7 +17,7 @@
     "reviewedOfficialDistrictInventoryRoots": 15,
     "countyKeyedDistrictRootCount": 15,
     "remainingUnmappedCounties": 0,
-    "unresolvedDistrictOwnedLeafCount": 8
+    "unresolvedDistrictOwnedLeafCount": 7
   },
   "exact_target_goals": [
     "official district detail root per county",

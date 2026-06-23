@@ -50,6 +50,6 @@
   ],
   "familyStatuses": {
     "developmental_disability_idd_authority": "verified_state_grade",
-    "district_or_county_education_routing": "blocked_live_ksde_directory_roots_without_local_contract"
+    "district_or_county_education_routing": "blocked_reviewed_district_owned_leaves_exist_but_not_statewide_county_grade"
   }
 }

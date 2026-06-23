@@ -107,3 +107,6 @@
 
 ### Export-Backed District Domains Still Need A Role-Exact Leaf
 *   **Lesson:** If a first-party district export yields a clean district domain and even a live sitemap, keep the county blocked unless a role-exact special-education or student-services leaf survives bounded fetches on that host. Kansas's Abilene USD 435 root and sitemap were real, but every obvious special-ed path returned `Page Not Found`, so the export-backed root stayed authoring evidence only.
+
+### Homepage Anchor Text Can Beat Slug-Only Leaf Discovery
+*   **Lesson:** If a district-owned homepage exposes a role-exact anchor like `Exceptional Students Services (ESS)`, verify that direct href even when sitemap scans and slug-only homepage filters return nothing. Arizona only recovered La Paz once Parker USD's homepage anchor surfaced `/page/ess-department` as the real local leaf.
