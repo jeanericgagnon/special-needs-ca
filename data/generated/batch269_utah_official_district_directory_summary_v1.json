@@ -1,0 +1,15 @@
+{
+  "batch": "batch269_utah_official_district_directory_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "utah",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_family_status": "verified_current_official_district_lea_directory",
+  "remaining_blocker_family": "county_local_disability_resources",
+  "district_directory_page": "https://schools.utah.gov/schoolsdirectory",
+  "blocked_local_routes": [
+    "https://jobs.utah.gov/customereducation/serviceslocations.html",
+    "https://dhhs.utah.gov/locations",
+    "https://dhhs.utah.gov"
+  ]
+}

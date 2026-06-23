@@ -252,3 +252,6 @@
 
 ### A Live Official State School Directory Page With District Download Links Can Clear County-Grade Education Routing
 *   **Lesson:** If a live official education page explicitly says district contact information can be downloaded or browsed and exposes current district-directory download links, that can clear county-grade education routing even when older special-education leaf guesses collapse to a generic page. Oklahoma’s live `state-school-directory.html` page preserved the contract and fields directly on the current OSDE host.
+
+### A Live Official District-LEA Directory With CSV Export Can Clear District-Grade Education Routing
+*   **Lesson:** A live official school directory can clear the education blocker when it is explicitly district- or LEA-sourced and exposes a real district filter plus export path on the current public host. Utah's `schoolsdirectory` page was not just a generic state root: it declared District/LEA ownership in the page metadata and exposed district filtering plus CSV export on the live USBE host.

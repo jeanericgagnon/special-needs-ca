@@ -32,7 +32,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - South Carolina: `official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
-- Utah: `generic_or_statewide_evidence_used_where_local_required`
+- Utah: `official_usbe_district_lea_directory_clears_education_but_dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
@@ -40,41 +40,40 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oklahoma
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the top Oklahoma blocker in the state queue. The official OSDE State School and District Directory page clears education because it explicitly exposes district contact fields and live directory downloads, but the former statewide DHHS locator host is dead and the remaining county-office rows still depend on dead-locator or DOI planning evidence.
+`county_local_disability_resources` is now the top Utah blocker in the state queue. The live Utah Schools Directory clears education because it is explicitly district- and LEA-sourced and exposes a district filter plus CSV export on the official USBE host, but the older DWS services locations page returns HTTP 500, the older DHHS locations route returns HTTP 404, and the live DHHS home still lacks a county-grade office directory contract.
 
 ### Exact Evidence Needed
 
-- Any official Oklahoma county-to-office directory, county list, or county-owned human-services office leaves on a live state or county host.
-- The OSDE education directory no longer needs repair, but county-local still needs a live county-grade office contract.
+- Any live Utah county office directory, county list, or county-owned human-services office leaves on a live state or county host.
+- The Utah Schools Directory no longer needs repair, but county-local still needs a live county-grade office contract.
 
 ### Useful Official URLs Already Tried
 
-- [OSDE home](https://oklahoma.gov/education.html)
-- [OSDE State School Directory page](https://oklahoma.gov/education/resources/state-school-directory.html)
-- [OSDE live school directory download link](https://oklahoma.gov/content/dam/ok/en/osde/documents/resources/state-directory/FY26MidyearOnlineDirectorySiteList.xlsx)
-- [OSDE live district directory download link](https://oklahoma.gov/content/dam/ok/en/osde/documents/resources/state-directory/FY26OnlineDirectoryDistrictList.xlsx)
-- [Oklahoma Human Services home](https://oklahoma.gov/okdhs.html)
-- [Former dead locator host](https://dhhs.oklahoma.gov/locations)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
+- [Utah DHHS home](https://dhhs.utah.gov)
+- [Older DHHS locations route](https://dhhs.utah.gov/locations)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live Oklahoma county office directory or county-owned human-services office leaves.
-- Any official Oklahoma successor artifact to the dead `dhhs.oklahoma.gov/locations` host.
-- Any county-grade office extract that can replace the DOI-backed planning rows.
+- Any live Utah county office directory or county-owned human-services office leaves.
+- Any official Utah successor artifact to the broken `serviceslocations.html` and dead `dhhs.utah.gov/locations` routes.
+- Any county-grade office extract that can replace statewide-only or inventory-only local-office rows.
 
-## Next State Order After Oklahoma
+## Next State Order After Utah
 
-1. Utah
-2. New Hampshire
-3. New Mexico
-4. New York
-5. North Carolina
-6. North Dakota
-7. Rhode Island
-8. South Carolina
-9. South Dakota
-10. Tennessee
+1. New Hampshire
+2. New Mexico
+3. New York
+4. North Carolina
+5. North Dakota
+6. Rhode Island
+7. South Carolina
+8. South Dakota
+9. Tennessee
+10. Vermont

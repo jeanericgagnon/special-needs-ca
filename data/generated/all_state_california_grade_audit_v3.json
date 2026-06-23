@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:47:50.558Z",
+  "generatedAt": "2026-06-23T18:54:31.466Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -3087,11 +3087,11 @@
       "legacyManualReviewRate": 57.24,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 29,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "utah",
         "state_code": "UT",
@@ -3130,7 +3130,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "verified_current_official_district_lea_directory",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -3141,7 +3141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetPrimaryGapReason": "official_usbe_district_lea_directory_clears_education_but_dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

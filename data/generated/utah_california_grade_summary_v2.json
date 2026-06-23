@@ -7,15 +7,14 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 29,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 91,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_but_dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [],
@@ -41,18 +40,15 @@
   ],
   "final_blockers": [
     {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Utah still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Utah county/local disability resources still depend on DOI mirror-backed or statewide office evidence instead of reviewed county-grade official local-office proof.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract",
+      "evidence": "Reviewed 2026-06-23 bounded live Utah county-local checks. The older DWS services locations page returned HTTP 500, the older DHHS locations route returned HTTP 404, and the live DHHS home only exposed one statewide office address instead of a county-grade directory contract. No live county-owned or state-maintained Utah county office directory was verified in this bounded pass.",
+      "next_action": "hold_blocked_until_live_county_grade_utah_office_directory_or_county_owned_leaves_are_verified"
     }
-  ]
+  ],
+  "familyStatuses": {
+    "district_or_county_education_routing": "verified_current_official_district_lea_directory",
+    "county_local_disability_resources": "blocked_broken_legacy_location_routes_and_no_live_county_directory_contract"
+  }
 }
