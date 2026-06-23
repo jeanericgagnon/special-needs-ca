@@ -1,0 +1,11 @@
+{
+  "batch": "batch221_michigan_app_query_contract_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "michigan",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "search_sources_public": true,
+  "school_layer_has_campus_addresses": true,
+  "district_routing_contract_present": false,
+  "lessons_updated": false
+}

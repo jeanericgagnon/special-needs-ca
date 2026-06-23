@@ -116,3 +116,12 @@
 
 ### Retire Stale Blocker Labels Inside The Packet Once The Live Surface Recovers
 *   **Lesson:** When a state packet's metrics already prove the live surface recovered, remove old blocker labels from the packet purpose and review rules too. Massachusetts DDS had `hostWide403Surfaces: 0` and live org/locations/map access, so leaving `host-wide 403` in the packet text would have kept steering later repairs at the wrong failure mode.
+
+### School-Campus Address Layers Still Do Not Satisfy District Routing
+*   **Lesson:** If an official education map app mixes district boundaries with school-campus address layers, do not let the campus addresses count as district routing proof. Michigan’s public school layer added STREET, CITY, ZIP, and COUNTY, but still no district website, special-education contact, or ISD routing contract.
+
+### A Live Glossary Root Does Not Mean The Directory Routes Are Reachable
+*   **Lesson:** If an official directory root loads publicly and lists rich child routes in static HTML, probe the child routes directly before upgrading the family. Minnesota `MdeOrgView` exposed district, county, contact, and search links on the root page, but every actionable child route still landed on the same Radware captcha shell.
+
+### No Relationships Means No Hidden Service-Area Bridge
+*   **Lesson:** If an official ArcGIS office app looks promising, inspect the public layer `relationships` before assuming a hidden county-assignment table exists. Nebraska’s office layer and county layer were both public, but both had empty relationship arrays, so there was no latent service-area bridge to recover in low-token mode.

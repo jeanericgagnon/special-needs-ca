@@ -1,0 +1,10 @@
+{
+  "batch": "batch222_minnesota_mdeorg_route_challenge_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "live_glossary_root_accessible": true,
+  "direct_child_routes_radware_protected": true,
+  "lessons_updated": false
+}

@@ -9,7 +9,10 @@
     "statewideFallbackRows": 83,
     "isdLayerHasContacts": false,
     "districtLayersHaveContacts": false,
-    "officialArcgisServicePublic": true
+    "officialArcgisServicePublic": true,
+    "searchSourcesPublic": true,
+    "schoolLayerHasCampusAddresses": true,
+    "districtBoundaryLayerHasContacts": false
   },
   "representative_sources": [
     "https://www.michigan.gov/mde/services/special-education/program-planning/isd-plans",
@@ -20,12 +23,14 @@
     "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/2?f=json",
     "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/3?f=json",
     "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/4?f=json",
-    "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/5?f=json"
+    "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/5?f=json",
+    "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/0?f=pjson",
+    "https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/10?f=pjson"
   ],
   "layer_contracts": [
     {
       "layer": "ISD",
-      "url": "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/1?f=json",
+      "url": "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/1?f=pjson",
       "fields": [
         "NAME",
         "LABEL",
@@ -42,23 +47,14 @@
       ]
     },
     {
-      "layer": "School_District_*",
-      "urls": [
-        "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/2?f=json",
-        "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/3?f=json",
-        "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/4?f=json",
-        "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/5?f=json"
-      ],
+      "layer": "School_District",
+      "url": "https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/10?f=pjson",
       "fields": [
+        "FIPSCODE",
         "NAME",
         "LABEL",
         "DCODE",
-        "ISD",
-        "FIPSCODE",
-        "FIPSNUM",
-        "VER",
-        "LAYOUT",
-        "PENINSULA"
+        "ISD"
       ],
       "missing_required_fields": [
         "district_website",
@@ -66,8 +62,27 @@
         "phone",
         "routing_url"
       ]
+    },
+    {
+      "layer": "School_Campus",
+      "url": "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/0?f=pjson",
+      "fields": [
+        "COMMONNM",
+        "OFFICIALNM",
+        "STREET",
+        "CITY",
+        "STATE",
+        "ZIP",
+        "COUNTY"
+      ],
+      "missing_required_fields": [
+        "district_website",
+        "district_special_education_contact",
+        "isd_routing_contact",
+        "routing_url"
+      ]
     }
   ],
   "affected_counties": "all_83_counties",
-  "packet_complete_when": "Michigan can reopen education only when an official MDE or district/ISD-owned surface preserves local routing contacts or a county-to-ISD/district export contract instead of boundary and code fields alone."
+  "packet_complete_when": "Michigan can reopen education only when an official MDE or district/ISD-owned surface preserves district or ISD routing contacts, special-education contacts, or a county-to-ISD/district export contract instead of boundary metadata or school-campus addresses alone."
 }

@@ -20,12 +20,12 @@
 - legal_aid: verified_state_grade (Reviewed first-party Legal Aid of Nebraska evidence now provides a real statewide civil legal-aid route.)
 - able_program: verified_state_grade (Statewide evidence is present at the required authority level.)
 - ssi_ssa_federal_reference: verified_state_grade (Statewide evidence is present at the required authority level.)
-- county_local_disability_resources: blocked_public_office_layer_only_37_counties (Reviewed 2026-06-23 the official Nebraska Public Office Location ExperienceBuilder config and backing web map directly. The public app data is open and points to the official web map plus a public office feature layer, but that layer contains only 42 office rows and 37 distinct USER_County values while Nebraska has 93 counties. The county-boundary layer carries only county geometry fields and no county-to-office assignment. Nebraska therefore still lacks a reviewed official service-area contract for the remaining counties.)
+- county_local_disability_resources: blocked_public_office_layers_without_service_area_relationships (Reviewed 2026-06-23 the live official Nebraska office ExperienceBuilder stack more tightly. The public app config is open, but it still resolves only to two public layers: the office feature layer and the county-boundary layer. The office layer exposes office contact fields such as address, phone, hours, and USER_County, but it has no relationships or related tables. The county layer exposes only county geometry and identifiers and also has no relationships. The public counts remain 42 office rows and 93 county rows, so Nebraska still lacks a service-area or county-to-office contract for the missing counties.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: live_nde_host_accessible_but_no_county_or_esu_routing_contract_reviewed :: Reviewed 2026-06-23 bounded browser-style probes on the live official NDE Special Education and SPED staff-directory pages. The host is publicly reachable and now exposes one more exact official leaf at https://www.education.ne.gov/wp-content/uploads/2025/11/SPED-Calling-Tree-January-2026.pdf titled `SPED Contact List-Directory by Topic`, plus the previously reviewed ESU 9 Deaf or Hard of Hearing program page. However, the topic directory is statewide by staff function and does not publish county-to-ESU assignments, district-owned special-education routing, or an ESU service-area contract. The ESU 9 page is still only one regional program page, not a statewide local-routing contract. Nebraska therefore remains blocked because the live NDE SPED lane still lacks reviewed county-mapped education routing despite the now-live official leaves.
-- county_local_disability_resources: official_public_office_experiencebuilder_config_opens_but_public_layer_only_covers_37_counties :: Reviewed 2026-06-23 the official Nebraska Public Office Location ExperienceBuilder config and backing web map directly. The public app data is open and points to the official web map plus a public office feature layer, but that layer contains only 42 office rows and 37 distinct USER_County values while Nebraska has 93 counties. The county-boundary layer carries only county geometry fields and no county-to-office assignment. Nebraska therefore still lacks a reviewed official service-area contract for the remaining counties.
+- county_local_disability_resources: official_public_office_app_has_only_two_public_layers_and_no_service_area_relationships :: Reviewed 2026-06-23 the official Nebraska Public Office Location ExperienceBuilder config and backing feature service directly. The public app data at https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json is open, but the backing service still exposes only two public layers: https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0 for offices and /1 for counties. Layer 0 exposes office fields like USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, and USER_Scanning, but `relationships` is an empty array. Layer 1 exposes only county boundary identifiers like NAME, COUNTYFP, GEOID, and NAMELSAD, and its `relationships` array is also empty. A bounded count check still returns 42 office rows and 93 county rows. So the public Nebraska office stack has no hidden service-area relationship table to bridge all counties back to offices.
 
 ## Verified source samples
 
@@ -41,15 +41,15 @@
 - legal_aid: verified_state_grade; samples=1; first=https://legalaidofnebraska.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_public_office_layer_only_37_counties; samples=4; first=https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx
+- county_local_disability_resources: blocked_public_office_layers_without_service_area_relationships; samples=3; first=https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: hold_blocked_until_live_official_county_to_esu_or_district_contract_is_reviewed
-- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_or_full_county_office_contract_is_reviewed
+- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_or_county_assignment_contract_exists
 
 ## Completion decision
 
-- Nebraska remains `BLOCKED` and `index_safe=false`.
-- Education remains blocked because the live NDE SPED host now preserves deeper official leaves, including a topic directory PDF, but still no reviewed county-to-ESU or district-owned routing contract.
-- County/local disability resources remain blocked because the open official DHHS office app config still proves the public office layer only names 37 counties and the county boundary layer has no office-assignment fields for the remaining counties.
+- Nebraska remains BLOCKED and index_safe=false.
+- district_or_county_education_routing still lacks a county-to-ESU or county-to-district contract on the live NDE host.
+- county_local_disability_resources is now sharper: the public office app exposes only the office layer and county boundary layer, and neither layer has relationships or related tables that could supply a hidden service-area contract.

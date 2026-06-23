@@ -1,0 +1,10 @@
+{
+  "batch": "batch223_nebraska_office_relationship_audit_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "office_layer_relationships_present": false,
+  "county_layer_relationships_present": false,
+  "lessons_updated": false
+}

@@ -8,7 +8,10 @@
     "countyRowCount": 87,
     "liveDirectoryRootAccessible": true,
     "embeddedBundleMiswired": true,
-    "publicSearchChallengeProtected": true
+    "publicSearchChallengeProtected": true,
+    "liveGlossaryRootAccessible": true,
+    "directChildRoutesRadwareProtected": true,
+    "staticChildRouteLinksVisible": true
   },
   "representative_sources": [
     "https://education.mn.gov/MDE/about/SchOrg/",
@@ -16,12 +19,19 @@
     "https://pub.education.mn.gov/findsch/",
     "https://pub.education.mn.gov/MDEAnalytics/Summary.jsp",
     "https://pub.education.mn.gov/MDEAnalytics/Data.jsp",
-    "https://pub.education.mn.gov/MdeOrgView/"
+    "https://pub.education.mn.gov/MdeOrgView/",
+    "https://pub.education.mn.gov/MdeOrgView/search/index",
+    "https://pub.education.mn.gov/MdeOrgView/search/searchContacts",
+    "https://pub.education.mn.gov/MdeOrgView/districts/index",
+    "https://pub.education.mn.gov/MdeOrgView/districts/cities",
+    "https://pub.education.mn.gov/MdeOrgView/reference/county",
+    "https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList",
+    "https://pub.education.mn.gov/MdeOrgView/home/howToUse"
   ],
   "exact_target_goals": [
     "reviewed first-party county-or-district export contract",
     "browser-readable MDE-ORG query results",
     "cached public search capture only if the first-party directory contract is preserved"
   ],
-  "packet_complete_when": "Minnesota can reopen education only when the live MDE-ORG family yields a reviewed county-mapped district routing contract instead of an embedded shell or challenge page."
+  "packet_complete_when": "Minnesota can reopen education only when the live MDE-ORG glossary family yields a reviewed first-party district/county/contact contract instead of a public root page whose actionable child routes are still Radware-protected."
 }

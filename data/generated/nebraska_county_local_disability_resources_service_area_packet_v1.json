@@ -9,7 +9,11 @@
     "officeLayerRows": 42,
     "officeLayerDistinctCounties": 37,
     "countyBoundaryLayerHasAssignmentFields": false,
-    "officialConfigOpen": true
+    "officialConfigOpen": true,
+    "officeLayerRelationshipsPresent": false,
+    "countyLayerRelationshipsPresent": false,
+    "publicOfficeCount": 42,
+    "publicCountyCount": 93
   },
   "representative_sources": [
     "https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx",
@@ -23,5 +27,5 @@
     "full county office contract",
     "county-to-office join fields on a reviewed official layer"
   ],
-  "packet_complete_when": "Nebraska can reopen county-local only when an official full-county office contract or service-area assignment layer is preserved on disk."
+  "packet_complete_when": "Nebraska can reopen county-local only when an official service-area or county-to-office assignment contract exists, not just a public office layer and county boundary layer with empty relationship arrays."
 }

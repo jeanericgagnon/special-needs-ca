@@ -1,0 +1,17 @@
+# Batch 221 Michigan App Query Contract Refresh Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- refined_family: district_or_county_education_routing
+- failure_code: official_mde_app_queries_public_school_and_boundary_layers_but_still_no_district_routing_contract
+
+## Evidence
+
+- Reviewed 2026-06-23 the official Michigan MDE Special Education page, ISD Plans leaf, the linked ArcGIS app config at https://michigan.maps.arcgis.com/sharing/rest/content/items/438dc453faf749d786e0c6e8be731cfd/data?f=json, and the exact public layers referenced by that app. The app queries https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/1 for ISDs, https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/10 for school-district boundaries, and https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/0 for school campuses. Layer 1 still exposes only boundary/identifier fields like NAME, LABEL, TYPE, ISD, and ISDCode. Layer 10 still exposes only boundary/identifier fields like FIPSCODE, NAME, LABEL, DCODE, and ISD. Layer 0 adds school-campus address fields such as STREET, CITY, STATE, ZIP, LATITUDE, LONGITUDE, and COUNTY, but no district website, district special-education contact, ISD routing contact, or local education-routing URL. So even the exact public layers the official app queries still do not provide the district-or-county routing contract Michigan needs.
+
+## Repair decision
+
+- Kept Michigan BLOCKED.
+- Confirmed the exact public layers queried by the official MDE-linked app.
+- Added the school-campus layer to the blocker packet so later passes do not mistake campus addresses for district routing evidence.
+- Reconfirmed that no public district or ISD routing contract exists in the exact official app stack.
