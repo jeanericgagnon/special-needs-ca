@@ -32,7 +32,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - South Carolina: `official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
-- Utah: `official_usbe_district_lea_directory_clears_education_but_dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract`
+- Utah: `official_usbe_district_lea_directory_clears_education_and_live_dws_office_search_shell_still_lacks_public_county_office_contract`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
@@ -44,26 +44,30 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the top Utah blocker in the state queue. The live Utah Schools Directory clears education because it is explicitly district- and LEA-sourced and exposes a district filter plus CSV export on the official USBE host, but the older DWS services locations page returns HTTP 500, the older DHHS locations route returns HTTP 404, and the live DHHS home still lacks a county-grade office directory contract.
+`county_local_disability_resources` is now the top Utah blocker in the state queue. The live Utah Schools Directory still clears education, and the older public DWS contact page now leads to a live official `jobs.utah.gov/office-search/` app, but the public office-search shell still exposes only map/search controls and no county list, office rows, addresses, or county-to-office contract. The older DWS services locations page still returns HTTP 500, the older DHHS locations route still returns HTTP 404, and current DHHS contact pages still do not publish a county-grade office directory.
 
 ### Exact Evidence Needed
 
-- Any live Utah county office directory, county list, or county-owned human-services office leaves on a live state or county host.
-- The Utah Schools Directory no longer needs repair, but county-local still needs a live county-grade office contract.
+- Any live Utah public office-search result page, office-row API, county list, or county-owned human-services office leaves on a live state or county host.
+- The Utah Schools Directory no longer needs repair, but county-local still needs a public county-grade office contract.
 
 ### Useful Official URLs Already Tried
 
 - [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
 - [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Live DWS Office Search map route](https://jobs.utah.gov/office-search/map)
 - [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
-- [Utah DHHS home](https://dhhs.utah.gov)
+- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
 - [Older DHHS locations route](https://dhhs.utah.gov/locations)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live Utah county office directory or county-owned human-services office leaves.
+- Any public office rows, addresses, or county filter contract behind `jobs.utah.gov/office-search/`.
 - Any official Utah successor artifact to the broken `serviceslocations.html` and dead `dhhs.utah.gov/locations` routes.
-- Any county-grade office extract that can replace statewide-only or inventory-only local-office rows.
+- Any county-grade office extract or county-owned office leaves that can replace statewide-only or inventory-only local-office rows.
 
 ## Next State Order After Utah
 

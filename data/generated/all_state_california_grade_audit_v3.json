@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:54:31.466Z",
+  "generatedAt": "2026-06-23T19:29:43.189Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -3141,7 +3141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_usbe_district_lea_directory_clears_education_but_dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract",
+      "packetPrimaryGapReason": "official_usbe_district_lea_directory_clears_education_and_live_dws_office_search_shell_still_lacks_public_county_office_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

@@ -255,3 +255,6 @@
 
 ### A Live Official District-LEA Directory With CSV Export Can Clear District-Grade Education Routing
 *   **Lesson:** A live official school directory can clear the education blocker when it is explicitly district- or LEA-sourced and exposes a real district filter plus export path on the current public host. Utah's `schoolsdirectory` page was not just a generic state root: it declared District/LEA ownership in the page metadata and exposed district filtering plus CSV export on the live USBE host.
+
+### A Live Official Office-Search App Shell Still Does Not Clear County-Grade Routing Without Public Office Rows
+*   **Lesson:** A live official office-search app is only enough when the public surface itself exposes office rows, addresses, county filters, or another reusable county-to-office contract. Utah's DWS contact page now points to a real `office-search` app, but the raw public shell only exposes map/search controls; without a county list or public office extract, the county-local blocker remains.

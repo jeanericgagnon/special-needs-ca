@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_but_dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract",
+  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_and_live_dws_office_search_shell_still_lacks_public_county_office_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,13 +42,13 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "dws_locations_500_and_dhhs_locations_404_leave_no_live_county_local_contract",
-      "evidence": "Reviewed 2026-06-23 bounded live Utah county-local checks. The older DWS services locations page returned HTTP 500, the older DHHS locations route returned HTTP 404, and the live DHHS home only exposed one statewide office address instead of a county-grade directory contract. No live county-owned or state-maintained Utah county office directory was verified in this bounded pass.",
-      "next_action": "hold_blocked_until_live_county_grade_utah_office_directory_or_county_owned_leaves_are_verified"
+      "failure_code": "live_dws_office_search_shell_and_dhhs_contacts_still_lack_public_county_office_contract",
+      "evidence": "Reviewed 2026-06-23 one more bounded official Utah county-local pass. The older public DWS contact page links an `Office Map` at `/jsp/officesearch/`, and that route now redirects to a live official `https://jobs.utah.gov/office-search/` app titled `Office Search - DWS`. The live shell exposes map/search controls, including `search/<zip-or-city>` and `map` routes, but the raw public HTML still contains no county list, office rows, office addresses, or county-to-office contract. The older DWS services locations page still returns HTTP 500, the older DHHS locations route still returns HTTP 404, and current DHHS contacts/customer-service pages still do not publish a county-grade office directory.",
+      "next_action": "hold_blocked_until_office_search_materializes_public_office_rows_or_a_county_grade_utah_directory_is_verified"
     }
   ],
   "familyStatuses": {
     "district_or_county_education_routing": "verified_current_official_district_lea_directory",
-    "county_local_disability_resources": "blocked_broken_legacy_location_routes_and_no_live_county_directory_contract"
+    "county_local_disability_resources": "blocked_live_office_search_shell_without_public_county_contract"
   }
 }

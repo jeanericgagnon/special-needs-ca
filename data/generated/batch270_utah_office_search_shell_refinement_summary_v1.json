@@ -1,0 +1,10 @@
+{
+  "batch": "batch270_utah_office_search_shell_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "utah",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "office_search_root": "https://jobs.utah.gov/office-search/",
+  "blocker_code": "live_dws_office_search_shell_and_dhhs_contacts_still_lack_public_county_office_contract"
+}
