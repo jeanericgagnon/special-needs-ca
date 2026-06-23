@@ -288,3 +288,6 @@
 
 ### When Public App Config Rewires To A Shell Endpoint, Treat The Shell As The Real Contract
 *   **Lesson:** If a public app config rewires a workflow from named endpoints to a generic shell endpoint, verify the new endpoint directly before carrying older endpoint names forward. Florida’s MyACCESS config now points `officeMapping` at `/dataexchangeproxy`, but that route replays the same shell as the public pages, so the blocker is the shell contract itself, not the older `getZipCountyDetails` naming.
+
+### A Partially Live Legacy Root Does Not Reopen A Gated Subtree
+*   **Lesson:** If an old official root and `robots.txt` still return 200, verify the exact program subtree before treating the host as a real successor. Alaska's legacy `dhss.alaska.gov` root was live, but its DPA and DSDS page paths still returned 403 while sitemap and search failed 404, so the legacy host did not reopen county-local routing.

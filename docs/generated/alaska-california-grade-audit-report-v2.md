@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: live_dfcs_services_page_only_provides_statewide_phone_relay_while_health_host_county_equivalent_directory_stays_challenged
+- primary_gap_reason: live_dfcs_services_page_only_provides_statewide_phone_relay_while_current_health_and_legacy_dhss_dpa_hosts_stay_gate_blocked
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_live_dfcs_phone_relay_plus_exhausted_dfcs_host_and_challenged_health_directory (The live Alaska DFCS Services page is still only a statewide phone relay, and one more bounded health-host family pass shows the office-routing lane remains completely challenge-blocked on the current official health host. Not just the exact office and service leaves, but also `robots.txt`, `sitemap.xml`, `wp-json`, `wp-sitemap.xml`, and the parent `en/resources` and `en/services` roots all return the same HTTP 403 Cloudflare `Just a moment...` shell. That means the county-equivalent office directory family is not merely blocked on one leaf; the entire current health-host discovery surface is unavailable in the low-token lane.)
+- county_local_disability_resources: blocked_phone_only_dfcs_relay_plus_current_health_host_403_and_legacy_dhss_dpa_subtree_403 (The live Alaska DFCS Services page is still only a statewide phone relay, and one more bounded pass now proves both official DPA directory host families fail closed in low-token mode. The current `health.alaska.gov` family still returns the same Cloudflare 403 shell on exact office leaves, service/resource roots, `robots.txt`, `sitemap.xml`, `wp-json`, and `wp-sitemap.xml`. The legacy `dhss.alaska.gov` root and `robots.txt` remain publicly readable, but the exact DPA subtree is also not reviewable: `/dpa/Pages/default.aspx`, `/dpa/Pages/office-locations.aspx`, `/dpa/Pages/contacts.aspx`, and `/dpa/Pages/Publications.aspx` all return HTTP 403, while `sitemap.xml` and SharePoint search routes return 404. That means Alaska still lacks any public borough- or census-area office-routing contract on either the current or legacy official DPA hosts.)
 
 ## Failure ledger
 
-- county_local_disability_resources: live_dfcs_services_page_is_phone_only_and_entire_health_host_family_stays_403_challenged :: Reviewed 2026-06-23 one more bounded official Alaska county-local pass on the current health host family. The exact office and service leaves still return HTTP 403 with the Cloudflare `Just a moment...` shell, but now the surrounding discovery surfaces prove the same thing: https://health.alaska.gov/robots.txt, https://health.alaska.gov/sitemap.xml, https://health.alaska.gov/wp-json/, https://health.alaska.gov/wp-sitemap.xml, https://health.alaska.gov/en/resources/, and https://health.alaska.gov/en/services/ all return that same 403 shell. Together with the already-exhausted `dfcs.alaska.gov` successor host, that means the current official office-routing lane is blocked across the entire health-host family, not just on one directory leaf. Alaska therefore still lacks any reviewable borough- or census-area-to-office contract on a public official surface.
+- county_local_disability_resources: live_dfcs_services_page_is_phone_only_while_current_health_host_and_legacy_dhss_dpa_subtree_both_fail_closed :: Reviewed 2026-06-23 bounded official Alaska rechecks across the live DFCS successor host, the current `health.alaska.gov` family, and the legacy `dhss.alaska.gov` DPA subtree. `https://dfcs.alaska.gov/Pages/Services.aspx` remains live and publicly reviewable, but still provides only statewide phone routing for `Adult Public Assistance` and `Apply for Medicaid` through `888-804-6330` with no borough or census-area mapping. The current `health.alaska.gov` family still fails closed end to end: exact office and service leaves such as `/en/resources/division-of-public-assistance-dpa-offices/`, `/en/services/adult-public-assistance-apa/`, and `/en/services/division-of-public-assistance-services/apply-for-medicaid/` return HTTP 403, and the same 403 applies to `robots.txt`, `sitemap.xml`, `wp-json`, `wp-sitemap.xml`, and the parent `/en/resources/` and `/en/services/` roots. The legacy `dhss.alaska.gov` host is only partially public: the root and `robots.txt` return 200, but `sitemap.xml` and SharePoint search routes return 404, and the exact DPA subtree is still not reviewable because `/dpa/Pages/default.aspx`, `/dpa/Pages/office-locations.aspx`, `/dpa/Pages/contacts.aspx`, `/dpa/Pages/Publications.aspx`, and `/dsds/Pages/default.aspx` all return HTTP 403. Alaska therefore still lacks any reviewable borough- or census-area-to-office contract on a public official surface, and the blocker is now sharper because both the current and legacy DPA directory host families fail closed in different ways.
 
 ## Verified source samples
 
@@ -40,15 +40,16 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_live_dfcs_phone_relay_plus_exhausted_dfcs_host_and_challenged_health_directory; samples=14; first=https://dfcs.alaska.gov/Pages/Services.aspx
+- county_local_disability_resources: blocked_phone_only_dfcs_relay_plus_current_health_host_403_and_legacy_dhss_dpa_subtree_403; samples=18; first=https://dfcs.alaska.gov/Pages/Services.aspx
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_on_a_reviewable_official_surface_or_replaces_the_phone_only_dfcs_relay_with_a_reviewable_office_locator
+- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_on_a_reviewable_official_surface_or_reopens_a_reviewable_dpa_directory_host
 
 ## Repair decision
 
 - Alaska remains BLOCKED and not index-safe.
 - The live DFCS Services page still provides only statewide phone routing for Adult Public Assistance and Apply for Medicaid.
-- The health host is now source-final more tightly: not only the office leaves, but also robots, sitemap, wp-json, wp-sitemap, and parent resources/services roots all return the same 403 Cloudflare shell.
-- Alaska therefore still lacks any reviewable borough- or census-area-to-office contract on a public official surface.
+- The current health host remains fully challenge-blocked for the DPA office-routing family.
+- The legacy DHSS root is only partially live: root and robots are public, but the exact DPA subtree is still 403-blocked and sitemap/search still fail closed.
+- Alaska therefore still lacks any reviewable borough- or census-area office-routing contract on a public official surface.
