@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "kansas_dd_stack_is_uniformly_403_blocked_and_live_ksde_directory_roots_still_lack_local_contract",
+  "primary_gap_reason": "kansas_dd_stack_is_uniformly_transport_blocked_and_live_ksde_directory_roots_still_lack_local_contract",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "developmental_disability_idd_authority",
@@ -43,9 +43,9 @@
     {
       "family": "developmental_disability_idd_authority",
       "severity": "critical",
-      "failure_code": "kdads_and_kancare_roots_and_dd_surfaces_now_return_uniform_http_403",
-      "evidence": "Reviewed 2026-06-23 bounded live official Kansas DD probes on https://www.kdads.ks.gov/, https://www.kdads.ks.gov/services/developmental-disabilities, https://www.kdads.ks.gov/robots.txt, https://www.kancare.ks.gov/, and https://www.kancare.ks.gov/home/showpublisheddocument/6224/639013892674730000. Every one of those exact official roots and leaves now returns HTTP 403 Forbidden / access denied under the same low-token fetch contract. Kansas therefore still lacks any raw-fetch-reviewable official DD authority leaf, and the blocker is now a uniform 403 host-stack pattern rather than a content-discovery problem.",
-      "next_action": "browser_assisted_or_alternate_official_dd_leaf_after_uniform_403_confirmation"
+      "failure_code": "uniform_tiny_serve_403_shell_on_kdads_and_kancare_dd_stack",
+      "evidence": "Reviewed 2026-06-23 bounded live official Kansas DD probes with a browser-style client on https://www.kdads.ks.gov/, https://www.kdads.ks.gov/services/developmental-disabilities, https://www.kdads.ks.gov/robots.txt, https://www.kancare.ks.gov/, and https://www.kancare.ks.gov/home/showpublisheddocument/6224/639013892674730000. Every exact official root and leaf still returned HTTP 403 with the same tiny `Access Denied` HTML shell (roughly 412-476 bytes) and a pseudo-path containing `$(SERVE_403)` rather than role-bearing content. That same denial pattern now holds on the site root, the exact DD leaf, robots.txt, the KanCare root, and the HCBS fact-sheet leaf even under a browser-style fetch contract. Kansas therefore still lacks any publicly raw-fetch-reviewable official DD authority surface, and the blocker should stay classified as a uniform transport denial rather than a content-discovery gap.",
+      "next_action": "keep_kansas_dd_blocked_until_browser_review_or_alternate_official_dd_leaf_exists_outside_uniform_serve_403_hosts"
     },
     {
       "family": "district_or_county_education_routing",

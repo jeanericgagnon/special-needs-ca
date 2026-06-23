@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T06:32:12.148Z",
+  "generatedAt": "2026-06-23T06:49:16.606Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 19,
@@ -641,7 +641,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "public_dcf_contacts_csv_is_county_complete_but_wrong_service_role_and_myaccess_results_remain_authenticated",
+      "packetPrimaryGapReason": "public_dcf_contacts_csv_is_county_complete_but_wrong_role_help_lane_is_js_shell_and_myaccess_results_remain_authenticated",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -851,7 +851,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_district_root_packet_and_office_leaf_packet_exist_but_county_grade_mapping_and_role_fields_still_missing",
+      "packetPrimaryGapReason": "official_district_root_packet_and_materialized_exact_office_leaf_packet_exist_but_county_grade_mapping_and_role_fields_still_missing",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -1141,7 +1141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "kansas_dd_stack_is_uniformly_403_blocked_and_live_ksde_directory_roots_still_lack_local_contract",
+      "packetPrimaryGapReason": "kansas_dd_stack_is_uniformly_transport_blocked_and_live_ksde_directory_roots_still_lack_local_contract",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

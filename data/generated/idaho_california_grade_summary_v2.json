@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_district_root_packet_and_office_leaf_packet_exist_but_county_grade_mapping_and_role_fields_still_missing",
+  "primary_gap_reason": "official_district_root_packet_and_materialized_exact_office_leaf_packet_exist_but_county_grade_mapping_and_role_fields_still_missing",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -51,9 +51,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_dhw_office_directory_exposes_exact_office_leaves_but_nampa_resolves_only_to_switc_and_county_mapping_stays_publicly_missing",
-      "evidence": "Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us, https://healthandwelfare.idaho.gov/offices?page=0, https://healthandwelfare.idaho.gov/offices?page=1, https://healthandwelfare.idaho.gov/offices?page=2, and the DHW sitemap https://healthandwelfare.idaho.gov/sitemap.xml, plus one bounded follow-up on Nampa mentions inside the public office directory HTML. The paginated official directory preserves 27 exact office entries and the sitemap preserves exact office leaves such as /dhw/boise-office-westgate-building, /dhw/pocatello-office-horizon-building, /dhw/blackfoot-office-blackfoot-services-complex, /dhw/caldwell-office, /dhw/idaho-falls-office, /dhw/payette-office, /dhw/rexburg-office, /dhw/sandpoint-ponderay-office, and /dhw/twin-falls-office-pole-line-building. Eighteen DOI-backed county rows already name-match official office leaves, but 27 county rows still use the dead legacy locator https://dhhs.idaho.gov/locations. The bounded Nampa follow-up showed that the current public directory mentions Nampa only for Southwest Idaho Treatment Center (SWITC) at 1660 11th Ave N, Nampa, ID 83687, not for a reviewed county office or benefits office leaf. The public office search is still city-or-ZIP only, so county-to-office routing cannot yet be verified.",
-      "next_action": "replace_18_doi_mirror_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists"
+      "failure_code": "materialized_exact_office_leaf_packet_shows_17_clean_matches_plus_canyon_split_but_no_public_county_contract",
+      "evidence": "Reviewed 2026-06-23 the live official Idaho DHW sitemap at https://healthandwelfare.idaho.gov/sitemap.xml, the reviewed statewide office directory at https://healthandwelfare.idaho.gov/offices, and the live county_offices DB rows. The sitemap currently exposes 23 exact DHW office leaves, including Boise Office-Westgate Building, Pocatello Office-Horizon Building, Blackfoot Office-Blackfoot Services Complex, Sandpoint-Ponderay Office, Idaho Falls Office, Caldwell Office, Burley Office, Mountain Home Office, Grangeville Office-Camas Resource Center, Coeur d'Alene Office, Moscow Office, Salmon Office-Field Office, Rexburg Office, Lewiston Office-State Office Building, Payette Office, Kellogg Office, and Twin Falls Office-Pole Line Building. A live DB reconciliation shows 18 DOI-backed rows, but they collapse to 17 county-clean exact office leaf matches plus one duplicated Canyon County pair. Canyon's Caldwell row maps to https://healthandwelfare.idaho.gov/dhw/caldwell-office, while the only public Nampa mention still resolves only to Southwest Idaho Treatment Center (SWITC) rather than a county benefits office leaf. The remaining 27 county rows still use the dead legacy locator https://dhhs.idaho.gov/locations. Idaho therefore still lacks a public county-to-office contract, but the county-local packet is now materially sharper: future repair work can start from exact office leaves for the 17 clean counties and the explicit Canyon split instead of rereading the statewide directory or DOI placeholders.",
+      "next_action": "use_materialized_exact_office_leaf_packet_for_17_clean_counties_keep_canyon_split_and_27_legacy_counties_blocked"
     }
   ]
 }

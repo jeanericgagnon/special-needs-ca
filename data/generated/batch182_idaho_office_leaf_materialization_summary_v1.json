@@ -1,0 +1,12 @@
+{
+  "batch": "batch_182_idaho_office_leaf_materialization_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "exact_office_leaf_urls_materialized": 23,
+  "clean_county_leaf_matches": 17,
+  "canyon_split_open": true,
+  "legacy_locator_rows": 27,
+  "lessons_updated": false
+}

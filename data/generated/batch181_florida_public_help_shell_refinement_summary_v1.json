@@ -1,0 +1,11 @@
+{
+  "batch": "batch_181_florida_public_help_shell_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_help_lane_checked": true,
+  "public_help_route": "https://myaccess.myflfamilies.com/Help/HCINT",
+  "public_help_shell_only": true,
+  "lessons_updated": false
+}

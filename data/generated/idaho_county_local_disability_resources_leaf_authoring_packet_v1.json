@@ -9,7 +9,11 @@
     "legacyLocatorRows": 27,
     "authoredExactLeafCount": 18,
     "officialOfficeLeaves": 27,
-    "unresolvedDuplicateCountyRows": 2
+    "unresolvedDuplicateCountyRows": 2,
+    "doiMirrorCountyCount": 17,
+    "exactLeafUrlsMaterialized": 23,
+    "cleanCountyLeafMatches": 17,
+    "canyonSplitOpen": true
   },
   "exact_target_goals": [
     "exact DHW office leaf with address and phone",
@@ -89,8 +93,142 @@
         "Idaho DHW: Caldwell Office",
         "Idaho DHW: Nampa Office"
       ],
-      "reviewed_negative_proof": "Nampa mention resolves only to Southwest Idaho Treatment Center, not a county benefits office leaf."
+      "approved_exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/caldwell-office",
+      "blocked_companion_reason": "The only public Nampa mention still resolves to Southwest Idaho Treatment Center (SWITC), not to a county benefits office leaf."
     }
   ],
-  "packet_complete_when": "Every Idaho county row either points at a reviewed exact DHW office leaf with truthful county mapping support or remains explicitly blocked where the public office stack exposes no county-to-office contract."
+  "packet_complete_when": "Every Idaho county row either points at a reviewed exact DHW office leaf with truthful county mapping support or remains explicitly blocked where the public office stack exposes no county-to-office contract. The current packet now materializes 17 clean county matches plus the Canyon split and the 27 still-blocked legacy counties.",
+  "exact_leaf_replacements": [
+    {
+      "county_id": "ada-id",
+      "office_name": "Idaho DHW: Boise Office-Westgate Building",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/boise-office-westgate-building",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "bannock-id",
+      "office_name": "Idaho DHW: Pocatello Office-Horizon Building",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/pocatello-office-horizon-building",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "bingham-id",
+      "office_name": "Idaho DHW: Blackfoot Office-Blackfoot Services Complex",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/blackfoot-office-blackfoot-services-complex",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "bonner-id",
+      "office_name": "Idaho DHW: Sandpoint-Ponderay Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/sandpoint-ponderay-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "bonneville-id",
+      "office_name": "Idaho DHW: Idaho Falls Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/idaho-falls-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "canyon-id",
+      "office_name": "Idaho DHW: Caldwell Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/caldwell-office",
+      "replacement_status": "exact_leaf_verified_but_county_split_still_open"
+    },
+    {
+      "county_id": "cassia-id",
+      "office_name": "Idaho DHW: Burley Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/burley-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "elmore-id",
+      "office_name": "Idaho DHW: Mountain Home Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/mountain-home-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "idaho-id",
+      "office_name": "Idaho DHW: Grangeville Office-Camas Resource Center",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/grangeville-office-camas-resource-center",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "kootenai-id",
+      "office_name": "Idaho DHW: Coeur d'Alene Office-1120 Ironwood Building",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/coeur-dalene-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "latah-id",
+      "office_name": "Idaho DHW: Moscow Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/moscow-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "lemhi-id",
+      "office_name": "Idaho DHW: Salmon Office-Field Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/salmon-office-field-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "madison-id",
+      "office_name": "Idaho DHW: Rexburg Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/rexburg-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "nez-perce-id",
+      "office_name": "Idaho DHW: Lewiston Office-State Office Building",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/lewiston-office-state-office-building",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "payette-id",
+      "office_name": "Idaho DHW: Payette Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/payette-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "shoshone-id",
+      "office_name": "Idaho DHW: Kellogg Office",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/kellogg-office",
+      "replacement_status": "exact_leaf_verified"
+    },
+    {
+      "county_id": "twin-falls-id",
+      "office_name": "Idaho DHW: Twin Falls Office-Pole Line Building",
+      "exact_leaf_url": "https://healthandwelfare.idaho.gov/dhw/twin-falls-office-pole-line-building",
+      "replacement_status": "exact_leaf_verified"
+    }
+  ],
+  "unresolved_legacy_counties": [
+    "adams-id",
+    "bear-lake-id",
+    "benewah-id",
+    "blaine-id",
+    "boise-id",
+    "boundary-id",
+    "butte-id",
+    "camas-id",
+    "caribou-id",
+    "clark-id",
+    "clearwater-id",
+    "custer-id",
+    "franklin-id",
+    "fremont-id",
+    "gem-id",
+    "gooding-id",
+    "jefferson-id",
+    "jerome-id",
+    "lewis-id",
+    "lincoln-id",
+    "minidoka-id",
+    "oneida-id",
+    "owyhee-id",
+    "power-id",
+    "teton-id",
+    "valley-id",
+    "washington-id"
+  ]
 }

@@ -752,3 +752,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### County-Complete Regional Office Maps Linked From A Part C Program Page Can Clear Local FIT Routing
 *   **Lesson:** If an official Part C / FIT page links a regional-office map that itself enumerates county-labeled offices for every county-equivalent, that linked map can satisfy county-grade early-intervention routing. New Mexico FIT cleared once the official regional-office map proved all 33 counties had named local office coverage.
+
+### First-Party Help Routes Under A Portal Host Still Need Real County Rows
+*   **Lesson:** If a public benefits page links a first-party help route under the same portal host, fetch it once before assuming it is a usable fallback. Florida’s `myaccess.myflfamilies.com/Help/HCINT` was linked from the public assistance page, but it returned only the generic JavaScript shell and no county or office rows, so it did not reopen county-local routing.
+
+### Match Building Qualifiers Before Treating Same-City Office Leaves As Equivalent
+*   **Lesson:** If an official sitemap exposes multiple office leaves for the same city, match the building or program qualifier from the stored office name before treating a placeholder as repaired. Idaho’s Pocatello, Lewiston, Salmon, and Twin Falls stacks each had multiple same-city office leaves, so only the `Horizon Building`, `State Office Building`, `Field Office`, and `Pole Line Building` matches were safe replacements for the DOI-backed county rows.
+
+### Tiny Access-Denied Shells Across Root, Leaf, And Robots Mean Host-Stack Blocking
+*   **Lesson:** If the official root, exact role leaf, and `robots.txt` all return the same tiny `Access Denied` HTML with a `$(SERVE_403)` pseudo-path, treat the host as uniformly transport-blocked and stop probing sibling content URLs. Kansas’ KDADS and KanCare DD stack stayed blocked even with a browser-style client, so more low-token content discovery on those hosts would just churn.

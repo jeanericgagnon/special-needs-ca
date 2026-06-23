@@ -1,0 +1,13 @@
+{
+  "batch": "batch_183_kansas_uniform_serve_403_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "kdads_root_status": 403,
+  "dd_leaf_status": 403,
+  "robots_status": 403,
+  "kancare_root_status": 403,
+  "kancare_leaf_status": 403,
+  "lessons_updated": false
+}
