@@ -1,0 +1,27 @@
+{
+  "batch": "batch281_utah_county_coverage_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "utah",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract",
+  "office_api_root": "https://officesearch-api.jobs.utah.gov/api/v1/offices",
+  "physical_office_county_coverage": 26,
+  "state_county_total": 29,
+  "missing_physical_office_counties": [
+    "Daggett County",
+    "Morgan County",
+    "Rich County"
+  ],
+  "confirmed_missing_or_error_urls": [
+    "https://officesearch-api.jobs.utah.gov/api/v1/office-services",
+    "https://officesearch-api.jobs.utah.gov/openapi.json",
+    "https://officesearch-api.jobs.utah.gov/swagger-ui/index.html",
+    "https://officesearch-api.jobs.utah.gov/v3/api-docs",
+    "https://jobs.utah.gov/sitemap.xml",
+    "https://jobs.utah.gov/customereducation/serviceslocations.html",
+    "https://dhhs.utah.gov/locations"
+  ],
+  "next_action": "hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments_for_missing_daggett_morgan_rich_counties"
+}

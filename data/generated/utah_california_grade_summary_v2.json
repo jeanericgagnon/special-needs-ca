@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_and_public_dws_office_api_still_lacks_county_service_area_contract",
+  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_but_public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,9 +42,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "public_dws_office_api_exposes_office_inventory_but_no_county_or_service_area_contract",
-      "evidence": "Reviewed 2026-06-23 one more bounded official Utah county-local pass. The DWS office-search bundle still proves a public `apiUrl` of `https://officesearch-api.jobs.utah.gov`, and the live `GET https://officesearch-api.jobs.utah.gov/api/v1/offices` endpoint still returns 99 public rows covering 45 unique offices with office names, addresses, service codes, lat/lng, and assistance instructions. But the payload still exposes no county field, counties-served field, or reusable county-to-office contract. The companion `GET /api/v1/services` endpoint is public, but `GET /api/v1/office-services` returns HTTP 404. One more bounded public-surface pass also confirmed `openapi.json`, `swagger-ui/index.html`, and `v3/api-docs` all return HTTP 404 on the official API host, while `jobs.utah.gov/sitemap.xml` still returns an error page instead of a usable successor sitemap.",
-      "next_action": "hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments"
+      "failure_code": "public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract",
+      "evidence": "Reviewed 2026-06-23 one more bounded official Utah county-local pass. The DWS office-search bundle still proves a public `apiUrl` of `https://officesearch-api.jobs.utah.gov`, and the live `GET https://officesearch-api.jobs.utah.gov/api/v1/offices` endpoint still returns 99 public rows covering 45 unique offices with office names, addresses, service codes, lat/lng, and assistance instructions. But the payload still exposes no county field, counties-served field, or reusable county-to-office contract. A bounded reverse-geocode audit of those exact official office coordinates only materializes physical offices in 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point. The companion `GET /api/v1/services` endpoint is public, but `GET /api/v1/office-services` returns HTTP 404. One more bounded public-surface pass also confirmed `openapi.json`, `swagger-ui/index.html`, and `v3/api-docs` all return HTTP 404 on the official API host, while `jobs.utah.gov/sitemap.xml` still returns an error page instead of a usable successor sitemap.",
+      "next_action": "hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments_for_missing_daggett_morgan_rich_counties"
     }
   ],
   "familyStatuses": {

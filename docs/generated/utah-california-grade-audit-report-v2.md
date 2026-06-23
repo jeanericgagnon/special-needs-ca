@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 29
-- primary_gap_reason: official_usbe_district_lea_directory_clears_education_and_public_dws_office_api_still_lacks_county_service_area_contract
+- primary_gap_reason: official_usbe_district_lea_directory_clears_education_but_public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party Disability Law Center evidence preserves statewide disability legal-rights help plus Apply for Help intake routing)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (the official Utah DWS office-search app now exposes a public API at `https://officesearch-api.jobs.utah.gov/api/v1/offices` and that API returns 99 public rows covering 45 unique offices with names, addresses, lat/lng, service codes, and assistance instructions. But neither the API payload nor the current shell publishes county fields, counties served, or another reusable county-to-office contract, and one more bounded public-surface pass confirmed no public OpenAPI/Swagger docs or sitemap-exposed successor endpoint fills that gap.)
+- county_local_disability_resources: legacy_state_grade (the official Utah DWS office-search app exposes a public API at `https://officesearch-api.jobs.utah.gov/api/v1/offices` and that API returns 99 public rows covering 45 unique offices with names, addresses, lat/lng, service codes, and assistance instructions. But the payload still exposes no county fields or counties-served fields, and a bounded official reverse-geocode audit of those exact office coordinates only materializes physical offices in 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point before any service-area assignment can be proven.)
 
 ## Failure ledger
 
-- county_local_disability_resources: public_dws_office_api_exposes_office_inventory_but_no_county_or_service_area_contract :: The public official DWS office API still returns 99 rows covering 45 unique offices with names, addresses, service codes, and coordinates, but it still does not publish county fields, counties served, or another reusable county-to-office contract. The companion `/api/v1/office-services` route is not available publicly and returns HTTP 404. The official API host also returns HTTP 404 for `openapi.json`, `swagger-ui/index.html`, and `v3/api-docs`, while `jobs.utah.gov/sitemap.xml` still returns an error page instead of a usable successor sitemap.
+- county_local_disability_resources: public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract :: The public official DWS office API still returns 99 rows covering 45 unique offices with names, addresses, service codes, and coordinates, but it still does not publish county fields, counties served, or another reusable county-to-office contract. A bounded reverse-geocode audit of those exact office coordinates only materializes physical offices in 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point. The companion `/api/v1/office-services` route is not available publicly and returns HTTP 404. The official API host also returns HTTP 404 for `openapi.json`, `swagger-ui/index.html`, and `v3/api-docs`, while `jobs.utah.gov/sitemap.xml` still returns an error page instead of a usable successor sitemap.
 
 ## Verified source samples
 
@@ -40,16 +40,17 @@
 - legal_aid: verified_state_grade; samples=1; first=http://disabilitylawcenter.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=5; first=https://jobs.utah.gov/office-search/
+- county_local_disability_resources: legacy_state_grade; samples=6; first=https://jobs.utah.gov/office-search/
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments
+- [critical] county_local_disability_resources: hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments_for_missing_daggett_morgan_rich_counties
 
 ## Completion decision
 
 - Utah still keeps the education repair from the live Utah Schools Directory.
-- Utah DWS county-local evidence is now stronger than a shell-only story because the live office-search bundle points to a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`.
+- Utah DWS county-local evidence is stronger than a shell-only story because the live office-search bundle points to a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`.
 - That public API returns office inventory rows with office names, addresses, service codes, coordinates, and assistance instructions, but it still does not publish county fields, counties served, or another reusable county-to-office contract.
+- A bounded official reverse-geocode audit of the 45 unique office coordinates only materializes physical offices in 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point.
 - One more bounded public-surface pass also confirmed `openapi.json`, `swagger-ui/index.html`, and `v3/api-docs` return 404 on the official API host, `jobs.utah.gov/sitemap.xml` returns an error page, and the shell exposes no other public county/service-area contract.
 - Utah therefore remains BLOCKED and not index-safe.

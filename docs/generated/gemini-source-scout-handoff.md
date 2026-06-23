@@ -30,7 +30,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
-- Utah: `official_usbe_district_lea_directory_clears_education_and_public_dws_office_api_still_lacks_county_service_area_contract`
+- Utah: `official_usbe_district_lea_directory_clears_education_but_public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
@@ -38,41 +38,51 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: North Carolina
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-North Carolina still has two critical California-grade blockers: `district_or_county_education_routing` and `county_local_disability_resources`. The current packet preserves one real district-owned education leaf at Charlotte-Mecklenburg Schools, but most counties still collapse to statewide DPI Exceptional Children or other generic/non-district leaves. The county-local lane is similarly weak because saved samples still point at the DOI mirror `https://doi.org/10.7910/DVN/AVRHMI` instead of reviewed county-owned DSS or local-assistance directories.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the DWS office-search app exposes a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`, but that API still publishes only office inventory fields like office name, address, coordinates, service code, and assistance instructions. It does not expose county fields, counties served, or another reusable county-to-office contract. A bounded reverse-geocode pass on the 45 unique official office coordinates also materializes physical offices in only 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Additional district-owned special-education or student-services leaves beyond Charlotte-Mecklenburg so uncovered counties stop relying on the statewide DPI Exceptional Children root.
-- County-owned DSS or local-assistance directory leaves that replace the DOI mirror with real North Carolina county routing.
-- Any official export, directory, or county-keyed contract from North Carolina that directly maps counties to district routing and county local office routing.
+- Any first-party Utah county-complete office contract that explicitly maps counties to DWS, DHHS, or successor local offices.
+- Any public successor Utah office API field or companion endpoint that adds `county`, `countiesServed`, service-area, or district-style assignment data to the current office inventory.
+- Any official Utah successor local-office directory that explicitly closes the Daggett, Morgan, and Rich county remainder without inferred nearest-office routing.
 
 ### Useful Official URLs Already Tried
 
-- [North Carolina DPI Exceptional Children root](https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children)
-- [Charlotte-Mecklenburg Schools special-education anchor](https://www.cmsk12.org/Page/213)
-- [North Carolina DOI mirror currently blocking county-local routing](https://doi.org/10.7910/DVN/AVRHMI)
-- [ECAC via Parent Center Hub](https://www.parentcenterhub.org/findurcenter/north-carolina/)
-- [Disability Rights North Carolina](https://disabilityrightsnc.org/)
-- [Legal Aid of North Carolina](https://legalaidnc.org/)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Public DWS office-services route](https://officesearch-api.jobs.utah.gov/api/v1/office-services)
+- [API OpenAPI endpoint attempt](https://officesearch-api.jobs.utah.gov/openapi.json)
+- [API Swagger UI attempt](https://officesearch-api.jobs.utah.gov/swagger-ui/index.html)
+- [API v3 docs attempt](https://officesearch-api.jobs.utah.gov/v3/api-docs)
+- [jobs.utah.gov sitemap.xml](https://jobs.utah.gov/sitemap.xml)
+- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
+- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
+- [Older DHHS locations route](https://dhhs.utah.gov/locations)
+- [Census reverse geocoder used only to county-key official office coordinates](https://geocoding.geo.census.gov/geocoder/geographies/coordinates)
 
 ### Top Remaining Source-Scouting Targets
 
-- District-owned special-education or student-services leaves for counties still using statewide DPI fallback.
-- County-owned DSS or local-assistance directory pages that clearly preserve county office identity and routing.
-- Any official North Carolina county-keyed education or local-office export that can replace the contaminated queue with one truthful statewide contract.
-## Next State Order After South Carolina
+- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the 45 unique office records.
+- Any reviewed official Utah local-office directory that explicitly names counties served, especially where office names are city-based rather than county-based.
+- Any official Utah successor to the dead `serviceslocations.html` or `dhhs.utah.gov/locations` routes that exposes county-grade local-office coverage for Daggett, Morgan, and Rich.
+## Next State Order After Utah
 
-1. North Carolina
-2. New York
-3. Oklahoma
-4. Oregon
-5. Ohio
-6. Minnesota
-7. Maine
-8. Idaho
-9. Arizona
-10. Massachusetts
+1. Kansas
+2. Nebraska
+3. Nevada
+4. Florida
+5. Alaska
+6. South Carolina
+7. North Carolina
+8. New York
+9. Oklahoma
+10. Oregon10. Oregon10. Oregon10. Massachusetts

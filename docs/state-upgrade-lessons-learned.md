@@ -279,3 +279,6 @@
 
 ### Official School-Directory Backends And District Layers Can Clear County-Grade Education Routing
 *   **Lesson:** If an official school-directory page exposes both a live district-list backend and a public district contact layer, use that state-managed directory contract before falling back to district-by-district leaf authoring. South Carolina cleared once the live SCDE School Directory page, its `getDistricts` JSON method, and its public ArcGIS district layer together proved 46/46 counties had named district routing with phone and website fields.
+
+### Reverse-Geocoded Office Points Can Sharpen A County-Local Blocker Without Faking Service Areas
+*   **Lesson:** If a live official office API gives exact coordinates but no county or service-area field, one bounded official/federal reverse-geocode pass can still sharpen the blocker truthfully. Utah's DWS office inventory geocoded into only 26 of 29 counties, which proved the family was blocked both because service-area assignments were missing and because Daggett, Morgan, and Rich lacked even an in-county office point.
