@@ -1,0 +1,10 @@
+{
+  "batch": "batch_235_idaho_blaine_reviewed_district_leaf_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_exact_leaf_count": 9,
+  "promoted_county": "blaine-id",
+  "lesson_added": false
+}

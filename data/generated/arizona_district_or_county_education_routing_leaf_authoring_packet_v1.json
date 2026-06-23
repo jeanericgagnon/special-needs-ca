@@ -17,7 +17,9 @@
     "reviewedOfficialDistrictInventoryRoots": 15,
     "countyKeyedDistrictRootCount": 15,
     "remainingUnmappedCounties": 0,
-    "unresolvedDistrictOwnedLeafCount": 7
+    "unresolvedDistrictOwnedLeafCount": 7,
+    "unresolvedNoPublicWebsiteCount": 4,
+    "unresolvedReviewedPublicDomainWithoutLeafCount": 3
   },
   "exact_target_goals": [
     "official district detail root per county",
@@ -61,7 +63,7 @@
     "yavapai-az",
     "yuma-az"
   ],
-  "packet_complete_when": "At least one reviewed district-owned special-education or student-services leaf is attached per Arizona county from the county-keyed report-cards district root inventory without relying on generic AZED fallback rows.",
+  "packet_complete_when": "At least one reviewed district-owned or county-owned education-routing leaf is attached per Arizona county, or the remaining counties are explicitly blocked on no-public-website official roots rather than unresolved district probing.",
   "reviewed_root_samples": [
     {
       "county_id": "apache-az",
@@ -331,11 +333,22 @@
   ],
   "unresolved_local_leaf_counties": [
     "cochise-az",
-    "coconino-az",
     "gila-az",
-    "mohave-az",
     "navajo-az",
     "pima-az",
+    "coconino-az",
+    "mohave-az",
+    "yavapai-az"
+  ],
+  "unresolved_no_public_website_counties": [
+    "cochise-az",
+    "gila-az",
+    "navajo-az",
+    "pima-az"
+  ],
+  "unresolved_reviewed_public_domain_without_leaf_counties": [
+    "coconino-az",
+    "mohave-az",
     "yavapai-az"
   ]
 }

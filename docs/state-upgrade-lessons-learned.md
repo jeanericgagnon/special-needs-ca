@@ -167,3 +167,9 @@
 
 ### Alternate Official Hosts Can Confirm A Final Blocker
 *   **Lesson:** If the main official host is blocked, spend one bounded pass on sibling official hosts before declaring the family final. Alaska stayed blocked after `health.alaska.gov` challenge checks, but `my.alaska.gov` only exposed an anti-bot gate and `alaska.gov/search` returned 404, which made the low-token blocker materially stronger.
+
+### A Live District Domain Can Still Be Terminally Blocked For Local Routing
+*   **Lesson:** If a district-owned domain has a live homepage plus sitemap or site-map, do one bounded pass and then stop if it only exposes generic parent/student/business pages with no role-verifiable special-education or student-services leaf. Arizona closed Coconino, Mohave, and Yavapai as `reviewed_public_domain_without_role_leaf` instead of reprobing the same CMS sites again.
+
+### District CMS `fs/pages` Links Can Hide Exact Special-Education Leaves
+*   **Lesson:** If a district-owned program page lists `Special Education` or `504 Plans` but the URL structure looks opaque, follow the linked CMS `fs/pages/<id>` route before leaving the county as signal-only. Idaho’s Blaine district promoted once the hidden `fs/pages/2147` route resolved to a real district-owned `Special Education` leaf with procedural-safeguards text.

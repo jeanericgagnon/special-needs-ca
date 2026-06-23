@@ -1,0 +1,29 @@
+{
+  "batch": "batch_234_arizona_unresolved_district_split_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "verified_leaf_counties": [
+    "apache-az",
+    "graham-az",
+    "greenlee-az",
+    "la-paz-az",
+    "maricopa-az",
+    "pinal-az",
+    "santa-cruz-az",
+    "yuma-az"
+  ],
+  "no_public_website_counties": [
+    "cochise-az",
+    "gila-az",
+    "navajo-az",
+    "pima-az"
+  ],
+  "reviewed_public_domain_without_leaf_counties": [
+    "coconino-az",
+    "mohave-az",
+    "yavapai-az"
+  ],
+  "lesson_added": false
+}

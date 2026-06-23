@@ -7,12 +7,12 @@
   "current_problem_metrics": {
     "statewideFallbackRows": 42,
     "genericRootRows": 2,
-    "authoredExactLeafCount": 8,
+    "authoredExactLeafCount": 9,
     "officialDistrictLinks": 116,
     "countyBearingDistrictNamesVisible": true,
     "explicitCountyFieldVisible": false,
     "districtSpecialEducationFieldsVisible": false,
-    "reviewedExactLeafCount": 8
+    "reviewedExactLeafCount": 9
   },
   "exact_target_goals": [
     "district special education page",
@@ -83,7 +83,7 @@
     "valley-id",
     "washington-id"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, Butte, Bonneville, Jerome, and Minidoka as seed examples.",
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, Butte, Bonneville, Jerome, Minidoka, and Blaine as seed examples.",
   "reviewed_exact_leaves": [
     {
       "county_id": "cassia-id",
@@ -166,6 +166,16 @@
         "504"
       ],
       "title": "Special Services | We are Minidoka"
+    },
+    {
+      "county_id": "blaine-id",
+      "district_name": "Blaine County District #61",
+      "exact_leaf_url": "https://www.blaineschools.org/teaching-and-learning/teaching-learning/educational-programs/special-education",
+      "evidence_terms": [
+        "special education",
+        "procedural safeguards"
+      ],
+      "title": "Special Education"
     }
   ]
 }
