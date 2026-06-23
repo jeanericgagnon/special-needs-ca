@@ -210,3 +210,9 @@
 
 ### Treat Apex And WWW Connection Resets As A Failed Official Replacement-Host Family
 *   **Lesson:** If both the apex and `www` variants of a likely official replacement host reset the connection on the same bounded lane, preserve that as a host-family blocker instead of retrying deeper paths. New York OTDA reset on both `otda.ny.gov` and `www.otda.ny.gov`, which was enough to stop speculative county-locator guessing there.
+
+### Shared Weak-Signal Counts Across Two Local Families Usually Mean One Queue-Cleanup Problem
+*   **Lesson:** When district-routing and county-local blockers show the same weak-signal counts, treat that as one shared queue-shape problem instead of two unrelated source failures. North Carolina had the same `4 DB-field labels / 49 federal-state mismatches / 12 generic roots` signature on both families, so the next lane should clean exact local targets, not rescrape statewide roots twice.
+
+### Reuse The Same Queue Signature Across States, But Keep The Generic-Root Count State-Specific
+*   **Lesson:** When two states share the same weak-signal pattern, copy the blocker shape but not the exact root count. North Dakota matched North Carolina on `4 DB-field labels` and `49 federal-state mismatches`, but its local queues only had `9 generic roots` instead of `12`, so the state packet should preserve its own exact contamination count.

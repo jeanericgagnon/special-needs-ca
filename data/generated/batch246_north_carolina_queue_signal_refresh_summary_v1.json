@@ -1,0 +1,13 @@
+{
+  "batch": "batch246_north_carolina_queue_signal_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "north-carolina",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewedDistrictOwnedLeaves": 1,
+  "doiBackedSampleRows": 3,
+  "dbFieldAgencyRows": 4,
+  "federalStateMismatchRows": 49,
+  "genericRootsNeedingLeafVerification": 12,
+  "lessons_updated": false
+}

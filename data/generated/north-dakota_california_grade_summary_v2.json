@@ -46,21 +46,21 @@
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "North Dakota still routes county education through generic statewide or non-district leaves instead of district-owned special-education routing pages.",
+      "evidence": "Reviewed 2026-06-23 the current North Dakota education-routing packet plus the live queue audit summary. The current district or county education-routing labels are still state-root-backed district labels that collapse to the statewide `https://www.nd.gov/` surface, including rows labeled as Burleigh and Cass special education, and the local queue remains visibly contaminated before fetch: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 9 generic roots still need exact leaf verification. The blocker is a district-owned local-leaf authoring and queue-cleanup gap with no trustworthy local leaves yet preserved on disk.",
       "next_action": "author_county_or_district_exact_targets"
     },
     {
       "family": "legal_aid",
       "severity": "major",
       "failure_code": "missing_required_source_family",
-      "evidence": "North Dakota still lacks any reviewed first-party or authoritative statewide legal-aid artifact on disk.",
+      "evidence": "Reviewed 2026-06-23 the current North Dakota statewide-support set. P&A and PTI are now covered by reviewed first-party sources, but statewide legal-aid support still has no reviewed first-party or authoritative statewide artifact on disk. The remaining legal-aid work is still a standalone source-family packet, not part of county or district leaf repair.",
       "next_action": "author_or_verify_statewide_source_family"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
       "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "North Dakota county/local disability resources still depend on structural dataset-derived rows instead of reviewed county-owned local office proof.",
+      "evidence": "Reviewed 2026-06-23 the current North Dakota county-local packet plus the live queue audit summary. The saved county-local samples still point at the DOI mirror `https://doi.org/10.7910/DVN/AVRHMI` rather than reviewed county-owned Human Service Zone or local assistance directories, and the same upstream weak-signal queue contamination is still present: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 9 generic roots still need exact leaf verification. The blocker is explicitly a county-owned replacement and queue-cleanup packet, not a discovery-only gap.",
       "next_action": "author_county_or_district_exact_targets"
     }
   ]

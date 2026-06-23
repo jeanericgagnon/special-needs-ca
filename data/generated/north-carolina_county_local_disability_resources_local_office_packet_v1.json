@@ -6,12 +6,16 @@
   "current_metrics": {
     "countyTotal": 100,
     "doiBackedSampleRows": 3,
-    "genericFallbackRowsMentioned": 49
+    "genericFallbackRowsMentioned": 49,
+    "dbFieldAgencyRows": 4,
+    "federalStateMismatchRows": 49,
+    "genericRootsNeedingLeafVerification": 12
   },
   "rejected_current_sample_root": "https://doi.org/10.7910/DVN/AVRHMI",
   "sample_counties_needing_replacement": [
     "Alamance",
     "Alexander",
     "Alleghany"
-  ]
+  ],
+  "shared_queue_contamination_signature": "4_db_field_labels__49_federal_state_mismatches__12_generic_roots"
 }

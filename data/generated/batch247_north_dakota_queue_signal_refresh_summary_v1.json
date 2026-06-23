@@ -1,0 +1,12 @@
+{
+  "batch": "batch247_north_dakota_queue_signal_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "north-dakota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dbFieldAgencyRows": 4,
+  "federalStateMismatchRows": 49,
+  "genericRootsNeedingLeafVerification": 9,
+  "legalAidReviewedStatewideSources": 0,
+  "lessons_updated": false
+}

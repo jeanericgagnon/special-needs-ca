@@ -5,6 +5,9 @@
   "packet_complete_when": "A reviewed first-party or authoritative statewide North Dakota legal-aid artifact is attached on disk.",
   "current_metrics": {
     "reviewedStatewideLegalAidSources": 0,
-    "statewideSupportFamiliesStillBlocked": 1
-  }
+    "statewideSupportFamiliesStillBlocked": 1,
+    "reviewedStatewideSources": 0,
+    "authoritativeStatewideSources": 0
+  },
+  "blocker_basis": "No reviewed first-party or authoritative statewide North Dakota legal-aid artifact is preserved on disk yet."
 }

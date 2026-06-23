@@ -7,8 +7,11 @@
     "countyTotal": 100,
     "reviewedDistrictOwnedLeaves": 1,
     "genericFallbackRowsMentioned": 49,
-    "genericRootsNeedingLeafVerification": 12
+    "genericRootsNeedingLeafVerification": 12,
+    "dbFieldAgencyRows": 4,
+    "federalStateMismatchRows": 49
   },
   "reviewed_leaf_anchor": "https://www.cmsk12.org/Page/213",
-  "exhausted_statewide_fallback": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children"
+  "exhausted_statewide_fallback": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
+  "shared_queue_contamination_signature": "4_db_field_labels__49_federal_state_mismatches__12_generic_roots"
 }

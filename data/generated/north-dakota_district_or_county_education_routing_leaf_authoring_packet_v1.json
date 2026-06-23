@@ -7,12 +7,15 @@
     "countyTotal": 53,
     "reviewedLocalLeaves": 0,
     "genericRootsNeedingLeafVerification": 9,
-    "mislabeledStateRootRowsSeen": 3
+    "mislabeledStateRootRowsSeen": 3,
+    "dbFieldAgencyRows": 4,
+    "federalStateMismatchRows": 49
   },
   "rejected_current_root": "https://www.nd.gov/",
   "mislabeled_examples": [
     "Burleigh Public Schools Special Education",
     "Cass Public Schools Special Education",
     "Adams County County fallback"
-  ]
+  ],
+  "shared_queue_contamination_signature": "4_db_field_labels__49_federal_state_mismatches__9_generic_roots"
 }

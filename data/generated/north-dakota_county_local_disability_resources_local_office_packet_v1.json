@@ -6,12 +6,15 @@
   "current_metrics": {
     "countyTotal": 53,
     "doiBackedSampleRows": 3,
-    "genericRootsNeedingLeafVerification": 9
+    "genericRootsNeedingLeafVerification": 9,
+    "dbFieldAgencyRows": 4,
+    "federalStateMismatchRows": 49
   },
   "rejected_current_root": "https://doi.org/10.7910/DVN/AVRHMI",
   "sample_counties_needing_replacement": [
     "Adams",
     "Barnes",
     "Benson"
-  ]
+  ],
+  "shared_queue_contamination_signature": "4_db_field_labels__49_federal_state_mismatches__9_generic_roots"
 }
