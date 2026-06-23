@@ -164,3 +164,6 @@
 
 ### Public County Selectors On Official ASP.NET Directories Count
 *   **Lesson:** If an official education directory root links to a live ASP.NET search page and a bounded postback exposes a full county selector plus county-specific results, count that as county-grade routing. Nebraska `educdirsrc.education.ne.gov/QuickStaff.aspx` exposed 93 counties and returned a live Adams County results page on the official host.
+
+### Alternate Official Hosts Can Confirm A Final Blocker
+*   **Lesson:** If the main official host is blocked, spend one bounded pass on sibling official hosts before declaring the family final. Alaska stayed blocked after `health.alaska.gov` challenge checks, but `my.alaska.gov` only exposed an anti-bot gate and `alaska.gov/search` returned 404, which made the low-token blocker materially stronger.
