@@ -19,7 +19,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_dds_locations_lane_still_lacks_county_export`
 - Minnesota: `mdeorg_root_and_analytics_routes_flap_to_radware_plus_mn_dhs_local_office_family_is_radware_challenged`
 - Nebraska: `official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields`
-- Nevada: `live_welfare_office_pages_without_county_contract`
+- Nevada: `official_county_local_pages_now_cover_13_of_17_counties_but_four_counties_lack_reviewed_local_route`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - New York: `official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_no_public_ldss_replacement`
@@ -40,45 +40,47 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Nevada
 
 ### Blocker Reason
 
-`county_local_disability_resources` is still the only critical blocker. Nebraska’s public DHHS office stack is fully inspectable, but it still exposes no county-assignment artifact: the public FeatureServer root has `tables: []`, both layers have empty relationships, and the office schema is contact-only.
+`county_local_disability_resources` is still the only critical blocker. Nevada’s official DSS welfare-office stack still lacks a full county-served contract, but a bounded official county pass now raises reviewed exact county-local proof to 13 of 17 county-equivalents. The unresolved remainder is Esmeralda, Humboldt, Lander, and Storey.
 
 ### Exact Evidence Needed
 
-- Any official Nebraska county-to-office assignment artifact, service-area table, downloadable office coverage file, or public schema field that explicitly maps the remaining counties to office coverage.
-- A public DHHS or GIS artifact is required; generic office-location roots and county boundary layers are not enough.
-- Strongest remaining need: a reviewed official county coverage contract for the 56 counties not explicitly represented by the 37 distinct `USER_County` office values.
+- Any official county-owned social-service, human-services, senior/disability assistance, or equivalent local-resource page for Esmeralda, Humboldt, Lander, and Storey.
+- Or, a reviewed first-party Nevada DSS county-to-office contract, county-served field, county filter, or machine-readable mapping that closes those four counties directly from the state host.
+- Generic statewide welfare-office leaves without county-served labels are still not enough.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [Nebraska Public Office Location Experience](https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457)
-- [Nebraska office app config](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
-- [Nebraska office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
-- [Nebraska office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
-- [Nebraska office layer distinct county coverage](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
-- [Nebraska county layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1?f=pjson)
+- [Nevada DSS Contact hub](https://www.dss.nv.gov/contact/)
+- [Nevada Welfare District Offices-North](https://www.dss.nv.gov/contact/welfare-district-offices-north/)
+- [Nevada Welfare District Offices-South](https://www.dss.nv.gov/contact/welfare-district-offices-south/)
+- [Nevada DSS Program Offices](https://www.dss.nv.gov/contact/program-offices/)
+- [Clark County Social Service Senior Services](https://www.clarkcountynv.gov/residents/assistance_programs/senior-services)
+- [Washoe County Human Services Agency](https://www.washoecounty.gov/hsa/index.php)
+- [Humboldt County Services](https://www.humboldtcountynv.gov/101/Services)
+- [Storey County Services](https://www.storeycounty.org/101/County-Services)
+- [Lander County Senior Center](https://www.landercountynv.org/departments/senior_center.php)
+- [Esmeralda County](https://www.esmeraldacountynv.org/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Official Nebraska DHHS or GIS artifacts outside the current FeatureServer pair that could expose service-area assignments.
-- Any official downloadable office coverage document, CSV/XLS/PDF, or ArcGIS related table not already exposed from the public service root.
-- Any official public query surface on the DHHS/GIS stack that returns county-to-office coverage instead of just office contact rows.
+- Exact official county-local service or assistance pages for Esmeralda, Humboldt, Lander, and Storey.
+- Any official Nevada DSS county-served mapping artifact that converts the welfare-office stack from office-only leaves into a full county contract.
+- Any official downloadable county coverage file, ArcGIS table, PDF, or county-filter surface on the Nevada DSS host that closes the four-county remainder.
 
-## Next State Order After Nebraska
+## Next State Order After Nevada
 
-1. Nevada
-2. Florida
-3. Alaska
-4. Ohio
-5. Minnesota
-6. Maine
-7. Idaho
-8. Arizona
-9. Massachusetts
-10. Oregon
-11. Oklahoma
-12. Utah
+1. Florida
+2. Alaska
+3. Ohio
+4. Minnesota
+5. Maine
+6. Idaho
+7. Arizona
+8. Massachusetts
+9. Oregon
+10. Oklahoma
+11. Utah

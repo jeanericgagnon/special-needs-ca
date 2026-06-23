@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 17
-- primary_gap_reason: live_welfare_office_pages_without_county_contract
+- primary_gap_reason: official_county_local_pages_now_cover_13_of_17_counties_but_four_counties_lack_reviewed_local_route
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party NDALC evidence preserves statewide disability legal-rights routing through the Nevada Disability Advocacy and Law Center)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_partial_county_bearing_program_offices_page_without_full_contract (Reviewed 2026-06-23 bounded live probes on the official Nevada DSS contact family more tightly. The live Contact, Welfare District Offices-North, and Welfare District Offices-South pages still expose exact office leaves with real addresses and phones but no county-served labels, county filter, or county assignment. However, the sibling official `Program Offices` page does preserve some county-named local partners such as Churchill County Social Services, Douglas County Social Services, Elko County Human & Social Services, Eureka County Social Services, Lincoln County Community Connection, Lyon County Human Services, Nye County Health & Human Services, Pershing County Senior Center, and White Pine County Social Services. That improves the packet because Nevada does have partial official county-bearing local resource evidence on the same host, but it still does not produce a complete 17-county welfare-office or county-to-office routing contract.)
+- county_local_disability_resources: blocked_reviewed_county_local_proof_expanded_to_13_of_17_counties_but_four_counties_unresolved (Reviewed 2026-06-23 one more bounded official pass for Nevada county-local proof. The official Nevada DSS Contact, Welfare District Offices-North, Welfare District Offices-South, and Program Offices pages still do not expose a complete 17-county county-to-office contract. However, reviewed official county-local pages now add exact county-grade proof for Clark County and Washoe County through Clark County Social Service / Senior Services and the Washoe County Human Services Agency. Combined with the already reviewed DSS Program Offices county-named local partners, Nevada now has reviewed official county-local proof for 13 of 17 county-equivalents, but Esmeralda, Humboldt, Lander, and Storey still lack a reviewed official county-local route or a complete DSS county contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_program_offices_page_adds_partial_county_partners_but_no_full_county_to_welfare_contract :: Reviewed 2026-06-23 bounded live probes on the official Nevada DSS welfare-office stack and one sibling official contact page. The live Contact hub plus `Welfare District Offices-North` and `Welfare District Offices-South` pages remain exact office leaves with real addresses and phones but zero county-served labels, zero county filter, and no county assignment. A fresh bounded probe on the sibling official page https://www.dss.nv.gov/contact/program-offices/ showed that Nevada DSS does expose some county-named local partners on the same host, including Churchill County Social Services, Douglas County Social Services, Elko County Human & Social Services, Eureka County Social Services, Lincoln County Community Connection, Lyon County Human Services, Nye County Health & Human Services, Pershing County Senior Center, and White Pine County Social Services, along with Carson City and other locality-specific partners. But the page still does not provide a complete 17-county county-to-office or county-to-welfare-office contract: a bounded county-coverage check found only 11 of Nevada’s 17 county-equivalent names on the page, leaving Clark, Esmeralda, Humboldt, Lander, Storey, and Washoe without a county-named contract there. Nevada therefore remains blocked, but the blocker is now precisely a partial county-bearing sibling page plus incomplete county coverage rather than zero county signal anywhere on the host.
+- county_local_disability_resources: official_county_local_pages_expand_proof_to_13_of_17_counties_but_four_counties_remain_unresolved :: Reviewed 2026-06-23 bounded official Nevada county-local evidence again. The DSS contact hub plus Welfare District Offices-North and Welfare District Offices-South remain exact office leaves with addresses and phones but still expose no county-served labels or machine-readable county assignment. The sibling Program Offices page still preserves county-named local partners for Carson City, Churchill, Douglas, Elko, Eureka, Lincoln, Lyon, Mineral, Nye, Pershing, and White Pine. A bounded official county pass then added two more exact county-local proofs: Clark County Social Service pages under https://www.clarkcountynv.gov/residents/assistance_programs/ explicitly route Clark County low-income seniors and individuals with disabilities through county social-service programs and county contact information, and the Washoe County Human Services Agency page at https://www.washoecounty.gov/hsa/index.php preserves a first-party county human-services route. That raises reviewed official county-local coverage to 13 of 17 county-equivalents. But Esmeralda, Humboldt, Lander, and Storey still do not have a reviewed exact county-local social-service or disability-routing page in this bounded pass, and Nevada still lacks a full official DSS county-to-office contract. Nevada therefore remains BLOCKED and not index-safe.
 
 ## Verified source samples
 
@@ -40,14 +40,15 @@
 - legal_aid: verified_state_grade; samples=1; first=https://ndalc.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_partial_county_bearing_program_offices_page_without_full_contract; samples=5; first=https://www.dss.nv.gov/contact/
+- county_local_disability_resources: blocked_reviewed_county_local_proof_expanded_to_13_of_17_counties_but_four_counties_unresolved; samples=7; first=https://www.dss.nv.gov/contact/
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_full_17_county_contract_or_county_to_welfare_office_mapping_is_reviewed
+- [critical] county_local_disability_resources: hold_blocked_until_official_county_local_pages_or_dss_county_contract_cover_esmeralda_humboldt_lander_and_storey
 
 ## Packetized blocker
 
 - County-local packet saved at `data/generated/nevada_county_local_disability_resources_welfare_office_packet_v1.json`.
-- The welfare office pages remain exact office leaves without county-served labels.
-- The sibling `Program Offices` page adds partial county-bearing local partners, but it still does not provide a complete 17-county welfare-office or county-to-office routing contract.
+- Official Nevada DSS welfare-office pages remain real office leaves without county-served labels or a public county filter.
+- Reviewed official county-local pages now add Clark County and Washoe County, raising reviewed county-local proof to 13 of 17 county-equivalents.
+- Nevada still lacks reviewed county-local proof for Esmeralda, Humboldt, Lander, and Storey, so the state remains BLOCKED and not index-safe.

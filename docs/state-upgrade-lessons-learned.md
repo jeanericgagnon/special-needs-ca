@@ -228,3 +228,6 @@
 
 ### A Public FeatureServer With Tables Empty And Contact-Only Schema Is A Final Local-Office Blocker
 *   **Lesson:** If the public ArcGIS service root reports `tables: []` and the office layer schema contains only contact fields plus one county field, stop hunting for a hidden county-assignment join. Nebraska’s DHHS office stack was fully inspectable and still had no service-area fields, no related tables, and only 37 distinct counties across 42 office rows.
+
+### Exact County Social-Service Pages Can Shrink A Statewide Office Blocker Without Clearing It
+*   **Lesson:** When a statewide office host fails to expose a complete county-to-office contract, a bounded pass across official county sites can still narrow the blocker honestly. Nevada DSS stayed incomplete, but exact county-owned Clark County Social Service pages and the Washoe County Human Services Agency page raised reviewed local coverage from 11 to 13 counties while still leaving the four-county remainder explicit.

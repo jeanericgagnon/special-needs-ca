@@ -1,0 +1,15 @@
+{
+  "batch": "batch258_nevada_county_remainder_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nevada",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_county_local_coverage_count": 13,
+  "unresolved_county_remainder": [
+    "Esmeralda",
+    "Humboldt",
+    "Lander",
+    "Storey"
+  ],
+  "lessons_updated": false
+}
