@@ -2,21 +2,19 @@
   "state": "missouri",
   "state_code": "MO",
   "state_name": "Missouri",
-  "batch": "batch_4_procedure_hardening_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "batch": "batch_172_missouri_arcgis_directory_completion_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 115,
-  "completeness_pct": 91,
-  "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404",
-  "recommended_batch": "batch_2_repair_blocked",
-  "critical_gap_families": [
-    "district_or_county_education_routing"
-  ],
+  "primary_gap_reason": "none",
+  "recommended_batch": "complete_maintain",
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -33,19 +31,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404",
-      "evidence": "Missouri district routing still lacks reviewed district-owned or county-grade leaves. The official DESE School Data page exposes real public School Directory links, but the exact WebLogin \"View Public Applications\" replay only reaches an SSRS shell whose rendered non-report content fails with \"The request failed with HTTP status 404: Not Found.\"",
-      "next_action": "author_missouri_district_owned_special_education_or_student_services_leaves_from_local_district_sites"
-    }
-  ]
+  "final_blockers": []
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-23T05:32:18.763Z",
+  "generatedAt": "2026-06-23T05:39:01.788Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 18,
-    "BLOCKED": 32
+    "COMPLETE": 19,
+    "BLOCKED": 31
   },
-  "indexSafeCount": 18,
+  "indexSafeCount": 19,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -1718,8 +1718,8 @@
       "stateId": "missouri",
       "stateCode": "MO",
       "stateName": "Missouri",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -1727,11 +1727,11 @@
       "legacyManualReviewRate": 59.28,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 115,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "missouri",
         "state_code": "MO",
@@ -1770,7 +1770,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_dese_public_report_shell_returns_report_server_404",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1780,9 +1780,9 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetBatch": "batch_172_missouri_arcgis_directory_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "montana",

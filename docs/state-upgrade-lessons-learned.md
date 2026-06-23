@@ -722,3 +722,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Retest Host-Wide 403 Conclusions With A Real Browser User-Agent Before Freezing A State Blocker
 *   **Lesson:** If an official education host looked uniformly blocked in one low-token lane, do one bounded retry with a real browser user-agent before cementing the blocker. Mississippi MDEK12 flipped from a supposed host-wide Azure 403 blocker to a live WordPress district-contact leaf once the exact directory and special-education pages were retried with a browser-style client.
+
+### ArcGIS App Configs Can Expose Official District Layers Even When Older Directory Bridges Rot
+*   **Lesson:** If a state school-directory login bridge or SSRS report path rots, inspect the live official directory page and any linked ArcGIS app config before dropping to district-site authoring. Missouri’s DESE directory page exposed a public ArcGIS app whose config revealed the exact district layer URL and county-mapped contact fields, which was enough to clear local routing without deeper scraping.
