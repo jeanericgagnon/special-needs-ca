@@ -683,3 +683,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### County-Complete Public Contact CSVs Still Fail If The Service Role Does Not Match The Family
 *   **Lesson:** Do not clear a county-local family just because a first-party CSV covers every county. Florida DCF now publishes a public 67-county `contact-us/contacts.csv`, but it only carries circuit headers plus licensing, child-and-family, APS, refugee, and client-relations contacts, so it cannot replace a missing ACCESS or Medicaid county-office contract.
+
+### County-Bearing District Names Do Not Equal County Routing
+*   **Lesson:** If an official district directory or page JSON preserves district names that happen to contain county words, do not treat that as a county-routing contract. Idaho’s SDE School Districts page named districts like `Blaine County District #61` and `Boundary County District #101`, but it still had no county field, no county filter, and no special-education contacts, so the family stayed blocked until district-owned leaves are reviewed.
+
+### Open robots.txt Does Not Mean The Official Host Is Scrapeable
+*   **Lesson:** If `robots.txt` stays public but the exact content, search, and sitemap leaves all return the same access-denied shell, treat the host as transport-blocked and stop same-host retries. Kansas KDADS and KanCare both left `robots.txt` open while every DD or HCBS content surface still returned access denied.

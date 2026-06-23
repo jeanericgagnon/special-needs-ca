@@ -1,0 +1,11 @@
+{
+  "batch": "batch_160_kansas_dd_host_access_pattern_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "kdads_access_denied": true,
+  "kancare_access_denied": true,
+  "kdads_robots_readable": true,
+  "lesson_added": false
+}

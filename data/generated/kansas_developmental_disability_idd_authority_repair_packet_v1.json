@@ -7,8 +7,13 @@
   "current_problem_metrics": {
     "staleLegacyDbRows": 1,
     "deadLegacyRoots": 1,
-    "reviewedBlockedReplacementRoots": 1,
-    "authoredExactLeafCount": 0
+    "reviewedBlockedReplacementRoots": 2,
+    "authoredExactLeafCount": 0,
+    "kdadsExactBlockedLeaves": 5,
+    "kdadsSitemapBlocked": true,
+    "kancareSupportingBlockedLeaves": 4,
+    "kancareSitemapBlocked": true,
+    "kdadsRobotsReadable": true
   },
   "exact_target_goals": [
     "official Kansas DD intake or application leaf",
@@ -26,13 +31,14 @@
   ],
   "representative_sources": [
     "https://dhhs.kansas.gov/dd",
-    "https://www.kdads.ks.gov/",
-    "https://www.kancare.ks.gov/",
+    "https://www.kdads.ks.gov/services/developmental-disabilities",
+    "https://www.kdads.ks.gov/sitemap.xml",
+    "https://www.kdads.ks.gov/robots.txt",
     "https://www.kancare.ks.gov/home/showpublisheddocument/6224/639013892674730000"
   ],
   "root_domains_to_review": [
-    "https://www.kdads.ks.gov/",
     "browser-assisted reviewed KDADS DD leaves if access permits",
+    "alternate-official Kansas DD leaves outside the hostwide access-denied stack",
     "KanCare HCBS crossover pages only as supporting context, not completion proof"
   ],
   "stale_db_rows": [
@@ -46,5 +52,5 @@
       "verification_status": "verified"
     }
   ],
-  "packet_complete_when": "Kansas has a reviewed official DD authority leaf that preserves DD intake, eligibility, or entry routing without relying on the dead dhhs.kansas.gov/dd root or a blocked KDADS shell."
+  "packet_complete_when": "Kansas has a reviewed official DD authority leaf that preserves DD intake, eligibility, or entry routing without relying on the dead dhhs.kansas.gov/dd root or on raw-fetch-blocked KDADS/KanCare shells."
 }

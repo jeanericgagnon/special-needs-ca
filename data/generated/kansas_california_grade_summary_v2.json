@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "kansas_dd_authority_still_access_blocked_and_no_county_or_district_education_contract_preserved",
+  "primary_gap_reason": "kansas_dd_hosts_are_transport_blocked_and_education_still_lacks_county_or_district_contract",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "developmental_disability_idd_authority",
@@ -43,9 +43,9 @@
     {
       "family": "developmental_disability_idd_authority",
       "severity": "critical",
-      "failure_code": "legacy_dd_root_dead_and_reviewed_replacement_access_blocked",
-      "evidence": "Reviewed 2026-06-22 current Kansas DD blocker artifacts plus the live state_resource_agencies DB rows. The only Kansas DD authority row still points at the dead legacy root https://dhhs.kansas.gov/dd, while the current reviewed replacement root on the KDADS host remains HTTP 403 Forbidden / access denied instead of serving DD, intake, or eligibility content. Kansas therefore still lacks a reviewed official DD authority leaf, but the next lane can now work from a deterministic DD repair packet that binds the stale DB row, the dead legacy root, and the blocked replacement host together on disk.",
-      "next_action": "use_kansas_dd_repair_packet_to_try_reviewed_alt_official_dd_leaves_before_any_new_statewide_probe"
+      "failure_code": "exact_kdads_and_kancare_dd_leaves_are_hostwide_access_denied_while_robots_stays_open",
+      "evidence": "Reviewed 2026-06-23 bounded live official Kansas DD probes on https://www.kdads.ks.gov/, https://www.kdads.ks.gov/services/developmental-disabilities, https://www.kdads.ks.gov/services/disability-services, https://www.kdads.ks.gov/commissions/home-community-based-services-hcbs, https://www.kdads.ks.gov/search?searchTerm=developmental%20disabilities, https://www.kdads.ks.gov/sitemap.xml, https://www.kancare.ks.gov/, https://www.kancare.ks.gov/home-and-community-based-services-hcbs, https://www.kancare.ks.gov/home/showpublisheddocument/6224/639013892674730000, https://www.kancare.ks.gov/search-results?searchtext=developmental%20disability, and https://www.kancare.ks.gov/sitemap.xml. Every exact KDADS and KanCare content, search, and sitemap surface returned the same Access Denied shell in bounded raw fetches, while https://www.kdads.ks.gov/robots.txt still responded publicly. Kansas therefore still lacks any raw-fetch-reviewable official DD authority leaf, and the blocker is now transport-specific rather than a generic stale-root claim.",
+      "next_action": "browser_assisted_or_reviewed_alt_official_dd_leaf_after_hostwide_access_denied_confirmation"
     },
     {
       "family": "district_or_county_education_routing",

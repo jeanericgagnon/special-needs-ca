@@ -1,0 +1,12 @@
+{
+  "batch": "batch_159_idaho_district_directory_nuance_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "district_directory_links_verified": 116,
+  "county_bearing_names_visible": true,
+  "explicit_county_contract_visible": false,
+  "district_special_education_fields_visible": false,
+  "lesson_added": false
+}
