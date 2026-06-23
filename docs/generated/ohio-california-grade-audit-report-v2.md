@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 88
-- primary_gap_reason: retired_official_county_family_no_live_successor_and_education_inventory_still_root_only
+- primary_gap_reason: retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Ohio Legal Help now provides reviewed Ohio-specific statewide legal-help routing from a first-party portal.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_retired_official_county_family (The retired Ohio JFS county-office family still has no live official successor on the legacy JFS host, guessed JFS child locator path, Medicaid-host guesses, or Ohio.gov resident-resource guess.)
+- county_local_disability_resources: blocked_retired_official_county_family_and_dead_public_search_surfaces (The retired Ohio JFS county-office family still has no live official successor on the legacy JFS host, guessed JFS child locator path, Medicaid-host guesses, Ohio.gov resident-resource guess, or obvious public search/sitemap surfaces.)
 
 ## Failure ledger
 
-- county_local_disability_resources: retired_official_county_family_no_live_successor_verified :: Reviewed 2026-06-23 bounded live official successor-path checks after the earlier JFS retirement finding. Legacy and guessed successor pages all resolved to the same dead family: https://jfs.ohio.gov/home/local-agencies-directory => HTTP 404; https://jfs.ohio.gov/home/local-agencies-directory/ => HTTP 404; https://medicaid.ohio.gov/families-and-individuals/county-agencies => HTTP 404; https://medicaid.ohio.gov/families-and-individuals/county-agencies/ => HTTP 404; https://medicaid.ohio.gov/resources/county-agencies => HTTP 404; https://medicaid.ohio.gov/resources/county-agencies/ => HTTP 404; https://ohio.gov/residents/resources/job-family-services-directory => HTTP 404; https://ohio.gov/residents/resources/job-family-services-directory/ => HTTP 404. This adds eight more 404 confirmations on top of the prior jfs.ohio.gov root/sitemap/robots and NXDOMAIN checks for odjfs.ohio.gov and jobandfamilyservices.ohio.gov, so the remaining DOI-hosted county dataset is still planning evidence only and no live official county-office directory or locator is verified.
+- county_local_disability_resources: retired_official_county_family_and_public_search_surfaces_still_dead :: Reviewed 2026-06-23 bounded live official successor-path checks after the earlier JFS retirement finding. Legacy and guessed successor pages still resolve to dead families: https://jfs.ohio.gov/home/local-agencies-directory => HTTP 404; https://jfs.ohio.gov/home/local-agencies-directory/ => HTTP 404; https://medicaid.ohio.gov/families-and-individuals/county-agencies => HTTP 404; https://medicaid.ohio.gov/families-and-individuals/county-agencies/ => HTTP 404; https://medicaid.ohio.gov/resources/county-agencies => HTTP 404; https://medicaid.ohio.gov/resources/county-agencies/ => HTTP 404; https://ohio.gov/residents/resources/job-family-services-directory => HTTP 404; https://ohio.gov/residents/resources/job-family-services-directory/ => HTTP 404. A final bounded public-discovery pass also found no live search or sitemap successor on the official hosts: https://ohio.gov/search?query=job%20and%20family%20services => HTTP 404; https://ohio.gov/search?query=county%20agencies => HTTP 404; https://ohio.gov/search?query=county%20job%20and%20family%20services => HTTP 404; https://medicaid.ohio.gov/sitemap.xml => HTTP 404; https://medicaid.ohio.gov/search?query=county%20agencies => HTTP 404; https://jfs.ohio.gov/search?query=county%20agencies => HTTP 404. This leaves the DOI-hosted county dataset as planning evidence only and no live official county-office directory, locator, search index, or sitemap contract is verified.
 - district_or_county_education_routing: education_inventory_still_mostly_root_only_after_bounded_leaf_review :: Reviewed 2026-06-23 Ohio school_district source inventory from disk. Only 4 distinct source URLs still preserve any path-level leaf signal, covering just 8 county rows total, while 49 distinct URLs remain generic roots only. The leaf-like URLs are https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts, https://www.scoesc.org/districts, https://www.wbesc.org/our-schools, https://www.mresc.org/districts-we-serve/; that is still not enough county-grade coverage to truthfully clear district_or_county_education_routing statewide.
 
 ## Verified source samples
@@ -41,15 +41,15 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.ohiolegalhelp.org/
 - able_program: verified_state_grade; samples=1; first=https://www.stableaccount.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_retired_official_county_family; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- county_local_disability_resources: blocked_retired_official_county_family_and_dead_public_search_surfaces; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_new_live_official_ohio_county_directory_or_locator_is_verified
+- [critical] county_local_disability_resources: hold_blocked_until_new_live_official_ohio_county_directory_locator_or_search_index_is_verified
 - [critical] district_or_county_education_routing: hold_blocked_until_more_exact_district_or_esc_leaf_targets_are_authored
 
 ## Ohio final blocker decision
 
-- County-local disability resources remain blocked because the retired Ohio JFS family still has no live official successor: the legacy root/path failures remain in place, the guessed JFS child locator path now also returns 404, the guessed Medicaid-host county-agency paths return 404, and an Ohio.gov resident-resource guess also returns 404.
+- County-local disability resources remain blocked because the retired Ohio JFS family still has no live official successor: the legacy root/path failures remain in place, the guessed JFS child locator path returns 404, the guessed Medicaid-host county-agency paths return 404, the Ohio.gov resident-resource guess returns 404, and the obvious Ohio.gov / JFS / Medicaid public search and sitemap surfaces also return 404.
 - District or county education routing remains blocked because only 4 distinct Ohio school-district source URLs on disk preserve path-level leaf signal, covering just 8 county rows, while 49 distinct URLs remain root-only.
 - Ohio is still truthfully BLOCKED and not index-safe.

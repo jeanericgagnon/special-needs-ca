@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "retired_official_county_family_no_live_successor_and_education_inventory_still_root_only",
+  "primary_gap_reason": "retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources",
@@ -44,9 +44,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_jfs_root_domain_retired_and_replacement_domains_unresolved",
-      "evidence": "Reviewed 2026-06-22 bounded live official checks on https://jfs.ohio.gov/, https://jfs.ohio.gov/sitemap.xml, https://jfs.ohio.gov/robots.txt, https://jfs.ohio.gov/county-agencies, https://jfs.ohio.gov/county/, https://jfs.ohio.gov/county/county_directory.pdf, https://jfs.ohio.gov/wps/portal/gov/jfs/, and https://jfs.ohio.gov/wps/portal/gov/jfs/county-agencies. All jfs.ohio.gov roots returned HTTP 404, while the obvious replacement authority domains https://odjfs.ohio.gov/ and https://jobandfamilyservices.ohio.gov/ failed DNS resolution. The remaining DOI-hosted county dataset is therefore planning evidence only, and no live official county-office directory or locator was verified in this bounded pass.",
-      "next_action": "hold_blocked_until_new_live_official_ohio_county_directory_or_locator_is_verified"
+      "failure_code": "retired_official_county_family_and_public_search_surfaces_still_dead",
+      "evidence": "Reviewed 2026-06-23 bounded live official successor-path checks after the earlier JFS retirement finding. Legacy and guessed successor pages still resolve to dead families: https://jfs.ohio.gov/home/local-agencies-directory => HTTP 404; https://jfs.ohio.gov/home/local-agencies-directory/ => HTTP 404; https://medicaid.ohio.gov/families-and-individuals/county-agencies => HTTP 404; https://medicaid.ohio.gov/families-and-individuals/county-agencies/ => HTTP 404; https://medicaid.ohio.gov/resources/county-agencies => HTTP 404; https://medicaid.ohio.gov/resources/county-agencies/ => HTTP 404; https://ohio.gov/residents/resources/job-family-services-directory => HTTP 404; https://ohio.gov/residents/resources/job-family-services-directory/ => HTTP 404. A final bounded public-discovery pass also found no live search or sitemap successor on the official hosts: https://ohio.gov/search?query=job%20and%20family%20services => HTTP 404; https://ohio.gov/search?query=county%20agencies => HTTP 404; https://ohio.gov/search?query=county%20job%20and%20family%20services => HTTP 404; https://medicaid.ohio.gov/sitemap.xml => HTTP 404; https://medicaid.ohio.gov/search?query=county%20agencies => HTTP 404; https://jfs.ohio.gov/search?query=county%20agencies => HTTP 404. This leaves the DOI-hosted county dataset as planning evidence only and no live official county-office directory, locator, search index, or sitemap contract is verified.",
+      "next_action": "hold_blocked_until_new_live_official_ohio_county_directory_locator_or_search_index_is_verified"
     },
     {
       "family": "district_or_county_education_routing",

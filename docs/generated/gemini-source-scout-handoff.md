@@ -25,7 +25,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - New York: `official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_no_public_ldss_replacement`
 - North Carolina: `generic_or_statewide_evidence_used_where_local_required`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
-- Ohio: `retired_official_county_family_no_live_successor_and_education_inventory_still_root_only`
+- Ohio: `retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only`
 - Oklahoma: `generic_state_education_page_collapse_and_dead_dhhs_locator_host`
 - Oregon: `live_state_special_education_root_without_district_contract_and_live_office_finder_root_without_county_extract`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
@@ -40,44 +40,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Ohio
 
 ### Blocker Reason
 
-`county_local_disability_resources` is still the only critical blocker. Alaska now has a live, reviewable DFCS Services page that preserves statewide phone routing for Adult Public Assistance and Apply for Medicaid through `888-804-6330`, but it still does not provide borough or census-area office mapping. Its exact service links still land on `health.alaska.gov` leaves that remain challenge-blocked in the low-token lane, and the DFCS contacts surface still exposes no county-equivalent office contract.
+`county_local_disability_resources` remains the top Ohio blocker in the state queue. The legacy JFS county-office family is still retired, the obvious Medicaid and Ohio.gov successor guesses still return 404, and a final bounded public-discovery pass found the same result on the obvious Ohio.gov, Medicaid, and JFS search/sitemap surfaces. Ohio still has no live public county-office directory, locator, search index, or sitemap contract to reopen this family.
 
 ### Exact Evidence Needed
 
-- Any first-party Alaska borough- or census-area-to-DPA office mapping contract on a public, reviewable official page.
-- Or, a live official DPA office directory leaf on `health.alaska.gov` that is reviewable without the challenge shell and explicitly maps local office coverage.
-- Or, a DFCS successor page that turns the current statewide phone relay into a true local office locator.
-- Generic statewide program phones and department contact hubs are still not enough.
+- Any first-party Ohio county office directory, locator, sitemap contract, or search index that is live on an official Ohio/JFS/Medicaid host.
+- Or, a reviewed public successor page that maps county departments of job and family services without relying on the retired JFS family.
+- Or, exact district or ESC-owned education leaves that materially expand county-grade education routing beyond the current root-only inventory.
+- Generic statewide program pages, DOI-hosted planning datasets, and root-only ESC homepages are still not enough.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
-- [Alaska DPA Offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska legacy office locations](https://health.alaska.gov/dpa/Pages/office-locations.aspx)
-- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
-- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
-- [Alaska health host sitemap](https://health.alaska.gov/sitemap.xml)
+- [Legacy Ohio JFS child locator guess](https://jfs.ohio.gov/home/local-agencies-directory)
+- [Legacy Ohio JFS child locator guess with slash](https://jfs.ohio.gov/home/local-agencies-directory/)
+- [Ohio Medicaid county agencies guess](https://medicaid.ohio.gov/families-and-individuals/county-agencies)
+- [Ohio Medicaid resources county agencies guess](https://medicaid.ohio.gov/resources/county-agencies)
+- [Ohio.gov resident resource guess](https://ohio.gov/residents/resources/job-family-services-directory)
+- [Ohio.gov search guess for job and family services](https://ohio.gov/search?query=job%20and%20family%20services)
+- [Ohio.gov search guess for county agencies](https://ohio.gov/search?query=county%20agencies)
+- [Ohio Medicaid sitemap guess](https://medicaid.ohio.gov/sitemap.xml)
+- [JFS search guess](https://jfs.ohio.gov/search?query=county%20agencies)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Alaska borough/census-area office directory or office-location table that is live and reviewable.
-- Any first-party DFCS or health-host leaf that ties specific boroughs or census areas to local Public Assistance routing.
-- Any official successor to the challenged health-host office directory that preserves county-equivalent local office mapping rather than statewide phone relay only.
+- Any live official Ohio county-office directory, locator, public sitemap, or public search result surface on Ohio/JFS/Medicaid hosts.
+- Any official successor domain for county departments of job and family services that is publicly reviewable and county-bearing.
+- Any exact Ohio district or ESC-owned leaf pages that materially expand county-grade education routing beyond the current 8-county leaf coverage.
 
-## Next State Order After Alaska
+## Next State Order After Ohio
 
-1. Ohio
-2. Minnesota
-3. Maine
-4. Idaho
-5. Arizona
-6. Massachusetts
-7. Oregon
-8. Oklahoma
-9. Utah
-10. New Hampshire
+1. Minnesota
+2. Maine
+3. Idaho
+4. Arizona
+5. Massachusetts
+6. Oregon
+7. Oklahoma
+8. Utah
+9. New Hampshire
+10. New Mexico

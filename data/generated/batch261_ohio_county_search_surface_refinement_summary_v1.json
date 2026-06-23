@@ -1,0 +1,9 @@
+{
+  "batch": "batch261_ohio_county_search_surface_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "ohio",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "additional_public_surface_404s": 6,
+  "primary_gap_reason": "retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only"
+}
