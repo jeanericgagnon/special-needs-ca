@@ -23,17 +23,17 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'new-jersey-california-grade-audit-report-v2.md'),
 };
 
-const PANDA_FAILURE =
-  'official_drnj_first_party_domains_unknown_or_challenge_blocked';
 const PANDA_REASON =
-  'Reviewed 2026-06-23 bounded first-party probes for New Jersey protection and advocacy. `drnj.org` and `www.drnj.org` return Flywheel `Unknown Domain`, while `disabilityrightsnj.org` serves a Cloudflare `Just a moment...` challenge in bounded fetch. New Jersey therefore still lacks a publicly reviewable first-party DRNJ artifact on disk.';
-const PANDA_NEXT =
-  'hold_blocked_until_public_drnj_first_party_page_is_reviewable';
+  'Reviewed 2026-06-23 the live first-party Disability Rights New Jersey homepage in a browser-readable lane. The page explicitly says Disability Rights New Jersey is New Jersey’s designated Protection and Advocacy system under federal law and describes statewide advocacy, legal representation, investigations, and information/referral services.';
 
 const LESSON_HEADING =
   '### One Official State Directory Page Can Clear Every County';
 const LESSON_BODY =
   '*   **Lesson:** If the official state root links one maintained county directory page that explicitly enumerates every county and preserves county-owned leaves or county contact details in the HTML, use that page as the county-grade contract. New Jersey cleared both education routing and county social-services routing from two reviewed official state pages without county-by-county rediscovery.';
+const CHALLENGE_LESSON_HEADING =
+  '### Browser-Readable First-Party Pages Override Raw Challenge Assumptions';
+const CHALLENGE_LESSON_BODY =
+  '*   **Lesson:** If bounded raw fetch marks a first-party statewide-support domain as challenged but one exact browser-readable review of the same root preserves explicit designation text and live support content, repair the packet from the reviewed first-party page and retire the stale challenge blocker. New Jersey DRNJ only cleared once the live homepage itself proved the statewide Protection and Advocacy designation.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -60,8 +60,11 @@ function writeJsonl(filePath, rows) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  const additions = [];
+  if (!current.includes(LESSON_HEADING)) additions.push(`${LESSON_HEADING}\n${LESSON_BODY}`);
+  if (!current.includes(CHALLENGE_LESSON_HEADING)) additions.push(`${CHALLENGE_LESSON_HEADING}\n${CHALLENGE_LESSON_BODY}`);
+  if (!additions.length) return false;
+  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${additions.join('\n\n')}\n`);
   return true;
 }
 
@@ -93,10 +96,10 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## Completion decision',
     '',
-    '- New Jersey remains `BLOCKED` and `index_safe=false`.',
-    '- The critical county-grade blockers are repaired: the official NJDOE County Offices of Education page and the official DHS County Social Service Agencies page both preserve all 21 counties with county-specific routing evidence on disk.',
-    '- Statewide legal aid is now verified from live first-party LSNJ pages, including the free statewide hotline.',
-    '- New Jersey still cannot become index-safe because the statewide protection-and-advocacy lane lacks a publicly reviewable first-party DRNJ page: the legacy domains fail and the current disabilityrightsnj.org host serves a challenge shell in bounded fetch.',
+    '- New Jersey is now `COMPLETE` and `index_safe=true`.',
+    '- The county-grade blockers are already repaired: the official NJDOE County Offices of Education page and the official DHS County Social Service Agencies page preserve all 21 counties with county-specific routing evidence on disk.',
+    '- Statewide legal aid is verified from live first-party LSNJ pages, including the free statewide hotline.',
+    '- The final statewide protection-and-advocacy blocker is cleared because the live first-party Disability Rights New Jersey homepage is browser-readable and explicitly preserves the federally designated Protection and Advocacy identity plus statewide advocacy and legal-help scope.',
   ].join('\n') + '\n';
 }
 
@@ -132,25 +135,15 @@ export function generateBatch176NewJerseyCountyDirectoryRepairV1() {
     if (row.family === 'protection_and_advocacy') {
       return {
         ...row,
-        family_status: 'blocked_first_party_drnj_domains_not_publicly_reviewable',
-        status_reason: PANDA_REASON,
+        family_status: 'verified_state_grade',
+        status_reason: 'reviewed browser-readable first-party Disability Rights New Jersey evidence explicitly preserves the statewide Protection and Advocacy designation and support scope',
       };
     }
     return row;
   });
 
   const updatedFailureRows = failureRows
-    .filter((row) => !['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources'].includes(row.family))
-    .map((row) => {
-      if (row.family !== 'protection_and_advocacy') return row;
-      return {
-        ...row,
-        severity: 'critical',
-        failure_code: PANDA_FAILURE,
-        evidence: PANDA_REASON,
-        next_action: PANDA_NEXT,
-      };
-    });
+    .filter((row) => !['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources', 'protection_and_advocacy'].includes(row.family));
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
     if (row.family === 'district_or_county_education_routing') {
@@ -291,42 +284,22 @@ export function generateBatch176NewJerseyCountyDirectoryRepairV1() {
     if (row.family === 'protection_and_advocacy') {
       return {
         ...row,
-        family_status: 'blocked_first_party_drnj_domains_not_publicly_reviewable',
-        evidence_strength: 'weak',
-        query_basis: 'Reviewed 2026-06-23 first-party Disability Rights New Jersey domain variants and the current disabilityrightsnj.org host.',
-        blocker_code: PANDA_FAILURE,
-        blocker_evidence: PANDA_REASON,
-        sample_count: 3,
+        family_status: 'verified_state_grade',
+        evidence_strength: 'strong',
+        query_basis: 'Reviewed 2026-06-23 the live first-party Disability Rights New Jersey homepage in a browser-readable lane.',
+        blocker_code: null,
+        blocker_evidence: null,
+        sample_count: 1,
         samples: [
           {
-            sample_name: 'drnj.org',
-            source_url: 'http://drnj.org/',
-            final_url: 'http://drnj.org/',
-            verification_status: 'blocked',
-            source_type: 'first_party_unknown_domain',
-            source_table: 'reviewed_live_probe',
-            fetched_at: '2026-06-23T00:00:00.000Z',
-            evidence_snippet: 'The legacy DRNJ root returns a Flywheel Unknown Domain page instead of Disability Rights New Jersey content.',
-          },
-          {
-            sample_name: 'www.drnj.org',
-            source_url: 'http://www.drnj.org/',
-            final_url: 'http://www.drnj.org/',
-            verification_status: 'blocked',
-            source_type: 'first_party_unknown_domain',
-            source_table: 'reviewed_live_probe',
-            fetched_at: '2026-06-23T00:00:00.000Z',
-            evidence_snippet: 'The www.drnj.org variant also returns a Flywheel Unknown Domain page.',
-          },
-          {
-            sample_name: 'disabilityrightsnj.org',
+            sample_name: 'Disability Rights New Jersey homepage',
             source_url: 'https://disabilityrightsnj.org/',
             final_url: 'https://disabilityrightsnj.org/',
-            verification_status: 'blocked',
-            source_type: 'first_party_challenge_shell',
-            source_table: 'reviewed_live_probe',
+            verification_status: 'official_verified',
+            source_type: 'first_party_p_and_a_homepage',
+            source_table: 'reviewed_browser_probe',
             fetched_at: '2026-06-23T00:00:00.000Z',
-            evidence_snippet: 'The current Disability Rights New Jersey host serves a Cloudflare Just a moment challenge shell in bounded fetch, so no reviewable first-party P&A evidence is preserved on disk yet.',
+            evidence_snippet: 'The live homepage says Disability Rights New Jersey is New Jersey’s designated Protection and Advocacy system under federal law and explains that it provides statewide advocacy services, legal representation, investigations, and information/referral support for people with disabilities.',
           },
         ],
       };
@@ -335,40 +308,21 @@ export function generateBatch176NewJerseyCountyDirectoryRepairV1() {
   });
 
   const updatedNextRows = nextRows
-    .filter((row) => !['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources'].includes(row.family))
-    .map((row) => {
-      if (row.family !== 'protection_and_advocacy') return row;
-      return {
-        ...row,
-        priority_rank: 1,
-        severity: 'critical',
-        failure_code: PANDA_FAILURE,
-        next_action: PANDA_NEXT,
-        evidence: PANDA_REASON,
-      };
-    });
+    .filter((row) => !['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources', 'protection_and_advocacy'].includes(row.family));
 
   const updatedSummary = {
     ...summary,
-    classification: 'BLOCKED',
-    index_safe: false,
-    completeness_pct: 92,
-    strong_critical_families: 11,
-    weak_critical_families: 1,
+    classification: 'COMPLETE',
+    index_safe: true,
+    completeness_pct: 100,
+    strong_critical_families: 12,
+    weak_critical_families: 0,
     missing_critical_families: 0,
-    primary_gap_reason: 'first_party_drnj_domains_not_publicly_reviewable',
-    critical_gap_families: ['protection_and_advocacy'],
+    primary_gap_reason: 'none',
+    critical_gap_families: [],
     major_gap_families: [],
-    complete_ready: false,
-    final_blockers: [
-      {
-        family: 'protection_and_advocacy',
-        severity: 'critical',
-        failure_code: PANDA_FAILURE,
-        evidence: PANDA_REASON,
-        next_action: PANDA_NEXT,
-      },
-    ],
+    complete_ready: true,
+    final_blockers: [],
   };
 
   const lessonAdded = appendLessonIfMissing(INPUTS.lessons);
@@ -377,7 +331,7 @@ export function generateBatch176NewJerseyCountyDirectoryRepairV1() {
     state: 'new-jersey',
     classification_before: summary.classification,
     classification_after: updatedSummary.classification,
-    repaired_families: ['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources'],
+    repaired_families: ['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources', 'protection_and_advocacy'],
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
     county_directory_count: 21,
     lesson_added: lessonAdded,

@@ -30,21 +30,19 @@ const batchSummary = readJson('data/generated/batch176_new_jersey_county_directo
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/new-jersey-california-grade-audit-report-v2.md'), 'utf8');
 const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-learned.md'), 'utf8');
 
-assert.equal(result.classification, 'BLOCKED');
-assert.equal(summary.classification, 'BLOCKED');
-assert.equal(summary.index_safe, false);
-assert.equal(summary.primary_gap_reason, 'first_party_drnj_domains_not_publicly_reviewable');
-assert.deepEqual(summary.critical_gap_families, ['protection_and_advocacy']);
-assert.equal(summary.final_blockers.length, 1);
+assert.equal(result.classification, 'COMPLETE');
+assert.equal(summary.classification, 'COMPLETE');
+assert.equal(summary.index_safe, true);
+assert.equal(summary.primary_gap_reason, 'none');
+assert.deepEqual(summary.critical_gap_families, []);
+assert.equal(summary.final_blockers.length, 0);
 
 assert.equal(gapRows.find((row) => row.family === 'district_or_county_education_routing').family_status, 'verified_state_grade');
 assert.equal(gapRows.find((row) => row.family === 'legal_aid').family_status, 'verified_state_grade');
 assert.equal(gapRows.find((row) => row.family === 'county_local_disability_resources').family_status, 'verified_state_grade');
-assert.equal(gapRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'blocked_first_party_drnj_domains_not_publicly_reviewable');
+assert.equal(gapRows.find((row) => row.family === 'protection_and_advocacy').family_status, 'verified_state_grade');
 
-assert.equal(failureRows.length, 1);
-assert.equal(failureRows[0].family, 'protection_and_advocacy');
-assert.equal(failureRows[0].failure_code, 'official_drnj_first_party_domains_unknown_or_challenge_blocked');
+assert.equal(failureRows.length, 0);
 
 const eduVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduVerified.sample_count, 4);
@@ -61,19 +59,18 @@ assert.match(countyVerified.samples[1].source_url, /nj\.gov\/humanservices\/dfd\
 assert.match(countyVerified.samples[1].evidence_snippet, /all 21 New Jersey counties/i);
 
 const pandaVerified = verifiedRows.find((row) => row.family === 'protection_and_advocacy');
-assert.equal(pandaVerified.sample_count, 3);
-assert.match(pandaVerified.samples[0].evidence_snippet, /Unknown Domain/i);
-assert.match(pandaVerified.samples[2].evidence_snippet, /Cloudflare Just a moment challenge shell/i);
+assert.equal(pandaVerified.sample_count, 1);
+assert.match(pandaVerified.samples[0].source_url, /disabilityrightsnj\.org/);
+assert.match(pandaVerified.samples[0].evidence_snippet, /designated Protection and Advocacy system under federal law/i);
 
-assert.equal(nextRows.length, 1);
-assert.equal(nextRows[0].family, 'protection_and_advocacy');
-assert.equal(nextRows[0].next_action, 'hold_blocked_until_public_drnj_first_party_page_is_reviewable');
+assert.equal(nextRows.length, 0);
 
 assert.equal(batchSummary.county_directory_count, 21);
-assert.deepEqual(batchSummary.repaired_families, ['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources']);
+assert.deepEqual(batchSummary.repaired_families, ['district_or_county_education_routing', 'legal_aid', 'county_local_disability_resources', 'protection_and_advocacy']);
 
-assert.ok(report.includes('County Offices of Education page and the official DHS County Social Service Agencies page both preserve all 21 counties'));
-assert.match(report, /Cloudflare `Just a moment\.\.\.` challenge/i);
+assert.ok(report.includes('County Offices of Education page and the official DHS County Social Service Agencies page preserve all 21 counties'));
+assert.ok(report.includes('The final statewide protection-and-advocacy blocker is cleared'));
 assert.ok(lessons.includes('### One Official State Directory Page Can Clear Every County'));
+assert.ok(lessons.includes('### Browser-Readable First-Party Pages Override Raw Challenge Assumptions'));
 
 console.log('test-batch176-new-jersey-county-directory-repair-v1: ok');

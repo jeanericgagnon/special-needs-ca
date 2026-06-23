@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-23T07:37:33.806Z",
+  "generatedAt": "2026-06-23T08:06:05.842Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 19,
-    "BLOCKED": 31
+    "COMPLETE": 20,
+    "BLOCKED": 30
   },
-  "indexSafeCount": 19,
+  "indexSafeCount": 20,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -2088,8 +2088,8 @@
       "stateId": "new-jersey",
       "stateCode": "NJ",
       "stateName": "New Jersey",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -2097,11 +2097,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 21,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 92,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "new-jersey",
         "state_code": "NJ",
@@ -2142,7 +2142,7 @@
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "blocked_first_party_drnj_domains_not_publicly_reviewable",
+        "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
@@ -2151,7 +2151,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_17_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "first_party_drnj_domains_not_publicly_reviewable",
+      "packetPrimaryGapReason": "none",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

@@ -3,20 +3,18 @@
   "state_code": "NJ",
   "state_name": "New Jersey",
   "batch": "batch_17_procedure_hardening_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 21,
-  "completeness_pct": 92,
-  "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "first_party_drnj_domains_not_publicly_reviewable",
+  "primary_gap_reason": "none",
   "recommended_batch": "batch_3_procedure_hardening",
-  "critical_gap_families": [
-    "protection_and_advocacy"
-  ],
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -32,19 +30,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "protection_and_advocacy",
-      "severity": "critical",
-      "failure_code": "official_drnj_first_party_domains_unknown_or_challenge_blocked",
-      "evidence": "Reviewed 2026-06-23 bounded first-party probes for New Jersey protection and advocacy. `drnj.org` and `www.drnj.org` return Flywheel `Unknown Domain`, while `disabilityrightsnj.org` serves a Cloudflare `Just a moment...` challenge in bounded fetch. New Jersey therefore still lacks a publicly reviewable first-party DRNJ artifact on disk.",
-      "next_action": "hold_blocked_until_public_drnj_first_party_page_is_reviewable"
-    }
-  ]
+  "final_blockers": []
 }

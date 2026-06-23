@@ -55,7 +55,7 @@ assert.equal(texasNext.length, 1, 'Texas packet next-action queue must have a si
 assert.equal(priorityV3.length, 50, 'v3 priority queue must still cover all 50 states');
 assert.ok(priorityV3.every((row) => row.state_packet_generated === true), 'Every v3 priority row must confirm packet generation');
 assert.ok(priorityV3.some((row) => row.state === 'texas' && row.repair_lane === 'maintain_truth_only'), 'Texas must move to maintain_truth_only in v3');
-assert.ok(priorityV3.some((row) => row.state === 'new-jersey' && row.repair_lane === 'repair_from_state_packet'), 'Non-complete states must use repair_from_state_packet in v3');
+assert.ok(priorityV3.some((row) => row.state === 'new-jersey' && row.repair_lane === 'maintain_truth_only'), 'New Jersey must move to maintain_truth_only once it becomes COMPLETE');
 
 const packetSummaries = fs.readdirSync(path.join(repoRoot, 'data', 'generated'))
   .filter((file) => file.endsWith('_california_grade_summary_v2.json'))

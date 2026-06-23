@@ -9,10 +9,10 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Classification counts
 
-- COMPLETE: 19
-- BLOCKED: 31
+- COMPLETE: 20
+- BLOCKED: 30
 
-- index-safe states: 19
+- index-safe states: 20
 
 ## Notes
 
