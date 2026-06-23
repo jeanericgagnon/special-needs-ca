@@ -45,21 +45,27 @@ assert.equal(
 assert.match(summary.final_blockers[0].evidence, /ISD Plans/i);
 assert.match(summary.final_blockers[0].evidence, /guidance PDF/i);
 assert.match(summary.final_blockers[0].evidence, /generic School District Maps app/i);
+assert.match(summary.final_blockers[0].evidence, /83 `official_verified` Michigan school_district rows/i);
 
 const educationGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationGap);
 assert.match(educationGap.status_reason, /ISD Plans/i);
 assert.match(educationGap.status_reason, /guidance/i);
+assert.match(educationGap.status_reason, /83 generic county fallback rows/i);
 
 const educationFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationFailure);
 assert.match(educationFailure.evidence, /ISD Plans/i);
 assert.match(educationFailure.evidence, /ArcGIS/i);
+assert.match(educationFailure.evidence, /County fallback/i);
 
 const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationVerified);
 assert.match(educationVerified.query_basis, /ISD Plans leaf/i);
+assert.match(educationVerified.query_basis, /bounded DB sample/i);
 assert.match(educationVerified.blocker_evidence, /guidance PDF/i);
+assert.equal(educationVerified.sample_count, 5);
+assert.equal(educationVerified.samples.at(-1).source_type, 'generic_statewide_county_fallback_row');
 
 const nextAction = nextRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(nextAction);
@@ -73,6 +79,8 @@ assert.equal(batchSummary.blocker_basis, 'official_isd_plans_leaf_plus_arcgis_co
 assert.match(report, /ISD Plans/i);
 assert.match(report, /guidance PDF/i);
 assert.match(report, /generic ArcGIS district\/ISD map/i);
+assert.match(report, /83 Michigan school-district rows are cloned `County fallback` records/i);
 assert.match(lessons, /Guidance-Only ISD Planning Pages Do Not Satisfy Local Education Routing/);
+assert.match(lessons, /Cloned Statewide Education Fallback Rows Do Not Count As Local Routing Coverage/);
 
 console.log('test-batch177-michigan-isd-plans-blocker-refresh-v1: ok');

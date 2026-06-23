@@ -26,7 +26,7 @@ const OUTPUTS = {
 const EDUCATION_FAILURE =
   'live_nde_host_accessible_but_no_county_or_esu_routing_contract_reviewed';
 const EDUCATION_REASON =
-  'Reviewed 2026-06-23 bounded browser-style probes on the live official NDE host. The Special Education page and Contact Us / SPED Staff Directory page are publicly reachable again, but they still preserve statewide dispute/staff content only. The only clearly local-looking outbound program link from the SPED stack was the single ESU 9 Deaf or Hard of Hearing program page, which is not a statewide county-to-ESU or county-to-district routing contract. No reviewed district-owned, ESU-wide, or county-mapped education-routing surface is preserved on disk yet.';
+  'Reviewed 2026-06-23 bounded browser-style probes on the live official NDE host. The Special Education page and Contact Us / SPED Staff Directory page are publicly reachable again, but they still preserve statewide dispute/staff content only. The live `Service Agencies/Providers` page is also public, yet its visible contract is a provider application workflow rather than an ESU or county routing table. The only clearly local-looking outbound program link from the SPED stack was the single ESU 9 Deaf or Hard of Hearing program page, which is not a statewide county-to-ESU or county-to-district routing contract. No reviewed district-owned, ESU-wide, or county-mapped education-routing surface is preserved on disk yet.';
 const EDUCATION_NEXT =
   'hold_blocked_until_live_official_county_to_esu_or_district_contract_is_reviewed';
 
@@ -41,6 +41,10 @@ const LESSON_HEADING =
   '### Open ExperienceBuilder Configs Can Prove A County Layer Is Still Incomplete';
 const LESSON_BODY =
   '*   **Lesson:** If an official locator app opens but the visible page is only an `Experience` shell, check the public ExperienceBuilder item data before giving up. Nebraska’s config exposed the exact web map and office layer URLs, which let us prove the official office layer only covered 37 counties. That saved more blind probing while still keeping the county-office family blocked.';
+const EDUCATION_LESSON_HEADING =
+  '### Service-Agency Application Pages Do Not Count As ESU Or County Routing';
+const EDUCATION_LESSON_BODY =
+  '*   **Lesson:** If a live state special-education page exposes a `Service Agencies/Providers` leaf, inspect whether it is a public routing table or just a provider application workflow. Nebraska’s page stayed statewide and application-oriented, so it could not replace a missing county-to-ESU education contract.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -67,8 +71,11 @@ function writeJsonl(filePath, rows) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  const additions = [];
+  if (!current.includes(LESSON_HEADING)) additions.push(`${LESSON_HEADING}\n${LESSON_BODY}`);
+  if (!current.includes(EDUCATION_LESSON_HEADING)) additions.push(`${EDUCATION_LESSON_HEADING}\n${EDUCATION_LESSON_BODY}`);
+  if (!additions.length) return false;
+  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${additions.join('\n\n')}\n`);
   return true;
 }
 
@@ -102,7 +109,7 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '- Nebraska remains `BLOCKED` and `index_safe=false`.',
     '- The old statewide-only Nebraska blockers are now sharper and tied to current official evidence rather than stale assumptions.',
-    '- Education remains blocked because the live NDE SPED host is reachable but still does not preserve a reviewed county-to-ESU or district-owned routing contract on disk.',
+    '- Education remains blocked because the live NDE SPED host is reachable but still does not preserve a reviewed county-to-ESU or district-owned routing contract on disk, and the public Service Agencies/Providers leaf is application-oriented rather than local-routing evidence.',
     '- County/local disability resources remain blocked because the open official DHHS office app config proves the public office layer only names 37 counties and the county boundary layer has no office assignment fields for the remaining 56 counties.',
   ].join('\n') + '\n';
 }
@@ -157,10 +164,10 @@ export function generateBatch173NebraskaOpenConfigBlockerRefreshV1() {
       return {
         ...row,
         family_status: 'blocked_live_nde_host_without_county_or_esu_contract',
-        query_basis: 'Reviewed 2026-06-23 bounded browser-style probes on the live NDE special-education stack plus the SPED staff directory page.',
+        query_basis: 'Reviewed 2026-06-23 bounded browser-style probes on the live NDE special-education stack, the SPED staff directory page, and the live Service Agencies/Providers page.',
         blocker_code: EDUCATION_FAILURE,
         blocker_evidence: EDUCATION_REASON,
-        sample_count: 3,
+        sample_count: 4,
         samples: [
           {
             sample_name: 'Nebraska Special Education',
@@ -181,6 +188,16 @@ export function generateBatch173NebraskaOpenConfigBlockerRefreshV1() {
             source_table: 'batch173_nebraska_open_config_blocker_refresh',
             fetched_at: '2026-06-23T00:00:00.000Z',
             evidence_snippet: 'The live SPED contact page is a statewide staff directory and does not preserve a county-to-ESU or county-to-district routing table.',
+          },
+          {
+            sample_name: 'Service Agencies/Providers',
+            source_url: 'https://www.education.ne.gov/sped/service-agencies/',
+            final_url: 'https://www.education.ne.gov/sped/service-agencies/',
+            verification_status: 'reviewed',
+            source_type: 'official_statewide_provider_application_page',
+            source_table: 'batch173_nebraska_open_config_blocker_refresh',
+            fetched_at: '2026-06-23T00:00:00.000Z',
+            evidence_snippet: 'The live Service Agencies/Providers page stays public on the NDE host, but its visible contract is a Service Agency/Provider Application workflow and paraprofessional agreement resources rather than a county-to-ESU routing table.',
           },
           {
             sample_name: 'ESU 9 program link from SPED stack',

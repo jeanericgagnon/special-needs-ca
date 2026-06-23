@@ -27,15 +27,20 @@ const PRIMARY_GAP_REASON =
   'official_mde_isd_plans_page_is_guidance_only_and_arcgis_layers_still_lack_local_routing_contract';
 
 const STATUS_REASON =
-  'Reviewed 2026-06-22/2026-06-23 the official Michigan MDE education lane more tightly: the live Special Education page and sitemap surface an exact ISD Plans leaf, but that page only publishes statewide planning guidance, a webinar link, and the generic school-district ArcGIS map. It does not enumerate district-owned special-education leaves, county-to-ISD routing, ISD contact directories, or a local education routing contract. The public ArcGIS district and ISD layers still expose geometry and identifier fields only, so Michigan remains blocked on district_or_county_education_routing.';
+  'Reviewed 2026-06-22/2026-06-23 the official Michigan MDE education lane more tightly: the live Special Education page and sitemap surface an exact ISD Plans leaf, but that page only publishes statewide planning guidance, a webinar link, and the generic school-district ArcGIS map. It does not enumerate district-owned special-education leaves, county-to-ISD routing, ISD contact directories, or a local education routing contract. The public ArcGIS district and ISD layers still expose geometry and identifier fields only, and the DB still carries 83 generic county fallback rows cloned from the statewide MDE Office of Special Education root, so Michigan remains blocked on district_or_county_education_routing.';
 
 const BLOCKER_EVIDENCE =
-  'Reviewed 2026-06-22/2026-06-23 the official Michigan MDE Special Education page, sitemap, ISD Plans leaf, and public ArcGIS district/ISD map stack. The exact leaf https://www.michigan.gov/mde/services/special-education/program-planning/isd-plans is live, titled "ISD Plans," and links only to statewide guidance PDF, a webinar, and the generic School District Maps app. It does not publish an ISD-by-ISD directory, county-to-ISD contract, district-owned special-education routing leaves, or local routing contacts. The public ArcGIS district and ISD layers still expose geometry and identifiers like FIPSCODE, DCODE, and ISD/ISDCode without routing contacts or local special-education evidence, so Michigan cannot pass county-grade education routing.';
+  'Reviewed 2026-06-22/2026-06-23 the official Michigan MDE Special Education page, sitemap, ISD Plans leaf, and public ArcGIS district/ISD map stack. The exact leaf https://www.michigan.gov/mde/services/special-education/program-planning/isd-plans is live, titled "ISD Plans," and links only to statewide guidance PDF, a webinar, and the generic School District Maps app. It does not publish an ISD-by-ISD directory, county-to-ISD contract, district-owned special-education routing leaves, or local routing contacts. The public ArcGIS district and ISD layers still expose geometry and identifiers like FIPSCODE, DCODE, and ISD/ISDCode without routing contacts or local special-education evidence. A bounded DB check also shows 83 `official_verified` Michigan school_district rows named `Michigan Department of Education - Office of Special Education (<County> County fallback)` that all reuse the same statewide source URL `https://www.michigan.gov/mde/services/special-education`; those cloned statewide fallback rows do not satisfy county-grade routing evidence. Michigan therefore cannot pass county-grade education routing.';
 
 const LESSON_HEADING =
   '### Guidance-Only ISD Planning Pages Do Not Satisfy Local Education Routing';
 const LESSON_BODY =
   '*   **Lesson:** If a state special-education sitemap surfaces an exact ISD or district-planning leaf, inspect whether it actually enumerates local contacts or just publishes statewide guidance. Michigan’s live `ISD Plans` page only linked a guidance PDF, webinar, and generic map app, so it sharpened the blocker but still did not count as county-grade routing evidence.';
+
+const FALLBACK_LESSON_HEADING =
+  '### Cloned Statewide Education Fallback Rows Do Not Count As Local Routing Coverage';
+const FALLBACK_LESSON_BODY =
+  '*   **Lesson:** If a state packet still carries county-tagged district rows that all point to the same statewide special-education root, treat them as stale fallback inventory, not local routing progress. Michigan still had 83 `official_verified` county fallback rows cloned from the statewide MDE special-education page, and none of them counted toward county-grade education coverage.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -61,8 +66,11 @@ function writeJsonl(filePath, rows) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  const additions = [];
+  if (!current.includes(LESSON_HEADING)) additions.push(`${LESSON_HEADING}\n${LESSON_BODY}`);
+  if (!current.includes(FALLBACK_LESSON_HEADING)) additions.push(`${FALLBACK_LESSON_HEADING}\n${FALLBACK_LESSON_BODY}`);
+  if (!additions.length) return false;
+  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${additions.join('\n\n')}\n`);
   return true;
 }
 
@@ -96,6 +104,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '- County-local disability resources still pass at county grade from the reviewed MDHHS county-office leaves.',
     '- District or county education routing remains blocked because the live MDE education lane now proves only statewide ISD-planning guidance plus a generic ArcGIS district/ISD map, not a county-grade local routing contract.',
+    '- A bounded DB check also confirms the remaining 83 Michigan school-district rows are cloned `County fallback` records pointing at the statewide MDE special-education root, so they cannot be treated as local-routing coverage.',
     '- Michigan therefore remains `BLOCKED` and `index_safe=false` until the education-routing blocker is replaced with county-grade official routing evidence.',
   ].join('\n') + '\n';
 }
@@ -123,8 +132,20 @@ export function generateBatch177MichiganIsdPlansBlockerRefreshV1() {
     row.family === 'district_or_county_education_routing'
       ? {
           ...row,
-          query_basis: 'Reviewed 2026-06-22/2026-06-23 the official Michigan MDE Special Education sitemap, ISD Plans leaf, and public district/ISD ArcGIS contract.',
+          query_basis: 'Reviewed 2026-06-22/2026-06-23 the official Michigan MDE Special Education sitemap, ISD Plans leaf, the public district/ISD ArcGIS contract, and a bounded DB sample of cloned county fallback rows.',
           blocker_evidence: BLOCKER_EVIDENCE,
+          sample_count: 5,
+          samples: [
+            ...(row.samples || []).slice(0, 4),
+            {
+              sample_name: 'Michigan county fallback school_district row sample',
+              source_url: 'https://www.michigan.gov/mde/services/special-education',
+              verification_status: 'blocked',
+              source_type: 'generic_statewide_county_fallback_row',
+              source_table: 'bounded_db_check',
+              evidence_snippet: 'A bounded DB check found 83 Michigan school_district rows named `Michigan Department of Education - Office of Special Education (<County> County fallback)` that all reuse the statewide MDE special-education root with blank local contact fields.'
+            }
+          ]
         }
       : row
   );

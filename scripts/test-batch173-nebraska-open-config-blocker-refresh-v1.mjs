@@ -39,12 +39,14 @@ assert.equal(summary.final_blockers.length, 2);
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
 assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_live_nde_host_without_county_or_esu_contract');
 assert.match(byFamily.get('district_or_county_education_routing').status_reason, /SPED Staff Directory/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Service Agencies\/Providers/i);
 assert.equal(byFamily.get('county_local_disability_resources').family_status, 'blocked_public_office_layer_only_37_counties');
 assert.match(byFamily.get('county_local_disability_resources').status_reason, /42 office rows and 37 distinct USER_County values/i);
 
 const eduFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduFailure.failure_code, 'live_nde_host_accessible_but_no_county_or_esu_routing_contract_reviewed');
 assert.match(eduFailure.evidence, /single ESU 9 Deaf or Hard of Hearing program page/i);
+assert.match(eduFailure.evidence, /provider application workflow/i);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyFailure.failure_code, 'official_public_office_experiencebuilder_config_opens_but_public_layer_only_covers_37_counties');
@@ -52,8 +54,10 @@ assert.match(countyFailure.evidence, /county-boundary layer carries only county 
 
 const eduVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduVerified.family_status, 'blocked_live_nde_host_without_county_or_esu_contract');
-assert.equal(eduVerified.sample_count, 3);
+assert.equal(eduVerified.sample_count, 4);
 assert.match(eduVerified.samples[1].source_url, /education\.ne\.gov\/sped\/contact-us/);
+assert.match(eduVerified.samples[2].source_url, /education\.ne\.gov\/sped\/service-agencies/);
+assert.match(eduVerified.samples[2].evidence_snippet, /Service Agency\/Provider Application/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyVerified.family_status, 'blocked_public_office_layer_only_37_counties');
@@ -69,7 +73,9 @@ assert.equal(batchSummary.office_layer_distinct_counties, 37);
 assert.equal(batchSummary.county_total, 93);
 
 assert.ok(report.includes('Education remains blocked because the live NDE SPED host is reachable'));
+assert.ok(report.includes('Service Agencies/Providers leaf is application-oriented'));
 assert.ok(report.includes('open official DHHS office app config proves the public office layer only names 37 counties'));
 assert.ok(lessons.includes('### Open ExperienceBuilder Configs Can Prove A County Layer Is Still Incomplete'));
+assert.ok(lessons.includes('### Service-Agency Application Pages Do Not Count As ESU Or County Routing'));
 
 console.log('test-batch173-nebraska-open-config-blocker-refresh-v1: ok');

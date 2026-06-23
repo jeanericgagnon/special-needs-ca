@@ -782,3 +782,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Public OrgId Dropdowns Eliminate Selector Discovery
 *   **Lesson:** If a first-party contact selector renders real organization option values in the HTML, stop treating OrgId discovery as an open problem. Maine’s public selector already exposed OrgIds like `2 Acton Public Schools`, `14 Auburn Public Schools`, and `42 Bangor Public Schools`, so later work should focus only on result capture or export recovery.
+
+### Cloned Statewide Education Fallback Rows Do Not Count As Local Routing Coverage
+*   **Lesson:** If a state packet still carries county-tagged district rows that all point to the same statewide special-education root, treat them as stale fallback inventory, not local routing progress. Michigan still had 83 `official_verified` county fallback rows cloned from the statewide MDE special-education page, and none of them counted toward county-grade education coverage.
+
+### Official Directory Roots Can Leak Exact Child Endpoints Even When Public Access Stays Blocked
+*   **Lesson:** If an official directory root advertises exports, inspect the root HTML for exact child endpoints before guessing new paths. Minnesota's live MDE-ORG page exposed `MDEAnalytics/Data.jsp`, `Summary.jsp`, `Sleds.jsp`, `DataSecure.jsp`, and `MdeOrgView/`, which proved the right first-party child family even though the public children still collapsed into Radware captcha or a miswired shell.
+
+### Service-Agency Application Pages Do Not Count As ESU Or County Routing
+*   **Lesson:** If a live state special-education page exposes a `Service Agencies/Providers` leaf, inspect whether it is a public routing table or just a provider application workflow. Nebraska’s page stayed statewide and application-oriented, so it could not replace a missing county-to-ESU education contract.

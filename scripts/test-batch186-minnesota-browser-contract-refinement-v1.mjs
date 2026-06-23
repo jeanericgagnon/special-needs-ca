@@ -38,6 +38,7 @@ const educationGap = gapRows.find((row) => row.family === 'district_or_county_ed
 assert.equal(educationGap.family_status, 'blocked_live_mdeorg_root_with_miswired_or_challenged_child_contracts');
 assert.match(educationGap.status_reason, /slide-style course shell/i);
 assert.match(educationGap.status_reason, /Radware captcha/i);
+assert.match(educationGap.status_reason, /MDEAnalytics\/Data\.jsp/i);
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyGap.family_status, 'blocked_replatformed_mn_dhs_family_on_live_radware_captcha');
@@ -47,6 +48,8 @@ const educationFailure = failureRows.find((row) => row.family === 'district_or_c
 assert.equal(educationFailure.failure_code, 'official_mdeorg_root_live_but_child_contract_is_miswired_or_challenged');
 assert.match(educationFailure.evidence, /searchable database/i);
 assert.match(educationFailure.evidence, /slide-style course shell/i);
+assert.match(educationFailure.evidence, /MdeOrgView/i);
+assert.match(educationFailure.evidence, /DataSecure\.jsp/i);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyFailure.failure_code, 'replatformed_mn_dhs_county_tribal_family_lands_on_live_radware_captcha');
@@ -56,6 +59,8 @@ assert.match(countyFailure.evidence, /Radware Bot Manager Captcha/i);
 const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(educationVerified.blocker_code, 'official_mdeorg_root_live_but_child_contract_is_miswired_or_challenged');
 assert.ok(educationVerified.samples.find((row) => row.source_url === 'https://education.mn.gov/mdeprod/groups/communications/documents/unzip/048426/index.html'));
+assert.match(educationVerified.samples[0].evidence_snippet, /Data\.jsp/i);
+assert.match(educationVerified.samples[2].evidence_snippet, /Sleds\.jsp/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyVerified.blocker_code, 'replatformed_mn_dhs_county_tribal_family_lands_on_live_radware_captcha');
@@ -68,7 +73,8 @@ assert.equal(batchSummary.mdeorg_root_live, true);
 assert.equal(batchSummary.embedded_child_miswired_course_shell, true);
 assert.equal(batchSummary.mdeanalytics_radware_captcha, true);
 assert.equal(batchSummary.mndhs_replatform_radware_captcha, true);
-assert.match(report, /child surfaces that are either miswired into unrelated course content or challenge-protected/i);
+assert.match(report, /exact child surfaces that are either miswired into unrelated course content or challenge-protected/i);
 assert.match(lessons, /Embedded Official Front-Ends Can Resolve To The Wrong Product Entirely/);
+assert.match(lessons, /Official Directory Roots Can Leak Exact Child Endpoints Even When Public Access Stays Blocked/);
 
 console.log('test-batch186-minnesota-browser-contract-refinement-v1: ok');

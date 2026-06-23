@@ -23,9 +23,9 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'minnesota-california-grade-audit-report-v2.md'),
 };
 
-const EDUCATION_REASON = 'The Minnesota education blocker is now sharper: the official MDE-ORG root is live and clearly describes a searchable directory that can generate files from search parameters, but the exact embedded front-end it points to is not a usable public directory contract. In browser review, `/mdeprod/groups/communications/documents/unzip/048426/index.html` renders as an unrelated slide-style course shell instead of district or organization search results, while `pub.education.mn.gov/MDEAnalytics/Summary.jsp` lands on a live Radware captcha page. Minnesota therefore still lacks a reviewed county-mapped district-routing artifact on exact first-party surfaces.';
+const EDUCATION_REASON = 'The Minnesota education blocker is now sharper: the official MDE-ORG root is live, clearly describes a searchable directory that can generate files from search parameters, and exposes exact child surfaces including `MDEAnalytics/Data.jsp`, `MDEAnalytics/Summary.jsp`, `MDEAnalytics/Sleds.jsp`, and `MdeOrgView/`. But the exact embedded front-end it points to is not a usable public directory contract. In bounded review, `/mdeprod/groups/communications/documents/unzip/048426/index.html` renders as an unrelated slide-style course shell instead of district or organization search results, while the public analytics and org-view children land on live Radware captcha pages. Minnesota therefore still lacks a reviewed county-mapped district-routing artifact on exact first-party surfaces.';
 
-const EDUCATION_EVIDENCE = 'Reviewed 2026-06-23 bounded browser checks on the live official Minnesota education lane. The root page at https://education.mn.gov/MDE/about/SchOrg/ is live, titled `Schools and Organizations (MDE-ORG)`, and explicitly says MDE-ORG is a searchable database that includes school, district, and education-related organization directories and can generate files from search parameters. But the exact embedded front-end it points to at https://education.mn.gov/mdeprod/groups/communications/documents/unzip/048426/index.html does not render a directory in browser mode either; it opens as a slide-style course shell with text like `This course is designed to be accessible...` and `Progress, Slide 1 of 25`. The adjacent official summary surface at https://pub.education.mn.gov/MDEAnalytics/Summary.jsp resolves into a live Radware captcha page rather than a public search or export contract. Minnesota therefore still lacks a reviewed first-party county-to-district routing artifact, but the blocker is now correctly narrowed to a live directory root whose exact linked child surfaces are either miswired or challenge-protected.';
+const EDUCATION_EVIDENCE = 'Reviewed 2026-06-23 bounded browser and exact-root HTML checks on the live official Minnesota education lane. The root page at https://education.mn.gov/MDE/about/SchOrg/ is live, titled `Schools and Organizations (MDE-ORG)`, explicitly says MDE-ORG is a searchable database that includes school, district, and education-related organization directories and can generate files from search parameters, and exposes exact child surfaces `https://pub.education.mn.gov/MDEAnalytics/Data.jsp`, `https://pub.education.mn.gov/MDEAnalytics/DataSecure.jsp`, `https://pub.education.mn.gov/MDEAnalytics/Sleds.jsp`, `https://pub.education.mn.gov/MDEAnalytics/Summary.jsp`, and `https://pub.education.mn.gov/MdeOrgView/`. But the exact embedded front-end it points to at https://education.mn.gov/mdeprod/groups/communications/documents/unzip/048426/index.html does not render a directory in browser mode either; it opens as a slide-style course shell with text like `This course is designed to be accessible...` and `Progress, Slide 1 of 25`. The public analytics and org-view children land on live Radware captcha pages rather than a public search or export contract. Minnesota therefore still lacks a reviewed first-party county-to-district routing artifact, but the blocker is now correctly narrowed to a live directory root whose exact linked child surfaces are either miswired or challenge-protected.';
 
 const COUNTY_REASON = 'The Minnesota county-local blocker is now sharper: the legacy `.jsp` path is stale, and the modern DHS replacements do not merely redirect vaguely. In browser review, the exact county-and-tribal and county-tribal-directory replacements land on live `validate.perfdrive.com` / Radware Bot Manager captcha pages that demand human validation before any county-grade content is exposed. That means the replatformed official family exists, but the current low-token lane still cannot reach a reviewable county-or-tribal office contract.';
 
@@ -33,6 +33,8 @@ const COUNTY_EVIDENCE = 'Reviewed 2026-06-23 bounded browser checks on the exact
 
 const LESSON_HEADING = '### Embedded Official Front-Ends Can Resolve To The Wrong Product Entirely';
 const LESSON_BODY = "*   **Lesson:** If a live official directory landing page promises searchable exports, open the exact linked front-end once in browser mode before assuming it is just a JS shell. Minnesota's MDE-ORG root looked promising, but its linked child loaded as an unrelated slide-style course shell, which is a different blocker than a hidden directory app.";
+const CHILD_SURFACES_LESSON_HEADING = '### Official Directory Roots Can Leak Exact Child Endpoints Even When Public Access Stays Blocked';
+const CHILD_SURFACES_LESSON_BODY = "*   **Lesson:** If an official directory root advertises exports, inspect the root HTML for exact child endpoints before guessing new paths. Minnesota's live MDE-ORG page exposed `MDEAnalytics/Data.jsp`, `Summary.jsp`, `Sleds.jsp`, `DataSecure.jsp`, and `MdeOrgView/`, which proved the right first-party child family even though the public children still collapsed into Radware captcha or a miswired shell.";
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -58,8 +60,11 @@ function writeJsonl(filePath, rows) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  const additions = [];
+  if (!current.includes(LESSON_HEADING)) additions.push(`${LESSON_HEADING}\n${LESSON_BODY}`);
+  if (!current.includes(CHILD_SURFACES_LESSON_HEADING)) additions.push(`${CHILD_SURFACES_LESSON_HEADING}\n${CHILD_SURFACES_LESSON_BODY}`);
+  if (!additions.length) return false;
+  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${additions.join('\n\n')}\n`);
   return true;
 }
 
@@ -92,7 +97,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '## Completion decision',
     '',
     '- Minnesota remains BLOCKED and index_safe=false.',
-    '- Education is still blocked because the live MDE-ORG root points to child surfaces that are either miswired into unrelated course content or challenge-protected instead of exposing a county-grade routing contract.',
+    '- Education is still blocked because the live MDE-ORG root points to exact child surfaces that are either miswired into unrelated course content or challenge-protected instead of exposing a county-grade routing contract.',
     '- County-local is still blocked because the replatformed DHS county-and-tribal family now resolves to a live Radware captcha gate before any local office content appears.',
     '- PTI remains blocked on missing live first-party PTI designation text.',
   ].join('\n') + '\n';
@@ -160,7 +165,7 @@ export function generateBatch186MinnesotaBrowserContractRefinementV1() {
             source_type: 'official_directory_root',
             source_table: 'batch186_minnesota_browser_contract_refinement',
             fetched_at: '2026-06-23T00:00:00.000Z',
-            evidence_snippet: 'The live MDE-ORG root explicitly says the database includes school, district, and education-related organization directories and can generate files from search parameters.',
+            evidence_snippet: 'The live MDE-ORG root explicitly says the database includes school, district, and education-related organization directories, can generate files from search parameters, and exposes exact first-party child endpoints including Data.jsp, Summary.jsp, Sleds.jsp, DataSecure.jsp, and MdeOrgView.',
           },
           {
             sample_name: 'MDE-ORG linked embedded child',
@@ -173,14 +178,14 @@ export function generateBatch186MinnesotaBrowserContractRefinementV1() {
             evidence_snippet: 'The exact child does not render a directory in browser mode; it opens as a slide-style course shell with text like `This course is designed to be accessible...` and `Progress, Slide 1 of 25`.',
           },
           {
-            sample_name: 'MDEAnalytics summary surface',
+            sample_name: 'MDEAnalytics and OrgView child family',
             source_url: 'https://pub.education.mn.gov/MDEAnalytics/Summary.jsp',
             final_url: 'https://validate.perfdrive.com/?...MDEAnalytics/Summary.jsp',
             verification_status: 'blocked',
             source_type: 'official_search_surface_radware_captcha',
             source_table: 'batch186_minnesota_browser_contract_refinement',
             fetched_at: '2026-06-23T00:00:00.000Z',
-            evidence_snippet: 'The official summary surface lands on a live Radware captcha page instead of a public search or export contract.',
+            evidence_snippet: 'The official child family exposed by the root includes Summary.jsp, Data.jsp, Sleds.jsp, and MdeOrgView, but the public analytics and org-view surfaces still land on live Radware captcha pages instead of a public search or export contract.',
           },
         ],
         sample_count: 3,
