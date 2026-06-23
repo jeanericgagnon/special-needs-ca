@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T06:20:53.098Z",
+  "generatedAt": "2026-06-23T06:32:12.148Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 19,
@@ -2167,11 +2167,11 @@
       "legacyManualReviewRate": 57.56,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 33,
-      "strongCriticalFamilies": 6,
-      "weakCriticalFamilies": 4,
-      "missingCriticalFamilies": 2,
+      "strongCriticalFamilies": 9,
+      "weakCriticalFamilies": 3,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 50,
+      "completenessPct": 75,
       "dbMetrics": {
         "state_id": "new-mexico",
         "state_code": "NM",
@@ -2218,20 +2218,20 @@
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "blocked_county_grade_fit_local_routing_unverified",
+        "early_intervention_part_c": "verified_county_grade",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
-        "vocational_rehabilitation_pre_ets": "missing_reviewed_vr_or_pre_ets_source",
+        "vocational_rehabilitation_pre_ets": "blocked_official_dvr_root_unauthorized_without_reviewed_alternate",
         "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "blocked_reviewed_parent_support_source_lacks_explicit_pti_designation",
-        "legal_aid": "missing_reviewed_statewide_legal_aid_source",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_generic_or_third_party_local_directory_only"
+        "county_local_disability_resources": "blocked_live_hca_field_office_archive_partial_county_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "county_grade_leaf_proof_still_missing_after_official_statewide_repairs",
+      "packetPrimaryGapReason": "district_and_county_local_leaf_proof_still_missing_after_statewide_and_fit_regional_repairs",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

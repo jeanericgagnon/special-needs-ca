@@ -1,0 +1,15 @@
+{
+  "state": "new-mexico",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "repaired_families": [
+    "early_intervention_part_c",
+    "parent_training_information_center",
+    "legal_aid"
+  ],
+  "sharpened_families": [
+    "county_local_disability_resources",
+    "vocational_rehabilitation_pre_ets"
+  ],
+  "lessons_updated": false
+}

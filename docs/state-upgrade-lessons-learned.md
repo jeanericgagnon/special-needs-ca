@@ -746,3 +746,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Topic-Based SPED Staff Directories Still Need A Local Service-Area Contract
 *   **Lesson:** If a live special-education staff page exposes a topic-based directory PDF, do not confuse that with county-grade routing. Nebraska’s official `SPED Contact List-Directory by Topic` proved the host was live and deeper than a homepage, but it still lacked county-to-ESU assignments or district-owned local routing evidence.
+
+### About Pages Can Preserve Official PTI Designation Even When The Homepage Does Not
+*   **Lesson:** If a statewide parent-support homepage only proves general support scope, check the first-party About or history page before leaving PTI blocked. New Mexico's Parents Reaching Out homepage looked support-only, but the About page preserved explicit Parent Training and Information Center designation language dating back to its federal award.
+
+### County-Complete Regional Office Maps Linked From A Part C Program Page Can Clear Local FIT Routing
+*   **Lesson:** If an official Part C / FIT page links a regional-office map that itself enumerates county-labeled offices for every county-equivalent, that linked map can satisfy county-grade early-intervention routing. New Mexico FIT cleared once the official regional-office map proved all 33 counties had named local office coverage.

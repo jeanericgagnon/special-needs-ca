@@ -59,3 +59,4 @@
 - Vocational rehabilitation / Pre-ETS remains blocked rather than merely missing because the exact official DVR root (https://www.dvr.nm.gov/) returns HTTP 401 and no reviewed alternate official VR source is yet preserved on disk.
 - District or county education routing still lacks reviewed county-grade district or regional education leaves beyond the generic statewide PED surface.
 - New Mexico therefore remains truthfully `BLOCKED` and `index_safe=false`, but three statewide/local families are now materially more complete and the remaining blockers are more exact.
+
