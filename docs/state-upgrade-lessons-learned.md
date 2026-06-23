@@ -267,3 +267,6 @@
 
 ### A District-Linked Special-Education Cooperative Can Clear A County When The District Labels The Route And The Cooperative States The Service Scope
 *   **Lesson:** A district-linked cooperative can satisfy county-grade education routing when the district explicitly labels the route as `Special Education Services` and the linked cooperative home states that it provides special-education services across partner school districts. Kansas Salina USD 305 did not need a brand-new district-owned `/special-education` leaf once the district pages pointed into CKCIE and the CKCIE home/parents stack preserved special-education services, IEP, parent-rights, and local Salina contact evidence.
+
+### Popup Templates That Only Render Contact Cards Do Not Create A Hidden County Contract
+*   **Lesson:** If a public ArcGIS web map popup only renders office contact cards, Google Maps directions, and edit metadata, do not treat the popup layer as a hidden county-to-office bridge. Nebraska’s public office web map added no assignment logic beyond address and phone fields, so the blocker remained a true missing county contract.

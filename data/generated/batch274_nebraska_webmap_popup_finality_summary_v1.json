@@ -1,0 +1,15 @@
+{
+  "batch": "batch274_nebraska_webmap_popup_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "service_root_tables_present": false,
+  "office_schema_has_service_area_fields": false,
+  "office_layer_has_multi_county_values": false,
+  "webmap_popup_has_county_assignment_fields": false,
+  "office_popup_only_shows_contact_fields": true,
+  "county_popup_only_shows_boundary_fields": true,
+  "distinct_office_counties": 37,
+  "lessons_updated": false
+}

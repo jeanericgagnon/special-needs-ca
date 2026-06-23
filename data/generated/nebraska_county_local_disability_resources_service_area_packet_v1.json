@@ -3,7 +3,7 @@
   "state_code": "NE",
   "family": "county_local_disability_resources",
   "repair_lane": "service_area_contract_audit_only",
-  "purpose": "Deterministic packet for Nebraska county-local routing while the open official office app exposes only partial county coverage and no county-to-office assignment layer.",
+  "purpose": "Deterministic packet for Nebraska county-local routing after the public office web map and popup configuration also proved there is no hidden county assignment contract.",
   "current_problem_metrics": {
     "countyTotal": 93,
     "officeLayerRows": 42,
@@ -17,19 +17,24 @@
     "distinctOfficeCounties": 37,
     "serviceRootTablesPresent": false,
     "officeLayerHasServiceAreaFields": false,
-    "officeLayerHasMultiCountyValues": false
+    "officeLayerHasMultiCountyValues": false,
+    "webMapPopupHasCountyAssignmentFields": false,
+    "countyPopupOnlyShowsBoundaryFields": true,
+    "officePopupOnlyShowsContactFields": true,
+    "officePopupExpressionsAreAddressAndEditMetadataOnly": true
   },
   "representative_sources": [
     "https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx",
     "https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457",
     "https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json",
     "https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=json",
-    "https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1?f=json"
+    "https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1?f=json",
+    "https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/data?f=json"
   ],
   "exact_target_goals": [
     "official service-area layer or assignment table",
     "full county office contract",
     "county-to-office join fields on a reviewed official layer"
   ],
-  "packet_complete_when": "Nebraska can reopen county-local only when an official service-area table, county-assignment artifact, or office schema with county-coverage fields exists on the public stack."
+  "packet_complete_when": "Nebraska can reopen county-local only when an official service-area table, county-assignment artifact, office schema with county-coverage fields, or a public web map popup expression that explicitly bridges counties to offices exists on the public stack."
 }
