@@ -590,3 +590,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Public Selector Pages Still Stay Blocked If The Result And Export Actions 500
 *   **Lesson:** If an official district directory exposes real town or SAU selector pages, inspect the exact public form actions before assuming the local-routing contract works. Maine DOE’s NEO pages exposed live town and SAU selectors plus `action:CSearchBySAU` and `action:SAUExport`, but both bounded POST actions returned HTTP 500, so the family stayed blocked on the broken public result/export contract instead of a generic “no local leaves” claim.
+
+### An Accessible Sitemap Can Prove There Is No Hidden County-Office Contract
+*   **Lesson:** If the accessible official host stays open, filter its live sitemap once for `office`, `locator`, `county`, and program-specific terms before escalating a county-local family into open-ended discovery. Arizona AHCCCS exposed only the known ALTCS county map plus county-admin/support-letter PDFs and no overlooked county-office locator leaf, which made it safe to keep the family blocked instead of guessing hidden office routes.
+
+### Exact Local Leaves Still Stay Blocked If The Public Directory Never Names Counties
+*   **Lesson:** When an official district or office directory exposes real local leaves, run one bounded text check for county labels and role-specific fields before reopening mapping work. Idaho’s SDE district directory exposed 116 district links and DHW exposed 27 office leaves, but the public pages still lacked county terms like `Canyon County` and lacked district special-education fields, so both families stayed blocked on missing county-keyed routing rather than on “no exact leaves.”

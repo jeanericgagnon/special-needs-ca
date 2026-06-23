@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "azed_host_challenged_and_ahcccs_admin_pdfs_do_not_preserve_county_office_mapping",
+  "primary_gap_reason": "azed_host_challenged_and_ahcccs_sitemap_exposes_no_county_office_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -46,8 +46,8 @@
     },
     {
       "family": "county_local_disability_resources",
-      "failure_code": "ahcccs_county_map_lacks_office_contract_and_admin_pdfs_are_support_letters",
-      "evidence": "Reviewed 2026-06-22 bounded official Arizona AHCCCS county-local artifacts again using the bundled workspace PDF runtime plus one rendered first-page check on the two cited admin PDFs. The live ALTCS Offices HTML leaf still proves seven named official offices on the accessible AHCCCS host: Chinle, Flagstaff, Kingman, Phoenix, Prescott, Tucson, and Yuma. The official ALTCS County Map PDF is not fully image-only after all: bundled pdfplumber extraction preserves county names such as Yuma, Mohave, La Paz, Gila, Santa Cruz, Cochise, Graham, Maricopa, Pinal, Apache, Navajo, Coconino, Yavapai, Greenlee, and Pima alongside ALTCS enrollment text. But that county-map artifact still does not preserve office addresses, phones, or a county-to-office assignment contract. Rendered first-page review shows CountyAdminOffice.pdf and PimaCountyAdmin.pdf are county-administrator support letters to AHCCCS rather than county office-directory artifacts. DES remains challenge-blocked at root, robots.txt, sitemap.xml, and office-locator leaves. Arizona county-local routing therefore narrows to a missing county-to-office contract on accessible AHCCCS leaves, not to OCR alone."
+      "failure_code": "ahcccs_accessible_host_exposes_only_county_map_and_support_letters_no_office_contract",
+      "evidence": "Reviewed 2026-06-22 bounded official Arizona AHCCCS county-local artifacts again using the bundled workspace PDF runtime plus one rendered first-page check on the two cited admin PDFs, then re-checked the live AHCCCS sitemap on 2026-06-22. The live ALTCS Offices HTML leaf still proves seven named official offices on the accessible AHCCCS host: Chinle, Flagstaff, Kingman, Phoenix, Prescott, Tucson, and Yuma. The official ALTCS County Map PDF is not fully image-only after all: bundled pdfplumber extraction preserves county names such as Yuma, Mohave, La Paz, Gila, Santa Cruz, Cochise, Graham, Maricopa, Pinal, Apache, Navajo, Coconino, Yavapai, Greenlee, and Pima alongside ALTCS enrollment text. But that county-map artifact still does not preserve office addresses, phones, or a county-to-office assignment contract. Rendered first-page review shows CountyAdminOffice.pdf and PimaCountyAdmin.pdf are county-administrator support letters to AHCCCS rather than county office-directory artifacts. A bounded filter over the live AHCCCS sitemap surfaced no overlooked county-office locator leaves beyond the known ALTCS county map and county-admin/support-letter PDFs. DES remains challenge-blocked at root, robots.txt, sitemap.xml, and office-locator leaves. Arizona county-local routing therefore narrows to a missing county-to-office contract on accessible AHCCCS leaves, not to OCR or hidden sitemap discovery."
     }
   ]
 }
