@@ -1,0 +1,11 @@
+{
+  "batch": "batch199_ohio_blocker_evidence_refinement_v1",
+  "state": "ohio",
+  "classification_after": "BLOCKED",
+  "index_safe_after": false,
+  "county_successor_404_count": 8,
+  "education_leafish_url_count": 4,
+  "education_leafish_county_coverage": 8,
+  "education_root_only_url_count": 49,
+  "lesson_added": false
+}

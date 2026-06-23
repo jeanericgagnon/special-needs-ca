@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_jfs_root_domain_retired_and_replacement_domains_unresolved",
+  "primary_gap_reason": "retired_official_county_family_no_live_successor_and_education_inventory_still_root_only",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources",

@@ -7,7 +7,9 @@
   "current_problem_metrics": {
     "dbFieldAgencyLabelCount": 5,
     "federalMismatchCount": 43,
-    "genericRootCount": 14
+    "genericRootCount": 14,
+    "reviewedOfficialSuccessor404Count": 8,
+    "successorDomainsStillMissingLiveDirectory": 4
   },
   "exact_target_goals": [
     "county office contact page",
@@ -98,5 +100,47 @@
       "sample_entity_name": "Adams County Department of Job and Family Services"
     }
   ],
-  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+  "packet_complete_when": "A new live official Ohio county-office directory or locator is verified on a real state or county host.",
+  "reviewed_successor_probes": [
+    {
+      "url": "https://jfs.ohio.gov/home/local-agencies-directory",
+      "status": 404,
+      "title": "404 Error Page"
+    },
+    {
+      "url": "https://jfs.ohio.gov/home/local-agencies-directory/",
+      "status": 404,
+      "title": "404 Error Page"
+    },
+    {
+      "url": "https://medicaid.ohio.gov/families-and-individuals/county-agencies",
+      "status": 404,
+      "title": "404 Error Page"
+    },
+    {
+      "url": "https://medicaid.ohio.gov/families-and-individuals/county-agencies/",
+      "status": 404,
+      "title": "404 Error Page"
+    },
+    {
+      "url": "https://medicaid.ohio.gov/resources/county-agencies",
+      "status": 404,
+      "title": "404 Error Page"
+    },
+    {
+      "url": "https://medicaid.ohio.gov/resources/county-agencies/",
+      "status": 404,
+      "title": "404 Error Page"
+    },
+    {
+      "url": "https://ohio.gov/residents/resources/job-family-services-directory",
+      "status": 404,
+      "title": "404 Error Page"
+    },
+    {
+      "url": "https://ohio.gov/residents/resources/job-family-services-directory/",
+      "status": 404,
+      "title": "404 Error Page"
+    }
+  ]
 }

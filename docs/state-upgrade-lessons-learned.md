@@ -59,3 +59,12 @@
 
 ### State-Labeled Local Rows That Resolve To A State Root Still Count As Missing Local Proof
 *   **Lesson:** If rows are labeled with county or district names but their reviewed source URL still resolves to a generic state root, keep them in the local-leaf blocker lane. North Dakota had rows labeled like Burleigh or Cass special education, but the reviewed source was still just `nd.gov`, so they could not count as local routing proof.
+
+### Probe Obvious State Successor Paths Before Reopening A Dead County Directory Family
+*   **Lesson:** If a county-office family looks retired on its legacy domain, probe the obvious state-root and program-root successor paths once before reopening discovery. Ohio stayed blocked only after the legacy JFS paths, the guessed `home/local-agencies-directory` child, Medicaid-host county-agency guesses, and an Ohio.gov resident-resource guess all returned the same 404 shell.
+
+### First-Party Rebrand Redirects Can Still Clear Statewide Support Families
+*   **Lesson:** If a missing statewide support family uses an older first-party domain that now 301s to a renamed same-organization host, verify the destination page before discarding it. Oklahoma P&A cleared once `okdlc.org` was checked and shown to redirect to `drok.org` with explicit statewide disability-rights language.
+
+### A Live Successor Office-Finder Root Still Fails Closed Without A County Contract
+*   **Lesson:** If a dead legacy county-office host has a live successor root on the official state domain, verify whether the replacement actually preserves a county list or office extract before upgrading the family. Oregon ODHS had a live `Find an Office` page, but its static HTML still exposed no county contract, so the county-local family stayed blocked.

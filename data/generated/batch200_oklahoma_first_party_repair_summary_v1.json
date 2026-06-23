@@ -1,0 +1,13 @@
+{
+  "batch": "batch200_oklahoma_first_party_repair_v1",
+  "state": "oklahoma",
+  "classification_after": "BLOCKED",
+  "index_safe_after": false,
+  "p_and_a_promoted": true,
+  "legal_aid_promoted": true,
+  "remaining_critical_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "lesson_added": false
+}

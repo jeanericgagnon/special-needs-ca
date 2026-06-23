@@ -7,7 +7,10 @@
   "current_problem_metrics": {
     "dbFieldAgencyLabelCount": 5,
     "federalMismatchCount": 43,
-    "genericRootCount": 14
+    "genericRootCount": 14,
+    "distinctLeafishSourceUrlCount": 4,
+    "leafishCountyCoverage": 8,
+    "distinctRootOnlySourceUrlCount": 49
   },
   "exact_target_goals": [
     "special education contact page",
@@ -133,5 +136,39 @@
       "sample_entity_name": "Brown County ESC (Brown County County fallback)"
     }
   ],
-  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+  "packet_complete_when": "More county-grade or ESC-owned exact leaf targets are authored beyond the small set of path-level URLs already present on disk.",
+  "reviewed_leafish_source_urls": [
+    {
+      "source_url": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts",
+      "county_count": 3,
+      "counties": [
+        "erie-oh",
+        "huron-oh",
+        "ottawa-oh"
+      ]
+    },
+    {
+      "source_url": "https://www.scoesc.org/districts",
+      "county_count": 2,
+      "counties": [
+        "jackson-oh",
+        "scioto-oh"
+      ]
+    },
+    {
+      "source_url": "https://www.wbesc.org/our-schools",
+      "county_count": 2,
+      "counties": [
+        "paulding-oh",
+        "van-wert-oh"
+      ]
+    },
+    {
+      "source_url": "https://www.mresc.org/districts-we-serve/",
+      "county_count": 1,
+      "counties": [
+        "hardin-oh"
+      ]
+    }
+  ]
 }

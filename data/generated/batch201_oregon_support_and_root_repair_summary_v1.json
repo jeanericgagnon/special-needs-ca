@@ -1,0 +1,13 @@
+{
+  "batch": "batch201_oregon_support_and_root_repair_v1",
+  "state": "oregon",
+  "classification_after": "BLOCKED",
+  "index_safe_after": false,
+  "pti_promoted": true,
+  "legal_aid_promoted": true,
+  "remaining_critical_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "lesson_added": false
+}
