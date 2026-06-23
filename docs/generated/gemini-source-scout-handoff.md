@@ -10,7 +10,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 
 ## Current Blocked States
 
-- Alaska: `live_dfcs_services_page_only_provides_statewide_phone_relay_while_current_health_and_legacy_dhss_dpa_hosts_stay_gate_blocked`
+- Alaska: `live_dfcs_services_page_and_public_dfcs_search_still_expose_no_borough_routing_while_current_health_and_legacy_dhss_dpa_hosts_stay_gate_blocked`
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_public_shell_only_exposes_dataexchangeproxy_shell`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
@@ -37,42 +37,52 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Nebraska critical blocker. The live DHHS office page, the public ExperienceBuilder datasource registry, and the public FeatureServer layers are all readable enough to prove what is missing: there is still no public county-to-office assignment contract, so Nebraska stays BLOCKED and not index-safe. The public office layer still exposes only 42 office points across 37 distinct `USER_County` values.
+`county_local_disability_resources` is the only remaining Alaska critical blocker. The live DFCS successor host still only gives statewide phone routing, the public DFCS search surface is readable but exposes no DPA office results contract, the current `health.alaska.gov` DPA family is challenge-blocked end to end, and the legacy `dhss.alaska.gov` DPA subtree is also not reviewable even though the root is partially live.
 
 ### Exact Evidence Needed
 
-- Any official Nebraska DHHS county-to-office assignment table, export, or service-area artifact that maps all 93 counties to public assistance offices.
-- Any public ArcGIS layer, related table, or API field on the existing Nebraska office stack that explicitly enumerates served counties, assigned counties, regions, or coverage areas for each office.
-- Any exact first-party DHHS leaf that publishes a county list or county-by-county local office contract instead of only a locator handoff.
+- Any official Alaska surface that maps boroughs or census areas to DPA or Medicaid office locations on a publicly reviewable host.
+- Any reviewable successor office locator or directory that lives on `dfcs.alaska.gov`, `dhss.alaska.gov`, or another current official Alaska host instead of only on the challenge-blocked `health.alaska.gov` family.
+- Any official document, export, or table that explicitly enumerates Alaska borough or census-area coverage for public assistance office routing.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska DHHS Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [Nebraska DHHS sitemap](https://dhhs.ne.gov/sitemap.xml)
-- [Nebraska public office locator ExperienceBuilder item metadata](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457?f=json)
-- [Nebraska public office locator ExperienceBuilder data JSON](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
-- [Nebraska public office Web Map metadata](https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825?f=json)
-- [Nebraska public office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
-- [Nebraska public office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
-- [Nebraska county boundary layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1?f=pjson)
-- [Nebraska office-layer distinct county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
+- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
+- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
+- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
+- [Alaska DFCS robots.txt](https://dfcs.alaska.gov/robots.txt)
+- [Alaska DFCS sitemap.xml](https://dfcs.alaska.gov/sitemap.xml)
+- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
+- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
+- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska health robots.txt](https://health.alaska.gov/robots.txt)
+- [Legacy DHSS root](https://dhss.alaska.gov/)
+- [Legacy DHSS robots.txt](https://dhss.alaska.gov/robots.txt)
+- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
+- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
+- [Legacy DHSS DPA contacts](https://dhss.alaska.gov/dpa/Pages/contacts.aspx)
+- [Legacy DHSS DPA publications](https://dhss.alaska.gov/dpa/Pages/Publications.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- An official Nebraska DHHS county assignment export or service-area table attached to the existing office stack.
-- An exact first-party county office page or county directory leaf on `dhhs.ne.gov` that publishes county coverage instead of only contact cards.
-- Any public Nebraska GIS item related to the office stack that adds county-served fields or related-table joins beyond the current two public layers and widget outputs.
+- Any current Alaska host outside the challenged `health.alaska.gov` family that now publishes a borough- or census-area DPA office directory.
+- Any official Alaska PDF, spreadsheet, or office-contact table that names specific borough or census-area coverage for public assistance offices.
+- Any future public relaxation on either the `health.alaska.gov` or legacy `dhss.alaska.gov` DPA subtree that makes office-routing leaves scraper-reviewable.
 
-## Next State Order After Nebraska
+## Next State Order After Alaska
 
-1. Florida
-2. Alaska
-3. New York
-4. Oklahoma
-5. Oregon
-6. Ohio
-7. Minnesota
+1. New York
+2. Oklahoma
+3. Oregon
+4. Ohio
+5. Minnesota
+6. Maine
+7. Idaho
+8. Arizona
+9. Massachusetts
+10. New Mexico

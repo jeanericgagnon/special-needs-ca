@@ -300,3 +300,6 @@
 
 ### County-Looking Office Names Still Do Not Create A Statewide County Contract
 *   **Lesson:** If a live official office payload exposes only a few county-looking office names but still lacks county fields or counties-served fields, do not stretch those names into a statewide local-routing contract. Utah's public DWS JSON mentioned `Emery County` and `South County`, but `Daggett` and `Morgan` never appeared at all and `Rich` only appeared inside `Richfield`, so the payload still failed county-grade proof.
+
+### A Public SharePoint Search Shell Is Not A Directory Contract
+*   **Lesson:** If a public official SharePoint search page returns 200 but the query replays stay on the same generic shell and expose no result rows or usable query contract, do not treat it as a recoverable local-directory lane. Alaska DFCS `Search/default.aspx` was readable, but it still yielded no public DPA office results and no reusable search parameter contract.
