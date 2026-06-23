@@ -7,22 +7,21 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 105,
-  "completeness_pct": 58,
-  "strong_critical_families": 7,
-  "weak_critical_families": 5,
+  "completeness_pct": 75,
+  "strong_critical_families": 9,
+  "weak_critical_families": 3,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "kancare_kdads_access_blocked_and_no_county_or_district_education_contract_preserved",
+  "primary_gap_reason": "kdads_access_blocked_and_no_county_or_district_education_contract_preserved",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
-    "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
+    "district_or_county_education_routing"
   ],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
+    "medicaid_state_health_coverage",
     "early_intervention_part_c",
     "special_education_idea_part_b",
     "vocational_rehabilitation_pre_ets",
@@ -30,7 +29,8 @@
     "parent_training_information_center",
     "legal_aid",
     "able_program",
-    "ssi_ssa_federal_reference"
+    "ssi_ssa_federal_reference",
+    "county_local_disability_resources"
   ],
   "complete_ready": false,
   "texas_v10_rule_basis": [
@@ -39,13 +39,6 @@
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
   "final_blockers": [
-    {
-      "family": "medicaid_state_health_coverage",
-      "severity": "critical",
-      "failure_code": "reviewed_exact_medicaid_root_access_blocked",
-      "evidence": "Reviewed 2026-06-22 live probe to the exact Kansas Medicaid root https://www.kancare.ks.gov/ still returns HTTP 403 Forbidden / access denied instead of Medicaid content.",
-      "next_action": "browser_assisted_or_reviewed_alt_official_medicaid_leaf"
-    },
     {
       "family": "medicaid_waiver_hcbs_disability_services",
       "severity": "critical",
@@ -66,13 +59,6 @@
       "failure_code": "official_statewide_education_leaves_live_but_no_county_or_district_contract_preserved",
       "evidence": "Reviewed 2026-06-22 live probes to the exact KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves now succeed. The official School District Maps page also exposes a live USD county map PDF at https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5, and bounded extraction confirms that it is not dead or image-only. But the extracted text still collapses into district numbers plus county names without a reviewable county-to-district join, and the packet still preserves no district-owned local special-education contact source.",
       "next_action": "author_exact_district_routing_contract_from_official_datacentral_or_county_map_sources"
-    },
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "legacy_county_locator_dead_and_reviewed_replacement_access_blocked",
-      "evidence": "The old dhhs.kansas.gov/locations locator remains dead, and reviewed 2026-06-22 live probe to the exact KDADS root still returns HTTP 403 Forbidden / access denied, so no reviewed county-grade replacement is captured.",
-      "next_action": "browser_assisted_or_author_county_local_exact_targets"
     }
   ]
 }

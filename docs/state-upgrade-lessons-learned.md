@@ -576,8 +576,17 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Persistent Official 403s Should Stay As Exact Transport Blockers
 *   **Lesson:** If the official state education or DHHS root and the exact local-directory leaves all return HTTP 403 in bounded fetch, keep the family blocked on that exact transport failure instead of falling back to generic statewide or structural evidence. New Hampshire’s school-directory and DHHS district-office lanes were sharper once the blocker named the exact official paths that failed.
 
+### County-Indexed Official Resource Directories Can Clear County-Local Coverage Without Per-County Crawls
+*   **Lesson:** If an official first-party directory page itself enumerates county-specific resource guides across the full county count, use that indexed directory as the county-local contract instead of waiting to fetch every child PDF. Kansas’ KanCare Ombudsman `Counties in Alphabetical Order` pages exposed 105 county-specific Community Resources guides directly in paginated official HTML, which was enough to clear the county-local family without broad per-county fetches.
+
+### Public APIs Behind A JS Shell Still Need Role-Pure Routing Evidence
+*   **Lesson:** If a reviewed official app shell exposes public first-party API endpoints, distinguish “real API-backed app” from “California-grade authority proof.” Kentucky’s DBHDID shell exposed public counties and services APIs, which sharpened the blocker beyond a dead shell, but the family still stayed blocked because the public contract did not preserve DD authority names, intake contacts, or county-to-authority routing.
+
 ### A Real Office Directory Still Fails County-Grade If It Only Groups By Region Or City
 *   **Lesson:** If an official office directory is live and reviewable but only groups offices by region or city names, do not upgrade county-local routing unless it explicitly maps counties or county-equivalents to those offices. Alaska’s DPA Offices page was a real improvement, but it still did not truthfully clear borough and census-area coverage.
 
 ### Render The First PDF Page Before Treating A Filename As A Directory Artifact
 *   **Lesson:** If an official PDF filename sounds like a county office or admin map, render the first page before escalating it into an OCR blocker. Arizona’s `CountyAdminOffice.pdf` and `PimaCountyAdmin.pdf` turned out to be county-administrator support letters to AHCCCS, not county office-directory contracts.
+
+### Public Selector Pages Still Stay Blocked If The Result And Export Actions 500
+*   **Lesson:** If an official district directory exposes real town or SAU selector pages, inspect the exact public form actions before assuming the local-routing contract works. Maine DOE’s NEO pages exposed live town and SAU selectors plus `action:CSearchBySAU` and `action:SAUExport`, but both bounded POST actions returned HTTP 500, so the family stayed blocked on the broken public result/export contract instead of a generic “no local leaves” claim.
