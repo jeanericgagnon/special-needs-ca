@@ -83,3 +83,6 @@
 
 ### Sample District-Owned Roots Before Reopening A Statewide Education Blocker
 *   **Lesson:** If an official state district directory already yields local domains, sample a few district-owned roots plus `robots.txt` or sitemap before rereading the state directory again. Idaho’s official SDE page still lacked county mapping, but Cassia, Payette, and SD25 immediately exposed likely `/special-services` or `/special-education` leaves on district-owned surfaces, which proved the next lane was exact local leaf authoring.
+
+### Official District Detail Addresses Can Be County-Keyed Without Reopening A Challenged DOE Host
+*   **Lesson:** If a live official district-detail API preserves exact local addresses but omits county fields, county-key the roots with one bounded official geocoder pass instead of reopening the challenged statewide DOE host. Arizona's report-cards detail API plus the Census geocoder produced one reviewed district root for all 15 counties without broad search or district-site crawling.

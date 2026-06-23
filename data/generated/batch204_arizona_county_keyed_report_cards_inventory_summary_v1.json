@@ -1,0 +1,10 @@
+{
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "county_keyed_district_roots": 15,
+  "remaining_unmapped_counties": 0,
+  "detail_fetches": 42,
+  "geocode_attempts": 42,
+  "lessons_updated": false
+}

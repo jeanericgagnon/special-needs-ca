@@ -53,3 +53,4 @@
 - Arizona remains BLOCKED and not index-safe.
 - Education is sharper again: the official report-cards app now yields one county-keyed district root for all 15 Arizona counties through reviewed district detail responses plus bounded official geocoding, so the remaining education work is exact district-owned special-education or student-services leaf verification.
 - County/local disability resources are still blocked separately because the DES office lane remains challenge-blocked and the accessible AHCCCS artifacts still do not preserve a county-to-office contract.
+

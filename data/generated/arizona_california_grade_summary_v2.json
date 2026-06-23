@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "des_host_challenge_plus_unmaterialized_report_cards_district_root_inventory",
+  "primary_gap_reason": "des_host_challenge_plus_county_keyed_report_cards_roots_without_district_owned_special_education_leaves",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,8 +41,8 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "official_report_cards_district_detail_roots_live_but_not_yet_county_keyed_or_leaf_verified",
-      "evidence": "Reviewed 2026-06-23 bounded official Arizona report-cards checks beyond the generic inventory call. The public AZ School Report Cards app still exposes /api/Entity/GetEntityList and the live district detail route /districts/Detail/<educationOrganizationId>. The app bundle also reveals the exact local-detail contract: /api/Entity/GetEntity?id=<educationOrganizationId>&fiscalYear=2025 returns district-specific fields including nameOfInstitution, webSite, telephone, and address, and sample live calls for St Johns Unified District (educationOrganizationId 4153), Window Rock Unified District (4154), and Round Valley Unified District (4155) returned first-party district websites plus district phones and addresses. Arizona education therefore is no longer blocked by zero local-root inventory; it is now blocked because those reviewable district roots have not yet been materialized into a county-keyed Arizona district inventory and no district-owned special-education leaves have been verified from them."
+      "failure_code": "official_report_cards_district_roots_county_keyed_but_no_district_owned_special_education_leaves_verified",
+      "evidence": "Reviewed 2026-06-23 bounded official Arizona report-cards checks and then materialized a county-keyed district-root inventory from the live /api/Entity/GetEntityList inventory plus exact /api/Entity/GetEntity?id=<educationOrganizationId>&fiscalYear=2025 detail responses. A bounded official Census geocoder pass over district detail addresses now yields one reviewed district root for all 15 Arizona counties, with first-party district website, phone, and address fields preserved on the official report-cards host. Arizona education is no longer blocked by missing county-keyed district roots; it is now blocked because those county-keyed district roots still do not have reviewed district-owned special-education or student-services leaves attached. Counties covered: apache-az, cochise-az, coconino-az, gila-az, graham-az, greenlee-az, la-paz-az, maricopa-az, mohave-az, navajo-az, pima-az, pinal-az, santa-cruz-az, yavapai-az, yuma-az."
     },
     {
       "family": "county_local_disability_resources",
