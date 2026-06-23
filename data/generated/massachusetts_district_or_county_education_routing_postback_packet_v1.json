@@ -1,0 +1,45 @@
+{
+  "state": "massachusetts",
+  "state_code": "MA",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "evidence_only_postback_packet",
+  "purpose": "Deterministic packet for Massachusetts DESE Profiles postback evidence while county-to-district routing remains unavailable.",
+  "current_problem_metrics": {
+    "statewideFallbackRows": 14,
+    "statewideWebsiteRows": 14,
+    "countyRowCount": 14,
+    "realPostbackResultSurface": true,
+    "countyMappingFieldsPresent": false
+  },
+  "exact_target_goals": [
+    "official county-to-district export contract",
+    "official county filter or county column on DESE result surface",
+    "reviewed local district contract only if county keyed by official evidence"
+  ],
+  "representative_sources": [
+    "https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238",
+    "https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238",
+    "https://www.doe.mass.edu/sped/"
+  ],
+  "root_domains_to_review": [
+    "official DESE Profiles search and postback surfaces only",
+    "do not infer county mapping from district names like Bristol County Agricultural without an official county-keyed contract"
+  ],
+  "affected_counties": [
+    "barnstable-ma",
+    "berkshire-ma",
+    "bristol-ma",
+    "dukes-ma",
+    "essex-ma",
+    "franklin-ma",
+    "hampden-ma",
+    "hampshire-ma",
+    "middlesex-ma",
+    "nantucket-ma",
+    "norfolk-ma",
+    "plymouth-ma",
+    "suffolk-ma",
+    "worcester-ma"
+  ],
+  "packet_complete_when": "Massachusetts can reopen education only when an official DESE surface preserves a county-to-district contract rather than just district result rows."
+}

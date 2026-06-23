@@ -1,0 +1,15 @@
+{
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_packet_created": true,
+  "county_packet_created": true,
+  "education_placeholder_rows": 14,
+  "county_legacy_rows": 8,
+  "county_doi_rows": 7,
+  "lessons_updated": false,
+  "authored_packets": [
+    "data/generated/massachusetts_district_or_county_education_routing_postback_packet_v1.json",
+    "data/generated/massachusetts_county_local_disability_resources_host403_packet_v1.json"
+  ]
+}

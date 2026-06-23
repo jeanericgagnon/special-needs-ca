@@ -653,3 +653,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### When A Blocked Family Uses Sample Evidence, Keep The Samples Distinct
 *   **Lesson:** If a blocked family sample set is meant to justify different parts of the blocker, do not repeat the same directory row multiple times. Idaho’s county-local sample set became more useful once it preserved distinct evidence for the statewide office directory, the sitemap office-leaf surface, the exact Caldwell office leaf, and the Nampa negative proof instead of repeating the same `/offices` sample.
+
+### When A Stateful Directory POST Is Real But Not County-Keyed, Packetize It As Evidence-Only
+*   **Lesson:** If an official directory POSTback returns real local rows but still lacks the county field you need, keep that lane as evidence-only instead of treating it like partial county coverage. Massachusetts DESE Profiles returned real district contacts, but without a county column or export contract it still could not clear county-grade routing.

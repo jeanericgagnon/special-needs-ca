@@ -1,0 +1,54 @@
+{
+  "state": "massachusetts",
+  "state_code": "MA",
+  "family": "county_local_disability_resources",
+  "repair_lane": "browser_or_cached_capture_only",
+  "purpose": "Deterministic packet for Massachusetts DDS county-local routing while the likely official Mass.gov lane stays host-wide 403 in the low-token runtime.",
+  "current_problem_metrics": {
+    "legacyLocatorRows": 8,
+    "doiMirrorRows": 7,
+    "countyRowCount": 15,
+    "multiOfficeCountyCount": 1,
+    "hostWide403Surfaces": 3
+  },
+  "exact_target_goals": [
+    "reviewed DDS area-office capture from browser or cached artifact",
+    "official county-grade local office contract on Mass.gov",
+    "replacement of legacy and DOI rows only after host-level capture succeeds"
+  ],
+  "representative_sources": [
+    "https://www.mass.gov/orgs/department-of-developmental-services",
+    "https://www.mass.gov/info-details/dds-area-offices",
+    "https://www.mass.gov/sitemap.xml"
+  ],
+  "root_domains_to_review": [
+    "browser-assisted or cached Mass.gov DDS captures only",
+    "do not reopen generic county-office discovery until the host-wide 403 lane is bypassed with reviewed evidence"
+  ],
+  "affected_counties": [
+    "barnstable-ma",
+    "berkshire-ma",
+    "bristol-ma",
+    "dukes-ma",
+    "essex-ma",
+    "franklin-ma",
+    "hampden-ma",
+    "hampshire-ma",
+    "middlesex-ma",
+    "nantucket-ma",
+    "norfolk-ma",
+    "plymouth-ma",
+    "suffolk-ma",
+    "worcester-ma"
+  ],
+  "unresolved_multi_office_counties": [
+    {
+      "county_id": "suffolk-ma",
+      "office_names": [
+        "MassHealth Enrollment Center (Charlestown)",
+        "MassHealth Enrollment Center (Chelsea)"
+      ]
+    }
+  ],
+  "packet_complete_when": "Massachusetts can reopen county-local only when a reviewed Mass.gov DDS area-office capture or another official county-grade local office contract is preserved on disk."
+}
