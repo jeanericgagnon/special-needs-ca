@@ -26,3 +26,15 @@
 
 ### Retry ASP.NET Search Forms Once With Their Hidden Collections Before Calling The Workflow Broken
 *   **Lesson:** If a public ASP.NET selector page exposes a live dropdown plus a token and hundreds of hidden collection inputs, replay one bounded submit with the page-owned hidden fields before locking a transport blocker. Maine DOE Contact Search looked like a raw POST-500 failure until the hidden `SAUs[*]` fields were included; after that, the official app still failed, but in a more precise generic `Error.` shell that proved the blocker was app-side, not selector-hydration drift.
+
+### Replace Stale 403 Assumptions With Exact Child-Surface Rechecks
+*   **Lesson:** If a state org page starts rendering again, re-check the exact child surfaces it links before preserving an old host-wide 403 blocker. Massachusetts DDS had moved past the earlier 403 assumption: the org page, `/locations`, and the interactive regional map were live, while the guessed `dds-area-offices` URL was just a true 404 and the remaining blocker was the lack of a county-grade export contract.
+
+### Public Embeds Only Count When They Expose A Reusable Local Contract
+*   **Lesson:** If a first-party page only points to a public map or embedded visualization, do not count that embed as county-grade proof unless it exposes a reusable town, county, or export contract. Massachusetts DDS rendered a live Tableau-backed town-or-city map, but without a machine-readable locality list or county bridge it still stayed blocked.
+
+### Boundary Layers Need Routing Fields Before They Count As Local Education Contracts
+*   **Lesson:** If a public ArcGIS school map only exposes boundary geometry and identifiers like county codes, district codes, or ISD codes, do not treat it as local education routing proof. Michigan’s MDE-linked layers were useful for proving the exact blocker, but without contact URLs or routing fields they still could not clear district_or_county_education_routing.
+
+### Live Directory Glossaries Can Hide The Real Query Contract In An Embedded Bundle
+*   **Lesson:** If an official state directory page explicitly says it is a searchable database, do not keep chasing retired legacy paths. Minnesota MDE exposed a live `MDE-ORG` root, but the usable directory front-end was tucked into an embedded bundle while adjacent public search surfaces were Radware-challenged, so the right next lane became browser-assisted contract capture, not more guessed URL probes.

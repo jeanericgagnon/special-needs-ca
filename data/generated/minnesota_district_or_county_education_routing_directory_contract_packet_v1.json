@@ -1,0 +1,27 @@
+{
+  "state": "minnesota",
+  "state_code": "MN",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "browser_or_cached_capture_only",
+  "purpose": "Deterministic packet for Minnesota education routing while the live official MDE-ORG contract is embedded or challenge-protected.",
+  "current_problem_metrics": {
+    "countyRowCount": 87,
+    "liveDirectoryRootAccessible": true,
+    "embeddedBundleMiswired": true,
+    "publicSearchChallengeProtected": true
+  },
+  "representative_sources": [
+    "https://education.mn.gov/MDE/about/SchOrg/",
+    "https://education.mn.gov/mdeprod/groups/communications/documents/unzip/048426/index.html",
+    "https://pub.education.mn.gov/findsch/",
+    "https://pub.education.mn.gov/MDEAnalytics/Summary.jsp",
+    "https://pub.education.mn.gov/MDEAnalytics/Data.jsp",
+    "https://pub.education.mn.gov/MdeOrgView/"
+  ],
+  "exact_target_goals": [
+    "reviewed first-party county-or-district export contract",
+    "browser-readable MDE-ORG query results",
+    "cached public search capture only if the first-party directory contract is preserved"
+  ],
+  "packet_complete_when": "Minnesota can reopen education only when the live MDE-ORG family yields a reviewed county-mapped district routing contract instead of an embedded shell or challenge page."
+}

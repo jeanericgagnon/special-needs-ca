@@ -1,0 +1,24 @@
+{
+  "state": "minnesota",
+  "state_code": "MN",
+  "family": "county_local_disability_resources",
+  "repair_lane": "browser_or_cached_capture_only",
+  "purpose": "Deterministic packet for Minnesota county-local routing while the replatformed DHS county-and-tribal family is fronted by Radware captcha.",
+  "current_problem_metrics": {
+    "countyRowCount": 87,
+    "legacyJspStale": true,
+    "replacementFamilyLiveButCaptchaProtected": true,
+    "reviewedReplacementRoots": 2
+  },
+  "representative_sources": [
+    "https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/",
+    "https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/",
+    "https://validate.perfdrive.com/"
+  ],
+  "exact_target_goals": [
+    "reviewed first-party county-or-tribal office contract",
+    "browser-readable or cached county-and-tribal directory capture",
+    "precise county-or-tribal coverage proof without reopening generic discovery"
+  ],
+  "packet_complete_when": "Minnesota can reopen county-local only when the live DHS replacement family yields a reviewed county-or-tribal directory contract instead of a Radware validation gate."
+}

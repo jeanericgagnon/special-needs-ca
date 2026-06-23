@@ -12,7 +12,7 @@
   "weak_critical_families": 3,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_mdeorg_directory_root_is_live_but_linked_child_is_miswired_or_challenged_and_mn_dhs_county_tribal_replatform_lands_on_live_radware_captcha",
+  "primary_gap_reason": "official_mdeorg_directory_root_is_live_but_public_directory_contract_is_embedded_or_challenged_and_mn_dhs_local_office_family_is_stale_or_radware_challenged",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -46,9 +46,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_mdeorg_root_live_but_child_contract_is_miswired_or_challenged",
-      "evidence": "Reviewed 2026-06-23 bounded browser and exact-root HTML checks on the live official Minnesota education lane. The root page at https://education.mn.gov/MDE/about/SchOrg/ is live, titled `Schools and Organizations (MDE-ORG)`, explicitly says MDE-ORG is a searchable database that includes school, district, and education-related organization directories and can generate files from search parameters, and exposes exact child surfaces `https://pub.education.mn.gov/MDEAnalytics/Data.jsp`, `https://pub.education.mn.gov/MDEAnalytics/DataSecure.jsp`, `https://pub.education.mn.gov/MDEAnalytics/Sleds.jsp`, `https://pub.education.mn.gov/MDEAnalytics/Summary.jsp`, and `https://pub.education.mn.gov/MdeOrgView/`. But the exact embedded front-end it points to at https://education.mn.gov/mdeprod/groups/communications/documents/unzip/048426/index.html does not render a directory in browser mode either; it opens as a slide-style course shell with text like `This course is designed to be accessible...` and `Progress, Slide 1 of 25`. The public analytics and org-view children land on live Radware captcha pages rather than a public search or export contract. Minnesota therefore still lacks a reviewed first-party county-to-district routing artifact, but the blocker is now correctly narrowed to a live directory root whose exact linked child surfaces are either miswired or challenge-protected.",
-      "next_action": "hold_blocked_until_reviewed_first_party_mdeorg_query_or_export_contract_exists"
+      "failure_code": "official_mdeorg_directory_root_is_live_but_query_or_export_contract_is_embedded_or_challenged",
+      "evidence": "Reviewed 2026-06-22/2026-06-23 bounded official Minnesota MDE education surfaces. The live Special Education page links to the official Schools and Organizations (MDE-ORG) root at https://education.mn.gov/MDE/about/SchOrg/, and that page explicitly says MDE-ORG is a searchable database that includes Minnesota school, district, and education-related organization directories and can generate files from search parameters. However, the exact embedded bundle it references at https://education.mn.gov/mdeprod/groups/communications/documents/unzip/048426/index.html only loads as a JS shell in bounded fetches, while adjacent official public-search surfaces still do not yield a preserved county-grade contract: https://pub.education.mn.gov/findsch/ resolves into a Radware challenge and https://pub.education.mn.gov/MDEAnalytics/Summary.jsp is just a summary shell without an exposed iframe or export URL in static HTML. Minnesota therefore still lacks a reviewed county-to-district routing artifact, but the blocker is now correctly classified as a live official directory root whose usable query/export contract is embedded or challenge-protected.",
+      "next_action": "browser_assisted_or_cached_capture_only_for_live_mdeorg_directory_contract"
     },
     {
       "family": "parent_training_information_center",

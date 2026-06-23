@@ -21,6 +21,8 @@ const OUTPUTS = {
   batchSummary: path.join(generatedDir, 'batch178_minnesota_mdeorg_directory_root_refresh_summary_v1.json'),
   batchReport: path.join(docsGeneratedDir, 'batch178-minnesota-mdeorg-directory-root-refresh-report-v1.md'),
   stateReport: path.join(docsGeneratedDir, 'minnesota-california-grade-audit-report-v2.md'),
+  educationPacket: path.join(generatedDir, 'minnesota_district_or_county_education_routing_directory_contract_packet_v1.json'),
+  countyPacket: path.join(generatedDir, 'minnesota_county_local_disability_resources_radware_packet_v1.json'),
 };
 
 const PRIMARY_GAP_REASON =
@@ -162,11 +164,66 @@ export function generateBatch178MinnesotaMdeorgDirectoryRootRefreshV1() {
     ),
   };
 
+  const educationPacket = {
+    state: 'minnesota',
+    state_code: 'MN',
+    family: 'district_or_county_education_routing',
+    repair_lane: 'browser_or_cached_capture_only',
+    purpose: 'Deterministic packet for Minnesota education routing while the live official MDE-ORG contract is embedded or challenge-protected.',
+    current_problem_metrics: {
+      countyRowCount: 87,
+      liveDirectoryRootAccessible: true,
+      embeddedBundleMiswired: true,
+      publicSearchChallengeProtected: true,
+    },
+    representative_sources: [
+      'https://education.mn.gov/MDE/about/SchOrg/',
+      'https://education.mn.gov/mdeprod/groups/communications/documents/unzip/048426/index.html',
+      'https://pub.education.mn.gov/findsch/',
+      'https://pub.education.mn.gov/MDEAnalytics/Summary.jsp',
+      'https://pub.education.mn.gov/MDEAnalytics/Data.jsp',
+      'https://pub.education.mn.gov/MdeOrgView/',
+    ],
+    exact_target_goals: [
+      'reviewed first-party county-or-district export contract',
+      'browser-readable MDE-ORG query results',
+      'cached public search capture only if the first-party directory contract is preserved',
+    ],
+    packet_complete_when: 'Minnesota can reopen education only when the live MDE-ORG family yields a reviewed county-mapped district routing contract instead of an embedded shell or challenge page.',
+  };
+
+  const countyPacket = {
+    state: 'minnesota',
+    state_code: 'MN',
+    family: 'county_local_disability_resources',
+    repair_lane: 'browser_or_cached_capture_only',
+    purpose: 'Deterministic packet for Minnesota county-local routing while the replatformed DHS county-and-tribal family is fronted by Radware captcha.',
+    current_problem_metrics: {
+      countyRowCount: 87,
+      legacyJspStale: true,
+      replacementFamilyLiveButCaptchaProtected: true,
+      reviewedReplacementRoots: 2,
+    },
+    representative_sources: [
+      'https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/',
+      'https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/',
+      'https://validate.perfdrive.com/',
+    ],
+    exact_target_goals: [
+      'reviewed first-party county-or-tribal office contract',
+      'browser-readable or cached county-and-tribal directory capture',
+      'precise county-or-tribal coverage proof without reopening generic discovery',
+    ],
+    packet_complete_when: 'Minnesota can reopen county-local only when the live DHS replacement family yields a reviewed county-or-tribal directory contract instead of a Radware validation gate.',
+  };
+
   writeJson(INPUTS.summary, updatedSummary);
   writeJsonl(INPUTS.gap, updatedGapRows);
   writeJsonl(INPUTS.failures, updatedFailureRows);
   writeJsonl(INPUTS.verified, updatedVerifiedRows);
   writeJsonl(INPUTS.nextActions, updatedNextRows);
+  writeJson(OUTPUTS.educationPacket, educationPacket);
+  writeJson(OUTPUTS.countyPacket, countyPacket);
 
   const lessonsUpdated = appendLessonIfMissing(INPUTS.lessons);
   const report = buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows);
@@ -177,6 +234,8 @@ export function generateBatch178MinnesotaMdeorgDirectoryRootRefreshV1() {
     classification: updatedSummary.classification,
     index_safe: updatedSummary.index_safe,
     education_blocker_sharpened: true,
+    education_packet_created: true,
+    county_packet_created: true,
     lessons_updated: lessonsUpdated,
     blocker_basis: 'live_mdeorg_root_plus_embedded_bundle_and_public_search_shell_audit',
   };

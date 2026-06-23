@@ -28,6 +28,8 @@ const failureRows = readJsonl('data/generated/minnesota_failure_ledger_v2.jsonl'
 const verifiedRows = readJsonl('data/generated/minnesota_verified_sources_v1.jsonl');
 const nextRows = readJsonl('data/generated/minnesota_next_action_queue_v2.jsonl');
 const batchSummary = readJson('data/generated/batch178_minnesota_mdeorg_directory_root_refresh_summary_v1.json');
+const educationPacket = readJson('data/generated/minnesota_district_or_county_education_routing_directory_contract_packet_v1.json');
+const countyPacket = readJson('data/generated/minnesota_county_local_disability_resources_radware_packet_v1.json');
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/minnesota-california-grade-audit-report-v2.md'), 'utf8');
 const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-learned.md'), 'utf8');
 
@@ -76,7 +78,22 @@ assert.match(educationNext.evidence, /MDE-ORG/i);
 
 assert.equal(batchSummary.state, 'minnesota');
 assert.equal(batchSummary.education_blocker_sharpened, true);
+assert.equal(batchSummary.education_packet_created, true);
+assert.equal(batchSummary.county_packet_created, true);
 assert.equal(batchSummary.blocker_basis, 'live_mdeorg_root_plus_embedded_bundle_and_public_search_shell_audit');
+
+assert.equal(educationPacket.repair_lane, 'browser_or_cached_capture_only');
+assert.equal(educationPacket.current_problem_metrics.countyRowCount, 87);
+assert.equal(educationPacket.current_problem_metrics.liveDirectoryRootAccessible, true);
+assert.equal(educationPacket.current_problem_metrics.embeddedBundleMiswired, true);
+assert.equal(educationPacket.current_problem_metrics.publicSearchChallengeProtected, true);
+assert.ok(educationPacket.representative_sources.includes('https://pub.education.mn.gov/MDEAnalytics/Data.jsp'));
+
+assert.equal(countyPacket.repair_lane, 'browser_or_cached_capture_only');
+assert.equal(countyPacket.current_problem_metrics.countyRowCount, 87);
+assert.equal(countyPacket.current_problem_metrics.legacyJspStale, true);
+assert.equal(countyPacket.current_problem_metrics.replacementFamilyLiveButCaptchaProtected, true);
+assert.ok(countyPacket.representative_sources.includes('https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/'));
 
 assert.match(report, /MDE-ORG/i);
 assert.match(report, /embedded/i);

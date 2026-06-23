@@ -3,6 +3,8 @@
   "classification": "BLOCKED",
   "index_safe": false,
   "education_blocker_sharpened": true,
-  "lessons_updated": false,
+  "education_packet_created": true,
+  "county_packet_created": true,
+  "lessons_updated": true,
   "blocker_basis": "live_mdeorg_root_plus_embedded_bundle_and_public_search_shell_audit"
 }

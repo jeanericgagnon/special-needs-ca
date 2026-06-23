@@ -9,5 +9,6 @@
   "dds_interactive_map_live": true,
   "stale_area_offices_path_404": true,
   "county_contract_still_missing": true,
-  "lessons_updated": false
+  "county_packet_path": "data/generated/massachusetts_county_local_disability_resources_town_routing_packet_v1.json",
+  "lessons_updated": true
 }

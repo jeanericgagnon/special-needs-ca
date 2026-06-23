@@ -27,7 +27,8 @@ const gapRows = readJsonl('data/generated/massachusetts_gap_matrix_v2.jsonl');
 const failureRows = readJsonl('data/generated/massachusetts_failure_ledger_v2.jsonl');
 const verifiedRows = readJsonl('data/generated/massachusetts_verified_sources_v1.jsonl');
 const nextRows = readJsonl('data/generated/massachusetts_next_action_queue_v2.jsonl');
-const countyPacket = readJson('data/generated/massachusetts_county_local_disability_resources_host403_packet_v1.json');
+const countyPacket = readJson('data/generated/massachusetts_county_local_disability_resources_town_routing_packet_v1.json');
+const legacyCountyPacket = readJson('data/generated/massachusetts_county_local_disability_resources_host403_packet_v1.json');
 const batchSummary = readJson('data/generated/batch185_massachusetts_live_dds_location_lane_refinement_summary_v1.json');
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/massachusetts-california-grade-audit-report-v2.md'), 'utf8');
 const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-learned.md'), 'utf8');
@@ -61,14 +62,20 @@ assert.equal(countyPacket.current_problem_metrics.liveLocationsIndexAccessible, 
 assert.equal(countyPacket.current_problem_metrics.liveInteractiveMapAccessible, true);
 assert.equal(countyPacket.current_problem_metrics.staleAreaOfficesPath404, true);
 assert.equal(countyPacket.current_problem_metrics.hostWide403Surfaces, 0);
+assert.equal(countyPacket.current_problem_metrics.countyRowCount, 14);
+assert.equal(countyPacket.current_problem_metrics.inventoryRowCount, 15);
 assert.equal(countyPacket.repair_lane, 'browser_or_cached_town_to_office_capture_only');
+assert.equal(legacyCountyPacket.current_problem_metrics.countyRowCount, 14);
+assert.equal(legacyCountyPacket.current_problem_metrics.inventoryRowCount, 15);
 
 assert.equal(batchSummary.dds_org_page_live, true);
 assert.equal(batchSummary.dds_locations_index_live, true);
 assert.equal(batchSummary.dds_interactive_map_live, true);
 assert.equal(batchSummary.stale_area_offices_path_404, true);
 assert.equal(batchSummary.county_contract_still_missing, true);
+assert.equal(batchSummary.county_packet_path, 'data/generated/massachusetts_county_local_disability_resources_town_routing_packet_v1.json');
 assert.match(report, /org page, locations index, and interactive map are live/i);
 assert.match(lessons, /Replace Stale 403 Assumptions With Exact Child-Surface Rechecks/);
+assert.match(lessons, /Public Embeds Only Count When They Expose A Reusable Local Contract/);
 
 console.log('test-batch185-massachusetts-live-dds-location-lane-refinement-v1: ok');

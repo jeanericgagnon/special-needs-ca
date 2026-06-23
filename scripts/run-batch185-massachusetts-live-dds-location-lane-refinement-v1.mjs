@@ -14,7 +14,7 @@ const INPUTS = {
   failures: path.join(generatedDir, 'massachusetts_failure_ledger_v2.jsonl'),
   verified: path.join(generatedDir, 'massachusetts_verified_sources_v1.jsonl'),
   nextActions: path.join(generatedDir, 'massachusetts_next_action_queue_v2.jsonl'),
-  countyPacket: path.join(generatedDir, 'massachusetts_county_local_disability_resources_host403_packet_v1.json'),
+  legacyCountyPacket: path.join(generatedDir, 'massachusetts_county_local_disability_resources_host403_packet_v1.json'),
   lessons: path.join(repoRoot, 'docs', 'state-upgrade-lessons-learned.md'),
 };
 
@@ -22,6 +22,7 @@ const OUTPUTS = {
   batchSummary: path.join(generatedDir, 'batch185_massachusetts_live_dds_location_lane_refinement_summary_v1.json'),
   batchReport: path.join(docsGeneratedDir, 'batch185-massachusetts-live-dds-location-lane-refinement-report-v1.md'),
   stateReport: path.join(docsGeneratedDir, 'massachusetts-california-grade-audit-report-v2.md'),
+  countyPacket: path.join(generatedDir, 'massachusetts_county_local_disability_resources_town_routing_packet_v1.json'),
 };
 
 const COUNTY_REASON = `Massachusetts county-local routing is no longer a host-wide 403 blocker. The live DDS org page, the org-locations index, and the interactive DDS regional map all render on Mass.gov in browser review, but the old \`dds-area-offices\` child is now a true 404 and the live interactive map still exposes only a town-or-city lookup contract in rendered HTML. The live locations index lists named DDS area offices and regions, but the current low-token lane still has no county column, county export, or machine-readable town list to bridge those offices back to all 14 county rows.`;
@@ -30,6 +31,8 @@ const COUNTY_EVIDENCE = `Reviewed 2026-06-23 bounded browser checks on the live 
 
 const LESSON_HEADING = '### Replace Stale 403 Assumptions With Exact Child-Surface Rechecks';
 const LESSON_BODY = '*   **Lesson:** If a state org page starts rendering again, re-check the exact child surfaces it links before preserving an old host-wide 403 blocker. Massachusetts DDS had moved past the earlier 403 assumption: the org page, `/locations`, and the interactive regional map were live, while the guessed `dds-area-offices` URL was just a true 404 and the remaining blocker was the lack of a county-grade export contract.';
+const LESSON_HEADING_2 = '### Public Embeds Only Count When They Expose A Reusable Local Contract';
+const LESSON_BODY_2 = '*   **Lesson:** If a first-party page only points to a public map or embedded visualization, do not count that embed as county-grade proof unless it exposes a reusable town, county, or export contract. Massachusetts DDS rendered a live Tableau-backed town-or-city map, but without a machine-readable locality list or county bridge it still stayed blocked.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -55,8 +58,15 @@ function writeJsonl(filePath, rows) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  const additions = [];
+  if (!current.includes(LESSON_HEADING)) {
+    additions.push(`${LESSON_HEADING}\n${LESSON_BODY}`);
+  }
+  if (!current.includes(LESSON_HEADING_2)) {
+    additions.push(`${LESSON_HEADING_2}\n${LESSON_BODY_2}`);
+  }
+  if (!additions.length) return false;
+  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${additions.join('\n\n')}\n`);
   return true;
 }
 
@@ -100,7 +110,7 @@ export function generateBatch185MassachusettsLiveDdsLocationLaneRefinementV1() {
   const failureRows = readJsonl(INPUTS.failures);
   const verifiedRows = readJsonl(INPUTS.verified);
   const nextRows = readJsonl(INPUTS.nextActions);
-  const countyPacket = readJson(INPUTS.countyPacket);
+  const countyPacket = readJson(INPUTS.legacyCountyPacket);
 
   const updatedGapRows = gapRows.map((row) => (
     row.family === 'county_local_disability_resources'
@@ -194,6 +204,8 @@ export function generateBatch185MassachusettsLiveDdsLocationLaneRefinementV1() {
   countyPacket.current_problem_metrics.liveInteractiveMapAccessible = true;
   countyPacket.current_problem_metrics.staleAreaOfficesPath404 = true;
   countyPacket.current_problem_metrics.hostWide403Surfaces = 0;
+  countyPacket.current_problem_metrics.inventoryRowCount = countyPacket.current_problem_metrics.countyRowCount;
+  countyPacket.current_problem_metrics.countyRowCount = countyPacket.affected_counties.length;
   countyPacket.exact_target_goals = [
     'reviewed town-or-city to DDS area-office capture from the live interactive map',
     'official county-grade local office contract on Mass.gov',
@@ -206,7 +218,7 @@ export function generateBatch185MassachusettsLiveDdsLocationLaneRefinementV1() {
     'https://www.mass.gov/info-details/dds-area-offices',
   ];
   countyPacket.root_domains_to_review = [
-    'browser-assisted or cached Mass.gov DDS org, locations, and interactive-map surfaces only',
+    'browser-assisted or cached Mass.gov DDS org, locations, and interactive-map surfaces only; treat the public Tableau child as supporting evidence only unless it exposes a reusable locality contract',
     'do not reopen generic county-office discovery unless a county-grade export or machine-readable local contract appears on the live DDS lane',
   ];
   countyPacket.packet_complete_when = 'Massachusetts can reopen county-local once the live DDS locations/index and interactive-map lane yields a reviewable county-grade contract or a preserved town-to-office capture that can be truthfully bridged to county rows.';
@@ -231,7 +243,8 @@ export function generateBatch185MassachusettsLiveDdsLocationLaneRefinementV1() {
   writeJsonl(INPUTS.failures, updatedFailureRows);
   writeJsonl(INPUTS.verified, updatedVerifiedRows);
   writeJsonl(INPUTS.nextActions, updatedNextRows);
-  writeJson(INPUTS.countyPacket, countyPacket);
+  writeJson(INPUTS.legacyCountyPacket, countyPacket);
+  writeJson(OUTPUTS.countyPacket, countyPacket);
   fs.writeFileSync(OUTPUTS.stateReport, buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows));
 
   const lessonsUpdated = appendLessonIfMissing(INPUTS.lessons);
@@ -246,6 +259,7 @@ export function generateBatch185MassachusettsLiveDdsLocationLaneRefinementV1() {
     dds_interactive_map_live: true,
     stale_area_offices_path_404: true,
     county_contract_still_missing: true,
+    county_packet_path: 'data/generated/massachusetts_county_local_disability_resources_town_routing_packet_v1.json',
     lessons_updated: lessonsUpdated,
   };
   writeJson(OUTPUTS.batchSummary, batchSummary);

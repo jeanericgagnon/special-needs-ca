@@ -1,0 +1,12 @@
+{
+  "batch": "batch_191_michigan_arcgis_field_contract_audit_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "michigan",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_family": "district_or_county_education_routing",
+  "official_arcgis_service_public": true,
+  "isd_layer_has_contacts": false,
+  "district_layers_have_contacts": false,
+  "lessons_updated": false
+}
