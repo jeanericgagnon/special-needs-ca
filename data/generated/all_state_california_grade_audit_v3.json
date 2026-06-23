@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T17:49:35.503Z",
+  "generatedAt": "2026-06-23T17:56:15.265Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -637,11 +637,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_public_assistance_sitemap_dead_circuit_leaves_and_authenticated_only_results"
+        "county_local_disability_resources": "blocked_official_local_offices_leaf_points_to_partial_storefront_lane_and_authenticated_only_results"
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "public_assistance_sitemap_exposes_dead_circuit_leaves_and_myaccess_results_stay_authenticated",
+      "packetPrimaryGapReason": "official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_results_stay_authenticated",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

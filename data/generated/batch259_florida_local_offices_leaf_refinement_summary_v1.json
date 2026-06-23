@@ -1,0 +1,11 @@
+{
+  "batch": "batch259_florida_local_offices_leaf_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "exact_local_offices_leaf_reviewed": true,
+  "family_resource_center_county_rows": 34,
+  "dead_circuit_leaf_samples": 2,
+  "lessons_updated": false
+}

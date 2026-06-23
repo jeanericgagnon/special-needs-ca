@@ -1,0 +1,17 @@
+# Batch 259 Florida Local Offices Leaf Refinement Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- refined_family: county_local_disability_resources
+- failure_code: official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_results_stay_authenticated
+
+## Evidence
+
+- Reviewed 2026-06-23 bounded live official checks on https://www.myflfamilies.com/sitemap.xml, https://www.myflfamilies.com/contact-us, https://www.myflfamilies.com/contact-us/contacts.csv, https://www.myflfamilies.com/services/public-assistance, https://www.myflfamilies.com/services/public-assistance/applying-for-assistance, https://www.myflfamilies.com/services/public-assistance/economic-self-sufficiency-frequently-asked-questions/, https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/community/, https://www.myflfamilies.com/food-cash-and-medical, https://familyresourcecenter.myflfamilies.com/, https://familyresourcecenter.myflfamilies.com/providers.csv, https://myaccess.myflfamilies.com/Public/CPCPS, https://myaccess.myflfamilies.com/Help/HCINT, https://myaccess.myflfamilies.com/config/appconfig.js, https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails, and https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch. The exact official `food-cash-and-medical` leaf now explicitly includes a `Find Local Offices` link, but that link lands on the Family Resource Center host, whose reviewed providers.csv still yields only 34 county storefront rows rather than a 67-county local-office contract. The public contacts.csv still loads with all 67 counties mapped to circuits, but a bounded role-field audit across all 109 rows still returns zero true matches for ACCESS, Medicaid, SNAP, TANF, economic self-sufficiency, food assistance, cash assistance, or customer service center, and the apparent `ESS` hits remain false positives from `5920 Arlington Expressway`. The live sitemap still advertises `contact-us/circuit-*` children, and sampled circuit leaves such as `/contact-us/circuit-3` and `/contact-us/circuit-11` still return live HTTP 404 responses. The anonymous MyACCESS `Public/CPCPS` and `Help/HCINT` routes still return the same generic MyACCESS shell, and bounded anonymous POST probes to the exact official `getZipCountyDetails` plus `communityPartnerSearch` endpoints still return HTTP 401 with `{"message":"Unauthorized"}`. Florida therefore remains blocked because the exact official local-offices leaf still resolves only to a partial storefront lane, the public circuit leaves are dead, and the county-result search lane remains authenticated-only.
+
+## Repair decision
+
+- Florida remains blocked and not index-safe.
+- The exact official `food-cash-and-medical` leaf now exposes a `Find Local Offices` link, but it still lands only on the partial Family Resource Center storefront lane.
+- The public DCF circuit leaves remain dead and the anonymous MyACCESS county-result endpoints remain authenticated-only.
+- Florida should only reopen when a county-complete first-party local-office contract or anonymous county-result lane becomes public.

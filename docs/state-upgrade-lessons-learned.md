@@ -231,3 +231,6 @@
 
 ### Exact County Social-Service Pages Can Shrink A Statewide Office Blocker Without Clearing It
 *   **Lesson:** When a statewide office host fails to expose a complete county-to-office contract, a bounded pass across official county sites can still narrow the blocker honestly. Nevada DSS stayed incomplete, but exact county-owned Clark County Social Service pages and the Washoe County Human Services Agency page raised reviewed local coverage from 11 to 13 counties while still leaving the four-county remainder explicit.
+
+### An Exact Local-Offices Leaf Still Fails If It Only Resolves To A Partial Storefront Lane
+*   **Lesson:** Treat an official `Find Local Offices` leaf as a lead, not a clearance. Florida now exposes an exact `food-cash-and-medical` page with a `Find Local Offices` link, but because that link still lands on a 34-county Family Resource Center storefront lane instead of a complete 67-county county-local contract, the state remains blocked.
