@@ -7,7 +7,9 @@
     "retainedPedCandidates": 2,
     "wrongRoleCrossHostCandidates": 1,
     "districtOwnedLeavesOnDisk": 0,
-    "countyCount": 33
+    "countyCount": 33,
+    "pedRootTimedOut25s": true,
+    "pedBureauTimedOut25s": true
   },
   "exhausted_candidates": [
     "https://webnew.ped.state.nm.us/",
@@ -22,5 +24,14 @@
   "next_allowed_sources": [
     "district-owned special-education leaves on k12 district domains",
     "regional education or county-owned student-support directories if they preserve local routing"
-  ]
+  ],
+  "bounded_live_probe_result": {
+    "attempted_at": "2026-06-23T00:00:00.000Z",
+    "urls": [
+      "https://webnew.ped.state.nm.us/",
+      "https://webnew.ped.state.nm.us/bureaus/special-education/"
+    ],
+    "outcome": "timed_out_25s_both_exact_urls",
+    "conclusion": "Do not reopen PED root retries until exact district-owned, county-grade, or regional leaves are authored."
+  }
 }

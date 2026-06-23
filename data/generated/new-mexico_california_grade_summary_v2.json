@@ -46,7 +46,7 @@
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "School-district packet rows still collapse to generic PED-root evidence, and the bounded PED Bureau fetch timed out (https://webnew.ped.state.nm.us/bureaus/special-education/) before any district-owned or county-grade leaf could be verified.",
+      "evidence": "Reviewed 2026-06-23 bounded live PED probes alongside the current California-grade packet. Exact official checks on both `https://webnew.ped.state.nm.us/` and `https://webnew.ped.state.nm.us/bureaus/special-education/` still timed out after 25 seconds, and the preserved New Mexico low-token queue still has zero district-owned, county-grade, or regional education leaves on disk. The only retained PED-side URLs are the generic PED root and the statewide Special Education Bureau page, while one retained candidate is still the wrong-role `https://www.nmhealth.org/about/ddsd` cross-role leak on a non-PED host. district_or_county_education_routing therefore remains blocked on authoring exact local education leaves, not on rerunning the same PED roots.",
       "next_action": "author_county_or_district_exact_targets"
     },
     {

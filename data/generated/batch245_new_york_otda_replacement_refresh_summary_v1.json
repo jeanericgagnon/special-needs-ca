@@ -1,0 +1,10 @@
+{
+  "batch": "batch245_new_york_otda_replacement_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "healthNyBlockedSurfaceCount": 5,
+  "otdaReplacementHostFailureCount": 7,
+  "lessons_updated": false
+}

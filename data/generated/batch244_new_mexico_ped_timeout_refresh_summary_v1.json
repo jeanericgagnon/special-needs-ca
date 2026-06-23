@@ -1,0 +1,11 @@
+{
+  "batch": "batch244_new_mexico_ped_timeout_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "new-mexico",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "ped_root_timed_out_25s": true,
+  "ped_bureau_timed_out_25s": true,
+  "district_owned_leaves_on_disk": 0,
+  "lessons_updated": false
+}

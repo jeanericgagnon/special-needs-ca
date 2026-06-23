@@ -201,3 +201,12 @@
 
 ### Freeze Selector Lanes When Both Named Submits Hit The Same Error Shell
 *   **Lesson:** If a public official selector still exposes a valid token, full hidden inventory, and named submit buttons, replay both the search and export submits once before preserving any “maybe recovered” lane. Maine NEO kept `action:CSearchBySAU` and `action:SAUExport`, but both Bangor replays returned the same HTTP 500 `Sorry, an error occurred` shell, so the whole selector lane stayed manual/browser-only.
+
+### Probe Both Agency Subdomains And State-Path Successors Before Reopening A Host-Family Blocker
+*   **Lesson:** When an official host family looks migrated, test both the direct agency subdomain pair and the obvious `nh.gov` path successor before guessing deeper leaves. New Hampshire kept the blocker sharp because `www.dhhs.nh.gov` and `dhhs.nh.gov`, `www.education.nh.gov` and `education.nh.gov`, and `www.nhes.nh.gov` and `nhes.nh.gov` all failed alongside the plain `nh.gov` agency paths.
+
+### If Both The State Root And Bureau Leaf Timeout, Freeze Root Retries And Author Local Leaves
+*   **Lesson:** When both the exact state root and its best statewide bureau leaf timeout under the same bounded live probe, stop rerunning state-root fetches and move straight to district or regional leaf authoring. New Mexico PED timed out on both `webnew.ped.state.nm.us/` and `/bureaus/special-education/`, so more PED-root retries would only burn tokens without producing local routing proof.
+
+### Treat Apex And WWW Connection Resets As A Failed Official Replacement-Host Family
+*   **Lesson:** If both the apex and `www` variants of a likely official replacement host reset the connection on the same bounded lane, preserve that as a host-family blocker instead of retrying deeper paths. New York OTDA reset on both `otda.ny.gov` and `www.otda.ny.gov`, which was enough to stop speculative county-locator guessing there.

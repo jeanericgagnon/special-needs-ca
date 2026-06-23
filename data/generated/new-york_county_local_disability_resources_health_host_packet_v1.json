@@ -6,13 +6,38 @@
   "current_metrics": {
     "countyTotal": 62,
     "blockedHealthNySurfaces": 5,
-    "reviewedReplacementLocatorCount": 0
+    "reviewedReplacementLocatorCount": 0,
+    "boundedOtdaReplacementHostFailures": 7
   },
   "blocked_surfaces": [
     "https://www.health.ny.gov/health_care/medicaid/ldss.htm",
     "https://www.health.ny.gov/robots.txt",
     "https://www.health.ny.gov/sitemap.xml",
     "https://www.health.ny.gov/health_care/medicaid/",
-    "https://www.health.ny.gov/health_care/medicaid/redesign/"
-  ]
+    "https://www.health.ny.gov/health_care/medicaid/redesign/",
+    "https://otda.ny.gov/workingfamilies/dss.asp",
+    "https://otda.ny.gov/workingfamilies/",
+    "https://otda.ny.gov/programs/applications/",
+    "https://otda.ny.gov/workingfamilies/contact.asp",
+    "https://otda.ny.gov/",
+    "https://www.otda.ny.gov/workingfamilies/dss.asp",
+    "https://www.otda.ny.gov/"
+  ],
+  "replacement_host_probe": {
+    "attempted_at": "2026-06-23T00:00:00.000Z",
+    "host_family": [
+      "otda.ny.gov",
+      "www.otda.ny.gov"
+    ],
+    "outcome": "connection_reset_across_bounded_replacement_urls",
+    "exact_urls": [
+      "https://otda.ny.gov/workingfamilies/dss.asp",
+      "https://otda.ny.gov/workingfamilies/",
+      "https://otda.ny.gov/programs/applications/",
+      "https://otda.ny.gov/workingfamilies/contact.asp",
+      "https://otda.ny.gov/",
+      "https://www.otda.ny.gov/workingfamilies/dss.asp",
+      "https://www.otda.ny.gov/"
+    ]
+  }
 }

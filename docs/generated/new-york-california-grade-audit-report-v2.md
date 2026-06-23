@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (LawHelpNY now provides reviewed New York statewide legal-help routing from a first-party portal with county-based resource lookup.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_health_hostwide_403 (Reviewed 2026-06-23 the current New York county-local blocker surfaces. The official health.ny.gov Medicaid lane is blocked host-wide, not just at one LDSS page: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all returned HTTP 403 in the bounded lane. The old county rows that still point at `ldss.htm` therefore cannot remain as sample proof; only the blocked official host family can truthfully anchor this blocker until a public replacement locator or county-owned directory is verified.)
+- county_local_disability_resources: blocked_health_hostwide_403 (Reviewed 2026-06-23 the current New York county-local blocker surfaces plus one bounded official replacement-host lane. The official health.ny.gov Medicaid lane is still blocked host-wide, not just at one LDSS page: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all returned HTTP 403 in the bounded lane. A bounded replacement-host probe also showed `https://otda.ny.gov/workingfamilies/dss.asp`, `https://otda.ny.gov/workingfamilies/`, `https://otda.ny.gov/programs/applications/`, `https://otda.ny.gov/workingfamilies/contact.asp`, `https://otda.ny.gov/`, `https://www.otda.ny.gov/workingfamilies/dss.asp`, and `https://www.otda.ny.gov/` all failing with connection resets. The old county rows that still point at `ldss.htm` therefore cannot remain as sample proof, and the obvious OTDA replacement host family cannot yet serve as a reviewed rescue path either; only a public replacement locator or county-owned directory can clear this blocker.)
 
 ## Failure ledger
 
-- county_local_disability_resources: bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement :: Reviewed 2026-06-23 the current New York county-local blocker surfaces. The official health.ny.gov Medicaid lane is blocked host-wide, not just at one LDSS page: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all returned HTTP 403 in the bounded lane. The old county rows that still point at `ldss.htm` therefore cannot remain as sample proof; only the blocked official host family can truthfully anchor this blocker until a public replacement locator or county-owned directory is verified.
+- county_local_disability_resources: bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement :: Reviewed 2026-06-23 the current New York county-local blocker surfaces plus one bounded official replacement-host lane. The official health.ny.gov Medicaid lane is still blocked host-wide, not just at one LDSS page: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all returned HTTP 403 in the bounded lane. A bounded replacement-host probe also showed `https://otda.ny.gov/workingfamilies/dss.asp`, `https://otda.ny.gov/workingfamilies/`, `https://otda.ny.gov/programs/applications/`, `https://otda.ny.gov/workingfamilies/contact.asp`, `https://otda.ny.gov/`, `https://www.otda.ny.gov/workingfamilies/dss.asp`, and `https://www.otda.ny.gov/` all failing with connection resets. The old county rows that still point at `ldss.htm` therefore cannot remain as sample proof, and the obvious OTDA replacement host family cannot yet serve as a reviewed rescue path either; only a public replacement locator or county-owned directory can clear this blocker.
 - district_or_county_education_routing: bounded_boces_leaf_packet_exhausted_before_county_grade_coverage :: Reviewed 2026-06-23 the current New York education blocker packet. Verified exact leaves still stop at only three BOCES-owned pages on CA BOCES, Capital Region BOCES, and Broome-Tioga BOCES. That bounded exact-leaf set is useful, but it is still far short of county-grade routing across all 62 New York counties, so the family remains blocked on broader local-leaf authoring rather than on statewide evidence.
 
 ## Verified source samples
@@ -41,7 +41,7 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.lawhelpny.org/
 - able_program: verified_state_grade; samples=1; first=https://www.mynyable.org/
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.health.ny.gov/health_care/medicaid/redesign/cdpap.htm
-- county_local_disability_resources: blocked_health_hostwide_403; samples=5; first=https://www.health.ny.gov/health_care/medicaid/ldss.htm
+- county_local_disability_resources: blocked_health_hostwide_403; samples=7; first=https://www.health.ny.gov/health_care/medicaid/ldss.htm
 
 ## Next actions
 
@@ -56,6 +56,6 @@
 ## Completion decision
 
 - New York remains `BLOCKED` and `index_safe=false`.
-- County-local remains blocked on a host-wide official 403 plus zero reviewed replacement locators.
+- County-local remains blocked because both the original `health.ny.gov` Medicaid host family and the bounded OTDA replacement-host family failed in live review.
 - Education remains blocked because three exact BOCES leaves are not enough for 62-county coverage.
 - PTI is no longer a blocker.

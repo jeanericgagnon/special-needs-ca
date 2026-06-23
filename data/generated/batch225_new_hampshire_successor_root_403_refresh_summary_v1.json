@@ -6,5 +6,6 @@
   "index_safe": false,
   "nh_gov_root_forbidden": true,
   "dhhs_successor_unresolvable": true,
+  "direct_agency_subdomains_forbidden": true,
   "lessons_updated": false
 }

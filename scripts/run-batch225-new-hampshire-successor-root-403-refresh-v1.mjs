@@ -30,12 +30,12 @@ const EDU_FAILURE_CODE = 'official_nh_doe_host_family_and_likely_nh_gov_successo
 const VR_FAILURE_CODE = 'official_nh_vr_host_family_forbidden_or_unresolvable_and_no_live_nh_gov_successor_root';
 const COUNTY_FAILURE_CODE = 'official_nh_dhhs_host_family_and_likely_nh_gov_successors_return_access_denied_shell';
 
-const SHARED_DHHS_EVIDENCE = 'Reviewed 2026-06-23 exact first-party checks on both the saved `dhhs.new-hampshire.gov` replacement-host family and the likely public `nh.gov` successor family. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. A fresh bounded successor probe also showed `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` all returning HTTP 403 Forbidden immediately. New Hampshire therefore still has no reviewed public official DHHS successor host for Medicaid, waiver, DD, early-intervention, or district-office lanes.';
-const EDU_EVIDENCE = 'Reviewed 2026-06-23 bounded browser-style probes on the official New Hampshire education host family and one likely `nh.gov` successor family. `www.education.nh.gov` root plus exact district-directory leaves and the alternate `my.doe.nh.gov` host all return the same short `Access Denied` shell. A fresh successor probe also showed `https://www.nh.gov/education/` and `https://www.nh.gov/education/doe/` returning HTTP 403 Forbidden immediately. No reviewed district- or county-grade education routing chain is publicly fetchable from the current official education family or the obvious `nh.gov` successor roots.';
-const VR_EVIDENCE = 'Reviewed 2026-06-23 the current New Hampshire VR lane against both the existing host assumptions and one likely `nh.gov` successor family. The legacy root `dhhs.new-hampshire.gov/rehab` no longer resolves, `www.nhes.nh.gov` root plus the BVR disabilities path return the same short `Access Denied` shell, `www.nheasy.nh.gov` does not resolve, and a fresh successor probe showed `https://www.nh.gov/nhes/` plus `https://www.nh.gov/employment/` returning HTTP 403 Forbidden immediately. No reviewed first-party VR or Pre-ETS surface is publicly fetchable from the current official host family or the obvious `nh.gov` successor roots.';
+const SHARED_DHHS_EVIDENCE = 'Reviewed 2026-06-23 exact first-party checks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` both return HTTP 403 Forbidden, and a bounded successor probe also showed `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` all returning HTTP 403 Forbidden immediately. New Hampshire therefore still has no reviewed public official DHHS successor host for Medicaid, waiver, DD, early-intervention, or district-office lanes.';
+const EDU_EVIDENCE = 'Reviewed 2026-06-23 bounded browser-style probes on the official New Hampshire education host family, both `education.nh.gov` subdomain variants, and one likely `nh.gov` successor family. `https://www.education.nh.gov/`, `https://education.nh.gov/`, exact district-directory leaves under `www.education.nh.gov`, and the alternate `https://my.doe.nh.gov/ehb/` host all return the same short `Access Denied` shell or HTTP 403. A fresh successor probe also showed `https://www.nh.gov/education/` and `https://www.nh.gov/education/doe/` returning HTTP 403 Forbidden immediately. No reviewed district- or county-grade education routing chain is publicly fetchable from the current official education family or the obvious `nh.gov` successor roots.';
+const VR_EVIDENCE = 'Reviewed 2026-06-23 the current New Hampshire VR lane against the legacy host assumptions, both `nhes.nh.gov` subdomain variants, and one likely `nh.gov` successor family. The legacy root `dhhs.new-hampshire.gov/rehab` no longer resolves, `https://www.nhes.nh.gov/`, `https://nhes.nh.gov/`, and the BVR disabilities path return the same short `Access Denied` shell or HTTP 403, `www.nheasy.nh.gov` does not resolve, and a fresh successor probe showed `https://www.nh.gov/nhes/` plus `https://www.nh.gov/employment/` returning HTTP 403 Forbidden immediately. No reviewed first-party VR or Pre-ETS surface is publicly fetchable from the current official host family or the obvious `nh.gov` successor roots.';
 
-const LESSON_HEADING = '### Probe The State Root Before Inventing More Successor Paths';
-const LESSON_BODY = '*   **Lesson:** If a blocked state seems to need a new official successor host, test the plain state root and one or two obvious subpaths first. New Hampshire showed `www.nh.gov/` itself and the likely `/dhhs`, `/education`, and `/nhes` successors all 403ing immediately, which let us stop guessing successor paths and lock the blocker faster.';
+const LESSON_HEADING = '### Probe Both Agency Subdomains And State-Path Successors Before Reopening A Host-Family Blocker';
+const LESSON_BODY = '*   **Lesson:** When an official host family looks migrated, test both the direct agency subdomain pair and the obvious `nh.gov` path successor before guessing deeper leaves. New Hampshire kept the blocker sharp because `www.dhhs.nh.gov` and `dhhs.nh.gov`, `www.education.nh.gov` and `education.nh.gov`, and `www.nhes.nh.gov` and `nhes.nh.gov` all failed alongside the plain `nh.gov` agency paths.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -96,7 +96,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '- New Hampshire remains BLOCKED and index_safe=false.',
     '- The saved `dhhs.new-hampshire.gov` replacement-host family is still unresolvable.',
-    '- The likely `nh.gov` successor family is not a hidden rescue path in this lane: the plain state root and the obvious `/dhhs`, `/education`, and `/nhes` successors all return HTTP 403 Forbidden immediately.',
+    '- Neither the direct agency subdomains nor the likely `nh.gov` path successors are hidden rescue paths in this lane: both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return HTTP 403 Forbidden immediately.',
     '- No reviewed public official successor host is currently preserved for the blocked DHHS, education, VR, or district-office families.',
   ].join('\n') + '\n';
 }
@@ -236,6 +236,8 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
         ],
         host_families: [
           'dhhs.new-hampshire.gov',
+          'www.dhhs.nh.gov',
+          'dhhs.nh.gov',
           'www.nh.gov/dhhs'
         ],
         exact_paths: [
@@ -243,6 +245,8 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
           'https://dhhs.new-hampshire.gov/dd',
           'https://dhhs.new-hampshire.gov/dd/waivers',
           'https://dhhs.new-hampshire.gov/earlystart',
+          'https://www.dhhs.nh.gov/',
+          'https://dhhs.nh.gov/',
           'https://www.nh.gov/',
           'https://www.nh.gov/dhhs/',
           'https://www.nh.gov/dhhs/contact-us/',
@@ -257,11 +261,13 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
         ],
         host_families: [
           'www.education.nh.gov',
+          'education.nh.gov',
           'my.doe.nh.gov',
           'www.nh.gov/education'
         ],
         exact_paths: [
           'https://www.education.nh.gov/',
+          'https://education.nh.gov/',
           'https://www.education.nh.gov/school-and-district-profiles',
           'https://www.education.nh.gov/find-school-or-district',
           'https://my.doe.nh.gov/ehb/',
@@ -277,11 +283,13 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
         ],
         host_families: [
           'www.nhes.nh.gov',
+          'nhes.nh.gov',
           'www.nheasy.nh.gov',
           'www.nh.gov/nhes'
         ],
         exact_paths: [
           'https://www.nhes.nh.gov/',
+          'https://nhes.nh.gov/',
           'https://www.nhes.nh.gov/services/disabilities/bvr.htm',
           'https://www.nheasy.nh.gov/',
           'https://www.nh.gov/nhes/',
@@ -309,6 +317,7 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
     index_safe: updatedSummary.index_safe,
     nh_gov_root_forbidden: true,
     dhhs_successor_unresolvable: true,
+    direct_agency_subdomains_forbidden: true,
     lessons_updated: lessonsUpdated,
   };
   writeJson(OUTPUTS.batchSummary, batchSummary);
@@ -330,7 +339,7 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
     '',
     '- Kept New Hampshire BLOCKED.',
     '- Confirmed the saved `dhhs.new-hampshire.gov` successor family is still unresolvable.',
-    '- Confirmed the obvious `nh.gov` successors are not viable rescue paths in this lane because the root and the obvious agency subpaths all return HTTP 403 Forbidden immediately.',
+    '- Confirmed the direct `*.nh.gov` agency roots and the obvious `nh.gov` agency successors are not viable rescue paths in this lane because they all return HTTP 403 Forbidden immediately.',
   ].join('\n') + '\n';
   fs.writeFileSync(OUTPUTS.batchReport, batchReport);
 

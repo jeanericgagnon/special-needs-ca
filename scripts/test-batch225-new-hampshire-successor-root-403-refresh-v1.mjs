@@ -37,11 +37,14 @@ assert.equal(summary.primary_gap_reason, 'official_nh_public_host_families_acces
 for (const fam of ['medicaid_state_health_coverage','medicaid_waiver_hcbs_disability_services','developmental_disability_idd_authority','early_intervention_part_c']) {
   const gap = gapRows.find((row) => row.family === fam);
   assert.equal(gap.family_status, 'blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden');
+  assert.match(gap.status_reason, /www\.dhhs\.nh\.gov/i);
+  assert.match(gap.status_reason, /https:\/\/dhhs\.nh\.gov\//i);
   assert.match(gap.status_reason, /www\.nh\.gov\/dhhs/i);
 }
 
 const eduGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(eduGap.family_status, 'blocked_official_education_hosts_and_nh_gov_successors_forbidden');
+assert.match(eduGap.status_reason, /education\.nh\.gov/i);
 assert.match(eduGap.status_reason, /www\.nh\.gov\/education/i);
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
@@ -49,6 +52,7 @@ assert.equal(countyGap.family_status, 'blocked_official_dhhs_hosts_and_nh_gov_su
 
 const vrGap = gapRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
 assert.equal(vrGap.family_status, 'blocked_vr_hosts_unresolvable_or_forbidden_with_no_nh_gov_successor');
+assert.match(vrGap.status_reason, /https:\/\/nhes\.nh\.gov\//i);
 assert.match(vrGap.status_reason, /www\.nh\.gov\/nhes/i);
 
 const dhhsFailure = failureRows.find((row) => row.family === 'medicaid_state_health_coverage');
@@ -66,13 +70,18 @@ assert.ok(verifiedRows.find((row) => row.family === 'county_local_disability_res
 
 assert.equal(packet.primary_gap_reason, 'official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root');
 assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('www.nh.gov/dhhs')));
+assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('www.dhhs.nh.gov')));
+assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('dhhs.nh.gov')));
 assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('www.nh.gov/education')));
+assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('education.nh.gov')));
 assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('www.nh.gov/nhes')));
+assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('nhes.nh.gov')));
 
 assert.equal(batchSummary.nh_gov_root_forbidden, true);
 assert.equal(batchSummary.dhhs_successor_unresolvable, true);
-assert.ok(report.includes('obvious `/dhhs`, `/education`, and `/nhes` successors all return HTTP 403 Forbidden immediately'));
-assert.ok(lessons.includes('### Probe The State Root Before Inventing More Successor Paths'));
+assert.equal(batchSummary.direct_agency_subdomains_forbidden, true);
+assert.ok(report.includes('both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return HTTP 403 Forbidden immediately'));
+assert.ok(lessons.includes('### Probe Both Agency Subdomains And State-Path Successors Before Reopening A Host-Family Blocker'));
 
 for (const row of nextRows.filter((row) => ['medicaid_state_health_coverage','district_or_county_education_routing','vocational_rehabilitation_pre_ets'].includes(row.family))) {
   assert.ok(/hold_blocked_until/.test(row.next_action));
