@@ -2,22 +2,19 @@
   "state": "north-carolina",
   "state_code": "NC",
   "state_name": "North Carolina",
-  "batch": "batch_10_procedure_hardening_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "batch": "batch_286_north_carolina_official_county_contract_completion_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 100,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
-  "recommended_batch": "batch_3_procedure_hardening",
-  "critical_gap_families": [
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
-  ],
+  "primary_gap_reason": "none",
+  "recommended_batch": "complete_maintain",
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -32,26 +29,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Reviewed 2026-06-23 the current North Carolina education-routing packet plus the live queue audit summary. The state still preserves one real district-owned exact leaf at Charlotte-Mecklenburg Schools, but the remaining education lane is visibly contaminated before fetch: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 12 generic roots still need exact leaf verification. Many counties therefore still collapse to the statewide DPI Exceptional Children root or other generic/non-district leaves. The blocker is an exact district-leaf authoring and queue-cleanup gap, not a missing statewide education authority gap.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Reviewed 2026-06-23 the current North Carolina county-local packet plus the live queue audit summary. The saved county-local samples still point at the DOI mirror `https://doi.org/10.7910/DVN/AVRHMI` rather than reviewed county-owned DSS or local assistance directories, and the same weak-signal queue contamination is still present upstream: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 12 generic roots still need exact leaf verification. The blocker is now explicitly a county-owned local office replacement and queue-cleanup packet, not a generic local-resource shortage.",
-      "next_action": "author_county_or_district_exact_targets"
-    }
-  ]
+  "final_blockers": []
 }

@@ -291,3 +291,6 @@
 
 ### A Partially Live Legacy Root Does Not Reopen A Gated Subtree
 *   **Lesson:** If an old official root and `robots.txt` still return 200, verify the exact program subtree before treating the host as a real successor. Alaska's legacy `dhss.alaska.gov` root was live, but its DPA and DSDS page paths still returned 403 while sitemap and search failed 404, so the legacy host did not reopen county-local routing.
+
+### Official County-Keyed Datasets And County-Leaf Sitemaps Can Clear Local Families Without One-Off Leaf Authoring
+*   **Lesson:** If a state-managed dataset already preserves county-keyed district rows with phone and website fields, and the sister agency sitemap already preserves county-specific local-office leaves, treat those two public contracts as the county-grade repair lane before authoring dozens of exact local pages. North Carolina cleared once DPI's official School Report Card `rcd_location.xlsx` exposed 115 LEA rows spanning all 100 counties with zero blank phone or website fields, while the NCDHHS sitemap exposed 100 county-specific Local DSS leaves.
