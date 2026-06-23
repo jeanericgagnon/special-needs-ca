@@ -51,3 +51,4 @@
 - County-local disability resources still pass at county grade from the reviewed MDHHS county-office leaves.
 - District or county education routing remains blocked because the live official ArcGIS stack proves boundaries and identifiers only; it still does not publish district routing contacts, special-education leaves, or a county-to-district contract.
 - Michigan therefore remains `BLOCKED` and `index_safe=false` until the education-routing blocker is replaced with county-grade official routing evidence.
+

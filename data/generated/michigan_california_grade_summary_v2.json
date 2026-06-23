@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_mde_arcgis_school_map_exposes_geometry_without_local_routing_contract",
+  "primary_gap_reason": "official_mde_arcgis_district_and_isd_layers_expose_geometry_and_ids_without_local_routing_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,7 +43,7 @@
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "official_mde_arcgis_school_map_exposes_geometry_without_local_routing_contract",
-      "evidence": "The official Michigan Schools and Districts ArcGIS app is public and its reviewed map data exposes district and ISD layers with fields such as FIPSCODE, NAME, DCODE, and ISD, but the public contract still preserves no district routing contacts, district-owned special-education leaves, or county-to-district routing table for California-grade local education proof.",
+      "evidence": "Reviewed 2026-06-23 the official Michigan Schools and Districts ArcGIS app plus live layer metadata for the public district, ISD, and school services. The district layer only exposes fields such as FIPSCODE, FIPSNUM, NAME, LABEL, TYPE, DCODE, and ISD, and the ISD layer exposes only NAME, LABEL, TYPE, ISD, and identifier geometry fields like ISDCode. The school layer does carry school-level address fields such as STREET and CITY, but still no district routing contacts, district-owned special-education leaves, superintendent email/phone contract, or county-to-district routing table. Michigan therefore remains blocked because the official state map stack proves boundaries and identifiers, not California-grade local education routing.",
       "next_action": "hold_blocked_until_official_district_or_isd_routing_contract_exists"
     }
   ]

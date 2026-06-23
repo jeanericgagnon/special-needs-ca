@@ -1,0 +1,10 @@
+{
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_blocker_sharpened": true,
+  "county_blocker_sharpened": true,
+  "lessons_updated": false,
+  "education_failure_code": "official_live_org_selector_and_session_post_return_500",
+  "county_failure_code": "official_district_office_pages_lack_county_coverage_contract"
+}

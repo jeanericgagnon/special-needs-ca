@@ -53,3 +53,4 @@
 - Maine remains BLOCKED and not index-safe.
 - Education is still blocked because the official NEO contact selector is definitely live and public, but a sessioned submit against the real form still returns HTTP 500 before any district-grade contact rows or export file are returned.
 - County-local is still blocked because the DHHS office page is office-grade and program-aware, but still never publishes county or town coverage boundaries that would support truthful county mapping.
+

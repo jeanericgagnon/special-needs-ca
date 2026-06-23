@@ -9,7 +9,10 @@
     "deadLocatorRows": 4,
     "countyRowCount": 20,
     "multiOfficeCountyCount": 3,
-    "officialDistrictOfficeRoots": 1
+    "officialDistrictOfficeRoots": 1,
+    "districtOfficeCountyLabelsVisible": false,
+    "districtOfficeTownLookupVisible": false,
+    "programCrossOfficeNotesVisible": true
   },
   "exact_target_goals": [
     "county-to-district-office contract if publicly available",
@@ -70,5 +73,5 @@
       ]
     }
   ],
-  "packet_complete_when": "Every Maine county office row either maps to a reviewed DHHS district office with public county or town coverage support or remains explicitly blocked where no public mapping contract exists."
+  "packet_complete_when": "Every Maine county office row either maps to a reviewed DHHS district office with public county or town coverage support or remains explicitly blocked because the live office directory still lacks a county or town mapping contract."
 }

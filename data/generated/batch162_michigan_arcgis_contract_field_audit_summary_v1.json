@@ -1,0 +1,8 @@
+{
+  "state": "michigan",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_blocker_sharpened": true,
+  "lessons_updated": false,
+  "blocker_basis": "arcgis_layer_metadata_contract_audit"
+}

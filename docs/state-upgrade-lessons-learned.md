@@ -689,3 +689,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Open robots.txt Does Not Mean The Official Host Is Scrapeable
 *   **Lesson:** If `robots.txt` stays public but the exact content, search, and sitemap leaves all return the same access-denied shell, treat the host as transport-blocked and stop same-host retries. Kansas KDADS and KanCare both left `robots.txt` open while every DD or HCBS content surface still returned access denied.
+
+### Public Org Selectors And Program Cross-Office Notes Still Do Not Equal County-Grade Coverage
+*   **Lesson:** If an official page exposes live OrgIds, CSRF tokens, or cross-office program notes, preserve that as stronger blocker evidence, not as completion. Maine’s NEO selector proved a real education result contract existed, and DHHS office notes proved real office-grade routing, but neither surface published county- or district-grade proof until a local result row or mapping contract appeared.
+
+### ArcGIS Layer Metadata Can Close The Routing Question Without Feature Scraping
+*   **Lesson:** When an official ArcGIS app is the last education lead, inspect the live layer metadata before scraping features at scale. Michigan’s district and ISD layers exposed only geometry and identifier fields, which was enough to prove the state map could not satisfy county-grade routing without reopening a broad district-leaf crawl.
+
+### Auto-Post Directory Bridges Must Be Audited At The Final Rendered Page
+*   **Lesson:** If an official directory URL only emits hidden fields and JavaScript submit logic, do not treat that bridge as the evidence surface. Massachusetts DESE required auditing the final rendered `search.aspx` result page to prove the district directory was real while still lacking a county routing contract.

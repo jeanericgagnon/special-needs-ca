@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_dese_profiles_postback_results_preserve_district_rows_but_no_county_mapping_and_mass_gov_dds_lane_is_host_wide_403",
+  "primary_gap_reason": "official_dese_hidden_postback_bridge_renders_real_district_rows_but_no_county_contract_and_mass_gov_dds_lane_is_host_wide_403",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -43,7 +43,7 @@
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "official_dese_profiles_postback_results_lack_county_to_district_contract",
-      "evidence": "Replaying the official DESE Profiles district-directory bridge now returns a real results surface with district names, superintendent contacts, addresses, phones, and grades, but the reviewed result page still preserves no county column, county filter, or county-to-district export contract. The packet therefore still cannot truthfully map Massachusetts counties to district routing from official reviewed evidence.",
+      "evidence": "Reviewed 2026-06-23 one new live official DESE bridge audit plus the current blocker artifacts. The public URL https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238 is not the real result surface; it only emits a hidden-field passForm that auto-posts __VIEWSTATE, __EVENTVALIDATION, orgType=5,12, and leftNavId=11238 into /search/search.aspx. Replaying that exact hidden-field POST does render real district rows with superintendent contacts, addresses, phones, and grades served, but the final page still preserves no county column, county filter, or county export contract. County words only appear inside district names such as Bristol County Agricultural, not as a routing key. Massachusetts therefore still lacks county-grade education routing evidence even though the official DESE postback bridge is real.",
       "next_action": "hold_blocked_until_official_county_to_district_contract_exists"
     },
     {
