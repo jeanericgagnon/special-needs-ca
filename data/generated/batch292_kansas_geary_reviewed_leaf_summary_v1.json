@@ -1,0 +1,10 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_count": 15,
+  "promoted_counties": [
+    "geary-ks"
+  ],
+  "unresolved_county_count": 90
+}

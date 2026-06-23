@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 105
-- primary_gap_reason: reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_14_counties_but_export_backed_county_grade_coverage_is_still_incomplete
+- primary_gap_reason: reviewed_kansas_district_and_district_owned_leaves_now_cover_15_counties_but_export_backed_county_grade_coverage_is_still_incomplete
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (Kansas DD authority now clears at state grade from reviewed first-party KDADS leaves. The live KDADS root renders HCBS and disability program navigation, the official Intellectual / Developmentally Disabled Information page is public, the Community Support Waiver page explicitly serves Kansans with intellectual and developmental disabilities, and the HCBS Leadership & Staff page names I/DD and waiver staff roles on the same official host. The old host-wide 403 claim is no longer accurate for browser-readable review.)
 - early_intervention_part_c: verified_state_grade (Reviewed live KSDE Early Childhood Special Education leaf again provides Kansas birth-to-three, Part C, KDHE administration, and the local ITS referral pointer.)
 - special_education_idea_part_b: verified_state_grade (Reviewed live KSDE Special Education leaf again provides a role-pure IDEA Part B root and links to dispute-resolution plus parent-rights leaves on the same official path.)
-- district_or_county_education_routing: blocked_reviewed_district_owned_and_coop_leads_but_not_statewide_county_grade (Kansas is past a root-only blocker: reviewed district-owned and district-linked cooperative local education-routing leaves now exist for 14/105 counties, but county-grade local education routing is still incomplete across the packet. Export-backed district hosts remain the right lane, and exact non-match districts such as Abilene USD 435 should stay frozen until a role-exact local leaf appears on the official host stack.)
+- district_or_county_education_routing: blocked_reviewed_district_owned_and_coop_leads_but_not_statewide_county_grade (Kansas is past a root-only blocker: reviewed district-owned and district-linked cooperative local education-routing leaves now exist for 15/105 counties, but county-grade local education routing is still incomplete across the packet. Export-backed district hosts remain the right lane, and exact non-match districts such as Abilene USD 435 should stay frozen until a role-exact local leaf appears on the official host stack.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (Reviewed live DCF Rehabilitation Services Program Overview page replaced the old KDADS misclassification.)
 - protection_and_advocacy: verified_state_grade (Reviewed first-party DRC Kansas evidence plus live About/Get Help pages prove the statewide protection-and-advocacy role and help path.)
 - parent_training_information_center: verified_state_grade (Reviewed first-party Families Together evidence explicitly states that it is Kansas’ federally designated PTI.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_14_counties_but_export_backed_county_grade_coverage_is_still_incomplete :: Reviewed 2026-06-23 one more bounded official Kansas district-routing pass using only export-backed district hosts, official district-owned pages, district-linked cooperative leaves on district hosts, and exact same-domain checks. Education routing now has reviewed local proof for 14/105 counties: atchison-ks, butler-ks, cowley-ks, douglas-ks, finney-ks, harvey-ks, johnson-ks, leavenworth-ks, lyon-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Harvey now clears because https://www.usd373.org/about/departments/special-education returned HTTP 200 with title `Special Education - Newton Unified School District 373` on the official Newton USD 373 host and the same district stack also preserves a referral leaf at https://www.usd373.org/about/departments/special-education/referral-process-for-exceptionalities. Lyon now clears because https://www.usd253.org/services/fhsec returned HTTP 200 with title and H1 `Flint Hills Special Education Cooperative` on the official Emporia Public Schools host, preserving a district-linked local special-education cooperative route on the same district stack. Dickinson remains a correct exact non-match freeze: the official Abilene Public Schools host at https://www.abileneschools.org/ and its public sitemap both returned HTTP 200, but the bounded same-domain pass still found no role-exact special-education, student-services, procedural-safeguards, or parent-rights leaf. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties.
+- district_or_county_education_routing: reviewed_kansas_district_and_district_owned_leaves_now_cover_15_counties_but_export_backed_county_grade_coverage_is_still_incomplete :: Reviewed 2026-06-23 one more bounded official Kansas district-routing pass using only export-backed district hosts, official district-owned pages, district-linked cooperative leaves on district hosts, and exact same-domain checks. Education routing now has reviewed local proof for 15/105 counties: atchison-ks, butler-ks, cowley-ks, douglas-ks, finney-ks, geary-ks, harvey-ks, johnson-ks, leavenworth-ks, lyon-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Geary now clears because https://www.usd475.org/departments/special-education returned HTTP 200 with title `Special Education - Geary County Unified School District 475` on the official Geary County USD 475 host, and the live district homepage also exposes that exact same-domain special-education leaf in public navigation. Dickinson remains a correct exact non-match freeze: the official Abilene Public Schools host at https://www.abileneschools.org/ and its public sitemap both returned HTTP 200, but the bounded same-domain pass still found no role-exact special-education, student-services, procedural-safeguards, or parent-rights leaf. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties.
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=4; first=https://www.kdads.ks.gov/
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.ksde.gov/policy-and-funding/special-education
-- district_or_county_education_routing: blocked_reviewed_district_owned_and_coop_leads_but_not_statewide_county_grade; samples=104; first=https://www.usd409.net/page/special-education-services/
+- district_or_county_education_routing: blocked_reviewed_district_owned_and_coop_leads_but_not_statewide_county_grade; samples=17; first=https://www.usd409.net/page/special-education-services/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dcf.ks.gov/services/RS/Pages/default.aspx
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.drckansas.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://familiestogetherinc.org/
@@ -50,7 +50,6 @@
 
 - Kansas remains BLOCKED and not index-safe.
 - Education is the only remaining critical blocker.
-- Harvey now clears from the district-owned Newton USD 373 Special Education leaf and the same district stack preserves a role-exact referral leaf for exceptionalities.
-- Lyon now clears from the district-linked Flint Hills Special Education Cooperative leaf on the official Emporia Public Schools host.
+- Geary now clears from the district-owned Geary County USD 475 Special Education leaf on the live usd475.org host.
 - Dickinson remains frozen as an exact non-match on the live Abilene district host and sitemap.
-- Kansas now has reviewed local education-routing proof for fourteen counties, but county-grade coverage is still incomplete across the remaining unresolved counties.
+- Kansas now has reviewed local education-routing proof for fifteen counties, but county-grade coverage is still incomplete across the remaining unresolved counties.
