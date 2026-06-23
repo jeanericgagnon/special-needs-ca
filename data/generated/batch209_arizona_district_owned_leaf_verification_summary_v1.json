@@ -1,0 +1,27 @@
+{
+  "batch": "batch_209_arizona_district_owned_leaf_verification_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "resolved_counties": [
+    "apache-az",
+    "graham-az",
+    "greenlee-az",
+    "maricopa-az",
+    "pinal-az",
+    "santa-cruz-az",
+    "yuma-az"
+  ],
+  "unresolved_counties": [
+    "cochise-az",
+    "coconino-az",
+    "gila-az",
+    "la-paz-az",
+    "mohave-az",
+    "navajo-az",
+    "pima-az",
+    "yavapai-az"
+  ],
+  "verified_leaf_count": 7
+}

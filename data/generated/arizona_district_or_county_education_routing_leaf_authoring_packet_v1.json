@@ -7,7 +7,7 @@
   "current_problem_metrics": {
     "genericFallbackCountyRows": 15,
     "challengedOfficialRoots": 8,
-    "authoredExactLeafCount": 0,
+    "authoredExactLeafCount": 7,
     "statewideFallbackRows": 15,
     "azedHostExhaustedRoots": 8,
     "liveDistinctRootCount": 1,
@@ -16,7 +16,8 @@
     "stagingDistrictOwnedRootCount": 0,
     "reviewedOfficialDistrictInventoryRoots": 15,
     "countyKeyedDistrictRootCount": 15,
-    "remainingUnmappedCounties": 0
+    "remainingUnmappedCounties": 0,
+    "unresolvedDistrictOwnedLeafCount": 8
   },
   "exact_target_goals": [
     "official district detail root per county",
@@ -317,5 +318,24 @@
       "fetched_at": "2026-06-23T00:00:00.000Z",
       "evidence_snippet": "Yuma Elementary District is exposed on the official report-cards host through a district detail route, and its official detail API preserves district website https://www.yuma.org/, phone 928-502-4300, and address 4th Ave and 6th St, Yuma, AZ85364."
     }
+  ],
+  "verified_local_leaf_counties": [
+    "apache-az",
+    "graham-az",
+    "greenlee-az",
+    "maricopa-az",
+    "pinal-az",
+    "santa-cruz-az",
+    "yuma-az"
+  ],
+  "unresolved_local_leaf_counties": [
+    "cochise-az",
+    "coconino-az",
+    "gila-az",
+    "la-paz-az",
+    "mohave-az",
+    "navajo-az",
+    "pima-az",
+    "yavapai-az"
   ]
 }

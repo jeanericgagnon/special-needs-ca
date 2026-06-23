@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 15
-- primary_gap_reason: des_host_challenge_plus_county_keyed_report_cards_roots_without_district_owned_special_education_leaves
+- primary_gap_reason: partial_district_owned_education_leafs_plus_des_county_office_blocker
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_county_keyed_report_cards_roots_without_district_owned_special_education_leaves (The official AZ School Report Cards host now preserves a county-keyed Arizona district-root inventory through its district detail API plus official-address geocoding, but Arizona is still not county-grade because no district-owned special-education or student-services leaves have been verified from those local district roots.)
+- district_or_county_education_routing: blocked_county_keyed_report_cards_roots_without_district_owned_special_education_leaves (Arizona education now has reviewed district-owned special-education or student-services leaves for some county-keyed district roots, but the family remains blocked until every county has a reviewed local education-routing leaf rather than only a county-keyed district root.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (reviewed live first-party PTI designation text is present on the Encircle Families acknowledgements page)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: official_report_cards_district_roots_county_keyed_but_no_district_owned_special_education_leaves_verified :: Reviewed 2026-06-23 bounded official Arizona report-cards checks and then materialized a county-keyed district-root inventory from the live /api/Entity/GetEntityList inventory plus exact /api/Entity/GetEntity?id=<educationOrganizationId>&fiscalYear=2025 detail responses. A bounded official Census geocoder pass over district detail addresses now yields one reviewed district root for all 15 Arizona counties, with first-party district website, phone, and address fields preserved on the official report-cards host. Arizona education is no longer blocked by missing county-keyed district roots; it is now blocked because those county-keyed district roots still do not have reviewed district-owned special-education or student-services leaves attached. Counties covered: apache-az, cochise-az, coconino-az, gila-az, graham-az, greenlee-az, la-paz-az, maricopa-az, mohave-az, navajo-az, pima-az, pinal-az, santa-cruz-az, yavapai-az, yuma-az.
+- district_or_county_education_routing: district_owned_special_education_leaves_verified_for_some_counties_but_remaining_counties_still_lack_reviewed_local_leaves :: Reviewed 2026-06-23 bounded district-owned Arizona education leaf verification from the county-keyed report-cards inventory. Exact same-domain special-education or student-services leaves were verified for 7/15 county-keyed district roots: apache-az, graham-az, greenlee-az, maricopa-az, pinal-az, santa-cruz-az, yuma-az. The verified local leaves came from direct district-owned hrefs or sitemap candidates rather than the challenged AZED host. Remaining unresolved counties are cochise-az, coconino-az, gila-az, la-paz-az, mohave-az, navajo-az, pima-az, yavapai-az, where the current chosen district root either exposes no same-domain special-education candidate, has no public district website, or still lacks a role-verifiable local leaf. Arizona education is sharper because some county-grade local leaves are now proven, but the family remains blocked until all counties have reviewed district-owned education-routing leaves.
 - county_local_disability_resources: ahcccs_accessible_host_exposes_only_county_map_and_support_letters_no_office_contract :: Reviewed 2026-06-22 live Arizona DES candidates. The root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap URLs all returned the Cloudflare "Just a moment..." HTTP 403 shell. The live county_offices table currently contains 14 Arizona rows still anchored to the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and 1 row still anchored to the generic legacy root https://dhhs.arizona.gov/locations, and no authored Arizona county-office leaf packet is currently present on disk to replace them.
 
 ## Verified source samples
@@ -34,7 +34,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.arizona.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.arizona.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.azed.gov/specialeducation
-- district_or_county_education_routing: blocked_county_keyed_report_cards_roots_without_district_owned_special_education_leaves; samples=17; first=https://azreportcards.azed.gov/api/Entity/GetEntityList
+- district_or_county_education_routing: blocked_partial_district_owned_special_education_leaf_coverage; samples=9; first=https://www.sjusd.net/page/special-education/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://des.az.gov/ddd
 - protection_and_advocacy: verified_state_grade; samples=1; first=http://www.disabilityrightsaz.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://encirclefamilies.org/about-us/acknowledgements/
@@ -45,11 +45,11 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_district_owned_special_education_leaves_from_county_keyed_report_cards_roots
+- [critical] district_or_county_education_routing: finish_district_owned_special_education_leaves_for_unresolved_counties_from_county_keyed_roots
 - [critical] county_local_disability_resources: author_reviewed_county_specific_office_leaves_before_reopening_browser_lane
 
 ## Completion decision
 
 - Arizona remains BLOCKED and not index-safe.
-- Education is sharper again: the official report-cards app now yields one county-keyed district root for all 15 Arizona counties through reviewed district detail responses plus bounded official geocoding, so the remaining education work is exact district-owned special-education or student-services leaf verification.
+- Education improved because reviewed district-owned leaves now exist for part of the county-keyed district inventory, so the blocker is no longer just root authoring. The remaining work is explicit unresolved county coverage.
 - County/local disability resources are still blocked separately because the DES office lane remains challenge-blocked and the accessible AHCCCS artifacts still do not preserve a county-to-office contract.

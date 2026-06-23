@@ -98,3 +98,6 @@
 
 ### MVC Search Forms May Need The Named Submit Action, Not Just The Hidden Inventory
 *   **Lesson:** If an official MVC form exposes an anti-forgery token and multiple named submit actions, replay the exact submit name instead of only posting the hidden inventory. Maine's DOE contact search started working once `__RequestVerificationToken` and the named `action:SAUExport` submit were included with the SAU payload.
+
+### If The Public All-District Export Errors, Fall Back To District-Scoped Exports
+*   **Lesson:** If a public directory app exposes an `***ALL DISTRICTS***` option but that broad export returns a generic problem shell, retry the same official submit contract with one exact district selector. Kansas `Directory_Rpts` still returned the full `Directory.xls` workbook from district-scoped submits even when the broad all-district attempt failed.

@@ -1,0 +1,14 @@
+{
+  "batch": "batch_210_kansas_reviewed_district_owned_leaves_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_counties": [
+    "atchison-ks",
+    "butler-ks",
+    "shawnee-ks"
+  ],
+  "reviewed_leaf_count": 3,
+  "lessons_updated": false
+}
