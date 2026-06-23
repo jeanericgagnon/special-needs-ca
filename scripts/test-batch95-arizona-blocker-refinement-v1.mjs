@@ -45,8 +45,9 @@ assert.deepEqual(summary.final_blockers.map((row) => row.family), ['district_or_
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
 assert.equal(byFamily.get('parent_training_information_center').family_status, 'verified_state_grade');
 assert.match(byFamily.get('parent_training_information_center').status_reason, /acknowledgements page/i);
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /15\/15 Arizona rows/i);
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /no authored district-owned Arizona leaf packet/i);
+assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_official_report_cards_inventory_not_yet_converted_to_county_keyed_district_roots');
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /official AZ School Report Cards host/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /api\/Entity\/GetEntityList/i);
 assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Just a moment/i);
 assert.match(byFamily.get('county_local_disability_resources').status_reason, /14 Arizona rows/i);
 assert.match(byFamily.get('county_local_disability_resources').status_reason, /no authored Arizona county-office leaf packet/i);
@@ -54,7 +55,7 @@ assert.match(byFamily.get('county_local_disability_resources').status_reason, /J
 
 assert.equal(failureRows.some((row) => row.family === 'parent_training_information_center'), false);
 assert.equal(nextRows.some((row) => row.family === 'parent_training_information_center'), false);
-assert.equal(nextRows.find((row) => row.family === 'district_or_county_education_routing').next_action, 'author_district_owned_exact_targets_then_reopen_when_local_education_leafs_exist');
+assert.equal(nextRows.find((row) => row.family === 'district_or_county_education_routing').next_action, 'extract_county_keyed_district_inventory_from_official_report_cards_api_then_author_exact_special_education_leaves');
 assert.equal(nextRows.find((row) => row.family === 'county_local_disability_resources').next_action, 'author_reviewed_county_specific_office_leaves_before_reopening_browser_lane');
 
 const ptiVerified = verifiedRows.find((row) => row.family === 'parent_training_information_center');
@@ -67,12 +68,14 @@ assert.match(ptiVerified.samples[0].evidence_snippet, /Arizona’s Parent Traini
 assert.equal(batchSummary.completeness_pct, 83);
 assert.deepEqual(batchSummary.repaired_families, ['parent_training_information_center']);
 assert.deepEqual(batchSummary.remaining_blockers, ['district_or_county_education_routing', 'county_local_disability_resources']);
+assert.equal(batchSummary.official_report_cards_inventory_live, true);
 const queueRow = queueRows.find((row) => row.state === 'arizona');
 assert.equal(queueRow.primary_gap_reason, 'full_domain_challenge_plus_missing_authored_local_leaf_packets');
 assert.ok(report.includes('acknowledgements page'));
 assert.ok(report.includes('Arizona’s Parent Training and Information (PTI) Center'));
-assert.ok(report.includes('no district-owned Arizona leaf packet'));
+assert.ok(report.includes('official AZ School Report Cards app now proves a public district inventory exists'));
 assert.ok(report.includes('no reviewed county-office leaf packet'));
 assert.ok(lessons.includes('Full-Domain 403 Plus Fallback-Only Rows Means Packet Gap, Not Just Browser Gap'));
+assert.ok(lessons.includes('Challenged DOE Roots Can Still Have Accessible Official Inventory Apps'));
 
 console.log('test-batch95-arizona-blocker-refinement-v1: ok');

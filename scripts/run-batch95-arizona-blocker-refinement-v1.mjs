@@ -25,10 +25,12 @@ const OUTPUTS = {
 };
 
 const PTI_EVIDENCE = 'Reviewed 2026-06-22 live Encircle Families acknowledgements page at https://encirclefamilies.org/about-us/acknowledgements/. The fetched first-party page explicitly says Encircle Families is Arizona’s Parent Training and Information (PTI) Center and cites IDEA Part D grant support, so the PTI family is now verified from live first-party designation text rather than inferred family-support scope.';
-const EDUCATION_EVIDENCE = 'Reviewed 2026-06-22 live Arizona Department of Education special-education candidates. The root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs all returned the Cloudflare "Just a moment..." HTTP 403 shell. The live school_district table currently contains 15/15 Arizona rows still pointing at https://www.azed.gov/specialeducation as generic county fallback evidence, and no authored district-owned Arizona leaf packet is currently present on disk to replace them.';
+const EDUCATION_EVIDENCE = 'Reviewed 2026-06-23 live Arizona education blocker artifacts plus one bounded check of the official AZ School Report Cards host at https://azreportcards.azed.gov/. The main AZED root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs still return the Cloudflare "Just a moment..." HTTP 403 shell. But the sibling official report-cards app is browser-readable and its public API /api/Entity/GetEntityList returns a statewide district inventory, including Arizona LEA rows such as St Johns Unified District, Window Rock Unified District, and Chinle Unified District. The live school_district table still contains 15/15 Arizona rows pointing only at the statewide AZED fallback https://www.azed.gov/specialeducation, and the packet still lacks county-keyed district-owned root authoring or exact special-education leaves. Arizona education is therefore no longer blocked by zero official inventory; it is blocked because the accessible official inventory has not yet been converted into county-keyed district-owned roots and leaf evidence.';
 const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 live Arizona DES candidates. The root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap URLs all returned the Cloudflare "Just a moment..." HTTP 403 shell. The live county_offices table currently contains 14 Arizona rows still anchored to the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and 1 row still anchored to the generic legacy root https://dhhs.arizona.gov/locations, and no authored Arizona county-office leaf packet is currently present on disk to replace them.';
 const LESSON_HEADING = '### Full-Domain 403 Plus Fallback-Only Rows Means Packet Gap, Not Just Browser Gap';
 const LESSON_BODY = '*   **Lesson:** When an official state domain 403s on the root, robots.txt, sitemap, and obvious leaf guesses, check whether the live rows are still 100% statewide or DOI-style placeholders. If so, record the blocker as missing authored local leaf coverage too, so later repairs do not stall waiting on a browser lane that still has no exact local targets to verify.';
+const REPORT_CARDS_LESSON_HEADING = '### Challenged DOE Roots Can Still Have Accessible Official Inventory Apps';
+const REPORT_CARDS_LESSON_BODY = "*   **Lesson:** If the main state DOE host is challenge-blocked, inspect sibling official data or report-card apps before declaring the district-root lane empty. Arizona's `azreportcards.azed.gov` host stayed public and its `/api/Entity/GetEntityList` endpoint exposed statewide district inventory even while the main AZED education pages, robots.txt, and sitemap stayed challenged.";
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -55,10 +57,11 @@ function writeJsonl(filePath, rows) {
 
 function appendLessonIfMissing() {
   const current = fs.readFileSync(INPUTS.lessons, 'utf8');
-  if (current.includes(LESSON_HEADING)) {
-    return;
-  }
-  fs.writeFileSync(INPUTS.lessons, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  const additions = [];
+  if (!current.includes(LESSON_HEADING)) additions.push(`${LESSON_HEADING}\n${LESSON_BODY}`);
+  if (!current.includes(REPORT_CARDS_LESSON_HEADING)) additions.push(`${REPORT_CARDS_LESSON_HEADING}\n${REPORT_CARDS_LESSON_BODY}`);
+  if (!additions.length) return;
+  fs.writeFileSync(INPUTS.lessons, `${current.trimEnd()}\n\n${additions.join('\n\n')}\n`);
 }
 
 function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
@@ -90,7 +93,7 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- Arizona now has reviewed live first-party PTI designation evidence on Encircle Families, so Parent Training and Information Center is no longer a blocker.',
-    '- Arizona still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence while the official AZED domain is challenged across the root plus obvious local-routing leaves and no district-owned Arizona leaf packet is yet authored on disk, and county/local disability resources still depend on DOI or generic locator rows while the official DES domain is challenged across the root plus obvious office-locator leaves and no reviewed county-office leaf packet is yet authored on disk.',
+    '- Arizona still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide fallback evidence even though the official AZ School Report Cards app now proves a public district inventory exists; the packet still lacks county-keyed district-owned roots and exact special-education leaves. County/local disability resources still depend on DOI or generic locator rows while the official DES domain is challenged across the root plus obvious office-locator leaves and no reviewed county-office leaf packet is yet authored on disk.',
     '- Arizona is therefore still BLOCKED and not index-safe, but the final blockers are now limited to the two county- or district-grade local-proof families.',
     '',
     '## Evidence checks',
@@ -120,6 +123,7 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
+        family_status: 'blocked_official_report_cards_inventory_not_yet_converted_to_county_keyed_district_roots',
         status_reason: EDUCATION_EVIDENCE,
       };
     }
@@ -136,7 +140,11 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
     .filter((row) => row.family !== 'parent_training_information_center')
     .map((row) => {
       if (row.family === 'district_or_county_education_routing') {
-        return { ...row, evidence: EDUCATION_EVIDENCE };
+        return {
+          ...row,
+          failure_code: 'official_report_cards_inventory_exists_but_county_keyed_district_roots_are_unauthored',
+          evidence: EDUCATION_EVIDENCE,
+        };
       }
       if (row.family === 'county_local_disability_resources') {
         return { ...row, evidence: COUNTY_EVIDENCE };
@@ -171,6 +179,8 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
+        family_status: 'blocked_official_report_cards_inventory_not_yet_converted_to_county_keyed_district_roots',
+        blocker_code: 'official_report_cards_inventory_exists_but_county_keyed_district_roots_are_unauthored',
         blocker_evidence: EDUCATION_EVIDENCE,
       };
     }
@@ -189,7 +199,8 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
       if (row.family === 'district_or_county_education_routing') {
         return {
           ...row,
-          next_action: 'author_district_owned_exact_targets_then_reopen_when_local_education_leafs_exist',
+          failure_code: 'official_report_cards_inventory_exists_but_county_keyed_district_roots_are_unauthored',
+          next_action: 'extract_county_keyed_district_inventory_from_official_report_cards_api_then_author_exact_special_education_leaves',
           evidence: EDUCATION_EVIDENCE,
         };
       }
@@ -213,7 +224,7 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
     final_blockers: [
       {
         family: 'district_or_county_education_routing',
-        failure_code: 'official_education_root_challenge_and_county_fallback_only_rows',
+        failure_code: 'official_report_cards_inventory_exists_but_county_keyed_district_roots_are_unauthored',
         evidence: EDUCATION_EVIDENCE,
       },
       {
@@ -255,6 +266,7 @@ export function generateBatch95ArizonaBlockerRefinementV1() {
       education: EDUCATION_EVIDENCE,
       countyLocal: COUNTY_EVIDENCE,
     },
+    official_report_cards_inventory_live: true,
   });
   fs.writeFileSync(OUTPUTS.stateReport, buildReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows));
   fs.writeFileSync(

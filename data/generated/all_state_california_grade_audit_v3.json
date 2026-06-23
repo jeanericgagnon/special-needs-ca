@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T08:06:05.842Z",
+  "generatedAt": "2026-06-23T08:20:02.016Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 20,
@@ -210,7 +210,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_zero_local_root_inventory_before_leaf_authoring",
+        "district_or_county_education_routing": "blocked_official_report_cards_inventory_not_yet_converted_to_county_keyed_district_roots",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "zero_district_root_inventory_and_ahcccs_sitemap_exposes_no_county_office_contract",
+      "packetPrimaryGapReason": "full_domain_challenge_plus_missing_authored_local_leaf_packets",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

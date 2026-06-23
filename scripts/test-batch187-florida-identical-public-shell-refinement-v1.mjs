@@ -37,11 +37,13 @@ assert.equal(summary.primary_gap_reason, 'public_myaccess_cpcps_and_help_routes_
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.match(countyGap.status_reason, /Public\/CPCPS.*Help\/HCINT.*same 5165-byte MyACCESS shell/i);
+assert.match(countyGap.status_reason, /Arlington Expressway/i);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyFailure.failure_code, 'public_myaccess_cpcps_and_help_routes_are_identical_shells_and_partner_services_stay_accountmanagement_401');
 assert.match(countyFailure.evidence, /same 5165-byte generic MyACCESS shell/i);
 assert.match(countyFailure.evidence, /partnerApproverServices only under `?\/accountmanagement`?/i);
+assert.match(countyFailure.evidence, /5920 Arlington Expressway/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 const cpcpsSample = countyVerified.samples.find((row) => row.source_url === 'https://myaccess.myflfamilies.com/Public/CPCPS');
@@ -64,5 +66,6 @@ assert.match(countyNext.evidence, /same 5165-byte generic MyACCESS shell/i);
 assert.ok(report.includes('The public MyACCESS `Public/CPCPS` and `Help/HCINT` routes are now proven to be the same generic shell'));
 assert.ok(batchReport.includes('The public MyACCESS `Public/CPCPS` and `Help/HCINT` routes are the same generic shell'));
 assert.ok(lessons.includes('### Identical Public SPA Shells Should Collapse To One Final Blocker'));
+assert.ok(lessons.includes('### Role Audits Must Reject Address-Substring False Positives'));
 
 console.log('test-batch187-florida-identical-public-shell-refinement-v1: ok');

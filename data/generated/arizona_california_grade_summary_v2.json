@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "zero_district_root_inventory_and_ahcccs_sitemap_exposes_no_county_office_contract",
+  "primary_gap_reason": "full_domain_challenge_plus_missing_authored_local_leaf_packets",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,13 +41,13 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "no_district_owned_arizona_root_inventory_exists_in_live_or_staging_packet",
-      "evidence": "Reviewed 2026-06-22 current Arizona education blocker artifacts, the live school_districts DB rows, the staging_scraped_school_districts rows, and the on-disk district packet. All 15 live Arizona school_district rows still point at the same statewide AZED fallback source https://www.azed.gov/specialeducation, while the 13 Arizona staging rows still point at the older statewide placeholder https://www.education.arizona.gov. Neither inventory preserves a single district-owned Arizona root domain, and the packet still reports authoredExactLeafCount=0. Because the official AZED root, likely replacement leaves, robots.txt, and sitemap.xml are all challenge-blocked, Arizona cannot jump straight to district-owned leaf verification yet; it first needs county-keyed district-root authoring from outside the challenged AZED host."
+      "failure_code": "official_report_cards_inventory_exists_but_county_keyed_district_roots_are_unauthored",
+      "evidence": "Reviewed 2026-06-23 live Arizona education blocker artifacts plus one bounded check of the official AZ School Report Cards host at https://azreportcards.azed.gov/. The main AZED root, parental-rights, dispute-resolution, az-find, ESSO, publications, contact, robots.txt, and sitemap URLs still return the Cloudflare \"Just a moment...\" HTTP 403 shell. But the sibling official report-cards app is browser-readable and its public API /api/Entity/GetEntityList returns a statewide district inventory, including Arizona LEA rows such as St Johns Unified District, Window Rock Unified District, and Chinle Unified District. The live school_district table still contains 15/15 Arizona rows pointing only at the statewide AZED fallback https://www.azed.gov/specialeducation, and the packet still lacks county-keyed district-owned root authoring or exact special-education leaves. Arizona education is therefore no longer blocked by zero official inventory; it is blocked because the accessible official inventory has not yet been converted into county-keyed district-owned roots and leaf evidence."
     },
     {
       "family": "county_local_disability_resources",
-      "failure_code": "ahcccs_accessible_host_exposes_only_county_map_and_support_letters_no_office_contract",
-      "evidence": "Reviewed 2026-06-22 bounded official Arizona AHCCCS county-local artifacts again using the bundled workspace PDF runtime plus one rendered first-page check on the two cited admin PDFs, then re-checked the live AHCCCS sitemap on 2026-06-22. The live ALTCS Offices HTML leaf still proves seven named official offices on the accessible AHCCCS host: Chinle, Flagstaff, Kingman, Phoenix, Prescott, Tucson, and Yuma. The official ALTCS County Map PDF is not fully image-only after all: bundled pdfplumber extraction preserves county names such as Yuma, Mohave, La Paz, Gila, Santa Cruz, Cochise, Graham, Maricopa, Pinal, Apache, Navajo, Coconino, Yavapai, Greenlee, and Pima alongside ALTCS enrollment text. But that county-map artifact still does not preserve office addresses, phones, or a county-to-office assignment contract. Rendered first-page review shows CountyAdminOffice.pdf and PimaCountyAdmin.pdf are county-administrator support letters to AHCCCS rather than county office-directory artifacts. A bounded filter over the live AHCCCS sitemap surfaced no overlooked county-office locator leaves beyond the known ALTCS county map and county-admin/support-letter PDFs. DES remains challenge-blocked at root, robots.txt, sitemap.xml, and office-locator leaves. Arizona county-local routing therefore narrows to a missing county-to-office contract on accessible AHCCCS leaves, not to OCR or hidden sitemap discovery."
+      "failure_code": "official_local_office_roots_challenge_and_doi_fallback_rows",
+      "evidence": "Reviewed 2026-06-22 live Arizona DES candidates. The root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap URLs all returned the Cloudflare \"Just a moment...\" HTTP 403 shell. The live county_offices table currently contains 14 Arizona rows still anchored to the DOI FAA placeholder https://doi.org/10.7910/DVN/AVRHMI and 1 row still anchored to the generic legacy root https://dhhs.arizona.gov/locations, and no authored Arizona county-office leaf packet is currently present on disk to replace them."
     }
   ]
 }
