@@ -1,0 +1,8 @@
+{
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "blocker_family": "county_local_disability_resources",
+  "dhhs_sitemap_alive": false,
+  "web_experience_describes_lookup_only": true,
+  "mapserver_tables_present": false
+}
