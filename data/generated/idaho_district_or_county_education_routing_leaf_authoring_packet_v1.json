@@ -7,12 +7,12 @@
   "current_problem_metrics": {
     "statewideFallbackRows": 42,
     "genericRootRows": 2,
-    "authoredExactLeafCount": 10,
+    "authoredExactLeafCount": 11,
     "officialDistrictLinks": 116,
     "countyBearingDistrictNamesVisible": true,
     "explicitCountyFieldVisible": false,
     "districtSpecialEducationFieldsVisible": false,
-    "reviewedExactLeafCount": 10
+    "reviewedExactLeafCount": 11
   },
   "exact_target_goals": [
     "district special education page",
@@ -83,7 +83,7 @@
     "valley-id",
     "washington-id"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, Butte, Bonneville, Jerome, Minidoka, Blaine, and Teton as seed examples.",
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, Butte, Bonneville, Jerome, Minidoka, Blaine, Teton, and Gooding as seed examples.",
   "reviewed_exact_leaves": [
     {
       "county_id": "cassia-id",
@@ -185,6 +185,16 @@
         "special education"
       ],
       "title": "Staff Links - Special Education - Teton School District 401"
+    },
+    {
+      "county_id": "gooding-id",
+      "district_name": "Gooding Joint District #231",
+      "exact_leaf_url": "https://gsd231.org/special-education/",
+      "evidence_terms": [
+        "special education",
+        "special services"
+      ],
+      "title": "Special Education — Gooding School District"
     }
   ]
 }

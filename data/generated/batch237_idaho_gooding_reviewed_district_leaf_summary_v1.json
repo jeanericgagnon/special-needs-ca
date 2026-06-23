@@ -1,0 +1,10 @@
+{
+  "batch": "batch237_idaho_gooding_reviewed_district_leaf_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_family": "district_or_county_education_routing",
+  "reviewed_exact_leaf_count": 11,
+  "newly_verified_county": "gooding-id"
+}

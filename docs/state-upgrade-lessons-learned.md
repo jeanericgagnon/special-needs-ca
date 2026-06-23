@@ -32,6 +32,7 @@
 
 ### Zero County Tokens In A Live Official Locator Means The County Contract Is Still Missing
 *   **Lesson:** If an official district root exposes an exact `Special Education` anchor that stays on the district-owned host, treat that as a safe low-token verification lane even when the final URL uses query parameters. Idaho Teton District #401 verified cleanly from an `apps/pages` query URL once the title and H1 both stayed role-exact.
+*   **Lesson:** If the official district root itself exposes a repeated exact `Special Education` nav link on the district-owned host, one verified first-party href is enough; ignore repeated menu duplicates and verify the exact leaf once. Idaho Gooding Joint District #231 repeated the same `Special Education` link multiple times on the root, but the single exact leaf still cleared the county safely.
 *   **Lesson:** If a live official office or district directory preserves exact leaves but its public HTML exposes zero county terms, zero county-served fields, and no county filter, do not treat the locator as county-grade proof. Idaho DHW `/offices` and the Idaho SDE district directory were both live and useful for authoring, but still failed the county contract until reviewed local leaves could be attached.
 
 ### Retry ASP.NET Search Forms Once With Their Hidden Collections Before Calling The Workflow Broken

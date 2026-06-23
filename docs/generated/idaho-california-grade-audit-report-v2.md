@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 44
-- primary_gap_reason: reviewed_idaho_district_leaves_now_cover_10_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete
+- primary_gap_reason: reviewed_idaho_district_leaves_now_cover_11_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_reviewed_local_district_leaves_exist_but_not_statewide_county_grade (The Idaho education blocker remains an exact reviewed-leaf expansion lane, but it is stronger than before: official district-owned local leaves are now reviewable for ten counties. Teton County District #401 now joins Cassia, Payette, Bannock, Boundary, Butte, Bonneville, Jerome, Minidoka, Blaine, and the earlier reviewed set through a direct district-owned `Special Education` page. Idaho still is not county-grade because the statewide SDE directory exposes no county-to-district contract and the packet still carries reviewed local leaves for only a subset of the 44 counties.)
+- district_or_county_education_routing: blocked_reviewed_local_district_leaves_exist_but_not_statewide_county_grade (The Idaho education blocker remains an exact reviewed-leaf expansion lane, but it is stronger than before: official district-owned local leaves are now reviewable for eleven counties. Gooding Joint District #231 now joins Cassia, Payette, Bannock, Boundary, Butte, Bonneville, Jerome, Minidoka, Blaine, Teton, and the earlier reviewed set through a direct district-owned `Special Education` page. Idaho still is not county-grade because the statewide SDE directory exposes no county-to-district contract and the packet still carries reviewed local leaves for only a subset of the 44 counties.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (Reviewed Idaho Parents Unlimited About page now preserves explicit Idaho Parent Training and Information Center designation text, while the Connect With Us page preserves statewide contact routing and Boise office details.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: reviewed_district_special_services_leaves_now_cover_10_counties_but_county_grade_mapping_is_still_incomplete :: Reviewed 2026-06-23 one more bounded live Idaho district-owned leaf directly from the official SDE district root lane. The official Idaho School Districts page JSON links Teton County District #401 at https://tsd401.org/. That live district root returned HTTP 200 and exposed an exact `Special Education` anchor to https://www.tsd401.org/apps/pages/?type=d&uREC_ID=595525&pREC_ID=1147857. The exact page returned HTTP 200 with title `Staff Links - Special Education - Teton School District 401` and H1 `Special Education`, preserving district-owned special-education role evidence on the public host. Idaho education therefore now has ten reviewed county-level district-owned leaves, but the statewide SDE directory still exposes no county-to-district contract and the remaining counties still need exact leaf expansion.
+- district_or_county_education_routing: reviewed_district_special_services_leaves_now_cover_11_counties_but_county_grade_mapping_is_still_incomplete :: Reviewed 2026-06-23 one more bounded live Idaho district-owned leaf directly from the official SDE district root lane. The official Idaho School Districts page JSON links Gooding Joint District #231 at https://gsd231.org/. That live district root returned HTTP 200 and exposed an exact `Special Education` anchor to https://gsd231.org/special-education/. The exact page returned HTTP 200 with title `Special Education — Gooding School District` and preserved `Special Education` plus `Special Services` role evidence on the district-owned host. Idaho education therefore now has eleven reviewed county-level district-owned leaves, but the statewide SDE directory still exposes no county-to-district contract and the remaining counties still need exact leaf expansion.
 - county_local_disability_resources: official_dhw_office_stack_supports_17_clean_leaf_matches_but_27_legacy_counties_still_lack_public_contract :: Reviewed 2026-06-23 bounded live Idaho DHW confirmation on the official root plus the existing office-leaf packet. The public root at https://healthandwelfare.idaho.gov/offices is live with title `Find a Service Location` and still preserves exact city office cards like Caldwell Office in HTML, but it exposes zero county terms or county-served fields. The exact office leaf https://healthandwelfare.idaho.gov/dhw/caldwell-office is live with title `Caldwell Office`, confirming that the packet is grounded in real reviewable DHW office leaves. Idaho county-local routing therefore splits cleanly into 17 safe county-to-exact-office replacements plus one Canyon split that still rejects Nampa as SWITC-only, while 27 counties remain blocked because the public DHW stack still exposes no truthful county-to-office contract for them.
 
 ## Verified source samples
@@ -34,7 +34,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.idaho.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.idaho.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.sde.idaho.gov/sped/
-- district_or_county_education_routing: blocked_reviewed_local_district_leaves_exist_but_not_statewide_county_grade; samples=12; first=https://www.sde.idaho.gov/school-districts/
+- district_or_county_education_routing: blocked_reviewed_local_district_leaves_exist_but_not_statewide_county_grade; samples=13; first=https://www.sde.idaho.gov/school-districts/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://healthandwelfare.idaho.gov
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://disabilityrightsidaho.org/
 - parent_training_information_center: verified_state_grade; samples=2; first=https://ipulidaho.org/about_ipul/
@@ -51,5 +51,5 @@
 ## Repair decision
 
 - Idaho remains BLOCKED and not index-safe.
-- Education is still a county-by-county exact-leaf expansion lane, but it now has ten reviewed district-owned leaves, including a newly verified Teton County Special Education page.
+- Education is still a county-by-county exact-leaf expansion lane, but it now has eleven reviewed district-owned leaves, including a newly verified Gooding Joint District #231 Special Education page.
 - County-local remains the same explicit split: 17 clean office replacements plus the Canyon split are preserved, and 27 counties stay blocked until Idaho publishes a public county-to-office contract.
