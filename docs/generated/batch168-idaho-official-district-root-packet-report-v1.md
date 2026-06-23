@@ -54,3 +54,4 @@
 - The official SDE district directory is now sharper in a useful way: it already supplies a deterministic packet of district-owned roots through the rendered page and public page JSON.
 - That still does not clear county-grade education routing because the same public surfaces lack a county contract and district special-education fields.
 - Idaho education should reopen from those official district roots, not from more statewide SDE rereads or broad district discovery.
+

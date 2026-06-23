@@ -710,3 +710,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### County-Complete Official CSVs Still Fail If Role Fields Never Name The Required Program
 *   **Lesson:** When a public official CSV is county-complete, audit only the role-bearing fields before treating it as a routing win. Florida’s `contacts.csv` covered all 67 counties, but the `type`, `name`, `title`, `services`, and `website_link` fields had zero matches for ACCESS, Medicaid, SNAP, TANF, or economic-self-sufficiency terms, so it stayed blocked as the wrong service contract.
+
+### Official Directory JSON Can Be A Root-Authoring Packet Even When It Is Not A Routing Contract
+*   **Lesson:** If an official statewide directory exposes outbound local-domain links in rendered HTML and public JSON, preserve that as the exact root-authoring packet even when the page still fails county-grade routing. Idaho’s School Districts page did not satisfy county education proof, but its public JSON still yielded 116 exact district roots and 30 county-bearing names, which is far better than reopening broad district discovery.
