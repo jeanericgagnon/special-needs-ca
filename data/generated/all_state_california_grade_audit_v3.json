@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T06:04:34.982Z",
+  "generatedAt": "2026-06-23T06:20:53.098Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 19,
@@ -1561,7 +1561,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_mde_arcgis_district_and_isd_layers_expose_geometry_and_ids_without_local_routing_contract",
+      "packetPrimaryGapReason": "official_mde_isd_plans_page_is_guidance_only_and_arcgis_layers_still_lack_local_routing_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -1620,7 +1620,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_mde_directory_family_moved_without_live_replacement",
+        "district_or_county_education_routing": "blocked_live_mdeorg_directory_root_without_static_county_contract",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "blocked_current_first_party_support_without_explicit_pti_designation",
@@ -1631,7 +1631,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_5_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_mde_directory_family_now_only_resolves_to_moved_shell_or_dead_guesses_and_mn_dhs_local_office_family_is_stale_or_radware_challenged",
+      "packetPrimaryGapReason": "official_mdeorg_directory_root_is_live_but_public_directory_contract_is_embedded_or_challenged_and_mn_dhs_local_office_family_is_stale_or_radware_challenged",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

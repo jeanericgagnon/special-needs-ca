@@ -1,0 +1,8 @@
+{
+  "state": "michigan",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_blocker_sharpened": true,
+  "lessons_updated": false,
+  "blocker_basis": "official_isd_plans_leaf_plus_arcgis_contract_audit"
+}

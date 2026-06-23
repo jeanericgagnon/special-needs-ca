@@ -56,3 +56,4 @@
 - Education is still blocked, but the blocker is now more precise: the official MDE-ORG directory root is live, while the actual query/export contract remains embedded or challenge-protected instead of preserved as a county-grade artifact.
 - County-local is still blocked because the DHS county-and-tribal-office family still resolves to stale legacy URLs or Radware challenge surfaces in bounded low-token mode.
 - PACER support evidence is still real, but the current first-party pages plus the retired PTI-specific path family still do not preserve explicit PTI designation text.
+

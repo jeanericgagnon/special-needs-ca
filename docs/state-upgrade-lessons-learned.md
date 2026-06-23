@@ -737,3 +737,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### One Official State Directory Page Can Clear Every County
 *   **Lesson:** If the official state root links one maintained county directory page that explicitly enumerates every county and preserves county-owned leaves or county contact details in the HTML, use that page as the county-grade contract. New Jersey cleared both education routing and county social-services routing from two reviewed official state pages without county-by-county rediscovery.
+
+### Guidance-Only ISD Planning Pages Do Not Satisfy Local Education Routing
+*   **Lesson:** If a state special-education sitemap surfaces an exact ISD or district-planning leaf, inspect whether it actually enumerates local contacts or just publishes statewide guidance. Michigan’s live `ISD Plans` page only linked a guidance PDF, webinar, and generic map app, so it sharpened the blocker but still did not count as county-grade routing evidence.
+
+### Live Directory Glossaries Can Hide The Real Query Contract In An Embedded Bundle
+*   **Lesson:** If an official state directory page explicitly says it is a searchable database, do not keep chasing retired legacy paths. Minnesota MDE exposed a live `MDE-ORG` root, but the usable directory front-end was tucked into an embedded bundle while adjacent public search surfaces were Radware-challenged, so the right next lane became browser-assisted contract capture, not more guessed URL probes.
+
+### Topic-Based SPED Staff Directories Still Need A Local Service-Area Contract
+*   **Lesson:** If a live special-education staff page exposes a topic-based directory PDF, do not confuse that with county-grade routing. Nebraska’s official `SPED Contact List-Directory by Topic` proved the host was live and deeper than a homepage, but it still lacked county-to-ESU assignments or district-owned local routing evidence.

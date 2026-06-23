@@ -51,3 +51,4 @@
 - County-local disability resources still pass at county grade from the reviewed MDHHS county-office leaves.
 - District or county education routing remains blocked because the live MDE education lane now proves only statewide ISD-planning guidance plus a generic ArcGIS district/ISD map, not a county-grade local routing contract.
 - Michigan therefore remains `BLOCKED` and `index_safe=false` until the education-routing blocker is replaced with county-grade official routing evidence.
+
