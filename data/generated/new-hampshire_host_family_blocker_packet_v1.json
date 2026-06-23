@@ -1,0 +1,62 @@
+{
+  "state": "new-hampshire",
+  "primary_gap_reason": "official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable",
+  "purpose": "Deterministic blocker packet for New Hampshire while the current official host families remain either unresolvable or publicly access-denied.",
+  "packet_complete_when": "New Hampshire can reopen only when at least one reviewed first-party official host family either resolves publicly for Medicaid/DD/EI and county-office lanes or exposes a public export or browser-reviewable directory for education, VR, or district offices.",
+  "blocker_classes": [
+    {
+      "blocker_class": "successor_host_unresolvable",
+      "families": [
+        "medicaid_state_health_coverage",
+        "medicaid_waiver_hcbs_disability_services",
+        "developmental_disability_idd_authority",
+        "early_intervention_part_c"
+      ],
+      "host_family": "dhhs.new-hampshire.gov",
+      "exact_paths": [
+        "https://dhhs.new-hampshire.gov/",
+        "https://dhhs.new-hampshire.gov/dd",
+        "https://dhhs.new-hampshire.gov/dd/waivers",
+        "https://dhhs.new-hampshire.gov/earlystart"
+      ],
+      "finding": "The successor-host family saved into the packet does not resolve in bounded review and cannot remain verified statewide evidence."
+    },
+    {
+      "blocker_class": "public_host_access_denied_shell",
+      "families": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources",
+        "vocational_rehabilitation_pre_ets"
+      ],
+      "host_families": [
+        "www.education.nh.gov",
+        "my.doe.nh.gov",
+        "www.dhhs.nh.gov",
+        "www.nhes.nh.gov"
+      ],
+      "exact_paths": [
+        "https://www.education.nh.gov/",
+        "https://www.education.nh.gov/school-and-district-profiles",
+        "https://www.education.nh.gov/find-school-or-district",
+        "https://my.doe.nh.gov/ehb/",
+        "https://www.dhhs.nh.gov/",
+        "https://www.dhhs.nh.gov/contact-us",
+        "https://www.dhhs.nh.gov/contact-us/district-offices",
+        "https://www.nhes.nh.gov/",
+        "https://www.nhes.nh.gov/services/disabilities/bvr.htm"
+      ],
+      "finding": "The public-facing official roots and exact leaves return the same short Access Denied shell, so low-token path guessing will not repair these families."
+    },
+    {
+      "blocker_class": "alternate_host_unresolvable",
+      "families": [
+        "vocational_rehabilitation_pre_ets"
+      ],
+      "host_family": "www.nheasy.nh.gov",
+      "exact_paths": [
+        "https://www.nheasy.nh.gov/"
+      ],
+      "finding": "The likely public-assistance/VR alternate host does not resolve and should not remain in an active New Hampshire review lane."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "batch": "batch194_new_hampshire_host_family_packet_v1",
+  "state": "new-hampshire",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "packet_written": true,
+  "successor_host_unresolvable_paths": 4,
+  "access_denied_host_paths": 9,
+  "blocker_classes": [
+    "successor_host_unresolvable",
+    "public_host_access_denied_shell",
+    "alternate_host_unresolvable"
+  ],
+  "lesson_added": true
+}

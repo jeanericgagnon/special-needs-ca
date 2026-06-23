@@ -1,0 +1,15 @@
+{
+  "batch": "batch193_nevada_county_office_packet_v1",
+  "state": "nevada",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "packet_written": true,
+  "live_child_leaves_reviewed": 2,
+  "stale_parent_root_retired": true,
+  "zero_county_term_pages": 3,
+  "county_total": 17,
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "lesson_added": true
+}

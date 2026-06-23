@@ -41,3 +41,9 @@
 
 ### State Packetize Open-But-Incomplete Official Apps Once The Exact Layers Are Known
 *   **Lesson:** Once an official map or directory stack is narrowed to exact public layers and exact missing fields, save that as a blocker packet instead of re-probing the same app. Nebraska’s NDE and DHHS lanes were both live enough to identify exact next roots, but still incomplete for county-grade proof.
+
+### Stale Parent Locators Should Not Override Live Child Leaves
+*   **Lesson:** If a statewide office root goes stale or retargets but its exact child office leaves are still live, retire the parent root and evaluate the child leaves directly. Nevada DSS kept live North/South welfare office pages after the older parent route stopped being a usable county contract, which let the blocker be narrowed without reopening broad locator guessing.
+
+### Split Dead Successor Hosts From Live Access-Denied Host Families
+*   **Lesson:** When a state packet mixes neat-looking successor hosts with live official roots, separate DNS-dead successor assumptions from public access-denied host families. New Hampshire needed two blocker lanes: `dhhs.new-hampshire.gov` was simply unresolvable, while `www.dhhs.nh.gov`, `www.education.nh.gov`, and `www.nhes.nh.gov` were live-but-blocked shells.

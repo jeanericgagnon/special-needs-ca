@@ -1,0 +1,72 @@
+{
+  "state": "nevada",
+  "family": "county_local_disability_resources",
+  "failure_code": "official_welfare_district_office_pages_live_but_no_county_coverage_contract",
+  "repair_lane": "browser_or_cached_capture_only",
+  "packet_complete_when": "Nevada can reopen only when a reviewed first-party DSS or sibling official page exposes a truthful county-to-office contract, county-served labels, or a machine-readable county filter for all 17 counties.",
+  "current_metrics": {
+    "countyTotal": 17,
+    "liveChildLeavesReviewed": 2,
+    "liveContactHubReviewed": true,
+    "staleParentRootRetired": true,
+    "zeroCountyTokensOnReviewedPages": 3,
+    "countyServedFieldPresent": false,
+    "countyFilterPresent": false
+  },
+  "representative_sources": [
+    {
+      "label": "Stale parent office root",
+      "url": "https://dwss.nv.gov/Contact/Welfare_District_Offices/",
+      "status": "stale_parent_root",
+      "evidence": "The older parent office route no longer acts as a usable county-office contract and should not be used as Nevada county-local proof."
+    },
+    {
+      "label": "Nevada DSS Contact hub",
+      "url": "https://www.dss.nv.gov/contact/",
+      "status": "live_contact_hub_without_county_contract",
+      "evidence": "The live contact hub preserves exact North and South welfare office leaves, but its public HTML exposes zero county terms and no county-served assignment."
+    },
+    {
+      "label": "Welfare District Offices-North",
+      "url": "https://www.dss.nv.gov/contact/welfare-district-offices-north/",
+      "status": "live_office_leaf_without_county_contract",
+      "evidence": "The North page lists exact offices such as Carson City, Elko / Winnemucca, Ely, Fallon, Hawthorne, Reno, Sparks, and Yerington with addresses and phones, but no county labels or county-served fields."
+    },
+    {
+      "label": "Welfare District Offices-South",
+      "url": "https://www.dss.nv.gov/contact/welfare-district-offices-south/",
+      "status": "live_office_leaf_without_county_contract",
+      "evidence": "The South page lists exact offices such as Belrose, Cambridge, Decatur, Eastern, Henderson, Nellis, Owens, Pahrump, Spring Mountain, and Flamingo with addresses and phones, but no county labels or county-served fields."
+    }
+  ],
+  "zero_county_term_probes": [
+    {
+      "url": "https://www.dss.nv.gov/contact/",
+      "probes": {
+        "county": 0,
+        "counties": 0,
+        "county_served": 0
+      }
+    },
+    {
+      "url": "https://www.dss.nv.gov/contact/welfare-district-offices-north/",
+      "probes": {
+        "county": 0,
+        "counties": 0,
+        "county_served": 0
+      }
+    },
+    {
+      "url": "https://www.dss.nv.gov/contact/welfare-district-offices-south/",
+      "probes": {
+        "county": 0,
+        "counties": 0,
+        "county_served": 0
+      }
+    }
+  ],
+  "next_roots_if_state_reopens": [
+    "reviewed first-party DSS county-to-office export or directory contract",
+    "reviewed official statewide county filter or service-area contract on a DSS sibling host"
+  ]
+}
