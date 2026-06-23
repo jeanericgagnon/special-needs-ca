@@ -1,10 +1,10 @@
-# South Carolina California-Grade Batch 83 Report v1
+# South Carolina California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 92
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 46
-- primary_gap_reason: official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves
+- primary_gap_reason: none
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- district_or_county_education_routing: verified_county_grade (Reviewed 2026-06-23 the live official South Carolina School Directory page, its public `getDistricts` JSON method, and the public ArcGIS district layer it exposes. Together they preserve 72 live district rows for school year 2026 with district names, superintendent names, phone numbers, and websites, and a bounded county reconciliation matches all 46 South Carolina counties to one or more official district rows. That official district-directory contract clears district_or_county_education_routing at county grade without relying on the old statewide fallback page.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party Disability Rights South Carolina evidence preserves statewide protection-and-advocacy identity on the live first-party domain)
 - parent_training_information_center: verified_state_grade (authoritative Parent Center Hub South Carolina leaf explicitly labels Family Connection of SC as the South Carolina PTI serving the entire state)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 10 generic roots need leaf verification
+- none
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.south-carolina.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.south-carolina.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://ed.sc.gov/
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://ed.sc.gov/
+- district_or_county_education_routing: verified_county_grade; samples=5; first=https://ed.sc.gov/districts-schools/schools/school-directory/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://ddsn.sc.gov
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.disabilityrightssc.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/south-carolina/
@@ -44,14 +44,11 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
+- [info] maintenance: Preserve South Carolina as COMPLETE/index_safe and rerun only maintenance truth audits unless the official School Directory page, its CFC methods, or the ArcGIS district layer regress.
 
 ## Completion decision
 
-- South Carolina no longer belongs in UNSTARTED because the packet now preserves reviewed or authoritative statewide P&A, PTI, legal-aid, and county-local DSS routing evidence on disk instead of only legacy inventory rows.
-- Disability Rights South Carolina is preserved as statewide protection-and-advocacy support from the reviewed first-party domain.
-- Parent Center Hub now clears PTI because its South Carolina leaf explicitly labels Family Connection of SC as the South Carolina PTI serving the entire state.
-- South Carolina Legal Services is preserved as statewide legal aid because the reviewed first-party page explicitly describes a statewide civil legal-services role for low-income South Carolinians and preserves direct intake routes.
-- The official SCDSS contact stack now clears county-local routing because the first-party hub links 46 county-named DSS office leaves with county-specific office addresses and county-specific DSS email routing.
-- South Carolina still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves.
-- South Carolina is therefore terminal BLOCKED, not COMPLETE.
+- South Carolina now reaches California-grade and is index-safe.
+- The old statewide `ed.sc.gov` fallback is no longer the governing evidence surface for education routing.
+- The live official School Directory page, its public `getDistricts` backend, and the linked ArcGIS district layer together preserve county-covering district routing with real district phone and website fields.
+- Because all 46 counties now match one or more official district rows from that public state-managed directory stack, the last South Carolina critical blocker is cleared.

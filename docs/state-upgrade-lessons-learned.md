@@ -276,3 +276,6 @@
 
 ### A Live Successor Host With Public Robots But No Sitemap, Search, Or Office Aliases Can Be Source-Final
 *   **Lesson:** If a live successor host exposes `robots.txt` but no sitemap, no working public search, and no office/contact aliases beyond the already-reviewed phone-only service page, stop spending low-token retries there. Alaska DFCS had a real successor host, but once the obvious on-host office branches all 404ed and publications still materialized no office contract, the remaining lane was clearly the challenge-blocked health host.
+
+### Official School-Directory Backends And District Layers Can Clear County-Grade Education Routing
+*   **Lesson:** If an official school-directory page exposes both a live district-list backend and a public district contact layer, use that state-managed directory contract before falling back to district-by-district leaf authoring. South Carolina cleared once the live SCDE School Directory page, its `getDistricts` JSON method, and its public ArcGIS district layer together proved 46/46 counties had named district routing with phone and website fields.

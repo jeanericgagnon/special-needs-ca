@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-23T21:08:21.022Z",
+  "generatedAt": "2026-06-23T21:21:42.571Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 22,
-    "BLOCKED": 28
+    "COMPLETE": 23,
+    "BLOCKED": 27
   },
-  "indexSafeCount": 22,
+  "indexSafeCount": 23,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -2798,8 +2798,8 @@
       "stateId": "south-carolina",
       "stateCode": "SC",
       "stateName": "South Carolina",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -2807,11 +2807,11 @@
       "legacyManualReviewRate": 58.23,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 46,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 92,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "south-carolina",
         "state_code": "SC",
@@ -2850,7 +2850,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2860,9 +2860,9 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch_280_south_carolina_official_district_directory_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "south-dakota",

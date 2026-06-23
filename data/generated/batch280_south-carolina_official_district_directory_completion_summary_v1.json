@@ -1,0 +1,16 @@
+{
+  "state": "south-carolina",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "completeness_pct": 100,
+  "cleared_family": "district_or_county_education_routing",
+  "official_directory_page": "https://ed.sc.gov/districts-schools/schools/school-directory/",
+  "official_json_method": "https://ed.sc.gov/sites/scdoe/includes/schoolDirectory2026/cfc/schooldirectory.cfc?returnformat=json&schoolyear=2026&method=getDistricts",
+  "official_district_layer": "https://services5.arcgis.com/tMDU4iABlmKqkZWJ/arcgis/rest/services/SC_SchoolDirectory_view/FeatureServer/20",
+  "district_rows": 72,
+  "matched_counties": 46,
+  "multi_district_counties": 11,
+  "blank_phone_rows": 0,
+  "blank_website_rows": 0,
+  "lesson_added": false
+}

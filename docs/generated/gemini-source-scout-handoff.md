@@ -6,7 +6,7 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, Pennsylvania, Texas
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, Pennsylvania, South Carolina, Texas
 
 ## Current Blocked States
 
@@ -28,7 +28,6 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Oklahoma: `official_osde_state_school_directory_clears_education_but_dead_dhhs_locator_host_and_planning_rows_still_block_county_local`
 - Oregon: `official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
-- South Carolina: `official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
 - Utah: `official_usbe_district_lea_directory_clears_education_and_public_dws_office_api_still_lacks_county_service_area_contract`
@@ -39,52 +38,41 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: North Carolina
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The live DFCS successor host is exhausted and preserves only statewide phone routing, while the current official health-host family is challenge-blocked end to end: exact office leaves, parent service/resource roots, and even low-cost discovery surfaces like `robots.txt`, `sitemap.xml`, `wp-json`, and `wp-sitemap.xml` all return the same 403 Cloudflare shell.
+North Carolina still has two critical California-grade blockers: `district_or_county_education_routing` and `county_local_disability_resources`. The current packet preserves one real district-owned education leaf at Charlotte-Mecklenburg Schools, but most counties still collapse to statewide DPI Exceptional Children or other generic/non-district leaves. The county-local lane is similarly weak because saved samples still point at the DOI mirror `https://doi.org/10.7910/DVN/AVRHMI` instead of reviewed county-owned DSS or local-assistance directories.
 
 ### Exact Evidence Needed
 
-- Any official Alaska surface that maps boroughs or census areas to DPA or Medicaid office locations on a publicly reviewable host.
-- Any reviewable successor office locator or directory that lives on `dfcs.alaska.gov` or another current official Alaska host instead of only on the challenge-blocked `health.alaska.gov` family.
-- Any official document, export, or table that explicitly enumerates Alaska borough or census-area coverage for public assistance office routing.
+- Additional district-owned special-education or student-services leaves beyond Charlotte-Mecklenburg so uncovered counties stop relying on the statewide DPI Exceptional Children root.
+- County-owned DSS or local-assistance directory leaves that replace the DOI mirror with real North Carolina county routing.
+- Any official export, directory, or county-keyed contract from North Carolina that directly maps counties to district routing and county local office routing.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
-- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [Alaska DFCS robots.txt](https://dfcs.alaska.gov/robots.txt)
-- [Alaska DFCS sitemap.xml](https://dfcs.alaska.gov/sitemap.xml)
-- [Alaska DFCS search for public assistance](https://dfcs.alaska.gov/search/pages/results.aspx?k=public%20assistance)
-- [Alaska DFCS search for office](https://dfcs.alaska.gov/search/pages/results.aspx?k=office)
-- [Alaska health robots.txt](https://health.alaska.gov/robots.txt)
-- [Alaska health sitemap.xml](https://health.alaska.gov/sitemap.xml)
-- [Alaska health wp-json](https://health.alaska.gov/wp-json/)
-- [Alaska health wp-sitemap.xml](https://health.alaska.gov/wp-sitemap.xml)
-- [Alaska health resources root](https://health.alaska.gov/en/resources/)
-- [Alaska health services root](https://health.alaska.gov/en/services/)
-- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
-- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
-- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska legacy office locations](https://health.alaska.gov/dpa/Pages/office-locations.aspx)
+- [North Carolina DPI Exceptional Children root](https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children)
+- [Charlotte-Mecklenburg Schools special-education anchor](https://www.cmsk12.org/Page/213)
+- [North Carolina DOI mirror currently blocking county-local routing](https://doi.org/10.7910/DVN/AVRHMI)
+- [ECAC via Parent Center Hub](https://www.parentcenterhub.org/findurcenter/north-carolina/)
+- [Disability Rights North Carolina](https://disabilityrightsnc.org/)
+- [Legal Aid of North Carolina](https://legalaidnc.org/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current Alaska host outside `health.alaska.gov` that now publishes a borough- or census-area DPA office directory.
-- Any official Alaska PDF, spreadsheet, or office-contact table that names specific borough or census-area coverage for public assistance offices.
-- Any future public relaxation on the health host that makes the DPA office directory or Medicaid application leaves scraper-reviewable without the Cloudflare shell.
-## Next State Order After Alaska
+- District-owned special-education or student-services leaves for counties still using statewide DPI fallback.
+- County-owned DSS or local-assistance directory pages that clearly preserve county office identity and routing.
+- Any official North Carolina county-keyed education or local-office export that can replace the contaminated queue with one truthful statewide contract.
+## Next State Order After South Carolina
 
-1. South Carolina
-2. North Carolina
-3. New York
-4. Oklahoma
-5. Oregon
-6. Ohio
-7. Minnesota
-8. Maine
-9. Idaho
-10. Arizona10. Arizona10. Idaho10. Idaho10. Minnesota10. Minnesota10. Minnesota10. Minnesota10. Ohio10. Ohio10. Oregon10. Oregon
+1. North Carolina
+2. New York
+3. Oklahoma
+4. Oregon
+5. Ohio
+6. Minnesota
+7. Maine
+8. Idaho
+9. Arizona
+10. Massachusetts
