@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "three_public_district_domains_sitemap_exhausted_and_altcs_office_cards_still_lack_county_assignments",
+  "primary_gap_reason": "three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,8 +41,9 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "three_reviewed_public_district_domains_exhaust_robots_and_sitemaps_without_role_leafs",
-      "evidence": "Reviewed 2026-06-23 bounded Arizona district-owned public domains for the final three unresolved education counties. https://www.ccasdaz.org/ returned HTTP 200 and its robots.txt pointed to sitemap_index.xml, but the official sitemap index plus page-sitemap.xml and post-sitemap.xml exposed zero URLs containing special-education, student-services, exceptional-student-services, 504, or IEP role terms. https://www.mohavelearning.org/ returned HTTP 200 and robots.txt exposed the official /fs/pages/sitemap inventory, but that inventory only yielded generic student-facing pages such as student council, StudentVUE, student handbooks, and portal links, with no role-verifiable special-education or student-services leaf. https://www.yavapaicountyhighschool.com/ returned HTTP 200 and its sitemap.xml only exposed student-handbook and outing-form documents, not a special-education or student-services leaf. So the remaining Arizona education blocker is now source-final on three reviewed public domains that still lack role-bearing local leaves."
+      "failure_code": "three_reviewed_public_district_domains_exhaust_sitemaps_wp_api_and_exact_slug_replays_without_role_leafs",
+      "evidence": "Reviewed 2026-06-23 one more bounded Arizona district-owned official API and exact-slug pass for the final three unresolved education counties. https://www.ccasdaz.org/ stayed live, and https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10 returned HTTP 200, but the official WordPress search only replayed false-positive Governing Board and staff records rather than a role-bearing special-education or student-services leaf; the official page-sitemap.xml and post-sitemap.xml still exposed zero matching role paths. https://www.mohavelearning.org/ stayed live, but exact Finalsite-style role candidates at /fs/pages/504, /fs/pages/special-education, /fs/pages/student-services, and /fs/pages/special-services all returned 404. https://www.yavapaicountyhighschool.com/ stayed live and its /page/contact-us/ route returned HTTP 200, proving the public page namespace is real, but /page/special-education/, /page/student-services/, and /page/504/ all returned 404. The remaining Arizona education blocker is now source-final on three reviewed public domains that still lack role-bearing local leaves even after sitemap, API, and exact-slug replay.",
+      "next_action": "hold_three_reviewed_public_domains_until_role_bearing_special_education_or_student_services_leaves_exist"
     },
     {
       "family": "county_local_disability_resources",

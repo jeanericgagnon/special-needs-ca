@@ -11,7 +11,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 ## Current Blocked States
 
 - Alaska: `live_dfcs_services_page_only_provides_statewide_phone_relay_while_health_host_county_equivalent_directory_stays_challenged`
-- Arizona: `three_public_district_domains_sitemap_exhausted_and_altcs_office_cards_still_lack_county_assignments`
+- Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_results_stay_authenticated`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
 - Kansas: `reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
@@ -40,44 +40,47 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the top Idaho blocker in the state queue. The official SDE district directory still exposes no county contract, but district-owned special-education leaves are reviewable county by county. Emmett Independent School District now adds Gem County to the reviewed set, bringing Idaho to twelve reviewed district-owned county leaves while the remaining counties still need exact local expansion.
+`district_or_county_education_routing` remains the top Arizona blocker in the state queue. The final three public district domains are now fully exhausted: Coconino's live WordPress root plus wp-json search only replay false-positive board and staff pages, Mohave's live Finalsite root returns 404 on exact role slugs, and Yavapai's live `/page/` namespace returns 404 on role slugs even though `/page/contact-us/` is public.
 
 ### Exact Evidence Needed
 
-- Any additional Idaho district-owned special-education or special-services leaf reached from the official SDE district directory for uncovered counties.
-- Or, a truthful statewide county-to-district contract on an official Idaho SDE surface.
-- Or, an official DHW county-to-office contract for the still-blocked 27 counties.
-- The live SDE district root and DHW office root are still not enough without county-grade routing fields.
+- Any public role-bearing special-education or student-services leaf on ccasdaz.org, mohavelearning.org, or yavapaicountyhighschool.com.
+- Or, a new official Arizona state or county export that maps those three counties to reviewed district routing.
+- Or, an official AHCCCS or DES county-to-office assignment artifact for county-local routing.
+- The live district roots, the live AHCCCS ALTCS page, and the partial county map are still not enough without county-grade routing fields.
 
 ### Useful Official URLs Already Tried
 
-- [Idaho SDE School Districts page](https://www.sde.idaho.gov/school-districts/)
-- [Idaho SDE School Districts JSON](https://www.sde.idaho.gov/wp-json/wp/v2/pages/9049)
-- [Emmett Independent School District root](https://www.emmettschools.org/)
-- [Emmett district Special Education page](https://www.emmettschools.org/departments/special-education)
-- [Emmett Special Education - Early Childhood Preschool](https://www.emmettschools.org/our-district/programs/special-education-early-childhood-preschool)
-- [Idaho DHW office root](https://healthandwelfare.idaho.gov/offices)
-- [Idaho DHW Caldwell Office](https://healthandwelfare.idaho.gov/dhw/caldwell-office)
+- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
+- [Coconino wp-json search for special education](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
+- [Coconino page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
+- [Mohave exact 504 candidate](https://www.mohavelearning.org/fs/pages/504)
+- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
+- [Yavapai contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
+- [Yavapai exact special-education candidate](https://www.yavapaicountyhighschool.com/page/special-education/)
+- [AHCCCS ALTCS Offices](https://www.azahcccs.gov/members/ALTCSlocations.html)
+- [AHCCCS Contacts](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Idaho district-owned special-education or special-services leaves for uncovered counties reached from the SDE directory.
-- Any official Idaho SDE county-to-district contract or district export with explicit county routing.
-- Any official Idaho DHW county-to-office crosswalk for the still-blocked 27 counties.
+- Any public role-bearing special-education or student-services leaf on the remaining three Arizona district domains.
+- Any official Arizona district export or report-card successor artifact that maps Coconino, Mohave, and Yavapai to reviewed local education routing.
+- Any official AHCCCS or DES county-to-office assignment artifact for Arizona county-local disability resources.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. Oregon
-4. Oklahoma
-5. Utah
-6. New Hampshire
-7. New Mexico
-8. New York
-9. North Carolina
-10. North Dakota
+1. Massachusetts
+2. Oregon
+3. Oklahoma
+4. Utah
+5. New Hampshire
+6. New Mexico
+7. New York
+8. North Carolina
+9. North Dakota
+10. Rhode Island
