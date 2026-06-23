@@ -3,7 +3,7 @@
   "state_code": "ME",
   "family": "county_local_disability_resources",
   "repair_lane": "county_mapping_repair",
-  "purpose": "Deterministic packet for replacing Maine DOI and dead-locator county-office rows only where a truthful county-to-office mapping contract can be proven.",
+  "purpose": "Deterministic packet for replacing Maine DOI and dead-locator county-office rows only where a truthful county-to-office mapping contract can be proven from the live DHHS district office page or another reviewed official crosswalk.",
   "current_problem_metrics": {
     "doiMirrorRows": 16,
     "deadLocatorRows": 4,
@@ -11,7 +11,7 @@
     "multiOfficeCountyCount": 3,
     "officialDistrictOfficeRoots": 1,
     "districtOfficeCountyLabelsVisible": false,
-    "districtOfficeTownLookupVisible": false,
+    "districtOfficeTownLookupVisible": true,
     "programCrossOfficeNotesVisible": true
   },
   "exact_target_goals": [
@@ -73,5 +73,5 @@
       ]
     }
   ],
-  "packet_complete_when": "Every Maine county office row either maps to a reviewed DHHS district office with public county or town coverage support or remains explicitly blocked because the live office directory still lacks a county or town mapping contract."
+  "packet_complete_when": "Every Maine county office row either maps to a reviewed DHHS district office with public county or service-area support or remains explicitly blocked because the live office directory lists office towns but still lacks a county or service-area mapping contract."
 }

@@ -1,0 +1,10 @@
+{
+  "batch": "batch252_kansas_education_sample_dedupe_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewedDistrictOwnedLeafCount": 7,
+  "verifiedEducationSampleCount": 13,
+  "dedupedLeafSampleCount": 7
+}

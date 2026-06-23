@@ -53,4 +53,4 @@
 - Maine remains BLOCKED and not index-safe.
 - Education still has a real public selector/workbook inventory lane on the official DOE host.
 - Maine education does not clear because both current named raw replays return the same HTTP 500 error shell instead of reusable local contact rows.
-- County-local remains blocked because the official DHHS office page still publishes zero county, town, or service-area mapping fields in public HTML.
+- County-local remains blocked because the official DHHS office page publishes named office towns, but still no county or service-area mapping fields in public HTML.

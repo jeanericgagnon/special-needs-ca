@@ -1,0 +1,9 @@
+{
+  "batch": "batch251_idaho_education_sample_dedupe_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewedExactLeafCount": 11,
+  "verifiedEducationSampleCount": 13
+}
