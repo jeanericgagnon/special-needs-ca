@@ -1,0 +1,10 @@
+{
+  "batch": "batch_208_maine_sau_export_recovery_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_sau_export_contract_verified": true,
+  "sample_orgid": 42,
+  "lessons_updated": false
+}

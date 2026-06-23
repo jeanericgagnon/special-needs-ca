@@ -95,3 +95,6 @@
 
 ### Public ASP.NET Directory Exports Beat Dropdown Scraping When The Submit Contract Is Stable
 *   **Lesson:** If a first-party ASP.NET directory app exposes stable hidden fields and a submit button, reproduce the public export directly instead of scraping dropdown HTML alone. Kansas's KSDE Directory Reports app returned a real `Directory.xls` attachment once `__VIEWSTATE`, `__VIEWSTATEGENERATOR`, `__EVENTVALIDATION`, and the public report parameters were posted together.
+
+### MVC Search Forms May Need The Named Submit Action, Not Just The Hidden Inventory
+*   **Lesson:** If an official MVC form exposes an anti-forgery token and multiple named submit actions, replay the exact submit name instead of only posting the hidden inventory. Maine's DOE contact search started working once `__RequestVerificationToken` and the named `action:SAUExport` submit were included with the SAU payload.
