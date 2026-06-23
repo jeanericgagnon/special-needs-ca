@@ -10,7 +10,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 
 ## Current Blocked States
 
-- Alaska: `browser_only_dpa_directory_lacks_borough_mapping_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves`
+- Alaska: `live_dfcs_services_page_only_provides_statewide_phone_relay_while_health_host_county_equivalent_directory_stays_challenged`
 - Arizona: `three_public_district_domains_sitemap_exhausted_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_results_stay_authenticated`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_11_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
@@ -40,51 +40,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Florida
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`county_local_disability_resources` is still the only critical blocker. Florida now has an exact official `food-cash-and-medical` leaf that advertises `Local Offices`, but that link still resolves only to the partial Family Resource Center storefront lane rather than a full 67-county county-local contract. The public circuit leaves are still dead, and the anonymous MyACCESS county-result endpoints still require authentication.
+`county_local_disability_resources` is still the only critical blocker. Alaska now has a live, reviewable DFCS Services page that preserves statewide phone routing for Adult Public Assistance and Apply for Medicaid through `888-804-6330`, but it still does not provide borough or census-area office mapping. Its exact service links still land on `health.alaska.gov` leaves that remain challenge-blocked in the low-token lane, and the DFCS contacts surface still exposes no county-equivalent office contract.
 
 ### Exact Evidence Needed
 
-- Any first-party Florida DCF county-complete local-office directory, customer service center table, or county-result contract that is public and anonymous.
-- Or, a reviewed public Family Resource Center / local-offices dataset that expands from the current 34 county storefront rows to complete 67-county coverage.
-- Or, anonymous MyACCESS county-result responses from the official `getZipCountyDetails` or `communityPartnerSearch` endpoints.
-- Generic statewide circuit contacts and prose mentioning local offices are still not enough.
+- Any first-party Alaska borough- or census-area-to-DPA office mapping contract on a public, reviewable official page.
+- Or, a live official DPA office directory leaf on `health.alaska.gov` that is reviewable without the challenge shell and explicitly maps local office coverage.
+- Or, a DFCS successor page that turns the current statewide phone relay into a true local office locator.
+- Generic statewide program phones and department contact hubs are still not enough.
 
 ### Useful Official URLs Already Tried
 
-- [Florida DCF sitemap](https://www.myflfamilies.com/sitemap.xml)
-- [Florida DCF Contact Us](https://www.myflfamilies.com/contact-us)
-- [Florida DCF contacts.csv](https://www.myflfamilies.com/contact-us/contacts.csv)
-- [Florida Public Assistance](https://www.myflfamilies.com/services/public-assistance)
-- [Florida Applying for Assistance](https://www.myflfamilies.com/services/public-assistance/applying-for-assistance)
-- [Florida ESS FAQ](https://www.myflfamilies.com/services/public-assistance/economic-self-sufficiency-frequently-asked-questions/)
-- [Florida Community Partner Network](https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/community/)
-- [Florida Food Cash and Medical](https://www.myflfamilies.com/food-cash-and-medical)
-- [Florida Family Resource Center](https://familyresourcecenter.myflfamilies.com/)
-- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
-- [MyACCESS Public CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
-- [MyACCESS Help HCINT](https://myaccess.myflfamilies.com/Help/HCINT)
-- [MyACCESS appconfig](https://myaccess.myflfamilies.com/config/appconfig.js)
-- [Sample dead circuit leaf](https://www.myflfamilies.com/contact-us/circuit-3)
+- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
+- [Alaska DPA Offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska legacy office locations](https://health.alaska.gov/dpa/Pages/office-locations.aspx)
+- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
+- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
+- [Alaska health host sitemap](https://health.alaska.gov/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Florida DCF local-offices dataset or directory that is county-complete instead of the current 34-county storefront lane.
-- Any public, anonymous MyACCESS county-result response contract for `getZipCountyDetails` or `communityPartnerSearch`.
-- Any first-party DCF county office or customer service center leaf that is actually live, reviewable, and county-bearing rather than just prose or dead sitemap children.
+- Any official Alaska borough/census-area office directory or office-location table that is live and reviewable.
+- Any first-party DFCS or health-host leaf that ties specific boroughs or census areas to local Public Assistance routing.
+- Any official successor to the challenged health-host office directory that preserves county-equivalent local office mapping rather than statewide phone relay only.
 
-## Next State Order After Florida
+## Next State Order After Alaska
 
-1. Alaska
-2. Ohio
-3. Minnesota
-4. Maine
-5. Idaho
-6. Arizona
-7. Massachusetts
-8. Oregon
-9. Oklahoma
-10. Utah
+1. Ohio
+2. Minnesota
+3. Maine
+4. Idaho
+5. Arizona
+6. Massachusetts
+7. Oregon
+8. Oklahoma
+9. Utah
+10. New Hampshire

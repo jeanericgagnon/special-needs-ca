@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: browser_only_dpa_directory_lacks_borough_mapping_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves
+- primary_gap_reason: live_dfcs_services_page_only_provides_statewide_phone_relay_while_health_host_county_equivalent_directory_stays_challenged
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_dpa_directory_incomplete_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves (The official Alaska DPA offices page is only recoverable in browser-reviewed rendering and still stops at five regional headings and ten office-city leaves with no borough or census-area mapping. In the low-token fetch lane, the exact page URL, health-host public-assistance search URL, and the exact Adult Public Assistance / Apply for Medicaid leaves linked from the live DFCS Services hub all fail closed through Cloudflare, while the DFCS site itself exposes no borough or census-area office contract. Alaska therefore still lacks a scraper-safe county-equivalent routing contract.)
+- county_local_disability_resources: blocked_live_dfcs_services_page_is_phone_only_and_health_host_directory_remains_challenged (The live Alaska DFCS Services page is reviewable and now preserves statewide phone routing for Adult Public Assistance and Apply for Medicaid through 888-804-6330, but it still does not provide borough or census-area office mapping. Its exact service links send users to health.alaska.gov leaves that remain Cloudflare-challenged in the low-token lane, and the DFCS contacts surface still exposes no borough or census-area office contract. Alaska therefore still lacks a scraper-safe county-equivalent routing contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: browser_only_dpa_directory_lacks_borough_mapping_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves :: Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus the live DFCS successor hub and narrow alternate official-host probes for borough and census-area routing. The reviewed rendered DPA offices page at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ is a real official directory, but its public contract remains limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center, with no borough names, no census-area names, and no county-equivalent coverage table. Fresh exact-page raw fetches of that DPA offices URL, the health-host public-assistance search URL, and exact service leaves now linked from the live DFCS Services hub, including Adult Public Assistance and Apply for Medicaid, all return HTTP 403 with the Cloudflare `Just a moment...` shell. The DFCS site itself is reachable, but its Search, Site Map, Publications, and Services pages still expose no borough or census-area office mapping; the Services page only relays users into challenge-blocked health-host leaves. Bounded alternate official-host checks also failed closed: `my.alaska.gov/robots.txt` returns an anti-bot JS gate, `alaska.gov/search?...Division+of+Public+Assistance+offices` returns the state 404 page, and the legacy `dhss.alaska.gov` host exposes only generic robots.txt with no public office successor contract. So Alaska now has browser-reviewed proof that the directory exists, live successor-hub proof that the state only relays to challenged leaves, and raw-fetch proof that no scraper-safe county-equivalent routing contract is presently exposed.
+- county_local_disability_resources: live_dfcs_services_page_only_provides_statewide_phone_relay_while_health_host_county_equivalent_directory_stays_challenged :: Reviewed 2026-06-23 bounded official Alaska rechecks against the live DFCS successor hub plus the challenged health host. The current DFCS Services page at https://dfcs.alaska.gov/Pages/Services.aspx is live and publicly reviewable. It now preserves explicit statewide phone-only routing for `Adult Public Assistance` and `Apply for Medicaid`, both with the same statewide number `888-804-6330`, and its exact links point to https://health.alaska.gov/en/services/adult-public-assistance-apa/ and https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/. But those health-host leaves still return HTTP 403 with the Cloudflare `Just a moment...` shell in the low-token lane, just like the reviewed DPA offices directory at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ and the legacy office-locations page at https://health.alaska.gov/dpa/Pages/office-locations.aspx. The DFCS Department Contacts page is also live, but it still exposes no borough names, no census-area names, and no Public Assistance or disability office-location mapping contract. So Alaska now has better proof that the successor hub exists and offers statewide program phone routing, but it still lacks a reviewable borough- or census-area-to-office contract and remains blocked.
 
 ## Verified source samples
 
@@ -40,16 +40,15 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_dpa_directory_incomplete_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves; samples=13; first=https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/
+- county_local_disability_resources: blocked_live_dfcs_services_page_is_phone_only_and_health_host_directory_remains_challenged; samples=7; first=https://dfcs.alaska.gov/Pages/Services.aspx
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_on_a_reviewable_official_surface_or_replaces_the_dfcs_to_health_host_relay_with_a_reviewable_office_locator
+- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_on_a_reviewable_official_surface_or_replaces_the_phone_only_dfcs_relay_with_a_reviewable_office_locator
 
 ## Repair decision
 
-- The only remaining Alaska blocker is county/local disability resources.
-- This bounded pass keeps the blocker final for low-token repair on the current official host family: the DPA offices page is only recoverable in browser-reviewed rendering, remains incomplete for borough or census-area routing, and the same host challenge-blocks the exact page URL plus supporting discovery surfaces.
-- The live DFCS successor hub does not repair that gap because its own HTML preserves no borough or census-area routing and its service leaves only relay families into challenge-blocked health-host pages.
-- Alternate official successors also fail closed: `my.alaska.gov` exposes only an anti-bot JS gate, `alaska.gov/search` does not expose a search contract for this family, and the legacy `dhss.alaska.gov` host preserves no public office successor lane.
-- Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping on a reviewable official surface or the DFCS-to-health-host relay is replaced by a reviewable office locator.
+- Alaska remains BLOCKED and not index-safe.
+- The live DFCS Services page is real and preserves statewide phone routing for Adult Public Assistance and Apply for Medicaid, which is stronger than a dead relay story.
+- But that same page still does not map boroughs or census areas to local offices, and its exact office-facing health-host links remain challenge-blocked.
+- The DFCS contacts page still does not preserve a county-equivalent office contract.

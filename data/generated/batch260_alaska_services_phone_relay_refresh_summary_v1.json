@@ -1,0 +1,11 @@
+{
+  "batch": "batch260_alaska_services_phone_relay_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dfcs_services_page_live": true,
+  "statewide_phone_relay_verified": true,
+  "local_mapping_still_missing": true,
+  "lesson_added": false
+}

@@ -234,3 +234,6 @@
 
 ### An Exact Local-Offices Leaf Still Fails If It Only Resolves To A Partial Storefront Lane
 *   **Lesson:** Treat an official `Find Local Offices` leaf as a lead, not a clearance. Florida now exposes an exact `food-cash-and-medical` page with a `Find Local Offices` link, but because that link still lands on a 34-county Family Resource Center storefront lane instead of a complete 67-county county-local contract, the state remains blocked.
+
+### A Live Successor Hub With Statewide Program Phones Still Fails County-Equivalent Routing
+*   **Lesson:** If a successor services hub is live and preserves statewide phone routing for named programs but still lacks borough or census-area mapping, do not treat it as county-grade closure. Alaska DFCS now proves real Adult Public Assistance and Medicaid phone relay, but because the linked office directory host remains challenged and no local coverage contract appears on the DFCS pages, the county-local family stays blocked.

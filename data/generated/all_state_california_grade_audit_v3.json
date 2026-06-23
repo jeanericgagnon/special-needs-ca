@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T17:56:15.265Z",
+  "generatedAt": "2026-06-23T18:03:15.257Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -147,11 +147,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_dpa_directory_incomplete_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves"
+        "county_local_disability_resources": "blocked_live_dfcs_services_page_is_phone_only_and_health_host_directory_remains_challenged"
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "browser_only_dpa_directory_lacks_borough_mapping_and_dfcs_successor_hub_only_relays_into_challenged_health_host_leaves",
+      "packetPrimaryGapReason": "live_dfcs_services_page_only_provides_statewide_phone_relay_while_health_host_county_equivalent_directory_stays_challenged",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
