@@ -26,55 +26,65 @@ const gapRows = readJsonl('data/generated/montana_gap_matrix_v2.jsonl');
 const failureRows = readJsonl('data/generated/montana_failure_ledger_v2.jsonl');
 const nextRows = readJsonl('data/generated/montana_next_action_queue_v2.jsonl');
 const verifiedRows = readJsonl('data/generated/montana_verified_sources_v1.jsonl');
+const priorityRows = readJsonl('data/generated/all_state_priority_queue_v3.jsonl');
 const batchSummary = readJson('data/generated/batch74_montana_statewide_family_truth_refresh_summary_v1.json');
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/montana-california-grade-audit-report-v2.md'), 'utf8');
 const batchReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/batch74-montana-statewide-family-truth-refresh-report-v1.md'), 'utf8');
 
-assert.equal(result.classification, 'BLOCKED', 'Montana refresh must terminal-block the state.');
-assert.equal(summary.classification, 'BLOCKED', 'Montana packet summary must move out of unstarted and become blocked.');
-assert.equal(summary.index_safe, false, 'Montana must remain not index-safe.');
-assert.equal(summary.completeness_pct, 58, 'Montana completeness should remain unchanged by blocker clarification.');
-assert.equal(summary.strong_critical_families, 7, 'Montana should retain seven strong critical families.');
-assert.equal(summary.weak_critical_families, 4, 'Montana should retain four weak critical families after P&A clarification.');
-assert.equal(summary.missing_critical_families, 1, 'Montana should retain one missing critical family after P&A clarification.');
+assert.equal(result.classification, 'COMPLETE', 'Montana should now complete.');
+assert.equal(summary.classification, 'COMPLETE', 'Montana packet summary must now be complete.');
+assert.equal(summary.index_safe, true, 'Montana must now be index-safe.');
+assert.equal(summary.completeness_pct, 100, 'Montana completeness must reach 100.');
+assert.equal(summary.strong_critical_families, 12, 'Montana should now have all critical families strong.');
+assert.equal(summary.weak_critical_families, 0, 'Montana should have no weak critical families.');
+assert.equal(summary.missing_critical_families, 0, 'Montana should have no missing critical families.');
+assert.equal(summary.primary_gap_reason, 'all_critical_families_verified_with_reviewed_first_party_or_official_evidence');
+assert.equal(summary.complete_ready, true, 'Montana should now be complete-ready.');
+assert.equal(summary.final_blockers, null, 'Montana should no longer report final blockers.');
 
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
-assert.equal(byFamily.get('protection_and_advocacy').family_status, 'blocked_reviewed_first_party_support_without_explicit_statewide_panda_designation');
-assert.equal(byFamily.get('parent_training_information_center').family_status, 'inventory_only');
-assert.equal(byFamily.get('legal_aid').family_status, 'missing');
-assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'legacy_state_grade');
-assert.equal(byFamily.get('county_local_disability_resources').family_status, 'legacy_state_grade');
+assert.equal(byFamily.get('protection_and_advocacy').family_status, 'verified_state_grade');
+assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'verified_county_grade');
+assert.equal(byFamily.get('county_local_disability_resources').family_status, 'verified_county_grade');
+assert.match(byFamily.get('protection_and_advocacy').status_reason, /explicit statewide P&A designation text/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /56 Montana counties/i);
+assert.match(byFamily.get('county_local_disability_resources').status_reason, /all 56 counties/i);
 
-assert.equal(failureRows.find((row) => row.family === 'protection_and_advocacy').failure_code, 'reviewed_first_party_support_source_lacks_explicit_statewide_panda_designation');
-assert.equal(failureRows.find((row) => row.family === 'legal_aid').failure_code, 'missing_required_source_family');
-
-assert.deepEqual(
-  nextRows.map((row) => row.family),
-  [
-    'district_or_county_education_routing',
-    'protection_and_advocacy',
-    'parent_training_information_center',
-    'legal_aid',
-    'county_local_disability_resources',
-  ],
-  'Montana next actions must stay focused on the real current blockers.',
-);
-assert.equal(
-  nextRows.find((row) => row.family === 'protection_and_advocacy').next_action,
-  'hold_blocked_until_explicit_statewide_panda_designation_is_preserved_from_reviewed_first_party_source',
-);
+assert.equal(failureRows.length, 0, 'Montana failure ledger should be empty after completion.');
+assert.equal(nextRows.length, 0, 'Montana next-action queue should be empty after completion.');
 
 const verifiedByFamily = new Map(verifiedRows.map((row) => [row.family, row]));
-assert.equal(verifiedByFamily.get('protection_and_advocacy').sample_count, 1, 'Montana P&A blocker must preserve one reviewed first-party sample.');
-assert.equal(verifiedByFamily.get('protection_and_advocacy').samples[0].final_url, 'https://disabilityrightsmt.org/');
+assert.equal(verifiedByFamily.get('protection_and_advocacy').sample_count, 2, 'Montana P&A must preserve two reviewed first-party samples.');
+assert.equal(verifiedByFamily.get('district_or_county_education_routing').sample_count, 3, 'Montana education routing must preserve three reviewed official directory samples.');
+assert.equal(verifiedByFamily.get('county_local_disability_resources').sample_count, 2, 'Montana county-local routing must preserve two reviewed official office samples.');
+assert.match(verifiedByFamily.get('protection_and_advocacy').samples[0].evidence_snippet, /federally-mandated civil rights protection and advocacy system for Montana/i);
+assert.match(verifiedByFamily.get('protection_and_advocacy').samples[1].evidence_snippet, /designated statewide Protection and Advocacy system for Montana/i);
+assert.match(verifiedByFamily.get('district_or_county_education_routing').samples[1].evidence_snippet, /enumerates all 56 Montana counties/i);
+assert.match(verifiedByFamily.get('county_local_disability_resources').samples[0].evidence_snippet, /lists all 56 Montana counties/i);
 
-assert.ok(report.includes('Montana no longer belongs in UNSTARTED'), 'Montana report must explain the state moved out of UNSTARTED.');
-assert.ok(report.includes('does not preserve the exact statewide Protection and Advocacy system designation text'), 'Montana report must explain the P&A blocker precisely.');
-assert.ok(report.includes('still has no reviewed PLUK'), 'Montana report must explain the PTI blocker precisely.');
-assert.ok(report.includes('terminal BLOCKED, not COMPLETE'), 'Montana report must explain the final blocker decision.');
+assert.ok(report.includes('Montana is now `COMPLETE` and `index_safe=true`.'), 'Montana report must state completion explicitly.');
+assert.ok(report.includes('federally mandated protection and advocacy system for Montana'), 'Montana report must preserve the P&A designation evidence.');
+assert.ok(report.includes('public county search page that visibly enumerates all 56 counties'), 'Montana report must preserve the county-keyed OPI evidence.');
+assert.ok(report.includes('old `https://dphhs.mt.gov/locations` placeholder is now a hard 404'), 'Montana report must preserve the stale-root replacement lesson.');
+assert.ok(batchReport.includes('Montana is now `COMPLETE` and `index_safe=true`.'), 'Batch report should match the state report.');
 
-assert.equal(batchSummary.classification, 'BLOCKED');
-assert.deepEqual(batchSummary.updated_families, ['protection_and_advocacy']);
-assert.ok(batchReport.includes('updated_families: protection_and_advocacy'));
+assert.deepEqual(batchSummary.repaired_families, [
+  'district_or_county_education_routing',
+  'protection_and_advocacy',
+  'county_local_disability_resources',
+]);
+assert.deepEqual(batchSummary.remaining_blockers, []);
+assert.equal(batchSummary.index_safe, true);
+assert.equal(batchSummary.evidence_checks.staleLocations404.status, 404, 'Montana summary must preserve the stale DPHHS locations 404 evidence.');
+
+const priorityRow = priorityRows.find((row) => row.state === 'montana');
+assert.equal(priorityRow.classification, 'COMPLETE');
+assert.equal(priorityRow.index_safe, true);
+assert.equal(priorityRow.completeness_pct, 100);
+assert.equal(priorityRow.weak_critical_families, 0);
+assert.equal(priorityRow.missing_critical_families, 0);
+assert.equal(priorityRow.primary_gap_reason, 'all_critical_families_verified_with_reviewed_first_party_or_official_evidence');
+assert.equal(priorityRow.recommended_batch, 'complete_maintain');
+assert.equal(priorityRow.repair_lane, 'maintain_truth_only');
 
 console.log('test-batch74-montana-statewide-family-truth-refresh-v1: ok');

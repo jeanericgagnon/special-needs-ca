@@ -668,3 +668,15 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Contact Pages Can Hide Full County-Office Tables In Plain HTML
 *   **Lesson:** If guessed `/locations/` or county-office subpaths 404, inspect the official contact page itself before assuming the county contract is missing. Mississippi MDHS published all 82 county offices directly in the contact-page HTML table with address, email, and phone fields, which was enough for county-grade routing without any deeper directory path.
+
+### Browser-Only PTI Designation Can Clear A 403-Blocked First-Party Domain
+*   **Lesson:** If a known PTI domain only returns a Cloudflare 403 shell to low-token fetches, do one exact browser-assisted capture of the homepage plus the first-party About page before keeping the family blocked. Missouri MPACT still challenge-blocked raw fetches, but the browser-rendered About page explicitly said it has been Missouri’s federally funded Parent Training and Information Center since 1988, which was enough to clear PTI without broad scraping.
+
+### Public Login Bridges Still Stay Blocked If The Report Shell Itself 404s
+*   **Lesson:** If an official school-directory login page has a real public-access button, replay it once before calling the lane login-gated. But if the public button only reaches an SSRS shell whose rendered body says the report server failed with HTTP 404, stop treating the blocker as authentication-only and move the next lane to district-owned leaf authoring. Missouri DESE’s `View Public Applications` bridge was real, yet the public report itself was broken.
+
+### County Dropdowns Plus Public Superintendent Reports Can Be Enough For County-Grade Education Routing
+*   **Lesson:** If an official schools-directory page links both a county selector and direct public superintendent reports, preserve that contract before opening district-by-district discovery. Montana OPI’s Schools Directory exposed a public county dropdown covering all 56 counties plus live county-superintendent and district-superintendent databases, which was enough to clear county-grade education routing from one official stack.
+
+### When An Old `/locations` Root 404s, Mine The Same Host Sitemap For `OfficeLocations` And County Office Leaves
+*   **Lesson:** If a long-lived state `.../locations` placeholder suddenly 404s, do one sitemap pass on the same official host before leaving county-local routing blocked. Montana DPHHS moved the usable county office contract to `CFSD/countyoffice` and `AboutUs/OfficeLocations/fieldoffices`, and those newer leaves preserved all 56 counties in public HTML without any broad crawl.

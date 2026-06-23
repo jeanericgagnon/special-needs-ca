@@ -1,23 +1,69 @@
 {
   "batch": "batch_74_montana_statewide_family_truth_refresh_v1",
-  "generated_at": "2026-06-21T00:00:00.000Z",
+  "generated_at": "2026-06-22T00:00:00.000Z",
   "state": "montana",
-  "classification": "BLOCKED",
-  "index_safe": false,
-  "updated_families": [
-    "protection_and_advocacy"
-  ],
-  "remaining_blockers": [
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "repaired_families": [
     "district_or_county_education_routing",
     "protection_and_advocacy",
-    "parent_training_information_center",
-    "legal_aid",
     "county_local_disability_resources"
   ],
+  "remaining_blockers": [],
   "evidence_checks": {
-    "drm": {
-      "sourceUrl": "https://www.disabilityrightsmt.org/",
-      "finalUrl": "https://disabilityrightsmt.org/"
+    "pAndAAbout": {
+      "url": "https://disabilityrightsmt.org/about-us/",
+      "finalUrl": "https://disabilityrightsmt.org/about-us/",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 first-party DRM About Us page. The live page states: \"Authority Disability Rights Montana is the federally-mandated civil rights protection and advocacy system for Montana. We have the legal authority to represent almost any person with a disability.\""
+    },
+    "pAndAHb393": {
+      "url": "https://disabilityrightsmt.org/hb393/",
+      "finalUrl": "https://disabilityrightsmt.org/hb393/",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 first-party DRM HB393 case page. The live page states: \"As the designated statewide Protection and Advocacy system for Montana, Disability Rights Montana appears in this case as an organizational plaintiff.\""
+    },
+    "schoolsDirectory": {
+      "url": "https://opi.mt.gov/Leadership/Management-Operations/Montana-Schools-Directory",
+      "finalUrl": "https://opi.mt.gov/Leadership/Management-Operations/Montana-Schools-Directory",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 official OPI Montana Schools Directory page. It preserves a public \"Search Directory by County\" route, a public PDF directory download, an interactive map, and direct links into county- and district-level superintendent databases."
+    },
+    "schoolsDirectoryCountySearch": {
+      "url": "https://apps.opi.mt.gov/SchoolDirectory/",
+      "finalUrl": "https://apps.opi.mt.gov/SchoolDirectory/",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 public OPI county search page. The rendered page enumerates all 56 Montana counties in the visible county selector and instructs users to select a county and view the directory below."
+    },
+    "countySuperintendents": {
+      "url": "https://apps.opi.mt.gov/OPIReportingCenter/frmCentralDirectory.aspx?ProcName=procCentralDirectoryCountyStaff&ScreenTitle=County%20Superintendents&SelectCounty=1&SelectRole=1&Role=COSUPT&ShowReport=1&ScreenMsg=Database%20of%20Montana%20County%20Superintendents",
+      "finalUrl": "https://apps.opi.mt.gov/OPIReportingCenter/frmCentralDirectory.aspx?ProcName=procCentralDirectoryCountyStaff&ScreenTitle=County%20Superintendents&SelectCounty=1&SelectRole=1&Role=COSUPT&ShowReport=1&ScreenMsg=Database%20of%20Montana%20County%20Superintendents",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 public OPI County Superintendents database. The rendered report preserves county name, staff name, title, address, city, zip, phone, fax, and email fields for Montana county superintendents, including Beaverhead and Big Horn in the captured page."
+    },
+    "districtSuperintendents": {
+      "url": "https://apps.opi.mt.gov/OPIReportingCenter/frmCentralDirectory.aspx?ProcName=procCentralDirectorySystemStaffBySystem&ScreenTitle=District%20Superintendents&SelectRole=1&Role=SUPT&ShowReport=1&ScreenMsg=%20Database%20of%20Montana%20District%20Superintendents",
+      "finalUrl": "https://apps.opi.mt.gov/OPIReportingCenter/frmCentralDirectory.aspx?ProcName=procCentralDirectorySystemStaffBySystem&ScreenTitle=District%20Superintendents&SelectRole=1&Role=SUPT&ShowReport=1&ScreenMsg=%20Database%20of%20Montana%20District%20Superintendents",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 public OPI District Superintendents database. The rendered report preserves County Name, System Name, address, staff email, phone, fax, and superintendent fields, with captured rows for Beaverhead county districts such as Grant Elementary and Dillon Elementary."
+    },
+    "countyOffice": {
+      "url": "https://dphhs.mt.gov/CFSD/countyoffice",
+      "finalUrl": "https://dphhs.mt.gov/CFSD/countyoffice",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 official DPHHS County Offices page. The rendered page lists all 56 Montana counties with county name, address, phone, and fax fields directly in the public HTML, including Beaverhead, Gallatin, Yellowstone, and Wibaux."
+    },
+    "publicAssistance": {
+      "url": "https://dphhs.mt.gov/HCSD/OfficeofPublicAssistance",
+      "finalUrl": "https://dphhs.mt.gov/HCSD/OfficeofPublicAssistance",
+      "status": 200,
+      "evidence": "Reviewed 2026-06-22 official DPHHS Field Offices of Public Assistance page. The page preserves named field offices with address and county-keyed email routes such as hhshcsopayellowstone@mt.gov and hhshcsopagallatin@mt.gov."
+    },
+    "staleLocations404": {
+      "url": "https://dphhs.mt.gov/locations",
+      "finalUrl": "https://dphhs.mt.gov/locations",
+      "status": 404,
+      "evidence": "Reviewed 2026-06-22 old DPHHS /locations root. It now returns the department 404 page, so county-local routing must use the newer OfficeLocations / countyoffice leaves instead of the stale placeholder root."
     }
   }
 }

@@ -26,76 +26,80 @@ const gapRows = readJsonl('data/generated/missouri_gap_matrix_v2.jsonl');
 const failureRows = readJsonl('data/generated/missouri_failure_ledger_v2.jsonl');
 const nextRows = readJsonl('data/generated/missouri_next_action_queue_v2.jsonl');
 const verifiedRows = readJsonl('data/generated/missouri_verified_sources_v1.jsonl');
+const priorityRows = readJsonl('data/generated/all_state_priority_queue_v3.jsonl');
 const batchSummary = readJson('data/generated/batch45_missouri_statewide_family_truth_refresh_summary_v1.json');
 const probes = readJson('data/generated/batch45_missouri_official_probe_summary_v1.json');
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/missouri-california-grade-audit-report-v2.md'), 'utf8');
 
-assert.equal(result.classification, 'BLOCKED', 'Missouri refresh must final-block the state.');
-assert.equal(summary.classification, 'BLOCKED', 'Missouri packet summary must be blocked.');
+assert.equal(result.classification, 'BLOCKED', 'Missouri must remain blocked.');
+assert.equal(summary.classification, 'BLOCKED', 'Missouri packet summary must remain blocked.');
 assert.equal(summary.index_safe, false, 'Missouri must remain not index-safe.');
-assert.equal(summary.completeness_pct, 75, 'Missouri completeness must reflect the repaired First Steps and VR / Pre-ETS statewide families after truth refresh.');
-assert.equal(summary.strong_critical_families, 9, 'Missouri should retain nine strong critical families after the truth refresh.');
-assert.equal(summary.weak_critical_families, 2, 'Missouri should retain two weak critical families after the truth refresh.');
-assert.equal(summary.missing_critical_families, 1, 'Missouri should retain one missing critical family after the truth refresh.');
+assert.equal(summary.completeness_pct, 91, 'Missouri completeness must rise once PTI and legal aid are both cleared.');
+assert.equal(summary.strong_critical_families, 11, 'Missouri should retain eleven strong critical families.');
+assert.equal(summary.weak_critical_families, 1, 'Missouri should retain one weak critical family.');
+assert.equal(summary.missing_critical_families, 0, 'Missouri should no longer have any missing critical family.');
+assert.deepEqual(summary.major_gap_families, [], 'Missouri should no longer carry stale major blockers.');
+assert.deepEqual(summary.critical_gap_families, ['district_or_county_education_routing'], 'Missouri should retain only the education routing blocker.');
+assert.equal(summary.primary_gap_reason, 'official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404');
 
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
-assert.equal(byFamily.get('medicaid_state_health_coverage').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('medicaid_waiver_hcbs_disability_services').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('developmental_disability_idd_authority').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('early_intervention_part_c').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('special_education_idea_part_b').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_exact_district_or_county_leafs_unverified');
-assert.equal(byFamily.get('vocational_rehabilitation_pre_ets').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('protection_and_advocacy').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('parent_training_information_center').family_status, 'blocked_exact_statewide_pti_source_access_blocked');
-assert.equal(byFamily.get('legal_aid').family_status, 'missing_reviewed_statewide_legal_aid_source');
-assert.equal(byFamily.get('able_program').family_status, 'verified_state_grade');
-assert.equal(byFamily.get('county_local_disability_resources').family_status, 'verified_state_grade');
+assert.equal(byFamily.get('parent_training_information_center').family_status, 'verified_state_grade');
+assert.equal(byFamily.get('legal_aid').family_status, 'verified_state_grade');
+assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_official_dese_public_report_shell_returns_report_server_404');
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /public School Directory bridge/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /report-server HTTP 404/i);
 
-assert.equal(failureRows.find((row) => row.family === 'district_or_county_education_routing').failure_code, 'generic_or_statewide_evidence_used_where_local_required');
-assert.equal(failureRows.find((row) => row.family === 'parent_training_information_center').failure_code, 'reviewed_exact_statewide_pti_target_access_blocked');
-assert.ok(!failureRows.some((row) => row.family === 'protection_and_advocacy'), 'Missouri P&A must drop out of the failure ledger.');
-assert.ok(!failureRows.some((row) => row.family === 'county_local_disability_resources'), 'Missouri county-local family must drop out of the failure ledger after the reviewed regional-office repair.');
-assert.ok(!failureRows.some((row) => row.family === 'early_intervention_part_c'), 'Missouri First Steps must drop out of the failure ledger after the DESE repair.');
-assert.ok(!failureRows.some((row) => row.family === 'vocational_rehabilitation_pre_ets'), 'Missouri VR / Pre-ETS must drop out of the failure ledger after the DESE repair.');
+assert.equal(failureRows.length, 1, 'Missouri failure ledger should collapse to one exact blocker.');
+assert.equal(failureRows[0].family, 'district_or_county_education_routing');
+assert.equal(failureRows[0].failure_code, 'official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404');
+assert.match(failureRows[0].evidence, /HTTP status 404: Not Found/i);
 
 assert.deepEqual(
   nextRows.map((row) => row.family),
-  [
-    'district_or_county_education_routing',
-    'parent_training_information_center',
-    'legal_aid',
-  ],
-  'Missouri next actions must collapse to the real current blockers.',
+  ['district_or_county_education_routing'],
+  'Missouri next actions must collapse to the lone remaining blocker.',
+);
+assert.equal(
+  nextRows[0].next_action,
+  'author_missouri_district_owned_special_education_or_student_services_leaves_from_local_district_sites',
+  'Missouri next action must move off the broken DESE shell and onto district-owned leaf authoring.',
 );
 
 const verifiedByFamily = new Map(verifiedRows.map((row) => [row.family, row]));
-assert.equal(verifiedByFamily.get('medicaid_state_health_coverage').sample_count, 2, 'Missouri Medicaid must preserve the repaired DSS leaves.');
-assert.equal(verifiedByFamily.get('developmental_disability_idd_authority').sample_count, 2, 'Missouri DD authority must preserve the repaired DMH leaves.');
-assert.equal(verifiedByFamily.get('protection_and_advocacy').sample_count, 1, 'Missouri P&A must carry one reviewed first-party sample.');
-assert.equal(verifiedByFamily.get('protection_and_advocacy').samples[0].source_url, 'https://www.moadvocacy.org/', 'Missouri P&A must use the reviewed moadvocacy final URL.');
-assert.equal(verifiedByFamily.get('parent_training_information_center').sample_count, 1, 'Missouri PTI blocker should preserve the blocked exact target sample.');
-assert.equal(verifiedByFamily.get('early_intervention_part_c').sample_count, 1, 'Missouri early intervention must carry the reviewed First Steps leaf.');
-assert.equal(verifiedByFamily.get('vocational_rehabilitation_pre_ets').sample_count, 2, 'Missouri VR / Pre-ETS must carry the reviewed VR and Youth Services leaves.');
+assert.equal(verifiedByFamily.get('parent_training_information_center').sample_count, 2, 'Missouri PTI must preserve two reviewed first-party samples.');
+assert.equal(verifiedByFamily.get('parent_training_information_center').samples[0].source_url, 'https://www.missouriparentsact.org/');
+assert.equal(verifiedByFamily.get('parent_training_information_center').samples[1].source_url, 'https://www.missouriparentsact.org/about-us/');
+assert.match(verifiedByFamily.get('parent_training_information_center').samples[1].evidence_snippet, /federally-funded Parent Training and Information Center since 1988/i);
+assert.equal(verifiedByFamily.get('legal_aid').sample_count, 1, 'Missouri legal aid must preserve the Missouri Legal Services sample.');
+assert.equal(verifiedByFamily.get('legal_aid').samples[0].source_url, 'https://www.lsmo.org/');
+assert.equal(verifiedByFamily.get('district_or_county_education_routing').sample_count, 4, 'Missouri education blocker should preserve the sharper DESE probe chain.');
+assert.equal(
+  verifiedByFamily.get('district_or_county_education_routing').blocker_code,
+  'official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404',
+);
 
-assert.equal(probes.medicaidHealthcare.status, 200, 'Missouri Medicaid healthcare probe must preserve the live exact leaf.');
-assert.equal(probes.ddWaiverEnrollment.status, 200, 'Missouri DD waiver enrollment probe must preserve the live exact leaf.');
-assert.equal(probes.specialEducation.status, 200, 'Missouri DESE special-education probe must preserve the live exact leaf.');
-assert.equal(probes.desePartCGuess.status, 200, 'Missouri First Steps probe must preserve the live exact leaf.');
-assert.equal(probes.vrMain.status, 200, 'Missouri VR probe must preserve the live exact leaf.');
-assert.equal(probes.vrYouthServices.status, 200, 'Missouri Youth Services probe must preserve the live exact leaf.');
-assert.equal(probes.ptiBlocked.status, 403, 'Missouri PTI probe must preserve the blocked first-party target.');
-assert.equal(probes.legacyDdRoot.status, 0, 'Missouri legacy DD root probe must preserve the dead-root truth.');
+assert.equal(probes.ptiLowTokenBlocked.status, 403, 'Missouri should preserve the low-token PTI challenge evidence.');
+assert.equal(probes.ptiBrowserHome.status, 200, 'Missouri should preserve the browser-assisted PTI homepage evidence.');
+assert.equal(probes.ptiBrowserAbout.status, 200, 'Missouri should preserve the browser-assisted PTI About page evidence.');
+assert.equal(probes.legalAidHome.status, 200, 'Missouri should preserve the legal-aid evidence.');
+assert.equal(probes.desePublicReportShell.status, 200, 'Missouri should preserve the public DESE report-shell probe.');
+assert.match(probes.desePublicReportShell.evidence, /The request failed with HTTP status 404: Not Found/i);
 
-assert.ok(report.includes('exact live DSS Healthcare and Medicaid Annual Renewals leaves'), 'Missouri report must explain the Medicaid repair.');
-assert.ok(report.includes('dead dhhs.missouri.gov packet roots'), 'Missouri report must explain the dead legacy DD roots.');
-assert.ok(report.includes('exact Office of Special Education leaf'), 'Missouri report must explain the special-education repair.');
-assert.ok(report.includes('reviewed live First Steps leaf now proves Part C'), 'Missouri report must explain the First Steps repair.');
-assert.ok(report.includes('reviewed DESE Vocational Rehabilitation and Youth Services leaves now provide statewide VR routing'), 'Missouri report must explain the VR / Pre-ETS repair.');
-assert.ok(report.includes('redirected to missouriparentsact.org and returned HTTP 403'), 'Missouri report must explain the PTI block.');
-assert.ok(report.includes('no reviewed district-owned or county-grade special-education leaves'), 'Missouri report must explain the district-routing blocker.');
+assert.ok(report.includes('PTI is now repaired through exact first-party MPACT browser evidence'), 'Missouri report must explain the PTI repair.');
+assert.ok(report.includes('Legal aid remains repaired through Missouri Legal Services'), 'Missouri report must explain that legal aid is no longer a blocker.');
+assert.ok(report.includes('The request failed with HTTP status 404: Not Found.'), 'Missouri report must preserve the sharper DESE 404 evidence.');
+assert.ok(report.includes('district-owned local leaf authoring, not more DESE root probing'), 'Missouri report must push the next lane to local district leaves.');
 
-assert.equal(batchSummary.classification, 'BLOCKED', 'Missouri batch summary must report blocked.');
-assert.equal(batchSummary.evidence_checks.ptiBlocked.status, 403, 'Missouri batch summary must preserve the PTI blocked evidence.');
+assert.equal(batchSummary.classification, 'BLOCKED', 'Missouri batch summary must still report blocked.');
+assert.equal(batchSummary.strong_critical_families, 11, 'Missouri batch summary must carry the stronger statewide count.');
+assert.equal(batchSummary.weak_critical_families, 1, 'Missouri batch summary must carry the lone remaining blocker.');
+
+const priorityRow = priorityRows.find((row) => row.state === 'missouri');
+assert.equal(priorityRow.classification, 'BLOCKED');
+assert.equal(priorityRow.index_safe, false);
+assert.equal(priorityRow.completeness_pct, 91);
+assert.equal(priorityRow.missing_critical_families, 0);
+assert.equal(priorityRow.weak_critical_families, 1);
+assert.equal(priorityRow.primary_gap_reason, 'official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404');
 
 console.log('test-batch45-missouri-statewide-family-truth-refresh-v1: ok');

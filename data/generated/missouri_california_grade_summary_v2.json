@@ -7,29 +7,28 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 115,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 91,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_dese_district_directory_paths_are_dead_or_login_gated_and_pti_first_party_fetches_remain_access_blocked",
+  "primary_gap_reason": "official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
   ],
-  "major_gap_families": [
-    "parent_training_information_center",
-    "legal_aid"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
     "early_intervention_part_c",
     "special_education_idea_part_b",
+    "district_or_county_education_routing",
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
     "parent_training_information_center",
+    "legal_aid",
     "able_program",
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
@@ -44,23 +43,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_dese_district_directory_paths_are_dead_or_login_gated",
-      "evidence": "Missouri district routing still depends on statewide DESE pages; the obvious DESE school-directory paths return 404 and the MCDS district directory route redirects to a login gate instead of a public district-owned or county-grade special-education leaf.",
-      "next_action": "browser_or_alternate_client_probe_of_dese_district_directory_contract"
-    },
-    {
-      "family": "parent_training_information_center",
-      "severity": "major",
-      "failure_code": "reviewed_exact_statewide_pti_targets_fail_with_403_and_tls_protocol_error",
-      "evidence": "Reviewed low-token PTI fetches still fail: missouriparentsact.org returns HTTP 403 and ptimpact.org fails TLS protocol negotiation before first-party PTI evidence can be preserved.",
-      "next_action": "browser_or_manual_review_on_first_party_pti_domain"
-    },
-    {
-      "family": "legal_aid",
-      "severity": "major",
-      "failure_code": null,
-      "evidence": "Reviewed Missouri Legal Services now preserves a live first-party statewide legal-aid route on disk.",
-      "next_action": "none_verified"
+      "failure_code": "official_dese_public_directory_postback_reaches_ssrs_shell_but_report_server_returns_404",
+      "evidence": "Missouri district routing still lacks reviewed district-owned or county-grade leaves. The official DESE School Data page exposes real public School Directory links, but the exact WebLogin \"View Public Applications\" replay only reaches an SSRS shell whose rendered non-report content fails with \"The request failed with HTTP status 404: Not Found.\"",
+      "next_action": "author_missouri_district_owned_special_education_or_student_services_leaves_from_local_district_sites"
     }
   ]
 }
