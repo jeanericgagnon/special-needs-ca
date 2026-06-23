@@ -39,48 +39,51 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The live DFCS successor host is now exhausted more tightly: it preserves statewide phone-only routing, but no borough/census-area office contract, while the exact office-facing health host still challenge-blocks the county-equivalent directory lane.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the DWS office-search app exposes a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`, but that API still publishes only office inventory fields like office name, address, coordinates, service code, and assistance instructions. It does not expose county fields, counties served, or another reusable county-to-office contract, so Utah remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official Alaska surface that maps boroughs or census areas to DPA or Medicaid office locations on a publicly reviewable host.
-- Any reviewable successor office locator or directory that lives on `dfcs.alaska.gov` or another current official Alaska host instead of only on the challenge-blocked `health.alaska.gov` pages.
-- Any official document, export, or table that explicitly enumerates Alaska borough or census-area coverage for public assistance office routing.
+- Any first-party Utah county-complete office contract that explicitly maps counties to DWS, DHHS, or successor local offices.
+- Any public successor Utah office API field or companion endpoint that adds `county`, `countiesServed`, service-area, or district-style assignment data to the current office inventory.
+- Any official Utah county-owned or state-maintained human-services directory that preserves county routing more explicitly than the current office inventory API.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
-- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [Alaska DFCS robots.txt](https://dfcs.alaska.gov/robots.txt)
-- [Alaska DFCS sitemap.xml](https://dfcs.alaska.gov/sitemap.xml)
-- [Alaska DFCS search for public assistance](https://dfcs.alaska.gov/search/pages/results.aspx?k=public%20assistance)
-- [Alaska DFCS search for office](https://dfcs.alaska.gov/search/pages/results.aspx?k=office)
-- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
-- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
-- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska legacy office locations](https://health.alaska.gov/dpa/Pages/office-locations.aspx)
-- [Alaska health host sitemap](https://health.alaska.gov/sitemap.xml)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Public DWS office-services route](https://officesearch-api.jobs.utah.gov/api/v1/office-services)
+- [API OpenAPI endpoint attempt](https://officesearch-api.jobs.utah.gov/openapi.json)
+- [API Swagger UI attempt](https://officesearch-api.jobs.utah.gov/swagger-ui/index.html)
+- [API v3 docs attempt](https://officesearch-api.jobs.utah.gov/v3/api-docs)
+- [jobs.utah.gov robots.txt](https://jobs.utah.gov/robots.txt)
+- [jobs.utah.gov sitemap.xml](https://jobs.utah.gov/sitemap.xml)
+- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
+- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
+- [Older DHHS locations route](https://dhhs.utah.gov/locations)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current Alaska host outside `health.alaska.gov` that now publishes a borough- or census-area DPA office directory.
-- Any official Alaska PDF, spreadsheet, or office-contact table that names specific borough or census-area coverage for public assistance offices.
-- Any future public relaxation on the health host that makes the DPA office directory or Medicaid application leaves scraper-reviewable without the Cloudflare shell.
+- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the 45 unique office records.
+- Any reviewed official Utah local-office directory that explicitly names counties served, especially where office names are city-based rather than county-based.
+- Any official Utah successor to the dead `serviceslocations.html` or `dhhs.utah.gov/locations` routes that exposes county-grade local-office coverage.
+## Next State Order After Utah
 
-## Next State Order After Alaska
-
-1. South Carolina
-2. North Carolina
-3. New York
-4. Oklahoma
-5. Oregon
-6. Ohio
-7. Minnesota
-8. Maine
-9. Idaho
-10. Arizona
+1. Kansas
+2. Nebraska
+3. Nevada
+4. Florida
+5. Alaska
+6. South Carolina
+7. North Carolina
+8. New York
+9. Oklahoma
+10. Oregon10. Oregon

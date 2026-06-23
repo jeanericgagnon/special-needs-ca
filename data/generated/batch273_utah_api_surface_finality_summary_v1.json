@@ -1,0 +1,20 @@
+{
+  "state": "utah",
+  "classification": "BLOCKED",
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "public_dws_office_api_exposes_office_inventory_but_no_county_or_service_area_contract",
+  "next_action": "hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments",
+  "confirmed_live_urls": [
+    "https://jobs.utah.gov/office-search/",
+    "https://officesearch-api.jobs.utah.gov/api/v1/offices",
+    "https://officesearch-api.jobs.utah.gov/api/v1/services",
+    "https://jobs.utah.gov/robots.txt"
+  ],
+  "confirmed_missing_or_error_urls": [
+    "https://officesearch-api.jobs.utah.gov/api/v1/office-services",
+    "https://officesearch-api.jobs.utah.gov/openapi.json",
+    "https://officesearch-api.jobs.utah.gov/swagger-ui/index.html",
+    "https://officesearch-api.jobs.utah.gov/v3/api-docs",
+    "https://jobs.utah.gov/sitemap.xml"
+  ]
+}

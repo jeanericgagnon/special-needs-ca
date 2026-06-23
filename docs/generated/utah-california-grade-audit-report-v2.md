@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party Disability Law Center evidence preserves statewide disability legal-rights help plus Apply for Help intake routing)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (the official Utah DWS office-search app now exposes a public API at `https://officesearch-api.jobs.utah.gov/api/v1/offices` and that API returns 99 public rows covering 45 unique offices with names, addresses, lat/lng, service codes, and assistance instructions. But neither the API payload nor the current shell publishes county fields, counties served, or another reusable county-to-office contract, so county-grade local routing is still unverified.)
+- county_local_disability_resources: legacy_state_grade (the official Utah DWS office-search app now exposes a public API at `https://officesearch-api.jobs.utah.gov/api/v1/offices` and that API returns 99 public rows covering 45 unique offices with names, addresses, lat/lng, service codes, and assistance instructions. But neither the API payload nor the current shell publishes county fields, counties served, or another reusable county-to-office contract, and one more bounded public-surface pass confirmed no public OpenAPI/Swagger docs or sitemap-exposed successor endpoint fills that gap.)
 
 ## Failure ledger
 
-- county_local_disability_resources: public_dws_office_api_exposes_office_inventory_but_no_county_or_service_area_contract :: The public official DWS office API now returns 99 rows covering 45 unique offices with names, addresses, service codes, and coordinates, but it still does not publish county fields, counties served, or another reusable county-to-office contract. The companion `/api/v1/office-services` route is not available publicly and returns HTTP 404. The old DWS services locations page remains HTTP 500, the old DHHS locations route remains HTTP 404, and DHHS contact pages still do not expose county-grade office routing.
+- county_local_disability_resources: public_dws_office_api_exposes_office_inventory_but_no_county_or_service_area_contract :: The public official DWS office API still returns 99 rows covering 45 unique offices with names, addresses, service codes, and coordinates, but it still does not publish county fields, counties served, or another reusable county-to-office contract. The companion `/api/v1/office-services` route is not available publicly and returns HTTP 404. The official API host also returns HTTP 404 for `openapi.json`, `swagger-ui/index.html`, and `v3/api-docs`, while `jobs.utah.gov/sitemap.xml` still returns an error page instead of a usable successor sitemap.
 
 ## Verified source samples
 
@@ -51,4 +51,5 @@
 - Utah still keeps the education repair from the live Utah Schools Directory.
 - Utah DWS county-local evidence is now stronger than a shell-only story because the live office-search bundle points to a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`.
 - That public API returns office inventory rows with office names, addresses, service codes, coordinates, and assistance instructions, but it still does not publish county fields, counties served, or another reusable county-to-office contract.
+- One more bounded public-surface pass also confirmed `openapi.json`, `swagger-ui/index.html`, and `v3/api-docs` return 404 on the official API host, `jobs.utah.gov/sitemap.xml` returns an error page, and the shell exposes no other public county/service-area contract.
 - Utah therefore remains BLOCKED and not index-safe.
