@@ -1,0 +1,10 @@
+{
+  "batch": "batch232_minnesota_root_instability_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_family": "district_or_county_education_routing",
+  "exact_root_fetch_title": "Radware Captcha Page",
+  "analytics_final_host": "validate.perfdrive.com"
+}

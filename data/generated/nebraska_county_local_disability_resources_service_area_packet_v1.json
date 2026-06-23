@@ -13,7 +13,8 @@
     "officeLayerRelationshipsPresent": false,
     "countyLayerRelationshipsPresent": false,
     "publicOfficeCount": 42,
-    "publicCountyCount": 93
+    "publicCountyCount": 93,
+    "distinctOfficeCounties": 37
   },
   "representative_sources": [
     "https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx",

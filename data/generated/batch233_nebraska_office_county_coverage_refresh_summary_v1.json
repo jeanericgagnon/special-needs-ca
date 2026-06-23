@@ -1,0 +1,11 @@
+{
+  "batch": "batch233_nebraska_office_county_coverage_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_family": "county_local_disability_resources",
+  "public_office_rows": 42,
+  "distinct_office_counties": 37,
+  "public_county_rows": 93
+}
