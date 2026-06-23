@@ -1,0 +1,12 @@
+{
+  "state": "kansas",
+  "batch": "batch289_kansas_newton_emporia_reviewed_leaves_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_count": 14,
+  "promoted_counties": [
+    "harvey-ks",
+    "lyon-ks"
+  ],
+  "primary_gap_reason": "reviewed_kansas_district_and_district_linked_coop_leaves_now_cover_14_counties_but_export_backed_county_grade_coverage_is_still_incomplete"
+}
