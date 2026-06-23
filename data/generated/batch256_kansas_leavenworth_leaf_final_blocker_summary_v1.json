@@ -11,12 +11,14 @@
     "finney-ks",
     "johnson-ks",
     "leavenworth-ks",
+    "riley-ks",
     "shawnee-ks",
     "wyandotte-ks"
   ],
-  "reviewed_leaf_count": 8,
+  "reviewed_leaf_count": 9,
   "newly_verified_county": "leavenworth-ks",
+  "newly_verified_supporting_county": "riley-ks",
   "saline_coop_lead_preserved": true,
-  "riley_non_match_frozen": true,
+  "riley_verified_leaf_added": true,
   "lessons_updated": false
 }

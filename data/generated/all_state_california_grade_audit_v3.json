@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T19:29:43.189Z",
+  "generatedAt": "2026-06-23T19:39:03.037Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -1141,7 +1141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
+      "packetPrimaryGapReason": "reviewed_kansas_district_owned_leaves_now_cover_9_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

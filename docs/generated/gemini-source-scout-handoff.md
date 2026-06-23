@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_results_stay_authenticated`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
-- Kansas: `reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
+- Kansas: `reviewed_kansas_district_owned_leaves_now_cover_9_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
@@ -40,44 +40,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Utah
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the top Utah blocker in the state queue. The live Utah Schools Directory still clears education, and the older public DWS contact page now leads to a live official `jobs.utah.gov/office-search/` app, but the public office-search shell still exposes only map/search controls and no county list, office rows, addresses, or county-to-office contract. The older DWS services locations page still returns HTTP 500, the older DHHS locations route still returns HTTP 404, and current DHHS contact pages still do not publish a county-grade office directory.
+`district_or_county_education_routing` is still the only Kansas critical blocker. Kansas now has reviewed district-owned special-education leaves for 9 of 105 counties, but export-backed county-grade education routing is still incomplete across the statewide packet, so Kansas remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any live Utah public office-search result page, office-row API, county list, or county-owned human-services office leaves on a live state or county host.
-- The Utah Schools Directory no longer needs repair, but county-local still needs a public county-grade office contract.
+- More exact district-owned or affiliated-cooperative school-age special-education routing leaves on official Kansas district or cooperative hosts.
+- Role-pure local routing proof for counties that still only have export-backed district roots, generic district pages, or cooperative leads without a school-age routing contract.
 
 ### Useful Official URLs Already Tried
 
-- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
-- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
-- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
-- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
-- [Live DWS Office Search map route](https://jobs.utah.gov/office-search/map)
-- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
-- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
-- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
-- [Older DHHS locations route](https://dhhs.utah.gov/locations)
+- [Kansas Educational Directory Reports](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
+- [Leavenworth USD 453 Special Education](https://www.usd453.org/district-departments/special-education)
+- [Manhattan-Ogden USD 383 About Special Education](https://www.usd383.org/32689_3)
+- [Manhattan-Ogden USD 383 Developmental Concerns & Special Education](https://www.usd383.org/34871_3)
+- [Salina USD 305 site map](https://www.usd305.com/site-map)
+- [Salina USD 305 Administrative & Student Support](https://www.usd305.com/departments/administrative-student-support)
+- [CKCIE home](https://www.305ckcie.com/)
+- [CKCIE Departments](https://www.305ckcie.com/departments)
+- [CKCIE Early Childhood Special Education](https://www.305ckcie.com/departments/early-childhood-special-education)
+- [Wichita USD 259 site map](https://www.usd259.org/site-map)
+- [Wichita USD 259 special programs page](https://www.usd259.org/schools23/special-programs-and-schools)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any public office rows, addresses, or county filter contract behind `jobs.utah.gov/office-search/`.
-- Any official Utah successor artifact to the broken `serviceslocations.html` and dead `dhhs.utah.gov/locations` routes.
-- Any county-grade office extract or county-owned office leaves that can replace statewide-only or inventory-only local-office rows.
+- Exact district-owned special-education or student-services leaves for unresolved export-backed Kansas district domains.
+- Cooperative or interlocal special-education pages that preserve school-age routing, not just early-childhood scope.
+- Any official Kansas district or cooperative local routing contract that can convert remaining generic district roots into county clears.
 
-## Next State Order After Utah
+## Next State Order After Kansas
 
-1. New Hampshire
-2. New Mexico
-3. New York
-4. North Carolina
-5. North Dakota
-6. Rhode Island
-7. South Carolina
-8. South Dakota
-9. Tennessee
-10. Vermont
+1. Nebraska
+2. Nevada
+3. Florida
+4. Alaska
+5. South Carolina
+6. North Carolina
+7. New York
+8. Oklahoma
+9. Oregon
+10. Ohio
