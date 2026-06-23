@@ -237,3 +237,6 @@
 
 ### A Live Successor Hub With Statewide Program Phones Still Fails County-Equivalent Routing
 *   **Lesson:** If a successor services hub is live and preserves statewide phone routing for named programs but still lacks borough or census-area mapping, do not treat it as county-grade closure. Alaska DFCS now proves real Adult Public Assistance and Medicaid phone relay, but because the linked office directory host remains challenged and no local coverage contract appears on the DFCS pages, the county-local family stays blocked.
+
+### A Live Official Root Can Still Fail If Every Actionable Child Route Is Only A Title-Bearing Challenge Shell
+*   **Lesson:** If an official root page and its description page both load, do not assume the family is reusable until the child routes actually expose the needed county, district, or contact content. Minnesota MDE-ORG now loads at the root, but the district, county, contact, and analytics routes still return title-bearing Radware shells with no real routing data, so the education family stays blocked.

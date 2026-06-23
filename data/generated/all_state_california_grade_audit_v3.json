@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:09:15.325Z",
+  "generatedAt": "2026-06-23T18:13:55.323Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -1620,7 +1620,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_mdeorg_root_and_analytics_routes_flap_to_radware_without_stable_county_contract",
+        "district_or_county_education_routing": "blocked_mdeorg_root_live_but_actionable_child_routes_are_title_only_radware_shells",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1631,7 +1631,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_5_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "mdeorg_root_and_analytics_routes_flap_to_radware_plus_mn_dhs_local_office_family_is_radware_challenged",
+      "packetPrimaryGapReason": "mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

@@ -1,0 +1,11 @@
+{
+  "batch": "batch262_minnesota_mde_title_shell_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "live_mde_description_page": true,
+  "live_mde_root": true,
+  "actionable_mde_child_routes_still_title_only_shells": true,
+  "lesson_added": false
+}

@@ -17,7 +17,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Kansas: `reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
 - Maine: `public_maine_sau_selectors_and_workbook_are_live_but_search_and_export_replays_still_500_and_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_dds_locations_lane_still_lacks_county_export`
-- Minnesota: `mdeorg_root_and_analytics_routes_flap_to_radware_plus_mn_dhs_local_office_family_is_radware_challenged`
+- Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
 - Nebraska: `official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields`
 - Nevada: `official_county_local_pages_now_cover_13_of_17_counties_but_four_counties_lack_reviewed_local_route`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
@@ -40,46 +40,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Ohio
+## Current Focus State: Minnesota
 
 ### Blocker Reason
 
-`county_local_disability_resources` remains the top Ohio blocker in the state queue. The legacy JFS county-office family is still retired, the obvious Medicaid and Ohio.gov successor guesses still return 404, and a final bounded public-discovery pass found the same result on the obvious Ohio.gov, Medicaid, and JFS search/sitemap surfaces. Ohio still has no live public county-office directory, locator, search index, or sitemap contract to reopen this family.
+`district_or_county_education_routing` remains the top Minnesota blocker in the state queue. The official MDE-ORG description page and root are live, but the district, county, contact, and analytics routes still only return title-bearing Radware shells with no real county-grade directory or export content. Minnesota therefore still lacks a reproducible official district-routing contract in the low-token lane.
 
 ### Exact Evidence Needed
 
-- Any first-party Ohio county office directory, locator, sitemap contract, or search index that is live on an official Ohio/JFS/Medicaid host.
-- Or, a reviewed public successor page that maps county departments of job and family services without relying on the retired JFS family.
-- Or, exact district or ESC-owned education leaves that materially expand county-grade education routing beyond the current root-only inventory.
-- Generic statewide program pages, DOI-hosted planning datasets, and root-only ESC homepages are still not enough.
+- Any first-party Minnesota MDE child route or export contract that exposes real district, county, or contact content without collapsing into a Radware shell.
+- Or, a stable official MDE analytics/export lane that preserves reproducible county-grade organization data.
+- Or, an official DHS county-and-tribal office contract that is reviewable without the current Radware challenge.
+- Live roots and good page titles are still not enough if the actionable child routes contain no real routing data.
 
 ### Useful Official URLs Already Tried
 
-- [Legacy Ohio JFS child locator guess](https://jfs.ohio.gov/home/local-agencies-directory)
-- [Legacy Ohio JFS child locator guess with slash](https://jfs.ohio.gov/home/local-agencies-directory/)
-- [Ohio Medicaid county agencies guess](https://medicaid.ohio.gov/families-and-individuals/county-agencies)
-- [Ohio Medicaid resources county agencies guess](https://medicaid.ohio.gov/resources/county-agencies)
-- [Ohio.gov resident resource guess](https://ohio.gov/residents/resources/job-family-services-directory)
-- [Ohio.gov search guess for job and family services](https://ohio.gov/search?query=job%20and%20family%20services)
-- [Ohio.gov search guess for county agencies](https://ohio.gov/search?query=county%20agencies)
-- [Ohio Medicaid sitemap guess](https://medicaid.ohio.gov/sitemap.xml)
-- [JFS search guess](https://jfs.ohio.gov/search?query=county%20agencies)
+- [Minnesota MDE description page](https://education.mn.gov/MDE/about/SchOrg/)
+- [Minnesota MDE-ORG root](https://pub.education.mn.gov/MdeOrgView/)
+- [Minnesota districts route](https://pub.education.mn.gov/MdeOrgView/districts/index)
+- [Minnesota counties route](https://pub.education.mn.gov/MdeOrgView/reference/county)
+- [Minnesota contacts search route](https://pub.education.mn.gov/MdeOrgView/search/searchContacts)
+- [Minnesota contact types route](https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList)
+- [Minnesota analytics route](https://pub.education.mn.gov/MDEAnalytics/Data.jsp)
+- [Minnesota DHS county and tribal offices replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/)
+- [Minnesota DHS county tribal nation directory replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live official Ohio county-office directory, locator, public sitemap, or public search result surface on Ohio/JFS/Medicaid hosts.
-- Any official successor domain for county departments of job and family services that is publicly reviewable and county-bearing.
-- Any exact Ohio district or ESC-owned leaf pages that materially expand county-grade education routing beyond the current 8-county leaf coverage.
+- Any official MDE child route or export endpoint that returns real district, county, or contact records instead of a title-bearing Radware shell.
+- Any stable first-party downloadable district/county organization file linked from MDE-ORG or MDE analytics.
+- Any official DHS county-and-tribal office contract that is reviewable without browser validation.
 
-## Next State Order After Ohio
+## Next State Order After Minnesota
 
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. Oregon
-7. Oklahoma
-8. Utah
-9. New Hampshire
-10. New Mexico
+1. Maine
+2. Idaho
+3. Arizona
+4. Massachusetts
+5. Oregon
+6. Oklahoma
+7. Utah
+8. New Hampshire
+9. New Mexico
+10. New York
