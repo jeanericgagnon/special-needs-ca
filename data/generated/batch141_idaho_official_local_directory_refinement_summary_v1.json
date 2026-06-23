@@ -4,7 +4,7 @@
   "index_safe": false,
   "completeness_pct": 83,
   "primary_gap_reason": "official_local_directories_exist_but_live_rows_still_lack_county_mapped_replacements",
-  "official_district_links": 106,
+  "official_district_links": 116,
   "exact_office_leaves": 23,
   "school_placeholder_rows": 44,
   "county_dead_locator_rows": 27,

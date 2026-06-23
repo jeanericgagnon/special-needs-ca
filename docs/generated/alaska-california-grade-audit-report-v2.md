@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: dfcs_site_map_exposes_only_pioneer_home_local_leaves_while_public_assistance_office_routing_stays_blocked
+- primary_gap_reason: official_dpa_offices_page_exists_but_lacks_borough_or_census_area_mapping
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_public_assistance_local_directory_missing_despite_other_dfcs_local_leaves (Official DFCS local leaves do exist on the reorg host, but only for the narrow Alaska Pioneer Homes program. DFCS still exposes no reviewed Public Assistance, Medicaid, Senior and Disabilities, or county office-routing leaf, its site search does not return a usable local-office result contract, and the replatformed health host still fails the low-token runtime lane even though browser-rendered pages now load. The public DPA services page shows an "Office locations" section header, but the fetched HTML still exposes no county or office rows behind it.)
+- county_local_disability_resources: blocked_official_dpa_offices_page_lacks_county_equivalent_mapping (The current health host now preserves a live official DPA offices page with named regional groups and district offices, but it still groups coverage by broad regions and city names instead of explicitly mapping Alaska's boroughs and census areas to those offices. DFCS still exposes only narrow Pioneer Home local leaves rather than Public Assistance or disability county-equivalent routing.)
 
 ## Failure ledger
 
-- county_local_disability_resources: dfcs_site_map_exposes_only_pioneer_home_local_leaves_while_public_assistance_office_routing_stays_blocked :: Reviewed 2026-06-22 bounded official Alaska rechecks across the DFCS reorg host plus the current health host. The DFCS site map and Publications page still prove the reorg host can publish exact local leaves because they expose /daph/Pages/map.aspx and six named Alaska Pioneer Home location leaves. But those leaves are narrow Pioneer Home facility pages only, not Public Assistance, Medicaid, Senior and Disabilities, or county office-routing resources. The official DFCS search lane for public assistance still returns only the generic search shell without reviewed local-office results, and the DFCS Services page still relays Adult Public Assistance and Medicaid users to health.alaska.gov. Browser-rendered health pages now load on the replatformed host, including the DPA services page, but the low-token runtime lane still gets HTTP 403 on those same URLs and the fetched DPA services HTML exposes only an empty "Office locations" section header rather than county or office rows. So Alaska now has proof that both hosts are live in some form, but no current official county-grade Public Assistance or disability office directory was recovered.
+- county_local_disability_resources: official_dpa_offices_page_exists_but_lacks_borough_or_census_area_mapping :: Reviewed 2026-06-22 bounded official Alaska rechecks across the DFCS reorg host plus the current health host. The stronger exact replacement now exists on the current health host: `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` preserves a live official Division of Public Assistance office directory with named regional groups and district offices in Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, and Kodiak, plus the statewide Virtual Contact Center. That eliminates the earlier "empty office locations header only" failure mode for DPA. But the reviewed page still groups offices by broad regions and city names rather than explicitly mapping Alaska's boroughs and census areas to those offices, and the DFCS reorg host still exposes only narrow Pioneer Home local leaves rather than Public Assistance or disability county-equivalent routing.
 
 ## Verified source samples
 
@@ -40,15 +40,15 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_public_assistance_local_directory_missing_despite_other_dfcs_local_leaves; samples=9; first=https://dfcs.alaska.gov/Pages/Site-Map.aspx
+- county_local_disability_resources: blocked_official_dpa_offices_page_lacks_county_equivalent_mapping; samples=11; first=https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_a_reviewable_public_assistance_or_disability_office_directory_on_dfcs_or_the_health_host_challenge_clears
+- [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_or_an_equivalent_official_county_grade_locator
 
 ## Repair decision
 
 - The only remaining Alaska blocker is county/local disability resources.
-- This bounded pass proves the DFCS reorg host can publish exact local leaves, but the only reviewed local family it exposes is Alaska Pioneer Homes.
-- That narrows the blocker: Alaska is not missing local leaves in general, but it still lacks a reviewed Public Assistance, Medicaid, Senior and Disabilities, or county office-routing contract on DFCS, while the matching health host only renders partial browser pages and still withholds local-office rows from the low-token runtime lane.
-- Alaska remains BLOCKED and not index-safe until the state publishes a reviewable Public Assistance or disability office directory on DFCS or the health host begins serving county-office content directly in fetched public HTML.
+- This bounded pass improves the blocker materially: Alaska now has a reviewed official DPA offices page on the current health host, so the problem is no longer "no office directory recovered."
+- The remaining failure is narrower and more honest: the official DPA offices resource still groups offices by region and city instead of explicitly mapping Alaska's boroughs and census areas to those offices, while the DFCS reorg host still exposes only Pioneer Home local leaves rather than a county-equivalent Public Assistance or disability routing contract.
+- Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping, or another equivalent official county-grade locator.

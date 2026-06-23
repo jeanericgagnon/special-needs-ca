@@ -511,7 +511,7 @@ This document captures key technical, data modeling, and procedural lessons lear
 *   **Lesson:** When a county lookup points to dead or unpublished legacy slugs, check the official sitemap for sibling `/contacts/...` or `/locations/...` leaves before declaring the whole family dead. But do not clear a county-grade family unless those replacement leaves also expose counties served or another public county-to-region contract. Georgia DBHDD had live replacement region leaves, but county mapping still stayed blocked.
 
 ### Official Local Directories Can Prove Leaf Existence Without Proving County Mapping
-*   **Lesson:** When an official state directory or sitemap exposes many local leaves, split “local leaves exist” from “county mapping is verified.” Idaho SDE exposed 106 district links and Idaho DHW exposed 23 office leaves, but both families still stayed blocked because the public sources did not map those leaves back to counties and the live DB rows still used statewide placeholders.
+*   **Lesson:** When an official state directory or sitemap exposes many local leaves, split “local leaves exist” from “county mapping is verified.” Idaho SDE exposed 116 district links and Idaho DHW exposed 23 office leaves, but both families still stayed blocked because the public sources did not map those leaves back to counties and the live DB rows still used statewide placeholders.
 
 ### Official Search APIs Can Expose Missed Exact Directories Without Broad Crawling
 *   **Lesson:** Before final-blocking a WordPress-based official education stack for “no exact local leaves,” query the site's own public search API. Idaho’s SDE packet missed `https://www.sde.idaho.gov/school-districts/`, and the official search endpoint exposed a complete district directory with 116 exact outbound district links even though the earlier packet only reviewed statewide special-education pages.
@@ -575,3 +575,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Persistent Official 403s Should Stay As Exact Transport Blockers
 *   **Lesson:** If the official state education or DHHS root and the exact local-directory leaves all return HTTP 403 in bounded fetch, keep the family blocked on that exact transport failure instead of falling back to generic statewide or structural evidence. New Hampshire’s school-directory and DHHS district-office lanes were sharper once the blocker named the exact official paths that failed.
+
+### A Real Office Directory Still Fails County-Grade If It Only Groups By Region Or City
+*   **Lesson:** If an official office directory is live and reviewable but only groups offices by region or city names, do not upgrade county-local routing unless it explicitly maps counties or county-equivalents to those offices. Alaska’s DPA Offices page was a real improvement, but it still did not truthfully clear borough and census-area coverage.
+
+### Render The First PDF Page Before Treating A Filename As A Directory Artifact
+*   **Lesson:** If an official PDF filename sounds like a county office or admin map, render the first page before escalating it into an OCR blocker. Arizona’s `CountyAdminOffice.pdf` and `PimaCountyAdmin.pdf` turned out to be county-administrator support letters to AHCCCS, not county office-directory contracts.
