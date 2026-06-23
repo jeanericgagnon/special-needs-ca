@@ -1,0 +1,17 @@
+# Batch 276 Alaska DFCS Host Exhaustion Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- refined_family: county_local_disability_resources
+- failure_code: live_dfcs_services_page_is_phone_only_and_dfcs_host_has_no_public_search_sitemap_or_office_alias_while_health_host_directory_stays_challenged
+
+## Evidence
+
+- Reviewed 2026-06-23 bounded official Alaska rechecks against both the live DFCS successor host and the challenged health host. The current DFCS Services page at https://dfcs.alaska.gov/Pages/Services.aspx is live and publicly reviewable. It preserves explicit statewide phone-only routing for `Adult Public Assistance` and `Apply for Medicaid`, both with the same statewide number `888-804-6330`, and its exact links point to https://health.alaska.gov/en/services/adult-public-assistance-apa/ and https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/. But those health-host leaves still return HTTP 403 with the Cloudflare `Just a moment...` shell in the low-token lane, just like the reviewed DPA offices directory at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ and the legacy office-locations page at https://health.alaska.gov/dpa/Pages/office-locations.aspx. One more bounded pass on `dfcs.alaska.gov` also exhausted the successor host itself: https://dfcs.alaska.gov/robots.txt is public, but https://dfcs.alaska.gov/sitemap.xml returns 404, SharePoint search routes like `/search/pages/results.aspx?k=public%20assistance` and `/search/pages/results.aspx?k=office` return 404, guessed office aliases like `/Pages/Offices.aspx`, `/Pages/Office-Locations.aspx`, `/Pages/Contacts.aspx`, and `/Pages/Public-Assistance.aspx` all return 404, and the live DFCS Publications page does not materialize any office list, directory, or borough/census-area routing contract in raw HTML. The DFCS Department Contacts page is also live, but it still exposes no borough names, no census-area names, and no Public Assistance or disability office-location mapping contract. So Alaska now has stronger proof that the successor host is exhausted and the office-routing lane still lives only on the challenge-blocked health host, leaving the state blocked on missing reviewable borough- or census-area-to-office mapping.
+
+## Repair decision
+
+- Alaska remains blocked and not index-safe.
+- The live DFCS Services page proves the successor host is real and exposes statewide APA/Medicaid phone routing, but it is still only a phone relay.
+- The DFCS host itself is now exhausted more tightly: no sitemap, no public search, no office aliases, and no local-routing contract on Publications or Department Contacts.
+- The office-routing lane still lives only on the challenge-blocked health host.

@@ -273,3 +273,6 @@
 
 ### A First-Party Storefront Root That Derives Its County UI From A Partial CSV Is Still A Partial County Contract
 *   **Lesson:** If a first-party locator page builds its county dropdown and map pins directly from a partial CSV, count the whole storefront as partial rather than treating the root as a stronger contract. Florida’s Family Resource Center root fetched `providers.csv`, rendered only 33 unique county pins in HTML, and still could not outrun the 34-county CSV ceiling.
+
+### A Live Successor Host With Public Robots But No Sitemap, Search, Or Office Aliases Can Be Source-Final
+*   **Lesson:** If a live successor host exposes `robots.txt` but no sitemap, no working public search, and no office/contact aliases beyond the already-reviewed phone-only service page, stop spending low-token retries there. Alaska DFCS had a real successor host, but once the obvious on-host office branches all 404ed and publications still materialized no office contract, the remaining lane was clearly the challenge-blocked health host.

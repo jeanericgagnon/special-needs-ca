@@ -1,0 +1,15 @@
+{
+  "batch": "batch276_alaska_dfcs_host_exhaustion_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dfcs_services_page_live": true,
+  "dfcs_robots_live": true,
+  "dfcs_sitemap_404": true,
+  "dfcs_search_404": true,
+  "dfcs_office_aliases_404": true,
+  "dfcs_publications_has_no_local_mapping_contract": true,
+  "health_host_still_challenged": true,
+  "lesson_added": false
+}
