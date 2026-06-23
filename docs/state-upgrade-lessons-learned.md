@@ -599,3 +599,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Live Section Landings Can Reveal The Real Index After Guessed Pages 404
 *   **Lesson:** If guessed `.../Pages/...` education URLs 404, inspect the live official section landing page before broadening discovery. Maryland’s MSDE About page linked a live `Local School Systems` index on `/about/Pages/School-Systems/index.aspx`, and that one first-party directory preserved all 24 county-equivalent school-system rows with names, superintendent, address, phone, and district website.
+
+### Official Search Bridges Need One Real POST Replay Before You Trust Their Semantics
+*   **Lesson:** If an official education directory uses an auto-submit bridge page, replay the hidden-field POST once and inspect the real result surface before changing the blocker. Massachusetts DESE Profiles only exposed useful district rows after the POST, but the result page still lacked any county column, county filter, or county-to-district export contract, so the family stayed blocked rather than inferring county mapping.
+
+### Public ArcGIS School Maps Still Need Routing Fields, Not Just Geometry
+*   **Lesson:** If an official school map app exposes public ArcGIS item data, inspect the referenced webmap fields before treating it as a routing contract. Michigan’s app proved district and ISD geometry through fields like `FIPSCODE`, `NAME`, `DCODE`, and `ISD`, but it still lacked local routing contacts, district websites, or special-education evidence, so the education family stayed blocked.

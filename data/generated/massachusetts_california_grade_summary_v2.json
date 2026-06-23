@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_dese_profiles_district_directory_exists_but_county_to_district_routing_is_unmapped_and_mass_gov_local_office_pages_return_403_to_low_token_fetches",
+  "primary_gap_reason": "official_dese_profiles_postback_results_preserve_district_rows_but_no_county_mapping_and_mass_gov_dds_lane_is_host_wide_403",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -42,15 +42,15 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Reviewed Massachusetts packet evidence still routes district or county education through generic statewide Massachusetts special-education pages rather than county- or district-owned leaves.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "official_dese_profiles_postback_results_lack_county_to_district_contract",
+      "evidence": "Replaying the official DESE Profiles district-directory bridge now returns a real results surface with district names, superintendent contacts, addresses, phones, and grades, but the reviewed result page still preserves no county column, county filter, or county-to-district export contract. The packet therefore still cannot truthfully map Massachusetts counties to district routing from official reviewed evidence.",
+      "next_action": "hold_blocked_until_official_county_to_district_contract_exists"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "mass_gov_area_office_pages_return_403_and_no_alternate_county_grade_local_contract_is_on_disk",
-      "evidence": "The likely official Massachusetts local-office lane now narrows to Mass.gov DDS area-office pages, but bounded low-token fetches to the public org and area-office pages returned HTTP 403 and no alternate county-grade local office contract is preserved on disk.",
+      "failure_code": "mass_gov_dds_org_area_office_and_sitemap_return_403",
+      "evidence": "The likely official Massachusetts DDS county-local lane stays blocked because bounded low-token fetches to the public org page, the DDS area-offices page, and the Mass.gov sitemap all returned HTTP 403, and no alternate county-grade local office contract is preserved on disk.",
       "next_action": "browser_assisted_or_cached_mass_gov_area_office_capture"
     }
   ]
