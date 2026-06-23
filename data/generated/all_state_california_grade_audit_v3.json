@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T08:20:02.016Z",
+  "generatedAt": "2026-06-23T08:36:47.269Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 20,
@@ -840,18 +840,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_district_root_packet_without_county_or_special_education_fields",
+        "district_or_county_education_routing": "blocked_live_official_district_directory_without_county_grade_contract",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_exact_office_leafs_exist_but_nampa_is_treatment_center_and_county_mapping_partial"
+        "county_local_disability_resources": "blocked_live_office_directory_without_public_county_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "district_owned_roots_now_show_live_special_services_leaf_signals_but_county_mapping_and_office_contracts_still_incomplete",
+      "packetPrimaryGapReason": "live_official_idaho_directory_pages_exist_but_still_do_not_expose_county_grade_contracts_for_education_or_dhw_office_routing",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -1087,11 +1087,11 @@
       "legacyManualReviewRate": 59.21,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 105,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 92,
       "dbMetrics": {
         "state_id": "kansas",
         "state_code": "KS",
@@ -1127,7 +1127,7 @@
       "familyStatuses": {
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "blocked_uniform_http_403_dd_stack",
+        "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_live_ksde_directory_roots_without_local_contract",
@@ -1141,7 +1141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "kansas_dd_stack_is_uniformly_transport_blocked_and_public_directory_inventory_is_now_clear_but_local_leaves_are_still_missing",
+      "packetPrimaryGapReason": "kansas_now_has_reviewed_first_party_dd_authority_but_public_district_inventory_is_still_not_converted_into_local_special_education_leaves",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -1340,18 +1340,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_live_public_org_selector_with_session_post_500",
+        "district_or_county_education_routing": "blocked_live_public_org_selector_with_hidden_form_error_shell",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_district_office_locations_without_county_mapping"
+        "county_local_disability_resources": "blocked_district_office_locations_without_county_town_or_service_area_fields"
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "public_maine_orgid_inventory_and_municipality_workbook_are_live_but_contact_result_step_still_500_and_dhhs_office_mapping_is_absent",
+      "packetPrimaryGapReason": "public_maine_selectors_and_workbook_are_live_but_full_hidden_form_post_still_errors_and_dhhs_office_html_has_no_county_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

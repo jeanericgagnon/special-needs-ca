@@ -1,0 +1,15 @@
+{
+  "batch": "batch_188_idaho_county_contract_finalization_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "official_district_links_reviewed": 116,
+  "county_bearing_district_names_visible": 12,
+  "district_directory_has_explicit_county_field": false,
+  "district_directory_has_special_education_field": false,
+  "clean_county_office_leaf_matches": 17,
+  "unresolved_legacy_counties": 27,
+  "office_directory_has_county_field": false,
+  "lessons_updated": false
+}

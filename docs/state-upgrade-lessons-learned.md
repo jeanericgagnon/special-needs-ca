@@ -20,3 +20,9 @@
 
 ### Role Audits Must Reject Address-Substring False Positives
 *   **Lesson:** When scanning public contact inventories for service-role labels, require field-aware or phrase-aware matches instead of bare substrings. Florida's only `ESS` hits in `contacts.csv` came from `Arlington Expressway`, not from Economic Self Sufficiency routing, so substring counts alone would have overstated county-local progress.
+
+### Zero County Tokens In A Live Official Locator Means The County Contract Is Still Missing
+*   **Lesson:** If a live official office or district directory preserves exact leaves but its public HTML exposes zero county terms, zero county-served fields, and no county filter, do not treat the locator as county-grade proof. Idaho DHW `/offices` and the Idaho SDE district directory were both live and useful for authoring, but still failed the county contract until reviewed local leaves could be attached.
+
+### Retry ASP.NET Search Forms Once With Their Hidden Collections Before Calling The Workflow Broken
+*   **Lesson:** If a public ASP.NET selector page exposes a live dropdown plus a token and hundreds of hidden collection inputs, replay one bounded submit with the page-owned hidden fields before locking a transport blocker. Maine DOE Contact Search looked like a raw POST-500 failure until the hidden `SAUs[*]` fields were included; after that, the official app still failed, but in a more precise generic `Error.` shell that proved the blocker was app-side, not selector-hydration drift.

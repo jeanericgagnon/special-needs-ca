@@ -1,0 +1,12 @@
+{
+  "batch": "batch_190_maine_hidden_form_error_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "hidden_form_replay_changes_500_to_error_shell": true,
+  "dhhs_office_page_has_county_fields": false,
+  "dhhs_office_page_has_town_fields": false,
+  "dhhs_office_page_has_service_area_fields": false,
+  "lessons_updated": false
+}

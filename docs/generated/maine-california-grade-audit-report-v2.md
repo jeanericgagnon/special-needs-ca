@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 16
-- primary_gap_reason: public_maine_orgid_inventory_and_municipality_workbook_are_live_but_contact_result_step_still_500_and_dhhs_office_mapping_is_absent
+- primary_gap_reason: public_maine_selectors_and_workbook_are_live_but_full_hidden_form_post_still_errors_and_dhhs_office_html_has_no_county_contract
 
 ## Family status
 
@@ -13,19 +13,19 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_live_public_org_selector_with_session_post_500 (Maine now has a narrower official education blocker than a generic selector problem. The public Primary Contacts By Organization selector already exposes real OrgIds and names directly in the HTML, including Acadia Academy (1761), Acton Public Schools (2), Auburn Public Schools (14), Augusta Public Schools (28), and Bangor Public Schools (42). The public Town selector remains live, and the official SAU-by-municipality workbook remains downloadable. So Maine no longer needs more selector or inventory discovery. The blocker is now concentrated entirely in the result/export step: once a real OrgId is submitted, the official workflow still returns HTTP 500 before any verified local contact rows or export file appear. All 16 county education rows still depend on statewide DOE fallbacks, so the next honest lane is reviewed browser/manual capture or export recovery from these already-live OrgIds and workbook mappings.)
+- district_or_county_education_routing: blocked_live_public_org_selector_with_hidden_form_error_shell (Maine now has a tighter official education blocker than a generic POST-500 claim. The public Primary Contacts By Organization selector is live, the Town selector is live, and the official SAU-by-municipality workbook is still downloadable. A bounded replay that includes the page token plus the full hidden `SAUs[*]` inputs no longer throws raw HTTP 500, but both the Search and Export submits still return the same generic official `Error.` shell before any contact rows or export file appear. Maine therefore remains blocked on reviewed browser/manual capture or another official export path, not on selector discovery or missing form hydration.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (reviewed first-party PTI designation evidence is present at the required authority level)
 - legal_aid: verified_state_grade (Reviewed Pine Tree Legal Assistance now provides direct statewide Maine legal-aid evidence.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_district_office_locations_without_county_mapping (Maine now has sharper county-office blocker evidence: the live DHHS district office page is a real office-grade directory with addresses, phones, emails, and cross-office program notes, but it still does not publish county labels, town lookup, or service-area boundaries that would let a county row be mapped truthfully. DOI mirror rows and dead locator fallbacks therefore still need a reviewed mapping contract before any county can upgrade.)
+- county_local_disability_resources: blocked_district_office_locations_without_county_town_or_service_area_fields (Maine now has a tighter county-local blocker than a generic office-grade warning. The live DHHS District Office Locations page is public and role-bearing, but a bounded 2026-06-23 HTML inspection still exposes zero county terms, zero town terms, and zero service-area fields in the public page itself. Program cross-office notes such as Machias and Lewiston remain real office-routing hints, but they still cannot be promoted into county coverage proof. Maine county-local therefore remains blocked until an official county or town mapping contract appears.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: public_orgid_inventory_and_workbook_are_live_but_contact_result_step_still_500 :: Reviewed 2026-06-23 bounded live official Maine education checks on https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town, https://neo.maine.gov/doe/neo/SuperSearch/Home/Index, and the official workbook https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx. The public Primary Contacts By Organization selector itself now proves a concrete official OrgId inventory on simple GET, with live option values such as 1761 Acadia Academy, 2 Acton Public Schools, 14 Auburn Public Schools, 28 Augusta Public Schools, and 42 Bangor Public Schools rendered directly in the HTML. The public Town selector is still live and reviewable, and the SAU-by-municipality workbook is still downloadable on the official DOE host. So Maine no longer has a selector-discovery problem or an unknown organization-id problem. The blocker is narrower: a bounded cookie-backed submit using a real OrgId still returns HTTP 500 and the NEO Contact Search shell before any verified local contact rows or export file appear. Fourteen county rows still point at https://www.maine.gov/doe/learning/specialed and two still point at https://www.maine.gov/doe, so Maine remains blocked on reviewed browser/manual capture or alternate export recovery from the already-live OrgId inventory and workbook rather than speculative POST or discovery retries.
-- county_local_disability_resources: official_district_office_pages_lack_county_coverage_contract :: Reviewed 2026-06-23 current Maine county-office blocker artifacts plus the live DHHS District Office Locations page. The official page preserves real office-grade evidence such as addresses, phones, emails, and program-routing notes like For Long Term Care questions: see Machias Office and For Child Support services: see Lewiston Office. But the page still does not expose county labels, town lists, or service-area boundaries for those offices, so those cross-office notes cannot be promoted into county coverage proof. Sixteen current county-office rows still depend on the DOI mirror source https://doi.org/10.7910/DVN/AVRHMI and four still use the dead https://dhhs.maine.gov/locations fallback, with Aroostook, Washington, and York remaining multi-office counties.
+- district_or_county_education_routing: live_orgid_inventory_and_workbook_exist_but_full_hidden_form_post_returns_generic_error_shell :: Reviewed 2026-06-23 official Maine education sources at https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town, and the official workbook https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx. The public selector and workbook still prove a live OrgId and municipality inventory. A bounded replay that included the page token, OrgId, and the full hidden SAU fields changed the old transport behavior: Search and Export no longer returned raw HTTP 500, but both official submits still returned the same generic `Error.` shell with no contact rows, no export file, and no recoverable local result payload.
+- county_local_disability_resources: official_dhhs_office_page_has_zero_county_town_or_service_area_fields :: Reviewed 2026-06-23 live official Maine DHHS District Office Locations page at https://www.maine.gov/dhhs/about/contact/offices. The page still preserves district office names, addresses, phones, emails, and cross-office program notes, but a bounded HTML inspection exposed zero county terms, zero town terms, zero service-area fields, and no county names such as Aroostook, Washington, or York in the public page itself. DOI mirror rows and dead locator fallbacks therefore still lack a truthful official mapping contract.
 
 ## Verified source samples
 
@@ -34,23 +34,23 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.maine.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.maine.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.maine.gov/doe/learning/specialed
-- district_or_county_education_routing: blocked_live_public_org_selector_with_session_post_500; samples=4; first=https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU
+- district_or_county_education_routing: blocked_live_public_org_selector_with_hidden_form_error_shell; samples=4; first=https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.maine.gov/dhhs/oads
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://drme.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.mpf.org/
 - legal_aid: verified_state_grade; samples=1; first=https://www.ptla.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_district_office_locations_without_county_mapping; samples=1; first=https://www.maine.gov/dhhs/about/contact/offices
+- county_local_disability_resources: blocked_district_office_locations_without_county_town_or_service_area_fields; samples=1; first=https://www.maine.gov/dhhs/about/contact/offices
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: use_live_orgids_and_municipality_workbook_for_reviewed_browser_capture_or_export_recovery
-- [critical] county_local_disability_resources: find_reviewed_county_or_town_to_district_office_contract_or_keep_mapped_counties_blocked
+- [critical] district_or_county_education_routing: use_live_orgids_and_workbook_for_reviewed_browser_capture_now_that_hidden_form_replay_is_understood
+- [critical] county_local_disability_resources: find_official_county_or_town_mapping_contract_or_keep_maine_counties_blocked
 
 ## Completion decision
 
 - Maine remains BLOCKED and not index-safe.
-- Education is still blocked, but the public OrgId and municipality inventory is now clearly solved on official first-party surfaces.
-- County-local is still blocked because the DHHS office page remains office-grade only and still lacks county or town coverage boundaries.
-- Future Maine education repair should start from the live OrgIds plus workbook mappings, not from more selector discovery.
+- Education is still blocked, but the blocker is now more precise: the fully hydrated official form still collapses to a generic error shell before any local contact rows or export file appear.
+- County-local is still blocked because the official DHHS office page remains office-grade only and still publishes zero county/town/service-area fields in the public HTML.
+- Future Maine repair should start from reviewed browser/manual capture on the already-live DOE selectors and workbook, not from more selector discovery or partial POST guesses.
