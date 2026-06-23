@@ -656,3 +656,15 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### When A Stateful Directory POST Is Real But Not County-Keyed, Packetize It As Evidence-Only
 *   **Lesson:** If an official directory POSTback returns real local rows but still lacks the county field you need, keep that lane as evidence-only instead of treating it like partial county coverage. Massachusetts DESE Profiles returned real district contacts, but without a county column or export contract it still could not clear county-grade routing.
+
+### Footer-Heavy Official Region Pages Can Still Complete County-Leaf Coverage
+*   **Lesson:** If an official county-office region page looks empty above the fold, inspect the footer-adjacent list before treating counties as missing. Michigan MDHHS kept county leaf links like `Alger County MDHHS`, `Ingham MDHHS`, and `St. Joseph County` near the bottom of the region pages, and those exact official leaves were enough to close the county-local blocker without reopening broad discovery.
+
+### Dedicated Disability Law Center Pages Can Carry The P&A Proof That Homepages Omit
+*   **Lesson:** If a legal-aid homepage only shows disability intake branding, click into the dedicated disability law center page before leaving protection-and-advocacy blocked. Minnesota only cleared P&A once the first-party MDLC page explicitly said it is the federally designated Protection and Advocacy agency for people with disabilities in the state.
+
+### If HTTPS Fails On A First-Party Rights Site, Try The Same Host Over Plain HTTP Before Giving Up
+*   **Lesson:** If a likely first-party disability-rights domain dies at TLS handshake, probe the same host over plain `http://` before treating the organization as unavailable. Mississippi’s DRMS site failed HTTPS in bounded fetches but the first-party HTTP about page preserved the explicit Protection & Advocacy designation text we needed.
+
+### Contact Pages Can Hide Full County-Office Tables In Plain HTML
+*   **Lesson:** If guessed `/locations/` or county-office subpaths 404, inspect the official contact page itself before assuming the county contract is missing. Mississippi MDHS published all 82 county offices directly in the contact-page HTML table with address, email, and phone fields, which was enough for county-grade routing without any deeper directory path.

@@ -1,0 +1,16 @@
+{
+  "state": "mississippi",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 92,
+  "repaired_families": [
+    "protection_and_advocacy",
+    "county_local_disability_resources"
+  ],
+  "removed_summary_only_blocker": "legal_aid",
+  "remaining_final_blockers": [
+    "district_or_county_education_routing"
+  ],
+  "lesson_added_http": false,
+  "lesson_added_contact": false
+}

@@ -1,0 +1,18 @@
+{
+  "state": "michigan",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 92,
+  "repaired_family": "county_local_disability_resources",
+  "remaining_final_blockers": [
+    "district_or_county_education_routing"
+  ],
+  "newly_verified_counties": [
+    "alger",
+    "alpena",
+    "ingham",
+    "lenawee",
+    "st-joseph"
+  ],
+  "lesson_added": false
+}
