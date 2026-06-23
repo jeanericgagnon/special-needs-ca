@@ -6,6 +6,12 @@
 ### Browser-Readable First-Party Pages Override Raw Challenge Assumptions
 *   **Lesson:** If bounded raw fetch marks a first-party statewide-support domain as challenged but one exact browser-readable review of the same root preserves explicit designation text and live support content, repair the packet from the reviewed first-party page and retire the stale challenge blocker. New Jersey DRNJ only cleared once the live homepage itself proved the statewide Protection and Advocacy designation.
 
+### Authoritative PTI Directories Can Clear Statewide Scope When The First-Party Host Is TLS-Broken
+*   **Lesson:** If the state parent-center site itself is unreadable in the low-token shell because of TLS negotiation or transport issues, use the reviewed Parent Center Hub state leaf when it explicitly names the state PTI and preserves the center’s direct contact information. Rhode Island cleared PTI from Parent Center Hub’s `Rhode Island PTI` / `RIPIN` entry even though `ripin.org` itself failed TLS in the current lane.
+
+### County-Named DSS Leaf Pages Can Replace DOI Office Mirrors
+*   **Lesson:** If a live official social-services contact hub links county-named leaf pages and those leaves preserve county-specific office addresses or county-specific DSS email routing, use that first-party county-leaf stack instead of keeping a DOI mirror blocker. South Carolina cleared county-local routing once `contact-dss` exposed all 46 county leaves plus county office details on the official DSS host.
+
 ### When The Same Official Host Challenge-Blocks The Page, Sitemap, And Search, Stop Low-Token County Retries
 *   **Lesson:** If a browser-reviewed official directory still lacks county-equivalent mapping and the same host returns the identical challenge shell on the page itself, sitemap, and official search URLs, treat that family as source-final for low-token work. Alaska health.alaska.gov exposed a real DPA offices page in reviewed rendering, but the raw page, sitemap, and borough-targeted search probes all returned the same Cloudflare shell, so more bounded scraper retries would not produce borough coverage proof.
 

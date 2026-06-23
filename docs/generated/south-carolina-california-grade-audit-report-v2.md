@@ -2,9 +2,9 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 75
+- completeness_pct: 92
 - county_count: 46
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves
 
 ## Family status
 
@@ -16,17 +16,15 @@
 - district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party Disability Rights South Carolina evidence preserves statewide protection-and-advocacy identity on the live first-party domain)
-- parent_training_information_center: inventory_only (only legacy inventory hints or weak role matches exist)
+- parent_training_information_center: verified_state_grade (authoritative Parent Center Hub South Carolina leaf explicitly labels Family Connection of SC as the South Carolina PTI serving the entire state)
 - legal_aid: verified_state_grade (reviewed first-party South Carolina Legal Services evidence preserves statewide low-income civil legal-aid identity plus direct intake routing on the live first-party domain)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: verified_state_grade (reviewed live official SCDSS contact hub now links 46 county-named DSS office leaves with county-specific office addresses and county-specific DSS email routing)
 
 ## Failure ledger
 
 - district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 10 generic roots need leaf verification
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 10 generic roots need leaf verification
-- parent_training_information_center: legacy_or_inventory_only_evidence :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 10 generic roots need leaf verification
 
 ## Verified source samples
 
@@ -38,22 +36,22 @@
 - district_or_county_education_routing: legacy_state_grade; samples=3; first=https://ed.sc.gov/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://ddsn.sc.gov
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.disabilityrightssc.org/
-- parent_training_information_center: inventory_only; samples=0
+- parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/south-carolina/
 - legal_aid: verified_state_grade; samples=1; first=https://sclegal.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- county_local_disability_resources: verified_state_grade; samples=46; first=https://dss.sc.gov/contact-dss/
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] parent_training_information_center: author_verified_state_manifest
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
 
 ## Completion decision
 
-- South Carolina no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide protection-and-advocacy and legal-aid evidence on disk instead of only legacy nonprofit or legal inventory rows.
+- South Carolina no longer belongs in UNSTARTED because the packet now preserves reviewed or authoritative statewide P&A, PTI, legal-aid, and county-local DSS routing evidence on disk instead of only legacy inventory rows.
 - Disability Rights South Carolina is preserved as statewide protection-and-advocacy support from the reviewed first-party domain.
+- Parent Center Hub now clears PTI because its South Carolina leaf explicitly labels Family Connection of SC as the South Carolina PTI serving the entire state.
 - South Carolina Legal Services is preserved as statewide legal aid because the reviewed first-party page explicitly describes a statewide civil legal-services role for low-income South Carolinians and preserves direct intake routes.
-- South Carolina still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, county/local disability resources still depend on DOI mirror-backed office evidence instead of reviewed county-grade official local-office proof, and the Family Connection artifact still does not explicitly preserve PTI-grade designation text in the reviewed chain.
+- The official SCDSS contact stack now clears county-local routing because the first-party hub links 46 county-named DSS office leaves with county-specific office addresses and county-specific DSS email routing.
+- South Carolina still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves.
 - South Carolina is therefore terminal BLOCKED, not COMPLETE.

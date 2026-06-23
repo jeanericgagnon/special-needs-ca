@@ -7,10 +7,10 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 5,
-  "completeness_pct": 67,
-  "strong_critical_families": 8,
-  "weak_critical_families": 3,
-  "missing_critical_families": 1,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
   "recommended_batch": "batch_3_procedure_hardening",
@@ -18,10 +18,7 @@
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "parent_training_information_center",
-    "legal_aid"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -31,6 +28,8 @@
     "district_or_county_education_routing",
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid",
     "able_program",
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
@@ -55,20 +54,6 @@
       "failure_code": "generic_or_statewide_evidence_used_where_local_required",
       "evidence": "Rhode Island county/local disability resources still depend on generic locator-derived or DOI mirror-backed evidence instead of reviewed county-grade official local-office proof.",
       "next_action": "author_county_or_district_exact_targets"
-    },
-    {
-      "family": "parent_training_information_center",
-      "severity": "major",
-      "failure_code": "legacy_or_inventory_only_evidence",
-      "evidence": "RIPIN preserves special-education and health-support language, but the reviewed first-party artifact on disk does not explicitly preserve statewide PTI designation text.",
-      "next_action": "author_verified_state_manifest"
-    },
-    {
-      "family": "legal_aid",
-      "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Rhode Island still lacks any reviewed first-party or authoritative statewide legal-aid artifact on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
     }
   ]
 }

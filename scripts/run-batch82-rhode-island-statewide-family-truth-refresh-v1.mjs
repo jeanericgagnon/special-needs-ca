@@ -81,6 +81,52 @@ function updatedVerifiedRow(row) {
       ],
     };
   }
+  if (row.family === 'parent_training_information_center') {
+    return {
+      ...row,
+      family_status: 'verified_state_grade',
+      evidence_strength: 'strong',
+      sample_count: 1,
+      query_basis: 'Reviewed authoritative Parent Center Hub Rhode Island leaf explicitly preserves Rhode Island PTI designation plus RIPIN statewide contact routing even though ripin.org itself does not negotiate cleanly in the current low-token TLS lane.',
+      blocker_code: null,
+      blocker_evidence: null,
+      samples: [
+        {
+          sample_name: 'Rhode Island PTI via Parent Center Hub',
+          source_url: 'https://www.parentcenterhub.org/findurcenter/rhode-island/',
+          final_url: 'https://www.parentcenterhub.org/findurcenter/rhode-island/',
+          verification_status: 'official_verified',
+          source_type: 'authoritative_parent_center_directory',
+          source_table: 'batch82_rhode_island_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-23T00:00:00.000Z',
+          evidence_snippet: 'Rhode Island PTI Rhode Island Parent Info Network (RIPIN) 1210 Pontiac Avenue Cranston, RI 02920 (800) 464-3399 (in RI) | (401) 270-0101 info@ripin.org http://www.ripin.org',
+        },
+      ],
+    };
+  }
+  if (row.family === 'legal_aid') {
+    return {
+      ...row,
+      family_status: 'verified_state_grade',
+      evidence_strength: 'strong',
+      sample_count: 1,
+      query_basis: 'Reviewed first-party Rhode Island legal-aid pages now preserve explicit statewide low-income legal-help routing on the live Rhode Island Legal Services / Help RI Law stack.',
+      blocker_code: null,
+      blocker_evidence: null,
+      samples: [
+        {
+          sample_name: 'Help RI Law',
+          source_url: 'https://www.helprilaw.org/',
+          final_url: 'https://www.helprilaw.org/',
+          verification_status: 'official_verified',
+          source_type: 'first_party_legal_aid',
+          source_table: 'batch82_rhode_island_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-23T00:00:00.000Z',
+          evidence_snippet: 'Help RI Law: Rhode Island Legal Services. Legal help and representation for low-income individuals in Rhode Island.',
+        },
+      ],
+    };
+  }
   return row;
 }
 
@@ -114,7 +160,7 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '- Rhode Island no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide protection-and-advocacy evidence on disk instead of only legacy nonprofit inventory rows.',
     '- Disability Rights Rhode Island is preserved as strong statewide protection-and-advocacy support because the reviewed first-party page explicitly says it is the independent federally mandated Protection and Advocacy (P&A) System for the state of Rhode Island.',
-    '- Rhode Island still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, county/local disability resources still depend on generic locator-derived or mirror-backed evidence instead of reviewed county-grade local proof, RIPIN still lacks explicit PTI-grade designation in the reviewed artifact chain, and statewide legal aid is still missing on disk.',
+    '- Rhode Island still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, and county/local disability resources still depend on generic locator-derived or mirror-backed evidence instead of reviewed county-grade local proof.',
     '- Rhode Island is therefore terminal BLOCKED, not COMPLETE.',
   ].join('\n') + '\n';
 }
@@ -142,13 +188,27 @@ export function generateBatch82RhodeIslandStatewideFamilyTruthRefreshV1() {
         status_reason: 'reviewed first-party Disability Rights Rhode Island evidence preserves explicit federally mandated statewide P&A designation on the live first-party domain',
       };
     }
+    if (row.family === 'parent_training_information_center') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        status_reason: 'authoritative Parent Center Hub Rhode Island leaf explicitly labels RIPIN as the Rhode Island PTI and preserves statewide Rhode Island contact routing',
+      };
+    }
+    if (row.family === 'legal_aid') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        status_reason: 'reviewed first-party Help RI Law / Rhode Island Legal Services pages preserve explicit statewide low-income legal-help routing',
+      };
+    }
     return row;
   });
 
-  const updatedFailureRows = failureRows.filter((row) => row.family !== 'protection_and_advocacy');
+  const updatedFailureRows = failureRows.filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'].includes(row.family));
   const updatedVerifiedRows = verifiedRows.map(updatedVerifiedRow);
   const updatedNextRows = nextRows
-    .filter((row) => row.family !== 'protection_and_advocacy')
+    .filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'].includes(row.family))
     .sort((a, b) => a.priority_rank - b.priority_rank)
     .map((row, index) => ({ ...row, priority_rank: index + 1 }));
 
@@ -156,14 +216,11 @@ export function generateBatch82RhodeIslandStatewideFamilyTruthRefreshV1() {
     ...summary,
     classification: 'BLOCKED',
     index_safe: false,
-    completeness_pct: 67,
-    strong_critical_families: 8,
-    weak_critical_families: 3,
-    missing_critical_families: 1,
-    major_gap_families: [
-      'parent_training_information_center',
-      'legal_aid',
-    ],
+    completeness_pct: 83,
+    strong_critical_families: 10,
+    weak_critical_families: 2,
+    missing_critical_families: 0,
+    major_gap_families: [],
     complete_ready: false,
     final_blockers: [
       {
@@ -180,20 +237,21 @@ export function generateBatch82RhodeIslandStatewideFamilyTruthRefreshV1() {
         evidence: 'Rhode Island county/local disability resources still depend on generic locator-derived or DOI mirror-backed evidence instead of reviewed county-grade official local-office proof.',
         next_action: 'author_county_or_district_exact_targets',
       },
-      {
-        family: 'parent_training_information_center',
-        severity: 'major',
-        failure_code: 'legacy_or_inventory_only_evidence',
-        evidence: 'RIPIN preserves special-education and health-support language, but the reviewed first-party artifact on disk does not explicitly preserve statewide PTI designation text.',
-        next_action: 'author_verified_state_manifest',
-      },
-      {
-        family: 'legal_aid',
-        severity: 'major',
-        failure_code: 'missing_required_source_family',
-        evidence: 'Rhode Island still lacks any reviewed first-party or authoritative statewide legal-aid artifact on disk.',
-        next_action: 'author_or_verify_statewide_source_family',
-      },
+    ],
+    verified_source_families_with_samples: [
+      'medicaid_state_health_coverage',
+      'medicaid_waiver_hcbs_disability_services',
+      'developmental_disability_idd_authority',
+      'early_intervention_part_c',
+      'special_education_idea_part_b',
+      'district_or_county_education_routing',
+      'vocational_rehabilitation_pre_ets',
+      'protection_and_advocacy',
+      'parent_training_information_center',
+      'legal_aid',
+      'able_program',
+      'ssi_ssa_federal_reference',
+      'county_local_disability_resources',
     ],
   };
 
@@ -202,7 +260,7 @@ export function generateBatch82RhodeIslandStatewideFamilyTruthRefreshV1() {
     state: 'rhode-island',
     classification_before: summary.classification,
     classification_after: updatedSummary.classification,
-    resolved_families: ['protection_and_advocacy'],
+    resolved_families: ['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'],
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
   };
 

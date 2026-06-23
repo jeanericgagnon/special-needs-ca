@@ -4,12 +4,12 @@
   "classification_before": "BLOCKED",
   "classification_after": "BLOCKED",
   "resolved_families": [
-    "protection_and_advocacy"
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid"
   ],
   "remaining_blockers": [
     "district_or_county_education_routing",
-    "county_local_disability_resources",
-    "parent_training_information_center",
-    "legal_aid"
+    "county_local_disability_resources"
   ]
 }

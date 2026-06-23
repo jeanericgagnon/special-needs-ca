@@ -9,10 +9,11 @@ const { summary, batchSummary } = generateBatch84SouthDakotaStatewideFamilyTruth
 
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
-assert.equal(summary.strong_critical_families, 8);
-assert.equal(summary.weak_critical_families, 3);
+assert.equal(summary.completeness_pct, 75);
+assert.equal(summary.strong_critical_families, 9);
+assert.equal(summary.weak_critical_families, 2);
 assert.equal(summary.missing_critical_families, 1);
-assert.deepEqual(batchSummary.resolved_families, ['protection_and_advocacy']);
+assert.deepEqual(batchSummary.resolved_families, ['protection_and_advocacy', 'parent_training_information_center']);
 
 const verifiedRows = fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'south-dakota_verified_sources_v1.jsonl'), 'utf8')
   .trim()
@@ -24,12 +25,15 @@ const panda = verifiedRows.find((row) => row.family === 'protection_and_advocacy
 assert.equal(panda.family_status, 'verified_state_grade');
 
 const pti = verifiedRows.find((row) => row.family === 'parent_training_information_center');
-assert.equal(pti.family_status, 'inventory_only');
+assert.equal(pti.family_status, 'verified_state_grade');
+assert.match(pti.samples[0].evidence_snippet, /South Dakota PTI South Dakota Parent Connection/i);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'south-dakota-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /classification: BLOCKED/);
 assert.match(report, /terminal BLOCKED, not COMPLETE/);
 assert.match(report, /Disability Rights South Dakota is preserved as statewide protection-and-advocacy support/i);
+assert.ok(!report.includes('still lacks explicit PTI-grade designation text'));
+assert.match(report, /statewide legal aid is still missing on disk/i);
 
 console.log(JSON.stringify({
   ok: true,

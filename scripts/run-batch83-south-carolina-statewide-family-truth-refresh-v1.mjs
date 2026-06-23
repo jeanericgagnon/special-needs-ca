@@ -83,6 +83,30 @@ function updatedVerifiedRow(row) {
     };
   }
 
+  if (row.family === 'parent_training_information_center') {
+    return {
+      ...row,
+      family_status: 'verified_state_grade',
+      evidence_strength: 'strong',
+      sample_count: 1,
+      query_basis: 'Reviewed authoritative Parent Center Hub South Carolina leaf explicitly preserves statewide PTI designation and Family Connection of South Carolina contact routing.',
+      blocker_code: null,
+      blocker_evidence: null,
+      samples: [
+        {
+          sample_name: 'South Carolina PTI via Parent Center Hub',
+          source_url: 'https://www.parentcenterhub.org/findurcenter/south-carolina/',
+          final_url: 'https://www.parentcenterhub.org/findurcenter/south-carolina/',
+          verification_status: 'official_verified',
+          source_type: 'authoritative_parent_center_directory',
+          source_table: 'batch83_south_carolina_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-23T00:00:00.000Z',
+          evidence_snippet: 'South Carolina PTI (Serving the entire state) Family Connection of SC 1800 St. Julian Place, Suite 104 Columbia, SC 29204.',
+        },
+      ],
+    };
+  }
+
   if (row.family === 'legal_aid') {
     return {
       ...row,
@@ -102,6 +126,50 @@ function updatedVerifiedRow(row) {
           source_table: 'batch83_south_carolina_statewide_family_truth_refresh_v1',
           fetched_at: '2026-06-17T16:58:43.900Z',
           evidence_snippet: 'South Carolina Legal Services is a statewide law firm that provides civil legal services to protect the rights and represent the interests of low income South Carolinians, with apply online and legal-help routing preserved on the first-party page.',
+        },
+      ],
+    };
+  }
+
+  if (row.family === 'county_local_disability_resources') {
+    return {
+      ...row,
+      family_status: 'verified_state_grade',
+      evidence_strength: 'strong',
+      sample_count: 46,
+      query_basis: 'Reviewed live official South Carolina DSS contact hub now preserves a county-complete routing contract with 46 named county leaf pages linked from the first-party regional directory.',
+      blocker_code: null,
+      blocker_evidence: null,
+      samples: [
+        {
+          sample_name: 'SCDSS county contact hub',
+          source_url: 'https://dss.sc.gov/contact-dss/',
+          final_url: 'https://dss.sc.gov/contact-dss/',
+          verification_status: 'official_verified',
+          source_type: 'official_county_directory',
+          source_table: 'batch83_south_carolina_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-23T00:00:00.000Z',
+          evidence_snippet: 'County Office Locations Upstate Region Abbeville Anderson Cherokee Greenville Greenwood Laurens Newberry Oconee Pickens Spartanburg Union Midlands Region Aiken ... Lowcountry Region ... Pee Dee Region ...',
+        },
+        {
+          sample_name: 'Abbeville County DSS',
+          source_url: 'https://dss.sc.gov/contact-dss/upstate-region/abbeville/',
+          final_url: 'https://dss.sc.gov/contact-dss/upstate-region/abbeville/',
+          verification_status: 'official_verified',
+          source_type: 'official_county_office_leaf',
+          source_table: 'batch83_south_carolina_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-23T00:00:00.000Z',
+          evidence_snippet: 'Abbeville County DSS 909 West Greenwood Street Suite 1 Abbeville, South Carolina 29620 ... Abbeville.FA@dss.sc.gov',
+        },
+        {
+          sample_name: 'Dorchester County DSS',
+          source_url: 'https://dss.sc.gov/contact-dss/lowcountry-region/dorchester/',
+          final_url: 'https://dss.sc.gov/contact-dss/lowcountry-region/dorchester/',
+          verification_status: 'official_verified',
+          source_type: 'official_county_office_leaf',
+          source_table: 'batch83_south_carolina_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-23T00:00:00.000Z',
+          evidence_snippet: 'Main Office Address: Dorchester County DSS ... 1452 Boone Hill Rd Suite C, Summerville, SC 29483 ... Dorchester.FA@dss.sc.gov',
         },
       ],
     };
@@ -138,10 +206,12 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## Completion decision',
     '',
-    '- South Carolina no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide protection-and-advocacy and legal-aid evidence on disk instead of only legacy nonprofit or legal inventory rows.',
+    '- South Carolina no longer belongs in UNSTARTED because the packet now preserves reviewed or authoritative statewide P&A, PTI, legal-aid, and county-local DSS routing evidence on disk instead of only legacy inventory rows.',
     '- Disability Rights South Carolina is preserved as statewide protection-and-advocacy support from the reviewed first-party domain.',
+    '- Parent Center Hub now clears PTI because its South Carolina leaf explicitly labels Family Connection of SC as the South Carolina PTI serving the entire state.',
     '- South Carolina Legal Services is preserved as statewide legal aid because the reviewed first-party page explicitly describes a statewide civil legal-services role for low-income South Carolinians and preserves direct intake routes.',
-    '- South Carolina still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, county/local disability resources still depend on DOI mirror-backed office evidence instead of reviewed county-grade official local-office proof, and the Family Connection artifact still does not explicitly preserve PTI-grade designation text in the reviewed chain.',
+    '- The official SCDSS contact stack now clears county-local routing because the first-party hub links 46 county-named DSS office leaves with county-specific office addresses and county-specific DSS email routing.',
+    '- South Carolina still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves.',
     '- South Carolina is therefore terminal BLOCKED, not COMPLETE.',
   ].join('\n') + '\n';
 }
@@ -171,6 +241,13 @@ export function generateBatch83SouthCarolinaStatewideFamilyTruthRefreshV1() {
         status_reason: 'reviewed first-party Disability Rights South Carolina evidence preserves statewide protection-and-advocacy identity on the live first-party domain',
       };
     }
+    if (row.family === 'parent_training_information_center') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        status_reason: 'authoritative Parent Center Hub South Carolina leaf explicitly labels Family Connection of SC as the South Carolina PTI serving the entire state',
+      };
+    }
     if (row.family === 'legal_aid') {
       return {
         ...row,
@@ -178,13 +255,20 @@ export function generateBatch83SouthCarolinaStatewideFamilyTruthRefreshV1() {
         status_reason: 'reviewed first-party South Carolina Legal Services evidence preserves statewide low-income civil legal-aid identity plus direct intake routing on the live first-party domain',
       };
     }
+    if (row.family === 'county_local_disability_resources') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        status_reason: 'reviewed live official SCDSS contact hub now links 46 county-named DSS office leaves with county-specific office addresses and county-specific DSS email routing',
+      };
+    }
     return row;
   });
 
-  const updatedFailureRows = failureRows.filter((row) => !['protection_and_advocacy', 'legal_aid'].includes(row.family));
+  const updatedFailureRows = failureRows.filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid', 'county_local_disability_resources'].includes(row.family));
   const updatedVerifiedRows = verifiedRows.map(updatedVerifiedRow);
   const updatedNextRows = nextRows
-    .filter((row) => !['protection_and_advocacy', 'legal_aid'].includes(row.family))
+    .filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid', 'county_local_disability_resources'].includes(row.family))
     .sort((a, b) => a.priority_rank - b.priority_rank)
     .map((row, index) => ({ ...row, priority_rank: index + 1 }));
 
@@ -192,35 +276,38 @@ export function generateBatch83SouthCarolinaStatewideFamilyTruthRefreshV1() {
     ...summary,
     classification: 'BLOCKED',
     index_safe: false,
-    completeness_pct: 75,
-    strong_critical_families: 9,
-    weak_critical_families: 3,
+    completeness_pct: 92,
+    strong_critical_families: 11,
+    weak_critical_families: 1,
     missing_critical_families: 0,
-    major_gap_families: [
+    critical_gap_families: [
+      'district_or_county_education_routing',
+    ],
+    primary_gap_reason: 'official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves',
+    major_gap_families: [],
+    verified_source_families_with_samples: [
+      'medicaid_state_health_coverage',
+      'medicaid_waiver_hcbs_disability_services',
+      'developmental_disability_idd_authority',
+      'early_intervention_part_c',
+      'special_education_idea_part_b',
+      'district_or_county_education_routing',
+      'vocational_rehabilitation_pre_ets',
+      'protection_and_advocacy',
       'parent_training_information_center',
+      'legal_aid',
+      'able_program',
+      'ssi_ssa_federal_reference',
+      'county_local_disability_resources',
     ],
     complete_ready: false,
     final_blockers: [
       {
         family: 'district_or_county_education_routing',
         severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'South Carolina still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.',
+        failure_code: 'official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves',
+        evidence: 'South Carolina now has a live official school-directory root, but district or county education routing still depends on statewide or structural evidence instead of reviewed district-owned special-education leaves.',
         next_action: 'author_county_or_district_exact_targets',
-      },
-      {
-        family: 'county_local_disability_resources',
-        severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'South Carolina county/local disability resources still depend on DOI mirror-backed office evidence instead of reviewed county-grade official local-office proof.',
-        next_action: 'author_county_or_district_exact_targets',
-      },
-      {
-        family: 'parent_training_information_center',
-        severity: 'major',
-        failure_code: 'legacy_or_inventory_only_evidence',
-        evidence: 'Family Connection of South Carolina preserves statewide family-support and parent-training language, but the reviewed first-party artifact does not explicitly preserve PTI-grade designation text.',
-        next_action: 'author_verified_state_manifest',
       },
     ],
   };
@@ -230,7 +317,7 @@ export function generateBatch83SouthCarolinaStatewideFamilyTruthRefreshV1() {
     state: 'south-carolina',
     classification_before: summary.classification,
     classification_after: updatedSummary.classification,
-    resolved_families: ['protection_and_advocacy', 'legal_aid'],
+    resolved_families: ['protection_and_advocacy', 'parent_training_information_center', 'legal_aid', 'county_local_disability_resources'],
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
   };
 

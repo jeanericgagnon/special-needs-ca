@@ -81,6 +81,29 @@ function updatedVerifiedRow(row) {
       ],
     };
   }
+  if (row.family === 'parent_training_information_center') {
+    return {
+      ...row,
+      family_status: 'verified_state_grade',
+      evidence_strength: 'strong',
+      sample_count: 1,
+      query_basis: 'Reviewed authoritative Parent Center Hub South Dakota leaf explicitly preserves statewide PTI designation and South Dakota Parent Connection contact routing.',
+      blocker_code: null,
+      blocker_evidence: null,
+      samples: [
+        {
+          sample_name: 'South Dakota PTI via Parent Center Hub',
+          source_url: 'https://www.parentcenterhub.org/findurcenter/south-dakota/',
+          final_url: 'https://www.parentcenterhub.org/findurcenter/south-dakota/',
+          verification_status: 'official_verified',
+          source_type: 'authoritative_parent_center_directory',
+          source_table: 'batch84_south_dakota_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-23T00:00:00.000Z',
+          evidence_snippet: 'South Dakota PTI South Dakota Parent Connection 3701 W 49th St, Ste 102 Sioux Falls, SD 57106.',
+        },
+      ],
+    };
+  }
   return row;
 }
 
@@ -114,7 +137,7 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '- South Dakota no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide protection-and-advocacy evidence on disk instead of only legacy nonprofit inventory rows.',
     '- Disability Rights South Dakota is preserved as statewide protection-and-advocacy support from the reviewed first-party domain.',
-    '- South Dakota still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, county/local disability resources still depend on generic official locator-derived evidence instead of reviewed county-grade local proof, South Dakota Parent Connection still lacks explicit PTI-grade designation text in the reviewed artifact chain, and statewide legal aid is still missing on disk.',
+    '- South Dakota still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, county/local disability resources still lack a public county-grade office contract, and statewide legal aid is still missing on disk.',
     '- South Dakota is therefore terminal BLOCKED, not COMPLETE.',
   ].join('\n') + '\n';
 }
@@ -141,13 +164,70 @@ export function generateBatch84SouthDakotaStatewideFamilyTruthRefreshV1() {
         status_reason: 'reviewed first-party Disability Rights South Dakota evidence preserves statewide protection-and-advocacy identity on the live first-party domain',
       };
     }
+    if (row.family === 'parent_training_information_center') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        status_reason: 'authoritative Parent Center Hub South Dakota leaf explicitly labels South Dakota Parent Connection as the South Dakota PTI',
+      };
+    }
+    if (row.family === 'district_or_county_education_routing') {
+      return {
+        ...row,
+        family_status: 'blocked_live_educational_directory_root_without_local_leaves',
+        status_reason: 'the live official South Dakota Educational Directory root lists public school districts on a first-party page, but no district-owned special-education leaves are yet attached county by county',
+      };
+    }
+    if (row.family === 'county_local_disability_resources') {
+      return {
+        ...row,
+        family_status: 'blocked_live_local_offices_shell_without_public_county_contract',
+        status_reason: 'the legacy dhhs.south-dakota.gov locator is unresolvable, contact/default.aspx is 404, and the live localoffices root currently serves only a JS loading shell with no county contract in public HTML',
+      };
+    }
     return row;
   });
 
-  const updatedFailureRows = failureRows.filter((row) => row.family !== 'protection_and_advocacy');
+  const updatedFailureRows = failureRows
+    .filter((row) => !['protection_and_advocacy', 'parent_training_information_center'].includes(row.family))
+    .map((row) => {
+      if (row.family === 'district_or_county_education_routing') {
+        return {
+          ...row,
+          failure_code: 'official_educational_directory_root_is_live_but_not_converted_into_local_district_leaves',
+          evidence: 'Reviewed 2026-06-23 live official South Dakota DOE sources at https://doe.sd.gov/ofm/edudir.aspx and https://doe.sd.gov/ofm/districts.aspx. The public South Dakota Educational Directory root is live and its HTML already lists Public School Districts such as Aberdeen 06-1, Agar-Blunt-Onida 58-3, and Bennett County 03-1, while the district maps root is also public. But no district-owned special-education leaves are preserved on disk, so district routing still relies on statewide or structural evidence.',
+          next_action: 'author_county_or_district_exact_targets',
+        };
+      }
+      if (row.family === 'county_local_disability_resources') {
+        return {
+          ...row,
+          failure_code: 'legacy_locator_dead_and_live_localoffices_root_is_loading_shell',
+          evidence: 'Reviewed 2026-06-23 live official South Dakota human-services probes at https://dhhs.south-dakota.gov/locations, https://dhs.sd.gov/contact/default.aspx, and https://dhs.sd.gov/en/localoffices. The legacy dhhs host is unresolvable, contact/default.aspx returns a real 404, and the live localoffices root currently serves only a JS Loading shell with no county, office, or locality contract in public HTML.',
+          next_action: 'hold_blocked_until_a_public_county_or_local_office_contract_is_exposed',
+        };
+      }
+      return row;
+    });
   const updatedVerifiedRows = verifiedRows.map(updatedVerifiedRow);
   const updatedNextRows = nextRows
-    .filter((row) => row.family !== 'protection_and_advocacy')
+    .filter((row) => !['protection_and_advocacy', 'parent_training_information_center'].includes(row.family))
+    .map((row) => {
+      if (row.family === 'district_or_county_education_routing') {
+        return {
+          ...row,
+          evidence: 'The live South Dakota Educational Directory root already exposes a public district inventory, but no district-owned special-education leaves are yet preserved on disk.',
+        };
+      }
+      if (row.family === 'county_local_disability_resources') {
+        return {
+          ...row,
+          next_action: 'hold_blocked_until_a_public_county_or_local_office_contract_is_exposed',
+          evidence: 'The legacy locator is dead and the live localoffices root currently exposes only a JS loading shell with no public county contract.',
+        };
+      }
+      return row;
+    })
     .sort((a, b) => a.priority_rank - b.priority_rank)
     .map((row, index) => ({ ...row, priority_rank: index + 1 }));
 
@@ -155,36 +235,43 @@ export function generateBatch84SouthDakotaStatewideFamilyTruthRefreshV1() {
     ...summary,
     classification: 'BLOCKED',
     index_safe: false,
-    completeness_pct: 67,
-    strong_critical_families: 8,
-    weak_critical_families: 3,
+    completeness_pct: 75,
+    strong_critical_families: 9,
+    weak_critical_families: 2,
     missing_critical_families: 1,
+    primary_gap_reason: 'live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract',
     major_gap_families: [
-      'parent_training_information_center',
       'legal_aid',
+    ],
+    verified_source_families_with_samples: [
+      'medicaid_state_health_coverage',
+      'medicaid_waiver_hcbs_disability_services',
+      'developmental_disability_idd_authority',
+      'early_intervention_part_c',
+      'special_education_idea_part_b',
+      'district_or_county_education_routing',
+      'vocational_rehabilitation_pre_ets',
+      'protection_and_advocacy',
+      'parent_training_information_center',
+      'able_program',
+      'ssi_ssa_federal_reference',
+      'county_local_disability_resources',
     ],
     complete_ready: false,
     final_blockers: [
       {
         family: 'district_or_county_education_routing',
         severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'South Dakota still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.',
+        failure_code: 'official_educational_directory_root_is_live_but_not_converted_into_local_district_leaves',
+        evidence: 'South Dakota now has a live official educational-directory root, but district or county education routing still depends on statewide or structural evidence instead of reviewed district-owned special-education leaves.',
         next_action: 'author_county_or_district_exact_targets',
       },
       {
         family: 'county_local_disability_resources',
         severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'South Dakota county/local disability resources still depend on generic official locator-derived evidence instead of reviewed county-grade official local-office proof.',
-        next_action: 'author_county_or_district_exact_targets',
-      },
-      {
-        family: 'parent_training_information_center',
-        severity: 'major',
-        failure_code: 'legacy_or_inventory_only_evidence',
-        evidence: 'South Dakota Parent Connection preserves training-and-information language, but the reviewed first-party artifact does not explicitly preserve statewide PTI designation text.',
-        next_action: 'author_verified_state_manifest',
+        failure_code: 'legacy_locator_dead_and_live_localoffices_root_is_loading_shell',
+        evidence: 'South Dakota county/local disability resources still lack a public county-grade office contract: the legacy locator is dead and the live localoffices root is only a loading shell in the current lane.',
+        next_action: 'hold_blocked_until_a_public_county_or_local_office_contract_is_exposed',
       },
       {
         family: 'legal_aid',
@@ -201,7 +288,7 @@ export function generateBatch84SouthDakotaStatewideFamilyTruthRefreshV1() {
     state: 'south-dakota',
     classification_before: summary.classification,
     classification_after: updatedSummary.classification,
-    resolved_families: ['protection_and_advocacy'],
+    resolved_families: ['protection_and_advocacy', 'parent_training_information_center'],
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
   };
 
