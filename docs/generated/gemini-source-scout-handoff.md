@@ -36,39 +36,52 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - West Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
-## Current Focus State: Oklahoma
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-Oklahoma has one remaining California-grade blocker: `county_local_disability_resources`. Education is already cleared by the current official OSDE State School and District Directory, but the county-local lane still depends on a dead statewide locator host and DOI planning rows.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the DWS office-search app exposes a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`, but that API still publishes only office inventory fields like office name, address, coordinates, service code, and assistance instructions. It does not expose county fields, counties served, or another reusable county-to-office contract. A bounded reverse-geocode pass still materializes physical offices in only 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point, and one more payload-text audit confirms `Daggett` and `Morgan` never appear anywhere in the public JSON while `Rich` appears only as `Richfield`, not as Rich County routing. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- A live official Oklahoma county-grade local office directory that replaces the dead `https://dhhs.oklahoma.gov/locations` host.
-- County-owned or state-maintained local office leaves with real county routing, not planning placeholders or DOI mirrors.
-- Any public Oklahoma county-mapped office export, directory, or API that materializes county-local disability resource routing directly.
+- Any first-party Utah county-complete office contract that explicitly maps counties to DWS, DHHS, or successor local offices.
+- Any public successor Utah office API field or companion endpoint that adds `county`, `countiesServed`, service-area, or district-style assignment data to the current office inventory.
+- Any official Utah successor local-office directory that explicitly closes the Daggett, Morgan, and Rich county remainder without inferred nearest-office routing.
 
 ### Useful Official URLs Already Tried
 
-- [Dead Oklahoma DHHS locator host](https://dhhs.oklahoma.gov/locations)
-- [Official Oklahoma State School Directory](https://oklahoma.gov/education/resources/state-school-directory.html)
-- [Official Oklahoma District Directory download lane](https://oklahoma.gov/education/resources/state-school-directory.html)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Legacy DWS office-search alias](https://jobs.utah.gov/jsp/officesearch/)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Public DWS office-services route](https://officesearch-api.jobs.utah.gov/api/v1/office-services)
+- [API OpenAPI endpoint attempt](https://officesearch-api.jobs.utah.gov/openapi.json)
+- [API Swagger UI attempt](https://officesearch-api.jobs.utah.gov/swagger-ui/index.html)
+- [API v3 docs attempt](https://officesearch-api.jobs.utah.gov/v3/api-docs)
+- [jobs.utah.gov sitemap.xml](https://jobs.utah.gov/sitemap.xml)
+- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
+- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
+- [Older DHHS locations route](https://dhhs.utah.gov/locations)
+- [Census reverse geocoder used only to county-key official office coordinates](https://geocoding.geo.census.gov/geocoder/geographies/coordinates)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current Oklahoma.gov county-local office directory replacing the dead DHHS locator host.
-- Any official county-owned DHS or local human-services office pages that preserve county identity and direct contact routing.
-- Any public Oklahoma directory export or API that maps counties to local assistance or disability-resource offices.
+- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the 45 unique office records.
+- Any reviewed official Utah local-office directory that explicitly names counties served, especially where office names are city-based rather than county-based.
+- Any official Utah successor to the dead `serviceslocations.html` or `dhhs.utah.gov/locations` routes that exposes county-grade local-office coverage for Daggett, Morgan, and Rich.
+## Next State Order After Utah
 
-## Next State Order After New York
-
-1. Oklahoma
-2. Oregon
-3. Ohio
-4. Minnesota
-5. Maine
-6. Idaho
-7. Arizona
-8. Massachusetts
-9. New Mexico
-10. South Dakota
+1. Kansas
+2. Nebraska
+3. Florida
+4. Alaska
+5. New York
+6. Oklahoma
+7. Oregon
+8. Ohio
+9. Minnesota
+10. Maine

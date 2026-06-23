@@ -297,3 +297,6 @@
 
 ### A Public State Portal Linking An Exact Successor Leaf Does Not Clear The Blocker If The Successor Host Still Fails
 *   **Lesson:** If a live state portal points to an exact official successor contact page, verify that exact leaf before treating the host family as repaired. New York `ny.gov` linked the precise OTDA `HEAP Local District Contact` page and benefits application files, but those exact OTDA leaves still reset, so the blocker stayed on the successor host family rather than clearing from the portal reference alone.
+
+### County-Looking Office Names Still Do Not Create A Statewide County Contract
+*   **Lesson:** If a live official office payload exposes only a few county-looking office names but still lacks county fields or counties-served fields, do not stretch those names into a statewide local-routing contract. Utah's public DWS JSON mentioned `Emery County` and `South County`, but `Daggett` and `Morgan` never appeared at all and `Rich` only appeared inside `Richfield`, so the payload still failed county-grade proof.
