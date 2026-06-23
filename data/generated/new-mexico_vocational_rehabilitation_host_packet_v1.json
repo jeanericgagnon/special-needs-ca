@@ -1,0 +1,23 @@
+{
+  "state": "new-mexico",
+  "family": "vocational_rehabilitation_pre_ets",
+  "repair_lane": "browser_assisted_or_alternate_official_root_review",
+  "packet_complete_when": "Either the official DVR root becomes publicly reviewable or a reviewed first-party alternate New Mexico VR or Pre-ETS root is attached on disk.",
+  "current_metrics": {
+    "officialDvrRoot401": true,
+    "reviewedAlternateVrDomains": 0,
+    "unresolvedHighPriorityRoles": 2
+  },
+  "exhausted_sources": [
+    "https://www.dvr.nm.gov/"
+  ],
+  "unresolved_roles": [
+    "vocational_rehabilitation",
+    "pre_ets"
+  ],
+  "blocker_basis": [
+    "exact official DVR root returns HTTP 401",
+    "NM official domain registry has no reviewed alternate VR domain",
+    "NM unresolved roles still report no reviewed allowed domains for VR and Pre-ETS"
+  ]
+}

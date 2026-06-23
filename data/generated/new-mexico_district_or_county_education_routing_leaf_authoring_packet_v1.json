@@ -1,0 +1,26 @@
+{
+  "state": "new-mexico",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "leaf_authoring_only",
+  "packet_complete_when": "Every retained New Mexico education-routing repair row points at a reviewed district-owned, county-grade, or regional special-education leaf rather than the generic PED root or the statewide PED Special Education Bureau page.",
+  "current_metrics": {
+    "retainedPedCandidates": 2,
+    "wrongRoleCrossHostCandidates": 1,
+    "districtOwnedLeavesOnDisk": 0,
+    "countyCount": 33
+  },
+  "exhausted_candidates": [
+    "https://webnew.ped.state.nm.us/",
+    "https://webnew.ped.state.nm.us/bureaus/special-education/"
+  ],
+  "rejected_queue_contamination": [
+    {
+      "url": "https://www.nmhealth.org/about/ddsd",
+      "reason": "wrong-role cross-host candidate leaked into PED education queue"
+    }
+  ],
+  "next_allowed_sources": [
+    "district-owned special-education leaves on k12 district domains",
+    "regional education or county-owned student-support directories if they preserve local routing"
+  ]
+}

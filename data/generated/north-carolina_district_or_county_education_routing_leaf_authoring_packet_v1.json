@@ -1,0 +1,14 @@
+{
+  "state": "north-carolina",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "district_owned_leaf_authoring_only",
+  "packet_complete_when": "Generic DPI fallback rows are replaced with reviewed district-owned or county-grade local education-routing leaves across the remaining counties.",
+  "current_metrics": {
+    "countyTotal": 100,
+    "reviewedDistrictOwnedLeaves": 1,
+    "genericFallbackRowsMentioned": 49,
+    "genericRootsNeedingLeafVerification": 12
+  },
+  "reviewed_leaf_anchor": "https://www.cmsk12.org/Page/213",
+  "exhausted_statewide_fallback": "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children"
+}

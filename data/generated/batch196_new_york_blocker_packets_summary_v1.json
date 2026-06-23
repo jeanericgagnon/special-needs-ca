@@ -1,0 +1,13 @@
+{
+  "batch": "batch196_new_york_blocker_packets_v1",
+  "state": "new-york",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "countyPacketWritten": true,
+  "educationPacketWritten": true,
+  "ptiPacketWritten": true,
+  "healthNyBlockedSurfaceCount": 5,
+  "exactBocesLeafCount": 3,
+  "reviewedStatewidePtiSources": 0,
+  "lesson_added": false
+}

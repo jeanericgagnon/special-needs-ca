@@ -1,0 +1,13 @@
+{
+  "batch": "batch197_north_carolina_blocker_packets_v1",
+  "state": "north-carolina",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "educationPacketWritten": true,
+  "countyPacketWritten": true,
+  "sourceFamilyPacketWritten": true,
+  "reviewedDistrictOwnedLeaves": 1,
+  "doiBackedSampleRows": 3,
+  "statewideSupportFamiliesStillBlocked": 3,
+  "lesson_added": true
+}

@@ -1,0 +1,13 @@
+{
+  "state": "north-carolina",
+  "family_group": "statewide_support_families",
+  "repair_lane": "reviewed_first_party_source_family_only",
+  "packet_complete_when": "Reviewed statewide first-party artifacts exist for protection and advocacy, legal aid, and PTI designation/scope.",
+  "missing_families": [
+    "protection_and_advocacy",
+    "legal_aid"
+  ],
+  "weak_family": "parent_training_information_center",
+  "weak_family_current_source": "https://www.ecac-parentcenter.org/",
+  "weak_family_issue": "homepage navigation/support language present, but no explicit statewide PTI designation leaf preserved on disk"
+}

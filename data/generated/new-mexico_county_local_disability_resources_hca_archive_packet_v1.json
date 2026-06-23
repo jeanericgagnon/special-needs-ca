@@ -1,0 +1,29 @@
+{
+  "state": "new-mexico",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_complete_archive_extraction_only",
+  "packet_complete_when": "A reviewed deterministic extraction or manually preserved map covers all 33 New Mexico counties from the live HCA field-office archive without relying on partial archive paging notes.",
+  "current_metrics": {
+    "countyTotal": 33,
+    "reviewedArchivePages": 2,
+    "explicitlyNamedCountyLeavesSeen": 7,
+    "countyCompleteMapOnDisk": false
+  },
+  "representative_sources": [
+    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/",
+    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/2/?et_blog"
+  ],
+  "named_county_examples": [
+    "Bernalillo County NW",
+    "Bernalillo County SW",
+    "Hidalgo County",
+    "Roosevelt County",
+    "Chaves County",
+    "Curry County",
+    "Dona Ana"
+  ],
+  "next_allowed_repairs": [
+    "archive-to-county extraction from the live HCA office pages",
+    "reviewed continuation pages on the same HCA field-office archive if needed for the remaining counties"
+  ]
+}

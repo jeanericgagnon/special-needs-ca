@@ -1,0 +1,13 @@
+{
+  "batch": "batch195_new_mexico_blocker_packets_v1",
+  "state": "new-mexico",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "educationPacketWritten": true,
+  "countyPacketWritten": true,
+  "vrPacketWritten": true,
+  "districtOwnedLeavesOnDisk": 0,
+  "countyCompleteMapOnDisk": false,
+  "reviewedAlternateVrDomains": 0,
+  "lesson_added": false
+}

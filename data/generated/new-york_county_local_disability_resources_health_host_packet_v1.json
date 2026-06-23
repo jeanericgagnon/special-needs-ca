@@ -1,0 +1,18 @@
+{
+  "state": "new-york",
+  "family": "county_local_disability_resources",
+  "repair_lane": "official_replacement_locator_or_county_owned_directory_only",
+  "packet_complete_when": "A public same-host replacement LDSS locator or reviewed county-owned office directory is attached; reusing the blocked `ldss.htm` host family alone is not enough.",
+  "current_metrics": {
+    "countyTotal": 62,
+    "blockedHealthNySurfaces": 5,
+    "reviewedReplacementLocatorCount": 0
+  },
+  "blocked_surfaces": [
+    "https://www.health.ny.gov/health_care/medicaid/ldss.htm",
+    "https://www.health.ny.gov/robots.txt",
+    "https://www.health.ny.gov/sitemap.xml",
+    "https://www.health.ny.gov/health_care/medicaid/",
+    "https://www.health.ny.gov/health_care/medicaid/redesign/"
+  ]
+}

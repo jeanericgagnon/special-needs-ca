@@ -47,3 +47,12 @@
 
 ### Split Dead Successor Hosts From Live Access-Denied Host Families
 *   **Lesson:** When a state packet mixes neat-looking successor hosts with live official roots, separate DNS-dead successor assumptions from public access-denied host families. New Hampshire needed two blocker lanes: `dhhs.new-hampshire.gov` was simply unresolvable, while `www.dhhs.nh.gov`, `www.education.nh.gov`, and `www.nhes.nh.gov` were live-but-blocked shells.
+
+### Low-Token State Queues That Leak Cross-Role Domains Need Packet Repair Before More Fetches
+*   **Lesson:** If a state-specific low-token queue for one family still contains only generic roots and even leaks a cross-role host from another agency, stop rerunning the fetch lane and convert it into a leaf-authoring packet first. New Mexico PED district routing had no district-owned leaves at all and even retained `nmhealth.org/about/ddsd` as a wrong-role candidate, so more fetches would only churn the same bad queue.
+
+### Regional Parent-Center Scope Cannot Satisfy A Statewide PTI Gate
+*   **Lesson:** If a reviewed first-party parent-center page clearly limits its reach to one region, keep it as blocker evidence but do not stretch it into statewide PTI proof. New York’s Parent Network of WNY was a valid reviewed source, but its Western New York scope meant the right next step was statewide-scope proof, not another pass over the same regional page.
+
+### PTI Navigation Alone Is Not Statewide PTI Designation Proof
+*   **Lesson:** If a parent-center homepage only exposes PTI navigation or general special-needs family-support language, do not count it as statewide PTI proof until a fetched first-party leaf explicitly preserves the designation or statewide scope. North Carolina ECAC was useful context, but the packet still needed a designation leaf.

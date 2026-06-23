@@ -1,0 +1,12 @@
+{
+  "state": "new-york",
+  "family": "parent_training_information_center",
+  "repair_lane": "statewide_scope_proof_only",
+  "packet_complete_when": "A reviewed first-party New York PTI source explicitly preserves statewide scope or statewide designation.",
+  "current_metrics": {
+    "reviewedRegionalSources": 1,
+    "reviewedStatewideSources": 0
+  },
+  "regional_blocker_source": "http://parentnetworkwny.org/",
+  "blocker_basis": "reviewed scope language is Western New York, not statewide"
+}

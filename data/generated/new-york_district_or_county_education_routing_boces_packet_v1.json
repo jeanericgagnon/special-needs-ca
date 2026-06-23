@@ -1,0 +1,16 @@
+{
+  "state": "new-york",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "exact_local_leaf_authoring_only",
+  "packet_complete_when": "A materially broader county-grade or district-grade leaf set replaces the current three exact BOCES leaves.",
+  "current_metrics": {
+    "countyTotal": 62,
+    "exactLeafCount": 3,
+    "bocesDomainsCovered": 3
+  },
+  "verified_exact_leaves": [
+    "https://caboces.org/education/exceptional-education/",
+    "https://www.capitalregionboces.org/special-education-2/",
+    "https://www.btboces.org/OurServices.aspx"
+  ]
+}
