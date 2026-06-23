@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "three_public_district_domains_sitemap_exhausted_and_des_county_lane_still_lacks_county_office_contract",
+  "primary_gap_reason": "three_public_district_domains_sitemap_exhausted_and_altcs_office_cards_still_lack_county_assignments",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -46,8 +46,8 @@
     },
     {
       "family": "county_local_disability_resources",
-      "failure_code": "des_roots_still_challenged_and_ahcccs_altcs_html_only_exposes_single_yuma_office",
-      "evidence": "Reviewed 2026-06-23 bounded Arizona county-local fallback pages after the earlier DES challenge findings. The DES host family remains challenge-blocked on the known office-locator and benefits roots. The accessible AHCCCS fallback pages are live, but they still do not produce county-grade office routing: https://www.azahcccs.gov/members/ALTCSlocations.html returned HTTP 200 and preserved statewide ALTCS office copy plus a single visible office block for `Yuma ALTCS Office, 1800 East Palo Verde Street, Yuma, Arizona 85364`, but no full county-to-office table or repeatable county listing appeared in raw HTML. https://www.azahcccs.gov/shared/AHCCCScontacts.html and https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html also returned HTTP 200, but they only preserved statewide contact routes and program guidance rather than county-specific office assignments. Arizona therefore still lacks a reviewable official county-to-office routing contract."
+      "failure_code": "des_roots_still_challenged_and_ahcccs_altcs_html_exposes_seven_office_cards_without_county_assignments",
+      "evidence": "Reviewed 2026-06-23 bounded Arizona county-local fallback pages after the earlier DES challenge findings. The DES host family remains challenge-blocked on the known office-locator and benefits roots. The accessible AHCCCS fallback lane is live and stronger than previously recorded, but it still does not satisfy county-grade routing: https://www.azahcccs.gov/members/ALTCSlocations.html returned HTTP 200 and its raw HTML preserved seven named ALTCS office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma. However, the page still exposes no county-to-office table, no county names beyond the office titles and cities, and no repeatable county assignment contract tying Arizona counties to those office cards. https://www.azahcccs.gov/shared/AHCCCScontacts.html and https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html also returned HTTP 200, but they only preserved statewide contact routes and program guidance rather than county-specific office assignments. Arizona therefore still lacks a reviewable official county-to-office routing contract."
     }
   ]
 }

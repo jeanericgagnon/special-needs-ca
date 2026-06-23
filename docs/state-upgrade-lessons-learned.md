@@ -14,7 +14,9 @@
 
 ### When The Same Official Host Challenge-Blocks The Page, Sitemap, And Search, Stop Low-Token County Retries
 *   **Lesson:** If a browser-reviewed official directory still lacks county-equivalent mapping and the same host returns the identical challenge shell on the page itself, sitemap, and official search URLs, treat that family as source-final for low-token work. Alaska health.alaska.gov exposed a real DPA offices page in reviewed rendering, but the raw page, sitemap, and borough-targeted search probes all returned the same Cloudflare shell, so more bounded scraper retries would not produce borough coverage proof.
-*   **Lesson:** If a public district or office host is live, spend one bounded robots/sitemap or raw-HTML pass before guessing more leaves. Arizona's last three district domains exhausted into generic student pages and handbooks, and AHCCCS's public ALTCS page exposed only one visible Yuma office in raw HTML, so neither family could be upgraded without a real role-bearing county contract.
+*   **Lesson:** If a live successor services hub is reachable but only points into challenge-blocked exact leaves and carries no county tokens in its own HTML, do not count it as a usable replacement contract. Alaska DFCS `Services.aspx` exposed `Adult Public Assistance` and `Apply for Medicaid`, but both exact health-host leaves 403ed and the DFCS hub itself preserved no borough or census-area routing.
+*   **Lesson:** If a public district or office host is live, spend one bounded robots/sitemap or raw-HTML pass before guessing more leaves. Arizona's last three district domains exhausted into generic student pages and handbooks, so that family could not be upgraded without a real role-bearing county contract.
+*   **Lesson:** If a statewide office-inventory page is live, inspect the full raw HTML before calling it a single-office stub. Arizona's AHCCCS ALTCS page looked like a one-office fallback at first glance, but the raw HTML preserved seven office cards; the blocker remained because counties were still not assigned to those offices.
 
 ### Full-Domain 403 Plus Fallback-Only Rows Means Packet Gap, Not Just Browser Gap
 *   **Lesson:** When an official state domain 403s on the root, robots.txt, sitemap, and obvious leaf guesses, check whether the live rows are still 100% statewide or DOI-style placeholders. If so, record the blocker as missing authored local leaf coverage too, so later repairs do not stall waiting on a browser lane that still has no exact local targets to verify.
@@ -184,3 +186,5 @@
 
 ### Internal Site Search Can Be A Valid Final Negative Check
 *   **Lesson:** If a district-owned host already failed obvious role-exact paths, one bounded pass across its public site map and internal search can be enough to freeze it as reviewed-without-leaf. Wichita USD 259 returned 200 on homepage, site-map, and internal search, but none exposed a role-exact special-education or student-services leaf.
+
+*   **Lesson:** If an official sitemap advertises county- or circuit-looking leaves, sample the live child URLs before treating them as discovery wins. Florida's `contact-us/circuit-*` URLs appeared in the sitemap but returned live 404s, so they could not upgrade the county-local packet.
