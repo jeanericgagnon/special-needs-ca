@@ -614,3 +614,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Reconcile Blocker Counts Against Live DB Rows Before Trusting Narrative Numbers
 *   **Lesson:** If a blocker claims `N exact rows` or `N legacy rows`, run one quick DB reconciliation before carrying that number forward. Idaho’s county-local packet said 17 DOI-backed office rows, but the live DB had 18 DOI rows, 27 legacy-locator rows, and a duplicated Canyon County pair (Caldwell and Nampa), which materially changed the next action.
+
+### Browser-Rendered First-Party Medicaid Pages Can Salvage Waiver Proof When Sibling Hosts 403 In Lightweight Fetch
+*   **Lesson:** If an official Medicaid stack renders in the browser but sibling raw fetches to related hosts keep returning Akamai `Access Denied`, check the first-party fact-sheet library before leaving the waiver family blocked. Kansas cleared statewide waiver proof from the live KanCare home page plus the FS-7 HCBS fact sheet, even though direct lightweight probes to `kdads.ks.gov` still failed.
+
+### Pair a Role-Pure Access Page With Same-Host County-Coverage APIs Before Writing Off a JavaScript DD App
+*   **Lesson:** If a DDID host looks like a JavaScript shell, inspect the linked role-pure agency pages on the parent CHFS site and one same-host JSON endpoint before keeping the family blocked. Kentucky completed once the CHFS `did.aspx` division page and `access-and-referral.aspx` intake page were paired with DBHDID’s public `api/cmhc/center-info` county/center/contact feed.

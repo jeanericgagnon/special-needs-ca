@@ -7,21 +7,21 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 105,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "kdads_access_blocked_and_no_county_or_district_education_contract_preserved",
+  "primary_gap_reason": "kansas_dd_authority_still_access_blocked_and_no_county_or_district_education_contract_preserved",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
-    "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
     "district_or_county_education_routing"
   ],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
+    "medicaid_waiver_hcbs_disability_services",
     "early_intervention_part_c",
     "special_education_idea_part_b",
     "vocational_rehabilitation_pre_ets",
@@ -39,13 +39,6 @@
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
   "final_blockers": [
-    {
-      "family": "medicaid_waiver_hcbs_disability_services",
-      "severity": "critical",
-      "failure_code": "reviewed_exact_waiver_leaf_access_blocked",
-      "evidence": "Reviewed 2026-06-22 live probe to the exact KDADS waiver and HCBS surfaces still returns HTTP 403 Forbidden / access denied.",
-      "next_action": "browser_assisted_or_reviewed_alt_official_waiver_leaf"
-    },
     {
       "family": "developmental_disability_idd_authority",
       "severity": "critical",
