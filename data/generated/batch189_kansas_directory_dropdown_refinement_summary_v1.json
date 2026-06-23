@@ -1,0 +1,10 @@
+{
+  "batch": "batch_189_kansas_directory_dropdown_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_directory_dropdown_detected": true,
+  "annual_directory_pdfs_detected": 3,
+  "lessons_updated": false
+}

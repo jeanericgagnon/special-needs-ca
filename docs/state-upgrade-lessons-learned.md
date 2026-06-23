@@ -773,3 +773,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Identical Public SPA Shells Should Collapse To One Final Blocker
 *   **Lesson:** If two first-party public portal URLs return the same shell HTML and the same config only points partner services to an authenticated root, collapse them into one final blocker instead of reopening both routes. Florida `Public/CPCPS` and `Help/HCINT` were the same MyACCESS shell, and appconfig still routed partner search only through `/accountmanagement`.
+
+### Sample District-Owned Roots Before Reopening A Statewide Education Blocker
+*   **Lesson:** If an official state district directory already yields local domains, sample a few district-owned roots plus `robots.txt` or sitemap before rereading the state directory again. Idaho’s official SDE page still lacked county mapping, but Cassia, Payette, and SD25 immediately exposed likely `/special-services` or `/special-education` leaves on district-owned surfaces, which proved the next lane was exact local leaf authoring.
+
+### Public District Dropdowns Count As Inventory, Not As Routing Proof
+*   **Lesson:** If a first-party directory app exposes a live `***ALL DISTRICTS***` dropdown with district IDs and names, treat it as a concrete district inventory artifact and move the next lane to district-owned leaf authoring. Kansas `Directory_Rpts` finally proved the district list was public, but it still did not itself prove county routing or special-education contacts.
+
+### Public OrgId Dropdowns Eliminate Selector Discovery
+*   **Lesson:** If a first-party contact selector renders real organization option values in the HTML, stop treating OrgId discovery as an open problem. Maine’s public selector already exposed OrgIds like `2 Acton Public Schools`, `14 Auburn Public Schools`, and `42 Bangor Public Schools`, so later work should focus only on result capture or export recovery.

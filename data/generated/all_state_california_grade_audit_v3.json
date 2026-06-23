@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T07:25:10.409Z",
+  "generatedAt": "2026-06-23T07:37:33.806Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 19,
@@ -851,7 +851,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_district_root_packet_and_materialized_exact_office_leaf_packet_exist_but_county_grade_mapping_and_role_fields_still_missing",
+      "packetPrimaryGapReason": "district_owned_roots_now_show_live_special_services_leaf_signals_but_county_mapping_and_office_contracts_still_incomplete",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -1141,7 +1141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "kansas_dd_stack_is_uniformly_transport_blocked_and_live_ksde_directory_roots_still_lack_local_contract",
+      "packetPrimaryGapReason": "kansas_dd_stack_is_uniformly_transport_blocked_and_public_directory_inventory_is_now_clear_but_local_leaves_are_still_missing",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -1351,7 +1351,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "public_neo_selector_inventory_is_live_but_result_export_actions_return_500_and_dhhs_office_directory_lacks_county_or_town_mapping",
+      "packetPrimaryGapReason": "public_maine_orgid_inventory_and_municipality_workbook_are_live_but_contact_result_step_still_500_and_dhhs_office_mapping_is_absent",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

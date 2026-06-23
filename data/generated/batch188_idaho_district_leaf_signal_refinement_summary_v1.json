@@ -1,0 +1,10 @@
+{
+  "batch": "batch_188_idaho_district_leaf_signal_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "district_roots_sampled": 5,
+  "positive_local_leaf_signals": 3,
+  "lessons_updated": false
+}

@@ -1,0 +1,9 @@
+{
+  "batch": "batch_190_maine_public_orgid_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_orgids_detected": true,
+  "lessons_updated": false
+}
