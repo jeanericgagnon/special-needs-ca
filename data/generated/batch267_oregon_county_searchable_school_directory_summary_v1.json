@@ -1,0 +1,10 @@
+{
+  "batch": "batch267_oregon_county_searchable_school_directory_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "oregon",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_family_status": "verified_county_grade_official_directory_pdf",
+  "remaining_blocker_family": "county_local_disability_resources",
+  "directory_pdf": "https://www.oregon.gov/ode/about-us/Documents/CombinedDirectory_20260430_024706.pdf"
+}

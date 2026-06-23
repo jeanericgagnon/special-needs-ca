@@ -246,3 +246,6 @@
 
 ### A Live Official School Finder That Only Accepts Address, City, Or Town Still Does Not Clear County-Grade Routing
 *   **Lesson:** If an official education finder is live but its contract is only address/city/town based and exposes no county field or export lane, do not promote it into county-grade routing. Massachusetts `get_closest_orgs.aspx` stayed public and local-looking, but it still had zero county labels and no export path, so it could not replace a missing county-to-district contract.
+
+### An Official School Directory PDF That Explicitly Organizes Districts By County Can Clear County-Grade Education Routing
+*   **Lesson:** If a live official school-directory PDF explicitly says districts are listed by county and preserves district contact blocks, that can clear county-grade education routing without district-owned special-education leaves. Oregon’s ODE School Directory page linked a current Combined Directory PDF whose own instructions and public-schools section both confirmed county organization and district contact fields.

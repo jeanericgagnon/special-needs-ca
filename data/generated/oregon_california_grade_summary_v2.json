@@ -9,13 +9,12 @@
   "county_count": 36,
   "completeness_pct": 83,
   "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "live_state_special_education_root_without_district_contract_and_live_office_finder_root_without_county_extract",
+  "primary_gap_reason": "official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [],
@@ -40,18 +39,15 @@
   ],
   "final_blockers": [
     {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "live_state_special_education_root_without_district_contract",
-      "evidence": "Reviewed 2026-06-23 bounded live Oregon education checks plus current DB inventory. `https://www.oregon.gov/ode/students-and-family/specialeducation/pages/default.aspx` is live and role-pure for statewide Special Education, but it remains a generic state page. A bounded DB check still shows all 36 Oregon school_district rows sharing the same root source URL `https://www.oregon.gov/ode` and no district-owned or county-grade special-education leaves on disk. Oregon therefore still lacks a district routing contract.",
-      "next_action": "hold_blocked_until_district_owned_or_county_grade_education_leaves_are_authored"
-    },
-    {
       "family": "county_local_disability_resources",
       "severity": "critical",
       "failure_code": "live_office_finder_root_without_county_extract",
       "evidence": "Reviewed 2026-06-23 bounded live Oregon county-local checks. The old `https://dhhs.oregon.gov/locations` host now fails DNS resolution, but the live successor root `https://www.oregon.gov/odhs/pages/office-finder.aspx` returns HTTP 200 only as a generic `Find an Office` page with no preserved county list or office extract in static HTML. A bounded DB check also shows current Oregon county-office rows split between 61 DOI-backed planning rows and only 3 dead `dhhs.oregon.gov/locations` rows. No reviewed county-grade office contract is preserved on disk.",
       "next_action": "hold_blocked_until_county_grade_office_contract_is_extracted_from_live_office_finder_or_county_owned_leaves"
     }
-  ]
+  ],
+  "familyStatuses": {
+    "district_or_county_education_routing": "verified_county_grade_official_directory_pdf",
+    "county_local_disability_resources": "blocked_live_office_finder_root_without_county_extract"
+  }
 }

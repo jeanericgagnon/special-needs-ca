@@ -27,7 +27,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Ohio: `retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only`
 - Oklahoma: `generic_state_education_page_collapse_and_dead_dhhs_locator_host`
-- Oregon: `live_state_special_education_root_without_district_contract_and_live_office_finder_root_without_county_extract`
+- Oregon: `official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Carolina: `official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
@@ -40,44 +40,42 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Massachusetts
+## Current Focus State: Oregon
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the top Massachusetts blocker in the state queue. The hidden DESE district-directory replay still no longer materializes local rows, and the live official School Finder at `get_closest_orgs.aspx` only accepts address, city, or town inputs. It exposes superintendent and address-oriented local search behavior, but no county field, no county selector, and no export lane that can be truthfully bridged to county rows.
+`county_local_disability_resources` is now the top Oregon blocker in the state queue. The official ODE School Directory PDF clears education because it explicitly organizes districts by county and preserves district contact blocks, but the live ODHS office-finder root still returns only a generic `Find an Office` page in static HTML with no county list, no office extract, and no county-to-office contract.
 
 ### Exact Evidence Needed
 
-- Any official Massachusetts DESE county-to-district contract, county selector, or county-keyed export.
-- Or, a reviewed browser/cached DESE or DDS locality capture that can be truthfully bridged to counties.
-- Or, an official DDS county crosswalk or county-served export.
-- The live School Finder, the non-materializing hidden replay, and the DDS raw-403 location pages are still not enough without county-grade routing fields.
+- Any official ODHS county-to-office contract, county list, or office extract from the live office-finder stack.
+- Or, official county-owned disability office leaves that can be truthfully mapped to Oregon counties.
+- The ODE school-directory PDF no longer needs repair, but the live ODHS office-finder root is still not enough without county-grade routing fields.
 
 ### Useful Official URLs Already Tried
 
-- [DESE district-directory bridge](https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238)
-- [DESE Profiles Search](https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238)
-- [DESE School Finder](https://profiles.doe.mass.edu/search/get_closest_orgs.aspx)
-- [DESE Search, Export and Mailing Labels help](https://profiles.doe.mass.edu/help/search.aspx?leftNavId=12104)
-- [DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
-- [DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
-- [DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [ODE Special Education root](https://www.oregon.gov/ode/students-and-family/specialeducation/pages/default.aspx)
+- [ODE School Directory page](https://www.oregon.gov/ode/about-us/Pages/School-Directory.aspx)
+- [ODE Combined Directory PDF](https://www.oregon.gov/ode/about-us/Documents/CombinedDirectory_20260430_024706.pdf)
+- [ODHS Find an Office root](https://www.oregon.gov/odhs/pages/office-finder.aspx)
+- [ODHS home](https://www.oregon.gov/odhs/Pages/default.aspx)
+- [ODE home](https://www.oregon.gov/ode/Pages/default.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Massachusetts DESE county-keyed export, selector, or district crosswalk.
-- Any official DDS county crosswalk or county-served locality export.
-- Any reviewed browser/cached locality capture from DESE or DDS that can be truthfully bridged to counties.
+- Any official ODHS county list, office extract, or county-to-office contract behind the live office-finder lane.
+- Any official county-owned disability office leaves that can replace DOI-backed planning rows.
+- Any machine-readable ODHS successor artifact to the dead `dhhs.oregon.gov/locations` host.
 
-## Next State Order After Massachusetts
+## Next State Order After Oregon
 
-1. Oregon
-2. Oklahoma
-3. Utah
-4. New Hampshire
-5. New Mexico
-6. New York
-7. North Carolina
-8. North Dakota
-9. Rhode Island
-10. South Carolina
+1. Oklahoma
+2. Utah
+3. New Hampshire
+4. New Mexico
+5. New York
+6. North Carolina
+7. North Dakota
+8. Rhode Island
+9. South Carolina
+10. South Dakota

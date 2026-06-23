@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:38:11.317Z",
+  "generatedAt": "2026-06-23T18:42:08.069Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -2598,7 +2598,7 @@
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 36,
       "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
       "completenessPct": 83,
@@ -2640,7 +2640,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_live_state_special_education_root_without_district_contract",
+        "district_or_county_education_routing": "verified_county_grade_official_directory_pdf",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2651,7 +2651,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "live_state_special_education_root_without_district_contract_and_live_office_finder_root_without_county_extract",
+      "packetPrimaryGapReason": "official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
