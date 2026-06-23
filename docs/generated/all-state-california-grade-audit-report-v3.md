@@ -20,9 +20,6 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
-- North Carolina now reaches COMPLETE/index-safe because two public county-bearing contracts replaced both local blockers: the DPI School Report Card location dataset for district routing and the NCDHHS Local DSS sitemap lane for county-local routing.
-- New York remains blocked, but the county-local blocker is now tighter: `ny.gov` points to exact OTDA successor leaves, and those exact OTDA contact/benefit targets still fail in the bounded verification lane.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
-- Kansas remains blocked, but reviewed local education-routing proof now covers 14 of 105 counties after Newton USD 373 and Emporia USD 253 added two more district-host local leaves.
-- Nebraska remains blocked because the official county-local office stack still exposes no public county-to-office assignment contract beyond locator outputs.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
+- Florida county-local routing is now explicitly sharpened to the partial Family Resource Center contract plus the public MyACCESS dataexchangeproxy shell lane, not a hidden anonymous API.

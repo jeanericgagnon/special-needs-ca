@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=2; first=https://bals.org
 - able_program: verified_state_grade; samples=1; first=https://www.ableunited.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_partial_storefront_lane_and_public_dataexchangeproxy_shell_without_county_results; samples=23; first=https://www.myflfamilies.com/food-cash-and-medical
+- county_local_disability_resources: blocked_partial_storefront_lane_and_public_dataexchangeproxy_shell_without_county_results; samples=29; first=https://www.myflfamilies.com/food-cash-and-medical
 
 ## Next actions
 
