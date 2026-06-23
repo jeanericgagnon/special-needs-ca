@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party NDALC evidence preserves statewide disability legal-rights routing through the Nevada Disability Advocacy and Law Center)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_live_welfare_office_pages_without_county_contract (Reviewed 2026-06-23 bounded live probes on the official Nevada DSS welfare-office stack. The stale parent office root no longer preserves a county-grade directory contract, and the live Contact, Welfare District Offices-North, and Welfare District Offices-South pages expose exact office leaves with real addresses and phones but zero county terms, zero county-served labels, and no county filter or county assignment. Nevada therefore still lacks a reviewed official county-to-office routing contract for all 17 counties.)
+- county_local_disability_resources: blocked_partial_county_bearing_program_offices_page_without_full_contract (Reviewed 2026-06-23 bounded live probes on the official Nevada DSS contact family more tightly. The live Contact, Welfare District Offices-North, and Welfare District Offices-South pages still expose exact office leaves with real addresses and phones but no county-served labels, county filter, or county assignment. However, the sibling official `Program Offices` page does preserve some county-named local partners such as Churchill County Social Services, Douglas County Social Services, Elko County Human & Social Services, Eureka County Social Services, Lincoln County Community Connection, Lyon County Human Services, Nye County Health & Human Services, Pershing County Senior Center, and White Pine County Social Services. That improves the packet because Nevada does have partial official county-bearing local resource evidence on the same host, but it still does not produce a complete 17-county welfare-office or county-to-office routing contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_welfare_district_office_pages_live_but_no_county_coverage_contract :: Reviewed 2026-06-23 bounded live probes on the official Nevada DSS welfare-office stack. The stale parent office root no longer preserves a county-grade directory contract, and the live Contact, Welfare District Offices-North, and Welfare District Offices-South pages expose exact office leaves with real addresses and phones but zero county terms, zero county-served labels, and no county filter or county assignment. Nevada therefore still lacks a reviewed official county-to-office routing contract for all 17 counties.
+- county_local_disability_resources: official_program_offices_page_adds_partial_county_partners_but_no_full_county_to_welfare_contract :: Reviewed 2026-06-23 bounded live probes on the official Nevada DSS welfare-office stack and one sibling official contact page. The live Contact hub plus `Welfare District Offices-North` and `Welfare District Offices-South` pages remain exact office leaves with real addresses and phones but zero county-served labels, zero county filter, and no county assignment. A fresh bounded probe on the sibling official page https://www.dss.nv.gov/contact/program-offices/ showed that Nevada DSS does expose some county-named local partners on the same host, including Churchill County Social Services, Douglas County Social Services, Elko County Human & Social Services, Eureka County Social Services, Lincoln County Community Connection, Lyon County Human Services, Nye County Health & Human Services, Pershing County Senior Center, and White Pine County Social Services, along with Carson City and other locality-specific partners. But the page still does not provide a complete 17-county county-to-office or county-to-welfare-office contract: a bounded county-coverage check found only 11 of Nevada’s 17 county-equivalent names on the page, leaving Clark, Esmeralda, Humboldt, Lander, Storey, and Washoe without a county-named contract there. Nevada therefore remains blocked, but the blocker is now precisely a partial county-bearing sibling page plus incomplete county coverage rather than zero county signal anywhere on the host.
 
 ## Verified source samples
 
@@ -40,20 +40,14 @@
 - legal_aid: verified_state_grade; samples=1; first=https://ndalc.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_live_welfare_office_pages_without_county_contract; samples=4; first=https://dwss.nv.gov/Contact/Welfare_District_Offices/
+- county_local_disability_resources: blocked_partial_county_bearing_program_offices_page_without_full_contract; samples=5; first=https://www.dss.nv.gov/contact/
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_county_to_welfare_office_contract_is_reviewed
+- [critical] county_local_disability_resources: hold_blocked_until_official_full_17_county_contract_or_county_to_welfare_office_mapping_is_reviewed
 
 ## Packetized blocker
 
 - County-local packet saved at `data/generated/nevada_county_local_disability_resources_welfare_office_packet_v1.json`.
-- The stale parent office root is now retired from future Nevada county-local retries.
-- The live DSS contact stack remains useful for evidence, but the reviewed HTML still exposes zero county terms and no county-served contract.
-
-## Completion decision
-
-- Nevada remains `BLOCKED` and `index_safe=false`.
-- Education routing stays cleared from the official county-district mapping already on disk.
-- County/local disability resources remain blocked because no reviewed official Nevada page yet maps all 17 counties to a welfare office or service area.
+- The welfare office pages remain exact office leaves without county-served labels.
+- The sibling `Program Offices` page adds partial county-bearing local partners, but it still does not provide a complete 17-county welfare-office or county-to-office routing contract.

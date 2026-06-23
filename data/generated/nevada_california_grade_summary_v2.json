@@ -43,9 +43,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_welfare_district_office_pages_live_but_no_county_coverage_contract",
-      "evidence": "Reviewed 2026-06-23 bounded live probes on the official Nevada DSS welfare-office stack. The stale parent office root no longer preserves a county-grade directory contract, and the live Contact, Welfare District Offices-North, and Welfare District Offices-South pages expose exact office leaves with real addresses and phones but zero county terms, zero county-served labels, and no county filter or county assignment. Nevada therefore still lacks a reviewed official county-to-office routing contract for all 17 counties.",
-      "next_action": "hold_blocked_until_official_county_to_welfare_office_contract_is_reviewed"
+      "failure_code": "official_program_offices_page_adds_partial_county_partners_but_no_full_county_to_welfare_contract",
+      "evidence": "Reviewed 2026-06-23 bounded live probes on the official Nevada DSS welfare-office stack and one sibling official contact page. The live Contact hub plus `Welfare District Offices-North` and `Welfare District Offices-South` pages remain exact office leaves with real addresses and phones but zero county-served labels, zero county filter, and no county assignment. A fresh bounded probe on the sibling official page https://www.dss.nv.gov/contact/program-offices/ showed that Nevada DSS does expose some county-named local partners on the same host, including Churchill County Social Services, Douglas County Social Services, Elko County Human & Social Services, Eureka County Social Services, Lincoln County Community Connection, Lyon County Human Services, Nye County Health & Human Services, Pershing County Senior Center, and White Pine County Social Services, along with Carson City and other locality-specific partners. But the page still does not provide a complete 17-county county-to-office or county-to-welfare-office contract: a bounded county-coverage check found only 11 of Nevada’s 17 county-equivalent names on the page, leaving Clark, Esmeralda, Humboldt, Lander, Storey, and Washoe without a county-named contract there. Nevada therefore remains blocked, but the blocker is now precisely a partial county-bearing sibling page plus incomplete county coverage rather than zero county signal anywhere on the host.",
+      "next_action": "hold_blocked_until_official_full_17_county_contract_or_county_to_welfare_office_mapping_is_reviewed"
     }
   ]
 }

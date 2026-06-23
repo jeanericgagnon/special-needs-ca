@@ -1,0 +1,11 @@
+{
+  "batch": "batch224_nevada_program_offices_partial_county_audit_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nevada",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "sibling_program_offices_reviewed": true,
+  "partial_county_named_coverage_count": 11,
+  "missing_county_contract_count": 6,
+  "lessons_updated": false
+}

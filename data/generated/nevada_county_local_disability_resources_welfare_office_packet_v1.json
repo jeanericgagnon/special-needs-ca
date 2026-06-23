@@ -1,9 +1,9 @@
 {
   "state": "nevada",
   "family": "county_local_disability_resources",
-  "failure_code": "official_welfare_district_office_pages_live_but_no_county_coverage_contract",
+  "failure_code": "official_program_offices_page_adds_partial_county_partners_but_no_full_county_to_welfare_contract",
   "repair_lane": "browser_or_cached_capture_only",
-  "packet_complete_when": "Nevada can reopen only when a reviewed first-party DSS or sibling official page exposes a truthful county-to-office contract, county-served labels, or a machine-readable county filter for all 17 counties.",
+  "packet_complete_when": "Nevada can reopen only when a reviewed first-party DSS or sibling official page exposes a truthful full 17-county county-to-office contract, county-served labels, or a machine-readable county filter for all 17 counties.",
   "current_metrics": {
     "countyTotal": 17,
     "liveChildLeavesReviewed": 2,
@@ -11,7 +11,10 @@
     "staleParentRootRetired": true,
     "zeroCountyTokensOnReviewedPages": 3,
     "countyServedFieldPresent": false,
-    "countyFilterPresent": false
+    "countyFilterPresent": false,
+    "siblingProgramOfficesReviewed": true,
+    "partialCountyNamedCoverageCount": 11,
+    "missingCountyContractCount": 6
   },
   "representative_sources": [
     {
@@ -37,6 +40,36 @@
       "url": "https://www.dss.nv.gov/contact/welfare-district-offices-south/",
       "status": "live_office_leaf_without_county_contract",
       "evidence": "The South page lists exact offices such as Belrose, Cambridge, Decatur, Eastern, Henderson, Nellis, Owens, Pahrump, Spring Mountain, and Flamingo with addresses and phones, but no county labels or county-served fields."
+    },
+    {
+      "label": "Nevada DSS Program Offices",
+      "url": "https://www.dss.nv.gov/contact/program-offices/",
+      "status": "official_sibling_page_with_partial_county_coverage",
+      "evidence": "The sibling Program Offices page preserves some county-named social-service entries on the same host, but it still covers only 11 of 17 Nevada county-equivalents and does not replace the missing welfare-office mapping."
+    },
+    {
+      "label": "Nevada DSS Program Offices",
+      "url": "https://www.dss.nv.gov/contact/program-offices/",
+      "status": "official_sibling_page_with_partial_county_coverage",
+      "evidence": "The sibling Program Offices page preserves some county-named social-service entries on the same host, but it still covers only 11 of 17 Nevada county-equivalents and does not replace the missing welfare-office mapping."
+    },
+    {
+      "label": "Nevada DSS Program Offices",
+      "url": "https://www.dss.nv.gov/contact/program-offices/",
+      "status": "official_sibling_page_with_partial_county_coverage",
+      "evidence": "The sibling Program Offices page preserves some county-named social-service entries on the same host, but it still covers only 11 of 17 Nevada county-equivalents and does not replace the missing welfare-office mapping."
+    },
+    {
+      "label": "Nevada DSS Program Offices",
+      "url": "https://www.dss.nv.gov/contact/program-offices/",
+      "status": "official_sibling_page_with_partial_county_coverage",
+      "evidence": "The sibling Program Offices page preserves some county-named social-service entries on the same host, but it still covers only 11 of 17 Nevada county-equivalents and does not replace the missing welfare-office mapping."
+    },
+    {
+      "label": "Nevada DSS Program Offices",
+      "url": "https://www.dss.nv.gov/contact/program-offices/",
+      "status": "official_sibling_page_with_partial_county_coverage",
+      "evidence": "The sibling Program Offices page preserves some county-named social-service entries on the same host, but it still covers only 11 of 17 Nevada county-equivalents and does not replace the missing welfare-office mapping."
     }
   ],
   "zero_county_term_probes": [

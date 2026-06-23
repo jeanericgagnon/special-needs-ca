@@ -1,62 +1,72 @@
 {
   "state": "new-hampshire",
-  "primary_gap_reason": "official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable",
-  "purpose": "Deterministic blocker packet for New Hampshire while the current official host families remain either unresolvable or publicly access-denied.",
+  "primary_gap_reason": "official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root",
+  "purpose": "Deterministic blocker packet for New Hampshire while the saved DHHS successor host remains unresolvable and the likely public nh.gov successor family remains HTTP 403 forbidden.",
   "packet_complete_when": "New Hampshire can reopen only when at least one reviewed first-party official host family either resolves publicly for Medicaid/DD/EI and county-office lanes or exposes a public export or browser-reviewable directory for education, VR, or district offices.",
   "blocker_classes": [
     {
-      "blocker_class": "successor_host_unresolvable",
+      "blocker_class": "saved_successor_host_unresolvable_and_nh_gov_successors_forbidden",
       "families": [
         "medicaid_state_health_coverage",
         "medicaid_waiver_hcbs_disability_services",
         "developmental_disability_idd_authority",
-        "early_intervention_part_c"
+        "early_intervention_part_c",
+        "county_local_disability_resources"
       ],
-      "host_family": "dhhs.new-hampshire.gov",
+      "host_families": [
+        "dhhs.new-hampshire.gov",
+        "www.nh.gov/dhhs"
+      ],
       "exact_paths": [
         "https://dhhs.new-hampshire.gov/",
         "https://dhhs.new-hampshire.gov/dd",
         "https://dhhs.new-hampshire.gov/dd/waivers",
-        "https://dhhs.new-hampshire.gov/earlystart"
+        "https://dhhs.new-hampshire.gov/earlystart",
+        "https://www.nh.gov/",
+        "https://www.nh.gov/dhhs/",
+        "https://www.nh.gov/dhhs/contact-us/",
+        "https://www.nh.gov/dhhs/district-offices/"
       ],
-      "finding": "The successor-host family saved into the packet does not resolve in bounded review and cannot remain verified statewide evidence."
+      "finding": "The saved replacement-host family does not resolve and the likely nh.gov DHHS successors return HTTP 403 Forbidden immediately."
     },
     {
-      "blocker_class": "public_host_access_denied_shell",
+      "blocker_class": "official_education_hosts_and_nh_gov_successors_forbidden",
       "families": [
-        "district_or_county_education_routing",
-        "county_local_disability_resources",
-        "vocational_rehabilitation_pre_ets"
+        "district_or_county_education_routing"
       ],
       "host_families": [
         "www.education.nh.gov",
         "my.doe.nh.gov",
-        "www.dhhs.nh.gov",
-        "www.nhes.nh.gov"
+        "www.nh.gov/education"
       ],
       "exact_paths": [
         "https://www.education.nh.gov/",
         "https://www.education.nh.gov/school-and-district-profiles",
         "https://www.education.nh.gov/find-school-or-district",
         "https://my.doe.nh.gov/ehb/",
-        "https://www.dhhs.nh.gov/",
-        "https://www.dhhs.nh.gov/contact-us",
-        "https://www.dhhs.nh.gov/contact-us/district-offices",
-        "https://www.nhes.nh.gov/",
-        "https://www.nhes.nh.gov/services/disabilities/bvr.htm"
+        "https://www.nh.gov/education/",
+        "https://www.nh.gov/education/doe/"
       ],
-      "finding": "The public-facing official roots and exact leaves return the same short Access Denied shell, so low-token path guessing will not repair these families."
+      "finding": "The official education hosts return Access Denied and the likely nh.gov education successors return HTTP 403 Forbidden immediately."
     },
     {
-      "blocker_class": "alternate_host_unresolvable",
+      "blocker_class": "official_vr_hosts_unresolvable_or_forbidden_and_no_nh_gov_successor",
       "families": [
         "vocational_rehabilitation_pre_ets"
       ],
-      "host_family": "www.nheasy.nh.gov",
-      "exact_paths": [
-        "https://www.nheasy.nh.gov/"
+      "host_families": [
+        "www.nhes.nh.gov",
+        "www.nheasy.nh.gov",
+        "www.nh.gov/nhes"
       ],
-      "finding": "The likely public-assistance/VR alternate host does not resolve and should not remain in an active New Hampshire review lane."
+      "exact_paths": [
+        "https://www.nhes.nh.gov/",
+        "https://www.nhes.nh.gov/services/disabilities/bvr.htm",
+        "https://www.nheasy.nh.gov/",
+        "https://www.nh.gov/nhes/",
+        "https://www.nh.gov/employment/"
+      ],
+      "finding": "The current VR host family is either unresolvable or Access Denied, and the likely nh.gov successors return HTTP 403 Forbidden immediately."
     }
   ]
 }

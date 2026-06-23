@@ -125,3 +125,9 @@
 
 ### No Relationships Means No Hidden Service-Area Bridge
 *   **Lesson:** If an official ArcGIS office app looks promising, inspect the public layer `relationships` before assuming a hidden county-assignment table exists. Nebraska’s office layer and county layer were both public, but both had empty relationship arrays, so there was no latent service-area bridge to recover in low-token mode.
+
+### Partial County Mentions On A Sibling Page Still Need A Full Coverage Audit
+*   **Lesson:** If a sibling official contact page starts surfacing county-named local partners, run a bounded full-county coverage check before treating it as a replacement contract. Nevada DSS `Program Offices` added real county-named social-service entries, but it still covered only 11 of 17 counties and did not replace the missing welfare-office mapping.
+
+### Probe The State Root Before Inventing More Successor Paths
+*   **Lesson:** If a blocked state seems to need a new official successor host, test the plain state root and one or two obvious subpaths first. New Hampshire showed `www.nh.gov/` itself and the likely `/dhhs`, `/education`, and `/nhes` successors all 403ing immediately, which let us stop guessing successor paths and lock the blocker faster.

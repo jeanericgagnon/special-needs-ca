@@ -1,0 +1,10 @@
+{
+  "batch": "batch225_new_hampshire_successor_root_403_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "new-hampshire",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "nh_gov_root_forbidden": true,
+  "dhhs_successor_unresolvable": true,
+  "lessons_updated": false
+}
