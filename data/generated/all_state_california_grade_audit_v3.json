@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T06:49:16.606Z",
+  "generatedAt": "2026-06-23T06:54:36.691Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 19,
@@ -1351,7 +1351,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_live_org_selector_posts_return_500_and_dhhs_office_directory_lacks_county_or_town_mapping",
+      "packetPrimaryGapReason": "public_neo_selector_inventory_is_live_but_result_export_actions_return_500_and_dhhs_office_directory_lacks_county_or_town_mapping",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

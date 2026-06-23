@@ -1,0 +1,12 @@
+{
+  "batch": "batch_184_maine_public_selector_scope_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "town_selector_live": true,
+  "org_selector_live": true,
+  "workbook_still_downloadable": true,
+  "result_step_still_blocked": true,
+  "lessons_updated": false
+}

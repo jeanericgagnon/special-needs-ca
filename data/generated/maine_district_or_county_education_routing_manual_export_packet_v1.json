@@ -14,7 +14,11 @@
     "publicOrgSelectorEmbedded": true,
     "csrfTokenExposed": true,
     "sessionedPost500Confirmed": true,
-    "sessionedOrgIdTested": 364
+    "sessionedOrgIdTested": 364,
+    "reviewedTownSelectorLive": true,
+    "reviewedOrgSelectorLive": true,
+    "workbookStillDownloadable": true,
+    "selectorDiscoverySolved": true
   },
   "exact_target_goals": [
     "reviewed SAU contact export or result capture with local superintendent or district contact rows",
@@ -67,5 +71,5 @@
     "washington-me",
     "york-me"
   ],
-  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the official live OrgId selector still fails to return public result rows or export files."
+  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the result/export step on the already-live public selectors still fails. The selector inventory itself is now proven public and stable enough for manual/browser capture."
 }

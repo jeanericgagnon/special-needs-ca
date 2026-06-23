@@ -761,3 +761,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Tiny Access-Denied Shells Across Root, Leaf, And Robots Mean Host-Stack Blocking
 *   **Lesson:** If the official root, exact role leaf, and `robots.txt` all return the same tiny `Access Denied` HTML with a `$(SERVE_403)` pseudo-path, treat the host as uniformly transport-blocked and stop probing sibling content URLs. Kansas’ KDADS and KanCare DD stack stayed blocked even with a browser-style client, so more low-token content discovery on those hosts would just churn.
+
+### Separate Live Selector Inventory From Broken Result Actions
+*   **Lesson:** If an official search workflow has public selector pages and a downloadable mapping workbook, preserve those as solved inventory and isolate the blocker to the result/export action. Maine’s NEO town selector, org selector, and SAU-by-municipality workbook were all publicly live, so later work should start from manual capture on those selectors instead of rechecking whether the inventory exists.
