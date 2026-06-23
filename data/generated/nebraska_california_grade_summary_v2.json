@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "district_grade_education_and_partial_county_office_layer_coverage",
+  "primary_gap_reason": "live_nde_host_without_county_or_esu_contract_and_public_office_layer_only_37_counties",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -39,5 +39,21 @@
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Interactive county-office locators do not satisfy county-grade proof until reviewed county rows and service-area coverage are preserved on disk"
+  ],
+  "final_blockers": [
+    {
+      "family": "district_or_county_education_routing",
+      "severity": "critical",
+      "failure_code": "live_nde_host_accessible_but_no_county_or_esu_routing_contract_reviewed",
+      "evidence": "Reviewed 2026-06-23 bounded browser-style probes on the live official NDE host. The Special Education page and Contact Us / SPED Staff Directory page are publicly reachable again, but they still preserve statewide dispute/staff content only. The only clearly local-looking outbound program link from the SPED stack was the single ESU 9 Deaf or Hard of Hearing program page, which is not a statewide county-to-ESU or county-to-district routing contract. No reviewed district-owned, ESU-wide, or county-mapped education-routing surface is preserved on disk yet.",
+      "next_action": "hold_blocked_until_live_official_county_to_esu_or_district_contract_is_reviewed"
+    },
+    {
+      "family": "county_local_disability_resources",
+      "severity": "critical",
+      "failure_code": "official_public_office_experiencebuilder_config_opens_but_public_layer_only_covers_37_counties",
+      "evidence": "Reviewed 2026-06-23 the official Nebraska Public Office Location ExperienceBuilder config and backing web map directly. The public app data is open and points to the official web map plus a public office feature layer, but that layer contains only 42 office rows and 37 distinct USER_County values while Nebraska has 93 counties. The county-boundary layer carries only county geometry fields and no county-to-office assignment. Nebraska therefore still lacks a reviewed official service-area contract for the remaining counties.",
+      "next_action": "hold_blocked_until_official_service_area_or_full_county_office_contract_is_reviewed"
+    }
   ]
 }

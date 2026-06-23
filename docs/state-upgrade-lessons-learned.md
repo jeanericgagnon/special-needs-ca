@@ -725,3 +725,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### ArcGIS App Configs Can Expose Official District Layers Even When Older Directory Bridges Rot
 *   **Lesson:** If a state school-directory login bridge or SSRS report path rots, inspect the live official directory page and any linked ArcGIS app config before dropping to district-site authoring. Missouri’s DESE directory page exposed a public ArcGIS app whose config revealed the exact district layer URL and county-mapped contact fields, which was enough to clear local routing without deeper scraping.
+
+### Open ExperienceBuilder Configs Can Prove A County Layer Is Still Incomplete
+*   **Lesson:** If an official locator app opens but the visible page is only an `Experience` shell, check the public ExperienceBuilder item data before giving up. Nebraska’s config exposed the exact web map and office layer URLs, which let us prove the official office layer only covered 37 counties. That saved more blind probing while still keeping the county-office family blocked.

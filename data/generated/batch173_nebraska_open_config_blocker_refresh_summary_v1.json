@@ -1,0 +1,16 @@
+{
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "refined_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "district_routing_blocker": "live_nde_host_accessible_but_no_county_or_esu_routing_contract_reviewed",
+  "county_local_blocker": "official_public_office_experiencebuilder_config_opens_but_public_layer_only_covers_37_counties",
+  "office_layer_rows": 42,
+  "office_layer_distinct_counties": 37,
+  "county_total": 93,
+  "lesson_added": false
+}
