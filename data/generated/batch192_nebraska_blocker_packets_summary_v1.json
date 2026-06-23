@@ -1,0 +1,9 @@
+{
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_packet_created": true,
+  "county_packet_created": true,
+  "lessons_updated": false,
+  "blocker_basis": "live_sped_topic_directory_plus_open_office_config_packetization"
+}

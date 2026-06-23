@@ -38,3 +38,6 @@
 
 ### Live Directory Glossaries Can Hide The Real Query Contract In An Embedded Bundle
 *   **Lesson:** If an official state directory page explicitly says it is a searchable database, do not keep chasing retired legacy paths. Minnesota MDE exposed a live `MDE-ORG` root, but the usable directory front-end was tucked into an embedded bundle while adjacent public search surfaces were Radware-challenged, so the right next lane became browser-assisted contract capture, not more guessed URL probes.
+
+### State Packetize Open-But-Incomplete Official Apps Once The Exact Layers Are Known
+*   **Lesson:** Once an official map or directory stack is narrowed to exact public layers and exact missing fields, save that as a blocker packet instead of re-probing the same app. Nebraska’s NDE and DHHS lanes were both live enough to identify exact next roots, but still incomplete for county-grade proof.
