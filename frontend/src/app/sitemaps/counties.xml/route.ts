@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getCounties, getCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb } from '@/lib/db';
+import { getCounties, getCountyDetails, getBulkCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState } from '@/lib/publicTruth';
 import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
@@ -25,27 +25,33 @@ export async function GET() {
   const today = '2026-06-08';
 
   let allCounties: County[] = [];
+  const countyDetailsMap = new Map();
   try {
-    allCounties = await getCounties();
+    const states = await getAllStates();
+    const indexableStates = states.filter(s => isIndexableState(s.id));
+    
+    const countiesPromises = indexableStates.map(s => getCounties(s.id));
+    const countiesLists = await Promise.all(countiesPromises);
+    allCounties = countiesLists.flat();
+
+    for (const s of indexableStates) {
+      const stateMap = await getBulkCountyDetails(s.id);
+      for (const [key, val] of stateMap.entries()) {
+        countyDetailsMap.set(key, val);
+      }
+    }
   } catch (e) {
-    console.error('Failed to load counties from database:', e);
+    console.error('Failed to load counties or bulk details from database:', e);
     allCounties = [
       { id: 'los-angeles', name: 'Los Angeles', state_id: 'california', website: '' },
       { id: 'orange', name: 'Orange', state_id: 'california', website: '' }
     ];
-  }
-
-  // Pre-load county details for truth gating
-  const countyDetailsMap = new Map();
-  for (const c of allCounties) {
     try {
-      const details = await getCountyDetails(c.id);
-      if (details) {
-        countyDetailsMap.set(c.id, details);
-      }
-    } catch (e) {
-      console.error(`Failed to fetch details for county ${c.id}:`, e);
-    }
+      const la = await getCountyDetails('los-angeles');
+      if (la) countyDetailsMap.set('los-angeles', la);
+      const oc = await getCountyDetails('orange');
+      if (oc) countyDetailsMap.set('orange', oc);
+    } catch {}
   }
 
   // Filter counties using evaluateSeoPolicy
@@ -88,7 +94,8 @@ export async function GET() {
       lastVerifiedDate: lastVerDate,
       confidenceScore: confScore,
       hasRequiredContactInfo,
-      hasNoPlaceholderData
+      hasNoPlaceholderData,
+      hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || rcs.length > 0
     });
 
     if (shouldIncludeInSitemap(policy)) {
@@ -221,7 +228,8 @@ export async function GET() {
           hasOfficialSource: rcList.some((rc: any) => !!rc.source_url) || sdList.some((sd: any) => !!sd.source_url) || coList.some((co: any) => !!co.source_url),
           lastVerifiedDate: today,
           hasRequiredContactInfo: coList.length > 0,
-          hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(countyDetails))
+          hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(countyDetails)),
+          hasRealLocalAssets: sdList.length > 0 || coList.length > 0 || rcList.length > 0
         });
 
         if (shouldIncludeInSitemap(policy)) {

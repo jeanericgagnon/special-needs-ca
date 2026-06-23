@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, Program, getCounties, getCountyDetails } from '@/lib/db';
+import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, Program, getCounties, getCountyDetails, getBulkCountyDetails } from '@/lib/db';
 import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
 
 export async function GET() {
@@ -73,6 +73,7 @@ export async function GET() {
       }
     } else if (url.routeType === 'state-counties-hub') {
       const counties = await getCounties(url.stateId);
+      const countyDetailsMap = await getBulkCountyDetails(url.stateId);
       
       let hasRealLocalAssets = false;
       let totalConfidence = 0;
@@ -81,7 +82,7 @@ export async function GET() {
       let hasOfficialSource = false;
 
       for (const c of counties) {
-        const details = await getCountyDetails(c.id);
+        const details = countyDetailsMap.get(c.id);
         if (!details) continue;
 
         const offices = details.countyOffices || [];
@@ -129,7 +130,8 @@ export async function GET() {
           lastVerifiedDate: lastVerDate,
           confidenceScore: confScore,
           hasRequiredContactInfo,
-          hasNoPlaceholderData
+          hasNoPlaceholderData,
+          hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || rcs.length > 0
         });
 
         if (countyPolicy.index) {
@@ -230,6 +232,19 @@ export async function GET() {
         const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
         clusterXmlUrls.push(`  <url>
     <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
+      }
+    } else if (['forms', 'deadlines', 'situations'].includes(cluster.category)) {
+      const policy = evaluateSeoPolicy({
+        routeType: 'static-page',
+        hasNoPlaceholderData: true
+      });
+
+      if (shouldIncludeInSitemap(policy)) {
+        clusterXmlUrls.push(`  <url>
+    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);

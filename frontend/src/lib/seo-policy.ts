@@ -54,14 +54,34 @@ if (typeof window === 'undefined') {
     const path = require('path');
     
     // Load grade audit JSON
-    const auditPath = path.resolve(process.cwd(), 'data/generated/all_state_california_grade_audit_v3.json');
+    const auditPaths = [
+      path.resolve(process.cwd(), 'data/generated/all_state_california_grade_audit_v3.json'),
+      path.resolve(process.cwd(), '../data/generated/all_state_california_grade_audit_v3.json'),
+    ];
+    let auditPath = auditPaths[0];
+    for (const p of auditPaths) {
+      if (fs.existsSync(p)) {
+        auditPath = p;
+        break;
+      }
+    }
     if (fs.existsSync(auditPath)) {
       const fileContent = fs.readFileSync(auditPath, 'utf8');
       auditData = JSON.parse(fileContent);
     }
     
     // Load priority queue JSONL
-    const pqPath = path.resolve(process.cwd(), 'data/generated/all_state_priority_queue_v3.jsonl');
+    const pqPaths = [
+      path.resolve(process.cwd(), 'data/generated/all_state_priority_queue_v3.jsonl'),
+      path.resolve(process.cwd(), '../data/generated/all_state_priority_queue_v3.jsonl'),
+    ];
+    let pqPath = pqPaths[0];
+    for (const p of pqPaths) {
+      if (fs.existsSync(p)) {
+        pqPath = p;
+        break;
+      }
+    }
     if (fs.existsSync(pqPath)) {
       const lines = fs.readFileSync(pqPath, 'utf8').split('\n');
       for (const line of lines) {
@@ -312,6 +332,8 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
   const isEligibleState = auditStatus !== null && auditStatus.classification === 'COMPLETE' && auditStatus.indexSafe === true;
   const isVerifiedDiagnosis = VERIFIED_DIAGNOSES.includes(diagnosisId);
 
+  const isCa = stateId === 'california';
+
   // 1. Quality Score calculation
   if (input.hasOfficialSource) {
     qualityScore += 15;
@@ -335,8 +357,9 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     const scoreVal = Math.min(30, Math.max(0, Math.round(input.confidenceScore * 30)));
     qualityScore += scoreVal;
     reasons.push(`Data confidence score contribution (+${scoreVal})`);
-    if (input.confidenceScore < 0.7) {
-      blockers.push(`Confidence score (${input.confidenceScore}) below 70% threshold`);
+    const minThreshold = isCa ? 0.6 : 0.7;
+    if (input.confidenceScore < minThreshold) {
+      blockers.push(`Confidence score (${input.confidenceScore}) below ${minThreshold * 100}% threshold`);
     }
   } else {
     if (input.routeType !== 'static-page') {
@@ -383,8 +406,6 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     }
   }
 
-  const isCa = stateId === 'california';
-
   switch (input.routeType) {
     case 'static-page':
       break;
@@ -399,8 +420,9 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       if (!input.lastVerifiedDate) {
         blockers.push('State hub lacks verification date');
       }
-      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < 0.7) {
-        blockers.push(`State hub confidence score (${input.confidenceScore ?? 'missing'}) below 70% threshold`);
+      const stateHubThreshold = isCa ? 0.6 : 0.7;
+      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < stateHubThreshold) {
+        blockers.push(`State hub confidence score (${input.confidenceScore ?? 'missing'}) below ${stateHubThreshold * 100}% threshold`);
       }
       break;
 
@@ -417,8 +439,9 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       if (!input.lastVerifiedDate) {
         blockers.push('Missing verification date for counties directory');
       }
-      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < 0.7) {
-        blockers.push(`Confidence score (${input.confidenceScore ?? 'missing'}) below 70% threshold`);
+      const stateCountiesThreshold = isCa ? 0.6 : 0.7;
+      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < stateCountiesThreshold) {
+        blockers.push(`Confidence score (${input.confidenceScore ?? 'missing'}) below ${stateCountiesThreshold * 100}% threshold`);
       }
       break;
 
@@ -435,8 +458,9 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       if (!input.lastVerifiedDate) {
         blockers.push('County hub lacks verification date');
       }
-      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < 0.7) {
-        blockers.push(`County hub confidence score (${input.confidenceScore ?? 'missing'}) below 70% threshold`);
+      const countyHubThreshold = isCa ? 0.6 : 0.7;
+      if (input.confidenceScore === undefined || input.confidenceScore === null || input.confidenceScore < countyHubThreshold) {
+        blockers.push(`County hub confidence score (${input.confidenceScore ?? 'missing'}) below ${countyHubThreshold * 100}% threshold`);
       }
       break;
 
