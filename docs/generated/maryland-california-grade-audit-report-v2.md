@@ -1,10 +1,10 @@
 # Maryland California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 91
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 24
-- primary_gap_reason: only_two_maryland_county_district_rows_are_locally_verified_while_the_remaining_county_equivalents_still_depend_on_statewide_special_education_fallbacks
+- primary_gap_reason: all_critical_families_verified_with_reviewed_first_party_or_official_evidence
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_twenty_two_county_equivalent_districts_still_on_statewide_fallbacks (Maryland has 24 county-equivalent school systems, but only Montgomery and Prince George's currently have district-owned local routing rows; the remaining 22 still depend on statewide MSDE special-education fallback evidence.)
+- district_or_county_education_routing: verified_state_grade (The official MSDE Local School Systems page now preserves all 24 Maryland county-equivalent school systems in reviewed first-party HTML, with each row naming the county or Baltimore City system plus superintendent, address, phone, school-year dates, and district website.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (Reviewed Disability Rights Maryland About page explicitly preserves designated Protection & Advocacy language.)
 - parent_training_information_center: verified_state_grade (Reviewed Parents’ Place of Maryland About page explicitly preserves PTI designation.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: twenty_two_county_equivalent_districts_still_depend_on_statewide_special_education_fallbacks :: Maryland has 24 county-equivalent school systems, but the current packet still proves only Montgomery and Prince George's with district-owned local rows; the remaining 22 district rows still point to generic statewide MSDE special-education pages rather than county- or district-owned leaves.
+- none
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.maryland.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.maryland.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://marylandpublicschools.org/programs/SpecialEducation/
-- district_or_county_education_routing: blocked_twenty_two_county_equivalent_districts_still_on_statewide_fallbacks; samples=3; first=https://marylandpublicschools.org/programs/SpecialEducation/
+- district_or_county_education_routing: verified_state_grade; samples=24; first=https://marylandpublicschools.org/about/Pages/School-Systems/index.aspx
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://dda.health.maryland.gov
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://disabilityrightsmd.org/about/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.ppmd.org/about-us/
@@ -44,10 +44,10 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
+- [info] maintenance: Preserve Maryland as COMPLETE/index_safe and rerun only maintenance truth audits unless the MSDE Local School Systems directory regresses.
 
 ## Completion decision
 
-- Maryland remains `BLOCKED` and `index_safe=false`.
-- County-local disability routing is now repaired: the official Maryland DHS Local Offices root exposes 24 county-equivalent leaf pages and county-specific contact details.
-- Education routing remains the only critical blocker because 22 of 24 county-equivalent school-system rows still depend on statewide MSDE special-education fallback evidence instead of district-owned leaves.
+- Maryland is now `COMPLETE` and `index_safe=true`.
+- County-local disability routing stays repaired because the official Maryland DHS Local Offices root exposes 24 county-equivalent leaf pages and county-specific contact details.
+- Education routing is now repaired because the live official MSDE About page links a Local School Systems index that preserves all 24 county-equivalent school-system rows directly in first-party HTML instead of relying on statewide special-education fallback evidence.

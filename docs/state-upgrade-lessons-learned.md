@@ -596,3 +596,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Exact Local Leaves Still Stay Blocked If The Public Directory Never Names Counties
 *   **Lesson:** When an official district or office directory exposes real local leaves, run one bounded text check for county labels and role-specific fields before reopening mapping work. Idaho’s SDE district directory exposed 116 district links and DHW exposed 27 office leaves, but the public pages still lacked county terms like `Canyon County` and lacked district special-education fields, so both families stayed blocked on missing county-keyed routing rather than on “no exact leaves.”
+
+### Live Section Landings Can Reveal The Real Index After Guessed Pages 404
+*   **Lesson:** If guessed `.../Pages/...` education URLs 404, inspect the live official section landing page before broadening discovery. Maryland’s MSDE About page linked a live `Local School Systems` index on `/about/Pages/School-Systems/index.aspx`, and that one first-party directory preserved all 24 county-equivalent school-system rows with names, superintendent, address, phone, and district website.
