@@ -282,3 +282,6 @@
 
 ### Reverse-Geocoded Office Points Can Sharpen A County-Local Blocker Without Faking Service Areas
 *   **Lesson:** If a live official office API gives exact coordinates but no county or service-area field, one bounded official/federal reverse-geocode pass can still sharpen the blocker truthfully. Utah's DWS office inventory geocoded into only 26 of 29 counties, which proved the family was blocked both because service-area assignments were missing and because Daggett, Morgan, and Rich lacked even an in-county office point.
+
+### ExperienceBuilder Datasource Registries Can Prove There Is No Hidden Public County Contract
+*   **Lesson:** If a public ExperienceBuilder app's datasource registry materializes only the shared web map plus widget-output layers, treat that as affirmative evidence that there is no hidden public assignment table on the app surface. Nebraska's office locator exposed only the web map, a closest-office output, and an ArcGIS geocoder layer, which confirmed the blocker was a true missing county contract rather than an undiscovered public datasource.

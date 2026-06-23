@@ -1,0 +1,11 @@
+{
+  "batch": "batch283_nebraska_datasource_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "failure_code": "official_public_office_service_root_has_no_tables_no_relationships_and_webmap_datasources_only_materialize_locator_outputs",
+  "datasource_registry_only_has_locator_outputs": true,
+  "lessons_updated": false
+}
