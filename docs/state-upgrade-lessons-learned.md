@@ -611,3 +611,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Bigger Staging Files Do Not Cure Authenticated Local-Office Gaps
 *   **Lesson:** If an older staging artifact is broader than the current public office contract, inspect the row semantics before treating it as progress. Florida’s `staging_dcf_access_offices.json` had 61 rows, but they were still only `source_listed` community partners, kiosks, storefronts, and hubs rooted in generic MyACCESS rather than a newly reviewed anonymous county contract.
+
+### Reconcile Blocker Counts Against Live DB Rows Before Trusting Narrative Numbers
+*   **Lesson:** If a blocker claims `N exact rows` or `N legacy rows`, run one quick DB reconciliation before carrying that number forward. Idaho’s county-local packet said 17 DOI-backed office rows, but the live DB had 18 DOI rows, 27 legacy-locator rows, and a duplicated Canyon County pair (Caldwell and Nampa), which materially changed the next action.
