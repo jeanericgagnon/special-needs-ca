@@ -52,3 +52,4 @@
 - The public county-complete DCF contacts.csv is now disproven more exactly as a county-local repair lane: its role fields never name ACCESS, Medicaid, SNAP, TANF, economic self-sufficiency, food assistance, or cash assistance across all 109 public rows.
 - The Family Resource Center storefront lane still covers only 34/67 counties, and the MyACCESS county-result endpoints remain authenticated-only under `/accountmanagement`.
 - Florida should only reopen county-local once a first-party public-assistance county contract appears publicly or the existing MyACCESS county-result lane becomes anonymously reviewable.
+

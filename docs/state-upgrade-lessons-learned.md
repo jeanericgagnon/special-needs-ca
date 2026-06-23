@@ -704,3 +704,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Uniform Short 403 Shells Across Root And Child Paths Mean Host-Wide Block, Not Child-Path Churn
 *   **Lesson:** If the official root and every bounded child-path guess return the same short branded 403 shell, stop treating it as a directory-discovery problem. Mississippi MDEK12 was faster to classify once the root and directory guesses all matched the same Azure Application Gateway 403 response.
+
+### Leaf Authoring Packets Need Real Local Roots Before They Count As Runnable
+*   **Lesson:** If a state packet says the next lane is district-owned or county-owned leaf authoring, verify that live or staging inventory already preserves at least one real local root per affected county. Arizona had a leaf-authoring packet but zero district-owned roots in either live or staging rows, so the honest next lane is root authoring first, not leaf verification.
+
+### County-Complete Official CSVs Still Fail If Role Fields Never Name The Required Program
+*   **Lesson:** When a public official CSV is county-complete, audit only the role-bearing fields before treating it as a routing win. Florida’s `contacts.csv` covered all 67 counties, but the `type`, `name`, `title`, `services`, and `website_link` fields had zero matches for ACCESS, Medicaid, SNAP, TANF, or economic-self-sufficiency terms, so it stayed blocked as the wrong service contract.

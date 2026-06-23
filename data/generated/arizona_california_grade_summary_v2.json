@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "azed_host_challenged_and_ahcccs_sitemap_exposes_no_county_office_contract",
+  "primary_gap_reason": "zero_district_root_inventory_and_ahcccs_sitemap_exposes_no_county_office_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,8 +41,8 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "azed_host_blocks_root_robots_and_sitemap_so_district_leafs_must_come_from_district_sites",
-      "evidence": "Reviewed 2026-06-22 bounded live official Arizona education probes across the existing statewide root https://www.azed.gov/specialeducation plus host-level discovery surfaces https://www.azed.gov/robots.txt and https://www.azed.gov/sitemap.xml. All three returned HTTP 403 with the Cloudflare \"Just a moment...\" challenge shell, and the previously checked likely replacement leaves https://www.azed.gov/school-district-web-sites/, https://www.azed.gov/asd/school-district-web-sites/, https://www.azed.gov/exceptionalstudentservices/, and https://www.azed.gov/ess did the same. The current DB inventory remains placeholder-only at 15/15 statewide AZED fallback rows, and the deterministic authoring packet already on disk (data/generated/arizona_district_or_county_education_routing_leaf_authoring_packet_v1.json) still shows authoredExactLeafCount=0 across Apache, Cochise, Coconino, Gila, Graham, Greenlee, La Paz, Maricopa, Mohave, Navajo, Pima, Pinal, Santa Cruz, Yavapai, and Yuma. Arizona education therefore cannot reopen on AZED-host discovery and still requires district-owned leaf authoring."
+      "failure_code": "no_district_owned_arizona_root_inventory_exists_in_live_or_staging_packet",
+      "evidence": "Reviewed 2026-06-22 current Arizona education blocker artifacts, the live school_districts DB rows, the staging_scraped_school_districts rows, and the on-disk district packet. All 15 live Arizona school_district rows still point at the same statewide AZED fallback source https://www.azed.gov/specialeducation, while the 13 Arizona staging rows still point at the older statewide placeholder https://www.education.arizona.gov. Neither inventory preserves a single district-owned Arizona root domain, and the packet still reports authoredExactLeafCount=0. Because the official AZED root, likely replacement leaves, robots.txt, and sitemap.xml are all challenge-blocked, Arizona cannot jump straight to district-owned leaf verification yet; it first needs county-keyed district-root authoring from outside the challenged AZED host."
     },
     {
       "family": "county_local_disability_resources",

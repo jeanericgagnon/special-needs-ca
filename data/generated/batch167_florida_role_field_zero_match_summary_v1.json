@@ -1,0 +1,17 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_contacts_csv_row_count": 109,
+  "county_complete_contact_rows": true,
+  "role_field_zero_match_terms": [
+    "access",
+    "medicaid",
+    "snap",
+    "tanf",
+    "economic self-sufficiency",
+    "food assistance",
+    "cash assistance"
+  ],
+  "lessons_updated": false
+}

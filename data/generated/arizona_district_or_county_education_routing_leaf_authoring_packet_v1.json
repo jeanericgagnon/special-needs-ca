@@ -2,14 +2,18 @@
   "state": "arizona",
   "state_code": "AZ",
   "family": "district_or_county_education_routing",
-  "repair_lane": "district_owned_leaf_authoring_only",
-  "purpose": "Deterministic authoring packet for replacing statewide Arizona education fallback rows with district-owned special-education or student-services leaves after AZED-host discovery proved exhausted.",
+  "repair_lane": "county_keyed_district_root_authoring_then_leaf_authoring",
+  "purpose": "Deterministic authoring packet for Arizona education that must first attach one district-owned root per affected county before any district special-education leaf verification can begin.",
   "current_problem_metrics": {
     "genericFallbackCountyRows": 15,
     "challengedOfficialRoots": 8,
     "authoredExactLeafCount": 0,
     "statewideFallbackRows": 15,
-    "azedHostExhaustedRoots": 8
+    "azedHostExhaustedRoots": 8,
+    "liveDistinctRootCount": 1,
+    "stagingDistinctRootCount": 1,
+    "liveDistrictOwnedRootCount": 0,
+    "stagingDistrictOwnedRootCount": 0
   },
   "exact_target_goals": [
     "district special education page",
@@ -25,11 +29,12 @@
     "special education contact"
   ],
   "representative_sources": [
-    "existing district-owned local domains to be authored from outside the challenged AZED host",
-    "https://www.azed.gov/specialeducation"
+    "district-owned Arizona K-12 domains must be authored first from outside the challenged AZED host",
+    "https://www.azed.gov/specialeducation",
+    "https://www.education.arizona.gov"
   ],
   "root_domains_to_review": [
-    "district-owned Arizona K-12 domains only",
+    "county-keyed Arizona district-owned domains only",
     "do not reopen AZED host discovery until the challenge clears on root, likely replacement leaves, robots.txt, and sitemap.xml"
   ],
   "affected_counties": [
@@ -49,5 +54,5 @@
     "yavapai-az",
     "yuma-az"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is authored for every Arizona county without relying on the challenged AZED host."
+  "packet_complete_when": "At least one district-owned Arizona root is authored for every affected county and then at least one reviewed district-owned education-routing leaf is attached per county without relying on challenged AZED-host placeholders."
 }

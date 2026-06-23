@@ -1,0 +1,12 @@
+{
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "live_fallback_rows": 15,
+  "staging_fallback_rows": 13,
+  "live_distinct_root_count": 1,
+  "staging_distinct_root_count": 1,
+  "live_district_owned_root_count": 0,
+  "staging_district_owned_root_count": 0,
+  "lessons_updated": false
+}
