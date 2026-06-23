@@ -1,0 +1,11 @@
+{
+  "state": "kansas",
+  "batch": "batch238_kansas_sedgwick_search_freeze_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "sedgwick_root": "https://www.usd259.org/",
+  "sedgwick_site_map": "https://www.usd259.org/site-map",
+  "sedgwick_search": "https://www.usd259.org/search-results?q=special%20education",
+  "primary_gap_reason": "reviewed_kansas_district_owned_leaves_exist_but_full_county_grade_coverage_is_incomplete",
+  "lesson_added": false
+}

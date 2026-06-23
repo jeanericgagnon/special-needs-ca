@@ -1,0 +1,20 @@
+{
+  "state": "arizona",
+  "batch": "batch236_arizona_county_owned_education_repair_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "resolved_county_owned_leaf_counties": [
+    "cochise-az",
+    "gila-az",
+    "navajo-az",
+    "pima-az"
+  ],
+  "remaining_reviewed_public_domain_without_leaf_counties": [
+    "coconino-az",
+    "mohave-az",
+    "yavapai-az"
+  ],
+  "county_local_resources_still_blocked": true,
+  "primary_gap_reason": "education_gap_now_limited_to_reviewed_no_leaf_public_domains_plus_des_county_office_blocker",
+  "lesson_added": false
+}

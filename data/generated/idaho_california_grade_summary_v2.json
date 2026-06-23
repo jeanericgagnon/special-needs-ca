@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "reviewed_idaho_district_leaves_exist_but_county_grade_education_and_dhw_mapping_remain_incomplete",
+  "primary_gap_reason": "reviewed_idaho_district_leaves_exist_and_dhw_split_is_explicit_but_county_grade_remains_incomplete",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -51,9 +51,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_dhw_office_stack_has_zero_county_fields_and_only_17_clean_leaf_matches",
-      "evidence": "Reviewed 2026-06-23 live official Idaho DHW sources at https://healthandwelfare.idaho.gov/offices and https://healthandwelfare.idaho.gov/sitemap.xml. The public office directory HTML preserves named office entries such as Caldwell, Boise, Blackfoot, Idaho Falls, and Sandpoint-Ponderay and the sitemap preserves exact office leaves, but the office directory HTML exposes zero county terms or county-served fields. The county-local packet still resolves only 17 clean county-to-office leaf matches plus one Canyon split, while 27 counties remain on the dead legacy locator https://dhhs.idaho.gov/locations with no public county-to-office contract.",
-      "next_action": "use_materialized_exact_office_leaf_packet_for_17_clean_counties_keep_canyon_split_and_27_legacy_counties_blocked"
+      "failure_code": "official_dhw_office_stack_supports_17_clean_leaf_matches_but_27_legacy_counties_still_lack_public_contract",
+      "evidence": "Reviewed 2026-06-23 bounded live Idaho DHW confirmation on the official root plus the existing office-leaf packet. The public root at https://healthandwelfare.idaho.gov/offices is live with title `Find a Service Location` and still preserves exact city office cards like Caldwell Office in HTML, but it exposes zero county terms or county-served fields. The exact office leaf https://healthandwelfare.idaho.gov/dhw/caldwell-office is live with title `Caldwell Office`, confirming that the packet is grounded in real reviewable DHW office leaves. Idaho county-local routing therefore splits cleanly into 17 safe county-to-exact-office replacements plus one Canyon split that still rejects Nampa as SWITC-only, while 27 counties remain blocked because the public DHW stack still exposes no truthful county-to-office contract for them.",
+      "next_action": "retain_17_clean_exact_office_replacements_keep_canyon_split_explicit_and_leave_27_legacy_counties_blocked_until_idaho_publishes_county_contract"
     }
   ]
 }

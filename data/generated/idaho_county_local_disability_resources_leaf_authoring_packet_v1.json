@@ -13,7 +13,9 @@
     "doiMirrorCountyCount": 17,
     "exactLeafUrlsMaterialized": 23,
     "cleanCountyLeafMatches": 17,
-    "canyonSplitOpen": true
+    "canyonSplitOpen": true,
+    "reviewedBlockedLegacyCountyCount": 27,
+    "reviewedCleanReplacementCount": 17
   },
   "exact_target_goals": [
     "exact DHW office leaf with address and phone",

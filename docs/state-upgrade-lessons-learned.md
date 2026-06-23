@@ -173,3 +173,12 @@
 
 ### District CMS `fs/pages` Links Can Hide Exact Special-Education Leaves
 *   **Lesson:** If a district-owned program page lists `Special Education` or `504 Plans` but the URL structure looks opaque, follow the linked CMS `fs/pages/<id>` route before leaving the county as signal-only. Idaho’s Blaine district promoted once the hidden `fs/pages/2147` route resolved to a real district-owned `Special Education` leaf with procedural-safeguards text.
+
+### Null District Websites Can Still Resolve Through County Superintendent Hosts
+*   **Lesson:** If the Arizona report-cards API preserves a county-keyed district row but `district_website` is null, do one bounded county-superintendent pass before declaring the county blocked. Cochise, Gila, Navajo, and Pima all resolved through county-owned district or accommodation pages even though the official state inventory showed no public district site.
+
+### Split Partial Office Coverage Into Clean Replacements Versus Truly Unmapped Counties
+*   **Lesson:** If a live official office root proves exact office leaves but still exposes no county-served fields, separate the safe county-to-leaf replacements from the truly unmapped counties instead of leaving one generic blocker. Idaho DHW could truthfully support 17 exact county office replacements plus a Canyon split while 27 legacy counties stayed explicitly blocked.
+
+### Internal Site Search Can Be A Valid Final Negative Check
+*   **Lesson:** If a district-owned host already failed obvious role-exact paths, one bounded pass across its public site map and internal search can be enough to freeze it as reviewed-without-leaf. Wichita USD 259 returned 200 on homepage, site-map, and internal search, but none exposed a role-exact special-education or student-services leaf.
