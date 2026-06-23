@@ -2,8 +2,8 @@
   "state": "arizona",
   "state_code": "AZ",
   "family": "county_local_disability_resources",
-  "repair_lane": "county_district_leaf_repair",
-  "purpose": "Deterministic authoring packet for replacing DOI and generic locator fallback rows with reviewed Arizona county-specific Medicaid or DES office leaves.",
+  "repair_lane": "evidence_only_until_county_office_contract_exists",
+  "purpose": "Deterministic evidence packet for Arizona county-local routing while the official hosts still expose offices but no county-to-office contract.",
   "current_problem_metrics": {
     "doiFallbackCountyRows": 14,
     "genericLegacyRootRows": 1,
@@ -12,7 +12,8 @@
     "nonresolvingCountyRootCount": 14,
     "blockedCountyRootCount": 1,
     "doiPlaceholderRows": 14,
-    "genericLegacyLocatorRows": 1
+    "genericLegacyLocatorRows": 1,
+    "desHostExhaustedRoots": 8
   },
   "exact_target_goals": [
     "county or regional FAA office page",
@@ -29,17 +30,14 @@
     "address"
   ],
   "representative_sources": [
-    "https://doi.org/10.7910/DVN/AVRHMI",
-    "https://dhhs.arizona.gov/locations"
+    "https://www.azahcccs.gov/members/ALTCSlocations.html",
+    "https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf",
+    "https://www.azahcccs.gov/shared/AHCCCScontacts.html",
+    "https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html"
   ],
   "root_domains_to_review": [
-    "replace current DB county roots; 14 of 15 current Arizona county roots do not resolve and Maricopa returns HTTP 403",
-    "https://des.az.gov/",
-    "https://des.az.gov/office-locator",
-    "https://des.az.gov/services/basic-needs/apply-for-benefits/where-to-apply",
-    "https://des.az.gov/find-your-local-office",
-    "https://www.azahcccs.gov/Members/GetCovered/Categories/where.html",
-    "https://www.azahcccs.gov/AHCCCS/Downloads/FFA.pdf"
+    "reviewable AHCCCS leaves only",
+    "do not reopen DES host discovery until the challenge clears on root, robots.txt, sitemap.xml, and office-locator leaves"
   ],
   "affected_counties": [
     "apache-az",
@@ -58,5 +56,5 @@
     "yavapai-az",
     "yuma-az"
   ],
-  "packet_complete_when": "At least one reviewed county-specific office leaf is authored for every Arizona county without relying on DOI or generic state-root placeholders."
+  "packet_complete_when": "Arizona can reopen only when a reviewed official county-to-office contract appears on AHCCCS or DES, not from DOI placeholders, support-letter PDFs, or generic locator guesses."
 }

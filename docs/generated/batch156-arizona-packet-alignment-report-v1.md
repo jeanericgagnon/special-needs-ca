@@ -54,3 +54,4 @@
 - Education is still a district-owned leaf authoring problem, but the packet now makes that explicit by removing AZED-host sibling guesses from the active next lane.
 - County-local is still blocked on a missing county-to-office contract, and the packet now treats DES as exhausted and AHCCCS as evidence-only rather than implying more generic office-locator discovery is still justified.
 - Arizona should only reopen when district-owned education leaves or a true AHCCCS or DES county-to-office contract is attached from official surfaces, not from statewide placeholders or exhausted host guesses.
+

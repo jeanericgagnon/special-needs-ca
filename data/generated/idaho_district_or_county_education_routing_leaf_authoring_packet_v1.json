@@ -2,7 +2,7 @@
   "state": "idaho",
   "state_code": "ID",
   "family": "district_or_county_education_routing",
-  "repair_lane": "county_district_leaf_repair",
+  "repair_lane": "district_owned_leaf_authoring_only",
   "purpose": "Deterministic authoring packet for replacing statewide Idaho SDE fallback rows with reviewed district-owned special-education or student-services leaves.",
   "current_problem_metrics": {
     "statewideFallbackRows": 42,
@@ -30,7 +30,7 @@
   ],
   "root_domains_to_review": [
     "district-owned Idaho K-12 domains reached from the official Idaho School Districts directory",
-    "https://www.sde.idaho.gov/school-districts/"
+    "do not reopen statewide SDE discovery until a district-owned leaf is attached"
   ],
   "affected_counties": [
     "ada-id",

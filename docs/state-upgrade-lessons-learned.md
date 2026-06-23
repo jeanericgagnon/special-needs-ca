@@ -644,3 +644,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### If A Real Official Form Exposes CSRF And Public IDs But Every Bounded Submit Returns 500, Packetize It As Manual Export
 *   **Lesson:** If an official public form exposes a real CSRF token, public selector IDs, and explicit submit actions but every bounded POST replay still returns 500, stop spending tokens on replay variations and move the lane to a manual-export packet. Maine’s NEO SAU search proved the public contract was real, but the right next step was a deterministic capture packet, not more blind POST attempts.
+
+### When A State Packet Is Decision-Complete, Trim Exhausted Guess Roots Out Of The Next Lane
+*   **Lesson:** Once a blocker is decision-complete, update the state packet so it stops advertising exhausted sibling roots as if they were still live next steps. Arizona became safer once the packet stopped pointing future work back at challenged `AZED` and `DES` guess URLs and instead preserved only the real surviving lanes: district-owned local sites for education and evidence-only AHCCCS surfaces for county routing.
+
+### Once A County Packet Depends On Authenticated Results, Stop Treating Source-Listed Partner Rows As Authoring Seeds
+*   **Lesson:** If the remaining county coverage lives behind an authenticated official result contract, strip generic source-listed partner, kiosk, and storefront rows out of the active authoring lane. Florida’s 61-row MyACCESS staging file looked richer than the public contract, but it only recycled authenticated or generic partner material and would have caused churn if we kept treating it like scrape-ready county evidence.
+
+### When A Blocked Family Uses Sample Evidence, Keep The Samples Distinct
+*   **Lesson:** If a blocked family sample set is meant to justify different parts of the blocker, do not repeat the same directory row multiple times. Idaho’s county-local sample set became more useful once it preserved distinct evidence for the statewide office directory, the sitemap office-leaf surface, the exact Caldwell office leaf, and the Nampa negative proof instead of repeating the same `/offices` sample.

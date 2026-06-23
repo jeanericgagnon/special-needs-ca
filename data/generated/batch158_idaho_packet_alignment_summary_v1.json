@@ -1,0 +1,9 @@
+{
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_packet_aligned": true,
+  "county_packet_aligned": true,
+  "county_sample_set_deduped": true,
+  "lessons_updated": false
+}

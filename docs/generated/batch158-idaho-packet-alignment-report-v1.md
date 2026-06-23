@@ -53,3 +53,4 @@
 - Idaho remains BLOCKED and not index-safe.
 - Education is still blocked on county-keyed or reviewed district special-education routing, but the next lane now has a dedicated Idaho district-owned leaf packet instead of only a statewide directory blocker, and that packet no longer implies more statewide SDE discovery is useful.
 - County-local is still blocked because the public office directory does not map exact office leaves back to counties, but the next lane now has a dedicated Idaho office-leaf packet that captures the 18 exact matches, 27 legacy rows, and the unresolved Canyon/Nampa split with distinct supporting evidence rather than repeated directory samples.
+

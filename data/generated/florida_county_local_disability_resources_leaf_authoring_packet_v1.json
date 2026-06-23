@@ -2,12 +2,20 @@
   "state": "florida",
   "state_code": "FL",
   "family": "county_local_disability_resources",
-  "repair_lane": "county_district_leaf_repair",
-  "purpose": "Deterministic authoring packet for replacing generic or statewide evidence with county/district exact leaf targets.",
+  "repair_lane": "evidence_only_until_anonymous_public_county_contract_exists",
+  "purpose": "Deterministic evidence packet for Florida county-local routing while public Family Resource Center coverage remains partial and the remaining MyACCESS county-result contract is authenticated-only.",
   "current_problem_metrics": {
-    "dbFieldAgencyLabelCount": 2,
-    "federalMismatchCount": 48,
-    "genericRootCount": 12
+    "publicCountyCoverageRows": 34,
+    "missingCountyCount": 33,
+    "authenticatedCountyEndpoints": 2,
+    "stagingSourceListedRows": 61,
+    "stagingCommunityPartnerRows": 25,
+    "stagingStorefrontRows": 13,
+    "stagingKioskRows": 11,
+    "stagingServiceCenterRows": 8,
+    "stagingRegionalHubRows": 2,
+    "stagingOnlinePortalRows": 1,
+    "stagingCentralCallCenterRows": 1
   },
   "exact_target_goals": [
     "county office contact page",
@@ -26,77 +34,14 @@
     "phone"
   ],
   "representative_sources": [
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - Bradford County Health Department",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    },
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - Charlotte County Health Department",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    },
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - Citrus County Family Resource Center",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    },
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - Columbia County Health Department",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    },
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - DeSoto County Health Department",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    },
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - Flagler County Health Department",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    },
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - Gadsden County Health Department",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    },
-    {
-      "entity_kind": "county_offices",
-      "entity_name": "ACCESS Community Partner - Hardee County Health Department",
-      "source_url": "https://myaccess.myflfamilies.com",
-      "source_domain": "myaccess.myflfamilies.com",
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "verification_status": "verified"
-    }
+    "https://familyresourcecenter.myflfamilies.com/",
+    "https://familyresourcecenter.myflfamilies.com/providers.csv",
+    "https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails",
+    "https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch"
   ],
   "root_domains_to_review": [
-    {
-      "source_root": "https://myaccess.myflfamilies.com/",
-      "source_domain": "myaccess.myflfamilies.com",
-      "sample_entity_name": "ACCESS Community Partner - Bradford County Health Department"
-    }
+    "reviewable anonymous public Florida DCF or MyACCESS county contracts only",
+    "do not reuse source_listed partner, kiosk, storefront, or hub rows from staging_dcf_access_offices.json as county authoring seeds"
   ],
-  "packet_complete_when": "At least one reviewed district/county/local exact target is authored for each affected critical family without relying on a generic root or statewide-only page."
+  "packet_complete_when": "Florida can reopen only when a first-party anonymous county dataset or another public office contract truthfully covers the remaining 33 counties."
 }

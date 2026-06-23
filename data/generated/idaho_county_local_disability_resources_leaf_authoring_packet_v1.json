@@ -2,7 +2,7 @@
   "state": "idaho",
   "state_code": "ID",
   "family": "county_local_disability_resources",
-  "repair_lane": "county_district_leaf_repair",
+  "repair_lane": "exact_office_alignment_then_hold_unmapped_counties",
   "purpose": "Deterministic authoring packet for replacing Idaho DOI and dead-locator office fallbacks with reviewed DHW office leaves where county mapping is publicly supportable.",
   "current_problem_metrics": {
     "doiMirrorRows": 18,
@@ -27,11 +27,14 @@
   ],
   "representative_sources": [
     "https://healthandwelfare.idaho.gov/offices",
-    "https://healthandwelfare.idaho.gov/sitemap.xml"
+    "https://healthandwelfare.idaho.gov/sitemap.xml",
+    "https://healthandwelfare.idaho.gov/dhw/caldwell-office",
+    "https://healthandwelfare.idaho.gov/offices?page=2"
   ],
   "root_domains_to_review": [
     "https://healthandwelfare.idaho.gov/offices",
-    "https://healthandwelfare.idaho.gov/sitemap.xml"
+    "https://healthandwelfare.idaho.gov/sitemap.xml",
+    "exact reviewed DHW office leaves only"
   ],
   "affected_counties": [
     "ada-id",

@@ -1,0 +1,10 @@
+{
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "county_packet_aligned": true,
+  "public_county_rows": 34,
+  "missing_counties": 33,
+  "staging_source_listed_rows": 61,
+  "lessons_updated": false
+}

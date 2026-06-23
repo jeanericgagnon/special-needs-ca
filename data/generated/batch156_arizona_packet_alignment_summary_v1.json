@@ -1,0 +1,11 @@
+{
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_packet_aligned": true,
+  "county_packet_aligned": true,
+  "statewide_education_fallback_rows": 15,
+  "county_doi_rows": 14,
+  "county_legacy_rows": 1,
+  "lessons_updated": false
+}

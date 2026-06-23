@@ -2,13 +2,14 @@
   "state": "arizona",
   "state_code": "AZ",
   "family": "district_or_county_education_routing",
-  "repair_lane": "county_district_leaf_repair",
-  "purpose": "Deterministic authoring packet for replacing generic statewide Arizona education fallback rows with district-owned special-education or student-services leaves.",
+  "repair_lane": "district_owned_leaf_authoring_only",
+  "purpose": "Deterministic authoring packet for replacing statewide Arizona education fallback rows with district-owned special-education or student-services leaves after AZED-host discovery proved exhausted.",
   "current_problem_metrics": {
     "genericFallbackCountyRows": 15,
     "challengedOfficialRoots": 8,
     "authoredExactLeafCount": 0,
-    "statewideFallbackRows": 15
+    "statewideFallbackRows": 15,
+    "azedHostExhaustedRoots": 8
   },
   "exact_target_goals": [
     "district special education page",
@@ -24,14 +25,12 @@
     "special education contact"
   ],
   "representative_sources": [
+    "existing district-owned local domains to be authored from outside the challenged AZED host",
     "https://www.azed.gov/specialeducation"
   ],
   "root_domains_to_review": [
-    "https://www.azed.gov/specialeducation",
-    "https://www.azed.gov/school-district-web-sites/",
-    "https://www.azed.gov/asd/school-district-web-sites/",
-    "https://www.azed.gov/exceptionalstudentservices/",
-    "https://www.azed.gov/ess"
+    "district-owned Arizona K-12 domains only",
+    "do not reopen AZED host discovery until the challenge clears on root, likely replacement leaves, robots.txt, and sitemap.xml"
   ],
   "affected_counties": [
     "apache-az",
@@ -50,5 +49,5 @@
     "yavapai-az",
     "yuma-az"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is authored for every Arizona county without relying on the challenged AZED root."
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is authored for every Arizona county without relying on the challenged AZED host."
 }

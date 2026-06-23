@@ -52,3 +52,4 @@
 - The reviewed official Family Resource Center HTML and CSV both still stop at 34 counties, and the broader 61-row staging artifact cannot cure the gap because it is still only source-listed MyACCESS partner, kiosk, storefront, hub, and portal material rather than a newly reviewed anonymous county contract.
 - The remaining MyACCESS lane is sharper than a generic JS-shell blocker: the public bundle points at same-domain county-search endpoints, but bounded anonymous POST probes to `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch` return `401 Unauthorized`.
 - Florida should only reopen county-local once the state publishes an anonymous county dataset or another public office contract for the remaining 33 counties, not by recycling the source-listed staging rows as local authoring seeds.
+
