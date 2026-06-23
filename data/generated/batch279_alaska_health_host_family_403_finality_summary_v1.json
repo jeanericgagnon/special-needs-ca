@@ -1,0 +1,14 @@
+{
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "blocker_family": "county_local_disability_resources",
+  "health_host_family_403": true,
+  "challenged_urls": [
+    "https://health.alaska.gov/robots.txt",
+    "https://health.alaska.gov/sitemap.xml",
+    "https://health.alaska.gov/wp-json/",
+    "https://health.alaska.gov/wp-sitemap.xml",
+    "https://health.alaska.gov/en/resources/",
+    "https://health.alaska.gov/en/services/"
+  ]
+}
