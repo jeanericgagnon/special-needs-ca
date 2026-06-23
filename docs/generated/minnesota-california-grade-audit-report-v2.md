@@ -51,6 +51,6 @@
 ## Completion decision
 
 - Minnesota remains BLOCKED and index_safe=false.
-- parent_training_information_center now clears from the authoritative Parent Center Hub Minnesota leaf.
-- district_or_county_education_routing remains blocked because the MDE-ORG root and child routes still flap into Radware and no stable county-grade export contract is reproducible.
-- county_local_disability_resources remains blocked on the replatformed DHS county-and-tribal captcha family.
+- district_or_county_education_routing remains blocked because exact bounded rechecks now show the MDE-ORG root itself flapping into Radware, while the child routes and analytics lane still do not yield a stable county-grade contract.
+- county_local_disability_resources remains blocked on the separate DHS county-and-tribal captcha family.
+- parent_training_information_center remains below standard because current PACER first-party pages still do not preserve explicit PTI designation text.
