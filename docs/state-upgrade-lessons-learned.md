@@ -249,3 +249,6 @@
 
 ### An Official School Directory PDF That Explicitly Organizes Districts By County Can Clear County-Grade Education Routing
 *   **Lesson:** If a live official school-directory PDF explicitly says districts are listed by county and preserves district contact blocks, that can clear county-grade education routing without district-owned special-education leaves. Oregon’s ODE School Directory page linked a current Combined Directory PDF whose own instructions and public-schools section both confirmed county organization and district contact fields.
+
+### A Live Official State School Directory Page With District Download Links Can Clear County-Grade Education Routing
+*   **Lesson:** If a live official education page explicitly says district contact information can be downloaded or browsed and exposes current district-directory download links, that can clear county-grade education routing even when older special-education leaf guesses collapse to a generic page. Oklahoma’s live `state-school-directory.html` page preserved the contract and fields directly on the current OSDE host.

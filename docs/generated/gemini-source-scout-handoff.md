@@ -26,7 +26,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - North Carolina: `generic_or_statewide_evidence_used_where_local_required`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Ohio: `retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only`
-- Oklahoma: `generic_state_education_page_collapse_and_dead_dhhs_locator_host`
+- Oklahoma: `official_osde_state_school_directory_clears_education_but_dead_dhhs_locator_host_and_planning_rows_still_block_county_local`
 - Oregon: `official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Carolina: `official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves`
@@ -40,42 +40,41 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oregon
+## Current Focus State: Oklahoma
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the top Oregon blocker in the state queue. The official ODE School Directory PDF clears education because it explicitly organizes districts by county and preserves district contact blocks, but the live ODHS office-finder root still returns only a generic `Find an Office` page in static HTML with no county list, no office extract, and no county-to-office contract.
+`county_local_disability_resources` is now the top Oklahoma blocker in the state queue. The official OSDE State School and District Directory page clears education because it explicitly exposes district contact fields and live directory downloads, but the former statewide DHHS locator host is dead and the remaining county-office rows still depend on dead-locator or DOI planning evidence.
 
 ### Exact Evidence Needed
 
-- Any official ODHS county-to-office contract, county list, or office extract from the live office-finder stack.
-- Or, official county-owned disability office leaves that can be truthfully mapped to Oregon counties.
-- The ODE school-directory PDF no longer needs repair, but the live ODHS office-finder root is still not enough without county-grade routing fields.
+- Any official Oklahoma county-to-office directory, county list, or county-owned human-services office leaves on a live state or county host.
+- The OSDE education directory no longer needs repair, but county-local still needs a live county-grade office contract.
 
 ### Useful Official URLs Already Tried
 
-- [ODE Special Education root](https://www.oregon.gov/ode/students-and-family/specialeducation/pages/default.aspx)
-- [ODE School Directory page](https://www.oregon.gov/ode/about-us/Pages/School-Directory.aspx)
-- [ODE Combined Directory PDF](https://www.oregon.gov/ode/about-us/Documents/CombinedDirectory_20260430_024706.pdf)
-- [ODHS Find an Office root](https://www.oregon.gov/odhs/pages/office-finder.aspx)
-- [ODHS home](https://www.oregon.gov/odhs/Pages/default.aspx)
-- [ODE home](https://www.oregon.gov/ode/Pages/default.aspx)
+- [OSDE home](https://oklahoma.gov/education.html)
+- [OSDE State School Directory page](https://oklahoma.gov/education/resources/state-school-directory.html)
+- [OSDE live school directory download link](https://oklahoma.gov/content/dam/ok/en/osde/documents/resources/state-directory/FY26MidyearOnlineDirectorySiteList.xlsx)
+- [OSDE live district directory download link](https://oklahoma.gov/content/dam/ok/en/osde/documents/resources/state-directory/FY26OnlineDirectoryDistrictList.xlsx)
+- [Oklahoma Human Services home](https://oklahoma.gov/okdhs.html)
+- [Former dead locator host](https://dhhs.oklahoma.gov/locations)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official ODHS county list, office extract, or county-to-office contract behind the live office-finder lane.
-- Any official county-owned disability office leaves that can replace DOI-backed planning rows.
-- Any machine-readable ODHS successor artifact to the dead `dhhs.oregon.gov/locations` host.
+- Any live Oklahoma county office directory or county-owned human-services office leaves.
+- Any official Oklahoma successor artifact to the dead `dhhs.oklahoma.gov/locations` host.
+- Any county-grade office extract that can replace the DOI-backed planning rows.
 
-## Next State Order After Oregon
+## Next State Order After Oklahoma
 
-1. Oklahoma
-2. Utah
-3. New Hampshire
-4. New Mexico
-5. New York
-6. North Carolina
-7. North Dakota
-8. Rhode Island
-9. South Carolina
-10. South Dakota
+1. Utah
+2. New Hampshire
+3. New Mexico
+4. New York
+5. North Carolina
+6. North Dakota
+7. Rhode Island
+8. South Carolina
+9. South Dakota
+10. Tennessee

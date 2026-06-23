@@ -9,13 +9,12 @@
   "county_count": 77,
   "completeness_pct": 83,
   "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_state_education_page_collapse_and_dead_dhhs_locator_host",
+  "primary_gap_reason": "official_osde_state_school_directory_clears_education_but_dead_dhhs_locator_host_and_planning_rows_still_block_county_local",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [],
@@ -40,18 +39,15 @@
   ],
   "final_blockers": [
     {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "education_leaf_guesses_collapse_to_generic_state_page",
-      "evidence": "Reviewed 2026-06-23 bounded live Oklahoma education checks. The only live school-district source URL on disk is the state root `https://sde.ok.gov/`, and `https://sde.ok.gov/special-education` plus in-site search guesses for district directory and special education all return HTTP 200 only by collapsing to the same generic Oklahoma State Department of Education page at `https://oklahoma.gov/education.html?page=543`. No district-owned or county-grade routing leaf is verified from this bounded pass.",
-      "next_action": "hold_blocked_until_new_exact_district_or_county_education_leaves_are_authored"
-    },
-    {
       "family": "county_local_disability_resources",
       "severity": "critical",
       "failure_code": "dead_dhhs_locator_host_plus_doi_planning_rows",
       "evidence": "Reviewed 2026-06-23 bounded live Oklahoma county-local checks. The current statewide locator source `https://dhhs.oklahoma.gov/locations` now fails DNS resolution, while the remaining county-office rows still split between that dead locator host and the DOI-hosted planning dataset. No live county-owned or state-maintained county office directory was verified in this bounded pass.",
       "next_action": "hold_blocked_until_new_live_county_grade_directory_or_county_owned_leaves_are_verified"
     }
-  ]
+  ],
+  "familyStatuses": {
+    "district_or_county_education_routing": "verified_current_official_state_school_directory",
+    "county_local_disability_resources": "blocked_dead_statewide_locator_and_planning_rows"
+  }
 }

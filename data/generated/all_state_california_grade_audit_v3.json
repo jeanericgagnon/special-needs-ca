@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:42:08.069Z",
+  "generatedAt": "2026-06-23T18:47:50.558Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -2528,7 +2528,7 @@
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 77,
       "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
       "completenessPct": 83,
@@ -2570,7 +2570,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_generic_state_page_collapse",
+        "district_or_county_education_routing": "verified_current_official_state_school_directory",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2581,7 +2581,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_6_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_state_education_page_collapse_and_dead_dhhs_locator_host",
+      "packetPrimaryGapReason": "official_osde_state_school_directory_clears_education_but_dead_dhhs_locator_host_and_planning_rows_still_block_county_local",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

@@ -1,0 +1,10 @@
+{
+  "batch": "batch268_oklahoma_official_state_school_directory_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "oklahoma",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_family_status": "verified_current_official_state_school_directory",
+  "remaining_blocker_family": "county_local_disability_resources",
+  "directory_page": "https://oklahoma.gov/education/resources/state-school-directory.html"
+}
