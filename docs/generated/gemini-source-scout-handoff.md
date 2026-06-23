@@ -31,7 +31,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - South Carolina: `official_school_directory_root_is_live_but_not_yet_converted_into_district_owned_special_education_leaves`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
-- Utah: `official_usbe_district_lea_directory_clears_education_and_live_dws_office_search_shell_still_lacks_public_county_office_contract`
+- Utah: `official_usbe_district_lea_directory_clears_education_and_public_dws_office_api_still_lacks_county_service_area_contract`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
@@ -39,51 +39,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Florida
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Florida critical blocker. The exact official `food-cash-and-medical` leaf now advertises `Find Local Offices`, but it still routes into a partial 34-county Family Resource Center storefront lane, the public circuit leaves in the sitemap still 404, and the anonymous MyACCESS county-result endpoints still return `401 Unauthorized`, so Florida remains BLOCKED and not index-safe.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the DWS office-search app now exposes a public official API at `https://officesearch-api.jobs.utah.gov/api/v1/offices`, but that API still publishes only office inventory fields like office name, address, coordinates, service code, and assistance instructions. It does not expose county fields, counties served, or another reusable county-to-office contract, so Utah remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any first-party Florida county-complete local-offices contract that publicly covers all 67 counties.
-- A reviewed anonymous MyACCESS county-result surface that returns public county-level local-office results without authentication.
-- A public official county-office CSV, HTML table, sitemap child family, or other exact first-party route that does more than point back to the partial Family Resource Center storefront lane.
+- Any first-party Utah county-complete office contract that explicitly maps counties to DWS, DHHS, or successor local offices.
+- Any public successor Utah office API field or companion endpoint that adds `county`, `countiesServed`, service-area, or district-style assignment data to the current office inventory.
+- Any official Utah county-owned or state-maintained human-services directory that preserves county routing more explicitly than the current office inventory API.
 
 ### Useful Official URLs Already Tried
 
-- [Florida DCF sitemap](https://www.myflfamilies.com/sitemap.xml)
-- [Florida DCF contact hub](https://www.myflfamilies.com/contact-us)
-- [Florida DCF contacts.csv](https://www.myflfamilies.com/contact-us/contacts.csv)
-- [Florida public assistance root](https://www.myflfamilies.com/services/public-assistance)
-- [Florida applying-for-assistance](https://www.myflfamilies.com/services/public-assistance/applying-for-assistance)
-- [Florida ESS FAQ](https://www.myflfamilies.com/services/public-assistance/economic-self-sufficiency-frequently-asked-questions/)
-- [Florida community resources](https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/community/)
-- [Florida food-cash-and-medical](https://www.myflfamilies.com/food-cash-and-medical)
-- [Florida Family Resource Center](https://familyresourcecenter.myflfamilies.com/)
-- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
-- [Florida MyACCESS Public/CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
-- [Florida MyACCESS Help/HCINT](https://myaccess.myflfamilies.com/Help/HCINT)
-- [Florida MyACCESS app config](https://myaccess.myflfamilies.com/config/appconfig.js)
-- [Florida MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
-- [Florida MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Live DWS Office Search map route](https://jobs.utah.gov/office-search/map)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
+- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
+- [Older DHHS locations route](https://dhhs.utah.gov/locations)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any first-party Florida DCF or MyACCESS public local-office export that covers the 33 counties missing from the public Family Resource Center lane.
-- Any live official `contact-us/circuit-*` successor children or replacement county-local leaves that no longer 404 and actually preserve county office routing.
-- Any anonymous public county-result endpoint or downloadable local-office dataset on the current `myflfamilies.com` or `myaccess.myflfamilies.com` stack.
+- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the 45 unique office records.
+- Any reviewed official Utah local-office directory that explicitly names counties served, especially where office names are city-based rather than county-based.
+- Any official Utah successor to the dead `serviceslocations.html` or `dhhs.utah.gov/locations` routes that exposes county-grade local-office coverage.
+## Next State Order After Utah
 
-## Next State Order After Florida
-
-1. Alaska
-2. South Carolina
-3. North Carolina
-4. New York
-5. Oklahoma
-6. Oregon
-7. Ohio
-8. Minnesota
-9. Maine
-10. Idaho
+1. Kansas
+2. Nebraska
+3. Florida
+4. Alaska
+5. South Carolina
+6. North Carolina
+7. New York
+8. Oklahoma
+9. Oregon
+10. Ohio10. Ohio10. Ohio10. Ohio10. Ohio

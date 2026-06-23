@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_and_live_dws_office_search_shell_still_lacks_public_county_office_contract",
+  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_and_public_dws_office_api_still_lacks_county_service_area_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,13 +42,13 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "live_dws_office_search_shell_and_dhhs_contacts_still_lack_public_county_office_contract",
-      "evidence": "Reviewed 2026-06-23 one more bounded official Utah county-local pass. The older public DWS contact page links an `Office Map` at `/jsp/officesearch/`, and that route now redirects to a live official `https://jobs.utah.gov/office-search/` app titled `Office Search - DWS`. The live shell exposes map/search controls, including `search/<zip-or-city>` and `map` routes, but the raw public HTML still contains no county list, office rows, office addresses, or county-to-office contract. The older DWS services locations page still returns HTTP 500, the older DHHS locations route still returns HTTP 404, and current DHHS contacts/customer-service pages still do not publish a county-grade office directory.",
-      "next_action": "hold_blocked_until_office_search_materializes_public_office_rows_or_a_county_grade_utah_directory_is_verified"
+      "failure_code": "public_dws_office_api_exposes_office_inventory_but_no_county_or_service_area_contract",
+      "evidence": "Reviewed 2026-06-23 one more bounded official Utah county-local pass. The DWS office-search bundle now proves a public `apiUrl` of `https://officesearch-api.jobs.utah.gov`, and the live `GET https://officesearch-api.jobs.utah.gov/api/v1/offices` endpoint returns 99 public rows covering 45 unique offices with office names, addresses, service codes, lat/lng, and assistance instructions. But the payload still exposes no county field, counties-served field, or reusable county-to-office contract. The companion `GET /api/v1/services` endpoint is public, but `GET /api/v1/office-services` returns HTTP 404. The older DWS services locations page still returns HTTP 500, the older DHHS locations route still returns HTTP 404, and current DHHS contacts/customer-service pages still do not publish a county-grade office directory.",
+      "next_action": "hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments"
     }
   ],
   "familyStatuses": {
     "district_or_county_education_routing": "verified_current_official_district_lea_directory",
-    "county_local_disability_resources": "blocked_live_office_search_shell_without_public_county_contract"
+    "county_local_disability_resources": "blocked_public_office_api_without_county_service_area_contract"
   }
 }

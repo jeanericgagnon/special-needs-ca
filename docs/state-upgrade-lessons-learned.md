@@ -261,3 +261,6 @@
 
 ### Official Site Search Can Recover A Live County Service Leaf After A Stale Nav Link
 *   **Lesson:** If an official county services index exposes a promising local-support label but the direct nav slug 404s, run one bounded first-party site-search pass before freezing the county. Storey County's `County Services` page linked a stale `/530/Senior-Center` slug, but the county's own search results surfaced the live `Health & Community Services` leaf that preserved countywide senior and community-service routing plus direct contacts.
+
+### A Public Office API Still Does Not Clear County-Grade Routing Without County Or Service-Area Fields
+*   **Lesson:** A live official JSON API is stronger than a shell-only SPA, but it still does not clear county-local routing unless the payload itself exposes county assignments, counties served, or another explicit service-area contract. Utah's DWS `officesearch-api` returns 45 unique public office records with addresses and coordinates, yet it still lacks county/service-area fields, so the state remains blocked for county-grade proof.
