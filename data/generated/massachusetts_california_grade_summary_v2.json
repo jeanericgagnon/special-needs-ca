@@ -44,7 +44,7 @@
       "severity": "critical",
       "failure_code": "official_dese_profiles_postback_results_lack_county_to_district_contract",
       "evidence": "Reviewed 2026-06-23 one new live official DESE bridge audit plus the current blocker artifacts. The public URL https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238 is not the real result surface; it only emits a hidden-field passForm that auto-posts __VIEWSTATE, __EVENTVALIDATION, orgType=5,12, and leftNavId=11238 into /search/search.aspx. Replaying that exact hidden-field POST does render real district rows with superintendent contacts, addresses, phones, and grades served, but the final page still preserves no county column, county filter, or county export contract. County words only appear inside district names such as Bristol County Agricultural, not as a routing key. Massachusetts therefore still lacks county-grade education routing evidence even though the official DESE postback bridge is real.",
-      "next_action": "hold_blocked_until_official_county_to_district_contract_exists"
+      "next_action": "use_massachusetts_dese_postback_packet_and_hold_blocked_until_official_county_to_district_contract_exists"
     },
     {
       "family": "county_local_disability_resources",

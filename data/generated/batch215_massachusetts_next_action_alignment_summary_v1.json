@@ -1,0 +1,8 @@
+{
+  "batch": "batch_215_massachusetts_next_action_alignment_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "aligned_next_action": "use_massachusetts_dese_postback_packet_and_hold_blocked_until_official_county_to_district_contract_exists"
+}

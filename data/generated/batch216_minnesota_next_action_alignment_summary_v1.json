@@ -1,0 +1,8 @@
+{
+  "batch": "batch_216_minnesota_next_action_alignment_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "aligned_next_action": "browser_assisted_or_cached_capture_only_for_live_mdeorg_directory_contract"
+}
