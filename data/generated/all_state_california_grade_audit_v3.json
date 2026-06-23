@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:19:04.371Z",
+  "generatedAt": "2026-06-23T18:25:53.723Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -851,7 +851,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "reviewed_idaho_district_leaves_now_cover_11_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete",
+      "packetPrimaryGapReason": "reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

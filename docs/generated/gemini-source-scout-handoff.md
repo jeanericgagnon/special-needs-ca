@@ -13,7 +13,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Alaska: `live_dfcs_services_page_only_provides_statewide_phone_relay_while_health_host_county_equivalent_directory_stays_challenged`
 - Arizona: `three_public_district_domains_sitemap_exhausted_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_results_stay_authenticated`
-- Idaho: `reviewed_idaho_district_leaves_now_cover_11_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
+- Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
 - Kansas: `reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_dds_locations_lane_still_lacks_county_export`
@@ -40,42 +40,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the top Maine blocker in the state queue. The official DOE selector pages and SAU workbook are live, but the workbook only carries municipality-to-organization mapping fields and the named contact-search/export replays still return the same HTTP 500 error shell. Maine therefore still lacks a reproducible county-grade local contact contract in the low-token lane.
+`district_or_county_education_routing` remains the top Idaho blocker in the state queue. The official SDE district directory still exposes no county contract, but district-owned special-education leaves are reviewable county by county. Emmett Independent School District now adds Gem County to the reviewed set, bringing Idaho to twelve reviewed district-owned county leaves while the remaining counties still need exact local expansion.
 
 ### Exact Evidence Needed
 
-- Any first-party Maine DOE contact row lane that materializes real local contacts from the live selector/workbook contract.
-- Or, an official Maine workbook or export that includes county-grade contact fields rather than only municipality-to-organization mappings.
-- Or, an official DHHS county or service-area crosswalk for the named district office towns.
-- A stable mapping workbook alone is still not enough if it lacks contact fields.
+- Any additional Idaho district-owned special-education or special-services leaf reached from the official SDE district directory for uncovered counties.
+- Or, a truthful statewide county-to-district contract on an official Idaho SDE surface.
+- Or, an official DHW county-to-office contract for the still-blocked 27 counties.
+- The live SDE district root and DHW office root are still not enough without county-grade routing fields.
 
 ### Useful Official URLs Already Tried
 
-- [Maine NEO Primary Contacts By Organization](https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU)
-- [Maine NEO Town selector](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town)
-- [Maine SAU workbook](https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx)
-- [Maine special education landing page](https://www.maine.gov/doe/learning/specialed)
-- [Maine DHHS district offices](https://www.maine.gov/dhhs/about/contact/offices)
+- [Idaho SDE School Districts page](https://www.sde.idaho.gov/school-districts/)
+- [Idaho SDE School Districts JSON](https://www.sde.idaho.gov/wp-json/wp/v2/pages/9049)
+- [Emmett Independent School District root](https://www.emmettschools.org/)
+- [Emmett district Special Education page](https://www.emmettschools.org/departments/special-education)
+- [Emmett Special Education - Early Childhood Preschool](https://www.emmettschools.org/our-district/programs/special-education-early-childhood-preschool)
+- [Idaho DHW office root](https://healthandwelfare.idaho.gov/offices)
+- [Idaho DHW Caldwell Office](https://healthandwelfare.idaho.gov/dhw/caldwell-office)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Maine DOE contact export or search result that returns real local contact rows instead of the generic HTTP 500 NEO shell.
-- Any official DOE workbook or adjacent file that includes county or contact fields, not just Municipality, TownCode, GEOCode, OrganizationId, and OrganizationName.
-- Any official DHHS county/service-area crosswalk for office towns like Bangor, Calais, Machias, Portland, or Skowhegan.
+- Any official Idaho district-owned special-education or special-services leaves for uncovered counties reached from the SDE directory.
+- Any official Idaho SDE county-to-district contract or district export with explicit county routing.
+- Any official Idaho DHW county-to-office crosswalk for the still-blocked 27 counties.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
-2. Arizona
-3. Massachusetts
-4. Oregon
-5. Oklahoma
-6. Utah
-7. New Hampshire
-8. New Mexico
-9. New York
-10. North Carolina
+1. Arizona
+2. Massachusetts
+3. Oregon
+4. Oklahoma
+5. Utah
+6. New Hampshire
+7. New Mexico
+8. New York
+9. North Carolina
+10. North Dakota

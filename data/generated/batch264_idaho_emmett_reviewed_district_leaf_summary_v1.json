@@ -1,0 +1,10 @@
+{
+  "batch": "batch264_idaho_emmett_reviewed_district_leaf_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_exact_leaf_count": 12,
+  "new_county": "gem-id",
+  "new_leaf_url": "https://www.emmettschools.org/departments/special-education"
+}
