@@ -1,0 +1,11 @@
+{
+  "batch": "batch263_maine_workbook_mapping_only_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "workbook_live": true,
+  "workbook_mapping_only_headers_confirmed": true,
+  "contact_materialization_lane_still_500": true,
+  "lesson_added": false
+}

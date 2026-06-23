@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T18:13:55.323Z",
+  "generatedAt": "2026-06-23T18:19:04.371Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 21,
@@ -1340,7 +1340,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_live_public_sau_selectors_and_workbook_but_search_and_export_replays_still_500",
+        "district_or_county_education_routing": "blocked_workbook_proves_mapping_only_but_contact_materialization_lane_still_500",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1351,7 +1351,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "public_maine_sau_selectors_and_workbook_are_live_but_search_and_export_replays_still_500_and_dhhs_office_html_has_no_county_contract",
+      "packetPrimaryGapReason": "official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
