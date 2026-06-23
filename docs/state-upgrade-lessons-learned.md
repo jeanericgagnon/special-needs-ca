@@ -680,3 +680,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### When An Old `/locations` Root 404s, Mine The Same Host Sitemap For `OfficeLocations` And County Office Leaves
 *   **Lesson:** If a long-lived state `.../locations` placeholder suddenly 404s, do one sitemap pass on the same official host before leaving county-local routing blocked. Montana DPHHS moved the usable county office contract to `CFSD/countyoffice` and `AboutUs/OfficeLocations/fieldoffices`, and those newer leaves preserved all 56 counties in public HTML without any broad crawl.
+
+### County-Complete Public Contact CSVs Still Fail If The Service Role Does Not Match The Family
+*   **Lesson:** Do not clear a county-local family just because a first-party CSV covers every county. Florida DCF now publishes a public 67-county `contact-us/contacts.csv`, but it only carries circuit headers plus licensing, child-and-family, APS, refugee, and client-relations contacts, so it cannot replace a missing ACCESS or Medicaid county-office contract.

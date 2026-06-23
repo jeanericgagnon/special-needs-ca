@@ -1,0 +1,13 @@
+{
+  "batch": "batch_158_florida_public_contacts_role_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "county_complete_public_contacts_csv": true,
+  "public_contacts_county_coverage": 67,
+  "public_contacts_service_role_match": false,
+  "public_storefront_county_coverage": 34,
+  "anonymous_myaccess_status": 401,
+  "lesson_added": false
+}
