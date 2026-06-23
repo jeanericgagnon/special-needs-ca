@@ -37,46 +37,52 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Florida
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Florida critical blocker. The live DCF local-offices leaf, the Family Resource Center storefront, and the current MyACCESS public shell surfaces are all readable enough to prove what is missing: Florida still has no county-complete public local-office contract, and the present MyACCESS office-mapping lane is only a shell contract.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the DWS office-search stack is now bounded to a precise public surface: `https://jobs.utah.gov/office-search/`, the older `jsp/officesearch` alias, `https://officesearch-api.jobs.utah.gov/api/v1/offices`, and `https://officesearch-api.jobs.utah.gov/api/v1/services`. The office payload still returns only office inventory rows with fields like `officeName`, address, city, zip, service, and coordinates; it still has no county fields, counties served, or another reusable county-to-office contract. The guessed `office-services` route now returns JSON `404 Not Found`, the docs probes (`openapi.json`, `swagger-ui/index.html`, and `v3/api-docs`) now return `404 Service Not Found`, and the older public roots still do not expose a successor county contract (`jobs.utah.gov/sitemap.xml` and `jobs.utah.gov/customereducation/serviceslocations.html` return `500`, while `dhhs.utah.gov/locations` returns `404`). A bounded reverse-geocode pass still materializes physical offices in only 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point, and one more payload-text audit confirms `Daggett` and `Morgan` never appear anywhere in the public JSON while `Rich` appears only as `Richfield`, not as Rich County routing. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- A first-party Florida DCF or MyACCESS county-complete local-offices directory or export that maps all 67 counties to public assistance / ESS office routing.
-- An anonymous official MyACCESS office-mapping or county-result contract that returns real office or community-partner results without authentication.
-- A first-party Family Resource Center or DCF local-office lane that expands beyond the current 34-county storefront contract and publishes the full county set.
+- Any first-party Utah county-complete office contract that explicitly maps counties to DWS, DHHS, or successor local offices.
+- Any public successor Utah office API field or companion endpoint that adds `county`, `countiesServed`, service-area, or district-style assignment data to the current office inventory.
+- Any official Utah successor local-office directory that explicitly closes the Daggett, Morgan, and Rich county remainder without inferred nearest-office routing.
 
 ### Useful Official URLs Already Tried
 
-- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
-- [Florida Family Resource Center root](https://familyresourcecenter.myflfamilies.com/)
-- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
-- [MyACCESS Public CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
-- [MyACCESS Help HCINT](https://myaccess.myflfamilies.com/Help/HCINT)
-- [MyACCESS appconfig](https://myaccess.myflfamilies.com/config/appconfig.js)
-- [MyACCESS config.json shell](https://myaccess.myflfamilies.com/config/config.json)
-- [MyACCESS swagger shell](https://myaccess.myflfamilies.com/swagger)
-- [MyACCESS swagger index shell](https://myaccess.myflfamilies.com/swagger/index.html)
-- [MyACCESS dataexchangeproxy shell](https://myaccess.myflfamilies.com/dataexchangeproxy)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Legacy DWS office-search alias](https://jobs.utah.gov/jsp/officesearch/)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Guessed office-services route](https://officesearch-api.jobs.utah.gov/api/v1/office-services)
+- [API OpenAPI endpoint attempt](https://officesearch-api.jobs.utah.gov/openapi.json)
+- [API Swagger UI attempt](https://officesearch-api.jobs.utah.gov/swagger-ui/index.html)
+- [API v3 docs attempt](https://officesearch-api.jobs.utah.gov/v3/api-docs)
+- [jobs.utah.gov sitemap.xml](https://jobs.utah.gov/sitemap.xml)
+- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
+- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
+- [Older DHHS locations route](https://dhhs.utah.gov/locations)
+- [Census reverse geocoder used only to county-key official office coordinates](https://geocoding.geo.census.gov/geocoder/geographies/coordinates)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DCF or MyACCESS export or API path that materially extends the public county-local contract beyond the 34 counties in `providers.csv`.
-- Any exact first-party DCF county office page or local-office directory leaf that is linked from current public-assistance pages but not yet exposed in the current sitemap.
-- Any anonymous result lane on the official MyACCESS host that returns real county storefront or office rows without an authenticated or JS-only shell step.
+- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the 45 unique office records.
+- Any reviewed official Utah local-office directory that explicitly names counties served, especially where office names are city-based rather than county-based.
+- Any official Utah successor to the dead `serviceslocations.html` or `dhhs.utah.gov/locations` routes that exposes county-grade local-office coverage for Daggett, Morgan, and Rich.
+## Next State Order After Utah
 
-## Next State Order After Florida
-
-1. Utah
-2. Kansas
-3. Nebraska
+1. Kansas
+2. Nebraska
+3. Florida
 4. Alaska
 5. New York
 6. Oklahoma
 7. Oregon
 8. Ohio
 9. Minnesota
-10. Maine
+10. Maine10. Maine10. Maine10. Maine

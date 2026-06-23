@@ -22,4 +22,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
-- Florida county-local routing is now explicitly sharpened to the partial Family Resource Center contract plus the public MyACCESS dataexchangeproxy shell lane, not a hidden anonymous API.
+- Utah county-local routing is now explicitly sharpened to the live DWS office API plus its exact failure surfaces: the office payload still lacks county/service-area fields, `office-services` and the docs probes return `404`, the older DWS roots return `500`, and the county remainder is still explicit at Daggett, Morgan, and Rich.
