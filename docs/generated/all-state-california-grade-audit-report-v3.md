@@ -24,4 +24,5 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - New York remains blocked, but the county-local blocker is now tighter: `ny.gov` points to exact OTDA successor leaves, and those exact OTDA contact/benefit targets still fail in the bounded verification lane.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - Kansas remains blocked, but reviewed local education-routing proof now covers 14 of 105 counties after Newton USD 373 and Emporia USD 253 added two more district-host local leaves.
+- Nebraska remains blocked because the official county-local office stack still exposes no public county-to-office assignment contract beyond locator outputs.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.

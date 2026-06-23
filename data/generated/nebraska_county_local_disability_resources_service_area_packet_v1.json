@@ -3,7 +3,7 @@
   "state_code": "NE",
   "family": "county_local_disability_resources",
   "repair_lane": "service_area_contract_audit_only",
-  "purpose": "Deterministic packet for Nebraska county-local routing after the public office web map and popup configuration also proved there is no hidden county assignment contract.",
+  "purpose": "Deterministic packet for Nebraska county-local routing after the live DHHS leaf, ExperienceBuilder datasource registry, and public FeatureServer layers all still prove there is no public county assignment contract.",
   "current_problem_metrics": {
     "countyTotal": 93,
     "officeLayerRows": 42,

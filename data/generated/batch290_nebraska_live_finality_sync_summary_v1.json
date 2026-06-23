@@ -1,0 +1,10 @@
+{
+  "batch": "batch290_nebraska_live_finality_sync_v1",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "office_layer_rows": 42,
+  "distinct_office_counties": 37,
+  "datasource_registry_only_has_locator_outputs": true,
+  "primary_gap_reason": "official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields"
+}
