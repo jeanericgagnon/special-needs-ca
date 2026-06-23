@@ -20,6 +20,6 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
+- New York remains blocked, but it is now blocked only on county-local routing: official NYSED BOCES pages plus the official NYC DOE CSE page now cover education across all 62 counties.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
-- Alaska county-local routing is now explicitly sharpened to a phone-only DFCS relay plus a public DFCS search shell with no result contract, alongside a fully challenged current health host and a partially live but gated legacy DHSS DPA subtree.

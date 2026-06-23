@@ -1,20 +1,19 @@
 {
   "state": "new-york",
   "family": "district_or_county_education_routing",
-  "repair_lane": "official_boces_county_cluster_plus_nyc_remainder_only",
-  "packet_complete_when": "A reviewed official NYC borough special-education route complements the official NYSED county-cluster BOCES pages, or a broader official county-grade local route replaces both.",
+  "repair_lane": "official_boces_county_cluster_plus_official_nyc_cse_borough_routing",
+  "packet_complete_when": "The official NYSED BOCES county-cluster pages and the official NYC DOE CSE page together prove routing across all 62 counties.",
   "current_metrics": {
     "countyTotal": 62,
     "nonNycCountiesCoveredByOfficialBocesPages": 57,
-    "nycBoroughRemainderCount": 5,
+    "nycBoroughRemainderCount": 0,
     "reviewedOfficialStatePages": 2,
-    "legacyExactLeafCount": 3
+    "reviewedOfficialNycPages": 1,
+    "reviewedOfficialNycBoroughContacts": 5
   },
   "representative_sources": [
     "https://www.p12.nysed.gov/ds/jmt.html",
     "https://www.p12.nysed.gov/ds/superintendents.html",
-    "https://www.schools.nyc.gov/learning/special-education",
-    "https://www.schools.nyc.gov/learning/special-education/help/contacts-and-resources",
     "https://www.schools.nyc.gov/learning/special-education/help/committees-on-special-education"
   ],
   "covered_non_nyc_examples": [
@@ -24,11 +23,27 @@
     "Putnam-Northern Westchester",
     "Wayne-Finger Lakes BOCES"
   ],
-  "remaining_nyc_boroughs": [
-    "Bronx",
-    "Kings",
-    "New York",
-    "Queens",
-    "Richmond"
-  ]
+  "covered_nyc_borough_routes": {
+    "bronx": [
+      "CSE1 districts 7, 9, 10",
+      "CSE2 districts 8, 11, 12"
+    ],
+    "kings": [
+      "CSE5 districts 19, 23, 32",
+      "CSE6 districts 17, 18, 22",
+      "CSE7 districts 20, 21",
+      "CSE8 districts 13, 14, 15, 16"
+    ],
+    "new_york": [
+      "CSE9 districts 1, 2, 4",
+      "CSE10 districts 3, 5, 6"
+    ],
+    "queens": [
+      "CSE3 districts 25, 26, 28, 29",
+      "CSE4 districts 24, 27, 30"
+    ],
+    "richmond": [
+      "CSE11 district 31"
+    ]
+  }
 }

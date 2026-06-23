@@ -21,7 +21,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Nebraska: `official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
-- New York: `official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_nygov_linked_otda_successor_leaves_still_reset`
+- New York: `nygov_linked_exact_otda_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Ohio: `retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only`
 - Oklahoma: `official_osde_state_school_directory_clears_education_but_dead_dhhs_locator_host_and_planning_rows_still_block_county_local`
@@ -37,52 +37,39 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Oklahoma
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The live DFCS successor host still only gives statewide phone routing, the public DFCS search surface is readable but exposes no DPA office results contract, the current `health.alaska.gov` DPA family is challenge-blocked end to end, and the legacy `dhss.alaska.gov` DPA subtree is also not reviewable even though the root is partially live.
+Oklahoma has one remaining California-grade blocker: `county_local_disability_resources`. Education is already cleared by the current official OSDE State School and District Directory, but the county-local lane still depends on a dead statewide locator host and DOI planning rows.
 
 ### Exact Evidence Needed
 
-- Any official Alaska surface that maps boroughs or census areas to DPA or Medicaid office locations on a publicly reviewable host.
-- Any reviewable successor office locator or directory that lives on `dfcs.alaska.gov`, `dhss.alaska.gov`, or another current official Alaska host instead of only on the challenge-blocked `health.alaska.gov` family.
-- Any official document, export, or table that explicitly enumerates Alaska borough or census-area coverage for public assistance office routing.
+- A live official Oklahoma county-grade local office directory that replaces the dead `https://dhhs.oklahoma.gov/locations` host.
+- County-owned or state-maintained local office leaves with real county routing, not planning placeholders or DOI mirrors.
+- Any public Oklahoma county-mapped office export, directory, or API that materializes county-local disability resource routing directly.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
-- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
-- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [Alaska DFCS robots.txt](https://dfcs.alaska.gov/robots.txt)
-- [Alaska DFCS sitemap.xml](https://dfcs.alaska.gov/sitemap.xml)
-- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
-- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
-- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska health robots.txt](https://health.alaska.gov/robots.txt)
-- [Legacy DHSS root](https://dhss.alaska.gov/)
-- [Legacy DHSS robots.txt](https://dhss.alaska.gov/robots.txt)
-- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
-- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
-- [Legacy DHSS DPA contacts](https://dhss.alaska.gov/dpa/Pages/contacts.aspx)
-- [Legacy DHSS DPA publications](https://dhss.alaska.gov/dpa/Pages/Publications.aspx)
+- [Dead Oklahoma DHHS locator host](https://dhhs.oklahoma.gov/locations)
+- [Official Oklahoma State School Directory](https://oklahoma.gov/education/resources/state-school-directory.html)
+- [Official Oklahoma District Directory download lane](https://oklahoma.gov/education/resources/state-school-directory.html)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current Alaska host outside the challenged `health.alaska.gov` family that now publishes a borough- or census-area DPA office directory.
-- Any official Alaska PDF, spreadsheet, or office-contact table that names specific borough or census-area coverage for public assistance offices.
-- Any future public relaxation on either the `health.alaska.gov` or legacy `dhss.alaska.gov` DPA subtree that makes office-routing leaves scraper-reviewable.
+- Any current Oklahoma.gov county-local office directory replacing the dead DHHS locator host.
+- Any official county-owned DHS or local human-services office pages that preserve county identity and direct contact routing.
+- Any public Oklahoma directory export or API that maps counties to local assistance or disability-resource offices.
 
-## Next State Order After Alaska
+## Next State Order After New York
 
-1. New York
-2. Oklahoma
-3. Oregon
-4. Ohio
-5. Minnesota
-6. Maine
-7. Idaho
-8. Arizona
-9. Massachusetts
-10. New Mexico
+1. Oklahoma
+2. Oregon
+3. Ohio
+4. Minnesota
+5. Maine
+6. Idaho
+7. Arizona
+8. Massachusetts
+9. New Mexico
+10. South Dakota

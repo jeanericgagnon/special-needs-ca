@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T22:37:24.158Z",
+  "generatedAt": "2026-06-23T23:43:49.984Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 24,
@@ -12,7 +12,7 @@
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a new blocker lesson: a public state portal linking an exact successor leaf does not clear the blocker if the successor host still fails.",
+  "lessonsUpdate": "Added a new blocker lesson: official CSE office tables can clear NYC borough routing.",
   "states": [
     {
       "stateId": "alabama",
@@ -2247,11 +2247,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 62,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "new-york",
         "state_code": "NY",
@@ -2290,7 +2290,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_boces_pages_cover_non_nyc_counties_but_nyc_borough_route_missing",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2300,8 +2300,8 @@
         "county_local_disability_resources": "blocked_health_hostwide_403"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_287_new_york_nygov_otda_successor_finality_v1",
-      "packetPrimaryGapReason": "official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_nygov_linked_otda_successor_leaves_still_reset",
+      "packetBatch": "batch_294_new_york_nyc_cse_borough_clear_v1",
+      "packetPrimaryGapReason": "nygov_linked_exact_otda_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

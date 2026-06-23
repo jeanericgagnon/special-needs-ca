@@ -1,0 +1,11 @@
+{
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 91,
+  "education_now_verified": true,
+  "nonNycCountiesCoveredByOfficialBocesPages": 57,
+  "nycBoroughRoutesRecovered": 5,
+  "remaining_blocker_family_count": 1,
+  "lesson_added": false
+}

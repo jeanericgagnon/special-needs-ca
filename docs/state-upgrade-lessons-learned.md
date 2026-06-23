@@ -303,3 +303,6 @@
 
 ### A Public SharePoint Search Shell Is Not A Directory Contract
 *   **Lesson:** If a public official SharePoint search page returns 200 but the query replays stay on the same generic shell and expose no result rows or usable query contract, do not treat it as a recoverable local-directory lane. Alaska DFCS `Search/default.aspx` was readable, but it still yielded no public DPA office results and no reusable search parameter contract.
+
+### Official CSE Office Tables Can Clear NYC Borough Routing
+*   **Lesson:** If a live official special-education committee page publishes district groupings plus office addresses, phones, and emails, treat that as a real local-routing contract. New York cleared the NYC remainder once the official `Committees on Special Education` page itself proved Bronx, Brooklyn, Manhattan, Queens, and Staten Island committee coverage.
