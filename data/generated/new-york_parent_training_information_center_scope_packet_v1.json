@@ -1,12 +1,21 @@
 {
   "state": "new-york",
   "family": "parent_training_information_center",
-  "repair_lane": "statewide_scope_proof_only",
-  "packet_complete_when": "A reviewed first-party New York PTI source explicitly preserves statewide scope or statewide designation.",
+  "repair_lane": "resolved_authoritative_statewide_leaf_plus_first_party_host",
+  "packet_complete_when": "The authoritative New York Parent Center Hub leaf preserves statewide PTI coverage and at least one listed first-party host remains live.",
   "current_metrics": {
     "reviewedRegionalSources": 1,
-    "reviewedStatewideSources": 0
+    "reviewedStatewideSources": 1,
+    "listedPtiCount": 5,
+    "statewideCoverageProven": true
   },
-  "regional_blocker_source": "http://parentnetworkwny.org/",
-  "blocker_basis": "reviewed scope language is Western New York, not statewide"
+  "authoritative_statewide_source": "https://www.parentcenterhub.org/findurcenter/new-york/",
+  "supporting_first_party_host": "https://starbridgeinc.org/",
+  "listed_ptis": [
+    "Starbridge",
+    "Advocates for Children of New York",
+    "INCLUDEnyc",
+    "Sinergia/Metropolitan Parent Center",
+    "Long Island Advocacy Center"
+  ]
 }

@@ -12,7 +12,7 @@
   "weak_critical_families": 3,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "district_and_county_local_leaf_proof_still_missing_after_statewide_and_fit_regional_repairs",
+  "primary_gap_reason": "district_leafs_missing_and_county_local_now_reduced_to_four_county_office_routing_remainder",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -59,9 +59,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "live_hca_field_office_archive_exists_but_county_complete_contract_not_yet_preserved",
-      "evidence": "Reviewed 2026-06-22 the live official HCA Field Offices archive. The page is role-aligned and public, and it now preserves county-specific office posts such as Bernalillo County NW, Bernalillo County SW, Hidalgo County, Roosevelt County, Chaves County, Curry County, and Dona Ana variants across the first two archive pages. But the bounded review still does not preserve a single county-complete contract or a reviewed full 33-county office extraction on disk, so county_local_disability_resources remains blocked until the live HCA field-office archive is converted into a complete county-grade office map.",
-      "next_action": "author_county_local_exact_targets_from_live_hca_field_office_archive"
+      "failure_code": "official_hca_archive_still_missing_four_county_office_routing_remainder",
+      "evidence": "Reviewed 2026-06-23 the live official HCA Field Offices archive across pages 1 through 8 plus bounded same-host county searches. The archive now proves county-specific office posts for 29 of 33 New Mexico counties: Bernalillo, Roosevelt, Hidalgo, Chaves, Curry, Doña Ana, Eddy, Guadalupe, Sandoval, Lincoln, McKinley, Quay, Rio Arriba, Los Alamos, San Juan, San Miguel, Santa Fe, Socorro, Torrance, Valencia, Otero, Lea, Sierra, Taos, Grant, Cibola, De Baca, Luna, and Colfax. The remaining counties Catron, Harding, Mora, and Union still lack a reviewed office-routing leaf: HCA site search only surfaced a non-office service-expansion article for Harding/Union, a SNAP-loss article for Mora, and no Catron county office hit. county_local_disability_resources therefore remains blocked on a four-county official office-routing remainder, not on a dead or partial source.",
+      "next_action": "review_official_hca_or_successor_office_roots_for_catron_harding_mora_union_only"
     }
   ]
 }

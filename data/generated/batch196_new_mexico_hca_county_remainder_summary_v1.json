@@ -1,0 +1,16 @@
+{
+  "batch": "batch196_new_mexico_hca_county_remainder_v1",
+  "state": "new-mexico",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "reviewedArchivePages": 8,
+  "coveredCountiesFromArchive": 29,
+  "missingCountyRemainder": 4,
+  "missingCounties": [
+    "Catron",
+    "Harding",
+    "Mora",
+    "Union"
+  ],
+  "lesson_added": false
+}

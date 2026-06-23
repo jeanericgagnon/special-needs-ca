@@ -131,3 +131,12 @@
 
 ### Probe The State Root Before Inventing More Successor Paths
 *   **Lesson:** If a blocked state seems to need a new official successor host, test the plain state root and one or two obvious subpaths first. New Hampshire showed `www.nh.gov/` itself and the likely `/dhhs`, `/education`, and `/nhes` successors all 403ing immediately, which let us stop guessing successor paths and lock the blocker faster.
+
+### Official Archive Pagination Can Collapse A "Partial County" Blocker Into A Small Remainder
+*   **Lesson:** If an official state archive only looks partial on page 1 or 2, keep bounded pagination before preserving the blocker. New Mexico HCA Field Offices expanded from 7 named county leaves on the first two pages to 29/33 county-specific office posts by page 8, which cut the real blocker down to Catron, Harding, Mora, and Union only.
+
+### Parent Center Hub Can Prove Distributed Statewide PTI Coverage Even When No Single Center Covers The Entire State
+*   **Lesson:** If an authoritative Parent Center Hub state leaf explicitly says multiple PTIs together serve the whole state, that can satisfy a statewide PTI gate even when each listed center has a regional service area. New York cleared once the Hub leaf said `There are 5 PTIs serving New York State` and named the regional coverage split, while the listed Starbridge host also resolved live.
+
+### Authoritative PTI Leaves Can Upgrade A First-Party Homepage That Lacks Explicit Designation Text
+*   **Lesson:** If a PTI first-party homepage is live but only shows general support navigation, check the authoritative Parent Center Hub state leaf before leaving the family blocked. North Carolina cleared once the Hub leaf explicitly said `North Carolina PTI (Serving all North Carolina)` and named ECAC, even though the ECAC homepage alone had been too weak.

@@ -1,0 +1,10 @@
+{
+  "batch": "batch226_new_york_pti_statewide_repair_v1",
+  "state": "new-york",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "ptiFamilyRepaired": true,
+  "listedPtiCount": 5,
+  "supportingFirstPartyHostLive": true,
+  "lesson_added": false
+}

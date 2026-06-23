@@ -7,9 +7,9 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 62,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement",
@@ -18,9 +18,7 @@
     "county_local_disability_resources",
     "district_or_county_education_routing"
   ],
-  "major_gap_families": [
-    "parent_training_information_center"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -56,13 +54,6 @@
       "failure_code": "bounded_boces_leaf_packet_exhausted_before_county_grade_coverage",
       "evidence": "Verified exact leaves remain limited to 3 reviewed BOCES-owned pages; this does not truthfully prove district-grade routing statewide.",
       "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
-    },
-    {
-      "family": "parent_training_information_center",
-      "severity": "major",
-      "failure_code": "reviewed_western_new_york_pti_source_not_statewide",
-      "evidence": "Reviewed Parent Network of WNY evidence from https://parentnetworkwny.org says the organization reaches families across WNY per year, which does not truthfully satisfy the statewide PTI gate.",
-      "next_action": "hold_blocked_until_reviewed_statewide_new_york_pti_source_or_statewide_scope_proof_is_verified"
     }
   ]
 }

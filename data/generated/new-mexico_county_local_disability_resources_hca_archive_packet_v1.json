@@ -1,29 +1,66 @@
 {
   "state": "new-mexico",
   "family": "county_local_disability_resources",
-  "repair_lane": "county_complete_archive_extraction_only",
-  "packet_complete_when": "A reviewed deterministic extraction or manually preserved map covers all 33 New Mexico counties from the live HCA field-office archive without relying on partial archive paging notes.",
+  "repair_lane": "official_hca_four_county_remainder_only",
+  "packet_complete_when": "A reviewed deterministic county map covers all 33 New Mexico counties from the HCA field-office archive or same-host official county office followups.",
   "current_metrics": {
     "countyTotal": 33,
-    "reviewedArchivePages": 2,
-    "explicitlyNamedCountyLeavesSeen": 7,
+    "reviewedArchivePages": 8,
+    "coveredCountiesFromArchive": 29,
+    "missingCountyRemainder": 4,
     "countyCompleteMapOnDisk": false
   },
+  "covered_counties": [
+    "Bernalillo",
+    "Roosevelt",
+    "Hidalgo",
+    "Chaves",
+    "Curry",
+    "Dona Ana",
+    "Eddy",
+    "Guadalupe",
+    "Sandoval",
+    "Lincoln",
+    "McKinley",
+    "Quay",
+    "Rio Arriba",
+    "Los Alamos",
+    "San Juan",
+    "San Miguel",
+    "Santa Fe",
+    "Socorro",
+    "Torrance",
+    "Valencia",
+    "Otero",
+    "Lea",
+    "Sierra",
+    "Taos",
+    "Grant",
+    "Cibola",
+    "De Baca",
+    "Luna",
+    "Colfax"
+  ],
+  "missing_counties": [
+    "Catron",
+    "Harding",
+    "Mora",
+    "Union"
+  ],
   "representative_sources": [
     "https://www.hca.nm.gov/lookingforassistance/field_offices_1/",
-    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/2/?et_blog"
+    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/4/?et_blog",
+    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/7/?et_blog",
+    "https://www.hca.nm.gov/lookingforassistance/field_offices_1/page/8/?et_blog",
+    "https://www.hca.nm.gov/2023/06/26/human-services-department-partners-with-union-and-harding-county-to-provide-expanded-access-to-services/"
   ],
-  "named_county_examples": [
-    "Bernalillo County NW",
-    "Bernalillo County SW",
-    "Hidalgo County",
-    "Roosevelt County",
-    "Chaves County",
-    "Curry County",
-    "Dona Ana"
+  "missing_county_followup_notes": [
+    "Harding and Union only surfaced an HCA service-expansion article, not a county office-routing leaf.",
+    "Mora only surfaced a SNAP-loss article, not a county office-routing leaf.",
+    "Catron produced no bounded HCA county office hit in the current official-site search lane."
   ],
   "next_allowed_repairs": [
-    "archive-to-county extraction from the live HCA office pages",
-    "reviewed continuation pages on the same HCA field-office archive if needed for the remaining counties"
+    "reviewed same-host HCA county office followups for Catron, Harding, Mora, and Union only",
+    "reviewed successor-state county-office root on HCA if those four counties were moved off the archive"
   ]
 }

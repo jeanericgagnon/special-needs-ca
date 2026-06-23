@@ -1,0 +1,10 @@
+{
+  "batch": "batch227_north_carolina_statewide_support_repair_v1",
+  "state": "north-carolina",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "protectionAndAdvocacyRepaired": true,
+  "ptiRepaired": true,
+  "legalAidRepaired": true,
+  "lesson_added": false
+}
