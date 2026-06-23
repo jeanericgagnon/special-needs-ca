@@ -2017,11 +2017,11 @@
       "legacyManualReviewRate": 63.16,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 10,
-      "strongCriticalFamilies": 9,
-      "weakCriticalFamilies": 3,
+      "strongCriticalFamilies": 5,
+      "weakCriticalFamilies": 7,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 75,
+      "completenessPct": 42,
       "dbMetrics": {
         "state_id": "new-hampshire",
         "state_code": "NH",
@@ -2065,10 +2065,10 @@
         "criticalRolesVerifiedPct": 2
       },
       "familyStatuses": {
-        "medicaid_state_health_coverage": "verified_state_grade",
-        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "verified_state_grade",
+        "medicaid_state_health_coverage": "blocked_current_nh_dhhs_replacement_host_unresolvable",
+        "medicaid_waiver_hcbs_disability_services": "blocked_current_nh_dhhs_replacement_host_unresolvable",
+        "developmental_disability_idd_authority": "blocked_current_nh_dhhs_replacement_host_unresolvable",
+        "early_intervention_part_c": "blocked_current_nh_dhhs_replacement_host_unresolvable",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "blocked_official_nh_doe_host_family_access_denied",
         "vocational_rehabilitation_pre_ets": "blocked_official_nh_vr_host_family_access_denied_or_unresolvable",
@@ -2081,7 +2081,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_nh_host_families_publicly_access_denied_or_unresolvable",
+      "packetPrimaryGapReason": "official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

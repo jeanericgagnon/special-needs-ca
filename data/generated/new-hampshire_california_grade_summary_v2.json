@@ -7,14 +7,18 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 10,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 42,
+  "strong_critical_families": 5,
+  "weak_critical_families": 7,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_nh_host_families_publicly_access_denied_or_unresolvable",
+  "primary_gap_reason": "official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
+    "medicaid_state_health_coverage",
+    "medicaid_waiver_hcbs_disability_services",
+    "developmental_disability_idd_authority",
+    "early_intervention_part_c",
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
@@ -41,6 +45,34 @@
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
   "final_blockers": [
+    {
+      "family": "medicaid_state_health_coverage",
+      "severity": "critical",
+      "failure_code": "current_nh_dhhs_replacement_host_family_unresolvable",
+      "evidence": "Reviewed 2026-06-23 exact first-party checks on the current-looking `dhhs.new-hampshire.gov` hostnames already saved in the packet. The root `https://dhhs.new-hampshire.gov/` plus the saved Medicaid/DD/waiver/early-intervention paths `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. Those replacement-host assumptions therefore cannot remain verified statewide evidence.",
+      "next_action": "hold_blocked_until_live_official_nh_dhhs_host_or_reviewed_successor_is_preserved"
+    },
+    {
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "severity": "critical",
+      "failure_code": "current_nh_dhhs_replacement_host_family_unresolvable",
+      "evidence": "Reviewed 2026-06-23 exact first-party checks on the current-looking `dhhs.new-hampshire.gov` hostnames already saved in the packet. The root `https://dhhs.new-hampshire.gov/` plus the saved Medicaid/DD/waiver/early-intervention paths `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. Those replacement-host assumptions therefore cannot remain verified statewide evidence.",
+      "next_action": "hold_blocked_until_live_official_nh_dhhs_host_or_reviewed_successor_is_preserved"
+    },
+    {
+      "family": "developmental_disability_idd_authority",
+      "severity": "critical",
+      "failure_code": "current_nh_dhhs_replacement_host_family_unresolvable",
+      "evidence": "Reviewed 2026-06-23 exact first-party checks on the current-looking `dhhs.new-hampshire.gov` hostnames already saved in the packet. The root `https://dhhs.new-hampshire.gov/` plus the saved Medicaid/DD/waiver/early-intervention paths `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. Those replacement-host assumptions therefore cannot remain verified statewide evidence.",
+      "next_action": "hold_blocked_until_live_official_nh_dhhs_host_or_reviewed_successor_is_preserved"
+    },
+    {
+      "family": "early_intervention_part_c",
+      "severity": "critical",
+      "failure_code": "current_nh_dhhs_replacement_host_family_unresolvable",
+      "evidence": "Reviewed 2026-06-23 exact first-party checks on the current-looking `dhhs.new-hampshire.gov` hostnames already saved in the packet. The root `https://dhhs.new-hampshire.gov/` plus the saved Medicaid/DD/waiver/early-intervention paths `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. Those replacement-host assumptions therefore cannot remain verified statewide evidence.",
+      "next_action": "hold_blocked_until_live_official_nh_dhhs_host_or_reviewed_successor_is_preserved"
+    },
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",

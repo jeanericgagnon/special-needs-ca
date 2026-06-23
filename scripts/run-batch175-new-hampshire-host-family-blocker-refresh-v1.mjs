@@ -37,6 +37,13 @@ const VR_REASON =
 const VR_NEXT =
   'hold_blocked_until_public_nh_vr_host_or_official_export_is_preserved';
 
+const DHHS_REPLACEMENT_FAILURE =
+  'current_nh_dhhs_replacement_host_family_unresolvable';
+const DHHS_REPLACEMENT_REASON =
+  'Reviewed 2026-06-23 exact first-party checks on the current-looking `dhhs.new-hampshire.gov` hostnames already saved in the packet. The root `https://dhhs.new-hampshire.gov/` plus the saved Medicaid/DD/waiver/early-intervention paths `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. Those replacement-host assumptions therefore cannot remain verified statewide evidence.';
+const DHHS_REPLACEMENT_NEXT =
+  'hold_blocked_until_live_official_nh_dhhs_host_or_reviewed_successor_is_preserved';
+
 const COUNTY_FAILURE =
   'official_nh_dhhs_host_family_returns_access_denied_shell';
 const COUNTY_REASON =
@@ -48,6 +55,10 @@ const LESSON_HEADING =
   '### Treat Repeated Access-Denied Shells As A Host-Family Blocker';
 const LESSON_BODY =
   '*   **Lesson:** If the official root, the exact leaf paths, and the obvious alternate official subdomain all return the same tiny `Access Denied` shell, stop guessing more paths and classify the whole host family as publicly blocked. New Hampshire DOE, DHHS, and NHES all behaved this way, which was enough to sharpen the blocker without more retries.';
+const REPLACEMENT_HOST_LESSON_HEADING =
+  '### Unresolvable Successor Hosts Cannot Stay Verified Just Because They Look Official';
+const REPLACEMENT_HOST_LESSON_BODY =
+  '*   **Lesson:** If a packet swaps in a neat-looking replacement host such as `agency.new-hampshire.gov`, re-probe that exact hostname before preserving it as verified evidence. New Hampshire’s saved `dhhs.new-hampshire.gov` Medicaid/DD/EI paths all failed DNS resolution, so they had to be downgraded back into the blocker set.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -74,8 +85,11 @@ function writeJsonl(filePath, rows) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  const additions = [];
+  if (!current.includes(LESSON_HEADING)) additions.push(`${LESSON_HEADING}\n${LESSON_BODY}`);
+  if (!current.includes(REPLACEMENT_HOST_LESSON_HEADING)) additions.push(`${REPLACEMENT_HOST_LESSON_HEADING}\n${REPLACEMENT_HOST_LESSON_BODY}`);
+  if (!additions.length) return false;
+  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${additions.join('\n\n')}\n`);
   return true;
 }
 
@@ -108,7 +122,8 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- New Hampshire remains `BLOCKED` and `index_safe=false`.',
-    '- The remaining blockers are now framed as host-family public-access failures, not just stale single-path guesses.',
+    '- The remaining blockers now include both host-family public-access failures and an audit-consistency fix for the unresolvable `dhhs.new-hampshire.gov` replacement host family.',
+    '- Medicaid, waiver, DD, and early-intervention can no longer stay verified off `dhhs.new-hampshire.gov` because the exact saved first-party hostnames do not resolve in the current lane.',
     '- Education remains blocked because the official DOE root, district leaves, and alternate `my.doe.nh.gov` host all return the same access-denied shell.',
     '- County/local disability resources remain blocked because the official DHHS root and district-office leaves all return the same access-denied shell, leaving only DOI-derived county rows.',
     '- Vocational rehabilitation remains blocked because the legacy root is dead, the likely NHES VR host family is access-denied, and `nheasy` is not resolvable.',
@@ -123,6 +138,13 @@ export function generateBatch175NewHampshireHostFamilyBlockerRefreshV1() {
   const nextRows = readJsonl(INPUTS.nextActions);
 
   const updatedGapRows = gapRows.map((row) => {
+    if (['medicaid_state_health_coverage', 'medicaid_waiver_hcbs_disability_services', 'developmental_disability_idd_authority', 'early_intervention_part_c'].includes(row.family)) {
+      return {
+        ...row,
+        family_status: 'blocked_current_nh_dhhs_replacement_host_unresolvable',
+        status_reason: DHHS_REPLACEMENT_REASON,
+      };
+    }
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
@@ -148,6 +170,9 @@ export function generateBatch175NewHampshireHostFamilyBlockerRefreshV1() {
   });
 
   const updatedFailureRows = failureRows.map((row) => {
+    if (['medicaid_state_health_coverage', 'medicaid_waiver_hcbs_disability_services', 'developmental_disability_idd_authority', 'early_intervention_part_c'].includes(row.family)) {
+      return { ...row, failure_code: DHHS_REPLACEMENT_FAILURE, evidence: DHHS_REPLACEMENT_REASON, next_action: DHHS_REPLACEMENT_NEXT };
+    }
     if (row.family === 'district_or_county_education_routing') {
       return { ...row, failure_code: EDUCATION_FAILURE, evidence: EDUCATION_REASON, next_action: EDUCATION_NEXT };
     }
@@ -160,7 +185,82 @@ export function generateBatch175NewHampshireHostFamilyBlockerRefreshV1() {
     return row;
   });
 
+  for (const family of ['medicaid_state_health_coverage', 'medicaid_waiver_hcbs_disability_services', 'developmental_disability_idd_authority', 'early_intervention_part_c']) {
+    if (!updatedFailureRows.some((row) => row.family === family)) {
+      updatedFailureRows.push({
+        state: 'new-hampshire',
+        state_code: 'NH',
+        family,
+        severity: 'critical',
+        failure_code: DHHS_REPLACEMENT_FAILURE,
+        evidence: DHHS_REPLACEMENT_REASON,
+        next_action: DHHS_REPLACEMENT_NEXT,
+      });
+    }
+  }
+
   const updatedVerifiedRows = verifiedRows.map((row) => {
+    if (row.family === 'medicaid_state_health_coverage') {
+      return {
+        ...row,
+        family_status: 'blocked_current_nh_dhhs_replacement_host_unresolvable',
+        evidence_strength: 'weak',
+        query_basis: 'Reviewed 2026-06-23 the exact saved New Hampshire DHHS replacement-host root used for statewide Medicaid evidence.',
+        blocker_code: DHHS_REPLACEMENT_FAILURE,
+        blocker_evidence: DHHS_REPLACEMENT_REASON,
+        sample_count: 2,
+        samples: [
+          {
+            sample_name: 'Saved New Hampshire DHHS Medicaid root',
+            source_url: 'https://dhhs.new-hampshire.gov/',
+            verification_status: 'blocked',
+            source_type: 'saved_replacement_root_unresolvable',
+            source_table: 'reviewed_live_probe',
+            fetched_at: '2026-06-23T00:00:00.000Z',
+            evidence_snippet: 'The exact saved New Hampshire DHHS replacement-host root fails DNS resolution in bounded review and cannot remain verified Medicaid evidence.',
+          },
+          {
+            sample_name: 'Saved Medicaid/DD replacement path family',
+            source_url: 'https://dhhs.new-hampshire.gov/dd',
+            verification_status: 'blocked',
+            source_type: 'saved_replacement_leaf_unresolvable',
+            source_table: 'reviewed_live_probe',
+            fetched_at: '2026-06-23T00:00:00.000Z',
+            evidence_snippet: 'The exact saved replacement-path family under `dhhs.new-hampshire.gov` also fails DNS resolution, so the packet has no live reviewed Medicaid-family host on that successor domain.',
+          },
+        ],
+      };
+    }
+    if (row.family === 'medicaid_waiver_hcbs_disability_services') {
+      return {
+        ...row,
+        family_status: 'blocked_current_nh_dhhs_replacement_host_unresolvable',
+        evidence_strength: 'weak',
+        query_basis: 'Reviewed 2026-06-23 the exact saved New Hampshire waiver replacement-host path.',
+        blocker_code: DHHS_REPLACEMENT_FAILURE,
+        blocker_evidence: DHHS_REPLACEMENT_REASON,
+      };
+    }
+    if (row.family === 'developmental_disability_idd_authority') {
+      return {
+        ...row,
+        family_status: 'blocked_current_nh_dhhs_replacement_host_unresolvable',
+        evidence_strength: 'weak',
+        query_basis: 'Reviewed 2026-06-23 the exact saved New Hampshire DD replacement-host path.',
+        blocker_code: DHHS_REPLACEMENT_FAILURE,
+        blocker_evidence: DHHS_REPLACEMENT_REASON,
+      };
+    }
+    if (row.family === 'early_intervention_part_c') {
+      return {
+        ...row,
+        family_status: 'blocked_current_nh_dhhs_replacement_host_unresolvable',
+        evidence_strength: 'weak',
+        query_basis: 'Reviewed 2026-06-23 the exact saved New Hampshire early-intervention replacement-host path.',
+        blocker_code: DHHS_REPLACEMENT_FAILURE,
+        blocker_evidence: DHHS_REPLACEMENT_REASON,
+      };
+    }
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
@@ -318,6 +418,9 @@ export function generateBatch175NewHampshireHostFamilyBlockerRefreshV1() {
   });
 
   const updatedNextRows = nextRows.map((row) => {
+    if (['medicaid_state_health_coverage', 'medicaid_waiver_hcbs_disability_services', 'developmental_disability_idd_authority', 'early_intervention_part_c'].includes(row.family)) {
+      return { ...row, failure_code: DHHS_REPLACEMENT_FAILURE, next_action: DHHS_REPLACEMENT_NEXT, evidence: DHHS_REPLACEMENT_REASON };
+    }
     if (row.family === 'district_or_county_education_routing') {
       return { ...row, failure_code: EDUCATION_FAILURE, next_action: EDUCATION_NEXT, evidence: EDUCATION_REASON };
     }
@@ -330,17 +433,69 @@ export function generateBatch175NewHampshireHostFamilyBlockerRefreshV1() {
     return row;
   });
 
+  for (const family of ['medicaid_state_health_coverage', 'medicaid_waiver_hcbs_disability_services', 'developmental_disability_idd_authority', 'early_intervention_part_c']) {
+    if (!updatedNextRows.some((row) => row.family === family)) {
+      updatedNextRows.push({
+        state: 'new-hampshire',
+        state_code: 'NH',
+        priority_rank: family === 'medicaid_state_health_coverage' ? 1 : family === 'medicaid_waiver_hcbs_disability_services' ? 2 : family === 'developmental_disability_idd_authority' ? 3 : 4,
+        family,
+        severity: 'critical',
+        failure_code: DHHS_REPLACEMENT_FAILURE,
+        next_action: DHHS_REPLACEMENT_NEXT,
+        evidence: DHHS_REPLACEMENT_REASON,
+      });
+    }
+  }
+
   const updatedSummary = {
     ...summary,
     classification: 'BLOCKED',
     index_safe: false,
-    completeness_pct: 75,
-    strong_critical_families: 9,
-    weak_critical_families: 3,
+    completeness_pct: 42,
+    strong_critical_families: 5,
+    weak_critical_families: 7,
     missing_critical_families: 0,
-    primary_gap_reason: 'official_nh_host_families_publicly_access_denied_or_unresolvable',
+    primary_gap_reason: 'official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable',
+    critical_gap_families: [
+      'medicaid_state_health_coverage',
+      'medicaid_waiver_hcbs_disability_services',
+      'developmental_disability_idd_authority',
+      'early_intervention_part_c',
+      'district_or_county_education_routing',
+      'county_local_disability_resources',
+    ],
+    major_gap_families: ['vocational_rehabilitation_pre_ets'],
     complete_ready: false,
     final_blockers: [
+      {
+        family: 'medicaid_state_health_coverage',
+        severity: 'critical',
+        failure_code: DHHS_REPLACEMENT_FAILURE,
+        evidence: DHHS_REPLACEMENT_REASON,
+        next_action: DHHS_REPLACEMENT_NEXT,
+      },
+      {
+        family: 'medicaid_waiver_hcbs_disability_services',
+        severity: 'critical',
+        failure_code: DHHS_REPLACEMENT_FAILURE,
+        evidence: DHHS_REPLACEMENT_REASON,
+        next_action: DHHS_REPLACEMENT_NEXT,
+      },
+      {
+        family: 'developmental_disability_idd_authority',
+        severity: 'critical',
+        failure_code: DHHS_REPLACEMENT_FAILURE,
+        evidence: DHHS_REPLACEMENT_REASON,
+        next_action: DHHS_REPLACEMENT_NEXT,
+      },
+      {
+        family: 'early_intervention_part_c',
+        severity: 'critical',
+        failure_code: DHHS_REPLACEMENT_FAILURE,
+        evidence: DHHS_REPLACEMENT_REASON,
+        next_action: DHHS_REPLACEMENT_NEXT,
+      },
       {
         family: 'district_or_county_education_routing',
         severity: 'critical',
@@ -371,7 +526,7 @@ export function generateBatch175NewHampshireHostFamilyBlockerRefreshV1() {
     state: 'new-hampshire',
     classification_before: summary.classification,
     classification_after: updatedSummary.classification,
-    host_family_blockers: ['education.nh.gov', 'my.doe.nh.gov', 'dhhs.nh.gov', 'nhes.nh.gov', 'nheasy.nh.gov'],
+    host_family_blockers: ['education.nh.gov', 'my.doe.nh.gov', 'dhhs.nh.gov', 'dhhs.new-hampshire.gov', 'nhes.nh.gov', 'nheasy.nh.gov'],
     lesson_added: lessonAdded,
   };
 

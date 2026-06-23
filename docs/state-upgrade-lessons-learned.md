@@ -791,3 +791,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Service-Agency Application Pages Do Not Count As ESU Or County Routing
 *   **Lesson:** If a live state special-education page exposes a `Service Agencies/Providers` leaf, inspect whether it is a public routing table or just a provider application workflow. Nebraska’s page stayed statewide and application-oriented, so it could not replace a missing county-to-ESU education contract.
+
+### Unresolvable Successor Hosts Cannot Stay Verified Just Because They Look Official
+*   **Lesson:** If a packet swaps in a neat-looking replacement host such as `agency.new-hampshire.gov`, re-probe that exact hostname before preserving it as verified evidence. New Hampshire’s saved `dhhs.new-hampshire.gov` Medicaid/DD/EI paths all failed DNS resolution, so they had to be downgraded back into the blocker set.
