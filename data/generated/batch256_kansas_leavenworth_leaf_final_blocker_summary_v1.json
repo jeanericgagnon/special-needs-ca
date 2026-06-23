@@ -1,0 +1,22 @@
+{
+  "batch": "batch_256_kansas_leavenworth_leaf_final_blocker_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_counties": [
+    "atchison-ks",
+    "butler-ks",
+    "douglas-ks",
+    "finney-ks",
+    "johnson-ks",
+    "leavenworth-ks",
+    "shawnee-ks",
+    "wyandotte-ks"
+  ],
+  "reviewed_leaf_count": 8,
+  "newly_verified_county": "leavenworth-ks",
+  "saline_coop_lead_preserved": true,
+  "riley_non_match_frozen": true,
+  "lessons_updated": false
+}

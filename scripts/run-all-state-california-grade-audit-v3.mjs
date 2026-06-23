@@ -442,17 +442,25 @@ function generateAllStateCaliforniaGradeAuditV3() {
   const stateV3ById = new Map(statesV3.map((row) => [row.stateId, row]));
   const priorityV3 = priorityV2.map((row) => {
     const stateV3 = stateV3ById.get(row.state);
+    const classification = stateV3?.classification || row.classification;
+    const indexSafe = stateV3?.indexSafe ?? row.index_safe;
+    const completenessPct = stateV3?.completenessPct ?? row.completeness_pct;
+    const missingCriticalFamilies = stateV3?.missingCriticalFamilies ?? row.missing_critical_families;
+    const weakCriticalFamilies = stateV3?.weakCriticalFamilies ?? row.weak_critical_families;
+    const primaryGapReason = stateV3?.packetPrimaryGapReason || summaryByState.get(row.state)?.primary_gap_reason || row.primary_gap_reason;
+    const recommendedBatch = stateV3?.packetRecommendedBatch || summaryByState.get(row.state)?.recommended_batch || row.recommended_batch;
     return {
       ...row,
-      classification: stateV3?.classification || row.classification,
-      index_safe: stateV3?.indexSafe ?? row.index_safe,
-      completeness_pct: stateV3?.completenessPct ?? row.completeness_pct,
-      missing_critical_families: stateV3?.missingCriticalFamilies ?? row.missing_critical_families,
-      weak_critical_families: stateV3?.weakCriticalFamilies ?? row.weak_critical_families,
-      primary_gap_reason: stateV3?.packetPrimaryGapReason || summaryByState.get(row.state)?.primary_gap_reason || row.primary_gap_reason,
-      recommended_batch: stateV3?.packetRecommendedBatch || summaryByState.get(row.state)?.recommended_batch || row.recommended_batch,
+      status: classification,
+      classification,
+      index_safe: indexSafe,
+      completeness_pct: completenessPct,
+      missing_critical_families: missingCriticalFamilies,
+      weak_critical_families: weakCriticalFamilies,
+      primary_gap_reason: primaryGapReason,
+      recommended_batch: recommendedBatch,
       state_packet_generated: summaryByState.has(row.state),
-      repair_lane: (stateV3?.classification || row.classification) === 'COMPLETE' ? 'maintain_truth_only' : 'repair_from_state_packet',
+      repair_lane: classification === 'COMPLETE' ? 'maintain_truth_only' : 'repair_from_state_packet',
     };
   });
 
@@ -467,6 +475,15 @@ function generateAllStateCaliforniaGradeAuditV3() {
     packetMissingStates,
     lessonsUpdate: 'Added a new queue-completion lesson: once every state has a packet, stop expanding the queue and switch to failure-class repair from packet artifacts.',
   };
+
+  const completeStates = statesV3
+    .filter((row) => row.classification === 'COMPLETE')
+    .map((row) => row.stateName)
+    .sort();
+  const blockedStates = statesV3
+    .filter((row) => row.classification !== 'COMPLETE')
+    .map((row) => row.stateName)
+    .sort();
 
   const reportV3 = [
     '# All-State California-Grade Audit Report v3',
@@ -483,6 +500,8 @@ function generateAllStateCaliforniaGradeAuditV3() {
     ...Object.entries(classifications).map(([label, count]) => `- ${label}: ${count}`),
     '',
     `- index-safe states: ${auditV3.indexSafeCount}`,
+    `- complete states: ${completeStates.join(', ')}`,
+    `- blocked states: ${blockedStates.join(', ')}`,
     '',
     '## Notes',
     '',

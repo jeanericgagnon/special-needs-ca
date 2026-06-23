@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "reviewed_kansas_district_owned_leaves_now_cover_7_counties_but_full_county_grade_coverage_is_incomplete",
+  "primary_gap_reason": "reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,9 +43,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "reviewed_district_owned_special_education_leaves_exist_but_kansas_county_grade_coverage_is_still_incomplete",
-      "evidence": "Reviewed 2026-06-23 bounded Kansas district-owned exact leaf checks after the public KSDE export contract was proven. District-owned special-education leaves remain reviewed for 7/105 counties: atchison-ks, butler-ks, douglas-ks, finney-ks, johnson-ks, shawnee-ks, wyandotte-ks. A new bounded Wyandotte check showed the live district-owned Kansas City Kansas Public Schools root https://www.kckschools.org/ exposes an exact `/special-education` href on the homepage. Fetching https://www.kckschools.org/special-education returned HTTP 200 with title `Special Education - Kansas City Kansas Unified Schl Dist 500`, H1 `Special Education`, and body text preserving IDEA and Section 504 eligibility language on the district host. Sedgwick remains frozen as a non-match because https://www.usd259.org/schools23/special-programs-and-schools is still only a generic district-owned special-programs page rather than role-exact special-education routing. Kansas therefore now has one more reviewed district-owned local leaf, but county-grade education coverage is still incomplete across the 105-county packet.",
-      "next_action": "expand_reviewed_kansas_district_owned_special_education_leaves_from_public_export_backed_inventory_and_keep_non_matching_district_pages_frozen"
+      "failure_code": "reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
+      "evidence": "Reviewed 2026-06-23 one bounded official Kansas district-routing pass using only export-backed district hosts and current public district pages. District-owned special-education leaves now cover 8/105 counties: atchison-ks, butler-ks, douglas-ks, finney-ks, johnson-ks, leavenworth-ks, shawnee-ks, wyandotte-ks. A new Leavenworth review showed https://www.usd453.org/ exposes an exact district-owned Special Education href and https://www.usd453.org/district-departments/special-education returned HTTP 200 with title `Special Education - Leavenworth Unified School District` and H1 `Special Education`. Saline produced a stronger official local lead but not a final clear: https://www.usd305.com/site-map and https://www.usd305.com/departments/administrative-student-support both label a link as `Special Education Services` and send it to https://www.305ckcie.com/departments/early-childhood-special-education, while the CKCIE home page says it provides special education services to more than 3,100 students across 12 school districts. That is a real local cooperative lead, but this bounded pass still did not recover a role-pure school-age county contract from the cooperative stack. Riley became a deterministic non-match: https://www.usd383.org/sitemap.xml stayed public but exposed no role-exact special-education or student-services leaf, and bounded search-result URLs on the same host returned 404. Kansas therefore remains blocked because county-grade education proof is still incomplete across the 105-county packet even after Leavenworth clears.",
+      "next_action": "continue_export_backed_district_and_affiliated_coop_leaf_authoring_county_by_county_and_keep_exact_non_matches_frozen"
     }
   ],
   "familyStatuses": {

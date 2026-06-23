@@ -77,6 +77,7 @@ for (const summary of packetSummaries) {
   assert.equal(auditState.packetPrimaryGapReason, summary.primary_gap_reason, `${summary.state} audit primary gap reason must match packet summary`);
 
   assert.equal(priorityState.classification, summary.classification, `${summary.state} priority classification must match packet summary`);
+  assert.equal(priorityState.status, summary.classification, `${summary.state} priority status must match packet summary classification`);
   assert.equal(priorityState.index_safe, summary.index_safe, `${summary.state} priority index_safe must match packet summary`);
   assert.equal(priorityState.completeness_pct, summary.completeness_pct, `${summary.state} priority completeness_pct must match packet summary`);
   assert.equal(priorityState.missing_critical_families, summary.missing_critical_families, `${summary.state} priority missing critical count must match packet summary`);
@@ -110,6 +111,8 @@ for (const [family, familyStatus] of pennsylvaniaGapStatusByFamily.entries()) {
 
 assert.ok(reportV3.includes('packet_coverage_count: 50'), 'v3 report must state full packet coverage');
 assert.ok(reportV3.includes('packet_missing_states: none'), 'v3 report must state no missing packet states');
+assert.ok(reportV3.includes('complete states: Alabama, Arkansas, California'), 'v3 report must list complete states');
+assert.ok(reportV3.includes('Michigan'), 'v3 report must include Michigan in the complete-state list');
 assert.ok(planV3.includes('Stop expanding packet coverage.'), 'v3 plan must move to repair-from-packets mode');
 assert.ok(texasReport.includes('Texas remains COMPLETE and index-safe'), 'Texas packet report must preserve Texas complete truth');
 

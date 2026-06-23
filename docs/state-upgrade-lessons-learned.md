@@ -222,3 +222,6 @@
 
 ### County-Cluster BOCES Pages Can Collapse A Statewide Education Blocker To An NYC Remainder
 *   **Lesson:** If an official state education page groups BOCES by county clusters and a companion superintendent directory preserves contact rows for those same BOCES, use that pair to shrink the blocker before authoring more district leaves. New York NYSED `jmt.html` plus `superintendents.html` proved 57 non-NYC counties at once, leaving only the NYC borough route as the real remainder.
+
+### District Site Maps Can Surface Cooperative Leads Without Clearing County-Grade Routing
+*   **Lesson:** If an official district site map labels a link as `Special Education Services` but sends users to a separate cooperative or interlocal host, treat that destination as a high-value local lead rather than an automatic county clear. Kansas Salina USD 305 linked `Special Education Services` into CKCIE, but the bounded pass still needed a role-pure local routing contract before promoting the county.

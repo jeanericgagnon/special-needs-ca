@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 7,
+    "authoredExactLeafCount": 8,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 4,
     "publicExportContractVerified": true,
-    "reviewedDistrictOwnedLeafCount": 7
+    "reviewedDistrictOwnedLeafCount": 8
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -165,6 +165,7 @@
     "douglas-ks",
     "finney-ks",
     "johnson-ks",
+    "leavenworth-ks",
     "shawnee-ks",
     "wyandotte-ks"
   ],
@@ -215,7 +216,6 @@
     "kiowa-ks",
     "labette-ks",
     "lane-ks",
-    "leavenworth-ks",
     "lincoln-ks",
     "linn-ks",
     "logan-ks",
