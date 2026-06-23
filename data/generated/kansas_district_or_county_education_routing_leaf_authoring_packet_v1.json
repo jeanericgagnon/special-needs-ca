@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 3,
+    "authoredExactLeafCount": 6,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 4,
     "publicExportContractVerified": true,
-    "reviewedDistrictOwnedLeafCount": 3
+    "reviewedDistrictOwnedLeafCount": 6
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -162,6 +162,9 @@
   "reviewed_local_leaf_counties": [
     "atchison-ks",
     "butler-ks",
+    "douglas-ks",
+    "finney-ks",
+    "johnson-ks",
     "shawnee-ks"
   ],
   "unresolved_local_leaf_counties": [
@@ -185,12 +188,10 @@
     "decatur-ks",
     "dickinson-ks",
     "doniphan-ks",
-    "douglas-ks",
     "edwards-ks",
     "elk-ks",
     "ellis-ks",
     "ellsworth-ks",
-    "finney-ks",
     "ford-ks",
     "franklin-ks",
     "geary-ks",
@@ -208,7 +209,6 @@
     "jackson-ks",
     "jefferson-ks",
     "jewell-ks",
-    "johnson-ks",
     "kearny-ks",
     "kingman-ks",
     "kiowa-ks",

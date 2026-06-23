@@ -143,3 +143,12 @@
 
 ### Authoritative PTI Leaves Can Upgrade A First-Party Homepage That Lacks Explicit Designation Text
 *   **Lesson:** If a PTI first-party homepage is live but only shows general support navigation, check the authoritative Parent Center Hub state leaf before leaving the family blocked. North Carolina cleared once the Hub leaf explicitly said `North Carolina PTI (Serving all North Carolina)` and named ECAC, even though the ECAC homepage alone had been too weak.
+
+### A Live Official Sitemap With No Office Leaf Is A Final County-Local Stop Signal
+*   **Lesson:** If the official sitemap fully enumerates a benefits subtree and none of the exact leaves are office, directory, or county-routing pages, stop low-token discovery there. Florida's public-assistance sitemap listed the whole public tree, and it still contained no county ESS office leaf, so only a future tree change or anonymous locator contract can reopen the county-local family.
+
+### District Nav Or Sitemaps Can Produce Exact Leaves Even When The XML Endpoint Fails
+*   **Lesson:** If a district host returns a 404 on `/sitemap.xml`, still inspect the rendered nav for role-exact hrefs before giving up. Kansas surfaced Olathe and Lawrence special-education leaves from district nav links, while Garden City's live XML sitemap exposed `/page/special-education/` directly.
+
+### Office-Town Text Is Not The Same As County Coverage
+*   **Lesson:** If a public office page lists real office towns and map links but never names counties or service areas, correct the blocker to “no county crosswalk” rather than “no locality text.” Maine DHHS office locations proved Bangor, Calais, Machias, and Portland office towns, but that still was not enough to claim county-grade routing.

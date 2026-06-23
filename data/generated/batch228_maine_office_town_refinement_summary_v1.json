@@ -1,0 +1,11 @@
+{
+  "batch": "batch_228_maine_office_town_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dhhs_office_page_has_county_fields": false,
+  "dhhs_office_page_has_town_fields": true,
+  "dhhs_office_page_has_service_area_fields": false,
+  "lessons_updated": false
+}

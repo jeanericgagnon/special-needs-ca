@@ -20,12 +20,12 @@
 - legal_aid: verified_state_grade (Reviewed Pine Tree Legal Assistance now provides direct statewide Maine legal-aid evidence.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_district_office_locations_without_county_town_or_service_area_fields (Maine now has a tighter county-local blocker than a generic office-grade warning. The live DHHS District Office Locations page is public and role-bearing, but a bounded 2026-06-23 HTML inspection still exposes zero county terms, zero town terms, and zero service-area fields in the public page itself. Program cross-office notes such as Machias and Lewiston remain real office-routing hints, but they still cannot be promoted into county coverage proof. Maine county-local therefore remains blocked until an official county or town mapping contract appears.)
+- county_local_disability_resources: blocked_district_office_locations_with_towns_but_without_county_crosswalk (Maine now has a narrower county-local blocker than the previous zero-town claim. The live DHHS District Office Locations page is public and role-bearing and it clearly lists named office towns such as Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan, plus exact office addresses, phones, emails, and map links. But the same bounded 2026-06-23 HTML inspection still exposes zero county names, zero county-served labels, and zero service-area fields in the public page itself. Office-town text alone is not a truthful county-routing contract, so Maine county-local remains blocked until an official county or service-area crosswalk appears.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: public_maine_sau_selectors_are_live_but_raw_export_replay_still_500_and_county_grade_contacts_remain_unmaterialized :: Reviewed 2026-06-23 official Maine education sources at https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town, and the official workbook https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx. The public selector HTML still exposes `__RequestVerificationToken`, live OrgIds such as `42` for Bangor Public Schools, and the named submit actions `action:CSearchBySAU` and `action:SAUExport`, and the official workbook still parses with municipality-to-OrganizationId mappings. But a fresh bounded raw replay in this lane with the anti-forgery token, full hidden SAU inventory, OrgId=42, and each named submit still failed to produce stable role-bearing contact rows: the POST lane returned HTTP 500 or shell-only HTML instead of a reusable first-party export. Maine therefore no longer has a discovery blocker for education, but it still does have a materialization blocker because the public selector/workbook contract does not currently yield county-grade local routing rows in the low-token raw lane.
-- county_local_disability_resources: official_dhhs_office_page_has_zero_county_town_or_service_area_fields :: Reviewed 2026-06-23 live official Maine DHHS District Office Locations page at https://www.maine.gov/dhhs/about/contact/offices. The page still preserves district office names, addresses, phones, emails, and cross-office program notes, but a bounded HTML inspection exposed zero county terms, zero town terms, zero service-area fields, and no county names such as Aroostook, Washington, or York in the public page itself. DOI mirror rows and dead locator fallbacks therefore still lack a truthful official mapping contract.
+- county_local_disability_resources: official_dhhs_office_page_lists_office_towns_but_has_no_county_or_service_area_crosswalk :: Reviewed 2026-06-23 live official Maine DHHS District Office Locations page at https://www.maine.gov/dhhs/about/contact/offices. The page preserves district office names, exact office towns and addresses, phones, emails, cross-office program notes, and `Show Map` links for offices such as Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan. But a bounded HTML inspection still exposed zero county names such as Aroostook, Washington, or York, zero county-served labels, and zero service-area fields in the public page itself. The official page therefore remains office-grade evidence without a truthful county-to-office routing contract.
 
 ## Verified source samples
 
@@ -41,16 +41,16 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.ptla.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_district_office_locations_without_county_town_or_service_area_fields; samples=1; first=https://www.maine.gov/dhhs/about/contact/offices
+- county_local_disability_resources: blocked_district_office_locations_with_towns_but_without_county_crosswalk; samples=1; first=https://www.maine.gov/dhhs/about/contact/offices
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: use_reviewed_browser_capture_or_district_owned_leaves_to_materialize_county_grade_contacts_because_raw_sau_export_replay_still_500s
-- [critical] county_local_disability_resources: find_official_county_or_town_mapping_contract_or_keep_maine_counties_blocked
+- [critical] county_local_disability_resources: find_official_county_or_service_area_crosswalk_for_named_dhhs_office_towns_or_keep_maine_counties_blocked
 
 ## Completion decision
 
 - Maine remains BLOCKED and not index-safe.
-- Education has real official discovery primitives: the public selectors are live and the municipality workbook still downloads from the DOE host.
-- Maine education still does not clear because the raw postback lane remains unstable in bounded replay and has not yielded reusable county-grade local contact rows in this environment.
-- County-local remains blocked because the official DHHS office page still publishes zero county, town, or service-area mapping fields in public HTML.
+- Education still needs reviewed browser/manual capture or district-owned local leaves because the public SAU replay lane still does not materialize reusable local contact rows.
+- County-local is now more precise: the official DHHS office page does list real office towns and map links, but it still exposes no official county or service-area crosswalk.
+- Future Maine county-local repair should start from an official county or service-area bridge, not from re-auditing whether the office towns exist.

@@ -1,0 +1,11 @@
+{
+  "batch": "batch_226_florida_sitemap_no_county_office_leaf_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "sitemapEnumeratesPublicAssistanceTree": true,
+  "publicCountyOfficeLeafExposed": false,
+  "anonymousCountyResultLaneExposed": false,
+  "lessons_updated": false
+}
