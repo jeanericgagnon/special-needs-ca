@@ -1,0 +1,14 @@
+{
+  "state": "oklahoma",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "liveSuccessorOfficeMapVerified": true,
+  "officeMapPlacemarkCount": 60,
+  "officeMapCountyCoverageCount": 46,
+  "remainingCountyGapCount": 31,
+  "ddsApplyPageCountyMatrixPresent": false,
+  "childSupportDirectoryRejectedAsDisabilityProof": true,
+  "remaining_blocker_family_count": 1,
+  "lesson_added": false
+}

@@ -306,3 +306,6 @@
 
 ### Official CSE Office Tables Can Clear NYC Borough Routing
 *   **Lesson:** If a live official special-education committee page publishes district groupings plus office addresses, phones, and emails, treat that as a real local-routing contract. New York cleared the NYC remainder once the official `Committees on Special Education` page itself proved Bronx, Brooklyn, Manhattan, Queens, and Staten Island committee coverage.
+
+### Public Office-Map KML Feeds Still Need A Full County-Coverage Audit
+*   **Lesson:** If a first-party office page embeds a public map with a reachable KML feed, fetch and audit the feed directly before clearing county-local routing. Oklahoma Human Services exposed a real Google My Maps office dataset behind `Contact Us`, but the live KML only materialized 46 county-keyed locations, so the embed sharpened the blocker instead of clearing it.
