@@ -5,8 +5,8 @@ This pass stays bounded to official Idaho SDE and DHW directory sources. It reco
 - classification: BLOCKED
 - index_safe: false
 - official_district_links: 116
-- exact_office_leaves: 23
+- exact_office_leaves: 27
 - school_placeholder_rows: 44
 - county_dead_locator_rows: 27
-- county_generic_medicaid_rows: 18
-- primary_gap_reason: official_local_directories_exist_but_live_rows_still_lack_county_mapped_replacements
+- county_doi_mirror_rows: 18
+- primary_gap_reason: official_directories_now_expose_exact_targets_but_nampa_negative_proof_and_missing_county_mapping_keep_idaho_blocked

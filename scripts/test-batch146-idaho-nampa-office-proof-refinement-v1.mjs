@@ -48,7 +48,7 @@ assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Nampa 
 assert.ok(countyVerified.samples.some((sample) => sample.source_type === 'official_city_match_wrong_role'));
 
 const countyNext = nextRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyNext.next_action, 'replace_17_named_doi_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists');
+assert.equal(countyNext.next_action, 'replace_18_doi_mirror_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists');
 
 assert.equal(batchSummary.nampaNegativeProof, 'SWITC_only');
 assert.match(report, /Nampa only as Southwest Idaho Treatment Center/i);

@@ -23,18 +23,18 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'idaho-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP_REASON = 'official_local_directories_exist_but_live_rows_still_lack_county_mapped_replacements';
+const PRIMARY_GAP_REASON = 'official_directories_now_expose_exact_targets_but_nampa_negative_proof_and_missing_county_mapping_keep_idaho_blocked';
 
-const EDUCATION_CODE = 'official_sde_district_directory_exists_but_no_county_mapped_special_education_contract';
-const EDUCATION_REASON = 'Reviewed 2026-06-22 official Idaho SDE district routing sources: https://www.sde.idaho.gov/school-districts/, https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, and https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, plus live school_district DB rows. The official SDE stack now clearly preserves a real district directory: the public /school-districts/ page exposes 106 district website links. But the reviewed fetched markup still exposes no county-mapped fields or county-to-district contract, and the live DB inventory is still 44/44 statewide placeholders that reuse statewide SDE URLs rather than reviewed county-mapped or district-owned special-education routing leaves.';
-const EDUCATION_EVIDENCE = 'Reviewed 2026-06-22 current official Idaho SDE sources including https://www.sde.idaho.gov/school-districts/, https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, and https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, plus the live school_district DB rows. The official /school-districts/ page exposes 106 district website links, proving local district leaves exist. But the fetched public markup exposes no county header, district header, address header, website header, phone header, or other county-mapped table contract, and the live DB inventory is still 44/44 statewide placeholders: every Idaho school_district row still reuses a statewide SDE URL rather than a reviewed county-mapped or district-owned routing leaf.';
+const EDUCATION_CODE = 'official_school_district_directory_exposes_district_links_but_not_county_or_special_education_fields';
+const EDUCATION_REASON = 'Reviewed 2026-06-22 official Idaho SDE district routing sources: https://www.sde.idaho.gov/school-districts/, https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, and https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, plus live school_district DB rows and the public WordPress page JSON. The official SDE stack now clearly preserves a real district directory: the public /school-districts/ page exposes 116 exact outbound district website links. But the reviewed public content still exposes no county labels and no district special-education contact fields, and the live DB inventory is still 44 county fallback rows that reuse statewide or generic SDE URLs rather than reviewed county-mapped or district-owned routing leaves.';
+const EDUCATION_EVIDENCE = 'Reviewed 2026-06-22 current official Idaho SDE pages: https://www.sde.idaho.gov/about-us/departments/special-education/, https://www.sde.idaho.gov/about-us/our-staff/special-education/, https://www.sde.idaho.gov/about-us/departments/special-education/parent-resources/, https://www.sde.idaho.gov/about-us/idaho-schools/, and the official School Districts directory https://www.sde.idaho.gov/school-districts/ plus its public WordPress page JSON. The School Districts page explicitly says it is a complete list of Idaho K-12 districts and preserves 116 exact outbound district website links, but bounded live content checks show the public directory page itself does not expose county labels such as Canyon County and does not expose district special-education contact fields in reviewed public content. A live DB reconciliation now makes the fallback shape exact: the current school_district table still has 44 Idaho county rows, with 42 rows still using the statewide fallback https://www.sde.idaho.gov/sped/ and the remaining 2 rows (Ada and Canyon) still using the generic SDE root https://www.sde.idaho.gov/. County-grade education routing still cannot be verified.';
 
-const COUNTY_CODE = 'official_dhw_office_leaves_exist_but_live_rows_still_lack_county_to_office_mapping';
-const COUNTY_REASON = 'Reviewed 2026-06-22 official Idaho DHW office routing sources: https://healthandwelfare.idaho.gov/offices, https://healthandwelfare.idaho.gov/contact-us, the official DHW sitemap, and live county_offices DB rows. The official office stack is stronger than the current packet implied: the sitemap now exposes 23 exact DHW office leaves. But the public /offices page still exposes no county-to-office mapping contract in fetched content, and the live DB table remains placeholder-backed: 27 county rows still use the dead legacy locator https://dhhs.idaho.gov/locations while the other 18 still point to the generic Medicaid page https://healthandwelfare.idaho.gov/services-programs/medicaid-health instead of exact office leaves.';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 current official Idaho DHW sources including https://healthandwelfare.idaho.gov/offices, https://healthandwelfare.idaho.gov/contact-us, and the official sitemap https://healthandwelfare.idaho.gov/sitemap.xml, plus live county_offices DB rows. The official sitemap exposes 23 exact office leaves such as /dhw/boise-office-westgate-building, /dhw/caldwell-office, and /dhw/idaho-falls-office, proving local office leaves exist. But the fetched public /offices page still exposes no county-to-office mapping contract, while 27 live county rows still use the dead legacy locator https://dhhs.idaho.gov/locations and the other 18 still point to the generic Medicaid page https://healthandwelfare.idaho.gov/services-programs/medicaid-health rather than exact office leaves.';
+const COUNTY_CODE = 'official_dhw_office_directory_exposes_exact_office_leaves_but_nampa_resolves_only_to_switc_and_county_mapping_stays_publicly_missing';
+const COUNTY_REASON = 'Reviewed 2026-06-22 current official Idaho DHW office routing pages plus the paginated office directory. The official directory still exposes 27 exact office leaves and 18 DOI-backed county rows already name-match reviewed official office leaves. But the unresolved Canyon/Nampa gap is now narrower: the official directory mentions Nampa only on page 2 for Southwest Idaho Treatment Center (SWITC), not for a county office or benefits office leaf. Twenty-seven county rows still rely on the dead legacy `dhhs.idaho.gov/locations` root, and the public DHW office stack remains city-or-ZIP search only, so county-to-office routing is still not publicly verifiable.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us, https://healthandwelfare.idaho.gov/offices?page=0, https://healthandwelfare.idaho.gov/offices?page=1, https://healthandwelfare.idaho.gov/offices?page=2, and the DHW sitemap https://healthandwelfare.idaho.gov/sitemap.xml, plus one bounded follow-up on Nampa mentions inside the public office directory HTML. The paginated official directory preserves 27 exact office entries and the sitemap preserves exact office leaves such as /dhw/boise-office-westgate-building, /dhw/pocatello-office-horizon-building, /dhw/blackfoot-office-blackfoot-services-complex, /dhw/caldwell-office, /dhw/idaho-falls-office, /dhw/payette-office, /dhw/rexburg-office, /dhw/sandpoint-ponderay-office, and /dhw/twin-falls-office-pole-line-building. Eighteen DOI-backed county rows already name-match official office leaves, but 27 county rows still use the dead legacy locator https://dhhs.idaho.gov/locations. The bounded Nampa follow-up showed that the current public directory mentions Nampa only for Southwest Idaho Treatment Center (SWITC) at 1660 11th Ave N, Nampa, ID 83687, not for a reviewed county office or benefits office leaf. The public office search is still city-or-ZIP only, so county-to-office routing cannot yet be verified.';
 
 const LESSON_HEADING = '### Official Local Directories Can Prove Leaf Existence Without Proving County Mapping';
-const LESSON_BODY = '*   **Lesson:** When an official state directory or sitemap exposes many local leaves, split “local leaves exist” from “county mapping is verified.” Idaho SDE exposed 106 district links and Idaho DHW exposed 23 office leaves, but both families still stayed blocked because the public sources did not map those leaves back to counties and the live DB rows still used statewide placeholders.';
+const LESSON_BODY = '*   **Lesson:** When an official state directory or sitemap exposes many local leaves, split “local leaves exist” from “county mapping is verified.” Idaho SDE exposed 116 district links and Idaho DHW exposed exact office leaves, but both families still stayed blocked because the public sources did not map those leaves back to counties and the live DB rows still used statewide placeholders.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -94,8 +94,8 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- Idaho remains BLOCKED and not index-safe.',
-    '- Education is no longer blocked because local leaves are absent; it is blocked because the official district directory is not county-mapped and the live school rows still reuse statewide placeholders.',
-    '- County-local is no longer blocked because exact office leaves are unknown; it is blocked because the office leaves are not mapped back to counties in public source and the live county rows still point at placeholder URLs.',
+        '- Education is still blocked on county-keyed or reviewed district special-education routing, even though the official state district directory exposes exact district links.',
+        '- County-local is still blocked because the public office directory does not map exact office leaves back to counties, and the bounded Nampa follow-up resolves only to Southwest Idaho Treatment Center rather than a county office leaf.',
   ].join('\n') + '\n';
 }
 
@@ -108,10 +108,10 @@ export function generateBatch141IdahoOfficialLocalDirectoryRefinementV1() {
 
   const updatedFailureRows = failureRows.map((row) => {
     if (row.family === 'district_or_county_education_routing') {
-      return { ...row, failure_code: EDUCATION_CODE, evidence: EDUCATION_EVIDENCE, next_action: 'author_county_mapped_district_routing_from_official_directory_or_hold_blocked' };
+      return { ...row, failure_code: EDUCATION_CODE, evidence: EDUCATION_EVIDENCE, next_action: 'author_reviewed_district_targets_from_official_school_districts_directory_or_keep_county_routing_blocked' };
     }
     if (row.family === 'county_local_disability_resources') {
-      return { ...row, failure_code: COUNTY_CODE, evidence: COUNTY_EVIDENCE, next_action: 'author_exact_county_to_office_mappings_from_official_office_leaves_or_hold_blocked' };
+      return { ...row, failure_code: COUNTY_CODE, evidence: COUNTY_EVIDENCE, next_action: 'replace_18_doi_mirror_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists' };
     }
     return row;
   });
@@ -133,10 +133,10 @@ export function generateBatch141IdahoOfficialLocalDirectoryRefinementV1() {
 
   const updatedGapRows = gapRows.map((row) => {
     if (row.family === 'district_or_county_education_routing') {
-      return { ...row, family_status: 'blocked_official_district_directory_without_county_mapping', status_reason: EDUCATION_REASON };
+      return { ...row, family_status: 'blocked_official_district_directory_without_county_or_special_education_fields', status_reason: EDUCATION_REASON };
     }
     if (row.family === 'county_local_disability_resources') {
-      return { ...row, family_status: 'blocked_official_office_leaves_without_county_mapping', status_reason: COUNTY_REASON };
+      return { ...row, family_status: 'blocked_exact_office_leafs_exist_but_nampa_is_treatment_center_and_county_mapping_partial', status_reason: COUNTY_REASON };
     }
     return row;
   });
@@ -145,46 +145,46 @@ export function generateBatch141IdahoOfficialLocalDirectoryRefinementV1() {
     if (row.family === 'district_or_county_education_routing') {
       return {
         ...row,
-        family_status: 'blocked_official_district_directory_without_county_mapping',
+        family_status: 'blocked_official_district_directory_without_county_or_special_education_fields',
         query_basis: 'Reviewed official Idaho SDE district directory plus live DB placeholder counts.',
         blocker_code: EDUCATION_CODE,
         blocker_evidence: EDUCATION_EVIDENCE,
-        sample_count: 4,
+        sample_count: 3,
         samples: [
           {
-            sample_name: 'Idaho School Districts directory',
+            sample_name: 'School Districts',
             source_url: 'https://www.sde.idaho.gov/school-districts/',
             final_url: 'https://www.sde.idaho.gov/school-districts/',
             verification_status: 'verified',
-            source_type: 'official_district_directory',
+            source_type: 'official_statewide_district_directory',
             source_table: 'batch141_idaho_official_local_directory_refinement',
             fetched_at: '2026-06-22T00:00:00.000Z',
-            evidence_snippet: 'The official Idaho School Districts page exposes 106 district website links, proving district-owned leaves exist, but no county-mapped contract is exposed in fetched markup.',
+            evidence_snippet: 'The official School Districts page says it is a complete list of Idaho K-12 districts and preserves 116 exact district website links, but the reviewed page does not expose county labels or district special-education contact fields.',
           },
-          ...(row.samples || []).slice(1, 4),
+          ...(row.samples || []).slice(1, 3),
         ],
       };
     }
     if (row.family === 'county_local_disability_resources') {
       return {
         ...row,
-        family_status: 'blocked_official_office_leaves_without_county_mapping',
-        query_basis: 'Reviewed official Idaho DHW office directory, sitemap-exposed office leaves, and live DB placeholder counts.',
+        family_status: 'blocked_exact_office_leafs_exist_but_nampa_is_treatment_center_and_county_mapping_partial',
+        query_basis: 'Reviewed official Idaho DHW office directory, sitemap-exposed office leaves, and one bounded Nampa negative-proof follow-up.',
         blocker_code: COUNTY_CODE,
         blocker_evidence: COUNTY_EVIDENCE,
         sample_count: 4,
         samples: [
+          ...(row.samples || []).filter((sample) => sample.sample_name !== 'Nampa Office unresolved exact leaf').slice(0, 3),
           {
-            sample_name: 'Idaho DHW offices sitemap leaf set',
-            source_url: 'https://healthandwelfare.idaho.gov/sitemap.xml',
-            final_url: 'https://healthandwelfare.idaho.gov/sitemap.xml',
-            verification_status: 'verified',
-            source_type: 'official_sitemap_with_exact_office_leaves',
+            sample_name: 'Nampa mention resolves only to SWITC',
+            source_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
+            final_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
+            verification_status: 'blocked',
+            source_type: 'official_city_match_wrong_role',
             source_table: 'batch141_idaho_official_local_directory_refinement',
-            fetched_at: '2026-06-22T00:00:00.000Z',
-            evidence_snippet: 'The official Idaho DHW sitemap exposes 23 exact office leaves including Boise, Caldwell, and Idaho Falls office pages, but no county-to-office mapping contract.',
+            fetched_at: '2026-06-22T22:25:00.000Z',
+            evidence_snippet: 'The only public Nampa mention on the official office directory is Southwest Idaho Treatment Center (SWITC) at 1660 11th Ave N, Nampa, ID 83687, not a county office or benefits office leaf.',
           },
-          ...(row.samples || []).slice(0, 3),
         ],
       };
     }
@@ -193,10 +193,10 @@ export function generateBatch141IdahoOfficialLocalDirectoryRefinementV1() {
 
   const updatedNextRows = nextRows.map((row) => {
     if (row.family === 'district_or_county_education_routing') {
-      return { ...row, failure_code: EDUCATION_CODE, next_action: 'author_county_mapped_district_routing_from_official_directory_or_hold_blocked', evidence: EDUCATION_EVIDENCE };
+      return { ...row, failure_code: EDUCATION_CODE, next_action: 'author_reviewed_district_targets_from_official_school_districts_directory_or_keep_county_routing_blocked', evidence: EDUCATION_EVIDENCE };
     }
     if (row.family === 'county_local_disability_resources') {
-      return { ...row, failure_code: COUNTY_CODE, next_action: 'author_exact_county_to_office_mappings_from_official_office_leaves_or_hold_blocked', evidence: COUNTY_EVIDENCE };
+      return { ...row, failure_code: COUNTY_CODE, next_action: 'replace_18_doi_mirror_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists', evidence: COUNTY_EVIDENCE };
     }
     return row;
   });
@@ -214,11 +214,11 @@ export function generateBatch141IdahoOfficialLocalDirectoryRefinementV1() {
     index_safe: updatedSummary.index_safe,
     completeness_pct: updatedSummary.completeness_pct,
     primary_gap_reason: updatedSummary.primary_gap_reason,
-    official_district_links: 106,
-    exact_office_leaves: 23,
+    official_district_links: 116,
+    exact_office_leaves: 27,
     school_placeholder_rows: 44,
     county_dead_locator_rows: 27,
-    county_generic_medicaid_rows: 18,
+    county_doi_mirror_rows: 18,
     lesson_added: lessonAdded,
   };
 
@@ -237,7 +237,7 @@ export function generateBatch141IdahoOfficialLocalDirectoryRefinementV1() {
       `- exact_office_leaves: ${batchSummary.exact_office_leaves}`,
       `- school_placeholder_rows: ${batchSummary.school_placeholder_rows}`,
       `- county_dead_locator_rows: ${batchSummary.county_dead_locator_rows}`,
-      `- county_generic_medicaid_rows: ${batchSummary.county_generic_medicaid_rows}`,
+      `- county_doi_mirror_rows: ${batchSummary.county_doi_mirror_rows}`,
       `- primary_gap_reason: ${updatedSummary.primary_gap_reason}`,
     ].join('\n') + '\n',
   );

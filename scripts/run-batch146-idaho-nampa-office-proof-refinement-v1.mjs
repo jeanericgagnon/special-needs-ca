@@ -24,9 +24,9 @@ const OUTPUTS = {
 };
 
 const COUNTY_FAILURE_CODE = 'official_dhw_office_directory_exposes_exact_office_leaves_but_nampa_resolves_only_to_switc_and_county_mapping_stays_publicly_missing';
-const COUNTY_STATUS_REASON = 'Reviewed 2026-06-22 current official Idaho DHW office routing pages plus the paginated office directory. The official directory still exposes 27 exact office leaves and 17 DOI-backed county rows already name-match reviewed official office leaves. But the unresolved Canyon/Nampa gap is now narrower: the official directory mentions Nampa only on page 2 for Southwest Idaho Treatment Center (SWITC), not for a county office or benefits office leaf. Twenty-seven county rows still rely on the dead legacy `dhhs.idaho.gov/locations` root, and the public DHW office stack remains city-or-ZIP search only, so county-to-office routing is still not publicly verifiable.';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us, https://healthandwelfare.idaho.gov/offices?page=0, https://healthandwelfare.idaho.gov/offices?page=1, https://healthandwelfare.idaho.gov/offices?page=2, and the DHW sitemap https://healthandwelfare.idaho.gov/sitemap.xml, plus one bounded follow-up on Nampa mentions inside the public office directory HTML. The paginated official directory preserves 27 exact office entries and the sitemap preserves exact office leaves such as /dhw/boise-office-westgate-building, /dhw/pocatello-office-horizon-building, /dhw/blackfoot-office-blackfoot-services-complex, /dhw/caldwell-office, /dhw/idaho-falls-office, /dhw/payette-office, /dhw/rexburg-office, /dhw/sandpoint-ponderay-office, and /dhw/twin-falls-office-pole-line-building. Seventeen DOI-backed county rows already name-match official office leaves, but 27 county rows still use the dead legacy locator https://dhhs.idaho.gov/locations. The bounded Nampa follow-up showed that the current public directory mentions Nampa only for Southwest Idaho Treatment Center (SWITC) at 1660 11th Ave N, Nampa, ID 83687, not for a reviewed county office or benefits office leaf. The public office search is still city-or-ZIP only, so county-to-office routing cannot yet be verified.';
-const COUNTY_NEXT_ACTION = 'replace_17_named_doi_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists';
+const COUNTY_STATUS_REASON = 'Reviewed 2026-06-22 current official Idaho DHW office routing pages plus the paginated office directory. The official directory still exposes 27 exact office leaves and 18 DOI-backed county rows already name-match reviewed official office leaves. But the unresolved Canyon/Nampa gap is now narrower: the official directory mentions Nampa only on page 2 for Southwest Idaho Treatment Center (SWITC), not for a county office or benefits office leaf. Twenty-seven county rows still rely on the dead legacy `dhhs.idaho.gov/locations` root, and the public DHW office stack remains city-or-ZIP search only, so county-to-office routing is still not publicly verifiable.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-22 current official Idaho DHW office routing pages: https://healthandwelfare.idaho.gov/contact-us, https://healthandwelfare.idaho.gov/offices?page=0, https://healthandwelfare.idaho.gov/offices?page=1, https://healthandwelfare.idaho.gov/offices?page=2, and the DHW sitemap https://healthandwelfare.idaho.gov/sitemap.xml, plus one bounded follow-up on Nampa mentions inside the public office directory HTML. The paginated official directory preserves 27 exact office entries and the sitemap preserves exact office leaves such as /dhw/boise-office-westgate-building, /dhw/pocatello-office-horizon-building, /dhw/blackfoot-office-blackfoot-services-complex, /dhw/caldwell-office, /dhw/idaho-falls-office, /dhw/payette-office, /dhw/rexburg-office, /dhw/sandpoint-ponderay-office, and /dhw/twin-falls-office-pole-line-building. Eighteen DOI-backed county rows already name-match official office leaves, but 27 county rows still use the dead legacy locator https://dhhs.idaho.gov/locations. The bounded Nampa follow-up showed that the current public directory mentions Nampa only for Southwest Idaho Treatment Center (SWITC) at 1660 11th Ave N, Nampa, ID 83687, not for a reviewed county office or benefits office leaf. The public office search is still city-or-ZIP only, so county-to-office routing cannot yet be verified.';
+const COUNTY_NEXT_ACTION = 'replace_18_doi_mirror_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists';
 const LESSON_HEADING = '### City Matches Inside An Office Directory Still Need Role Checks';
 const LESSON_BODY = '*   **Lesson:** If a blocked state still has one unresolved city-name office guess, verify that the city mention belongs to the right office role before treating it as progress. Idaho’s public DHW directory did mention Nampa, but only for Southwest Idaho Treatment Center, not for a county-benefits office leaf.';
 
@@ -94,6 +94,22 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
   ].join('\n') + '\n';
 }
 
+function buildCountySamples(existingSamples = []) {
+  const canonicalNampaSample = {
+    sample_name: 'Nampa mention resolves only to SWITC',
+    source_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
+    final_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
+    verification_status: 'blocked',
+    source_type: 'official_city_match_wrong_role',
+    source_table: 'reviewed_live_probe',
+    fetched_at: '2026-06-22T22:25:00.000Z',
+    evidence_snippet: 'The only public Nampa mention on the official office directory is Southwest Idaho Treatment Center (SWITC) at 1660 11th Ave N, Nampa, ID 83687, not a county office or benefits office leaf.',
+  };
+
+  const stripped = existingSamples.filter((sample) => sample.sample_name !== 'Nampa Office unresolved exact leaf' && sample.sample_name !== canonicalNampaSample.sample_name);
+  return [...stripped.slice(0, 3), canonicalNampaSample];
+}
+
 export function generateBatch146IdahoNampaOfficeProofRefinementV1() {
   const summary = readJson(INPUTS.summary);
   const gapRows = readJsonl(INPUTS.gap);
@@ -121,20 +137,8 @@ export function generateBatch146IdahoNampaOfficeProofRefinementV1() {
           blocker_code: COUNTY_FAILURE_CODE,
           blocker_evidence: COUNTY_EVIDENCE,
           query_basis: 'Reviewed official Idaho DHW office directory, sitemap, and one bounded Nampa follow-up inside the public office-directory HTML.',
-          samples: (row.samples || []).map((sample) => (
-            sample.sample_name === 'Nampa Office unresolved exact leaf'
-              ? {
-                  sample_name: 'Nampa mention resolves only to SWITC',
-                  source_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
-                  final_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
-                  verification_status: 'blocked',
-                  source_type: 'official_city_match_wrong_role',
-                  source_table: 'reviewed_live_probe',
-                  fetched_at: '2026-06-22T22:25:00.000Z',
-                  evidence_snippet: 'The only public Nampa mention on the official office directory is Southwest Idaho Treatment Center (SWITC) at 1660 11th Ave N, Nampa, ID 83687, not a county office or benefits office leaf.',
-                }
-              : sample
-          )),
+          sample_count: 4,
+          samples: buildCountySamples(row.samples || []),
         }
       : row
   ));

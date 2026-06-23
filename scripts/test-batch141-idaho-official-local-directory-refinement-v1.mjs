@@ -33,41 +33,44 @@ const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-
 assert.equal(result.classification, 'BLOCKED');
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
-assert.equal(summary.primary_gap_reason, 'official_local_directories_exist_but_live_rows_still_lack_county_mapped_replacements');
+assert.equal(summary.primary_gap_reason, 'official_directories_now_expose_exact_targets_but_nampa_negative_proof_and_missing_county_mapping_keep_idaho_blocked');
 
 const eduGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(eduGap.family_status, 'blocked_official_district_directory_without_county_mapping');
-assert.equal(countyGap.family_status, 'blocked_official_office_leaves_without_county_mapping');
-assert.match(eduGap.status_reason, /106 district website links/i);
-assert.match(countyGap.status_reason, /23 exact DHW office leaves/i);
+assert.equal(eduGap.family_status, 'blocked_official_district_directory_without_county_or_special_education_fields');
+assert.equal(countyGap.family_status, 'blocked_exact_office_leafs_exist_but_nampa_is_treatment_center_and_county_mapping_partial');
+assert.match(eduGap.status_reason, /116 exact outbound district website links/i);
+assert.match(countyGap.status_reason, /27 exact office leaves/i);
+assert.match(countyGap.status_reason, /Nampa only on page 2 for Southwest Idaho Treatment Center/i);
 
 const eduFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(eduFailure.failure_code, 'official_sde_district_directory_exists_but_no_county_mapped_special_education_contract');
-assert.equal(countyFailure.failure_code, 'official_dhw_office_leaves_exist_but_live_rows_still_lack_county_to_office_mapping');
-assert.match(eduFailure.evidence, /106 district website links/i);
-assert.match(countyFailure.evidence, /23 exact office leaves/i);
+assert.equal(eduFailure.failure_code, 'official_school_district_directory_exposes_district_links_but_not_county_or_special_education_fields');
+assert.equal(countyFailure.failure_code, 'official_dhw_office_directory_exposes_exact_office_leaves_but_nampa_resolves_only_to_switc_and_county_mapping_stays_publicly_missing');
+assert.match(eduFailure.evidence, /116 exact outbound district website links/i);
+assert.match(countyFailure.evidence, /27 exact office entries/i);
+assert.match(countyFailure.evidence, /Southwest Idaho Treatment Center \(SWITC\)/i);
 
 const eduVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(eduVerified.sample_count, 4);
+assert.equal(eduVerified.sample_count, 3);
 assert.equal(countyVerified.sample_count, 4);
 assert.match(eduVerified.samples[0].source_url, /\/school-districts\/$/);
-assert.match(countyVerified.samples[0].source_url, /sitemap\.xml$/);
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Nampa mention resolves only to SWITC'));
+assert.ok(countyVerified.samples.some((sample) => sample.source_type === 'official_city_match_wrong_role'));
 assert.match(eduVerified.query_basis, /official Idaho SDE district directory/i);
-assert.match(countyVerified.query_basis, /sitemap-exposed office leaves/i);
+assert.match(countyVerified.query_basis, /one bounded Nampa negative-proof follow-up/i);
 
-assert.equal(batchSummary.official_district_links, 106);
-assert.equal(batchSummary.exact_office_leaves, 23);
+assert.equal(batchSummary.official_district_links, 116);
+assert.equal(batchSummary.exact_office_leaves, 27);
 assert.equal(batchSummary.school_placeholder_rows, 44);
 assert.equal(batchSummary.county_dead_locator_rows, 27);
-assert.equal(batchSummary.county_generic_medicaid_rows, 18);
+assert.equal(batchSummary.county_doi_mirror_rows, 18);
 
-assert.ok(report.includes('official district directory is not county-mapped'));
-assert.ok(report.includes('office leaves are not mapped back to counties'));
+assert.ok(report.includes('official state district directory exposes exact district links'));
+assert.ok(report.includes('resolves only to Southwest Idaho Treatment Center'));
 assert.ok(lessons.includes('### Official Local Directories Can Prove Leaf Existence Without Proving County Mapping'));
-assert.equal(nextRows.find((row) => row.family === 'district_or_county_education_routing').next_action, 'author_county_mapped_district_routing_from_official_directory_or_hold_blocked');
-assert.equal(nextRows.find((row) => row.family === 'county_local_disability_resources').next_action, 'author_exact_county_to_office_mappings_from_official_office_leaves_or_hold_blocked');
+assert.equal(nextRows.find((row) => row.family === 'district_or_county_education_routing').next_action, 'author_reviewed_district_targets_from_official_school_districts_directory_or_keep_county_routing_blocked');
+assert.equal(nextRows.find((row) => row.family === 'county_local_disability_resources').next_action, 'replace_18_doi_mirror_rows_with_exact_office_leaves_and_keep_27_legacy_counties_blocked_until_a_public_county_to_office_contract_exists');
 
 console.log('test-batch141-idaho-official-local-directory-refinement-v1: ok');

@@ -594,6 +594,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Public Selector Pages Still Stay Blocked If The Result And Export Actions 500
 *   **Lesson:** If an official district directory exposes real town or SAU selector pages, inspect the exact public form actions before assuming the local-routing contract works. Maine DOE’s NEO pages exposed live town and SAU selectors plus `action:CSearchBySAU` and `action:SAUExport`, but both bounded POST actions returned HTTP 500, so the family stayed blocked on the broken public result/export contract instead of a generic “no local leaves” claim.
 
+### Live CSRF Forms Can Still Fail Closed After Concrete ID Replays
+*   **Lesson:** If a public official form exposes a CSRF token, a populated select list, and explicit submit actions in raw HTML, replay one or two concrete public IDs before assuming the contract works. Maine’s NEO `ContactSearchBySAU` form looked real in source, but `OrgId=364`, `542`, and `913` all still returned HTTP 500, which confirmed a true broken public result lane without browser churn.
+
 ### An Accessible Sitemap Can Prove There Is No Hidden County-Office Contract
 *   **Lesson:** If the accessible official host stays open, filter its live sitemap once for `office`, `locator`, `county`, and program-specific terms before escalating a county-local family into open-ended discovery. Arizona AHCCCS exposed only the known ALTCS county map plus county-admin/support-letter PDFs and no overlooked county-office locator leaf, which made it safe to keep the family blocked instead of guessing hidden office routes.
 
@@ -617,6 +620,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Reconcile Blocker Counts Against Live DB Rows Before Trusting Narrative Numbers
 *   **Lesson:** If a blocker claims `N exact rows` or `N legacy rows`, run one quick DB reconciliation before carrying that number forward. Idaho’s county-local packet said 17 DOI-backed office rows, but the live DB had 18 DOI rows, 27 legacy-locator rows, and a duplicated Canyon County pair (Caldwell and Nampa), which materially changed the next action.
+
+### Sequential State-Packet Replays Prevent Artifact Races
+*   **Lesson:** If two historical state-repair runners both rewrite the same `*_summary_v2.json`, gap matrix, or failure ledger, do not validate them in parallel. Idaho’s Batch 141 and Batch 146 lanes both mutate the same packet files, so parallel test runs can create fake blocker swings that are just artifact races.
 
 ### Browser-Rendered First-Party Medicaid Pages Can Salvage Waiver Proof When Sibling Hosts 403 In Lightweight Fetch
 *   **Lesson:** If an official Medicaid stack renders in the browser but sibling raw fetches to related hosts keep returning Akamai `Access Denied`, check the first-party fact-sheet library before leaving the waiver family blocked. Kansas cleared statewide waiver proof from the live KanCare home page plus the FS-7 HCBS fact sheet, even though direct lightweight probes to `kdads.ks.gov` still failed.

@@ -2,9 +2,9 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 75
+- completeness_pct: 83
 - county_count: 105
-- primary_gap_reason: kdads_access_blocked_and_no_county_or_district_education_contract_preserved
+- primary_gap_reason: kansas_dd_authority_still_access_blocked_and_no_county_or_district_education_contract_preserved
 
 ## Family status
 
@@ -34,7 +34,7 @@
 - developmental_disability_idd_authority: blocked_live_dd_authority_source_access_denied; samples=0
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.ksde.gov/policy-and-funding/special-education
-- district_or_county_education_routing: blocked_exact_district_or_county_leafs_unverified; samples=0
+- district_or_county_education_routing: blocked_exact_district_or_county_leafs_unverified; samples=1; first=https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dcf.ks.gov/services/RS/Pages/default.aspx
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.drckansas.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://familiestogetherinc.org/
@@ -50,7 +50,5 @@
 
 ## Completion decision
 
-- Kansas Medicaid is no longer blocked because the live official KanCare stack again preserves Medicaid coverage, eligibility, and appeal routing in the lightweight lane.
-- Kansas county-local resources are no longer blocked because the live official KanCare Ombudsman directory now publishes county-specific Community Resources guides for all 105 counties.
-- Kansas waiver routing is no longer blocked because the live official KanCare stack itself now preserves HCBS program and application evidence through the Community Support Waiver home-page module and the FS-7 Medicaid Home and Community Based Services fact sheet.
+- Kansas early intervention and statewide special education remain verified because the exact KSDE Early Childhood Special Education and Special Education leaves are live and preserve role-pure Part C / IDEA evidence.
 - Kansas remains BLOCKED and not index-safe because the KDADS DD authority family still returns access-denied responses, and county-grade education routing still lacks a preserved county-to-district or district-owned local-contact contract.

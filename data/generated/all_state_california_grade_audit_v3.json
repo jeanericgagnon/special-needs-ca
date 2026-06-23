@@ -1140,7 +1140,7 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_4_procedure_hardening_states_v1",
+      "packetBatch": "batch_147_kansas_ksde_leaf_rehydration_v1",
       "packetPrimaryGapReason": "kansas_dd_authority_still_access_blocked_and_no_county_or_district_education_contract_preserved",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },

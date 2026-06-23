@@ -26,9 +26,10 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'kansas-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP = 'kancare_kdads_access_blocked_and_no_county_or_district_education_contract_preserved';
+const PRIMARY_GAP = 'kansas_dd_authority_still_access_blocked_and_no_county_or_district_education_contract_preserved';
 const DISTRICT_BLOCKER = 'official_statewide_education_leaves_live_but_no_county_or_district_contract_preserved';
-const DISTRICT_REASON = 'The live KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves are again reachable, but the current packet still preserves no extracted county-to-district routing contract or district-owned special-education local-contact source, so county-grade education routing remains blocked.';
+const DISTRICT_REASON = 'The live KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves are again reachable. The official School District Maps page now also exposes a live USD county map PDF, but bounded extraction only recovers county names plus district numbers without a reviewable county-to-district join or district-owned special-education local-contact source, so county-grade education routing remains blocked.';
+const DISTRICT_EVIDENCE = 'Reviewed 2026-06-22 live probes to the exact KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves now succeed. The official School District Maps page also exposes a live USD county map PDF at https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5, and bounded extraction confirms that it is not dead or image-only. But the extracted text still collapses into district numbers plus county names without a reviewable county-to-district join, and the packet still preserves no district-owned local special-education contact source.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -112,9 +113,21 @@ function buildVerifiedRows(existingRows, partCSource, specialEdSource) {
         family_status: 'blocked_exact_district_or_county_leafs_unverified',
         evidence_strength: 'weak',
         blocker_code: DISTRICT_BLOCKER,
-        blocker_evidence: DISTRICT_REASON,
-        sample_count: 0,
-        samples: [],
+        blocker_evidence: DISTRICT_EVIDENCE,
+        query_basis: 'Kansas still lacks reviewed district-owned or county-grade education leaves, but bounded review now confirms the official School District Maps page exposes a live USD county map PDF even though the extracted text still does not preserve a usable county-to-district contract.',
+        sample_count: 1,
+        samples: [
+          {
+            sample_name: 'Kansas USD County Map PDF',
+            source_url: 'https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5',
+            final_url: 'https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5',
+            verification_status: 'blocked',
+            source_type: 'official_pdf_partial_county_and_district_text_without_join_contract',
+            source_table: 'bounded_live_kansas_check',
+            fetched_at: '2026-06-22T00:00:00.000Z',
+            evidence_snippet: 'Bounded extraction from the live official USD county map PDF recovers Kansas county names such as Allen, Anderson, Bourbon, Cherokee, and Shawnee plus many district numbers, but not a reviewable county-to-district join or local special-education routing contract.',
+          }
+        ],
       };
     }
     return row;
@@ -149,8 +162,8 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## Completion decision',
     '',
-    '- Kansas early intervention and statewide special education are no longer blocked because the exact KSDE Early Childhood Special Education and Special Education leaves are live again and preserve role-pure Part C / IDEA evidence.',
-    '- Kansas remains BLOCKED and not index-safe because the KanCare and KDADS stacks still return access-denied responses, and county-grade education routing still lacks a preserved county-to-district or district-owned local-contact contract.',
+    '- Kansas early intervention and statewide special education remain verified because the exact KSDE Early Childhood Special Education and Special Education leaves are live and preserve role-pure Part C / IDEA evidence.',
+    '- Kansas remains BLOCKED and not index-safe because the KDADS DD authority family still returns access-denied responses, and county-grade education routing still lacks a preserved county-to-district or district-owned local-contact contract.',
   ].join('\n') + '\n';
 }
 
@@ -159,6 +172,7 @@ export function generateBatch147KansasKsdeLeafRehydrationV1() {
   const gapRows = readJsonl(INPUTS.gap);
   const failureRows = readJsonl(INPUTS.failures);
   const verifiedRows = readJsonl(INPUTS.verified);
+  const nextActions = readJsonl(INPUTS.nextActions);
   const queueRows = readJsonl(INPUTS.queue);
   const audit = readJson(INPUTS.audit);
   const partCSource = readJson(INPUTS.partCSource);
@@ -196,90 +210,43 @@ export function generateBatch147KansasKsdeLeafRehydrationV1() {
     return row;
   });
 
-  const updatedFailureRows = failureRows
-    .filter((row) => !['early_intervention_part_c', 'special_education_idea_part_b', 'district_or_county_education_routing'].includes(row.family));
-
-  updatedFailureRows.splice(3, 0, {
-    state: 'kansas',
-    state_code: 'KS',
-    family: 'district_or_county_education_routing',
-    severity: 'critical',
-    failure_code: DISTRICT_BLOCKER,
-    evidence: 'Reviewed 2026-06-22 live probes to the exact KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves now succeed, but the packet still preserves no extracted county-to-district routing contract or district-owned local special-education contact source.',
-    next_action: 'author_exact_district_routing_contract_from_official_datacentral_or_county_map_sources',
-  });
+  const updatedFailureRows = failureRows.map((row) => (
+    row.family === 'district_or_county_education_routing'
+      ? {
+          ...row,
+          failure_code: DISTRICT_BLOCKER,
+          evidence: DISTRICT_EVIDENCE,
+          next_action: 'author_exact_district_routing_contract_from_official_datacentral_or_county_map_sources',
+        }
+      : row
+  ));
 
   const updatedVerifiedRows = buildVerifiedRows(verifiedRows, partCSource, specialEdSource);
 
-  const updatedNextRows = [
-    {
-      state: 'kansas',
-      state_code: 'KS',
-      priority_rank: 1,
-      family: 'medicaid_state_health_coverage',
-      severity: 'critical',
-      failure_code: 'reviewed_exact_medicaid_root_access_blocked',
-      next_action: 'browser_assisted_or_reviewed_alt_official_medicaid_leaf',
-      evidence: 'Reviewed 2026-06-22 live probe to the exact Kansas Medicaid root https://www.kancare.ks.gov/ still returns HTTP 403 Forbidden / access denied instead of Medicaid content.',
-    },
-    {
-      state: 'kansas',
-      state_code: 'KS',
-      priority_rank: 2,
-      family: 'medicaid_waiver_hcbs_disability_services',
-      severity: 'critical',
-      failure_code: 'reviewed_exact_waiver_leaf_access_blocked',
-      next_action: 'browser_assisted_or_reviewed_alt_official_waiver_leaf',
-      evidence: 'Reviewed 2026-06-22 live probe to the exact KDADS waiver and HCBS surfaces still returns HTTP 403 Forbidden / access denied.',
-    },
-    {
-      state: 'kansas',
-      state_code: 'KS',
-      priority_rank: 3,
-      family: 'developmental_disability_idd_authority',
-      severity: 'critical',
-      failure_code: 'legacy_dd_root_dead_and_reviewed_replacement_access_blocked',
-      next_action: 'browser_assisted_or_reviewed_alt_official_dd_leaf',
-      evidence: 'The old dhhs.kansas.gov/dd root remains dead, and reviewed 2026-06-22 live probe to the exact KDADS root still returns HTTP 403 Forbidden / access denied instead of DD content.',
-    },
-    {
-      state: 'kansas',
-      state_code: 'KS',
-      priority_rank: 4,
-      family: 'district_or_county_education_routing',
-      severity: 'critical',
-      failure_code: DISTRICT_BLOCKER,
-      next_action: 'author_exact_district_routing_contract_from_official_datacentral_or_county_map_sources',
-      evidence: 'Reviewed 2026-06-22 live probes to the exact KSDE Special Education, Dispute Resolution, Parent Rights, Data Central Special Education Reports, and School District Maps leaves now succeed, but the packet still preserves no extracted county-to-district routing contract or district-owned local special-education contact source.',
-    },
-    {
-      state: 'kansas',
-      state_code: 'KS',
-      priority_rank: 5,
-      family: 'county_local_disability_resources',
-      severity: 'critical',
-      failure_code: 'legacy_county_locator_dead_and_reviewed_replacement_access_blocked',
-      next_action: 'browser_assisted_or_author_county_local_exact_targets',
-      evidence: 'The old dhhs.kansas.gov/locations locator remains dead, and reviewed 2026-06-22 live probe to the exact KDADS root still returns HTTP 403 Forbidden / access denied, so no reviewed county-grade replacement is captured.',
-    }
-  ];
+  const updatedNextRows = nextActions.map((row) => (
+    row.family === 'district_or_county_education_routing'
+      ? {
+          ...row,
+          failure_code: DISTRICT_BLOCKER,
+          next_action: 'author_exact_district_routing_contract_from_official_datacentral_or_county_map_sources',
+          evidence: DISTRICT_EVIDENCE,
+        }
+      : row
+  ));
 
   const updatedSummary = {
     ...summary,
     classification: 'BLOCKED',
     index_safe: false,
     incorrectly_index_safe: false,
-    completeness_pct: 58,
-    strong_critical_families: 7,
-    weak_critical_families: 5,
+    completeness_pct: 83,
+    strong_critical_families: 10,
+    weak_critical_families: 2,
     missing_critical_families: 0,
     primary_gap_reason: PRIMARY_GAP,
     critical_gap_families: [
-      'medicaid_state_health_coverage',
-      'medicaid_waiver_hcbs_disability_services',
       'developmental_disability_idd_authority',
       'district_or_county_education_routing',
-      'county_local_disability_resources',
     ],
     major_gap_families: [],
     verified_source_families_with_samples: updatedVerifiedRows.filter((row) => row.sample_count > 0).map((row) => row.family),
@@ -299,8 +266,8 @@ export function generateBatch147KansasKsdeLeafRehydrationV1() {
           ...row,
           classification: 'BLOCKED',
           index_safe: false,
-          completeness_pct: 58,
-          weak_critical_families: 5,
+          completeness_pct: 83,
+          weak_critical_families: 2,
           missing_critical_families: 0,
           primary_gap_reason: PRIMARY_GAP,
         }
@@ -316,10 +283,10 @@ export function generateBatch147KansasKsdeLeafRehydrationV1() {
             classification: 'BLOCKED',
             indexSafe: false,
             incorrectlyIndexSafe: false,
-            strongCriticalFamilies: 7,
-            weakCriticalFamilies: 5,
+            strongCriticalFamilies: 10,
+            weakCriticalFamilies: 2,
             missingCriticalFamilies: 0,
-            completenessPct: 58,
+            completenessPct: 83,
             familyStatuses: {
               ...row.familyStatuses,
               early_intervention_part_c: 'verified_state_grade',
@@ -350,7 +317,7 @@ export function generateBatch147KansasKsdeLeafRehydrationV1() {
     completeness_pct: updatedSummary.completeness_pct,
     rehydrated_families: ['early_intervention_part_c', 'special_education_idea_part_b'],
     sharpened_blocker: 'district_or_county_education_routing',
-    lesson_added: true,
+    lesson_added: false,
   };
 
   writeJson(OUTPUTS.batchSummary, batchSummary);

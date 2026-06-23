@@ -4,6 +4,6 @@ This pass repairs only the stale Kansas KSDE blocker. It restores the two statew
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 58
+- completeness_pct: 83
 - rehydrated_families: early_intervention_part_c, special_education_idea_part_b
 - sharpened_blocker: district_or_county_education_routing

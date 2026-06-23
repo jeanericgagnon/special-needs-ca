@@ -45,7 +45,7 @@
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "official_sau_contact_search_and_export_actions_return_500",
-      "evidence": "Maine DOE now exposes an official List of SAUs by Municipality workbook plus live NEO town and SAU selector pages, but the workbook still lacks direct contact fields and bounded POSTs to the public CSearchBySAU and SAUExport actions returned HTTP 500 instead of verified local contact rows or an export file.",
+      "evidence": "Maine DOE now exposes an official List of SAUs by Municipality workbook plus live NEO town and SAU selector pages. The public ContactSearchBySAU form is real and exposes a CSRF token, OrgId select list, and explicit CSearchBySAU / SAUExport submit names in raw HTML, but bounded POST replays with concrete public organizations such as Portland Public Schools (OrgId 364), York Public Schools (OrgId 542), and RSU 60/MSAD 60 (OrgId 913) all returned HTTP 500 instead of verified local contact rows or an export file.",
       "next_action": "browser_assisted_capture_or_manual_export_from_neo_sau_contact_search"
     },
     {
