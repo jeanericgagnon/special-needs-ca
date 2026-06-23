@@ -1,0 +1,12 @@
+{
+  "batch": "batch232_nebraska_public_directory_clearance_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_directory_live": true,
+  "county_selector_public": true,
+  "county_option_count": 93,
+  "county_results_page_public": true,
+  "lessons_updated": false
+}

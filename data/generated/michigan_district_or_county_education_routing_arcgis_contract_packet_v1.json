@@ -12,7 +12,9 @@
     "officialArcgisServicePublic": true,
     "searchSourcesPublic": true,
     "schoolLayerHasCampusAddresses": true,
-    "districtBoundaryLayerHasContacts": false
+    "districtBoundaryLayerHasContacts": false,
+    "cepiPublicDatasetsPageLive": true,
+    "cepiExactDatasetPostbackStable": false
   },
   "representative_sources": [
     "https://www.michigan.gov/mde/services/special-education/program-planning/isd-plans",
@@ -25,7 +27,8 @@
     "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/4?f=json",
     "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/5?f=json",
     "https://gisagocss.state.mi.us/arcgis/rest/services/CSS/Schools_Districts/MapServer/0?f=pjson",
-    "https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/10?f=pjson"
+    "https://gisagocss.state.mi.us/arcgis/rest/services/OpenData/michigan_geographic_framework/MapServer/10?f=pjson",
+    "https://cepi.state.mi.us/EEM/PublicDatasets.aspx"
   ],
   "layer_contracts": [
     {
@@ -84,5 +87,20 @@
     }
   ],
   "affected_counties": "all_83_counties",
-  "packet_complete_when": "Michigan can reopen education only when an official MDE or district/ISD-owned surface preserves district or ISD routing contacts, special-education contacts, or a county-to-ISD/district export contract instead of boundary metadata or school-campus addresses alone."
+  "packet_complete_when": "Michigan can reopen education only when an official MDE or CEPI surface preserves district or ISD routing contacts, district websites, or a stable county-to-ISD/district export contract instead of boundary metadata, school-campus addresses, or a broken dataset postback alone.",
+  "public_dataset_contract": {
+    "page": "https://cepi.state.mi.us/EEM/PublicDatasets.aspx",
+    "page_live": true,
+    "entity_types_reviewed": [
+      "ISD District",
+      "LEA District"
+    ],
+    "export_formats_exposed": [
+      "CSV",
+      "Excel",
+      "XML"
+    ],
+    "exact_postback_status": "http_500_viewstate_mac_failed",
+    "stable_public_export": false
+  }
 }

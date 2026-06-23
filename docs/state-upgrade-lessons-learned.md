@@ -155,3 +155,12 @@
 
 ### Browser-Readable State Pages Can Still Be Raw-Fetch Final
 *   **Lesson:** If reviewed browser evidence proves a state page is live but a final exact raw fetch to the same page returns 403 and the rendered content still lacks county-grade fields, stop low-token retries there. Massachusetts DDS locations and regional-map pages were browser-readable enough to refine the blocker, but raw fetch still 403ed and no county crosswalk existed.
+
+### Public ASP.NET Dataset Forms Can Be Real But Still Export-Blocked
+*   **Lesson:** If an official public dataset page exposes the right entity types but the exact ASP.NET download postback fails with a server-side viewstate error, treat it as an export blocker, not a scrape-ready feed. Michigan CEPI’s public ISD/LEA dataset page was live, but the exact dataset postback still returned a viewstate MAC failure.
+
+### Flapping Official Child Routes Still Count As Blocked
+*   **Lesson:** If an official child route alternates between a live shell and a captcha page across bounded probes, keep it blocked unless it consistently exposes the needed local contract. Minnesota `MDEAnalytics/Data.jsp` briefly returned a `Data Reports and Analytics` shell, then flipped back to Radware on the same exact route.
+
+### Public County Selectors On Official ASP.NET Directories Count
+*   **Lesson:** If an official education directory root links to a live ASP.NET search page and a bounded postback exposes a full county selector plus county-specific results, count that as county-grade routing. Nebraska `educdirsrc.education.ne.gov/QuickStaff.aspx` exposed 93 counties and returned a live Adams County results page on the official host.

@@ -1,0 +1,13 @@
+{
+  "batch": "batch230_michigan_cepi_export_blocker_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "michigan",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "search_sources_public": true,
+  "school_layer_has_campus_addresses": true,
+  "district_routing_contract_present": false,
+  "cepi_public_datasets_page_live": true,
+  "cepi_exact_dataset_postback_stable": false,
+  "lessons_updated": false
+}

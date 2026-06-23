@@ -2,26 +2,31 @@
   "state": "nebraska",
   "state_code": "NE",
   "family": "district_or_county_education_routing",
-  "repair_lane": "browser_or_cached_capture_only",
-  "purpose": "Deterministic packet for Nebraska education routing while the live NDE SPED stack preserves statewide leaves but no county-to-ESU or county-to-district routing contract.",
+  "repair_lane": "resolved_via_public_county_directory",
+  "purpose": "Deterministic packet for Nebraska education routing resolved through the live official county-selectable NDE directory host.",
   "current_problem_metrics": {
     "countyRowCount": 93,
     "specialEducationHostLive": true,
     "topicDirectoryPdfLive": true,
-    "localContractReviewed": false,
-    "reviewedLocalLeafCount": 1
+    "localContractReviewed": true,
+    "reviewedLocalLeafCount": 93,
+    "countySelectorPublic": true,
+    "countyResultsPagePublic": true
   },
   "representative_sources": [
     "https://www.education.ne.gov/sped/",
     "https://www.education.ne.gov/sped/contact-us/",
     "https://www.education.ne.gov/sped/service-agencies/",
     "https://www.education.ne.gov/wp-content/uploads/2025/11/SPED-Calling-Tree-January-2026.pdf",
-    "https://esu9.org/programs-services/deaf-hard-of-hearing/"
+    "https://esu9.org/programs-services/deaf-hard-of-hearing/",
+    "https://www.education.ne.gov/dataservices/education-directory/",
+    "https://educdirsrc.education.ne.gov/",
+    "https://educdirsrc.education.ne.gov/CustomA.aspx",
+    "https://educdirsrc.education.ne.gov/QuickStaff.aspx",
+    "https://educdirsrc.education.ne.gov/QuickStaffDisplay.aspx"
   ],
   "exact_target_goals": [
-    "county-to-ESU service-area contract",
-    "district-owned special-education routing leaves",
-    "reviewed official ESU-wide directory or county-mapped export"
+    "maintain official county-selectable education directory availability"
   ],
-  "packet_complete_when": "Nebraska can reopen education only when a reviewed official county-to-ESU or county-to-district routing contract is preserved on disk."
+  "packet_complete_when": "complete"
 }

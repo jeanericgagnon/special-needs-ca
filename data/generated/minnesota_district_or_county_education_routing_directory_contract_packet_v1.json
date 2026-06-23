@@ -11,7 +11,11 @@
     "publicSearchChallengeProtected": true,
     "liveGlossaryRootAccessible": true,
     "directChildRoutesRadwareProtected": true,
-    "staticChildRouteLinksVisible": true
+    "staticChildRouteLinksVisible": true,
+    "glossaryRootPublic": true,
+    "countyRoutePublic": false,
+    "districtRoutePublic": false,
+    "mdeAnalyticsDataRouteFlaps": true
   },
   "representative_sources": [
     "https://education.mn.gov/MDE/about/SchOrg/",
@@ -33,5 +37,13 @@
     "browser-readable MDE-ORG query results",
     "cached public search capture only if the first-party directory contract is preserved"
   ],
-  "packet_complete_when": "Minnesota can reopen education only when the live MDE-ORG glossary family yields a reviewed first-party district/county/contact contract instead of a public root page whose actionable child routes are still Radware-protected."
+  "packet_complete_when": "Minnesota can reopen education only when the live MDE-ORG family yields a consistently reviewable county-mapped district routing contract or stable export instead of challenged child routes and a flapping analytics shell.",
+  "analytics_contract": {
+    "data_route": "https://pub.education.mn.gov/MDEAnalytics/Data.jsp",
+    "observed_states": [
+      "live_data_reports_and_analytics_shell",
+      "radware_captcha"
+    ],
+    "stable_county_or_district_export": false
+  }
 }

@@ -1,0 +1,11 @@
+{
+  "batch": "batch231_minnesota_mdeanalytics_instability_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "glossary_root_public": true,
+  "directory_child_routes_public": false,
+  "analytics_route_flaps": true,
+  "lessons_updated": false
+}
