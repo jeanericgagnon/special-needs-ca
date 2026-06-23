@@ -7,9 +7,9 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 87,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "mdeorg_root_and_analytics_routes_flap_to_radware_plus_mn_dhs_local_office_family_is_radware_challenged",
@@ -18,9 +18,7 @@
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "parent_training_information_center"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -49,13 +47,6 @@
       "failure_code": "official_mdeorg_root_itself_now_flaps_to_radware_and_no_stable_export_contract_exists",
       "evidence": "Reviewed 2026-06-23 bounded official Minnesota MDE education surfaces at the MDE-ORG family. A fresh exact fetch of https://pub.education.mn.gov/MdeOrgView/ returned title `Radware Captcha Page`, which is stronger blocker evidence than the prior assumption that the glossary root stayed stably public. A separate bounded session-backed probe still reached the same root with HTTP 200, but the child analytics route at https://pub.education.mn.gov/MDEAnalytics/Data.jsp immediately flipped to validate.perfdrive.com with title `Radware Captcha Page`, and the district, county, and contact routes remain challenge-protected. The older MDE-ORG description page at https://education.mn.gov/MDE/about/SchOrg/ still describes MDE-ORG as a searchable database that can generate files from search parameters, but the live first-party contract we can actually verify in low-token mode is now: root flaps between public and captcha responses, child routes challenge, and no stable county-grade export or directory capture is reproducible.",
       "next_action": "hold_blocked_until_reviewed_first_party_mdeorg_route_capture_or_stable_export_contract_exists"
-    },
-    {
-      "family": "parent_training_information_center",
-      "severity": "major",
-      "failure_code": "current_pacer_pages_and_retired_pti_paths_do_not_preserve_explicit_pti_designation",
-      "evidence": "Reviewed 2026-06-23 bounded current PACER first-party probes on https://www.pacer.org/, https://www.pacer.org/about/, https://www.pacer.org/parent/, https://www.pacer.org/advice-guidance/topic-iep-and-504/, https://www.pacer.org/parent/php/PIC/, and https://www.pacer.org/parent/php/PIC/fedfund.asp. The live PACER homepage and About page remain public and current, and the old `/parent/` route now resolves into the general advice-and-guidance page at https://www.pacer.org/advice-guidance/topic-iep-and-504/. However, the rechecked current pages still do not preserve explicit Parent Training and Information Center designation text, while the older `/parent/php/PIC/` and `/parent/php/PIC/fedfund.asp` PTI path family now returns HTTP 404. Minnesota therefore still lacks a saved live first-party PTI designation artifact even though statewide support evidence remains strong.",
-      "next_action": "hold_blocked_until_live_first_party_pti_designation_page_is_preserved"
     },
     {
       "family": "county_local_disability_resources",

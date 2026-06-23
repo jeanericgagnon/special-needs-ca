@@ -1,0 +1,12 @@
+{
+  "batch": "batch_243_minnesota_pti_authoritative_repair_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "parent_training_information_center": "verified_state_grade",
+  "remaining_critical_blockers": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ]
+}

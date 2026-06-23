@@ -1,0 +1,11 @@
+{
+  "batch": "batch_242_maine_search_export_truth_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "sample_orgid": 42,
+  "raw_search_recovered": false,
+  "raw_export_recovered": false,
+  "lessons_updated": false
+}

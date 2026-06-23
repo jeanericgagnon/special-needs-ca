@@ -19,7 +19,10 @@
     "reviewedOrgSelectorLive": true,
     "workbookStillDownloadable": true,
     "selectorDiscoverySolved": true,
-    "publicExportMaterializedInRawLane": false
+    "publicExportMaterializedInRawLane": false,
+    "publicSearchMaterializedInRawLane": false,
+    "sessionedSearch500Confirmed": true,
+    "sessionedExport500Confirmed": true
   },
   "exact_target_goals": [
     "reviewed SAU contact export or result capture with local superintendent or district contact rows",
@@ -72,5 +75,5 @@
     "washington-me",
     "york-me"
   ],
-  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the live public selectors and municipality workbook are public but the bounded raw export replay still returns HTTP 500 shell HTML."
+  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the live public selectors and municipality workbook are public but both named raw search/export replays still return the same HTTP 500 error shell."
 }

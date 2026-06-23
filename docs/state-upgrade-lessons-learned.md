@@ -198,3 +198,6 @@
 
 ### Hidden-Field Bridges Need Fresh Replay Proof Before They Count As Results
 *   **Lesson:** If an official bridge URL only supplies hidden fields, rerun that exact hidden payload before assuming the downstream result surface still materializes data. Massachusetts DESE `search_link.aspx` still existed, but the fresh bounded replay now only returned the generic `Profiles Search` shell instead of local district rows.
+
+### Freeze Selector Lanes When Both Named Submits Hit The Same Error Shell
+*   **Lesson:** If a public official selector still exposes a valid token, full hidden inventory, and named submit buttons, replay both the search and export submits once before preserving any “maybe recovered” lane. Maine NEO kept `action:CSearchBySAU` and `action:SAUExport`, but both Bangor replays returned the same HTTP 500 `Sorry, an error occurred` shell, so the whole selector lane stayed manual/browser-only.
