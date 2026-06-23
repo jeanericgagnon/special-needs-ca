@@ -1,0 +1,13 @@
+{
+  "batch": "batch_185_massachusetts_live_dds_location_lane_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dds_org_page_live": true,
+  "dds_locations_index_live": true,
+  "dds_interactive_map_live": true,
+  "stale_area_offices_path_404": true,
+  "county_contract_still_missing": true,
+  "lessons_updated": false
+}

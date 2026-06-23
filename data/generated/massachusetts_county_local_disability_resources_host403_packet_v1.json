@@ -2,28 +2,33 @@
   "state": "massachusetts",
   "state_code": "MA",
   "family": "county_local_disability_resources",
-  "repair_lane": "browser_or_cached_capture_only",
+  "repair_lane": "browser_or_cached_town_to_office_capture_only",
   "purpose": "Deterministic packet for Massachusetts DDS county-local routing while the likely official Mass.gov lane stays host-wide 403 in the low-token runtime.",
   "current_problem_metrics": {
     "legacyLocatorRows": 8,
     "doiMirrorRows": 7,
     "countyRowCount": 15,
     "multiOfficeCountyCount": 1,
-    "hostWide403Surfaces": 3
+    "hostWide403Surfaces": 0,
+    "liveOrgPageAccessible": true,
+    "liveLocationsIndexAccessible": true,
+    "liveInteractiveMapAccessible": true,
+    "staleAreaOfficesPath404": true
   },
   "exact_target_goals": [
-    "reviewed DDS area-office capture from browser or cached artifact",
+    "reviewed town-or-city to DDS area-office capture from the live interactive map",
     "official county-grade local office contract on Mass.gov",
-    "replacement of legacy and DOI rows only after host-level capture succeeds"
+    "replacement of legacy and DOI rows only after a reviewable county or equivalent local contract is preserved"
   ],
   "representative_sources": [
     "https://www.mass.gov/orgs/department-of-developmental-services",
-    "https://www.mass.gov/info-details/dds-area-offices",
-    "https://www.mass.gov/sitemap.xml"
+    "https://www.mass.gov/orgs/department-of-developmental-services/locations",
+    "https://www.mass.gov/info-details/interactive-dds-regional-map",
+    "https://www.mass.gov/info-details/dds-area-offices"
   ],
   "root_domains_to_review": [
-    "browser-assisted or cached Mass.gov DDS captures only",
-    "do not reopen generic county-office discovery until the host-wide 403 lane is bypassed with reviewed evidence"
+    "browser-assisted or cached Mass.gov DDS org, locations, and interactive-map surfaces only",
+    "do not reopen generic county-office discovery unless a county-grade export or machine-readable local contract appears on the live DDS lane"
   ],
   "affected_counties": [
     "barnstable-ma",
@@ -50,5 +55,5 @@
       ]
     }
   ],
-  "packet_complete_when": "Massachusetts can reopen county-local only when a reviewed Mass.gov DDS area-office capture or another official county-grade local office contract is preserved on disk."
+  "packet_complete_when": "Massachusetts can reopen county-local once the live DDS locations/index and interactive-map lane yields a reviewable county-grade contract or a preserved town-to-office capture that can be truthfully bridged to county rows."
 }

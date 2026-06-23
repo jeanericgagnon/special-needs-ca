@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 14
-- primary_gap_reason: official_dese_hidden_postback_bridge_renders_real_district_rows_but_no_county_contract_and_mass_gov_dds_lane_is_host_wide_403
+- primary_gap_reason: official_dese_hidden_postback_bridge_renders_real_district_rows_but_no_county_contract_and_live_dds_locations_lane_still_lacks_county_export
 
 ## Family status
 
@@ -20,12 +20,12 @@
 - legal_aid: verified_state_grade (Reviewed Massachusetts Legal Assistance Corporation first-party homepage preserves a statewide low-income legal-information, advice, and representation mission.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_mass_gov_dds_lane_host_wide_403_without_county_grade_capture (Massachusetts county-local routing remains blocked because the likely official DDS lane is host-wide 403 in the low-token runtime, while the current county_offices inventory is only a mix of 8 dead legacy storefront placeholders and 7 DOI mirrors. The next lane is browser-or-cached host capture only, not generic discovery.)
+- county_local_disability_resources: blocked_live_dds_locations_and_interactive_map_without_county_contract (Massachusetts county-local routing is no longer a host-wide 403 blocker. The live DDS org page, the org-locations index, and the interactive DDS regional map all render on Mass.gov in browser review, but the old `dds-area-offices` child is now a true 404 and the live interactive map still exposes only a town-or-city lookup contract in rendered HTML. The live locations index lists named DDS area offices and regions, but the current low-token lane still has no county column, county export, or machine-readable town list to bridge those offices back to all 14 county rows.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: official_dese_profiles_postback_results_lack_county_to_district_contract :: Reviewed 2026-06-23 one new live official DESE bridge audit plus the current blocker artifacts. The public URL https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238 is not the real result surface; it only emits a hidden-field passForm that auto-posts __VIEWSTATE, __EVENTVALIDATION, orgType=5,12, and leftNavId=11238 into /search/search.aspx. Replaying that exact hidden-field POST does render real district rows with superintendent contacts, addresses, phones, and grades served, but the final page still preserves no county column, county filter, or county export contract. County words only appear inside district names such as Bristol County Agricultural, not as a routing key. Massachusetts therefore still lacks county-grade education routing evidence even though the official DESE postback bridge is real.
-- county_local_disability_resources: mass_gov_dds_org_area_office_and_sitemap_return_403 :: Reviewed 2026-06-22 current Massachusetts DDS blocker artifacts plus the live county_offices DB rows. Bounded low-token fetches to the Mass.gov DDS org page, the DDS area-offices page, and the Mass.gov sitemap all returned HTTP 403, which means the likely official county-local lane is blocked at the host level in the current runtime. A live DB reconciliation shows the county_offices table still contains only 8 dead legacy storefront placeholders rooted at https://dhhs.massachusetts.gov/locations and 7 DOI mirror rows, with Suffolk County duplicated across Charlestown and Chelsea enrollment center guesses. Massachusetts therefore still lacks a reviewed county-grade local office contract, but the next lane can now work from a deterministic host-403 packet instead of an open-ended browser-assisted note.
+- county_local_disability_resources: live_dds_locations_and_interactive_map_without_county_contract :: Reviewed 2026-06-23 bounded browser checks on the live Massachusetts DDS first-party lane. The org page at https://www.mass.gov/orgs/department-of-developmental-services now renders normally and links exact child surfaces, including `Contact a DDS Area Office`, `Find Your Regional and Area Office`, and `/orgs/department-of-developmental-services/locations`. The old guessed page https://www.mass.gov/info-details/dds-area-offices is not a host-403 lane after all; it is a real 404 `We can't find that page`. The live locations index at https://www.mass.gov/orgs/department-of-developmental-services/locations renders 28 results, including named leaves such as DDS Berkshire Area Office, DDS Brockton Area Office, DDS Cape Cod/Islands Area Office, DDS Central Middlesex Area Office, DDS Fall River Area Office, and DDS Franklin/Hampshire Area Office with office addresses. The live interactive map page at https://www.mass.gov/info-details/interactive-dds-regional-map also renders and explicitly says it is used to find which DDS Regional Office and Area Office serves your town or city, but the rendered HTML still preserves no county names, no machine-readable town list, and no county-to-office export contract. Massachusetts therefore still lacks county-grade local routing proof in the low-token lane, but the blocker is now correctly narrowed to a live town/city DDS mapping surface without a reusable county contract.
 
 ## Verified source samples
 
@@ -41,15 +41,15 @@
 - legal_aid: verified_state_grade; samples=1; first=https://mlac.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_mass_gov_dds_lane_host_wide_403_without_county_grade_capture; samples=3; first=https://www.mass.gov/orgs/department-of-developmental-services
+- county_local_disability_resources: blocked_live_dds_locations_and_interactive_map_without_county_contract; samples=4; first=https://www.mass.gov/orgs/department-of-developmental-services
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: use_massachusetts_dese_postback_packet_and_hold_blocked_until_official_county_to_district_contract_exists
-- [critical] county_local_disability_resources: use_massachusetts_dds_host403_packet_for_browser_or_cached_capture_only
+- [critical] county_local_disability_resources: use_live_massachusetts_dds_locations_and_interactive_map_for_browser_or_cached_town_to_office_capture_only
 
 ## Completion decision
 
 - Massachusetts remains BLOCKED and index_safe=false.
-- Education is still blocked because the official DESE bridge is real but only as a hidden-field handoff; the final rendered district results still do not provide a county routing contract.
-- County-local is still blocked because the Mass.gov DDS lane remains host-wide 403 in the low-token runtime and no reviewed county-grade local office contract is preserved on disk.
+- Education is still blocked because the reviewed DESE postback bridge exposes district result rows but still no county-to-district routing contract.
+- County-local is now more specific: the DDS org page, locations index, and interactive map are live, but the lane still stops at town-or-city routing and office leaves without a county export or machine-readable local contract.

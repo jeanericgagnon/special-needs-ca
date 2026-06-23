@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_dese_hidden_postback_bridge_renders_real_district_rows_but_no_county_contract_and_mass_gov_dds_lane_is_host_wide_403",
+  "primary_gap_reason": "official_dese_hidden_postback_bridge_renders_real_district_rows_but_no_county_contract_and_live_dds_locations_lane_still_lacks_county_export",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -49,9 +49,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "mass_gov_dds_org_area_office_and_sitemap_return_403",
-      "evidence": "The likely official Massachusetts DDS county-local lane stays blocked because bounded low-token fetches to the public org page, the DDS area-offices page, and the Mass.gov sitemap all returned HTTP 403, and no alternate county-grade local office contract is preserved on disk.",
-      "next_action": "browser_assisted_or_cached_mass_gov_area_office_capture"
+      "failure_code": "live_dds_locations_and_interactive_map_without_county_contract",
+      "evidence": "Reviewed 2026-06-23 bounded browser checks on the live Massachusetts DDS first-party lane. The org page at https://www.mass.gov/orgs/department-of-developmental-services now renders normally and links exact child surfaces, including `Contact a DDS Area Office`, `Find Your Regional and Area Office`, and `/orgs/department-of-developmental-services/locations`. The old guessed page https://www.mass.gov/info-details/dds-area-offices is not a host-403 lane after all; it is a real 404 `We can't find that page`. The live locations index at https://www.mass.gov/orgs/department-of-developmental-services/locations renders 28 results, including named leaves such as DDS Berkshire Area Office, DDS Brockton Area Office, DDS Cape Cod/Islands Area Office, DDS Central Middlesex Area Office, DDS Fall River Area Office, and DDS Franklin/Hampshire Area Office with office addresses. The live interactive map page at https://www.mass.gov/info-details/interactive-dds-regional-map also renders and explicitly says it is used to find which DDS Regional Office and Area Office serves your town or city, but the rendered HTML still preserves no county names, no machine-readable town list, and no county-to-office export contract. Massachusetts therefore still lacks county-grade local routing proof in the low-token lane, but the blocker is now correctly narrowed to a live town/city DDS mapping surface without a reusable county contract.",
+      "next_action": "use_live_massachusetts_dds_locations_and_interactive_map_for_browser_or_cached_town_to_office_capture_only"
     }
   ]
 }

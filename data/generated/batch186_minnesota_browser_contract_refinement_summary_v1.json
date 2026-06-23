@@ -1,0 +1,12 @@
+{
+  "batch": "batch_186_minnesota_browser_contract_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "mdeorg_root_live": true,
+  "embedded_child_miswired_course_shell": true,
+  "mdeanalytics_radware_captcha": true,
+  "mndhs_replatform_radware_captcha": true,
+  "lessons_updated": false
+}

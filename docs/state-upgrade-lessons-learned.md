@@ -764,3 +764,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Separate Live Selector Inventory From Broken Result Actions
 *   **Lesson:** If an official search workflow has public selector pages and a downloadable mapping workbook, preserve those as solved inventory and isolate the blocker to the result/export action. Maine’s NEO town selector, org selector, and SAU-by-municipality workbook were all publicly live, so later work should start from manual capture on those selectors instead of rechecking whether the inventory exists.
+
+### Replace Stale 403 Assumptions With Exact Child-Surface Rechecks
+*   **Lesson:** If a state org page starts rendering again, re-check the exact child surfaces it links before preserving an old host-wide 403 blocker. Massachusetts DDS had moved past the earlier 403 assumption: the org page, `/locations`, and the interactive regional map were live, while the guessed `dds-area-offices` URL was just a true 404 and the remaining blocker was the lack of a county-grade export contract.
+
+### Embedded Official Front-Ends Can Resolve To The Wrong Product Entirely
+*   **Lesson:** If a live official directory landing page promises searchable exports, open the exact linked front-end once in browser mode before assuming it is just a JS shell. Minnesota's MDE-ORG root looked promising, but its linked child loaded as an unrelated slide-style course shell, which is a different blocker than a hidden directory app.
