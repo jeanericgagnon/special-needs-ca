@@ -1,0 +1,11 @@
+{
+  "batch": "batch_229_massachusetts_raw_lane_finalization_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dese_rendered_result_has_zero_county_occurrences": true,
+  "dds_locations_raw_fetch_403": true,
+  "dds_interactive_map_raw_fetch_403": true,
+  "lessons_updated": false
+}

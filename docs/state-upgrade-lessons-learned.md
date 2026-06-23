@@ -152,3 +152,6 @@
 
 ### Office-Town Text Is Not The Same As County Coverage
 *   **Lesson:** If a public office page lists real office towns and map links but never names counties or service areas, correct the blocker to “no county crosswalk” rather than “no locality text.” Maine DHHS office locations proved Bangor, Calais, Machias, and Portland office towns, but that still was not enough to claim county-grade routing.
+
+### Browser-Readable State Pages Can Still Be Raw-Fetch Final
+*   **Lesson:** If reviewed browser evidence proves a state page is live but a final exact raw fetch to the same page returns 403 and the rendered content still lacks county-grade fields, stop low-token retries there. Massachusetts DDS locations and regional-map pages were browser-readable enough to refine the blocker, but raw fetch still 403ed and no county crosswalk existed.

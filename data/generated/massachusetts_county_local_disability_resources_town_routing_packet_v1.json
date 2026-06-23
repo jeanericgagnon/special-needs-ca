@@ -28,7 +28,7 @@
     "https://www.mass.gov/info-details/dds-area-offices"
   ],
   "root_domains_to_review": [
-    "browser-assisted or cached Mass.gov DDS org, locations, and interactive-map surfaces only; the old host-wide 403 assumption is retired and the remaining blocker is the missing county-grade locality contract",
+    "reviewed browser or cached DDS locality capture only; exact raw pages are source-final for low-token mode until county fields or an export contract appear",
     "do not reopen generic county-office discovery unless a county-grade export or machine-readable local contract appears on the live DDS lane"
   ],
   "affected_counties": [
@@ -56,5 +56,5 @@
       ]
     }
   ],
-  "packet_complete_when": "Massachusetts can reopen county-local once the live DDS locations/index and interactive-map lane yields a reviewable county-grade contract or a preserved town-to-office capture that can be truthfully bridged to county rows."
+  "packet_complete_when": "Massachusetts can reopen county-local once an official county crosswalk, county field, county export, or a reviewed browser/cached locality capture that can be truthfully bridged to county rows is preserved."
 }
