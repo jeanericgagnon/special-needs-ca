@@ -8,6 +8,7 @@
     "apache-az",
     "graham-az",
     "greenlee-az",
+    "la-paz-az",
     "maricopa-az",
     "pinal-az",
     "santa-cruz-az",
@@ -17,11 +18,10 @@
     "cochise-az",
     "coconino-az",
     "gila-az",
-    "la-paz-az",
     "mohave-az",
     "navajo-az",
     "pima-az",
     "yavapai-az"
   ],
-  "verified_leaf_count": 7
+  "verified_leaf_count": 8
 }

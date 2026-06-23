@@ -111,6 +111,9 @@
 ### Homepage Anchor Text Can Beat Slug-Only Leaf Discovery
 *   **Lesson:** If a district-owned homepage exposes a role-exact anchor like `Exceptional Students Services (ESS)`, verify that direct href even when sitemap scans and slug-only homepage filters return nothing. Arizona only recovered La Paz once Parker USD's homepage anchor surfaced `/page/ess-department` as the real local leaf.
 
+### Preserve Previously Verified Exact Leaves As Packet Hints
+*   **Lesson:** If a previously verified district-owned special-education leaf still returns live role-matching content, keep that exact URL in the packet as a first-pass candidate instead of trusting fresh homepage discovery alone. Arizona's `la-paz-az` leaf stayed valid at `/page/ess-department`, but a rerun dropped it until the verifier retried the packet-backed exact URL directly.
+
 ### Public Selectors And Mapping Workbooks Are Not Enough If The Export Postback Still Fails
 *   **Lesson:** If an official selector page and mapping workbook are both public but the exact postback lane still returns HTTP 500 or shell-only HTML in bounded replay, keep the family blocked on materialization rather than upgrading it to a working export contract. Maine's DOE SAU selector exposed OrgIds and the municipality workbook, but the named export/search submits still failed in the raw lane.
 

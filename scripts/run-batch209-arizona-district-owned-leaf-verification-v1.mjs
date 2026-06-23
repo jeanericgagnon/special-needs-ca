@@ -48,6 +48,12 @@ const LEAF_HINTS = [
   'special-programs',
 ];
 
+const EXACT_LEAF_HINTS_BY_COUNTY = {
+  'la-paz-az': [
+    'https://www.parkerusd.org/page/ess-department',
+  ],
+};
+
 const VERIFIED_FAILURE_CODE = 'district_owned_special_education_leaves_verified_for_some_counties_but_remaining_counties_still_lack_reviewed_local_leaves';
 const VERIFIED_STATUS_REASON = 'Arizona education now has reviewed district-owned special-education or student-services leaves for some county-keyed district roots, but the family remains blocked until every county has a reviewed local education-routing leaf rather than only a county-keyed district root.';
 
@@ -217,7 +223,12 @@ export async function verifyArizonaDistrictOwnedLeaves({
       // sitemap is optional
     }
 
-    const candidateUrls = [...new Set([...homepageLinks, ...sitemapLinks])];
+    const exactHintUrls = (EXACT_LEAF_HINTS_BY_COUNTY[row.county_id] || [])
+      .map((url) => normalizeUrl(url))
+      .filter(Boolean)
+      .filter((href) => sameHost(href, homepage.finalUrl));
+
+    const candidateUrls = [...new Set([...exactHintUrls, ...homepageLinks, ...sitemapLinks])];
     let verifiedLeaf = null;
 
     for (const candidateUrl of candidateUrls.slice(0, 5)) {

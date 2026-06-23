@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_county_keyed_report_cards_roots_without_district_owned_special_education_leaves (Arizona education now has reviewed district-owned special-education or student-services leaves for 8/15 county-keyed district roots, but the family remains blocked until every county has a reviewed local education-routing leaf rather than only a county-keyed district root.)
+- district_or_county_education_routing: blocked_county_keyed_report_cards_roots_without_district_owned_special_education_leaves (Arizona education now has reviewed district-owned special-education or student-services leaves for some county-keyed district roots, but the family remains blocked until every county has a reviewed local education-routing leaf rather than only a county-keyed district root.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (reviewed live first-party PTI designation text is present on the Encircle Families acknowledgements page)
@@ -48,3 +48,8 @@
 - [critical] district_or_county_education_routing: finish_district_owned_special_education_leaves_for_unresolved_counties_from_county_keyed_roots
 - [critical] county_local_disability_resources: use_existing_arizona_county_local_packet_to_author_reviewed_county_specific_office_leaves_before_reopening_browser_lane
 
+## Completion decision
+
+- Arizona remains BLOCKED and not index-safe.
+- Education improved because reviewed district-owned leaves now exist for part of the county-keyed district inventory, so the blocker is no longer just root authoring. The remaining work is explicit unresolved county coverage.
+- County/local disability resources are still blocked separately because the DES office lane remains challenge-blocked and the accessible AHCCCS artifacts still do not preserve a county-to-office contract.

@@ -39,35 +39,42 @@ assert.equal(summary.primary_gap_reason, 'reviewed_idaho_district_leaves_exist_b
 
 const byFamily = new Map(gapRows.map((row) => [row.family, row]));
 assert.equal(byFamily.get('district_or_county_education_routing').family_status, 'blocked_reviewed_local_district_leaves_exist_but_not_statewide_county_grade');
-assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Bonneville Joint District #93 Special Education Programs/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Jerome SD #261 Special Services/i);
+assert.match(byFamily.get('district_or_county_education_routing').status_reason, /Minidoka School District Special Services/i);
 
 const failure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(failure.failure_code, 'reviewed_district_special_services_leaves_exist_but_county_grade_mapping_is_still_incomplete');
 assert.match(failure.evidence, /d93schools\.org\/sitemap\.xml/i);
 assert.match(failure.evidence, /d93schools\.org\/special-education-programs-home/i);
+assert.match(failure.evidence, /jeromeschools\.org\/specialserviceshome/i);
+assert.match(failure.evidence, /minidokaschools\.org\/page\/special-services/i);
 
 const verified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(verified.family_status, 'blocked_reviewed_local_district_leaves_exist_but_not_statewide_county_grade');
-assert.equal(verified.sample_count, 9);
+assert.equal(verified.sample_count, 11);
 assert.ok(verified.samples.some((sample) => /d93schools\.org\/special-education-programs-home/.test(sample.source_url)));
+assert.ok(verified.samples.some((sample) => /jeromeschools\.org\/specialserviceshome/.test(sample.source_url)));
+assert.ok(verified.samples.some((sample) => /minidokaschools\.org\/page\/special-services/.test(sample.source_url)));
 assert.ok(verified.samples.some((sample) => /blaineschools\.org\/our-district\/staff-directory\/district-support-services/.test(sample.source_url) && sample.verification_status === 'reviewed'));
 
 const next = nextRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(next.next_action, 'expand_reviewed_exact_district_special_education_leaves_county_by_county_from_the_official_idaho_root_packet');
 
-assert.equal(packet.current_problem_metrics.authoredExactLeafCount, 6);
-assert.equal(packet.current_problem_metrics.reviewedExactLeafCount, 6);
-assert.equal(packet.reviewed_exact_leaves.length, 6);
+assert.equal(packet.current_problem_metrics.authoredExactLeafCount, 8);
+assert.equal(packet.current_problem_metrics.reviewedExactLeafCount, 8);
+assert.equal(packet.reviewed_exact_leaves.length, 8);
 assert.ok(packet.reviewed_exact_leaves.some((leaf) => leaf.county_id === 'bonneville-id'));
+assert.ok(packet.reviewed_exact_leaves.some((leaf) => leaf.county_id === 'jerome-id'));
+assert.ok(packet.reviewed_exact_leaves.some((leaf) => leaf.county_id === 'minidoka-id'));
 
 const idahoQueue = queueRows.find((row) => row.state === 'idaho');
 assert.equal(idahoQueue.primary_gap_reason, 'reviewed_idaho_district_leaves_exist_but_county_grade_education_and_dhw_mapping_remain_incomplete');
 
-assert.equal(batchSummary.reviewed_exact_district_leaves, 6);
-assert.equal(batchSummary.promoted_from_sitemap_exact_leaves, 3);
+assert.equal(batchSummary.reviewed_exact_district_leaves, 8);
+assert.equal(batchSummary.promoted_from_sitemap_exact_leaves, 4);
 assert.equal(batchSummary.signal_only_district_roots, 1);
-assert.ok(report.includes('six counties now have reviewed district-owned special-education or special-services leaves'));
-assert.ok(batchReport.includes('Bonneville Joint District #93 now joins Cassia, Payette, Bannock, Boundary, and Butte'));
+assert.ok(report.includes('eight counties now have reviewed district-owned special-education or special-services leaves'));
+assert.ok(batchReport.includes('Jerome SD #261 and Minidoka School District now join Cassia, Payette, Bannock, Boundary, Butte, and Bonneville'));
 assert.ok(lessons.includes('### CMS Slugs Ending In `-home` Can Still Be Exact District Leaves'));
 
 console.log('test-batch212-idaho-bonneville-reviewed-district-leaf-v1: ok');

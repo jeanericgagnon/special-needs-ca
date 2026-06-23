@@ -33,39 +33,42 @@ const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-
 assert.equal(result.classification, 'BLOCKED');
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
-assert.equal(summary.primary_gap_reason, 'browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked');
+assert.equal(summary.primary_gap_reason, 'browser_only_dpa_directory_lacks_borough_mapping_and_raw_health_host_surfaces_are_challenge_blocked');
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyGap.family_status, 'blocked_dpa_directory_incomplete_and_health_host_challenge_locked');
 assert.match(countyGap.status_reason, /five regional headings and ten office-city leaves/i);
-assert.match(countyGap.status_reason, /browser-readable/i);
-assert.match(countyGap.status_reason, /sitemap and search URLs/i);
+assert.match(countyGap.status_reason, /only recoverable in browser-reviewed rendering/i);
+assert.match(countyGap.status_reason, /exact page URL, sitemap, and borough-targeted search URLs/i);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyFailure.failure_code, 'browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked');
+assert.equal(countyFailure.failure_code, 'browser_only_dpa_directory_lacks_borough_mapping_and_raw_health_host_surfaces_are_challenge_blocked');
 assert.match(countyFailure.evidence, /health\.alaska\.gov\/sitemap\.xml/i);
 assert.match(countyFailure.evidence, /Bethel Census Area/i);
+assert.match(countyFailure.evidence, /exact-page raw fetch/i);
 assert.match(countyFailure.evidence, /browser-reviewed proof/i);
-assert.match(countyFailure.evidence, /discovery surfaces needed for a low-token borough-to-office repair/i);
+assert.match(countyFailure.evidence, /exact page and all supporting discovery surfaces are challenge-blocked/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyVerified.blocker_code, 'browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked');
-assert.equal(countyVerified.sample_count, 14);
+assert.equal(countyVerified.blocker_code, 'browser_only_dpa_directory_lacks_borough_mapping_and_raw_health_host_surfaces_are_challenge_blocked');
+assert.equal(countyVerified.sample_count, countyVerified.samples.length);
+assert.equal(countyVerified.sample_count, 16);
 assert.equal(countyVerified.samples[0].verification_status, 'reviewed');
+assert.ok(countyVerified.samples.some((sample) => sample.source_type === 'official_exact_page_challenge_shell'));
 assert.ok(countyVerified.samples.some((sample) => sample.source_url === 'https://health.alaska.gov/sitemap.xml'));
 assert.ok(countyVerified.samples.some((sample) => sample.source_url.includes('Bethel%20Census%20Area')));
 assert.ok(countyVerified.samples.some((sample) => sample.source_type === 'official_search_challenge_shell'));
 
 const countyNext = nextRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyNext.failure_code, 'browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked');
+assert.equal(countyNext.failure_code, 'browser_only_dpa_directory_lacks_borough_mapping_and_raw_health_host_surfaces_are_challenge_blocked');
 assert.match(countyNext.next_action, /borough_or_census_area_to_dpa_office_mapping/i);
 
 assert.equal(batchSummary.classification, 'BLOCKED');
 assert.equal(batchSummary.exact_page_browser_reviewed, true);
-assert.equal(batchSummary.exact_page_challenge_confirmed, false);
+assert.equal(batchSummary.exact_page_challenge_confirmed, true);
 assert.equal(batchSummary.sitemap_challenge_confirmed, true);
 assert.equal(batchSummary.borough_search_challenge_confirmed, true);
-assert.ok(report.includes('browser-readable but incomplete for borough or census-area routing'));
+assert.ok(report.includes('only recoverable in browser-reviewed rendering'));
 assert.ok(lessons.includes('When The Same Official Host Challenge-Blocks The Page, Sitemap, And Search, Stop Low-Token County Retries'));
 
 console.log('test-batch153-alaska-health-host-challenge-confirmation-v1: ok');

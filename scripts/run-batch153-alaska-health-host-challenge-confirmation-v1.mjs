@@ -23,10 +23,10 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'alaska-california-grade-audit-report-v2.md'),
 };
 
-const COUNTY_FAILURE_CODE = 'browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked';
-const COUNTY_STATUS_REASON = 'The reviewed official DPA offices page is browser-readable, but it still stops at five regional headings and ten office-city leaves with no borough or census-area mapping. The remaining official discovery surfaces on the same health host, including sitemap and search URLs, still return the Cloudflare challenge shell, so Alaska still lacks a scraper-safe county-equivalent routing contract.';
+const COUNTY_FAILURE_CODE = 'browser_only_dpa_directory_lacks_borough_mapping_and_raw_health_host_surfaces_are_challenge_blocked';
+const COUNTY_STATUS_REASON = 'The official Alaska DPA offices page is only recoverable in browser-reviewed rendering and still stops at five regional headings and ten office-city leaves with no borough or census-area mapping. In the low-token fetch lane, the exact page URL, sitemap, and borough-targeted search URLs on the same health host all return the Cloudflare challenge shell, so Alaska still lacks a scraper-safe county-equivalent routing contract.';
 const COUNTY_NEXT_ACTION = 'hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_mapping_on_a_reviewable_official_surface_or_the_health_host_challenge_clears';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus narrow official-site probes for borough and census-area routing. The reviewed rendered DPA offices page at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ is a real official directory, but its public contract remains limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center, with no borough names, no census-area names, and no county-equivalent coverage table. A fresh bounded live probe still confirmed the Cloudflare challenge shell on the remaining health-host discovery surfaces, including https://health.alaska.gov/sitemap.xml and health-host search URLs for Bethel Census Area, Aleutians East Borough, and Nome Census Area public-assistance queries. So Alaska now has both browser-reviewed proof that the current official page is incomplete for county-equivalent routing and raw-fetch proof that the host blocks the exact discovery surfaces needed for a low-token borough-to-office repair.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus narrow official-site probes for borough and census-area routing. The reviewed rendered DPA offices page at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ is a real official directory, but its public contract remains limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center, with no borough names, no census-area names, and no county-equivalent coverage table. A fresh exact-page raw fetch of that same URL now returns HTTP 403 with the Cloudflare "Just a moment..." shell, and the same bounded live probe confirmed identical challenge behavior on the remaining health-host discovery surfaces, including https://health.alaska.gov/sitemap.xml and health-host search URLs for Bethel Census Area, Aleutians East Borough, and Nome Census Area public-assistance queries. So Alaska now has browser-reviewed proof that the directory exists but raw-fetch proof that the exact page and all supporting discovery surfaces are challenge-blocked in the low-token lane.';
 const LESSON_HEADING = '### When The Same Official Host Challenge-Blocks The Page, Sitemap, And Search, Stop Low-Token County Retries';
 const LESSON_BODY = '*   **Lesson:** If a browser-reviewed official directory still lacks county-equivalent mapping and the same host returns the identical challenge shell on the page itself, sitemap, and official search URLs, treat that family as source-final for low-token work. Alaska health.alaska.gov exposed a real DPA offices page in reviewed rendering, but the raw page, sitemap, and borough-targeted search probes all returned the same Cloudflare shell, so more bounded scraper retries would not produce borough coverage proof.';
 
@@ -51,6 +51,16 @@ function writeJson(filePath, value) {
 function writeJsonl(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, `${rows.map((row) => JSON.stringify(row)).join('\n')}${rows.length ? '\n' : ''}`);
+}
+
+function dedupeSamples(samples) {
+  const seen = new Set();
+  return samples.filter((sample) => {
+    const key = `${sample.sample_name}||${sample.source_type}||${sample.source_url || ''}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 function updateLessonsFile(filePath) {
@@ -89,7 +99,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '## Repair decision',
     '',
     '- The only remaining Alaska blocker is county/local disability resources.',
-    '- This bounded pass confirms the blocker is final for low-token repair on the current official host: the reviewed DPA offices page is browser-readable but incomplete for borough or census-area routing, and the same host still challenge-blocks the remaining discovery surfaces such as sitemap discovery and official-site search probes.',
+    '- This bounded pass confirms the blocker is final for low-token repair on the current official host: the DPA offices page is only recoverable in browser-reviewed rendering, remains incomplete for borough or census-area routing, and the same host challenge-blocks the exact page URL plus supporting discovery surfaces such as sitemap and official-site search probes.',
     '- That means Alaska is not missing one more scrape attempt. It is missing a different official contract: either borough or census-area mapping on the current DPA directory, or a separate official county-equivalent locator that actually names coverage.',
     '- Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping on a reviewable official surface or the health-host challenge clears and exposes a stronger county-equivalent contract.',
   ].join('\n') + '\n';
@@ -118,73 +128,84 @@ export function generateBatch153AlaskaHealthHostChallengeConfirmationV1() {
       : row
   ));
 
-  const updatedVerifiedRows = verifiedRows.map((row) => (
-    row.family === 'county_local_disability_resources'
-      ? {
+  const updatedVerifiedRows = verifiedRows.map((row) => {
+    if (row.family !== 'county_local_disability_resources') return row;
+    const dedupedSamples = dedupeSamples([
+      {
+        sample_name: 'Alaska DPA Offices',
+        source_url: 'https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/',
+        final_url: 'https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/',
+        verification_status: 'reviewed',
+        source_type: 'official_office_directory_without_county_equivalent_mapping',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-23T00:00:00.000Z',
+        evidence_snippet: 'The live DPA Offices page preserves five broad regional headings plus named office cities in Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, and Kodiak, but it does not explicitly map Alaska boroughs or census areas to those offices.',
+      },
+      {
+        sample_name: 'Alaska DPA Offices exact raw fetch',
+        source_url: 'https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/',
+        final_url: 'https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/',
+        verification_status: 'blocked',
+        source_type: 'official_exact_page_challenge_shell',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-23T00:00:00.000Z',
+        evidence_snippet: 'A fresh exact-page raw fetch returned HTTP 403 and the Cloudflare "Just a moment..." shell, so the low-token fetch lane cannot recover the same reviewed DPA offices directory HTML directly.',
+      },
+      {
+        sample_name: 'Alaska Health Host Sitemap',
+        source_url: 'https://health.alaska.gov/sitemap.xml',
+        final_url: 'https://health.alaska.gov/sitemap.xml',
+        verification_status: 'blocked',
+        source_type: 'official_sitemap_challenge_shell',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-23T00:00:00.000Z',
+        evidence_snippet: 'A fresh bounded probe of the official health host sitemap returned HTTP 403 and the Cloudflare "Just a moment..." shell instead of a reviewable URL inventory.',
+      },
+      {
+        sample_name: 'Alaska Health Search Bethel Census Area Public Assistance',
+        source_url: 'https://health.alaska.gov/en/search/?q=Bethel%20Census%20Area%20public%20assistance',
+        final_url: 'https://health.alaska.gov/en/search/?q=Bethel%20Census%20Area%20public%20assistance',
+        verification_status: 'blocked',
+        source_type: 'official_search_challenge_shell',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-23T00:00:00.000Z',
+        evidence_snippet: 'The borough-targeted official-site search probe returned HTTP 403 and the same Cloudflare challenge shell instead of a county-equivalent office result.',
+      },
+      {
+        sample_name: 'Alaska Health Search Aleutians East Borough Public Assistance',
+        source_url: 'https://health.alaska.gov/en/search/?q=Aleutians%20East%20Borough%20public%20assistance',
+        final_url: 'https://health.alaska.gov/en/search/?q=Aleutians%20East%20Borough%20public%20assistance',
+        verification_status: 'blocked',
+        source_type: 'official_search_challenge_shell',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-23T00:00:00.000Z',
+        evidence_snippet: 'The borough-targeted official-site search probe returned HTTP 403 and the same Cloudflare challenge shell instead of a county-equivalent office result.',
+      },
+      {
+        sample_name: 'Alaska Health Search Nome Census Area Public Assistance',
+        source_url: 'https://health.alaska.gov/en/search/?q=Nome%20Census%20Area%20public%20assistance',
+        final_url: 'https://health.alaska.gov/en/search/?q=Nome%20Census%20Area%20public%20assistance',
+        verification_status: 'blocked',
+        source_type: 'official_search_challenge_shell',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-23T00:00:00.000Z',
+        evidence_snippet: 'The borough-targeted official-site search probe returned HTTP 403 and the same Cloudflare challenge shell instead of a county-equivalent office result.',
+      },
+      ...row.samples.filter((sample) => ![
+        'official_office_directory_without_county_equivalent_mapping',
+        'official_exact_page_challenge_shell',
+      ].includes(sample.source_type)),
+    ]);
+    return {
           ...row,
           family_status: 'blocked_dpa_directory_incomplete_and_health_host_challenge_locked',
-          query_basis: 'Reviewed the current Alaska DPA offices page in browser-style evidence, then ran a bounded live probe against the exact page, the health-host sitemap, and three borough or census-area public-assistance search URLs to test whether any scraper-safe county-equivalent discovery surface exists on the same official host.',
+          query_basis: 'Reviewed the current Alaska DPA offices page in browser-style evidence, then ran a bounded live probe against the exact page URL, the health-host sitemap, and three borough or census-area public-assistance search URLs to test whether any scraper-safe county-equivalent discovery surface exists on the same official host.',
           blocker_code: COUNTY_FAILURE_CODE,
           blocker_evidence: COUNTY_EVIDENCE,
-          sample_count: 14,
-          samples: [
-            {
-              sample_name: 'Alaska DPA Offices',
-              source_url: 'https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/',
-              final_url: 'https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/',
-              verification_status: 'reviewed',
-              source_type: 'official_office_directory_without_county_equivalent_mapping',
-              source_table: 'reviewed_live_probe',
-              fetched_at: '2026-06-23T00:00:00.000Z',
-              evidence_snippet: 'The live DPA Offices page preserves five broad regional headings plus named office cities in Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, and Kodiak, but it does not explicitly map Alaska boroughs or census areas to those offices.',
-            },
-            {
-              sample_name: 'Alaska Health Host Sitemap',
-              source_url: 'https://health.alaska.gov/sitemap.xml',
-              final_url: 'https://health.alaska.gov/sitemap.xml',
-              verification_status: 'blocked',
-              source_type: 'official_sitemap_challenge_shell',
-              source_table: 'reviewed_live_probe',
-              fetched_at: '2026-06-23T00:00:00.000Z',
-              evidence_snippet: 'A fresh bounded probe of the official health host sitemap returned HTTP 403 and the Cloudflare "Just a moment..." shell instead of a reviewable URL inventory.',
-            },
-            {
-              sample_name: 'Alaska Health Search Bethel Census Area Public Assistance',
-              source_url: 'https://health.alaska.gov/en/search/?q=Bethel%20Census%20Area%20public%20assistance',
-              final_url: 'https://health.alaska.gov/en/search/?q=Bethel%20Census%20Area%20public%20assistance',
-              verification_status: 'blocked',
-              source_type: 'official_search_challenge_shell',
-              source_table: 'reviewed_live_probe',
-              fetched_at: '2026-06-23T00:00:00.000Z',
-              evidence_snippet: 'The borough-targeted official-site search probe returned HTTP 403 and the same Cloudflare challenge shell instead of a county-equivalent office result.',
-            },
-            {
-              sample_name: 'Alaska Health Search Aleutians East Borough Public Assistance',
-              source_url: 'https://health.alaska.gov/en/search/?q=Aleutians%20East%20Borough%20public%20assistance',
-              final_url: 'https://health.alaska.gov/en/search/?q=Aleutians%20East%20Borough%20public%20assistance',
-              verification_status: 'blocked',
-              source_type: 'official_search_challenge_shell',
-              source_table: 'reviewed_live_probe',
-              fetched_at: '2026-06-23T00:00:00.000Z',
-              evidence_snippet: 'The borough-targeted official-site search probe returned HTTP 403 and the same Cloudflare challenge shell instead of a county-equivalent office result.',
-            },
-            {
-              sample_name: 'Alaska Health Search Nome Census Area Public Assistance',
-              source_url: 'https://health.alaska.gov/en/search/?q=Nome%20Census%20Area%20public%20assistance',
-              final_url: 'https://health.alaska.gov/en/search/?q=Nome%20Census%20Area%20public%20assistance',
-              verification_status: 'blocked',
-              source_type: 'official_search_challenge_shell',
-              source_table: 'reviewed_live_probe',
-              fetched_at: '2026-06-23T00:00:00.000Z',
-              evidence_snippet: 'The borough-targeted official-site search probe returned HTTP 403 and the same Cloudflare challenge shell instead of a county-equivalent office result.',
-            },
-            ...row.samples.filter((sample) => ![
-              'https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/',
-            ].includes(sample.source_url)),
-          ],
-        }
-      : row
-  ));
+          sample_count: dedupedSamples.length,
+          samples: dedupedSamples,
+        };
+  });
 
   const updatedNextRows = nextRows.map((row) => (
     row.family === 'county_local_disability_resources'
@@ -222,7 +243,7 @@ export function generateBatch153AlaskaHealthHostChallengeConfirmationV1() {
     dpa_directory_browser_reviewed: true,
     borough_or_census_area_mapping_present: false,
     exact_page_browser_reviewed: true,
-    exact_page_challenge_confirmed: false,
+    exact_page_challenge_confirmed: true,
     sitemap_challenge_confirmed: true,
     borough_search_challenge_confirmed: true,
     lessons_updated: lessonsUpdated,

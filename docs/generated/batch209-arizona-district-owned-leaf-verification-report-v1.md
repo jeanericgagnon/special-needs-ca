@@ -1,9 +1,9 @@
 # Batch 209 Arizona District-Owned Leaf Verification v1
 
-- verified district-owned leaf counties: 7
-- unresolved counties: 8
-- resolved counties: apache-az, graham-az, greenlee-az, maricopa-az, pinal-az, santa-cruz-az, yuma-az
-- unresolved counties: cochise-az, coconino-az, gila-az, la-paz-az, mohave-az, navajo-az, pima-az, yavapai-az
+- verified district-owned leaf counties: 8
+- unresolved counties: 7
+- resolved counties: apache-az, graham-az, greenlee-az, la-paz-az, maricopa-az, pinal-az, santa-cruz-az, yuma-az
+- unresolved counties: cochise-az, coconino-az, gila-az, mohave-az, navajo-az, pima-az, yavapai-az
 
 ## Decision
 

@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked
+- primary_gap_reason: browser_only_dpa_directory_lacks_borough_mapping_and_raw_health_host_surfaces_are_challenge_blocked
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_dpa_directory_incomplete_and_health_host_challenge_locked (The reviewed official DPA offices page is browser-readable, but it still stops at five regional headings and ten office-city leaves with no borough or census-area mapping. The remaining official discovery surfaces on the same health host, including sitemap and search URLs, still return the Cloudflare challenge shell, so Alaska still lacks a scraper-safe county-equivalent routing contract.)
+- county_local_disability_resources: blocked_dpa_directory_incomplete_and_health_host_challenge_locked (The official Alaska DPA offices page is only recoverable in browser-reviewed rendering and still stops at five regional headings and ten office-city leaves with no borough or census-area mapping. In the low-token fetch lane, the exact page URL, sitemap, and borough-targeted search URLs on the same health host all return the Cloudflare challenge shell, so Alaska still lacks a scraper-safe county-equivalent routing contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked :: Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus narrow official-site probes for borough and census-area routing. The reviewed rendered DPA offices page at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ is a real official directory, but its public contract remains limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center, with no borough names, no census-area names, and no county-equivalent coverage table. A fresh bounded live probe still confirmed the Cloudflare challenge shell on the remaining health-host discovery surfaces, including https://health.alaska.gov/sitemap.xml and health-host search URLs for Bethel Census Area, Aleutians East Borough, and Nome Census Area public-assistance queries. So Alaska now has both browser-reviewed proof that the current official page is incomplete for county-equivalent routing and raw-fetch proof that the host blocks the exact discovery surfaces needed for a low-token borough-to-office repair.
+- county_local_disability_resources: browser_only_dpa_directory_lacks_borough_mapping_and_raw_health_host_surfaces_are_challenge_blocked :: Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus narrow official-site probes for borough and census-area routing. The reviewed rendered DPA offices page at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ is a real official directory, but its public contract remains limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center, with no borough names, no census-area names, and no county-equivalent coverage table. A fresh exact-page raw fetch of that same URL now returns HTTP 403 with the Cloudflare "Just a moment..." shell, and the same bounded live probe confirmed identical challenge behavior on the remaining health-host discovery surfaces, including https://health.alaska.gov/sitemap.xml and health-host search URLs for Bethel Census Area, Aleutians East Borough, and Nome Census Area public-assistance queries. So Alaska now has browser-reviewed proof that the directory exists but raw-fetch proof that the exact page and all supporting discovery surfaces are challenge-blocked in the low-token lane.
 
 ## Verified source samples
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_dpa_directory_incomplete_and_health_host_challenge_locked; samples=14; first=https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/
+- county_local_disability_resources: blocked_dpa_directory_incomplete_and_health_host_challenge_locked; samples=16; first=https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/
 
 ## Next actions
 
@@ -49,6 +49,6 @@
 ## Repair decision
 
 - The only remaining Alaska blocker is county/local disability resources.
-- This bounded pass confirms the blocker is final for low-token repair on the current official host: the reviewed DPA offices page is browser-readable but incomplete for borough or census-area routing, and the same host still challenge-blocks the remaining discovery surfaces such as sitemap discovery and official-site search probes.
+- This bounded pass confirms the blocker is final for low-token repair on the current official host: the DPA offices page is only recoverable in browser-reviewed rendering, remains incomplete for borough or census-area routing, and the same host challenge-blocks the exact page URL plus supporting discovery surfaces such as sitemap and official-site search probes.
 - That means Alaska is not missing one more scrape attempt. It is missing a different official contract: either borough or census-area mapping on the current DPA directory, or a separate official county-equivalent locator that actually names coverage.
 - Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping on a reviewable official surface or the health-host challenge clears and exposes a stronger county-equivalent contract.
