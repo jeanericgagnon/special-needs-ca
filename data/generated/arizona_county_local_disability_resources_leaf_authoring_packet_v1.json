@@ -13,7 +13,9 @@
     "blockedCountyRootCount": 1,
     "doiPlaceholderRows": 14,
     "genericLegacyLocatorRows": 1,
-    "desHostExhaustedRoots": 8
+    "desHostExhaustedRoots": 8,
+    "ahcccsAccessibleFallbackPages": 3,
+    "altcsRawHtmlVisibleOfficeCount": 1
   },
   "exact_target_goals": [
     "county or regional FAA office page",

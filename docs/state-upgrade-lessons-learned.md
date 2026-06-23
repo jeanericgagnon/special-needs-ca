@@ -14,6 +14,7 @@
 
 ### When The Same Official Host Challenge-Blocks The Page, Sitemap, And Search, Stop Low-Token County Retries
 *   **Lesson:** If a browser-reviewed official directory still lacks county-equivalent mapping and the same host returns the identical challenge shell on the page itself, sitemap, and official search URLs, treat that family as source-final for low-token work. Alaska health.alaska.gov exposed a real DPA offices page in reviewed rendering, but the raw page, sitemap, and borough-targeted search probes all returned the same Cloudflare shell, so more bounded scraper retries would not produce borough coverage proof.
+*   **Lesson:** If a public district or office host is live, spend one bounded robots/sitemap or raw-HTML pass before guessing more leaves. Arizona's last three district domains exhausted into generic student pages and handbooks, and AHCCCS's public ALTCS page exposed only one visible Yuma office in raw HTML, so neither family could be upgraded without a real role-bearing county contract.
 
 ### Full-Domain 403 Plus Fallback-Only Rows Means Packet Gap, Not Just Browser Gap
 *   **Lesson:** When an official state domain 403s on the root, robots.txt, sitemap, and obvious leaf guesses, check whether the live rows are still 100% statewide or DOI-style placeholders. If so, record the blocker as missing authored local leaf coverage too, so later repairs do not stall waiting on a browser lane that still has no exact local targets to verify.
@@ -28,6 +29,7 @@
 *   **Lesson:** When scanning public contact inventories for service-role labels, require field-aware or phrase-aware matches instead of bare substrings. Florida's only `ESS` hits in `contacts.csv` came from `Arlington Expressway`, not from Economic Self Sufficiency routing, so substring counts alone would have overstated county-local progress.
 
 ### Zero County Tokens In A Live Official Locator Means The County Contract Is Still Missing
+*   **Lesson:** If an official district root exposes an exact `Special Education` anchor that stays on the district-owned host, treat that as a safe low-token verification lane even when the final URL uses query parameters. Idaho Teton District #401 verified cleanly from an `apps/pages` query URL once the title and H1 both stayed role-exact.
 *   **Lesson:** If a live official office or district directory preserves exact leaves but its public HTML exposes zero county terms, zero county-served fields, and no county filter, do not treat the locator as county-grade proof. Idaho DHW `/offices` and the Idaho SDE district directory were both live and useful for authoring, but still failed the county contract until reviewed local leaves could be attached.
 
 ### Retry ASP.NET Search Forms Once With Their Hidden Collections Before Calling The Workflow Broken

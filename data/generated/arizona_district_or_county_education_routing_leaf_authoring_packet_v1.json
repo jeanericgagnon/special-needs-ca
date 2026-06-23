@@ -20,7 +20,8 @@
     "unresolvedDistrictOwnedLeafCount": 3,
     "unresolvedNoPublicWebsiteCount": 0,
     "unresolvedReviewedPublicDomainWithoutLeafCount": 3,
-    "reviewedCountyOwnedLeafCount": 4
+    "reviewedCountyOwnedLeafCount": 4,
+    "reviewedPublicDomainSitemapExhaustedCount": 3
   },
   "exact_target_goals": [
     "official district detail root per county",

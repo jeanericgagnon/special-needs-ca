@@ -1,0 +1,14 @@
+{
+  "batch": "batch234_arizona_final_blocker_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "unresolved_public_district_domains": 3,
+  "ahcccs_visible_local_offices_in_raw_html": 1,
+  "lesson_added": true
+}
