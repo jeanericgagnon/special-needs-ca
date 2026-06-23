@@ -156,8 +156,8 @@
 ### Browser-Readable State Pages Can Still Be Raw-Fetch Final
 *   **Lesson:** If reviewed browser evidence proves a state page is live but a final exact raw fetch to the same page returns 403 and the rendered content still lacks county-grade fields, stop low-token retries there. Massachusetts DDS locations and regional-map pages were browser-readable enough to refine the blocker, but raw fetch still 403ed and no county crosswalk existed.
 
-### Public ASP.NET Dataset Forms Can Be Real But Still Export-Blocked
-*   **Lesson:** If an official public dataset page exposes the right entity types but the exact ASP.NET download postback fails with a server-side viewstate error, treat it as an export blocker, not a scrape-ready feed. Michigan CEPI’s public ISD/LEA dataset page was live, but the exact dataset postback still returned a viewstate MAC failure.
+### Public ASP.NET Dataset Exports Need Session-Backed Replay Before Declaring Them Broken
+*   **Lesson:** If an official ASP.NET dataset page exposes hidden fields plus a submit button, retry once with the page-owned hidden fields and the same session cookie before locking an export blocker. Michigan CEPI’s public ISD/LEA export looked broken until the replay stayed inside one session; after that, the official CSV attachments on `ReportViewer.aspx` were stable.
 
 ### Flapping Official Child Routes Still Count As Blocked
 *   **Lesson:** If an official child route alternates between a live shell and a captcha page across bounded probes, keep it blocked unless it consistently exposes the needed local contract. Minnesota `MDEAnalytics/Data.jsp` briefly returned a `Data Reports and Analytics` shell, then flipped back to Radware on the same exact route.

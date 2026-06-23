@@ -1,0 +1,15 @@
+{
+  "batch": "batch231_michigan_cepi_session_export_recovery_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "michigan",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "refined_family": "district_or_county_education_routing",
+  "official_public_datasets_page_live": true,
+  "exact_session_backed_export_stable": true,
+  "isd_export_rows": 58,
+  "isd_export_unique_counties": 57,
+  "lea_export_rows": 562,
+  "lea_export_unique_counties": 83,
+  "lea_counties_with_email_and_phone": 83
+}

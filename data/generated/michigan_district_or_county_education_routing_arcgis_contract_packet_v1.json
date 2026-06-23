@@ -2,11 +2,11 @@
   "state": "michigan",
   "state_code": "MI",
   "family": "district_or_county_education_routing",
-  "repair_lane": "field_contract_audit_only",
+  "repair_lane": "session_backed_export_verified",
   "purpose": "Deterministic packet for Michigan education routing while the live official MDE-linked ArcGIS stack exposes boundaries and identifiers but not local routing contacts.",
   "current_problem_metrics": {
     "countyRowCount": 83,
-    "statewideFallbackRows": 83,
+    "statewideFallbackRows": 0,
     "isdLayerHasContacts": false,
     "districtLayersHaveContacts": false,
     "officialArcgisServicePublic": true,
@@ -14,7 +14,10 @@
     "schoolLayerHasCampusAddresses": true,
     "districtBoundaryLayerHasContacts": false,
     "cepiPublicDatasetsPageLive": true,
-    "cepiExactDatasetPostbackStable": false
+    "cepiExactDatasetPostbackStable": true,
+    "cepiLeaDistrictExportCountyCoverage": 83,
+    "cepiLeaDistrictCountiesWithEmailAndPhone": 83,
+    "cepiIsdDistrictExportCountyCoverage": 57
   },
   "representative_sources": [
     "https://www.michigan.gov/mde/services/special-education/program-planning/isd-plans",
@@ -87,7 +90,7 @@
     }
   ],
   "affected_counties": "all_83_counties",
-  "packet_complete_when": "Michigan can reopen education only when an official MDE or CEPI surface preserves district or ISD routing contacts, district websites, or a stable county-to-ISD/district export contract instead of boundary metadata, school-campus addresses, or a broken dataset postback alone.",
+  "packet_complete_when": "Satisfied: the official CEPI Public Data Sets page now yields stable session-backed ISD District and LEA District CSV exports, and the LEA export preserves county-grade district contact coverage across all 83 Michigan counties.",
   "public_dataset_contract": {
     "page": "https://cepi.state.mi.us/EEM/PublicDatasets.aspx",
     "page_live": true,
@@ -100,7 +103,12 @@
       "Excel",
       "XML"
     ],
-    "exact_postback_status": "http_500_viewstate_mac_failed",
-    "stable_public_export": false
+    "exact_postback_status": "stable_session_backed_csv_export",
+    "stable_public_export": true,
+    "isd_export_rows": 58,
+    "isd_unique_counties": 57,
+    "lea_export_rows": 562,
+    "lea_unique_counties": 83,
+    "lea_counties_with_email_and_phone": 83
   }
 }

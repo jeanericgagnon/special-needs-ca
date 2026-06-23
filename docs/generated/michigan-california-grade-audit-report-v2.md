@@ -1,10 +1,10 @@
 # Michigan California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 92
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 83
-- primary_gap_reason: official_mde_layers_lack_local_routing_fields_and_cepi_public_dataset_export_500s
+- primary_gap_reason: all_critical_families_verified_with_reviewed_first_party_or_official_evidence
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_mde_layers_without_local_routing_fields_and_cepi_export_postback_500s (Reviewed 2026-06-23 the official Michigan MDE ISD Plans leaf, the linked ArcGIS app config and public layers, plus the official CEPI Educational Entity Master Public Data Sets page. The MDE-linked ISD and district layers still expose only boundary and identifier fields, and the school-campus layer adds address fields only. CEPI does expose an official Public Data Sets page with ISD District and LEA District export options, but the exact dataset download postback currently returns a server-side "Validation of viewstate MAC failed" error instead of a stable public export. Michigan therefore still lacks a reproducible county-grade education-routing contract.)
+- district_or_county_education_routing: verified_county_grade (Reviewed 2026-06-23 the official Michigan CEPI Educational Entity Master Public Data Sets page with a session-backed ASP.NET replay that preserved the page-owned hidden fields and session cookie. The exact public download contract returned real CSV attachments for both ISD District and LEA District entity types on ReportViewer.aspx instead of a viewstate error. The LEA District export preserves EntityCountyName, district names, district email, district phone, and physical address fields, and a bounded completeness check confirmed at least one LEA row with both email and phone in all 83 Michigan counties. Michigan therefore now has a reproducible official county-grade education-routing contract.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (reviewed first-party PTI evidence is present at the required authority level)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: official_mde_layers_lack_local_routing_contract_and_cepi_public_dataset_export_500s :: Reviewed 2026-06-23 the official Michigan MDE Special Education ISD Plans leaf at https://www.michigan.gov/mde/services/special-education/program-planning/isd-plans, the linked ArcGIS app config at https://michigan.maps.arcgis.com/sharing/rest/content/items/438dc453faf749d786e0c6e8be731cfd/data?f=json, and the exact public layers the app queries. The app still only reaches ISD boundaries, district boundaries, and school-campus addresses, with no district website, district special-education contact, ISD routing contact, or county-to-ISD routing fields. A bounded official follow-up on the CEPI Educational Entity Master page at https://cepi.state.mi.us/EEM/PublicDatasets.aspx confirmed that the live page exposes CSV/Excel/XML export options and entity types including ISD District and LEA District, but an exact scripted download postback for those public entity types currently fails with HTTP 500 and the server message "Validation of viewstate MAC failed." So Michigan still has no stable official export or directory contract that preserves local education-routing fields at county grade.
+- none
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.michigan.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.michigan.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.michigan.gov/mde/services/special-education
-- district_or_county_education_routing: blocked_mde_layers_without_local_routing_fields_and_cepi_export_postback_500s; samples=7; first=https://www.michigan.gov/mde/services/special-education/program-planning/isd-plans
+- district_or_county_education_routing: verified_county_grade; samples=83; first=https://cepi.state.mi.us/EEM/PublicDatasets.aspx
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.michigan.gov/mdhhs
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://drmich.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.michiganallianceforfamilies.org/
@@ -44,11 +44,24 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: hold_blocked_until_official_isd_or_district_contact_directory_or_stable_cepi_export_exists
+- [info] maintenance: Preserve Michigan as COMPLETE/index_safe and rerun only maintenance truth audits unless CEPI export behavior regresses.
 
-## Completion decision
+## Michigan repair decision
 
-- Michigan remains BLOCKED and index_safe=false.
-- The only remaining blocker is district_or_county_education_routing.
-- The exact public MDE-linked ArcGIS stack is still fully accounted for and still lacks district websites, district special-education contacts, ISD routing contacts, or county-to-ISD routing fields.
-- The exact official CEPI Educational Entity Master datasets page is live and exposes ISD District and LEA District export options, but the bounded public dataset postback currently fails with a server-side viewstate MAC error, so Michigan still lacks a stable official export contract for county-grade education routing.
+- District or county education routing is now verified because the official CEPI public dataset page returns stable ISD District and LEA District CSV attachments when replayed inside one session with the page-owned hidden fields.
+- County-grade completeness is satisfied because the live LEA District export preserves county names plus district email and phone coverage across 83/83 Michigan counties.
+- The ArcGIS boundary stack remains supporting evidence only; the actual county-grade routing closure comes from the stable official CEPI export rather than generic statewide fallback pages.
+- Michigan is therefore California-grade COMPLETE and index-safe so long as future maintenance audits keep the official CEPI export contract live.
+
+## Evidence checks
+
+- CEPI public dataset lane: Reviewed 2026-06-23 the live `PublicDatasets.aspx` page and confirmed it exposes public ISD District and LEA District entity types plus CSV, Excel, and XML format choices.
+- Stable replay: A bounded session-backed replay posted the page-owned hidden ASP.NET fields plus the selected entity-type checkbox and returned `ReportViewer.aspx` CSV attachments instead of a viewstate MAC error.
+- County-grade coverage: The LEA District export preserves `EntityCountyName`, district names, district email, district phone, and physical address fields; a bounded completeness audit confirmed at least one email-and-phone district row in all 83 Michigan counties.
+
+## Final family count
+
+- strong_critical_families: 12
+- weak_critical_families: 0
+- missing_critical_families: 0
+- district_or_county_education_routing: verified_county_grade
