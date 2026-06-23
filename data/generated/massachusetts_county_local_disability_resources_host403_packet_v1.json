@@ -3,7 +3,7 @@
   "state_code": "MA",
   "family": "county_local_disability_resources",
   "repair_lane": "browser_or_cached_town_to_office_capture_only",
-  "purpose": "Deterministic packet for Massachusetts DDS county-local routing while the likely official Mass.gov lane stays host-wide 403 in the low-token runtime.",
+  "purpose": "Deterministic packet for Massachusetts DDS county-local routing while the live Mass.gov DDS org, locations, and interactive-map surfaces are public but still do not expose a reusable county-grade contract.",
   "current_problem_metrics": {
     "legacyLocatorRows": 8,
     "doiMirrorRows": 7,
@@ -28,7 +28,7 @@
     "https://www.mass.gov/info-details/dds-area-offices"
   ],
   "root_domains_to_review": [
-    "browser-assisted or cached Mass.gov DDS org, locations, and interactive-map surfaces only; treat the public Tableau child as supporting evidence only unless it exposes a reusable locality contract",
+    "browser-assisted or cached Mass.gov DDS org, locations, and interactive-map surfaces only; the old host-wide 403 assumption is retired and the remaining blocker is the missing county-grade locality contract",
     "do not reopen generic county-office discovery unless a county-grade export or machine-readable local contract appears on the live DDS lane"
   ],
   "affected_counties": [

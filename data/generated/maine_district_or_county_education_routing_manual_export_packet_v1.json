@@ -10,7 +10,7 @@
     "statewideWebsiteRows": 16,
     "countyRowCount": 16,
     "reviewedSelectorRoots": 4,
-    "boundedPostReplayFailures": 3,
+    "boundedPostReplayFailures": 4,
     "publicOrgSelectorEmbedded": true,
     "csrfTokenExposed": true,
     "sessionedPost500Confirmed": true,
@@ -18,7 +18,8 @@
     "reviewedTownSelectorLive": true,
     "reviewedOrgSelectorLive": true,
     "workbookStillDownloadable": true,
-    "selectorDiscoverySolved": true
+    "selectorDiscoverySolved": true,
+    "publicExportMaterializedInRawLane": false
   },
   "exact_target_goals": [
     "reviewed SAU contact export or result capture with local superintendent or district contact rows",
@@ -71,5 +72,5 @@
     "washington-me",
     "york-me"
   ],
-  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the result/export step on the already-live public selectors still fails. The selector inventory itself is now proven public and stable enough for manual/browser capture."
+  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the live public selectors and municipality workbook are public but the bounded raw postback lane still fails to return reusable local contact rows."
 }

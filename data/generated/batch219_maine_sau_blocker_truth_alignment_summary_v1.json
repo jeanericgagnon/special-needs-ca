@@ -1,0 +1,11 @@
+{
+  "batch": "batch219_maine_sau_blocker_truth_alignment_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_selectors_live": true,
+  "municipality_workbook_live": true,
+  "raw_export_materialized": false,
+  "lessons_updated": false
+}

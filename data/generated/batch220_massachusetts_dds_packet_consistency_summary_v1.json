@@ -1,0 +1,11 @@
+{
+  "batch": "batch220_massachusetts_dds_packet_consistency_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "massachusetts",
+  "updated_packets": [
+    "massachusetts_county_local_disability_resources_town_routing_packet_v1.json",
+    "massachusetts_county_local_disability_resources_host403_packet_v1.json"
+  ],
+  "retired_stale_host403_wording": true,
+  "lessons_updated": false
+}

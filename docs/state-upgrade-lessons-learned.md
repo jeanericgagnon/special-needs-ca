@@ -110,3 +110,9 @@
 
 ### Homepage Anchor Text Can Beat Slug-Only Leaf Discovery
 *   **Lesson:** If a district-owned homepage exposes a role-exact anchor like `Exceptional Students Services (ESS)`, verify that direct href even when sitemap scans and slug-only homepage filters return nothing. Arizona only recovered La Paz once Parker USD's homepage anchor surfaced `/page/ess-department` as the real local leaf.
+
+### Public Selectors And Mapping Workbooks Are Not Enough If The Export Postback Still Fails
+*   **Lesson:** If an official selector page and mapping workbook are both public but the exact postback lane still returns HTTP 500 or shell-only HTML in bounded replay, keep the family blocked on materialization rather than upgrading it to a working export contract. Maine's DOE SAU selector exposed OrgIds and the municipality workbook, but the named export/search submits still failed in the raw lane.
+
+### Retire Stale Blocker Labels Inside The Packet Once The Live Surface Recovers
+*   **Lesson:** When a state packet's metrics already prove the live surface recovered, remove old blocker labels from the packet purpose and review rules too. Massachusetts DDS had `hostWide403Surfaces: 0` and live org/locations/map access, so leaving `host-wide 403` in the packet text would have kept steering later repairs at the wrong failure mode.
