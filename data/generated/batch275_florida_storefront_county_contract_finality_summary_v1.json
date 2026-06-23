@@ -1,0 +1,14 @@
+{
+  "batch": "batch275_florida_storefront_county_contract_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "exact_local_offices_leaf_reviewed": true,
+  "family_resource_center_county_rows": 39,
+  "family_resource_center_distinct_counties": 34,
+  "storefront_root_unique_county_pins": 33,
+  "storefront_root_pin_calls": 38,
+  "storefront_root_has_monore_typo": true,
+  "lessons_updated": false
+}

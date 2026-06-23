@@ -270,3 +270,6 @@
 
 ### Popup Templates That Only Render Contact Cards Do Not Create A Hidden County Contract
 *   **Lesson:** If a public ArcGIS web map popup only renders office contact cards, Google Maps directions, and edit metadata, do not treat the popup layer as a hidden county-to-office bridge. Nebraska’s public office web map added no assignment logic beyond address and phone fields, so the blocker remained a true missing county contract.
+
+### A First-Party Storefront Root That Derives Its County UI From A Partial CSV Is Still A Partial County Contract
+*   **Lesson:** If a first-party locator page builds its county dropdown and map pins directly from a partial CSV, count the whole storefront as partial rather than treating the root as a stronger contract. Florida’s Family Resource Center root fetched `providers.csv`, rendered only 33 unique county pins in HTML, and still could not outrun the 34-county CSV ceiling.
