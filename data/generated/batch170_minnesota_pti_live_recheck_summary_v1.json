@@ -1,0 +1,8 @@
+{
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "pti_blocker_refreshed": true,
+  "lesson_added": false,
+  "pti_failure_code": "current_pacer_pages_and_retired_pti_paths_do_not_preserve_explicit_pti_designation"
+}

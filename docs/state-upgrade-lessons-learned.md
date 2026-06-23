@@ -713,3 +713,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Official Directory JSON Can Be A Root-Authoring Packet Even When It Is Not A Routing Contract
 *   **Lesson:** If an official statewide directory exposes outbound local-domain links in rendered HTML and public JSON, preserve that as the exact root-authoring packet even when the page still fails county-grade routing. Idaho’s School Districts page did not satisfy county education proof, but its public JSON still yielded 116 exact district roots and 30 county-bearing names, which is far better than reopening broad district discovery.
+
+### Live Section Roots Can Replace Dead Deep Links Without Clearing The Local Contract
+*   **Lesson:** If a stale official deep link 404s or drifts, re-open the live section root before guessing new paths. Kansas KSDE still exposed current `School District Maps`, `Directories`, `Data Central`, and `uapps.ksde.gov/Directory_Rpts/default.aspx` roots from the live Special Education section, which made a better authoring packet even though none of those roots yet supplied county-to-district or district-owned special-education proof.
+
+### Retired PTI Microsites Should Be Rechecked Against Current First-Party Hubs Before They Stay Verified
+*   **Lesson:** If an older PTI-specific path family disappears, recheck the organization’s current homepage and About hub before keeping PTI verified. Minnesota PACER still had strong statewide support pages, but the old `/parent/php/PIC/` PTI paths were 404 and the current public pages no longer preserved explicit PTI designation text.
+
+### Retest Host-Wide 403 Conclusions With A Real Browser User-Agent Before Freezing A State Blocker
+*   **Lesson:** If an official education host looked uniformly blocked in one low-token lane, do one bounded retry with a real browser user-agent before cementing the blocker. Mississippi MDEK12 flipped from a supposed host-wide Azure 403 blocker to a live WordPress district-contact leaf once the exact directory and special-education pages were retried with a browser-style client.

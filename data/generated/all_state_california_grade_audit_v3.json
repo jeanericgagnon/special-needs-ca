@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-23T05:10:38.498Z",
+  "generatedAt": "2026-06-23T05:32:18.763Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 17,
-    "BLOCKED": 33
+    "COMPLETE": 18,
+    "BLOCKED": 32
   },
-  "indexSafeCount": 17,
+  "indexSafeCount": 18,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -1127,10 +1127,10 @@
       "familyStatuses": {
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "blocked_hostwide_access_denied_dd_stack",
+        "developmental_disability_idd_authority": "blocked_uniform_http_403_dd_stack",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
+        "district_or_county_education_routing": "blocked_live_ksde_directory_roots_without_local_contract",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1141,7 +1141,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "kansas_dd_hosts_are_transport_blocked_and_education_still_lacks_county_or_district_contract",
+      "packetPrimaryGapReason": "kansas_dd_stack_is_uniformly_403_blocked_and_live_ksde_directory_roots_still_lack_local_contract",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
@@ -1623,7 +1623,7 @@
         "district_or_county_education_routing": "blocked_official_mde_directory_family_moved_without_live_replacement",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
+        "parent_training_information_center": "blocked_current_first_party_support_without_explicit_pti_designation",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
@@ -1638,8 +1638,8 @@
       "stateId": "mississippi",
       "stateCode": "MS",
       "stateName": "Mississippi",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -1647,11 +1647,11 @@
       "legacyManualReviewRate": 58.99,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 82,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 92,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "mississippi",
         "state_code": "MS",
@@ -1700,7 +1700,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_mdek12_public_host_uniform_403",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1710,9 +1710,9 @@
         "county_local_disability_resources": "verified_county_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_5_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "mdek12_public_root_and_bounded_directory_guesses_return_uniform_azure_app_gateway_403",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch_171_mississippi_district_contacts_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "missouri",

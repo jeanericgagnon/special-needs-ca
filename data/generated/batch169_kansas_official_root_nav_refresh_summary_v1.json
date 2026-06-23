@@ -1,0 +1,15 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "kdads_uniform_403": true,
+  "kancare_uniform_403": true,
+  "live_ksde_directory_roots": [
+    "https://www.ksde.gov/policy-and-funding/school-transportation/school-district-maps",
+    "https://www.ksde.gov/data-and-reporting/directories",
+    "https://datacentral.ksde.gov/default.aspx",
+    "https://uapps.ksde.gov/Directory_Rpts/default.aspx"
+  ],
+  "district_placeholder_rows": 105,
+  "lessons_updated": false
+}

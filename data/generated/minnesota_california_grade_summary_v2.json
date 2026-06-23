@@ -53,9 +53,9 @@
     {
       "family": "parent_training_information_center",
       "severity": "major",
-      "failure_code": "reviewed_first_party_support_source_lacks_explicit_pti_designation",
-      "evidence": "Reviewed PACER Center evidence proves Minnesota statewide family support and special-education guidance scope, but the saved first-party artifact does not preserve explicit PTI designation text.",
-      "next_action": "hold_blocked_until_explicit_pti_designation_is_preserved_from_reviewed_first_party_source"
+      "failure_code": "current_pacer_pages_and_retired_pti_paths_do_not_preserve_explicit_pti_designation",
+      "evidence": "Reviewed 2026-06-23 bounded current PACER first-party probes on https://www.pacer.org/, https://www.pacer.org/about/, https://www.pacer.org/parent/, https://www.pacer.org/advice-guidance/topic-iep-and-504/, https://www.pacer.org/parent/php/PIC/, and https://www.pacer.org/parent/php/PIC/fedfund.asp. The live PACER homepage and About page remain public and current, and the old `/parent/` route now resolves into the general advice-and-guidance page at https://www.pacer.org/advice-guidance/topic-iep-and-504/. However, the rechecked current pages still do not preserve explicit Parent Training and Information Center designation text, while the older `/parent/php/PIC/` and `/parent/php/PIC/fedfund.asp` PTI path family now returns HTTP 404. Minnesota therefore still lacks a saved live first-party PTI designation artifact even though statewide support evidence remains strong.",
+      "next_action": "hold_blocked_until_live_first_party_pti_designation_page_is_preserved"
     },
     {
       "family": "county_local_disability_resources",

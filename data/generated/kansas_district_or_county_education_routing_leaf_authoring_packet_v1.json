@@ -10,7 +10,8 @@
     "authoredExactLeafCount": 0,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
-    "officialStatewideAuthoringRoots": 5
+    "officialStatewideAuthoringRoots": 4,
+    "liveDirectoryRoots": 3
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -28,16 +29,21 @@
   ],
   "representative_sources": [
     "https://www.ksde.gov/policy-and-funding/special-education",
-    "https://www.ksde.gov/policy-and-funding/special-education/dispute-resolution",
-    "https://www.ksde.gov/policy-and-funding/special-education/special-education-in-kansas/procedural-safeguards-parent-rights",
-    "https://www.ksde.gov/policy-and-funding/special-education/data-central-special-education-reports",
-    "https://www.ksde.gov/policy-and-funding/special-education/school-district-maps",
+    "https://www.ksde.gov/policy-and-funding/school-transportation/school-district-maps",
+    "https://www.ksde.gov/data-and-reporting/directories",
+    "https://www.ksde.gov/data-and-reporting/data-central",
+    "https://datacentral.ksde.gov/default.aspx",
+    "https://uapps.ksde.gov/Directory_Rpts/default.aspx",
+    "https://www.ksde.gov/policy-and-funding/special-education/special-education-law/dispute-resolution",
+    "https://www.ksde.gov/policy-and-funding/special-education/special-education-law/notices-and-forms/parents-rights",
     "https://www.ksde.gov/docs/default-source/sf/2025-usd-county-map.pdf?sfvrsn=8ceea3ce_5"
   ],
   "root_domains_to_review": [
-    "district-owned Kansas USD domains derived from official KSDE county and district map roots",
-    "https://www.ksde.gov/policy-and-funding/special-education/school-district-maps",
-    "https://www.ksde.gov/policy-and-funding/special-education/data-central-special-education-reports"
+    "district-owned Kansas USD domains reached from the live KSDE School District Maps, Directories, and Directory Reports roots",
+    "https://www.ksde.gov/policy-and-funding/school-transportation/school-district-maps",
+    "https://www.ksde.gov/data-and-reporting/directories",
+    "https://datacentral.ksde.gov/default.aspx",
+    "https://uapps.ksde.gov/Directory_Rpts/default.aspx"
   ],
   "affected_counties": [
     "allen-ks",
@@ -146,5 +152,5 @@
     "woodson-ks",
     "wyandotte-ks"
   ],
-  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned education-routing leaf or remains explicitly blocked where no district-owned local contract has been preserved."
+  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned education-routing leaf authored from the live KSDE directory roots or remains explicitly blocked where no district-owned local contract has been preserved."
 }
