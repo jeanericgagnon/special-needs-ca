@@ -1,0 +1,10 @@
+{
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_blocker_sharpened": true,
+  "county_blocker_sharpened": true,
+  "lesson_added": false,
+  "education_failure_code": "official_school_directory_family_only_returns_moved_shell_or_dead_guesses",
+  "county_failure_code": "minnesota_dhs_local_office_family_is_stale_jsp_plus_radware_replatform"
+}

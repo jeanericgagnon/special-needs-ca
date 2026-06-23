@@ -698,3 +698,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Auto-Post Directory Bridges Must Be Audited At The Final Rendered Page
 *   **Lesson:** If an official directory URL only emits hidden fields and JavaScript submit logic, do not treat that bridge as the evidence surface. Massachusetts DESE required auditing the final rendered `search.aspx` result page to prove the district directory was real while still lacking a county routing contract.
+
+### Mixed 404-Legacy And Bot-Challenged Replatforms Should Become One Family-Level Blocker Pattern
+*   **Lesson:** If a legacy official `.jsp` path dies with 404 but multiple same-family replacement routes all redirect into the same bot-manager host, treat it as one replatformed blocker family. Minnesota DHS county/tribal routing was faster to classify once the stale legacy path and the challenged replacement paths were grouped instead of retried separately.
+
+### Uniform Short 403 Shells Across Root And Child Paths Mean Host-Wide Block, Not Child-Path Churn
+*   **Lesson:** If the official root and every bounded child-path guess return the same short branded 403 shell, stop treating it as a directory-discovery problem. Mississippi MDEK12 was faster to classify once the root and directory guesses all matched the same Azure Application Gateway 403 response.

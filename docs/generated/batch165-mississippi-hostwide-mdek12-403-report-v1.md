@@ -50,3 +50,4 @@
 
 - Protection and advocacy, PTI, legal aid, VR, and county-local routing remain verified from the existing reviewed first-party evidence chain.
 - Mississippi remains `BLOCKED` and `index_safe=false` because district or county education routing still has no county- or district-grade official contract on disk, and the official MDEK12 public host now shows a uniform host-wide 403 pattern in the bounded low-token lane.
+

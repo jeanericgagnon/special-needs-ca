@@ -56,3 +56,4 @@
 - Education is still blocked because the old MDE directory family now resolves only to moved-shell and dead-guess patterns, with no reviewed live county-mapped replacement contract on disk.
 - County-local is still blocked because the DHS county-and-tribal-office family now shows a mixed stale-legacy plus Radware-replatform pattern instead of a fetchable county-grade office directory in bounded low-token mode.
 - PACER still remains support-only evidence for PTI because the saved reviewed artifact does not preserve explicit PTI designation text.
+

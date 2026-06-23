@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "mdek12_local_directory_paths_return_403",
+  "primary_gap_reason": "mdek12_public_root_and_bounded_directory_guesses_return_uniform_azure_app_gateway_403",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,9 +43,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Reviewed Mississippi packet evidence still routes district or county education through generic statewide Mississippi special-education pages rather than county- or district-owned leaves.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "mdek12_public_host_returns_uniform_azure_app_gateway_403",
+      "evidence": "Reviewed 2026-06-23 bounded Mississippi MDEK12 path probes. The public root https://www.mdek12.org/ itself returns the same short HTTP 403 shell as all bounded local-routing guesses, including /OTS/Directory, /School-Directory, /directory, /SchoolDirectory, /districts, /OSE, /Offices/OSE, /MBE/School-and-District-Directory, and /MBE/District-Directory. Every reviewed response preserves the same Microsoft-Azure-Application-Gateway/v2 403 shell rather than district rows, school-search content, or district-owned leaves. Mississippi therefore remains blocked on district_or_county_education_routing because the official MDEK12 public host is host-wide blocked in the current low-token lane, not because one specific directory child path is stale.",
+      "next_action": "browser_or_alternate_client_probe_only_if_mdek12_hostwide_403_can_be_bypassed_without_lowering_standards"
     }
   ]
 }

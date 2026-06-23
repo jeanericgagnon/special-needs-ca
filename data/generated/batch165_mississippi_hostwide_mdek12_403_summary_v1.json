@@ -1,0 +1,8 @@
+{
+  "state": "mississippi",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_blocker_sharpened": true,
+  "lesson_added": false,
+  "failure_code": "mdek12_public_host_returns_uniform_azure_app_gateway_403"
+}

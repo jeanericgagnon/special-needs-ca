@@ -12,7 +12,7 @@
   "weak_critical_families": 3,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_mde_school_directory_now_only_returns_a_moved_shell_and_mn_dhs_local_office_lanes_are_bot_challenged_or_stale",
+  "primary_gap_reason": "official_mde_directory_family_now_only_resolves_to_moved_shell_or_dead_guesses_and_mn_dhs_local_office_family_is_stale_or_radware_challenged",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -46,9 +46,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Reviewed Minnesota packet evidence still routes district or county education through generic statewide Minnesota special-education pages rather than county- or district-owned leaves.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "official_school_directory_family_only_returns_moved_shell_or_dead_guesses",
+      "evidence": "Reviewed 2026-06-23 bounded Minnesota MDE replacement probes. The legacy roots https://education.mn.gov/MDE/SchSup/SchDir/ and https://education.mn.gov/MDE/SchSup/ both 302 into the generic https://education.mn.gov/SchSupHasMoved.html shell instead of a live district directory. Additional bounded replacement guesses such as https://education.mn.gov/MDE/about/MDEpages/Directories/ and https://education.mn.gov/MDE/about/adv/dirs/ return HTTP 404, while https://education.mn.gov/MDE/SchSup/Analytics/ timed out in bounded fetches and still did not yield a reviewed county-mapped district contract. Minnesota therefore still lacks a live official district-directory replacement or county-to-district routing table, and the current packet still falls back to statewide special-education evidence rather than local routing leaves.",
+      "next_action": "hold_blocked_until_live_official_mde_directory_replacement_or_county_mapped_contract_is_reviewed"
     },
     {
       "family": "parent_training_information_center",
@@ -60,9 +60,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "minnesota_dhs_county_and_tribal_office_pages_redirect_to_radware_bot_manager",
-      "evidence": "The likely official Minnesota county/local disability routing pages under mn.gov/dhs now redirect to a Radware Bot Manager challenge instead of returning county and tribal office content to bounded low-token fetches.",
-      "next_action": "browser_assisted_capture_of_mn_dhs_county_and_tribal_offices"
+      "failure_code": "minnesota_dhs_local_office_family_is_stale_jsp_plus_radware_replatform",
+      "evidence": "Reviewed 2026-06-23 bounded Minnesota DHS path variants for county and tribal office routing. The legacy https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices.jsp path now returns HTTP 404. But the slash replacement https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/ and adjacent variants such as county-and-tribal-agencies.jsp, tribal-nations.jsp, partners-and-providers/county-tribal-nation-links/, partners-and-providers/county-tribal-nation-directory/, and partners-and-providers/continuing-care/county-tribal-contacts/ all 302 into the same validate.perfdrive.com / Radware bot-manager challenge. Minnesota therefore still lacks a reviewed county-grade local office contract in bounded low-token mode, but the blocker is now correctly classified as a mixed stale-legacy plus bot-challenged replatform pattern rather than one bad URL.",
+      "next_action": "browser_assisted_or_cached_capture_only_for_replatformed_mn_dhs_county_tribal_family"
     }
   ]
 }
