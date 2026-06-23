@@ -570,6 +570,9 @@ This document captures key technical, data modeling, and procedural lessons lear
 ### Same-Domain API Paths Still Fail Closed If The Official Contract Requires Auth
 *   **Lesson:** If a public bundle names a same-domain county-search endpoint, probe that exact endpoint once before promising a hidden public contract. Florida’s MyACCESS bundle exposed `/accountmanagement/getZipCountyDetails` and `/communityPartnerSearch`, but both returned `401 Unauthorized`, so the lane stayed blocked as authenticated-only rather than undocumented.
 
+### Static County Labels On A Public Map Still Set The Public Coverage Ceiling
+*   **Lesson:** If an official county-office map page already embeds county labels in fetched HTML, count those labels before chasing hidden APIs. Florida’s Family Resource Center page looked like a generic interactive map, but the fetched HTML itself only preserved 34 county labels, which cheaply proved the public contract stopped well short of 67 counties.
+
 ### City Matches Inside An Office Directory Still Need Role Checks
 *   **Lesson:** If a blocked state still has one unresolved city-name office guess, verify that the city mention belongs to the right office role before treating it as progress. Idaho’s public DHW directory did mention Nampa, but only for Southwest Idaho Treatment Center, not for a county-benefits office leaf.
 

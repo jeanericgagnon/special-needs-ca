@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 20
-- primary_gap_reason: official_dpa_offices_page_exists_but_lacks_borough_or_census_area_mapping
+- primary_gap_reason: official_dpa_offices_page_names_only_five_regions_and_ten_office_cities_without_borough_or_census_area_coverage
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_official_dpa_offices_page_lacks_county_equivalent_mapping (The current health host now preserves a live official DPA offices page with named regional groups and district offices, but it still groups coverage by broad regions and city names instead of explicitly mapping Alaska's boroughs and census areas to those offices, and bounded raw fetches now return HTTP 403 even though browser-style rendering still exposes the office text. DFCS still exposes only narrow Pioneer Home local leaves rather than Public Assistance or disability county-equivalent routing.)
+- county_local_disability_resources: blocked_official_dpa_offices_page_lacks_county_equivalent_mapping (The live official DPA offices page is real, but its rendered contract stops at five broad regional headings and ten office-city leaves. It preserves no borough names, no census-area names, and no county-equivalent coverage table or locator contract, while bounded raw fetches still return HTTP 403 and the DFCS reorg host still exposes only Pioneer Home local leaves rather than Public Assistance routing.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_dpa_offices_page_exists_but_lacks_borough_or_census_area_mapping :: Reviewed 2026-06-22 bounded official Alaska rechecks across the DFCS reorg host plus the current health host. The stronger exact replacement now exists on the current health host: `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` preserves a live official Division of Public Assistance office directory with named regional groups and district offices in Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, and Kodiak, plus the statewide Virtual Contact Center. That eliminates the earlier "empty office locations header only" failure mode for DPA. But the reviewed page still groups offices by broad regions and city names rather than explicitly mapping Alaska's boroughs and census areas to those offices, the DFCS reorg host still exposes only narrow Pioneer Home local leaves rather than Public Assistance or disability county-equivalent routing, and a bounded raw fetch of the live DPA offices page now returns HTTP 403 even though browser-style rendering still exposes the office text.
+- county_local_disability_resources: official_dpa_offices_page_names_only_five_regions_and_ten_office_cities_without_borough_or_census_area_coverage :: Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus narrow official-site searches for borough and census-area terms. The reviewed rendered DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is a real official directory, but its public contract is limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center. The rendered HTML preserves no borough names, no census-area names, and no county-equivalent `counties served` table or locator contract, narrow official-domain searches for borough examples such as Aleutians East Borough, Bethel Census Area, Matanuska-Susitna Borough, and Nome Census Area returned no reviewed DPA office leaf, the DFCS reorg host still exposes only narrow Pioneer Home local leaves rather than Public Assistance routing, and bounded raw fetches of the live DPA offices page still return HTTP 403 even though browser-style rendering exposes the office text.
 
 ## Verified source samples
 
@@ -50,5 +50,5 @@
 
 - The only remaining Alaska blocker is county/local disability resources.
 - This bounded pass improves the blocker materially: Alaska now has a reviewed official DPA offices page on the current health host, so the problem is no longer "no office directory recovered."
-- The remaining failure is narrower and more honest: the official DPA offices resource still groups offices by region and city instead of explicitly mapping Alaska's boroughs and census areas to those offices, bounded raw fetches of that live page now return HTTP 403 even though browser-style rendering exposes the office text, and the DFCS reorg host still exposes only Pioneer Home local leaves rather than a county-equivalent Public Assistance or disability routing contract.
+- The remaining failure is narrower and more honest: the official DPA offices resource stops at five broad regional headings and ten office-city leaves, preserves no borough or census-area coverage terms, bounded raw fetches of that live page still return HTTP 403 even though browser-style rendering exposes the office text, and the DFCS reorg host still exposes only Pioneer Home local leaves rather than a county-equivalent Public Assistance or disability routing contract.
 - Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping, or another equivalent official county-grade locator.

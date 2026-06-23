@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T02:18:46.698Z",
+  "generatedAt": "2026-06-23T02:36:55.101Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 16,
@@ -151,7 +151,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "official_dpa_offices_page_exists_but_lacks_borough_or_census_area_mapping",
+      "packetPrimaryGapReason": "official_dpa_offices_page_names_only_five_regions_and_ten_office_cities_without_borough_or_census_area_coverage",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -641,7 +641,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "myaccess_accountmanagement_endpoints_exist_but_require_authentication_for_county_results",
+      "packetPrimaryGapReason": "public_family_resource_center_html_and_csv_stop_at_34_counties_and_remaining_county_results_are_authenticated",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
