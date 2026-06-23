@@ -219,3 +219,6 @@
 
 ### HTTP 200 Archive Tail Pages Can Still Be Empty
 *   **Lesson:** If later archive pagination keeps returning HTTP 200 but only repeats the generic archive shell with no new county terms or office posts, freeze the archive there instead of assuming more coverage may appear deeper. New Mexico HCA pages 9 through 12 all stayed live but added zero new office-routing counties beyond the 29 already proven by pages 1 through 8.
+
+### County-Cluster BOCES Pages Can Collapse A Statewide Education Blocker To An NYC Remainder
+*   **Lesson:** If an official state education page groups BOCES by county clusters and a companion superintendent directory preserves contact rows for those same BOCES, use that pair to shrink the blocker before authoring more district leaves. New York NYSED `jmt.html` plus `superintendents.html` proved 57 non-NYC counties at once, leaving only the NYC borough route as the real remainder.

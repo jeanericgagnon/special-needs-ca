@@ -1,16 +1,34 @@
 {
   "state": "new-york",
   "family": "district_or_county_education_routing",
-  "repair_lane": "exact_local_leaf_authoring_only",
-  "packet_complete_when": "A materially broader county-grade or district-grade leaf set replaces the current three exact BOCES leaves.",
+  "repair_lane": "official_boces_county_cluster_plus_nyc_remainder_only",
+  "packet_complete_when": "A reviewed official NYC borough special-education route complements the official NYSED county-cluster BOCES pages, or a broader official county-grade local route replaces both.",
   "current_metrics": {
     "countyTotal": 62,
-    "exactLeafCount": 3,
-    "bocesDomainsCovered": 3
+    "nonNycCountiesCoveredByOfficialBocesPages": 57,
+    "nycBoroughRemainderCount": 5,
+    "reviewedOfficialStatePages": 2,
+    "legacyExactLeafCount": 3
   },
-  "verified_exact_leaves": [
-    "https://caboces.org/education/exceptional-education/",
-    "https://www.capitalregionboces.org/special-education-2/",
-    "https://www.btboces.org/OurServices.aspx"
+  "representative_sources": [
+    "https://www.p12.nysed.gov/ds/jmt.html",
+    "https://www.p12.nysed.gov/ds/superintendents.html",
+    "https://www.schools.nyc.gov/learning/special-education",
+    "https://www.schools.nyc.gov/learning/special-education/help/contacts-and-resources",
+    "https://www.schools.nyc.gov/learning/special-education/help/committees-on-special-education"
+  ],
+  "covered_non_nyc_examples": [
+    "Albany-Schoharie-Schenectady-Saratoga (Capital Region BOCES)",
+    "Broome-Delaware-Tioga BOCES",
+    "Cattaraugus-Allegany-Erie-Wyoming BOCES",
+    "Putnam-Northern Westchester",
+    "Wayne-Finger Lakes BOCES"
+  ],
+  "remaining_nyc_boroughs": [
+    "Bronx",
+    "Kings",
+    "New York",
+    "Queens",
+    "Richmond"
   ]
 }

@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "bounded_health_ny_medicaid_host_returns_403_without_public_ldss_replacement",
+  "primary_gap_reason": "official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_no_public_ldss_replacement",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources",
@@ -51,9 +51,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "bounded_boces_leaf_packet_exhausted_before_county_grade_coverage",
-      "evidence": "Verified exact leaves remain limited to 3 reviewed BOCES-owned pages; this does not truthfully prove district-grade routing statewide.",
-      "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
+      "failure_code": "official_nysed_boces_pages_cover_57_non_nyc_counties_but_no_reviewed_nyc_borough_route",
+      "evidence": "Reviewed 2026-06-23 one bounded official NYSED education replacement lane beyond the saved three BOCES leaves. The official Joint Management Teams page at `https://www.p12.nysed.gov/ds/jmt.html` and the official Directory of District Superintendents page at `https://www.p12.nysed.gov/ds/superintendents.html` are both live and publicly reviewable. Together they now prove county-bearing BOCES routing for the non-NYC portion of the state: the pages preserve county-cluster BOCES groupings and district-superintendent contact rows for 57 non-NYC counties such as Albany, Broome, Cattaraugus, Dutchess, Erie, Monroe, Nassau, Onondaga, Suffolk, Westchester, and Wyoming. But that same official lane still exposes no reviewed borough-specific routing for Bronx, Kings, Queens, Richmond, or a clear New York County / Manhattan special-education route. New York education therefore no longer looks like a three-leaf-only state; it is now blocked specifically on the NYC borough remainder.",
+      "next_action": "hold_blocked_until_reviewed_official_nyc_borough_special_education_route_exists"
     }
   ]
 }

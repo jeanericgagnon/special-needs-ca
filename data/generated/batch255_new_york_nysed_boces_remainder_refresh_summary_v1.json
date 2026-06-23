@@ -1,0 +1,9 @@
+{
+  "batch": "batch255_new_york_nysed_boces_remainder_refresh_v1",
+  "state": "new-york",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "nonNycCountiesCoveredByOfficialBocesPages": 57,
+  "nycBoroughRemainderCount": 5,
+  "lesson_added": true
+}
