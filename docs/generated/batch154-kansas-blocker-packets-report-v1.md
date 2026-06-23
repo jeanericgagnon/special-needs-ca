@@ -53,3 +53,4 @@
 - Kansas remains BLOCKED and not index-safe.
 - The DD family is still blocked because the only DB DD agency row still points at the dead dhhs.kansas.gov root and the reviewed KDADS replacement is still access denied, but the next lane now has an explicit DD repair packet instead of a generic browser-assisted note.
 - County-grade education routing is still blocked because all 105 district rows still use one statewide KSDE placeholder, but the next lane now has a deterministic district-owned leaf packet built from the placeholder inventory and the reviewed KSDE statewide roots.
+

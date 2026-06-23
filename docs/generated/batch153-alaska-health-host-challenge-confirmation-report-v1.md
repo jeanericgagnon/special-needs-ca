@@ -52,3 +52,4 @@
 - This bounded pass confirms the blocker is final for low-token repair on the current official host: the reviewed DPA offices page is incomplete for borough or census-area routing, and the same host challenge-blocks the page itself, sitemap discovery, and official-site search probes.
 - That means Alaska is not missing one more scrape attempt. It is missing a different official contract: either borough or census-area mapping on the current DPA directory, or a separate official county-equivalent locator that actually names coverage.
 - Alaska remains BLOCKED and not index-safe until the state publishes borough or census-area to DPA office mapping on a reviewable official surface or the health-host challenge clears and exposes a stronger county-equivalent contract.
+

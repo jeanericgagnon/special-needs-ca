@@ -53,3 +53,4 @@
 - Maine remains BLOCKED and not index-safe.
 - Education is still blocked because the official NEO SAU contact workflow remains a real public contract that still fails at the result/export stage, but the next lane now has an explicit manual-export packet instead of a generic browser-assisted note.
 - County-local is still blocked because the DHHS district office stack still lacks county coverage mapping, but the next lane now has a deterministic county-office mapping packet that captures the DOI mirrors, dead locator rows, and the three multi-office counties.
+

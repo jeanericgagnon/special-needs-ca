@@ -1,0 +1,50 @@
+{
+  "state": "kansas",
+  "state_code": "KS",
+  "family": "developmental_disability_idd_authority",
+  "repair_lane": "reviewed_official_leaf_repair",
+  "purpose": "Deterministic repair packet for replacing Kansas DD stale-root evidence with a reviewed official DD authority leaf if one exists.",
+  "current_problem_metrics": {
+    "staleLegacyDbRows": 1,
+    "deadLegacyRoots": 1,
+    "reviewedBlockedReplacementRoots": 1,
+    "authoredExactLeafCount": 0
+  },
+  "exact_target_goals": [
+    "official Kansas DD intake or application leaf",
+    "official Kansas DD eligibility or services entry leaf",
+    "official Kansas DD appeals or complaint leaf if published"
+  ],
+  "exact_target_terms": [
+    "developmental disabilities",
+    "intellectual/developmental disability",
+    "I/DD",
+    "application",
+    "eligibility",
+    "intake",
+    "services"
+  ],
+  "representative_sources": [
+    "https://dhhs.kansas.gov/dd",
+    "https://www.kdads.ks.gov/",
+    "https://www.kancare.ks.gov/",
+    "https://www.kancare.ks.gov/home/showpublisheddocument/6224/639013892674730000"
+  ],
+  "root_domains_to_review": [
+    "https://www.kdads.ks.gov/",
+    "browser-assisted reviewed KDADS DD leaves if access permits",
+    "KanCare HCBS crossover pages only as supporting context, not completion proof"
+  ],
+  "stale_db_rows": [
+    {
+      "id": "ks-dd-agency",
+      "state_id": "kansas",
+      "agency_type": "dd_intake",
+      "name": "Kansas Developmental Services Intake",
+      "website": "https://dhhs.kansas.gov/dd",
+      "source_url": "https://dhhs.kansas.gov/dd",
+      "verification_status": "verified"
+    }
+  ],
+  "packet_complete_when": "Kansas has a reviewed official DD authority leaf that preserves DD intake, eligibility, or entry routing without relying on the dead dhhs.kansas.gov/dd root or a blocked KDADS shell."
+}

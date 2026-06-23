@@ -1,0 +1,67 @@
+{
+  "state": "maine",
+  "state_code": "ME",
+  "family": "district_or_county_education_routing",
+  "repair_lane": "manual_export_capture",
+  "purpose": "Deterministic packet for replacing Maine statewide education fallback rows with reviewed SAU or district contact captures from the live official NEO workflow.",
+  "current_problem_metrics": {
+    "statewideSpecialEdSourceRows": 14,
+    "genericDoeSourceRows": 2,
+    "statewideWebsiteRows": 16,
+    "countyRowCount": 16,
+    "reviewedSelectorRoots": 4,
+    "boundedPostReplayFailures": 3
+  },
+  "exact_target_goals": [
+    "reviewed SAU contact export or result capture with local superintendent or district contact rows",
+    "reviewed district-owned special education leaf where the official export remains unavailable",
+    "replacement of statewide DOE fallback rows with local SAU or district evidence"
+  ],
+  "exact_target_terms": [
+    "superintendent",
+    "contact",
+    "SAU",
+    "organization",
+    "special education",
+    "district office"
+  ],
+  "representative_sources": [
+    "https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx",
+    "https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town",
+    "https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU",
+    "https://neo.maine.gov/doe/neo/SuperSearch/Home/Index"
+  ],
+  "public_orgids_already_tested": [
+    {
+      "org_id": 364,
+      "org_name": "Portland Public Schools"
+    },
+    {
+      "org_id": 542,
+      "org_name": "York Public Schools"
+    },
+    {
+      "org_id": 913,
+      "org_name": "RSU 60/MSAD 60"
+    }
+  ],
+  "affected_counties": [
+    "androscoggin-me",
+    "aroostook-me",
+    "cumberland-me",
+    "franklin-me",
+    "hancock-me",
+    "kennebec-me",
+    "knox-me",
+    "lincoln-me",
+    "oxford-me",
+    "penobscot-me",
+    "piscataquis-me",
+    "sagadahoc-me",
+    "somerset-me",
+    "waldo-me",
+    "washington-me",
+    "york-me"
+  ],
+  "packet_complete_when": "Every Maine county row either points at reviewed local SAU or district contact evidence or remains explicitly blocked because the official NEO workflow still fails to publish public results."
+}

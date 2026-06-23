@@ -1,0 +1,14 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dd_packet_created": true,
+  "education_packet_created": true,
+  "dd_stale_legacy_rows": 1,
+  "district_placeholder_rows": 105,
+  "lessons_updated": false,
+  "authored_packets": [
+    "data/generated/kansas_developmental_disability_idd_authority_repair_packet_v1.json",
+    "data/generated/kansas_district_or_county_education_routing_leaf_authoring_packet_v1.json"
+  ]
+}

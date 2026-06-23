@@ -1,0 +1,74 @@
+{
+  "state": "maine",
+  "state_code": "ME",
+  "family": "county_local_disability_resources",
+  "repair_lane": "county_mapping_repair",
+  "purpose": "Deterministic packet for replacing Maine DOI and dead-locator county-office rows only where a truthful county-to-office mapping contract can be proven.",
+  "current_problem_metrics": {
+    "doiMirrorRows": 16,
+    "deadLocatorRows": 4,
+    "countyRowCount": 20,
+    "multiOfficeCountyCount": 3,
+    "officialDistrictOfficeRoots": 1
+  },
+  "exact_target_goals": [
+    "county-to-district-office contract if publicly available",
+    "truthful office selection for counties with multiple district offices",
+    "replacement of DOI and dead-locator fallback rows only where mapping support exists"
+  ],
+  "exact_target_terms": [
+    "district office",
+    "county",
+    "town",
+    "service area",
+    "locations",
+    "eligibility"
+  ],
+  "representative_sources": [
+    "https://www.maine.gov/dhhs/about/contact/offices",
+    "https://dhhs.maine.gov/locations"
+  ],
+  "affected_counties": [
+    "androscoggin-me",
+    "aroostook-me",
+    "cumberland-me",
+    "franklin-me",
+    "hancock-me",
+    "kennebec-me",
+    "knox-me",
+    "lincoln-me",
+    "oxford-me",
+    "penobscot-me",
+    "piscataquis-me",
+    "sagadahoc-me",
+    "somerset-me",
+    "waldo-me",
+    "washington-me",
+    "york-me"
+  ],
+  "unresolved_multi_office_counties": [
+    {
+      "county_id": "aroostook-me",
+      "office_names": [
+        "Medicaid Office - Maine DHHS--Caribou District Office",
+        "Medicaid Office - Maine DHHS--Fort Kent District Office",
+        "Medicaid Office - Maine DHHS--Houlton District Office"
+      ]
+    },
+    {
+      "county_id": "washington-me",
+      "office_names": [
+        "Medicaid Office - Maine DHHS--Calais District Office",
+        "Medicaid Office - Maine DHHS--Machias District Office"
+      ]
+    },
+    {
+      "county_id": "york-me",
+      "office_names": [
+        "Medicaid Office - Maine DHHS--Biddeford District Office",
+        "Medicaid Office - Maine DHHS--Sanford District Office"
+      ]
+    }
+  ],
+  "packet_complete_when": "Every Maine county office row either maps to a reviewed DHHS district office with public county or town coverage support or remains explicitly blocked where no public mapping contract exists."
+}

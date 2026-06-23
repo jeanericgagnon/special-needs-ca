@@ -635,3 +635,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Turn A Sharpened Blocker Into A Deterministic Packet Before Rechecking The Same Statewide Directory
 *   **Lesson:** If a blocker is already sharp and the only remaining work is exact local leaf authoring, persist a state-specific packet from the current DB plus reviewed statewide directory evidence instead of re-reading the same statewide pages again. Idaho’s next honest step was not another pass on `school-districts/` or `/offices`, but a deterministic district/office packet that captures the fallback rows, exact leaf names, and unresolved county splits on disk.
+
+### When The Same Official Host Challenge-Blocks The Page, Sitemap, And Search, Stop Low-Token County Retries
+*   **Lesson:** If a browser-reviewed official directory still lacks county-equivalent mapping and the same host returns the identical challenge shell on the page itself, sitemap, and official search URLs, treat that family as source-final for low-token work. Alaska health.alaska.gov exposed a real DPA offices page in reviewed rendering, but the raw page, sitemap, and borough-targeted search probes all returned the same Cloudflare shell, so more bounded scraper retries would not produce borough coverage proof.
+
+### When A Live Statewide Map Root Exists But All Local Rows Still Point To One Placeholder, Packetize The Placeholder First
+*   **Lesson:** If a state already has a live statewide map or directory root but every county or district row in the DB still points at the same placeholder URL, stop retrying the statewide source and write a state packet from the placeholder inventory first. Kansas already had a live KSDE map stack, but the real next step was a packet proving all 105 district rows still used the same KSDE fallback so later authoring can replace them deterministically.
+
+### If A Real Official Form Exposes CSRF And Public IDs But Every Bounded Submit Returns 500, Packetize It As Manual Export
+*   **Lesson:** If an official public form exposes a real CSRF token, public selector IDs, and explicit submit actions but every bounded POST replay still returns 500, stop spending tokens on replay variations and move the lane to a manual-export packet. Maine’s NEO SAU search proved the public contract was real, but the right next step was a deterministic capture packet, not more blind POST attempts.

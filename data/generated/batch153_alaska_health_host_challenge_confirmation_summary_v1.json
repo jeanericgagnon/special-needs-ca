@@ -1,0 +1,12 @@
+{
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "county_local_disability_resources_status": "blocked_dpa_directory_incomplete_and_health_host_challenge_locked",
+  "dpa_directory_browser_reviewed": true,
+  "borough_or_census_area_mapping_present": false,
+  "exact_page_challenge_confirmed": true,
+  "sitemap_challenge_confirmed": true,
+  "borough_search_challenge_confirmed": true,
+  "lessons_updated": false
+}

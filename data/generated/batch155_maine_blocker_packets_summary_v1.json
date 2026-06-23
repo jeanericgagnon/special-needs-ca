@@ -1,0 +1,14 @@
+{
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_packet_created": true,
+  "county_packet_created": true,
+  "statewide_education_fallback_rows": 16,
+  "county_office_fallback_rows": 20,
+  "lessons_updated": false,
+  "authored_packets": [
+    "data/generated/maine_district_or_county_education_routing_manual_export_packet_v1.json",
+    "data/generated/maine_county_local_disability_resources_mapping_packet_v1.json"
+  ]
+}

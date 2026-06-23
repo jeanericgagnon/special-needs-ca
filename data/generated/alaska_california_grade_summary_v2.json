@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_dpa_offices_page_names_only_five_regions_and_ten_office_cities_without_borough_or_census_area_coverage",
+  "primary_gap_reason": "browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,8 +42,8 @@
   "final_blockers": [
     {
       "family": "county_local_disability_resources",
-      "failure_code": "official_dpa_offices_page_names_only_five_regions_and_ten_office_cities_without_borough_or_census_area_coverage",
-      "evidence": "Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus narrow official-site searches for borough and census-area terms. The reviewed rendered DPA offices page at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ is a real official directory, but its public contract is limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center. The rendered HTML preserves no borough names, no census-area names, and no county-equivalent 'counties served' table or locator contract, narrow official-domain searches for borough examples such as Aleutians East Borough, Bethel Census Area, Matanuska-Susitna Borough, and Nome Census Area returned no reviewed DPA office leaf, the DFCS reorg host still exposes only Pioneer Home local leaves rather than Public Assistance routing, and bounded raw fetches of the live DPA offices page still return HTTP 403 even though browser-style rendering exposes the office text. Alaska therefore still lacks county-equivalent coverage proof strong enough to mark all 20 borough and census-area rows complete."
+      "failure_code": "browser_reviewed_dpa_directory_lacks_borough_mapping_and_all_health_host_discovery_surfaces_are_challenge_blocked",
+      "evidence": "Reviewed 2026-06-23 bounded official Alaska rechecks against the live health host plus narrow official-site probes for borough and census-area routing. The reviewed rendered DPA offices page at https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/ is still a real official directory, but its public contract remains limited to five broad regional headings (Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska) and ten office-city leaves (Homer, Kenai, Fairbanks, Nome, Anchorage, Wasilla, Juneau, Ketchikan, Sitka, Bethel, Kodiak) plus the statewide Virtual Contact Center, with no borough names, no census-area names, and no county-equivalent coverage table. A fresh bounded live probe confirmed the same Cloudflare challenge shell on the exact DPA offices page, on https://health.alaska.gov/sitemap.xml, and on health-host search URLs for Bethel Census Area, Aleutians East Borough, and Nome Census Area public-assistance queries. So Alaska now has both browser-reviewed proof that the current official page is incomplete for county-equivalent routing and raw-fetch proof that the host blocks the exact discovery surfaces needed for a low-token borough-to-office repair."
     }
   ]
 }
