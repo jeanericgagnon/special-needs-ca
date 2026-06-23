@@ -264,3 +264,6 @@
 
 ### A Public Office API Still Does Not Clear County-Grade Routing Without County Or Service-Area Fields
 *   **Lesson:** A live official JSON API is stronger than a shell-only SPA, but it still does not clear county-local routing unless the payload itself exposes county assignments, counties served, or another explicit service-area contract. Utah's DWS `officesearch-api` returns 45 unique public office records with addresses and coordinates, yet it still lacks county/service-area fields, so the state remains blocked for county-grade proof.
+
+### A District-Linked Special-Education Cooperative Can Clear A County When The District Labels The Route And The Cooperative States The Service Scope
+*   **Lesson:** A district-linked cooperative can satisfy county-grade education routing when the district explicitly labels the route as `Special Education Services` and the linked cooperative home states that it provides special-education services across partner school districts. Kansas Salina USD 305 did not need a brand-new district-owned `/special-education` leaf once the district pages pointed into CKCIE and the CKCIE home/parents stack preserved special-education services, IEP, parent-rights, and local Salina contact evidence.

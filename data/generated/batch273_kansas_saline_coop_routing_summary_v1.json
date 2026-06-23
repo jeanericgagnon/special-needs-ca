@@ -1,0 +1,22 @@
+{
+  "batch": "batch273_kansas_saline_coop_routing_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_counties": [
+    "atchison-ks",
+    "butler-ks",
+    "douglas-ks",
+    "finney-ks",
+    "johnson-ks",
+    "leavenworth-ks",
+    "riley-ks",
+    "saline-ks",
+    "shawnee-ks",
+    "wyandotte-ks"
+  ],
+  "reviewed_leaf_count": 10,
+  "newly_verified_county": "saline-ks",
+  "lessons_updated": false
+}

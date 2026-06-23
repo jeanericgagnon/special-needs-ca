@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 9,
+    "authoredExactLeafCount": 10,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 4,
     "publicExportContractVerified": true,
-    "reviewedDistrictOwnedLeafCount": 9
+    "reviewedDistrictOwnedLeafCount": 10
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -167,6 +167,7 @@
     "johnson-ks",
     "leavenworth-ks",
     "riley-ks",
+    "saline-ks",
     "shawnee-ks",
     "wyandotte-ks"
   ],
@@ -248,7 +249,6 @@
     "rooks-ks",
     "rush-ks",
     "russell-ks",
-    "saline-ks",
     "scott-ks",
     "sedgwick-ks",
     "seward-ks",
