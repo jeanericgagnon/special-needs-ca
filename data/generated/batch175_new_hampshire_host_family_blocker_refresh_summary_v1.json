@@ -1,0 +1,14 @@
+{
+  "batch": "batch175_new_hampshire_host_family_blocker_refresh_v1",
+  "state": "new-hampshire",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "host_family_blockers": [
+    "education.nh.gov",
+    "my.doe.nh.gov",
+    "dhhs.nh.gov",
+    "nhes.nh.gov",
+    "nheasy.nh.gov"
+  ],
+  "lesson_added": false
+}

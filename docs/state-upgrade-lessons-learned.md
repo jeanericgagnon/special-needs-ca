@@ -728,3 +728,12 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Open ExperienceBuilder Configs Can Prove A County Layer Is Still Incomplete
 *   **Lesson:** If an official locator app opens but the visible page is only an `Experience` shell, check the public ExperienceBuilder item data before giving up. Nebraska’s config exposed the exact web map and office layer URLs, which let us prove the official office layer only covered 37 counties. That saved more blind probing while still keeping the county-office family blocked.
+
+### Live Office Leaves Still Need County Coverage Evidence
+*   **Lesson:** If an official office stack upgrades from a dead locator root to real office leaves, do not auto-clear county-local routing unless the reviewed leaves explicitly map counties served. Nevada DSS exposed live North/South welfare office pages with real addresses and phones, but they still only named offices by city or district, so the county-local family stayed blocked.
+
+### Treat Repeated Access-Denied Shells As A Host-Family Blocker
+*   **Lesson:** If the official root, the exact leaf paths, and the obvious alternate official subdomain all return the same tiny `Access Denied` shell, stop guessing more paths and classify the whole host family as publicly blocked. New Hampshire DOE, DHHS, and NHES all behaved this way, which was enough to sharpen the blocker without more retries.
+
+### One Official State Directory Page Can Clear Every County
+*   **Lesson:** If the official state root links one maintained county directory page that explicitly enumerates every county and preserves county-owned leaves or county contact details in the HTML, use that page as the county-grade contract. New Jersey cleared both education routing and county social-services routing from two reviewed official state pages without county-by-county rediscovery.

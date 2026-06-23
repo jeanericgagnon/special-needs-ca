@@ -12,7 +12,7 @@
   "weak_critical_families": 3,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_education_and_dhhs_local_directory_paths_blocked_or_stale",
+  "primary_gap_reason": "official_nh_host_families_publicly_access_denied_or_unresolvable",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -44,23 +44,23 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_school_directory_paths_return_403_in_bounded_fetch",
-      "evidence": "Bounded probes to official New Hampshire Department of Education district-profile and school-directory paths returned HTTP 403, so no reviewed district- or county-grade education routing chain is preserved on disk.",
-      "next_action": "browser_or_alternate_client_probe_of_official_school_directory_paths"
+      "failure_code": "official_nh_doe_host_family_returns_access_denied_shell",
+      "evidence": "Reviewed 2026-06-23 bounded browser-style probes on the official New Hampshire education host family. `www.education.nh.gov` root plus exact district-directory leaves and the alternate `my.doe.nh.gov` host all return the same short `Access Denied` shell, so no reviewed district- or county-grade education routing chain is publicly fetchable from the official education stack.",
+      "next_action": "hold_blocked_until_public_nh_education_export_or_browser_reviewable_directory_is_preserved"
     },
     {
       "family": "vocational_rehabilitation_pre_ets",
       "severity": "major",
-      "failure_code": "legacy_vr_root_unresolvable_and_official_bvr_paths_403",
-      "evidence": "The packet's current VR root `dhhs.new-hampshire.gov/rehab` does not resolve, and bounded probes to likely official Bureau of Vocational Rehabilitation paths on `education.nh.gov` returned HTTP 403, so no reviewed first-party VR or Pre-ETS artifact is preserved on disk.",
-      "next_action": "browser_or_alternate_client_probe_of_official_vr_paths"
+      "failure_code": "official_nh_vr_host_family_returns_access_denied_or_unresolvable",
+      "evidence": "Reviewed 2026-06-23 the current New Hampshire VR lane against the likely official host family. The legacy root `dhhs.new-hampshire.gov/rehab` no longer resolves, `www.nhes.nh.gov` root plus the BVR disabilities path return the same short `Access Denied` shell, and `www.nheasy.nh.gov` does not resolve. No reviewed first-party VR or Pre-ETS surface is publicly fetchable from the current official host family.",
+      "next_action": "hold_blocked_until_public_nh_vr_host_or_official_export_is_preserved"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_dhhs_district_office_paths_return_403_in_bounded_fetch",
-      "evidence": "The legacy county-office evidence still depends on DOI-derived rows, while bounded probes to official New Hampshire DHHS contact and district-office paths returned HTTP 403 and did not preserve a reviewed county-owned local routing directory.",
-      "next_action": "browser_or_alternate_client_probe_of_official_dhhs_district_office_paths"
+      "failure_code": "official_nh_dhhs_host_family_returns_access_denied_shell",
+      "evidence": "Reviewed 2026-06-23 bounded browser-style probes on the official New Hampshire DHHS host family. `www.dhhs.nh.gov` root plus the exact `/contact-us` and `/contact-us/district-offices` leaves all return the same short `Access Denied` shell, so the old DOI-derived county-office rows still have no reviewed official county-owned replacement.",
+      "next_action": "hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved"
     }
   ]
 }

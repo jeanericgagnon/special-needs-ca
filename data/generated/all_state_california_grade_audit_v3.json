@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T05:51:27.237Z",
+  "generatedAt": "2026-06-23T06:04:34.982Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 19,
@@ -1997,11 +1997,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_legacy_local_locator_root_redirects_to_generic_dhs_homepage"
+        "county_local_disability_resources": "blocked_live_welfare_office_pages_without_county_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "legacy_local_locator_root_redirects_to_generic_dhs_homepage",
+      "packetPrimaryGapReason": "live_welfare_office_pages_without_county_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -2070,18 +2070,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_school_directory_paths_return_403_in_bounded_fetch",
-        "vocational_rehabilitation_pre_ets": "blocked_legacy_vr_root_unresolvable_and_official_bvr_paths_403",
+        "district_or_county_education_routing": "blocked_official_nh_doe_host_family_access_denied",
+        "vocational_rehabilitation_pre_ets": "blocked_official_nh_vr_host_family_access_denied_or_unresolvable",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_dhhs_district_office_paths_return_403_in_bounded_fetch"
+        "county_local_disability_resources": "blocked_official_nh_dhhs_host_family_access_denied"
       },
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_education_and_dhhs_local_directory_paths_blocked_or_stale",
+      "packetPrimaryGapReason": "official_nh_host_families_publicly_access_denied_or_unresolvable",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -2097,11 +2097,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 21,
-      "strongCriticalFamilies": 8,
-      "weakCriticalFamilies": 2,
-      "missingCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 67,
+      "completenessPct": 92,
       "dbMetrics": {
         "state_id": "new-jersey",
         "state_code": "NJ",
@@ -2140,18 +2140,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "missing",
+        "protection_and_advocacy": "blocked_first_party_drnj_domains_not_publicly_reviewable",
         "parent_training_information_center": "verified_state_grade",
-        "legal_aid": "missing",
+        "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch_17_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetPrimaryGapReason": "first_party_drnj_domains_not_publicly_reviewable",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

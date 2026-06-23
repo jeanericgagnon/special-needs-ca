@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "legacy_local_locator_root_redirects_to_generic_dhs_homepage",
+  "primary_gap_reason": "live_welfare_office_pages_without_county_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -43,9 +43,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "legacy_local_locator_root_redirects_to_generic_dhs_homepage",
-      "evidence": "The legacy Nevada county-local source root `dhhs.nv.gov/locations` now redirects to the generic Nevada Department of Human Services homepage, and reviewed DHS contact/location guesses did not preserve a county office directory or county-owned local routing leaves.",
-      "next_action": "author_exact_county_local_resource_targets"
+      "failure_code": "official_welfare_district_office_pages_live_but_no_county_coverage_contract",
+      "evidence": "Reviewed 2026-06-23 bounded live probes on the official Nevada DSS contact stack. The DSS contact hub now preserves exact Welfare District Offices-North and Welfare District Offices-South leaves with real office addresses, phones, fax numbers, and reschedule lines, but the reviewed pages label offices by city or district name only and do not map counties served. Nevada therefore still lacks a reviewed official county-to-office routing contract for all 17 counties.",
+      "next_action": "hold_blocked_until_official_county_to_welfare_office_contract_is_reviewed"
     }
   ]
 }

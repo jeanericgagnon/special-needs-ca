@@ -1,0 +1,16 @@
+{
+  "batch": "batch176_new_jersey_county_directory_repair_v1",
+  "state": "new-jersey",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "repaired_families": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [
+    "protection_and_advocacy"
+  ],
+  "county_directory_count": 21,
+  "lesson_added": false
+}

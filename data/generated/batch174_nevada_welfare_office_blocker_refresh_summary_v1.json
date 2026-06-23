@@ -1,0 +1,12 @@
+{
+  "batch": "batch174_nevada_welfare_office_blocker_refresh_v1",
+  "state": "nevada",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "office_pages_reviewed": 2,
+  "county_total": 17,
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "lesson_added": false
+}
