@@ -16,7 +16,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
 - Kansas: `reviewed_kansas_district_owned_leaves_now_cover_8_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
-- Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_dds_locations_lane_still_lacks_county_export`
+- Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
 - Nebraska: `official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields`
 - Nevada: `official_county_local_pages_now_cover_13_of_17_counties_but_four_counties_lack_reviewed_local_route`
@@ -40,47 +40,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the top Arizona blocker in the state queue. The final three public district domains are now fully exhausted: Coconino's live WordPress root plus wp-json search only replay false-positive board and staff pages, Mohave's live Finalsite root returns 404 on exact role slugs, and Yavapai's live `/page/` namespace returns 404 on role slugs even though `/page/contact-us/` is public.
+`district_or_county_education_routing` remains the top Massachusetts blocker in the state queue. The hidden DESE district-directory replay still no longer materializes local rows, and the live official School Finder at `get_closest_orgs.aspx` only accepts address, city, or town inputs. It exposes superintendent and address-oriented local search behavior, but no county field, no county selector, and no export lane that can be truthfully bridged to county rows.
 
 ### Exact Evidence Needed
 
-- Any public role-bearing special-education or student-services leaf on ccasdaz.org, mohavelearning.org, or yavapaicountyhighschool.com.
-- Or, a new official Arizona state or county export that maps those three counties to reviewed district routing.
-- Or, an official AHCCCS or DES county-to-office assignment artifact for county-local routing.
-- The live district roots, the live AHCCCS ALTCS page, and the partial county map are still not enough without county-grade routing fields.
+- Any official Massachusetts DESE county-to-district contract, county selector, or county-keyed export.
+- Or, a reviewed browser/cached DESE or DDS locality capture that can be truthfully bridged to counties.
+- Or, an official DDS county crosswalk or county-served export.
+- The live School Finder, the non-materializing hidden replay, and the DDS raw-403 location pages are still not enough without county-grade routing fields.
 
 ### Useful Official URLs Already Tried
 
-- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
-- [Coconino wp-json search for special education](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
-- [Coconino page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
-- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
-- [Mohave exact 504 candidate](https://www.mohavelearning.org/fs/pages/504)
-- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
-- [Yavapai contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
-- [Yavapai exact special-education candidate](https://www.yavapaicountyhighschool.com/page/special-education/)
-- [AHCCCS ALTCS Offices](https://www.azahcccs.gov/members/ALTCSlocations.html)
-- [AHCCCS Contacts](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
+- [DESE district-directory bridge](https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238)
+- [DESE Profiles Search](https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238)
+- [DESE School Finder](https://profiles.doe.mass.edu/search/get_closest_orgs.aspx)
+- [DESE Search, Export and Mailing Labels help](https://profiles.doe.mass.edu/help/search.aspx?leftNavId=12104)
+- [DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any public role-bearing special-education or student-services leaf on the remaining three Arizona district domains.
-- Any official Arizona district export or report-card successor artifact that maps Coconino, Mohave, and Yavapai to reviewed local education routing.
-- Any official AHCCCS or DES county-to-office assignment artifact for Arizona county-local disability resources.
+- Any official Massachusetts DESE county-keyed export, selector, or district crosswalk.
+- Any official DDS county crosswalk or county-served locality export.
+- Any reviewed browser/cached locality capture from DESE or DDS that can be truthfully bridged to counties.
 
-## Next State Order After Arizona
+## Next State Order After Massachusetts
 
-1. Massachusetts
-2. Oregon
-3. Oklahoma
-4. Utah
-5. New Hampshire
-6. New Mexico
-7. New York
-8. North Carolina
-9. North Dakota
-10. Rhode Island
+1. Oregon
+2. Oklahoma
+3. Utah
+4. New Hampshire
+5. New Mexico
+6. New York
+7. North Carolina
+8. North Dakota
+9. Rhode Island
+10. South Carolina

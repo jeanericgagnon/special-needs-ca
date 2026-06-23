@@ -243,3 +243,6 @@
 
 ### A Stable Official Mapping Workbook Still Does Not Clear County-Grade Routing If It Lacks Contact Fields
 *   **Lesson:** If an official workbook is live and stable, inspect its actual table headers before treating it as a recovered routing export. Maine DOE’s SAU workbook proved municipality-to-organization mapping, but it carried no county, phone, email, or special-education contact fields, so county-grade routing still depended on the broken contact-search/export lane.
+
+### A Live Official School Finder That Only Accepts Address, City, Or Town Still Does Not Clear County-Grade Routing
+*   **Lesson:** If an official education finder is live but its contract is only address/city/town based and exposes no county field or export lane, do not promote it into county-grade routing. Massachusetts `get_closest_orgs.aspx` stayed public and local-looking, but it still had zero county labels and no export path, so it could not replace a missing county-to-district contract.

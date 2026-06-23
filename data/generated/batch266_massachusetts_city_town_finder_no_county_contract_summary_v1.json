@@ -1,0 +1,10 @@
+{
+  "batch": "batch266_massachusetts_city_town_finder_no_county_contract_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "live_school_finder_url": "https://profiles.doe.mass.edu/search/get_closest_orgs.aspx",
+  "education_blocker_code": "exact_dese_hidden_postback_replay_and_live_city_town_finder_still_do_not_expose_county_grade_local_rows",
+  "school_finder_contract": "address_city_town_only_no_county_no_export"
+}
