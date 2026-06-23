@@ -8,6 +8,7 @@
 
 ## Outcome
 
+- Confirmed the exact DHHS Public Assistance Offices leaf is live but only hands off to the locator and still exposes no county assignment contract.
 - Confirmed the public FeatureServer root exposes no tables.
 - Confirmed the office schema is contact-only and contains no service-area or county-coverage fields.
 - Confirmed USER_County values are single-county office rows only, not implicit service-area strings.

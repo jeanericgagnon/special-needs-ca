@@ -28,8 +28,8 @@ const OUTPUTS = {
 const PRIMARY_GAP_REASON = 'official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields';
 const FAILURE_CODE = 'official_public_office_service_root_has_no_tables_no_relationships_and_only_37_distinct_counties';
 const NEXT_ACTION = 'hold_blocked_until_official_service_area_table_or_county_assignment_artifact_exists';
-const STATUS_REASON = 'Reviewed 2026-06-23 the live official Nebraska office ExperienceBuilder stack to the schema level. The public app config still resolves only to the same office and county layers, the FeatureServer root reports `tables: []`, both public layers have empty relationship arrays, and the office schema contains only address/contact fields such as USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, USER_Scanning, and USER_Phone. There are still only 42 office rows and 37 distinct USER_County values for 93 counties, with no service-area, assigned-counties, region, or coverage fields. Nebraska therefore still lacks any public county-to-office assignment contract.';
-const EVIDENCE = 'Reviewed 2026-06-23 the official Nebraska Public Office Location ExperienceBuilder config, FeatureServer root, office layer schema, and bounded office-row sample directly. The public app data at https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json is open and still exposes only three data sources: the shared web map plus two derived feature layers. The service root at https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson reports exactly two layers, `tables: []`, and no extra public assignment table. Layer 0 still exposes only office contact fields like USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, USER_Scanning, and USER_Phone; it has no service-area or coverage fields, no multi-county USER_County values, and only 37 distinct counties across 42 office rows. Layer 1 remains only county geometry and identifier fields. So the official Nebraska county-local office stack is now final-blocked on missing public county-assignment data, not on an unresolved ArcGIS-discovery question.';
+const STATUS_REASON = 'Reviewed 2026-06-23 the live official Nebraska county-local office lane both on the DHHS content host and inside the public ExperienceBuilder stack. The exact first-party leaf at `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is live and now proves the public office lane exists, but its body only preserves a temporary Scottsbluff closing notice plus a `View the Nebraska Public Office Location Lookup` handoff and no county-to-office table, county list, or county assignment text. The public app config still resolves only to the same office and county layers, the FeatureServer root reports `tables: []`, both public layers have empty relationship arrays, and the office schema contains only address/contact fields such as USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, USER_Scanning, and USER_Phone. There are still only 42 office rows and 37 distinct USER_County values for 93 counties, with no service-area, assigned-counties, region, or coverage fields. Nebraska therefore still lacks any public county-to-office assignment contract.';
+const EVIDENCE = 'Reviewed 2026-06-23 the official Nebraska county-local office lane directly on both the DHHS content host and the public office locator stack. The exact leaf at https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx is live and titled `Public Assistance Offices`, but the body only preserves a temporary Scottsbluff closing notice plus `View the Nebraska Public Office Location Lookup`; it does not publish a county list, office table, or county assignment contract, and the `Local DHHS Offices` nav loops back to the same page. The public app data at https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json is open and still exposes only three data sources: the shared web map plus two derived feature layers. The service root at https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson reports exactly two layers, `tables: []`, and no extra public assignment table. Layer 0 still exposes only office contact fields like USER_Address_1, USER_City, USER_County, USER_Tel, USER_Toll_Free_Line, USER_Hours, USER_Computer, USER_Scanning, and USER_Phone; it has no service-area or coverage fields, no multi-county USER_County values, and only 37 distinct counties across 42 office rows. Layer 1 remains only county geometry and identifier fields. So the official Nebraska county-local office stack is now final-blocked on missing public county-assignment data, not on an unresolved ArcGIS-discovery question.';
 
 const LESSON_HEADING = '### A Public FeatureServer With Tables Empty And Contact-Only Schema Is A Final Local-Office Blocker';
 const LESSON_BODY = '*   **Lesson:** If the public ArcGIS service root reports `tables: []` and the office layer schema contains only contact fields plus one county field, stop hunting for a hidden county-assignment join. Nebraska’s DHHS office stack was fully inspectable and still had no service-area fields, no related tables, and only 37 distinct counties across 42 office rows.';
@@ -93,7 +93,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '- Nebraska remains BLOCKED and index_safe=false.',
     '- district_or_county_education_routing is still verified_county_grade through the live official NDE county-selectable directory host.',
-    '- county_local_disability_resources is now final-blocked more tightly: the public FeatureServer root exposes no tables, both layers have empty relationships, and the office schema has no service-area or coverage fields to bridge the missing counties.',
+    '- county_local_disability_resources is now final-blocked more tightly: the exact DHHS Public Assistance Offices leaf is live but only hands off to the locator, and the public FeatureServer root still exposes no tables, no relationships, and no service-area fields to bridge the missing counties.',
   ].join('\n') + '\n';
 }
 
@@ -126,8 +126,18 @@ export function generateBatch257NebraskaOfficeSchemaFinalBlockerV1() {
           blocker_code: FAILURE_CODE,
           blocker_evidence: EVIDENCE,
           query_basis: 'Reviewed 2026-06-23 the official Nebraska ExperienceBuilder app data, FeatureServer root, office layer schema, distinct county coverage query, and bounded office-row samples.',
-          sample_count: 4,
+          sample_count: 5,
           samples: [
+            {
+              sample_name: 'Nebraska Public Assistance Offices leaf',
+              source_url: 'https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx',
+              final_url: 'https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx',
+              verification_status: 'blocked',
+              source_type: 'official_office_leaf_without_county_assignment_contract',
+              source_table: 'batch257_nebraska_office_schema_final_blocker',
+              fetched_at: '2026-06-23T00:00:00.000Z',
+              evidence_snippet: 'The exact first-party Public Assistance Offices page is live, but it only preserves a Scottsbluff closing notice and a `View the Nebraska Public Office Location Lookup` handoff with no county list or county-to-office table.',
+            },
             {
               sample_name: 'Nebraska office app config',
               source_url: 'https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json',
@@ -246,6 +256,7 @@ export function generateBatch257NebraskaOfficeSchemaFinalBlockerV1() {
     '',
     '## Outcome',
     '',
+    '- Confirmed the exact DHHS Public Assistance Offices leaf is live but only hands off to the locator and still exposes no county assignment contract.',
     '- Confirmed the public FeatureServer root exposes no tables.',
     '- Confirmed the office schema is contact-only and contains no service-area or county-coverage fields.',
     '- Confirmed USER_County values are single-county office rows only, not implicit service-area strings.',

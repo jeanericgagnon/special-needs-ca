@@ -40,46 +40,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Kansas
+## Current Focus State: Nebraska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is still the only Kansas critical blocker. Kansas now has reviewed district-owned special-education leaves for 9 of 105 counties, but export-backed county-grade education routing is still incomplete across the statewide packet, so Kansas remains BLOCKED and not index-safe.
+`county_local_disability_resources` is the only remaining Nebraska critical blocker. The exact Nebraska DHHS `Public Assistance Offices` leaf is live, but it only preserves a Scottsbluff closing notice plus a handoff into the public office locator. The reviewed public ArcGIS stack still exposes only office contact rows and county geometry with no service-area fields, no related tables, and no county-to-office assignment contract, so Nebraska remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- More exact district-owned or affiliated-cooperative school-age special-education routing leaves on official Kansas district or cooperative hosts.
-- Role-pure local routing proof for counties that still only have export-backed district roots, generic district pages, or cooperative leads without a school-age routing contract.
+- Any official Nebraska county-to-office assignment artifact outside or above the current locator stack.
+- A public DHHS county list, office table, PDF, CSV, ArcGIS table, service-area field, or related layer that explicitly bridges all 93 counties to office coverage.
+- A reviewed official successor page or data source that does more than point back into the same 42-office / 37-county locator.
 
 ### Useful Official URLs Already Tried
 
-- [Kansas Educational Directory Reports](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
-- [Leavenworth USD 453 Special Education](https://www.usd453.org/district-departments/special-education)
-- [Manhattan-Ogden USD 383 About Special Education](https://www.usd383.org/32689_3)
-- [Manhattan-Ogden USD 383 Developmental Concerns & Special Education](https://www.usd383.org/34871_3)
-- [Salina USD 305 site map](https://www.usd305.com/site-map)
-- [Salina USD 305 Administrative & Student Support](https://www.usd305.com/departments/administrative-student-support)
-- [CKCIE home](https://www.305ckcie.com/)
-- [CKCIE Departments](https://www.305ckcie.com/departments)
-- [CKCIE Early Childhood Special Education](https://www.305ckcie.com/departments/early-childhood-special-education)
-- [Wichita USD 259 site map](https://www.usd259.org/site-map)
-- [Wichita USD 259 special programs page](https://www.usd259.org/schools23/special-programs-and-schools)
+- [Nebraska Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
+- [Nebraska Economic Assistance](https://dhhs.ne.gov/Pages/Economic-Assistance.aspx)
+- [Nebraska DHHS root](https://dhhs.ne.gov/)
+- [Nebraska office ExperienceBuilder app](https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457)
+- [Nebraska office app config](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
+- [Nebraska office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
+- [Nebraska office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
+- [Nebraska office distinct-county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
 
 ### Top Remaining Source-Scouting Targets
 
-- Exact district-owned special-education or student-services leaves for unresolved export-backed Kansas district domains.
-- Cooperative or interlocal special-education pages that preserve school-age routing, not just early-childhood scope.
-- Any official Kansas district or cooperative local routing contract that can convert remaining generic district roots into county clears.
+- Any official DHHS county-office PDF, CSV, or HTML table that assigns counties to offices.
+- Any public ArcGIS related table, service-area layer, or export on the same Nebraska office service family that was not exposed in the current root/layer schema.
+- Any exact Nebraska official page that names counties served by each public assistance office rather than only linking to the locator.
 
-## Next State Order After Kansas
+## Next State Order After Nebraska
 
-1. Nebraska
-2. Nevada
-3. Florida
-4. Alaska
-5. South Carolina
-6. North Carolina
-7. New York
-8. Oklahoma
-9. Oregon
-10. Ohio
+1. Nevada
+2. Florida
+3. Alaska
+4. South Carolina
+5. North Carolina
+6. New York
+7. Oklahoma
+8. Oregon
+9. Ohio
+10. Minnesota

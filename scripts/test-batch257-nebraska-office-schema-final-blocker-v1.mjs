@@ -39,18 +39,23 @@ assert.equal(summary.primary_gap_reason, 'official_public_office_service_root_ha
 
 const gap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(gap.family_status, 'blocked_public_office_service_root_without_assignment_contract');
+assert.match(gap.status_reason, /Public-Assistance-Offices\.aspx/i);
+assert.match(gap.status_reason, /View the Nebraska Public Office Location Lookup/i);
 assert.match(gap.status_reason, /tables: \[\]/i);
 assert.match(gap.status_reason, /no service-area, assigned-counties, region, or coverage fields/i);
 
 const failure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(failure.failure_code, 'official_public_office_service_root_has_no_tables_no_relationships_and_only_37_distinct_counties');
+assert.match(failure.evidence, /Public Assistance Offices/);
+assert.match(failure.evidence, /Local DHHS Offices/);
 assert.match(failure.evidence, /FeatureServer\?f=pjson/);
 assert.match(failure.evidence, /tables: \[\]/);
 assert.match(failure.evidence, /USER_Address_1, USER_City, USER_County/);
 
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(verified.family_status, 'blocked_public_office_service_root_without_assignment_contract');
-assert.equal(verified.sample_count, 4);
+assert.equal(verified.sample_count, 5);
+assert.ok(verified.samples.some((sample) => sample.sample_name === 'Nebraska Public Assistance Offices leaf'));
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Nebraska FeatureServer root'));
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Nebraska office feature layer schema'));
 
@@ -69,7 +74,7 @@ assert.equal(packet.current_problem_metrics.distinctOfficeCounties, 37);
 assert.equal(batchSummary.service_root_tables_present, false);
 assert.equal(batchSummary.office_schema_has_service_area_fields, false);
 assert.equal(batchSummary.office_layer_has_multi_county_values, false);
-assert.ok(report.includes('county_local_disability_resources is now final-blocked more tightly'));
+assert.ok(report.includes('exact DHHS Public Assistance Offices leaf is live but only hands off to the locator'));
 assert.ok(lessons.includes('### A Public FeatureServer With Tables Empty And Contact-Only Schema Is A Final Local-Office Blocker'));
 
 console.log('test-batch257-nebraska-office-schema-final-blocker-v1: ok');

@@ -8,5 +8,5 @@
   "office_schema_has_service_area_fields": false,
   "office_layer_has_multi_county_values": false,
   "distinct_office_counties": 37,
-  "lessons_updated": true
+  "lessons_updated": false
 }
