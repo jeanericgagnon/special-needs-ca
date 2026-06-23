@@ -41,7 +41,7 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.disabilityrightsaz.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.azahcccs.gov
-- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract; samples=3; first=https://www.azahcccs.gov/members/ALTCSlocations.html
+- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract; samples=3; first=https://des.az.gov/
 
 ## Next actions
 

@@ -26,7 +26,7 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'arizona-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP_REASON = 'three_public_district_domains_sitemap_exhausted_and_des_county_lane_still_lacks_county_office_contract';
+const PRIMARY_GAP_REASON = 'three_public_district_domains_sitemap_exhausted_and_altcs_office_cards_still_lack_county_assignments';
 
 const EDUCATION = {
   familyStatus: 'blocked_three_reviewed_public_domains_sitemap_exhausted_without_role_leafs',
@@ -90,12 +90,12 @@ const EDUCATION = {
 };
 
 const COUNTY = {
-  familyStatus: 'blocked_des_challenge_plus_single_yuma_altcs_html_without_county_contract',
-  failureCode: 'des_roots_still_challenged_and_ahcccs_altcs_html_only_exposes_single_yuma_office',
-  statusReason: 'Reviewed 2026-06-23 the live Arizona county-local fallback pages more tightly. The DES root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap lanes are still Cloudflare 403 shells. The accessible AHCCCS fallback lane is public, but it still fails the county contract: ALTCS Offices, AHCCCS Contacts, and ALTCS member-resources pages are statewide pages, and the raw ALTCS Offices HTML only exposes a single visible local office card for Yuma with no statewide county-to-office table or repeatable county listing.',
-  evidence: 'Reviewed 2026-06-23 bounded Arizona county-local fallback pages after the earlier DES challenge findings. The DES host family remains challenge-blocked on the known office-locator and benefits roots. The accessible AHCCCS fallback pages are live, but they still do not produce county-grade office routing: https://www.azahcccs.gov/members/ALTCSlocations.html returned HTTP 200 and preserved statewide ALTCS office copy plus a single visible office block for `Yuma ALTCS Office, 1800 East Palo Verde Street, Yuma, Arizona 85364`, but no full county-to-office table or repeatable county listing appeared in raw HTML. https://www.azahcccs.gov/shared/AHCCCScontacts.html and https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html also returned HTTP 200, but they only preserved statewide contact routes and program guidance rather than county-specific office assignments. Arizona therefore still lacks a reviewable official county-to-office routing contract.',
-  nextAction: 'hold_blocked_until_des_clears_or_ahcccs_publishes_county_to_office_contract',
-  sampleCount: 4,
+  familyStatus: 'blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract',
+  failureCode: 'des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract',
+  statusReason: 'Reviewed 2026-06-23 the live Arizona county-local fallback pages more tightly. The DES root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap lanes are still Cloudflare 403 shells. The accessible AHCCCS fallback lane is public and preserves seven named ALTCS office cards in raw HTML for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma, and the official ALTCS county map PDF is partly parseable for county names, but neither artifact provides a county-to-office table or county assignment contract. Arizona therefore still lacks county-grade official office routing.',
+  evidence: 'Reviewed 2026-06-23 bounded Arizona county-local fallback pages after the earlier DES challenge findings and the official AHCCCS PDF lane. The DES host family remains challenge-blocked on the known office-locator and benefits roots. The accessible AHCCCS fallback lane is live and stronger than previously recorded: https://www.azahcccs.gov/members/ALTCSlocations.html returned HTTP 200 and its raw HTML preserved seven named ALTCS office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma. The official ALTCS County Map PDF is also partially parseable and preserves Arizona county names, but it still does not attach those counties to office addresses, phones, or a repeatable county-to-office assignment contract. https://www.azahcccs.gov/shared/AHCCCScontacts.html and https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html remain statewide contact and program-guidance leaves rather than county-specific office assignments. Arizona therefore still lacks a reviewable official county-to-office routing contract.',
+  nextAction: 'hold_blocked_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts',
+  sampleCount: 3,
   samples: [
     {
       sample_name: 'Arizona DES root family',
@@ -115,7 +115,7 @@ const COUNTY = {
       source_type: 'official_statewide_altcs_page_without_county_contract',
       source_table: 'batch234_arizona_final_blocker_refinement',
       fetched_at: '2026-06-23T00:00:00.000Z',
-      evidence_snippet: 'The raw HTML preserves a single visible Yuma ALTCS office card, but no statewide county-to-office table or repeatable county listing appears in the public HTML.',
+      evidence_snippet: 'The raw HTML preserves seven named ALTCS office cards, but no statewide county-to-office table or repeatable county listing appears in the public HTML.',
     },
     {
       sample_name: 'AHCCCS Contacts page',
@@ -127,20 +127,10 @@ const COUNTY = {
       fetched_at: '2026-06-23T00:00:00.000Z',
       evidence_snippet: 'The contacts page preserves statewide phone, HEAplus, and issue-reporting routes, but no county office list, county table, or county-specific assignment fields.',
     },
-    {
-      sample_name: 'AHCCCS ALTCS member resources page',
-      source_url: 'https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html',
-      final_url: 'https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html',
-      verification_status: 'blocked',
-      source_type: 'official_statewide_altcs_member_guidance',
-      source_table: 'batch234_arizona_final_blocker_refinement',
-      fetched_at: '2026-06-23T00:00:00.000Z',
-      evidence_snippet: 'The ALTCS member-resources page is public but remains statewide program guidance; it does not expose county-local office assignments, county names, or local office contacts.',
-    },
   ],
 };
 
-const LESSON = '*   **Lesson:** If a public district or office host is live, spend one bounded robots/sitemap or raw-HTML pass before guessing more leaves. Arizona\'s last three district domains exhausted into generic student pages and handbooks, and AHCCCS\'s public ALTCS page exposed only one visible Yuma office in raw HTML, so neither family could be upgraded without a real role-bearing county contract.';
+const LESSON = '*   **Lesson:** If a public district or office host is live, spend one bounded robots/sitemap or raw-HTML pass before guessing more leaves. Arizona\'s last three district domains exhausted into generic student pages and handbooks, and AHCCCS\'s public ALTCS lane proved seven office cards plus a partial county map but still no county-to-office contract, so neither family could be upgraded without a real local assignment surface.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -310,8 +300,9 @@ export function generateBatch234ArizonaFinalBlockerRefinementV1() {
     ...countyPacket,
     current_problem_metrics: {
       ...(countyPacket.current_problem_metrics || {}),
-      ahcccsAccessibleFallbackPages: 3,
-      altcsRawHtmlVisibleOfficeCount: 1,
+      ahcccsAccessibleFallbackPages: 4,
+      altcsRawHtmlVisibleOfficeCount: 7,
+      partialCountyMapArtifacts: 1,
     },
   };
 
@@ -340,7 +331,7 @@ export function generateBatch234ArizonaFinalBlockerRefinementV1() {
     index_safe: false,
     refined_families: ['district_or_county_education_routing', 'county_local_disability_resources'],
     unresolved_public_district_domains: 3,
-    ahcccs_visible_local_offices_in_raw_html: 1,
+    ahcccs_visible_local_offices_in_raw_html: 7,
     lesson_added: true,
   };
 
@@ -356,7 +347,7 @@ export function generateBatch234ArizonaFinalBlockerRefinementV1() {
     '## What changed',
     '',
     '- Tightened the education blocker from a generic public-domain claim to an exact robots/sitemap exhaustion result on three remaining district-owned public domains.',
-    '- Tightened the county-local blocker from a generic AHCCCS fallback claim to the exact live result: DES still challenge-blocked, while public AHCCCS raw HTML only exposed one visible Yuma ALTCS office and no statewide county-to-office contract.',
+    '- Tightened the county-local blocker from a generic AHCCCS fallback claim to the exact live result: DES still challenge-blocked, while public AHCCCS evidence now proves seven named ALTCS office cards plus a partially parseable county map but still no statewide county-to-office contract.',
   ].join('\n') + '\n';
 
   fs.writeFileSync(OUTPUTS.batchReport, batchReport);
