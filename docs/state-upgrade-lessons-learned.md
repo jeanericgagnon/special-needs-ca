@@ -770,3 +770,6 @@ This document captures key technical, data modeling, and procedural lessons lear
 
 ### Embedded Official Front-Ends Can Resolve To The Wrong Product Entirely
 *   **Lesson:** If a live official directory landing page promises searchable exports, open the exact linked front-end once in browser mode before assuming it is just a JS shell. Minnesota's MDE-ORG root looked promising, but its linked child loaded as an unrelated slide-style course shell, which is a different blocker than a hidden directory app.
+
+### Identical Public SPA Shells Should Collapse To One Final Blocker
+*   **Lesson:** If two first-party public portal URLs return the same shell HTML and the same config only points partner services to an authenticated root, collapse them into one final blocker instead of reopening both routes. Florida `Public/CPCPS` and `Help/HCINT` were the same MyACCESS shell, and appconfig still routed partner search only through `/accountmanagement`.

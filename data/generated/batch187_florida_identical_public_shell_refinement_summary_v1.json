@@ -1,0 +1,12 @@
+{
+  "batch": "batch_187_florida_identical_public_shell_refinement_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "public_cpcps_checked": true,
+  "public_help_checked": true,
+  "identical_public_shells": true,
+  "partner_services_root": "/accountmanagement",
+  "lessons_updated": false
+}
