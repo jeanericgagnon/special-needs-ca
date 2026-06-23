@@ -195,3 +195,6 @@
 
 ### Revalidate “Recovered” Postback Lanes With The Literal Submit Value
 *   **Lesson:** If an earlier state note says a postback lane recovered, rerun the exact named submit with its literal current button value before promoting the lane. Maine NEO still exposed `action:SAUExport`, but a fresh Bangor `OrgId=42` replay with `Export to Excel` continued to return HTTP 500 shell HTML.
+
+### Hidden-Field Bridges Need Fresh Replay Proof Before They Count As Results
+*   **Lesson:** If an official bridge URL only supplies hidden fields, rerun that exact hidden payload before assuming the downstream result surface still materializes data. Massachusetts DESE `search_link.aspx` still existed, but the fresh bounded replay now only returned the generic `Profiles Search` shell instead of local district rows.

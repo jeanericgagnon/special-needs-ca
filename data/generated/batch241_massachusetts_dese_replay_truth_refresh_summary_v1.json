@@ -1,0 +1,10 @@
+{
+  "batch": "batch_241_massachusetts_dese_replay_truth_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "hidden_bridge_still_exists": true,
+  "hidden_bridge_replay_materializes_local_rows": false,
+  "lessons_updated": false
+}
