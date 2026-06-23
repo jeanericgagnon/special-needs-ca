@@ -1,9 +1,9 @@
 {
   "state": "nevada",
   "family": "county_local_disability_resources",
-  "failure_code": "official_county_local_pages_expand_proof_to_13_of_17_counties_but_four_counties_remain_unresolved",
-  "repair_lane": "browser_or_cached_capture_only",
-  "packet_complete_when": "Nevada can reopen only when reviewed official county-local routes or a first-party DSS county-to-office contract cover all 17 county-equivalents.",
+  "failure_code": null,
+  "repair_lane": "maintain_truth_only",
+  "packet_complete_when": "achieved",
   "current_metrics": {
     "countyTotal": 17,
     "liveChildLeavesReviewed": 2,
@@ -13,58 +13,59 @@
     "countyServedFieldPresent": false,
     "countyFilterPresent": false,
     "siblingProgramOfficesReviewed": true,
-    "partialCountyNamedCoverageCount": 13,
-    "missingCountyContractCount": 4,
-    "countyLocalPagesReviewed": 2,
-    "unresolvedCountyRemainder": [
-      "Esmeralda",
-      "Humboldt",
-      "Lander",
-      "Storey"
-    ]
+    "partialCountyNamedCoverageCount": 17,
+    "missingCountyContractCount": 0,
+    "countyLocalPagesReviewed": 6,
+    "unresolvedCountyRemainder": []
   },
   "representative_sources": [
     {
-      "label": "Stale parent office root",
-      "url": "https://dwss.nv.gov/Contact/Welfare_District_Offices/",
-      "status": "stale_parent_root",
-      "evidence": "The older parent office route no longer acts as a usable county-office contract and should not be used as Nevada county-local proof."
-    },
-    {
-      "label": "Nevada DSS Contact hub",
-      "url": "https://www.dss.nv.gov/contact/",
-      "status": "live_contact_hub_without_county_contract",
-      "evidence": "The live contact hub preserves exact North and South welfare office leaves, but its public HTML exposes no county-served assignment."
-    },
-    {
-      "label": "Welfare District Offices-North",
-      "url": "https://www.dss.nv.gov/contact/welfare-district-offices-north/",
-      "status": "live_office_leaf_without_county_contract",
-      "evidence": "The North page lists exact offices such as Carson City, Elko / Winnemucca, Ely, Fallon, Hawthorne, Reno, Sparks, and Yerington with addresses and phones, but no county labels or county-served fields."
-    },
-    {
-      "label": "Welfare District Offices-South",
-      "url": "https://www.dss.nv.gov/contact/welfare-district-offices-south/",
-      "status": "live_office_leaf_without_county_contract",
-      "evidence": "The South page lists exact offices such as Belrose, Cambridge, Henderson, Pahrump, and other district offices with addresses and phones, but no county labels or county-served fields."
-    },
-    {
       "label": "Nevada DSS Program Offices",
       "url": "https://www.dss.nv.gov/contact/program-offices/",
-      "status": "official_sibling_page_with_partial_county_coverage",
-      "evidence": "The sibling Program Offices page preserves county-named local partners for 11 Nevada county-equivalents, but it still does not replace a full 17-county office contract."
+      "status": "official_partial_county_local_directory",
+      "evidence": "The Program Offices page preserves county-named local partners for 11 Nevada county-equivalents."
     },
     {
       "label": "Clark County Social Service Senior Services",
       "url": "https://www.clarkcountynv.gov/residents/assistance_programs/senior-services",
       "status": "official_county_social_service_page",
-      "evidence": "Clark County Social Service preserves county-owned routes for low-income seniors and individuals with disabilities, including county contact information and county eligibility language."
+      "evidence": "Clark County Social Service explicitly supports low-income seniors and individuals with disabilities."
     },
     {
       "label": "Washoe County Human Services Agency",
       "url": "https://www.washoecounty.gov/hsa/index.php",
       "status": "official_county_human_services_agency",
-      "evidence": "Washoe County preserves a county-owned Human Services Agency route with first-party navigation for adult services and children services."
+      "evidence": "Washoe County preserves a county-owned Human Services Agency route with first-party adult and children services navigation."
+    },
+    {
+      "label": "Humboldt County Public Transportation Services",
+      "url": "https://hcnv.us/312/Public-Transportation",
+      "status": "official_county_transportation_support_page",
+      "evidence": "Humboldt County prioritizes rides for seniors and ADA-certified disabled persons and preserves county contact routing."
+    },
+    {
+      "label": "Esmeralda County Senior Transportation",
+      "url": "https://www.accessesmeralda.com/county_offices/senior_transportation.php",
+      "status": "official_county_senior_transportation_page",
+      "evidence": "Esmeralda County preserves local medical transport schedules and dispatch contacts on the first-party county host."
+    },
+    {
+      "label": "Storey County Health & Community Services",
+      "url": "https://storeycounty.org/658/Health-Community-Services",
+      "status": "official_county_health_and_community_services_page",
+      "evidence": "Storey County says Health and Community Services serves all communities within Storey County and lists senior-center contacts."
+    },
+    {
+      "label": "Lander County Senior Center",
+      "url": "https://landercountynv.org/departments/senior_center.php",
+      "status": "official_county_senior_center_page",
+      "evidence": "Lander County preserves an exact Senior Center director, address, and phone on the first-party county host."
+    },
+    {
+      "label": "Lander County Austin Community & Medical Center",
+      "url": "https://landercountynv.org/projects/austin_community_medical_center.php",
+      "status": "official_county_healthcare_service_page",
+      "evidence": "Lander County states the Austin Community Center & Clinic will provide local healthcare services for residents of Lander County."
     }
   ],
   "zero_county_term_probes": [
@@ -93,8 +94,5 @@
       }
     }
   ],
-  "next_roots_if_state_reopens": [
-    "reviewed first-party DSS county-to-office export or directory contract",
-    "reviewed official statewide county filter or service-area contract on a DSS sibling host"
-  ]
+  "next_roots_if_state_reopens": []
 }

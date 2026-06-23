@@ -1,0 +1,31 @@
+{
+  "batch": "batch271_nevada_county_local_completion_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nevada",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "reviewed_county_local_coverage_count": 17,
+  "newly_cleared_counties": [
+    "Esmeralda",
+    "Humboldt",
+    "Lander",
+    "Storey"
+  ],
+  "maintained_cleared_counties": [
+    "Carson City",
+    "Churchill",
+    "Clark",
+    "Douglas",
+    "Elko",
+    "Eureka",
+    "Lincoln",
+    "Lyon",
+    "Mineral",
+    "Nye",
+    "Pershing",
+    "Washoe",
+    "White Pine"
+  ],
+  "remaining_blockers": [],
+  "lesson_added": false
+}

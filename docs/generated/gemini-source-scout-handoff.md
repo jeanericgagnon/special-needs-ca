@@ -6,7 +6,7 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, New Jersey, Pennsylvania, Texas
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, Pennsylvania, Texas
 
 ## Current Blocked States
 
@@ -19,7 +19,6 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
 - Nebraska: `official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields`
-- Nevada: `official_county_local_pages_now_cover_13_of_17_counties_but_four_counties_lack_reviewed_local_route`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - New York: `official_nysed_boces_pages_cover_non_nyc_counties_but_no_reviewed_nyc_borough_route_and_no_public_ldss_replacement`
@@ -40,44 +39,51 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Florida
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Nebraska critical blocker. The exact Nebraska DHHS `Public Assistance Offices` leaf is live, but it only preserves a Scottsbluff closing notice plus a handoff into the public office locator. The reviewed public ArcGIS stack still exposes only office contact rows and county geometry with no service-area fields, no related tables, and no county-to-office assignment contract, so Nebraska remains BLOCKED and not index-safe.
+`county_local_disability_resources` is the only remaining Florida critical blocker. The exact official `food-cash-and-medical` leaf now advertises `Find Local Offices`, but it still routes into a partial 34-county Family Resource Center storefront lane, the public circuit leaves in the sitemap still 404, and the anonymous MyACCESS county-result endpoints still return `401 Unauthorized`, so Florida remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official Nebraska county-to-office assignment artifact outside or above the current locator stack.
-- A public DHHS county list, office table, PDF, CSV, ArcGIS table, service-area field, or related layer that explicitly bridges all 93 counties to office coverage.
-- A reviewed official successor page or data source that does more than point back into the same 42-office / 37-county locator.
+- Any first-party Florida county-complete local-offices contract that publicly covers all 67 counties.
+- A reviewed anonymous MyACCESS county-result surface that returns public county-level local-office results without authentication.
+- A public official county-office CSV, HTML table, sitemap child family, or other exact first-party route that does more than point back to the partial Family Resource Center storefront lane.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [Nebraska Economic Assistance](https://dhhs.ne.gov/Pages/Economic-Assistance.aspx)
-- [Nebraska DHHS root](https://dhhs.ne.gov/)
-- [Nebraska office ExperienceBuilder app](https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457)
-- [Nebraska office app config](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
-- [Nebraska office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
-- [Nebraska office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
-- [Nebraska office distinct-county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
+- [Florida DCF sitemap](https://www.myflfamilies.com/sitemap.xml)
+- [Florida DCF contact hub](https://www.myflfamilies.com/contact-us)
+- [Florida DCF contacts.csv](https://www.myflfamilies.com/contact-us/contacts.csv)
+- [Florida public assistance root](https://www.myflfamilies.com/services/public-assistance)
+- [Florida applying-for-assistance](https://www.myflfamilies.com/services/public-assistance/applying-for-assistance)
+- [Florida ESS FAQ](https://www.myflfamilies.com/services/public-assistance/economic-self-sufficiency-frequently-asked-questions/)
+- [Florida community resources](https://www.myflfamilies.com/services/public-assistance/additional-resources-and-services/community/)
+- [Florida food-cash-and-medical](https://www.myflfamilies.com/food-cash-and-medical)
+- [Florida Family Resource Center](https://familyresourcecenter.myflfamilies.com/)
+- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
+- [Florida MyACCESS Public/CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
+- [Florida MyACCESS Help/HCINT](https://myaccess.myflfamilies.com/Help/HCINT)
+- [Florida MyACCESS app config](https://myaccess.myflfamilies.com/config/appconfig.js)
+- [Florida MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
+- [Florida MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DHHS county-office PDF, CSV, or HTML table that assigns counties to offices.
-- Any public ArcGIS related table, service-area layer, or export on the same Nebraska office service family that was not exposed in the current root/layer schema.
-- Any exact Nebraska official page that names counties served by each public assistance office rather than only linking to the locator.
+- Any first-party Florida DCF or MyACCESS public local-office export that covers the 33 counties missing from the public Family Resource Center lane.
+- Any live official `contact-us/circuit-*` successor children or replacement county-local leaves that no longer 404 and actually preserve county office routing.
+- Any anonymous public county-result endpoint or downloadable local-office dataset on the current `myflfamilies.com` or `myaccess.myflfamilies.com` stack.
 
-## Next State Order After Nebraska
+## Next State Order After Florida
 
-1. Nevada
-2. Florida
-3. Alaska
-4. South Carolina
-5. North Carolina
-6. New York
-7. Oklahoma
-8. Oregon
-9. Ohio
-10. Minnesota
+1. Alaska
+2. South Carolina
+3. North Carolina
+4. New York
+5. Oklahoma
+6. Oregon
+7. Ohio
+8. Minnesota
+9. Maine
+10. Idaho
