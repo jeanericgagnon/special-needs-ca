@@ -2650,8 +2650,8 @@
         "county_local_disability_resources": "blocked_live_office_finder_shell_without_public_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "live_odhs_office_finder_is_only_a_sharepoint_leaflet_shell_with_no_public_county_extract_or_query_contract",
+      "packetBatch": "batch_304_oregon_office_finder_component_finality_v1",
+      "packetPrimaryGapReason": "live_odhs_office_finder_is_only_a_custom_component_shell_with_no_public_county_extract_query_contract_or_api_surface",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

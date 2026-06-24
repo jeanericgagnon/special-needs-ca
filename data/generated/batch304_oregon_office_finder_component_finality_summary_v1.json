@@ -1,0 +1,14 @@
+{
+  "batch": "batch_304_oregon_office_finder_component_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "oregon",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "liveSuccessorOfficeFinderVerified": true,
+  "customComponentShellVerified": true,
+  "countyQueryProbeChangedSurface": false,
+  "cityQueryProbeChangedSurface": false,
+  "serviceQueryProbeChangedSurface": false,
+  "apiLikeProbeChangedSurface": false,
+  "jsonLikeProbeChangedSurface": false
+}
