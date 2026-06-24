@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 18,
+    "authoredExactLeafCount": 20,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 18
+    "reviewedDistrictOwnedLeafCount": 20
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -161,6 +161,7 @@
   "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned or district-linked education-routing leaf from saved district leads or remains explicitly blocked where no district-owned local contract has been preserved; do not rely on the current live KSDE state export roots until the exact submit lane is reproducible again.",
   "reviewed_local_leaf_counties": [
     "atchison-ks",
+    "barton-ks",
     "butler-ks",
     "cowley-ks",
     "doniphan-ks",
@@ -173,6 +174,7 @@
     "leavenworth-ks",
     "lyon-ks",
     "nemaha-ks",
+    "reno-ks",
     "riley-ks",
     "saline-ks",
     "sedgwick-ks",
@@ -183,7 +185,6 @@
     "allen-ks",
     "anderson-ks",
     "barber-ks",
-    "barton-ks",
     "bourbon-ks",
     "brown-ks",
     "chase-ks",
@@ -244,7 +245,6 @@
     "pottawatomie-ks",
     "pratt-ks",
     "rawlins-ks",
-    "reno-ks",
     "republic-ks",
     "rice-ks",
     "rooks-ks",

@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
-- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_18_counties`
+- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_20_counties`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
@@ -35,48 +35,45 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Utah
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the official Utah evidence has shifted again: `https://dhhs.utah.gov/contacts/` is publicly reviewable at HTTP 200, but it clearly acts only as a central contacts hub. The page routes community-service discovery to Utah 211, says users can find services by clicking on a county in the map below or using a search bar by type, and later explicitly says `Please visit specific division or program pages for local office information.` The surviving official local-office lane is still the DWS stack: `jobs.utah.gov/department/contact/index.html` still points to an `Office Map`, the redirected `jobs.utah.gov/office-search/` shell is still live, and that current shell now exposes the surviving public lookup rule directly because its footer input placeholder says `Zip Code or City` and its button only routes to `search/<zip-or-city>` or `map`. The public office API still returns office inventory rows, and the public services API still exposes only `All`, `USOR`, and `EC`. No public county endpoint or service-area field materializes on the same host. Utah therefore remains BLOCKED and not index-safe.
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 20/105 counties from preserved district-owned or district-linked local leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Kansas remains BLOCKED and not index-safe because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
 
 ### Exact Evidence Needed
 
-- Any public Utah successor directory, export, or leaf set that explicitly maps all 29 counties to local DWS, DHHS, or disability-resource offices.
-- Any reviewable Utah division or program page that actually materializes county-local office assignments instead of only central contact information.
-- Any public office API field or companion endpoint that adds `county`, `countiesServed`, or equivalent service-area assignments to the current Utah office inventory.
+- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
+- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
+- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
 
 ### Useful Official URLs Already Tried
 
-- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
-- [Utah DHHS Contacts](https://dhhs.utah.gov/contacts/)
-- [DHHS customer service contact form](https://dhhs.utah.gov/customer-service/customer-service-contact-form/)
-- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
-- [Legacy DWS office-search alias](https://jobs.utah.gov/jsp/officesearch/)
-- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
-- [Live DWS zip-coded detail route](https://jobs.utah.gov/office-search/search/84713)
-- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
-- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
-- [Missing county endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/counties)
-- [Missing search endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/search)
-- [Missing office-search endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/offices/search)
-- [Utah DHHS WordPress API root](https://dhhs.utah.gov/wp-json/)
+- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
+- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [Great Bend USD 428 BCSS Child Find](https://sites.google.com/usd428.net/bartoncountyss/child-find)
+- [Hutchinson Public Schools Special Education / Parental Rights folder](https://www.usd308.com/documents/resources/parent-resources/special-education/parental-rights/173274)
+- [Doniphan West USD 111 Special Education](https://www.usd111.org/o/dwes/page/special-education/)
+- [Marshall-Nemaha Special Education Co-op Early Childhood](https://www.usd115.org/o/mnesc/page/early-childhood/)
+- [Hays USD 489 Special Education folder](https://www.usd489.com/documents/about-usd-489/special-education/81796)
+- [Abilene Public Schools root](https://www.abileneschools.org/)
+- [Abilene Public Schools sitemap](https://www.abileneschools.org/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any public Utah successor leaf or export that materially maps counties to local offices rather than just publishing office inventory.
-- Any public companion API artifact that adds `county` or service-area assignments to the current DWS office inventory.
-- Any reviewable official Utah division/program office page that preserves local county or service-area coverage on the current DHHS host.
-## Next State Order After Utah
+- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
+- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or similar.
+- Additional district-owned document-folder or CMS routes like the Hays USD 489 and Hutchinson USD 308 recoveries, but only on already-preserved district domains.
+## Next State Order After Kansas
 
-1. Kansas
-2. Nebraska
-3. Nevada
-4. Florida
-5. Alaska
-6. South Carolina
-7. North Carolina
-8. New York
-9. Oklahoma
-10. Oregon
+1. Nebraska
+2. Florida
+3. Alaska
+4. New York
+5. Oklahoma
+6. Oregon
+7. Ohio
+8. Minnesota
+9. Maine
+10. Idaho
