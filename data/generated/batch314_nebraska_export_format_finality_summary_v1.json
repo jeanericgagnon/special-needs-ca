@@ -1,0 +1,18 @@
+{
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "official_public_office_feature_service_supports_export_formats_but_schema_and_distinct_county_values_still_expose_no_statewide_assignment_contract",
+  "supported_export_formats": [
+    "sqlite",
+    "filegdb",
+    "shapefile",
+    "csv",
+    "geojson"
+  ],
+  "distinct_county_values": 37,
+  "multi_county_strings_present": false,
+  "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published",
+  "lessons_updated": false
+}
