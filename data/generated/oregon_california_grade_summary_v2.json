@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract",
+  "primary_gap_reason": "live_odhs_office_finder_is_only_a_sharepoint_leaflet_shell_with_no_public_county_extract_or_query_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -41,13 +41,13 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "live_office_finder_root_without_county_extract",
-      "evidence": "Reviewed 2026-06-23 bounded live Oregon county-local checks. The old `https://dhhs.oregon.gov/locations` host now fails DNS resolution, but the live successor root `https://www.oregon.gov/odhs/pages/office-finder.aspx` returns HTTP 200 only as a generic `Find an Office` page with no preserved county list or office extract in static HTML. A bounded DB check also shows current Oregon county-office rows split between 61 DOI-backed planning rows and only 3 dead `dhhs.oregon.gov/locations` rows. No reviewed county-grade office contract is preserved on disk.",
-      "next_action": "hold_blocked_until_county_grade_office_contract_is_extracted_from_live_office_finder_or_county_owned_leaves"
+      "failure_code": "live_office_finder_shell_has_no_public_office_rows_county_list_or_search_contract",
+      "evidence": "Reviewed 2026-06-23 one bounded official Oregon county-local replacement lane on the live ODHS office-finder stack. The old `https://dhhs.oregon.gov/locations` host still fails DNS, and the current successor root `https://www.oregon.gov/odhs/pages/office-finder.aspx` is confirmed live on the official Oregon host. But the live surface still fails closed for county-grade routing: the page returns an ASP.NET SharePoint shell titled `Find an Office`, loads Leaflet and marker-cluster libraries, and preserves only generic help text such as `Look up ODHS offices near you and get contact information and directions. Choose the kind of service you need and find an office close to you.` Bounded query-string probes like `?county=Baker` and `?city=Salem` return the same generic page, the static HTML preserves no county list, office rows, or public result payload, `robots.txt` only confirms statewide SharePoint exclusions, the obvious sitemap and search surfaces return 404, and no public endpoint or export contract is exposed in the reviewed page source. A bounded DB check still shows Oregon county-office rows split between 61 DOI-backed planning rows and only 3 dead `dhhs.oregon.gov/locations` rows. Oregon therefore remains blocked because the live successor lane is real but still only a public app shell with no county-grade office extract.",
+      "next_action": "hold_blocked_until_live_odhs_office_finder_exposes_public_office_rows_or_county_owned_odhs_leaves_cover_all_36_counties"
     }
   ],
   "familyStatuses": {
     "district_or_county_education_routing": "verified_county_grade_official_directory_pdf",
-    "county_local_disability_resources": "blocked_live_office_finder_root_without_county_extract"
+    "county_local_disability_resources": "blocked_live_office_finder_shell_without_public_county_contract"
   }
 }

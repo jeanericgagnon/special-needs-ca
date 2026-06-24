@@ -1,0 +1,13 @@
+{
+  "state": "oregon",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 83,
+  "liveSuccessorOfficeFinderVerified": true,
+  "countyQueryProbeChangedSurface": false,
+  "cityQueryProbeChangedSurface": false,
+  "publicCountyListInHtml": false,
+  "publicSearchSurfaceFound": false,
+  "publicSitemapSurfaceFound": false,
+  "remaining_blocker_family_count": 1
+}

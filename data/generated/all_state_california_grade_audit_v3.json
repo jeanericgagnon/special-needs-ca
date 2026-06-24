@@ -2647,11 +2647,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_office_finder_root_without_county_extract"
+        "county_local_disability_resources": "blocked_live_office_finder_shell_without_public_county_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract",
+      "packetPrimaryGapReason": "live_odhs_office_finder_is_only_a_sharepoint_leaflet_shell_with_no_public_county_extract_or_query_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

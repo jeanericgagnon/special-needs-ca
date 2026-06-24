@@ -20,7 +20,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
-- New York remains blocked, but it is now blocked only on county-local routing: official NYSED BOCES pages plus the official NYC DOE CSE page now cover education across all 62 counties.
-- Oklahoma remains blocked, but the blocker is now narrowed to a live official Oklahoma Human Services office-map lane that only materializes 46 county-keyed locations and still lacks a full 77-county contract.
+- Oklahoma remains blocked on a live official office-map lane that still misses county-complete coverage.
+- Oregon remains blocked, but the blocker is now narrowed to a live official ODHS office-finder app shell that exposes no public county extract, search contract, or office result payload.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.

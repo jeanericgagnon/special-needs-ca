@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 36
-- primary_gap_reason: official_ode_county_searchable_school_directory_clears_education_but_live_office_finder_root_still_has_no_county_extract
+- primary_gap_reason: live_odhs_office_finder_is_only_a_sharepoint_leaflet_shell_with_no_public_county_extract_or_query_contract
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party Oregon Law Center evidence preserves statewide legal-aid identity and help scope)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_live_office_finder_root_without_county_extract (the live ODHS office-finder root exists, but static evidence still exposes no county list or office extract and current county rows remain DOI-backed or dead-host placeholders)
+- county_local_disability_resources: blocked_live_office_finder_shell_without_public_county_contract (the live ODHS office-finder is a real official successor lane, but its reviewed public page source still exposes no office rows, county list, or public result contract and the county-office rows on disk remain DOI-backed or dead-host placeholders)
 
 ## Failure ledger
 
-- county_local_disability_resources: live_office_finder_root_without_county_extract :: Reviewed 2026-06-23 bounded live Oregon county-local checks. The old `https://dhhs.oregon.gov/locations` host now fails DNS resolution, but the live successor root `https://www.oregon.gov/odhs/pages/office-finder.aspx` returns HTTP 200 only as a generic `Find an Office` page with no preserved county list or office extract in static HTML. A bounded DB check also shows current Oregon county-office rows split between 61 DOI-backed planning rows and only 3 dead `dhhs.oregon.gov/locations` rows. No reviewed county-grade office contract is preserved on disk.
+- county_local_disability_resources: live_office_finder_shell_has_no_public_office_rows_county_list_or_search_contract :: Reviewed 2026-06-23 one bounded official Oregon county-local replacement lane on the live ODHS office-finder stack. The old `https://dhhs.oregon.gov/locations` host still fails DNS, and the current successor root `https://www.oregon.gov/odhs/pages/office-finder.aspx` is confirmed live on the official Oregon host. But the live surface still fails closed for county-grade routing: the page returns an ASP.NET SharePoint shell titled `Find an Office`, loads Leaflet and marker-cluster libraries, and preserves only generic help text such as `Look up ODHS offices near you and get contact information and directions. Choose the kind of service you need and find an office close to you.` Bounded query-string probes like `?county=Baker` and `?city=Salem` return the same generic page, the static HTML preserves no county list, office rows, or public result payload, `robots.txt` only confirms statewide SharePoint exclusions, the obvious sitemap and search surfaces return 404, and no public endpoint or export contract is exposed in the reviewed page source. A bounded DB check still shows Oregon county-office rows split between 61 DOI-backed planning rows and only 3 dead `dhhs.oregon.gov/locations` rows. Oregon therefore remains blocked because the live successor lane is real but still only a public app shell with no county-grade office extract.
 
 ## Verified source samples
 
@@ -40,15 +40,23 @@
 - legal_aid: verified_state_grade; samples=1; first=https://oregonlawcenter.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_live_office_finder_root_without_county_extract; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- county_local_disability_resources: blocked_live_office_finder_shell_without_public_county_contract; samples=4; first=https://www.oregon.gov/odhs/pages/office-finder.aspx
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_county_grade_office_contract_is_extracted_from_live_office_finder_or_county_owned_leaves
+- [critical] county_local_disability_resources: hold_blocked_until_live_odhs_office_finder_exposes_public_office_rows_or_county_owned_odhs_leaves_cover_all_36_counties
+
+## County-local refinement
+
+- The old `dhhs.oregon.gov/locations` host is dead, but Oregon now has one live official successor lane on `https://www.oregon.gov/odhs/pages/office-finder.aspx`.
+- That page is a real official ODHS office-finder surface, but bounded raw review only preserves a SharePoint/Leaflet app shell plus generic help text.
+- Query-string probes like `?county=Baker` and `?city=Salem` return the same generic page instead of county-specific office rows.
+- The obvious sitemap and search surfaces reviewed in this lane returned 404, and the page source exposed no public office JSON, export, or county list contract.
+- Current county-office rows on disk are still almost entirely DOI planning rows, so the live shell does not replace the stale office family yet.
 
 ## Completion decision
 
-- Oregon no longer lacks county-grade education routing evidence on disk.
-- The official ODE School Directory PDF now clears education because it explicitly organizes districts by county and preserves district contact blocks.
-- Oregon still cannot reach California-grade or become index-safe because county/local disability resources still have no preserved county-grade office contract from the live ODHS office-finder root.
-- Oregon therefore remains BLOCKED, not COMPLETE.
+- Oregon remains `BLOCKED` and `index_safe=false`.
+- Education remains cleared by the official county-searchable ODE Combined Directory PDF.
+- County-local no longer fails because the successor root is merely generic HTML; it now fails because the live official successor is only a public office-finder shell with no exposed county-grade office extract or query contract.
+- Oregon therefore still cannot be marked `COMPLETE` or index-safe.
