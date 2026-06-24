@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T23:43:49.984Z",
+  "generatedAt": "2026-06-24T00:00:00.000Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 24,
@@ -1140,8 +1140,8 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch316_kansas_live_export_recovery_v1",
-      "packetPrimaryGapReason": "live_ksde_directory_root_and_public_export_contract_recovered_but_reviewed_local_district_leaves_still_cover_only_16_counties",
+      "packetBatch": "batch319_kansas_doniphan_nemaha_leaves_v1",
+      "packetPrimaryGapReason": "live_ksde_directory_root_and_public_export_contract_recovered_but_reviewed_local_district_leaves_still_cover_only_18_counties",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

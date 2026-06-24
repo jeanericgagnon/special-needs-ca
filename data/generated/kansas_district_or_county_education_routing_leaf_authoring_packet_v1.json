@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 16,
+    "authoredExactLeafCount": 18,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 4,
     "publicExportContractVerified": true,
-    "reviewedDistrictOwnedLeafCount": 16
+    "reviewedDistrictOwnedLeafCount": 18
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -163,6 +163,7 @@
     "atchison-ks",
     "butler-ks",
     "cowley-ks",
+    "doniphan-ks",
     "douglas-ks",
     "ellis-ks",
     "finney-ks",
@@ -171,6 +172,7 @@
     "johnson-ks",
     "leavenworth-ks",
     "lyon-ks",
+    "nemaha-ks",
     "riley-ks",
     "saline-ks",
     "sedgwick-ks",
@@ -196,7 +198,6 @@
     "crawford-ks",
     "decatur-ks",
     "dickinson-ks",
-    "doniphan-ks",
     "edwards-ks",
     "elk-ks",
     "ellsworth-ks",
@@ -232,7 +233,6 @@
     "montgomery-ks",
     "morris-ks",
     "morton-ks",
-    "nemaha-ks",
     "neosho-ks",
     "ness-ks",
     "norton-ks",

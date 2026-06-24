@@ -1,0 +1,32 @@
+{
+  "batch": "batch319_kansas_doniphan_nemaha_leaves_v1",
+  "generated_at": "2026-06-24T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_count": 18,
+  "reviewed_leaf_counties": [
+    "atchison-ks",
+    "butler-ks",
+    "cowley-ks",
+    "doniphan-ks",
+    "douglas-ks",
+    "ellis-ks",
+    "finney-ks",
+    "geary-ks",
+    "harvey-ks",
+    "johnson-ks",
+    "leavenworth-ks",
+    "lyon-ks",
+    "nemaha-ks",
+    "riley-ks",
+    "saline-ks",
+    "sedgwick-ks",
+    "shawnee-ks",
+    "wyandotte-ks"
+  ],
+  "newly_verified_counties": [
+    "doniphan-ks",
+    "nemaha-ks"
+  ]
+}
