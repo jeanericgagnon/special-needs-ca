@@ -1,0 +1,15 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "district_or_county_education_routing",
+  "failure_code": "official_ksde_directory_export_roots_now_return_request_rejected_shells_while_reviewed_district_owned_leaves_cover_16_counties_but_county_grade_is_still_incomplete",
+  "rejected_state_roots": [
+    "https://uapps.ksde.gov/Directory_Rpts/default.aspx",
+    "https://www.ksde.gov/data-and-reporting/directories",
+    "https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12"
+  ],
+  "rejected_shell_title": "Request Rejected",
+  "reviewed_local_counties": 16,
+  "next_action": "continue_only_from_saved_export_backed_district_leads_and_reviewed_district_owned_domains_not_from_live_ksde_root_retries"
+}

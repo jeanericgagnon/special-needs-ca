@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 105
-- primary_gap_reason: reviewed_kansas_district_and_district_owned_leaves_now_cover_16_counties_but_export_backed_county_grade_coverage_is_still_incomplete
+- primary_gap_reason: official_ksde_directory_export_roots_now_return_request_rejected_shells_while_reviewed_district_owned_leaves_cover_16_counties_but_county_grade_is_still_incomplete
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (Kansas DD authority now clears at state grade from reviewed first-party KDADS leaves. The live KDADS root renders HCBS and disability program navigation, the official Intellectual / Developmentally Disabled Information page is public, the Community Support Waiver page explicitly serves Kansans with intellectual and developmental disabilities, and the HCBS Leadership & Staff page names I/DD and waiver staff roles on the same official host. The old host-wide 403 claim is no longer accurate for browser-readable review.)
 - early_intervention_part_c: verified_state_grade (Reviewed live KSDE Early Childhood Special Education leaf again provides Kansas birth-to-three, Part C, KDHE administration, and the local ITS referral pointer.)
 - special_education_idea_part_b: verified_state_grade (Reviewed live KSDE Special Education leaf again provides a role-pure IDEA Part B root and links to dispute-resolution plus parent-rights leaves on the same official path.)
-- district_or_county_education_routing: blocked_reviewed_district_owned_and_coop_leads_but_not_statewide_county_grade (Kansas is past a root-only blocker: reviewed district-owned and district-linked cooperative local education-routing leaves now exist for 16/105 counties, but county-grade local education routing is still incomplete across the packet. Export-backed district hosts remain the right lane, and exact non-match districts such as Abilene USD 435 should stay frozen until a role-exact local leaf appears on the official host stack.)
+- district_or_county_education_routing: blocked_reviewed_district_owned_and_coop_leads_but_live_ksde_export_roots_now_request_rejected (Kansas still has reviewed local education-routing proof for 16 counties, but the current bounded raw lane now confirms the official KSDE export roots themselves are not reusable scrape entrypoints. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational directory PDF URL each returned HTTP 200 only as the same `Request Rejected` shell in the live bounded pass, not as district inventory or export content. Kansas therefore remains blocked on incomplete county-grade local education proof, and future repairs should continue only from already-preserved export-backed district leads plus exact district-owned leaves rather than spending more low-token passes on the rejected state roots.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (Reviewed live DCF Rehabilitation Services Program Overview page replaced the old KDADS misclassification.)
 - protection_and_advocacy: verified_state_grade (Reviewed first-party DRC Kansas evidence plus live About/Get Help pages prove the statewide protection-and-advocacy role and help path.)
 - parent_training_information_center: verified_state_grade (Reviewed first-party Families Together evidence explicitly states that it is Kansas’ federally designated PTI.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: reviewed_kansas_district_and_district_owned_leaves_now_cover_16_counties_but_export_backed_county_grade_coverage_is_still_incomplete :: Reviewed 2026-06-23 one more bounded official Kansas district-routing pass using only export-backed district hosts, official district-owned pages, district-linked cooperative leaves on district hosts, exact same-domain checks, and one district-owned document-folder route. Education routing now has reviewed local proof for 16/105 counties: atchison-ks, butler-ks, cowley-ks, douglas-ks, ellis-ks, finney-ks, geary-ks, harvey-ks, johnson-ks, leavenworth-ks, lyon-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Ellis now clears because the live Hays USD 489 sitemap at https://www.usd489.com/sitemap.xml exposes a same-domain Special Education document lane, and the exact district-owned route https://www.usd489.com/documents/about-usd-489/special-education/81796 returned HTTP 200 with a live Nuxt payload whose breadcrumb name is `Special Education` and whose same-domain child folders are `WEBKIDSS Handbook` and `SPED Resources` on the official usd489.com host. Geary remains a clean district-owned Special Education page clear, and Dickinson remains a correct exact non-match freeze: the export-backed Abilene Public Schools host at https://www.abileneschools.org/ and its public sitemap both returned HTTP 200, but the bounded same-domain pass still found no role-exact special-education, student-services, procedural-safeguards, or parent-rights leaf. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties.
+- district_or_county_education_routing: official_ksde_directory_export_roots_now_return_request_rejected_shells_while_reviewed_district_owned_leaves_cover_16_counties_but_county_grade_is_still_incomplete :: Reviewed 2026-06-23 one more bounded official Kansas district-routing pass focused on the exact official state directory/export roots before any new county leaf guesses. The current live raw lane now returns the same `Request Rejected` shell for all three official state roots that previously anchored Kansas district authoring: `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and `https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12`. Each returned HTTP 200 with `<title>Request Rejected</title>` and the same `The requested URL was rejected. Please consult with your administrator.` body, so none of them currently materialize district inventory in the bounded raw lane. Kansas still has reviewed local proof for 16 counties from previously preserved export-backed district hosts and district-owned leaves, but the remaining county-grade gap is still unresolved across the rest of the state. The right next lane is therefore exact district-leaf authoring from saved export-backed district leads, not more retries on the current KSDE roots.
 
 ## Verified source samples
 
@@ -44,12 +44,12 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: continue_export_backed_district_and_affiliated_coop_leaf_authoring_county_by_county_and_keep_exact_non_matches_frozen
+- [critical] district_or_county_education_routing: continue_only_from_saved_export_backed_district_leads_and_reviewed_district_owned_domains_not_from_live_ksde_root_retries
 
 ## Repair decision
 
 - Kansas remains BLOCKED and not index-safe.
-- Education is the only remaining critical blocker.
-- Ellis now clears from a district-owned Hays USD 489 Special Education document-folder route on the official host, even though the visible shell title is generic.
-- Dickinson remains frozen as an exact non-match on the live Abilene district host and sitemap.
-- Kansas now has reviewed local education-routing proof for sixteen counties, but county-grade coverage is still incomplete across the remaining unresolved counties.
+- Education is still the only remaining critical blocker.
+- Kansas still has reviewed local education-routing proof for 16 counties from saved export-backed district leads and district-owned or district-linked local leaves.
+- But the current bounded raw lane now shows the official KSDE directory/export roots themselves returning the same `Request Rejected` shell instead of reusable district inventory or workbook content.
+- That means the correct next lane is exact district-leaf repair from already-preserved district leads, not more retries against the current rejected state roots.
