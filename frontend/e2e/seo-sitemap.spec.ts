@@ -32,7 +32,7 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
     expect(hasAdvocates).toBe(true);
 
     // High value guide pages
-    const hasIhssChildren = staticUrls.some(url => url.includes('/programs/ihss-for-children'));
+    const hasIhssChildren = staticUrls.some(url => url.includes('/programs/ihss-for-children') || url.includes('/benefits/california/program/ihss-for-children'));
     const hasSoc873 = staticUrls.some(url => url.includes('/forms/soc-873'));
     const hasProtectiveSupervision = staticUrls.some(url => url.includes('/situations/ihss-protective-supervision'));
 

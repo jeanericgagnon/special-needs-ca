@@ -398,6 +398,7 @@
     "plan:state-upgrade": "node --experimental-strip-types src/db/plan_state_upgrade.js",
     "test:quality-gates": "node src/scratch/verify_requirements.js",
     "seo:qa": "npx tsx scripts/qa-seo-checker.ts",
+    "seo:qa:full": "npx tsx scripts/qa-seo-checker.ts --full",
     "test:e2e": "npm --prefix frontend run test:e2e",
     "preview": "npm --prefix frontend run start",
     "preview:prototype": "vite preview --config prototype_quarantine/vite.config.js"

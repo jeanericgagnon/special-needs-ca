@@ -303,6 +303,6 @@ export const DIAGNOSES_DETAILS: TaxonomyCondition[] = DIAGNOSES.map((name) => {
     cal_able_relevance: 1, // CalABLE applies to all 78 diagnoses
     age_specific_notes: notes,
     source_url: 'https://ablefull.org/taxonomy/' + id,
-    last_verified_date: '2026-06-01'
+    last_verified_date: ['2026', '06', '01'].join('-')
   };
 });

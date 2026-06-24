@@ -3092,12 +3092,79 @@ export async function getProgramsForDiagnosis(diagnosis: string): Promise<Progra
 
 export async function getAllPrograms(): Promise<Program[]> {
   try {
-    const stmt = await crawlerDb.prepare(`
+    // 1. Get verified programs from navigatorDb
+    const rulesRows = await navigatorDb.prepare(`
+      SELECT program_id, MIN(min_age_years) as min_age, MAX(max_age_years) as max_age
+      FROM program_eligibility_rules
+      GROUP BY program_id
+    `).all();
+    const rulesMap = new Map<string, { minAge: number, maxAge: number }>();
+    for (const r of rulesRows) {
+      rulesMap.set(r.program_id, {
+        minAge: r.min_age !== null ? Number(r.min_age) : 0,
+        maxAge: r.max_age !== null ? Number(r.max_age) : 21
+      });
+    }
+
+    const navRows = await navigatorDb.prepare(`
+      SELECT * FROM programs
+    `).all();
+
+    const verifiedPrograms: Program[] = navRows.map((programRow: any) => {
+      const rules = rulesMap.get(programRow.id);
+      return {
+        id: programRow.id,
+        source_url: programRow.official_source_url || '',
+        program_name: programRow.name,
+        target_demographic: programRow.who_it_is_for || '',
+        age_limit_min: rules?.minAge ?? 0,
+        age_limit_max: rules?.maxAge ?? 21,
+        income_limit: 'Medi-Cal standard / None',
+        diagnosis_required: programRow.who_might_qualify || '',
+        county_specific: 'Statewide',
+        state_id: programRow.state_id,
+        last_verified_date: programRow.last_verified_date,
+        verification_status: programRow.verification_status,
+        confidence_score: programRow.confidence_score !== null && programRow.confidence_score !== undefined ? Number(programRow.confidence_score) : null
+      } as Program;
+    });
+
+    const verifiedNames = new Set(verifiedPrograms.map(p => p.program_name.toLowerCase().trim()));
+    const verifiedSourceUrls = new Set(verifiedPrograms.map(p => p.source_url.toLowerCase().trim()).filter(Boolean));
+
+    // 2. Get pilot programs from crawlerDb
+    const crawlerRows = await crawlerDb.prepare(`
       SELECT * FROM structured_programs 
       GROUP BY program_name
       ORDER BY id ASC
-    `);
-    return stmt.all() as Program[];
+    `).all();
+
+    const pilotPrograms: Program[] = crawlerRows
+      .filter((row: any) => {
+        const name = row.program_name.toLowerCase().trim();
+        const url = (row.source_url || '').toLowerCase().trim();
+        // Skip if it duplicates a verified program by name or source URL
+        if (verifiedNames.has(name)) return false;
+        if (url && verifiedSourceUrls.has(url)) return false;
+        return true;
+      })
+      .map((row: any) => ({
+        id: row.id,
+        source_url: row.source_url || '',
+        program_name: row.program_name,
+        target_demographic: row.target_demographic || '',
+        age_limit_min: row.age_limit_min || 0,
+        age_limit_max: row.age_limit_max || 99,
+        income_limit: row.income_limit || '',
+        diagnosis_required: row.diagnosis_required || '',
+        county_specific: row.county_specific || '',
+        state_id: null,
+        last_verified_date: null,
+        verification_status: null,
+        confidence_score: null
+      } as Program));
+
+    return [...verifiedPrograms, ...pilotPrograms];
   } catch (err) {
     console.error('Failed to get all programs:', err);
     return [];
@@ -3135,6 +3202,7 @@ export async function getProgramBySlug(slug: string): Promise<Program | null> {
         county_specific: 'Statewide',
         state_id: programRow.state_id,
         last_verified_date: programRow.last_verified_date,
+        verification_status: programRow.verification_status,
         confidence_score: programRow.confidence_score !== null && programRow.confidence_score !== undefined ? Number(programRow.confidence_score) : null
       } as Program;
     }

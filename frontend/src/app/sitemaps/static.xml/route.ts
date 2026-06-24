@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, Program, getCounties, getCountyDetails, getBulkCountyDetails, RegionalCenter, SchoolDistrict, CountyOffice, County } from '@/lib/db';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
+import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
 
 interface StaticUrl {
   loc: string;
@@ -25,11 +25,12 @@ export async function GET() {
   }
 
   const rawStaticUrls: StaticUrl[] = [
-    { loc: '/', changefreq: 'monthly', priority: '1.0', routeType: 'static-page', stateId: '' },
+    { loc: '', changefreq: 'monthly', priority: '1.0', routeType: 'static-page', stateId: '' },
     { loc: '/benefits', changefreq: 'weekly', priority: '0.9', routeType: 'static-page', stateId: '' },
     { loc: '/advocates', changefreq: 'weekly', priority: '0.7', routeType: 'static-page', stateId: '' },
     { loc: '/forms', changefreq: 'weekly', priority: '0.8', routeType: 'static-page', stateId: '' },
     { loc: '/school-districts', changefreq: 'weekly', priority: '0.8', routeType: 'static-page', stateId: '' },
+    { loc: '/find-help', changefreq: 'weekly', priority: '0.9', routeType: 'static-page', stateId: '' },
   ];
 
   // Dynamically push all state hubs to rawStaticUrls
@@ -54,8 +55,9 @@ export async function GET() {
   const filteredStaticUrls: StaticUrl[] = [];
   for (const url of rawStaticUrls) {
     if (url.routeType === 'static-page') {
-      const policy = evaluateSeoPolicy({
-        routeType: 'static-page',
+      const policy = getSeoPolicyForRoute('static-page', {
+        path: url.loc
+      }, {
         hasNoPlaceholderData: true
       });
       if (shouldIncludeInSitemap(policy)) {
@@ -68,9 +70,9 @@ export async function GET() {
       const scores = stateProgs.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
       const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
-      const policy = evaluateSeoPolicy({
-        routeType: 'state-hub',
-        stateId: url.stateId,
+      const policy = getSeoPolicyForRoute('state-hub', {
+        stateId: url.stateId
+      }, {
         entityCount: stateProgs.length,
         confidenceScore: avgScore,
         hasOfficialSource: stateProgs.length > 0 && stateProgs.some((p: Program) => !!p.source_url),
@@ -130,10 +132,10 @@ export async function GET() {
           hasOfficialSource = true;
         }
 
-        const countyPolicy = evaluateSeoPolicy({
-          routeType: 'county-hub',
+        const countyPolicy = getSeoPolicyForRoute('county-hub', {
           stateId: url.stateId,
-          countyId: c.id,
+          countyId: c.id
+        }, {
           entityCount: countyDistricts.length,
           hasOfficialSource: countyHasOfficialSource,
           lastVerifiedDate: lastVerDate,
@@ -150,9 +152,9 @@ export async function GET() {
 
       const avgConfidenceScore = confidenceCount > 0 ? totalConfidence / confidenceCount : null;
 
-      const policy = evaluateSeoPolicy({
-        routeType: 'state-counties-hub',
-        stateId: url.stateId,
+      const policy = getSeoPolicyForRoute('state-counties-hub', {
+        stateId: url.stateId
+      }, {
         entityCount: counties.length,
         hasOfficialSource,
         lastVerifiedDate: minDate,
@@ -189,71 +191,59 @@ export async function GET() {
       let confidenceScore: number | null = null;
       let stateId = 'california';
 
+      let hasVerifiedEligibilityRules = false;
+      let programStateId: string | null = null;
+      let verificationStatus: string | null = null;
+
       if (prog) {
         stateId = prog.state_id || 'california';
+        programStateId = prog.state_id || null;
+        verificationStatus = prog.verification_status || null;
         const progIdStr = String(prog.id);
         const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
         hasEligibilityRules = (ruleCount?.count || 0) > 0;
         hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
         hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
         confidenceScore = normalizeConfidenceScore(prog.confidence_score);
+        hasVerifiedEligibilityRules = hasEligibilityRules && (prog.verification_status === 'official_verified' || prog.verification_status === 'verified' || prog.verification_status === 'human_verified');
       }
 
-      const policy = evaluateSeoPolicy({
-        routeType: 'program-guide',
+      const policy = getSeoPolicyForRoute('program-guide', {
         stateId,
-        programId: cluster.slug,
+        programId: cluster.slug
+      }, {
         hasOfficialSource: hasOfficialProgramSource(prog?.source_url),
         lastVerifiedDate: prog?.last_verified_date || null,
         confidenceScore,
         hasEligibilityRules,
+        hasVerifiedEligibilityRules,
         hasApplicationSteps,
         hasDocuments,
-        hasNoPlaceholderData
+        hasNoPlaceholderData,
+        programStateId,
+        verificationStatus
       });
 
       if (shouldIncludeInSitemap(policy)) {
         const lastmodTag = prog?.last_verified_date ? `\n    <lastmod>${prog.last_verified_date}</lastmod>` : '';
         clusterXmlUrls.push(`  <url>
-    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
+    <loc>${policy.canonicalUrl}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);
       }
     } else if (cluster.category === 'conditions') {
-      const statePrograms = stateProgramsMap['california'] || [];
-      const dates = statePrograms.map((p: Program) => p.last_verified_date).filter(Boolean) as string[];
-      const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
-      const scores = statePrograms.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
-      const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
-
-      const policy = evaluateSeoPolicy({
-        routeType: 'condition-hub',
-        stateId: 'california',
-        diagnosisId: cluster.slug,
-        confidenceScore,
-        hasOfficialSource: statePrograms.length > 0 && statePrograms.some((p: Program) => !!p.source_url),
-        lastVerifiedDate: minDate,
-        hasNoPlaceholderData: statePrograms.every((p: Program) => assertNoPlaceholderData(JSON.stringify(p)))
-      });
-
-      if (shouldIncludeInSitemap(policy)) {
-        const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
-        clusterXmlUrls.push(`  <url>
-    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`);
-      }
+      // Excluded since they redirect to /benefits/california/[slug]
     } else if (['forms', 'deadlines', 'situations'].includes(cluster.category)) {
-      const policy = evaluateSeoPolicy({
-        routeType: 'static-page',
+      const policy = getSeoPolicyForRoute('static-page', {
+        path: `/${cluster.category}/${cluster.slug}`
+      }, {
         hasNoPlaceholderData: true
       });
 
       if (shouldIncludeInSitemap(policy)) {
         clusterXmlUrls.push(`  <url>
-    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>
+    <loc>${policy.canonicalUrl}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);
