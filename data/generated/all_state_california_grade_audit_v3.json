@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T21:37:26.775Z",
+  "generatedAt": "2026-06-24T21:47:37.073Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 25,
@@ -2577,11 +2577,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_office_map_incomplete_county_contract"
+        "county_local_disability_resources": "blocked_okdhs_kml_partial_county_contract_with_service_limited_access_points"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_6_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "live_okdhs_general_office_map_only_materializes_46_counties_while_same_host_child_support_tree_proves_county_contracts_exist_but_not_for_disability_local_routing",
+      "packetBatch": "batch324_oklahoma_kml_access_point_truth_v1",
+      "packetPrimaryGapReason": "live_okdhs_kml_only_yields_45_benefit_capable_counties_while_tanf_only_access_points_and_child_support_only_county_tree_cannot_close_the_remaining_32",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

@@ -1,0 +1,9 @@
+# Batch 324 Oklahoma KML Access-Point Truth v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: replaced the fuzzy 46-county Oklahoma KML claim with a role-aware 45-county contract and a 32-county explicit remainder
+
+## Evidence
+
+- Reviewed 2026-06-24 one more bounded official Oklahoma county-local pass against the live OKDHS office-map KML rather than only the older county-key heuristic. The current successor lane is still real: `https://oklahoma.gov/okdhs/contact-us.html` directs users to the public office map and the backing KML at `https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1` is publicly fetchable. But a stricter role-aware review now shows the KML only yields 45 benefit-capable county-local contracts, not 46. It contains 60 placemarks total, yet only 43 preserve an explicit `County Name:` field and only some of the remaining `Access Point - <County>` placemarks are usable for this family. Access points that advertise `SNAP, Child Care, Medical` can count as county-local benefit routing for counties like Caddo, Cherokee, Choctaw, Delaware, Latimer, Love, Mayes, Oklahoma, and Tulsa, but Grady (`TANF`), Pittsburg (`TANF Only`), and Washington (`TANF Only`) do not satisfy the broader disability/local-routing role. The same host still proves county trees are technically publishable because `https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html` exposes a county-by-county tree, but that surface is explicitly `Child Support District Offices` and cannot substitute for disability/local routing. The DDS apply page at `https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html` remains statewide-only with one phone/email and no county-served matrix. Oklahoma therefore remains blocked with 32 counties still lacking truth-safe county-local routing on current official evidence.

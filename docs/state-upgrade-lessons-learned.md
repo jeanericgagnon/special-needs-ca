@@ -357,3 +357,6 @@
 
 ### Exact Official Successor Leaves Override A Stale Reset Blocker
 *   **Lesson:** If a previously blocked successor host later exposes exact public leaves that directly enumerate county or local-district rows, replace the stale reset blocker with those leaves instead of preserving the older transport failure story. New York cleared once OTDA `Local Departments of Social Services` and `HEAP Contacts` were rechecked as live public leaves and shown to carry the county-local contract directly.
+
+### Service-Limited Access Points Do Not Close A County-Local Routing Gap
+*   **Lesson:** If an official county map includes partner access points, count them only when their published service mix matches the required local-routing role. Oklahoma’s OKDHS KML exposed extra county-named access points, but TANF-only entries for Grady, Pittsburg, and Washington could not truthfully close the broader county-local disability routing gap.

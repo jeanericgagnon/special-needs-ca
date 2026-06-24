@@ -23,7 +23,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Ohio: `official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only`
-- Oklahoma: `live_okdhs_general_office_map_only_materializes_46_counties_while_same_host_child_support_tree_proves_county_contracts_exist_but_not_for_disability_local_routing`
+- Oklahoma: `live_okdhs_kml_only_yields_45_benefit_capable_counties_while_tanf_only_access_points_and_child_support_only_county_tree_cannot_close_the_remaining_32`
 - Oregon: `live_odhs_office_finder_is_only_a_custom_component_shell_with_no_public_county_extract_query_contract_or_api_surface`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
@@ -40,11 +40,11 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 
 ### Blocker Reason
 
-`county_local_disability_resources` remains the top Oklahoma blocker. The live OKDHS general office map still materializes only 46 counties, and the same first-party host proves county contracts exist for other service trees without yet exposing the missing disability-local routing remainder.
+`county_local_disability_resources` remains the top Oklahoma blocker. The live OKDHS office-map KML is real, but a stricter role-aware review shows it only yields 45 benefit-capable counties once TANF-only access points are excluded. The same first-party host still proves county trees are technically publishable for child-support offices, but not yet for the missing disability/local-routing remainder.
 
 ### Exact Evidence Needed
 
-- Any current official Oklahoma county-local office directory or export that closes the missing county remainder on the OKDHS host.
+- Any current official Oklahoma county-local office directory or export that closes the 32-county remainder on the OKDHS host.
 - Any official county-owned or state-owned successor leaves that explicitly map the unresolved counties to public assistance or disability-routing offices.
 - Any public API, CSV, JSON, ArcGIS, or HTML contract on the official host that exposes the missing county assignments directly.
 
@@ -52,12 +52,16 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 
 - [Oklahoma DHS Office Locator](https://oklahoma.gov/okdhs/library/maps.html)
 - [Oklahoma DHS Offices map](https://oklahoma.gov/okdhs/about/okdhs-offices.html)
-- [Oklahoma Child Support offices tree](https://oklahoma.gov/okdhs/services/child-support-services/css-offices.html)
+- [Oklahoma Human Services Contact Us](https://oklahoma.gov/okdhs/contact-us.html)
+- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)
+- [Oklahoma Child Support offices tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)
+- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)
 
 ### Top Remaining Source-Scouting Targets
 
 - Any exact official OKDHS county-office export or county-filter contract that covers the unresolved counties.
 - Any official county-level benefit or disability-routing leaf linked from the same host but not yet packeted.
+- The current measured county remainder is: Adair, Alfalfa, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
 
 ## Next State Order After Oklahoma
 
