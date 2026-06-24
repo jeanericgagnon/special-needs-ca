@@ -1,0 +1,20 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "district_or_county_education_routing",
+  "failure_code": "live_ksde_directory_root_and_public_export_contract_recovered_but_reviewed_local_district_leaves_still_cover_only_16_counties",
+  "ksde_directory_reports_status": 200,
+  "ksde_directories_status": 200,
+  "ksde_pdf_status": 200,
+  "has_viewstate": true,
+  "has_viewstategenerator": true,
+  "has_eventvalidation": true,
+  "export_content_type": "application/vnd.ms-excel",
+  "export_file_type": "CDFV2 Microsoft Excel",
+  "export_title": "SCHOOL DISTRICT SUPERINTENDENTS AND BOARD PRESIDENTS",
+  "reviewed_local_leaf_counties": 16,
+  "sample_export_district": "D0435 Abilene USD 435",
+  "next_action": "resume_only_from_live_public_export_backed_district_inventory_and_saved_district_owned_domains_to_expand_reviewed_local_education_leaves",
+  "lessons_updated": false
+}

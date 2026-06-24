@@ -339,3 +339,6 @@
 
 ### Tiny Public Service Taxonomies Still Do Not Create County Routing
 *   **Lesson:** If an official office-search API only exposes inventory rows plus a tiny public service taxonomy like `All`, `USOR`, and `EC`, do not treat that as county-grade routing. Utah’s live DWS surface kept both `/api/v1/offices` and `/api/v1/services` public, but with no county field, no service-area field, and no live county endpoint, the state still lacked a reusable 29-county disability-resource contract.
+
+### Recheck Rejected State Export Roots Before Freezing Them As Final
+*   **Lesson:** A previously rejected official export root can recover, so recheck exact public state directory and PDF URLs before treating a dead-root blocker as final. Kansas KSDE moved from shared `Request Rejected` shells back to a live Directory Reports page with ASP.NET hidden fields, a live Directories page, and a real public educational-directory PDF, which reopened the official export-backed district authoring lane even though county-grade local leaves were still incomplete.
