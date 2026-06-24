@@ -10,9 +10,9 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 
 ## Current Blocked States
 
-- Alaska: `live_dfcs_services_page_and_public_dfcs_search_still_expose_no_borough_routing_while_current_health_and_legacy_dhss_dpa_hosts_stay_gate_blocked`
+- Alaska: `live_dfcs_services_page_remains_phone_only_while_dfcs_search_exposes_input_field_but_no_public_results_endpoint_and_current_health_and_legacy_dhss_dpa_hosts_stay_gate_blocked`
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
-- Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_myaccess_public_shell_only_exposes_dataexchangeproxy_shell`
+- Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_public_lane_is_cloudfront_blocked`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
 - Kansas: `reviewed_kansas_district_and_district_owned_leaves_now_cover_16_counties_but_export_backed_county_grade_coverage_is_still_incomplete`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
@@ -29,7 +29,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
-- Utah: `official_usbe_district_lea_directory_clears_education_but_public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract`
+- Utah: `official_usbe_district_lea_directory_clears_education_but_live_dws_bundle_only_supports_city_or_zip_search_and_public_office_api_still_lacks_county_service_area_contract`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
@@ -37,42 +37,53 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Florida
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Florida critical blocker. The live DCF local-offices leaf and Family Resource Center storefront still stop at a partial 34-county contract, and the current official MyACCESS public lane has now regressed to CloudFront `403 Request blocked` responses on the public shell, config, bundle, and asset-manifest paths.
+`county_local_disability_resources` is the only remaining Alaska critical blocker. The live DFCS successor host still only gives statewide phone routing, the public DFCS search surface exposes a real keyword field but still no usable public results contract, the current `health.alaska.gov` DPA family is challenge-blocked end to end, and the legacy `dhss.alaska.gov` DPA subtree is also not reviewable even though the root is partially live.
 
 ### Exact Evidence Needed
 
-- A first-party Florida DCF or MyACCESS county-complete local-offices directory or export that maps all 67 counties to public assistance / ESS office routing.
-- A recovered anonymous official MyACCESS county-result contract that returns real office or community-partner results without authentication or CloudFront blocking.
-- A first-party Family Resource Center or DCF local-office lane that expands beyond the current 34-county storefront contract and publishes the full county set.
+- Any official Alaska surface that maps boroughs or census areas to DPA or Medicaid office locations on a publicly reviewable host.
+- Any reviewable successor office locator or directory that lives on `dfcs.alaska.gov`, `dhss.alaska.gov`, or another current official Alaska host instead of only on the challenge-blocked `health.alaska.gov` family.
+- Any official document, export, or table that explicitly enumerates Alaska borough or census-area coverage for public assistance office routing.
 
 ### Useful Official URLs Already Tried
 
-- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
-- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
-- [MyACCESS Public CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
-- [MyACCESS appconfig](https://myaccess.myflfamilies.com/config/appconfig.js)
-- [MyACCESS partner-location bundle](https://myaccess.myflfamilies.com/static/js/UXModule.flPartnerLocation.85b7166d.js)
-- [MyACCESS asset manifest](https://myaccess.myflfamilies.com/asset-manifest.json)
-- [MyACCESS nested swagger path](https://myaccess.myflfamilies.com/dataexchangeproxy/swagger/index.html)
+- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
+- [Alaska DFCS Search results endpoint](https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance)
+- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
+- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
+- [Alaska DFCS robots.txt](https://dfcs.alaska.gov/robots.txt)
+- [Alaska DFCS sitemap.xml](https://dfcs.alaska.gov/sitemap.xml)
+- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
+- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
+- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska health robots.txt](https://health.alaska.gov/robots.txt)
+- [Legacy DHSS root](https://dhss.alaska.gov/)
+- [Legacy DHSS robots.txt](https://dhss.alaska.gov/robots.txt)
+- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
+- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
+- [Legacy DHSS DPA contacts](https://dhss.alaska.gov/dpa/Pages/contacts.aspx)
+- [Legacy DHSS DPA publications](https://dhss.alaska.gov/dpa/Pages/Publications.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DCF or MyACCESS export or API path that materially extends the public county-local contract beyond the 34 counties in `providers.csv`.
-- Any exact first-party DCF county office page or local-office directory leaf that is linked from current public-assistance pages but not yet exposed in the current sitemap.
-- Any anonymous result lane on the official MyACCESS host that returns real county storefront or office rows once the current CloudFront block is lifted.
-## Next State Order After Florida
+- Any current Alaska host outside the challenged `health.alaska.gov` family that now publishes a borough- or census-area DPA office directory.
+- Any official Alaska PDF, spreadsheet, or office-contact table that names specific borough or census-area coverage for public assistance offices.
+- Any future public relaxation on either the `health.alaska.gov` or legacy `dhss.alaska.gov` DPA subtree that makes office-routing leaves scraper-reviewable.
 
-1. Alaska
-2. South Carolina
-3. North Carolina
-4. New York
-5. Oklahoma
-6. Oregon
-7. Ohio
-8. Minnesota
-9. Maine
-10. Idaho10. Idaho10. Minnesota10. Minnesota10. Idaho
+## Next State Order After Alaska
+
+1. New York
+2. Oklahoma
+3. Oregon
+4. Ohio
+5. Minnesota
+6. Maine
+7. Idaho
+8. Arizona
+9. Massachusetts
+10. New Mexico

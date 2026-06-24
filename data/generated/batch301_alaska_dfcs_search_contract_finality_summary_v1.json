@@ -1,0 +1,13 @@
+{
+  "batch": "batch301_alaska_dfcs_search_contract_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "failure_code": "live_dfcs_services_page_is_phone_only_and_dfcs_search_has_no_public_results_contract_while_current_health_host_and_legacy_dhss_dpa_subtree_both_fail_closed",
+  "dfcs_search_input_field_exposed": true,
+  "dfcs_results_endpoint_404": true,
+  "dfcs_search_post_self_posts_without_results": true,
+  "lessons_updated": false
+}

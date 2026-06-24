@@ -20,11 +20,6 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
-- Oklahoma remains blocked on a live official office-map lane that still misses county-complete coverage.
-- Oregon remains blocked, but the blocker is now narrowed to a live official ODHS office-finder app shell that exposes no public county extract, search contract, or office result payload.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
-- Utah county-local routing is now explicitly sharpened to the live DWS bundle contract itself: the public page only wires `/api/v1/offices`, `/api/v1/services`, and a still-broken `/api/v1/office-services` route, the search logic is city/ZIP-only plus nearest-office geocoding, the payload still lacks county/service-area fields, and the county remainder is still explicit at Daggett, Morgan, and Rich.
-- Kansas education routing is now explicitly sharpened to 16 reviewed counties: Ellis newly clears from a district-owned `Special Education` document-folder route on the live Hays USD 489 host, while Dickinson stays frozen as a live Abilene exact-host non-match.
-- Nebraska county-local routing is now explicitly frozen at the published-config layer: the live ExperienceBuilder config resolves only to one web map, one closest-office widget output, one geocoder output, and both related-items endpoints are empty, so there is no hidden public county-assignment source left on the current official stack.
-- Florida county-local routing is now explicitly sharpened to a partial Family Resource Center storefront plus a currently CloudFront-blocked MyACCESS public lane; the former county-result shell assumptions no longer match the current live contract.
+- Alaska county-local routing is now explicitly sharpened to a phone-only DFCS relay plus an exposed DFCS search form whose public results endpoint still 404s and whose keyword POST still produces no office rows, alongside a fully challenged current health host and a partially live but gated legacy DHSS DPA subtree.

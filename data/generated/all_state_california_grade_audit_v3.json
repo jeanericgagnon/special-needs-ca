@@ -147,11 +147,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_phone_only_dfcs_relay_plus_generic_dfcs_search_plus_current_health_host_403_and_legacy_dhss_dpa_subtree_403"
+        "county_local_disability_resources": "blocked_phone_only_dfcs_relay_plus_dfcs_search_without_public_results_contract_plus_current_health_host_403_and_legacy_dhss_dpa_subtree_403"
       },
       "packetGenerated": true,
       "packetBatch": "batch_80_alaska_truth_repair_v1",
-      "packetPrimaryGapReason": "live_dfcs_services_page_and_public_dfcs_search_still_expose_no_borough_routing_while_current_health_and_legacy_dhss_dpa_hosts_stay_gate_blocked",
+      "packetPrimaryGapReason": "live_dfcs_services_page_remains_phone_only_while_dfcs_search_exposes_input_field_but_no_public_results_endpoint_and_current_health_and_legacy_dhss_dpa_hosts_stay_gate_blocked",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
