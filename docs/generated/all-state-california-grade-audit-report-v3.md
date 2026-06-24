@@ -1,6 +1,6 @@
 # All-State California-Grade Audit Report v3
 
-This v3 audit tracks packet-backed California-grade truth across all 50 states. A state is only index-safe when every critical family is verified by current official or first-party evidence.
+This v3 audit closes the packet-coverage gap across all 50 states. It does not claim broader California-grade completion beyond the states currently marked COMPLETE by packet evidence.
 
 ## Packet coverage
 
@@ -11,10 +11,8 @@ This v3 audit tracks packet-backed California-grade truth across all 50 states. 
 
 - COMPLETE: 26
 - BLOCKED: 24
+
 - index-safe states: 26
-
-## State lists
-
 - complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Texas
 - blocked states: Alaska, Arizona, Florida, Idaho, Kansas, Maine, Massachusetts, Minnesota, Nebraska, New Hampshire, New Mexico, North Dakota, Ohio, Oklahoma, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming
 
@@ -22,10 +20,7 @@ This v3 audit tracks packet-backed California-grade truth across all 50 states. 
 
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
-- New York remains COMPLETE/index-safe from the official OTDA county-local successor leaves.
-- Oregon is now COMPLETE/index-safe because the live ODHS office-finder exposes a public `Office Locations` SharePoint list with county arrays covering all 36 counties.
-- Oklahoma remains blocked because the live OKDHS KML only proves 45 benefit-capable counties and the remaining 32 counties still lack a verified public disability/local-routing contract.
-- Ohio is now the next focus state because county-local routing is still root-dead and district/ESC routing is still mostly inventory-only.
-- Kansas still has a strict live state-root stop signal: the current KSDE Directory Reports root, Directories page, educational-directory PDF URL, and an exact district-scoped submit replay all return `Request Rejected` shells in the bounded raw lane, while reviewed local district leaves now cover 20 counties, so future repairs should continue only from saved district leads plus exact district-owned or district-linked local leaves.
-- Nebraska remains blocked because the public ExperienceBuilder config itself still references only one web map plus a closest-feature output and geocoder search, and the same-host DHHS sibling leaves only loop `Local DHHS Offices` back to the current wrapper instead of exposing a county directory leaf.
-- Utah remains blocked because the recovered DHHS contacts hub still defers local office proof, and the current DWS office-search shell now makes the public contract even narrower: it explicitly limits lookup to `Zip Code or City` while the public APIs still expose no county or service-area field.
+- Oregon remains blocked on county-local routing because the live ODHS successor is a real custom component shell with no public data contract.
+- Ohio remains blocked on two families, but the top county-local blocker is now more accurate: Ohio JFS, Medicaid, and Ohio.gov roots plus their robots and sitemaps are live again, while the rendered county-directory page, search page, and sampled `cdjfs-*` local-agency leaves still 404.
+- The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
+- The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.

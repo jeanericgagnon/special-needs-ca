@@ -1,0 +1,9 @@
+# Batch 331 Ohio Live Root Recovery Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: corrected the stale Ohio county-local blocker from dead official roots to a live-but-stale directory family
+
+## Evidence
+
+- Reviewed 2026-06-24 one more bounded live official Ohio county-local pass after the earlier stale-root blocker. The official discovery family is now publicly alive again, so the old 404-at-root claim is no longer true: `https://jfs.ohio.gov/`, `https://medicaid.ohio.gov/`, and `https://ohio.gov/` all return HTTP 200, `robots.txt` now returns HTTP 200 on each host family, and `https://jfs.ohio.gov/sitemap.xml`, `https://medicaid.ohio.gov/sitemap.xml`, and `https://ohio.gov/sitemap.xml` are all publicly reviewable. The live JFS sitemap is materially stronger than before because it now advertises 98 `cdjfs-*` local-agency-directory URLs spanning 88 distinct county slugs. But the rendered county-office lane still fails closed: the current `https://ohio.gov/residents/resources/job-family-services-directory` page renders a public `404 Error Page`, the live `https://ohio.gov/search?query=county%20job%20and%20family%20services` page also renders the same public 404, the parent `https://jfs.ohio.gov/about/local-agencies-directory` root renders a public 404, and sampled exact county leaves such as `https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams`, `.../cdjfs-cuyahoga-3`, and `.../cdjfs-wood` each render the same public 404 page. This means Ohio no longer lacks official roots or discovery surfaces; instead, it now has a live but stale discovery family whose rendered county-directory pages still do not materialize a reviewable county-local office contract. The county-local blocker therefore remains, but with corrected live-root evidence rather than stale all-root 404 claims.

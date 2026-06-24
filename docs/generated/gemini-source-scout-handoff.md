@@ -22,7 +22,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
-- Ohio: `official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only`
+- Ohio: `live_ohio_jfs_medicaid_and_ohio_gov_roots_plus_robots_and_sitemaps_recover_but_current_directory_search_and_sample_cdjfs_leafs_render_404_while_education_inventory_remains_root_only`
 - Oklahoma: `live_okdhs_kml_only_yields_45_benefit_capable_counties_while_tanf_only_access_points_and_child_support_only_county_tree_cannot_close_the_remaining_32`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
@@ -35,49 +35,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Ohio
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Nebraska critical blocker. The public office stack is live, but the public ExperienceBuilder config still proves there is no county-assignment datasource: `resources/config/config.json` still references only one web map item, one `closest feature` output layer, and the geocoder search widget. A fresh same-host DHHS pass now sharpens the negative proof too: `economic-assistance.aspx`, `Contact-DHHS.aspx`, and `DD-Contact-Us.aspx` each preserve `Local DHHS Offices` only as a loop back to `Public-Assistance-Offices.aspx`, not as a county directory leaf. The underlying public web map still has only two operational layers and zero tables, while the public FeatureServer still stops at 42 office rows, 93 county rows, empty relationships, and only 37 distinct office counties. Nebraska therefore remains BLOCKED and not index-safe because there is still no public statewide county-to-office assignment bridge anywhere on the official stack.
+Ohio still has two critical blockers, but the highest-priority one is `county_local_disability_resources`. The old root-404 blocker is no longer true: Ohio JFS, Medicaid, and Ohio.gov roots plus their `robots.txt` and `sitemap.xml` surfaces are live again. The current failure is narrower and more truthful: the rendered `job-family-services-directory` page, Ohio search page, JFS `about/local-agencies-directory` root, and sampled `cdjfs-*` county leaves still render public 404 pages even though the live JFS sitemap advertises 98 `cdjfs-*` entries across 88 county slugs.
 
 ### Exact Evidence Needed
 
-- Any official Nebraska DHHS county-to-office assignment table, export, or service-area artifact that maps all 93 counties to public assistance offices.
-- Any public ArcGIS table, related layer, popup expression, output schema, or config datasource on the current office stack that explicitly enumerates served counties, assigned counties, or coverage areas for each office.
-- Any exact first-party DHHS county office page or county directory leaf that publishes county coverage instead of only contact-card inventory or a loop back to the current wrapper page.
+- A rendered live Ohio county JFS or Medicaid directory page that exposes real county office details instead of the current public 404 page.
+- A working current successor to the stale `cdjfs-*` directory family, or proof that the sitemap leaf family itself now renders live office details.
+- For education later: more exact district or ESC leaves beyond the tiny current inventory.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska DHHS Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [Nebraska DHHS Economic Assistance](https://dhhs.ne.gov/Pages/economic-assistance.aspx)
-- [Nebraska DHHS Contact DHHS](https://dhhs.ne.gov/Pages/Contact-DHHS.aspx)
-- [Nebraska DD Contact Us](https://dhhs.ne.gov/Pages/DD-Contact-Us.aspx)
-- [ExperienceBuilder item data](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
-- [ExperienceBuilder resource list](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources?f=json)
-- [ExperienceBuilder config resource](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources/config/config.json?f=json)
-- [Nebraska public office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
-- [Nebraska public office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
-- [Nebraska county boundary layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1?f=pjson)
-- [Nebraska public web map item data](https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/data?f=json)
-- [Nebraska office count query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json)
-- [Nebraska county count query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1/query?where=1%3D1&returnCountOnly=true&f=json)
-- [Nebraska distinct county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
+- [JFS root](https://jfs.ohio.gov/)
+- [JFS robots.txt](https://jfs.ohio.gov/robots.txt)
+- [JFS sitemap.xml](https://jfs.ohio.gov/sitemap.xml)
+- [Ohio.gov county directory page](https://ohio.gov/residents/resources/job-family-services-directory)
+- [Ohio.gov search page](https://ohio.gov/search?query=county%20job%20and%20family%20services)
+- [JFS local agencies directory root](https://jfs.ohio.gov/about/local-agencies-directory)
+- [Sample JFS county leaf: Adams](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams)
+- [Sample JFS county leaf: Cuyahoga](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-cuyahoga-3)
+- [Sample JFS county leaf: Wood](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-wood)
+- [Medicaid root](https://medicaid.ohio.gov/)
+- [Medicaid robots.txt](https://medicaid.ohio.gov/robots.txt)
+- [Medicaid sitemap.xml](https://medicaid.ohio.gov/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Nebraska DHHS county assignment export or service-area table attached to the existing office stack.
-- Any new public ArcGIS resource, web map table, config datasource, or output field that explicitly carries county assignment data rather than only office contact fields.
-- An exact first-party county office page or county directory leaf on `dhhs.ne.gov` that publishes county coverage instead of only wrapper-page loops or wrong-role local health department links.
-## Next State Order After Nebraska
+- Any current rendered Ohio county-office successor leaf on JFS, Medicaid, or Ohio.gov that replaces the stale public 404 directory family.
+- Any official statewide export, table, or rendered directory that maps all 88 counties to county JFS routing without relying on stale sitemap-only leaves.
+- For education later: exact district or ESC-owned leaves that materially expand county-grade routing beyond the current root-only inventory.
 
-1. Florida
-2. Alaska
-3. New York
-4. Oklahoma
-5. Oregon
-6. Ohio
-7. Minnesota
-8. Maine
-9. Idaho
-10. Arizona
+## Next State Order After Ohio
+
+1. Minnesota
+2. Maine
+3. Idaho
+4. Arizona
+5. Massachusetts
+6. New Mexico
+7. South Dakota
+8. Rhode Island
+9. Virginia
+10. West Virginia

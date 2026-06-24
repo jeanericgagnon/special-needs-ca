@@ -372,3 +372,6 @@
 
 ### Zip Or City Office Search UI Still Does Not Prove County Routing
 *   **Lesson:** If a live official office-search shell explicitly limits its public lookup UI to `Zip Code or City`, that narrows the contract instead of rescuing county-grade proof. Utah’s recovered DWS office-search shell now makes the public rule visible in the footer itself, but because the shell still routes only to `search/<zip-or-city>` or `map` and the public APIs still expose no county or service-area field, the county-local family remains blocked.
+
+### Live Roots And Sitemaps Do Not Clear A Directory Lane When The Rendered Leaves Still 404
+*   **Lesson:** A recovered official root, `robots.txt`, or `sitemap.xml` is only discovery evidence. Ohio JFS and Medicaid are publicly alive again, and the JFS sitemap even advertises 98 `cdjfs-*` leaves across 88 county slugs, but the rendered `job-family-services-directory` page, the `about/local-agencies-directory` root, Ohio search results, and sampled `cdjfs-*` county leaves all still resolve to public 404 pages, so the county-local family stays blocked until a rendered successor contract works.

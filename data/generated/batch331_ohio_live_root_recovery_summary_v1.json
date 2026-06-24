@@ -1,0 +1,14 @@
+{
+  "state": "Ohio",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "countyRootsLive": true,
+  "discoverySurfacesLive": true,
+  "advertisedCdjfsLeafCount": 98,
+  "advertisedCdjfsCountySlugCount": 88,
+  "renderedDirectory404": true,
+  "renderedSearch404": true,
+  "renderedDirectoryRoot404": true,
+  "sampledCountyLeaf404": true,
+  "lessonsUpdated": false
+}

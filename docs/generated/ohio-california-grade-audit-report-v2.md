@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 88
-- primary_gap_reason: official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only
+- primary_gap_reason: live_ohio_jfs_medicaid_and_ohio_gov_roots_plus_robots_and_sitemaps_recover_but_current_directory_search_and_sample_cdjfs_leafs_render_404_while_education_inventory_remains_root_only
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Ohio Legal Help now provides reviewed Ohio-specific statewide legal-help routing from a first-party portal.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_retired_official_county_family_and_dead_public_search_surfaces (The retired Ohio JFS county-office family now fails at the root/discovery level too: official JFS, Medicaid, and Ohio.gov roots plus robots/sitemaps all return 404, so no live county-office successor contract is verified.)
+- county_local_disability_resources: blocked_live_root_and_sitemap_family_with_dead_directory_and_sample_cdjfs_leafs (Ohio JFS, Medicaid, and Ohio.gov roots plus robots and sitemaps are publicly live again, but the rendered county-directory page, search page, JFS local-agencies root, and sampled `cdjfs-*` county leaves still render public 404 pages, so the county-local contract remains unverified.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_root_and_discovery_surfaces_all_404_after_county_directory_retirement :: Reviewed 2026-06-23 one more bounded live official Ohio county-local pass after the earlier JFS retirement finding. The blocker is now stronger than dead guessed county-directory paths alone: in the current repo-side verification lane, even the official root and discovery surfaces fail closed. `https://jfs.ohio.gov/`, `https://medicaid.ohio.gov/`, and `https://ohio.gov/` all return HTTP 404, and the same is true for `robots.txt` and `sitemap.xml` on each host family. The already-tried legacy and guessed county-directory paths remain dead as well, including `https://jfs.ohio.gov/home/local-agencies-directory`, `https://medicaid.ohio.gov/families-and-individuals/county-agencies`, `https://medicaid.ohio.gov/resources/county-agencies`, and `https://ohio.gov/residents/resources/job-family-services-directory`, all of which still return HTTP 404. This means the blocker is no longer just that a county-office page moved; the bounded lane currently has no live official JFS, Medicaid, or Ohio.gov root/discovery contract from which to verify a county-office successor. The DOI-hosted county dataset therefore remains planning evidence only.
+- county_local_disability_resources: live_root_robots_and_sitemap_recover_but_current_directory_search_and_sample_cdjfs_leafs_render_404 :: Reviewed 2026-06-24 one more bounded live official Ohio county-local pass after the earlier stale-root blocker. The official discovery family is now publicly alive again, so the old 404-at-root claim is no longer true: `https://jfs.ohio.gov/`, `https://medicaid.ohio.gov/`, and `https://ohio.gov/` all return HTTP 200, `robots.txt` now returns HTTP 200 on each host family, and `https://jfs.ohio.gov/sitemap.xml`, `https://medicaid.ohio.gov/sitemap.xml`, and `https://ohio.gov/sitemap.xml` are all publicly reviewable. The live JFS sitemap is materially stronger than before because it now advertises 98 `cdjfs-*` local-agency-directory URLs spanning 88 distinct county slugs. But the rendered county-office lane still fails closed: the current `https://ohio.gov/residents/resources/job-family-services-directory` page renders a public `404 Error Page`, the live `https://ohio.gov/search?query=county%20job%20and%20family%20services` page also renders the same public 404, the parent `https://jfs.ohio.gov/about/local-agencies-directory` root renders a public 404, and sampled exact county leaves such as `https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams`, `.../cdjfs-cuyahoga-3`, and `.../cdjfs-wood` each render the same public 404 page. This means Ohio no longer lacks official roots or discovery surfaces; instead, it now has a live but stale discovery family whose rendered county-directory pages still do not materialize a reviewable county-local office contract. The county-local blocker therefore remains, but with corrected live-root evidence rather than stale all-root 404 claims.
 - district_or_county_education_routing: education_inventory_still_mostly_root_only_after_bounded_leaf_review :: Reviewed 2026-06-23 Ohio school_district source inventory from disk. Only 4 distinct source URLs still preserve any path-level leaf signal, covering just 8 county rows total, while 49 distinct URLs remain generic roots only. The leaf-like URLs are https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts, https://www.scoesc.org/districts, https://www.wbesc.org/our-schools, https://www.mresc.org/districts-we-serve/; that is still not enough county-grade coverage to truthfully clear district_or_county_education_routing statewide.
 
 ## Verified source samples
@@ -41,16 +41,17 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.ohiolegalhelp.org/
 - able_program: verified_state_grade; samples=1; first=https://www.stableaccount.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_retired_official_county_family_and_dead_public_search_surfaces; samples=6; first=https://jfs.ohio.gov/
+- county_local_disability_resources: blocked_live_root_and_sitemap_family_with_dead_directory_and_sample_cdjfs_leafs; samples=8; first=https://jfs.ohio.gov/
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_new_live_official_ohio_county_directory_locator_or_search_index_is_verified
+- [critical] county_local_disability_resources: hold_blocked_until_live_rendered_ohio_county_directory_or_new_public_county_jfs_successor_leaf_is_verified
 - [critical] district_or_county_education_routing: hold_blocked_until_more_exact_district_or_esc_leaf_targets_are_authored
 
 ## Ohio final blocker decision
 
-- County-local disability resources remain blocked because the retired county-office family now fails at the root/discovery level as well: the official JFS, Medicaid, and Ohio.gov roots plus their `robots.txt` and `sitemap.xml` surfaces all return 404 in the bounded lane.
-- The legacy county-directory guesses remain dead, so there is still no live official county-office successor contract to verify.
+- County-local disability resources remain blocked, but the blocker changed shape: the official roots, robots, and sitemaps are live again.
+- The current rendered Ohio county-directory lane still fails closed: the `job-family-services-directory` page, Ohio search results page, JFS `about/local-agencies-directory` root, and sampled `cdjfs-*` county leaves all render public 404 pages.
+- The live JFS sitemap is now discovery evidence only. It advertises 98 `cdjfs-*` entries across 88 county slugs, but those sitemap URLs are not self-proving because sampled rendered leaves remain dead.
 - District or county education routing remains blocked because only a small exact-leaf inventory is on disk and most surviving education URLs are still root-only.
 - Ohio is still truthfully BLOCKED and not index-safe.

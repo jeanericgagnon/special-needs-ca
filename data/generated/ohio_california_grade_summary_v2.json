@@ -2,7 +2,7 @@
   "state": "ohio",
   "state_code": "OH",
   "state_name": "Ohio",
-  "batch": "batch_2_repair_blocked_states_v1",
+  "batch": "batch331_ohio_live_root_recovery_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only",
+  "primary_gap_reason": "live_ohio_jfs_medicaid_and_ohio_gov_roots_plus_robots_and_sitemaps_recover_but_current_directory_search_and_sample_cdjfs_leafs_render_404_while_education_inventory_remains_root_only",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources",
@@ -44,9 +44,9 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_root_and_discovery_surfaces_all_404_after_county_directory_retirement",
-      "evidence": "Reviewed 2026-06-23 one more bounded live official Ohio county-local pass after the earlier JFS retirement finding. The blocker is now stronger than dead guessed county-directory paths alone: in the current repo-side verification lane, even the official root and discovery surfaces fail closed. `https://jfs.ohio.gov/`, `https://medicaid.ohio.gov/`, and `https://ohio.gov/` all return HTTP 404, and the same is true for `robots.txt` and `sitemap.xml` on each host family. The already-tried legacy and guessed county-directory paths remain dead as well, including `https://jfs.ohio.gov/home/local-agencies-directory`, `https://medicaid.ohio.gov/families-and-individuals/county-agencies`, `https://medicaid.ohio.gov/resources/county-agencies`, and `https://ohio.gov/residents/resources/job-family-services-directory`, all of which still return HTTP 404. This means the blocker is no longer just that a county-office page moved; the bounded lane currently has no live official JFS, Medicaid, or Ohio.gov root/discovery contract from which to verify a county-office successor. The DOI-hosted county dataset therefore remains planning evidence only.",
-      "next_action": "hold_blocked_until_new_live_official_ohio_county_directory_locator_or_search_index_is_verified"
+      "failure_code": "live_root_robots_and_sitemap_recover_but_current_directory_search_and_sample_cdjfs_leafs_render_404",
+      "evidence": "Reviewed 2026-06-24 one more bounded live official Ohio county-local pass after the earlier stale-root blocker. The official discovery family is now publicly alive again, so the old 404-at-root claim is no longer true: `https://jfs.ohio.gov/`, `https://medicaid.ohio.gov/`, and `https://ohio.gov/` all return HTTP 200, `robots.txt` now returns HTTP 200 on each host family, and `https://jfs.ohio.gov/sitemap.xml`, `https://medicaid.ohio.gov/sitemap.xml`, and `https://ohio.gov/sitemap.xml` are all publicly reviewable. The live JFS sitemap is materially stronger than before because it now advertises 98 `cdjfs-*` local-agency-directory URLs spanning 88 distinct county slugs. But the rendered county-office lane still fails closed: the current `https://ohio.gov/residents/resources/job-family-services-directory` page renders a public `404 Error Page`, the live `https://ohio.gov/search?query=county%20job%20and%20family%20services` page also renders the same public 404, the parent `https://jfs.ohio.gov/about/local-agencies-directory` root renders a public 404, and sampled exact county leaves such as `https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams`, `.../cdjfs-cuyahoga-3`, and `.../cdjfs-wood` each render the same public 404 page. This means Ohio no longer lacks official roots or discovery surfaces; instead, it now has a live but stale discovery family whose rendered county-directory pages still do not materialize a reviewable county-local office contract. The county-local blocker therefore remains, but with corrected live-root evidence rather than stale all-root 404 claims.",
+      "next_action": "hold_blocked_until_live_rendered_ohio_county_directory_or_new_public_county_jfs_successor_leaf_is_verified"
     },
     {
       "family": "district_or_county_education_routing",
@@ -55,5 +55,8 @@
       "evidence": "Verified exact leaves remain limited to 6 reviewed ESC-owned pages across 8 bounded Ohio packet roots (soesc.org, allencountyesc.org, youresc.k12.oh.us, ashtabulaesc.org, athensmeigs.com, auglaizeesc.org, ecoesc.org, brown.k12.oh.us); this does not truthfully prove district-grade routing statewide.",
       "next_action": "hold_blocked_until_new_exact_district_targets_are_authored"
     }
-  ]
+  ],
+  "familyStatuses": {
+    "county_local_disability_resources": "blocked_live_root_and_sitemap_family_with_dead_directory_and_sample_cdjfs_leafs"
+  }
 }
