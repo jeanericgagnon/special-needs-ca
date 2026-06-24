@@ -351,3 +351,6 @@
 
 ### Closest-Feature Widget Outputs Do Not Create A County Contract
 *   **Lesson:** If a public ArcGIS ExperienceBuilder app only adds a geocoder output and a closest-feature output whose schema simply mirrors the office layer, that is not a hidden county-assignment bridge. Nebraska’s refreshed app still resolved only to the same office contact fields and a two-layer web map with zero tables, so the county-local blocker stayed final.
+
+### Legacy Subtrees That Canonicalize Into The Same Challenge Shell Do Not Create A Second Lane
+*   **Lesson:** If legacy agency program paths now canonicalize into the same challenged successor host, collapse them into one blocker instead of treating the legacy subtree as a separate reviewable lane. Alaska `dhss.alaska.gov/dpa/...` now lands on `health.alaska.gov/dpa` and still returns the same Cloudflare shell, so the legacy host no longer preserves an independent office-routing contract.

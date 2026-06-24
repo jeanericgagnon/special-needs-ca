@@ -147,11 +147,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_phone_only_dfcs_relay_plus_publications_without_dpa_terms_plus_dfcs_search_shell_without_public_results_plus_current_health_host_403_and_legacy_dhss_dpa_subtree_403"
+        "county_local_disability_resources": "blocked_phone_only_dfcs_relay_plus_dfcs_site_map_with_wrong_role_ocs_office_leaf_plus_search_without_public_results_plus_legacy_dpa_canonicalization_into_health_host_challenge"
       },
       "packetGenerated": true,
-      "packetBatch": "batch312_alaska_alt_host_publications_finality_v1",
-      "packetPrimaryGapReason": "live_dfcs_services_and_publications_surfaces_still_expose_no_dpa_or_borough_mapping_while_dfcs_search_self_posts_without_results_and_alt_health_legacy_hosts_fail_closed",
+      "packetBatch": "batch322_alaska_legacy_canonicalization_finality_v1",
+      "packetPrimaryGapReason": "live_dfcs_services_publications_search_and_site_map_still_expose_no_dpa_or_borough_mapping_and_only_surface_wrong_role_ocs_offices_while_legacy_dhss_dpa_paths_now_canonicalize_into_same_challenged_health_host",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
