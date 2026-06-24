@@ -348,3 +348,6 @@
 
 ### Recovered Official Contact Hubs Still Fail If They Explicitly Defer Local Office Proof
 *   **Lesson:** If a formerly blocked official contacts page comes back live, re-check it before preserving the old shell blocker, but do not upgrade it unless it actually carries county-grade routing. Utah DHHS `contacts/` recovered to HTTP 200, yet it still acted only as a central contacts hub: it routed community discovery to Utah 211 and explicitly told users to visit division or program pages for local office information, so the county-local family stayed blocked.
+
+### Closest-Feature Widget Outputs Do Not Create A County Contract
+*   **Lesson:** If a public ArcGIS ExperienceBuilder app only adds a geocoder output and a closest-feature output whose schema simply mirrors the office layer, that is not a hidden county-assignment bridge. Nebraska’s refreshed app still resolved only to the same office contact fields and a two-layer web map with zero tables, so the county-local blocker stayed final.

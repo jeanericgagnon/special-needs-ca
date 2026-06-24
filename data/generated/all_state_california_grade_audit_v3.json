@@ -12,7 +12,7 @@
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a new blocker lesson: city-or-ZIP office-search bundles still fail county-grade routing.",
+  "lessonsUpdate": "Added a new blocker lesson: closest-feature widget outputs still do not create a county contract.",
   "states": [
     {
       "stateId": "alabama",
@@ -1927,11 +1927,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_republished_public_office_experience_still_without_assignment_contract"
+        "county_local_disability_resources": "blocked_republished_public_office_stack_without_hidden_assignment_bridge"
       },
       "packetGenerated": true,
-      "packetBatch": "batch317_nebraska_republished_config_finality_v1",
-      "packetPrimaryGapReason": "freshly_republished_public_office_experience_still_only_wraps_42_offices_37_distinct_counties_and_no_statewide_assignment_contract",
+      "packetBatch": "batch320_nebraska_webmap_no_hidden_table_finality_v1",
+      "packetPrimaryGapReason": "recovered_public_office_stack_still_has_no_hidden_table_assignment_bridge_and_only_42_offices_for_93_counties",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

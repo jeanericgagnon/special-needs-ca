@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 93
-- primary_gap_reason: freshly_republished_public_office_experience_still_only_wraps_42_offices_37_distinct_counties_and_no_statewide_assignment_contract
+- primary_gap_reason: recovered_public_office_stack_still_has_no_hidden_table_assignment_bridge_and_only_42_offices_for_93_counties
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Legal Aid of Nebraska evidence now provides a real statewide civil legal-aid route.)
 - able_program: verified_state_grade (Statewide evidence is present at the required authority level.)
 - ssi_ssa_federal_reference: verified_state_grade (Statewide evidence is present at the required authority level.)
-- county_local_disability_resources: blocked_republished_public_office_experience_still_without_assignment_contract (Reviewed 2026-06-24 one more bounded official Nebraska county-local pass and found the public office experience has been freshly republished, but not materially improved for county-grade routing. The ExperienceBuilder item data and `config/config.json` now carry fresh publication timestamps, yet they still bind only the same public office layer, county boundary layer, closest-office widget output, and geocoding utilities. The public FeatureServer still has 42 office rows versus 93 county rows, layer 0 still has no relationships and only contact-style fields plus `USER_County`, layer 1 still has no relationships and only county-boundary fields, and the distinct-county query still returns only 37 county values with no multi-county service-area strings. Nebraska therefore still lacks a public statewide county-to-office assignment contract.)
+- county_local_disability_resources: blocked_republished_public_office_stack_without_hidden_assignment_bridge (Reviewed 2026-06-24 one more bounded official Nebraska county-local pass and confirmed the refreshed public ArcGIS stack still has no hidden county-assignment bridge. The ExperienceBuilder app is fresh, but its web map still carries only two operational layers and zero tables; the only widget output is a closest-feature office layer that mirrors the same office contact schema; the public FeatureServer still has 42 office rows versus 93 county rows; both layers still expose empty relationships; and the distinct office-county query still returns only 37 county values. Nebraska therefore still lacks a public statewide county-to-office assignment contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: freshly_republished_public_office_experience_still_only_wraps_42_offices_37_distinct_counties_and_no_statewide_assignment_contract :: Reviewed 2026-06-24 one more bounded official Nebraska county-local pass on the live ArcGIS publication surfaces. `https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json` now shows a fresh published config timestamp (`1772143020147`), and the item resource list at `.../resources?f=json` now shows `config/config.json` recreated at `1772143020199`. But that freshly published experience still only wraps the same office lookup page, public office layer, county boundary layer, closest-office widget output, and geocoding utilities. The public FeatureServer root still reports `supportedExportFormats: sqlite,filegdb,shapefile,csv,geojson`; layer 0 still returns `relationships: []`; layer 1 still returns `relationships: []`; the office count query still returns `42`; the county boundary count query still returns `93`; and the distinct county query on `USER_County` still returns only 37 county values. The item info endpoint still returns `Info file for item not found`, and the resource list still contains only `config/config.json` plus image assets. Nebraska therefore still has a freshly republished public office experience but no public statewide county-to-office assignment contract.
+- county_local_disability_resources: recovered_public_office_stack_still_has_no_hidden_table_assignment_bridge_and_only_42_offices_for_93_counties :: Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across the live DHHS and ArcGIS publication stack. `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is still only the SharePoint wrapper for the locator, not a county directory leaf. The refreshed ExperienceBuilder item data at `https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json` still exposes only one web map data source (`4bdbf8e8703743b0b2ff290f98737825`), one closest-feature office output, and one geocoder output. The underlying public web map data at `https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/data?f=json` still carries exactly two operational layers (`FeatureServer/0` offices and `FeatureServer/1` counties) and zero tables. The closest-feature output schema in the app still mirrors the office layer fields (`USER_Address_1`, `USER_City`, `USER_County`, phones, hours) rather than any county-assignment table. The public FeatureServer still reports 42 office rows against 93 county rows, both layers still expose `relationships: []`, and the distinct office-county query still returns only 37 county values. Nebraska therefore still has no hidden table, related record, or published county-assignment bridge anywhere on the current public stack.
 
 ## Verified source samples
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=https://legalaidofnebraska.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_republished_public_office_experience_still_without_assignment_contract; samples=5; first=https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json
+- county_local_disability_resources: blocked_republished_public_office_stack_without_hidden_assignment_bridge; samples=7; first=https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx
 
 ## Next actions
 
@@ -51,6 +51,6 @@
 - Nebraska remains BLOCKED and index_safe=false.
 - district_or_county_education_routing remains verified_county_grade through the official county-selectable NDE directory host.
 - county_local_disability_resources remains the only critical blocker.
-- The public ArcGIS office experience has been freshly republished, but it still republishes the same office and county layers without any county-assignment bridge.
+- The refreshed ArcGIS app still exposes only a two-layer web map, no tables, and a closest-feature office output that mirrors the same contact-card schema.
 - The official public stack still stops at 42 office rows, 93 county rows, empty relationships, and only 37 distinct office counties.
 - Nebraska therefore still lacks a public statewide county-to-office assignment contract.

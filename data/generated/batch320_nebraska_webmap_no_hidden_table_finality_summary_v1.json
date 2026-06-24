@@ -1,0 +1,16 @@
+{
+  "batch": "batch320_nebraska_webmap_no_hidden_table_finality_v1",
+  "generated_at": "2026-06-24T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "recovered_public_office_stack_still_has_no_hidden_table_assignment_bridge_and_only_42_offices_for_93_counties",
+  "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published",
+  "office_count": 42,
+  "county_count": 93,
+  "distinct_office_counties": 37,
+  "webmap_operational_layers": 2,
+  "webmap_tables": 0,
+  "closest_feature_output_mirrors_office_schema": true,
+  "lessons_updated": false
+}
