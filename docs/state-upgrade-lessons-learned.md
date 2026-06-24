@@ -259,6 +259,9 @@
 ### A Live Official Office-Search App Shell Still Does Not Clear County-Grade Routing Without Public Office Rows
 *   **Lesson:** A live official office-search app is only enough when the public surface itself exposes office rows, addresses, county filters, or another reusable county-to-office contract. Utah's DWS contact page now points to a real `office-search` app, but the raw public shell only exposes map/search controls; without a county list or public office extract, the county-local blocker remains.
 
+### Public SharePoint Lists Behind Custom Components Can Be County-Grade Contracts
+*   **Lesson:** If a live official office-finder page only renders a custom component shell, inspect the first-party bundle for list titles before freezing the blocker. Oregon looked blocked at the HTML level, but the same official SharePoint host publicly exposed an `Office Locations` list whose `County` multi-choice field, office contacts, and 36-county coverage closed the county-local family without county-by-county rediscovery.
+
 ### Official Site Search Can Recover A Live County Service Leaf After A Stale Nav Link
 *   **Lesson:** If an official county services index exposes a promising local-support label but the direct nav slug 404s, run one bounded first-party site-search pass before freezing the county. Storey County's `County Services` page linked a stale `/530/Senior-Center` slug, but the county's own search results surfaced the live `Health & Community Services` leaf that preserved countywide senior and community-service routing plus direct contacts.
 

@@ -1,6 +1,6 @@
 # All-State California-Grade Audit Report v3
 
-This v3 audit closes the packet-coverage gap across all 50 states. It does not claim broader California-grade completion beyond the states currently marked COMPLETE by packet evidence.
+This v3 audit tracks packet-backed California-grade truth across all 50 states. A state is only index-safe when every critical family is verified by current official or first-party evidence.
 
 ## Packet coverage
 
@@ -9,16 +9,20 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Classification counts
 
-- COMPLETE: 25
-- BLOCKED: 25
+- COMPLETE: 26
+- BLOCKED: 24
+- index-safe states: 26
 
-- index-safe states: 25
-- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Pennsylvania, South Carolina, Texas
-- blocked states: Alaska, Arizona, Florida, Idaho, Kansas, Maine, Massachusetts, Minnesota, Nebraska, New Hampshire, New Mexico, North Dakota, Ohio, Oklahoma, Oregon, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming
+## State lists
+
+- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Texas
+- blocked states: Alaska, Arizona, Florida, Idaho, Kansas, Maine, Massachusetts, Minnesota, Nebraska, New Hampshire, New Mexico, North Dakota, Ohio, Oklahoma, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming
 
 ## Notes
 
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
-- The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
-- The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
+- New York remains COMPLETE/index-safe from the official OTDA county-local successor leaves.
+- Oregon is now COMPLETE/index-safe because the live ODHS office-finder exposes a public `Office Locations` SharePoint list with county arrays covering all 36 counties.
+- Oklahoma remains blocked because the live OKDHS KML only proves 45 benefit-capable counties and the remaining 32 counties still lack a verified public disability/local-routing contract.
+- Ohio is now the next focus state because county-local routing is still root-dead and district/ESC routing is still mostly inventory-only.

@@ -6,7 +6,7 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Pennsylvania, South Carolina, Texas
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Texas
 
 ## Current Blocked States
 
@@ -24,7 +24,6 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Ohio: `official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only`
 - Oklahoma: `live_okdhs_kml_only_yields_45_benefit_capable_counties_while_tanf_only_access_points_and_child_support_only_county_tree_cannot_close_the_remaining_32`
-- Oregon: `live_odhs_office_finder_is_only_a_custom_component_shell_with_no_public_county_extract_query_contract_or_api_surface`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
@@ -36,42 +35,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oklahoma
+## Current Focus State: Ohio
 
 ### Blocker Reason
 
-`county_local_disability_resources` remains the top Oklahoma blocker. The live OKDHS office-map KML is real, but a stricter role-aware review shows it only yields 45 benefit-capable counties once TANF-only access points are excluded. The same first-party host still proves county trees are technically publishable for child-support offices, but not yet for the missing disability/local-routing remainder.
+`official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only`
 
 ### Exact Evidence Needed
 
-- Any current official Oklahoma county-local office directory or export that closes the 32-county remainder on the OKDHS host.
-- Any official county-owned or state-owned successor leaves that explicitly map the unresolved counties to public assistance or disability-routing offices.
-- Any public API, CSV, JSON, ArcGIS, or HTML contract on the official host that exposes the missing county assignments directly.
+- Any live official Ohio county-local JFS, Medicaid, or Ohio.gov successor directory, locator, search index, or export that replaces the retired county-office family.
+- Any public official county-office contract that stays live on the current Ohio host family instead of the dead 404 roots.
+- More exact district-owned or ESC-owned local routing leaves so education can move beyond the current tiny reviewed inventory.
 
 ### Useful Official URLs Already Tried
 
-- [Oklahoma DHS Office Locator](https://oklahoma.gov/okdhs/library/maps.html)
-- [Oklahoma DHS Offices map](https://oklahoma.gov/okdhs/about/okdhs-offices.html)
-- [Oklahoma Human Services Contact Us](https://oklahoma.gov/okdhs/contact-us.html)
-- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)
-- [Oklahoma Child Support offices tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)
-- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)
+- [Ohio JFS root](https://jfs.ohio.gov/)
+- [Ohio Medicaid root](https://medicaid.ohio.gov/)
+- [Ohio.gov root](https://ohio.gov/)
+- [Ohio JFS local agencies directory guess](https://jfs.ohio.gov/home/local-agencies-directory)
+- [Ohio Medicaid county agencies guess](https://medicaid.ohio.gov/families-and-individuals/county-agencies)
+- [Ohio Medicaid resources county agencies guess](https://medicaid.ohio.gov/resources/county-agencies)
+- [Ohio.gov Job and Family Services directory guess](https://ohio.gov/residents/resources/job-family-services-directory)
+- [NPESC districts leaf](https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts)
+- [SCOESC districts leaf](https://www.scoesc.org/districts)
+- [WBESC schools leaf](https://www.wbesc.org/our-schools)
+- [MRESC districts served leaf](https://www.mresc.org/districts-we-serve/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any exact official OKDHS county-office export or county-filter contract that covers the unresolved counties.
-- Any official county-level benefit or disability-routing leaf linked from the same host but not yet packeted.
-- The current measured county remainder is: Adair, Alfalfa, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
+- Reviewed 2026-06-23 one more bounded live official Ohio county-local pass after the earlier JFS retirement finding. The blocker is now stronger than dead guessed county-directory paths alone: in the current repo-side verification lane, even the official root and discovery surfaces fail closed. `https://jfs.ohio.gov/`, `https://medicaid.ohio.gov/`, and `https://ohio.gov/` all return HTTP 404, and the same is true for `robots.txt` and `sitemap.xml` on each host family. The already-tried legacy and guessed county-directory paths remain dead as well, including `https://jfs.ohio.gov/home/local-agencies-directory`, `https://medicaid.ohio.gov/families-and-individuals/county-agencies`, `https://medicaid.ohio.gov/resources/county-agencies`, and `https://ohio.gov/residents/resources/job-family-services-directory`, all of which still return HTTP 404. This means the blocker is no longer just that a county-office page moved; the bounded lane currently has no live official JFS, Medicaid, or Ohio.gov root/discovery contract from which to verify a county-office successor. The DOI-hosted county dataset therefore remains planning evidence only.
+- Reviewed 2026-06-23 Ohio school_district source inventory from disk. Only 4 distinct source URLs still preserve any path-level leaf signal, covering just 8 county rows total, while 49 distinct URLs remain generic roots only. The leaf-like URLs are https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts, https://www.scoesc.org/districts, https://www.wbesc.org/our-schools, https://www.mresc.org/districts-we-serve/; that is still not enough county-grade coverage to truthfully clear district_or_county_education_routing statewide.
 
-## Next State Order After Oklahoma
+## Next State Order After Ohio
 
-1. Oregon
-2. Ohio
-3. Minnesota
-4. Maine
-5. Idaho
-6. Arizona
-7. Massachusetts
-8. New Mexico
-9. South Dakota
-10. Rhode Island
+1. Minnesota
+2. Maine
+3. Idaho
+4. Arizona
+5. Massachusetts
+6. New Mexico
+7. South Dakota
+8. Rhode Island
+9. Virginia
+10. West Virginia

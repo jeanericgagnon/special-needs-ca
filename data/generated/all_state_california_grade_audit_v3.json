@@ -2,10 +2,10 @@
   "generatedAt": "2026-06-24T21:47:37.073Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 25,
-    "BLOCKED": 25
+    "COMPLETE": 26,
+    "BLOCKED": 24
   },
-  "indexSafeCount": 25,
+  "indexSafeCount": 26,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -2588,8 +2588,8 @@
       "stateId": "oregon",
       "stateCode": "OR",
       "stateName": "Oregon",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -2597,11 +2597,11 @@
       "legacyManualReviewRate": 57.75,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 36,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "oregon",
         "state_code": "OR",
@@ -2647,12 +2647,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_office_finder_shell_without_public_county_contract"
+        "county_local_disability_resources": "verified_county_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_11_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "live_odhs_office_finder_is_only_a_custom_component_shell_with_no_public_county_extract_query_contract_or_api_surface",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch325_oregon_public_office_locations_api_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "pennsylvania",

@@ -1,0 +1,13 @@
+{
+  "batch": "batch325_oregon_public_office_locations_api_completion_v1",
+  "generated_at": "2026-06-24T00:00:00.000Z",
+  "state": "oregon",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "officeFinderRootVerified": true,
+  "officeLocationsApiVerified": true,
+  "officeLocationRowCount": 269,
+  "distinctCountyCount": 36,
+  "countyCoverageComplete": true,
+  "countyFieldPublic": true
+}
