@@ -1,0 +1,14 @@
+{
+  "batch": "batch311_new_york_mybenefits_begin_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "health_ldss_status": 403,
+  "otda_heap_contacts_status": "connection_reset",
+  "otda_root_status": "connection_reset",
+  "mybenefits_root_status": 200,
+  "mybenefits_final_url": "https://mybenefits.ny.gov/mybenefits/begin",
+  "lessons_updated": false
+}

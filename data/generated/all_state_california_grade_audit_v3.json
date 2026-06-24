@@ -2297,11 +2297,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_health_hostwide_403"
+        "county_local_disability_resources": "blocked_health_hostwide_403_plus_otda_successor_resets_plus_mybenefits_begin_without_county_local_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_302_new_york_mybenefits_successor_finality_v1",
-      "packetPrimaryGapReason": "nygov_linked_exact_otda_and_mybenefits_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable",
+      "packetBatch": "batch311_new_york_mybenefits_begin_refresh_v1",
+      "packetPrimaryGapReason": "nygov_links_exact_otda_successor_leaves_that_still_reset_while_mybenefits_begin_page_recovers_without_county_local_contract_and_health_ny_ldss_family_remains_unusable",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

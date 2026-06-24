@@ -324,3 +324,6 @@
 
 ### A Recovered Public Shell Still Does Not Reopen A County-Result Lane
 *   **Lesson:** If a previously blocked public SPA host comes back to HTTP 200 on the root, public entry, config, and asset-manifest paths, rerun the exact contract but do not treat the host as repaired until it exposes anonymous result data. Florida MyACCESS recovered to a readable shell, yet `officeMapping` still only pointed to a shell `/dataexchangeproxy` route and the county-result endpoints still returned `401 Unauthorized`.
+
+### A Recovered Benefits Portal Begin Page Is Not County-Local Proof By Itself
+*   **Lesson:** If a benefits portal root recovers from a reset and lands on a public begin page, verify whether that page actually exposes county or district routing before treating the host as repaired. New York `mybenefits.ny.gov` recovered to `/mybenefits/begin`, but the page still only exposed portal/login navigation and links back to OTDA paths, not a county-local district office contract.

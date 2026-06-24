@@ -21,7 +21,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Nebraska: `official_published_resource_list_contains_only_config_and_static_assets_while_no_metadata_or_hidden_assignment_artifact_exists`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
-- New York: `nygov_linked_exact_otda_and_mybenefits_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable`
+- New York: `nygov_links_exact_otda_successor_leaves_that_still_reset_while_mybenefits_begin_page_recovers_without_county_local_contract_and_health_ny_ldss_family_remains_unusable`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Ohio: `official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only`
 - Oklahoma: `live_okdhs_general_office_map_only_materializes_46_counties_while_same_host_child_support_tree_proves_county_contracts_exist_but_not_for_disability_local_routing`
@@ -37,53 +37,49 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: New York
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The live DFCS successor host still only gives statewide phone routing, the public DFCS search lane still dies at the search shell itself, the current `health.alaska.gov` DPA family still returns Cloudflare `Just a moment...` 403 shells, and the legacy `dhss.alaska.gov` DPA subtree remains blocked even though the legacy root is still partially public.
+`county_local_disability_resources` is the only remaining New York critical blocker. The old `health.ny.gov` LDSS family still fails host-wide, the exact OTDA successor leaves still reset, and although `mybenefits.ny.gov` now lands on a public begin page, that recovered portal surface still does not expose county-local district office routing.
 
 ### Exact Evidence Needed
 
-- Any official Alaska surface that maps boroughs or census areas to DPA or Medicaid office locations on a publicly reviewable host.
-- Any reviewable successor office locator or directory that lives on `dfcs.alaska.gov`, `dhss.alaska.gov`, or another current official Alaska host instead of only on the challenge-blocked `health.alaska.gov` family.
-- Any official document, export, or table that explicitly enumerates Alaska borough or census-area coverage for public assistance office routing.
+- Any official New York surface that maps counties or local social services districts to Medicaid / HEAP / public assistance office contacts on a publicly reviewable host.
+- Any exact OTDA successor leaf that becomes reviewable and preserves local district office contact or county-local routing.
+- Any county-owned or state-managed local district directory that publicly replaces the old `health.ny.gov` LDSS lane.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
-- [Alaska DFCS Search results endpoint](https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance)
-- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
-- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [Alaska DFCS robots.txt](https://dfcs.alaska.gov/robots.txt)
-- [Alaska DFCS sitemap.xml](https://dfcs.alaska.gov/sitemap.xml)
-- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
-- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
-- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska health robots.txt](https://health.alaska.gov/robots.txt)
-- [Legacy DHSS root](https://dhss.alaska.gov/)
-- [Legacy DHSS robots.txt](https://dhss.alaska.gov/robots.txt)
-- [Legacy DHSS sitemap.xml](https://dhss.alaska.gov/sitemap.xml)
-- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
-- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
-- [Legacy DHSS DPA contacts](https://dhss.alaska.gov/dpa/Pages/contacts.aspx)
+- [New York LDSS directory](https://www.health.ny.gov/health_care/medicaid/ldss.htm)
+- [New York health robots.txt](https://www.health.ny.gov/robots.txt)
+- [New York health sitemap.xml](https://www.health.ny.gov/sitemap.xml)
+- [New York Medicaid root](https://www.health.ny.gov/health_care/medicaid/)
+- [New York Social Programs portal](https://www.ny.gov/services/social-programs)
+- [Apply for Cooling Assistance](https://www.ny.gov/services/apply-cooling-assistance)
+- [OTDA HEAP Local District Contact](https://otda.ny.gov/programs/heap/contacts/)
+- [OTDA HEAP root](https://otda.ny.gov/programs/heap/)
+- [OTDA application PDF](https://otda.ny.gov/programs/applications/4826.pdf)
+- [OTDA DSS locator attempt](https://otda.ny.gov/workingfamilies/dss.asp)
+- [OTDA root](https://otda.ny.gov/)
+- [OTDA www root](https://www.otda.ny.gov/)
+- [myBenefits root](https://mybenefits.ny.gov/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current Alaska host outside the challenged `health.alaska.gov` family that now publishes a borough- or census-area DPA office directory.
-- Any official Alaska PDF, spreadsheet, or office-contact table that names specific borough or census-area coverage for public assistance offices.
-- Any future public relaxation on either the `health.alaska.gov` or legacy `dhss.alaska.gov` DPA subtree that makes office-routing leaves scraper-reviewable.
+- Any public OTDA contact or applications surface that stops resetting and becomes reviewable in the bounded lane.
+- Any county-owned or state-owned local district office directory explicitly linked from current `ny.gov`, OTDA, or MyBenefits surfaces.
+- Any public page on the recovered MyBenefits host that goes beyond portal begin/login flow and actually preserves county-local contact routing.
 
-## Next State Order After Alaska
+## Next State Order After New York
 
-1. New York
-2. Oklahoma
-3. Oregon
-4. Ohio
-5. Minnesota
-6. Maine
-7. Idaho
-8. Arizona
-9. Massachusetts
-10. New Mexico
+1. Oklahoma
+2. Oregon
+3. Ohio
+4. Minnesota
+5. Maine
+6. Idaho
+7. Arizona
+8. Massachusetts
+9. New Mexico
+10. South Dakota
