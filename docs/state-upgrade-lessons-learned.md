@@ -369,3 +369,6 @@
 
 ### Public ExperienceBuilder Configs Can Prove The Missing Datasource
 *   **Lesson:** If an official ExperienceBuilder app republishes but still feels ambiguous, read the public `resources/config/config.json` directly. Nebraska’s public config made the blocker more explicit: it referenced only one web map, one `closest feature` output layer, and the geocoder widget, which proved there was still no hidden county-assignment datasource behind the county-local office stack.
+
+### Zip Or City Office Search UI Still Does Not Prove County Routing
+*   **Lesson:** If a live official office-search shell explicitly limits its public lookup UI to `Zip Code or City`, that narrows the contract instead of rescuing county-grade proof. Utah’s recovered DWS office-search shell now makes the public rule visible in the footer itself, but because the shell still routes only to `search/<zip-or-city>` or `map` and the public APIs still expose no county or service-area field, the county-local family remains blocked.
