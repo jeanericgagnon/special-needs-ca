@@ -35,45 +35,50 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Kansas
+## Current Focus State: Nebraska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 22/105 counties from preserved district-owned or district-linked local leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Marshall now clears because the official Marysville USD 364 sitemap exposes an `mcsec` subtree, and the fetched `Special Education Eligibility` page preserves Marshall County Special Education Coop evidence on the district-owned host. Kansas remains BLOCKED and not index-safe because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
+`county_local_disability_resources` is the only remaining Nebraska critical blocker. The public office stack is live, but the public ExperienceBuilder config still proves there is no county-assignment datasource: `resources/config/config.json` still references only one web map item, one `closest feature` output layer, and the geocoder search widget. A fresh same-host DHHS pass now sharpens the negative proof too: `economic-assistance.aspx`, `Contact-DHHS.aspx`, and `DD-Contact-Us.aspx` each preserve `Local DHHS Offices` only as a loop back to `Public-Assistance-Offices.aspx`, not as a county directory leaf. The underlying public web map still has only two operational layers and zero tables, while the public FeatureServer still stops at 42 office rows, 93 county rows, empty relationships, and only 37 distinct office counties. Nebraska therefore remains BLOCKED and not index-safe because there is still no public statewide county-to-office assignment bridge anywhere on the official stack.
 
 ### Exact Evidence Needed
 
-- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
-- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
-- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
+- Any official Nebraska DHHS county-to-office assignment table, export, or service-area artifact that maps all 93 counties to public assistance offices.
+- Any public ArcGIS table, related layer, popup expression, output schema, or config datasource on the current office stack that explicitly enumerates served counties, assigned counties, or coverage areas for each office.
+- Any exact first-party DHHS county office page or county directory leaf that publishes county coverage instead of only contact-card inventory or a loop back to the current wrapper page.
 
 ### Useful Official URLs Already Tried
 
-- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
-- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
-- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
-- [Marysville USD 364 sitemap](https://www.usd364.org/sitemap.xml)
-- [Marshall County Special Education Coop eligibility page](https://www.usd364.org/o/mcsec/page/special-education-eligibility/)
-- [Marshall County Special Education Coop parent resources](https://www.usd364.org/o/mcsec/page/parent-resources/)
-- [Great Bend USD 428 BCSS Child Find](https://sites.google.com/usd428.net/bartoncountyss/child-find)
-- [Hutchinson Public Schools Special Education / Parental Rights folder](https://www.usd308.com/documents/resources/parent-resources/special-education/parental-rights/173274)
-- [McPherson County Special Education Cooperative](https://mccsec.mcpherson.com/)
+- [Nebraska DHHS Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
+- [Nebraska DHHS Economic Assistance](https://dhhs.ne.gov/Pages/economic-assistance.aspx)
+- [Nebraska DHHS Contact DHHS](https://dhhs.ne.gov/Pages/Contact-DHHS.aspx)
+- [Nebraska DD Contact Us](https://dhhs.ne.gov/Pages/DD-Contact-Us.aspx)
+- [ExperienceBuilder item data](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
+- [ExperienceBuilder resource list](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources?f=json)
+- [ExperienceBuilder config resource](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources/config/config.json?f=json)
+- [Nebraska public office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
+- [Nebraska public office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
+- [Nebraska county boundary layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1?f=pjson)
+- [Nebraska public web map item data](https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/data?f=json)
+- [Nebraska office count query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json)
+- [Nebraska county count query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1/query?where=1%3D1&returnCountOnly=true&f=json)
+- [Nebraska distinct county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
 
 ### Top Remaining Source-Scouting Targets
 
-- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
-- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or similar.
-- Additional district-owned document-folder or CMS routes like the Hays USD 489, Hutchinson USD 308, and Marysville USD 364 recoveries, but only on already-preserved district domains.
+- Any official Nebraska DHHS county assignment export or service-area table attached to the existing office stack.
+- Any new public ArcGIS resource, web map table, config datasource, or output field that explicitly carries county assignment data rather than only office contact fields.
+- An exact first-party county office page or county directory leaf on `dhhs.ne.gov` that publishes county coverage instead of only wrapper-page loops or wrong-role local health department links.
 
-## Next State Order After Kansas
+## Next State Order After Nebraska
 
-1. Nebraska
-2. Florida
-3. Alaska
-4. Oklahoma
-5. Ohio
-6. Minnesota
-7. Maine
-8. Idaho
-9. Arizona
-10. Massachusetts
+1. Florida
+2. Alaska
+3. Oklahoma
+4. Ohio
+5. Minnesota
+6. Maine
+7. Idaho
+8. Arizona
+9. Massachusetts
+10. New Mexico
