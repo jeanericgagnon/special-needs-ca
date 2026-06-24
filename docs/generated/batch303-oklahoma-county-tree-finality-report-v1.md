@@ -1,0 +1,9 @@
+# Batch 303 Oklahoma County Tree Finality Report v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: sharpened the Oklahoma blocker from incomplete office-map coverage alone to a same-host contrast between county-capable child-support pages and still-incomplete general office routing
+
+## Evidence
+
+- Reviewed 2026-06-23 one more bounded official Oklahoma county-local replacement lane on the live Oklahoma Human Services host. The old `https://dhhs.oklahoma.gov/locations` host still fails DNS, but the current successor root is no longer unknown: `https://oklahoma.gov/okdhs/contact-us.html` explicitly says `If you’re looking for your local office, you’re in the right place` and embeds a public Google My Maps dataset. That KML feed is publicly reachable at `https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1` and preserves real office evidence, but only for 60 placemarks and 46 county-keyed locations after bounded review of `County Name` fields plus county-named `Access Point` rows. One more bounded host recheck now sharpens the blocker further: the same `oklahoma.gov/okdhs` host does publish a county-grade contract when it intends to, because `https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html` exposes a `By County` accordion with county-named leaves across the state. But that tree is explicitly `Child Support District Offices`, so it cannot be substituted as disability-resource proof. The live DDS apply page at `https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html` is still only a statewide intake route with one phone/email and no county-served matrix. Oklahoma therefore remains blocked because the general Human Services local-office lane still does not materialize a full 77-county disability/local-routing contract even though the same host proves county trees are technically publishable for service-specific programs.

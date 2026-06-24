@@ -1,0 +1,12 @@
+{
+  "batch": "batch_303_oklahoma_county_tree_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "oklahoma",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "liveSuccessorOfficeMapVerified": true,
+  "officeMapCountyCoverageCount": 46,
+  "remainingCountyGapCount": 31,
+  "childSupportCountyTreeVerified": true,
+  "ddsStatewideOnlyVerified": true
+}
