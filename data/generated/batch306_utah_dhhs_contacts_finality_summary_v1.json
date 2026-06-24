@@ -1,0 +1,21 @@
+{
+  "state": "utah",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "utah_dhhs_contacts_county_map_text_and_live_dws_office_stack_still_fail_to_expose_county_service_area_contract",
+  "official_contacts_page": "https://dhhs.utah.gov/contacts/",
+  "contacts_page_signals": [
+    "county-click service map mentioned",
+    "search by type mentioned",
+    "local office information deferred to division/program pages"
+  ],
+  "surviving_local_stack": "https://jobs.utah.gov/office-search/",
+  "surviving_local_stack_limits": [
+    "city search only",
+    "zip search only",
+    "no county field",
+    "no counties-served field"
+  ],
+  "next_action": "hold_blocked_until_public_utah_successor_directory_api_or_reviewable_leaf_explicitly_maps_counties_to_local_disability_resource_offices"
+}

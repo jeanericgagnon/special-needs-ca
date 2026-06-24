@@ -24,3 +24,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Ohio remains blocked on two families, and the top county-local blocker is now tighter: the official JFS, Medicaid, and Ohio.gov root/discovery surfaces themselves all 404 in the bounded lane, so there is no live official county-office successor contract to verify.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
+- Utah county-local routing is now explicitly sharpened past the statewide shells: the DHHS contacts page mentions a county-click service map but still exposes no county office assignments and tells users to visit division/program pages for local office information, while the DWS office-search stack remains city/ZIP-only and still lacks county/service-area fields.

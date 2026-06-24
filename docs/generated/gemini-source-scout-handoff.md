@@ -37,48 +37,47 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Ohio
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-Ohio still has two critical blockers, but the highest-priority one is `county_local_disability_resources`. The county-local lane is no longer just blocked by dead guessed directory paths; in the current bounded lane, even the official JFS, Medicaid, and Ohio.gov root/discovery surfaces return 404, so there is no live official successor contract to verify.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, but one more bounded official review on `https://dhhs.utah.gov/contacts/` confirms Utah still does not expose a county-grade disability-office contract. The reviewed official contacts page says users can find services by clicking on a county in the map below or by using the search bar to find services by type, but the public text still does not expose county-by-county office rows, county-to-disability-office assignments, or a reusable local-office export; it also tells users to visit specific division or program pages for local office information. The DWS office-search lane remains the closest reviewed local-office stack, but it still only exposes a city/ZIP-oriented first-party bundle plus office inventory rows without county or counties-served fields. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- A live official Ohio county-office directory, locator, search index, sitemap, or county-owned JFS contract that is publicly reviewable in the current lane.
-- Any current JFS, Medicaid, or Ohio.gov successor page that explicitly enumerates county agencies or links to county-owned office leaves.
-- For education later: more exact district or ESC leaves beyond the tiny current inventory.
+- Any public Utah successor directory, export, or leaf set that explicitly maps counties to local DWS, DHHS, or disability-resource offices.
+- Any reviewed first-party page behind the DHHS county-click service map that actually materializes county-local disability office assignments.
+- Any public office API field or companion endpoint that adds `county`, `countiesServed`, or equivalent service-area assignments to the current Utah office inventory.
 
 ### Useful Official URLs Already Tried
 
-- [JFS root](https://jfs.ohio.gov/)
-- [JFS robots.txt](https://jfs.ohio.gov/robots.txt)
-- [JFS sitemap.xml](https://jfs.ohio.gov/sitemap.xml)
-- [Legacy JFS county directory](https://jfs.ohio.gov/home/local-agencies-directory)
-- [Medicaid root](https://medicaid.ohio.gov/)
-- [Medicaid robots.txt](https://medicaid.ohio.gov/robots.txt)
-- [Medicaid sitemap.xml](https://medicaid.ohio.gov/sitemap.xml)
-- [Guessed Medicaid county agencies path](https://medicaid.ohio.gov/families-and-individuals/county-agencies)
-- [Ohio.gov root](https://ohio.gov/)
-- [Ohio.gov robots.txt](https://ohio.gov/robots.txt)
-- [Ohio.gov sitemap.xml](https://ohio.gov/sitemap.xml)
-- [Guessed Ohio.gov county directory](https://ohio.gov/residents/resources/job-family-services-directory)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DHHS Contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS Customer Service](https://dhhs.utah.gov/customer-service/)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Legacy DWS office-search alias](https://jobs.utah.gov/jsp/officesearch/)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Live DWS bundle entrypoint](https://jobs.utah.gov/office-search/main-NUCK4XJI.js)
+- [Live DWS bundle imported chunk](https://jobs.utah.gov/office-search/chunk-Y7CB7UTP.js)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Exact office-services route](https://officesearch-api.jobs.utah.gov/api/v1/office-services)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live official successor host for Ohio county JFS or county Medicaid agencies that is not currently exposed through the dead root/discovery surfaces.
-- Any county-owned JFS leaves that can be verified directly if the state root remains retired.
-- Any official statewide dataset or export that explicitly maps counties to JFS or Medicaid office routing.
+- Any public county-click child route or export behind the official DHHS contacts map that materializes county-local disability office assignments.
+- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the current office records.
+- Any official Utah successor local-office directory that explicitly names counties served instead of only office city or ZIP.
+## Next State Order After Utah
 
-## Next State Order After Ohio
-
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. New Mexico
-7. South Dakota
-8. Rhode Island
-9. Virginia
-10. West Virginia
+1. Kansas
+2. Nebraska
+3. Florida
+4. Alaska
+5. South Carolina
+6. North Carolina
+7. New York
+8. Oklahoma
+9. Oregon
+10. Ohio10. Ohio
