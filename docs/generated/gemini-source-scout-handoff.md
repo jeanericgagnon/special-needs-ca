@@ -29,7 +29,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
-- Utah: `official_usbe_district_lea_directory_clears_education_but_utah_dhhs_contacts_county_map_text_and_live_dws_office_stack_still_fail_to_expose_county_service_area_contract`
+- Utah: `utah_dhhs_contacts_now_serves_cloudflare_403_while_live_dws_office_inventory_and_sparse_county_named_labels_still_fail_to_expose_complete_county_service_area_contract`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
@@ -37,49 +37,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: New York
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining New York critical blocker. The old `health.ny.gov` LDSS family still fails host-wide, the exact OTDA successor leaves still reset, and although `mybenefits.ny.gov` now lands on a public begin page, that recovered portal surface still does not expose county-local district office routing.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, but the current repo-side lane now sees `https://dhhs.utah.gov/contacts/` as a Cloudflare 403 challenge rather than a reviewable public county-contact page. The surviving official Utah office lane is still the DWS stack: `jobs.utah.gov/department/contact/index.html` still points to an `Office Map`, the redirected `jobs.utah.gov/office-search/` shell is still live, and the public office API still returns office inventory rows. But that payload still has no `county`, `countiesServed`, or equivalent service-area field, and only two unique office names carry county-like labels (`Emery County (Castle Dale)` and `South County (Taylorsville)`) out of 45 unique offices. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official New York surface that maps counties or local social services districts to Medicaid / HEAP / public assistance office contacts on a publicly reviewable host.
-- Any exact OTDA successor leaf that becomes reviewable and preserves local district office contact or county-local routing.
-- Any county-owned or state-managed local district directory that publicly replaces the old `health.ny.gov` LDSS lane.
+- Any public Utah successor directory, export, or leaf set that explicitly maps all 29 counties to local DWS, DHHS, or disability-resource offices.
+- Any reviewable DHHS successor child route that materializes county-local disability office assignments without challenge gating.
+- Any public office API field or companion endpoint that adds `county`, `countiesServed`, or equivalent service-area assignments to the current Utah office inventory.
 
 ### Useful Official URLs Already Tried
 
-- [New York LDSS directory](https://www.health.ny.gov/health_care/medicaid/ldss.htm)
-- [New York health robots.txt](https://www.health.ny.gov/robots.txt)
-- [New York health sitemap.xml](https://www.health.ny.gov/sitemap.xml)
-- [New York Medicaid root](https://www.health.ny.gov/health_care/medicaid/)
-- [New York Social Programs portal](https://www.ny.gov/services/social-programs)
-- [Apply for Cooling Assistance](https://www.ny.gov/services/apply-cooling-assistance)
-- [OTDA HEAP Local District Contact](https://otda.ny.gov/programs/heap/contacts/)
-- [OTDA HEAP root](https://otda.ny.gov/programs/heap/)
-- [OTDA application PDF](https://otda.ny.gov/programs/applications/4826.pdf)
-- [OTDA DSS locator attempt](https://otda.ny.gov/workingfamilies/dss.asp)
-- [OTDA root](https://otda.ny.gov/)
-- [OTDA www root](https://www.otda.ny.gov/)
-- [myBenefits root](https://mybenefits.ny.gov/)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DHHS Contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Legacy DWS office-search alias](https://jobs.utah.gov/jsp/officesearch/)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Jobs robots.txt](https://jobs.utah.gov/robots.txt)
+- [Jobs sitemap.xml](https://jobs.utah.gov/sitemap.xml)
+- [Jobs office search query](https://jobs.utah.gov/search/search.html?q=office)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any public OTDA contact or applications surface that stops resetting and becomes reviewable in the bounded lane.
-- Any county-owned or state-owned local district office directory explicitly linked from current `ny.gov`, OTDA, or MyBenefits surfaces.
-- Any public page on the recovered MyBenefits host that goes beyond portal begin/login flow and actually preserves county-local contact routing.
+- Any public Utah successor leaf or export that materially maps counties to local offices rather than just publishing office inventory.
+- Any public companion API artifact that adds `county` or service-area assignments to the current DWS office inventory.
+- Any reviewable official DHHS local-office surface that becomes available without Cloudflare challenge gating.
+## Next State Order After Utah
 
-## Next State Order After New York
-
-1. Oklahoma
-2. Oregon
-3. Ohio
-4. Minnesota
-5. Maine
-6. Idaho
-7. Arizona
-8. Massachusetts
-9. New Mexico
-10. South Dakota
+1. Kansas
+2. Nebraska
+3. Florida
+4. Alaska
+5. New York
+6. Oklahoma
+7. Oregon
+8. Ohio
+9. Minnesota
+10. Maine

@@ -327,3 +327,6 @@
 
 ### A Recovered Benefits Portal Begin Page Is Not County-Local Proof By Itself
 *   **Lesson:** If a benefits portal root recovers from a reset and lands on a public begin page, verify whether that page actually exposes county or district routing before treating the host as repaired. New York `mybenefits.ny.gov` recovered to `/mybenefits/begin`, but the page still only exposed portal/login navigation and links back to OTDA paths, not a county-local district office contract.
+
+### Sparse County-Named Office Labels Still Do Not Create A Statewide County-Service Contract
+*   **Lesson:** If a public office inventory only exposes a few office names with county-like labels but still lacks explicit `county` or `countiesServed` fields, do not treat those labels as a statewide county-routing contract. Utah’s live DWS office API still exposed only two unique county-like office names (`Emery County (Castle Dale)` and `South County (Taylorsville)`) across 45 unique offices, which was not enough to prove a complete 29-county disability-resource mapping.
