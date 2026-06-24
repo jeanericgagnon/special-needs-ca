@@ -312,3 +312,6 @@
 
 ### City-Or-ZIP Office Search Contracts Still Fail County-Grade Routing
 *   **Lesson:** If a live official office-search bundle only filters by city or ZIP and otherwise falls back to nearest-office geocoding, that is still not a county-grade routing contract even when the public API returns office rows and coordinates. Utah’s DWS app made the exact contract visible in the first-party JS bundle: it called `/api/v1/offices` and `/api/v1/services`, pointed at a broken `/api/v1/office-services` route, and never exposed county or counties-served fields.
+
+### District-Owned Document Folders Can Preserve Role-Exact Routing Even When The Page Title Is Generic
+*   **Lesson:** If a district-owned CMS route renders a generic document-shell title but its embedded route data preserves a role-exact folder name and child special-education resources on the same first-party host, that can still count as local education-routing proof. Kansas Ellis County cleared once Hays USD 489 exposed a `Special Education` document folder with same-domain `WEBKIDSS Handbook` and `SPED Resources` children in the live Nuxt payload.

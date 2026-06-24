@@ -1140,8 +1140,8 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_4_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "reviewed_kansas_district_and_district_owned_leaves_now_cover_15_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
+      "packetBatch": "batch298_kansas_ellis_document_folder_leaf_v1",
+      "packetPrimaryGapReason": "reviewed_kansas_district_and_district_owned_leaves_now_cover_16_counties_but_export_backed_county_grade_coverage_is_still_incomplete",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

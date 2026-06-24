@@ -1,0 +1,29 @@
+{
+  "batch": "batch_298_kansas_ellis_document_folder_leaf_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_counties": [
+    "atchison-ks",
+    "butler-ks",
+    "cowley-ks",
+    "douglas-ks",
+    "ellis-ks",
+    "finney-ks",
+    "geary-ks",
+    "harvey-ks",
+    "johnson-ks",
+    "leavenworth-ks",
+    "lyon-ks",
+    "riley-ks",
+    "saline-ks",
+    "sedgwick-ks",
+    "shawnee-ks",
+    "wyandotte-ks"
+  ],
+  "reviewed_leaf_count": 16,
+  "newly_verified_county": "ellis-ks",
+  "new_leaf_source": "https://www.usd489.com/documents/about-usd-489/special-education/81796",
+  "lessons_updated": false
+}
