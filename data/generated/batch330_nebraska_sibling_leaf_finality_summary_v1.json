@@ -1,0 +1,8 @@
+{
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "public_nebraska_office_config_still_only_references_one_web_map_and_a_closest_feature_output_while_the_feature_service_stops_at_42_offices_for_93_counties",
+  "same_host_sibling_loops_confirmed": 3,
+  "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published"
+}
