@@ -336,3 +336,6 @@
 
 ### Exportable ArcGIS Layers Still Fail If The Exportable Fields Lack Assignment Semantics
 *   **Lesson:** If a public ArcGIS FeatureServer advertises export formats like CSV, GeoJSON, or FileGDB, do not assume that exportability helps unless the exported fields actually carry service-area meaning. Nebraska’s office service was exportable, but the schema still exposed only contact fields plus `USER_County`, and the distinct county values still covered only 37 counties with no multi-county strings.
+
+### Tiny Public Service Taxonomies Still Do Not Create County Routing
+*   **Lesson:** If an official office-search API only exposes inventory rows plus a tiny public service taxonomy like `All`, `USOR`, and `EC`, do not treat that as county-grade routing. Utah’s live DWS surface kept both `/api/v1/offices` and `/api/v1/services` public, but with no county field, no service-area field, and no live county endpoint, the state still lacked a reusable 29-county disability-resource contract.

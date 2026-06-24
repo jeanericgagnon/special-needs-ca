@@ -29,7 +29,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
 - Tennessee: `generic_or_statewide_evidence_used_where_local_required`
-- Utah: `utah_dhhs_contacts_now_serves_cloudflare_403_while_live_dws_office_inventory_and_sparse_county_named_labels_still_fail_to_expose_complete_county_service_area_contract`
+- Utah: `utah_dhhs_contacts_cloudflare_403_and_live_dws_public_api_surface_still_stops_at_inventory_and_three_service_labels_without_any_county_contract`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
@@ -37,44 +37,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Nebraska critical blocker. One more bounded official pass on the ArcGIS FeatureServer closes the export theory too: the public service root is live and advertises export formats including CSV, GeoJSON, shapefile, and FileGDB, but the office layer schema still contains only contact-style fields plus `USER_County`, and a bounded distinct-value query still returns only 37 county names with no multi-county service-area strings. The ExperienceBuilder resource list still contains only `config/config.json` plus image assets, and the metadata/info routes still expose no hidden artifact. Nebraska therefore remains BLOCKED / not index-safe because there is still no public statewide county-to-office assignment contract.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, but the current repo-side lane now sees `https://dhhs.utah.gov/contacts/` as a Cloudflare 403 challenge rather than a reviewable public county-contact page. The surviving official Utah office lane is still the DWS stack: `jobs.utah.gov/department/contact/index.html` still points to an `Office Map`, the redirected `jobs.utah.gov/office-search/` shell is still live, `https://officesearch-api.jobs.utah.gov/api/v1/offices` still returns office inventory rows, and `https://officesearch-api.jobs.utah.gov/api/v1/services` only exposes the three public labels `All`, `USOR`, and `EC`. No public county endpoint or service-area field materializes on the same host. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official Nebraska DHHS county-to-office assignment table, export, or service-area artifact that maps all 93 counties to public assistance offices.
-- Any public ArcGIS layer, related table, resource file, or API field on the existing office stack that explicitly enumerates served counties, assigned counties, regions, or coverage areas for each office.
-- Any exact first-party DHHS leaf that publishes a county list or county-by-county local office contract instead of only a locator handoff.
+- Any public Utah successor directory, export, or leaf set that explicitly maps all 29 counties to local DWS, DHHS, or disability-resource offices.
+- Any reviewable DHHS successor child route that materializes county-local disability office assignments without challenge gating.
+- Any public office API field or companion endpoint that adds `county`, `countiesServed`, or equivalent service-area assignments to the current Utah office inventory.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska DHHS Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [ExperienceBuilder item resources](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources?f=json)
-- [ExperienceBuilder published config](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources/config/config.json)
-- [ExperienceBuilder iteminfo endpoint](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/info/iteminfo?f=json)
-- [ExperienceBuilder metadata XML attempt](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/info/metadata/metadata.xml)
-- [Web Map resources](https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/resources?f=json)
-- [Nebraska public office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
-- [Nebraska public office layer schema](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0?f=pjson)
-- [Nebraska distinct county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DHHS Contacts](https://dhhs.utah.gov/contacts/)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Missing county endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/counties)
+- [Missing search endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/search)
+- [Missing office-search endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/offices/search)
 
 ### Top Remaining Source-Scouting Targets
 
-- An official Nebraska DHHS county assignment export or service-area table attached to the existing office stack.
-- Any new public ArcGIS resource or export field that explicitly carries county assignment or service-area data rather than only office contact fields.
-- An exact first-party county office page or county directory leaf on `dhhs.ne.gov` that publishes county coverage instead of only contact cards.
-## Next State Order After Nebraska
+- Any public Utah successor leaf or export that materially maps counties to local offices rather than just publishing office inventory.
+- Any public companion API artifact that adds `county` or service-area assignments to the current DWS office inventory.
+- Any reviewable official DHHS local-office surface that becomes available without Cloudflare challenge gating.
+## Next State Order After Utah
 
-1. Nevada
-2. Florida
-3. Alaska
-4. New York
-5. Oklahoma
-6. Oregon
-7. Ohio
-8. Minnesota
-9. Maine
-10. Idaho
+1. Kansas
+2. Nebraska
+3. Florida
+4. Alaska
+5. New York
+6. Oklahoma
+7. Oregon
+8. Ohio
+9. Minnesota
+10. Maine

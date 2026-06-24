@@ -1,0 +1,27 @@
+{
+  "state": "utah",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "utah_dhhs_contacts_cloudflare_403_and_live_dws_public_api_surface_still_stops_at_inventory_and_three_service_labels_without_any_county_contract",
+  "dhhs_contacts_status": 403,
+  "dhhs_contacts_shell": "cloudflare_attention_required",
+  "services_api_status": 200,
+  "services_api_labels": [
+    "All Offices",
+    "USOR Services",
+    "Employment Centers"
+  ],
+  "county_endpoint_status": 404,
+  "search_endpoint_status": 404,
+  "office_search_endpoint_status": 404,
+  "office_rows": 99,
+  "unique_offices": 45,
+  "unique_county_like_office_labels": 2,
+  "county_like_labels": [
+    "Emery County (Castle Dale)",
+    "South County (Taylorsville)"
+  ],
+  "next_action": "hold_blocked_until_public_utah_successor_directory_api_or_reviewable_leaf_explicitly_maps_all_counties_to_local_disability_resource_offices",
+  "lessons_updated": false
+}
