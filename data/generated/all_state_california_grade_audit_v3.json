@@ -637,11 +637,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_partial_storefront_lane_and_current_myaccess_public_shell_without_anonymous_county_results"
+        "county_local_disability_resources": "blocked_partial_storefront_lane_and_recovered_myaccess_bundle_without_anonymous_county_results"
       },
       "packetGenerated": true,
-      "packetBatch": "batch309_florida_public_shell_recovery_finality_v1",
-      "packetPrimaryGapReason": "official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_public_shell_recovers_but_county_results_remain_authenticated_or_shell_only",
+      "packetBatch": "batch311_florida_main_bundle_contract_finality_v1",
+      "packetPrimaryGapReason": "official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_public_shell_and_main_bundle_still_expose_no_anonymous_county_contract",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
