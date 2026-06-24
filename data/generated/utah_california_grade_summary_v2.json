@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_but_public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract",
+  "primary_gap_reason": "official_usbe_district_lea_directory_clears_education_but_live_dws_bundle_only_supports_city_or_zip_search_and_public_office_api_still_lacks_county_service_area_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,13 +42,13 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract",
-      "evidence": "Reviewed 2026-06-23 one more bounded official Utah county-local pass on the current live DWS office-search surfaces. `https://jobs.utah.gov/office-search/` and the older `https://jobs.utah.gov/jsp/officesearch/` alias both still land on the live Office Search shell, and `GET https://officesearch-api.jobs.utah.gov/api/v1/offices` still returns 99 public rows covering 45 unique offices with `officeName`, address, city, zip, service, and coordinate fields but no county or counties-served field. The companion `GET https://officesearch-api.jobs.utah.gov/api/v1/services` endpoint still exposes only service classes (`All`, `USOR`, `EC`), while the guessed `GET https://officesearch-api.jobs.utah.gov/api/v1/office-services` route now returns an explicit JSON `404 Not Found` and the docs probes (`/openapi.json`, `/swagger-ui/index.html`, `/v3/api-docs`) now return `404 Service Not Found`. The older public roots also still add no successor county contract: `jobs.utah.gov/sitemap.xml` and `jobs.utah.gov/customereducation/serviceslocations.html` now return `500 Internal Server Error`, and `dhhs.utah.gov/locations` returns `404`. A bounded reverse-geocode audit of the exact official office coordinates still materializes physical offices in only 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point. One more payload-text audit confirms `Daggett` and `Morgan` never appear anywhere in the public JSON, `Rich` appears only inside `Richfield` office names, and the only literal county-looking office names are `Emery County (Castle Dale)` and `South County (Taylorsville)`, which is still far short of a statewide county contract.",
-      "next_action": "hold_blocked_until_public_office_api_or_successor_directory_exposes_county_or_service_area_assignments_for_missing_daggett_morgan_rich_counties"
+      "failure_code": "live_dws_bundle_only_supports_city_or_zip_search_and_public_office_api_still_lacks_county_service_area_contract",
+      "evidence": "Reviewed 2026-06-23 one more bounded official Utah county-local pass on the exact live office-search page plus its first-party JS bundle and public API surfaces. `https://jobs.utah.gov/office-search/` still returns a live public shell, and the current app bundle (`main-NUCK4XJI.js` plus imported chunks) now makes the contract explicit: the config sets `apiUrl` to `https://officesearch-api.jobs.utah.gov`, `getOfficeDataFromApi()` calls `/api/v1/offices`, `getServicesList()` calls `/api/v1/services`, and `getOfficeServices()` still points to `/api/v1/office-services`. The search logic in the live bundle only filters office rows by `city` and then `zipCode`, and otherwise falls back to nearest-office geocoding; there is still no county filter, county field, or counties-served field in the page HTML or reviewed bundle text. The public office payload still returns 99 rows covering 45 unique offices with `officeName`, address, city, zip, service, and coordinate fields but no county or service-area assignment, the companion services endpoint still exposes only service classes (`All`, `USOR`, `EC`), and the exact `office-services` route still returns JSON `404 Not Found`. A bounded reverse-geocode audit of the exact official office coordinates still materializes physical offices in only 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point. One more payload-text audit confirms `Daggett` and `Morgan` never appear anywhere in the public JSON, `Rich` appears only inside `Richfield` office names, and there is still no public county-grade office contract.",
+      "next_action": "hold_blocked_until_public_utah_dws_successor_exposes_county_or_service_area_assignments_in_api_payload_or_reviewable_official_leaf"
     }
   ],
   "familyStatuses": {
     "district_or_county_education_routing": "verified_current_official_district_lea_directory",
-    "county_local_disability_resources": "blocked_public_office_api_without_county_service_area_contract"
+    "county_local_disability_resources": "blocked_live_dws_bundle_city_zip_only_without_county_service_area_contract"
   }
 }

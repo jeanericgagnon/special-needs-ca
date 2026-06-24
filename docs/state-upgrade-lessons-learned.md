@@ -309,3 +309,6 @@
 
 ### Public Office-Map KML Feeds Still Need A Full County-Coverage Audit
 *   **Lesson:** If a first-party office page embeds a public map with a reachable KML feed, fetch and audit the feed directly before clearing county-local routing. Oklahoma Human Services exposed a real Google My Maps office dataset behind `Contact Us`, but the live KML only materialized 46 county-keyed locations, so the embed sharpened the blocker instead of clearing it.
+
+### City-Or-ZIP Office Search Contracts Still Fail County-Grade Routing
+*   **Lesson:** If a live official office-search bundle only filters by city or ZIP and otherwise falls back to nearest-office geocoding, that is still not a county-grade routing contract even when the public API returns office rows and coordinates. Utah’s DWS app made the exact contract visible in the first-party JS bundle: it called `/api/v1/offices` and `/api/v1/services`, pointed at a broken `/api/v1/office-services` route, and never exposed county or counties-served fields.

@@ -24,3 +24,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Oregon remains blocked, but the blocker is now narrowed to a live official ODHS office-finder app shell that exposes no public county extract, search contract, or office result payload.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
+- Utah county-local routing is now explicitly sharpened to the live DWS bundle contract itself: the public page only wires `/api/v1/offices`, `/api/v1/services`, and a still-broken `/api/v1/office-services` route, the search logic is city/ZIP-only plus nearest-office geocoding, the payload still lacks county/service-area fields, and the county remainder is still explicit at Daggett, Morgan, and Rich.

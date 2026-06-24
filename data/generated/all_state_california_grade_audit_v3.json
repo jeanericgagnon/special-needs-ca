@@ -12,7 +12,7 @@
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a new blocker lesson: official CSE office tables can clear NYC borough routing.",
+  "lessonsUpdate": "Added a new blocker lesson: city-or-ZIP office-search bundles still fail county-grade routing.",
   "states": [
     {
       "stateId": "alabama",
@@ -3137,11 +3137,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_live_dws_bundle_city_zip_only_without_county_service_area_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_12_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "official_usbe_district_lea_directory_clears_education_but_public_dws_office_api_only_materializes_26_of_29_physical_office_counties_and_still_lacks_county_service_area_contract",
+      "packetBatch": "batch297_utah_bundle_contract_refinement_v1",
+      "packetPrimaryGapReason": "official_usbe_district_lea_directory_clears_education_but_live_dws_bundle_only_supports_city_or_zip_search_and_public_office_api_still_lacks_county_service_area_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

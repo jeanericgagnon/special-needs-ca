@@ -1,0 +1,35 @@
+{
+  "state": "utah",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "live_dws_bundle_only_supports_city_or_zip_search_and_public_office_api_still_lacks_county_service_area_contract",
+  "bundle_api_url": "https://officesearch-api.jobs.utah.gov",
+  "bundle_exact_routes": [
+    "/api/v1/offices",
+    "/api/v1/services",
+    "/api/v1/office-services"
+  ],
+  "bundle_search_contract": [
+    "city",
+    "zipCode",
+    "nearest-office geocoding fallback"
+  ],
+  "office_payload_rows": 99,
+  "unique_offices": 45,
+  "physical_office_county_coverage": 26,
+  "missing_physical_office_counties": [
+    "Daggett County",
+    "Morgan County",
+    "Rich County"
+  ],
+  "exact_missing_payload_tokens": [
+    "Daggett",
+    "Morgan"
+  ],
+  "ambiguous_payload_tokens": [
+    "Richfield"
+  ],
+  "next_action": "hold_blocked_until_public_utah_dws_successor_exposes_county_or_service_area_assignments_in_api_payload_or_reviewable_official_leaf",
+  "lessons_updated": true
+}

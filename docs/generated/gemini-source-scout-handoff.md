@@ -37,41 +37,51 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oregon
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-Oregon has one remaining California-grade blocker: `county_local_disability_resources`. Education is already cleared by the current official ODE county-searchable school directory. The county-local lane is no longer blocked by a missing successor root; it is now blocked because the live ODHS office-finder still only exposes a public app shell with no county-grade office extract.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the DWS office-search lane is now bounded to a stricter first-party bundle contract rather than just a guessed API family. `https://jobs.utah.gov/office-search/` loads a public JS bundle whose config points to `https://officesearch-api.jobs.utah.gov`, whose resolver fetches `/api/v1/offices`, whose service cache fetches `/api/v1/services`, and whose optional `getOfficeServices()` hook still points to `/api/v1/office-services`. The live bundle search logic only filters office rows by `city` and then `zipCode`, then falls back to nearest-office geocoding; it still has no county filter, county field, or counties-served field in the page HTML or reviewed bundle text. The public office payload still returns only office inventory rows with fields like `officeName`, address, city, zip, service, and coordinates, the services payload still returns only service classes, the exact `office-services` route still returns JSON `404 Not Found`, and a bounded reverse-geocode pass still materializes physical offices in only 26 of Utah's 29 counties, leaving Daggett, Morgan, and Rich without even an in-county office point. One more payload-text audit confirms `Daggett` and `Morgan` never appear anywhere in the public JSON while `Rich` appears only as `Richfield`, not as Rich County routing. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- A live official Oregon ODHS office export, result payload, or county-owned ODHS local-office leaves that materialize office rows for all 36 counties.
-- A public county list, office result payload, or service-area contract from the live office-finder itself, not just generic map/search controls.
-- Any public official Oregon local-office surface that replaces the current DOI-backed planning rows with real county-to-office routing.
+- Any first-party Utah county-complete office contract that explicitly maps counties to DWS, DHHS, or successor local offices.
+- Any public successor Utah office API field or companion endpoint that adds `county`, `countiesServed`, service-area, or district-style assignment data to the current office inventory.
+- Any official Utah successor local-office directory that explicitly closes the Daggett, Morgan, and Rich county remainder without inferred nearest-office routing.
 
 ### Useful Official URLs Already Tried
 
-- [Dead Oregon legacy locations host](https://dhhs.oregon.gov/locations)
-- [Live ODHS Office Finder successor root](https://www.oregon.gov/odhs/pages/office-finder.aspx)
-- [Office Finder county query probe](https://www.oregon.gov/odhs/pages/office-finder.aspx?county=Baker)
-- [Office Finder city query probe](https://www.oregon.gov/odhs/pages/office-finder.aspx?city=Salem)
-- [Official Oregon robots.txt](https://www.oregon.gov/robots.txt)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DWS contact root](https://jobs.utah.gov/contact/index.html)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Legacy DWS office-search alias](https://jobs.utah.gov/jsp/officesearch/)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Live DWS bundle entrypoint](https://jobs.utah.gov/office-search/main-NUCK4XJI.js)
+- [Live DWS bundle imported chunk](https://jobs.utah.gov/office-search/chunk-Y7CB7UTP.js)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Exact office-services route](https://officesearch-api.jobs.utah.gov/api/v1/office-services)
+- [jobs.utah.gov sitemap.xml](https://jobs.utah.gov/sitemap.xml)
+- [Older DWS services locations page](https://jobs.utah.gov/customereducation/serviceslocations.html)
+- [Utah DHHS contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS customer service](https://dhhs.utah.gov/customer-service/)
+- [Older DHHS locations route](https://dhhs.utah.gov/locations)
+- [Census reverse geocoder used only to county-key official office coordinates](https://geocoding.geo.census.gov/geocoder/geographies/coordinates)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any public ODHS office-finder result endpoint, export lane, or office payload that the current page shell calls client-side.
-- Any official Oregon county-owned or ODHS-maintained local-office leaves that preserve county identity and direct office contact routing.
-- Any live public successor lane on `oregon.gov/odhs` that exposes county-served offices without depending on the old DOI planning dataset.
+- Any public companion API or downloadable artifact on `officesearch-api.jobs.utah.gov` that adds county or service-area assignments to the 45 unique office records.
+- Any reviewed official Utah local-office directory that explicitly names counties served, especially where office names are city-based rather than county-based.
+- Any official Utah successor to the dead `serviceslocations.html` or `dhhs.utah.gov/locations` routes that exposes county-grade local-office coverage for Daggett, Morgan, and Rich.
+## Next State Order After Utah
 
-## Next State Order After Oregon
-
-1. Ohio
-2. Minnesota
-3. Maine
-4. Idaho
-5. Arizona
-6. Massachusetts
-7. New Mexico
-8. South Dakota
-9. Rhode Island
-10. Virginia
+1. Kansas
+2. Nebraska
+3. Florida
+4. Alaska
+5. New York
+6. Oklahoma
+7. Oregon
+8. Ohio
+9. Minnesota
+10. Maine10. Maine10. Maine
