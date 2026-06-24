@@ -321,3 +321,6 @@
 
 ### A Public Shell Lane Can Regress Into An Edge-Blocked Lane And Must Be Reclassified
 *   **Lesson:** If a previously readable public shell lane starts returning CloudFront or edge-blocked 403 responses on its public entry, config, and bundle paths, tighten the blocker to the current live contract instead of carrying forward older shell assumptions. Florida’s MyACCESS lane moved from replaying a generic shell to returning CloudFront `Request blocked` on the exact public shell, config, bundle, and asset-manifest paths.
+
+### A Recovered Public Shell Still Does Not Reopen A County-Result Lane
+*   **Lesson:** If a previously blocked public SPA host comes back to HTTP 200 on the root, public entry, config, and asset-manifest paths, rerun the exact contract but do not treat the host as repaired until it exposes anonymous result data. Florida MyACCESS recovered to a readable shell, yet `officeMapping` still only pointed to a shell `/dataexchangeproxy` route and the county-result endpoints still returned `401 Unauthorized`.

@@ -1,0 +1,17 @@
+{
+  "batch": "batch309_florida_public_shell_recovery_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "storefront_distinct_counties": 34,
+  "myaccess_root_status": 200,
+  "public_cpcps_status": 200,
+  "public_appconfig_status": 200,
+  "public_asset_manifest_status": 200,
+  "public_dataexchangeproxy_status": 200,
+  "accountmanagement_county_details_status": 401,
+  "accountmanagement_partner_search_status": 401,
+  "lessons_updated": false
+}
