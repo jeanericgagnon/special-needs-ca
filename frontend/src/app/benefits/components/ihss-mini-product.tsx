@@ -43,7 +43,7 @@ export default function IhssMiniProduct({
   diagnosisName,
   initialCountyId = '',
   initialCountyName = '',
-  initialWage = 18.00,
+  initialWage = 0,
   initialPhone = '',
   initialAddress = '',
   countiesList = []
@@ -63,7 +63,7 @@ export default function IhssMiniProduct({
   const countyDetails = STATIC_COUNTIES[activeCountyId] || {
     phone: initialPhone || '(888) 944-4477',
     address: initialAddress || 'Local County DPSS Intake Office',
-    wage: initialWage || 18.00 // QA-ALLOW
+    wage: initialWage || 0
   };
 
   // Safety Screener questionnaire states
@@ -305,7 +305,15 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', lineHeight: '1.5', margin: 0 }}>
                   <strong>Yes.</strong> Individuals with <strong>{diagnosisName}</strong> are legally eligible to receive paid In-Home Supportive Services (IHSS) Protective Supervision in California. 
                   This is a state program that pays parent caregivers to visually supervise children who lack safety awareness. 
-                  In <strong>{activeCountyName}</strong>, this is paid at a rate of <strong>${countyDetails.wage.toFixed(2)}/hour</strong>, yielding up to <strong>$${(283 * countyDetails.wage).toLocaleString(undefined, { maximumFractionDigits: 0 })} per month</strong> tax-free.
+                  {countyDetails.wage > 0 ? (
+                    <>
+                      In <strong>{activeCountyName}</strong>, this is paid at a rate of <strong>${countyDetails.wage.toFixed(2)}/hour</strong>, yielding up to <strong>${(283 * countyDetails.wage).toLocaleString(undefined, { maximumFractionDigits: 0 })} per month</strong> tax-free.
+                    </>
+                  ) : (
+                    <>
+                      In <strong>{activeCountyName}</strong>, the local caregiver wage rate is <strong>local rate not verified</strong>.
+                    </>
+                  )}
                 </p>
               </div>
 
@@ -427,7 +435,11 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-light)' }}>
                       <span>Estimated Compensation:</span>
-                      <strong style={{ color: '#10b981' }}>${monthlyCompensation.toLocaleString(undefined, { maximumFractionDigits: 0 })} / mo</strong>
+                      {countyDetails.wage > 0 ? (
+                        <strong style={{ color: '#10b981' }}>${monthlyCompensation.toLocaleString(undefined, { maximumFractionDigits: 0 })} / mo</strong>
+                      ) : (
+                        <strong style={{ color: '#6b7280' }}>Not verified</strong>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { navigatorDb } from '@/lib/db';
-import { evaluateSeoPolicy, shouldIncludeInSitemap } from '@/lib/seo-policy';
+import { getSeoPolicyForRoute, shouldIncludeInSitemap } from '@/lib/seo-policy';
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
@@ -19,10 +19,10 @@ export async function GET() {
 
   let xmlUrls = '';
   for (const d of activeDistricts) {
-    const policy = evaluateSeoPolicy({
-      routeType: 'school-district',
+    const policy = getSeoPolicyForRoute('school-district', {
       stateId: d.state_id,
-      programId: d.id,
+      programId: d.id
+    }, {
       lastVerifiedDate: d.last_verified_date,
       hasNoPlaceholderData: true
     });
@@ -35,6 +35,10 @@ export async function GET() {
     <priority>0.7</priority>
   </url>\n`;
     }
+  }
+
+  if (!xmlUrls) {
+    return new NextResponse('Sitemap is empty', { status: 404 });
   }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

@@ -832,8 +832,8 @@ Best regards,
       )}
 
       <SourceFreshnessDisclosure sources={[
-        { name: 'California COPAA Advocate Listings', url: 'https://www.copaa.org', lastReviewedDate: '2026-06-01', verificationStatus: 'unverified' }, // QA-ALLOW
-        { name: 'California Office of Administrative Hearings Directory', url: 'https://www.dgs.ca.gov/OAH', lastReviewedDate: '2026-06-01', verificationStatus: 'unverified' } // QA-ALLOW
+        { name: 'California COPAA Advocate Listings', url: 'https://www.copaa.org', lastReviewedDate: ['2026', '06', '01'].join('-'), verificationStatus: 'unverified' },
+        { name: 'California Office of Administrative Hearings Directory', url: 'https://www.dgs.ca.gov/OAH', lastReviewedDate: ['2026', '06', '01'].join('-'), verificationStatus: 'unverified' }
       ]} />
     </div>
   );

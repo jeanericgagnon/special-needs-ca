@@ -1,7 +1,21 @@
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode } from '@/lib/db';
+import { 
+  getCounties, 
+  getProgramBySlug, 
+  getAllPrograms, 
+  getStateByIdOrCode,
+  navigatorDb,
+  getProgramApplicationSteps,
+  getProgramDocumentRequirements
+} from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
+import { 
+  getSeoPolicyForRoute, 
+  assertNoPlaceholderData, 
+  normalizeConfidenceScore, 
+  hasOfficialProgramSource 
+} from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -32,46 +46,79 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const cluster = SEO_CLUSTERS[slug];
-  if (cluster) {
-    return {
-      title: cluster.metaTitle,
-      description: cluster.metaDescription,
-      alternates: {
-        canonical: `/${cluster.category}/${slug}`
-      }
-    };
+  
+  const program = await getProgramBySlug(slug);
+  if (program && program.state_id) {
+    permanentRedirect(`/benefits/${program.state_id}/program/${slug}`);
   }
 
-  const program = await getProgramBySlug(slug);
+  const cluster = SEO_CLUSTERS[slug];
+  const programStateId = program?.state_id || null;
+  const verificationStatus = program?.verification_status || null;
+  const lastVerifiedDate = program?.last_verified_date || null;
+  let hasEligibilityRules = false;
+  let hasVerifiedEligibilityRules = false;
+  let hasApplicationSteps = false;
+  let hasDocuments = false;
+  let confidenceScore: number | null = null;
+
   if (program) {
-    const stateData = program.state_id ? await getStateByIdOrCode(program.state_id) : null;
-    const stateName = stateData ? stateData.name : 'California';
-    return {
-      title: `${program.program_name} ${stateName} Guide`,
-      description: `Learn about eligibility, requirements, and how to apply for ${program.program_name} in ${stateName}.`,
-      alternates: {
-        canonical: `/programs/${slug}`
-      }
-    };
+    const progIdStr = String(program.id);
+    const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
+    hasEligibilityRules = (ruleCount?.count || 0) > 0;
+    hasVerifiedEligibilityRules = hasEligibilityRules && (program.verification_status === 'official_verified' || program.verification_status === 'verified' || program.verification_status === 'human_verified');
+    hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
+    hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
+    confidenceScore = normalizeConfidenceScore(program.confidence_score);
   }
+
+  const policy = getSeoPolicyForRoute('program-guide', {
+    stateId: programStateId || 'california',
+    programId: slug
+  }, {
+    hasOfficialSource: hasOfficialProgramSource(program?.source_url),
+    lastVerifiedDate,
+    confidenceScore,
+    hasEligibilityRules,
+    hasVerifiedEligibilityRules,
+    hasApplicationSteps,
+    hasDocuments,
+    hasNoPlaceholderData: program ? assertNoPlaceholderData(JSON.stringify(program)) : true,
+    programStateId,
+    verificationStatus
+  });
 
   return {
-    title: 'Program Page Not Found',
+    title: cluster ? cluster.metaTitle : `${program?.program_name || formatParam(slug)} - Program Guide`,
+    description: cluster ? cluster.metaDescription : `Details and guidelines for ${program?.program_name || formatParam(slug)}.`,
+    alternates: {
+      canonical: policy.canonicalUrl
+    },
+    robots: {
+      index: policy.index,
+      follow: policy.follow
+    }
   };
+}
+
+function formatParam(val: string): string {
+  return val.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
 export default async function ProgramPage({ params }: Props) {
   const { slug } = await params;
   const counties = (await getCounties()).map(c => ({ id: c.id, name: c.name }));
 
+  const program = await getProgramBySlug(slug);
+  if (program && program.state_id) {
+    permanentRedirect(`/benefits/${program.state_id}/program/${slug}`);
+  }
+
   const cluster = SEO_CLUSTERS[slug];
-  if (cluster && cluster.category === 'programs') {
+  if (cluster && cluster.category === 'programs' && !program) {
     return <AnswerPage slug={slug} counties={counties} />;
   }
 
-  // Fallback to DB query
-  const program = await getProgramBySlug(slug);
   if (!program) {
     notFound();
   }
@@ -79,6 +126,44 @@ export default async function ProgramPage({ params }: Props) {
   const stateData = program.state_id ? await getStateByIdOrCode(program.state_id) : null;
   const stateName = stateData ? stateData.name : 'California';
   const stateCode = stateData ? stateData.code : 'CA';
+
+  const programStateId = program.state_id || null;
+  const verificationStatus = program.verification_status || null;
+  const lastVerifiedDate = program.last_verified_date || null;
+  let hasEligibilityRules = false;
+  let hasVerifiedEligibilityRules = false;
+  let hasApplicationSteps = false;
+  let hasDocuments = false;
+  let confidenceScore: number | null = null;
+
+  const progIdStr = String(program.id);
+  const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
+  hasEligibilityRules = (ruleCount?.count || 0) > 0;
+  hasVerifiedEligibilityRules = hasEligibilityRules && (program.verification_status === 'official_verified' || program.verification_status === 'verified' || program.verification_status === 'human_verified');
+  
+  const steps = await getProgramApplicationSteps(progIdStr);
+  hasApplicationSteps = steps.length > 0;
+  
+  const docs = await getProgramDocumentRequirements(progIdStr);
+  hasDocuments = docs.length > 0;
+  
+  confidenceScore = normalizeConfidenceScore(program.confidence_score);
+
+  const policy = getSeoPolicyForRoute('program-guide', {
+    stateId: programStateId || 'california',
+    programId: slug
+  }, {
+    hasOfficialSource: hasOfficialProgramSource(program.source_url),
+    lastVerifiedDate,
+    confidenceScore,
+    hasEligibilityRules,
+    hasVerifiedEligibilityRules,
+    hasApplicationSteps,
+    hasDocuments,
+    hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(program)),
+    programStateId,
+    verificationStatus
+  });
 
   // Construct dynamic SEOPageData on the fly
   const dynamicData = {
@@ -100,22 +185,14 @@ export default async function ProgramPage({ params }: Props) {
       `Meets the stated demographic criteria: ${program.target_demographic}.`,
       `Meets the specified conditions and diagnoses: ${program.diagnosis_required || 'Any documented disability'}.`
     ],
-    whatToDoFirst: [
-      'Locate your local county office or coordinator.',
-      'Gather medical proof of diagnosis.',
-      'Check current income deeming requirements.',
-      'Submit the initial application.'
-    ],
-    documentsToGather: [
-      { name: 'Pediatric medical certification', description: 'Confirming developmental diagnosis.' },
-      { name: 'Proof of residency', description: `${stateName} driver license, utility bill, or equivalent.` }
-    ],
-    whoToCall: stateName === 'California' ? [
-      { name: 'California DHCS Office', number: '(916) 440-7400', description: 'Department of Health Care Services administrative office.' }
-    ] : [
-      { name: `${stateName} Health and Human Services`, number: '2-1-1', description: 'State benefits information and local resource referral.' }
-    ],
-    whatToSay: `I am calling to check eligibility for my child for the ${program.program_name}.`,
+    whatToDoFirst: policy.index && hasApplicationSteps
+      ? steps.map(s => `${s.title}: ${s.action_description}`)
+      : ['Not yet verified'],
+    documentsToGather: policy.index && hasDocuments
+      ? docs.map(d => ({ name: d.name, description: d.description || '' }))
+      : [],
+    whoToCall: [],
+    whatToSay: '',
     commonMistakes: [
       'Assuming you do not qualify before submitting an application.',
       'Submitting incomplete clinical reports or missing signatures.'
@@ -127,11 +204,7 @@ export default async function ProgramPage({ params }: Props) {
       { name: `${stateName} State Program Portal`, url: program.source_url }
     ] : []),
     lastReviewedDate: program.last_verified_date || '',
-    callScriptTemplate: {
-      intro: 'General Intake Call Script',
-      script: `Hello, I am calling to apply for the ${program.program_name} on behalf of my child, [Child Name], who has [Diagnosis] and is [Age] years old. Please guide me through the intake and application steps.`,
-      tips: 'Take down the name and direct phone number of the worker you speak with.'
-    },
+    callScriptTemplate: undefined,
     eligibilityQuiz: [
       {
         question: `Is your child's age between ${program.age_limit_min} and ${program.age_limit_max}?`,

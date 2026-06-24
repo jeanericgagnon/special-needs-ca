@@ -22,7 +22,7 @@ export default function AppealsClient() {
   const [childDob, setChildDob] = useState('2021-04-15');
 
   // Statutory IEP Submission timeline date
-  const [iepSubmissionDate, setIepSubmissionDate] = useState('2026-06-01'); // QA-ALLOW
+  const [iepSubmissionDate, setIepSubmissionDate] = useState('');
 
   // Load from local storage on client mount
   useEffect(() => {

@@ -3,6 +3,8 @@ import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getCounties } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 
+import { getSeoPolicyForRoute, robotsForPolicy } from '@/lib/seo-policy';
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -22,13 +24,16 @@ export async function generateMetadata({ params }: Props) {
   
   const cluster = SEO_CLUSTERS[slug];
   if (cluster) {
+    const policy = getSeoPolicyForRoute('static-page', {
+      path: `/forms/${slug}`
+    });
     return {
       title: cluster.metaTitle,
       description: cluster.metaDescription,
       alternates: {
         canonical: `/forms/${slug}`
       },
-      robots: { index: false, follow: true }
+      robots: robotsForPolicy(policy)
     };
   }
 

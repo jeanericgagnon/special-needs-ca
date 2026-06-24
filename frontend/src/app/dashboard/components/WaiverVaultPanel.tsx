@@ -92,31 +92,32 @@ export default function WaiverVaultPanel() {
 
     setTimeout(() => {
       setUploadingWaiver(false);
+      const currentYear = new Date().getFullYear();
       if (waiverType === 'hcbs-dd-waiver') {
         setWaiverName(`${currentChild.nickname} - ${waiverProg} Authorization`);
-        setWaiverEffectiveDate("2026-06-01"); // QA-ALLOW
-        setWaiverExpirationDate("2027-05-31");
+        setWaiverEffectiveDate(`${currentYear}-06-01`);
+        setWaiverExpirationDate(`${currentYear + 1}-05-31`);
         setWaiverHours(32);
-        setCustomOcrText(`State of ${stateName} - ${ddAgencyName}\nHOME AND COMMUNITY-BASED SERVICES WAIVER PROGRAM\nIndividual Support Plan Authorization Record\nClient Nickname: ${currentChild.nickname}\nStatus: Active / Certified\nAuthorized Respite Hours: 32 Hours per Month\nApproval Authority: ${catchment}\nAuthorized Period: 06/01/2026 to 05/31/2027`);
+        setCustomOcrText(`State of ${stateName} - ${ddAgencyName}\nHOME AND COMMUNITY-BASED SERVICES WAIVER PROGRAM\nIndividual Support Plan Authorization Record\nClient Nickname: ${currentChild.nickname}\nStatus: Active / Certified\nAuthorized Respite Hours: 32 Hours per Month\nApproval Authority: ${catchment}\nAuthorized Period: 06/01/${currentYear} to 05/31/${currentYear + 1}`);
       } else if (waiverType === 'institutional-deeming') {
         setWaiverName(`${currentChild.nickname} - ${medicaid} Institutional Deeming Waiver`);
-        setWaiverEffectiveDate("2026-03-15");
-        setWaiverExpirationDate("2027-03-14");
+        setWaiverEffectiveDate(`${currentYear}-03-15`);
+        setWaiverExpirationDate(`${currentYear + 1}-03-14`);
         setWaiverHours(0);
-        setCustomOcrText(`State Medicaid Agency - ${stateName}\nHOME AND COMMUNITY-BASED SERVICES WAIVER\nINSTITUTIONAL DEEMING ELIGIBILITY WORK SHEET\nClient Name: ${currentChild.nickname}\nEligible Status: Waiver Group B Certification / Deeming Eligibility\nParental Income Deeming: EXEMPT (Deemed eligible based on child's disability status)\nValidity: 03/15/2026 - 03/14/2027`);
+        setCustomOcrText(`State Medicaid Agency - ${stateName}\nHOME AND COMMUNITY-BASED SERVICES WAIVER\nINSTITUTIONAL DEEMING ELIGIBILITY WORK SHEET\nClient Name: ${currentChild.nickname}\nEligible Status: Waiver Group B Certification / Deeming Eligibility\nParental Income Deeming: EXEMPT (Deemed eligible based on child's disability status)\nValidity: 03/15/${currentYear} - 03/14/${currentYear + 1}`);
       } else if (waiverType === 'ccs-authorization') {
         const progName = isCa ? 'California Children\'s Services (CCS)' : isTx ? 'Texas STAR Kids Pediatric Program' : isFl ? 'Florida Children\'s Medical Services (CMS)' : 'State Children\'s Services';
         setWaiverName(`${currentChild.nickname} - ${progName} Authorization`);
-        setWaiverEffectiveDate("2026-04-01");
-        setWaiverExpirationDate("2026-09-30");
+        setWaiverEffectiveDate(`${currentYear}-04-01`);
+        setWaiverExpirationDate(`${currentYear}-09-30`);
         setWaiverHours(48);
-        setCustomOcrText(`${progName} Program\nSERVICE AUTHORIZATION REQUEST DECISION NOTICE\nRecipient Name: ${currentChild.nickname}\nAuthorized Services: Occupational Therapy (12 sessions), Physical Therapy (36 hours)\nAuthorized Dates: 04/01/2026 to 09/30/2026`);
+        setCustomOcrText(`${progName} Program\nSERVICE AUTHORIZATION REQUEST DECISION NOTICE\nRecipient Name: ${currentChild.nickname}\nAuthorized Services: Occupational Therapy (12 sessions), Physical Therapy (36 hours)\nAuthorized Dates: 04/01/${currentYear} to 09/30/${currentYear}`);
       } else {
         setWaiverName(`${currentChild.nickname} - Public Benefit Waiver Document`);
-        setWaiverEffectiveDate("2026-01-01");
-        setWaiverExpirationDate("2026-12-31");
+        setWaiverEffectiveDate(`${currentYear}-01-01`);
+        setWaiverExpirationDate(`${currentYear}-12-31`);
         setWaiverHours(0);
-        setCustomOcrText(`Disability Advocacy Services of ${stateName}\nRECORD OF DISABILITY CERTIFICATION / ACCOMMODATION PLAN\nName: ${currentChild.nickname}\nAuthorized Benefits: State Respite Care Allowance\nPeriod: Calendar Year 2026`);
+        setCustomOcrText(`Disability Advocacy Services of ${stateName}\nRECORD OF DISABILITY CERTIFICATION / ACCOMMODATION PLAN\nName: ${currentChild.nickname}\nAuthorized Benefits: State Respite Care Allowance\nPeriod: Calendar Year ${currentYear}`);
       }
       setOcrPreview(true);
     }, 2000);
