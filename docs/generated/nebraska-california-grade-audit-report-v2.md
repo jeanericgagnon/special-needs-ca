@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 93
-- primary_gap_reason: official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields
+- primary_gap_reason: official_published_resource_list_contains_only_config_and_static_assets_while_no_metadata_or_hidden_assignment_artifact_exists
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Legal Aid of Nebraska evidence now provides a real statewide civil legal-aid route.)
 - able_program: verified_state_grade (Statewide evidence is present at the required authority level.)
 - ssi_ssa_federal_reference: verified_state_grade (Statewide evidence is present at the required authority level.)
-- county_local_disability_resources: blocked_public_office_service_root_without_assignment_contract (Reviewed 2026-06-23 one more bounded official Nebraska county-local pass on the live DHHS office leaf plus the published ArcGIS app contract. The exact first-party leaf at `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is live, but the official GIS portal still exposes no public county-assignment dependency behind it. The published ExperienceBuilder config at `.../resources/config/config.json` still binds only one web map data source (`dataSource_3`), one closest-office widget output, and one ArcGIS World Geocoding Service output. The public related-items endpoints for both the Web Experience item (`76a6ec0ec7c449448c95d00f59002457`) and the paired Web Map item (`4bdbf8e8703743b0b2ff290f98737825`) both return `total: 0`. The FeatureServer still has only two public layers, `tables: []`, zero relationships, and only 37 distinct `USER_County` values across 42 office rows. Nebraska therefore still lacks any public county-to-office assignment contract.)
+- county_local_disability_resources: blocked_public_office_service_root_without_assignment_contract_or_hidden_resource_artifact (Reviewed 2026-06-23 one more bounded official Nebraska county-local pass on the public ArcGIS item resource surfaces. The ExperienceBuilder item resource list is live, but it contains only `config/config.json` plus static image assets; the paired Web Map item resource list is empty; and both metadata XML routes 404 while the ExperienceBuilder `info/iteminfo` endpoint returns `Info file for item not found`. Combined with the already-reviewed public config, empty related-items endpoints, and contact-only FeatureServer schema, that means the current official Nebraska office stack still exposes no hidden county-assignment artifact.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_published_config_and_related_items_still_only_materialize_locator_outputs_without_county_assignment_contract :: Reviewed 2026-06-23 one more bounded official Nebraska county-local pass on the live DHHS leaf and the exact published ArcGIS stack. `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` returned HTTP 200, while the live office locator ExperienceBuilder config at `https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources/config/config.json` still materializes only three public data dependencies: the shared web map (`dataSource_3`), `widget_382_output_closest_000433549029275504` labeled `Public Assitance Office (Closest Feature)`, and `widget_383_output_config_0` labeled `Nebraska from ArcGIS World Geocoding Service`. The same published config lists only geocoding and routing utilities (`StreetMapPremiumNebraska2024`, ArcGIS World Geocoding Service, and Route World) rather than any county-assignment or service-area source. The public related-items endpoints for both the Web Experience item (`https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/relatedItems?relationshipType=WMA2Code&direction=forward&f=json`) and the paired Web Map item (`https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/relatedItems?direction=forward&f=json`) both return `{"total":0}`, so there is no hidden public sibling item to recover. The public FeatureServer root still exposes only two layers, `tables: []`, and the office layer still exposes only contact-style fields like `USER_Address_1`, `USER_City`, `USER_County`, `USER_Tel`, `USER_Toll_Free_Line`, `USER_Hours`, `USER_Computer`, `USER_Scanning`, and `USER_Phone`, with only 37 distinct `USER_County` values across 42 office rows. Nebraska therefore remains final-blocked on missing public county-to-office assignment data.
+- county_local_disability_resources: official_published_resource_list_contains_only_config_and_static_assets_while_no_metadata_or_hidden_assignment_artifact_exists :: Reviewed 2026-06-23 one more bounded official Nebraska county-local pass on the public ArcGIS item resource and metadata surfaces. `https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources?f=json` returned HTTP 200 and listed exactly 9 resources, but they are only the published `config/config.json` plus static image assets under `images/`; there is no CSV, table, county assignment file, service-area export, or hidden operational dataset in that public resource list. The paired Web Map resource list at `https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/resources?f=json` returns `{"total":0,"resources":[]}`. Both metadata XML routes return HTTP 404, and the ExperienceBuilder info-file endpoint at `.../info/iteminfo?f=json` returns `{"error":{"message":"Info file for item not found"}}`. Combined with the already-reviewed published config, empty related-items endpoints, and contact-only FeatureServer schema, Nebraska therefore still exposes no hidden public county-assignment artifact and remains final-blocked on county-local disability resources.
 
 ## Verified source samples
 
@@ -40,14 +40,14 @@
 - legal_aid: verified_state_grade; samples=1; first=https://legalaidofnebraska.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_public_office_service_root_without_assignment_contract; samples=16; first=https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx
+- county_local_disability_resources: blocked_public_office_service_root_without_assignment_contract_or_hidden_resource_artifact; samples=20; first=https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_table_or_county_assignment_artifact_exists
+- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published
 
 ## Completion decision
 
 - Nebraska remains BLOCKED and index_safe=false.
 - district_or_county_education_routing remains verified_county_grade through the official county-selectable NDE directory host.
-- county_local_disability_resources is still final-blocked: the live DHHS office leaf, the published ExperienceBuilder config, the empty related-items endpoints, and the public FeatureServer layers still expose only locator outputs rather than any county-to-office assignment artifact.
+- county_local_disability_resources is now frozen past the hidden-resource theory too: the public resource list contains only config and image assets, the paired web map has no resources, and no metadata/info file exposes a county-assignment artifact.

@@ -1927,11 +1927,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_public_office_service_root_without_assignment_contract"
+        "county_local_disability_resources": "blocked_public_office_service_root_without_assignment_contract_or_hidden_resource_artifact"
       },
       "packetGenerated": true,
-      "packetBatch": "batch299_nebraska_published_config_finality_v1",
-      "packetPrimaryGapReason": "official_public_office_service_root_has_no_tables_and_office_schema_has_no_service_area_fields",
+      "packetBatch": "batch308_nebraska_resource_list_finality_v1",
+      "packetPrimaryGapReason": "official_published_resource_list_contains_only_config_and_static_assets_while_no_metadata_or_hidden_assignment_artifact_exists",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

@@ -1,0 +1,17 @@
+{
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "failure_code": "official_published_resource_list_contains_only_config_and_static_assets_while_no_metadata_or_hidden_assignment_artifact_exists",
+  "experiencebuilder_resource_total": 9,
+  "experiencebuilder_resource_classes": [
+    "config",
+    "image_assets_only"
+  ],
+  "webmap_resource_total": 0,
+  "experiencebuilder_iteminfo_status": "missing",
+  "experiencebuilder_metadata_status": "404",
+  "webmap_metadata_status": "404",
+  "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published"
+}
