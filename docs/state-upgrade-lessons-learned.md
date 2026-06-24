@@ -315,3 +315,6 @@
 
 ### District-Owned Document Folders Can Preserve Role-Exact Routing Even When The Page Title Is Generic
 *   **Lesson:** If a district-owned CMS route renders a generic document-shell title but its embedded route data preserves a role-exact folder name and child special-education resources on the same first-party host, that can still count as local education-routing proof. Kansas Ellis County cleared once Hays USD 489 exposed a `Special Education` document folder with same-domain `WEBKIDSS Handbook` and `SPED Resources` children in the live Nuxt payload.
+
+### Published App Config Plus Empty Related Items Can Prove The Last Hidden-Source Theory Is Dead
+*   **Lesson:** If a published ArcGIS app config resolves only to a shared web map, widget outputs, and geocoding/routing utilities, and both related-items endpoints are empty, treat that as final proof that there is no hidden public sibling item left to recover. Nebraska's office locator still had no county-assignment source even after the published config and related-items surfaces were checked directly.

@@ -1,0 +1,12 @@
+{
+  "batch": "batch299_nebraska_published_config_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "published_config_dependency_count": 3,
+  "related_items_total_web_experience": 0,
+  "related_items_total_web_map": 0,
+  "lessons_updated": false
+}
