@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 105
-- primary_gap_reason: live_ksde_directory_root_and_public_export_contract_recovered_but_reviewed_local_district_leaves_still_cover_only_18_counties
+- primary_gap_reason: current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_18_counties
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (Kansas DD authority now clears at state grade from reviewed first-party KDADS leaves. The live KDADS root renders HCBS and disability program navigation, the official Intellectual / Developmentally Disabled Information page is public, the Community Support Waiver page explicitly serves Kansans with intellectual and developmental disabilities, and the HCBS Leadership & Staff page names I/DD and waiver staff roles on the same official host. The old host-wide 403 claim is no longer accurate for browser-readable review.)
 - early_intervention_part_c: verified_state_grade (Reviewed live KSDE Early Childhood Special Education leaf again provides Kansas birth-to-three, Part C, KDHE administration, and the local ITS referral pointer.)
 - special_education_idea_part_b: verified_state_grade (Reviewed live KSDE Special Education leaf again provides a role-pure IDEA Part B root and links to dispute-resolution plus parent-rights leaves on the same official path.)
-- district_or_county_education_routing: blocked_live_ksde_export_contract_recovered_but_reviewed_local_district_leaves_still_incomplete (Kansas still has reviewed local education-routing proof for only 18 counties, so the state remains blocked on incomplete county-grade local education evidence. The live official KSDE export lane is still recovered, and the right next lane remains exact district-owned or district-linked local leaf authoring from the export-backed district inventory.)
+- district_or_county_education_routing: blocked_reviewed_local_kansas_district_leaves_expand_to_18_counties_but_current_live_ksde_submit_replay_is_rejected (Kansas still has reviewed local education-routing proof for only 18 counties, so the state remains blocked on incomplete county-grade local education evidence. The preserved district-owned and district-linked local leaf lane is still real, but the current live KSDE state directory/export lane is no longer reproducibly usable in the bounded raw pass because the Directory Reports root, Directories page, educational-directory PDF URL, and an exact district-scoped submit replay all now return `Request Rejected` shells. The correct next lane is therefore saved district-owned or district-linked local leaf authoring only, not more retries against the current live KSDE state roots.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (Reviewed live DCF Rehabilitation Services Program Overview page replaced the old KDADS misclassification.)
 - protection_and_advocacy: verified_state_grade (Reviewed first-party DRC Kansas evidence plus live About/Get Help pages prove the statewide protection-and-advocacy role and help path.)
 - parent_training_information_center: verified_state_grade (Reviewed first-party Families Together evidence explicitly states that it is Kansas’ federally designated PTI.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: live_ksde_directory_root_and_public_export_contract_recovered_but_reviewed_local_district_leaves_still_cover_only_18_counties :: Reviewed 2026-06-24 one more bounded official Kansas district-routing pass using only the recovered live KSDE export contract, official district-owned hosts, official public sitemaps, and exact same-domain role-bearing leaves. Education routing now has reviewed local proof for 18/105 counties: atchison-ks, butler-ks, cowley-ks, doniphan-ks, douglas-ks, ellis-ks, finney-ks, geary-ks, harvey-ks, johnson-ks, leavenworth-ks, lyon-ks, nemaha-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Doniphan now clears because the official Doniphan West USD 111 sitemap exposed an exact same-domain `/o/dwes/page/special-education/` leaf and the fetched district-host page returned HTTP 200 with title `Special Education | Elementary School` on usd111.org. Nemaha now clears because the official Nemaha Central USD 115 sitemap exposed an `mnesc` subtree on the district-owned host and the fetched page title `EARLY CHILDHOOD | Marshall-Nemaha Special Education Co-op` preserves an explicit district-linked special-education cooperative route on usd115.org. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties even though the live export-backed local-leaf lane keeps producing exact district-host matches.
+- district_or_county_education_routing: current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_18_counties :: Reviewed 2026-06-24 one more bounded official Kansas district-routing pass against the exact official KSDE roots plus one exact district-scoped submit replay. The current live raw lane now returns the same `Request Rejected` shell for `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and `https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12`. One fresh exact district-scoped submit replay against the current Directory Reports root using the public hidden fields and `ctl00$MainContent$ddDistricts=D0435`, `ctl00$MainContent$RadioGroup1=RadioUSD1`, `ctl00$MainContent$rblFormat=Excel`, and `ctl00$MainContent$btnPrintSection1=Run Report` also returned the same `Request Rejected` shell instead of a workbook. Kansas still has reviewed local proof for 18/105 counties from preserved district-owned or district-linked leaves: atchison-ks, butler-ks, cowley-ks, doniphan-ks, douglas-ks, ellis-ks, finney-ks, geary-ks, harvey-ks, johnson-ks, leavenworth-ks, lyon-ks, nemaha-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties, and the only trustworthy next lane is saved district-owned or district-linked local leaf authoring rather than the current flapping-or-rejected KSDE export stack.
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=4; first=https://www.kdads.ks.gov/
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://www.ksde.gov/student-success/early-childhood/early-childhood-special-education
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.ksde.gov/policy-and-funding/special-education
-- district_or_county_education_routing: blocked_live_ksde_export_contract_recovered_but_reviewed_local_district_leaves_still_incomplete; samples=22; first=https://uapps.ksde.gov/Directory_Rpts/default.aspx
+- district_or_county_education_routing: blocked_reviewed_local_kansas_district_leaves_expand_to_18_counties_but_current_live_ksde_submit_replay_is_rejected; samples=22; first=https://uapps.ksde.gov/Directory_Rpts/default.aspx
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dcf.ks.gov/services/RS/Pages/default.aspx
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.drckansas.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://familiestogetherinc.org/
@@ -44,12 +44,12 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: resume_only_from_live_public_export_backed_district_inventory_and_saved_district_owned_domains_to_expand_reviewed_local_education_leaves
+- [critical] district_or_county_education_routing: continue_only_from_saved_district_owned_and_district_linked_local_leads_because_current_live_ksde_state_export_lane_is_not_reproducible
 
 ## Repair decision
 
 - Kansas remains BLOCKED and not index-safe.
 - Education is still the only remaining critical blocker.
-- Doniphan now clears from the district-owned Doniphan West USD 111 special-education leaf exposed in the public district sitemap.
-- Nemaha now clears from the district-linked Marshall-Nemaha Special Education Co-op leaf exposed on the official Nemaha Central USD 115 host.
-- Kansas now has reviewed local education-routing proof for eighteen counties, but county-grade local coverage remains incomplete across the remaining unresolved counties.
+- Kansas still has reviewed local education-routing proof for 18 counties from preserved district-owned or district-linked local leaves.
+- The current official KSDE Directory Reports root, Directories page, educational-directory PDF URL, and exact district-scoped submit replay all now fail closed as `Request Rejected` shells in the bounded raw lane.
+- That means the safe next move is saved district-owned or district-linked local leaf authoring only, not more retries against the current KSDE state roots.

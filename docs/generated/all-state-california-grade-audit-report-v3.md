@@ -26,3 +26,4 @@ This v3 audit tracks packet-backed California-grade truth across all 50 states. 
 - Oregon is now COMPLETE/index-safe because the live ODHS office-finder exposes a public `Office Locations` SharePoint list with county arrays covering all 36 counties.
 - Oklahoma remains blocked because the live OKDHS KML only proves 45 benefit-capable counties and the remaining 32 counties still lack a verified public disability/local-routing contract.
 - Ohio is now the next focus state because county-local routing is still root-dead and district/ESC routing is still mostly inventory-only.
+- Kansas now has a stricter live state-root stop signal again: the current KSDE Directory Reports root, Directories page, educational-directory PDF URL, and an exact district-scoped submit replay all return `Request Rejected` shells in the bounded raw lane, so future repairs should continue only from saved district leads plus exact district-owned leaves.

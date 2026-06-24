@@ -363,3 +363,6 @@
 
 ### Service-Limited Access Points Do Not Close A County-Local Routing Gap
 *   **Lesson:** If an official county map includes partner access points, count them only when their published service mix matches the required local-routing role. Oklahoma’s OKDHS KML exposed extra county-named access points, but TANF-only entries for Grady, Pittsburg, and Washington could not truthfully close the broader county-local disability routing gap.
+
+### Recovered State Roots Still Fail Closed If The Exact Public Submit Replay Reverts To Request Rejected
+*   **Lesson:** If an official state selector root seems to recover but the exact public submit replay still returns `Request Rejected`, do not keep treating it as a deterministic acquisition lane. Kansas KSDE briefly looked healthier at the root level, but the current bounded GETs to the Directory Reports root, Directories page, and educational-directory PDF URL plus the exact district-scoped submit replay all fell back to rejected shells, so the trustworthy lane stayed saved district leads plus exact local leaves only.

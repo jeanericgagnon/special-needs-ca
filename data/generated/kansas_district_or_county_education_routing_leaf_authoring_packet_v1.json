@@ -11,8 +11,8 @@
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
-    "liveDirectoryRoots": 4,
-    "publicExportContractVerified": true,
+    "liveDirectoryRoots": 0,
+    "publicExportContractVerified": false,
     "reviewedDistrictOwnedLeafCount": 18
   },
   "exact_target_goals": [
@@ -158,7 +158,7 @@
     "woodson-ks",
     "wyandotte-ks"
   ],
-  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned education-routing leaf authored from the public KSDE export-backed district inventory or remains explicitly blocked where no district-owned local contract has been preserved.",
+  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned or district-linked education-routing leaf from saved district leads or remains explicitly blocked where no district-owned local contract has been preserved; do not rely on the current live KSDE state export roots until the exact submit lane is reproducible again.",
   "reviewed_local_leaf_counties": [
     "atchison-ks",
     "butler-ks",

@@ -1,0 +1,35 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "failure_code": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_18_counties",
+  "remaining_blocker_family": "district_or_county_education_routing",
+  "reviewed_leaf_count": 18,
+  "reviewed_leaf_counties": [
+    "atchison-ks",
+    "butler-ks",
+    "cowley-ks",
+    "doniphan-ks",
+    "douglas-ks",
+    "ellis-ks",
+    "finney-ks",
+    "geary-ks",
+    "harvey-ks",
+    "johnson-ks",
+    "leavenworth-ks",
+    "lyon-ks",
+    "nemaha-ks",
+    "riley-ks",
+    "saline-ks",
+    "sedgwick-ks",
+    "shawnee-ks",
+    "wyandotte-ks"
+  ],
+  "rejected_root_statuses": {
+    "directory_reports_root": 200,
+    "directories_page": 200,
+    "educational_directory_pdf_url": 200,
+    "exact_submit_replay": 200
+  },
+  "rejected_root_title": "Request Rejected",
+  "next_action": "continue_only_from_saved_district_owned_and_district_linked_local_leads_because_current_live_ksde_state_export_lane_is_not_reproducible"
+}

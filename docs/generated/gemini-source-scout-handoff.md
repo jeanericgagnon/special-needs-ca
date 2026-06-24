@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
-- Kansas: `live_ksde_directory_root_and_public_export_contract_recovered_but_reviewed_local_district_leaves_still_cover_only_18_counties`
+- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_18_counties`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
@@ -35,46 +35,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Ohio
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-`official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only`
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 18/105 counties from preserved district-owned or district-linked local leaves, but the current live KSDE state directory/export lane is not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Kansas remains BLOCKED and not index-safe because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive more deterministic repair work right now.
 
 ### Exact Evidence Needed
 
-- Any live official Ohio county-local JFS, Medicaid, or Ohio.gov successor directory, locator, search index, or export that replaces the retired county-office family.
-- Any public official county-office contract that stays live on the current Ohio host family instead of the dead 404 roots.
-- More exact district-owned or ESC-owned local routing leaves so education can move beyond the current tiny reviewed inventory.
+- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
+- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
+- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
 
 ### Useful Official URLs Already Tried
 
-- [Ohio JFS root](https://jfs.ohio.gov/)
-- [Ohio Medicaid root](https://medicaid.ohio.gov/)
-- [Ohio.gov root](https://ohio.gov/)
-- [Ohio JFS local agencies directory guess](https://jfs.ohio.gov/home/local-agencies-directory)
-- [Ohio Medicaid county agencies guess](https://medicaid.ohio.gov/families-and-individuals/county-agencies)
-- [Ohio Medicaid resources county agencies guess](https://medicaid.ohio.gov/resources/county-agencies)
-- [Ohio.gov Job and Family Services directory guess](https://ohio.gov/residents/resources/job-family-services-directory)
-- [NPESC districts leaf](https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts)
-- [SCOESC districts leaf](https://www.scoesc.org/districts)
-- [WBESC schools leaf](https://www.wbesc.org/our-schools)
-- [MRESC districts served leaf](https://www.mresc.org/districts-we-serve/)
+- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
+- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [Doniphan West USD 111 Special Education](https://www.usd111.org/o/dwes/page/special-education/)
+- [Marshall-Nemaha Special Education Co-op Early Childhood](https://www.usd115.org/o/mnesc/page/early-childhood/)
+- [Atchison Public Schools Special Education Services](https://www.usd409.net/page/special-education-services/)
+- [Hays USD 489 Special Education folder](https://www.usd489.com/documents/about-usd-489/special-education/81796)
+- [Abilene Public Schools root](https://www.abileneschools.org/)
+- [Abilene Public Schools sitemap](https://www.abileneschools.org/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Reviewed 2026-06-23 one more bounded live official Ohio county-local pass after the earlier JFS retirement finding. The blocker is now stronger than dead guessed county-directory paths alone: in the current repo-side verification lane, even the official root and discovery surfaces fail closed. `https://jfs.ohio.gov/`, `https://medicaid.ohio.gov/`, and `https://ohio.gov/` all return HTTP 404, and the same is true for `robots.txt` and `sitemap.xml` on each host family. The already-tried legacy and guessed county-directory paths remain dead as well, including `https://jfs.ohio.gov/home/local-agencies-directory`, `https://medicaid.ohio.gov/families-and-individuals/county-agencies`, `https://medicaid.ohio.gov/resources/county-agencies`, and `https://ohio.gov/residents/resources/job-family-services-directory`, all of which still return HTTP 404. This means the blocker is no longer just that a county-office page moved; the bounded lane currently has no live official JFS, Medicaid, or Ohio.gov root/discovery contract from which to verify a county-office successor. The DOI-hosted county dataset therefore remains planning evidence only.
-- Reviewed 2026-06-23 Ohio school_district source inventory from disk. Only 4 distinct source URLs still preserve any path-level leaf signal, covering just 8 county rows total, while 49 distinct URLs remain generic roots only. The leaf-like URLs are https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts, https://www.scoesc.org/districts, https://www.wbesc.org/our-schools, https://www.mresc.org/districts-we-serve/; that is still not enough county-grade coverage to truthfully clear district_or_county_education_routing statewide.
+- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
+- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or similar.
+- Additional district-owned document-folder or CMS routes like the Hays USD 489 recovery, but only on already-preserved district domains.
+## Next State Order After Kansas
 
-## Next State Order After Ohio
-
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. New Mexico
-7. South Dakota
-8. Rhode Island
-9. Virginia
-10. West Virginia
+1. Nebraska
+2. Florida
+3. Alaska
+4. New York
+5. Oklahoma
+6. Oregon
+7. Ohio
+8. Minnesota
+9. Maine
+10. Idaho
