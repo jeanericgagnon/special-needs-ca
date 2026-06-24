@@ -1,0 +1,27 @@
+{
+  "batch": "batch321_florida_auth_only_endpoint_finality_v1",
+  "generated_at": "2026-06-24T21:18:44.803Z",
+  "state": "florida",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "storefront_distinct_counties": 34,
+  "storefront_rows": 39,
+  "myaccess_root_status": 200,
+  "public_cpcps_status": 200,
+  "public_appconfig_status": 200,
+  "public_asset_manifest_status": 200,
+  "public_main_bundle_status": 200,
+  "public_dataexchangeproxy_status": 200,
+  "accountmanagement_county_details_status": 401,
+  "accountmanagement_partner_search_status": 401,
+  "main_bundle_endpoint_terms_found": true,
+  "main_bundle_endpoint_names": [
+    "getZipCountyDetails",
+    "communityPartnerSearch"
+  ],
+  "office_mapping": "/dataexchangeproxy",
+  "create_cbo_account_service": "/dataexchangeproxy",
+  "partner_approver_services": "/accountmanagement",
+  "main_bundle_url": "https://myaccess.myflfamilies.com/static/js/main.d43b0959.js"
+}
