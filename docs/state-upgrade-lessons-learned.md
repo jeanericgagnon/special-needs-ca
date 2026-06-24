@@ -366,3 +366,6 @@
 
 ### Recovered State Roots Still Fail Closed If The Exact Public Submit Replay Reverts To Request Rejected
 *   **Lesson:** If an official state selector root seems to recover but the exact public submit replay still returns `Request Rejected`, do not keep treating it as a deterministic acquisition lane. Kansas KSDE briefly looked healthier at the root level, but the current bounded GETs to the Directory Reports root, Directories page, and educational-directory PDF URL plus the exact district-scoped submit replay all fell back to rejected shells, so the trustworthy lane stayed saved district leads plus exact local leaves only.
+
+### Public ExperienceBuilder Configs Can Prove The Missing Datasource
+*   **Lesson:** If an official ExperienceBuilder app republishes but still feels ambiguous, read the public `resources/config/config.json` directly. Nebraska’s public config made the blocker more explicit: it referenced only one web map, one `closest feature` output layer, and the geocoder widget, which proved there was still no hidden county-assignment datasource behind the county-local office stack.

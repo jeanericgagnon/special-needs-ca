@@ -2,7 +2,7 @@
   "state": "nebraska",
   "state_code": "NE",
   "state_name": "Nebraska",
-  "batch": "batch320_nebraska_webmap_no_hidden_table_finality_v1",
+  "batch": "batch327_nebraska_config_resource_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "recovered_public_office_stack_still_has_no_hidden_table_assignment_bridge_and_only_42_offices_for_93_counties",
+  "primary_gap_reason": "public_nebraska_office_config_still_only_references_one_web_map_and_a_closest_feature_output_while_the_feature_service_stops_at_42_offices_for_93_counties",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -43,12 +43,12 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "recovered_public_office_stack_still_has_no_hidden_table_assignment_bridge_and_only_42_offices_for_93_counties",
-      "evidence": "Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across the live DHHS and ArcGIS publication stack. `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is still only the SharePoint wrapper for the locator, not a county directory leaf. The refreshed ExperienceBuilder item data at `https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json` still exposes only one web map data source (`4bdbf8e8703743b0b2ff290f98737825`), one closest-feature office output, and one geocoder output. The underlying public web map data at `https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/data?f=json` still carries exactly two operational layers (`FeatureServer/0` offices and `FeatureServer/1` counties) and zero tables. The closest-feature output schema in the app still mirrors the office layer fields (`USER_Address_1`, `USER_City`, `USER_County`, phones, hours) rather than any county-assignment table. The public FeatureServer still reports 42 office rows against 93 county rows, both layers still expose `relationships: []`, and the distinct office-county query still returns only 37 county values. Nebraska therefore still has no hidden table, related record, or published county-assignment bridge anywhere on the current public stack.",
+      "failure_code": "public_nebraska_office_config_still_only_references_one_web_map_and_a_closest_feature_output_while_the_feature_service_stops_at_42_offices_for_93_counties",
+      "evidence": "Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across the live DHHS and ArcGIS publication stack, including the public ExperienceBuilder resource config. `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is still only the SharePoint wrapper for the locator, not a county directory leaf. The public resource list for item `76a6ec0ec7c449448c95d00f59002457` exposes `config/config.json`, and that config still references only one web map item (`4bdbf8e8703743b0b2ff290f98737825`) plus one `closest feature` output layer (`widget_382_output_closest_000433549029275504`) and the geocoder search widget. No additional table datasource, county-assignment datasource, or service-area output appears anywhere in the public config. The underlying public web map data still carries exactly two operational layers (`FeatureServer/0` offices and `FeatureServer/1` counties) and zero tables. The public FeatureServer still reports 42 office rows against 93 county rows, both layers still expose `relationships: []`, and the distinct office-county query still returns only 37 county values. Nebraska therefore still has no hidden table, output layer, related record, or published county-assignment bridge anywhere on the current public stack.",
       "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published"
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_republished_public_office_stack_without_hidden_assignment_bridge"
+    "county_local_disability_resources": "blocked_public_config_confirms_no_county_assignment_datasource"
   }
 }
