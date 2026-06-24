@@ -318,3 +318,6 @@
 
 ### Published App Config Plus Empty Related Items Can Prove The Last Hidden-Source Theory Is Dead
 *   **Lesson:** If a published ArcGIS app config resolves only to a shared web map, widget outputs, and geocoding/routing utilities, and both related-items endpoints are empty, treat that as final proof that there is no hidden public sibling item left to recover. Nebraska's office locator still had no county-assignment source even after the published config and related-items surfaces were checked directly.
+
+### A Public Shell Lane Can Regress Into An Edge-Blocked Lane And Must Be Reclassified
+*   **Lesson:** If a previously readable public shell lane starts returning CloudFront or edge-blocked 403 responses on its public entry, config, and bundle paths, tighten the blocker to the current live contract instead of carrying forward older shell assumptions. Florida’s MyACCESS lane moved from replaying a generic shell to returning CloudFront `Request blocked` on the exact public shell, config, bundle, and asset-manifest paths.
