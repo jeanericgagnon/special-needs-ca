@@ -1,0 +1,19 @@
+{
+  "batch": "batch323_alaska_daph_wrong_role_finality_v1",
+  "generated_at": "2026-06-24T23:55:08.096Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "dfcs_site_map_status": 200,
+  "dfcs_site_map_title": "Site Map",
+  "daph_payment_status": 200,
+  "daph_payment_title": "Payment Assistance Program",
+  "daph_payment_h1": "​​​ Alaska Pioneer Homes Payment Assistance Program",
+  "daph_publications_status": 200,
+  "daph_publications_title": "Publications",
+  "daph_publications_h1": "Get Started",
+  "ocs_offices_status": 200,
+  "ocs_offices_title": "OCS Regional Offices",
+  "ocs_offices_h1": "​​​​​​​Contact Us"
+}
