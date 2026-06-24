@@ -1,0 +1,16 @@
+{
+  "state": "nebraska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "freshly_republished_public_office_experience_still_only_wraps_42_offices_37_distinct_counties_and_no_statewide_assignment_contract",
+  "item_data_timestamp": 1772143020147,
+  "config_resource_created": 1772143020199,
+  "office_count": 42,
+  "county_count": 93,
+  "distinct_office_counties": 37,
+  "office_layer_relationships_empty": true,
+  "county_layer_relationships_empty": true,
+  "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published",
+  "lessons_updated": false
+}

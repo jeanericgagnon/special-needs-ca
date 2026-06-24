@@ -342,3 +342,6 @@
 
 ### Recheck Rejected State Export Roots Before Freezing Them As Final
 *   **Lesson:** A previously rejected official export root can recover, so recheck exact public state directory and PDF URLs before treating a dead-root blocker as final. Kansas KSDE moved from shared `Request Rejected` shells back to a live Directory Reports page with ASP.NET hidden fields, a live Directories page, and a real public educational-directory PDF, which reopened the official export-backed district authoring lane even though county-grade local leaves were still incomplete.
+
+### Freshly Republished ArcGIS Experiences Can Still Preserve The Same Final Blocker
+*   **Lesson:** A fresh publication timestamp on an official ArcGIS ExperienceBuilder item does not by itself reopen a blocked local-office lane. Nebraska republished `config/config.json`, but the refreshed experience still wrapped the same 42-office / 93-county mismatch, the same empty layer relationships, and the same 37-county distinct office coverage, so the county-assignment blocker remained final.
