@@ -2617,6 +2617,17 @@ function runMigrations(db: Database.Database) {
     }
   }
 
+  // Create indexes to optimize county page queries
+  try {
+    db.exec(`
+      CREATE INDEX IF NOT EXISTS idx_nonprofit_organizations_county ON nonprofit_organizations(county_id);
+      CREATE INDEX IF NOT EXISTS idx_iep_advocate_counties_county ON iep_advocate_counties(county_id);
+    `);
+    console.log('⚡ Created indexes for nonprofit_organizations and iep_advocate_counties successfully.');
+  } catch (e) {
+    console.warn(`⚠️ Warning: Failed to create SQLite indexes:`, (e as Error).message);
+  }
+
   console.log('⚡ SQLite Database migrations completed successfully!');
 }
 

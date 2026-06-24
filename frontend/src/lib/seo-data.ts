@@ -2496,7 +2496,7 @@ ${f.parentName || '[Parent Name]'}`
       { title: 'California Children\'s Services Guide', url: '/programs/california-childrens-services' }
     ],
     officialSources: [
-      { name: 'DHCS Forms Directory', url: 'https://www.dhcs.ca.gov' }
+      { name: 'DHCS CCS Program Portal', url: 'https://www.dhcs.ca.gov/services/ccs' }
     ],
     lastReviewedDate: '2026-06-01',
     callScriptTemplate: {

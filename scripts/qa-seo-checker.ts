@@ -8,8 +8,10 @@ import {
   assertNoPlaceholderData, 
   normalizeConfidenceScore, 
   stateAuditStatus,
-  hasOfficialProgramSource 
+  hasOfficialProgramSource,
+  verifyClaimEvidence
 } from '../frontend/src/lib/seo-policy.js';
+import { SEO_CLUSTERS } from '../frontend/src/lib/seo-data.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -80,6 +82,255 @@ const BANNED_PATTERNS = [
   { pattern: /confidence_score\s*.*?\/.*?5(\.0)?\b/i, label: 'manual division of confidence score by 5' }
 ];
 
+function isClaimBackedByStructuredEvidence(blockSlug: string, label: string, line: string, lines: string[], index: number): boolean {
+  if (!blockSlug) return false;
+  const dbSlug = blockSlug.replace(/_/g, '-');
+
+  // Check if the page is indexable
+  const cluster = SEO_CLUSTERS[blockSlug];
+  if (cluster) {
+    const category = cluster.category || 'forms';
+    const policy = getSeoPolicyForRoute('static-page', {
+      path: `/${category}/${blockSlug}`
+    }, {
+      hasNoPlaceholderData: true
+    });
+    if (!policy.index) {
+      return true; // Noindexed pages are allowed to have hardcoded dates/sources since they are not indexable.
+    }
+  }
+
+  // Mapping for state-specific static guides (Texas, Pennsylvania, Illinois, Georgia)
+  let searchSlug = dbSlug;
+  const mappings: Record<string, string> = {
+    // California
+    'down-syndrome-benefits-california': 'regional-centers',
+    'ihss-protective-supervision': 'ihss-for-children',
+    'soc-873': 'ihss-for-children',
+    'soc-295': 'ihss-for-children',
+    'soc-821': 'ihss-for-children',
+    'soc-825': 'ihss-for-children',
+    'soc-839': 'ihss-for-children',
+    'iep-evaluation-request': 'iep-special-education',
+    'california-iep-timeline': 'iep-special-education',
+    'regional-center-eligibility': 'regional-centers',
+    'early-start-age-3-transition': 'early-start',
+    'medi-cal-epsdt': 'medi-cal-for-kids-and-teens',
+    'ccs': 'california-childrens-services',
+    'regional-center-intake-request': 'regional-centers',
+    'regional-center-ipp-request': 'regional-centers',
+    'regional-center-service-request': 'regional-centers',
+    'regional-center-appeal-request': 'regional-centers',
+    'iep-assessment-request': 'iep-special-education',
+    'independent-educational-evaluation-request': 'iep-special-education',
+    'prior-written-notice-request': 'iep-special-education',
+    'education-records-request': 'iep-special-education',
+    'cde-state-complaint': 'iep-special-education',
+    'due-process-complaint': 'iep-special-education',
+    'ccs-application': 'california-childrens-services',
+    'dhcs-4480': 'california-childrens-services',
+    'medi-cal-application': 'medi-cal-for-kids-and-teens',
+    'medi-cal-epsdt-request': 'medi-cal-for-kids-and-teens',
+    'ssi-child-disability-checklist': 'ssi-for-children',
+    'calable-account-opening': 'calable',
+    'hcba-waiver-application': 'hcba',
+
+    // Texas
+    'tx-due-process-complaint': 'form-due-process-hearing',
+    'tx-tea-complaint': 'form-model-state-complaint',
+    'tx-mediation-request': 'form-mediation-request',
+    'tx-medicaid-chip': 'form-h1010',
+    'tx-hcs-guide': 'tx-hcs',
+    'tx-class-guide': 'tx-class',
+    'tx-txhml-guide': 'tx-txhml',
+    'tx-mdcp-guide': 'tx-mdcp',
+    'tx-eci-referral': 'tx-eci',
+    'tx-sped-evaluation-request': 'tx-tea-sped',
+    'tx-records-request': 'tx-tea-sped',
+    'tx-iee-request': 'tx-tea-sped',
+    'tx-able-guide': 'tx-able',
+    'tx-ssi-checklist': 'tx-medicaid',
+    'tx-starkids-overview': 'tx-medicaid',
+    'tx-starkids-coordination': 'tx-medicaid',
+    'tx-starkids-mco-appeal': 'tx-medicaid',
+    'tx-starkids-reduction-appeal': 'tx-medicaid',
+    'tx-medicaid-fair-hearing': 'tx-medicaid',
+    'tx-expedited-appeal': 'tx-medicaid',
+    'tx-benefits-continuation': 'tx-medicaid',
+
+    // Pennsylvania
+    'pa-medicaid-compass-app': 'pa-medicaid',
+    'pa-odp-intake-request': 'pa-medicaid',
+    'pa-odp-waiver-guide': 'pa-medicaid',
+    'pa-puns-form': 'pa-medicaid',
+    'pa-chip-app': 'pa-chip',
+    'pa-early-intervention-referral': 'pa-early-intervention',
+    'pa-iep-evaluation-request': 'pa-special-education',
+    'pa-norep-form': 'pa-special-education',
+    'pa-due-process-complaint': 'pa-special-education',
+    'pa-state-complaint': 'pa-special-education',
+    'pa-records-request': 'pa-special-education',
+    'pa-iee-request': 'pa-special-education',
+    'pa-able-opening': 'pa-able',
+    'pa-ssi-checklist': 'pa-ssi-child',
+    'pa-ovr-referral': 'pa-ovr',
+    'pa-medicaid-renewal': 'pa-medicaid',
+    'pa-medicaid-fair-hearing': 'pa-medicaid',
+    'pa-comp-waiver-guide': 'pa-consolidated-waiver',
+    'pa-comm-living-waiver-guide': 'pa-community-living-waiver',
+    'pa-pfds-waiver-guide': 'pa-pfds-waiver',
+
+    // Illinois
+    'il-medicaid-abe-app': 'abe-medicaid-application-il',
+    'il-dd-intake-request': 'il-medicaid',
+    'il-puns-registration': 'idhs-puns-enrollment-il',
+    'il-hsp-application': 'il-hsp',
+    'il-all-kids-app': 'il-all-kids',
+    'il-ei-referral': 'il-ei-referral-form',
+    'il-iep-evaluation-request': 'il-special-education',
+    'il-isbe-due-process': 'isbe-due-process-complaint-il',
+    'il-isbe-complaint': 'il-special-education',
+    'il-records-request': 'il-special-education',
+    'il-iee-request': 'il-special-education',
+    'il-able-opening': 'il-able',
+    'il-ssi-checklist': 'il-ssi-child',
+    'il-drs-referral': 'il-drs',
+    'il-medicaid-renewal': 'il-medicaid',
+    'il-medicaid-fair-hearing': 'il-medicaid',
+    'il-csw-waiver-guide': 'il-childrens-support-waiver',
+    'il-adults-dd-waiver-guide': 'il-adults-dd-waiver',
+    'il-hsp-caregiver-agreement': 'il-hsp',
+    'il-isbe-mediation-request': 'isbe-mediation-request-il',
+
+    // Georgia
+    'ga-medicaid-gateway-app': 'ga-medicaid',
+    'ga-dbhdd-intake-request': 'ga-comp-waiver',
+    'ga-comp-waiver-guide': 'ga-comp-waiver',
+    'ga-now-waiver-guide': 'ga-now-waiver',
+    'ga-gapp-application': 'ga-gapp',
+    'ga-peachcare-app': 'ga-peachcare',
+    'ga-bcw-referral': 'ga-early-intervention',
+    'ga-iep-evaluation-request': 'ga-special-education',
+    'ga-due-process-complaint': 'ga-special-education',
+    'ga-state-complaint': 'ga-special-education',
+    'ga-records-request': 'ga-special-education',
+    'ga-iee-request': 'ga-special-education',
+    'ga-able-opening': 'ga-able',
+    'ga-ssi-checklist': 'ga-ssi-child',
+    'ga-gvra-referral': 'ga-gvra',
+    'ga-medicaid-renewal': 'ga-medicaid',
+    'ga-medicaid-fair-hearing': 'ga-medicaid',
+    'ga-gapp-medical-necessity': 'ga-gapp',
+    'ga-gadoe-mediation-request': 'ga-special-education',
+    'ga-dbhdd-planning-list-form': 'ga-comp-waiver'
+  };
+
+  if (mappings[dbSlug]) {
+    searchSlug = mappings[dbSlug];
+  }
+
+  let dbSourceUrl = '';
+  let dbDate = '';
+
+  // Check programs table
+  const prog = db.prepare('SELECT source_url, last_verified_date FROM programs WHERE id = ? OR id = ?').get(searchSlug, searchSlug.replace(/-/g, '_')) as any;
+  if (prog) {
+    if (prog.source_url) dbSourceUrl = prog.source_url;
+    if (prog.last_verified_date) dbDate = prog.last_verified_date;
+  }
+
+  // Check forms_and_guides table
+  if (!dbSourceUrl || !dbDate) {
+    const form = db.prepare('SELECT source_url, last_verified_at, last_checked_at FROM forms_and_guides WHERE slug = ? OR id = ?').get(searchSlug, searchSlug.replace(/-/g, '_')) as any;
+    if (form) {
+      if (form.source_url) dbSourceUrl = form.source_url;
+      const fDate = form.last_verified_at || form.last_checked_at;
+      if (fDate) dbDate = fDate;
+    }
+  }
+
+  // Check sources table as fallback for sources
+  if (!dbSourceUrl) {
+    const sourceRecord = db.prepare('SELECT url FROM sources WHERE program_id = ? OR program_id = ?').get(searchSlug, searchSlug.replace(/-/g, '_')) as any;
+    if (sourceRecord && sourceRecord.url) {
+      dbSourceUrl = sourceRecord.url;
+    }
+  }
+
+  // 1. Date Check
+  if (label.includes('Date') || label.includes('2026-06')) {
+    return dbDate !== '';
+  }
+
+  // 2. officialSources Check
+  if (label.includes('officialSources') || label.includes('portal fallback')) {
+    if (!dbSourceUrl || !hasOfficialProgramSource(dbSourceUrl)) {
+      return false; // Database has no verified official source URL
+    }
+
+    // Extract all URLs from the hardcoded officialSources array starting at 'index'
+    const urls: string[] = [];
+    let i = index + 1;
+    while (i < lines.length) {
+      if (lines[i].includes(']')) {
+        break; // Array closed
+      }
+      const urlMatch = lines[i].match(/url:\s*['"]([^'"]+)['"]/);
+      if (urlMatch) {
+        urls.push(urlMatch[1]);
+      }
+      i++;
+    }
+
+    if (urls.length === 0) {
+      return false; // No URLs found in the array
+    }
+
+    const isOfficialDomain = (urlStr: string): boolean => {
+      if (!urlStr) return false;
+      try {
+        const parsed = new URL(urlStr);
+        const host = parsed.hostname.toLowerCase();
+        if (
+          host.endsWith('.gov') || 
+          host === 'calable.ca.gov' || 
+          host.endsWith('coveredca.com') || 
+          host === 'odr-pa.org' || 
+          host.endsWith('.odr-pa.org') ||
+          host.endsWith('disabilityrightsca.org') ||
+          host.endsWith('stepupforstudents.org') ||
+          host.endsWith('ableunited.com') ||
+          host.endsWith('texasable.org') ||
+          host.endsWith('myflorida.com') ||
+          host.endsWith('myflfamilies.com') ||
+          host.endsWith('floridakidcare.org') ||
+          host.endsWith('floridaearlysteps.com') ||
+          host.endsWith('rehabworks.org')
+        ) {
+          return true;
+        }
+        // Check in sources table in database
+        const dbSource = db.prepare('SELECT 1 FROM sources WHERE url = ? OR url LIKE ?').get(urlStr, `%${host}%`) as any;
+        if (dbSource) {
+          return true;
+        }
+      } catch {
+        // Ignored
+      }
+      return false;
+    };
+
+    const allUrlsOfficial = urls.every(u => isOfficialDomain(u) && hasOfficialProgramSource(u));
+    if (!allUrlsOfficial) {
+      console.log(`[DEBUG] officialSources check failed for blockSlug: "${blockSlug}", urls: ${JSON.stringify(urls)}`);
+    }
+    return allUrlsOfficial;
+  }
+
+  console.log(`[DEBUG] Fallback failed for blockSlug: "${blockSlug}", label: "${label}", line: "${line.trim()}"`);
+  return false;
+}
+
 function scanFilesForBannedPatterns() {
   console.log('\n--- Scanning Source Files for Banned Hardcoded SEO Patterns ---');
   const srcDir = path.resolve(__dirname, '../frontend/src');
@@ -109,22 +360,35 @@ function scanFilesForBannedPatterns() {
     const relativePath = path.relative(path.resolve(__dirname, '..'), file);
     
     BANNED_PATTERNS.forEach(({ pattern, label }) => {
-      const isSeoDataFile = file.endsWith('seo-data.ts') || file.endsWith('five-states-seo-data.ts');
-      const skipLabels = [
-        'hardcoded officialSources array',
-        "lastVerifiedDate: '2026",
-        "lastReviewedDate: '2026",
-        '2026-06-01',
-        '2026-06-19',
-        'officialSources state portal fallback'
-      ];
-      if (isSeoDataFile && skipLabels.includes(label)) {
-        return;
-      }
       if (pattern.test(content)) {
         const lines = content.split('\n');
         lines.forEach((line, index) => {
           if (pattern.test(line)) {
+            const isSeoDataFile = file.endsWith('seo-data.ts') || file.endsWith('five-states-seo-data.ts');
+            const skipLabels = [
+              'hardcoded officialSources array',
+              "lastVerifiedDate: '2026",
+              "lastReviewedDate: '2026",
+              '2026-06-01',
+              '2026-06-19',
+              'officialSources state portal fallback'
+            ];
+            
+            if (isSeoDataFile && skipLabels.includes(label)) {
+              // Find the slug of the current block
+              let blockSlug = '';
+              for (let i = index; i >= 0; i--) {
+                const slugMatch = lines[i].match(/slug:\s*['"]([^'"]+)['"]/);
+                if (slugMatch) {
+                  blockSlug = slugMatch[1];
+                  break;
+                }
+              }
+              if (isClaimBackedByStructuredEvidence(blockSlug, label, line, lines, index)) {
+                return; // Backed by structured evidence, allow to pass
+              }
+            }
+
             // Note: QA-ALLOW is no longer allowed to suppress legal, financial, timing, etc.
             logError(`Banned pattern "${label}" found in ${relativePath}:${index + 1}\n  > ${line.trim()}`);
             bannedStringsFound++;
@@ -227,7 +491,8 @@ states.forEach(state => {
       lastVerifiedDate,
       confidenceScore,
       hasRequiredContactInfo,
-      hasNoPlaceholderData
+      hasNoPlaceholderData,
+      hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || details.length > 0
     });
     
     if (cPolicy.index) {
@@ -297,7 +562,7 @@ counties.forEach(county => {
     confidenceScore,
     hasRequiredContactInfo,
     hasNoPlaceholderData,
-    hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || rcs.length > 0
+    hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || details.length > 0
   });
 
   const url = `/benefits/${county.state_id}/${county.id}`;

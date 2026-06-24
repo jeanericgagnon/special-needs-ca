@@ -53,7 +53,7 @@ export default async function RootLayout({
               <span className="logo-text">Ablefull</span>
             </Link>
             
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+            <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
               <Link href="/benefits" className="nav-link">
                 <Compass size={16} />
                 <span>Benefits</span>

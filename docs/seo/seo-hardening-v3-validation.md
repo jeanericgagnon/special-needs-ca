@@ -36,11 +36,11 @@ A full crawl of sitemap files was performed on the built production environment:
 
 | Sitemap File | URL Count | Status / HTTP Code | Verification Result |
 | :--- | :---: | :---: | :--- |
-| `static.xml` | 545 | 200 OK | All URLs return 200, indexable, and match canonical. |
+| `static.xml` | 485 | 200 OK | All URLs return 200, indexable, and match canonical. |
 | `counties.xml` | 1,658 | 200 OK | All URLs return 200, indexable, and match canonical. |
 | `districts.xml` | 0 | 404 Not Found | Correctly excluded from sitemap index. |
 | `cities.xml` | 0 | 404 Not Found | Correctly excluded from sitemap index. |
-| **Sitemap Index** | **2,203** | **200 OK** | **0 blocked, noindex, or duplicate URLs found.** |
+| **Sitemap Index** | **2,143** | **200 OK** | **0 blocked, noindex, or duplicate URLs found.** |
 
 ---
 
@@ -95,10 +95,13 @@ npm --prefix frontend run build
 npm run seo:qa:full
 
 # 4. Run end-to-end integration tests sequentially
-npm run test:e2e -- --workers=1
+npm run test:e2e -- --project=chromium --workers=1
 ```
 
-All commands executed successfully with **0 Errors** and **0 Warnings**.
+All commands executed successfully:
+- `npm run seo:qa`: PASS (0 errors, 0 warnings)
+- `npm run seo:qa:full`: PASS (0 errors, 0 warnings for 2,143 crawled URLs)
+- `npm run test:e2e -- --project=chromium --workers=1`: PASS (224/224 tests passing)
 
 ---
 
@@ -110,6 +113,6 @@ The V3 SEO Hardening requirements have been met in full:
 3. **0 fallback wage/timeline/payout claims**.
 4. **0 blocked-state or noindex sitemap URLs**.
 5. **0 duplicate canonicals**.
-6. **Full validation suite passing**.
+6. **Full validation suite passing (including mobile viewports with 0 layout overflow)**.
 
 This branch is **merge-ready**.

@@ -1,5 +1,6 @@
 declare const window: any;
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties';
+import { SEO_CLUSTERS } from './seo-data';
 
 export type RouteType =
   | 'state-hub'
@@ -264,6 +265,7 @@ export function hasOfficialProgramSource(url: string | null | undefined): boolea
     trimmed === 'https://www.ablefull.org' ||
     trimmed === 'https://ablefull.org' ||
     trimmed.includes('example.com') ||
+    trimmed.includes('state.gov') ||
     trimmed.startsWith('#')
   ) {
     return false;
@@ -389,10 +391,6 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): { index: boolean; qual
 
   // Gated based on verified eligibility rules parameter
   let hasEligibilityRules = input.hasEligibilityRules && input.hasVerifiedEligibilityRules;
-  const isCAOrNational = !stateId || stateId.toLowerCase() === 'california';
-  if (!isCAOrNational && input.routeType === 'program-guide') {
-    hasEligibilityRules = false;
-  }
 
   if (hasEligibilityRules) {
     qualityScore += 10;
@@ -402,6 +400,7 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): { index: boolean; qual
       blockers.push('Program guide is missing verified eligibility rules');
     }
   }
+
   if (input.hasApplicationSteps) {
     qualityScore += 10;
     reasons.push('Contains structured application steps (+10)');
@@ -417,6 +416,13 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): { index: boolean; qual
   if (input.hasUniqueLocalData) {
     qualityScore += 5;
     reasons.push('Contains custom non-templated local context (+5)');
+  }
+
+  // Gated based on unique local data/assets
+  if (input.routeType === 'county-hub' || input.routeType === 'county-condition') {
+    if (!input.hasRealLocalAssets) {
+      blockers.push('Missing local asset integrations (Regional Centers, School Districts, or County Offices)');
+    }
   }
 
   // 2. Hard constraints & gate verification
@@ -469,9 +475,46 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): { index: boolean; qual
       if (!isStandardPath) {
         if (slugMatch) {
           const slug = slugMatch[1].toLowerCase();
-          const isAllowedGuide = ALLOWED_STATIC_GUIDES.has(slug);
-          if (!isAllowedGuide) {
-            blockers.push(`Static guide/form '${slug}' is not in the explicit allowlist`);
+
+          // Fetch cluster and evaluate evidence-based gating
+          const cluster = SEO_CLUSTERS[slug];
+          if (!cluster) {
+            blockers.push(`Static guide data for '${slug}' was not found`);
+          } else {
+            // Check official sources
+            const sources = cluster.officialSources || [];
+            const officialUrl = sources.find(s => s.url && hasOfficialProgramSource(s.url))?.url;
+            if (!officialUrl) {
+              blockers.push(`Static guide '${slug}' is missing a verified official source URL`);
+            }
+
+            // Check review date
+            if (!cluster.lastReviewedDate) {
+              blockers.push(`Static guide '${slug}' is missing a verified review date`);
+            }
+
+            // Check claims
+            const textToVerify = [
+              cluster.title,
+              cluster.metaTitle,
+              cluster.metaDescription,
+              cluster.quickAnswer,
+              ...(cluster.tldrPoints || []).map(p => `${p.label}: ${p.value}`),
+            ];
+
+            for (const text of textToVerify) {
+              const claimResult = verifyClaimEvidence({
+                text,
+                type: 'eligibility',
+                jurisdiction: pageStateId,
+                sourceUrl: officialUrl,
+                reviewedDate: cluster.lastReviewedDate,
+                confidence: 0.95
+              });
+              if (!claimResult.verified) {
+                blockers.push(`Static guide '${slug}' contains unverified claims: ${claimResult.error}`);
+              }
+            }
           }
         } else {
           blockers.push(`Static page '${pathStr}' is not allowlisted`);
@@ -714,6 +757,7 @@ export function getSeoPolicyForRoute(
   // Build full input object
   const input: SeoPolicyInput = {
     routeType,
+    path: path || params.path || undefined,
     stateId: targetStateId || undefined,
     countyId: params.countyId || undefined,
     diagnosisId: params.diagnosisId || undefined,
@@ -810,57 +854,8 @@ export function mapShortDiagToDbId(shortId: string): string {
   }
 }
 
-export const ALLOWED_STATIC_GUIDES = new Set([
-  'down-syndrome-benefits-california',
-  'ihss-for-children',
-  'ihss-protective-supervision',
-  'soc-873',
-  'iep-evaluation-request',
-  'california-iep-timeline',
-  'regional-center-eligibility',
-  'early-start-age-3-transition',
-  'ssi-for-children',
-  'medi-cal-epsdt',
-  'ccs',
-  'calable',
-  'soc-295',
-  'soc-821',
-  'soc-825',
-  'soc-839',
-  'regional-center-intake-request',
-  'regional-center-ipp-request',
-  'regional-center-service-request',
-  'regional-center-appeal-request',
-  'iep-assessment-request',
-  'independent-educational-evaluation-request',
-  'prior-written-notice-request',
-  'education-records-request',
-  'cde-state-complaint',
-  'due-process-complaint',
-  'ccs-application',
-  'dhcs-4480',
-  'medi-cal-application',
-  'medi-cal-epsdt-request',
-  'ssi-child-disability-checklist',
-  'calable-account-opening',
-  'hcba-waiver-application',
-  'tx-medicaid-chip',
-  'tx-hcs-guide',
-  'tx-class-guide',
-  'tx-txhml-guide',
-  'tx-mdcp-guide',
-  'tx-eci-referral',
-  'tx-sped-evaluation-request',
-  'tx-tea-complaint',
-  'tx-due-process-complaint',
-  'tx-records-request',
-  'tx-iee-request',
-  'tx-able-guide',
-  'tx-ssi-checklist',
-  'tx-mediation-request',
-  'tx-starkids-overview',
-  'tx-starkids-coordination'
-]);
+
+
 
 export function getAuditStats(): { complete: number; blocked: number } {
   if (priorityQueueData.length === 0) {
