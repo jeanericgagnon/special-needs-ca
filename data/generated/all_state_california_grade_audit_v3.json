@@ -3137,11 +3137,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_utah_dhhs_cloudflare_plus_dws_inventory_and_service_taxonomy_without_county_contract"
+        "county_local_disability_resources": "blocked_live_dhhs_contacts_defers_local_offices_and_dws_inventory_still_lacks_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch315_utah_service_taxonomy_finality_v1",
-      "packetPrimaryGapReason": "utah_dhhs_contacts_cloudflare_403_and_live_dws_public_api_surface_still_stops_at_inventory_and_three_service_labels_without_any_county_contract",
+      "packetBatch": "batch318_utah_dhhs_contacts_recovery_v1",
+      "packetPrimaryGapReason": "live_utah_dhhs_contacts_page_recovers_but_explicitly_defers_local_office_info_while_surviving_dws_public_api_still_lacks_any_county_contract",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

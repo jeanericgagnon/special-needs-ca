@@ -345,3 +345,6 @@
 
 ### Freshly Republished ArcGIS Experiences Can Still Preserve The Same Final Blocker
 *   **Lesson:** A fresh publication timestamp on an official ArcGIS ExperienceBuilder item does not by itself reopen a blocked local-office lane. Nebraska republished `config/config.json`, but the refreshed experience still wrapped the same 42-office / 93-county mismatch, the same empty layer relationships, and the same 37-county distinct office coverage, so the county-assignment blocker remained final.
+
+### Recovered Official Contact Hubs Still Fail If They Explicitly Defer Local Office Proof
+*   **Lesson:** If a formerly blocked official contacts page comes back live, re-check it before preserving the old shell blocker, but do not upgrade it unless it actually carries county-grade routing. Utah DHHS `contacts/` recovered to HTTP 200, yet it still acted only as a central contacts hub: it routed community discovery to Utah 211 and explicitly told users to visit division or program pages for local office information, so the county-local family stayed blocked.
