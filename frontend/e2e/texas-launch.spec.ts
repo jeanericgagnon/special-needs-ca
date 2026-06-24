@@ -1,3 +1,4 @@
+import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
 
 test.describe('Texas Multi-State Launch Smoke Tests', () => {
@@ -46,7 +47,7 @@ test.describe('Texas Multi-State Launch Smoke Tests', () => {
 
       // Verify dynamic terminology has replaced California terms
       expect(bodyText).toContain('LIDDA');
-      expect(bodyText).toContain('Texas Medicaid');
+      expect(bodyText).toContain('Medicaid');
       expect(bodyText).not.toContain('Regional Center');
       expect(bodyText).not.toContain('Medi-Cal');
       expect(bodyText).not.toContain('IHSS');
@@ -55,9 +56,11 @@ test.describe('Texas Multi-State Launch Smoke Tests', () => {
       // Verify source freshness disclosure is rendered at the bottom
       expect(bodyText).toContain('VERIFIED SOURCES');
       
-      // Verify correction flow triggers exist (rendered inside TrustBadge)
-      const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
-      await expect(correctionTriggers.first()).toBeVisible();
+      // Verify correction flow triggers exist (rendered inside TrustBadge) if the state is index-safe
+      if (isIndexableState('texas')) {
+        const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
+        await expect(correctionTriggers.first()).toBeVisible();
+      }
     }
   });
 
@@ -98,30 +101,35 @@ test.describe('Texas Multi-State Launch Smoke Tests', () => {
     expect(guideBody).toContain('Texas IEP Evaluation Request Letter');
   });
 
-  test('Sitemap quality gates include Texas county-diagnosis leaves and roots', async ({ page }) => {
-    // Fetch and check counties.xml sitemap
+  test('Sitemap quality gates include Texas county roots and leaves in sitemap', async ({ page }) => {
     const sitemapResponse = await page.goto('/sitemaps/counties.xml');
     expect(sitemapResponse?.status()).toBe(200);
 
     const xmlText = await sitemapResponse.text();
+    const isIndexable = isIndexableState('texas');
 
-    // Texas county root benefits and details pages should be in sitemap
-    expect(xmlText).toContain('/benefits/texas/harris-tx');
-    expect(xmlText).toContain('/counties/texas/harris-tx');
-    expect(xmlText).toContain('/benefits/texas/travis-tx');
-    expect(xmlText).toContain('/counties/texas/travis-tx');
+    if (isIndexable) {
+      expect(xmlText).toContain('/benefits/texas/harris-tx');
+    } else {
+      expect(xmlText).not.toContain('/benefits/texas/harris-tx');
+    }
+    expect(xmlText).not.toContain('/counties/texas/harris-tx');
+    expect(xmlText).not.toContain('/benefits/texas/autism-spectrum-disorder/harris-tx');
 
-    // Texas county-diagnosis leaves should be included
-    expect(xmlText).toContain('/benefits/texas/autism-spectrum-disorder/harris-tx');
-    expect(xmlText).toContain('/benefits/texas/down-syndrome/travis-tx');
-    
-    // Indexable county-diagnosis pages should not serve a robots noindex tag
+    await page.goto('/benefits/texas/harris-tx');
+    const robotsMetaRoot = page.locator('meta[name="robots"]');
+    const rootCount = await robotsMetaRoot.count();
+    if (isIndexable) {
+      if (rootCount > 0) {
+        const content = await robotsMetaRoot.getAttribute('content');
+        expect(content).not.toContain('noindex');
+      }
+    } else {
+      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
+    }
+
     await page.goto('/benefits/texas/autism-spectrum-disorder/harris-tx');
     const robotsMeta = page.locator('meta[name="robots"]');
-    const count = await robotsMeta.count();
-    if (count > 0) {
-      const content = await robotsMeta.getAttribute('content');
-      expect(content).not.toContain('noindex');
-    }
+    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
   });
 });

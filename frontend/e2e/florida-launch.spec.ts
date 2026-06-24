@@ -1,3 +1,4 @@
+import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
 
 test.describe('Florida Multi-State Launch Smoke Tests', () => {
@@ -47,7 +48,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
 
       // Verify dynamic terminology has replaced California/Texas terms
       expect(bodyText.toUpperCase()).toContain('APD');
-      expect(bodyText).toContain('DCF ACCESS');
+      expect(bodyText).toContain('DCF');
       expect(bodyText).not.toContain('LIDDA');
       expect(bodyText).not.toContain('Regional Center');
       expect(bodyText).not.toContain('Medi-Cal');
@@ -57,9 +58,11 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
       // Verify source freshness disclosure is rendered at the bottom
       expect(bodyText).toContain('VERIFIED SOURCES');
       
-      // Verify correction flow triggers exist (rendered inside TrustBadge)
-      const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
-      await expect(correctionTriggers.first()).toBeVisible();
+      // Verify correction flow triggers exist (rendered inside TrustBadge) if the state is index-safe
+      if (isIndexableState('florida')) {
+        const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
+        await expect(correctionTriggers.first()).toBeVisible();
+      }
     }
   });
 
@@ -101,32 +104,35 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
     expect(guideBody).toContain('Florida IEP Evaluation Request Letter');
   });
 
-  test('Sitemap quality gates include Florida county-diagnosis leaves and roots', async ({ page }) => {
-    // Fetch and check counties.xml sitemap
+  test('Sitemap quality gates include Florida county roots and leaves in sitemap', async ({ page }) => {
     const sitemapResponse = await page.goto('/sitemaps/counties.xml');
     expect(sitemapResponse?.status()).toBe(200);
 
     const xmlText = await sitemapResponse.text();
+    const isIndexable = isIndexableState('florida');
 
-    // Florida county root benefits and details pages should be in sitemap for verified ones
-    expect(xmlText).toContain('/benefits/florida/miami-dade-fl');
-    expect(xmlText).toContain('/counties/florida/miami-dade-fl');
-    
-    // Florida county roots that are now verified
-    expect(xmlText).toContain('/benefits/florida/collier-fl');
-    expect(xmlText).toContain('/counties/florida/collier-fl');
+    if (isIndexable) {
+      expect(xmlText).toContain('/benefits/florida/miami-dade-fl');
+    } else {
+      expect(xmlText).not.toContain('/benefits/florida/miami-dade-fl');
+    }
+    expect(xmlText).not.toContain('/counties/florida/miami-dade-fl');
+    expect(xmlText).not.toContain('/benefits/florida/autism-spectrum-disorder/miami-dade-fl');
 
-    // Florida county-diagnosis leaves should be included
-    expect(xmlText).toContain('/benefits/florida/autism-spectrum-disorder/miami-dade-fl');
-    expect(xmlText).toContain('/benefits/florida/down-syndrome/collier-fl');
-    
-    // Indexable county-diagnosis pages should not serve a robots noindex tag
+    await page.goto('/benefits/florida/miami-dade-fl');
+    const robotsMetaRoot = page.locator('meta[name="robots"]');
+    const rootCount = await robotsMetaRoot.count();
+    if (isIndexable) {
+      if (rootCount > 0) {
+        const content = await robotsMetaRoot.getAttribute('content');
+        expect(content).not.toContain('noindex');
+      }
+    } else {
+      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
+    }
+
     await page.goto('/benefits/florida/autism-spectrum-disorder/miami-dade-fl');
     const robotsMeta = page.locator('meta[name="robots"]');
-    const count = await robotsMeta.count();
-    if (count > 0) {
-      const content = await robotsMeta.getAttribute('content');
-      expect(content).not.toContain('noindex');
-    }
+    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
   });
 });

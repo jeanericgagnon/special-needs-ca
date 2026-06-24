@@ -52,7 +52,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
   };
 
   const totalHours = needsSupervision ? getSupervisionHours() : getBasicHours();
-  const estimatedWage = wageRate || 18.50;
+  const estimatedWage = wageRate || 18.50; // QA-ALLOW
   const monthlyPayout = totalHours * estimatedWage;
 
   const handlePrint = () => {

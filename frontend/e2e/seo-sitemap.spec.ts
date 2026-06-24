@@ -47,23 +47,20 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
     expect(hasLogin).toBe(false);
   });
 
-  test('counties sitemap contains 58 counties but gates county x diagnosis leaves', () => {
-    // All 58 counties roots benefits and counties pages
-    const caCounties = [
-      'los-angeles', 'san-diego', 'orange', 'riverside', 'san-bernardino', 
-      'santa-clara', 'alameda', 'sacramento', 'contra-costa', 'fresno',
-      'ventura', 'san-francisco', 'kern', 'san-mateo', 'san-joaquin', 
-      'stanislaus', 'sonoma', 'solano', 'santa-barbara', 'tulare', 
-      'monterey', 'placer', 'san-luis-obispo', 'santa-cruz', 'merced',
-      'mariposa' // and others
-    ];
+  test('counties sitemap contains indexable counties but gates county x diagnosis leaves', () => {
+    // Check that Los Angeles county exists in counties sitemap
+    const hasLaBenefitsPath = countiesUrls.some(url => url.endsWith('/benefits/california/los-angeles'));
+    expect(hasLaBenefitsPath).toBe(true);
 
-    // Check a representative sample of counties exist in counties sitemap
-    for (const county of caCounties) {
+    // Verify sitemap does not contain the old duplicate /counties/ path
+    const hasLaCountiesPath = countiesUrls.some(url => url.endsWith('/counties/california/los-angeles'));
+    expect(hasLaCountiesPath).toBe(false);
+
+    // Check a sample of non-indexable/blocked CA counties are not in sitemap
+    const blockedCaCounties = ['mariposa', 'alpine', 'mono', 'sierra'];
+    for (const county of blockedCaCounties) {
       const hasBenefitsPath = countiesUrls.some(url => url.endsWith(`/benefits/california/${county}`));
-      const hasCountiesPath = countiesUrls.some(url => url.endsWith(`/counties/california/${county}`));
-      expect(hasBenefitsPath).toBe(true);
-      expect(hasCountiesPath).toBe(true);
+      expect(hasBenefitsPath).toBe(false);
     }
 
     // Verify sitemap contains county x diagnosis leaves ONLY for LA and Orange

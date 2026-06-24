@@ -397,6 +397,7 @@
     "audit:scraping-vs-seeding": "node --experimental-strip-types src/db/audit_scraping_vs_seeding.js",
     "plan:state-upgrade": "node --experimental-strip-types src/db/plan_state_upgrade.js",
     "test:quality-gates": "node src/scratch/verify_requirements.js",
+    "seo:qa": "npx tsx scripts/qa-seo-checker.ts",
     "test:e2e": "npm --prefix frontend run test:e2e",
     "preview": "npm --prefix frontend run start",
     "preview:prototype": "vite preview --config prototype_quarantine/vite.config.js"

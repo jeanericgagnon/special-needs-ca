@@ -3135,7 +3135,7 @@ export async function getProgramBySlug(slug: string): Promise<Program | null> {
         county_specific: 'Statewide',
         state_id: programRow.state_id,
         last_verified_date: programRow.last_verified_date,
-        confidence_score: Number(programRow.confidence_score || 5.0)
+        confidence_score: programRow.confidence_score !== null && programRow.confidence_score !== undefined ? Number(programRow.confidence_score) : null
       } as Program;
     }
   } catch (err) {
@@ -5119,5 +5119,223 @@ export async function revokeShareToken(tokenId: string): Promise<boolean> {
   } catch (err) {
     console.error('Failed to revoke share token:', err);
     return false;
+  }
+}
+
+export interface LegalDecision {
+  id: string;
+  state: string;
+  case_name: string;
+  case_number?: string | null;
+  decision_date?: string | null;
+  summary?: string | null;
+  document_url?: string | null;
+  body_text?: string | null;
+  source?: string | null;
+  scraped_at?: string | null;
+  school_district_id?: string | null;
+  outcome?: 'parent_win' | 'district_win' | 'unknown' | null;
+}
+
+export async function getSchoolDistrictById(id: string): Promise<SchoolDistrict | undefined> {
+  try {
+    return await navigatorDb.prepare('SELECT * FROM school_districts WHERE id = ?').get(id) as SchoolDistrict | undefined;
+  } catch (err) {
+    console.error(`Failed to get school district by id ${id}:`, err);
+    return undefined;
+  }
+}
+
+export async function getSchoolDistrictLitigation(districtId: string) {
+  try {
+    const cases = await navigatorDb.prepare('SELECT * FROM legal_decisions WHERE school_district_id = ? ORDER BY decision_date DESC').all(districtId) as LegalDecision[];
+    
+    let parentWins = 0;
+    let districtWins = 0;
+    let unknownWins = 0;
+    
+    for (const c of cases) {
+      if (c.outcome === 'parent_win') {
+        parentWins++;
+      } else if (c.outcome === 'district_win') {
+        districtWins++;
+      } else {
+        unknownWins++;
+      }
+    }
+    
+    return {
+      totalCases: cases.length,
+      parentWins,
+      districtWins,
+      unknownWins,
+      cases
+    };
+  } catch (err) {
+    console.error(`Failed to get school district litigation for ${districtId}:`, err);
+    return {
+      totalCases: 0,
+      parentWins: 0,
+      districtWins: 0,
+      unknownWins: 0,
+      cases: []
+    };
+  }
+}
+
+export async function getSchoolDistrictsWithLitigation() {
+  try {
+    // 1. Fetch all districts
+    const districts = await navigatorDb.prepare('SELECT * FROM school_districts ORDER BY name ASC').all() as SchoolDistrict[];
+    
+    // 2. Fetch case aggregations
+    const caseStats = await navigatorDb.prepare(`
+      SELECT 
+        school_district_id,
+        COUNT(*) as total_cases,
+        SUM(CASE WHEN outcome = 'parent_win' THEN 1 ELSE 0 END) as parent_wins,
+        SUM(CASE WHEN outcome = 'district_win' THEN 1 ELSE 0 END) as district_wins,
+        SUM(CASE WHEN outcome NOT IN ('parent_win', 'district_win') OR outcome IS NULL THEN 1 ELSE 0 END) as unknown_wins
+      FROM legal_decisions
+      GROUP BY school_district_id
+    `).all() as {
+      school_district_id: string;
+      total_cases: number;
+      parent_wins: number;
+      district_wins: number;
+      unknown_wins: number;
+    }[];
+
+    const statsMap = new Map(caseStats.map(s => [s.school_district_id, s]));
+
+    return districts.map(d => {
+      const stats = statsMap.get(d.id);
+      
+      // Infer state from county_id (e.g. "travis-tx" -> "TX")
+      let state = 'CA';
+      if (d.county_id && d.county_id.includes('-')) {
+        const parts = d.county_id.split('-');
+        const lastPart = parts[parts.length - 1];
+        if (lastPart.length === 2) {
+          state = lastPart.toUpperCase();
+        }
+      }
+
+      return {
+        ...d,
+        state,
+        totalCases: stats ? stats.total_cases : 0,
+        parentWins: stats ? stats.parent_wins : 0,
+        districtWins: stats ? stats.district_wins : 0,
+        unknownWins: stats ? stats.unknown_wins : 0,
+        parentWinRate: stats && stats.total_cases > 0 ? (stats.parent_wins / stats.total_cases) * 100 : 0
+      };
+    });
+  } catch (err) {
+    console.error('Failed to get school districts with litigation:', err);
+    return [];
+  }
+}
+
+export async function getBulkCountyDetails(stateId?: string) {
+  try {
+    let counties: County[] = [];
+    if (stateId) {
+      counties = await getCounties(stateId);
+    } else {
+      counties = await getCounties();
+    }
+
+    if (counties.length === 0) return new Map();
+
+    const countyIds = counties.map(c => c.id);
+    const placeholders = countyIds.map(() => '?').join(',');
+
+    // Fetch all data in bulk for these counties
+    const offices = await navigatorDb.prepare(`
+      SELECT * FROM county_offices 
+      WHERE county_id IN (${placeholders})
+    `).all(...countyIds) as CountyOffice[];
+
+    const districts = await navigatorDb.prepare(`
+      SELECT sd.*, 
+        COUNT(ld.id) as totalCases,
+        SUM(CASE WHEN ld.outcome = 'parent_win' THEN 1 ELSE 0 END) as parentWins,
+        SUM(CASE WHEN ld.outcome = 'district_win' THEN 1 ELSE 0 END) as districtWins,
+        SUM(CASE WHEN ld.outcome NOT IN ('parent_win', 'district_win') OR ld.outcome IS NULL THEN 1 ELSE 0 END) as unknownWins
+      FROM school_districts sd
+      LEFT JOIN legal_decisions ld ON sd.id = ld.school_district_id
+      WHERE sd.county_id IN (${placeholders})
+      GROUP BY sd.id
+    `).all(...countyIds) as SchoolDistrict[];
+
+    const nonprofits = await navigatorDb.prepare(`
+      SELECT * FROM nonprofit_organizations 
+      WHERE county_id IN (${placeholders})
+    `).all(...countyIds) as NonprofitOrganization[];
+
+    const rcs = await navigatorDb.prepare(`
+      SELECT rcc.county_id, rc.* FROM regional_centers rc
+      JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
+      WHERE rcc.county_id IN (${placeholders})
+    `).all(...countyIds) as any[];
+
+    const selpas = await navigatorDb.prepare(`
+      SELECT sc.county_id, s.* FROM selpas s
+      JOIN selpa_counties sc ON s.id = sc.selpa_id
+      WHERE sc.county_id IN (${placeholders})
+    `).all(...countyIds) as any[];
+
+    // Group by county_id
+    const officesByCounty = new Map<string, CountyOffice[]>();
+    const districtsByCounty = new Map<string, SchoolDistrict[]>();
+    const nonprofitsByCounty = new Map<string, NonprofitOrganization[]>();
+    const rcsByCounty = new Map<string, RegionalCenter[]>();
+    const selpasByCounty = new Map<string, Selpa[]>();
+
+    for (const o of offices) {
+      if (!officesByCounty.has(o.county_id)) officesByCounty.set(o.county_id, []);
+      officesByCounty.get(o.county_id)!.push(o);
+    }
+    for (const d of districts) {
+      if (!districtsByCounty.has(d.county_id)) districtsByCounty.set(d.county_id, []);
+      districtsByCounty.get(d.county_id)!.push(d);
+    }
+    for (const n of nonprofits) {
+      if (!nonprofitsByCounty.has(n.county_id)) nonprofitsByCounty.set(n.county_id, []);
+      nonprofitsByCounty.get(n.county_id)!.push(n);
+    }
+    for (const rc of rcs) {
+      const cid = rc.county_id;
+      const cleanRc = { ...rc };
+      delete cleanRc.county_id;
+      if (!rcsByCounty.has(cid)) rcsByCounty.set(cid, []);
+      rcsByCounty.get(cid)!.push(cleanRc);
+    }
+    for (const s of selpas) {
+      const cid = s.county_id;
+      const cleanS = { ...s };
+      delete cleanS.county_id;
+      if (!selpasByCounty.has(cid)) selpasByCounty.set(cid, []);
+      selpasByCounty.get(cid)!.push(cleanS);
+    }
+
+    // Assemble map
+    const countyDetailsMap = new Map();
+    for (const c of counties) {
+      countyDetailsMap.set(c.id, {
+        ...c,
+        countyOffices: officesByCounty.get(c.id) || [],
+        schoolDistricts: districtsByCounty.get(c.id) || [],
+        localOrganizations: nonprofitsByCounty.get(c.id) || [],
+        regionalCenters: rcsByCounty.get(c.id) || [],
+        selpas: selpasByCounty.get(c.id) || []
+      });
+    }
+
+    return countyDetailsMap;
+  } catch (err) {
+    console.error('Failed to query bulk county details:', err);
+    return new Map();
   }
 }

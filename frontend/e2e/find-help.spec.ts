@@ -70,7 +70,7 @@ test.describe('Find Help Tools Hub & Redirections E2E Tests', () => {
 
     await expect(page.locator('body')).toContainText(/0 saved locally/i);
 
-    await page.goto('/counties/california/los-angeles');
+    await page.goto('/benefits/california/los-angeles');
 
     const saveButton = page.getByRole('button', { name: /Save resource/i }).first();
     await expect(saveButton).toBeVisible();
@@ -87,10 +87,10 @@ test.describe('Find Help Tools Hub & Redirections E2E Tests', () => {
     await expect(page.getByRole('button', { name: /Remove/i }).first()).toBeVisible();
     const backLink = page.getByRole('link', { name: /Back to this page/i }).first();
     const backHref = await backLink.getAttribute('href');
-    expect(backHref).toMatch(/\/counties\/california\/los-angeles#directory-resource-/);
+    expect(backHref).toMatch(/\/benefits\/california\/los-angeles#directory-resource-/);
 
     await backLink.click();
-    await expect(page).toHaveURL(/\/counties\/california\/los-angeles#directory-resource-/);
+    await expect(page).toHaveURL(/\/benefits\/california\/los-angeles#directory-resource-/);
     const targetHash = backHref?.split('#')[1];
     const returnedCard = page.locator(`#${targetHash}`);
     await expect(returnedCard).toBeVisible();

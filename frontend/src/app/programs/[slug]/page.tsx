@@ -123,10 +123,10 @@ export default async function ProgramPage({ params }: Props) {
     relatedGuides: [
       { title: 'Guides & Resources Index', url: '/benefits' }
     ],
-    officialSources: [
-      { name: `${stateName} State Program Portal`, url: program.source_url || 'https://www.dhcs.ca.gov' }
-    ],
-    lastReviewedDate: '2026-06-01',
+    officialSources: (program.source_url ? [
+      { name: `${stateName} State Program Portal`, url: program.source_url }
+    ] : []),
+    lastReviewedDate: program.last_verified_date || '',
     callScriptTemplate: {
       intro: 'General Intake Call Script',
       script: `Hello, I am calling to apply for the ${program.program_name} on behalf of my child, [Child Name], who has [Diagnosis] and is [Age] years old. Please guide me through the intake and application steps.`,

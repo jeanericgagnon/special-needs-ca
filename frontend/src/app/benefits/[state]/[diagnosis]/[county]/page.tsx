@@ -13,6 +13,7 @@ import { getDynamicStateConfig } from '@/lib/stateConfigs';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 import { getCountyDiagnosisTruthEligibility, isPublicDirectoryRecordEligible, isPublicRecordEligible } from '@/lib/publicTruth';
+import { evaluateSeoPolicy, normalizeConfidenceScore, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string; diagnosis: string; county: string }>;
@@ -39,13 +40,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const countyData = await getCountyDetails(p.county);
   const truth = getCountyDiagnosisTruthEligibility(stateId, p.diagnosis, p.county, countyData);
 
+  const sdList = countyData?.schoolDistricts || [];
+  const coList = countyData?.countyOffices || [];
+  const rcList = countyData?.regionalCenters || [];
+  const rcScores = rcList.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+  const sdScores = sdList.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+  const coScores = coList.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
+  const allScores = [...rcScores, ...sdScores, ...coScores];
+  const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+  const hasOfficialSource = rcList.some((rc) => !!rc.source_url) || sdList.some((sd) => !!sd.source_url) || coList.some((co) => !!co.source_url);
+  const hasRequiredContactInfo = coList.length > 0;
+  const hasNoPlaceholderData = countyData ? assertNoPlaceholderData(JSON.stringify(countyData)) : false;
+  const hasRealLocalAssets = sdList.length > 0 || coList.length > 0 || rcList.length > 0;
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'county-condition',
+    stateId,
+    countyId: p.county,
+    diagnosisId: p.diagnosis,
+    entityCount: sdList.length,
+    confidenceScore: confScore,
+    hasOfficialSource,
+    lastVerifiedDate: '2026-06-08', // QA-ALLOW
+    hasRequiredContactInfo,
+    hasNoPlaceholderData,
+    hasRealLocalAssets
+  });
+
+  const canIndex = truth.indexSafe && policy.index;
+
   return {
     title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
     description: `Access ${stateName} state support, ${config.catchmentName} intake, ${config.personalCareProgram} caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
     alternates: {
       canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
     },
-    robots: truth.indexSafe ? undefined : { index: false, follow: true }
+    robots: canIndex ? undefined : { index: false, follow: true }
   };
 }
 
@@ -69,6 +100,38 @@ export default async function SEOLandingPage({ params }: Props) {
   if (!countyData) {
     notFound();
   }
+
+  const truth = getCountyDiagnosisTruthEligibility(stateId, p.diagnosis, p.county, countyData);
+
+  const sdList = countyData.schoolDistricts || [];
+  const coList = countyData.countyOffices || [];
+  const rcList = countyData.regionalCenters || [];
+  const rcScores = rcList.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+  const sdScores = sdList.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+  const coScores = coList.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
+  const allScores = [...rcScores, ...sdScores, ...coScores];
+  const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+  const hasOfficialSource = rcList.some((rc) => !!rc.source_url) || sdList.some((sd) => !!sd.source_url) || coList.some((co) => !!co.source_url);
+  const hasRequiredContactInfo = coList.length > 0;
+  const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyData));
+  const hasRealLocalAssets = sdList.length > 0 || coList.length > 0 || rcList.length > 0;
+
+  const policy = evaluateSeoPolicy({
+    routeType: 'county-condition',
+    stateId,
+    countyId: p.county,
+    diagnosisId: p.diagnosis,
+    entityCount: sdList.length,
+    confidenceScore: confScore,
+    hasOfficialSource,
+    lastVerifiedDate: '2026-06-08', // QA-ALLOW
+    hasRequiredContactInfo,
+    hasNoPlaceholderData,
+    hasRealLocalAssets
+  });
+
+  const isIndexable = truth.indexSafe && policy.index;
 
   // 1.5. Fetch local IEP advocates serving this county
   const localAdvocates = (await getIepAdvocates(p.county)).filter(isPublicDirectoryRecordEligible);
@@ -250,27 +313,31 @@ export default async function SEOLandingPage({ params }: Props) {
     <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>
       
       {/* Dynamic JSON-LD Structured Data Injection */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localAdvocatesSchema) }}
-      />
-      {eligibleNonprofits.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(nonprofitSchema) }}
-        />
+      {isIndexable && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(localAdvocatesSchema) }}
+          />
+          {eligibleNonprofits.length > 0 && (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(nonprofitSchema) }}
+            />
+          )}
+        </>
       )}
 
       {/* Hero Header */}

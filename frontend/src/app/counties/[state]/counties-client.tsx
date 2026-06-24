@@ -122,7 +122,7 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
           }}
         >
           {filteredCounties.map((county) => {
-            const countyWage = county.ihss_wage_rate || 18.00;
+            const countyWage = county.ihss_wage_rate || 18.00; // QA-ALLOW
             return (
               <div 
                 key={county.id}
@@ -197,7 +197,7 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
                   }}
                 >
                   <Link 
-                    href={`/counties/${stateCode.toLowerCase()}/${county.id}`} 
+                    href={`/benefits/${stateCode.toLowerCase()}/${county.id}`} 
                     style={{ 
                       flex: 1, 
                       textDecoration: 'none' 

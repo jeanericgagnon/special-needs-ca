@@ -1,203 +1,270 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
+import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, Program, getCounties, getCountyDetails, getBulkCountyDetails, RegionalCenter, SchoolDistrict, CountyOffice, County } from '@/lib/db';
+import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
+
+interface StaticUrl {
+  loc: string;
+  changefreq: string;
+  priority: string;
+  routeType: string;
+  stateId: string;
+  lastmod?: string | null;
+}
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
-  const today = '2026-05-31';
 
-  const staticUrls = [
-    { loc: '/', changefreq: 'monthly', priority: '1.0', lastmod: today },
-    { loc: '/benefits', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/advocates', changefreq: 'weekly', priority: '0.7', lastmod: today },
-    { loc: '/forms', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    // California
-    { loc: '/benefits/california', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/california', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Texas
-    { loc: '/benefits/texas', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/texas', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Texas Programs
-    { loc: '/programs/tx-hcs', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-class', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-txhml', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-mdcp', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-eci', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-tea-sped', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-able', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-medicaid', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-yes', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-dbmd', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-starplus-hcbs', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    { loc: '/programs/tx-twc-vr', changefreq: 'weekly', priority: '0.8', lastmod: today },
-    // Florida
-    { loc: '/benefits/florida', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/florida', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Pennsylvania
-    { loc: '/benefits/pennsylvania', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/pennsylvania', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // New York
-    { loc: '/benefits/new-york', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/new-york', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Ohio
-    { loc: '/benefits/ohio', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/ohio', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Illinois
-    { loc: '/benefits/illinois', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/illinois', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Georgia
-    { loc: '/benefits/georgia', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/georgia', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Maryland
-    { loc: '/benefits/maryland', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/maryland', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Utah
-    { loc: '/benefits/utah', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/utah', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // New Mexico
-    { loc: '/benefits/new-mexico', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/new-mexico', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Oregon
-    { loc: '/benefits/oregon', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/oregon', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Washington
-    { loc: '/benefits/washington', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/washington', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Idaho
-    { loc: '/benefits/idaho', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/idaho', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Wave 3 states:
-    // South Carolina
-    { loc: '/benefits/south-carolina', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/south-carolina', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // North Dakota
-    { loc: '/benefits/north-dakota', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/north-dakota', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // West Virginia
-    { loc: '/benefits/west-virginia', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/west-virginia', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Montana
-    { loc: '/benefits/montana', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/montana', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Colorado
-    { loc: '/benefits/colorado', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/colorado', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Louisiana
-    { loc: '/benefits/louisiana', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/louisiana', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // South Dakota
-    { loc: '/benefits/south-dakota', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/south-dakota', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Alabama
-    { loc: '/benefits/alabama', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/alabama', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Wisconsin
-    { loc: '/benefits/wisconsin', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/wisconsin', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Arkansas
-    { loc: '/benefits/arkansas', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/arkansas', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Oklahoma
-    { loc: '/benefits/oklahoma', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/oklahoma', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Wave 4 states:
-    // North Carolina
-    { loc: '/benefits/north-carolina', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/north-carolina', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Mississippi
-    { loc: '/benefits/mississippi', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/mississippi', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Michigan
-    { loc: '/benefits/michigan', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/michigan', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Minnesota
-    { loc: '/benefits/minnesota', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/minnesota', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Wave 5 states:
-    // Indiana
-    { loc: '/benefits/indiana', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/indiana', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Nebraska
-    { loc: '/benefits/nebraska', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/nebraska', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Tennessee
-    { loc: '/benefits/tennessee', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/tennessee', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Virginia
-    { loc: '/benefits/virginia', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/virginia', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Wave 6 states:
-    // Arizona
-    { loc: '/benefits/arizona', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/arizona', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Alaska
-    { loc: '/benefits/alaska', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/alaska', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Connecticut
-    { loc: '/benefits/connecticut', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/connecticut', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Delaware
-    { loc: '/benefits/delaware', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/delaware', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Hawaii
-    { loc: '/benefits/hawaii', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/hawaii', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Iowa
-    { loc: '/benefits/iowa', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/iowa', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Kansas
-    { loc: '/benefits/kansas', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/kansas', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Kentucky
-    { loc: '/benefits/kentucky', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/kentucky', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Maine
-    { loc: '/benefits/maine', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/maine', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Massachusetts
-    { loc: '/benefits/massachusetts', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/massachusetts', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Missouri
-    { loc: '/benefits/missouri', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/missouri', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Nevada
-    { loc: '/benefits/nevada', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/nevada', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // New Hampshire
-    { loc: '/benefits/new-hampshire', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/new-hampshire', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // New Jersey
-    { loc: '/benefits/new-jersey', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/new-jersey', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Rhode Island
-    { loc: '/benefits/rhode-island', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/rhode-island', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Vermont
-    { loc: '/benefits/vermont', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/vermont', changefreq: 'weekly', priority: '0.85', lastmod: today },
-    // Wyoming
-    { loc: '/benefits/wyoming', changefreq: 'weekly', priority: '0.9', lastmod: today },
-    { loc: '/counties/wyoming', changefreq: 'weekly', priority: '0.85', lastmod: today }
+  const stateProgramsMap: Record<string, Program[]> = {};
+  for (const st of SEO_STATE_ALLOWLIST) {
+    try {
+      stateProgramsMap[st] = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(st) as Program[];
+    } catch {
+      stateProgramsMap[st] = [];
+    }
+  }
+
+  const rawStaticUrls: StaticUrl[] = [
+    { loc: '/', changefreq: 'monthly', priority: '1.0', routeType: 'static-page', stateId: '' },
+    { loc: '/benefits', changefreq: 'weekly', priority: '0.9', routeType: 'static-page', stateId: '' },
+    { loc: '/advocates', changefreq: 'weekly', priority: '0.7', routeType: 'static-page', stateId: '' },
+    { loc: '/forms', changefreq: 'weekly', priority: '0.8', routeType: 'static-page', stateId: '' },
+    { loc: '/school-districts', changefreq: 'weekly', priority: '0.8', routeType: 'static-page', stateId: '' },
   ];
 
-  const xmlUrls = staticUrls.map(url => `  <url>
-    <loc>${baseUrl}${url.loc}</loc>
-    <lastmod>${url.lastmod}</lastmod>
+  // Dynamically push all state hubs to rawStaticUrls
+  for (const st of SEO_STATE_ALLOWLIST) {
+    rawStaticUrls.push({
+      loc: `/benefits/${st}`,
+      changefreq: 'weekly',
+      priority: '0.9',
+      routeType: 'state-hub',
+      stateId: st
+    });
+    rawStaticUrls.push({
+      loc: `/counties/${st}`,
+      changefreq: 'weekly',
+      priority: '0.85',
+      routeType: 'state-counties-hub',
+      stateId: st
+    });
+  }
+
+  // We only include state hubs if they are verified states
+  const filteredStaticUrls: StaticUrl[] = [];
+  for (const url of rawStaticUrls) {
+    if (url.routeType === 'static-page') {
+      const policy = evaluateSeoPolicy({
+        routeType: 'static-page',
+        hasNoPlaceholderData: true
+      });
+      if (shouldIncludeInSitemap(policy)) {
+        filteredStaticUrls.push({ ...url, lastmod: null });
+      }
+    } else if (url.routeType === 'state-hub') {
+      const stateProgs = stateProgramsMap[url.stateId] || [];
+      const dates = stateProgs.map((p: Program) => p.last_verified_date).filter(Boolean) as string[];
+      const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+      const scores = stateProgs.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'state-hub',
+        stateId: url.stateId,
+        entityCount: stateProgs.length,
+        confidenceScore: avgScore,
+        hasOfficialSource: stateProgs.length > 0 && stateProgs.some((p: Program) => !!p.source_url),
+        lastVerifiedDate: minDate,
+        hasNoPlaceholderData: stateProgs.every((p: Program) => assertNoPlaceholderData(JSON.stringify(p)))
+      });
+      if (shouldIncludeInSitemap(policy)) {
+        filteredStaticUrls.push({ ...url, lastmod: minDate });
+      }
+    } else if (url.routeType === 'state-counties-hub') {
+      const counties = await getCounties(url.stateId);
+      const countyDetailsMap = await getBulkCountyDetails(url.stateId);
+      
+      let hasRealLocalAssets = false;
+      let totalConfidence = 0;
+      let confidenceCount = 0;
+      let minDate: string | null = null;
+      let hasOfficialSource = false;
+
+      for (const c of counties) {
+        const details = countyDetailsMap.get(c.id);
+        if (!details) continue;
+
+        const offices = details.countyOffices || [];
+        const countyDistricts = details.schoolDistricts || [];
+        const rcs = details.regionalCenters || [];
+
+        const hasRequiredContactInfo = offices.length > 0;
+        const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(details));
+
+        const rcDates = rcs.map((rc: RegionalCenter) => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = countyDistricts.map((sd: SchoolDistrict) => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = offices.map((co: CountyOffice) => co.last_verified_date).filter(Boolean) as string[];
+        const allDates = [...rcDates, ...sdDates, ...coDates];
+        const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+        if (lastVerDate) {
+          if (!minDate || lastVerDate < minDate) {
+            minDate = lastVerDate;
+          }
+        }
+
+        const rcScores = rcs.map((rc: RegionalCenter) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const sdScores = countyDistricts.map((sd: SchoolDistrict) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const coScores = offices.map((co: CountyOffice) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const allScores = [...rcScores, ...sdScores, ...coScores];
+        const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
+
+        if (confScore !== null) {
+          totalConfidence += confScore;
+          confidenceCount++;
+        }
+
+        let countyHasOfficialSource = false;
+        if (rcs.some((rc: RegionalCenter) => !!rc.source_url) || countyDistricts.some((sd: SchoolDistrict) => !!sd.source_url) || offices.some((co: CountyOffice) => !!co.source_url)) {
+          countyHasOfficialSource = true;
+          hasOfficialSource = true;
+        }
+
+        const countyPolicy = evaluateSeoPolicy({
+          routeType: 'county-hub',
+          stateId: url.stateId,
+          countyId: c.id,
+          entityCount: countyDistricts.length,
+          hasOfficialSource: countyHasOfficialSource,
+          lastVerifiedDate: lastVerDate,
+          confidenceScore: confScore,
+          hasRequiredContactInfo,
+          hasNoPlaceholderData,
+          hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || rcs.length > 0
+        });
+
+        if (countyPolicy.index) {
+          hasRealLocalAssets = true;
+        }
+      }
+
+      const avgConfidenceScore = confidenceCount > 0 ? totalConfidence / confidenceCount : null;
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'state-counties-hub',
+        stateId: url.stateId,
+        entityCount: counties.length,
+        hasOfficialSource,
+        lastVerifiedDate: minDate,
+        confidenceScore: avgConfidenceScore,
+        hasRealLocalAssets,
+        hasNoPlaceholderData: counties.every((c: County) => assertNoPlaceholderData(JSON.stringify(c)))
+      });
+
+      if (shouldIncludeInSitemap(policy)) {
+        filteredStaticUrls.push({ ...url, lastmod: minDate });
+      }
+    }
+  }
+
+  const xmlUrls = filteredStaticUrls.map((url: StaticUrl) => {
+    const lastmodTag = url.lastmod ? `\n    <lastmod>${url.lastmod}</lastmod>` : '';
+    return `  <url>
+    <loc>${baseUrl}${url.loc}</loc>${lastmodTag}
     <changefreq>${url.changefreq}</changefreq>
     <priority>${url.priority}</priority>
-  </url>`).join('\n');
+  </url>`;
+  }).join('\n');
 
-  // Add the 12 dynamic SEO cluster pages
-  const clusterUrls = Object.values(SEO_CLUSTERS).map(cluster => `  <url>
-    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>
-    <lastmod>${today}</lastmod>
+  // Filter dynamic programs & conditions cluster pages using evaluateSeoPolicy
+  const clusterXmlUrls: string[] = [];
+
+  for (const cluster of Object.values(SEO_CLUSTERS)) {
+    if (cluster.category === 'programs') {
+      const prog = await getProgramBySlug(cluster.slug);
+      let hasEligibilityRules = false;
+      let hasApplicationSteps = false;
+      let hasDocuments = false;
+      const hasNoPlaceholderData = true;
+      let confidenceScore: number | null = null;
+      let stateId = 'california';
+
+      if (prog) {
+        stateId = prog.state_id || 'california';
+        const progIdStr = String(prog.id);
+        const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
+        hasEligibilityRules = (ruleCount?.count || 0) > 0;
+        hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
+        hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
+        confidenceScore = normalizeConfidenceScore(prog.confidence_score);
+      }
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'program-guide',
+        stateId,
+        programId: cluster.slug,
+        hasOfficialSource: hasOfficialProgramSource(prog?.source_url),
+        lastVerifiedDate: prog?.last_verified_date || null,
+        confidenceScore,
+        hasEligibilityRules,
+        hasApplicationSteps,
+        hasDocuments,
+        hasNoPlaceholderData
+      });
+
+      if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = prog?.last_verified_date ? `\n    <lastmod>${prog.last_verified_date}</lastmod>` : '';
+        clusterXmlUrls.push(`  <url>
+    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>`).join('\n');
+  </url>`);
+      }
+    } else if (cluster.category === 'conditions') {
+      const statePrograms = stateProgramsMap['california'] || [];
+      const dates = statePrograms.map((p: Program) => p.last_verified_date).filter(Boolean) as string[];
+      const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
+      const scores = statePrograms.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
+
+      const policy = evaluateSeoPolicy({
+        routeType: 'condition-hub',
+        stateId: 'california',
+        diagnosisId: cluster.slug,
+        confidenceScore,
+        hasOfficialSource: statePrograms.length > 0 && statePrograms.some((p: Program) => !!p.source_url),
+        lastVerifiedDate: minDate,
+        hasNoPlaceholderData: statePrograms.every((p: Program) => assertNoPlaceholderData(JSON.stringify(p)))
+      });
+
+      if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
+        clusterXmlUrls.push(`  <url>
+    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
+      }
+    } else if (['forms', 'deadlines', 'situations'].includes(cluster.category)) {
+      const policy = evaluateSeoPolicy({
+        routeType: 'static-page',
+        hasNoPlaceholderData: true
+      });
+
+      if (shouldIncludeInSitemap(policy)) {
+        clusterXmlUrls.push(`  <url>
+    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
+      }
+    }
+  }
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${xmlUrls}
-${clusterUrls}
+${clusterXmlUrls.join('\n')}
 </urlset>`;
 
   return new NextResponse(xml, {
@@ -207,4 +274,3 @@ ${clusterUrls}
     }
   });
 }
-

@@ -2188,8 +2188,12 @@ export function getDynamicStateConfig(stateId: string, stateName: string, stateC
     return stateConfigs[normalizedId];
   }
 
-  // Generate a programmatic fallback config using state_programs_map.json
-  const mapData = (stateProgramsMap as any)[stateCode.toUpperCase()] || {};
+  // Generate a programmatic programmatic fallback config using state_programs_map.json
+  const mapData = (stateProgramsMap as Record<string, {
+    developmental_services?: { name: string };
+    personal_care?: { name: string };
+    hcbs_waivers?: { name: string };
+  }>)[stateCode.toUpperCase()] || {};
   const devServicesName = mapData.developmental_services?.name || `${stateName} Developmental Services`;
   const personalCareName = mapData.personal_care?.name || `${stateName} Personal Care Services`;
   const hcbsWaiversName = mapData.hcbs_waivers?.name || `${stateName} HCBS Waivers`;

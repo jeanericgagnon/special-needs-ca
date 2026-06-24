@@ -1,6 +1,13 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
+import { stateAuditStatus } from './seo-policy';
 
-export const INDEXABLE_STATE_IDS = [
+/**
+ * PUBLIC_RENDERABLE_STATE_IDS defines all states that the application can render in the UI
+ * for navigation and user research.
+ * IMPORTANT: This is NOT an allowlist for search engine indexation. Indexability is strictly
+ * controlled by stateAuditStatus() via isIndexableState(stateId).
+ */
+export const PUBLIC_RENDERABLE_STATE_IDS = [
   'california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia',
   'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina',
   'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota',
@@ -9,6 +16,7 @@ export const INDEXABLE_STATE_IDS = [
   'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts',
   'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming',
 ] as const;
+
 
 export const VERIFIED_DIAGNOSIS_SLUGS = [
   'autism-spectrum-disorder',
@@ -120,7 +128,8 @@ type CountyDetailsLike = {
 };
 
 export function isIndexableState(stateId: string): boolean {
-  return INDEXABLE_STATE_IDS.includes(stateId as (typeof INDEXABLE_STATE_IDS)[number]);
+  const status = stateAuditStatus(stateId);
+  return status !== null && status.indexSafe === true;
 }
 
 export function isAcceptablePublicVerificationStatus(status?: string | null): boolean {
@@ -243,7 +252,12 @@ export function getCountyTruthEligibility(stateId: string, countyDetails?: Count
     if (!hasDistrict) blockers.push('missing_public_school_district');
 
     const publicSafe = blockers.length === 0;
-    return { publicSafe, indexSafe: publicSafe, blockers };
+    const indexSafe = publicSafe && isIndexableState(stateId);
+    const finalBlockers = [...blockers];
+    if (!isIndexableState(stateId)) {
+      finalBlockers.push('state_not_index_enabled');
+    }
+    return { publicSafe, indexSafe, blockers: finalBlockers };
   }
 
   const hasAnyPublicRecord =
@@ -262,7 +276,12 @@ export function getCountyTruthEligibility(stateId: string, countyDetails?: Count
   }
 
   const publicSafe = blockers.length === 0;
-  return { publicSafe, indexSafe: publicSafe, blockers };
+  const indexSafe = publicSafe && isIndexableState(stateId);
+  const finalBlockers = [...blockers];
+  if (!isIndexableState(stateId)) {
+    finalBlockers.push('state_not_index_enabled');
+  }
+  return { publicSafe, indexSafe, blockers: finalBlockers };
 }
 
 export function getCountyDiagnosisTruthEligibility(

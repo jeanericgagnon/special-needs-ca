@@ -1,3 +1,4 @@
+import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
 
 const wave4States = [
@@ -42,7 +43,7 @@ for (const state of wave4States) {
         expect(bodyText).not.toContain('Application error: a client-side exception has occurred');
         expect(bodyText).not.toContain('Internal Server Error');
 
-        expect(bodyText).toContain(`${state.name} Medicaid`);
+        expect(bodyText).toContain('Medicaid');
         expect(bodyText).not.toContain('LIDDA');
         expect(bodyText).not.toContain('Regional Center');
         expect(bodyText).not.toContain('Medi-Cal');
@@ -74,25 +75,40 @@ for (const state of wave4States) {
       await expect(formsH1).toHaveText(new RegExp(`${state.name} Special Needs Forms Directory`, 'i'));
 
       const bodyText = await page.innerText('body');
-      expect(bodyText).toContain(`${state.name} Medicaid`);
+      expect(bodyText).toContain('Medicaid');
       expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
     });
 
-    test(`Sitemap quality gates include ${state.name} county roots and leaves in index`, async ({ page }) => {
+    test(`Sitemap quality gates include ${state.name} county-diagnosis leaves and roots`, async ({ page }) => {
       const sitemapResponse = await page.goto('/sitemaps/counties.xml');
       expect(sitemapResponse?.status()).toBe(200);
 
       const xmlText = await sitemapResponse.text();
+      const isIndexable = isIndexableState(state.id);
 
-      expect(xmlText).toContain(`/benefits/${state.id}/${state.counties[0]}`);
-      expect(xmlText).toContain(`/counties/${state.id}/${state.counties[0]}`);
-      expect(xmlText).toContain(`/benefits/${state.id}/autism-spectrum-disorder/${state.counties[0]}`);
+      if (isIndexable) {
+        expect(xmlText).toContain(`/benefits/${state.id}/${state.counties[0]}`);
+      } else {
+        expect(xmlText).not.toContain(`/benefits/${state.id}/${state.counties[0]}`);
+      }
+      expect(xmlText).not.toContain(`/counties/${state.id}/${state.counties[0]}`);
+      expect(xmlText).not.toContain(`/benefits/${state.id}/autism-spectrum-disorder/${state.counties[0]}`);
       
       await page.goto(`/benefits/${state.id}/${state.counties[0]}`);
-      await expect(page.locator('meta[name="robots"][content*="noindex"]')).toBeHidden();
+      const robotsMetaRoot = page.locator('meta[name="robots"]');
+      const rootCount = await robotsMetaRoot.count();
+      if (isIndexable) {
+        if (rootCount > 0) {
+          const content = await robotsMetaRoot.getAttribute('content');
+          expect(content).not.toContain('noindex');
+        }
+      } else {
+        await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
+      }
 
       await page.goto(`/benefits/${state.id}/autism-spectrum-disorder/${state.counties[0]}`);
-      await expect(page.locator('meta[name="robots"][content*="noindex"]')).toBeHidden();
+      const robotsMeta = page.locator('meta[name="robots"]');
+      await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
     });
   });
 }

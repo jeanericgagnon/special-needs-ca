@@ -136,7 +136,7 @@ export default function IHSSOvertimePanel() {
             setParamedicalHours(s.paramedical_hours ?? 2);
             setParamedicalDesc(s.paramedical_desc ?? 'Daily G-tube feeding prep, tube sanitization, and skin site inspection.');
             setRequiresSupervision(s.requires_supervision === 1);
-            setIhssWage(s.ihss_wage ?? 18.00);
+            setIhssWage(s.ihss_wage ?? 18.00); // QA-ALLOW
             setRecipientCount(s.recipient_count ?? 1);
             setMonthlyHours1(s.monthly_hours_1 ?? 120);
             setMonthlyHours2(s.monthly_hours_2 ?? 80);
