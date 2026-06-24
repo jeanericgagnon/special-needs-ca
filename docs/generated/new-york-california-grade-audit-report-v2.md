@@ -1,10 +1,10 @@
-# New York Blocker Packets v7
+# New York Blocker Packets v8
 
 - classification: BLOCKED
 - index_safe: false
 - completeness_pct: 91
 - county_count: 62
-- primary_gap_reason: nygov_linked_exact_otda_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable
+- primary_gap_reason: nygov_linked_exact_otda_and_mybenefits_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (LawHelpNY now provides reviewed New York statewide legal-help routing from a first-party portal with county-based resource lookup.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_health_hostwide_403 (Reviewed 2026-06-23 one more bounded official New York county-local replacement lane using the public `ny.gov` service stack as the discovery surface rather than speculative OTDA host guessing. The original `health.ny.gov` Medicaid lane is still blocked host-wide: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all remain unusable for county-local proof. The live `https://www.ny.gov/services/social-programs` page and `https://www.ny.gov/services/apply-cooling-assistance` now strengthen the blocker instead of clearing it: both public state pages explicitly link exact OTDA successor leaves such as `https://otda.ny.gov/programs/heap/contacts/`, `https://otda.ny.gov/programs/applications/4826.pdf`, `https://otda.ny.gov/programs/snap/work-requirements.asp`, and `https://mybenefits.ny.gov/`. But the exact OTDA benefit and contact leaves still fail on the current host family, including `otda.ny.gov/programs/heap/contacts/`, `otda.ny.gov/programs/heap/`, `otda.ny.gov/programs/applications/4826.pdf`, `otda.ny.gov/workingfamilies/dss.asp`, and the apex `otda.ny.gov` plus `www.otda.ny.gov` roots, all of which reset the connection in the bounded lane. New York therefore remains blocked on county-local not because a successor path is unknown, but because the public New York portal points to an exact official OTDA successor family that is still not reviewable from the repo-side verification lane.)
+- county_local_disability_resources: blocked_health_hostwide_403 (Reviewed 2026-06-23 one more bounded official New York county-local replacement lane using the public `ny.gov` service stack as the discovery surface rather than speculative OTDA host guessing. The original `health.ny.gov` Medicaid lane is still blocked host-wide: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all remain unusable for county-local proof. The live `https://www.ny.gov/services/social-programs` page and `https://www.ny.gov/services/apply-cooling-assistance` strengthen the blocker instead of clearing it: the cooling-assistance page explicitly says people may apply in person at their local district office and publicly links both `https://otda.ny.gov/programs/heap/contacts/` as `HEAP Local District Contact` and `https://mybenefits.ny.gov/` as the online benefits lane. But the exact OTDA benefit and contact leaves still fail on the current successor family, including `otda.ny.gov/programs/heap/contacts/`, `otda.ny.gov/programs/heap/`, `otda.ny.gov/programs/applications/4826.pdf`, `otda.ny.gov/workingfamilies/dss.asp`, and the apex `otda.ny.gov` plus `www.otda.ny.gov` roots, all of which reset the connection in the bounded lane. The same bounded probe now confirms `https://mybenefits.ny.gov/` also resets on the public successor family. New York therefore remains blocked on county-local not because a successor path is unknown, but because the public New York portal points to exact official OTDA and MyBenefits successor surfaces that are still not reviewable from the repo-side verification lane.)
 
 ## Failure ledger
 
-- county_local_disability_resources: nygov_links_exact_otda_successor_leaves_but_successor_host_still_resets :: Reviewed 2026-06-23 one bounded official New York county-local replacement lane using the public `ny.gov` service stack as the discovery surface rather than speculative OTDA host guessing. The original `health.ny.gov` Medicaid lane is still blocked host-wide: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all remain unusable for county-local proof. The live `https://www.ny.gov/services/social-programs` page and `https://www.ny.gov/services/apply-cooling-assistance` now strengthen the blocker instead of clearing it: both public state pages explicitly link exact OTDA successor leaves such as `https://otda.ny.gov/programs/heap/contacts/`, `https://otda.ny.gov/programs/applications/4826.pdf`, `https://otda.ny.gov/programs/snap/work-requirements.asp`, and `https://mybenefits.ny.gov/`. But the exact OTDA benefit and contact leaves still fail on the current host family, including `otda.ny.gov/programs/heap/contacts/`, `otda.ny.gov/programs/heap/`, `otda.ny.gov/programs/applications/4826.pdf`, `otda.ny.gov/workingfamilies/dss.asp`, and the apex `otda.ny.gov` plus `www.otda.ny.gov` roots, all of which reset the connection in the bounded lane. New York therefore remains blocked on county-local not because a successor path is unknown, but because the public New York portal points to an exact official OTDA successor family that is still not reviewable from the repo-side verification lane.
+- county_local_disability_resources: nygov_links_exact_otda_and_mybenefits_successor_leaves_but_successor_family_still_resets :: Reviewed 2026-06-23 one more bounded official New York county-local replacement lane using the public `ny.gov` service stack as the discovery surface rather than speculative OTDA host guessing. The original `health.ny.gov` Medicaid lane is still blocked host-wide: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all remain unusable for county-local proof. The live `https://www.ny.gov/services/social-programs` page and `https://www.ny.gov/services/apply-cooling-assistance` strengthen the blocker instead of clearing it: the cooling-assistance page explicitly says people may apply in person at their local district office and publicly links both `https://otda.ny.gov/programs/heap/contacts/` as `HEAP Local District Contact` and `https://mybenefits.ny.gov/` as the online benefits lane. But the exact OTDA benefit and contact leaves still fail on the current successor family, including `otda.ny.gov/programs/heap/contacts/`, `otda.ny.gov/programs/heap/`, `otda.ny.gov/programs/applications/4826.pdf`, `otda.ny.gov/workingfamilies/dss.asp`, and the apex `otda.ny.gov` plus `www.otda.ny.gov` roots, all of which reset the connection in the bounded lane. The same bounded probe now confirms `https://mybenefits.ny.gov/` also resets on the public successor family. New York therefore remains blocked on county-local not because a successor path is unknown, but because the public New York portal points to exact official OTDA and MyBenefits successor surfaces that are still not reviewable from the repo-side verification lane.
 
 ## Verified source samples
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.lawhelpny.org/
 - able_program: verified_state_grade; samples=1; first=https://www.mynyable.org/
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.health.ny.gov/health_care/medicaid/redesign/cdpap.htm
-- county_local_disability_resources: blocked_health_hostwide_403; samples=9; first=https://www.health.ny.gov/health_care/medicaid/ldss.htm
+- county_local_disability_resources: blocked_health_hostwide_403; samples=10; first=https://www.health.ny.gov/health_care/medicaid/ldss.htm
 
 ## Next actions
 
@@ -49,18 +49,17 @@
 ## Education refinement
 
 - The official NYSED Joint Management Teams and District Superintendents pages still prove county-bearing BOCES routing for the 57 non-NYC counties.
-- The official NYC DOE Committees on Special Education page now closes the five-borough remainder with district groupings, emails, addresses, and phone numbers for Bronx, Brooklyn, Manhattan, Queens, and Staten Island.
-- Education is no longer a New York blocker.
+- The live NYC DOE Committees on Special Education page already closes the five-borough remainder directly, so education is no longer a New York blocker.
 
 ## County-local refinement
 
-- The live `ny.gov` service stack still proves New York intends OTDA to be the successor local-district lane: `Social Programs` and `Apply for Cooling Assistance` both link exact OTDA contact or application leaves.
-- The `Apply for Cooling Assistance` page specifically labels the OTDA successor contact path as `HEAP Local District Contact`, which makes the replacement lane exact enough to test but still not reviewable enough to clear.
-- Those exact OTDA successor leaves still fail in bounded live review, so the blocker remains on the successor host family rather than on an unknown replacement search.
+- The live `ny.gov` service stack still proves New York intends OTDA and MyBenefits to be the successor county-local lane: `Apply for Cooling Assistance` explicitly tells people they may apply in person at a local district office and links both `HEAP Local District Contact` and `mybenefits.ny.gov`.
+- That makes the successor path exact enough to test in the low-token lane rather than leaving it as speculative host guessing.
+- But every exact public successor surface still fails in bounded live review, including the OTDA contact leaf, OTDA application PDF, OTDA benefit roots, OTDA apex roots, and `mybenefits.ny.gov` itself.
 
 ## Completion decision
 
 - New York remains `BLOCKED` and `index_safe=false`.
-- Education is now verified across all 62 counties.
-- County-local remains blocked because the old `health.ny.gov` LDSS family is unusable and the exact OTDA successor leaves publicly linked by `ny.gov` still reset the connection.
+- Education is verified across all 62 counties.
+- County-local remains blocked because the old `health.ny.gov` LDSS family is unusable and the exact OTDA plus MyBenefits successor surfaces publicly linked by `ny.gov` still reset the connection.
 - PTI remains repaired and is not a blocker.

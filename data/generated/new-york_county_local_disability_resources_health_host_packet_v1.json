@@ -8,7 +8,8 @@
     "blockedHealthNySurfaces": 5,
     "reviewedReplacementLocatorCount": 0,
     "boundedOtdaReplacementHostFailures": 9,
-    "reviewedStatePortalSuccessorPages": 2
+    "reviewedStatePortalSuccessorPages": 2,
+    "boundedMyBenefitsFailures": 1
   },
   "blocked_surfaces": [
     "https://www.health.ny.gov/health_care/medicaid/ldss.htm",
@@ -28,29 +29,30 @@
     "https://otda.ny.gov/programs/heap/",
     "https://www.otda.ny.gov/programs/heap/",
     "https://otda.ny.gov/programs/applications/4826.pdf",
-    "https://www.otda.ny.gov/programs/applications/4826.pdf"
+    "https://www.otda.ny.gov/programs/applications/4826.pdf",
+    "https://mybenefits.ny.gov/"
   ],
   "replacement_host_probe": {
     "attempted_at": "2026-06-23T00:00:00.000Z",
     "host_family": [
       "otda.ny.gov",
-      "www.otda.ny.gov"
+      "www.otda.ny.gov",
+      "mybenefits.ny.gov"
     ],
-    "outcome": "nygov_points_to_exact_successor_leaves_but_successor_family_still_resets",
+    "outcome": "nygov_points_to_exact_otda_and_mybenefits_successor_surfaces_but_every_public_successor_surface_still_resets",
     "exact_urls": [
       "https://otda.ny.gov/workingfamilies/dss.asp",
-      "https://otda.ny.gov/workingfamilies/",
-      "https://otda.ny.gov/programs/applications/",
-      "https://otda.ny.gov/workingfamilies/contact.asp",
-      "https://otda.ny.gov/",
-      "https://www.otda.ny.gov/workingfamilies/dss.asp",
-      "https://www.otda.ny.gov/",
       "https://otda.ny.gov/programs/heap/contacts/",
-      "https://otda.ny.gov/programs/applications/4826.pdf"
+      "https://otda.ny.gov/programs/heap/",
+      "https://otda.ny.gov/programs/applications/4826.pdf",
+      "https://otda.ny.gov/",
+      "https://www.otda.ny.gov/",
+      "https://mybenefits.ny.gov/"
     ],
     "nygov_successor_refs": [
       "https://www.ny.gov/services/social-programs",
       "https://www.ny.gov/services/apply-cooling-assistance"
-    ]
+    ],
+    "summary": "Reviewed 2026-06-23 one more bounded official New York county-local replacement lane using the public `ny.gov` service stack as the discovery surface rather than speculative OTDA host guessing. The original `health.ny.gov` Medicaid lane is still blocked host-wide: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all remain unusable for county-local proof. The live `https://www.ny.gov/services/social-programs` page and `https://www.ny.gov/services/apply-cooling-assistance` strengthen the blocker instead of clearing it: the cooling-assistance page explicitly says people may apply in person at their local district office and publicly links both `https://otda.ny.gov/programs/heap/contacts/` as `HEAP Local District Contact` and `https://mybenefits.ny.gov/` as the online benefits lane. But the exact OTDA benefit and contact leaves still fail on the current successor family, including `otda.ny.gov/programs/heap/contacts/`, `otda.ny.gov/programs/heap/`, `otda.ny.gov/programs/applications/4826.pdf`, `otda.ny.gov/workingfamilies/dss.asp`, and the apex `otda.ny.gov` plus `www.otda.ny.gov` roots, all of which reset the connection in the bounded lane. The same bounded probe now confirms `https://mybenefits.ny.gov/` also resets on the public successor family. New York therefore remains blocked on county-local not because a successor path is unknown, but because the public New York portal points to exact official OTDA and MyBenefits successor surfaces that are still not reviewable from the repo-side verification lane."
   }
 }

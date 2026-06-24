@@ -2300,8 +2300,8 @@
         "county_local_disability_resources": "blocked_health_hostwide_403"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_294_new_york_nyc_cse_borough_clear_v1",
-      "packetPrimaryGapReason": "nygov_linked_exact_otda_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable",
+      "packetBatch": "batch_302_new_york_mybenefits_successor_finality_v1",
+      "packetPrimaryGapReason": "nygov_linked_exact_otda_and_mybenefits_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

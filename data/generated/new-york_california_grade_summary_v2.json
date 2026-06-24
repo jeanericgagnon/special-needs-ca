@@ -12,11 +12,10 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "nygov_linked_exact_otda_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable",
+  "primary_gap_reason": "nygov_linked_exact_otda_and_mybenefits_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
-    "county_local_disability_resources",
-    "district_or_county_education_routing"
+    "county_local_disability_resources"
   ],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
@@ -43,8 +42,8 @@
   "final_blockers": [
     {
       "family": "county_local_disability_resources",
-      "failure_code": "nygov_links_exact_otda_successor_leaves_but_successor_host_still_resets",
-      "evidence": "Reviewed 2026-06-23 one bounded official New York county-local replacement lane using the public `ny.gov` service stack as the discovery surface rather than speculative OTDA host guessing. The original `health.ny.gov` Medicaid lane is still blocked host-wide: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all remain unusable for county-local proof. The live `https://www.ny.gov/services/social-programs` page and `https://www.ny.gov/services/apply-cooling-assistance` now strengthen the blocker instead of clearing it: both public state pages explicitly link exact OTDA successor leaves such as `https://otda.ny.gov/programs/heap/contacts/`, `https://otda.ny.gov/programs/applications/4826.pdf`, `https://otda.ny.gov/programs/snap/work-requirements.asp`, and `https://mybenefits.ny.gov/`. But the exact OTDA benefit and contact leaves still fail on the current host family, including `otda.ny.gov/programs/heap/contacts/`, `otda.ny.gov/programs/heap/`, `otda.ny.gov/programs/applications/4826.pdf`, `otda.ny.gov/workingfamilies/dss.asp`, and the apex `otda.ny.gov` plus `www.otda.ny.gov` roots, all of which reset the connection in the bounded lane. New York therefore remains blocked on county-local not because a successor path is unknown, but because the public New York portal points to an exact official OTDA successor family that is still not reviewable from the repo-side verification lane.",
+      "failure_code": "nygov_links_exact_otda_and_mybenefits_successor_leaves_but_successor_family_still_resets",
+      "evidence": "Reviewed 2026-06-23 one more bounded official New York county-local replacement lane using the public `ny.gov` service stack as the discovery surface rather than speculative OTDA host guessing. The original `health.ny.gov` Medicaid lane is still blocked host-wide: `ldss.htm`, `robots.txt`, `sitemap.xml`, `/health_care/medicaid/`, and `/health_care/medicaid/redesign/` all remain unusable for county-local proof. The live `https://www.ny.gov/services/social-programs` page and `https://www.ny.gov/services/apply-cooling-assistance` strengthen the blocker instead of clearing it: the cooling-assistance page explicitly says people may apply in person at their local district office and publicly links both `https://otda.ny.gov/programs/heap/contacts/` as `HEAP Local District Contact` and `https://mybenefits.ny.gov/` as the online benefits lane. But the exact OTDA benefit and contact leaves still fail on the current successor family, including `otda.ny.gov/programs/heap/contacts/`, `otda.ny.gov/programs/heap/`, `otda.ny.gov/programs/applications/4826.pdf`, `otda.ny.gov/workingfamilies/dss.asp`, and the apex `otda.ny.gov` plus `www.otda.ny.gov` roots, all of which reset the connection in the bounded lane. The same bounded probe now confirms `https://mybenefits.ny.gov/` also resets on the public successor family. New York therefore remains blocked on county-local not because a successor path is unknown, but because the public New York portal points to exact official OTDA and MyBenefits successor surfaces that are still not reviewable from the repo-side verification lane.",
       "next_action": "hold_blocked_until_public_otda_successor_leaf_or_county_owned_locator_is_verified"
     }
   ]

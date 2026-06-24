@@ -1,0 +1,11 @@
+{
+  "batch": "batch_302_new_york_mybenefits_successor_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "new-york",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewedStatePortalSuccessorPages": 2,
+  "otdaExactSuccessorLeafFailures": 6,
+  "myBenefitsSuccessorFailures": 1,
+  "totalBoundedSuccessorFamilyFailures": 10
+}
