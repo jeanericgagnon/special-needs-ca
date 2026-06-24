@@ -1,0 +1,12 @@
+{
+  "state": "kansas",
+  "batch": "batch331_kansas_marshall_mcsec_leaf_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_leaf_count": 22,
+  "new_counties": [
+    "marshall-ks"
+  ],
+  "remaining_blocker_family": "district_or_county_education_routing",
+  "primary_gap_reason": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_22_counties"
+}

@@ -5,15 +5,15 @@
   "repair_lane": "public_export_backed_district_leaf_repair",
   "purpose": "Deterministic authoring packet for replacing Kansas statewide KSDE placeholder rows with reviewed district-owned education-routing leaves.",
   "current_problem_metrics": {
-    "placeholderSourceRows": 105,
-    "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 21,
+    "placeholderSourceRows": 83,
+    "placeholderWebsiteRows": 83,
+    "authoredExactLeafCount": 22,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 21
+    "reviewedDistrictOwnedLeafCount": 22
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -173,6 +173,7 @@
     "johnson-ks",
     "leavenworth-ks",
     "lyon-ks",
+    "marshall-ks",
     "mcpherson-ks",
     "nemaha-ks",
     "reno-ks",
@@ -227,7 +228,6 @@
     "linn-ks",
     "logan-ks",
     "marion-ks",
-    "marshall-ks",
     "meade-ks",
     "miami-ks",
     "mitchell-ks",
