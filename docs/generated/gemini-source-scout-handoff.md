@@ -23,7 +23,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - New York: `nygov_linked_exact_otda_and_mybenefits_successor_leaves_still_reset_while_health_ny_ldss_family_remains_unusable`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
-- Ohio: `retired_official_county_family_and_public_search_surfaces_still_dead_plus_education_inventory_root_only`
+- Ohio: `official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only`
 - Oklahoma: `live_okdhs_general_office_map_only_materializes_46_counties_while_same_host_child_support_tree_proves_county_contracts_exist_but_not_for_disability_local_routing`
 - Oregon: `live_odhs_office_finder_is_only_a_custom_component_shell_with_no_public_county_extract_query_contract_or_api_surface`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
@@ -37,44 +37,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oregon
+## Current Focus State: Ohio
 
 ### Blocker Reason
 
-Oregon has one remaining California-grade blocker: `county_local_disability_resources`. Education is already cleared by the official county-searchable ODE Combined Directory PDF. The county-local lane is no longer blocked by an unknown successor host; it is now blocked because the live ODHS successor is only a custom office-finder component shell with no public county extract, query contract, or API surface.
+Ohio still has two critical blockers, but the highest-priority one is `county_local_disability_resources`. The county-local lane is no longer just blocked by dead guessed directory paths; in the current bounded lane, even the official JFS, Medicaid, and Ohio.gov root/discovery surfaces return 404, so there is no live official successor contract to verify.
 
 ### Exact Evidence Needed
 
-- A live official Oregon county-grade ODHS office export, county list, or public office-result payload behind the current office-finder component.
-- County-owned or ODHS-maintained local office leaves covering all 36 counties with direct routing evidence.
-- Any public API, JSON, GeoJSON, KML, or export contract from the live office-finder stack that materializes office rows by county.
+- A live official Ohio county-office directory, locator, search index, sitemap, or county-owned JFS contract that is publicly reviewable in the current lane.
+- Any current JFS, Medicaid, or Ohio.gov successor page that explicitly enumerates county agencies or links to county-owned office leaves.
+- For education later: more exact district or ESC leaves beyond the tiny current inventory.
 
 ### Useful Official URLs Already Tried
 
-- [Dead legacy ODHS locator host](https://dhhs.oregon.gov/locations)
-- [Live ODHS office finder](https://www.oregon.gov/odhs/pages/office-finder.aspx)
-- [County query probe](https://www.oregon.gov/odhs/pages/office-finder.aspx?county=Baker)
-- [City query probe](https://www.oregon.gov/odhs/pages/office-finder.aspx?city=Salem)
-- [Service query probe](https://www.oregon.gov/odhs/pages/office-finder.aspx?service=SNAP)
-- [API-like probe](https://www.oregon.gov/odhs/pages/office-finder.aspx/_api/)
-- [JSON-like probe](https://www.oregon.gov/odhs/pages/office-finder.aspx?format=json)
-- [ODE School Directory page](https://www.oregon.gov/ode/about-us/Pages/School-Directory.aspx)
+- [JFS root](https://jfs.ohio.gov/)
+- [JFS robots.txt](https://jfs.ohio.gov/robots.txt)
+- [JFS sitemap.xml](https://jfs.ohio.gov/sitemap.xml)
+- [Legacy JFS county directory](https://jfs.ohio.gov/home/local-agencies-directory)
+- [Medicaid root](https://medicaid.ohio.gov/)
+- [Medicaid robots.txt](https://medicaid.ohio.gov/robots.txt)
+- [Medicaid sitemap.xml](https://medicaid.ohio.gov/sitemap.xml)
+- [Guessed Medicaid county agencies path](https://medicaid.ohio.gov/families-and-individuals/county-agencies)
+- [Ohio.gov root](https://ohio.gov/)
+- [Ohio.gov robots.txt](https://ohio.gov/robots.txt)
+- [Ohio.gov sitemap.xml](https://ohio.gov/sitemap.xml)
+- [Guessed Ohio.gov county directory](https://ohio.gov/residents/resources/job-family-services-directory)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live public data contract behind the custom `<odhs-office-finder />` component.
-- Any county-owned or ODHS-maintained office leaves that bypass the current component shell and directly list county office contact data.
-- Any Oregon-hosted export or service endpoint that the office-finder uses client-side but does not expose in the current raw page source.
+- Any live official successor host for Ohio county JFS or county Medicaid agencies that is not currently exposed through the dead root/discovery surfaces.
+- Any county-owned JFS leaves that can be verified directly if the state root remains retired.
+- Any official statewide dataset or export that explicitly maps counties to JFS or Medicaid office routing.
 
-## Next State Order After Oregon
+## Next State Order After Ohio
 
-1. Ohio
-2. Minnesota
-3. Maine
-4. Idaho
-5. Arizona
-6. Massachusetts
-7. New Mexico
-8. South Dakota
-9. Rhode Island
-10. Virginia
+1. Minnesota
+2. Maine
+3. Idaho
+4. Arizona
+5. Massachusetts
+6. New Mexico
+7. South Dakota
+8. Rhode Island
+9. Virginia
+10. West Virginia

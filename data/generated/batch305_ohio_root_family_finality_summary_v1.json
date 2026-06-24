@@ -1,0 +1,11 @@
+{
+  "batch": "batch_305_ohio_root_family_finality_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "ohio",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "jfsRoot404": true,
+  "medicaidRoot404": true,
+  "ohioGovRoot404": true,
+  "robotsAndSitemaps404": true
+}
