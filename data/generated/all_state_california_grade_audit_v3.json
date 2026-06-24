@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-24T00:00:00.000Z",
+  "generatedAt": "2026-06-24T21:37:26.775Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 24,
-    "BLOCKED": 26
+    "COMPLETE": 25,
+    "BLOCKED": 25
   },
-  "indexSafeCount": 24,
+  "indexSafeCount": 25,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a new blocker lesson: closest-feature widget outputs still do not create a county contract.",
+  "lessonsUpdate": "Added a new queue-completion lesson: once every state has a packet, stop expanding the queue and switch to failure-class repair from packet artifacts.",
   "states": [
     {
       "stateId": "alabama",
@@ -150,7 +150,7 @@
         "county_local_disability_resources": "blocked_phone_only_dfcs_relay_plus_dfcs_site_map_with_wrong_role_ocs_office_leaf_plus_search_without_public_results_plus_legacy_dpa_canonicalization_into_health_host_challenge"
       },
       "packetGenerated": true,
-      "packetBatch": "batch322_alaska_legacy_canonicalization_finality_v1",
+      "packetBatch": "batch_80_alaska_truth_repair_v1",
       "packetPrimaryGapReason": "live_dfcs_services_publications_search_and_site_map_still_expose_no_dpa_or_borough_mapping_and_only_surface_wrong_role_ocs_offices_while_legacy_dhss_dpa_paths_now_canonicalize_into_same_challenged_health_host",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
@@ -640,7 +640,7 @@
         "county_local_disability_resources": "blocked_partial_storefront_lane_and_recovered_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only"
       },
       "packetGenerated": true,
-      "packetBatch": "batch321_florida_auth_only_endpoint_finality_v1",
+      "packetBatch": "batch_1_fast_finish_states_v1",
       "packetPrimaryGapReason": "official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
@@ -2238,8 +2238,8 @@
       "stateId": "new-york",
       "stateCode": "NY",
       "stateName": "New York",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Pilot)",
       "legacyGateScore": 0,
@@ -2247,11 +2247,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 62,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "new-york",
         "state_code": "NY",
@@ -2297,12 +2297,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_health_hostwide_403_plus_otda_successor_resets_plus_mybenefits_begin_without_county_local_contract"
+        "county_local_disability_resources": "verified_county_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch311_new_york_mybenefits_begin_refresh_v1",
-      "packetPrimaryGapReason": "nygov_links_exact_otda_successor_leaves_that_still_reset_while_mybenefits_begin_page_recovers_without_county_local_contract_and_health_ny_ldss_family_remains_unusable",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetBatch": "batch323_new_york_otda_county_local_completion_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "north-carolina",
@@ -2371,7 +2371,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_286_north_carolina_official_county_contract_completion_v1",
-      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "packetPrimaryGapReason": "none",
       "packetRecommendedBatch": "complete_maintain"
     },
     {
@@ -2510,7 +2510,7 @@
         "county_local_disability_resources": "blocked_retired_official_county_family_and_dead_public_search_surfaces"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_305_ohio_root_family_finality_v1",
+      "packetBatch": "batch_2_repair_blocked_states_v1",
       "packetPrimaryGapReason": "official_ohio_jfs_medicaid_and_ohio_gov_root_surfaces_all_404_while_education_inventory_root_only",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
@@ -2580,7 +2580,7 @@
         "county_local_disability_resources": "blocked_live_office_map_incomplete_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_303_oklahoma_county_tree_finality_v1",
+      "packetBatch": "batch_6_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "live_okdhs_general_office_map_only_materializes_46_counties_while_same_host_child_support_tree_proves_county_contracts_exist_but_not_for_disability_local_routing",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
@@ -2650,7 +2650,7 @@
         "county_local_disability_resources": "blocked_live_office_finder_shell_without_public_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_304_oregon_office_finder_component_finality_v1",
+      "packetBatch": "batch_11_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "live_odhs_office_finder_is_only_a_custom_component_shell_with_no_public_county_extract_query_contract_or_api_surface",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },

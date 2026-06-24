@@ -1,0 +1,10 @@
+{
+  "state": "new-york",
+  "classification": "COMPLETE",
+  "county_local_contract_verified": true,
+  "county_or_city_rows_verified": 62,
+  "otda_dss_page_verified": true,
+  "heap_contacts_page_verified": true,
+  "mybenefits_begin_page_status": 200,
+  "completed_at": "2026-06-24T00:00:00.000Z"
+}

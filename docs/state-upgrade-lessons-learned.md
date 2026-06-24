@@ -354,3 +354,6 @@
 
 ### Legacy Subtrees That Canonicalize Into The Same Challenge Shell Do Not Create A Second Lane
 *   **Lesson:** If legacy agency program paths now canonicalize into the same challenged successor host, collapse them into one blocker instead of treating the legacy subtree as a separate reviewable lane. Alaska `dhss.alaska.gov/dpa/...` now lands on `health.alaska.gov/dpa` and still returns the same Cloudflare shell, so the legacy host no longer preserves an independent office-routing contract.
+
+### Exact Official Successor Leaves Override A Stale Reset Blocker
+*   **Lesson:** If a previously blocked successor host later exposes exact public leaves that directly enumerate county or local-district rows, replace the stale reset blocker with those leaves instead of preserving the older transport failure story. New York cleared once OTDA `Local Departments of Social Services` and `HEAP Contacts` were rechecked as live public leaves and shown to carry the county-local contract directly.
