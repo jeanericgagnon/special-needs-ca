@@ -330,3 +330,6 @@
 
 ### Sparse County-Named Office Labels Still Do Not Create A Statewide County-Service Contract
 *   **Lesson:** If a public office inventory only exposes a few office names with county-like labels but still lacks explicit `county` or `countiesServed` fields, do not treat those labels as a statewide county-routing contract. Utah’s live DWS office API still exposed only two unique county-like office names (`Emery County (Castle Dale)` and `South County (Taylorsville)`) across 45 unique offices, which was not enough to prove a complete 29-county disability-resource mapping.
+
+### A Rejected ASP.NET Shell Without Hidden Fields Means The Public Submit Contract Is Gone
+*   **Lesson:** If a previously useful ASP.NET root now returns only a `Request Rejected` shell and no longer exposes `__VIEWSTATE`, `__VIEWSTATEGENERATOR`, or `__EVENTVALIDATION`, stop treating it as a live export lane. Kansas KSDE no longer exposed any hidden form fields in the raw lane, so the old district-scoped submit contract was not reproducible and the work had to fall back to saved district leads only.

@@ -1130,7 +1130,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_reviewed_district_owned_and_coop_leads_but_live_ksde_export_roots_now_request_rejected",
+        "district_or_county_education_routing": "blocked_reviewed_district_owned_and_coop_leads_but_live_ksde_roots_now_only_expose_rejected_shell_without_submit_contract",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1140,8 +1140,8 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch307_kansas_ksde_request_rejected_finality_v1",
-      "packetPrimaryGapReason": "official_ksde_directory_export_roots_now_return_request_rejected_shells_while_reviewed_district_owned_leaves_cover_16_counties_but_county_grade_is_still_incomplete",
+      "packetBatch": "batch313_kansas_rejected_shell_submit_finality_v1",
+      "packetPrimaryGapReason": "official_ksde_directory_and_pdf_roots_now_only_serve_request_rejected_shells_and_the_directory_reports_root_exposes_no_hidden_submit_fields_while_reviewed_district_owned_leaves_cover_16_counties",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
