@@ -7,7 +7,7 @@ export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
 
   // 1. Derive lastmod dates from the max verification date of the database
-  let maxDate = '2026-06-24';
+  let maxDate: string | null = null;
   try {
     const result = await navigatorDb.prepare(`
       SELECT MAX(last_verified_date) as max_date 
@@ -87,26 +87,24 @@ export async function GET() {
     console.error('Failed to check cities count for sitemap index:', err);
   }
 
+  const lastmodTag = maxDate ? `\n    <lastmod>${maxDate}</lastmod>` : '';
+
   let sitemapsXml = `  <sitemap>
-    <loc>${baseUrl}/sitemaps/static.xml</loc>
-    <lastmod>${maxDate}</lastmod>
+    <loc>${baseUrl}/sitemaps/static.xml</loc>${lastmodTag}
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemaps/counties.xml</loc>
-    <lastmod>${maxDate}</lastmod>
+    <loc>${baseUrl}/sitemaps/counties.xml</loc>${lastmodTag}
   </sitemap>`;
 
   if (hasDistricts) {
     sitemapsXml += `\n  <sitemap>
-    <loc>${baseUrl}/sitemaps/districts.xml</loc>
-    <lastmod>${maxDate}</lastmod>
+    <loc>${baseUrl}/sitemaps/districts.xml</loc>${lastmodTag}
   </sitemap>`;
   }
 
   if (hasCities) {
     sitemapsXml += `\n  <sitemap>
-    <loc>${baseUrl}/sitemaps/cities.xml</loc>
-    <lastmod>${maxDate}</lastmod>
+    <loc>${baseUrl}/sitemaps/cities.xml</loc>${lastmodTag}
   </sitemap>`;
   }
 

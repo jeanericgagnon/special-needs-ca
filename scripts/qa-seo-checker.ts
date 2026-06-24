@@ -672,6 +672,9 @@ if (runFull) {
       }
 
       const text = await res.text();
+      if (text.includes('<lastmod>2026-06-24</lastmod>') || text.includes('<lastmod>2026-06-16</lastmod>')) {
+        logError(`Sitemap ${sm} contains hardcoded fallback lastmod date!`);
+      }
       // Basic XML parsing for loc tags
       const matches = [...text.matchAll(/<loc>([\s\S]*?)<\/loc>/g)].map(m => m[1].trim());
       console.log(`Discovered ${matches.length} URLs in ${sm}`);
@@ -710,6 +713,15 @@ if (runFull) {
         if (canonicalVal !== expectedCanonical) {
           logError(`Sitemap URL ${url} has a canonical mismatch! Canonical points to ${canonicalVal}`);
         }
+      }
+
+      // Check for YMYL and fabricated claims in HTML content
+      if (/County\s+Disability\s+Services/i.test(html) || /County\s+Department\s+of\s+Disability/i.test(html)) {
+        logError(`Sitemap URL ${url} contains fabricated County Disability name!`);
+      }
+      const highRiskRegex = /legally entitled|guaranteed|will qualify|\$2,000–\$5,200\/mo|\$1,100\+\/mo|\$3,200–\$5,800\/mo|typically 15 to 30 days/i;
+      if (highRiskRegex.test(html)) {
+        logError(`Sitemap URL ${url} contains high-risk/banned phrase!`);
       }
     }
 

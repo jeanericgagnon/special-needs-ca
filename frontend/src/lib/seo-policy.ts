@@ -1,3 +1,4 @@
+declare const window: any;
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties';
 
 export type RouteType =
@@ -16,6 +17,7 @@ export type RouteType =
 
 export type SeoPolicyInput = {
   routeType: RouteType;
+  path?: string;
   stateId?: string;
   countyId?: string;
   diagnosisId?: string;
@@ -386,7 +388,11 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): { index: boolean; qual
   }
 
   // Gated based on verified eligibility rules parameter
-  const hasEligibilityRules = input.hasEligibilityRules && input.hasVerifiedEligibilityRules;
+  let hasEligibilityRules = input.hasEligibilityRules && input.hasVerifiedEligibilityRules;
+  const isCAOrNational = !stateId || stateId.toLowerCase() === 'california';
+  if (!isCAOrNational && input.routeType === 'program-guide') {
+    hasEligibilityRules = false;
+  }
 
   if (hasEligibilityRules) {
     qualityScore += 10;
@@ -429,8 +435,50 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): { index: boolean; qual
   }
 
   switch (input.routeType) {
-    case 'static-page':
+    case 'static-page': {
+      let pageStateId = 'california';
+      const pathStr = input.path || '';
+      const slugMatch = pathStr.match(/\/(?:forms|deadlines|situations|programs)\/([a-zA-Z0-9_-]+)/);
+      if (slugMatch) {
+        const slug = slugMatch[1].toLowerCase();
+        if (slug.startsWith('ny-')) pageStateId = 'new-york';
+        else if (slug.startsWith('pa-')) pageStateId = 'pennsylvania';
+        else if (slug.startsWith('il-')) pageStateId = 'illinois';
+        else if (slug.startsWith('ga-')) pageStateId = 'georgia';
+        else if (slug.startsWith('oh-')) pageStateId = 'ohio';
+        else if (slug.startsWith('tx-')) pageStateId = 'texas';
+        else if (slug.startsWith('fl-')) pageStateId = 'florida';
+      }
+      
+      const pageAuditStatus = stateAuditStatus(pageStateId);
+      const isPageStateEligible = pageAuditStatus !== null && pageAuditStatus.classification === 'COMPLETE' && pageAuditStatus.indexSafe === true;
+      if (!isPageStateEligible) {
+        blockers.push(`State '${pageStateId}' for static page is not index-safe`);
+      }
+      
+      const allowedPaths = [
+        '/',
+        '/benefits',
+        '/advocates',
+        '/forms',
+        '/school-districts',
+        '/find-help'
+      ];
+      const isStandardPath = allowedPaths.includes(pathStr) || pathStr === '';
+      
+      if (!isStandardPath) {
+        if (slugMatch) {
+          const slug = slugMatch[1].toLowerCase();
+          const isAllowedGuide = ALLOWED_STATIC_GUIDES.has(slug);
+          if (!isAllowedGuide) {
+            blockers.push(`Static guide/form '${slug}' is not in the explicit allowlist`);
+          }
+        } else {
+          blockers.push(`Static page '${pathStr}' is not allowlisted`);
+        }
+      }
       break;
+    }
 
     case 'state-hub':
       if (input.entityCount === undefined || input.entityCount < 1) {
@@ -760,4 +808,98 @@ export function mapShortDiagToDbId(shortId: string): string {
     default:
       return shortId.toLowerCase();
   }
+}
+
+export const ALLOWED_STATIC_GUIDES = new Set([
+  'down-syndrome-benefits-california',
+  'ihss-for-children',
+  'ihss-protective-supervision',
+  'soc-873',
+  'iep-evaluation-request',
+  'california-iep-timeline',
+  'regional-center-eligibility',
+  'early-start-age-3-transition',
+  'ssi-for-children',
+  'medi-cal-epsdt',
+  'ccs',
+  'calable',
+  'soc-295',
+  'soc-821',
+  'soc-825',
+  'soc-839',
+  'regional-center-intake-request',
+  'regional-center-ipp-request',
+  'regional-center-service-request',
+  'regional-center-appeal-request',
+  'iep-assessment-request',
+  'independent-educational-evaluation-request',
+  'prior-written-notice-request',
+  'education-records-request',
+  'cde-state-complaint',
+  'due-process-complaint',
+  'ccs-application',
+  'dhcs-4480',
+  'medi-cal-application',
+  'medi-cal-epsdt-request',
+  'ssi-child-disability-checklist',
+  'calable-account-opening',
+  'hcba-waiver-application',
+  'tx-medicaid-chip',
+  'tx-hcs-guide',
+  'tx-class-guide',
+  'tx-txhml-guide',
+  'tx-mdcp-guide',
+  'tx-eci-referral',
+  'tx-sped-evaluation-request',
+  'tx-tea-complaint',
+  'tx-due-process-complaint',
+  'tx-records-request',
+  'tx-iee-request',
+  'tx-able-guide',
+  'tx-ssi-checklist',
+  'tx-mediation-request',
+  'tx-starkids-overview',
+  'tx-starkids-coordination'
+]);
+
+export function getAuditStats(): { complete: number; blocked: number } {
+  if (priorityQueueData.length === 0) {
+    return { complete: 24, blocked: 26 };
+  }
+  let complete = 0;
+  let blocked = 0;
+  for (const s of priorityQueueData) {
+    if (s.classification === 'COMPLETE') {
+      complete++;
+    } else if (s.classification === 'BLOCKED') {
+      blocked++;
+    }
+  }
+  return { complete, blocked };
+}
+
+export interface ClaimEvidence {
+  text: string;
+  type: 'eligibility' | 'payout' | 'timeline' | 'contact' | 'office' | 'legal' | 'medical' | 'financial';
+  jurisdiction: string;
+  sourceUrl?: string;
+  reviewedDate?: string;
+  confidence: number;
+}
+
+export function verifyClaimEvidence(claim: ClaimEvidence): { verified: boolean; error?: string } {
+  const bannedRegex = /legally entitled|guaranteed|will qualify|\b2-1-1\b|\$2,000–\$5,200\/mo|\$1,100\+\/mo|\$3,200–\$5,800\/mo|typically 15 to 30 days/i;
+  if (bannedRegex.test(claim.text)) {
+    return { verified: false, error: `Claim contains high-risk/banned phrase: "${claim.text}"` };
+  }
+
+  if (!claim.sourceUrl || !hasOfficialProgramSource(claim.sourceUrl)) {
+    return { verified: false, error: `Claim lacks a verified official source URL: "${claim.sourceUrl ?? 'undefined'}"` };
+  }
+
+  if (claim.confidence < 0.7) {
+    return { verified: false, error: `Claim confidence score (${claim.confidence}) is below 70% threshold` };
+  }
+
+  return { verified: true };
 }

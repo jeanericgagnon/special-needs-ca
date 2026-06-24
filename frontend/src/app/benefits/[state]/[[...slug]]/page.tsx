@@ -601,7 +601,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             <StateCoverageBadge stateId={stateData.id} stateName={stateName} />
           </div>
           <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-            Select your county to browse localized guides for all 78 diagnoses. Discover {config.catchmentName} intake lines, {config.medicaidName} waiver options, local school district special education inclusion rates, and independent IEP advocates.
+            Select your county to browse localized guides for all {DIAGNOSES.length} diagnoses. Discover {config.catchmentName} intake lines, {config.medicaidName} waiver options, local school district special education inclusion rates, and independent IEP advocates.
           </p>
         </div>
 
@@ -793,7 +793,6 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
       return (
         <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
-          {isIndexable && <SeoSchema data={[faqSchema, governmentOrganizationSchema]} />}
           
           {/* Back button */}
           <div style={{ marginBottom: '1.5rem' }}>
@@ -1589,32 +1588,6 @@ async function InnerBenefitsCatchAll({ params }: Props) {
     return (
       <main className="container animate-fade-in" style={{ paddingBottom: '5rem' }}>
         
-        {/* Dynamic JSON-LD structured data injection */}
-        {isIndexable && (
-          <>
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalConditionSchema) }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolDistrictsSchema) }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(governmentServicesSchema) }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{ __html: JSON.stringify(advocatesSchema) }}
-            />
-          </>
-        )}
-
         {/* Source-backed Trust Banner */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(var(--primary-rgb), 0.03)', border: '1px solid rgba(var(--primary-rgb), 0.08)', padding: '0.75rem 1.5rem', borderRadius: '16px', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '0.75rem' }} className="no-print">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.82rem', color: 'var(--text-main)' }}>

@@ -131,9 +131,16 @@ export async function GET() {
   // 1. County root directories (/benefits/[state]/[county])
   counties.forEach(county => {
     const stateId = county.state_id || 'california';
+    const details = countyDetailsMap.get(county.id);
+    const rcDates = (details?.regionalCenters || []).map((rc: RegionalCenter) => rc.last_verified_date).filter(Boolean) as string[];
+    const sdDates = (details?.schoolDistricts || []).map((sd: SchoolDistrict) => sd.last_verified_date).filter(Boolean) as string[];
+    const coDates = (details?.countyOffices || []).map((co: CountyOffice) => co.last_verified_date).filter(Boolean) as string[];
+    const allDates = [...rcDates, ...sdDates, ...coDates];
+    const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+    const lastmodTag = lastVerDate ? `\n    <lastmod>${lastVerDate}</lastmod>` : '';
+
     xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
@@ -159,9 +166,9 @@ export async function GET() {
       });
 
       if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
         xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>
-    <lastmod>${minDate || today}</lastmod>
+    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
@@ -198,6 +205,12 @@ export async function GET() {
         const allScores = [...rcScores, ...sdScores, ...coScores];
         const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
+        const rcDates = rcList.map((rc: RegionalCenter) => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = sdList.map((sd: SchoolDistrict) => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = coList.map((co: CountyOffice) => co.last_verified_date).filter(Boolean) as string[];
+        const allDates = [...rcDates, ...sdDates, ...coDates];
+        const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
         const policy = getSeoPolicyForRoute('county-condition', {
           stateId,
           countyId: county.id,
@@ -206,16 +219,16 @@ export async function GET() {
           entityCount: sdList.length,
           confidenceScore: confScore,
           hasOfficialSource: rcList.some((rc: RegionalCenter) => !!rc.source_url) || sdList.some((sd: SchoolDistrict) => !!sd.source_url) || coList.some((co: CountyOffice) => !!co.source_url),
-          lastVerifiedDate: today,
+          lastVerifiedDate: lastVerDate,
           hasRequiredContactInfo: coList.length > 0,
           hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(countyDetails)),
           hasRealLocalAssets: sdList.length > 0 || coList.length > 0 || rcList.length > 0
         });
 
         if (shouldIncludeInSitemap(policy)) {
+          const lastmodTag = lastVerDate ? `\n      <lastmod>${lastVerDate}</lastmod>` : '';
           xmlUrls += `  <url>
-      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>
-      <lastmod>${today}</lastmod>
+      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>${lastmodTag}
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
     </url>\n`;

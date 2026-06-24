@@ -39,14 +39,14 @@ export const SEO_CLUSTERS: Record<string, SEOPageData> = {
   'down-syndrome-benefits-california': {
     slug: 'down-syndrome-benefits-california',
     category: 'situations',
-    title: 'Down Syndrome Benefits in California: Complete Guide to State Aid',
+    title: 'Down Syndrome Benefits in California: State Aid Guide',
     metaTitle: 'Down Syndrome Benefits California | Public Programs & Aid Guide',
-    metaDescription: 'Complete guide for California parents on securing Regional Center services, IHSS, Institutional Deeming Medi-Cal, SSI, and CalABLE for children with Down Syndrome.',
-    quickAnswer: 'Yes. In California, children with Down Syndrome (Trisomy 21) are legally entitled to comprehensive public benefits and developmental supports. This includes Regional Center services (respite, speech therapy, IFSP/IPP planning), In-Home Supportive Services (IHSS - tax-free monthly stipends for parent caregivers), Medi-Cal via the Institutional Deeming Waiver (ignoring family income), federal SSI monthly payments, and CalABLE savings accounts.',
+    metaDescription: 'Parent guide for California parents on securing Regional Center services, IHSS, Institutional Deeming Medi-Cal, SSI, and CalABLE for children with Down Syndrome.',
+    quickAnswer: 'Yes. In California, children with Down Syndrome (Trisomy 21) can qualify for comprehensive public benefits and developmental supports upon meeting assessment criteria. This includes Regional Center services (respite, speech therapy, IFSP/IPP planning), In-Home Supportive Services (IHSS - tax-free monthly stipends for parent caregivers), Medi-Cal via the Institutional Deeming Waiver (ignoring family income), federal SSI monthly payments, and CalABLE savings accounts.',
     tldrPoints: [
-      { label: 'Est. IHSS Payout', value: '$2,000 - $5,200/mo' },
+      { label: 'Est. IHSS Payout', value: 'Varies by assessed hours' },
       { label: 'Medi-Cal Income Waiver', value: 'Parent Income Ignored' },
-      { label: 'SSI Child Payout', value: 'Up to $1,100+/mo' },
+      { label: 'SSI Child Payout', value: 'Subject to income limits' },
       { label: 'Regional Center Age', value: '0 - Lifetime eligibility' }
     ],
     whenThisMatters: 'Immediately upon birth or clinical diagnosis. Early intervention services under the IFSP cover ages 0 to 3, and Lanterman Act services apply from age 3 throughout adulthood.',
@@ -151,12 +151,12 @@ Email: [Insert Email Address]`
     slug: 'ihss-for-children',
     category: 'programs',
     title: 'In-Home Supportive Services (IHSS) for Children in California',
-    metaTitle: 'IHSS for Children California | Complete Caregiver Pay Guide',
+    metaTitle: 'IHSS for Children California | Caregiver Pay Guide',
     metaDescription: 'Learn how parent caregivers of minor children can receive paid IHSS caregiving hours in California. Calculate wages, understand eligibility, and apply.',
-    quickAnswer: 'Yes, minor children under age 18 with developmental disabilities can qualify for the California In-Home Supportive Services (IHSS) program. The program pays parent caregivers to provide essential physical care (bathing, dressing, feeding) and safety monitoring. Monthly hours can range from 20 to 283 hours, paid at local county minimum wages ($18.00–$22.00/hour) and exempt from federal and state income taxes under IRS Notice 2014-7.',
+    quickAnswer: 'Yes, minor children under age 18 with developmental disabilities can qualify for the California In-Home Supportive Services (IHSS) program. The program pays parent caregivers to provide essential physical care (bathing, dressing, feeding) and safety monitoring. Monthly hours can range from 20 to 283 hours, paid at local county minimum wages and exempt from federal and state income taxes under IRS Notice 2014-7.',
     tldrPoints: [
       { label: 'Max Monthly Hours', value: '283 Hours' },
-      { label: 'Est. Monthly Wage', value: '$3,200 - $5,800/mo' },
+      { label: 'Est. Monthly Wage', value: 'Varies by assessed hours' },
       { label: 'Income Tax Status', value: '100% Tax-Exempt' },
       { label: 'Parent Eligibility', value: 'Paid to parent if co-residing' }
     ],
@@ -254,10 +254,10 @@ ${f.parentName || '[Parent Name]'}`
     category: 'situations',
     title: 'IHSS Protective Supervision California: How to Secure 24/7 Hours',
     metaTitle: 'IHSS Protective Supervision | Secure 24/7 Caregiver Pay',
-    metaDescription: 'A complete step-by-step parent advocate guide to qualifying for IHSS Protective Supervision in California. Download templates, checklists, and forms.',
-    quickAnswer: 'IHSS Protective Supervision is a specialized benefit tier in California that pays parent caregivers up to 195 or 283 hours monthly (worth $3,500 to $5,800/mo tax-free) to monitor children with severe cognitive impairments. To qualify, you must prove your child lacks safety awareness, is "non-self-directing," and is prone to dangerous, impulsive behaviors (wandering, climbing, eating non-food items) requiring constant visual monitoring.',
+    metaDescription: 'A parent advocate guide to qualifying for IHSS Protective Supervision in California. Download templates, checklists, and forms.',
+    quickAnswer: 'IHSS Protective Supervision is a specialized benefit tier in California that pays parent caregivers up to 195 or 283 hours monthly (varies by county wage rate and assessed hours) to monitor children with severe cognitive impairments. To qualify, you must prove your child lacks safety awareness, is "non-self-directing," and is prone to dangerous, impulsive behaviors (wandering, climbing, eating non-food items) requiring constant visual monitoring.',
     tldrPoints: [
-      { label: 'Max Monthly Pay', value: 'Up to $5,800/mo tax-free' },
+      { label: 'Max Monthly Pay', value: 'Varies by county wage rate' },
       { label: 'Mandatory Physician Form', value: 'Form SOC 821' },
       { label: 'Evidence Needed', value: '24-Hour Safety Incident Log' },
       { label: 'Statutory Authority', value: 'CDSS MPP Section 30-757' }
@@ -854,7 +854,7 @@ Phone: [Insert Phone]`
     metaDescription: 'Learn how to secure monthly federal SSI disability cash payments for children with disabilities in California. Understand parental income deeming rules.',
     quickAnswer: 'Supplemental Security Income (SSI) is a federal program administered by the Social Security Administration (SSA) that provides monthly cash payments to children with severe disabilities. In California, children who qualify automatically receive full-scope Medi-Cal coverage. However, the child must meet both strict clinical criteria (marked or extreme functional limitations) and household income/asset limits (parental resource deeming).',
     tldrPoints: [
-      { label: 'Max Monthly Payment', value: 'Up to $1,100+/mo (State supplement included)' },
+      { label: 'Max Monthly Payment', value: 'Subject to income limits' },
       { label: 'Asset Limit', value: '$2,000 parent (single) / $3,000 (married)' },
       { label: 'Clinical Criteria', value: 'Marked or extreme limitation' },
       { label: 'Medi-Cal Link', value: 'Auto-enrolled in Medi-Cal' }
@@ -938,8 +938,8 @@ Phone: [Insert Phone]`
       {
         question: 'What is your monthly gross household income?',
         options: [
-          { text: 'Below $3,500/mo (approx. for single parent, varies by kids)', score: 'high', reason: 'Your income likely falls within the SSA deeming thresholds. Focus on clinical proof.' },
-          { text: 'Above $5,000/mo', score: 'low', reason: 'Your household income exceeds standard deeming limits. You may need to wait until the child turns 18 (when parent income is ignored).' }
+          { text: 'Below the SSA income threshold (varies by family size)', score: 'high', reason: 'Your income likely falls within the SSA deeming thresholds. Focus on clinical proof.' },
+          { text: 'Above the threshold', score: 'low', reason: 'Your household income exceeds standard deeming limits. You may need to wait until the child turns 18 (when parent income is ignored).' }
         ]
       }
     ]
@@ -2851,7 +2851,7 @@ ${f.parentName || '[Parent Name]'}`
       { name: 'Proof of Income & Residency', description: 'Recent pay stubs and utility bills.' }
     ],
     whoToCall: [
-      { name: 'Texas HHS Benefits Helpline', number: '2-1-1', description: 'State benefits information and support.' }
+      { name: 'Texas HHS Benefits Helpline', number: '(877) 541-7905', description: 'State benefits information and support.' }
     ],
     whatToSay: 'I am submitting a Medicaid application for my child. I want to check if they qualify for Medicaid or CHIP programs.',
     commonMistakes: [
