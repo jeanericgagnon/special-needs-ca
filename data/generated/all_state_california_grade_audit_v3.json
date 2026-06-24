@@ -150,7 +150,7 @@
         "county_local_disability_resources": "blocked_phone_only_dfcs_relay_plus_dfcs_site_map_with_wrong_role_ocs_office_leaf_plus_search_without_public_results_plus_legacy_dpa_canonicalization_into_health_host_challenge"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_80_alaska_truth_repair_v1",
+      "packetBatch": "batch322_alaska_legacy_canonicalization_finality_v1",
       "packetPrimaryGapReason": "live_dfcs_services_publications_search_and_site_map_still_expose_no_dpa_or_borough_mapping_and_only_surface_wrong_role_ocs_offices_while_legacy_dhss_dpa_paths_now_canonicalize_into_same_challenged_health_host",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
