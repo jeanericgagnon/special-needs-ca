@@ -1,0 +1,15 @@
+{
+  "batch": "batch310_alaska_search_shell_refresh_v1",
+  "generated_at": "2026-06-23T00:00:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "dfcs_search_status": 200,
+  "dfcs_search_results_status": 404,
+  "dfcs_search_post_status": 200,
+  "legacy_root_status": 200,
+  "legacy_robots_status": 200,
+  "legacy_sitemap_status": 404,
+  "health_robots_status": 403
+}
