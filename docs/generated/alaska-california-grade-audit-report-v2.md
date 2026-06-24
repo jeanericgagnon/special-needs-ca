@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.dlcak.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_phone_only_dfcs_relay_plus_publications_without_dpa_terms_plus_dfcs_search_shell_without_public_results_plus_current_health_host_403_and_legacy_dhss_dpa_subtree_403; samples=39; first=https://dfcs.alaska.gov/Pages/Services.aspx
+- county_local_disability_resources: blocked_phone_only_dfcs_relay_plus_publications_without_dpa_terms_plus_dfcs_search_shell_without_public_results_plus_current_health_host_403_and_legacy_dhss_dpa_subtree_403; samples=24; first=https://dfcs.alaska.gov/Pages/Services.aspx
 
 ## Next actions
 

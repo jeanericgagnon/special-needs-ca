@@ -64,6 +64,16 @@ function writeJsonl(filePath, rows) {
   fs.writeFileSync(filePath, `${rows.map((row) => JSON.stringify(row)).join('\n')}${rows.length ? '\n' : ''}`);
 }
 
+function dedupeSamples(samples) {
+  const seen = new Set();
+  return samples.filter((sample) => {
+    const key = `${sample.sample_name}::${sample.source_url || ''}::${sample.final_url || ''}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
   return [
     '# Alaska California-Grade Audit Report v2',
@@ -257,14 +267,14 @@ export function generateBatch310AlaskaSearchShellRefreshV1() {
     if (row.family !== 'county_local_disability_resources') return row;
     const keep = (row.samples || []).filter((sample) => ![
       'DFCS Search shell',
-      'DFCS Search results endpoint 404',
+      'DFCS Search results endpoint SharePoint 404 shell',
       'DFCS Search POST self-post',
-      'Legacy DHSS root',
-      'Legacy DHSS DPA root 403',
-      'Legacy DHSS office locations 403',
-      'Legacy DHSS DPA contacts 403',
+      'Legacy DHSS root canonical landing',
+      'Legacy DHSS DPA root Cloudflare 403 shell',
+      'Legacy DHSS office locations Cloudflare 403 shell',
+      'Legacy DHSS DPA contacts Cloudflare 403 shell',
     ].includes(sample.sample_name));
-    const samples = [
+    const samples = dedupeSamples([
       ...keep,
       {
         sample_name: 'DFCS Search shell',
@@ -336,7 +346,7 @@ export function generateBatch310AlaskaSearchShellRefreshV1() {
         fetched_at: '2026-06-23T00:00:00.000Z',
         evidence_snippet: 'The legacy DPA contacts leaf also returns an HTTP 403 Cloudflare `Just a moment...` shell, so the subtree is not a usable public successor lane.',
       },
-    ];
+    ]);
     return {
       ...row,
       family_status: FAMILY_STATUS,

@@ -65,6 +65,16 @@ function writeJsonl(filePath, rows) {
   fs.writeFileSync(filePath, `${rows.map((row) => JSON.stringify(row)).join('\n')}${rows.length ? '\n' : ''}`);
 }
 
+function dedupeSamples(samples) {
+  const seen = new Set();
+  return samples.filter((sample) => {
+    const key = `${sample.sample_name}::${sample.source_url || ''}::${sample.final_url || ''}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
   return [
     '# Alaska California-Grade Audit Report v2',
@@ -268,7 +278,7 @@ export function generateBatch312AlaskaAltHostPublicationsFinalityV1() {
       'my.alaska.gov robots 403',
       'alaska.gov state search 404',
     ].includes(sample.sample_name));
-    const samples = [
+    const samples = dedupeSamples([
       ...keep,
       {
         sample_name: 'Alaska DFCS Publications no DPA office material',
@@ -300,7 +310,7 @@ export function generateBatch312AlaskaAltHostPublicationsFinalityV1() {
         fetched_at: '2026-06-23T00:00:00.000Z',
         evidence_snippet: 'The official state search URL returns HTTP 404 and therefore does not reopen a public DPA office-routing search surface.',
       },
-    ];
+    ]);
     return {
       ...row,
       family_status: FAMILY_STATUS,
