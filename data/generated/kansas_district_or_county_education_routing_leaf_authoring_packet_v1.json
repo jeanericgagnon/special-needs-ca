@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 105,
     "placeholderWebsiteRows": 105,
-    "authoredExactLeafCount": 20,
+    "authoredExactLeafCount": 21,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 20
+    "reviewedDistrictOwnedLeafCount": 21
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -173,6 +173,7 @@
     "johnson-ks",
     "leavenworth-ks",
     "lyon-ks",
+    "mcpherson-ks",
     "nemaha-ks",
     "reno-ks",
     "riley-ks",
@@ -227,7 +228,6 @@
     "logan-ks",
     "marion-ks",
     "marshall-ks",
-    "mcpherson-ks",
     "meade-ks",
     "miami-ks",
     "mitchell-ks",

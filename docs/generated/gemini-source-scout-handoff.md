@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
-- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_20_counties`
+- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_21_counties`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
@@ -35,48 +35,45 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Ohio
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-Ohio still has two critical blockers, but the highest-priority one is `county_local_disability_resources`. The old root-404 blocker is no longer true: Ohio JFS, Medicaid, and Ohio.gov roots plus their `robots.txt` and `sitemap.xml` surfaces are live again. The current failure is narrower and more truthful: the rendered `job-family-services-directory` page, Ohio search page, JFS `about/local-agencies-directory` root, and sampled `cdjfs-*` county leaves still render public 404 pages even though the live JFS sitemap advertises 98 `cdjfs-*` entries across 88 county slugs.
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 21/105 counties from preserved district-owned or district-linked local leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Kansas remains BLOCKED and not index-safe because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
 
 ### Exact Evidence Needed
 
-- A rendered live Ohio county JFS or Medicaid directory page that exposes real county office details instead of the current public 404 page.
-- A working current successor to the stale `cdjfs-*` directory family, or proof that the sitemap leaf family itself now renders live office details.
-- For education later: more exact district or ESC leaves beyond the tiny current inventory.
+- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
+- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
+- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
 
 ### Useful Official URLs Already Tried
 
-- [JFS root](https://jfs.ohio.gov/)
-- [JFS robots.txt](https://jfs.ohio.gov/robots.txt)
-- [JFS sitemap.xml](https://jfs.ohio.gov/sitemap.xml)
-- [Ohio.gov county directory page](https://ohio.gov/residents/resources/job-family-services-directory)
-- [Ohio.gov search page](https://ohio.gov/search?query=county%20job%20and%20family%20services)
-- [JFS local agencies directory root](https://jfs.ohio.gov/about/local-agencies-directory)
-- [Sample JFS county leaf: Adams](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams)
-- [Sample JFS county leaf: Cuyahoga](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-cuyahoga-3)
-- [Sample JFS county leaf: Wood](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-wood)
-- [Medicaid root](https://medicaid.ohio.gov/)
-- [Medicaid robots.txt](https://medicaid.ohio.gov/robots.txt)
-- [Medicaid sitemap.xml](https://medicaid.ohio.gov/sitemap.xml)
+- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
+- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [McPherson USD 418 home](https://www.mcpherson.com/)
+- [McPherson County Special Education Cooperative](https://mccsec.mcpherson.com/)
+- [Great Bend USD 428 BCSS Child Find](https://sites.google.com/usd428.net/bartoncountyss/child-find)
+- [Hutchinson Public Schools Special Education / Parental Rights folder](https://www.usd308.com/documents/resources/parent-resources/special-education/parental-rights/173274)
+- [Marshall-Nemaha Special Education Co-op Early Childhood](https://www.usd115.org/o/mnesc/page/early-childhood/)
+- [Abilene Public Schools root](https://www.abileneschools.org/)
+- [Abilene Public Schools sitemap](https://www.abileneschools.org/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current rendered Ohio county-office successor leaf on JFS, Medicaid, or Ohio.gov that replaces the stale public 404 directory family.
-- Any official statewide export, table, or rendered directory that maps all 88 counties to county JFS routing without relying on stale sitemap-only leaves.
-- For education later: exact district or ESC-owned leaves that materially expand county-grade routing beyond the current root-only inventory.
+- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
+- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or similar.
+- Additional district-owned document-folder or CMS routes like the Hays USD 489 and Hutchinson USD 308 recoveries, but only on already-preserved district domains.
+## Next State Order After Kansas
 
-## Next State Order After Ohio
-
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. New Mexico
-7. South Dakota
-8. Rhode Island
-9. Virginia
-10. West Virginia
+1. Nebraska
+2. Florida
+3. Alaska
+4. South Carolina
+5. North Carolina
+6. New York
+7. Oklahoma
+8. Oregon
+9. Ohio
+10. Minnesota

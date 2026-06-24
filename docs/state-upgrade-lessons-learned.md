@@ -193,6 +193,9 @@
 ### District Homepages Can Expose Exact Leaves Even When XML Sitemaps 404
 *   **Lesson:** If a district-owned homepage itself exposes a role-exact href like `/special-education`, verify that exact leaf directly before spending more time on XML discovery. Kansas City Kansas Public Schools cleared Wyandotte from the homepage nav even though `/sitemap.xml` returned a district-branded 404 shell.
 
+### District Special-Education Nav Can Safely Elevate County-Named Cooperative Routes
+*   **Lesson:** If an official district homepage exposes a county-named Special Education cooperative under the district’s own `Schools` or `Families` navigation, and the linked first-party cooperative host preserves contact information plus role-bearing parent-rights, staff, forms, or Child Find content, that route is strong enough to clear the county. McPherson cleared once McPherson USD 418’s homepage linked directly to the McPherson County Special Education Cooperative and the cooperative home preserved contact, Special Education staff, process/forms, Parent Rights, and ChildFind evidence.
+
 ### Revalidate “Recovered” Postback Lanes With The Literal Submit Value
 *   **Lesson:** If an earlier state note says a postback lane recovered, rerun the exact named submit with its literal current button value before promoting the lane. Maine NEO still exposed `action:SAUExport`, but a fresh Bangor `OrgId=42` replay with `Export to Excel` continued to return HTTP 500 shell HTML.
 
