@@ -2,21 +2,19 @@
   "state": "washington",
   "state_code": "WA",
   "state_name": "Washington",
-  "batch": "batch_15_procedure_hardening_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "batch": "batch378_washington_ddcs_dvr_completion_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 39,
-  "completeness_pct": 91,
-  "strong_critical_families": 11,
-  "weak_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_dshs_local_offices_are_public_but_reviewed_pages_do_not_preserve_a_county_to_office_or_service_area_contract",
-  "recommended_batch": "batch_3_procedure_hardening",
-  "critical_gap_families": [
-    "county_local_disability_resources"
-  ],
+  "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+  "recommended_batch": "complete_maintain",
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -33,19 +31,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "official_local_office_locator_exists_but_no_public_county_to_office_or_service_area_contract",
-      "evidence": "Reviewed 2026-06-25 one more bounded official county-local pass on DSHS. The official `Office Locator` page publicly supports lookup by `zip code, city, or county` and preserves county-named local office cards such as `Okanogan County Community Services Office`, `Grays Harbor County DDCS Field Office`, `Kitsap County DDCS Field Office`, `Lewis County DDCS Field Office`, and `Whitman County DDA Field Office`, plus multi-county cards such as `Tri County-Colville Community Service Office` and `Tri County DDA Field Office`. Individual DSHS office detail pages confirm official addresses and phone numbers for county-named leaves like Whitman County DDA Field Office in Colfax and Tri County DDA Field Office in Colville. The companion `ESA Find an Office` page also says the Community Services Division serves the public through a network of 52 local Community Services Offices. But the reviewed public DSHS pages still do not preserve a complete county-to-office assignment table or an explicit service-area contract, and the office locator remains a search or locator surface rather than a reviewable county routing crosswalk. Because the instructions forbid inferring local routing from nearest-office or geodistance behavior, Washington's county-local disability family remains blocked.",
-      "next_action": "hold_blocked_until_washington_publishes_reviewable_county_to_office_or_service_area_contract"
-    }
-  ]
+  "final_blockers": null
 }

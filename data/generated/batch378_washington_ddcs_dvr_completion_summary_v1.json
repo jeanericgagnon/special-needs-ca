@@ -1,0 +1,12 @@
+{
+  "state": "washington",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "cleared_families": [
+    "developmental_disability_idd_authority",
+    "early_intervention_part_c",
+    "vocational_rehabilitation_pre_ets",
+    "county_local_disability_resources"
+  ],
+  "county_local_evidence": "Reviewed 2026-06-25 the official DSHS DDA `Find a DDCS Office` page and its linked DDCS county map PDF. The page publicly links a `DDCS Office Locator` and a one-page `DEVELOPMENTAL DISABILITIES COMMUNITY SERVICES CONTACTS` PDF that visibly colors every Washington county into DDCS Region 1, Region 2, or Region 3 while listing regional administrator contacts. The reviewed routing packet also directs families seeking an application packet, an assessment for services, or more about DDCS services and resources to the official DDA service-and-information-request path. Because Washington now publishes a reviewable county-to-region DDCS routing crosswalk on the DSHS host, county/local disability resources clear without forbidden city, distance, or nearest-office inference."
+}
