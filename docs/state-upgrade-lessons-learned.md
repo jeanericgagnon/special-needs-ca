@@ -533,3 +533,6 @@
 
 ### Live SharePoint Workbook Stacks Without County Fields Are Final Negative Evidence
 *   **Lesson:** If a live official SharePoint directory host exposes not just one export but the full public workbook stack for schools, superintendents, REC directors, and principals, inspect the header rows before reopening local-routing discovery. New Mexico PED's six public workbooks were all real and current, but every one still omitted county or REC service-area fields, so the honest blocker stayed `missing county crosswalk` rather than `missing public directory`.
+
+### District-Owned Early Childhood Find Pages Can Clear Local Education Routing When They Preserve Screening Scope And District Contact
+*   **Lesson:** If a district-owned `Early Childhood Find` page preserves pre-eligibility screening scope, age range, developmental-concern intake language, and a direct district contact path, that can be strong enough to clear local education routing even without a `special education` slug. Idaho Shoshone cleared once the district-owned Early Childhood Find page preserved 3-to-5 screening language plus district office phone routing on the official host.

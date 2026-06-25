@@ -801,7 +801,7 @@
       "weakCriticalFamilies": 2,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 86,
+      "completenessPct": 87,
       "dbMetrics": {
         "state_id": "idaho",
         "state_code": "ID",
@@ -840,7 +840,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_remaining_live_district_roots_only_materialize_wrong_role_contact_title_ix_or_federal_program_leaves_after_fremont_recovery",
+        "district_or_county_education_routing": "blocked_remaining_live_district_roots_only_materialize_wrong_role_contact_title_ix_or_general_education_leaves_after_shoshone_recovery",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -850,8 +850,8 @@
         "county_local_disability_resources": "blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch358_idaho_fremont_child_find_recovery_v1",
-      "packetPrimaryGapReason": "remaining_idaho_district_roots_now_reduce_to_camas_clark_and_shoshone_wrong_role_leaves_without_special_education_or_student_services_routing",
+      "packetBatch": "batch359_idaho_shoshone_early_childhood_find_recovery_v1",
+      "packetPrimaryGapReason": "remaining_idaho_district_roots_now_reduce_to_camas_and_clark_wrong_role_leaves_without_special_education_or_student_services_routing",
       "packetRecommendedBatch": "hold_for_new_role_bearing_district_leaf_or_county_contract"
     },
     {

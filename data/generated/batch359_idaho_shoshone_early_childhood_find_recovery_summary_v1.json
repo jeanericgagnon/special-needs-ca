@@ -1,0 +1,16 @@
+{
+  "batch": "batch359_idaho_shoshone_early_childhood_find_recovery_v1",
+  "generated_at": "2026-06-25T18:31:04.351Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "camas_contact_leaf_live": true,
+  "clark_contact_leaf_live": true,
+  "clark_title_ix_leaf_live": true,
+  "clark_parent_notification_leaf_live": true,
+  "shoshone_early_childhood_find_live": true,
+  "remaining_wrong_role_districts": 2,
+  "recovered_districts_via_role_bearing_child_find": 1,
+  "lessons_updated": false,
+  "result": "shoshone_recovered_via_district_owned_early_childhood_find_but_camas_and_clark_still_materialize_wrong_role_leaves"
+}
