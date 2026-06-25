@@ -28,48 +28,47 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Idaho blocker. The live packet truth held up under one more bounded exact-host recheck on 2026-06-25: the remaining unresolved district roots are still `https://www.camascountyschools.org/`, `https://www.clarkcountyschools161.org/`, `https://www.sd215.net/`, `https://www.oneidaschooldistrict.org/`, `https://shoshonesd.org/`, and `https://www.jeffersonsd251.org/`. Camas, Clark, Fremont, Oneida, and Shoshone all stayed live at their official roots, but bounded homepage, sitemap, robots, and same-host search review still exposed no reusable `special education`, `special services`, `student services`, `504`, or procedural-safeguards leaf. Fremont’s live sitemap still only adds a generic `student-enrollment` slug. Oneida’s live sitemap still only adds generic student-resources and student-policy documents. Shoshone’s live search and WordPress sitemap still expose no role-bearing district-routing leaf. Jefferson still resolves to the same blank Incapsula-style shell and its sitemap/robots routes still fail closed.
+`district_or_county_education_routing` remains the highest-priority Arizona blocker. The live packet truth held up under one more bounded exact-host recheck on 2026-06-25: the final three unresolved district domains are still `https://www.ccasdaz.org/`, `https://www.mohavelearning.org/`, and `https://www.yavapaicountyhighschool.com/`. Coconino stayed live at the district root and its official WordPress JSON search, page sitemap, post sitemap, and sitemap index all still returned 200, but none exposed a role-bearing `special education`, `student services`, `special services`, or `504` leaf. Mohave stayed live at the district root and site map, but the exact Finalsite-style role candidates `/fs/pages/504`, `/fs/pages/special-education`, `/fs/pages/student-services`, and `/fs/pages/special-services` still all returned 404. Yavapai stayed live at the district root and `/page/contact-us/`, proving the public `/page/` namespace is real, but `/page/special-education/`, `/page/student-services/`, and `/page/504/` still all returned 404 while the sitemap still only exposed handbook and generic student-document URLs.
 
 ### Exact Evidence Needed
 
-- Any district-owned Idaho leaf on one of the remaining unresolved hosts that explicitly preserves `special education`, `special services`, `student services`, `504`, or procedural-safeguards routing.
-- Any exact same-host sitemap or search-discovered district leaf on Camas, Clark, Fremont, Oneida, or Shoshone that carries role-bearing education contact or department content.
-- Any public reviewed replacement for Jefferson that renders district-owned education-routing content instead of the current blank challenge shell.
+- Any district-owned Arizona leaf on `ccasdaz.org`, `mohavelearning.org`, or `yavapaicountyhighschool.com` that explicitly preserves `special education`, `student services`, `special services`, `504`, or parent-rights/procedural-safeguards routing.
+- Any exact same-host sitemap, API, or page-namespace leaf on those three domains that carries role-bearing local education contact or department content.
+- Any newly published official county-owned or district-owned local education-routing leaf for Coconino, Mohave, or Yavapai that can replace the current empty-domain blocker.
 
 ### Useful Official URLs Already Tried
 
-- [Idaho SDE School Districts](https://www.sde.idaho.gov/school-districts/)
-- [Camas County School District root](https://www.camascountyschools.org/)
-- [Clark County School District 161 root](https://www.clarkcountyschools161.org/)
-- [Fremont County Joint School District #215 root](https://www.sd215.net/)
-- [Fremont sitemap](https://www.sd215.net/sitemap.xml)
-- [Oneida School District root](https://www.oneidaschooldistrict.org/)
-- [Oneida sitemap](https://www.oneidaschooldistrict.org/sitemap.xml)
-- [Shoshone School District root](https://shoshonesd.org/)
-- [Shoshone sitemap](https://shoshonesd.org/sitemap.xml)
-- [Shoshone WordPress sitemap](https://shoshonesd.org/wp-sitemap.xml)
-- [Jefferson County Joint District #251 root](https://www.jeffersonsd251.org/)
-- [Jefferson sitemap](https://www.jeffersonsd251.org/sitemap.xml)
+- [Arizona School Report Cards API](https://azreportcards.azed.gov/api/Entity/GetEntityList)
+- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
+- [Coconino WordPress JSON search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
+- [Coconino page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [Coconino post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
+- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
+- [Mohave site map](https://www.mohavelearning.org/site-map)
+- [Mohave exact role slugs](https://www.mohavelearning.org/fs/pages/special-education)
+- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
+- [Yavapai contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
+- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any new district-owned special-education or student-services leaf published on Camas, Clark, Fremont, Oneida, or Shoshone.
-- Any public Jefferson district route that becomes reviewable without the current blank challenge shell.
-- Any exact district-owned leaf on those hosts that carries contact, department, 504, parent-rights, or procedural-safeguards evidence strong enough to replace the statewide fallback.
+- Any newly published district-owned special-education, student-services, or 504 leaf on Coconino, Mohave, or Yavapai.
+- Any exact role-bearing leaf on those hosts that appears through their public sitemap, WordPress API, or `/page/`/`/fs/pages/` namespaces.
+- Any county-owned local education-routing leaf for those counties that becomes public and reviewable without relying on the challenged AZED host.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Massachusetts
+2. New Mexico
+3. South Dakota
+4. Rhode Island
+5. Virginia
+6. West Virginia
+7. North Dakota
+8. Wisconsin
+9. Washington
+10. Tennessee
