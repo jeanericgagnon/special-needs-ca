@@ -2581,7 +2581,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch325_oklahoma_widget_partiality_v1",
-      "packetPrimaryGapReason": "live_okdhs_public_county_widget_only_publishes_adair_and_alfalfa_while_kml_still_yields_only_45_benefit_capable_counties_and_no_contract_for_remaining_32",
+      "packetPrimaryGapReason": "live_okdhs_public_county_widget_salvages_alfalfa_but_still_only_publishes_two_rows_while_combined_official_county_local_coverage_stops_at_46_and_leaves_31",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

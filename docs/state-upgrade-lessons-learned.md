@@ -416,3 +416,6 @@
 
 ### App Shell 200s And Sitemap-Backed 404s Still Fail Closed
 *   **Lesson:** If a district-owned host returns HTTP 200 for arbitrary role-like slugs but every route resolves to the same generic app shell with no special-education, child-find, 504, parent-rights, or procedural-safeguards text, treat that host as a false-positive app shell instead of a verified local leaf. Kansas Chanute USD 413 returned the same `Blue Comets Connect` shell for `/page/special-education`, `/departments/special-education`, `/special-education`, and `/student-services`, while Chase County USD 284 and Woodson USD 366 each exposed public sitemaps plus exact role-slug 404s with zero role-bearing sitemap URLs, which is enough to freeze those domains without more same-host retries.
+
+### Partial County Widgets Can Still Add One Truth-Safe County
+*   **Lesson:** Do not discard an official partial county widget wholesale if one row independently preserves a real county office contract. Oklahoma's widget was still blocker-grade overall, but the Alfalfa row carried county name, phone, toll-free, fax, and street address, so it truthfully added one county even while the Adair row stayed too weak to clear county-local routing.
