@@ -396,3 +396,6 @@
 
 ### District Sitemaps Can Surface Exact Cooperative Leaves Even When State Export Roots Stay Rejected
 *   **Lesson:** If an official district sitemap exposes a role-exact cooperative leaf on the district-owned host, promote that leaf directly instead of waiting on a blocked state export lane. Kansas Labette cleared once the Parsons USD 503 sitemap surfaced `/page/tri-county-special-education-cooperative/`, whose district-owned page preserved the role-exact title `Tri-County Special Education Cooperative` plus Child Find screening language.
+
+### Geocoder County Fields Do Not Equal Office Service Areas
+*   **Lesson:** If a public ArcGIS app exposes a geocoder output with a `County` field, treat that as user-location metadata unless the same app also publishes an explicit office-assignment datasource. Nebraska’s DHHS office app exposes a geocoder result layer and a closest-office output, but still no county-to-office service-area contract, so the county-local family remains blocked.

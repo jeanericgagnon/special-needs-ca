@@ -1927,11 +1927,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_public_config_confirms_no_county_assignment_datasource"
+        "county_local_disability_resources": "blocked_public_config_only_exposes_closest_office_and_geocoder_county_outputs_without_assignment_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch330_nebraska_sibling_leaf_finality_v1",
-      "packetPrimaryGapReason": "public_nebraska_office_config_still_only_references_one_web_map_and_a_closest_feature_output_while_the_feature_service_stops_at_42_offices_for_93_counties",
+      "packetBatch": "batch336_nebraska_geocoder_output_finality_v1",
+      "packetPrimaryGapReason": "public_nebraska_office_config_still_only_references_one_web_map_a_closest_feature_output_and_a_geocoder_county_result_but_no_official_county_assignment_datasource",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
