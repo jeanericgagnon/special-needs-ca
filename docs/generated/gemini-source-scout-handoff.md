@@ -27,37 +27,37 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Massachusetts
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is Suffolk County. Bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` still returns the same HTTP 403 `Not allowed` shell in the low-token lane, so no replayable county export has been recovered yet.
+`county_local_disability_resources` is the only Alaska blocker left. The live official Department of Health DPA offices lane is stronger than a pure host-block assumption: the browser-readable page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` preserves real regional offices, hours, addresses, fax numbers, and virtual routing options. But that same reviewed page also proves why Alaska is still blocked: the office buckets are regional and cross county-equivalent boundaries, for example `Alaska Peninsula` groups Homer and Kenai, `Northern Alaska` groups Fairbanks and Nome, `Southcentral Alaska` groups Anchorage and Matanuska-Susitna Valley, `Southeast Alaska` groups Juneau, Ketchikan, and Sitka, and `Southwest Alaska` groups Bethel and Kodiak. Those are not borough or census-area assignment contracts. In the raw low-token lane, the same health-host family still fails closed more broadly: the DPA landing page, DPA offices page, `sitemap.xml`, `robots.txt`, and bounded search URLs still return HTTP 403 Cloudflare `Just a moment...` shells, so no replayable raw county-equivalent export exists.
 
 ### Exact Evidence Needed
 
-- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.
-- Any current official Mass.gov DDS county field or county-grade export that covers Suffolk directly instead of requiring inference from office names or region labels.
-- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston, Chelsea, Revere, Winthrop, Charlestown, or other Suffolk communities inside a single reviewable office contract.
+- Any current official Alaska page, export, ArcGIS/API surface, or machine-readable table that explicitly maps each borough or census area to a DPA office, office region, or county-equivalent local-routing assignment.
+- Any current official Alaska Department of Health or DFCS locality contract that ties the regional office buckets to boroughs or census areas without inference from city names.
+- Any official public office-directory or service-area artifact that converts the reviewed regional DPA structure into county-equivalent coverage.
 
 ### Useful Official URLs Already Tried
 
-- [Massachusetts DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
-- [Census TIGERweb county subdivision query](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
-- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
-- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
-- [Massachusetts DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [Alaska DPA Offices](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska DPA Services](https://health.alaska.gov/en/services/division-of-public-assistance-dpa-services/)
+- [Alaska DFCS root](https://dfcs.alaska.gov/Pages/default.aspx)
+- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [Alaska DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any reviewed Mass.gov DDS child page or export that preserves a Suffolk-serving town/community list directly.
-- Any reviewed Mass.gov DDS locality or search surface that names a Suffolk community inside an office-serving contract.
-- Any reviewed official cached/exported DDS locality artifact that can be replayed from disk and tied directly to Suffolk County without inference.
+- Any official Alaska machine-readable office coverage artifact that names boroughs or census areas directly.
+- Any official Alaska search, sitemap, API, or export surface on the health or DFCS host that can be replayed raw instead of browser-only and that preserves county-equivalent assignment text.
+- Any reviewed official Alaska leaf that explicitly ties DPA regions or offices to borough/census-area service responsibility rather than just listing office cities.
 
-## Next State Order After Massachusetts
+## Next State Order After Alaska
 
-1. Alaska
-2. Maine
-3. Idaho
-4. New Mexico
-5. Arizona
-6. New Hampshire
+1. Maine
+2. Idaho
+3. New Mexico
+4. Arizona
+5. New Hampshire
