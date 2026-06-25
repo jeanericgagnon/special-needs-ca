@@ -16,7 +16,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Maine: `official_dhhs_office_page_and_same_host_contact_sitemap_surfaces_still_expose_no_county_or_service_area_crosswalk`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_locations_lane_still_lacks_county_capture_or_export`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
-- New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
+- New Mexico: `current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_hca_four_county_remainder_persists`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
@@ -28,41 +28,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Massachusetts
+## Current Focus State: New Mexico
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the only remaining Massachusetts critical blocker. Education no longer blocks the state: the reviewed official DESE `search_export.aspx` attachment preserves structured district rows with `Town`, address, phone, and grade fields, and a bounded exact-basename join against the official Census TIGERweb county subdivision layer covers all 14 Massachusetts counties. The remaining blocker is the live DDS local-routing lane on Mass.gov. The DDS org page, locations index, and interactive regional map are real first-party surfaces, but they still expose no raw county field, no county export, and no machine-readable town-to-office contract that the low-token raw path can preserve directly on disk.
+`district_or_county_education_routing` remains the highest-priority New Mexico blocker. The legacy repo host family `https://education.new-mexico.gov/` is now source-finally dead: exact probes on the root, `/regional`, `/sitemap.xml`, `/robots.txt`, `/special-education/`, and `/districts/` all failed DNS resolution. The current official PED host family still does not yield a reusable local contract in the low-token lane: the packet already had 25-second timeouts on the exact root and Special Education Bureau leaf, and fresh bounded probes on search/API-shaped routes also timed out. The state packet still preserves zero district-owned, county-grade, or regional local education leaves on disk, so New Mexico cannot move without exact local leaf authoring.
 
 ### Exact Evidence Needed
 
-- Any official Mass.gov DDS surface that exposes county names, county-served labels, or a county-keyed export for DDS regional or area offices.
-- Any reviewable browser/cached capture from the live DDS interactive map that preserves town-or-city to office mappings strongly enough to truthfully bridge all 14 counties.
-- Any exact first-party DDS locations child page or API response that makes locality-to-office coverage machine-readable without relying on guessed paths.
+- Any district-owned New Mexico special-education, student-services, exceptional-services, or child-find leaf that can replace the current PED fallback for a county row.
+- Any official regional education cooperative or county-owned education-routing page that preserves local routing coverage for named New Mexico counties or districts.
+- Any current official PED directory, export, or API that returns district-local rows without timing out and can be replayed deterministically from disk.
 
 ### Useful Official URLs Already Tried
 
-- [Massachusetts DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
-- [Census TIGERweb county subdivision query](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
-- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
-- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
-- [Massachusetts DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [Current PED root](https://webnew.ped.state.nm.us/)
+- [Current PED Special Education Bureau](https://webnew.ped.state.nm.us/bureaus/special-education/)
+- [Current PED WordPress search API shape](https://webnew.ped.state.nm.us/wp-json/wp/v2/search?search=district)
+- [Current PED search page shape](https://webnew.ped.state.nm.us/?s=district)
+- [Legacy education root](https://education.new-mexico.gov/)
+- [Legacy education regional route](https://education.new-mexico.gov/regional)
+- [HCA field offices archive root](https://www.hca.nm.gov/lookingforassistance/field_offices_1/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live Mass.gov DDS county field, county export, or locality-to-office payload that can be preserved without guessing hidden endpoints.
-- Any reviewed browser/cached DDS interactive-map capture that truthfully maps Massachusetts towns or cities to area offices and can then be bridged to counties.
-- Any exact DDS child location page that adds county-served labels or a county routing contract.
+- District-owned New Mexico local special-education or student-services leaves by county.
+- Regional education cooperative leaves that explicitly preserve local routing for covered New Mexico districts or counties.
+- Same-host HCA county office followups only for Catron, Harding, Mora, and Union.
 
-## Next State Order After Massachusetts
+## Next State Order After New Mexico
 
-1. New Mexico
-2. South Dakota
-3. Rhode Island
-4. Virginia
-5. West Virginia
-6. North Dakota
-7. Wisconsin
-8. Washington
-9. Tennessee
-10. Vermont
+1. South Dakota
+2. Rhode Island
+3. Virginia
+4. West Virginia
+5. North Dakota
+6. Wisconsin
+7. Washington
+8. Tennessee
+9. Vermont
+10. Wyoming

@@ -2234,8 +2234,8 @@
         "county_local_disability_resources": "blocked_hca_archive_29_of_33_counties_with_four_county_remainder_and_empty_tail"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_3_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail",
+      "packetBatch": "batch353_new_mexico_education_host_finality_v1",
+      "packetPrimaryGapReason": "current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_hca_four_county_remainder_persists",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

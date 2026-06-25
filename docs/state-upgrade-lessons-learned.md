@@ -485,3 +485,6 @@
 
 ### Official Exports Plus Official Geography Crosswalks Can Clear County Routing
 *   **Lesson:** If an official on-page directory lacks county fields, check for an official structured export before freezing the family. Massachusetts DESE still lacked a county filter in the rendered search UI, but the official `search_export.aspx` workbook preserved district `Town` values, and a bounded exact-basename join to the official Census TIGERweb county subdivision layer was enough to truthfully cover all 14 counties without using statewide fallback pages.
+
+### Retire Dead Legacy State Hosts Once The Current Replacement Also Fails Closed
+*   **Lesson:** If the legacy official host family is unresolvable and the current replacement host still times out on exact bounded probes, stop treating either state host as an active discovery lane. New Mexico education now has both a dead `education.new-mexico.gov` host family and a timing-out `webnew.ped.state.nm.us` host family, so the only honest next move is district-owned or regional leaf authoring.

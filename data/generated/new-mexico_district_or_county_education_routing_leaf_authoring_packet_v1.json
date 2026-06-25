@@ -9,11 +9,15 @@
     "districtOwnedLeavesOnDisk": 0,
     "countyCount": 33,
     "pedRootTimedOut25s": true,
-    "pedBureauTimedOut25s": true
+    "pedBureauTimedOut25s": true,
+    "currentPedSearchTimedOut15s": true,
+    "legacyEducationHostUnresolvable": true
   },
   "exhausted_candidates": [
     "https://webnew.ped.state.nm.us/",
-    "https://webnew.ped.state.nm.us/bureaus/special-education/"
+    "https://webnew.ped.state.nm.us/bureaus/special-education/",
+    "https://education.new-mexico.gov/",
+    "https://education.new-mexico.gov/regional"
   ],
   "rejected_queue_contamination": [
     {
@@ -26,12 +30,15 @@
     "regional education or county-owned student-support directories if they preserve local routing"
   ],
   "bounded_live_probe_result": {
-    "attempted_at": "2026-06-23T00:00:00.000Z",
+    "attempted_at": "2026-06-25T00:00:00.000Z",
     "urls": [
       "https://webnew.ped.state.nm.us/",
-      "https://webnew.ped.state.nm.us/bureaus/special-education/"
+      "https://webnew.ped.state.nm.us/bureaus/special-education/",
+      "https://webnew.ped.state.nm.us/wp-json/wp/v2/search?search=district",
+      "https://education.new-mexico.gov/",
+      "https://education.new-mexico.gov/regional"
     ],
-    "outcome": "timed_out_25s_both_exact_urls",
-    "conclusion": "Do not reopen PED root retries until exact district-owned, county-grade, or regional leaves are authored."
+    "outcome": "current_host_timeouts_plus_legacy_host_dns_failures",
+    "conclusion": "Retire both state-host education families as active low-token discovery lanes and move only through district-owned or regional local leaf authoring."
   }
 }
