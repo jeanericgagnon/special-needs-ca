@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 81,
     "placeholderWebsiteRows": 81,
-    "authoredExactLeafCount": 25,
+    "authoredExactLeafCount": 26,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 25
+    "reviewedDistrictOwnedLeafCount": 26
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -177,6 +177,7 @@
     "lyon-ks",
     "marshall-ks",
     "mcpherson-ks",
+    "miami-ks",
     "montgomery-ks",
     "nemaha-ks",
     "reno-ks",
@@ -230,7 +231,6 @@
     "logan-ks",
     "marion-ks",
     "meade-ks",
-    "miami-ks",
     "mitchell-ks",
     "morris-ks",
     "morton-ks",
