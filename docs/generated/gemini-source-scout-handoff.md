@@ -27,36 +27,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only Maine blocker left. The live official DHHS district office lane is stronger than a simple missing-page assumption: `https://www.maine.gov/dhhs/about/contact/offices` preserves real district office names, street addresses, phones, emails, Google Maps shortlinks, and program-specific office handoffs such as Bangor long-term-care questions routing to Machias and Farmington child-support questions routing to Lewiston. But that same reviewed public stack also proves why Maine is still blocked: it exposes zero county-served labels, zero service-area fields, and zero county-to-office assignment metadata. The companion OFI contact/help pages, Offices/Divisions page, Administrative Office Locations page, sitemap surfaces, and live county-count workbooks all stay public, but they still only add office addresses, statewide help routing, or county/town counts without binding those counties or towns to DHHS/OFI office responsibility.
+Idaho still has two critical blockers, but `district_or_county_education_routing` remains the top one because it is the primary gap reason and still blocks county-grade completion even after Jefferson and Oneida were recovered. The remaining district-owned hosts are live and bounded, not unknown: Camas still only exposes a district contact page; Clark exposes a live XML sitemap plus district-owned `Contact Us` and `Title IX` leaves; Fremont exposes a live XML sitemap plus district-owned `Contact Us`, `Title IX-Sexual Harassment`, `Documents`, and `District Forms` lanes; and Shoshone exposes a live WordPress sitemap index plus generic district pages and a `Special-Ed-Records-Distruction` PDF. But across those exact current public surfaces, no district-owned `special-education`, `special-services`, `student-services`, `section-504`, `child-find`, or procedural-safeguards routing leaf materializes.
 
 ### Exact Evidence Needed
 
-- Any current official Maine DHHS or OFI page, export, workbook, API, ArcGIS layer, or service-area table that explicitly maps counties to district offices or office service areas.
-- Any current official Maine county-to-office or county-to-program routing contract that names which district office serves each county.
-- Any public machine-readable office field that binds office IDs, office names, or office regions to county names instead of just listing office addresses or county counts.
+- Any current district-owned leaf on Camas, Clark, Fremont, or Shoshone that explicitly provides local special-education, special-services, student-services, section-504, child-find, or procedural-safeguards routing.
+- Any current district-owned sitemap, forms/document library, or child PDF on those same hosts that materially names a special-education contact, department, director, or parent-rights routing surface.
+- Any official Idaho county-to-district or district-to-county contract that can safely bridge the remaining uncovered counties without relying on generic contact or Title IX pages.
 
 ### Useful Official URLs Already Tried
 
-- [Maine DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
-- [Maine OFI Contact Us](https://www.maine.gov/dhhs/ofi/about-us/contact)
-- [Maine OFI Programs & Services](https://www.maine.gov/dhhs/ofi/programs-services)
-- [Maine DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)
-- [Maine Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
-- [Maine DHHS sitemap](https://www.maine.gov/dhhs/about/sitemap)
+- [Camas County School District #121](https://www.camascountyschools.org/)
+- [Camas Contact Information](https://www.camascountyschools.org/contact-information)
+- [Clark County School District 161](https://www.clarkcountyschools161.org/)
+- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
+- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
+- [Clark XML sitemap](https://www.clarkcountyschools161.org/fs/pages/sitemap)
+- [Fremont County Joint School District #215](https://www.sd215.net/)
+- [Fremont Contact Us](https://www.sd215.net/page/contact-us)
+- [Fremont Title IX-Sexual Harassment](https://www.sd215.net/o/sd215/page/title-ix)
+- [Fremont XML sitemap](https://www.sd215.net/sitemap.xml)
+- [Fremont Documents](https://www.sd215.net/documents)
+- [Fremont District Forms](https://www.sd215.net/page/district-forms)
+- [Shoshone School District](https://shoshonesd.org/)
+- [Shoshone XML sitemap index](https://shoshonesd.org/wp-sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Maine machine-readable office coverage artifact that names counties and district offices in the same record.
-- Any official DHHS/OFI export, workbook, or API that preserves office responsibility by county rather than counts-only county data.
-- Any reviewed official leaf that explicitly ties district offices, OFI services, or office service areas to named counties.
+- Any newly published same-host special-education, student-services, 504, child-find, or safeguards leaf on Camas, Clark, Fremont, or Shoshone.
+- Any newly exposed XML or post-sitemap child URL on those districts containing role-bearing special-education terms instead of generic contact/compliance content.
+- Any district-owned downloadable file that contains local special-education routing and is linked from one of the remaining official district hosts.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
-2. New Mexico
-3. Arizona
-4. New Hampshire
+1. New Mexico
+2. Arizona
+3. New Hampshire
