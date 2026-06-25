@@ -1,0 +1,17 @@
+{
+  "batch": "batch382_rhode_island_official_routing_completion_v1",
+  "state": "rhode-island",
+  "classification_before": "COMPLETE",
+  "classification_after": "COMPLETE",
+  "resolved_families": [
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
+  ],
+  "evidence_sources": [
+    "https://ride.ri.gov/students-families/ri-public-schools/school-districts",
+    "https://ride.ri.gov/students-families/ri-public-schools/school-directory",
+    "https://bhddh.ri.gov/developmental-disabilities/services-adults/licensed-provider-lists",
+    "https://bhddh.ri.gov/sites/g/files/xkgbur411/files/2025-06/Agency%20Provider%20List%205.5.25.pdf",
+    "https://bhddh.ri.gov/sites/g/files/xkgbur411/files/2025-04/BHDDH-DDD-Agency-List%2004.28.2025.pdf"
+  ]
+}
