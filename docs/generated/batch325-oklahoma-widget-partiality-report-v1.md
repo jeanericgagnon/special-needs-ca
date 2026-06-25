@@ -10,4 +10,5 @@
 - The live `map2` widget points at a same-host county config page.
 - The public widget feed and linked `mapconfig2` page model both publish only Adair and Alfalfa county entities.
 - The Alfalfa row preserves an exact county-local office contract; the Adair row does not.
+- A bounded official sitemap and sibling-leaf review surfaced only wrong-role `contact-us/*` pages, while the host search JSON stayed blocked and public search-results routes 404ed.
 - The broader KML remains stronger than the widget, and together with the salvaged Alfalfa row it still only yields 46 benefit-capable counties after TANF-only access points are excluded.

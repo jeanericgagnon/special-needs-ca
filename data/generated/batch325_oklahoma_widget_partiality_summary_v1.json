@@ -1,13 +1,48 @@
 {
   "batch": "batch325_oklahoma_widget_partiality_v1",
-  "generated_at": "2026-06-25T05:58:46.563Z",
+  "generated_at": "2026-06-25T07:33:56.206Z",
   "state": "oklahoma",
   "classification": "BLOCKED",
   "index_safe": false,
   "widget_leaf_status": 200,
   "widget_leaf_final_url": "https://oklahoma.gov/okdhs/contact-us.html",
   "map2_model_status": 200,
+  "map2_page_status": 200,
   "widget_feed_status": 200,
+  "sitemap_status": 200,
+  "blocked_search_status": 403,
+  "public_search_status": 404,
+  "sibling_contact_leaf_count": 7,
+  "sibling_contact_leaf_statuses": [
+    {
+      "url": "https://oklahoma.gov/okdhs/contact-us/asdhome.html",
+      "status": 200
+    },
+    {
+      "url": "https://oklahoma.gov/okdhs/contact-us/info.html",
+      "status": 200
+    },
+    {
+      "url": "https://oklahoma.gov/okdhs/contact-us/inrhome.html",
+      "status": 200
+    },
+    {
+      "url": "https://oklahoma.gov/okdhs/contact-us/workforce.html",
+      "status": 200
+    },
+    {
+      "url": "https://oklahoma.gov/okdhs/contact-us/dhshotlines.html",
+      "status": 200
+    },
+    {
+      "url": "https://oklahoma.gov/okdhs/contact-us/faq.html",
+      "status": 200
+    },
+    {
+      "url": "https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.html",
+      "status": 200
+    }
+  ],
   "widget_feed_county_count": 2,
   "widget_feed_counties": [
     "Adair",

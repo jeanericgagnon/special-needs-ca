@@ -41,23 +41,32 @@ assert.equal(countyGap.family_status, 'blocked_okdhs_public_county_widget_partia
 assert.match(countyGap.status_reason, /only two county entries/);
 assert.match(countyGap.status_reason, /Adair and Alfalfa/);
 assert.match(countyGap.status_reason, /Alfalfa row itself preserves a real county-local office contract/);
+assert.match(countyGap.status_reason, /data-county-map-apiurl/);
+assert.match(countyGap.status_reason, /host search JSON is 403/);
+assert.match(countyGap.status_reason, /wrong-role pages like hotlines, FAQ, workforce, ombudsman complaints, and config shells/);
 assert.match(countyGap.status_reason, /remaining 31 counties/);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyFailure.failure_code, 'okdhs_public_county_widget_salvages_alfalfa_but_adair_still_lacks_local_contract_and_remaining_31_stay_unclosed');
 assert.match(countyFailure.evidence, /Alfalfa row preserves an exact local office contract/);
 assert.match(countyFailure.evidence, /Adair row remains too weak/);
+assert.match(countyFailure.evidence, /data-county-map-apiurl/);
+assert.match(countyFailure.evidence, /blocked search endpoint/);
+assert.match(countyFailure.evidence, /public 404 search-results routes/);
 assert.match(countyFailure.evidence, /remaining 31 counties/);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyVerified.sample_count, 8);
+assert.equal(countyVerified.sample_count, 10);
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma Human Services public widget feed'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma Human Services mapconfig2 model'));
+assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma map2 widget HTML api root'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma widget Alfalfa county row'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma widget Adair service note row'));
+assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma official sitemap and search exhaustion'));
 
 const countyNext = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.match(countyNext.evidence, /salvage Alfalfa/);
+assert.match(countyNext.evidence, /wrong-role pages/);
 
 const queueRow = queueRows.find((row) => row.state === 'oklahoma');
 assert.equal(queueRow.primary_gap_reason, 'live_okdhs_public_county_widget_salvages_alfalfa_but_still_only_publishes_two_rows_while_combined_official_county_local_coverage_stops_at_46_and_leaves_31');
@@ -68,13 +77,17 @@ assert.equal(auditRow.packetPrimaryGapReason, 'live_okdhs_public_county_widget_s
 assert.equal(auditRow.familyStatuses.county_local_disability_resources, 'blocked_okdhs_public_county_widget_partial_and_kml_service_limited');
 
 assert.match(stateReport, /public county widget only publishes Adair and Alfalfa/);
+assert.match(stateReport, /data-county-map-apiurl/);
+assert.match(stateReport, /OKDHS search JSON is blocked/);
 assert.match(stateReport, /remaining 31 counties/);
 assert.match(allStateReport, /only the Alfalfa row is independently sufficient/);
 assert.match(handoff, /Current Focus State: Oklahoma/);
 assert.match(handoff, /mapconfig2 model/);
 assert.match(handoff, /Adair and Alfalfa/);
+assert.match(handoff, /host search JSON is blocked/);
 assert.match(lessons, /Public County Widgets Can Be Much Narrower Than The Backing Map Feed/);
 assert.match(lessons, /Partial County Widgets Can Still Add One Truth-Safe County/);
+assert.match(lessons, /One Widget API Plus Wrong-Role Sibling Leaves Can Be Enough To Call A Host Source-Final/);
 
 assert.equal(batchSummary.widget_leaf_status, 200);
 assert.equal(batchSummary.widget_leaf_final_url, 'https://oklahoma.gov/okdhs/contact-us.html');
@@ -82,6 +95,11 @@ assert.equal(batchSummary.widget_feed_county_count, 2);
 assert.deepEqual(batchSummary.widget_feed_counties, ['Adair', 'Alfalfa']);
 assert.equal(batchSummary.widget_config_county_count, 2);
 assert.deepEqual(batchSummary.widget_config_counties, ['Adair', 'Alfalfa']);
+assert.equal(batchSummary.map2_page_status, 200);
+assert.equal(batchSummary.sitemap_status, 200);
+assert.equal(batchSummary.blocked_search_status, 403);
+assert.equal(batchSummary.public_search_status, 404);
+assert.equal(batchSummary.sibling_contact_leaf_count, 7);
 assert.deepEqual(batchSummary.salvaged_widget_counties, ['Alfalfa']);
 assert.deepEqual(batchSummary.service_note_only_counties, ['Adair']);
 assert.equal(batchSummary.benefit_capable_county_coverage_count, 46);
