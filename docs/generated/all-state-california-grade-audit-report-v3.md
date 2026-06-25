@@ -35,3 +35,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 
 - Alaska county-local routing is still blocked: the official DPA offices page is browser-readable again and proves regional offices plus contacts, but it still has no borough/census-area assignment contract, while the raw low-token lane still gets health-host Cloudflare 403 shells and DFCS root/services/site-map/contacts/search still add no county-equivalent mapping.
+- Maine remains blocked after a fuller DHHS navigation-stack finality check: District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, sitemap, and sampled `Show Map` links still expose office addresses and labels but no county-to-office or service-area contract.
