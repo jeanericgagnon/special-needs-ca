@@ -2,26 +2,20 @@
   "state": "wisconsin",
   "state_code": "WI",
   "state_name": "Wisconsin",
-  "batch": "batch_6_procedure_hardening_states_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "batch": "batch379_wisconsin_dpi_directory_completion_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 72,
-  "completeness_pct": 67,
-  "strong_critical_families": 8,
-  "weak_critical_families": 3,
-  "missing_critical_families": 1,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
-  "recommended_batch": "batch_3_procedure_hardening",
-  "critical_gap_families": [
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
-  ],
-  "major_gap_families": [
-    "parent_training_information_center",
-    "legal_aid"
-  ],
+  "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+  "recommended_batch": "complete_maintain",
+  "critical_gap_families": [],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -31,44 +25,17 @@
     "district_or_county_education_routing",
     "vocational_rehabilitation_pre_ets",
     "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid",
     "able_program",
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Wisconsin still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Wisconsin county/local disability resources still depend on generic or structural office evidence instead of reviewed county-grade local-office proof.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
-      "family": "parent_training_information_center",
-      "severity": "major",
-      "failure_code": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
-      "evidence": "WI FACETS is reviewed and statewide, but the saved first-party artifact proves special-education help scope rather than explicit PTI designation.",
-      "next_action": "author_verified_state_manifest"
-    },
-    {
-      "family": "legal_aid",
-      "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Wisconsin still lacks any reviewed first-party or authoritative statewide legal-aid artifact on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
-    }
-  ]
+  "final_blockers": null
 }
