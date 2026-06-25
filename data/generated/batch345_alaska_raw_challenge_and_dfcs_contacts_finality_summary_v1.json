@@ -1,0 +1,18 @@
+{
+  "batch": "batch345_alaska_raw_challenge_and_dfcs_contacts_finality_v1",
+  "generated_at": "2026-06-25T11:25:36.755Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "dpa_landing_raw_status": 403,
+  "dpa_landing_raw_title": "Just a moment...",
+  "dpa_offices_raw_status": 403,
+  "dpa_offices_raw_title": "Just a moment...",
+  "dpa_dashboard_raw_status": 403,
+  "medicaid_snapshot_raw_status": 403,
+  "dfcs_services_status": 200,
+  "dfcs_site_map_status": 200,
+  "dfcs_contacts_status": 200,
+  "browser_review_evidence_retained": true
+}

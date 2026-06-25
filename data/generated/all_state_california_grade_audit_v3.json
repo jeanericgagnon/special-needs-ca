@@ -147,11 +147,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_reviewed_live_dpa_offices_page_lists_regional_offices_but_no_borough_or_census_area_assignments_and_dfcs_surfaces_add_no_local_mapping_contract"
+        "county_local_disability_resources": "blocked_raw_health_host_challenge_plus_browser_reviewed_region_only_offices_page_and_dfcs_contacts_without_county_equivalent_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch342_alaska_live_dpa_offices_finality_v1",
-      "packetPrimaryGapReason": "reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract",
+      "packetBatch": "batch345_alaska_raw_challenge_and_dfcs_contacts_finality_v1",
+      "packetPrimaryGapReason": "raw_health_host_challenge_persists_while_browser_reviewed_dpa_offices_page_still_lacks_borough_or_census_area_assignment_and_dfcs_contacts_add_no_local_contract",
       "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
     },
     {

@@ -28,3 +28,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - Nebraska remains COMPLETE/index-safe because the official DHHS N-FOCUS TANF `Employment First (EF) Offices` lane exposes a public county-office region contract across all 93 counties, with explicit county-specific office assignments and `Counties Served` fields on the official GIS owner family.
 - Maine remains blocked on a stronger county-local finality check: the DHHS district office page, contact root, offices/divisions hub, administrative-offices page, and DHHS sitemap all stay public yet still expose no county names, service-area labels, or alternate county-grade office export.
+
+
+
+- Alaska county-local routing is still blocked: the raw low-token lane still gets Cloudflare `Just a moment...` 403 shells across the health-host DPA family, the earlier browser-reviewed DPA offices page still only groups regional offices without borough or census-area assignments, and DFCS Services, Site Map, and Department Contacts still add no county-equivalent public-assistance contract.
