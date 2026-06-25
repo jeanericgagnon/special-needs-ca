@@ -1487,11 +1487,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_dds_browser_lane_without_raw_county_contract"
+        "county_local_disability_resources": "blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved"
       },
       "packetGenerated": true,
       "packetBatch": "batch352_massachusetts_dese_export_county_capture_v1",
-      "packetPrimaryGapReason": "official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains",
+      "packetPrimaryGapReason": "official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved",
       "packetRecommendedBatch": "hold_for_dds_county_contract_or_reviewed_capture"
     },
     {

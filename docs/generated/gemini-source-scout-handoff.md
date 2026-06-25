@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves`
 - Idaho: `remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_wrong_role_or_generic_leaves_without_special_education_routing`
 - Maine: `official_dhhs_office_pages_and_public_county_workbooks_exist_but_still_expose_no_county_to_office_or_service_area_contract`
-- Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains`
+- Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `official_webed_school_directory_and_rec_workbooks_live_but_no_county_crosswalk_or_county_labeled_local_education_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
@@ -28,45 +28,36 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: New Mexico
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest-priority New Mexico blocker. The older blocker wording was too pessimistic: there is now a live official PED-managed public school-directory lane at `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx`, and the public downloads `NM Schools.xlsx`, `Superintendents.xlsx`, and `REC Directors.xlsx` all return HTTP 200 on the same host. Those official workbooks prove district names/codes, superintendent contacts, and REC director contacts. But they still do not preserve a county field or county-service-area labels, so they cannot yet clear county-grade education routing across all 33 counties. The legacy `education.new-mexico.gov` host family remains dead, and the current `webnew.ped.state.nm.us/bureaus/special-education/` page is still statewide-only rather than a county-grade local-routing contract.
+`county_local_disability_resources` is the highest-priority Massachusetts blocker. Education is already cleared by the live official DESE district export plus the official Census TIGERweb county-subdivision crosswalk, and the live Massachusetts DDS locations lane already yields reviewed locality evidence for 13 of 14 counties. The remaining blocker is narrow: Suffolk County still lacks a preserved official DDS town/community locality contract. The same live DDS lane preserves 21 reviewed `DDS ... Area Office` cards with explicit `This area office serves the following towns and communities:` text, but bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans still do not expose a Suffolk-serving locality contract, and the raw fetch lane for the live locations index and interactive map continues to return HTTP 403.
 
 ### Exact Evidence Needed
 
-- Any official county-to-district or county-to-REC crosswalk from the live PED-managed directory stack.
-- Any county-labeled local-routing contract on the live `webed.ped.state.nm.us` directory host, its downloadable workbooks, or a sibling official REC page.
-- Any reviewed district-owned or regional local-routing page that can be tied back to counties without inventing mappings.
+- Any official Massachusetts DDS Suffolk-serving town/community list on the live locations lane, interactive regional map, or another current Mass.gov DDS locality page.
+- Any official county field, county export, or preserved browser/cached Suffolk locality contract that truthfully bridges Suffolk County to a named DDS area office.
+- Any reviewed first-party Mass.gov DDS page that explicitly names Boston, Chelsea, Revere, Winthrop, or Charlestown as served communities for one DDS area office.
 
 ### Useful Official URLs Already Tried
 
-- [PED public school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
-- [PED NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
-- [PED Superintendents list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/Superintendents/AllItems.aspx)
-- [PED REC Directors page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
-- [PED NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
-- [PED Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
-- [PED REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
-- [Legacy education host root](https://education.new-mexico.gov/)
-- [Current PED Special Education Bureau](https://webnew.ped.state.nm.us/bureaus/special-education/)
+- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [Massachusetts interactive DDS regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [Stale DDS area-offices child path](https://www.mass.gov/info-details/dds-area-offices)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official county field hiding in the PED directory stack, workbook metadata, or a sibling public export.
-- Any official REC coverage page that explicitly labels counties served by REC number or REC director.
-- Any official district-locator or county-labeled routing page on a district-owned or regional official host that can satisfy county-grade local education routing without generic statewide fallback.
+- Any reviewed Suffolk-serving DDS locality contract on the live Mass.gov lane.
+- Any official Suffolk-specific DDS office leaf or locality export that names the served towns/communities directly.
+- Any first-party Mass.gov DDS artifact that turns the remaining Suffolk ambiguity between Charlestown and Chelsea into a county-grade office assignment without inventing a mapping.
 
 ## Next State Order After New Mexico
 
-1. Massachusetts
-2. South Dakota
-3. Rhode Island
-4. Virginia
-5. West Virginia
-6. North Dakota
-7. Wisconsin
-8. Washington
-9. Tennessee
-10. Vermont
+1. Alaska
+2. Maine
+3. Idaho
+4. New Mexico
+5. Arizona
+6. New Hampshire

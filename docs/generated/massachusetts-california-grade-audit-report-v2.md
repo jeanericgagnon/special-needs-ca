@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 14
-- primary_gap_reason: official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains
+- primary_gap_reason: official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed Massachusetts Legal Assistance Corporation first-party homepage preserves a statewide low-income legal-information, advice, and representation mission.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_live_dds_browser_lane_without_raw_county_contract (Massachusetts county-local routing remains blocked. The live Mass.gov DDS org page, locations index, and interactive regional map are real first-party surfaces, but the low-token raw lane still does not preserve any county field, county export, or machine-readable town-to-office contract that can be replayed directly from disk. Until an official county contract or a reviewed browser/cached locality capture is preserved, county-local rows must remain blocked.)
+- county_local_disability_resources: blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved (Massachusetts county-local routing remains blocked, but the remaining gap is now precise. The live Mass.gov DDS locations lane preserves 21 reviewed area-office cards with explicit `This area office serves the following towns and communities:` text, and the saved town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. Suffolk County is still unresolved because bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane do not preserve a Suffolk-serving town/community contract, and the raw fetch lane still cannot replay a county export.)
 
 ## Failure ledger
 
-- county_local_disability_resources: live_dds_browser_lane_exists_but_exact_raw_pages_403_and_no_county_crosswalk_exists :: Reviewed 2026-06-23 bounded browser checks on the live Massachusetts DDS first-party lane and one final bounded exact raw check on https://www.mass.gov/orgs/department-of-developmental-services/locations plus https://www.mass.gov/info-details/interactive-dds-regional-map. The org page, locations index, and interactive map had already been proven browser-readable, and the reviewed evidence already showed named area offices plus a town-or-city lookup purpose but no county export or machine-readable county bridge. The final exact raw fetch recheck now tightens the low-token lane boundary further: both the live locations index and the interactive map returned HTTP 403 in the raw fetch lane, so low-token scraping still cannot recover a reusable county crosswalk directly from those pages. Massachusetts therefore still lacks county-grade local routing proof in the low-token lane and should stay blocked unless a county-grade export, county field, or reviewed browser/cached locality capture appears.
+- county_local_disability_resources: reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_official_locality_contract_missing :: Reviewed 2026-06-25 the live Massachusetts DDS first-party locations lane plus the saved bounded locality-capture audit. The public locations pages preserve 21 distinct `DDS ... Area Office` cards with explicit `This area office serves the following towns and communities:` text, and the reviewed town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. The remaining gap is Suffolk County: bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, while the raw fetch lane for the live locations index and interactive map continues to return HTTP 403 and therefore cannot supply a replayable county export. Massachusetts should stay blocked until an official Suffolk-serving DDS locality contract, county field, or county-grade export is preserved.
 
 ## Verified source samples
 
@@ -40,15 +40,15 @@
 - legal_aid: verified_state_grade; samples=1; first=https://mlac.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_live_dds_browser_lane_without_raw_county_contract; samples=4; first=https://www.mass.gov/orgs/department-of-developmental-services
+- county_local_disability_resources: blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved; samples=4; first=https://www.mass.gov/orgs/department-of-developmental-services
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_massachusetts_dds_until_county_crosswalk_or_reviewed_browser_capture_exists
+- [critical] county_local_disability_resources: hold_massachusetts_dds_until_suffolk_locality_contract_exists
 
 ## Completion decision
 
 - Massachusetts remains BLOCKED and index_safe=false.
 - Education is no longer a blocker: the official DESE district export plus the official Census TIGERweb county subdivision layer now preserves county-grade district routing across all 14 Massachusetts counties.
-- County-local remains blocked because the live DDS locations and interactive-map lane still preserves no raw county field, county export, or machine-readable locality contract in the low-token path.
+- County-local remains blocked because Suffolk County still lacks a preserved official DDS locality contract even though the reviewed DDS area-office locality capture now clears the other 13 Massachusetts counties.
 - Future Massachusetts work should focus only on the DDS county-local lane unless a new official county-grade education contract supersedes the export-plus-crosswalk method.
