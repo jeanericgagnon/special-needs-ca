@@ -25,38 +25,39 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: New Mexico
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is still the highest-priority New Mexico blocker, but the official failure mode is now more exhaustive than the earlier packet. The live PED-managed SharePoint host preserves the public `2017 NM Schools` list with REST-backed rows, the public `RECHome.aspx` grouping page, and six public workbook exports: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`. That broader official stack proves the state has a public directory lane, but every reviewed list and workbook still omits county or REC service-area fields. `NM Schools.xlsx` and the REST list preserve district/location columns only. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.
+Arizona remains BLOCKED on two critical families, but the single highest-priority blocker is still `district_or_county_education_routing`. A bounded live recheck on 2026-06-25 exhausted the final three unresolved public district-owned domains without finding any role-bearing local special-education, student-services, 504, or Child Find leaf. `https://www.ccasdaz.org/` stayed live and its `page-sitemap.xml` and `post-sitemap.xml` stayed public, but they only replayed generic pages and WordPress JSON false positives. `https://www.mohavelearning.org/` stayed live, but the homepage preserved no role terms, `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404, and its public search-results surface still exposed no role-bearing content. `https://www.yavapaicountyhighschool.com/` stayed live, but its sitemap only exposed generic pages and handbook/document leaves, while `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404. Arizona is therefore source-final for the low-token education lane unless one of those district-owned hosts publishes a real local role leaf.
 
 ### Exact Evidence Needed
 
-- Any official PED-managed county-to-district crosswalk, county column, county selector, or county-keyed export on the live WebED host.
-- Any official PED-managed REC service-area artifact that explicitly labels counties served by each REC.
-- Any official district-owned or REC-owned local special-education routing leaf that proves county-grade coverage without inference.
+- Any district-owned `special education`, `student services`, `504`, `Child Find`, or equivalent local routing leaf on the final three reviewed public domains:
+  - `ccasdaz.org`
+  - `mohavelearning.org`
+  - `yavapaicountyhighschool.com`
+- Any official Arizona county-local office artifact that explicitly maps counties to AHCCCS ALTCS or DES office assignments, rather than just showing statewide contacts or unassigned office cards.
+- Any new official HTML or parseable PDF artifact that turns the current Arizona county-local fallback into a real county-to-office contract.
 
 ### Useful Official URLs Already Tried
 
-- [PED SharePoint school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
-- [2017 NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
-- [NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
-- [Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
-- [REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
-- [Elementary School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx)
-- [Middle School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx)
-- [High School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx)
-- [REC home page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
-- [Special Education Bureau page](https://webnew.ped.state.nm.us/bureaus/special-education/)
+- [Coconino County Accommodation School District](https://www.ccasdaz.org/)
+- [CCASD page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [CCASD post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
+- [Mohave Accelerated Schools](https://www.mohavelearning.org/)
+- [Yavapai Accommodation School District](https://www.yavapaicountyhighschool.com/)
+- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
+- [AHCCCS ALTCS office cards](https://www.azahcccs.gov/members/ALTCSlocations.html)
+- [AHCCCS contacts](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
+- [ALTCS member resources](https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live WebED list, workbook, or site page with an explicit county column or county-keyed filter.
-- Any official REC service-area contract with county labels on the PED-managed host or REC-owned official hosts.
-- Any official district-owned local special-education or student-services leaf that can clear counties without relying on statewide PED exports.
+- Any newly published district-owned local special-education, student-services, or 504 leaf on the three exhausted Arizona education hosts.
+- Any official Arizona county-to-office assignment artifact on AHCCCS or DES that binds counties to named offices instead of just listing statewide contacts or office cards.
+- Any reviewed public replacement for the DES county-local lane if the current Cloudflare-blocked office-locator family later exposes a public county contract.
 
-## Next State Order After New Mexico
+## Next State Order After Arizona
 
-1. Arizona
-2. New Hampshire
+1. New Hampshire

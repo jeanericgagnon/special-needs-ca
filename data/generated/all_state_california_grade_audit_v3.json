@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T16:54:27.018Z",
+  "generatedAt": "2026-06-25T17:27:08.836Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 36,
@@ -217,7 +217,7 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_current_altcs_html_and_ahcccs_pdf_bundle_source_final_without_county_contract"
+        "county_local_disability_resources": "blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch351_arizona_education_surface_recheck_v1",
@@ -2941,11 +2941,11 @@
       "classification": "COMPLETE",
       "indexSafe": true,
       "incorrectlyIndexSafe": false,
-      "legacyStatusLabel": "READY_FOR_ALLOWLIST",
-      "legacyGateScore": 100,
+      "legacyStatusLabel": "KEEP_GATED (Skeleton)",
+      "legacyGateScore": 0,
       "legacyRawDepthScore": 80.3,
       "legacyManualReviewRate": 19.71,
-      "legacyAllowlistedCountyCount": 95,
+      "legacyAllowlistedCountyCount": 0,
       "countyCount": 95,
       "strongCriticalFamilies": 12,
       "weakCriticalFamilies": 0,
@@ -3001,7 +3001,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "packetPrimaryGapReason": "all_critical_families_independently_reaudited_with_live_first_party_or_official_evidence",
       "packetRecommendedBatch": "complete_maintain"
     },
     {
@@ -3195,9 +3195,18 @@
       },
       "sourcePackV2": null,
       "familyStatuses": {
+        "medicaid_state_health_coverage": "verified_state_grade",
+        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
+        "developmental_disability_idd_authority": "verified_state_grade",
+        "early_intervention_part_c": "verified_state_grade",
+        "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "verified_state_grade",
+        "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "verified_state_grade",
+        "able_program": "verified_state_grade",
+        "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_official_ahs_district_codes_without_public_office_crosswalk"
       },
       "packetGenerated": true,
@@ -3255,6 +3264,21 @@
         "verified_nonprofit_count": 1157
       },
       "sourcePackV2": null,
+      "familyStatuses": {
+        "medicaid_state_health_coverage": "verified_state_grade",
+        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
+        "developmental_disability_idd_authority": "verified_state_grade",
+        "early_intervention_part_c": "verified_state_grade",
+        "special_education_idea_part_b": "verified_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
+        "vocational_rehabilitation_pre_ets": "verified_state_grade",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "verified_state_grade",
+        "able_program": "verified_state_grade",
+        "ssi_ssa_federal_reference": "verified_state_grade",
+        "county_local_disability_resources": "verified_state_grade"
+      },
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -3310,6 +3334,21 @@
         "verified_nonprofit_count": 202
       },
       "sourcePackV2": null,
+      "familyStatuses": {
+        "medicaid_state_health_coverage": "verified_state_grade",
+        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
+        "developmental_disability_idd_authority": "verified_state_grade",
+        "early_intervention_part_c": "verified_state_grade",
+        "special_education_idea_part_b": "verified_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
+        "vocational_rehabilitation_pre_ets": "verified_state_grade",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "verified_state_grade",
+        "able_program": "verified_state_grade",
+        "ssi_ssa_federal_reference": "verified_state_grade",
+        "county_local_disability_resources": "blocked_official_local_office_locator_without_county_contract"
+      },
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "official_dshs_local_offices_are_public_but_reviewed_pages_do_not_preserve_a_county_to_office_or_service_area_contract",
@@ -3365,6 +3404,21 @@
         "verified_nonprofit_count": 332
       },
       "sourcePackV2": null,
+      "familyStatuses": {
+        "medicaid_state_health_coverage": "verified_state_grade",
+        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
+        "developmental_disability_idd_authority": "verified_state_grade",
+        "early_intervention_part_c": "verified_state_grade",
+        "special_education_idea_part_b": "verified_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
+        "vocational_rehabilitation_pre_ets": "verified_state_grade",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "verified_state_grade",
+        "able_program": "verified_state_grade",
+        "ssi_ssa_federal_reference": "verified_state_grade",
+        "county_local_disability_resources": "verified_state_grade"
+      },
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
