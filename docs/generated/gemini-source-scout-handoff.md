@@ -20,35 +20,52 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 - Wyoming: `wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract`
-## Current Focus State: Idaho
+
+## Current Focus State: New Hampshire
 
 ### Blocker Reason
 
-Idaho remains BLOCKED on two explicit local families. `district_or_county_education_routing` is blocked because the remaining Camas and Clark district-owned public leaves are still the wrong role: contact pages, a board-roster Google Doc, Title IX, and a parent-notification-of-general-education lane, but no special-education, student-services, 504, Child Find, or procedural-safeguards routing leaf with local contact proof. `county_local_disability_resources` is blocked because the live Idaho DHW office stack supports 17 clean exact office replacements plus an explicit Canyon split, but the public host still exposes no truthful county-to-office contract for the remaining 27 counties.
+`medicaid_state_health_coverage` is still the highest-priority New Hampshire blocker because the same official host-family failure still blocks Medicaid, waiver, DD, early-intervention, and county-local routing together. Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved replacement roots still fail DNS resolution. The direct DHHS roots and exact `/dhhs` successor roots still return the same short `Access Denied` shell with HTTP 403. The exact DOE roots, district-profile leaves, alternate `my.doe.nh.gov/ehb/` host, and the obvious `nh.gov` education successors still return that same shell too, so statewide Part B can no longer stay verified off that blocked host family either. VR remains separately blocked because the NHES roots, the BVR disabilities path, and the likely `nh.gov` successors still return the same 403 shell or do not resolve. New Hampshire therefore stays BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any district-owned Camas or Clark special-education, student-services, 504, Child Find, or procedural-safeguards leaf with local routing contact.
-- Any official Idaho county-to-district mapping contract that can clear the remaining local education gap without inference.
-- Any official Idaho DHW county-to-office assignment contract for the remaining blocked counties.
+- Any reviewed public official New Hampshire DHHS host that actually renders Medicaid, DD, waiver, early-intervention, or district-office content instead of the Access Denied shell.
+- Any public official district-office or county-export surface on the DHHS family that provides real county or district-office routing.
+- Any reviewed public official New Hampshire statewide special-education leaf or district-profile surface that returns content instead of the Access Denied shell.
+- Any reviewed public official New Hampshire VR or BVR surface that loads publicly instead of the same blocked shell.
 
 ### Useful Official URLs Already Tried
 
-- [Camas County Schools root](https://www.camascountyschools.org/)
-- [Camas County Schools contact page](https://www.camascountyschools.org/contact-information)
-- [Clark County School District root](https://www.clarkcountyschools161.org/)
-- [Clark County School District contact page](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark County School District Title IX page](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Clark County parent notification of general education instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)
-- [Idaho DHW office root](https://healthandwelfare.idaho.gov/offices)
-- [Idaho DHW Caldwell office leaf](https://healthandwelfare.idaho.gov/dhw/caldwell-office)
+- [DHHS root](https://www.dhhs.nh.gov/)
+- [DHHS root without www](https://dhhs.nh.gov/)
+- [DHHS robots.txt](https://www.dhhs.nh.gov/robots.txt)
+- [DHHS sitemap.xml](https://www.dhhs.nh.gov/sitemap.xml)
+- [saved replacement root](https://dhhs.new-hampshire.gov/)
+- [saved DD replacement root](https://dhhs.new-hampshire.gov/dd)
+- [saved waiver replacement root](https://dhhs.new-hampshire.gov/dd/waivers)
+- [saved early-intervention replacement root](https://dhhs.new-hampshire.gov/earlystart)
+- [nh.gov DHHS successor root](https://www.nh.gov/dhhs/)
+- [nh.gov DHHS robots.txt](https://www.nh.gov/dhhs/robots.txt)
+- [nh.gov DHHS sitemap.xml](https://www.nh.gov/dhhs/sitemap.xml)
+- [Education root](https://www.education.nh.gov/)
+- [Education root without www](https://education.nh.gov/)
+- [School and District Profiles](https://www.education.nh.gov/school-and-district-profiles)
+- [Find School or District](https://www.education.nh.gov/find-school-or-district)
+- [DOE alternate host](https://my.doe.nh.gov/ehb/)
+- [nh.gov Education successor](https://www.nh.gov/education/)
+- [nh.gov Education DOE successor](https://www.nh.gov/education/doe/)
+- [NHES root](https://www.nhes.nh.gov/)
+- [NHES root without www](https://nhes.nh.gov/)
+- [NHES successor root](https://www.nh.gov/nhes/)
+- [nh.gov employment successor](https://www.nh.gov/employment/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly published Camas or Clark role-bearing special-education/student-services leaf.
-- Any official Idaho county-to-district crosswalk or district-local routing contract.
-- Any official Idaho county-to-office disability-routing contract on the DHW host.
+- Any newly public official NH DHHS successor host or export that resolves without the Access Denied shell.
+- Any official New Hampshire special-education or district-profile export that becomes publicly reviewable on the current host family.
+- Any official New Hampshire VR or BVR surface that becomes publicly reviewable on the current host family.
 
-## Next State Order After Idaho
+## Next State Order After New Hampshire
 
-1. New Hampshire
+1. None remaining in assigned sequence
+

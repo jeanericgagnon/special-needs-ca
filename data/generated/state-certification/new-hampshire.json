@@ -1,0 +1,281 @@
+{
+  "state": "new-hampshire",
+  "candidateBranch": null,
+  "pass": false,
+  "summary": {
+    "state": "new-hampshire",
+    "state_code": "NH",
+    "state_name": "New Hampshire",
+    "batch": "batch391_new_hampshire_special_ed_downgrade_v1",
+    "classification": "BLOCKED",
+    "index_safe": false,
+    "incorrectly_index_safe": false,
+    "county_count": 10,
+    "completeness_pct": 58,
+    "strong_critical_families": 7,
+    "weak_critical_families": 3,
+    "missing_critical_families": 2,
+    "total_critical_families": 12,
+    "primary_gap_reason": "official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead",
+    "recommended_batch": "hold_for_public_official_nh_host_recovery_or_export",
+    "critical_gap_families": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "district_or_county_education_routing",
+      "county_local_disability_resources"
+    ],
+    "major_gap_families": [
+      "vocational_rehabilitation_pre_ets",
+      "protection_and_advocacy",
+      "legal_aid"
+    ],
+    "verified_source_families_with_samples": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "district_or_county_education_routing",
+      "vocational_rehabilitation_pre_ets",
+      "parent_training_information_center",
+      "able_program",
+      "ssi_ssa_federal_reference",
+      "county_local_disability_resources"
+    ],
+    "complete_ready": false,
+    "texas_v10_rule_basis": [
+      "Preserve noindex until all critical families are verified",
+      "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+      "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+    ],
+    "final_blockers": [
+      {
+        "family": "district_or_county_education_routing",
+        "severity": "critical",
+        "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+        "evidence": "New Hampshire still routes district or county education through generic statewide Department of Education pages rather than county- or district-owned leaves.",
+        "next_action": "author_county_or_district_exact_targets"
+      },
+      {
+        "family": "vocational_rehabilitation_pre_ets",
+        "severity": "major",
+        "failure_code": "legacy_or_inventory_only_evidence",
+        "evidence": "New Hampshire still lacks reviewed first-party VR or Pre-ETS artifact evidence on disk and currently depends on inventory-only program hints.",
+        "next_action": "author_verified_state_manifest"
+      },
+      {
+        "family": "protection_and_advocacy",
+        "severity": "major",
+        "failure_code": "missing_required_source_family",
+        "evidence": "New Hampshire still lacks reviewed first-party or authoritative statewide protection-and-advocacy evidence on disk.",
+        "next_action": "author_or_verify_statewide_source_family"
+      },
+      {
+        "family": "legal_aid",
+        "severity": "major",
+        "failure_code": "missing_required_source_family",
+        "evidence": "New Hampshire still lacks reviewed first-party or authoritative statewide legal-aid evidence on disk.",
+        "next_action": "author_or_verify_statewide_source_family"
+      },
+      {
+        "family": "county_local_disability_resources",
+        "severity": "critical",
+        "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+        "evidence": "New Hampshire county/local disability resources still depend on structural dataset-derived rows instead of reviewed county-owned local routing evidence.",
+        "next_action": "author_county_or_district_exact_targets"
+      }
+    ],
+    "familyStatuses": {
+      "medicaid_state_health_coverage": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+      "medicaid_waiver_hcbs_disability_services": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+      "developmental_disability_idd_authority": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+      "early_intervention_part_c": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+      "district_or_county_education_routing": "blocked_official_education_hosts_and_nh_gov_successors_forbidden",
+      "vocational_rehabilitation_pre_ets": "blocked_vr_hosts_unresolvable_or_forbidden_with_no_nh_gov_successor",
+      "county_local_disability_resources": "blocked_official_dhhs_hosts_and_nh_gov_successors_forbidden",
+      "special_education_idea_part_b": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden"
+    }
+  },
+  "gapRows": [
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "medicaid_state_health_coverage",
+      "family_label": "Medicaid / state health coverage",
+      "family_status": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, the likely public `nh.gov` successor family, and the basic diagnostic surfaces that would normally expose a public recovery lane. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` still fail DNS resolution. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` still return the same short `Access Denied` shell with HTTP 403, and exact successor probes `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` do the same. One more bounded diagnostic pass now closes even the recovery surfaces: `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://dhhs.nh.gov/robots.txt`, `https://dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, `https://www.nh.gov/dhhs/sitemap.xml`, `https://www.nh.gov/robots.txt`, and `https://www.nh.gov/sitemap.xml` all return the same short `Access Denied` shell with HTTP 403. New Hampshire therefore still has no reviewed public official DHHS successor host or diagnostic export lane for Medicaid, waiver, DD, early-intervention, or district-office families."
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_label": "Medicaid waiver / HCBS / disability services",
+      "family_status": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, the likely public `nh.gov` successor family, and the basic diagnostic surfaces that would normally expose a public recovery lane. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` still fail DNS resolution. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` still return the same short `Access Denied` shell with HTTP 403, and exact successor probes `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` do the same. One more bounded diagnostic pass now closes even the recovery surfaces: `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://dhhs.nh.gov/robots.txt`, `https://dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, `https://www.nh.gov/dhhs/sitemap.xml`, `https://www.nh.gov/robots.txt`, and `https://www.nh.gov/sitemap.xml` all return the same short `Access Denied` shell with HTTP 403. New Hampshire therefore still has no reviewed public official DHHS successor host or diagnostic export lane for Medicaid, waiver, DD, early-intervention, or district-office families."
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "developmental_disability_idd_authority",
+      "family_label": "Developmental disability / IDD authority",
+      "family_status": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, the likely public `nh.gov` successor family, and the basic diagnostic surfaces that would normally expose a public recovery lane. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` still fail DNS resolution. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` still return the same short `Access Denied` shell with HTTP 403, and exact successor probes `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` do the same. One more bounded diagnostic pass now closes even the recovery surfaces: `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://dhhs.nh.gov/robots.txt`, `https://dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, `https://www.nh.gov/dhhs/sitemap.xml`, `https://www.nh.gov/robots.txt`, and `https://www.nh.gov/sitemap.xml` all return the same short `Access Denied` shell with HTTP 403. New Hampshire therefore still has no reviewed public official DHHS successor host or diagnostic export lane for Medicaid, waiver, DD, early-intervention, or district-office families."
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "early_intervention_part_c",
+      "family_label": "Early intervention / IDEA Part C",
+      "family_status": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, the likely public `nh.gov` successor family, and the basic diagnostic surfaces that would normally expose a public recovery lane. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` still fail DNS resolution. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` still return the same short `Access Denied` shell with HTTP 403, and exact successor probes `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` do the same. One more bounded diagnostic pass now closes even the recovery surfaces: `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://dhhs.nh.gov/robots.txt`, `https://dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, `https://www.nh.gov/dhhs/sitemap.xml`, `https://www.nh.gov/robots.txt`, and `https://www.nh.gov/sitemap.xml` all return the same short `Access Denied` shell with HTTP 403. New Hampshire therefore still has no reviewed public official DHHS successor host or diagnostic export lane for Medicaid, waiver, DD, early-intervention, or district-office families."
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "special_education_idea_part_b",
+      "family_label": "Special education / IDEA Part B",
+      "family_status": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 bounded exact first-party rechecks on the official New Hampshire education host family, both `education.nh.gov` subdomain variants, exact district-directory leaves, the alternate `https://my.doe.nh.gov/ehb/` host, and the likely `nh.gov` successor family. `https://www.education.nh.gov/`, `https://education.nh.gov/`, exact district-directory leaves under `www.education.nh.gov`, and `https://my.doe.nh.gov/ehb/` all still return the same short `Access Denied` shell with HTTP 403. Exact successor probes `https://www.nh.gov/education/` and `https://www.nh.gov/education/doe/` still do the same. No reviewed statewide Part B authority leaf is publicly fetchable from the current official education family or the obvious `nh.gov` successor roots."
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "district_or_county_education_routing",
+      "family_label": "District or county education routing",
+      "family_status": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 bounded exact first-party rechecks on the official New Hampshire education host family, both `education.nh.gov` subdomain variants, exact district-directory leaves, the alternate `https://my.doe.nh.gov/ehb/` host, and the likely `nh.gov` successor family. `https://www.education.nh.gov/`, `https://education.nh.gov/`, exact district-directory leaves under `www.education.nh.gov`, and `https://my.doe.nh.gov/ehb/` all still return the same short `Access Denied` shell with HTTP 403. Exact successor probes `https://www.nh.gov/education/` and `https://www.nh.gov/education/doe/` still do the same. No reviewed district- or county-grade education routing chain is publicly fetchable from the current official education family or the obvious `nh.gov` successor roots."
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_label": "Vocational rehabilitation / Pre-ETS",
+      "family_status": "blocked_vr_hosts_unresolvable_or_forbidden_with_no_public_successor",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed 2026-06-25 the current New Hampshire VR lane against the legacy host assumptions, both `nhes.nh.gov` subdomain variants, and the likely `nh.gov` successor family. The legacy root `dhhs.new-hampshire.gov/rehab` still does not resolve, `https://www.nhes.nh.gov/`, `https://nhes.nh.gov/`, and the BVR disabilities path still return the same short `Access Denied` shell with HTTP 403, `https://www.nheasy.nh.gov/` still does not resolve, and exact successor probes `https://www.nh.gov/nhes/` plus `https://www.nh.gov/employment/` still return the same short `Access Denied` shell with HTTP 403. No reviewed first-party VR or Pre-ETS surface is publicly fetchable from the current official host family or the obvious `nh.gov` successor roots."
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "protection_and_advocacy",
+      "family_label": "Protection and advocacy",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party DRC-NH history and funding pages explicitly preserve that the organization was designated by the governor as New Hampshire's Protection and Advocacy agency and continues to receive core P&A program funding"
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "parent_training_information_center",
+      "family_label": "Parent training and information center",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party Parent Information Center of NH evidence preserves statewide parent-center identity, special-education support, and Department of Education funding"
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "legal_aid",
+      "family_label": "Legal aid",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party NH Legal Assistance and 603 Legal Aid pages explicitly preserve statewide free civil legal aid and a centralized statewide intake route for New Hampshire residents"
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "able_program",
+      "family_label": "ABLE program",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "ssi_ssa_federal_reference",
+      "family_label": "SSI / SSA federal references",
+      "family_status": "verified_state_grade",
+      "critical": false,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "new-hampshire",
+      "state_code": "NH",
+      "state_name": "New Hampshire",
+      "family": "county_local_disability_resources",
+      "family_label": "County/local disability resources",
+      "family_status": "blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, the likely public `nh.gov` successor family, and the basic diagnostic surfaces that would normally expose a public recovery lane. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` still fail DNS resolution. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` still return the same short `Access Denied` shell with HTTP 403, and exact successor probes `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` do the same. One more bounded diagnostic pass now closes even the recovery surfaces: `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://dhhs.nh.gov/robots.txt`, `https://dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, `https://www.nh.gov/dhhs/sitemap.xml`, `https://www.nh.gov/robots.txt`, and `https://www.nh.gov/sitemap.xml` all return the same short `Access Denied` shell with HTTP 403. New Hampshire therefore still has no reviewed public official DHHS successor host or diagnostic export lane for Medicaid, waiver, DD, early-intervention, or district-office families."
+    }
+  ],
+  "filesChecked": [
+    "data/generated/new-hampshire_california_grade_summary_v2.json",
+    "data/generated/new-hampshire_gap_matrix_v2.jsonl",
+    "data/generated/new-hampshire_failure_ledger_v2.jsonl",
+    "data/generated/new-hampshire_verified_sources_v1.jsonl",
+    "data/generated/new-hampshire_next_action_queue_v2.jsonl",
+    "docs/generated/new-hampshire-california-grade-audit-report-v2.md"
+  ],
+  "failures": [
+    {
+      "code": "not_completion_candidate",
+      "family": null,
+      "filesChecked": [
+        "data/generated/new-hampshire_california_grade_summary_v2.json"
+      ],
+      "reason": "Candidate classification is BLOCKED, not COMPLETE.",
+      "suggestedRepairClass": "keep_blocked_or_repair_more"
+    }
+  ],
+  "checkedAt": "2026-06-25T23:11:47.891Z",
+  "liveProbeEnabled": false
+}

@@ -42,10 +42,16 @@ assert.equal(summary.weak_critical_families, 8);
 assert.equal(summary.completeness_pct, 33);
 assert.ok(summary.critical_gap_families.includes('special_education_idea_part_b'));
 assert.equal(summary.familyStatuses.special_education_idea_part_b, 'blocked_official_education_hosts_and_diagnostic_surfaces_forbidden');
+assert.ok(summary.critical_gap_families.includes('district_or_county_education_routing'));
 
 const specialEdGap = gapRows.find((row) => row.family === 'special_education_idea_part_b');
 assert.equal(specialEdGap.family_status, 'blocked_official_education_hosts_and_diagnostic_surfaces_forbidden');
 assert.match(specialEdGap.status_reason, /No reviewed statewide Part B authority leaf/i);
+
+const districtGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
+assert.equal(districtGap.family_status, 'blocked_official_education_hosts_and_diagnostic_surfaces_forbidden');
+assert.match(districtGap.status_reason, /district/i);
+assert.match(districtGap.status_reason, /Access Denied/i);
 
 const specialEdFailure = failureRows.find((row) => row.family === 'special_education_idea_part_b');
 assert.equal(specialEdFailure.failure_code, 'official_nh_statewide_special_education_host_family_and_direct_successors_still_return_access_denied_shell');
