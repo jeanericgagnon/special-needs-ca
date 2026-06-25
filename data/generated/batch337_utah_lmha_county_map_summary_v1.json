@@ -1,0 +1,11 @@
+{
+  "state": "utah",
+  "batch": "batch337_utah_lmha_county_map_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "county_count": 29,
+  "county_lmha_map_url": "https://sumh.utah.gov/contact/location-map/",
+  "county_lmha_role_page_url": "https://sumh.utah.gov/mental-health/",
+  "all_29_counties_present": true,
+  "remaining_blocker_family": null
+}
