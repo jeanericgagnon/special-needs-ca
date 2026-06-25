@@ -2,7 +2,7 @@
   "state": "nebraska",
   "state_code": "NE",
   "family": "county_local_disability_resources",
-  "repair_lane": "service_area_contract_audit_only",
+  "repair_lane": "retired_complete_from_official_county_office_regions",
   "purpose": "Deterministic packet for Nebraska county-local routing after the live DHHS leaf, ExperienceBuilder datasource registry, and public FeatureServer layers all still prove there is no public county assignment contract.",
   "current_problem_metrics": {
     "countyTotal": 93,
@@ -36,5 +36,10 @@
     "full county office contract",
     "county-to-office join fields on a reviewed official layer"
   ],
-  "packet_complete_when": "Nebraska can reopen county-local only when an official service-area table, county-assignment artifact, office schema with county-coverage fields, or a public web map popup expression that explicitly bridges counties to offices exists on the public stack."
+  "packet_complete_when": "Nebraska is now complete because the current official DHHS county-office region layer provides a public county-grade local office contract across all 93 counties.",
+  "retired_by_batch": "batch349_nebraska_official_county_office_regions_v1",
+  "retired_reason": "The official DHHS N-FOCUS TANF / Employment First county-office region layer now provides a county-grade local office contract across all 93 counties.",
+  "county_office_region_contract_verified": true,
+  "county_office_region_count": 93,
+  "office_row_count": 22
 }

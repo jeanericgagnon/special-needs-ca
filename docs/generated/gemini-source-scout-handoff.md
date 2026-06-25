@@ -6,7 +6,7 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Texas, Utah
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Texas, Utah
 
 ## Current Blocked States
 
@@ -17,7 +17,6 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
-- Nebraska: `official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
@@ -33,45 +32,49 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Florida
 
 ### Blocker Reason
 
-Nebraska still has one critical blocker: `county_local_disability_resources`. Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across both the DHHS publication layer and the ArcGIS publication stack. `https://dhhs.ne.gov/robots.txt` is live, but `https://dhhs.ne.gov/sitemap.xml` returns HTTP 404, so there is still no first-party sitemap publication index for office leaves. The live SharePoint HTML for `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx`, `https://dhhs.ne.gov/Pages/Contact-DHHS.aspx`, and `https://dhhs.ne.gov/Pages/economic-assistance.aspx` still loops users only to the same office wrapper and sibling economic-assistance pages, while bounded SharePoint search API queries such as `_api/search/query?querytext='Public Assistance Offices'` return only HTTP 500/400 errors rather than any searchable county office leaves. On the ArcGIS side, `https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json` still returns only three public items with the same office-location title and owner family: the web map item `4bdbf8e8703743b0b2ff290f98737825`, the feature service item `cf70cb74fcc94634afc89f0a22a7d06f`, and the map service item `90a19933cfc444be836f51d15e2e23ec`. No table item, CSV, county assignment app item, or county directory leaf appears anywhere in either official publication lane. Nebraska therefore still has no public county-assignment item anywhere on the current official stack.
+Florida still has one critical blocker: `county_local_disability_resources`. Reviewed 2026-06-25 bounded live official checks on `https://www.myflfamilies.com/food-cash-and-medical`, `https://familyresourcecenter.myflfamilies.com/providers.csv`, `https://myaccess.myflfamilies.com/`, `https://myaccess.myflfamilies.com/Public/CPCPS`, `https://myaccess.myflfamilies.com/config/appconfig.js`, `https://myaccess.myflfamilies.com/asset-manifest.json`, `https://myaccess.myflfamilies.com/static/js/main.d43b0959.js`, `https://myaccess.myflfamilies.com/dataexchangeproxy`, `https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails`, and `https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch`. The exact official `food-cash-and-medical` leaf still points families to the Family Resource Center lane, whose reviewed `providers.csv` still preserves only 34 distinct county values across 39 rows rather than a 67-county local-office contract. The MyACCESS public lane remains readable: the root, `Public/CPCPS`, `config/appconfig.js`, `asset-manifest.json`, `static/js/main.d43b0959.js`, and `/dataexchangeproxy` all return HTTP 200. Current `appconfig.js` exposes `officeMapping: '/dataexchangeproxy'`, `CreateCBOAccountService: '/dataexchangeproxy'`, and `partnerApproverServices: '/accountmanagement'`. The live main bundle now re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but bounded anonymous GET plus POST probes to those endpoints still return HTTP 401 and HTTP 401 with `{"message":"Unauthorized"}`. The public `dataexchangeproxy` root still only replays the same generic shell as the root and `Public/CPCPS`. Florida therefore remains blocked because the storefront lane is still partial and the only exact county-result endpoints still visible on the live official host remain authenticated-only rather than anonymously reviewable.
 
 ### Exact Evidence Needed
 
-- An official DHHS service-area table, county-assignment artifact, or new public county leaf that actually maps Nebraska counties to local assistance routing.
-- A new searchable DHHS publication index or sitemap-backed office inventory that materializes county-specific public-assistance office leaves on the current official stack.
-- A new official ArcGIS table, CSV, or item that adds county assignment instead of only repeating the current office-location web map, feature service, and map service.
+- A first-party county-complete public local-office contract on the current Florida DCF or MyACCESS stack.
+- A public MyACCESS county-result contract that works anonymously, not only behind authenticated endpoints.
+- A reviewed first-party Florida local-office or partner-office source that truly covers all 67 counties instead of the current partial Family Resource Center storefront.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska DHHS robots.txt](https://dhhs.ne.gov/robots.txt)
-- [Nebraska DHHS sitemap.xml](https://dhhs.ne.gov/sitemap.xml)
-- [Nebraska Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [Nebraska Contact DHHS](https://dhhs.ne.gov/Pages/Contact-DHHS.aspx)
-- [Nebraska Economic Assistance](https://dhhs.ne.gov/Pages/economic-assistance.aspx)
-- [Nebraska GIS portal search for Public Assistance Offices](https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json)
+- [Florida food, cash, and medical](https://www.myflfamilies.com/food-cash-and-medical)
+- [Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
+- [MyACCESS root](https://myaccess.myflfamilies.com/)
+- [MyACCESS Public/CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
+- [MyACCESS appconfig.js](https://myaccess.myflfamilies.com/config/appconfig.js)
+- [MyACCESS asset-manifest.json](https://myaccess.myflfamilies.com/asset-manifest.json)
+- [MyACCESS main bundle](https://myaccess.myflfamilies.com/static/js/main.d43b0959.js)
+- [MyACCESS dataexchangeproxy](https://myaccess.myflfamilies.com/dataexchangeproxy)
+- [MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
+- [MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Nebraska DHHS county-assignment table or downloadable office/service-area artifact published on the current dhhs.ne.gov stack.
-- Any new searchable DHHS publication index, sitemap publication root, or county-named public-assistance office leaves on the live SharePoint host.
-- Any official ArcGIS item linked from the Nebraska public portal that adds county assignment rather than repeating the current web map / feature service / map service trio.
+- Any first-party Florida local-office artifact that is county-complete and publicly reviewable without authentication.
+- Any public MyACCESS county-result or office-mapping endpoint that no longer requires authenticated access.
+- Any official DCF county office or partner office dataset that covers the remaining 33 counties missing from the Family Resource Center storefront.
 
-## Next State Order After Nebraska
+## Next State Order After Florida
 
-1. Florida
-2. Alaska
-3. Oklahoma
-4. Ohio
-5. Minnesota
-6. Maine
-7. Idaho
-8. Arizona
-9. Massachusetts
-10. New Mexico
+1. Alaska
+2. Oklahoma
+3. Ohio
+4. Minnesota
+5. Maine
+6. Idaho
+7. Arizona
+8. Massachusetts
+9. New Mexico
+10. South Dakota
 
-Current Nebraska next action: hold_blocked_until_official_service_area_table_county_assignment_artifact_new_public_county_leaf_or_searchable_dhhs_publication_index_is_published.
+Current Florida next action: hold_county_local_until_first_party_local_offices_lane_is_county_complete_or_a_public_myaccess_county_result_contract_exists.
 

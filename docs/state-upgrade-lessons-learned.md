@@ -425,3 +425,6 @@
 
 ### County-Named Official District Exports Can Clear County-Grade Education Routing
 *   **Lesson:** If a live official state directory export preserves `County Name` plus district routing fields and a bounded coverage audit proves every county appears, that export itself can clear county-grade education routing without waiting for district-by-district special-education leaves. Kansas cleared once the live KSDE `Directory.xls` workbook again exposed county names plus district contact columns and the bounded county-name coverage check matched all 105 counties.
+
+### A County Polygon Office-Region Layer Can Clear Local Office Routing Even When The Generic Wrapper Is Weak
+*   **Lesson:** If the generic state office wrapper is weak but a sibling first-party program stack publicly links an official county polygon office-region service with county names, assigned office, address, phone, hours, and `Counties Served` fields, that service itself can clear county-grade local office routing. Nebraska cleared once the DHHS N-FOCUS TANF `Employment First (EF) Offices` lane exposed the official `CFS_EF_OfficeRegions` layer covering all 93 counties.
