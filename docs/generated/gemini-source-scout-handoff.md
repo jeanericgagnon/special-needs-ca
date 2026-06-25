@@ -28,43 +28,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Maine critical blocker. The current official Maine DHHS district-office page is fully public and proves named office towns, addresses, phones, emails, and program notes, but it still exposes zero county names and zero service-area labels. The bounded same-host follow-up pages and sitemap still expose no county crosswalk, no service-area table, and no alternate county-grade export.
+`district_or_county_education_routing` is the highest-priority Idaho blocker. The remaining unresolved district hosts are still publicly reachable, but one-hop homepage and sitemap review still exposes no real role-bearing `special education`, `special services`, `student services`, `504`, or procedural-safeguards leaves worth promoting. Jefferson still returns the same blank shell with no reusable education content. County-local also remains blocked separately, but education is the top live blocker because the unresolved county-bearing district roots are now source-final for bounded low-token review.
 
 ### Exact Evidence Needed
 
-- Any official Maine DHHS page, export, PDF, spreadsheet, API, or ArcGIS layer that explicitly maps counties to district offices.
-- Any official county-to-service-area or county-to-office contract on the current Maine DHHS host family.
-- Any official public office locator or service-area table that names Maine counties alongside the assigned DHHS district office.
+- Any official district-owned local leaf on the remaining Idaho hosts that explicitly carries `special education`, `special services`, `student services`, `504`, or procedural-safeguards routing.
+- Any official county-keyed Idaho district routing contract or county-to-district crosswalk that can truthfully close the remaining county-bearing districts.
+- Any public successor page on the Jefferson district host that replaces the current blank shell with reusable education content.
 
 ### Useful Official URLs Already Tried
 
-- [DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
-- [DHHS Contact root](https://www.maine.gov/dhhs/about/contact/)
-- [DHHS Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
-- [DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)
-- [DHHS Sitemap](https://www.maine.gov/dhhs/about/sitemap)
-- [Maine.gov site search: dhhs county office](https://www.maine.gov/search/?q=dhhs%20county%20office)
-- [Maine.gov site search: aroostook dhhs](https://www.maine.gov/search/?q=aroostook%20dhhs)
+- [Camas County Schools](https://www.camascountyschools.org/)
+- [Clark County School District 161](https://www.clarkcountyschools161.org/)
+- [Fremont County Joint School District 215](https://www.sd215.net/)
+- [Fremont County Joint School District 215 sitemap](https://www.sd215.net/sitemap.xml)
+- [Oneida School District](https://www.oneidaschooldistrict.org/)
+- [Oneida School District sitemap](https://www.oneidaschooldistrict.org/sitemap.xml)
+- [Shoshone School District](https://shoshonesd.org/)
+- [Shoshone School District sitemap](https://shoshonesd.org/sitemap.xml)
+- [Shoshone School District WP sitemap](https://shoshonesd.org/wp-sitemap.xml)
+- [Jefferson School District 251](https://www.jeffersonsd251.org/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Maine county-to-district-office export or locality table.
-- Any official DHHS public locator that names counties directly rather than only office towns.
-- Any official PDF, spreadsheet, API, or map layer on `maine.gov/dhhs` that preserves county-served fields.
+- Any newly published district-owned special-education or special-services leaf on the six remaining Idaho hosts.
+- Any official Idaho state or district export that names county-bearing districts and links them to a reviewed local special-education contact path.
+- Any reviewed Jefferson successor host or exact public page that replaces the current blank shell with district education routing content.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
-2. Arizona
-3. Massachusetts
-4. New Mexico
-5. South Dakota
-6. Rhode Island
-7. Virginia
-8. West Virginia
-9. North Dakota
-10. Wisconsin
+1. Arizona
+2. Massachusetts
+3. New Mexico
+4. South Dakota
+5. Rhode Island
+6. Virginia
+7. West Virginia
+8. North Dakota
+9. Wisconsin
+10. Washington
