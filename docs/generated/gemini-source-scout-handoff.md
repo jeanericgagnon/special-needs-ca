@@ -28,45 +28,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Maine critical blocker. The live packet truth held up under one more bounded same-host official recheck on 2026-06-25: `https://www.maine.gov/dhhs/about/contact/offices` is still the right public DHHS district-office surface and it preserves real office-grade evidence, including named office towns, addresses, phones, emails, map shortlinks, and OFI program-routing notes. But the office page still exposes zero county names, zero county-served labels, and zero service-area fields in public HTML. The same-host follow-ups stayed negative too: the DHHS contact root, administrative-offices page, offices/divisions page, DHHS sitemap, OFI contact page, and DHHS search pages still expose no public county-to-office crosswalk and no alternate county-grade export or service-area table.
+`district_or_county_education_routing` remains the highest-priority Idaho blocker. The live packet truth held up under one more bounded exact-host recheck on 2026-06-25: the remaining unresolved district roots are still `https://www.camascountyschools.org/`, `https://www.clarkcountyschools161.org/`, `https://www.sd215.net/`, `https://www.oneidaschooldistrict.org/`, `https://shoshonesd.org/`, and `https://www.jeffersonsd251.org/`. Camas, Clark, Fremont, Oneida, and Shoshone all stayed live at their official roots, but bounded homepage, sitemap, robots, and same-host search review still exposed no reusable `special education`, `special services`, `student services`, `504`, or procedural-safeguards leaf. Fremont’s live sitemap still only adds a generic `student-enrollment` slug. Oneida’s live sitemap still only adds generic student-resources and student-policy documents. Shoshone’s live search and WordPress sitemap still expose no role-bearing district-routing leaf. Jefferson still resolves to the same blank Incapsula-style shell and its sitemap/robots routes still fail closed.
 
 ### Exact Evidence Needed
 
-- Any official Maine DHHS or OFI page, table, PDF, workbook, sitemap leaf, or API that explicitly maps Maine counties to current district offices.
-- Any reviewable public service-area contract on the current DHHS/OFI host family that goes beyond office towns and identifies county coverage.
-- Any public county-grade office export on `maine.gov/dhhs` that can replace the current office-grade-only directory without inference.
+- Any district-owned Idaho leaf on one of the remaining unresolved hosts that explicitly preserves `special education`, `special services`, `student services`, `504`, or procedural-safeguards routing.
+- Any exact same-host sitemap or search-discovered district leaf on Camas, Clark, Fremont, Oneida, or Shoshone that carries role-bearing education contact or department content.
+- Any public reviewed replacement for Jefferson that renders district-owned education-routing content instead of the current blank challenge shell.
 
 ### Useful Official URLs Already Tried
 
-- [DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
-- [DHHS contact root](https://www.maine.gov/dhhs/about/contact/)
-- [DHHS administrative offices](https://www.maine.gov/dhhs/about/contact/administrative-offices)
-- [DHHS offices/divisions](https://www.maine.gov/dhhs/offices-divisions)
-- [DHHS sitemap](https://www.maine.gov/dhhs/about/sitemap)
-- [OFI contact page](https://www.maine.gov/dhhs/ofi/about-us/contact)
-- [OFI data reports](https://www.maine.gov/dhhs/ofi/about-us/data-reports)
-- [DHHS search](https://www.maine.gov/dhhs/search/node?keys=county)
-- [Maine statewide search](https://www.maine.gov/search/?search_api_fulltext=dhhs+office+county)
+- [Idaho SDE School Districts](https://www.sde.idaho.gov/school-districts/)
+- [Camas County School District root](https://www.camascountyschools.org/)
+- [Clark County School District 161 root](https://www.clarkcountyschools161.org/)
+- [Fremont County Joint School District #215 root](https://www.sd215.net/)
+- [Fremont sitemap](https://www.sd215.net/sitemap.xml)
+- [Oneida School District root](https://www.oneidaschooldistrict.org/)
+- [Oneida sitemap](https://www.oneidaschooldistrict.org/sitemap.xml)
+- [Shoshone School District root](https://shoshonesd.org/)
+- [Shoshone sitemap](https://shoshonesd.org/sitemap.xml)
+- [Shoshone WordPress sitemap](https://shoshonesd.org/wp-sitemap.xml)
+- [Jefferson County Joint District #251 root](https://www.jeffersonsd251.org/)
+- [Jefferson sitemap](https://www.jeffersonsd251.org/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Maine DHHS county-to-district-office crosswalk.
-- Any current official OFI or DHHS export that carries county-served or service-area fields for district offices.
-- Any reviewable same-host page that truthfully bridges Maine counties to Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, Skowhegan, Sanford, Fort Kent, Houlton, or Lewiston without inference.
+- Any new district-owned special-education or student-services leaf published on Camas, Clark, Fremont, Oneida, or Shoshone.
+- Any public Jefferson district route that becomes reviewable without the current blank challenge shell.
+- Any exact district-owned leaf on those hosts that carries contact, department, 504, parent-rights, or procedural-safeguards evidence strong enough to replace the statewide fallback.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
-2. Arizona
-3. Massachusetts
-4. New Mexico
-5. South Dakota
-6. Rhode Island
-7. Virginia
-8. West Virginia
-9. North Dakota
-10. Wisconsin
+1. Arizona
+2. Massachusetts
+3. New Mexico
+4. South Dakota
+5. Rhode Island
+6. Virginia
+7. West Virginia
+8. North Dakota
+9. Wisconsin
+10. Washington
