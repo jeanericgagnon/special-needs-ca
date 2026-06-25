@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 81,
     "placeholderWebsiteRows": 81,
-    "authoredExactLeafCount": 26,
+    "authoredExactLeafCount": 27,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 26
+    "reviewedDistrictOwnedLeafCount": 27
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -180,6 +180,7 @@
     "miami-ks",
     "montgomery-ks",
     "nemaha-ks",
+    "pottawatomie-ks",
     "reno-ks",
     "riley-ks",
     "saline-ks",
@@ -242,7 +243,6 @@
     "ottawa-ks",
     "pawnee-ks",
     "phillips-ks",
-    "pottawatomie-ks",
     "pratt-ks",
     "rawlins-ks",
     "republic-ks",
