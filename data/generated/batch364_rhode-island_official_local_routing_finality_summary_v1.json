@@ -1,45 +1,10 @@
 {
-  "state": "rhode-island",
-  "state_code": "RI",
-  "state_name": "Rhode Island",
   "batch": "batch364_rhode-island_official_local_routing_finality_v1",
+  "state": "rhode-island",
+  "generated_at": "2026-06-25",
   "classification": "BLOCKED",
   "index_safe": false,
-  "incorrectly_index_safe": false,
-  "county_count": 5,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
-  "missing_critical_families": 0,
-  "total_critical_families": 12,
   "primary_gap_reason": "public_ride_directory_and_public_dhs_office_stack_expose_local_entities_but_zero_public_county_or_special_education_service_area_contracts",
-  "recommended_batch": "batch_3_procedure_hardening",
-  "critical_gap_families": [
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
-  ],
-  "major_gap_families": [],
-  "verified_source_families_with_samples": [
-    "medicaid_state_health_coverage",
-    "medicaid_waiver_hcbs_disability_services",
-    "developmental_disability_idd_authority",
-    "early_intervention_part_c",
-    "special_education_idea_part_b",
-    "district_or_county_education_routing",
-    "vocational_rehabilitation_pre_ets",
-    "protection_and_advocacy",
-    "parent_training_information_center",
-    "legal_aid",
-    "able_program",
-    "ssi_ssa_federal_reference",
-    "county_local_disability_resources"
-  ],
-  "complete_ready": false,
-  "texas_v10_rule_basis": [
-    "Preserve noindex until all critical families are verified",
-    "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
-    "Legacy/inventory-only evidence does not satisfy California-grade completeness"
-  ],
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
@@ -55,5 +20,19 @@
       "evidence": "Reviewed 2026-06-25 bounded first-party Rhode Island human-services surfaces. The DHS host now publicly exposes a DHS Offices page, an Office Locator tool entrypoint, a sitemap, and six office leaves for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket. The DHS Offices page describes these as regional offices serving Rhode Islanders throughout the state and lists addresses, directions, drop-box notes, and office hours. The individual location pages preserve titles, street addresses, office hours, and map links. The sitemap confirms the same office leaves on the official host family. But none of the reviewed public DHS surfaces expose county-served labels, county fields, service-area fields, or a county-to-office routing contract. Even the `South County` label is still only an office name on the public leaf, not an explicit county-assignment table. Rhode Island therefore still lacks a truthful public county-to-office or county-to-service-area contract on the official DHS host family.",
       "next_action": "hold_blocked_until_public_dhs_surface_exposes_county_to_office_or_service_area_routing"
     }
+  ],
+  "official_evidence_reviewed": [
+    "https://ride.ri.gov/students-families/special-education",
+    "https://ride.ri.gov/students-families/ri-public-schools/school-directory",
+    "https://ride.ri.gov/students-families/ri-public-schools/school-districts",
+    "https://datacenter.ride.ri.gov/Directory",
+    "https://dhs.ri.gov/about-us/dhs-offices",
+    "https://dhs.ri.gov/sitemap.xml",
+    "https://dhs.ri.gov/locations/dhs-middletown-office",
+    "https://dhs.ri.gov/locations/dhs-providence-office-125-holden-street",
+    "https://dhs.ri.gov/locations/dhs-pawtucket-office",
+    "https://dhs.ri.gov/locations/dhs-south-county-office",
+    "https://dhs.ri.gov/locations/dhs-warwick-office",
+    "https://dhs.ri.gov/locations/dhs-woonsocket-office"
   ]
 }
