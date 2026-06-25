@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T12:11:55.113Z",
+  "generatedAt": "2026-06-25T12:16:16.741Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 33,
@@ -1347,11 +1347,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_public_dhhs_office_stack_ofi_contact_and_map_shortlinks_without_office_assignment_contract"
+        "county_local_disability_resources": "blocked_public_dhhs_nav_stack_without_county_to_office_or_service_area_assignment_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch353_maine_ofi_contact_map_finality_v1",
-      "packetPrimaryGapReason": "official_dhhs_office_stack_ofi_contact_page_and_show_map_shortlinks_still_expose_no_county_or_service_area_contract",
+      "packetBatch": "batch356_maine_nav_stack_finality_v1",
+      "packetPrimaryGapReason": "official_dhhs_nav_stack_still_exposes_office_addresses_and_labels_but_no_county_or_service_area_contract",
       "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract"
     },
     {
