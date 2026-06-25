@@ -25,43 +25,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: New Hampshire
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is still the highest-priority Arizona blocker. Reviewed 2026-06-25 one more bounded live pass on the final three district-owned public domains. Coconino County Accommodation School District stayed live, but its public page/post sitemaps and WordPress JSON searches still only replayed false-positive board, employment, and staff records. Mohave Accelerated Schools stayed live, but the homepage preserved no role terms, the exact role pages still 404, the public search-results surface stayed empty, and the sitemap lanes remained unavailable. Yavapai Accommodation School District stayed live, but its sitemap only exposed generic pages plus handbook/document leaves, the `documents/` page preserved no role-bearing content, and the exact `504`, `special-education`, and `student-services` pages still 404. County-local remains separately blocked because the official AHCCCS UniversityFamilyCare PDF bundle is reviewable but only proves non-contract support letters. Arizona therefore stays blocked and not index-safe.
+`medicaid_state_health_coverage` is the highest-priority New Hampshire blocker because the same official host-family failure still blocks Medicaid, waiver, DD, early-intervention, and county-local routing together. Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved replacement roots still fail DNS resolution. The direct DHHS roots and exact `/dhhs` successor roots still return the same short `Access Denied` shell with HTTP 403. Education remains separately blocked because `education.nh.gov`, `www.education.nh.gov`, exact district-directory leaves, `my.doe.nh.gov/ehb/`, and the obvious `nh.gov` education successors all still return that same shell. VR remains separately blocked because the NHES roots, the BVR disabilities path, and the likely `nh.gov` successors still return the same 403 shell or do not resolve. New Hampshire therefore stays BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any district-owned `special education`, `special services`, `student services`, `504`, or `Child Find` leaf on ccasdaz.org, mohavelearning.org, or yavapaicountyhighschool.com.
-- Any official Arizona state or county export that maps the remaining counties to reviewed district routing without relying on generic statewide fallbacks.
-- Any official AHCCCS, DES, or county-admin county-to-office assignment artifact for county-local disability resources.
+- Any reviewed public official New Hampshire DHHS host that actually renders Medicaid, DD, waiver, early-intervention, or district-office content instead of the Access Denied shell.
+- Any public official district-office or county-export surface on the DHHS family that provides real county or district-office routing.
+- Any reviewed public official New Hampshire education directory or district-profile surface that returns district- or county-grade routing instead of the Access Denied shell.
+- Any reviewed public official New Hampshire VR or BVR surface that loads publicly instead of the same blocked shell.
 
 ### Useful Official URLs Already Tried
 
-- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
-- [Coconino page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
-- [Coconino post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
-- [Coconino wp-json special education search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
-- [Coconino wp-json 504 search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=504&per_page=20)
-- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
-- [Mohave public special-education search results](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
-- [Mohave exact 504 page](https://www.mohavelearning.org/page/504/)
-- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
-- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
-- [Yavapai documents page](https://www.yavapaicountyhighschool.com/documents/)
-- [Yavapai contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
-- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
-- [Pima County Administrator PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
-- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
+- [DHHS root](https://www.dhhs.nh.gov/)
+- [DHHS root without www](https://dhhs.nh.gov/)
+- [saved replacement root](https://dhhs.new-hampshire.gov/)
+- [saved DD replacement root](https://dhhs.new-hampshire.gov/dd)
+- [saved waiver replacement root](https://dhhs.new-hampshire.gov/dd/waivers)
+- [saved early-intervention replacement root](https://dhhs.new-hampshire.gov/earlystart)
+- [nh.gov DHHS successor root](https://www.nh.gov/dhhs/)
+- [nh.gov DHHS contact-us](https://www.nh.gov/dhhs/contact-us/)
+- [nh.gov DHHS district offices](https://www.nh.gov/dhhs/district-offices/)
+- [Education root](https://www.education.nh.gov/)
+- [Education root without www](https://education.nh.gov/)
+- [nh.gov Education successor](https://www.nh.gov/education/)
+- [nh.gov Education DOE successor](https://www.nh.gov/education/doe/)
+- [DOE alternate host](https://my.doe.nh.gov/ehb/)
+- [NHES root](https://www.nhes.nh.gov/)
+- [NHES root without www](https://nhes.nh.gov/)
+- [NHES successor root](https://www.nh.gov/nhes/)
+- [nh.gov employment successor](https://www.nh.gov/employment/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly published role-bearing local education leaf on the final three Arizona district-owned domains.
-- Any official Arizona export or public table that maps those counties to local district special-education routing.
-- Any official AHCCCS, DES, or county-admin county-to-office routing artifact.
+- Any newly public official NH DHHS successor host or export that resolves without the Access Denied shell.
+- Any official New Hampshire education directory, profile export, or district-routing surface that becomes publicly reviewable on the current host family.
+- Any official New Hampshire VR or BVR surface that becomes publicly reviewable on the current host family.
 
-## Next State Order After Arizona
+## Next State Order After New Hampshire
 
-1. New Hampshire
+1. None remaining in assigned sequence

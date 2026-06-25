@@ -2,7 +2,7 @@
   "state": "new-hampshire",
   "state_code": "NH",
   "state_name": "New Hampshire",
-  "batch": "batch_12_procedure_hardening_states_v1",
+  "batch": "batch365_new_hampshire_host_family_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -13,7 +13,7 @@
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "official_nh_dhhs_education_and_vr_host_families_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead",
-  "recommended_batch": "batch_3_procedure_hardening",
+  "recommended_batch": "hold_for_public_official_nh_host_recovery_or_export",
   "critical_gap_families": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -94,5 +94,14 @@
       "evidence": "Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` still fail DNS resolution. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` still return the same short `Access Denied` shell with HTTP 403, and exact successor probes `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` do the same. New Hampshire therefore still has no reviewed public official DHHS successor host for Medicaid, waiver, DD, early-intervention, or district-office lanes.",
       "next_action": "hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved"
     }
-  ]
+  ],
+  "familyStatuses": {
+    "medicaid_state_health_coverage": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+    "medicaid_waiver_hcbs_disability_services": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+    "developmental_disability_idd_authority": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+    "early_intervention_part_c": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+    "district_or_county_education_routing": "blocked_official_education_hosts_and_nh_gov_successors_forbidden",
+    "vocational_rehabilitation_pre_ets": "blocked_vr_hosts_unresolvable_or_forbidden_with_no_nh_gov_successor",
+    "county_local_disability_resources": "blocked_official_dhhs_hosts_and_nh_gov_successors_forbidden"
+  }
 }

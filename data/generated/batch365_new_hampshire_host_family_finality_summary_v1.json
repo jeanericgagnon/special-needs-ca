@@ -1,0 +1,13 @@
+{
+  "batch": "batch365_new_hampshire_host_family_finality_v1",
+  "generated_at": "2026-06-25T18:04:40.085Z",
+  "state": "new-hampshire",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dhhs_replacement_dns_dead": true,
+  "dhhs_direct_403_shell": true,
+  "education_direct_403_shell": true,
+  "vr_direct_403_shell": true,
+  "nh_gov_successor_403_shell": true,
+  "result": "official_new_hampshire_host_families_still_do_not_expose_public_reviewable_routing_surfaces"
+}

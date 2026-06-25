@@ -1,4 +1,4 @@
-# New Hampshire California-Grade Host-Family Packet v3
+# New Hampshire California-Grade Host-Family Finality v4
 
 - classification: BLOCKED
 - index_safe: false
@@ -58,9 +58,16 @@
 - [critical] district_or_county_education_routing: hold_blocked_until_public_nh_education_host_or_directory_is_reviewable
 - [major] vocational_rehabilitation_pre_ets: hold_blocked_until_public_nh_vr_host_is_preserved
 
+## Host-family finality
+
+- New Hampshire is not blocked on guessed missing child paths; it is blocked on current official host-family failure modes that were rechecked directly.
+- The saved `dhhs.new-hampshire.gov` successor family is still DNS-dead on the exact Medicaid, DD, waiver, and early-intervention roots already in the packet.
+- The direct DHHS, education, and NHES subdomain families plus the obvious `nh.gov` path successors still return the same short `Access Denied` shell with HTTP 403 immediately.
+- No reviewed public official successor host is currently preserved for DHHS, district-directory, county-office, or VR lanes.
+
 ## Completion decision
 
-- New Hampshire remains BLOCKED and index_safe=false.
-- The saved `dhhs.new-hampshire.gov` replacement-host family is still unresolvable.
-- Neither the direct agency subdomains nor the likely `nh.gov` path successors are hidden rescue paths in this lane: both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return the same short Access Denied shell with HTTP 403 immediately.
-- No reviewed public official successor host is currently preserved for the blocked DHHS, education, VR, or district-office families.
+- New Hampshire remains `BLOCKED` and `index_safe=false`.
+- The highest-priority blocker is still the DHHS host-family failure because it keeps Medicaid, waiver, DD, early-intervention, and county-local lanes blocked at once.
+- Education remains separately blocked because the official education host family and obvious `nh.gov` successors still provide no public district- or county-grade routing surface.
+- VR remains a major blocker because the official NHES lane and the likely successor roots are still either access-denied or unresolvable.
