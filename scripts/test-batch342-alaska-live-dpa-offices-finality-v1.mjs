@@ -40,6 +40,7 @@ assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(summary.batch, 'batch342_alaska_live_dpa_offices_finality_v1');
 assert.equal(summary.primary_gap_reason, 'reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract');
+assert.equal(summary.recommended_batch, 'hold_for_new_official_borough_assignment_contract');
 
 const gap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(gap);
@@ -80,11 +81,14 @@ const alaskaAudit = allStateAudit.states.find((row) => row.stateId === 'alaska')
 assert.ok(alaskaAudit);
 assert.equal(alaskaAudit.packetBatch, 'batch342_alaska_live_dpa_offices_finality_v1');
 assert.equal(alaskaAudit.packetPrimaryGapReason, summary.primary_gap_reason);
+assert.equal(alaskaAudit.packetRecommendedBatch, 'hold_for_new_official_borough_assignment_contract');
 assert.equal(alaskaAudit.familyStatuses.county_local_disability_resources, gap.family_status);
 
 const alaskaQueue = allStateQueue.find((row) => row.state === 'alaska');
 assert.ok(alaskaQueue);
 assert.equal(alaskaQueue.primary_gap_reason, summary.primary_gap_reason);
+assert.equal(alaskaQueue.recommended_batch, 'hold_for_new_official_borough_assignment_contract');
+assert.equal(alaskaQueue.repair_lane, 'blocked_until_new_official_public_county_contract');
 
 assert.match(stateReport, /The current Department of Health DPA landing page is now publicly readable in the reviewed browser lane\./);
 assert.match(stateReport, /still does not map boroughs or census areas to those offices/i);
@@ -96,8 +100,9 @@ assert.match(handoff, /DPA Dashboard PDF/);
 assert.match(handoff, /Medicaid enrollment snapshot PDF/);
 assert.match(handoff, /## Next State Order After Alaska/);
 assert.match(handoff, /1\. Oklahoma/);
-assert.match(handoff, /2\. Minnesota/);
-assert.doesNotMatch(handoff, /2\. Ohio/);
+assert.match(handoff, /2\. Maine/);
+assert.match(handoff, /3\. Idaho/);
+assert.doesNotMatch(handoff, /2\. Minnesota/);
 assert.match(lessons, /A Recovered Official Office Page Still Needs County-Equivalent Assignment/);
 
 assert.equal(batchSummary.dpa_landing_review_status, 200);

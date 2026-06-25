@@ -13,7 +13,7 @@
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract",
-  "recommended_batch": "batch_3_procedure_hardening",
+  "recommended_batch": "hold_for_new_official_borough_assignment_contract",
   "critical_gap_families": [
     "county_local_disability_resources"
   ],

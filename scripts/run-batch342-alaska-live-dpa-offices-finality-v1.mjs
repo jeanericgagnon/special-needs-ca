@@ -28,6 +28,8 @@ const OUTPUTS = {
 };
 
 const BATCH_NAME = 'batch342_alaska_live_dpa_offices_finality_v1';
+const HOLD_BATCH = 'hold_for_new_official_borough_assignment_contract';
+const HOLD_REPAIR_LANE = 'blocked_until_new_official_public_county_contract';
 const PRIMARY_GAP_REASON =
   'reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract';
 const FAILURE_CODE =
@@ -36,6 +38,37 @@ const FAMILY_STATUS =
   'blocked_reviewed_live_dpa_offices_page_lists_regional_offices_but_no_borough_or_census_area_assignments_and_dfcs_surfaces_add_no_local_mapping_contract';
 const NEXT_ACTION =
   'hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_or_export';
+const PRIORITY_ORDER = [
+  'Utah',
+  'Kansas',
+  'Nebraska',
+  'Nevada',
+  'Florida',
+  'Alaska',
+  'South Carolina',
+  'North Carolina',
+  'New York',
+  'Oklahoma',
+  'Oregon',
+  'Ohio',
+  'Minnesota',
+  'Maine',
+  'Idaho',
+  'Arizona',
+  'Massachusetts',
+  'New Mexico',
+  'South Dakota',
+  'Rhode Island',
+  'Virginia',
+  'West Virginia',
+  'North Dakota',
+  'Wisconsin',
+  'Washington',
+  'Tennessee',
+  'Vermont',
+  'Wyoming',
+  'New Hampshire',
+];
 
 const REVIEWED_PROBE = {
   fetchedDate: '2026-06-25',
@@ -185,6 +218,10 @@ function buildHandoff(allStateAudit) {
   const blockedRows = allStateAudit.states
     .filter((row) => row.classification === 'BLOCKED')
     .sort((a, b) => a.stateName.localeCompare(b.stateName));
+  const nextBlockedStateNames = PRIORITY_ORDER
+    .slice(PRIORITY_ORDER.indexOf('Alaska') + 1)
+    .filter((stateName) => blockedRows.some((row) => row.stateName === stateName))
+    .slice(0, 10);
 
   return [
     '# Gemini Source Scout Handoff',
@@ -238,16 +275,7 @@ function buildHandoff(allStateAudit) {
     '',
     '## Next State Order After Alaska',
     '',
-    '1. Oklahoma',
-    '2. Minnesota',
-    '3. Maine',
-    '4. Idaho',
-    '5. Arizona',
-    '6. Massachusetts',
-    '7. New Mexico',
-    '8. South Dakota',
-    '9. Rhode Island',
-    '10. Virginia',
+    ...nextBlockedStateNames.map((stateName, index) => `${index + 1}. ${stateName}`),
     '',
   ].join('\n');
 }
@@ -295,6 +323,7 @@ export async function generateBatch342AlaskaLiveDpaOfficesFinalityV1() {
 
   summary.batch = BATCH_NAME;
   summary.primary_gap_reason = PRIMARY_GAP_REASON;
+  summary.recommended_batch = HOLD_BATCH;
   summary.final_blockers = [{
     family: 'county_local_disability_resources',
     failure_code: FAILURE_CODE,
@@ -411,10 +440,13 @@ export async function generateBatch342AlaskaLiveDpaOfficesFinalityV1() {
   const alaskaAudit = allStateAudit.states.find((row) => row.stateId === 'alaska');
   alaskaAudit.packetBatch = BATCH_NAME;
   alaskaAudit.packetPrimaryGapReason = PRIMARY_GAP_REASON;
+  alaskaAudit.packetRecommendedBatch = HOLD_BATCH;
   alaskaAudit.familyStatuses.county_local_disability_resources = FAMILY_STATUS;
 
   const alaskaQueue = allStateQueue.find((row) => row.state === 'alaska');
   alaskaQueue.primary_gap_reason = PRIMARY_GAP_REASON;
+  alaskaQueue.recommended_batch = HOLD_BATCH;
+  alaskaQueue.repair_lane = HOLD_REPAIR_LANE;
 
   const batchSummary = {
     batch: BATCH_NAME,

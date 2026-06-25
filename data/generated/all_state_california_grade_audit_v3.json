@@ -152,7 +152,7 @@
       "packetGenerated": true,
       "packetBatch": "batch342_alaska_live_dpa_offices_finality_v1",
       "packetPrimaryGapReason": "reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
     },
     {
       "stateId": "arizona",
