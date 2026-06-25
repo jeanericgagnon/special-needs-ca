@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T23:59:00.000Z",
+  "generatedAt": "2026-06-25T16:41:24.713Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 34,
@@ -210,7 +210,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_three_reviewed_public_district_domains_source_final_without_role_leafs",
+        "district_or_county_education_routing": "blocked_three_reviewed_public_district_domains_live_surface_recheck_still_without_role_leafs",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch351_arizona_education_surface_recheck_v1",
-      "packetPrimaryGapReason": "current_altcs_html_lane_and_ahcccs_universityfamilycare_bundle_remain_non_contract_and_three_reviewed_public_district_domains_still_lack_role_leaves",
+      "packetPrimaryGapReason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves",
       "packetRecommendedBatch": "hold_for_new_official_county_contract_or_role_leaf"
     },
     {
