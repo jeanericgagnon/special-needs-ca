@@ -1,0 +1,21 @@
+{
+  "batch": "batch363_new_mexico_current_field_offices_remainder_clear_v1",
+  "generated_at": "2026-06-25T18:20:00.000Z",
+  "state": "new-mexico",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "repaired_family": "county_local_disability_resources",
+  "official_url": "https://www.hca.nm.gov/lookingforassistance/field_offices/",
+  "all_33_counties_present": true,
+  "remainder_counties_cleared": [
+    "Catron",
+    "Harding",
+    "Mora",
+    "Union"
+  ],
+  "remaining_blockers": [
+    "district_or_county_education_routing",
+    "vocational_rehabilitation_pre_ets"
+  ],
+  "result": "current_official_hca_field_offices_page_closes_the_33_of_33_county_office_service_area_contract"
+}

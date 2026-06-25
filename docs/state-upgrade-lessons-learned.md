@@ -410,6 +410,9 @@
 ### Official County LMHA Maps Can Clear The Last Local-Resource Blocker
 *   **Lesson:** If an official state mental-health authority page explicitly says `Click on your county to find your Local Mental Health Authority` and the same first-party page names every county with local authority contact blocks, that can clear a county-local disability-resource family even when earlier generic office-search lanes failed. Utah only completed once the reviewed `sumh.utah.gov/contact/location-map/` LMHA map replaced the weaker DWS and generic DHHS contact surfaces.
 
+### Current Sibling Directory Pages Can Supersede Empty Archive Tails
+*   **Lesson:** If an older official archive lane looks exhausted, check the current sitemap for sibling pages before freezing the blocker. New Mexico's `field_offices_1` archive really was empty past page 8, but the current official `lookingforassistance/field_offices/` page separately preserved county-to-office service-area assignments for all 33 counties, including the old Catron, Harding, Mora, and Union remainder.
+
 ### Check OCR Tooling Before Looping On Official Image PDFs
 *   **Lesson:** If a county-office family depends on image-heavy official PDFs, verify the local OCR and PDF-raster toolchain before retrying the same files. Arizona’s AHCCCS lane had partial county text, but with no `tesseract`, `pdftotext`, `pdftoppm`, `PIL`, or `pdf2image` available, the honest next step was reviewed HTML admin leaves or a committed OCR artifact, not another parser loop.
 

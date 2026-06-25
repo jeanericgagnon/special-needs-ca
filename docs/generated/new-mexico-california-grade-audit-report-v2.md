@@ -1,10 +1,10 @@
-# New Mexico Blocker Packets v6
+# New Mexico Blocker Packets v7
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 75
+- completeness_pct: 83
 - county_count: 33
-- primary_gap_reason: current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_hca_four_county_remainder_persists
+- primary_gap_reason: current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate
 
 ## Family status
 
@@ -20,13 +20,12 @@
 - legal_aid: verified_state_grade (The reviewed New Mexico Legal Aid locations page preserves a statewide intake route and explicitly says it serves all counties in New Mexico.)
 - able_program: verified_state_grade (Statewide ABLE crossover evidence remains reviewed and intact.)
 - ssi_ssa_federal_reference: verified_state_grade (SSA crossover evidence remains reviewed and intact.)
-- county_local_disability_resources: blocked_hca_archive_29_of_33_counties_with_four_county_remainder_and_empty_tail (Reviewed 2026-06-23 the live official HCA Field Offices archive across pages 1 through 12 plus bounded same-host county searches. Pages 1 through 8 still prove county-specific office posts for 29 of 33 New Mexico counties: Bernalillo, Roosevelt, Hidalgo, Chaves, Curry, Doña Ana, Eddy, Guadalupe, Sandoval, Lincoln, McKinley, Quay, Rio Arriba, Los Alamos, San Juan, San Miguel, Santa Fe, Socorro, Torrance, Valencia, Otero, Lea, Sierra, Taos, Grant, Cibola, De Baca, Luna, and Colfax. Fresh exact probes on pages 9 through 12 all returned HTTP 200 with the same generic `Field Offices` archive shell but no additional county office posts and no Catron, Harding, Mora, or Union office-routing text. Bounded same-host search still only surfaced a non-office service-expansion article for Harding/Union, a SNAP-loss article for Mora, and no Catron county office hit. county_local_disability_resources therefore remains blocked on a four-county official office-routing remainder, and the archive tail itself is now proven empty rather than merely unreviewed.)
+- county_local_disability_resources: verified_current_official_hca_field_offices_county_service_area_page (Reviewed 2026-06-25 the current official HCA `Field Offices` page at `https://www.hca.nm.gov/lookingforassistance/field_offices/`. The live page now preserves county-to-office service-area assignments in public HTML across all 33 New Mexico counties, including `County Office 10 - Serving Curry, De Baca, Harding, Quay, & Roosevelt Counties`, `County Office 4 - Serving San Miguel, Guadalupe, Taos, Union, Colfax, & Mora Counties`, and `County Office 14 - Serving Catron, Cibola, Socorro, Torrance, & Valencia Counties`, each with current office names, addresses, and hours on the official HCA host.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: current_ped_host_timeouts_and_legacy_education_host_unresolvable_without_local_leafs :: Reviewed 2026-06-25 one more bounded official New Mexico education host pass. The legacy repo host family `https://education.new-mexico.gov/` is now source-finally unusable: exact probes on the root, `/regional`, `/sitemap.xml`, `/robots.txt`, `/special-education/`, and `/districts/` all fail DNS resolution. The current official PED host family remains equally non-productive for low-token local routing: earlier bounded exact probes on `https://webnew.ped.state.nm.us/` and `https://webnew.ped.state.nm.us/bureaus/special-education/` had already timed out after 25 seconds, and fresh bounded exact probes on the current host search and API-shaped routes still timed out after 15 seconds. The packet still preserves zero district-owned, county-grade, or regional local education leaves on disk, and the only retained PED-side URLs remain the generic PED root plus the statewide Special Education Bureau page. district_or_county_education_routing therefore remains blocked on authoring exact local leaves from district-owned or regional sources, not on any further state-host retries.
 - vocational_rehabilitation_pre_ets: official_dvr_root_returns_401_without_reviewed_public_alternate :: Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.
-- county_local_disability_resources: official_hca_archive_still_missing_four_county_office_routing_remainder_and_tail_pages_are_empty :: Reviewed 2026-06-23 the live official HCA Field Offices archive across pages 1 through 12 plus bounded same-host county searches. Pages 1 through 8 still prove county-specific office posts for 29 of 33 New Mexico counties: Bernalillo, Roosevelt, Hidalgo, Chaves, Curry, Doña Ana, Eddy, Guadalupe, Sandoval, Lincoln, McKinley, Quay, Rio Arriba, Los Alamos, San Juan, San Miguel, Santa Fe, Socorro, Torrance, Valencia, Otero, Lea, Sierra, Taos, Grant, Cibola, De Baca, Luna, and Colfax. Fresh exact probes on pages 9 through 12 all returned HTTP 200 with the same generic `Field Offices` archive shell but no additional county office posts and no Catron, Harding, Mora, or Union office-routing text. Bounded same-host search still only surfaced a non-office service-expansion article for Harding/Union, a SNAP-loss article for Mora, and no Catron county office hit. county_local_disability_resources therefore remains blocked on a four-county official office-routing remainder, and the archive tail itself is now proven empty rather than merely unreviewed.
 
 ## Verified source samples
 
@@ -42,12 +41,11 @@
 - legal_aid: verified_state_grade; samples=1; first=https://newmexicolegalaid.org/who-we-are/locations.html
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/
-- county_local_disability_resources: blocked_hca_archive_29_of_33_counties_with_four_county_remainder_and_empty_tail; samples=5; first=https://www.hca.nm.gov/lookingforassistance/field_offices_1/
+- county_local_disability_resources: verified_current_official_hca_field_offices_county_service_area_page; samples=4; first=https://www.hca.nm.gov/lookingforassistance/field_offices/
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [critical] county_local_disability_resources: review_official_hca_or_successor_office_roots_for_catron_harding_mora_union_only
 - [major] vocational_rehabilitation_pre_ets: browser_assisted_or_review_alternate_official_vr_root
 
 ## Current education-host finality
@@ -59,6 +57,6 @@
 ## Completion decision
 
 - New Mexico remains `BLOCKED` and `index_safe=false`.
+- County-local now clears from the current official HCA `Field Offices` page, which closes the earlier four-county remainder with explicit county-service-area assignments on the official host.
 - Education remains the highest-priority blocker because both official state-host families now fail closed while zero reviewed local leaves are preserved on disk.
-- County-local remains separately blocked on the four-county HCA remainder: Catron, Harding, Mora, and Union.
 - VR remains blocked on the 401 DVR host plus zero reviewed alternate official roots.

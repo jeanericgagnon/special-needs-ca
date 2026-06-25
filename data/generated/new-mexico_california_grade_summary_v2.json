@@ -2,21 +2,20 @@
   "state": "new-mexico",
   "state_code": "NM",
   "state_name": "New Mexico",
-  "batch": "batch353_new_mexico_education_host_finality_v1",
+  "batch": "batch363_new_mexico_current_field_offices_remainder_clear_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 33,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_hca_four_county_remainder_persists",
+  "primary_gap_reason": "current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
+    "district_or_county_education_routing"
   ],
   "major_gap_families": [
     "vocational_rehabilitation_pre_ets"
@@ -55,13 +54,10 @@
       "failure_code": "official_dvr_root_returns_401_without_reviewed_public_alternate",
       "evidence": "Reviewed 2026-06-22 the exact official New Mexico DVR root https://www.dvr.nm.gov/, which returned HTTP 401 Unauthorized in bounded fetches. The old packet still lacks any reviewed alternate first-party VR or Pre-ETS page on disk, so the family is no longer just missing-inventory; it is blocked on the official DVR lane requiring browser-assisted or alternate official-root review.",
       "next_action": "browser_assisted_or_review_alternate_official_vr_root"
-    },
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "official_hca_archive_still_missing_four_county_office_routing_remainder_and_tail_pages_are_empty",
-      "evidence": "Reviewed 2026-06-23 the live official HCA Field Offices archive across pages 1 through 12 plus bounded same-host county searches. Pages 1 through 8 still prove county-specific office posts for 29 of 33 New Mexico counties: Bernalillo, Roosevelt, Hidalgo, Chaves, Curry, Doña Ana, Eddy, Guadalupe, Sandoval, Lincoln, McKinley, Quay, Rio Arriba, Los Alamos, San Juan, San Miguel, Santa Fe, Socorro, Torrance, Valencia, Otero, Lea, Sierra, Taos, Grant, Cibola, De Baca, Luna, and Colfax. Fresh exact probes on pages 9 through 12 all returned HTTP 200 with the same generic `Field Offices` archive shell but no additional county office posts and no Catron, Harding, Mora, or Union office-routing text. Bounded same-host search still only surfaced a non-office service-expansion article for Harding/Union, a SNAP-loss article for Mora, and no Catron county office hit. county_local_disability_resources therefore remains blocked on a four-county official office-routing remainder, and the archive tail itself is now proven empty rather than merely unreviewed.",
-      "next_action": "review_official_hca_or_successor_office_roots_for_catron_harding_mora_union_only"
     }
-  ]
+  ],
+  "familyStatuses": {
+    "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
+    "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page"
+  }
 }

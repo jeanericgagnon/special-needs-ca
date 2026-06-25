@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T12:27:43.062Z",
+  "generatedAt": "2026-06-25T12:58:05.830Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 33,
@@ -2167,11 +2167,11 @@
       "legacyManualReviewRate": 57.56,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 33,
-      "strongCriticalFamilies": 9,
-      "weakCriticalFamilies": 3,
+      "strongCriticalFamilies": 10,
+      "weakCriticalFamilies": 2,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 75,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "new-mexico",
         "state_code": "NM",
@@ -2227,11 +2227,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_hca_archive_29_of_33_counties_with_four_county_remainder_and_empty_tail"
+        "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page"
       },
       "packetGenerated": true,
-      "packetBatch": "batch353_new_mexico_education_host_finality_v1",
-      "packetPrimaryGapReason": "current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_hca_four_county_remainder_persists",
+      "packetBatch": "batch363_new_mexico_current_field_offices_remainder_clear_v1",
+      "packetPrimaryGapReason": "current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
