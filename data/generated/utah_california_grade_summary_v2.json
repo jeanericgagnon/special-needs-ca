@@ -2,7 +2,7 @@
   "state": "utah",
   "state_code": "UT",
   "state_name": "Utah",
-  "batch": "batch328_utah_zip_city_contract_finality_v1",
+  "batch": "batch329_utah_wpsl_category_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "live_utah_dhhs_contacts_page_recovers_but_explicitly_defers_local_office_info_and_current_dws_office_search_still_limits_public_lookup_to_zip_or_city_without_any_county_contract",
+  "primary_gap_reason": "live_utah_dhhs_contacts_and_first_party_wpsl_location_api_only_prove_general_contacts_plus_non_disability_program_location_categories_while_dws_lookup_remains_zip_city_without_any_county_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,13 +42,13 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "live_utah_dhhs_contacts_page_recovers_but_explicitly_defers_local_office_info_and_current_dws_office_search_still_limits_public_lookup_to_zip_or_city_without_any_county_contract",
-      "evidence": "Reviewed 2026-06-24 one more bounded official Utah county-local pass from the repo-side lane. `https://dhhs.utah.gov/contacts/` is publicly reviewable again at HTTP 200 with the title `Contacts - Utah Department of Health and Human Services`, but the page now sharpens the blocker instead of clearing it. The live page routes broad community-service discovery to `https://211utah.org/`, says users can find services by clicking on a county in the map below or using a search bar by type, and later explicitly says `Please visit specific division or program pages for local office information.` The surviving official local-office path remains the DWS family: `https://jobs.utah.gov/department/contact/index.html` still links users to an online `Office Map`, the legacy `/jsp/officesearch/` alias still routes into the live `https://jobs.utah.gov/office-search/` app, and the live public shell now makes the surviving contract even narrower because its footer input placeholder says `Zip Code or City` and the button only routes to `search/<zip-or-city>` or `map`. The public API surface is still bounded to `https://officesearch-api.jobs.utah.gov/api/v1/offices` plus `https://officesearch-api.jobs.utah.gov/api/v1/services`. The offices payload still returns 99 rows covering 45 unique offices with inventory fields like `officeName`, address, city, ZIP, coordinates, serviceName, and instructions, but still exposes no `county`, `countiesServed`, or equivalent service-area field. The companion services payload only exposes three labels: `All Offices`, `USOR Services`, and `Employment Centers`. Same-host county-style probes like `/api/v1/counties`, `/api/v1/search`, and `/api/v1/offices/search` still do not materialize a county contract. Utah therefore still lacks any complete public county-to-office disability-resource mapping and remains blocked.",
+      "failure_code": "live_utah_dhhs_contacts_and_first_party_wpsl_location_api_only_prove_general_contacts_plus_non_disability_program_location_categories_while_dws_lookup_remains_zip_city_without_any_county_contract",
+      "evidence": "Reviewed 2026-06-24 one more bounded official Utah county-local pass from the repo-side lane. `https://dhhs.utah.gov/contacts/` is publicly reviewable again at HTTP 200 with the title `Contacts - Utah Department of Health and Human Services`, but the page still sharpens the blocker instead of clearing it. The live page routes broad community-service discovery to `https://211utah.org/`, says users can find services by clicking on a county in the map below or using a search bar by type, and later explicitly says `Please visit specific division or program pages for local office information.` The official DHHS WordPress API is also publicly reviewable at `https://dhhs.utah.gov/wp-json/` and exposes `wpsl/v1` plus `wp/v2/wpsl_stores` / `wp/v2/wpsl_store_category` routes, but the live first-party location collections only publish two category families: `Double Up Food Bucks locations` (58 rows) and `Home Visiting Locations` (9 rows). Those live categories confirm the current first-party location API is program-specific and still does not materialize county disability-resource office routing. The surviving official local-office path remains the DWS family: `https://jobs.utah.gov/department/contact/index.html` still links users to an online `Office Map`, the legacy `/jsp/officesearch/` alias still routes into the live `https://jobs.utah.gov/office-search/` app, and the live public shell still limits lookup to `Zip Code or City`. The public API surface is still bounded to `https://officesearch-api.jobs.utah.gov/api/v1/offices` plus `https://officesearch-api.jobs.utah.gov/api/v1/services`. The offices payload still returns 99 rows covering 45 unique offices with inventory fields like `officeName`, address, city, ZIP, coordinates, serviceName, and instructions, but still exposes no `county`, `countiesServed`, or equivalent service-area field. The companion services payload only exposes three labels: `All Offices`, `USOR Services`, and `Employment Centers`. Same-host county-style probes like `/api/v1/counties`, `/api/v1/search`, and `/api/v1/offices/search` still do not materialize a county contract. Utah therefore still lacks any complete public county-to-office disability-resource mapping and remains blocked.",
       "next_action": "hold_blocked_until_public_utah_successor_directory_api_or_reviewable_leaf_explicitly_maps_all_counties_to_local_disability_resource_offices"
     }
   ],
   "familyStatuses": {
     "district_or_county_education_routing": "verified_current_official_district_lea_directory",
-    "county_local_disability_resources": "blocked_live_dhhs_contacts_defers_local_offices_and_dws_zip_city_lookup_still_lacks_county_contract"
+    "county_local_disability_resources": "blocked_live_dhhs_contacts_and_wpsl_categories_still_do_not_materialize_county_local_disability_routing"
   }
 }

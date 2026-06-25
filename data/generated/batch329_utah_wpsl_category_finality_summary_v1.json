@@ -1,0 +1,37 @@
+{
+  "state": "utah",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "live_utah_dhhs_contacts_and_first_party_wpsl_location_api_only_prove_general_contacts_plus_non_disability_program_location_categories_while_dws_lookup_remains_zip_city_without_any_county_contract",
+  "dhhs_contacts_status": 200,
+  "dhhs_contacts_title": "Contacts - Utah Department of Health and Human Services",
+  "dhhs_local_office_deferral_present": true,
+  "dhhs_utah_211_referral_present": true,
+  "wp_json_status": 200,
+  "wpsl_stores_status": 200,
+  "wpsl_category_status": 200,
+  "wpsl_store_rows": 67,
+  "wpsl_category_count": 2,
+  "wpsl_categories": [
+    "Double Up Food Bucks locations",
+    "Home Visiting Locations"
+  ],
+  "office_search_shell_status": 200,
+  "office_search_footer_placeholder": "Zip Code or City",
+  "office_search_button_route": "search/<zip-or-city>|map",
+  "offices_api_status": 200,
+  "services_api_status": 200,
+  "services_api_labels": [
+    "All Offices",
+    "USOR Services",
+    "Employment Centers"
+  ],
+  "county_endpoint_status": 404,
+  "search_endpoint_status": 404,
+  "office_search_endpoint_status": 404,
+  "office_rows": 99,
+  "unique_offices": 45,
+  "next_action": "hold_blocked_until_public_utah_successor_directory_api_or_reviewable_leaf_explicitly_maps_all_counties_to_local_disability_resource_offices",
+  "lessons_updated": false
+}

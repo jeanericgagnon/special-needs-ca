@@ -381,3 +381,6 @@
 
 ### Public County Widgets Can Be Much Narrower Than The Backing Map Feed
 *   **Lesson:** If an official county widget points at a public config page, inspect that config directly instead of assuming it matches the backing map feed. Oklahoma Human Services exposed a live county-map widget, but its public `mapconfig2` model only published county entries for Adair and Alfalfa even while the separate public KML still exposed 60 placemarks and only 45 benefit-capable county contracts.
+
+### First-Party Location APIs Still Fail Closed When Their Categories Are The Wrong Program
+*   **Lesson:** If an official host exposes a live first-party location API, verify the published categories before treating it as a county-routing recovery. Utah DHHS now exposes live `wpsl` collections on its official WordPress API, but those collections only publish `Double Up Food Bucks locations` and `Home Visiting Locations`, so the first-party map stack still does not clear county-local disability routing.
