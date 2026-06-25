@@ -557,3 +557,6 @@
 
 ### Shadow SharePoint Schemas Do Not Count If The Live List Rows Still Omit The Field
 *   **Lesson:** If a SharePoint host exposes a helpful field on a zero-row shadow list or schema, verify that the same field exists on the actual live row contract before treating the blocker as cleared. New Mexico's WebED host exposed a separate zero-item `NM Schools` schema with `County Name`, but the real 935-row `2017 NM Schools` list still materialized only `Title` and `Column2` through `Column13`, so county-grade routing stayed blocked.
+
+### Reverse-Geocode Official Coordinates When The One-Line Address Lane Fails
+*   **Lesson:** If an official state detail API gives exact latitude and longitude but the one-line address geocoder misses, use the official Census `geographies/coordinates` endpoint before leaving the county attachment unresolved. Arizona's Mohave Valley and Prescott Unified rows only cleared once the official reverse geocoder returned Mohave County and Yavapai County from the state-provided coordinates.

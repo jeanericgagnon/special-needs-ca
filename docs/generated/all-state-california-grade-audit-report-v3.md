@@ -18,7 +18,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
-- Arizona remains blocked, but the education blocker is narrower: Coconino now clears through the official CAVIAT root plus a live 504 leaf, Mohave has a reviewed alternate special-services leaf that still lacks official county attachment in this lane, Yavapai still lacks a role-bearing local leaf, and county-local still bottoms out in AHCCCS support-letter PDFs rather than a county-routing contract.
+- Arizona remains blocked only on county-local disability routing: education now clears through official local leaves in Coconino, Mohave, and Yavapai, but the DES lane is still challenged and the AHCCCS ALTCS HTML/PDF artifacts still do not publish a county-to-office contract.
 - South Dakota remains blocked, but the blocker is now singular and cleaner: official DOE district-directory pages now clear education routing, official UJS legal-help pages clear statewide legal aid, and only county-local disability routing remains below California-grade because the current DHS host still exposes no public county-to-office or local-service contract.
 - Wyoming remains blocked, but the blocker set is much narrower than before: official WDE IDEA pages now clear statewide special-education authority, first-party PTI and statewide legal-aid evidence are now restored, and the remaining blockers are only county/district education routing without a reviewable crosswalk plus county-local disability routing that is still aging/community-living only on the public WDH host.
 - Texas remains COMPLETE/index-safe from v10.

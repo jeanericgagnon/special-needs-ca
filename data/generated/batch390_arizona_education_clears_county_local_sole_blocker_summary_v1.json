@@ -1,0 +1,17 @@
+{
+  "batch": "batch390_arizona_education_clears_county_local_sole_blocker_v1",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_status": "verified_county_grade",
+  "county_local_status": "blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract",
+  "mohave_reverse_geocode_county": "Mohave County",
+  "yavapai_reverse_geocode_county": "Yavapai County",
+  "sole_blocker": "county_local_disability_resources",
+  "completeness_pct": 92,
+  "counts_unchanged": {
+    "complete": 40,
+    "blocked": 10,
+    "indexSafe": 40
+  }
+}
