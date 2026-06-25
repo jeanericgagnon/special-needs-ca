@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 16
-- primary_gap_reason: official_dhhs_office_pages_and_public_county_workbooks_exist_but_still_expose_no_county_to_office_or_service_area_contract
+- primary_gap_reason: official_dhhs_office_cross_program_referrals_and_public_county_workbooks_still_expose_no_county_to_office_or_service_area_contract
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed Pine Tree Legal Assistance now provides direct statewide Maine legal-aid evidence.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_public_dhhs_nav_stack_without_county_to_office_or_service_area_assignment_contract (Reviewed 2026-06-25 one more bounded official Maine DHHS navigation-stack pass across District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, the DHHS sitemap, and representative `Show Map` shortlinks. The current public stack still preserves office names, office towns, street addresses, phones, emails, program labels, office/division descriptions, and map shortlinks, but it still exposes zero county-served fields, zero service-area labels, and zero county-to-office assignment metadata. The district office page remains the strongest office-address source; the OFI contact/help lane only loops back to district offices plus statewide eligibility routing; Offices/Divisions and Administrative Office Locations add more office labels and addresses but no county routing; the sitemap only confirms the same public office leaves; and the sampled `Show Map` shortlinks still resolve only to raw Google Maps address geocodes. Maine therefore still has official office-grade address proof without any truthful county-to-office or county-to-service-area routing contract on the public host family.)
+- county_local_disability_resources: blocked_public_dhhs_office_cross_program_referrals_without_county_to_office_or_service_area_assignment_contract (Reviewed 2026-06-25 one more bounded official Maine DHHS navigation-stack pass across District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, the DHHS sitemap, and representative `Show Map` shortlinks. The current public stack still preserves office names, office towns, street addresses, phones, emails, program labels, office/division descriptions, and map shortlinks, but it still exposes zero county-served fields, zero service-area labels, and zero county-to-office assignment metadata. The district office page remains the strongest office-address source and now also proves cross-program office handoffs such as Bangor long-term-care questions routing to Machias, Biddeford long-term-care questions routing to Portland, and Farmington long-term-care questions routing to Augusta, plus child-support reroutes from Farmington, Fort Kent, Houlton, Skowhegan, and South Paris to other offices. Those office-to-office referrals still do not name counties, assign towns, or expose service-area boundaries. The OFI contact/help lane only loops back to district offices plus statewide eligibility routing; Offices/Divisions and Administrative Office Locations add more office labels and addresses but no county routing; the sitemap only confirms the same public office leaves; and the sampled `Show Map` shortlinks still resolve only to raw Google Maps address geocodes. Maine therefore still has official office-grade address proof and cross-program office referrals without any truthful county-to-office or county-to-service-area routing contract on the public host family.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_dhhs_office_pages_and_public_county_workbooks_still_lack_office_binding_fields :: Reviewed 2026-06-25 one more bounded official Maine DHHS/OFI pass across the public district-office stack, DHHS sitemap surfaces, and the live public county workbooks. The district office page still preserves office addresses and labels, and the public county workbooks are real official files, but neither surface binds counties or towns to DHHS/OFI office names, office identifiers, or service areas. Maine therefore still has official office addresses plus official county and county-town count workbooks without any public county-to-office assignment contract.
+- county_local_disability_resources: official_dhhs_office_cross_program_referrals_and_public_county_workbooks_still_lack_office_binding_fields :: Reviewed 2026-06-25 one more bounded official Maine DHHS/OFI pass across the public district-office stack, DHHS sitemap surfaces, and the live public county workbooks. The district office page still preserves office addresses and labels and now also proves office-to-office program referrals, while the public county workbooks are real official files, but neither surface binds counties or towns to DHHS/OFI office names, office identifiers, or service areas. Maine therefore still has official office addresses, cross-program office referrals, and official county and county-town count workbooks without any public county-to-office assignment contract.
 
 ## Verified source samples
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.ptla.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_public_dhhs_nav_stack_without_county_to_office_or_service_area_assignment_contract; samples=11; first=https://www.maine.gov/dhhs/about/contact/offices
+- county_local_disability_resources: blocked_public_dhhs_office_cross_program_referrals_without_county_to_office_or_service_area_assignment_contract; samples=11; first=https://www.maine.gov/dhhs/about/contact/offices
 
 ## Next actions
 
@@ -50,4 +50,4 @@
 
 - Maine remains BLOCKED and not index-safe.
 - Education remains cleared by the live official Superintendent-by-SAU and Superintendent-by-Town selectors.
-- County-local remains blocked because the full public DHHS navigation stack still proves office locations and office labels, not county-to-office or service-area routing.
+- County-local remains blocked because the full public DHHS navigation stack now proves office-to-office program referrals in addition to office locations and office labels, but still not county-to-office or service-area routing.
