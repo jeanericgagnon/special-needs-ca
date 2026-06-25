@@ -1,0 +1,16 @@
+{
+  "state": "kansas",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "district_or_county_education_routing",
+  "failure_code": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_23_counties",
+  "promoted_county": "montgomery-ks",
+  "promoted_counties_total": 23,
+  "district_host": "https://www.cvilleschools.com/",
+  "district_site_map_status": 200,
+  "district_search_status": 200,
+  "district_link_label": "Child Find Special Education Screening",
+  "cooperative_child_find_status": 200,
+  "cooperative_child_find_title": "Tri County Special Education Coop 607 - Child Find",
+  "next_action": "continue_only_from_saved_district_owned_and_district_linked_local_leads_because_current_live_ksde_state_export_lane_is_not_reproducible"
+}
