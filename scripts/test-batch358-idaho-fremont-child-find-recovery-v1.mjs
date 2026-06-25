@@ -42,23 +42,30 @@ const districtGap = gapRows.find((row) => row.family === 'district_or_county_edu
 assert.equal(districtGap.family_status, 'blocked_remaining_live_district_roots_only_materialize_wrong_role_contact_title_ix_or_federal_program_leaves_after_fremont_recovery');
 assert.match(districtGap.status_reason, /Fremont now exposes public district-owned Child Find Preschool Screenings/i);
 assert.match(districtGap.status_reason, /Camas still only materializes a district-owned `Contact Information` leaf/i);
-assert.match(districtGap.status_reason, /Shoshone remains live with district-office contacts, principal contacts, and federal-program menu leaves/i);
+assert.match(districtGap.status_reason, /Parent Notification of General Education Instruction/i);
+assert.match(districtGap.status_reason, /Shoshone remains live with district-office contacts plus federal-program menu leaves/i);
+assert.match(districtGap.status_reason, /Parent Notification of General Education Instruction & Intervention/i);
 
 const districtFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtFailure.failure_code, 'remaining_live_idaho_district_roots_materialize_contact_title_ix_or_federal_program_leaves_but_zero_role_bearing_special_education_or_student_services_routing');
 assert.match(districtFailure.evidence, /api\/v4\/o\/12771\/cms\/events/i);
 assert.match(districtFailure.evidence, /Child Find Preschool Screenings/i);
+assert.match(districtFailure.evidence, /parent-notification-of-general-education-instruction/i);
+assert.match(districtFailure.evidence, /shoshonesd\.org\/contracts\//i);
 assert.match(districtFailure.evidence, /Camas only exposes a district-owned `Contact Information` leaf/i);
 assert.match(districtFailure.evidence, /Shoshone exposes district-office contacts plus federal-program leaves/i);
+assert.match(districtFailure.evidence, /District Documents page that links a `Parent Notification of General Education Instruction & Intervention` PDF/i);
 
 const districtVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Camas Contact Information leaf'));
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Clark Contact Us leaf'));
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Clark Title IX leaf'));
+assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Clark Parent Notification of General Education Instruction leaf'));
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Fremont Child Find screenings API'));
 assert.ok(!districtVerified.samples.some((row) => row.sample_name === 'Fremont Contact Us leaf'));
 assert.ok(!districtVerified.samples.some((row) => row.sample_name === 'Fremont Title IX leaf'));
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Shoshone district-office and federal-program menu'));
+assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Shoshone District Documents notification PDF lane'));
 
 const districtNext = nextRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtNext.next_action, 'continue_exact_district_leaf_expansion_only_when_camas_clark_or_shoshone_publish_role_bearing_special_education_special_services_student_services_504_or_procedural_safeguards_leaves');
@@ -77,9 +84,10 @@ assert.match(stateReport, /Fremont now exposes public district-owned Child Find 
 assert.match(allStateReport, /Fremont now clears from public district-owned Child Find screening events/i);
 assert.match(handoff, /Current Focus State: Idaho/);
 assert.match(handoff, /Camas only exposes a district-owned `Contact Information` leaf/i);
-assert.match(handoff, /Clark exposes exact district-owned `Contact Us` and `Title IX` leaves/i);
+assert.match(handoff, /Clark exposes exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves/i);
 assert.match(handoff, /Fremont now also clears from the public official Apptegy events API/i);
 assert.match(handoff, /Shoshone exposes district-office contacts plus federal-program leaves/i);
+assert.match(handoff, /Shoshone District Documents/i);
 assert.match(handoff, /1\. New Mexico/);
 assert.match(handoff, /2\. Arizona/);
 assert.match(handoff, /3\. New Hampshire/);
@@ -87,9 +95,11 @@ assert.match(handoff, /3\. New Hampshire/);
 assert.equal(batchSummary.camas_contact_leaf_live, true);
 assert.equal(batchSummary.clark_contact_leaf_live, true);
 assert.equal(batchSummary.clark_title_ix_leaf_live, true);
+assert.equal(batchSummary.clark_parent_notification_leaf_live, true);
 assert.equal(batchSummary.fremont_child_find_events_api_live, true);
 assert.equal(batchSummary.residual_districts_with_exact_wrong_role_leaves, 3);
 assert.equal(batchSummary.residual_districts_with_special_ed_routing_leaves, 1);
+assert.equal(batchSummary.shoshone_district_documents_page_live, true);
 assert.equal(batchSummary.result, 'fremont_recovered_via_official_child_find_events_api_but_camas_clark_and_shoshone_still_materialize_wrong_role_leaves');
 assert.match(batchReport, /recovered Fremont local education routing from the official district events API/i);
 

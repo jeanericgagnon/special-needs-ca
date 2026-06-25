@@ -36,9 +36,9 @@ const FAILURE_CODE =
 const NEXT_ACTION =
   'continue_exact_district_leaf_expansion_only_when_camas_clark_or_shoshone_publish_role_bearing_special_education_special_services_student_services_504_or_procedural_safeguards_leaves';
 const DISTRICT_REASON =
-  'Reviewed 2026-06-25 one more bounded official Idaho district pass and upgraded one more county from exact official evidence. Fremont now exposes public district-owned Child Find Preschool Screenings through the official Apptegy events API used by `sd215.net`, including three local screening entries tied to Henry\'s Fork Elementary and Ashton Elementary with exact Fremont venues and dates. That is enough to treat Fremont as a real local Child Find routing lane rather than a generic contact/title-ix survivor. The unresolved remainder is now smaller and sharper. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone. Clark still materializes exact district-owned `Contact Us` and `Title IX` leaves, but they remain wrong-role leaves: `Contact Us` only lists district office staff and superintendent routing, while `Title IX` only links a Title IX policy and repeats generic district accessibility language. Shoshone remains live with district-office contacts, principal contacts, and federal-program menu leaves like Title I and Title IX-A for homeless children and youth, but still exposes no reusable district-owned special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho therefore remains blocked, but the education remainder is now down to Camas, Clark, and Shoshone.';
+  'Reviewed 2026-06-25 one more bounded official Idaho district pass and upgraded one more county from exact official evidence. Fremont now exposes public district-owned Child Find Preschool Screenings through the official Apptegy events API used by `sd215.net`, including three local screening entries tied to Henry\'s Fork Elementary and Ashton Elementary with exact Fremont venues and dates. That is enough to treat Fremont as a real local Child Find routing lane rather than a generic contact/title-ix survivor. The unresolved remainder is now smaller and sharper. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone. Clark now materially exposes three reviewed district-owned leaves, but all three stay wrong-role: `Contact Us` only lists district office staff and superintendent routing, `Title IX` only links a Title IX policy and repeats generic district accessibility language, and `Parent Notification of General Education Instruction` remains a general-education intervention notice rather than special-education or student-services routing. Shoshone remains live with district-office contacts plus federal-program menu leaves like Title I and Title IX-A for homeless children and youth, and the District Documents page now also surfaces a `Parent Notification of General Education Instruction & Intervention` PDF, but none of those leaves expose reusable district-owned special-education, special-services, student-services, 504, or procedural-safeguards routing. Idaho therefore remains blocked, but the education remainder is now down to Camas, Clark, and Shoshone.';
 const DISTRICT_EVIDENCE =
-  'Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.sd215.net/`, `https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events`, `https://shoshonesd.org/`, and the previously reviewed Jefferson and Oneida recovery sources. Jefferson remains positively recovered from district-owned `special-education`, `special-services`, `section-504`, and `student-services` leaves. Oneida remains positively recovered from the district-owned Child Find PDF. Fremont is now positively recovered from the public official district events API: the `o/12771/cms/events` feed preserves three exact `Child Find Preschool Screenings` rows for Henry\'s Fork Elementary and Ashton Elementary with Fremont venues and screening dates on the official district host family. The residual three districts now finalize as wrong-role survivors rather than unknown roots: Camas only exposes a district-owned `Contact Information` leaf with address and phone; Clark exposes exact district-owned `Contact Us` and `Title IX` leaves, but no special-education or student-services routing; and Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, but no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho therefore remains blocked because the remaining district-owned leaves are still the wrong role for local special-education routing.';
+  'Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction`, `https://www.sd215.net/`, `https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events`, `https://shoshonesd.org/`, `https://shoshonesd.org/contracts/`, and the previously reviewed Jefferson and Oneida recovery sources. Jefferson remains positively recovered from district-owned `special-education`, `special-services`, `section-504`, and `student-services` leaves. Oneida remains positively recovered from the district-owned Child Find PDF. Fremont is now positively recovered from the public official district events API: the `o/12771/cms/events` feed preserves three exact `Child Find Preschool Screenings` rows for Henry\'s Fork Elementary and Ashton Elementary with Fremont venues and screening dates on the official district host family. The residual three districts now finalize as wrong-role survivors rather than unknown roots: Camas only exposes a district-owned `Contact Information` leaf with address and phone; Clark exposes exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves, but no special-education or student-services routing; and Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, and a District Documents page that links a `Parent Notification of General Education Instruction & Intervention` PDF, but no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho therefore remains blocked because the remaining district-owned leaves are still the wrong role for local special-education routing.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -139,7 +139,7 @@ function buildHandoff(allStateAudit) {
     '',
     '### Blocker Reason',
     '',
-    '`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now down to three districts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont now also clears from the public official Apptegy events API used by `sd215.net`, which preserves exact `Child Find Preschool Screenings` rows for Henry\'s Fork Elementary and Ashton Elementary with Fremont venues and dates. The three remaining district roots now materialize exact wrong-role leaves instead of recoverable special-ed routing. Camas only exposes a district-owned `Contact Information` leaf with address and phone. Clark exposes exact district-owned `Contact Us` and `Title IX` leaves, but they only provide generic district office / policy routing. Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, but still no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho remains BLOCKED because the remaining district-owned leaves are real but still the wrong role for local special-education routing.',
+    '`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now down to three districts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont now also clears from the public official Apptegy events API used by `sd215.net`, which preserves exact `Child Find Preschool Screenings` rows for Henry\'s Fork Elementary and Ashton Elementary with Fremont venues and dates. The three remaining district roots now materialize exact wrong-role leaves instead of recoverable special-ed routing. Camas only exposes a district-owned `Contact Information` leaf with address and phone. Clark exposes exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves, but they only provide generic district office, compliance, or general-education intervention routing. Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, and its District Documents page links a `Parent Notification of General Education Instruction & Intervention` PDF, but still no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho remains BLOCKED because the remaining district-owned leaves are real but still the wrong role for local special-education routing.',
     '',
     '### Exact Evidence Needed',
     '',
@@ -154,9 +154,11 @@ function buildHandoff(allStateAudit) {
     '- [Clark root](https://www.clarkcountyschools161.org/)',
     '- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)',
     '- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)',
+    '- [Clark Parent Notification of General Education Instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)',
     '- [Fremont root](https://www.sd215.net/)',
     '- [Fremont district events API](https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events)',
     '- [Shoshone root](https://shoshonesd.org/)',
+    '- [Shoshone District Documents](https://shoshonesd.org/contracts/)',
     '- [Oneida Child Find PDF](https://5il.co/26a73)',
     '- [Jefferson sitemap](https://www.jeffersonsd251.org/wp-sitemap.xml)',
     '',
@@ -271,6 +273,16 @@ export function generateBatch358IdahoFremontChildFindRecoveryV1() {
       fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-owned Title IX page only links Title IX policy and repeats generic accessibility language; it does not expose special-education, 504, or student-services routing.',
     });
+    replaceSample(samples, 'Clark Parent Notification of General Education Instruction leaf', {
+      sample_name: 'Clark Parent Notification of General Education Instruction leaf',
+      source_url: 'https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction',
+      final_url: 'https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction',
+      verification_status: 'reviewed',
+      source_type: 'official_general_education_notification_leaf_wrong_role_for_special_education_routing',
+      source_table: BATCH_NAME,
+      fetched_at: '2026-06-25T00:00:00.000Z',
+      evidence_snippet: 'The district-owned page title is `Parent Notification of General Education Instruction`; it preserves general-education intervention notice routing, not special-education, student-services, 504, or procedural-safeguards routing.',
+    });
     samples = removeSample(samples, 'Fremont Contact Us leaf');
     samples = removeSample(samples, 'Fremont Title IX leaf');
     replaceSample(samples, 'Fremont Child Find screenings API', {
@@ -292,6 +304,16 @@ export function generateBatch358IdahoFremontChildFindRecoveryV1() {
       source_table: BATCH_NAME,
       fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The live district root preserves superintendent and principal contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, but no special-education, special-services, student-services, 504, or procedural-safeguards routing.',
+    });
+    replaceSample(samples, 'Shoshone District Documents notification PDF lane', {
+      sample_name: 'Shoshone District Documents notification PDF lane',
+      source_url: 'https://shoshonesd.org/contracts/',
+      final_url: 'https://shoshonesd.org/contracts/',
+      verification_status: 'reviewed',
+      source_type: 'official_district_documents_page_with_general_education_notification_pdf_only',
+      source_table: BATCH_NAME,
+      fetched_at: '2026-06-25T00:00:00.000Z',
+      evidence_snippet: 'The District Documents page links a `Parent Notification of General Education Instruction & Intervention` PDF, but the page still exposes no district-owned special-education, student-services, 504, or procedural-safeguards routing leaf.',
     });
     return {
       ...row,
@@ -348,8 +370,10 @@ export function generateBatch358IdahoFremontChildFindRecoveryV1() {
     camas_contact_leaf_live: true,
     clark_contact_leaf_live: true,
     clark_title_ix_leaf_live: true,
+    clark_parent_notification_leaf_live: true,
     fremont_child_find_events_api_live: true,
     shoshone_root_live: true,
+    shoshone_district_documents_page_live: true,
     residual_districts_with_exact_wrong_role_leaves: 3,
     residual_districts_with_special_ed_routing_leaves: 1,
     result: 'fremont_recovered_via_official_child_find_events_api_but_camas_clark_and_shoshone_still_materialize_wrong_role_leaves',
