@@ -2,7 +2,7 @@
   "state": "arizona",
   "state_code": "AZ",
   "state_name": "Arizona",
-  "batch": "batch350_arizona_pdf_support_letter_finality_v1",
+  "batch": "batch351_arizona_education_surface_recheck_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_azed_remaining_three_public_domains_still_lack_role_leaves",
+  "primary_gap_reason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves",
   "recommended_batch": "hold_for_new_official_county_contract_or_role_leaf",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,9 +41,9 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "three_reviewed_public_district_domains_exhaust_sitemaps_wp_api_and_exact_slug_replays_without_role_leafs",
-      "evidence": "Reviewed 2026-06-23 one more bounded Arizona district-owned official API and exact-slug pass for the final three unresolved education counties. https://www.ccasdaz.org/ stayed live, and https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10 returned HTTP 200, but the official WordPress search only replayed false-positive Governing Board and staff records rather than a role-bearing special-education or student-services leaf; the official page-sitemap.xml and post-sitemap.xml still exposed zero matching role paths. https://www.mohavelearning.org/ stayed live, but exact Finalsite-style role candidates at /fs/pages/504, /fs/pages/special-education, /fs/pages/student-services, and /fs/pages/special-services all returned 404. https://www.yavapaicountyhighschool.com/ stayed live and its /page/contact-us/ route returned HTTP 200, proving the public page namespace is real, but /page/special-education/, /page/student-services/, and /page/504/ all returned 404. The remaining Arizona education blocker is now source-final on three reviewed public domains that still lack role-bearing local leaves even after sitemap, API, and exact-slug replay.",
-      "next_action": "hold_three_reviewed_public_domains_until_role_bearing_special_education_or_student_services_leaves_exist"
+      "failure_code": "three_reviewed_public_district_domains_live_surface_recheck_exhausts_search_sitemap_and_exact_role_surfaces_without_role_leafs",
+      "evidence": "Reviewed 2026-06-25 a bounded live Arizona district-owned public-surface recheck for the final three unresolved education counties. https://www.ccasdaz.org/ returned HTTP 200, `https://www.ccasdaz.org/page-sitemap.xml` and `https://www.ccasdaz.org/post-sitemap.xml` returned HTTP 200 with no role-bearing special-education, student-services, 504, or Child Find URLs, and WordPress JSON searches for `special education`, `504`, `child find`, and `student services` only replayed Governing Board, About, Employment, school, or staff false positives. https://www.mohavelearning.org/ returned HTTP 200 with no role-bearing terms on the homepage, `https://www.mohavelearning.org/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404, `https://www.mohavelearning.org/search-results/~board/news/post/special-education` returned HTTP 200 but contained no role-bearing content, `https://www.mohavelearning.org/sitemap.xml` returned 404, and `https://www.mohavelearning.org/fs/pages/sitemap` returned 406. https://www.yavapaicountyhighschool.com/ returned HTTP 200, `https://www.yavapaicountyhighschool.com/sitemap.xml` returned HTTP 200 but only exposed generic pages and handbook/document leaves, `https://www.yavapaicountyhighschool.com/documents/` returned HTTP 200 with no role-bearing content, and `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404 while `/page/contact-us/` remained public. Arizona education therefore remains blocked because the reviewed public domains still expose no local role-bearing special-education, student-services, or 504 leaf.",
+      "next_action": "hold_three_reviewed_public_domains_until_role_bearing_special_education_student_services_or_504_leaves_exist"
     },
     {
       "family": "county_local_disability_resources",
@@ -53,6 +53,7 @@
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_ahcccs_pdf_bundle_resolves_to_support_letters_without_county_contract"
+    "county_local_disability_resources": "blocked_ahcccs_pdf_bundle_resolves_to_support_letters_without_county_contract",
+    "district_or_county_education_routing": "blocked_three_reviewed_public_district_domains_live_surface_recheck_still_without_role_leafs"
   }
 }

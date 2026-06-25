@@ -1,0 +1,9 @@
+# Batch 351 Arizona Education Surface Recheck v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: tightened the remaining education blocker with one more bounded live public-surface pass across the last three district-owned domains
+
+## Evidence
+
+- Reviewed 2026-06-25 one more bounded live Arizona district-owned public-surface pass for the final three unresolved education counties. Coconino County Accommodation School District stayed live at https://www.ccasdaz.org/, but its official `page-sitemap.xml` and `post-sitemap.xml` still exposed no role-bearing special-education, student-services, 504, or Child Find URLs, and fresh WordPress JSON searches for `special education`, `504`, `child find`, and `student services` only replayed false-positive Governing Board, About, Employment, school, or staff pages. Mohave Accelerated Schools stayed live at https://www.mohavelearning.org/, but the homepage preserved no role terms, exact leaf candidates such as `/page/504/`, `/page/special-education/`, and `/page/student-services/` returned 404, and the public `search-results/~board/news/post/special-education` surface returned HTTP 200 with no role-bearing content while the sitemap lane stayed unavailable (`/sitemap.xml` 404 and `/fs/pages/sitemap` 406). Yavapai Accommodation School District stayed live at https://www.yavapaicountyhighschool.com/, but its official sitemap only exposed generic pages, handbook/document leaves, and student outing forms; the `documents/` page preserved no role-bearing content; and `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404 even though `/page/contact-us/` remained public. The remaining Arizona education blocker is therefore source-final on three reviewed public domains that still lack role-bearing local leaves after live search, sitemap, documents, and exact-role rechecks.

@@ -11,7 +11,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 ## Current Blocked States
 
 - Alaska: `raw_health_host_challenge_persists_while_browser_reviewed_dpa_offices_page_still_lacks_borough_or_census_area_assignment_and_dfcs_contacts_add_no_local_contract`
-- Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_azed_remaining_three_public_domains_still_lack_role_leaves`
+- Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves`
 - Idaho: `remaining_idaho_district_roots_now_reduce_to_live_homepage_sitemap_surfaces_without_role_bearing_leaves_after_jefferson_special_services_recovery`
 - Maine: `official_dhhs_office_stack_and_new_ofi_county_reports_still_expose_no_office_assignment_or_service_area_crosswalk`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains`
@@ -28,52 +28,52 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Idaho blocker, but one district recovered. Jefferson is no longer just a blank shell: the public `wp-sitemap.xml` now exposes district-owned `special-services`, `section-504`, `special-education`, and `student-services` leaves, and the live `special-education` page explicitly describes Jefferson Joint School District 251 special education services, Child Find flyer links, and a district Special Education Department contact form. The unresolved education blocker is now smaller and limited to the other live district hosts: Camas, Clark, Fremont, Oneida, and Shoshone still stay publicly reachable, but bounded homepage plus sitemap review still exposes no safely promotable role-bearing `special education`, `special services`, `student services`, `504`, or procedural-safeguards leaves. County-local remains separately blocked because the DHW office stack still exposes no truthful county-to-office routing contract for the remaining blocked counties.
+`district_or_county_education_routing` is still the highest-priority Arizona blocker. Reviewed 2026-06-25 one more bounded live pass on the final three district-owned public domains. Coconino County Accommodation School District stayed live, but its public page/post sitemaps and WordPress JSON searches still only replayed false-positive board, employment, and staff records. Mohave Accelerated Schools stayed live, but the homepage preserved no role terms, the exact role pages still 404, the public search-results surface stayed empty, and the sitemap lanes remained unavailable. Yavapai Accommodation School District stayed live, but its sitemap only exposed generic pages plus handbook/document leaves, the `documents/` page preserved no role-bearing content, and the exact `504`, `special-education`, and `student-services` pages still 404. County-local remains separately blocked because the official AHCCCS UniversityFamilyCare PDF bundle is reviewable but only proves non-contract support letters. Arizona therefore stays blocked and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official district-owned special-education, special-services, student-services, 504, or procedural-safeguards leaf on Camas, Clark, Fremont, Oneida, or Shoshone.
-- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.
+- Any district-owned `special education`, `special services`, `student services`, `504`, or `Child Find` leaf on ccasdaz.org, mohavelearning.org, or yavapaicountyhighschool.com.
+- Any official Arizona state or county export that maps the remaining counties to reviewed district routing without relying on generic statewide fallbacks.
+- Any official AHCCCS, DES, or county-admin county-to-office assignment artifact for county-local disability resources.
 
 ### Useful Official URLs Already Tried
 
-- [Idaho SDE School Districts](https://www.sde.idaho.gov/school-districts/)
-- [Camas County Schools root](https://www.camascountyschools.org/)
-- [Clark Co School District 161 root](https://www.clarkcountyschools161.org/)
-- [Fremont County Joint School District #215 root](https://www.sd215.net/)
-- [Fremont County Joint School District #215 sitemap](https://www.sd215.net/sitemap.xml)
-- [Oneida School District root](https://www.oneidaschooldistrict.org/)
-- [Oneida School District sitemap](https://www.oneidaschooldistrict.org/sitemap.xml)
-- [Oneida Child Find link](https://5il.co/26a73)
-- [Shoshone School District root](https://shoshonesd.org/)
-- [Shoshone School District sitemap](https://shoshonesd.org/sitemap.xml)
-- [Shoshone School District wp-sitemap](https://shoshonesd.org/wp-sitemap.xml)
-- [Jefferson School District 251 sitemap](https://www.jeffersonsd251.org/wp-sitemap.xml)
-- [Jefferson special education](https://www.jeffersonsd251.org/special-education/)
-- [Jefferson special services](https://www.jeffersonsd251.org/special-services/)
-- [Jefferson section 504](https://www.jeffersonsd251.org/section-504/)
-- [Jefferson student services](https://www.jeffersonsd251.org/student-services/)
-- [Idaho DHW offices](https://healthandwelfare.idaho.gov/offices)
-- [Idaho DHW sitemap](https://healthandwelfare.idaho.gov/sitemap.xml)
+- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
+- [Coconino page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [Coconino post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
+- [Coconino wp-json special education search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
+- [Coconino wp-json 504 search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=504&per_page=20)
+- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
+- [Mohave public special-education search results](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
+- [Mohave exact 504 page](https://www.mohavelearning.org/page/504/)
+- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
+- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
+- [Yavapai documents page](https://www.yavapaicountyhighschool.com/documents/)
+- [Yavapai contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
+- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
+- [Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
+- [Pima County Administrator PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
+- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly published district-owned special-education or student-services leaf on Camas, Clark, Fremont, Oneida, or Shoshone.
-- Any official Idaho DHW county-to-office mapping contract for the 27 still-blocked counties.
+- Any newly published role-bearing local education leaf on the final three Arizona district-owned domains.
+- Any official Arizona export or public table that maps those counties to local district special-education routing.
+- Any official AHCCCS, DES, or county-admin county-to-office routing artifact.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Massachusetts
+2. New Mexico
+3. South Dakota
+4. Rhode Island
+5. Virginia
+6. West Virginia
+7. North Dakota
+8. Wisconsin
+9. Washington
+10. Tennessee

@@ -1,0 +1,17 @@
+{
+  "batch": "batch351_arizona_education_surface_recheck_v1",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "ccasd_role_hits_found": 0,
+  "mohave_role_hits_found": 0,
+  "yavapai_role_hits_found": 0,
+  "ccasd_wp_json_false_positive_searches": 4,
+  "mohave_exact_role_404s": 3,
+  "mohave_search_results_empty": true,
+  "mohave_sitemap_xml_status": 404,
+  "mohave_fs_sitemap_status": 406,
+  "yavapai_exact_role_404s": 3,
+  "yavapai_documents_role_hits_found": 0,
+  "result": "three_live_public_district_domains_still_lack_role_bearing_local_education_leaves"
+}
