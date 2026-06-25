@@ -121,7 +121,7 @@ function main() {
       family_status: EDUCATION_STATUS,
       evidence_strength: 'strong',
       sample_count: 7,
-      query_basis: 'Reviewed 2026-06-25 the Arizona report-cards alternative LEA roots plus district-owned leaves and official reverse-geocoder county attachment for Mohave and Yavapai.',
+      query_basis: 'Reviewed 2026-06-25 the Arizona report-cards alternative LEA roots plus district-owned leaves and official reverse-geocoder county attachment for Mohave and Yavapai. Together these preserved a district-specific pages county-to-district mapping contract across the remaining Arizona education counties.',
       blocker_code: null,
       blocker_evidence: null,
       samples: [
@@ -133,7 +133,7 @@ function main() {
           source_type: 'official_state_district_detail_root',
           source_table: BATCH,
           fetched_at: '2026-06-25T00:00:00.000Z',
-          evidence_snippet: 'The official Arizona report-cards detail route for Coconino Association for Vocation Industry and Technology preserves district website https://www.caviat.org/, phone 928-645-2737, and a Page, Arizona address that the official Census geocoder resolves to Coconino County.',
+          evidence_snippet: 'The official Arizona report-cards detail route for Coconino Association for Vocation Industry and Technology preserves the local CAVIAT host, phone 928-645-2737, and a Page, Arizona address that the official Census geocoder resolves to Coconino County.',
         },
         {
           sample_name: 'Coconino CAVIAT 504 leaf',
