@@ -25,43 +25,37 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is still the highest-priority Arizona blocker. Reviewed 2026-06-25 one more bounded live pass on the final three district-owned public domains. Coconino County Accommodation School District stayed live, but its public page/post sitemaps and WordPress JSON searches still only replayed false-positive board, employment, and staff records. Mohave Accelerated Schools stayed live, but the homepage preserved no role terms, the exact role pages still 404, the public search-results surface stayed empty, and the sitemap lanes remained unavailable. Yavapai Accommodation School District stayed live, but its sitemap only exposed generic pages plus handbook/document leaves, the `documents/` page preserved no role-bearing content, and the exact `504`, `special-education`, and `student-services` pages still 404. County-local remains separately blocked because the official AHCCCS UniversityFamilyCare PDF bundle is reviewable but only proves non-contract support letters. Arizona therefore stays blocked and not index-safe.
+`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is Suffolk County. Bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` still returns the same HTTP 403 `Not allowed` shell in the low-token lane, so no replayable county export has been recovered yet.
 
 ### Exact Evidence Needed
 
-- Any district-owned `special education`, `special services`, `student services`, `504`, or `Child Find` leaf on ccasdaz.org, mohavelearning.org, or yavapaicountyhighschool.com.
-- Any official Arizona state or county export that maps the remaining counties to reviewed district routing without relying on generic statewide fallbacks.
-- Any official AHCCCS, DES, or county-admin county-to-office assignment artifact for county-local disability resources.
+- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.
+- Any current official Mass.gov DDS county field or county-grade export that covers Suffolk directly instead of requiring inference from office names or region labels.
+- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston, Chelsea, Revere, Winthrop, Charlestown, or other Suffolk communities inside a single reviewable office contract.
 
 ### Useful Official URLs Already Tried
 
-- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
-- [Coconino page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
-- [Coconino post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
-- [Coconino wp-json special education search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
-- [Coconino wp-json 504 search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=504&per_page=20)
-- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
-- [Mohave public special-education search results](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
-- [Mohave exact 504 page](https://www.mohavelearning.org/page/504/)
-- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
-- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
-- [Yavapai documents page](https://www.yavapaicountyhighschool.com/documents/)
-- [Yavapai contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
-- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
-- [Pima County Administrator PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
-- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
+- [Massachusetts DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
+- [Census TIGERweb county subdivision query](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
+- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [Massachusetts DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly published role-bearing local education leaf on the final three Arizona district-owned domains.
-- Any official Arizona export or public table that maps those counties to local district special-education routing.
-- Any official AHCCCS, DES, or county-admin county-to-office routing artifact.
+- Any reviewed Mass.gov DDS child page or export that preserves a Suffolk-serving town/community list directly.
+- Any reviewed Mass.gov DDS locality or search surface that names a Suffolk community inside an office-serving contract.
+- Any reviewed official cached/exported DDS locality artifact that can be replayed from disk and tied directly to Suffolk County without inference.
 
-## Next State Order After Arizona
+## Next State Order After Massachusetts
 
-1. New Hampshire
+1. Alaska
+2. Maine
+3. Idaho
+4. New Mexico
+5. Arizona
+6. New Hampshire
