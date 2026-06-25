@@ -1,0 +1,16 @@
+{
+  "batch": "batch342_alaska_live_dpa_offices_finality_v1",
+  "generated_at": "2026-06-25T02:43:55.928Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "dpa_landing_review_status": 200,
+  "dpa_landing_title": "Division of Public Assistance | State of Alaska | Department of Health",
+  "dpa_offices_review_status": 200,
+  "dpa_offices_title": "Division of Public Assistance (DPA) Offices | State of Alaska | Department of Health",
+  "dpa_offices_h1": "Division of Public Assistance (DPA) Offices",
+  "dfcs_services_review_status": 200,
+  "dfcs_publications_review_status": 200,
+  "dfcs_site_map_review_status": 200
+}

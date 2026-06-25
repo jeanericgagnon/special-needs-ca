@@ -408,3 +408,6 @@
 
 ### Treat Public District Sitemaps As A Finite Lane
 *   **Lesson:** When a county-bearing district root is live but its public sitemap or root scan exposes no role-bearing `special education`, `special services`, `student services`, or `504` slug, mark that host exhausted for the low-token lane instead of reopening it repeatedly. Idaho’s Bear Lake, Camas, Clark, Fremont, Jefferson, Oneida, and Shoshone district hosts stayed public, but their bounded sitemap/root lane still yielded no exact education leaf worth promoting.
+
+### A Recovered Official Office Page Still Needs County-Equivalent Assignment
+*   **Lesson:** If an official state office directory becomes browser-readable again but only lists office locations by broad region, do not clear county-local routing until the page or a companion artifact explicitly maps county-equivalent geographies to those offices. Alaska DPA offices recovered on `health.alaska.gov`, but the live page still grouped offices only by region and never assigned boroughs or census areas.
