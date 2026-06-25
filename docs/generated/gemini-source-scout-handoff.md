@@ -16,7 +16,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Maine: `official_dhhs_office_cross_program_referrals_and_public_county_workbooks_still_expose_no_county_to_office_or_service_area_contract`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
-- New Mexico: `official_webed_school_directory_and_rec_workbooks_live_but_no_county_crosswalk_or_county_labeled_local_education_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
+- New Mexico: `official_webed_directory_workbooks_are_live_single_sheet_exports_with_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
@@ -28,34 +28,33 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: New Mexico
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest-priority Idaho blocker. Jefferson and Oneida are already positively recovered from district-owned special-education and Child Find leaves, but the four remaining district-owned survivors now prove a narrower truth than a generic local gap. Camas only exposes a district-owned `Contact Information` leaf and no sitemap; Clark exposes a live sitemap plus district-owned `Contact Us` and `Title IX` leaves; Fremont exposes a live sitemap, `Contact Us`, `Title IX-Sexual Harassment`, `/documents`, and `/page/district-forms`; and Shoshone exposes live post sitemaps plus district-office contacts and federal-program leaves like Title I and Title IX-A. Across those exact same-host lanes, the current public evidence still materializes only contact, Title IX, or generic district leaves and no special-education, special-services, student-services, 504, Child Find, or procedural-safeguards routing leaves.
+`district_or_county_education_routing` is the highest-priority New Mexico blocker. The official PED-managed directory host is now live, and its public workbook downloads were rechecked directly. `NM Schools.xlsx`, `Superintendents.xlsx`, and `REC Directors.xlsx` all return HTTP 200 from `webed.ped.state.nm.us`, but a bounded workbook-structure inspection confirmed each one is a single-sheet export with district, superintendent, or REC contact data only. None of the three preserves a county field, and the REC workbook preserves no county-service-area labels. The dead legacy `education.new-mexico.gov` host still cannot substitute, and the current `webnew.ped.state.nm.us/bureaus/special-education/` page still remains statewide-only. New Mexico therefore remains blocked on an official county-to-district or county-to-REC crosswalk, not on absence of a public PED directory.
 
 ### Exact Evidence Needed
 
-- Any current district-owned special-education, special-services, student-services, 504, Child Find, or procedural-safeguards leaf on the Camas, Clark, Fremont, or Shoshone hosts.
-- Any live district-owned sitemap, forms library, or documents lane on those same hosts that now names one of those role-bearing education leaves directly.
-- Any official district export or document on those exact hosts that preserves local special-education routing contacts instead of only generic district contact or Title IX compliance text.
+- Any official New Mexico county-to-district or county-to-REC crosswalk published from the PED-managed directory host family.
+- Any official REC service-area document or page that explicitly names the counties served by each REC.
+- Any official PED-managed workbook, export, or directory leaf that adds a county field or county-labeled local routing contract to the current district or REC inventory.
 
 ### Useful Official URLs Already Tried
 
-- [Camas County Schools root](https://www.camascountyschools.org/)
-- [Clark County Schools sitemap](https://www.clarkcountyschools161.org/fs/pages/sitemap)
-- [Fremont Joint School District 215 sitemap](https://www.sd215.net/sitemap.xml)
-- [Fremont district forms page](https://www.sd215.net/page/district-forms)
-- [Shoshone School District root](https://shoshonesd.org/)
+- [New Mexico Public Schools Directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
+- [NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
+- [Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
+- [REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
+- [PED Special Education Bureau](https://webnew.ped.state.nm.us/bureaus/special-education/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any district-owned special-education or student-services leaf newly published on the remaining four Idaho district hosts.
-- Any same-host sitemap/document/forms inventory that now exposes a role-bearing slug on Camas, Clark, Fremont, or Shoshone.
-- Any reviewed local education document on those hosts that goes beyond contact or Title IX compliance and explicitly preserves special-education routing.
+- Any official county-bearing crosswalk exported from the live PED-managed directory host.
+- Any county-labeled REC service-area contract on PED-managed or REC first-party official hosts.
+- Any reviewed PED or REC source that goes beyond district or REC contact inventory and explicitly binds counties to local education-routing entities.
 
-## Next State Order After Idaho
+## Next State Order After New Mexico
 
-1. New Mexico
-2. Arizona
-3. New Hampshire
+1. Arizona
+2. New Hampshire

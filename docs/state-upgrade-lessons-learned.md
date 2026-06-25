@@ -520,5 +520,8 @@
 ### Contact And Title IX Leaves Still Do Not Prove Special-Education Routing
 *   **Lesson:** If the only surviving district-owned leaves are `Contact Us`, `Contact Information`, Title IX, or generic document pages, treat them as wrong-role evidence rather than a near-miss recovery. Idaho's Camas, Clark, Fremont, and Shoshone hosts stayed live and reviewable, but their bounded same-host lanes still materialized only contact, Title IX, or generic district leaves and no special-education-routing contract.
 
+### Single-Sheet Official Directory Exports Still Do Not Prove County Routing
+*   **Lesson:** If an official statewide directory host is live, inspect the workbook structure itself before assuming the export can be turned into county routing. New Mexico's official PED-managed `NM Schools.xlsx`, `Superintendents.xlsx`, and `REC Directors.xlsx` all downloaded cleanly, but each was only a single-sheet contact export with no county field and no REC county-service-area labels, so the blocker stayed an absent county crosswalk rather than an absent public directory.
+
 ### District-Owned Child Find PDFs Can Clear Local Education Routing When They Carry Real Contacts
 *   **Lesson:** If a district-owned Child Find PDF is already linked from the official host, run the bundled PDF extractor before treating it as a weak document-only lead. Oneida School District’s Child Find PDF carried the Special Education Director name, district address, phone, email, and explicit 3–21 Child Find scope, which was strong enough to recover county-grade education routing without any extra crawl.
