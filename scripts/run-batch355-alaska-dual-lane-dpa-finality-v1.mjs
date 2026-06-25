@@ -38,35 +38,13 @@ const FAMILY_STATUS =
 const NEXT_ACTION =
   'hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api';
 const UPDATED_AT = '2026-06-25';
-const PRIORITY_ORDER = [
-  'Utah',
-  'Kansas',
-  'Nebraska',
-  'Nevada',
-  'Florida',
+const ASSIGNED_STATE_ORDER = [
+  'Massachusetts',
   'Alaska',
-  'South Carolina',
-  'North Carolina',
-  'New York',
-  'Oklahoma',
-  'Oregon',
-  'Ohio',
-  'Minnesota',
   'Maine',
   'Idaho',
-  'Arizona',
-  'Massachusetts',
   'New Mexico',
-  'South Dakota',
-  'Rhode Island',
-  'Virginia',
-  'West Virginia',
-  'North Dakota',
-  'Wisconsin',
-  'Washington',
-  'Tennessee',
-  'Vermont',
-  'Wyoming',
+  'Arizona',
   'New Hampshire',
 ];
 
@@ -214,8 +192,8 @@ function buildHandoff(allStateAudit) {
   const blockedRows = allStateAudit.states
     .filter((row) => row.classification === 'BLOCKED')
     .sort((a, b) => a.stateName.localeCompare(b.stateName));
-  const nextBlockedStateNames = PRIORITY_ORDER
-    .slice(PRIORITY_ORDER.indexOf('Alaska') + 1)
+  const nextBlockedStateNames = ASSIGNED_STATE_ORDER
+    .slice(ASSIGNED_STATE_ORDER.indexOf('Alaska') + 1)
     .filter((stateName) => blockedRows.some((row) => row.stateName === stateName))
     .slice(0, 10);
 
