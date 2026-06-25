@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T16:50:18.288Z",
+  "generatedAt": "2026-06-25T16:52:25.755Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 36,
@@ -3157,11 +3157,11 @@
       "legacyManualReviewRate": 54.55,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 14,
-      "strongCriticalFamilies": 8,
-      "weakCriticalFamilies": 3,
-      "missingCriticalFamilies": 1,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 67,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "vermont",
         "state_code": "VT",
@@ -3195,24 +3195,15 @@
       },
       "sourcePackV2": null,
       "familyStatuses": {
-        "medicaid_state_health_coverage": "verified_state_grade",
-        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "verified_state_grade",
-        "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
-        "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "missing",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "verified_state_grade",
-        "able_program": "verified_state_grade",
-        "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "district_or_county_education_routing": "verified_state_grade",
+        "protection_and_advocacy": "verified_state_grade",
+        "parent_training_information_center": "verified_state_grade",
+        "county_local_disability_resources": "blocked_official_ahs_district_codes_without_public_office_crosswalk"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_14_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch370_vermont_official_routing_repair_v1",
+      "packetPrimaryGapReason": "official_ahs_district_jurisdiction_codes_are_public_but_no_reviewable_public_ahs_office_crosswalk_or_service_area_contract_exists",
+      "packetRecommendedBatch": "hold_for_new_official_ahs_office_crosswalk"
     },
     {
       "stateId": "virginia",
