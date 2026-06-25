@@ -1,0 +1,18 @@
+{
+  "batch": "batch391_new_hampshire_special_ed_downgrade_v1",
+  "state": "new-hampshire",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "downgraded_families": [
+    "special_education_idea_part_b"
+  ],
+  "strong_critical_families": 4,
+  "weak_critical_families": 8,
+  "completeness_pct": 33,
+  "global_counts": {
+    "COMPLETE": 40,
+    "BLOCKED": 10
+  },
+  "indexSafeCount": 40,
+  "incorrectlyIndexSafeStates": []
+}
