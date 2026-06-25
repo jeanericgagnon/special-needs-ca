@@ -12,3 +12,4 @@
 - The Alfalfa row preserves an exact county-local office contract; the Adair row does not.
 - A bounded official sitemap and sibling-leaf review surfaced only wrong-role `contact-us/*` pages, while the host search JSON stayed blocked and public search-results routes 404ed.
 - The broader KML remains stronger than the widget, and together with the salvaged Alfalfa row it still only yields 46 benefit-capable counties after TANF-only access points are excluded.
+- The extra sitemap-only archive county pages are explicitly cancelled mobile-office notices, and the DDS vacancies-by-county page is a service-availability inventory rather than a county-local office-routing contract.

@@ -44,6 +44,8 @@ assert.match(countyGap.status_reason, /Alfalfa row itself preserves a real count
 assert.match(countyGap.status_reason, /data-county-map-apiurl/);
 assert.match(countyGap.status_reason, /host search JSON is 403/);
 assert.match(countyGap.status_reason, /wrong-role pages like hotlines, FAQ, workforce, ombudsman complaints, and config shells/);
+assert.match(countyGap.status_reason, /cancelled mobile-office notices/);
+assert.match(countyGap.status_reason, /Vacancies By County and City/);
 assert.match(countyGap.status_reason, /remaining 31 counties/);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
@@ -53,16 +55,21 @@ assert.match(countyFailure.evidence, /Adair row remains too weak/);
 assert.match(countyFailure.evidence, /data-county-map-apiurl/);
 assert.match(countyFailure.evidence, /blocked search endpoint/);
 assert.match(countyFailure.evidence, /public 404 search-results routes/);
+assert.match(countyFailure.evidence, /archive McClain and Osage pages are explicitly cancelled mobile-office notices/);
+assert.match(countyFailure.evidence, /DDS vacancies page is a county-by-city community-services availability inventory/);
 assert.match(countyFailure.evidence, /remaining 31 counties/);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyVerified.sample_count, 10);
+assert.equal(countyVerified.sample_count, 13);
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma Human Services public widget feed'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma Human Services mapconfig2 model'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma map2 widget HTML api root'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma widget Alfalfa county row'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma widget Adair service note row'));
 assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma official sitemap and search exhaustion'));
+assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma archive McClain mobile office page'));
+assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma archive Osage mobile office page'));
+assert.ok(countyVerified.samples.some((row) => row.sample_name === 'Oklahoma DDS vacancies by county and city page'));
 
 const countyNext = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.match(countyNext.evidence, /salvage Alfalfa/);
@@ -79,6 +86,8 @@ assert.equal(auditRow.familyStatuses.county_local_disability_resources, 'blocked
 assert.match(stateReport, /public county widget only publishes Adair and Alfalfa/);
 assert.match(stateReport, /data-county-map-apiurl/);
 assert.match(stateReport, /OKDHS search JSON is blocked/);
+assert.match(stateReport, /cancelled mobile-office notices/);
+assert.match(stateReport, /Vacancies By County and City/);
 assert.match(stateReport, /remaining 31 counties/);
 assert.match(allStateReport, /only the Alfalfa row is independently sufficient/);
 assert.match(handoff, /Current Focus State: Oklahoma/);
@@ -103,6 +112,9 @@ assert.equal(batchSummary.sitemap_status, 200);
 assert.equal(batchSummary.blocked_search_status, 403);
 assert.equal(batchSummary.public_search_status, 404);
 assert.equal(batchSummary.sibling_contact_leaf_count, 7);
+assert.equal(batchSummary.archive_mcclain_status, 200);
+assert.equal(batchSummary.archive_osage_status, 200);
+assert.equal(batchSummary.dds_vacancies_status, 200);
 assert.deepEqual(batchSummary.salvaged_widget_counties, ['Alfalfa']);
 assert.deepEqual(batchSummary.service_note_only_counties, ['Adair']);
 assert.equal(batchSummary.benefit_capable_county_coverage_count, 46);
@@ -110,5 +122,6 @@ assert.equal(batchSummary.remaining_county_gap_count, 31);
 assert.ok(!batchSummary.remaining_county_gap.includes('Alfalfa'));
 assert.ok(batchSummary.remaining_county_gap.includes('Adair'));
 assert.ok(batchReport.includes('only the Alfalfa row is independently sufficient'));
+assert.ok(batchReport.includes('cancelled mobile-office notices'));
 
 console.log('test-batch325-oklahoma-widget-partiality-v1: ok');

@@ -1,6 +1,6 @@
 {
   "batch": "batch325_oklahoma_widget_partiality_v1",
-  "generated_at": "2026-06-25T08:05:01.269Z",
+  "generated_at": "2026-06-25T08:19:34.091Z",
   "state": "oklahoma",
   "classification": "BLOCKED",
   "index_safe": false,
@@ -43,6 +43,9 @@
       "status": 200
     }
   ],
+  "archive_mcclain_status": 200,
+  "archive_osage_status": 200,
+  "dds_vacancies_status": 200,
   "widget_feed_county_count": 2,
   "widget_feed_counties": [
     "Adair",

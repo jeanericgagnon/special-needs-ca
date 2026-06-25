@@ -95,11 +95,11 @@ function appendLessonIfMissing(filePath) {
 }
 
 function buildCountyReason(fetchedDate) {
-  return `Reviewed ${fetchedDate} one more bounded official Oklahoma county-local pass against the current OKDHS public county widget instead of only the KML. The live successor lane is still real: \`https://oklahoma.gov/okdhs/contact-us.html\` publishes a county-map widget and the widget points at \`https://oklahoma.gov/okdhs/contact-us/map2.html\`. The same live contact page still exposes no new county-complete export or public-assistance office directory beyond that widget and the out-of-scope Child Support offices tree. The same official page source still sharpens the blocker, but it also salvages one county. The widget HTML itself exposes one exact county API root through \`data-county-map-apiurl\`, and that public component API \`/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json\` returns only two county entries, while the linked public config model \`https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json\` likewise only publishes county entities for Adair and Alfalfa. The Alfalfa row itself preserves a real county-local office contract with county name, phone, toll-free, fax, and street address, so it can count as one additional truth-safe county. But the Adair row still only says Adair now serves Sequoyah residents and then falls back to a statewide phone route without preserving a local office address or a county-owned leaf for Adair. A bounded official sitemap and sibling-leaf review also failed to reveal a hidden replacement contract: the host search JSON is 403, public search-results routes 404, and the extra \`contact-us/*\` leaves exposed in sitemap review resolve to wrong-role pages like hotlines, FAQ, workforce, ombudsman complaints, and config shells rather than a county-complete disability/local directory. The broader public KML still contributes the stronger base coverage, and the combined official county-local total now stops at ${BENEFIT_CAPABLE_COUNTY_COVERAGE_COUNT} counties. The same host still proves county trees are technically publishable because \`https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html\` exposes a county-by-county tree, but that surface is explicitly Child Support only and cannot substitute for disability/local routing. Oklahoma therefore remains blocked because no current official county-local contract closes the remaining ${REMAINING_COUNTIES.length} counties.`;
+  return `Reviewed ${fetchedDate} one more bounded official Oklahoma county-local pass against the current OKDHS public county widget instead of only the KML. The live successor lane is still real: \`https://oklahoma.gov/okdhs/contact-us.html\` publishes a county-map widget and the widget points at \`https://oklahoma.gov/okdhs/contact-us/map2.html\`. The same live contact page still exposes no new county-complete export or public-assistance office directory beyond that widget and the out-of-scope Child Support offices tree. The same official page source still sharpens the blocker, but it also salvages one county. The widget HTML itself exposes one exact county API root through \`data-county-map-apiurl\`, and that public component API \`/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json\` returns only two county entries, while the linked public config model \`https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json\` likewise only publishes county entities for Adair and Alfalfa. The Alfalfa row itself preserves a real county-local office contract with county name, phone, toll-free, fax, and street address, so it can count as one additional truth-safe county. But the Adair row still only says Adair now serves Sequoyah residents and then falls back to a statewide phone route without preserving a local office address or a county-owned leaf for Adair. A bounded official sitemap and sibling-leaf review also failed to reveal a hidden replacement contract: the host search JSON is 403, public search-results routes 404, the extra \`contact-us/*\` leaves exposed in sitemap review resolve to wrong-role pages like hotlines, FAQ, workforce, ombudsman complaints, and config shells, the surfaced archive county leaves are explicitly cancelled mobile-office notices, and the DDS \`Vacancies By County and City\` page is a community-services availability inventory rather than a county-local office-routing contract. The broader public KML still contributes the stronger base coverage, and the combined official county-local total now stops at ${BENEFIT_CAPABLE_COUNTY_COVERAGE_COUNT} counties. The same host still proves county trees are technically publishable because \`https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html\` exposes a county-by-county tree, but that surface is explicitly Child Support only and cannot substitute for disability/local routing. Oklahoma therefore remains blocked because no current official county-local contract closes the remaining ${REMAINING_COUNTIES.length} counties.`;
 }
 
 function buildBlockerEvidence(fetchedDate) {
-  return `Reviewed ${fetchedDate} bounded official Oklahoma checks on \`https://oklahoma.gov/okdhs/contact-us.html\`, \`https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html\`, \`https://oklahoma.gov/okdhs/contact-us/map2.html\`, \`https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json\`, the public component feed at \`https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json\`, the public KML office-map feed at \`https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1\`, \`https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html\`, \`https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html\`, the official sitemap at \`https://oklahoma.gov/sitemap.xml\`, the blocked search endpoint \`https://oklahoma.gov/bin/sok-wcm/search.json?q=office%20locations&path=/content/sok-wcm/en/okdhs\`, and the public 404 search-results routes on the same host. The live OKDHS contact page still exposes no new county-complete export or public-assistance office directory beyond the partial widget and the out-of-scope Child Support offices tree. The newly surfaced official county-widget leaves still do not close the blocker overall, but they do salvage Alfalfa. \`dhsofficelocations.html\` canonically lands back on the generic contact-us page, while the live \`map2\` page exposes a county-widget shell whose HTML points at one exact \`data-county-map-apiurl\` root and whose public config model only contains county entities for Adair and Alfalfa. The matching public component feed also returns only those same two county entries. The Alfalfa row preserves an exact local office contract with phone, toll-free, fax, and street address in Cherokee, Oklahoma, so Alfalfa can now count as covered. The Adair row remains too weak because it only says Adair now serves Sequoyah residents and then falls back to the statewide \`(405) 522-5050\` route without preserving a local office address or county-owned contact leaf for Adair. Official sitemap review did surface additional \`contact-us/*\` leaves, but the reviewed candidates resolve to wrong-role pages like Long-Term Care Ombudsman complaints, hotlines, FAQ, workforce, generic info, and config shells, not to a county-complete disability/local office directory. The broader public KML still preserves 60 placemarks, and together with the salvaged Alfalfa row it yields ${BENEFIT_CAPABLE_COUNTY_COVERAGE_COUNT} benefit-capable counties after strict review and TANF-only access points are excluded. The child-support office tree still proves county trees are technically publishable on the same official host, but it remains child-support-only. Oklahoma therefore still lacks truth-safe county-local proof for the remaining ${REMAINING_COUNTIES.length} counties: ${REMAINING_COUNTIES.join(', ')}.`;
+  return `Reviewed ${fetchedDate} bounded official Oklahoma checks on \`https://oklahoma.gov/okdhs/contact-us.html\`, \`https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html\`, \`https://oklahoma.gov/okdhs/contact-us/map2.html\`, \`https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json\`, the public component feed at \`https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json\`, the public KML office-map feed at \`https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1\`, \`https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html\`, \`https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html\`, \`https://oklahoma.gov/okdhs/services/dds/community-services/vacancies-by-county-and-city.html\`, the official sitemap at \`https://oklahoma.gov/sitemap.xml\`, the blocked search endpoint \`https://oklahoma.gov/bin/sok-wcm/search.json?q=office%20locations&path=/content/sok-wcm/en/okdhs\`, the public 404 search-results routes on the same host, and the surfaced archive pages \`https://oklahoma.gov/okdhs/archive/mcclaincounty34.html\` plus \`https://oklahoma.gov/okdhs/archive/osagecounty37.html\`. The live OKDHS contact page still exposes no new county-complete export or public-assistance office directory beyond the partial widget and the out-of-scope Child Support offices tree. The newly surfaced official county-widget leaves still do not close the blocker overall, but they do salvage Alfalfa. \`dhsofficelocations.html\` canonically lands back on the generic contact-us page, while the live \`map2\` page exposes a county-widget shell whose HTML points at one exact \`data-county-map-apiurl\` root and whose public config model only contains county entities for Adair and Alfalfa. The matching public component feed also returns only those same two county entries. The Alfalfa row preserves an exact local office contract with phone, toll-free, fax, and street address in Cherokee, Oklahoma, so Alfalfa can now count as covered. The Adair row remains too weak because it only says Adair now serves Sequoyah residents and then falls back to the statewide \`(405) 522-5050\` route without preserving a local office address or county-owned contact leaf for Adair. Official sitemap review did surface additional leaves, but the reviewed candidates still fail closed: the archive McClain and Osage pages are explicitly cancelled mobile-office notices, the DDS vacancies page is a county-by-city community-services availability inventory rather than office routing, and the other sibling leaves resolve to wrong-role pages like Long-Term Care Ombudsman complaints, hotlines, FAQ, workforce, generic info, and config shells, not to a county-complete disability/local office directory. The broader public KML still preserves 60 placemarks, and together with the salvaged Alfalfa row it yields ${BENEFIT_CAPABLE_COUNTY_COVERAGE_COUNT} benefit-capable counties after strict review and TANF-only access points are excluded. The child-support office tree still proves county trees are technically publishable on the same official host, but it remains child-support-only. Oklahoma therefore still lacks truth-safe county-local proof for the remaining ${REMAINING_COUNTIES.length} counties: ${REMAINING_COUNTIES.join(', ')}.`;
 }
 
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
@@ -136,6 +136,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '- The Alfalfa widget row is still good enough to count because it preserves county name, local phone, toll-free, fax, and street address on the official host.',
     '- The Adair widget row stays below the bar because it only preserves a service note for Sequoyah plus a statewide phone route, not a local office contract for Adair.',
     '- A bounded official sitemap and sibling-leaf review did not reveal a hidden replacement directory: OKDHS search JSON is blocked, public search-results routes 404, and the extra `contact-us/*` leaves are wrong-role pages rather than county-local disability routing.',
+    '- The extra sitemap-only archive county pages are explicitly cancelled mobile-office notices, and the DDS `Vacancies By County and City` page is a county-by-city service inventory rather than county-local office routing.',
     `- The broader KML still outperforms the widget, and together with the salvaged Alfalfa row it yields ${BENEFIT_CAPABLE_COUNTY_COVERAGE_COUNT} benefit-capable counties once TANF-only access points are excluded.`,
     '- The child-support office tree remains county-complete on the same host, which proves a county contract is technically publishable, but it stays out of scope because it is explicitly child-support-only.',
     '- The DDS area-contact page is still statewide-only and does not close any county remainder.',
@@ -205,6 +206,9 @@ function buildHandoff(allStateAudit) {
     '- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)',
     '- [Oklahoma Child Support offices tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)',
     '- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)',
+    '- [Oklahoma DDS vacancies by county and city](https://oklahoma.gov/okdhs/services/dds/community-services/vacancies-by-county-and-city.html)',
+    '- [Oklahoma archive McClain mobile office](https://oklahoma.gov/okdhs/archive/mcclaincounty34.html)',
+    '- [Oklahoma archive Osage mobile office](https://oklahoma.gov/okdhs/archive/osagecounty37.html)',
     '',
     '### Top Remaining Source-Scouting Targets',
     '',
@@ -244,6 +248,7 @@ function buildBatchReport(summary) {
     '- The Alfalfa row preserves an exact county-local office contract; the Adair row does not.',
     '- A bounded official sitemap and sibling-leaf review surfaced only wrong-role `contact-us/*` pages, while the host search JSON stayed blocked and public search-results routes 404ed.',
     `- The broader KML remains stronger than the widget, and together with the salvaged Alfalfa row it still only yields ${BENEFIT_CAPABLE_COUNTY_COVERAGE_COUNT} benefit-capable counties after TANF-only access points are excluded.`,
+    '- The extra sitemap-only archive county pages are explicitly cancelled mobile-office notices, and the DDS vacancies-by-county page is a service-availability inventory rather than a county-local office-routing contract.',
   ].join('\n') + '\n';
 }
 
@@ -303,6 +308,9 @@ async function main() {
     fetchText('https://oklahoma.gov/okdhs/contact-us/faq.html'),
     fetchText('https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.html'),
   ]);
+  const archiveMcClain = await fetchText('https://oklahoma.gov/okdhs/archive/mcclaincounty34.html');
+  const archiveOsage = await fetchText('https://oklahoma.gov/okdhs/archive/osagecounty37.html');
+  const ddsVacancies = await fetchText('https://oklahoma.gov/okdhs/services/dds/community-services/vacancies-by-county-and-city.html');
   const widgetRowsByCounty = Object.fromEntries(widgetFeed.json.map((row) => [row.countyName, row]));
   const alfalfaWidgetText = normalizeWidgetText(widgetRowsByCounty.Alfalfa?.countyData);
   const adairWidgetText = normalizeWidgetText(widgetRowsByCounty.Adair?.countyData);
@@ -336,7 +344,7 @@ async function main() {
   for (const row of verifiedRows) {
     if (row.family !== 'county_local_disability_resources') continue;
     row.family_status = FAMILY_STATUS;
-    row.query_basis = `Reviewed ${fetchedDate} the live OKDHS contact-us county widget, its public widget feed, its linked mapconfig2 model, the broader public KML, the child-support county tree, the statewide DDS area-contact page, the official sitemap, blocked search endpoints, and the sibling contact-us leaves on the same host.`;
+    row.query_basis = `Reviewed ${fetchedDate} the live OKDHS contact-us county widget, its public widget feed, its linked mapconfig2 model, the broader public KML, the child-support county tree, the statewide DDS area-contact page, the DDS vacancies-by-county page, the official sitemap, the surfaced archive county leaves, blocked search endpoints, and the sibling contact-us leaves on the same host.`;
     row.blocker_code = FAILURE_CODE;
     row.blocker_evidence = blockerEvidence;
     row.samples = [
@@ -437,7 +445,37 @@ async function main() {
         source_type: 'official_sitemap_and_search_negative_probe',
         source_table: BATCH_NAME,
         fetched_at: generatedAt,
-        evidence_snippet: `The official sitemap stayed public, but the bounded OKDHS search JSON returned HTTP ${blockedSearch.status} and the public search-results route returned HTTP ${publicSearch.status}; reviewed sibling contact-us leaves on the same host were wrong-role pages rather than a county-complete disability/local office directory.`,
+        evidence_snippet: `The official sitemap stayed public, but the bounded OKDHS search JSON returned HTTP ${blockedSearch.status} and the public search-results route returned HTTP ${publicSearch.status}; reviewed sibling contact-us leaves, surfaced archive county pages, and DDS county-by-city inventory on the same host still failed to produce a county-complete disability/local office directory.`,
+      },
+      {
+        sample_name: 'Oklahoma archive McClain mobile office page',
+        source_url: 'https://oklahoma.gov/okdhs/archive/mcclaincounty34.html',
+        final_url: archiveMcClain.finalUrl,
+        verification_status: 'reviewed',
+        source_type: 'official_cancelled_archive_mobile_office_notice',
+        source_table: BATCH_NAME,
+        fetched_at: generatedAt,
+        evidence_snippet: 'The surfaced archive page is explicitly titled `Cancelled - McClain County Mobile Office`, so it does not provide a current county-local office-routing contract.',
+      },
+      {
+        sample_name: 'Oklahoma archive Osage mobile office page',
+        source_url: 'https://oklahoma.gov/okdhs/archive/osagecounty37.html',
+        final_url: archiveOsage.finalUrl,
+        verification_status: 'reviewed',
+        source_type: 'official_cancelled_archive_mobile_office_notice',
+        source_table: BATCH_NAME,
+        fetched_at: generatedAt,
+        evidence_snippet: 'The surfaced archive page is explicitly titled `Cancelled - Osage County Mobile Office`, so it does not provide a current county-local office-routing contract.',
+      },
+      {
+        sample_name: 'Oklahoma DDS vacancies by county and city page',
+        source_url: 'https://oklahoma.gov/okdhs/services/dds/community-services/vacancies-by-county-and-city.html',
+        final_url: ddsVacancies.finalUrl,
+        verification_status: 'reviewed',
+        source_type: 'official_county_city_service_inventory_without_local_office_routing',
+        source_table: BATCH_NAME,
+        fetched_at: generatedAt,
+        evidence_snippet: 'The official DDS page is titled `Vacancies By County and City` and functions as a community-services availability inventory rather than a county-local office-routing or public-assistance office contract.',
       },
     ];
     row.sample_count = row.samples.length;
@@ -488,6 +526,9 @@ async function main() {
     public_search_status: publicSearch.status,
     sibling_contact_leaf_count: siblingLeaves.length,
     sibling_contact_leaf_statuses: siblingLeaves.map((row) => ({ url: row.finalUrl, status: row.status })),
+    archive_mcclain_status: archiveMcClain.status,
+    archive_osage_status: archiveOsage.status,
+    dds_vacancies_status: ddsVacancies.status,
     widget_feed_county_count: widgetFeed.json.length,
     widget_feed_counties: widgetFeed.json.map((row) => row.countyName),
     widget_config_county_count: Object.keys(widgetConfig.json[':items'].responsivegrid[':items']).length,
