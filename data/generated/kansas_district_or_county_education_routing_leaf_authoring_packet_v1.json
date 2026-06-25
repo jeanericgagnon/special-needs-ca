@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 81,
     "placeholderWebsiteRows": 81,
-    "authoredExactLeafCount": 29,
+    "authoredExactLeafCount": 30,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 29
+    "reviewedDistrictOwnedLeafCount": 30
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -171,6 +171,7 @@
     "douglas-ks",
     "ellis-ks",
     "finney-ks",
+    "franklin-ks",
     "geary-ks",
     "harvey-ks",
     "johnson-ks",
@@ -209,7 +210,6 @@
     "elk-ks",
     "ellsworth-ks",
     "ford-ks",
-    "franklin-ks",
     "gove-ks",
     "graham-ks",
     "grant-ks",

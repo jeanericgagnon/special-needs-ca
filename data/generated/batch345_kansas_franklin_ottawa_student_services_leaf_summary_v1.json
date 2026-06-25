@@ -1,0 +1,13 @@
+{
+  "state": "kansas",
+  "batch": "batch345_kansas_franklin_ottawa_student_services_leaf_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "promoted_county": "franklin-ks",
+  "promoted_counties_total": 30,
+  "district_root_status": 200,
+  "district_root_title": "Home | Ottawa USD 290",
+  "district_leaf_status": 200,
+  "district_leaf_title": "USD 290 Student Services - Special Education",
+  "district_leaf_h1": null
+}
