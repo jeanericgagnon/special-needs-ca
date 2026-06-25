@@ -2,7 +2,7 @@
   "state": "nebraska",
   "state_code": "NE",
   "state_name": "Nebraska",
-  "batch": "batch336_nebraska_geocoder_output_finality_v1",
+  "batch": "batch344_nebraska_portal_search_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "public_nebraska_office_config_still_only_references_one_web_map_a_closest_feature_output_and_a_geocoder_county_result_but_no_official_county_assignment_datasource",
+  "primary_gap_reason": "official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -43,12 +43,12 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "public_nebraska_office_config_still_only_references_one_web_map_a_closest_feature_output_and_a_geocoder_county_result_but_no_official_county_assignment_datasource",
-      "evidence": "Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across the live DHHS and ArcGIS publication stack, then inspected the live ExperienceBuilder item-data datasources directly. `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is still only the SharePoint wrapper for the locator, not a county directory leaf. The public resource list for item `76a6ec0ec7c449448c95d00f59002457` still exposes only config and image assets, with no CSV, table, or service-area attachment. The live ExperienceBuilder item data now proves the only configured datasources are `dataSource_3` (the public web map item `4bdbf8e8703743b0b2ff290f98737825`), `widget_382_output_closest_000433549029275504` (the closest-office feature-layer output), and `widget_383_output_config_0` (a geocoder result layer labeled `Nebraska from ArcGIS World Geocoding Service`). That geocoder output includes a `County` field, but it is only user-location metadata from the geocode result, not an official office service-area datasource. No additional table datasource, county-assignment datasource, or service-area output appears anywhere in the live item data. The underlying public web map still carries only the office and county boundary layers with zero tables, and the public FeatureServer still reports 42 office rows against 93 county rows with empty relationships and only 37 distinct office counties. One fresh bounded same-host pass also confirmed that `https://dhhs.ne.gov/Pages/economic-assistance.aspx`, `https://dhhs.ne.gov/Pages/Contact-DHHS.aspx`, and `https://dhhs.ne.gov/Pages/DD-Contact-Us.aspx` do not open a county-local office contract: each page only preserves a `Local DHHS Offices` link back to `Public-Assistance-Offices.aspx`, while the only alternate locality leaf exposed in the same nav is `Local Health Departments`, which is the wrong role for this family. Nebraska therefore still has no hidden table, output layer, related record, or published same-host county assignment bridge anywhere on the current official stack.",
+      "failure_code": "official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
+      "evidence": "Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across the live DHHS and ArcGIS publication stack, then queried the official public GIS portal search directly. `https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json` still returns only three public items with the same office-location title and the same owner family: the web map item `4bdbf8e8703743b0b2ff290f98737825`, the feature service item `cf70cb74fcc94634afc89f0a22a7d06f`, and the map service item `90a19933cfc444be836f51d15e2e23ec`. No table item, CSV, alternate directory layer, county-assignment app item, or other public office-routing artifact appears in that official search result set. The exact `Public Assistance Office Location Lookup` search also returns only the same web map item. Meanwhile `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is still only the SharePoint wrapper for the locator, the public ExperienceBuilder resources still expose only config and image assets, the underlying public web map still has only office and county boundary layers with zero tables, and the public FeatureServer still stops at 42 office rows against 93 counties. Nebraska therefore still has no public county-assignment item anywhere on the current official stack.",
       "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published"
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_public_config_only_exposes_closest_office_and_geocoder_county_outputs_without_assignment_contract"
+    "county_local_disability_resources": "blocked_official_portal_search_confirms_only_locator_trilogy_without_assignment_contract"
   }
 }

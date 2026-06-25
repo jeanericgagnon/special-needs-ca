@@ -1,0 +1,16 @@
+{
+  "state": "nebraska",
+  "batch": "batch344_nebraska_portal_search_finality_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
+  "official_portal_result_count": 3,
+  "official_portal_result_types": [
+    "Web Map",
+    "Feature Service",
+    "Map Service"
+  ],
+  "exact_lookup_search_result_count": 1,
+  "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published"
+}
