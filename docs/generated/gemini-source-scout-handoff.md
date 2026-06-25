@@ -28,42 +28,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Massachusetts
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Massachusetts blocker, but the exact DESE truth is now corrected. The official `search_link.aspx` bridge still auto-posts into `search.aspx`, and a fresh exact replay of that hidden payload still renders real district rows with superintendent and grades-served data. But the rendered result surface still has zero county column, zero county filter, and no county-keyed export contract. The separate live `get_closest_orgs.aspx` School Finder is still address/city/town based only. County-local remains separately blocked because the DDS locations and interactive-map pages are still raw-403 in the low-token lane and still lack a county export or county crosswalk.
+`county_local_disability_resources` is the only remaining Alaska critical blocker. The current official Department of Health DPA host is reviewable again at the exact offices page, but it still only groups offices by broad regions and named office cities. It still does not assign Alaska boroughs or census areas to those offices, so it still does not create a county-equivalent routing contract. The DFCS successor surfaces remain public but still add only statewide phone routing or wrong-role branches, not borough/census-area office assignments.
 
 ### Exact Evidence Needed
 
-- Any official DESE county-to-district contract, county selector, county column, or county-keyed export.
-- Any official DDS county crosswalk, county-served export, or machine-readable county-to-office contract.
-- Or, a reviewed browser/cached locality capture from DESE or DDS that can be truthfully bridged to counties.
+- Any official Alaska page, export, PDF, spreadsheet, API, or ArcGIS layer that explicitly maps boroughs or census areas to DPA offices.
+- Any official borough/census-area-to-region contract on the Department of Health or DFCS hosts that can be truthfully bridged to the current DPA regional offices page.
+- Any official successor office locator that names boroughs or census areas alongside the office assignment itself.
 
 ### Useful Official URLs Already Tried
 
-- [DESE district-directory bridge](https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238)
-- [DESE Profiles Search results](https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238)
-- [DESE School Finder](https://profiles.doe.mass.edu/search/get_closest_orgs.aspx)
-- [DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
-- [DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
-- [DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [Department of Health DPA landing page](https://health.alaska.gov/dpa)
+- [Division of Public Assistance (DPA) Offices](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DPA dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
+- [Medicaid enrollment monthly snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Massachusetts county-keyed DESE export or selector.
-- Any official DDS county crosswalk or locality export that can be bridged to county rows without inference.
-- Any reviewed browser/cached locality capture from DESE or DDS that preserves county-safe routing evidence.
+- Any official Alaska public-assistance office export with borough or census-area assignments.
+- Any official Department of Health or DFCS locality directory that names boroughs/census areas directly.
+- Any official reviewable PDF, spreadsheet, API, or ArcGIS layer that bridges boroughs/census areas to the current DPA office regions without inference.
 
-## Next State Order After Massachusetts
+## Next State Order After Alaska
 
-1. New Mexico
-2. South Dakota
-3. Rhode Island
-4. Virginia
-5. West Virginia
-6. North Dakota
-7. Wisconsin
-8. Washington
-9. Tennessee
-10. Vermont
+1. Maine
+2. Idaho
+3. Arizona
+4. Massachusetts
+5. New Mexico
+6. South Dakota
+7. Rhode Island
+8. Virginia
+9. West Virginia
+10. North Dakota
