@@ -405,3 +405,6 @@
 
 ### Check OCR Tooling Before Looping On Official Image PDFs
 *   **Lesson:** If a county-office family depends on image-heavy official PDFs, verify the local OCR and PDF-raster toolchain before retrying the same files. Arizona’s AHCCCS lane had partial county text, but with no `tesseract`, `pdftotext`, `pdftoppm`, `PIL`, or `pdf2image` available, the honest next step was reviewed HTML admin leaves or a committed OCR artifact, not another parser loop.
+
+### Treat Public District Sitemaps As A Finite Lane
+*   **Lesson:** When a county-bearing district root is live but its public sitemap or root scan exposes no role-bearing `special education`, `special services`, `student services`, or `504` slug, mark that host exhausted for the low-token lane instead of reopening it repeatedly. Idaho’s Bear Lake, Camas, Clark, Fremont, Jefferson, Oneida, and Shoshone district hosts stayed public, but their bounded sitemap/root lane still yielded no exact education leaf worth promoting.

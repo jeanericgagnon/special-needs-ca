@@ -1,0 +1,18 @@
+{
+  "batch": "batch265_idaho_county_bearing_sitemap_exhaustion_v1",
+  "generated_at": "2026-06-22T23:55:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_exact_leaf_count": 12,
+  "exhausted_county_bearing_roots": [
+    "bear-lake-id",
+    "camas-id",
+    "clark-id",
+    "fremont-id",
+    "jefferson-id",
+    "oneida-id",
+    "shoshone-id"
+  ],
+  "lesson_added": false
+}
