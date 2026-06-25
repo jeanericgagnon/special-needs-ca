@@ -6,7 +6,7 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Texas, Utah
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah
 
 ## Current Blocked States
 
@@ -20,7 +20,6 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
-- Tennessee: `generic_or_statewide_evidence_used_where_local_required`
 - Vermont: `generic_or_statewide_evidence_used_where_local_required`
 - Virginia: `generic_or_statewide_evidence_used_where_local_required`
 - Washington: `generic_or_statewide_evidence_used_where_local_required`
