@@ -2,8 +2,8 @@
   "batch": "batch333_minnesota_live_route_and_dhs_404_refresh_v1",
   "generated_at": "2026-06-25T06:30:00.000Z",
   "state": "minnesota",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "classification": "COMPLETE",
+  "index_safe": true,
   "browser_reviewed_mde_district_route": true,
   "browser_reviewed_mde_county_route": true,
   "browser_reviewed_mde_county_member_page": true,
@@ -11,6 +11,6 @@
   "browser_reviewed_special_education_contacts": true,
   "raw_mde_root_still_flapping": true,
   "dhs_saved_replacement_404_count": 1,
-  "dhs_successor_route_bot_gated": true,
+  "browser_reviewed_dhs_successor_directory": true,
   "lessons_changed": false
 }

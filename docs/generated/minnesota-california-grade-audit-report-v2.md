@@ -1,10 +1,10 @@
 # Minnesota California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 91
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 87
-- primary_gap_reason: browser_reviewed_mdeorg_county_and_district_routes_now_clear_education_but_mn_dhs_successor_county_tribal_state_directory_is_still_bot_gated
+- primary_gap_reason: browser_reviewed_mdeorg_and_mn_dhs_successor_routes_now_clear_minnesota_to_complete
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed Mid-Minnesota Legal Aid preserves a live statewide legal-aid access route on first-party pages.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated (Minnesota county-local routing remains blocked, but the exact first-party picture is now sharper. The saved disability-services replacement URLs still return official DHS 404 pages, and the same official DHS shell exposes a likely successor route named `Minnesota Health Care Program county, Tribal and state directory`. But that exact successor route is also bot-gated behind a Radware challenge in bounded fetches, so there is still no reviewable county-grade local office contract on public first-party DHS surfaces.)
+- county_local_disability_resources: verified_browser_reviewed_official_mn_dhs_county_tribal_state_directory (Minnesota county-local routing now clears from the exact first-party DHS successor route. The saved disability-services replacement URLs still return official DHS 404 pages, but the named successor `Minnesota Health Care Program county, Tribal and state directory` is browser-readable on the official DHS host and publicly exposes county, Tribal, and state office entries with office name, mailing address, phone, and fax. The reviewed page shows early alphabet county entries like `Aitkin County` and `Anoka County`, a Tribal entry such as `White Earth Financial Services`, and late alphabet county coverage through `Yellow Medicine County`, which is enough to establish a county-grade public office contract on the official host.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_mn_dhs_404_shell_points_to_successor_county_tribal_state_directory_but_that_route_is_radware_blocked :: Reviewed 2026-06-25 bounded official Minnesota DHS county-and-tribal surfaces. The saved disability-services replacement URLs still return official DHS 404 pages, including https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/. The official DHS shell also exposes an exact successor contact route at https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp labeled `Minnesota Health Care Program county, Tribal and state directory`, but a fresh exact recheck showed that successor returning HTTP 302 into `validate.perfdrive.com` / `Radware Bot Manager Captcha`. Minnesota therefore still lacks a reviewable county-grade county/tribal office contract on public first-party DHS surfaces.
+- none
 
 ## Verified source samples
 
@@ -33,22 +33,22 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.minnesota.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.minnesota.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://education.mn.gov/
-- district_or_county_education_routing: verified_browser_reviewed_official_mdeorg_county_directory_and_special_education_contacts; samples=6; first=https://education.mn.gov/MDE/about/SchOrg/
+- district_or_county_education_routing: verified_browser_reviewed_official_mdeorg_county_directory_and_special_education_contacts; samples=7; first=https://education.mn.gov/MDE/about/SchOrg/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://mn.gov/dhs
 - protection_and_advocacy: verified_state_grade; samples=2; first=https://mylegalaid.org/disability-law-center/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/minnesota/
 - legal_aid: verified_state_grade; samples=1; first=https://mylegalaid.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://mn.gov/dhs/pca
-- county_local_disability_resources: blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated; samples=3; first=https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/
+- county_local_disability_resources: verified_browser_reviewed_official_mn_dhs_county_tribal_state_directory; samples=5; first=https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_reviewed_first_party_mn_dhs_county_tribal_state_directory_stays_public
+- none
 
 ## Completion decision
 
-- Minnesota remains BLOCKED and index_safe=false.
-- district_or_county_education_routing is now verified from browser-reviewed official MDE-ORG county and district pages, county member pages, district detail leaves, and the public Special Education Director contact list.
-- county_local_disability_resources remains blocked because the reviewed DHS disability-services replacements still 404 and the exact named successor county/tribal/state directory route is also bot-gated.
+- Minnesota is now COMPLETE and index_safe=true.
+- district_or_county_education_routing is verified from browser-reviewed official MDE-ORG county and district pages, county member pages, district detail leaves, and the public Special Education Director contact list.
+- county_local_disability_resources is verified from the browser-reviewed official DHS county/Tribal/state successor directory, which publishes county and Tribal office entries with contact details on the public host.
 - parent_training_information_center remains verified and is not a current blocker.

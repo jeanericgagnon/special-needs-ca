@@ -27,21 +27,20 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'minnesota-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP_REASON = 'browser_reviewed_mdeorg_county_and_district_routes_now_clear_education_but_mn_dhs_successor_county_tribal_state_directory_is_still_bot_gated';
+const PRIMARY_GAP_REASON = 'browser_reviewed_mdeorg_and_mn_dhs_successor_routes_now_clear_minnesota_to_complete';
 
 const DISTRICT_STATUS = 'verified_browser_reviewed_official_mdeorg_county_directory_and_special_education_contacts';
 const DISTRICT_REASON = 'Minnesota education now clears from browser-reviewed official MDE-ORG pages on the public MDE host. The public `Schools and Districts` route exposes district listings plus a `Special Education Directors` contact list and extract link. The public `Counties` route lists all 87 Minnesota counties and explicitly says users can click a county name to view all organizations located within that county. County member pages then enumerate district members, and district detail leaves preserve superintendent name, email, phone, website, physical address, and county on the same official host. That combination is enough to verify county-grade district routing without relying on the unstable raw-fetch-only root or export lane.';
 
-const COUNTY_STATUS = 'blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated';
-const COUNTY_FAILURE_CODE = 'official_mn_dhs_404_shell_points_to_successor_county_tribal_state_directory_but_that_route_is_radware_blocked';
-const COUNTY_REASON = 'Minnesota county-local routing remains blocked, but the exact first-party picture is now sharper. The saved disability-services replacement URLs still return official DHS 404 pages, and the same official DHS shell exposes a likely successor route named `Minnesota Health Care Program county, Tribal and state directory`. But that exact successor route is also bot-gated behind a Radware challenge in bounded fetches, so there is still no reviewable county-grade local office contract on public first-party DHS surfaces.';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-25 bounded official Minnesota DHS county-and-tribal surfaces. The saved disability-services replacement URLs still return official DHS 404 pages, including https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/. The official DHS shell also exposes an exact successor contact route at https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp labeled `Minnesota Health Care Program county, Tribal and state directory`, but a fresh exact recheck showed that successor returning HTTP 302 into `validate.perfdrive.com` / `Radware Bot Manager Captcha`. Minnesota therefore still lacks a reviewable county-grade county/tribal office contract on public first-party DHS surfaces.';
-const COUNTY_NEXT_ACTION = 'hold_blocked_until_reviewed_first_party_mn_dhs_county_tribal_state_directory_stays_public';
+const COUNTY_STATUS = 'verified_browser_reviewed_official_mn_dhs_county_tribal_state_directory';
+const COUNTY_REASON = 'Minnesota county-local routing now clears from the exact first-party DHS successor route. The saved disability-services replacement URLs still return official DHS 404 pages, but the named successor `Minnesota Health Care Program county, Tribal and state directory` is browser-readable on the official DHS host and publicly exposes county, Tribal, and state office entries with office name, mailing address, phone, and fax. The reviewed page shows early alphabet county entries like `Aitkin County` and `Anoka County`, a Tribal entry such as `White Earth Financial Services`, and late alphabet county coverage through `Yellow Medicine County`, which is enough to establish a county-grade public office contract on the official host.';
 
 const LESSON_HEADING = '### Browser-Readable Child Routes Can Clear A Flapping Raw-Fetch Directory';
 const LESSON_BODY = '*   **Lesson:** If raw fetches on an official directory family flap into bot protection but exact browser-reviewed child routes stay publicly readable, prefer the stable reviewed child pages over the unstable raw root. Minnesota MDE-ORG still flapped under raw fetch, yet the exact `Schools and Districts`, `Counties`, county-member, district-detail, and `Special Education Director` pages were publicly readable on the official host and were strong enough to clear county-grade education routing.';
 const LESSON_HEADING_2 = '### Official 404 Shells Can Still Expose The Real Successor Lane';
 const LESSON_BODY_2 = '*   **Lesson:** If an official 404 shell links a named successor route, verify that exact successor before freezing the blocker. Minnesota DHS disability-services replacements still 404, but the same shell exposed `county-tribal-state-offices.jsp`, which turned the blocker from “no successor found” into the more exact truth that the successor exists but is bot-gated.';
+const LESSON_HEADING_3 = '### Browser-Reviewed Successor Directories Can Retire A Raw-Fetch Blocker';
+const LESSON_BODY_3 = '*   **Lesson:** If bounded raw fetches still return challenge-like shells but the exact first-party successor route is publicly readable in the browser with county-grade rows, promote from the reviewed successor evidence instead of holding the state blocked on the raw shell. Minnesota DHS cleared only after the exact county/Tribal/state directory was reviewed directly and shown to publish real county and Tribal office entries across the alphabet.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -76,6 +75,10 @@ function appendLessons() {
     text = `${text.trimEnd()}\n\n${LESSON_HEADING_2}\n${LESSON_BODY_2}\n`;
     changed = true;
   }
+  if (!text.includes(LESSON_HEADING_3)) {
+    text = `${text.trimEnd()}\n\n${LESSON_HEADING_3}\n${LESSON_BODY_3}\n`;
+    changed = true;
+  }
   if (changed) fs.writeFileSync(INPUTS.lessons, text);
   return changed;
 }
@@ -96,7 +99,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '## Failure ledger',
     '',
-    ...failureRows.map((row) => `- ${row.family}: ${row.failure_code} :: ${row.evidence}`),
+    ...(failureRows.length ? failureRows.map((row) => `- ${row.family}: ${row.failure_code} :: ${row.evidence}`) : ['- none']),
     '',
     '## Verified source samples',
     '',
@@ -104,13 +107,13 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '## Next actions',
     '',
-    ...nextRows.map((row) => `- [${row.severity}] ${row.family}: ${row.next_action}`),
+    ...(nextRows.length ? nextRows.map((row) => `- [${row.severity}] ${row.family}: ${row.next_action}`) : ['- none']),
     '',
     '## Completion decision',
     '',
-    '- Minnesota remains BLOCKED and index_safe=false.',
-    '- district_or_county_education_routing is now verified from browser-reviewed official MDE-ORG county and district pages, county member pages, district detail leaves, and the public Special Education Director contact list.',
-    '- county_local_disability_resources remains blocked because the reviewed DHS disability-services replacements still 404 and the exact named successor county/tribal/state directory route is also bot-gated.',
+    '- Minnesota is now COMPLETE and index_safe=true.',
+    '- district_or_county_education_routing is verified from browser-reviewed official MDE-ORG county and district pages, county member pages, district detail leaves, and the public Special Education Director contact list.',
+    '- county_local_disability_resources is verified from the browser-reviewed official DHS county/Tribal/state successor directory, which publishes county and Tribal office entries with contact details on the public host.',
     '- parent_training_information_center remains verified and is not a current blocker.',
   ].join('\n') + '\n';
 }
@@ -119,75 +122,61 @@ function updateAllStateReport() {
   let text = fs.readFileSync(INPUTS.allStateReport, 'utf8');
   const staleBullets = [
     '- Minnesota remains blocked, and the stricter live truth is now: the MDE description page is public, the MDE-ORG root flaps between a live glossary page and Radware, the district/county/contact/analytics routes stay bot-gated, and the DHS disability-services 404 shell points to a named county/tribal/state successor route that is also bot-gated.',
+    '- Minnesota is still blocked overall, but education now clears from browser-reviewed official MDE-ORG county and district pages; the only remaining critical blocker is the DHS county/tribal/state directory successor, which still redirects into Radware.',
   ];
   for (const bullet of staleBullets) {
     text = text.replace(`${bullet}\n`, '');
   }
-  const newBullet = '- Minnesota is still blocked overall, but education now clears from browser-reviewed official MDE-ORG county and district pages; the only remaining critical blocker is the DHS county/tribal/state directory successor, which still redirects into Radware.';
+  const newBullet = '- Minnesota is now COMPLETE and index-safe: browser-reviewed official MDE-ORG county and district routes clear education, and the exact official DHS county/Tribal/state successor directory now clears county-local office routing on the public host.';
   if (!text.includes(newBullet)) text = `${text.trimEnd()}\n${newBullet}\n`;
   fs.writeFileSync(INPUTS.allStateReport, text);
 }
 
 function updateHandoff() {
   let text = fs.readFileSync(INPUTS.handoff, 'utf8');
+  text = text.replace(/- Minnesota: `[^`]+`\n/g, '');
   text = text.replace(
-    '- Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`',
-    '- Minnesota: `mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`'
-  );
-  text = text.replace(
-    '- Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`',
-    '- Minnesota: `mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`'
-  );
-  text = text.replace(
-    '- Minnesota: `mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`',
-    '- Minnesota: `browser_reviewed_mdeorg_county_and_district_routes_now_clear_education_but_mn_dhs_successor_county_tribal_state_directory_is_still_bot_gated`'
-  );
-  text = text.replace(
-    '- Minnesota: `mde_description_page_is_live_mdeorg_root_flaps_between_live_glossary_and_radware_child_routes_stay_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`',
-    '- Minnesota: `browser_reviewed_mdeorg_county_and_district_routes_now_clear_education_but_mn_dhs_successor_county_tribal_state_directory_is_still_bot_gated`'
+    'Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oregon, Pennsylvania, South Carolina, Texas, Utah',
+    'Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oregon, Pennsylvania, South Carolina, Texas, Utah'
   );
 
-  const focusSection = `## Current Focus State: Minnesota
+  const focusSection = `## Current Focus State: Maine
 
 ### Blocker Reason
 
-Minnesota no longer has an education blocker. Browser-reviewed official MDE-ORG pages on the public MDE host now provide a county-grade education-routing contract: the public \`Schools and Districts\` route exposes district listings plus a \`Special Education Directors\` contact list and extract link, the public \`Counties\` route lists all 87 Minnesota counties and explicitly says users can click a county name to view all organizations located within that county, county member pages enumerate district members, and district detail leaves preserve superintendent name, email, phone, website, physical address, and county. The only remaining critical blocker is \`county_local_disability_resources\`: the saved DHS disability-services replacements still 404, and the official shell now points to a named successor county/tribal/state directory route that is itself bot-gated.
+Maine no longer has an education blocker. The live official Superintendent-by-SAU and Superintendent-by-Town selectors on the Maine DOE NEO host both materialize real Bangor local superintendent rows with address, phone, fax, and email on bounded replay. The only remaining critical blocker is \`county_local_disability_resources\`: the official DHHS district office page still lists office towns and contact details but still exposes no county or service-area crosswalk.
 
 ### Exact Evidence Needed
 
-- A live official Minnesota DHS county/tribal/state directory route that stays public instead of redirecting into bot protection.
-- Or, any other first-party Minnesota DHS county-grade county/tribal office directory that is publicly reviewable without inference.
+- An official DHHS county or service-area crosswalk for office towns like Bangor, Calais, Machias, Portland, or Skowhegan.
+- Or, any other official Maine DHHS county-grade office-routing page or export that explicitly assigns counties or service areas to those offices.
 
 ### Useful Official URLs Already Tried
 
-- [Minnesota MDE description page](https://education.mn.gov/MDE/about/SchOrg/)
-- [Minnesota MDE-ORG root](https://pub.education.mn.gov/MdeOrgView/)
-- [Minnesota schools and districts route](https://pub.education.mn.gov/MdeOrgView/districts/index)
-- [Minnesota counties route](https://pub.education.mn.gov/MdeOrgView/reference/county)
-- [Minnesota county member page example](https://pub.education.mn.gov/MdeOrgView/groupTag/members/County?headStateOrganizationId=910001000000)
-- [Minnesota district detail example](https://pub.education.mn.gov/MdeOrgView/organization/show/262)
-- [Minnesota special education directors list](https://pub.education.mn.gov/MdeOrgView/contact/contactsByContactType?contactRoleTypeCode=SPEC_ED_DIR_Contact)
-- [Minnesota DHS county and tribal offices replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/)
-- [Minnesota DHS county tribal nation directory replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/)
-- [Minnesota DHS county tribal state directory successor](https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp)
+- [Maine NEO Primary Contacts By Organization](https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU)
+- [Maine NEO Superintendent by SAU](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU)
+- [Maine NEO Town selector](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town)
+- [Maine SAU workbook](https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx)
+- [Maine special education landing page](https://www.maine.gov/doe/learning/specialed)
+- [Maine DHHS district offices](https://www.maine.gov/dhhs/about/contact/offices)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Minnesota DHS successor page for county-and-tribal office routing that stays public instead of redirecting into Radware.
-- Any first-party DHS county/tribal/state office export, directory, or HTML contact contract that replaces the current bot-gated successor route.
+- Any official DHHS county/service-area crosswalk for the named district-office towns.
+- Any official DHHS district-office PDF, spreadsheet, ArcGIS layer, or service-area page that names counties served by Bangor, Calais, Caribou, Ellsworth, Machias, Portland, or Skowhegan.
 
-## Next State Order After Minnesota
+## Next State Order After Maine
 
-1. Maine
-2. Idaho
-3. Arizona
-4. Massachusetts
-5. New Mexico
-6. South Dakota
-7. Rhode Island
-8. Virginia
-9. West Virginia
-10. North Dakota`;
+1. Idaho
+2. Arizona
+3. Massachusetts
+4. New Mexico
+5. South Dakota
+6. Rhode Island
+7. Virginia
+8. West Virginia
+9. North Dakota
+10. Wisconsin`;
 
   text = text.replace(/## Current Focus State:[\s\S]*$/m, focusSection);
   fs.writeFileSync(INPUTS.handoff, `${text.trimEnd()}\n`);
@@ -198,14 +187,14 @@ function buildBatchReport() {
     '# Batch 333 Minnesota Live Route And DHS 404 Refresh Report v1',
     '',
     '- state: minnesota',
-    '- classification: BLOCKED',
-    '- index_safe: false',
+    '- classification: COMPLETE',
+    '- index_safe: true',
     '- refined_families: district_or_county_education_routing, county_local_disability_resources',
     '',
     '## What changed',
     '',
     '- Cleared `district_or_county_education_routing` from browser-reviewed public MDE-ORG routes: the schools-and-districts page, counties page, county member pages, district detail leaves, and the special-education-director contact list are all publicly readable on the official host.',
-    '- Narrowed Minnesota to one remaining critical blocker: the DHS county/tribal/state directory successor is still bot-gated and the saved disability-services replacements still 404.',
+    '- Cleared `county_local_disability_resources` from the browser-reviewed official DHS successor route: the exact county/Tribal/state directory is publicly readable and publishes county and Tribal office rows with contact details on the official host.',
   ].join('\n') + '\n';
 }
 
@@ -221,22 +210,14 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
   const updatedSummary = {
     ...summary,
     batch: 'batch333_minnesota_live_route_and_dhs_404_refresh_v1',
-    classification: 'BLOCKED',
-    index_safe: false,
-    completeness_pct: 91,
-    strong_critical_families: 11,
-    weak_critical_families: 1,
+    classification: 'COMPLETE',
+    index_safe: true,
+    completeness_pct: 100,
+    strong_critical_families: 12,
+    weak_critical_families: 0,
     primary_gap_reason: PRIMARY_GAP_REASON,
-    critical_gap_families: ['county_local_disability_resources'],
-    final_blockers: [
-      {
-        family: 'county_local_disability_resources',
-        severity: 'critical',
-        failure_code: COUNTY_FAILURE_CODE,
-        evidence: COUNTY_EVIDENCE,
-        next_action: COUNTY_NEXT_ACTION,
-      },
-    ],
+    critical_gap_families: [],
+    final_blockers: [],
   };
 
   const updatedGapRows = gapRows.map((row) => {
@@ -249,12 +230,10 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
     return row;
   });
 
-  const updatedFailureRows = failureRows.map((row) => {
-    if (row.family === 'county_local_disability_resources') {
-      return { ...row, failure_code: COUNTY_FAILURE_CODE, evidence: COUNTY_EVIDENCE, next_action: COUNTY_NEXT_ACTION };
-    }
-    return row;
-  }).filter((row) => row.family !== 'district_or_county_education_routing');
+  const updatedFailureRows = failureRows.filter((row) => (
+    row.family !== 'district_or_county_education_routing'
+    && row.family !== 'county_local_disability_resources'
+  ));
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
     if (row.family === 'district_or_county_education_routing') {
@@ -264,7 +243,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
         query_basis: 'Reviewed browser-readable official MDE-ORG county and district routes, county member pages, district detail leaves, and the Special Education Director contact list on 2026-06-25.',
         blocker_code: null,
         blocker_evidence: null,
-        sample_count: 6,
+        sample_count: 7,
         samples: [
           {
             sample_name: 'Minnesota MDE-ORG description page',
@@ -343,10 +322,10 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
       return {
         ...row,
         family_status: COUNTY_STATUS,
-        query_basis: 'Reviewed 2026-06-25 the saved DHS disability-services replacements plus the exact named successor county/tribal/state directory route.',
-        blocker_code: COUNTY_FAILURE_CODE,
-        blocker_evidence: COUNTY_EVIDENCE,
-        sample_count: 3,
+        query_basis: 'Reviewed 2026-06-25 the saved DHS disability-services replacements plus the exact named successor Minnesota DHS county/Tribal/state directory route in the browser.',
+        blocker_code: null,
+        blocker_evidence: null,
+        sample_count: 5,
         samples: [
           {
             sample_name: 'County and tribal offices replacement',
@@ -359,24 +338,44 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
             evidence_snippet: 'The saved replacement now returns HTTP 404 with title `404 / Minnesota Department of Human Services` rather than a public local-office directory.',
           },
           {
-            sample_name: 'County tribal state directory successor',
+            sample_name: 'County tribal state directory successor heading',
             source_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
-            final_url: 'http://validate.perfdrive.com/.../county-tribal-state-offices.jsp',
-            verification_status: 'blocked',
-            source_type: 'official_successor_route_radware',
+            final_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            verification_status: 'reviewed',
+            source_type: 'official_successor_directory_route',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
             fetched_at: '2026-06-25T00:00:00.000Z',
-            evidence_snippet: 'The exact DHS successor labeled `Minnesota Health Care Program county, Tribal and state directory` redirects into `validate.perfdrive.com` / `Radware Bot Manager Captcha` instead of yielding a public office directory.',
+            evidence_snippet: 'The exact DHS successor page is browser-readable on the official host with heading `Minnesota Health Care Program county, Tribal and state directory` and the section `County, Tribal and state health care offices`.',
           },
           {
-            sample_name: 'Legacy county-and-tribal-offices path family',
-            source_url: 'https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices.jsp',
-            final_url: 'https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices.jsp',
-            verification_status: 'blocked',
-            source_type: 'official_stale_legacy_path',
-            source_table: 'batch178_minnesota_mdeorg_directory_root_refresh',
-            fetched_at: '2026-06-23T00:00:00.000Z',
-            evidence_snippet: 'The old `.jsp` county-and-tribal-offices path remains stale and no longer preserves a reviewed local-office contract.',
+            sample_name: 'County entries Aitkin and Anoka',
+            source_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            final_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            verification_status: 'reviewed',
+            source_type: 'official_county_entries',
+            source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The reviewed page publishes concrete county rows including `Aitkin County` and `Anoka County`, each with mailing address, phone, and fax on the official DHS host.',
+          },
+          {
+            sample_name: 'Tribal entry White Earth Financial Services',
+            source_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            final_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            verification_status: 'reviewed',
+            source_type: 'official_tribal_entry',
+            source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The same official directory includes a Tribal row for `White Earth Financial Services`, confirming the page is a real county/Tribal/state office directory rather than a generic landing page.',
+          },
+          {
+            sample_name: 'Late alphabet county coverage',
+            source_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            final_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            verification_status: 'reviewed',
+            source_type: 'official_county_tail_entries',
+            source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The reviewed directory continues through late alphabet rows including `Washington County`, `Watonwan County`, `Wilkin County`, `Winona County`, `Wright County`, and `Yellow Medicine County`.',
           },
         ],
       };
@@ -384,26 +383,46 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
     return row;
   });
 
-  const updatedNextRows = nextRows.map((row) => {
-    if (row.family === 'county_local_disability_resources') {
-      return { ...row, failure_code: COUNTY_FAILURE_CODE, next_action: COUNTY_NEXT_ACTION, evidence: COUNTY_EVIDENCE };
-    }
-    return row;
-  }).filter((row) => row.family !== 'district_or_county_education_routing');
+  const updatedNextRows = nextRows.filter((row) => (
+    row.family !== 'district_or_county_education_routing'
+    && row.family !== 'county_local_disability_resources'
+  ));
 
   const updatedQueueRows = queueRows.map((row) => (
     row.state === 'minnesota'
-      ? { ...row, primary_gap_reason: PRIMARY_GAP_REASON }
+      ? {
+        ...row,
+        classification: 'COMPLETE',
+        index_safe: true,
+        completeness_pct: 100,
+        missing_critical_families: 0,
+        weak_critical_families: 0,
+        primary_gap_reason: PRIMARY_GAP_REASON,
+        recommended_batch: 'maintain_truth_only',
+        status: 'COMPLETE',
+        repair_lane: 'truth_maintenance_only',
+      }
       : row
   ));
 
   const updatedAllStateAudit = {
     ...allStateAudit,
     generatedAt: '2026-06-25T06:30:00.000Z',
+    classifications: {
+      ...allStateAudit.classifications,
+      COMPLETE: 32,
+      BLOCKED: 18,
+    },
+    indexSafeCount: 32,
     states: allStateAudit.states.map((row) => {
       if (row.stateId !== 'minnesota') return row;
       return {
         ...row,
+        classification: 'COMPLETE',
+        indexSafe: true,
+        strongCriticalFamilies: 12,
+        weakCriticalFamilies: 0,
+        completenessPct: 100,
         familyStatuses: {
           ...row.familyStatuses,
           district_or_county_education_routing: DISTRICT_STATUS,
@@ -411,6 +430,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
         },
         packetBatch: 'batch333_minnesota_live_route_and_dhs_404_refresh_v1',
         packetPrimaryGapReason: PRIMARY_GAP_REASON,
+        packetRecommendedBatch: 'maintain_truth_only',
       };
     }),
   };
@@ -431,8 +451,8 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
     batch: 'batch333_minnesota_live_route_and_dhs_404_refresh_v1',
     generated_at: '2026-06-25T06:30:00.000Z',
     state: 'minnesota',
-    classification: 'BLOCKED',
-    index_safe: false,
+    classification: 'COMPLETE',
+    index_safe: true,
     browser_reviewed_mde_district_route: true,
     browser_reviewed_mde_county_route: true,
     browser_reviewed_mde_county_member_page: true,
@@ -440,7 +460,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
     browser_reviewed_special_education_contacts: true,
     raw_mde_root_still_flapping: true,
     dhs_saved_replacement_404_count: 1,
-    dhs_successor_route_bot_gated: true,
+    browser_reviewed_dhs_successor_directory: true,
     lessons_changed: lessonsChanged,
   };
   writeJson(OUTPUTS.summary, batchSummary);

@@ -467,3 +467,6 @@
 
 ### One Recovered Official Selector Can Clear A Family Even If A Sibling Selector Still Errors
 *   **Lesson:** If one official local-routing selector starts materializing real local rows again, clear the family from that lane even if a sibling selector on the same host still falls into an error shell. Maine DOE’s Superintendent-by-SAU and Superintendent-by-Town selectors both returned Bangor local rows with address, phone, fax, and email after the Primary Contacts search/export lane still fell into `Home/CustomError`.
+
+### Browser-Reviewed Successor Directories Can Retire A Raw-Fetch Blocker
+*   **Lesson:** If bounded raw fetches still return challenge-like shells but the exact first-party successor route is publicly readable in the browser with county-grade rows, promote from the reviewed successor evidence instead of holding the state blocked on the raw shell. Minnesota DHS cleared only after the exact county/Tribal/state directory was reviewed directly and shown to publish real county and Tribal office entries across the alphabet.
