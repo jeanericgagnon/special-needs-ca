@@ -1,20 +1,20 @@
 # Wisconsin California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 91
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 72
-- primary_gap_reason: official_dpi_directory_and_cesa_network_are_public_but_no_reviewed_statewide_county_to_region_or_special_education_crosswalk_is_preserved_on_disk
+- primary_gap_reason: all_critical_families_verified_with_reviewed_first_party_or_official_evidence
 
 ## Family status
 
 - medicaid_state_health_coverage: verified_state_grade (statewide evidence is present at the required authority level)
 - medicaid_waiver_hcbs_disability_services: verified_state_grade (statewide evidence is present at the required authority level)
-- developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
-- early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
+- developmental_disability_idd_authority: verified_state_grade (Reviewed 2026-06-25 the official Wisconsin DHS `Services for People with Developmental/Intellectual Disabilities` page and the official `Services for Children with Delays or Disabilities` page. The DHS disabilities page says adults with developmental and intellectual disabilities should reach out to their local ADRC and links adult disability programs, while the children page lists Birth to 3, the Children's Long-Term Support Program, Katie Beckett Medicaid, and CCOP as programs for children with delays or disabilities. This supplies current official DHS developmental-disability authority and family-routing evidence.)
+- early_intervention_part_c: verified_state_grade (Reviewed 2026-06-25 the official Wisconsin DHS `Birth to 3 Program` page. The page states that the Wisconsin Birth to 3 Program is an early intervention special education program for children under age 3 with delays or disabilities, says the program is required under Part C of IDEA, and provides a `Birth to 3 Program contacts` button under `Find your local Birth to 3 Program`. This supplies current official Part C authority and state-to-local routing evidence.)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_official_directory_and_cesa_network_without_reviewable_county_or_special_education_crosswalk (Reviewed 2026-06-25 one more bounded official education-routing pass. DPI publishes a live official `Cooperative Educational Service Agency (CESA)` page with current CESA contacts, district counts, and links to all 12 CESA agency websites. DPI also publishes a live official `School Directory: Your Source for School Directory Data` page that links families to the `School Directory Public Portal`, and the reviewed public portal client assets preserve county and CESA filter surfaces. Multiple live first-party CESA sites further preserve district-owned navigation such as `Member Districts`, `Districts`, and `CESA 4 School Districts`, showing a real public regional network exists. But this pass still did not preserve a single reviewed statewide county-to-CESA contract, exported district list with county and CESA fields, or district-owned special-education crosswalk on disk. Because the current proof stops at portal and network structure instead of a reviewable statewide routing contract, Wisconsin education routing remains blocked.)
-- vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
+- district_or_county_education_routing: verified_state_grade (Reviewed 2026-06-25 the live official Wisconsin School Directory public portal on the DPI host. The public `School Districts` page tells families to use one or more filters to search school districts, exposes official `CESA` and `County` filter buttons, and renders a statewide district table whose header includes `CESA` and `County/Locale`. Reviewed public rows include `Abbotsford (0007)` with `CESA 10` and `Clark`, and `Adams-Friendship Area (0014)` with `CESA 5` and `Adams`, while the page footer shows `1-5 of 488 items`. A reviewed district-profile leaf such as Abbotsford further preserves `County | CESA` as `Clark County | CESA 10`. This supplies a reviewable official statewide district-to-county-to-CESA routing contract on the DPI host.)
+- vocational_rehabilitation_pre_ets: verified_state_grade (Reviewed 2026-06-25 the official Wisconsin DWD DVR home page and the official `Transition Services` page. The DVR home page says DVR helps people with disabilities find, keep, or improve a job and links `Education & Transition Services`. The reviewed transition page says DVR works with high school students transitioning to post-secondary education and employment, links a `Policy Guide for Pre-Employment Transition Services`, and publishes `DVR's Liaisons to Wisconsin Schools` plus university and technical-college liaison lists. This replaces Wisconsin's stale statewide VR placeholder with current official DWD DVR and transition-routing evidence.)
 - protection_and_advocacy: verified_state_grade (reviewed first-party protection-and-advocacy evidence is present at the required authority level)
 - parent_training_information_center: verified_state_grade (Reviewed 2026-06-25 live first-party WI FACETS pages. The current staff page says Nelsinia Ramos is `Co-Director of the Wisconsin Parent Training and Information Center, which the U.S. Department of Education funds`, and says Courtney Salzer is `Co-Director of the OSEP-funded Wisconsin Parent Training and Information Center (PTI)`. The live statewide projects page states `Parent Training and Information Center (PTIC)` and says WI FACETS has been funded by the U.S. Department of Education since 2001 to support families and others with training, information, and support related to children with disabilities and IDEA. This now supplies direct first-party PTI designation evidence for Wisconsin.)
 - legal_aid: verified_state_grade (Reviewed 2026-06-25 live first-party Legal Action Wisconsin pages. The homepage preserves an `Apply for FREE legal help` route, statewide service categories including housing, employment, debt and taxes, public benefits, family law, and victim support, and a current news item titled `Legal Action of Wisconsin and Judicare Legal Aid Merge, Creating Wisconsin's Largest Statewide Civil Legal...`. The about page also states the website was made possible by generous support of the Legal Services Corporation. Together these live first-party artifacts supply current statewide legal-aid evidence for Wisconsin.)
@@ -24,17 +24,17 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: official_school_directory_and_cesa_network_exist_but_no_reviewed_statewide_county_or_special_education_crosswalk_is_preserved :: Reviewed 2026-06-25 one more bounded official education-routing pass. DPI publishes a live official `Cooperative Educational Service Agency (CESA)` page with current CESA contacts, district counts, and links to all 12 CESA agency websites. DPI also publishes a live official `School Directory: Your Source for School Directory Data` page that links families to the `School Directory Public Portal`, and the reviewed public portal client assets preserve county and CESA filter surfaces. Multiple live first-party CESA sites further preserve district-owned navigation such as `Member Districts`, `Districts`, and `CESA 4 School Districts`, showing a real public regional network exists. But this pass still did not preserve a single reviewed statewide county-to-CESA contract, exported district list with county and CESA fields, or district-owned special-education crosswalk on disk. Because the current proof stops at portal and network structure instead of a reviewable statewide routing contract, Wisconsin education routing remains blocked.
+- none
 
 ## Verified source samples
 
 - medicaid_state_health_coverage: verified_state_grade; samples=3; first=https://www.ssa.gov
 - medicaid_waiver_hcbs_disability_services: verified_state_grade; samples=1; first=https://www.dhs.wisconsin.gov/familycare/eligibility.htm
-- developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.wisconsin.gov/dd
-- early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.wisconsin.gov/earlystart
+- developmental_disability_idd_authority: verified_state_grade; samples=3; first=https://www.dhs.wisconsin.gov/disabilities/index.htm
+- early_intervention_part_c: verified_state_grade; samples=3; first=https://www.dhs.wisconsin.gov/birthto3/index.htm
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://dpi.wi.gov/
-- district_or_county_education_routing: blocked_official_directory_and_cesa_network_without_reviewable_county_or_special_education_crosswalk; samples=4; first=https://dpi.wi.gov/about-dpi/cesa
-- vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dhs.wisconsin.gov
+- district_or_county_education_routing: verified_state_grade; samples=4; first=https://dpi.wi.gov/schooldirectory
+- vocational_rehabilitation_pre_ets: verified_state_grade; samples=4; first=https://dwd.wisconsin.gov/dvr/
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://disabilityrightswi.org/
 - parent_training_information_center: verified_state_grade; samples=3; first=https://wifacets.org/projects/statewide/
 - legal_aid: verified_state_grade; samples=3; first=https://legalaction.org/
@@ -44,12 +44,12 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: hold_blocked_until_wisconsin_publishes_reviewable_county_to_cesa_or_district_special_education_crosswalk
+- none
 
-## Repair decision
+## Completion decision
 
-- Wisconsin remains `BLOCKED` and `index_safe=false`.
-- `county_local_disability_resources` now clears because the official DHS ADRC contact directory publicly preserves county or Tribal service-area fields on live first-party contact cards.
-- `parent_training_information_center` now clears because WI FACETS now explicitly preserves current Wisconsin PTI designation language on live first-party pages.
-- `legal_aid` now clears because Legal Action Wisconsin preserves current first-party free legal-help routing, statewide service categories, and a merger notice describing Wisconsin's largest statewide civil legal organization.
-- `district_or_county_education_routing` is the only remaining blocker. DPI's public CESA and School Directory surfaces prove a live network exists, but this pass still does not preserve a reviewable statewide county-to-region or district special-education routing contract on disk.
+- Wisconsin is now `COMPLETE` and `index_safe=true`.
+- `district_or_county_education_routing` now clears because DPI's public School Directory preserves `CESA` and `County/Locale` fields in a statewide district table and repeats the contract on district-profile leaves such as Abbotsford.
+- `developmental_disability_idd_authority` is now anchored to current Wisconsin DHS developmental-disability and children's-services pages rather than a stale placeholder URL.
+- `early_intervention_part_c` is now anchored to the official Wisconsin Birth to 3 page and its local contacts path.
+- `vocational_rehabilitation_pre_ets` is now anchored to the official Wisconsin DWD DVR and Transition Services pages, including school liaison and Pre-ETS guidance links.

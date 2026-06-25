@@ -1,0 +1,12 @@
+{
+  "state": "wisconsin",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "cleared_families": [
+    "developmental_disability_idd_authority",
+    "early_intervention_part_c",
+    "district_or_county_education_routing",
+    "vocational_rehabilitation_pre_ets"
+  ],
+  "education_evidence": "Reviewed 2026-06-25 the live official Wisconsin School Directory public portal on the DPI host. The public `School Districts` page tells families to use one or more filters to search school districts, exposes official `CESA` and `County` filter buttons, and renders a statewide district table whose header includes `CESA` and `County/Locale`. Reviewed public rows include `Abbotsford (0007)` with `CESA 10` and `Clark`, and `Adams-Friendship Area (0014)` with `CESA 5` and `Adams`, while the page footer shows `1-5 of 488 items`. A reviewed district-profile leaf such as Abbotsford further preserves `County | CESA` as `Clark County | CESA 10`. This supplies a reviewable official statewide district-to-county-to-CESA routing contract on the DPI host."
+}
