@@ -1,4 +1,4 @@
-# Rhode Island California-Grade Audit Report v2
+# Rhode Island California-Grade Batch 82 Report v1
 
 - classification: BLOCKED
 - index_safe: false
@@ -50,7 +50,7 @@
 
 ## Completion decision
 
-- Rhode Island remains BLOCKED and not index-safe.
-- `district_or_county_education_routing` is now blocked on a narrower first-party truth: public RIDE directory surfaces inventory districts and special-education school types, but the public lanes still expose no county field and no public district special-education routing contract.
-- `county_local_disability_resources` is now blocked on a narrower first-party truth: public DHS office surfaces inventory office leaves and addresses, but the official host family still exposes no county-served or service-area contract.
-- Rhode Island therefore still cannot be marked COMPLETE until official public local-routing contracts exist for both education and county-local disability resources.
+- Rhode Island no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide protection-and-advocacy evidence on disk instead of only legacy nonprofit inventory rows.
+- Disability Rights Rhode Island is preserved as strong statewide protection-and-advocacy support because the reviewed first-party page explicitly says it is the independent federally mandated Protection and Advocacy (P&A) System for the state of Rhode Island.
+- Rhode Island still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, and county/local disability resources still depend on generic locator-derived or mirror-backed evidence instead of reviewed county-grade local proof.
+- Rhode Island is therefore terminal BLOCKED, not COMPLETE.

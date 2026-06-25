@@ -44,16 +44,16 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract",
-      "evidence": "Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces. The live RIDE Special Education page remains statewide guidance only and links families to the public school directory stack instead of exposing district-owned special-education leaves. The public School Directory page explicitly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, then routes into the public Data Center directory. On the public Data Center host, the Schools Directory explicitly says it provides only LEA, school, location, and contact information, while additional directory information is available only to authenticated users in the RIDE portal. The public table and search lanes expose LEA, school, school type, and school subtype, including special-education categories, but no county field and no public district special-education routing contract. The separate RI School Districts page lists 66 LEAs and district websites, but it also exposes no county column and no special-education contact routing. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.",
-      "next_action": "hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing"
+      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+      "evidence": "Rhode Island still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.",
+      "next_action": "author_county_or_district_exact_targets"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "public_dhs_office_stack_exposes_office_leaves_but_zero_county_or_service_area_contract",
-      "evidence": "Reviewed 2026-06-25 bounded first-party Rhode Island human-services surfaces. The DHS host now publicly exposes a DHS Offices page, an Office Locator tool entrypoint, a sitemap, and six office leaves for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket. The DHS Offices page describes these as regional offices serving Rhode Islanders throughout the state and lists addresses, directions, drop-box notes, and office hours. The individual location pages preserve titles, street addresses, office hours, and map links. The sitemap confirms the same office leaves on the official host family. But none of the reviewed public DHS surfaces expose county-served labels, county fields, service-area fields, or a county-to-office routing contract. Even the `South County` label is still only an office name on the public leaf, not an explicit county-assignment table. Rhode Island therefore still lacks a truthful public county-to-office or county-to-service-area contract on the official DHS host family.",
-      "next_action": "hold_blocked_until_public_dhs_surface_exposes_county_to_office_or_service_area_routing"
+      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
+      "evidence": "Rhode Island county/local disability resources still depend on generic locator-derived or DOI mirror-backed evidence instead of reviewed county-grade official local-office proof.",
+      "next_action": "author_county_or_district_exact_targets"
     }
   ]
 }
