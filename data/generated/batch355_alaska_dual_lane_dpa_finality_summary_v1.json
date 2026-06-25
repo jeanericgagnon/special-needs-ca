@@ -1,6 +1,6 @@
 {
   "batch": "batch355_alaska_dual_lane_dpa_finality_v1",
-  "generated_at": "2026-06-25T17:43:43.536Z",
+  "generated_at": "2026-06-25T19:12:17.123Z",
   "state": "alaska",
   "classification": "BLOCKED",
   "index_safe": false,
@@ -16,6 +16,7 @@
   "dfcs_services_status": 200,
   "dfcs_site_map_status": 200,
   "dfcs_contacts_status": 200,
-  "dfcs_search_guess_404s": 4,
+  "dfcs_public_search_status": 200,
+  "dfcs_public_search_queries_without_results": 5,
   "borough_assignment_contract_found": false
 }

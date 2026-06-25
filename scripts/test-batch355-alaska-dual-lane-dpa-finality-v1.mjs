@@ -52,7 +52,8 @@ assert.ok(failure);
 assert.equal(failure.failure_code, 'reviewed_live_dpa_offices_page_proves_regional_offices_but_no_borough_assignment_and_raw_health_fetches_still_403');
 assert.match(failure.evidence, /browser-reviewed lane/i);
 assert.match(failure.evidence, /still return HTTP 403 with the Cloudflare title "Just a moment\.\.\."/i);
-assert.match(failure.evidence, /all returned 404/i);
+assert.match(failure.evidence, /live public search lane at `https:\/\/dfcs\.alaska\.gov\/pages\/search\.aspx` is real/i);
+assert.match(failure.evidence, /still materialize no role-bearing DPA/i);
 
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(verified);
@@ -60,7 +61,7 @@ assert.equal(verified.blocker_code, failure.failure_code);
 assert.match(verified.query_basis, /browser-readable lane/i);
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DPA offices directory' && sample.verification_status === 'reviewed'));
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DPA raw low-token health-host family' && sample.verification_status === 'blocked'));
-assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DFCS bounded search-result guesses' && sample.verification_status === 'blocked'));
+assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DFCS public search page' && sample.verification_status === 'reviewed'));
 
 const officesSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DPA offices directory');
 assert.match(officesSample.evidence_snippet, /regional offices, office hours, addresses, fax numbers/i);
@@ -83,10 +84,12 @@ assert.equal(alaskaQueue.repair_lane, 'blocked_until_new_official_public_county_
 
 assert.match(stateReport, /The official Department of Health DPA offices page is publicly readable in the reviewed browser lane\./);
 assert.match(stateReport, /raw low-token lane still gets Cloudflare `Just a moment\.\.\.` 403 shells/i);
+assert.match(stateReport, /live public search page still expose no borough- or census-area DPA office contract/i);
 assert.match(allStateReport, /browser-readable again and proves regional offices plus contacts/i);
 assert.match(handoff, /## Current Focus State: Alaska/);
 assert.match(handoff, /dual-lane rather than challenge-only/i);
 assert.match(handoff, /DPA offices page on `health\.alaska\.gov` is publicly readable/i);
+assert.match(handoff, /DFCS public search: public assistance/);
 assert.match(handoff, /## Next State Order After Alaska/);
 assert.match(handoff, /1\. Maine/);
 assert.match(handoff, /2\. Idaho/);
@@ -96,7 +99,8 @@ assert.equal(batchSummary.raw_dpa_landing_status, 403);
 assert.equal(batchSummary.raw_dpa_offices_status, 403);
 assert.equal(batchSummary.raw_dpa_dashboard_pdf_status, 403);
 assert.equal(batchSummary.raw_medicaid_snapshot_pdf_status, 403);
-assert.equal(batchSummary.dfcs_search_guess_404s, 4);
+assert.equal(batchSummary.dfcs_public_search_status, 200);
+assert.equal(batchSummary.dfcs_public_search_queries_without_results, 5);
 assert.equal(batchSummary.borough_assignment_contract_found, false);
 assert.match(batchReport, /live reviewed page plus the still-blocked raw lane/i);
 

@@ -94,12 +94,17 @@ const PROBE = {
     url: 'https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx',
     status: 200,
   },
-  dfcsSearchGuesses: [
-    'https://dfcs.alaska.gov/Pages/search-results.aspx?k=public%20assistance',
-    'https://dfcs.alaska.gov/Pages/search-results.aspx?k=office',
-    'https://dfcs.alaska.gov/Pages/search-results.aspx?k=medicaid',
-    'https://dfcs.alaska.gov/Pages/search-results.aspx?k=adult%20public%20assistance',
-  ],
+  dfcsPublicSearch: {
+    url: 'https://dfcs.alaska.gov/pages/search.aspx',
+    status: 200,
+    queries: [
+      'public assistance',
+      'office',
+      'medicaid',
+      'adult public assistance',
+      'virtual contact center',
+    ],
+  },
 };
 
 function readJson(filePath) {
@@ -134,11 +139,11 @@ function replaceSample(samples, sampleName, replacement) {
 }
 
 function buildStatusReason() {
-  return `The live Alaska county-local blocker is now dual-lane final rather than challenge-only. In the reviewed browser lane on ${UPDATED_AT}, the official Department of Health DPA offices page at \`${PROBE.reviewedDpaOffices.url}\` is publicly readable and truthfully preserves regional offices, hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the current official host. But the page still only groups offices by broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska. It still does not assign boroughs or census areas to those offices, and it still exposes no county-equivalent assignment contract anywhere on the page. In the raw low-token lane, the same health-host family still fails closed: the exact DPA landing page, DPA offices page, and the two related PDFs still return HTTP 403 Cloudflare shells with the title "Just a moment...". The DFCS successor host remains negative too: the root page still routes only into Commissioner and OCS branches, Services still only relays statewide phone routing, Site Map still only adds wrong-role branches such as OCS offices and Pioneer Homes payment assistance, Department Contacts still exposes only Commissioner and OCS sections, and bounded search-result guesses still 404. Alaska therefore still lacks any public official borough- or census-area-to-office assignment contract.`;
+  return `The live Alaska county-local blocker is now dual-lane final rather than challenge-only. In the reviewed browser lane on ${UPDATED_AT}, the official Department of Health DPA offices page at \`${PROBE.reviewedDpaOffices.url}\` is publicly readable and truthfully preserves regional offices, hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the current official host. But the page still only groups offices by broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska. It still does not assign boroughs or census areas to those offices, and it still exposes no county-equivalent assignment contract anywhere on the page. In the raw low-token lane, the same health-host family still fails closed: the exact DPA landing page, DPA offices page, and the two related PDFs still return HTTP 403 Cloudflare shells with the title "Just a moment...". The DFCS successor host remains negative too: the root page still routes only into Commissioner and OCS branches, Services still only relays statewide phone routing, Site Map still only adds wrong-role branches such as OCS offices and Pioneer Homes payment assistance, Department Contacts still exposes only Commissioner and OCS sections, and the live public search page at \`${PROBE.dfcsPublicSearch.url}\` still returns no role-bearing DPA or borough-assignment results for bounded public-assistance queries. Alaska therefore still lacks any public official borough- or census-area-to-office assignment contract.`;
 }
 
 function buildEvidence() {
-  return `Reviewed ${UPDATED_AT} exact official Alaska county-local surfaces again across both the browser-readable and raw low-token lanes. In the browser-reviewed lane, \`${PROBE.reviewedDpaOffices.url}\` is now publicly readable on the current official Department of Health host and preserves regional offices, office hours, street addresses, fax numbers, virtual contact-center routing, and secure document upload options. But that page still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. In the raw low-token lane, the health-host family still fails closed: \`${PROBE.rawDpaLanding.url}\`, \`${PROBE.rawDpaOffices.url}\`, \`${PROBE.rawDpaDashboardPdf.url}\`, and \`${PROBE.rawMedicaidSnapshotPdf.url}\` still return HTTP 403 with the Cloudflare title "Just a moment...". The DFCS successor host remains negative on official public review: \`${PROBE.dfcsRoot.url}\` still only routes into Commissioner and OCS branches rather than any DPA/public-assistance office directory; \`${PROBE.dfcsServices.url}\` still only links Adult Public Assistance and Apply for Medicaid back to the health host plus statewide phone routing; \`${PROBE.dfcsSiteMap.url}\` still only exposes wrong-role branches such as OCS offices, OCS grievance, and Pioneer Homes payment assistance; and \`${PROBE.dfcsContacts.url}\` still exposes only Commissioner and OCS sections rather than any borough-assignment text. Bounded search-result guesses at \`${PROBE.dfcsSearchGuesses[0]}\`, \`${PROBE.dfcsSearchGuesses[1]}\`, \`${PROBE.dfcsSearchGuesses[2]}\`, and \`${PROBE.dfcsSearchGuesses[3]}\` all returned 404. Alaska therefore still lacks any public official borough- or census-area-to-office assignment surface that can satisfy county-equivalent local routing.`;
+  return `Reviewed ${UPDATED_AT} exact official Alaska county-local surfaces again across both the browser-readable and raw low-token lanes. In the browser-reviewed lane, \`${PROBE.reviewedDpaOffices.url}\` is now publicly readable on the current official Department of Health host and preserves regional offices, office hours, street addresses, fax numbers, virtual contact-center routing, and secure document upload options. But that page still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. In the raw low-token lane, the health-host family still fails closed: \`${PROBE.rawDpaLanding.url}\`, \`${PROBE.rawDpaOffices.url}\`, \`${PROBE.rawDpaDashboardPdf.url}\`, and \`${PROBE.rawMedicaidSnapshotPdf.url}\` still return HTTP 403 with the Cloudflare title "Just a moment...". The DFCS successor host remains negative on official public review: \`${PROBE.dfcsRoot.url}\` still only routes into Commissioner and OCS branches rather than any DPA/public-assistance office directory; \`${PROBE.dfcsServices.url}\` still only links Adult Public Assistance and Apply for Medicaid back to the health host plus statewide phone routing; \`${PROBE.dfcsSiteMap.url}\` still only exposes wrong-role branches such as OCS offices, OCS grievance, and Pioneer Homes payment assistance; and \`${PROBE.dfcsContacts.url}\` still exposes only Commissioner and OCS sections rather than any borough-assignment text. The live public search lane at \`${PROBE.dfcsPublicSearch.url}\` is real, but bounded queries for ${PROBE.dfcsPublicSearch.queries.map((q) => `"${q}"`).join(', ')} still materialize no role-bearing DPA, public-assistance office, or borough-assignment results. Alaska therefore still lacks any public official borough- or census-area-to-office assignment surface that can satisfy county-equivalent local routing.`;
 }
 
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
@@ -173,7 +178,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '- The official Department of Health DPA offices page is publicly readable in the reviewed browser lane.',
     '- That live page proves regional offices, hours, addresses, fax numbers, and virtual routing, but it still does not assign boroughs or census areas to those offices.',
     '- The raw low-token lane still gets Cloudflare `Just a moment...` 403 shells across the same health-host family, so there is no reusable raw export lane from that host yet.',
-    '- The DFCS root, Services, Site Map, Department Contacts, and bounded search-result guesses still expose no borough- or census-area DPA office contract.',
+    '- The DFCS root, Services, Site Map, Department Contacts, and live public search page still expose no borough- or census-area DPA office contract.',
     '- Alaska therefore still lacks any public official county-equivalent office-assignment contract.',
   ].join('\n') + '\n';
 }
@@ -216,7 +221,7 @@ function buildHandoff(allStateAudit) {
     '',
     '### Blocker Reason',
     '',
-    '`county_local_disability_resources` is still the only remaining Alaska blocker, but the truth is now dual-lane rather than challenge-only. The current official DPA offices page on `health.alaska.gov` is publicly readable in the reviewed browser lane and it clearly proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options. But it still only groups offices by broad regions and still does not map boroughs or census areas to those offices. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` 403 shells, so it still offers no reusable raw export or fetch lane. The DFCS successor host remains negative: root, Services, Site Map, Department Contacts, and bounded search-result guesses still expose no DPA/public-assistance office directory or county-equivalent assignment contract. Alaska remains BLOCKED because there is still no public official borough- or census-area office-assignment surface.',
+    '`county_local_disability_resources` is still the only remaining Alaska blocker, but the truth is now dual-lane rather than challenge-only. The current official DPA offices page on `health.alaska.gov` is publicly readable in the reviewed browser lane and it clearly proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options. But it still only groups offices by broad regions and still does not map boroughs or census areas to those offices. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` 403 shells, so it still offers no reusable raw export or fetch lane. The DFCS successor host remains negative: root, Services, Site Map, Department Contacts, and the live public search page still expose no DPA/public-assistance office directory or county-equivalent assignment contract. Alaska remains BLOCKED because there is still no public official borough- or census-area office-assignment surface.',
     '',
     '### Exact Evidence Needed',
     '',
@@ -234,7 +239,7 @@ function buildHandoff(allStateAudit) {
     `- [DFCS Services](${PROBE.dfcsServices.url})`,
     `- [DFCS Site Map](${PROBE.dfcsSiteMap.url})`,
     `- [DFCS Department Contacts](${PROBE.dfcsContacts.url})`,
-    ...PROBE.dfcsSearchGuesses.map((url) => `- [DFCS search guess](${url})`),
+    ...PROBE.dfcsPublicSearch.queries.map((query) => `- [DFCS public search: ${query}](${PROBE.dfcsPublicSearch.url}?q=${encodeURIComponent(query)})`),
     '',
     '### Top Remaining Source-Scouting Targets',
     '',
@@ -367,15 +372,15 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
       fetched_at: PROBE.generatedAt,
       evidence_snippet: 'The DFCS Site Map still adds only wrong-role branches like OCS offices, OCS grievance, and Pioneer Homes payment assistance, not borough/census-area DPA office routing.',
     });
-    replaceSample(row.samples, 'Alaska DFCS bounded search-result guesses', {
-      sample_name: 'Alaska DFCS bounded search-result guesses',
-      source_url: PROBE.dfcsSearchGuesses[0],
-      final_url: PROBE.dfcsSearchGuesses[0],
-      verification_status: 'blocked',
-      source_type: 'official_search_guesses_all_404',
+    replaceSample(row.samples, 'Alaska DFCS public search page', {
+      sample_name: 'Alaska DFCS public search page',
+      source_url: `${PROBE.dfcsPublicSearch.url}?q=${encodeURIComponent(PROBE.dfcsPublicSearch.queries[0])}`,
+      final_url: `${PROBE.dfcsPublicSearch.url}?q=${encodeURIComponent(PROBE.dfcsPublicSearch.queries[0])}`,
+      verification_status: 'reviewed',
+      source_type: 'official_public_search_without_role_results',
       source_table: BATCH_NAME,
       fetched_at: PROBE.generatedAt,
-      evidence_snippet: 'Bounded DFCS search-result guesses for public assistance, office, medicaid, and adult public assistance all returned 404, so no public search recovery lane exists on that host.',
+      evidence_snippet: 'The live public DFCS search page loads at `/pages/search.aspx`, but bounded `public assistance`, `office`, `medicaid`, `adult public assistance`, and `virtual contact center` queries still materialize no role-bearing DPA, public-assistance office, or borough-assignment results.',
     });
     row.sample_count = row.samples.length;
   }
@@ -417,7 +422,8 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
     dfcs_services_status: PROBE.dfcsServices.status,
     dfcs_site_map_status: PROBE.dfcsSiteMap.status,
     dfcs_contacts_status: PROBE.dfcsContacts.status,
-    dfcs_search_guess_404s: PROBE.dfcsSearchGuesses.length,
+    dfcs_public_search_status: PROBE.dfcsPublicSearch.status,
+    dfcs_public_search_queries_without_results: PROBE.dfcsPublicSearch.queries.length,
     borough_assignment_contract_found: false,
   };
 
