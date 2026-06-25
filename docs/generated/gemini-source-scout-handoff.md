@@ -32,63 +32,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Ohio
+## Current Focus State: Florida
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the top Ohio blocker. The bounded live same-domain education leaf probe recovered strong exact local education leaves for 45 counties and partial exact local education leaves for 23 more counties from existing Ohio ESC and district-owned roots, but 20 counties still point to dead, unresolvable, transport-broken, or no-leaf roots, so the state still cannot clear county-grade education routing.
+`county_local_disability_resources` is the only remaining Florida critical blocker. The live DCF local-offices leaf and Family Resource Center storefront still stop at a partial 34-county contract. MyACCESS is readable again, and the live main bundle now re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but those exact official endpoints still return HTTP 401 `Unauthorized` on bounded anonymous GET and POST probes. The public `dataexchangeproxy` root still only replays the same generic shell, so there is still no anonymous county-complete public local-office contract.
 
 ### Exact Evidence Needed
 
-- Reviewed exact local education leaves for the remaining unresolved counties, ideally district-owned or ESC-owned pages that explicitly preserve `districts served`, `member districts`, `our schools`, `special education`, or `student services` on the same official host.
-- For roots that are dead or unresolvable, a reviewed official successor root or exact replacement local leaf on the real county ESC or district host.
-- For roots that are live but generic, a same-domain exact leaf found from sitemap, navigation, or official district/ESC directories.
+- A first-party Florida DCF or MyACCESS county-complete local-offices directory or export that maps all 67 counties to public assistance / ESS office routing.
+- A recovered anonymous official MyACCESS county-result contract that returns real office or community-partner results without authentication.
+- A first-party Family Resource Center or DCF local-office lane that expands beyond the current 34-county storefront contract and publishes the full county set.
 
 ### Useful Official URLs Already Tried
 
-- [Educational Service Center of Central Ohio](https://www.escco.org/)
-- [East Central Ohio ESC](https://www.ecoesc.org/)
-- [Northwest Ohio ESC](https://www.nwoesc.org/)
-- [Ohio Valley Educational Service Center](https://www.ovesc.org/)
-- [Tri-County Educational Service Center](https://www.youresc.k12.oh.us/)
-- [Athens Meigs ESC](https://www.athensmeigs.com/)
-- [South Central Ohio ESC districts](https://www.scoesc.org/districts)
-- [Western Buckeye ESC schools](https://www.wbesc.org/our-schools)
-- [Hancock County ESC sitemap leaf](https://www.hancockesc.org/page/schools-we-serve/)
-- [Ross Pike ESD sitemap leaf](https://www.rpesd.org/page/special-education/)
+- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
+- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
+- [MyACCESS root](https://myaccess.myflfamilies.com/)
+- [MyACCESS Public CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
+- [MyACCESS appconfig](https://myaccess.myflfamilies.com/config/appconfig.js)
+- [MyACCESS asset manifest](https://myaccess.myflfamilies.com/asset-manifest.json)
+- [MyACCESS main bundle](https://myaccess.myflfamilies.com/static/js/main.d43b0959.js)
+- [MyACCESS dataexchangeproxy root](https://myaccess.myflfamilies.com/dataexchangeproxy)
+- [MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
+- [MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
 
-### Remaining Unresolved County Roots
+### Top Remaining Source-Scouting Targets
 
-- brown => https://www.brown.k12.oh.us
-- clermont => https://www.ccesc.org
-- columbiana => https://www.ccesc.k12.oh.us
-- darke => https://www.darkeesc.org
-- erie => https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts
-- fairfield => https://www.fairfieldesc.org
-- gallia => https://www.gvesc.org
-- huron => https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts
-- lawrence => https://www.lawrenceesc.org
-- logan => https://www.mesc.k12.oh.us
-- medina => https://www.medina-esc.org
-- mercer => https://www.merceresc.org
-- ottawa => https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts
-- preble => https://www.preblecountyesc.org
-- putnam => https://www.putnamesc.org
-- shelby => https://www.shelbycountyesc.org
-- stark => https://www.cantoncityschools.org
-- summit => https://www.akron.k12.oh.us
-- trumbull => https://www.trumbull.k12.oh.us
-- vinton => https://www.gvesc.org
+- Any official DCF or MyACCESS export or API path that materially extends the public county-local contract beyond the 34 counties in `providers.csv`.
+- Any exact first-party DCF county office page or local-office directory leaf that is linked from current public-assistance pages but not yet exposed in the current public tree.
+- Any anonymous result lane on the official MyACCESS host that returns real county storefront or office rows rather than replaying the public shell or requiring authentication.
 
-## Next State Order After Ohio
+## Next State Order After Florida
 
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. New Mexico
-7. South Dakota
-8. Rhode Island
-9. Virginia
-10. West Virginia
+1. Alaska
+2. New York
+3. Oklahoma
+4. Oregon
+5. Ohio
+6. Minnesota
+7. Maine
+8. Idaho
+9. Arizona
+10. Massachusetts
