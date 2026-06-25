@@ -30,7 +30,7 @@ import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
 import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
 import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
-import { stateAuditStatus, stateGapReason, evaluateSeoPolicy, getSeoPolicyForRoute, hasOfficialProgramSource, normalizeConfidenceScore, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { stateAuditStatus, stateGapReason, evaluateSeoPolicy, getSeoPolicyForRoute, hasOfficialProgramSource, normalizeConfidenceScore, assertNoPlaceholderData, verifyClaimEvidence } from '@/lib/seo-policy';
 import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
 import SeoSchema from '@/app/components/seo-schema';
 import SourceFreshnessDisclosure, { DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
@@ -67,7 +67,73 @@ function formatParam(val: string): string {
     .join(' ');
 }
 
+function getFilteredCountyDetails(stateId: string, countyDetails: any) {
+  if (!countyDetails) return null;
+  
+  const eligibleRegionalCenters = (countyDetails.regionalCenters || [])
+    .filter(isPublicRecordEligible)
+    .filter((rc: any) => verifyClaimEvidence({
+      text: rc.name + ' ' + (rc.catchment_boundaries || ''),
+      type: 'contact',
+      jurisdiction: stateId,
+      sourceUrl: rc.source_url || rc.website || undefined,
+      reviewedDate: rc.last_verified_date || undefined,
+      confidence: normalizeConfidenceScore(rc.confidence_score) ?? 0.0
+    }).verified);
 
+  const eligibleCountyOffices = (countyDetails.countyOffices || [])
+    .filter(isPublicRecordEligible)
+    .filter((co: any) => verifyClaimEvidence({
+      text: co.office_name + ' ' + (co.address || '') + ' ' + (co.phone || '') + ' ' + (co.email || ''),
+      type: 'contact',
+      jurisdiction: stateId,
+      sourceUrl: co.source_url || co.website || undefined,
+      reviewedDate: co.last_verified_date || undefined,
+      confidence: normalizeConfidenceScore(co.confidence_score) ?? 0.0
+    }).verified);
+
+  const eligibleSchoolDistricts = (countyDetails.schoolDistricts || [])
+    .filter(isPublicRecordEligible)
+    .filter((sd: any) => verifyClaimEvidence({
+      text: sd.name + ' ' + (sd.spec_ed_contact_phone || '') + ' ' + (sd.spec_ed_contact_email || ''),
+      type: 'contact',
+      jurisdiction: stateId,
+      sourceUrl: sd.source_url || sd.website || undefined,
+      reviewedDate: sd.last_verified_date || undefined,
+      confidence: normalizeConfidenceScore(sd.confidence_score) ?? 0.0
+    }).verified);
+
+  const eligibleSelpas = (countyDetails.selpas || [])
+    .filter(isPublicRecordEligible)
+    .filter((selpa: any) => verifyClaimEvidence({
+      text: selpa.name + ' ' + (selpa.counties_served || '') + ' ' + (selpa.website || ''),
+      type: 'contact',
+      jurisdiction: stateId,
+      sourceUrl: selpa.source_url || selpa.website || undefined,
+      reviewedDate: selpa.last_verified_date || undefined,
+      confidence: normalizeConfidenceScore(selpa.confidence_score) ?? 0.0
+    }).verified);
+
+  const eligibleLocalOrganizations = (countyDetails.localOrganizations || [])
+    .filter(isPublicDirectoryRecordEligible)
+    .filter((org: any) => verifyClaimEvidence({
+      text: org.name + ' ' + (org.phone || '') + ' ' + (org.website || '') + ' ' + (org.description || '') + ' ' + (org.focus_condition || ''),
+      type: 'contact',
+      jurisdiction: stateId,
+      sourceUrl: org.source_url || org.website || undefined,
+      reviewedDate: org.last_verified_date || undefined,
+      confidence: normalizeConfidenceScore(org.confidence_score) ?? 0.0
+    }).verified);
+
+  return {
+    ...countyDetails,
+    regionalCenters: eligibleRegionalCenters,
+    countyOffices: eligibleCountyOffices,
+    schoolDistricts: eligibleSchoolDistricts,
+    selpas: eligibleSelpas,
+    localOrganizations: eligibleLocalOrganizations
+  };
+}
 
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -139,7 +205,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === slug[0].toLowerCase());
     if (isCounty) {
       const countyFormatted = formatParam(slug[0]);
-      const countyDetails = await getCountyDetails(slug[0].toLowerCase());
+      const countyDetailsRaw = await getCountyDetails(slug[0].toLowerCase());
+      const countyDetails = getFilteredCountyDetails(stateData.id, countyDetailsRaw);
       if (countyDetails) {
         const offices = countyDetails.countyOffices || [];
         const countyDistricts = countyDetails.schoolDistricts || [];
@@ -148,19 +215,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         const hasRequiredContactInfo = offices.length > 0;
         const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyDetails));
 
-        const rcDates = rcs.map((rc) => rc.last_verified_date).filter(Boolean) as string[];
-        const sdDates = countyDistricts.map((sd) => sd.last_verified_date).filter(Boolean) as string[];
-        const coDates = offices.map((co) => co.last_verified_date).filter(Boolean) as string[];
+        const rcDates = rcs.map((rc: any) => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = countyDistricts.map((sd: any) => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = offices.map((co: any) => co.last_verified_date).filter(Boolean) as string[];
         const allDates = [...rcDates, ...sdDates, ...coDates];
         const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-        const rcScores = rcs.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
-        const sdScores = countyDistricts.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
-        const coScores = offices.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const rcScores = rcs.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const sdScores = countyDistricts.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+        const coScores = offices.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
         const allScores = [...rcScores, ...sdScores, ...coScores];
         const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-        const hasOfficialSource = rcs.some((rc) => !!rc.source_url) || countyDistricts.some((sd) => !!sd.source_url) || offices.some((co) => !!co.source_url);
+        const hasOfficialSource = rcs.some((rc: any) => !!rc.source_url) || countyDistricts.some((sd: any) => !!sd.source_url) || offices.some((co: any) => !!co.source_url);
 
         const policy = getSeoPolicyForRoute('county-hub', { stateId: stateData.id, countyId: slug[0].toLowerCase() }, {
           entityCount: countyDistricts.length,
@@ -171,6 +238,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           hasNoPlaceholderData,
           hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || rcs.length > 0
         });
+
+        if (stateData.id === 'california' && (rcs.length === 0 || offices.length === 0 || countyDistricts.length === 0)) {
+          policy.index = false;
+        }
 
         return {
           title: `Special Needs & IEP Benefits in ${countyFormatted} County, ${stateCode} (2026)`,
@@ -260,26 +331,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === secondSlug);
     if (isCounty) {
       const countyFormatted = formatParam(secondSlug);
-      const countyDetails = await getCountyDetails(secondSlug);
+      const countyDetailsRaw = await getCountyDetails(secondSlug);
+      const countyDetails = getFilteredCountyDetails(stateData.id, countyDetailsRaw);
 
       const sdList = countyDetails?.schoolDistricts || [];
       const coList = countyDetails?.countyOffices || [];
       const rcList = countyDetails?.regionalCenters || [];
-      const rcScores = rcList.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
-      const sdScores = sdList.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
-      const coScores = coList.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const rcScores = rcList.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const sdScores = sdList.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const coScores = coList.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
       const allScores = [...rcScores, ...sdScores, ...coScores];
       const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-      const hasOfficialSource = rcList.some((rc) => !!rc.source_url) || sdList.some((sd) => !!sd.source_url) || coList.some((co) => !!co.source_url);
+      const hasOfficialSource = rcList.some((rc: any) => !!rc.source_url) || sdList.some((sd: any) => !!sd.source_url) || coList.some((co: any) => !!co.source_url);
       const hasRequiredContactInfo = coList.length > 0;
       const hasNoPlaceholderData = countyDetails ? assertNoPlaceholderData(JSON.stringify(countyDetails)) : false;
       const hasRealLocalAssets = sdList.length > 0 || coList.length > 0 || rcList.length > 0;
 
-      const rcDates = rcList.map(rc => rc.last_verified_date).filter((d): d is string => !!d);
-      const sdDates = sdList.map(sd => sd.last_verified_date).filter((d): d is string => !!d);
-      const coDates = coList.map(co => co.last_verified_date).filter((d): d is string => !!d);
-      const allDates = [...rcDates, ...sdDates, ...coDates].filter((d): d is string => !!d);
+      const rcDates = rcList.map((rc: any) => rc.last_verified_date).filter((d: any): d is string => !!d);
+      const sdDates = sdList.map((sd: any) => sd.last_verified_date).filter((d: any): d is string => !!d);
+      const coDates = coList.map((co: any) => co.last_verified_date).filter((d: any): d is string => !!d);
+      const allDates = [...rcDates, ...sdDates, ...coDates].filter((d: any): d is string => !!d);
       const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
       const policy = getSeoPolicyForRoute('county-condition', {
@@ -295,6 +367,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         hasNoPlaceholderData,
         hasRealLocalAssets
       });
+
+      if (stateData.id === 'california' && (rcList.length === 0 || coList.length === 0 || sdList.length === 0)) {
+        policy.index = false;
+      }
 
       return {
         title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
@@ -686,18 +762,19 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
   if (slug.length === 1) {
     const countyId = slug[0].toLowerCase();
-    const countyDetails = await getCountyDetails(countyId);
+    const countyDetailsRaw = await getCountyDetails(countyId);
+    const countyDetails = getFilteredCountyDetails(stateData.id, countyDetailsRaw);
 
     if (countyDetails) {
       const countyFormatted = formatParam(countyId);
       const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
       const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
       const countyWage = countyDetails.ihss_wage_rate;
-      const eligibleRegionalCenters = (countyDetails.regionalCenters || []).filter(isPublicRecordEligible);
-      const eligibleCountyOffices = (countyDetails.countyOffices || []).filter(isPublicRecordEligible);
-      const eligibleSchoolDistricts = (countyDetails.schoolDistricts || []).filter(isPublicRecordEligible);
-      const eligibleSelpas = (countyDetails.selpas || []).filter(isPublicRecordEligible);
-      const eligibleLocalOrganizations = (countyDetails.localOrganizations || []).filter(isPublicDirectoryRecordEligible);
+      const eligibleRegionalCenters = countyDetails.regionalCenters || [];
+      const eligibleCountyOffices = countyDetails.countyOffices || [];
+      const eligibleSchoolDistricts = countyDetails.schoolDistricts || [];
+      const eligibleSelpas = countyDetails.selpas || [];
+      const eligibleLocalOrganizations = countyDetails.localOrganizations || [];
 
       const stateProgs = await navigatorDb.prepare('SELECT last_verified_date FROM programs WHERE state_id = ?').all(stateData.id) as { last_verified_date: string | null }[];
       const progDates = stateProgs.map(p => p.last_verified_date).filter((d): d is string => !!d);
@@ -715,19 +792,19 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         slug: slugifyDiagnosis(d)
       }));
 
-      const rcDates = eligibleRegionalCenters.map((rc) => rc.last_verified_date).filter(Boolean) as string[];
-      const sdDates = eligibleSchoolDistricts.map((sd) => sd.last_verified_date).filter(Boolean) as string[];
-      const coDates = eligibleCountyOffices.map((co) => co.last_verified_date).filter(Boolean) as string[];
+      const rcDates = eligibleRegionalCenters.map((rc: any) => rc.last_verified_date).filter(Boolean) as string[];
+      const sdDates = eligibleSchoolDistricts.map((sd: any) => sd.last_verified_date).filter(Boolean) as string[];
+      const coDates = eligibleCountyOffices.map((co: any) => co.last_verified_date).filter(Boolean) as string[];
       const allDates = [...rcDates, ...sdDates, ...coDates];
       const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-      const rcScores = eligibleRegionalCenters.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
-      const sdScores = eligibleSchoolDistricts.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
-      const coScores = eligibleCountyOffices.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const rcScores = eligibleRegionalCenters.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const sdScores = eligibleSchoolDistricts.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const coScores = eligibleCountyOffices.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
       const allScores = [...rcScores, ...sdScores, ...coScores];
       const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-      const hasOfficialSource = eligibleRegionalCenters.some((rc) => !!rc.source_url) || eligibleSchoolDistricts.some((sd) => !!sd.source_url) || eligibleCountyOffices.some((co) => !!co.source_url);
+      const hasOfficialSource = eligibleRegionalCenters.some((rc: any) => !!rc.source_url) || eligibleSchoolDistricts.some((sd: any) => !!sd.source_url) || eligibleCountyOffices.some((co: any) => !!co.source_url);
 
       const policy = getSeoPolicyForRoute('county-hub', { stateId: stateData.id, countyId }, {
         entityCount: eligibleSchoolDistricts.length,
@@ -738,6 +815,10 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(countyDetails)),
         hasRealLocalAssets: eligibleSchoolDistricts.length > 0 || eligibleCountyOffices.length > 0 || eligibleRegionalCenters.length > 0
       });
+
+      if (stateData.id === 'california' && (eligibleRegionalCenters.length === 0 || eligibleCountyOffices.length === 0 || eligibleSchoolDistricts.length === 0)) {
+        policy.index = false;
+      }
       const isIndexable = policy.index;
 
       const faqSchema = {
@@ -830,7 +911,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 </h2>
                 {eligibleRegionalCenters.length > 0 ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                    {eligibleRegionalCenters.map((rc) => (
+                    {eligibleRegionalCenters.map((rc: any) => (
                       <div key={rc.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                         <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>{rc.name}</h3>
                         <p style={{ color: 'var(--text-light)', margin: 0 }}><strong>Catchment Boundary:</strong> {rc.catchment_boundaries}</p>
@@ -893,7 +974,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 </p>
                 {eligibleCountyOffices.length > 0 ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                    {eligibleCountyOffices.map((office) => {
+                    {eligibleCountyOffices.map((office: any) => {
                       return (
                         <div key={office.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '1rem' }}>
                           <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>{office.office_name}</h3>
@@ -931,7 +1012,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 </h2>
                 {eligibleSchoolDistricts.length > 0 ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                    {eligibleSchoolDistricts.map((district) => {
+                    {eligibleSchoolDistricts.map((district: any) => {
                       const stats = {
                         inclusionRate: district.inclusion_rate_pct,
                         selfContainedRate: district.self_contained_rate_pct
@@ -992,7 +1073,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>{educationLabel}</h3>
                 {eligibleSelpas.length > 0 ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    {eligibleSelpas.map((selpa) => (
+                    {eligibleSelpas.map((selpa: any) => (
                       <div key={selpa.id} style={{ fontSize: '0.85rem', display: 'flex', flexDirection: 'column', gap: '0.4rem', borderBottom: '1px solid #f0f0f0', paddingBottom: '0.75rem' }}>
                         <strong style={{ color: 'var(--text-main)' }}>{selpa.name}</strong>
                         <span style={{ color: 'var(--text-light)' }}>Counties Served: {selpa.counties_served}</span>
@@ -1022,7 +1103,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem' }}>Nonprofit Support & Local Resources</h3>
                 {eligibleLocalOrganizations.length > 0 ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    {eligibleLocalOrganizations.map((org) => (
+                    {eligibleLocalOrganizations.map((org: any) => (
                       <DirectoryFoundationPanel
                         key={org.id}
                         entityType="nonprofit"
@@ -1305,43 +1386,52 @@ async function InnerBenefitsCatchAll({ params }: Props) {
     }
 
     // Load County-level details for underlying service models
-    const countyData = await getCountyDetails(countyId);
+    const countyDataRaw = await getCountyDetails(countyId);
+    const countyData = getFilteredCountyDetails(stateData.id, countyDataRaw);
     if (!countyData) {
       notFound();
     }
 
-    const eligibleRegionalCenters = (countyData.regionalCenters || []).filter(isPublicRecordEligible);
-    const eligibleSchoolDistricts = (countyData.schoolDistricts || []).filter(isPublicRecordEligible);
-    const eligibleCountyOffices = (countyData.countyOffices || []).filter(isPublicRecordEligible);
-    const eligibleSelpas = (countyData.selpas || []).filter(isPublicRecordEligible);
+    const eligibleRegionalCenters = countyData.regionalCenters || [];
+    const eligibleSchoolDistricts = countyData.schoolDistricts || [];
+    const eligibleCountyOffices = countyData.countyOffices || [];
+    const eligibleSelpas = countyData.selpas || [];
 
     const countiesList = await getCounties(stateData.id);
-    const ihssOffice = eligibleCountyOffices.find((o) => o.program_id === 'ihss-for-children');
+    const ihssOffice = eligibleCountyOffices.find((o: any) => o.program_id === 'ihss-for-children');
     const ihssPhone = ihssOffice?.phone || '';
     const ihssAddress = ihssOffice?.address || '';
 
     // Fetch AI-extracted programs from the crawler database matching this diagnosis
-    const crawlerPrograms = await getProgramsForDiagnosis(diagnosisSlug);
+    const crawlerProgramsRaw = await getProgramsForDiagnosis(diagnosisSlug);
+    const crawlerPrograms = crawlerProgramsRaw.filter((prog: any) => verifyClaimEvidence({
+      text: prog.program_name + ' ' + prog.target_demographic + ' ' + (prog.income_limit || '') + ' ' + (prog.diagnosis_required || ''),
+      type: 'eligibility',
+      jurisdiction: stateData.id,
+      sourceUrl: prog.source_url || undefined,
+      reviewedDate: prog.last_verified_date || undefined,
+      confidence: normalizeConfidenceScore(prog.confidence_score) ?? 0.0
+    }).verified);
 
     let isIndexable = false;
     if (scopeType === 'county') {
       const truth = getCountyDiagnosisTruthEligibility(stateData.id, diagnosisSlug, countyId, countyData);
 
-      const rcScores = eligibleRegionalCenters.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
-      const sdScores = eligibleSchoolDistricts.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
-      const coScores = eligibleCountyOffices.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const rcScores = eligibleRegionalCenters.map((rc: any) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const sdScores = eligibleSchoolDistricts.map((sd: any) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
+      const coScores = eligibleCountyOffices.map((co: any) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
       const allScores = [...rcScores, ...sdScores, ...coScores];
       const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-      const hasOfficialSource = eligibleRegionalCenters.some((rc) => !!rc.source_url) || eligibleSchoolDistricts.some((sd) => !!sd.source_url) || eligibleCountyOffices.some((co) => !!co.source_url);
+      const hasOfficialSource = eligibleRegionalCenters.some((rc: any) => !!rc.source_url) || eligibleSchoolDistricts.some((sd: any) => !!sd.source_url) || eligibleCountyOffices.some((co: any) => !!co.source_url);
       const hasRequiredContactInfo = eligibleCountyOffices.length > 0;
       const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyData));
       const hasRealLocalAssets = eligibleSchoolDistricts.length > 0 || eligibleCountyOffices.length > 0 || eligibleRegionalCenters.length > 0;
 
-      const rcDates = eligibleRegionalCenters.map(rc => rc.last_verified_date).filter((d): d is string => !!d);
-      const sdDates = eligibleSchoolDistricts.map(sd => sd.last_verified_date).filter((d): d is string => !!d);
-      const coDates = eligibleCountyOffices.map(co => co.last_verified_date).filter((d): d is string => !!d);
-      const allDates = [...rcDates, ...sdDates, ...coDates].filter((d): d is string => !!d);
+      const rcDates = eligibleRegionalCenters.map((rc: any) => rc.last_verified_date).filter((d: any): d is string => !!d);
+      const sdDates = eligibleSchoolDistricts.map((sd: any) => sd.last_verified_date).filter((d: any): d is string => !!d);
+      const coDates = eligibleCountyOffices.map((co: any) => co.last_verified_date).filter((d: any): d is string => !!d);
+      const allDates = [...rcDates, ...sdDates, ...coDates].filter((d: any): d is string => !!d);
       const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
       const policy = getSeoPolicyForRoute('county-condition', {
@@ -1358,13 +1448,26 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         hasRealLocalAssets
       });
 
+      if (stateData.id === 'california' && (eligibleRegionalCenters.length === 0 || eligibleCountyOffices.length === 0 || eligibleSchoolDistricts.length === 0)) {
+        policy.index = false;
+      }
+
       isIndexable = policy.index;
     }
 
     const countySelpa = eligibleSelpas[0];
 
     // Load local advocates
-    const rawLocalAdvocates = (await getIepAdvocates(countyId)).filter(isPublicDirectoryRecordEligible);
+    const rawLocalAdvocates = (await getIepAdvocates(countyId))
+      .filter(isPublicDirectoryRecordEligible)
+      .filter(adv => verifyClaimEvidence({
+        text: adv.name + ' ' + (adv.phone || '') + ' ' + (adv.website || '') + ' ' + (adv.description || '') + ' ' + (adv.specialties || ''),
+        type: 'contact',
+        jurisdiction: stateData.id,
+        sourceUrl: adv.source_url || adv.website || undefined,
+        reviewedDate: adv.last_verified_date || undefined,
+        confidence: normalizeConfidenceScore(adv.confidence_score) ?? 0.0
+      }).verified);
 
     // Sort local advocates to prioritize specialists matching the child's diagnosis
     const localAdvocates = [...rawLocalAdvocates].sort((a, b) => {
@@ -1410,19 +1513,28 @@ async function InnerBenefitsCatchAll({ params }: Props) {
     });
 
     // Gather local resources from database
-    const localProviders = (await getLocalProviders(countyId)).filter(isPublicDirectoryRecordEligible);
+    const localProviders = (await getLocalProviders(countyId))
+      .filter(isPublicDirectoryRecordEligible)
+      .filter(lp => verifyClaimEvidence({
+        text: lp.name + ' ' + (lp.phone || '') + ' ' + (lp.address || '') + ' ' + (lp.categories || ''),
+        type: 'contact',
+        jurisdiction: stateData.id,
+        sourceUrl: lp.source_url || undefined,
+        reviewedDate: lp.last_verified_date || undefined,
+        confidence: normalizeConfidenceScore(lp.confidence_score) ?? 0.0
+      }).verified);
     
     const playgrounds = localProviders.filter(p => p.categories === 'playground');
     const clinics = localProviders.filter(p => p.categories === 'therapy-clinic');
     const groups = localProviders.filter(p => p.categories === 'support-group');
     const freshnessSources: DisclosureSource[] = [
-      ...eligibleRegionalCenters.map(rc => ({ name: rc.name, url: rc.source_url || rc.website || undefined, lastReviewedDate: rc.last_verified_date || null, verificationStatus: rc.verification_status || null })),
-      ...eligibleSchoolDistricts.map(sd => ({ name: sd.name, url: sd.source_url || sd.website || undefined, lastReviewedDate: sd.last_verified_date || null, verificationStatus: sd.verification_status || null })),
-      ...eligibleCountyOffices.map(co => ({ name: co.office_name, url: co.source_url || co.website || undefined, lastReviewedDate: co.last_verified_date || null, verificationStatus: co.verification_status || null })),
-      ...eligibleSelpas.map(s => ({ name: s.name, url: s.source_url || s.website || undefined, lastReviewedDate: s.last_verified_date || null, verificationStatus: s.verification_status || null })),
-      ...localAdvocates.map(adv => ({ name: adv.name, url: adv.source_url || adv.website || undefined, lastReviewedDate: adv.last_verified_date || null, verificationStatus: adv.verification_status || null })),
-      ...localProviders.map(lp => ({ name: lp.name, url: lp.source_url || undefined, lastReviewedDate: lp.last_verified_date || null, verificationStatus: lp.verification_status || null }))
-    ].filter((src) => {
+      ...eligibleRegionalCenters.map((rc: any) => ({ name: rc.name, url: rc.source_url || rc.website || undefined, lastReviewedDate: rc.last_verified_date || null, verificationStatus: rc.verification_status || null })),
+      ...eligibleSchoolDistricts.map((sd: any) => ({ name: sd.name, url: sd.source_url || sd.website || undefined, lastReviewedDate: sd.last_verified_date || null, verificationStatus: sd.verification_status || null })),
+      ...eligibleCountyOffices.map((co: any) => ({ name: co.office_name, url: co.source_url || co.website || undefined, lastReviewedDate: co.last_verified_date || null, verificationStatus: co.verification_status || null })),
+      ...eligibleSelpas.map((s: any) => ({ name: s.name, url: s.source_url || s.website || undefined, lastReviewedDate: s.last_verified_date || null, verificationStatus: s.verification_status || null })),
+      ...localAdvocates.map((adv: any) => ({ name: adv.name, url: adv.source_url || adv.website || undefined, lastReviewedDate: adv.last_verified_date || null, verificationStatus: adv.verification_status || null })),
+      ...localProviders.map((lp: any) => ({ name: lp.name, url: lp.source_url || undefined, lastReviewedDate: lp.last_verified_date || null, verificationStatus: lp.verification_status || null }))
+    ].filter((src: any) => {
       return Boolean(src.url || src.lastReviewedDate || src.verificationStatus);
     });
 
@@ -1482,7 +1594,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
     const schoolDistrictsSchema = {
       '@context': 'https://schema.org',
-      '@graph': eligibleSchoolDistricts.map((sd) => ({
+      '@graph': eligibleSchoolDistricts.map((sd: any) => ({
         '@type': 'EducationalOrganization',
         'name': sd.name,
         'telephone': sd.spec_ed_contact_phone,
@@ -1736,7 +1848,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
-              {crawlerPrograms.map((prog) => {
+              {crawlerPrograms.map((prog: any) => {
                 const pSlug = prog.program_name
                   .toLowerCase()
                   .replace(/[^\w\s-]/g, '')
@@ -1816,10 +1928,11 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
                   <ShieldCheck size={16} /> Special Ed & Inclusion Stats
                 </strong>
-                {eligibleSchoolDistricts.map((districtRow) => (
+                {eligibleSchoolDistricts.map((districtRow: any) => (
                   <div key={districtRow.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderBottom: '1px solid rgba(0,0,0,0.05)', paddingBottom: '1rem' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
                       <strong style={{ fontSize: '0.95rem' }}>{districtRow.name}</strong>
+                      <ContributionModal suggestionType="district" targetId={districtRow.id} targetName={districtRow.name} buttonLabel="Suggest update" />
                     </div>
                     
                     {districtRow.total_enrollment && (
@@ -2012,7 +2125,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              {localAdvocates.map((adv) => {
+              {localAdvocates.map((adv: any) => {
                 const isSpecialist = (() => {
                   const text = ((adv.specialties || '') + ' ' + (adv.description || '')).toLowerCase();
                   const diagTerms = [diagnosisFormatted.toLowerCase()];
@@ -2071,7 +2184,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
           </h2>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            {localizedFaqs.map((faq, idx) => (
+            {localizedFaqs.map((faq: any, idx: number) => (
               <div key={idx} style={{ 
                 borderBottom: idx < localizedFaqs.length - 1 ? '1px solid rgba(0,0,0,0.06)' : 'none', 
                 paddingBottom: idx < localizedFaqs.length - 1 ? '1.5rem' : '0',

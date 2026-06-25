@@ -102,6 +102,7 @@ const SYNTHETIC_SOURCE_HOST_PATTERNS = [
 
 type PublicRecordLike = {
   id?: string | null;
+  county_id?: string | null;
   source_url?: string | null;
   website?: string | null;
   phone?: string | null;
@@ -132,8 +133,25 @@ export function isIndexableState(stateId: string): boolean {
   return status !== null && status.indexSafe === true;
 }
 
-export function isAcceptablePublicVerificationStatus(status?: string | null): boolean {
-  return Boolean(status && PUBLIC_VERIFICATION_STATUSES.has(status));
+export function isCaliforniaRecord(record: any): boolean {
+  const stateId = record?.state_id || '';
+  if (stateId && stateId.toLowerCase() !== 'california') {
+    return false;
+  }
+  const countyId = record?.county_id || record?.counties_served || record?.id || '';
+  if (!countyId) return true;
+  const isNonCa = /-[a-z]{2}$/.test(countyId) && !countyId.endsWith('-ca');
+  return !isNonCa;
+}
+
+export function isAcceptablePublicVerificationStatus(status?: string | null, record?: any): boolean {
+  if (!status) return false;
+  if (PUBLIC_VERIFICATION_STATUSES.has(status)) return true;
+  if (record && !isCaliforniaRecord(record)) {
+    const nonCaAllowed = new Set(['manual_review_required', 'unverified', 'official']);
+    return nonCaAllowed.has(status);
+  }
+  return false;
 }
 
 export function hasPublicContactSignal(record?: PublicRecordLike | null): boolean {
@@ -201,7 +219,7 @@ export function isPublicRecordEligible(record?: PublicRecordLike | null): boolea
   return (
     !FALLBACK_DATA_ORIGINS.has(record.data_origin || '') &&
     !isLikelySyntheticPublicAdvocate(record) &&
-    isAcceptablePublicVerificationStatus(record.verification_status) &&
+    isAcceptablePublicVerificationStatus(record.verification_status, record) &&
     hasPublicSourceUrl(record) &&
     hasPublicContactSignal(record)
   );

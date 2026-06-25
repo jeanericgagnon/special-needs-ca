@@ -12,6 +12,18 @@ interface StaticUrl {
   lastmod?: string | null;
 }
 
+function getYmdDate(dateStr?: string | null): string | null {
+  if (!dateStr) return null;
+  const match = dateStr.match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : null;
+}
+
+function getMaxDate(dates: (string | null | undefined)[]): string | null {
+  const clean = dates.map(d => getYmdDate(d)).filter(Boolean) as string[];
+  if (clean.length === 0) return null;
+  return clean.reduce((max, d) => d > max ? d : max, clean[0]);
+}
+
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
 
@@ -70,6 +82,9 @@ export async function GET() {
       const scores = stateProgs.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
       const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
+      const scrapedDates = stateProgs.map((p: Program) => p.last_scraped_at);
+      const maxScraped = getMaxDate(scrapedDates);
+
       const policy = getSeoPolicyForRoute('state-hub', {
         stateId: url.stateId
       }, {
@@ -80,7 +95,7 @@ export async function GET() {
         hasNoPlaceholderData: stateProgs.every((p: Program) => assertNoPlaceholderData(JSON.stringify(p)))
       });
       if (shouldIncludeInSitemap(policy)) {
-        filteredStaticUrls.push({ ...url, lastmod: minDate });
+        filteredStaticUrls.push({ ...url, lastmod: maxScraped });
       }
     } else if (url.routeType === 'state-counties-hub') {
       const counties = await getCounties(url.stateId);
@@ -91,6 +106,7 @@ export async function GET() {
       let confidenceCount = 0;
       let minDate: string | null = null;
       let hasOfficialSource = false;
+      const allScraped: (string | null | undefined)[] = [];
 
       for (const c of counties) {
         const details = countyDetailsMap.get(c.id);
@@ -108,6 +124,11 @@ export async function GET() {
         const coDates = offices.map((co: CountyOffice) => co.last_verified_date).filter(Boolean) as string[];
         const allDates = [...rcDates, ...sdDates, ...coDates];
         const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+        const rcScraped = rcs.map((rc: RegionalCenter) => rc.last_scraped_at);
+        const sdScraped = countyDistricts.map((sd: SchoolDistrict) => sd.last_scraped_at);
+        const coScraped = offices.map((co: CountyOffice) => co.last_scraped_at);
+        allScraped.push(...rcScraped, ...sdScraped, ...coScraped);
 
         if (lastVerDate) {
           if (!minDate || lastVerDate < minDate) {
@@ -151,6 +172,7 @@ export async function GET() {
       }
 
       const avgConfidenceScore = confidenceCount > 0 ? totalConfidence / confidenceCount : null;
+      const maxScraped = getMaxDate(allScraped);
 
       const policy = getSeoPolicyForRoute('state-counties-hub', {
         stateId: url.stateId
@@ -164,7 +186,7 @@ export async function GET() {
       });
 
       if (shouldIncludeInSitemap(policy)) {
-        filteredStaticUrls.push({ ...url, lastmod: minDate });
+        filteredStaticUrls.push({ ...url, lastmod: maxScraped });
       }
     }
   }
@@ -225,7 +247,8 @@ export async function GET() {
       });
 
       if (shouldIncludeInSitemap(policy)) {
-        const lastmodTag = prog?.last_verified_date ? `\n    <lastmod>${prog.last_verified_date}</lastmod>` : '';
+        const scrapedDate = prog?.last_scraped_at ? getYmdDate(prog.last_scraped_at) : null;
+        const lastmodTag = scrapedDate ? `\n    <lastmod>${scrapedDate}</lastmod>` : '';
         clusterXmlUrls.push(`  <url>
     <loc>${policy.canonicalUrl}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>

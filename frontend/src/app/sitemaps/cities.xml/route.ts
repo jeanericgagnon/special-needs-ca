@@ -11,6 +11,7 @@ export async function GET() {
     counties = await getCounties();
   } catch (err) {
     console.error('Failed to get counties:', err);
+    return new Response('Database error', { status: 500 });
   }
 
   const countyStateMap = new Map<string, string>();

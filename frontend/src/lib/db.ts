@@ -1231,6 +1231,8 @@ async function runPgMigrations(pool: Pool) {
       access_scope TEXT NOT NULL,
       created_at TEXT NOT NULL
     );
+    CREATE INDEX IF NOT EXISTS idx_nonprofit_organizations_county ON nonprofit_organizations(county_id);
+    CREATE INDEX IF NOT EXISTS idx_iep_advocate_counties_county ON iep_advocate_counties(county_id);
   `);
 }
 
@@ -3618,14 +3620,14 @@ export async function getCountyDetails(countyId: string) {
 
   // Get matching Regional Centers using junction table
   const rcs = await navigatorDb.prepare(`
-    SELECT rc.* FROM regional_centers rc
+    SELECT rc.*, rcc.county_id FROM regional_centers rc
     JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
     WHERE rcc.county_id = ?
   `).all(countyId) as RegionalCenter[];
 
   // Get matching SELPAs using junction table
   const countySelpas = await navigatorDb.prepare(`
-    SELECT s.* FROM selpas s
+    SELECT s.*, sc.county_id FROM selpas s
     JOIN selpa_counties sc ON s.id = sc.selpa_id
     WHERE sc.county_id = ?
   `).all(countyId) as Selpa[];

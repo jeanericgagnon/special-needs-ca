@@ -19,6 +19,18 @@ const TOP_25_CA_COUNTIES = [
   'monterey', 'placer', 'san-luis-obispo', 'santa-cruz', 'merced'
 ];
 
+function getYmdDate(dateStr?: string | null): string | null {
+  if (!dateStr) return null;
+  const match = dateStr.match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : null;
+}
+
+function getMaxDate(dates: (string | null | undefined)[]): string | null {
+  const clean = dates.map(d => getYmdDate(d)).filter(Boolean) as string[];
+  if (clean.length === 0) return null;
+  return clean.reduce((max, d) => d > max ? d : max, clean[0]);
+}
+
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
   const today = '2026-06-08';
@@ -41,16 +53,7 @@ export async function GET() {
     }
   } catch (e) {
     console.error('Failed to load counties or bulk details from database:', e);
-    allCounties = [
-      { id: 'los-angeles', name: 'Los Angeles', state_id: 'california', website: '' },
-      { id: 'orange', name: 'Orange', state_id: 'california', website: '' }
-    ];
-    try {
-      const la = await getCountyDetails('los-angeles');
-      if (la) countyDetailsMap.set('los-angeles', la);
-      const oc = await getCountyDetails('orange');
-      if (oc) countyDetailsMap.set('orange', oc);
-    } catch {}
+    return new Response('Database error', { status: 500 });
   }
 
   // Filter counties using evaluateSeoPolicy
@@ -137,7 +140,12 @@ export async function GET() {
     const coDates = (details?.countyOffices || []).map((co: CountyOffice) => co.last_verified_date).filter(Boolean) as string[];
     const allDates = [...rcDates, ...sdDates, ...coDates];
     const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
-    const lastmodTag = lastVerDate ? `\n    <lastmod>${lastVerDate}</lastmod>` : '';
+
+    const rcScraped = (details?.regionalCenters || []).map((rc: RegionalCenter) => rc.last_scraped_at);
+    const sdScraped = (details?.schoolDistricts || []).map((sd: SchoolDistrict) => sd.last_scraped_at);
+    const coScraped = (details?.countyOffices || []).map((co: CountyOffice) => co.last_scraped_at);
+    const maxScraped = getMaxDate([...rcScraped, ...sdScraped, ...coScraped]);
+    const lastmodTag = maxScraped ? `\n    <lastmod>${maxScraped}</lastmod>` : '';
 
     xmlUrls += `  <url>
     <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>${lastmodTag}
@@ -154,6 +162,9 @@ export async function GET() {
     const scores = statePrograms.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
     const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
+    const scrapedDates = statePrograms.map((p: Program) => p.last_scraped_at);
+    const maxScraped = getMaxDate(scrapedDates);
+
     for (const diag of diagnosesSlugs) {
       const policy = getSeoPolicyForRoute('condition-hub', {
         stateId: st.id,
@@ -166,7 +177,7 @@ export async function GET() {
       });
 
       if (shouldIncludeInSitemap(policy)) {
-        const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
+        const lastmodTag = maxScraped ? `\n    <lastmod>${maxScraped}</lastmod>` : '';
         xmlUrls += `  <url>
     <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
@@ -211,6 +222,12 @@ export async function GET() {
         const allDates = [...rcDates, ...sdDates, ...coDates];
         const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
+        const rcScraped = rcList.map((rc: RegionalCenter) => rc.last_scraped_at);
+        const sdScraped = sdList.map((sd: SchoolDistrict) => sd.last_scraped_at);
+        const coScraped = coList.map((co: CountyOffice) => co.last_scraped_at);
+        const progScraped = matchingPrograms.map((p: Program) => p.last_scraped_at);
+        const maxScraped = getMaxDate([...rcScraped, ...sdScraped, ...coScraped, ...progScraped]);
+
         const policy = getSeoPolicyForRoute('county-condition', {
           stateId,
           countyId: county.id,
@@ -226,7 +243,7 @@ export async function GET() {
         });
 
         if (shouldIncludeInSitemap(policy)) {
-          const lastmodTag = lastVerDate ? `\n      <lastmod>${lastVerDate}</lastmod>` : '';
+          const lastmodTag = maxScraped ? `\n      <lastmod>${maxScraped}</lastmod>` : '';
           xmlUrls += `  <url>
       <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>${lastmodTag}
       <changefreq>weekly</changefreq>

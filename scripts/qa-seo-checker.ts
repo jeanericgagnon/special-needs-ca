@@ -222,7 +222,31 @@ function isClaimBackedByStructuredEvidence(blockSlug: string, label: string, lin
     'ga-medicaid-fair-hearing': 'ga-medicaid',
     'ga-gapp-medical-necessity': 'ga-gapp',
     'ga-gadoe-mediation-request': 'ga-special-education',
-    'ga-dbhdd-planning-list-form': 'ga-comp-waiver'
+    'ga-dbhdd-planning-list-form': 'ga-comp-waiver',
+
+    // Florida
+    'fl-medicaid-application': 'fl-medicaid-dcf',
+    'fl-apd-application': 'form-10-007',
+    'fl-ibudget-guide': 'fl-ibudget-waiver',
+    'fl-earlysteps-guide': 'fl-earlysteps',
+    'fl-kidcare-guide': 'fl-kidcare',
+    'fl-fldoe-ese-guide': 'fl-fldoe-ese',
+    'fl-able-guide': 'fl-able',
+    'fl-ssi-checklist': 'fl-ssi-child',
+    'fl-vr-guide': 'fl-vocational-rehabilitation',
+    'fl-dcf-appeal': 'dcf-fair-hearing-request',
+    'fl-earlysteps-referral': 'early-steps-referral-form',
+    'fl-fldoe-mediation': 'fldoe-ese-mediation-request',
+    'fl-vr-transition': 'vr-transition-services-application',
+    'fl-ibudget-appeal': 'dcf-fair-hearing-request',
+    'fl-apd-hearing-guide': 'fl-ibudget-waiver',
+    'fl-fldoe-complaint': 'fldoe-ese-state-complaint',
+    'fl-due-process-complaint': 'fl-fldoe-ese',
+    'fl-mediation-request': 'fldoe-ese-mediation-request',
+    'fl-iep-evaluation-request': 'fl-fldoe-ese',
+    'fl-records-request': 'fl-fldoe-ese',
+    'fl-iee-request': 'fl-fldoe-ese',
+    'fl-pwn-request': 'fl-fldoe-ese'
   };
 
   if (mappings[dbSlug]) {
@@ -305,7 +329,8 @@ function isClaimBackedByStructuredEvidence(blockSlug: string, label: string, lin
           host.endsWith('myflfamilies.com') ||
           host.endsWith('floridakidcare.org') ||
           host.endsWith('floridaearlysteps.com') ||
-          host.endsWith('rehabworks.org')
+          host.endsWith('rehabworks.org') ||
+          host.endsWith('fldoe.org')
         ) {
           return true;
         }
@@ -453,7 +478,7 @@ states.forEach(state => {
   stateCounties.forEach(county => {
     const offices = db.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(county.id) as any[];
     const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
-    const details = db.prepare(`
+    const rcs = db.prepare(`
       SELECT rc.* FROM regional_centers rc
       JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
       WHERE rcc.county_id = ?
@@ -462,14 +487,14 @@ states.forEach(state => {
     const hasRequiredContactInfo = offices.length > 0;
     const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices));
     
-    const rcDates = details.map(rc => rc.last_verified_date).filter(Boolean);
+    const rcDates = rcs.map(rc => rc.last_verified_date).filter(Boolean);
     const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean);
     const coDates = offices.map(co => co.last_verified_date).filter(Boolean);
     const allDates = [...rcDates, ...sdDates, ...coDates];
     const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
     if (lastVerifiedDate) countyDates.push(lastVerifiedDate);
     
-    const rcScores = details.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+    const rcScores = rcs.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
     const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
     const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
     const allScores = [...rcScores, ...sdScores, ...coScores];
@@ -477,7 +502,7 @@ states.forEach(state => {
     if (confidenceScore !== null) countyScores.push(confidenceScore);
     
     let hasOfficialSource = false;
-    if (details.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
+    if (rcs.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
       hasOfficialSource = true;
       stateHasOfficialSource = true;
     }
@@ -492,7 +517,7 @@ states.forEach(state => {
       confidenceScore,
       hasRequiredContactInfo,
       hasNoPlaceholderData,
-      hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || details.length > 0
+      hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || rcs.length > 0
     });
     
     if (cPolicy.index) {
@@ -526,7 +551,7 @@ states.forEach(state => {
 counties.forEach(county => {
   const offices = db.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(county.id) as any[];
   const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
-  const details = db.prepare(`
+  const rcs = db.prepare(`
     SELECT rc.* FROM regional_centers rc
     JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
     WHERE rcc.county_id = ?
@@ -535,20 +560,20 @@ counties.forEach(county => {
   const hasRequiredContactInfo = offices.length > 0;
   const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices));
 
-  const rcDates = details.map(rc => rc.last_verified_date).filter(Boolean);
+  const rcDates = rcs.map(rc => rc.last_verified_date).filter(Boolean);
   const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean);
   const coDates = offices.map(co => co.last_verified_date).filter(Boolean);
   const allDates = [...rcDates, ...sdDates, ...coDates];
   const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
 
-  const rcScores = details.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+  const rcScores = rcs.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
   const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
   const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
   const allScores = [...rcScores, ...sdScores, ...coScores];
   const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
   let hasOfficialSource = false;
-  if (details.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
+  if (rcs.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
     hasOfficialSource = true;
   }
 
@@ -562,7 +587,7 @@ counties.forEach(county => {
     confidenceScore,
     hasRequiredContactInfo,
     hasNoPlaceholderData,
-    hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || details.length > 0
+    hasRealLocalAssets: countyDistricts.length > 0 || offices.length > 0 || rcs.length > 0
   });
 
   const url = `/benefits/${county.state_id}/${county.id}`;
@@ -754,7 +779,7 @@ testStates.forEach(st => {
 });
 
 // Test that BLOCKED states are NOT indexable
-const blockedStates = ['new-york', 'ohio', 'florida', 'new-mexico'];
+const blockedStates = ['alaska', 'arizona', 'idaho', 'maine'];
 blockedStates.forEach(st => {
   const policy = getSeoPolicyForRoute('state-hub', {
     stateId: st
@@ -1001,11 +1026,11 @@ if (runFull) {
     if (calHtml.includes('noindex')) logError('COMPLETE state is noindexed!');
     if (!calHtml.includes('California Special Education &amp; Disability Guides')) logError('COMPLETE state page title incorrect!');
 
-    // 2. BLOCKED State: new-york
-    console.log('Testing BLOCKED State: /benefits/new-york');
-    const nyRes = await fetch(`${baseUrl}/benefits/new-york`);
-    const nyHtml = await nyRes.text();
-    if (!nyHtml.includes('noindex')) logError('BLOCKED state page is not noindexed!');
+    // 2. BLOCKED State: alaska
+    console.log('Testing BLOCKED State: /benefits/alaska');
+    const akRes = await fetch(`${baseUrl}/benefits/alaska`);
+    const akHtml = await akRes.text();
+    if (!akHtml.includes('noindex')) logError('BLOCKED state page is not noindexed!');
 
     // 3. County that passes: /benefits/california/los-angeles
     console.log('Testing county that passes: /benefits/california/los-angeles');

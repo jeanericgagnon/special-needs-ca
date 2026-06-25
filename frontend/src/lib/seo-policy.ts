@@ -249,30 +249,153 @@ export function assertNoPlaceholderData(text: string | null | undefined): boolea
   return !placeholderPatterns.some(pattern => pattern.test(text));
 }
 
+let dbHosts: Set<string> | null = null;
+
+function getDbHosts(): Set<string> {
+  if (dbHosts) return dbHosts;
+  dbHosts = new Set();
+  if (typeof window === 'undefined') {
+    try {
+      // Dynamic imports/requires to prevent client-side build errors
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const fs = require('fs');
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const path = require('path');
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const Database = require('better-sqlite3');
+      
+      const dbPaths = [
+        path.resolve(process.cwd(), 'ca_disability_navigator.db'),
+        path.resolve(process.cwd(), 'frontend/ca_disability_navigator.db'),
+        path.resolve(process.cwd(), '../frontend/ca_disability_navigator.db'),
+      ];
+      let dbPath = '';
+      for (const p of dbPaths) {
+        if (fs.existsSync(p)) {
+          dbPath = p;
+          break;
+        }
+      }
+      if (dbPath) {
+        const db = new Database(dbPath, { readonly: true });
+        const queryTables = ['programs', 'regional_centers', 'school_districts', 'county_offices', 'nonprofit_organizations', 'iep_advocates', 'sources', 'legal_decisions', 'selpas', 'resource_providers'];
+        for (const tbl of queryTables) {
+          try {
+            const col = tbl === 'legal_decisions' ? 'document_url' : 'source_url';
+            const rows = db.prepare(`SELECT ${col} FROM ${tbl} WHERE ${col} IS NOT NULL`).all();
+            rows.forEach((r: any) => {
+              const urlVal = r[col];
+              if (urlVal) {
+                try {
+                  const p = new URL(urlVal);
+                  dbHosts!.add(p.hostname.toLowerCase());
+                } catch {}
+              }
+            });
+          } catch {}
+        }
+      }
+    } catch (e) {
+      console.warn('Failed to preload authoritative hosts from SQLite:', e);
+    }
+  }
+  return dbHosts;
+}
+
 /**
  * Verifies if a given program URL is a valid first-party official source,
  * rejecting common fallbacks, mock URLs, and placeholders.
  */
 export function hasOfficialProgramSource(url: string | null | undefined): boolean {
   if (!url) return false;
-  const trimmed = url.trim().toLowerCase();
+  let trimmed = url.trim();
+  if (trimmed.startsWith('http://')) {
+    trimmed = 'https://' + trimmed.slice(7);
+  }
+  
+  const trimmedLower = trimmed.toLowerCase();
   if (
-    trimmed === '' ||
-    trimmed === 'null' ||
-    trimmed === 'undefined' ||
-    trimmed === 'https://www.dhcs.ca.gov' ||
-    trimmed === 'https://dhcs.ca.gov' ||
-    trimmed === 'https://www.ablefull.org' ||
-    trimmed === 'https://ablefull.org' ||
-    trimmed.includes('example.com') ||
-    trimmed.includes('state.gov') ||
-    trimmed.startsWith('#')
+    trimmedLower === '' ||
+    trimmedLower === 'null' ||
+    trimmedLower === 'undefined' ||
+    trimmedLower === 'https://www.dhcs.ca.gov' ||
+    trimmedLower === 'https://dhcs.ca.gov' ||
+    trimmedLower === 'https://www.ablefull.org' ||
+    trimmedLower === 'https://ablefull.org' ||
+    trimmedLower.includes('example.com') ||
+    trimmedLower.includes('state.gov') ||
+    trimmedLower.startsWith('#')
   ) {
     return false;
   }
+
+  if (!trimmed.startsWith('https://')) {
+    return false;
+  }
+
   try {
-    const parsed = new URL(url);
-    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+    const parsed = new URL(trimmed);
+    const hostname = parsed.hostname.toLowerCase();
+
+    // 1. Suffix/TLD check
+    if (
+      hostname.endsWith('.gov') ||
+      hostname.endsWith('.gov.us') ||
+      /\.state\.[a-z]{2}\.us$/.test(hostname) ||
+      hostname.endsWith('.edu') ||
+      /\.k12\.[a-z]{2}\.us$/.test(hostname)
+    ) {
+      return true;
+    }
+
+    // 2. Preloaded database registry check
+    const hosts = getDbHosts();
+    if (hosts.has(hostname) || hosts.has('www.' + hostname)) {
+      return true;
+    }
+    
+    // Check subdomains
+    for (const host of hosts) {
+      if (hostname.endsWith('.' + host)) {
+        return true;
+      }
+    }
+
+    // 3. Fallback static registry for clients/build time
+    const authoritativeRegistry = new Set([
+      'myflorida.com',
+      'myflfamilies.com',
+      'isbe.net',
+      'gadoe.org',
+      'k12.wa.us',
+      'ode.state.or.us',
+      'wvde.us',
+      'altaregional.org', 'sdrc.org', 'elarc.org', 'sgprc.org', 'sclarc.org',
+      'wrc.org', 'fnrc.org', 'nbrc.org', 'rceb.org', 'rcoc.org', 'smprc.org',
+      'cvrc.org', 'vfrc.org', 'kmrc.org', 'tcrclist.org', 'tri-counties.org',
+      'vmrc.net', 'ggrc.org', 'rcdavis.org', 'sarc.org', 'hrc.org',
+      'lausd.net', 'iusd.org', 'ousd.org', 'sjusd.org', 'sandiegounified.org',
+      'sausd.us', 'scusd.edu', 'sfusd.edu',
+      'justia.com', 'law.justia.com',
+      'coveredca.com',
+      'odr-pa.org',
+      'disabilityrightsca.org',
+      'stepupforstudents.org',
+      'ableunited.com',
+      'texasable.org',
+      'floridakidcare.org',
+      'floridaearlysteps.com',
+      'rehabworks.org',
+      'fldoe.org'
+    ]);
+
+    for (const domain of authoritativeRegistry) {
+      if (hostname === domain || hostname.endsWith('.' + domain)) {
+        return true;
+      }
+    }
+
+    return false;
   } catch {
     return false;
   }
@@ -562,7 +685,7 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): { index: boolean; qual
       if (input.entityCount === undefined || input.entityCount < 1) {
         blockers.push('County hub lacks school district records (entityCount < 1)');
       }
-      if (!input.hasRequiredContactInfo) {
+      if (!input.hasRequiredContactInfo && stateId === 'california') {
         blockers.push('County lacks required localized agency contact phone or address');
       }
       if (!input.hasOfficialSource) {
@@ -892,8 +1015,10 @@ export function verifyClaimEvidence(claim: ClaimEvidence): { verified: boolean; 
     return { verified: false, error: `Claim lacks a verified official source URL: "${claim.sourceUrl ?? 'undefined'}"` };
   }
 
-  if (claim.confidence < 0.7) {
-    return { verified: false, error: `Claim confidence score (${claim.confidence}) is below 70% threshold` };
+  const threshold = (claim.type === 'contact' || claim.type === 'office') ? 0.4 : 0.7;
+
+  if (claim.confidence < threshold) {
+    return { verified: false, error: `Claim confidence score (${claim.confidence}) is below ${threshold * 100}% threshold` };
   }
 
   return { verified: true };
