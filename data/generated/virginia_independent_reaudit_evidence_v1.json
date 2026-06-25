@@ -1,0 +1,460 @@
+{
+  "state": "virginia",
+  "state_code": "VA",
+  "reviewed_at": "2026-06-25",
+  "families": [
+    {
+      "family": "medicaid_state_health_coverage",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live Virginia Medicaid member pages. The official Benefits and Services page states that benefits and services are available to Medicaid members, and the same page includes Virginia's maternal and child health insurance programs, including FAMIS and children's Medicaid.",
+      "query_basis": "Reviewed 2026-06-25 live official Virginia Medicaid member benefits pages for state coverage and child-health program evidence.",
+      "samples": [
+        {
+          "sample_name": "Virginia Medicaid Benefits and Services",
+          "source_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/",
+          "final_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/",
+          "verification_status": "official_verified",
+          "source_type": "official_medicaid_benefits_page",
+          "source_table": "programs",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Benefits and Services available to Medicaid Members."
+        },
+        {
+          "sample_name": "Virginia Maternal and Child Health Insurance Programs",
+          "source_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/",
+          "final_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/",
+          "verification_status": "official_verified",
+          "source_type": "official_medicaid_children_programs_snippet",
+          "source_table": "programs",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Virginia's Maternal and Child Health Insurance Programs include Family Access to Medical Insurance Security (FAMIS) and children's Medicaid."
+        }
+      ],
+      "test": {
+        "url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/",
+        "must_include": [
+          "Benefits and Services available to Medicaid Members",
+          "Virginia Medicaid",
+          "Family Access to Medical Insurance Security (FAMIS) and children's Medicaid"
+        ]
+      }
+    },
+    {
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live Virginia Medicaid waiver pages. The official Waivers page states that Medicaid waivers are home and community based and explicitly points families to CCC+ and Developmental Disability waivers.",
+      "query_basis": "Reviewed 2026-06-25 live official Virginia Medicaid waiver pages for HCBS and DD waiver evidence.",
+      "samples": [
+        {
+          "sample_name": "Virginia Medicaid Waivers",
+          "source_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/waivers/",
+          "final_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/waivers/",
+          "verification_status": "official_verified",
+          "source_type": "official_medicaid_waivers_page",
+          "source_table": "programs",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The Medicaid waivers are home and community based offering supports and services to a Medicaid individual, both children and adults."
+        },
+        {
+          "sample_name": "Virginia Developmental Disability Waivers",
+          "source_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/waivers/",
+          "final_url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/waivers/",
+          "verification_status": "official_verified",
+          "source_type": "official_medicaid_dd_waiver_snippet",
+          "source_table": "programs",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Developmental Disability (DD) Waivers include the Building Independence (BI), Family and Individual Support (FIS), and Community Living (CL) waivers."
+        }
+      ],
+      "test": {
+        "url": "https://www.dmas.virginia.gov/for-members/benefits-and-services/waivers/",
+        "must_include": [
+          "The Medicaid waivers are home and community based",
+          "Developmental Disability (DD) Waivers",
+          "CCC Plus Waiver"
+        ]
+      }
+    },
+    {
+      "family": "developmental_disability_idd_authority",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live DBHDS developmental services pages. The official DBHDS developmental-services page states that DBHDS strives to ensure that all individuals with developmental disabilities have access to quality support and services and publishes developmental services staff and waiver network supports contacts.",
+      "query_basis": "Reviewed 2026-06-25 live DBHDS developmental services pages for Virginia DD authority evidence.",
+      "samples": [
+        {
+          "sample_name": "DBHDS Developmental Services for Individuals and Families",
+          "source_url": "https://dbhds.virginia.gov/developmental-services-for-individuals-and-families/",
+          "final_url": "https://dbhds.virginia.gov/developmental-services-for-individuals-and-families/",
+          "verification_status": "official_verified",
+          "source_type": "official_dd_state_program_page",
+          "source_table": "state_resource_agencies",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "DBHDS strives to ensure that all individuals with developmental disabilities (DD) have access to quality support and services when and where they need them."
+        },
+        {
+          "sample_name": "DBHDS Developmental Services Staff",
+          "source_url": "https://dbhds.virginia.gov/developmental-services-for-individuals-and-families/",
+          "final_url": "https://dbhds.virginia.gov/developmental-services-for-individuals-and-families/",
+          "verification_status": "official_verified",
+          "source_type": "official_dd_staff_contacts",
+          "source_table": "state_resource_agencies",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The same official page publishes Developmental Services Staff, including the DDS Assistant Commissioner and Waiver Network Supports Director."
+        }
+      ],
+      "test": {
+        "url": "https://dbhds.virginia.gov/developmental-services-for-individuals-and-families/",
+        "must_include": [
+          "developmental disabilities (DD) have access to quality support and services",
+          "Developmental Services Staff",
+          "Waiver Network Supports Director"
+        ]
+      }
+    },
+    {
+      "family": "early_intervention_part_c",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live ITCVA pages. The ITCVA homepage identifies itself as the Commonwealth's early intervention system and says services are provided under Part C of IDEA; the Central Directory page routes referrals through local central points of entry and publicly lists county and city links; the Local System Managers directory publishes local managers with explicit county-and-city coverage crosswalks.",
+      "query_basis": "Reviewed 2026-06-25 live ITCVA statewide and local-routing pages for Virginia Part C evidence and local coverage.",
+      "samples": [
+        {
+          "sample_name": "Infant & Toddler Connection of Virginia homepage",
+          "source_url": "https://itcva.online/",
+          "final_url": "https://itcva.online/",
+          "verification_status": "official_verified",
+          "source_type": "official_part_c_homepage",
+          "source_table": "state_resource_agencies",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The Infant & Toddler Connection of Virginia is the Commonwealth's early intervention system for infants and toddlers with disabilities and their families."
+        },
+        {
+          "sample_name": "ITCVA Part C lead agency statement",
+          "source_url": "https://itcva.online/",
+          "final_url": "https://itcva.online/",
+          "verification_status": "official_verified",
+          "source_type": "official_part_c_lead_agency_statement",
+          "source_table": "state_resource_agencies",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "DBHDS has proudly served as the Lead Agency for Virginia's implementation of Part C of the Individuals with Disabilities Education Act (IDEA) since 1987."
+        },
+        {
+          "sample_name": "ITCVA Central Directory",
+          "source_url": "https://itcva.online/central-directory/",
+          "final_url": "https://itcva.online/central-directory/",
+          "verification_status": "official_verified",
+          "source_type": "official_part_c_central_directory",
+          "source_table": "county_offices",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Referrals to the Infant & Toddler Connection of Virginia are made through and received by local central points of entry."
+        },
+        {
+          "sample_name": "ITCVA Local System Managers directory",
+          "source_url": "https://itcva.online/local-system-managers/",
+          "final_url": "https://itcva.online/local-system-managers/",
+          "verification_status": "official_verified",
+          "source_type": "official_part_c_local_crosswalk",
+          "source_table": "county_offices",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The Local System Managers directory publishes local managers and explicit 'Counties & Cities' coverage crosswalks such as Accomack County and Northampton County under Eastern Shore."
+        }
+      ],
+      "test": {
+        "urls": [
+          {
+            "url": "https://itcva.online/",
+            "must_include": [
+              "Welcome to the Infant &amp; Toddler Connection of Virginia",
+              "Part C of the Individuals with Disabilities Education Act (IDEA)",
+              "Lead Agency"
+            ]
+          },
+          {
+            "url": "https://itcva.online/central-directory/",
+            "must_include": [
+              "Referrals to the Infant &amp; Toddler Connection of Virginia are made through and received by",
+              "Counties",
+              "Cities"
+            ]
+          },
+          {
+            "url": "https://itcva.online/local-system-managers/",
+            "must_include": [
+              "Local System Managers",
+              "Counties &amp; Cities",
+              "Accomack County, Northampton County"
+            ]
+          }
+        ],
+        "expected_local_system_manager_count": 40,
+        "minimum_county_links": 94
+      }
+    },
+    {
+      "family": "special_education_idea_part_b",
+      "critical": true,
+      "review_mode": "browser_reviewed",
+      "status_reason": "Reviewed 2026-06-25 the live official VDOE Special Education page in browser mode after raw fetch remained blocked. The page exposes the statewide Special Education landing page with parent resources, evaluation and eligibility, IEP and instruction, resolving disputes, reports and statistics, and IDEA Part B fiscal links on the official VDOE host.",
+      "query_basis": "Reviewed 2026-06-25 browser-rendered official VDOE special-education page because raw fetch returned access-denied responses.",
+      "samples": [
+        {
+          "sample_name": "VDOE Special Education landing page",
+          "source_url": "https://www.doe.virginia.gov/programs-services/special-education",
+          "final_url": "https://www.doe.virginia.gov/programs-services/special-education",
+          "verification_status": "official_browser_reviewed",
+          "source_type": "browser_reviewed_state_special_education_page",
+          "source_table": "regional_education_agencies",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "review_date": "2026-06-25",
+          "evidence_snippet": "The official page lists Special Education subpages including Information for Families, Evaluation and Eligibility, IEP and Instruction, Resolving Disputes, Reports, Plans and Statistics, and Virginia's Application for IDEA Part B Funds."
+        }
+      ]
+    },
+    {
+      "family": "district_or_county_education_routing",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live Virginia School Quality Profiles division routing pages. The official divisions archive publicly enumerates 133 Virginia divisions and the Fairfax County Public Schools detail page preserves the division number, address, superintendent, region, and division website.",
+      "query_basis": "Reviewed 2026-06-25 live Virginia School Quality Profiles archive and division detail pages for local education routing evidence.",
+      "samples": [
+        {
+          "sample_name": "Virginia School Quality Profiles divisions archive",
+          "source_url": "https://schoolquality.virginia.gov/divisions",
+          "final_url": "https://schoolquality.virginia.gov/divisions",
+          "verification_status": "official_verified",
+          "source_type": "official_division_directory",
+          "source_table": "school_districts",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The public divisions archive offers Browse All Virginia Divisions and shows Results 1 to 30 of 133."
+        },
+        {
+          "sample_name": "Fairfax County Public Schools Quality Profile",
+          "source_url": "https://schoolquality.virginia.gov/divisions/fairfax-county-public-schools",
+          "final_url": "https://schoolquality.virginia.gov/divisions/fairfax-county-public-schools",
+          "verification_status": "official_verified",
+          "source_type": "official_division_detail",
+          "source_table": "school_districts",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The Fairfax County Public Schools detail page preserves Division Number 29, address, superintendent, region, and division website."
+        }
+      ],
+      "test": {
+        "urls": [
+          {
+            "url": "https://schoolquality.virginia.gov/divisions",
+            "must_include": [
+              "Browse All Virginia Divisions",
+              "Showing 1 to 30 of 133 results",
+              "Accomack County Public Schools"
+            ]
+          },
+          {
+            "url": "https://schoolquality.virginia.gov/divisions/fairfax-county-public-schools",
+            "must_include": [
+              "Fairfax County Public Schools",
+              "Division Number:",
+              "Superintendent:",
+              "Region:"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "family": "vocational_rehabilitation_pre_ets",
+      "critical": true,
+      "review_mode": "browser_reviewed",
+      "status_reason": "Reviewed 2026-06-25 the live official DARS For Students page in browser mode after raw fetch remained blocked. The page states that DARS serves students with disabilities as early as age 14, explicitly labels Pre-Employment Transition Services, and describes Vocational Rehabilitation Services for eligible students.",
+      "query_basis": "Reviewed 2026-06-25 browser-rendered official DARS student employment page because raw fetch returned access-denied responses on the canonical DARS host.",
+      "samples": [
+        {
+          "sample_name": "DARS For Students",
+          "source_url": "https://dars.virginia.gov/employment-services/for-students/",
+          "final_url": "https://dars.virginia.gov/employment-services/for-students/",
+          "verification_status": "official_browser_reviewed",
+          "source_type": "browser_reviewed_vr_preets_page",
+          "source_table": "programs",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "review_date": "2026-06-25",
+          "evidence_snippet": "The official DARS page says services are available for students with disabilities as early as age 14, labels Pre-Employment Transition Services, and states that Vocational Rehabilitation Services help eligible students find and maintain employment."
+        }
+      ]
+    },
+    {
+      "family": "protection_and_advocacy",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live first-party dLCV pages. The dLCV homepage explicitly identifies itself as the designated Protection and Advocacy organization of Virginia.",
+      "query_basis": "Reviewed 2026-06-25 live first-party dLCV homepage for explicit Virginia protection-and-advocacy designation.",
+      "samples": [
+        {
+          "sample_name": "disAbility Law Center of Virginia",
+          "source_url": "https://www.dlcv.org/",
+          "final_url": "https://www.dlcv.org/",
+          "verification_status": "official_verified",
+          "source_type": "official_protection_and_advocacy_homepage",
+          "source_table": "nonprofit_organizations",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The disAbility Law Center of Virginia (dLCV) is the designated Protection and Advocacy organization for the Commonwealth of Virginia."
+        }
+      ],
+      "test": {
+        "url": "https://www.dlcv.org/",
+        "must_include": [
+          "designated Protection and Advocacy organization of Virginia",
+          "Protecting Your Rights"
+        ]
+      }
+    },
+    {
+      "family": "parent_training_information_center",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live first-party PEATC pages. The About page explicitly states that PEATC is the parent information and training center serving families and professionals of children with disabilities in the Commonwealth of Virginia.",
+      "query_basis": "Reviewed 2026-06-25 live first-party PEATC About page for explicit PTI designation language.",
+      "samples": [
+        {
+          "sample_name": "PEATC About Us",
+          "source_url": "https://peatc.org/about/",
+          "final_url": "https://peatc.org/about/",
+          "verification_status": "official_verified",
+          "source_type": "official_pti_about_page",
+          "source_table": "nonprofit_organizations",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The Parent Educational Advocacy Training Center (PEATC) is the parent information and training center serving families and professionals of children with disabilities in the Commonwealth of Virginia."
+        }
+      ],
+      "test": {
+        "url": "https://peatc.org/about/",
+        "must_include": [
+          "parent information and training center serving families and professionals of children with disabilities in the Commonwealth of Virginia",
+          "special education"
+        ]
+      }
+    },
+    {
+      "family": "legal_aid",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live first-party dLCV pages. The homepage says dLCV helps clients with disability-related problems and provides legal services and direct representation as resources allow.",
+      "query_basis": "Reviewed 2026-06-25 live first-party dLCV homepage for disability legal-aid service language.",
+      "samples": [
+        {
+          "sample_name": "disAbility Law Center of Virginia",
+          "source_url": "https://www.dlcv.org/",
+          "final_url": "https://www.dlcv.org/",
+          "verification_status": "official_verified",
+          "source_type": "official_disability_legal_aid_homepage",
+          "source_table": "nonprofit_organizations",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Using funding received from federal grants, we help clients with disability-related problems like abuse, neglect, and discrimination. We provide legal services and direct representation as resources allow."
+        }
+      ],
+      "test": {
+        "url": "https://www.dlcv.org/",
+        "must_include": [
+          "We help clients with disability-related problems like abuse, neglect, and discrimination",
+          "We provide legal services and direct representation as resources allow"
+        ]
+      }
+    },
+    {
+      "family": "able_program",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live ABLEnow and Commonwealth Savers pages. The ABLEnow homepage identifies the national ABLEnow program, and the same page states that ABLEnow is administered by Commonwealth Savers Plan; Commonwealth Savers in turn states that Virginia529 is now Commonwealth Savers.",
+      "query_basis": "Reviewed 2026-06-25 live ABLEnow and Commonwealth Savers pages to replace the generic ABLE NRC source with Virginia-administered program evidence.",
+      "samples": [
+        {
+          "sample_name": "ABLEnow",
+          "source_url": "https://www.ablenow.com/",
+          "final_url": "https://www.ablenow.com/",
+          "verification_status": "official_verified",
+          "source_type": "official_able_program_homepage",
+          "source_table": "programs",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "ABLEnow is administered by Commonwealth Savers Plan."
+        },
+        {
+          "sample_name": "Commonwealth Savers",
+          "source_url": "https://www.commonwealthsavers.com/",
+          "final_url": "https://www.commonwealthsavers.com/",
+          "verification_status": "official_verified",
+          "source_type": "official_program_sponsor_page",
+          "source_table": "programs",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Virginia529 is now Commonwealth Savers."
+        }
+      ],
+      "test": {
+        "urls": [
+          {
+            "url": "https://www.ablenow.com/",
+            "must_include": [
+              "ABLEnow is administered by",
+              "Commonwealth Savers Plan"
+            ]
+          },
+          {
+            "url": "https://www.commonwealthsavers.com/",
+            "must_include": [
+              "Virginia529 is now Commonwealth Savers"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "family": "county_local_disability_resources",
+      "critical": true,
+      "review_mode": "raw_fetch",
+      "status_reason": "Reviewed 2026-06-25 live Virginia DSS local department directory pages. The official Find Your Local Department page tells families to find their local department of social services in Virginia, says they can search by county or use filters, and exposes 121 results including Accomack, Albemarle, and Alleghany-Covington department cards.",
+      "query_basis": "Reviewed 2026-06-25 live official Virginia DSS local-department directory for county/local disability and benefits routing evidence.",
+      "samples": [
+        {
+          "sample_name": "Virginia DSS Find Your Local Department",
+          "source_url": "https://www.dss.virginia.gov/localagency/index.php",
+          "final_url": "https://dss.virginia.gov/localagency/",
+          "verification_status": "official_verified",
+          "source_type": "official_local_department_directory",
+          "source_table": "county_offices",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Use this page to find your local department of social services in Virginia."
+        },
+        {
+          "sample_name": "Virginia DSS county search instructions",
+          "source_url": "https://www.dss.virginia.gov/localagency/index.php",
+          "final_url": "https://dss.virginia.gov/localagency/",
+          "verification_status": "official_verified",
+          "source_type": "official_directory_search_instructions",
+          "source_table": "county_offices",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "Search by county or use the filters to narrow results by region or department name."
+        },
+        {
+          "sample_name": "Virginia DSS result count and sample cards",
+          "source_url": "https://www.dss.virginia.gov/localagency/index.php",
+          "final_url": "https://dss.virginia.gov/localagency/",
+          "verification_status": "official_verified",
+          "source_type": "official_directory_results",
+          "source_table": "county_offices",
+          "fetched_at": "2026-06-25T00:00:00.000Z",
+          "evidence_snippet": "The directory shows Results 1 - 10 of 121 and includes cards such as Accomack Department of Social Services, Albemarle County Department of Social Services, and Alleghany-Covington Department of Social Services."
+        }
+      ],
+      "test": {
+        "url": "https://www.dss.virginia.gov/localagency/index.php",
+        "must_include": [
+          "Use this page to find your local department of social services in Virginia",
+          "Search by county or use the filters",
+          "Results 1 - 10",
+          "Accomack Department of Social Services",
+          "Albemarle County Department of Social Services"
+        ]
+      }
+    }
+  ]
+}
