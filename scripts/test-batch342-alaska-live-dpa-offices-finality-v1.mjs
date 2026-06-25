@@ -96,6 +96,8 @@ assert.match(handoff, /DPA Dashboard PDF/);
 assert.match(handoff, /Medicaid enrollment snapshot PDF/);
 assert.match(handoff, /## Next State Order After Alaska/);
 assert.match(handoff, /1\. Oklahoma/);
+assert.match(handoff, /2\. Minnesota/);
+assert.doesNotMatch(handoff, /2\. Ohio/);
 assert.match(lessons, /A Recovered Official Office Page Still Needs County-Equivalent Assignment/);
 
 assert.equal(batchSummary.dpa_landing_review_status, 200);
