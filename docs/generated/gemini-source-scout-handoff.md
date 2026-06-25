@@ -25,41 +25,38 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: New Mexico
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now down to three districts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont now also clears from the public official Apptegy events API used by `sd215.net`, which preserves exact `Child Find Preschool Screenings` rows for Henry's Fork Elementary and Ashton Elementary with Fremont venues and dates. The three remaining district roots now materialize exact wrong-role leaves instead of recoverable special-ed routing. Camas only exposes a district-owned `Contact Information` leaf with address and phone. Clark exposes exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves, but they only provide generic district office, compliance, or general-education intervention routing. Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, and its District Documents page links a `Parent Notification of General Education Instruction & Intervention` PDF, but still no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho remains BLOCKED because the remaining district-owned leaves are real but still the wrong role for local special-education routing.
+`district_or_county_education_routing` is still the highest-priority New Mexico blocker, but the official failure mode is now more exhaustive than the earlier packet. The live PED-managed SharePoint host preserves the public `2017 NM Schools` list with REST-backed rows, the public `RECHome.aspx` grouping page, and six public workbook exports: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`. That broader official stack proves the state has a public directory lane, but every reviewed list and workbook still omits county or REC service-area fields. `NM Schools.xlsx` and the REST list preserve district/location columns only. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.
 
 ### Exact Evidence Needed
 
-- Any official district-owned special-education, special-services, student-services, 504, procedural-safeguards, or Child Find leaf on Camas, Clark, or Shoshone.
-- Any district-owned PDF, handbook, or notice on those three hosts that explicitly preserves special-education routing plus named contact information.
-- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.
+- Any official PED-managed county-to-district crosswalk, county column, county selector, or county-keyed export on the live WebED host.
+- Any official PED-managed REC service-area artifact that explicitly labels counties served by each REC.
+- Any official district-owned or REC-owned local special-education routing leaf that proves county-grade coverage without inference.
 
 ### Useful Official URLs Already Tried
 
-- [Camas root](https://www.camascountyschools.org/)
-- [Camas Contact Information](https://www.camascountyschools.org/contact-information)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Clark Parent Notification of General Education Instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)
-- [Fremont root](https://www.sd215.net/)
-- [Fremont district events API](https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events)
-- [Shoshone root](https://shoshonesd.org/)
-- [Shoshone District Documents](https://shoshonesd.org/contracts/)
-- [Oneida Child Find PDF](https://5il.co/26a73)
-- [Jefferson sitemap](https://www.jeffersonsd251.org/wp-sitemap.xml)
+- [PED SharePoint school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
+- [2017 NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
+- [NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
+- [Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
+- [REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
+- [Elementary School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx)
+- [Middle School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx)
+- [High School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx)
+- [REC home page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
+- [Special Education Bureau page](https://webnew.ped.state.nm.us/bureaus/special-education/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current district-owned special-education, student-services, 504, or procedural-safeguards leaf for Camas, Clark, or Shoshone.
-- Any district-owned Child Find PDF or special-ed handbook already linked from those hosts but not yet surfaced on the homepage HTML.
-- Any public Idaho DHW county-to-office contract that can reduce the separate county-local blocker.
+- Any live WebED list, workbook, or site page with an explicit county column or county-keyed filter.
+- Any official REC service-area contract with county labels on the PED-managed host or REC-owned official hosts.
+- Any official district-owned local special-education or student-services leaf that can clear counties without relying on statewide PED exports.
 
-## Next State Order After Idaho
+## Next State Order After New Mexico
 
-1. New Mexico
-2. Arizona
-3. New Hampshire
+1. Arizona
+2. New Hampshire
