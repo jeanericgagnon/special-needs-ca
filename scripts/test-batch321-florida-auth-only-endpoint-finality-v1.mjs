@@ -48,7 +48,7 @@ assert.match(failure.evidence, /communityPartnerSearch/);
 assert.match(failure.evidence, /HTTP 401 and HTTP 401/);
 
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.match(verified.query_basis, /2026-06-24/);
+assert.match(verified.query_basis, /Reviewed 2026-06-(24|25)/);
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Florida MyACCESS main bundle re-exposes authenticated county-result endpoints'));
 
 const next = nextRows.find((row) => row.family === 'county_local_disability_resources');
