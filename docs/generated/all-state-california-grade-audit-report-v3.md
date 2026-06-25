@@ -9,17 +9,16 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Classification counts
 
-- COMPLETE: 38
-- BLOCKED: 12
+- COMPLETE: 39
+- BLOCKED: 11
 
-- index-safe states: 38
-- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, Washington, West Virginia, Wisconsin
-- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Wyoming
+- index-safe states: 39
+- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, Washington, West Virginia, Wisconsin
+- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, Rhode Island, South Dakota, Vermont, Wyoming
 
 ## Notes
 
 - Arizona remains blocked, but the education blocker is narrower: Coconino now clears through the official CAVIAT root plus a live 504 leaf, Mohave has a reviewed alternate special-services leaf that still lacks official county attachment in this lane, Yavapai still lacks a role-bearing local leaf, and county-local still bottoms out in AHCCCS support-letter PDFs rather than a county-routing contract.
-- North Dakota remains blocked, but the blocker is now singular and cleaner: official HHS Human Service Zone county-local routing and first-party statewide legal-aid evidence are now cleared, and only the public DPI education-routing contract remains below California-grade because the live DPI surfaces still expose statewide guidance and district inventory without county-grade or district-owned special-education routing.
 - South Dakota remains blocked, but the blocker is now singular and cleaner: official DOE district-directory pages now clear education routing, official UJS legal-help pages clear statewide legal aid, and only county-local disability routing remains below California-grade because the current DHS host still exposes no public county-to-office or local-service contract.
 - Wyoming remains blocked, but the blocker set is much narrower than before: official WDE IDEA pages now clear statewide special-education authority, first-party PTI and statewide legal-aid evidence are now restored, and the remaining blockers are only county/district education routing without a reviewable crosswalk plus county-local disability routing that is still aging/community-living only on the public WDH host.
 - Texas remains COMPLETE/index-safe from v10.
@@ -38,3 +37,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Idaho remains blocked after a final Camas-and-Clark attachment pass: Camas only exposes contact routing plus a board-roster Google Doc, and Clark only exposes Contact Us, Title IX, and general-education notice attachments, not local special-education routing.
 - New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the fuller official failure mode: the live PED SharePoint directory host, its REST-backed `2017 NM Schools` list, the REC grouping page, the complete six-file public workbook library, and the five public SharePoint site pages are all reviewable, but none publishes a county field or REC county-service-area contract.
 - New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, and even the DHHS/`nh.gov` robots.txt and sitemap.xml diagnostics return that same shell.
+- North Dakota is now COMPLETE/index-safe from the live HHS Developmental Disabilities Regional Offices county contracts, the reviewed DPI district-list PDF, and refreshed first-party Legal Services of North Dakota routing evidence.

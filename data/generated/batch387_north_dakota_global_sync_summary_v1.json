@@ -1,0 +1,9 @@
+{
+  "batch": "batch387_north_dakota_global_sync_v1",
+  "generated_at": "2026-06-25T20:08:06.527Z",
+  "north_dakota_classification": "COMPLETE",
+  "complete_count": 39,
+  "blocked_count": 11,
+  "index_safe_count": 39,
+  "incorrectly_index_safe_states": []
+}
