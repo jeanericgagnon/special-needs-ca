@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T06:18:17.806Z",
+  "generatedAt": "2026-06-25T06:30:00.000Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 29,
@@ -1622,18 +1622,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked",
+        "district_or_county_education_routing": "blocked_mde_description_page_live_but_mdeorg_root_and_child_routes_are_radware_blocked",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_mn_dhs_saved_county_tribal_replacements_are_official_404s"
+        "county_local_disability_resources": "blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated"
       },
       "packetGenerated": true,
       "packetBatch": "batch333_minnesota_live_route_and_dhs_404_refresh_v1",
-      "packetPrimaryGapReason": "live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s",
+      "packetPrimaryGapReason": "mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

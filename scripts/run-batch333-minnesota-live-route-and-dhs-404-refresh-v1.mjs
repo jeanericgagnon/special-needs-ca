@@ -27,24 +27,24 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'minnesota-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP_REASON = 'live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s';
+const PRIMARY_GAP_REASON = 'mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated';
 
-const DISTRICT_STATUS = 'blocked_live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked';
-const DISTRICT_FAILURE_CODE = 'official_mdeorg_root_and_district_page_are_live_but_county_contact_and_analytics_contracts_remain_radware_blocked';
-const DISTRICT_REASON = 'Minnesota education remains blocked, but the blocker is now narrower and more truthful. A bounded 2026-06-24 live recheck showed the MDE-ORG description page, glossary root, and `Schools and Districts` route all loading publicly on official Minnesota hosts. But the county route, contact search route, contact-type route, and analytics export route still collapse into Radware captcha pages, so there is still no reproducible county-grade district routing or export contract.';
-const DISTRICT_EVIDENCE = 'Reviewed 2026-06-24 bounded official Minnesota MDE education surfaces. The description page at https://education.mn.gov/MDE/about/SchOrg/ returned HTTP 200 with title `Schools and Organizations (MDE-ORG)`. The glossary root at https://pub.education.mn.gov/MdeOrgView/ returned HTTP 200 with title `MDE Organization Reference Glossary`, and the district route at https://pub.education.mn.gov/MdeOrgView/districts/index returned HTTP 200 with title `Schools and Districts`. But the county route at https://pub.education.mn.gov/MdeOrgView/reference/county, the contact-search route at https://pub.education.mn.gov/MdeOrgView/search/searchContacts, the contact-type route at https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList, and the analytics route at https://pub.education.mn.gov/MDEAnalytics/Data.jsp all redirected into `validate.perfdrive.com` with title `Radware Captcha Page`. Minnesota therefore still lacks a reviewable county-grade district routing contract in low-token mode, but the current truth is live root plus live district navigation chrome with county/contact/analytics still bot-gated.';
-const DISTRICT_NEXT_ACTION = 'hold_blocked_until_reviewed_first_party_mdeorg_county_or_contact_export_contract_exists';
+const DISTRICT_STATUS = 'blocked_mde_description_page_live_but_mdeorg_root_and_child_routes_are_radware_blocked';
+const DISTRICT_FAILURE_CODE = 'official_mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_all_radware_blocked';
+const DISTRICT_REASON = 'Minnesota education remains blocked, and the live public contract is now narrower than the prior packet implied. A bounded 2026-06-25 recheck showed the MDE description page still loading publicly on the official host, but the MDE-ORG glossary root itself and every actionable child route checked in low-token mode now redirect into Radware captcha pages. That includes the root, district, county, contact-search, contact-type, and analytics routes, so there is still no reproducible county-grade district routing or export contract.';
+const DISTRICT_EVIDENCE = 'Reviewed 2026-06-25 bounded official Minnesota MDE education surfaces. The description page at https://education.mn.gov/MDE/about/SchOrg/ returned HTTP 200 with title `Schools and Organizations (MDE-ORG)`. But a fresh exact recheck showed the MDE-ORG glossary root at https://pub.education.mn.gov/MdeOrgView/, the district route at https://pub.education.mn.gov/MdeOrgView/districts/index, the county route at https://pub.education.mn.gov/MdeOrgView/reference/county, the contact-search route at https://pub.education.mn.gov/MdeOrgView/search/searchContacts, the contact-type route at https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList, and the analytics route at https://pub.education.mn.gov/MDEAnalytics/Data.jsp all returning HTTP 302 redirects into `validate.perfdrive.com` with title `Radware Captcha Page`. Minnesota therefore still lacks a reviewable county-grade district routing contract in low-token mode, and the current truth is stricter than the prior packet: only the description page is stably public while the root plus all actionable MDE-ORG child routes are bot-gated.';
+const DISTRICT_NEXT_ACTION = 'hold_blocked_until_reviewed_first_party_mdeorg_root_or_export_contract_stays_public';
 
-const COUNTY_STATUS = 'blocked_mn_dhs_saved_county_tribal_replacements_are_official_404s';
-const COUNTY_FAILURE_CODE = 'official_mn_dhs_saved_county_tribal_replacements_now_resolve_to_404_without_public_county_contract';
-const COUNTY_REASON = 'Minnesota county-local routing remains blocked, but the live blocker changed. The saved DHS county-and-tribal replacement URLs no longer present a reviewable public directory or even a live captcha gate in bounded fetches. On 2026-06-24 both saved replacement URLs returned official DHS 404 pages, so there is still no county-grade local office contract on the reviewed first-party replacements.';
-const COUNTY_EVIDENCE = 'Reviewed 2026-06-24 bounded official Minnesota DHS county-and-tribal replacements. https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/ returned HTTP 404 with title `404 / Minnesota Department of Human Services`, and https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/ returned the same official DHS 404 page. Minnesota therefore still lacks a reviewable county-grade county/tribal office contract on the saved first-party replacements, and the blocker is now official 404 replacements rather than a live captcha family.';
-const COUNTY_NEXT_ACTION = 'hold_blocked_until_reviewed_first_party_mn_dhs_county_tribal_successor_exists';
+const COUNTY_STATUS = 'blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated';
+const COUNTY_FAILURE_CODE = 'official_mn_dhs_404_shell_points_to_successor_county_tribal_state_directory_but_that_route_is_radware_blocked';
+const COUNTY_REASON = 'Minnesota county-local routing remains blocked, but the exact first-party picture is now sharper. The saved disability-services replacement URLs still return official DHS 404 pages, and the same official DHS shell exposes a likely successor route named `Minnesota Health Care Program county, Tribal and state directory`. But that exact successor route is also bot-gated behind a Radware challenge in bounded fetches, so there is still no reviewable county-grade local office contract on public first-party DHS surfaces.';
+const COUNTY_EVIDENCE = 'Reviewed 2026-06-25 bounded official Minnesota DHS county-and-tribal surfaces. The saved disability-services replacement URLs still return official DHS 404 pages, including https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/. The official DHS shell also exposes an exact successor contact route at https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp labeled `Minnesota Health Care Program county, Tribal and state directory`, but a fresh exact recheck showed that successor returning HTTP 302 into `validate.perfdrive.com` / `Radware Bot Manager Captcha`. Minnesota therefore still lacks a reviewable county-grade county/tribal office contract on public first-party DHS surfaces.';
+const COUNTY_NEXT_ACTION = 'hold_blocked_until_reviewed_first_party_mn_dhs_county_tribal_state_directory_stays_public';
 
-const LESSON_HEADING = '### Live Navigation Chrome Still Fails If County And Contact Contracts Stay Bot-Gated';
-const LESSON_BODY = '*   **Lesson:** If an official directory root and one child navigation page render publicly, keep the family blocked unless the county, contact, or export surfaces also stay public. Minnesota MDE-ORG showed live `MDE Organization Reference Glossary` and `Schools and Districts` pages, but the county, contact, and analytics routes still fell into Radware, so the family stayed below California-grade.';
-const LESSON_HEADING_2 = '### Replatformed Official Replacements Should Be Downgraded To 404 Truth When The Gate Disappears';
-const LESSON_BODY_2 = '*   **Lesson:** If a previously challenged replacement URL later settles into an official 404, update the blocker to the narrower 404 truth instead of carrying forward the older captcha narrative. Minnesota DHS county-and-tribal replacements moved from assumed Radware gating to plain official DHS 404 pages on recheck.';
+const LESSON_HEADING = '### Live Description Pages Do Not Rescue A Bot-Gated Directory Family';
+const LESSON_BODY = '*   **Lesson:** If an official description page stays public but the directory root and all actionable child routes redirect into bot protection, keep the family blocked at the stricter root-plus-child level. Minnesota MDE still served the `Schools and Organizations (MDE-ORG)` explainer page, but the MDE-ORG root, district, county, contact, and analytics routes all redirected into Radware on the same bounded pass.';
+const LESSON_HEADING_2 = '### Official 404 Shells Can Still Expose The Real Successor Lane';
+const LESSON_BODY_2 = '*   **Lesson:** If an official 404 shell links a named successor route, verify that exact successor before freezing the blocker. Minnesota DHS disability-services replacements still 404, but the same shell exposed `county-tribal-state-offices.jsp`, which turned the blocker from “no successor found” into the more exact truth that the successor exists but is bot-gated.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -112,8 +112,8 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '## Completion decision',
     '',
     '- Minnesota remains BLOCKED and index_safe=false.',
-    '- district_or_county_education_routing remains blocked because the official MDE-ORG root and district page are live, but the county, contact, and analytics routes are still Radware-blocked and do not yield a reproducible county-grade contract.',
-    '- county_local_disability_resources remains blocked because the reviewed DHS county-and-tribal replacement URLs now resolve to official DHS 404 pages and still do not expose a public local-office contract.',
+    '- district_or_county_education_routing remains blocked because only the official MDE description page is stably public in bounded fetches; the MDE-ORG root plus district, county, contact, and analytics routes all redirect into Radware and do not yield a reproducible county-grade contract.',
+    '- county_local_disability_resources remains blocked because the reviewed DHS disability-services replacements still 404 and the exact named successor county/tribal/state directory route is also bot-gated.',
     '- parent_training_information_center remains verified and is not a current blocker.',
   ].join('\n') + '\n';
 }
@@ -121,7 +121,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
 function updateAllStateReport() {
   let text = fs.readFileSync(INPUTS.allStateReport, 'utf8');
   const oldBullet = '- The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.';
-  const newBullet = '- Minnesota remains blocked, but the blocker is now narrower and more accurate: the MDE-ORG root and `Schools and Districts` route are live while county/contact/analytics routes remain Radware-blocked, and the saved DHS county/tribal replacements now resolve to official DHS 404 pages rather than a live captcha family.';
+  const newBullet = '- Minnesota remains blocked, and the stricter live truth is now: only the MDE description page is public while the MDE-ORG root plus district/county/contact/analytics routes all redirect into Radware, and the DHS disability-services 404 shell points to a named county/tribal/state successor route that is also bot-gated.';
   if (text.includes(oldBullet) && !text.includes(newBullet)) {
     text = text.replace(oldBullet, `${oldBullet}\n- ${newBullet.slice(2)}`);
   } else if (!text.includes(newBullet)) {
@@ -134,20 +134,24 @@ function updateHandoff() {
   let text = fs.readFileSync(INPUTS.handoff, 'utf8');
   text = text.replace(
     '- Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`',
-    '- Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`'
+    '- Minnesota: `mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`'
+  );
+  text = text.replace(
+    '- Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`',
+    '- Minnesota: `mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`'
   );
 
   const focusSection = `## Current Focus State: Minnesota
 
 ### Blocker Reason
 
-Minnesota still has two critical blockers, and the highest-priority one remains \`district_or_county_education_routing\`. The live official picture is now narrower and more accurate: the MDE-ORG description page, glossary root, and \`Schools and Districts\` route all render publicly on official Minnesota hosts, but the county route, contact-search route, contact-type route, and analytics route still fall into Radware captcha. The separate county-local blocker also shifted: the saved DHS county-and-tribal replacement URLs now return official DHS 404 pages instead of a live captcha family.
+Minnesota still has two critical blockers, and the highest-priority one remains \`district_or_county_education_routing\`. The stricter live official picture is now: the MDE description page is still public, but the MDE-ORG glossary root itself and every actionable child route checked in low-token mode now redirect into Radware captcha. That includes the district, county, contact-search, contact-type, and analytics routes. The separate county-local blocker is also sharper: the saved DHS disability-services replacements still 404, and the official shell now points to a named successor county/tribal/state directory route that is itself bot-gated.
 
 ### Exact Evidence Needed
 
-- A public first-party Minnesota MDE county, contact, or export route that yields reproducible organization data instead of the current Radware challenge.
+- A public first-party Minnesota MDE root, district, county, contact, or export route that yields reproducible organization data instead of the current Radware challenge.
 - Or, a reviewed public Minnesota MDE download/export lane that preserves county-grade organization routing without browser validation.
-- Separately, a live official Minnesota DHS successor for county-and-tribal office routing; the two saved replacements now 404 and no longer provide a usable local-office contract.
+- Separately, a live official Minnesota DHS county/tribal/state directory route that stays public instead of redirecting into bot protection.
 
 ### Useful Official URLs Already Tried
 
@@ -160,12 +164,13 @@ Minnesota still has two critical blockers, and the highest-priority one remains 
 - [Minnesota analytics route](https://pub.education.mn.gov/MDEAnalytics/Data.jsp)
 - [Minnesota DHS county and tribal offices replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/)
 - [Minnesota DHS county tribal nation directory replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/)
+- [Minnesota DHS county tribal state directory successor](https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Minnesota MDE county, contact, or analytics export surface that stays public and yields real organization data.
+- Any official Minnesota MDE root, district, county, contact, or analytics export surface that stays public and yields real organization data.
 - Any first-party Minnesota education export or downloadable organization file linked from the live MDE-ORG family.
-- Any official Minnesota DHS successor page for county-and-tribal office routing that replaces the two reviewed 404 paths.
+- Any official Minnesota DHS successor page for county-and-tribal office routing that stays public instead of redirecting into Radware.
 
 ## Next State Order After Minnesota
 
@@ -262,7 +267,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
       return {
         ...row,
         family_status: DISTRICT_STATUS,
-        query_basis: 'Reviewed 2026-06-24 the live MDE-ORG description page, glossary root, district route, county route, contact routes, and analytics route.',
+        query_basis: 'Reviewed 2026-06-25 the official MDE description page plus exact MDE-ORG root, district, county, contact, and analytics routes.',
         blocker_code: DISTRICT_FAILURE_CODE,
         blocker_evidence: DISTRICT_EVIDENCE,
         sample_count: 5,
@@ -274,28 +279,28 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
             verification_status: 'verified',
             source_type: 'official_directory_description_page',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'The official description page is live with title `Schools and Organizations (MDE-ORG)` and still describes MDE-ORG as a searchable database.',
           },
           {
             sample_name: 'Minnesota MDE-ORG glossary root',
             source_url: 'https://pub.education.mn.gov/MdeOrgView/',
-            final_url: 'https://pub.education.mn.gov/MdeOrgView/',
-            verification_status: 'verified',
-            source_type: 'official_directory_root',
+            final_url: 'https://validate.perfdrive.com/?.../MdeOrgView/',
+            verification_status: 'blocked',
+            source_type: 'official_directory_root_radware',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
-            evidence_snippet: 'The glossary root is live with title `MDE Organization Reference Glossary` and visible first-party navigation including `Schools and Districts`.',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The glossary root now redirects into `validate.perfdrive.com` with title `Radware Captcha Page` instead of exposing a stable public entrypoint.',
           },
           {
             sample_name: 'Minnesota schools and districts route',
             source_url: 'https://pub.education.mn.gov/MdeOrgView/districts/index',
-            final_url: 'https://pub.education.mn.gov/MdeOrgView/districts/index',
-            verification_status: 'verified',
-            source_type: 'official_directory_navigation_page',
+            final_url: 'https://validate.perfdrive.com/?.../MdeOrgView/districts/index',
+            verification_status: 'blocked',
+            source_type: 'official_directory_navigation_route_radware',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
-            evidence_snippet: 'The route is publicly reachable with title `Schools and Districts`, but this still does not establish a county-grade contract because the county and contact lanes remain blocked.',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The district route now also redirects into `validate.perfdrive.com` with title `Radware Captcha Page`, so even the district navigation lane is no longer public in low-token mode.',
           },
           {
             sample_name: 'Minnesota counties and contacts routes',
@@ -304,7 +309,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
             verification_status: 'blocked',
             source_type: 'official_directory_child_route_radware',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'The county route and contact child routes redirect into `validate.perfdrive.com` with title `Radware Captcha Page` instead of yielding county-grade organization data.',
           },
           {
@@ -314,7 +319,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
             verification_status: 'blocked',
             source_type: 'official_analytics_route_radware',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'The analytics route still redirects into `validate.perfdrive.com` with title `Radware Captcha Page`, so there is no stable public export contract.',
           },
         ],
@@ -324,7 +329,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
       return {
         ...row,
         family_status: COUNTY_STATUS,
-        query_basis: 'Reviewed 2026-06-24 the saved DHS county-and-tribal replacement URLs directly on official Minnesota DHS hosts.',
+        query_basis: 'Reviewed 2026-06-25 the saved DHS disability-services replacements plus the exact named successor county/tribal/state directory route.',
         blocker_code: COUNTY_FAILURE_CODE,
         blocker_evidence: COUNTY_EVIDENCE,
         sample_count: 3,
@@ -336,18 +341,18 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
             verification_status: 'blocked',
             source_type: 'official_replacement_404',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'The saved replacement now returns HTTP 404 with title `404 / Minnesota Department of Human Services` rather than a public local-office directory.',
           },
           {
-            sample_name: 'County tribal nation directory replacement',
-            source_url: 'https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/',
-            final_url: 'https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/',
+            sample_name: 'County tribal state directory successor',
+            source_url: 'https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp',
+            final_url: 'http://validate.perfdrive.com/.../county-tribal-state-offices.jsp',
             verification_status: 'blocked',
-            source_type: 'official_replacement_404',
+            source_type: 'official_successor_route_radware',
             source_table: 'batch333_minnesota_live_route_and_dhs_404_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
-            evidence_snippet: 'The adjacent saved replacement also returns the official DHS 404 page and still does not expose county or tribal office routing.',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The exact DHS successor labeled `Minnesota Health Care Program county, Tribal and state directory` redirects into `validate.perfdrive.com` / `Radware Bot Manager Captcha` instead of yielding a public office directory.',
           },
           {
             sample_name: 'Legacy county-and-tribal-offices path family',
@@ -383,7 +388,7 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
 
   const updatedAllStateAudit = {
     ...allStateAudit,
-    generatedAt: '2026-06-24T23:30:00.000Z',
+    generatedAt: '2026-06-25T06:30:00.000Z',
     states: allStateAudit.states.map((row) => {
       if (row.stateId !== 'minnesota') return row;
       return {
@@ -413,15 +418,16 @@ export function generateBatch333MinnesotaLiveRouteAndDhs404RefreshV1() {
 
   const batchSummary = {
     batch: 'batch333_minnesota_live_route_and_dhs_404_refresh_v1',
-    generated_at: '2026-06-24T23:30:00.000Z',
+    generated_at: '2026-06-25T06:30:00.000Z',
     state: 'minnesota',
     classification: 'BLOCKED',
     index_safe: false,
     live_mde_description_page: true,
-    live_mde_root: true,
-    live_mde_district_route: true,
-    blocked_mde_county_contact_analytics_routes: 4,
-    dhs_saved_replacement_404_count: 2,
+    live_mde_root: false,
+    live_mde_district_route: false,
+    blocked_mde_root_and_child_routes: 6,
+    dhs_saved_replacement_404_count: 1,
+    dhs_successor_route_bot_gated: true,
     lessons_changed: lessonsChanged,
   };
   writeJson(OUTPUTS.summary, batchSummary);

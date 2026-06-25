@@ -16,7 +16,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Idaho: `reviewed_idaho_district_leaves_hold_at_12_counties_and_remaining_county_bearing_district_roots_now_have_public_sitemap_exhaustion_evidence`
 - Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
-- Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
+- Minnesota: `mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
@@ -32,53 +32,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Ohio
+## Current Focus State: Minnesota
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the top Ohio blocker. The bounded live same-domain education leaf probe recovered strong exact local education leaves for 54 counties and partial exact local education leaves for 24 more counties from existing Ohio ESC and district-owned roots, but 10 counties still point to dead, unresolvable, transport-broken, or no-leaf roots, so the state still cannot clear county-grade education routing.
+Minnesota still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The stricter live official picture is now: the MDE description page is still public, but the MDE-ORG glossary root itself and every actionable child route checked in low-token mode now redirect into Radware captcha. That includes the district, county, contact-search, contact-type, and analytics routes. The separate county-local blocker is also sharper: the saved DHS disability-services replacements still 404, and the official shell now points to a named successor county/tribal/state directory route that is itself bot-gated.
 
 ### Exact Evidence Needed
 
-- Reviewed exact local education leaves for the remaining unresolved counties, ideally district-owned or ESC-owned pages that explicitly preserve `districts served`, `member districts`, `our schools`, `special education`, or `student services` on the same official host.
-- For roots that are dead or unresolvable, a reviewed official successor root or exact replacement local leaf on the real county ESC or district host.
-- For roots that are live but generic, a same-domain exact leaf found from sitemap, navigation, or official district/ESC directories.
+- A public first-party Minnesota MDE root, district, county, contact, or export route that yields reproducible organization data instead of the current Radware challenge.
+- Or, a reviewed public Minnesota MDE download/export lane that preserves county-grade organization routing without browser validation.
+- Separately, a live official Minnesota DHS county/tribal/state directory route that stays public instead of redirecting into bot protection.
 
 ### Useful Official URLs Already Tried
 
-- [Educational Service Center of Central Ohio](https://www.escco.org/)
-- [East Central Ohio ESC](https://www.ecoesc.org/)
-- [Northwest Ohio ESC](https://www.nwoesc.org/)
-- [Ohio Valley Educational Service Center](https://www.ovesc.org/)
-- [Tri-County Educational Service Center](https://www.youresc.k12.oh.us/)
-- [Athens Meigs ESC](https://www.athensmeigs.com/)
-- [South Central Ohio ESC districts](https://www.scoesc.org/districts)
-- [Western Buckeye ESC schools](https://www.wbesc.org/our-schools)
-- [Hancock County ESC sitemap leaf](https://www.hancockesc.org/page/schools-we-serve/)
-- [Ross Pike ESD sitemap leaf](https://www.rpesd.org/page/special-education/)
+- [Minnesota MDE description page](https://education.mn.gov/MDE/about/SchOrg/)
+- [Minnesota MDE-ORG root](https://pub.education.mn.gov/MdeOrgView/)
+- [Minnesota schools and districts route](https://pub.education.mn.gov/MdeOrgView/districts/index)
+- [Minnesota counties route](https://pub.education.mn.gov/MdeOrgView/reference/county)
+- [Minnesota contact search route](https://pub.education.mn.gov/MdeOrgView/search/searchContacts)
+- [Minnesota contact types route](https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList)
+- [Minnesota analytics route](https://pub.education.mn.gov/MDEAnalytics/Data.jsp)
+- [Minnesota DHS county and tribal offices replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/)
+- [Minnesota DHS county tribal nation directory replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/)
+- [Minnesota DHS county tribal state directory successor](https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp)
 
-### Remaining Unresolved County Roots
+### Top Remaining Source-Scouting Targets
 
-- brown => https://www.brown.k12.oh.us
-- clermont => https://www.ccesc.org
-- columbiana => https://www.ccesc.k12.oh.us
-- fairfield => https://www.fairfieldesc.org
-- gallia => https://www.gvesc.org
-- lawrence => https://www.lawrenceesc.org
-- mercer => https://www.merceresc.org
-- putnam => https://www.putnamesc.org
-- trumbull => https://www.trumbull.k12.oh.us
-- vinton => https://www.gvesc.org
+- Any official Minnesota MDE root, district, county, contact, or analytics export surface that stays public and yields real organization data.
+- Any first-party Minnesota education export or downloadable organization file linked from the live MDE-ORG family.
+- Any official Minnesota DHS successor page for county-and-tribal office routing that stays public instead of redirecting into Radware.
 
-## Next State Order After Ohio
+## Next State Order After Minnesota
 
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. New Mexico
-7. South Dakota
-8. Rhode Island
-9. Virginia
-10. West Virginia
+1. Maine
+2. Idaho
+3. Arizona
+4. Massachusetts
+5. New Mexico
+6. South Dakota
+7. Rhode Island
+8. Virginia
+9. West Virginia
+10. North Dakota

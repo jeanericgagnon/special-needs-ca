@@ -434,3 +434,9 @@
 
 ### Bounded Homepage Plus Sitemap Review Can Recover Local Education Leaves Without Broad Search
 *   **Lesson:** If a county or ESC education root is already on disk, do one bounded homepage link pass and one sitemap fallback before treating it as generic-only. Ohio recovered exact same-domain `districts served`, `our schools`, `member districts`, `special education`, and `student services` leaves for 68 counties from existing official roots, while the remaining 22 counties stayed explicitly blocked because their saved roots were dead, unresolvable, transport-broken, or still had no exact local leaf.
+
+### Live Description Pages Do Not Rescue A Bot-Gated Directory Family
+*   **Lesson:** If an official description page stays public but the directory root and all actionable child routes redirect into bot protection, keep the family blocked at the stricter root-plus-child level. Minnesota MDE still served the `Schools and Organizations (MDE-ORG)` explainer page, but the MDE-ORG root, district, county, contact, and analytics routes all redirected into Radware on the same bounded pass.
+
+### Official 404 Shells Can Still Expose The Real Successor Lane
+*   **Lesson:** If an official 404 shell links a named successor route, verify that exact successor before freezing the blocker. Minnesota DHS disability-services replacements still 404, but the same shell exposed `county-tribal-state-offices.jsp`, which turned the blocker from “no successor found” into the more exact truth that the successor exists but is bot-gated.

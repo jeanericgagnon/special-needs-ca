@@ -35,61 +35,64 @@ const handoff = fs.readFileSync(path.join(repoRoot, 'docs/generated/gemini-sourc
 const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-learned.md'), 'utf8');
 
 assert.equal(result.classification, 'BLOCKED');
-assert.equal(summary.primary_gap_reason, 'live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s');
+assert.equal(summary.primary_gap_reason, 'mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated');
 
 const districtGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
-assert.equal(districtGap.family_status, 'blocked_live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked');
-assert.match(districtGap.status_reason, /Schools and Districts.*loading publicly|route all loading publicly/i);
-assert.match(districtGap.status_reason, /county route, contact search route, contact-type route, and analytics export route still collapse into Radware/i);
+assert.equal(districtGap.family_status, 'blocked_mde_description_page_live_but_mdeorg_root_and_child_routes_are_radware_blocked');
+assert.match(districtGap.status_reason, /description page still loading publicly/i);
+assert.match(districtGap.status_reason, /root itself and every actionable child route/i);
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyGap.family_status, 'blocked_mn_dhs_saved_county_tribal_replacements_are_official_404s');
-assert.match(countyGap.status_reason, /returned official DHS 404 pages/i);
+assert.equal(countyGap.family_status, 'blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated');
+assert.match(countyGap.status_reason, /saved disability-services replacement URLs still return official DHS 404 pages/i);
+assert.match(countyGap.status_reason, /county, Tribal and state directory/i);
 
 const districtFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
-assert.equal(districtFailure.failure_code, 'official_mdeorg_root_and_district_page_are_live_but_county_contact_and_analytics_contracts_remain_radware_blocked');
-assert.match(districtFailure.evidence, /MDE Organization Reference Glossary/i);
-assert.match(districtFailure.evidence, /Schools and Districts/i);
+assert.equal(districtFailure.failure_code, 'official_mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_all_radware_blocked');
+assert.match(districtFailure.evidence, /Schools and Organizations \(MDE-ORG\)/i);
+assert.match(districtFailure.evidence, /MdeOrgView\/districts\/index/i);
 assert.match(districtFailure.evidence, /validate\.perfdrive\.com/i);
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyFailure.failure_code, 'official_mn_dhs_saved_county_tribal_replacements_now_resolve_to_404_without_public_county_contract');
-assert.match(countyFailure.evidence, /returned HTTP 404/i);
-assert.match(countyFailure.evidence, /404 \/ Minnesota Department of Human Services/i);
+assert.equal(countyFailure.failure_code, 'official_mn_dhs_404_shell_points_to_successor_county_tribal_state_directory_but_that_route_is_radware_blocked');
+assert.match(countyFailure.evidence, /county-tribal-state-offices\.jsp/i);
+assert.match(countyFailure.evidence, /Radware Bot Manager Captcha/i);
 
 const districtVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
-assert.equal(districtVerified.family_status, 'blocked_live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked');
+assert.equal(districtVerified.family_status, 'blocked_mde_description_page_live_but_mdeorg_root_and_child_routes_are_radware_blocked');
 assert.equal(districtVerified.sample_count, 5);
-assert.ok(districtVerified.samples.some((sample) => sample.source_url === 'https://pub.education.mn.gov/MdeOrgView/districts/index' && sample.verification_status === 'verified'));
-assert.ok(districtVerified.samples.some((sample) => sample.source_url === 'https://pub.education.mn.gov/MdeOrgView/reference/county' && sample.verification_status === 'blocked'));
+assert.ok(districtVerified.samples.some((sample) => sample.source_url === 'https://education.mn.gov/MDE/about/SchOrg/' && sample.verification_status === 'verified'));
+assert.ok(districtVerified.samples.some((sample) => sample.source_url === 'https://pub.education.mn.gov/MdeOrgView/' && sample.verification_status === 'blocked'));
+assert.ok(districtVerified.samples.some((sample) => sample.source_url === 'https://pub.education.mn.gov/MdeOrgView/districts/index' && sample.verification_status === 'blocked'));
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyVerified.family_status, 'blocked_mn_dhs_saved_county_tribal_replacements_are_official_404s');
-assert.ok(countyVerified.samples.some((sample) => sample.source_type === 'official_replacement_404'));
+assert.equal(countyVerified.family_status, 'blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated');
+assert.ok(countyVerified.samples.some((sample) => sample.source_type === 'official_successor_route_radware'));
 
 const nextDistrict = nextRows.find((row) => row.family === 'district_or_county_education_routing');
-assert.equal(nextDistrict.next_action, 'hold_blocked_until_reviewed_first_party_mdeorg_county_or_contact_export_contract_exists');
+assert.equal(nextDistrict.next_action, 'hold_blocked_until_reviewed_first_party_mdeorg_root_or_export_contract_stays_public');
 const nextCounty = nextRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(nextCounty.next_action, 'hold_blocked_until_reviewed_first_party_mn_dhs_county_tribal_successor_exists');
+assert.equal(nextCounty.next_action, 'hold_blocked_until_reviewed_first_party_mn_dhs_county_tribal_state_directory_stays_public');
 
 const queueRow = queueRows.find((row) => row.state === 'minnesota');
-assert.equal(queueRow.primary_gap_reason, 'live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s');
+assert.equal(queueRow.primary_gap_reason, 'mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated');
 
 const allStateRow = allStateAudit.states.find((row) => row.stateId === 'minnesota');
 assert.equal(allStateRow.packetBatch, 'batch333_minnesota_live_route_and_dhs_404_refresh_v1');
-assert.equal(allStateRow.packetPrimaryGapReason, 'live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s');
-assert.equal(allStateRow.familyStatuses.county_local_disability_resources, 'blocked_mn_dhs_saved_county_tribal_replacements_are_official_404s');
+assert.equal(allStateRow.packetPrimaryGapReason, 'mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated');
+assert.equal(allStateRow.familyStatuses.county_local_disability_resources, 'blocked_mn_dhs_successor_county_tribal_state_directory_is_bot_gated');
 
-assert.equal(batchSummary.live_mde_root, true);
-assert.equal(batchSummary.live_mde_district_route, true);
-assert.equal(batchSummary.blocked_mde_county_contact_analytics_routes, 4);
-assert.equal(batchSummary.dhs_saved_replacement_404_count, 2);
+assert.equal(batchSummary.live_mde_root, false);
+assert.equal(batchSummary.live_mde_district_route, false);
+assert.equal(batchSummary.blocked_mde_root_and_child_routes, 6);
+assert.equal(batchSummary.dhs_saved_replacement_404_count, 1);
+assert.equal(batchSummary.dhs_successor_route_bot_gated, true);
 
-assert.match(stateReport, /district page are live, but the county, contact, and analytics routes are still Radware-blocked/i);
-assert.match(allStateReport, /Minnesota remains blocked, but the blocker is now narrower and more accurate/i);
+assert.match(stateReport, /only the official MDE description page is stably public/i);
+assert.match(allStateReport, /Minnesota remains blocked, and the stricter live truth is now/i);
 assert.ok(handoff.includes('## Current Focus State: Minnesota'));
-assert.ok(handoff.includes('live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s'));
-assert.ok(lessons.includes('### Live Navigation Chrome Still Fails If County And Contact Contracts Stay Bot-Gated'));
-assert.ok(lessons.includes('### Replatformed Official Replacements Should Be Downgraded To 404 Truth When The Gate Disappears'));
+assert.ok(handoff.includes('mde_description_page_is_live_but_mdeorg_root_district_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated'));
+assert.ok(lessons.includes('### Live Description Pages Do Not Rescue A Bot-Gated Directory Family'));
+assert.ok(lessons.includes('### Official 404 Shells Can Still Expose The Real Successor Lane'));
 
 console.log('test-batch333-minnesota-live-route-and-dhs-404-refresh-v1: ok');
