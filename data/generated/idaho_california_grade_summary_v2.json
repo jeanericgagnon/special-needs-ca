@@ -2,17 +2,17 @@
   "state": "idaho",
   "state_code": "ID",
   "state_name": "Idaho",
-  "batch": "batch357_idaho_residual_district_wrong_role_finality_v1",
+  "batch": "batch358_idaho_fremont_child_find_recovery_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 44,
-  "completeness_pct": 85,
+  "completeness_pct": 86,
   "strong_critical_families": 10,
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_contact_title_ix_or_generic_leaves_without_special_education_routing",
+  "primary_gap_reason": "remaining_idaho_district_roots_now_reduce_to_camas_clark_and_shoshone_wrong_role_leaves_without_special_education_or_student_services_routing",
   "recommended_batch": "hold_for_new_role_bearing_district_leaf_or_county_contract",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -44,9 +44,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "remaining_live_idaho_district_roots_and_sitemaps_materialize_only_contact_title_ix_or_generic_leaves",
-      "evidence": "Reviewed 2026-06-25 one more bounded official Idaho education pass across the four remaining district-owned hosts plus their current machine-readable inventory surfaces. Jefferson remains positively recovered from district-owned `special-education`, `special-services`, `section-504`, and `student-services` leaves. Oneida remains positively recovered from the district-owned Child Find PDF. But the residual four districts now finalize as wrong-role survivors rather than unknown roots. Camas still only exposes a district-owned `Contact Information` leaf with district address and phone, while both `robots.txt` and `sitemap.xml` 404; the apparent raw `504` token on Camas resolves only to numeric payload noise, not a role-bearing Section 504 leaf. Clark exposes a real public XML sitemap at `https://www.clarkcountyschools161.org/fs/pages/sitemap` plus exact district-owned `Contact Us` and `Title IX` leaves, but the sitemap inventory still yields no `special-education`, `special-services`, `student-services`, `section-504`, `child-find`, or procedural-safeguards page. Fremont exposes a live sitemap at `https://www.sd215.net/sitemap.xml`, and additional bounded checks on `https://www.sd215.net/documents` plus `https://www.sd215.net/page/district-forms` also stay generic; none of those surfaces yields a role-bearing special-education or child-find leaf, and direct bounded probes for `/page/special-education`, `/page/special-services`, `/page/student-services`, `/page/section-504`, and `/page/child-find` all 404. Shoshone exposes live WordPress post sitemaps, but those feeds still only materialize generic district, board, agenda, and newsletter pages, and the taxonomy sitemap guess 404s; direct bounded probes for `/special-education/`, `/student-services/`, `/special-services/`, `/section-504/`, and `/child-find/` all 404. Idaho therefore remains blocked because the remaining district-owned roots, document lanes, and live sitemap inventories still materialize only wrong-role or generic leaves rather than local special-education routing.",
-      "next_action": "continue_exact_district_leaf_expansion_only_when_camas_clark_fremont_or_shoshone_publish_role_bearing_special_education_special_services_student_services_504_or_procedural_safeguards_leaves"
+      "failure_code": "remaining_live_idaho_district_roots_materialize_contact_title_ix_or_federal_program_leaves_but_zero_role_bearing_special_education_or_student_services_routing",
+      "evidence": "Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.sd215.net/`, `https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events`, `https://shoshonesd.org/`, and the previously reviewed Jefferson and Oneida recovery sources. Jefferson remains positively recovered from district-owned `special-education`, `special-services`, `section-504`, and `student-services` leaves. Oneida remains positively recovered from the district-owned Child Find PDF. Fremont is now positively recovered from the public official district events API: the `o/12771/cms/events` feed preserves three exact `Child Find Preschool Screenings` rows for Henry's Fork Elementary and Ashton Elementary with Fremont venues and screening dates on the official district host family. The residual three districts now finalize as wrong-role survivors rather than unknown roots: Camas only exposes a district-owned `Contact Information` leaf with address and phone; Clark exposes exact district-owned `Contact Us` and `Title IX` leaves, but no special-education or student-services routing; and Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, but no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho therefore remains blocked because the remaining district-owned leaves are still the wrong role for local special-education routing.",
+      "next_action": "continue_exact_district_leaf_expansion_only_when_camas_clark_or_shoshone_publish_role_bearing_special_education_special_services_student_services_504_or_procedural_safeguards_leaves"
     },
     {
       "family": "county_local_disability_resources",
@@ -57,6 +57,6 @@
     }
   ],
   "familyStatuses": {
-    "district_or_county_education_routing": "blocked_remaining_live_district_roots_only_materialize_contact_title_ix_or_generic_leaves_after_jefferson_and_oneida_recovery"
+    "district_or_county_education_routing": "blocked_remaining_live_district_roots_only_materialize_wrong_role_contact_title_ix_or_federal_program_leaves_after_fremont_recovery"
   }
 }

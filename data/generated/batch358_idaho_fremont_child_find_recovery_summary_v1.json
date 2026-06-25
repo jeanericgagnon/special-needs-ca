@@ -1,0 +1,13 @@
+{
+  "batch": "batch358_idaho_fremont_child_find_recovery_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "camas_contact_leaf_live": true,
+  "clark_contact_leaf_live": true,
+  "clark_title_ix_leaf_live": true,
+  "fremont_child_find_events_api_live": true,
+  "shoshone_root_live": true,
+  "residual_districts_with_exact_wrong_role_leaves": 3,
+  "residual_districts_with_special_ed_routing_leaves": 1,
+  "result": "fremont_recovered_via_official_child_find_events_api_but_camas_clark_and_shoshone_still_materialize_wrong_role_leaves"
+}

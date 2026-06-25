@@ -1,0 +1,9 @@
+# Batch 358 Idaho Fremont Child Find Recovery v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: recovered Fremont local education routing from the official district events API and narrowed the residual blocker to Camas, Clark, and Shoshone
+
+## Evidence
+
+- Reviewed 2026-06-25 one more bounded official Idaho district pass and upgraded one more county from exact official evidence. Fremont now exposes public district-owned Child Find Preschool Screenings through the official Apptegy events API used by `sd215.net`, including three local screening entries tied to Henry's Fork Elementary and Ashton Elementary with exact Fremont venues and dates. That is enough to treat Fremont as a real local Child Find routing lane rather than a generic contact/title-ix survivor. The unresolved remainder is now smaller and sharper. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone. Clark still materializes exact district-owned `Contact Us` and `Title IX` leaves, but they remain wrong-role leaves: `Contact Us` only lists district office staff and superintendent routing, while `Title IX` only links a Title IX policy and repeats generic district accessibility language. Shoshone remains live with district-office contacts, principal contacts, and federal-program menu leaves like Title I and Title IX-A for homeless children and youth, but still exposes no reusable district-owned special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho therefore remains blocked, but the education remainder is now down to Camas, Clark, and Shoshone.

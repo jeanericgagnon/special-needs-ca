@@ -527,3 +527,6 @@
 
 ### District-Owned Child Find PDFs Can Clear Local Education Routing When They Carry Real Contacts
 *   **Lesson:** If a district-owned Child Find PDF is already linked from the official host, run the bundled PDF extractor before treating it as a weak document-only lead. Oneida School District’s Child Find PDF carried the Special Education Director name, district address, phone, email, and explicit 3–21 Child Find scope, which was strong enough to recover county-grade education routing without any extra crawl.
+
+### Public District Events APIs Can Clear Child Find Lanes When The Event Titles Stay Role-Exact
+*   **Lesson:** If an official district CMS exposes a public events API on the same host family, inspect it before freezing a district as contact-only. Idaho Fremont still had no reusable special-education page, but the public `sd215` Apptegy events feed preserved exact `Child Find Preschool Screenings` rows for Henry's Fork Elementary and Ashton Elementary with local venues and dates, which was strong enough to move Fremont out of the generic wrong-role remainder.

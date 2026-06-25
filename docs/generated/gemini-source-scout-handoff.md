@@ -12,7 +12,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 - Alaska: `reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract`
 - Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves`
-- Idaho: `remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_contact_title_ix_or_generic_leaves_without_special_education_routing`
+- Idaho: `remaining_idaho_district_roots_now_reduce_to_camas_clark_and_shoshone_wrong_role_leaves_without_special_education_or_student_services_routing`
 - Maine: `official_dhhs_nav_stack_still_exposes_office_addresses_and_labels_but_no_county_or_service_area_contract`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`
 - New Hampshire: `official_nh_dhhs_education_and_vr_host_families_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead`
@@ -25,43 +25,39 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`county_local_disability_resources` is still the only remaining Maine critical blocker. One more bounded official pass widened from the OFI contact/help lane to the broader DHHS public navigation stack. District Office Locations still preserves office towns, addresses, phones, emails, map shortlinks, and OFI program notes, but no county-served or service-area fields. OFI Contact only loops back to district offices plus statewide eligibility/help routing. OFI Programs & Services stays generic. Offices/Divisions and Administrative Office Locations add office and division labels plus addresses like Family Independence in Augusta and Health Insurance Marketplace in Portland, but still no county routing. The DHHS sitemap only reconfirms the same office leaves. And sampled `Show Map` shortlinks still only resolve to raw Google Maps address geocodes such as `35 Anthony Ave, Augusta, ME 04330` and `19 Maine Ave, Bangor, ME 04401`. Maine remains BLOCKED because the official host family still proves office addresses and office labels, not county assignment.
+`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now down to three districts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont now also clears from the public official Apptegy events API used by `sd215.net`, which preserves exact `Child Find Preschool Screenings` rows for Henry's Fork Elementary and Ashton Elementary with Fremont venues and dates. The three remaining district roots now materialize exact wrong-role leaves instead of recoverable special-ed routing. Camas only exposes a district-owned `Contact Information` leaf with address and phone. Clark exposes exact district-owned `Contact Us` and `Title IX` leaves, but they only provide generic district office / policy routing. Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, but still no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho remains BLOCKED because the remaining district-owned leaves are real but still the wrong role for local special-education routing.
 
 ### Exact Evidence Needed
 
-- Any official Maine DHHS or OFI county/service-area crosswalk that ties counties to the named district office towns on the public DHHS office page.
-- Any official Maine DHHS or OFI office export, table, PDF, workbook, ArcGIS layer, or API that exposes office names together with county-served or service-area fields.
-- Any official county-grade routing contract on a successor Maine DHHS surface that is public and reviewable without inference.
+- Any official district-owned special-education, special-services, student-services, 504, procedural-safeguards, or Child Find leaf on Camas, Clark, or Shoshone.
+- Any district-owned PDF, handbook, or notice on those three hosts that explicitly preserves special-education routing plus named contact information.
+- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.
 
 ### Useful Official URLs Already Tried
 
-- [Maine DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
-- [Maine OFI Contact page](https://www.maine.gov/dhhs/ofi/about-us/contact)
-- [Maine OFI Programs & Services](https://www.maine.gov/dhhs/ofi/programs-services)
-- [Maine DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)
-- [Maine DHHS Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
-- [Maine DHHS Sitemap](https://www.maine.gov/dhhs/about/sitemap)
-- [Sample Show Map: Augusta office](https://goo.gl/maps/D71ZqAnXQcp)
-- [Sample Show Map: Bangor office](https://goo.gl/maps/LRVMzcdK23Mxx7g29)
+- [Camas root](https://www.camascountyschools.org/)
+- [Camas Contact Information](https://www.camascountyschools.org/contact-information)
+- [Clark root](https://www.clarkcountyschools161.org/)
+- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
+- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
+- [Fremont root](https://www.sd215.net/)
+- [Fremont district events API](https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events)
+- [Shoshone root](https://shoshonesd.org/)
+- [Oneida Child Find PDF](https://5il.co/26a73)
+- [Jefferson sitemap](https://www.jeffersonsd251.org/wp-sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DHHS/OFI workbook or export that contains office names plus county or service-area fields, not just program counts or address maps.
-- Any official office-assignment artifact behind the district office page, administrative office page, or reports lane that binds district offices to counties.
+- Any current district-owned special-education, student-services, 504, or procedural-safeguards leaf for Camas, Clark, or Shoshone.
+- Any district-owned Child Find PDF or special-ed handbook already linked from those hosts but not yet surfaced on the homepage HTML.
+- Any public Idaho DHW county-to-office contract that can reduce the separate county-local blocker.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
+1. New Mexico
 2. Arizona
-3. Massachusetts
-4. New Mexico
-5. South Dakota
-6. Rhode Island
-7. Virginia
-8. West Virginia
-9. North Dakota
-10. Wisconsin
+3. New Hampshire
