@@ -458,3 +458,6 @@
 
 ### One Widget API Plus Wrong-Role Sibling Leaves Can Be Enough To Call A Host Source-Final
 *   **Lesson:** If the live HTML exposes one exact widget API, that API only materializes a tiny county subset, official host search is blocked or absent, and the sibling sitemap leaves are all wrong-role pages, treat the public host as source-final for low-token county repair. Oklahoma Human Services still exposed extra `contact-us/*` URLs in sitemap review, but they resolved to hotline, FAQ, workforce, ombudsman, or config shells rather than a county-complete disability/local office contract.
+
+### Public Association Directories Can Be Safe Lead-Only Inputs For Dead ESC Roots
+*   **Lesson:** If a saved county ESC host is dead, use a reviewed statewide ESC association page only as a lead source for successor official domains, then re-verify exact leaves on the successor ESC host itself. Ohio recovered Brown, Fairfield, Gallia-Vinton, Lawrence, Mercer, Putnam, and Trumbull education routing only after OESCA pointed to live successor domains that could then be verified from their own roots, sitemaps, and same-host leaves.

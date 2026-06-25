@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-24T23:55:00.000Z",
+  "generatedAt": "2026-06-25T07:50:53.546Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 30,
-    "BLOCKED": 20
+    "COMPLETE": 31,
+    "BLOCKED": 19
   },
-  "indexSafeCount": 30,
+  "indexSafeCount": 31,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Alaska health DPA family now challenge-shelled again while DFCS still adds no county-equivalent routing.",
+  "lessonsUpdate": "Ohio live education leaf probe verified successor ESC hosts and cleared the last county-grade education blocker.",
   "states": [
     {
       "stateId": "alabama",
@@ -2452,8 +2452,8 @@
       "stateId": "ohio",
       "stateCode": "OH",
       "stateName": "Ohio",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Pilot)",
       "legacyGateScore": 0,
@@ -2461,11 +2461,11 @@
       "legacyManualReviewRate": 50,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 88,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "ohio",
         "state_code": "OH",
@@ -2504,7 +2504,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_live_exact_leaf_probe_partial_county_coverage",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2515,8 +2515,8 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch332_ohio_education_live_leaf_probe_v1",
-      "packetPrimaryGapReason": "bounded_live_ohio_education_leaf_probe_recovers_54_strong_and_24_partial_counties_but_10_counties_still_unresolved",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "oklahoma",

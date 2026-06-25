@@ -843,48 +843,57 @@
       "Gallia-Vinton ESC (Vinton County County fallback)",
       "Gallia-Vinton ESC"
     ],
-    "finalUrl": null,
-    "title": "",
-    "matches": [],
+    "finalUrl": "https://www.galliavintonesc.org/",
+    "title": "Gallia-Vinton ESC",
+    "matches": [
+      {
+        "label": "homepage-text districts-served/member-districts/our-schools",
+        "url": "https://www.galliavintonesc.org/"
+      },
+      {
+        "label": "Member School Districts",
+        "url": "https://www.galliavintonesc.org/MemberSchoolDistricts.aspx"
+      },
+      {
+        "label": "Additional School Districts Served",
+        "url": "https://www.galliavintonesc.org/AdditionalSchoolDistrictsServed.aspx"
+      },
+      {
+        "label": "Area School Districts Receive Ohio School Bus Safety Grant Funding",
+        "url": "https://www.galliavintonesc.org/protected/ArticleView.aspx?iid=6Y2U0GI&dasi=4GYAI"
+      },
+      {
+        "label": "Districts Collaborate on Title IX Training",
+        "url": "https://www.galliavintonesc.org/protected/ArticleView.aspx?iid=6Y2UPPI&dasi=4GYAI"
+      }
+    ],
     "rootSignals": {
-      "hasDistrictText": false,
+      "hasDistrictText": true,
       "hasServiceText": false
     },
+    "successorLeadRoot": "https://www.galliavintonesc.org/",
     "attempts": [
       {
-        "candidate": "https://gvesc.org/",
+        "candidate": "https://www.galliavintonesc.org/",
         "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://gvesc.org/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://gvesc.org/\ncurl: (6) Could not resolve host: gvesc.org\n"
-      },
-      {
-        "candidate": "https://www.gvesc.org/",
-        "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://www.gvesc.org/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/\ncurl: (6) Could not resolve host: www.gvesc.org\n"
+        "status": 200,
+        "finalUrl": "https://www.galliavintonesc.org/",
+        "matchCount": 5
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.gvesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/robots.txt\ncurl: (6) Could not resolve host: www.gvesc.org\n"
+        "url": "https://www.galliavintonesc.org/robots.txt",
+        "hit_count": 0
       },
       {
-        "url": "https://www.gvesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.gvesc.org\n"
+        "url": "https://www.galliavintonesc.org/sitemap.xml",
+        "hit_count": 0
       }
     ],
-    "hasDistrictLeaf": false,
+    "hasDistrictLeaf": true,
     "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.mccesc.org",
@@ -1451,48 +1460,53 @@
       "Brown County ESC (Brown County County fallback)",
       "Brown County ESC"
     ],
-    "finalUrl": null,
-    "title": "",
-    "matches": [],
+    "finalUrl": "https://www.brownesc.us/",
+    "title": "Brown County ESC",
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://www.brownesc.us/"
+      },
+      {
+        "label": "Partner Districts",
+        "url": "https://www.brownesc.us/PartnerDistricts.aspx"
+      },
+      {
+        "label": "Special Education",
+        "url": "https://www.brownesc.us/SpecialEducation.aspx"
+      },
+      {
+        "label": "Employment Opportunities Partner Districts",
+        "url": "https://www.brownesc.us/partnerdistrictemploymentopportunities.aspx"
+      }
+    ],
     "rootSignals": {
       "hasDistrictText": false,
-      "hasServiceText": false
+      "hasServiceText": true
     },
+    "successorLeadRoot": "https://www.brownesc.us/",
     "attempts": [
       {
-        "candidate": "https://brown.k12.oh.us/",
+        "candidate": "https://www.brownesc.us/",
         "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://brown.k12.oh.us/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://brown.k12.oh.us/\ncurl: (6) Could not resolve host: brown.k12.oh.us\n"
-      },
-      {
-        "candidate": "https://www.brown.k12.oh.us/",
-        "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://www.brown.k12.oh.us/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
+        "status": 200,
+        "finalUrl": "https://www.brownesc.us/",
+        "matchCount": 4
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.brown.k12.oh.us/robots.txt",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/robots.txt\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
+        "url": "https://www.brownesc.us/robots.txt",
+        "hit_count": 0
       },
       {
-        "url": "https://www.brown.k12.oh.us/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/sitemap.xml\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
+        "url": "https://www.brownesc.us/sitemap.xml",
+        "hit_count": 0
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.cantoncityschools.org",
@@ -1554,11 +1568,45 @@
     ],
     "finalUrl": "https://www.ccesc.k12.oh.us/",
     "title": "Home | Columbiana County Educational Service Center",
-    "matches": [],
+    "matches": [
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/page/menu-of-service/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/page/school-age-services/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/page/preschool/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/documents/programs/services/preschool/280033"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/documents/programs/services/related-services/280040"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/documents/programs/services/related-services/-transition-services-/280041"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/documents/programs/services/transition-services/295328"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.k12.oh.us/documents/preschool/315914"
+      }
+    ],
     "rootSignals": {
       "hasDistrictText": false,
       "hasServiceText": false
     },
+    "successorLeadRoot": null,
     "attempts": [
       {
         "candidate": "https://ccesc.k12.oh.us/",
@@ -1596,12 +1644,12 @@
       },
       {
         "url": "https://www.ccesc.k12.oh.us/sitemap.xml",
-        "hit_count": 0
+        "hit_count": 8
       }
     ],
     "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.ccesc.org",
@@ -1615,11 +1663,29 @@
     ],
     "finalUrl": "https://www.ccesc.org/",
     "title": "Home | CLERMONT COUNTY EDUCATIONAL SERVICE CENTER",
-    "matches": [],
+    "matches": [
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.org/page/multiple-disabilities-program/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.org/page/visually-impaired-services/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.org/page/hearing-impaired-services/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.ccesc.org/page/preschool/"
+      }
+    ],
     "rootSignals": {
       "hasDistrictText": false,
       "hasServiceText": false
     },
+    "successorLeadRoot": null,
     "attempts": [
       {
         "candidate": "https://ccesc.org/",
@@ -1657,12 +1723,12 @@
       },
       {
         "url": "https://www.ccesc.org/sitemap.xml",
-        "hit_count": 0
+        "hit_count": 4
       }
     ],
     "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.ccsoh.us",
@@ -2121,48 +2187,66 @@
       "Fairfield County ESC (Fairfield County County fallback)",
       "Fairfield County ESC"
     ],
-    "finalUrl": null,
-    "title": "",
-    "matches": [],
+    "finalUrl": "https://www.faircoesc.org/",
+    "title": "Home | Fairfield County Educational Service Center",
+    "matches": [
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.faircoesc.org/page/special-education-services/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.faircoesc.org/page/pickerington-preschool/"
+      }
+    ],
     "rootSignals": {
       "hasDistrictText": false,
       "hasServiceText": false
     },
+    "successorLeadRoot": "https://www.faircoesc.org/",
     "attempts": [
       {
-        "candidate": "https://fairfieldesc.org/",
+        "candidate": "https://www.faircoesc.org/",
         "method": "fetch",
-        "error": "fetch failed"
+        "status": 200,
+        "finalUrl": "https://www.faircoesc.org/",
+        "matchCount": 0
       },
       {
-        "candidate": "https://fairfieldesc.org/",
+        "candidate": "https://www.faircoesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://fairfieldesc.org/\ncurl: (60) SSL: no alternative certificate subject name matches target host name 'fairfieldesc.org'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+        "status": 200,
+        "finalUrl": "https://www.faircoesc.org/",
+        "matchCount": 0
       },
       {
-        "candidate": "https://www.fairfieldesc.org/",
+        "candidate": "https://faircoesc.org/",
         "method": "fetch",
-        "error": "fetch failed"
+        "status": 200,
+        "finalUrl": "https://www.faircoesc.org/",
+        "matchCount": 0
       },
       {
-        "candidate": "https://www.fairfieldesc.org/",
+        "candidate": "https://faircoesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
+        "status": 200,
+        "finalUrl": "https://faircoesc.org/",
+        "matchCount": 0
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.fairfieldesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/robots.txt\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
+        "url": "https://www.faircoesc.org/robots.txt",
+        "hit_count": 0
       },
       {
-        "url": "https://www.fairfieldesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/sitemap.xml\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
+        "url": "https://www.faircoesc.org/sitemap.xml",
+        "hit_count": 2
       }
     ],
     "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.geaugaesc.org",
@@ -2568,48 +2652,65 @@
       "Lawrence County ESC (Lawrence County County fallback)",
       "Lawrence County ESC"
     ],
-    "finalUrl": null,
-    "title": "",
-    "matches": [],
+    "finalUrl": "https://lawrencecountyesc.com/",
+    "title": "Lawrence County Educational Service Center – LCESC",
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://lawrencecountyesc.com/"
+      },
+      {
+        "label": "homepage-text districts-served/member-districts/our-schools",
+        "url": "https://lawrencecountyesc.com/"
+      },
+      {
+        "label": "Student Services",
+        "url": "https://lawrencecountyesc.com/student-services/"
+      },
+      {
+        "label": "Districts",
+        "url": "https://lawrencecountyesc.com/schools/"
+      },
+      {
+        "label": "Special Education Cooperative",
+        "url": "https://lawrencecountyesc.com/staff/lcesc-cooperative/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://lawrencecountyesc.com/special-education/"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://lawrencecountyesc.com/courses/special-education/"
+      }
+    ],
     "rootSignals": {
-      "hasDistrictText": false,
-      "hasServiceText": false
+      "hasDistrictText": true,
+      "hasServiceText": true
     },
+    "successorLeadRoot": "https://lawrencecountyesc.com/",
     "attempts": [
       {
-        "candidate": "https://lawrenceesc.org/",
+        "candidate": "https://lawrencecountyesc.com/",
         "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://lawrenceesc.org/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://lawrenceesc.org/\ncurl: (6) Could not resolve host: lawrenceesc.org\n"
-      },
-      {
-        "candidate": "https://www.lawrenceesc.org/",
-        "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://www.lawrenceesc.org/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
+        "status": 200,
+        "finalUrl": "https://lawrencecountyesc.com/",
+        "matchCount": 5
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.lawrenceesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/robots.txt\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
+        "url": "https://lawrencecountyesc.com/robots.txt",
+        "hit_count": 0
       },
       {
-        "url": "https://www.lawrenceesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
+        "url": "https://lawrencecountyesc.com/sitemap.xml",
+        "hit_count": 4
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.lcesc.org",
@@ -2817,48 +2918,41 @@
       "Mercer County ESC (Mercer County County fallback)",
       "Mercer County ESC"
     ],
-    "finalUrl": null,
-    "title": "",
-    "matches": [],
+    "finalUrl": "https://www.mercercountyesc.org/",
+    "title": "Mercer County ESC",
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://www.mercercountyesc.org/"
+      }
+    ],
     "rootSignals": {
       "hasDistrictText": false,
-      "hasServiceText": false
+      "hasServiceText": true
     },
+    "successorLeadRoot": "https://www.mercercountyesc.org/",
     "attempts": [
       {
-        "candidate": "https://merceresc.org/",
+        "candidate": "https://www.mercercountyesc.org/",
         "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://merceresc.org/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://merceresc.org/\ncurl: (6) Could not resolve host: merceresc.org\n"
-      },
-      {
-        "candidate": "https://www.merceresc.org/",
-        "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://www.merceresc.org/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/\ncurl: (6) Could not resolve host: www.merceresc.org\n"
+        "status": 200,
+        "finalUrl": "https://www.mercercountyesc.org/",
+        "matchCount": 1
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.merceresc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/robots.txt\ncurl: (6) Could not resolve host: www.merceresc.org\n"
+        "url": "https://www.mercercountyesc.org/robots.txt",
+        "hit_count": 0
       },
       {
-        "url": "https://www.merceresc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.merceresc.org\n"
+        "url": "https://www.mercercountyesc.org/sitemap.xml",
+        "hit_count": 0
       }
     ],
     "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.mesc.k12.oh.us",
@@ -3100,48 +3194,54 @@
       "Putnam County ESC (Putnam County County fallback)",
       "Putnam County ESC"
     ],
-    "finalUrl": null,
-    "title": "",
-    "matches": [],
+    "finalUrl": "https://www.putnamcountyesc.org/",
+    "title": "Putnam County Educational Service Center",
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://www.putnamcountyesc.org/"
+      },
+      {
+        "label": "homepage-text districts-served/member-districts/our-schools",
+        "url": "https://www.putnamcountyesc.org/"
+      },
+      {
+        "label": "Special Education",
+        "url": "https://www.putnamcountyesc.org/special-education-updated/"
+      }
+    ],
     "rootSignals": {
-      "hasDistrictText": false,
-      "hasServiceText": false
+      "hasDistrictText": true,
+      "hasServiceText": true
     },
+    "successorLeadRoot": "https://www.putnamcountyesc.org/",
     "attempts": [
       {
-        "candidate": "https://putnamesc.org/",
+        "candidate": "https://www.putnamcountyesc.org/",
         "method": "fetch",
         "error": "fetch failed"
       },
       {
-        "candidate": "https://putnamesc.org/",
+        "candidate": "https://www.putnamcountyesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://putnamesc.org/\ncurl: (6) Could not resolve host: putnamesc.org\n"
-      },
-      {
-        "candidate": "https://www.putnamesc.org/",
-        "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://www.putnamesc.org/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
+        "status": 200,
+        "finalUrl": "https://www.putnamcountyesc.org/",
+        "matchCount": 3
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.putnamesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/robots.txt\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
+        "url": "https://www.putnamcountyesc.org/robots.txt",
+        "hit_count": 0
       },
       {
-        "url": "https://www.putnamesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
+        "url": "https://www.putnamcountyesc.org/sitemap.xml",
+        "hit_count": 0
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.rosscoe.org",
@@ -3452,48 +3552,61 @@
       "Trumbull County ESC (Trumbull County County fallback)",
       "Trumbull County ESC"
     ],
-    "finalUrl": null,
-    "title": "",
-    "matches": [],
+    "finalUrl": "https://www.trumbullesc.org/",
+    "title": "Trumbull County ESC",
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://www.trumbullesc.org/"
+      },
+      {
+        "label": "homepage-text districts-served/member-districts/our-schools",
+        "url": "https://www.trumbullesc.org/"
+      },
+      {
+        "label": "Special Education Supervision",
+        "url": "https://www.trumbullesc.org/specialeducation.aspx"
+      },
+      {
+        "label": "Special Education Web Resources",
+        "url": "https://www.trumbullesc.org/WebResources_specialed.aspx"
+      },
+      {
+        "label": "Special Education Supervisor Resources",
+        "url": "https://www.trumbullesc.org/SupervisorResources.aspx"
+      },
+      {
+        "label": "Trumbull County School District Info",
+        "url": "https://www.trumbullesc.org/districts.aspx"
+      }
+    ],
     "rootSignals": {
-      "hasDistrictText": false,
-      "hasServiceText": false
+      "hasDistrictText": true,
+      "hasServiceText": true
     },
+    "successorLeadRoot": "https://www.trumbullesc.org/",
     "attempts": [
       {
-        "candidate": "https://trumbull.k12.oh.us/",
+        "candidate": "https://www.trumbullesc.org/",
         "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://trumbull.k12.oh.us/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://trumbull.k12.oh.us/\ncurl: (6) Could not resolve host: trumbull.k12.oh.us\n"
-      },
-      {
-        "candidate": "https://www.trumbull.k12.oh.us/",
-        "method": "fetch",
-        "error": "This operation was aborted"
-      },
-      {
-        "candidate": "https://www.trumbull.k12.oh.us/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/\ncurl: (28) Connection timed out after 8011 milliseconds\n"
+        "status": 200,
+        "finalUrl": "https://www.trumbullesc.org/",
+        "matchCount": 6
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.trumbull.k12.oh.us/robots.txt",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/robots.txt\ncurl: (28) Connection timed out after 8010 milliseconds\n"
+        "url": "https://www.trumbullesc.org/robots.txt",
+        "hit_count": 0
       },
       {
-        "url": "https://www.trumbull.k12.oh.us/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/sitemap.xml\ncurl: (28) Connection timed out after 8008 milliseconds\n"
+        "url": "https://www.trumbullesc.org/sitemap.xml",
+        "hit_count": 0
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.unioncountyesc.org",
