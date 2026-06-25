@@ -1,0 +1,11 @@
+{
+  "batch": "batch354_idaho_oneida_child_find_recovery_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "recovered_role_bearing_district_hosts": 2,
+  "remaining_live_homepage_roots_without_role_bearing_links": 4,
+  "recovered_pdf_backed_district_hosts": 1,
+  "challenge_shell_roots": 0,
+  "reviewed_exact_leaf_count_after_recovery": 16,
+  "result": "oneida_child_find_pdf_recovered_remaining_live_district_root_packet_still_incomplete"
+}

@@ -497,3 +497,6 @@
 
 ### Address Map Shortlinks Still Do Not Prove County Service Areas
 *   **Lesson:** If an official office directory only exposes `Show Map` shortlinks, resolve a bounded sample before assuming they add routing coverage. Maine DHHS `Show Map` links only expanded to raw Google Maps address geocodes for office street addresses; they added no county-served labels, service-area fields, or office-assignment metadata, so they strengthened the blocker instead of clearing county-local routing.
+
+### District-Owned Child Find PDFs Can Clear Local Education Routing When They Carry Real Contacts
+*   **Lesson:** If a district-owned Child Find PDF is already linked from the official host, run the bundled PDF extractor before treating it as a weak document-only lead. Oneida School District’s Child Find PDF carried the Special Education Director name, district address, phone, email, and explicit 3–21 Child Find scope, which was strong enough to recover county-grade education routing without any extra crawl.
