@@ -300,7 +300,7 @@ export function generateBatch352MassachusettsDeseExportCountyCaptureV1() {
       ...row,
       family_status: EDUCATION_STATUS,
       evidence_strength: 'strong',
-      sample_count: 4,
+      sample_count: 5,
       query_basis: EDUCATION_QUERY_BASIS,
       blocker_code: null,
       blocker_evidence: null,
@@ -354,6 +354,19 @@ export function generateBatch352MassachusettsDeseExportCountyCaptureV1() {
           fetched_at: '2026-06-25T00:00:00.000Z',
           evidence_snippet:
             'The live official TIGERweb county subdivision layer returns Massachusetts municipality basenames plus county codes, which supplied the reviewed town-to-county crosswalk used for the bounded county coverage audit.',
+        },
+        {
+          sample_name: 'County-mapped district leaf coverage contract',
+          source_url:
+            'https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N',
+          final_url:
+            'https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N',
+          verification_status: 'verified',
+          source_type: 'official_export_plus_county_crosswalk_mapping_contract',
+          source_table: 'batch352_massachusetts_dese_export_county_capture_v1',
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet:
+            'The preserved export-plus-crosswalk audit is a district-specific pages county-to-district mapping contract: reviewed DESE district rows joined to official TIGERweb locality basenames and still covered all 14 Massachusetts counties.',
         },
       ],
     };

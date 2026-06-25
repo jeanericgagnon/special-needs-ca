@@ -1,0 +1,237 @@
+{
+  "state": "massachusetts",
+  "candidateBranch": null,
+  "pass": false,
+  "summary": {
+    "state": "massachusetts",
+    "state_code": "MA",
+    "state_name": "Massachusetts",
+    "batch": "batch352_massachusetts_dese_export_county_capture_v1",
+    "classification": "BLOCKED",
+    "index_safe": false,
+    "incorrectly_index_safe": false,
+    "county_count": 14,
+    "completeness_pct": 92,
+    "strong_critical_families": 11,
+    "weak_critical_families": 1,
+    "missing_critical_families": 0,
+    "total_critical_families": 12,
+    "primary_gap_reason": "official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved",
+    "recommended_batch": "hold_for_dds_county_contract_or_reviewed_capture",
+    "critical_gap_families": [
+      "county_local_disability_resources"
+    ],
+    "major_gap_families": [],
+    "verified_source_families_with_samples": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "district_or_county_education_routing",
+      "vocational_rehabilitation_pre_ets",
+      "parent_training_information_center",
+      "able_program",
+      "ssi_ssa_federal_reference",
+      "county_local_disability_resources"
+    ],
+    "complete_ready": false,
+    "texas_v10_rule_basis": [
+      "Preserve noindex until all critical families are verified",
+      "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+      "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+    ],
+    "final_blockers": [
+      {
+        "family": "county_local_disability_resources",
+        "severity": "critical",
+        "failure_code": "reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_official_locality_contract_missing",
+        "evidence": "Reviewed 2026-06-25 the live Massachusetts DDS first-party locations lane plus the saved bounded locality-capture audit, then rechecked the exact `/locations` endpoint again from the low-token raw lane. The public locations pages preserve 21 distinct `DDS ... Area Office` cards with explicit `This area office serves the following towns and communities:` text, and the reviewed town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. A bounded official sitemap review also surfaced exact first-party DDS area-office documents for Greater Boston/Metro Boston and Charles River West, but those files only preserve office identity, address, and phone and still do not publish counties served or town/community lists. The remaining gap is Suffolk County: bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, while a fresh 2026-06-25 raw probe to `https://www.mass.gov/orgs/department-of-developmental-services/locations` still returns the same HTTP 403 `Not allowed` shell and therefore cannot supply a replayable county export. Massachusetts should stay blocked until an official Suffolk-serving DDS locality contract, county field, or county-grade export is preserved.",
+        "next_action": "hold_massachusetts_dds_until_suffolk_locality_contract_exists"
+      }
+    ],
+    "familyStatuses": {
+      "district_or_county_education_routing": "verified_county_grade",
+      "county_local_disability_resources": "blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved"
+    }
+  },
+  "gapRows": [
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "medicaid_state_health_coverage",
+      "family_label": "Medicaid / state health coverage",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_label": "Medicaid waiver / HCBS / disability services",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "developmental_disability_idd_authority",
+      "family_label": "Developmental disability / IDD authority",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "early_intervention_part_c",
+      "family_label": "Early intervention / IDEA Part C",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "special_education_idea_part_b",
+      "family_label": "Special education / IDEA Part B",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "district_or_county_education_routing",
+      "family_label": "District or county education routing",
+      "family_status": "verified_county_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Massachusetts education now clears county-grade routing from reviewed official structured evidence. The live DESE district export at `search_export.aspx` returns a real `search.xls` attachment with district rows that preserve `Org Name`, `Org Type`, `Function`, `Contact Name`, `Address 1`, `Town`, `State`, `Zip`, `Phone`, and `Grade` fields. A bounded exact-basename join from the export `Town` field into the official Census TIGERweb Massachusetts county-subdivision layer matched 406 rows directly and still covered all 14 Massachusetts counties, so county-grade district routing is now preserved by reviewed official export-plus-crosswalk evidence rather than a statewide fallback."
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_label": "Vocational rehabilitation / Pre-ETS",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "protection_and_advocacy",
+      "family_label": "Protection and advocacy",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed Disability Law Center first-party homepage explicitly preserves Massachusetts Protection and Advocacy identification."
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "parent_training_information_center",
+      "family_label": "Parent training and information center",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party PTI evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "legal_aid",
+      "family_label": "Legal aid",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed Massachusetts Legal Assistance Corporation first-party homepage preserves a statewide low-income legal-information, advice, and representation mission."
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "able_program",
+      "family_label": "ABLE program",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "ssi_ssa_federal_reference",
+      "family_label": "SSI / SSA federal references",
+      "family_status": "verified_state_grade",
+      "critical": false,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "massachusetts",
+      "state_code": "MA",
+      "state_name": "Massachusetts",
+      "family": "county_local_disability_resources",
+      "family_label": "County/local disability resources",
+      "family_status": "blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Massachusetts county-local routing remains blocked, but the remaining gap is now precise. The live Mass.gov DDS locations lane preserves 21 reviewed area-office cards with explicit `This area office serves the following towns and communities:` text, and the saved town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. Suffolk County is still unresolved because bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck to the exact `/locations` endpoint still returns the same HTTP 403 `Not allowed` shell instead of a replayable county export."
+    }
+  ],
+  "filesChecked": [
+    "data/generated/massachusetts_california_grade_summary_v2.json",
+    "data/generated/massachusetts_gap_matrix_v2.jsonl",
+    "data/generated/massachusetts_failure_ledger_v2.jsonl",
+    "data/generated/massachusetts_verified_sources_v1.jsonl",
+    "data/generated/massachusetts_next_action_queue_v2.jsonl",
+    "docs/generated/massachusetts-california-grade-audit-report-v2.md"
+  ],
+  "failures": [
+    {
+      "code": "not_completion_candidate",
+      "family": null,
+      "filesChecked": [
+        "data/generated/massachusetts_california_grade_summary_v2.json"
+      ],
+      "reason": "Candidate classification is BLOCKED, not COMPLETE.",
+      "suggestedRepairClass": "keep_blocked_or_repair_more"
+    }
+  ],
+  "checkedAt": "2026-06-25T23:05:19.388Z",
+  "liveProbeEnabled": false
+}

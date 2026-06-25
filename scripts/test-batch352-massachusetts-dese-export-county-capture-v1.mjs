@@ -62,9 +62,10 @@ const educationVerified = verifiedRows.find((row) => row.family === 'district_or
 assert.equal(educationVerified.family_status, 'verified_county_grade');
 assert.equal(educationVerified.evidence_strength, 'strong');
 assert.equal(educationVerified.blocker_code, null);
-assert.equal(educationVerified.sample_count, 4);
+assert.equal(educationVerified.sample_count, 5);
 assert.match(educationVerified.query_basis, /official DESE district export/i);
 assert.match(educationVerified.samples[1].evidence_snippet, /search\.xls/i);
+assert.match(educationVerified.samples[4].evidence_snippet, /county-to-district mapping contract/i);
 
 assert.equal(nextRows.length, 1);
 assert.equal(nextRows[0].family, 'county_local_disability_resources');
@@ -90,7 +91,7 @@ assert.equal(allStateMass.completenessPct, 92);
 assert.equal(allStateMass.familyStatuses.district_or_county_education_routing, 'verified_county_grade');
 
 assert.match(stateReport, /Education is no longer a blocker/i);
-assert.match(allStateReport, /- BLOCKED: 12/i);
+assert.match(allStateReport, /- BLOCKED: 10/i);
 assert.match(allStateReport, /blocked states: .*Massachusetts/i);
 assert.match(handoff, /## Current Focus State: Massachusetts/);
 assert.match(handoff, /county_local_disability_resources` is the only Massachusetts blocker left/i);
