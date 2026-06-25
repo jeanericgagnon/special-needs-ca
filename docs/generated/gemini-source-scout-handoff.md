@@ -28,59 +28,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest remaining Arizona blocker. The final three reviewed public district domains still expose no local role-bearing special-education, student-services, 504, or Child Find leaf. Coconino County Accommodation School District remains live, but its public WordPress search and sitemap lanes only replay board/about/employment/staff false positives. Mohave Accelerated Schools remains live, but its homepage is generic, exact role slugs still 404, and public search results still carry no role-bearing content. Yavapai Accommodation School District remains live, but its public root is generic, its public sitemap/documents surfaces expose only general pages and handbook/document leaves, and exact role slugs still 404. `county_local_disability_resources` remains a second blocker because the current reviewed AHCCCS UniversityFamilyCare PDF bundle only proves support letters, not a county-to-office routing contract.
+`county_local_disability_resources` is the only remaining Massachusetts blocker. Education is already cleared by the official DESE district export plus the official Census TIGERweb county-subdivision crosswalk. The remaining blocker is the Massachusetts DDS county-local lane: the live DDS org page, locations index, and interactive regional map are known first-party surfaces, but the low-token raw lane still does not preserve a county field, county export, or machine-readable town-to-office contract. The repo-side fetch path still hits HTTP 403 on the exact locations index and interactive map URLs, so there is still no disk-preserved county-grade DDS crosswalk.
 
 ### Exact Evidence Needed
 
-- Any district-owned Arizona leaf on `ccasdaz.org`, `mohavelearning.org`, or `yavapaicountyhighschool.com` that explicitly preserves local special-education, student-services, Section 504, Child Find, or procedural-safeguards routing.
-- Any same-host district PDF, DOC, or page linked from those three district roots that names a local special-education contact, director, coordinator, or department.
-- Any current official Arizona county-to-office, county-admin, or service-area contract on AHCCCS, DES, or another Arizona official host that truthfully binds a county to a local office or county routing path.
+- Any current official Massachusetts DDS page, export, JSON, ArcGIS layer, HTML table, or PDF that explicitly binds towns or counties to DDS regional or area offices.
+- Any reviewable first-party DDS locality capture that preserves town-to-office or county-to-office routing on disk rather than only in a transient browser interaction.
+- Any official county field or export on the DDS locations index or interactive regional map that can be replayed from disk without generic fallback.
 
 ### Useful Official URLs Already Tried
 
-- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
-- [CCASD page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
-- [CCASD post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
-- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
-- [Mohave public search result guess](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
-- [Mohave sitemap.xml](https://www.mohavelearning.org/sitemap.xml)
-- [Mohave Finalsite sitemap lane](https://www.mohavelearning.org/fs/pages/sitemap)
-- [Mohave 504 guess](https://www.mohavelearning.org/page/504/)
-- [Mohave special-education guess](https://www.mohavelearning.org/page/special-education/)
-- [Mohave student-services guess](https://www.mohavelearning.org/page/student-services/)
-- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
-- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
-- [Yavapai documents](https://www.yavapaicountyhighschool.com/documents/)
-- [Yavapai contact us](https://www.yavapaicountyhighschool.com/page/contact-us/)
-- [Yavapai 504 guess](https://www.yavapaicountyhighschool.com/page/504/)
-- [Yavapai special-education guess](https://www.yavapaicountyhighschool.com/page/special-education/)
-- [Yavapai student-services guess](https://www.yavapaicountyhighschool.com/page/student-services/)
-- [AHCCCS UniversityFamilyCare oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [AHCCCS live Pima PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
-- [AHCCCS live PimaCountyAdmin PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
-- [AHCCCS live CountyAdminOffice PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
-- [AHCCCS ALTCS page](https://www.azahcccs.gov/Members/GetCovered/Categories/other/ALTCS.html)
-- [DES office locator](https://des.az.gov/office-locator)
+- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [Massachusetts interactive DDS regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [Stale guessed DDS area offices path](https://www.mass.gov/info-details/dds-area-offices)
+- [DESE profiles search](https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238)
+- [DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
+- [Census TIGERweb county subdivisions](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any exact same-host leaf on the three residual Arizona education domains that carries special-education, student-services, Section 504, or Child Find role text, not just board/about/contact/search/document noise.
-- Any downloadable same-host district document that names a special-education director, coordinator, or 504 / Child Find route on those three hosts.
-- Any new Arizona official county-admin, service-area, or office-routing contract that upgrades county-local beyond the current non-contract AHCCCS support-letter bundle.
+- Any official DDS surface that upgrades the current browser-readable town/city lookup purpose into a reusable town-to-office or county-to-office contract on disk.
+- Any current Mass.gov export, embedded JSON, or ArcGIS payload behind the DDS map or locations index that preserves locality-to-office bindings.
+- Any reviewed browser/cached locality capture from the DDS map that can be preserved as first-party locality evidence rather than a generic area-office inventory.
 
-## Next State Order After Arizona
+## Next State Order After Massachusetts
 
-1. Massachusetts
-2. New Mexico
-3. South Dakota
-4. Rhode Island
-5. Virginia
-6. West Virginia
-7. North Dakota
-8. Wisconsin
-9. Washington
-10. Tennessee
+1. New Mexico
+2. South Dakota
+3. Rhode Island
+4. Virginia
+5. West Virginia
+6. North Dakota
+7. Wisconsin
+8. Washington
+9. Tennessee
+10. Vermont
