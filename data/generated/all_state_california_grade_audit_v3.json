@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-25T02:32:23.991Z",
+  "generatedAt": "2026-06-24T23:59:00.000Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 27,
-    "BLOCKED": 23
+    "COMPLETE": 28,
+    "BLOCKED": 22
   },
-  "indexSafeCount": 27,
+  "indexSafeCount": 28,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a new queue-completion lesson: once every state has a packet, stop expanding the queue and switch to failure-class repair from packet artifacts.",
+  "lessonsUpdate": "Added a new Kansas export-clearance lesson: a county-named official district export can clear county-grade education routing when the bounded county coverage audit proves every county appears.",
   "states": [
     {
       "stateId": "alabama",
@@ -1078,8 +1078,8 @@
       "stateId": "kansas",
       "stateCode": "KS",
       "stateName": "Kansas",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -1091,7 +1091,7 @@
       "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 93,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "kansas",
         "state_code": "KS",
@@ -1130,7 +1130,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_reviewed_local_kansas_district_leaves_expand_to_30_counties_but_current_live_ksde_submit_replay_is_rejected",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1140,9 +1140,11 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch347_kansas_reviewed_district_nonmatch_freeze_v1",
-      "packetPrimaryGapReason": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_30_counties",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetBatch": "batch348_kansas_official_export_completion_v1",
+      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "packetRecommendedBatch": "batch_2_repair_blocked",
+      "primaryGapReason": null,
+      "criticalGapFamilies": null
     },
     {
       "stateId": "kentucky",

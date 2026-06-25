@@ -422,3 +422,6 @@
 
 ### Structured County Leaves Can Hide Behind A Statewide Shell
 *   **Lesson:** When an official county directory leaf mixes statewide shell fields with county-specific structured data, extract the non-shell fields before deciding the page is unusable. Ohio JFS county leaves repeated the Columbus shell address and phone in the page payload, but each county page also preserved its own local address, phone, fax, website, and hours block, which was enough to verify all 88 counties from the official sitemap family.
+
+### County-Named Official District Exports Can Clear County-Grade Education Routing
+*   **Lesson:** If a live official state directory export preserves `County Name` plus district routing fields and a bounded coverage audit proves every county appears, that export itself can clear county-grade education routing without waiting for district-by-district special-education leaves. Kansas cleared once the live KSDE `Directory.xls` workbook again exposed county names plus district contact columns and the bounded county-name coverage check matched all 105 counties.

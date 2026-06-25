@@ -1,0 +1,16 @@
+{
+  "state": "Kansas",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "county_count": 105,
+  "cleared_family": "district_or_county_education_routing",
+  "ksde_directory_reports_status": 200,
+  "ksde_directories_status": 200,
+  "ksde_pdf_status": 200,
+  "has_viewstate": true,
+  "has_viewstategenerator": true,
+  "has_eventvalidation": true,
+  "export_content_type": "application/vnd.ms-excel",
+  "export_county_coverage": 105,
+  "district_directory_cleared": true
+}
