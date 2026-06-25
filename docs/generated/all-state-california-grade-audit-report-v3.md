@@ -20,6 +20,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 - Arizona remains blocked, but the education blocker is narrower: Coconino now clears through the official CAVIAT root plus a live 504 leaf, Mohave has a reviewed alternate special-services leaf that still lacks official county attachment in this lane, Yavapai still lacks a role-bearing local leaf, and county-local still bottoms out in AHCCCS support-letter PDFs rather than a county-routing contract.
 - North Dakota remains blocked, but the blocker is now singular and cleaner: official HHS Human Service Zone county-local routing and first-party statewide legal-aid evidence are now cleared, and only the public DPI education-routing contract remains below California-grade because the live DPI surfaces still expose statewide guidance and district inventory without county-grade or district-owned special-education routing.
+- South Dakota remains blocked, but the blocker is now singular and cleaner: official DOE district-directory pages now clear education routing, official UJS legal-help pages clear statewide legal aid, and only county-local disability routing remains below California-grade because the current DHS host still exposes no public county-to-office or local-service contract.
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
