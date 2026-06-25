@@ -30,10 +30,10 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 
 
-- Maine remains blocked on a stronger same-host finality check: the DHHS office stack still has no county/service-area crosswalk, and the newly surfaced OFI county and county-town workbooks are only TANF/Food Supplement count reports with no office-assignment fields.
 
 
 
 
 
 - Alaska county-local routing is still blocked: the raw low-token lane still gets Cloudflare `Just a moment...` 403 shells across the health-host DPA family, the earlier browser-reviewed DPA offices page still only groups regional offices without borough or census-area assignments, and DFCS root, site-map, contacts, and bounded search-result checks still expose no DPA office contract or public search recovery lane.
+- Maine remains blocked after a sharper office-address finality check: the DHHS office stack, OFI contact page, and sampled `Show Map` links still only expose office addresses and generic eligibility routing, not any county-to-office or service-area contract.

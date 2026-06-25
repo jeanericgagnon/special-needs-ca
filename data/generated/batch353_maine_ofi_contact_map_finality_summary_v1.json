@@ -1,0 +1,13 @@
+{
+  "batch": "batch353_maine_ofi_contact_map_finality_v1",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "ofi_contact_page_live": true,
+  "ofi_programs_services_page_live": true,
+  "sampled_show_map_shortlinks_live": 2,
+  "sampled_show_map_shortlinks_are_address_geocodes_only": true,
+  "sampled_show_map_shortlinks_have_county_metadata": false,
+  "county_crosswalk_found": false,
+  "result": "office_addresses_and_map_geocodes_without_county_routing_contract"
+}

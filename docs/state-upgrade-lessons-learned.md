@@ -494,3 +494,6 @@
 
 ### Public WP Sitemaps Can Reopen A District Host That Looked Blank In Raw HTML
 *   **Lesson:** If a district root looks blank or unhelpful in one raw fetch, check the public WordPress sitemap before freezing the host. Jefferson SD 251 looked like a blank shell at the root, but its public `wp-sitemap.xml` exposed district-owned `special-services`, `special-education`, `section-504`, and `student-services` leaves that were strong enough to recover county-grade education routing.
+
+### Address Map Shortlinks Still Do Not Prove County Service Areas
+*   **Lesson:** If an official office directory only exposes `Show Map` shortlinks, resolve a bounded sample before assuming they add routing coverage. Maine DHHS `Show Map` links only expanded to raw Google Maps address geocodes for office street addresses; they added no county-served labels, service-area fields, or office-assignment metadata, so they strengthened the blocker instead of clearing county-local routing.
