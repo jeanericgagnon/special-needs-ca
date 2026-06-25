@@ -15,7 +15,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Idaho: `remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_contact_title_ix_or_generic_leaves_without_special_education_routing`
 - Maine: `official_dhhs_office_cross_program_referrals_and_public_county_workbooks_still_expose_no_county_to_office_or_service_area_contract`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`
-- New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
+- New Hampshire: `official_nh_dhhs_education_and_vr_host_families_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead`
 - New Mexico: `official_webed_directory_workbooks_are_live_single_sheet_exports_with_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
@@ -28,32 +28,32 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: New Hampshire
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest-priority Arizona blocker. The last three unresolved county-owned or district-owned public domains are still live and reviewable, but one more bounded recheck confirmed they are source-final without role-bearing local education leaves. `ccasdaz.org` stayed live and exposed page/post sitemaps plus WordPress JSON search, but no special-education, student-services, 504, or Child Find leaves. `mohavelearning.org` stayed live, but exact role slugs still 404, the public search-results surface stayed content-empty, and the sitemap lanes stayed unavailable. `yavapaicountyhighschool.com` stayed live, but its sitemap only exposed generic pages and handbook/document leaves, while exact role slugs still 404. Arizona therefore remains blocked on three reviewed public domains that still lack local role-bearing special-education routing leaves.
+`medicaid_state_health_coverage` is the highest-leverage New Hampshire blocker because the same DHHS host-family failure also keeps `medicaid_waiver_hcbs_disability_services`, `developmental_disability_idd_authority`, `early_intervention_part_c`, and `county_local_disability_resources` blocked. A fresh bounded 2026-06-25 recheck confirmed the saved `dhhs.new-hampshire.gov` replacement-host family is still DNS-dead, while `www.dhhs.nh.gov`, `dhhs.nh.gov`, `www.nh.gov/`, `www.nh.gov/dhhs/`, `www.nh.gov/dhhs/contact-us/`, and `www.nh.gov/dhhs/district-offices/` all still return the same short `Access Denied` shell with HTTP 403. Parallel rechecks also confirmed the official education and VR host families still return the same access-denied shell, so New Hampshire remains blocked on live official host families that are public-addressable but not publicly reviewable in the low-token lane.
 
 ### Exact Evidence Needed
 
-- Any district-owned or county-owned special-education, student-services, 504, or Child Find leaf newly published on `ccasdaz.org`, `mohavelearning.org`, or `yavapaicountyhighschool.com`.
-- Any official public sitemap, search surface, or documents lane on those same hosts that begins exposing role-bearing local education leaves.
-- Any new official county-local contract on AZ AHCCCS or DES that goes beyond the current generic ALTCS page and non-contract University Family Care support/admin letters.
+- Any reviewed public official New Hampshire DHHS successor host that resolves without the `Access Denied` shell and preserves Medicaid, DD, EI, or district-office content.
+- Any reviewed public official New Hampshire education directory or district-routing host that resolves without the `Access Denied` shell and exposes county- or district-grade routing.
+- Any reviewed public official New Hampshire VR or Pre-ETS host that resolves without the `Access Denied` shell and preserves first-party VR routing.
 
 ### Useful Official URLs Already Tried
 
-- [Coconino County Accommodation School District](https://www.ccasdaz.org/)
-- [Mohave Accelerated Schools](https://www.mohavelearning.org/)
-- [Yavapai Accommodation School District](https://www.yavapaicountyhighschool.com/)
-- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [AHCCCS ALTCS page](https://www.azahcccs.gov/Members/GetCovered/Categories/other/ALTCS.html)
+- [New Hampshire DHHS](https://www.dhhs.nh.gov/)
+- [New Hampshire state root](https://www.nh.gov/)
+- [New Hampshire DOE](https://www.education.nh.gov/)
+- [New Hampshire DOE alternate host](https://my.doe.nh.gov/ehb/)
+- [New Hampshire Employment Security](https://www.nhes.nh.gov/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any role-bearing local education leaf newly exposed on the three reviewed Arizona public district domains.
-- Any official county-to-office or county-to-contractor routing contract on live AZ AHCCCS or DES public hosts.
-- Any official HTML or PDF artifact that goes beyond support/admin collateral and explicitly maps Arizona counties to county-local disability routing.
+- Any public successor host or reviewed alternate official root on NH DHHS that avoids the current access-denied shell.
+- Any public successor host or reviewed alternate official root on NH education that exposes district-grade routing.
+- Any public successor host or reviewed alternate official root on NHES that exposes VR or Pre-ETS routing.
 
 ## Next State Order After Arizona
 
-1. New Hampshire
+1. Alaska

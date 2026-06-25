@@ -1,11 +1,11 @@
 {
   "state": "new-hampshire",
-  "primary_gap_reason": "official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root",
-  "purpose": "Deterministic blocker packet for New Hampshire while the saved DHHS successor host remains unresolvable and the likely public nh.gov successor family remains HTTP 403 forbidden.",
+  "primary_gap_reason": "official_nh_dhhs_education_and_vr_host_families_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead",
+  "purpose": "Deterministic blocker packet for New Hampshire while the saved DHHS replacement-host family remains DNS-dead and the direct DHHS, education, VR, and likely nh.gov successor hosts still return the same short Access Denied shell with HTTP 403.",
   "packet_complete_when": "New Hampshire can reopen only when at least one reviewed first-party official host family either resolves publicly for Medicaid/DD/EI and county-office lanes or exposes a public export or browser-reviewable directory for education, VR, or district offices.",
   "blocker_classes": [
     {
-      "blocker_class": "saved_successor_host_unresolvable_and_nh_gov_successors_forbidden",
+      "blocker_class": "saved_successor_host_dns_dead_and_direct_successors_access_denied_shell",
       "families": [
         "medicaid_state_health_coverage",
         "medicaid_waiver_hcbs_disability_services",
@@ -31,10 +31,10 @@
         "https://www.nh.gov/dhhs/contact-us/",
         "https://www.nh.gov/dhhs/district-offices/"
       ],
-      "finding": "The saved replacement-host family does not resolve and the likely nh.gov DHHS successors return HTTP 403 Forbidden immediately."
+      "finding": "The saved replacement-host family still does not resolve and the direct DHHS plus likely nh.gov DHHS successors still return the same short Access Denied shell with HTTP 403."
     },
     {
-      "blocker_class": "official_education_hosts_and_nh_gov_successors_forbidden",
+      "blocker_class": "official_education_hosts_and_direct_successors_access_denied_shell",
       "families": [
         "district_or_county_education_routing"
       ],
@@ -53,10 +53,10 @@
         "https://www.nh.gov/education/",
         "https://www.nh.gov/education/doe/"
       ],
-      "finding": "The official education hosts return Access Denied and the likely nh.gov education successors return HTTP 403 Forbidden immediately."
+      "finding": "The official education hosts and the likely nh.gov education successors still return the same short Access Denied shell with HTTP 403."
     },
     {
-      "blocker_class": "official_vr_hosts_unresolvable_or_forbidden_and_no_nh_gov_successor",
+      "blocker_class": "official_vr_hosts_still_access_denied_or_unresolvable_with_no_public_successor",
       "families": [
         "vocational_rehabilitation_pre_ets"
       ],
@@ -74,7 +74,7 @@
         "https://www.nh.gov/nhes/",
         "https://www.nh.gov/employment/"
       ],
-      "finding": "The current VR host family is either unresolvable or Access Denied, and the likely nh.gov successors return HTTP 403 Forbidden immediately."
+      "finding": "The current VR host family is still either unresolvable or the same short Access Denied shell, and the likely nh.gov successors do the same."
     }
   ]
 }
