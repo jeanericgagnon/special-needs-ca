@@ -26,7 +26,6 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 
 
-- New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, while the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, so no public official recovery lane exists yet.
 - Wisconsin is now COMPLETE/index-safe from the live DPI School Directory county/CESA routing contract plus refreshed official DHS developmental-disability, Birth to 3, and DVR transition evidence.
 - Washington is now COMPLETE/index-safe from the reviewed official DDCS county-region map plus refreshed official ESIT and DVR local-routing evidence on current DSHS/DCYF hosts.
 
@@ -35,3 +34,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Maine remains blocked after a bounded DHHS navigation-stack plus official-search finality check: District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, sitemap, sampled `Show Map` links, and official Maine search queries still expose office addresses and labels but no county-to-office or service-area contract.
 - Idaho remains blocked after a final Camas-and-Clark attachment pass: Camas only exposes contact routing plus a board-roster Google Doc, and Clark only exposes Contact Us, Title IX, and general-education notice attachments, not local special-education routing.
 - New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the fuller official failure mode: the live PED SharePoint directory host, its REST-backed `2017 NM Schools` list, the REC grouping page, the complete six-file public workbook library, and the five public SharePoint site pages are all reviewable, but none publishes a county field or REC county-service-area contract.
+- New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, and even the DHHS/`nh.gov` robots.txt and sitemap.xml diagnostics return that same shell.

@@ -551,3 +551,6 @@
 
 ### Alternate LEAs On Official District Inventories Can Replace Dead-End County Roots
 *   **Lesson:** If a state report-cards API exposes more than one LEA in a blocked county, do not stop at the first county-named accommodation district. Arizona only moved again once the same official inventory surfaced CAVIAT in Coconino and Mohave Valley Elementary in Mohave, revealing better same-domain local leaf candidates than the earlier dead-end roots.
+
+### Access-Denied Host Families Sometimes Block Diagnostics Too
+*   **Lesson:** If an official state host family is returning a short Access Denied shell, do one bounded check of `robots.txt` and `sitemap.xml` before leaving the blocker open-ended. New Hampshire proved that even the DHHS and `nh.gov` diagnostic surfaces returned the same 403 shell, which let us preserve the blocker as host-family finality instead of an unexplored successor lane.
