@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 33
-- primary_gap_reason: current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate
+- primary_gap_reason: official_webed_school_directory_and_rec_workbooks_live_but_no_county_crosswalk_or_county_labeled_local_education_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (Reviewed HCA DDSD evidence on disk replaced the stale dhhs.new-mexico.gov DD authority path.)
 - early_intervention_part_c: verified_county_grade (The official ECECD FIT page plus the linked Regional Office Map now prove county-grade local FIT routing across all 33 counties.)
 - special_education_idea_part_b: verified_state_grade (The reviewed New Mexico regional education row still points to the PED Special Education Bureau page as the statewide Part B authority, while district-grade routing remains a separate blocked family.)
-- district_or_county_education_routing: blocked_exact_district_or_county_leafs_unverified (Reviewed 2026-06-25 one more bounded official New Mexico education host pass. The legacy repo host family `https://education.new-mexico.gov/` is now source-finally unusable: exact probes on the root, `/regional`, `/sitemap.xml`, `/robots.txt`, `/special-education/`, and `/districts/` all fail DNS resolution. The current official PED host family remains equally non-productive for low-token local routing: earlier bounded exact probes on `https://webnew.ped.state.nm.us/` and `https://webnew.ped.state.nm.us/bureaus/special-education/` had already timed out after 25 seconds, and fresh bounded exact probes on the current host search and API-shaped routes still timed out after 15 seconds. The packet still preserves zero district-owned, county-grade, or regional local education leaves on disk, and the only retained PED-side URLs remain the generic PED root plus the statewide Special Education Bureau page. district_or_county_education_routing therefore remains blocked on authoring exact local leaves from district-owned or regional sources, not on any further state-host retries.)
+- district_or_county_education_routing: blocked_official_directory_live_but_county_crosswalk_unverified (Reviewed 2026-06-25 one bounded official New Mexico education directory pass beyond the previously failing PED hosts. The public SharePoint school-directory host `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx` is live and returns HTTP 200, and the official public downloads `NM Schools.xlsx`, `Superintendents.xlsx`, and `REC Directors.xlsx` also return HTTP 200 from the same host. Those workbooks now prove district names/codes, superintendent contacts, and REC director contacts on an official PED-managed directory surface. But the `NM Schools.xlsx` workbook is school-level and carries no county field, the `Superintendents.xlsx` workbook carries district contacts but no county field, and the `REC Directors.xlsx` workbook carries REC contacts but no county-service-area labeling. The legacy `education.new-mexico.gov` host family remains DNS-dead, and the current `webnew.ped.state.nm.us/bureaus/special-education/` page still does not itself supply county-grade local routing. New Mexico education therefore remains blocked on an official county-to-district or county-to-REC crosswalk, not on total absence of a public PED directory lane.)
 - vocational_rehabilitation_pre_ets: blocked_official_dvr_root_unauthorized_without_reviewed_alternate (Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.)
 - protection_and_advocacy: verified_state_grade (Reviewed DRNM first-party evidence on disk explicitly proves the statewide protection-and-advocacy role and intake route.)
 - parent_training_information_center: verified_state_grade (The reviewed Parents Reaching Out About page explicitly preserves New Mexico PTI designation on a first-party source.)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: current_ped_host_timeouts_and_legacy_education_host_unresolvable_without_local_leafs :: Reviewed 2026-06-25 one more bounded official New Mexico education host pass. The legacy repo host family `https://education.new-mexico.gov/` is now source-finally unusable: exact probes on the root, `/regional`, `/sitemap.xml`, `/robots.txt`, `/special-education/`, and `/districts/` all fail DNS resolution. The current official PED host family remains equally non-productive for low-token local routing: earlier bounded exact probes on `https://webnew.ped.state.nm.us/` and `https://webnew.ped.state.nm.us/bureaus/special-education/` had already timed out after 25 seconds, and fresh bounded exact probes on the current host search and API-shaped routes still timed out after 15 seconds. The packet still preserves zero district-owned, county-grade, or regional local education leaves on disk, and the only retained PED-side URLs remain the generic PED root plus the statewide Special Education Bureau page. district_or_county_education_routing therefore remains blocked on authoring exact local leaves from district-owned or regional sources, not on any further state-host retries.
+- district_or_county_education_routing: official_webed_school_directory_live_but_no_county_crosswalk_or_county_labeled_local_education_contract :: Reviewed 2026-06-25 one bounded official New Mexico education directory pass beyond the previously failing PED hosts. The public SharePoint school-directory host `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx` is live and returns HTTP 200, and the official public downloads `NM Schools.xlsx`, `Superintendents.xlsx`, and `REC Directors.xlsx` also return HTTP 200 from the same host. Those workbooks now prove district names/codes, superintendent contacts, and REC director contacts on an official PED-managed directory surface. But the `NM Schools.xlsx` workbook is school-level and carries no county field, the `Superintendents.xlsx` workbook carries district contacts but no county field, and the `REC Directors.xlsx` workbook carries REC contacts but no county-service-area labeling. The legacy `education.new-mexico.gov` host family remains DNS-dead, and the current `webnew.ped.state.nm.us/bureaus/special-education/` page still does not itself supply county-grade local routing. New Mexico education therefore remains blocked on an official county-to-district or county-to-REC crosswalk, not on total absence of a public PED directory lane.
 - vocational_rehabilitation_pre_ets: official_dvr_root_returns_401_without_reviewed_public_alternate :: Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.
 
 ## Verified source samples
@@ -34,7 +34,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://www.hca.nm.gov/developmental-disabilities-supports-division/
 - early_intervention_part_c: verified_county_grade; samples=2; first=https://www.nmececd.org/family-infant-toddler-fit-program/
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://webnew.ped.state.nm.us/bureaus/special-education/
-- district_or_county_education_routing: blocked_exact_district_or_county_leafs_unverified; samples=5; first=https://webnew.ped.state.nm.us/
+- district_or_county_education_routing: blocked_official_directory_live_but_county_crosswalk_unverified; samples=5; first=https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx
 - vocational_rehabilitation_pre_ets: blocked_official_dvr_root_unauthorized_without_reviewed_alternate; samples=2; first=https://www.dvr.nm.gov/
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://drnm.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://parentsreachingout.org/about-us/
@@ -45,18 +45,19 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
+- [critical] district_or_county_education_routing: author_official_county_crosswalk_from_webed_directory_or_rec_contract
 - [major] vocational_rehabilitation_pre_ets: browser_assisted_or_review_alternate_official_vr_root
 
 ## Current education-host finality
 
-- The legacy `education.new-mexico.gov` host family is now explicitly retired as an active source lane because exact probes on the root, regional, sitemap, robots, and likely child routes all failed DNS resolution.
-- The current `webnew.ped.state.nm.us` host family is still not producing any local routing contract under bounded exact probes; the root, bureau, search, and API-shaped routes still time out instead of returning a usable district directory or export.
-- The state packet still preserves zero district-owned or regional local education leaves on disk, so further progress depends on exact district-owned or regional leaf authoring rather than more PED host retries.
+- The legacy `education.new-mexico.gov` host family remains explicitly retired as an active source lane because exact probes on the root, regional, sitemap, robots, and likely child routes all failed DNS resolution.
+- The current `webnew.ped.state.nm.us` host family is still not producing county-grade local routing under bounded exact probes; the bureau page remains statewide-only and the root/search/API-shaped routes are still not the lane to trust for local proof.
+- A sibling official PED-managed directory host is now confirmed live: `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx` returns HTTP 200 and publicly exposes district, superintendent, and REC workbook downloads.
+- Those official workbook downloads still do not preserve a county field or county-service-area labels, so the blocker is now the missing county crosswalk or county-labeled local contract, not the absence of a public education directory.
 
 ## Completion decision
 
 - New Mexico remains `BLOCKED` and `index_safe=false`.
 - County-local now clears from the current official HCA `Field Offices` page, which closes the earlier four-county remainder with explicit county-service-area assignments on the official host.
-- Education remains the highest-priority blocker because both official state-host families now fail closed while zero reviewed local leaves are preserved on disk.
+- Education remains the highest-priority blocker because the live official directory still stops short of a county crosswalk or county-labeled local routing contract.
 - VR remains blocked on the 401 DVR host plus zero reviewed alternate official roots.

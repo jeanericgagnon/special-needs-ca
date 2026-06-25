@@ -1,12 +1,16 @@
 {
   "state": "new-mexico",
   "family": "district_or_county_education_routing",
-  "repair_lane": "leaf_authoring_only",
-  "packet_complete_when": "Every retained New Mexico education-routing repair row points at a reviewed district-owned, county-grade, or regional special-education leaf rather than the generic PED root or the statewide PED Special Education Bureau page.",
+  "repair_lane": "county_crosswalk_or_leaf_authoring",
+  "packet_complete_when": "Every retained New Mexico education-routing repair row points at a reviewed official county-to-district or county-to-REC contract, or at a reviewed district-owned / regional local-routing leaf with county-grade coverage evidence, rather than the generic PED root or statewide-only leaves.",
   "current_metrics": {
     "retainedPedCandidates": 2,
     "wrongRoleCrossHostCandidates": 1,
     "districtOwnedLeavesOnDisk": 0,
+    "publicSchoolDirectoryRoot200": true,
+    "publicDirectoryWorkbooks200": 3,
+    "workbooksWithCountyField": 0,
+    "workbooksWithCountyServiceAreaLabel": 0,
     "countyCount": 33,
     "pedRootTimedOut25s": true,
     "pedBureauTimedOut25s": true,
@@ -26,8 +30,9 @@
     }
   ],
   "next_allowed_sources": [
-    "district-owned special-education leaves on k12 district domains",
-    "regional education or county-owned student-support directories if they preserve local routing"
+    "official county-to-district or county-to-rec crosswalks derived from public PED-managed directory exports",
+    "district-owned special-education or student-services leaves on k12 district domains",
+    "regional education or county-owned student-support directories if they preserve county-labeled local routing"
   ],
   "bounded_live_probe_result": {
     "attempted_at": "2026-06-25T00:00:00.000Z",
@@ -35,10 +40,14 @@
       "https://webnew.ped.state.nm.us/",
       "https://webnew.ped.state.nm.us/bureaus/special-education/",
       "https://webnew.ped.state.nm.us/wp-json/wp/v2/search?search=district",
+      "https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx",
+      "https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx",
+      "https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx",
+      "https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx",
       "https://education.new-mexico.gov/",
       "https://education.new-mexico.gov/regional"
     ],
-    "outcome": "current_host_timeouts_plus_legacy_host_dns_failures",
-    "conclusion": "Retire both state-host education families as active low-token discovery lanes and move only through district-owned or regional local leaf authoring."
+    "outcome": "webed_directory_live_but_no_county_crosswalk_plus_current_host_timeouts_and_legacy_host_dns_failures",
+    "conclusion": "Retire the dead legacy host and stop treating the timing-out PED host as the only discovery lane. The live `webed.ped.state.nm.us` directory and workbook exports now provide official district and REC inventory, but the blocker remains an absent county crosswalk or county-labeled local routing contract."
   }
 }

@@ -16,7 +16,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Maine: `official_dhhs_office_pages_and_public_county_workbooks_exist_but_still_expose_no_county_to_office_or_service_area_contract`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
-- New Mexico: `current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
+- New Mexico: `official_webed_school_directory_and_rec_workbooks_live_but_no_county_crosswalk_or_county_labeled_local_education_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
@@ -28,37 +28,39 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Massachusetts
+## Current Focus State: New Mexico
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Massachusetts blocker. Education is already cleared by the official DESE district export plus the official Census TIGERweb county-subdivision crosswalk. The remaining blocker is the Massachusetts DDS county-local lane: the live DDS org page, locations index, and interactive regional map are known first-party surfaces, but the low-token raw lane still does not preserve a county field, county export, or machine-readable town-to-office contract. The repo-side fetch path still hits HTTP 403 on the exact locations index and interactive map URLs, so there is still no disk-preserved county-grade DDS crosswalk.
+`district_or_county_education_routing` is the highest-priority New Mexico blocker. The older blocker wording was too pessimistic: there is now a live official PED-managed public school-directory lane at `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx`, and the public downloads `NM Schools.xlsx`, `Superintendents.xlsx`, and `REC Directors.xlsx` all return HTTP 200 on the same host. Those official workbooks prove district names/codes, superintendent contacts, and REC director contacts. But they still do not preserve a county field or county-service-area labels, so they cannot yet clear county-grade education routing across all 33 counties. The legacy `education.new-mexico.gov` host family remains dead, and the current `webnew.ped.state.nm.us/bureaus/special-education/` page is still statewide-only rather than a county-grade local-routing contract.
 
 ### Exact Evidence Needed
 
-- Any current official Massachusetts DDS page, export, JSON, ArcGIS layer, HTML table, or PDF that explicitly binds towns or counties to DDS regional or area offices.
-- Any reviewable first-party DDS locality capture that preserves town-to-office or county-to-office routing on disk rather than only in a transient browser interaction.
-- Any official county field or export on the DDS locations index or interactive regional map that can be replayed from disk without generic fallback.
+- Any official county-to-district or county-to-REC crosswalk from the live PED-managed directory stack.
+- Any county-labeled local-routing contract on the live `webed.ped.state.nm.us` directory host, its downloadable workbooks, or a sibling official REC page.
+- Any reviewed district-owned or regional local-routing page that can be tied back to counties without inventing mappings.
 
 ### Useful Official URLs Already Tried
 
-- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
-- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
-- [Massachusetts interactive DDS regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
-- [Stale guessed DDS area offices path](https://www.mass.gov/info-details/dds-area-offices)
-- [DESE profiles search](https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238)
-- [DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
-- [Census TIGERweb county subdivisions](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
+- [PED public school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
+- [PED NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
+- [PED Superintendents list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/Superintendents/AllItems.aspx)
+- [PED REC Directors page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
+- [PED NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
+- [PED Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
+- [PED REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
+- [Legacy education host root](https://education.new-mexico.gov/)
+- [Current PED Special Education Bureau](https://webnew.ped.state.nm.us/bureaus/special-education/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DDS surface that upgrades the current browser-readable town/city lookup purpose into a reusable town-to-office or county-to-office contract on disk.
-- Any current Mass.gov export, embedded JSON, or ArcGIS payload behind the DDS map or locations index that preserves locality-to-office bindings.
-- Any reviewed browser/cached locality capture from the DDS map that can be preserved as first-party locality evidence rather than a generic area-office inventory.
+- Any official county field hiding in the PED directory stack, workbook metadata, or a sibling public export.
+- Any official REC coverage page that explicitly labels counties served by REC number or REC director.
+- Any official district-locator or county-labeled routing page on a district-owned or regional official host that can satisfy county-grade local education routing without generic statewide fallback.
 
-## Next State Order After Massachusetts
+## Next State Order After New Mexico
 
-1. New Mexico
+1. Massachusetts
 2. South Dakota
 3. Rhode Island
 4. Virginia

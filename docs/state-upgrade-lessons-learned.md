@@ -500,6 +500,9 @@
 ### Retire Dead Legacy State Hosts Once The Current Replacement Also Fails Closed
 *   **Lesson:** If the legacy official host family is unresolvable and the current replacement host still times out on exact bounded probes, stop treating either state host as an active discovery lane. New Mexico education now has both a dead `education.new-mexico.gov` host family and a timing-out `webnew.ped.state.nm.us` host family, so the only honest next move is district-owned or regional leaf authoring.
 
+### Sibling Official Directory Hosts Can Narrow A State Blocker
+*   **Lesson:** If the obvious statewide bureau host times out, check for sibling official directory subdomains before freezing the family as `zero local leaves`. New Mexico's `webnew.ped.state.nm.us` lane still timed out, but the sibling official `webed.ped.state.nm.us/sites/schooldirectory/` host and its public `NM Schools.xlsx`, `Superintendents.xlsx`, and `REC Directors.xlsx` downloads were live. That changed the truthful blocker from `no public directory` to `public directory exists but no county crosswalk or county-labeled service-area contract yet`.
+
 ### County-Coded Program Reports Still Do Not Prove Local Office Routing
 *   **Lesson:** If an official state host publishes county or county-and-town spreadsheets, inspect the actual sheet schema before treating them as routing evidence. Maine OFI exposed downloadable county-coded workbooks on the DHHS host, but the sheets only carried TANF/Food Supplement summary counts and no office, district, or service-area fields, so they strengthened the blocker instead of clearing county-local routing.
 

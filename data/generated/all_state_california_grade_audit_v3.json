@@ -2220,7 +2220,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_county_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_district_or_county_leafs_unverified",
+        "district_or_county_education_routing": "blocked_official_directory_live_but_county_crosswalk_unverified",
         "vocational_rehabilitation_pre_ets": "blocked_official_dvr_root_unauthorized_without_reviewed_alternate",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2231,7 +2231,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch363_new_mexico_current_field_offices_remainder_clear_v1",
-      "packetPrimaryGapReason": "current_ped_host_timeouts_plus_dead_legacy_education_host_leave_zero_local_education_leaves_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
+      "packetPrimaryGapReason": "official_webed_school_directory_and_rec_workbooks_live_but_no_county_crosswalk_or_county_labeled_local_education_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {
