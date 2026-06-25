@@ -1,6 +1,6 @@
 {
   "batch": "batch334_maine_live_selector_500_refresh_v1",
-  "generated_at": "2026-06-25T07:10:00.000Z",
+  "generated_at": "2026-06-25T23:55:00.000Z",
   "state": "maine",
   "classification": "BLOCKED",
   "index_safe": false,
@@ -8,8 +8,11 @@
   "superintendent_sau_live": true,
   "town_selector_live": true,
   "workbook_live": true,
-  "search_post_status": 500,
-  "export_post_status": 500,
-  "superintendent_post_status": 500,
-  "lessons_changed": false
+  "contact_search_post_status": 200,
+  "contact_export_post_status": 200,
+  "contact_error_shell": true,
+  "superintendent_sau_post_status": 200,
+  "superintendent_town_post_status": 200,
+  "superintendent_materialized": true,
+  "lessons_changed": true
 }

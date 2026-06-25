@@ -13,7 +13,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Alaska: `reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract`
 - Arizona: `ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves`
 - Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_now_fail_into_404_or_blank_shell_negative_checks`
-- Maine: `official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
+- Maine: `live_maine_neo_superintendent_selectors_now_materialize_local_rows_but_dhhs_office_html_still_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `browser_reviewed_mdeorg_county_and_district_routes_now_clear_education_but_mn_dhs_successor_county_tribal_state_directory_is_still_bot_gated`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
@@ -30,44 +30,40 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Minnesota
+## Current Focus State: Maine
 
 ### Blocker Reason
 
-Minnesota no longer has an education blocker. Browser-reviewed official MDE-ORG pages on the public MDE host now provide a county-grade education-routing contract: the public `Schools and Districts` route exposes district listings plus a `Special Education Directors` contact list and extract link, the public `Counties` route lists all 87 Minnesota counties and explicitly says users can click a county name to view all organizations located within that county, county member pages enumerate district members, and district detail leaves preserve superintendent name, email, phone, website, physical address, and county. The only remaining critical blocker is `county_local_disability_resources`: the saved DHS disability-services replacements still 404, and the official shell now points to a named successor county/tribal/state directory route that is itself bot-gated.
+Maine no longer has an education blocker. The live official Superintendent-by-SAU and Superintendent-by-Town selectors on the Maine DOE NEO host both materialize real Bangor local superintendent rows with address, phone, fax, and email on bounded replay. The only remaining critical blocker is `county_local_disability_resources`: the official DHHS district office page still lists office towns and contact details but still exposes no county or service-area crosswalk.
 
 ### Exact Evidence Needed
 
-- A live official Minnesota DHS county/tribal/state directory route that stays public instead of redirecting into bot protection.
-- Or, any other first-party Minnesota DHS county-grade county/tribal office directory that is publicly reviewable without inference.
+- An official DHHS county or service-area crosswalk for office towns like Bangor, Calais, Machias, Portland, or Skowhegan.
+- Or, any other official Maine DHHS county-grade office-routing page or export that explicitly assigns counties or service areas to those offices.
 
 ### Useful Official URLs Already Tried
 
-- [Minnesota MDE description page](https://education.mn.gov/MDE/about/SchOrg/)
-- [Minnesota MDE-ORG root](https://pub.education.mn.gov/MdeOrgView/)
-- [Minnesota schools and districts route](https://pub.education.mn.gov/MdeOrgView/districts/index)
-- [Minnesota counties route](https://pub.education.mn.gov/MdeOrgView/reference/county)
-- [Minnesota county member page example](https://pub.education.mn.gov/MdeOrgView/groupTag/members/County?headStateOrganizationId=910001000000)
-- [Minnesota district detail example](https://pub.education.mn.gov/MdeOrgView/organization/show/262)
-- [Minnesota special education directors list](https://pub.education.mn.gov/MdeOrgView/contact/contactsByContactType?contactRoleTypeCode=SPEC_ED_DIR_Contact)
-- [Minnesota DHS county and tribal offices replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/)
-- [Minnesota DHS county tribal nation directory replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/)
-- [Minnesota DHS county tribal state directory successor](https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp)
+- [Maine NEO Primary Contacts By Organization](https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU)
+- [Maine NEO Superintendent by SAU](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU)
+- [Maine NEO Town selector](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town)
+- [Maine SAU workbook](https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx)
+- [Maine special education landing page](https://www.maine.gov/doe/learning/specialed)
+- [Maine DHHS district offices](https://www.maine.gov/dhhs/about/contact/offices)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Minnesota DHS successor page for county-and-tribal office routing that stays public instead of redirecting into Radware.
-- Any first-party DHS county/tribal/state office export, directory, or HTML contact contract that replaces the current bot-gated successor route.
+- Any official DHHS county/service-area crosswalk for the named district-office towns.
+- Any official DHHS district-office PDF, spreadsheet, ArcGIS layer, or service-area page that names counties served by Bangor, Calais, Caribou, Ellsworth, Machias, Portland, or Skowhegan.
 
-## Next State Order After Minnesota
+## Next State Order After Maine
 
-1. Maine
-2. Idaho
-3. Arizona
-4. Massachusetts
-5. New Mexico
-6. South Dakota
-7. Rhode Island
-8. Virginia
-9. West Virginia
-10. North Dakota
+1. Idaho
+2. Arizona
+3. Massachusetts
+4. New Mexico
+5. South Dakota
+6. Rhode Island
+7. Virginia
+8. West Virginia
+9. North Dakota
+10. Wisconsin

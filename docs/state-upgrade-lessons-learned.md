@@ -464,3 +464,6 @@
 
 ### Browser-Readable Child Routes Can Clear A Flapping Raw-Fetch Directory
 *   **Lesson:** If raw fetches on an official directory family flap into bot protection but exact browser-reviewed child routes stay publicly readable, prefer the stable reviewed child pages over the unstable raw root. Minnesota MDE-ORG still flapped under raw fetch, yet the exact `Schools and Districts`, `Counties`, county-member, district-detail, and `Special Education Director` pages were publicly readable on the official host and were strong enough to clear county-grade education routing.
+
+### One Recovered Official Selector Can Clear A Family Even If A Sibling Selector Still Errors
+*   **Lesson:** If one official local-routing selector starts materializing real local rows again, clear the family from that lane even if a sibling selector on the same host still falls into an error shell. Maine DOE’s Superintendent-by-SAU and Superintendent-by-Town selectors both returned Bangor local rows with address, phone, fax, and email after the Primary Contacts search/export lane still fell into `Home/CustomError`.
