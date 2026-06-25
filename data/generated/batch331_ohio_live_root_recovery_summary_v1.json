@@ -6,9 +6,9 @@
   "discoverySurfacesLive": true,
   "advertisedCdjfsLeafCount": 98,
   "advertisedCdjfsCountySlugCount": 88,
-  "renderedDirectory404": true,
-  "renderedSearch404": true,
-  "renderedDirectoryRoot404": true,
-  "sampledCountyLeaf404": true,
+  "verifiedCountyLeafCount": 88,
+  "countyLeafsWithLocalAddressPhoneFaxHours": true,
+  "countyLocalFamilyCleared": true,
+  "renderedDirectoryFamilyLive": true,
   "lessonsUpdated": false
 }

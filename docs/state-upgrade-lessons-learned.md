@@ -419,3 +419,6 @@
 
 ### Partial County Widgets Can Still Add One Truth-Safe County
 *   **Lesson:** Do not discard an official partial county widget wholesale if one row independently preserves a real county office contract. Oklahoma's widget was still blocker-grade overall, but the Alfalfa row carried county name, phone, toll-free, fax, and street address, so it truthfully added one county even while the Adair row stayed too weak to clear county-local routing.
+
+### Structured County Leaves Can Hide Behind A Statewide Shell
+*   **Lesson:** When an official county directory leaf mixes statewide shell fields with county-specific structured data, extract the non-shell fields before deciding the page is unusable. Ohio JFS county leaves repeated the Columbus shell address and phone in the page payload, but each county page also preserved its own local address, phone, fax, website, and hours block, which was enough to verify all 88 counties from the official sitemap family.
