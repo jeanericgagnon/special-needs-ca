@@ -30,45 +30,50 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oklahoma
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`county_local_disability_resources` remains the top Oklahoma blocker. The live OKDHS county widget is official but still only publishes county entries for Adair and Alfalfa, and the same contact-us page still exposes no new county-complete export or public-assistance office directory beyond that widget and the child-support tree. The Alfalfa row is good enough to salvage one county because it preserves a local office contract, but the Adair row still only provides a service note plus statewide phone routing. A bounded official sitemap and sibling-leaf review found no hidden replacement county directory: the host search JSON is blocked, public search-results routes 404, and the extra `contact-us/*` leaves are wrong-role pages like hotlines, FAQ, workforce, ombudsman complaints, and config shells. The broader public KML plus the salvaged Alfalfa row still stop at 46 benefit-capable counties, and the same host only proves a county-complete tree for child-support offices, not the missing disability/local-routing remainder.
+`county_local_disability_resources` is the only remaining Alaska critical blocker. The official Department of Health DPA host is no longer only a stale challenge assumption: in the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live DPA landing page, and the exact DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is also publicly reviewable. That page now truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official host. But it still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The public DPA dashboard and Medicaid snapshot PDFs are also live, but they only publish region aggregates like Anchorage/Mat-Su, Gulf Coast, Interior, Northern, Southeast, Southwest, Anchorage, and Mat-Su rather than office-assignment geography. The DFCS successor surfaces still add no county-equivalent contract: `Services.aspx` remains phone-only, `Publications.aspx` still exposes no office-routing material, the Site Map still only surfaces wrong-role OCS and Pioneer Homes branches, and public DFCS search still materializes no usable results. Alaska remains BLOCKED because the live DPA offices page still lacks borough- or census-area assignment proof.
 
 ### Exact Evidence Needed
 
-- Any current official Oklahoma county-local office directory or export that closes the 31-county remainder on the OKDHS host.
-- Any official county-owned or state-owned successor leaves that explicitly map the unresolved counties to public assistance or disability-routing offices.
-- Any public API, CSV, JSON, ArcGIS, or HTML contract on the official host that exposes the missing county assignments directly.
+- Any official Alaska page, table, PDF, export, or API that explicitly maps boroughs or census areas to DPA office locations.
+- Any public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings now visible.
+- Any official borough/census-area office-routing contract on DFCS, Health, or a canonical Alaska successor host that is publicly reviewable without inference.
 
 ### Useful Official URLs Already Tried
 
-- [Oklahoma Human Services Contact Us](https://oklahoma.gov/okdhs/contact-us.html)
-- [Oklahoma Human Services county widget leaf](https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html)
-- [Oklahoma Human Services map2 page](https://oklahoma.gov/okdhs/contact-us/map2.html)
-- [Oklahoma Human Services mapconfig2 model](https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json)
-- [Oklahoma Human Services public widget feed](https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json)
-- [Oklahoma sitemap](https://oklahoma.gov/sitemap.xml)
-- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)
-- [Oklahoma Child Support offices tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)
-- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)
+- [Alaska DPA landing page](https://health.alaska.gov/dpa)
+- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska DPA Dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
+- [Alaska Medicaid enrollment snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
+- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
+- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
+- [Alaska DFCS Search results endpoint](https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance)
+- [Alaska Pioneer Homes Payment Assistance Program](https://dfcs.alaska.gov/daph/Pages/paymentassistance/default.aspx)
+- [Alaska DAPH publications](https://dfcs.alaska.gov/daph/Pages/publications.aspx)
+- [Alaska OCS Regional Offices](https://dfcs.alaska.gov/ocs/Pages/offices/default.aspx)
+- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
+- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any exact official OKDHS county-office export or county-filter contract that covers the unresolved counties.
-- Any official county-level benefit or disability-routing leaf linked from the same host but not yet packeted.
-- The current measured county remainder is: Adair, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
+- Any current Alaska public page or download that ties named boroughs or census areas to the now-live DPA office locations page.
+- Any embedded data source, downloadable attachment, or companion offices table on the live DPA offices page that exposes service areas.
+- Any future public Alaska office-routing export on the DPA or DFCS host that materializes county-equivalent assignments instead of only region labels.
 
-## Next State Order After Oklahoma
+## Next State Order After Alaska
 
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. New Mexico
-7. South Dakota
-8. Rhode Island
-9. Virginia
-10. West Virginia
+1. Oklahoma
+2. Minnesota
+3. Maine
+4. Idaho
+5. Arizona
+6. Massachusetts
+7. New Mexico
+8. South Dakota
+9. Rhode Island
+10. Virginia
