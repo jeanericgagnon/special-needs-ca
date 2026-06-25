@@ -1,0 +1,131 @@
+{
+  "reviewed_at": "2026-06-25",
+  "source_owner": "Wyoming Department of Health",
+  "contacts_page_url": "https://health.wyo.gov/healthcarefin/hcbs/contacts-and-important-links/",
+  "contacts_page_live_status": "cloudflare_403_blocked_from_current_runtime",
+  "bes_pdf_url": "https://health.wyo.gov/wp-content/uploads/2025/09/BES-Caseloads-Effective-10.2025.pdf",
+  "ims_pdf_url": "https://health.wyo.gov/wp-content/uploads/2025/09/HCBS-IMS-Specialists.pdf",
+  "credentialing_pdf_url": "https://health.wyo.gov/wp-content/uploads/2025/09/HCBS-Credentialing-Specialist.pdf",
+  "county_count": 23,
+  "all_county_names": [
+    "Albany",
+    "Big Horn",
+    "Campbell",
+    "Carbon",
+    "Converse",
+    "Crook",
+    "Fremont",
+    "Goshen",
+    "Hot Springs",
+    "Johnson",
+    "Laramie",
+    "Lincoln",
+    "Natrona",
+    "Niobrara",
+    "Park",
+    "Platte",
+    "Sheridan",
+    "Sublette",
+    "Sweetwater",
+    "Teton",
+    "Uinta",
+    "Washakie",
+    "Weston"
+  ],
+  "bes_specialist_assignments": [
+    {
+      "specialist_name": "Denise Jairell",
+      "dd_counties_served": [
+        "Crook",
+        "Johnson",
+        "Lincoln",
+        "Niobrara",
+        "Uinta"
+      ]
+    },
+    {
+      "specialist_name": "Patrice Chesmore",
+      "dd_counties_served": [
+        "Laramie (A-L)",
+        "Carbon",
+        "Weston"
+      ]
+    },
+    {
+      "specialist_name": "Kate Delgado",
+      "dd_counties_served": [
+        "Big Horn",
+        "Platte",
+        "Sublette",
+        "Sweetwater",
+        "Washakie"
+      ]
+    },
+    {
+      "specialist_name": "Destiny Rhoden",
+      "dd_counties_served": [
+        "Campbell",
+        "Converse",
+        "Goshen"
+      ]
+    },
+    {
+      "specialist_name": "Justine Whitacre",
+      "dd_counties_served": [
+        "Natrona"
+      ]
+    },
+    {
+      "specialist_name": "Patrick Wicks",
+      "dd_counties_served": [
+        "Fremont",
+        "Hot Springs"
+      ]
+    },
+    {
+      "specialist_name": "Lacey Magnuson",
+      "dd_counties_served": [
+        "Albany",
+        "Sheridan",
+        "Teton"
+      ]
+    },
+    {
+      "specialist_name": "Leslie Emond",
+      "dd_counties_served": [
+        "Laramie (M-Z)",
+        "Park"
+      ]
+    }
+  ],
+  "county_to_bes_specialist": {
+    "Crook": "Denise Jairell",
+    "Johnson": "Denise Jairell",
+    "Lincoln": "Denise Jairell",
+    "Niobrara": "Denise Jairell",
+    "Uinta": "Denise Jairell",
+    "Laramie (A-L)": "Patrice Chesmore",
+    "Carbon": "Patrice Chesmore",
+    "Weston": "Patrice Chesmore",
+    "Big Horn": "Kate Delgado",
+    "Platte": "Kate Delgado",
+    "Sublette": "Kate Delgado",
+    "Sweetwater": "Kate Delgado",
+    "Washakie": "Kate Delgado",
+    "Campbell": "Destiny Rhoden",
+    "Converse": "Destiny Rhoden",
+    "Goshen": "Destiny Rhoden",
+    "Natrona": "Justine Whitacre",
+    "Fremont": "Patrick Wicks",
+    "Hot Springs": "Patrick Wicks",
+    "Albany": "Lacey Magnuson",
+    "Sheridan": "Lacey Magnuson",
+    "Teton": "Lacey Magnuson",
+    "Laramie (M-Z)": "Leslie Emond",
+    "Park": "Leslie Emond",
+    "Laramie": "Patrice Chesmore / Leslie Emond"
+  },
+  "bes_excerpt": "HCBS Bene\ufb01ts and Eligibility Specialists (BES) Assistance & Eligibility County Assignments HCBS B&E Sta\ufb00 Roster \u2013 E\ufb00ective 10/2025 BES Name Counties Served for DD Counties Served for CCW Denise Jairell 307-777-1913 denise.jairell@wyo.gov Crook, Johnson, Lincoln, Niobrara, Uinta Crook, Johnson, Lincoln, Niobrara, Uinta Patrice Chesmore 307-335-6924 patrice.chesmore1@wyo.gov Carbon, Laramie (A-L), Weston Carbon, Laramie (A-L), Weston Kate Delgado 307-789-0618 kate.delgado@wyo.gov Big Horn, Platte, Sublette, Sweetwater, Washakie Big Horn, Platte, Sublette, Sweetwater, Washakie Destiny Rhoden 307-777-5074 destiny.rhoden1@wyo.gov Campbell, Converse, Goshen Campbell, Converse, Goshen Justine Whitacre 307-777-3443 justine.whitacre1@wyo.gov Natrona Natrona Patrick Wicks 307-684-2845 patrick.wicks@wyo.gov Fremont, Hot Springs Fremont, Hot Springs Lacey Magnuson 307-777-3694 lacey.magnuson@wyo.gov Albany, Sheridan, Teton Albany, Sheridan, Teton Leslie Emond - Lead BES 307- 234-6439 leslie.emond@wyo.gov Laramie (M-Z), Park Laramie (M-Z), Park HCBS Bene\ufb01ts and Eligibility Managers HCBS Bene\ufb01ts and Eligibility Unit Manager Jenifer Adams Jennifer.adams@wyo.gov 307-335-6923 HCBS Bene\ufb01ts and Eligibility Unit Assistant Managers Erin Sparks Supervising: Leslie Emond, Patrick Wicks, Justine Whitacre Erin.sparks@wyo.gov 307-777-6490 Alex Brooks Supervising: Denise Jairell, Patrice Chesmore, Kate Delgado, and Lacey Magnuson Alejandra.brooks1@wyo.gov 307-777-3481 Level of Care Assessment Coordinator \u2013 LT101 Ashlee Segura Ashlee.segura1@wyo.gov 307-777-5029 Email for LT101 inquires: loc.assessment@wyo.gov HCBS B&E Sta\ufb00 Roster \u2013 E\ufb00ective 10/2025",
+  "ims_excerpt": "HCBS Incident Management Specialist County Assignments Specialist Email Address Phone Number Assigned Counties Barbara Strasser barbara.strasser@wyo.gov (307) 335-6925 Big Horn, Campbell, Crook, Johnson, Park, Sheridan, Washakie, Weston Eric Cralley eric.cralley@wyo.gov (307) 777-7684 Albany, Carbon, Converse, Goshen, Natrona, Niobrara, Platte Leigh Holm leigh.holm@wyo.gov (307) 789-0615 Fremont, Hot Springs, Lincoln, Sublette, Sweetwater, Teton, Uinta Andrew Horam andrew.horam@wyo.gov (307) 777-3407 Laramie Managers Wendy Hoover Incident Management Assistant Manager wendy.hoover@wyo.gov (307) 777-6693 Hannah Ostheimer Provider Support Unit Manager hannah.ostheimer1@wyo.gov (307) 777-2525 HCBS 2025",
+  "credentialing_excerpt": "HCBS Credentialing Specialist County Assignments Specialist Email Address Phone Number Assigned Counties Glen Barrows glen.barrows1@wyo.gov (307) 262-3170 Big Horn, Campbell, Crook, Hot Springs, Johnson, Sheridan, Washakie, Weston Jaime Cureton jaime.cureton@wyo.gov (307) 235-1182 Albany, Carbon, Converse, Lincoln, Sweetwater, Uinta Andrea Highland andrea.highland@wyo.gov (307) 777-3322 Goshen, Laramie, Niobrara, Platte Shirley Lueders shirley.lueders@wyo.gov (307) 684-4551 Fremont, Park, Sublette, Teton Tawnya Mortenson tawnya.mortenson@wyo.gov (307) 237-3890 Natrona Managers Alice Esquibel Provider Credentialing Assistant Manager alice.esquibel@wyo.gov (307) 777-7861 Hannah Ostheimer Provider Support Unit Manager hannah.ostheimer1@wyo.gov (307) 777-2525 HCBS 2025"
+}

@@ -1,0 +1,805 @@
+{
+  "reviewed_at": "2026-06-25",
+  "source_owner": "Wyoming Department of Education",
+  "directory_url": "https://portals.edu.wyoming.gov/wyedpro/Pages/OnlineDirectory/OnlineDirectoryBreadCrumb.aspx",
+  "district_listing_source_url": "https://portals.edu.wyoming.gov/wyedpro/Pages/OnlineDirectory/OnlineDirectoryBreadCrumb.aspx",
+  "district_count": 51,
+  "county_count": 23,
+  "county_names": [
+    "Albany",
+    "Big Horn",
+    "Campbell",
+    "Carbon",
+    "Converse",
+    "Crook",
+    "Fremont",
+    "Goshen",
+    "Hot Springs",
+    "Johnson",
+    "Laramie",
+    "Lincoln",
+    "Natrona",
+    "Niobrara",
+    "Park",
+    "Platte",
+    "Sheridan",
+    "Sublette",
+    "Sweetwater",
+    "Teton",
+    "Uinta",
+    "Washakie",
+    "Weston"
+  ],
+  "district_names": [
+    "Albany County School District #1",
+    "Big Horn County School District #1",
+    "Big Horn County School District #2",
+    "Big Horn County School District #3",
+    "Big Horn County School District #4",
+    "Campbell County School District #1",
+    "Carbon County School District #1",
+    "Carbon County School District #2",
+    "Cheyenne Classical Academy",
+    "Converse County School District #1",
+    "Converse County School District #2",
+    "Crook County School District #1",
+    "Fremont County School District # 1",
+    "Fremont County School District # 2",
+    "Fremont County School District # 6",
+    "Fremont County School District #14",
+    "Fremont County School District #21",
+    "Fremont County School District #24",
+    "Fremont County School District #25",
+    "Fremont County School District #38",
+    "Goshen County School District #1",
+    "Hot Springs County School District #1",
+    "Johnson County School District #1",
+    "Laramie County School District #1",
+    "Laramie County School District #2",
+    "Lincoln County School District #1",
+    "Lincoln County School District #2",
+    "Natrona County School District #1",
+    "Niobrara County School District #1",
+    "Park County School District # 1",
+    "Park County School District # 6",
+    "Park County School District #16",
+    "Platte County School District #1",
+    "Platte County School District #2",
+    "Prairie View Community School",
+    "Sheridan County School District #1",
+    "Sheridan County School District #2",
+    "Sheridan County School District #3",
+    "Sublette County School District #1",
+    "Sublette County School District #9",
+    "Sweetwater County School District #1",
+    "Sweetwater County School District #2",
+    "Teton County School District #1",
+    "Uinta County School District #1",
+    "Uinta County School District #4",
+    "Uinta County School District #6",
+    "Washakie County School District #1",
+    "Washakie County School District #2",
+    "Weston County School District #1",
+    "Weston County School District #7",
+    "Wyoming Classical Academy"
+  ],
+  "non_county_named_districts": [
+    "Cheyenne Classical Academy",
+    "Prairie View Community School",
+    "Wyoming Classical Academy"
+  ],
+  "county_to_districts": {
+    "Albany": [
+      "Albany County School District #1"
+    ],
+    "Big Horn": [
+      "Big Horn County School District #1",
+      "Big Horn County School District #2",
+      "Big Horn County School District #3",
+      "Big Horn County School District #4"
+    ],
+    "Campbell": [
+      "Campbell County School District #1"
+    ],
+    "Carbon": [
+      "Carbon County School District #1",
+      "Carbon County School District #2"
+    ],
+    "Converse": [
+      "Converse County School District #1",
+      "Converse County School District #2"
+    ],
+    "Crook": [
+      "Crook County School District #1"
+    ],
+    "Fremont": [
+      "Fremont County School District # 1",
+      "Fremont County School District # 2",
+      "Fremont County School District # 6",
+      "Fremont County School District #14",
+      "Fremont County School District #21",
+      "Fremont County School District #24",
+      "Fremont County School District #25",
+      "Fremont County School District #38"
+    ],
+    "Goshen": [
+      "Goshen County School District #1"
+    ],
+    "Hot Springs": [
+      "Hot Springs County School District #1"
+    ],
+    "Johnson": [
+      "Johnson County School District #1"
+    ],
+    "Laramie": [
+      "Laramie County School District #1",
+      "Laramie County School District #2"
+    ],
+    "Lincoln": [
+      "Lincoln County School District #1",
+      "Lincoln County School District #2"
+    ],
+    "Natrona": [
+      "Natrona County School District #1"
+    ],
+    "Niobrara": [
+      "Niobrara County School District #1"
+    ],
+    "Park": [
+      "Park County School District # 1",
+      "Park County School District # 6",
+      "Park County School District #16"
+    ],
+    "Platte": [
+      "Platte County School District #1",
+      "Platte County School District #2"
+    ],
+    "Sheridan": [
+      "Sheridan County School District #1",
+      "Sheridan County School District #2",
+      "Sheridan County School District #3"
+    ],
+    "Sublette": [
+      "Sublette County School District #1",
+      "Sublette County School District #9"
+    ],
+    "Sweetwater": [
+      "Sweetwater County School District #1",
+      "Sweetwater County School District #2"
+    ],
+    "Teton": [
+      "Teton County School District #1"
+    ],
+    "Uinta": [
+      "Uinta County School District #1",
+      "Uinta County School District #4",
+      "Uinta County School District #6"
+    ],
+    "Washakie": [
+      "Washakie County School District #1",
+      "Washakie County School District #2"
+    ],
+    "Weston": [
+      "Weston County School District #1",
+      "Weston County School District #7"
+    ]
+  },
+  "district_leaf_records": [
+    {
+      "district_name": "Albany County School District #1",
+      "detail_title": "Albany County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl04$ctl00",
+      "website": "https://www.acsd1.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Steve Slyman 721-4460 slymans@acsd1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Big Horn County School District #1",
+      "detail_title": "Big Horn County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl06$ctl00",
+      "website": "http://www.bighorn1.com",
+      "detail_excerpt": [
+        "P.O. Box 688 Cowley 82420-0688"
+      ],
+      "special_education_rows": [
+        "Special Education Director Wes Townsend 548-1620 wtownsend@bighorn1.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Big Horn County School District #2",
+      "detail_title": "Big Horn County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl08$ctl00",
+      "website": "http://www.bgh2.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Elisha Summers 548-6563 esummers@bgh2.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Big Horn County School District #3",
+      "detail_title": "Big Horn County School District #3",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl10$ctl00",
+      "website": "http://greybullschools.com",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Cadance Wipplinger 765-4492 x 204 cwipplinger@bgh3.k12.wy.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Big Horn County School District #4",
+      "detail_title": "Big Horn County School District #4",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl12$ctl00",
+      "website": "https://www.bgh4.org/",
+      "detail_excerpt": [
+        "P.O. Box 151 Basin 82410-0151"
+      ],
+      "special_education_rows": [
+        "Special Education Director Kathryn Seeley 439-5391 katie.seeley@bgh4.k12.wy.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Campbell County School District #1",
+      "detail_title": "Campbell County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl14$ctl00",
+      "website": "https://www.ccsd.k12.wy.us/",
+      "detail_excerpt": [
+        "P.O. Box 3033 Gillette 82717-3033"
+      ],
+      "special_education_rows": [
+        "Special Education Director Luke Danforth 686-0097 ldanforth@ccsd.k12.wy.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Carbon County School District #1",
+      "detail_title": "Carbon County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl16$ctl00",
+      "website": "http://www.crb1.net",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Tanya Wall 328-9200 x 1019 twall@crb1.net"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Carbon County School District #2",
+      "detail_title": "Carbon County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl18$ctl00",
+      "website": "http://www.crb2.org",
+      "detail_excerpt": [
+        "P.O. Box 1530 Saratoga 82331-1530"
+      ],
+      "special_education_rows": [
+        "Special Education Director Robin Brown 326-5271 x 1110 rbrown@crb2.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Cheyenne Classical Academy",
+      "detail_title": "Cheyenne Classical Academy",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl20$ctl00",
+      "website": "https://www.cheyenneclassical.org/",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Tiffany Walker 214-9084 tiffany.walker@cheyenneclassical.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Converse County School District #1",
+      "detail_title": "Converse County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl22$ctl00",
+      "website": "https://www.ccsd1.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Haylei Butler 358-6187 hbutler@ccsd1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Converse County School District #2",
+      "detail_title": "Converse County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl24$ctl00",
+      "website": "http://www.converse2.org",
+      "detail_excerpt": [
+        "P.O. Box 1300 Glenrock 82637-1300"
+      ],
+      "special_education_rows": [
+        "Special Education Director Pennie Caldwell 436-5331 pcaldwell@converse2.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Crook County School District #1",
+      "detail_title": "Crook County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl26$ctl00",
+      "website": "http://www.crook1.com",
+      "detail_excerpt": [
+        "P.O. Box 830 Sundance 82729-0830"
+      ],
+      "special_education_rows": [
+        "Special Education Director Shelby Gill 283-2299 gills@crook1.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District # 1",
+      "detail_title": "Fremont County School District # 1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl28$ctl00",
+      "website": "http://www.landerschools.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Mindy Clancy 332-4711 mclancy@landerschools.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District # 2",
+      "detail_title": "Fremont County School District # 2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl30$ctl00",
+      "website": "http://www.fremont2.org",
+      "detail_excerpt": [
+        "P.O. Box 188 Dubois 82513-0188"
+      ],
+      "special_education_rows": [
+        "Special Education Director Dan Schmidt 455-5545 dan.schmidt@fremont2.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District # 6",
+      "detail_title": "Fremont County School District # 6",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl32$ctl00",
+      "website": "http://www.fremont6.org",
+      "detail_excerpt": [
+        "P.O. Box 10 Pavillion 82523-0010"
+      ],
+      "special_education_rows": [
+        "Special Education Director Troy Zickefoose 856-7970 tzickefoose@fre6.k12.wy.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District #14",
+      "detail_title": "Fremont County School District #14",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl34$ctl00",
+      "website": "http://www.wyomingindianschools.com",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Daryl Michael 332-2053 daryl.michael@fre14sd.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District #21",
+      "detail_title": "Fremont County School District #21",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl36$ctl00",
+      "website": "http://www.fortwashakieschool.com",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Carmela Demler 248-1932 cdemler@fortwashakieschool.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District #24",
+      "detail_title": "Fremont County School District #24",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl38$ctl00",
+      "website": "https://www.fremont24.com/",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Aftann Kisling 240-2266 x 422 akisling@fremont24.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District #25",
+      "detail_title": "Fremont County School District #25",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl40$ctl00",
+      "website": "http://www.fremont25.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Petrina Murfitt 856-5250 x 4105 pmurfitt@fremont25.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Fremont County School District #38",
+      "detail_title": "Fremont County School District #38",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl42$ctl00",
+      "website": "http://www.arapahoeschools.com",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Karen Brown 856-9333 x 141 karen.brown@fremont38.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Goshen County School District #1",
+      "detail_title": "Goshen County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl44$ctl00",
+      "website": "http://www.goshen1.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Trina Nichol 532-2171 tnichol@goshen1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Hot Springs County School District #1",
+      "detail_title": "Hot Springs County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl46$ctl00",
+      "website": "http://www.hotsprings1.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Cassie Hetzel 864-6528 chetzel@hotsprings1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Johnson County School District #1",
+      "detail_title": "Johnson County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl48$ctl00",
+      "website": "http://www.jcsd1.us",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Craig Anderson 684-4550 canderson@jcsd1.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Laramie County School District #1",
+      "detail_title": "Laramie County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl50$ctl00",
+      "website": "http://www.laramie1.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Stacey Kern 771-2174 stacey.kern@laramie1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Laramie County School District #2",
+      "detail_title": "Laramie County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl52$ctl00",
+      "website": "http://laramie2.org/",
+      "detail_excerpt": [
+        "P.O. Box 489 Pine Bluffs 82082-0489"
+      ],
+      "special_education_rows": [
+        "Special Education Director Shannon Perlinski 245-4005 shannon.perlinski@laramie2.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Lincoln County School District #1",
+      "detail_title": "Lincoln County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl54$ctl00",
+      "website": "http://www.rangers1.net",
+      "detail_excerpt": [
+        "P.O. Box 335 Diamondville 83116-0335"
+      ],
+      "special_education_rows": [
+        "Special Education Director Teresa Chaulk 877-9095 tchaulk@rangers1.net"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Lincoln County School District #2",
+      "detail_title": "Lincoln County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl56$ctl00",
+      "website": "http://www.lcsd2.org",
+      "detail_excerpt": [
+        "222 East 4th Avenue Afton 83110"
+      ],
+      "special_education_rows": [
+        "Special Education Director Nate Wescott 885-7143 nwescott@lcsd2.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Natrona County School District #1",
+      "detail_title": "Natrona County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl58$ctl00",
+      "website": "http://www.natronaschools.org/",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Kathryn Ostlund 253-5480 katie_ostlund@natronaschools.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Niobrara County School District #1",
+      "detail_title": "Niobrara County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl60$ctl00",
+      "website": "http://www.growingluskleaders.org",
+      "detail_excerpt": [
+        "P.O. Box 629 Lusk 82225-0629"
+      ],
+      "special_education_rows": [
+        "Special Education Director Taylor Wagstaff 334-3793 wagstafft@lusk.k12.wy.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Park County School District # 1",
+      "detail_title": "Park County School District # 1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl62$ctl00",
+      "website": "https://www.pcsd1.org/",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Ginger Sleep 764-6187 ggsleep@pcsd1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Park County School District # 6",
+      "detail_title": "Park County School District # 6",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl64$ctl00",
+      "website": "http://www.park6.org/",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Melinda Westerhold 587-4283 x 5206 mwesterhold@park6.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Park County School District #16",
+      "detail_title": "Park County School District #16",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl66$ctl00",
+      "website": "https://www.park16.k12.wy.us/",
+      "detail_excerpt": [
+        "P.O. Box 218 Meeteetse 82433-0218"
+      ],
+      "special_education_rows": [
+        "Special Education Director Lorraine King 575-4070 lking@park16.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Platte County School District #1",
+      "detail_title": "Platte County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl68$ctl00",
+      "website": "http://platte1.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Shannon Brow 322-3175 x 1010 shannon.brow@platte1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Platte County School District #2",
+      "detail_title": "Platte County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl70$ctl00",
+      "website": "http://www.guernseysunrise.org",
+      "detail_excerpt": [
+        "P.O. Box 189 Guernsey 82214-0189"
+      ],
+      "special_education_rows": [
+        "Special Education Director Lisa Weigel 877-202-1020 x 104 lweigel@gsviking.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Prairie View Community School",
+      "detail_title": "Prairie View Community School",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl72$ctl00",
+      "website": "https://www.prairieviewschool.org/",
+      "detail_excerpt": [
+        "406 5th St Chugwater 82210"
+      ],
+      "special_education_rows": [
+        "Special Education Director Bryce Cushman 399-3784 b.cushman@prairieviewschool.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Sheridan County School District #1",
+      "detail_title": "Sheridan County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl74$ctl00",
+      "website": "http://www.sheridan.k12.wy.us/",
+      "detail_excerpt": [
+        "P.O. Box 819 Ranchester 82839-0819"
+      ],
+      "special_education_rows": [
+        "Special Education Director Jami Clifford 655-9541 x 1107 jclifford@sheridan.k12.wy.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Sheridan County School District #2",
+      "detail_title": "Sheridan County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl76$ctl00",
+      "website": "http://www.scsd2.com/",
+      "detail_excerpt": [
+        "201 N Connor St Sheridan 82801"
+      ],
+      "special_education_rows": [
+        "Special Education Director Traci Turk 674-7405 x 5401 traci.turk@scsd2.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Sheridan County School District #3",
+      "detail_title": "Sheridan County School District #3",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl78$ctl00",
+      "website": "http://www.sheridan3.com",
+      "detail_excerpt": [
+        "P.O. Box 125 Clearmont 82835-0125"
+      ],
+      "special_education_rows": [
+        "Special Education Director Greg Rohrer 758-4412 x 104 grohrer@shr3panthers.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Sublette County School District #1",
+      "detail_title": "Sublette County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl80$ctl00",
+      "website": "http://www.sub1.org",
+      "detail_excerpt": [
+        "P.O. Box 549 Pinedale 82941-0549"
+      ],
+      "special_education_rows": [
+        "Special Education Director Norman Cox 367-5515 ncox@sub1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Sublette County School District #9",
+      "detail_title": "Sublette County School District #9",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl82$ctl00",
+      "website": "http://www.sublette9.org",
+      "detail_excerpt": [
+        "P.O. Box 769 Big Piney 83113-0769"
+      ],
+      "special_education_rows": [
+        "Special Education Director Scott Jolley 276-3322 x 2206 sjolley@sublette9.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Sweetwater County School District #1",
+      "detail_title": "Sweetwater County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl84$ctl00",
+      "website": "http://www.sweetwater1.org",
+      "detail_excerpt": [
+        "P.O. Box 1089 Rock Springs 82902-1089"
+      ],
+      "special_education_rows": [
+        "Special Education Director Kayci Arnoldi 352-3400 arnoldik@sw1.k12.wy.us"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Sweetwater County School District #2",
+      "detail_title": "Sweetwater County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl86$ctl00",
+      "website": "http://www.swcsd2.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Alan Demaret 872-5503 alan.demaret@swcsd2.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Teton County School District #1",
+      "detail_title": "Teton County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl88$ctl00",
+      "website": "https://www.tcsd.org",
+      "detail_excerpt": [
+        "P.O. Box 568 Jackson 83001"
+      ],
+      "special_education_rows": [
+        "Special Education Director Julie Nash 733-9651 jnash@tcsd.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Uinta County School District #1",
+      "detail_title": "Uinta County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl90$ctl00",
+      "website": "http://www.uinta1.com",
+      "detail_excerpt": [
+        "P.O. Box 6002 Evanston 82931-6002"
+      ],
+      "special_education_rows": [
+        "Special Education Director Matthew Williams 789-7571 mwilliams@uinta1.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Uinta County School District #4",
+      "detail_title": "Uinta County School District #4",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl92$ctl00",
+      "website": "http://www.uinta4.com",
+      "detail_excerpt": [
+        "P.O. Box 130 Mountain View 82939-0130"
+      ],
+      "special_education_rows": [
+        "Special Education Director Shad Hamilton 782-3377 x 4207 hamiltons@uinta4.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Uinta County School District #6",
+      "detail_title": "Uinta County School District #6",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl94$ctl00",
+      "website": "https://sites.google.com/lymanschools.org/ucsd6",
+      "detail_excerpt": [
+        "P.O. Box 1090 Lyman 82937-1090"
+      ],
+      "special_education_rows": [
+        "Special Education Director Candice Rollins 786-4100 x 4112 rollinsc@lymanschools.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Washakie County School District #1",
+      "detail_title": "Washakie County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl96$ctl00",
+      "website": "http://www.wsh1.k12.wy.us/",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Ryan Clark 347-3233 rclark@washakie1.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Washakie County School District #2",
+      "detail_title": "Washakie County School District #2",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl98$ctl00",
+      "website": "http://www.wsh2.k12.wy.us",
+      "detail_excerpt": [
+        "P.O. Box 105 Ten Sleep 82442-0105"
+      ],
+      "special_education_rows": [
+        "Special Education Director Annie Griffin 366-2223 x 500 annie.griffin@tensleepschools.com"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Weston County School District #1",
+      "detail_title": "Weston County School District #1",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl100$ctl00",
+      "website": "http://www.wcsd1.org",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Taren Olson 746-4451 olsont@wcsd1.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Weston County School District #7",
+      "detail_title": "Weston County School District #7",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl102$ctl00",
+      "website": "http://www.weston7.org",
+      "detail_excerpt": [
+        "P.O. Box 470 Upton 82730-0470"
+      ],
+      "special_education_rows": [
+        "Special Education Director Erin Brinson 468-9331 ebrinson@weston7.org"
+      ],
+      "special_education_row_count": 1
+    },
+    {
+      "district_name": "Wyoming Classical Academy",
+      "detail_title": "Wyoming Classical Academy",
+      "event_target": "ctl00$ctl00$ctl00$ContentPlaceHolder1$CphBody$CphODBody$ColumnsGrid$ctl00$ctl104$ctl00",
+      "website": "https://www.wyoclassical.org/",
+      "detail_excerpt": [],
+      "special_education_rows": [
+        "Special Education Director Jason Alder 262-9880 jason.alder@wyoclassical.org"
+      ],
+      "special_education_row_count": 1
+    }
+  ],
+  "listing_excerpt": "The public directory leaf labeled Wyoming Public School Districts enumerates 51 district entries, including county-named districts for all 23 Wyoming counties."
+}

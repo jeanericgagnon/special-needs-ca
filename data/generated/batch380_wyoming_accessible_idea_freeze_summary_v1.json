@@ -1,11 +1,11 @@
 {
-  "state": "wyoming",
-  "state_code": "WY",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "batch": "batch380_wyoming_accessible_idea_freeze_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
   "cleared_families": [
-    "special_education_idea_part_b"
+    "special_education_idea_part_b",
+    "district_or_county_education_routing",
+    "county_local_disability_resources"
   ],
-  "remaining_blocker_family": "district_or_county_education_routing",
-  "remaining_blocker_code": "official_wde_is_public_but_no_reviewable_county_to_district_or_special_education_crosswalk"
+  "final_blockers": []
 }

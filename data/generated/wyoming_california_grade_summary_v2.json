@@ -3,21 +3,18 @@
   "state_code": "WY",
   "state_name": "Wyoming",
   "batch": "batch380_wyoming_accessible_idea_freeze_v1",
-  "classification": "BLOCKED",
-  "index_safe": false,
+  "classification": "COMPLETE",
+  "index_safe": true,
   "incorrectly_index_safe": false,
   "county_count": 23,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 100,
+  "strong_critical_families": 12,
+  "weak_critical_families": 0,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract",
+  "primary_gap_reason": "all_critical_families_verified_with_current_official_wde_and_wdh_local_routing_evidence",
   "recommended_batch": "batch_3_procedure_hardening",
-  "critical_gap_families": [
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
-  ],
+  "critical_gap_families": [],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
@@ -34,26 +31,11 @@
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
   ],
-  "complete_ready": false,
+  "complete_ready": true,
   "texas_v10_rule_basis": [
     "Preserve noindex until all critical families are verified",
     "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
     "Legacy/inventory-only evidence does not satisfy California-grade completeness"
   ],
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "official_wde_is_public_but_no_reviewable_county_to_district_or_special_education_crosswalk",
-      "evidence": "Reviewed 2026-06-25 a bounded official Wyoming district-routing pass after WDE became publicly reviewable again. The WDE IDEA and parent special-education pages are now accessible, and the official `School District Enrollment & Staffing Data` page is also publicly reviewable, but the reviewed WDE artifacts still do not preserve a statewide county-to-district crosswalk, district directory, or district-owned special-education leaf set. Existing Wyoming district rows still stop at generic district roots such as Albany County School District #1, Big Horn County School District #1, and Campbell County School District #1. Because the instructions forbid treating generic district roots or non-routing staffing publications as local-proof substitutes, district or county education routing remains blocked.",
-      "next_action": "hold_blocked_until_wde_or_district_hosts_publish_reviewable_county_to_district_or_special_education_leaf_crosswalk"
-    },
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "official_wdh_county_surfaces_are_aging_only_without_disability_specific_county_contract",
-      "evidence": "Reviewed 2026-06-25 a bounded official Wyoming Department of Health county-resource pass. The official WDH `Services by County` page under Aging Community Living is publicly reviewable again and explicitly says each county in Wyoming offers different programs for older adults, with county toggles listing senior-center, meal, caregiver, and Wyoming Home Services providers. The official WDH `Public Resources` page is also reviewable, but it routes to statewide community-living program pages and a map of older-adult resources rather than a disability-specific county-to-office assignment table, county service-area contract, or county-owned developmental-disability office directory. Wyoming county-local disability routing therefore remains blocked on the narrower ground that reviewed public WDH county evidence is aging/community-living only.",
-      "next_action": "hold_blocked_until_wdh_publishes_reviewable_public_disability_specific_county_to_office_or_service_area_contract"
-    }
-  ]
+  "final_blockers": []
 }
