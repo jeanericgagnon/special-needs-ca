@@ -15,6 +15,7 @@ const summary = JSON.parse(
 );
 assert.equal(summary.classification, 'COMPLETE');
 assert.equal(summary.index_safe, true);
+assert.equal(summary.batch, 'batch383_north_dakota_official_routing_completion_v1');
 assert.equal(summary.completeness_pct, 100);
 assert.deepEqual(summary.critical_gap_families, []);
 assert.deepEqual(summary.major_gap_families, []);

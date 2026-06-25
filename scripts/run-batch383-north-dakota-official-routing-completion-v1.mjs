@@ -22,6 +22,7 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'north-dakota-california-grade-audit-report-v2.md'),
 };
 
+const BATCH_ID = 'batch383_north_dakota_official_routing_completion_v1';
 const PRIMARY_GAP_REASON = 'all_critical_families_verified_with_reviewed_first_party_or_official_evidence';
 
 const EDUCATION_REASON =
@@ -113,6 +114,7 @@ export function generateBatch383NorthDakotaOfficialRoutingCompletionV1() {
 
   const updatedSummary = {
     ...summary,
+    batch: BATCH_ID,
     classification: 'COMPLETE',
     index_safe: true,
     completeness_pct: 100,
@@ -304,7 +306,7 @@ export function generateBatch383NorthDakotaOfficialRoutingCompletionV1() {
   });
 
   const batchSummary = {
-    batch: 'batch383_north_dakota_official_routing_completion_v1',
+    batch: BATCH_ID,
     state: 'north-dakota',
     classification_before: 'BLOCKED',
     classification_after: updatedSummary.classification,

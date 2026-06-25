@@ -1,0 +1,14 @@
+{
+  "batch": "batch389_review_branch_global_sync_v1",
+  "generated_at": "2026-06-25T20:37:30.322Z",
+  "synced_states": [
+    "north-dakota",
+    "rhode-island",
+    "vermont",
+    "wyoming"
+  ],
+  "complete_count": 42,
+  "blocked_count": 8,
+  "index_safe_count": 42,
+  "incorrectly_index_safe_states": []
+}

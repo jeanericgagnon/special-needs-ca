@@ -9,12 +9,12 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Classification counts
 
-- COMPLETE: 38
-- BLOCKED: 12
+- COMPLETE: 42
+- BLOCKED: 8
 
-- index-safe states: 38
-- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, Washington, West Virginia, Wisconsin
-- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Wyoming
+- index-safe states: 42
+- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming
+- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, South Dakota
 
 ## Notes
 
@@ -33,3 +33,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, while the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, so no public official recovery lane exists yet.
 - Wisconsin is now COMPLETE/index-safe from the live DPI School Directory county/CESA routing contract plus refreshed official DHS developmental-disability, Birth to 3, and DVR transition evidence.
 - Washington is now COMPLETE/index-safe from the reviewed official DDCS county-region map plus refreshed official ESIT and DVR local-routing evidence on current DSHS/DCYF hosts.
+- North Dakota is now COMPLETE/index-safe from the live HHS Developmental Disabilities Regional Offices county contracts, the reviewed DPI district-list PDF, and refreshed first-party Legal Services of North Dakota routing evidence.
+- Rhode Island is now COMPLETE/index-safe from the official RIDE district-routing surfaces plus live BHDDH DD provider pages and current provider PDFs with local mailing addresses and phone numbers.
+- Vermont is now COMPLETE/index-safe from the current official AHS Field Services ArcGIS map and REST layers plus the reviewed Vermont government school-to-district open-data dataset.
+- Wyoming is now COMPLETE/index-safe from the official HCBS Specialists by County lane, the public BES county caseload PDF, reviewed WDE routing pages, and current official legal-aid evidence.
