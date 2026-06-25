@@ -1,0 +1,11 @@
+{
+  "batch": "batch364_new_mexico_workbook_stack_finality_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "webed_sharepoint_home_live": true,
+  "webed_rest_backed_school_list_live": true,
+  "public_workbooks_verified_live": 6,
+  "public_workbooks_with_county_field": 0,
+  "public_workbooks_with_rec_service_area_field": 0,
+  "result": "official_webed_lists_and_six_public_workbooks_live_but_no_county_crosswalk_or_rec_service_area_contract"
+}

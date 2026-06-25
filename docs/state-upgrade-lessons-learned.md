@@ -530,3 +530,6 @@
 
 ### Public District Events APIs Can Clear Child Find Lanes When The Event Titles Stay Role-Exact
 *   **Lesson:** If an official district CMS exposes a public events API on the same host family, inspect it before freezing a district as contact-only. Idaho Fremont still had no reusable special-education page, but the public `sd215` Apptegy events feed preserved exact `Child Find Preschool Screenings` rows for Henry's Fork Elementary and Ashton Elementary with local venues and dates, which was strong enough to move Fremont out of the generic wrong-role remainder.
+
+### Live SharePoint Workbook Stacks Without County Fields Are Final Negative Evidence
+*   **Lesson:** If a live official SharePoint directory host exposes not just one export but the full public workbook stack for schools, superintendents, REC directors, and principals, inspect the header rows before reopening local-routing discovery. New Mexico PED's six public workbooks were all real and current, but every one still omitted county or REC service-area fields, so the honest blocker stayed `missing county crosswalk` rather than `missing public directory`.
