@@ -1,0 +1,14 @@
+{
+  "batch": "batch332_ohio_education_live_leaf_probe_v1",
+  "state": "ohio",
+  "state_code": "OH",
+  "countyCount": 88,
+  "strongCountyCount": 45,
+  "partialCountyCount": 23,
+  "unresolvedCountyCount": 20,
+  "rootsProbed": 53,
+  "rootsWithMatches": 36,
+  "rootsWithoutMatches": 17,
+  "primaryGapReason": "bounded_live_ohio_education_leaf_probe_recovers_45_strong_and_23_partial_counties_but_20_counties_still_unresolved",
+  "lessonAdded": true
+}

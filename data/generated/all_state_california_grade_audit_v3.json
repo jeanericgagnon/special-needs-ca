@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T23:59:30.000Z",
+  "generatedAt": "2026-06-25T04:59:49.712Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 29,
@@ -12,7 +12,7 @@
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a Nebraska office-region lesson: a sibling first-party county polygon office-region layer can clear local office routing even when the generic wrapper page is weak.",
+  "lessonsUpdate": "Ohio live education leaf probe sharpened blocked county-grade coverage.",
   "states": [
     {
       "stateId": "alabama",
@@ -2461,11 +2461,11 @@
       "legacyManualReviewRate": 50,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 88,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 91,
       "dbMetrics": {
         "state_id": "ohio",
         "state_code": "OH",
@@ -2504,7 +2504,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_leaf_inventory_still_root_only",
+        "district_or_county_education_routing": "blocked_live_exact_leaf_probe_partial_county_coverage",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2514,8 +2514,8 @@
         "county_local_disability_resources": "verified_live_official_county_jfs_directory"
       },
       "packetGenerated": true,
-      "packetBatch": "batch331_ohio_live_root_recovery_v1",
-      "packetPrimaryGapReason": "live_ohio_county_jfs_directory_now_verifies_88_counties_while_education_inventory_remains_root_only",
+      "packetBatch": "batch332_ohio_education_live_leaf_probe_v1",
+      "packetPrimaryGapReason": "bounded_live_ohio_education_leaf_probe_recovers_45_strong_and_23_partial_counties_but_20_counties_still_unresolved",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

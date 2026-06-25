@@ -428,3 +428,6 @@
 
 ### A County Polygon Office-Region Layer Can Clear Local Office Routing Even When The Generic Wrapper Is Weak
 *   **Lesson:** If the generic state office wrapper is weak but a sibling first-party program stack publicly links an official county polygon office-region service with county names, assigned office, address, phone, hours, and `Counties Served` fields, that service itself can clear county-grade local office routing. Nebraska cleared once the DHHS N-FOCUS TANF `Employment First (EF) Offices` lane exposed the official `CFS_EF_OfficeRegions` layer covering all 93 counties.
+
+### Bounded Homepage Plus Sitemap Review Can Recover Local Education Leaves Without Broad Search
+*   **Lesson:** If a county or ESC education root is already on disk, do one bounded homepage link pass and one sitemap fallback before treating it as generic-only. Ohio recovered exact same-domain `districts served`, `our schools`, `member districts`, `special education`, and `student services` leaves for 68 counties from existing official roots, while the remaining 22 counties stayed explicitly blocked because their saved roots were dead, unresolvable, transport-broken, or still had no exact local leaf.
