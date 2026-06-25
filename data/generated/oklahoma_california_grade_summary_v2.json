@@ -2,7 +2,7 @@
   "state": "oklahoma",
   "state_code": "OK",
   "state_name": "Oklahoma",
-  "batch": "batch324_oklahoma_kml_access_point_truth_v1",
+  "batch": "batch325_oklahoma_widget_partiality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "live_okdhs_kml_only_yields_45_benefit_capable_counties_while_tanf_only_access_points_and_child_support_only_county_tree_cannot_close_the_remaining_32",
+  "primary_gap_reason": "live_okdhs_public_county_widget_only_publishes_adair_and_alfalfa_while_kml_still_yields_only_45_benefit_capable_counties_and_no_contract_for_remaining_32",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -41,13 +41,13 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "live_okdhs_kml_only_yields_45_benefit_capable_counties_while_tanf_only_access_points_and_child_support_only_tree_do_not_close_remaining_32",
-      "evidence": "Reviewed 2026-06-24 bounded official Oklahoma checks on `https://oklahoma.gov/okdhs/contact-us.html`, the public KML office-map feed at `https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1`, `https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html`, and `https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html`. The live KML preserves 60 placemarks, but only 45 counties now qualify as benefit-capable county-local routing after strict review: 43 placemarks expose an explicit `County Name:` field and only a subset of `Access Point - <County>` rows advertise `SNAP, Child Care, Medical`. TANF-limited access points for Grady, Pittsburg, and Washington do not satisfy the broader county-local disability routing role. The same host still publishes a county tree for Child Support District Offices, which proves county trees are technically possible but does not clear disability/local routing. The DDS area-contact page remains one statewide intake route with no county-served matrix. Oklahoma therefore still lacks county-local proof for the remaining 32 counties: Adair, Alfalfa, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, and Woods.",
+      "failure_code": "okdhs_public_county_widget_is_partial_to_adair_and_alfalfa_while_kml_and_child_support_tree_still_do_not_close_remaining_32",
+      "evidence": "Reviewed 2026-06-25 bounded official Oklahoma checks on `https://oklahoma.gov/okdhs/contact-us.html`, `https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html`, `https://oklahoma.gov/okdhs/contact-us/map2.html`, `https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json`, the public component feed at `https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json`, the public KML office-map feed at `https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1`, `https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html`, and `https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html`. The newly surfaced official county-widget leaves do not close the blocker: `dhsofficelocations.html` canonically lands back on the generic contact-us page, while the live `map2` page exposes a county-widget shell whose public config model only contains county entities for Adair and Alfalfa. The matching public component feed also returns only those same two county entries. The broader public KML still preserves 60 placemarks, but only 45 counties qualify as benefit-capable county-local routing after strict review and TANF-only access points are excluded. The child-support office tree still proves county trees are technically publishable on the same official host, but it remains child-support-only. Oklahoma therefore still lacks truth-safe county-local proof for the remaining 32 counties: Adair, Alfalfa, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.",
       "next_action": "hold_blocked_until_live_oklahoma_human_services_county_export_or_county_owned_local_office_leaves_cover_the_remaining_32_counties"
     }
   ],
   "familyStatuses": {
     "district_or_county_education_routing": "verified_current_official_state_school_directory",
-    "county_local_disability_resources": "blocked_okdhs_kml_partial_county_contract_with_service_limited_access_points"
+    "county_local_disability_resources": "blocked_okdhs_public_county_widget_partial_and_kml_service_limited"
   }
 }

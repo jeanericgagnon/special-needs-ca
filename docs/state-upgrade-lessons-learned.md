@@ -378,3 +378,6 @@
 
 ### Live Roots And Sitemaps Do Not Clear A Directory Lane When The Rendered Leaves Still 404
 *   **Lesson:** A recovered official root, `robots.txt`, or `sitemap.xml` is only discovery evidence. Ohio JFS and Medicaid are publicly alive again, and the JFS sitemap even advertises 98 `cdjfs-*` leaves across 88 county slugs, but the rendered `job-family-services-directory` page, the `about/local-agencies-directory` root, Ohio search results, and sampled `cdjfs-*` county leaves all still resolve to public 404 pages, so the county-local family stays blocked until a rendered successor contract works.
+
+### Public County Widgets Can Be Much Narrower Than The Backing Map Feed
+*   **Lesson:** If an official county widget points at a public config page, inspect that config directly instead of assuming it matches the backing map feed. Oklahoma Human Services exposed a live county-map widget, but its public `mapconfig2` model only published county entries for Adair and Alfalfa even while the separate public KML still exposed 60 placemarks and only 45 benefit-capable county contracts.
