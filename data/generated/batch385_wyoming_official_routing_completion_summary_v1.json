@@ -1,0 +1,27 @@
+{
+  "batch": "batch385_wyoming_official_routing_completion_v1",
+  "state": "wyoming",
+  "classification_before": "COMPLETE",
+  "classification_after": "COMPLETE",
+  "resolved_families": [
+    "special_education_idea_part_b",
+    "district_or_county_education_routing",
+    "parent_training_information_center",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_sources": [
+    "https://edu.wyoming.gov/parents/special-education/",
+    "https://edu.wyoming.gov/parents/special-education/idea/",
+    "https://edu.wyoming.gov/parents/special-education/parent-resources/",
+    "https://www.acsd1.org/page/special-services/",
+    "https://sites.google.com/ccsd1schools.net/special-services/home",
+    "https://www.bighorn1.com/sitemap.xml",
+    "https://www.lsc.gov/grants/our-grantees",
+    "https://www.lsc.gov/grants/our-grantees/legal-aid-wyoming-inc-program-profile",
+    "https://health.wyo.gov/healthcarefin/hcbs/",
+    "https://health.wyo.gov/healthcarefin/hcbs/contacts-and-important-links/",
+    "https://health.wyo.gov/wp-content/uploads/2025/09/BES-Caseloads-Effective-10.2025.pdf",
+    "https://health.wyo.gov/behavioralhealth/early-intervention-education-program-eiep/find-a-center/"
+  ]
+}
