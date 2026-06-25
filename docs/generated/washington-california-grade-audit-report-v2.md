@@ -1,10 +1,10 @@
-# Washington California-Grade Batch 89 Report v1
+# Washington California-Grade Audit Report v2
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 67
+- completeness_pct: 91
 - county_count: 39
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: official_dshs_local_offices_are_public_but_reviewed_pages_do_not_preserve_a_county_to_office_or_service_area_contract
 
 ## Family status
 
@@ -13,21 +13,18 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- district_or_county_education_routing: verified_state_grade (Reviewed 2026-06-25 the official OSPI `Websites and Contact Info` district directory and the OSPI `Educational Service Districts (ESD)` page. The live OSPI directory says `This page lists websites and addresses for school districts, charter schools, tribal schools, and ESDs`, exposes public `District or Entity` and `ESD` columns, and publicly maps district rows such as Aberdeen -> 113, Adna -> 113, Almira -> 101, Anacortes -> 189, Auburn -> 121, and Bellingham -> 189. The companion official ESD page publishes named ESD offices, addresses, and downloadable `School Districts and ESDs` maps. This replaces Washington's old statewide education fallback with a current official district-to-ESD routing surface on the OSPI host.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
-- protection_and_advocacy: missing (no credible current evidence)
+- protection_and_advocacy: verified_state_grade (Reviewed 2026-06-25 the live first-party Disability Rights Washington homepage. The page heading says `Washington's Protection and Advocacy System`, and the body says `Disability Rights Washington is a private non-profit organization that protects the rights of people with disabilities statewide.` This now supplies direct first-party protection-and-advocacy designation evidence for Washington.)
 - parent_training_information_center: verified_state_grade (reviewed first-party WAPAVE artifact explicitly preserves the Parent Training and Information Program (PTI) on the live domain)
-- legal_aid: missing (no credible current evidence)
+- legal_aid: verified_state_grade (Reviewed 2026-06-25 the live first-party Washington Law Help homepage plus its page metadata. The page is visibly `Maintained by Northwest Justice Project`, and the reviewed page metadata and JSON-LD describe Washington Law Help as a public library of free legal information in Washington State with a Northwest Justice Project contact path. This supplies current first-party statewide legal-help evidence for Washington.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- county_local_disability_resources: blocked_official_local_office_locator_without_county_contract (Reviewed 2026-06-25 one more bounded official county-local pass on DSHS. The official `Office Locator` page publicly supports lookup by `zip code, city, or county` and preserves county-named local office cards such as `Okanogan County Community Services Office`, `Grays Harbor County DDCS Field Office`, `Kitsap County DDCS Field Office`, `Lewis County DDCS Field Office`, and `Whitman County DDA Field Office`, plus multi-county cards such as `Tri County-Colville Community Service Office` and `Tri County DDA Field Office`. Individual DSHS office detail pages confirm official addresses and phone numbers for county-named leaves like Whitman County DDA Field Office in Colfax and Tri County DDA Field Office in Colville. The companion `ESA Find an Office` page also says the Community Services Division serves the public through a network of 52 local Community Services Offices. But the reviewed public DSHS pages still do not preserve a complete county-to-office assignment table or an explicit service-area contract, and the office locator remains a search or locator surface rather than a reviewable county routing crosswalk. Because the instructions forbid inferring local routing from nearest-office or geodistance behavior, Washington's county-local disability family remains blocked.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 32 generic roots need leaf verification
-- protection_and_advocacy: missing_required_source_family :: Protection and advocacy has no strong California-grade evidence for Washington.
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for Washington.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 4 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 32 generic roots need leaf verification
+- county_local_disability_resources: official_local_office_locator_exists_but_no_public_county_to_office_or_service_area_contract :: Reviewed 2026-06-25 one more bounded official county-local pass on DSHS. The official `Office Locator` page publicly supports lookup by `zip code, city, or county` and preserves county-named local office cards such as `Okanogan County Community Services Office`, `Grays Harbor County DDCS Field Office`, `Kitsap County DDCS Field Office`, `Lewis County DDCS Field Office`, and `Whitman County DDA Field Office`, plus multi-county cards such as `Tri County-Colville Community Service Office` and `Tri County DDA Field Office`. Individual DSHS office detail pages confirm official addresses and phone numbers for county-named leaves like Whitman County DDA Field Office in Colfax and Tri County DDA Field Office in Colville. The companion `ESA Find an Office` page also says the Community Services Division serves the public through a network of 52 local Community Services Offices. But the reviewed public DSHS pages still do not preserve a complete county-to-office assignment table or an explicit service-area contract, and the office locator remains a search or locator surface rather than a reviewable county routing crosswalk. Because the instructions forbid inferring local routing from nearest-office or geodistance behavior, Washington's county-local disability family remains blocked.
 
 ## Verified source samples
 
@@ -36,25 +33,23 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.washington.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.washington.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.k12.wa.us/student-success/special-education
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.k12.wa.us/student-success/special-education
+- district_or_county_education_routing: verified_state_grade; samples=4; first=https://ospi.k12.wa.us/about-ospi/about-school-districts/websites-and-contact-info
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.dshs.wa.gov/dda
-- protection_and_advocacy: missing; samples=0
+- protection_and_advocacy: verified_state_grade; samples=2; first=https://disabilityrightswa.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://wapave.org/parent-training-and-information-program/
-- legal_aid: missing; samples=0
+- legal_aid: verified_state_grade; samples=3; first=https://www.washingtonlawhelp.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://dhhs.washington.gov/locations
+- county_local_disability_resources: blocked_official_local_office_locator_without_county_contract; samples=4; first=https://www.dshs.wa.gov/office-locations
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] protection_and_advocacy: author_or_verify_statewide_source_family
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [critical] county_local_disability_resources: hold_blocked_until_washington_publishes_reviewable_county_to_office_or_service_area_contract
 
-## Completion decision
+## Repair decision
 
-- Washington no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide PTI evidence on disk instead of only weak inventory hints.
-- WAPAVE now truthfully satisfies the statewide PTI family because the reviewed first-party artifact explicitly preserves the Parent Training and Information Program (PTI) on the live domain.
-- Washington still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, county/local disability resources still depend on statewide locator-derived office evidence instead of reviewed county-grade local-office proof, and reviewed first-party P&A plus legal-aid artifacts are still missing on disk.
-- Washington is therefore terminal BLOCKED, not COMPLETE.
+- Washington remains `BLOCKED` and `index_safe=false`.
+- `district_or_county_education_routing` now clears because OSPI publishes a live district directory with district-to-ESD assignments plus downloadable official school-district and ESD maps.
+- `protection_and_advocacy` now clears because Disability Rights Washington explicitly identifies itself as Washington's Protection and Advocacy System on the live first-party homepage.
+- `legal_aid` now clears because Washington Law Help preserves a live first-party Northwest Justice Project legal-help route for Washington.
+- `county_local_disability_resources` is the only remaining blocker. DSHS publishes real local office leaves, but the reviewed public surfaces still do not preserve a reviewable county-to-office assignment or service-area contract, so the family cannot be cleared without forbidden locator inference.

@@ -7,21 +7,17 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 39,
-  "completeness_pct": 67,
-  "strong_critical_families": 8,
-  "weak_critical_families": 3,
-  "missing_critical_families": 1,
+  "completeness_pct": 91,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
+  "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "generic_or_statewide_evidence_used_where_local_required",
+  "primary_gap_reason": "official_dshs_local_offices_are_public_but_reviewed_pages_do_not_preserve_a_county_to_office_or_service_area_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "protection_and_advocacy",
-    "legal_aid"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -30,6 +26,9 @@
     "special_education_idea_part_b",
     "district_or_county_education_routing",
     "vocational_rehabilitation_pre_ets",
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid",
     "able_program",
     "ssi_ssa_federal_reference",
     "county_local_disability_resources"
@@ -42,32 +41,11 @@
   ],
   "final_blockers": [
     {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Washington still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Washington county/local disability resources still depend on statewide locator-derived office evidence instead of reviewed county-grade local-office proof.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
-      "family": "protection_and_advocacy",
-      "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Washington still lacks any reviewed first-party protection-and-advocacy designation artifact on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
-    },
-    {
-      "family": "legal_aid",
-      "severity": "major",
-      "failure_code": "missing_required_source_family",
-      "evidence": "Washington still lacks any reviewed first-party or authoritative statewide legal-aid artifact on disk.",
-      "next_action": "author_or_verify_statewide_source_family"
+      "failure_code": "official_local_office_locator_exists_but_no_public_county_to_office_or_service_area_contract",
+      "evidence": "Reviewed 2026-06-25 one more bounded official county-local pass on DSHS. The official `Office Locator` page publicly supports lookup by `zip code, city, or county` and preserves county-named local office cards such as `Okanogan County Community Services Office`, `Grays Harbor County DDCS Field Office`, `Kitsap County DDCS Field Office`, `Lewis County DDCS Field Office`, and `Whitman County DDA Field Office`, plus multi-county cards such as `Tri County-Colville Community Service Office` and `Tri County DDA Field Office`. Individual DSHS office detail pages confirm official addresses and phone numbers for county-named leaves like Whitman County DDA Field Office in Colfax and Tri County DDA Field Office in Colville. The companion `ESA Find an Office` page also says the Community Services Division serves the public through a network of 52 local Community Services Offices. But the reviewed public DSHS pages still do not preserve a complete county-to-office assignment table or an explicit service-area contract, and the office locator remains a search or locator surface rather than a reviewable county routing crosswalk. Because the instructions forbid inferring local routing from nearest-office or geodistance behavior, Washington's county-local disability family remains blocked.",
+      "next_action": "hold_blocked_until_washington_publishes_reviewable_county_to_office_or_service_area_contract"
     }
   ]
 }

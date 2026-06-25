@@ -1,0 +1,13 @@
+{
+  "state": "washington",
+  "state_code": "WA",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "repaired_families": [
+    "district_or_county_education_routing",
+    "protection_and_advocacy",
+    "legal_aid"
+  ],
+  "remaining_blocker_family": "county_local_disability_resources",
+  "remaining_blocker_code": "official_local_office_locator_exists_but_no_public_county_to_office_or_service_area_contract"
+}
