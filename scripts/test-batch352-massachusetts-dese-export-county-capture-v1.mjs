@@ -41,7 +41,7 @@ assert.equal(summary.index_safe, false);
 assert.equal(summary.completeness_pct, 92);
 assert.equal(summary.strong_critical_families, 11);
 assert.equal(summary.weak_critical_families, 1);
-assert.equal(summary.primary_gap_reason, 'official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains');
+assert.equal(summary.primary_gap_reason, 'official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved');
 assert.deepEqual(summary.critical_gap_families, ['county_local_disability_resources']);
 assert.equal(summary.familyStatuses.district_or_county_education_routing, 'verified_county_grade');
 
@@ -51,7 +51,9 @@ assert.match(educationGap.status_reason, /DESE district export/i);
 assert.match(educationGap.status_reason, /covered all 14 Massachusetts counties/i);
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyGap.family_status, 'blocked_live_dds_browser_lane_without_raw_county_contract');
+assert.equal(countyGap.family_status, 'blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved');
+assert.match(countyGap.status_reason, /Suffolk County is still unresolved/i);
+assert.match(countyGap.status_reason, /HTTP 403 `Not allowed` shell/i);
 
 assert.equal(failureRows.length, 1);
 assert.equal(failureRows[0].family, 'county_local_disability_resources');
@@ -71,7 +73,7 @@ assert.equal(nextRows[0].priority_rank, 1);
 const queueRow = queueRows.find((row) => row.state === 'massachusetts');
 assert.equal(queueRow.completeness_pct, 92);
 assert.equal(queueRow.weak_critical_families, 1);
-assert.equal(queueRow.primary_gap_reason, 'official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains');
+assert.equal(queueRow.primary_gap_reason, 'official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved');
 
 assert.equal(countyCapture.export_rows, 515);
 assert.equal(countyCapture.exact_basename_matches, 406);
@@ -88,9 +90,10 @@ assert.equal(allStateMass.completenessPct, 92);
 assert.equal(allStateMass.familyStatuses.district_or_county_education_routing, 'verified_county_grade');
 
 assert.match(stateReport, /Education is no longer a blocker/i);
-assert.match(allStateReport, /Massachusetts remains blocked only on county-local DDS routing/i);
+assert.match(allStateReport, /Massachusetts remains BLOCKED\/index-safe=false, but the DDS county-local blocker is now narrowed to a Suffolk-only remainder/i);
 assert.match(handoff, /## Current Focus State: Massachusetts/);
-assert.match(handoff, /education no longer blocks the state/i);
+assert.match(handoff, /county_local_disability_resources` is the only Massachusetts blocker left/i);
+assert.match(handoff, /13 of 14 counties/i);
 assert.match(lessons, /### Official Exports Plus Official Geography Crosswalks Can Clear County Routing/);
 
 console.log('test-batch352-massachusetts-dese-export-county-capture-v1: ok');

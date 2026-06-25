@@ -30,7 +30,7 @@ const OUTPUTS = {
 };
 
 const PRIMARY_GAP_REASON =
-  'official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains';
+  'official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved';
 const EDUCATION_STATUS = 'verified_county_grade';
 const EDUCATION_REASON =
   'Massachusetts education now clears county-grade routing from reviewed official structured evidence. The live DESE district export at `search_export.aspx` returns a real `search.xls` attachment with district rows that preserve `Org Name`, `Org Type`, `Function`, `Contact Name`, `Address 1`, `Town`, `State`, `Zip`, `Phone`, and `Grade` fields. A bounded exact-basename join from the export `Town` field into the official Census TIGERweb Massachusetts county-subdivision layer matched 406 rows directly and still covered all 14 Massachusetts counties, so county-grade district routing is now preserved by reviewed official export-plus-crosswalk evidence rather than a statewide fallback.';
@@ -38,14 +38,15 @@ const EDUCATION_QUERY_BASIS =
   'Reviewed 2026-06-25 the live official DESE district export and the live official Census TIGERweb county subdivision layer, then preserved a bounded county coverage audit from the exact export `Town` field.';
 const EDUCATION_SAMPLE_EVIDENCE =
   'The official `search_export.aspx` attachment returns `application/excel` with fields including `Org Name`, `Org Type`, `Function`, `Contact Name`, `Address 1`, `Town`, `State`, `Zip`, `Phone`, and `Grade`. A bounded exact-basename join against the official TIGERweb county subdivision layer covered all 14 Massachusetts counties.';
+const COUNTY_LOCAL_STATUS =
+  'blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved';
 const COUNTY_LOCAL_FAILURE_CODE =
-  'live_dds_browser_lane_exists_but_exact_raw_pages_403_and_no_county_crosswalk_exists';
+  'reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_official_locality_contract_missing';
 const COUNTY_LOCAL_NEXT =
-  'hold_massachusetts_dds_until_county_crosswalk_or_reviewed_browser_capture_exists';
+  'hold_massachusetts_dds_until_suffolk_locality_contract_exists';
 const COUNTY_LOCAL_REASON =
-  'Massachusetts county-local routing remains blocked. The live Mass.gov DDS org page, locations index, and interactive regional map are real first-party surfaces, but the low-token raw lane still does not preserve any county field, county export, or machine-readable town-to-office contract that can be replayed directly from disk. Until an official county contract or a reviewed browser/cached locality capture is preserved, county-local rows must remain blocked.';
-const MASSACHUSETTS_BLOCKED_REASON =
-  'official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_locations_lane_still_lacks_county_capture_or_export';
+  'Massachusetts county-local routing remains blocked, but the remaining gap is now precise. The live Mass.gov DDS locations lane preserves 21 reviewed area-office cards with explicit `This area office serves the following towns and communities:` text, and the saved town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. Suffolk County is still unresolved because bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck to the exact `/locations` endpoint still returns the same HTTP 403 `Not allowed` shell instead of a replayable county export.';
+const MASSACHUSETTS_BLOCKED_REASON = PRIMARY_GAP_REASON;
 const LESSON_HEADING =
   '### Official Exports Plus Official Geography Crosswalks Can Clear County Routing';
 const LESSON_BODY =
@@ -179,7 +180,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '- Massachusetts remains BLOCKED and index_safe=false.',
     '- Education is no longer a blocker: the official DESE district export plus the official Census TIGERweb county subdivision layer now preserves county-grade district routing across all 14 Massachusetts counties.',
-    '- County-local remains blocked because the live DDS locations and interactive-map lane still preserves no raw county field, county export, or machine-readable locality contract in the low-token path.',
+    '- County-local remains blocked because Suffolk County still lacks a preserved official DDS locality contract even though the reviewed DDS area-office locality capture now clears the other 13 Massachusetts counties.',
     '- Future Massachusetts work should focus only on the DDS county-local lane unless a new official county-grade education contract supersedes the export-plus-crosswalk method.',
   ].join('\n') + '\n';
 }
@@ -187,8 +188,8 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
 function updateAllStateReport(reportText) {
   const lines = reportText.split('\n');
   const updated = lines.map((line) => {
-    if (line.startsWith('- Massachusetts remains blocked on')) {
-      return '- Massachusetts remains blocked only on county-local DDS routing: the official DESE district export plus the official Census TIGERweb county subdivision layer now clears education county coverage, but the live DDS locations lane still preserves no county-grade export or reusable locality capture in the low-token raw path.';
+    if (line.startsWith('- Massachusetts remains blocked on') || line.startsWith('- Massachusetts remains BLOCKED/index-safe=false,')) {
+      return '- Massachusetts remains BLOCKED/index-safe=false, but the DDS county-local blocker is now narrowed to a Suffolk-only remainder after reviewed locality capture cleared the other 13 counties.';
     }
     return line;
   });
@@ -197,7 +198,7 @@ function updateAllStateReport(reportText) {
 
 function updateHandoff(handoffText) {
   const blockedBullet =
-    '- Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_locations_lane_still_lacks_county_capture_or_export`';
+    '- Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`';
   let updated = handoffText.replace(
     /^- Massachusetts: .*$/m,
     blockedBullet,
@@ -208,13 +209,13 @@ function updateHandoff(handoffText) {
     '',
     '### Blocker Reason',
     '',
-    '`county_local_disability_resources` is now the only remaining Massachusetts critical blocker. Education no longer blocks the state: the reviewed official DESE `search_export.aspx` attachment preserves structured district rows with `Town`, address, phone, and grade fields, and a bounded exact-basename join against the official Census TIGERweb county subdivision layer covers all 14 Massachusetts counties. The remaining blocker is the live DDS local-routing lane on Mass.gov. The DDS org page, locations index, and interactive regional map are real first-party surfaces, but they still expose no raw county field, no county export, and no machine-readable town-to-office contract that the low-token raw path can preserve directly on disk.',
+    '`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is Suffolk County. Bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` still returns the same HTTP 403 `Not allowed` shell in the low-token lane, so no replayable county export has been recovered yet.',
     '',
     '### Exact Evidence Needed',
     '',
-    '- Any official Mass.gov DDS surface that exposes county names, county-served labels, or a county-keyed export for DDS regional or area offices.',
-    '- Any reviewable browser/cached capture from the live DDS interactive map that preserves town-or-city to office mappings strongly enough to truthfully bridge all 14 counties.',
-    '- Any exact first-party DDS locations child page or API response that makes locality-to-office coverage machine-readable without relying on guessed paths.',
+    '- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.',
+    '- Any current official Mass.gov DDS county field or county-grade export that covers Suffolk directly instead of requiring inference from office names or region labels.',
+    '- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston, Chelsea, Revere, Winthrop, Charlestown, or other Suffolk communities inside a single reviewable office contract.',
     '',
     '### Useful Official URLs Already Tried',
     '',
@@ -226,22 +227,18 @@ function updateHandoff(handoffText) {
     '',
     '### Top Remaining Source-Scouting Targets',
     '',
-    '- Any live Mass.gov DDS county field, county export, or locality-to-office payload that can be preserved without guessing hidden endpoints.',
-    '- Any reviewed browser/cached DDS interactive-map capture that truthfully maps Massachusetts towns or cities to area offices and can then be bridged to counties.',
-    '- Any exact DDS child location page that adds county-served labels or a county routing contract.',
+    '- Any reviewed Mass.gov DDS child page or export that preserves a Suffolk-serving town/community list directly.',
+    '- Any reviewed Mass.gov DDS locality or search surface that names a Suffolk community inside an office-serving contract.',
+    '- Any reviewed official cached/exported DDS locality artifact that can be replayed from disk and tied directly to Suffolk County without inference.',
     '',
     '## Next State Order After Massachusetts',
     '',
-    '1. New Mexico',
-    '2. South Dakota',
-    '3. Rhode Island',
-    '4. Virginia',
-    '5. West Virginia',
-    '6. North Dakota',
-    '7. Wisconsin',
-    '8. Washington',
-    '9. Tennessee',
-    '10. Vermont',
+    '1. Alaska',
+    '2. Maine',
+    '3. Idaho',
+    '4. New Mexico',
+    '5. Arizona',
+    '6. New Hampshire',
   ].join('\n');
 
   updated = updated.replace(/## Current Focus State:[\s\S]*$/m, replacementSection);
@@ -273,7 +270,7 @@ export function generateBatch352MassachusettsDeseExportCountyCaptureV1() {
     familyStatuses: {
       ...summary.familyStatuses,
       district_or_county_education_routing: EDUCATION_STATUS,
-      county_local_disability_resources: 'blocked_live_dds_browser_lane_without_raw_county_contract',
+      county_local_disability_resources: COUNTY_LOCAL_STATUS,
     },
   };
 
@@ -288,7 +285,7 @@ export function generateBatch352MassachusettsDeseExportCountyCaptureV1() {
     if (row.family === 'county_local_disability_resources') {
       return {
         ...row,
-        family_status: 'blocked_live_dds_browser_lane_without_raw_county_contract',
+        family_status: COUNTY_LOCAL_STATUS,
         status_reason: COUNTY_LOCAL_REASON,
       };
     }
@@ -374,7 +371,7 @@ export function generateBatch352MassachusettsDeseExportCountyCaptureV1() {
           weak_critical_families: 1,
           primary_gap_reason: PRIMARY_GAP_REASON,
           recommended_batch: 'hold_for_dds_county_contract_or_reviewed_capture',
-          repair_lane: 'blocked_until_dds_county_contract_or_reviewed_capture',
+          repair_lane: 'repair_from_state_packet',
         }
       : row
   ));
@@ -425,7 +422,7 @@ export function generateBatch352MassachusettsDeseExportCountyCaptureV1() {
             familyStatuses: {
               ...state.familyStatuses,
               district_or_county_education_routing: EDUCATION_STATUS,
-              county_local_disability_resources: 'blocked_live_dds_browser_lane_without_raw_county_contract',
+              county_local_disability_resources: COUNTY_LOCAL_STATUS,
             },
             packetBatch: 'batch352_massachusetts_dese_export_county_capture_v1',
             packetPrimaryGapReason: PRIMARY_GAP_REASON,
