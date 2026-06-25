@@ -479,3 +479,6 @@
 
 ### A Working PDF Stack Still Does Not Turn Support Letters Into County Contracts
 *   **Lesson:** When a blocker says the PDF lane is unavailable, re-check the exact official PDFs once the bundled runtime can parse or render them, but still hold the family closed if the files are only advocacy or support letters. Arizona's AHCCCS UniversityFamilyCare bundle became reviewable with `pypdf` and `pdftoppm`, yet the files were still non-contract support letters rather than county-routing evidence.
+
+### A Generic-Titled ASP.NET Result Surface Can Still Contain Real Rows
+*   **Lesson:** If an ASP.NET bridge resolves to a generic search title, verify the rendered body before declaring the replay empty. Massachusetts DESE `search.aspx` still looked like a generic `Profiles Search` shell, but the exact hidden-field replay now rendered real district rows with superintendent and grades-served data; the real blocker was still the absence of county fields or export, not an empty result surface.

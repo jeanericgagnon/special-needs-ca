@@ -8,7 +8,7 @@
     "statewideFallbackRows": 14,
     "statewideWebsiteRows": 14,
     "countyRowCount": 14,
-    "realPostbackResultSurface": false,
+    "realPostbackResultSurface": true,
     "countyMappingFieldsPresent": false
   },
   "exact_target_goals": [
@@ -22,9 +22,9 @@
     "https://www.doe.mass.edu/sped/"
   ],
   "root_domains_to_review": [
-    "official DESE hidden bridge and final rendered search surfaces only",
-    "do not assume the hidden bridge still materializes district rows unless a fresh exact replay proves it",
-    "do not infer county mapping from district names like Bristol County Agricultural without an official county-keyed contract"
+    "official DESE hidden bridge and final rendered result surfaces only",
+    "the hidden replay still renders real district rows, but do not treat those rows as county-grade without an official county field, selector, or export",
+    "do not infer county mapping from district names like Bristol County Agricultural without a county-keyed contract"
   ],
   "affected_counties": [
     "barnstable-ma",
@@ -42,5 +42,5 @@
     "suffolk-ma",
     "worcester-ma"
   ],
-  "packet_complete_when": "Massachusetts can reopen education only when an official DESE surface preserves a county-to-district contract or a reviewed browser/cached capture preserves local district rows that can be truthfully bridged to county rows."
+  "packet_complete_when": "Massachusetts can reopen education only when an official DESE surface preserves a county-to-district contract or a reviewed browser/cached capture preserves county-keyed local district rows."
 }

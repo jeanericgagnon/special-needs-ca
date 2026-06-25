@@ -1,0 +1,11 @@
+{
+  "batch": "batch351_massachusetts_dese_row_truth_refresh_v1",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "hidden_bridge_exists": true,
+  "hidden_replay_renders_real_rows": true,
+  "rendered_result_has_county_fields": false,
+  "live_school_finder_has_county_fields": false,
+  "result": "real_dese_rows_without_county_contract"
+}

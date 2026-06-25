@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_azed_remaining_three_public_domains_still_lack_role_leaves`
 - Idaho: `remaining_idaho_district_roots_now_split_between_live_homepage_sitemap_surfaces_without_role_bearing_leaves_and_one_blank_shell_challenge_after_bounded_exact_leaf_review`
 - Maine: `official_dhhs_office_page_and_same_host_contact_sitemap_surfaces_still_expose_no_county_or_service_area_crosswalk`
-- Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
+- Massachusetts: `exact_dese_hidden_postback_replay_materializes_district_rows_but_zero_county_contract_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
@@ -28,42 +28,42 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the sharper Arizona blocker. Reviewed 2026-06-25 the exact official AHCCCS UniversityFamilyCare PDF bundle with the bundled PDF runtime. `Pima.pdf` extracts as a support letter from Pima Community Access Program, and `PimaCountyAdmin.pdf` plus `CountyAdminOffice.pdf` render as Pima County Administrator support letters for the University Family Care merger. Those official PDFs preserve county and administrator identity, but they still do not expose office assignments, service areas, county-admin routing, or a county-to-office contract. Arizona education remains separately blocked on three reviewed public district domains that still lack role-bearing local leaves, so Arizona stays blocked and not index-safe.
+`district_or_county_education_routing` remains the highest-priority Massachusetts blocker, but the exact DESE truth is now corrected. The official `search_link.aspx` bridge still auto-posts into `search.aspx`, and a fresh exact replay of that hidden payload still renders real district rows with superintendent and grades-served data. But the rendered result surface still has zero county column, zero county filter, and no county-keyed export contract. The separate live `get_closest_orgs.aspx` School Finder is still address/city/town based only. County-local remains separately blocked because the DDS locations and interactive-map pages are still raw-403 in the low-token lane and still lack a county export or county crosswalk.
 
 ### Exact Evidence Needed
 
-- Any official Arizona county-admin office directory, office assignment table, service-area crosswalk, or county-to-office contract that is public and reviewable.
-- Any newly published district-owned special-education, student-services, 504, or procedural-safeguards leaf on the final three unresolved education domains.
+- Any official DESE county-to-district contract, county selector, county column, or county-keyed export.
+- Any official DDS county crosswalk, county-served export, or machine-readable county-to-office contract.
+- Or, a reviewed browser/cached locality capture from DESE or DDS that can be truthfully bridged to counties.
 
 ### Useful Official URLs Already Tried
 
-- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
-- [Pima County Administrator PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
-- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
-- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
-- [Coconino wp-json search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
-- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
-- [Yavapai County High School contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
+- [DESE district-directory bridge](https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238)
+- [DESE Profiles Search results](https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238)
+- [DESE School Finder](https://profiles.doe.mass.edu/search/get_closest_orgs.aspx)
+- [DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official AHCCCS, DES, or county-admin surface that exposes real county-to-office routing instead of merger-support letters.
-- Any newly published role-bearing local education leaf on Coconino County Accommodation School District, Mohave Accelerated Schools, or Yavapai County High School.
+- Any official Massachusetts county-keyed DESE export or selector.
+- Any official DDS county crosswalk or locality export that can be bridged to county rows without inference.
+- Any reviewed browser/cached locality capture from DESE or DDS that preserves county-safe routing evidence.
 
-## Next State Order After Arizona
+## Next State Order After Massachusetts
 
-1. Massachusetts
-2. New Mexico
-3. South Dakota
-4. Rhode Island
-5. Virginia
-6. West Virginia
-7. North Dakota
-8. Wisconsin
-9. Washington
-10. Tennessee
+1. New Mexico
+2. South Dakota
+3. Rhode Island
+4. Virginia
+5. West Virginia
+6. North Dakota
+7. Wisconsin
+8. Washington
+9. Tennessee
+10. Vermont
