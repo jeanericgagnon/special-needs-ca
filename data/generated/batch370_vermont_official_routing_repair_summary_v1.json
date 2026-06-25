@@ -1,0 +1,13 @@
+{
+  "state": "Vermont",
+  "state_code": "VT",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "repaired_families": [
+    "district_or_county_education_routing",
+    "protection_and_advocacy",
+    "parent_training_information_center"
+  ],
+  "remaining_blocker_family": "county_local_disability_resources",
+  "remaining_blocker_code": "official_ahs_district_jurisdiction_codes_exist_but_public_office_crosswalk_is_unavailable_or_403"
+}
