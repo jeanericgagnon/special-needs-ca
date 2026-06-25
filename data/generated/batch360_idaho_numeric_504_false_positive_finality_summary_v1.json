@@ -1,0 +1,19 @@
+{
+  "batch": "batch360_idaho_numeric_504_false_positive_finality_v1",
+  "generated_at": "2026-06-25T17:20:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "district_or_county_education_routing",
+  "hosts_checked": [
+    "https://www.camascountyschools.org/",
+    "https://www.clarkcountyschools161.org/",
+    "https://www.sd215.net/",
+    "https://shoshonesd.org/"
+  ],
+  "sitemap_or_robots_checked": 4,
+  "new_role_bearing_leaf_found": false,
+  "camas_504_hit_classification": "numeric_root_noise_without_same_host_leaf",
+  "shoshone_504_hit_classification": "svg_path_numeric_noise_without_same_host_leaf",
+  "result": "remaining_idaho_district_roots_still_source_final_for_bounded_live_review"
+}
