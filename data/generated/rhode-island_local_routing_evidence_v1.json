@@ -1,0 +1,83 @@
+{
+  "state": "rhode-island",
+  "generated_at": "2026-06-26",
+  "education": {
+    "expected_public_lea_count": 66,
+    "reviewed_entities": [
+      {
+        "entity": "Barrington",
+        "source_url": "https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=43",
+        "authority": "Rhode Island Department of Elementary and Secondary Education",
+        "review_date": "2026-06-26",
+        "finding": "direct_local_special_education_contact_present",
+        "evidence_excerpt": "Kristen Matthes Title: Director of Special Education Role(s): Special Education Director"
+      },
+      {
+        "entity": "International Charter",
+        "source_url": "https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=62",
+        "authority": "Rhode Island Department of Elementary and Secondary Education",
+        "review_date": "2026-06-26",
+        "finding": "ride_leaf_lacks_special_education_role",
+        "evidence_excerpt": "The public LEA detail lists superintendent, business, technology, liaison, and nurse contacts, but no Special Education Director role."
+      },
+      {
+        "entity": "International Charter",
+        "source_url": "https://internationalcharterschool.org/special-education/",
+        "authority": "International Charter School",
+        "review_date": "2026-06-26",
+        "finding": "district_owned_special_education_routing_present",
+        "evidence_excerpt": "Contact Katie Nerstheimer, Student Services Director, at 401-721-0824, ext. 216 for more information."
+      },
+      {
+        "entity": "Sheila Skip Nowell Leadership Academy",
+        "source_url": "https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=2856",
+        "authority": "Rhode Island Department of Elementary and Secondary Education",
+        "review_date": "2026-06-26",
+        "finding": "ride_leaf_lacks_special_education_routing",
+        "evidence_excerpt": "The public LEA detail preserves superintendent, guidance, data, and health roles, but no special-education routing role."
+      },
+      {
+        "entity": "Sheila Skip Nowell Leadership Academy",
+        "source_url": "https://www.nowellacademy.org/faculty-staff-",
+        "authority": "Nowell Leadership Academy",
+        "review_date": "2026-06-26",
+        "finding": "district_owned_staff_page_names_special_education_teacher_but_not_routing_contact",
+        "evidence_excerpt": "Abigail McClain ## Special Education Teacher"
+      }
+    ],
+    "blocker_summary": "Public Rhode Island education routing is partially reviewable but still not complete: at least one reviewed public LEA, Sheila Skip Nowell Leadership Academy, lacks a direct public special-education routing contact, and no exhaustive public LEA-by-LEA routing artifact is preserved here."
+  },
+  "county_local": {
+    "reviewed_sources": [
+      {
+        "source_url": "https://dhs.ri.gov/office-locator-tool",
+        "authority": "Rhode Island Department of Human Services",
+        "review_date": "2026-06-26",
+        "finding": "municipality_picker_present_without_cited_assignment_contract",
+        "evidence_excerpt": "City/Town (Select value below and click Apply) ... Select any filter and click on Apply to see results"
+      },
+      {
+        "source_url": "https://dhs.ri.gov/about-us/dhs-offices",
+        "authority": "Rhode Island Department of Human Services",
+        "review_date": "2026-06-26",
+        "finding": "regional_office_inventory_present",
+        "evidence_excerpt": "See below for more information about the DHS Call Center and the DHS regional offices serving Rhode Islanders throughout our State."
+      },
+      {
+        "source_url": "https://bhddh.ri.gov/developmental-disabilities/services-adults/licensed-provider-lists",
+        "authority": "Rhode Island Dept. of Behavioral Healthcare, Developmental Disabilities, and Hospitals",
+        "review_date": "2026-06-26",
+        "finding": "provider_pdf_downloads_present_without_service_area_fields",
+        "evidence_excerpt": "For a printable list of providers, review the licensed DD service provider document (PDF) or detailed provider list table (PDF)."
+      },
+      {
+        "source_url": "https://bhddh.ri.gov/dd-service-provider-list",
+        "authority": "Rhode Island Dept. of Behavioral Healthcare, Developmental Disabilities, and Hospitals",
+        "review_date": "2026-06-26",
+        "finding": "provider_directory_lists_services_not_county_assignments",
+        "evidence_excerpt": "The table lists provider contact information and the services they offer."
+      }
+    ],
+    "blocker_summary": "Reviewed official BHDDH and DHS public lanes still do not preserve a county-to-office, county-to-provider, municipality-to-office, or service-area routing contract suitable for California-grade local disability routing."
+  }
+}
