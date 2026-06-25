@@ -476,3 +476,6 @@
 
 ### Same-Host Contact, Sitemap, And Office Hubs Can Be Enough To Freeze A County-Crosswalk Blocker
 *   **Lesson:** If the official office page, contact root, offices/divisions hub, administrative-offices page, and same-host sitemap all stay public yet none expose county names, service areas, or a county-grade export, treat the host family as source-final for low-token county routing. Maine DHHS stayed office-grade across every bounded same-host follow-up, so more retries would only restate the same missing county crosswalk.
+
+### A Working PDF Stack Still Does Not Turn Support Letters Into County Contracts
+*   **Lesson:** When a blocker says the PDF lane is unavailable, re-check the exact official PDFs once the bundled runtime can parse or render them, but still hold the family closed if the files are only advocacy or support letters. Arizona's AHCCCS UniversityFamilyCare bundle became reviewable with `pypdf` and `pdftoppm`, yet the files were still non-contract support letters rather than county-routing evidence.

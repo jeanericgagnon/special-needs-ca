@@ -2,7 +2,7 @@
   "state": "arizona",
   "state_code": "AZ",
   "state_name": "Arizona",
-  "batch": "batch336_arizona_ahcccs_html_admin_exhaustion_v1",
+  "batch": "batch350_arizona_pdf_support_letter_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,8 +12,8 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves",
-  "recommended_batch": "batch_3_procedure_hardening",
+  "primary_gap_reason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_azed_remaining_three_public_domains_still_lack_role_leaves",
+  "recommended_batch": "hold_for_new_official_county_contract_or_role_leaf",
   "critical_gap_families": [
     "district_or_county_education_routing",
     "county_local_disability_resources"
@@ -47,9 +47,12 @@
     },
     {
       "family": "county_local_disability_resources",
-      "failure_code": "ahcccs_university_familycare_html_page_replays_only_pdf_admin_artifacts_without_html_county_contract",
-      "evidence": "Reviewed 2026-06-24 bounded official Arizona AHCCCS county-local artifacts plus the live HTML oversight family. The public AHCCCS page https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html returned HTTP 200 and explicitly linked `Pima Community Access Program`, `Pima County Administrator's Office`, and `County Administrator's Office`. But those exact county-relevant links only replay to the same PDF artifacts already in the blocker set: https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf, https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf, and https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf. The current repo/runtime still has no installed OCR or reviewable PDF text stack for those files: tesseract, pdftotext, pdftoppm, pypdf, PyPDF2, pdfplumber, fitz, pdfminer, PIL, and pdf2image are absent or not importable. DES also remains challenge-blocked at root, robots.txt, sitemap.xml, and office-locator leaves. Arizona county-local routing therefore now narrows to a committed OCR artifact or a new official HTML county-admin surface, not to more AHCCCS HTML discovery.",
-      "next_action": "keep_county_local_blocked_until_committed_ocr_artifact_or_new_official_html_county_admin_surface_exists"
+      "failure_code": "ahcccs_university_familycare_pdf_bundle_is_parseable_but_only_support_letters_not_county_admin_routing_contract",
+      "evidence": "Reviewed 2026-06-25 exact official Arizona AHCCCS PDF artifacts from https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html using the bundled Codex runtime PDF stack (`pypdf`, `pdfplumber`, `pdfminer`, `pdfinfo`, and `pdftoppm`). `Pima.pdf` returned HTTP 200, extracted cleanly as text, and proved to be a support letter from Michal Goforth, Executive Director of Pima Community Access Program, supporting the University Family Care merger. `PimaCountyAdmin.pdf` and `CountyAdminOffice.pdf` both returned HTTP 200, produced no embedded text via `pypdf`, but rendered cleanly to page images that show Pima County Administrator's Office letterhead, county address `130 W. Congress, Floor 10, Tucson, AZ 85701-1317`, phone `(520) 724-8661`, and a support letter to AHCCCS Director Tom Betlach dated September 5, 2014. None of the three official PDFs is a county office directory, county-admin routing table, service-area crosswalk, or county-to-office contract. DES office surfaces remain challenge-blocked. Arizona county-local therefore remains blocked because the reviewed official PDF bundle is non-contract evidence, not because the PDF parser lane is missing.",
+      "next_action": "hold_county_local_until_new_official_html_or_pdf_county_contract_exists_not_support_letters"
     }
-  ]
+  ],
+  "familyStatuses": {
+    "county_local_disability_resources": "blocked_ahcccs_pdf_bundle_resolves_to_support_letters_without_county_contract"
+  }
 }

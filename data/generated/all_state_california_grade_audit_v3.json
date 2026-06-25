@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T10:00:06.758Z",
+  "generatedAt": "2026-06-25T10:05:48.980Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 33,
@@ -217,12 +217,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_ahcccs_html_lane_replays_only_pdf_admin_artifacts_without_county_contract"
+        "county_local_disability_resources": "blocked_ahcccs_pdf_bundle_resolves_to_support_letters_without_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch336_arizona_ahcccs_html_admin_exhaustion_v1",
-      "packetPrimaryGapReason": "ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch350_arizona_pdf_support_letter_finality_v1",
+      "packetPrimaryGapReason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_azed_remaining_three_public_domains_still_lack_role_leaves",
+      "packetRecommendedBatch": "hold_for_new_official_county_contract_or_role_leaf"
     },
     {
       "stateId": "arkansas",

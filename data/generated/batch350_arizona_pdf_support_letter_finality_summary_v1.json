@@ -1,0 +1,11 @@
+{
+  "batch": "batch350_arizona_pdf_support_letter_finality_v1",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "pdf_runtime_available": true,
+  "text_extractable_support_pdfs": 1,
+  "rendered_image_support_pdfs": 2,
+  "county_contract_found": false,
+  "result": "official_pdf_bundle_is_non_contract_support_evidence"
+}
