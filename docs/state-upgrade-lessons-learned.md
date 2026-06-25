@@ -440,3 +440,6 @@
 
 ### Official 404 Shells Can Still Expose The Real Successor Lane
 *   **Lesson:** If an official 404 shell links a named successor route, verify that exact successor before freezing the blocker. Minnesota DHS disability-services replacements still 404, but the same shell exposed `county-tribal-state-offices.jsp`, which turned the blocker from “no successor found” into the more exact truth that the successor exists but is bot-gated.
+
+### Multiple Live Official Selector Lanes Can Still Collapse Into One App-Side 500 Blocker
+*   **Lesson:** If several official search pages are live, test more than one materialization lane before assuming only one form is broken. Maine DOE kept the contact selector, Superintendent-by-SAU selector, Superintendent-by-Town selector, and workbook all public, but live Bangor submits across those first-party lanes still collapsed into the same generic HTTP 500 shell.

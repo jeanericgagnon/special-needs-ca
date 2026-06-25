@@ -27,13 +27,13 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'maine-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP_REASON = 'official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract';
+const PRIMARY_GAP_REASON = 'official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract';
 
-const EDUCATION_STATUS = 'blocked_live_selector_and_workbook_but_current_search_export_posts_still_return_same_500_shell';
-const EDUCATION_FAILURE_CODE = 'official_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell';
-const EDUCATION_REASON = 'Maine education remains blocked, but the live contract is slightly stronger and cleaner than the older wording. On 2026-06-24 the Primary Contacts By Organization selector, the Town selector, and the official SAU workbook all remained publicly reachable on official Maine DOE hosts. The selector still exposes the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family. But fresh bounded Bangor search and export posts still both return HTTP 500 with the same generic NEO Contact Search error shell, so the county-grade contact materialization lane is still not recovered.';
-const EDUCATION_EVIDENCE = 'Reviewed 2026-06-24 official Maine education sources at https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town, and the official workbook https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx. The selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A3 ]`; the Town selector returned the same live NEO shell; and the workbook remained downloadable from the official DOE host. A bounded HTML inspection still found the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family on the live selector page. But fresh bounded Bangor posts to the same official selector with `OrgId=42`, the live anti-forgery token, and the current named search/export submits both returned HTTP 500 with the same `Sorry, an error occurred while processing your request.` shell. Maine therefore still has a public selector/workbook inventory lane but not a recovered county-grade contact materialization lane.';
-const EDUCATION_NEXT_ACTION = 'preserve_manual_export_or_browser_capture_lane_until_live_first_party_contact_rows_materialize';
+const EDUCATION_STATUS = 'blocked_live_contact_and_superintendent_selectors_but_current_materialization_posts_still_return_same_500_shell';
+const EDUCATION_FAILURE_CODE = 'official_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell';
+const EDUCATION_REASON = 'Maine education remains blocked, but the live official contract is broader and still fails at the same materialization step. On 2026-06-25 the Primary Contacts By Organization selector, the Superintendent by SAU selector, the Superintendent by Town selector, and the official SAU workbook all remained publicly reachable on official Maine DOE hosts. The contact selector still exposes the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family. But fresh bounded Bangor submits across those live first-party lanes still all return the same generic NEO Contact Search HTTP 500 error shell instead of reusable local contact rows, so the county-grade education materialization lane is still not recovered.';
+const EDUCATION_EVIDENCE = 'Reviewed 2026-06-25 official Maine education sources at https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town, and the official workbook https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx. The contact selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A2 ]`; the Superintendent by SAU selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A4 ]`; the Town selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A3 ]`; and the workbook remained downloadable from the official DOE host. A bounded HTML inspection still found the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family on the live contact selector page. But fresh bounded Bangor submits to the live contact search, contact export, Superintendent by SAU, and Superintendent by Town lanes all returned the same `Sorry, an error occurred while processing your request.` HTTP 500 shell. Maine therefore still has a public selector/workbook inventory lane but not a recovered county-grade education contact materialization lane.';
+const EDUCATION_NEXT_ACTION = 'preserve_manual_export_or_browser_capture_lane_until_any_live_first_party_maine_education_rows_materialize';
 
 const COUNTY_STATUS = 'blocked_district_office_locations_with_towns_but_without_county_crosswalk';
 const COUNTY_FAILURE_CODE = 'official_dhhs_office_page_lists_office_towns_but_has_no_county_or_service_area_crosswalk';
@@ -41,8 +41,8 @@ const COUNTY_REASON = 'Maine county-local remains blocked for the same reason as
 const COUNTY_EVIDENCE = 'Reviewed 2026-06-23 live official Maine DHHS District Office Locations page at https://www.maine.gov/dhhs/about/contact/offices. The page preserves district office names, exact office towns and addresses, phones, emails, cross-office program notes, and `Show Map` links for offices such as Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan. But a bounded HTML inspection still exposed zero county names such as Aroostook, Washington, or York, zero county-served labels, and zero service-area fields in the public page itself. The official page therefore remains office-grade evidence without a truthful county-to-office routing contract.';
 const COUNTY_NEXT_ACTION = 'find_official_county_or_service_area_crosswalk_for_named_dhhs_office_towns_or_keep_maine_counties_blocked';
 
-const LESSON_HEADING = '### Live Official Selectors Still Fail Closed If Both Current Named Posts Return The Same 500 Shell';
-const LESSON_BODY = '*   **Lesson:** If a live official selector and workbook are both public, rerun the current named search and export posts before carrying forward an older “maybe recovered” narrative. Maine DOE still exposed a live selector, token, `OrgId`, and `SAUs[*]` field family on June 24, but both current Bangor posts still returned the same HTTP 500 `Sorry, an error occurred while processing your request.` shell.';
+const LESSON_HEADING = '### Multiple Live Official Selector Lanes Can Still Collapse Into One App-Side 500 Blocker';
+const LESSON_BODY = '*   **Lesson:** If several official search pages are live, test more than one materialization lane before assuming only one form is broken. Maine DOE kept the contact selector, Superintendent-by-SAU selector, Superintendent-by-Town selector, and workbook all public, but live Bangor submits across those first-party lanes still collapsed into the same generic HTTP 500 shell.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -102,14 +102,14 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '## Completion decision',
     '',
     '- Maine remains BLOCKED and not index-safe.',
-    '- Education remains blocked because the official selector and workbook are still public, but both current Bangor search/export posts still return the same HTTP 500 error shell instead of reusable local contact rows.',
+    '- Education remains blocked because the official contact selector, superintendent selectors, and workbook are still public, but current Bangor materialization submits across those first-party lanes still return the same HTTP 500 error shell instead of reusable local rows.',
     '- County-local remains blocked because the official DHHS office page still publishes office towns but no county or service-area crosswalk in public HTML.',
   ].join('\n') + '\n';
 }
 
 function updateAllStateReport() {
   let text = fs.readFileSync(INPUTS.allStateReport, 'utf8');
-  const bullet = '- Maine remains blocked on a public-but-unmaterialized DOE contact lane: the selector and workbook are live, but the current Bangor search and export posts still both return the same HTTP 500 NEO shell, while DHHS district offices still expose no county/service-area crosswalk.';
+  const bullet = '- Maine remains blocked on a broader public-but-unmaterialized DOE lane: the contact selector, superintendent selectors, and workbook are live, but current Bangor materialization submits across those first-party pages still return the same HTTP 500 NEO shell, while DHHS district offices still expose no county/service-area crosswalk.';
   if (!text.includes(bullet)) {
     text = `${text.trimEnd()}\n${bullet}\n`;
   }
@@ -120,24 +120,29 @@ function updateHandoff() {
   let text = fs.readFileSync(INPUTS.handoff, 'utf8');
   text = text.replace(
     '- Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`',
-    '- Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`'
+    '- Maine: `official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`'
+  );
+  text = text.replace(
+    '- Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`',
+    '- Maine: `official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`'
   );
 
   const focusSection = `## Current Focus State: Maine
 
 ### Blocker Reason
 
-Maine still has two critical blockers, and the highest-priority one remains \`district_or_county_education_routing\`. The official DOE selector/workbook lane is live and public: the Primary Contacts By Organization selector, the Town selector, and the SAU workbook all load on official Maine hosts. But the actual contact materialization lane is still broken in bounded low-token mode. Fresh Bangor search and export posts both return the same HTTP 500 NEO error shell instead of reusable local contact rows. The county-local blocker remains separate: the DHHS district office page lists office towns and contact details but still exposes no county or service-area crosswalk.
+Maine still has two critical blockers, and the highest-priority one remains \`district_or_county_education_routing\`. The official DOE selector/workbook lane is live and public across multiple first-party pages: the Primary Contacts By Organization selector, the Superintendent by SAU selector, the Superintendent by Town selector, and the SAU workbook all load on official Maine hosts. But the actual materialization lane is still broken in bounded low-token mode. Fresh Bangor submits across those first-party pages still return the same HTTP 500 NEO error shell instead of reusable local contact rows. The county-local blocker remains separate: the DHHS district office page lists office towns and contact details but still exposes no county or service-area crosswalk.
 
 ### Exact Evidence Needed
 
-- A current official Maine DOE search or export response that returns real local contact rows instead of the generic HTTP 500 shell.
+- A current official Maine DOE search or export response on any of the live first-party contact or superintendent selectors that returns real local rows instead of the generic HTTP 500 shell.
 - Or, an official Maine DOE workbook/export with county-grade contact fields rather than only municipality-to-organization mapping.
 - Separately, an official DHHS county or service-area crosswalk for office towns like Bangor, Calais, Machias, Portland, or Skowhegan.
 
 ### Useful Official URLs Already Tried
 
 - [Maine NEO Primary Contacts By Organization](https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU)
+- [Maine NEO Superintendent by SAU](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU)
 - [Maine NEO Town selector](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town)
 - [Maine SAU workbook](https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx)
 - [Maine special education landing page](https://www.maine.gov/doe/learning/specialed)
@@ -145,7 +150,7 @@ Maine still has two critical blockers, and the highest-priority one remains \`di
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current official Maine DOE contact export or search result that yields real local contact rows instead of the generic HTTP 500 shell.
+- Any current official Maine DOE contact or superintendent selector result that yields real local rows instead of the generic HTTP 500 shell.
 - Any official DOE workbook or adjacent downloadable file that includes county, phone, email, superintendent, or special-education contact fields.
 - Any official DHHS county/service-area crosswalk for the named district-office towns.
 
@@ -249,10 +254,10 @@ export function generateBatch334MaineLiveSelector500RefreshV1() {
       return {
         ...row,
         family_status: EDUCATION_STATUS,
-        query_basis: 'Reviewed 2026-06-24 the live official Maine selector HTML, Town selector, SAU workbook, and fresh Bangor search/export posts.',
+        query_basis: 'Reviewed 2026-06-25 the live official Maine contact selector, superintendent selectors, SAU workbook, and fresh Bangor materialization submits.',
         blocker_code: EDUCATION_FAILURE_CODE,
         blocker_evidence: EDUCATION_EVIDENCE,
-        sample_count: 5,
+        sample_count: 6,
         samples: [
           {
             sample_name: 'Maine NEO Primary Contacts By Organization selector',
@@ -261,8 +266,18 @@ export function generateBatch334MaineLiveSelector500RefreshV1() {
             verification_status: 'verified',
             source_type: 'official_public_org_selector_inventory',
             source_table: 'batch334_maine_live_selector_500_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
-            evidence_snippet: 'The selector is live with title `NEO Contact Search [ v2.0.0.0 - A3 ]` and still exposes the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family.',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The selector is live with title `NEO Contact Search [ v2.0.0.0 - A2 ]` and still exposes the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family.',
+          },
+          {
+            sample_name: 'Maine NEO Superintendent by SAU selector',
+            source_url: 'https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU',
+            final_url: 'https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU',
+            verification_status: 'verified',
+            source_type: 'official_public_superintendent_selector_inventory',
+            source_table: 'batch334_maine_live_selector_500_refresh',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'The Superintendent by SAU selector is live with title `NEO Contact Search [ v2.0.0.0 - A4 ]` and exposes the schoolId selector.',
           },
           {
             sample_name: 'Maine NEO Town selector',
@@ -271,7 +286,7 @@ export function generateBatch334MaineLiveSelector500RefreshV1() {
             verification_status: 'verified',
             source_type: 'official_public_selector_inventory',
             source_table: 'batch334_maine_live_selector_500_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'The Town selector is live with the same public NEO shell and still exposes a municipality picker.',
           },
           {
@@ -281,7 +296,7 @@ export function generateBatch334MaineLiveSelector500RefreshV1() {
             verification_status: 'verified',
             source_type: 'official_downloadable_mapping_workbook',
             source_table: 'batch334_maine_live_selector_500_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'The official DOE host still serves the SAU workbook, but it remains a mapping workbook rather than a materialized contact export.',
           },
           {
@@ -291,7 +306,7 @@ export function generateBatch334MaineLiveSelector500RefreshV1() {
             verification_status: 'blocked',
             source_type: 'official_raw_search_500_shell',
             source_table: 'batch334_maine_live_selector_500_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'A fresh Bangor `OrgId=42` search post returned HTTP 500 and the same generic `Sorry, an error occurred while processing your request.` NEO shell instead of local contact rows.',
           },
           {
@@ -301,8 +316,18 @@ export function generateBatch334MaineLiveSelector500RefreshV1() {
             verification_status: 'blocked',
             source_type: 'official_raw_export_500_shell',
             source_table: 'batch334_maine_live_selector_500_refresh',
-            fetched_at: '2026-06-24T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet: 'A fresh Bangor export post returned the same HTTP 500 NEO shell rather than `SAUSearchResults.xls` or a contact export.',
+          },
+          {
+            sample_name: 'Maine Bangor superintendent materialization posts',
+            source_url: 'https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU',
+            final_url: 'https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU',
+            verification_status: 'blocked',
+            source_type: 'official_raw_superintendent_500_shell',
+            source_table: 'batch334_maine_live_selector_500_refresh',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet: 'Fresh Bangor submits to both Superintendent by SAU and Superintendent by Town returned the same generic `Sorry, an error occurred while processing your request.` NEO shell instead of superintendent rows.',
           },
         ],
       };
@@ -366,15 +391,17 @@ export function generateBatch334MaineLiveSelector500RefreshV1() {
 
   const batchSummary = {
     batch: 'batch334_maine_live_selector_500_refresh_v1',
-    generated_at: '2026-06-24T23:55:00.000Z',
+    generated_at: '2026-06-25T07:10:00.000Z',
     state: 'maine',
     classification: 'BLOCKED',
     index_safe: false,
     selector_live: true,
+    superintendent_sau_live: true,
     town_selector_live: true,
     workbook_live: true,
     search_post_status: 500,
     export_post_status: 500,
+    superintendent_post_status: 500,
     lessons_changed: lessonsChanged,
   };
   writeJson(OUTPUTS.summary, batchSummary);

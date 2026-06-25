@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract",
+  "primary_gap_reason": "official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -44,9 +44,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell",
-      "evidence": "Reviewed 2026-06-24 official Maine education sources at https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town, and the official workbook https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx. The selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A3 ]`; the Town selector returned the same live NEO shell; and the workbook remained downloadable from the official DOE host. A bounded HTML inspection still found the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family on the live selector page. But fresh bounded Bangor posts to the same official selector with `OrgId=42`, the live anti-forgery token, and the current named search/export submits both returned HTTP 500 with the same `Sorry, an error occurred while processing your request.` shell. Maine therefore still has a public selector/workbook inventory lane but not a recovered county-grade contact materialization lane.",
-      "next_action": "preserve_manual_export_or_browser_capture_lane_until_live_first_party_contact_rows_materialize"
+      "failure_code": "official_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell",
+      "evidence": "Reviewed 2026-06-25 official Maine education sources at https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU, https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town, and the official workbook https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx. The contact selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A2 ]`; the Superintendent by SAU selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A4 ]`; the Town selector returned HTTP 200 with title `NEO Contact Search [ v2.0.0.0 - A3 ]`; and the workbook remained downloadable from the official DOE host. A bounded HTML inspection still found the anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family on the live contact selector page. But fresh bounded Bangor submits to the live contact search, contact export, Superintendent by SAU, and Superintendent by Town lanes all returned the same `Sorry, an error occurred while processing your request.` HTTP 500 shell. Maine therefore still has a public selector/workbook inventory lane but not a recovered county-grade education contact materialization lane.",
+      "next_action": "preserve_manual_export_or_browser_capture_lane_until_any_live_first_party_maine_education_rows_materialize"
     },
     {
       "family": "county_local_disability_resources",
@@ -57,7 +57,7 @@
     }
   ],
   "familyStatuses": {
-    "district_or_county_education_routing": "blocked_live_selector_and_workbook_but_current_search_export_posts_still_return_same_500_shell",
+    "district_or_county_education_routing": "blocked_live_contact_and_superintendent_selectors_but_current_materialization_posts_still_return_same_500_shell",
     "county_local_disability_resources": "blocked_district_office_locations_with_towns_but_without_county_crosswalk"
   }
 }
