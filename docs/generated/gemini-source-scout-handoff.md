@@ -1,6 +1,6 @@
 # Gemini Source Scout Handoff
 
-Updated: 2026-06-24
+Updated: 2026-06-25
 
 Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.
 
@@ -34,46 +34,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Florida
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Florida critical blocker. The live DCF local-offices leaf and Family Resource Center storefront still stop at a partial 34-county contract. MyACCESS is readable again, and the live main bundle now re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but those exact official endpoints still return HTTP 401 `Unauthorized` on bounded anonymous GET and POST probes. The public `dataexchangeproxy` root still only replays the same generic shell, so there is still no anonymous county-complete public local-office contract.
+`county_local_disability_resources` is the only remaining Alaska critical blocker. The official Department of Health DPA host is no longer only a stale challenge assumption: in the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live DPA landing page, and the exact DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is also publicly reviewable. That page now truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official host. But it still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The DFCS successor surfaces still add no county-equivalent contract: `Services.aspx` remains phone-only, `Publications.aspx` still exposes no office-routing material, the Site Map still only surfaces wrong-role OCS and Pioneer Homes branches, and public DFCS search still materializes no usable results. Alaska remains BLOCKED because the live DPA offices page still lacks borough- or census-area assignment proof.
 
 ### Exact Evidence Needed
 
-- A first-party Florida DCF or MyACCESS county-complete local-offices directory or export that maps all 67 counties to public assistance / ESS office routing.
-- A recovered anonymous official MyACCESS county-result contract that returns real office or community-partner results without authentication.
-- A first-party Family Resource Center or DCF local-office lane that expands beyond the current 34-county storefront contract and publishes the full county set.
+- Any official Alaska page, table, PDF, export, or API that explicitly maps boroughs or census areas to DPA office locations.
+- Any public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings now visible.
+- Any official borough/census-area office-routing contract on DFCS, Health, or a canonical Alaska successor host that is publicly reviewable without inference.
 
 ### Useful Official URLs Already Tried
 
-- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
-- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
-- [MyACCESS root](https://myaccess.myflfamilies.com/)
-- [MyACCESS Public CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
-- [MyACCESS appconfig](https://myaccess.myflfamilies.com/config/appconfig.js)
-- [MyACCESS asset manifest](https://myaccess.myflfamilies.com/asset-manifest.json)
-- [MyACCESS main bundle](https://myaccess.myflfamilies.com/static/js/main.d43b0959.js)
-- [MyACCESS dataexchangeproxy root](https://myaccess.myflfamilies.com/dataexchangeproxy)
-- [MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
-- [MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
+- [Alaska DPA landing page](https://health.alaska.gov/dpa)
+- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
+- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
+- [Alaska DFCS Search results endpoint](https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance)
+- [Alaska Pioneer Homes Payment Assistance Program](https://dfcs.alaska.gov/daph/Pages/paymentassistance/default.aspx)
+- [Alaska DAPH publications](https://dfcs.alaska.gov/daph/Pages/publications.aspx)
+- [Alaska OCS Regional Offices](https://dfcs.alaska.gov/ocs/Pages/offices/default.aspx)
+- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
+- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DCF or MyACCESS export or API path that materially extends the public county-local contract beyond the 34 counties in `providers.csv`.
-- Any exact first-party DCF county office page or local-office directory leaf that is linked from current public-assistance pages but not yet exposed in the current public tree.
-- Any anonymous result lane on the official MyACCESS host that returns real county storefront or office rows rather than replaying the public shell or requiring authentication.
+- Any current Alaska public page or download that ties named boroughs or census areas to the now-live DPA office locations page.
+- Any embedded data source, downloadable attachment, or companion offices table on the live DPA offices page that exposes service areas.
+- Any future public Alaska office-routing export on the DPA or DFCS host that materializes county-equivalent assignments instead of only region labels.
 
-## Next State Order After Florida
+## Next State Order After Alaska
 
-1. Alaska
-2. New York
-3. Oklahoma
-4. Oregon
-5. Ohio
-6. Minnesota
-7. Maine
-8. Idaho
-9. Arizona
-10. Massachusetts
+1. Oklahoma
+2. Ohio
+3. Minnesota
+4. Maine
+5. Idaho
+6. Arizona
+7. Massachusetts
+8. New Mexico
+9. South Dakota
+10. Rhode Island
