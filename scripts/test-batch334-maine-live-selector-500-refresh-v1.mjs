@@ -47,9 +47,9 @@ assert.equal(countyGap.family_status, 'blocked_district_office_locations_with_to
 
 const educationFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(educationFailure.failure_code, 'official_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell');
-assert.ok(educationFailure.evidence.includes('NEO Contact Search [ v2.0.0.0 - A2 ]'));
+assert.ok(educationFailure.evidence.includes('NEO Contact Search [ v2.0.0.0 - A3 ]'));
 assert.ok(educationFailure.evidence.includes('NEO Contact Search [ v2.0.0.0 - A4 ]'));
-assert.ok(educationFailure.evidence.includes('anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family'));
+assert.ok(educationFailure.evidence.includes('live `OrgId` selector and the `SAUs[*]` field family on the contact selector page, but no current anti-forgery token'));
 assert.match(educationFailure.evidence, /all returned the same/i);
 
 const verified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');

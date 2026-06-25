@@ -7,6 +7,6 @@
 
 ## What changed
 
-- Rechecked the live Primary Contacts selector, Town selector, and official SAU workbook on 2026-06-24.
-- Confirmed the selector still exposes a live anti-forgery token, the `OrgId` selector, and the `SAUs[*]` field family.
+- Rechecked the live Primary Contacts selector, Superintendent selectors, and official SAU workbook on 2026-06-25.
+- Confirmed the current selector contract still exposes the `OrgId` selector and `SAUs[*]` hidden inventory, but no longer exposes the anti-forgery token referenced by the older packet.
 - Confirmed fresh Bangor search and export posts still both return the same HTTP 500 NEO error shell instead of materialized local contact rows.
