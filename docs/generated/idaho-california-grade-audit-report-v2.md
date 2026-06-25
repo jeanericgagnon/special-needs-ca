@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 85
 - county_count: 44
-- primary_gap_reason: remaining_idaho_district_roots_now_reduce_to_wrong_role_contact_or_title_ix_leaves_without_special_education_or_student_services_routing
+- primary_gap_reason: remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_wrong_role_or_generic_leaves_without_special_education_routing
 
 ## Family status
 
