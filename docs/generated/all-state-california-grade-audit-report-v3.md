@@ -21,5 +21,6 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - Massachusetts remains BLOCKED/index-safe=false, but the DDS county-local blocker is now narrowed to a Suffolk-only remainder after reviewed locality capture cleared the other 13 counties.
+- Alaska remains BLOCKED/index-safe=false, and the county-local blocker is now tightened to the exact official failure mode: the live DPA office page groups offices into regions that cross multiple borough/census-area boundaries, so the office cities cannot be projected into county-equivalent routing.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
