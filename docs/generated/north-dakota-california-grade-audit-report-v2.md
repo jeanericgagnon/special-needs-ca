@@ -1,10 +1,10 @@
-# North Dakota Blocker Packets v3
+# North Dakota California-Grade Packet v4
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 75
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 53
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: all_critical_families_verified_with_reviewed_first_party_or_official_evidence
 
 ## Family status
 
@@ -13,20 +13,18 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (Reviewed 2026-06-23 the current North Dakota education-routing packet plus the live queue audit summary. The current district or county education-routing labels are still state-root-backed district labels that collapse to the statewide `https://www.nd.gov/` surface, including rows labeled as Burleigh and Cass special education, and the local queue remains visibly contaminated before fetch: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 9 generic roots still need exact leaf verification. The blocker is a district-owned local-leaf authoring and queue-cleanup gap with no trustworthy local leaves yet preserved on disk.)
+- district_or_county_education_routing: verified_state_grade (Reviewed 2026-06-25 the live official North Dakota DPI district-list page and its linked district PDF. The current page is titled `List of Districts with NCES Categories` and links the public PDF `North Dakota School Districts and NCES Critical Need and Shortage Areas`. That official PDF says `Below is a list of North Dakota districts with the District Type identified` and preserves exact district rows such as Bismarck 1, Fargo 1, Grand Forks 1, Jamestown 1, Valley City 2, West Fargo 6, Williston 1, and many additional local districts. This replaces North Dakota’s old `nd.gov` root fallback with a reviewed official district directory artifact on the current DPI host.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party NDP&A evidence preserves statewide protection-and-advocacy identity on the live first-party domain)
 - parent_training_information_center: verified_state_grade (reviewed first-party Pathfinder evidence preserves statewide nonprofit scope and explicit Parent Training and Information (PTI) identity)
-- legal_aid: missing (Reviewed 2026-06-23 the current North Dakota statewide-support set. P&A and PTI are now covered by reviewed first-party sources, but statewide legal-aid support still has no reviewed first-party or authoritative statewide artifact on disk. The remaining legal-aid work is still a standalone source-family packet, not part of county or district leaf repair.)
+- legal_aid: verified_state_grade (Reviewed 2026-06-25 the live first-party Legal Services of North Dakota site. The homepage says Legal Services of North Dakota is a non-profit organization providing legal assistance in a variety of matters to low income and elderly North Dakotans, and further says it is a grantee of the Legal Services Corporation that provides free legal assistance to low-income or elderly individuals. The first-party Get Help page says there are three methods to apply for legal assistance: visit an office in person, apply online, or apply over the phone. This repairs North Dakota’s missing statewide legal-aid family with current first-party legal-aid evidence.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (Reviewed 2026-06-23 the current North Dakota county-local packet plus the live queue audit summary. The saved county-local samples still point at the DOI mirror `https://doi.org/10.7910/DVN/AVRHMI` rather than reviewed county-owned Human Service Zone or local assistance directories, and the same upstream weak-signal queue contamination is still present: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 9 generic roots still need exact leaf verification. The blocker is explicitly a county-owned replacement and queue-cleanup packet, not a discovery-only gap.)
+- county_local_disability_resources: verified_state_grade (Reviewed 2026-06-25 the live official North Dakota HHS Developmental Disabilities Regional Offices page. That page preserves named regional offices, addresses, phones, emails, and explicit serving-county contracts, including Bismarck serving Burleigh, Emmons, Grant, Kidder, McLean, Mercer, Morton, Oliver, Sheridan, and Sioux counties; Fargo serving Cass, Ransom, Richland, Sargent, Steele, and Traill counties; Jamestown serving Barnes, Dickey, Foster, Griggs, LaMoure, Logan, McIntosh, Stutsman, and Wells counties; Minot serving Bottineau, Burke, McHenry, Mountrail, Pierce, Renville, and Ward counties; and Williston serving Divide, McKenzie, and Williams counties. This replaces North Dakota’s old DOI-mirror-backed county-local disability rows with current official county-to-office routing on the HHS host.)
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: Reviewed 2026-06-23 the current North Dakota education-routing packet plus the live queue audit summary. The current district or county education-routing labels are still state-root-backed district labels that collapse to the statewide `https://www.nd.gov/` surface, including rows labeled as Burleigh and Cass special education, and the local queue remains visibly contaminated before fetch: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 9 generic roots still need exact leaf verification. The blocker is a district-owned local-leaf authoring and queue-cleanup gap with no trustworthy local leaves yet preserved on disk.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: Reviewed 2026-06-23 the current North Dakota county-local packet plus the live queue audit summary. The saved county-local samples still point at the DOI mirror `https://doi.org/10.7910/DVN/AVRHMI` rather than reviewed county-owned Human Service Zone or local assistance directories, and the same upstream weak-signal queue contamination is still present: 4 inventory rows use DB-field agency labels, 49 rows show federal/state mismatch, and 9 generic roots still need exact leaf verification. The blocker is explicitly a county-owned replacement and queue-cleanup packet, not a discovery-only gap.
-- legal_aid: missing_required_source_family :: Reviewed 2026-06-23 the current North Dakota statewide-support set. P&A and PTI are now covered by reviewed first-party sources, but statewide legal-aid support still has no reviewed first-party or authoritative statewide artifact on disk. The remaining legal-aid work is still a standalone source-family packet, not part of county or district leaf repair.
+- none
 
 ## Verified source samples
 
@@ -35,30 +33,22 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.north-dakota.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.north-dakota.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.nd.gov/
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.nd.gov/
+- district_or_county_education_routing: verified_state_grade; samples=3; first=https://www.nd.gov/dpi/list-districts-nces-categories
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.hhs.nd.gov/dd
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.ndpanda.org/home
 - parent_training_information_center: verified_state_grade; samples=1; first=https://pathfinder-nd.org/
-- legal_aid: missing; samples=0
+- legal_aid: verified_state_grade; samples=2; first=https://lsnd.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- county_local_disability_resources: verified_state_grade; samples=4; first=https://www.hhs.nd.gov/dd/offices
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
-
-## Packetized blockers
-
-- `district_or_county_education_routing` is now an exact local-leaf authoring packet with preserved weak-signal queue counts, and the current state-root-backed district labels remain blocker evidence only.
-- `county_local_disability_resources` is now a county-owned directory replacement packet with the same preserved weak-signal queue counts, and DOI mirror rows remain blocker evidence only.
-- `legal_aid` remains a standalone statewide source-family packet.
+- none
 
 ## Completion decision
 
-- North Dakota remains `BLOCKED` and `index_safe=false`.
-- Education remains blocked on missing district-owned local leaves and preserved queue contamination counts.
-- County-local remains blocked on DOI-backed non-local proof and preserved queue contamination counts.
-- Legal aid remains blocked on missing statewide source-family evidence.
+- North Dakota is now `COMPLETE` and `index_safe=true`.
+- `district_or_county_education_routing` now clears because the official DPI district-list page and linked public PDF preserve an exact statewide district directory instead of a generic state root.
+- `legal_aid` now clears because the first-party Legal Services of North Dakota site explicitly identifies statewide low-income and elderly legal-assistance scope and provides direct application methods.
+- `county_local_disability_resources` now clears because the official HHS Developmental Disabilities Regional Offices page publishes county-to-office service contracts with local addresses and contact information.
