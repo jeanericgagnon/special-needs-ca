@@ -18,7 +18,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
-- Nebraska: `official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf`
+- Nebraska: `official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
@@ -34,46 +34,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Kansas
+## Current Focus State: Nebraska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 30/105 counties from preserved district-owned or district-linked leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Franklin now clears because the official Ottawa USD 290 homepage links directly to the district-branded `studentlearningservices` site on the `usd290.org` namespace, and the fetched exact `Special Education` leaf returned HTTP 200 with title `USD 290 Student Services - Special Education` while the same stack also exposes `Parent Rights`. Kansas remains BLOCKED because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
+`county_local_disability_resources` is the only remaining Nebraska critical blocker. The official publication layer now fails closed just as clearly as the ArcGIS layer: `https://dhhs.ne.gov/robots.txt` is live, but `https://dhhs.ne.gov/sitemap.xml` returns 404, the live SharePoint wrapper still loops `Public Assistance Offices` back to the same locator stack, and bounded DHHS SharePoint search API queries do not produce a searchable county office leaf. The official public GIS portal search still returns only the same office-locator trilogy, namely one web map item, one feature service, and one map service, all with the same Nebraska DHHS office-location title and no county-assignment table, county directory leaf, or alternate routing artifact. Nebraska therefore remains BLOCKED and not index-safe because there is still no public statewide county-to-office assignment bridge anywhere on the current official stack.
 
 ### Exact Evidence Needed
 
-- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
-- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
-- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
+- Any official Nebraska DHHS county-to-office assignment table, export, or service-area artifact that maps all 93 counties to public assistance offices.
+- Any public ArcGIS table, related layer, popup expression, output schema, or config datasource on the current office stack that explicitly enumerates served counties, assigned counties, or coverage areas for each office.
+- Any exact first-party DHHS county office page or county directory leaf that publishes county coverage instead of only contact-card inventory or a loop back to the current wrapper page.
+- Any searchable first-party DHHS sitemap or search publication surface that actually materializes county office leaves rather than only the current wrapper and portal stack.
 
 ### Useful Official URLs Already Tried
 
-- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
-- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
-- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
-- [Ottawa USD 290 root](https://www.usd290.org/)
-- [Ottawa USD 290 sitemap](https://www.usd290.org/sitemap.xml)
-- [Ottawa USD 290 Student Services home](https://sites.google.com/usd290.org/studentlearningservices/home)
-- [Ottawa USD 290 Student Services Special Education leaf](https://sites.google.com/usd290.org/studentlearningservices/special-education)
-- [Ottawa USD 290 Parent Rights leaf](https://sites.google.com/usd290.org/studentlearningservices/parent-rights)
-- [Garnett USD 365 Public Info / Forms leaf](https://www.usd365.org/69971_2)
-- [Fort Scott USD 234 Special Education leaf](https://www.usd234.org/page/special-education/)
-- [Wamego USD 320 Child Find leaf](https://www.usd320.com/childfind)
+- [Nebraska DHHS robots.txt](https://dhhs.ne.gov/robots.txt)
+- [Nebraska DHHS sitemap.xml](https://dhhs.ne.gov/sitemap.xml)
+- [Nebraska DHHS Public Assistance Offices](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
+- [Nebraska DHHS Economic Assistance](https://dhhs.ne.gov/Pages/economic-assistance.aspx)
+- [Nebraska DHHS Contact DHHS](https://dhhs.ne.gov/Pages/Contact-DHHS.aspx)
+- [Official GIS portal search: Public Assistance Offices](https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json)
+- [Official GIS portal search: Public Assistance Office Location Lookup](https://gis.ne.gov/portal/sharing/rest/search?q=Public%20Assistance%20Office%20Location%20Lookup&f=json)
+- [ExperienceBuilder item data](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
+- [ExperienceBuilder resource list](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources?f=json)
+- [ExperienceBuilder config resource](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources/config/config.json?f=json)
+- [Nebraska public web map item data](https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/data?f=json)
+- [Nebraska public office FeatureServer root](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer?f=pjson)
 
 ### Top Remaining Source-Scouting Targets
 
-- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
-- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or Child Find.
-- Additional district-owned document-folder, Google Sites, or CMS routes like the Ottawa USD 290, Garnett USD 365, Parsons USD 503, Hays USD 489, Hutchinson USD 308, Marysville USD 364, Burlington USD 244, Coffeyville USD 445, Wamego USD 320, and Fort Scott USD 234 recoveries, but only on already-preserved district domains.
-## Next State Order After Kansas
+- Any official Nebraska DHHS county assignment export or service-area table attached to the existing office stack.
+- Any new public ArcGIS resource, web map table, config datasource, or output field that explicitly carries county assignment data rather than only office contact fields.
+- An exact first-party county office page or county directory leaf on `dhhs.ne.gov` that publishes county coverage instead of only wrapper-page loops or wrong-role local health department links.
+## Next State Order After Nebraska
 
-1. Nebraska
-2. Nevada
-3. Florida
-4. Alaska
-5. South Carolina
-6. North Carolina
-7. New York
-8. Oklahoma
-9. Oregon
-10. Ohio
+1. Nevada
+2. Florida
+3. Alaska
+4. South Carolina
+5. North Carolina
+6. New York
+7. Oklahoma
+8. Oregon
+9. Ohio
+10. Minnesota

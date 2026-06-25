@@ -400,6 +400,7 @@
 
 ### Geocoder County Fields Do Not Equal Office Service Areas
 *   **Lesson:** If a public ArcGIS app exposes a geocoder output with a `County` field, treat that as user-location metadata unless the same app also publishes an explicit office-assignment datasource. Nebraska’s DHHS office app exposes a geocoder result layer and a closest-office output, but still no county-to-office service-area contract, so the county-local family remains blocked.
+*   **Lesson:** If an official SharePoint publication host has a live `robots.txt` but no public sitemap or searchable office result, do not assume there is a hidden county leaf outside the visible wrapper pages. Nebraska DHHS still exposed the Public Assistance Offices wrapper and sibling pages, but `/sitemap.xml` returned 404 and bounded `_api/search/query` calls for office-routing terms failed closed, so the only remaining publication evidence stayed the same non-county ArcGIS locator stack.
 
 ### Official County LMHA Maps Can Clear The Last Local-Resource Blocker
 *   **Lesson:** If an official state mental-health authority page explicitly says `Click on your county to find your Local Mental Health Authority` and the same first-party page names every county with local authority contact blocks, that can clear a county-local disability-resource family even when earlier generic office-search lanes failed. Utah only completed once the reviewed `sumh.utah.gov/contact/location-map/` LMHA map replaced the weaker DWS and generic DHHS contact surfaces.

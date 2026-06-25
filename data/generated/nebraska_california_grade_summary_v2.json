@@ -2,7 +2,7 @@
   "state": "nebraska",
   "state_code": "NE",
   "state_name": "Nebraska",
-  "batch": "batch344_nebraska_portal_search_finality_v1",
+  "batch": "batch346_nebraska_dhhs_publication_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
+  "primary_gap_reason": "official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -43,12 +43,12 @@
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
-      "evidence": "Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across the live DHHS and ArcGIS publication stack, then queried the official public GIS portal search directly. `https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json` still returns only three public items with the same office-location title and the same owner family: the web map item `4bdbf8e8703743b0b2ff290f98737825`, the feature service item `cf70cb74fcc94634afc89f0a22a7d06f`, and the map service item `90a19933cfc444be836f51d15e2e23ec`. No table item, CSV, alternate directory layer, county-assignment app item, or other public office-routing artifact appears in that official search result set. The exact `Public Assistance Office Location Lookup` search also returns only the same web map item. Meanwhile `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is still only the SharePoint wrapper for the locator, the public ExperienceBuilder resources still expose only config and image assets, the underlying public web map still has only office and county boundary layers with zero tables, and the public FeatureServer still stops at 42 office rows against 93 counties. Nebraska therefore still has no public county-assignment item anywhere on the current official stack.",
-      "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published"
+      "failure_code": "official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
+      "evidence": "Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across both the DHHS publication layer and the ArcGIS publication stack. `https://dhhs.ne.gov/robots.txt` is live, but `https://dhhs.ne.gov/sitemap.xml` returns HTTP 404, so there is still no first-party sitemap publication index for office leaves. The live SharePoint HTML for `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx`, `https://dhhs.ne.gov/Pages/Contact-DHHS.aspx`, and `https://dhhs.ne.gov/Pages/economic-assistance.aspx` still loops users only to the same office wrapper and sibling economic-assistance pages, while bounded SharePoint search API queries such as `_api/search/query?querytext='Public Assistance Offices'` return only HTTP 500/400 errors rather than any searchable county office leaves. On the ArcGIS side, `https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json` still returns only three public items with the same office-location title and owner family: the web map item `4bdbf8e8703743b0b2ff290f98737825`, the feature service item `cf70cb74fcc94634afc89f0a22a7d06f`, and the map service item `90a19933cfc444be836f51d15e2e23ec`. No table item, CSV, county assignment app item, or county directory leaf appears anywhere in either official publication lane. Nebraska therefore still has no public county-assignment item anywhere on the current official stack.",
+      "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_new_public_county_leaf_or_searchable_dhhs_publication_index_is_published"
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_official_portal_search_confirms_only_locator_trilogy_without_assignment_contract"
+    "county_local_disability_resources": "blocked_official_dhhs_publication_layer_and_portal_search_both_fail_to_materialize_county_assignment_contract"
   }
 }

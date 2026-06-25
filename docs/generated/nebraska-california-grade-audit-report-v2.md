@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 92
 - county_count: 93
-- primary_gap_reason: official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf
+- primary_gap_reason: official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Legal Aid of Nebraska evidence now provides a real statewide civil legal-aid route.)
 - able_program: verified_state_grade (Statewide evidence is present at the required authority level.)
 - ssi_ssa_federal_reference: verified_state_grade (Statewide evidence is present at the required authority level.)
-- county_local_disability_resources: blocked_official_portal_search_confirms_only_locator_trilogy_without_assignment_contract (Reviewed 2026-06-24 one more bounded official Nebraska county-local pass and confirmed the official public GIS portal search still returns only the same locator trilogy for `Public Assistance Offices`: one web map item, one feature service, and one map service, all with the same Nebraska DHHS office-location title and no county-assignment table, directory leaf, or alternate public item. The DHHS SharePoint wrapper still does not enumerate counties, the public ExperienceBuilder resources still expose only config/image assets, the public web map still has zero tables, and the FeatureServer still stops at 42 offices against 93 counties. Nebraska therefore still lacks a public statewide county-to-office assignment contract.)
+- county_local_disability_resources: blocked_official_dhhs_publication_layer_and_portal_search_both_fail_to_materialize_county_assignment_contract (Reviewed 2026-06-24 one more bounded official Nebraska county-local pass and confirmed both official publication lanes still fail closed. `https://dhhs.ne.gov/robots.txt` is live, but `https://dhhs.ne.gov/sitemap.xml` returns 404, the live SharePoint wrapper still loops `Public Assistance Offices` back to the same locator stack, and bounded DHHS SharePoint search API queries for office-routing terms return only 500/400 errors instead of a searchable public publication index. The official GIS portal search still returns only the same locator trilogy for `Public Assistance Offices`: one web map item, one feature service, and one map service, all with no county-assignment table, directory leaf, or alternate public item. Nebraska therefore still lacks a public statewide county-to-office assignment contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf :: Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across the live DHHS and ArcGIS publication stack, then queried the official public GIS portal search directly. `https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json` still returns only three public items with the same office-location title and the same owner family: the web map item `4bdbf8e8703743b0b2ff290f98737825`, the feature service item `cf70cb74fcc94634afc89f0a22a7d06f`, and the map service item `90a19933cfc444be836f51d15e2e23ec`. No table item, CSV, alternate directory layer, county-assignment app item, or other public office-routing artifact appears in that official search result set. The exact `Public Assistance Office Location Lookup` search also returns only the same web map item. Meanwhile `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx` is still only the SharePoint wrapper for the locator, the public ExperienceBuilder resources still expose only config and image assets, the underlying public web map still has only office and county boundary layers with zero tables, and the public FeatureServer still stops at 42 office rows against 93 counties. Nebraska therefore still has no public county-assignment item anywhere on the current official stack.
+- county_local_disability_resources: official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf :: Reviewed 2026-06-24 one more bounded official Nebraska county-local pass across both the DHHS publication layer and the ArcGIS publication stack. `https://dhhs.ne.gov/robots.txt` is live, but `https://dhhs.ne.gov/sitemap.xml` returns HTTP 404, so there is still no first-party sitemap publication index for office leaves. The live SharePoint HTML for `https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx`, `https://dhhs.ne.gov/Pages/Contact-DHHS.aspx`, and `https://dhhs.ne.gov/Pages/economic-assistance.aspx` still loops users only to the same office wrapper and sibling economic-assistance pages, while bounded SharePoint search API queries such as `_api/search/query?querytext='Public Assistance Offices'` return only HTTP 500/400 errors rather than any searchable county office leaves. On the ArcGIS side, `https://gis.ne.gov/portal/sharing/rest/search?q=title%3A%22Public%20Assistance%20Offices%22&f=json` still returns only three public items with the same office-location title and owner family: the web map item `4bdbf8e8703743b0b2ff290f98737825`, the feature service item `cf70cb74fcc94634afc89f0a22a7d06f`, and the map service item `90a19933cfc444be836f51d15e2e23ec`. No table item, CSV, county assignment app item, or county directory leaf appears anywhere in either official publication lane. Nebraska therefore still has no public county-assignment item anywhere on the current official stack.
 
 ## Verified source samples
 
@@ -40,17 +40,17 @@
 - legal_aid: verified_state_grade; samples=1; first=https://legalaidofnebraska.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_official_portal_search_confirms_only_locator_trilogy_without_assignment_contract; samples=8; first=https://gis.ne.gov/portal/sharing/rest/search?q=Public%20Assistance%20Office%20Location%20Lookup&f=json
+- county_local_disability_resources: blocked_official_dhhs_publication_layer_and_portal_search_both_fail_to_materialize_county_assignment_contract; samples=8; first=https://dhhs.ne.gov/robots.txt
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_table_county_assignment_artifact_or_new_public_resource_is_published
+- [critical] county_local_disability_resources: hold_blocked_until_official_service_area_table_county_assignment_artifact_new_public_county_leaf_or_searchable_dhhs_publication_index_is_published
 
 ## Completion decision
 
 - Nebraska remains BLOCKED and index_safe=false.
 - district_or_county_education_routing remains verified_county_grade through the official county-selectable NDE directory host.
 - county_local_disability_resources remains the only critical blocker.
+- The DHHS publication layer still exposes no recoverable county office index: robots is live, sitemap is 404, and SharePoint search does not yield a public office leaf.
 - The official GIS portal search still returns only the same office-locator trilogy: one web map, one feature service, and one map service.
-- No public county-assignment table, directory leaf, or alternate office-routing item appears anywhere in that official result set.
 - Nebraska therefore still lacks a public statewide county-to-office assignment contract.

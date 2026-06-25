@@ -1927,11 +1927,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_portal_search_confirms_only_locator_trilogy_without_assignment_contract"
+        "county_local_disability_resources": "blocked_official_dhhs_publication_layer_and_portal_search_both_fail_to_materialize_county_assignment_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch344_nebraska_portal_search_finality_v1",
-      "packetPrimaryGapReason": "official_nebraska_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
+      "packetBatch": "batch346_nebraska_dhhs_publication_finality_v1",
+      "packetPrimaryGapReason": "official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

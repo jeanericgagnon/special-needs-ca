@@ -1,0 +1,21 @@
+{
+  "state": "nebraska",
+  "batch": "batch346_nebraska_dhhs_publication_finality_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "remaining_blocker_family": "county_local_disability_resources",
+  "failure_code": "official_nebraska_dhhs_site_has_no_public_sitemap_or_search_recovery_and_portal_search_still_returns_only_the_same_web_map_feature_service_and_map_service_without_any_county_assignment_item_or_directory_leaf",
+  "robots_status": 200,
+  "sitemap_status": 404,
+  "sharepoint_search_statuses": [
+    500,
+    400
+  ],
+  "official_portal_result_count": 3,
+  "official_portal_result_types": [
+    "Web Map",
+    "Feature Service",
+    "Map Service"
+  ],
+  "next_action": "hold_blocked_until_official_service_area_table_county_assignment_artifact_new_public_county_leaf_or_searchable_dhhs_publication_index_is_published"
+}
