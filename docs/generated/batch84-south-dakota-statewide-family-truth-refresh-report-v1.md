@@ -17,15 +17,13 @@
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party Disability Rights South Dakota evidence preserves statewide protection-and-advocacy identity on the live first-party domain)
 - parent_training_information_center: verified_state_grade (authoritative Parent Center Hub South Dakota leaf explicitly labels South Dakota Parent Connection as the South Dakota PTI)
-- legal_aid: missing (no credible current evidence)
+- legal_aid: verified_state_grade (reviewed official South Dakota UJS Get Legal Help page now preserves statewide free or low-cost legal-aid routing through SD Law Help)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
 - county_local_disability_resources: blocked_live_local_offices_shell_without_public_county_contract (the legacy dhhs.south-dakota.gov locator is unresolvable, contact/default.aspx is 404, and the live localoffices root currently serves only a JS loading shell with no county contract in public HTML)
 
 ## Failure ledger
 
-- district_or_county_education_routing: official_educational_directory_root_is_live_but_not_converted_into_local_district_leaves :: Reviewed 2026-06-23 live official South Dakota DOE sources at https://doe.sd.gov/ofm/edudir.aspx and https://doe.sd.gov/ofm/districts.aspx. The public South Dakota Educational Directory root is live and its HTML already lists Public School Districts such as Aberdeen 06-1, Agar-Blunt-Onida 58-3, and Bennett County 03-1, while the district maps root is also public. But no district-owned special-education leaves are preserved on disk, so district routing still relies on statewide or structural evidence.
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for South Dakota.
 - county_local_disability_resources: legacy_locator_dead_and_live_localoffices_root_is_loading_shell :: Reviewed 2026-06-23 live official South Dakota human-services probes at https://dhhs.south-dakota.gov/locations, https://dhs.sd.gov/contact/default.aspx, and https://dhs.sd.gov/en/localoffices. The legacy dhhs host is unresolvable, contact/default.aspx returns a real 404, and the live localoffices root currently serves only a JS Loading shell with no county, office, or locality contract in public HTML.
 
 ## Verified source samples
@@ -35,19 +33,17 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.south-dakota.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.south-dakota.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://doe.sd.gov/
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://doe.sd.gov/
+- district_or_county_education_routing: verified_state_grade; samples=4; first=https://doe.sd.gov/ofm/edudir.aspx
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://dhs.sd.gov/dd
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://drsdlaw.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/south-dakota/
-- legal_aid: missing; samples=0
+- legal_aid: verified_state_grade; samples=4; first=https://ujs.sd.gov/self-help/get-legal-help/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://dhhs.south-dakota.gov/locations
+- county_local_disability_resources: blocked_current_dhs_host_without_public_county_or_local_office_contract; samples=3; first=https://dhs.sd.gov/en/localoffices
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] legal_aid: author_or_verify_statewide_source_family
 - [critical] county_local_disability_resources: hold_blocked_until_a_public_county_or_local_office_contract_is_exposed
 
 ## Completion decision

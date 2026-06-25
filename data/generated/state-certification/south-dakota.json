@@ -1,0 +1,234 @@
+{
+  "state": "south-dakota",
+  "candidateBranch": null,
+  "pass": false,
+  "summary": {
+    "state": "south-dakota",
+    "state_code": "SD",
+    "state_name": "South Dakota",
+    "batch": "batch_7_procedure_hardening_states_v1",
+    "classification": "BLOCKED",
+    "index_safe": false,
+    "incorrectly_index_safe": false,
+    "county_count": 66,
+    "completeness_pct": 91,
+    "strong_critical_families": 11,
+    "weak_critical_families": 1,
+    "missing_critical_families": 0,
+    "total_critical_families": 12,
+    "primary_gap_reason": "current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing",
+    "recommended_batch": "batch_3_procedure_hardening",
+    "critical_gap_families": [
+      "county_local_disability_resources"
+    ],
+    "major_gap_families": [],
+    "verified_source_families_with_samples": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "district_or_county_education_routing",
+      "vocational_rehabilitation_pre_ets",
+      "protection_and_advocacy",
+      "parent_training_information_center",
+      "able_program",
+      "ssi_ssa_federal_reference",
+      "county_local_disability_resources"
+    ],
+    "complete_ready": false,
+    "texas_v10_rule_basis": [
+      "Preserve noindex until all critical families are verified",
+      "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+      "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+    ],
+    "final_blockers": [
+      {
+        "family": "county_local_disability_resources",
+        "severity": "critical",
+        "failure_code": "current_dhs_host_exposes_page_not_found_localoffices_route_and_statewide_contact_surfaces_only",
+        "evidence": "Reviewed 2026-06-25 bounded first-party South Dakota DHS surfaces. The current `/en/localoffices` route still serves only a JS shell in raw HTML and embeds `aemPages.localoffices.title` as `Page Not Found` in the page state instead of exposing a public local-office directory. The current `Contact Us` page exposes only statewide phone, email, and Pierre mailing contacts. The current `Staff and Program Directory` page exposes division and program staff tables, but no county field, no local-office list, and no county-to-office contract. South Dakota therefore still lacks a truthful public county-grade local-office routing contract on the current official DHS host family.",
+        "next_action": "hold_blocked_until_current_dhs_host_exposes_public_county_to_office_or_local_service_contract"
+      }
+    ]
+  },
+  "gapRows": [
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "medicaid_state_health_coverage",
+      "family_label": "Medicaid / state health coverage",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_label": "Medicaid waiver / HCBS / disability services",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "developmental_disability_idd_authority",
+      "family_label": "Developmental disability / IDD authority",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "early_intervention_part_c",
+      "family_label": "Early intervention / IDEA Part C",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "special_education_idea_part_b",
+      "family_label": "Special education / IDEA Part B",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "district_or_county_education_routing",
+      "family_label": "District or county education routing",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "reviewed official South Dakota DOE district-directory pages now preserve district-grade public routing and a Special Education Director field on live district detail pages"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_label": "Vocational rehabilitation / Pre-ETS",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "protection_and_advocacy",
+      "family_label": "Protection and advocacy",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party Disability Rights South Dakota evidence preserves statewide protection-and-advocacy identity on the live first-party domain"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "parent_training_information_center",
+      "family_label": "Parent training and information center",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "authoritative Parent Center Hub South Dakota leaf explicitly labels South Dakota Parent Connection as the South Dakota PTI"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "legal_aid",
+      "family_label": "Legal aid",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed official South Dakota UJS Get Legal Help page now preserves statewide free or low-cost legal-aid routing through SD Law Help"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "able_program",
+      "family_label": "ABLE program",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "ssi_ssa_federal_reference",
+      "family_label": "SSI / SSA federal references",
+      "family_status": "verified_state_grade",
+      "critical": false,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "south-dakota",
+      "state_code": "SD",
+      "state_name": "South Dakota",
+      "family": "county_local_disability_resources",
+      "family_label": "County/local disability resources",
+      "family_status": "blocked_current_dhs_host_without_public_county_or_local_office_contract",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 bounded first-party South Dakota DHS surfaces. The current `/en/localoffices` route still serves only a JS shell in raw HTML and embeds `aemPages.localoffices.title` as `Page Not Found` in the page state instead of exposing a public local-office directory. The current `Contact Us` page exposes only statewide phone, email, and Pierre mailing contacts. The current `Staff and Program Directory` page exposes division and program staff tables, but no county field, no local-office list, and no county-to-office contract. South Dakota therefore still lacks a truthful public county-grade local-office routing contract on the current official DHS host family."
+    }
+  ],
+  "filesChecked": [
+    "data/generated/south-dakota_california_grade_summary_v2.json",
+    "data/generated/south-dakota_gap_matrix_v2.jsonl",
+    "data/generated/south-dakota_failure_ledger_v2.jsonl",
+    "data/generated/south-dakota_verified_sources_v1.jsonl",
+    "data/generated/south-dakota_next_action_queue_v2.jsonl",
+    "docs/generated/south-dakota-california-grade-audit-report-v2.md"
+  ],
+  "failures": [
+    {
+      "code": "not_completion_candidate",
+      "family": null,
+      "filesChecked": [
+        "data/generated/south-dakota_california_grade_summary_v2.json"
+      ],
+      "reason": "Candidate classification is BLOCKED, not COMPLETE.",
+      "suggestedRepairClass": "keep_blocked_or_repair_more"
+    }
+  ],
+  "checkedAt": "2026-06-25T23:22:52.652Z",
+  "liveProbeEnabled": false
+}

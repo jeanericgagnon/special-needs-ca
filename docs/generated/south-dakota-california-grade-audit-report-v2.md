@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.south-dakota.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.south-dakota.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://doe.sd.gov/
-- district_or_county_education_routing: verified_state_grade; samples=4; first=https://doe.sd.gov/ofm/edudir.aspx
+- district_or_county_education_routing: verified_state_grade; samples=5; first=https://doe.sd.gov/ofm/edudir.aspx
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://dhs.sd.gov/dd
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://drsdlaw.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/south-dakota/
