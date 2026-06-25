@@ -23,5 +23,6 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Tennessee is now COMPLETE/index-safe from its reviewed official local-routing repair pass.
 - Massachusetts remains BLOCKED/index-safe=false, but the DDS county-local blocker is now narrowed to a Suffolk-only remainder after reviewed locality capture cleared the other 13 counties.
 - Alaska remains BLOCKED/index-safe=false, and the county-local blocker is now tightened to the exact official failure mode: the live DPA office page groups offices into regions that cross multiple borough/census-area boundaries, so the office cities cannot be projected into county-equivalent routing.
+- New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the exact official failure mode: the live PED SharePoint school-directory host exposes public workbooks, a public `2017 NM Schools` list with REST-backed rows, and a public REC grouping page, but none of those official surfaces publishes a county field or REC county-service-area contract.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
