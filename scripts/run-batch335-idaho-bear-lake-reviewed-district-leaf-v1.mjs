@@ -28,12 +28,12 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'idaho-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP_REASON = 'reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_still_lack_role_evidence';
+const PRIMARY_GAP_REASON = 'reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_now_fail_into_404_or_blank_shell_negative_checks';
 
 const EDUCATION_STATUS = 'blocked_reviewed_local_district_leaves_exist_but_not_statewide_county_grade';
-const EDUCATION_FAILURE_CODE = 'reviewed_district_special_services_leaves_hold_at_13_counties_after_live_bear_lake_leaf_and_remaining_county_bearing_roots_still_lack_role_leaf';
-const EDUCATION_REASON = 'Idaho education is still blocked, but the reviewed district-owned leaf set is stronger than the last packet claimed. On 2026-06-24 the live Bear Lake School District root exposed an embedded district-owned `Special Education` page object, and the exact district leaf resolved publicly at `https://www.blsd.net/en-US/special-education-e92c299d` with district-specific special-education text, director contact, and IDEA/FAPE/LRE language. That raises Idaho to thirteen reviewed county-grade district-owned education leaves. But the remaining county-bearing district roots still do not expose a reusable role-bearing special-education or special-services leaf in bounded public root/sitemap HTML, so statewide county-grade education routing is still incomplete.';
-const EDUCATION_EVIDENCE = 'Reviewed 2026-06-24 the live official Idaho district root https://www.blsd.net/ and the exact district-owned leaf https://www.blsd.net/en-US/special-education-e92c299d. The Bear Lake root publicly exposes an embedded `Special Education` page object with relative route `/pages/e92c299d-8559-433e-b16e-b40882764e60`, and that route resolves to the public final URL `https://www.blsd.net/en-US/special-education-e92c299d`. The exact leaf returned HTTP 200 with title `Special Education - Bear Lake School District` and visible district-owned text including `Special Education Director Holly Tanner`, `Welcome to Special Education`, and IDEA/FAPE/LRE language about students who meet eligibility requirements. Idaho therefore now holds at thirteen reviewed county-grade district-owned education leaves, not twelve. But the remaining county-bearing district roots in Camas, Clark, Fremont, Jefferson, Oneida, and Shoshone still expose no exact reusable role-bearing leaf in bounded public HTML or sitemap review, so the family remains blocked.';
+const EDUCATION_FAILURE_CODE = 'reviewed_district_special_services_leaves_hold_at_13_counties_after_live_bear_lake_leaf_and_remaining_county_bearing_roots_now_fail_into_404_or_blank_shell_checks';
+const EDUCATION_REASON = 'Idaho education is still blocked, but the reviewed district-owned leaf set is stronger and the remaining gap is now sharper. On 2026-06-24 the live Bear Lake School District root exposed an embedded district-owned `Special Education` page object, and the exact district leaf resolved publicly at `https://www.blsd.net/en-US/special-education-e92c299d` with district-specific special-education text, director contact, and IDEA/FAPE/LRE language. That raises Idaho to thirteen reviewed county-grade district-owned education leaves. A fresh bounded recheck on 2026-06-25 then hardened the remaining county-bearing district roots: Camas and Oneida returned district-branded 404s on likely `special-education`, `special-services`, and `student-services` leaves; Shoshone returned WordPress `Page not found` on the same role-bearing guesses even though the public sitemap stayed live; Fremont preserved a live sitemap but no role-bearing URLs, and likely exact leaf guesses still 404ed; Clark\'s likely Apptegy page guesses all 404ed into the same `News and Announcements` shell; and Jefferson\'s sitemap plus likely role-bearing leaf routes collapsed into blank titleless Incapsula-style shells with no reusable education text. So statewide county-grade education routing is still incomplete.';
+const EDUCATION_EVIDENCE = 'Reviewed 2026-06-24 the live official Idaho district root https://www.blsd.net/ and the exact district-owned leaf https://www.blsd.net/en-US/special-education-e92c299d. The Bear Lake root publicly exposes an embedded `Special Education` page object with relative route `/pages/e92c299d-8559-433e-b16e-b40882764e60`, and that route resolves to the public final URL `https://www.blsd.net/en-US/special-education-e92c299d`. The exact leaf returned HTTP 200 with title `Special Education - Bear Lake School District` and visible district-owned text including `Special Education Director Holly Tanner`, `Welcome to Special Education`, and IDEA/FAPE/LRE language about students who meet eligibility requirements. Idaho therefore now holds at thirteen reviewed county-grade district-owned education leaves, not twelve. A bounded official recheck on 2026-06-25 then confirmed the remaining county-bearing roots still fail closed: https://www.camascountyschools.org/page/special-education, /page/special-services, and /page/student-services all returned district-branded 404s; https://www.clarkcountyschools161.org/apps/pages/index.jsp guesses all 404ed into the same `News and Announcements - Clark Co School District 161` shell; https://www.sd215.net/sitemap.xml stayed live but exposed no role-bearing URLs and likely `special-education` or `special-services` leaves 404ed; https://www.jeffersonsd251.org/sitemap.xml and /page/special-education style routes collapsed into blank titleless Incapsula-style shells with no role-bearing text; https://www.oneidaschooldistrict.org/sitemap.xml stayed live but likely role-bearing leaves 404ed; and https://shoshonesd.org/wp-sitemap.xml stayed live while likely `special-education` and `student-services` leaves returned `Page not found`. The family therefore remains blocked because the remaining county-bearing district roots still expose no exact reusable role-bearing leaf in bounded public review.';
 const EDUCATION_NEXT_ACTION = 'continue_exact_district_leaf_expansion_only_when_uncovered_idaho_district_hosts_expose_role_bearing_special_education_or_special_services_leaves';
 
 const COUNTY_STATUS = 'blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract';
@@ -205,7 +205,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
 
 function updateAllStateReport() {
   let text = fs.readFileSync(INPUTS.allStateReport, 'utf8');
-  const bullet = '- Idaho remains blocked, but the education lane improved: the live Bear Lake School District root exposed an embedded district-owned `Special Education` route that resolves to a public exact leaf, raising Idaho to thirteen reviewed county-grade district-owned education leaves; the state still remains not index-safe because the remaining county-bearing district roots lack exact role-bearing leaves and DHW still exposes no public county-to-office contract.';
+  const bullet = '- Idaho remains blocked, but the education lane is now better bounded: Bear Lake still raises the state to thirteen reviewed county-grade district-owned education leaves, while the remaining county-bearing district roots now fail into concrete negative checks including Camas/Oneida/Shoshone 404 role-leaf guesses, Fremont live-sitemap-without-role-URLs, Clark 404 news-shell page guesses, and Jefferson blank Incapsula-style sitemap/leaf shells; DHW still exposes no public county-to-office contract.';
   if (!text.includes(bullet)) {
     text = `${text.trimEnd()}\n${bullet}\n`;
   }
@@ -216,14 +216,18 @@ function updateHandoff() {
   let text = fs.readFileSync(INPUTS.handoff, 'utf8');
   text = text.replace(
     '- Idaho: `reviewed_idaho_district_leaves_hold_at_12_counties_and_remaining_county_bearing_district_roots_now_have_public_sitemap_exhaustion_evidence`',
+    '- Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_now_fail_into_404_or_blank_shell_negative_checks`',
+  );
+  text = text.replace(
     '- Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_still_lack_role_evidence`',
+    '- Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_now_fail_into_404_or_blank_shell_negative_checks`',
   );
 
   const focusSection = `## Current Focus State: Idaho
 
 ### Blocker Reason
 
-Idaho still has two critical blockers, and the highest-priority one remains \`district_or_county_education_routing\`. The live Bear Lake School District root now exposes an embedded district-owned \`Special Education\` route, and the exact public leaf at \`https://www.blsd.net/en-US/special-education-e92c299d\` carries district-specific special-education text, director contact, and IDEA/FAPE/LRE language. That raises Idaho to thirteen reviewed county-grade district-owned education leaves. But the remaining county-bearing district roots in Camas, Clark, Fremont, Jefferson, Oneida, and Shoshone still do not expose a reusable exact special-education or special-services leaf in bounded public root or sitemap review. The county-local blocker remains separate: Idaho DHW still exposes exact office leaves for 17 clean county replacements plus one Canyon split, but still no public county-to-office contract for the remaining 27 counties.
+Idaho still has two critical blockers, and the highest-priority one remains \`district_or_county_education_routing\`. The live Bear Lake School District root now exposes an embedded district-owned \`Special Education\` route, and the exact public leaf at \`https://www.blsd.net/en-US/special-education-e92c299d\` carries district-specific special-education text, director contact, and IDEA/FAPE/LRE language. That raises Idaho to thirteen reviewed county-grade district-owned education leaves. A fresh bounded recheck on 2026-06-25 then hardened the remainder instead of reopening it broadly: Camas and Oneida returned district-branded 404s on likely special-education or student-services leaves, Shoshone returned WordPress \`Page not found\` on the same role-bearing guesses, Fremont preserved a live sitemap but no role-bearing URLs and still 404ed likely leaf guesses, Clark page guesses all collapsed to the same \`News and Announcements\` shell, and Jefferson's sitemap plus likely role-bearing routes collapsed into blank Incapsula-style shells. The county-local blocker remains separate: Idaho DHW still preserves 17 clean exact office replacements plus the Canyon split, but still no public county-to-office contract for the remaining 27 counties.
 
 ### Exact Evidence Needed
 
@@ -237,10 +241,10 @@ Idaho still has two critical blockers, and the highest-priority one remains \`di
 - [Bear Lake School District root](https://www.blsd.net/)
 - [Bear Lake Special Education leaf](https://www.blsd.net/en-US/special-education-e92c299d)
 - [Camas County School District root](https://www.camascountyschools.org)
-- [Clark County School District 161 root](http://www.clarkcountyschools161.org/)
-- [Fremont County Joint School District #215 root](http://www.sd215.net/)
+- [Clark County School District 161 root](https://www.clarkcountyschools161.org/)
+- [Fremont County Joint School District #215 root](https://www.sd215.net/)
 - [Jefferson School District 251 root](https://www.jeffersonsd251.org/)
-- [Oneida School District root](https://oneidaschooldistrict.com/)
+- [Oneida School District root](https://www.oneidaschooldistrict.org/)
 - [Shoshone School District root](https://shoshonesd.org/)
 - [Idaho DHW office root](https://healthandwelfare.idaho.gov/offices)
 - [Idaho DHW sitemap](https://healthandwelfare.idaho.gov/sitemap.xml)
@@ -279,9 +283,10 @@ function buildBatchReport() {
     '',
     '## What changed',
     '',
-    '- Rechecked the live Bear Lake School District root on 2026-06-24.',
+    '- Rechecked the live Bear Lake School District root and the remaining six unresolved county-bearing district hosts on 2026-06-25.',
     '- Confirmed the district-owned root publicly exposes an embedded `Special Education` route.',
     '- Confirmed the exact public Bear Lake Special Education leaf resolves cleanly and carries district-specific special-education text, director contact, and IDEA/FAPE/LRE language.',
+    '- Confirmed the remaining unresolved district hosts now fail into concrete negative checks: Camas/Oneida/Shoshone likely role-bearing leaves 404, Fremont keeps a live sitemap but no role-bearing URLs, Clark likely page guesses collapse into the same `News and Announcements` shell, and Jefferson likely leaf routes collapse into blank Incapsula-style shells.',
     '- Idaho remains blocked because the remaining county-bearing district roots still lack reusable role-bearing leaves and county-local remains blocked separately.',
   ].join('\n') + '\n';
 }
@@ -346,7 +351,10 @@ export function generateBatch335IdahoBearLakeReviewedDistrictLeafV1() {
   const updatedVerifiedRows = verifiedRows.map((row) => {
     if (row.family !== 'district_or_county_education_routing') return row;
 
-    const retainedSamples = (row.samples || []).filter((sample) => !/Bear Lake/i.test(sample.sample_name));
+    const retainedSamples = (row.samples || []).filter((sample) => (
+      !/Bear Lake/i.test(sample.sample_name)
+      && !/unresolved district remainder negative checks/i.test(sample.sample_name)
+    ));
     const bearLakeSample = {
       sample_name: 'Bear Lake School District reviewed district leaf',
       source_url: 'https://www.blsd.net/en-US/special-education-e92c299d',
@@ -358,7 +366,18 @@ export function generateBatch335IdahoBearLakeReviewedDistrictLeafV1() {
       evidence_snippet: 'Special Education - Bear Lake School District preserves district-owned special-education text, Special Education Director Holly Tanner contact, and IDEA/FAPE/LRE language on the exact public leaf.',
     };
 
-    const samples = [...retainedSamples, bearLakeSample];
+    const unresolvedRemainderSample = {
+      sample_name: 'Idaho unresolved district remainder negative checks',
+      source_url: 'https://www.jeffersonsd251.org/sitemap.xml',
+      final_url: 'https://www.jeffersonsd251.org/sitemap.xml',
+      verification_status: 'blocked',
+      source_type: 'bounded_negative_check_set',
+      source_table: 'batch335_idaho_bear_lake_reviewed_district_leaf',
+      fetched_at: '2026-06-25T00:00:00.000Z',
+      evidence_snippet: 'Fresh bounded checks kept the remaining county-bearing district roots closed: Camas and Oneida likely role-bearing leaves 404ed, Shoshone likely role-bearing leaves returned WordPress `Page not found`, Fremont kept a live sitemap but no role-bearing URLs and 404ed likely leaves, Clark likely Apptegy page guesses 404ed into the same `News and Announcements` shell, and Jefferson sitemap plus likely role-bearing routes collapsed into blank Incapsula-style shells.',
+    };
+
+    const samples = [...retainedSamples, bearLakeSample, unresolvedRemainderSample];
 
     return {
       ...row,
@@ -449,6 +468,7 @@ export function generateBatch335IdahoBearLakeReviewedDistrictLeafV1() {
       'oneida-id',
       'shoshone-id',
     ],
+    negative_check_refresh_date: '2026-06-25T00:00:00.000Z',
     lesson_added: lessonAdded,
   });
   fs.writeFileSync(OUTPUTS.report, buildBatchReport());

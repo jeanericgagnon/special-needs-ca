@@ -12,7 +12,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 - Alaska: `reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract`
 - Arizona: `ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves`
-- Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_still_lack_role_evidence`
+- Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_now_fail_into_404_or_blank_shell_negative_checks`
 - Maine: `official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `mde_description_page_is_live_mdeorg_root_flaps_between_live_glossary_and_radware_child_routes_stay_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated`
@@ -30,42 +30,47 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-Maine still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The official DOE selector/workbook lane is live and public across multiple first-party pages: the Primary Contacts By Organization selector, the Superintendent by SAU selector, the Superintendent by Town selector, and the SAU workbook all load on official Maine hosts. But the actual materialization lane is still broken in bounded low-token mode. Fresh Bangor submits across those first-party pages still return the same HTTP 500 NEO error shell instead of reusable local contact rows. The county-local blocker remains separate: the DHHS district office page lists office towns and contact details but still exposes no county or service-area crosswalk.
+Idaho still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The live Bear Lake School District root now exposes an embedded district-owned `Special Education` route, and the exact public leaf at `https://www.blsd.net/en-US/special-education-e92c299d` carries district-specific special-education text, director contact, and IDEA/FAPE/LRE language. That raises Idaho to thirteen reviewed county-grade district-owned education leaves. A fresh bounded recheck on 2026-06-25 then hardened the remainder instead of reopening it broadly: Camas and Oneida returned district-branded 404s on likely special-education or student-services leaves, Shoshone returned WordPress `Page not found` on the same role-bearing guesses, Fremont preserved a live sitemap but no role-bearing URLs and still 404ed likely leaf guesses, Clark page guesses all collapsed to the same `News and Announcements` shell, and Jefferson's sitemap plus likely role-bearing routes collapsed into blank Incapsula-style shells. The county-local blocker remains separate: Idaho DHW still preserves 17 clean exact office replacements plus the Canyon split, but still no public county-to-office contract for the remaining 27 counties.
 
 ### Exact Evidence Needed
 
-- A current official Maine DOE search or export response on any of the live first-party contact or superintendent selectors that returns real local rows instead of the generic HTTP 500 shell.
-- Or, an official Maine DOE workbook/export with county-grade contact fields rather than only municipality-to-organization mapping.
-- Separately, an official DHHS county or service-area crosswalk for office towns like Bangor, Calais, Machias, Portland, or Skowhegan.
+- Any current official district-owned special-education, special-services, student-services, or procedural-safeguards leaf on the remaining Idaho county-bearing district hosts for Camas, Clark, Fremont, Jefferson, Oneida, or Shoshone.
+- Or, any official county-grade Idaho SDE district/export contract that truthfully maps those counties to district-owned education-routing leaves.
+- Separately, any official Idaho DHW county-to-office or county-served contract for the 27 counties still blocked on legacy county-local routing.
 
 ### Useful Official URLs Already Tried
 
-- [Maine NEO Primary Contacts By Organization](https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU)
-- [Maine NEO Superintendent by SAU](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/SAU)
-- [Maine NEO Town selector](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town)
-- [Maine SAU workbook](https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx)
-- [Maine special education landing page](https://www.maine.gov/doe/learning/specialed)
-- [Maine DHHS district offices](https://www.maine.gov/dhhs/about/contact/offices)
+- [Idaho School Districts directory](https://www.sde.idaho.gov/school-districts/)
+- [Bear Lake School District root](https://www.blsd.net/)
+- [Bear Lake Special Education leaf](https://www.blsd.net/en-US/special-education-e92c299d)
+- [Camas County School District root](https://www.camascountyschools.org)
+- [Clark County School District 161 root](https://www.clarkcountyschools161.org/)
+- [Fremont County Joint School District #215 root](https://www.sd215.net/)
+- [Jefferson School District 251 root](https://www.jeffersonsd251.org/)
+- [Oneida School District root](https://www.oneidaschooldistrict.org/)
+- [Shoshone School District root](https://shoshonesd.org/)
+- [Idaho DHW office root](https://healthandwelfare.idaho.gov/offices)
+- [Idaho DHW sitemap](https://healthandwelfare.idaho.gov/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current official Maine DOE contact or superintendent selector result that yields real local rows instead of the generic HTTP 500 shell.
-- Any official DOE workbook or adjacent downloadable file that includes county, phone, email, superintendent, or special-education contact fields.
-- Any official DHHS county/service-area crosswalk for the named district-office towns.
+- Any exact district-owned local leaf on the remaining uncovered Idaho district hosts that explicitly carries `Special Education`, `Special Services`, `Student Services`, `504`, or procedural-safeguards role text.
+- Any official Idaho SDE or district export that yields county-grade education routing without relying on generic statewide fallback.
+- Any official Idaho DHW county-to-office contract or county-served metadata on the public office stack.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
-2. Arizona
-3. Massachusetts
-4. New Mexico
-5. South Dakota
-6. Rhode Island
-7. Virginia
-8. West Virginia
-9. North Dakota
-10. Wisconsin
+1. Arizona
+2. Massachusetts
+3. New Mexico
+4. South Dakota
+5. Rhode Island
+6. Virginia
+7. West Virginia
+8. North Dakota
+9. Wisconsin
+10. Washington
