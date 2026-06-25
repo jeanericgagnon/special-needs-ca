@@ -563,3 +563,9 @@
 
 ### A Statewide Family Cannot Stay Verified After Its Only Official Proof Lane Turns Into The Blocker
 *   **Lesson:** If the only saved official sample for a statewide family is now the same live blocked host-family as the local routing lane, downgrade the statewide family too instead of preserving the older green label. New Hampshire special education could not stay `verified_state_grade` once the DOE root, district-profile leaves, alternate DOE host, and obvious `nh.gov` successors all replayed the same short `Access Denied` shell.
+
+### County-Bearing District Names Do Not Equal County Routing
+*   **Lesson:** If an official district directory or page JSON preserves district names that happen to contain county words, do not treat that as a county-routing contract. Idaho’s SDE School Districts page named districts like `Blaine County District #61` and `Boundary County District #101`, but it still had no county field, no county filter, and no special-education contacts, so the family stayed blocked until district-owned leaves are reviewed.
+
+### District-Hosted Child Find Flyers Still Need Local Routing Evidence
+*   **Lesson:** A district-hosted file with a promising title like `Child Find` still does not clear a local education-routing blocker unless the reviewed artifact preserves district-specific routing or contact evidence. Idaho Clark linked official `Idaho Child Find` PDFs from its Parent Resources page, but bounded inspection only confirmed image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, or special-education routing terms.

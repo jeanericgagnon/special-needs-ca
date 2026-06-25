@@ -37,13 +37,17 @@ const FAILURE_CODE =
 const NEXT_ACTION =
   'continue_exact_district_leaf_expansion_only_when_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact';
 const DISTRICT_REASON =
-  'Reviewed 2026-06-25 one more bounded official Idaho district pass on the residual two-district remainder and tightened both weak-lead lanes. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone, and the only additional same-host attachment discovered from that page is a linked Google Doc that resolves to a board-of-trustees roster rather than special-education, student-services, 504, Child Find, or procedural-safeguards routing. Clark still materially exposes reviewed district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves, and the parent-notification page links district-hosted PDF attachments. But those attachments remain part of the same general-education intervention notice lane, not a local special-education or student-services routing contract with district special-ed contact evidence. Idaho therefore remains blocked, but the residual education remainder is now sharper than generic wrong-role leaves: the surviving Camas and Clark artifacts are real and public, yet they are still the wrong role for local special-education routing.';
+  'Reviewed 2026-06-25 one more bounded official Idaho district pass on the residual two-district remainder and tightened both weak-lead lanes. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone, and the only additional same-host attachment discovered from that page is a linked Google Doc that resolves to a board-of-trustees roster rather than special-education, student-services, 504, Child Find, or procedural-safeguards routing. Clark still materially exposes reviewed district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page links district-hosted PDFs whose filenames and bounded binary inspection confirmed the same general-education intervention notice lane. The Parent Resources page also links district-hosted `Idaho Child Find` PDFs, but bounded live inspection showed only image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence. Idaho therefore remains blocked, but the residual education remainder is now sharper than generic wrong-role leaves: the surviving Camas and Clark artifacts are real and public, yet they are still the wrong role or too thin to serve as local special-education routing proof.';
 const DISTRICT_EVIDENCE =
-  'Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, the district-linked Google Doc exported from `https://docs.google.com/document/d/1OHWebOtQk9Wvwy8zMd5eFYwub5xPQ7Pg_nnMT20hOOA/export?format=txt`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction`, and the district-hosted parent-notification PDF attachments linked from that page. The Camas root stayed live and the Contact Information page still only preserved district address and phone; the district-linked Google Doc exported as a board-of-trustees roster with zone names and trustee names, not special-education or student-services routing. Clark stayed live and still exposed exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves. The parent-notification page linked district-hosted PDFs whose filenames and bounded binary inspection confirmed the same general-education intervention notice lane; they did not add district special-education contact routing. Idaho therefore remains blocked because the remaining Camas and Clark surfaces are public and reviewable but still the wrong role for local special-education routing.';
+  'Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, the district-linked Google Doc exported from `https://docs.google.com/document/d/1OHWebOtQk9Wvwy8zMd5eFYwub5xPQ7Pg_nnMT20hOOA/export?format=txt`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction`, `https://www.clarkcountyschools161.org/parent-resources`, and the district-hosted PDF attachments linked from those Clark pages. The Camas root stayed live and the Contact Information page still only preserved district address and phone; the district-linked Google Doc exported as a board-of-trustees roster with zone names and trustee names, not special-education or student-services routing. Clark stayed live and still exposed exact district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page linked district-hosted PDFs whose filenames and bounded binary inspection confirmed the same general-education intervention notice lane. The Parent Resources page linked district-hosted `Idaho Child Find` flyers, but bounded live inspection only confirmed image-only PDF artifacts titled `Child Find Flyer 2025-2026 English` and `Child Find Flyer 2025-2026 Spanish` without extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence. Idaho therefore remains blocked because the remaining Camas and Clark surfaces are public and reviewable but still the wrong role or too thin for local special-education routing.';
 const LESSON_HEADING =
   '### District-Linked Attachments Still Fail If They Resolve To Board Rosters Or General-Education Notices';
 const LESSON_BODY =
   '*   **Lesson:** If a remaining district contact or notice page links a same-host or district-linked attachment, inspect it once before assuming it opens a new local-routing lane. Idaho Camas linked a Google Doc that resolved only to a board-of-trustees roster, and Clark linked district-hosted PDFs that stayed within a general-education intervention notice lane, so neither attachment upgraded the special-education blocker.';
+const CHILD_FIND_LESSON_HEADING =
+  '### District-Hosted Child Find Flyers Still Need Local Routing Evidence';
+const CHILD_FIND_LESSON_BODY =
+  '*   **Lesson:** A district-hosted file with a promising title like `Child Find` still does not clear a local education-routing blocker unless the reviewed artifact preserves district-specific routing or contact evidence. Idaho Clark linked official `Idaho Child Find` PDFs from its Parent Resources page, but bounded inspection only confirmed image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, or special-education routing terms.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -74,9 +78,18 @@ function replaceSample(samples, sampleName, replacement) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
-  return true;
+  let next = current;
+  let changed = false;
+  if (!next.includes(LESSON_HEADING)) {
+    next = `${next.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`;
+    changed = true;
+  }
+  if (!next.includes(CHILD_FIND_LESSON_HEADING)) {
+    next = `${next.trimEnd()}\n\n${CHILD_FIND_LESSON_HEADING}\n${CHILD_FIND_LESSON_BODY}\n`;
+    changed = true;
+  }
+  if (changed) fs.writeFileSync(filePath, next);
+  return changed;
 }
 
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
@@ -109,13 +122,13 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '- Idaho remains BLOCKED and not index-safe.',
     '- County-local remains explicitly split between the existing clean exact-office replacements and the legacy counties that still lack a public county contract.',
-    '- Education is narrower again: the residual remainder is now specifically Camas and Clark wrong-role contact, board-roster, Title IX, and general-education-notice lanes rather than any unknown district root.',
+    '- Education is narrower again: the residual remainder is now specifically Camas and Clark wrong-role contact, board-roster, Title IX, general-education-notice, and image-only Child Find flyer lanes rather than any unknown district root.',
   ].join('\n') + '\n';
 }
 
 function buildAllStateReport(text) {
   const lines = text.split('\n').filter((line) => !line.startsWith('- Idaho remains blocked'));
-  const next = '- Idaho remains blocked after a final Camas-and-Clark attachment pass: Camas only exposes contact routing plus a board-roster Google Doc, and Clark only exposes Contact Us, Title IX, and general-education notice attachments, not local special-education routing.';
+  const next = '- Idaho remains blocked after a final Camas-and-Clark attachment pass: Camas only exposes contact routing plus a board-roster Google Doc, and Clark only exposes Contact Us, Title IX, general-education notice attachments, and image-only Child Find flyers without local special-education routing proof.';
   return `${lines.join('\n').trimEnd()}\n${next}\n`;
 }
 
@@ -147,12 +160,12 @@ function buildHandoff(allStateAudit) {
     '',
     '### Blocker Reason',
     '',
-    '`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now fully reduced to Camas and Clark wrong-role artifacts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont still clears from the public official Apptegy events API. Shoshone still clears from the district-owned `Early Childhood Find` page. Camas only exposes a district-owned `Contact Information` leaf with address and phone, and the one linked document on that page exports as a board-of-trustees roster rather than a local special-education route. Clark exposes exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves, and that parent-notification page links district-hosted PDFs, but they remain part of the same general-education intervention notice lane rather than local special-education or student-services routing. Idaho remains BLOCKED because the remaining district-owned surfaces are real but still the wrong role for local special-education routing.',
+    '`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now fully reduced to Camas and Clark wrong-role artifacts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont still clears from the public official Apptegy events API. Shoshone still clears from the district-owned `Early Childhood Find` page. Camas only exposes a district-owned `Contact Information` leaf with address and phone, and the one linked document on that page exports as a board-of-trustees roster rather than a local special-education route. Clark exposes exact district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page links district-hosted PDFs that remain part of a general-education intervention notice lane, and the Parent Resources page links official `Idaho Child Find` PDFs that still do not preserve extractable local Clark routing or contact evidence. Idaho remains BLOCKED because the remaining district-owned surfaces are real but still the wrong role or too thin for local special-education routing.',
     '',
     '### Exact Evidence Needed',
     '',
     '- Any official district-owned special-education, special-services, student-services, 504, Child Find, or procedural-safeguards leaf on Camas or Clark that also preserves local contact or routing evidence.',
-    '- Any district-owned PDF, handbook, or notice on those two hosts that explicitly preserves special-education routing plus named district contact information.',
+    '- Any district-owned PDF, handbook, or notice on those two hosts that explicitly preserves special-education routing plus named district contact information rather than only a board roster, general-education notice, or image-only Child Find flyer.',
     '- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.',
     '',
     '### Useful Official URLs Already Tried',
@@ -164,6 +177,7 @@ function buildHandoff(allStateAudit) {
     '- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)',
     '- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)',
     '- [Clark Parent Notification of General Education Instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)',
+    '- [Clark Parent Resources](https://www.clarkcountyschools161.org/parent-resources)',
     '- [Oneida Child Find PDF](https://5il.co/26a73)',
     '- [Fremont district events API](https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events)',
     '- [Shoshone Early Childhood Find](https://shoshonesd.org/early-childhood-find/)',
@@ -189,7 +203,7 @@ function buildBatchReport() {
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: tightened the residual Idaho education blocker by proving the last Camas and Clark attachments are still wrong-role artifacts',
+    '- change: tightened the residual Idaho education blocker by proving the last Camas and Clark attachments and Child Find flyers are still insufficient local-routing artifacts',
     '',
     '## Evidence',
     '',
@@ -299,6 +313,16 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-owned page title is `Parent Notification of General Education Instruction`; it preserves general-education intervention notice routing, not special-education, student-services, 504, or procedural-safeguards routing.',
     });
+    replaceSample(samples, 'Clark Parent Resources leaf', {
+      sample_name: 'Clark Parent Resources leaf',
+      source_url: 'https://www.clarkcountyschools161.org/parent-resources',
+      final_url: 'https://www.clarkcountyschools161.org/parent-resources',
+      verification_status: 'reviewed',
+      source_type: 'official_parent_resources_leaf_with_child_find_links_but_no_local_special_education_routing',
+      source_table: BATCH_NAME,
+      fetched_at: '2026-06-25T00:00:00.000Z',
+      evidence_snippet: 'The district-owned Parent Resources page links Idaho Child Find English and Spanish PDFs, but the page itself still preserves no district special-education contact, student-services contact, or local routing language.',
+    });
     replaceSample(samples, 'Clark district-hosted parent-notification PDF attachments', {
       sample_name: 'Clark district-hosted parent-notification PDF attachments',
       source_url: 'https://resources.finalsite.net/images/v1731011152/clarkcountyschools161org/ax3e7hf8qqxwse8gdgde/ParentNotificationofGeneralEducationInstructionInterventionFINAL10302024PDF.pdf',
@@ -309,14 +333,24 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-hosted attachments sit behind the Parent Notification of General Education Instruction page and remain part of the same general-education intervention notice lane, not a local special-education or student-services routing contract.',
     });
+    replaceSample(samples, 'Clark district-hosted Child Find flyers', {
+      sample_name: 'Clark district-hosted Child Find flyers',
+      source_url: 'https://resources.finalsite.net/images/v1761760861/clarkcountyschools161org/okrhbefejmucrlv1evy1/ChildFindFlyer2025-2026English.pdf',
+      final_url: 'https://resources.finalsite.net/images/v1761760861/clarkcountyschools161org/okrhbefejmucrlv1evy1/ChildFindFlyer2025-2026English.pdf',
+      verification_status: 'reviewed',
+      source_type: 'district_hosted_child_find_flyers_without_extractable_local_routing',
+      source_table: BATCH_NAME,
+      fetched_at: '2026-06-25T00:00:00.000Z',
+      evidence_snippet: 'The district-hosted Child Find flyer PDFs linked from Parent Resources are live, but bounded inspection only confirms image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence.',
+    });
 
     return {
       ...row,
       family_status: DISTRICT_STATUS,
-      sample_count: 39,
+      sample_count: 41,
       blocker_code: FAILURE_CODE,
       blocker_evidence: DISTRICT_EVIDENCE,
-      query_basis: 'Reviewed the residual Camas and Clark official district leaves again, plus the one district-linked Camas document and the district-hosted Clark parent-notification PDF attachments, while preserving Jefferson, Oneida, Fremont, and Shoshone as positive local routing recoveries.',
+      query_basis: 'Reviewed the residual Camas and Clark official district leaves again, plus the one district-linked Camas document, the district-hosted Clark parent-notification attachments, and the district-hosted Clark Child Find flyers, while preserving Jefferson, Oneida, Fremont, and Shoshone as positive local routing recoveries.',
       samples,
     };
   });
@@ -369,9 +403,12 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
     clark_parent_notification_leaf_live: true,
     clark_parent_notification_pdf_live: true,
     clark_parent_notification_pdf_is_general_education_notice_lane: true,
+    clark_parent_resources_leaf_live: true,
+    clark_child_find_flyers_live: true,
+    clark_child_find_flyers_image_only_or_no_local_contact: true,
     remaining_wrong_role_districts: 2,
     county_crosswalk_found: false,
-    result: 'camas_and_clark_attachments_reviewed_but_still_wrong_role_for_local_special_education_routing',
+    result: 'camas_and_clark_attachments_and_child_find_flyers_reviewed_but_still_insufficient_for_local_special_education_routing',
   };
 
   writeJson(INPUTS.summary, updatedSummary);

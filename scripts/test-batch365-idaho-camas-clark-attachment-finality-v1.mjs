@@ -42,19 +42,23 @@ assert.equal(summary.familyStatuses.district_or_county_education_routing, 'block
 const districtGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtGap.family_status, 'blocked_remaining_camas_and_clark_surfaces_only_materialize_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_after_shoshone_recovery');
 assert.match(districtGap.status_reason, /linked Google Doc that resolves to a board-of-trustees roster/i);
-assert.match(districtGap.status_reason, /parent-notification page links district-hosted PDF attachments/i);
-assert.match(districtGap.status_reason, /general-education intervention notice lane/i);
+assert.match(districtGap.status_reason, /parent-notification page links district-hosted PDFs/i);
+assert.match(districtGap.status_reason, /Parent Resources page also links district-hosted `Idaho Child Find` PDFs/i);
+assert.match(districtGap.status_reason, /image-only flyer artifacts/i);
 
 const districtFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtFailure.failure_code, 'remaining_camas_and_clark_surfaces_materialize_contact_board_roster_title_ix_or_general_education_notice_leaves_but_zero_role_bearing_special_education_or_student_services_routing');
 assert.match(districtFailure.evidence, /board-of-trustees roster/i);
-assert.match(districtFailure.evidence, /district-hosted parent-notification PDF attachments/i);
-assert.match(districtFailure.evidence, /general-education intervention notice lane/i);
+assert.match(districtFailure.evidence, /district-hosted PDF attachments linked from those Clark pages/i);
+assert.match(districtFailure.evidence, /district-hosted `Idaho Child Find` flyers/i);
+assert.match(districtFailure.evidence, /image-only PDF artifacts titled `Child Find Flyer 2025-2026 English`/i);
 
 const districtVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Camas linked Google Doc board roster'));
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Clark district-hosted parent-notification PDF attachments'));
-assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Shoshone Early Childhood Find page' && row.verification_status === 'verified'));
+assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Clark Parent Resources leaf'));
+assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Clark district-hosted Child Find flyers'));
+assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Idaho School Districts page' && row.verification_status === 'verified'));
 
 const districtNext = nextRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtNext.next_action, 'continue_exact_district_leaf_expansion_only_when_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact');
@@ -69,23 +73,27 @@ assert.equal(auditRow.packetPrimaryGapReason, 'remaining_idaho_camas_and_clark_s
 assert.equal(auditRow.completenessPct, 87);
 assert.equal(auditRow.familyStatuses.district_or_county_education_routing, 'blocked_remaining_camas_and_clark_surfaces_only_materialize_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_after_shoshone_recovery');
 
-assert.match(stateReport, /Camas and Clark wrong-role contact, board-roster, Title IX, and general-education-notice lanes/i);
-assert.match(allStateReport, /Camas only exposes contact routing plus a board-roster Google Doc/i);
+assert.match(stateReport, /Camas and Clark wrong-role contact, board-roster, Title IX, general-education-notice, and image-only Child Find flyer lanes/i);
+assert.match(allStateReport, /image-only Child Find flyers without local special-education routing proof/i);
 assert.match(handoff, /Current Focus State: Idaho/);
 assert.match(handoff, /one linked document on that page exports as a board-of-trustees roster/i);
-assert.match(handoff, /district-hosted PDFs, but they remain part of the same general-education intervention notice lane/i);
+assert.match(handoff, /Parent Resources page links official `Idaho Child Find` PDFs that still do not preserve extractable local Clark routing or contact evidence/i);
 assert.match(handoff, /1\. New Mexico/);
 assert.match(handoff, /2\. Arizona/);
 assert.match(handoff, /3\. New Hampshire/);
 assert.match(lessons, /District-Linked Attachments Still Fail If They Resolve To Board Rosters Or General-Education Notices/);
+assert.match(lessons, /District-Hosted Child Find Flyers Still Need Local Routing Evidence/);
 
 assert.equal(batchSummary.camas_contact_leaf_live, true);
 assert.equal(batchSummary.camas_google_doc_live, true);
 assert.equal(batchSummary.camas_google_doc_is_board_roster, true);
 assert.equal(batchSummary.clark_parent_notification_pdf_live, true);
 assert.equal(batchSummary.clark_parent_notification_pdf_is_general_education_notice_lane, true);
+assert.equal(batchSummary.clark_parent_resources_leaf_live, true);
+assert.equal(batchSummary.clark_child_find_flyers_live, true);
+assert.equal(batchSummary.clark_child_find_flyers_image_only_or_no_local_contact, true);
 assert.equal(batchSummary.remaining_wrong_role_districts, 2);
-assert.equal(batchSummary.result, 'camas_and_clark_attachments_reviewed_but_still_wrong_role_for_local_special_education_routing');
-assert.match(batchReport, /last Camas and Clark attachments are still wrong-role artifacts/i);
+assert.equal(batchSummary.result, 'camas_and_clark_attachments_and_child_find_flyers_reviewed_but_still_insufficient_for_local_special_education_routing');
+assert.match(batchReport, /attachments and Child Find flyers are still insufficient local-routing artifacts/i);
 
 console.log('test-batch365-idaho-camas-clark-attachment-finality-v1: ok');

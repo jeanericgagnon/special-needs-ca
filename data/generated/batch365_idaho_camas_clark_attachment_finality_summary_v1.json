@@ -10,7 +10,10 @@
   "clark_parent_notification_leaf_live": true,
   "clark_parent_notification_pdf_live": true,
   "clark_parent_notification_pdf_is_general_education_notice_lane": true,
+  "clark_parent_resources_leaf_live": true,
+  "clark_child_find_flyers_live": true,
+  "clark_child_find_flyers_image_only_or_no_local_contact": true,
   "remaining_wrong_role_districts": 2,
   "county_crosswalk_found": false,
-  "result": "camas_and_clark_attachments_reviewed_but_still_wrong_role_for_local_special_education_routing"
+  "result": "camas_and_clark_attachments_and_child_find_flyers_reviewed_but_still_insufficient_for_local_special_education_routing"
 }
