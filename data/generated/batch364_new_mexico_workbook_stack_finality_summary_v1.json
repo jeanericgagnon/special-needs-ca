@@ -5,7 +5,9 @@
   "webed_sharepoint_home_live": true,
   "webed_rest_backed_school_list_live": true,
   "public_workbooks_verified_live": 6,
+  "site_pages_verified_live": 5,
   "public_workbooks_with_county_field": 0,
   "public_workbooks_with_rec_service_area_field": 0,
+  "public_site_pages_with_county_crosswalk": 0,
   "result": "official_webed_lists_and_six_public_workbooks_live_but_no_county_crosswalk_or_rec_service_area_contract"
 }

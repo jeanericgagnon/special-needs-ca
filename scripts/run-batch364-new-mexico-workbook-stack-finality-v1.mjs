@@ -37,14 +37,18 @@ const FAILURE_CODE =
 const NEXT_ACTION =
   'author_official_county_crosswalk_from_webed_directory_or_rec_contract';
 const DISTRICT_REASON =
-  'Reviewed 2026-06-25 one more bounded official New Mexico education directory pass on the live PED-managed SharePoint host. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. But that fuller official export stack still stops short of county-grade routing. `NM Schools.xlsx` preserves `District Name`, `District Code`, `District Type`, `Location Name`, `Location Address`, `Location City`, `State`, `Zip`, `School Level`, `Location Type`, `Location Status`, and `Location Phone Number`, but no county field. `Superintendents.xlsx` preserves district names, codes, contacts, and addresses, but no county field. `REC Directors.xlsx` preserves only REC number, director, addresses, phone, fax, and email, but no county-service-area field. The elementary, middle, and high school principal workbooks each preserve school/district/contact columns, but no county field. The public `RECHome.aspx` page is also live and still groups districts under REC headings rather than exposing counties or REC service-area labels. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED directory artifacts.';
+  'Reviewed 2026-06-25 one more bounded official New Mexico education directory pass on the live PED-managed SharePoint host. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public list fields still expose district, REC, location, address, city, zip, and code columns but no county or service-area field; the public `Document Library` contains only those six workbook files; and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. But that fuller official export stack still stops short of county-grade routing. `NM Schools.xlsx` preserves `District Name`, `District Code`, `District Type`, `Location Name`, `Location Address`, `Location City`, `State`, `Zip`, `School Level`, `Location Type`, `Location Status`, and `Location Phone Number`, but no county field. `Superintendents.xlsx` preserves district names, codes, contacts, and addresses, but no county field. `REC Directors.xlsx` preserves only REC number, director, addresses, phone, fax, and email, but no county-service-area field. The elementary, middle, and high school principal workbooks each preserve school/district/contact columns, but no county field. The public `RECHome.aspx` page is also live and still groups districts under REC headings rather than exposing counties or REC service-area labels. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED directory artifacts.';
 const DISTRICT_EVIDENCE =
-  'Reviewed 2026-06-25 bounded official New Mexico PED SharePoint surfaces on `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx`, the public SharePoint REST inventory for that list, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx`, and `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx`. The official SharePoint host is genuinely live and materially useful, but every public list and workbook still omits county or REC service-area fields. The `2017 NM Schools` list and `NM Schools.xlsx` expose district/location columns only; `Superintendents.xlsx` exposes district contact columns only; `REC Directors.xlsx` exposes REC number/director/address/phone only; and the principal workbooks expose district/location/contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or service-area text. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED education inventory.';
+  'Reviewed 2026-06-25 bounded official New Mexico PED SharePoint surfaces on `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx`, the public SharePoint REST inventory and field schema for that list family, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx`, and `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx`. The official SharePoint host is genuinely live and materially useful, but every public list and workbook still omits county or REC service-area fields. The reviewed public list fields preserve district, location, address, city, zip, REC number, and code columns only. The public `Document Library` inventory closes at six workbook files and `SitePages` closes at five public pages, none of which is a county crosswalk or REC service-area contract. The `2017 NM Schools` list and `NM Schools.xlsx` expose district/location columns only; `Superintendents.xlsx` exposes district contact columns only; `REC Directors.xlsx` exposes REC number/director/address/phone only; and the principal workbooks expose district/location/contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or service-area text. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED education inventory.';
 
 const LESSON_HEADING =
   '### Live SharePoint Workbook Stacks Without County Fields Are Final Negative Evidence';
 const LESSON_BODY =
   '*   **Lesson:** If a live official SharePoint directory host exposes not just one export but the full public workbook stack for schools, superintendents, REC directors, and principals, inspect the header rows before reopening local-routing discovery. New Mexico PED\'s six public workbooks were all real and current, but every one still omitted county or REC service-area fields, so the honest blocker stayed `missing county crosswalk` rather than `missing public directory`.';
+const INVENTORY_LESSON_HEADING =
+  '### SharePoint Folder Inventories Can Close Official Discovery Without Crawling';
+const INVENTORY_LESSON_BODY =
+  '*   **Lesson:** When a PED-style SharePoint host is already public, inspect both the public field schema and the public folder inventories before reopening discovery. New Mexico\'s WebED host closed cleanly at six workbook files and five site pages, and the field schemas still lacked county/service-area columns, so we could preserve the blocker without broad crawling or speculative leaf hunting.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -75,8 +79,19 @@ function replaceSample(samples, sampleName, replacement) {
 
 function appendLessonIfMissing(filePath) {
   const current = fs.readFileSync(filePath, 'utf8');
-  if (current.includes(LESSON_HEADING)) return false;
-  fs.writeFileSync(filePath, `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`);
+  let next = current.trimEnd();
+  let changed = false;
+  if (!current.includes(LESSON_HEADING)) {
+    next = `${next}\n\n${LESSON_HEADING}\n${LESSON_BODY}`;
+    changed = true;
+  }
+  if (!current.includes(INVENTORY_LESSON_HEADING)) {
+    next = `${next}\n\n${INVENTORY_LESSON_HEADING}\n${INVENTORY_LESSON_BODY}`;
+    changed = true;
+  }
+  if (changed) {
+    fs.writeFileSync(filePath, `${next}\n`);
+  }
   return true;
 }
 
@@ -109,6 +124,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '## Current education-host finality',
     '',
     '- The live official WebED host is now stronger than a single-workbook blocker: the public SharePoint list, REST inventory, REC grouping page, and six public workbooks are all reviewable on the PED-managed host.',
+    '- The same host now also has a closed public inventory on disk: the `Document Library` exposes only six workbook files and `SitePages` exposes only five public pages, none of which is a county crosswalk or REC service-area contract.',
     '- That broader official stack still does not expose a county field or REC county-service-area field in any reviewed public list or workbook.',
     '- New Mexico therefore remains blocked on an absent official county crosswalk or county-labeled REC contract, not on absence of public PED directory artifacts.',
     '',
@@ -123,7 +139,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
 
 function buildAllStateReport(text) {
   const lines = text.split('\n').filter((line) => !line.startsWith('- New Mexico remains BLOCKED/index-safe=false'));
-  const next = '- New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the fuller official failure mode: the live PED SharePoint directory host, its REST-backed `2017 NM Schools` list, the REC grouping page, and six public workbooks for schools, superintendents, REC directors, and principals are all reviewable, but none publishes a county field or REC county-service-area contract.';
+  const next = '- New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the fuller official failure mode: the live PED SharePoint directory host, its REST-backed `2017 NM Schools` list, the REC grouping page, the complete six-file public workbook library, and the five public SharePoint site pages are all reviewable, but none publishes a county field or REC county-service-area contract.';
   return `${lines.join('\n').trimEnd()}\n${next}\n`;
 }
 
@@ -155,7 +171,7 @@ function buildHandoff(allStateAudit) {
     '',
     '### Blocker Reason',
     '',
-    '`district_or_county_education_routing` is still the highest-priority New Mexico blocker, but the official failure mode is now more exhaustive than the earlier packet. The live PED-managed SharePoint host preserves the public `2017 NM Schools` list with REST-backed rows, the public `RECHome.aspx` grouping page, and six public workbook exports: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`. That broader official stack proves the state has a public directory lane, but every reviewed list and workbook still omits county or REC service-area fields. `NM Schools.xlsx` and the REST list preserve district/location columns only. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.',
+    '`district_or_county_education_routing` is still the highest-priority New Mexico blocker, but the official failure mode is now more exhaustive than the earlier packet. The live PED-managed SharePoint host preserves the public `2017 NM Schools` list with REST-backed rows, the public `RECHome.aspx` grouping page, six public workbook exports (`NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`), and a closed public folder inventory of five site pages and six workbook files. That broader official stack proves the state has a public directory lane, but every reviewed list, workbook, and public page still omits county or REC service-area fields. `NM Schools.xlsx` and the REST list preserve district/location columns only. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.',
     '',
     '### Exact Evidence Needed',
     '',
@@ -338,8 +354,10 @@ export function generateBatch364NewMexicoWorkbookStackFinalityV1() {
     webed_sharepoint_home_live: true,
     webed_rest_backed_school_list_live: true,
     public_workbooks_verified_live: 6,
+    site_pages_verified_live: 5,
     public_workbooks_with_county_field: 0,
     public_workbooks_with_rec_service_area_field: 0,
+    public_site_pages_with_county_crosswalk: 0,
     result: 'official_webed_lists_and_six_public_workbooks_live_but_no_county_crosswalk_or_rec_service_area_contract',
   };
 

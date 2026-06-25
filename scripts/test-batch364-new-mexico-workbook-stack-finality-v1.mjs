@@ -43,12 +43,16 @@ assert.equal(districtGap.family_status, 'blocked_official_sharepoint_lists_and_s
 assert.match(districtGap.status_reason, /Elementary School Principals\.xlsx/i);
 assert.match(districtGap.status_reason, /Middle School Principals\.xlsx/i);
 assert.match(districtGap.status_reason, /High School Principals\.xlsx/i);
+assert.match(districtGap.status_reason, /Document Library` contains only those six workbook files/i);
+assert.match(districtGap.status_reason, /SitePages` contains only `Home\.aspx`, `RECHome\.aspx`, `How To Use This Library\.aspx`, `Home1\.aspx`, and `untitled_1\.aspx`/i);
 assert.match(districtGap.status_reason, /still stops short of county-grade routing/i);
 
 const districtFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtFailure.failure_code, 'official_webed_sharepoint_lists_and_six_public_workbooks_verified_live_but_no_county_crosswalk_or_rec_service_area_contract');
 assert.match(districtFailure.evidence, /principal workbooks expose district\/location\/contact columns only/i);
 assert.match(districtFailure.evidence, /REC Directors\.xlsx/i);
+assert.match(districtFailure.evidence, /Document Library` inventory closes at six workbook files/i);
+assert.match(districtFailure.evidence, /SitePages` closes at five public pages/i);
 
 const districtVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(districtVerified.samples.some((row) => row.sample_name === 'Elementary School Principals workbook'));
@@ -69,20 +73,26 @@ assert.equal(auditRow.packetPrimaryGapReason, 'official_webed_sharepoint_lists_a
 assert.equal(auditRow.familyStatuses.district_or_county_education_routing, 'blocked_official_sharepoint_lists_and_six_public_workbooks_live_but_verified_county_crosswalk_still_missing');
 
 assert.match(stateReport, /public workbook stack is broader than the earlier packet captured/i);
+assert.match(stateReport, /six workbook files and `SitePages` exposes only five public pages/i);
 assert.match(stateReport, /REC county-service-area field/i);
-assert.match(allStateReport, /six public workbooks for schools, superintendents, REC directors, and principals/i);
+assert.match(allStateReport, /complete six-file public workbook library/i);
+assert.match(allStateReport, /five public SharePoint site pages/i);
 assert.match(handoff, /Current Focus State: New Mexico/);
 assert.match(handoff, /six public workbook exports/i);
+assert.match(handoff, /closed public folder inventory of five site pages and six workbook files/i);
 assert.match(handoff, /Elementary School Principals\.xlsx/i);
 assert.ok(handoff.includes('1. Arizona'));
 assert.ok(handoff.includes('2. New Hampshire'));
 assert.match(lessons, /Live SharePoint Workbook Stacks Without County Fields Are Final Negative Evidence/);
+assert.match(lessons, /SharePoint Folder Inventories Can Close Official Discovery Without Crawling/);
 
 assert.equal(batchSummary.webed_sharepoint_home_live, true);
 assert.equal(batchSummary.webed_rest_backed_school_list_live, true);
 assert.equal(batchSummary.public_workbooks_verified_live, 6);
+assert.equal(batchSummary.site_pages_verified_live, 5);
 assert.equal(batchSummary.public_workbooks_with_county_field, 0);
 assert.equal(batchSummary.public_workbooks_with_rec_service_area_field, 0);
+assert.equal(batchSummary.public_site_pages_with_county_crosswalk, 0);
 assert.equal(batchSummary.result, 'official_webed_lists_and_six_public_workbooks_live_but_no_county_crosswalk_or_rec_service_area_contract');
 assert.match(batchReport, /widened the official New Mexico PED blocker evidence/i);
 

@@ -545,3 +545,6 @@
 
 ### District-Linked Attachments Still Fail If They Resolve To Board Rosters Or General-Education Notices
 *   **Lesson:** If a remaining district contact or notice page links a same-host or district-linked attachment, inspect it once before assuming it opens a new local-routing lane. Idaho Camas linked a Google Doc that resolved only to a board-of-trustees roster, and Clark linked district-hosted PDFs that stayed within a general-education intervention notice lane, so neither attachment upgraded the special-education blocker.
+
+### SharePoint Folder Inventories Can Close Official Discovery Without Crawling
+*   **Lesson:** When a PED-style SharePoint host is already public, inspect both the public field schema and the public folder inventories before reopening discovery. New Mexico's WebED host closed cleanly at six workbook files and five site pages, and the field schemas still lacked county/service-area columns, so we could preserve the blocker without broad crawling or speculative leaf hunting.
