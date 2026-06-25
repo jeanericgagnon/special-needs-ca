@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 83
 - county_count: 15
-- primary_gap_reason: three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments
+- primary_gap_reason: azed_host_challenged_and_ahcccs_county_mapping_requires_reviewed_admin_html_leaves_or_explicit_ocr_artifact
 
 ## Family status
 
@@ -20,12 +20,12 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract (Reviewed 2026-06-23 the live Arizona county-local fallback pages more tightly. The DES root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap lanes are still Cloudflare 403 shells. The accessible AHCCCS fallback lane is public and preserves seven named ALTCS office cards in raw HTML for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma, and the official ALTCS county map PDF is partly parseable for county names, but neither artifact provides a county-to-office table or county assignment contract. Arizona therefore still lacks county-grade official office routing.)
+- county_local_disability_resources: blocked_admin_mapping_artifact_missing (Arizona county-local routing is now blocked on the missing admin-mapping artifact itself, not on generic source discovery. The official ALTCS county map PDF is partially text-extractable and the AHCCCS host still exposes named ALTCS office leaves, but the county-to-office contract remains trapped in CountyAdminOffice and PimaCountyAdmin PDFs that the current repo/runtime cannot OCR or rasterize. Without reviewed AHCCCS admin HTML leaves or a committed OCR artifact, county-grade office routing cannot be truthfully rewritten.)
 
 ## Failure ledger
 
 - district_or_county_education_routing: three_reviewed_public_district_domains_exhaust_sitemaps_wp_api_and_exact_slug_replays_without_role_leafs :: Reviewed 2026-06-23 one more bounded Arizona district-owned official API and exact-slug pass for the final three unresolved education counties. https://www.ccasdaz.org/ stayed live, and https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10 returned HTTP 200, but the official WordPress search only replayed false-positive Governing Board and staff records rather than a role-bearing special-education or student-services leaf; the official page-sitemap.xml and post-sitemap.xml still exposed zero matching role paths. https://www.mohavelearning.org/ stayed live, but exact Finalsite-style role candidates at /fs/pages/504, /fs/pages/special-education, /fs/pages/student-services, and /fs/pages/special-services all returned 404. https://www.yavapaicountyhighschool.com/ stayed live and its /page/contact-us/ route returned HTTP 200, proving the public page namespace is real, but /page/special-education/, /page/student-services/, and /page/504/ all returned 404. The remaining Arizona education blocker is now source-final on three reviewed public domains that still lack role-bearing local leaves even after sitemap, API, and exact-slug replay.
-- county_local_disability_resources: des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract :: Reviewed 2026-06-23 bounded Arizona county-local fallback pages after the earlier DES challenge findings and the official AHCCCS PDF lane. The DES host family remains challenge-blocked on the known office-locator and benefits roots. The accessible AHCCCS fallback lane is live and stronger than previously recorded: https://www.azahcccs.gov/members/ALTCSlocations.html returned HTTP 200 and its raw HTML preserved seven named ALTCS office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma. The official ALTCS County Map PDF is also partially parseable and preserves Arizona county names, but it still does not attach those counties to office addresses, phones, or a repeatable county-to-office assignment contract. https://www.azahcccs.gov/shared/AHCCCScontacts.html and https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html remain statewide contact and program-guidance leaves rather than county-specific office assignments. Arizona therefore still lacks a reviewable official county-to-office routing contract.
+- county_local_disability_resources: ahcccs_county_mapping_requires_reviewed_admin_html_leaves_or_explicit_ocr_artifact :: Reviewed 2026-06-22 bounded official Arizona AHCCCS county-local artifacts plus the current local parser toolchain. The live ALTCS Offices HTML leaf still proves seven named official offices on the accessible AHCCCS host, and the official ALTCS County Map PDF still yields machine-readable county names in the bounded extraction lane. But the remaining CountyAdminOffice.pdf and PimaCountyAdmin.pdf artifacts still do not yield reviewable county/admin office text, and the current repo/runtime has no installed OCR or PDF raster tools for a deterministic low-token rescue lane: tesseract, pdftotext, and pdftoppm are absent on PATH, and pytesseract, pdf2image, and PIL are not importable. DES also remains challenge-blocked at root, robots.txt, sitemap.xml, and office-locator leaves. Arizona county-local routing therefore now narrows to reviewed AHCCCS admin HTML leaves or a separately committed OCR artifact, not to more pypdf retries or generic source discovery.
 
 ## Verified source samples
 
@@ -41,15 +41,16 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.disabilityrightsaz.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.azahcccs.gov
-- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract; samples=3; first=https://des.az.gov/
+- county_local_disability_resources: blocked_admin_mapping_artifact_missing; samples=3; first=https://des.az.gov/
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: hold_three_reviewed_public_domains_until_role_bearing_special_education_or_student_services_leaves_exist
-- [critical] county_local_disability_resources: hold_blocked_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts
+- [critical] county_local_disability_resources: attach_reviewed_ahcccs_admin_html_leaves_or_committed_ocr_artifact_before_rewriting_arizona_county_rows
 
-## Completion decision
+## Repair decision
 
 - Arizona remains BLOCKED and not index-safe.
-- Education is now source-final on exactly three reviewed public district domains even after one more official WordPress API, sitemap, and exact-slug replay.
-- County/local disability resources remain blocked separately because the DES host family is still challenge-blocked and the accessible AHCCCS fallback only proves seven named ALTCS office cards plus a partial county map, not a county-to-office contract.
+- Education is still a district-owned leaf authoring problem because the AZED host blocks the statewide root, robots.txt, sitemap.xml, and the obvious statewide replacement leaves.
+- County-local is now a tighter artifact-contract blocker: the official AHCCCS surfaces are partly readable, but the county-to-office assignment still depends on admin PDFs that the current repo/runtime cannot OCR or rasterize.
+- Arizona should only reopen when district-owned education leaves and either reviewed AHCCCS admin HTML leaves or a committed OCR artifact supply the county-to-office contract.

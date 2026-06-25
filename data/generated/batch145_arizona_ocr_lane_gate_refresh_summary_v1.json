@@ -1,0 +1,21 @@
+{
+  "batch": "batch_145_arizona_ocr_lane_gate_refresh_v1",
+  "generated_at": "2026-06-22T23:30:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "refined_family": "county_local_disability_resources",
+  "ocr_tools_on_path": {
+    "tesseract": false,
+    "pdftotext": false,
+    "pdftoppm": false
+  },
+  "python_imports_available": {
+    "pytesseract": false,
+    "pdf2image": false,
+    "PIL": false
+  },
+  "altcs_county_map_partially_extractable": true,
+  "reviewed_admin_html_leaves_present": false,
+  "lesson_added": false
+}
