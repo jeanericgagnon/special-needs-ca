@@ -15,7 +15,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
 - Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_23_counties`
-- Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
+- Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
 - Nebraska: `public_nebraska_office_config_still_only_references_one_web_map_and_a_closest_feature_output_while_the_feature_service_stops_at_42_offices_for_93_counties`
@@ -35,45 +35,41 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Minnesota
+## Current Focus State: Maine
 
 ### Blocker Reason
 
-Minnesota still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The live official picture is now narrower and more accurate: the MDE-ORG description page, glossary root, and `Schools and Districts` route all render publicly on official Minnesota hosts, but the county route, contact-search route, contact-type route, and analytics route still fall into Radware captcha. The separate county-local blocker also shifted: the saved DHS county-and-tribal replacement URLs now return official DHS 404 pages instead of a live captcha family.
+Maine still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The official DOE selector/workbook lane is live and public: the Primary Contacts By Organization selector, the Town selector, and the SAU workbook all load on official Maine hosts. But the actual contact materialization lane is still broken in bounded low-token mode. Fresh Bangor search and export posts both return the same HTTP 500 NEO error shell instead of reusable local contact rows. The county-local blocker remains separate: the DHHS district office page lists office towns and contact details but still exposes no county or service-area crosswalk.
 
 ### Exact Evidence Needed
 
-- A public first-party Minnesota MDE county, contact, or export route that yields reproducible organization data instead of the current Radware challenge.
-- Or, a reviewed public Minnesota MDE download/export lane that preserves county-grade organization routing without browser validation.
-- Separately, a live official Minnesota DHS successor for county-and-tribal office routing; the two saved replacements now 404 and no longer provide a usable local-office contract.
+- A current official Maine DOE search or export response that returns real local contact rows instead of the generic HTTP 500 shell.
+- Or, an official Maine DOE workbook/export with county-grade contact fields rather than only municipality-to-organization mapping.
+- Separately, an official DHHS county or service-area crosswalk for office towns like Bangor, Calais, Machias, Portland, or Skowhegan.
 
 ### Useful Official URLs Already Tried
 
-- [Minnesota MDE description page](https://education.mn.gov/MDE/about/SchOrg/)
-- [Minnesota MDE-ORG root](https://pub.education.mn.gov/MdeOrgView/)
-- [Minnesota schools and districts route](https://pub.education.mn.gov/MdeOrgView/districts/index)
-- [Minnesota counties route](https://pub.education.mn.gov/MdeOrgView/reference/county)
-- [Minnesota contact search route](https://pub.education.mn.gov/MdeOrgView/search/searchContacts)
-- [Minnesota contact types route](https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList)
-- [Minnesota analytics route](https://pub.education.mn.gov/MDEAnalytics/Data.jsp)
-- [Minnesota DHS county and tribal offices replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/)
-- [Minnesota DHS county tribal nation directory replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/)
+- [Maine NEO Primary Contacts By Organization](https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU)
+- [Maine NEO Town selector](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town)
+- [Maine SAU workbook](https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx)
+- [Maine special education landing page](https://www.maine.gov/doe/learning/specialed)
+- [Maine DHHS district offices](https://www.maine.gov/dhhs/about/contact/offices)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Minnesota MDE county, contact, or analytics export surface that stays public and yields real organization data.
-- Any first-party Minnesota education export or downloadable organization file linked from the live MDE-ORG family.
-- Any official Minnesota DHS successor page for county-and-tribal office routing that replaces the two reviewed 404 paths.
+- Any current official Maine DOE contact export or search result that yields real local contact rows instead of the generic HTTP 500 shell.
+- Any official DOE workbook or adjacent downloadable file that includes county, phone, email, superintendent, or special-education contact fields.
+- Any official DHHS county/service-area crosswalk for the named district-office towns.
 
-## Next State Order After Minnesota
+## Next State Order After Maine
 
-1. Maine
-2. Idaho
-3. Arizona
-4. Massachusetts
-5. New Mexico
-6. South Dakota
-7. Rhode Island
-8. Virginia
-9. West Virginia
-10. North Dakota
+1. Idaho
+2. Arizona
+3. Massachusetts
+4. New Mexico
+5. South Dakota
+6. Rhode Island
+7. Virginia
+8. West Virginia
+9. North Dakota
+10. Wisconsin

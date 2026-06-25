@@ -390,3 +390,6 @@
 
 ### Replatformed Official Replacements Should Be Downgraded To 404 Truth When The Gate Disappears
 *   **Lesson:** If a previously challenged replacement URL later settles into an official 404, update the blocker to the narrower 404 truth instead of carrying forward the older captcha narrative. Minnesota DHS county-and-tribal replacements moved from assumed Radware gating to plain official DHS 404 pages on recheck.
+
+### Live Official Selectors Still Fail Closed If Both Current Named Posts Return The Same 500 Shell
+*   **Lesson:** If a live official selector and workbook are both public, rerun the current named search and export posts before carrying forward an older “maybe recovered” narrative. Maine DOE still exposed a live selector, token, `OrgId`, and `SAUs[*]` field family on June 24, but both current Bangor posts still returned the same HTTP 500 `Sorry, an error occurred while processing your request.` shell.
