@@ -10,7 +10,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 ## Current Blocked States
 
-- Alaska: `health_alaska_dpa_service_family_now_returns_cloudflare_challenge_shells_while_dfcs_successor_surfaces_still_add_no_borough_or_census_area_assignment_contract`
+- Alaska: `reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract`
 - Arizona: `ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves`
 - Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_still_lack_role_evidence`
 - Maine: `official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
@@ -35,31 +35,36 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The current Department of Health DPA family has regressed from the older browser-readable assumption: raw fetches to `https://health.alaska.gov/dpa`, the exact DPA offices page, the Adult Public Assistance page, the Apply for Medicaid page, and the public DPA dashboard / Medicaid snapshot PDFs now return HTTP 403 on the official health host. In the reviewed browser lane, the exact DPA offices page and the successor Adult Public Assistance / Apply for Medicaid pages now land on Cloudflare `Just a moment...` shells with the visible heading `Performing security verification` instead of materializing office or service content. The still-readable DFCS successor surfaces remain negative: `Services.aspx` still only points users to statewide successor pages, `Publications.aspx` still exposes no DPA office-routing material, and `Site-Map.aspx` still only adds wrong-role OCS and Pioneer Homes branches. Alaska therefore remains BLOCKED and not index-safe because the official health host is challenge-shelled and the readable successor host still adds no borough- or census-area assignment contract.
+`county_local_disability_resources` is the only remaining Alaska critical blocker. The official Department of Health DPA host is no longer only a stale challenge assumption: in the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live DPA landing page, and the exact DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is also publicly reviewable. That page now truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official host. But it still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The public DPA dashboard and Medicaid snapshot PDFs are also live, but they only publish region aggregates like Anchorage/Mat-Su, Gulf Coast, Interior, Northern, Southeast, Southwest, Anchorage, and Mat-Su rather than office-assignment geography. The DFCS successor surfaces still add no county-equivalent contract: `Services.aspx` remains phone-only, `Publications.aspx` still exposes no office-routing material, the Site Map still only surfaces wrong-role OCS and Pioneer Homes branches, and public DFCS search still materializes no usable results. Alaska remains BLOCKED because the live DPA offices page still lacks borough- or census-area assignment proof.
 
 ### Exact Evidence Needed
 
-- A reviewable public official page, export, PDF, or API that maps Alaska boroughs or census areas to DPA offices.
-- A reopened non-challenged DPA office family on health.alaska.gov that materially exposes service-area or county-equivalent assignment fields.
-- Any county-equivalent routing contract on a DFCS or successor host that outruns the current statewide-only service references.
+- Any official Alaska page, table, PDF, export, or API that explicitly maps boroughs or census areas to DPA office locations.
+- Any public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings now visible.
+- Any official borough/census-area office-routing contract on DFCS, Health, or a canonical Alaska successor host that is publicly reviewable without inference.
 
 ### Useful Official URLs Already Tried
 
 - [Alaska DPA landing page](https://health.alaska.gov/dpa)
-- [Alaska DPA offices page](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Adult Public Assistance page](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
-- [Apply for Medicaid page](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
-- [Alaska DPA dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
-- [Alaska Medicaid enrollment monthly snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
-- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska DPA Dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
+- [Alaska Medicaid enrollment snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
+- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
+- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
+- [Alaska DFCS Search results endpoint](https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance)
+- [Alaska Pioneer Homes Payment Assistance Program](https://dfcs.alaska.gov/daph/Pages/paymentassistance/default.aspx)
+- [Alaska DAPH publications](https://dfcs.alaska.gov/daph/Pages/publications.aspx)
+- [Alaska OCS Regional Offices](https://dfcs.alaska.gov/ocs/Pages/offices/default.aspx)
+- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
+- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Alaska public-assistance office export with borough or census-area assignments.
-- Any reopened health.alaska.gov DPA surface that sheds the current challenge shell and exposes office/service-area fields.
-- Any official DFCS successor routing surface that names boroughs or census areas alongside DPA offices.
+- Any current Alaska public page or download that ties named boroughs or census areas to the now-live DPA office locations page.
+- Any embedded data source, downloadable attachment, or companion offices table on the live DPA offices page that exposes service areas.
+- Any future public Alaska office-routing export on the DPA or DFCS host that materializes county-equivalent assignments instead of only region labels.
 
 ## Next State Order After Alaska
 

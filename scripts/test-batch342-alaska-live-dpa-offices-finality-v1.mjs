@@ -89,6 +89,7 @@ assert.equal(alaskaQueue.primary_gap_reason, summary.primary_gap_reason);
 assert.match(stateReport, /The current Department of Health DPA landing page is now publicly readable in the reviewed browser lane\./);
 assert.match(stateReport, /still does not map boroughs or census areas to those offices/i);
 assert.match(allStateReport, /Alaska county-local routing is still blocked, but the blocker sharpened/i);
+assert.doesNotMatch(allStateReport, /Alaska county-local routing is still blocked, and the live contract regressed again/i);
 assert.match(handoff, /## Current Focus State: Alaska/);
 assert.match(handoff, /exact DPA offices page .* publicly reviewable/i);
 assert.match(handoff, /DPA Dashboard PDF/);
