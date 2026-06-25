@@ -18,8 +18,8 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
-- Massachusetts remains blocked on a corrected DESE truth model: the hidden postback replay still renders real district rows, but the rendered result page and live School Finder still expose no county-grade contract, while DDS county-local remains raw-403 with no county export.
 - Arizona remains blocked on a stronger county-local finality check: the exact AHCCCS UniversityFamilyCare PDF bundle is now reviewable with the bundled PDF runtime, but the files resolve only to non-contract support letters while the last three education domains still lack role-bearing local leaves.
+- Massachusetts remains blocked on a corrected DESE truth model: the hidden postback replay still renders real district rows, but the rendered result page and live School Finder still expose no county-grade contract, while DDS county-local remains raw-403 with no county export.
 - Idaho remains blocked on a stronger district-root finality check: the remaining official district hosts are mostly live, but bounded homepage and sitemap review still exposes no reusable special-education or student-services leaves, while Jefferson remains a blank challenge shell; county-local stays separately blocked on the missing DHW county contract.
 - Oklahoma is now COMPLETE/index-safe because the official Oklahoma county health department fallback closes the prior 31-county county-local gap with exact county root-plus-services page pairs carrying county-specific contact plus SoonerStart, SoonerCare, Oklahoma Medicaid, Community Health Worker, or applications-and-referrals evidence.
 - Texas remains COMPLETE/index-safe from v10.

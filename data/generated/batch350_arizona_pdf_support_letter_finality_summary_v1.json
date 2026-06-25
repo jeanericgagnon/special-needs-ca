@@ -4,6 +4,8 @@
   "classification": "BLOCKED",
   "index_safe": false,
   "pdf_runtime_available": true,
+  "live_download_path_corrected": true,
+  "stale_pdf_paths_return_html_shell": true,
   "text_extractable_support_pdfs": 1,
   "rendered_image_support_pdfs": 2,
   "county_contract_found": false,

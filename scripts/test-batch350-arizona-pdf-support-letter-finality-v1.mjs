@@ -48,6 +48,8 @@ const countyFailure = failureRows.find((row) => row.family === 'county_local_dis
 assert.equal(countyFailure.failure_code, 'ahcccs_university_familycare_pdf_bundle_is_parseable_but_only_support_letters_not_county_admin_routing_contract');
 assert.match(countyFailure.evidence, /Michal Goforth/i);
 assert.match(countyFailure.evidence, /Pima County Administrator's Office letterhead/i);
+assert.match(countyFailure.evidence, /Resources\/Downloads\/UniversityFamilyCare/i);
+assert.match(countyFailure.evidence, /OversightOfHealthPlans\/\*\.pdf paths currently return the AHCCCS HTML shell|OversightOfHealthPlans\/\*\.pdf/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyVerified.sample_count, 5);
@@ -67,6 +69,7 @@ assert.equal(auditRow.packetPrimaryGapReason, 'ahcccs_university_familycare_pdf_
 assert.equal(auditRow.familyStatuses.county_local_disability_resources, 'blocked_ahcccs_pdf_bundle_resolves_to_support_letters_without_county_contract');
 
 assert.match(stateReport, /County-local is now blocked for a stronger reason/i);
+assert.match(stateReport, /Resources\/Downloads\/UniversityFamilyCare/i);
 assert.match(allStateReport, /Arizona remains blocked on a stronger county-local finality check/i);
 assert.match(handoff, /Current Focus State: Arizona/);
 assert.match(handoff, /Pima Community Access Program PDF/);
@@ -74,6 +77,8 @@ assert.match(handoff, /County Administrator Office PDF/);
 assert.match(lessons, /A Working PDF Stack Still Does Not Turn Support Letters Into County Contracts/);
 
 assert.equal(batchSummary.pdf_runtime_available, true);
+assert.equal(batchSummary.live_download_path_corrected, true);
+assert.equal(batchSummary.stale_pdf_paths_return_html_shell, true);
 assert.equal(batchSummary.text_extractable_support_pdfs, 1);
 assert.equal(batchSummary.rendered_image_support_pdfs, 2);
 assert.equal(batchSummary.county_contract_found, false);

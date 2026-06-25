@@ -28,46 +28,42 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest-priority Idaho blocker. The remaining unresolved district hosts are still publicly reachable, but one-hop homepage and sitemap review still exposes no real role-bearing `special education`, `special services`, `student services`, `504`, or procedural-safeguards leaves worth promoting. Jefferson still returns the same blank shell with no reusable education content. County-local also remains blocked separately, but education is the top live blocker because the unresolved county-bearing district roots are now source-final for bounded low-token review.
+`county_local_disability_resources` is now the sharper Arizona blocker. Reviewed 2026-06-25 the exact official AHCCCS UniversityFamilyCare PDF bundle with the bundled PDF runtime. `Pima.pdf` extracts as a support letter from Pima Community Access Program, and `PimaCountyAdmin.pdf` plus `CountyAdminOffice.pdf` render as Pima County Administrator support letters for the University Family Care merger. Those official PDFs preserve county and administrator identity, but they still do not expose office assignments, service areas, county-admin routing, or a county-to-office contract. Arizona education remains separately blocked on three reviewed public district domains that still lack role-bearing local leaves, so Arizona stays blocked and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official district-owned local leaf on the remaining Idaho hosts that explicitly carries `special education`, `special services`, `student services`, `504`, or procedural-safeguards routing.
-- Any official county-keyed Idaho district routing contract or county-to-district crosswalk that can truthfully close the remaining county-bearing districts.
-- Any public successor page on the Jefferson district host that replaces the current blank shell with reusable education content.
+- Any official Arizona county-admin office directory, office assignment table, service-area crosswalk, or county-to-office contract that is public and reviewable.
+- Any newly published district-owned special-education, student-services, 504, or procedural-safeguards leaf on the final three unresolved education domains.
 
 ### Useful Official URLs Already Tried
 
-- [Camas County Schools](https://www.camascountyschools.org/)
-- [Clark County School District 161](https://www.clarkcountyschools161.org/)
-- [Fremont County Joint School District 215](https://www.sd215.net/)
-- [Fremont County Joint School District 215 sitemap](https://www.sd215.net/sitemap.xml)
-- [Oneida School District](https://www.oneidaschooldistrict.org/)
-- [Oneida School District sitemap](https://www.oneidaschooldistrict.org/sitemap.xml)
-- [Shoshone School District](https://shoshonesd.org/)
-- [Shoshone School District sitemap](https://shoshonesd.org/sitemap.xml)
-- [Shoshone School District WP sitemap](https://shoshonesd.org/wp-sitemap.xml)
-- [Jefferson School District 251](https://www.jeffersonsd251.org/)
+- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
+- [Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
+- [Pima County Administrator PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
+- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
+- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
+- [Coconino wp-json search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
+- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
+- [Yavapai County High School contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly published district-owned special-education or special-services leaf on the six remaining Idaho hosts.
-- Any official Idaho state or district export that names county-bearing districts and links them to a reviewed local special-education contact path.
-- Any reviewed Jefferson successor host or exact public page that replaces the current blank shell with district education routing content.
+- Any official AHCCCS, DES, or county-admin surface that exposes real county-to-office routing instead of merger-support letters.
+- Any newly published role-bearing local education leaf on Coconino County Accommodation School District, Mohave Accelerated Schools, or Yavapai County High School.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Massachusetts
+2. New Mexico
+3. South Dakota
+4. Rhode Island
+5. Virginia
+6. West Virginia
+7. North Dakota
+8. Wisconsin
+9. Washington
+10. Tennessee
