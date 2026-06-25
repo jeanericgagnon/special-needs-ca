@@ -1,0 +1,9 @@
+{
+  "batch": "batch382_virginia_global_sync_v1",
+  "generated_at": "2026-06-25T18:15:30.286Z",
+  "virginia_packet_batch": "batch374_virginia_independent_reaudit_v1",
+  "complete_count": 38,
+  "blocked_count": 12,
+  "index_safe_count": 38,
+  "incorrectly_index_safe_states": []
+}
