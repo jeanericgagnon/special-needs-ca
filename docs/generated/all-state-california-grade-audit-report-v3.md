@@ -26,4 +26,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Ohio remains blocked only on education routing. The live Ohio JFS county-directory family now verifies county-local coverage across all 88 counties from the official `cdjfs-*` sitemap leaves, but the district/ESC exact-leaf inventory is still too thin to clear education county-grade routing.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
-
+- Alaska county-local routing is still blocked, but the blocker sharpened: the official DPA landing page and exact DPA offices page are now browser-readable on `health.alaska.gov`, yet the offices page still groups only regional offices and addresses without any borough- or census-area assignment contract, while DFCS successor pages still add no county-equivalent mapping.
