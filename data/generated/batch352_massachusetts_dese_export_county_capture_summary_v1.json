@@ -1,0 +1,11 @@
+{
+  "batch": "batch352_massachusetts_dese_export_county_capture_v1",
+  "generated_at": "2026-06-25T00:00:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "education_cleared": true,
+  "county_local_remaining_blocker": true,
+  "covered_counties": 14,
+  "lessons_updated": false
+}

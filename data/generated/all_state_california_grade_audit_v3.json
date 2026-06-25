@@ -1439,11 +1439,11 @@
       "legacyManualReviewRate": 18.18,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 14,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 92,
       "dbMetrics": {
         "state_id": "massachusetts",
         "state_code": "MA",
@@ -1482,7 +1482,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_exact_dese_replay_renders_rows_but_zero_county_contract",
+        "district_or_county_education_routing": "verified_county_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1492,9 +1492,9 @@
         "county_local_disability_resources": "blocked_live_dds_browser_lane_without_raw_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch351_massachusetts_dese_row_truth_refresh_v1",
-      "packetPrimaryGapReason": "exact_dese_hidden_postback_replay_materializes_district_rows_but_zero_county_contract_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export",
-      "packetRecommendedBatch": "hold_for_county_keyed_contract_or_reviewed_capture"
+      "packetBatch": "batch352_massachusetts_dese_export_county_capture_v1",
+      "packetPrimaryGapReason": "official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains",
+      "packetRecommendedBatch": "hold_for_dds_county_contract_or_reviewed_capture"
     },
     {
       "stateId": "michigan",

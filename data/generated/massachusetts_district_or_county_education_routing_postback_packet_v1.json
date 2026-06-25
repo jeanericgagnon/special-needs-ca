@@ -2,29 +2,34 @@
   "state": "massachusetts",
   "state_code": "MA",
   "family": "district_or_county_education_routing",
-  "repair_lane": "evidence_only_postback_packet",
-  "purpose": "Deterministic packet for Massachusetts DESE Profiles postback evidence while county-to-district routing remains unavailable.",
+  "repair_lane": "verified_export_and_county_crosswalk_capture",
+  "purpose": "Deterministic packet for Massachusetts county-keyed education routing using the official DESE district export plus the official Census TIGERweb county subdivision layer.",
   "current_problem_metrics": {
     "statewideFallbackRows": 14,
     "statewideWebsiteRows": 14,
     "countyRowCount": 14,
     "realPostbackResultSurface": true,
-    "countyMappingFieldsPresent": false
+    "countyMappingFieldsPresent": false,
+    "officialExportSurface": true,
+    "exportRowCount": 515,
+    "exactTownMatches": 406,
+    "uniqueUnmatchedTowns": 44,
+    "coveredCountyCount": 14
   },
   "exact_target_goals": [
-    "official county-to-district export contract",
-    "official county filter or county column on DESE result surface",
-    "reviewed local district contract only if county keyed by official evidence"
+    "preserve the live DESE export contract",
+    "preserve the live county subdivision crosswalk contract",
+    "keep the bounded county coverage audit artifact on disk"
   ],
   "representative_sources": [
     "https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238",
-    "https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238",
-    "https://www.doe.mass.edu/sped/"
+    "https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N",
+    "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D'25'&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json"
   ],
   "root_domains_to_review": [
-    "official DESE hidden bridge and final rendered result surfaces only",
-    "the hidden replay still renders real district rows, but do not treat those rows as county-grade without an official county field, selector, or export",
-    "do not infer county mapping from district names like Bristol County Agricultural without a county-keyed contract"
+    "education is now cleared by the official DESE export plus the official county subdivision layer; do not fall back to statewide DESE special-education pages",
+    "the remaining Massachusetts blocker is DDS county-local, not DESE district routing",
+    "unmatched charter or neighborhood mailing-town rows do not reopen the blocker when bounded exact-basename coverage still spans all 14 counties"
   ],
   "affected_counties": [
     "barnstable-ma",
@@ -42,5 +47,5 @@
     "suffolk-ma",
     "worcester-ma"
   ],
-  "packet_complete_when": "Massachusetts can reopen education only when an official DESE surface preserves a county-to-district contract or a reviewed browser/cached capture preserves county-keyed local district rows."
+  "packet_complete_when": "Satisfied by the reviewed official DESE export plus the reviewed official Census county subdivision crosswalk covering all 14 Massachusetts counties."
 }

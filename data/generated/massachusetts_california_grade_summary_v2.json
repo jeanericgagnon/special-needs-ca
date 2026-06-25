@@ -2,20 +2,19 @@
   "state": "massachusetts",
   "state_code": "MA",
   "state_name": "Massachusetts",
-  "batch": "batch351_massachusetts_dese_row_truth_refresh_v1",
+  "batch": "batch352_massachusetts_dese_export_county_capture_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 14,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 92,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "exact_dese_hidden_postback_replay_materializes_district_rows_but_zero_county_contract_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export",
-  "recommended_batch": "hold_for_county_keyed_contract_or_reviewed_capture",
+  "primary_gap_reason": "official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_but_live_dds_browser_lane_without_raw_county_contract_remains",
+  "recommended_batch": "hold_for_dds_county_contract_or_reviewed_capture",
   "critical_gap_families": [
-    "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
   "major_gap_families": [],
@@ -40,13 +39,6 @@
   ],
   "final_blockers": [
     {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "exact_dese_hidden_postback_replay_renders_real_district_rows_but_zero_county_fields_or_export",
-      "evidence": "Reviewed 2026-06-25 one exact replay of the live official Massachusetts DESE bridge at https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238. The bridge still returns a real hidden-field auto-post shell, and replaying its current `__VIEWSTATE`, `__VIEWSTATEGENERATOR`, `__EVENTVALIDATION`, `orgType`, `runOrgSearch`, and `leftNavId` payload into https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238 returned HTTP 200 with rendered district rows. The returned HTML now proves the replay is not empty: it contains hundreds of `superintendent` and `grades served` occurrences and real district result content. But the same rendered result page still preserves zero county column, zero county filter, and no county-keyed export contract; the only `county` occurrences are inside district names like county agricultural districts, not as routing fields. A live recheck of https://profiles.doe.mass.edu/search/get_closest_orgs.aspx also still shows a School Finder that is address/city/town based with no county selector or export lane. Massachusetts education therefore remains blocked because the official DESE surfaces still do not expose county-grade routing fields, not because the hidden replay is empty.",
-      "next_action": "hold_massachusetts_education_until_official_county_to_district_contract_or_reviewed_county_keyed_capture_exists"
-    },
-    {
       "family": "county_local_disability_resources",
       "severity": "critical",
       "failure_code": "live_dds_browser_lane_exists_but_exact_raw_pages_403_and_no_county_crosswalk_exists",
@@ -55,6 +47,7 @@
     }
   ],
   "familyStatuses": {
-    "district_or_county_education_routing": "blocked_exact_dese_replay_renders_rows_but_zero_county_contract"
+    "district_or_county_education_routing": "verified_county_grade",
+    "county_local_disability_resources": "blocked_live_dds_browser_lane_without_raw_county_contract"
   }
 }

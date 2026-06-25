@@ -482,3 +482,6 @@
 
 ### A Generic-Titled ASP.NET Result Surface Can Still Contain Real Rows
 *   **Lesson:** If an ASP.NET bridge resolves to a generic search title, verify the rendered body before declaring the replay empty. Massachusetts DESE `search.aspx` still looked like a generic `Profiles Search` shell, but the exact hidden-field replay now rendered real district rows with superintendent and grades-served data; the real blocker was still the absence of county fields or export, not an empty result surface.
+
+### Official Exports Plus Official Geography Crosswalks Can Clear County Routing
+*   **Lesson:** If an official on-page directory lacks county fields, check for an official structured export before freezing the family. Massachusetts DESE still lacked a county filter in the rendered search UI, but the official `search_export.aspx` workbook preserved district `Town` values, and a bounded exact-basename join to the official Census TIGERweb county subdivision layer was enough to truthfully cover all 14 counties without using statewide fallback pages.
