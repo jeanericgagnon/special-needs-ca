@@ -1,0 +1,15 @@
+{
+  "state": "kansas",
+  "batch": "batch335_kansas_labette_tricounty_leaf_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "promoted_county": "labette-ks",
+  "promoted_counties_total": 24,
+  "district_sitemap_status": 200,
+  "district_leaf_status": 200,
+  "district_leaf_title": "Tri-County Special Education Cooperative | Parsons District Schools",
+  "district_leaf_h1": "Tri-County Special Education",
+  "remaining_blocker_family": "district_or_county_education_routing",
+  "failure_code": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_24_counties",
+  "next_action": "continue_only_from_saved_district_owned_and_district_linked_local_leads_because_current_live_ksde_state_export_lane_is_not_reproducible"
+}

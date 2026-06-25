@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
-- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_23_counties`
+- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_24_counties`
 - Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
@@ -35,41 +35,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-Maine still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The official DOE selector/workbook lane is live and public: the Primary Contacts By Organization selector, the Town selector, and the SAU workbook all load on official Maine hosts. But the actual contact materialization lane is still broken in bounded low-token mode. Fresh Bangor search and export posts both return the same HTTP 500 NEO error shell instead of reusable local contact rows. The county-local blocker remains separate: the DHHS district office page lists office towns and contact details but still exposes no county or service-area crosswalk.
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 24/105 counties from preserved district-owned or district-linked local leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Labette now clears because the official Parsons District Schools USD 503 sitemap exposes an exact district-owned `/page/tri-county-special-education-cooperative/` leaf, and the fetched usd503.org page preserves the role-exact title `Tri-County Special Education Cooperative | Parsons District Schools`, H1 `Tri-County Special Education`, and Child Find screening language on the district host. Kansas remains BLOCKED and not index-safe because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
 
 ### Exact Evidence Needed
 
-- A current official Maine DOE search or export response that returns real local contact rows instead of the generic HTTP 500 shell.
-- Or, an official Maine DOE workbook/export with county-grade contact fields rather than only municipality-to-organization mapping.
-- Separately, an official DHHS county or service-area crosswalk for office towns like Bangor, Calais, Machias, Portland, or Skowhegan.
+- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
+- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
+- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
 
 ### Useful Official URLs Already Tried
 
-- [Maine NEO Primary Contacts By Organization](https://neo.maine.gov/DOE/neo/Supersearch/ContactSearch/ContactSearchBySAU)
-- [Maine NEO Town selector](https://neo.maine.gov/DOE/neo/Supersearch/Supersearch/Town)
-- [Maine SAU workbook](https://www.maine.gov/doe/sites/maine.gov.doe/files/inline-files/School%20Finance%20-%202026%20SAU%20by%20Municipality%20-%204.1.2026.xlsx)
-- [Maine special education landing page](https://www.maine.gov/doe/learning/specialed)
-- [Maine DHHS district offices](https://www.maine.gov/dhhs/about/contact/offices)
+- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
+- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [Parsons District Schools sitemap](https://www.usd503.org/sitemap.xml)
+- [Parsons district leaf](https://www.usd503.org/page/tri-county-special-education-cooperative/)
+- [Coffeyville USD 445 home](https://www.cvilleschools.com/)
+- [Coffeyville USD 445 site map](https://www.cvilleschools.com/site-map)
+- [Tri County Special Education Coop 607 child-find leaf](https://www.tricounty607.com/child-find)
+- [Marysville USD 364 sitemap](https://www.usd364.org/sitemap.xml)
+- [Marshall County Special Education Coop eligibility page](https://www.usd364.org/o/mcsec/page/special-education-eligibility/)
+- [McPherson County Special Education Cooperative](https://mccsec.mcpherson.com/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current official Maine DOE contact export or search result that yields real local contact rows instead of the generic HTTP 500 shell.
-- Any official DOE workbook or adjacent downloadable file that includes county, phone, email, superintendent, or special-education contact fields.
-- Any official DHHS county/service-area crosswalk for the named district-office towns.
+- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
+- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or Child Find.
+- Additional district-owned document-folder or CMS routes like the Parsons USD 503, Hays USD 489, Hutchinson USD 308, Marysville USD 364, and Coffeyville USD 445 recoveries, but only on already-preserved district domains.
+## Next State Order After Kansas
 
-## Next State Order After Maine
-
-1. Idaho
-2. Arizona
-3. Massachusetts
-4. New Mexico
-5. South Dakota
-6. Rhode Island
-7. Virginia
-8. West Virginia
-9. North Dakota
-10. Wisconsin
+1. Nebraska
+2. Nevada
+3. Florida
+4. Alaska
+5. South Carolina
+6. North Carolina
+7. New York
+8. Oklahoma
+9. Oregon
+10. Ohio

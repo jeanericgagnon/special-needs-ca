@@ -393,3 +393,6 @@
 
 ### Live Official Selectors Still Fail Closed If Both Current Named Posts Return The Same 500 Shell
 *   **Lesson:** If a live official selector and workbook are both public, rerun the current named search and export posts before carrying forward an older “maybe recovered” narrative. Maine DOE still exposed a live selector, token, `OrgId`, and `SAUs[*]` field family on June 24, but both current Bangor posts still returned the same HTTP 500 `Sorry, an error occurred while processing your request.` shell.
+
+### District Sitemaps Can Surface Exact Cooperative Leaves Even When State Export Roots Stay Rejected
+*   **Lesson:** If an official district sitemap exposes a role-exact cooperative leaf on the district-owned host, promote that leaf directly instead of waiting on a blocked state export lane. Kansas Labette cleared once the Parsons USD 503 sitemap surfaced `/page/tri-county-special-education-cooperative/`, whose district-owned page preserved the role-exact title `Tri-County Special Education Cooperative` plus Child Find screening language.

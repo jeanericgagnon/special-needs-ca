@@ -5,15 +5,15 @@
   "repair_lane": "public_export_backed_district_leaf_repair",
   "purpose": "Deterministic authoring packet for replacing Kansas statewide KSDE placeholder rows with reviewed district-owned education-routing leaves.",
   "current_problem_metrics": {
-    "placeholderSourceRows": 82,
-    "placeholderWebsiteRows": 82,
-    "authoredExactLeafCount": 23,
+    "placeholderSourceRows": 81,
+    "placeholderWebsiteRows": 81,
+    "authoredExactLeafCount": 24,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 23
+    "reviewedDistrictOwnedLeafCount": 24
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -171,6 +171,7 @@
     "geary-ks",
     "harvey-ks",
     "johnson-ks",
+    "labette-ks",
     "leavenworth-ks",
     "lyon-ks",
     "marshall-ks",
@@ -223,7 +224,6 @@
     "kearny-ks",
     "kingman-ks",
     "kiowa-ks",
-    "labette-ks",
     "lane-ks",
     "lincoln-ks",
     "linn-ks",
