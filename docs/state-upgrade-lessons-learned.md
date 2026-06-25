@@ -542,3 +542,6 @@
 
 ### Official State Search Shells Are Still Negative Evidence When They Materialize No Role Results
 *   **Lesson:** If an official state search host is public but county-targeted queries only replay the same generic portal shell with no role-bearing results, count that as final negative evidence instead of a discovery lead. Maine`s public `maine.gov/search` stayed live for county-office queries, but it produced no DHHS county-routing or district-office assignment results and did not reopen the blocker.
+
+### District-Linked Attachments Still Fail If They Resolve To Board Rosters Or General-Education Notices
+*   **Lesson:** If a remaining district contact or notice page links a same-host or district-linked attachment, inspect it once before assuming it opens a new local-routing lane. Idaho Camas linked a Google Doc that resolved only to a board-of-trustees roster, and Clark linked district-hosted PDFs that stayed within a general-education intervention notice lane, so neither attachment upgraded the special-education blocker.

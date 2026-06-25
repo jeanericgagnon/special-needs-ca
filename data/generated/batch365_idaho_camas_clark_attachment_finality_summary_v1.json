@@ -1,0 +1,16 @@
+{
+  "batch": "batch365_idaho_camas_clark_attachment_finality_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "camas_contact_leaf_live": true,
+  "camas_google_doc_live": true,
+  "camas_google_doc_is_board_roster": true,
+  "clark_contact_leaf_live": true,
+  "clark_title_ix_leaf_live": true,
+  "clark_parent_notification_leaf_live": true,
+  "clark_parent_notification_pdf_live": true,
+  "clark_parent_notification_pdf_is_general_education_notice_lane": true,
+  "remaining_wrong_role_districts": 2,
+  "county_crosswalk_found": false,
+  "result": "camas_and_clark_attachments_reviewed_but_still_wrong_role_for_local_special_education_routing"
+}
