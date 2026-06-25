@@ -28,47 +28,45 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Maine
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The live packet truth held up under one more bounded official recheck on 2026-06-25: `https://health.alaska.gov/dpa` and the exact DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` are the right official surfaces, but they still do not expose any borough- or census-area-to-office assignment contract. The DPA offices page proves real regional offices, office hours, addresses, fax numbers, virtual contact routing, and secure upload options on the official host, but it still groups offices only by broad regions. The DFCS successor surfaces remain negative at the same time: the Services page stays statewide-phone-only, the Publications page exposes no DPA office material, the Site Map still only adds wrong-role OCS and Pioneer Homes branches, and public DFCS search still materializes no usable office-routing results.
+`county_local_disability_resources` is the only remaining Maine critical blocker. The live packet truth held up under one more bounded same-host official recheck on 2026-06-25: `https://www.maine.gov/dhhs/about/contact/offices` is still the right public DHHS district-office surface and it preserves real office-grade evidence, including named office towns, addresses, phones, emails, map shortlinks, and OFI program-routing notes. But the office page still exposes zero county names, zero county-served labels, and zero service-area fields in public HTML. The same-host follow-ups stayed negative too: the DHHS contact root, administrative-offices page, offices/divisions page, DHHS sitemap, OFI contact page, and DHHS search pages still expose no public county-to-office crosswalk and no alternate county-grade export or service-area table.
 
 ### Exact Evidence Needed
 
-- Any official Alaska page, PDF, export, sitemap leaf, or API that explicitly maps boroughs or census areas to current DPA office assignments.
-- Any reviewable public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings already visible on the offices page.
-- Any official DFCS, Health, or canonical Alaska successor host that publishes borough- or census-area office routing without relying on inference.
+- Any official Maine DHHS or OFI page, table, PDF, workbook, sitemap leaf, or API that explicitly maps Maine counties to current district offices.
+- Any reviewable public service-area contract on the current DHHS/OFI host family that goes beyond office towns and identifies county coverage.
+- Any public county-grade office export on `maine.gov/dhhs` that can replace the current office-grade-only directory without inference.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DPA landing page](https://health.alaska.gov/dpa)
-- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska DPA dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
-- [Alaska Medicaid enrollment snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
-- [Alaska DFCS public search](https://dfcs.alaska.gov/Search/default.aspx?search=dpa+office)
-- [Alaska health host robots](https://health.alaska.gov/robots.txt)
-- [Alaska health host sitemap](https://health.alaska.gov/sitemap.xml)
-- [Alaska statewide search host](https://www.alaska.gov/search?query=public+assistance+offices)
+- [DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
+- [DHHS contact root](https://www.maine.gov/dhhs/about/contact/)
+- [DHHS administrative offices](https://www.maine.gov/dhhs/about/contact/administrative-offices)
+- [DHHS offices/divisions](https://www.maine.gov/dhhs/offices-divisions)
+- [DHHS sitemap](https://www.maine.gov/dhhs/about/sitemap)
+- [OFI contact page](https://www.maine.gov/dhhs/ofi/about-us/contact)
+- [OFI data reports](https://www.maine.gov/dhhs/ofi/about-us/data-reports)
+- [DHHS search](https://www.maine.gov/dhhs/search/node?keys=county)
+- [Maine statewide search](https://www.maine.gov/search/?search_api_fulltext=dhhs+office+county)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Alaska DPA office contract that names boroughs or census areas directly.
-- Any public successor Health or DFCS leaf that pairs current DPA office locations with service areas narrower than the broad DPA regions.
-- Any reviewable official export or page that bridges Alaska boroughs/census areas to the current DPA office inventory without inference.
+- Any official Maine DHHS county-to-district-office crosswalk.
+- Any current official OFI or DHHS export that carries county-served or service-area fields for district offices.
+- Any reviewable same-host page that truthfully bridges Maine counties to Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, Skowhegan, Sanford, Fort Kent, Houlton, or Lewiston without inference.
 
-## Next State Order After Alaska
+## Next State Order After Maine
 
-1. New Mexico
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. South Dakota
-7. Rhode Island
-8. Virginia
-9. West Virginia
-10. North Dakota
+1. Idaho
+2. Arizona
+3. Massachusetts
+4. New Mexico
+5. South Dakota
+6. Rhode Island
+7. Virginia
+8. West Virginia
+9. North Dakota
+10. Wisconsin
