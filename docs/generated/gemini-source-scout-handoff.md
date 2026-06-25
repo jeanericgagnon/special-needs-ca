@@ -34,46 +34,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Nebraska
+## Current Focus State: Florida
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Nebraska critical blocker. Nebraska already has verified statewide DD, Medicaid, waiver, Early Development Network, special-education dispute, county-grade NDE education-directory, VR, P&A, PTI, legal-aid, ABLE, and SSI coverage. The remaining county-local family stays blocked because the live Nebraska DHHS `Public Assistance Offices` page is still only a SharePoint wrapper around the locator, while the public ArcGIS ExperienceBuilder item data proves the only configured datasources are the base web map, a `closest feature` office output, and a geocoder-result output with a `County` field. That `County` field belongs only to the user-location geocode result, not to an official county-to-office assignment datasource. The public web map still has only 42 office rows, 93 county rows, zero tables, empty relationships, and only 37 distinct office-county values on the office layer. Nebraska remains BLOCKED because there is still no public same-host county assignment table, service-area output, or county directory leaf that proves statewide county-to-office mapping.
+`county_local_disability_resources` is the only remaining Florida critical blocker. Florida already has verified statewide Medicaid, waiver, APD regional DD routing, Early Steps, FDLRS special-education dispute coverage, county-grade FDLRS education routing, VR, P&A, PTI, legal-aid, ABLE, and SSI coverage. The remaining county-local family stays blocked because the exact official `food-cash-and-medical` leaf still routes families only into the Family Resource Center storefront lane, and that reviewed first-party `providers.csv` still preserves only 34 distinct county values across 39 rows rather than a 67-county county-local contract. The public MyACCESS shell is readable again and the live main bundle re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but bounded anonymous GET and POST probes to those exact official endpoints still return HTTP 401 `Unauthorized`. Florida remains BLOCKED because the storefront lane is still partial and the only exact county-result endpoints now visible on the live official host remain authenticated-only rather than anonymously reviewable.
 
 ### Exact Evidence Needed
 
-- A new official Nebraska DHHS county-to-office assignment table, downloadable county directory, or same-host service-area artifact that explicitly maps counties to local DHHS assistance offices.
-- A newly published public ArcGIS datasource or attachment on the existing Nebraska locator item that exposes office service areas or county assignments instead of only closest-office and geocoder outputs.
-- An official Nebraska county office directory leaf on `dhhs.ne.gov` or `gis.ne.gov` that preserves county-bearing office assignments on disk.
+- A new first-party Florida DCF or MyACCESS county-complete public local-offices contract that covers all 67 counties.
+- A newly public anonymous MyACCESS office-mapping result lane that materializes county results without authentication.
+- A reviewed first-party Florida county-local directory leaf or export that extends the current Family Resource Center storefront beyond the 34 counties preserved in `providers.csv`.
 
 ### Useful Official URLs Already Tried
 
-- [Nebraska DHHS Public Assistance Offices wrapper](https://dhhs.ne.gov/Pages/Public-Assistance-Offices.aspx)
-- [Nebraska DHHS Economic Assistance](https://dhhs.ne.gov/Pages/economic-assistance.aspx)
-- [Nebraska DHHS Contact DHHS](https://dhhs.ne.gov/Pages/Contact-DHHS.aspx)
-- [Nebraska DHHS DD Contact Us](https://dhhs.ne.gov/Pages/DD-Contact-Us.aspx)
-- [Nebraska public office locator ExperienceBuilder](https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=76a6ec0ec7c449448c95d00f59002457)
-- [Nebraska locator public config](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/resources/config/config.json?f=json)
-- [Nebraska locator item data](https://gis.ne.gov/portal/sharing/rest/content/items/76a6ec0ec7c449448c95d00f59002457/data?f=json)
-- [Nebraska locator web map item data](https://gis.ne.gov/portal/sharing/rest/content/items/4bdbf8e8703743b0b2ff290f98737825/data?f=json)
-- [Nebraska office layer count query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&returnCountOnly=true&f=json)
-- [Nebraska county layer count query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/1/query?where=1%3D1&returnCountOnly=true&f=json)
-- [Nebraska distinct office-county query](https://gis.ne.gov/agency3/rest/services/Nebraska_DHHS_Public_Assistance_Office_Location/FeatureServer/0/query?where=1%3D1&outFields=USER_County&returnDistinctValues=true&returnGeometry=false&f=json)
+- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
+- [Florida Family Resource Center root](https://familyresourcecenter.myflfamilies.com/)
+- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
+- [Florida DCF contact-us page](https://www.myflfamilies.com/contact-us)
+- [Florida DCF contacts.csv](https://www.myflfamilies.com/contact-us/contacts.csv)
+- [Florida MyACCESS root](https://myaccess.myflfamilies.com/)
+- [Florida MyACCESS Public/CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
+- [Florida MyACCESS appconfig.js](https://myaccess.myflfamilies.com/config/appconfig.js)
+- [Florida MyACCESS asset manifest](https://myaccess.myflfamilies.com/asset-manifest.json)
+- [Florida MyACCESS main bundle](https://myaccess.myflfamilies.com/static/js/main.d43b0959.js)
+- [Florida MyACCESS dataexchangeproxy](https://myaccess.myflfamilies.com/dataexchangeproxy)
+- [Florida MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
+- [Florida MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly published Nebraska DHHS county office CSV, PDF, workbook, or county-assignment table attached to the existing office locator item.
-- Any new public ExperienceBuilder datasource, table, or service-area output added under the current `gis.ne.gov` locator stack.
-- Any official Nebraska same-host county office directory leaf that materially replaces the current wrapper-only locator page.
-## Next State Order After Nebraska
+- Any newly public Florida DCF or MyACCESS export or API path that materially extends county-local coverage beyond the 34 counties in `providers.csv`.
+- Any reviewed first-party Florida DCF local-office directory that maps counties directly to ACCESS, SNAP, cash, Medicaid, or Economic Self-Sufficiency routing rather than generic circuit or wrong-role contacts.
+- Any anonymous MyACCESS county-result contract that returns real county-specific partner or office results without authentication.
+## Next State Order After Florida
 
-1. Nevada
-2. Florida
-3. Alaska
-4. South Carolina
-5. North Carolina
-6. New York
-7. Oklahoma
-8. Oregon
-9. Ohio
-10. Minnesota
+1. Alaska
+2. South Carolina
+3. North Carolina
+4. New York
+5. Oklahoma
+6. Oregon
+7. Ohio
+8. Minnesota
+9. Maine
+10. Idaho
