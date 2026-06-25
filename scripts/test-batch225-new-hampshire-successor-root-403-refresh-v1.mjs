@@ -32,7 +32,7 @@ const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/new-hampshire
 const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-learned.md'), 'utf8');
 
 assert.equal(result.classification, 'BLOCKED');
-assert.equal(summary.primary_gap_reason, 'official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root');
+assert.equal(summary.primary_gap_reason, 'official_nh_dhhs_education_and_vr_host_families_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead');
 
 for (const fam of ['medicaid_state_health_coverage','medicaid_waiver_hcbs_disability_services','developmental_disability_idd_authority','early_intervention_part_c']) {
   const gap = gapRows.find((row) => row.family === fam);
@@ -56,19 +56,19 @@ assert.match(vrGap.status_reason, /https:\/\/nhes\.nh\.gov\//i);
 assert.match(vrGap.status_reason, /www\.nh\.gov\/nhes/i);
 
 const dhhsFailure = failureRows.find((row) => row.family === 'medicaid_state_health_coverage');
-assert.equal(dhhsFailure.failure_code, 'current_nh_dhhs_replacement_host_unresolvable_and_likely_nh_gov_successors_forbidden');
+assert.equal(dhhsFailure.failure_code, 'current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell');
 assert.match(dhhsFailure.evidence, /https:\/\/www\.nh\.gov\//i);
-assert.match(dhhsFailure.evidence, /403 Forbidden/i);
+assert.match(dhhsFailure.evidence, /Access Denied`? shell with HTTP 403/i);
 
 const eduFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
-assert.equal(eduFailure.failure_code, 'official_nh_doe_host_family_and_likely_nh_gov_successors_return_access_denied_shell');
+assert.equal(eduFailure.failure_code, 'official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell');
 
 const vrFailure = failureRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
-assert.equal(vrFailure.failure_code, 'official_nh_vr_host_family_forbidden_or_unresolvable_and_no_live_nh_gov_successor_root');
+assert.equal(vrFailure.failure_code, 'official_nh_vr_host_family_still_access_denied_or_unresolvable_with_no_public_successor');
 
 assert.ok(verifiedRows.find((row) => row.family === 'county_local_disability_resources').blocker_evidence.includes('https://www.nh.gov/dhhs/'));
 
-assert.equal(packet.primary_gap_reason, 'official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root');
+assert.equal(packet.primary_gap_reason, 'official_nh_dhhs_education_and_vr_host_families_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead');
 assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('www.nh.gov/dhhs')));
 assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('www.dhhs.nh.gov')));
 assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_families.includes('dhhs.nh.gov')));
@@ -80,7 +80,7 @@ assert.ok(packet.blocker_classes.some((row) => row.host_families && row.host_fam
 assert.equal(batchSummary.nh_gov_root_forbidden, true);
 assert.equal(batchSummary.dhhs_successor_unresolvable, true);
 assert.equal(batchSummary.direct_agency_subdomains_forbidden, true);
-assert.ok(report.includes('both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return HTTP 403 Forbidden immediately'));
+assert.ok(report.includes('both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return the same short Access Denied shell with HTTP 403 immediately'));
 assert.ok(lessons.includes('### Probe Both Agency Subdomains And State-Path Successors Before Reopening A Host-Family Blocker'));
 
 for (const row of nextRows.filter((row) => ['medicaid_state_health_coverage','district_or_county_education_routing','vocational_rehabilitation_pre_ets'].includes(row.family))) {

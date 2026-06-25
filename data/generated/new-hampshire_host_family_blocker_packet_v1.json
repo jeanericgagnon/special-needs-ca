@@ -34,7 +34,7 @@
       "finding": "The saved replacement-host family still does not resolve and the direct DHHS plus likely nh.gov DHHS successors still return the same short Access Denied shell with HTTP 403."
     },
     {
-      "blocker_class": "official_education_hosts_and_direct_successors_access_denied_shell",
+      "blocker_class": "official_education_hosts_and_nh_gov_successors_forbidden",
       "families": [
         "district_or_county_education_routing"
       ],
@@ -53,7 +53,7 @@
         "https://www.nh.gov/education/",
         "https://www.nh.gov/education/doe/"
       ],
-      "finding": "The official education hosts and the likely nh.gov education successors still return the same short Access Denied shell with HTTP 403."
+      "finding": "The official education hosts return Access Denied and the likely nh.gov education successors return HTTP 403 Forbidden immediately."
     },
     {
       "blocker_class": "official_vr_hosts_still_access_denied_or_unresolvable_with_no_public_successor",

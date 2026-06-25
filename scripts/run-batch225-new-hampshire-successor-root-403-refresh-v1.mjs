@@ -24,15 +24,15 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'new-hampshire-california-grade-audit-report-v2.md'),
 };
 
-const PRIMARY_GAP_REASON = 'official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root';
-const DHHS_FAILURE_CODE = 'current_nh_dhhs_replacement_host_unresolvable_and_likely_nh_gov_successors_forbidden';
-const EDU_FAILURE_CODE = 'official_nh_doe_host_family_and_likely_nh_gov_successors_return_access_denied_shell';
-const VR_FAILURE_CODE = 'official_nh_vr_host_family_forbidden_or_unresolvable_and_no_live_nh_gov_successor_root';
-const COUNTY_FAILURE_CODE = 'official_nh_dhhs_host_family_and_likely_nh_gov_successors_return_access_denied_shell';
+const PRIMARY_GAP_REASON = 'official_nh_dhhs_education_and_vr_host_families_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead';
+const DHHS_FAILURE_CODE = 'current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell';
+const EDU_FAILURE_CODE = 'official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell';
+const VR_FAILURE_CODE = 'official_nh_vr_host_family_still_access_denied_or_unresolvable_with_no_public_successor';
+const COUNTY_FAILURE_CODE = 'official_nh_dhhs_host_family_and_direct_successors_still_return_access_denied_shell';
 
-const SHARED_DHHS_EVIDENCE = 'Reviewed 2026-06-23 exact first-party checks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` all fail DNS resolution in bounded review. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` both return HTTP 403 Forbidden, and a bounded successor probe also showed `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` all returning HTTP 403 Forbidden immediately. New Hampshire therefore still has no reviewed public official DHHS successor host for Medicaid, waiver, DD, early-intervention, or district-office lanes.';
-const EDU_EVIDENCE = 'Reviewed 2026-06-23 bounded browser-style probes on the official New Hampshire education host family, both `education.nh.gov` subdomain variants, and one likely `nh.gov` successor family. `https://www.education.nh.gov/`, `https://education.nh.gov/`, exact district-directory leaves under `www.education.nh.gov`, and the alternate `https://my.doe.nh.gov/ehb/` host all return the same short `Access Denied` shell or HTTP 403. A fresh successor probe also showed `https://www.nh.gov/education/` and `https://www.nh.gov/education/doe/` returning HTTP 403 Forbidden immediately. No reviewed district- or county-grade education routing chain is publicly fetchable from the current official education family or the obvious `nh.gov` successor roots.';
-const VR_EVIDENCE = 'Reviewed 2026-06-23 the current New Hampshire VR lane against the legacy host assumptions, both `nhes.nh.gov` subdomain variants, and one likely `nh.gov` successor family. The legacy root `dhhs.new-hampshire.gov/rehab` no longer resolves, `https://www.nhes.nh.gov/`, `https://nhes.nh.gov/`, and the BVR disabilities path return the same short `Access Denied` shell or HTTP 403, `www.nheasy.nh.gov` does not resolve, and a fresh successor probe showed `https://www.nh.gov/nhes/` plus `https://www.nh.gov/employment/` returning HTTP 403 Forbidden immediately. No reviewed first-party VR or Pre-ETS surface is publicly fetchable from the current official host family or the obvious `nh.gov` successor roots.';
+const SHARED_DHHS_EVIDENCE = 'Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved hostnames `https://dhhs.new-hampshire.gov/`, `https://dhhs.new-hampshire.gov/dd`, `https://dhhs.new-hampshire.gov/dd/waivers`, and `https://dhhs.new-hampshire.gov/earlystart` still fail DNS resolution. Direct agency roots `https://www.dhhs.nh.gov/` and `https://dhhs.nh.gov/` still return the same short `Access Denied` shell with HTTP 403, and exact successor probes `https://www.nh.gov/`, `https://www.nh.gov/dhhs/`, `https://www.nh.gov/dhhs/contact-us/`, and `https://www.nh.gov/dhhs/district-offices/` do the same. New Hampshire therefore still has no reviewed public official DHHS successor host for Medicaid, waiver, DD, early-intervention, or district-office lanes.';
+const EDU_EVIDENCE = 'Reviewed 2026-06-25 bounded exact first-party rechecks on the official New Hampshire education host family, both `education.nh.gov` subdomain variants, exact district-directory leaves, the alternate `https://my.doe.nh.gov/ehb/` host, and the likely `nh.gov` successor family. `https://www.education.nh.gov/`, `https://education.nh.gov/`, exact district-directory leaves under `www.education.nh.gov`, and `https://my.doe.nh.gov/ehb/` all still return the same short `Access Denied` shell with HTTP 403. Exact successor probes `https://www.nh.gov/education/` and `https://www.nh.gov/education/doe/` still do the same. No reviewed district- or county-grade education routing chain is publicly fetchable from the current official education family or the obvious `nh.gov` successor roots.';
+const VR_EVIDENCE = 'Reviewed 2026-06-25 the current New Hampshire VR lane against the legacy host assumptions, both `nhes.nh.gov` subdomain variants, and the likely `nh.gov` successor family. The legacy root `dhhs.new-hampshire.gov/rehab` still does not resolve, `https://www.nhes.nh.gov/`, `https://nhes.nh.gov/`, and the BVR disabilities path still return the same short `Access Denied` shell with HTTP 403, `https://www.nheasy.nh.gov/` still does not resolve, and exact successor probes `https://www.nh.gov/nhes/` plus `https://www.nh.gov/employment/` still return the same short `Access Denied` shell with HTTP 403. No reviewed first-party VR or Pre-ETS surface is publicly fetchable from the current official host family or the obvious `nh.gov` successor roots.';
 
 const LESSON_HEADING = '### Probe Both Agency Subdomains And State-Path Successors Before Reopening A Host-Family Blocker';
 const LESSON_BODY = '*   **Lesson:** When an official host family looks migrated, test both the direct agency subdomain pair and the obvious `nh.gov` path successor before guessing deeper leaves. New Hampshire kept the blocker sharp because `www.dhhs.nh.gov` and `dhhs.nh.gov`, `www.education.nh.gov` and `education.nh.gov`, and `www.nhes.nh.gov` and `nhes.nh.gov` all failed alongside the plain `nh.gov` agency paths.';
@@ -96,7 +96,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '- New Hampshire remains BLOCKED and index_safe=false.',
     '- The saved `dhhs.new-hampshire.gov` replacement-host family is still unresolvable.',
-    '- Neither the direct agency subdomains nor the likely `nh.gov` path successors are hidden rescue paths in this lane: both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return HTTP 403 Forbidden immediately.',
+    '- Neither the direct agency subdomains nor the likely `nh.gov` path successors are hidden rescue paths in this lane: both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return the same short Access Denied shell with HTTP 403 immediately.',
     '- No reviewed public official successor host is currently preserved for the blocked DHHS, education, VR, or district-office families.',
   ].join('\n') + '\n';
 }
@@ -223,10 +223,10 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
   const updatedPacket = {
     ...packet,
     primary_gap_reason: PRIMARY_GAP_REASON,
-    purpose: 'Deterministic blocker packet for New Hampshire while the saved DHHS successor host remains unresolvable and the likely public nh.gov successor family remains HTTP 403 forbidden.',
+    purpose: 'Deterministic blocker packet for New Hampshire while the saved DHHS replacement-host family remains DNS-dead and the direct DHHS, education, VR, and likely nh.gov successor hosts still return the same short Access Denied shell with HTTP 403.',
     blocker_classes: [
       {
-        blocker_class: 'saved_successor_host_unresolvable_and_nh_gov_successors_forbidden',
+        blocker_class: 'saved_successor_host_dns_dead_and_direct_successors_access_denied_shell',
         families: [
           'medicaid_state_health_coverage',
           'medicaid_waiver_hcbs_disability_services',
@@ -252,7 +252,7 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
           'https://www.nh.gov/dhhs/contact-us/',
           'https://www.nh.gov/dhhs/district-offices/'
         ],
-        finding: 'The saved replacement-host family does not resolve and the likely nh.gov DHHS successors return HTTP 403 Forbidden immediately.'
+        finding: 'The saved replacement-host family still does not resolve and the direct DHHS plus likely nh.gov DHHS successors still return the same short Access Denied shell with HTTP 403.'
       },
       {
         blocker_class: 'official_education_hosts_and_nh_gov_successors_forbidden',
@@ -277,7 +277,7 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
         finding: 'The official education hosts return Access Denied and the likely nh.gov education successors return HTTP 403 Forbidden immediately.'
       },
       {
-        blocker_class: 'official_vr_hosts_unresolvable_or_forbidden_and_no_nh_gov_successor',
+        blocker_class: 'official_vr_hosts_still_access_denied_or_unresolvable_with_no_public_successor',
         families: [
           'vocational_rehabilitation_pre_ets'
         ],
@@ -295,7 +295,7 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
           'https://www.nh.gov/nhes/',
           'https://www.nh.gov/employment/'
         ],
-        finding: 'The current VR host family is either unresolvable or Access Denied, and the likely nh.gov successors return HTTP 403 Forbidden immediately.'
+        finding: 'The current VR host family is still either unresolvable or the same short Access Denied shell, and the likely nh.gov successors do the same.'
       }
     ]
   };
@@ -311,7 +311,7 @@ export function generateBatch225NewHampshireSuccessorRoot403RefreshV1() {
   const lessonsUpdated = appendLessonIfMissing(INPUTS.lessons);
   const batchSummary = {
     batch: 'batch225_new_hampshire_successor_root_403_refresh_v1',
-    generated_at: '2026-06-23T00:00:00.000Z',
+    generated_at: '2026-06-25T00:00:00.000Z',
     state: 'new-hampshire',
     classification: updatedSummary.classification,
     index_safe: updatedSummary.index_safe,

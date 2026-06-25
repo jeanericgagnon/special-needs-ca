@@ -50,17 +50,17 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: hold_blocked_until_public_nh_education_host_or_directory_is_reviewable
-- [critical] county_local_disability_resources: hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved
-- [major] vocational_rehabilitation_pre_ets: hold_blocked_until_public_nh_vr_host_is_preserved
 - [critical] medicaid_state_health_coverage: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
 - [critical] medicaid_waiver_hcbs_disability_services: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
 - [critical] developmental_disability_idd_authority: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
 - [critical] early_intervention_part_c: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
+- [critical] county_local_disability_resources: hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved
+- [critical] district_or_county_education_routing: hold_blocked_until_public_nh_education_host_or_directory_is_reviewable
+- [major] vocational_rehabilitation_pre_ets: hold_blocked_until_public_nh_vr_host_is_preserved
 
 ## Completion decision
 
 - New Hampshire remains BLOCKED and index_safe=false.
 - The saved `dhhs.new-hampshire.gov` replacement-host family is still unresolvable.
-- Neither the direct agency subdomains nor the likely `nh.gov` path successors are hidden rescue paths in this lane: both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return HTTP 403 Forbidden immediately.
+- Neither the direct agency subdomains nor the likely `nh.gov` path successors are hidden rescue paths in this lane: both `*.nh.gov` agency roots and the obvious `/dhhs`, `/education`, and `/nhes` successors all return the same short Access Denied shell with HTTP 403 immediately.
 - No reviewed public official successor host is currently preserved for the blocked DHHS, education, VR, or district-office families.
