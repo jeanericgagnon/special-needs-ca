@@ -147,11 +147,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_dpa_regions_cross_county_equivalent_boundaries_without_borough_assignment_contract"
+        "county_local_disability_resources": "blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch355_alaska_dual_lane_dpa_finality_v1",
-      "packetPrimaryGapReason": "reviewed_live_dpa_regions_cross_multiple_borough_or_census_area_boundaries_and_raw_health_page_sitemap_robots_search_all_403",
+      "packetPrimaryGapReason": "reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract",
       "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
     },
     {
