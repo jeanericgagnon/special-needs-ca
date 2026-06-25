@@ -2,17 +2,17 @@
   "state": "idaho",
   "state_code": "ID",
   "state_name": "Idaho",
-  "batch": "batch349_idaho_live_root_leaf_finality_v1",
+  "batch": "batch350_idaho_jefferson_leaf_recovery_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 44,
-  "completeness_pct": 83,
+  "completeness_pct": 84,
   "strong_critical_families": 10,
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "remaining_idaho_district_roots_now_split_between_live_homepage_sitemap_surfaces_without_role_bearing_leaves_and_one_blank_shell_challenge_after_bounded_exact_leaf_review",
+  "primary_gap_reason": "remaining_idaho_district_roots_now_reduce_to_live_homepage_sitemap_surfaces_without_role_bearing_leaves_after_jefferson_special_services_recovery",
   "recommended_batch": "hold_for_new_role_bearing_district_leaf_or_county_contract",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -44,9 +44,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "remaining_live_idaho_district_roots_expose_zero_role_bearing_special_education_or_student_services_links_and_jefferson_stays_blank_shell",
-      "evidence": "Reviewed 2026-06-25 bounded official Idaho district-root checks on https://www.camascountyschools.org/, https://www.clarkcountyschools161.org/, https://www.sd215.net/, https://www.sd215.net/sitemap.xml, https://www.oneidaschooldistrict.org/, https://www.oneidaschooldistrict.org/sitemap.xml, https://shoshonesd.org/, https://shoshonesd.org/sitemap.xml, https://shoshonesd.org/wp-sitemap.xml, and https://www.jeffersonsd251.org/. Camas and Clark both stayed live at their district roots but exposed no role-bearing special-education, special-services, student-services, 504, or procedural-safeguards links in one-hop public HTML. Fremont and Oneida both preserved live homepages and live sitemap.xml files, yet the bounded same-host URL inventory still exposed zero role-bearing education URLs. Shoshone preserved live homepage plus both sitemap surfaces, but the only public `special` hit was a `Special-Ed-Records-Distruction-1.pdf` file, not a routing, department, or contact leaf. Jefferson still returned the same blank Incapsula-style shell with no reusable title, H1, headings, or substantive text. The remaining Idaho district-host packet is therefore exhausted for low-token exact-leaf authoring until one of those official hosts publishes a real role-bearing education page.",
-      "next_action": "continue_exact_district_leaf_expansion_only_when_remaining_idaho_district_hosts_publish_role_bearing_special_education_or_special_services_links"
+      "failure_code": "remaining_live_idaho_district_roots_expose_zero_role_bearing_special_education_or_student_services_links_after_jefferson_recovery",
+      "evidence": "Reviewed 2026-06-25 bounded official Idaho district-root checks on https://www.camascountyschools.org/, https://www.clarkcountyschools161.org/, https://www.sd215.net/, https://www.sd215.net/sitemap.xml, https://www.oneidaschooldistrict.org/, https://www.oneidaschooldistrict.org/sitemap.xml, https://shoshonesd.org/, https://shoshonesd.org/sitemap.xml, https://shoshonesd.org/wp-sitemap.xml, and https://www.jeffersonsd251.org/wp-sitemap.xml. Jefferson is now positively recovered: the public sitemap exposes `https://www.jeffersonsd251.org/special-services/`, `https://www.jeffersonsd251.org/section-504/`, `https://www.jeffersonsd251.org/special-education/`, and `https://www.jeffersonsd251.org/student-services/`, and the live `special-education` page explicitly says Jefferson Joint School District 251 provides special education services for students with disabilities ages 3-21, links Child Find flyers, and offers a district Special Education Department contact form plus district office contact information. Camas and Clark both stayed live at their district roots but exposed no role-bearing special-education, special-services, student-services, 504, or procedural-safeguards links in one-hop public HTML. Fremont and Oneida both preserved live homepages and live sitemap.xml files, yet the bounded same-host review still did not materialize a reusable district-owned special-education or student-services leaf. Shoshone preserved live homepage plus both sitemap surfaces, but the only public `special` hit was a `Special-Ed-Records-Distruction-1.pdf` file, not a routing, department, or contact leaf. Idaho therefore remains blocked on the smaller live district-host remainder after Jefferson recovery.",
+      "next_action": "continue_exact_district_leaf_expansion_only_when_camas_clark_fremont_oneida_or_shoshone_publish_role_bearing_special_education_or_special_services_links"
     },
     {
       "family": "county_local_disability_resources",
@@ -57,6 +57,6 @@
     }
   ],
   "familyStatuses": {
-    "district_or_county_education_routing": "blocked_remaining_live_district_roots_without_role_bearing_leaves_after_bounded_homepage_sitemap_review"
+    "district_or_county_education_routing": "blocked_remaining_live_district_roots_without_role_bearing_leaves_after_jefferson_leaf_recovery"
   }
 }

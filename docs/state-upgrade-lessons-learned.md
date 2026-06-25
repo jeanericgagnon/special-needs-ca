@@ -491,3 +491,6 @@
 
 ### County-Coded Program Reports Still Do Not Prove Local Office Routing
 *   **Lesson:** If an official state host publishes county or county-and-town spreadsheets, inspect the actual sheet schema before treating them as routing evidence. Maine OFI exposed downloadable county-coded workbooks on the DHHS host, but the sheets only carried TANF/Food Supplement summary counts and no office, district, or service-area fields, so they strengthened the blocker instead of clearing county-local routing.
+
+### Public WP Sitemaps Can Reopen A District Host That Looked Blank In Raw HTML
+*   **Lesson:** If a district root looks blank or unhelpful in one raw fetch, check the public WordPress sitemap before freezing the host. Jefferson SD 251 looked like a blank shell at the root, but its public `wp-sitemap.xml` exposed district-owned `special-services`, `special-education`, `section-504`, and `student-services` leaves that were strong enough to recover county-grade education routing.

@@ -1,0 +1,12 @@
+{
+  "batch": "batch350_idaho_jefferson_leaf_recovery_v1",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_live_roots": 6,
+  "recovered_role_bearing_district_hosts": 1,
+  "live_homepage_roots_without_role_bearing_links": 5,
+  "challenge_shell_roots": 0,
+  "reviewed_exact_leaf_count_after_recovery": 14,
+  "result": "jefferson_recovered_remaining_live_district_root_packet_still_incomplete"
+}
