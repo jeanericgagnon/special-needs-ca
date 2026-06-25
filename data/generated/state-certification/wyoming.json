@@ -1,0 +1,243 @@
+{
+  "state": "wyoming",
+  "candidateBranch": null,
+  "pass": false,
+  "summary": {
+    "state": "wyoming",
+    "state_code": "WY",
+    "state_name": "Wyoming",
+    "batch": "batch380_wyoming_accessible_idea_freeze_v1",
+    "classification": "BLOCKED",
+    "index_safe": false,
+    "incorrectly_index_safe": false,
+    "county_count": 23,
+    "completeness_pct": 83,
+    "strong_critical_families": 10,
+    "weak_critical_families": 2,
+    "missing_critical_families": 0,
+    "total_critical_families": 12,
+    "primary_gap_reason": "wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract",
+    "recommended_batch": "batch_3_procedure_hardening",
+    "critical_gap_families": [
+      "district_or_county_education_routing",
+      "county_local_disability_resources"
+    ],
+    "major_gap_families": [],
+    "verified_source_families_with_samples": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "district_or_county_education_routing",
+      "vocational_rehabilitation_pre_ets",
+      "protection_and_advocacy",
+      "parent_training_information_center",
+      "legal_aid",
+      "able_program",
+      "ssi_ssa_federal_reference",
+      "county_local_disability_resources"
+    ],
+    "complete_ready": false,
+    "texas_v10_rule_basis": [
+      "Preserve noindex until all critical families are verified",
+      "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+      "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+    ],
+    "final_blockers": [
+      {
+        "family": "district_or_county_education_routing",
+        "severity": "critical",
+        "failure_code": "official_wde_is_public_but_no_reviewable_county_to_district_or_special_education_crosswalk",
+        "evidence": "Reviewed 2026-06-25 a bounded official Wyoming district-routing pass after WDE became publicly reviewable again. The WDE IDEA and parent special-education pages are now accessible, and the official `School District Enrollment & Staffing Data` page is also publicly reviewable, but the reviewed WDE artifacts still do not preserve a statewide county-to-district crosswalk, district directory, or district-owned special-education leaf set. Existing Wyoming district rows still stop at generic district roots such as Albany County School District #1, Big Horn County School District #1, and Campbell County School District #1. Because the instructions forbid treating generic district roots or non-routing staffing publications as local-proof substitutes, district or county education routing remains blocked.",
+        "next_action": "hold_blocked_until_wde_or_district_hosts_publish_reviewable_county_to_district_or_special_education_leaf_crosswalk"
+      },
+      {
+        "family": "county_local_disability_resources",
+        "severity": "critical",
+        "failure_code": "official_wdh_county_surfaces_are_aging_only_without_disability_specific_county_contract",
+        "evidence": "Reviewed 2026-06-25 a bounded official Wyoming Department of Health county-resource pass. The official WDH `Services by County` page under Aging Community Living is publicly reviewable again and explicitly says each county in Wyoming offers different programs for older adults, with county toggles listing senior-center, meal, caregiver, and Wyoming Home Services providers. The official WDH `Public Resources` page is also reviewable, but it routes to statewide community-living program pages and a map of older-adult resources rather than a disability-specific county-to-office assignment table, county service-area contract, or county-owned developmental-disability office directory. Wyoming county-local disability routing therefore remains blocked on the narrower ground that reviewed public WDH county evidence is aging/community-living only.",
+        "next_action": "hold_blocked_until_wdh_publishes_reviewable_public_disability_specific_county_to_office_or_service_area_contract"
+      }
+    ]
+  },
+  "gapRows": [
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "medicaid_state_health_coverage",
+      "family_label": "Medicaid / state health coverage",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_label": "Medicaid waiver / HCBS / disability services",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "developmental_disability_idd_authority",
+      "family_label": "Developmental disability / IDD authority",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "early_intervention_part_c",
+      "family_label": "Early intervention / IDEA Part C",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "special_education_idea_part_b",
+      "family_label": "Special education / IDEA Part B",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed 2026-06-25 the live official Wyoming Department of Education special-education hub and IDEA page after rechecking the current host family. The WDE special-education hub is publicly reviewable again, the IDEA page says Wyoming must submit an annual application to the U.S. Department of Education Office of Special Education Programs to receive federal funds for services to children with disabilities ages 3 through 21, and the page links the current `Annual State Application` PDF plus the `Purposed Use of Funds` spreadsheet artifact. This restores current official statewide IDEA Part B authority evidence on the WDE host."
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "district_or_county_education_routing",
+      "family_label": "District or county education routing",
+      "family_status": "blocked_official_wde_public_but_without_reviewable_county_to_district_special_education_crosswalk",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 a bounded official Wyoming district-routing pass after WDE became publicly reviewable again. The WDE IDEA and parent special-education pages are now accessible, and the official `School District Enrollment & Staffing Data` page is also publicly reviewable, but the reviewed WDE artifacts still do not preserve a statewide county-to-district crosswalk, district directory, or district-owned special-education leaf set. Existing Wyoming district rows still stop at generic district roots such as Albany County School District #1, Big Horn County School District #1, and Campbell County School District #1. Because the instructions forbid treating generic district roots or non-routing staffing publications as local-proof substitutes, district or county education routing remains blocked."
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_label": "Vocational rehabilitation / Pre-ETS",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "protection_and_advocacy",
+      "family_label": "Protection and advocacy",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party protection-and-advocacy evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "parent_training_information_center",
+      "family_label": "Parent training and information center",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed 2026-06-25 the live first-party Parents Information Center of Wyoming about page. The page states that `Wyoming has been home to the Parent Training and Information Center (PTI) since 1991` and that `PTIs are funded by the U.S. Department of Education, Office of Special Education Programs`. This now supplies direct first-party PTI designation evidence for Wyoming."
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "legal_aid",
+      "family_label": "Legal aid",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed 2026-06-25 live first-party Legal Aid of Wyoming plus the Wyoming Judicial Branch legal-services directory. The Legal Aid of Wyoming homepage says `We provide free civil legal help to low-income individuals in Wyoming` and identifies Legal Aid of Wyoming, Inc. as `a federally funded, non-profit law firm`, with listed locations in Cheyenne, Casper, Lander, Gillette, and Afton. The official Wyoming Judicial Branch `Find Legal Services` page then preserves a county-filtered `Legal Services Directory by County` and county listings for Legal Aid of Wyoming offices in Gillette, Lander, Cheyenne, Casper, and Cody. Together these first-party and official judicial artifacts supply current statewide legal-aid evidence for Wyoming."
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "able_program",
+      "family_label": "ABLE program",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "ssi_ssa_federal_reference",
+      "family_label": "SSI / SSA federal references",
+      "family_status": "verified_state_grade",
+      "critical": false,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "wyoming",
+      "state_code": "WY",
+      "state_name": "Wyoming",
+      "family": "county_local_disability_resources",
+      "family_label": "County/local disability resources",
+      "family_status": "blocked_official_wdh_county_surfaces_are_aging_only_without_disability_specific_contract",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 a bounded official Wyoming Department of Health county-resource pass. The official WDH `Services by County` page under Aging Community Living is publicly reviewable again and explicitly says each county in Wyoming offers different programs for older adults, with county toggles listing senior-center, meal, caregiver, and Wyoming Home Services providers. The official WDH `Public Resources` page is also reviewable, but it routes to statewide community-living program pages and a map of older-adult resources rather than a disability-specific county-to-office assignment table, county service-area contract, or county-owned developmental-disability office directory. Wyoming county-local disability routing therefore remains blocked on the narrower ground that reviewed public WDH county evidence is aging/community-living only."
+    }
+  ],
+  "filesChecked": [
+    "data/generated/wyoming_california_grade_summary_v2.json",
+    "data/generated/wyoming_gap_matrix_v2.jsonl",
+    "data/generated/wyoming_failure_ledger_v2.jsonl",
+    "data/generated/wyoming_verified_sources_v1.jsonl",
+    "data/generated/wyoming_next_action_queue_v2.jsonl",
+    "docs/generated/wyoming-california-grade-audit-report-v2.md"
+  ],
+  "failures": [
+    {
+      "code": "not_completion_candidate",
+      "family": null,
+      "filesChecked": [
+        "data/generated/wyoming_california_grade_summary_v2.json"
+      ],
+      "reason": "Candidate classification is BLOCKED, not COMPLETE.",
+      "suggestedRepairClass": "keep_blocked_or_repair_more"
+    }
+  ],
+  "checkedAt": "2026-06-25T23:23:49.780Z",
+  "liveProbeEnabled": false
+}
