@@ -28,51 +28,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Maine
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska blocker. The current official Alaska Department of Health DPA stack is now dual-lane final. In the reviewed browser lane, the official DPA Offices page and sibling DPA Services page are both public and readable, but they still preserve only broad regional groupings plus statewide contact paths. They do not assign Alaska boroughs or census areas to those offices. In the raw low-token lane, the same health host still fails closed with Cloudflare 403 shells on the exact DPA offices page, DPA landing page, sitemap, robots, and bounded site-search URLs. The DFCS successor host is also still negative: it exposes statewide or wrong-role branches, not borough-assignment routing.
+`county_local_disability_resources` is the only remaining Maine blocker. The current official Maine DHHS district-office stack is public and reviewable, but it still preserves only office-grade contact proof: district office names, towns, street addresses, phones, emails, map shortlinks, and OFI program links. It does not assign counties to those offices or expose any service-area labels. The OFI contact page, OFI programs-and-services page, Offices/Divisions page, Administrative Office Locations page, and the human-readable DHHS sitemap all stay live, but they still add no county-to-office or county-to-service-area routing contract. The official public county workbooks are real and parse cleanly, but they only preserve beneficiary counts by county and town, not office bindings.
 
 ### Exact Evidence Needed
 
-- Any current official Alaska public page, PDF, export, API, or map data that explicitly assigns boroughs or census areas to DPA offices.
-- Any reviewed official county-equivalent-to-service-area crosswalk on `health.alaska.gov`, `alaska.gov`, or another current Alaska official host that binds a borough or census area to a named DPA office or routing region.
-- Any public official successor surface that preserves county-equivalent service-area text beyond the current region-only office inventory.
+- Any current official Maine DHHS or OFI public page, PDF, export, XLS/XLSX, API, or map data that explicitly assigns counties to DHHS/OFI district offices.
+- Any reviewed official county-to-service-area crosswalk on `maine.gov/dhhs` or another current Maine official host that binds a county to a district office or named OFI routing area.
+- Any public official successor to the district-office page that preserves county-served or service-area text, not just office addresses.
 
 ### Useful Official URLs Already Tried
 
-- [DPA Offices](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [DPA Services](https://health.alaska.gov/en/services/division-of-public-assistance-dpa-services/)
-- [DPA landing page](https://health.alaska.gov/en/division-of-public-assistance/)
-- [health.alaska.gov sitemap.xml](https://health.alaska.gov/sitemap.xml)
-- [health.alaska.gov robots.txt](https://health.alaska.gov/robots.txt)
-- [health.alaska.gov search: public assistance](https://health.alaska.gov/en/search/?q=public+assistance)
-- [health.alaska.gov search: office](https://health.alaska.gov/en/search/?q=office)
-- [DFCS root](https://dfcs.alaska.gov/Pages/default.aspx)
-- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
-- [DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
-- [DFCS search results guess: public assistance](https://dfcs.alaska.gov/Pages/search-results.aspx?k=public%20assistance)
-- [DFCS search results guess: office](https://dfcs.alaska.gov/Pages/search-results.aspx?k=office)
-- [DFCS search results guess: medicaid](https://dfcs.alaska.gov/Pages/search-results.aspx?k=medicaid)
-- [DFCS search results guess: adult public assistance](https://dfcs.alaska.gov/Pages/search-results.aspx?k=adult%20public%20assistance)
+- [District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
+- [OFI Contact](https://www.maine.gov/dhhs/ofi/about-us/contact)
+- [OFI Programs & Services](https://www.maine.gov/dhhs/ofi/programs-services)
+- [DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)
+- [Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
+- [DHHS human-readable sitemap](https://www.maine.gov/dhhs/about/sitemap)
+- [DHHS sitemap.xml guess](https://www.maine.gov/dhhs/about/sitemap.xml)
+- [DHHS root sitemap.xml guess](https://www.maine.gov/dhhs/sitemap.xml)
+- [OFI county workbook](https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/May%202026%20Summary%20Counts%20By%20County.xlsx)
+- [OFI county-and-town workbook](https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/May%202026%20Summary%20Counts%20By%20County%20And%20Town.xlsx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Alaska surface that names boroughs or census areas under DPA office coverage.
-- Any current Alaska export, API, workbook, or map configuration that exposes office identifiers plus borough/census-area bindings instead of region-only groupings.
-- Any official successor page or reviewable public document that preserves borough-served or census-area-served text more specific than the current office-city inventory.
+- Any official Maine surface that names counties under DHHS or OFI district-office coverage.
+- Any current Maine DHHS or OFI export/API/workbook that exposes office identifiers or county-to-office bindings instead of counts only.
+- Any official successor page that preserves service-area text more specific than office town and address inventory.
 
-## Next State Order After Alaska
+## Next State Order After Maine
 
-1. Maine
-2. Idaho
-3. Arizona
-4. Massachusetts
-5. New Mexico
-6. South Dakota
-7. Rhode Island
-8. Virginia
-9. West Virginia
-10. North Dakota
+1. Idaho
+2. Arizona
+3. Massachusetts
+4. New Mexico
+5. South Dakota
+6. Rhode Island
+7. Virginia
+8. West Virginia
+9. North Dakota
+10. Wisconsin
