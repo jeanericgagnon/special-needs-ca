@@ -1,0 +1,16 @@
+{
+  "batch": "batch385_vermont_blocker_refinement_v1",
+  "state": "vermont",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "refined_blockers": [
+    "county_local_disability_resources"
+  ],
+  "evidence_sources": [
+    "https://data.vermont.gov/Education/Vermont-Child-Care-Provider-Data/ctdw-tmfz",
+    "https://api.us.socrata.com/api/catalog/v1?domains=data.vermont.gov&search_context=data.vermont.gov&q=AHS%20District",
+    "https://api.us.socrata.com/api/catalog/v1?domains=data.vermont.gov&search_context=data.vermont.gov&q=%22Agency%20of%20Human%20Services%20district%22",
+    "https://humanservices.vermont.gov/",
+    "https://dcf.vermont.gov/contacts/partners/offices"
+  ]
+}

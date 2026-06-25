@@ -1,10 +1,10 @@
-# Vermont California-Grade Audit Report v2
+# Vermont California-Grade Audit Report v3
 
 - classification: BLOCKED
 - index_safe: false
 - completeness_pct: 91
 - county_count: 14
-- primary_gap_reason: official_ahs_district_jurisdiction_codes_are_public_but_no_reviewable_public_ahs_office_crosswalk_or_service_area_contract_exists
+- primary_gap_reason: official_ahs_district_jurisdiction_codes_are_public_but_no_cataloged_or_public_office_crosswalk_exists
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party Vermont Legal Aid evidence preserves statewide free civil legal-help routing on the live first-party domain)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_official_ahs_district_codes_without_public_office_crosswalk (Reviewed 2026-06-25 one more bounded official Vermont county-local pass. The official DCF Vermont Child Care Provider Data dataset on `data.vermont.gov` publicly preserves both `County` and `AHS District` fields, and its field description says `AHS District` is `The three-letter abbreviation for which Agency of Human Services district office jurisdiction the provider's town is in.` Sample rows publicly show town-and-county jurisdiction pairs such as Williston / Chittenden / BDO, East Montpelier / Washington / MDO, North Hero / Grand Isle / ADO, and Bethel / Windsor / HDO. But the live AHS root `https://humanservices.vermont.gov/` and the DCF offices page `https://dcf.vermont.gov/contacts/partners/offices` both returned HTTP 403 CloudFront error pages in this pass, and no reviewed public official dataset or page decodes those AHS district abbreviations into office names, addresses, contacts, or county-served assignments. Vermont therefore still lacks a reviewable public county-to-office assignment contract.)
+- county_local_disability_resources: blocked_official_ahs_district_codes_without_public_office_crosswalk (Reviewed 2026-06-25 one more bounded official Vermont county-local pass. The official DCF Vermont Child Care Provider Data dataset on `data.vermont.gov` remains current through 2026-06-15 and publicly preserves both `County` and `AHS District` fields. The official data.vermont.gov catalog search for `Agency of Human Services district` returned only three child-care datasets and no public office-crosswalk dataset that decodes the AHS district abbreviations into office names, addresses, contacts, or county-served assignments. The live AHS root `https://humanservices.vermont.gov/` returned HTTP 403 CloudFront on 2026-06-25, and the DCF offices page `https://dcf.vermont.gov/contacts/partners/offices` also returned HTTP 403 CloudFront on 2026-06-25. Vermont therefore still lacks a reviewable public county-to-office assignment contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_ahs_district_jurisdiction_codes_exist_but_public_office_crosswalk_is_unavailable_or_403 :: Reviewed 2026-06-25 one more bounded official Vermont county-local pass. The official DCF Vermont Child Care Provider Data dataset on `data.vermont.gov` publicly preserves both `County` and `AHS District` fields, and its field description says `AHS District` is `The three-letter abbreviation for which Agency of Human Services district office jurisdiction the provider's town is in.` Sample rows publicly show town-and-county jurisdiction pairs such as Williston / Chittenden / BDO, East Montpelier / Washington / MDO, North Hero / Grand Isle / ADO, and Bethel / Windsor / HDO. But the live AHS root `https://humanservices.vermont.gov/` and the DCF offices page `https://dcf.vermont.gov/contacts/partners/offices` both returned HTTP 403 CloudFront error pages in this pass, and no reviewed public official dataset or page decodes those AHS district abbreviations into office names, addresses, contacts, or county-served assignments. Vermont therefore still lacks a reviewable public county-to-office assignment contract.
+- county_local_disability_resources: official_ahs_district_jurisdiction_codes_exist_but_no_cataloged_or_public_office_crosswalk_exists :: Reviewed 2026-06-25 one more bounded official Vermont county-local pass. The official DCF Vermont Child Care Provider Data dataset on `data.vermont.gov` remains current through 2026-06-15 and publicly preserves both `County` and `AHS District` fields. The official data.vermont.gov catalog search for `Agency of Human Services district` returned only three child-care datasets and no public office-crosswalk dataset that decodes the AHS district abbreviations into office names, addresses, contacts, or county-served assignments. The live AHS root `https://humanservices.vermont.gov/` returned HTTP 403 CloudFront on 2026-06-25, and the DCF offices page `https://dcf.vermont.gov/contacts/partners/offices` also returned HTTP 403 CloudFront on 2026-06-25. Vermont therefore still lacks a reviewable public county-to-office assignment contract.
 
 ## Verified source samples
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.vtlegalaid.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_official_ahs_district_codes_without_public_office_crosswalk; samples=5; first=https://data.vermont.gov/Education/Vermont-Child-Care-Provider-Data/ctdw-tmfz
+- county_local_disability_resources: blocked_official_ahs_district_codes_without_public_office_crosswalk; samples=6; first=https://data.vermont.gov/Education/Vermont-Child-Care-Provider-Data/ctdw-tmfz
 
 ## Next actions
 
@@ -49,7 +49,6 @@
 ## Repair decision
 
 - Vermont remains BLOCKED and not index-safe.
-- `district_or_county_education_routing` now clears because the official Vermont Education Dashboard dataset publicly maps local schools and school cities to named supervisory unions and districts on `data.vermont.gov`.
-- `protection_and_advocacy` now clears because Disability Rights Vermont explicitly identifies itself as part of the national Protection and Advocacy system on the live first-party homepage.
-- `parent_training_information_center` now clears because Vermont Family Network's live first-party page explicitly preserves its federally designated PTI status.
-- `county_local_disability_resources` is the only remaining critical blocker. Official Vermont data proves AHS district jurisdiction codes exist, but the reviewed public AHS and DCF office-directory surfaces returned raw HTTP 403 pages and no reviewed public source decodes the district abbreviations into office names, contacts, or county-served assignments.
+- `county_local_disability_resources` is still the only remaining critical blocker.
+- The Vermont open-data lane proves AHS district jurisdiction codes still exist, but the official data catalog still exposes no public crosswalk that maps those abbreviations to office names or county-served contracts.
+- The live AHS root and DCF offices page both returned HTTP 403 CloudFront responses again on 2026-06-25, so there is still no reviewable public office directory to close the state.
