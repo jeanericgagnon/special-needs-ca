@@ -1,0 +1,21 @@
+{
+  "batch": "batch355_alaska_dual_lane_dpa_finality_v1",
+  "generated_at": "2026-06-25T12:11:54.780Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "reviewed_dpa_offices_status": 200,
+  "reviewed_dpa_offices_title": "Division of Public Assistance (DPA) Offices | State of Alaska | Department of Health",
+  "reviewed_dpa_offices_h1": "Division of Public Assistance (DPA) Offices",
+  "raw_dpa_landing_status": 403,
+  "raw_dpa_offices_status": 403,
+  "raw_dpa_dashboard_pdf_status": 403,
+  "raw_medicaid_snapshot_pdf_status": 403,
+  "dfcs_root_status": 200,
+  "dfcs_services_status": 200,
+  "dfcs_site_map_status": 200,
+  "dfcs_contacts_status": 200,
+  "dfcs_search_guess_404s": 4,
+  "borough_assignment_contract_found": false
+}

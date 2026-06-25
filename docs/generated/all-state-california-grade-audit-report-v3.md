@@ -18,22 +18,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
-- Idaho remains blocked, but the district-root lane improved again: Oneida now clears from a district-owned Child Find PDF with Special Education Director contact evidence, joining Jefferson; Camas, Clark, Fremont, and Shoshone still expose no reusable role-bearing education leaves, and county-local stays separately blocked on the missing DHW county contract.
-- Arizona remains blocked after a fresh live education-surface recheck: the final three district-owned public domains still expose no role-bearing local special-education, student-services, or 504 leaves, and county-local still bottoms out in AHCCCS support-letter PDFs rather than a county-routing contract.
-- New Mexico remains blocked because both official state-host education families now fail closed in different ways: the legacy `education.new-mexico.gov` family is unresolvable, the current `webnew.ped.state.nm.us` family still times out under bounded probes, and zero district-owned local leaves are preserved on disk; county-local still has a four-county HCA remainder.
-- New Mexico remains blocked because both official state-host education families now fail closed in different ways: the legacy `education.new-mexico.gov` family is unresolvable, the current `webnew.ped.state.nm.us` family still times out under bounded probes, and zero district-owned local leaves are preserved on disk; county-local still has a four-county HCA remainder.
-- Massachusetts remains blocked only on county-local DDS routing: the official DESE district export plus the official Census TIGERweb county subdivision layer now clears education county coverage, but the live DDS locations lane still preserves no county-grade export or reusable locality capture in the low-token raw path.
-- Oklahoma is now COMPLETE/index-safe because the official Oklahoma county health department fallback closes the prior 31-county county-local gap with exact county root-plus-services page pairs carrying county-specific contact plus SoonerStart, SoonerCare, Oklahoma Medicaid, Community Health Worker, or applications-and-referrals evidence.
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
-- Nebraska remains COMPLETE/index-safe because the official DHHS N-FOCUS TANF `Employment First (EF) Offices` lane exposes a public county-office region contract across all 93 counties, with explicit county-specific office assignments and `Counties Served` fields on the official GIS owner family.
-
-
-
-
-
-
-
-
-- Alaska county-local routing is still blocked: the raw low-token lane still gets Cloudflare `Just a moment...` 403 shells across the health-host DPA family, the earlier browser-reviewed DPA offices page still only groups regional offices without borough or census-area assignments, and DFCS root, site-map, contacts, and bounded search-result checks still expose no DPA office contract or public search recovery lane.
-- Maine remains blocked after a sharper office-address finality check: the DHHS office stack, OFI contact page, and sampled `Show Map` links still only expose office addresses and generic eligibility routing, not any county-to-office or service-area contract.
+- The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
+- The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
