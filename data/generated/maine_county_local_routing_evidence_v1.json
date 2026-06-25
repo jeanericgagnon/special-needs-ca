@@ -1,0 +1,44 @@
+{
+  "state": "maine",
+  "generated_at": "2026-06-25T22:28:01.445Z",
+  "county_local": {
+    "reviewed_sources": [
+      {
+        "source_url": "https://www.maine.gov/dhhs/about/contact/offices",
+        "authority": "Maine Department of Health and Human Services",
+        "review_date": "2026-06-25",
+        "finding": "district_office_directory_lists_office_contacts_but_no_county_or_service_area_fields",
+        "evidence_excerpt": "The official district office page lists office names, towns, street addresses, phones, emails, and OFI links, but no county-served or service-area fields."
+      },
+      {
+        "source_url": "https://www.maine.gov/dhhs/ofi/about-us/contact",
+        "authority": "Maine Office for Family Independence",
+        "review_date": "2026-06-25",
+        "finding": "ofi_contact_page_routes_to_district_offices_and_statewide_help_only",
+        "evidence_excerpt": "The OFI contact page points back to District Office locations and the statewide eligibility phone 1 (855) 797-4357, with no county crosswalk."
+      },
+      {
+        "source_url": "https://www.maine.gov/search/?search=Aroostook%20district%20office%20dhhs",
+        "authority": "Maine.gov",
+        "review_date": "2026-06-25",
+        "finding": "official_search_host_still_returns_generic_google_cse_shell",
+        "evidence_excerpt": "The public Maine search host still returns the generic shell titled \"Maine.gov: Search IFW\" with a `gcse-search` container and no server-rendered county-routing or district-office assignment result."
+      },
+      {
+        "source_url": "https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/May%202026%20Summary%20Counts%20By%20County.xlsx",
+        "authority": "Maine Department of Health and Human Services",
+        "review_date": "2026-06-25",
+        "finding": "county_workbook_reports_counts_only_without_office_binding",
+        "evidence_excerpt": "The official county workbook headers begin with `COUNTY` and count columns only; it does not bind counties to district office names or service areas."
+      },
+      {
+        "source_url": "https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/May%202026%20Summary%20Counts%20By%20County%20And%20Town.xlsx",
+        "authority": "Maine Department of Health and Human Services",
+        "review_date": "2026-06-25",
+        "finding": "county_and_town_workbook_reports_counts_only_without_office_binding",
+        "evidence_excerpt": "The official county-and-town workbook headers begin with `COUNTY`, `TOWN`, and count columns only; it still does not expose office names, office identifiers, or service-area routing fields."
+      }
+    ],
+    "blocker_summary": "Reviewed official Maine DHHS, OFI, search-host, and workbook lanes still preserve office contacts and county/town counts without any public county-to-office or service-area assignment contract."
+  }
+}

@@ -15,20 +15,15 @@ const INPUTS = {
   verified: path.join(generatedDir, 'maine_verified_sources_v1.jsonl'),
   next: path.join(generatedDir, 'maine_next_action_queue_v2.jsonl'),
   report: path.join(docsGeneratedDir, 'maine-california-grade-audit-report-v2.md'),
-  queue: path.join(generatedDir, 'all_state_priority_queue_v3.jsonl'),
-  audit: path.join(generatedDir, 'all_state_california_grade_audit_v3.json'),
-  allStateReport: path.join(docsGeneratedDir, 'all-state-california-grade-audit-report-v3.md'),
-  handoff: path.join(docsGeneratedDir, 'gemini-source-scout-handoff.md'),
-  lessons: path.join(repoRoot, 'docs', 'state-upgrade-lessons-learned.md'),
 };
 
 const OUTPUTS = {
   summary: path.join(generatedDir, 'batch364_maine_search_finality_summary_v1.json'),
   report: path.join(docsGeneratedDir, 'batch364-maine-search-finality-report-v1.md'),
+  evidence: path.join(generatedDir, 'maine_county_local_routing_evidence_v1.json'),
 };
 
 const BATCH_NAME = 'batch364_maine_search_finality_v1';
-const ASSIGNED_NEXT_STATES_AFTER_MAINE = ['Idaho', 'New Mexico', 'Arizona', 'New Hampshire'];
 const PRIMARY_GAP_REASON =
   'official_dhhs_nav_stack_and_official_maine_search_still_expose_office_addresses_and_labels_but_no_county_or_service_area_contract';
 const COUNTY_STATUS =
@@ -38,13 +33,9 @@ const FAILURE_CODE =
 const NEXT_ACTION =
   'hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing';
 const COUNTY_REASON =
-  'Reviewed 2026-06-25 one more bounded official Maine county-local pass across the live DHHS navigation stack and the official Maine search host. District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, the DHHS sitemap, sampled `Show Map` shortlinks, and official Maine search query pages still preserve office names, office towns, street addresses, phones, emails, program labels, office/division descriptions, map shortlinks, and a generic search shell, but they still expose zero county-served fields, zero service-area labels, and zero county-to-office assignment metadata. The official search pages add no recoverable county-routing leaf and no county or district-office assignment result. Maine therefore still has official office-grade address proof without any truthful county-to-office or county-to-service-area routing contract on the public host family.';
+  'Reviewed 2026-06-25 one more bounded official Maine county-local pass across the live DHHS navigation stack, the official Maine search host using its real `search=` query parameter, and the current OFI county workbooks. District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, the DHHS sitemap, sampled `Show Map` shortlinks, and the county/counties-and-town workbooks still preserve office names, office towns, street addresses, phones, emails, program labels, office/division descriptions, map shortlinks, or county/town program counts, but they still expose zero county-served fields, zero service-area labels, and zero county-to-office assignment metadata. The official search pages still return only the generic Google CSE shell titled `Maine.gov: Search IFW`, with no server-rendered county-routing or district-office assignment result. Maine therefore still has official office-grade address proof and county count workbooks without any truthful county-to-office or county-to-service-area routing contract on the public host family.';
 const COUNTY_EVIDENCE =
-  'Reviewed 2026-06-25 bounded official Maine DHHS/OFI navigation-stack surfaces on `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/ofi/about-us/contact`, `https://www.maine.gov/dhhs/ofi/programs-services`, `https://www.maine.gov/dhhs/offices-divisions`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/about/sitemap`, two representative `Show Map` shortlinks from the district office table, and official Maine search queries such as `https://www.maine.gov/search/?q=Aroostook%20district%20office%20dhhs` and `https://www.maine.gov/search/?q=county%20district%20office%20ofi`. The live district office page still preserves district office names, office towns and addresses, phones, emails, map shortlinks, and OFI program links, but zero county names, zero county-served labels, and zero service-area fields in public HTML. The OFI contact page still only points back to `District Office locations` and statewide eligibility/help routing. The OFI programs-and-services page stays live but exposes no county or office-assignment metadata. The Offices/Divisions page and Administrative Office Locations page add office and division descriptions plus administrative addresses such as Family Independence in Augusta and Health Insurance Marketplace in Portland, but still no county-served or service-area routing fields. The DHHS sitemap only reconfirms the same office leaves. The representative `Show Map` shortlinks resolved only to Google Maps address geocodes for `35 Anthony Ave, Augusta, ME 04330` and `19 Maine Ave, Bangor, ME 04401`, adding no county names, no district-office identifiers, and no county-to-office routing fields. The official Maine search host returned only the generic portal shell with zero county-routing or district-office assignment results for the sampled county-targeted queries. Maine therefore still has official office addresses and office labels without any public county-assignment contract.';
-const LESSON_HEADING =
-  '### Official State Search Shells Are Still Negative Evidence When They Materialize No Role Results';
-const LESSON_TEXT =
-  '*   **Lesson:** If an official state search host is public but county-targeted queries only replay the same generic portal shell with no role-bearing results, count that as final negative evidence instead of a discovery lead. Maine`s public `maine.gov/search` stayed live for county-office queries, but it produced no DHHS county-routing or district-office assignment results and did not reopen the blocker.';
+  'Reviewed 2026-06-25 bounded official Maine DHHS/OFI navigation-stack surfaces on `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/ofi/about-us/contact`, `https://www.maine.gov/dhhs/ofi/programs-services`, `https://www.maine.gov/dhhs/offices-divisions`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/about/sitemap`, two representative `Show Map` shortlinks from the district office table, official Maine search queries such as `https://www.maine.gov/search/?search=Aroostook%20district%20office%20dhhs` and `https://www.maine.gov/search/?search=county%20district%20office%20ofi`, and the current OFI workbooks `May 2026 Summary Counts By County.xlsx` and `May 2026 Summary Counts By County And Town.xlsx`. The live district office page still preserves district office names, office towns and addresses, phones, emails, map shortlinks, and OFI program links, but zero county names, zero county-served labels, and zero service-area fields in public HTML. The OFI contact page still only points back to `District Office locations` and statewide eligibility/help routing. The OFI programs-and-services page stays live but exposes no county or office-assignment metadata. The Offices/Divisions page and Administrative Office Locations page add office and division descriptions plus administrative addresses such as Family Independence in Augusta and Health Insurance Marketplace in Portland, but still no county-served or service-area routing fields. The DHHS sitemap only reconfirms the same office leaves. The representative `Show Map` shortlinks resolved only to Google Maps address geocodes for `35 Anthony Ave, Augusta, ME 04330` and `19 Maine Ave, Bangor, ME 04401`, adding no county names, no district-office identifiers, and no county-to-office routing fields. The official Maine search host using its real `search=` parameter still returns only the generic Google CSE shell titled `Maine.gov: Search IFW`, with the `<div class=\"gcse-search\" data-queryParameterName=\"search\" ...>` container but no server-rendered county-routing or district-office assignment results. The current county workbook headers still begin with `COUNTY` plus count columns, and the county-and-town workbook headers still begin with `COUNTY`, `TOWN`, and count columns; neither workbook binds counties or towns to district office names or service areas. Maine therefore still has official office addresses and county counts without any public county-assignment contract.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -101,71 +92,51 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
   ].join('\n') + '\n';
 }
 
-function buildAllStateReport(text) {
-  const lines = text.split('\n').filter((line) => !line.startsWith('- Maine remains blocked'));
-  const next = '- Maine remains blocked after a bounded DHHS navigation-stack plus official-search finality check: District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, sitemap, sampled `Show Map` links, and official Maine search queries still expose office addresses and labels but no county-to-office or service-area contract.';
-  return `${lines.join('\n').trimEnd()}\n${next}\n`;
-}
-
-function buildHandoff(allStateAudit) {
-  const completeStates = allStateAudit.states
-    .filter((row) => row.classification === 'COMPLETE')
-    .map((row) => row.stateName)
-    .sort((a, b) => a.localeCompare(b));
-  const blockedRows = allStateAudit.states
-    .filter((row) => row.classification === 'BLOCKED')
-    .sort((a, b) => a.stateName.localeCompare(b.stateName));
-
-  return [
-    '# Gemini Source Scout Handoff',
-    '',
-    `Updated: ${new Date().toISOString().slice(0, 10)}`,
-    '',
-    'Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.',
-    '',
-    '## Current Complete States',
-    '',
-    completeStates.join(', '),
-    '',
-    '## Current Blocked States',
-    '',
-    ...blockedRows.map((row) => `- ${row.stateName}: \`${row.packetPrimaryGapReason}\``),
-    '',
-    '## Current Focus State: Maine',
-    '',
-    '### Blocker Reason',
-    '',
-    '`county_local_disability_resources` is still the only remaining Maine critical blocker. One more bounded official pass widened from the DHHS public navigation stack to include the official Maine search host. District Office Locations still preserves office towns, addresses, phones, emails, map shortlinks, and OFI program notes, but no county-served or service-area fields. OFI Contact only loops back to district offices plus statewide eligibility/help routing. OFI Programs & Services stays generic. Offices/Divisions and Administrative Office Locations add office and division labels plus addresses like Family Independence in Augusta and Health Insurance Marketplace in Portland, but still no county routing. The DHHS sitemap only reconfirms the same office leaves. Sampled `Show Map` shortlinks still only resolve to raw Google Maps address geocodes such as `35 Anthony Ave, Augusta, ME 04330` and `19 Maine Ave, Bangor, ME 04401`. And the public `maine.gov/search` query pages stay live but only replay the generic portal shell without county-routing or district-office assignment results. Maine remains BLOCKED because the official host family still proves office addresses and office labels, not county assignment.',
-    '',
-    '### Exact Evidence Needed',
-    '',
-    '- Any official Maine DHHS, OFI, or Maine search-discoverable county/service-area crosswalk that ties counties to the named district office towns on the public DHHS office page.',
-    '- Any official Maine DHHS or OFI office export, table, PDF, workbook, ArcGIS layer, or API that exposes office names together with county-served or service-area fields.',
-    '- Any official county-grade routing contract on a successor Maine DHHS surface that is public and reviewable without inference.',
-    '',
-    '### Useful Official URLs Already Tried',
-    '',
-    '- [Maine DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)',
-    '- [Maine OFI Contact page](https://www.maine.gov/dhhs/ofi/about-us/contact)',
-    '- [Maine OFI Programs & Services](https://www.maine.gov/dhhs/ofi/programs-services)',
-    '- [Maine DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)',
-    '- [Maine DHHS Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)',
-    '- [Maine DHHS Sitemap](https://www.maine.gov/dhhs/about/sitemap)',
-    '- [Official Maine Search: Aroostook district office dhhs](https://www.maine.gov/search/?q=Aroostook%20district%20office%20dhhs)',
-    '- [Official Maine Search: county district office ofi](https://www.maine.gov/search/?q=county%20district%20office%20ofi)',
-    '- [Sample Show Map: Augusta office](https://goo.gl/maps/D71ZqAnXQcp)',
-    '- [Sample Show Map: Bangor office](https://goo.gl/maps/LRVMzcdK23Mxx7g29)',
-    '',
-    '### Top Remaining Source-Scouting Targets',
-    '',
-    '- Any official DHHS/OFI workbook or export that contains office names plus county or service-area fields, not just program counts or address maps.',
-    '- Any official office-assignment artifact behind the district office page, administrative office page, reports lane, or official Maine search index that binds district offices to counties.',
-    '',
-    '## Next State Order After Maine',
-    '',
-    ...ASSIGNED_NEXT_STATES_AFTER_MAINE.map((stateName, index) => `${index + 1}. ${stateName}`),
-    '',
-  ].join('\n');
+function buildEvidenceArtifact() {
+  return {
+    state: 'maine',
+    generated_at: new Date().toISOString(),
+    county_local: {
+      reviewed_sources: [
+        {
+          source_url: 'https://www.maine.gov/dhhs/about/contact/offices',
+          authority: 'Maine Department of Health and Human Services',
+          review_date: '2026-06-25',
+          finding: 'district_office_directory_lists_office_contacts_but_no_county_or_service_area_fields',
+          evidence_excerpt: 'The official district office page lists office names, towns, street addresses, phones, emails, and OFI links, but no county-served or service-area fields.',
+        },
+        {
+          source_url: 'https://www.maine.gov/dhhs/ofi/about-us/contact',
+          authority: 'Maine Office for Family Independence',
+          review_date: '2026-06-25',
+          finding: 'ofi_contact_page_routes_to_district_offices_and_statewide_help_only',
+          evidence_excerpt: 'The OFI contact page points back to District Office locations and the statewide eligibility phone 1 (855) 797-4357, with no county crosswalk.',
+        },
+        {
+          source_url: 'https://www.maine.gov/search/?search=Aroostook%20district%20office%20dhhs',
+          authority: 'Maine.gov',
+          review_date: '2026-06-25',
+          finding: 'official_search_host_still_returns_generic_google_cse_shell',
+          evidence_excerpt: 'The public Maine search host still returns the generic shell titled "Maine.gov: Search IFW" with a `gcse-search` container and no server-rendered county-routing or district-office assignment result.',
+        },
+        {
+          source_url: 'https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/May%202026%20Summary%20Counts%20By%20County.xlsx',
+          authority: 'Maine Department of Health and Human Services',
+          review_date: '2026-06-25',
+          finding: 'county_workbook_reports_counts_only_without_office_binding',
+          evidence_excerpt: 'The official county workbook headers begin with `COUNTY` and count columns only; it does not bind counties to district office names or service areas.',
+        },
+        {
+          source_url: 'https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/May%202026%20Summary%20Counts%20By%20County%20And%20Town.xlsx',
+          authority: 'Maine Department of Health and Human Services',
+          review_date: '2026-06-25',
+          finding: 'county_and_town_workbook_reports_counts_only_without_office_binding',
+          evidence_excerpt: 'The official county-and-town workbook headers begin with `COUNTY`, `TOWN`, and count columns only; it still does not expose office names, office identifiers, or service-area routing fields.',
+        },
+      ],
+      blocker_summary: 'Reviewed official Maine DHHS, OFI, search-host, and workbook lanes still preserve office contacts and county/town counts without any public county-to-office or service-area assignment contract.',
+    },
+  };
 }
 
 function buildBatchReport() {
@@ -174,17 +145,12 @@ function buildBatchReport() {
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: strengthened the Maine county-local blocker by adding the official Maine search host to the already-negative DHHS navigation stack',
+    '- change: strengthened the Maine county-local blocker by confirming the real official Maine search parameter still yields only a generic CSE shell and the current OFI workbooks remain counts-only',
     '',
     '## Evidence',
     '',
     `- ${COUNTY_REASON}`,
   ].join('\n') + '\n';
-}
-
-function updateLessons(text) {
-  if (text.includes(LESSON_HEADING)) return text;
-  return `${text.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_TEXT}\n`;
 }
 
 export function generateBatch364MaineSearchFinalityV1() {
@@ -193,10 +159,6 @@ export function generateBatch364MaineSearchFinalityV1() {
   const failureRows = readJsonl(INPUTS.failure);
   const verifiedRows = readJsonl(INPUTS.verified);
   const nextRows = readJsonl(INPUTS.next);
-  const queueRows = readJsonl(INPUTS.queue);
-  const allStateAudit = readJson(INPUTS.audit);
-  const allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
-  const lessons = fs.readFileSync(INPUTS.lessons, 'utf8');
 
   const updatedSummary = {
     ...summary,
@@ -307,23 +269,23 @@ export function generateBatch364MaineSearchFinalityV1() {
             },
             {
               sample_name: 'Official Maine Search: Aroostook district office dhhs',
-              source_url: 'https://www.maine.gov/search/?q=Aroostook%20district%20office%20dhhs',
-              final_url: 'https://www.maine.gov/search/?q=Aroostook%20district%20office%20dhhs',
+              source_url: 'https://www.maine.gov/search/?search=Aroostook%20district%20office%20dhhs',
+              final_url: 'https://www.maine.gov/search/?search=Aroostook%20district%20office%20dhhs',
               verification_status: 'reviewed',
               source_type: 'official_state_search_shell_without_role_results',
               source_table: BATCH_NAME,
               fetched_at: '2026-06-25T00:00:00.000Z',
-              evidence_snippet: 'The public Maine search page stayed live but returned only the generic portal shell, with no county-routing or district-office assignment result.',
+              evidence_snippet: 'The public Maine search page stayed live but returned only the generic Google CSE shell titled `Maine.gov: Search IFW`, with no server-rendered county-routing or district-office assignment result.',
             },
             {
               sample_name: 'Official Maine Search: county district office ofi',
-              source_url: 'https://www.maine.gov/search/?q=county%20district%20office%20ofi',
-              final_url: 'https://www.maine.gov/search/?q=county%20district%20office%20ofi',
+              source_url: 'https://www.maine.gov/search/?search=county%20district%20office%20ofi',
+              final_url: 'https://www.maine.gov/search/?search=county%20district%20office%20ofi',
               verification_status: 'reviewed',
               source_type: 'official_state_search_shell_without_role_results',
               source_table: BATCH_NAME,
               fetched_at: '2026-06-25T00:00:00.000Z',
-              evidence_snippet: 'The official search host preserved no county terms, no office-assignment table, and no recoverable Maine DHHS county-routing leaf for the sampled county-office query.',
+              evidence_snippet: 'The official search host preserved no county terms, no office-assignment table, and no recoverable Maine DHHS county-routing leaf in server-rendered HTML for the sampled county-office query.',
             },
             {
               sample_name: 'Augusta Show Map shortlink',
@@ -386,35 +348,6 @@ export function generateBatch364MaineSearchFinalityV1() {
       : row
   ));
 
-  const updatedQueueRows = queueRows.map((row) => (
-    row.state === 'maine'
-      ? {
-          ...row,
-          primary_gap_reason: PRIMARY_GAP_REASON,
-          recommended_batch: 'hold_for_new_official_county_crosswalk_contract',
-          repair_lane: 'blocked_until_new_official_public_county_contract',
-        }
-      : row
-  ));
-
-  const updatedAudit = {
-    ...allStateAudit,
-    states: allStateAudit.states.map((row) => (
-      row.stateId === 'maine'
-        ? {
-            ...row,
-            packetBatch: BATCH_NAME,
-            packetPrimaryGapReason: PRIMARY_GAP_REASON,
-            packetRecommendedBatch: 'hold_for_new_official_county_crosswalk_contract',
-            familyStatuses: {
-              ...row.familyStatuses,
-              county_local_disability_resources: COUNTY_STATUS,
-            },
-          }
-        : row
-    )),
-  };
-
   const batchSummary = {
     batch: BATCH_NAME,
     classification: 'BLOCKED',
@@ -427,9 +360,14 @@ export function generateBatch364MaineSearchFinalityV1() {
     dhhs_sitemap_page_live: true,
     official_maine_search_live: true,
     official_maine_search_county_queries_with_role_results: 0,
+    official_maine_search_title: 'Maine.gov: Search IFW',
     sampled_show_map_shortlinks_live: 2,
     sampled_show_map_shortlinks_are_address_geocodes_only: true,
     sampled_show_map_shortlinks_have_county_metadata: false,
+    county_workbook_live: true,
+    county_workbook_header_starts_with_county_only: true,
+    county_and_town_workbook_live: true,
+    county_and_town_workbook_header_starts_with_county_and_town_only: true,
     county_crosswalk_found: false,
     result: 'official_nav_stack_and_state_search_office_addresses_and_labels_without_county_routing_contract',
   };
@@ -440,13 +378,9 @@ export function generateBatch364MaineSearchFinalityV1() {
   writeJsonl(INPUTS.verified, updatedVerifiedRows);
   writeJsonl(INPUTS.next, updatedNextRows);
   fs.writeFileSync(INPUTS.report, buildStateReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows));
-  writeJsonl(INPUTS.queue, updatedQueueRows);
-  writeJson(INPUTS.audit, updatedAudit);
-  fs.writeFileSync(INPUTS.allStateReport, buildAllStateReport(allStateReport));
-  fs.writeFileSync(INPUTS.handoff, buildHandoff(updatedAudit));
-  fs.writeFileSync(INPUTS.lessons, updateLessons(lessons));
   writeJson(OUTPUTS.summary, batchSummary);
   fs.writeFileSync(OUTPUTS.report, buildBatchReport());
+  writeJson(OUTPUTS.evidence, buildEvidenceArtifact());
 
   return batchSummary;
 }
