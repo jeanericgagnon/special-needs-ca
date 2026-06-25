@@ -18,7 +18,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
-- Arizona remains blocked after a fresh live education-surface recheck: the final three district-owned public domains still expose no role-bearing local special-education, student-services, or 504 leaves, and county-local still bottoms out in AHCCCS support-letter PDFs rather than a county-routing contract.
+- Arizona remains blocked, but the education blocker is narrower: Coconino now clears through the official CAVIAT root plus a live 504 leaf, Mohave has a reviewed alternate special-services leaf that still lacks official county attachment in this lane, Yavapai still lacks a role-bearing local leaf, and county-local still bottoms out in AHCCCS support-letter PDFs rather than a county-routing contract.
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.

@@ -2,7 +2,7 @@
   "state": "arizona",
   "state_code": "AZ",
   "state_name": "Arizona",
-  "batch": "batch351_arizona_education_surface_recheck_v1",
+  "batch": "batch366_arizona_alt_district_leaf_recovery_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,8 +12,8 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves",
-  "recommended_batch": "hold_for_new_official_county_contract_or_role_leaf",
+  "primary_gap_reason": "ahcccs_county_local_contract_still_missing_and_arizona_education_now_resolves_coconino_via_caviat_504_but_mohave_alt_leaf_still_needs_official_county_attachment_and_yavapai_still_lacks_role_leaf",
+  "recommended_batch": "hold_for_mohave_official_county_attachment_yavapai_role_leaf_or_county_local_contract",
   "critical_gap_families": [
     "district_or_county_education_routing",
     "county_local_disability_resources"
@@ -41,9 +41,9 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "three_reviewed_public_district_domains_live_surface_recheck_exhausts_search_sitemap_and_exact_role_surfaces_without_role_leafs",
-      "evidence": "Reviewed 2026-06-25 a bounded live Arizona district-owned public-surface recheck for the final three unresolved education counties. https://www.ccasdaz.org/ returned HTTP 200, `https://www.ccasdaz.org/page-sitemap.xml` and `https://www.ccasdaz.org/post-sitemap.xml` returned HTTP 200 with no role-bearing special-education, student-services, 504, or Child Find URLs, and WordPress JSON searches for `special education`, `504`, `child find`, and `student services` only replayed Governing Board, About, Employment, school, or staff false positives. https://www.mohavelearning.org/ returned HTTP 200 with no role-bearing terms on the homepage, `https://www.mohavelearning.org/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404, `https://www.mohavelearning.org/search-results/~board/news/post/special-education` returned HTTP 200 but contained no role-bearing content, `https://www.mohavelearning.org/sitemap.xml` returned 404, and `https://www.mohavelearning.org/fs/pages/sitemap` returned 406. https://www.yavapaicountyhighschool.com/ returned HTTP 200, `https://www.yavapaicountyhighschool.com/sitemap.xml` returned HTTP 200 but only exposed generic pages and handbook/document leaves, `https://www.yavapaicountyhighschool.com/documents/` returned HTTP 200 with no role-bearing content, and `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404 while `/page/contact-us/` remained public. Arizona education therefore remains blocked because the reviewed public domains still expose no local role-bearing special-education, student-services, or 504 leaf.",
-      "next_action": "hold_three_reviewed_public_domains_until_role_bearing_special_education_student_services_or_504_leaves_exist"
+      "failure_code": "coconino_caviat_504_verified_mohave_alt_leaf_found_but_unattached_and_yavapai_still_lacks_role_leaf",
+      "evidence": "Reviewed 2026-06-25 a bounded official Arizona alternative-district lane from the live AZ School Report Cards app and exact district-owned same-domain leaves. `https://azreportcards.azed.gov/api/Entity/GetEntity?id=79381&fiscalYear=2025` preserved Coconino Association for Vocation Industry and Technology with `https://www.caviat.org/`, phone `928-645-2737`, and `19 Poplar Street, Page, AZ 86040`; the official Census geocoder still resolved that address to Coconino County; `https://www.caviat.org/wp-sitemap.xml` stayed live; and `https://www.caviat.org/page/504/` returned HTTP 200 with rendered annual public nondiscrimination language plus district office contact details, which is enough to attach a local 504 route for Coconino County. `https://azreportcards.azed.gov/api/Entity/GetEntity?id=4379&fiscalYear=2025` preserved Mohave Valley Elementary District with `https://www.mvesd16.org/`, phone `928-768-2507`, and `8450 S OLIVE AVE, MOHAVE VALLEY, AZ 86440-9214`; that district-owned host now exposes a live `https://www.mvesd16.org/page/special-services/` leaf plus a public `https://www.mvesd16.org/documents/special-education/3674` surface, but the bounded official Census geocoder still returned no match for the Mohave Valley address, so the alternative Mohave leaf remains candidate-only in this pass. `https://www.yavapaicountyhighschool.com/sitemap.xml` still exposed only generic pages plus handbook/document leaves, with no role-bearing `504`, `special-education`, or `student-services` URL. Arizona education therefore no longer fails equally across the old three-domain set, but it still cannot clear county grade while Mohave lacks official county attachment for the alternative leaf and Yavapai still lacks a role-bearing local leaf entirely.",
+      "next_action": "verify_mohave_alt_leaf_with_official_county_attachment_and_hold_yavapai_until_role_bearing_leaf_exists"
     },
     {
       "family": "county_local_disability_resources",
@@ -54,6 +54,6 @@
   ],
   "familyStatuses": {
     "county_local_disability_resources": "blocked_current_altcs_html_and_ahcccs_pdf_bundle_source_final_without_county_contract",
-    "district_or_county_education_routing": "blocked_three_reviewed_public_district_domains_live_surface_recheck_still_without_role_leafs"
+    "district_or_county_education_routing": "blocked_coconino_caviat_504_resolved_mohave_alt_leaf_candidate_and_yavapai_public_domain_without_role_leaf"
   }
 }

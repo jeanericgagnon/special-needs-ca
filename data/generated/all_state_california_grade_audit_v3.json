@@ -210,7 +210,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_three_reviewed_public_district_domains_live_surface_recheck_still_without_role_leafs",
+        "district_or_county_education_routing": "blocked_coconino_caviat_504_resolved_mohave_alt_leaf_candidate_and_yavapai_public_domain_without_role_leaf",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -220,9 +220,9 @@
         "county_local_disability_resources": "blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch351_arizona_education_surface_recheck_v1",
-      "packetPrimaryGapReason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves",
-      "packetRecommendedBatch": "hold_for_new_official_county_contract_or_role_leaf"
+      "packetBatch": "batch366_arizona_alt_district_leaf_recovery_v1",
+      "packetPrimaryGapReason": "ahcccs_county_local_contract_still_missing_and_arizona_education_now_resolves_coconino_via_caviat_504_but_mohave_alt_leaf_still_needs_official_county_attachment_and_yavapai_still_lacks_role_leaf",
+      "packetRecommendedBatch": "hold_for_mohave_official_county_attachment_yavapai_role_leaf_or_county_local_contract"
     },
     {
       "stateId": "arkansas",

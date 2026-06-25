@@ -1,0 +1,13 @@
+{
+  "batch": "batch366_arizona_alt_district_leaf_recovery_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "coconino_caviat_504_verified": true,
+  "coconino_caviat_county_match": true,
+  "mohave_alt_special_services_live": true,
+  "mohave_alt_special_education_document_live": true,
+  "mohave_alt_geocoder_matched": false,
+  "yavapai_role_hits_found": 0,
+  "unresolved_education_counties": 2,
+  "result": "coconino_caviat_504_verified_mohave_alt_leaf_candidate_only_yavapai_domain_still_empty"
+}

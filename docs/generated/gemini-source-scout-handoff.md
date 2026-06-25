@@ -11,7 +11,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 ## Current Blocked States
 
 - Alaska: `reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract`
-- Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves`
+- Arizona: `ahcccs_county_local_contract_still_missing_and_arizona_education_now_resolves_coconino_via_caviat_504_but_mohave_alt_leaf_still_needs_official_county_attachment_and_yavapai_still_lacks_role_leaf`
 - Idaho: `remaining_idaho_camas_and_clark_surfaces_now_reduce_to_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_without_special_education_or_student_services_routing`
 - Maine: `official_dhhs_nav_stack_and_official_maine_search_still_expose_office_addresses_and_labels_but_no_county_or_service_area_contract`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`
@@ -23,38 +23,41 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Vermont: `official_ahs_district_jurisdiction_codes_are_public_but_no_reviewable_public_ahs_office_crosswalk_or_service_area_contract_exists`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: New Mexico
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is still the highest-priority New Mexico blocker, but the official failure mode is now more exhaustive than the earlier packet. The live PED-managed SharePoint host preserves the public `2017 NM Schools` list with REST-backed rows, the public `RECHome.aspx` grouping page, six public workbook exports (`NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`), and a closed public folder inventory of five site pages and six workbook files. That broader official stack proves the state has a public directory lane, but every reviewed list, workbook, and public page still omits county or REC service-area fields. `NM Schools.xlsx` and the REST list preserve district/location columns only. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.
+`district_or_county_education_routing` is still the highest-priority Arizona blocker, but it is no longer a flat three-domain dead end. The official AZ School Report Cards detail API now yields a better Coconino LEA: Coconino Association for Vocation Industry and Technology (`educationOrganizationId 79381`) preserves `https://www.caviat.org/`, and that official district-owned host exposes a live `/page/504/` leaf with annual public nondiscrimination language plus district office contact details, which is enough to attach a local 504 route for Coconino County. Mohave also now has a better alternative official district root: Mohave Valley Elementary District (`educationOrganizationId 4379`) preserves `https://www.mvesd16.org/`, and that host exposes a live `SPECIAL SERVICES` page plus a `documents/special-education/3674` surface. But the bounded official Census geocoder still does not resolve the Mohave Valley address in this lane, so Mohave remains candidate-only rather than county-attached. Yavapai Accommodation School District is still the only fully source-final public domain with no role-bearing local leaf. County-local remains separately blocked because the official AHCCCS support-letter PDFs still do not publish a county-to-office contract. Arizona therefore stays blocked and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official PED-managed county-to-district crosswalk, county column, county selector, or county-keyed export on the live WebED host.
-- Any official PED-managed REC service-area artifact that explicitly labels counties served by each REC.
-- Any official district-owned or REC-owned local special-education routing leaf that proves county-grade coverage without inference.
+- Any official county attachment for the Mohave Valley Elementary alternative root, such as a successful official geocoder match, a county-keyed district export, or another state/county official artifact that ties that district to Mohave County in the review lane.
+- Any district-owned `special education`, `special services`, `student services`, `504`, or `Child Find` leaf on yavapaicountyhighschool.com.
+- Any official Arizona state or county export that maps Yavapai to local district special-education routing without relying on generic statewide fallbacks.
+- Any official AHCCCS, DES, or county-admin county-to-office assignment artifact for county-local disability resources.
 
 ### Useful Official URLs Already Tried
 
-- [PED SharePoint school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
-- [2017 NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
-- [NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
-- [Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
-- [REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
-- [Elementary School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx)
-- [Middle School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx)
-- [High School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx)
-- [REC home page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
-- [Special Education Bureau page](https://webnew.ped.state.nm.us/bureaus/special-education/)
+- [Coconino Association for Vocation Industry and Technology report-cards detail](https://azreportcards.azed.gov/districts/Detail/79381)
+- [CAVIAT root](https://www.caviat.org/)
+- [CAVIAT 504 leaf](https://www.caviat.org/page/504/)
+- [CAVIAT parents/students page](https://www.caviat.org/information-for-parents-and-students/)
+- [Mohave Valley Elementary District report-cards detail](https://azreportcards.azed.gov/districts/Detail/4379)
+- [Mohave Valley School District root](https://www.mvesd16.org/)
+- [Mohave Valley special-services leaf](https://www.mvesd16.org/page/special-services/)
+- [Mohave Valley special-education document surface](https://www.mvesd16.org/documents/special-education/3674)
+- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
+- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
+- [Yavapai documents page](https://www.yavapaicountyhighschool.com/documents/)
+- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
+- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live WebED list, workbook, or site page with an explicit county column or county-keyed filter.
-- Any official REC service-area contract with county labels on the PED-managed host or REC-owned official hosts.
-- Any official district-owned local special-education or student-services leaf that can clear counties without relying on statewide PED exports.
+- Any official artifact that county-attaches Mohave Valley Elementary District to Mohave County in the same bounded review lane.
+- Any newly published role-bearing local education leaf on yavapaicountyhighschool.com.
+- Any official Arizona county-local office assignment artifact.
 
-## Next State Order After New Mexico
+## Next State Order After Arizona
 
-1. Arizona
-2. New Hampshire
+1. New Hampshire

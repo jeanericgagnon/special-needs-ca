@@ -7,7 +7,7 @@
   "current_problem_metrics": {
     "genericFallbackCountyRows": 15,
     "challengedOfficialRoots": 8,
-    "authoredExactLeafCount": 12,
+    "authoredExactLeafCount": 13,
     "statewideFallbackRows": 15,
     "azedHostExhaustedRoots": 8,
     "liveDistinctRootCount": 1,
@@ -17,11 +17,13 @@
     "reviewedOfficialDistrictInventoryRoots": 15,
     "countyKeyedDistrictRootCount": 15,
     "remainingUnmappedCounties": 0,
-    "unresolvedDistrictOwnedLeafCount": 3,
+    "unresolvedDistrictOwnedLeafCount": 2,
     "unresolvedNoPublicWebsiteCount": 0,
-    "unresolvedReviewedPublicDomainWithoutLeafCount": 3,
+    "unresolvedReviewedPublicDomainWithoutLeafCount": 1,
     "reviewedCountyOwnedLeafCount": 4,
-    "reviewedPublicDomainSitemapExhaustedCount": 3
+    "reviewedPublicDomainSitemapExhaustedCount": 1,
+    "resolvedAlternativeDistrictLeafCount": 1,
+    "alternativeDistrictLeafCandidateCount": 1
   },
   "exact_target_goals": [
     "official district detail root per county",
@@ -46,6 +48,7 @@
   "root_domains_to_review": [
     "official report-cards district detail roots first",
     "district-owned Arizona K-12 domains extracted from report-cards detail fields next",
+    "for blocked counties, review alternate LEAs from the same official county inventory before accepting a dead-end accommodation root",
     "do not reopen challenged AZED host discovery until root, robots.txt, and sitemap.xml clear"
   ],
   "affected_counties": [
@@ -104,19 +107,19 @@
     {
       "county_id": "coconino-az",
       "county_name": "coconino",
-      "educationOrganizationId": 10386,
-      "district_name": "Coconino County Accommodation School District",
-      "detail_url": "https://azreportcards.azed.gov/districts/Detail/10386",
-      "api_url": "https://azreportcards.azed.gov/api/Entity/GetEntity?id=10386&fiscalYear=2025",
-      "district_website": "https://www.ccasdaz.org/",
-      "telephone": "928-526-5570",
-      "address": "2384 N. Steves Blvd., Flagstaff, AZ86004",
+      "educationOrganizationId": 79381,
+      "district_name": "Coconino Association for Vocation Industry and Technology",
+      "detail_url": "https://azreportcards.azed.gov/districts/Detail/79381",
+      "api_url": "https://azreportcards.azed.gov/api/Entity/GetEntity?id=79381&fiscalYear=2025",
+      "district_website": "https://www.caviat.org/",
+      "telephone": "928-645-2737",
+      "address": "19 Poplar Street, Page, AZ86040",
       "geocoded_county_id": "coconino-az",
       "geocode_source": "official_census_geocoder",
       "verification_status": "verified",
       "source_type": "official_state_district_detail_root",
-      "fetched_at": "2026-06-23T00:00:00.000Z",
-      "evidence_snippet": "Coconino County Accommodation School District is exposed on the official report-cards host through a district detail route, and its official detail API preserves district website https://www.ccasdaz.org/, phone 928-526-5570, and address 2384 N. Steves Blvd., Flagstaff, AZ86004."
+      "fetched_at": "2026-06-25T00:00:00.000Z",
+      "evidence_snippet": "The official Arizona report-cards detail API now preserves CAVIAT as a better Coconino district root, with district website https://www.caviat.org/, phone 928-645-2737, and a Page address that geocodes to Coconino County."
     },
     {
       "county_id": "gila-az",

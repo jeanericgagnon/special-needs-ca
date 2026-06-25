@@ -548,3 +548,6 @@
 
 ### SharePoint Folder Inventories Can Close Official Discovery Without Crawling
 *   **Lesson:** When a PED-style SharePoint host is already public, inspect both the public field schema and the public folder inventories before reopening discovery. New Mexico's WebED host closed cleanly at six workbook files and five site pages, and the field schemas still lacked county/service-area columns, so we could preserve the blocker without broad crawling or speculative leaf hunting.
+
+### Alternate LEAs On Official District Inventories Can Replace Dead-End County Roots
+*   **Lesson:** If a state report-cards API exposes more than one LEA in a blocked county, do not stop at the first county-named accommodation district. Arizona only moved again once the same official inventory surfaced CAVIAT in Coconino and Mohave Valley Elementary in Mohave, revealing better same-domain local leaf candidates than the earlier dead-end roots.
