@@ -12,7 +12,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 - Alaska: `reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract`
 - Arizona: `ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves`
-- Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_now_fail_into_404_or_blank_shell_negative_checks`
+- Idaho: `remaining_idaho_district_roots_now_split_between_live_homepage_sitemap_surfaces_without_role_bearing_leaves_and_one_blank_shell_challenge_after_bounded_exact_leaf_review`
 - Maine: `official_dhhs_office_page_and_same_host_contact_sitemap_surfaces_still_expose_no_county_or_service_area_crosswalk`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
@@ -28,40 +28,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Maine critical blocker. Reviewed 2026-06-25 bounded official Maine DHHS checks on the district office page, contact root, administrative offices page, offices/divisions hub, and DHHS sitemap. All of those pages remain public, but none of them expose county names, county-served labels, service-area fields, or an alternate county-grade office export. The current official Maine DHHS public host family therefore still stops at office-grade contact proof without a truthful county-to-office routing contract.
+`district_or_county_education_routing` remains the highest-priority Idaho blocker. Reviewed 2026-06-25 bounded official district-host checks on Camas, Clark, Fremont, Oneida, Shoshone, and Jefferson. Camas, Clark, Fremont, Oneida, and Shoshone all stayed live at their official roots, but bounded homepage plus sitemap review still exposed zero reusable `special education`, `special services`, `student services`, `504`, or procedural-safeguards leaves. Jefferson still resolves to a blank Incapsula-style shell. Idaho therefore still holds only thirteen reviewed county-grade district-owned education leaves, and the unresolved district-host lane is now source-final for low-token review until one of those official hosts publishes a real role-bearing leaf. County-local remains separately blocked because the DHW office stack still exposes no truthful county-to-office routing contract for the remaining blocked counties.
 
 ### Exact Evidence Needed
 
-- Any official Maine DHHS county or service-area crosswalk that ties counties to the named district office towns on the public DHHS office page.
-- Any official Maine DHHS office export, table, PDF, ArcGIS layer, or API that exposes county-served labels or service-area fields for Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, Skowhegan, and the other named offices.
-- Any official county-grade routing contract on a successor Maine DHHS surface that is public and reviewable without inference.
+- Any official district-owned special-education, special-services, student-services, 504, or procedural-safeguards leaf on the remaining Idaho county-bearing district hosts.
+- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.
 
 ### Useful Official URLs Already Tried
 
-- [Maine DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
-- [Maine DHHS Contact root](https://www.maine.gov/dhhs/about/contact/)
-- [Maine DHHS Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
-- [Maine DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)
-- [Maine DHHS Sitemap](https://www.maine.gov/dhhs/about/sitemap)
+- [Idaho SDE School Districts](https://www.sde.idaho.gov/school-districts/)
+- [Bear Lake School District Special Education](https://www.blsd.net/en-US/special-education-e92c299d)
+- [Camas County Schools root](https://www.camascountyschools.org/)
+- [Clark Co School District 161 root](https://www.clarkcountyschools161.org/)
+- [Fremont County Joint School District #215 root](https://www.sd215.net/)
+- [Fremont County Joint School District #215 sitemap](https://www.sd215.net/sitemap.xml)
+- [Oneida School District root](https://www.oneidaschooldistrict.org/)
+- [Oneida School District sitemap](https://www.oneidaschooldistrict.org/sitemap.xml)
+- [Shoshone School District root](https://shoshonesd.org/)
+- [Shoshone School District sitemap](https://shoshonesd.org/sitemap.xml)
+- [Shoshone School District wp-sitemap](https://shoshonesd.org/wp-sitemap.xml)
+- [Jefferson School District 251 root](https://www.jeffersonsd251.org/)
+- [Idaho DHW offices](https://healthandwelfare.idaho.gov/offices)
+- [Idaho DHW sitemap](https://healthandwelfare.idaho.gov/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DHHS county/service-area crosswalk for Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan.
-- Any official export or embedded data source behind the DHHS district office page that exposes county assignments.
+- Any newly published district-owned special-education or student-services leaf on Camas, Clark, Fremont, Jefferson, Oneida, or Shoshone.
+- Any official Idaho DHW county-to-office mapping contract for the 27 still-blocked counties.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
-2. Arizona
-3. Massachusetts
-4. New Mexico
-5. South Dakota
-6. Rhode Island
-7. Virginia
-8. West Virginia
-9. North Dakota
-10. Wisconsin
+1. Arizona
+2. Massachusetts
+3. New Mexico
+4. South Dakota
+5. Rhode Island
+6. Virginia
+7. West Virginia
+8. North Dakota
+9. Wisconsin
+10. Washington

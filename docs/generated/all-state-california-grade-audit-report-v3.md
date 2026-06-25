@@ -18,9 +18,9 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
+- Idaho remains blocked on a stronger district-root finality check: the remaining official district hosts are mostly live, but bounded homepage and sitemap review still exposes no reusable special-education or student-services leaves, while Jefferson remains a blank challenge shell; county-local stays separately blocked on the missing DHW county contract.
 - Oklahoma is now COMPLETE/index-safe because the official Oklahoma county health department fallback closes the prior 31-county county-local gap with exact county root-plus-services page pairs carrying county-specific contact plus SoonerStart, SoonerCare, Oklahoma Medicaid, Community Health Worker, or applications-and-referrals evidence.
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - Nebraska remains COMPLETE/index-safe because the official DHHS N-FOCUS TANF `Employment First (EF) Offices` lane exposes a public county-office region contract across all 93 counties, with explicit county-specific office assignments and `Counties Served` fields on the official GIS owner family.
-- Maine is now the next blocked state in the active priority order because education is already cleared while county-local remains blocked on the missing DHHS county/service-area crosswalk.
 - Maine remains blocked on a stronger county-local finality check: the DHHS district office page, contact root, offices/divisions hub, administrative-offices page, and DHHS sitemap all stay public yet still expose no county names, service-area labels, or alternate county-grade office export.

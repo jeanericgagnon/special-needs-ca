@@ -1,0 +1,12 @@
+{
+  "batch": "batch349_idaho_live_root_leaf_finality_v1",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_live_roots": 6,
+  "live_homepage_roots_without_role_bearing_links": 5,
+  "live_sitemaps_without_role_bearing_urls": 4,
+  "challenge_shell_roots": 1,
+  "reviewed_exact_leaf_count": 13,
+  "result": "source_final_for_current_exact_district_root_packet"
+}
