@@ -28,44 +28,42 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Arizona blocker. The final three unresolved district-owned public domains are still `https://www.ccasdaz.org/`, `https://www.mohavelearning.org/`, and `https://www.yavapaicountyhighschool.com/`. One more bounded live pass confirmed all three hosts are still publicly reachable, but their public discovery surfaces still fail closed for role-bearing education routing. CCASDAZ stayed live and its `sitemap.xml`, `page-sitemap.xml`, and `post-sitemap.xml` also stayed live, but all exposed zero same-host special-education, student-services, 504, Child Find, or procedural-safeguards URLs. Mohave Learning stayed live, but its sitemap-like paths still 404 and its public `search-results/` surface still materialized zero role-bearing term hits. Yavapai County High School stayed live, and its `sitemap.xml` plus `documents/` surface also stayed live, but they still exposed zero role-bearing education URLs. Arizona remains BLOCKED because the last three district-owned public domains are real but still do not publish local special-education routing.
+`county_local_disability_resources` remains the highest-priority Massachusetts blocker. The live Mass.gov DDS locations lane is stronger than the older blocker suggested: across all four paginated result pages, the browser-readable official `Department of Developmental Services Locations` page now preserves 21 distinct `DDS ... Area Office` cards with explicit `This area office serves the following towns and communities:` text. A bounded reviewed bridge from those live town/community lists into the official Census TIGERweb Massachusetts county-subdivision layer covered 13 of 14 counties: Barnstable, Berkshire, Bristol, Dukes, Essex, Franklin, Hampden, Hampshire, Middlesex, Nantucket, Norfolk, Plymouth, and Worcester. The remaining live locality gap is Suffolk. The reviewed DDS cards still do not preserve a Suffolk-serving town/community list, and bounded Boston/Chelsea/Revere/Winthrop/Charlestown scans on the same live pages only surfaced Boston in Central Office text or generic region labels, not in a Suffolk-serving area-office contract. Massachusetts remains BLOCKED because the live DDS lane now supports a reviewed locality capture for 13 counties, but still does not preserve a complete county-grade contract for Suffolk.
 
 ### Exact Evidence Needed
 
-- Any district-owned special-education, student-services, special-services, 504, Child Find, or procedural-safeguards leaf on CCASDAZ, Mohave Learning, or Yavapai County High School.
-- Any district-owned PDF or document already linked from those hosts that explicitly preserves local special-education routing plus named contact information.
-- Any official Arizona county-to-district routing artifact that is more local than the current statewide inventory and can be repo-side verified directly.
+- Any official Massachusetts DDS Suffolk-serving area-office card, locality list, map popup, or export row that explicitly covers Boston, Chelsea, Revere, Winthrop, Charlestown, or another Suffolk locality.
+- Any current official DDS interactive-map or locations export that preserves Suffolk town/community-to-office routing directly.
+- Any current official Mass.gov DDS page or downloadable artifact that closes the last Suffolk county-local gap without inventing a county bridge.
 
 ### Useful Official URLs Already Tried
 
-- [CCASDAZ root](https://www.ccasdaz.org/)
-- [CCASDAZ page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
-- [CCASDAZ post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
-- [Mohave Learning root](https://www.mohavelearning.org/)
-- [Mohave Learning search results](https://www.mohavelearning.org/search-results/)
-- [Yavapai County High School root](https://www.yavapaicountyhighschool.com/)
-- [Yavapai County High School sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
-- [Yavapai County High School documents](https://www.yavapaicountyhighschool.com/documents/)
+- [DDS locations page 1](https://www.mass.gov/orgs/department-of-developmental-services/locations?page=0)
+- [DDS locations page 2](https://www.mass.gov/orgs/department-of-developmental-services/locations?page=1)
+- [DDS locations page 3](https://www.mass.gov/orgs/department-of-developmental-services/locations?page=2)
+- [DDS locations page 4](https://www.mass.gov/orgs/department-of-developmental-services/locations?page=3)
+- [Interactive DDS Regional Map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current district-owned role-bearing leaf or document on CCASDAZ, Mohave Learning, or Yavapai County High School that is not visible on the current public root/sitemap/documents/search lane.
-- Any current official Arizona county-to-office or county-to-district artifact that can reduce the separate county-local or education blocker without inventing mappings.
-- Any current official AHCCCS county-local artifact that is stronger than the current support-letter PDF bundle.
+- Any live Suffolk-serving DDS locality contract on the existing Mass.gov DDS locations pages or the interactive map.
+- Any official DDS export or map data behind the current Mass.gov lane that preserves Suffolk locality coverage directly.
+- Any reviewed current Mass.gov DDS artifact that turns the 13-of-14 county locality capture into a full 14-of-14 county contract.
 
-## Next State Order After Arizona
+## Next State Order After Massachusetts
 
-1. Massachusetts
-2. New Mexico
-3. South Dakota
-4. Rhode Island
-5. Virginia
-6. West Virginia
-7. North Dakota
-8. Wisconsin
-9. Washington
-10. Tennessee
+1. New Mexico
+2. South Dakota
+3. Rhode Island
+4. Virginia
+5. West Virginia
+6. North Dakota
+7. Wisconsin
+8. Washington
+9. Tennessee
+10. Vermont

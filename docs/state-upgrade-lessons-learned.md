@@ -41,6 +41,7 @@
 
 ### Replace Stale 403 Assumptions With Exact Child-Surface Rechecks
 *   **Lesson:** If a state org page starts rendering again, re-check the exact child surfaces it links before preserving an old host-wide 403 blocker. Massachusetts DDS had moved past the earlier 403 assumption: the org page, `/locations`, and the interactive regional map were live, while the guessed `dds-area-offices` URL was just a true 404 and the remaining blocker was the lack of a county-grade export contract.
+*   **Lesson:** If a live official locations page preserves explicit `serves the following towns and communities` text on paginated office cards, treat that as a real browser-readable locality contract and run a bounded town-to-county bridge before preserving a generic blocker. Massachusetts DDS moved from a generic live-lane blocker to a narrower 13-of-14 county remainder once the paginated area-office cards were captured and bridged against the official Census subdivision layer.
 
 ### Public Embeds Only Count When They Expose A Reusable Local Contract
 *   **Lesson:** If a first-party page only points to a public map or embedded visualization, do not count that embed as county-grade proof unless it exposes a reusable town, county, or export contract. Massachusetts DDS rendered a live Tableau-backed town-or-city map, but without a machine-readable locality list or county bridge it still stayed blocked.

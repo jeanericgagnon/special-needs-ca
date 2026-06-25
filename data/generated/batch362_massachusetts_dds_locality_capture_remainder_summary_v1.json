@@ -1,0 +1,15 @@
+{
+  "batch": "batch362_massachusetts_dds_locality_capture_remainder_v1",
+  "generated_at": "2026-06-25T18:05:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "browser_readable_locations_pages": 4,
+  "reviewed_area_office_count": 21,
+  "covered_counties": 13,
+  "missing_counties": [
+    "suffolk-ma"
+  ],
+  "result": "live_dds_locations_cards_preserve_town_to_area_office_lists_for_13_of_14_counties_but_suffolk_still_lacks_a_reviewable_official_locality_contract"
+}
