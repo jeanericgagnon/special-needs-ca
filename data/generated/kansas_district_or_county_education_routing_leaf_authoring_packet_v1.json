@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 81,
     "placeholderWebsiteRows": 81,
-    "authoredExactLeafCount": 28,
+    "authoredExactLeafCount": 29,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 28
+    "reviewedDistrictOwnedLeafCount": 29
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -160,6 +160,7 @@
   ],
   "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned or district-linked education-routing leaf from saved district leads or remains explicitly blocked where no district-owned local contract has been preserved; do not rely on the current live KSDE state export roots until the exact submit lane is reproducible again.",
   "reviewed_local_leaf_counties": [
+    "anderson-ks",
     "atchison-ks",
     "barton-ks",
     "bourbon-ks",
@@ -191,7 +192,6 @@
   ],
   "unresolved_local_leaf_counties": [
     "allen-ks",
-    "anderson-ks",
     "barber-ks",
     "brown-ks",
     "chase-ks",

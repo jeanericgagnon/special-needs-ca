@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `azed_host_challenged_and_ahcccs_county_mapping_requires_reviewed_admin_html_leaves_or_explicit_ocr_artifact`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_hold_at_12_counties_and_remaining_county_bearing_district_roots_now_have_public_sitemap_exhaustion_evidence`
-- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_28_counties`
+- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_29_counties`
 - Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
@@ -34,48 +34,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The official Department of Health DPA host is no longer only a stale challenge assumption: in the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live DPA landing page, and the exact DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is also publicly reviewable. That page now truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official host. But it still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The DFCS successor surfaces still add no county-equivalent contract: `Services.aspx` remains phone-only, `Publications.aspx` still exposes no office-routing material, the Site Map still only surfaces wrong-role OCS and Pioneer Homes branches, and public DFCS search still materializes no usable results. Alaska remains BLOCKED because the live DPA offices page still lacks borough- or census-area assignment proof.
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 29/105 counties from preserved district-owned or district-linked leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Anderson now clears because the official Garnett USD 365 sitemap exposes the exact district-owned `69971_2` Public Info / Forms leaf, and the fetched page preserves local district document links for `Child Find pdf` and `Complaint Procedure pdf` on the live usd365.org host. Kansas remains BLOCKED because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
 
 ### Exact Evidence Needed
 
-- Any official Alaska page, table, PDF, export, or API that explicitly maps boroughs or census areas to DPA office locations.
-- Any public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings now visible.
-- Any official borough/census-area office-routing contract on DFCS, Health, or a canonical Alaska successor host that is publicly reviewable without inference.
+- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
+- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
+- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DPA landing page](https://health.alaska.gov/dpa)
-- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
-- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
-- [Alaska DFCS Search results endpoint](https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance)
-- [Alaska Pioneer Homes Payment Assistance Program](https://dfcs.alaska.gov/daph/Pages/paymentassistance/default.aspx)
-- [Alaska DAPH publications](https://dfcs.alaska.gov/daph/Pages/publications.aspx)
-- [Alaska OCS Regional Offices](https://dfcs.alaska.gov/ocs/Pages/offices/default.aspx)
-- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
-- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
+- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
+- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [Garnett USD 365 root](https://www.usd365.org/)
+- [Garnett USD 365 sitemap](https://www.usd365.org/sitemap.xml)
+- [Garnett USD 365 Public Info / Forms leaf](https://www.usd365.org/69971_2)
+- [Fort Scott USD 234 Special Education leaf](https://www.usd234.org/page/special-education/)
+- [Wamego USD 320 Child Find leaf](https://www.usd320.com/childfind)
+- [Parsons district leaf](https://www.usd503.org/page/tri-county-special-education-cooperative/)
+- [Burlington USD 244 CCSEC leaf](https://www.usd244ks.org/ccsec)
+- [Marshall County Special Education Coop eligibility page](https://www.usd364.org/o/mcsec/page/special-education-eligibility/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current Alaska public page or download that ties named boroughs or census areas to the now-live DPA office locations page.
-- Any embedded data source, downloadable attachment, or companion offices table on the live DPA offices page that exposes service areas.
-- Any future public Alaska office-routing export on the DPA or DFCS host that materializes county-equivalent assignments instead of only region labels.
+- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
+- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or Child Find.
+- Additional district-owned document-folder or CMS routes like the Garnett USD 365 forms-folder recovery, Parsons USD 503, Hays USD 489, Hutchinson USD 308, Marysville USD 364, Burlington USD 244, Coffeyville USD 445, Wamego USD 320, and Fort Scott USD 234 recoveries, but only on already-preserved district domains.
+## Next State Order After Kansas
 
-## Next State Order After Alaska
-
-1. Oklahoma
-2. Ohio
-3. Minnesota
-4. Maine
-5. Idaho
-6. Arizona
-7. Massachusetts
-8. New Mexico
-9. South Dakota
-10. Rhode Island
+1. Nebraska
+2. Nevada
+3. Florida
+4. Alaska
+5. South Carolina
+6. North Carolina
+7. New York
+8. Oklahoma
+9. Oregon
+10. Ohio
