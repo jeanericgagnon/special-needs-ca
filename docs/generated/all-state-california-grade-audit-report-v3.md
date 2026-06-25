@@ -9,12 +9,12 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Classification counts
 
-- COMPLETE: 35
-- BLOCKED: 15
+- COMPLETE: 36
+- BLOCKED: 14
 
-- index-safe states: 35
-- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia
-- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Washington, West Virginia, Wisconsin, Wyoming
+- index-safe states: 36
+- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, West Virginia
+- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Washington, Wisconsin, Wyoming
 
 ## Notes
 
@@ -23,6 +23,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - Tennessee is now COMPLETE/index-safe from its reviewed official local-routing repair pass.
 - Virginia is now COMPLETE/index-safe from reviewed first-party Virginia School Quality Profiles division pages, the live DSS local-department directory, and explicit first-party PEATC statewide PTI designation text.
+- West Virginia is now COMPLETE/index-safe from reviewed first-party WV School Directory county-routing pages, the live DoHS county-filtered field-office directory, and reviewed Legal Aid WV statewide help pages.
 - Massachusetts remains BLOCKED/index-safe=false, but the DDS county-local blocker is now narrowed to a Suffolk-only remainder after reviewed locality capture cleared the other 13 counties.
 - Alaska remains BLOCKED/index-safe=false, and the county-local blocker is now tightened to the exact official failure mode: the live DPA office page groups offices into regions that cross multiple borough/census-area boundaries, so the office cities cannot be projected into county-equivalent routing.
 - New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the exact official failure mode: the live PED SharePoint school-directory host exposes public workbooks, a public `2017 NM Schools` list with REST-backed rows, and a public REC grouping page, but none of those official surfaces publishes a county field or REC county-service-area contract.
