@@ -1,0 +1,11 @@
+# Batch 366 South Dakota Official Routing Repair v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: cleared South Dakota education routing and legal aid with official evidence and narrowed the remaining county-local blocker to the current DHS host family
+
+## Evidence
+
+- Reviewed 2026-06-25 bounded first-party South Dakota DOE directory surfaces. The public South Dakota Educational Directory root lists statewide Public School Districts and links each district into a detail page. Reviewed district detail pages such as Bennett County 03-1 and Sioux Falls 49-5 preserve mailing and physical addresses plus a named `Special Education Director` field directly on the official DOE host. The same official directory family also publishes district maps and county map PDFs and exposes special-education cooperatives as directory entities. This is current first-party district-grade public education routing evidence, replacing the old generic statewide fallback.
+- Reviewed 2026-06-25 the official South Dakota Unified Judicial System self-help pages. The official `Get Legal Help` page states that people can apply for free or low-cost legal help in South Dakota and that SD Law Help forwards applications to South Dakota legal-services programs including East River Legal Services, Dakota Plains Legal Services, and Access to Justice. This is current authoritative statewide legal-aid routing evidence on the official state judiciary host.
+- Reviewed 2026-06-25 bounded first-party South Dakota DHS surfaces. The current `/en/localoffices` route still serves only a JS shell in raw HTML and embeds `aemPages.localoffices.title` as `Page Not Found` in the page state instead of exposing a public local-office directory. The current `Contact Us` page exposes only statewide phone, email, and Pierre mailing contacts. The current `Staff and Program Directory` page exposes division and program staff tables, but no county field, no local-office list, and no county-to-office contract. South Dakota therefore still lacks a truthful public county-grade local-office routing contract on the current official DHS host family.
