@@ -1,0 +1,23 @@
+{
+  "batch": "batch384_south_dakota_official_freeze_v1",
+  "state": "south-dakota",
+  "classification_before": "BLOCKED",
+  "classification_after": "BLOCKED",
+  "resolved_families": [
+    "district_or_county_education_routing",
+    "legal_aid"
+  ],
+  "remaining_blockers": [
+    "county_local_disability_resources"
+  ],
+  "evidence_sources": [
+    "https://doe.sd.gov/ofm/edudir.aspx",
+    "https://doe.sd.gov/ofm/results.aspx?districtnumber=06001",
+    "https://doe.sd.gov/ofm/results.aspx?districtnumber=03001",
+    "https://doe.sd.gov/ofm/results.aspx?districtnumber=49005",
+    "https://www.dpls.org/",
+    "https://dhs.sd.gov/en/localoffices",
+    "https://dhs.sd.gov/en/contact-us",
+    "https://dhs.sd.gov/en/staff-directory"
+  ]
+}
