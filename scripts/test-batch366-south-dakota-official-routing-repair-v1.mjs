@@ -42,7 +42,18 @@ assert.match(legalAid.samples[2].evidence_snippet, /East River Legal Services an
 const county = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(county.family_status, 'blocked_current_dhs_host_without_public_county_or_local_office_contract');
 assert.match(county.samples[0].evidence_snippet, /Page Not Found/i);
+assert.match(county.samples[1].evidence_snippet, /DHSInfo@state\.sd\.us/i);
 assert.match(county.samples[2].source_url, /dhs\.sd\.gov\/en\/staff-directory/);
+assert.match(county.samples[2].evidence_snippet, /Intake Team assists the public with referrals/i);
+
+const evidence = JSON.parse(
+  fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'south-dakota_dhs_public_local_routing_evidence_v1.json'), 'utf8')
+);
+assert.match(evidence.county_local.reviewed_sources[0].evidence_excerpt, /We have updated our website and this page does not exist/i);
+assert.match(evidence.county_local.reviewed_sources[1].evidence_excerpt, /605-773-5990/);
+assert.match(evidence.county_local.reviewed_sources[1].evidence_excerpt, /Pierre, SD 57501/);
+assert.match(evidence.county_local.reviewed_sources[2].evidence_excerpt, /application process for services provided by the Division/i);
+assert.match(evidence.county_local.blocker_summary, /no public county-to-office, county-to-service, or local-office routing contract/i);
 
 const failureRows = fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'south-dakota_failure_ledger_v2.jsonl'), 'utf8')
   .trim()

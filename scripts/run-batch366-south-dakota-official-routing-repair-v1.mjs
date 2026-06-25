@@ -18,6 +18,7 @@ const INPUTS = {
 
 const OUTPUTS = {
   batchSummary: path.join(generatedDir, 'batch366_south-dakota_official_routing_repair_summary_v1.json'),
+  evidence: path.join(generatedDir, 'south-dakota_dhs_public_local_routing_evidence_v1.json'),
   batchReport: path.join(docsGeneratedDir, 'batch366-south-dakota-official-routing-repair-report-v1.md'),
   stateReport: path.join(docsGeneratedDir, 'south-dakota-california-grade-audit-report-v2.md'),
 };
@@ -32,7 +33,7 @@ const COUNTY_FAMILY_STATUS =
 const COUNTY_NEXT_ACTION =
   'hold_blocked_until_current_dhs_host_exposes_public_county_to_office_or_local_service_contract';
 const COUNTY_REASON =
-  'Reviewed 2026-06-25 bounded first-party South Dakota DHS surfaces. The current `/en/localoffices` route still serves only a JS shell in raw HTML and embeds `aemPages.localoffices.title` as `Page Not Found` in the page state instead of exposing a public local-office directory. The current `Contact Us` page exposes only statewide phone, email, and Pierre mailing contacts. The current `Staff and Program Directory` page exposes division and program staff tables, but no county field, no local-office list, and no county-to-office contract. South Dakota therefore still lacks a truthful public county-grade local-office routing contract on the current official DHS host family.';
+  'Reviewed 2026-06-25 and 2026-06-26 bounded first-party South Dakota DHS surfaces. The current `/en/localoffices` route resolves through `window.INITIAL_STATE` to `aemPages.localoffices.title = Page Not Found`, and the embedded page text says, `We have updated our website and this page does not exist`, then routes families to Search or Contact Us instead of a local-office directory. The current `Contact Us` page exposes only statewide phone, toll-free, email, and Pierre mailing contacts. The current `Staff and Program Directory` page exposes division and program staff tables, including statewide Developmental Disabilities and LTSS program contacts, but no county field, no local-office list, and no county-to-office contract. South Dakota therefore still lacks a truthful public county-grade local-office routing contract on the current official DHS host family.';
 
 const EDUCATION_REASON =
   'Reviewed 2026-06-25 bounded first-party South Dakota DOE directory surfaces. The public South Dakota Educational Directory root lists statewide Public School Districts and links each district into a detail page. Reviewed district detail pages such as Bennett County 03-1 and Sioux Falls 49-5 preserve mailing and physical addresses plus a named `Special Education Director` field directly on the official DOE host. The same official directory family also publishes district maps and county map PDFs and exposes special-education cooperatives as directory entities. This is current first-party district-grade public education routing evidence, replacing the old generic statewide fallback.';
@@ -111,6 +112,39 @@ function buildBatchReport() {
     `- ${LEGAL_AID_REASON}`,
     `- ${COUNTY_REASON}`,
   ].join('\n') + '\n';
+}
+
+function buildEvidenceArtifact() {
+  return {
+    state: 'south-dakota',
+    generated_at: '2026-06-26',
+    county_local: {
+      reviewed_sources: [
+        {
+          source_url: 'https://dhs.sd.gov/en/localoffices',
+          authority: 'South Dakota Department of Human Services',
+          review_date: '2026-06-26',
+          finding: 'localoffices_route_resolves_to_page_not_found',
+          evidence_excerpt: 'aemPages.localoffices.title = Page Not Found; We have updated our website and this page does not exist. To find this information on the new website, try our Search. For more help, go to Contact Us.',
+        },
+        {
+          source_url: 'https://dhs.sd.gov/en/contact-us',
+          authority: 'South Dakota Department of Human Services',
+          review_date: '2026-06-26',
+          finding: 'statewide_contact_page_only',
+          evidence_excerpt: 'Phone: 605-773-5990; Toll free: 800-265-9684; DHSInfo@state.sd.us; Pierre, SD 57501.',
+        },
+        {
+          source_url: 'https://dhs.sd.gov/en/staff-directory',
+          authority: 'South Dakota Department of Human Services',
+          review_date: '2026-06-26',
+          finding: 'program_staff_tables_without_county_or_local_office_mapping',
+          evidence_excerpt: 'The Intake Team assists the public with referrals to available service programs and with the application process for services provided by the Division, but the page preserves no county field or local-office list.',
+        },
+      ],
+      blocker_summary: 'The live DHS host still exposes no public county-to-office, county-to-service, or local-office routing contract for South Dakota disability-resource navigation.',
+    },
+  };
 }
 
 export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
@@ -283,7 +317,7 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
         family_status: COUNTY_FAMILY_STATUS,
         evidence_strength: 'weak',
         sample_count: 3,
-        query_basis: 'Reviewed 2026-06-25 first-party South Dakota DHS localoffices, contact-us, and staff-directory surfaces for public county-local routing evidence.',
+        query_basis: 'Reviewed 2026-06-25 and 2026-06-26 first-party South Dakota DHS localoffices, contact-us, and staff-directory surfaces for public county-local routing evidence.',
         blocker_code: COUNTY_FAILURE_CODE,
         blocker_evidence: COUNTY_REASON,
         samples: [
@@ -294,7 +328,7 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
             verification_status: 'official_verified',
             source_type: 'official_route_without_public_directory',
             source_table: 'county_offices',
-            evidence_snippet: 'The raw page serves only a JS shell and embeds `aemPages.localoffices.title` as `Page Not Found` instead of a public local-office directory.',
+            evidence_snippet: 'The embedded page state resolves `aemPages.localoffices.title` to `Page Not Found` and says the page does not exist.',
           },
           {
             sample_name: 'South Dakota DHS Contact Us',
@@ -303,7 +337,7 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
             verification_status: 'official_verified',
             source_type: 'official_statewide_contact_page',
             source_table: 'county_offices',
-            evidence_snippet: 'The current Contact Us page exposes only statewide phone, email, and Pierre mailing contacts.',
+            evidence_snippet: 'Phone: 605-773-5990; Toll free: 800-265-9684; DHSInfo@state.sd.us; Pierre, SD 57501.',
           },
           {
             sample_name: 'South Dakota DHS Staff and Program Directory',
@@ -312,7 +346,7 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
             verification_status: 'official_verified',
             source_type: 'official_program_staff_directory',
             source_table: 'county_offices',
-            evidence_snippet: 'The staff directory publishes division and program staff tables but no county field, no local-office list, and no county-to-office contract.',
+            evidence_snippet: 'The Intake Team assists the public with referrals to available service programs and with the application process for services provided by the Division, but the page preserves no county field or local-office list.',
           },
         ],
       };
@@ -333,6 +367,7 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
     },
   ];
 
+  writeJson(OUTPUTS.evidence, buildEvidenceArtifact());
   writeJson(INPUTS.summary, updatedSummary);
   writeJsonl(INPUTS.gap, updatedGapRows);
   writeJsonl(INPUTS.failure, updatedFailureRows);

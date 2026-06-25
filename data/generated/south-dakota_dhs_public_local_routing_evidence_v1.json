@@ -1,0 +1,30 @@
+{
+  "state": "south-dakota",
+  "generated_at": "2026-06-26",
+  "county_local": {
+    "reviewed_sources": [
+      {
+        "source_url": "https://dhs.sd.gov/en/localoffices",
+        "authority": "South Dakota Department of Human Services",
+        "review_date": "2026-06-26",
+        "finding": "localoffices_route_resolves_to_page_not_found",
+        "evidence_excerpt": "aemPages.localoffices.title = Page Not Found; We have updated our website and this page does not exist. To find this information on the new website, try our Search. For more help, go to Contact Us."
+      },
+      {
+        "source_url": "https://dhs.sd.gov/en/contact-us",
+        "authority": "South Dakota Department of Human Services",
+        "review_date": "2026-06-26",
+        "finding": "statewide_contact_page_only",
+        "evidence_excerpt": "Phone: 605-773-5990; Toll free: 800-265-9684; DHSInfo@state.sd.us; Pierre, SD 57501."
+      },
+      {
+        "source_url": "https://dhs.sd.gov/en/staff-directory",
+        "authority": "South Dakota Department of Human Services",
+        "review_date": "2026-06-26",
+        "finding": "program_staff_tables_without_county_or_local_office_mapping",
+        "evidence_excerpt": "The Intake Team assists the public with referrals to available service programs and with the application process for services provided by the Division, but the page preserves no county field or local-office list."
+      }
+    ],
+    "blocker_summary": "The live DHS host still exposes no public county-to-office, county-to-service, or local-office routing contract for South Dakota disability-resource navigation."
+  }
+}
