@@ -162,7 +162,7 @@ function buildHandoff(allStateAudit) {
   return [
     '# Gemini Source Scout Handoff',
     '',
-    'Updated: 2026-06-24',
+    'Updated: 2026-06-25',
     '',
     'Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.',
     '',
