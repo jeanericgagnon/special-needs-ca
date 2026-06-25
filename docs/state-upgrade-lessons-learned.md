@@ -473,3 +473,6 @@
 
 ### County Health Department Root Plus Services Leaves Can Be A Truth-Safe County Fallback
 *   **Lesson:** If an official county health department root preserves county-specific address and phone while an exact same-county services leaf preserves benefit or disability-adjacent routing such as SoonerStart, SoonerCare, or Community Health Worker referrals, the pair can truthfully close a county-local fallback gap. Oklahoma cleared once each remaining blocked county had that exact county root-plus-services contract on the official state health host.
+
+### Same-Host Contact, Sitemap, And Office Hubs Can Be Enough To Freeze A County-Crosswalk Blocker
+*   **Lesson:** If the official office page, contact root, offices/divisions hub, administrative-offices page, and same-host sitemap all stay public yet none expose county names, service areas, or a county-grade export, treat the host family as source-final for low-token county routing. Maine DHHS stayed office-grade across every bounded same-host follow-up, so more retries would only restate the same missing county crosswalk.

@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 16
-- primary_gap_reason: live_maine_neo_superintendent_selectors_now_materialize_local_rows_but_dhhs_office_html_still_has_no_county_contract
+- primary_gap_reason: official_dhhs_office_page_and_same_host_contact_sitemap_surfaces_still_expose_no_county_or_service_area_crosswalk
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed Pine Tree Legal Assistance now provides direct statewide Maine legal-aid evidence.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_district_office_locations_with_towns_but_without_county_crosswalk (Maine county-local remains blocked for the same reason as the prior pass: the official DHHS District Office Locations page is public and role-bearing and lists named office towns, addresses, phones, emails, and map links, but it still exposes no county-served labels and no service-area crosswalk in public HTML.)
+- county_local_disability_resources: blocked_district_office_locations_and_same_host_followups_without_county_crosswalk (Reviewed 2026-06-25 one more bounded official Maine DHHS county-local pass against the current public host family only: `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/about/contact/`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/offices-divisions`, and `https://www.maine.gov/dhhs/about/sitemap`. The live district office page still preserves office towns, addresses, phones, emails, map shortlinks, and OFI program links for Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, Skowhegan, and others, but it still exposes zero county names and zero service-area labels in public HTML. The same-host follow-up surfaces stay negative too: the DHHS contact root, offices/divisions page, administrative offices page, and DHHS sitemap all remain public but still expose no county-served fields, no service-area crosswalk, and no alternate county-grade office export on the current official host family. Maine therefore remains blocked because the current official DHHS public stack still has office-grade contact proof without a truthful county-to-office routing contract.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_dhhs_office_page_lists_office_towns_but_has_no_county_or_service_area_crosswalk :: Reviewed 2026-06-23 live official Maine DHHS District Office Locations page at https://www.maine.gov/dhhs/about/contact/offices. The page preserves district office names, exact office towns and addresses, phones, emails, cross-office program notes, and `Show Map` links for offices such as Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan. But a bounded HTML inspection still exposed zero county names such as Aroostook, Washington, or York, zero county-served labels, and zero service-area fields in the public page itself. The official page therefore remains office-grade evidence without a truthful county-to-office routing contract.
+- county_local_disability_resources: official_dhhs_office_page_and_same_host_followups_expose_zero_county_or_service_area_fields :: Reviewed 2026-06-25 bounded official Maine checks on `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/about/contact/`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/offices-divisions`, and `https://www.maine.gov/dhhs/about/sitemap`. The live district office page preserves district office names, exact office towns and addresses, phones, emails, cross-office program notes, OFI program links, and `Show Map` shortlinks for Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan. But the office page still exposes zero county names such as Aroostook, Washington, or York, zero county-served labels, and zero service-area fields in public HTML. The same-host follow-up pages remain public yet equally negative: the contact root, administrative offices page, offices/divisions page, and DHHS sitemap all expose no county crosswalk and no alternate county-grade office export or service-area table. Maine therefore still has office-grade evidence without a truthful county-to-office routing contract on the current official public host family.
 
 ## Verified source samples
 
@@ -40,15 +40,14 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.ptla.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_district_office_locations_with_towns_but_without_county_crosswalk; samples=1; first=https://www.maine.gov/dhhs/about/contact/offices
+- county_local_disability_resources: blocked_district_office_locations_and_same_host_followups_without_county_crosswalk; samples=5; first=https://www.maine.gov/dhhs/about/contact/offices
 
 ## Next actions
 
-- [critical] county_local_disability_resources: find_official_county_or_service_area_crosswalk_for_named_dhhs_office_towns_or_keep_maine_counties_blocked
+- [critical] county_local_disability_resources: hold_blocked_until_official_maine_dhhs_county_or_service_area_crosswalk_is_publicly_reviewable
 
 ## Completion decision
 
 - Maine remains BLOCKED and not index-safe.
-- Education now clears from the live official Superintendent-by-SAU and Superintendent-by-Town selectors, which both materialize Bangor local rows with address, phone, fax, and email on the official host.
-- The sibling Primary Contacts search/export lane still falls into the NEO `Home/CustomError` shell, but it no longer blocks district-grade routing.
-- County-local remains blocked because the official DHHS office page still publishes office towns but no county or service-area crosswalk in public HTML.
+- Education remains cleared by the live official Superintendent-by-SAU and Superintendent-by-Town selectors.
+- County-local remains blocked because the official DHHS office page plus the bounded same-host contact, sitemap, offices/divisions, and administrative-office follow-ups still expose no county or service-area crosswalk in public HTML.

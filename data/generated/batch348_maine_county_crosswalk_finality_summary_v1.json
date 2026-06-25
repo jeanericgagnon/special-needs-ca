@@ -1,0 +1,16 @@
+{
+  "batch": "batch348_maine_county_crosswalk_finality_v1",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "same_host_followups": [
+    "https://www.maine.gov/dhhs/about/contact/offices",
+    "https://www.maine.gov/dhhs/about/contact/",
+    "https://www.maine.gov/dhhs/about/contact/administrative-offices",
+    "https://www.maine.gov/dhhs/offices-divisions",
+    "https://www.maine.gov/dhhs/about/sitemap"
+  ],
+  "county_mentions_found": 0,
+  "service_area_fields_found": 0,
+  "result": "source_final_without_public_county_crosswalk"
+}

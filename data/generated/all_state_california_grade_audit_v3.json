@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T09:45:04.463Z",
+  "generatedAt": "2026-06-25T09:51:42.071Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 33,
@@ -12,7 +12,7 @@
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Oklahoma county health department root-plus-services fallback now clears the final county-local blocker with exact official county pages.",
+  "lessonsUpdate": "Maine DHHS same-host office, contact, sitemap, and office-hub pages all remain county-crosswalk negative.",
   "states": [
     {
       "stateId": "alabama",
@@ -1349,12 +1349,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_district_office_locations_with_towns_but_without_county_crosswalk"
+        "county_local_disability_resources": "blocked_district_office_locations_and_same_host_followups_without_county_crosswalk"
       },
       "packetGenerated": true,
-      "packetBatch": "batch334_maine_live_selector_500_refresh_v1",
-      "packetPrimaryGapReason": "live_maine_neo_superintendent_selectors_now_materialize_local_rows_but_dhhs_office_html_still_has_no_county_contract",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch348_maine_county_crosswalk_finality_v1",
+      "packetPrimaryGapReason": "official_dhhs_office_page_and_same_host_contact_sitemap_surfaces_still_expose_no_county_or_service_area_crosswalk",
+      "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract"
     },
     {
       "stateId": "maryland",
