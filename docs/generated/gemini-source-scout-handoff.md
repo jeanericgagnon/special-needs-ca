@@ -35,44 +35,48 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oklahoma
+## Current Focus State: Ohio
 
 ### Blocker Reason
 
-`county_local_disability_resources` remains the top Oklahoma blocker. The live OKDHS county widget is official but now proves even less than the broader KML: its public widget feed and linked `mapconfig2` model only publish county entries for Adair and Alfalfa, while the broader public KML still yields only 45 benefit-capable counties once TANF-only access points are excluded. The same host still proves county trees are technically publishable for child-support offices, but not yet for the missing disability/local-routing remainder.
+Ohio still has two critical blockers, but the highest-priority one is `county_local_disability_resources`. The old root-404 blocker is no longer true: Ohio JFS, Medicaid, and Ohio.gov roots plus their `robots.txt` and `sitemap.xml` surfaces are live again. The current failure is narrower and more truthful: the rendered `job-family-services-directory` page, Ohio search page, JFS `about/local-agencies-directory` root, and sampled `cdjfs-*` county leaves still render public 404 pages even though the live JFS sitemap advertises 98 `cdjfs-*` entries across 88 county slugs.
 
 ### Exact Evidence Needed
 
-- Any current official Oklahoma county-local office directory or export that closes the 32-county remainder on the OKDHS host.
-- Any official county-owned or state-owned successor leaves that explicitly map the unresolved counties to public assistance or disability-routing offices.
-- Any public API, CSV, JSON, ArcGIS, or HTML contract on the official host that exposes the missing county assignments directly.
+- A rendered live Ohio county JFS or Medicaid directory page that exposes real county office details instead of the current public 404 page.
+- A working current successor to the stale `cdjfs-*` directory family, or proof that the sitemap leaf family itself now renders live office details.
+- For education later: more exact district or ESC leaves beyond the tiny current inventory.
 
 ### Useful Official URLs Already Tried
 
-- [Oklahoma Human Services Contact Us](https://oklahoma.gov/okdhs/contact-us.html)
-- [Oklahoma Human Services county widget leaf](https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html)
-- [Oklahoma Human Services map2 page](https://oklahoma.gov/okdhs/contact-us/map2.html)
-- [Oklahoma Human Services mapconfig2 model](https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json)
-- [Oklahoma Human Services public widget feed](https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json)
-- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)
-- [Oklahoma Child Support offices tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)
-- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)
+- [JFS root](https://jfs.ohio.gov/)
+- [JFS robots.txt](https://jfs.ohio.gov/robots.txt)
+- [JFS sitemap.xml](https://jfs.ohio.gov/sitemap.xml)
+- [Ohio.gov county directory page](https://ohio.gov/residents/resources/job-family-services-directory)
+- [Ohio.gov search page](https://ohio.gov/search?query=county%20job%20and%20family%20services)
+- [JFS local agencies directory root](https://jfs.ohio.gov/about/local-agencies-directory)
+- [Sample JFS county leaf: Adams](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams)
+- [Sample JFS county leaf: Cuyahoga](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-cuyahoga-3)
+- [Sample JFS county leaf: Wood](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-wood)
+- [Medicaid root](https://medicaid.ohio.gov/)
+- [Medicaid robots.txt](https://medicaid.ohio.gov/robots.txt)
+- [Medicaid sitemap.xml](https://medicaid.ohio.gov/sitemap.xml)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any exact official OKDHS county-office export or county-filter contract that covers the unresolved counties.
-- Any official county-level benefit or disability-routing leaf linked from the same host but not yet packeted.
-- The current measured county remainder is: Adair, Alfalfa, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
+- Any current rendered Ohio county-office successor leaf on JFS, Medicaid, or Ohio.gov that replaces the stale public 404 directory family.
+- Any official statewide export, table, or rendered directory that maps all 88 counties to county JFS routing without relying on stale sitemap-only leaves.
+- For education later: exact district or ESC-owned leaves that materially expand county-grade routing beyond the current root-only inventory.
 
-## Next State Order After Oklahoma
+## Next State Order After Ohio
 
-1. Ohio
-2. Minnesota
-3. Maine
-4. Idaho
-5. Arizona
-6. Massachusetts
-7. New Mexico
-8. South Dakota
-9. Rhode Island
-10. Virginia
+1. Minnesota
+2. Maine
+3. Idaho
+4. Arizona
+5. Massachusetts
+6. New Mexico
+7. South Dakota
+8. Rhode Island
+9. Virginia
+10. West Virginia
