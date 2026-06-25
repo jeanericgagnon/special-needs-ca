@@ -19,7 +19,6 @@ const INPUTS = {
   audit: path.join(generatedDir, 'all_state_california_grade_audit_v3.json'),
   allStateReport: path.join(docsGeneratedDir, 'all-state-california-grade-audit-report-v3.md'),
   handoff: path.join(docsGeneratedDir, 'gemini-source-scout-handoff.md'),
-  idahoSummary: path.join(generatedDir, 'idaho_california_grade_summary_v2.json'),
 };
 
 const OUTPUTS = {
@@ -28,6 +27,7 @@ const OUTPUTS = {
 };
 
 const BATCH_NAME = 'batch356_maine_nav_stack_finality_v1';
+const ASSIGNED_NEXT_STATES_AFTER_MAINE = ['Idaho', 'New Mexico', 'Arizona', 'New Hampshire'];
 const PRIMARY_GAP_REASON =
   'official_dhhs_nav_stack_still_exposes_office_addresses_and_labels_but_no_county_or_service_area_contract';
 const COUNTY_STATUS =
@@ -102,7 +102,7 @@ function buildAllStateReport(text) {
   return `${lines.join('\n').trimEnd()}\n${next}\n`;
 }
 
-function buildHandoff(allStateAudit, idahoSummary) {
+function buildHandoff(allStateAudit) {
   const completeStates = allStateAudit.states
     .filter((row) => row.classification === 'COMPLETE')
     .map((row) => row.stateName)
@@ -156,16 +156,7 @@ function buildHandoff(allStateAudit, idahoSummary) {
     '',
     '## Next State Order After Maine',
     '',
-    `1. ${idahoSummary.state_name}`,
-    '2. Arizona',
-    '3. Massachusetts',
-    '4. New Mexico',
-    '5. South Dakota',
-    '6. Rhode Island',
-    '7. Virginia',
-    '8. West Virginia',
-    '9. North Dakota',
-    '10. Wisconsin',
+    ...ASSIGNED_NEXT_STATES_AFTER_MAINE.map((stateName, index) => `${index + 1}. ${stateName}`),
     '',
   ].join('\n');
 }
@@ -193,7 +184,6 @@ export function generateBatch356MaineNavStackFinalityV1() {
   const queueRows = readJsonl(INPUTS.queue);
   const allStateAudit = readJson(INPUTS.audit);
   const allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
-  const idahoSummary = readJson(INPUTS.idahoSummary);
 
   const updatedSummary = {
     ...summary,
@@ -418,7 +408,7 @@ export function generateBatch356MaineNavStackFinalityV1() {
   writeJsonl(INPUTS.queue, updatedQueueRows);
   writeJson(INPUTS.audit, updatedAudit);
   fs.writeFileSync(INPUTS.allStateReport, buildAllStateReport(allStateReport));
-  fs.writeFileSync(INPUTS.handoff, buildHandoff(updatedAudit, idahoSummary));
+  fs.writeFileSync(INPUTS.handoff, buildHandoff(updatedAudit));
   writeJson(OUTPUTS.summary, batchSummary);
   fs.writeFileSync(OUTPUTS.report, buildBatchReport());
 
