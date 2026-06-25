@@ -1,0 +1,18 @@
+{
+  "batch": "batch364_maine_search_finality_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dhhs_district_office_page_live": true,
+  "ofi_contact_page_live": true,
+  "ofi_programs_services_page_live": true,
+  "offices_divisions_page_live": true,
+  "administrative_offices_page_live": true,
+  "dhhs_sitemap_page_live": true,
+  "official_maine_search_live": true,
+  "official_maine_search_county_queries_with_role_results": 0,
+  "sampled_show_map_shortlinks_live": 2,
+  "sampled_show_map_shortlinks_are_address_geocodes_only": true,
+  "sampled_show_map_shortlinks_have_county_metadata": false,
+  "county_crosswalk_found": false,
+  "result": "official_nav_stack_and_state_search_office_addresses_and_labels_without_county_routing_contract"
+}

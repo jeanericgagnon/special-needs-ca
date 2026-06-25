@@ -539,3 +539,6 @@
 
 ### Official Sitemaps Can Expose Hidden Exact Office Documents Without Clearing Service Areas
 *   **Lesson:** If an official locations lane is readable but still missing one county or service-area contract, scan the official sitemap before guessing slugs or reopening broad search. Massachusetts' public sitemap exposed first-party `greater-boston-area-office` and `charles-river-west-area-office` document downloads that proved the exact DDS office identities, addresses, and phones, but they still did not publish counties served or town/community assignments, so they strengthened the blocker evidence without clearing Suffolk County.
+
+### Official State Search Shells Are Still Negative Evidence When They Materialize No Role Results
+*   **Lesson:** If an official state search host is public but county-targeted queries only replay the same generic portal shell with no role-bearing results, count that as final negative evidence instead of a discovery lead. Maine`s public `maine.gov/search` stayed live for county-office queries, but it produced no DHHS county-routing or district-office assignment results and did not reopen the blocker.
