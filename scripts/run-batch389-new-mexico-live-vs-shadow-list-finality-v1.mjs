@@ -149,6 +149,29 @@ function main() {
       ].slice(0, 12),
     };
   });
+  const finalVerifiedRows = updatedVerifiedRows.map((row) => {
+    if (row.family !== 'county_local_disability_resources') return row;
+    return {
+      ...row,
+      sample_count: 5,
+      query_basis:
+        'Reviewed 2026-06-25 the current official HCA `Field Offices` page, which now preserves county-to-office service-area assignments directly in public HTML across all 33 New Mexico counties.',
+      samples: [
+        ...(row.samples || []),
+        {
+          sample_name: 'Bernalillo and Sandoval county office assignment',
+          source_url: 'https://www.hca.nm.gov/lookingforassistance/field_offices/',
+          final_url: 'https://www.hca.nm.gov/lookingforassistance/field_offices/',
+          verification_status: 'verified',
+          source_type: 'official_county_service_area_row',
+          source_table: 'batch363_new_mexico_current_field_offices_remainder_clear_v1',
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet:
+            '`Albuquerque Office County Office 2 - Serving Bernalillo, Los Alamos & Sandoval Counties` preserves a direct county-to-office service area contract on the live official HCA host.',
+        },
+      ].slice(0, 5),
+    };
+  });
 
   let updatedReport = reportText;
   updatedReport = updatedReport.replace(
@@ -229,7 +252,7 @@ ${currentFocusSection}
   writeJson(INPUTS.summary, summary);
   writeJsonl(INPUTS.gap, updatedGapRows);
   writeJsonl(INPUTS.failure, updatedFailureRows);
-  writeJsonl(INPUTS.verified, updatedVerifiedRows);
+  writeJsonl(INPUTS.verified, finalVerifiedRows);
   writeText(INPUTS.report, updatedReport);
   writeText(INPUTS.handoff, updatedHandoff);
   writeText(INPUTS.lessons, updatedLessons);

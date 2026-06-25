@@ -1,0 +1,246 @@
+{
+  "state": "new-mexico",
+  "candidateBranch": null,
+  "pass": false,
+  "summary": {
+    "state": "new-mexico",
+    "state_code": "NM",
+    "state_name": "New Mexico",
+    "batch": "batch389_new_mexico_live_vs_shadow_list_finality_v1",
+    "classification": "BLOCKED",
+    "index_safe": false,
+    "incorrectly_index_safe": false,
+    "county_count": 33,
+    "completeness_pct": 83,
+    "strong_critical_families": 10,
+    "weak_critical_families": 2,
+    "missing_critical_families": 0,
+    "total_critical_families": 12,
+    "primary_gap_reason": "official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
+    "recommended_batch": "hold_for_official_county_crosswalk_or_rec_service_area_contract",
+    "critical_gap_families": [
+      "district_or_county_education_routing"
+    ],
+    "major_gap_families": [
+      "vocational_rehabilitation_pre_ets"
+    ],
+    "verified_source_families_with_samples": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "protection_and_advocacy",
+      "parent_training_information_center",
+      "legal_aid",
+      "able_program",
+      "ssi_ssa_federal_reference",
+      "county_local_disability_resources"
+    ],
+    "complete_ready": false,
+    "texas_v10_rule_basis": [
+      "Preserve noindex until all critical families are verified",
+      "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+      "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+    ],
+    "final_blockers": [
+      {
+        "family": "district_or_county_education_routing",
+        "severity": "critical",
+        "failure_code": "official_webed_sharepoint_lists_and_six_public_workbooks_verified_live_but_no_county_crosswalk_or_rec_service_area_contract",
+        "evidence": "Reviewed 2026-06-25 bounded official New Mexico PED SharePoint surfaces on `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx`, the public SharePoint REST inventory and field schema for that list family, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx`, and `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx`. The official SharePoint host is genuinely live and materially useful, but every public list and workbook still omits county or REC service-area fields. A final bounded API pass tightened the public-list evidence further: the live 935-row `2017 NM Schools` list at GUID `ed760a23-c290-4b26-8fec-4f94210cf7c3` exposes public row payload keys `Title`, `Column2` through `Column13`, corresponding to district, location, address, city, state, zip, level, type, status, and phone only, with no county field on real rows. The same host also exposes a separate zero-item shadow `NM Schools` schema whose fields include `County Name`, but that list has `ItemCount=0` and therefore does not provide a public county-grade routing contract. The public `Document Library` inventory still closes at six workbook files and `SitePages` closes at five public pages, none of which is a county crosswalk or REC service-area contract. `Superintendents.xlsx` exposes district contact columns only; `REC Directors.xlsx` exposes REC number/director/address/phone only; and the principal workbooks expose district/location/contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or service-area text. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED education inventory.",
+        "next_action": "author_official_county_crosswalk_from_webed_directory_or_rec_contract"
+      },
+      {
+        "family": "vocational_rehabilitation_pre_ets",
+        "severity": "major",
+        "failure_code": "official_dvr_root_returns_401_without_reviewed_public_alternate",
+        "evidence": "Reviewed 2026-06-22 the exact official New Mexico DVR root https://www.dvr.nm.gov/, which returned HTTP 401 Unauthorized in bounded fetches. The old packet still lacks any reviewed alternate first-party VR or Pre-ETS page on disk, so the family is no longer just missing-inventory; it is blocked on the official DVR lane requiring browser-assisted or alternate official-root review.",
+        "next_action": "browser_assisted_or_review_alternate_official_vr_root"
+      }
+    ],
+    "familyStatuses": {
+      "district_or_county_education_routing": "blocked_official_sharepoint_lists_and_six_public_workbooks_live_but_verified_county_crosswalk_still_missing",
+      "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page"
+    }
+  },
+  "gapRows": [
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "medicaid_state_health_coverage",
+      "family_label": "Medicaid / state health coverage",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed live HCA Medicaid leaves now prove statewide New Mexico Medicaid coverage and application routing."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_label": "Medicaid waiver / HCBS / disability services",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed HCA DDSD evidence on disk now proves statewide DD-waiver application / eligibility and HCBS disability-services routing."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "developmental_disability_idd_authority",
+      "family_label": "Developmental disability / IDD authority",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed HCA DDSD evidence on disk replaced the stale dhhs.new-mexico.gov DD authority path."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "early_intervention_part_c",
+      "family_label": "Early intervention / IDEA Part C",
+      "family_status": "verified_county_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "The official ECECD FIT page plus the linked Regional Office Map now prove county-grade local FIT routing across all 33 counties."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "special_education_idea_part_b",
+      "family_label": "Special education / IDEA Part B",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "The reviewed New Mexico regional education row still points to the PED Special Education Bureau page as the statewide Part B authority, while district-grade routing remains a separate blocked family."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "district_or_county_education_routing",
+      "family_label": "District or county education routing",
+      "family_status": "blocked_official_sharepoint_lists_and_six_public_workbooks_live_but_verified_county_crosswalk_still_missing",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 one more bounded official New Mexico education directory pass on the live PED-managed SharePoint host. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public `Document Library` contains only those six workbook files and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. A final bounded API pass tightened the row-level truth further: the live 935-row `2017 NM Schools` list exposes only `Title` plus `Column2` through `Column13` on public row payloads, corresponding to district, location, address, city, state, zip, level, type, status, and phone columns, with no county field on actual rows. The same host also exposes a separate zero-item shadow `NM Schools` schema with a `County Name` field, but that list has `ItemCount=0` and cannot satisfy county-grade public routing. `Superintendents.xlsx` preserves district names, codes, contacts, and addresses, but no county field. `REC Directors.xlsx` preserves only REC number, director, addresses, phone, fax, and email, but no county-service-area field. The elementary, middle, and high school principal workbooks each preserve school/district/contact columns, but no county field. The public `RECHome.aspx` page is also live and still groups districts under REC headings rather than exposing counties or REC service-area labels. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED directory artifacts."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_label": "Vocational rehabilitation / Pre-ETS",
+      "family_status": "blocked_official_dvr_root_unauthorized_without_reviewed_alternate",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "protection_and_advocacy",
+      "family_label": "Protection and advocacy",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed DRNM first-party evidence on disk explicitly proves the statewide protection-and-advocacy role and intake route."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "parent_training_information_center",
+      "family_label": "Parent training and information center",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "The reviewed Parents Reaching Out About page explicitly preserves New Mexico PTI designation on a first-party source."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "legal_aid",
+      "family_label": "Legal aid",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "The reviewed New Mexico Legal Aid locations page preserves a statewide intake route and explicitly says it serves all counties in New Mexico."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "able_program",
+      "family_label": "ABLE program",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Statewide ABLE crossover evidence remains reviewed and intact."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "ssi_ssa_federal_reference",
+      "family_label": "SSI / SSA federal references",
+      "family_status": "verified_state_grade",
+      "critical": false,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "SSA crossover evidence remains reviewed and intact."
+    },
+    {
+      "state": "new-mexico",
+      "state_code": "NM",
+      "state_name": "New Mexico",
+      "family": "county_local_disability_resources",
+      "family_label": "County/local disability resources",
+      "family_status": "verified_current_official_hca_field_offices_county_service_area_page",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 the current official HCA `Field Offices` page at `https://www.hca.nm.gov/lookingforassistance/field_offices/`. Unlike the older archive-tail lane, the live page now preserves county-to-office service-area assignments in public HTML across all 33 New Mexico counties, including `County Office 10 - Serving Curry, De Baca, Harding, Quay, & Roosevelt Counties`, `County Office 4 - Serving San Miguel, Guadalupe, Taos, Union, Colfax, & Mora Counties`, and `County Office 14 - Serving Catron, Cibola, Socorro, Torrance, & Valencia Counties`, with current office names, addresses, and hours on the official HCA host."
+    }
+  ],
+  "filesChecked": [
+    "data/generated/new-mexico_california_grade_summary_v2.json",
+    "data/generated/new-mexico_gap_matrix_v2.jsonl",
+    "data/generated/new-mexico_failure_ledger_v2.jsonl",
+    "data/generated/new-mexico_verified_sources_v1.jsonl",
+    "data/generated/new-mexico_next_action_queue_v2.jsonl",
+    "docs/generated/new-mexico-california-grade-audit-report-v2.md"
+  ],
+  "failures": [
+    {
+      "code": "not_completion_candidate",
+      "family": null,
+      "filesChecked": [
+        "data/generated/new-mexico_california_grade_summary_v2.json"
+      ],
+      "reason": "Candidate classification is BLOCKED, not COMPLETE.",
+      "suggestedRepairClass": "keep_blocked_or_repair_more"
+    }
+  ],
+  "checkedAt": "2026-06-25T23:07:21.541Z",
+  "liveProbeEnabled": false
+}
