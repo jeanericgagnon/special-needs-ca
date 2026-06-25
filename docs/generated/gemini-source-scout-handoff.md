@@ -35,45 +35,50 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oklahoma
+## Current Focus State: Utah
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Oklahoma critical blocker. The live OKDHS successor lane is real, but it still does not publish a county-complete local-routing contract. `https://oklahoma.gov/okdhs/contact-us.html` points at the public county widget on `map2.html`, yet both the widget's public component feed and the linked `mapconfig2.model.json` only publish county entities for Adair and Alfalfa. The broader public KML still yields only 45 benefit-capable county-local contracts after TANF-only access points are excluded, the child-support county tree is explicitly wrong-role, and the DDS area-contact page remains statewide-only. Oklahoma therefore still has no truth-safe county-local proof for the remaining 32 counties.
+`county_local_disability_resources` is the only remaining Utah critical blocker. The live Utah Schools Directory still clears education, and the official Utah evidence is now stronger on the negative side. `https://dhhs.utah.gov/contacts/` is publicly reviewable at HTTP 200, but it acts only as a central contacts hub: it routes community-service discovery to Utah 211, says users can find services by clicking on a county in the map below or using a search bar by type, and later explicitly says `Please visit specific division or program pages for local office information.` One more bounded first-party pass also confirms the DHHS WordPress API is live and exposes `wpsl` location collections, but those collections only publish `Double Up Food Bucks locations` and `Home Visiting Locations`, not county disability-resource offices. The surviving DWS stack still narrows lookup to `Zip Code or City`, and its public APIs still expose only office inventory plus `All Offices`, `USOR Services`, and `Employment Centers`. Utah therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official Oklahoma Human Services export, JSON feed, PDF, or table that maps the remaining 32 counties to benefit-capable county-local office routing on a public reviewable host.
-- Any current OKDHS county-owned or county-specific local-office leaves for the remaining counties that are distinct from the generic `contact-us` shell and preserve county office identity or county-served proof.
-- Any current official Oklahoma successor lane that closes the gap between the partial widget and the 45-county KML without relying on child-support-only routing or statewide DDS intake.
+- Any public Utah successor directory, export, or leaf set that explicitly maps all 29 counties to local DWS, DHHS, or disability-resource offices.
+- Any reviewable Utah division or program page that actually materializes county-local office assignments instead of only central contact information.
+- Any public office API field or companion endpoint that adds `county`, `countiesServed`, or equivalent service-area assignments to the current Utah office inventory.
 
 ### Useful Official URLs Already Tried
 
-- [Oklahoma Human Services contact-us root](https://oklahoma.gov/okdhs/contact-us.html)
-- [Oklahoma Human Services county widget leaf](https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html)
-- [Oklahoma Human Services map2 widget](https://oklahoma.gov/okdhs/contact-us/map2.html)
-- [Oklahoma Human Services mapconfig2 model](https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json)
-- [Oklahoma Human Services public widget feed](https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json)
-- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)
-- [Oklahoma Child Support district office tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)
-- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)
-- [Oklahoma State School Directory page](https://oklahoma.gov/education/resources/state-school-directory.html)
+- [Utah Schools Directory](https://schools.utah.gov/schoolsdirectory)
+- [Utah DHHS Contacts](https://dhhs.utah.gov/contacts/)
+- [Utah DHHS WordPress API root](https://dhhs.utah.gov/wp-json/)
+- [Utah DHHS WPSL stores collection](https://dhhs.utah.gov/wp-json/wp/v2/wpsl_stores?per_page=100)
+- [Utah DHHS WPSL categories collection](https://dhhs.utah.gov/wp-json/wp/v2/wpsl_store_category?per_page=100)
+- [DHHS customer service contact form](https://dhhs.utah.gov/customer-service/customer-service-contact-form/)
+- [Older DWS public contact page with Office Map link](https://jobs.utah.gov/department/contact/index.html)
+- [Legacy DWS office-search alias](https://jobs.utah.gov/jsp/officesearch/)
+- [Live DWS Office Search shell](https://jobs.utah.gov/office-search/)
+- [Live DWS zip-coded detail route](https://jobs.utah.gov/office-search/search/84713)
+- [Public DWS office API](https://officesearch-api.jobs.utah.gov/api/v1/offices)
+- [Public DWS services API](https://officesearch-api.jobs.utah.gov/api/v1/services)
+- [Missing county endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/counties)
+- [Missing search endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/search)
+- [Missing office-search endpoint probe](https://officesearch-api.jobs.utah.gov/api/v1/offices/search)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any OKDHS public export or hidden feed sibling to `mapconfig2.model.json` that enumerates the remaining county-local office assignments.
-- Any current Oklahoma county-local office directory page on the OKDHS host that is benefit-capable and county-specific rather than child-support-specific.
-- Any future public expansion of the county widget beyond Adair and Alfalfa, or any public replacement for the current 45-county KML remainder.
+- Any public Utah successor leaf or export that materially maps counties to local offices rather than just publishing office inventory.
+- Any public companion API artifact that adds `county` or service-area assignments to the current DWS office inventory.
+- Any reviewable official Utah division/program office page that preserves local county or service-area coverage on the current DHHS or DWS host.
+## Next State Order After Utah
 
-## Next State Order After Oklahoma
-
-1. Ohio
-2. Minnesota
-3. Maine
-4. Idaho
-5. Arizona
-6. Massachusetts
-7. New Mexico
-8. South Dakota
-9. Rhode Island
-10. Virginia
+1. Kansas
+2. Nebraska
+3. Nevada
+4. Florida
+5. Alaska
+6. South Carolina
+7. North Carolina
+8. New York
+9. Oklahoma
+10. Oregon
