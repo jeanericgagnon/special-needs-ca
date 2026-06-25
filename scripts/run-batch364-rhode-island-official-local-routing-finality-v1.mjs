@@ -33,7 +33,7 @@ const EDUCATION_FAMILY_STATUS =
 const EDUCATION_NEXT_ACTION =
   'hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing';
 const EDUCATION_REASON =
-  'Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces. The live RIDE Special Education page remains statewide guidance only and links families to the public school directory stack instead of exposing district-owned special-education leaves. The public School Directory page explicitly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, then routes into the public Data Center directory. On the public Data Center host, the Schools Directory explicitly says it provides only LEA, school, location, and contact information, while additional directory information is available only to authenticated users in the RIDE portal. The public table and search lanes expose LEA, school, school type, and school subtype, including special-education categories, but no county field and no public district special-education routing contract. The separate RI School Districts page lists 66 LEAs and district websites, but it also exposes no county column and no special-education contact routing. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.';
+  'Reviewed 2026-06-25 and 2026-06-26 bounded first-party Rhode Island education surfaces. The live RIDE Special Education page remains statewide guidance and strategic-plan content only and links families into statewide navigation instead of exposing district-owned special-education leaves. The public School Directory page explicitly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, then routes into the public Data Center directory. On the public Data Center host, the Schools Directory explicitly says it provides only LEA, school, location, and contact information, while additional directory information is available only to authenticated users in the RIDE portal. The public table and search lanes expose LEA, school, school type, and school subtype, including special-education categories, but no county field, no municipality-to-special-education assignment contract, and no public district special-education routing contract. The separate RI School Districts page lists 66 LEAs, including 32 regular school districts and 4 regional school districts, and routes families to district websites, but it also exposes no county column and no special-education contact routing. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.';
 
 const COUNTY_FAILURE_CODE =
   'public_dhs_office_stack_exposes_office_leaves_but_zero_county_or_service_area_contract';
@@ -42,7 +42,7 @@ const COUNTY_FAMILY_STATUS =
 const COUNTY_NEXT_ACTION =
   'hold_blocked_until_public_dhs_surface_exposes_county_to_office_or_service_area_routing';
 const COUNTY_REASON =
-  'Reviewed 2026-06-25 bounded first-party Rhode Island human-services surfaces. The DHS host now publicly exposes a DHS Offices page, an Office Locator tool entrypoint, a sitemap, and six office leaves for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket. The DHS Offices page describes these as regional offices serving Rhode Islanders throughout the state and lists addresses, directions, drop-box notes, and office hours. The individual location pages preserve titles, street addresses, office hours, and map links. The sitemap confirms the same office leaves on the official host family. But none of the reviewed public DHS surfaces expose county-served labels, county fields, service-area fields, or a county-to-office routing contract. Even the `South County` label is still only an office name on the public leaf, not an explicit county-assignment table. Rhode Island therefore still lacks a truthful public county-to-office or county-to-service-area contract on the official DHS host family.';
+  'Reviewed 2026-06-25 and 2026-06-26 bounded first-party Rhode Island human-services surfaces. The official BHDDH DD Service Provider page says there are many DD service providers adults with I/DD can choose from and that the table lists provider contact information and the services they offer. The linked printable provider lists likewise expose provider names, addresses, and offered services rather than served county, municipality, region, or service-area contract fields. The DHS host publicly exposes a DHS Offices page plus office leaves for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket. The DHS Offices page describes these as regional offices serving Rhode Islanders throughout our State and lists addresses, directions, drop-box notes, and office hours. The individual location pages preserve titles, street addresses, office hours, and map links. But none of the reviewed official BHDDH or DHS surfaces expose county-served labels, county fields, service-area fields, a county-to-office routing contract, or a county-to-provider service contract. Even the `South County` label is still only an office name on the public leaf, not an explicit county-assignment table. Rhode Island therefore still lacks a truthful public county-to-office, county-to-provider, or county-to-service-area contract on the official BHDDH/DHS host families.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -96,7 +96,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '',
     '- Rhode Island remains BLOCKED and not index-safe.',
     '- `district_or_county_education_routing` is now blocked on a narrower first-party truth: public RIDE directory surfaces inventory districts and special-education school types, but the public lanes still expose no county field and no public district special-education routing contract.',
-    '- `county_local_disability_resources` is now blocked on a narrower first-party truth: public DHS office surfaces inventory office leaves and addresses, but the official host family still exposes no county-served or service-area contract.',
+    '- `county_local_disability_resources` is now blocked on a narrower first-party truth: official BHDDH/DHS host families expose provider and office inventories, but the public lanes still expose no county-served or service-area contract.',
     '- Rhode Island therefore still cannot be marked COMPLETE until official public local-routing contracts exist for both education and county-local disability resources.',
   ].join('\n') + '\n';
 }
@@ -107,7 +107,7 @@ function buildBatchReport() {
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: replaced Rhode Island’s generic local-routing blocker with narrower first-party RIDE and DHS host evidence',
+    '- change: replaced Rhode Island’s generic local-routing blocker with narrower first-party RIDE, BHDDH, and DHS evidence',
     '',
     '## Evidence',
     '',
@@ -167,11 +167,19 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
         ...row,
         family_status: EDUCATION_FAMILY_STATUS,
         evidence_strength: 'weak',
-        sample_count: 3,
-        query_basis: 'Reviewed 2026-06-25 first-party Rhode Island RIDE directory and district-list surfaces for public local education routing evidence.',
+        sample_count: 4,
+        query_basis: 'Reviewed 2026-06-25 and 2026-06-26 first-party Rhode Island RIDE special-education, directory, and district-list surfaces for public local education routing evidence.',
         blocker_code: EDUCATION_FAILURE_CODE,
         blocker_evidence: EDUCATION_REASON,
         samples: [
+          {
+            sample_name: 'RIDE Special Education page',
+            source_url: 'https://ride.ri.gov/students-families/special-education',
+            verification_status: 'official_verified',
+            source_type: 'official_program_page',
+            source_table: 'school_districts',
+            evidence_snippet: 'The public page remains statewide special-education guidance and strategic-plan content rather than a district-level local routing directory.',
+          },
           {
             sample_name: 'RI School Directory',
             source_url: 'https://ride.ri.gov/students-families/ri-public-schools/school-directory',
@@ -194,7 +202,7 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
             verification_status: 'official_verified',
             source_type: 'official_district_inventory',
             source_table: 'school_districts',
-            evidence_snippet: 'There are 66 public Local Education Agencies (LEAs) or districts in Rhode Island. These include 32 regular school districts and 4 regional school districts.',
+            evidence_snippet: 'There are 66 public Local Education Agencies (LEAs) or districts in Rhode Island. These include 32 regular school districts and 4 regional school districts, and the page routes families to district websites rather than district special-education contacts.',
           },
         ],
       };
@@ -204,11 +212,19 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
         ...row,
         family_status: COUNTY_FAMILY_STATUS,
         evidence_strength: 'weak',
-        sample_count: 3,
-        query_basis: 'Reviewed 2026-06-25 first-party Rhode Island DHS office inventory and office-leaf surfaces for public county-local routing evidence.',
+        sample_count: 4,
+        query_basis: 'Reviewed 2026-06-25 and 2026-06-26 first-party Rhode Island BHDDH provider and DHS office surfaces for public county-local routing evidence.',
         blocker_code: COUNTY_FAILURE_CODE,
         blocker_evidence: COUNTY_REASON,
         samples: [
+          {
+            sample_name: 'BHDDH DD Service Provider page',
+            source_url: 'https://bhddh.ri.gov/dd-service-provider-list',
+            verification_status: 'official_verified',
+            source_type: 'official_provider_directory',
+            source_table: 'county_offices',
+            evidence_snippet: 'There are many DD service providers adults with I/DD can choose from, and the table lists provider contact information and the services they offer.',
+          },
           {
             sample_name: 'RI DHS Offices',
             source_url: 'https://dhs.ri.gov/about-us/dhs-offices',
@@ -218,12 +234,12 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
             evidence_snippet: 'See below for more information about the DHS Call Center and the DHS regional offices serving Rhode Islanders throughout our State.',
           },
           {
-            sample_name: 'RI DHS Sitemap',
-            source_url: 'https://dhs.ri.gov/sitemap.xml',
+            sample_name: 'BHDDH Licensed Provider Lists page',
+            source_url: 'https://bhddh.ri.gov/developmental-disabilities/services-adults/licensed-provider-lists',
             verification_status: 'official_verified',
-            source_type: 'official_sitemap',
+            source_type: 'official_provider_download_page',
             source_table: 'county_offices',
-            evidence_snippet: 'The public sitemap enumerates office leaves for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket on the official DHS host.',
+            evidence_snippet: 'The printable provider lists expose provider names, addresses, and offered services rather than county-served or service-area fields.',
           },
           {
             sample_name: 'DHS South County Office',
@@ -245,7 +261,7 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
         ...row,
         failure_code: EDUCATION_FAILURE_CODE,
         next_action: EDUCATION_NEXT_ACTION,
-        evidence: 'Public RIDE directory surfaces expose only LEA, school, location, contact, type, and subtype fields, while additional directory detail is authenticated-only and no public county or district special-education routing contract is exposed.',
+        evidence: 'Public RIDE special-education, directory, and district-list surfaces expose only statewide guidance plus LEA, school, location, contact, type, and subtype fields, while additional directory detail is authenticated-only and no public county or district special-education routing contract is exposed.',
       };
     }
     if (row.family === 'county_local_disability_resources') {
@@ -253,7 +269,7 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
         ...row,
         failure_code: COUNTY_FAILURE_CODE,
         next_action: COUNTY_NEXT_ACTION,
-        evidence: 'Public DHS offices and office leaves inventory addresses and hours for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket, but no public county-served or service-area fields are exposed.',
+        evidence: 'Official BHDDH provider and DHS office surfaces inventory provider contacts, services, addresses, and office hours for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket, but no public county-served, municipality-served, or service-area fields are exposed.',
       };
     }
     return row;

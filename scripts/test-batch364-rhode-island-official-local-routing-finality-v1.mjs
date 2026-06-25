@@ -31,20 +31,25 @@ assert.equal(
   education.family_status,
   'blocked_public_ride_directory_without_public_county_or_special_education_routing_contract'
 );
-assert.match(education.samples[0].source_url, /ride\.ri\.gov\/students-families\/ri-public-schools\/school-directory/);
-assert.match(education.samples[1].evidence_snippet, /authenticated users/i);
+assert.equal(education.sample_count, 4);
+assert.match(education.samples[0].source_url, /ride\.ri\.gov\/students-families\/special-education/);
+assert.match(education.samples[2].evidence_snippet, /authenticated users/i);
+assert.match(education.samples[3].evidence_snippet, /66 public Local Education Agencies/i);
 
 const county = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(
   county.family_status,
   'blocked_public_dhs_office_stack_without_county_or_service_area_contract'
 );
-assert.match(county.samples[1].source_url, /dhs\.ri\.gov\/sitemap\.xml/);
-assert.match(county.samples[2].evidence_snippet, /no county-served or service-area field/i);
+assert.equal(county.sample_count, 4);
+assert.match(county.samples[0].source_url, /bhddh\.ri\.gov\/dd-service-provider-list/);
+assert.match(county.samples[0].evidence_snippet, /provider contact information and the services they offer/i);
+assert.match(county.samples[1].evidence_snippet, /regional offices serving Rhode Islanders throughout our State/i);
+assert.match(county.samples[3].evidence_snippet, /no county-served or service-area field/i);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'rhode-island-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /Rhode Island remains BLOCKED and not index-safe\./);
 assert.match(report, /public RIDE directory surfaces inventory districts and special-education school types/i);
-assert.match(report, /public DHS office surfaces inventory office leaves and addresses/i);
+assert.match(report, /official BHDDH\/DHS host families/i);
 
 console.log('Rhode Island official local routing finality test passed.');
