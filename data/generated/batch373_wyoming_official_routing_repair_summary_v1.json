@@ -1,0 +1,12 @@
+{
+  "state": "wyoming",
+  "state_code": "WY",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "repaired_families": [
+    "parent_training_information_center",
+    "legal_aid"
+  ],
+  "remaining_blocker_family": "district_or_county_education_routing",
+  "remaining_blocker_code": "official_wde_hosts_return_cloudflare_403_and_local_district_special_education_leaves_remain_unreviewed"
+}
