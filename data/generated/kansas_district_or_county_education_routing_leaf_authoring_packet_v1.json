@@ -158,7 +158,7 @@
     "woodson-ks",
     "wyandotte-ks"
   ],
-  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned or district-linked education-routing leaf from saved district leads or remains explicitly blocked where no district-owned local contract has been preserved; do not rely on the current live KSDE state export roots until the exact submit lane is reproducible again.",
+  "packet_complete_when": "Every Kansas county row either points at a reviewed district-owned or district-linked education-routing leaf from saved district leads or remains explicitly blocked where exact public district-domain checks already prove a non-match, false-positive app shell, or no local role-bearing leaf; do not rely on the current live KSDE state export roots until the exact submit lane is reproducible again.",
   "reviewed_local_leaf_counties": [
     "anderson-ks",
     "atchison-ks",

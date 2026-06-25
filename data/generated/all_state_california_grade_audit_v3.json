@@ -1140,7 +1140,7 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch345_kansas_franklin_ottawa_student_services_leaf_v1",
+      "packetBatch": "batch347_kansas_reviewed_district_nonmatch_freeze_v1",
       "packetPrimaryGapReason": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_30_counties",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },

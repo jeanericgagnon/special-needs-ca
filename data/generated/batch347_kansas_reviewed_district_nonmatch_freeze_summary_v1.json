@@ -1,0 +1,15 @@
+{
+  "state": "kansas",
+  "batch": "batch347_kansas_reviewed_district_nonmatch_freeze_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "promoted_county_total": 30,
+  "chase_home_status": 200,
+  "chase_sitemap_status": 200,
+  "chase_special_slug_status": 404,
+  "woodson_home_status": 200,
+  "woodson_sitemap_status": 200,
+  "woodson_special_slug_status": 404,
+  "chanute_special_slug_status": 200,
+  "chanute_special_slug_title": "Blue Comets Connect"
+}

@@ -413,3 +413,6 @@
 
 ### A Recovered Official Office Page Still Needs County-Equivalent Assignment
 *   **Lesson:** If an official state office directory becomes browser-readable again but only lists office locations by broad region, do not clear county-local routing until the page or a companion artifact explicitly maps county-equivalent geographies to those offices. Alaska DPA offices recovered on `health.alaska.gov`, but the live page still grouped offices only by region and never assigned boroughs or census areas.
+
+### App Shell 200s And Sitemap-Backed 404s Still Fail Closed
+*   **Lesson:** If a district-owned host returns HTTP 200 for arbitrary role-like slugs but every route resolves to the same generic app shell with no special-education, child-find, 504, parent-rights, or procedural-safeguards text, treat that host as a false-positive app shell instead of a verified local leaf. Kansas Chanute USD 413 returned the same `Blue Comets Connect` shell for `/page/special-education`, `/departments/special-education`, `/special-education`, and `/student-services`, while Chase County USD 284 and Woodson USD 366 each exposed public sitemaps plus exact role-slug 404s with zero role-bearing sitemap URLs, which is enough to freeze those domains without more same-host retries.
