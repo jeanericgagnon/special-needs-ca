@@ -1,0 +1,18 @@
+{
+  "batch": "batch335_idaho_bear_lake_reviewed_district_leaf_v1",
+  "generated_at": "2026-06-24T00:00:00.000Z",
+  "state": "idaho",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "reviewed_exact_leaf_count": 13,
+  "new_reviewed_county": "bear-lake-id",
+  "exhausted_county_bearing_roots": [
+    "camas-id",
+    "clark-id",
+    "fremont-id",
+    "jefferson-id",
+    "oneida-id",
+    "shoshone-id"
+  ],
+  "lesson_added": false
+}

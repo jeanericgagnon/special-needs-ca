@@ -7,12 +7,12 @@
   "current_problem_metrics": {
     "statewideFallbackRows": 42,
     "genericRootRows": 2,
-    "authoredExactLeafCount": 11,
+    "authoredExactLeafCount": 13,
     "officialDistrictLinks": 116,
     "countyBearingDistrictNamesVisible": true,
     "explicitCountyFieldVisible": false,
     "districtSpecialEducationFieldsVisible": false,
-    "reviewedExactLeafCount": 11
+    "reviewedExactLeafCount": 13
   },
   "exact_target_goals": [
     "district special education page",
@@ -83,7 +83,7 @@
     "valley-id",
     "washington-id"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for Cassia, Payette, Bannock, Boundary, Butte, Bonneville, Jerome, Minidoka, Blaine, Teton, and Gooding as seed examples.",
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for thirteen counties, including Emmett and Bear Lake as newly verified additions to the earlier seed set.",
   "reviewed_exact_leaves": [
     {
       "county_id": "cassia-id",
@@ -195,6 +195,28 @@
         "special services"
       ],
       "title": "Special Education — Gooding School District"
+    },
+    {
+      "county_id": "gem-id",
+      "district_name": "Emmett Independent School District",
+      "exact_leaf_url": "https://www.emmettschools.org/departments/special-education",
+      "evidence_terms": [
+        "special education",
+        "procedural safeguards"
+      ],
+      "title": "Special Education - Emmett Independent School District"
+    },
+    {
+      "county_id": "bear-lake-id",
+      "district_name": "Bear Lake School District",
+      "exact_leaf_url": "https://www.blsd.net/en-US/special-education-e92c299d",
+      "evidence_terms": [
+        "special education director",
+        "IDEA",
+        "FAPE",
+        "LRE"
+      ],
+      "title": "Special Education - Bear Lake School District"
     }
   ]
 }

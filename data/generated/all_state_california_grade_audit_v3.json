@@ -850,8 +850,8 @@
         "county_local_disability_resources": "blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_10_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "reviewed_idaho_district_leaves_hold_at_12_counties_and_remaining_county_bearing_district_roots_now_have_public_sitemap_exhaustion_evidence",
+      "packetBatch": "batch335_idaho_bear_lake_reviewed_district_leaf_v1",
+      "packetPrimaryGapReason": "reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_still_lack_role_evidence",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

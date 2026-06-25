@@ -443,3 +443,6 @@
 
 ### Multiple Live Official Selector Lanes Can Still Collapse Into One App-Side 500 Blocker
 *   **Lesson:** If several official search pages are live, test more than one materialization lane before assuming only one form is broken. Maine DOE kept the contact selector, Superintendent-by-SAU selector, Superintendent-by-Town selector, and workbook all public, but live Bangor submits across those first-party lanes still collapsed into the same generic HTTP 500 shell.
+
+### Embedded District Menu Data Can Expose A Safe Exact Leaf
+*   **Lesson:** If a district-owned root exposes a structured menu object for `Special Education`, follow that exact district route even when sitemap review was previously empty. Idaho Bear Lake School District kept its special-education page only in embedded menu data, but the exact route still resolved cleanly to a public district-owned leaf with director contact and IDEA/FAPE/LRE text.
