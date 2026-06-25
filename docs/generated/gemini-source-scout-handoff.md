@@ -28,43 +28,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Maine
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The current official Department of Health DPA host is reviewable again at the exact offices page, but it still only groups offices by broad regions and named office cities. It still does not assign Alaska boroughs or census areas to those offices, so it still does not create a county-equivalent routing contract. The DFCS successor surfaces remain public but still add only statewide phone routing or wrong-role branches, not borough/census-area office assignments.
+`county_local_disability_resources` is the only remaining Maine critical blocker. The current official Maine DHHS district-office page is fully public and proves named office towns, addresses, phones, emails, and program notes, but it still exposes zero county names and zero service-area labels. The bounded same-host follow-up pages and sitemap still expose no county crosswalk, no service-area table, and no alternate county-grade export.
 
 ### Exact Evidence Needed
 
-- Any official Alaska page, export, PDF, spreadsheet, API, or ArcGIS layer that explicitly maps boroughs or census areas to DPA offices.
-- Any official borough/census-area-to-region contract on the Department of Health or DFCS hosts that can be truthfully bridged to the current DPA regional offices page.
-- Any official successor office locator that names boroughs or census areas alongside the office assignment itself.
+- Any official Maine DHHS page, export, PDF, spreadsheet, API, or ArcGIS layer that explicitly maps counties to district offices.
+- Any official county-to-service-area or county-to-office contract on the current Maine DHHS host family.
+- Any official public office locator or service-area table that names Maine counties alongside the assigned DHHS district office.
 
 ### Useful Official URLs Already Tried
 
-- [Department of Health DPA landing page](https://health.alaska.gov/dpa)
-- [Division of Public Assistance (DPA) Offices](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
-- [DPA dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
-- [Medicaid enrollment monthly snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
+- [DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
+- [DHHS Contact root](https://www.maine.gov/dhhs/about/contact/)
+- [DHHS Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
+- [DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)
+- [DHHS Sitemap](https://www.maine.gov/dhhs/about/sitemap)
+- [Maine.gov site search: dhhs county office](https://www.maine.gov/search/?q=dhhs%20county%20office)
+- [Maine.gov site search: aroostook dhhs](https://www.maine.gov/search/?q=aroostook%20dhhs)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Alaska public-assistance office export with borough or census-area assignments.
-- Any official Department of Health or DFCS locality directory that names boroughs/census areas directly.
-- Any official reviewable PDF, spreadsheet, API, or ArcGIS layer that bridges boroughs/census areas to the current DPA office regions without inference.
+- Any official Maine county-to-district-office export or locality table.
+- Any official DHHS public locator that names counties directly rather than only office towns.
+- Any official PDF, spreadsheet, API, or map layer on `maine.gov/dhhs` that preserves county-served fields.
 
-## Next State Order After Alaska
+## Next State Order After Maine
 
-1. Maine
-2. Idaho
-3. Arizona
-4. Massachusetts
-5. New Mexico
-6. South Dakota
-7. Rhode Island
-8. Virginia
-9. West Virginia
-10. North Dakota
+1. Idaho
+2. Arizona
+3. Massachusetts
+4. New Mexico
+5. South Dakota
+6. Rhode Island
+7. Virginia
+8. West Virginia
+9. North Dakota
+10. Wisconsin
