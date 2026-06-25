@@ -11,7 +11,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 ## Current Blocked States
 
 - Alaska: `reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract`
-- Arizona: `azed_host_challenged_and_ahcccs_county_mapping_requires_reviewed_admin_html_leaves_or_explicit_ocr_artifact`
+- Arizona: `ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_still_lack_role_evidence`
 - Maine: `official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
@@ -32,47 +32,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-Idaho still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The live Bear Lake School District root now exposes an embedded district-owned `Special Education` route, and the exact public leaf at `https://www.blsd.net/en-US/special-education-e92c299d` carries district-specific special-education text, director contact, and IDEA/FAPE/LRE language. That raises Idaho to thirteen reviewed county-grade district-owned education leaves. But the remaining county-bearing district roots in Camas, Clark, Fremont, Jefferson, Oneida, and Shoshone still do not expose a reusable exact special-education or special-services leaf in bounded public root or sitemap review. The county-local blocker remains separate: Idaho DHW still exposes exact office leaves for 17 clean county replacements plus one Canyon split, but still no public county-to-office contract for the remaining 27 counties.
+Arizona still has two critical blockers, and the county-local blocker is now the sharper one. The official AHCCCS oversight page `https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html` is public and reviewable, but its county-relevant links only replay the same PDF artifacts already in the blocker lane: `Pima.pdf`, `PimaCountyAdmin.pdf`, and `CountyAdminOffice.pdf`. The current repo/runtime still has no reviewable OCR or PDF text stack for those files. DES remains challenge-blocked on the public office-locator family. Education remains separately blocked, but it is already source-final on the last three public district domains: Coconino, Mohave, and Yavapai still expose no role-bearing local leaves after sitemap, API, and exact-slug replay.
 
 ### Exact Evidence Needed
 
-- Any current official district-owned special-education, special-services, student-services, or procedural-safeguards leaf on the remaining Idaho county-bearing district hosts for Camas, Clark, Fremont, Jefferson, Oneida, or Shoshone.
-- Or, any official county-grade Idaho SDE district/export contract that truthfully maps those counties to district-owned education-routing leaves.
-- Separately, any official Idaho DHW county-to-office or county-served contract for the 27 counties still blocked on legacy county-local routing.
+- A committed OCR artifact or other reviewable text extraction for the official AHCCCS county-admin PDFs that truthfully yields county-to-office assignment evidence.
+- Or, a new official AHCCCS or DES HTML page that directly exposes county-admin or county-to-office assignment fields in public HTML.
+- Separately, any newly published district-owned special-education, special-services, student-services, or 504 leaf on the remaining three Arizona district domains.
 
 ### Useful Official URLs Already Tried
 
-- [Idaho School Districts directory](https://www.sde.idaho.gov/school-districts/)
-- [Bear Lake School District root](https://www.blsd.net/)
-- [Bear Lake Special Education leaf](https://www.blsd.net/en-US/special-education-e92c299d)
-- [Camas County School District root](https://www.camascountyschools.org)
-- [Clark County School District 161 root](http://www.clarkcountyschools161.org/)
-- [Fremont County Joint School District #215 root](http://www.sd215.net/)
-- [Jefferson School District 251 root](https://www.jeffersonsd251.org/)
-- [Oneida School District root](https://oneidaschooldistrict.com/)
-- [Shoshone School District root](https://shoshonesd.org/)
-- [Idaho DHW office root](https://healthandwelfare.idaho.gov/offices)
-- [Idaho DHW sitemap](https://healthandwelfare.idaho.gov/sitemap.xml)
+- [AHCCCS UniversityFamilyCare oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
+- [AHCCCS ALTCS Offices page](https://www.azahcccs.gov/members/ALTCSlocations.html)
+- [AHCCCS Contacts page](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
+- [AHCCCS ALTCS Member Resources page](https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html)
+- [AHCCCS CountyAdminOffice PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
+- [AHCCCS PimaCountyAdmin PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
+- [AHCCCS Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
+- [Coconino County Accommodation School District](https://www.ccasdaz.org/)
+- [Mohave Accelerated Schools](https://www.mohavelearning.org/)
+- [Yavapai County High School](https://www.yavapaicountyhighschool.com/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any exact district-owned local leaf on the remaining uncovered Idaho district hosts that explicitly carries `Special Education`, `Special Services`, `Student Services`, `504`, or procedural-safeguards role text.
-- Any official Idaho SDE or district export that yields county-grade education routing without relying on generic statewide fallback.
-- Any official Idaho DHW county-to-office contract or county-served metadata on the public office stack.
+- Any official AHCCCS or DES HTML page that exposes county-admin, county office, counties served, or county-to-office assignment fields directly in public HTML.
+- Any committed OCR artifact for the existing official AHCCCS county-admin PDFs.
+- Any exact district-owned local leaf on the remaining Coconino, Mohave, or Yavapai district hosts that explicitly carries special-education, special-services, student-services, or 504 role text.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Massachusetts
+2. New Mexico
+3. South Dakota
+4. Rhode Island
+5. Virginia
+6. West Virginia
+7. North Dakota
+8. Wisconsin
+9. Washington
+10. Tennessee

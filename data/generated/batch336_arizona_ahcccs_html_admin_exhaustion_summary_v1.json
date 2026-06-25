@@ -1,0 +1,15 @@
+{
+  "batch": "batch336_arizona_ahcccs_html_admin_exhaustion_v1",
+  "generated_at": "2026-06-24T00:00:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "html_admin_lane_live": true,
+  "html_admin_lane_replays_only_pdf_artifacts": true,
+  "linked_pdf_artifacts": [
+    "https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf",
+    "https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf",
+    "https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf"
+  ],
+  "lesson_added": false
+}

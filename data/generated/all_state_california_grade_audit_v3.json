@@ -217,11 +217,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_admin_mapping_artifact_missing"
+        "county_local_disability_resources": "blocked_ahcccs_html_lane_replays_only_pdf_admin_artifacts_without_county_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "azed_host_challenged_and_ahcccs_county_mapping_requires_reviewed_admin_html_leaves_or_explicit_ocr_artifact",
+      "packetBatch": "batch336_arizona_ahcccs_html_admin_exhaustion_v1",
+      "packetPrimaryGapReason": "ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {

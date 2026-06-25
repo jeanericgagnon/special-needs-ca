@@ -446,3 +446,6 @@
 
 ### Embedded District Menu Data Can Expose A Safe Exact Leaf
 *   **Lesson:** If a district-owned root exposes a structured menu object for `Special Education`, follow that exact district route even when sitemap review was previously empty. Idaho Bear Lake School District kept its special-education page only in embedded menu data, but the exact route still resolved cleanly to a public district-owned leaf with director contact and IDEA/FAPE/LRE text.
+
+### Treat Official HTML Pages That Only Replay PDFs As Exhausted
+*   **Lesson:** If a live official HTML oversight page only points back to the same image-heavy PDF artifacts already in the blocker set, count the HTML lane as exhausted rather than leaving a fake “reviewed HTML leaves” hope open. Arizona AHCCCS kept `UniversityFamilyCare.html` public, but its county-relevant links only replayed `Pima.pdf`, `PimaCountyAdmin.pdf`, and `CountyAdminOffice.pdf`.

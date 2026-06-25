@@ -2,7 +2,7 @@
   "state": "arizona",
   "state_code": "AZ",
   "state_name": "Arizona",
-  "batch": "batch_16_procedure_hardening_states_v1",
+  "batch": "batch336_arizona_ahcccs_html_admin_exhaustion_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "azed_host_challenged_and_ahcccs_county_mapping_requires_reviewed_admin_html_leaves_or_explicit_ocr_artifact",
+  "primary_gap_reason": "ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -47,8 +47,9 @@
     },
     {
       "family": "county_local_disability_resources",
-      "failure_code": "ahcccs_county_mapping_requires_reviewed_admin_html_leaves_or_explicit_ocr_artifact",
-      "evidence": "Reviewed 2026-06-22 bounded official Arizona AHCCCS county-local artifacts plus the current local parser toolchain. The live ALTCS Offices HTML leaf still proves seven named official offices on the accessible AHCCCS host, and the official ALTCS County Map PDF still yields machine-readable county names in the bounded extraction lane. But the remaining CountyAdminOffice.pdf and PimaCountyAdmin.pdf artifacts still do not yield reviewable county/admin office text, and the current repo/runtime has no installed OCR or PDF raster tools for a deterministic low-token rescue lane: tesseract, pdftotext, and pdftoppm are absent on PATH, and pytesseract, pdf2image, and PIL are not importable. DES also remains challenge-blocked at root, robots.txt, sitemap.xml, and office-locator leaves. Arizona county-local routing therefore now narrows to reviewed AHCCCS admin HTML leaves or a separately committed OCR artifact, not to more pypdf retries or generic source discovery."
+      "failure_code": "ahcccs_university_familycare_html_page_replays_only_pdf_admin_artifacts_without_html_county_contract",
+      "evidence": "Reviewed 2026-06-24 bounded official Arizona AHCCCS county-local artifacts plus the live HTML oversight family. The public AHCCCS page https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html returned HTTP 200 and explicitly linked `Pima Community Access Program`, `Pima County Administrator's Office`, and `County Administrator's Office`. But those exact county-relevant links only replay to the same PDF artifacts already in the blocker set: https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf, https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf, and https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf. The current repo/runtime still has no installed OCR or reviewable PDF text stack for those files: tesseract, pdftotext, pdftoppm, pypdf, PyPDF2, pdfplumber, fitz, pdfminer, PIL, and pdf2image are absent or not importable. DES also remains challenge-blocked at root, robots.txt, sitemap.xml, and office-locator leaves. Arizona county-local routing therefore now narrows to a committed OCR artifact or a new official HTML county-admin surface, not to more AHCCCS HTML discovery.",
+      "next_action": "keep_county_local_blocked_until_committed_ocr_artifact_or_new_official_html_county_admin_surface_exists"
     }
   ]
 }
