@@ -20,7 +20,7 @@
 - legal_aid: verified_state_grade (reviewed first-party statewide legal-aid evidence is present at the required authority level)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract (Reviewed 2026-06-23 the live Arizona county-local fallback pages more tightly. The DES root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap lanes are still Cloudflare 403 shells. The accessible AHCCCS fallback lane is public and preserves seven named ALTCS office cards in raw HTML for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma, and the official ALTCS county map PDF is partly parseable for county names, but neither artifact provides a county-to-office table or county assignment contract. Arizona therefore still lacks county-grade official office routing.)
+- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract (Reviewed 2026-06-25 the live Arizona county-local fallback pages more tightly. The DES root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap lanes are still Cloudflare 403 shells. The accessible AHCCCS fallback lane is still public and preserves seven named ALTCS office cards in raw HTML for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma. The exact official county-map artifact at `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` is still live as a PDF and remains partly parseable for county names, but it still does not publish a county-to-office table or county assignment contract. The AHCCCS contacts page remains a statewide contact leaf, while the older `Members/AlreadyCovered/MemberResources/ALTCS.html` path now returns an AHCCCS `Page/Document not found` shell rather than a usable county-local fallback. Arizona therefore still lacks county-grade official office routing.)
 
 ## Failure ledger
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=http://www.disabilityrightsaz.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.azahcccs.gov
-- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract; samples=5; first=https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html
+- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract; samples=5; first=https://www.azahcccs.gov/members/ALTCSlocations.html
 
 ## Next actions
 

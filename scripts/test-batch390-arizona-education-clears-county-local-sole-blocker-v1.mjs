@@ -60,6 +60,14 @@ assert.ok(eduVerified.samples.some((sample) => sample.sample_name === 'Mohave Va
 assert.ok(eduVerified.samples.some((sample) => sample.sample_name === 'Yavapai Prescott Unified detail root with reverse-geocoded county'));
 assert.ok(eduVerified.samples.some((sample) => sample.sample_name === 'Prescott Unified Exceptional Student Services leaf'));
 
+const countyLocalVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
+assert.ok(countyLocalVerified);
+assert.equal(countyLocalVerified.sample_count, 5);
+assert.ok(countyLocalVerified.samples.some((sample) => sample.sample_name === 'AHCCCS ALTCS Offices page'));
+assert.ok(countyLocalVerified.samples.some((sample) => sample.sample_name === 'AHCCCS ALTCS County Map PDF'));
+assert.ok(countyLocalVerified.samples.some((sample) => sample.sample_name === 'Stale ALTCS member-resource path'));
+assert.match(countyLocalVerified.blocker_evidence, /PlansProviders\/Downloads\/ALTCS_CountyMap\.pdf/);
+
 const mohaveInventory = inventoryRows.find((row) => row.county_id === 'mohave-az');
 assert.equal(mohaveInventory.educationOrganizationId, 4379);
 assert.equal(mohaveInventory.geocode_source, 'official_census_reverse_geocoder_coordinates');
@@ -84,6 +92,5 @@ assert.equal(batchSummary.sole_blocker, 'county_local_disability_resources');
 assert.equal(batchSummary.mohave_reverse_geocode_county, 'Mohave County');
 assert.equal(batchSummary.yavapai_reverse_geocode_county, 'Yavapai County');
 
-assert.match(handoff, /## Current Focus State: Arizona/);
-assert.match(handoff, /county_local_disability_resources/);
+assert.match(handoff, /- Arizona: `des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract`/);
 assert.match(lessons, /Reverse-Geocode Official Coordinates When The One-Line Address Lane Fails/);

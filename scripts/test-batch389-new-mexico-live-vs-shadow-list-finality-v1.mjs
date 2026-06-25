@@ -56,6 +56,5 @@ assert.equal(batchSummary.shadow_schema_has_county_name, true);
 assert.equal(batchSummary.shadow_schema_item_count, 0);
 assert.equal(batchSummary.blocker_changed, false);
 
-assert.match(handoff, /## Current Focus State: New Mexico/);
-assert.match(handoff, /2017 NM Schools live-list metadata/);
+assert.match(handoff, /- New Mexico: `official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`/);
 assert.match(lessons, /Shadow SharePoint Schemas Do Not Count If The Live List Rows Still Omit The Field/);
