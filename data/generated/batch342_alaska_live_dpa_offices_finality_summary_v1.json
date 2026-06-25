@@ -1,6 +1,6 @@
 {
   "batch": "batch342_alaska_live_dpa_offices_finality_v1",
-  "generated_at": "2026-06-25T04:33:37.687Z",
+  "generated_at": "2026-06-25T05:18:27.909Z",
   "state": "alaska",
   "classification": "BLOCKED",
   "index_safe": false,
@@ -12,5 +12,7 @@
   "dpa_offices_h1": "Division of Public Assistance (DPA) Offices",
   "dfcs_services_review_status": 200,
   "dfcs_publications_review_status": 200,
-  "dfcs_site_map_review_status": 200
+  "dfcs_site_map_review_status": 200,
+  "dpa_dashboard_review_status": 200,
+  "medicaid_snapshot_review_status": 200
 }

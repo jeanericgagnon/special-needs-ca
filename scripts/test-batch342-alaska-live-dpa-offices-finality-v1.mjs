@@ -52,17 +52,25 @@ assert.ok(failure);
 assert.equal(failure.failure_code, 'reviewed_live_dpa_offices_page_lists_regional_offices_and_locations_but_still_no_borough_or_census_area_assignment_contract');
 assert.match(failure.evidence, /links directly to `https:\/\/health\.alaska\.gov\/en\/resources\/division-of-public-assistance-dpa-offices\/`, which is now publicly reviewable/i);
 assert.match(failure.evidence, /still only groups offices by broad regions/i);
+assert.match(failure.evidence, /dpa-dashboard\.pdf/i);
+assert.match(failure.evidence, /medicaid-enrollment-monthly-snapshot\.pdf/i);
 
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(verified);
 assert.equal(verified.blocker_code, failure.failure_code);
-assert.match(verified.query_basis, /live official Alaska DPA landing page and the now-public DPA offices directory in the browser-readable lane/i);
+assert.match(verified.query_basis, /live official Alaska DPA landing page, the now-public DPA offices directory, and the public DPA dashboard \/ Medicaid snapshot PDFs/i);
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DPA offices directory' && sample.verification_status === 'reviewed'));
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Adult Public Assistance leaf target' && sample.verification_status === 'reviewed'));
+assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DPA Dashboard PDF' && sample.verification_status === 'reviewed'));
+assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska Medicaid enrollment snapshot PDF' && sample.verification_status === 'reviewed'));
 
 const dpaOfficeSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DPA offices directory');
 assert.match(dpaOfficeSample.evidence_snippet, /regional offices, office hours, addresses, fax numbers/i);
 assert.match(dpaOfficeSample.evidence_snippet, /still does not assign boroughs or census areas/i);
+const dpaDashboardSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DPA Dashboard PDF');
+assert.match(dpaDashboardSample.evidence_snippet, /Anchorage\/Mat-Su, Gulf Coast, Interior, Northern, Southeast, and Southwest/i);
+const medicaidSnapshotSample = verified.samples.find((sample) => sample.sample_name === 'Alaska Medicaid enrollment snapshot PDF');
+assert.match(medicaidSnapshotSample.evidence_snippet, /Northern, Southwest, Interior, Mat-Su, Anchorage, Gulf Coast, and Southeast/i);
 
 const next = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(next);
@@ -83,12 +91,16 @@ assert.match(stateReport, /still does not map boroughs or census areas to those 
 assert.match(allStateReport, /Alaska county-local routing is still blocked, but the blocker sharpened/i);
 assert.match(handoff, /## Current Focus State: Alaska/);
 assert.match(handoff, /exact DPA offices page .* publicly reviewable/i);
+assert.match(handoff, /DPA Dashboard PDF/);
+assert.match(handoff, /Medicaid enrollment snapshot PDF/);
 assert.match(handoff, /## Next State Order After Alaska/);
 assert.match(handoff, /1\. Oklahoma/);
 assert.match(lessons, /A Recovered Official Office Page Still Needs County-Equivalent Assignment/);
 
 assert.equal(batchSummary.dpa_landing_review_status, 200);
 assert.equal(batchSummary.dpa_offices_review_status, 200);
+assert.equal(batchSummary.dpa_dashboard_review_status, 200);
+assert.equal(batchSummary.medicaid_snapshot_review_status, 200);
 assert.match(batchSummary.dpa_offices_title, /Division of Public Assistance \(DPA\) Offices/i);
 assert.match(batchSummary.dpa_offices_h1, /Division of Public Assistance \(DPA\) Offices/i);
 assert.ok(batchReport.includes('The exact DPA offices page is now browser-readable'));

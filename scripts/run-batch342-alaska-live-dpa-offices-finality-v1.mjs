@@ -69,6 +69,16 @@ const REVIEWED_PROBE = {
     finalUrl: 'https://dfcs.alaska.gov/Pages/Site-Map.aspx',
     reviewStatus: 200,
   },
+  dpaDashboard: {
+    url: 'https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf',
+    finalUrl: 'https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf',
+    reviewStatus: 200,
+  },
+  medicaidSnapshot: {
+    url: 'https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf',
+    finalUrl: 'https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf',
+    reviewStatus: 200,
+  },
 };
 
 function readJson(filePath) {
@@ -103,11 +113,11 @@ function replaceSample(samples, sampleName, replacement) {
 }
 
 function buildStatusReason(probe) {
-  return `The live Alaska county-local blocker changed after one more bounded official recheck on ${probe.fetchedDate}. In the reviewed browser lane, the current Department of Health DPA landing page at \`https://health.alaska.gov/dpa\` is now publicly reviewable, and the exact DPA offices page at \`https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/\` is also browser-readable. That offices page truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official health host. But it still only groups offices by broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska. It still does not assign boroughs or census areas to those offices, and the reviewed page still exposes no borough, census-area, or county-equivalent contract anywhere on the page. The DFCS successor surfaces remain negative: \`Services.aspx\` still exposes only statewide phone routing, \`Publications.aspx\` still exposes no DPA office material, the Site Map still only adds wrong-role OCS and Pioneer Homes branches, and the public search surface still has no usable results lane. Alaska therefore remains blocked because the official DPA offices page is now reviewable but still lacks borough- or census-area office assignment proof.`;
+  return `The live Alaska county-local blocker changed after one more bounded official recheck on ${probe.fetchedDate}. In the reviewed browser lane, the current Department of Health DPA landing page at \`https://health.alaska.gov/dpa\` is now publicly reviewable, and the exact DPA offices page at \`https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/\` is also browser-readable. That offices page truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official health host. But it still only groups offices by broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska. It still does not assign boroughs or census areas to those offices, and the reviewed page still exposes no borough, census-area, or county-equivalent contract anywhere on the page. The official DPA dashboard PDF and Medicaid snapshot PDF stay region-only too: they publish aggregate regions such as Anchorage/Mat-Su, Gulf Coast, Interior, Northern, Southeast, Southwest, Anchorage, and Mat-Su, but still do not map boroughs or census areas to office assignments. The DFCS successor surfaces remain negative: \`Services.aspx\` still exposes only statewide phone routing, \`Publications.aspx\` still exposes no DPA office material, the Site Map still only adds wrong-role OCS and Pioneer Homes branches, and the public search surface still has no usable results lane. Alaska therefore remains blocked because the official DPA offices page is now reviewable but still lacks borough- or census-area office assignment proof.`;
 }
 
 function buildEvidence(probe) {
-  return `Reviewed ${probe.fetchedDate} official Alaska surfaces across the Department of Health DPA host plus the DFCS successor host. In the reviewed browser lane, \`https://health.alaska.gov/dpa\` now renders a live official DPA landing page and links directly to \`https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/\`, which is now publicly reviewable instead of being only a stale challenge assumption. The exact DPA offices page preserves explicit regional-office groupings, named offices, office hours, full street addresses, fax numbers, a virtual contact center, and secure document upload routing on the official health host. But the page still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The reviewed page still exposes no reviewable borough or census-area assignment contract. The DFCS successor surfaces remain negative at the same time: \`https://dfcs.alaska.gov/Pages/Services.aspx\` still provides only statewide phone routing for Adult Public Assistance and Apply for Medicaid, \`https://dfcs.alaska.gov/Pages/Publications.aspx\` still exposes no DPA office-routing material, \`https://dfcs.alaska.gov/Pages/Site-Map.aspx\` still only surfaces wrong-role OCS offices plus Pioneer Homes payment-assistance branches, and \`https://dfcs.alaska.gov/Search/default.aspx\` still has no usable public results contract. Alaska therefore still lacks any reviewable borough- or census-area-to-office assignment on a public official surface even though the DPA offices page itself is now browser-readable.`;
+  return `Reviewed ${probe.fetchedDate} official Alaska surfaces across the Department of Health DPA host plus the DFCS successor host. In the reviewed browser lane, \`https://health.alaska.gov/dpa\` now renders a live official DPA landing page and links directly to \`https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/\`, which is now publicly reviewable instead of being only a stale challenge assumption. The exact DPA offices page preserves explicit regional-office groupings, named offices, office hours, full street addresses, fax numbers, a virtual contact center, and secure document upload routing on the official health host. But the page still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The reviewed page still exposes no reviewable borough or census-area assignment contract. The same host's public data reports stay region-only: \`https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf\` reports recipients by broad regions such as Anchorage/Mat-Su, Gulf Coast, Interior, Northern, Southeast, and Southwest, while \`https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf\` reports Medicaid enrollees by regions such as Northern, Southwest, Interior, Mat-Su, Anchorage, Gulf Coast, and Southeast. Neither PDF assigns boroughs or census areas to DPA offices. The DFCS successor surfaces remain negative at the same time: \`https://dfcs.alaska.gov/Pages/Services.aspx\` still provides only statewide phone routing for Adult Public Assistance and Apply for Medicaid, \`https://dfcs.alaska.gov/Pages/Publications.aspx\` still exposes no DPA office-routing material, \`https://dfcs.alaska.gov/Pages/Site-Map.aspx\` still only surfaces wrong-role OCS offices plus Pioneer Homes payment-assistance branches, and \`https://dfcs.alaska.gov/Search/default.aspx\` still has no usable public results contract. Alaska therefore still lacks any reviewable borough- or census-area-to-office assignment on a public official surface even though the DPA offices page itself is now browser-readable.`;
 }
 
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
@@ -194,7 +204,7 @@ function buildHandoff(allStateAudit) {
     '',
     '### Blocker Reason',
     '',
-    '`county_local_disability_resources` is the only remaining Alaska critical blocker. The official Department of Health DPA host is no longer only a stale challenge assumption: in the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live DPA landing page, and the exact DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is also publicly reviewable. That page now truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official host. But it still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The DFCS successor surfaces still add no county-equivalent contract: `Services.aspx` remains phone-only, `Publications.aspx` still exposes no office-routing material, the Site Map still only surfaces wrong-role OCS and Pioneer Homes branches, and public DFCS search still materializes no usable results. Alaska remains BLOCKED because the live DPA offices page still lacks borough- or census-area assignment proof.',
+    '`county_local_disability_resources` is the only remaining Alaska critical blocker. The official Department of Health DPA host is no longer only a stale challenge assumption: in the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live DPA landing page, and the exact DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is also publicly reviewable. That page now truthfully proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options on the official host. But it still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The public DPA dashboard and Medicaid snapshot PDFs are also live, but they only publish region aggregates like Anchorage/Mat-Su, Gulf Coast, Interior, Northern, Southeast, Southwest, Anchorage, and Mat-Su rather than office-assignment geography. The DFCS successor surfaces still add no county-equivalent contract: `Services.aspx` remains phone-only, `Publications.aspx` still exposes no office-routing material, the Site Map still only surfaces wrong-role OCS and Pioneer Homes branches, and public DFCS search still materializes no usable results. Alaska remains BLOCKED because the live DPA offices page still lacks borough- or census-area assignment proof.',
     '',
     '### Exact Evidence Needed',
     '',
@@ -206,6 +216,8 @@ function buildHandoff(allStateAudit) {
     '',
     '- [Alaska DPA landing page](https://health.alaska.gov/dpa)',
     '- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)',
+    '- [Alaska DPA Dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)',
+    '- [Alaska Medicaid enrollment snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)',
     '- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)',
     '- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)',
     '- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)',
@@ -310,7 +322,7 @@ export async function generateBatch342AlaskaLiveDpaOfficesFinalityV1() {
   for (const row of verifiedRows) {
     if (row.family !== 'county_local_disability_resources') continue;
     row.family_status = FAMILY_STATUS;
-    row.query_basis = `Reviewed ${REVIEWED_PROBE.fetchedDate} the live official Alaska DPA landing page and the now-public DPA offices directory in the browser-readable lane, then rechecked DFCS Services / Publications / Site Map as negative sibling surfaces.`;
+    row.query_basis = `Reviewed ${REVIEWED_PROBE.fetchedDate} the live official Alaska DPA landing page, the now-public DPA offices directory, and the public DPA dashboard / Medicaid snapshot PDFs in the browser-readable lane, then rechecked DFCS Services / Publications / Site Map as negative sibling surfaces.`;
     row.blocker_code = FAILURE_CODE;
     row.blocker_evidence = evidence;
     row.status_reason = statusReason;
@@ -364,6 +376,26 @@ export async function generateBatch342AlaskaLiveDpaOfficesFinalityV1() {
       fetched_at: REVIEWED_PROBE.generatedAt,
       evidence_snippet: 'The live DFCS Site Map remains reviewable, but it still adds only wrong-role branches like OCS offices and Pioneer Homes payment assistance rather than borough/census-area DPA office routing.',
     });
+    replaceSample(row.samples, 'Alaska DPA Dashboard PDF', {
+      sample_name: 'Alaska DPA Dashboard PDF',
+      source_url: REVIEWED_PROBE.dpaDashboard.url,
+      final_url: REVIEWED_PROBE.dpaDashboard.finalUrl,
+      verification_status: 'reviewed',
+      source_type: 'official_region_only_dashboard_without_county_equivalent_assignments',
+      source_table: BATCH_NAME,
+      fetched_at: REVIEWED_PROBE.generatedAt,
+      evidence_snippet: 'The official DPA dashboard PDF is public, but it reports only broad regions such as Anchorage/Mat-Su, Gulf Coast, Interior, Northern, Southeast, and Southwest rather than borough- or census-area office assignments.',
+    });
+    replaceSample(row.samples, 'Alaska Medicaid enrollment snapshot PDF', {
+      sample_name: 'Alaska Medicaid enrollment snapshot PDF',
+      source_url: REVIEWED_PROBE.medicaidSnapshot.url,
+      final_url: REVIEWED_PROBE.medicaidSnapshot.finalUrl,
+      verification_status: 'reviewed',
+      source_type: 'official_region_only_medicaid_dashboard_without_county_equivalent_assignments',
+      source_table: BATCH_NAME,
+      fetched_at: REVIEWED_PROBE.generatedAt,
+      evidence_snippet: 'The official Medicaid snapshot PDF is public, but it reports regional Medicaid counts like Northern, Southwest, Interior, Mat-Su, Anchorage, Gulf Coast, and Southeast rather than borough- or census-area office assignments.',
+    });
     row.sample_count = row.samples.length;
   }
 
@@ -398,6 +430,8 @@ export async function generateBatch342AlaskaLiveDpaOfficesFinalityV1() {
     dfcs_services_review_status: REVIEWED_PROBE.dfcsServices.reviewStatus,
     dfcs_publications_review_status: REVIEWED_PROBE.dfcsPublications.reviewStatus,
     dfcs_site_map_review_status: REVIEWED_PROBE.dfcsSiteMap.reviewStatus,
+    dpa_dashboard_review_status: REVIEWED_PROBE.dpaDashboard.reviewStatus,
+    medicaid_snapshot_review_status: REVIEWED_PROBE.medicaidSnapshot.reviewStatus,
   };
 
   writeJson(INPUTS.summary, summary);
