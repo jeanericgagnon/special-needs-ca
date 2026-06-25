@@ -49,5 +49,6 @@
 ## Completion decision
 
 - Massachusetts remains BLOCKED and index_safe=false.
-- Education is still blocked because the reviewed DESE postback bridge exposes district result rows but still no county-to-district routing contract.
-- County-local is now more specific: the DDS org page, locations index, and interactive map are live, but the lane still stops at town-or-city routing and office leaves without a county export or machine-readable local contract.
+- Education is no longer a blocker: the official DESE district export plus the official Census TIGERweb county subdivision layer now preserves county-grade district routing across all 14 Massachusetts counties.
+- County-local remains blocked because Suffolk County still lacks a preserved official DDS locality contract even though the reviewed DDS area-office locality capture now clears the other 13 Massachusetts counties.
+- Future Massachusetts work should focus only on the DDS county-local lane unless a new official county-grade education contract supersedes the export-plus-crosswalk method.

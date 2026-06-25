@@ -25,39 +25,37 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: New Hampshire
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`medicaid_state_health_coverage` remains the top New Hampshire blocker, but the packet is really one host-family failure shared across DHHS, education, county-local, and VR. Reviewed 2026-06-25 one more bounded live pass on the exact official roots, direct agency subdomains, and likely `nh.gov` successors. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, `https://www.education.nh.gov/`, `https://education.nh.gov/`, `https://my.doe.nh.gov/ehb/`, `https://www.nhes.nh.gov/`, `https://nhes.nh.gov/`, plus exact `nh.gov` successors like `/dhhs/`, `/dhhs/contact-us/`, `/dhhs/district-offices/`, `/education/`, `/education/doe/`, `/nhes/`, and `/employment/` all still return the same short `Access Denied` shell with HTTP 403. The saved `dhhs.new-hampshire.gov` replacement-host family still fails DNS resolution. New Hampshire therefore stays blocked and not index-safe because no reviewed public official successor host is currently preserved for Medicaid, DD, early intervention, local DHHS routing, education routing, or VR.
+`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is Suffolk County. Bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` still returns the same HTTP 403 `Not allowed` shell in the low-token lane, so no replayable county export has been recovered yet.
 
 ### Exact Evidence Needed
 
-- Any reviewed public official DHHS host or exact successor path that materializes real Medicaid, DD, early-intervention, or district-office content instead of the current access-denied shell.
-- Any reviewed public official New Hampshire education host or district-directory path that materializes local routing content instead of the current access-denied shell.
-- Any reviewed public official NHES or other first-party VR successor path that materializes public VR or Pre-ETS content instead of the current access-denied shell.
+- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.
+- Any current official Mass.gov DDS county field or county-grade export that covers Suffolk directly instead of requiring inference from office names or region labels.
+- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston, Chelsea, Revere, Winthrop, Charlestown, or other Suffolk communities inside a single reviewable office contract.
 
 ### Useful Official URLs Already Tried
 
-- [NH DHHS root](https://www.dhhs.nh.gov/)
-- [NH DHHS district offices](https://www.dhhs.nh.gov/contact-us/district-offices)
-- [Saved replacement DHHS root](https://dhhs.new-hampshire.gov/)
-- [Saved replacement DD path](https://dhhs.new-hampshire.gov/dd)
-- [Saved replacement waivers path](https://dhhs.new-hampshire.gov/dd/waivers)
-- [Saved replacement early-start path](https://dhhs.new-hampshire.gov/earlystart)
-- [NH DOE root](https://www.education.nh.gov/)
-- [Alternate DOE host](https://my.doe.nh.gov/ehb/)
-- [NH.gov education successor guess](https://www.nh.gov/education/)
-- [NHES root](https://www.nhes.nh.gov/)
-- [NH.gov NHES successor guess](https://www.nh.gov/nhes/)
-- [NH.gov employment successor guess](https://www.nh.gov/employment/)
+- [Massachusetts DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
+- [Census TIGERweb county subdivision query](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
+- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [Massachusetts DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current public official New Hampshire successor host that has moved outside the reviewed blocked host family.
-- Any new public district-office or district-directory export released on a reviewable official host.
-- Any new public NHES or VR successor path on a reviewable official host.
+- Any reviewed Mass.gov DDS child page or export that preserves a Suffolk-serving town/community list directly.
+- Any reviewed Mass.gov DDS locality or search surface that names a Suffolk community inside an office-serving contract.
+- Any reviewed official cached/exported DDS locality artifact that can be replayed from disk and tied directly to Suffolk County without inference.
 
-## Next State Order After New Hampshire
+## Next State Order After Massachusetts
 
-- Assigned queue exhausted.
+1. Alaska
+2. Maine
+3. Idaho
+4. New Mexico
+5. Arizona
+6. New Hampshire
