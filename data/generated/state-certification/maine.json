@@ -1,0 +1,239 @@
+{
+  "state": "maine",
+  "candidateBranch": null,
+  "pass": false,
+  "summary": {
+    "state": "maine",
+    "state_code": "ME",
+    "state_name": "Maine",
+    "batch": "batch364_maine_search_finality_v1",
+    "classification": "BLOCKED",
+    "index_safe": false,
+    "incorrectly_index_safe": false,
+    "county_count": 16,
+    "completeness_pct": 91,
+    "strong_critical_families": 11,
+    "weak_critical_families": 1,
+    "missing_critical_families": 0,
+    "total_critical_families": 12,
+    "primary_gap_reason": "official_dhhs_nav_stack_and_official_maine_search_still_expose_office_addresses_and_labels_but_no_county_or_service_area_contract",
+    "recommended_batch": "hold_for_new_official_county_crosswalk_contract",
+    "critical_gap_families": [
+      "county_local_disability_resources"
+    ],
+    "major_gap_families": [],
+    "verified_source_families_with_samples": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "district_or_county_education_routing",
+      "vocational_rehabilitation_pre_ets",
+      "protection_and_advocacy",
+      "parent_training_information_center",
+      "legal_aid",
+      "able_program",
+      "ssi_ssa_federal_reference",
+      "county_local_disability_resources"
+    ],
+    "complete_ready": false,
+    "texas_v10_rule_basis": [
+      "Preserve noindex until all critical families are verified",
+      "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+      "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+    ],
+    "final_blockers": [
+      {
+        "family": "county_local_disability_resources",
+        "severity": "critical",
+        "failure_code": "official_dhhs_nav_stack_and_maine_search_confirm_office_and_admin_surfaces_but_zero_county_assignment_fields",
+        "evidence": "Reviewed 2026-06-25 bounded official Maine DHHS/OFI navigation-stack surfaces on `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/ofi/about-us/contact`, `https://www.maine.gov/dhhs/ofi/programs-services`, `https://www.maine.gov/dhhs/offices-divisions`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/about/sitemap`, two representative `Show Map` shortlinks from the district office table, and official Maine search queries such as `https://www.maine.gov/search/?q=Aroostook%20district%20office%20dhhs` and `https://www.maine.gov/search/?q=county%20district%20office%20ofi`. The live district office page still preserves district office names, office towns and addresses, phones, emails, map shortlinks, and OFI program links, but zero county names, zero county-served labels, and zero service-area fields in public HTML. The OFI contact page still only points back to `District Office locations` and statewide eligibility/help routing. The OFI programs-and-services page stays live but exposes no county or office-assignment metadata. The Offices/Divisions page and Administrative Office Locations page add office and division descriptions plus administrative addresses such as Family Independence in Augusta and Health Insurance Marketplace in Portland, but still no county-served or service-area routing fields. The DHHS sitemap only reconfirms the same office leaves. The representative `Show Map` shortlinks resolved only to Google Maps address geocodes for `35 Anthony Ave, Augusta, ME 04330` and `19 Maine Ave, Bangor, ME 04401`, adding no county names, no district-office identifiers, and no county-to-office routing fields. The official Maine search host returned only the generic portal shell with zero county-routing or district-office assignment results for the sampled county-targeted queries. Maine therefore still has official office addresses and office labels without any public county-assignment contract.",
+        "next_action": "hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing"
+      }
+    ],
+    "familyStatuses": {
+      "district_or_county_education_routing": "verified_current_official_neo_superintendent_selectors",
+      "county_local_disability_resources": "blocked_public_dhhs_nav_stack_and_state_search_without_county_to_office_or_service_area_assignment_contract"
+    }
+  },
+  "gapRows": [
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "medicaid_state_health_coverage",
+      "family_label": "Medicaid / state health coverage",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_label": "Medicaid waiver / HCBS / disability services",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "developmental_disability_idd_authority",
+      "family_label": "Developmental disability / IDD authority",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "early_intervention_part_c",
+      "family_label": "Early intervention / IDEA Part C",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "special_education_idea_part_b",
+      "family_label": "Special education / IDEA Part B",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "district_or_county_education_routing",
+      "family_label": "District or county education routing",
+      "family_status": "verified_current_official_neo_superintendent_selectors",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Maine education now clears from the live official NEO superintendent selectors. On 2026-06-25 the Superintendent by SAU selector and the Superintendent by Town selector both remained publicly reachable on official Maine DOE hosts, both exposed fresh anti-forgery tokens, and bounded Bangor submits on both routes materialized real local superintendent rows with address, phone, fax, and email on the official host. The sibling Primary Contacts By Organization search/export lane still falls into the NEO CustomError shell, but that no longer blocks district-grade routing because the superintendent selectors themselves now provide reusable local routing rows."
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_label": "Vocational rehabilitation / Pre-ETS",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "protection_and_advocacy",
+      "family_label": "Protection and advocacy",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party protection-and-advocacy evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "parent_training_information_center",
+      "family_label": "Parent training and information center",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party PTI designation evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "legal_aid",
+      "family_label": "Legal aid",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed Pine Tree Legal Assistance now provides direct statewide Maine legal-aid evidence."
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "able_program",
+      "family_label": "ABLE program",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "ssi_ssa_federal_reference",
+      "family_label": "SSI / SSA federal references",
+      "family_status": "verified_state_grade",
+      "critical": false,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "maine",
+      "state_code": "ME",
+      "state_name": "Maine",
+      "family": "county_local_disability_resources",
+      "family_label": "County/local disability resources",
+      "family_status": "blocked_public_dhhs_nav_stack_and_state_search_without_county_to_office_or_service_area_assignment_contract",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 one more bounded official Maine county-local pass across the live DHHS navigation stack and the official Maine search host. District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, the DHHS sitemap, sampled `Show Map` shortlinks, and official Maine search query pages still preserve office names, office towns, street addresses, phones, emails, program labels, office/division descriptions, map shortlinks, and a generic search shell, but they still expose zero county-served fields, zero service-area labels, and zero county-to-office assignment metadata. The official search pages add no recoverable county-routing leaf and no county or district-office assignment result. Maine therefore still has official office-grade address proof without any truthful county-to-office or county-to-service-area routing contract on the public host family."
+    }
+  ],
+  "filesChecked": [
+    "data/generated/maine_california_grade_summary_v2.json",
+    "data/generated/maine_gap_matrix_v2.jsonl",
+    "data/generated/maine_failure_ledger_v2.jsonl",
+    "data/generated/maine_verified_sources_v1.jsonl",
+    "data/generated/maine_next_action_queue_v2.jsonl",
+    "docs/generated/maine-california-grade-audit-report-v2.md"
+  ],
+  "failures": [
+    {
+      "code": "not_completion_candidate",
+      "family": null,
+      "filesChecked": [
+        "data/generated/maine_california_grade_summary_v2.json"
+      ],
+      "reason": "Candidate classification is BLOCKED, not COMPLETE.",
+      "suggestedRepairClass": "keep_blocked_or_repair_more"
+    }
+  ],
+  "checkedAt": "2026-06-25T23:01:50.522Z",
+  "liveProbeEnabled": false
+}
