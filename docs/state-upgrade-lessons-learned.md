@@ -536,3 +536,6 @@
 
 ### District-Owned Early Childhood Find Pages Can Clear Local Education Routing When They Preserve Screening Scope And District Contact
 *   **Lesson:** If a district-owned `Early Childhood Find` page preserves pre-eligibility screening scope, age range, developmental-concern intake language, and a direct district contact path, that can be strong enough to clear local education routing even without a `special education` slug. Idaho Shoshone cleared once the district-owned Early Childhood Find page preserved 3-to-5 screening language plus district office phone routing on the official host.
+
+### Official Sitemaps Can Expose Hidden Exact Office Documents Without Clearing Service Areas
+*   **Lesson:** If an official locations lane is readable but still missing one county or service-area contract, scan the official sitemap before guessing slugs or reopening broad search. Massachusetts' public sitemap exposed first-party `greater-boston-area-office` and `charles-river-west-area-office` document downloads that proved the exact DDS office identities, addresses, and phones, but they still did not publish counties served or town/community assignments, so they strengthened the blocker evidence without clearing Suffolk County.

@@ -23,39 +23,37 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Vermont: `official_ahs_district_jurisdiction_codes_are_public_but_no_reviewable_public_ahs_office_crosswalk_or_service_area_contract_exists`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now down to two districts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont still clears from the public official Apptegy events API. Shoshone now also clears from the district-owned `Early Childhood Find` page, which preserves pre-eligibility screening language for resident 3 to 5-year-old children, developmental-concerns intake language, and district office phone routing on the official host. The two remaining district roots still materialize only wrong-role leaves. Camas only exposes a district-owned `Contact Information` leaf with address and phone. Clark exposes exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves, but they only provide generic district office, compliance, or general-education intervention routing. Idaho remains BLOCKED because the remaining district-owned leaves are real but still the wrong role for local special-education routing.
+`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is Suffolk County. Bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` still returns the same HTTP 403 `Not allowed` shell in the low-token lane, so no replayable county export has been recovered yet.
 
 ### Exact Evidence Needed
 
-- Any official district-owned special-education, special-services, student-services, 504, procedural-safeguards, or Child Find leaf on Camas or Clark.
-- Any district-owned PDF, handbook, or notice on those two hosts that explicitly preserves special-education routing plus named contact information.
-- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.
+- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.
+- Any current official Mass.gov DDS county field or county-grade export that covers Suffolk directly instead of requiring inference from office names or region labels.
+- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston, Chelsea, Revere, Winthrop, Charlestown, or other Suffolk communities inside a single reviewable office contract.
 
 ### Useful Official URLs Already Tried
 
-- [Camas root](https://www.camascountyschools.org/)
-- [Camas Contact Information](https://www.camascountyschools.org/contact-information)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Clark Parent Notification of General Education Instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)
-- [Shoshone root](https://shoshonesd.org/)
-- [Shoshone Early Childhood Find](https://shoshonesd.org/early-childhood-find/)
-- [Oneida Child Find PDF](https://5il.co/26a73)
-- [Fremont district events API](https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events)
+- [Massachusetts DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
+- [Census TIGERweb county subdivision query](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
+- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [Massachusetts DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current district-owned special-education, student-services, 504, or procedural-safeguards leaf for Camas or Clark.
-- Any district-owned Child Find PDF or special-ed handbook already linked from those two hosts but not yet surfaced on the homepage HTML.
-- Any public Idaho DHW county-to-office contract that can reduce the separate county-local blocker.
+- Any reviewed Mass.gov DDS child page or export that preserves a Suffolk-serving town/community list directly.
+- Any reviewed Mass.gov DDS locality or search surface that names a Suffolk community inside an office-serving contract.
+- Any reviewed official cached/exported DDS locality artifact that can be replayed from disk and tied directly to Suffolk County without inference.
 
-## Next State Order After Idaho
+## Next State Order After Massachusetts
 
-1. New Mexico
-2. Arizona
-3. New Hampshire
+1. Alaska
+2. Maine
+3. Idaho
+4. New Mexico
+5. Arizona
+6. New Hampshire

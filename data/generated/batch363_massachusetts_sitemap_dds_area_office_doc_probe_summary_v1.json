@@ -1,0 +1,23 @@
+{
+  "batch": "batch363_massachusetts_sitemap_dds_area_office_doc_probe_v1",
+  "generated_at": "2026-06-25T00:00:00.000Z",
+  "state": "massachusetts",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "sitemap_hits_reviewed": 3,
+  "usable_first_party_docs": 2,
+  "reviewed_documents": [
+    {
+      "url": "https://www.mass.gov/doc/greater-boston-area-office-0/download",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "evidence": "Metro Boston 65 Sprague Street, Rear West Hyde Park, MA 02136 (617) 363-2900"
+    },
+    {
+      "url": "https://www.mass.gov/doc/charles-river-west-area-office/download",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "evidence": "Charles River West Area Office 255 Elm Street - Ste. 205 Somerville, MA 02144 (617) 623-5950"
+    }
+  ],
+  "result": "official_sitemap_exposes_exact_first_party_area_office_documents_but_the_docs_only_confirm_office_identity_address_and_phone_not_counties_or_towns_served_so_suffolk_remains_blocked"
+}

@@ -90,11 +90,12 @@ assert.equal(allStateMass.completenessPct, 92);
 assert.equal(allStateMass.familyStatuses.district_or_county_education_routing, 'verified_county_grade');
 
 assert.match(stateReport, /Education is no longer a blocker/i);
-assert.match(allStateReport, /- BLOCKED: 14/i);
+assert.match(allStateReport, /- BLOCKED: 12/i);
 assert.match(allStateReport, /blocked states: .*Massachusetts/i);
 assert.match(handoff, /## Current Focus State: Massachusetts/);
 assert.match(handoff, /county_local_disability_resources` is the only Massachusetts blocker left/i);
 assert.match(handoff, /13 of 14 counties/i);
 assert.match(lessons, /### Official Exports Plus Official Geography Crosswalks Can Clear County Routing/);
+assert.match(lessons, /### Official Sitemaps Can Expose Hidden Exact Office Documents Without Clearing Service Areas/);
 
 console.log('test-batch352-massachusetts-dese-export-county-capture-v1: ok');
