@@ -511,3 +511,6 @@
 
 ### District-Owned Child Find PDFs Can Clear Local Education Routing When They Carry Real Contacts
 *   **Lesson:** If a district-owned Child Find PDF is already linked from the official host, run the bundled PDF extractor before treating it as a weak document-only lead. Oneida School District’s Child Find PDF carried the Special Education Director name, district address, phone, email, and explicit 3–21 Child Find scope, which was strong enough to recover county-grade education routing without any extra crawl.
+
+### Local Health District Finders Can Clear County-Grade Disability Routing When The Child-Service Leaves Stay On The Same Official Host
+*   **Lesson:** If a state's benefits or human-services office directory is blocked, do not stop before checking accessible sibling official public-health office networks. Vermont's AHS and DCF office lanes still returned 403, but the official Health Department host published a town-complete local-office finder, county-served language on local office pages, and same-host Family and Child Health leaves that explicitly linked Children with Special Health Needs, Help Me Grow, and Children's Integrated Services. That combined same-host chain was strong enough to clear county-grade local disability routing.

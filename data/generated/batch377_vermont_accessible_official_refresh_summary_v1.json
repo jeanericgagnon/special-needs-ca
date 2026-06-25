@@ -1,0 +1,15 @@
+{
+  "state": "Vermont",
+  "state_code": "VT",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "repaired_families": [
+    "medicaid_state_health_coverage",
+    "county_local_disability_resources"
+  ],
+  "sharpened_families": [
+    "vocational_rehabilitation_pre_ets"
+  ],
+  "remaining_blocker_family": "vocational_rehabilitation_pre_ets",
+  "remaining_blocker_code": "official_vr_and_pre_ets_hosts_return_403_without_reviewed_public_alternate"
+}
