@@ -1,0 +1,25 @@
+{
+  "batch": "batch361_arizona_zero_role_term_recheck_v1",
+  "generated_at": "2026-06-25T17:40:00.000Z",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "district_or_county_education_routing",
+  "hosts_checked": [
+    "https://www.ccasdaz.org/",
+    "https://www.mohavelearning.org/",
+    "https://www.yavapaicountyhighschool.com/"
+  ],
+  "surfaces_checked": [
+    "root",
+    "robots.txt",
+    "sitemap.xml",
+    "page-sitemap.xml",
+    "post-sitemap.xml",
+    "documents/",
+    "search-results/"
+  ],
+  "new_role_bearing_leaf_found": false,
+  "zero_role_term_hosts": 3,
+  "result": "remaining_arizona_district_domains_stay_public_but_source_final_for_bounded_live_role_leaf_review"
+}

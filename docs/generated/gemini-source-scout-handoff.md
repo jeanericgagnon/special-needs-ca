@@ -28,42 +28,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Idaho blocker. The current packet is already narrowed to four live district hosts: Camas, Clark, Fremont, and Shoshone. Each host still stays publicly reachable, but one more bounded root plus robots/sitemap pass confirmed they still do not materialize any same-host special-education, student-services, 504, Child Find, or procedural-safeguards leaf that can be safely promoted. The only residual root-level `504` hits on Camas and Shoshone were false positives: Camas exposed numeric `504` text noise in raw root content, and Shoshone exposed `504` only inside SVG/path numeric markup. Clark and Fremont also stayed live with no role-bearing education URLs on the public root/sitemap surfaces. Idaho remains BLOCKED because the remaining district-owned hosts are real but still do not publish role-bearing local special-education routing.
+`district_or_county_education_routing` remains the highest-priority Arizona blocker. The final three unresolved district-owned public domains are still `https://www.ccasdaz.org/`, `https://www.mohavelearning.org/`, and `https://www.yavapaicountyhighschool.com/`. One more bounded live pass confirmed all three hosts are still publicly reachable, but their public discovery surfaces still fail closed for role-bearing education routing. CCASDAZ stayed live and its `sitemap.xml`, `page-sitemap.xml`, and `post-sitemap.xml` also stayed live, but all exposed zero same-host special-education, student-services, 504, Child Find, or procedural-safeguards URLs. Mohave Learning stayed live, but its sitemap-like paths still 404 and its public `search-results/` surface still materialized zero role-bearing term hits. Yavapai County High School stayed live, and its `sitemap.xml` plus `documents/` surface also stayed live, but they still exposed zero role-bearing education URLs. Arizona remains BLOCKED because the last three district-owned public domains are real but still do not publish local special-education routing.
 
 ### Exact Evidence Needed
 
-- Any official district-owned special-education, student-services, special-services, 504, Child Find, or procedural-safeguards leaf on Camas, Clark, Fremont, or Shoshone.
-- Any district-owned PDF or document already linked from those hosts that explicitly preserves special-education routing plus named local contact information.
-- Any official Idaho DHW county-to-office crosswalk, service-area table, PDF, ArcGIS layer, or API that can separately reduce the county-local blocker.
+- Any district-owned special-education, student-services, special-services, 504, Child Find, or procedural-safeguards leaf on CCASDAZ, Mohave Learning, or Yavapai County High School.
+- Any district-owned PDF or document already linked from those hosts that explicitly preserves local special-education routing plus named contact information.
+- Any official Arizona county-to-district routing artifact that is more local than the current statewide inventory and can be repo-side verified directly.
 
 ### Useful Official URLs Already Tried
 
-- [Camas root](https://www.camascountyschools.org/)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Fremont root](https://www.sd215.net/)
-- [Shoshone root](https://shoshonesd.org/)
-- [Oneida Child Find PDF](https://5il.co/26a73)
-- [Jefferson special education leaf](https://www.jeffersonsd251.org/o/jsd251/page/special-education)
+- [CCASDAZ root](https://www.ccasdaz.org/)
+- [CCASDAZ page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [CCASDAZ post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
+- [Mohave Learning root](https://www.mohavelearning.org/)
+- [Mohave Learning search results](https://www.mohavelearning.org/search-results/)
+- [Yavapai County High School root](https://www.yavapaicountyhighschool.com/)
+- [Yavapai County High School sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
+- [Yavapai County High School documents](https://www.yavapaicountyhighschool.com/documents/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current district-owned role-bearing leaf or document on Camas, Clark, Fremont, or Shoshone that was not visible on the public root/sitemap lane.
-- Any current public Idaho DHW county-to-office contract that can reduce the separate county-local family without reopening generic root work.
-- Any current district-owned document repository or hidden file index that still sits on the official host and exposes local special-education routing.
+- Any current district-owned role-bearing leaf or document on CCASDAZ, Mohave Learning, or Yavapai County High School that is not visible on the current public root/sitemap/documents/search lane.
+- Any current official Arizona county-to-office or county-to-district artifact that can reduce the separate county-local or education blocker without inventing mappings.
+- Any current official AHCCCS county-local artifact that is stronger than the current support-letter PDF bundle.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Massachusetts
+2. New Mexico
+3. South Dakota
+4. Rhode Island
+5. Virginia
+6. West Virginia
+7. North Dakota
+8. Wisconsin
+9. Washington
+10. Tennessee
