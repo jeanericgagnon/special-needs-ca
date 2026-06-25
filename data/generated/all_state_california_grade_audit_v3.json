@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T12:16:16.741Z",
+  "generatedAt": "2026-06-25T12:20:55.196Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 33,
@@ -840,7 +840,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_remaining_live_district_roots_without_role_bearing_leaves_after_jefferson_and_oneida_recovery",
+        "district_or_county_education_routing": "blocked_remaining_live_district_roots_only_materialize_wrong_role_contact_or_title_ix_leaves_after_jefferson_and_oneida_recovery",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -850,8 +850,8 @@
         "county_local_disability_resources": "blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch354_idaho_oneida_child_find_recovery_v1",
-      "packetPrimaryGapReason": "remaining_idaho_district_roots_now_reduce_to_live_homepage_and_sitemap_surfaces_without_role_bearing_leaves_after_jefferson_and_oneida_recovery",
+      "packetBatch": "batch357_idaho_residual_district_wrong_role_finality_v1",
+      "packetPrimaryGapReason": "remaining_idaho_district_roots_now_reduce_to_wrong_role_contact_or_title_ix_leaves_without_special_education_or_student_services_routing",
       "packetRecommendedBatch": "hold_for_new_role_bearing_district_leaf_or_county_contract"
     },
     {

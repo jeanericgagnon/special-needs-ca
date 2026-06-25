@@ -2,7 +2,7 @@
   "state": "idaho",
   "state_code": "ID",
   "state_name": "Idaho",
-  "batch": "batch354_idaho_oneida_child_find_recovery_v1",
+  "batch": "batch357_idaho_residual_district_wrong_role_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "remaining_idaho_district_roots_now_reduce_to_live_homepage_and_sitemap_surfaces_without_role_bearing_leaves_after_jefferson_and_oneida_recovery",
+  "primary_gap_reason": "remaining_idaho_district_roots_now_reduce_to_wrong_role_contact_or_title_ix_leaves_without_special_education_or_student_services_routing",
   "recommended_batch": "hold_for_new_role_bearing_district_leaf_or_county_contract",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -44,9 +44,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "remaining_live_idaho_district_roots_expose_zero_role_bearing_special_education_or_student_services_links_after_jefferson_and_oneida_recovery",
-      "evidence": "Reviewed 2026-06-25 bounded official Idaho district-root checks on https://www.camascountyschools.org/, https://www.clarkcountyschools161.org/, https://www.sd215.net/, https://www.sd215.net/sitemap.xml, https://www.oneidaschooldistrict.org/, https://www.oneidaschooldistrict.org/sitemap.xml, https://shoshonesd.org/, https://shoshonesd.org/sitemap.xml, https://shoshonesd.org/wp-sitemap.xml, https://www.jeffersonsd251.org/wp-sitemap.xml, and the known Oneida Child Find PDF lead at https://5il.co/26a73. Jefferson remains positively recovered: the public sitemap exposes district-owned `special-services`, `section-504`, `special-education`, and `student-services` leaves, and the live `special-education` page explicitly says Jefferson Joint School District 251 provides special education services for students with disabilities ages 3-21, links Child Find flyers, and offers a district Special Education Department contact form plus district office contact information. Oneida is now also positively recovered: the district-owned Child Find PDF extracted cleanly with the bundled PDF stack and preserved `Jill Daniels - Special Education Director`, `195 S 300 E, Malad, ID 83252`, `208-534-6080`, `jill.daniels@malad.us`, explicit Child Find scope for children ages 3 through 21, and district office contact routing on the official district-owned asset. Camas and Clark both stayed live at their district roots but exposed no role-bearing special-education, special-services, student-services, 504, or procedural-safeguards links in one-hop public HTML. Fremont preserved a live homepage and live sitemap.xml file, yet the bounded same-host review still did not materialize a reusable district-owned special-education or student-services leaf. Shoshone preserved live homepage plus both sitemap surfaces, but the only public `special` hit was a `Special-Ed-Records-Distruction-1.pdf` file, not a routing, department, or contact leaf. Idaho therefore remains blocked on the smaller live district-host remainder after Jefferson and Oneida recovery.",
-      "next_action": "continue_exact_district_leaf_expansion_only_when_camas_clark_fremont_or_shoshone_publish_role_bearing_special_education_or_special_services_links"
+      "failure_code": "remaining_live_idaho_district_roots_materialize_contact_or_title_ix_leaves_but_zero_role_bearing_special_education_or_student_services_routing",
+      "evidence": "Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.sd215.net/`, `https://www.sd215.net/page/contact-us`, `https://www.sd215.net/o/sd215/page/title-ix`, `https://shoshonesd.org/`, and the previously reviewed Jefferson and Oneida recovery sources. Jefferson remains positively recovered from district-owned `special-education`, `special-services`, `section-504`, and `student-services` leaves. Oneida remains positively recovered from the district-owned Child Find PDF. But the residual four districts now finalize as wrong-role survivors rather than unknown roots: Camas only exposes a district-owned `Contact Information` leaf with address and phone; Clark exposes exact district-owned `Contact Us` and `Title IX` leaves, but no special-education or student-services routing; Fremont exposes exact district-owned `Contact Us` and `Title IX-Sexual Harassment` leaves, but no special-education or student-services routing; and Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, but no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho therefore remains blocked because the remaining district-owned leaves are still the wrong role for local special-education routing.",
+      "next_action": "continue_exact_district_leaf_expansion_only_when_camas_clark_fremont_or_shoshone_publish_role_bearing_special_education_special_services_student_services_504_or_procedural_safeguards_leaves"
     },
     {
       "family": "county_local_disability_resources",
@@ -57,6 +57,6 @@
     }
   ],
   "familyStatuses": {
-    "district_or_county_education_routing": "blocked_remaining_live_district_roots_without_role_bearing_leaves_after_jefferson_and_oneida_recovery"
+    "district_or_county_education_routing": "blocked_remaining_live_district_roots_only_materialize_wrong_role_contact_or_title_ix_leaves_after_jefferson_and_oneida_recovery"
   }
 }
