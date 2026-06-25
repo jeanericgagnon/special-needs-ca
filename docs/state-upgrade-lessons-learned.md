@@ -211,6 +211,9 @@
 ### If Both The State Root And Bureau Leaf Timeout, Freeze Root Retries And Author Local Leaves
 *   **Lesson:** When both the exact state root and its best statewide bureau leaf timeout under the same bounded live probe, stop rerunning state-root fetches and move straight to district or regional leaf authoring. New Mexico PED timed out on both `webnew.ped.state.nm.us/` and `/bureaus/special-education/`, so more PED-root retries would only burn tokens without producing local routing proof.
 
+### County Routing Should Take The Best Reviewed Official Root Already On Disk
+*   **Lesson:** If a county's saved district-owned source URL is dead or generic, re-check the county's reviewed regional-education-agency roots already in the database before declaring the county unresolved. Ohio recovered counties like Hancock, Logan, Miami, Pickaway, Pike, and Shelby once the bounded probe let counties inherit stronger ESC roots and sitemap-discovered exact leaves that were already on disk.
+
 ### Treat Apex And WWW Connection Resets As A Failed Official Replacement-Host Family
 *   **Lesson:** If both the apex and `www` variants of a likely official replacement host reset the connection on the same bounded lane, preserve that as a host-family blocker instead of retrying deeper paths. New York OTDA reset on both `otda.ny.gov` and `www.otda.ny.gov`, which was enough to stop speculative county-locator guessing there.
 

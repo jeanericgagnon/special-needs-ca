@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:59:49.712Z",
+  "generatedAt": "2026-06-25T05:43:26.551Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 29,
@@ -2515,7 +2515,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch332_ohio_education_live_leaf_probe_v1",
-      "packetPrimaryGapReason": "bounded_live_ohio_education_leaf_probe_recovers_45_strong_and_23_partial_counties_but_20_counties_still_unresolved",
+      "packetPrimaryGapReason": "bounded_live_ohio_education_leaf_probe_recovers_51_strong_and_24_partial_counties_but_13_counties_still_unresolved",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

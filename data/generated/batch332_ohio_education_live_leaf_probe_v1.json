@@ -1,65 +1,10 @@
 [
   {
-    "root": "https://www.ecoesc.org",
-    "countyRows": 7,
-    "countyIds": [
-      "belmont-oh",
-      "carroll-oh",
-      "guernsey-oh",
-      "harrison-oh",
-      "holmes-oh",
-      "noble-oh",
-      "tuscarawas-oh"
-    ],
-    "sampleNames": [
-      "East Central Ohio ESC (Belmont County County fallback)",
-      "East Central Ohio ESC (Carroll County County fallback)",
-      "East Central Ohio ESC (Guernsey County County fallback)"
-    ],
-    "finalUrl": "https://www.ecoesc.org/",
-    "title": "East Central Ohio ESC – Helping Schools Help Students",
-    "matches": [
-      {
-        "label": "Special Education",
-        "url": "https://www.ecoesc.org/specialeducation/"
-      },
-      {
-        "label": "Districts Served",
-        "url": "https://www.ecoesc.org/districts/"
-      },
-      {
-        "label": "Our Districts",
-        "url": "https://www.ecoesc.org/districts"
-      }
-    ],
-    "attempts": [
-      {
-        "candidate": "https://ecoesc.org/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.ecoesc.org/",
-        "matchCount": 3
-      }
-    ],
-    "sitemapAttempts": [
-      {
-        "url": "https://www.ecoesc.org/robots.txt",
-        "hit_count": 0
-      },
-      {
-        "url": "https://www.ecoesc.org/sitemap.xml",
-        "hit_count": 0
-      }
-    ],
-    "hasDistrictLeaf": true,
-    "hasServiceLeaf": true,
-    "countyStatus": "strong"
-  },
-  {
     "root": "https://www.escco.org",
-    "countyRows": 7,
+    "countyRows": 8,
     "countyIds": [
       "delaware-oh",
+      "franklin-oh",
       "licking-oh",
       "madison-oh",
       "marion-oh",
@@ -132,6 +77,333 @@
     "countyStatus": "strong"
   },
   {
+    "root": "https://www.ovesc.org",
+    "countyRows": 8,
+    "countyIds": [
+      "athens-oh",
+      "belmont-oh",
+      "guernsey-oh",
+      "monroe-oh",
+      "morgan-oh",
+      "noble-oh",
+      "perry-oh",
+      "washington-oh"
+    ],
+    "sampleNames": [
+      "Ohio Valley Educational Service Center (Monroe County County fallback)",
+      "Ohio Valley Educational Service Center (Morgan County County fallback)",
+      "Ohio Valley Educational Service Center (Washington County County fallback)"
+    ],
+    "finalUrl": "https://www.ovesc.org/",
+    "title": "Homepage - Ohio Valley Educational Service Center",
+    "matches": [
+      {
+        "label": "Special Education",
+        "url": "https://www.ovesc.org/programs-and-services/special-education/"
+      },
+      {
+        "label": "Districts",
+        "url": "https://www.ovesc.org/about/districts/"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://ovesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.ovesc.org/",
+        "matchCount": 2
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.ovesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.ovesc.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
+  },
+  {
+    "root": "https://www.ecoesc.org",
+    "countyRows": 7,
+    "countyIds": [
+      "belmont-oh",
+      "carroll-oh",
+      "guernsey-oh",
+      "harrison-oh",
+      "holmes-oh",
+      "noble-oh",
+      "tuscarawas-oh"
+    ],
+    "sampleNames": [
+      "East Central Ohio ESC (Belmont County County fallback)",
+      "East Central Ohio ESC (Carroll County County fallback)",
+      "East Central Ohio ESC (Guernsey County County fallback)"
+    ],
+    "finalUrl": "https://www.ecoesc.org/",
+    "title": "East Central Ohio ESC – Helping Schools Help Students",
+    "matches": [
+      {
+        "label": "Special Education",
+        "url": "https://www.ecoesc.org/specialeducation/"
+      },
+      {
+        "label": "Districts Served",
+        "url": "https://www.ecoesc.org/districts/"
+      },
+      {
+        "label": "Our Districts",
+        "url": "https://www.ecoesc.org/districts"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://ecoesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.ecoesc.org/",
+        "matchCount": 3
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.ecoesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.ecoesc.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
+  },
+  {
+    "root": "https://www.ncoesc.org",
+    "countyRows": 7,
+    "countyIds": [
+      "crawford-oh",
+      "marion-oh",
+      "richland-oh",
+      "sandusky-oh",
+      "seneca-oh",
+      "union-oh",
+      "wyandot-oh"
+    ],
+    "sampleNames": [
+      "North Central Ohio ESC (Sandusky County County fallback)",
+      "North Central Ohio ESC (Seneca County County fallback)",
+      "North Central Ohio ESC (Wyandot County County fallback)"
+    ],
+    "finalUrl": "https://www.ncoesc.org/",
+    "title": "Home",
+    "matches": [
+      {
+        "label": "Member School Districts",
+        "url": "https://www.ncoesc.org/memberschooldistricts"
+      },
+      {
+        "label": "Student Services",
+        "url": "https://www.ncoesc.org/studentservices"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://ncoesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.ncoesc.org/",
+        "matchCount": 2
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.ncoesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.ncoesc.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
+  },
+  {
+    "root": "https://www.escneo.org",
+    "countyRows": 5,
+    "countyIds": [
+      "cuyahoga-oh",
+      "geauga-oh",
+      "lake-oh",
+      "portage-oh",
+      "summit-oh"
+    ],
+    "sampleNames": [
+      "ESC of Northeast Ohio (Geauga County County fallback)",
+      "ESC of Northeast Ohio (Lake County County fallback)",
+      "ESC of Northeast Ohio (Portage County County fallback)"
+    ],
+    "finalUrl": "https://escneo.org/",
+    "title": "ESC of Northeast Ohio",
+    "matches": [
+      {
+        "label": "Our Districts",
+        "url": "https://escneo.org/OurDistricts.aspx"
+      },
+      {
+        "label": "Ohio Substitute Teacher Services Provides School Districts in Ohio with Quality Substitute Teachers",
+        "url": "https://escneo.org/ohiosubstituteteacherservices_home.aspx"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://escneo.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://escneo.org/",
+        "matchCount": 2
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://escneo.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://escneo.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": false,
+    "countyStatus": "partial"
+  },
+  {
+    "root": "https://www.mresc.org",
+    "countyRows": 4,
+    "countyIds": [
+      "hardin-oh",
+      "logan-oh",
+      "miami-oh",
+      "shelby-oh"
+    ],
+    "sampleNames": [
+      "Midwest Regional ESC"
+    ],
+    "finalUrl": "https://www.mresc.org/",
+    "title": "Educational Service Center - Midwest Regional ESC",
+    "matches": [
+      {
+        "label": "Special Education Services",
+        "url": "https://www.mresc.org/special-education-services/"
+      },
+      {
+        "label": "Districts We Serve",
+        "url": "https://www.mresc.org/districts-we-serve/"
+      },
+      {
+        "label": "Special Education",
+        "url": "https://www.mresc.org/#"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://mresc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.mresc.org/",
+        "matchCount": 3
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.mresc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.mresc.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
+  },
+  {
+    "root": "https://www.mresc.org/districts-we-serve",
+    "countyRows": 4,
+    "countyIds": [
+      "hardin-oh",
+      "logan-oh",
+      "miami-oh",
+      "shelby-oh"
+    ],
+    "sampleNames": [
+      "Midwest Regional ESC (Hardin County County fallback)",
+      "Midwest Regional ESC"
+    ],
+    "finalUrl": "https://www.mresc.org/districts-we-serve/",
+    "title": "Districts We Serve - Midwest Regional ESC",
+    "matches": [
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.mresc.org/special-education-services/"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://mresc.org/districts-we-serve/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.mresc.org/districts-we-serve/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://mresc.org/districts-we-serve/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://mresc.org/districts-we-serve/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.mresc.org/districts-we-serve/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.mresc.org/districts-we-serve/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.mresc.org/districts-we-serve/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://www.mresc.org/districts-we-serve/",
+        "matchCount": 0
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.mresc.org/districts-we-serve/robots.txt",
+        "hit_count": 1
+      },
+      {
+        "url": "https://www.mresc.org/districts-we-serve/sitemap.xml",
+        "hit_count": 1
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
+  },
+  {
     "root": "https://www.mvesc.org",
     "countyRows": 4,
     "countyIds": [
@@ -175,6 +447,116 @@
     "hasDistrictLeaf": false,
     "hasServiceLeaf": true,
     "countyStatus": "partial"
+  },
+  {
+    "root": "https://www.npesc.org",
+    "countyRows": 4,
+    "countyIds": [
+      "erie-oh",
+      "huron-oh",
+      "ottawa-oh",
+      "sandusky-oh"
+    ],
+    "sampleNames": [
+      "North Point Educational Service Center"
+    ],
+    "finalUrl": "https://www.npesc.org/",
+    "title": "North Point Educational Service Center",
+    "matches": [
+      {
+        "label": "Member & Partner School Districts",
+        "url": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://npesc.org/",
+        "method": "fetch",
+        "error": "fetch failed"
+      },
+      {
+        "candidate": "https://npesc.org/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://npesc.org/\ncurl: (6) Could not resolve host: npesc.org\n"
+      },
+      {
+        "candidate": "https://www.npesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.npesc.org/",
+        "matchCount": 1
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.npesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.npesc.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": false,
+    "countyStatus": "partial"
+  },
+  {
+    "root": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts",
+    "countyRows": 4,
+    "countyIds": [
+      "erie-oh",
+      "huron-oh",
+      "ottawa-oh",
+      "sandusky-oh"
+    ],
+    "sampleNames": [
+      "North Point Educational Service Center (Erie County County fallback)",
+      "North Point Educational Service Center (Huron County County fallback)",
+      "North Point Educational Service Center (Ottawa County County fallback)"
+    ],
+    "finalUrl": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
+    "title": "North Point Educational Service Center - 404 Page not found",
+    "matches": [],
+    "attempts": [
+      {
+        "candidate": "https://npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
+        "method": "fetch",
+        "error": "fetch failed"
+      },
+      {
+        "candidate": "https://npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/\ncurl: (6) Could not resolve host: npesc.org\n"
+      },
+      {
+        "candidate": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
+        "method": "fetch",
+        "status": 404,
+        "finalUrl": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
+        "matchCount": 0
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": false,
+    "countyStatus": "unresolved"
   },
   {
     "root": "https://www.nwoesc.org",
@@ -266,7 +648,7 @@
       {
         "candidate": "https://soesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://soesc.org/\ncurl: (28) Connection timed out after 15002 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://soesc.org/\ncurl: (28) Connection timed out after 15011 milliseconds\n"
       },
       {
         "candidate": "https://www.soesc.org/",
@@ -291,94 +673,50 @@
     "countyStatus": "partial"
   },
   {
-    "root": "https://www.escneo.org",
+    "root": "https://www.moesc.net",
     "countyRows": 3,
     "countyIds": [
-      "geauga-oh",
-      "lake-oh",
-      "portage-oh"
+      "crawford-oh",
+      "morrow-oh",
+      "richland-oh"
     ],
     "sampleNames": [
-      "ESC of Northeast Ohio (Geauga County County fallback)",
-      "ESC of Northeast Ohio (Lake County County fallback)",
-      "ESC of Northeast Ohio (Portage County County fallback)"
+      "Mid-Ohio ESC (Crawford County County fallback)",
+      "Mid-Ohio ESC (Richland County County fallback)",
+      "Mid-Ohio ESC"
     ],
-    "finalUrl": "https://escneo.org/",
-    "title": "ESC of Northeast Ohio",
+    "finalUrl": "https://www.moesc.net/",
+    "title": "Home - Mid Ohio Educational Service Center",
     "matches": [
       {
-        "label": "Our Districts",
-        "url": "https://escneo.org/OurDistricts.aspx"
+        "label": "Districts Served",
+        "url": "https://www.moesc.net/our-esc/districts-served"
       },
       {
-        "label": "Ohio Substitute Teacher Services Provides School Districts in Ohio with Quality Substitute Teachers",
-        "url": "https://escneo.org/ohiosubstituteteacherservices_home.aspx"
-      }
-    ],
-    "attempts": [
-      {
-        "candidate": "https://escneo.org/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://escneo.org/",
-        "matchCount": 2
-      }
-    ],
-    "sitemapAttempts": [
-      {
-        "url": "https://escneo.org/robots.txt",
-        "hit_count": 0
-      },
-      {
-        "url": "https://escneo.org/sitemap.xml",
-        "hit_count": 0
-      }
-    ],
-    "hasDistrictLeaf": true,
-    "hasServiceLeaf": false,
-    "countyStatus": "partial"
-  },
-  {
-    "root": "https://www.ncoesc.org",
-    "countyRows": 3,
-    "countyIds": [
-      "sandusky-oh",
-      "seneca-oh",
-      "wyandot-oh"
-    ],
-    "sampleNames": [
-      "North Central Ohio ESC (Sandusky County County fallback)",
-      "North Central Ohio ESC (Seneca County County fallback)",
-      "North Central Ohio ESC (Wyandot County County fallback)"
-    ],
-    "finalUrl": "https://www.ncoesc.org/",
-    "title": "Home",
-    "matches": [
-      {
-        "label": "Member School Districts",
-        "url": "https://www.ncoesc.org/memberschooldistricts"
+        "label": "Alternative Programs",
+        "url": "https://www.moesc.net/our-esc/districts-served/alternative-programs"
       },
       {
         "label": "Student Services",
-        "url": "https://www.ncoesc.org/studentservices"
+        "url": "https://www.moesc.net/student-services"
       }
     ],
     "attempts": [
       {
-        "candidate": "https://ncoesc.org/",
+        "candidate": "https://moesc.net/",
         "method": "fetch",
         "status": 200,
-        "finalUrl": "https://www.ncoesc.org/",
-        "matchCount": 2
+        "finalUrl": "https://www.moesc.net/",
+        "matchCount": 3
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.ncoesc.org/robots.txt",
+        "url": "https://www.moesc.net/robots.txt",
         "hit_count": 0
       },
       {
-        "url": "https://www.ncoesc.org/sitemap.xml",
+        "url": "https://www.moesc.net/sitemap.xml",
         "hit_count": 0
       }
     ],
@@ -387,102 +725,46 @@
     "countyStatus": "strong"
   },
   {
-    "root": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts",
+    "root": "https://www.youresc.k12.oh.us",
     "countyRows": 3,
     "countyIds": [
-      "erie-oh",
-      "huron-oh",
-      "ottawa-oh"
+      "ashland-oh",
+      "holmes-oh",
+      "wayne-oh"
     ],
     "sampleNames": [
-      "North Point Educational Service Center (Erie County County fallback)",
-      "North Point Educational Service Center (Huron County County fallback)",
-      "North Point Educational Service Center (Ottawa County County fallback)"
+      "Tri-County ESC (Ashland County County fallback)",
+      "Tri-County ESC (Wayne County County fallback)",
+      "Tri-County ESC"
     ],
-    "finalUrl": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
-    "title": "North Point Educational Service Center - 404 Page not found",
-    "matches": [],
-    "attempts": [
-      {
-        "candidate": "https://npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
-        "method": "fetch",
-        "error": "fetch failed"
-      },
-      {
-        "candidate": "https://npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
-        "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/\ncurl: (6) Could not resolve host: npesc.org\n"
-      },
-      {
-        "candidate": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
-        "method": "fetch",
-        "status": 404,
-        "finalUrl": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/",
-        "matchCount": 0
-      }
-    ],
-    "sitemapAttempts": [
-      {
-        "url": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/robots.txt",
-        "hit_count": 0
-      },
-      {
-        "url": "https://www.npesc.org/vnews/display.v/SEC/Member%20%26%20Partner%20School%20Districts/sitemap.xml",
-        "hit_count": 0
-      }
-    ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
-  },
-  {
-    "root": "https://www.ovesc.org",
-    "countyRows": 3,
-    "countyIds": [
-      "monroe-oh",
-      "morgan-oh",
-      "washington-oh"
-    ],
-    "sampleNames": [
-      "Ohio Valley Educational Service Center (Monroe County County fallback)",
-      "Ohio Valley Educational Service Center (Morgan County County fallback)",
-      "Ohio Valley Educational Service Center (Washington County County fallback)"
-    ],
-    "finalUrl": "https://www.ovesc.org/",
-    "title": "Homepage - Ohio Valley Educational Service Center",
+    "finalUrl": "https://www.youresc.k12.oh.us/",
+    "title": "Tri-County Educational Service Center",
     "matches": [
       {
-        "label": "Special Education",
-        "url": "https://www.ovesc.org/programs-and-services/special-education/"
+        "label": "Special Education/Student Services",
+        "url": "https://www.youresc.k12.oh.us/special-education-student-services"
       },
       {
-        "label": "Districts",
-        "url": "https://www.ovesc.org/about/districts/"
+        "label": "Member Districts",
+        "url": "https://www.youresc.k12.oh.us/member-districts/"
       }
     ],
     "attempts": [
       {
-        "candidate": "https://ovesc.org/",
+        "candidate": "https://youresc.k12.oh.us/",
         "method": "fetch",
         "status": 200,
-        "finalUrl": "https://www.ovesc.org/",
+        "finalUrl": "https://www.youresc.k12.oh.us/",
         "matchCount": 2
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.ovesc.org/robots.txt",
+        "url": "https://www.youresc.k12.oh.us/robots.txt",
         "hit_count": 0
       },
       {
-        "url": "https://www.ovesc.org/sitemap.xml",
+        "url": "https://www.youresc.k12.oh.us/sitemap.xml",
         "hit_count": 0
       }
     ],
@@ -499,7 +781,8 @@
     ],
     "sampleNames": [
       "Athens-Meigs ESC (Athens County County fallback)",
-      "Athens-Meigs ESC (Meigs County County fallback)"
+      "Athens-Meigs ESC (Meigs County County fallback)",
+      "Athens-Meigs ESC"
     ],
     "finalUrl": "https://www.athensmeigs.com/",
     "title": "Home - Athens Meigs Educational Service Center",
@@ -557,7 +840,8 @@
     ],
     "sampleNames": [
       "Gallia-Vinton ESC (Gallia County County fallback)",
-      "Gallia-Vinton ESC (Vinton County County fallback)"
+      "Gallia-Vinton ESC (Vinton County County fallback)",
+      "Gallia-Vinton ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -599,48 +883,148 @@
     "countyStatus": "unresolved"
   },
   {
-    "root": "https://www.moesc.net",
+    "root": "https://www.mccesc.org",
     "countyRows": 2,
     "countyIds": [
-      "crawford-oh",
-      "richland-oh"
+      "champaign-oh",
+      "madison-oh"
     ],
     "sampleNames": [
-      "Mid-Ohio ESC (Crawford County County fallback)",
-      "Mid-Ohio ESC (Richland County County fallback)"
+      "Madison-Champaign Educational Service Center (Champaign County County fallback)",
+      "Madison-Champaign Educational Service Center"
     ],
-    "finalUrl": "https://www.moesc.net/",
-    "title": "Home - Mid Ohio Educational Service Center",
+    "finalUrl": "https://www.mccesc.org/",
+    "title": "Home - Madison-Champaign Educational Service Center",
     "matches": [
       {
-        "label": "Districts Served",
-        "url": "https://www.moesc.net/our-esc/districts-served"
-      },
-      {
-        "label": "Alternative Programs",
-        "url": "https://www.moesc.net/our-esc/districts-served/alternative-programs"
-      },
-      {
-        "label": "Student Services",
-        "url": "https://www.moesc.net/student-services"
+        "label": "Special Education & Related Services",
+        "url": "https://www.mccesc.org/services/special-education-related-services"
       }
     ],
     "attempts": [
       {
-        "candidate": "https://moesc.net/",
+        "candidate": "https://mccesc.org/",
         "method": "fetch",
         "status": 200,
-        "finalUrl": "https://www.moesc.net/",
-        "matchCount": 3
+        "finalUrl": "https://www.mccesc.org/",
+        "matchCount": 1
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.moesc.net/robots.txt",
+        "url": "https://www.mccesc.org/robots.txt",
         "hit_count": 0
       },
       {
-        "url": "https://www.moesc.net/sitemap.xml",
+        "url": "https://www.mccesc.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
+  },
+  {
+    "root": "https://www.rpesd.org",
+    "countyRows": 2,
+    "countyIds": [
+      "pike-oh",
+      "ross-oh"
+    ],
+    "sampleNames": [
+      "Ross Pike ESD (Pike County County fallback)",
+      "Ross Pike ESD"
+    ],
+    "finalUrl": "https://www.rpesd.org/",
+    "title": "Home | Ross Pike ESD",
+    "matches": [
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.rpesd.org/page/special-education/"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://rpesd.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.rpesd.org/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://rpesd.org/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://rpesd.org/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.rpesd.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.rpesd.org/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.rpesd.org/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://www.rpesd.org/",
+        "matchCount": 0
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.rpesd.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.rpesd.org/sitemap.xml",
+        "hit_count": 1
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
+  },
+  {
+    "root": "https://www.scoesc.org",
+    "countyRows": 2,
+    "countyIds": [
+      "jackson-oh",
+      "scioto-oh"
+    ],
+    "sampleNames": [
+      "South Central Ohio Educational Service Center"
+    ],
+    "finalUrl": "https://www.scoesc.org/",
+    "title": "South Central Ohio ESC | Portsmouth, Ohio | SCOESC",
+    "matches": [
+      {
+        "label": "Districts Served",
+        "url": "https://www.scoesc.org/districts"
+      },
+      {
+        "label": "Preschool Special Education",
+        "url": "https://www.scoesc.org/preschool-special-educatione"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://scoesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.scoesc.org/",
+        "matchCount": 2
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.scoesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.scoesc.org/sitemap.xml",
         "hit_count": 0
       }
     ],
@@ -657,7 +1041,8 @@
     ],
     "sampleNames": [
       "South Central Ohio Educational Service Center (Jackson County County fallback)",
-      "South Central Ohio Educational Service Center (Scioto County County fallback)"
+      "South Central Ohio Educational Service Center (Scioto County County fallback)",
+      "South Central Ohio Educational Service Center"
     ],
     "finalUrl": "https://www.scoesc.org/districts",
     "title": "Districts Served | SCOESC",
@@ -695,6 +1080,55 @@
     "countyStatus": "strong"
   },
   {
+    "root": "https://www.wbesc.org",
+    "countyRows": 2,
+    "countyIds": [
+      "paulding-oh",
+      "van-wert-oh"
+    ],
+    "sampleNames": [
+      "Western Buckeye ESC"
+    ],
+    "finalUrl": "https://www.wbesc.org/",
+    "title": "Home - Western Buckeye Educational Service Center",
+    "matches": [
+      {
+        "label": "Special Education & Transition Planning",
+        "url": "https://www.wbesc.org/services/special-education-transition-planning"
+      },
+      {
+        "label": "Our Schools",
+        "url": "https://www.wbesc.org/our-schools"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.finalsite.com/districts"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://wbesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.wbesc.org/",
+        "matchCount": 2
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.wbesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.wbesc.org/sitemap.xml",
+        "hit_count": 1
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
+  },
+  {
     "root": "https://www.wbesc.org/our-schools",
     "countyRows": 2,
     "countyIds": [
@@ -703,7 +1137,8 @@
     ],
     "sampleNames": [
       "Western Buckeye ESC (Paulding County County fallback)",
-      "Western Buckeye ESC (Van Wert County County fallback)"
+      "Western Buckeye ESC (Van Wert County County fallback)",
+      "Western Buckeye ESC"
     ],
     "finalUrl": "https://www.wbesc.org/our-schools/",
     "title": "Our Schools - Western Buckeye Educational Service Center",
@@ -738,52 +1173,6 @@
       {
         "url": "https://www.wbesc.org/our-schools/sitemap.xml",
         "hit_count": 1
-      }
-    ],
-    "hasDistrictLeaf": true,
-    "hasServiceLeaf": true,
-    "countyStatus": "strong"
-  },
-  {
-    "root": "https://www.youresc.k12.oh.us",
-    "countyRows": 2,
-    "countyIds": [
-      "ashland-oh",
-      "wayne-oh"
-    ],
-    "sampleNames": [
-      "Tri-County ESC (Ashland County County fallback)",
-      "Tri-County ESC (Wayne County County fallback)"
-    ],
-    "finalUrl": "https://www.youresc.k12.oh.us/",
-    "title": "Tri-County Educational Service Center",
-    "matches": [
-      {
-        "label": "Special Education/Student Services",
-        "url": "https://www.youresc.k12.oh.us/special-education-student-services"
-      },
-      {
-        "label": "Member Districts",
-        "url": "https://www.youresc.k12.oh.us/member-districts/"
-      }
-    ],
-    "attempts": [
-      {
-        "candidate": "https://youresc.k12.oh.us/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.youresc.k12.oh.us/",
-        "matchCount": 2
-      }
-    ],
-    "sitemapAttempts": [
-      {
-        "url": "https://www.youresc.k12.oh.us/robots.txt",
-        "hit_count": 0
-      },
-      {
-        "url": "https://www.youresc.k12.oh.us/sitemap.xml",
-        "hit_count": 0
       }
     ],
     "hasDistrictLeaf": true,
@@ -845,7 +1234,8 @@
       "allen-oh"
     ],
     "sampleNames": [
-      "Allen County ESC (Allen County County fallback)"
+      "Allen County ESC (Allen County County fallback)",
+      "Allen County ESC"
     ],
     "finalUrl": "https://www.allencountyesc.org/",
     "title": "Allen County ESC",
@@ -876,7 +1266,7 @@
       {
         "candidate": "https://allencountyesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://allencountyesc.org/\ncurl: (28) Connection timed out after 15009 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://allencountyesc.org/\ncurl: (28) Connection timed out after 15007 milliseconds\n"
       },
       {
         "candidate": "https://www.allencountyesc.org/",
@@ -907,7 +1297,8 @@
       "ashtabula-oh"
     ],
     "sampleNames": [
-      "Ashtabula County ESC (Ashtabula County County fallback)"
+      "Ashtabula County ESC (Ashtabula County County fallback)",
+      "Ashtabula County ESC"
     ],
     "finalUrl": "https://www.ashtabulaesc.org/",
     "title": "Ashtabula County ESC | Educational Service Center | 2630 West 13th Street, Ashtabula, OH 44004, USA",
@@ -951,7 +1342,8 @@
       "auglaize-oh"
     ],
     "sampleNames": [
-      "Auglaize County ESC (Auglaize County County fallback)"
+      "Auglaize County ESC (Auglaize County County fallback)",
+      "Auglaize County ESC"
     ],
     "finalUrl": "https://www.auglaizeesc.org/",
     "title": "Educational Services for Developmental Disabilities",
@@ -1007,7 +1399,8 @@
       "butler-oh"
     ],
     "sampleNames": [
-      "Butler County ESC (Butler County County fallback)"
+      "Butler County ESC (Butler County County fallback)",
+      "Butler County ESC"
     ],
     "finalUrl": "https://www.bcesc.org/",
     "title": "Butler County Educational Service Center",
@@ -1051,7 +1444,8 @@
       "brown-oh"
     ],
     "sampleNames": [
-      "Brown County ESC (Brown County County fallback)"
+      "Brown County ESC (Brown County County fallback)",
+      "Brown County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -1147,7 +1541,8 @@
       "columbiana-oh"
     ],
     "sampleNames": [
-      "Columbiana County ESC (Columbiana County County fallback)"
+      "Columbiana County ESC (Columbiana County County fallback)",
+      "Columbiana County ESC"
     ],
     "finalUrl": "https://www.ccesc.k12.oh.us/",
     "title": "Home | Columbiana County Educational Service Center",
@@ -1203,7 +1598,8 @@
       "clermont-oh"
     ],
     "sampleNames": [
-      "Clermont County ESC (Clermont County County fallback)"
+      "Clermont County ESC (Clermont County County fallback)",
+      "Clermont County ESC"
     ],
     "finalUrl": "https://www.ccesc.org/",
     "title": "Home | CLERMONT COUNTY EDUCATIONAL SERVICE CENTER",
@@ -1339,7 +1735,8 @@
       "clark-oh"
     ],
     "sampleNames": [
-      "Clark County ESC (Clark County County fallback)"
+      "Clark County ESC (Clark County County fallback)",
+      "Clark County ESC"
     ],
     "finalUrl": "https://www.clarkesc.org/",
     "title": "Home - Clark County Educational Service Center",
@@ -1519,7 +1916,8 @@
       "darke-oh"
     ],
     "sampleNames": [
-      "Darke County ESC (Darke County County fallback)"
+      "Darke County ESC (Darke County County fallback)",
+      "Darke County ESC"
     ],
     "finalUrl": "https://darkeesc.org/",
     "title": "Darke County ESC - Home",
@@ -1615,7 +2013,8 @@
       "mahoning-oh"
     ],
     "sampleNames": [
-      "ESC of Eastern Ohio (Mahoning County County fallback)"
+      "ESC of Eastern Ohio (Mahoning County County fallback)",
+      "ESC of Eastern Ohio"
     ],
     "finalUrl": "https://www.esceasternohio.org/",
     "title": "Home - Educational Service Center of Eastern Ohio (ESC of Eastern Ohio)",
@@ -1649,13 +2048,70 @@
     "countyStatus": "partial"
   },
   {
+    "root": "https://www.esclew.org",
+    "countyRows": 1,
+    "countyIds": [
+      "lucas-oh"
+    ],
+    "sampleNames": [
+      "Educational Service Center of Lake Erie West"
+    ],
+    "finalUrl": "https://esclew.org/",
+    "title": "",
+    "matches": [],
+    "attempts": [
+      {
+        "candidate": "https://esclew.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://esclew.org/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://esclew.org/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://esclew.org/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.esclew.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.esclew.org/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.esclew.org/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://www.esclew.org/",
+        "matchCount": 0
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://esclew.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://esclew.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": false,
+    "countyStatus": "unresolved"
+  },
+  {
     "root": "https://www.fairfieldesc.org",
     "countyRows": 1,
     "countyIds": [
       "fairfield-oh"
     ],
     "sampleNames": [
-      "Fairfield County ESC (Fairfield County County fallback)"
+      "Fairfield County ESC (Fairfield County County fallback)",
+      "Fairfield County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -1697,13 +2153,62 @@
     "countyStatus": "unresolved"
   },
   {
+    "root": "https://www.geaugaesc.org",
+    "countyRows": 1,
+    "countyIds": [
+      "geauga-oh"
+    ],
+    "sampleNames": [
+      "Geauga County ESC"
+    ],
+    "finalUrl": null,
+    "title": "",
+    "matches": [],
+    "attempts": [
+      {
+        "candidate": "https://geaugaesc.org/",
+        "method": "fetch",
+        "error": "This operation was aborted"
+      },
+      {
+        "candidate": "https://geaugaesc.org/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://geaugaesc.org/\ncurl: (6) Could not resolve host: geaugaesc.org\n"
+      },
+      {
+        "candidate": "https://www.geaugaesc.org/",
+        "method": "fetch",
+        "error": "This operation was aborted"
+      },
+      {
+        "candidate": "https://www.geaugaesc.org/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.geaugaesc.org/\ncurl: (6) Could not resolve host: www.geaugaesc.org\n"
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.geaugaesc.org/robots.txt",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.geaugaesc.org/robots.txt\ncurl: (6) Could not resolve host: www.geaugaesc.org\n"
+      },
+      {
+        "url": "https://www.geaugaesc.org/sitemap.xml",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.geaugaesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.geaugaesc.org\n"
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": false,
+    "countyStatus": "unresolved"
+  },
+  {
     "root": "https://www.greeneesc.org",
     "countyRows": 1,
     "countyIds": [
       "greene-oh"
     ],
     "sampleNames": [
-      "Greene County ESC (Greene County County fallback)"
+      "Greene County ESC (Greene County County fallback)",
+      "Greene County ESC"
     ],
     "finalUrl": "https://www.greeneesc.org/",
     "title": "Greene County ESC",
@@ -1722,7 +2227,7 @@
       {
         "candidate": "https://greeneesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://greeneesc.org/\ncurl: (28) Connection timed out after 15008 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://greeneesc.org/\ncurl: (28) Connection timed out after 15010 milliseconds\n"
       },
       {
         "candidate": "https://www.greeneesc.org/",
@@ -1747,13 +2252,70 @@
     "countyStatus": "partial"
   },
   {
+    "root": "https://www.guernseycounty.org",
+    "countyRows": 1,
+    "countyIds": [
+      "guernsey-oh"
+    ],
+    "sampleNames": [
+      "Guernsey County ESC"
+    ],
+    "finalUrl": "https://guernseycounty.gov/",
+    "title": "Guernsey County, Ohio | Official County Website",
+    "matches": [],
+    "attempts": [
+      {
+        "candidate": "https://guernseycounty.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://guernseycounty.gov/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://guernseycounty.org/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://guernseycounty.org/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.guernseycounty.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://guernseycounty.gov/",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.guernseycounty.org/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://www.guernseycounty.org/",
+        "matchCount": 0
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://guernseycounty.gov/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://guernseycounty.gov/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": false,
+    "countyStatus": "unresolved"
+  },
+  {
     "root": "https://www.hancockesc.org",
     "countyRows": 1,
     "countyIds": [
       "hancock-oh"
     ],
     "sampleNames": [
-      "Hancock County ESC (Hancock County County fallback)"
+      "Hancock County ESC (Hancock County County fallback)",
+      "Hancock County ESC"
     ],
     "finalUrl": "https://www.hancockesc.org/",
     "title": "Home | Hancock County ESC",
@@ -1819,9 +2381,49 @@
         "hit_count": 5
       }
     ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
+  },
+  {
+    "root": "https://www.hcesc.org",
+    "countyRows": 1,
+    "countyIds": [
+      "hamilton-oh"
+    ],
+    "sampleNames": [
+      "Hamilton County Educational Service Center"
+    ],
+    "finalUrl": "https://www.hcesc.org/",
+    "title": "Hamilton County ESC - education professional development & support services",
+    "matches": [
+      {
+        "label": "Special Education Supervision Services in District",
+        "url": "https://www.hcesc.org/support-intervention/special-education-supervision/"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://hcesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.hcesc.org/",
+        "matchCount": 1
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.hcesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.hcesc.org/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
     "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.jcesc.k12.oh.us",
@@ -1830,7 +2432,8 @@
       "jefferson-oh"
     ],
     "sampleNames": [
-      "Jefferson County ESC (Jefferson County County fallback)"
+      "Jefferson County ESC (Jefferson County County fallback)",
+      "Jefferson County ESC"
     ],
     "finalUrl": "https://www.jcesc.k12.oh.us/",
     "title": "Jefferson County ESC",
@@ -1853,7 +2456,7 @@
       {
         "candidate": "https://jcesc.k12.oh.us/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://jcesc.k12.oh.us/\ncurl: (28) Connection timed out after 15011 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://jcesc.k12.oh.us/\ncurl: (28) Connection timed out after 15004 milliseconds\n"
       },
       {
         "candidate": "https://www.jcesc.k12.oh.us/",
@@ -1884,7 +2487,8 @@
       "knox-oh"
     ],
     "sampleNames": [
-      "Knox County ESC (Knox County County fallback)"
+      "Knox County ESC (Knox County County fallback)",
+      "Knox County ESC"
     ],
     "finalUrl": "https://www.knoxesc.org/",
     "title": "",
@@ -1939,8 +2543,8 @@
       }
     ],
     "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.lawrenceesc.org",
@@ -1949,7 +2553,8 @@
       "lawrence-oh"
     ],
     "sampleNames": [
-      "Lawrence County ESC (Lawrence County County fallback)"
+      "Lawrence County ESC (Lawrence County County fallback)",
+      "Lawrence County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -1991,13 +2596,66 @@
     "countyStatus": "unresolved"
   },
   {
+    "root": "https://www.lcesc.org",
+    "countyRows": 1,
+    "countyIds": [
+      "licking-oh"
+    ],
+    "sampleNames": [
+      "Licking County ESC"
+    ],
+    "finalUrl": "https://www.lresc.org/splash/splashpage.aspx",
+    "title": "LRESC - We've Moved!",
+    "matches": [],
+    "attempts": [
+      {
+        "candidate": "https://lcesc.org/",
+        "method": "fetch",
+        "error": "This operation was aborted"
+      },
+      {
+        "candidate": "https://lcesc.org/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://lcesc.org/\ncurl: (28) Connection timed out after 15002 milliseconds\n"
+      },
+      {
+        "candidate": "https://www.lcesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.lresc.org/splash/splashpage.aspx",
+        "matchCount": 0
+      },
+      {
+        "candidate": "https://www.lcesc.org/",
+        "method": "curl",
+        "status": 200,
+        "finalUrl": "https://www.lcesc.org/",
+        "matchCount": 0
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.lresc.org/splash/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.lresc.org/splash/sitemap.xml",
+        "hit_count": 0
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": false,
+    "countyStatus": "unresolved"
+  },
+  {
     "root": "https://www.loraincountyesc.org",
     "countyRows": 1,
     "countyIds": [
       "lorain-oh"
     ],
     "sampleNames": [
-      "Lorain County ESC (Lorain County County fallback)"
+      "Lorain County ESC (Lorain County County fallback)",
+      "Lorain County ESC"
     ],
     "finalUrl": "https://www.loraincountyesc.org/",
     "title": "ESC of Lorain County",
@@ -2016,7 +2674,7 @@
       {
         "candidate": "https://loraincountyesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://loraincountyesc.org/\ncurl: (28) Connection timed out after 15009 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://loraincountyesc.org/\ncurl: (28) Connection timed out after 15005 milliseconds\n"
       },
       {
         "candidate": "https://www.loraincountyesc.org/",
@@ -2041,43 +2699,47 @@
     "countyStatus": "partial"
   },
   {
-    "root": "https://www.mccesc.org",
+    "root": "https://www.mcesc.org",
     "countyRows": 1,
     "countyIds": [
-      "champaign-oh"
+      "montgomery-oh"
     ],
     "sampleNames": [
-      "Madison-Champaign Educational Service Center (Champaign County County fallback)"
+      "Montgomery County Educational Service Center"
     ],
-    "finalUrl": "https://www.mccesc.org/",
-    "title": "Home - Madison-Champaign Educational Service Center",
+    "finalUrl": "https://www.mcesc.org/",
+    "title": "Home - Montgomery County Educational Service Center",
     "matches": [
       {
-        "label": "Special Education & Related Services",
-        "url": "https://www.mccesc.org/services/special-education-related-services"
+        "label": "Districts We Serve",
+        "url": "https://www.mcesc.org/about-us/districts-we-serve"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.finalsite.com/districts"
       }
     ],
     "attempts": [
       {
-        "candidate": "https://mccesc.org/",
+        "candidate": "https://mcesc.org/",
         "method": "fetch",
         "status": 200,
-        "finalUrl": "https://www.mccesc.org/",
+        "finalUrl": "https://www.mcesc.org/",
         "matchCount": 1
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.mccesc.org/robots.txt",
+        "url": "https://www.mcesc.org/robots.txt",
         "hit_count": 0
       },
       {
-        "url": "https://www.mccesc.org/sitemap.xml",
-        "hit_count": 0
+        "url": "https://www.mcesc.org/sitemap.xml",
+        "hit_count": 1
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": true,
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": false,
     "countyStatus": "partial"
   },
   {
@@ -2087,7 +2749,8 @@
       "medina-oh"
     ],
     "sampleNames": [
-      "Medina County ESC (Medina County County fallback)"
+      "Medina County ESC (Medina County County fallback)",
+      "Medina County ESC"
     ],
     "finalUrl": "https://medina-esc.org/en-US",
     "title": "Home - Educational Service Center of Medina County",
@@ -2143,7 +2806,8 @@
       "mercer-oh"
     ],
     "sampleNames": [
-      "Mercer County ESC (Mercer County County fallback)"
+      "Mercer County ESC (Mercer County County fallback)",
+      "Mercer County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -2191,7 +2855,8 @@
       "logan-oh"
     ],
     "sampleNames": [
-      "Logan County ESC (Logan County County fallback)"
+      "Logan County ESC (Logan County County fallback)",
+      "Logan County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -2239,7 +2904,8 @@
       "miami-oh"
     ],
     "sampleNames": [
-      "Miami County ESC (Miami County County fallback)"
+      "Miami County ESC (Miami County County fallback)",
+      "Miami County ESC"
     ],
     "finalUrl": "https://www.miami.k12.oh.us/",
     "title": "Home | Miami County",
@@ -2294,69 +2960,8 @@
       }
     ],
     "hasDistrictLeaf": true,
-    "hasServiceLeaf": false,
-    "countyStatus": "partial"
-  },
-  {
-    "root": "https://www.mresc.org/districts-we-serve",
-    "countyRows": 1,
-    "countyIds": [
-      "hardin-oh"
-    ],
-    "sampleNames": [
-      "Midwest Regional ESC (Hardin County County fallback)"
-    ],
-    "finalUrl": "https://www.mresc.org/districts-we-serve/",
-    "title": "Districts We Serve - Midwest Regional ESC",
-    "matches": [
-      {
-        "label": "sitemap-discovered",
-        "url": "https://www.mresc.org/special-education-services/"
-      }
-    ],
-    "attempts": [
-      {
-        "candidate": "https://mresc.org/districts-we-serve/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.mresc.org/districts-we-serve/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://mresc.org/districts-we-serve/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://mresc.org/districts-we-serve/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.mresc.org/districts-we-serve/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.mresc.org/districts-we-serve/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.mresc.org/districts-we-serve/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://www.mresc.org/districts-we-serve/",
-        "matchCount": 0
-      }
-    ],
-    "sitemapAttempts": [
-      {
-        "url": "https://www.mresc.org/districts-we-serve/robots.txt",
-        "hit_count": 1
-      },
-      {
-        "url": "https://www.mresc.org/districts-we-serve/sitemap.xml",
-        "hit_count": 1
-      }
-    ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.pickawayesc.org",
@@ -2365,7 +2970,8 @@
       "pickaway-oh"
     ],
     "sampleNames": [
-      "Pickaway County ESC (Pickaway County County fallback)"
+      "Pickaway County ESC (Pickaway County County fallback)",
+      "Pickaway County ESC"
     ],
     "finalUrl": "https://www.pickawayesc.org/",
     "title": "Home | Pickaway County ESC",
@@ -2420,8 +3026,8 @@
       }
     ],
     "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasServiceLeaf": true,
+    "countyStatus": "partial"
   },
   {
     "root": "https://www.preblecountyesc.org",
@@ -2430,16 +3036,19 @@
       "preble-oh"
     ],
     "sampleNames": [
-      "Preble County ESC (Preble County County fallback)"
+      "Preble County ESC (Preble County County fallback)",
+      "Preble County ESC"
     ],
-    "finalUrl": "https://preblecountyesc.org/",
-    "title": "Preble County ESC | Overcoming Tomorrow&#039;s Educational Needs Today",
+    "finalUrl": "https://www.preblecountyesc.org/",
+    "title": "Preble County ESC | Overcoming Tomorrow's Educational Needs Today",
     "matches": [],
     "attempts": [
       {
         "candidate": "https://preblecountyesc.org/",
         "method": "fetch",
-        "error": "This operation was aborted"
+        "status": 200,
+        "finalUrl": "https://www.preblecountyesc.org/",
+        "matchCount": 0
       },
       {
         "candidate": "https://preblecountyesc.org/",
@@ -2465,11 +3074,11 @@
     ],
     "sitemapAttempts": [
       {
-        "url": "https://preblecountyesc.org/robots.txt",
+        "url": "https://www.preblecountyesc.org/robots.txt",
         "hit_count": 0
       },
       {
-        "url": "https://preblecountyesc.org/sitemap.xml",
+        "url": "https://www.preblecountyesc.org/sitemap.xml",
         "hit_count": 0
       }
     ],
@@ -2484,7 +3093,8 @@
       "putnam-oh"
     ],
     "sampleNames": [
-      "Putnam County ESC (Putnam County County fallback)"
+      "Putnam County ESC (Putnam County County fallback)",
+      "Putnam County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -2526,60 +3136,47 @@
     "countyStatus": "unresolved"
   },
   {
-    "root": "https://www.rpesd.org",
+    "root": "https://www.rosscoe.org",
     "countyRows": 1,
     "countyIds": [
-      "pike-oh"
+      "ross-oh"
     ],
     "sampleNames": [
-      "Ross Pike ESD (Pike County County fallback)"
+      "Ross County ESC"
     ],
-    "finalUrl": "https://www.rpesd.org/",
-    "title": "Home | Ross Pike ESD",
-    "matches": [
-      {
-        "label": "sitemap-discovered",
-        "url": "https://www.rpesd.org/page/special-education/"
-      }
-    ],
+    "finalUrl": null,
+    "title": "",
+    "matches": [],
     "attempts": [
       {
-        "candidate": "https://rpesd.org/",
+        "candidate": "https://rosscoe.org/",
         "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.rpesd.org/",
-        "matchCount": 0
+        "error": "fetch failed"
       },
       {
-        "candidate": "https://rpesd.org/",
+        "candidate": "https://rosscoe.org/",
         "method": "curl",
-        "status": 200,
-        "finalUrl": "https://rpesd.org/",
-        "matchCount": 0
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://rosscoe.org/\ncurl: (6) Could not resolve host: rosscoe.org\n"
       },
       {
-        "candidate": "https://www.rpesd.org/",
+        "candidate": "https://www.rosscoe.org/",
         "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.rpesd.org/",
-        "matchCount": 0
+        "error": "fetch failed"
       },
       {
-        "candidate": "https://www.rpesd.org/",
+        "candidate": "https://www.rosscoe.org/",
         "method": "curl",
-        "status": 200,
-        "finalUrl": "https://www.rpesd.org/",
-        "matchCount": 0
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.rosscoe.org/\ncurl: (6) Could not resolve host: www.rosscoe.org\n"
       }
     ],
     "sitemapAttempts": [
       {
-        "url": "https://www.rpesd.org/robots.txt",
-        "hit_count": 0
+        "url": "https://www.rosscoe.org/robots.txt",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.rosscoe.org/robots.txt\ncurl: (6) Could not resolve host: www.rosscoe.org\n"
       },
       {
-        "url": "https://www.rpesd.org/sitemap.xml",
-        "hit_count": 1
+        "url": "https://www.rosscoe.org/sitemap.xml",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.rosscoe.org/sitemap.xml\ncurl: (6) Could not resolve host: www.rosscoe.org\n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -2593,7 +3190,8 @@
       "shelby-oh"
     ],
     "sampleNames": [
-      "Shelby County ESC (Shelby County County fallback)"
+      "Shelby County ESC (Shelby County County fallback)",
+      "Shelby County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -2633,6 +3231,124 @@
     "hasDistrictLeaf": false,
     "hasServiceLeaf": false,
     "countyStatus": "unresolved"
+  },
+  {
+    "root": "https://www.starkcountyesc.org",
+    "countyRows": 1,
+    "countyIds": [
+      "stark-oh"
+    ],
+    "sampleNames": [
+      "Stark County Educational Service Center"
+    ],
+    "finalUrl": "https://www.starkcountyesc.org/",
+    "title": "Home - Stark County ESC",
+    "matches": [
+      {
+        "label": "Member Districts",
+        "url": "https://www.starkcountyesc.org/about-us/member-districts"
+      },
+      {
+        "label": "ESC/Districts Combined Calendars",
+        "url": "https://www.starkcountyesc.org/calendars-events/2025-26-escdistricts-combined-calendars-clone"
+      },
+      {
+        "label": "Physical Therapy-Student Services",
+        "url": "https://www.starkcountyesc.org/contract-services/physical-therapy-student-services"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.finalsite.com/districts"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://starkcountyesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.starkcountyesc.org/",
+        "matchCount": 3
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.starkcountyesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.starkcountyesc.org/sitemap.xml",
+        "hit_count": 1
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
+  },
+  {
+    "root": "https://www.summitesc.org",
+    "countyRows": 1,
+    "countyIds": [
+      "summit-oh"
+    ],
+    "sampleNames": [
+      "Summit County Educational Service Center"
+    ],
+    "finalUrl": "https://www.summitesc.org/",
+    "title": "Summit ESC",
+    "matches": [
+      {
+        "label": "Our Districts",
+        "url": "https://www.summitesc.org/OurDistricts.aspx"
+      },
+      {
+        "label": "Student Services",
+        "url": "https://www.summitesc.org/StudentServices.aspx"
+      },
+      {
+        "label": "Personalized Solutions That Strengthen Schools and Save Districts Money",
+        "url": "https://www.summitesc.org/protected/ArticleView.aspx?iid=5000II&dasi=4GB3Y"
+      },
+      {
+        "label": "County funding behavioral health and wellness coordinators in four school districts",
+        "url": "https://www.summitesc.org/protected/ArticleView.aspx?iid=50AAIB&dasi=4GB3Y"
+      },
+      {
+        "label": "sitemap-discovered",
+        "url": "https://www.payschoolscentral.com/"
+      }
+    ],
+    "attempts": [
+      {
+        "candidate": "https://summitesc.org/",
+        "method": "fetch",
+        "error": "This operation was aborted"
+      },
+      {
+        "candidate": "https://summitesc.org/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://summitesc.org/\ncurl: (28) Connection timed out after 15011 milliseconds\n"
+      },
+      {
+        "candidate": "https://www.summitesc.org/",
+        "method": "fetch",
+        "status": 200,
+        "finalUrl": "https://www.summitesc.org/",
+        "matchCount": 4
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.summitesc.org/robots.txt",
+        "hit_count": 0
+      },
+      {
+        "url": "https://www.summitesc.org/sitemap.xml",
+        "hit_count": 3
+      }
+    ],
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.tps.org",
@@ -2725,7 +3441,8 @@
       "trumbull-oh"
     ],
     "sampleNames": [
-      "Trumbull County ESC (Trumbull County County fallback)"
+      "Trumbull County ESC (Trumbull County County fallback)",
+      "Trumbull County ESC"
     ],
     "finalUrl": null,
     "title": "",
@@ -2749,17 +3466,65 @@
       {
         "candidate": "https://www.trumbull.k12.oh.us/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/\ncurl: (28) Connection timed out after 15011 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/\ncurl: (28) Connection timed out after 15006 milliseconds\n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.trumbull.k12.oh.us/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/robots.txt\ncurl: (28) Connection timed out after 15011 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/robots.txt\ncurl: (28) Connection timed out after 15012 milliseconds\n"
       },
       {
         "url": "https://www.trumbull.k12.oh.us/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/sitemap.xml\ncurl: (28) Connection timed out after 15011 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/sitemap.xml\ncurl: (28) Connection timed out after 15003 milliseconds\n"
+      }
+    ],
+    "hasDistrictLeaf": false,
+    "hasServiceLeaf": false,
+    "countyStatus": "unresolved"
+  },
+  {
+    "root": "https://www.unioncountyesc.org",
+    "countyRows": 1,
+    "countyIds": [
+      "union-oh"
+    ],
+    "sampleNames": [
+      "Union County ESC"
+    ],
+    "finalUrl": null,
+    "title": "",
+    "matches": [],
+    "attempts": [
+      {
+        "candidate": "https://unioncountyesc.org/",
+        "method": "fetch",
+        "error": "fetch failed"
+      },
+      {
+        "candidate": "https://unioncountyesc.org/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://unioncountyesc.org/\ncurl: (6) Could not resolve host: unioncountyesc.org\n"
+      },
+      {
+        "candidate": "https://www.unioncountyesc.org/",
+        "method": "fetch",
+        "error": "fetch failed"
+      },
+      {
+        "candidate": "https://www.unioncountyesc.org/",
+        "method": "curl",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.unioncountyesc.org/\ncurl: (6) Could not resolve host: www.unioncountyesc.org\n"
+      }
+    ],
+    "sitemapAttempts": [
+      {
+        "url": "https://www.unioncountyesc.org/robots.txt",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.unioncountyesc.org/robots.txt\ncurl: (6) Could not resolve host: www.unioncountyesc.org\n"
+      },
+      {
+        "url": "https://www.unioncountyesc.org/sitemap.xml",
+        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.unioncountyesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.unioncountyesc.org\n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -2773,7 +3538,8 @@
       "warren-oh"
     ],
     "sampleNames": [
-      "Warren County ESC (Warren County County fallback)"
+      "Warren County ESC (Warren County County fallback)",
+      "Warren County ESC"
     ],
     "finalUrl": "https://warrencountyesc.com/",
     "title": "Warren County Educational Service Center",
@@ -2817,7 +3583,8 @@
       "wood-oh"
     ],
     "sampleNames": [
-      "Wood County ESC (Wood County County fallback)"
+      "Wood County ESC (Wood County County fallback)",
+      "Wood County ESC"
     ],
     "finalUrl": "https://www.wcesc.org/",
     "title": "WCESC | Home",

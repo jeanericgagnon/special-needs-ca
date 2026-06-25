@@ -3,12 +3,12 @@
   "state": "ohio",
   "state_code": "OH",
   "countyCount": 88,
-  "strongCountyCount": 45,
-  "partialCountyCount": 23,
-  "unresolvedCountyCount": 20,
-  "rootsProbed": 53,
-  "rootsWithMatches": 36,
-  "rootsWithoutMatches": 17,
-  "primaryGapReason": "bounded_live_ohio_education_leaf_probe_recovers_45_strong_and_23_partial_counties_but_20_counties_still_unresolved",
-  "lessonAdded": true
+  "strongCountyCount": 51,
+  "partialCountyCount": 24,
+  "unresolvedCountyCount": 13,
+  "rootsProbed": 67,
+  "rootsWithMatches": 44,
+  "rootsWithoutMatches": 23,
+  "primaryGapReason": "bounded_live_ohio_education_leaf_probe_recovers_51_strong_and_24_partial_counties_but_13_counties_still_unresolved",
+  "lessonAdded": false
 }

@@ -128,6 +128,19 @@ function normalizeRoot(url) {
   return url.replace(/\/+$/, '');
 }
 
+function splitCountyIds(value) {
+  return String(value || '')
+    .split(',')
+    .map((part) => sanitizeText(part))
+    .filter(Boolean);
+}
+
+function statusRank(status) {
+  if (status === 'strong') return 2;
+  if (status === 'partial') return 1;
+  return 0;
+}
+
 function toAbsoluteUrl(baseUrl, href) {
   try {
     return new URL(href, baseUrl).toString();
@@ -487,32 +500,82 @@ export async function generateBatch332OhioEducationLiveLeafProbeV1() {
       and trim(source_url) <> ''
     order by source_url, county_id
   `).all();
+  const agencyRows = db.prepare(`
+    select counties_served, name, source_url, website
+    from regional_education_agencies
+    where state_id = 'ohio'
+      and (
+        (source_url is not null and trim(source_url) <> '')
+        or (website is not null and trim(website) <> '')
+      )
+    order by name
+  `).all();
   db.close();
 
   const rootsByUrl = new Map();
-  for (const row of districtRows) {
-    const root = normalizeRoot(String(row.source_url));
-    if (!rootsByUrl.has(root)) {
-      rootsByUrl.set(root, { root, countyRows: 0, countyIds: [], sampleNames: [] });
-    }
-    const entry = rootsByUrl.get(root);
-    entry.countyRows += 1;
-    entry.countyIds.push(row.county_id);
-    if (entry.sampleNames.length < 3) entry.sampleNames.push(row.name);
+  const countyRootSet = new Map();
+  const countySampleNames = new Map();
+
+  function trackCounty(countyId, sampleName) {
+    if (!countyRootSet.has(countyId)) countyRootSet.set(countyId, new Set());
+    if (!countySampleNames.has(countyId)) countySampleNames.set(countyId, []);
+    const names = countySampleNames.get(countyId);
+    if (sampleName && !names.includes(sampleName) && names.length < 3) names.push(sampleName);
   }
 
-  const rootRecords = [...rootsByUrl.values()].sort((a, b) => b.countyRows - a.countyRows || a.root.localeCompare(b.root));
+  function addRoot(rootValue, countyIds, sampleName) {
+    const normalized = normalizeRoot(String(rootValue));
+    if (!rootsByUrl.has(normalized)) {
+      rootsByUrl.set(normalized, {
+        root: normalized,
+        countyRows: 0,
+        countyIds: new Set(),
+        sampleNames: [],
+      });
+    }
+    const entry = rootsByUrl.get(normalized);
+    for (const countyId of countyIds) {
+      if (!countyId) continue;
+      trackCounty(countyId, sampleName);
+      if (!countyRootSet.get(countyId).has(normalized)) {
+        countyRootSet.get(countyId).add(normalized);
+        entry.countyRows += 1;
+      }
+      entry.countyIds.add(countyId);
+    }
+    if (sampleName && !entry.sampleNames.includes(sampleName) && entry.sampleNames.length < 3) {
+      entry.sampleNames.push(sampleName);
+    }
+  }
+
+  for (const row of districtRows) {
+    addRoot(row.source_url, [row.county_id], row.name);
+  }
+
+  for (const row of agencyRows) {
+    const countyIds = splitCountyIds(row.counties_served);
+    if (!countyIds.length) continue;
+    if (row.source_url) addRoot(row.source_url, countyIds, row.name);
+    if (row.website) addRoot(row.website, countyIds, row.name);
+  }
+
+  const rootRecords = [...rootsByUrl.values()]
+    .map((entry) => ({
+      ...entry,
+      countyIds: [...entry.countyIds].sort(),
+    }))
+    .sort((a, b) => b.countyRows - a.countyRows || a.root.localeCompare(b.root));
   const probeRows = [];
   for (const rootRecord of rootRecords) {
     probeRows.push(await probeRoot(rootRecord));
     await sleep(150);
   }
 
-  const countyCoverageRows = [];
+  const countyCoverageById = new Map();
   for (const probe of probeRows) {
     const sampleUrls = probe.matches.slice(0, 4).map((match) => match.url);
     for (const countyId of probe.countyIds) {
-      countyCoverageRows.push({
+      const nextRow = {
         state: STATE,
         state_code: STATE_CODE,
         county_id: countyId,
@@ -521,9 +584,29 @@ export async function generateBatch332OhioEducationLiveLeafProbeV1() {
         has_district_leaf: probe.hasDistrictLeaf,
         has_service_leaf: probe.hasServiceLeaf,
         sample_leaf_urls: sampleUrls,
-      });
+      };
+      const current = countyCoverageById.get(countyId);
+      if (!current || statusRank(nextRow.county_status) > statusRank(current.county_status)) {
+        countyCoverageById.set(countyId, nextRow);
+      }
     }
   }
+
+  for (const countyId of countyRootSet.keys()) {
+    if (countyCoverageById.has(countyId)) continue;
+    countyCoverageById.set(countyId, {
+      state: STATE,
+      state_code: STATE_CODE,
+      county_id: countyId,
+      root: [...(countyRootSet.get(countyId) || [])][0] || null,
+      county_status: 'unresolved',
+      has_district_leaf: false,
+      has_service_leaf: false,
+      sample_leaf_urls: [],
+    });
+  }
+
+  const countyCoverageRows = [...countyCoverageById.values()].sort((a, b) => a.county_id.localeCompare(b.county_id));
 
   const strongCounties = countyCoverageRows.filter((row) => row.county_status === 'strong');
   const partialCounties = countyCoverageRows.filter((row) => row.county_status === 'partial');
