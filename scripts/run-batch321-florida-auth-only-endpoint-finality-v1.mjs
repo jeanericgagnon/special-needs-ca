@@ -352,6 +352,7 @@ export async function generateBatch321FloridaAuthOnlyEndpointFinalityV1() {
 
   const updatedSummary = {
     ...summary,
+    batch: BATCH_NAME,
     classification: 'BLOCKED',
     index_safe: false,
     primary_gap_reason: PRIMARY_GAP_REASON,

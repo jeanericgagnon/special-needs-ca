@@ -2,7 +2,7 @@
   "state": "florida",
   "state_code": "FL",
   "state_name": "Florida",
-  "batch": "batch_1_fast_finish_states_v1",
+  "batch": "batch321_florida_auth_only_endpoint_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,

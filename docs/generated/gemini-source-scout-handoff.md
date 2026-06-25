@@ -1,6 +1,6 @@
 # Gemini Source Scout Handoff
 
-Updated: 2026-06-25
+Updated: 2026-06-24
 
 Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.
 
@@ -34,47 +34,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Kansas
+## Current Focus State: Florida
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas still has reviewed local education-routing proof for 30/105 counties from preserved district-owned or district-linked leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass because the Directory Reports root, Directories page, educational-directory PDF URL, and one exact district-scoped submit replay still return the same `Request Rejected` shell instead of a workbook or public county join. Three more unresolved district domains now also fail closed in deterministic ways: Chase County USD 284 exposes a live sitemap plus exact role-slug 404s with zero role-bearing sitemap URLs, Woodson USD 366 exposes a live sitemap plus exact role-slug 404s with zero role-bearing sitemap URLs, and Chanute USD 413 returns the same generic `Blue Comets Connect` app shell for arbitrary role-like slugs with no special-education or child-find text. Kansas remains BLOCKED because county-grade local education proof is still incomplete across the remaining counties and the only trustworthy next lane is saved district-owned or district-linked local leaf authoring.
+`county_local_disability_resources` is the only remaining Florida critical blocker. The live DCF local-offices leaf and Family Resource Center storefront still stop at a partial 34-county contract. MyACCESS is readable again, and the live main bundle now re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but those exact official endpoints still return HTTP 401 `Unauthorized` on bounded anonymous GET and POST probes. The public `dataexchangeproxy` root still only replays the same generic shell, so there is still no anonymous county-complete public local-office contract.
 
 ### Exact Evidence Needed
 
-- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
-- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
-- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
+- A first-party Florida DCF or MyACCESS county-complete local-offices directory or export that maps all 67 counties to public assistance / ESS office routing.
+- A recovered anonymous official MyACCESS county-result contract that returns real office or community-partner results without authentication.
+- A first-party Family Resource Center or DCF local-office lane that expands beyond the current 34-county storefront contract and publishes the full county set.
 
 ### Useful Official URLs Already Tried
 
-- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
-- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
-- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
-- [Chase County USD 284 root](https://www.usd284.org/)
-- [Chase County USD 284 sitemap](https://www.usd284.org/sitemap.xml)
-- [Chase County USD 284 site map](https://www.usd284.org/site_map)
-- [Woodson USD 366 root](https://www.usd366.net/)
-- [Woodson USD 366 sitemap](https://www.usd366.net/sitemap.xml)
-- [Chanute USD 413 root](https://www.usd413.org/)
-- [Chanute USD 413 role-like slug probe](https://www.usd413.org/page/special-education)
-- [Chanute USD 413 role-like slug probe](https://www.usd413.org/departments/special-education)
-- [Chanute USD 413 role-like slug probe](https://www.usd413.org/student-services)
+- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
+- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
+- [MyACCESS root](https://myaccess.myflfamilies.com/)
+- [MyACCESS Public CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
+- [MyACCESS appconfig](https://myaccess.myflfamilies.com/config/appconfig.js)
+- [MyACCESS asset manifest](https://myaccess.myflfamilies.com/asset-manifest.json)
+- [MyACCESS main bundle](https://myaccess.myflfamilies.com/static/js/main.d43b0959.js)
+- [MyACCESS dataexchangeproxy root](https://myaccess.myflfamilies.com/dataexchangeproxy)
+- [MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
+- [MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
 
 ### Top Remaining Source-Scouting Targets
 
-- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
-- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or Child Find.
-- Additional district-owned document-folder, Google Sites, or CMS routes like the Ottawa USD 290, Garnett USD 365, Parsons USD 503, Hays USD 489, Hutchinson USD 308, Marysville USD 364, Burlington USD 244, Coffeyville USD 445, Wamego USD 320, and Fort Scott USD 234 recoveries, but only on already-preserved district domains.
-## Next State Order After Kansas
+- Any official DCF or MyACCESS export or API path that materially extends the public county-local contract beyond the 34 counties in `providers.csv`.
+- Any exact first-party DCF county office page or local-office directory leaf that is linked from current public-assistance pages but not yet exposed in the current public tree.
+- Any anonymous result lane on the official MyACCESS host that returns real county storefront or office rows rather than replaying the public shell or requiring authentication.
 
-1. Nebraska
-2. Nevada
-3. Florida
-4. Alaska
-5. South Carolina
-6. North Carolina
-7. New York
-8. Oklahoma
-9. Oregon
-10. Ohio
+## Next State Order After Florida
+
+1. Alaska
+2. New York
+3. Oklahoma
+4. Oregon
+5. Ohio
+6. Minnesota
+7. Maine
+8. Idaho
+9. Arizona
+10. Massachusetts
