@@ -846,6 +846,10 @@
     "finalUrl": null,
     "title": "",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://gvesc.org/",
@@ -855,7 +859,7 @@
       {
         "candidate": "https://gvesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://gvesc.org/\ncurl: (6) Could not resolve host: gvesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://gvesc.org/\ncurl: (6) Could not resolve host: gvesc.org\n"
       },
       {
         "candidate": "https://www.gvesc.org/",
@@ -865,17 +869,17 @@
       {
         "candidate": "https://www.gvesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/\ncurl: (6) Could not resolve host: www.gvesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/\ncurl: (6) Could not resolve host: www.gvesc.org\n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.gvesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/robots.txt\ncurl: (6) Could not resolve host: www.gvesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/robots.txt\ncurl: (6) Could not resolve host: www.gvesc.org\n"
       },
       {
         "url": "https://www.gvesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.gvesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.gvesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.gvesc.org\n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -1450,6 +1454,10 @@
     "finalUrl": null,
     "title": "",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://brown.k12.oh.us/",
@@ -1459,7 +1467,7 @@
       {
         "candidate": "https://brown.k12.oh.us/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://brown.k12.oh.us/\ncurl: (6) Could not resolve host: brown.k12.oh.us\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://brown.k12.oh.us/\ncurl: (6) Could not resolve host: brown.k12.oh.us\n"
       },
       {
         "candidate": "https://www.brown.k12.oh.us/",
@@ -1469,17 +1477,17 @@
       {
         "candidate": "https://www.brown.k12.oh.us/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.brown.k12.oh.us/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/robots.txt\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/robots.txt\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
       },
       {
         "url": "https://www.brown.k12.oh.us/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/sitemap.xml\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.brown.k12.oh.us/sitemap.xml\ncurl: (6) Could not resolve host: www.brown.k12.oh.us\n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -1547,6 +1555,10 @@
     "finalUrl": "https://www.ccesc.k12.oh.us/",
     "title": "Home | Columbiana County Educational Service Center",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://ccesc.k12.oh.us/",
@@ -1604,6 +1616,10 @@
     "finalUrl": "https://www.ccesc.org/",
     "title": "Home | CLERMONT COUNTY EDUCATIONAL SERVICE CENTER",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://ccesc.org/",
@@ -1921,35 +1937,27 @@
     ],
     "finalUrl": "https://darkeesc.org/",
     "title": "Darke County ESC - Home",
-    "matches": [],
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://darkeesc.org/"
+      },
+      {
+        "label": "homepage-text districts-served/member-districts/our-schools",
+        "url": "https://darkeesc.org/"
+      }
+    ],
+    "rootSignals": {
+      "hasDistrictText": true,
+      "hasServiceText": true
+    },
     "attempts": [
       {
         "candidate": "https://darkeesc.org/",
         "method": "fetch",
         "status": 200,
         "finalUrl": "https://darkeesc.org/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://darkeesc.org/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://darkeesc.org/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.darkeesc.org/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.darkeesc.org/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.darkeesc.org/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://www.darkeesc.org/",
-        "matchCount": 0
+        "matchCount": 2
       }
     ],
     "sitemapAttempts": [
@@ -1962,9 +1970,9 @@
         "hit_count": 0
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.dps.k12.oh.us",
@@ -2116,6 +2124,10 @@
     "finalUrl": null,
     "title": "",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://fairfieldesc.org/",
@@ -2125,7 +2137,7 @@
       {
         "candidate": "https://fairfieldesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://fairfieldesc.org/\ncurl: (60) SSL: no alternative certificate subject name matches target host name 'fairfieldesc.org'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://fairfieldesc.org/\ncurl: (60) SSL: no alternative certificate subject name matches target host name 'fairfieldesc.org'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
       },
       {
         "candidate": "https://www.fairfieldesc.org/",
@@ -2135,17 +2147,17 @@
       {
         "candidate": "https://www.fairfieldesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.fairfieldesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/robots.txt\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/robots.txt\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
       },
       {
         "url": "https://www.fairfieldesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/sitemap.xml\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.fairfieldesc.org/sitemap.xml\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.fairfieldesc.org:443 \n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -2559,6 +2571,10 @@
     "finalUrl": null,
     "title": "",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://lawrenceesc.org/",
@@ -2568,7 +2584,7 @@
       {
         "candidate": "https://lawrenceesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://lawrenceesc.org/\ncurl: (6) Could not resolve host: lawrenceesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://lawrenceesc.org/\ncurl: (6) Could not resolve host: lawrenceesc.org\n"
       },
       {
         "candidate": "https://www.lawrenceesc.org/",
@@ -2578,17 +2594,17 @@
       {
         "candidate": "https://www.lawrenceesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.lawrenceesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/robots.txt\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/robots.txt\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
       },
       {
         "url": "https://www.lawrenceesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.lawrenceesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.lawrenceesc.org\n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -2754,35 +2770,27 @@
     ],
     "finalUrl": "https://medina-esc.org/en-US",
     "title": "Home - Educational Service Center of Medina County",
-    "matches": [],
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://medina-esc.org/en-US"
+      },
+      {
+        "label": "homepage-text districts-served/member-districts/our-schools",
+        "url": "https://medina-esc.org/en-US"
+      }
+    ],
+    "rootSignals": {
+      "hasDistrictText": true,
+      "hasServiceText": true
+    },
     "attempts": [
       {
         "candidate": "https://medina-esc.org/",
         "method": "fetch",
         "status": 200,
         "finalUrl": "https://medina-esc.org/en-US",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://medina-esc.org/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://medina-esc.org/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.medina-esc.org/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.medina-esc.org/en-US",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.medina-esc.org/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://www.medina-esc.org/",
-        "matchCount": 0
+        "matchCount": 2
       }
     ],
     "sitemapAttempts": [
@@ -2795,9 +2803,9 @@
         "hit_count": 0
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.merceresc.org",
@@ -2812,6 +2820,10 @@
     "finalUrl": null,
     "title": "",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://merceresc.org/",
@@ -2821,7 +2833,7 @@
       {
         "candidate": "https://merceresc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://merceresc.org/\ncurl: (6) Could not resolve host: merceresc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://merceresc.org/\ncurl: (6) Could not resolve host: merceresc.org\n"
       },
       {
         "candidate": "https://www.merceresc.org/",
@@ -2831,17 +2843,17 @@
       {
         "candidate": "https://www.merceresc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/\ncurl: (6) Could not resolve host: www.merceresc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/\ncurl: (6) Could not resolve host: www.merceresc.org\n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.merceresc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/robots.txt\ncurl: (6) Could not resolve host: www.merceresc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/robots.txt\ncurl: (6) Could not resolve host: www.merceresc.org\n"
       },
       {
         "url": "https://www.merceresc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.merceresc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.merceresc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.merceresc.org\n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -3041,35 +3053,27 @@
     ],
     "finalUrl": "https://www.preblecountyesc.org/",
     "title": "Preble County ESC | Overcoming Tomorrow's Educational Needs Today",
-    "matches": [],
+    "matches": [
+      {
+        "label": "homepage-text special-education/student-services/programs-services",
+        "url": "https://www.preblecountyesc.org/"
+      },
+      {
+        "label": "homepage-text districts-served/member-districts/our-schools",
+        "url": "https://www.preblecountyesc.org/"
+      }
+    ],
+    "rootSignals": {
+      "hasDistrictText": true,
+      "hasServiceText": true
+    },
     "attempts": [
       {
         "candidate": "https://preblecountyesc.org/",
         "method": "fetch",
         "status": 200,
         "finalUrl": "https://www.preblecountyesc.org/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://preblecountyesc.org/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://preblecountyesc.org/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.preblecountyesc.org/",
-        "method": "fetch",
-        "status": 200,
-        "finalUrl": "https://www.preblecountyesc.org/",
-        "matchCount": 0
-      },
-      {
-        "candidate": "https://www.preblecountyesc.org/",
-        "method": "curl",
-        "status": 200,
-        "finalUrl": "https://www.preblecountyesc.org/",
-        "matchCount": 0
+        "matchCount": 2
       }
     ],
     "sitemapAttempts": [
@@ -3079,12 +3083,12 @@
       },
       {
         "url": "https://www.preblecountyesc.org/sitemap.xml",
-        "hit_count": 0
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.preblecountyesc.org/sitemap.xml\ncurl: (28) Operation timed out after 2458 milliseconds with 0 bytes received\n"
       }
     ],
-    "hasDistrictLeaf": false,
-    "hasServiceLeaf": false,
-    "countyStatus": "unresolved"
+    "hasDistrictLeaf": true,
+    "hasServiceLeaf": true,
+    "countyStatus": "strong"
   },
   {
     "root": "https://www.putnamesc.org",
@@ -3099,6 +3103,10 @@
     "finalUrl": null,
     "title": "",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://putnamesc.org/",
@@ -3108,7 +3116,7 @@
       {
         "candidate": "https://putnamesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://putnamesc.org/\ncurl: (6) Could not resolve host: putnamesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://putnamesc.org/\ncurl: (6) Could not resolve host: putnamesc.org\n"
       },
       {
         "candidate": "https://www.putnamesc.org/",
@@ -3118,17 +3126,17 @@
       {
         "candidate": "https://www.putnamesc.org/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.putnamesc.org/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/robots.txt\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/robots.txt\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
       },
       {
         "url": "https://www.putnamesc.org/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.putnamesc.org/sitemap.xml\ncurl: (6) Could not resolve host: www.putnamesc.org\n"
       }
     ],
     "hasDistrictLeaf": false,
@@ -3447,6 +3455,10 @@
     "finalUrl": null,
     "title": "",
     "matches": [],
+    "rootSignals": {
+      "hasDistrictText": false,
+      "hasServiceText": false
+    },
     "attempts": [
       {
         "candidate": "https://trumbull.k12.oh.us/",
@@ -3456,7 +3468,7 @@
       {
         "candidate": "https://trumbull.k12.oh.us/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://trumbull.k12.oh.us/\ncurl: (6) Could not resolve host: trumbull.k12.oh.us\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://trumbull.k12.oh.us/\ncurl: (6) Could not resolve host: trumbull.k12.oh.us\n"
       },
       {
         "candidate": "https://www.trumbull.k12.oh.us/",
@@ -3466,17 +3478,17 @@
       {
         "candidate": "https://www.trumbull.k12.oh.us/",
         "method": "curl",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/\ncurl: (28) Connection timed out after 15006 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/\ncurl: (28) Connection timed out after 8011 milliseconds\n"
       }
     ],
     "sitemapAttempts": [
       {
         "url": "https://www.trumbull.k12.oh.us/robots.txt",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/robots.txt\ncurl: (28) Connection timed out after 15012 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/robots.txt\ncurl: (28) Connection timed out after 8010 milliseconds\n"
       },
       {
         "url": "https://www.trumbull.k12.oh.us/sitemap.xml",
-        "error": "Command failed: curl -L --max-time 15 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/sitemap.xml\ncurl: (28) Connection timed out after 15003 milliseconds\n"
+        "error": "Command failed: curl -L --max-time 8 -A AblefullBot/1.0 (bounded Ohio education live leaf probe) -sS https://www.trumbull.k12.oh.us/sitemap.xml\ncurl: (28) Connection timed out after 8008 milliseconds\n"
       }
     ],
     "hasDistrictLeaf": false,

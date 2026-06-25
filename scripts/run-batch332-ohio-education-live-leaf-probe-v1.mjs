@@ -67,6 +67,7 @@ const URL_PATH_TERMS = [
 ];
 
 const USER_AGENT = 'AblefullBot/1.0 (bounded Ohio education live leaf probe)';
+const UNRESOLVED_ONLY = process.env.OHIO_UNRESOLVED_ONLY === '1';
 
 const LESSON_HEADING =
   '### Bounded Homepage Plus Sitemap Review Can Recover Local Education Leaves Without Broad Search';
@@ -93,6 +94,21 @@ function writeJson(filePath, value) {
 function writeJsonl(filePath, rows) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, `${rows.map((row) => JSON.stringify(row)).join('\n')}${rows.length ? '\n' : ''}`);
+}
+
+function loadExistingProbeRows() {
+  if (!fs.existsSync(OUTPUTS.probe)) return [];
+  return readJson(OUTPUTS.probe);
+}
+
+function loadExistingUnresolvedRoots() {
+  if (!fs.existsSync(OUTPUTS.countyCoverage)) return new Set();
+  const rows = readJsonl(OUTPUTS.countyCoverage);
+  return new Set(
+    rows
+      .filter((row) => row.county_status === 'unresolved' && row.root)
+      .map((row) => normalizeRoot(String(row.root))),
+  );
 }
 
 function sanitizeText(value) {
@@ -154,6 +170,7 @@ function extractHomepageMatches(html, baseUrl) {
   const title = sanitizeText($('title').first().text());
   const finalHost = new URL(baseUrl).hostname.toLowerCase();
   const matches = [];
+  const bodyText = sanitizeText($('body').text());
 
   $('a[href]').each((_, element) => {
     const href = sanitizeText($(element).attr('href'));
@@ -175,13 +192,58 @@ function extractHomepageMatches(html, baseUrl) {
     deduped.push(match);
   }
 
-  return { title, matches: deduped };
+  const loweredText = bodyText.toLowerCase();
+  const rootSignals = {
+    hasDistrictText: [
+      'districts served',
+      'districts we serve',
+      'member districts',
+      'member school districts',
+      'our schools',
+      'schools we serve',
+      'school districts',
+      'district administration',
+    ].some((term) => loweredText.includes(term)),
+    hasServiceText: [
+      'special education',
+      'student services',
+      'pupil services',
+      'programs & services',
+      'programs and services',
+      'school age services',
+    ].some((term) => loweredText.includes(term)),
+  };
+
+  if (rootSignals.hasDistrictText) {
+    deduped.unshift({
+      label: 'homepage-text districts-served/member-districts/our-schools',
+      url: baseUrl,
+    });
+  }
+
+  if (rootSignals.hasServiceText) {
+    deduped.unshift({
+      label: 'homepage-text special-education/student-services/programs-services',
+      url: baseUrl,
+    });
+  }
+
+  const dedupedSignals = [];
+  const seenSignals = new Set();
+  for (const match of deduped) {
+    const key = `${match.url}::${match.label}`;
+    if (seenSignals.has(key)) continue;
+    seenSignals.add(key);
+    dedupedSignals.push(match);
+  }
+
+  return { title, matches: dedupedSignals, rootSignals };
 }
 
 function curlText(url) {
   return execFileSync(
     'curl',
-    ['-L', '--max-time', '15', '-A', USER_AGENT, '-sS', url],
+    ['-L', '--max-time', '8', '-A', USER_AGENT, '-sS', url],
     { encoding: 'utf8', maxBuffer: 4 * 1024 * 1024 },
   );
 }
@@ -275,6 +337,7 @@ async function probeRoot(rootRecord) {
   let successUrl = null;
   let title = '';
   let matches = [];
+  let rootSignals = { hasDistrictText: false, hasServiceText: false };
 
   for (const candidate of [...new Set(primaryCandidates)]) {
     try {
@@ -292,6 +355,7 @@ async function probeRoot(rootRecord) {
         successUrl = response.url;
         title = extracted.title;
         matches = extracted.matches;
+        rootSignals = extracted.rootSignals;
       }
       if (extracted.matches.length) break;
     } catch (error) {
@@ -317,6 +381,7 @@ async function probeRoot(rootRecord) {
         successUrl = candidate;
         title = sanitizeText(titleMatch?.[1] || extracted.title);
         matches = extracted.matches;
+        rootSignals = extracted.rootSignals;
       }
       if (extracted.matches.length) break;
     } catch (error) {
@@ -347,6 +412,7 @@ async function probeRoot(rootRecord) {
     finalUrl: successUrl,
     title,
     matches: combinedMatches.slice(0, 12),
+    rootSignals,
     attempts,
     sitemapAttempts: sitemap.tried,
     hasDistrictLeaf,
@@ -565,11 +631,26 @@ export async function generateBatch332OhioEducationLiveLeafProbeV1() {
       countyIds: [...entry.countyIds].sort(),
     }))
     .sort((a, b) => b.countyRows - a.countyRows || a.root.localeCompare(b.root));
-  const probeRows = [];
-  for (const rootRecord of rootRecords) {
-    probeRows.push(await probeRoot(rootRecord));
+
+  const unresolvedRoots = UNRESOLVED_ONLY ? loadExistingUnresolvedRoots() : null;
+  const existingProbeRows = loadExistingProbeRows();
+  const existingProbeMap = new Map(existingProbeRows.map((row) => [normalizeRoot(String(row.root)), row]));
+
+  const rootRecordsToProbe = unresolvedRoots
+    ? rootRecords.filter((entry) => unresolvedRoots.has(entry.root))
+    : rootRecords;
+
+  const freshProbeRows = [];
+  for (const rootRecord of rootRecordsToProbe) {
+    freshProbeRows.push(await probeRoot(rootRecord));
     await sleep(150);
   }
+
+  const probeRowMap = new Map(existingProbeRows.map((row) => [normalizeRoot(String(row.root)), row]));
+  for (const row of freshProbeRows) {
+    probeRowMap.set(normalizeRoot(String(row.root)), row);
+  }
+  const probeRows = rootRecords.map((entry) => probeRowMap.get(entry.root)).filter(Boolean);
 
   const countyCoverageById = new Map();
   for (const probe of probeRows) {
@@ -623,6 +704,8 @@ export async function generateBatch332OhioEducationLiveLeafProbeV1() {
     rootsProbed: probeRows.length,
     rootsWithMatches: probeRows.filter((row) => row.matches.length > 0).length,
     rootsWithoutMatches: probeRows.filter((row) => row.matches.length === 0).length,
+    rerunMode: UNRESOLVED_ONLY ? 'unresolved_only_merge' : 'full',
+    freshRootsProbed: freshProbeRows.length,
     primaryGapReason:
       `bounded_live_ohio_education_leaf_probe_recovers_${strongCounties.length}_strong_and_${partialCounties.length}_partial_counties_but_${unresolvedCounties.length}_counties_still_unresolved`,
   };

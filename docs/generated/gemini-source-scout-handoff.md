@@ -1,6 +1,6 @@
 # Gemini Source Scout Handoff
 
-Updated: 2026-06-25
+Updated: 2026-06-24
 
 Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.
 
@@ -20,7 +20,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
 - North Dakota: `generic_or_statewide_evidence_used_where_local_required`
-- Ohio: `bounded_live_ohio_education_leaf_probe_recovers_51_strong_and_24_partial_counties_but_13_counties_still_unresolved`
+- Ohio: `bounded_live_ohio_education_leaf_probe_recovers_54_strong_and_24_partial_counties_but_10_counties_still_unresolved`
 - Oklahoma: `live_okdhs_public_county_widget_salvages_alfalfa_but_still_only_publishes_two_rows_while_combined_official_county_local_coverage_stops_at_46_and_leaves_31`
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `live_sd_educational_directory_exists_but_local_district_leaves_are_unauthored_and_localoffices_root_has_no_public_county_contract`
@@ -32,44 +32,53 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Oklahoma
+## Current Focus State: Ohio
 
 ### Blocker Reason
 
-`county_local_disability_resources` remains the top Oklahoma blocker. The live OKDHS county widget is official but still only publishes county entries for Adair and Alfalfa, and the same contact-us page still exposes no new county-complete export or public-assistance office directory beyond that widget and the child-support tree. The Alfalfa row is good enough to salvage one county because it preserves a local office contract, but the Adair row still only provides a service note plus statewide phone routing. The broader public KML plus the salvaged Alfalfa row still stop at 46 benefit-capable counties, and the same host only proves a county-complete tree for child-support offices, not the missing disability/local-routing remainder.
+`district_or_county_education_routing` remains the top Ohio blocker. The bounded live same-domain education leaf probe recovered strong exact local education leaves for 54 counties and partial exact local education leaves for 24 more counties from existing Ohio ESC and district-owned roots, but 10 counties still point to dead, unresolvable, transport-broken, or no-leaf roots, so the state still cannot clear county-grade education routing.
 
 ### Exact Evidence Needed
 
-- Any current official Oklahoma county-local office directory or export that closes the 31-county remainder on the OKDHS host.
-- Any official county-owned or state-owned successor leaves that explicitly map the unresolved counties to public assistance or disability-routing offices.
-- Any public API, CSV, JSON, ArcGIS, or HTML contract on the official host that exposes the missing county assignments directly.
+- Reviewed exact local education leaves for the remaining unresolved counties, ideally district-owned or ESC-owned pages that explicitly preserve `districts served`, `member districts`, `our schools`, `special education`, or `student services` on the same official host.
+- For roots that are dead or unresolvable, a reviewed official successor root or exact replacement local leaf on the real county ESC or district host.
+- For roots that are live but generic, a same-domain exact leaf found from sitemap, navigation, or official district/ESC directories.
 
 ### Useful Official URLs Already Tried
 
-- [Oklahoma Human Services Contact Us](https://oklahoma.gov/okdhs/contact-us.html)
-- [Oklahoma Human Services county widget leaf](https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html)
-- [Oklahoma Human Services map2 page](https://oklahoma.gov/okdhs/contact-us/map2.html)
-- [Oklahoma Human Services mapconfig2 model](https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json)
-- [Oklahoma Human Services public widget feed](https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json)
-- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)
-- [Oklahoma Child Support offices tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)
-- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)
+- [Educational Service Center of Central Ohio](https://www.escco.org/)
+- [East Central Ohio ESC](https://www.ecoesc.org/)
+- [Northwest Ohio ESC](https://www.nwoesc.org/)
+- [Ohio Valley Educational Service Center](https://www.ovesc.org/)
+- [Tri-County Educational Service Center](https://www.youresc.k12.oh.us/)
+- [Athens Meigs ESC](https://www.athensmeigs.com/)
+- [South Central Ohio ESC districts](https://www.scoesc.org/districts)
+- [Western Buckeye ESC schools](https://www.wbesc.org/our-schools)
+- [Hancock County ESC sitemap leaf](https://www.hancockesc.org/page/schools-we-serve/)
+- [Ross Pike ESD sitemap leaf](https://www.rpesd.org/page/special-education/)
 
-### Top Remaining Source-Scouting Targets
+### Remaining Unresolved County Roots
 
-- Any exact official OKDHS county-office export or county-filter contract that covers the unresolved counties.
-- Any official county-level benefit or disability-routing leaf linked from the same host but not yet packeted.
-- The current measured county remainder is: Adair, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
+- brown => https://www.brown.k12.oh.us
+- clermont => https://www.ccesc.org
+- columbiana => https://www.ccesc.k12.oh.us
+- fairfield => https://www.fairfieldesc.org
+- gallia => https://www.gvesc.org
+- lawrence => https://www.lawrenceesc.org
+- mercer => https://www.merceresc.org
+- putnam => https://www.putnamesc.org
+- trumbull => https://www.trumbull.k12.oh.us
+- vinton => https://www.gvesc.org
 
-## Next State Order After Oklahoma
+## Next State Order After Ohio
 
-1. Ohio
-2. Minnesota
-3. Maine
-4. Idaho
-5. Arizona
-6. Massachusetts
-7. New Mexico
-8. South Dakota
-9. Rhode Island
-10. Virginia
+1. Minnesota
+2. Maine
+3. Idaho
+4. Arizona
+5. Massachusetts
+6. New Mexico
+7. South Dakota
+8. Rhode Island
+9. Virginia
+10. West Virginia
