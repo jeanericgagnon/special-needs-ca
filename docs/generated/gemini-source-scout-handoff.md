@@ -10,7 +10,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 ## Current Blocked States
 
-- Alaska: `reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract`
+- Alaska: `reviewed_live_dpa_offices_and_dpa_services_pages_still_lack_borough_assignment_while_raw_health_page_sitemap_robots_and_search_all_403`
 - Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves`
 - Idaho: `remaining_idaho_district_roots_now_reduce_to_wrong_role_contact_or_title_ix_leaves_without_special_education_or_student_services_routing`
 - Maine: `official_dhhs_nav_stack_still_exposes_office_addresses_and_labels_but_no_county_or_service_area_contract`
@@ -28,42 +28,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: New Mexico
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is now the highest-priority New Mexico blocker. County-local routing no longer blocks the state: the current official HCA `Field Offices` page on `https://www.hca.nm.gov/lookingforassistance/field_offices/` now preserves county-to-office service-area assignments across all 33 counties, clearing the older Catron/Harding/Mora/Union remainder. New Mexico still remains BLOCKED because the education lane is now source-final on the state hosts: the legacy `education.new-mexico.gov` family is unresolvable, the current `webnew.ped.state.nm.us` host family still times out under bounded exact probes, and the packet still preserves zero reviewed district-owned, county-grade, or regional local education leaves on disk. VR remains a secondary blocker because the official DVR root still returns HTTP 401 with no reviewed public alternate.
+`county_local_disability_resources` is the highest-priority Alaska blocker. The current official Alaska Department of Health pages now prove that DPA offices and services are live in browser-readable review, but they still stop short of the county-equivalent contract needed for California-grade local routing. The exact `Division of Public Assistance (DPA) Offices` page preserves real offices, addresses, hours, fax numbers, and virtual routing by broad regions only. The sibling `Division of Public Assistance (DPA) Services` page confirms Alaska Connect, the Virtual Contact Center, and a generic `Office locations` path, but it only loops back to the same region-level office surface and statewide contact paths. In the raw low-token lane, the same health host still fails closed on the page, sitemap, robots, and bounded site-search URLs with the Cloudflare `Just a moment...` shell. DFCS remains a dead-end successor lane with no borough or census-area assignment contract.
 
 ### Exact Evidence Needed
 
-- Any reviewed district-owned or regional New Mexico special-education, student-services, or exceptional-student leaf that can clear county-grade education routing without relying on the timed-out PED host.
-- Any official New Mexico regional-education or district directory artifact on a public host that preserves local routing contact fields for county coverage.
-- Any reviewed public alternate official VR / Pre-ETS root that truthfully replaces the current 401 `https://www.dvr.nm.gov/` lane.
+- Any reviewed official Alaska page, export, PDF, or public API that explicitly assigns boroughs or census areas to DPA/public-assistance offices.
+- Any official county-equivalent office directory or map layer on `health.alaska.gov`, `dfcs.alaska.gov`, or another current Alaska state host that names boroughs or census areas in the office assignment itself.
+- Any official public data endpoint behind the reviewed DPA office experience that turns the current region-only page into a borough/census-area contract.
 
 ### Useful Official URLs Already Tried
 
-- [Current HCA Field Offices](https://www.hca.nm.gov/lookingforassistance/field_offices/)
-- [Older HCA Field Offices archive](https://www.hca.nm.gov/lookingforassistance/field_offices_1/)
-- [Current PED root](https://webnew.ped.state.nm.us/)
-- [PED Special Education Bureau](https://webnew.ped.state.nm.us/bureaus/special-education/)
-- [Legacy education host](https://education.new-mexico.gov/)
-- [Official DVR root](https://www.dvr.nm.gov/)
+- [DPA Offices](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [DPA Services](https://health.alaska.gov/en/services/division-of-public-assistance-dpa-services/)
+- [DPA landing page](https://health.alaska.gov/en/division-of-public-assistance/)
+- [health.alaska.gov sitemap](https://health.alaska.gov/sitemap.xml)
+- [health.alaska.gov robots](https://health.alaska.gov/robots.txt)
+- [health.alaska.gov search for public assistance](https://health.alaska.gov/en/search/?q=public+assistance)
+- [DFCS root](https://dfcs.alaska.gov/Pages/default.aspx)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any district-owned or regional public education leaf for New Mexico that preserves special-education or student-services routing on a live local host.
-- Any reviewed public export, directory, or regional crosswalk that clears New Mexico county-grade education routing without returning to the timed-out PED host family.
-- Any reviewed public alternate official VR root or public landing page that truthfully replaces the 401 DVR root.
+- Any current Alaska state-hosted office map, export, or directory that names boroughs or census areas directly in the DPA assignment contract.
+- Any official Alaska geospatial or data endpoint that powers the reviewed DPA office pages and exposes county-equivalent service areas.
+- Any reviewed official replacement for the region-only DPA office surface that preserves borough or census-area routing on a public host.
 
-## Next State Order After New Mexico
+## Next State Order After Alaska
 
 1. South Dakota
-2. Rhode Island
-3. Virginia
-4. West Virginia
-5. North Dakota
-6. Wisconsin
-7. Washington
-8. Tennessee
-9. Vermont
-10. Wyoming
+2. Maine
+3. Idaho
+4. Arizona
+5. Massachusetts
+6. New Mexico
+7. Rhode Island
+8. Virginia
+9. West Virginia
+10. North Dakota
