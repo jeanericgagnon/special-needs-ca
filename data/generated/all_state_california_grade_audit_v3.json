@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-25T18:04:40.078Z",
+  "generatedAt": "2026-06-25T18:10:02.076Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 36,
-    "BLOCKED": 14
+    "COMPLETE": 37,
+    "BLOCKED": 13
   },
-  "indexSafeCount": 36,
+  "indexSafeCount": 37,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -3428,8 +3428,8 @@
       "stateId": "wisconsin",
       "stateCode": "WI",
       "stateName": "Wisconsin",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -3437,11 +3437,11 @@
       "legacyManualReviewRate": 58.86,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 72,
-      "strongCriticalFamilies": 8,
-      "weakCriticalFamilies": 3,
-      "missingCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
+      "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 67,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "wisconsin",
         "state_code": "WI",
@@ -3480,19 +3480,19 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "blocked_reviewed_first_party_support_without_explicit_pti_designation",
-        "legal_aid": "missing",
+        "parent_training_information_center": "verified_state_grade",
+        "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_6_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch379_wisconsin_dpi_directory_completion_v1",
+      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "wyoming",

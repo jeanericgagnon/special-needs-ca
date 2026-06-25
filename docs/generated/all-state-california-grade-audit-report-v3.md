@@ -9,12 +9,12 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Classification counts
 
-- COMPLETE: 36
-- BLOCKED: 14
+- COMPLETE: 37
+- BLOCKED: 13
 
-- index-safe states: 36
-- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, West Virginia
-- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Washington, Wisconsin, Wyoming
+- index-safe states: 37
+- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, West Virginia, Wisconsin
+- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Washington, Wyoming
 
 ## Notes
 
@@ -31,3 +31,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Idaho remains blocked after Fremont Child Find recovery: Fremont now clears from public district-owned Child Find screening events on the official Apptegy events API, but Camas, Clark, and Shoshone still only materialize wrong-role contact, Title IX, or federal-program leaves rather than local special-education routing.
 - New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the fuller official failure mode: the live PED SharePoint directory host, its REST-backed `2017 NM Schools` list, the REC grouping page, and six public workbooks for schools, superintendents, REC directors, and principals are all reviewable, but none publishes a county field or REC county-service-area contract.
 - New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, while the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, so no public official recovery lane exists yet.
+- Wisconsin is now COMPLETE/index-safe from the live DPI School Directory county/CESA routing contract plus refreshed official DHS developmental-disability, Birth to 3, and DVR transition evidence.
