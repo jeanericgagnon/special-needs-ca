@@ -449,3 +449,6 @@
 
 ### Treat Official HTML Pages That Only Replay PDFs As Exhausted
 *   **Lesson:** If a live official HTML oversight page only points back to the same image-heavy PDF artifacts already in the blocker set, count the HTML lane as exhausted rather than leaving a fake “reviewed HTML leaves” hope open. Arizona AHCCCS kept `UniversityFamilyCare.html` public, but its county-relevant links only replayed `Pima.pdf`, `PimaCountyAdmin.pdf`, and `CountyAdminOffice.pdf`.
+
+### Public County Search Forms Can Outrun Partial Storefront Lanes
+*   **Lesson:** If a first-party benefits SPA visibly exposes a full county dropdown and anonymously materializes county-specific result cards with local names, addresses, county labels, and hours, that public search form can clear a county-local routing family even when an older linked storefront CSV is still partial. Florida only completed once the reviewed live `MyACCESS` `Community Partner Search` page showed all 67 counties and returned county-specific results directly on the public page.

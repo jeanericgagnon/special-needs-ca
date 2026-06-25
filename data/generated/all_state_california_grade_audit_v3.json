@@ -2,17 +2,17 @@
   "generatedAt": "2026-06-24T23:55:00.000Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 29,
-    "BLOCKED": 21
+    "COMPLETE": 30,
+    "BLOCKED": 20
   },
-  "indexSafeCount": 29,
+  "indexSafeCount": 30,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Ohio live education leaf probe sharpened blocked county-grade coverage.",
+  "lessonsUpdate": "Florida public MyACCESS county search now materially clears county-local routing.",
   "states": [
     {
       "stateId": "alabama",
@@ -578,8 +578,8 @@
       "stateId": "florida",
       "stateCode": "FL",
       "stateName": "Florida",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "READY_FOR_ALLOWLIST",
       "legacyGateScore": 99.8,
@@ -587,11 +587,11 @@
       "legacyManualReviewRate": 0,
       "legacyAllowlistedCountyCount": 14,
       "countyCount": 67,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "florida",
         "state_code": "FL",
@@ -637,12 +637,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_partial_storefront_lane_and_recovered_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only"
+        "county_local_disability_resources": "verified_current_public_myaccess_county_partner_search"
       },
       "packetGenerated": true,
-      "packetBatch": "batch321_florida_auth_only_endpoint_finality_v1",
-      "packetPrimaryGapReason": "official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetBatch": "batch343_florida_public_myaccess_county_search_v1",
+      "packetPrimaryGapReason": "none",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "georgia",

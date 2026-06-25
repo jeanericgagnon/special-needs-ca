@@ -6,13 +6,12 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Texas, Utah
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Texas, Utah
 
 ## Current Blocked States
 
 - Alaska: `reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract`
 - Arizona: `ahcccs_university_familycare_html_lane_replays_only_pdf_admin_artifacts_and_azed_remaining_three_public_domains_still_lack_role_leaves`
-- Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_hold_at_13_counties_after_live_bear_lake_special_education_leaf_and_remaining_county_bearing_district_roots_still_lack_role_evidence`
 - Maine: `official_maine_contact_and_superintendent_selectors_are_live_but_current_bangor_materialization_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
@@ -32,46 +31,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-Arizona still has two critical blockers, and the county-local blocker is now the sharper one. The official AHCCCS oversight page `https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html` is public and reviewable, but its county-relevant links only replay the same PDF artifacts already in the blocker lane: `Pima.pdf`, `PimaCountyAdmin.pdf`, and `CountyAdminOffice.pdf`. The current repo/runtime still has no reviewable OCR or PDF text stack for those files. DES remains challenge-blocked on the public office-locator family. Education remains separately blocked, but it is already source-final on the last three public district domains: Coconino, Mohave, and Yavapai still expose no role-bearing local leaves after sitemap, API, and exact-slug replay.
+`county_local_disability_resources` is the only remaining Alaska critical blocker. In the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live official DPA landing page and links directly to `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/`, which is now publicly reviewable. That exact DPA offices page preserves regional-office groupings, named offices, office hours, full street addresses, fax numbers, a virtual contact center, and secure document upload routing on the official health host. But it still groups offices only by broad regions and still does not map Alaska boroughs or census areas to those offices. The reviewed page exposes no borough or census-area assignment contract, the official DPA dashboard and Medicaid snapshot PDFs stay region-only, and DFCS successor surfaces still add no local mapping contract. Alaska therefore remains BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- A committed OCR artifact or other reviewable text extraction for the official AHCCCS county-admin PDFs that truthfully yields county-to-office assignment evidence.
-- Or, a new official AHCCCS or DES HTML page that directly exposes county-admin or county-to-office assignment fields in public HTML.
-- Separately, any newly published district-owned special-education, special-services, student-services, or 504 leaf on the remaining three Arizona district domains.
+- A reviewable public official page, export, or PDF that maps Alaska boroughs or census areas to DPA offices.
+- Any official borough-to-office or census-area-to-office contract on the current Department of Health or DFCS successor hosts.
+- Any official county-equivalent routing surface that materially outruns the current region-only DPA offices page.
 
 ### Useful Official URLs Already Tried
 
-- [AHCCCS UniversityFamilyCare oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [AHCCCS ALTCS Offices page](https://www.azahcccs.gov/members/ALTCSlocations.html)
-- [AHCCCS Contacts page](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
-- [AHCCCS ALTCS Member Resources page](https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html)
-- [AHCCCS CountyAdminOffice PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
-- [AHCCCS PimaCountyAdmin PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
-- [AHCCCS Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
-- [Coconino County Accommodation School District](https://www.ccasdaz.org/)
-- [Mohave Accelerated Schools](https://www.mohavelearning.org/)
-- [Yavapai County High School](https://www.yavapaicountyhighschool.com/)
+- [Alaska DPA landing page](https://health.alaska.gov/dpa)
+- [Alaska DPA offices page](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska DPA dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
+- [Alaska Medicaid enrollment monthly snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official AHCCCS or DES HTML page that exposes county-admin, county office, counties served, or county-to-office assignment fields directly in public HTML.
-- Any committed OCR artifact for the existing official AHCCCS county-admin PDFs.
-- Any exact district-owned local leaf on the remaining Coconino, Mohave, or Yavapai district hosts that explicitly carries special-education, special-services, student-services, or 504 role text.
+- Any official Alaska public-assistance office export with borough or census-area assignments.
+- Any official PDF or HTML lane on the health.alaska.gov stack that adds county-equivalent geography instead of broad regions only.
+- Any DFCS successor routing surface that names boroughs or census areas alongside DPA offices.
+## Next State Order After Alaska
 
-## Next State Order After Arizona
-
-1. Massachusetts
-2. New Mexico
-3. South Dakota
-4. Rhode Island
-5. Virginia
-6. West Virginia
-7. North Dakota
-8. Wisconsin
-9. Washington
-10. Tennessee
+1. Oklahoma
+2. Ohio
+3. Minnesota
+4. Maine
+5. Idaho
+6. Arizona
+7. Massachusetts
+8. New Mexico
+9. South Dakota
+10. Rhode Island

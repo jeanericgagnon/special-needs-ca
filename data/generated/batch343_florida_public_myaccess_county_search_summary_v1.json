@@ -1,0 +1,11 @@
+{
+  "batch": "batch343_florida_public_myaccess_county_search_v1",
+  "state": "florida",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "county_count": 67,
+  "county_dropdown_count": 67,
+  "alachua_result_count": 7,
+  "washington_result_count": 1,
+  "remaining_blocker_family": null
+}

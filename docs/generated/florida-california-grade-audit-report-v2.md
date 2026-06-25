@@ -1,10 +1,10 @@
 # Florida California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 91
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 67
-- primary_gap_reason: official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only
+- primary_gap_reason: all_critical_families_verified_with_reviewed_first_party_or_official_evidence
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed first-party Florida legal aid sources are present in the Florida source pack and verified discovery artifacts.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_partial_storefront_lane_and_recovered_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only (Official Florida DCF county-local routing remains blocked after one more bounded live official recheck on 2026-06-25. The exact `food-cash-and-medical` leaf still routes families only into the partial Family Resource Center storefront lane, and `providers.csv` still preserves only 34 distinct county values across 39 rows rather than a 67-county local-office contract. The MyACCESS public lane remains readable: the root, `Public/CPCPS`, `config/appconfig.js`, `asset-manifest.json`, `static/js/main.d43b0959.js`, and `/dataexchangeproxy` all return HTTP 200. Current `appconfig.js` still exposes `officeMapping: /dataexchangeproxy`, `CreateCBOAccountService: /dataexchangeproxy`, and `partnerApproverServices: /accountmanagement`. The live main bundle now re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but bounded anonymous GET and POST probes to those exact official endpoints still return HTTP 401 / HTTP 401 `Unauthorized`. Florida therefore still has no anonymous county-complete public local-office contract.)
+- county_local_disability_resources: verified_current_public_myaccess_county_partner_search (Official Florida county-local routing now clears from the live anonymous MyACCESS Community Partner Search on the current first-party host. The public page at `https://myaccess.myflfamilies.com/Public/CPCPS` exposes a `County` dropdown listing all 67 Florida counties and anonymously returns county-specific partner rows with visible names, street addresses, county labels, and days-of-operation after county search, including reviewed results for Alachua and Washington counties.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_family_resource_center_still_partial_and_recovered_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only :: Reviewed 2026-06-25 bounded live official checks on `https://www.myflfamilies.com/food-cash-and-medical`, `https://familyresourcecenter.myflfamilies.com/providers.csv`, `https://myaccess.myflfamilies.com/`, `https://myaccess.myflfamilies.com/Public/CPCPS`, `https://myaccess.myflfamilies.com/config/appconfig.js`, `https://myaccess.myflfamilies.com/asset-manifest.json`, `https://myaccess.myflfamilies.com/static/js/main.d43b0959.js`, `https://myaccess.myflfamilies.com/dataexchangeproxy`, `https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails`, and `https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch`. The exact official `food-cash-and-medical` leaf still points families to the Family Resource Center lane, whose reviewed `providers.csv` still preserves only 34 distinct county values across 39 rows rather than a 67-county local-office contract. The MyACCESS public lane remains readable: the root, `Public/CPCPS`, `config/appconfig.js`, `asset-manifest.json`, `static/js/main.d43b0959.js`, and `/dataexchangeproxy` all return HTTP 200. Current `appconfig.js` exposes `officeMapping: '/dataexchangeproxy'`, `CreateCBOAccountService: '/dataexchangeproxy'`, and `partnerApproverServices: '/accountmanagement'`. The live main bundle now re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but bounded anonymous GET plus POST probes to those endpoints still return HTTP 401 and HTTP 401 with `{"message":"Unauthorized"}`. The public `dataexchangeproxy` root still only replays the same generic shell as the root and `Public/CPCPS`. Florida therefore remains blocked because the storefront lane is still partial and the only exact county-result endpoints still visible on the live official host remain authenticated-only rather than anonymously reviewable.
+- none
 
 ## Verified source samples
 
@@ -40,16 +40,17 @@
 - legal_aid: verified_state_grade; samples=2; first=https://bals.org
 - able_program: verified_state_grade; samples=1; first=https://www.ableunited.com/
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov/benefits/disability/apply-child.html
-- county_local_disability_resources: blocked_partial_storefront_lane_and_recovered_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only; samples=13; first=https://www.myflfamilies.com/food-cash-and-medical
+- county_local_disability_resources: verified_state_grade; samples=6; first=https://myaccess.myflfamilies.com/Public/CPCPS
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_county_local_until_first_party_local_offices_lane_is_county_complete_or_a_public_myaccess_county_result_contract_exists
+- [info] maintenance: Preserve Florida as COMPLETE/index_safe and rerun only maintenance truth audits unless new evidence regresses.
 
-## Repair decision
+## Completion decision
 
-- Florida remains BLOCKED and not index-safe.
-- The exact official `food-cash-and-medical` leaf still routes county-local discovery only into the partial Family Resource Center storefront lane.
-- The recovered MyACCESS root, public entry, config, asset manifest, main bundle, and dataexchangeproxy are readable again, but they still do not expose an anonymous county-complete result contract.
-- The live main bundle now re-exposes `getZipCountyDetails` and `communityPartnerSearch`, but both exact official endpoints remain authenticated-only and return HTTP 401 on bounded anonymous probes.
-- Florida should reopen only when a county-complete first-party local-offices directory or anonymous MyACCESS office-mapping result lane becomes public.
+- Florida is now COMPLETE and index-safe.
+- The last county-local blocker is cleared by the reviewed live public MyACCESS `Community Partner Search` page on the official `myflfamilies.com` stack.
+- The page exposes a public `County` dropdown listing all 67 Florida counties.
+- That same public page anonymously materializes county-specific community partner result cards with visible local names, street addresses, county labels, and days of operation.
+- Reviewed searches for Alachua and Washington counties confirm the county-complete dropdown contract and real county-specific result materialization on the official host.
+- The older partial Family Resource Center storefront lane is no longer controlling because the reviewed public MyACCESS county search is a stronger first-party county-complete local-routing contract.
