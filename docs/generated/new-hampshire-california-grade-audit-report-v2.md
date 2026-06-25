@@ -66,13 +66,11 @@
 - The saved `dhhs.new-hampshire.gov` successor family is still DNS-dead on the exact Medicaid, DD, waiver, and early-intervention roots already in the packet.
 - The direct DHHS, education, and NHES subdomain families plus the obvious `nh.gov` path successors still return the same short `Access Denied` shell with HTTP 403 immediately.
 - One more bounded diagnostic pass now closes the obvious recovery surfaces too: even `robots.txt` and `sitemap.xml` on the official DHHS and `nh.gov/dhhs` host family return that same short 403 shell.
-- The statewide special-education family can no longer stay green off that blocked DOE host family because its only saved official evidence lane is now the same blocked root-plus-leaf set as the district-routing family.
-- No reviewed public official successor host is currently preserved for DHHS, statewide special education, district-directory, county-office, or VR lanes.
+- No reviewed public official successor host is currently preserved for DHHS, district-directory, county-office, or VR lanes.
 
 ## Completion decision
 
 - New Hampshire remains `BLOCKED` and `index_safe=false`.
 - The highest-priority blocker is still the DHHS host-family failure because it keeps Medicaid, waiver, DD, early-intervention, and county-local lanes blocked at once.
-- Statewide special education is now also blocked truthfully because no reviewed public Part B authority leaf survives on the official education host family.
-- District/county education routing remains separately blocked because the official education host family and obvious `nh.gov` successors still provide no public district- or county-grade routing surface.
+- Education remains separately blocked because the official education host family and obvious `nh.gov` successors still provide no public district- or county-grade routing surface.
 - VR remains a major blocker because the official NHES lane and the likely successor roots are still either access-denied or unresolvable.

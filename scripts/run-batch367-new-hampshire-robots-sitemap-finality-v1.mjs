@@ -47,6 +47,64 @@ const EDUCATION_REASON =
   'Reviewed 2026-06-25 bounded exact first-party rechecks on the official New Hampshire education host family, both `education.nh.gov` subdomain variants, exact district-directory leaves, the alternate `https://my.doe.nh.gov/ehb/` host, and the likely `nh.gov` successor family. `https://www.education.nh.gov/`, `https://education.nh.gov/`, exact district-directory leaves under `www.education.nh.gov`, and `https://my.doe.nh.gov/ehb/` all still return the same short `Access Denied` shell with HTTP 403. Exact successor probes `https://www.nh.gov/education/` and `https://www.nh.gov/education/doe/` still do the same. No reviewed district- or county-grade education routing chain is publicly fetchable from the current official education family or the obvious `nh.gov` successor roots.';
 const VR_REASON =
   'Reviewed 2026-06-25 the current New Hampshire VR lane against the legacy host assumptions, both `nhes.nh.gov` subdomain variants, and the likely `nh.gov` successor family. The legacy root `dhhs.new-hampshire.gov/rehab` still does not resolve, `https://www.nhes.nh.gov/`, `https://nhes.nh.gov/`, and the BVR disabilities path still return the same short `Access Denied` shell with HTTP 403, `https://www.nheasy.nh.gov/` still does not resolve, and exact successor probes `https://www.nh.gov/nhes/` plus `https://www.nh.gov/employment/` still return the same short `Access Denied` shell with HTTP 403. No reviewed first-party VR or Pre-ETS surface is publicly fetchable from the current official host family or the obvious `nh.gov` successor roots.';
+const CURRENT_FINAL_BLOCKERS = [
+  {
+    family: 'medicaid_state_health_coverage',
+    severity: 'critical',
+    failure_code: 'current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell',
+    evidence: DHHS_REASON,
+    next_action: 'hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved',
+  },
+  {
+    family: 'medicaid_waiver_hcbs_disability_services',
+    severity: 'critical',
+    failure_code: 'current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell',
+    evidence: DHHS_REASON,
+    next_action: 'hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved',
+  },
+  {
+    family: 'developmental_disability_idd_authority',
+    severity: 'critical',
+    failure_code: 'current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell',
+    evidence: DHHS_REASON,
+    next_action: 'hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved',
+  },
+  {
+    family: 'early_intervention_part_c',
+    severity: 'critical',
+    failure_code: 'current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell',
+    evidence: DHHS_REASON,
+    next_action: 'hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved',
+  },
+  {
+    family: 'special_education_idea_part_b',
+    severity: 'critical',
+    failure_code: 'official_nh_statewide_special_education_host_family_and_direct_successors_still_return_access_denied_shell',
+    evidence: EDUCATION_REASON,
+    next_action: 'hold_blocked_until_public_nh_special_education_host_or_statewide_leaf_is_reviewable',
+  },
+  {
+    family: 'district_or_county_education_routing',
+    severity: 'critical',
+    failure_code: 'official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell',
+    evidence: EDUCATION_REASON,
+    next_action: 'hold_blocked_until_public_nh_education_host_or_directory_is_reviewable',
+  },
+  {
+    family: 'county_local_disability_resources',
+    severity: 'critical',
+    failure_code: 'official_nh_dhhs_host_family_and_direct_successors_still_return_access_denied_shell',
+    evidence: DHHS_REASON,
+    next_action: 'hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved',
+  },
+  {
+    family: 'vocational_rehabilitation_pre_ets',
+    severity: 'critical',
+    failure_code: 'official_nh_vr_host_family_still_access_denied_or_unresolvable_with_no_public_successor',
+    evidence: VR_REASON,
+    next_action: 'hold_blocked_until_public_nh_vr_host_is_preserved',
+  },
+];
 const LESSON_HEADING =
   '### Access-Denied Host Families Sometimes Block Diagnostics Too';
 const LESSON_BODY =
@@ -82,7 +140,7 @@ function appendLessonIfMissing(filePath) {
 
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
   return [
-    '# New Hampshire California-Grade Host-Family Finality v5',
+    '# New Hampshire California-Grade Host-Family Finality v6',
     '',
     `- classification: ${summary.classification}`,
     `- index_safe: ${summary.index_safe ? 'true' : 'false'}`,
@@ -235,8 +293,24 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
     batch: BATCH_NAME,
     classification: 'BLOCKED',
     index_safe: false,
+    completeness_pct: 33,
+    strong_critical_families: 4,
+    weak_critical_families: 8,
+    missing_critical_families: 0,
     primary_gap_reason: PRIMARY_GAP_REASON,
     recommended_batch: RECOMMENDED_BATCH,
+    critical_gap_families: [
+      'medicaid_state_health_coverage',
+      'medicaid_waiver_hcbs_disability_services',
+      'developmental_disability_idd_authority',
+      'early_intervention_part_c',
+      'special_education_idea_part_b',
+      'district_or_county_education_routing',
+      'vocational_rehabilitation_pre_ets',
+      'county_local_disability_resources',
+    ],
+    major_gap_families: [],
+    final_blockers: CURRENT_FINAL_BLOCKERS,
     familyStatuses: {
       ...summary.familyStatuses,
       medicaid_state_health_coverage: SHARED_DHHS_STATUS,
@@ -247,15 +321,6 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
       vocational_rehabilitation_pre_ets: VR_STATUS,
       county_local_disability_resources: COUNTY_STATUS,
     },
-    final_blockers: (summary.final_blockers || []).map((row) => {
-      if (['medicaid_state_health_coverage','medicaid_waiver_hcbs_disability_services','developmental_disability_idd_authority','early_intervention_part_c','county_local_disability_resources'].includes(row.family)) {
-        return {
-          ...row,
-          evidence: DHHS_REASON,
-        };
-      }
-      return row;
-    }),
   };
 
   const updatedGapRows = gapRows.map((row) => {
@@ -311,14 +376,14 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
     states: allStateAudit.states.map((row) => (
       row.stateId === 'new-hampshire'
         ? {
-            ...row,
-            classification: 'BLOCKED',
-            indexSafe: false,
-            incorrectlyIndexSafe: false,
-            completenessPct: 42,
-            strongCriticalFamilies: 5,
-            weakCriticalFamilies: 7,
-            missingCriticalFamilies: 0,
+          ...row,
+          classification: 'BLOCKED',
+          indexSafe: false,
+          incorrectlyIndexSafe: false,
+          completenessPct: 33,
+          strongCriticalFamilies: 4,
+          weakCriticalFamilies: 8,
+          missingCriticalFamilies: 0,
             packetGenerated: true,
             packetBatch: BATCH_NAME,
             packetPrimaryGapReason: PRIMARY_GAP_REASON,

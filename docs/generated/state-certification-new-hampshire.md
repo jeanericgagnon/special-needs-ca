@@ -4,7 +4,7 @@
 - pass: false
 - state_classification: BLOCKED
 - index_safe: false
-- completeness_pct: 58
+- completeness_pct: 33
 - checked_files: data/generated/new-hampshire_california_grade_summary_v2.json, data/generated/new-hampshire_gap_matrix_v2.jsonl, data/generated/new-hampshire_failure_ledger_v2.jsonl, data/generated/new-hampshire_verified_sources_v1.jsonl, data/generated/new-hampshire_next_action_queue_v2.jsonl, docs/generated/new-hampshire-california-grade-audit-report-v2.md
 
 ## Result

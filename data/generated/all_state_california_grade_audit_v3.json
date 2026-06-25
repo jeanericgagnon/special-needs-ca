@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T23:11:35.536Z",
+  "generatedAt": "2026-06-25T23:49:35.489Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 40,
@@ -2065,22 +2065,22 @@
         "criticalRolesVerifiedPct": 2
       },
       "familyStatuses": {
-        "medicaid_state_health_coverage": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
-        "medicaid_waiver_hcbs_disability_services": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
-        "developmental_disability_idd_authority": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
-        "early_intervention_part_c": "blocked_saved_dhhs_successor_unresolvable_and_nh_gov_successors_forbidden",
+        "medicaid_state_health_coverage": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
+        "medicaid_waiver_hcbs_disability_services": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
+        "developmental_disability_idd_authority": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
+        "early_intervention_part_c": "blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden",
         "special_education_idea_part_b": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden",
-        "district_or_county_education_routing": "blocked_official_education_hosts_and_nh_gov_successors_forbidden",
-        "vocational_rehabilitation_pre_ets": "blocked_vr_hosts_unresolvable_or_forbidden_with_no_nh_gov_successor",
+        "district_or_county_education_routing": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden",
+        "vocational_rehabilitation_pre_ets": "blocked_vr_hosts_unresolvable_or_forbidden_with_no_public_successor",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_dhhs_hosts_and_nh_gov_successors_forbidden"
+        "county_local_disability_resources": "blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden"
       },
       "packetGenerated": true,
-      "packetBatch": "batch391_new_hampshire_special_ed_downgrade_v1",
+      "packetBatch": "batch367_new_hampshire_robots_sitemap_finality_v1",
       "packetPrimaryGapReason": "official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead",
       "packetRecommendedBatch": "hold_for_public_official_nh_host_recovery_or_export"
     },

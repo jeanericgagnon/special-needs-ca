@@ -21,40 +21,50 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 - Wyoming: `wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract`
 
-## Current Focus State: Idaho
+## Current Focus State: New Hampshire
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now fully reduced to Camas and Clark wrong-role artifacts. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. Fremont still clears from the public official Apptegy events API. Shoshone still clears from the district-owned `Early Childhood Find` page. Camas only exposes a district-owned `Contact Information` leaf with address and phone, and the one linked document on that page exports as a board-of-trustees roster rather than a local special-education route. Clark exposes exact district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page links district-hosted PDFs that remain part of a general-education intervention notice lane, and the Parent Resources page links official `Idaho Child Find` PDFs that still do not preserve extractable local Clark routing or contact evidence. Idaho remains BLOCKED because the remaining district-owned surfaces are real but still the wrong role or too thin for local special-education routing.
+`medicaid_state_health_coverage` is the highest-priority New Hampshire blocker because the same official host-family failure still blocks Medicaid, waiver, DD, early-intervention, and county-local routing together. Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved replacement roots still fail DNS resolution. The direct DHHS roots and exact `/dhhs` successor roots still return the same short `Access Denied` shell with HTTP 403. One more bounded diagnostic pass now shows that even `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, and `https://www.nh.gov/dhhs/sitemap.xml` return the same short 403 shell, so no public successor or export lane is currently preserved on the official DHHS family. Education remains separately blocked because `education.nh.gov`, `www.education.nh.gov`, exact district-directory leaves, `my.doe.nh.gov/ehb/`, and the obvious `nh.gov` education successors all still return that same shell. VR remains separately blocked because the NHES roots, the BVR disabilities path, and the likely `nh.gov` successors still return the same 403 shell or do not resolve. New Hampshire therefore stays BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official district-owned special-education, special-services, student-services, 504, Child Find, or procedural-safeguards leaf on Camas or Clark that also preserves local contact or routing evidence.
-- Any district-owned PDF, handbook, or notice on those two hosts that explicitly preserves special-education routing plus named district contact information rather than only a board roster, general-education notice, or image-only Child Find flyer.
-- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.
+- Any reviewed public official New Hampshire DHHS host that actually renders Medicaid, DD, waiver, early-intervention, or district-office content instead of the Access Denied shell.
+- Any public official district-office or county-export surface on the DHHS family that provides real county or district-office routing.
+- Any reviewed public official New Hampshire education directory or district-profile surface that returns district- or county-grade routing instead of the Access Denied shell.
+- Any reviewed public official New Hampshire VR or BVR surface that loads publicly instead of the same blocked shell.
 
 ### Useful Official URLs Already Tried
 
-- [Camas root](https://www.camascountyschools.org/)
-- [Camas Contact Information](https://www.camascountyschools.org/contact-information)
-- [Camas linked Google Doc export](https://docs.google.com/document/d/1OHWebOtQk9Wvwy8zMd5eFYwub5xPQ7Pg_nnMT20hOOA/export?format=txt)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Clark Parent Notification of General Education Instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)
-- [Clark Parent Resources](https://www.clarkcountyschools161.org/parent-resources)
-- [Oneida Child Find PDF](https://5il.co/26a73)
-- [Fremont district events API](https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/12771/cms/events)
-- [Shoshone Early Childhood Find](https://shoshonesd.org/early-childhood-find/)
+- [DHHS root](https://www.dhhs.nh.gov/)
+- [DHHS root without www](https://dhhs.nh.gov/)
+- [DHHS robots.txt](https://www.dhhs.nh.gov/robots.txt)
+- [DHHS sitemap.xml](https://www.dhhs.nh.gov/sitemap.xml)
+- [saved replacement root](https://dhhs.new-hampshire.gov/)
+- [saved DD replacement root](https://dhhs.new-hampshire.gov/dd)
+- [saved waiver replacement root](https://dhhs.new-hampshire.gov/dd/waivers)
+- [saved early-intervention replacement root](https://dhhs.new-hampshire.gov/earlystart)
+- [nh.gov DHHS successor root](https://www.nh.gov/dhhs/)
+- [nh.gov DHHS robots.txt](https://www.nh.gov/dhhs/robots.txt)
+- [nh.gov DHHS sitemap.xml](https://www.nh.gov/dhhs/sitemap.xml)
+- [nh.gov DHHS contact-us](https://www.nh.gov/dhhs/contact-us/)
+- [nh.gov DHHS district offices](https://www.nh.gov/dhhs/district-offices/)
+- [Education root](https://www.education.nh.gov/)
+- [Education root without www](https://education.nh.gov/)
+- [nh.gov Education successor](https://www.nh.gov/education/)
+- [nh.gov Education DOE successor](https://www.nh.gov/education/doe/)
+- [DOE alternate host](https://my.doe.nh.gov/ehb/)
+- [NHES root](https://www.nhes.nh.gov/)
+- [NHES root without www](https://nhes.nh.gov/)
+- [NHES successor root](https://www.nh.gov/nhes/)
+- [nh.gov employment successor](https://www.nh.gov/employment/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current district-owned special-education, student-services, 504, procedural-safeguards, or Child Find leaf for Camas or Clark.
-- Any current district-owned Camas or Clark PDF/handbook that names special-education routing or district special-ed contact information.
-- Any public Idaho DHW county-to-office contract that can reduce the separate county-local blocker.
+- Any newly public official NH DHHS successor host or export that resolves without the Access Denied shell.
+- Any official New Hampshire education directory, profile export, or district-routing surface that becomes publicly reviewable on the current host family.
+- Any official New Hampshire VR or BVR surface that becomes publicly reviewable on the current host family.
 
-## Next State Order After Idaho
+## Next State Order After New Hampshire
 
-1. New Mexico
-2. Arizona
-3. New Hampshire
+1. None remaining in assigned sequence
