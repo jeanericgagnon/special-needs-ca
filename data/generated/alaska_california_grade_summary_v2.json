@@ -2,7 +2,7 @@
   "state": "alaska",
   "state_code": "AK",
   "state_name": "Alaska",
-  "batch": "batch342_alaska_live_dpa_offices_finality_v1",
+  "batch": "batch344_alaska_health_challenge_regression_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "reviewed_live_dpa_offices_page_now_public_but_only_groups_regional_offices_without_borough_or_census_area_assignment_while_dfcs_surfaces_add_no_local_mapping_contract",
+  "primary_gap_reason": "health_alaska_dpa_service_family_now_returns_cloudflare_challenge_shells_while_dfcs_successor_surfaces_still_add_no_borough_or_census_area_assignment_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -42,12 +42,12 @@
   "final_blockers": [
     {
       "family": "county_local_disability_resources",
-      "failure_code": "reviewed_live_dpa_offices_page_lists_regional_offices_and_locations_but_still_no_borough_or_census_area_assignment_contract",
-      "evidence": "Reviewed 2026-06-25 official Alaska surfaces across the Department of Health DPA host plus the DFCS successor host. In the reviewed browser lane, `https://health.alaska.gov/dpa` now renders a live official DPA landing page and links directly to `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/`, which is now publicly reviewable instead of being only a stale challenge assumption. The exact DPA offices page preserves explicit regional-office groupings, named offices, office hours, full street addresses, fax numbers, a virtual contact center, and secure document upload routing on the official health host. But the page still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. The reviewed page still exposes no reviewable borough or census-area assignment contract. The same host's public data reports stay region-only: `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf` reports recipients by broad regions such as Anchorage/Mat-Su, Gulf Coast, Interior, Northern, Southeast, and Southwest, while `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` reports Medicaid enrollees by regions such as Northern, Southwest, Interior, Mat-Su, Anchorage, Gulf Coast, and Southeast. Neither PDF assigns boroughs or census areas to DPA offices. The DFCS successor surfaces remain negative at the same time: `https://dfcs.alaska.gov/Pages/Services.aspx` still provides only statewide phone routing for Adult Public Assistance and Apply for Medicaid, `https://dfcs.alaska.gov/Pages/Publications.aspx` still exposes no DPA office-routing material, `https://dfcs.alaska.gov/Pages/Site-Map.aspx` still only surfaces wrong-role OCS offices plus Pioneer Homes payment-assistance branches, and `https://dfcs.alaska.gov/Search/default.aspx` still has no usable public results contract. Alaska therefore still lacks any reviewable borough- or census-area-to-office assignment on a public official surface even though the DPA offices page itself is now browser-readable.",
-      "next_action": "hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_or_export"
+      "failure_code": "health_alaska_dpa_service_family_cloudflare_challenge_and_dfcs_successor_surfaces_still_no_county_equivalent_mapping_contract",
+      "evidence": "Reviewed 2026-06-25 official Alaska surfaces across the current Department of Health DPA host plus the DFCS successor host. Raw fetches to `https://health.alaska.gov/dpa`, `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/`, `https://health.alaska.gov/en/services/adult-public-assistance-apa/`, `https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/`, `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf`, and `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` now all return HTTP 403 on the official health host. In the reviewed browser lane, the DPA offices page now lands on a Cloudflare `Just a moment...` shell with the visible heading `Performing security verification`, and the successor Adult Public Assistance and Apply for Medicaid pages also land on `Just a moment...` shells on the same host instead of materializing office or service content. The still-readable DFCS successor surfaces remain negative: `https://dfcs.alaska.gov/Pages/Services.aspx` still only points users to statewide Adult Public Assistance and Apply for Medicaid successor pages, `https://dfcs.alaska.gov/Pages/Publications.aspx` still exposes no DPA office-routing material, and `https://dfcs.alaska.gov/Pages/Site-Map.aspx` still only adds wrong-role OCS offices plus Pioneer Homes payment-assistance branches. Alaska therefore still lacks any reviewable borough- or census-area-to-office assignment contract on a public official surface, and the previously readable DPA office family is now challenge-shelled again.",
+      "next_action": "hold_blocked_until_alaska_publishes_reviewable_public_borough_or_census_area_to_dpa_office_assignment_or_the_health_dpa_family_reopens_without_challenge_shells"
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_reviewed_live_dpa_offices_page_lists_regional_offices_but_no_borough_or_census_area_assignments_and_dfcs_surfaces_add_no_local_mapping_contract"
+    "county_local_disability_resources": "blocked_health_alaska_dpa_challenge_shells_and_dfcs_successor_surfaces_still_no_borough_or_census_area_assignment_contract"
   }
 }

@@ -1,0 +1,17 @@
+{
+  "batch": "batch344_alaska_health_challenge_regression_v1",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "blocker_family": "county_local_disability_resources",
+  "dpa_landing_raw_status": 403,
+  "dpa_offices_raw_status": 403,
+  "adult_public_assistance_raw_status": 403,
+  "apply_for_medicaid_raw_status": 403,
+  "dpa_dashboard_raw_status": 403,
+  "medicaid_snapshot_raw_status": 403,
+  "dpa_offices_browser_title": "Just a moment...",
+  "adult_public_assistance_browser_title": "Just a moment...",
+  "dfcs_services_raw_status": 200,
+  "dfcs_publications_raw_status": 200,
+  "dfcs_sitemap_raw_status": 200
+}

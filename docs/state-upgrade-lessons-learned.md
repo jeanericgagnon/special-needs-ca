@@ -452,3 +452,6 @@
 
 ### Public County Search Forms Can Outrun Partial Storefront Lanes
 *   **Lesson:** If a first-party benefits SPA visibly exposes a full county dropdown and anonymously materializes county-specific result cards with local names, addresses, county labels, and hours, that public search form can clear a county-local routing family even when an older linked storefront CSV is still partial. Florida only completed once the reviewed live `MyACCESS` `Community Partner Search` page showed all 67 counties and returned county-specific results directly on the public page.
+
+### Challenge Regression Beats Stale Browser-Readable Assumptions
+*   **Lesson:** If a previously browser-readable official local-routing page regresses into a Cloudflare or bot-verification shell, tighten the packet back to the current live contract instead of carrying forward the older readable assumption. Alaska’s DPA office family had to fall back to a stricter blocker once the health.alaska.gov pages and PDFs returned raw 403s and browser `Just a moment...` shells, while the still-readable DFCS successor pages still offered no borough or census-area assignment contract.
