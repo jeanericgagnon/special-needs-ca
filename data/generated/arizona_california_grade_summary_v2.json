@@ -12,7 +12,7 @@
   "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves",
+  "primary_gap_reason": "current_altcs_html_lane_and_ahcccs_universityfamilycare_bundle_remain_non_contract_and_three_reviewed_public_district_domains_still_lack_role_leaves",
   "recommended_batch": "hold_for_new_official_county_contract_or_role_leaf",
   "critical_gap_families": [
     "district_or_county_education_routing",
@@ -41,19 +41,19 @@
   "final_blockers": [
     {
       "family": "district_or_county_education_routing",
-      "failure_code": "three_reviewed_public_district_domains_live_surface_recheck_exhausts_search_sitemap_and_exact_role_surfaces_without_role_leafs",
+      "failure_code": "three_reviewed_public_district_domains_source_final_without_role_bearing_leafs",
       "evidence": "Reviewed 2026-06-25 a bounded live Arizona district-owned public-surface recheck for the final three unresolved education counties. https://www.ccasdaz.org/ returned HTTP 200, `https://www.ccasdaz.org/page-sitemap.xml` and `https://www.ccasdaz.org/post-sitemap.xml` returned HTTP 200 with no role-bearing special-education, student-services, 504, or Child Find URLs, and WordPress JSON searches for `special education`, `504`, `child find`, and `student services` only replayed Governing Board, About, Employment, school, or staff false positives. https://www.mohavelearning.org/ returned HTTP 200 with no role-bearing terms on the homepage, `https://www.mohavelearning.org/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404, `https://www.mohavelearning.org/search-results/~board/news/post/special-education` returned HTTP 200 but contained no role-bearing content, `https://www.mohavelearning.org/sitemap.xml` returned 404, and `https://www.mohavelearning.org/fs/pages/sitemap` returned 406. https://www.yavapaicountyhighschool.com/ returned HTTP 200, `https://www.yavapaicountyhighschool.com/sitemap.xml` returned HTTP 200 but only exposed generic pages and handbook/document leaves, `https://www.yavapaicountyhighschool.com/documents/` returned HTTP 200 with no role-bearing content, and `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404 while `/page/contact-us/` remained public. Arizona education therefore remains blocked because the reviewed public domains still expose no local role-bearing special-education, student-services, or 504 leaf.",
       "next_action": "hold_three_reviewed_public_domains_until_role_bearing_special_education_student_services_or_504_leaves_exist"
     },
     {
       "family": "county_local_disability_resources",
-      "failure_code": "ahcccs_university_familycare_pdf_bundle_is_parseable_but_only_support_letters_not_county_admin_routing_contract",
+      "failure_code": "current_altcs_html_and_ahcccs_universityfamilycare_bundle_are_non_contract_county_local_evidence",
       "evidence": "Reviewed 2026-06-25 exact official Arizona AHCCCS PDF artifacts from https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html using the bundled Codex runtime PDF stack (`pypdf`, `pdfplumber`, `pdfminer`, `pdfinfo`, and `pdftoppm`). The oversight page now links to live files under `/Resources/Downloads/UniversityFamilyCare/`, while the older stale `/Resources/OversightOfHealthPlans/*.pdf` paths currently return the AHCCCS HTML shell instead of PDF bytes. On the live download path, `Pima.pdf` returned HTTP 200 as `application/pdf`, extracted cleanly as text, and proved to be a support letter from Michal Goforth, Executive Director of Pima Community Access Program, supporting the University Family Care merger. `PimaCountyAdmin.pdf` and `CountyAdminOffice.pdf` both returned HTTP 200 as `application/pdf`, produced no embedded text via `pypdf`, but rendered cleanly to page images that show Pima County Administrator's Office letterhead, county address `130 W. Congress, Floor 10, Tucson, AZ 85701-1317`, phone `(520) 724-8661`, and a support letter to AHCCCS Director Tom Betlach dated September 5, 2014. None of the three official PDFs is a county office directory, county-admin routing table, service-area crosswalk, or county-to-office contract. DES office surfaces remain challenge-blocked. Arizona county-local therefore remains blocked because the reviewed official PDF bundle is non-contract evidence, not because the PDF parser lane is missing.",
       "next_action": "hold_county_local_until_new_official_html_or_pdf_county_contract_exists_not_support_letters"
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_ahcccs_pdf_bundle_resolves_to_support_letters_without_county_contract",
-    "district_or_county_education_routing": "blocked_three_reviewed_public_district_domains_live_surface_recheck_still_without_role_leafs"
+    "county_local_disability_resources": "blocked_current_altcs_html_and_ahcccs_pdf_bundle_source_final_without_county_contract",
+    "district_or_county_education_routing": "blocked_three_reviewed_public_district_domains_source_final_without_role_leafs"
   }
 }
