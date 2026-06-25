@@ -1,0 +1,17 @@
+{
+  "state": "west-virginia",
+  "batch": "batch368_west-virginia_official_routing_repair_v1",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "cleared_families": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "remaining_blockers": [],
+  "evidence": {
+    "district_or_county_education_routing": "Reviewed 2026-06-25 first-party West Virginia education routing surfaces. The live WVDE homepage links directly to the official `School Directory/Closings` host. The public WV School Directory then exposes `Browse schools by county` and visibly lists county entries including Barbour, Berkeley, Boone, Kanawha, and Wyoming, plus a linked superintendent listing asset. Reviewed county pages such as Barbour County Schools preserve the county office address, phone, county website, superintendent name, and linked school list on the same official directory host. This replaces West Virginia’s old statewide education fallback with current public county-grade routing evidence.",
+    "legal_aid": "Reviewed 2026-06-25 the live first-party Legal Aid WV domain after the legacy `lawv.net` root redirected to `legalaidwv.org`. The homepage states that `We believe all West Virginians deserve an equal chance at justice, in the courtroom and in their communities`, and the Legal Services page states that Legal Aid of WV provides free information, advice and representation on civil legal issues while helping people receive the education and health care they need. The Get Help section also preserves direct Apply For Help and Eligibility routes on the same first-party domain. This supplies current statewide legal-aid evidence for West Virginia.",
+    "county_local_disability_resources": "Reviewed 2026-06-25 official successor West Virginia Department of Human Services surfaces. The live DoHS homepage now links directly to `Find Field Offices`, and the public Field Offices page exposes a county selector with all 55 counties, including Barbour County through Wyoming County. Reviewed county-filtered pages preserve county-specific office records such as Barbour County DoHS Office at 49 Mattaliano Drive in Philippi with phone 304-457-9030 and Berkeley County DoHS Office at 433 Mid Atlantic Pkwy in Martinsburg with phone 304-267-0100, alongside child-support office variants on the same host. This replaces the old generic or structural county-office evidence with current official county-filtered local office routing on the live DoHS host family."
+  }
+}
