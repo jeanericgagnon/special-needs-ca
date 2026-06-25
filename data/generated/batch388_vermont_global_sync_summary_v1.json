@@ -1,0 +1,9 @@
+{
+  "batch": "batch388_vermont_global_sync_v1",
+  "generated_at": "2026-06-25T20:15:02.308Z",
+  "vermont_classification": "COMPLETE",
+  "complete_count": 40,
+  "blocked_count": 10,
+  "index_safe_count": 40,
+  "incorrectly_index_safe_states": []
+}
