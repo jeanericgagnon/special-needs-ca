@@ -840,7 +840,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_remaining_live_district_roots_and_sitemaps_only_materialize_wrong_role_or_generic_leaves_after_jefferson_and_oneida_recovery",
+        "district_or_county_education_routing": "blocked_remaining_live_district_roots_and_sitemaps_only_materialize_contact_title_ix_or_generic_leaves_after_jefferson_and_oneida_recovery",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -851,7 +851,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch357_idaho_residual_district_wrong_role_finality_v1",
-      "packetPrimaryGapReason": "remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_wrong_role_or_generic_leaves_without_special_education_routing",
+      "packetPrimaryGapReason": "remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_contact_title_ix_or_generic_leaves_without_special_education_routing",
       "packetRecommendedBatch": "hold_for_new_role_bearing_district_leaf_or_county_contract"
     },
     {

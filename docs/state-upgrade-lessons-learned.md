@@ -517,5 +517,8 @@
 ### Cross-Program Office Referrals Still Do Not Prove County Assignment
 *   **Lesson:** If an official district-office page adds program-specific office-to-office reroutes, keep them separate from county-routing proof. Maine DHHS now exposed long-term-care and child-support handoffs from one district office to another, but those referrals still named no counties, no town assignments, and no service-area boundaries, so they sharpened the blocker instead of clearing county-local routing.
 
+### Contact And Title IX Leaves Still Do Not Prove Special-Education Routing
+*   **Lesson:** If the only surviving district-owned leaves are `Contact Us`, `Contact Information`, Title IX, or generic document pages, treat them as wrong-role evidence rather than a near-miss recovery. Idaho's Camas, Clark, Fremont, and Shoshone hosts stayed live and reviewable, but their bounded same-host lanes still materialized only contact, Title IX, or generic district leaves and no special-education-routing contract.
+
 ### District-Owned Child Find PDFs Can Clear Local Education Routing When They Carry Real Contacts
 *   **Lesson:** If a district-owned Child Find PDF is already linked from the official host, run the bundled PDF extractor before treating it as a weak document-only lead. Oneida School District’s Child Find PDF carried the Special Education Director name, district address, phone, email, and explicit 3–21 Child Find scope, which was strong enough to recover county-grade education routing without any extra crawl.

@@ -12,7 +12,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 - Alaska: `reviewed_live_dpa_regions_cross_multiple_borough_or_census_area_boundaries_and_raw_health_page_sitemap_robots_search_all_403`
 - Arizona: `ahcccs_university_familycare_pdf_bundle_now_proves_non_contract_support_letters_and_live_public_education_surface_recheck_confirms_three_public_domains_still_lack_role_leaves`
-- Idaho: `remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_wrong_role_or_generic_leaves_without_special_education_routing`
+- Idaho: `remaining_idaho_district_roots_and_live_sitemaps_still_materialize_only_contact_title_ix_or_generic_leaves_without_special_education_routing`
 - Maine: `official_dhhs_office_cross_program_referrals_and_public_county_workbooks_still_expose_no_county_to_office_or_service_area_contract`
 - Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
@@ -28,35 +28,34 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Maine
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the highest-priority Maine blocker. The reviewed official Maine DHHS district-office page is live and now proves not just office addresses but also cross-program office handoffs like Bangor long-term-care questions routing to Machias, Biddeford long-term-care questions routing to Portland, and Farmington long-term-care questions routing to Augusta, plus child-support reroutes from Farmington, Fort Kent, Houlton, Skowhegan, and South Paris to other offices. Those office-to-office program referrals still do not name counties, assign towns, or expose service-area boundaries. The sibling OFI contact and programs pages, Offices/Divisions page, Administrative Office Locations page, human-readable DHHS sitemap, sampled `Show Map` shortlinks, and live public county/county-town workbooks all stay public, but they still only prove office labels, office addresses, and counts-only county/town program totals. None of those official public surfaces expose a county-to-office or county-to-service-area routing contract.
+`district_or_county_education_routing` is the highest-priority Idaho blocker. Jefferson and Oneida are already positively recovered from district-owned special-education and Child Find leaves, but the four remaining district-owned survivors now prove a narrower truth than a generic local gap. Camas only exposes a district-owned `Contact Information` leaf and no sitemap; Clark exposes a live sitemap plus district-owned `Contact Us` and `Title IX` leaves; Fremont exposes a live sitemap, `Contact Us`, `Title IX-Sexual Harassment`, `/documents`, and `/page/district-forms`; and Shoshone exposes live post sitemaps plus district-office contacts and federal-program leaves like Title I and Title IX-A. Across those exact same-host lanes, the current public evidence still materializes only contact, Title IX, or generic district leaves and no special-education, special-services, student-services, 504, Child Find, or procedural-safeguards routing leaves.
 
 ### Exact Evidence Needed
 
-- Any official Maine DHHS or OFI county-to-district-office assignment table, export, API, or page on the maine.gov host family.
-- Any public official surface that explicitly maps Maine counties or towns to DHHS/OFI district offices rather than only office addresses or office-to-office program referrals.
-- Any reviewed public workbook, sitemap leaf, or API on the current Maine DHHS host that preserves office identifiers or service-area bindings alongside county names.
+- Any current district-owned special-education, special-services, student-services, 504, Child Find, or procedural-safeguards leaf on the Camas, Clark, Fremont, or Shoshone hosts.
+- Any live district-owned sitemap, forms library, or documents lane on those same hosts that now names one of those role-bearing education leaves directly.
+- Any official district export or document on those exact hosts that preserves local special-education routing contacts instead of only generic district contact or Title IX compliance text.
 
 ### Useful Official URLs Already Tried
 
-- [Maine DHHS district office locations](https://www.maine.gov/dhhs/about/contact/offices)
-- [Maine OFI contact page](https://www.maine.gov/dhhs/ofi/about-us/contact)
-- [Maine OFI programs and services](https://www.maine.gov/dhhs/ofi/programs-services)
-- [Maine DHHS administrative office locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
-- [Maine DHHS sitemap](https://www.maine.gov/dhhs/about/sitemap)
+- [Camas County Schools root](https://www.camascountyschools.org/)
+- [Clark County Schools sitemap](https://www.clarkcountyschools161.org/fs/pages/sitemap)
+- [Fremont Joint School District 215 sitemap](https://www.sd215.net/sitemap.xml)
+- [Fremont district forms page](https://www.sd215.net/page/district-forms)
+- [Shoshone School District root](https://shoshonesd.org/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any public official county assignment contract on the current maine.gov DHHS or OFI host family.
-- Any official export or API behind the live district-office page that names counties or service areas directly.
-- Any reviewed DHHS or OFI public workbook or office leaf that goes beyond statewide help routing and explicitly binds counties or towns to district offices.
+- Any district-owned special-education or student-services leaf newly published on the remaining four Idaho district hosts.
+- Any same-host sitemap/document/forms inventory that now exposes a role-bearing slug on Camas, Clark, Fremont, or Shoshone.
+- Any reviewed local education document on those hosts that goes beyond contact or Title IX compliance and explicitly preserves special-education routing.
 
-## Next State Order After Maine
+## Next State Order After Idaho
 
-1. Idaho
-2. New Mexico
-3. Arizona
-4. New Hampshire
+1. New Mexico
+2. Arizona
+3. New Hampshire
