@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-25T16:41:24.713Z",
+  "generatedAt": "2026-06-25T16:48:00.561Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 34,
-    "BLOCKED": 16
+    "COMPLETE": 35,
+    "BLOCKED": 15
   },
-  "indexSafeCount": 34,
+  "indexSafeCount": 35,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -3218,8 +3218,8 @@
       "stateId": "virginia",
       "stateCode": "VA",
       "stateName": "Virginia",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -3227,11 +3227,11 @@
       "legacyManualReviewRate": 19.71,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 95,
-      "strongCriticalFamilies": 9,
-      "weakCriticalFamilies": 3,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 75,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "virginia",
         "state_code": "VA",
@@ -3264,25 +3264,10 @@
         "verified_nonprofit_count": 1157
       },
       "sourcePackV2": null,
-      "familyStatuses": {
-        "medicaid_state_health_coverage": "verified_state_grade",
-        "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
-        "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "verified_state_grade",
-        "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
-        "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "inventory_only",
-        "legal_aid": "verified_state_grade",
-        "able_program": "verified_state_grade",
-        "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
-      },
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "washington",
