@@ -28,50 +28,51 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest-priority Arizona blocker. The packet is down to three reviewed public district domains for the final unresolved education counties: `ccasdaz.org`, `mohavelearning.org`, and `yavapaicountyhighschool.com`. Those hosts are live, but their current public surfaces still exhaust into generic or wrong-role inventory: WordPress sitemaps/search false positives on CCASD, missing or unavailable sitemap/forms lanes on Mohave, and generic pages plus handbook/document leaves on Yavapai. None of the three currently exposes a role-bearing special-education, student-services, Section 504, or Child Find leaf.
+`county_local_disability_resources` is the only remaining Alaska blocker. The current official Alaska Department of Health DPA offices page is publicly readable in browser review and truthfully preserves real office names, addresses, hours, fax numbers, Alaska Connect, secure upload, and the Virtual Contact Center. But it still groups offices only by broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska. It does not assign boroughs or census areas to those offices. The sibling DPA services page also stays generic and only points families back to Alaska Connect, the Virtual Contact Center, or the same office-locations page. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` shells on the exact DPA landing page, offices page, sitemap, robots, and bounded search URLs. The DFCS successor host is live but still exposes no DPA/public-assistance borough-assignment contract.
 
 ### Exact Evidence Needed
 
-- Any reviewed district-owned special-education, student-services, Section 504, Child Find, or procedural-safeguards leaf on `ccasdaz.org`, `mohavelearning.org`, or `yavapaicountyhighschool.com`.
-- Any current machine-readable district inventory on those same hosts that directly exposes a role-bearing local education leaf rather than only generic pages.
-- Any district-owned PDF or document already linked from those hosts that explicitly preserves local special-education or child-find routing.
+- Any current official Alaska public page, PDF, export, API, or map data that explicitly assigns Alaska boroughs or census areas to DPA/public-assistance offices.
+- Any reviewed official county-equivalent office directory on `health.alaska.gov`, `dfcs.alaska.gov`, or another current Alaska official host that names borough or census-area coverage instead of only region groupings.
+- Any public official replacement for the old DPA county-equivalent routing lane that preserves service-area text, not just office addresses.
 
 ### Useful Official URLs Already Tried
 
-- [CCASD root](https://www.ccasdaz.org/)
-- [CCASD page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
-- [CCASD post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
-- [CCASD WordPress search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=20)
-- [Mohave root](https://www.mohavelearning.org/)
-- [Mohave special-education guess](https://www.mohavelearning.org/page/special-education/)
-- [Mohave student-services guess](https://www.mohavelearning.org/page/student-services/)
-- [Mohave search result false positive](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
-- [Yavapai root](https://www.yavapaicountyhighschool.com/)
-- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
-- [Yavapai documents](https://www.yavapaicountyhighschool.com/documents/)
-- [Yavapai special-education guess](https://www.yavapaicountyhighschool.com/page/special-education/)
-- [AHCCCS ALTCS page](https://www.azahcccs.gov/Members/GetCovered/Categories/other/ALTCS.html)
-- [AHCCCS University Family Care oversight](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
+- [DPA Offices](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [DPA Services](https://health.alaska.gov/en/services/division-of-public-assistance-dpa-services/)
+- [DPA landing page](https://health.alaska.gov/en/division-of-public-assistance/)
+- [health.alaska.gov sitemap](https://health.alaska.gov/sitemap.xml)
+- [health.alaska.gov robots](https://health.alaska.gov/robots.txt)
+- [health.alaska.gov site search: public assistance](https://health.alaska.gov/en/search/?q=public+assistance)
+- [health.alaska.gov site search: office](https://health.alaska.gov/en/search/?q=office)
+- [DFCS root](https://dfcs.alaska.gov/Pages/default.aspx)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
+- [DFCS search guess: public assistance](https://dfcs.alaska.gov/Pages/search-results.aspx?k=public%20assistance)
+- [DFCS search guess: office](https://dfcs.alaska.gov/Pages/search-results.aspx?k=office)
+- [DFCS search guess: medicaid](https://dfcs.alaska.gov/Pages/search-results.aspx?k=medicaid)
+- [DFCS search guess: adult public assistance](https://dfcs.alaska.gov/Pages/search-results.aspx?k=adult%20public%20assistance)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any district-owned leaf or linked document on CCASD, Mohave, or Yavapai that explicitly bears special-education or student-services routing.
-- Any same-host sitemap/document inventory path on those three districts that adds role-bearing local education pages beyond the current generic inventory.
-- Any official AHCCCS county-local contract that assigns counties to local offices or contractors, rather than generic ALTCS/apply links or support letters.
+- Any official Alaska surface that names boroughs or census areas under DPA/public-assistance office coverage.
+- Any current Alaska Department of Health or DFCS export/API/map layer that exposes county-equivalent service-area data for DPA offices.
+- Any official successor to the DPA offices page that preserves local coverage text more specific than the current five region headings.
 
-## Next State Order After Arizona
+## Next State Order After Alaska
 
-1. Massachusetts
-2. New Mexico
-3. South Dakota
-4. Rhode Island
-5. Virginia
-6. West Virginia
-7. North Dakota
-8. Wisconsin
-9. Washington
-10. Tennessee
+1. Arizona
+2. Massachusetts
+3. New Mexico
+4. South Dakota
+5. Rhode Island
+6. Virginia
+7. West Virginia
+8. North Dakota
+9. Wisconsin
+10. Washington
