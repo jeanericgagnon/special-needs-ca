@@ -28,59 +28,59 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest remaining Idaho blocker. Jefferson and Oneida are already positively recovered from real district-owned special-education / child-find evidence, but the residual four district-owned hosts still materialize only wrong-role or generic leaves. Camas still exposes only homepage, contact, and generic resources. Clark still exposes contact, parent-notification, Title IX, and a federal policy manual, but no special-education / student-services / 504 / child-find / procedural-safeguards leaf. Fremont still exposes only generic district navigation plus Title IX resources and no role-bearing special-education or child-find leaf. Shoshone still exposes district, district documents, parents/students, staff directory, and federal-program pages like Title I and Title IX-A for homeless children and youth, but no local special-education routing leaf. `county_local_disability_resources` remains a second blocker because Idaho DHW still has 17 safe exact office replacements plus 27 counties with no public county contract.
+`district_or_county_education_routing` is the highest remaining Arizona blocker. The final three reviewed public district domains still expose no local role-bearing special-education, student-services, 504, or Child Find leaf. Coconino County Accommodation School District remains live, but its public WordPress search and sitemap lanes only replay board/about/employment/staff false positives. Mohave Accelerated Schools remains live, but its homepage is generic, exact role slugs still 404, and public search results still carry no role-bearing content. Yavapai Accommodation School District remains live, but its public root is generic, its public sitemap/documents surfaces expose only general pages and handbook/document leaves, and exact role slugs still 404. `county_local_disability_resources` remains a second blocker because the current reviewed AHCCCS UniversityFamilyCare PDF bundle only proves support letters, not a county-to-office routing contract.
 
 ### Exact Evidence Needed
 
-- Any district-owned Idaho leaf on the Camas, Clark, Fremont, or Shoshone hosts that explicitly preserves local special-education, special-services, student-services, Section 504, child-find, or procedural-safeguards routing.
-- Any same-host district PDF, DOC, or page linked from those four district roots that names a local special-education contact, director, coordinator, or department.
-- Any current official Idaho county-to-office contract on the DHW host that truthfully binds one of the remaining 27 blocked counties to an exact office leaf.
+- Any district-owned Arizona leaf on `ccasdaz.org`, `mohavelearning.org`, or `yavapaicountyhighschool.com` that explicitly preserves local special-education, student-services, Section 504, Child Find, or procedural-safeguards routing.
+- Any same-host district PDF, DOC, or page linked from those three district roots that names a local special-education contact, director, coordinator, or department.
+- Any current official Arizona county-to-office, county-admin, or service-area contract on AHCCCS, DES, or another Arizona official host that truthfully binds a county to a local office or county routing path.
 
 ### Useful Official URLs Already Tried
 
-- [Camas root](https://www.camascountyschools.org/)
-- [Camas Contact Information](https://www.camascountyschools.org/contact-information)
-- [Camas All Resources](https://www.camascountyschools.org/all-resources)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Clark Parent Notification of General Education Instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)
-- [Clark Federal Policy and Procedure Manual](https://www.clarkcountyschools161.org/school-board/policy-and-procedure-manuel)
-- [Clark sitemap surface](https://www.clarkcountyschools161.org/fs/pages/sitemap)
-- [Fremont root](https://www.sd215.net/)
-- [Fremont Contact Us](https://www.sd215.net/page/contact-us)
-- [Fremont Title IX](https://www.sd215.net/o/sd215/page/title-ix)
-- [Fremont documents](https://www.sd215.net/documents)
-- [Fremont district forms](https://www.sd215.net/page/district-forms)
-- [Fremont sitemap](https://www.sd215.net/sitemap.xml)
-- [Shoshone root](https://shoshonesd.org/)
-- [Shoshone District Documents](https://shoshonesd.org/contracts/)
-- [Shoshone Parents/Students](https://shoshonesd.org/parents-students/)
-- [Shoshone Federal Programs Home](https://shoshonesd.org/federal-programs-home/)
-- [Shoshone staff directory](https://shoshonesd.org/staff-directory/)
-- [Shoshone wp-sitemap](https://shoshonesd.org/wp-sitemap.xml)
-- [Idaho DHW offices root](https://healthandwelfare.idaho.gov/offices)
-- [Idaho DHW Caldwell Office](https://healthandwelfare.idaho.gov/dhw/caldwell-office)
+- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
+- [CCASD page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [CCASD post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
+- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
+- [Mohave public search result guess](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
+- [Mohave sitemap.xml](https://www.mohavelearning.org/sitemap.xml)
+- [Mohave Finalsite sitemap lane](https://www.mohavelearning.org/fs/pages/sitemap)
+- [Mohave 504 guess](https://www.mohavelearning.org/page/504/)
+- [Mohave special-education guess](https://www.mohavelearning.org/page/special-education/)
+- [Mohave student-services guess](https://www.mohavelearning.org/page/student-services/)
+- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
+- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
+- [Yavapai documents](https://www.yavapaicountyhighschool.com/documents/)
+- [Yavapai contact us](https://www.yavapaicountyhighschool.com/page/contact-us/)
+- [Yavapai 504 guess](https://www.yavapaicountyhighschool.com/page/504/)
+- [Yavapai special-education guess](https://www.yavapaicountyhighschool.com/page/special-education/)
+- [Yavapai student-services guess](https://www.yavapaicountyhighschool.com/page/student-services/)
+- [AHCCCS UniversityFamilyCare oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
+- [AHCCCS live Pima PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
+- [AHCCCS live PimaCountyAdmin PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
+- [AHCCCS live CountyAdminOffice PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
+- [AHCCCS ALTCS page](https://www.azahcccs.gov/Members/GetCovered/Categories/other/ALTCS.html)
+- [DES office locator](https://des.az.gov/office-locator)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any exact same-host leaf on the four residual district domains that carries special-education or child-find role text, not just contact, Title IX, federal-program, or generic parent pages.
-- Any downloadable same-host district document that names a special-education director, coordinator, or 504 / child-find route on those four hosts.
-- Any new Idaho DHW surface that upgrades county-local routing from the current 17 exact matches plus 27 blocked legacy counties.
+- Any exact same-host leaf on the three residual Arizona education domains that carries special-education, student-services, Section 504, or Child Find role text, not just board/about/contact/search/document noise.
+- Any downloadable same-host district document that names a special-education director, coordinator, or 504 / Child Find route on those three hosts.
+- Any new Arizona official county-admin, service-area, or office-routing contract that upgrades county-local beyond the current non-contract AHCCCS support-letter bundle.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Massachusetts
+2. New Mexico
+3. South Dakota
+4. Rhode Island
+5. Virginia
+6. West Virginia
+7. North Dakota
+8. Wisconsin
+9. Washington
+10. Tennessee
