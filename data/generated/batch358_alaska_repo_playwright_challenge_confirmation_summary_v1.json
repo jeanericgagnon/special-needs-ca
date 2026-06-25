@@ -1,0 +1,16 @@
+{
+  "batch": "batch358_alaska_repo_playwright_challenge_confirmation_v1",
+  "generated_at": "2026-06-25T16:30:00.000Z",
+  "state": "alaska",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "official_url": "https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/",
+  "repo_side_playwright_title": "Just a moment...",
+  "repo_side_playwright_h1": "health.alaska.gov",
+  "repo_side_playwright_borough_mentions": 0,
+  "repo_side_playwright_census_mentions": 0,
+  "repo_side_playwright_county_mentions": 0,
+  "repo_side_playwright_result": "cloudflare_challenge_shell",
+  "result": "external_browser_review_still_proves_live_page_but_repo_side_playwright_cannot_recover_a_county_equivalent_contract"
+}

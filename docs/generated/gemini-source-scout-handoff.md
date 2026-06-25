@@ -28,47 +28,44 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority Idaho blocker, but the residual district remainder is now more precise than generic root exhaustion. Jefferson still clears from district-owned special-education / special-services / section-504 / student-services leaves. Oneida still clears from the district-owned Child Find PDF. The four remaining district roots now materialize exact wrong-role leaves instead of recoverable special-ed routing. Camas only exposes a district-owned `Contact Information` leaf with address and phone. Clark exposes exact district-owned `Contact Us` and `Title IX` leaves, but they only provide generic district office / policy routing. Fremont exposes exact district-owned `Contact Us` and `Title IX-Sexual Harassment` leaves, but they collapse back to generic contact and compliance routing. Shoshone exposes district-office contacts plus federal-program leaves like Title I and Title IX-A for homeless children and youth, but still no special-education, special-services, student-services, 504, or procedural-safeguards leaf. Idaho remains BLOCKED because the remaining district-owned leaves are real but still the wrong role for local special-education routing.
+`county_local_disability_resources` remains the highest-priority Alaska blocker. The exact official Alaska DPA offices page on `health.alaska.gov` is still externally reviewable and proves the real office directory exists, but it only groups offices by broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska. It still does not assign boroughs or census areas to those offices. Repo-side raw fetches still return Cloudflare `Just a moment...` 403 shells on the health-host family, and one bounded repo-side Playwright check now also lands on the same challenge shell instead of a reusable office-contract page. The readable DFCS successor pages still expose only statewide phone relays or wrong-role branches rather than any borough-assignment table. Alaska remains BLOCKED because no public official county-equivalent office-assignment contract is currently reviewable or scraper-recoverable.
 
 ### Exact Evidence Needed
 
-- Any official district-owned special-education, special-services, student-services, 504, procedural-safeguards, or Child Find leaf on Camas, Clark, Fremont, or Shoshone.
-- Any district-owned PDF, handbook, or notice on those hosts that explicitly preserves special-education routing plus named contact information.
-- Any official Idaho DHW county-to-office crosswalk, service-area table, export, PDF, ArcGIS layer, or API that ties counties to named office leaves.
+- Any official Alaska borough- or census-area-to-DPA-office assignment table on `health.alaska.gov`, `dfcs.alaska.gov`, or another current Alaska official host.
+- Any official Alaska export, PDF, ArcGIS layer, API, or embedded map data that explicitly maps county-equivalent geographies to named DPA offices.
+- Any reviewed official Alaska page that names specific boroughs or census areas under each DPA office rather than only broad regions.
 
 ### Useful Official URLs Already Tried
 
-- [Camas root](https://www.camascountyschools.org/)
-- [Camas Contact Information](https://www.camascountyschools.org/contact-information)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Fremont root](https://www.sd215.net/)
-- [Fremont Contact Us](https://www.sd215.net/page/contact-us)
-- [Fremont Title IX](https://www.sd215.net/o/sd215/page/title-ix)
-- [Shoshone root](https://shoshonesd.org/)
-- [Oneida Child Find PDF](https://5il.co/26a73)
-- [Jefferson sitemap](https://www.jeffersonsd251.org/wp-sitemap.xml)
+- [DPA offices page](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [DPA division root](https://health.alaska.gov/en/division-of-public-assistance/)
+- [Adult Public Assistance](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
+- [Apply for Medicaid](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
+- [DFCS root](https://dfcs.alaska.gov/Pages/default.aspx)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current district-owned special-education, student-services, 504, or procedural-safeguards leaf for Camas, Clark, Fremont, or Shoshone.
-- Any district-owned Child Find PDF or special-ed handbook already linked from those hosts but not yet surfaced on the homepage HTML.
-- Any public Idaho DHW county-to-office contract that can reduce the separate county-local blocker.
+- Any current official Alaska DPA office map data or page-embedded JSON that materially assigns boroughs or census areas to offices.
+- Any current official Alaska PDF or publication that turns the broad regional office list into a county-equivalent assignment contract.
+- Any current official Alaska public API, ArcGIS layer, or export behind the DPA directory that can be repo-side verified and cited directly.
 
-## Next State Order After Idaho
+## Next State Order After Alaska
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Maine
+2. Idaho
+3. Arizona
+4. Massachusetts
+5. New Mexico
+6. South Dakota
+7. Rhode Island
+8. Virginia
+9. West Virginia
+10. North Dakota
