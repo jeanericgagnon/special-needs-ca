@@ -488,3 +488,6 @@
 
 ### Retire Dead Legacy State Hosts Once The Current Replacement Also Fails Closed
 *   **Lesson:** If the legacy official host family is unresolvable and the current replacement host still times out on exact bounded probes, stop treating either state host as an active discovery lane. New Mexico education now has both a dead `education.new-mexico.gov` host family and a timing-out `webnew.ped.state.nm.us` host family, so the only honest next move is district-owned or regional leaf authoring.
+
+### County-Coded Program Reports Still Do Not Prove Local Office Routing
+*   **Lesson:** If an official state host publishes county or county-and-town spreadsheets, inspect the actual sheet schema before treating them as routing evidence. Maine OFI exposed downloadable county-coded workbooks on the DHHS host, but the sheets only carried TANF/Food Supplement summary counts and no office, district, or service-area fields, so they strengthened the blocker instead of clearing county-local routing.

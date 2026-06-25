@@ -1,0 +1,17 @@
+{
+  "batch": "batch349_maine_ofi_county_report_finality_v1",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "district_office_page_live": true,
+  "same_host_followups_live": true,
+  "ofi_data_reports_page_live": true,
+  "sampled_county_workbook_live": true,
+  "sampled_county_town_workbook_live": true,
+  "sampled_county_workbook_has_county_column": true,
+  "sampled_county_town_workbook_has_town_column": true,
+  "sampled_workbooks_have_office_name_field": false,
+  "sampled_workbooks_have_service_area_field": false,
+  "sampled_workbooks_have_office_assignment_field": false,
+  "result": "county_coded_reports_without_office_routing_contract"
+}

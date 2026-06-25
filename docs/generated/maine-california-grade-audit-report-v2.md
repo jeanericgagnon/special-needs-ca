@@ -4,7 +4,7 @@
 - index_safe: false
 - completeness_pct: 91
 - county_count: 16
-- primary_gap_reason: official_dhhs_office_page_and_same_host_contact_sitemap_surfaces_still_expose_no_county_or_service_area_crosswalk
+- primary_gap_reason: official_dhhs_office_stack_and_new_ofi_county_reports_still_expose_no_office_assignment_or_service_area_crosswalk
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (Reviewed Pine Tree Legal Assistance now provides direct statewide Maine legal-aid evidence.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_district_office_locations_and_same_host_followups_without_county_crosswalk (Reviewed 2026-06-25 one more bounded official Maine DHHS county-local pass against the current public host family only: `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/about/contact/`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/offices-divisions`, and `https://www.maine.gov/dhhs/about/sitemap`. The live district office page still preserves office towns, addresses, phones, emails, map shortlinks, and OFI program links for Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, Skowhegan, and others, but it still exposes zero county names and zero service-area labels in public HTML. The same-host follow-up surfaces stay negative too: the DHHS contact root, offices/divisions page, administrative offices page, and DHHS sitemap all remain public but still expose no county-served fields, no service-area crosswalk, and no alternate county-grade office export on the current official host family. Maine therefore remains blocked because the current official DHHS public stack still has office-grade contact proof without a truthful county-to-office routing contract.)
+- county_local_disability_resources: blocked_public_dhhs_office_stack_and_county_reports_without_office_assignment_contract (Reviewed 2026-06-25 one more bounded official Maine DHHS/OFI county-local pass. The public DHHS office stack still behaves exactly as before: the district office page preserves office towns, addresses, phones, emails, map shortlinks, and OFI program links, but no county-served or service-area fields; the same-host contact root, administrative offices page, offices/divisions hub, and DHHS sitemap also stay public while exposing no county crosswalk. The newly surfaced official OFI Data & Reports page adds real county-structured artifacts on the same host, including downloadable `Summary Counts By County.xlsx` and `Summary Counts By County And Town.xlsx` files. But those workbooks only preserve TANF/Food Supplement count columns by county and town; they expose zero office names, zero district-office identifiers, zero service-area labels, and zero county-to-office routing fields. Maine therefore still lacks any truthful county-to-office or county-to-service-area routing contract on the official public host family.)
 
 ## Failure ledger
 
-- county_local_disability_resources: official_dhhs_office_page_and_same_host_followups_expose_zero_county_or_service_area_fields :: Reviewed 2026-06-25 bounded official Maine checks on `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/about/contact/`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/offices-divisions`, and `https://www.maine.gov/dhhs/about/sitemap`. The live district office page preserves district office names, exact office towns and addresses, phones, emails, cross-office program notes, OFI program links, and `Show Map` shortlinks for Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan. But the office page still exposes zero county names such as Aroostook, Washington, or York, zero county-served labels, and zero service-area fields in public HTML. The same-host follow-up pages remain public yet equally negative: the contact root, administrative offices page, offices/divisions page, and DHHS sitemap all expose no county crosswalk and no alternate county-grade office export or service-area table. Maine therefore still has office-grade evidence without a truthful county-to-office routing contract on the current official public host family.
+- county_local_disability_resources: official_dhhs_office_stack_and_county_reports_expose_county_counts_but_zero_office_assignment_fields :: Reviewed 2026-06-25 bounded official Maine DHHS/OFI surfaces on `https://www.maine.gov/dhhs/about/contact/offices`, `https://www.maine.gov/dhhs/about/contact/`, `https://www.maine.gov/dhhs/about/contact/administrative-offices`, `https://www.maine.gov/dhhs/offices-divisions`, `https://www.maine.gov/dhhs/about/sitemap`, and `https://www.maine.gov/dhhs/ofi/about-us/data-reports`. The live district office page still preserves district office names, exact office towns and addresses, phones, emails, cross-office program notes, OFI program links, and `Show Map` shortlinks for Bangor, Biddeford, Calais, Caribou, Ellsworth, Machias, Portland, and Skowhegan. But the office page still exposes zero county names, zero county-served labels, and zero service-area fields in public HTML. The same-host follow-up pages remain public yet equally negative: the contact root, administrative offices page, offices/divisions page, and DHHS sitemap expose no county crosswalk and no alternate office-routing export. The OFI Data & Reports page does publish official county and county-and-town workbooks on the same host, including `May 2026 Summary Counts By County.xlsx` and `May 2026 Summary Counts By County And Town.xlsx`, but those sheets only contain TANF/Food Supplement summary count columns by county and town. They expose zero office names, zero district-office identifiers, and zero county-to-office routing fields. Maine therefore still has official county-coded program reports without any truthful county-to-office routing contract.
 
 ## Verified source samples
 
@@ -40,14 +40,14 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.ptla.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_district_office_locations_and_same_host_followups_without_county_crosswalk; samples=5; first=https://www.maine.gov/dhhs/about/contact/offices
+- county_local_disability_resources: blocked_public_dhhs_office_stack_and_county_reports_without_office_assignment_contract; samples=7; first=https://www.maine.gov/dhhs/about/contact/offices
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_official_maine_dhhs_county_or_service_area_crosswalk_is_publicly_reviewable
+- [critical] county_local_disability_resources: hold_blocked_until_official_maine_dhhs_or_ofi_surface_exposes_county_to_office_or_service_area_routing
 
 ## Completion decision
 
 - Maine remains BLOCKED and not index-safe.
 - Education remains cleared by the live official Superintendent-by-SAU and Superintendent-by-Town selectors.
-- County-local remains blocked because the official DHHS office page plus the bounded same-host contact, sitemap, offices/divisions, and administrative-office follow-ups still expose no county or service-area crosswalk in public HTML.
+- County-local remains blocked because the public DHHS office stack still exposes office-grade contact proof without county routing, and the newly surfaced official OFI county workbooks still contain only program counts rather than office-assignment fields.
