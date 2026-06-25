@@ -1,0 +1,13 @@
+{
+  "batch": "batch333_minnesota_live_route_and_dhs_404_refresh_v1",
+  "generated_at": "2026-06-24T23:30:00.000Z",
+  "state": "minnesota",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "live_mde_description_page": true,
+  "live_mde_root": true,
+  "live_mde_district_route": true,
+  "blocked_mde_county_contact_analytics_routes": 4,
+  "dhs_saved_replacement_404_count": 2,
+  "lessons_changed": false
+}

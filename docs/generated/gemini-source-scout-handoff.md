@@ -17,7 +17,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_23_counties`
 - Maine: `official_maine_workbook_is_stable_mapping_only_and_contact_materialization_lane_still_500_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
-- Minnesota: `mdeorg_root_is_live_but_actionable_child_routes_are_title_only_radware_shells_plus_mn_dhs_local_office_family_is_radware_challenged`
+- Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
 - Nebraska: `public_nebraska_office_config_still_only_references_one_web_map_and_a_closest_feature_output_while_the_feature_service_stops_at_42_offices_for_93_counties`
 - New Hampshire: `official_nh_public_host_families_access_denied_and_saved_dhhs_replacement_hosts_unresolvable_with_no_live_nh_gov_successor_root`
 - New Mexico: `district_leafs_missing_and_county_local_four_county_remainder_persists_after_empty_archive_tail`
@@ -35,48 +35,45 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Ohio
+## Current Focus State: Minnesota
 
 ### Blocker Reason
 
-Ohio still has two critical blockers, but the highest-priority one is `county_local_disability_resources`. The old root-404 blocker is no longer true: Ohio JFS, Medicaid, and Ohio.gov roots plus their `robots.txt` and `sitemap.xml` surfaces are live again. The current failure is narrower and more truthful: the rendered `job-family-services-directory` page, Ohio search page, JFS `about/local-agencies-directory` root, and sampled `cdjfs-*` county leaves still render public 404 pages even though the live JFS sitemap advertises 98 `cdjfs-*` entries across 88 county slugs.
+Minnesota still has two critical blockers, and the highest-priority one remains `district_or_county_education_routing`. The live official picture is now narrower and more accurate: the MDE-ORG description page, glossary root, and `Schools and Districts` route all render publicly on official Minnesota hosts, but the county route, contact-search route, contact-type route, and analytics route still fall into Radware captcha. The separate county-local blocker also shifted: the saved DHS county-and-tribal replacement URLs now return official DHS 404 pages instead of a live captcha family.
 
 ### Exact Evidence Needed
 
-- A rendered live Ohio county JFS or Medicaid directory page that exposes real county office details instead of the current public 404 page.
-- A working current successor to the stale `cdjfs-*` directory family, or proof that the sitemap leaf family itself now renders live office details.
-- For education later: more exact district or ESC leaves beyond the tiny current inventory.
+- A public first-party Minnesota MDE county, contact, or export route that yields reproducible organization data instead of the current Radware challenge.
+- Or, a reviewed public Minnesota MDE download/export lane that preserves county-grade organization routing without browser validation.
+- Separately, a live official Minnesota DHS successor for county-and-tribal office routing; the two saved replacements now 404 and no longer provide a usable local-office contract.
 
 ### Useful Official URLs Already Tried
 
-- [JFS root](https://jfs.ohio.gov/)
-- [JFS robots.txt](https://jfs.ohio.gov/robots.txt)
-- [JFS sitemap.xml](https://jfs.ohio.gov/sitemap.xml)
-- [Ohio.gov county directory page](https://ohio.gov/residents/resources/job-family-services-directory)
-- [Ohio.gov search page](https://ohio.gov/search?query=county%20job%20and%20family%20services)
-- [JFS local agencies directory root](https://jfs.ohio.gov/about/local-agencies-directory)
-- [Sample JFS county leaf: Adams](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-adams)
-- [Sample JFS county leaf: Cuyahoga](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-cuyahoga-3)
-- [Sample JFS county leaf: Wood](https://jfs.ohio.gov/about/local-agencies-directory/cdjfs-wood)
-- [Medicaid root](https://medicaid.ohio.gov/)
-- [Medicaid robots.txt](https://medicaid.ohio.gov/robots.txt)
-- [Medicaid sitemap.xml](https://medicaid.ohio.gov/sitemap.xml)
+- [Minnesota MDE description page](https://education.mn.gov/MDE/about/SchOrg/)
+- [Minnesota MDE-ORG root](https://pub.education.mn.gov/MdeOrgView/)
+- [Minnesota schools and districts route](https://pub.education.mn.gov/MdeOrgView/districts/index)
+- [Minnesota counties route](https://pub.education.mn.gov/MdeOrgView/reference/county)
+- [Minnesota contact search route](https://pub.education.mn.gov/MdeOrgView/search/searchContacts)
+- [Minnesota contact types route](https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList)
+- [Minnesota analytics route](https://pub.education.mn.gov/MDEAnalytics/Data.jsp)
+- [Minnesota DHS county and tribal offices replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/)
+- [Minnesota DHS county tribal nation directory replacement](https://mn.gov/dhs/people-we-serve/adults/services/disability-services/partners-and-providers/county-tribal-nation-directory/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current rendered Ohio county-office successor leaf on JFS, Medicaid, or Ohio.gov that replaces the stale public 404 directory family.
-- Any official statewide export, table, or rendered directory that maps all 88 counties to county JFS routing without relying on stale sitemap-only leaves.
-- For education later: exact district or ESC-owned leaves that materially expand county-grade routing beyond the current root-only inventory.
+- Any official Minnesota MDE county, contact, or analytics export surface that stays public and yields real organization data.
+- Any first-party Minnesota education export or downloadable organization file linked from the live MDE-ORG family.
+- Any official Minnesota DHS successor page for county-and-tribal office routing that replaces the two reviewed 404 paths.
 
-## Next State Order After Ohio
+## Next State Order After Minnesota
 
-1. Minnesota
-2. Maine
-3. Idaho
-4. Arizona
-5. Massachusetts
-6. New Mexico
-7. South Dakota
-8. Rhode Island
-9. Virginia
-10. West Virginia
+1. Maine
+2. Idaho
+3. Arizona
+4. Massachusetts
+5. New Mexico
+6. South Dakota
+7. Rhode Island
+8. Virginia
+9. West Virginia
+10. North Dakota

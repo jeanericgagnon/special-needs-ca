@@ -384,3 +384,9 @@
 
 ### First-Party Location APIs Still Fail Closed When Their Categories Are The Wrong Program
 *   **Lesson:** If an official host exposes a live first-party location API, verify the published categories before treating it as a county-routing recovery. Utah DHHS now exposes live `wpsl` collections on its official WordPress API, but those collections only publish `Double Up Food Bucks locations` and `Home Visiting Locations`, so the first-party map stack still does not clear county-local disability routing.
+
+### Live Navigation Chrome Still Fails If County And Contact Contracts Stay Bot-Gated
+*   **Lesson:** If an official directory root and one child navigation page render publicly, keep the family blocked unless the county, contact, or export surfaces also stay public. Minnesota MDE-ORG showed live `MDE Organization Reference Glossary` and `Schools and Districts` pages, but the county, contact, and analytics routes still fell into Radware, so the family stayed below California-grade.
+
+### Replatformed Official Replacements Should Be Downgraded To 404 Truth When The Gate Disappears
+*   **Lesson:** If a previously challenged replacement URL later settles into an official 404, update the blocker to the narrower 404 truth instead of carrying forward the older captcha narrative. Minnesota DHS county-and-tribal replacements moved from assumed Radware gating to plain official DHS 404 pages on recheck.

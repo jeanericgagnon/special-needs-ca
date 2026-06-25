@@ -23,4 +23,5 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - Oregon remains blocked on county-local routing because the live ODHS successor is a real custom component shell with no public data contract.
 - Ohio remains blocked on two families, but the top county-local blocker is now more accurate: Ohio JFS, Medicaid, and Ohio.gov roots plus their robots and sitemaps are live again, while the rendered county-directory page, search page, and sampled `cdjfs-*` local-agency leaves still 404.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
+- Minnesota remains blocked, but the blocker is now narrower and more accurate: the MDE-ORG root and `Schools and Districts` route are live while county/contact/analytics routes remain Radware-blocked, and the saved DHS county/tribal replacements now resolve to official DHS 404 pages rather than a live captcha family.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
