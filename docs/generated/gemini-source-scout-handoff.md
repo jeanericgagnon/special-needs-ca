@@ -28,47 +28,46 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest-priority Idaho blocker. The packet is now down to four residual district-owned roots after Jefferson and Oneida were recovered. Those four districts are no longer generic unknowns: Clark, Fremont, and Shoshone now expose live sitemap inventories, and Camas has a final root plus contact leaf. But the district-owned leaves and sitemaps that survive still materialize only wrong-role or generic pages like `Contact Us`, `Title IX`, staff, documents, or board/newsletter pages. None of the remaining hosts currently exposes a role-bearing special-education, special-services, student-services, section-504, child-find, or procedural-safeguards leaf.
+`county_local_disability_resources` is the highest-priority Alaska blocker. The official Alaska Department of Health DPA offices and DPA services pages are real, live, and browser-readable, but they still only expose region-level office groupings, statewide Alaska Connect / Virtual Contact Center routing, and office cards for named cities. They do not assign boroughs or census areas to those offices. The raw low-token lane remains closed on the same host family: the exact health-host pages, `robots.txt`, `sitemap.xml`, and bounded site-search probes still return the same Cloudflare 403 shell rather than machine-readable county-equivalent routing.
 
 ### Exact Evidence Needed
 
-- Any reviewed district-owned special-education, special-services, student-services, section-504, child-find, or procedural-safeguards leaf on the remaining Camas, Clark, Fremont, or Shoshone hosts.
-- Any current machine-readable district inventory on those same hosts that directly exposes a role-bearing local education leaf rather than only generic pages.
-- Any district-owned PDF or document already linked from those hosts that explicitly preserves special-education or child-find routing.
+- Any reviewed official Alaska page, export, API, PDF, or map layer that explicitly assigns one or more boroughs or census areas to a named DPA office or service area.
+- Any current public machine-readable office dataset on the Alaska health or DFCS host family that adds borough-served, census-area-served, or county-equivalent routing fields to the current DPA office stack.
+- Any official public office-locator contract that ties the existing regional office cards to boroughs or census areas instead of only city office names and statewide contact paths.
 
 ### Useful Official URLs Already Tried
 
-- [Camas County Schools root](https://www.camascountyschools.org/)
-- [Camas contact information](https://www.camascountyschools.org/contact-information)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Clark sitemap](https://www.clarkcountyschools161.org/fs/pages/sitemap)
-- [Fremont root](https://www.sd215.net/)
-- [Fremont Contact Us](https://www.sd215.net/page/contact-us)
-- [Fremont Title IX](https://www.sd215.net/o/sd215/page/title-ix)
-- [Fremont sitemap](https://www.sd215.net/sitemap.xml)
-- [Shoshone root](https://shoshonesd.org/)
-- [Shoshone sitemap index](https://shoshonesd.org/wp-sitemap.xml)
+- [DPA Offices](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [DPA Services](https://health.alaska.gov/en/services/division-of-public-assistance-dpa-services/)
+- [DPA landing](https://health.alaska.gov/en/division-of-public-assistance/)
+- [health.alaska.gov robots](https://health.alaska.gov/robots.txt)
+- [health.alaska.gov sitemap](https://health.alaska.gov/sitemap.xml)
+- [health-host site search: public assistance](https://health.alaska.gov/en/search/?q=public+assistance)
+- [health-host site search: office](https://health.alaska.gov/en/search/?q=office)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DFCS Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any district-owned leaf or linked document on Camas, Clark, Fremont, or Shoshone that explicitly bears special-education or special-services routing.
-- Any same-host sitemap/document inventory path on those four districts that adds role-bearing local education pages beyond the current generic inventory.
-- Any district-owned child-find, 504, or procedural-safeguards PDF already linked from those hosts.
+- Any official Alaska DPA office contract that names boroughs or census areas directly.
+- Any official public data export or map service behind the DPA office page that exposes county-equivalent service coverage.
+- Any official successor DFCS or health-host publication that binds boroughs or census areas to the current office cards.
 
-## Next State Order After Idaho
+## Next State Order After Alaska
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
+1. Maine
+2. Idaho
+3. Arizona
+4. Massachusetts
+5. New Mexico
+6. South Dakota
+7. Rhode Island
+8. Virginia
+9. West Virginia
+10. North Dakota
