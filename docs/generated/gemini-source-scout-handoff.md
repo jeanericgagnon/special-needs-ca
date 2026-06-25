@@ -28,42 +28,42 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Arizona
+## Current Focus State: Massachusetts
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the sharper Arizona blocker. Reviewed 2026-06-25 the exact official AHCCCS UniversityFamilyCare PDF bundle with the bundled PDF runtime. `Pima.pdf` extracts as a support letter from Pima Community Access Program, and `PimaCountyAdmin.pdf` plus `CountyAdminOffice.pdf` render as Pima County Administrator support letters for the University Family Care merger. Those official PDFs preserve county and administrator identity, but they still do not expose office assignments, service areas, county-admin routing, or a county-to-office contract. Arizona education remains separately blocked on three reviewed public district domains that still lack role-bearing local leaves, so Arizona stays blocked and not index-safe.
+`district_or_county_education_routing` remains the highest-priority Massachusetts blocker. The exact official DESE bridge still auto-posts into `search.aspx`, and the current packet truth remains intact: the hidden replay can still materialize real district rows, but the rendered result surface still exposes zero county column, zero county filter, and no county-keyed export contract. The live School Finder is still address/city/town based only. County-local remains separately blocked because the DDS locations lane still lacks a county export or county crosswalk in the low-token raw lane.
 
 ### Exact Evidence Needed
 
-- Any official Arizona county-admin office directory, office assignment table, service-area crosswalk, or county-to-office contract that is public and reviewable.
-- Any newly published district-owned special-education, student-services, 504, or procedural-safeguards leaf on the final three unresolved education domains.
+- Any official DESE county-to-district contract, county selector, county column, or county-keyed export.
+- Any official DDS county crosswalk, county-served export, or machine-readable county-to-office contract.
+- Or, a reviewed browser/cached locality capture from DESE or DDS that can be truthfully bridged to counties.
 
 ### Useful Official URLs Already Tried
 
-- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
-- [Pima County Administrator PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
-- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
-- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
-- [Coconino wp-json search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
-- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
-- [Yavapai County High School contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
+- [DESE district-directory bridge](https://profiles.doe.mass.edu/search/search_link.aspx?orgType=5,12&runOrgSearch=Y&leftNavId=11238)
+- [DESE Profiles Search results](https://profiles.doe.mass.edu/search/search.aspx?leftNavId=11238)
+- [DESE School Finder](https://profiles.doe.mass.edu/search/get_closest_orgs.aspx)
+- [DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
+- [DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
+- [DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official AHCCCS, DES, or county-admin surface that exposes real county-to-office routing instead of merger-support letters.
-- Any newly published role-bearing local education leaf on Coconino County Accommodation School District, Mohave Accelerated Schools, or Yavapai County High School.
+- Any official Massachusetts county-keyed DESE export or selector.
+- Any official DDS county crosswalk or locality export that can be bridged to county rows without inference.
+- Any reviewed browser/cached locality capture from DESE or DDS that preserves county-safe routing evidence.
 
-## Next State Order After Arizona
+## Next State Order After Massachusetts
 
-1. Massachusetts
-2. New Mexico
-3. South Dakota
-4. Rhode Island
-5. Virginia
-6. West Virginia
-7. North Dakota
-8. Wisconsin
-9. Washington
-10. Tennessee
+1. New Mexico
+2. South Dakota
+3. Rhode Island
+4. Virginia
+5. West Virginia
+6. North Dakota
+7. Wisconsin
+8. Washington
+9. Tennessee
+10. Vermont
