@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 81,
     "placeholderWebsiteRows": 81,
-    "authoredExactLeafCount": 24,
+    "authoredExactLeafCount": 25,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 24
+    "reviewedDistrictOwnedLeafCount": 25
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -163,6 +163,7 @@
     "atchison-ks",
     "barton-ks",
     "butler-ks",
+    "coffey-ks",
     "cowley-ks",
     "doniphan-ks",
     "douglas-ks",
@@ -198,7 +199,6 @@
     "clark-ks",
     "clay-ks",
     "cloud-ks",
-    "coffey-ks",
     "comanche-ks",
     "crawford-ks",
     "decatur-ks",

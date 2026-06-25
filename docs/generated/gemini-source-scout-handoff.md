@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_now_cover_12_counties_and_dhw_split_is_explicit_but_county_grade_remains_incomplete`
-- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_24_counties`
+- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_25_counties`
 - Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
@@ -38,26 +38,36 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the only remaining Kansas critical blocker. The current live raw lane still returns the same `Request Rejected` shell for `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and `https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12`. One fresh exact district-scoped submit replay against the current Directory Reports root also returned the same `Request Rejected` shell instead of a workbook. Kansas now has reviewed local education-routing proof for 24 of 105 counties from preserved district-owned or district-linked leaves, including the district-owned Parsons USD 503 `Tri-County Special Education Cooperative` leaf for Labette County. Kansas remains BLOCKED because county-grade local education proof is still incomplete across the remaining counties, and the only trustworthy next lane is saved district-owned or district-linked local leaf authoring rather than the current flapping KSDE export stack.
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 25/105 counties from preserved district-owned or district-linked leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Coffey now clears because the official Burlington USD 244 homepage exposes a district-linked `Coffey County Special Education Cooperative` route, and the fetched `usd244ks.org/ccsec` page preserves the county-named cooperative identity plus a statement that CCSEC provides a broad continuum of services for students from birth through 21 years of age in USD 244 Burlington and USD 245 Southern Coffey County. Kansas remains BLOCKED because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
 
 ### Exact Evidence Needed
 
-- Exact district-owned or district-linked special-education, special-services, ESS, or cooperative leaves for unresolved Kansas counties.
-- Role-pure district leaves that preserve special-education or Child Find routing on the district-owned host.
-- Any new official KSDE export lane only if it becomes reproducibly public again in bounded raw fetches.
+- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
+- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
+- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
 
 ### Useful Official URLs Already Tried
 
 - [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
-- [KSDE Directories page](https://www.ksde.gov/data-and-reporting/directories)
-- [Kansas Educational Directory PDF URL](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
-- [Parsons USD 503 Tri-County Special Education Cooperative](https://www.usd503.org/page/tri-county-special-education-cooperative/)
+- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [Parsons District Schools sitemap](https://www.usd503.org/sitemap.xml)
+- [Parsons district leaf](https://www.usd503.org/page/tri-county-special-education-cooperative/)
+- [Burlington USD 244 home](https://www.usd244ks.org/)
+- [Burlington USD 244 sitemap](https://www.usd244ks.org/sitemap.xml)
+- [Burlington USD 244 CCSEC leaf](https://www.usd244ks.org/ccsec)
+- [Coffeyville USD 445 home](https://www.cvilleschools.com/)
+- [Coffeyville USD 445 site map](https://www.cvilleschools.com/site-map)
+- [Tri County Special Education Coop 607 child-find leaf](https://www.tricounty607.com/child-find)
+- [Marysville USD 364 sitemap](https://www.usd364.org/sitemap.xml)
+- [Marshall County Special Education Coop eligibility page](https://www.usd364.org/o/mcsec/page/special-education-eligibility/)
+- [McPherson County Special Education Cooperative](https://mccsec.mcpherson.com/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Saved district-owned or district-linked special-education leaves for unresolved Kansas counties.
-- District sitemap-discovered cooperative or ESS leaves that stay on the district-owned host.
-- New exact local education leaves only; do not reopen broad KSDE export retries unless the state lane materially changes.
+- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
+- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or Child Find.
+- Additional district-owned document-folder or CMS routes like the Parsons USD 503, Hays USD 489, Hutchinson USD 308, Marysville USD 364, Burlington USD 244, and Coffeyville USD 445 recoveries, but only on already-preserved district domains.
 ## Next State Order After Kansas
 
 1. Nebraska

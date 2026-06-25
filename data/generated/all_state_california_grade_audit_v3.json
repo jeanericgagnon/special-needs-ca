@@ -1130,7 +1130,7 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_reviewed_local_kansas_district_leaves_expand_to_24_counties_but_current_live_ksde_submit_replay_is_rejected",
+        "district_or_county_education_routing": "blocked_reviewed_local_kansas_district_leaves_expand_to_25_counties_but_current_live_ksde_submit_replay_is_rejected",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -1140,8 +1140,8 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch335_kansas_labette_tricounty_leaf_v1",
-      "packetPrimaryGapReason": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_24_counties",
+      "packetBatch": "batch338_kansas_coffey_ccsec_leaf_v1",
+      "packetPrimaryGapReason": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_25_counties",
       "packetRecommendedBatch": "batch_2_repair_blocked"
     },
     {

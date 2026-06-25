@@ -1,0 +1,13 @@
+{
+  "state": "kansas",
+  "batch": "batch338_kansas_coffey_ccsec_leaf_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "promoted_county": "coffey-ks",
+  "promoted_counties_total": 25,
+  "district_root_status": 200,
+  "district_root_title": "Burlington USD 244 - Home",
+  "district_leaf_status": 200,
+  "district_leaf_title": "Burlington USD 244 - CCSEC Home",
+  "district_leaf_h1": "Burlington USD #244"
+}
