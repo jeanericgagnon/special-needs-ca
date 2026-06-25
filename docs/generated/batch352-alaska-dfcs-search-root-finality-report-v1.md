@@ -1,0 +1,9 @@
+# Batch 352 Alaska DFCS Search And Root Finality v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: tightened the Alaska county-local blocker by proving the DFCS root, site map, contacts, and bounded search-result lane still expose no DPA/public-assistance office contract
+
+## Evidence
+
+- The live Alaska county-local blocker tightened again after one more bounded official DFCS-surface pass on 2026-06-25. The health-host DPA family still fails closed in the raw low-token lane: the exact DPA landing page, DPA offices page, and two health-host PDFs still return HTTP 403 Cloudflare challenge shells. The earlier browser-reviewed DPA offices page is still the strongest positive evidence on that host, but it still only groups offices by broad regions and still does not assign Alaska boroughs or census areas to those offices. The DFCS successor host now also looks source-final in a more explicit way. The DFCS root page still only routes into the Commissioner and Office of Children's Services branches, not public assistance or DPA office routing. The public Services page still only relays statewide phone routing for Adult Public Assistance and Apply for Medicaid back onto the challenge-blocked health host. The public Site Map still surfaces OCS offices, OCS grievance, Pioneer Homes payment assistance, and other wrong-role branches but no DPA/public-assistance office directory. The Commissioner Department Contacts page still exposes only Commissioner and OCS sections. Finally, bounded search-result guesses at `/Pages/search-results.aspx?k=public%20assistance`, `office`, `medicaid`, and `adult%20public%20assistance` all return 404, so the DFCS host does not expose a recoverable public search lane for this family either. Alaska therefore still lacks any public official borough- or census-area-to-office assignment contract.

@@ -1,0 +1,14 @@
+{
+  "batch": "batch352_alaska_dfcs_search_root_finality_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "health_host_challenge_persists": true,
+  "dfcs_root_status": 200,
+  "dfcs_services_status": 200,
+  "dfcs_site_map_status": 200,
+  "dfcs_contacts_status": 200,
+  "dfcs_search_guess_404s": 4,
+  "dfcs_public_search_lane_found": false,
+  "borough_assignment_contract_found": false,
+  "result": "dfcs_root_sitemap_contacts_and_search_lane_add_no_dpa_borough_assignment_contract"
+}

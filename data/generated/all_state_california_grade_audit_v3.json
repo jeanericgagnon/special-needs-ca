@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T11:46:16.799Z",
+  "generatedAt": "2026-06-25T11:51:29.972Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 33,
@@ -147,11 +147,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_raw_health_host_challenge_plus_browser_reviewed_region_only_offices_page_and_dfcs_contacts_without_county_equivalent_contract"
+        "county_local_disability_resources": "blocked_raw_health_host_challenge_plus_region_only_dpa_page_and_dfcs_root_sitemap_contacts_search_without_county_equivalent_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch345_alaska_raw_challenge_and_dfcs_contacts_finality_v1",
-      "packetPrimaryGapReason": "raw_health_host_challenge_persists_while_browser_reviewed_dpa_offices_page_still_lacks_borough_or_census_area_assignment_and_dfcs_contacts_add_no_local_contract",
+      "packetBatch": "batch352_alaska_dfcs_search_root_finality_v1",
+      "packetPrimaryGapReason": "raw_health_host_challenge_persists_while_browser_reviewed_dpa_offices_page_still_lacks_borough_assignment_and_dfcs_root_sitemap_contacts_search_add_no_dpa_contract",
       "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
     },
     {
