@@ -2,25 +2,23 @@
   "state": "wyoming",
   "state_code": "WY",
   "state_name": "Wyoming",
-  "batch": "batch_14_procedure_hardening_states_v1",
+  "batch": "batch380_wyoming_accessible_idea_freeze_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 23,
-  "completeness_pct": 75,
-  "strong_critical_families": 9,
-  "weak_critical_families": 3,
+  "completeness_pct": 83,
+  "strong_critical_families": 10,
+  "weak_critical_families": 2,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "official_wde_special_education_hosts_return_cloudflare_403_and_reviewed_wdh_local_surfaces_still_lack_public_county_disability_contracts",
+  "primary_gap_reason": "wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
     "district_or_county_education_routing",
     "county_local_disability_resources"
   ],
-  "major_gap_families": [
-    "special_education_idea_part_b"
-  ],
+  "major_gap_families": [],
   "verified_source_families_with_samples": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
@@ -44,25 +42,18 @@
   ],
   "final_blockers": [
     {
-      "family": "special_education_idea_part_b",
-      "severity": "major",
-      "failure_code": "official_wde_special_education_hosts_return_cloudflare_403_without_reviewable_state_grade_replacement",
-      "evidence": "Reviewed 2026-06-25 one more bounded official statewide special-education pass. The current Wyoming Department of Education root plus both reviewed public special-education leaves on the official WDE host, including the parent-student and educator special-education paths, returned Cloudflare `Attention Required!` HTTP 403 pages in this pass. No reviewed public replacement state-grade special-education artifact on an official Wyoming education host was preserved on disk. Wyoming special-education statewide evidence therefore remains blocked rather than being upgraded from legacy assumptions.",
-      "next_action": "hold_blocked_until_wde_publishes_reviewable_public_special_education_artifact_or_waf_accessible_successor_host"
-    },
-    {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_wde_hosts_return_cloudflare_403_and_local_district_special_education_leaves_remain_unreviewed",
-      "evidence": "Reviewed 2026-06-25 one more bounded official district-routing pass. Existing Wyoming district rows still only preserve generic district roots such as Albany County School District #1, Big Horn County School District #1, and Campbell County School District #1. The official WDE host that should anchor statewide district or special-education routing returned Cloudflare HTTP 403 pages for the root and reviewed special-education leaves in this pass, and no reviewed public statewide district directory, county-to-district crosswalk, or district-owned special-education leaf set was preserved on disk. Because the instructions forbid treating generic district roots as local-proof substitutes, Wyoming district or county education routing remains blocked.",
+      "failure_code": "official_wde_is_public_but_no_reviewable_county_to_district_or_special_education_crosswalk",
+      "evidence": "Reviewed 2026-06-25 a bounded official Wyoming district-routing pass after WDE became publicly reviewable again. The WDE IDEA and parent special-education pages are now accessible, and the official `School District Enrollment & Staffing Data` page is also publicly reviewable, but the reviewed WDE artifacts still do not preserve a statewide county-to-district crosswalk, district directory, or district-owned special-education leaf set. Existing Wyoming district rows still stop at generic district roots such as Albany County School District #1, Big Horn County School District #1, and Campbell County School District #1. Because the instructions forbid treating generic district roots or non-routing staffing publications as local-proof substitutes, district or county education routing remains blocked.",
       "next_action": "hold_blocked_until_wde_or_district_hosts_publish_reviewable_county_to_district_or_special_education_leaf_crosswalk"
     },
     {
       "family": "county_local_disability_resources",
       "severity": "critical",
-      "failure_code": "official_wdh_local_resource_hosts_return_cloudflare_403_or_only_locator_surfaces_without_public_county_contract",
-      "evidence": "Reviewed 2026-06-25 one more bounded official county-local disability pass. The prior Wyoming county-local evidence still depends on a statewide locations root rather than reviewed county-grade contracts, and the reviewed official Wyoming health and aging local-resource routes in this pass, including the public Aging and Disability Resource Center path and related WDH host family pages, returned Cloudflare `Attention Required!` HTTP 403 pages. No reviewed public county-to-office assignment table, county-service-area contract, or county-owned disability-office directory was preserved on disk. Wyoming county-local disability routing therefore remains blocked.",
-      "next_action": "hold_blocked_until_wdh_publishes_reviewable_public_county_to_office_or_service_area_contract"
+      "failure_code": "official_wdh_county_surfaces_are_aging_only_without_disability_specific_county_contract",
+      "evidence": "Reviewed 2026-06-25 a bounded official Wyoming Department of Health county-resource pass. The official WDH `Services by County` page under Aging Community Living is publicly reviewable again and explicitly says each county in Wyoming offers different programs for older adults, with county toggles listing senior-center, meal, caregiver, and Wyoming Home Services providers. The official WDH `Public Resources` page is also reviewable, but it routes to statewide community-living program pages and a map of older-adult resources rather than a disability-specific county-to-office assignment table, county service-area contract, or county-owned developmental-disability office directory. Wyoming county-local disability routing therefore remains blocked on the narrower ground that reviewed public WDH county evidence is aging/community-living only.",
+      "next_action": "hold_blocked_until_wdh_publishes_reviewable_public_disability_specific_county_to_office_or_service_area_contract"
     }
   ]
 }
