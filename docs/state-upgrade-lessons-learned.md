@@ -461,3 +461,6 @@
 
 ### Public Association Directories Can Be Safe Lead-Only Inputs For Dead ESC Roots
 *   **Lesson:** If a saved county ESC host is dead, use a reviewed statewide ESC association page only as a lead source for successor official domains, then re-verify exact leaves on the successor ESC host itself. Ohio recovered Brown, Fairfield, Gallia-Vinton, Lawrence, Mercer, Putnam, and Trumbull education routing only after OESCA pointed to live successor domains that could then be verified from their own roots, sitemaps, and same-host leaves.
+
+### Browser-Readable Child Routes Can Clear A Flapping Raw-Fetch Directory
+*   **Lesson:** If raw fetches on an official directory family flap into bot protection but exact browser-reviewed child routes stay publicly readable, prefer the stable reviewed child pages over the unstable raw root. Minnesota MDE-ORG still flapped under raw fetch, yet the exact `Schools and Districts`, `Counties`, county-member, district-detail, and `Special Education Director` pages were publicly readable on the official host and were strong enough to clear county-grade education routing.

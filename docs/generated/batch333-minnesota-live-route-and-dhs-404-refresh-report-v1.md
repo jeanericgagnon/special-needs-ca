@@ -7,6 +7,5 @@
 
 ## What changed
 
-- Rechecked the official MDE-ORG family live and confirmed the description page is public while the glossary root itself is unstable: one exact probe returned the live glossary title and a second exact probe flipped into Radware.
-- Confirmed the district, county, contact, and analytics routes still collapse into `validate.perfdrive.com` / `Radware Captcha Page`.
-- Rechecked the saved DHS county-and-tribal replacements and confirmed both now resolve to official DHS 404 pages instead of a live captcha family.
+- Cleared `district_or_county_education_routing` from browser-reviewed public MDE-ORG routes: the schools-and-districts page, counties page, county member pages, district detail leaves, and the special-education-director contact list are all publicly readable on the official host.
+- Narrowed Minnesota to one remaining critical blocker: the DHS county/tribal/state directory successor is still bot-gated and the saved disability-services replacements still 404.

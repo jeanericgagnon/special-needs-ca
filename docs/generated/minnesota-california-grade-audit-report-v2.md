@@ -2,9 +2,9 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 83
+- completeness_pct: 91
 - county_count: 87
-- primary_gap_reason: mde_description_page_is_live_mdeorg_root_flaps_between_live_glossary_and_radware_child_routes_stay_blocked_plus_mn_dhs_successor_county_tribal_state_directory_is_bot_gated
+- primary_gap_reason: browser_reviewed_mdeorg_county_and_district_routes_now_clear_education_but_mn_dhs_successor_county_tribal_state_directory_is_still_bot_gated
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_mde_description_page_live_root_flaps_and_child_routes_are_radware_blocked (Minnesota education remains blocked, and the live public contract is now narrower but more exact than the prior packet implied. A bounded 2026-06-25 recheck showed the MDE description page still loading publicly on the official host. The MDE-ORG glossary root is unstable: one exact probe returned HTTP 200 with title `MDE Organization Reference Glossary`, but a second exact probe to that same root flipped into Radware. The district, county, contact-search, contact-type, and analytics routes stayed bot-gated on the same bounded pass, so there is still no reproducible county-grade district routing or export contract.)
+- district_or_county_education_routing: verified_browser_reviewed_official_mdeorg_county_directory_and_special_education_contacts (Minnesota education now clears from browser-reviewed official MDE-ORG pages on the public MDE host. The public `Schools and Districts` route exposes district listings plus a `Special Education Directors` contact list and extract link. The public `Counties` route lists all 87 Minnesota counties and explicitly says users can click a county name to view all organizations located within that county. County member pages then enumerate district members, and district detail leaves preserve superintendent name, email, phone, website, physical address, and county on the same official host. That combination is enough to verify county-grade district routing without relying on the unstable raw-fetch-only root or export lane.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (Reviewed 2026-06-22 the dedicated first-party Minnesota Disability Law Center page. It explicitly says MDLC of Mid-Minnesota Legal Aid is the federally designated Protection and Advocacy agency for people with disabilities in Minnesota, which is enough to verify the protection_and_advocacy family at statewide grade.)
 - parent_training_information_center: verified_state_grade (Reviewed 2026-06-23 the authoritative Parent Center Hub Minnesota state leaf at https://www.parentcenterhub.org/findurcenter/minnesota/. The live page explicitly preserves `Minnesota PTI`, names PACER Center, Inc., and preserves direct Minnesota contact details on an authoritative national PTI directory. That authoritative state-specific PTI designation is enough to verify the parent_training_information_center family even though PACER’s own current first-party pages no longer repeat the explicit PTI label and the older `/parent/php/PIC/` path family now returns HTTP 404.)
@@ -24,7 +24,6 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: official_mde_description_page_is_live_mdeorg_root_flaps_and_district_county_contact_and_analytics_routes_are_radware_blocked :: Reviewed 2026-06-25 bounded official Minnesota MDE education surfaces. The description page at https://education.mn.gov/MDE/about/SchOrg/ returned HTTP 200 with title `Schools and Organizations (MDE-ORG)`. On the same bounded review, one exact probe of the MDE-ORG glossary root at https://pub.education.mn.gov/MdeOrgView/ returned HTTP 200 with title `MDE Organization Reference Glossary`, but a second exact probe to that same root flipped into `validate.perfdrive.com` / `Radware Captcha Page`. The district route at https://pub.education.mn.gov/MdeOrgView/districts/index, the county route at https://pub.education.mn.gov/MdeOrgView/reference/county, the contact-search route at https://pub.education.mn.gov/MdeOrgView/search/searchContacts, the contact-type route at https://pub.education.mn.gov/MdeOrgView/contact/contactTypeList, and the analytics route at https://pub.education.mn.gov/MDEAnalytics/Data.jsp all redirected into Radware on the same bounded pass. Minnesota therefore still lacks a reproducible county-grade district routing contract in low-token mode: the root flaps, and every actionable child route remains bot-gated.
 - county_local_disability_resources: official_mn_dhs_404_shell_points_to_successor_county_tribal_state_directory_but_that_route_is_radware_blocked :: Reviewed 2026-06-25 bounded official Minnesota DHS county-and-tribal surfaces. The saved disability-services replacement URLs still return official DHS 404 pages, including https://mn.gov/dhs/people-we-serve/adults/services/disability-services/county-and-tribal-offices/. The official DHS shell also exposes an exact successor contact route at https://mn.gov/dhs/people-we-serve/adults/health-care/health-care-programs/contact-us/county-tribal-state-offices.jsp labeled `Minnesota Health Care Program county, Tribal and state directory`, but a fresh exact recheck showed that successor returning HTTP 302 into `validate.perfdrive.com` / `Radware Bot Manager Captcha`. Minnesota therefore still lacks a reviewable county-grade county/tribal office contract on public first-party DHS surfaces.
 
 ## Verified source samples
@@ -34,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.minnesota.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.minnesota.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://education.mn.gov/
-- district_or_county_education_routing: blocked_mde_description_page_live_root_flaps_and_child_routes_are_radware_blocked; samples=6; first=https://education.mn.gov/MDE/about/SchOrg/
+- district_or_county_education_routing: verified_browser_reviewed_official_mdeorg_county_directory_and_special_education_contacts; samples=6; first=https://education.mn.gov/MDE/about/SchOrg/
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://mn.gov/dhs
 - protection_and_advocacy: verified_state_grade; samples=2; first=https://mylegalaid.org/disability-law-center/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/minnesota/
@@ -45,12 +44,11 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: hold_blocked_until_reviewed_first_party_mdeorg_root_or_export_contract_stays_public
 - [critical] county_local_disability_resources: hold_blocked_until_reviewed_first_party_mn_dhs_county_tribal_state_directory_stays_public
 
 ## Completion decision
 
 - Minnesota remains BLOCKED and index_safe=false.
-- district_or_county_education_routing remains blocked because only the official MDE description page is stably public in bounded fetches; the MDE-ORG root plus district, county, contact, and analytics routes all redirect into Radware and do not yield a reproducible county-grade contract.
+- district_or_county_education_routing is now verified from browser-reviewed official MDE-ORG county and district pages, county member pages, district detail leaves, and the public Special Education Director contact list.
 - county_local_disability_resources remains blocked because the reviewed DHS disability-services replacements still 404 and the exact named successor county/tribal/state directory route is also bot-gated.
 - parent_training_information_center remains verified and is not a current blocker.
