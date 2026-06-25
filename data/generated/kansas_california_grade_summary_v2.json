@@ -2,17 +2,17 @@
   "state": "kansas",
   "state_code": "KS",
   "state_name": "Kansas",
-  "batch": "batch340_kansas_pottawatomie_wamego_leaf_v1",
+  "batch": "batch341_kansas_bourbon_fort_scott_leaf_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 105,
-  "completeness_pct": 92,
+  "completeness_pct": 93,
   "strong_critical_families": 11,
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_27_counties",
+  "primary_gap_reason": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_28_counties",
   "recommended_batch": "batch_2_repair_blocked",
   "critical_gap_families": [
     "district_or_county_education_routing"
@@ -43,13 +43,13 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_27_counties",
-      "evidence": "Reviewed 2026-06-24 one more bounded official Kansas district-routing pass against exact saved district-host leads, then promoted only exact local district-host evidence. The current live raw lane still returns the same `Request Rejected` shell for `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and `https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12`. One fresh exact district-scoped submit replay against the current Directory Reports root using the public hidden fields and `ctl00$MainContent$ddDistricts=D0435`, `ctl00$MainContent$RadioGroup1=RadioUSD1`, `ctl00$MainContent$rblFormat=Excel`, and `ctl00$MainContent$btnPrintSection1=Run Report` also returned the same `Request Rejected` shell instead of a workbook. Kansas now has reviewed local proof for 27/105 counties from preserved district-owned or district-linked leaves: atchison-ks, barton-ks, butler-ks, coffey-ks, cowley-ks, doniphan-ks, douglas-ks, ellis-ks, finney-ks, geary-ks, harvey-ks, johnson-ks, labette-ks, leavenworth-ks, lyon-ks, marshall-ks, mcpherson-ks, miami-ks, montgomery-ks, nemaha-ks, pottawatomie-ks, reno-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Pottawatomie now clears because the official USD 320 Wamego sitemap exposes an exact same-domain `/childfind` leaf, and the fetched `usd320.com/childfind` page returned HTTP 200 with title `USD320 Wamego - PRE-K PROGRAM / CHILD FIND`, H1 `PRE-K PROGRAM / CHILD FIND`, IDEA child-find language, and explicit special-education services routing on the district-owned host. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties, and the only trustworthy next lane is saved district-owned or district-linked local leaf authoring rather than the current flapping-or-rejected KSDE export stack.",
+      "failure_code": "current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_28_counties",
+      "evidence": "Reviewed 2026-06-24 one more bounded official Kansas district-routing pass against exact saved district-host leads, then promoted only exact local district-host evidence. The current live raw lane still returns the same `Request Rejected` shell for `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and `https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12`. One fresh exact district-scoped submit replay against the current Directory Reports root using the public hidden fields and `ctl00$MainContent$ddDistricts=D0435`, `ctl00$MainContent$RadioGroup1=RadioUSD1`, `ctl00$MainContent$rblFormat=Excel`, and `ctl00$MainContent$btnPrintSection1=Run Report` also returned the same `Request Rejected` shell instead of a workbook. Kansas now has reviewed local proof for 28/105 counties from preserved district-owned or district-linked leaves: atchison-ks, barton-ks, bourbon-ks, butler-ks, coffey-ks, cowley-ks, doniphan-ks, douglas-ks, ellis-ks, finney-ks, geary-ks, harvey-ks, johnson-ks, labette-ks, leavenworth-ks, lyon-ks, marshall-ks, mcpherson-ks, miami-ks, montgomery-ks, nemaha-ks, pottawatomie-ks, reno-ks, riley-ks, saline-ks, sedgwick-ks, shawnee-ks, wyandotte-ks. Bourbon now clears because the official Fort Scott USD 234 sitemap exposes an exact same-domain `/page/special-education/` leaf, and the fetched `usd234.org/page/special-education/` page returned HTTP 200 with title `Special Education | FORT SCOTT USD 234` on the district-owned host. Kansas therefore remains blocked because county-grade local education proof is still incomplete across the remaining unresolved counties, and the only trustworthy next lane is saved district-owned or district-linked local leaf authoring rather than the current flapping-or-rejected KSDE export stack.",
       "next_action": "continue_only_from_saved_district_owned_and_district_linked_local_leads_because_current_live_ksde_state_export_lane_is_not_reproducible"
     }
   ],
   "familyStatuses": {
     "developmental_disability_idd_authority": "verified_state_grade",
-    "district_or_county_education_routing": "blocked_reviewed_local_kansas_district_leaves_expand_to_27_counties_but_current_live_ksde_submit_replay_is_rejected"
+    "district_or_county_education_routing": "blocked_reviewed_local_kansas_district_leaves_expand_to_28_counties_but_current_live_ksde_submit_replay_is_rejected"
   }
 }

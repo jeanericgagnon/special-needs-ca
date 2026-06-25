@@ -7,13 +7,13 @@
   "current_problem_metrics": {
     "placeholderSourceRows": 81,
     "placeholderWebsiteRows": 81,
-    "authoredExactLeafCount": 27,
+    "authoredExactLeafCount": 28,
     "countyRowCount": 105,
     "officialMapPdfCount": 1,
     "officialStatewideAuthoringRoots": 4,
     "liveDirectoryRoots": 0,
     "publicExportContractVerified": false,
-    "reviewedDistrictOwnedLeafCount": 27
+    "reviewedDistrictOwnedLeafCount": 28
   },
   "exact_target_goals": [
     "district-owned special education page",
@@ -162,6 +162,7 @@
   "reviewed_local_leaf_counties": [
     "atchison-ks",
     "barton-ks",
+    "bourbon-ks",
     "butler-ks",
     "coffey-ks",
     "cowley-ks",
@@ -192,7 +193,6 @@
     "allen-ks",
     "anderson-ks",
     "barber-ks",
-    "bourbon-ks",
     "brown-ks",
     "chase-ks",
     "chautauqua-ks",

@@ -14,7 +14,7 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Arizona: `three_public_district_domains_official_api_and_exact_slug_sweeps_still_lack_role_leafs_and_altcs_office_cards_still_lack_county_assignments`
 - Florida: `official_local_offices_leaf_routes_to_partial_family_resource_center_and_current_myaccess_bundle_reexposes_exact_county_endpoints_but_they_remain_authenticated_only`
 - Idaho: `reviewed_idaho_district_leaves_hold_at_12_counties_and_remaining_county_bearing_district_roots_now_have_public_sitemap_exhaustion_evidence`
-- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_27_counties`
+- Kansas: `current_ksde_directory_roots_and_pdf_url_return_request_rejected_shells_and_exact_submit_replay_is_rejected_while_reviewed_local_district_leaves_cover_only_28_counties`
 - Maine: `official_maine_selector_and_workbook_are_live_but_current_search_export_posts_still_return_same_500_shell_plus_dhhs_office_html_has_no_county_contract`
 - Massachusetts: `exact_dese_hidden_postback_replay_no_longer_materializes_local_rows_and_live_city_town_finder_still_has_no_county_contract_plus_dds_locations_lane_lacks_county_export`
 - Minnesota: `live_mdeorg_root_and_district_page_but_county_contact_and_analytics_routes_are_radware_blocked_plus_mn_dhs_saved_county_tribal_replacements_are_official_404s`
@@ -34,48 +34,51 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Florida
+## Current Focus State: Kansas
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Florida critical blocker. Florida already has verified statewide Medicaid, waiver, APD regional DD routing, Early Steps, FDLRS special-education dispute coverage, county-grade FDLRS education routing, VR, P&A, PTI, legal-aid, ABLE, and SSI coverage. The remaining county-local family stays blocked because the exact official `food-cash-and-medical` leaf still routes families only into the Family Resource Center storefront lane, and that reviewed first-party `providers.csv` still preserves only 34 distinct county values across 39 rows rather than a 67-county county-local contract. The public MyACCESS shell is readable again and the live main bundle re-exposes the exact county-result endpoint names `getZipCountyDetails` and `communityPartnerSearch`, but bounded anonymous GET and POST probes to those exact official endpoints still return HTTP 401 `Unauthorized`. Florida remains BLOCKED because the storefront lane is still partial and the only exact county-result endpoints now visible on the live official host remain authenticated-only rather than anonymously reviewable.
+`district_or_county_education_routing` is the only remaining Kansas critical blocker. Kansas now has reviewed local education-routing proof for 28/105 counties from preserved district-owned or district-linked leaves, but the current live KSDE state directory/export lane is still not reproducible in the bounded raw pass. `https://uapps.ksde.gov/Directory_Rpts/default.aspx`, `https://www.ksde.gov/data-and-reporting/directories`, and the current Kansas educational-directory PDF URL now each return HTTP 200 only as the same `Request Rejected` shell, and one fresh exact district-scoped submit replay on the Directory Reports root also returns that shell instead of a workbook. Bourbon now clears because the official Fort Scott USD 234 sitemap exposes an exact same-domain `/page/special-education/` leaf, and the fetched `usd234.org/page/special-education/` page returned HTTP 200 with title `Special Education | FORT SCOTT USD 234` on the district-owned host. Kansas remains BLOCKED because county-grade local education proof is still incomplete across the remaining counties and the state-level export lane is not trustworthy enough to drive deterministic repair work right now.
 
 ### Exact Evidence Needed
 
-- A new first-party Florida DCF or MyACCESS county-complete public local-offices contract that covers all 67 counties.
-- A newly public anonymous MyACCESS office-mapping result lane that materializes county results without authentication.
-- A reviewed first-party Florida county-local directory leaf or export that extends the current Family Resource Center storefront beyond the 34 counties preserved in `providers.csv`.
+- Additional district-owned Kansas `special education`, `student services`, `special services`, `parent rights`, or district-linked cooperative leaves on unresolved saved district domains.
+- Exact same-domain district leaf evidence for unresolved counties that is role-bearing enough to replace the statewide KSDE placeholders.
+- If a district host is live but lacks any role-exact leaf, exact non-match proof so the county can stay frozen without repeated retries.
 
 ### Useful Official URLs Already Tried
 
-- [Florida DCF food-cash-and-medical page](https://www.myflfamilies.com/food-cash-and-medical)
-- [Florida Family Resource Center root](https://familyresourcecenter.myflfamilies.com/)
-- [Florida Family Resource Center providers.csv](https://familyresourcecenter.myflfamilies.com/providers.csv)
-- [Florida DCF contact-us page](https://www.myflfamilies.com/contact-us)
-- [Florida DCF contacts.csv](https://www.myflfamilies.com/contact-us/contacts.csv)
-- [Florida MyACCESS root](https://myaccess.myflfamilies.com/)
-- [Florida MyACCESS Public/CPCPS](https://myaccess.myflfamilies.com/Public/CPCPS)
-- [Florida MyACCESS appconfig.js](https://myaccess.myflfamilies.com/config/appconfig.js)
-- [Florida MyACCESS asset manifest](https://myaccess.myflfamilies.com/asset-manifest.json)
-- [Florida MyACCESS main bundle](https://myaccess.myflfamilies.com/static/js/main.d43b0959.js)
-- [Florida MyACCESS dataexchangeproxy](https://myaccess.myflfamilies.com/dataexchangeproxy)
-- [Florida MyACCESS getZipCountyDetails](https://myaccess.myflfamilies.com/accountmanagement/getZipCountyDetails)
-- [Florida MyACCESS communityPartnerSearch](https://myaccess.myflfamilies.com/accountmanagement/communityPartnerSearch)
+- [KSDE Directory Reports root](https://uapps.ksde.gov/Directory_Rpts/default.aspx)
+- [KSDE Directories root](https://www.ksde.gov/data-and-reporting/directories)
+- [Kansas Educational Directory PDF](https://www.ksde.gov/docs/default-source/crp/2025-2026-kansas-educational-directory.pdf?sfvrsn=7c81fd62_12)
+- [Fort Scott USD 234 root](https://www.usd234.org/)
+- [Fort Scott USD 234 sitemap](https://www.usd234.org/sitemap.xml)
+- [Fort Scott USD 234 Special Education leaf](https://www.usd234.org/page/special-education/)
+- [Wamego USD 320 root](https://www.usd320.com/)
+- [Wamego USD 320 sitemap](https://www.usd320.com/sitemap.xml)
+- [Wamego USD 320 Child Find leaf](https://www.usd320.com/childfind)
+- [Parsons District Schools sitemap](https://www.usd503.org/sitemap.xml)
+- [Parsons district leaf](https://www.usd503.org/page/tri-county-special-education-cooperative/)
+- [Burlington USD 244 home](https://www.usd244ks.org/)
+- [Burlington USD 244 sitemap](https://www.usd244ks.org/sitemap.xml)
+- [Burlington USD 244 CCSEC leaf](https://www.usd244ks.org/ccsec)
+- [Marysville USD 364 sitemap](https://www.usd364.org/sitemap.xml)
+- [Marshall County Special Education Coop eligibility page](https://www.usd364.org/o/mcsec/page/special-education-eligibility/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly public Florida DCF or MyACCESS export or API path that materially extends county-local coverage beyond the 34 counties in `providers.csv`.
-- Any reviewed first-party Florida DCF local-office directory that maps counties directly to ACCESS, SNAP, cash, Medicaid, or Economic Self-Sufficiency routing rather than generic circuit or wrong-role contacts.
-- Any anonymous MyACCESS county-result contract that returns real county-specific partner or office results without authentication.
-## Next State Order After Florida
+- Saved district-owned domains for unresolved counties, checked only through exact same-domain role-bearing leaf paths.
+- District-linked cooperative leaves on district-owned hosts where the district nav explicitly labels the route as Special Education or Child Find.
+- Additional district-owned document-folder or CMS routes like the Parsons USD 503, Hays USD 489, Hutchinson USD 308, Marysville USD 364, Burlington USD 244, Coffeyville USD 445, Wamego USD 320, and Fort Scott USD 234 recoveries, but only on already-preserved district domains.
+## Next State Order After Kansas
 
-1. Alaska
-2. South Carolina
-3. North Carolina
-4. New York
-5. Oklahoma
-6. Oregon
-7. Ohio
-8. Minnesota
-9. Maine
-10. Idaho
+1. Nebraska
+2. Nevada
+3. Florida
+4. Alaska
+5. South Carolina
+6. North Carolina
+7. New York
+8. Oklahoma
+9. Oregon
+10. Ohio

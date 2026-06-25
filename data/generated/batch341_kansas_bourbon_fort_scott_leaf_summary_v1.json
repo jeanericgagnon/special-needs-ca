@@ -1,0 +1,13 @@
+{
+  "state": "kansas",
+  "batch": "batch341_kansas_bourbon_fort_scott_leaf_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "promoted_county": "bourbon-ks",
+  "promoted_counties_total": 28,
+  "district_root_status": 200,
+  "district_root_title": "Home | FORT SCOTT USD 234",
+  "district_leaf_status": 200,
+  "district_leaf_title": "Special Education | FORT SCOTT USD 234",
+  "district_leaf_h1": null
+}
