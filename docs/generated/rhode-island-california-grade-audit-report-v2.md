@@ -2,7 +2,7 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 83
+- completeness_pct: 92
 - county_count: 5
 - primary_gap_reason: public_ride_directory_and_public_dhs_office_stack_expose_local_entities_but_zero_public_county_or_special_education_service_area_contracts
 
@@ -20,12 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party Help RI Law / Rhode Island Legal Services pages preserve explicit statewide low-income legal-help routing)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_public_dhs_office_stack_without_county_or_service_area_contract (Reviewed 2026-06-25 bounded first-party Rhode Island human-services surfaces. The DHS host now publicly exposes a DHS Offices page, an Office Locator tool entrypoint, a sitemap, and six office leaves for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket. The DHS Offices page describes these as regional offices serving Rhode Islanders throughout the state and lists addresses, directions, drop-box notes, and office hours. The individual location pages preserve titles, street addresses, office hours, and map links. The sitemap confirms the same office leaves on the official host family. But none of the reviewed public DHS surfaces expose county-served labels, county fields, service-area fields, or a county-to-office routing contract. Even the `South County` label is still only an office name on the public leaf, not an explicit county-assignment table. Rhode Island therefore still lacks a truthful public county-to-office or county-to-service-area contract on the official DHS host family.)
+- county_local_disability_resources: verified_state_grade (reviewed official DHS Office Locator now exposes a public city/town lookup that returns assigned home offices on the official host, supplying explicit local-routing coverage)
 
 ## Failure ledger
 
 - district_or_county_education_routing: public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract :: Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces. The live RIDE Special Education page remains statewide guidance only and links families to the public school directory stack instead of exposing district-owned special-education leaves. The public School Directory page explicitly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, then routes into the public Data Center directory. On the public Data Center host, the Schools Directory explicitly says it provides only LEA, school, location, and contact information, while additional directory information is available only to authenticated users in the RIDE portal. The public table and search lanes expose LEA, school, school type, and school subtype, including special-education categories, but no county field and no public district special-education routing contract. The separate RI School Districts page lists 66 LEAs and district websites, but it also exposes no county column and no special-education contact routing. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.
-- county_local_disability_resources: public_dhs_office_stack_exposes_office_leaves_but_zero_county_or_service_area_contract :: Reviewed 2026-06-25 bounded first-party Rhode Island human-services surfaces. The DHS host now publicly exposes a DHS Offices page, an Office Locator tool entrypoint, a sitemap, and six office leaves for Middletown, Providence, Pawtucket, South County, Warwick, and Woonsocket. The DHS Offices page describes these as regional offices serving Rhode Islanders throughout the state and lists addresses, directions, drop-box notes, and office hours. The individual location pages preserve titles, street addresses, office hours, and map links. The sitemap confirms the same office leaves on the official host family. But none of the reviewed public DHS surfaces expose county-served labels, county fields, service-area fields, or a county-to-office routing contract. Even the `South County` label is still only an office name on the public leaf, not an explicit county-assignment table. Rhode Island therefore still lacks a truthful public county-to-office or county-to-service-area contract on the official DHS host family.
 
 ## Verified source samples
 
@@ -41,16 +40,16 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.helprilaw.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_public_dhs_office_stack_without_county_or_service_area_contract; samples=3; first=https://dhs.ri.gov/about-us/dhs-offices
+- county_local_disability_resources: verified_state_grade; samples=5; first=https://dhs.ri.gov/office-locator-tool
 
 ## Next actions
 
 - [critical] district_or_county_education_routing: hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing
-- [critical] county_local_disability_resources: hold_blocked_until_public_dhs_surface_exposes_county_to_office_or_service_area_routing
 
 ## Completion decision
 
 - Rhode Island no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide protection-and-advocacy evidence on disk instead of only legacy nonprofit inventory rows.
 - Disability Rights Rhode Island is preserved as strong statewide protection-and-advocacy support because the reviewed first-party page explicitly says it is the independent federally mandated Protection and Advocacy (P&A) System for the state of Rhode Island.
-- Rhode Island still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, and county/local disability resources still depend on generic locator-derived or mirror-backed evidence instead of reviewed county-grade local proof.
+- Rhode Island now has a truthful official local-office routing lane because the live DHS Office Locator exposes a city/town lookup that returns assigned home offices on the official host.
+- Rhode Island still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of reviewed county- or district-owned leaves.
 - Rhode Island is therefore terminal BLOCKED, not COMPLETE.

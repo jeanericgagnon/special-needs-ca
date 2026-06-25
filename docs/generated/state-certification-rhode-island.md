@@ -4,7 +4,7 @@
 - pass: false
 - state_classification: BLOCKED
 - index_safe: false
-- completeness_pct: 83
+- completeness_pct: 92
 - checked_files: data/generated/rhode-island_california_grade_summary_v2.json, data/generated/rhode-island_gap_matrix_v2.jsonl, data/generated/rhode-island_failure_ledger_v2.jsonl, data/generated/rhode-island_verified_sources_v1.jsonl, data/generated/rhode-island_next_action_queue_v2.jsonl, docs/generated/rhode-island-california-grade-audit-report-v2.md
 
 ## Result
@@ -31,4 +31,4 @@
 - legal_aid: verified_state_grade
 - able_program: verified_state_grade
 - ssi_ssa_federal_reference: verified_state_grade
-- county_local_disability_resources: blocked_public_dhs_office_stack_without_county_or_service_area_contract
+- county_local_disability_resources: verified_state_grade

@@ -7,16 +7,15 @@
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 5,
-  "completeness_pct": 83,
-  "strong_critical_families": 10,
-  "weak_critical_families": 2,
+  "completeness_pct": 92,
+  "strong_critical_families": 11,
+  "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "public_ride_directory_and_public_dhs_office_stack_expose_local_entities_but_zero_public_county_or_special_education_service_area_contracts",
   "recommended_batch": "batch_3_procedure_hardening",
   "critical_gap_families": [
-    "district_or_county_education_routing",
-    "county_local_disability_resources"
+    "district_or_county_education_routing"
   ],
   "major_gap_families": [],
   "verified_source_families_with_samples": [
@@ -44,16 +43,9 @@
     {
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Rhode Island still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.",
-      "next_action": "author_county_or_district_exact_targets"
-    },
-    {
-      "family": "county_local_disability_resources",
-      "severity": "critical",
-      "failure_code": "generic_or_statewide_evidence_used_where_local_required",
-      "evidence": "Rhode Island county/local disability resources still depend on generic locator-derived or DOI mirror-backed evidence instead of reviewed county-grade official local-office proof.",
-      "next_action": "author_county_or_district_exact_targets"
+      "failure_code": "public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract",
+      "evidence": "Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces. The live RIDE Special Education page remains statewide guidance only and links families to the public school directory stack instead of exposing district-owned special-education leaves. The public School Directory page explicitly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, then routes into the public Data Center directory. On the public Data Center host, the Schools Directory explicitly says it provides only LEA, school, location, and contact information, while additional directory information is available only to authenticated users in the RIDE portal. The public table and search lanes expose LEA, school, school type, and school subtype, including special-education categories, but no county field and no public district special-education routing contract. The separate RI School Districts page lists 66 LEAs and district websites, but it also exposes no county column and no special-education contact routing. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.",
+      "next_action": "hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing"
     }
   ]
 }

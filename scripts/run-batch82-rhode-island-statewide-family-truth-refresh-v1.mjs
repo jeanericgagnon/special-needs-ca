@@ -127,6 +127,69 @@ function updatedVerifiedRow(row) {
       ],
     };
   }
+  if (row.family === 'county_local_disability_resources') {
+    return {
+      ...row,
+      family_status: 'verified_state_grade',
+      evidence_strength: 'strong',
+      sample_count: 5,
+      query_basis: 'Reviewed 2026-06-25 the live first-party Rhode Island DHS Office Locator Tool plus bounded official office leaves. The official lookup now exposes an explicit city/town lookup covering Rhode Island municipalities and returns a home-office assignment on the public DHS host.',
+      blocker_code: null,
+      blocker_evidence: null,
+      samples: [
+        {
+          sample_name: 'DHS Office Locator Tool',
+          source_url: 'https://dhs.ri.gov/office-locator-tool',
+          final_url: 'https://dhs.ri.gov/office-locator-tool',
+          verification_status: 'official_verified',
+          source_type: 'official_city_town_office_locator',
+          source_table: 'batch82_rhode_island_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'The official DHS Office Locator Tool says a customer can select a city/town to find their home office and publicly lists Rhode Island city/town options across the state.',
+        },
+        {
+          sample_name: 'Bristol lookup to DHS Middletown Office',
+          source_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=36&op=Apply',
+          final_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=36&op=Apply',
+          verification_status: 'official_verified',
+          source_type: 'official_city_town_to_office_assignment',
+          source_table: 'batch82_rhode_island_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'Submitting the official city/town lookup for Bristol returns the DHS Middletown Office with the office title, address, phone, and hours on the official DHS host.',
+        },
+        {
+          sample_name: 'South Kingstown lookup to DHS South County Office',
+          source_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=131&op=Apply',
+          final_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=131&op=Apply',
+          verification_status: 'official_verified',
+          source_type: 'official_city_town_to_office_assignment',
+          source_table: 'batch82_rhode_island_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'Submitting the official city/town lookup for South Kingstown returns the DHS South County Office with a reviewable home-office assignment on the official host.',
+        },
+        {
+          sample_name: 'Warwick lookup to DHS Providence Office',
+          source_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=156&op=Apply',
+          final_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=156&op=Apply',
+          verification_status: 'official_verified',
+          source_type: 'official_city_town_to_office_assignment',
+          source_table: 'batch82_rhode_island_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'Submitting the official city/town lookup for Warwick returns the DHS Providence Office (125 Holden Street) as the assigned home office.',
+        },
+        {
+          sample_name: 'Woonsocket lookup to DHS Woonsocket Office',
+          source_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=176&op=Apply',
+          final_url: 'https://dhs.ri.gov/office-locator-tool?tid%5B%5D=176&op=Apply',
+          verification_status: 'official_verified',
+          source_type: 'official_city_town_to_office_assignment',
+          source_table: 'batch82_rhode_island_statewide_family_truth_refresh_v1',
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'Submitting the official city/town lookup for Woonsocket returns the DHS Woonsocket Office with a direct local office assignment on the public DHS host.',
+        },
+      ],
+    };
+  }
   return row;
 }
 
@@ -146,7 +209,7 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## Failure ledger',
     '',
-    ...failureRows.map((row) => `- ${row.family}: ${row.failure_code} :: ${row.evidence}`),
+    ...(failureRows.length ? failureRows.map((row) => `- ${row.family}: ${row.failure_code} :: ${row.evidence}`) : ['- none']),
     '',
     '## Verified source samples',
     '',
@@ -154,13 +217,14 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## Next actions',
     '',
-    ...nextRows.map((row) => `- [${row.severity}] ${row.family}: ${row.next_action}`),
+    ...(nextRows.length ? nextRows.map((row) => `- [${row.severity}] ${row.family}: ${row.next_action}`) : ['- none']),
     '',
     '## Completion decision',
     '',
     '- Rhode Island no longer belongs in UNSTARTED because the packet already preserves reviewed first-party statewide protection-and-advocacy evidence on disk instead of only legacy nonprofit inventory rows.',
     '- Disability Rights Rhode Island is preserved as strong statewide protection-and-advocacy support because the reviewed first-party page explicitly says it is the independent federally mandated Protection and Advocacy (P&A) System for the state of Rhode Island.',
-    '- Rhode Island still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of county- or district-owned leaves, and county/local disability resources still depend on generic locator-derived or mirror-backed evidence instead of reviewed county-grade local proof.',
+    '- Rhode Island now has a truthful official local-office routing lane because the live DHS Office Locator exposes a city/town lookup that returns assigned home offices on the official host.',
+    '- Rhode Island still cannot reach California-grade or become index-safe because district or county education routing still depends on statewide or structural evidence instead of reviewed county- or district-owned leaves.',
     '- Rhode Island is therefore terminal BLOCKED, not COMPLETE.',
   ].join('\n') + '\n';
 }
@@ -202,13 +266,20 @@ export function generateBatch82RhodeIslandStatewideFamilyTruthRefreshV1() {
         status_reason: 'reviewed first-party Help RI Law / Rhode Island Legal Services pages preserve explicit statewide low-income legal-help routing',
       };
     }
+    if (row.family === 'county_local_disability_resources') {
+      return {
+        ...row,
+        family_status: 'verified_state_grade',
+        status_reason: 'reviewed official DHS Office Locator now exposes a public city/town lookup that returns assigned home offices on the official host, supplying explicit local-routing coverage',
+      };
+    }
     return row;
   });
 
-  const updatedFailureRows = failureRows.filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'].includes(row.family));
+  const updatedFailureRows = failureRows.filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid', 'county_local_disability_resources'].includes(row.family));
   const updatedVerifiedRows = verifiedRows.map(updatedVerifiedRow);
   const updatedNextRows = nextRows
-    .filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'].includes(row.family))
+    .filter((row) => !['protection_and_advocacy', 'parent_training_information_center', 'legal_aid', 'county_local_disability_resources'].includes(row.family))
     .sort((a, b) => a.priority_rank - b.priority_rank)
     .map((row, index) => ({ ...row, priority_rank: index + 1 }));
 
@@ -216,26 +287,20 @@ export function generateBatch82RhodeIslandStatewideFamilyTruthRefreshV1() {
     ...summary,
     classification: 'BLOCKED',
     index_safe: false,
-    completeness_pct: 83,
-    strong_critical_families: 10,
-    weak_critical_families: 2,
+    completeness_pct: 92,
+    strong_critical_families: 11,
+    weak_critical_families: 1,
     missing_critical_families: 0,
+    critical_gap_families: ['district_or_county_education_routing'],
     major_gap_families: [],
     complete_ready: false,
     final_blockers: [
       {
         family: 'district_or_county_education_routing',
         severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'Rhode Island still depends on statewide or structural education evidence instead of reviewed county- or district-owned special-education leaves.',
-        next_action: 'author_county_or_district_exact_targets',
-      },
-      {
-        family: 'county_local_disability_resources',
-        severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'Rhode Island county/local disability resources still depend on generic locator-derived or DOI mirror-backed evidence instead of reviewed county-grade official local-office proof.',
-        next_action: 'author_county_or_district_exact_targets',
+        failure_code: 'public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract',
+        evidence: 'Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces. The live RIDE Special Education page remains statewide guidance only and links families to the public school directory stack instead of exposing district-owned special-education leaves. The public School Directory page explicitly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, then routes into the public Data Center directory. On the public Data Center host, the Schools Directory explicitly says it provides only LEA, school, location, and contact information, while additional directory information is available only to authenticated users in the RIDE portal. The public table and search lanes expose LEA, school, school type, and school subtype, including special-education categories, but no county field and no public district special-education routing contract. The separate RI School Districts page lists 66 LEAs and district websites, but it also exposes no county column and no special-education contact routing. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.',
+        next_action: 'hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing',
       },
     ],
     verified_source_families_with_samples: [
@@ -260,7 +325,7 @@ export function generateBatch82RhodeIslandStatewideFamilyTruthRefreshV1() {
     state: 'rhode-island',
     classification_before: summary.classification,
     classification_after: updatedSummary.classification,
-    resolved_families: ['protection_and_advocacy', 'parent_training_information_center', 'legal_aid'],
+    resolved_families: ['protection_and_advocacy', 'parent_training_information_center', 'legal_aid', 'county_local_disability_resources'],
     remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
   };
 

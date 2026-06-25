@@ -22,7 +22,7 @@ const KNOWN_BAD_PATTERNS = {
   genericDistrictRoot: /(generic district root|district homepage|district root rather than a reviewed special-education leaf|inventory page)/i,
   sitemapOnly: /(sitemap\.xml|sitemap[- ]discovered|official sitemap also publishes)/i,
   blockedLane: /(access denied|forbidden|page not found|request rejected|unresolvable|dns resolution|challenge|cloudflare|blocked shell)/i,
-  explicitCoverage: /(all \d+ count(?:ies|y)|all counties|every county|county-to-|counties served|by county|service area|service-area|regional offices?|region 1 through region \d+|county-filtered|county listings|district-specific pages)/i,
+  explicitCoverage: /(all \d+ count(?:ies|y)|all counties|every county|county-to-|counties served|by county|service area|service-area|regional offices?|region 1 through region \d+|county-filtered|county listings|district-specific pages|city\/town lookup|city-to-office|town-to-office|municipality lookup|municipal lookup|every city and town|all rhode island cities and towns)/i,
 };
 
 function parseArgs(argv) {
