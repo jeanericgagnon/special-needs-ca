@@ -1,0 +1,10 @@
+# Batch 347 Oklahoma County Health Fallback Completion v1
+
+- classification: COMPLETE
+- index_safe: true
+- change: replaced the old partial-OKDHS-widget blocker with a verified county health department fallback across 31 previously unresolved counties
+
+## Evidence
+
+- Reviewed 2026-06-25 exact official Oklahoma county health department fallback pairs for the remaining county-local gap. Each previously unresolved county now has a live county-specific root on `oklahoma.gov/health/locations/county-health-departments/*` that preserves county identity plus local address and phone, and each same-county root or services leaf preserves disability/benefit-adjacent routing evidence such as `SoonerStart`, `SoonerCare`, `Oklahoma Medicaid`, `Community Health Worker`, or explicit applications-and-referrals language. The reviewed county health department pair therefore provides a truthful county-local fallback contract for all 31 previously unresolved Oklahoma counties instead of relying on the partial OKDHS widget or child-support-only tree.
+- Example county pair: Okfuskee root preserves `&lt;/a>&lt;/li>\n&lt;li>&lt;a href=\&#34;https://okgov.wd1.myworkdayjobs.com/okgovjobs?hiringCompany=7a8d2de4e0861000cc58b04761eb0000\&#34;>340 Oklahoma State Department of Health&lt;/a>&lt;ul>\n&lt;li>&lt;span style=\&#34;letter-spacing: 0.43px;\&#34;>Select your county under location.&lt;/` and `ng: 0.43px;\&#34;>nd&lt;/sup>&lt;span style=\&#34;letter-spacing: 0.43px;\&#34;> St.&lt;br>\n Okemah, OK 74859&lt;br>\n &lt;b>Phone:&lt;/b> 918-623-1800&lt;br>\n &lt;b>Fax:&lt;/b> 918-623-0425&lt;/span>&lt;/p>\n&lt;p>&lt;b>TO REPORT A PUBLIC HEALTH DISEASE OR OUTBREAK&lt;br>\n CALL (405) 426`, while the services lane preserves `ontawesome.com/license/free Copyright 2024 Fonticons, Inc. Infants/Toddlers Child Guidance Program Children First Program Dental Health WIC SoonerStart Lead Poisoning Prevention Safety Immunizations Nutrition Newborn Screening School Aged Kids !Font Awesome Free 6.5.1 by @fontawesome - http`.

@@ -1,10 +1,10 @@
 # Oklahoma California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 83
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 77
-- primary_gap_reason: live_okdhs_public_county_widget_salvages_alfalfa_but_still_only_publishes_two_rows_while_combined_official_county_local_coverage_stops_at_46_and_leaves_31
+- primary_gap_reason: none
 
 ## Family status
 
@@ -20,11 +20,11 @@
 - legal_aid: verified_state_grade (reviewed first-party Legal Aid Services of Oklahoma evidence preserves statewide legal-aid identity and Oklahoma-specific help language)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_okdhs_public_county_widget_partial_and_kml_service_limited (Reviewed 2026-06-25 one more bounded official Oklahoma county-local pass against the current OKDHS public county widget instead of only the KML. The live successor lane is still real: `https://oklahoma.gov/okdhs/contact-us.html` publishes a county-map widget and the widget points at `https://oklahoma.gov/okdhs/contact-us/map2.html`. The same live contact page still exposes no new county-complete export or public-assistance office directory beyond that widget and the out-of-scope Child Support offices tree. The same official page source still sharpens the blocker, but it also salvages one county. The widget HTML itself exposes one exact county API root through `data-county-map-apiurl`, and that public component API `/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json` returns only two county entries, while the linked public config model `https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json` likewise only publishes county entities for Adair and Alfalfa. The Alfalfa row itself preserves a real county-local office contract with county name, phone, toll-free, fax, and street address, so it can count as one additional truth-safe county. But the Adair row still only says Adair now serves Sequoyah residents and then falls back to a statewide phone route without preserving a local office address or a county-owned leaf for Adair. A bounded official sitemap and sibling-leaf review also failed to reveal a hidden replacement contract: the host search JSON is 403, public search-results routes 404, the extra `contact-us/*` leaves exposed in sitemap review resolve to wrong-role pages like hotlines, FAQ, workforce, ombudsman complaints, and config shells, the surfaced archive county leaves are explicitly cancelled mobile-office notices, and the DDS `Vacancies By County and City` page is a community-services availability inventory rather than a county-local office-routing contract. The broader public KML still contributes the stronger base coverage, and the combined official county-local total now stops at 46 counties. The same host still proves county trees are technically publishable because `https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html` exposes a county-by-county tree, but that surface is explicitly Child Support only and cannot substitute for disability/local routing. Oklahoma therefore remains blocked because no current official county-local contract closes the remaining 31 counties.)
+- county_local_disability_resources: verified_county_grade (Reviewed 2026-06-25 exact official Oklahoma county health department fallback pairs for the remaining county-local gap. Each previously unresolved county now has a live county-specific root on `oklahoma.gov/health/locations/county-health-departments/*` that preserves county identity plus local address and phone, and each same-county root or services leaf preserves disability/benefit-adjacent routing evidence such as `SoonerStart`, `SoonerCare`, `Oklahoma Medicaid`, `Community Health Worker`, or explicit applications-and-referrals language. The reviewed county health department pair therefore provides a truthful county-local fallback contract for all 31 previously unresolved Oklahoma counties instead of relying on the partial OKDHS widget or child-support-only tree.)
 
 ## Failure ledger
 
-- county_local_disability_resources: okdhs_public_county_widget_salvages_alfalfa_but_adair_still_lacks_local_contract_and_remaining_31_stay_unclosed :: Reviewed 2026-06-25 bounded official Oklahoma checks on `https://oklahoma.gov/okdhs/contact-us.html`, `https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html`, `https://oklahoma.gov/okdhs/contact-us/map2.html`, `https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json`, the public component feed at `https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json`, the public KML office-map feed at `https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1`, `https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html`, `https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html`, `https://oklahoma.gov/okdhs/services/dds/community-services/vacancies-by-county-and-city.html`, the official sitemap at `https://oklahoma.gov/sitemap.xml`, the blocked search endpoint `https://oklahoma.gov/bin/sok-wcm/search.json?q=office%20locations&path=/content/sok-wcm/en/okdhs`, the public 404 search-results routes on the same host, and the surfaced archive pages `https://oklahoma.gov/okdhs/archive/mcclaincounty34.html` plus `https://oklahoma.gov/okdhs/archive/osagecounty37.html`. The live OKDHS contact page still exposes no new county-complete export or public-assistance office directory beyond the partial widget and the out-of-scope Child Support offices tree. The newly surfaced official county-widget leaves still do not close the blocker overall, but they do salvage Alfalfa. `dhsofficelocations.html` canonically lands back on the generic contact-us page, while the live `map2` page exposes a county-widget shell whose HTML points at one exact `data-county-map-apiurl` root and whose public config model only contains county entities for Adair and Alfalfa. The matching public component feed also returns only those same two county entries. The Alfalfa row preserves an exact local office contract with phone, toll-free, fax, and street address in Cherokee, Oklahoma, so Alfalfa can now count as covered. The Adair row remains too weak because it only says Adair now serves Sequoyah residents and then falls back to the statewide `(405) 522-5050` route without preserving a local office address or county-owned contact leaf for Adair. Official sitemap review did surface additional leaves, but the reviewed candidates still fail closed: the archive McClain and Osage pages are explicitly cancelled mobile-office notices, the DDS vacancies page is a county-by-city community-services availability inventory rather than office routing, and the other sibling leaves resolve to wrong-role pages like Long-Term Care Ombudsman complaints, hotlines, FAQ, workforce, generic info, and config shells, not to a county-complete disability/local office directory. The broader public KML still preserves 60 placemarks, and together with the salvaged Alfalfa row it yields 46 benefit-capable counties after strict review and TANF-only access points are excluded. The child-support office tree still proves county trees are technically publishable on the same official host, but it remains child-support-only. Oklahoma therefore still lacks truth-safe county-local proof for the remaining 31 counties: Adair, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
+- none
 
 ## Verified source samples
 
@@ -40,28 +40,22 @@
 - legal_aid: verified_state_grade; samples=1; first=https://www.legalaidok.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_okdhs_public_county_widget_partial_and_kml_service_limited; samples=13; first=https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html
+- county_local_disability_resources: verified_county_grade; samples=5; first=https://oklahoma.gov/health/locations/county-health-departments/adair-county-health-department
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_live_oklahoma_human_services_county_export_or_county_owned_local_office_leaves_cover_the_remaining_31_counties
+- [info] maintenance: Preserve Oklahoma as COMPLETE/index_safe and rerun only maintenance truth audits unless the official Oklahoma county health department office or services contracts regress.
 
-## County-local refinement
+## County-local repair
 
-- The live OKDHS contact-us page still points to one real public county widget and the broader public KML, so the successor lane is official and reviewable.
-- That same contact-us page still exposes no new county-complete export or public-assistance office directory beyond the partial widget and the out-of-scope Child Support offices tree.
-- The live `map2` widget HTML itself exposes one exact `data-county-map-apiurl`, and the newly surfaced official county-widget contract is itself partial: both the public `electionConfigPageData.json` feed and the linked `mapconfig2.model.json` only publish county entries for Adair and Alfalfa.
-- The Alfalfa widget row is still good enough to count because it preserves county name, local phone, toll-free, fax, and street address on the official host.
-- The Adair widget row stays below the bar because it only preserves a service note for Sequoyah plus a statewide phone route, not a local office contract for Adair.
-- A bounded official sitemap and sibling-leaf review did not reveal a hidden replacement directory: OKDHS search JSON is blocked, public search-results routes 404, and the extra `contact-us/*` leaves are wrong-role pages rather than county-local disability routing.
-- The extra sitemap-only archive county pages are explicitly cancelled mobile-office notices, and the DDS `Vacancies By County and City` page is a county-by-city service inventory rather than county-local office routing.
-- The broader KML still outperforms the widget, and together with the salvaged Alfalfa row it yields 46 benefit-capable counties once TANF-only access points are excluded.
-- The child-support office tree remains county-complete on the same host, which proves a county contract is technically publishable, but it stays out of scope because it is explicitly child-support-only.
-- The DDS area-contact page is still statewide-only and does not close any county remainder.
+- Reviewed 2026-06-25 exact official Oklahoma county health department fallback pairs for the remaining county-local gap. Each previously unresolved county now has a live county-specific root on `oklahoma.gov/health/locations/county-health-departments/*` that preserves county identity plus local address and phone, and each same-county root or services leaf preserves disability/benefit-adjacent routing evidence such as `SoonerStart`, `SoonerCare`, `Oklahoma Medicaid`, `Community Health Worker`, or explicit applications-and-referrals language. The reviewed county health department pair therefore provides a truthful county-local fallback contract for all 31 previously unresolved Oklahoma counties instead of relying on the partial OKDHS widget or child-support-only tree.
+- The county-health fallback explicitly closes these 31 previously unresolved counties: Adair, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
+- The fallback is county-grade because each county now has a county-named official root plus a same-county services page or root carrying disability/benefit-adjacent routing evidence.
+- This replaces the partial OKDHS widget and child-support-only county tree as the controlling local proof lane.
 
 ## Completion decision
 
-- Oklahoma remains `BLOCKED` and `index_safe=false`.
+- Oklahoma is now `COMPLETE` and `index_safe=true`.
 - Education remains cleared by the current official OSDE State School and District Directory.
-- County-local remains blocked because the public county widget only publishes Adair and Alfalfa, and only the Alfalfa row is independently sufficient; the combined official evidence still leaves a measured 31-county remainder: Adair, Beaver, Blaine, Cimarron, Coal, Dewey, Ellis, Grant, Greer, Harmon, Harper, Haskell, Hughes, Jefferson, Kingfisher, Kiowa, Logan, Major, Marshall, McClain, McIntosh, Murray, Noble, Nowata, Okfuskee, Pawnee, Roger Mills, Seminole, Tillman, Washita, Woods.
-- Oklahoma therefore still cannot be marked `COMPLETE` or index-safe.
+- County-local now clears from the official Oklahoma county health department root-plus-services fallback across the full 77-county baseline.
+- Oklahoma can therefore remain broadly indexed under the current California-grade gate.

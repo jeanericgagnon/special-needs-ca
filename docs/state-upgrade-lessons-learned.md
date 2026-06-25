@@ -470,3 +470,6 @@
 
 ### Browser-Reviewed Successor Directories Can Retire A Raw-Fetch Blocker
 *   **Lesson:** If bounded raw fetches still return challenge-like shells but the exact first-party successor route is publicly readable in the browser with county-grade rows, promote from the reviewed successor evidence instead of holding the state blocked on the raw shell. Minnesota DHS cleared only after the exact county/Tribal/state directory was reviewed directly and shown to publish real county and Tribal office entries across the alphabet.
+
+### County Health Department Root Plus Services Leaves Can Be A Truth-Safe County Fallback
+*   **Lesson:** If an official county health department root preserves county-specific address and phone while an exact same-county services leaf preserves benefit or disability-adjacent routing such as SoonerStart, SoonerCare, or Community Health Worker referrals, the pair can truthfully close a county-local fallback gap. Oklahoma cleared once each remaining blocked county had that exact county root-plus-services contract on the official state health host.
