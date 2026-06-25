@@ -9,12 +9,12 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Classification counts
 
-- COMPLETE: 37
-- BLOCKED: 13
+- COMPLETE: 38
+- BLOCKED: 12
 
-- index-safe states: 37
-- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, West Virginia, Wisconsin
-- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Washington, Wyoming
+- index-safe states: 38
+- complete states: Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Virginia, Washington, West Virginia, Wisconsin
+- blocked states: Alaska, Arizona, Idaho, Maine, Massachusetts, New Hampshire, New Mexico, North Dakota, Rhode Island, South Dakota, Vermont, Wyoming
 
 ## Notes
 
@@ -32,3 +32,4 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - New Mexico remains BLOCKED/index-safe=false, and the education blocker is now tightened to the fuller official failure mode: the live PED SharePoint directory host, its REST-backed `2017 NM Schools` list, the REC grouping page, and six public workbooks for schools, superintendents, REC directors, and principals are all reviewable, but none publishes a county field or REC county-service-area contract.
 - New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, while the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, so no public official recovery lane exists yet.
 - Wisconsin is now COMPLETE/index-safe from the live DPI School Directory county/CESA routing contract plus refreshed official DHS developmental-disability, Birth to 3, and DVR transition evidence.
+- Washington is now COMPLETE/index-safe from the reviewed official DDCS county-region map plus refreshed official ESIT and DVR local-routing evidence on current DSHS/DCYF hosts.

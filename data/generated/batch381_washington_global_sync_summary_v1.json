@@ -1,0 +1,9 @@
+{
+  "batch": "batch381_washington_global_sync_v1",
+  "generated_at": "2026-06-25T18:12:50.026Z",
+  "washington_classification": "COMPLETE",
+  "complete_count": 38,
+  "blocked_count": 12,
+  "index_safe_count": 38,
+  "incorrectly_index_safe_states": []
+}
