@@ -27,13 +27,10 @@ const gapRows = readJsonl('data/generated/alaska_gap_matrix_v2.jsonl');
 const failureRows = readJsonl('data/generated/alaska_failure_ledger_v2.jsonl');
 const verifiedRows = readJsonl('data/generated/alaska_verified_sources_v1.jsonl');
 const nextRows = readJsonl('data/generated/alaska_next_action_queue_v2.jsonl');
-const allStateAudit = readJson('data/generated/all_state_california_grade_audit_v3.json');
-const allStateQueue = readJsonl('data/generated/all_state_priority_queue_v3.jsonl');
 const stateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/alaska-california-grade-audit-report-v2.md'), 'utf8');
-const allStateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/all-state-california-grade-audit-report-v3.md'), 'utf8');
-const handoff = fs.readFileSync(path.join(repoRoot, 'docs/generated/gemini-source-scout-handoff.md'), 'utf8');
 const batchSummary = readJson('data/generated/batch355_alaska_dual_lane_dpa_finality_summary_v1.json');
 const batchReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/batch355-alaska-dual-lane-dpa-finality-report-v1.md'), 'utf8');
+const evidenceArtifact = readJson('data/generated/alaska_county_local_routing_evidence_v1.json');
 
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
@@ -71,28 +68,15 @@ const next = nextRows.find((row) => row.family === 'county_local_disability_reso
 assert.ok(next);
 assert.equal(next.next_action, 'hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api');
 
-const alaskaAudit = allStateAudit.states.find((row) => row.stateId === 'alaska');
-assert.ok(alaskaAudit);
-assert.equal(alaskaAudit.packetBatch, 'batch355_alaska_dual_lane_dpa_finality_v1');
-assert.equal(alaskaAudit.packetPrimaryGapReason, summary.primary_gap_reason);
-
-const alaskaQueue = allStateQueue.find((row) => row.state === 'alaska');
-assert.ok(alaskaQueue);
-assert.equal(alaskaQueue.primary_gap_reason, summary.primary_gap_reason);
-assert.equal(alaskaQueue.recommended_batch, 'hold_for_new_official_borough_assignment_contract');
-assert.equal(alaskaQueue.repair_lane, 'blocked_until_new_official_public_county_contract');
-
 assert.match(stateReport, /The official Department of Health DPA offices page is publicly readable in the reviewed browser lane\./);
 assert.match(stateReport, /raw low-token lane still gets Cloudflare `Just a moment\.\.\.` 403 shells/i);
 assert.match(stateReport, /live public search page still expose no borough- or census-area DPA office contract/i);
-assert.match(allStateReport, /browser-readable again and proves regional offices plus contacts/i);
-assert.match(handoff, /## Current Focus State: Alaska/);
-assert.match(handoff, /dual-lane rather than challenge-only/i);
-assert.match(handoff, /DPA offices page on `health\.alaska\.gov` is publicly readable/i);
-assert.match(handoff, /DFCS public search: public assistance/);
-assert.match(handoff, /## Next State Order After Alaska/);
-assert.match(handoff, /1\. Maine/);
-assert.match(handoff, /2\. Idaho/);
+assert.equal(evidenceArtifact.state, 'alaska');
+assert.match(evidenceArtifact.county_local.reviewed_sources[0].evidence_excerpt, /does not assign boroughs or census areas/i);
+assert.match(evidenceArtifact.county_local.reviewed_sources[1].evidence_excerpt, /HTTP 403/i);
+assert.match(evidenceArtifact.county_local.reviewed_sources[2].evidence_excerpt, /888-804-6330/i);
+assert.match(evidenceArtifact.county_local.reviewed_sources[3].evidence_excerpt, /public search page is live/i);
+assert.match(evidenceArtifact.county_local.blocker_summary, /borough- or census-area-to-office assignment contract/i);
 
 assert.equal(batchSummary.reviewed_dpa_offices_status, 200);
 assert.equal(batchSummary.raw_dpa_landing_status, 403);

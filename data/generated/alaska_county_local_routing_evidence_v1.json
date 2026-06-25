@@ -1,0 +1,37 @@
+{
+  "state": "alaska",
+  "generated_at": "2026-06-25T22:21:12.664Z",
+  "county_local": {
+    "reviewed_sources": [
+      {
+        "source_url": "https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/",
+        "authority": "Alaska Department of Health",
+        "review_date": "2026-06-26",
+        "finding": "browser_readable_dpa_offices_page_groups_only_broad_regions",
+        "evidence_excerpt": "The page groups offices into broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska, but does not assign boroughs or census areas to those offices."
+      },
+      {
+        "source_url": "https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/",
+        "authority": "Alaska Department of Health",
+        "review_date": "2026-06-26",
+        "finding": "raw_low_token_health_host_still_cloudflare_challenged",
+        "evidence_excerpt": "Raw HTTP fetch still returns HTTP 403 with Cloudflare challenge headers and the title \"Just a moment...\"."
+      },
+      {
+        "source_url": "https://dfcs.alaska.gov/Pages/Services.aspx",
+        "authority": "Alaska Department of Family and Community Services",
+        "review_date": "2026-06-26",
+        "finding": "dfcs_services_page_relays_statewide_program_links_only",
+        "evidence_excerpt": "The page links Adult Public Assistance and Apply for Medicaid with statewide 888-804-6330 phone routing, not borough or census-area office assignments."
+      },
+      {
+        "source_url": "https://dfcs.alaska.gov/pages/search.aspx?q=public%20assistance",
+        "authority": "Alaska Department of Family and Community Services",
+        "review_date": "2026-06-26",
+        "finding": "dfcs_search_page_live_but_no_role_bearing_dpa_results",
+        "evidence_excerpt": "The public search page is live, but bounded public-assistance queries still produce no role-bearing DPA, public-assistance office, or borough-assignment result."
+      }
+    ],
+    "blocker_summary": "Reviewed official Alaska county-local lanes still do not preserve any public borough- or census-area-to-office assignment contract for DPA routing."
+  }
+}

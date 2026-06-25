@@ -14,15 +14,12 @@ const INPUTS = {
   failures: path.join(generatedDir, 'alaska_failure_ledger_v2.jsonl'),
   verified: path.join(generatedDir, 'alaska_verified_sources_v1.jsonl'),
   nextActions: path.join(generatedDir, 'alaska_next_action_queue_v2.jsonl'),
-  allStateAudit: path.join(generatedDir, 'all_state_california_grade_audit_v3.json'),
-  allStateQueue: path.join(generatedDir, 'all_state_priority_queue_v3.jsonl'),
   stateReport: path.join(docsGeneratedDir, 'alaska-california-grade-audit-report-v2.md'),
-  allStateReport: path.join(docsGeneratedDir, 'all-state-california-grade-audit-report-v3.md'),
-  handoff: path.join(docsGeneratedDir, 'gemini-source-scout-handoff.md'),
 };
 
 const OUTPUTS = {
   batchSummary: path.join(generatedDir, 'batch355_alaska_dual_lane_dpa_finality_summary_v1.json'),
+  evidence: path.join(generatedDir, 'alaska_county_local_routing_evidence_v1.json'),
   batchReport: path.join(docsGeneratedDir, 'batch355-alaska-dual-lane-dpa-finality-report-v1.md'),
 };
 
@@ -37,16 +34,7 @@ const FAMILY_STATUS =
   'blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract';
 const NEXT_ACTION =
   'hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api';
-const UPDATED_AT = '2026-06-25';
-const ASSIGNED_STATE_ORDER = [
-  'Massachusetts',
-  'Alaska',
-  'Maine',
-  'Idaho',
-  'New Mexico',
-  'Arizona',
-  'New Hampshire',
-];
+const UPDATED_AT = '2026-06-26';
 
 const PROBE = {
   fetchedDate: UPDATED_AT,
@@ -183,74 +171,44 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
   ].join('\n') + '\n';
 }
 
-function replaceAllStateAlaskaNote(text) {
-  const lines = text.split('\n').filter((line) => !line.startsWith('- Alaska county-local routing is still blocked'));
-  lines.push('- Alaska county-local routing is still blocked: the official DPA offices page is browser-readable again and proves regional offices plus contacts, but it still has no borough/census-area assignment contract, while the raw low-token lane still gets health-host Cloudflare 403 shells and DFCS root/services/site-map/contacts/search still add no county-equivalent mapping.');
-  return `${lines.join('\n').replace(/\n+$/, '')}\n`;
-}
-
-function buildHandoff(allStateAudit) {
-  const completeStates = allStateAudit.states
-    .filter((row) => row.classification === 'COMPLETE')
-    .map((row) => row.stateName)
-    .sort((a, b) => a.localeCompare(b));
-  const blockedRows = allStateAudit.states
-    .filter((row) => row.classification === 'BLOCKED')
-    .sort((a, b) => a.stateName.localeCompare(b.stateName));
-  const nextBlockedStateNames = ASSIGNED_STATE_ORDER
-    .slice(ASSIGNED_STATE_ORDER.indexOf('Alaska') + 1)
-    .filter((stateName) => blockedRows.some((row) => row.stateName === stateName))
-    .slice(0, 10);
-
-  return [
-    '# Gemini Source Scout Handoff',
-    '',
-    `Updated: ${UPDATED_AT}`,
-    '',
-    'Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.',
-    '',
-    '## Current Complete States',
-    '',
-    completeStates.join(', '),
-    '',
-    '## Current Blocked States',
-    '',
-    ...blockedRows.map((row) => `- ${row.stateName}: \`${row.packetPrimaryGapReason}\``),
-    '',
-    '## Current Focus State: Alaska',
-    '',
-    '### Blocker Reason',
-    '',
-    '`county_local_disability_resources` is still the only remaining Alaska blocker, but the truth is now dual-lane rather than challenge-only. The current official DPA offices page on `health.alaska.gov` is publicly readable in the reviewed browser lane and it clearly proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options. But it still only groups offices by broad regions and still does not map boroughs or census areas to those offices. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` 403 shells, so it still offers no reusable raw export or fetch lane. The DFCS successor host remains negative: root, Services, Site Map, Department Contacts, and the live public search page still expose no DPA/public-assistance office directory or county-equivalent assignment contract. Alaska remains BLOCKED because there is still no public official borough- or census-area office-assignment surface.',
-    '',
-    '### Exact Evidence Needed',
-    '',
-    '- Any official Alaska page, table, export, PDF, API, or directory that explicitly maps boroughs or census areas to DPA office locations.',
-    '- Any public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings now visible.',
-    '- Any official DFCS or Department of Health directory leaf that directly names borough/census-area coverage for public-assistance offices.',
-    '',
-    '### Useful Official URLs Already Tried',
-    '',
-    `- [Alaska DPA offices page](${PROBE.reviewedDpaOffices.url})`,
-    `- [Alaska DPA landing page](${PROBE.rawDpaLanding.url})`,
-    `- [Alaska DPA dashboard PDF](${PROBE.rawDpaDashboardPdf.url})`,
-    `- [Alaska Medicaid enrollment snapshot PDF](${PROBE.rawMedicaidSnapshotPdf.url})`,
-    `- [DFCS root](${PROBE.dfcsRoot.url})`,
-    `- [DFCS Services](${PROBE.dfcsServices.url})`,
-    `- [DFCS Site Map](${PROBE.dfcsSiteMap.url})`,
-    `- [DFCS Department Contacts](${PROBE.dfcsContacts.url})`,
-    ...PROBE.dfcsPublicSearch.queries.map((query) => `- [DFCS public search: ${query}](${PROBE.dfcsPublicSearch.url}?q=${encodeURIComponent(query)})`),
-    '',
-    '### Top Remaining Source-Scouting Targets',
-    '',
-    '- Any public official borough- or census-area-to-office assignment table on Alaska Department of Health or DFCS.',
-    '- Any public official DPA office directory export, API, or PDF that lists explicit borough/census-area coverage.',
-    '',
-    '## Next State Order After Alaska',
-    '',
-    ...nextBlockedStateNames.map((stateName, index) => `${index + 1}. ${stateName}`),
-    '',
-  ].join('\n');
+function buildEvidenceArtifact() {
+  return {
+    state: 'alaska',
+    generated_at: PROBE.generatedAt,
+    county_local: {
+      reviewed_sources: [
+        {
+          source_url: PROBE.reviewedDpaOffices.url,
+          authority: 'Alaska Department of Health',
+          review_date: UPDATED_AT,
+          finding: 'browser_readable_dpa_offices_page_groups_only_broad_regions',
+          evidence_excerpt: 'The page groups offices into broad regions like Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska, but does not assign boroughs or census areas to those offices.',
+        },
+        {
+          source_url: PROBE.rawDpaOffices.url,
+          authority: 'Alaska Department of Health',
+          review_date: UPDATED_AT,
+          finding: 'raw_low_token_health_host_still_cloudflare_challenged',
+          evidence_excerpt: 'Raw HTTP fetch still returns HTTP 403 with Cloudflare challenge headers and the title "Just a moment...".',
+        },
+        {
+          source_url: PROBE.dfcsServices.url,
+          authority: 'Alaska Department of Family and Community Services',
+          review_date: UPDATED_AT,
+          finding: 'dfcs_services_page_relays_statewide_program_links_only',
+          evidence_excerpt: 'The page links Adult Public Assistance and Apply for Medicaid with statewide 888-804-6330 phone routing, not borough or census-area office assignments.',
+        },
+        {
+          source_url: `${PROBE.dfcsPublicSearch.url}?q=${encodeURIComponent(PROBE.dfcsPublicSearch.queries[0])}`,
+          authority: 'Alaska Department of Family and Community Services',
+          review_date: UPDATED_AT,
+          finding: 'dfcs_search_page_live_but_no_role_bearing_dpa_results',
+          evidence_excerpt: 'The public search page is live, but bounded public-assistance queries still produce no role-bearing DPA, public-assistance office, or borough-assignment result.',
+        },
+      ],
+      blocker_summary: 'Reviewed official Alaska county-local lanes still do not preserve any public borough- or census-area-to-office assignment contract for DPA routing.',
+    },
+  };
 }
 
 function buildBatchReport(batchSummary) {
@@ -280,9 +238,6 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
   const failureRows = readJsonl(INPUTS.failures);
   const verifiedRows = readJsonl(INPUTS.verified);
   const nextRows = readJsonl(INPUTS.nextActions);
-  const allStateAudit = readJson(INPUTS.allStateAudit);
-  const allStateQueue = readJsonl(INPUTS.allStateQueue);
-  const allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
 
   const evidence = buildEvidence();
   const statusReason = buildStatusReason();
@@ -393,17 +348,6 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
     }
   }
 
-  const alaskaAudit = allStateAudit.states.find((row) => row.stateId === 'alaska');
-  alaskaAudit.packetBatch = BATCH_NAME;
-  alaskaAudit.packetPrimaryGapReason = PRIMARY_GAP_REASON;
-  alaskaAudit.packetRecommendedBatch = HOLD_BATCH;
-  alaskaAudit.familyStatuses.county_local_disability_resources = FAMILY_STATUS;
-
-  const alaskaQueue = allStateQueue.find((row) => row.state === 'alaska');
-  alaskaQueue.primary_gap_reason = PRIMARY_GAP_REASON;
-  alaskaQueue.recommended_batch = HOLD_BATCH;
-  alaskaQueue.repair_lane = HOLD_REPAIR_LANE;
-
   const batchSummary = {
     batch: BATCH_NAME,
     generated_at: PROBE.generatedAt,
@@ -432,11 +376,8 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
   writeJsonl(INPUTS.failures, failureRows);
   writeJsonl(INPUTS.verified, verifiedRows);
   writeJsonl(INPUTS.nextActions, nextRows);
-  writeJson(INPUTS.allStateAudit, allStateAudit);
-  writeJsonl(INPUTS.allStateQueue, allStateQueue);
   fs.writeFileSync(INPUTS.stateReport, buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows));
-  fs.writeFileSync(INPUTS.allStateReport, replaceAllStateAlaskaNote(allStateReport));
-  fs.writeFileSync(INPUTS.handoff, buildHandoff(allStateAudit));
+  writeJson(OUTPUTS.evidence, buildEvidenceArtifact());
   writeJson(OUTPUTS.batchSummary, batchSummary);
   fs.writeFileSync(OUTPUTS.batchReport, buildBatchReport(batchSummary));
 
