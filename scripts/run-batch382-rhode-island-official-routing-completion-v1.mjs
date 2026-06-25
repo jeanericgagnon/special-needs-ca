@@ -22,6 +22,7 @@ const OUTPUTS = {
   stateReport: path.join(docsGeneratedDir, 'rhode-island-california-grade-audit-report-v2.md'),
 };
 
+const BATCH_ID = 'batch382_rhode_island_official_routing_completion_v1';
 const PRIMARY_GAP_REASON = 'all_critical_families_verified_with_reviewed_first_party_or_official_evidence';
 
 const EDUCATION_REASON =
@@ -54,7 +55,7 @@ function writeJsonl(filePath, rows) {
 
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
   return [
-    '# Rhode Island California-Grade Batch 82 Report v1',
+    '# Rhode Island California-Grade Batch 382 Report v1',
     '',
     `- classification: ${summary.classification}`,
     `- index_safe: ${summary.index_safe ? 'true' : 'false'}`,
@@ -109,6 +110,7 @@ export function generateBatch382RhodeIslandOfficialRoutingCompletionV1() {
 
   const updatedSummary = {
     ...summary,
+    batch: BATCH_ID,
     classification: 'COMPLETE',
     index_safe: true,
     completeness_pct: 100,
@@ -255,7 +257,7 @@ export function generateBatch382RhodeIslandOfficialRoutingCompletionV1() {
   });
 
   const batchSummary = {
-    batch: 'batch382_rhode_island_official_routing_completion_v1',
+    batch: BATCH_ID,
     state: 'rhode-island',
     classification_before: summary.classification,
     classification_after: updatedSummary.classification,

@@ -15,6 +15,7 @@ const summary = JSON.parse(
 );
 assert.equal(summary.classification, 'COMPLETE');
 assert.equal(summary.index_safe, true);
+assert.equal(summary.batch, 'batch382_rhode_island_official_routing_completion_v1');
 assert.equal(summary.completeness_pct, 100);
 assert.deepEqual(summary.critical_gap_families, []);
 assert.deepEqual(summary.major_gap_families, []);
@@ -75,6 +76,7 @@ assert.ok(['BLOCKED', 'COMPLETE'].includes(batchSummary.classification_before));
 assert.deepEqual(batchSummary.resolved_families, ['district_or_county_education_routing', 'county_local_disability_resources']);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'rhode-island-california-grade-audit-report-v2.md'), 'utf8');
+assert.match(report, /Rhode Island California-Grade Batch 382 Report v1/);
 assert.match(report, /Rhode Island is now `COMPLETE` and `index_safe=true`\./);
 assert.match(report, /official RIDE school-districts page publicly enumerates 66 LEAs or districts/i);
 assert.match(report, /official BHDDH DD provider page and linked 2025 provider PDFs preserve named developmental-disability organizations/i);

@@ -2,7 +2,7 @@
   "state": "rhode-island",
   "state_code": "RI",
   "state_name": "Rhode Island",
-  "batch": "batch_16_procedure_hardening_states_v1",
+  "batch": "batch382_rhode_island_official_routing_completion_v1",
   "classification": "COMPLETE",
   "index_safe": true,
   "incorrectly_index_safe": false,
