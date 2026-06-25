@@ -1,0 +1,18 @@
+{
+  "batch": "batch383_north_dakota_official_routing_completion_v1",
+  "state": "north-dakota",
+  "classification_before": "BLOCKED",
+  "classification_after": "COMPLETE",
+  "resolved_families": [
+    "district_or_county_education_routing",
+    "legal_aid",
+    "county_local_disability_resources"
+  ],
+  "evidence_sources": [
+    "https://www.nd.gov/dpi/list-districts-nces-categories",
+    "https://www.nd.gov/dpi/sites/www/files/documents/SAO/TSLFP/NCES%20List%20for%20Website.pdf",
+    "https://lsnd.org/",
+    "https://lsnd.org/get-help/",
+    "https://www.hhs.nd.gov/dd/offices"
+  ]
+}
