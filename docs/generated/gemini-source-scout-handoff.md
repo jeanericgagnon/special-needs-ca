@@ -29,34 +29,38 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 
 ### Blocker Reason
 
-Arizona remains BLOCKED on two critical families, but the single highest-priority blocker is still `district_or_county_education_routing`. A bounded live recheck on 2026-06-25 exhausted the final three unresolved public district-owned domains without finding any role-bearing local special-education, student-services, 504, or Child Find leaf. `https://www.ccasdaz.org/` stayed live and its `page-sitemap.xml` and `post-sitemap.xml` stayed public, but they only replayed generic pages and WordPress JSON false positives. `https://www.mohavelearning.org/` stayed live, but the homepage preserved no role terms, `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404, and its public search-results surface still exposed no role-bearing content. `https://www.yavapaicountyhighschool.com/` stayed live, but its sitemap only exposed generic pages and handbook/document leaves, while `/page/504/`, `/page/special-education/`, and `/page/student-services/` all returned 404. Arizona is therefore source-final for the low-token education lane unless one of those district-owned hosts publishes a real local role leaf.
+`district_or_county_education_routing` is still the highest-priority Arizona blocker. Reviewed 2026-06-25 one more bounded live pass on the final three district-owned public domains. Coconino County Accommodation School District stayed live, but its public page/post sitemaps and WordPress JSON searches still only replayed false-positive board, employment, and staff records. Mohave Accelerated Schools stayed live, but the homepage preserved no role terms, the exact role pages still 404, the public search-results surface stayed empty, and the sitemap lanes remained unavailable. Yavapai Accommodation School District stayed live, but its sitemap only exposed generic pages plus handbook/document leaves, the `documents/` page preserved no role-bearing content, and the exact `504`, `special-education`, and `student-services` pages still 404. County-local remains separately blocked because the official AHCCCS UniversityFamilyCare PDF bundle is reviewable but only proves non-contract support letters. Arizona therefore stays blocked and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any district-owned `special education`, `student services`, `504`, `Child Find`, or equivalent local routing leaf on the final three reviewed public domains:
-  - `ccasdaz.org`
-  - `mohavelearning.org`
-  - `yavapaicountyhighschool.com`
-- Any official Arizona county-local office artifact that explicitly maps counties to AHCCCS ALTCS or DES office assignments, rather than just showing statewide contacts or unassigned office cards.
-- Any new official HTML or parseable PDF artifact that turns the current Arizona county-local fallback into a real county-to-office contract.
+- Any district-owned `special education`, `special services`, `student services`, `504`, or `Child Find` leaf on ccasdaz.org, mohavelearning.org, or yavapaicountyhighschool.com.
+- Any official Arizona state or county export that maps the remaining counties to reviewed district routing without relying on generic statewide fallbacks.
+- Any official AHCCCS, DES, or county-admin county-to-office assignment artifact for county-local disability resources.
 
 ### Useful Official URLs Already Tried
 
-- [Coconino County Accommodation School District](https://www.ccasdaz.org/)
-- [CCASD page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
-- [CCASD post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
-- [Mohave Accelerated Schools](https://www.mohavelearning.org/)
-- [Yavapai Accommodation School District](https://www.yavapaicountyhighschool.com/)
+- [Coconino County Accommodation School District root](https://www.ccasdaz.org/)
+- [Coconino page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [Coconino post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
+- [Coconino wp-json special education search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=10)
+- [Coconino wp-json 504 search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=504&per_page=20)
+- [Mohave Accelerated Schools root](https://www.mohavelearning.org/)
+- [Mohave public special-education search results](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
+- [Mohave exact 504 page](https://www.mohavelearning.org/page/504/)
+- [Yavapai Accommodation School District root](https://www.yavapaicountyhighschool.com/)
 - [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
-- [AHCCCS ALTCS office cards](https://www.azahcccs.gov/members/ALTCSlocations.html)
-- [AHCCCS contacts](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
-- [ALTCS member resources](https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html)
+- [Yavapai documents page](https://www.yavapaicountyhighschool.com/documents/)
+- [Yavapai contact page](https://www.yavapaicountyhighschool.com/page/contact-us/)
+- [AHCCCS University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
+- [Pima Community Access Program PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/Pima.pdf)
+- [Pima County Administrator PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/PimaCountyAdmin.pdf)
+- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly published district-owned local special-education, student-services, or 504 leaf on the three exhausted Arizona education hosts.
-- Any official Arizona county-to-office assignment artifact on AHCCCS or DES that binds counties to named offices instead of just listing statewide contacts or office cards.
-- Any reviewed public replacement for the DES county-local lane if the current Cloudflare-blocked office-locator family later exposes a public county contract.
+- Any newly published role-bearing local education leaf on the final three Arizona district-owned domains.
+- Any official Arizona export or public table that maps those counties to local district special-education routing.
+- Any official AHCCCS, DES, or county-admin county-to-office routing artifact.
 
 ## Next State Order After Arizona
 

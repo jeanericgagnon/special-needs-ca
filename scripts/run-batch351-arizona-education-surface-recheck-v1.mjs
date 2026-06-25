@@ -169,16 +169,7 @@ function buildHandoff(allStateAudit) {
     '',
     '## Next State Order After Arizona',
     '',
-    '1. Massachusetts',
-    '2. New Mexico',
-    '3. South Dakota',
-    '4. Rhode Island',
-    '5. Virginia',
-    '6. West Virginia',
-    '7. North Dakota',
-    '8. Wisconsin',
-    '9. Washington',
-    '10. Tennessee',
+    '1. New Hampshire',
     '',
   ].join('\n');
 }

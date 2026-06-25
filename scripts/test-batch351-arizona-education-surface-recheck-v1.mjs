@@ -74,7 +74,9 @@ assert.match(allStateReport, /Arizona remains blocked after a fresh live educati
 assert.match(handoff, /Current Focus State: Arizona/);
 assert.match(handoff, /Mohave public special-education search results/);
 assert.match(handoff, /Yavapai documents page/);
-assert.match(handoff, /Massachusetts/);
+assert.match(handoff, /Next State Order After Arizona/);
+assert.match(handoff, /1\. New Hampshire/);
+assert.doesNotMatch(handoff, /1\. Massachusetts/);
 
 assert.equal(batchSummary.ccasd_role_hits_found, 0);
 assert.equal(batchSummary.mohave_role_hits_found, 0);

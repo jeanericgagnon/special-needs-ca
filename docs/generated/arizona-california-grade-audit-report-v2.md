@@ -48,8 +48,9 @@
 - [critical] district_or_county_education_routing: hold_three_reviewed_public_domains_until_role_bearing_special_education_student_services_or_504_leaves_exist
 - [critical] county_local_disability_resources: hold_blocked_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts
 
-## Completion decision
+## Repair decision
 
 - Arizona remains BLOCKED and not index-safe.
-- Education is now source-final for low-token work on exactly three live public district domains: their homepages plus robots/sitemap inventories expose no role-bearing special-education or student-services leafs.
-- County/local disability resources remain blocked separately because the DES host family is still challenge-blocked and the accessible AHCCCS fallback only proves seven named ALTCS office cards plus a partially parseable county map, not a county-to-office contract.
+- Education remains source-final on the remaining three reviewed public district domains after one more live search, sitemap, documents, and exact-role recheck.
+- County-local remains blocked because the exact official AHCCCS PDF bundle is reviewable but still only proves non-contract support letters rather than county-to-office routing.
+- Arizona should only reopen education when one of the three district-owned domains publishes a real role-bearing local leaf, and should only reopen county-local when a real official county-admin contract, office directory, service-area table, or county-to-office crosswalk exists.
