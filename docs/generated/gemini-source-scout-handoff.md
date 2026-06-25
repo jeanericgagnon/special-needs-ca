@@ -35,52 +35,45 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Hawaii,
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Alaska
+## Current Focus State: Oklahoma
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only remaining Alaska critical blocker. The live DFCS successor host still only gives statewide phone routing, the DFCS Publications surface still exposes no DPA or public-assistance office material, the DFCS Site Map only adds wrong-program branches (`OCS Regional Offices` plus Alaska Pioneer Homes payment-assistance leaves), the public DFCS search surface still has no usable public results contract, the current `health.alaska.gov` DPA family is challenge-blocked end to end, and the legacy `dhss.alaska.gov/dpa/...` paths still canonicalize into that same challenged `health.alaska.gov/dpa` host instead of preserving a separate reviewable legacy subtree.
+`county_local_disability_resources` is the only remaining Oklahoma critical blocker. The live OKDHS successor lane is real, but it still does not publish a county-complete local-routing contract. `https://oklahoma.gov/okdhs/contact-us.html` points at the public county widget on `map2.html`, yet both the widget's public component feed and the linked `mapconfig2.model.json` only publish county entities for Adair and Alfalfa. The broader public KML still yields only 45 benefit-capable county-local contracts after TANF-only access points are excluded, the child-support county tree is explicitly wrong-role, and the DDS area-contact page remains statewide-only. Oklahoma therefore still has no truth-safe county-local proof for the remaining 32 counties.
 
 ### Exact Evidence Needed
 
-- Any official Alaska surface that maps boroughs or census areas to DPA or Medicaid office locations on a publicly reviewable host.
-- Any reviewable successor office locator or directory that lives on `dfcs.alaska.gov`, `dhss.alaska.gov`, or another current official Alaska host instead of only on the challenge-blocked `health.alaska.gov` family.
-- Any official document, export, or table that explicitly enumerates Alaska borough or census-area coverage for public assistance office routing.
+- Any official Oklahoma Human Services export, JSON feed, PDF, or table that maps the remaining 32 counties to benefit-capable county-local office routing on a public reviewable host.
+- Any current OKDHS county-owned or county-specific local-office leaves for the remaining counties that are distinct from the generic `contact-us` shell and preserve county office identity or county-served proof.
+- Any current official Oklahoma successor lane that closes the gap between the partial widget and the 45-county KML without relying on child-support-only routing or statewide DDS intake.
 
 ### Useful Official URLs Already Tried
 
-- [Alaska DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
-- [Alaska DFCS Publications](https://dfcs.alaska.gov/Pages/Publications.aspx)
-- [Alaska DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
-- [Alaska DFCS Search](https://dfcs.alaska.gov/Search/default.aspx)
-- [Alaska DFCS Search results endpoint](https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance)
-- [Alaska Pioneer Homes Payment Assistance Program](https://dfcs.alaska.gov/daph/Pages/paymentassistance/default.aspx)
-- [Alaska DAPH publications](https://dfcs.alaska.gov/daph/Pages/publications.aspx)
-- [Alaska OCS Regional Offices](https://dfcs.alaska.gov/ocs/Pages/offices/default.aspx)
-- [Alaska DPA offices directory](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
-- [Alaska Adult Public Assistance leaf](https://health.alaska.gov/en/services/adult-public-assistance-apa/)
-- [Alaska Apply for Medicaid leaf](https://health.alaska.gov/en/services/division-of-public-assistance-services/apply-for-medicaid/)
-- [Alaska health robots.txt](https://health.alaska.gov/robots.txt)
-- [Legacy DHSS root](https://dhss.alaska.gov/)
-- [Legacy DHSS DPA root](https://dhss.alaska.gov/dpa/Pages/default.aspx)
-- [Legacy DHSS office locations](https://dhss.alaska.gov/dpa/Pages/office-locations.aspx)
-- [Legacy DHSS DPA contacts](https://dhss.alaska.gov/dpa/Pages/contacts.aspx)
+- [Oklahoma Human Services contact-us root](https://oklahoma.gov/okdhs/contact-us.html)
+- [Oklahoma Human Services county widget leaf](https://oklahoma.gov/okdhs/contact-us/dhsofficelocations.html)
+- [Oklahoma Human Services map2 widget](https://oklahoma.gov/okdhs/contact-us/map2.html)
+- [Oklahoma Human Services mapconfig2 model](https://oklahoma.gov/okdhs/contact-us/map2/mapconfig2.model.json)
+- [Oklahoma Human Services public widget feed](https://oklahoma.gov/content/sok-wcm/en/okdhs/contact-us/map2/jcr:content/root/container/container/election_list.electionConfigPageData.json)
+- [Oklahoma Human Services public office-map KML](https://www.google.com/maps/d/kml?mid=1w_a87-58BajiMsz61WcDuiR8LaT6FPw&forcekml=1)
+- [Oklahoma Child Support district office tree](https://oklahoma.gov/okdhs/services/child-support-services/officelocations.html)
+- [Oklahoma DDS area-contact page](https://oklahoma.gov/okdhs/services/dds/areacontactinfo.html)
+- [Oklahoma State School Directory page](https://oklahoma.gov/education/resources/state-school-directory.html)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any current Alaska host outside the challenged `health.alaska.gov` family that now publishes a borough- or census-area DPA office directory.
-- Any official Alaska PDF, spreadsheet, or office-contact table that names specific borough or census-area coverage for public assistance offices.
-- Any future public relaxation on either the `health.alaska.gov` or canonicalized legacy `dhss.alaska.gov/dpa` lane that makes actual DPA office-routing leaves scraper-reviewable.
+- Any OKDHS public export or hidden feed sibling to `mapconfig2.model.json` that enumerates the remaining county-local office assignments.
+- Any current Oklahoma county-local office directory page on the OKDHS host that is benefit-capable and county-specific rather than child-support-specific.
+- Any future public expansion of the county widget beyond Adair and Alfalfa, or any public replacement for the current 45-county KML remainder.
 
-## Next State Order After Alaska
+## Next State Order After Oklahoma
 
-1. Oklahoma
-2. Ohio
-3. Minnesota
-4. Maine
-5. Idaho
-6. Arizona
-7. Massachusetts
-8. New Mexico
-9. South Dakota
-10. Rhode Island
+1. Ohio
+2. Minnesota
+3. Maine
+4. Idaho
+5. Arizona
+6. Massachusetts
+7. New Mexico
+8. South Dakota
+9. Rhode Island
+10. Virginia
