@@ -1,0 +1,17 @@
+{
+  "batch": "batch359_maine_zero_county_tokens_confirmation_v1",
+  "generated_at": "2026-06-25T16:55:00.000Z",
+  "state": "maine",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "blocker_family": "county_local_disability_resources",
+  "official_url": "https://www.maine.gov/dhhs/about/contact/offices",
+  "county_token_present": false,
+  "service_area_token_present": false,
+  "sample_county_tokens_checked": [
+    "Aroostook",
+    "York"
+  ],
+  "sample_county_tokens_present": false,
+  "result": "live_public_dhhs_office_stack_still_exposes_only_office_towns_addresses_and_program_redirects_without_county_or_service_area_contract"
+}
