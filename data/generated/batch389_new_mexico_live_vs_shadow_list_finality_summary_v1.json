@@ -1,0 +1,28 @@
+{
+  "batch": "batch389_new_mexico_live_vs_shadow_list_finality_v1",
+  "state": "new-mexico",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "primary_gap_reason": "official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
+  "live_list_guid": "ed760a23-c290-4b26-8fec-4f94210cf7c3",
+  "live_list_item_count": 935,
+  "live_list_public_row_columns": [
+    "Title",
+    "Column2",
+    "Column3",
+    "Column4",
+    "Column5",
+    "Column6",
+    "Column7",
+    "Column8",
+    "Column9",
+    "Column10",
+    "Column11",
+    "Column12",
+    "Column13"
+  ],
+  "shadow_schema_has_county_name": true,
+  "shadow_schema_item_count": 0,
+  "blocker_changed": false,
+  "conclusion": "New Mexico remains blocked because the live 935-row WebED list still omits county on actual public rows, and a separate zero-item shadow schema cannot satisfy county-grade routing."
+}

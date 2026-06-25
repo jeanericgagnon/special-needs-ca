@@ -554,3 +554,6 @@
 
 ### Access-Denied Host Families Sometimes Block Diagnostics Too
 *   **Lesson:** If an official state host family is returning a short Access Denied shell, do one bounded check of `robots.txt` and `sitemap.xml` before leaving the blocker open-ended. New Hampshire proved that even the DHHS and `nh.gov` diagnostic surfaces returned the same 403 shell, which let us preserve the blocker as host-family finality instead of an unexplored successor lane.
+
+### Shadow SharePoint Schemas Do Not Count If The Live List Rows Still Omit The Field
+*   **Lesson:** If a SharePoint host exposes a helpful field on a zero-row shadow list or schema, verify that the same field exists on the actual live row contract before treating the blocker as cleared. New Mexico's WebED host exposed a separate zero-item `NM Schools` schema with `County Name`, but the real 935-row `2017 NM Schools` list still materialized only `Title` and `Column2` through `Column13`, so county-grade routing stayed blocked.

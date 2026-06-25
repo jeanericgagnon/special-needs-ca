@@ -20,50 +20,40 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 - Wyoming: `wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract`
-## Current Focus State: New Hampshire
+## Current Focus State: New Mexico
 
 ### Blocker Reason
 
-`medicaid_state_health_coverage` is the highest-priority New Hampshire blocker because the same official host-family failure still blocks Medicaid, waiver, DD, early-intervention, and county-local routing together. Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved replacement roots still fail DNS resolution. The direct DHHS roots and exact `/dhhs` successor roots still return the same short `Access Denied` shell with HTTP 403. One more bounded diagnostic pass now shows that even `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, and `https://www.nh.gov/dhhs/sitemap.xml` return the same short 403 shell, so no public successor or export lane is currently preserved on the official DHHS family. Education remains separately blocked because `education.nh.gov`, `www.education.nh.gov`, exact district-directory leaves, `my.doe.nh.gov/ehb/`, and the obvious `nh.gov` education successors all still return that same shell. VR remains separately blocked because the NHES roots, the BVR disabilities path, and the likely `nh.gov` successors still return the same 403 shell or do not resolve. New Hampshire therefore stays BLOCKED and not index-safe.
+`district_or_county_education_routing` remains the highest-priority New Mexico blocker. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public `Document Library` contains only those six workbook files and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. A final bounded API pass tightened the crucial distinction on the host: the live 935-row `2017 NM Schools` list exposes only district/location/contact columns on actual public rows, while a separate zero-item shadow `NM Schools` schema does expose a `County Name` field but cannot satisfy county-grade routing because it has no live rows. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.
 
 ### Exact Evidence Needed
 
-- Any reviewed public official New Hampshire DHHS host that actually renders Medicaid, DD, waiver, early-intervention, or district-office content instead of the Access Denied shell.
-- Any public official district-office or county-export surface on the DHHS family that provides real county or district-office routing.
-- Any reviewed public official New Hampshire education directory or district-profile surface that returns district- or county-grade routing instead of the Access Denied shell.
-- Any reviewed public official New Hampshire VR or BVR surface that loads publicly instead of the same blocked shell.
+- Any official PED-managed county-to-district crosswalk, county column, county selector, or county-keyed export on the live WebED host.
+- Any official PED-managed REC service-area artifact that explicitly labels counties served by each REC.
+- Any official district-owned or REC-owned local special-education routing leaf that proves county-grade coverage without inference.
 
 ### Useful Official URLs Already Tried
 
-- [DHHS root](https://www.dhhs.nh.gov/)
-- [DHHS root without www](https://dhhs.nh.gov/)
-- [DHHS robots.txt](https://www.dhhs.nh.gov/robots.txt)
-- [DHHS sitemap.xml](https://www.dhhs.nh.gov/sitemap.xml)
-- [saved replacement root](https://dhhs.new-hampshire.gov/)
-- [saved DD replacement root](https://dhhs.new-hampshire.gov/dd)
-- [saved waiver replacement root](https://dhhs.new-hampshire.gov/dd/waivers)
-- [saved early-intervention replacement root](https://dhhs.new-hampshire.gov/earlystart)
-- [nh.gov DHHS successor root](https://www.nh.gov/dhhs/)
-- [nh.gov DHHS robots.txt](https://www.nh.gov/dhhs/robots.txt)
-- [nh.gov DHHS sitemap.xml](https://www.nh.gov/dhhs/sitemap.xml)
-- [nh.gov DHHS contact-us](https://www.nh.gov/dhhs/contact-us/)
-- [nh.gov DHHS district offices](https://www.nh.gov/dhhs/district-offices/)
-- [Education root](https://www.education.nh.gov/)
-- [Education root without www](https://education.nh.gov/)
-- [nh.gov Education successor](https://www.nh.gov/education/)
-- [nh.gov Education DOE successor](https://www.nh.gov/education/doe/)
-- [DOE alternate host](https://my.doe.nh.gov/ehb/)
-- [NHES root](https://www.nhes.nh.gov/)
-- [NHES root without www](https://nhes.nh.gov/)
-- [NHES successor root](https://www.nh.gov/nhes/)
-- [nh.gov employment successor](https://www.nh.gov/employment/)
+- [PED SharePoint school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
+- [2017 NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
+- [2017 NM Schools live-list metadata](https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')?$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder)
+- [NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
+- [Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
+- [REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
+- [Elementary School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx)
+- [Middle School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx)
+- [High School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx)
+- [REC home page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
+- [Special Education Bureau page](https://webnew.ped.state.nm.us/bureaus/special-education/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly public official NH DHHS successor host or export that resolves without the Access Denied shell.
-- Any official New Hampshire education directory, profile export, or district-routing surface that becomes publicly reviewable on the current host family.
-- Any official New Hampshire VR or BVR surface that becomes publicly reviewable on the current host family.
+- Any live WebED list, workbook, or site page with an explicit county column or county-keyed filter.
+- Any live WebED row contract, not just a shadow schema, that actually materializes county on public rows.
+- Any official REC service-area contract with county labels on the PED-managed host or REC-owned official hosts.
+- Any official district-owned local special-education or student-services leaf that can clear counties without relying on statewide PED exports.
 
-## Next State Order After New Hampshire
+## Next State Order After New Mexico
 
-1. None remaining in assigned sequence
+1. Arizona
+2. New Hampshire
