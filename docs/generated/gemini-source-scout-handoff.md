@@ -20,34 +20,35 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 - Wyoming: `wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract`
-## Current Focus State: Arizona
+## Current Focus State: Idaho
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the only remaining Arizona blocker. Education no longer controls the state packet: Coconino still clears through the official CAVIAT root plus its live 504 leaf; Mohave now clears because the official Arizona report-cards detail API for Mohave Valley Elementary District preserves exact coordinates that reverse-geocode to Mohave County on the official Census geocoder, and the same district-owned host exposes a live SPECIAL SERVICES leaf; Yavapai now clears because the official Arizona report-cards entity list exposes Prescott Unified District, its detail API preserves exact coordinates that reverse-geocode to Yavapai County, and the same district-owned host preserves a live `Exceptional Student Services` page plus a `Parents Rights Handbook`. Arizona therefore remains BLOCKED only because the county-local office-routing family still lacks a reviewable official county-to-office assignment contract.
+Idaho remains BLOCKED on two explicit local families. `district_or_county_education_routing` is blocked because the remaining Camas and Clark district-owned public leaves are still the wrong role: contact pages, a board-roster Google Doc, Title IX, and a parent-notification-of-general-education lane, but no special-education, student-services, 504, Child Find, or procedural-safeguards routing leaf with local contact proof. `county_local_disability_resources` is blocked because the live Idaho DHW office stack supports 17 clean exact office replacements plus an explicit Canyon split, but the public host still exposes no truthful county-to-office contract for the remaining 27 counties.
 
 ### Exact Evidence Needed
 
-- Any official DES county office directory, county assignment table, or office-locator surface that becomes reviewable without the current challenge shell.
-- Any official AHCCCS ALTCS county-to-office contract in HTML, PDF, or another static admin artifact that explicitly maps counties to offices.
-- Any official Arizona county-admin or state-admin crosswalk that assigns counties to disability-routing offices.
+- Any district-owned Camas or Clark special-education, student-services, 504, Child Find, or procedural-safeguards leaf with local routing contact.
+- Any official Idaho county-to-district mapping contract that can clear the remaining local education gap without inference.
+- Any official Idaho DHW county-to-office assignment contract for the remaining blocked counties.
 
 ### Useful Official URLs Already Tried
 
-- [AHCCCS ALTCS locations HTML](https://www.azahcccs.gov/members/ALTCSlocations.html)
-- [AHCCCS ALTCS county map PDF lane](https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html)
-- [AHCCCS contacts page](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
-- [DES office locator](https://des.az.gov/office-locator)
-- [DES root](https://des.az.gov/)
-- [University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
+- [Camas County Schools root](https://www.camascountyschools.org/)
+- [Camas County Schools contact page](https://www.camascountyschools.org/contact-information)
+- [Clark County School District root](https://www.clarkcountyschools161.org/)
+- [Clark County School District contact page](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
+- [Clark County School District Title IX page](https://www.clarkcountyschools161.org/administration/title-ix)
+- [Clark County parent notification of general education instruction](https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction)
+- [Idaho DHW office root](https://healthandwelfare.idaho.gov/offices)
+- [Idaho DHW Caldwell office leaf](https://healthandwelfare.idaho.gov/dhw/caldwell-office)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly reviewable DES county office assignment surface.
-- Any official AHCCCS ALTCS county-to-office assignment artifact.
-- Any official Arizona county-admin office-routing contract that survives static review.
+- Any newly published Camas or Clark role-bearing special-education/student-services leaf.
+- Any official Idaho county-to-district crosswalk or district-local routing contract.
+- Any official Idaho county-to-office disability-routing contract on the DHW host.
 
-## Next State Order After Arizona
+## Next State Order After Idaho
 
 1. New Hampshire

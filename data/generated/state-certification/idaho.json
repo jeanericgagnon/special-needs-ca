@@ -1,0 +1,246 @@
+{
+  "state": "idaho",
+  "candidateBranch": null,
+  "pass": false,
+  "summary": {
+    "state": "idaho",
+    "state_code": "ID",
+    "state_name": "Idaho",
+    "batch": "batch365_idaho_camas_clark_attachment_finality_v1",
+    "classification": "BLOCKED",
+    "index_safe": false,
+    "incorrectly_index_safe": false,
+    "county_count": 44,
+    "completeness_pct": 87,
+    "strong_critical_families": 10,
+    "weak_critical_families": 2,
+    "missing_critical_families": 0,
+    "total_critical_families": 12,
+    "primary_gap_reason": "remaining_idaho_camas_and_clark_surfaces_now_reduce_to_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_without_special_education_or_student_services_routing",
+    "recommended_batch": "hold_for_new_role_bearing_district_leaf_or_county_contract",
+    "critical_gap_families": [
+      "district_or_county_education_routing",
+      "county_local_disability_resources"
+    ],
+    "major_gap_families": [],
+    "verified_source_families_with_samples": [
+      "medicaid_state_health_coverage",
+      "medicaid_waiver_hcbs_disability_services",
+      "developmental_disability_idd_authority",
+      "early_intervention_part_c",
+      "special_education_idea_part_b",
+      "district_or_county_education_routing",
+      "vocational_rehabilitation_pre_ets",
+      "protection_and_advocacy",
+      "parent_training_information_center",
+      "legal_aid",
+      "able_program",
+      "ssi_ssa_federal_reference",
+      "county_local_disability_resources"
+    ],
+    "complete_ready": false,
+    "texas_v10_rule_basis": [
+      "Preserve noindex until all critical families are verified",
+      "District-grade routing must use direct local or district-owned evidence, not generic or statewide fallback",
+      "Legacy/inventory-only evidence does not satisfy California-grade completeness"
+    ],
+    "final_blockers": [
+      {
+        "family": "district_or_county_education_routing",
+        "severity": "critical",
+        "failure_code": "remaining_camas_and_clark_surfaces_materialize_contact_board_roster_title_ix_or_general_education_notice_leaves_but_zero_role_bearing_special_education_or_student_services_routing",
+        "evidence": "Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, the district-linked Google Doc exported from `https://docs.google.com/document/d/1OHWebOtQk9Wvwy8zMd5eFYwub5xPQ7Pg_nnMT20hOOA/export?format=txt`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction`, and the district-hosted parent-notification PDF attachments linked from that page. The Camas root stayed live and the Contact Information page still only preserved district address and phone; the district-linked Google Doc exported as a board-of-trustees roster with zone names and trustee names, not special-education or student-services routing. Clark stayed live and still exposed exact district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves. The parent-notification page linked district-hosted PDFs whose filenames and bounded binary inspection confirmed the same general-education intervention notice lane; they did not add district special-education contact routing. Idaho therefore remains blocked because the remaining Camas and Clark surfaces are public and reviewable but still the wrong role for local special-education routing.",
+        "next_action": "continue_exact_district_leaf_expansion_only_when_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact"
+      },
+      {
+        "family": "county_local_disability_resources",
+        "severity": "critical",
+        "failure_code": "official_dhw_office_stack_supports_17_clean_leaf_matches_but_27_legacy_counties_still_lack_public_contract",
+        "evidence": "Reviewed 2026-06-23 bounded live Idaho DHW confirmation on the official root plus the existing office-leaf packet. The public root at https://healthandwelfare.idaho.gov/offices is live with title `Find a Service Location` and still preserves exact city office cards like Caldwell Office in HTML, but it exposes zero county terms or county-served fields. The exact office leaf https://healthandwelfare.idaho.gov/dhw/caldwell-office is live with title `Caldwell Office`, confirming that the packet is grounded in real reviewable DHW office leaves. Idaho county-local routing therefore splits cleanly into 17 safe county-to-exact-office replacements plus one Canyon split that still rejects Nampa as SWITC-only, while 27 counties remain blocked because the public DHW stack still exposes no truthful county-to-office contract for them.",
+        "next_action": "retain_17_clean_exact_office_replacements_keep_canyon_split_explicit_and_leave_27_legacy_counties_blocked_until_idaho_publishes_county_contract"
+      }
+    ],
+    "familyStatuses": {
+      "district_or_county_education_routing": "blocked_remaining_camas_and_clark_surfaces_only_materialize_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_after_shoshone_recovery"
+    }
+  },
+  "gapRows": [
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "medicaid_state_health_coverage",
+      "family_label": "Medicaid / state health coverage",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "medicaid_waiver_hcbs_disability_services",
+      "family_label": "Medicaid waiver / HCBS / disability services",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "developmental_disability_idd_authority",
+      "family_label": "Developmental disability / IDD authority",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "early_intervention_part_c",
+      "family_label": "Early intervention / IDEA Part C",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "special_education_idea_part_b",
+      "family_label": "Special education / IDEA Part B",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "district_or_county_education_routing",
+      "family_label": "District or county education routing",
+      "family_status": "blocked_remaining_camas_and_clark_surfaces_only_materialize_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_after_shoshone_recovery",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "Reviewed 2026-06-25 one more bounded official Idaho district pass on the residual two-district remainder and tightened both weak-lead lanes. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone, and the only additional same-host attachment discovered from that page is a linked Google Doc that resolves to a board-of-trustees roster rather than special-education, student-services, 504, Child Find, or procedural-safeguards routing. Clark still materially exposes reviewed district-owned `Contact Us`, `Title IX`, and `Parent Notification of General Education Instruction` leaves, and the parent-notification page links district-hosted PDF attachments. But those attachments remain part of the same general-education intervention notice lane, not a local special-education or student-services routing contract with district special-ed contact evidence. Idaho therefore remains blocked, but the residual education remainder is now sharper than generic wrong-role leaves: the surviving Camas and Clark artifacts are real and public, yet they are still the wrong role for local special-education routing."
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "vocational_rehabilitation_pre_ets",
+      "family_label": "Vocational rehabilitation / Pre-ETS",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "protection_and_advocacy",
+      "family_label": "Protection and advocacy",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party protection-and-advocacy evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "parent_training_information_center",
+      "family_label": "Parent training and information center",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "Reviewed Idaho Parents Unlimited About page now preserves explicit Idaho Parent Training and Information Center designation text, while the Connect With Us page preserves statewide contact routing and Boise office details."
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "legal_aid",
+      "family_label": "Legal aid",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "reviewed first-party statewide legal-aid evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "able_program",
+      "family_label": "ABLE program",
+      "family_status": "verified_state_grade",
+      "critical": true,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "ssi_ssa_federal_reference",
+      "family_label": "SSI / SSA federal references",
+      "family_status": "verified_state_grade",
+      "critical": false,
+      "county_grade_required": false,
+      "statewide_enough": true,
+      "status_reason": "statewide evidence is present at the required authority level"
+    },
+    {
+      "state": "idaho",
+      "state_code": "ID",
+      "state_name": "Idaho",
+      "family": "county_local_disability_resources",
+      "family_label": "County/local disability resources",
+      "family_status": "blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract",
+      "critical": true,
+      "county_grade_required": true,
+      "statewide_enough": false,
+      "status_reason": "The Idaho DHW office lane remains an explicit split, not a generic local-office blocker. The live official office root and sitemap still expose no county terms or county-served fields, so they do not prove county-grade routing by themselves. But the existing deterministic office packet safely materializes 17 clean county-to-exact-office leaf matches plus one Canyon split, while 27 counties remain blocked on the dead legacy locator because no public county-to-office contract exists for them."
+    }
+  ],
+  "filesChecked": [
+    "data/generated/idaho_california_grade_summary_v2.json",
+    "data/generated/idaho_gap_matrix_v2.jsonl",
+    "data/generated/idaho_failure_ledger_v2.jsonl",
+    "data/generated/idaho_verified_sources_v1.jsonl",
+    "data/generated/idaho_next_action_queue_v2.jsonl",
+    "docs/generated/idaho-california-grade-audit-report-v2.md"
+  ],
+  "failures": [
+    {
+      "code": "not_completion_candidate",
+      "family": null,
+      "filesChecked": [
+        "data/generated/idaho_california_grade_summary_v2.json"
+      ],
+      "reason": "Candidate classification is BLOCKED, not COMPLETE.",
+      "suggestedRepairClass": "keep_blocked_or_repair_more"
+    }
+  ],
+  "checkedAt": "2026-06-25T23:09:32.517Z",
+  "liveProbeEnabled": false
+}
