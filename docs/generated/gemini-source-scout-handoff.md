@@ -28,51 +28,50 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Wisconsin: `generic_or_statewide_evidence_used_where_local_required`
 - Wyoming: `legacy_or_inventory_only_evidence`
 
-## Current Focus State: Idaho
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`district_or_county_education_routing` is the highest-priority Idaho blocker. The packet is now down to four residual district-owned roots after Jefferson and Oneida were recovered. Those four districts are no longer generic unknowns: Clark, Fremont, and Shoshone expose live sitemap or post-sitemap inventories, Fremont's documents/forms lane has also been checked, and Camas has a final root plus contact leaf. But the district-owned leaves and inventories that survive still materialize only wrong-role or generic pages like `Contact Us`, `Title IX`, staff, documents, or board/newsletter pages. None of the remaining hosts currently exposes a role-bearing special-education, special-services, student-services, section-504, child-find, or procedural-safeguards leaf.
+`district_or_county_education_routing` is the highest-priority Arizona blocker. The packet is down to three reviewed public district domains for the final unresolved education counties: `ccasdaz.org`, `mohavelearning.org`, and `yavapaicountyhighschool.com`. Those hosts are live, but their current public surfaces still exhaust into generic or wrong-role inventory: WordPress sitemaps/search false positives on CCASD, missing or unavailable sitemap/forms lanes on Mohave, and generic pages plus handbook/document leaves on Yavapai. None of the three currently exposes a role-bearing special-education, student-services, Section 504, or Child Find leaf.
 
 ### Exact Evidence Needed
 
-- Any reviewed district-owned special-education, special-services, student-services, section-504, child-find, or procedural-safeguards leaf on the remaining Camas, Clark, Fremont, or Shoshone hosts.
+- Any reviewed district-owned special-education, student-services, Section 504, Child Find, or procedural-safeguards leaf on `ccasdaz.org`, `mohavelearning.org`, or `yavapaicountyhighschool.com`.
 - Any current machine-readable district inventory on those same hosts that directly exposes a role-bearing local education leaf rather than only generic pages.
-- Any district-owned PDF or document already linked from those hosts that explicitly preserves special-education or child-find routing.
+- Any district-owned PDF or document already linked from those hosts that explicitly preserves local special-education or child-find routing.
 
 ### Useful Official URLs Already Tried
 
-- [Camas County Schools root](https://www.camascountyschools.org/)
-- [Camas contact information](https://www.camascountyschools.org/contact-information)
-- [Clark root](https://www.clarkcountyschools161.org/)
-- [Clark Contact Us](https://www.clarkcountyschools161.org/about-us/contact-us-ccsd)
-- [Clark Title IX](https://www.clarkcountyschools161.org/administration/title-ix)
-- [Clark sitemap](https://www.clarkcountyschools161.org/fs/pages/sitemap)
-- [Fremont root](https://www.sd215.net/)
-- [Fremont Contact Us](https://www.sd215.net/page/contact-us)
-- [Fremont Title IX](https://www.sd215.net/o/sd215/page/title-ix)
-- [Fremont sitemap](https://www.sd215.net/sitemap.xml)
-- [Fremont documents](https://www.sd215.net/documents)
-- [Fremont district forms](https://www.sd215.net/page/district-forms)
-- [Shoshone root](https://shoshonesd.org/)
-- [Shoshone post sitemap](https://shoshonesd.org/wp-sitemap-posts-page-1.xml)
-- [Shoshone posts sitemap](https://shoshonesd.org/wp-sitemap-posts-post-1.xml)
+- [CCASD root](https://www.ccasdaz.org/)
+- [CCASD page sitemap](https://www.ccasdaz.org/page-sitemap.xml)
+- [CCASD post sitemap](https://www.ccasdaz.org/post-sitemap.xml)
+- [CCASD WordPress search](https://www.ccasdaz.org/wp-json/wp/v2/search?search=special%20education&per_page=20)
+- [Mohave root](https://www.mohavelearning.org/)
+- [Mohave special-education guess](https://www.mohavelearning.org/page/special-education/)
+- [Mohave student-services guess](https://www.mohavelearning.org/page/student-services/)
+- [Mohave search result false positive](https://www.mohavelearning.org/search-results/~board/news/post/special-education)
+- [Yavapai root](https://www.yavapaicountyhighschool.com/)
+- [Yavapai sitemap](https://www.yavapaicountyhighschool.com/sitemap.xml)
+- [Yavapai documents](https://www.yavapaicountyhighschool.com/documents/)
+- [Yavapai special-education guess](https://www.yavapaicountyhighschool.com/page/special-education/)
+- [AHCCCS ALTCS page](https://www.azahcccs.gov/Members/GetCovered/Categories/other/ALTCS.html)
+- [AHCCCS University Family Care oversight](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any district-owned leaf or linked document on Camas, Clark, Fremont, or Shoshone that explicitly bears special-education or special-services routing.
-- Any same-host sitemap/document inventory path on those four districts that adds role-bearing local education pages beyond the current generic inventory.
-- Any district-owned child-find, 504, or procedural-safeguards PDF already linked from those hosts.
+- Any district-owned leaf or linked document on CCASD, Mohave, or Yavapai that explicitly bears special-education or student-services routing.
+- Any same-host sitemap/document inventory path on those three districts that adds role-bearing local education pages beyond the current generic inventory.
+- Any official AHCCCS county-local contract that assigns counties to local offices or contractors, rather than generic ALTCS/apply links or support letters.
 
-## Next State Order After Idaho
+## Next State Order After Arizona
 
-1. Arizona
-2. Massachusetts
-3. New Mexico
-4. South Dakota
-5. Rhode Island
-6. Virginia
-7. West Virginia
-8. North Dakota
-9. Wisconsin
-10. Washington
+1. Massachusetts
+2. New Mexico
+3. South Dakota
+4. Rhode Island
+5. Virginia
+6. West Virginia
+7. North Dakota
+8. Wisconsin
+9. Washington
+10. Tennessee
