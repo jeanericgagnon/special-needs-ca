@@ -1,0 +1,9 @@
+{
+  "batch": "batch396_wyoming_global_sync_v1",
+  "generated_at": "2026-06-26T03:06:31.914Z",
+  "wyoming_classification": "COMPLETE",
+  "complete_count": 43,
+  "blocked_count": 7,
+  "index_safe_count": 43,
+  "incorrectly_index_safe_states": []
+}

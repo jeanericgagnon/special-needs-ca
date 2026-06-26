@@ -578,3 +578,9 @@
 
 ### Bounded Slug Probes Can Recover Current First-Party Office Leaves Hidden From A Partial Index
 *   **Lesson:** When a current official locations index looks partial but the host pattern is stable, one bounded slug probe can recover the missing live leaf without reopening broad discovery. Massachusetts did not visibly surface `DDS Greater Boston Area Office` from the partial locations index, but the exact current Mass.gov location slug was live and preserved the Boston/Charlestown locality contract needed to clear Suffolk County.
+
+### Timed-Out Official Leaves Still Do Not Count As Service-Area Contracts
+*   **Lesson:** If an exact official successor leaf looks promising but a bounded plain fetch times out and a browser-style probe aborts before rendering body text, treat that leaf as an unavailable lane, not hidden proof. New Mexico PED's `REC Executive Directors Directory` URL stayed non-reviewable under both checks, so it could not rescue the missing county or REC service-area contract.
+
+### Public Role-Filtered State Directories Can Clear County-Grade Education Routing
+*   **Lesson:** If a public official education directory exposes both a role selector and county-named district organizations, replay one bounded role-plus-organization pass before preserving a local-routing blocker. Wyoming cleared because the WDE public `OnlineDirectory People Search` lane returned district-specific `Special Education Director` rows, emails, phones, and mailing addresses for all 23 county-named districts on the official host.

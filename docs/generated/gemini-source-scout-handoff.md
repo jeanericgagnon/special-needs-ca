@@ -6,7 +6,7 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, Wyoming
 
 ## Current Blocked States
 
@@ -17,35 +17,41 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - New Hampshire: `official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead`
 - New Mexico: `official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
-- Wyoming: `wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract`
 
-## Current Focus State: Arizona
+## Current Focus State: New Mexico
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the narrowest Arizona blocker. The official DES Salesforce locator is live and preserves explicit county fields for 14 counties, but Greenlee County still needs a reviewed official county contract rather than ZIP-based inference.
+`district_or_county_education_routing` remains the highest-priority New Mexico blocker. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public `Document Library` contains only those six workbook files and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. A final bounded API pass tightened the crucial distinction on the host: the live 935-row `2017 NM Schools` list exposes only district/location/contact columns on actual public rows, while a separate zero-item shadow `NM Schools` schema does expose a `County Name` field but cannot satisfy county-grade routing because it has no live rows. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.
 
 ### Exact Evidence Needed
 
-- Any current official DES or AHCCCS page, export, or public locator response that explicitly names Greenlee County in the county-to-office contract.
-- Any current official Arizona county-local DDS or Medicaid/HHS routing leaf that preserves Greenlee County service-area proof without relying on ZIP inference.
+- Any official PED-managed county-to-district crosswalk, county column, county selector, or county-keyed export on the live WebED host.
+- Any official PED-managed REC service-area artifact that explicitly labels counties served by each REC.
+- Any official district-owned or REC-owned local special-education routing leaf that proves county-grade coverage without inference.
 
 ### Useful Official URLs Already Tried
 
-- [DES Salesforce office locator](https://azdes-community.my.salesforce-sites.com/EOL/)
-- [DES office-locator root](https://des.az.gov/office-locator)
-- [DES find-your-local-office root](https://des.az.gov/find-your-local-office)
+- [PED SharePoint school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
+- [2017 NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
+- [2017 NM Schools live-list metadata](https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')?$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder)
+- [NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
+- [Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
+- [REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
+- [Elementary School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx)
+- [Middle School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx)
+- [High School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx)
+- [REC home page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
+- [Special Education Bureau page](https://webnew.ped.state.nm.us/bureaus/special-education/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official Arizona county-bearing locator response for Greenlee.
-- Any official Greenlee-serving DES or AHCCCS office leaf with explicit county language.
+- Any live WebED list, workbook, or site page with an explicit county column or county-keyed filter.
+- Any live WebED row contract, not just a shadow schema, that actually materializes county on public rows.
+- Any official REC service-area contract with county labels on the PED-managed host or REC-owned official hosts.
+- Any official district-owned local special-education or student-services leaf that can clear counties without relying on statewide PED exports.
 
-## Next State Order After Arizona
+## Next State Order After New Mexico
 
-1. Alaska
-2. Maine
-3. Idaho
-4. New Mexico
-5. New Hampshire
-6. South Dakota
+1. Arizona
+2. New Hampshire
