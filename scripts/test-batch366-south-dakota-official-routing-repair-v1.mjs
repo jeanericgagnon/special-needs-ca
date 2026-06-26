@@ -42,10 +42,13 @@ assert.match(legalAid.samples[2].evidence_snippet, /East River Legal Services an
 const county = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(county.family_status, 'blocked_current_dhs_host_without_public_county_or_local_office_contract');
 assert.match(county.samples[0].evidence_snippet, /Page Not Found/i);
+assert.equal(county.samples[1].source_url, 'https://dhs.sd.gov/en/contact-us');
+assert.match(county.samples[1].evidence_snippet, /statewide phone, email, and Pierre mailing contacts/i);
 assert.match(county.samples[2].source_url, /staff-directory/);
 assert.match(county.samples[2].evidence_snippet, /Disability Determination Services/i);
 assert.match(county.samples[2].evidence_snippet, /Division of Rehabilitation Services/i);
 assert.match(county.samples[2].evidence_snippet, /no county field, no local-office list, and no county-to-office contract/i);
+assert.match(county.blocker_evidence, /older `\/en\/contactus` alias also resolves to a page-not-found payload/i);
 
 const failureRows = fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'south-dakota_failure_ledger_v2.jsonl'), 'utf8')
   .trim()
@@ -54,6 +57,7 @@ const failureRows = fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'so
   .map((line) => JSON.parse(line));
 assert.equal(failureRows.length, 1);
 assert.equal(failureRows[0].family, 'county_local_disability_resources');
+assert.match(failureRows[0].evidence, /live reviewed `\/en\/contact-us` page only exposes statewide help text plus statewide phone, email, and Pierre mailing contacts/i);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'south-dakota-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /district_or_county_education_routing` is now cleared with official DOE district-directory pages/i);

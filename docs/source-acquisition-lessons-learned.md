@@ -128,6 +128,14 @@ Texas v10 showed that some residual districts do not publish a dedicated `specia
 
 These pages may satisfy California-grade district routing only when the fetched body itself proves multiple special-education assets. A generic parent page with calendars, lunch menus, or supply lists still fails closed.
 
+### 17. Exact official slugs matter on client-rendered state hosts
+
+South Dakota showed that a client-rendered official host can expose a real reviewed page on one slug while a near-duplicate alias resolves to an embedded page-not-found payload. Preserve the exact reviewed leaf, not just the route family:
+
+- verify the literal final slug that carries the content,
+- treat stale aliases as negative evidence,
+- and do not let a dead alias stand in for a live statewide-only page or vice versa.
+
 ## Per-Run Practice
 
 After each significant wave:
