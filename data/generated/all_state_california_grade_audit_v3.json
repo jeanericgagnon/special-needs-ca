@@ -2220,8 +2220,8 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_county_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_official_sharepoint_lists_and_six_public_workbooks_live_but_verified_county_crosswalk_still_missing",
-        "vocational_rehabilitation_pre_ets": "blocked_official_dvr_root_unauthorized_without_reviewed_alternate",
+        "district_or_county_education_routing": "blocked_live_ped_sharepoint_stack_public_and_reviewable_but_still_missing_county_crosswalk_or_rec_service_area_contract",
+        "vocational_rehabilitation_pre_ets": "blocked_live_dvr_401_and_dws_request_rejected_with_no_public_successor",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
@@ -2230,8 +2230,8 @@
         "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page"
       },
       "packetGenerated": true,
-      "packetBatch": "batch389_new_mexico_live_vs_shadow_list_finality_v1",
-      "packetPrimaryGapReason": "official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
+      "packetBatch": "batch403_new_mexico_terminal_refresh_v1",
+      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_public_ped_sharepoint_stack_still_lacks_county_or_rec_service_area_contract_and_official_vr_lanes_still_fail_closed",
       "packetRecommendedBatch": "hold_for_official_county_crosswalk_or_rec_service_area_contract"
     },
     {

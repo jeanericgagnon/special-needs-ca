@@ -1,0 +1,12 @@
+{
+  "batch": "batch403_new_mexico_terminal_refresh_v1",
+  "generated_at": "2026-06-26T13:31:14.061Z",
+  "classification": "BLOCKED",
+  "webed_home_live": true,
+  "webed_list_live": true,
+  "rec_home_live": true,
+  "public_workbooks_live": 6,
+  "dvr_root_401": true,
+  "dws_request_rejected": true,
+  "completeness_pct": 83
+}
