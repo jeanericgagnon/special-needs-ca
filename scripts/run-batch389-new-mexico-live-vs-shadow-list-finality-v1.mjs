@@ -76,6 +76,18 @@ function writeText(filePath, text) {
   fs.writeFileSync(filePath, text);
 }
 
+function uniqueSamples(samples) {
+  const seen = new Set();
+  const out = [];
+  for (const sample of samples) {
+    const key = `${sample.sample_name}::${sample.source_url}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(sample);
+  }
+  return out;
+}
+
 function appendLessonsIfMissing(filePath) {
   let current = fs.readFileSync(filePath, 'utf8');
   let changed = false;
@@ -166,59 +178,61 @@ function main() {
       '2017 NM Schools GUID and item count',
       '2017 NM Schools row payload keys',
       'Zero-item shadow NM Schools schema',
+      'REC executive-directors leaf timeout',
     ].includes(sample.sample_name));
+    const normalizedSamples = uniqueSamples([
+      preservedSamples[0],
+      preservedSamples[1],
+      {
+        sample_name: '2017 NM Schools GUID and item count',
+        source_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')?$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder",
+        final_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')?$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder",
+        verification_status: 'blocked',
+        source_type: 'official_public_rest_list_identity',
+        source_table: BATCH,
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'The official REST metadata confirms the live list title is `NM Schools`, `ItemCount: 935`, and `RootFolder: /sites/schooldirectory/Lists/2017 NM Schools`.',
+      },
+      {
+        sample_name: '2017 NM Schools row payload keys',
+        source_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')/items?$top=1",
+        final_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')/items?$top=1",
+        verification_status: 'blocked',
+        source_type: 'official_public_rest_list_row_without_county_field',
+        source_table: BATCH,
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'The live row payload exposes `Title` and `Column2` through `Column13` plus metadata keys, with no county field present on the actual public row contract.',
+      },
+      {
+        sample_name: 'Zero-item shadow NM Schools schema',
+        source_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists/GetByTitle('NM%20Schools')/Fields?$select=Title,InternalName,Hidden&$filter=Hidden%20eq%20false",
+        final_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists/GetByTitle('NM%20Schools')/Fields?$select=Title,InternalName,Hidden&$filter=Hidden%20eq%20false",
+        verification_status: 'blocked',
+        source_type: 'official_shadow_schema_not_live_contract',
+        source_table: BATCH,
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'A separate `NM Schools` schema exposes a `County Name` field, but it is not the live 935-row routing list and cannot substitute for county-grade public rows.',
+      },
+      {
+        sample_name: 'REC executive-directors leaf timeout',
+        source_url: 'https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/',
+        final_url: 'https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/',
+        verification_status: 'blocked',
+        source_type: 'official_exact_leaf_timeout_without_reviewable_service_area_contract',
+        source_table: BATCH,
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'A bounded plain fetch timed out after 15 seconds, and a browser-style navigation probe to the same official URL aborted before rendering body text, so the exact PED REC leaf is not currently a reviewable county or service-area contract.',
+      },
+      ...preservedSamples.slice(2),
+    ].filter(Boolean));
     return {
       ...row,
       query_basis: 'Reviewed 2026-06-25 the full official WebED SharePoint list and workbook stack, then verified the live 935-row list payload and the separate zero-item shadow schema for county-grade routing fields.',
       evidence_strength: 'weak',
-      sample_count: 13,
+      sample_count: normalizedSamples.length,
       blocker_code: FAILURE_CODE,
       blocker_evidence: DISTRICT_EVIDENCE,
-      samples: [
-        preservedSamples[0],
-        preservedSamples[1],
-        {
-          sample_name: '2017 NM Schools GUID and item count',
-          source_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')?$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder",
-          final_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')?$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder",
-          verification_status: 'blocked',
-          source_type: 'official_public_rest_list_identity',
-          source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
-          evidence_snippet: 'The official REST metadata confirms the live list title is `NM Schools`, `ItemCount: 935`, and `RootFolder: /sites/schooldirectory/Lists/2017 NM Schools`.',
-        },
-        {
-          sample_name: '2017 NM Schools row payload keys',
-          source_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')/items?$top=1",
-          final_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')/items?$top=1",
-          verification_status: 'blocked',
-          source_type: 'official_public_rest_list_row_without_county_field',
-          source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
-          evidence_snippet: 'The live row payload exposes `Title` and `Column2` through `Column13` plus metadata keys, with no county field present on the actual public row contract.',
-        },
-        {
-          sample_name: 'Zero-item shadow NM Schools schema',
-          source_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists/GetByTitle('NM%20Schools')/Fields?$select=Title,InternalName,Hidden&$filter=Hidden%20eq%20false",
-          final_url: "https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists/GetByTitle('NM%20Schools')/Fields?$select=Title,InternalName,Hidden&$filter=Hidden%20eq%20false",
-          verification_status: 'blocked',
-          source_type: 'official_shadow_schema_not_live_contract',
-          source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
-          evidence_snippet: 'A separate `NM Schools` schema exposes a `County Name` field, but it is not the live 935-row routing list and cannot substitute for county-grade public rows.',
-        },
-        {
-          sample_name: 'REC executive-directors leaf timeout',
-          source_url: 'https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/',
-          final_url: 'https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/',
-          verification_status: 'blocked',
-          source_type: 'official_exact_leaf_timeout_without_reviewable_service_area_contract',
-          source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
-          evidence_snippet: 'A bounded plain fetch timed out after 15 seconds, and a browser-style navigation probe to the same official URL aborted before rendering body text, so the exact PED REC leaf is not currently a reviewable county or service-area contract.',
-        },
-        ...preservedSamples.slice(2),
-      ].slice(0, 13),
+      samples: normalizedSamples,
     };
   });
   const finalVerifiedRows = updatedVerifiedRows.map((row) => {

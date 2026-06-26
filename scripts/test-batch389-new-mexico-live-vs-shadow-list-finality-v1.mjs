@@ -58,11 +58,19 @@ assert.match(educationFailure.evidence, /Playwright navigation/i);
 
 const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationVerified);
-assert.equal(educationVerified.sample_count, 13);
+assert.equal(educationVerified.sample_count, 10);
 assert.ok(educationVerified.samples.some((sample) => sample.sample_name === '2017 NM Schools GUID and item count'));
 assert.ok(educationVerified.samples.some((sample) => sample.sample_name === '2017 NM Schools row payload keys'));
 assert.ok(educationVerified.samples.some((sample) => sample.sample_name === 'Zero-item shadow NM Schools schema'));
 assert.ok(educationVerified.samples.some((sample) => sample.sample_name === 'REC executive-directors leaf timeout'));
+assert.equal(
+  educationVerified.samples.filter((sample) => sample.sample_name === 'REC executive-directors leaf timeout').length,
+  1
+);
+assert.equal(
+  new Set(educationVerified.samples.map((sample) => `${sample.sample_name}::${sample.source_url}`)).size,
+  educationVerified.samples.length
+);
 assert.ok(educationVerified.samples.some((sample) => /Column2/.test(sample.evidence_snippet)));
 
 const vrVerified = verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
