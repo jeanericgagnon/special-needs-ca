@@ -217,12 +217,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_des_salesforce_locator_greenlee_zip_only_and_ahcccs_admin_pdfs_prove_no_county_contract"
+        "county_local_disability_resources": "blocked_live_des_helper_only_proves_11_explicit_counties_with_no_greenlee_la_paz_mohave_or_yuma_assignment"
       },
       "packetGenerated": true,
-      "packetBatch": "batch409_arizona_admin_pdf_truth_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_des_wrapper_still_403_salesforce_locator_greenlee_zip_only_and_ahcccs_admin_pdfs_are_pima_support_letters_not_county_contracts",
-      "packetRecommendedBatch": "hold_county_local_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_full_county_contract"
+      "packetBatch": "batch414_arizona_live_helper_county_downgrade_v1",
+      "packetPrimaryGapReason": "bounded_2026_06_26_live_des_in_page_helper_confirms_only_11_explicit_counties_and_no_literal_greenlee_la_paz_mohave_or_yuma_assignment",
+      "packetRecommendedBatch": "hold_county_local_until_des_or_ahcccs_publish_explicit_county_assignments_for_greenlee_la_paz_mohave_and_yuma"
     },
     {
       "stateId": "arkansas",

@@ -605,3 +605,6 @@
 
 ### First-Party District Coordinates Can Close The Last County When State Directory Addresses Fail The Geocoder
 *   **Lesson:** If an official state district directory preserves real office addresses for almost every county but one rural county still fails one-line geocoding, check whether the first-party district site publishes embedded coordinates beside the same office address. New Mexico's PED superintendent directory plus the official Census `geographies/onelineaddress` endpoint cleared 32 counties directly, and Catron closed only after Reserve Independent Schools exposed coordinates that the official Census `geographies/coordinates` endpoint mapped back to Catron County.
+
+### Prefer Live In-Page Helper Results Over Stale Replay Assumptions
+*   **Lesson:** If a public locator app stays reviewable in browser context, trust the app’s current in-page helper results over an older replay assumption. Arizona’s DES Salesforce app still exposes public helper functions and service controls, but the live helper now yields explicit county fields for only 11 counties and no literal Greenlee, La Paz, Mohave, or Yuma assignment. That current public surface is stronger evidence than a stale replay narrative.

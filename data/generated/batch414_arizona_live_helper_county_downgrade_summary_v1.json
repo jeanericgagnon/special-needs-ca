@@ -1,0 +1,38 @@
+{
+  "batch": "batch414_arizona_live_helper_county_downgrade_v1",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 92,
+  "explicit_counties_from_live_helper": 11,
+  "missing_explicit_counties": [
+    "Greenlee",
+    "La Paz",
+    "Mohave",
+    "Yuma"
+  ],
+  "live_helper_service_codes_checked": [
+    "A",
+    "AUB",
+    "CA",
+    "CC",
+    "CSS",
+    "DDS",
+    "DVOP",
+    "ES",
+    "MA",
+    "NA",
+    "UI1",
+    "UIT",
+    "VR"
+  ],
+  "zip_only_services_for_greenlee_localities": [
+    "CC",
+    "DDS"
+  ],
+  "counts_unchanged": {
+    "complete": 44,
+    "blocked": 6,
+    "indexSafe": 44
+  }
+}
