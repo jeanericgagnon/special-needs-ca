@@ -7,7 +7,7 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 1,
-  workers: process.env.CI ? 1 : undefined,
+  workers: 1,
   reporter: 'html',
   timeout: 45000,
   use: {
@@ -27,10 +27,9 @@ export default defineConfig({
     },
   ],
   webServer: process.env.NO_WEBSERVER ? undefined : {
-    command: 'npm run start',
+    command: 'npm --prefix .. run setup:local && npm run start',
     url: `http://localhost:${port}`,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: false,
     timeout: 90000,
   },
 });
-

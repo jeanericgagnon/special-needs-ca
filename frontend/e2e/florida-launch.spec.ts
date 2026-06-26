@@ -5,7 +5,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
   
   test('Florida hub and counties list pages load cleanly', async ({ page }) => {
     // 1. Benefits state hub for Florida
-    const hubResponse = await page.goto('/benefits/florida');
+    const hubResponse = await page.goto('/benefits/florida', { waitUntil: 'domcontentloaded' });
     expect(hubResponse?.status()).toBe(200);
     
     const hubH1 = page.locator('h1');
@@ -21,7 +21,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
     expect(bodyTextHub).not.toContain('Medi-Cal');
 
     // 2. Counties list page for Florida
-    const countiesResponse = await page.goto('/counties/florida');
+    const countiesResponse = await page.goto('/counties/florida', { waitUntil: 'domcontentloaded' });
     expect(countiesResponse?.status()).toBe(200);
     
     const countiesH1 = page.locator('h1');
@@ -39,7 +39,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
 
     for (const county of pilotCounties) {
       const path = `/counties/florida/${county}`;
-      const response = await page.goto(path);
+      const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
       expect(response?.status()).toBe(200);
 
       const bodyText = await page.innerText('body');
@@ -68,7 +68,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
 
   test('Florida county benefits pages load cleanly', async ({ page }) => {
     const path = '/benefits/florida/miami-dade-fl';
-    const response = await page.goto(path);
+    const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
     expect(response?.status()).toBe(200);
 
     const bodyText = await page.innerText('body');
@@ -80,7 +80,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
 
   test('Florida forms catalog and details guide load correctly', async ({ page }) => {
     // 1. Florida Forms Catalog page
-    const formsResponse = await page.goto('/forms?state=florida');
+    const formsResponse = await page.goto('/forms?state=florida', { waitUntil: 'domcontentloaded' });
     expect(formsResponse?.status()).toBe(200);
 
     const formsH1 = page.locator('h1');
@@ -93,7 +93,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
     expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
 
     // 2. Individual Florida Parent Guide details page
-    const guideResponse = await page.goto('/forms/fl-iep-evaluation-request');
+    const guideResponse = await page.goto('/forms/fl-iep-evaluation-request', { waitUntil: 'domcontentloaded' });
     expect(guideResponse?.status()).toBe(200);
 
     const guideH1 = page.locator('h1');
@@ -105,7 +105,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include Florida county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml');
+    const sitemapResponse = await page.goto('/sitemaps/counties.xml', { waitUntil: 'domcontentloaded' });
     expect(sitemapResponse?.status()).toBe(200);
 
     const xmlText = await sitemapResponse.text();
@@ -119,7 +119,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
     expect(xmlText).not.toContain('/counties/florida/miami-dade-fl');
     expect(xmlText).not.toContain('/benefits/florida/autism-spectrum-disorder/miami-dade-fl');
 
-    await page.goto('/benefits/florida/miami-dade-fl');
+    await page.goto('/benefits/florida/miami-dade-fl', { waitUntil: 'domcontentloaded' });
     const robotsMetaRoot = page.locator('meta[name="robots"]');
     const rootCount = await robotsMetaRoot.count();
     if (isIndexable) {
@@ -131,7 +131,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
       await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
     }
 
-    await page.goto('/benefits/florida/autism-spectrum-disorder/miami-dade-fl');
+    await page.goto('/benefits/florida/autism-spectrum-disorder/miami-dade-fl', { waitUntil: 'domcontentloaded' });
     const robotsMeta = page.locator('meta[name="robots"]');
     await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
   });
