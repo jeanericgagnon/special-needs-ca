@@ -42,7 +42,9 @@ assert.match(legalAid.samples[2].evidence_snippet, /East River Legal Services an
 const county = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(county.family_status, 'blocked_current_dhs_host_without_public_county_or_local_office_contract');
 assert.match(county.samples[0].evidence_snippet, /Page Not Found/i);
-assert.match(county.samples[2].source_url, /dhs\.sd\.gov\/en\/staff-directory/);
+assert.match(county.samples[2].source_url, /staff-and-program-directory/);
+assert.match(county.samples[2].evidence_snippet, /200 `Loading` shell/i);
+assert.match(county.samples[2].evidence_snippet, /Page Not Found/i);
 
 const failureRows = fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'south-dakota_failure_ledger_v2.jsonl'), 'utf8')
   .trim()
