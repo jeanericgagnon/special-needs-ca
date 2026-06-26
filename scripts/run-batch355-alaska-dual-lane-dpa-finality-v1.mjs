@@ -38,6 +38,94 @@ const FAMILY_STATUS =
 const NEXT_ACTION =
   'hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api';
 const UPDATED_AT = '2026-06-25';
+const FAMILY_METADATA = {
+  medicaid_state_health_coverage: {
+    family_label: 'Medicaid / state health coverage',
+    critical: true,
+    county_grade_required: true,
+    statewide_enough: false,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  medicaid_waiver_hcbs_disability_services: {
+    family_label: 'Medicaid waiver / HCBS / disability services',
+    critical: true,
+    county_grade_required: false,
+    statewide_enough: true,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  developmental_disability_idd_authority: {
+    family_label: 'Developmental disability / IDD authority',
+    critical: true,
+    county_grade_required: true,
+    statewide_enough: false,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  early_intervention_part_c: {
+    family_label: 'Early intervention / IDEA Part C',
+    critical: true,
+    county_grade_required: true,
+    statewide_enough: false,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  special_education_idea_part_b: {
+    family_label: 'Special education / IDEA Part B',
+    critical: true,
+    county_grade_required: false,
+    statewide_enough: true,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  district_or_county_education_routing: {
+    family_label: 'District or county education routing',
+    critical: true,
+    county_grade_required: true,
+    statewide_enough: false,
+  },
+  vocational_rehabilitation_pre_ets: {
+    family_label: 'Vocational rehabilitation / Pre-ETS',
+    critical: true,
+    county_grade_required: false,
+    statewide_enough: true,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  protection_and_advocacy: {
+    family_label: 'Protection and advocacy',
+    critical: true,
+    county_grade_required: false,
+    statewide_enough: true,
+  },
+  parent_training_information_center: {
+    family_label: 'Parent training and information center',
+    critical: true,
+    county_grade_required: false,
+    statewide_enough: true,
+  },
+  legal_aid: {
+    family_label: 'Legal aid',
+    critical: true,
+    county_grade_required: false,
+    statewide_enough: true,
+  },
+  able_program: {
+    family_label: 'ABLE program',
+    critical: true,
+    county_grade_required: false,
+    statewide_enough: true,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  ssi_ssa_federal_reference: {
+    family_label: 'SSI / SSA federal references',
+    critical: false,
+    county_grade_required: false,
+    statewide_enough: true,
+    default_status_reason: 'statewide evidence is present at the required authority level',
+  },
+  county_local_disability_resources: {
+    family_label: 'County/local disability resources',
+    critical: true,
+    county_grade_required: true,
+    statewide_enough: false,
+  },
+};
 const ASSIGNED_STATE_ORDER = [
   'Massachusetts',
   'Alaska',
@@ -274,6 +362,45 @@ function buildBatchReport(batchSummary) {
   ].join('\n') + '\n';
 }
 
+function buildGapRows(summary, verifiedRows, existingGapRows, countyLocalStatusReason) {
+  const existingByFamily = new Map(existingGapRows.map((row) => [row.family, row]));
+  const verifiedByFamily = new Map(verifiedRows.map((row) => [row.family, row]));
+
+  return Object.entries(FAMILY_METADATA).map(([family, meta]) => {
+    const existing = existingByFamily.get(family) ?? {};
+    const verified = verifiedByFamily.get(family) ?? {};
+    const familyStatus = family === 'county_local_disability_resources'
+      ? FAMILY_STATUS
+      : (summary.familyStatuses?.[family] ?? verified.family_status ?? existing.family_status ?? 'unknown');
+
+    let resolvedStatusReason;
+    if (family === 'county_local_disability_resources') {
+      resolvedStatusReason = countyLocalStatusReason;
+    } else if (existing.status_reason) {
+      resolvedStatusReason = existing.status_reason;
+    } else if (verified.query_basis) {
+      resolvedStatusReason = verified.query_basis;
+    } else if (verified.blocker_evidence) {
+      resolvedStatusReason = verified.blocker_evidence;
+    } else {
+      resolvedStatusReason = meta.default_status_reason ?? 'reviewed evidence is present at the required authority level';
+    }
+
+    return {
+      state: summary.state,
+      state_code: summary.state_code,
+      state_name: summary.state_name,
+      family,
+      family_label: meta.family_label,
+      family_status: familyStatus,
+      critical: meta.critical,
+      county_grade_required: meta.county_grade_required,
+      statewide_enough: meta.statewide_enough,
+      status_reason: resolvedStatusReason,
+    };
+  });
+}
+
 export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
   const summary = readJson(INPUTS.summary);
   const gapRows = readJsonl(INPUTS.gap);
@@ -297,15 +424,6 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
     next_action: NEXT_ACTION,
   }];
   summary.familyStatuses.county_local_disability_resources = FAMILY_STATUS;
-
-  for (const row of gapRows) {
-    if (row.family === 'county_local_disability_resources') {
-      row.family_status = FAMILY_STATUS;
-      row.status_reason = statusReason;
-      row.failure_code = FAILURE_CODE;
-      row.next_action = NEXT_ACTION;
-    }
-  }
 
   for (const row of failureRows) {
     if (row.family === 'county_local_disability_resources') {
@@ -462,14 +580,16 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
     borough_assignment_contract_found: false,
   };
 
+  const rebuiltGapRows = buildGapRows(summary, verifiedRows, gapRows, statusReason);
+
   writeJson(INPUTS.summary, summary);
-  writeJsonl(INPUTS.gap, gapRows);
+  writeJsonl(INPUTS.gap, rebuiltGapRows);
   writeJsonl(INPUTS.failures, failureRows);
   writeJsonl(INPUTS.verified, verifiedRows);
   writeJsonl(INPUTS.nextActions, nextRows);
   writeJson(INPUTS.allStateAudit, allStateAudit);
   writeJsonl(INPUTS.allStateQueue, allStateQueue);
-  fs.writeFileSync(INPUTS.stateReport, buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows));
+  fs.writeFileSync(INPUTS.stateReport, buildStateReport(summary, rebuiltGapRows, failureRows, verifiedRows, nextRows));
   fs.writeFileSync(INPUTS.allStateReport, replaceAllStateAlaskaNote(allStateReport));
   fs.writeFileSync(INPUTS.handoff, buildHandoff(allStateAudit));
   writeJson(OUTPUTS.batchSummary, batchSummary);

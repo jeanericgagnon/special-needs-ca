@@ -41,13 +41,24 @@ assert.equal(summary.batch, 'batch355_alaska_dual_lane_dpa_finality_v1');
 assert.equal(summary.primary_gap_reason, 'reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract');
 assert.match(summary.final_blockers[0].evidence, /Reviewed 2026-06-25 exact official Alaska county-local surfaces/i);
 
-assert.equal(gapRows.length, 0);
+assert.equal(gapRows.length, 13);
 assert.equal(summary.final_blockers.length, 1);
 assert.equal(summary.final_blockers[0].family, 'county_local_disability_resources');
 assert.match(summary.final_blockers[0].evidence, /browser-reviewed lane/i);
 assert.match(summary.final_blockers[0].evidence, /groups offices only by broad regions/i);
 assert.match(summary.final_blockers[0].evidence, /no borough or census-area contract terms such as `borough`, `census area`, `Anchorage Municipality`, `Kenai Peninsula Borough`, `Bethel Census Area`, or `Nome Census Area`/i);
 assert.match(summary.final_blockers[0].evidence, /still return HTTP 403 with the Cloudflare title "Just a moment\.\.\."/i);
+
+const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
+assert.ok(countyGap);
+assert.equal(countyGap.family_status, 'blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract');
+assert.match(countyGap.status_reason, /still only groups offices by broad regions/i);
+assert.match(countyGap.status_reason, /still lacks any public official borough- or census-area-to-office assignment contract/i);
+
+const educationGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
+assert.ok(educationGap);
+assert.equal(educationGap.family_status, 'verified_state_grade');
+assert.match(educationGap.status_reason, /district profile pages, district map pages, and district-specific pages/i);
 
 const failure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(failure);
