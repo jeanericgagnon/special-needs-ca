@@ -569,3 +569,6 @@
 
 ### District-Hosted Child Find Flyers Still Need Local Routing Evidence
 *   **Lesson:** A district-hosted file with a promising title like `Child Find` still does not clear a local education-routing blocker unless the reviewed artifact preserves district-specific routing or contact evidence. Idaho Clark linked official `Idaho Child Find` PDFs from its Parent Resources page, but bounded inspection only confirmed image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, or special-education routing terms.
+
+### Public Visualforce Locator APIs Can Become Reviewable Official Evidence
+*   **Lesson:** A public agency locator app should not be written off just because the wrapper page is dynamic. Arizona DES stayed blocked in raw HTML, but the linked public Salesforce locator exposed a live Visualforce remoting contract with structured office records, explicit county fields, service URLs, phones, and served-ZIP strings. When the app is publicly reachable and the remoting endpoint is stable, review that exact contract before treating the lane as non-reviewable.

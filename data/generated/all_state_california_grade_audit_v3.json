@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T01:32:26.599Z",
+  "generatedAt": "2026-06-26T01:56:37.245Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 41,
@@ -217,12 +217,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract"
+        "county_local_disability_resources": "blocked_des_locator_explicit_for_14_counties_with_greenlee_locality_zip_coverage_but_no_county_level_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch390_arizona_education_clears_county_local_sole_blocker_v1",
-      "packetPrimaryGapReason": "des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
-      "packetRecommendedBatch": "hold_county_local_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts"
+      "packetBatch": "batch392_arizona_des_locator_greenlee_finality_v1",
+      "packetPrimaryGapReason": "official_des_locator_returns_14_explicit_counties_and_greenlee_zip_served_localities_but_no_reviewed_greenlee_county_contract",
+      "packetRecommendedBatch": "hold_county_local_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_full_county_contract"
     },
     {
       "stateId": "arkansas",

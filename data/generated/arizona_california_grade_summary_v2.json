@@ -2,7 +2,7 @@
   "state": "arizona",
   "state_code": "AZ",
   "state_name": "Arizona",
-  "batch": "batch390_arizona_education_clears_county_local_sole_blocker_v1",
+  "batch": "batch392_arizona_des_locator_greenlee_finality_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -12,8 +12,8 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
-  "recommended_batch": "hold_county_local_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts",
+  "primary_gap_reason": "official_des_locator_returns_14_explicit_counties_and_greenlee_zip_served_localities_but_no_reviewed_greenlee_county_contract",
+  "recommended_batch": "hold_county_local_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_full_county_contract",
   "critical_gap_families": [
     "county_local_disability_resources"
   ],
@@ -40,13 +40,13 @@
   "final_blockers": [
     {
       "family": "county_local_disability_resources",
-      "failure_code": "des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
-      "evidence": "Reviewed 2026-06-23 bounded Arizona county-local fallback pages after the earlier DES challenge findings and the official AHCCCS PDF lane. The DES host family remains challenge-blocked on the known office-locator and benefits roots. The accessible AHCCCS fallback lane is live and stronger than previously recorded: https://www.azahcccs.gov/members/ALTCSlocations.html returned HTTP 200 and its raw HTML preserved seven named ALTCS office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma. The official ALTCS County Map PDF is also partially parseable and preserves Arizona county names, but it still does not attach those counties to office addresses, phones, or a repeatable county-to-office assignment contract. https://www.azahcccs.gov/shared/AHCCCScontacts.html and https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html remain statewide contact and program-guidance leaves rather than county-specific office assignments. Arizona therefore still lacks a reviewable official county-to-office routing contract.",
-      "next_action": "hold_county_local_until_new_official_html_or_pdf_county_contract_exists_not_support_letters"
+      "failure_code": "official_des_locator_now_proves_14_counties_and_greenlee_locality_zips_but_still_no_explicit_greenlee_county_assignment",
+      "evidence": "Reviewed 2026-06-26 bounded official Arizona county-local surfaces across the DES public office-locator family, the public Salesforce-hosted locator application, the official DDS service dataset returned by `EOLEmbedController.getEOLOfficeData`, the official Greenlee County useful-links page, and first-party Clifton, Duncan, and Morenci town surfaces. The official DES public locator roots `https://des.az.gov/office-locator` and `https://des.az.gov/find-your-local-office` still return Cloudflare `Just a moment...` shells in raw fetches, but the linked public Salesforce app at `https://azdes-community.my.salesforce-sites.com/EOL/` is live and reviewable. Its public Visualforce service lookup exposes a `Developmental Disability Services` lane (`serviceCode DDS`), and its official remoting endpoint returns structured DDS office records with explicit `county` fields for 14 Arizona counties plus exact office records, phone numbers, and service URLs. The same official DDS payload also preserves Greenlee locality ZIPs `85533`, `85534`, and `85540` in the Tucson DDS office `zipCodesServed` string. Official county and first-party locality evidence then tightens the remaining geography: Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci; the Town of Clifton preserves `Clifton, Arizona 85533`; the Town of Duncan preserves `Duncan, Arizona 85534`; and Morenci preserves `Morenci, AZ 85540`. Arizona has therefore narrowed from a statewide county-local blocker to a single unresolved county-level contract question: no reviewed public DES or AHCCCS artifact explicitly labels Greenlee County itself as assigned to a particular office.",
+      "next_action": "hold_blocked_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_reviewable_county_to_office_contract"
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_des_salesforce_locator_plus_altcs_html_and_county_map_without_county_contract",
+    "county_local_disability_resources": "blocked_des_locator_explicit_for_14_counties_with_greenlee_locality_zip_coverage_but_no_county_level_contract",
     "district_or_county_education_routing": "verified_county_grade"
   }
 }

@@ -1,0 +1,9 @@
+# Batch 392 Arizona DES Locator Greenlee Finality v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: Arizona county-local routing narrows from a statewide office-contract blocker to a single unresolved Greenlee county attachment
+
+## Evidence
+
+- Reviewed 2026-06-26 bounded official Arizona county-local surfaces across the DES public office-locator family, the public Salesforce-hosted locator application, the official DDS service dataset returned by `EOLEmbedController.getEOLOfficeData`, the official Greenlee County useful-links page, and first-party Clifton, Duncan, and Morenci town surfaces. The official DES public locator roots `https://des.az.gov/office-locator` and `https://des.az.gov/find-your-local-office` still return Cloudflare `Just a moment...` shells in raw fetches, but the linked public Salesforce app at `https://azdes-community.my.salesforce-sites.com/EOL/` is live and reviewable. Its public Visualforce service lookup exposes a `Developmental Disability Services` lane (`serviceCode DDS`), and its official remoting endpoint returns structured DDS office records with explicit `county` fields for 14 Arizona counties plus exact office records, phone numbers, and service URLs. The same official DDS payload also preserves Greenlee locality ZIPs `85533`, `85534`, and `85540` in the Tucson DDS office `zipCodesServed` string. Official county and first-party locality evidence then tightens the remaining geography: Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci; the Town of Clifton preserves `Clifton, Arizona 85533`; the Town of Duncan preserves `Duncan, Arizona 85534`; and Morenci preserves `Morenci, AZ 85540`. Arizona has therefore narrowed from a statewide county-local blocker to a single unresolved county-level contract question: no reviewed public DES or AHCCCS artifact explicitly labels Greenlee County itself as assigned to a particular office.

@@ -1,0 +1,20 @@
+{
+  "batch": "batch392_arizona_des_locator_greenlee_finality_v1",
+  "state": "arizona",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "sole_blocker": "county_local_disability_resources",
+  "explicit_counties_from_des_locator": 14,
+  "missing_explicit_county": "Greenlee",
+  "greenlee_zip_served_values": [
+    "85533",
+    "85534",
+    "85540"
+  ],
+  "completeness_pct": 92,
+  "counts_unchanged": {
+    "complete": 41,
+    "blocked": 9,
+    "indexSafe": 41
+  }
+}

@@ -31,4 +31,4 @@
 - legal_aid: verified_state_grade
 - able_program: verified_state_grade
 - ssi_ssa_federal_reference: verified_state_grade
-- county_local_disability_resources: blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract
+- county_local_disability_resources: blocked_des_locator_explicit_for_14_counties_with_greenlee_locality_zip_coverage_but_no_county_level_contract
