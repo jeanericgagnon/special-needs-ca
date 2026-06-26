@@ -572,3 +572,6 @@
 
 ### Public Visualforce Locator APIs Can Become Reviewable Official Evidence
 *   **Lesson:** A public agency locator app should not be written off just because the wrapper page is dynamic. Arizona DES stayed blocked in raw HTML, but the linked public Salesforce locator exposed a live Visualforce remoting contract with structured office records, explicit county fields, service URLs, phones, and served-ZIP strings. When the app is publicly reachable and the remoting endpoint is stable, review that exact contract before treating the lane as non-reviewable.
+
+### County-Keyed DD Assignment PDFs Can Clear Local Routing When Generic County Resource Pages Fail
+*   **Lesson:** If an official county-resource page only yields aging or generic service listings, inspect the disability-program contact stack on the same official host before freezing the local blocker. Wyoming stayed blocked on aging-only county pages until the official HCBS contact page surfaced a live `Benefits and Eligibility Specialists` PDF that explicitly assigned all 23 counties for DD and CCW support.

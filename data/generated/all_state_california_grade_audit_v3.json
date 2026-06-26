@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T01:56:37.245Z",
+  "generatedAt": "2026-06-26T02:15:12.833Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 41,
@@ -3507,11 +3507,11 @@
       "legacyManualReviewRate": 39.34,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 23,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 92,
       "dbMetrics": {
         "state_id": "wyoming",
         "state_code": "WY",
@@ -3557,11 +3557,11 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_official_wdh_county_surfaces_are_aging_only_without_disability_specific_contract"
+        "county_local_disability_resources": "verified_official_hcbs_bes_county_assignments_pdf"
       },
       "packetGenerated": true,
-      "packetBatch": "batch380_wyoming_accessible_idea_freeze_v1",
-      "packetPrimaryGapReason": "wde_idea_evidence_is_public_again_but_county_resource_fetches_are_forbidden_and_no_reviewable_county_to_district_special_education_crosswalk_exists",
+      "packetBatch": "batch393_wyoming_hcbs_county_clear_v1",
+      "packetPrimaryGapReason": "official_wde_public_again_but_no_reviewable_county_to_district_special_education_crosswalk_or_district_owned_special_education_leaf_set_exists",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     }
   ],

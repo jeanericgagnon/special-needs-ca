@@ -1,0 +1,12 @@
+{
+  "batch": "batch393_wyoming_hcbs_county_clear_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "county_local_family_cleared": true,
+  "district_family_still_blocked": true,
+  "hcbs_bes_pdf_live": true,
+  "county_local_counties_covered": 23,
+  "dd_waiver_public_lane_live": true,
+  "stale_dhhs_dd_host_replaced": true,
+  "lesson_added": false
+}
