@@ -1,0 +1,16 @@
+{
+  "batch": "batch411_new_mexico_ped_county_completion_v1",
+  "generated_at": "2026-06-26T15:34:07.549Z",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "ped_superintendent_rows": 155,
+  "ped_address_rows_with_district_identity": 144,
+  "counties_closed_from_ped_addresses": 32,
+  "catron_closed_from_first_party_coordinates": true,
+  "county_matrix_rows": 33,
+  "counts": {
+    "complete": 44,
+    "blocked": 6,
+    "indexSafe": 44
+  }
+}

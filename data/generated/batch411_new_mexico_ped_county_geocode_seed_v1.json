@@ -1,0 +1,711 @@
+{
+  "counties": [
+    {
+      "district_code": "503",
+      "district_name": "HORIZON ACADEMY WEST",
+      "address": "3021 TODOS SANTOS NW",
+      "city": "ALBUQUERQUE",
+      "zip": "87120",
+      "email": "ccantrell@hawest.net",
+      "query": "3021 TODOS SANTOS NW, ALBUQUERQUE, NM 87120",
+      "matched_address": "3021 TODOS SANTOS ST NW, ALBUQUERQUE, NM, 87120",
+      "county": "Bernalillo County"
+    },
+    {
+      "district_code": "002",
+      "district_name": "RESERVE",
+      "address": "24 MOUNTAINEER RD",
+      "city": "RESERVE",
+      "zip": "87830",
+      "email": "rkearwood@reserveschools.com",
+      "query": "first-party Reserve Independent Schools coordinates (33.710737,-108.761857)",
+      "matched_address": "24 MOUNTAINEER RD, RESERVE, NM 87830 (district site footer / embedded coordinates)",
+      "county": "Catron County",
+      "source_url": "https://reserveschools.com/en-US",
+      "coordinates": "33.710737,-108.761857"
+    },
+    {
+      "district_code": "005",
+      "district_name": "HAGERMAN",
+      "address": "406 NORTH CAMBRIDGE AVE",
+      "city": "HAGERMAN",
+      "zip": "88232",
+      "email": "cclough@bobcat.net",
+      "query": "406 NORTH CAMBRIDGE AVE, HAGERMAN, NM 88232",
+      "matched_address": "406 CAMBRIDGE AVE, HAGERMAN, NM, 88232",
+      "county": "Chaves County"
+    },
+    {
+      "district_code": "088",
+      "district_name": "GRANTS",
+      "address": "413 W ROOSEVELT AVE",
+      "city": "GRANTS",
+      "zip": "87020",
+      "email": "max.perez@gccs.k12.nm.us",
+      "query": "413 W ROOSEVELT AVE, GRANTS, NM 87020",
+      "matched_address": "413 W ROOSEVELT AVE, GRANTS, NM, 87020",
+      "county": "Cibola County"
+    },
+    {
+      "district_code": "008",
+      "district_name": "CIMARRON",
+      "address": "125 N. COLLISON AVE.",
+      "city": "CIMARRON",
+      "zip": "87714",
+      "email": "aestrada@cimarronschools.org",
+      "query": "125 N. COLLISON AVE., CIMARRON, NM 87714",
+      "matched_address": "125 N COLLISON AVE, CIMARRON, NM, 87714",
+      "county": "Colfax County"
+    },
+    {
+      "district_code": "015",
+      "district_name": "GRADY",
+      "address": "100 FRANKLIN ST",
+      "city": "GRADY",
+      "zip": "88120",
+      "email": "kdurham@gradyschool.com",
+      "query": "100 FRANKLIN ST, GRADY, NM 88120",
+      "matched_address": "100 FRANKLIN ST, GRADY, NM, 88120",
+      "county": "Curry County"
+    },
+    {
+      "district_code": "016",
+      "district_name": "FT SUMNER",
+      "address": "1001 SUMNER AVE",
+      "city": "FORT SUMNER",
+      "zip": "88119",
+      "email": "mmoyer@ftsumnerk12.com",
+      "query": "1001 SUMNER AVE, FORT SUMNER, NM 88119",
+      "matched_address": "1001 SUMNER AVE, FORT SUMNER, NM, 88119",
+      "county": "De Baca County"
+    },
+    {
+      "district_code": "567",
+      "district_name": "LAS MONTANAS CHARTER",
+      "address": "1405 S. SOLANO AVE",
+      "city": "LAS CRUCES",
+      "zip": "88001",
+      "email": "caz.martinez@lasmontanashigh.com",
+      "query": "1405 S. SOLANO AVE, LAS CRUCES, NM 88001",
+      "matched_address": "1405 S SOLANO DR, LAS CRUCES, NM, 88001",
+      "county": "Do\u00f1a Ana County"
+    },
+    {
+      "district_code": "022",
+      "district_name": "ARTESIA",
+      "address": "1106 WEST QUAY AVE",
+      "city": "ARTESIA",
+      "zip": "88210",
+      "email": "djaramillo@bulldogs.org",
+      "query": "1106 WEST QUAY AVE, ARTESIA, NM 88210",
+      "matched_address": "1106 W QUAY AVE, ARTESIA, NM, 88210",
+      "county": "Eddy County"
+    },
+    {
+      "district_code": "023",
+      "district_name": "SILVER CITY",
+      "address": "2810 N. SWAN STREET",
+      "city": "SILVER CITY",
+      "zip": "88061",
+      "email": "whawkins@silverschools.org",
+      "query": "2810 N. SWAN STREET, SILVER CITY, NM 88061",
+      "matched_address": "2810 N SWAN ST, SILVER CITY, NM, 88061",
+      "county": "Grant County"
+    },
+    {
+      "district_code": "025",
+      "district_name": "SANTA ROSA",
+      "address": "717 3RD ST",
+      "city": "SANTA ROSA",
+      "zip": "88435",
+      "email": "mmadrid@srlions.com",
+      "query": "717 3RD ST, SANTA ROSA, NM 88435",
+      "matched_address": "717 S 3RD ST, SANTA ROSA, NM, 88435",
+      "county": "Guadalupe County"
+    },
+    {
+      "district_code": "028",
+      "district_name": "MOSQUERO",
+      "address": "43 MCNEIL AVE",
+      "city": "MOSQUERO",
+      "zip": "87733",
+      "email": "superintendent@mosquero.net",
+      "query": "43 MCNEIL AVE, MOSQUERO, NM 87733",
+      "matched_address": "43 MCNEIL AVE, MOSQUERO, NM, 87733",
+      "county": "Harding County"
+    },
+    {
+      "district_code": "030",
+      "district_name": "ANIMAS",
+      "address": "1 PANTHER DR",
+      "city": "ANIMAS",
+      "zip": "88020",
+      "email": "lrcushman@animask12.net",
+      "query": "1 PANTHER DR, ANIMAS, NM 88020",
+      "matched_address": "1 PANTHER BLVD, ANIMAS, NM, 88020",
+      "county": "Hidalgo County"
+    },
+    {
+      "district_code": "031",
+      "district_name": "LOVINGTON",
+      "address": "18 WEST WASHINGTON",
+      "city": "LOVINGTON",
+      "zip": "88260",
+      "email": "leannegandy@lovingtonschools.net",
+      "query": "18 WEST WASHINGTON, LOVINGTON, NM 88260",
+      "matched_address": "18 W WASHINGTON AVE, LOVINGTON, NM, 88260",
+      "county": "Lea County"
+    },
+    {
+      "district_code": "038",
+      "district_name": "CORONA",
+      "address": "531 FRANKLIN ST",
+      "city": "CORONA",
+      "zip": "88318",
+      "email": "travis.lightfoot@cpscardinals.org",
+      "query": "531 FRANKLIN ST, CORONA, NM 88318",
+      "matched_address": "531 FRANKLIN ST, CORONA, NM, 88318",
+      "county": "Lincoln County"
+    },
+    {
+      "district_code": "041",
+      "district_name": "LOS ALAMOS",
+      "address": "2075 TRINITY DRIVE",
+      "city": "LOS ALAMOS",
+      "zip": "87544",
+      "email": "j.delfin@laschools.net",
+      "query": "2075 TRINITY DRIVE, LOS ALAMOS, NM 87544",
+      "matched_address": "2075 TRINITY DR, LOS ALAMOS, NM, 87544",
+      "county": "Los Alamos County"
+    },
+    {
+      "district_code": "042",
+      "district_name": "DEMING",
+      "address": "1001 S DIAMOND AVE.",
+      "city": "DEMING",
+      "zip": "88030",
+      "email": "vicki.chavez@demingps.org",
+      "query": "1001 S DIAMOND AVE., DEMING, NM 88030",
+      "matched_address": "1001 S DIAMOND AVE, DEMING, NM, 88030",
+      "county": "Luna County"
+    },
+    {
+      "district_code": "089",
+      "district_name": "ZUNI",
+      "address": "10 NORTH SANDY SPRINGS RD",
+      "city": "ZUNI",
+      "zip": "87327",
+      "email": "randy.stickney@zpsd.org",
+      "query": "10 NORTH SANDY SPRINGS RD, ZUNI, NM 87327",
+      "matched_address": "10 SANDY SPRINGS RD, ZUNI, NM, 87327",
+      "county": "McKinley County"
+    },
+    {
+      "district_code": "045",
+      "district_name": "WAGON MOUND",
+      "address": "300 PARK AVENUE",
+      "city": "WAGON MOUND",
+      "zip": "87752",
+      "email": "anita.romero@wm.k12.nm.us",
+      "query": "300 PARK AVENUE, WAGON MOUND, NM 87752",
+      "matched_address": "300 PARK AVE, WAGON MOUND, NM, 87752",
+      "county": "Mora County"
+    },
+    {
+      "district_code": "048",
+      "district_name": "CLOUDCROFT",
+      "address": "10 SWALLOW PLACE",
+      "city": "CLOUDCROFT",
+      "zip": "88317",
+      "email": "tana.daugherty@cmsbears.org",
+      "query": "10 SWALLOW PLACE, CLOUDCROFT, NM 88317",
+      "matched_address": "10 SWALLOW PL, CLOUDCROFT, NM, 88317",
+      "county": "Otero County"
+    },
+    {
+      "district_code": "049",
+      "district_name": "TUCUMCARI",
+      "address": "700 WEST AMAROSA",
+      "city": "TUCUMCARI",
+      "zip": "88401",
+      "email": "a.mckinney@tucumcarischools.com",
+      "query": "700 WEST AMAROSA, TUCUMCARI, NM 88401",
+      "matched_address": "700 W AMAROSA AVE, TUCUMCARI, NM, 88401",
+      "county": "Quay County"
+    },
+    {
+      "district_code": "054",
+      "district_name": "DULCE",
+      "address": "113 HAWKS DR",
+      "city": "DULCE",
+      "zip": "87528",
+      "email": "imontoya@dulceschools.com",
+      "query": "113 HAWKS DR, DULCE, NM 87528",
+      "matched_address": "113 HAWKS DR, DULCE, NM, 87528",
+      "county": "Rio Arriba County"
+    },
+    {
+      "district_code": "057",
+      "district_name": "PORTALES",
+      "address": "501 SOUTH ABILENE",
+      "city": "PORTALES",
+      "zip": "88130",
+      "email": "jcain@portalesschools.com",
+      "query": "501 SOUTH ABILENE, PORTALES, NM 88130",
+      "matched_address": "501 S ABILENE AVE, PORTALES, NM, 88130",
+      "county": "Roosevelt County"
+    },
+    {
+      "district_code": "064",
+      "district_name": "AZTEC",
+      "address": "1118 WEST AZTEC BLVD",
+      "city": "AZTEC",
+      "zip": "87410",
+      "email": "adsummke@aztec.k12.nm.us",
+      "query": "1118 WEST AZTEC BLVD, AZTEC, NM 87410",
+      "matched_address": "1118 N AZTEC BLVD, AZTEC, NM, 87410",
+      "county": "San Juan County"
+    },
+    {
+      "district_code": "069",
+      "district_name": "LAS VEGAS CITY",
+      "address": "901 DOUGLAS AVENUE",
+      "city": "LAS VEGAS",
+      "zip": "87701",
+      "email": "larryssaarchuleta@cybercardinal.com",
+      "query": "901 DOUGLAS AVENUE, LAS VEGAS, NM 87701",
+      "matched_address": "901 DOUGLAS AVE, LAS VEGAS, NM, 87701",
+      "county": "San Miguel County"
+    },
+    {
+      "district_code": "061",
+      "district_name": "BERNALILLO",
+      "address": "224 N CAMINO DEL PUEBLO",
+      "city": "BERNALILLO",
+      "zip": "87004",
+      "email": "mamontano@bernalillops.org",
+      "query": "224 N CAMINO DEL PUEBLO, BERNALILLO, NM 87004",
+      "matched_address": "224 CAM DEL PUEBLO, BERNALILLO, NM, 87004",
+      "county": "Sandoval County"
+    },
+    {
+      "district_code": "509",
+      "district_name": "NM SCHOOL FOR ARTS",
+      "address": "500 MONTEZUMA AVENUE",
+      "city": "SANTA FE",
+      "zip": "87501",
+      "email": "ecrites@nmschoolforthearts.org",
+      "query": "500 MONTEZUMA AVENUE, SANTA FE, NM 87501",
+      "matched_address": "500 MONTEZUMA AVE, SANTA FE, NM, 87501",
+      "county": "Santa Fe County"
+    },
+    {
+      "district_code": "073",
+      "district_name": "TRUTH OR CONS.",
+      "address": "180 NORTH DATE ST",
+      "city": "T OR C",
+      "zip": "87901",
+      "email": "csegura@torcschools.net",
+      "query": "180 NORTH DATE ST, T OR C, NM 87901",
+      "matched_address": "180 N DATE ST, T OR C, NM, 87901",
+      "county": "Sierra County"
+    },
+    {
+      "district_code": "075",
+      "district_name": "MAGDALENA",
+      "address": "201 DUGGINS DR",
+      "city": "MAGDALENA",
+      "zip": "87825",
+      "email": "ghaven@magdalena.k12.nm.us",
+      "query": "201 DUGGINS DR, MAGDALENA, NM 87825",
+      "matched_address": "201 DUGGINS DR, MAGDALENA, NM, 87825",
+      "county": "Socorro County"
+    },
+    {
+      "district_code": "076",
+      "district_name": "TAOS",
+      "address": "310 CAMINO DE LA PLACITA",
+      "city": "TAOS",
+      "zip": "87571",
+      "email": "lillian.torrez@taosschools.org",
+      "query": "310 CAMINO DE LA PLACITA, TAOS, NM 87571",
+      "matched_address": "310 CAM DE LA PLACITAS, TAOS, NM, 87571",
+      "county": "Taos County"
+    },
+    {
+      "district_code": "080",
+      "district_name": "ESTANCIA",
+      "address": "300 NORTH 9TH STREET",
+      "city": "ESTANCIA",
+      "zip": "87016",
+      "email": "cindy.sims@estancia.k12.nm.us",
+      "query": "300 NORTH 9TH STREET, ESTANCIA, NM 87016",
+      "matched_address": "300 9TH ST, ESTANCIA, NM, 87016",
+      "county": "Torrance County"
+    },
+    {
+      "district_code": "084",
+      "district_name": "CLAYTON",
+      "address": "323 SOUTH 5TH ST",
+      "city": "CLAYTON",
+      "zip": "88415",
+      "email": "ray.maestas@claytonschools.us",
+      "query": "323 SOUTH 5TH ST, CLAYTON, NM 88415",
+      "matched_address": "323 S 5TH ST, CLAYTON, NM, 88415",
+      "county": "Union County"
+    },
+    {
+      "district_code": "087",
+      "district_name": "BELEN",
+      "address": "520 NORTH MAIN ST",
+      "city": "BELEN",
+      "zip": "87002",
+      "email": "sanchezla@beleneagles.org",
+      "query": "520 NORTH MAIN ST, BELEN, NM 87002",
+      "matched_address": "520 N MAIN ST, BELEN, NM, 87002",
+      "county": "Valencia County"
+    }
+  ],
+  "fails": [
+    {
+      "district_code": "082",
+      "district_name": "MOUNTAINAIR",
+      "address": "405 BROADWAY",
+      "city": "MOUNTAINAIR",
+      "zip": "87036",
+      "email": "dapodaca@mpschools.net",
+      "query": "405 BROADWAY, MOUNTAINAIR, NM 87036",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "062",
+      "district_name": "CUBA",
+      "address": "50 COUNTY RD 13 BLDG 53",
+      "city": "CUBA",
+      "zip": "87013",
+      "email": "ksanchez-griego@cuba.k12.nm.us",
+      "query": "50 COUNTY RD 13 BLDG 53, CUBA, NM 87013",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "010",
+      "district_name": "SPRINGER",
+      "address": "1401 8TH ST",
+      "city": "SPRINGER",
+      "zip": "87747",
+      "email": "garyallison@springerschools.org",
+      "query": "1401 8TH ST, SPRINGER, NM 87747",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "550",
+      "district_name": "ESTANCIA VALLEY CLASSICAL ACADEMY",
+      "address": "132 IMPALA CT",
+      "city": "MORIARTY",
+      "zip": "87035",
+      "email": "jmock@theevca.com",
+      "query": "132 IMPALA CT, MORIARTY, NM 87035",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "040",
+      "district_name": "CAPITAN",
+      "address": "519 SMOKEY BEAR BLVD",
+      "city": "CAPITAN",
+      "zip": "88316",
+      "email": "patti.nesbitt@capitantigers.org",
+      "query": "519 SMOKEY BEAR BLVD, CAPITAN, NM 88316",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "078",
+      "district_name": "MESA VISTA",
+      "address": "HIGHWAY 285 JUNCTION 111",
+      "city": "OJO CALIENTE",
+      "zip": "87549",
+      "email": "marvin.macauley@mesavista.org",
+      "query": "HIGHWAY 285 JUNCTION 111, OJO CALIENTE, NM 87549",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "070",
+      "district_name": "PECOS",
+      "address": "28 N. PANTHER PKWY & HIGHWAY 6",
+      "city": "PECOS",
+      "zip": "87552",
+      "email": "dsena@pecos.k12.nm.us",
+      "query": "28 N. PANTHER PKWY & HIGHWAY 6, PECOS, NM 87552",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "060",
+      "district_name": "DORA",
+      "address": "100 SCHOOL ST",
+      "city": "DORA",
+      "zip": "88115",
+      "email": "bhays@doraschools.com",
+      "query": "100 SCHOOL ST, DORA, NM 88115",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "039",
+      "district_name": "HONDO",
+      "address": "111 DON PABLO LANE",
+      "city": "HONDO",
+      "zip": "88336",
+      "email": "marvin.martin@hondoeagles.org",
+      "query": "111 DON PABLO LANE, HONDO, NM 88336",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "067",
+      "district_name": "CENTRAL CONS.",
+      "address": "OLD HIGH SCHOOL RD",
+      "city": "SHIPROCK",
+      "zip": "87420",
+      "email": "carls@centralschools.org",
+      "query": "OLD HIGH SCHOOL RD, SHIPROCK, NM 87420",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "053",
+      "district_name": "CHAMA",
+      "address": "STATE ROAD 531",
+      "city": "TIERRA AMARILLA",
+      "zip": "87575",
+      "email": "acasados@chamaschools.org",
+      "query": "STATE ROAD 531, TIERRA AMARILLA, NM 87575",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "002",
+      "district_name": "RESERVE",
+      "address": "24 MOUNTAINEER RD.",
+      "city": "RESERVE",
+      "zip": "87830",
+      "email": "rkearwood@reserveschools.com",
+      "query": "24 MOUNTAINEER RD., RESERVE, NM 87830",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "037",
+      "district_name": "CARRIZOZO",
+      "address": "800 D AVENUE",
+      "city": "CARRIZOZO",
+      "zip": "88301",
+      "email": "cody.patterson@carrizozogrizzlies.org",
+      "query": "800 D AVENUE, CARRIZOZO, NM 88301",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "068",
+      "district_name": "WEST LAS VEGAS",
+      "address": "157 MORENO ST",
+      "city": "LAS VEGAS",
+      "zip": "87701",
+      "email": "christopher_gutierrez@wlvs.k12.nm.us",
+      "query": "157 MORENO ST, LAS VEGAS, NM 87701",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "539",
+      "district_name": "RED RIVER VALLEY CHARTER SCHOOL",
+      "address": "500 E HIGH ST",
+      "city": "RED RIVER",
+      "zip": "87558",
+      "email": "kimberly@redrivervalleycs.com",
+      "query": "500 E HIGH ST, RED RIVER, NM 87558",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "003",
+      "district_name": "QUEMADO",
+      "address": "HWY 60",
+      "city": "QUEMADO",
+      "zip": "87829",
+      "email": "dlackey@quemadoschools.org",
+      "query": "HWY 60, QUEMADO, NM 87829",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "006",
+      "district_name": "DEXTER",
+      "address": "100 N. LINCOLN",
+      "city": "DEXTER",
+      "zip": "88230",
+      "email": "superintendent@dexterdemons.org",
+      "query": "100 N. LINCOLN, DEXTER, NM 88230",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "027",
+      "district_name": "ROY",
+      "address": "525 ROOSEVELT ST",
+      "city": "ROY",
+      "zip": "87743",
+      "email": "supt@royschools.org",
+      "query": "525 ROOSEVELT ST, ROY, NM 87743",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "024",
+      "district_name": "COBRE CONS.",
+      "address": "900 CENTRAL AVENUE",
+      "city": "BAYARD",
+      "zip": "88023",
+      "email": "jspaletta@cobreschools.org",
+      "query": "900 CENTRAL AVENUE, BAYARD, NM 88023",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "055",
+      "district_name": "ESPANOLA",
+      "address": "NULL",
+      "city": "NULL",
+      "zip": "NULL",
+      "email": "vera.trujillo@k12espanola.og",
+      "query": "NULL, NULL, NM NULL",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "026",
+      "district_name": "VAUGHN",
+      "address": "202 WEST 4TH STREET",
+      "city": "VAUGHN",
+      "zip": "88353",
+      "email": "lpadilla@vaughn.k12.nm.us",
+      "query": "202 WEST 4TH STREET, VAUGHN, NM 88353",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "085",
+      "district_name": "DES MOINES",
+      "address": "500 DES MOINES AVENUE",
+      "city": "DES MOINES",
+      "zip": "88418",
+      "email": "ksumpterdms@bacavalley.com",
+      "query": "500 DES MOINES AVENUE, DES MOINES, NM 88418",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "086",
+      "district_name": "LOS LUNAS",
+      "address": "119 LUNA",
+      "city": "LOS LUNAS",
+      "zip": "87031",
+      "email": "aromero@llschools.net",
+      "query": "119 LUNA, LOS LUNAS, NM 87031",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "532",
+      "district_name": "ALDO LEOPOLD CHARTER",
+      "address": "1422 HWY 180 EAST",
+      "city": "SILVER CITY",
+      "zip": "88061",
+      "email": "wsherwood@aldocs.org",
+      "query": "1422 HWY 180 EAST, SILVER CITY, NM 88061",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "093",
+      "district_name": "NM SCHOOL FOR THE DEAF",
+      "address": "1060 CERRILLOS RD",
+      "city": "SANTA FE",
+      "zip": "87505",
+      "email": "jennifer.herbold@nmsk.k12.nm.us",
+      "query": "1060 CERRILLOS RD, SANTA FE, NM 87505",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "011",
+      "district_name": "MAXWELL",
+      "address": "423 4TH  STREET",
+      "city": "MAXWELL",
+      "zip": "87728",
+      "email": "aroble@maxwellp12.com",
+      "query": "423 4TH  STREET, MAXWELL, NM 87728",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "032",
+      "district_name": "EUNICE",
+      "address": "1720 AVENUE K",
+      "city": "EUNICE",
+      "zip": "88231",
+      "email": "dhaynes@eunice.org",
+      "query": "1720 AVENUE K, EUNICE, NM 88231",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "019",
+      "district_name": "GADSDEN",
+      "address": "6308 HIGHWAY 28",
+      "city": "ANTHONY",
+      "zip": "88021",
+      "email": "tldempsey@gisd.k12.nm.us",
+      "query": "6308 HIGHWAY 28, ANTHONY, NM 88021",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "056",
+      "district_name": "JEMEZ MOUNTAIN",
+      "address": "PO BOX 230",
+      "city": "GALLINA",
+      "zip": "87017",
+      "email": "garcia_f@jmsd.k12.nm.us",
+      "query": "PO BOX 230, GALLINA, NM 87017",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "021",
+      "district_name": "LOVING",
+      "address": "602 S. 6TH STREET",
+      "city": "LOVING",
+      "zip": "88256",
+      "email": "lwhite@lovingschools.org",
+      "query": "602 S. 6TH STREET, LOVING, NM 88256",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "546",
+      "district_name": "LA TIERRA MONTESSORI SCHOOL",
+      "address": "659 ROADRUNNER RD",
+      "city": "ESPANOLA",
+      "zip": "87532",
+      "email": "angela.feathers@montessorilatierra.org",
+      "query": "659 ROADRUNNER RD, ESPANOLA, NM 87532",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "562",
+      "district_name": "DEAP",
+      "address": "SHEPARD SPRINGS BOULEVARD AND MILL RD",
+      "city": "NAVAJO",
+      "zip": "87328",
+      "email": "administrator@deapschool.org",
+      "query": "SHEPARD SPRINGS BOULEVARD AND MILL RD, NAVAJO, NM 87328",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "570",
+      "district_name": "ROOTS AND WINGS COMMUNITY",
+      "address": "35 OLD LAMA RD",
+      "city": "QUESTA",
+      "zip": "87556",
+      "email": "jorris@rwcs.org",
+      "query": "35 OLD LAMA RD, QUESTA, NM 87556",
+      "reason": "no_match"
+    },
+    {
+      "district_code": "044",
+      "district_name": "MORA",
+      "address": "HWY 518 AND RANGER DR",
+      "city": "MORA",
+      "zip": "87732",
+      "email": "ncavazos@mora.k12.nm.us",
+      "query": "HWY 518 AND RANGER DR, MORA, NM 87732",
+      "reason": "no_match"
+    }
+  ]
+}

@@ -602,3 +602,6 @@
 
 ### Readable Official PDFs Still Fail If They Are The Wrong Artifact
 *   **Lesson:** Clearing a format blocker is not enough. Arizona’s final AHCCCS admin PDFs were live and readable once rendered, but they turned out to be 2014 Pima support letters about the University Family Care merger rather than county-to-office routing contracts. A newly readable official document should still be tested against the exact public contract before it reopens a state.
+
+### First-Party District Coordinates Can Close The Last County When State Directory Addresses Fail The Geocoder
+*   **Lesson:** If an official state district directory preserves real office addresses for almost every county but one rural county still fails one-line geocoding, check whether the first-party district site publishes embedded coordinates beside the same office address. New Mexico's PED superintendent directory plus the official Census `geographies/onelineaddress` endpoint cleared 32 counties directly, and Catron closed only after Reserve Independent Schools exposed coordinates that the official Census `geographies/coordinates` endpoint mapped back to Catron County.
