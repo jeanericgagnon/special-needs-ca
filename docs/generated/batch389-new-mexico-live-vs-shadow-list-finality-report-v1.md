@@ -2,7 +2,7 @@
 
 - classification: BLOCKED
 - index_safe: false
-- change: tightened the education blocker to distinguish the live 935-row WebED list from a zero-item shadow schema and to prove the exact PED REC leaf still times out or aborts under bounded live checks
+- change: tightened the education blocker to distinguish the live 935-row WebED list from a zero-item shadow schema, quantify the REC grouping as only 58 of 142 normalized superintendent districts, and prove the exact PED REC leaf still times out or aborts under bounded live checks
 
 ## Conclusion
 

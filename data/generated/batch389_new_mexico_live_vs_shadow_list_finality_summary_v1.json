@@ -6,6 +6,9 @@
   "primary_gap_reason": "official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
   "live_list_guid": "ed760a23-c290-4b26-8fec-4f94210cf7c3",
   "live_list_item_count": 935,
+  "rec_normalized_match_count": 58,
+  "superintendent_normalized_district_count": 142,
+  "rec_normalized_missing_count": 84,
   "live_list_public_row_columns": [
     "Title",
     "Column2",
@@ -25,6 +28,6 @@
   "shadow_schema_item_count": 0,
   "rec_leaf_fetch_timeout": true,
   "rec_leaf_browser_abort": true,
-  "blocker_changed": false,
-  "conclusion": "New Mexico remains blocked because the live 935-row WebED list still omits county on actual public rows, the exact PED REC leaf is not currently reviewable under bounded live checks, and a separate zero-item shadow schema cannot satisfy county-grade routing."
+  "blocker_changed": true,
+  "conclusion": "New Mexico remains blocked because the live 935-row WebED list still omits county on actual public rows, the REC grouping only matches 58 of 142 normalized superintendent districts, the exact PED REC leaf is not currently reviewable under bounded live checks, and a separate zero-item shadow schema cannot satisfy county-grade routing."
 }
