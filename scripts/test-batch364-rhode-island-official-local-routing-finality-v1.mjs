@@ -17,7 +17,7 @@ assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(
   summary.primary_gap_reason,
-  'public_ride_directory_and_public_dhs_office_stack_expose_local_entities_but_zero_public_county_or_special_education_service_area_contracts'
+  'public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract'
 );
 
 const verifiedRows = fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'rhode-island_verified_sources_v1.jsonl'), 'utf8')
@@ -33,18 +33,17 @@ assert.equal(
 );
 assert.match(education.samples[0].source_url, /ride\.ri\.gov\/students-families\/ri-public-schools\/school-directory/);
 assert.match(education.samples[1].evidence_snippet, /authenticated users/i);
+assert.match(education.samples[3].source_url, /www2\.ride\.ri\.gov\/Applications\/MasterDirectory\/Organization_Default\.aspx/);
+assert.match(education.samples[3].evidence_snippet, /HTTP 503/i);
 
 const county = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(
-  county.family_status,
-  'blocked_public_dhs_office_stack_without_county_or_service_area_contract'
-);
-assert.match(county.samples[1].source_url, /dhs\.ri\.gov\/sitemap\.xml/);
-assert.match(county.samples[2].evidence_snippet, /no county-served or service-area field/i);
+assert.equal(county.family_status, 'verified_state_grade');
+assert.match(county.samples[0].source_url, /dhs\.ri\.gov\/office-locator-tool/);
+assert.match(county.samples[0].evidence_snippet, /city\/town/i);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'rhode-island-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /Rhode Island remains BLOCKED and not index-safe\./);
-assert.match(report, /public RIDE directory surfaces inventory districts and special-education school types/i);
-assert.match(report, /public DHS office surfaces inventory office leaves and addresses/i);
+assert.match(report, /`district_or_county_education_routing` remains the sole critical blocker/i);
+assert.match(report, /`county_local_disability_resources` now stays cleared/i);
 
 console.log('Rhode Island official local routing finality test passed.');
