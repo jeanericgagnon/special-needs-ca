@@ -1,0 +1,14 @@
+{
+  "batch": "batch406_maine_terminal_refresh_v1",
+  "generated_at": "2026-06-26T13:37:39.668Z",
+  "classification": "BLOCKED",
+  "offices_live": true,
+  "ofi_contact_live": true,
+  "ofi_reports_live": true,
+  "geo_pdf_live": true,
+  "overflow_pdf_live": true,
+  "county_xlsx_live": true,
+  "county_town_xlsx_live": true,
+  "maine_search_live": true,
+  "completeness_pct": 91
+}

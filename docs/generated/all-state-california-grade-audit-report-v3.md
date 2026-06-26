@@ -30,7 +30,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 
 
-- Maine remains blocked after a bounded DHHS navigation-stack, official-search, and OFI-reports finality check: District Office Locations, OFI Contact, OFI Programs & Services, OFI Data & Reports, Offices/Divisions, Administrative Office Locations, sitemap, sampled `Show Map` links, official Maine search queries, and the live Geographic Distribution / Overflow PDFs still expose office addresses, labels, or counts but no county-to-office or service-area contract.
+- Maine remains blocked after a 2026-06-26 bounded live recheck: DHHS district-office, OFI contact/programs/reports, offices/divisions, administrative offices, sitemap, official search queries, and the current county-count PDFs/XLSX surfaces all remain public, but they still expose office labels, addresses, or counts without any county-to-office or service-area routing contract.
 - Idaho remains blocked after a 2026-06-26 bounded live recheck: Camas still only exposes Contact Information, All Resources, Federal Programs, and Advanced Opportunities while its sitemap stays 404; Clark still only exposes Parent Resources, Contact Us, Title IX, and general-education notice while its sitemap stays 404; and the live Idaho DHW office stack plus sitemap still confirm office inventory without any public county-to-office contract.
 - New Hampshire remains blocked after a 2026-06-26 bounded live host-family recheck: DHHS, DOE, and NHES roots plus their obvious `nh.gov` path successors still return the same public HTTP 403 `Access Denied` shells, while only `robots.txt` remains publicly readable and still does not restore any routing contract.
 
