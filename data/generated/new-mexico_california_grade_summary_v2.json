@@ -51,7 +51,7 @@
       "family": "vocational_rehabilitation_pre_ets",
       "severity": "major",
       "failure_code": "official_dvr_root_returns_401_without_reviewed_public_alternate",
-      "evidence": "Reviewed 2026-06-22 the exact official New Mexico DVR root https://www.dvr.nm.gov/, which returned HTTP 401 Unauthorized in bounded fetches. The old packet still lacks any reviewed alternate first-party VR or Pre-ETS page on disk, so the family is no longer just missing-inventory; it is blocked on the official DVR lane requiring browser-assisted or alternate official-root review.",
+      "evidence": "Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.",
       "next_action": "browser_assisted_or_review_alternate_official_vr_root"
     }
   ],

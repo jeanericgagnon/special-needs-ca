@@ -30,6 +30,10 @@ const lessons = fs.readFileSync(path.join(repoRoot, 'docs', 'state-upgrade-lesso
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(summary.batch, 'batch389_new_mexico_live_vs_shadow_list_finality_v1');
+assert.match(
+  summary.final_blockers.find((row) => row.family === 'vocational_rehabilitation_pre_ets').evidence,
+  /Reviewed 2026-06-23 the New Mexico VR blocker artifacts/
+);
 
 const educationGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationGap);

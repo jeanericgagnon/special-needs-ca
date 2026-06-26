@@ -29,6 +29,10 @@ const FAILURE_CODE =
 const DISTRICT_STATUS =
   'blocked_official_sharepoint_lists_and_six_public_workbooks_live_but_verified_county_crosswalk_still_missing';
 const NEXT_ACTION = 'author_official_county_crosswalk_from_webed_directory_or_rec_contract';
+const VR_FAILURE_CODE = 'official_dvr_root_returns_401_without_reviewed_public_alternate';
+const VR_NEXT_ACTION = 'browser_assisted_or_review_alternate_official_vr_root';
+const VR_EVIDENCE =
+  'Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.';
 
 const DISTRICT_REASON =
   'Reviewed 2026-06-25 one more bounded official New Mexico education directory pass on the live PED-managed SharePoint host. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public `Document Library` contains only those six workbook files and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. A final bounded API pass tightened the row-level truth further: the live 935-row `2017 NM Schools` list exposes only `Title` plus `Column2` through `Column13` on public row payloads, corresponding to district, location, address, city, state, zip, level, type, status, and phone columns, with no county field on actual rows. The same host also exposes a separate zero-item shadow `NM Schools` schema with a `County Name` field, but that list has `ItemCount=0` and cannot satisfy county-grade public routing. `Superintendents.xlsx` preserves district names, codes, contacts, and addresses, but no county field. `REC Directors.xlsx` preserves only REC number, director, addresses, phone, fax, and email, but no county-service-area field. The elementary, middle, and high school principal workbooks each preserve school/district/contact columns, but no county field. The public `RECHome.aspx` page is also live and still groups districts under REC headings rather than exposing counties or REC service-area labels. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED directory artifacts.';
@@ -83,6 +87,10 @@ function main() {
       blocker.failure_code = FAILURE_CODE;
       blocker.evidence = DISTRICT_EVIDENCE;
       blocker.next_action = NEXT_ACTION;
+    } else if (blocker.family === 'vocational_rehabilitation_pre_ets') {
+      blocker.failure_code = VR_FAILURE_CODE;
+      blocker.evidence = VR_EVIDENCE;
+      blocker.next_action = VR_NEXT_ACTION;
     }
   }
 
