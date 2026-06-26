@@ -1,0 +1,10 @@
+{
+  "batch": "batch402_new_hampshire_terminal_refresh_v1",
+  "generated_at": "2026-06-26T13:28:31.721Z",
+  "classification": "BLOCKED",
+  "dhhs_roots_403": true,
+  "education_roots_403": true,
+  "nhes_roots_403": true,
+  "robots_only_public": true,
+  "completeness_pct": 33
+}
