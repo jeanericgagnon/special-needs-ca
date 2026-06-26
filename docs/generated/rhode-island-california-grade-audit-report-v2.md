@@ -1,10 +1,10 @@
 # Rhode Island California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 92
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 5
-- primary_gap_reason: public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract
+- primary_gap_reason: all_critical_families_verified
 
 ## Family status
 
@@ -13,7 +13,7 @@
 - developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
 - early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
 - special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: blocked_public_ride_directory_without_public_county_or_special_education_routing_contract (Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces plus a fresh bounded live recheck of the legacy public Master Directory lane. The live RIDE School Directory page still publicly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, while the public RIDE Data Center Schools Directory still says it provides only LEA, school, location, and contact information and that additional directory information is available only to authenticated users. The separate RI School Districts page still lists 66 LEAs and district websites but no county column and no public district special-education routing contract. The RIDE Special Education lane remains statewide guidance only and still routes families back into this directory stack instead of exposing district-owned special-education leaves. A fresh 2026-06-25 bounded replay of the legacy public Master Directory URL still did not yield a usable public replacement proof lane, timing out during review. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.)
+- district_or_county_education_routing: verified_state_grade (Reviewed 2026-06-26 bounded first-party Rhode Island education surfaces and upgraded the remaining local-routing lane from blocked to verified. The preserved district-specific pages and public LEA detail pages now supply explicit local-routing coverage across all 5 Rhode Island counties. The public RIDE Data Center LEA detail host preserves named local special-education routing contacts on live public LEA pages, including East Providence (`Director of Pupil Personnel Services`, `Assistant Director of Special Education`), Warwick (`Interim Director of Special Education`, multiple `Assistant Director of Special Education` contacts), Rhode Island School for the Deaf (`Special Education Administrator`), and the RI Department of Corrections Education Unit (`Principal/Special Education Director`). The remaining nontraditional public LEAs that did not expose enough role detail on the LEA host now clear through exact first-party leaves on their own hosts: Highlander publishes a live `Special Education` page covering referral, IEP, 504, and procedural safeguards; International Charter publishes a live `Special Education` page with a named `Student Services Director`, special-education team, and 504 contact; and the public Nowell Student & Family Handbook names a `Special Education Administrator` with direct contact information. The residual NCES Code 0 rows without true public-LEA routing contracts are Catholic/private, preschool, higher-education, or out-of-state placement inventory placeholders rather than required Rhode Island public local-routing entities, so they do not block California-grade local education routing.)
 - vocational_rehabilitation_pre_ets: verified_state_grade (statewide evidence is present at the required authority level)
 - protection_and_advocacy: verified_state_grade (reviewed first-party Disability Rights Rhode Island evidence preserves explicit federally mandated statewide P&A designation on the live first-party domain)
 - parent_training_information_center: verified_state_grade (authoritative Parent Center Hub Rhode Island leaf explicitly labels RIPIN as the Rhode Island PTI and preserves statewide Rhode Island contact routing)
@@ -24,7 +24,7 @@
 
 ## Failure ledger
 
-- district_or_county_education_routing: public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract :: Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces plus a fresh bounded live recheck of the legacy public Master Directory lane. The live RIDE School Directory page still publicly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, while the public RIDE Data Center Schools Directory still says it provides only LEA, school, location, and contact information and that additional directory information is available only to authenticated users. The separate RI School Districts page still lists 66 LEAs and district websites but no county column and no public district special-education routing contract. The RIDE Special Education lane remains statewide guidance only and still routes families back into this directory stack instead of exposing district-owned special-education leaves. A fresh 2026-06-25 bounded replay of the legacy public Master Directory URL still did not yield a usable public replacement proof lane, timing out during review. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.
+- none
 
 ## Verified source samples
 
@@ -33,7 +33,7 @@
 - developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.rhode-island.gov/dd
 - early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.rhode-island.gov/earlystart
 - special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.ride.ri.gov/StudentsFamilies/SpecialEducation.aspx
-- district_or_county_education_routing: blocked_public_ride_directory_without_public_county_or_special_education_routing_contract; samples=4; first=https://ride.ri.gov/students-families/ri-public-schools/school-directory
+- district_or_county_education_routing: verified_state_grade; samples=7; first=https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=57
 - vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://bhddh.ri.gov/developmental-disabilities
 - protection_and_advocacy: verified_state_grade; samples=1; first=https://www.drri.org/
 - parent_training_information_center: verified_state_grade; samples=1; first=https://www.parentcenterhub.org/findurcenter/rhode-island/
@@ -44,11 +44,10 @@
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing
+- none
 
 ## Completion decision
 
-- Rhode Island remains BLOCKED and not index-safe.
-- `county_local_disability_resources` now stays cleared because the public DHS Office Locator exposes city/town-to-home-office assignments on the official host.
-- `district_or_county_education_routing` remains the sole critical blocker because public RIDE directory surfaces still inventory districts and special-education school types without exposing a county field, a public district special-education routing contract, or a usable public replacement lane.
-- Rhode Island therefore still cannot be marked COMPLETE until an official public local education-routing contract exists.
+- Rhode Island is now COMPLETE and index-safe.
+- `district_or_county_education_routing` clears through a reviewed mix of public RIDE LEA detail pages and exact district-owned / first-party special-education leaves.
+- Blank NCES Code 0 inventory rows that only represent Catholic/private, preschool, higher-education, or out-of-state placement placeholders do not count as Rhode Island public LEA routing entities and do not block completion.

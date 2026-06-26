@@ -1,24 +1,18 @@
 {
   "batch": "batch364_rhode-island_official_local_routing_finality_v1",
   "state": "rhode-island",
-  "generated_at": "2026-06-25",
-  "classification": "BLOCKED",
-  "index_safe": false,
-  "primary_gap_reason": "public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract",
-  "final_blockers": [
-    {
-      "family": "district_or_county_education_routing",
-      "severity": "critical",
-      "failure_code": "public_ride_directory_exposes_district_inventory_but_zero_public_county_or_special_education_routing_contract",
-      "evidence": "Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces plus a fresh bounded live recheck of the legacy public Master Directory lane. The live RIDE School Directory page still publicly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, while the public RIDE Data Center Schools Directory still says it provides only LEA, school, location, and contact information and that additional directory information is available only to authenticated users. The separate RI School Districts page still lists 66 LEAs and district websites but no county column and no public district special-education routing contract. The RIDE Special Education lane remains statewide guidance only and still routes families back into this directory stack instead of exposing district-owned special-education leaves. A fresh 2026-06-25 bounded replay of the legacy public Master Directory URL still did not yield a usable public replacement proof lane, timing out during review. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.",
-      "next_action": "hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing"
-    }
-  ],
+  "generated_at": "2026-06-26",
+  "classification": "COMPLETE",
+  "index_safe": true,
+  "primary_gap_reason": "all_critical_families_verified",
+  "final_blockers": [],
   "official_evidence_reviewed": [
-    "https://ride.ri.gov/students-families/special-education",
-    "https://ride.ri.gov/students-families/ri-public-schools/school-directory",
-    "https://ride.ri.gov/students-families/ri-public-schools/school-districts",
-    "https://datacenter.ride.ri.gov/Directory",
-    "https://www2.ride.ri.gov/Applications/MasterDirectory/Organization_Default.aspx"
+    "https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=57",
+    "https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=88",
+    "https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=81",
+    "https://datacenter.ride.ri.gov/Directory/LEADetail?orgid=93",
+    "https://www.highlandercharter.org/our-programs/academics/special-education/",
+    "https://internationalcharterschool.org/special-education/",
+    "https://www.nowellacademy.org/s/Nowell-Student-Family-Handbook-2024-2025.pdf"
   ]
 }

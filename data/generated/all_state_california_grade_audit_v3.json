@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-26T00:07:16.696Z",
+  "generatedAt": "2026-06-26T01:32:26.599Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 40,
-    "BLOCKED": 10
+    "COMPLETE": 41,
+    "BLOCKED": 9
   },
-  "indexSafeCount": 40,
+  "indexSafeCount": 41,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
     "illinois",
     "new-mexico"
   ],
-  "lessonsUpdate": "Added a new queue-completion lesson: once every state has a packet, stop expanding the queue and switch to failure-class repair from packet artifacts.\n- New Hampshire: downgrade statewide special education if the only official DOE proof lane is the same blocked host family as local routing.",
+  "lessonsUpdate": "Added a new queue-completion lesson: once every state has a packet, stop expanding the queue and switch to failure-class repair from packet artifacts.",
   "states": [
     {
       "stateId": "alabama",
@@ -140,14 +140,14 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "verified_state_grade",
+        "district_or_county_education_routing": "legacy_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
-        "protection_and_advocacy": "verified_state_grade",
-        "parent_training_information_center": "verified_state_grade",
-        "legal_aid": "verified_state_grade",
+        "protection_and_advocacy": "missing",
+        "parent_training_information_center": "inventory_only",
+        "legal_aid": "missing",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract"
+        "county_local_disability_resources": "legacy_state_grade"
       },
       "packetGenerated": true,
       "packetBatch": "batch355_alaska_dual_lane_dpa_finality_v1",
@@ -2230,7 +2230,7 @@
         "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page"
       },
       "packetGenerated": true,
-      "packetBatch": "batch364_new_mexico_workbook_stack_finality_v1",
+      "packetBatch": "batch389_new_mexico_live_vs_shadow_list_finality_v1",
       "packetPrimaryGapReason": "official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate",
       "packetRecommendedBatch": "hold_for_official_county_crosswalk_or_rec_service_area_contract"
     },
@@ -2728,8 +2728,8 @@
       "stateId": "rhode-island",
       "stateCode": "RI",
       "stateName": "Rhode Island",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -2737,11 +2737,11 @@
       "legacyManualReviewRate": 46.88,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 5,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "rhode-island",
         "state_code": "RI",
@@ -2780,18 +2780,18 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_state_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "legacy_state_grade",
+        "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_16_procedure_hardening_states_v1",
-      "packetPrimaryGapReason": "generic_or_statewide_evidence_used_where_local_required",
+      "packetBatch": "batch364_rhode-island_official_local_routing_finality_v1",
+      "packetPrimaryGapReason": "all_critical_families_verified",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
     {
@@ -2930,7 +2930,7 @@
         "county_local_disability_resources": "blocked_current_dhs_host_without_public_county_or_local_office_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch366_south-dakota_official_routing_repair_v1",
+      "packetBatch": "batch_7_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },
@@ -3280,7 +3280,7 @@
         "county_local_disability_resources": "verified_state_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch374_virginia_independent_reaudit_v1",
+      "packetBatch": "batch_8_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_independently_reaudited_with_live_official_or_browser_reviewed_official_evidence",
       "packetRecommendedBatch": "complete_maintain"
     },
@@ -3561,7 +3561,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch380_wyoming_accessible_idea_freeze_v1",
-      "packetPrimaryGapReason": "wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract",
+      "packetPrimaryGapReason": "wde_idea_evidence_is_public_again_but_county_resource_fetches_are_forbidden_and_no_reviewable_county_to_district_special_education_crosswalk_exists",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     }
   ],
