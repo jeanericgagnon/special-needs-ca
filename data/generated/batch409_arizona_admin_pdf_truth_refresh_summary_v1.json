@@ -1,0 +1,19 @@
+{
+  "batch": "batch409_arizona_admin_pdf_truth_refresh_v1",
+  "generated_at": "2026-06-26T15:00:43.954Z",
+  "classification": "BLOCKED",
+  "des_wrapper_403": true,
+  "des_salesforce_live": true,
+  "altcs_locations_live": true,
+  "altcs_county_map_live_and_text_extractable": true,
+  "county_admin_pdf_live": true,
+  "county_admin_pdf_is_support_letter": true,
+  "pima_admin_pdf_live": true,
+  "pima_admin_pdf_is_support_letter": true,
+  "lesson_added": false,
+  "counts_unchanged": {
+    "complete": 43,
+    "blocked": 7,
+    "indexSafe": 43
+  }
+}

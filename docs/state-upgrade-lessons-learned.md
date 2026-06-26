@@ -599,3 +599,6 @@
 
 ### Dead Legacy Official Roots Do Not End A Family If A Reviewed State-Owned Successor Host Is Live
 *   **Lesson:** When an old official domain hard-fails, do not stop at the dead root if the same agency now publishes on another state-owned host. New Mexico VR looked blocked while `dvr.nm.gov` stayed 401, but the live first-party successor `dvr.state.nm.us` carried the actual About, Pre-ETS, and Locations leaves needed to verify statewide VR and transition routing.
+
+### Readable Official PDFs Still Fail If They Are The Wrong Artifact
+*   **Lesson:** Clearing a format blocker is not enough. Arizona’s final AHCCCS admin PDFs were live and readable once rendered, but they turned out to be 2014 Pima support letters about the University Family Care merger rather than county-to-office routing contracts. A newly readable official document should still be tested against the exact public contract before it reopens a state.
