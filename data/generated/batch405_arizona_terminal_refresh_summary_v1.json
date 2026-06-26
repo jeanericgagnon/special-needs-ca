@@ -1,0 +1,13 @@
+{
+  "batch": "batch405_arizona_terminal_refresh_v1",
+  "generated_at": "2026-06-26T13:35:23.996Z",
+  "classification": "BLOCKED",
+  "des_wrapper_403": true,
+  "des_salesforce_live": true,
+  "altcs_locations_live": true,
+  "altcs_county_map_stale_html": true,
+  "ahcccs_contacts_stale_html": true,
+  "greenlee_health_live": true,
+  "morenci_directory_live": true,
+  "completeness_pct": 92
+}
