@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-26T02:15:12.833Z",
+  "generatedAt": "2026-06-26T02:30:35.591Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 41,
-    "BLOCKED": 9
+    "COMPLETE": 42,
+    "BLOCKED": 8
   },
-  "indexSafeCount": 41,
+  "indexSafeCount": 42,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -1428,8 +1428,8 @@
       "stateId": "massachusetts",
       "stateCode": "MA",
       "stateName": "Massachusetts",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -1437,11 +1437,11 @@
       "legacyManualReviewRate": 18.18,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 14,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 92,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "massachusetts",
         "state_code": "MA",
@@ -1487,12 +1487,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved"
+        "county_local_disability_resources": "verified_county_grade"
       },
       "packetGenerated": true,
-      "packetBatch": "batch352_massachusetts_dese_export_county_capture_v1",
-      "packetPrimaryGapReason": "official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved",
-      "packetRecommendedBatch": "hold_for_dds_county_contract_or_reviewed_capture"
+      "packetBatch": "batch394_massachusetts_suffolk_dds_completion_v1",
+      "packetPrimaryGapReason": "all_critical_families_verified",
+      "packetRecommendedBatch": "none_all_critical_families_verified"
     },
     {
       "stateId": "michigan",

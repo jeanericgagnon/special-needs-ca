@@ -6,7 +6,7 @@ Use Gemini findings only as leads, never as authority. Every lead still needs of
 
 ## Current Complete States
 
-Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin
+Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, New Jersey, New York, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin
 
 ## Current Blocked States
 
@@ -14,44 +14,38 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Arizona: `official_des_locator_returns_14_explicit_counties_and_greenlee_zip_served_localities_but_no_reviewed_greenlee_county_contract`
 - Idaho: `remaining_idaho_camas_and_clark_surfaces_now_reduce_to_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_without_special_education_or_student_services_routing`
 - Maine: `official_dhhs_nav_stack_and_official_maine_search_still_expose_office_addresses_and_labels_but_no_county_or_service_area_contract`
-- Massachusetts: `official_dese_export_plus_census_county_subdivision_crosswalk_clears_education_and_reviewed_dds_locality_capture_covers_13_of_14_counties_but_suffolk_remains_unresolved`
 - New Hampshire: `official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead`
 - New Mexico: `official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
-- Rhode Island: `generic_or_statewide_evidence_used_where_local_required`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 - Wyoming: `wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract`
 
-## Current Focus State: Massachusetts
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is now narrower than a generic Suffolk miss. A fresh 2026-06-26 browser-readable replay of the `DDS Charles River West Area Office` page explicitly preserves `Chelsea, Revere, Somerville, Waltham, Watertown, Winthrop` and therefore confirms reviewable Suffolk coverage for Chelsea, Revere, and Winthrop. But Boston and Charlestown still do not materialize inside any preserved Suffolk-serving DDS locality contract, and a fresh raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` plus the exact area-office document downloads still return HTTP 403 `Not allowed` shells in the low-token lane, so no replayable county export has been recovered yet.
+`county_local_disability_resources` is now the narrowest Arizona blocker. The official DES Salesforce locator is live and preserves explicit county fields for 14 counties, but Greenlee County still needs a reviewed official county contract rather than ZIP-based inference.
 
 ### Exact Evidence Needed
 
-- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns Boston or Charlestown to a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.
-- Any current official Mass.gov DDS county field or county-grade export that covers Suffolk directly instead of requiring inference from office names or region labels.
-- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston or Charlestown inside a reviewable office contract, since Chelsea, Revere, and Winthrop are now explicitly preserved on the Charles River West area-office leaf.
+- Any current official DES or AHCCCS page, export, or public locator response that explicitly names Greenlee County in the county-to-office contract.
+- Any current official Arizona county-local DDS or Medicaid/HHS routing leaf that preserves Greenlee County service-area proof without relying on ZIP inference.
 
 ### Useful Official URLs Already Tried
 
-- [Massachusetts DESE district export](https://profiles.doe.mass.edu/search/search_export.aspx?orgCode=&orgType=5,12&runOrgSearch=Y&searchType=0&leftNavId=11238&showEmail=N)
-- [Census TIGERweb county subdivision query](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1/query?where=STATE%3D%2725%27&outFields=NAME,BASENAME,STATE,COUNTY,COUSUB,GEOID&returnGeometry=false&f=json)
-- [Massachusetts DDS org page](https://www.mass.gov/orgs/department-of-developmental-services)
-- [Massachusetts DDS locations index](https://www.mass.gov/orgs/department-of-developmental-services/locations)
-- [Massachusetts DDS interactive regional map](https://www.mass.gov/info-details/interactive-dds-regional-map)
+- [DES Salesforce office locator](https://azdes-community.my.salesforce-sites.com/EOL/)
+- [DES office-locator root](https://des.az.gov/office-locator)
+- [DES find-your-local-office root](https://des.az.gov/find-your-local-office)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any reviewed Mass.gov DDS child page or export that preserves a Suffolk-serving town/community list directly.
-- Any reviewed Mass.gov DDS locality or search surface that names a Suffolk community inside an office-serving contract.
-- Any reviewed official cached/exported DDS locality artifact that can be replayed from disk and tied directly to Suffolk County without inference.
+- Any official Arizona county-bearing locator response for Greenlee.
+- Any official Greenlee-serving DES or AHCCCS office leaf with explicit county language.
 
-## Next State Order After Massachusetts
+## Next State Order After Arizona
 
 1. Alaska
 2. Maine
 3. Idaho
 4. New Mexico
-5. Arizona
-6. New Hampshire
+5. New Hampshire
+6. South Dakota

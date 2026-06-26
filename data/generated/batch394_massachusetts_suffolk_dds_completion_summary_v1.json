@@ -1,0 +1,17 @@
+{
+  "state": "massachusetts",
+  "batch": "batch394_massachusetts_suffolk_dds_completion_v1",
+  "result": "massachusetts_complete_from_current_greater_boston_and_charles_river_west_dds_locality_contracts",
+  "locations_index_live": true,
+  "greater_boston_leaf_live": true,
+  "greater_boston_leaf_covers_boston": true,
+  "greater_boston_leaf_covers_charlestown": true,
+  "greater_boston_leaf_covers_east_boston": true,
+  "greater_boston_leaf_covers_south_boston": true,
+  "charles_river_west_leaf_live": true,
+  "charles_river_west_leaf_covers_chelsea": true,
+  "charles_river_west_leaf_covers_revere": true,
+  "charles_river_west_leaf_covers_winthrop": true,
+  "suffolk_county_cleared": true,
+  "lesson_added": false
+}

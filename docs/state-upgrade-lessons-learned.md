@@ -575,3 +575,6 @@
 
 ### County-Keyed DD Assignment PDFs Can Clear Local Routing When Generic County Resource Pages Fail
 *   **Lesson:** If an official county-resource page only yields aging or generic service listings, inspect the disability-program contact stack on the same official host before freezing the local blocker. Wyoming stayed blocked on aging-only county pages until the official HCBS contact page surfaced a live `Benefits and Eligibility Specialists` PDF that explicitly assigned all 23 counties for DD and CCW support.
+
+### Bounded Slug Probes Can Recover Current First-Party Office Leaves Hidden From A Partial Index
+*   **Lesson:** When a current official locations index looks partial but the host pattern is stable, one bounded slug probe can recover the missing live leaf without reopening broad discovery. Massachusetts did not visibly surface `DDS Greater Boston Area Office` from the partial locations index, but the exact current Mass.gov location slug was live and preserved the Boston/Charlestown locality contract needed to clear Suffolk County.
