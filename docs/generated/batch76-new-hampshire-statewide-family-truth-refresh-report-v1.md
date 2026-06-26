@@ -2,61 +2,92 @@
 
 - classification: BLOCKED
 - index_safe: false
-- completeness_pct: 58
+- completeness_pct: 33
 - county_count: 10
-- primary_gap_reason: generic_or_statewide_evidence_used_where_local_required
+- primary_gap_reason: official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead
+
+## Batch focus
+
+- Preserve the current truthful New Hampshire statewide packet instead of replaying the older PTI-only refresh semantics.
+- Confirm that statewide support families already verified on disk stay green.
+- Confirm that DHHS, DOE, and VR official host families still fail as host-wide blockers rather than faux-local gaps.
+
+## Preserved statewide verified families
+
+- parent_training_information_center
+- protection_and_advocacy
+- legal_aid
+- able_program
+- ssi_ssa_federal_reference
+
+## Confirmed host-family blockers
+
+- medicaid_state_health_coverage
+- medicaid_waiver_hcbs_disability_services
+- developmental_disability_idd_authority
+- early_intervention_part_c
+- special_education_idea_part_b
+- district_or_county_education_routing
+- vocational_rehabilitation_pre_ets
+- county_local_disability_resources
 
 ## Family status
 
-- medicaid_state_health_coverage: verified_state_grade (statewide evidence is present at the required authority level)
-- medicaid_waiver_hcbs_disability_services: verified_state_grade (statewide evidence is present at the required authority level)
-- developmental_disability_idd_authority: verified_state_grade (statewide evidence is present at the required authority level)
-- early_intervention_part_c: verified_state_grade (statewide evidence is present at the required authority level)
-- special_education_idea_part_b: verified_state_grade (statewide evidence is present at the required authority level)
-- district_or_county_education_routing: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
-- vocational_rehabilitation_pre_ets: inventory_only (only legacy inventory hints or weak role matches exist)
-- protection_and_advocacy: missing (no credible current evidence)
-- parent_training_information_center: verified_state_grade (reviewed first-party Parent Information Center of NH evidence preserves statewide parent-center identity, special-education support, and Department of Education funding)
-- legal_aid: missing (no credible current evidence)
-- able_program: verified_state_grade (statewide evidence is present at the required authority level)
-- ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: legacy_state_grade (statewide or structural evidence exists, but not California-grade proof)
+- medicaid_state_health_coverage: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden
+- medicaid_waiver_hcbs_disability_services: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden
+- developmental_disability_idd_authority: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden
+- early_intervention_part_c: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden
+- special_education_idea_part_b: blocked_official_education_hosts_and_diagnostic_surfaces_forbidden
+- district_or_county_education_routing: blocked_official_education_hosts_and_diagnostic_surfaces_forbidden
+- vocational_rehabilitation_pre_ets: blocked_vr_hosts_unresolvable_or_forbidden_with_no_public_successor
+- protection_and_advocacy: verified_state_grade
+- parent_training_information_center: verified_state_grade
+- legal_aid: verified_state_grade
+- able_program: verified_state_grade
+- ssi_ssa_federal_reference: verified_state_grade
+- county_local_disability_resources: blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden
 
 ## Failure ledger
 
-- district_or_county_education_routing: generic_or_statewide_evidence_used_where_local_required :: 2 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
-- vocational_rehabilitation_pre_ets: legacy_or_inventory_only_evidence :: 2 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
-- protection_and_advocacy: missing_required_source_family :: Protection and advocacy has no strong California-grade evidence for New Hampshire.
-- legal_aid: missing_required_source_family :: Legal aid has no strong California-grade evidence for New Hampshire.
-- county_local_disability_resources: generic_or_statewide_evidence_used_where_local_required :: 2 inventory rows use DB-field agency labels; 49 inventory rows show federal/state mismatch; 9 generic roots need leaf verification
+- medicaid_state_health_coverage: current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell
+- medicaid_waiver_hcbs_disability_services: current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell
+- developmental_disability_idd_authority: current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell
+- early_intervention_part_c: current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell
+- district_or_county_education_routing: official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell
+- county_local_disability_resources: official_nh_dhhs_host_family_and_direct_successors_still_return_access_denied_shell
+- vocational_rehabilitation_pre_ets: official_nh_vr_host_family_still_access_denied_or_unresolvable_with_no_public_successor
+- special_education_idea_part_b: official_nh_statewide_special_education_host_family_and_direct_successors_still_return_access_denied_shell
 
 ## Verified source samples
 
-- medicaid_state_health_coverage: verified_state_grade; samples=3; first=https://www.ablenrc.org
-- medicaid_waiver_hcbs_disability_services: verified_state_grade; samples=1; first=https://dhhs.new-hampshire.gov/dd/waivers
-- developmental_disability_idd_authority: verified_state_grade; samples=1; first=https://dhhs.new-hampshire.gov/dd
-- early_intervention_part_c: verified_state_grade; samples=1; first=https://dhhs.new-hampshire.gov/earlystart
-- special_education_idea_part_b: verified_state_grade; samples=1; first=https://www.education.nh.gov/
-- district_or_county_education_routing: legacy_state_grade; samples=3; first=https://www.education.nh.gov/
-- vocational_rehabilitation_pre_ets: inventory_only; samples=1; first=https://dhhs.new-hampshire.gov/rehab
-- protection_and_advocacy: missing; samples=0
-- parent_training_information_center: verified_state_grade; samples=1; first=https://picnh.org/
-- legal_aid: missing; samples=0
-- able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
-- ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: legacy_state_grade; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- medicaid_state_health_coverage: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden; samples=2
+- medicaid_waiver_hcbs_disability_services: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden; samples=1
+- developmental_disability_idd_authority: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden; samples=1
+- early_intervention_part_c: blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden; samples=1
+- special_education_idea_part_b: blocked_official_education_hosts_and_diagnostic_surfaces_forbidden; samples=4
+- district_or_county_education_routing: blocked_official_education_hosts_and_nh_gov_successors_forbidden; samples=4
+- vocational_rehabilitation_pre_ets: blocked_vr_hosts_unresolvable_or_forbidden_with_no_nh_gov_successor; samples=4
+- protection_and_advocacy: verified_state_grade; samples=2
+- parent_training_information_center: verified_state_grade; samples=1
+- legal_aid: verified_state_grade; samples=2
+- able_program: verified_state_grade; samples=1
+- ssi_ssa_federal_reference: verified_state_grade; samples=1
+- county_local_disability_resources: blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden; samples=4
 
 ## Next actions
 
-- [critical] district_or_county_education_routing: author_county_or_district_exact_targets
-- [major] vocational_rehabilitation_pre_ets: author_verified_state_manifest
-- [major] protection_and_advocacy: author_or_verify_statewide_source_family
-- [major] legal_aid: author_or_verify_statewide_source_family
-- [critical] county_local_disability_resources: author_county_or_district_exact_targets
+- [critical] medicaid_state_health_coverage: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
+- [critical] medicaid_waiver_hcbs_disability_services: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
+- [critical] developmental_disability_idd_authority: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
+- [critical] early_intervention_part_c: hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved
+- [critical] special_education_idea_part_b: hold_blocked_until_public_nh_special_education_host_or_statewide_leaf_is_reviewable
+- [critical] county_local_disability_resources: hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved
+- [critical] district_or_county_education_routing: hold_blocked_until_public_nh_education_host_or_directory_is_reviewable
+- [critical] vocational_rehabilitation_pre_ets: hold_blocked_until_public_nh_vr_host_is_preserved
 
 ## Completion decision
 
-- New Hampshire no longer belongs in UNSTARTED because the packet already preserves reviewed first-party PTI evidence on disk instead of only legacy inventory hints.
-- PICNH is preserved as strong statewide PTI-style support because the saved first-party pages explicitly preserve Parent Information Center identity, special-education support language, direct contact routing, and Department of Education funding support.
-- New Hampshire still cannot reach California-grade or become index-safe because district or county education routing still depends on generic statewide fallback pages, county/local disability resources still depend on non-county-owned structural sources, statewide P&A proof is still missing on disk, statewide legal-aid proof is still missing on disk, and vocational rehabilitation remains inventory-only.
-- New Hampshire is therefore terminal BLOCKED, not COMPLETE.
+- New Hampshire remains BLOCKED and not index-safe.
+- PTI, P&A, legal aid, ABLE, and federal SSI/SSA crossover remain truthfully verified statewide supports.
+- Medicaid, DD, EI, county-local, statewide special education, district routing, and VR remain blocked because the reviewed official host families are still DNS-dead or return the same short `Access Denied` shell.
+- No California-grade completion claim is supportable until a public official New Hampshire DHHS, DOE, and VR review lane becomes available.

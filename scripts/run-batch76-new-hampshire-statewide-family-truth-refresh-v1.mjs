@@ -14,14 +14,11 @@ const INPUTS = {
   failure: path.join(generatedDir, 'new-hampshire_failure_ledger_v2.jsonl'),
   verified: path.join(generatedDir, 'new-hampshire_verified_sources_v1.jsonl'),
   next: path.join(generatedDir, 'new-hampshire_next_action_queue_v2.jsonl'),
-  picHtml: path.join(repoRoot, 'data', 'source-acquisition-runs', '2026-06-20T00-45-49-018Z', 'pages', '00006-new-hampshire-nonprofit-support-picnh-org.html'),
-  picPtiHtml: path.join(repoRoot, 'data', 'source-acquisition-runs', '2026-06-20T00-04-17-699Z', 'pages', '00024-new-hampshire-nonprofit-support-parent-information-center-pic-pti.html'),
 };
 
 const OUTPUTS = {
   summary: path.join(generatedDir, 'batch76_new_hampshire_statewide_family_truth_refresh_summary_v1.json'),
   report: path.join(docsGeneratedDir, 'batch76-new-hampshire-statewide-family-truth-refresh-report-v1.md'),
-  stateReport: path.join(docsGeneratedDir, 'new-hampshire-california-grade-audit-report-v2.md'),
 };
 
 function readJson(filePath) {
@@ -42,49 +39,15 @@ function writeJson(filePath, value) {
   fs.writeFileSync(filePath, `${JSON.stringify(value, null, 2)}\n`);
 }
 
-function writeJsonl(filePath, rows) {
-  fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  fs.writeFileSync(filePath, `${rows.map((row) => JSON.stringify(row)).join('\n')}${rows.length ? '\n' : ''}`);
-}
-
-function readText(filePath) {
-  return fs.readFileSync(filePath, 'utf8');
-}
-
-function assertIncludes(text, pattern, label) {
-  if (!text.includes(pattern)) {
-    throw new Error(`Expected ${label} to include "${pattern}".`);
-  }
-}
-
-function updatedVerifiedRow(row) {
-  if (row.family === 'parent_training_information_center') {
-    return {
-      ...row,
-      family_status: 'verified_state_grade',
-      evidence_strength: 'strong',
-      sample_count: 1,
-      blocker_code: null,
-      blocker_evidence: null,
-      query_basis: 'Reviewed first-party PICNH evidence on disk explicitly preserves New Hampshire parent-information-center identity, special-education help, direct contact routing, and Department of Education support.',
-      samples: [
-        {
-          sample_name: 'Parent Information Center of NH',
-          source_url: 'https://picnh.org/',
-          final_url: 'https://picnh.org/',
-          verification_status: 'official_verified',
-          source_type: 'official',
-          source_table: 'reviewed_first_party_artifact',
-          fetched_at: '2026-06-20T00:45:53.000Z',
-          evidence_snippet: 'Parent Information Center of NH supports families of children with disabilities and special health care needs, offers special-education help by email or phone, and the Parent Information Center on Special Education is funded in part or whole by the U.S. Department of Education.',
-        },
-      ],
-    };
+function mustFind(rows, family, label) {
+  const row = rows.find((entry) => entry.family === family);
+  if (!row) {
+    throw new Error(`Missing ${label} row for family ${family}.`);
   }
   return row;
 }
 
-function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
+function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows, batchSummary) {
   return [
     '# New Hampshire California-Grade Batch 76 Report v1',
     '',
@@ -94,17 +57,31 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     `- county_count: ${summary.county_count}`,
     `- primary_gap_reason: ${summary.primary_gap_reason}`,
     '',
+    '## Batch focus',
+    '',
+    '- Preserve the current truthful New Hampshire statewide packet instead of replaying the older PTI-only refresh semantics.',
+    '- Confirm that statewide support families already verified on disk stay green.',
+    '- Confirm that DHHS, DOE, and VR official host families still fail as host-wide blockers rather than faux-local gaps.',
+    '',
+    '## Preserved statewide verified families',
+    '',
+    ...batchSummary.preserved_statewide_support_families.map((family) => `- ${family}`),
+    '',
+    '## Confirmed host-family blockers',
+    '',
+    ...batchSummary.confirmed_host_family_blockers.map((family) => `- ${family}`),
+    '',
     '## Family status',
     '',
-    ...gapRows.map((row) => `- ${row.family}: ${row.family_status} (${row.status_reason})`),
+    ...gapRows.map((row) => `- ${row.family}: ${row.family_status}`),
     '',
     '## Failure ledger',
     '',
-    ...failureRows.map((row) => `- ${row.family}: ${row.failure_code} :: ${row.evidence}`),
+    ...failureRows.map((row) => `- ${row.family}: ${row.failure_code}`),
     '',
     '## Verified source samples',
     '',
-    ...verifiedRows.map((row) => `- ${row.family}: ${row.family_status}; samples=${row.sample_count}${row.samples?.[0]?.source_url ? `; first=${row.samples[0].source_url}` : ''}`),
+    ...verifiedRows.map((row) => `- ${row.family}: ${row.family_status}; samples=${row.sample_count}`),
     '',
     '## Next actions',
     '',
@@ -112,10 +89,10 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '',
     '## Completion decision',
     '',
-    '- New Hampshire no longer belongs in UNSTARTED because the packet already preserves reviewed first-party PTI evidence on disk instead of only legacy inventory hints.',
-    '- PICNH is preserved as strong statewide PTI-style support because the saved first-party pages explicitly preserve Parent Information Center identity, special-education support language, direct contact routing, and Department of Education funding support.',
-    '- New Hampshire still cannot reach California-grade or become index-safe because district or county education routing still depends on generic statewide fallback pages, county/local disability resources still depend on non-county-owned structural sources, statewide P&A proof is still missing on disk, statewide legal-aid proof is still missing on disk, and vocational rehabilitation remains inventory-only.',
-    '- New Hampshire is therefore terminal BLOCKED, not COMPLETE.',
+    '- New Hampshire remains BLOCKED and not index-safe.',
+    '- PTI, P&A, legal aid, ABLE, and federal SSI/SSA crossover remain truthfully verified statewide supports.',
+    '- Medicaid, DD, EI, county-local, statewide special education, district routing, and VR remain blocked because the reviewed official host families are still DNS-dead or return the same short `Access Denied` shell.',
+    '- No California-grade completion claim is supportable until a public official New Hampshire DHHS, DOE, and VR review lane becomes available.',
   ].join('\n') + '\n';
 }
 
@@ -126,46 +103,50 @@ export function generateBatch76NewHampshireStatewideFamilyTruthRefreshV1() {
   const verifiedRows = readJsonl(INPUTS.verified);
   const nextRows = readJsonl(INPUTS.next);
 
-  const picHtml = readText(INPUTS.picHtml);
-  assertIncludes(picHtml, 'Home - Parent Information Center of NH', 'PICNH artifact');
-  assertIncludes(picHtml, 'Supporting families of children with disabilities and special health care needs', 'PICNH artifact');
-  assertIncludes(picHtml, 'Our staff can be reached by email or phone.', 'PICNH artifact');
-  assertIncludes(picHtml, 'Resources and information to help navigate the NH special education process', 'PICNH artifact');
+  if (summary.classification !== 'BLOCKED' || summary.index_safe !== false || summary.completeness_pct !== 33) {
+    throw new Error('New Hampshire statewide packet no longer matches the expected blocked baseline for batch76.');
+  }
 
-  const picPtiHtml = readText(INPUTS.picPtiHtml);
-  assertIncludes(picPtiHtml, 'The Parent Information Center on Special Education is funded, in part or whole, by the U.S. Department of Education', 'PICNH PTI artifact');
-  assertIncludes(picPtiHtml, '54 Old Suncook Road', 'PICNH PTI artifact');
+  const pti = mustFind(verifiedRows, 'parent_training_information_center', 'verified');
+  const pa = mustFind(verifiedRows, 'protection_and_advocacy', 'verified');
+  const legal = mustFind(verifiedRows, 'legal_aid', 'verified');
+  const countyLocal = mustFind(verifiedRows, 'county_local_disability_resources', 'verified');
+  const education = mustFind(verifiedRows, 'district_or_county_education_routing', 'verified');
+  const vr = mustFind(verifiedRows, 'vocational_rehabilitation_pre_ets', 'verified');
 
-  const updatedGapRows = gapRows.map((row) => {
-    if (row.family === 'parent_training_information_center') {
-      return {
-        ...row,
-        family_status: 'verified_state_grade',
-        status_reason: 'reviewed first-party Parent Information Center of NH evidence preserves statewide parent-center identity, special-education support, and Department of Education funding',
-      };
-    }
-    return row;
-  });
+  if (pti.family_status !== 'verified_state_grade') {
+    throw new Error('PICNH should remain verified_state_grade.');
+  }
+  if (pa.family_status !== 'verified_state_grade') {
+    throw new Error('DRC-NH should remain verified_state_grade.');
+  }
+  if (legal.family_status !== 'verified_state_grade') {
+    throw new Error('NH legal aid should remain verified_state_grade.');
+  }
+  if (!countyLocal.blocker_evidence.includes('Access Denied')) {
+    throw new Error('County-local blocker should preserve Access Denied host-family evidence.');
+  }
+  if (!education.blocker_evidence.includes('Access Denied')) {
+    throw new Error('Education blocker should preserve Access Denied host-family evidence.');
+  }
+  if (!vr.blocker_evidence.includes('Access Denied')) {
+    throw new Error('VR blocker should preserve Access Denied host-family evidence.');
+  }
 
-  const updatedFailureRows = failureRows.filter((row) => row.family !== 'parent_training_information_center');
-  const updatedNextRows = nextRows.filter((row) => row.family !== 'parent_training_information_center')
-    .sort((a, b) => a.priority_rank - b.priority_rank);
-  const updatedVerifiedRows = verifiedRows.map(updatedVerifiedRow);
-
-  const updatedSummary = {
-    ...summary,
-    classification: 'BLOCKED',
-    index_safe: false,
-    completeness_pct: 58,
-    strong_critical_families: 7,
-    weak_critical_families: 3,
-    missing_critical_families: 2,
-    major_gap_families: [
-      'vocational_rehabilitation_pre_ets',
+  const batchSummary = {
+    batch: 'batch76_new_hampshire_statewide_family_truth_refresh_v1',
+    state: 'new-hampshire',
+    classification_before: summary.classification,
+    classification_after: summary.classification,
+    completeness_pct: summary.completeness_pct,
+    preserved_statewide_support_families: [
+      'parent_training_information_center',
       'protection_and_advocacy',
       'legal_aid',
+      'able_program',
+      'ssi_ssa_federal_reference',
     ],
-    verified_source_families_with_samples: [
+    confirmed_host_family_blockers: [
       'medicaid_state_health_coverage',
       'medicaid_waiver_hcbs_disability_services',
       'developmental_disability_idd_authority',
@@ -173,73 +154,19 @@ export function generateBatch76NewHampshireStatewideFamilyTruthRefreshV1() {
       'special_education_idea_part_b',
       'district_or_county_education_routing',
       'vocational_rehabilitation_pre_ets',
-      'parent_training_information_center',
-      'able_program',
-      'ssi_ssa_federal_reference',
       'county_local_disability_resources',
     ],
-    complete_ready: false,
-    final_blockers: [
-      {
-        family: 'district_or_county_education_routing',
-        severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'New Hampshire still routes district or county education through generic statewide Department of Education pages rather than county- or district-owned leaves.',
-        next_action: 'author_county_or_district_exact_targets',
-      },
-      {
-        family: 'vocational_rehabilitation_pre_ets',
-        severity: 'major',
-        failure_code: 'legacy_or_inventory_only_evidence',
-        evidence: 'New Hampshire still lacks reviewed first-party VR or Pre-ETS artifact evidence on disk and currently depends on inventory-only program hints.',
-        next_action: 'author_verified_state_manifest',
-      },
-      {
-        family: 'protection_and_advocacy',
-        severity: 'major',
-        failure_code: 'missing_required_source_family',
-        evidence: 'New Hampshire still lacks reviewed first-party or authoritative statewide protection-and-advocacy evidence on disk.',
-        next_action: 'author_or_verify_statewide_source_family',
-      },
-      {
-        family: 'legal_aid',
-        severity: 'major',
-        failure_code: 'missing_required_source_family',
-        evidence: 'New Hampshire still lacks reviewed first-party or authoritative statewide legal-aid evidence on disk.',
-        next_action: 'author_or_verify_statewide_source_family',
-      },
-      {
-        family: 'county_local_disability_resources',
-        severity: 'critical',
-        failure_code: 'generic_or_statewide_evidence_used_where_local_required',
-        evidence: 'New Hampshire county/local disability resources still depend on structural dataset-derived rows instead of reviewed county-owned local routing evidence.',
-        next_action: 'author_county_or_district_exact_targets',
-      },
-    ],
+    result: 'new_hampshire_remains_truthfully_blocked_because_dhhs_doe_and_vr_host_families_are_not_publicly_reviewable',
   };
 
-  const batchSummary = {
-    batch: 'batch76_new_hampshire_statewide_family_truth_refresh_v1',
-    state: 'new-hampshire',
-    classification_before: summary.classification,
-    classification_after: updatedSummary.classification,
-    resolved_families: ['parent_training_information_center'],
-    remaining_blockers: updatedSummary.final_blockers.map((row) => row.family),
-  };
+  const report = buildReport(summary, gapRows, failureRows, verifiedRows, nextRows, batchSummary);
 
-  const report = buildReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, updatedNextRows);
-
-  writeJson(INPUTS.summary, updatedSummary);
-  writeJsonl(INPUTS.gap, updatedGapRows);
-  writeJsonl(INPUTS.failure, updatedFailureRows);
-  writeJsonl(INPUTS.verified, updatedVerifiedRows);
-  writeJsonl(INPUTS.next, updatedNextRows);
   writeJson(OUTPUTS.summary, batchSummary);
+  fs.mkdirSync(path.dirname(OUTPUTS.report), { recursive: true });
   fs.writeFileSync(OUTPUTS.report, report);
-  fs.writeFileSync(OUTPUTS.stateReport, report);
 
   return {
-    summary: updatedSummary,
+    summary,
     batchSummary,
   };
 }

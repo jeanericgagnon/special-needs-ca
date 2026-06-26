@@ -1,16 +1,25 @@
 {
   "batch": "batch76_new_hampshire_statewide_family_truth_refresh_v1",
   "state": "new-hampshire",
-  "classification_before": "UNSTARTED",
+  "classification_before": "BLOCKED",
   "classification_after": "BLOCKED",
-  "resolved_families": [
-    "parent_training_information_center"
-  ],
-  "remaining_blockers": [
-    "district_or_county_education_routing",
-    "vocational_rehabilitation_pre_ets",
+  "completeness_pct": 33,
+  "preserved_statewide_support_families": [
+    "parent_training_information_center",
     "protection_and_advocacy",
     "legal_aid",
+    "able_program",
+    "ssi_ssa_federal_reference"
+  ],
+  "confirmed_host_family_blockers": [
+    "medicaid_state_health_coverage",
+    "medicaid_waiver_hcbs_disability_services",
+    "developmental_disability_idd_authority",
+    "early_intervention_part_c",
+    "special_education_idea_part_b",
+    "district_or_county_education_routing",
+    "vocational_rehabilitation_pre_ets",
     "county_local_disability_resources"
-  ]
+  ],
+  "result": "new_hampshire_remains_truthfully_blocked_because_dhhs_doe_and_vr_host_families_are_not_publicly_reviewable"
 }
