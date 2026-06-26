@@ -32,17 +32,22 @@ assert.equal(summary.index_safe, false);
 assert.equal(summary.batch, 'batch389_new_mexico_live_vs_shadow_list_finality_v1');
 assert.match(
   summary.final_blockers.find((row) => row.family === 'vocational_rehabilitation_pre_ets').evidence,
-  /Reviewed 2026-06-23 the New Mexico VR blocker artifacts/
+  /Reviewed 2026-06-25 the New Mexico VR blocker artifacts/
 );
 
 const educationGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationGap);
 assert.match(educationGap.status_reason, /zero-item shadow `NM Schools` schema/i);
+assert.match(educationGap.status_reason, /Executive Director Name/i);
+assert.match(educationGap.status_reason, /REC Executive Directors Directory/i);
 
 const educationFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationFailure);
 assert.match(educationFailure.evidence, /zero-item shadow `NM Schools` schema/i);
 assert.match(educationFailure.evidence, /ItemCount=0/i);
+assert.match(educationFailure.evidence, /Email address/i);
+assert.match(educationFailure.evidence, /rec-executive-directors-directory/i);
+assert.match(educationFailure.evidence, /within 12 seconds/i);
 
 const educationVerified = verifiedRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.ok(educationVerified);
@@ -51,6 +56,15 @@ assert.ok(educationVerified.samples.some((sample) => sample.sample_name === '201
 assert.ok(educationVerified.samples.some((sample) => sample.sample_name === '2017 NM Schools row payload keys'));
 assert.ok(educationVerified.samples.some((sample) => sample.sample_name === 'Zero-item shadow NM Schools schema'));
 assert.ok(educationVerified.samples.some((sample) => /Column2/.test(sample.evidence_snippet)));
+
+const vrVerified = verifiedRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
+assert.ok(vrVerified);
+assert.match(vrVerified.query_basis, /2026-06-25/);
+assert.equal(vrVerified.sample_count, 2);
+assert.ok(vrVerified.samples.some((sample) => sample.sample_name === 'New Mexico DVR root'));
+assert.ok(vrVerified.samples.some((sample) => sample.sample_name === 'Likely workforce successor probe'));
+assert.match(vrVerified.samples[0].evidence_snippet, /401 Unauthorized/i);
+assert.match(vrVerified.samples[1].evidence_snippet, /Request Rejected/i);
 
 assert.equal(batchSummary.batch, 'batch389_new_mexico_live_vs_shadow_list_finality_v1');
 assert.equal(batchSummary.classification, 'BLOCKED');

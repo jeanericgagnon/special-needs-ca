@@ -37,9 +37,9 @@ const FAILURE_CODE =
 const NEXT_ACTION =
   'continue_exact_district_leaf_expansion_only_when_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact';
 const DISTRICT_REASON =
-  'Reviewed 2026-06-25 one more bounded official Idaho district pass on the residual two-district remainder and tightened both weak-lead lanes. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone, and the only additional same-host attachment discovered from that page is a linked Google Doc that resolves to a board-of-trustees roster rather than special-education, student-services, 504, Child Find, or procedural-safeguards routing. Clark still materially exposes reviewed district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page links district-hosted PDFs whose filenames and bounded binary inspection confirmed the same general-education intervention notice lane. The Parent Resources page also links district-hosted `Idaho Child Find` PDFs, but bounded live inspection showed only image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence. Idaho therefore remains blocked, but the residual education remainder is now sharper than generic wrong-role leaves: the surviving Camas and Clark artifacts are real and public, yet they are still the wrong role or too thin to serve as local special-education routing proof.';
+  'Reviewed 2026-06-25 one more bounded official Idaho district pass on the residual two-district remainder and tightened both weak-lead lanes. Camas still only materializes a district-owned `Contact Information` leaf with district address and phone, and the only additional same-host attachment discovered from that page is a linked Google Doc that resolves to a board-of-trustees roster rather than special-education, student-services, 504, Child Find, or procedural-safeguards routing. Clark still materially exposes reviewed district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page links district-hosted PDFs whose filenames and prior bounded binary inspection confirmed the same general-education intervention notice lane. The Parent Resources page also links district-hosted `Idaho Child Find` PDFs, but bounded review still only confirms image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence. Idaho therefore remains blocked, but the residual education remainder is now sharper than generic wrong-role leaves: the surviving Camas and Clark artifacts are real and public, yet they are still the wrong role or too thin to serve as local special-education routing proof.';
 const DISTRICT_EVIDENCE =
-  'Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, the district-linked Google Doc exported from `https://docs.google.com/document/d/1OHWebOtQk9Wvwy8zMd5eFYwub5xPQ7Pg_nnMT20hOOA/export?format=txt`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction`, `https://www.clarkcountyschools161.org/parent-resources`, and the district-hosted PDF attachments linked from those Clark pages. The Camas root stayed live and the Contact Information page still only preserved district address and phone; the district-linked Google Doc exported as a board-of-trustees roster with zone names and trustee names, not special-education or student-services routing. Clark stayed live and still exposed exact district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page linked district-hosted PDFs whose filenames and bounded binary inspection confirmed the same general-education intervention notice lane. The Parent Resources page linked district-hosted `Idaho Child Find` flyers, but bounded live inspection only confirmed image-only PDF artifacts titled `Child Find Flyer 2025-2026 English` and `Child Find Flyer 2025-2026 Spanish` without extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence. Idaho therefore remains blocked because the remaining Camas and Clark surfaces are public and reviewable but still the wrong role or too thin for local special-education routing.';
+  'Reviewed 2026-06-25 bounded official Idaho district-root checks on `https://www.camascountyschools.org/`, `https://www.camascountyschools.org/contact-information`, the district-linked Google Doc exported from `https://docs.google.com/document/d/1OHWebOtQk9Wvwy8zMd5eFYwub5xPQ7Pg_nnMT20hOOA/export?format=txt`, `https://www.clarkcountyschools161.org/`, `https://www.clarkcountyschools161.org/about-us/contact-us-ccsd`, `https://www.clarkcountyschools161.org/administration/title-ix`, `https://www.clarkcountyschools161.org/about-us/parent-notification-of-general-education-instruction`, `https://www.clarkcountyschools161.org/parent-resources`, and the district-hosted PDF attachments linked from those Clark pages. The Camas root stayed live and the Contact Information page still only preserved district address and phone; the district-linked Google Doc exported as a board-of-trustees roster with zone names and trustee names, not special-education or student-services routing. Clark stayed live and still exposed exact district-owned `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` leaves. The parent-notification page linked district-hosted PDFs whose filenames and prior bounded binary inspection confirmed the same general-education intervention notice lane. The Parent Resources page linked district-hosted `Idaho Child Find` flyers, but bounded review still only confirms image-only PDF artifacts titled `Child Find Flyer 2025-2026 English` and `Child Find Flyer 2025-2026 Spanish` without extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence. Idaho therefore remains blocked because the remaining Camas and Clark surfaces are public and reviewable but still the wrong role or too thin for local special-education routing.';
 const LESSON_HEADING =
   '### District-Linked Attachments Still Fail If They Resolve To Board Rosters Or General-Education Notices';
 const LESSON_BODY =
@@ -48,6 +48,8 @@ const CHILD_FIND_LESSON_HEADING =
   '### District-Hosted Child Find Flyers Still Need Local Routing Evidence';
 const CHILD_FIND_LESSON_BODY =
   '*   **Lesson:** A district-hosted file with a promising title like `Child Find` still does not clear a local education-routing blocker unless the reviewed artifact preserves district-specific routing or contact evidence. Idaho Clark linked official `Idaho Child Find` PDFs from its Parent Resources page, but bounded inspection only confirmed image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, or special-education routing terms.';
+const COUNTY_LOCAL_REASON =
+  'Reviewed 2026-06-25 one more bounded live Idaho DHW confirmation on the official office root plus the existing office-leaf packet. The public root at https://healthandwelfare.idaho.gov/offices is still live with title `Find a Service Location` and still preserves exact city office cards like Caldwell Office in HTML, but it still exposes no public county terms or county-served fields. The exact office leaf https://healthandwelfare.idaho.gov/dhw/caldwell-office is still live with title `Caldwell Office`, confirming that the packet is grounded in real reviewable DHW office leaves. Idaho county-local routing therefore still splits cleanly into 17 safe county-to-exact-office replacements plus one Canyon split that still rejects Nampa as SWITC-only, while 27 counties remain blocked because the public DHW stack still exposes no truthful county-to-office contract for them.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -231,17 +233,24 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
     weak_critical_families: 2,
     primary_gap_reason: PRIMARY_GAP_REASON,
     recommended_batch: 'hold_for_new_role_bearing_district_leaf_or_county_contract',
-    final_blockers: summary.final_blockers.map((blocker) => (
-      blocker.family === 'district_or_county_education_routing'
-        ? {
-            family: 'district_or_county_education_routing',
-            severity: 'critical',
-            failure_code: FAILURE_CODE,
-            evidence: DISTRICT_EVIDENCE,
-            next_action: NEXT_ACTION,
-          }
-        : blocker
-    )),
+    final_blockers: summary.final_blockers.map((blocker) => {
+      if (blocker.family === 'district_or_county_education_routing') {
+        return {
+          family: 'district_or_county_education_routing',
+          severity: 'critical',
+          failure_code: FAILURE_CODE,
+          evidence: DISTRICT_EVIDENCE,
+          next_action: NEXT_ACTION,
+        };
+      }
+      if (blocker.family === 'county_local_disability_resources') {
+        return {
+          ...blocker,
+          evidence: COUNTY_LOCAL_REASON,
+        };
+      }
+      return blocker;
+    }),
     familyStatuses: {
       ...summary.familyStatuses,
       district_or_county_education_routing: DISTRICT_STATUS,
@@ -251,16 +260,68 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
   const updatedGapRows = gapRows.map((row) => (
     row.family === 'district_or_county_education_routing'
       ? { ...row, family_status: DISTRICT_STATUS, status_reason: DISTRICT_REASON }
+      : row.family === 'county_local_disability_resources'
+        ? { ...row, status_reason: 'The Idaho DHW office lane remains an explicit split, not a generic local-office blocker. The live official office root still exposes no county terms or county-served fields, so it does not prove county-grade routing by itself. But the existing deterministic office packet safely materializes 17 clean county-to-exact-office leaf matches plus one Canyon split, while 27 counties remain blocked because no public county-to-office contract exists.' }
       : row
   ));
 
   const updatedFailureRows = failureRows.map((row) => (
     row.family === 'district_or_county_education_routing'
       ? { ...row, failure_code: FAILURE_CODE, evidence: DISTRICT_EVIDENCE, next_action: NEXT_ACTION }
+      : row.family === 'county_local_disability_resources'
+        ? { ...row, evidence: COUNTY_LOCAL_REASON }
       : row
   ));
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
+    if (row.family === 'county_local_disability_resources') {
+      const samples = [...row.samples];
+      replaceSample(samples, 'Idaho DHW office root', {
+        sample_name: 'Idaho DHW office root',
+        source_url: 'https://healthandwelfare.idaho.gov/offices',
+        final_url: 'https://healthandwelfare.idaho.gov/offices',
+        verification_status: 'verified',
+        source_type: 'official_office_root_without_county_terms',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'The live DHW office root is titled Find a Service Location and still preserves exact city office cards like Caldwell Office, but it still exposes no public county terms or county-served fields in reviewable HTML.',
+      });
+      replaceSample(samples, 'Idaho DHW Caldwell Office', {
+        sample_name: 'Idaho DHW Caldwell Office',
+        source_url: 'https://healthandwelfare.idaho.gov/dhw/caldwell-office',
+        final_url: 'https://healthandwelfare.idaho.gov/dhw/caldwell-office',
+        verification_status: 'verified',
+        source_type: 'official_exact_office_leaf',
+        source_table: 'reviewed_live_probe',
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'Caldwell Office is still a live exact DHW office leaf and remains the safe county-office replacement inside the 17 clean exact replacements set.',
+      });
+      replaceSample(samples, 'Idaho office packet clean replacements', {
+        sample_name: 'Idaho office packet clean replacements',
+        source_url: 'data/generated/idaho_county_local_disability_resources_leaf_authoring_packet_v1.json',
+        final_url: 'data/generated/idaho_county_local_disability_resources_leaf_authoring_packet_v1.json',
+        verification_status: 'verified',
+        source_type: 'reviewed_packet_with_17_clean_exact_replacements',
+        source_table: 'generated_artifact',
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'The deterministic Idaho county-local packet still materializes 17 clean exact county-to-office replacements plus an explicit Canyon split and 27 unresolved legacy counties.',
+      });
+      replaceSample(samples, 'Nampa mention resolves only to SWITC', {
+        sample_name: 'Nampa mention resolves only to SWITC',
+        source_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
+        final_url: 'https://healthandwelfare.idaho.gov/offices?page=2',
+        verification_status: 'blocked',
+        source_type: 'official_city_match_wrong_role',
+        source_table: 'batch182_idaho_office_leaf_materialization',
+        fetched_at: '2026-06-25T00:00:00.000Z',
+        evidence_snippet: 'The only public Nampa mention still resolves to Southwest Idaho Treatment Center (SWITC), not to a county office or benefits office leaf.',
+      });
+      return {
+        ...row,
+        blocker_evidence: COUNTY_LOCAL_REASON,
+        samples,
+      };
+    }
     if (row.family !== 'district_or_county_education_routing') return row;
     const samples = [...row.samples];
     replaceSample(samples, 'Camas Contact Information leaf', {
@@ -270,7 +331,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'official_contact_leaf_wrong_role_for_special_education_routing',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-owned Contact Information page only preserves Camas district address and phone; it does not expose special-education, student-services, 504, Child Find, or procedural-safeguards routing.',
     });
     replaceSample(samples, 'Camas linked Google Doc board roster', {
@@ -280,7 +341,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'district_linked_attachment_wrong_role_board_roster',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The linked document exports only board-of-trustees zones and trustee names, not special-education, student-services, 504, Child Find, or procedural-safeguards routing.',
     });
     replaceSample(samples, 'Clark Contact Us leaf', {
@@ -290,7 +351,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'official_contact_leaf_wrong_role_for_special_education_routing',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-owned Contact Us page lists district office staff, superintendent, address, and phone, but no special-education or student-services routing.',
     });
     replaceSample(samples, 'Clark Title IX leaf', {
@@ -300,7 +361,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'official_compliance_leaf_wrong_role_for_special_education_routing',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-owned Title IX page only links Title IX policy and repeats generic accessibility language; it does not expose special-education, 504, or student-services routing.',
     });
     replaceSample(samples, 'Clark Parent Notification of General Education Instruction leaf', {
@@ -310,7 +371,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'official_general_education_notification_leaf_wrong_role_for_special_education_routing',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-owned page title is `Parent Notification of General Education Instruction`; it preserves general-education intervention notice routing, not special-education, student-services, 504, or procedural-safeguards routing.',
     });
     replaceSample(samples, 'Clark Parent Resources leaf', {
@@ -320,7 +381,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'official_parent_resources_leaf_with_child_find_links_but_no_local_special_education_routing',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-owned Parent Resources page links Idaho Child Find English and Spanish PDFs, but the page itself still preserves no district special-education contact, student-services contact, or local routing language.',
     });
     replaceSample(samples, 'Clark district-hosted parent-notification PDF attachments', {
@@ -330,7 +391,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'district_hosted_attachment_wrong_role_general_education_notice',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-hosted attachments sit behind the Parent Notification of General Education Instruction page and remain part of the same general-education intervention notice lane, not a local special-education or student-services routing contract.',
     });
     replaceSample(samples, 'Clark district-hosted Child Find flyers', {
@@ -340,7 +401,7 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
       verification_status: 'reviewed',
       source_type: 'district_hosted_child_find_flyers_without_extractable_local_routing',
       source_table: BATCH_NAME,
-      fetched_at: '2026-06-25T00:00:00.000Z',
+            fetched_at: '2026-06-25T00:00:00.000Z',
       evidence_snippet: 'The district-hosted Child Find flyer PDFs linked from Parent Resources are live, but bounded inspection only confirms image-only flyer artifacts with no extractable Clark-, Dubois-, phone-, screening-, or district-specific special-education routing evidence.',
     });
 
@@ -358,6 +419,8 @@ export function generateBatch365IdahoCamasClarkAttachmentFinalityV1() {
   const updatedNextRows = nextRows.map((row) => (
     row.family === 'district_or_county_education_routing'
       ? { ...row, failure_code: FAILURE_CODE, next_action: NEXT_ACTION, evidence: DISTRICT_EVIDENCE }
+      : row.family === 'county_local_disability_resources'
+        ? { ...row, evidence: COUNTY_LOCAL_REASON }
       : row
   ));
 

@@ -83,7 +83,7 @@
     "valley-id",
     "washington-id"
   ],
-  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is attached for every Idaho county without relying on statewide SDE fallbacks or county-name inference alone. The current packet now has reviewed exact leaves for thirteen counties, including Emmett and Bear Lake as newly verified additions to the earlier seed set.",
+  "packet_complete_when": "At least one reviewed district-owned education-routing leaf is authored for every Idaho county without relying on the statewide SDE fallback URLs or inferring county coverage from county-bearing district names alone.",
   "reviewed_exact_leaves": [
     {
       "county_id": "cassia-id",

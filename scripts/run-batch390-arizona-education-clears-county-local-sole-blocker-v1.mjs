@@ -30,16 +30,16 @@ const OUTPUTS = {
 
 const BATCH = 'batch390_arizona_education_clears_county_local_sole_blocker_v1';
 const PRIMARY_GAP_REASON =
-  'des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract';
+  'des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract';
 const RECOMMENDED_BATCH =
   'hold_county_local_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts';
 const EDUCATION_STATUS = 'verified_county_grade';
 const EDUCATION_REASON =
   'Reviewed 2026-06-25 one more bounded official Arizona alternative-district lane from the live AZ School Report Cards inventory plus exact district-owned leaves. Coconino County remains cleared through the official CAVIAT detail route and live `https://www.caviat.org/page/504/` leaf. Mohave County now also clears: the official Arizona report-cards detail API for Mohave Valley Elementary District (`educationOrganizationId 4379`) preserved exact coordinates (`latitude 34.9104059`, `longitude -114.6000147`), and the official Census reverse geocoder at `https://geocoding.geo.census.gov/geocoder/geographies/coordinates` returns `Mohave County` from those coordinates. The same district-owned host preserves a live `https://www.mvesd16.org/page/special-services/` leaf plus a public `https://www.mvesd16.org/documents/special-education/3674` surface. Yavapai County also clears through a better official LEA than the prior dead-end accommodation root: the public Arizona report-cards entity list exposes Prescott Unified District (`educationOrganizationId 4466`) in Prescott, its detail API preserves exact coordinates (`latitude 34.5423444`, `longitude -112.4651411`), and the official Census reverse geocoder returns `Yavapai County` from those coordinates. The same district-owned host preserves a live `https://www.prescottschools.com/district-info/departments/ess` page titled `Exceptional Student Services` with rendered `Special Education`, `Procedural Safeguards`, and `Child Find` language, plus a public `Parents Rights Handbook` page on the same host. Arizona district_or_county_education_routing therefore now clears at county grade through reviewed official local leaves across all remaining counties.';
 const COUNTY_LOCAL_REASON =
-  'Reviewed 2026-06-25 the live Arizona county-local fallback pages more tightly. The DES root, apply-benefits, Family Assistance Administration, FAA, office-locator, contact, robots.txt, and sitemap lanes are still Cloudflare 403 shells. The accessible AHCCCS fallback lane is still public and preserves seven named ALTCS office cards in raw HTML for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma. The exact official county-map artifact at `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` is still live as a PDF and remains partly parseable for county names, but it still does not publish a county-to-office table or county assignment contract. The AHCCCS contacts page remains a statewide contact leaf, while the older `Members/AlreadyCovered/MemberResources/ALTCS.html` path now returns an AHCCCS `Page/Document not found` shell rather than a usable county-local fallback. Arizona therefore still lacks county-grade official office routing.';
+  'Reviewed 2026-06-26 the live Arizona county-local fallback pages more tightly. The DES public office page at `https://des.az.gov/office-locator` now loads and redirects to `https://des.az.gov/find-your-local-office`, but the public page only links onward to a Salesforce-hosted locator at `https://azdes-community.my.salesforce-sites.com/EOL/`. In bounded public review that linked locator still exposes no reviewable static county-to-office content or county assignment contract. The accessible AHCCCS fallback lane is still public and preserves seven named ALTCS office cards in raw HTML for Chinle, Flagstaff, Kingman, Phoenix, Prescott, Tucson, and Yuma. The exact official county-map artifact at `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` is still live as a PDF and remains partly parseable for county names, but it still does not publish a county-to-office table or county assignment contract. The AHCCCS contacts page remains a statewide contact leaf, while the older `Members/AlreadyCovered/MemberResources/ALTCS.html` path now returns an AHCCCS `Page/Document not found` shell rather than a usable county-local fallback. Arizona therefore still lacks county-grade official office routing.';
 const COUNTY_LOCAL_EVIDENCE =
-  'Reviewed 2026-06-25 bounded Arizona county-local fallback pages after the earlier DES challenge findings and the official AHCCCS PDF lane. The DES host family remains challenge-blocked on the known office-locator and benefits roots. The accessible AHCCCS fallback lane is still live and stronger than the challenged DES lane: `https://www.azahcccs.gov/members/ALTCSlocations.html` returned HTTP 200 and its raw HTML preserved seven named ALTCS office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma. The exact official ALTCS county-map artifact at `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` also returned HTTP 200 as a live PDF and remains partially parseable for Arizona county names, but it still does not attach those counties to office addresses, phones, or any repeatable county-to-office assignment contract. `https://www.azahcccs.gov/shared/AHCCCScontacts.html` remains a statewide contact leaf, while the older `https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html` path now returns an AHCCCS `Page/Document not found` shell instead of a usable program leaf. Arizona therefore still lacks a reviewable official county-to-office routing contract.';
+  'Reviewed 2026-06-26 bounded Arizona county-local fallback pages after the earlier DES challenge findings and the official AHCCCS PDF lane. The DES public office page is now live: `https://des.az.gov/office-locator` redirects to `https://des.az.gov/find-your-local-office` and explicitly links to a Salesforce-hosted office locator at `https://azdes-community.my.salesforce-sites.com/EOL/`. But that linked locator still exposes no reviewable static county-to-office content in bounded public inspection, so it still does not provide a certifiable county assignment contract. The accessible AHCCCS fallback lane is still live and stronger than the DES lane: `https://www.azahcccs.gov/members/ALTCSlocations.html` returned HTTP 200 and its raw HTML preserved seven named ALTCS office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott, Tucson, and Yuma. The exact official ALTCS county-map artifact at `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` also returned HTTP 200 as a live PDF and remains partially parseable for Arizona county names, but it still does not attach those counties to office addresses, phones, or any repeatable county-to-office assignment contract. `https://www.azahcccs.gov/shared/AHCCCScontacts.html` remains a statewide contact leaf, while the older `https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html` path now returns an AHCCCS `Page/Document not found` shell instead of a usable program leaf. Arizona therefore still lacks a reviewable official county-to-office routing contract.';
 
 const LESSON_HEADING =
   '### Reverse-Geocode Official Coordinates When The One-Line Address Lane Fails';
@@ -100,7 +100,7 @@ function main() {
   summary.major_gap_families = [];
   summary.final_blockers = countyLocalBlocker ? [countyLocalBlocker] : [];
   summary.familyStatuses.district_or_county_education_routing = EDUCATION_STATUS;
-  summary.familyStatuses.county_local_disability_resources = 'blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract';
+  summary.familyStatuses.county_local_disability_resources = 'blocked_des_salesforce_locator_plus_altcs_html_and_county_map_without_county_contract';
 
   const updatedGapRows = gapRows.map((row) => {
     if (row.family === 'district_or_county_education_routing') {
@@ -201,8 +201,8 @@ function main() {
     if (row.family !== 'county_local_disability_resources') return row;
     return {
       ...row,
-      query_basis: 'Reviewed 2026-06-25 the live AHCCCS ALTCS offices HTML page, the exact live ALTCS county-map PDF path, the statewide AHCCCS contacts leaf, the stale ALTCS member-resource path, and the still-challenged DES office roots to test whether any county-to-office contract is publicly reviewable.',
-      blocker_code: 'des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract',
+      query_basis: 'Reviewed 2026-06-26 the live AHCCCS ALTCS offices HTML page, the exact live ALTCS county-map PDF path, the statewide AHCCCS contacts leaf, the stale ALTCS member-resource path, and the DES public office page plus linked Salesforce locator to test whether any county-to-office contract is publicly reviewable.',
+      blocker_code: 'des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract',
       blocker_evidence: COUNTY_LOCAL_EVIDENCE,
       sample_count: 5,
       samples: [
@@ -213,8 +213,8 @@ function main() {
           verification_status: 'reviewed',
           source_type: 'official_html_office_inventory_without_county_contract',
           source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
-          evidence_snippet: 'The live official ALTCS Offices page preserves seven named office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott Valley, Tucson, and Yuma, but the raw HTML still does not publish counties served by each office.',
+          fetched_at: '2026-06-26T00:00:00.000Z',
+          evidence_snippet: 'The live official ALTCS Offices page preserves seven named office cards for Chinle, Flagstaff, Kingman, Phoenix, Prescott, Tucson, and Yuma, but the raw HTML still does not publish counties served by each office.',
         },
         {
           sample_name: 'AHCCCS ALTCS County Map PDF',
@@ -223,7 +223,7 @@ function main() {
           verification_status: 'reviewed',
           source_type: 'official_pdf_county_map_without_office_assignments',
           source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
+          fetched_at: '2026-06-26T00:00:00.000Z',
           evidence_snippet: 'The exact live ALTCS county-map PDF is still partially parseable for county names, but it still does not attach those counties to office addresses, phones, or a repeatable county-to-office contract.',
         },
         {
@@ -233,7 +233,7 @@ function main() {
           verification_status: 'reviewed',
           source_type: 'official_statewide_contact_leaf',
           source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
+          fetched_at: '2026-06-26T00:00:00.000Z',
           evidence_snippet: 'The AHCCCS Contacts page remains a statewide contact leaf and does not assign counties to ALTCS office locations.',
         },
         {
@@ -243,18 +243,18 @@ function main() {
           verification_status: 'blocked',
           source_type: 'official_page_document_not_found_shell',
           source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
+          fetched_at: '2026-06-26T00:00:00.000Z',
           evidence_snippet: 'The older AHCCCS ALTCS member-resource path now returns a `Page/Document not found` shell and cannot serve as a live county-local fallback.',
         },
         {
-          sample_name: 'DES office locator remains challenged',
+          sample_name: 'DES office page and linked Salesforce locator',
           source_url: 'https://des.az.gov/office-locator',
-          final_url: 'https://des.az.gov/office-locator',
+          final_url: 'https://azdes-community.my.salesforce-sites.com/EOL/',
           verification_status: 'blocked',
-          source_type: 'challenge_blocked_office_locator',
+          source_type: 'official_page_links_nonreviewable_dynamic_locator',
           source_table: BATCH,
-          fetched_at: '2026-06-25T00:00:00.000Z',
-          evidence_snippet: 'The DES office-locator lane still returns a Cloudflare challenge shell, so the official DES county-office path remains non-reviewable.',
+          fetched_at: '2026-06-26T00:00:00.000Z',
+          evidence_snippet: 'The DES public office page now loads, but it only links to a Salesforce-hosted locator that still exposes no reviewable static county-to-office content in bounded public inspection.',
         },
       ],
     };
@@ -350,14 +350,14 @@ function main() {
     '',
     '- Arizona remains BLOCKED and not index-safe.',
     '- Education now clears at county grade: Coconino remains covered through CAVIAT, Mohave clears through Mohave Valley Elementary plus official reverse-geocoded county attachment, and Yavapai clears through Prescott Unified plus a district-owned Exceptional Student Services leaf and Parents Rights Handbook.',
-    '- County-local remains the sole blocker because the public DES lane is still challenged and the accessible AHCCCS ALTCS artifacts still stop short of a county-to-office assignment contract.',
+    '- County-local remains the sole blocker because the public DES lane only links to a non-reviewable Salesforce locator and the accessible AHCCCS ALTCS artifacts still stop short of a county-to-office assignment contract.',
     '- Arizona should only reopen next on county-local unless a stronger official office-routing contract appears.',
     '',
   ].join('\n');
 
   const updatedAllStateReport = allStateReport.replace(
     /- Arizona remains blocked[^\n]*/,
-    '- Arizona remains blocked only on county-local disability routing: education now clears through official local leaves in Coconino, Mohave, and Yavapai, but the DES lane is still challenged and the AHCCCS ALTCS HTML/PDF artifacts still do not publish a county-to-office contract.',
+    '- Arizona remains blocked only on county-local disability routing: education now clears through official local leaves in Coconino, Mohave, and Yavapai, but the DES lane only links to a non-reviewable Salesforce locator and the AHCCCS ALTCS HTML/PDF artifacts still do not publish a county-to-office contract.',
   );
 
   const updatedHandoff = handoff
@@ -375,14 +375,14 @@ function main() {
 
 ### Exact Evidence Needed
 
-- Any official DES county office directory, county assignment table, or office-locator surface that becomes reviewable without the current challenge shell.
+- Any official DES county office directory, county assignment table, or office-locator surface that becomes reviewable without deferring into the current non-reviewable Salesforce locator.
 - Any official AHCCCS ALTCS county-to-office contract in HTML, PDF, or another static admin artifact that explicitly maps counties to offices.
 - Any official Arizona county-admin or state-admin crosswalk that assigns counties to disability-routing offices.
 
 ### Useful Official URLs Already Tried
 
 - [AHCCCS ALTCS locations HTML](https://www.azahcccs.gov/members/ALTCSlocations.html)
-- [AHCCCS ALTCS county map PDF lane](https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html)
+- [AHCCCS ALTCS county map PDF](https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf)
 - [AHCCCS contacts page](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
 - [DES office locator](https://des.az.gov/office-locator)
 - [DES root](https://des.az.gov/)
@@ -425,7 +425,7 @@ function main() {
     classification: 'BLOCKED',
     index_safe: false,
     education_status: EDUCATION_STATUS,
-    county_local_status: 'blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract',
+    county_local_status: 'blocked_des_salesforce_locator_plus_altcs_html_and_county_map_without_county_contract',
     mohave_reverse_geocode_county: 'Mohave County',
     yavapai_reverse_geocode_county: 'Yavapai County',
     sole_blocker: 'county_local_disability_resources',

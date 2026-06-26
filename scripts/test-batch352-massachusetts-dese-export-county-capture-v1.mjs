@@ -52,7 +52,9 @@ assert.match(educationGap.status_reason, /covered all 14 Massachusetts counties/
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyGap.family_status, 'blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved');
-assert.match(countyGap.status_reason, /Suffolk County is still unresolved/i);
+assert.match(countyGap.status_reason, /Suffolk County is still missing complete official locality coverage/i);
+assert.match(countyGap.status_reason, /Chelsea, Revere, .* Winthrop/i);
+assert.match(countyGap.status_reason, /Boston and Charlestown/i);
 assert.match(countyGap.status_reason, /HTTP 403 `Not allowed` shell/i);
 
 assert.equal(failureRows.length, 1);
@@ -66,6 +68,15 @@ assert.equal(educationVerified.sample_count, 5);
 assert.match(educationVerified.query_basis, /official DESE district export/i);
 assert.match(educationVerified.samples[1].evidence_snippet, /search\.xls/i);
 assert.match(educationVerified.samples[4].evidence_snippet, /county-to-district mapping contract/i);
+
+const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
+assert.equal(countyVerified.sample_count, 6);
+assert.match(countyVerified.query_basis, /2026-06-25/);
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DDS Charles River West Area Office'));
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Massachusetts DDS interactive regional map'));
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Greater Boston / Metro Boston area-office document lane'));
+assert.match(countyVerified.blocker_evidence, /Chelsea, Revere, .* Winthrop/);
+assert.match(countyVerified.blocker_evidence, /Boston and Charlestown/);
 
 assert.equal(nextRows.length, 1);
 assert.equal(nextRows[0].family, 'county_local_disability_resources');
@@ -96,6 +107,7 @@ assert.match(allStateReport, /blocked states: .*Massachusetts/i);
 assert.match(handoff, /## Current Focus State: Massachusetts/);
 assert.match(handoff, /county_local_disability_resources` is the only Massachusetts blocker left/i);
 assert.match(handoff, /13 of 14 counties/i);
+assert.match(handoff, /Chelsea, Revere, .* Winthrop/i);
 assert.match(lessons, /### Official Exports Plus Official Geography Crosswalks Can Clear County Routing/);
 assert.match(lessons, /### Official Sitemaps Can Expose Hidden Exact Office Documents Without Clearing Service Areas/);
 

@@ -143,7 +143,7 @@ function buildStatusReason() {
 }
 
 function buildEvidence() {
-  return `Reviewed ${UPDATED_AT} exact official Alaska county-local surfaces again across both the browser-readable and raw low-token lanes. In the browser-reviewed lane, \`${PROBE.reviewedDpaOffices.url}\` is now publicly readable on the current official Department of Health host and preserves regional offices, office hours, street addresses, fax numbers, virtual contact-center routing, and secure document upload options. But that page still only groups offices by broad regions and still does not map Alaska boroughs or census areas to those offices. In the raw low-token lane, the health-host family still fails closed: \`${PROBE.rawDpaLanding.url}\`, \`${PROBE.rawDpaOffices.url}\`, \`${PROBE.rawDpaDashboardPdf.url}\`, and \`${PROBE.rawMedicaidSnapshotPdf.url}\` still return HTTP 403 with the Cloudflare title "Just a moment...". The DFCS successor host remains negative on official public review: \`${PROBE.dfcsRoot.url}\` still only routes into Commissioner and OCS branches rather than any DPA/public-assistance office directory; \`${PROBE.dfcsServices.url}\` still only links Adult Public Assistance and Apply for Medicaid back to the health host plus statewide phone routing; \`${PROBE.dfcsSiteMap.url}\` still only exposes wrong-role branches such as OCS offices, OCS grievance, and Pioneer Homes payment assistance; and \`${PROBE.dfcsContacts.url}\` still exposes only Commissioner and OCS sections rather than any borough-assignment text. The live public search lane at \`${PROBE.dfcsPublicSearch.url}\` is real, but bounded queries for ${PROBE.dfcsPublicSearch.queries.map((q) => `"${q}"`).join(', ')} still materialize no role-bearing DPA, public-assistance office, or borough-assignment results. Alaska therefore still lacks any public official borough- or census-area-to-office assignment surface that can satisfy county-equivalent local routing.`;
+  return `Reviewed ${UPDATED_AT} exact official Alaska county-local surfaces again across both the browser-readable and raw low-token lanes. In the browser-reviewed lane, \`${PROBE.reviewedDpaOffices.url}\` is still publicly readable on the current official Department of Health host and preserves regional offices, office hours, street addresses, fax numbers, virtual contact-center routing, and secure document upload options. The live page still groups offices only by broad regions such as Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, and Southwest Alaska, with office-city lists like Homer and Kenai, Fairbanks and Nome, Anchorage and Matanuska-Susitna Valley, Juneau/Ketchikan/Sitka, and Bethel/Kodiak. But it still does not map Alaska boroughs or census areas to those offices. In the raw low-token lane, the health-host family still fails closed: \`${PROBE.rawDpaLanding.url}\`, \`${PROBE.rawDpaOffices.url}\`, \`${PROBE.rawDpaDashboardPdf.url}\`, and \`${PROBE.rawMedicaidSnapshotPdf.url}\` still return HTTP 403 with the Cloudflare title "Just a moment...". The DFCS successor host remains negative on official public review: \`${PROBE.dfcsRoot.url}\` still only routes into Commissioner and OCS branches rather than any DPA/public-assistance office directory; \`${PROBE.dfcsServices.url}\` still only links Adult Public Assistance and Apply for Medicaid back to the health host plus statewide phone routing; \`${PROBE.dfcsSiteMap.url}\` still only exposes wrong-role branches such as OCS offices, OCS grievance, and Pioneer Homes payment assistance; and \`${PROBE.dfcsContacts.url}\` still exposes only Commissioner and OCS sections rather than any borough-assignment text. The live public search lane at \`${PROBE.dfcsPublicSearch.url}\` is real, but bounded queries for ${PROBE.dfcsPublicSearch.queries.map((q) => `"${q}"`).join(', ')} still materialize no role-bearing DPA, public-assistance office, or borough-assignment results. Alaska therefore still lacks any public official borough- or census-area-to-office assignment surface that can satisfy county-equivalent local routing.`;
 }
 
 function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
@@ -221,7 +221,7 @@ function buildHandoff(allStateAudit) {
     '',
     '### Blocker Reason',
     '',
-    '`county_local_disability_resources` is still the only remaining Alaska blocker, but the truth is now dual-lane rather than challenge-only. The current official DPA offices page on `health.alaska.gov` is publicly readable in the reviewed browser lane and it clearly proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, and secure upload options. But it still only groups offices by broad regions and still does not map boroughs or census areas to those offices. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` 403 shells, so it still offers no reusable raw export or fetch lane. The DFCS successor host remains negative: root, Services, Site Map, Department Contacts, and the live public search page still expose no DPA/public-assistance office directory or county-equivalent assignment contract. Alaska remains BLOCKED because there is still no public official borough- or census-area office-assignment surface.',
+    '`county_local_disability_resources` is still the only remaining Alaska blocker, but the truth is now dual-lane rather than challenge-only. The current official DPA offices page on `health.alaska.gov` is publicly readable in the reviewed browser lane and it clearly proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, secure upload options, and office-city groups such as Homer/Kenai, Fairbanks/Nome, Anchorage/Matanuska-Susitna Valley, Juneau/Ketchikan/Sitka, and Bethel/Kodiak. But it still only groups offices by broad regions and still does not map boroughs or census areas to those offices. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` 403 shells, so it still offers no reusable raw export or fetch lane. The DFCS successor host remains negative: root, Services, Site Map, Department Contacts, and the live public search page still expose no DPA/public-assistance office directory or county-equivalent assignment contract. Alaska remains BLOCKED because there is still no public official borough- or census-area office-assignment surface.',
     '',
     '### Exact Evidence Needed',
     '',
@@ -316,6 +316,41 @@ export async function generateBatch355AlaskaDualLaneDpaFinalityV1() {
   }
 
   for (const row of verifiedRows) {
+    if (row.family === 'district_or_county_education_routing') {
+      row.query_basis = 'Reviewed official Alaska DEED district profile pages, district map pages, and district-specific pages; borough-named county rows match official district entries and REAA routing is preserved for unorganized areas.';
+      replaceSample(row.samples, 'Alaska Public Schools Database District Profiles Search', {
+        sample_name: 'Alaska Public Schools District Profiles',
+        source_url: 'https://education.alaska.gov/DOE_Rolodex/DistrictProfiles2000/DistrictProfilesSearch.cfm',
+        final_url: 'https://education.alaska.gov/DOE_Rolodex/DistrictProfiles2000/DistrictProfilesSearch.cfm',
+        verification_status: 'verified',
+        source_type: 'official_state_directory',
+        source_table: 'reviewed_first_party_artifact',
+        fetched_at: '2026-06-22T00:00:00.000Z',
+        evidence_snippet: 'The official DEED district profiles page links Alaska local systems to district-specific pages, including borough districts and REAA districts for unorganized areas.',
+      });
+      replaceSample(row.samples, 'Aleutians East Borough School District Profile', {
+        sample_name: 'Aleutians East Borough School District Profile',
+        source_url: 'https://education.alaska.gov/DOE_Rolodex/SchoolCalendar/District/56',
+        final_url: 'https://education.alaska.gov/DOE_Rolodex/SchoolCalendar/District/56',
+        verification_status: 'verified',
+        source_type: 'official_district_detail',
+        source_table: 'reviewed_first_party_artifact',
+        fetched_at: '2026-06-22T00:00:00.000Z',
+        evidence_snippet: 'The official district profile preserves local routing fields including district address, telephone, fax, district email, and superintendent contact for Aleutians East Borough School District.',
+      });
+      replaceSample(row.samples, 'Alaska District Map', {
+        sample_name: 'Alaska District Map',
+        source_url: 'https://education.alaska.gov/alaskan_schools/alaska-district-map',
+        final_url: 'https://education.alaska.gov/alaskan_schools/alaska-district-map',
+        verification_status: 'verified',
+        source_type: 'official_state_directory',
+        source_table: 'reviewed_first_party_artifact',
+        fetched_at: '2026-06-22T00:00:00.000Z',
+        evidence_snippet: 'The official Alaska District Map page links county listings, borough districts, and REAA regional school systems for unorganized areas on the official DEED host.',
+      });
+      continue;
+    }
+
     if (row.family !== 'county_local_disability_resources') continue;
     row.family_status = FAMILY_STATUS;
     row.query_basis = `Reviewed ${UPDATED_AT} the live official Alaska DPA offices page in the browser-readable lane, confirmed the raw low-token health-host family still returns Cloudflare 403 shells, and rechecked DFCS root/services/site-map/contacts/search as negative official sibling surfaces.`;

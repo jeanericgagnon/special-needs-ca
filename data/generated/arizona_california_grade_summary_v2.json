@@ -12,7 +12,7 @@
   "weak_critical_families": 1,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
+  "primary_gap_reason": "des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
   "recommended_batch": "hold_county_local_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts",
   "critical_gap_families": [
     "county_local_disability_resources"
@@ -46,7 +46,7 @@
     }
   ],
   "familyStatuses": {
-    "county_local_disability_resources": "blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract",
+    "county_local_disability_resources": "blocked_des_salesforce_locator_plus_altcs_html_and_county_map_without_county_contract",
     "district_or_county_education_routing": "verified_county_grade"
   }
 }

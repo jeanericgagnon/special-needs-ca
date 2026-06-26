@@ -45,7 +45,7 @@ const COUNTY_LOCAL_FAILURE_CODE =
 const COUNTY_LOCAL_NEXT =
   'hold_massachusetts_dds_until_suffolk_locality_contract_exists';
 const COUNTY_LOCAL_REASON =
-  'Massachusetts county-local routing remains blocked, but the remaining gap is now precise. The live Mass.gov DDS locations lane preserves 21 reviewed area-office cards with explicit `This area office serves the following towns and communities:` text, and the saved town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. Suffolk County is still unresolved because bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck to the exact `/locations` endpoint still returns the same HTTP 403 `Not allowed` shell instead of a replayable county export.';
+  'Massachusetts county-local routing remains blocked, but the remaining gap is now even more precise. The live Mass.gov DDS locations lane preserves reviewed area-office cards with explicit `This area office serves the following towns and communities:` text, and the saved town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. A fresh 2026-06-25 browser-readable replay of the exact `DDS Charles River West Area Office` leaf now explicitly preserves `Chelsea, Revere, ... Winthrop`, which confirms that part of Suffolk County is covered by a reviewable first-party locality contract. But Boston and Charlestown still do not materialize inside any preserved Suffolk-serving DDS area-office locality list, and a fresh 2026-06-25 raw recheck to the exact `/locations` endpoint plus area-office document downloads still returns the same HTTP 403 `Not allowed` shell instead of a replayable county export. Massachusetts therefore remains blocked because Suffolk County is still missing complete official locality coverage.';
 const MASSACHUSETTS_BLOCKED_REASON = PRIMARY_GAP_REASON;
 const LESSON_HEADING =
   '### Official Exports Plus Official Geography Crosswalks Can Clear County Routing';
@@ -209,13 +209,13 @@ function updateHandoff(handoffText) {
     '',
     '### Blocker Reason',
     '',
-    '`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is Suffolk County. Bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane still do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` still returns the same HTTP 403 `Not allowed` shell in the low-token lane, so no replayable county export has been recovered yet.',
+    '`county_local_disability_resources` is the only Massachusetts blocker left. The live Mass.gov DDS locations lane is much stronger than the older host-wide-403 assumption: reviewed first-party area-office cards now preserve explicit `This area office serves the following towns and communities:` text and already clear 13 of 14 counties through a bounded town-to-county bridge. The exact remainder is now narrower than a generic Suffolk miss. A fresh 2026-06-26 browser-readable replay of the `DDS Charles River West Area Office` page explicitly preserves `Chelsea, Revere, Somerville, Waltham, Watertown, Winthrop` and therefore confirms reviewable Suffolk coverage for Chelsea, Revere, and Winthrop. But Boston and Charlestown still do not materialize inside any preserved Suffolk-serving DDS locality contract, and a fresh raw recheck confirmed `https://www.mass.gov/orgs/department-of-developmental-services/locations` plus the exact area-office document downloads still return HTTP 403 `Not allowed` shells in the low-token lane, so no replayable county export has been recovered yet.',
     '',
     '### Exact Evidence Needed',
     '',
-    '- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.',
+    '- Any current official Mass.gov DDS page, export, or interactive-map surface that explicitly assigns Boston or Charlestown to a Suffolk-serving DDS area office by town, community, county, or machine-readable locality field.',
     '- Any current official Mass.gov DDS county field or county-grade export that covers Suffolk directly instead of requiring inference from office names or region labels.',
-    '- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston, Chelsea, Revere, Winthrop, Charlestown, or other Suffolk communities inside a single reviewable office contract.',
+    '- Any current official Suffolk-serving locality list on the DDS locations lane that names Boston or Charlestown inside a reviewable office contract, since Chelsea, Revere, and Winthrop are now explicitly preserved on the Charles River West area-office leaf.',
     '',
     '### Useful Official URLs Already Tried',
     '',
@@ -295,6 +295,87 @@ export function generateBatch352MassachusettsDeseExportCountyCaptureV1() {
   const updatedFailureRows = failureRows.filter((row) => row.family !== 'district_or_county_education_routing');
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
+    if (row.family === 'county_local_disability_resources') {
+      return {
+        ...row,
+        family_status: COUNTY_LOCAL_STATUS,
+        evidence_strength: 'medium',
+        query_basis:
+          'Reviewed 2026-06-25 the browser-readable Massachusetts DDS locations lane, the exact Charles River West area-office leaf, the interactive regional map prompt, and a fresh raw 403 recheck on the locations and area-office document lanes.',
+        blocker_code: COUNTY_LOCAL_FAILURE_CODE,
+        blocker_evidence:
+          'Reviewed 2026-06-25 the live Massachusetts DDS first-party locations lane plus the saved bounded locality-capture audit, then rechecked the exact `/locations` endpoint and the exact area-office document download lanes again from the low-token raw path. The browser-readable locations pages still preserve explicit `This area office serves the following towns and communities:` contracts, and a fresh replay of `https://www.mass.gov/locations/dds-charles-river-west-area-office` now explicitly preserves `Chelsea, Revere, Somerville, Waltham, Watertown, Winthrop`, which confirms reviewable Suffolk coverage for Chelsea, Revere, and Winthrop. But Boston and Charlestown still do not materialize inside any preserved Suffolk-serving DDS area-office locality list, while raw probes to `https://www.mass.gov/orgs/department-of-developmental-services/locations`, `https://www.mass.gov/doc/greater-boston-metro-boston-area-office/download`, and `https://www.mass.gov/doc/charles-river-west-area-office/download` still return HTTP 403 `Not allowed` shells and therefore cannot supply a replayable county export. Massachusetts should stay blocked until an official Boston/Charlestown-serving DDS locality contract, county field, or county-grade export is preserved.',
+        sample_count: 6,
+        samples: [
+          {
+            sample_name: 'Massachusetts DDS org page',
+            source_url: 'https://www.mass.gov/orgs/department-of-developmental-services',
+            final_url: 'https://www.mass.gov/orgs/department-of-developmental-services',
+            verification_status: 'official_blocked',
+            source_type: 'official_org_page_raw_lane_blocked',
+            source_table: 'batch352_massachusetts_dese_export_county_capture_v1',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet:
+              'A fresh raw replay still returns `Not allowed | Mass Gov`, so the low-token lane cannot reuse the org page as a replayable export source.',
+          },
+          {
+            sample_name: 'Massachusetts DDS locations index',
+            source_url: 'https://www.mass.gov/orgs/department-of-developmental-services/locations',
+            final_url: 'https://www.mass.gov/orgs/department-of-developmental-services/locations',
+            verification_status: 'reviewed',
+            source_type: 'official_locations_index_with_reviewed_town_contract',
+            source_table: 'batch352_massachusetts_dese_export_county_capture_v1',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet:
+              'The browser-readable locations index is live and says to use the interactive map to find which DDS Regional Office and Area Office serves your town or city, while the visible office leaves preserve explicit town/community service lists.',
+          },
+          {
+            sample_name: 'DDS Charles River West Area Office',
+            source_url: 'https://www.mass.gov/locations/dds-charles-river-west-area-office',
+            final_url: 'https://www.mass.gov/locations/dds-charles-river-west-area-office',
+            verification_status: 'reviewed',
+            source_type: 'official_area_office_locality_contract',
+            source_table: 'batch352_massachusetts_dese_export_county_capture_v1',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet:
+              'The live Charles River West area-office page explicitly says `This area office serves the following towns and communities: Belmont, Cambridge, Chelsea, Revere, Somerville, Waltham, Watertown, Winthrop`, which preserves Suffolk coverage for Chelsea, Revere, and Winthrop.',
+          },
+          {
+            sample_name: 'Massachusetts DDS interactive regional map',
+            source_url: 'https://www.mass.gov/info-details/interactive-dds-regional-map',
+            final_url: 'https://www.mass.gov/info-details/interactive-dds-regional-map',
+            verification_status: 'reviewed',
+            source_type: 'official_interactive_map_prompt_without_preserved_boston_contract',
+            source_table: 'batch352_massachusetts_dese_export_county_capture_v1',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet:
+              'The live official page says `Use this interactive map to find which DDS Regional Office and Area Office serves your town or city`, but the bounded replay still did not preserve a Boston- or Charlestown-serving locality contract from disk.',
+          },
+          {
+            sample_name: 'Greater Boston / Metro Boston area-office document lane',
+            source_url: 'https://www.mass.gov/doc/greater-boston-metro-boston-area-office/download',
+            final_url: 'https://www.mass.gov/doc/greater-boston-metro-boston-area-office/download',
+            verification_status: 'official_blocked',
+            source_type: 'official_area_office_document_raw_lane_blocked',
+            source_table: 'batch352_massachusetts_dese_export_county_capture_v1',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet:
+              'A fresh raw replay of the Greater Boston / Metro Boston document lane still returns `Not allowed | Mass Gov`, so it cannot yet supply a replayable Suffolk locality contract.',
+          },
+          {
+            sample_name: 'Charles River West document lane',
+            source_url: 'https://www.mass.gov/doc/charles-river-west-area-office/download',
+            final_url: 'https://www.mass.gov/doc/charles-river-west-area-office/download',
+            verification_status: 'official_blocked',
+            source_type: 'official_area_office_document_raw_lane_blocked',
+            source_table: 'batch352_massachusetts_dese_export_county_capture_v1',
+            fetched_at: '2026-06-25T00:00:00.000Z',
+            evidence_snippet:
+              'A fresh raw replay of the Charles River West document lane still returns `Not allowed | Mass Gov`, so the browser-readable locality contract cannot yet be mirrored into a raw export artifact.',
+          },
+        ],
+      };
+    }
     if (row.family !== 'district_or_county_education_routing') return row;
     return {
       ...row,

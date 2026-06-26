@@ -33,7 +33,7 @@ const EDUCATION_FAMILY_STATUS =
 const EDUCATION_NEXT_ACTION =
   'hold_blocked_until_public_ride_or_district_owned_special_education_surface_exposes_county_or_district_routing';
 const EDUCATION_REASON =
-  'Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces plus one more live check of the legacy public Master Directory lane. The live RIDE Special Education page remains statewide guidance only and links families to the public school directory stack instead of exposing district-owned special-education leaves. The public School Directory page explicitly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, then routes into the public Data Center directory. On the public Data Center host, the Schools Directory explicitly says it provides only LEA, school, location, and contact information, while additional directory information is available only to authenticated users in the RIDE portal. The public table and search lanes expose LEA, school, school type, and school subtype, including special-education categories, but no county field and no public district special-education routing contract. The separate RI School Districts page lists 66 LEAs and district websites, but it also exposes no county column and no special-education contact routing. The legacy public Master Directory link exposed from the School Directory page is not a usable replacement proof lane because the reviewed public URL now returns HTTP 503. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.';
+  'Reviewed 2026-06-25 bounded first-party Rhode Island education surfaces plus a fresh bounded live recheck of the legacy public Master Directory lane. The live RIDE School Directory page still publicly says families can use the Search tool, Frequently Requested Lists, and Directory Reports for contact information, while the public RIDE Data Center Schools Directory still says it provides only LEA, school, location, and contact information and that additional directory information is available only to authenticated users. The separate RI School Districts page still lists 66 LEAs and district websites but no county column and no public district special-education routing contract. The RIDE Special Education lane remains statewide guidance only and still routes families back into this directory stack instead of exposing district-owned special-education leaves. A fresh 2026-06-25 bounded replay of the legacy public Master Directory URL still did not yield a usable public replacement proof lane, timing out during review. Rhode Island therefore still lacks a public county-grade or district-owned special-education routing contract.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -177,7 +177,7 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
             verification_status: 'blocked',
             source_type: 'legacy_public_directory',
             source_table: 'school_districts',
-            evidence_snippet: 'The legacy public Master Directory lane linked from the School Directory page now returns HTTP 503 and cannot serve as public district-routing proof.',
+            evidence_snippet: 'The legacy public Master Directory lane linked from the School Directory page did not yield a usable public replay on 2026-06-25, timing out during bounded review and therefore still cannot serve as district-routing proof.',
           },
         ],
       };
@@ -191,7 +191,7 @@ export function generateBatch364RhodeIslandOfficialLocalRoutingFinalityV1() {
         ...row,
         failure_code: EDUCATION_FAILURE_CODE,
         next_action: EDUCATION_NEXT_ACTION,
-        evidence: 'Public RIDE directory surfaces expose only LEA, school, location, contact, type, and subtype fields, additional directory detail is authenticated-only, and the legacy Master Directory link is now HTTP 503.',
+        evidence: 'Public RIDE directory surfaces expose only LEA, school, location, contact, type, and subtype fields, additional directory detail is authenticated-only, and the legacy Master Directory link still does not yield a usable public response during bounded review.',
       };
     }
     return row;

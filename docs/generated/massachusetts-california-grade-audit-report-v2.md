@@ -20,7 +20,7 @@
 - legal_aid: verified_state_grade (Reviewed Massachusetts Legal Assistance Corporation first-party homepage preserves a statewide low-income legal-information, advice, and representation mission.)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved (Massachusetts county-local routing remains blocked, but the remaining gap is now precise. The live Mass.gov DDS locations lane preserves 21 reviewed area-office cards with explicit `This area office serves the following towns and communities:` text, and the saved town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. Suffolk County is still unresolved because bounded Boston, Chelsea, Revere, Winthrop, and Charlestown scans on the same official lane do not preserve a Suffolk-serving town/community contract, and a fresh 2026-06-25 raw recheck to the exact `/locations` endpoint still returns the same HTTP 403 `Not allowed` shell instead of a replayable county export.)
+- county_local_disability_resources: blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved (Massachusetts county-local routing remains blocked, but the remaining gap is now even more precise. The live Mass.gov DDS locations lane preserves reviewed area-office cards with explicit `This area office serves the following towns and communities:` text, and the saved town-to-county bridge already clears 13 of 14 counties from official browser-readable locality evidence. A fresh 2026-06-25 browser-readable replay of the exact `DDS Charles River West Area Office` leaf now explicitly preserves `Chelsea, Revere, ... Winthrop`, which confirms that part of Suffolk County is covered by a reviewable first-party locality contract. But Boston and Charlestown still do not materialize inside any preserved Suffolk-serving DDS area-office locality list, and a fresh 2026-06-25 raw recheck to the exact `/locations` endpoint plus area-office document downloads still returns the same HTTP 403 `Not allowed` shell instead of a replayable county export. Massachusetts therefore remains blocked because Suffolk County is still missing complete official locality coverage.)
 
 ## Failure ledger
 
@@ -40,7 +40,7 @@
 - legal_aid: verified_state_grade; samples=1; first=https://mlac.org/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved; samples=5; first=https://www.mass.gov/orgs/department-of-developmental-services
+- county_local_disability_resources: blocked_dds_locality_capture_covers_13_of_14_counties_but_suffolk_unresolved; samples=6; first=https://www.mass.gov/orgs/department-of-developmental-services
 
 ## Next actions
 

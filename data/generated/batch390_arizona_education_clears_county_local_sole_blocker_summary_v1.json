@@ -4,7 +4,7 @@
   "classification": "BLOCKED",
   "index_safe": false,
   "education_status": "verified_county_grade",
-  "county_local_status": "blocked_des_challenge_plus_altcs_html_and_county_map_without_county_contract",
+  "county_local_status": "blocked_des_salesforce_locator_plus_altcs_html_and_county_map_without_county_contract",
   "mohave_reverse_geocode_county": "Mohave County",
   "yavapai_reverse_geocode_county": "Yavapai County",
   "sole_blocker": "county_local_disability_resources",

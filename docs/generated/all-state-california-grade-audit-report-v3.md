@@ -18,7 +18,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
-- Arizona remains blocked only on county-local disability routing: education now clears through official local leaves in Coconino, Mohave, and Yavapai, but the DES lane is still challenged and the AHCCCS ALTCS HTML/PDF artifacts still do not publish a county-to-office contract.
+- Arizona remains blocked only on county-local disability routing: education now clears through official local leaves in Coconino, Mohave, and Yavapai, but the DES lane only links to a non-reviewable Salesforce locator and the AHCCCS ALTCS HTML/PDF artifacts still do not publish a county-to-office contract.
 - South Dakota remains blocked, but the blocker is now singular and cleaner: official DOE district-directory pages now clear education routing, official UJS legal-help pages clear statewide legal aid, and only county-local disability routing remains below California-grade because the current DHS host still exposes no public county-to-office or local-service contract.
 - Wyoming remains blocked, but the blocker set is much narrower than before: official WDE IDEA pages now clear statewide special-education authority, first-party PTI and statewide legal-aid evidence are now restored, and the remaining blockers are only county/district education routing without a reviewable crosswalk plus county-local disability routing that is still aging/community-living only on the public WDH host.
 - Texas remains COMPLETE/index-safe from v10.
@@ -40,8 +40,14 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 
 
+
+- New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, and even the DHHS/`nh.gov` robots.txt and sitemap.xml diagnostics return that same shell.
+
+
 - Idaho remains blocked after a final Camas-and-Clark attachment pass: Camas only exposes contact routing plus a board-roster Google Doc, and Clark only exposes Contact Us, Title IX, general-education notice attachments, and image-only Child Find flyers without local special-education routing proof.
+
+
+
 
 - Alaska county-local routing is still blocked: the official DPA offices page is browser-readable again and proves regional offices plus contacts, but it still has no borough/census-area assignment contract, while the raw low-token lane still gets health-host Cloudflare 403 shells and DFCS root/services/site-map/contacts/search still add no county-equivalent mapping.
 - Maine remains blocked after a bounded DHHS navigation-stack plus official-search finality check: District Office Locations, OFI Contact, OFI Programs & Services, Offices/Divisions, Administrative Office Locations, sitemap, sampled `Show Map` links, and official Maine search queries still expose office addresses and labels but no county-to-office or service-area contract.
-- New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, and even the DHHS/`nh.gov` robots.txt and sitemap.xml diagnostics return that same shell.

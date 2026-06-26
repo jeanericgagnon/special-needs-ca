@@ -24,16 +24,16 @@ const OUTPUTS = {
 
 const BATCH_NAME = 'batch380_wyoming_accessible_idea_freeze_v1';
 const PRIMARY_GAP_REASON =
-  'wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract';
+  'wde_idea_evidence_is_public_again_but_county_resource_fetches_are_forbidden_and_no_reviewable_county_to_district_special_education_crosswalk_exists';
 
 const IDEA_REASON =
-  'Reviewed 2026-06-25 the live official Wyoming Department of Education special-education hub and IDEA page after rechecking the current host family. The WDE special-education hub is publicly reviewable again, the IDEA page says Wyoming must submit an annual application to the U.S. Department of Education Office of Special Education Programs to receive federal funds for services to children with disabilities ages 3 through 21, and the page links the current `Annual State Application` PDF plus the `Purposed Use of Funds` spreadsheet artifact. This restores current official statewide IDEA Part B authority evidence on the WDE host.';
+  'Reviewed 2026-06-25 one more bounded live check of the exact official Wyoming Department of Education special-education and IDEA pages. Both `https://edu.wyoming.gov/parents/special-education/` and `https://edu.wyoming.gov/parents/special-education/idea/` now return HTTP 200 again in the replayable lane, preserving current statewide Part B authority evidence on the official WDE host. The lane is still not sufficient for local county or district routing, but it does restore reviewable statewide IDEA authority evidence.';
 
 const DISTRICT_REASON =
-  'Reviewed 2026-06-25 a bounded official Wyoming district-routing pass after WDE became publicly reviewable again. The WDE IDEA and parent special-education pages are now accessible, and the official `School District Enrollment & Staffing Data` page is also publicly reviewable, but the reviewed WDE artifacts still do not preserve a statewide county-to-district crosswalk, district directory, or district-owned special-education leaf set. Existing Wyoming district rows still stop at generic district roots such as Albany County School District #1, Big Horn County School District #1, and Campbell County School District #1. Because the instructions forbid treating generic district roots or non-routing staffing publications as local-proof substitutes, district or county education routing remains blocked.';
+  'Reviewed 2026-06-25 a bounded official Wyoming district-routing recheck on the exact WDE host family. The `special-education` hub, `IDEA` page, and `School District Enrollment & Staffing Data` page all return HTTP 200 in the replayable lane, but the reviewed WDE artifacts still do not preserve a statewide county-to-district crosswalk, district directory, or district-owned special-education leaf set. Existing Wyoming district evidence still stops at generic district roots such as Albany County School District #1, Big Horn County School District #1, and Campbell County School District #1. Wyoming district or county education routing therefore remains blocked on the missing local routing contract, not on a dead WDE host.';
 
 const COUNTY_REASON =
-  'Reviewed 2026-06-25 a bounded official Wyoming Department of Health county-resource pass. The official WDH `Services by County` page under Aging Community Living is publicly reviewable again and explicitly says each county in Wyoming offers different programs for older adults, with county toggles listing senior-center, meal, caregiver, and Wyoming Home Services providers. The official WDH `Public Resources` page is also reviewable, but it routes to statewide community-living program pages and a map of older-adult resources rather than a disability-specific county-to-office assignment table, county service-area contract, or county-owned developmental-disability office directory. Wyoming county-local disability routing therefore remains blocked on the narrower ground that reviewed public WDH county evidence is aging/community-living only.';
+  'Reviewed 2026-06-25 one more bounded official Wyoming Department of Health county-resource recheck on `https://health.wyo.gov/aging/communityliving/service-area-maps/` and `https://health.wyo.gov/aging/communityliving/public_resources/` using a browser-like replayable lane. Both exact pages return HTTP 200 again and remain publicly reviewable, but the live headings and content are still aging/community-living resources such as `Services by County`, `Public Resources`, `Supportive Services (Title IIIB)`, `Nutrition Services (Title IIIC1 and Title IIIC2)`, `National Family Caregiver Program (Title IIIE)`, and the senior-service provider map. They still do not provide a disability-specific county-to-office assignment table, county service-area contract, or county-owned developmental-disability office directory. Wyoming county-local disability routing therefore remains blocked on the missing disability-specific county contract, not on a dead host.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -84,9 +84,9 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '## Repair decision',
     '',
     '- Wyoming remains `BLOCKED` and `index_safe=false`.',
-    '- `special_education_idea_part_b` now clears because the live WDE special-education and IDEA pages again expose reviewable statewide Part B authority language plus the current annual application PDF on the official WDE host.',
+    '- `special_education_idea_part_b` clears because the live WDE special-education and IDEA pages are publicly reviewable again and preserve current statewide Part B authority language plus the annual application artifact on the official WDE host.',
     '- `district_or_county_education_routing` remains blocked because reviewed WDE artifacts still do not provide a county-to-district crosswalk, statewide district directory, or district-owned special-education leaf set, while existing preserved district evidence still stops at generic district roots.',
-    '- `county_local_disability_resources` remains blocked because WDH now exposes public county-by-county aging and community-living resources, but the reviewed county evidence is still older-adult and caregiver oriented rather than a disability-specific county office contract or county developmental-disability directory.',
+    '- `county_local_disability_resources` remains blocked because the exact WDH county-resource pages are publicly reviewable again but still expose aging/community-living and senior-service resources rather than a disability-specific county office contract or county developmental-disability directory.',
   ].join('\n') + '\n';
 }
 
@@ -96,7 +96,7 @@ function buildBatchReport() {
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: cleared Wyoming IDEA Part B with newly accessible WDE evidence and froze the state on the two remaining local-routing blockers',
+    '- change: cleared Wyoming IDEA Part B with currently accessible WDE evidence and kept the state blocked on the two remaining local-routing blockers',
     '',
     '## Evidence',
     '',
@@ -353,15 +353,15 @@ export function generateBatch380WyomingAccessibleIdeaFreezeV1() {
         family_status:
           'blocked_official_wdh_county_surfaces_are_aging_only_without_disability_specific_contract',
         evidence_strength: 'weak',
-        sample_count: 3,
+        sample_count: 2,
         query_basis:
-          'Reviewed 2026-06-25 official WDH county service and public resource pages after finding current public successors to the prior blocked ADRC path.',
+          'Reviewed 2026-06-25 official WDH county service and public resource pages after confirming the exact county-resource URLs are publicly reviewable again in a browser-like replay lane.',
         blocker_code:
           'official_wdh_county_surfaces_are_aging_only_without_disability_specific_county_contract',
         blocker_evidence: COUNTY_REASON,
         samples: [
           {
-            sample_name: 'WDH Services by County page',
+            sample_name: 'WDH Services by County page remains aging/community-living only',
             source_url: 'https://health.wyo.gov/aging/communityliving/service-area-maps/',
             final_url: 'https://health.wyo.gov/aging/communityliving/service-area-maps/',
             verification_status: 'official_verified',
@@ -369,10 +369,10 @@ export function generateBatch380WyomingAccessibleIdeaFreezeV1() {
             source_table: 'county_offices',
             fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet:
-              'The official WDH page is titled `Services by County` and says each county offers different programs for older adults, with county toggles listing senior-center and Wyoming Home Services providers.',
+              'The live official WDH `Services by County` page is publicly reviewable again and lists county headings such as Albany County, Campbell County, Converse County, Fremont County, Hot Springs County, Laramie County, and Natrona County, but the page remains under Aging / Community Living and does not expose a disability-specific county office or developmental-disability routing contract.',
           },
           {
-            sample_name: 'WDH Public Resources page',
+            sample_name: 'WDH Public Resources page remains senior-service oriented',
             source_url: 'https://health.wyo.gov/aging/communityliving/public_resources/',
             final_url: 'https://health.wyo.gov/aging/communityliving/public_resources/',
             verification_status: 'official_verified',
@@ -380,18 +380,7 @@ export function generateBatch380WyomingAccessibleIdeaFreezeV1() {
             source_table: 'county_offices',
             fetched_at: '2026-06-25T00:00:00.000Z',
             evidence_snippet:
-              'The official WDH Public Resources page routes to statewide community-living programs such as Supportive Services, Wyoming Home Services, and the National Family Caregiver Program, not a disability-specific county office contract.',
-          },
-          {
-            sample_name: 'Legacy ADRC path no longer reviewable',
-            source_url: 'https://health.wyo.gov/aging/wyoagingdisability-resource-center/',
-            final_url: 'https://health.wyo.gov/aging/wyoagingdisability-resource-center/',
-            verification_status: 'official_blocked',
-            source_type: 'legacy_state_local_resource_path',
-            source_table: 'county_offices',
-            fetched_at: '2026-06-25T00:00:00.000Z',
-            evidence_snippet:
-              'The earlier Aging and Disability Resource Center path no longer supplies a usable public county-to-office contract, so the surviving public county evidence remains aging/community-living only.',
+              'The live official WDH `Public Resources` page is publicly reviewable again, but its headings remain `Supportive Services (Title IIIB)`, `Nutrition Services (Title IIIC1 and Title IIIC2)`, `National Family Caregiver Program (Title IIIE)`, and a senior-service provider map rather than a disability-specific county office contract.',
           },
         ],
       };

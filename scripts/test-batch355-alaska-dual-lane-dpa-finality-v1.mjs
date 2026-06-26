@@ -39,13 +39,14 @@ assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(summary.batch, 'batch355_alaska_dual_lane_dpa_finality_v1');
 assert.equal(summary.primary_gap_reason, 'reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract');
+assert.match(summary.final_blockers[0].evidence, /Reviewed 2026-06-25 exact official Alaska county-local surfaces/i);
 
-const gap = gapRows.find((row) => row.family === 'county_local_disability_resources');
-assert.ok(gap);
-assert.equal(gap.family_status, 'blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract');
-assert.match(gap.status_reason, /browser lane/i);
-assert.match(gap.status_reason, /still only groups offices by broad regions/i);
-assert.match(gap.status_reason, /still return HTTP 403 Cloudflare shells/i);
+assert.equal(gapRows.length, 0);
+assert.equal(summary.final_blockers.length, 1);
+assert.equal(summary.final_blockers[0].family, 'county_local_disability_resources');
+assert.match(summary.final_blockers[0].evidence, /browser-reviewed lane/i);
+assert.match(summary.final_blockers[0].evidence, /groups offices only by broad regions/i);
+assert.match(summary.final_blockers[0].evidence, /still return HTTP 403 with the Cloudflare title "Just a moment\.\.\."/i);
 
 const failure = failureRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(failure);

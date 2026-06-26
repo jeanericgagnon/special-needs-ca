@@ -36,9 +36,10 @@ assert.equal(summary.index_safe, false);
 assert.equal(summary.strong_critical_families, 11);
 assert.equal(summary.weak_critical_families, 1);
 assert.equal(summary.completeness_pct, 92);
-assert.equal(summary.primary_gap_reason, 'des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract');
+assert.equal(summary.primary_gap_reason, 'des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract');
 assert.deepEqual(summary.critical_gap_families, ['county_local_disability_resources']);
 assert.equal(summary.familyStatuses.district_or_county_education_routing, 'verified_county_grade');
+assert.equal(summary.familyStatuses.county_local_disability_resources, 'blocked_des_salesforce_locator_plus_altcs_html_and_county_map_without_county_contract');
 assert.equal(summary.final_blockers.length, 1);
 assert.equal(summary.final_blockers[0].family, 'county_local_disability_resources');
 
@@ -66,7 +67,9 @@ assert.equal(countyLocalVerified.sample_count, 5);
 assert.ok(countyLocalVerified.samples.some((sample) => sample.sample_name === 'AHCCCS ALTCS Offices page'));
 assert.ok(countyLocalVerified.samples.some((sample) => sample.sample_name === 'AHCCCS ALTCS County Map PDF'));
 assert.ok(countyLocalVerified.samples.some((sample) => sample.sample_name === 'Stale ALTCS member-resource path'));
+assert.ok(countyLocalVerified.samples.some((sample) => sample.sample_name === 'DES office page and linked Salesforce locator'));
 assert.match(countyLocalVerified.blocker_evidence, /PlansProviders\/Downloads\/ALTCS_CountyMap\.pdf/);
+assert.match(countyLocalVerified.blocker_evidence, /Salesforce-hosted office locator/i);
 
 const mohaveInventory = inventoryRows.find((row) => row.county_id === 'mohave-az');
 assert.equal(mohaveInventory.educationOrganizationId, 4379);
@@ -81,16 +84,16 @@ assert.equal(auditRow.strongCriticalFamilies, 11);
 assert.equal(auditRow.weakCriticalFamilies, 1);
 assert.equal(auditRow.completenessPct, 92);
 assert.equal(auditRow.familyStatuses.district_or_county_education_routing, 'verified_county_grade');
-assert.equal(auditRow.packetPrimaryGapReason, 'des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract');
+assert.equal(auditRow.packetPrimaryGapReason, 'des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract');
 
 const queueRow = queueRows.find((row) => row.state === 'arizona');
 assert.equal(queueRow.completeness_pct, 92);
 assert.equal(queueRow.weak_critical_families, 1);
-assert.equal(queueRow.primary_gap_reason, 'des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract');
+assert.equal(queueRow.primary_gap_reason, 'des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract');
 
 assert.equal(batchSummary.sole_blocker, 'county_local_disability_resources');
 assert.equal(batchSummary.mohave_reverse_geocode_county, 'Mohave County');
 assert.equal(batchSummary.yavapai_reverse_geocode_county, 'Yavapai County');
 
-assert.match(handoff, /- Arizona: `des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract`/);
+assert.match(handoff, /- Arizona: `des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract`/);
 assert.match(lessons, /Reverse-Geocode Official Coordinates When The One-Line Address Lane Fails/);

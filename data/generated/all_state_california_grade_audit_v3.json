@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T23:49:35.489Z",
+  "generatedAt": "2026-06-26T00:07:16.696Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 40,
@@ -221,7 +221,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch390_arizona_education_clears_county_local_sole_blocker_v1",
-      "packetPrimaryGapReason": "des_roots_still_challenged_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
+      "packetPrimaryGapReason": "des_public_office_page_only_links_nonreviewable_salesforce_locator_and_ahcccs_altcs_html_plus_county_map_still_lack_county_to_office_contract",
       "packetRecommendedBatch": "hold_county_local_until_des_clears_or_ahcccs_publishes_county_to_office_assignments_in_reviewable_html_or_parseable_admin_artifacts"
     },
     {

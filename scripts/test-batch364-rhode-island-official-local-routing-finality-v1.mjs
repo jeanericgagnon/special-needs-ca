@@ -34,7 +34,8 @@ assert.equal(
 assert.match(education.samples[0].source_url, /ride\.ri\.gov\/students-families\/ri-public-schools\/school-directory/);
 assert.match(education.samples[1].evidence_snippet, /authenticated users/i);
 assert.match(education.samples[3].source_url, /www2\.ride\.ri\.gov\/Applications\/MasterDirectory\/Organization_Default\.aspx/);
-assert.match(education.samples[3].evidence_snippet, /HTTP 503/i);
+assert.match(education.samples[3].evidence_snippet, /timing out during bounded review/i);
+assert.match(education.query_basis, /Reviewed 2026-06-25/i);
 
 const county = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(county.family_status, 'verified_state_grade');
