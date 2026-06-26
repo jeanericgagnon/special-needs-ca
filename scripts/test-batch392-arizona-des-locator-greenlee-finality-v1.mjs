@@ -54,24 +54,30 @@ assert.match(failureRows[0].evidence, /At 50 miles the replay returns 1 row, at 
 assert.match(failureRows[0].evidence, /returned DDS rows still only expose office `county` values such as `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`/i);
 assert.match(failureRows[0].evidence, /no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci`/i);
 assert.match(failureRows[0].evidence, /Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci/i);
+assert.match(failureRows[0].evidence, /Greenlee County `Health & County Services` page is live but only routes to county public-health and government-health-link surfaces/i);
+assert.match(failureRows[0].evidence, /Morenci `Directories` page links Greenlee County health and Gila Health care pages but still does not name any DES or AHCCCS county-to-office assignment/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(countyVerified);
-assert.equal(countyVerified.sample_count, 10);
+assert.equal(countyVerified.sample_count, 12);
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DES EOL search contract bundle'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DES DDS office-data county set'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DDS Tucson office Greenlee ZIP coverage'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Greenlee-area 250-mile DDS replay'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Greenlee County useful-links page'));
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Greenlee County Health & County Services page'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Clifton first-party ZIP'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Duncan first-party ZIP'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Morenci first-party ZIP'));
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Morenci health directory page'));
 assert.match(countyVerified.query_basis, /srchParms = \{srchradmiles, ctrlat, ctrlng, schsvccode\}/i);
 assert.match(countyVerified.blocker_evidence, /14 Arizona counties/i);
 assert.match(countyVerified.blocker_evidence, /At 50 miles the replay returns 1 row, at 100 miles 4 rows, at 150 miles 15 rows, and at 250 miles 28 rows/i);
 assert.match(countyVerified.blocker_evidence, /Greenlee locality ZIPs `85533`, `85534`, and `85540`/i);
 assert.match(countyVerified.blocker_evidence, /Safford DDS row remains explicitly `county: Graham`/i);
 assert.match(countyVerified.blocker_evidence, /no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci`/i);
+assert.match(countyVerified.blocker_evidence, /Greenlee County `Health & County Services` page is live but only routes to county public-health and government-health-link surfaces/i);
+assert.match(countyVerified.blocker_evidence, /Morenci `Directories` page links Greenlee County health and Gila Health care pages but still does not name any DES or AHCCCS county-to-office assignment/i);
 
 assert.equal(nextRows.length, 1);
 assert.equal(nextRows[0].family, 'county_local_disability_resources');
