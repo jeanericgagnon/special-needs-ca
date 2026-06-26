@@ -56,6 +56,7 @@ test.describe('Public Launch Smoke Tests', () => {
     expect(text).toContain('/sitemap.xml');
     expect(text).toContain('Allow: /forms');
     expect(text).toContain('Disallow: /dashboard');
+    expect(text).not.toContain('Disallow: /_next/*');
   });
 
   test('/sitemap.xml loads and references child sitemaps', async ({ page }) => {

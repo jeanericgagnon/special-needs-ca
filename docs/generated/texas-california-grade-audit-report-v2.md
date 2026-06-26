@@ -27,17 +27,17 @@
 
 - medicaid_state_health_coverage: verified_state_grade; samples=3; first=https://www.texasable.org
 - medicaid_waiver_hcbs_disability_services: verified_state_grade; samples=3; first=https://www.hhs.texas.gov/providers/long-term-care-providers/community-living-assistance-support-services-class
-- developmental_disability_idd_authority: verified_county_grade; samples=3; first=https://www.access-center.org/
+- developmental_disability_idd_authority: verified_county_grade; samples=0
 - early_intervention_part_c: verified_county_grade; samples=0
-- special_education_idea_part_b: verified_state_grade; samples=3; first=https://www.esc1.net/special-education
-- district_or_county_education_routing: verified_county_grade; samples=3; first=https://www.austinisd.org/special-education
-- vocational_rehabilitation_pre_ets: verified_state_grade; samples=1; first=https://www.twc.texas.gov/services/vocational-rehabilitation
-- protection_and_advocacy: verified_state_grade; samples=3; first=https://www.disabilityrightstx.org
-- parent_training_information_center: verified_state_grade; samples=3; first=https://www.txp2p.org
-- legal_aid: verified_state_grade; samples=3; first=https://legalaidtx.org
+- special_education_idea_part_b: verified_state_grade; samples=0
+- district_or_county_education_routing: verified_county_grade; samples=0
+- vocational_rehabilitation_pre_ets: verified_state_grade; samples=0
+- protection_and_advocacy: verified_state_grade; samples=0
+- parent_training_information_center: verified_state_grade; samples=0
+- legal_aid: verified_state_grade; samples=0
 - able_program: verified_state_grade; samples=1; first=https://www.texasable.org
-- ssi_ssa_federal_reference: verified_state_grade; samples=2; first=https://www.hhs.texas.gov/providers/long-term-care-providers/community-living-assistance-support-services-class
-- county_local_disability_resources: verified_county_grade; samples=3; first=https://doi.org/10.7910/DVN/AVRHMI
+- ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.hhs.texas.gov/providers/long-term-care-providers/community-living-assistance-support-services-class
+- county_local_disability_resources: verified_county_grade; samples=0
 
 ## Next actions
 

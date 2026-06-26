@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getCounties, getCountyDetails, getBulkCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb, RegionalCenter, SchoolDistrict, CountyOffice } from '@/lib/db';
 import { getCountyDiagnosisTruthEligibility, isIndexableState } from '@/lib/publicTruth';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
+import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
 
 // Sitemap expansion batch configuration
 // 1 = Top 10 CA counties, 2 = Top 25 CA counties, 3 = All 58 CA counties, 4 = All CA + county x diagnosis leaves
@@ -18,6 +18,18 @@ const TOP_25_CA_COUNTIES = [
   'stanislaus', 'sonoma', 'solano', 'santa-barbara', 'tulare', 
   'monterey', 'placer', 'san-luis-obispo', 'santa-cruz', 'merced'
 ];
+
+function getYmdDate(dateStr?: string | null): string | null {
+  if (!dateStr) return null;
+  const match = dateStr.match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : null;
+}
+
+function getMaxDate(dates: (string | null | undefined)[]): string | null {
+  const clean = dates.map(d => getYmdDate(d)).filter(Boolean) as string[];
+  if (clean.length === 0) return null;
+  return clean.reduce((max, d) => d > max ? d : max, clean[0]);
+}
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
@@ -41,16 +53,7 @@ export async function GET() {
     }
   } catch (e) {
     console.error('Failed to load counties or bulk details from database:', e);
-    allCounties = [
-      { id: 'los-angeles', name: 'Los Angeles', state_id: 'california', website: '' },
-      { id: 'orange', name: 'Orange', state_id: 'california', website: '' }
-    ];
-    try {
-      const la = await getCountyDetails('los-angeles');
-      if (la) countyDetailsMap.set('los-angeles', la);
-      const oc = await getCountyDetails('orange');
-      if (oc) countyDetailsMap.set('orange', oc);
-    } catch {}
+    return new Response('Database error', { status: 500 });
   }
 
   // Filter counties using evaluateSeoPolicy
@@ -84,10 +87,10 @@ export async function GET() {
 
     const stateId = c.state_id || 'california';
 
-    const policy = evaluateSeoPolicy({
-      routeType: 'county-hub',
+    const policy = getSeoPolicyForRoute('county-hub', {
       stateId,
-      countyId: c.id,
+      countyId: c.id
+    }, {
       entityCount: countyDistricts.length,
       hasOfficialSource: countyHasOfficialSource,
       lastVerifiedDate: lastVerDate,
@@ -126,27 +129,26 @@ export async function GET() {
 
   let xmlUrls = '';
   
-  // Include /benefits index if it's evaluated safely
-  const benefitsIndexPolicy = evaluateSeoPolicy({
-    routeType: 'static-page',
-    stateId: '',
-    hasNoPlaceholderData: true
-  });
-  if (shouldIncludeInSitemap(benefitsIndexPolicy)) {
-    xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>\n`;
-  }
+
 
   // 1. County root directories (/benefits/[state]/[county])
   counties.forEach(county => {
     const stateId = county.state_id || 'california';
+    const details = countyDetailsMap.get(county.id);
+    const rcDates = (details?.regionalCenters || []).map((rc: RegionalCenter) => rc.last_verified_date).filter(Boolean) as string[];
+    const sdDates = (details?.schoolDistricts || []).map((sd: SchoolDistrict) => sd.last_verified_date).filter(Boolean) as string[];
+    const coDates = (details?.countyOffices || []).map((co: CountyOffice) => co.last_verified_date).filter(Boolean) as string[];
+    const allDates = [...rcDates, ...sdDates, ...coDates];
+    const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+    const rcScraped = (details?.regionalCenters || []).map((rc: RegionalCenter) => rc.last_scraped_at);
+    const sdScraped = (details?.schoolDistricts || []).map((sd: SchoolDistrict) => sd.last_scraped_at);
+    const coScraped = (details?.countyOffices || []).map((co: CountyOffice) => co.last_scraped_at);
+    const maxScraped = getMaxDate([...rcScraped, ...sdScraped, ...coScraped]);
+    const lastmodTag = maxScraped ? `\n    <lastmod>${maxScraped}</lastmod>` : '';
+
     xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
@@ -160,11 +162,14 @@ export async function GET() {
     const scores = statePrograms.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
     const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
+    const scrapedDates = statePrograms.map((p: Program) => p.last_scraped_at);
+    const maxScraped = getMaxDate(scrapedDates);
+
     for (const diag of diagnosesSlugs) {
-      const policy = evaluateSeoPolicy({
-        routeType: 'condition-hub',
+      const policy = getSeoPolicyForRoute('condition-hub', {
         stateId: st.id,
-        diagnosisId: diag,
+        diagnosisId: diag
+      }, {
         confidenceScore,
         hasOfficialSource: statePrograms.length > 0 && statePrograms.some((p: Program) => !!p.source_url),
         lastVerifiedDate: minDate,
@@ -172,9 +177,9 @@ export async function GET() {
       });
 
       if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = maxScraped ? `\n    <lastmod>${maxScraped}</lastmod>` : '';
         xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>
-    <lastmod>${minDate || today}</lastmod>
+    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
@@ -211,24 +216,36 @@ export async function GET() {
         const allScores = [...rcScores, ...sdScores, ...coScores];
         const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-        const policy = evaluateSeoPolicy({
-          routeType: 'county-condition',
+        const rcDates = rcList.map((rc: RegionalCenter) => rc.last_verified_date).filter(Boolean) as string[];
+        const sdDates = sdList.map((sd: SchoolDistrict) => sd.last_verified_date).filter(Boolean) as string[];
+        const coDates = coList.map((co: CountyOffice) => co.last_verified_date).filter(Boolean) as string[];
+        const allDates = [...rcDates, ...sdDates, ...coDates];
+        const lastVerDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
+
+        const rcScraped = rcList.map((rc: RegionalCenter) => rc.last_scraped_at);
+        const sdScraped = sdList.map((sd: SchoolDistrict) => sd.last_scraped_at);
+        const coScraped = coList.map((co: CountyOffice) => co.last_scraped_at);
+        const progScraped = matchingPrograms.map((p: Program) => p.last_scraped_at);
+        const maxScraped = getMaxDate([...rcScraped, ...sdScraped, ...coScraped, ...progScraped]);
+
+        const policy = getSeoPolicyForRoute('county-condition', {
           stateId,
           countyId: county.id,
-          diagnosisId: diag,
+          diagnosisId: diag
+        }, {
           entityCount: sdList.length,
           confidenceScore: confScore,
           hasOfficialSource: rcList.some((rc: RegionalCenter) => !!rc.source_url) || sdList.some((sd: SchoolDistrict) => !!sd.source_url) || coList.some((co: CountyOffice) => !!co.source_url),
-          lastVerifiedDate: today,
+          lastVerifiedDate: lastVerDate,
           hasRequiredContactInfo: coList.length > 0,
           hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(countyDetails)),
           hasRealLocalAssets: sdList.length > 0 || coList.length > 0 || rcList.length > 0
         });
 
         if (shouldIncludeInSitemap(policy)) {
+          const lastmodTag = maxScraped ? `\n      <lastmod>${maxScraped}</lastmod>` : '';
           xmlUrls += `  <url>
-      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>
-      <lastmod>${today}</lastmod>
+      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>${lastmodTag}
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
     </url>\n`;

@@ -52,8 +52,9 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
   };
 
   const totalHours = needsSupervision ? getSupervisionHours() : getBasicHours();
-  const estimatedWage = wageRate || 18.50; // QA-ALLOW
+  const estimatedWage = wageRate || 0;
   const monthlyPayout = totalHours * estimatedWage;
+  const hasWage = estimatedWage > 0;
 
   const handlePrint = () => {
     window.print();
@@ -73,7 +74,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
       </div>
 
       <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }} className="no-print">
-        In California, the In-Home Supportive Services (IHSS) program pays parents to act as caregivers for kids with developmental needs. Estimate your family&apos;s hours and tax-free income based on <strong>{countyName} County&apos;s</strong> current wage of <strong>${estimatedWage.toFixed(2)}/hour</strong>.
+        In California, the In-Home Supportive Services (IHSS) program pays parents to act as caregivers for kids with developmental needs. Estimate your family&apos;s hours and tax-free income based on <strong>{countyName} County&apos;s</strong> current wage {hasWage ? <>of <strong>${estimatedWage.toFixed(2)}/hour</strong></> : <><strong>(local rate not verified)</strong></>}.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
@@ -103,103 +104,113 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
                 type="checkbox" 
                 checked={needsSupervision} 
                 onChange={() => {}} 
-                style={{ height: '16px', width: '16px', accentColor: 'var(--primary-color)' }}
+                aria-label="Needs Protective Supervision"
+                style={{ accentColor: 'var(--primary-color)' }}
               />
               <div>
-                <strong style={{ fontSize: '0.88rem', display: 'block' }}>Needs 24/7 Protective Supervision</strong>
-                <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', display: 'block' }}>
-                  Required for elopement/wandering, self-injury risk, or lack of safety awareness.
+                <strong style={{ display: 'block', fontSize: '0.85rem', color: 'var(--text-main)' }}>Needs Protective Supervision</strong>
+                <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '0.1rem' }}>
+                  For kids with severe autism, epilepsy, or cognitive delay who need 24/7 watch to prevent injury.
                 </span>
               </div>
             </div>
           </div>
 
           {!needsSupervision ? (
-            <>
-              <div>
-                <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem' }}>
-                  <span>Eating / Feeding Support</span>
-                  <span style={{ color: 'var(--primary-color)' }}>Rank {eatingScore}</span>
-                </label>
-                <input 
-                  type="range" 
-                  min="1" 
-                  max="5" 
-                  value={eatingScore} 
-                  onChange={(e) => setEatingScore(parseInt(e.target.value))}
-                  style={{ width: '100%', accentColor: 'var(--primary-color)' }}
-                />
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
-                  {eatingScore === 1 && 'Independent feeding.'}
-                  {eatingScore === 2 && 'Needs cutting, minor supervision.'}
-                  {eatingScore === 3 && 'Needs prompting, physical assistance.'}
-                  {eatingScore >= 4 && 'Complete feeding assistance required.'}
-                </span>
-              </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <span style={{ fontSize: '0.95rem', fontWeight: 700, display: 'block', color: 'var(--text-main)' }}>
+                Activities of Daily Living (ADLs)
+              </span>
+              <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: 0 }}>
+                Rank your child&apos;s need from 1 (independent) to 5 (totally dependent/requires physical assistance).
+              </p>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginTop: '0.5rem' }}>
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', fontWeight: 600, marginBottom: '0.25rem' }}>
+                    <span>Eating & Feeding: Rank {eatingScore}</span>
+                    <span style={{ color: 'var(--primary-color)' }}>{eatingScore >= 4 ? 'High Need' : eatingScore >= 2 ? 'Some Need' : 'Independent'}</span>
+                  </div>
+                  <input 
+                    type="range" 
+                    min="1" 
+                    max="5" 
+                    value={eatingScore} 
+                    onChange={(e) => setEatingScore(parseInt(e.target.value))}
+                    style={{ width: '100%', accentColor: 'var(--primary-color)' }}
+                  />
+                  <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
+                    {eatingScore === 1 && 'Independent feeding.'}
+                    {eatingScore === 2 && 'Needs cutting, minor supervision.'}
+                    {eatingScore === 3 && 'Needs prompting, physical assistance.'}
+                    {eatingScore >= 4 && 'Complete feeding assistance required.'}
+                  </span>
+                </div>
 
-              <div>
-                <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem' }}>
-                  <span>Dressing & Grooming</span>
-                  <span style={{ color: 'var(--primary-color)' }}>Rank {dressingScore}</span>
-                </label>
-                <input 
-                  type="range" 
-                  min="1" 
-                  max="5" 
-                  value={dressingScore} 
-                  onChange={(e) => setDressingScore(parseInt(e.target.value))}
-                  style={{ width: '100%', accentColor: 'var(--primary-color)' }}
-                />
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
-                  {dressingScore === 1 && 'Independent dressing.'}
-                  {dressingScore === 2 && 'Needs help with buttons/fasteners.'}
-                  {dressingScore === 3 && 'Requires sorting and physical assistance.'}
-                  {dressingScore >= 4 && 'Must be completely dressed by caregiver.'}
-                </span>
-              </div>
+                <div>
+                  <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem' }}>
+                    <span>Dressing & Grooming</span>
+                    <span style={{ color: 'var(--primary-color)' }}>Rank {dressingScore}</span>
+                  </label>
+                  <input 
+                    type="range" 
+                    min="1" 
+                    max="5" 
+                    value={dressingScore} 
+                    onChange={(e) => setDressingScore(parseInt(e.target.value))}
+                    style={{ width: '100%', accentColor: 'var(--primary-color)' }}
+                  />
+                  <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
+                    {dressingScore === 1 && 'Independent dressing.'}
+                    {dressingScore === 2 && 'Needs help with buttons/fasteners.'}
+                    {dressingScore === 3 && 'Requires sorting and physical assistance.'}
+                    {dressingScore >= 4 && 'Must be completely dressed by caregiver.'}
+                  </span>
+                </div>
 
-              <div>
-                <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem' }}>
-                  <span>Bathing & Hygiene</span>
-                  <span style={{ color: 'var(--primary-color)' }}>Rank {bathingScore}</span>
-                </label>
-                <input 
-                  type="range" 
-                  min="1" 
-                  max="5" 
-                  value={bathingScore} 
-                  onChange={(e) => setBathingScore(parseInt(e.target.value))}
-                  style={{ width: '100%', accentColor: 'var(--primary-color)' }}
-                />
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
-                  {bathingScore === 1 && 'Independent bathing.'}
-                  {bathingScore === 2 && 'Requires setup and tub supervision.'}
-                  {bathingScore === 3 && 'Needs active washing assistance.'}
-                  {bathingScore >= 4 && 'Full physical assistance required.'}
-                </span>
-              </div>
+                <div>
+                  <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem' }}>
+                    <span>Bathing & Hygiene</span>
+                    <span style={{ color: 'var(--primary-color)' }}>Rank {bathingScore}</span>
+                  </label>
+                  <input 
+                    type="range" 
+                    min="1" 
+                    max="5" 
+                    value={bathingScore} 
+                    onChange={(e) => setBathingScore(parseInt(e.target.value))}
+                    style={{ width: '100%', accentColor: 'var(--primary-color)' }}
+                  />
+                  <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
+                    {bathingScore === 1 && 'Independent bathing.'}
+                    {bathingScore === 2 && 'Requires setup and tub supervision.'}
+                    {bathingScore === 3 && 'Needs active washing assistance.'}
+                    {bathingScore >= 4 && 'Full physical assistance required.'}
+                  </span>
+                </div>
 
-              <div>
-                <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem' }}>
-                  <span>Ambulation & Transfers</span>
-                  <span style={{ color: 'var(--primary-color)' }}>Rank {mobilityScore}</span>
-                </label>
-                <input 
-                  type="range" 
-                  min="1" 
-                  max="5" 
-                  value={mobilityScore} 
-                  onChange={(e) => setMobilityScore(parseInt(e.target.value))}
-                  style={{ width: '100%', accentColor: 'var(--primary-color)' }}
-                />
-                <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
-                  {mobilityScore === 1 && 'Independent walking.'}
-                  {mobilityScore === 2 && 'Needs close guarding/wheelchair steering.'}
-                  {mobilityScore === 3 && 'Requires hand-holding or gait assistance.'}
-                  {mobilityScore >= 4 && 'Requires physical lifting/transfers.'}
-                </span>
+                <div>
+                  <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.4rem' }}>
+                    <span>Ambulation & Transfers</span>
+                    <span style={{ color: 'var(--primary-color)' }}>Rank {mobilityScore}</span>
+                  </label>
+                  <input 
+                    type="range" 
+                    min="1" 
+                    max="5" 
+                    value={mobilityScore} 
+                    onChange={(e) => setMobilityScore(parseInt(e.target.value))}
+                    style={{ width: '100%', accentColor: 'var(--primary-color)' }}
+                  />
+                  <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.2rem' }}>
+                    {mobilityScore === 1 && 'Independent walking.'}
+                    {mobilityScore === 2 && 'Needs close guarding/wheelchair steering.'}
+                    {mobilityScore === 3 && 'Requires hand-holding or gait assistance.'}
+                    {mobilityScore >= 4 && 'Requires physical lifting/transfers.'}
+                  </span>
+                </div>
               </div>
-            </>
+            </div>
           ) : (
             <div style={{ padding: '1rem', background: '#f0fdf4', borderRadius: '12px', border: '1px solid #bbf7d0' }}>
               <span style={{ display: 'block', fontSize: '0.88rem', color: '#166534', fontWeight: 700, marginBottom: '0.25rem' }}>
@@ -228,17 +239,23 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
               Estimated Caregiver Income (Tax-Free)
             </span>
             <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#10b981', margin: '0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <DollarSign size={28} />
-              {monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-              <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
+              {hasWage ? (
+                <>
+                  <DollarSign size={28} />
+                  {monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                  <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
+                </>
+              ) : (
+                <span style={{ fontSize: '1.5rem', color: '#6b7280', fontWeight: 700 }}>Not verified</span>
+              )}
             </div>
             <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', fontStyle: 'italic', display: 'block', marginTop: '0.25rem' }}>
-              Based on {countyName} County wage of ${estimatedWage.toFixed(2)}/hr.
+              {hasWage ? `Based on ${countyName} County wage of $${estimatedWage.toFixed(2)}/hr.` : `Check the official agency source for local rates.`}
             </span>
           </div>
 
           <div style={{ background: 'white', padding: '1rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.04)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
+            <span style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
               <ShieldCheck size={15} color="var(--primary-color)" /> Legal Assessment Tip
             </span>
             <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.4 }}>
@@ -252,7 +269,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
       {/* Print representation */}
       <div className="print-only" style={{ display: 'none', borderTop: '2px solid #000', paddingTop: '1.5rem', marginTop: '2rem' }}>
         <h3 style={{ fontSize: '1.3rem', margin: '0 0 0.5rem 0' }}>In-Home Supportive Services (IHSS) Estimate Breakdown</h3>
-        <p style={{ fontSize: '0.9rem', color: '#666' }}>Location: <strong>{countyName} County, CA</strong> | Caregiver Wage: <strong>${estimatedWage.toFixed(2)}/hour</strong></p>
+        <p style={{ fontSize: '0.9rem', color: '#666' }}>Location: <strong>{countyName} County, CA</strong> | Caregiver Wage: <strong>{hasWage ? `$${estimatedWage.toFixed(2)}/hour` : 'local rate not verified'}</strong></p>
         
         <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
           <thead>

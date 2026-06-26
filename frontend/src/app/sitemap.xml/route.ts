@@ -1,26 +1,116 @@
 import { NextResponse } from 'next/server';
+import { navigatorDb } from '@/lib/db';
+import { getSeoPolicyForRoute, shouldIncludeInSitemap } from '@/lib/seo-policy';
+import { CITIES } from '@/lib/cities';
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
-  
+
+  // 1. Derive lastmod dates from the max verification date of the database
+  let maxDate: string | null = null;
+  try {
+    const result = await navigatorDb.prepare(`
+      SELECT MAX(last_verified_date) as max_date 
+      FROM (
+        SELECT last_verified_date FROM programs
+        UNION
+        SELECT last_verified_date FROM school_districts
+        UNION
+        SELECT last_verified_date FROM county_offices
+        UNION
+        SELECT last_verified_date FROM regional_centers
+      )
+    `).get() as { max_date: string | null } | undefined;
+    if (result?.max_date) {
+      maxDate = result.max_date;
+    }
+  } catch (err) {
+    console.error('Failed to query max verification date:', err);
+  }
+
+  // 2. Check if districts.xml has any indexable URLs
+  let hasDistricts = false;
+  try {
+    const activeDistricts = await navigatorDb.prepare(`
+      SELECT DISTINCT sd.id, c.state_id, sd.last_verified_date
+      FROM school_districts sd
+      JOIN counties c ON sd.county_id = c.id
+      JOIN legal_decisions ld ON sd.id = ld.school_district_id
+    `).all() as { id: string; state_id: string; last_verified_date: string | null }[];
+
+    for (const d of activeDistricts) {
+      const policy = getSeoPolicyForRoute('school-district', {
+        stateId: d.state_id,
+        programId: d.id
+      }, {
+        lastVerifiedDate: d.last_verified_date,
+        hasNoPlaceholderData: true
+      });
+      if (shouldIncludeInSitemap(policy)) {
+        hasDistricts = true;
+        break;
+      }
+    }
+  } catch (err) {
+    console.error('Failed to check districts count for sitemap index:', err);
+  }
+
+  // 3. Check if cities.xml has any indexable URLs
+  let hasCities = false;
+  try {
+    const counties = await navigatorDb.prepare('SELECT id, state_id FROM counties').all() as { id: string; state_id: string }[];
+    const countyStateMap = new Map<string, string>();
+    for (const c of counties) {
+      if (c.state_id) {
+        countyStateMap.set(c.id, c.state_id);
+      }
+    }
+    const coreDiagnoses = ['autism-spectrum-disorder', 'adhd', 'down-syndrome', 'speech-or-language-delay', 'cerebral-palsy', 'epilepsy'];
+
+    for (const city of CITIES) {
+      const stateId = countyStateMap.get(city.countyId);
+      if (!stateId) continue;
+      for (const diag of coreDiagnoses) {
+        const policy = getSeoPolicyForRoute('city', {
+          stateId,
+          countyId: city.countyId,
+          diagnosisId: diag
+        });
+        if (shouldIncludeInSitemap(policy)) {
+          hasCities = true;
+          break;
+        }
+      }
+      if (hasCities) break;
+    }
+  } catch (err) {
+    console.error('Failed to check cities count for sitemap index:', err);
+  }
+
+  const lastmodTag = maxDate ? `\n    <lastmod>${maxDate}</lastmod>` : '';
+
+  let sitemapsXml = `  <sitemap>
+    <loc>${baseUrl}/sitemaps/static.xml</loc>${lastmodTag}
+  </sitemap>
+  <sitemap>
+    <loc>${baseUrl}/sitemaps/counties.xml</loc>${lastmodTag}
+  </sitemap>`;
+
+  if (hasDistricts) {
+    sitemapsXml += `\n  <sitemap>
+    <loc>${baseUrl}/sitemaps/districts.xml</loc>${lastmodTag}
+  </sitemap>`;
+  }
+
+  if (hasCities) {
+    sitemapsXml += `\n  <sitemap>
+    <loc>${baseUrl}/sitemaps/cities.xml</loc>${lastmodTag}
+  </sitemap>`;
+  }
+
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>${baseUrl}/sitemaps/static.xml</loc>
-    <lastmod>2026-05-31</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemaps/counties.xml</loc>
-    <lastmod>2026-05-31</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemaps/districts.xml</loc>
-    <lastmod>2026-06-21</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>${baseUrl}/sitemaps/cities.xml</loc>
-    <lastmod>2026-06-21</lastmod>
-  </sitemap>
+${sitemapsXml}
 </sitemapindex>`;
 
   return new NextResponse(xml, {
