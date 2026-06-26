@@ -59,6 +59,19 @@ const countyVerified = verifiedRows.find((row) => row.family === 'county_local_d
 assert.equal(countyVerified.family_status, 'blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden');
 assert.match(countyVerified.blocker_evidence, /robots\.txt/);
 
+const waiverVerified = verifiedRows.find((row) => row.family === 'medicaid_waiver_hcbs_disability_services');
+assert.equal(waiverVerified.samples[0].verification_status, 'blocked');
+assert.equal(waiverVerified.samples[0].source_type, 'saved_replacement_leaf_unresolvable');
+assert.match(waiverVerified.samples[0].evidence_snippet, /DNS-dead/i);
+
+const ddVerified = verifiedRows.find((row) => row.family === 'developmental_disability_idd_authority');
+assert.equal(ddVerified.samples[0].verification_status, 'blocked');
+assert.equal(ddVerified.samples[0].source_type, 'saved_replacement_leaf_unresolvable');
+
+const eiVerified = verifiedRows.find((row) => row.family === 'early_intervention_part_c');
+assert.equal(eiVerified.samples[0].verification_status, 'blocked');
+assert.equal(eiVerified.samples[0].source_type, 'saved_replacement_leaf_unresolvable');
+
 const queueRow = queueRows.find((row) => row.state === 'new-hampshire');
 assert.equal(queueRow.primary_gap_reason, 'official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead');
 assert.equal(queueRow.recommended_batch, 'hold_for_public_official_nh_host_recovery_or_export');

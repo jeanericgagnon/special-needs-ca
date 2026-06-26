@@ -356,7 +356,39 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
     if (['medicaid_state_health_coverage','medicaid_waiver_hcbs_disability_services','developmental_disability_idd_authority','early_intervention_part_c','county_local_disability_resources'].includes(row.family)) {
-      return { ...row, family_status: row.family === 'county_local_disability_resources' ? COUNTY_STATUS : SHARED_DHHS_STATUS, blocker_evidence: DHHS_REASON };
+      const downgradedSamples = (row.samples || []).map((sample) => {
+        if (sample.source_url === 'https://dhhs.new-hampshire.gov/dd/waivers') {
+          return {
+            ...sample,
+            verification_status: 'blocked',
+            source_type: 'saved_replacement_leaf_unresolvable',
+            evidence_snippet: 'The saved DHHS waiver replacement leaf is now DNS-dead, so it no longer preserves a public official waiver lane.'
+          };
+        }
+        if (sample.source_url === 'https://dhhs.new-hampshire.gov/dd') {
+          return {
+            ...sample,
+            verification_status: 'blocked',
+            source_type: 'saved_replacement_leaf_unresolvable',
+            evidence_snippet: 'The saved DHHS developmental-disabilities replacement leaf is now DNS-dead, so it no longer preserves a public official DD intake lane.'
+          };
+        }
+        if (sample.source_url === 'https://dhhs.new-hampshire.gov/earlystart') {
+          return {
+            ...sample,
+            verification_status: 'blocked',
+            source_type: 'saved_replacement_leaf_unresolvable',
+            evidence_snippet: 'The saved DHHS early-intervention replacement leaf is now DNS-dead, so it no longer preserves a public official Early Start lane.'
+          };
+        }
+        return sample;
+      });
+      return {
+        ...row,
+        family_status: row.family === 'county_local_disability_resources' ? COUNTY_STATUS : SHARED_DHHS_STATUS,
+        blocker_evidence: DHHS_REASON,
+        samples: downgradedSamples,
+      };
     }
     return { ...row };
   });
