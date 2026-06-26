@@ -46,6 +46,7 @@ assert.equal(summary.final_blockers.length, 1);
 assert.equal(summary.final_blockers[0].family, 'county_local_disability_resources');
 assert.match(summary.final_blockers[0].evidence, /browser-reviewed lane/i);
 assert.match(summary.final_blockers[0].evidence, /groups offices only by broad regions/i);
+assert.match(summary.final_blockers[0].evidence, /no borough or census-area contract terms such as `borough`, `census area`, `Anchorage Municipality`, `Kenai Peninsula Borough`, `Bethel Census Area`, or `Nome Census Area`/i);
 assert.match(summary.final_blockers[0].evidence, /still return HTTP 403 with the Cloudflare title "Just a moment\.\.\."/i);
 
 const failure = failureRows.find((row) => row.family === 'county_local_disability_resources');
@@ -67,6 +68,8 @@ assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DFCS 
 const officesSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DPA offices directory');
 assert.match(officesSample.evidence_snippet, /regional offices, office hours, addresses, fax numbers/i);
 assert.match(officesSample.evidence_snippet, /does not assign boroughs or census areas/i);
+assert.match(officesSample.evidence_snippet, /Anchorage Municipality/i);
+assert.match(officesSample.evidence_snippet, /Kenai Peninsula Borough/i);
 
 const next = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(next);
@@ -86,6 +89,7 @@ assert.equal(alaskaQueue.repair_lane, 'blocked_until_new_official_public_county_
 assert.match(stateReport, /The official Department of Health DPA offices page is publicly readable in the reviewed browser lane\./);
 assert.match(stateReport, /raw low-token lane still gets Cloudflare `Just a moment\.\.\.` 403 shells/i);
 assert.match(stateReport, /live public search page still expose no borough- or census-area DPA office contract/i);
+assert.match(stateReport, /no borough\/census-area contract terms on the reviewed page/i);
 assert.match(allStateReport, /browser-readable again and proves regional offices plus contacts/i);
 assert.match(handoff, /## Current Focus State: Alaska/);
 assert.match(handoff, /dual-lane rather than challenge-only/i);

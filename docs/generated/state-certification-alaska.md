@@ -19,16 +19,3 @@
 
 ## Family Snapshot
 
-- medicaid_state_health_coverage: verified_state_grade
-- medicaid_waiver_hcbs_disability_services: verified_state_grade
-- developmental_disability_idd_authority: verified_state_grade
-- early_intervention_part_c: verified_state_grade
-- special_education_idea_part_b: verified_state_grade
-- district_or_county_education_routing: verified_state_grade
-- vocational_rehabilitation_pre_ets: verified_state_grade
-- protection_and_advocacy: verified_state_grade
-- parent_training_information_center: verified_state_grade
-- legal_aid: verified_state_grade
-- able_program: verified_state_grade
-- ssi_ssa_federal_reference: verified_state_grade
-- county_local_disability_resources: blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract
