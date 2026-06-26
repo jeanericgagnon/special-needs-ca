@@ -45,6 +45,8 @@ assert.equal(countyGap.family_status, 'blocked_des_locator_explicit_for_14_count
 assert.match(countyGap.status_reason, /first-party bundle at `EOLSalesforceScript\.js` exposes the live search contract `srchParms = \{srchradmiles, ctrlat, ctrlng, schsvccode\}`/i);
 assert.match(countyGap.status_reason, /public `Developmental Disability Services` lane still exposes explicit office `county` values for only 14 Arizona counties overall/i);
 assert.match(countyGap.status_reason, /Greenlee locality ZIPs `85533`, `85534`, and `85540`/i);
+assert.match(countyGap.status_reason, /ALTCS_CountyMap\.pdf.*200 HTML `Document not found` shells/i);
+assert.match(countyGap.status_reason, /ALTCSlocations\.html` remains live but still does not name Greenlee County/i);
 
 assert.equal(failureRows.length, 1);
 assert.equal(failureRows[0].family, 'county_local_disability_resources');
@@ -56,10 +58,13 @@ assert.match(failureRows[0].evidence, /no returned row contains literal `Greenle
 assert.match(failureRows[0].evidence, /Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci/i);
 assert.match(failureRows[0].evidence, /Greenlee County `Health & County Services` page is live but only routes to county public-health and government-health-link surfaces/i);
 assert.match(failureRows[0].evidence, /Morenci `Directories` page links Greenlee County health and Gila Health care pages but still does not name any DES or AHCCCS county-to-office assignment/i);
+assert.match(failureRows[0].evidence, /ALTCS_CountyMap\.pdf.*200 HTML `Document not found` shells/i);
+assert.match(failureRows[0].evidence, /AHCCCScontacts\.html.*200 HTML `Document not found` shells/i);
+assert.match(failureRows[0].evidence, /ALTCSlocations\.html` remains live but still does not name Greenlee County/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(countyVerified);
-assert.equal(countyVerified.sample_count, 12);
+assert.equal(countyVerified.sample_count, 14);
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DES EOL search contract bundle'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DES DDS office-data county set'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DDS Tucson office Greenlee ZIP coverage'));
@@ -70,6 +75,8 @@ assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town o
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Duncan first-party ZIP'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Morenci first-party ZIP'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Morenci health directory page'));
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'AHCCCS ALTCS county map stale shell'));
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'AHCCCS contacts stale shell'));
 assert.match(countyVerified.query_basis, /srchParms = \{srchradmiles, ctrlat, ctrlng, schsvccode\}/i);
 assert.match(countyVerified.blocker_evidence, /14 Arizona counties/i);
 assert.match(countyVerified.blocker_evidence, /At 50 miles the replay returns 1 row, at 100 miles 4 rows, at 150 miles 15 rows, and at 250 miles 28 rows/i);
@@ -78,6 +85,9 @@ assert.match(countyVerified.blocker_evidence, /Safford DDS row remains explicitl
 assert.match(countyVerified.blocker_evidence, /no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci`/i);
 assert.match(countyVerified.blocker_evidence, /Greenlee County `Health & County Services` page is live but only routes to county public-health and government-health-link surfaces/i);
 assert.match(countyVerified.blocker_evidence, /Morenci `Directories` page links Greenlee County health and Gila Health care pages but still does not name any DES or AHCCCS county-to-office assignment/i);
+assert.match(countyVerified.blocker_evidence, /ALTCS_CountyMap\.pdf.*200 HTML `Document not found` shells/i);
+assert.match(countyVerified.blocker_evidence, /AHCCCScontacts\.html.*200 HTML `Document not found` shells/i);
+assert.match(countyVerified.blocker_evidence, /ALTCSlocations\.html` remains live but still does not name Greenlee County/i);
 
 assert.equal(nextRows.length, 1);
 assert.equal(nextRows[0].family, 'county_local_disability_resources');
@@ -96,9 +106,15 @@ assert.equal(batchSummary.missing_explicit_county, 'Greenlee');
 assert.deepEqual(batchSummary.greenlee_zip_served_values, ['85533', '85534', '85540']);
 assert.deepEqual(batchSummary.recovered_search_params, ['srchradmiles', 'ctrlat', 'ctrlng', 'schsvccode']);
 assert.deepEqual(batchSummary.greenlee_replay_row_counts_by_radius, { '50': 1, '100': 4, '150': 15, '250': 28 });
+assert.deepEqual(batchSummary.ahcccs_stale_fallback_urls, [
+  'https://www.azahcccs.gov/Members/Downloads/ALTCS_CountyMap.pdf',
+  'https://www.azahcccs.gov/AHCCCS/Downloads/AHCCCScontacts.html',
+]);
+assert.equal(batchSummary.ahcccs_live_fallback_page, 'https://www.azahcccs.gov/Members/ALTCSlocations.html');
 assert.deepEqual(batchSummary.counts_unchanged, { complete: 43, blocked: 7, indexSafe: 43 });
 
 assert.match(report, /proves explicit county-local routing for 14 counties and preserves disability-specific Greenlee locality ZIP coverage/i);
+assert.match(report, /ALTCS county-map and AHCCCS contacts URLs now return 200 HTML `Document not found` shells/i);
 assert.match(handoff, /- Arizona: `official_des_locator_returns_14_explicit_counties_and_greenlee_zip_served_localities_but_no_reviewed_greenlee_county_contract`/);
 assert.match(lessons, /Public Visualforce Locator APIs Can Become Reviewable Official Evidence/);
 

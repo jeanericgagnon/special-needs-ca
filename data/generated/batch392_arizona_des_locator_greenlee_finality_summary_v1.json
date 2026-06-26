@@ -23,6 +23,11 @@
     "150": 15,
     "250": 28
   },
+  "ahcccs_stale_fallback_urls": [
+    "https://www.azahcccs.gov/Members/Downloads/ALTCS_CountyMap.pdf",
+    "https://www.azahcccs.gov/AHCCCS/Downloads/AHCCCScontacts.html"
+  ],
+  "ahcccs_live_fallback_page": "https://www.azahcccs.gov/Members/ALTCSlocations.html",
   "completeness_pct": 92,
   "counts_unchanged": {
     "complete": 43,
