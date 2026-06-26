@@ -18,42 +18,50 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - New Mexico: `official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 
-## Current Focus State: Maine
+## Current Focus State: New Hampshire
 
 ### Blocker Reason
 
-`county_local_disability_resources` is still the only remaining Maine critical blocker. One more bounded official pass widened from the DHHS public navigation stack and official Maine search host to include the live OFI Data & Reports lane. District Office Locations still preserves office towns, addresses, phones, emails, map shortlinks, and OFI program notes, but no county-served or service-area fields. OFI Contact only loops back to district offices plus statewide eligibility/help routing. OFI Programs & Services stays generic. Offices/Divisions and Administrative Office Locations add office and division labels plus addresses like Family Independence in Augusta and Health Insurance Marketplace in Portland, but still no county routing. The DHHS sitemap only reconfirms the same office leaves. Sampled `Show Map` shortlinks still only resolve to raw Google Maps address geocodes such as `35 Anthony Ave, Augusta, ME 04330` and `19 Maine Ave, Bangor, ME 04401`. The live OFI Data & Reports page now also exposes official `Geographic Distribution` and `Geographic Overflow` PDFs plus county and county-and-town spreadsheets, but the reviewed PDFs still contain only county-level and town-level program counts rather than office names, office identifiers, or county-to-office assignments. And the public `maine.gov/search` query pages stay live but only replay the generic portal shell without county-routing or district-office assignment results. Maine remains BLOCKED because the official host family still proves office addresses, labels, and counts, not county assignment.
+`medicaid_state_health_coverage` is the highest-priority New Hampshire blocker because the same official host-family failure still blocks Medicaid, waiver, DD, early-intervention, and county-local routing together. Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved replacement roots still fail DNS resolution. The direct DHHS roots and exact `/dhhs` successor roots still return the same short `Access Denied` shell with HTTP 403. One more bounded diagnostic pass now shows that even `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, and `https://www.nh.gov/dhhs/sitemap.xml` return the same short 403 shell, so no public successor or export lane is currently preserved on the official DHHS family. Education remains separately blocked because `education.nh.gov`, `www.education.nh.gov`, exact district-directory leaves, `my.doe.nh.gov/ehb/`, and the obvious `nh.gov` education successors all still return that same shell. VR remains separately blocked because the NHES roots, the BVR disabilities path, and the likely `nh.gov` successors still return the same 403 shell or do not resolve. New Hampshire therefore stays BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official Maine DHHS, OFI, or Maine search-discoverable county/service-area crosswalk that ties counties to the named district office towns on the public DHHS office page.
-- Any official Maine DHHS or OFI office export, table, PDF, workbook, ArcGIS layer, or API that exposes office names together with county-served or service-area fields.
-- Any official county-grade routing contract on a successor Maine DHHS surface that is public and reviewable without inference.
+- Any reviewed public official New Hampshire DHHS host that actually renders Medicaid, DD, waiver, early-intervention, or district-office content instead of the Access Denied shell.
+- Any public official district-office or county-export surface on the DHHS family that provides real county or district-office routing.
+- Any reviewed public official New Hampshire education directory or district-profile surface that returns district- or county-grade routing instead of the Access Denied shell.
+- Any reviewed public official New Hampshire VR or BVR surface that loads publicly instead of the same blocked shell.
 
 ### Useful Official URLs Already Tried
 
-- [Maine DHHS District Office Locations](https://www.maine.gov/dhhs/about/contact/offices)
-- [Maine OFI Contact page](https://www.maine.gov/dhhs/ofi/about-us/contact)
-- [Maine OFI Programs & Services](https://www.maine.gov/dhhs/ofi/programs-services)
-- [Maine OFI Data & Reports](https://www.maine.gov/dhhs/ofi/about-us/data-reports)
-- [Maine DHHS Offices/Divisions](https://www.maine.gov/dhhs/offices-divisions)
-- [Maine DHHS Administrative Office Locations](https://www.maine.gov/dhhs/about/contact/administrative-offices)
-- [Maine DHHS Sitemap](https://www.maine.gov/dhhs/about/sitemap)
-- [May 2026 Geographic Distribution Report](https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/MayGEORevisedReport2026%20%28002%29.pdf)
-- [May 2026 Geographic Overflow Report](https://www.maine.gov/dhhs/sites/maine.gov.dhhs/files/inline-files/May%202026%20Geographich%20Overflow%20Report.pdf)
-- [Official Maine Search: Aroostook district office dhhs](https://www.maine.gov/search/?q=Aroostook%20district%20office%20dhhs)
-- [Official Maine Search: county district office ofi](https://www.maine.gov/search/?q=county%20district%20office%20ofi)
-- [Sample Show Map: Augusta office](https://goo.gl/maps/D71ZqAnXQcp)
-- [Sample Show Map: Bangor office](https://goo.gl/maps/LRVMzcdK23Mxx7g29)
+- [DHHS root](https://www.dhhs.nh.gov/)
+- [DHHS root without www](https://dhhs.nh.gov/)
+- [DHHS robots.txt](https://www.dhhs.nh.gov/robots.txt)
+- [DHHS sitemap.xml](https://www.dhhs.nh.gov/sitemap.xml)
+- [saved replacement root](https://dhhs.new-hampshire.gov/)
+- [saved DD replacement root](https://dhhs.new-hampshire.gov/dd)
+- [saved waiver replacement root](https://dhhs.new-hampshire.gov/dd/waivers)
+- [saved early-intervention replacement root](https://dhhs.new-hampshire.gov/earlystart)
+- [nh.gov DHHS successor root](https://www.nh.gov/dhhs/)
+- [nh.gov DHHS robots.txt](https://www.nh.gov/dhhs/robots.txt)
+- [nh.gov DHHS sitemap.xml](https://www.nh.gov/dhhs/sitemap.xml)
+- [nh.gov DHHS contact-us](https://www.nh.gov/dhhs/contact-us/)
+- [nh.gov DHHS district offices](https://www.nh.gov/dhhs/district-offices/)
+- [Education root](https://www.education.nh.gov/)
+- [Education root without www](https://education.nh.gov/)
+- [nh.gov Education successor](https://www.nh.gov/education/)
+- [nh.gov Education DOE successor](https://www.nh.gov/education/doe/)
+- [DOE alternate host](https://my.doe.nh.gov/ehb/)
+- [NHES root](https://www.nhes.nh.gov/)
+- [NHES root without www](https://nhes.nh.gov/)
+- [NHES successor root](https://www.nh.gov/nhes/)
+- [nh.gov employment successor](https://www.nh.gov/employment/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any official DHHS/OFI workbook or export that contains office names plus county or service-area fields, not just program counts or address maps.
-- Any official office-assignment artifact behind the district office page, OFI Data & Reports lane, administrative office page, or official Maine search index that binds district offices to counties.
+- Any newly public official NH DHHS successor host or export that resolves without the Access Denied shell.
+- Any official New Hampshire education directory, profile export, or district-routing surface that becomes publicly reviewable on the current host family.
+- Any official New Hampshire VR or BVR surface that becomes publicly reviewable on the current host family.
 
-## Next State Order After Maine
+## Next State Order After New Hampshire
 
-1. Idaho
-2. New Mexico
-3. Arizona
-4. New Hampshire
+1. None remaining in assigned sequence
