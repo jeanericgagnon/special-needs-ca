@@ -33,6 +33,10 @@ assert.match(districtGap.status_reason, /camascountyschools\.org.*sitemap\.xml.*
 assert.match(districtGap.status_reason, /same-host href scan.*all-resources/i);
 assert.match(districtGap.status_reason, /`Food Services` link/i);
 assert.match(districtGap.status_reason, /clarkcountyschools161\.org.*sitemap\.xml.*HTTP 404/i);
+assert.match(districtGap.status_reason, /older short aliases `\/contact-us`, `\/title-ix`, and `\/parent-notification-of-general-education-instruction` now return HTTP 404/i);
+assert.match(districtGap.status_reason, /about-us\/contact-us-ccsd/i);
+assert.match(districtGap.status_reason, /administration\/title-ix/i);
+assert.match(districtGap.status_reason, /about-us\/parent-notification-of-general-education-instruction/i);
 assert.match(districtGap.status_reason, /same-host anchor-text scan.*Parent Resources/i);
 assert.match(districtGap.status_reason, /Idaho Child Find.*English and Spanish flyer PDFs/i);
 
@@ -62,6 +66,8 @@ assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 one more boun
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/idaho-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /live DHW sitemap confirms office inventory/i);
 assert.match(report, /the `all-resources` page still only exposes a `Food Services` link/i);
+assert.match(report, /older short aliases/i);
+assert.match(report, /replacement exact leaves remain live instead/i);
 
 const batchSummary = readJson('data/generated/batch397_idaho_live_sitemap_finality_summary_v1.json');
 assert.equal(batchSummary.idaho_dhw_sitemap_live, true);
@@ -82,6 +88,7 @@ assert.equal(auditRow.packetPrimaryGapReason, 'remaining_idaho_camas_and_clark_s
 
 const allStateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/all-state-california-grade-audit-report-v3.md'), 'utf8');
 assert.match(allStateReport, /final live sitemap pass/i);
+assert.match(allStateReport, /dead short aliases but live replacement Contact Us, Title IX, and general-education notice leaves/i);
 assert.match(allStateReport, /live Idaho DHW sitemap confirms office inventory but still no county-to-office contract/i);
 
 const handoff = fs.readFileSync(path.join(repoRoot, 'docs/generated/gemini-source-scout-handoff.md'), 'utf8');

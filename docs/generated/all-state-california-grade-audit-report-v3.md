@@ -29,7 +29,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 
 - New Hampshire remains blocked after a direct host-family recheck: the saved `dhhs.new-hampshire.gov` replacement roots are still DNS-dead, the exact DHHS, education, NHES, and obvious `nh.gov` successor roots still return the same short Access Denied shell with HTTP 403, and even the DHHS/`nh.gov` robots.txt and sitemap.xml diagnostics return that same shell.
-- Idaho remains blocked after a final live sitemap pass: Camas only exposes contact routing plus a board-roster Google Doc and a 404 sitemap, Clark only exposes Contact Us, Title IX, general-education notice attachments, image-only Child Find flyers, and a 404 sitemap, and the live Idaho DHW sitemap confirms office inventory but still no county-to-office contract.
+- Idaho remains blocked after a final live sitemap pass: Camas only exposes contact routing plus a board-roster Google Doc and a 404 sitemap, Clark now has dead short aliases but live replacement Contact Us, Title IX, and general-education notice leaves that are still the wrong role, and the live Idaho DHW sitemap confirms office inventory but still no county-to-office contract.
 
 
 - Alaska county-local routing is still blocked: the official DPA offices page is browser-readable again and proves regional offices plus contacts, but it still has no borough/census-area assignment contract, while the raw low-token lane still gets health-host Cloudflare 403 shells and DFCS root/services/site-map/contacts/search still add no county-equivalent mapping.
