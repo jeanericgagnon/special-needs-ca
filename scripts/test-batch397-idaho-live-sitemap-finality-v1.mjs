@@ -31,7 +31,9 @@ const gapRows = readJsonl('data/generated/idaho_gap_matrix_v2.jsonl');
 const districtGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.match(districtGap.status_reason, /camascountyschools\.org.*sitemap\.xml.*HTTP 404/i);
 assert.match(districtGap.status_reason, /same-host href scan.*all-resources/i);
-assert.match(districtGap.status_reason, /`Food Services` link/i);
+assert.match(districtGap.status_reason, /same-host `Food Services`, `Federal Programs`, and `Advanced Opportunities` leaves/i);
+assert.match(districtGap.status_reason, /`Federal Programs` page only preserves Title I and Title IX compliance\/training material/i);
+assert.match(districtGap.status_reason, /`Advanced Opportunities` page only preserves accelerated-course guidance/i);
 assert.match(districtGap.status_reason, /clarkcountyschools161\.org.*sitemap\.xml.*HTTP 404/i);
 assert.match(districtGap.status_reason, /older short aliases `\/contact-us`, `\/title-ix`, and `\/parent-notification-of-general-education-instruction` now return HTTP 404/i);
 assert.match(districtGap.status_reason, /about-us\/contact-us-ccsd/i);
@@ -65,7 +67,7 @@ assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 one more boun
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/idaho-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /live DHW sitemap confirms office inventory/i);
-assert.match(report, /the `all-resources` page still only exposes a `Food Services` link/i);
+assert.match(report, /same-host `Food Services`, `Federal Programs`, and `Advanced Opportunities` leaves/i);
 assert.match(report, /older short aliases/i);
 assert.match(report, /replacement exact leaves remain live instead/i);
 
@@ -88,6 +90,7 @@ assert.equal(auditRow.packetPrimaryGapReason, 'remaining_idaho_camas_and_clark_s
 
 const allStateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/all-state-california-grade-audit-report-v3.md'), 'utf8');
 assert.match(allStateReport, /final live sitemap pass/i);
+assert.match(allStateReport, /Camas now exposes contact routing, a board-roster Google Doc, same-host Federal Programs and Advanced Opportunities pages/i);
 assert.match(allStateReport, /dead short aliases but live replacement Contact Us, Title IX, and general-education notice leaves/i);
 assert.match(allStateReport, /live Idaho DHW sitemap confirms office inventory but still no county-to-office contract/i);
 
