@@ -584,3 +584,6 @@
 
 ### Public Role-Filtered State Directories Can Clear County-Grade Education Routing
 *   **Lesson:** If a public official education directory exposes both a role selector and county-named district organizations, replay one bounded role-plus-organization pass before preserving a local-routing blocker. Wyoming cleared because the WDE public `OnlineDirectory People Search` lane returned district-specific `Special Education Director` rows, emails, phones, and mailing addresses for all 23 county-named districts on the official host.
+
+### Public Sitemaps Can Confirm Inventory Without Creating A County Contract
+*   **Lesson:** If a live official sitemap reappears, treat it as inventory evidence first, not as automatic local-routing proof. Idaho DHW’s public sitemap now confirms exact office leaves, but it still exposes no county-to-office assignment surface, and its county-named URLs belong to unrelated food-bank pages rather than disability-routing contracts.
