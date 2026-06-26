@@ -593,3 +593,9 @@
 
 ### Public Robots Files Do Not Reopen A Blocked Official Host Family
 *   **Lesson:** If an official host family still returns access-denied or dead content roots, a public `robots.txt` alone is not a recovery lane. New Hampshire now serves generic crawler directives from `www.dhhs.nh.gov/robots.txt` and `www.nh.gov/robots.txt`, but the actual DHHS, education, and VR content roots remain blocked or dead and the DHHS sitemap still 403s, so the state must stay blocked.
+
+### Public SharePoint Data Streams Can Be Stronger Than Workbook Or Items-API Reads
+*   **Lesson:** If an official SharePoint education host looks blocked because the visible workbook lane lacks county fields or the default `/items` API shape is too thin, probe the public `RenderListDataAsStream` contract before freezing the family. New Mexico PED’s public Superintendent stream materially changed the truth model by exposing 155 live district rows and 145 unique district codes with contact and address fields on the official host, which was enough to close district-grade routing even though the earlier county-crosswalk hypothesis stayed false.
+
+### Dead Legacy Official Roots Do Not End A Family If A Reviewed State-Owned Successor Host Is Live
+*   **Lesson:** When an old official domain hard-fails, do not stop at the dead root if the same agency now publishes on another state-owned host. New Mexico VR looked blocked while `dvr.nm.gov` stayed 401, but the live first-party successor `dvr.state.nm.us` carried the actual About, Pre-ETS, and Locations leaves needed to verify statewide VR and transition routing.

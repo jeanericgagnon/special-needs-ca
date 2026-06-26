@@ -2167,11 +2167,11 @@
       "legacyManualReviewRate": 57.56,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 33,
-      "strongCriticalFamilies": 10,
-      "weakCriticalFamilies": 2,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 83,
+      "completenessPct": 92,
       "dbMetrics": {
         "state_id": "new-mexico",
         "state_code": "NM",
@@ -2220,8 +2220,8 @@
         "developmental_disability_idd_authority": "verified_state_grade",
         "early_intervention_part_c": "verified_county_grade",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_live_ped_sharepoint_stack_public_and_reviewable_but_still_missing_county_crosswalk_or_rec_service_area_contract",
-        "vocational_rehabilitation_pre_ets": "blocked_live_dvr_401_and_dws_request_rejected_with_no_public_successor",
+        "district_or_county_education_routing": "blocked_live_ped_superintendent_directory_materializes_district_rows_but_still_lacks_explicit_geography_contract_and_clean_live_tls_probe",
+        "vocational_rehabilitation_pre_ets": "verified_current_official_nmdvr_vr_and_pre_ets_host",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
@@ -2230,9 +2230,9 @@
         "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page"
       },
       "packetGenerated": true,
-      "packetBatch": "batch403_new_mexico_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_public_ped_sharepoint_stack_still_lacks_county_or_rec_service_area_contract_and_official_vr_lanes_still_fail_closed",
-      "packetRecommendedBatch": "hold_for_official_county_crosswalk_or_rec_service_area_contract"
+      "packetBatch": "batch408_new_mexico_live_ped_dvr_refresh_v1",
+      "packetPrimaryGapReason": "live_official_nmdvr_host_and_federal_part_b_materials_now_clear_but_ped_directory_stack_still_lacks_explicit_geography_contract_and_clean_live_tls_probe",
+      "packetRecommendedBatch": "hold_for_official_ped_geography_contract_or_tls_clean_leaf"
     },
     {
       "stateId": "new-york",

@@ -6,30 +6,29 @@
     "state": "new-mexico",
     "state_code": "NM",
     "state_name": "New Mexico",
-    "batch": "batch403_new_mexico_terminal_refresh_v1",
+    "batch": "batch408_new_mexico_live_ped_dvr_refresh_v1",
     "classification": "BLOCKED",
     "index_safe": false,
     "incorrectly_index_safe": false,
     "county_count": 33,
-    "completeness_pct": 83,
-    "strong_critical_families": 10,
-    "weak_critical_families": 2,
+    "completeness_pct": 92,
+    "strong_critical_families": 11,
+    "weak_critical_families": 1,
     "missing_critical_families": 0,
     "total_critical_families": 12,
-    "primary_gap_reason": "bounded_2026_06_26_live_recheck_confirms_public_ped_sharepoint_stack_still_lacks_county_or_rec_service_area_contract_and_official_vr_lanes_still_fail_closed",
-    "recommended_batch": "hold_for_official_county_crosswalk_or_rec_service_area_contract",
+    "primary_gap_reason": "live_official_nmdvr_host_and_federal_part_b_materials_now_clear_but_ped_directory_stack_still_lacks_explicit_geography_contract_and_clean_live_tls_probe",
+    "recommended_batch": "hold_for_official_ped_geography_contract_or_tls_clean_leaf",
     "critical_gap_families": [
       "district_or_county_education_routing"
     ],
-    "major_gap_families": [
-      "vocational_rehabilitation_pre_ets"
-    ],
+    "major_gap_families": [],
     "verified_source_families_with_samples": [
       "medicaid_state_health_coverage",
       "medicaid_waiver_hcbs_disability_services",
       "developmental_disability_idd_authority",
       "early_intervention_part_c",
       "special_education_idea_part_b",
+      "vocational_rehabilitation_pre_ets",
       "protection_and_advocacy",
       "parent_training_information_center",
       "legal_aid",
@@ -47,22 +46,15 @@
       {
         "family": "district_or_county_education_routing",
         "severity": "critical",
-        "failure_code": "official_webed_sharepoint_lists_and_six_public_workbooks_verified_live_but_no_county_crosswalk_or_rec_service_area_contract",
-        "evidence": "Reviewed 2026-06-26 one more bounded live New Mexico PED pass on the exact public WebED stack. `Home.aspx`, the live `2017 NM Schools` list, and `RECHome.aspx` still return HTTP 200 on the PED-managed SharePoint host, and the same six public workbook exports still return HTTP 200: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`. The official PED directory lane is therefore real and reviewable, not missing. But it still does not close county-grade local routing. The public SharePoint list and workbook stack still stop at district, location, address, city, zip, school, REC, and contact-style fields, and the reviewed public REC grouping page still does not publish county labels or REC service-area text. New Mexico therefore still lacks any reviewable public county-to-district or county-to-REC contract on the official PED stack.",
-        "next_action": "author_official_county_crosswalk_from_webed_directory_or_rec_contract"
-      },
-      {
-        "family": "vocational_rehabilitation_pre_ets",
-        "severity": "major",
-        "failure_code": "official_dvr_root_returns_401_without_reviewed_public_alternate",
-        "evidence": "Reviewed 2026-06-26 one more bounded live New Mexico VR pass on the exact official DVR and DWS successor lanes. `https://www.dvr.nm.gov/` and `https://www.dvr.nm.gov/services` still return HTTP 401 rather than reviewable public VR or Pre-ETS content. The likely official successor family still fails closed too: `https://www.dws.state.nm.us/`, `/en-us/Job-Seekers/Vocational-Rehabilitation`, and `/en-us/Individuals-with-Disabilities` still return the same public `Request Rejected` shell instead of reviewable vocational-rehabilitation content. New Mexico therefore still lacks any reviewable public official VR or Pre-ETS lane.",
-        "next_action": "browser_assisted_or_review_alternate_official_vr_root"
+        "failure_code": "official_ped_directory_stack_materializes_district_rows_but_still_lacks_explicit_geography_contract_and_clean_live_tls_probe",
+        "evidence": "Reviewed 2026-06-26 the live official PED SharePoint directory stack beyond the earlier county-crosswalk blocker lane. The public Superintendent directory now materializes directly from the official PED-managed SharePoint host through the public RenderListDataAsStream contract, returning 155 live rows and 145 unique district codes with district names, public contact email, office or campus location name, street address, city, and ZIP on the official host. The companion public 2017 NM Schools directory also remains live on the same host and materializes 935 current public school rows with district code, district name, location name, address, city, ZIP, phone, and status fields. That proves the PED directory lane is real and materially stronger than the earlier blocker packet. But New Mexico still cannot clear full district_or_county_education_routing: the reviewed public PED contract still does not preserve an explicit county-to-district or county-to-REC geography contract sufficient to justify all 33 counties, and current live certification probes to the PED SharePoint leaves fail closed on certificate verification. New Mexico therefore remains blocked on education routing until a live official geography contract or certificate-clean equivalent official leaf is public.",
+        "next_action": "hold_for_official_ped_geography_contract_or_tls_clean_leaf"
       }
     ],
     "familyStatuses": {
-      "district_or_county_education_routing": "blocked_live_ped_sharepoint_stack_public_and_reviewable_but_still_missing_county_crosswalk_or_rec_service_area_contract",
+      "district_or_county_education_routing": "blocked_live_ped_superintendent_directory_materializes_district_rows_but_still_lacks_explicit_geography_contract_and_clean_live_tls_probe",
       "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page",
-      "vocational_rehabilitation_pre_ets": "blocked_live_dvr_401_and_dws_request_rejected_with_no_public_successor"
+      "vocational_rehabilitation_pre_ets": "verified_current_official_nmdvr_vr_and_pre_ets_host"
     }
   },
   "gapRows": [
@@ -124,7 +116,7 @@
       "critical": true,
       "county_grade_required": false,
       "statewide_enough": true,
-      "status_reason": "The reviewed New Mexico regional education row still points to the PED Special Education Bureau page as the statewide Part B authority, while district-grade routing remains a separate blocked family."
+      "status_reason": "Reviewed 2026-06-26 the live official U.S. Department of Education IDEA-by-State page for New Mexico at `https://sites.ed.gov/idea/state/new-mexico/` after the old New Mexico PED Special Education Bureau lane stopped surviving live probes. The current official federal page is reviewable and New Mexico-specific: it preserves the exact state heading `New Mexico - Individuals with Disabilities Education Act` and publishes the current IDEA Part B state materials, including `2025 SPP/APR and State Determination Letters, Part B — New Mexico`, `2024 SPP/APR and State Determination Letters, Part B — New Mexico`, and prior annual Part B determination materials on the same official host. That is enough to keep statewide IDEA Part B authority evidence current while district-grade routing remains a separate family proved from the live PED directory contracts."
     },
     {
       "state": "new-mexico",
@@ -132,11 +124,11 @@
       "state_name": "New Mexico",
       "family": "district_or_county_education_routing",
       "family_label": "District or county education routing",
-      "family_status": "blocked_live_ped_sharepoint_stack_public_and_reviewable_but_still_missing_county_crosswalk_or_rec_service_area_contract",
+      "family_status": "blocked_live_ped_superintendent_directory_materializes_district_rows_but_still_lacks_explicit_geography_contract_and_clean_live_tls_probe",
       "critical": true,
       "county_grade_required": true,
       "statewide_enough": false,
-      "status_reason": "Reviewed 2026-06-26 one more bounded live New Mexico PED pass on the exact public WebED stack. `Home.aspx`, the live `2017 NM Schools` list, and `RECHome.aspx` still return HTTP 200 on the PED-managed SharePoint host, and the same six public workbook exports still return HTTP 200: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`. The official PED directory lane is therefore real and reviewable, not missing. But it still does not close county-grade local routing. The public SharePoint list and workbook stack still stop at district, location, address, city, zip, school, REC, and contact-style fields, and the reviewed public REC grouping page still does not publish county labels or REC service-area text. New Mexico therefore still lacks any reviewable public county-to-district or county-to-REC contract on the official PED stack."
+      "status_reason": "Reviewed 2026-06-26 the live official PED SharePoint directory stack beyond the earlier county-crosswalk blocker lane. The public Superintendent directory now materializes directly from the official PED-managed SharePoint host through the public RenderListDataAsStream contract, returning 155 live rows and 145 unique district codes with district names, public contact email, office or campus location name, street address, city, and ZIP on the official host. The companion public 2017 NM Schools directory also remains live on the same host and materializes 935 current public school rows with district code, district name, location name, address, city, ZIP, phone, and status fields. That proves the PED directory lane is real and materially stronger than the earlier blocker packet. But New Mexico still cannot clear full district_or_county_education_routing: the reviewed public PED contract still does not preserve an explicit county-to-district or county-to-REC geography contract sufficient to justify all 33 counties, and current live certification probes to the PED SharePoint leaves fail closed on certificate verification. New Mexico therefore remains blocked on education routing until a live official geography contract or certificate-clean equivalent official leaf is public."
     },
     {
       "state": "new-mexico",
@@ -144,11 +136,11 @@
       "state_name": "New Mexico",
       "family": "vocational_rehabilitation_pre_ets",
       "family_label": "Vocational rehabilitation / Pre-ETS",
-      "family_status": "blocked_live_dvr_401_and_dws_request_rejected_with_no_public_successor",
+      "family_status": "verified_current_official_nmdvr_vr_and_pre_ets_host",
       "critical": true,
       "county_grade_required": false,
       "statewide_enough": true,
-      "status_reason": "Reviewed 2026-06-26 one more bounded live New Mexico VR pass on the exact official DVR and DWS successor lanes. `https://www.dvr.nm.gov/` and `https://www.dvr.nm.gov/services` still return HTTP 401 rather than reviewable public VR or Pre-ETS content. The likely official successor family still fails closed too: `https://www.dws.state.nm.us/`, `/en-us/Job-Seekers/Vocational-Rehabilitation`, and `/en-us/Individuals-with-Disabilities` still return the same public `Request Rejected` shell instead of reviewable vocational-rehabilitation content. New Mexico therefore still lacks any reviewable public official VR or Pre-ETS lane."
+      "status_reason": "Reviewed 2026-06-26 the current live official New Mexico Division of Vocational Rehabilitation host on the reviewed alternate first-party state domain `https://www.dvr.state.nm.us/` after the old `dvr.nm.gov` lane failed closed. The current official host is public and reviewable: `/about-nmdvr/` explicitly says the New Mexico Division of Vocational Rehabilitation is a division of the state's Public Education Department and that Vocational Rehabilitation is a state and federally funded program for eligible individuals with documented disabilities; `/pre-ets/` is live and explicitly preserves the `Pre-Employment Transition Services through NMDVR` heading plus student-transition explanatory text under the Workforce Innovation and Opportunity Act; and `/locations/` is live and preserves statewide DVR office locations and direct phone routing across Albuquerque, Alamogordo, Carlsbad, Clovis, Farmington, Gallup, Hobbs, Las Cruces, Las Vegas, Los Lunas, Rio Rancho, Roswell, Santa Fe, Silver City, Socorro, and Taos. New Mexico therefore now clears vocational_rehabilitation_pre_ets from the live official NMDVR host rather than the dead legacy domain."
     },
     {
       "state": "new-mexico",
@@ -237,20 +229,11 @@
       "state_code": "NM",
       "family": "district_or_county_education_routing",
       "severity": "critical",
-      "failure_code": "official_webed_sharepoint_lists_and_six_public_workbooks_verified_live_but_no_county_crosswalk_or_rec_service_area_contract",
-      "evidence": "Reviewed 2026-06-26 one more bounded live New Mexico PED pass on the exact public WebED stack. `Home.aspx`, the live `2017 NM Schools` list, and `RECHome.aspx` still return HTTP 200 on the PED-managed SharePoint host, and the same six public workbook exports still return HTTP 200: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx`. The official PED directory lane is therefore real and reviewable, not missing. But it still does not close county-grade local routing. The public SharePoint list and workbook stack still stop at district, location, address, city, zip, school, REC, and contact-style fields, and the reviewed public REC grouping page still does not publish county labels or REC service-area text. New Mexico therefore still lacks any reviewable public county-to-district or county-to-REC contract on the official PED stack.",
-      "next_action": "author_official_county_crosswalk_from_webed_directory_or_rec_contract"
-    },
-    {
-      "state": "new-mexico",
-      "state_code": "NM",
-      "family": "vocational_rehabilitation_pre_ets",
-      "severity": "major",
-      "failure_code": "official_dvr_root_returns_401_without_reviewed_public_alternate",
-      "evidence": "Reviewed 2026-06-26 one more bounded live New Mexico VR pass on the exact official DVR and DWS successor lanes. `https://www.dvr.nm.gov/` and `https://www.dvr.nm.gov/services` still return HTTP 401 rather than reviewable public VR or Pre-ETS content. The likely official successor family still fails closed too: `https://www.dws.state.nm.us/`, `/en-us/Job-Seekers/Vocational-Rehabilitation`, and `/en-us/Individuals-with-Disabilities` still return the same public `Request Rejected` shell instead of reviewable vocational-rehabilitation content. New Mexico therefore still lacks any reviewable public official VR or Pre-ETS lane.",
-      "next_action": "browser_assisted_or_review_alternate_official_vr_root"
+      "failure_code": "official_ped_directory_stack_materializes_district_rows_but_still_lacks_explicit_geography_contract_and_clean_live_tls_probe",
+      "evidence": "Reviewed 2026-06-26 the live official PED SharePoint directory stack beyond the earlier county-crosswalk blocker lane. The public Superintendent directory now materializes directly from the official PED-managed SharePoint host through the public RenderListDataAsStream contract, returning 155 live rows and 145 unique district codes with district names, public contact email, office or campus location name, street address, city, and ZIP on the official host. The companion public 2017 NM Schools directory also remains live on the same host and materializes 935 current public school rows with district code, district name, location name, address, city, ZIP, phone, and status fields. That proves the PED directory lane is real and materially stronger than the earlier blocker packet. But New Mexico still cannot clear full district_or_county_education_routing: the reviewed public PED contract still does not preserve an explicit county-to-district or county-to-REC geography contract sufficient to justify all 33 counties, and current live certification probes to the PED SharePoint leaves fail closed on certificate verification. New Mexico therefore remains blocked on education routing until a live official geography contract or certificate-clean equivalent official leaf is public.",
+      "next_action": "hold_for_official_ped_geography_contract_or_tls_clean_leaf"
     }
   ],
   "checkedAt": "2026-06-26T00:00:00.000Z",
-  "liveProbeEnabled": false
+  "liveProbeEnabled": true
 }

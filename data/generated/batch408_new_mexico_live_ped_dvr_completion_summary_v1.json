@@ -1,0 +1,14 @@
+{
+  "batch": "batch408_new_mexico_live_ped_dvr_refresh_v1",
+  "generated_at": "2026-06-26T14:54:09.879Z",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "superintendent_rows": 155,
+  "superintendent_unique_district_codes": 145,
+  "school_directory_rows": 935,
+  "rec_directory_public": true,
+  "dvr_successor_root_live": true,
+  "dvr_pre_ets_leaf_live": true,
+  "dvr_locations_live": true,
+  "remaining_blocker_family": "district_or_county_education_routing"
+}
