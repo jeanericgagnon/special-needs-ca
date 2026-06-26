@@ -32,7 +32,7 @@ const COUNTY_FAMILY_STATUS =
 const COUNTY_NEXT_ACTION =
   'hold_blocked_until_current_dhs_host_exposes_public_county_to_office_or_local_service_contract';
 const COUNTY_REASON =
-  'Reviewed 2026-06-25 and rechecked 2026-06-25 bounded first-party South Dakota DHS surfaces. The current `/en/localoffices` route still serves a JS shell in raw HTML and the embedded application payload resolves the `localoffices` entry to `title":"Page Not Found"` on a page-not-found content record instead of a public local-office directory. The current `Contact Us` page also serves through the same client-rendered shell, but its embedded payload only exposes statewide phone, email, and Pierre mailing contacts. A fresh raw recheck now tightens the third lane too: `Staff and Program Directory` no longer needs a transport-only blocker because the current `/en/staff-and-program-directory` route also resolves to a 200 `Loading` shell whose embedded payload points at the same `title":"Page Not Found"` content record rather than a reviewable county or local-office directory. South Dakota therefore still lacks a truthful public county-grade local-office routing contract on the current official DHS host family.';
+  'Reviewed 2026-06-25 and rechecked 2026-06-25 bounded first-party South Dakota DHS surfaces. The current `/en/localoffices` route still serves a JS shell in raw HTML and the embedded application payload resolves the `localoffices` entry to `title":"Page Not Found"` on a page-not-found content record instead of a public local-office directory. The current `Contact Us` page is live through the same client-rendered shell, but its embedded payload only exposes statewide phone, email, and Pierre mailing contacts. A fresh raw recheck tightened the third lane too: the current reviewed route is `/en/staff-directory`, not the older `/en/staff-and-program-directory` path, and the live embedded payload there now preserves statewide program-contact rows such as `Disability Determination Services` and `Division of Rehabilitation Services` with statewide phone routing. But it still exposes no county field, no county list, no local-office addresses, and no county-to-office assignment contract. South Dakota therefore still lacks a truthful public county-grade local-office routing contract on the current official DHS host family.';
 
 const EDUCATION_REASON =
   'Reviewed 2026-06-25 bounded first-party South Dakota DOE directory surfaces. The public South Dakota Educational Directory root lists statewide Public School Districts and links each district into a detail page. Reviewed district detail pages such as Bennett County 03-1 and Sioux Falls 49-5 preserve mailing and physical addresses plus a named `Special Education Director` field directly on the official DOE host. The same official directory family also publishes district maps and county map PDFs and exposes special-education cooperatives as directory entities. This is current first-party district-grade public education routing evidence, replacing the old generic statewide fallback.';
@@ -316,12 +316,12 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
           },
           {
             sample_name: 'South Dakota DHS Staff and Program Directory',
-            source_url: 'https://dhs.sd.gov/en/staff-and-program-directory',
-            final_url: 'https://dhs.sd.gov/en/staff-and-program-directory',
+            source_url: 'https://dhs.sd.gov/en/staff-directory',
+            final_url: 'https://dhs.sd.gov/en/staff-directory',
             verification_status: 'official_verified',
-            source_type: 'official_route_without_public_directory',
+            source_type: 'official_statewide_program_contact_directory',
             source_table: 'county_offices',
-            evidence_snippet: 'The current Staff and Program Directory route also resolves to a 200 `Loading` shell whose embedded payload points at `Page Not Found`, so it still exposes no county field, no local-office list, and no county-to-office contract.',
+            evidence_snippet: 'The current staff-directory route is live and preserves statewide program-contact rows such as `Disability Determination Services` and `Division of Rehabilitation Services`, but it still exposes no county field, no local-office list, and no county-to-office contract.',
           },
         ],
       };
