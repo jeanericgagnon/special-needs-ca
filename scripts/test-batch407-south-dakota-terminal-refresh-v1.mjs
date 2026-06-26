@@ -34,14 +34,17 @@ const countyGap = readJsonl('data/generated/south-dakota_gap_matrix_v2.jsonl').f
 assert.equal(countyGap.family_status, 'blocked_localoffices_path_now_200_but_still_page_not_found_shell_and_other_current_dhs_surfaces_statewide_only');
 assert.match(countyGap.status_reason, /Reviewed 2026-06-26/i);
 assert.match(countyGap.status_reason, /localoffices.*returns HTTP 200/i);
-assert.match(countyGap.status_reason, /page-not-found shell/i);
+assert.match(countyGap.status_reason, /title is `Page Not Found`/i);
+assert.match(countyGap.status_reason, /To find this information on the new website, try our Search/i);
+assert.match(countyGap.status_reason, /search\?query=local%20office.*generic .* search shell without any office or county-routing results/i);
+assert.match(countyGap.status_reason, /person-seeking-services.*statewide menu of disability and older-adult pathways/i);
 assert.match(countyGap.status_reason, /staff directory still includes statewide rows such as Disability Determination Services and Division of Rehabilitation Services/i);
 
 const failureRows = readJsonl('data/generated/south-dakota_failure_ledger_v2.jsonl');
 assert.equal(failureRows[0].failure_code, 'current_dhs_localoffices_path_now_returns_200_shell_but_still_no_public_county_or_local_office_contract');
 assert.match(failureRows[0].evidence, /Reviewed 2026-06-26/i);
 assert.match(failureRows[0].evidence, /localoffices.*returns HTTP 200/i);
-assert.match(failureRows[0].evidence, /page-not-found shell/i);
+assert.match(failureRows[0].evidence, /title is `Page Not Found`/i);
 
 const verifiedRows = readJsonl('data/generated/south-dakota_verified_sources_v1.jsonl');
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
@@ -57,6 +60,9 @@ assert.equal(queueRow.primary_gap_reason, 'bounded_2026_06_26_live_recheck_confi
 
 const batchSummary = readJson('data/generated/batch407_south-dakota_terminal_refresh_summary_v1.json');
 assert.equal(batchSummary.localoffices_200_shell, true);
+assert.equal(batchSummary.localoffices_browser_page_not_found, true);
+assert.equal(batchSummary.search_shell_no_local_results, true);
+assert.equal(batchSummary.person_seeking_services_statewide_only, true);
 assert.equal(batchSummary.contact_us_200, true);
 assert.equal(batchSummary.staff_directory_200, true);
 

@@ -2080,8 +2080,8 @@
         "county_local_disability_resources": "blocked_official_dhhs_hosts_still_access_denied_with_no_county_reviewable_content_lane"
       },
       "packetGenerated": true,
-      "packetBatch": "batch410_new_hampshire_federal_idea_repair_v1",
-      "packetPrimaryGapReason": "federal_part_b_now_clears_but_live_nh_dhhs_nhes_and_local_education_hosts_still_block_public_contracts",
+      "packetBatch": "batch412_new_hampshire_browser_proof_v1",
+      "packetPrimaryGapReason": "bounded_2026_06_26_browser_recheck_confirms_nh_dhhs_doe_and_nhes_hosts_fail_with_public_access_denied_shells_not_just_raw_fetch_403s",
       "packetRecommendedBatch": "hold_for_live_nh_dhhs_nhes_or_local_education_contract_recovery"
     },
     {

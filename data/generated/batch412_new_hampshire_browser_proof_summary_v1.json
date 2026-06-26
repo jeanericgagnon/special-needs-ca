@@ -1,0 +1,15 @@
+{
+  "batch": "batch412_new_hampshire_browser_proof_v1",
+  "generated_at": "2026-06-26T16:00:02.550Z",
+  "classification": "BLOCKED",
+  "dhhs_browser_access_denied": true,
+  "education_browser_access_denied": true,
+  "nhes_browser_access_denied": true,
+  "federal_idea_still_only_statewide_clear_lane": true,
+  "completeness_pct": 42,
+  "counts_unchanged": {
+    "complete": 44,
+    "blocked": 6,
+    "indexSafe": 44
+  }
+}

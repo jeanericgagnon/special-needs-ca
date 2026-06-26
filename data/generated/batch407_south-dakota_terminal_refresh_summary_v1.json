@@ -1,8 +1,11 @@
 {
   "batch": "batch407_south-dakota_terminal_refresh_v1",
-  "generated_at": "2026-06-26T13:40:56.221Z",
+  "generated_at": "2026-06-26T16:02:04.359Z",
   "classification": "BLOCKED",
   "localoffices_200_shell": true,
+  "localoffices_browser_page_not_found": true,
+  "search_shell_no_local_results": true,
+  "person_seeking_services_statewide_only": true,
   "contact_us_200": true,
   "contactus_old_200": true,
   "staff_directory_200": true,

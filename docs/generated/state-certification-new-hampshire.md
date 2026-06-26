@@ -9,13 +9,19 @@
 
 ## Result
 
-- Candidate failed 1 certification check(s).
+- Candidate failed 3 certification check(s).
 
 ## Failures
 
 - `not_completion_candidate`: Candidate classification is BLOCKED, not COMPLETE.
   files: data/generated/new-hampshire_california_grade_summary_v2.json
   suggested_repair_class: keep_blocked_or_repair_more
+- `live_probe_rejects_claimed_official_proof_lane` [special_education_idea_part_b]: special_education_idea_part_b includes a claimed proof URL that failed live probe: https://sites.ed.gov/idea/state/new-hampshire/ -> getaddrinfo ENOTFOUND sites.ed.gov.
+  files: data/generated/new-hampshire_verified_sources_v1.jsonl
+  suggested_repair_class: recheck_live_official_source
+- `live_probe_rejects_claimed_official_proof_lane` [special_education_idea_part_b]: special_education_idea_part_b includes a claimed proof URL that failed live probe: https://sites.ed.gov/idea/idea-files/2025-spp-apr-and-state-determination-letters-part-b-new-hampshire/ -> getaddrinfo ENOTFOUND sites.ed.gov.
+  files: data/generated/new-hampshire_verified_sources_v1.jsonl
+  suggested_repair_class: recheck_live_official_source
 
 ## Family Snapshot
 

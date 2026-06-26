@@ -18,10 +18,11 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
-- New Hampshire remains blocked after a 2026-06-26 bounded live repair pass: statewide IDEA Part B now clears from the official federal IDEA-by-State New Hampshire pages, but DHHS roots, NHES roots, and live local education-routing surfaces still do not expose a reviewable New Hampshire public contract.
+- New Hampshire remains blocked after a 2026-06-26 bounded browser recheck: `www.dhhs.nh.gov`, `www.education.nh.gov`, and `www.nhes.nh.gov` each render public `Access Denied` shells in a live browser, while only the federal IDEA-by-State page remains reviewable for statewide Part B.
 - New Mexico is now COMPLETE/index-safe after the reviewed PED Superintendent directory plus official Census county geographies endpoints yielded explicit county-grade district routing across all 33 counties, with Catron closed from first-party Reserve district coordinates.
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
 - Arizona remains blocked after a 2026-06-26 bounded live recheck: DES wrapper roots still return HTTP 403 `Just a moment...` shells, the public Salesforce locator app remains live but still exposes Greenlee only through locality ZIP coverage, the current AHCCCS admin PDFs are live and readable but prove to be 2014 Pima support letters rather than county-routing contracts, and no reviewed public DES or AHCCCS artifact explicitly assigns Greenlee County to an office.
+- South Dakota remains blocked after a 2026-06-26 bounded live recheck: the current `/en/localoffices` path now returns HTTP 200 but still renders a page-not-found shell, while `/en/contact-us`, `/en/contactus`, `/en/staff-directory`, and the current DHS root still expose only statewide or staff-directory routing without any county-to-office or local service-area contract.
