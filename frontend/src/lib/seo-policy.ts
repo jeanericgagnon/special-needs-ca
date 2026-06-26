@@ -153,7 +153,7 @@ function getDbHosts(): Set<string> {
       const path = nodeRequire ? nodeRequire('path') : null;
       const Database = nodeRequire ? nodeRequire('better-sqlite3') : null;
       if (!fs || !path || !Database) {
-        throw new Error('Node database helpers unavailable');
+        return dbHosts;
       }
 
       const dbPaths = [

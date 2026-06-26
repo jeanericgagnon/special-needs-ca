@@ -8,13 +8,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: [
         '/',
-        '/benefits',
-        '/benefits/*',
-        '/counties',
-        '/counties/*',
-        '/advocates',
-        '/forms',
-        '/forms/*'
+        '/sitemap.xml',
+        '/sitemaps/static.xml',
+        '/sitemaps/counties.xml'
       ],
       disallow: [
         '/dashboard',

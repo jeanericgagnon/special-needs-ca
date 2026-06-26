@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-06-26",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "staleThresholdDays": 425,
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "counts": {
+        "total": 1,
+        "publicEligible": 1,
+        "stale": 0,
+        "publicEligibleStale": 0,
+        "missingFreshnessSignal": 1,
+        "publicEligibleMissingFreshnessSignal": 1,
+        "invalidFreshnessSignal": 0,
+        "manualReviewRequired": 0,
+        "publicEligiblePct": 100,
+        "stalePct": 0,
+        "publicEligibleStalePct": 0,
+        "missingFreshnessSignalPct": 100,
+        "publicEligibleMissingFreshnessSignalPct": 100
+      },
+      "freshnessBuckets": {
+        "0-90d": 0,
+        "91-180d": 0,
+        "181-365d": 0,
+        "366-425d": 0,
+        "426-730d": 0,
+        "731d+": 0,
+        "missing": 1
+      },
+      "staleExamples": [],
+      "states": [
+        {
+          "stateId": "california",
+          "stateName": null,
+          "total": 1,
+          "publicEligible": 1,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 1,
+          "publicEligibleMissingFreshnessSignal": 1,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        }
+      ]
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "counts": {
+        "total": 1,
+        "publicEligible": 1,
+        "stale": 0,
+        "publicEligibleStale": 0,
+        "missingFreshnessSignal": 1,
+        "publicEligibleMissingFreshnessSignal": 1,
+        "invalidFreshnessSignal": 0,
+        "manualReviewRequired": 0,
+        "publicEligiblePct": 100,
+        "stalePct": 0,
+        "publicEligibleStalePct": 0,
+        "missingFreshnessSignalPct": 100,
+        "publicEligibleMissingFreshnessSignalPct": 100
+      },
+      "freshnessBuckets": {
+        "0-90d": 0,
+        "91-180d": 0,
+        "181-365d": 0,
+        "366-425d": 0,
+        "426-730d": 0,
+        "731d+": 0,
+        "missing": 1
+      },
+      "staleExamples": [],
+      "states": [
+        {
+          "stateId": "california",
+          "stateName": null,
+          "total": 1,
+          "publicEligible": 1,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 1,
+          "publicEligibleMissingFreshnessSignal": 1,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        }
+      ]
+    }
+  ]
+}

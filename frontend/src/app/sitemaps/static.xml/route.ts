@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, Program, getCounties, getCountyDetails, getBulkCountyDetails, RegionalCenter, SchoolDistrict, CountyOffice, County } from '@/lib/db';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
+import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
 
 interface StaticUrl {
   loc: string;
@@ -54,8 +54,9 @@ export async function GET() {
   const filteredStaticUrls: StaticUrl[] = [];
   for (const url of rawStaticUrls) {
     if (url.routeType === 'static-page') {
-      const policy = evaluateSeoPolicy({
-        routeType: 'static-page',
+      const policy = getSeoPolicyForRoute('static-page', {
+        path: url.loc
+      }, {
         hasNoPlaceholderData: true
       });
       if (shouldIncludeInSitemap(policy)) {
@@ -68,9 +69,9 @@ export async function GET() {
       const scores = stateProgs.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
       const avgScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
-      const policy = evaluateSeoPolicy({
-        routeType: 'state-hub',
-        stateId: url.stateId,
+      const policy = getSeoPolicyForRoute('state-hub', {
+        stateId: url.stateId
+      }, {
         entityCount: stateProgs.length,
         confidenceScore: avgScore,
         hasOfficialSource: stateProgs.length > 0 && stateProgs.some((p: Program) => !!p.source_url),
@@ -130,10 +131,10 @@ export async function GET() {
           hasOfficialSource = true;
         }
 
-        const countyPolicy = evaluateSeoPolicy({
-          routeType: 'county-hub',
+        const countyPolicy = getSeoPolicyForRoute('county-hub', {
           stateId: url.stateId,
-          countyId: c.id,
+          countyId: c.id
+        }, {
           entityCount: countyDistricts.length,
           hasOfficialSource: countyHasOfficialSource,
           lastVerifiedDate: lastVerDate,
@@ -150,9 +151,9 @@ export async function GET() {
 
       const avgConfidenceScore = confidenceCount > 0 ? totalConfidence / confidenceCount : null;
 
-      const policy = evaluateSeoPolicy({
-        routeType: 'state-counties-hub',
-        stateId: url.stateId,
+      const policy = getSeoPolicyForRoute('state-counties-hub', {
+        stateId: url.stateId
+      }, {
         entityCount: counties.length,
         hasOfficialSource,
         lastVerifiedDate: minDate,
@@ -199,17 +200,21 @@ export async function GET() {
         confidenceScore = normalizeConfidenceScore(prog.confidence_score);
       }
 
-      const policy = evaluateSeoPolicy({
-        routeType: 'program-guide',
+      const policy = getSeoPolicyForRoute('program-guide', {
         stateId,
         programId: cluster.slug,
+        path: `/programs/${cluster.slug}`
+      }, {
+        programStateId: stateId,
         hasOfficialSource: hasOfficialProgramSource(prog?.source_url),
         lastVerifiedDate: prog?.last_verified_date || null,
         confidenceScore,
         hasEligibilityRules,
+        hasVerifiedEligibilityRules: hasEligibilityRules,
         hasApplicationSteps,
         hasDocuments,
-        hasNoPlaceholderData
+        hasNoPlaceholderData,
+        verificationStatus: prog?.verification_status || null
       });
 
       if (shouldIncludeInSitemap(policy)) {
@@ -227,10 +232,11 @@ export async function GET() {
       const scores = statePrograms.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);
       const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
-      const policy = evaluateSeoPolicy({
-        routeType: 'condition-hub',
+      const policy = getSeoPolicyForRoute('condition-hub', {
         stateId: 'california',
         diagnosisId: cluster.slug,
+        path: `/conditions/${cluster.slug}`
+      }, {
         confidenceScore,
         hasOfficialSource: statePrograms.length > 0 && statePrograms.some((p: Program) => !!p.source_url),
         lastVerifiedDate: minDate,
@@ -246,14 +252,19 @@ export async function GET() {
   </url>`);
       }
     } else if (['forms', 'deadlines', 'situations'].includes(cluster.category)) {
-      const policy = evaluateSeoPolicy({
-        routeType: 'static-page',
-        hasNoPlaceholderData: true
+      const policy = getSeoPolicyForRoute('static-page', {
+        path: `/${cluster.category}/${cluster.slug}`
+      }, {
+        hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(cluster)),
+        hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
+        lastVerifiedDate: cluster.lastReviewedDate || null,
+        confidenceScore: 0.85
       });
 
       if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = cluster.lastReviewedDate ? `\n    <lastmod>${cluster.lastReviewedDate}</lastmod>` : '';
         clusterXmlUrls.push(`  <url>
-    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>
+    <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);

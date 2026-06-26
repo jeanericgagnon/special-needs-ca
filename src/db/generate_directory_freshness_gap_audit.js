@@ -32,6 +32,12 @@ const TABLES = [
   },
 ];
 
+function tableExists(tableName) {
+  return Boolean(
+    db.prepare(`SELECT 1 AS ok FROM sqlite_master WHERE type IN ('table', 'view') AND name = ?`).get(tableName)
+  );
+}
+
 const PUBLIC_VERIFICATION_STATUSES = new Set(['official_verified', 'verified', 'human_verified', 'source_listed']);
 const FALLBACK_DATA_ORIGINS = new Set(['programmatic_fallback', 'generated_county_fallback']);
 const SYNTHETIC_SOURCE_HOST_PATTERNS = [
@@ -196,7 +202,11 @@ function summarizeTable({ table, label, stateJoin }) {
   };
 }
 
-const tables = TABLES.map(summarizeTable);
+const runnableTables = TABLES.filter(({ table }) => (
+  table !== 'iep_advocates' || (tableExists('iep_advocates') && tableExists('iep_advocate_counties'))
+));
+
+const tables = runnableTables.map(summarizeTable);
 
 const payload = {
   generatedAt: generatedDate,

@@ -3,8 +3,7 @@ import { verifyShareToken, getChildProfile, getSafetyIncidents } from '@/lib/db'
 import SharedLogView from './SharedLogView';
 import { ShieldAlert } from 'lucide-react';
 
-export default async function SharedLogPage({ params }: { params: Promise<{ token: string }> | { token: string } }) {
-  // Await the Next.js 15 parameters object
+export default async function SharedLogPage({ params }: { params: Promise<{ token: string }> }) {
   const resolvedParams = await params;
   const token = resolvedParams.token;
   

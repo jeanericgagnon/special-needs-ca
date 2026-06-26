@@ -1,0 +1,203 @@
+{
+  "runAt": "2026-06-26T21:08:48.969Z",
+  "mode": "apply",
+  "dbPath": "../../../../../var/folders/s7/yzsmwnmx2yvfm_3t_ysn8rrw0000gn/T/canonical-consolidation-VG8EUh/test.db",
+  "tables": [
+    {
+      "stagingTable": "staging_scraped_programs",
+      "inspected": 1,
+      "promoted": 1,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {
+        "programs": 1
+      },
+      "reasons": {
+        "promote_program_candidate": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_waitlists",
+      "inspected": 1,
+      "promoted": 1,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {
+        "program_waitlists": 1
+      },
+      "reasons": {
+        "promote_waitlist_candidate": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_forms",
+      "inspected": 1,
+      "promoted": 1,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {
+        "forms_and_guides": 1
+      },
+      "reasons": {
+        "promote_form_candidate": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_county_offices",
+      "inspected": 1,
+      "promoted": 1,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {
+        "county_offices": 1
+      },
+      "reasons": {
+        "promote_county_office_candidate": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_regional_education_agencies",
+      "inspected": 0,
+      "promoted": 0,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {},
+      "reasons": {}
+    },
+    {
+      "stagingTable": "staging_scraped_school_districts",
+      "inspected": 1,
+      "promoted": 1,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {
+        "school_districts": 1
+      },
+      "reasons": {
+        "promote_school_district_candidate": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_state_resource_agencies",
+      "inspected": 1,
+      "promoted": 1,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {
+        "state_resource_agencies": 1
+      },
+      "reasons": {
+        "promote_state_resource_agency_candidate": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_nonprofit_organizations",
+      "inspected": 0,
+      "promoted": 0,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {},
+      "reasons": {}
+    },
+    {
+      "stagingTable": "staging_scraped_resource_providers",
+      "inspected": 0,
+      "promoted": 0,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {},
+      "reasons": {}
+    },
+    {
+      "stagingTable": "staging_scraped_iep_advocates",
+      "inspected": 1,
+      "promoted": 0,
+      "rejected": 0,
+      "quarantined": 1,
+      "blocked": 0,
+      "promotedTo": {},
+      "reasons": {
+        "quarantined_advocate_semantic_destination_split_required": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_sources",
+      "inspected": 1,
+      "promoted": 1,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {
+        "sources": 1
+      },
+      "reasons": {
+        "promote_source_document_candidate": 1
+      }
+    },
+    {
+      "stagingTable": "staging_scraped_knowledge_content",
+      "inspected": 0,
+      "promoted": 0,
+      "rejected": 0,
+      "quarantined": 0,
+      "blocked": 0,
+      "promotedTo": {},
+      "reasons": {}
+    }
+  ],
+  "totals": {
+    "inspected": 8,
+    "promoted": 7,
+    "rejected": 0,
+    "quarantined": 1,
+    "blocked": 0
+  },
+  "canonicalCountsBefore": {
+    "programs": 0,
+    "state_resource_agencies": 0,
+    "county_offices": 0,
+    "school_districts": 0,
+    "regional_education_agencies": 0,
+    "forms_and_guides": 0,
+    "program_waitlists": 0,
+    "nonprofit_organizations": 0,
+    "resource_providers": 0,
+    "sources": 0,
+    "source_verifications": 0
+  },
+  "canonicalCountsAfter": {
+    "programs": 1,
+    "state_resource_agencies": 1,
+    "county_offices": 1,
+    "school_districts": 1,
+    "regional_education_agencies": 0,
+    "forms_and_guides": 1,
+    "program_waitlists": 1,
+    "nonprofit_organizations": 0,
+    "resource_providers": 0,
+    "sources": 1,
+    "source_verifications": 1
+  },
+  "canonicalCountDeltas": {
+    "programs": 1,
+    "state_resource_agencies": 1,
+    "county_offices": 1,
+    "school_districts": 1,
+    "regional_education_agencies": 0,
+    "forms_and_guides": 1,
+    "program_waitlists": 1,
+    "nonprofit_organizations": 0,
+    "resource_providers": 0,
+    "sources": 1,
+    "source_verifications": 1
+  }
+}

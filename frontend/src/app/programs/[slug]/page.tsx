@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getCounties, getProgramBySlug, getAllPrograms, getStateByIdOrCode } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
+import { getSeoPolicyForRoute, hasOfficialProgramSource, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -34,12 +35,21 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
   if (cluster) {
+    const policy = getSeoPolicyForRoute('static-page', {
+      path: `/programs/${slug}`
+    }, {
+      hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(cluster)),
+      hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
+      lastVerifiedDate: cluster.lastReviewedDate || null,
+      confidenceScore: 0.85
+    });
     return {
       title: cluster.metaTitle,
       description: cluster.metaDescription,
       alternates: {
         canonical: `/${cluster.category}/${slug}`
-      }
+      },
+      robots: policy.index ? undefined : { index: false, follow: true }
     };
   }
 
@@ -52,12 +62,14 @@ export async function generateMetadata({ params }: Props) {
       description: `Learn about eligibility, requirements, and how to apply for ${program.program_name} in ${stateName}.`,
       alternates: {
         canonical: `/programs/${slug}`
-      }
+      },
+      robots: { index: false, follow: true }
     };
   }
 
   return {
     title: 'Program Page Not Found',
+    robots: { index: false, follow: true }
   };
 }
 

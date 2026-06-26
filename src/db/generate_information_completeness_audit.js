@@ -18,6 +18,17 @@ const truthRegistryPath = path.join(docsDir, `truth-registry-${generatedDate}.js
 const db = new Database(dbPath, { readonly: true });
 const stateConfigsContent = fs.readFileSync(stateConfigsPath, 'utf8');
 
+function tableExists(tableName) {
+  return Boolean(
+    db.prepare(`SELECT 1 AS ok FROM sqlite_master WHERE type IN ('table', 'view') AND name = ?`).get(tableName)
+  );
+}
+
+function countIfExists(tableName) {
+  if (!tableExists(tableName)) return 0;
+  return db.prepare(`SELECT COUNT(*) AS count FROM ${tableName}`).get().count;
+}
+
 const REQUIRED_STATE_CONFIG_KEYS = [
   'legalDisclaimer',
   'stateMedicaidAgency',
@@ -164,6 +175,24 @@ function getCoreOfficePrograms(stateId, stateCode) {
   return [`${stateCode}-medicaid`, `${stateCode}-personal-care`];
 }
 
+function getNormalizedStateCode(state) {
+  const rawCode = state?.code;
+  if (typeof rawCode === 'string' && /^[a-z]{2}$/i.test(rawCode.trim())) {
+    return rawCode.trim().toLowerCase();
+  }
+
+  const countyRow = db.prepare('SELECT id FROM counties WHERE state_id = ? ORDER BY id LIMIT 1').get(state.id);
+  if (countyRow?.id && typeof countyRow.id === 'string') {
+    const parts = countyRow.id.split('-');
+    const suffix = parts[parts.length - 1];
+    if (/^[a-z]{2}$/i.test(suffix)) {
+      return suffix.toLowerCase();
+    }
+  }
+
+  return String(state?.id || '').trim().toLowerCase();
+}
+
 function hasContactSignal(record) {
   const phone = record.phone || record.spec_ed_contact_phone || record.intake_phone || '';
   const email = record.email || record.spec_ed_contact_email || '';
@@ -278,8 +307,8 @@ const advocateTruthPath = findLatestGeneratedJson('advocate-truth-cleanup-audit-
 const advocateTruth = advocateTruthPath ? readJsonIfExists(advocateTruthPath) : null;
 
 const taxonomySummary = {
-  conditionCount: db.prepare('SELECT COUNT(*) AS count FROM conditions').get().count,
-  functionalNeedCount: db.prepare('SELECT COUNT(*) AS count FROM functional_needs').get().count,
+  conditionCount: countIfExists('conditions'),
+  functionalNeedCount: countIfExists('functional_needs'),
 };
 
 const stateResults = [];
@@ -326,14 +355,16 @@ for (const state of states) {
   }));
 
   const countyCount = db.prepare('SELECT COUNT(*) AS count FROM counties WHERE state_id = ?').get(state.id).count;
-  const ddCoverage = db.prepare(`
-    SELECT COUNT(DISTINCT rcc.county_id) AS count
-    FROM regional_center_counties rcc
-    JOIN counties c ON c.id = rcc.county_id
-    WHERE c.state_id = ?
-  `).get(state.id).count;
+  const ddCoverage = tableExists('regional_center_counties')
+    ? db.prepare(`
+      SELECT COUNT(DISTINCT rcc.county_id) AS count
+      FROM regional_center_counties rcc
+      JOIN counties c ON c.id = rcc.county_id
+      WHERE c.state_id = ?
+    `).get(state.id).count
+    : 0;
 
-  const officePrograms = getCoreOfficePrograms(state.id, state.code.toLowerCase());
+  const officePrograms = getCoreOfficePrograms(state.id, getNormalizedStateCode(state));
   const officeCoverage = officePrograms.length
     ? db.prepare(`
       SELECT COUNT(DISTINCT co.county_id) AS count

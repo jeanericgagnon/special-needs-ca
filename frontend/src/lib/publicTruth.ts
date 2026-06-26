@@ -1,5 +1,5 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
-import { stateAuditStatus } from './seo-policy';
+import { stateAuditStatus } from './stateAudit.ts';
 
 /**
  * PUBLIC_RENDERABLE_STATE_IDS defines all states that the application can render in the UI

@@ -48,6 +48,11 @@ function countDistinctIfExists(db, tableName, columnName) {
   `).get().count;
 }
 
+function columnExists(db, tableName, columnName) {
+  if (!tableExists(db, tableName)) return false;
+  return db.prepare(`PRAGMA table_info(${tableName})`).all().some((row) => row.name === columnName);
+}
+
 function groupCountIfExists(db, tableName, columnName) {
   if (!tableExists(db, tableName)) return {};
   return Object.fromEntries(
@@ -61,7 +66,7 @@ function groupCountIfExists(db, tableName, columnName) {
 }
 
 function truthyCountIfExists(db, tableName, columnName) {
-  if (!tableExists(db, tableName)) return null;
+  if (!tableExists(db, tableName) || !columnExists(db, tableName, columnName)) return null;
   return db.prepare(`
     SELECT SUM(CASE WHEN ${columnName} = 1 THEN 1 ELSE 0 END) AS truthy, COUNT(*) AS total
     FROM ${tableName}
@@ -197,7 +202,9 @@ const stateCoverage = {
     JOIN states s ON s.id = c.state_id
   `).get().count,
   nonprofitCounties: countDistinctIfExists(db, 'nonprofit_organizations', 'county_id'),
-  advocateCoveredCounties: db.prepare(`SELECT COUNT(DISTINCT county_id) AS count FROM iep_advocate_counties`).get().count,
+  advocateCoveredCounties: tableExists(db, 'iep_advocate_counties')
+    ? db.prepare(`SELECT COUNT(DISTINCT county_id) AS count FROM iep_advocate_counties`).get().count
+    : null,
 };
 
 const verification = {

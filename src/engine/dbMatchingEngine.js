@@ -23,6 +23,20 @@ function getAgeInYears(dob) {
   return age;
 }
 
+function hasPublishableProvenance(row) {
+  return Boolean(
+    row &&
+    String(row.source_url || '').trim() &&
+    String(row.source_type || '').trim() &&
+    String(row.data_origin || '').trim() &&
+    String(row.verification_status || '').trim() &&
+    String(row.last_verified_date || '').trim() &&
+    String(row.last_scraped_at || '').trim() &&
+    row.confidence_score !== null &&
+    row.confidence_score !== undefined
+  );
+}
+
 /**
  * SQL-Backed Matching Engine
  * @param {Object} profile - Child parameters
@@ -54,8 +68,18 @@ export function runDbMatchingEngine(profile) {
 
   try {
     // 1. Query Local County Office Mappings
-    const officesQuery = db.prepare('SELECT * FROM county_offices WHERE county_id = ?');
-    const localOffices = officesQuery.all(countyId);
+    const officesQuery = db.prepare(`
+      SELECT * FROM county_offices
+      WHERE county_id = ?
+        AND source_url IS NOT NULL AND TRIM(source_url) <> ''
+        AND source_type IS NOT NULL AND TRIM(source_type) <> ''
+        AND data_origin IS NOT NULL AND TRIM(data_origin) <> ''
+        AND verification_status IS NOT NULL AND TRIM(verification_status) <> ''
+        AND last_verified_date IS NOT NULL AND TRIM(last_verified_date) <> ''
+        AND last_scraped_at IS NOT NULL AND TRIM(last_scraped_at) <> ''
+        AND confidence_score IS NOT NULL
+    `);
+    const localOffices = officesQuery.all(countyId).filter(hasPublishableProvenance);
     results.localOffices = localOffices.map(o => ({
       type: o.program_id === 'ihss-for-children' ? 'County IHSS' : o.program_id === 'california-childrens-services' ? 'County CCS Office' : 'County Office',
       name: o.office_name,
@@ -74,8 +98,18 @@ export function runDbMatchingEngine(profile) {
     });
 
     // 3. Query School District Special Ed department
-    const districtsQuery = db.prepare('SELECT * FROM school_districts WHERE county_id = ?');
-    const districts = districtsQuery.all(countyId);
+    const districtsQuery = db.prepare(`
+      SELECT * FROM school_districts
+      WHERE county_id = ?
+        AND source_url IS NOT NULL AND TRIM(source_url) <> ''
+        AND source_type IS NOT NULL AND TRIM(source_type) <> ''
+        AND data_origin IS NOT NULL AND TRIM(data_origin) <> ''
+        AND verification_status IS NOT NULL AND TRIM(verification_status) <> ''
+        AND last_verified_date IS NOT NULL AND TRIM(last_verified_date) <> ''
+        AND last_scraped_at IS NOT NULL AND TRIM(last_scraped_at) <> ''
+        AND confidence_score IS NOT NULL
+    `);
+    const districts = districtsQuery.all(countyId).filter(hasPublishableProvenance);
     districts.forEach(sd => {
       results.localOffices.push({
         type: 'School District Special Ed',
@@ -85,8 +119,18 @@ export function runDbMatchingEngine(profile) {
     });
 
     // 4. Query local nonprofit organizations
-    const nonprofitQuery = db.prepare('SELECT * FROM nonprofit_organizations WHERE county_id = ?');
-    const nonprofits = nonprofitQuery.all(countyId);
+    const nonprofitQuery = db.prepare(`
+      SELECT * FROM nonprofit_organizations
+      WHERE county_id = ?
+        AND source_url IS NOT NULL AND TRIM(source_url) <> ''
+        AND source_type IS NOT NULL AND TRIM(source_type) <> ''
+        AND data_origin IS NOT NULL AND TRIM(data_origin) <> ''
+        AND verification_status IS NOT NULL AND TRIM(verification_status) <> ''
+        AND last_verified_date IS NOT NULL AND TRIM(last_verified_date) <> ''
+        AND last_scraped_at IS NOT NULL AND TRIM(last_scraped_at) <> ''
+        AND confidence_score IS NOT NULL
+    `);
+    const nonprofits = nonprofitQuery.all(countyId).filter(hasPublishableProvenance);
     results.localOrganizations = nonprofits.map(org => ({
       name: org.name,
       website: org.website,
@@ -95,8 +139,18 @@ export function runDbMatchingEngine(profile) {
     }));
 
     // 5. Query local vended resource providers
-    const providerQuery = db.prepare('SELECT * FROM resource_providers WHERE county_id = ?');
-    const providers = providerQuery.all(countyId);
+    const providerQuery = db.prepare(`
+      SELECT * FROM resource_providers
+      WHERE county_id = ?
+        AND source_url IS NOT NULL AND TRIM(source_url) <> ''
+        AND source_type IS NOT NULL AND TRIM(source_type) <> ''
+        AND data_origin IS NOT NULL AND TRIM(data_origin) <> ''
+        AND verification_status IS NOT NULL AND TRIM(verification_status) <> ''
+        AND last_verified_date IS NOT NULL AND TRIM(last_verified_date) <> ''
+        AND last_scraped_at IS NOT NULL AND TRIM(last_scraped_at) <> ''
+        AND confidence_score IS NOT NULL
+    `);
+    const providers = providerQuery.all(countyId).filter(hasPublishableProvenance);
     results.vendedProviders = providers.map(p => ({
       name: p.name,
       categories: p.categories,
@@ -111,10 +165,18 @@ export function runDbMatchingEngine(profile) {
     // We fetch all rules where the child satisfies the age milestone bounds
     // AND satisfies condition/need parameters
     let rulesQuerySql = `
-      SELECT r.*, p.name as program_name, p.description as program_description, p.official_source_url, p.last_verified_date, p.confidence_score
+      SELECT r.*, p.name as program_name, p.description as program_description, p.official_source_url, p.last_verified_date, p.last_scraped_at, p.confidence_score, p.source_url, p.source_type, p.data_origin, p.verification_status
       FROM program_eligibility_rules r
       JOIN programs p ON r.program_id = p.id
       WHERE ? >= r.min_age_years AND ? <= r.max_age_years
+        AND p.official_source_url IS NOT NULL AND TRIM(p.official_source_url) <> ''
+        AND p.source_url IS NOT NULL AND TRIM(p.source_url) <> ''
+        AND p.source_type IS NOT NULL AND TRIM(p.source_type) <> ''
+        AND p.data_origin IS NOT NULL AND TRIM(p.data_origin) <> ''
+        AND p.verification_status IS NOT NULL AND TRIM(p.verification_status) <> ''
+        AND p.last_verified_date IS NOT NULL AND TRIM(p.last_verified_date) <> ''
+        AND p.last_scraped_at IS NOT NULL AND TRIM(p.last_scraped_at) <> ''
+        AND p.confidence_score IS NOT NULL
     `;
     
     const params = [ageYears, ageYears];
@@ -138,7 +200,7 @@ export function runDbMatchingEngine(profile) {
     }
 
     const rulesQuery = db.prepare(rulesQuerySql);
-    const matchedRules = rulesQuery.all(...params);
+    const matchedRules = rulesQuery.all(...params).filter(hasPublishableProvenance);
 
     // Group recommendations by High Priority vs Possible
     matchedRules.forEach(rule => {

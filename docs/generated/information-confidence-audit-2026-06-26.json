@@ -1,0 +1,79 @@
+{
+  "summary": {
+    "generatedAt": "2026-06-26",
+    "statesAudited": 1,
+    "highConfidenceStates": 0,
+    "mediumConfidenceStates": 0,
+    "fallbackHeavyStates": 1,
+    "directVerifiedPrograms": 0,
+    "totalPrograms": 0,
+    "directVerifiedForms": 0,
+    "totalRequiredForms": 0,
+    "directVerifiedEducationCounties": 0,
+    "totalEducationCounties": 0,
+    "programDirectnessPct": 0,
+    "formDirectnessPct": 0,
+    "educationDirectnessPct": 0,
+    "statesMissingProviderLayer": 1,
+    "statesWithProviderTruthGap": 0,
+    "statesMissingNonprofitLayer": 1,
+    "statesWithNonprofitTruthGap": 0,
+    "statesWithAdvocateTruthGap": 0,
+    "scopeLimitations": [
+      "This audit only measures direct-verification depth for core programs, required forms, and education county coverage.",
+      "It now includes local directory truth signals for providers, nonprofits, and advocates, but it still does not prove sitemap eligibility or strict gold status on its own."
+    ],
+    "truthRegistrySnapshot": {
+      "strictGoldStates": 0,
+      "publicSafeButBlockedStates": 0,
+      "legacyGoldStates": 0,
+      "registryMismatchStates": 0
+    },
+    "advocateTruthSnapshot": {
+      "statesWithCoverageLoss": 0,
+      "countiesLosingAllAdvocateCoverageAfterTruthGating": 0,
+      "totalSyntheticPatternRows": 0
+    }
+  },
+  "states": [
+    {
+      "stateId": "community_suggestions",
+      "stateName": null,
+      "directVerifiedPrograms": 0,
+      "acceptablePrograms": 0,
+      "totalPrograms": 0,
+      "programDirectness": 0,
+      "directVerifiedForms": 0,
+      "acceptableForms": 0,
+      "fallbackForms": 0,
+      "totalRequiredForms": 0,
+      "formDirectness": 0,
+      "directVerifiedEducationCounties": 0,
+      "acceptableEducationCounties": 0,
+      "fallbackEducationCounties": 0,
+      "totalEducationCounties": 0,
+      "educationDirectness": 0,
+      "totalProviderRows": 0,
+      "publicSafeProviders": 0,
+      "providerTruthScore": 0,
+      "totalNonprofitRows": 0,
+      "publicSafeNonprofits": 0,
+      "nonprofitTruthScore": 0,
+      "advocateLayerPresent": false,
+      "advocatePublicSafeCount": 0,
+      "advocateCoverageLossCounties": 0,
+      "advocateTruthScore": 0,
+      "localDirectoryTruthScore": 0,
+      "overallConfidence": 0,
+      "confidenceTier": "fallback-heavy",
+      "blockers": [
+        "programs-not-direct-verified",
+        "forms-not-direct-verified",
+        "education-not-direct-verified",
+        "provider-layer-missing",
+        "nonprofit-layer-missing",
+        "advocate-layer-missing"
+      ]
+    }
+  ]
+}

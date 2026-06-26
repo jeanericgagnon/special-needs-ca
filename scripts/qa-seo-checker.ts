@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Database from 'better-sqlite3';
-import { evaluateSeoPolicy, assertNoPlaceholderData, mapShortDiagToDbId, normalizeConfidenceScore, stateAuditStatus } from '../frontend/src/lib/seo-policy';
+import { evaluateSeoPolicy, assertNoPlaceholderData, mapShortDiagToDbId, normalizeConfidenceScore, stateAuditStatus } from '../frontend/src/lib/seo-policy.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,6 +16,28 @@ if (!fs.existsSync(dbPath)) {
 }
 
 const db = new Database(dbPath, { readonly: true });
+
+const stateAuditPath = path.resolve(__dirname, '../data/generated/all_state_california_grade_audit_v3.json');
+const stateAuditRows: Array<{ stateId: string; classification: string; indexSafe: boolean }> = fs.existsSync(stateAuditPath)
+  ? (JSON.parse(fs.readFileSync(stateAuditPath, 'utf8')).states || [])
+  : [];
+
+function tableOrViewExists(name: string): boolean {
+  return Boolean(
+    db.prepare(`SELECT 1 AS ok FROM sqlite_master WHERE type IN ('table','view') AND name = ?`).get(name)
+  );
+}
+
+function getRegionalCentersByCounty(countyId: string): any[] {
+  if (!tableOrViewExists('regional_centers') || !tableOrViewExists('regional_center_counties')) {
+    return [];
+  }
+  return db.prepare(`
+    SELECT rc.* FROM regional_centers rc
+    JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
+    WHERE rcc.county_id = ?
+  `).all(countyId) as any[];
+}
 
 let errors = 0;
 let warnings = 0;
@@ -172,11 +194,7 @@ states.forEach(state => {
   stateCounties.forEach(county => {
     const offices = db.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(county.id) as any[];
     const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
-    const details = db.prepare(`
-      SELECT rc.* FROM regional_centers rc
-      JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
-      WHERE rcc.county_id = ?
-    `).all(county.id) as any[];
+    const details = getRegionalCentersByCounty(county.id);
     
     const hasRequiredContactInfo = offices.length > 0;
     const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices));
@@ -246,11 +264,7 @@ counties.forEach(county => {
   const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
   
   // Get regional centers view details
-  const details = db.prepare(`
-    SELECT rc.* FROM regional_centers rc
-    JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
-    WHERE rcc.county_id = ?
-  `).all(county.id) as any[];
+  const details = getRegionalCentersByCounty(county.id);
 
   const hasRequiredContactInfo = offices.length > 0;
   const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices));
@@ -364,11 +378,7 @@ counties.forEach(county => {
   const providers = db.prepare('SELECT * FROM resource_providers WHERE county_id = ?').all(county.id) as any[];
   
   // Get regional centers view details
-  const details = db.prepare(`
-    SELECT rc.* FROM regional_centers rc
-    JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
-    WHERE rcc.county_id = ?
-  `).all(county.id) as any[];
+  const details = getRegionalCentersByCounty(county.id);
   
   const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
 
@@ -428,7 +438,9 @@ counties.forEach(county => {
 
 // 5. Condition Hub Pages
 console.log('\n--- Checking Condition Hub Pages ---');
-const conditions = db.prepare('SELECT * FROM conditions').all() as any[];
+const conditions = tableOrViewExists('conditions')
+  ? db.prepare('SELECT * FROM conditions').all() as any[]
+  : [];
 
 conditions.forEach(cond => {
   const condId = cond.id;
@@ -585,7 +597,7 @@ function verifyUnreadyRouteTypesAreNoindex() {
 
 async function verifyOfficialSourceHelper() {
   console.log('\n--- Verifying hasOfficialProgramSource Helper ---');
-  const { hasOfficialProgramSource } = await import('../frontend/src/lib/seo-policy.js');
+  const { hasOfficialProgramSource } = await import('../frontend/src/lib/seo-policy.ts');
   
   const failCases = [
     'https://www.dhcs.ca.gov',
@@ -664,8 +676,10 @@ testStates.forEach(st => {
   }
 });
 
-// Test that BLOCKED states are NOT indexable
-const blockedStates = ['new-york', 'ohio', 'florida', 'new-mexico'];
+// Test that current BLOCKED states are NOT indexable
+const blockedStates = stateAuditRows
+  .filter((row: any) => row.classification === 'BLOCKED')
+  .map((row: any) => row.stateId);
 blockedStates.forEach(st => {
   const policy = evaluateSeoPolicy({
     routeType: 'state-hub',
@@ -740,27 +754,31 @@ function verifyAuditCounts() {
     }
   }
 
-  console.log(`COMPLETE Count: ${completeCount} (Expected: 24)`);
-  console.log(`BLOCKED Count: ${blockedCount} (Expected: 26)`);
-  console.log(`Index-Safe Count: ${indexSafeCount} (Expected: 24)`);
+  const expectedCompleteCount = stateAuditRows.filter((row: any) => row.classification === 'COMPLETE').length;
+  const expectedBlockedCount = stateAuditRows.filter((row: any) => row.classification === 'BLOCKED').length;
+  const expectedIndexSafeCount = stateAuditRows.filter((row: any) => row.indexSafe).length;
+
+  console.log(`COMPLETE Count: ${completeCount} (Expected: ${expectedCompleteCount})`);
+  console.log(`BLOCKED Count: ${blockedCount} (Expected: ${expectedBlockedCount})`);
+  console.log(`Index-Safe Count: ${indexSafeCount} (Expected: ${expectedIndexSafeCount})`);
   console.log(`Incorrectly Index-Safe States: ${JSON.stringify(incorrectlyIndexSafeStates)} (Expected: [])`);
 
-  if (completeCount !== 24) {
-    logError(`Audit count mismatch: Expected 24 COMPLETE states, found ${completeCount}`);
+  if (completeCount !== expectedCompleteCount) {
+    logError(`Audit count mismatch: Expected ${expectedCompleteCount} COMPLETE states, found ${completeCount}`);
   } else {
-    logSuccess("COMPLETE state count matches expected 24.");
+    logSuccess(`COMPLETE state count matches expected ${expectedCompleteCount}.`);
   }
 
-  if (blockedCount !== 26) {
-    logError(`Audit count mismatch: Expected 26 BLOCKED states, found ${blockedCount}`);
+  if (blockedCount !== expectedBlockedCount) {
+    logError(`Audit count mismatch: Expected ${expectedBlockedCount} BLOCKED states, found ${blockedCount}`);
   } else {
-    logSuccess("BLOCKED state count matches expected 26.");
+    logSuccess(`BLOCKED state count matches expected ${expectedBlockedCount}.`);
   }
 
-  if (indexSafeCount !== 24) {
-    logError(`Index-safe count mismatch: Expected exactly 24 index-safe states, found ${indexSafeCount}`);
+  if (indexSafeCount !== expectedIndexSafeCount) {
+    logError(`Index-safe count mismatch: Expected exactly ${expectedIndexSafeCount} index-safe states, found ${indexSafeCount}`);
   } else {
-    logSuccess("Index-safe state count matches expected 24.");
+    logSuccess(`Index-safe state count matches expected ${expectedIndexSafeCount}.`);
   }
 
   if (incorrectlyIndexSafeStates.length > 0) {

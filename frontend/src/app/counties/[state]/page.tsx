@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { MapPin } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import CountiesClient from './counties-client';
+import { getSeoPolicyForRoute } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ state: string }>;
@@ -22,14 +23,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const config = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const catchment = config.catchmentName;
-  const isIndexedState = ['california', 'texas', 'florida', 'pennsylvania', 'new-york', 'ohio', 'illinois', 'georgia', 'maryland', 'utah', 'new-mexico', 'oregon', 'washington', 'idaho', 'south-carolina', 'north-dakota', 'west-virginia', 'montana', 'colorado', 'louisiana', 'south-dakota', 'alabama', 'wisconsin', 'arkansas', 'oklahoma', 'north-carolina', 'mississippi', 'michigan', 'minnesota', 'indiana', 'nebraska', 'tennessee', 'virginia', 'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'].includes(stateData.id);
+  const counties = await getCounties(stateData.id);
+  const policy = getSeoPolicyForRoute('state-counties-hub', {
+    stateId: stateData.id
+  }, {
+    entityCount: counties.length,
+    hasRealLocalAssets: counties.length > 0,
+    hasNoPlaceholderData: true
+  });
   return {
     title: `${stateData.name} Counties Special Needs Resource Directories (2026)`,
     description: `Select your ${stateData.name} county to access local developmental services, ${catchment} boundary details, Medicaid waiver rates, and special education advocates.`,
     alternates: {
       canonical: `/counties/${stateData.id}`
     },
-    robots: isIndexedState ? undefined : { index: false, follow: true }
+    robots: policy.index ? undefined : { index: false, follow: true }
   };
 }
 

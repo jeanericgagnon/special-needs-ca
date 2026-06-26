@@ -1,4 +1,4 @@
-import type { SEOPageData } from './seo-data.ts';
+import type { SEOPageData } from './seo-types.ts';
 
 export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
   'ny-medicaid-app': {

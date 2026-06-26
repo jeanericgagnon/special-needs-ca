@@ -43,6 +43,12 @@ const TABLES = [
   },
 ];
 
+function tableExists(tableName) {
+  return Boolean(
+    db.prepare(`SELECT 1 AS ok FROM sqlite_master WHERE type IN ('table', 'view') AND name = ?`).get(tableName)
+  );
+}
+
 function pct(n, d) {
   if (!d) return 0;
   return Math.round((n / d) * 1000) / 10;
@@ -257,7 +263,11 @@ function summarizeStates(table, stateJoin) {
     );
 }
 
-const tables = TABLES.map(({ table, label, stateJoin }) => {
+const runnableTables = TABLES.filter(({ table }) => (
+  table !== 'iep_advocates' || (tableExists('iep_advocates') && tableExists('iep_advocate_counties'))
+));
+
+const tables = runnableTables.map(({ table, label, stateJoin }) => {
   const rows = fetchRows(table, stateJoin);
   const summary = summarizeRows(rows);
   return {

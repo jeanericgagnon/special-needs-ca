@@ -1,3 +1,5 @@
+import { getPublishedProvenanceIssues, hasMinimumPublishedProvenance } from './publishedProvenance';
+
 const AVAILABILITY_STATUSES = [
   'available',
   'limited',
@@ -97,8 +99,10 @@ export type DirectoryFoundationRecord = {
   email?: string | null;
   source_url?: string | null;
   source_type?: string | null;
+  data_origin?: string | null;
   source_name?: string | null;
   verification_status?: string | null;
+  confidence_score?: number | null;
   availability_status?: string | null;
   accepting_new_clients?: number | null;
   waitlist_status?: string | null;
@@ -364,6 +368,10 @@ export function validateDirectoryFoundationRecord(record: DirectoryFoundationRec
     issues.push('verified_without_source_url');
   }
 
+  for (const issue of getPublishedProvenanceIssues(record)) {
+    issues.push(issue);
+  }
+
   if ((record.categories || '').toLowerCase().includes('program') && record.focus_condition) {
     issues.push('possible_provider_program_confusion');
   }
@@ -392,9 +400,17 @@ export function getStalenessLabel(record: DirectoryFoundationRecord): string | n
 
 export function isRenderableDirectoryFoundationRecord(record: DirectoryFoundationRecord): boolean {
   const issues = validateDirectoryFoundationRecord(record);
+  if (!hasMinimumPublishedProvenance(record)) return false;
   return !issues.includes('synthetic_source_url') &&
     !issues.includes('synthetic_website') &&
     !issues.includes('synthetic_action_url') &&
+    !issues.includes('missing_source_url') &&
+    !issues.includes('missing_source_type') &&
+    !issues.includes('missing_data_origin') &&
+    !issues.includes('missing_verification_status') &&
+    !issues.includes('missing_last_verified_date') &&
+    !issues.includes('missing_last_scraped_at') &&
+    !issues.includes('missing_confidence_score') &&
     !issues.includes('unsupported_claim_flags_present') &&
     !issues.includes('likely_synthetic_advocate_profile');
 }

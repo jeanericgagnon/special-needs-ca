@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getCounties, getCountyDetails, getBulkCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb, RegionalCenter, SchoolDistrict, CountyOffice } from '@/lib/db';
 import { getCountyDiagnosisTruthEligibility, isIndexableState } from '@/lib/publicTruth';
-import { evaluateSeoPolicy, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore } from '@/lib/seo-policy';
+import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore, SEO_STATE_ALLOWLIST } from '@/lib/seo-policy';
 
 // Sitemap expansion batch configuration
 // 1 = Top 10 CA counties, 2 = Top 25 CA counties, 3 = All 58 CA counties, 4 = All CA + county x diagnosis leaves
@@ -21,13 +21,12 @@ const TOP_25_CA_COUNTIES = [
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
-  const today = '2026-06-08';
 
   let allCounties: County[] = [];
   const countyDetailsMap = new Map();
   try {
     const states = await getAllStates();
-    const indexableStates = states.filter(s => isIndexableState(s.id));
+    const indexableStates = states.filter((s) => SEO_STATE_ALLOWLIST.includes(s.id) && isIndexableState(s.id));
     
     const countiesPromises = indexableStates.map(s => getCounties(s.id));
     const countiesLists = await Promise.all(countiesPromises);
@@ -41,16 +40,7 @@ export async function GET() {
     }
   } catch (e) {
     console.error('Failed to load counties or bulk details from database:', e);
-    allCounties = [
-      { id: 'los-angeles', name: 'Los Angeles', state_id: 'california', website: '' },
-      { id: 'orange', name: 'Orange', state_id: 'california', website: '' }
-    ];
-    try {
-      const la = await getCountyDetails('los-angeles');
-      if (la) countyDetailsMap.set('los-angeles', la);
-      const oc = await getCountyDetails('orange');
-      if (oc) countyDetailsMap.set('orange', oc);
-    } catch {}
+    allCounties = [];
   }
 
   // Filter counties using evaluateSeoPolicy
@@ -84,10 +74,10 @@ export async function GET() {
 
     const stateId = c.state_id || 'california';
 
-    const policy = evaluateSeoPolicy({
-      routeType: 'county-hub',
+    const policy = getSeoPolicyForRoute('county-hub', {
       stateId,
-      countyId: c.id,
+      countyId: c.id
+    }, {
       entityCount: countyDistricts.length,
       hasOfficialSource: countyHasOfficialSource,
       lastVerifiedDate: lastVerDate,
@@ -125,28 +115,19 @@ export async function GET() {
   const states = await getAllStates();
 
   let xmlUrls = '';
-  
-  // Include /benefits index if it's evaluated safely
-  const benefitsIndexPolicy = evaluateSeoPolicy({
-    routeType: 'static-page',
-    stateId: '',
-    hasNoPlaceholderData: true
-  });
-  if (shouldIncludeInSitemap(benefitsIndexPolicy)) {
-    xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits</loc>
-    <lastmod>${today}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>\n`;
-  }
 
   // 1. County root directories (/benefits/[state]/[county])
   counties.forEach(county => {
     const stateId = county.state_id || 'california';
+    const details = countyDetailsMap.get(county.id);
+    const lastmod = [
+      ...(details?.regionalCenters || []).map((rc: RegionalCenter) => rc.last_verified_date).filter(Boolean),
+      ...(details?.schoolDistricts || []).map((sd: SchoolDistrict) => sd.last_verified_date).filter(Boolean),
+      ...(details?.countyOffices || []).map((co: CountyOffice) => co.last_verified_date).filter(Boolean)
+    ].sort().at(-1) || null;
+    const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : '';
     xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>
-    <lastmod>${today}</lastmod>
+    <loc>${baseUrl}/benefits/${stateId}/${county.id}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
@@ -161,10 +142,10 @@ export async function GET() {
     const confidenceScore = scores.length > 0 ? scores.reduce((sum, s) => sum + s, 0) / scores.length : null;
 
     for (const diag of diagnosesSlugs) {
-      const policy = evaluateSeoPolicy({
-        routeType: 'condition-hub',
+      const policy = getSeoPolicyForRoute('condition-hub', {
         stateId: st.id,
-        diagnosisId: diag,
+        diagnosisId: diag
+      }, {
         confidenceScore,
         hasOfficialSource: statePrograms.length > 0 && statePrograms.some((p: Program) => !!p.source_url),
         lastVerifiedDate: minDate,
@@ -172,9 +153,9 @@ export async function GET() {
       });
 
       if (shouldIncludeInSitemap(policy)) {
+        const lastmodTag = minDate ? `\n    <lastmod>${minDate}</lastmod>` : '';
         xmlUrls += `  <url>
-    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>
-    <lastmod>${minDate || today}</lastmod>
+    <loc>${baseUrl}/benefits/${st.id}/${diag}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>\n`;
@@ -211,24 +192,30 @@ export async function GET() {
         const allScores = [...rcScores, ...sdScores, ...coScores];
         const confScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
 
-        const policy = evaluateSeoPolicy({
-          routeType: 'county-condition',
+        const lastVerifiedDate = [
+          ...rcList.map((rc: RegionalCenter) => rc.last_verified_date).filter(Boolean),
+          ...sdList.map((sd: SchoolDistrict) => sd.last_verified_date).filter(Boolean),
+          ...coList.map((co: CountyOffice) => co.last_verified_date).filter(Boolean)
+        ].sort().at(-1) || null;
+
+        const policy = getSeoPolicyForRoute('county-condition', {
           stateId,
           countyId: county.id,
-          diagnosisId: diag,
+          diagnosisId: diag
+        }, {
           entityCount: sdList.length,
           confidenceScore: confScore,
           hasOfficialSource: rcList.some((rc: RegionalCenter) => !!rc.source_url) || sdList.some((sd: SchoolDistrict) => !!sd.source_url) || coList.some((co: CountyOffice) => !!co.source_url),
-          lastVerifiedDate: today,
+          lastVerifiedDate,
           hasRequiredContactInfo: coList.length > 0,
           hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(countyDetails)),
           hasRealLocalAssets: sdList.length > 0 || coList.length > 0 || rcList.length > 0
         });
 
         if (shouldIncludeInSitemap(policy)) {
+          const lastmodTag = lastVerifiedDate ? `\n      <lastmod>${lastVerifiedDate}</lastmod>` : '';
           xmlUrls += `  <url>
-      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>
-      <lastmod>${today}</lastmod>
+      <loc>${baseUrl}/benefits/${stateId}/${diag}/${county.id}</loc>${lastmodTag}
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
     </url>\n`;

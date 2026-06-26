@@ -53,6 +53,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const hasRequiredContactInfo = coList.length > 0;
   const hasNoPlaceholderData = countyData ? assertNoPlaceholderData(JSON.stringify(countyData)) : false;
   const hasRealLocalAssets = sdList.length > 0 || coList.length > 0 || rcList.length > 0;
+  const lastVerifiedDate = [
+    ...rcList.map((rc) => rc.last_verified_date).filter(Boolean),
+    ...sdList.map((sd) => sd.last_verified_date).filter(Boolean),
+    ...coList.map((co) => co.last_verified_date).filter(Boolean)
+  ].sort().at(-1) || null;
 
   const policy = evaluateSeoPolicy({
     routeType: 'county-condition',
@@ -62,7 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     entityCount: sdList.length,
     confidenceScore: confScore,
     hasOfficialSource,
-    lastVerifiedDate: '2026-06-08', // QA-ALLOW
+    lastVerifiedDate,
     hasRequiredContactInfo,
     hasNoPlaceholderData,
     hasRealLocalAssets
@@ -116,6 +121,11 @@ export default async function SEOLandingPage({ params }: Props) {
   const hasRequiredContactInfo = coList.length > 0;
   const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyData));
   const hasRealLocalAssets = sdList.length > 0 || coList.length > 0 || rcList.length > 0;
+  const lastVerifiedDate = [
+    ...rcList.map((rc) => rc.last_verified_date).filter(Boolean),
+    ...sdList.map((sd) => sd.last_verified_date).filter(Boolean),
+    ...coList.map((co) => co.last_verified_date).filter(Boolean)
+  ].sort().at(-1) || null;
 
   const policy = evaluateSeoPolicy({
     routeType: 'county-condition',
@@ -125,7 +135,7 @@ export default async function SEOLandingPage({ params }: Props) {
     entityCount: sdList.length,
     confidenceScore: confScore,
     hasOfficialSource,
-    lastVerifiedDate: '2026-06-08', // QA-ALLOW
+    lastVerifiedDate,
     hasRequiredContactInfo,
     hasNoPlaceholderData,
     hasRealLocalAssets

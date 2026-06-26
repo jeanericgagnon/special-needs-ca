@@ -1,0 +1,120 @@
+{
+  "summary": {
+    "generatedAt": "2026-06-26",
+    "statesAudited": 1,
+    "infoCompleteStates": 0,
+    "statesMissingProgramGuideCoverage": 1,
+    "statesMissingFormsCoverage": 1,
+    "statesMissingDdCoverage": 1,
+    "statesMissingOfficeCoverage": 1,
+    "statesMissingEducationCoverage": 1,
+    "statesMissingPublicSafeProviderLayer": 1,
+    "statesMissingPublicSafeNonprofitLayer": 1,
+    "statesWithAdvocateTruthGap": 0,
+    "taxonomy": {
+      "conditionCount": 0,
+      "functionalNeedCount": 0,
+      "conditionsComplete": false,
+      "functionalNeedsComplete": false
+    },
+    "topBlockers": [
+      {
+        "blocker": "core_program_guides_incomplete",
+        "count": 1
+      },
+      {
+        "blocker": "county_office_info_not_full_county",
+        "count": 1
+      },
+      {
+        "blocker": "dd_routing_not_full_county",
+        "count": 1
+      },
+      {
+        "blocker": "education_contact_info_not_full_county",
+        "count": 1
+      },
+      {
+        "blocker": "no_advocate_layer_detected",
+        "count": 1
+      },
+      {
+        "blocker": "no_local_nonprofit_support_detected",
+        "count": 1
+      },
+      {
+        "blocker": "no_public_safe_nonprofit_layer_detected",
+        "count": 1
+      },
+      {
+        "blocker": "no_public_safe_provider_layer_detected",
+        "count": 1
+      },
+      {
+        "blocker": "required_forms_incomplete",
+        "count": 1
+      },
+      {
+        "blocker": "state_config_missing_core_fields",
+        "count": 1
+      }
+    ],
+    "scopeLimitations": [
+      "This audit measures modeled completeness for state config, core program guides, required forms, DD routing, county offices, education coverage, and public-safe local directory presence across providers, nonprofits, and advocates.",
+      "It still does not prove sitemap eligibility or strict gold status on its own."
+    ],
+    "truthRegistrySnapshot": {
+      "strictGoldStates": 0,
+      "publicSafeButBlockedStates": 0,
+      "legacyGoldStates": 0,
+      "registryMismatchStates": 0
+    },
+    "advocateTruthSnapshot": {
+      "statesWithCoverageLoss": 0,
+      "countiesLosingAllAdvocateCoverageAfterTruthGating": 0,
+      "totalSyntheticPatternRows": 0
+    }
+  },
+  "states": [
+    {
+      "stateId": "community_suggestions",
+      "stateName": null,
+      "countyCount": 0,
+      "configPass": false,
+      "configCoverage": 0,
+      "coreProgramsConfigured": 0,
+      "coreProgramsComplete": 0,
+      "programGuideCoverage": 0,
+      "requiredFormsConfigured": 0,
+      "requiredFormsComplete": 0,
+      "formsCoverage": 0,
+      "ddRoutingCoverage": 0,
+      "officeCoverage": 0,
+      "educationCoverage": 0,
+      "nonprofitCount": 0,
+      "publicSafeProviders": 0,
+      "totalProviderRows": 0,
+      "publicSafeNonprofits": 0,
+      "totalNonprofitRows": 0,
+      "advocateLayerPresent": false,
+      "advocatePublicSafeCount": 0,
+      "advocateCoverageLossCounties": 0,
+      "score": 0,
+      "infoComplete": false,
+      "blockers": [
+        "state_config_missing_core_fields",
+        "core_program_guides_incomplete",
+        "required_forms_incomplete",
+        "dd_routing_not_full_county",
+        "county_office_info_not_full_county",
+        "education_contact_info_not_full_county",
+        "no_local_nonprofit_support_detected",
+        "no_public_safe_nonprofit_layer_detected",
+        "no_public_safe_provider_layer_detected",
+        "no_advocate_layer_detected"
+      ],
+      "weakPrograms": [],
+      "weakForms": []
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-06-26",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "total": 1,
+      "publicEligible": 1,
+      "gapRows": 1,
+      "gapPctOfPublicEligible": 100,
+      "states": [
+        {
+          "stateId": "california",
+          "stateName": null,
+          "gapRows": 1
+        }
+      ],
+      "rows": [
+        {
+          "id": "rp1",
+          "name": "Kids Clinic",
+          "stateId": "california",
+          "stateName": null,
+          "countyId": "los-angeles-ca",
+          "countyName": "Los Angeles",
+          "verificationStatus": "verified",
+          "sourceUrl": "https://clinic.org/path",
+          "sourceName": null,
+          "sourceType": null,
+          "phone": "(800) 555-2222",
+          "email": "clinic@example.org",
+          "website": null,
+          "freshnessFields": {
+            "lastVerifiedAt": null,
+            "lastVerifiedDate": null,
+            "checkedAt": null,
+            "sourceLastUpdated": null,
+            "lastScrapedAt": null
+          },
+          "suggestedAction": "Manual freshness review required before continued public trust assumptions"
+        }
+      ]
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "total": 1,
+      "publicEligible": 1,
+      "gapRows": 1,
+      "gapPctOfPublicEligible": 100,
+      "states": [
+        {
+          "stateId": "california",
+          "stateName": null,
+          "gapRows": 1
+        }
+      ],
+      "rows": [
+        {
+          "id": "np1",
+          "name": "Parent Support Center",
+          "stateId": "california",
+          "stateName": null,
+          "countyId": "los-angeles-ca",
+          "countyName": "Los Angeles",
+          "verificationStatus": "verified",
+          "sourceUrl": "https://nonprofit.org/programs",
+          "sourceName": null,
+          "sourceType": null,
+          "phone": "(800) 555-8888",
+          "email": null,
+          "website": "https://nonprofit.org",
+          "freshnessFields": {
+            "lastVerifiedAt": null,
+            "lastVerifiedDate": null,
+            "checkedAt": null,
+            "sourceLastUpdated": null,
+            "lastScrapedAt": null
+          },
+          "suggestedAction": "Manual freshness review required before continued public trust assumptions"
+        }
+      ]
+    }
+  ]
+}
