@@ -590,3 +590,6 @@
 
 ### Live County-Count Reports Still Do Not Prove Office Routing
 *   **Lesson:** If an official reports lane publishes live county or county-and-town PDFs and spreadsheets, inspect one directly before assuming it helps local-office routing. Maine OFI`s live `Geographic Distribution` and `Geographic Overflow` PDFs were public and county-aware, but they still carried only benefit counts by county and town and no office names, service areas, or county-to-office assignment contract, so they strengthened the blocker rather than clearing it.
+
+### Public Robots Files Do Not Reopen A Blocked Official Host Family
+*   **Lesson:** If an official host family still returns access-denied or dead content roots, a public `robots.txt` alone is not a recovery lane. New Hampshire now serves generic crawler directives from `www.dhhs.nh.gov/robots.txt` and `www.nh.gov/robots.txt`, but the actual DHHS, education, and VR content roots remain blocked or dead and the DHHS sitemap still 403s, so the state must stay blocked.

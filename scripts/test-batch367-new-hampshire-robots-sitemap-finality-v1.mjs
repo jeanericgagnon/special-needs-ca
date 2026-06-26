@@ -34,29 +34,32 @@ const batchReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/batch367
 
 assert.equal(result.classification, 'BLOCKED');
 assert.equal(summary.batch, 'batch367_new_hampshire_robots_sitemap_finality_v1');
-assert.equal(summary.primary_gap_reason, 'official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead');
+assert.equal(summary.primary_gap_reason, 'official_nh_dhhs_education_and_vr_host_families_still_block_content_while_saved_dhhs_replacement_hosts_remain_dns_dead_and_public_robots_do_not_restore_a_reviewable_lane');
 assert.equal(summary.recommended_batch, 'hold_for_public_official_nh_host_recovery_or_export');
-assert.equal(summary.familyStatuses.medicaid_state_health_coverage, 'blocked_saved_dhhs_successor_unresolvable_and_diagnostic_surfaces_forbidden');
-assert.equal(summary.familyStatuses.county_local_disability_resources, 'blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden');
+assert.equal(summary.familyStatuses.medicaid_state_health_coverage, 'blocked_saved_dhhs_successor_unresolvable_and_public_dhhs_root_still_access_denied_with_no_reviewable_content_lane');
+assert.equal(summary.familyStatuses.county_local_disability_resources, 'blocked_official_dhhs_hosts_still_access_denied_with_no_county_reviewable_content_lane');
 assert.equal(summary.familyStatuses.district_or_county_education_routing, 'blocked_official_education_hosts_and_diagnostic_surfaces_forbidden');
 
 const medicaidGap = gapRows.find((row) => row.family === 'medicaid_state_health_coverage');
 assert.match(medicaidGap.status_reason, /robots\.txt/i);
 assert.match(medicaidGap.status_reason, /sitemap\.xml/i);
-assert.match(medicaidGap.status_reason, /same short `Access Denied` shell with HTTP 403/i);
+assert.match(medicaidGap.status_reason, /public generic crawler directives with HTTP 200/i);
+assert.match(medicaidGap.status_reason, /www\.nh\.gov\/dhhs\/robots\.txt` returns HTTP 404/i);
+assert.match(medicaidGap.status_reason, /www\.dhhs\.nh\.gov\/sitemap\.xml` still returns the same short `Access Denied` shell with HTTP 403/i);
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.match(countyGap.status_reason, /robots\.txt/i);
 
 const medicaidFailure = failureRows.find((row) => row.family === 'medicaid_state_health_coverage');
 assert.match(medicaidFailure.evidence, /https:\/\/www\.dhhs\.nh\.gov\/robots\.txt/);
-assert.match(medicaidFailure.evidence, /https:\/\/www\.nh\.gov\/dhhs\/sitemap\.xml/);
+assert.match(medicaidFailure.evidence, /https:\/\/www\.nh\.gov\/robots\.txt/);
+assert.match(medicaidFailure.evidence, /https:\/\/www\.nh\.gov\/dhhs\/robots\.txt/);
 
 const vrFailure = failureRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
 assert.equal(vrFailure.severity, 'critical');
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.equal(countyVerified.family_status, 'blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden');
+assert.equal(countyVerified.family_status, 'blocked_official_dhhs_hosts_still_access_denied_with_no_county_reviewable_content_lane');
 assert.match(countyVerified.blocker_evidence, /robots\.txt/);
 
 const waiverVerified = verifiedRows.find((row) => row.family === 'medicaid_waiver_hcbs_disability_services');
@@ -73,27 +76,28 @@ assert.equal(eiVerified.samples[0].verification_status, 'blocked');
 assert.equal(eiVerified.samples[0].source_type, 'saved_replacement_leaf_unresolvable');
 
 const queueRow = queueRows.find((row) => row.state === 'new-hampshire');
-assert.equal(queueRow.primary_gap_reason, 'official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead');
+assert.equal(queueRow.primary_gap_reason, 'official_nh_dhhs_education_and_vr_host_families_still_block_content_while_saved_dhhs_replacement_hosts_remain_dns_dead_and_public_robots_do_not_restore_a_reviewable_lane');
 assert.equal(queueRow.recommended_batch, 'hold_for_public_official_nh_host_recovery_or_export');
 
 const auditRow = allStateAudit.states.find((row) => row.stateId === 'new-hampshire');
 assert.equal(auditRow.packetBatch, 'batch367_new_hampshire_robots_sitemap_finality_v1');
-assert.equal(auditRow.packetPrimaryGapReason, 'official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead');
+assert.equal(auditRow.packetPrimaryGapReason, 'official_nh_dhhs_education_and_vr_host_families_still_block_content_while_saved_dhhs_replacement_hosts_remain_dns_dead_and_public_robots_do_not_restore_a_reviewable_lane');
 
-assert.match(stateReport, /even `robots\.txt` and `sitemap\.xml` on the official DHHS and `nh\.gov\/dhhs` host family return that same short 403 shell/i);
+assert.match(stateReport, /www\.dhhs\.nh\.gov\/robots\.txt` and `www\.nh\.gov\/robots\.txt` are generic public robots files/i);
+assert.match(stateReport, /www\.nh\.gov\/dhhs\/robots\.txt` is 404/i);
 assert.match(stateReport, /VR remains a critical blocker/i);
-assert.match(allStateReport, /robots\.txt and sitemap\.xml diagnostics return that same shell/i);
+assert.match(allStateReport, /only diagnostic change is generic public robots files/i);
 assert.match(handoff, /robots\.txt/);
 assert.match(handoff, /sitemap\.xml/);
-assert.match(lessons, /Access-Denied Host Families Sometimes Block Diagnostics Too/);
+assert.match(lessons, /Public Robots Files Do Not Reopen A Blocked Official Host Family/);
 
 assert.equal(batchSummary.dhhs_replacement_dns_dead, true);
 assert.equal(batchSummary.dhhs_direct_403_shell, true);
-assert.equal(batchSummary.dhhs_robots_403_shell, true);
+assert.equal(batchSummary.dhhs_robots_public_generic, true);
 assert.equal(batchSummary.dhhs_sitemap_403_shell, true);
-assert.equal(batchSummary.nh_gov_dhhs_robots_403_shell, true);
-assert.equal(batchSummary.nh_gov_dhhs_sitemap_403_shell, true);
+assert.equal(batchSummary.nh_gov_robots_public_generic, true);
+assert.equal(batchSummary.nh_gov_dhhs_robots_404, true);
 assert.equal(batchSummary.result, 'official_new_hampshire_host_families_and_diagnostics_still_do_not_expose_public_reviewable_routing_surfaces');
-assert.match(batchReport, /robots\/sitemap diagnostics/i);
+assert.match(batchReport, /generic public robots files/i);
 
 console.log('test-batch367-new-hampshire-robots-sitemap-finality-v1: ok');
