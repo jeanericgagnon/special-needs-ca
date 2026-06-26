@@ -73,7 +73,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
       </div>
 
       <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }} className="no-print">
-        In California, the In-Home Supportive Services (IHSS) program pays parents to act as caregivers for kids with developmental needs. Estimate your family&apos;s hours and tax-free income based on <strong>{countyName} County&apos;s</strong> current wage of <strong>${estimatedWage.toFixed(2)}/hour</strong>.
+        In California, the In-Home Supportive Services (IHSS) program may pay parent providers who are approved to deliver services. Estimate your family&apos;s hours and projected pay using <strong>{countyName} County&apos;s</strong> current provider pay rate of <strong>${estimatedWage.toFixed(2)}/hour</strong>.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
@@ -225,7 +225,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
             <div style={{ height: '1px', backgroundColor: 'rgba(0,0,0,0.06)', margin: '1rem 0' }} />
 
             <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-light)', fontWeight: 700 }}>
-              Estimated Caregiver Income (Tax-Free)
+              Estimated Caregiver Pay
             </span>
             <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#10b981', margin: '0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <DollarSign size={28} />
@@ -292,7 +292,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
               <td style={{ padding: '0.5rem' }}>{totalHours} Hours</td>
             </tr>
             <tr style={{ fontWeight: 'bold', color: '#10b981' }}>
-              <td style={{ padding: '0.5rem' }}>Estimated Tax-Free Income</td>
+              <td style={{ padding: '0.5rem' }}>Estimated Monthly Pay</td>
               <td style={{ padding: '0.5rem' }}>${monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 2 })} / month</td>
             </tr>
           </tbody>

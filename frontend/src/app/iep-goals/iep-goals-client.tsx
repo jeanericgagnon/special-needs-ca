@@ -319,7 +319,7 @@ Parent / Legal Guardian`;
                     onChange={(e) => setSelectedDiagnosis(e.target.value)}
                   >
                     {diagnoses.map(d => (
-                      <option key={d} value={d}>{d === 'All' ? 'All Diagnoses' : d.replace(' Spectrum Disorder (ASD)', '').replace(' Hyperactivity Disorder (ADHD)', '')}</option>
+                      <option key={d} value={d}>{d === 'All' ? 'Any Diagnosis' : d.replace(' Spectrum Disorder (ASD)', '').replace(' Hyperactivity Disorder (ADHD)', '')}</option>
                     ))}
                   </select>
                 </div>
@@ -388,7 +388,7 @@ Parent / Legal Guardian`;
               
               {filteredGoals.length === 0 ? (
                 <div className="glass-panel" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
-                  <p>No goal templates match your exact combination of filters. Try selecting &quot;All Diagnoses&quot; or adjusting the Area.</p>
+                  <p>No goal templates match your exact combination of filters. Try selecting &quot;Any Diagnosis&quot; or adjusting the Area.</p>
                 </div>
               ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

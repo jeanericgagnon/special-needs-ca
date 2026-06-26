@@ -420,7 +420,7 @@ Caregiver Parent`;
         title: isSpanish ? `Fideicomiso de Necesidades Especiales de Primer Tercero con envoltura opcional de ${stateConfig.ableProgram}` : `First-Party Special Needs Trust (SNT) with optional ${stateConfig.ableProgram} wrapper`,
         desc: isSpanish
           ? `Dado que los fondos pertenecen directamente al niño, se requiere legalmente un SNT de primer tercero para proteger los beneficios. Puede transferir hasta $18,000 anuales del fideicomiso a una cuenta ${stateConfig.ableProgram} para facilitar los gastos diarios libres de impuestos.`
-          : `Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is legally mandated to protect benefits. You can transfer up to $18,000 annually from the trust into an ${stateConfig.ableProgram} account to facilitate tax-free daily spending without trustee signatures.`,
+          : `Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is generally required to protect benefits. You can transfer up to $18,000 annually from the trust into an ${stateConfig.ableProgram} account to support qualified disability expenses without trustee signatures for every purchase.`,
         recoveryNote: isSpanish
           ? `Nota: Los SNT de primer tercero requieren una disposición de recuperación estatal de Medicaid tras el fallecimiento.`
           : `Note: First-Party SNTs require a Medicaid state-recovery provision upon the beneficiary's passing.`

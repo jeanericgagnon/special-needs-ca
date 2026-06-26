@@ -64,7 +64,7 @@ export function getCountyIntroCopy(
     return `For families navigating special needs in ${countyName} County, Texas, services are split by age and department:
 1. **Under Age 3 (Early Childhood Intervention):** Your local intake is managed by **${eciContract}**. This is a localized program coordinating physical, occupational, and speech therapies at home or daycare.
 2. **Age 3 and Older (LIDDA):** Your primary point of contact for developmental waivers (like HCS, CLASS, and TxHmL) is your Local Intellectual and Developmental Disability Authority (LIDDA). They coordinate long-term services and interest list placements.
-3. **Medicaid & Caregiver Wages:** General benefits and the MDCP program are administered by the Texas Health and Human Services Commission (HHSC). The current caregiver hourly wage for Medicaid-funded home care in ${countyName} is **$${countyWage.toFixed(2)}/hour**.
+3. **Medicaid & Caregiver Support:** General benefits and the MDCP program are administered by the Texas Health and Human Services Commission (HHSC). Check the current HHSC or provider materials for the latest local home-care pay rate in ${countyName}.
 4. **School Special Education:** School districts (listed below) coordinate local evaluations and Individualized Education Programs (IEPs) for school-aged children.`;
   }
 
@@ -89,7 +89,7 @@ export function getCountyIntroCopy(
     const rcName = countyDetails.regionalCenters?.[0]?.name || 'your local Regional Center';
     return `Families seeking disability services in ${countyName} County, California, have access to a structured local system:
 1. **Regional Center Coordination:** Intake for the Lanterman Act, Early Start (0-3), and the Self-Determination Program is managed by **${rcName}**. They serve as the single point of coordination for lifelong developmental services.
-2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. In ${countyName} County, the provider hourly wage is **$${countyWage.toFixed(2)}/hour**.
+2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. Check the county's current IHSS materials for the latest provider pay rate in ${countyName} County.
 3. **Special Education boundaries:** School districts are grouped into Special Education Local Plan Areas (SELPAs) to share resources and coordinate regional services.`;
   }
 

@@ -390,7 +390,8 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     }
   }
 
-  const hasEligibilityRules = input.hasEligibilityRules && (input.hasVerifiedEligibilityRules ?? (stateId === 'california'));
+  const hasEligibilityRules = Boolean(input.hasEligibilityRules);
+  const hasVerifiedEligibilityRules = Boolean(input.hasEligibilityRules && input.hasVerifiedEligibilityRules);
 
   if (hasEligibilityRules) {
     qualityScore += 10;
@@ -495,8 +496,26 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       break;
 
     case 'program-guide':
-      if (!input.hasApplicationSteps || !hasEligibilityRules || !input.hasDocuments) {
-        blockers.push('Program guide is missing required application steps, eligibility criteria, or document checklist');
+      if (!stateId) {
+        blockers.push('Program guide is missing exact state context');
+      }
+      if (!input.hasOfficialSource) {
+        blockers.push('Program guide lacks an official first-party source');
+      }
+      if (!input.lastVerifiedDate) {
+        blockers.push('Program guide lacks a source verification date');
+      }
+      if (!hasVerifiedEligibilityRules) {
+        blockers.push('Program guide is missing verified eligibility rules');
+      }
+      if (!input.hasApplicationSteps) {
+        blockers.push('Program guide is missing verified application steps');
+      }
+      if (!input.hasDocuments) {
+        blockers.push('Program guide is missing verified document requirements');
+      }
+      if (input.hasNoPlaceholderData === false) {
+        blockers.push('Program guide contains generic or placeholder template content');
       }
       break;
 

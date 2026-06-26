@@ -6,13 +6,13 @@ export const SEO_CLUSTERS: Record<string, SEOPageData> = {
   'down-syndrome-benefits-california': {
     slug: 'down-syndrome-benefits-california',
     category: 'situations',
-    title: 'Down Syndrome Benefits in California: Complete Guide to State Aid',
+    title: 'Down Syndrome Benefits in California: State Aid Overview',
     metaTitle: 'Down Syndrome Benefits California | Public Programs & Aid Guide',
-    metaDescription: 'Complete guide for California parents on securing Regional Center services, IHSS, Institutional Deeming Medi-Cal, SSI, and CalABLE for children with Down Syndrome.',
-    quickAnswer: 'Yes. In California, children with Down Syndrome (Trisomy 21) are legally entitled to comprehensive public benefits and developmental supports. This includes Regional Center services (respite, speech therapy, IFSP/IPP planning), In-Home Supportive Services (IHSS - tax-free monthly stipends for parent caregivers), Medi-Cal via the Institutional Deeming Waiver (ignoring family income), federal SSI monthly payments, and CalABLE savings accounts.',
+    metaDescription: 'California parent overview of Regional Center services, IHSS, Institutional Deeming Medi-Cal, SSI, and CalABLE for children with Down Syndrome.',
+    quickAnswer: 'California families supporting a child with Down Syndrome (Trisomy 21) may have access to Regional Center services, IHSS, Medi-Cal through the Institutional Deeming Waiver pathway, federal SSI, and CalABLE savings accounts. Each program has its own eligibility, application, and documentation rules.',
     tldrPoints: [
       { label: 'Est. IHSS Payout', value: '$2,000 - $5,200/mo' },
-      { label: 'Medi-Cal Income Waiver', value: 'Parent Income Ignored' },
+      { label: 'Medi-Cal Income Waiver', value: 'Parental income can be excluded in this pathway' },
       { label: 'SSI Child Payout', value: 'Up to $1,100+/mo' },
       { label: 'Regional Center Age', value: '0 - Lifetime eligibility' }
     ],
@@ -26,7 +26,7 @@ export const SEO_CLUSTERS: Record<string, SEOPageData> = {
     whatToDoFirst: [
       'Contact your local California Regional Center to request a Lanterman Act eligibility assessment.',
       'Submit a written request to your local school district special education department for an IEP psycho-educational assessment.',
-      'Open a tax-free CalABLE account to protect future asset limits for government aid.',
+      'Open a CalABLE account to help manage future asset limits for government aid.',
       'Apply for the Medi-Cal Institutional Deeming Waiver through your Regional Center coordinator to bypass parental income limits.'
     ],
     documentsToGather: [
@@ -222,9 +222,9 @@ ${f.parentName || '[Parent Name]'}`
     title: 'IHSS Protective Supervision California: How to Secure 24/7 Hours',
     metaTitle: 'IHSS Protective Supervision | Secure 24/7 Caregiver Pay',
     metaDescription: 'A complete step-by-step parent advocate guide to qualifying for IHSS Protective Supervision in California. Download templates, checklists, and forms.',
-    quickAnswer: 'IHSS Protective Supervision is a specialized benefit tier in California that pays parent caregivers up to 195 or 283 hours monthly (worth $3,500 to $5,800/mo tax-free) to monitor children with severe cognitive impairments. To qualify, you must prove your child lacks safety awareness, is "non-self-directing," and is prone to dangerous, impulsive behaviors (wandering, climbing, eating non-food items) requiring constant visual monitoring.',
+    quickAnswer: 'IHSS Protective Supervision is a specialized California service category for children who require constant visual monitoring because they lack safety awareness. To qualify, you must prove your child is non-self-directing and prone to dangerous impulsive behaviors such as wandering, climbing, or eating non-food items.',
     tldrPoints: [
-      { label: 'Max Monthly Pay', value: 'Up to $5,800/mo tax-free' },
+      { label: 'Monthly Pay', value: 'Varies by approved hours and county pay rate' },
       { label: 'Mandatory Physician Form', value: 'Form SOC 821' },
       { label: 'Evidence Needed', value: '24-Hour Safety Incident Log' },
       { label: 'Statutory Authority', value: 'CDSS MPP Section 30-757' }
@@ -409,7 +409,7 @@ Phone: [Insert Phone Number]`
     category: 'situations',
     title: 'California IEP Evaluation Request: Step-by-Step Parent Guide',
     metaTitle: 'IEP Evaluation Request California | Form Assessment Letter',
-    metaDescription: 'Complete guide for California parents on requesting a school district special education IEP assessment. Download letter templates.',
+    metaDescription: 'California parent guide to requesting a school district special education IEP assessment. Download letter templates.',
     quickAnswer: 'In California, if your child has a developmental disability or learning delay, you have the legal right under the IDEA Act to request a free, comprehensive psycho-educational evaluation from your local school district. To start this process, you must submit a written IEP evaluation request. The district is legally mandated to provide an Assessment Plan within 15 calendar days of receiving your request.',
     tldrPoints: [
       { label: 'District Deadline', value: '15 Days to provide Assessment Plan' },
@@ -1007,7 +1007,7 @@ ${f.parentName || '[Parent Name]'}`
     category: 'programs',
     title: 'California Children\'s Services (CCS): Medical Therapy Program Guide',
     metaTitle: 'California Children\'s Services (CCS) | School Therapy Guide',
-    metaDescription: 'Complete guide for parents on California Children\'s Services (CCS). Learn how to get free physical and occupational therapy in schools.',
+    metaDescription: 'Parent guide to California Children\'s Services (CCS), including Medical Therapy Program access in schools.',
     quickAnswer: 'California Children\'s Services (CCS) is a state-county program that coordinates and funds medical care, equipment, and physical/occupational therapy for children under 21 with eligible chronic physical disabilities. A key benefit is the Medical Therapy Program (MTP), which provides free physical and occupational therapy at school-based Medical Therapy Units (MTUs) regardless of family income.',
     tldrPoints: [
       { label: 'MTU Income Limit', value: 'None ($0 cost for school therapy)' },
@@ -1111,7 +1111,7 @@ Phone: [Insert Phone]`
       { label: 'Annual Deposit Limit', value: '$18,000' },
       { label: 'SSI Asset Cap Waiver', value: 'Up to $100,000 excluded' },
       { label: 'Medi-Cal Asset Waiver', value: 'No limit' },
-      { label: 'Tax Status', value: '100% Tax-Free growth' }
+      { label: 'Tax Status', value: 'Tax-advantaged growth for qualified expenses' }
     ],
     whenThisMatters: 'Whenever you want to build savings for your child\'s future, deposit inheritance funds, or protect their eligibility for monthly SSI cash and Medi-Cal when household assets exceed limits.',
     signsThisMayApply: [
@@ -1921,7 +1921,7 @@ ${f.parentName || '[Parent Name]'}`
     category: 'forms',
     title: 'Independent Educational Evaluation (IEE) Request Letter',
     metaTitle: 'IEE Request Letter Template | Special Ed Advocacy',
-    metaDescription: 'Complete guide for parents requesting an Independent Educational Evaluation (IEE) at school district expense in California.',
+    metaDescription: 'Parent guide to requesting an Independent Educational Evaluation (IEE) at school district expense in California.',
     quickAnswer: 'An IEE Request is a letter sent by a parent to a school district expressing disagreement with the district\'s recent psycho-educational assessment and requesting a private evaluation at public expense. Under 34 CFR § 300.502 and California Education Code Section 56329, once requested, the district must either fund the IEE or file for due process to defend their own assessment "without unnecessary delay."',
     tldrPoints: [
       { label: 'Official Instructions Page', value: 'Refer to Local School District' },
@@ -2656,7 +2656,7 @@ ${f.parentName || '[Parent Name]'}`
     title: 'CalABLE Account Enrollment & Savings Form',
     metaTitle: 'CalABLE Account Enrollment Form | California ABLE',
     metaDescription: 'Step-by-step guide to opening a tax-exempt CalABLE savings account for a special needs child in California.',
-    quickAnswer: 'The CalABLE Account Enrollment Form is the official registration application to establish a CalABLE account. It can be completed entirely online. Minor child accounts are opened by an Authorized Legal Representative (ALR), typically a parent or legal guardian. The form enables tax-free savings up to $18,000 annually without disqualifying the child from SSI and Medi-Cal.',
+    quickAnswer: 'The CalABLE Account Enrollment Form is the official registration application to establish a CalABLE account. It can be completed entirely online. Minor child accounts are opened by an Authorized Legal Representative (ALR), typically a parent or legal guardian. The form supports ABLE savings, subject to current contribution limits and program rules.',
     tldrPoints: [
       { label: 'Official Portal', value: 'Open Account Online via CalABLE' },
       { label: 'Annual Contribution Limit', value: '$18,000' },
@@ -3386,10 +3386,10 @@ ${f.parentName || '[Parent Name]'}`
     title: 'Texas ABLE Savings Account Enrollment Guide',
     metaTitle: 'Texas ABLE Account Guide | Texas Comptroller',
     metaDescription: 'Step-by-step parent guide to opening a tax-advantaged Texas ABLE savings account for individuals with disabilities.',
-    quickAnswer: 'Texas ABLE accounts allow individuals with disabilities to save tax-free for qualifying disability expenses without losing eligibility for state benefit programs like Medicaid or SSI.',
+    quickAnswer: 'Texas ABLE accounts allow individuals with disabilities to save for qualifying disability expenses while following current ABLE, Medicaid, and SSI rules.',
     tldrPoints: [
       { label: 'Authorized Program', value: 'Texas Comptroller of Public Accounts' },
-      { label: 'Tax Advantage', value: 'Tax-free growth and withdrawals' },
+      { label: 'Tax Advantage', value: 'Tax-advantaged growth and qualified withdrawals' },
       { label: 'Asset Protection', value: 'Bypasses SSI and Medicaid resource limits' }
     ],
     whenThisMatters: 'Open a Texas ABLE account when your child receives SSI or Medicaid and you want to save more than the standard $2,000 asset limit.',
@@ -3827,7 +3827,7 @@ I am writing to formally appeal the proposed reduction of ${f.reducedService || 
 
 Pursuant to federal regulations (42 CFR Section 431.230) and Texas Administrative Code guidelines, I am formally requesting that my child\'s services continue at the previously authorized level while this appeal is pending.
 
-This appeal is being submitted within 10 calendar days of the notice date. Therefore, my child is legally entitled to benefits continuation (Aid Paid Pending). 
+This appeal is being submitted within 10 calendar days of the notice date. Please review whether my child qualifies for continued benefits during the appeal process (Aid Paid Pending). 
 
 I have attached clinical documentation confirming that my child\'s medical condition remains unchanged and that any reduction in services would jeopardize their safety and health. Please issue a continuation authorization to our provider agency immediately.
 
@@ -4115,7 +4115,7 @@ ${f.parentName || '[Parent Name]'}`
     category: 'forms',
     title: 'Florida APD Service Application Guide (Form APD-01)',
     metaTitle: 'Florida APD Application Guide | Form APD-01',
-    metaDescription: 'Complete guide for Florida families to apply for developmental disability services through APD (Agency for Persons with Disabilities).',
+    metaDescription: 'Florida family guide to applying for developmental disability services through APD (Agency for Persons with Disabilities).',
     quickAnswer: 'To apply for Florida APD services, you must submit Form APD-01 along with diagnostic evaluations. Freshness note: Reviewed on 2026-06-12. For corrections, contact the APD state office at (850) 488-4257.',
     tldrPoints: [
       { label: 'Required Form', value: 'Form APD-01 (Application for Services)' },
@@ -4362,7 +4362,7 @@ ${f.parentName || '[Parent Name]'}`
     category: 'forms',
     title: 'FLDOE State Compliance Complaint Guide',
     metaTitle: 'Florida DOE State Complaint | ESE Dispute Help',
-    metaDescription: 'Complete guide to filing a state compliance complaint with the Florida Department of Education Bureau of Exceptional Education.',
+    metaDescription: 'Guide to filing a state compliance complaint with the Florida Department of Education Bureau of Exceptional Education.',
     quickAnswer: 'Parents can file a state complaint with the FLDOE Bureau of Exceptional Education and Student Services (BEESS) for IEP violations. Freshness note: Reviewed on 2026-06-12. File within 1 year of the violation.',
     tldrPoints: [
       { label: 'Filing Authority', value: 'FLDOE BEESS Office' },
@@ -4891,11 +4891,11 @@ ${f.parentName || '[Parent Name]'}`
     category: 'programs',
     title: 'Florida ABLE United Savings Guide',
     metaTitle: 'Florida ABLE United Account | Parent Savings Guide',
-    metaDescription: 'Learn how to open a tax-free ABLE account in Florida to protect your child\'s SSI and Medicaid resource limits.',
+    metaDescription: 'Learn how to open an ABLE account in Florida and review the current SSI and Medicaid resource rules that apply.',
     quickAnswer: 'ABLE United is Florida\'s official ABLE program. It lets parents save up to $18,000 annually without affecting SSI eligibility. Freshness note: Reviewed on 2026-06-12.',
     tldrPoints: [
       { label: 'Asset Limit Shield', value: 'Balances up to $100,000 ignored by SSI' },
-      { label: 'Tax Status', value: 'Tax-free growth and withdrawals for qualifications' },
+      { label: 'Tax Status', value: 'Tax-advantaged growth and qualified withdrawals' },
       { label: 'State Advantage', value: 'Florida Medicaid clawback is waived for ABLE United accounts' }
     ],
     whenThisMatters: 'Saving funds for your special needs child while preserving their eligibility for public aid.',
@@ -5059,7 +5059,7 @@ for (const [code, stateName] of Object.entries(remainingStateCodes)) {
       category: 'forms',
       title: `${stateName} ${form.name}`,
       metaTitle: `${stateName} ${form.name} | Ablefull`,
-      metaDescription: `Complete guide, download links, and instructions for the ${stateName} ${form.name}.`,
+      metaDescription: `Official form overview, download links, and instructions for the ${stateName} ${form.name}.`,
       quickAnswer: `The ${stateName} ${form.name} is used to apply for or manage disability support programs in ${stateName}. Submit this form to the appropriate state agency to request services.`,
       tldrPoints: [
         { label: 'State', value: stateName },

@@ -305,7 +305,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', lineHeight: '1.5', margin: 0 }}>
                   <strong>Yes.</strong> Individuals with <strong>{diagnosisName}</strong> are legally eligible to receive paid In-Home Supportive Services (IHSS) Protective Supervision in California. 
                   This is a state program that pays parent caregivers to visually supervise children who lack safety awareness. 
-                  In <strong>{activeCountyName}</strong>, this is paid at a rate of <strong>${countyDetails.wage.toFixed(2)}/hour</strong>, yielding up to <strong>$${(283 * countyDetails.wage).toLocaleString(undefined, { maximumFractionDigits: 0 })} per month</strong> tax-free.
+                  In <strong>{activeCountyName}</strong>, county pay rates are currently listed at <strong>${countyDetails.wage.toFixed(2)}/hour</strong>. Actual approved hours and monthly pay depend on the county assessment and authorization.
                 </p>
               </div>
 

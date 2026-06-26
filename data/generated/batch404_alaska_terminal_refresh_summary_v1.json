@@ -1,8 +1,9 @@
 {
   "batch": "batch404_alaska_terminal_refresh_v1",
-  "generated_at": "2026-06-26T16:48:09.694Z",
+  "generated_at": "2026-06-26T23:57:02.607Z",
   "classification": "BLOCKED",
-  "dpa_offices_403": true,
+  "dpa_offices_browser_reviewable": true,
+  "dpa_offices_region_only": true,
   "dpa_root_403": true,
   "dpa_dashboard_pdf_403": true,
   "medicaid_snapshot_pdf_403": true,

@@ -129,7 +129,7 @@ export const stateConfigs: Record<string, StateConfig> = {
       },
       {
         q: 'Does my child qualify for paid caregiver hours (IHSS) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, if your child's ${diagnosis} results in severe cognitive or behavioral limitations—such as wandering, self-injury, or inability to perceive danger—they may qualify for IHSS Protective Supervision. This is a California program that pays you (the parent) to protect and supervise your child. In ${county} County, a child categorized as Severely Impaired can receive up to 283 hours per month, which at standard caregiver wages ($${wage.toFixed(2)}/hr) yields approximately $${payout} per month in tax-free income.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, if your child's ${diagnosis} results in severe cognitive or behavioral limitations—such as wandering, self-injury, or inability to perceive danger—they may qualify for IHSS Protective Supervision. This California program can authorize substantial supervision hours for approved parent providers. In ${county} County, actual approved hours and monthly pay depend on the county assessment and current provider pay rates.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',

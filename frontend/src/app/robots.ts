@@ -18,8 +18,7 @@ export default function robots(): MetadataRoute.Robots {
         '/dashboard/*',
         '/login',
         '/register',
-        '/api/*',
-        '/_next/*'
+        '/api/*'
       ],
     },
     sitemap: `${baseUrl}/sitemap.xml`,

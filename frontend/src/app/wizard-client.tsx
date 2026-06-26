@@ -477,7 +477,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
               onClick={handleSkipOnboarding}
               style={{ background: 'none', border: 'none', color: 'var(--text-light)', cursor: 'pointer', fontSize: '0.9rem', textDecoration: 'underline', padding: 0 }}
             >
-              Skip Onboarding & Browse All Programs
+              Skip Onboarding & Browse Programs
             </button>
             <button 
               type="button" 

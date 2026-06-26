@@ -7,6 +7,7 @@ import {
   getSchoolDistrictBySlug,
   getLocalProviders,
   getProgramsForDiagnosis,
+  getAllPrograms,
   getProgramBySlug,
   getStateByIdOrCode,
   getAllStates,
@@ -230,7 +231,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       });
       return {
         title: `${title} - ${stateName} Special Needs Program Guide (2026)`,
-        description: `Complete guide to ${title} in ${stateName}. Check clinical eligibility rules, age limits, income guidelines, and related advocate services.`,
+        description: `Source-backed overview of ${title} in ${stateName}. Check eligibility rules, age limits, income guidelines, and related support options.`,
         alternates: { canonical: `/benefits/${stateData.id}/program/${slug[1].toLowerCase()}` },
         robots: programPolicy.index ? undefined : { index: false, follow: true }
       };
@@ -820,10 +821,10 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         mainEntity: [
           {
             '@type': 'Question',
-            name: `What is the local ${stateData.id === 'california' ? 'IHSS' : 'Medicaid waiver'} hourly wage in ${countyName}?`,
+            name: `Where can I verify the local ${stateData.id === 'california' ? 'IHSS' : 'Medicaid waiver'} provider pay rate in ${countyName}?`,
             acceptedAnswer: {
               '@type': 'Answer',
-              text: `The current ${stateData.id === 'california' ? 'In-Home Supportive Services (IHSS) provider' : 'Medicaid waiver provider'} wage in ${countyName} is $${countyWage.toFixed(2)} per hour.`
+              text: `Check the relevant ${stateData.id === 'california' ? 'county social services office and current IHSS materials' : 'state Medicaid waiver materials or local service coordinator'} for the latest provider pay rate information in ${countyName}.`
             }
           },
           {

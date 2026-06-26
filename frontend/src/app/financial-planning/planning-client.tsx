@@ -77,7 +77,7 @@ export default function PlanningClient() {
     if (fundingSource === 'child-injury') {
       return {
         title: 'First-Party Special Needs Trust (SNT) with optional CalABLE wrapper',
-        desc: 'Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is legally mandated to protect benefits. You can transfer up to $18,000 annually from the trust into a CalABLE account to facilitate tax-free daily spending without trustee signatures.',
+        desc: 'Since funds belong directly to the child (e.g. lawsuit settlement or direct inheritance), a First-Party SNT is generally required to protect benefits. You can transfer up to $18,000 annually from the trust into a CalABLE account to support qualified disability expenses without trustee signatures for every purchase.',
         recoveryNote: 'Note: First-Party SNTs require a Medicaid state-recovery provision upon the beneficiary\'s passing.'
       };
     }
@@ -553,7 +553,7 @@ ${parentPhone}`;
                     </h4>
                     <ul style={{ paddingLeft: '1rem', fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem', lineHeight: 1.4 }}>
                       <li><strong>Contribution Cap:</strong> Up to $18,000 annually (or more if the child is employed under ABLE to Work rules).</li>
-                      <li><strong>Tax Shield:</strong> Earnings grow 100% tax-free when used for Qualified Disability Expenses (QDE).</li>
+                      <li><strong>Tax Treatment:</strong> Earnings may receive favorable tax treatment when used for Qualified Disability Expenses (QDE).</li>
                       <li><strong>What is a QDE?</strong> Extremely broad: housing, groceries, transit, therapies, assistive tech, tuition, and funeral costs.</li>
                       <li><strong>How to open:</strong> Open directly at <a href="https://calable.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 600 }}>calable.ca.gov</a> with a minimum $25 deposit.</li>
                     </ul>

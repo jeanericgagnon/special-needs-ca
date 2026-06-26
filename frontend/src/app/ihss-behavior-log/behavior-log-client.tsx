@@ -347,7 +347,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
       "IHSS MULTI-RECIPIENT SCHEDULE & OVERTIME COMPLIANCE REPORT",
       "Provider Name: " + parentName,
       "Log Date: " + new Date(logDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
-      "Hourly Wage: $" + ihssWage.toFixed(2) + "/hour",
+      "Provider Pay Rate: $" + ihssWage.toFixed(2) + "/hour",
       "",
       "I. AUTHORIZED HOURS BREAKDOWN",
       "- Recipient 1: " + monthlyHours1 + " hours/month (~" + weekly1 + " hours/week)",
@@ -366,7 +366,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
       "- Overtime Hours (1.5x): " + overtimeHours.toFixed(1) + " hrs @ $" + (ihssWage * 1.5).toFixed(2) + "/hr = $" + overtimePay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
       "- Travel Hours (Regular): " + weeklyTravelHours + " hrs @ $" + ihssWage.toFixed(2) + "/hr = $" + travelPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
       "TOTAL PROJECTED WEEKLY INCOME: $" + totalWeeklyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
-      "TOTAL PROJECTED MONTHLY INCOME (4.33 conversion): $" + totalMonthlyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }) + " (Tax-Free)",
+      "TOTAL PROJECTED MONTHLY PAY (4.33 conversion): $" + totalMonthlyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
       "",
       "This workweek schedule is compiled in accordance with CDSS Welfare & Institutions Code Section 12301.15 rules to prevent workweek violations while maximizing authorized recipient hours."
     ];
@@ -1055,7 +1055,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                   ${estimatedMonthlyPayout.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </span>
                 <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-light)', marginTop: '0.1rem' }}>
-                  Tax-free income for parent providers
+                  Estimated pay for parent providers
                 </span>
               </div>
 
@@ -1441,7 +1441,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                         ${totalMonthlyPay.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                       </span>
                       <span style={{ display: 'block', fontSize: '0.68rem', color: 'var(--text-light)', marginTop: '0.1rem' }}>
-                        Regular & Overtime (Tax-Free)
+                        Regular & Overtime Pay
                       </span>
                     </div>
 
@@ -1459,7 +1459,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                         <strong>{weeklyTravelHours} hrs/wk</strong>
                       </div>
                       <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px dashed rgba(0,0,0,0.08)', paddingTop: '0.4rem', marginTop: '0.2rem' }}>
-                        <span>Hourly Wage:</span>
+                        <span>Pay Rate:</span>
                         <strong>${ihssWage.toFixed(2)}/hr</strong>
                       </div>
                     </div>
@@ -1498,7 +1498,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
             <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
               <h4 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>🚗 Travel Time & Overtime Rules</h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)', margin: 0 }}>
-                Under CDSS rules, if you drive directly from one recipient&apos;s house to another on the same day to perform services, you are entitled to travel time pay. Travel hours are paid at your regular hourly wage, and do not trigger overtime deductions or eat into your 66-hour provider work cap.
+                Under CDSS rules, if you drive directly from one recipient&apos;s house to another on the same day to perform services, you may be paid for eligible travel time. Travel hours are generally paid at your regular pay rate and do not count toward the 66-hour provider work cap in the same way as service hours.
               </p>
             </div>
 

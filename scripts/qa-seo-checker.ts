@@ -16,6 +16,7 @@ if (!fs.existsSync(dbPath)) {
 }
 
 const db = new Database(dbPath, { readonly: true });
+const FULL_MODE = process.argv.includes('--full');
 
 const stateAuditPath = path.resolve(__dirname, '../data/generated/all_state_california_grade_audit_v3.json');
 const stateAuditRows: Array<{ stateId: string; classification: string; indexSafe: boolean }> = fs.existsSync(stateAuditPath)
@@ -93,6 +94,15 @@ const BANNED_PATTERNS = [
   { pattern: /\bVERIFIED_STATES\b/i, label: 'legacy VERIFIED_STATES list' },
   { pattern: /\bINDEXABLE_STATE_IDS\b/i, label: 'legacy INDEXABLE_STATE_IDS list' },
   { pattern: /confidence_score\s*.*?\/.*?5(\.0)?\b/i, label: 'manual division of confidence score by 5' }
+  ,{ pattern: /legally entitled/i, label: 'unsupported "legally entitled" claim' }
+  ,{ pattern: /\bwill qualify\b/i, label: 'unsupported "will qualify" claim' }
+  ,{ pattern: /parent income ignored/i, label: 'unsupported "parent income ignored" claim' }
+  ,{ pattern: /\btax-?free\b/i, label: 'unsupported tax-free claim' }
+  ,{ pattern: /\bhourly wage\b/i, label: 'unsupported hourly wage claim' }
+  ,{ pattern: /\bmaximum benefit amounts?\b/i, label: 'unsupported maximum benefit amount claim' }
+  ,{ pattern: /\bcomplete guide\b/i, label: 'unsupported "complete guide" claim' }
+  ,{ pattern: /\ball programs\b/i, label: 'unsupported "all programs" claim' }
+  ,{ pattern: /\ball diagnoses\b/i, label: 'unsupported "all diagnoses" claim' }
 ];
 
 function scanFilesForBannedPatterns() {
@@ -568,6 +578,17 @@ function verifySitemapsUseCentralPolicy() {
   });
 }
 
+function verifyRobotsPolicy() {
+  console.log('\n--- Verifying robots.txt policy ---');
+  const robotsPath = path.resolve(__dirname, '../frontend/src/app/robots.ts');
+  const content = fs.readFileSync(robotsPath, 'utf8');
+  if (content.includes("'/_next/*'") || content.includes('"/_next/*"')) {
+    logError("robots.txt still blocks '/_next/*'.");
+  } else {
+    logSuccess("robots.txt does not block '/_next/*'.");
+  }
+}
+
 function verifyUnreadyRouteTypesAreNoindex() {
   console.log('\n--- Verifying Unready Route Types Are Blocked ---');
   
@@ -648,9 +669,26 @@ function verifyUnknownStateIsNoindexed() {
 }
 
 verifySitemapsUseCentralPolicy();
+verifyRobotsPolicy();
 verifyUnreadyRouteTypesAreNoindex();
 await verifyOfficialSourceHelper();
 verifyUnknownStateIsNoindexed();
+
+if (FULL_MODE) {
+  console.log('\n--- Full mode checks enabled ---');
+  const reportPath = path.resolve(__dirname, '../docs/generated/all-state-california-grade-audit-report-v3.md');
+  const queuePath = path.resolve(__dirname, '../data/generated/all_state_priority_queue_v3.jsonl');
+  if (!fs.existsSync(reportPath)) {
+    logError('Missing all-state audit report markdown.');
+  } else {
+    logSuccess('All-state audit report markdown exists.');
+  }
+  if (!fs.existsSync(queuePath)) {
+    logError('Missing all-state priority queue artifact.');
+  } else {
+    logSuccess('All-state priority queue artifact exists.');
+  }
+}
 
 // 7. Pilot Environment Flag QA check
 console.log('\n--- Checking Nationwide Indexability Gating ---');

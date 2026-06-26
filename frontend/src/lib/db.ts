@@ -3096,7 +3096,7 @@ export async function getProgramsByCriteria(age: number, diagnosis: string): Pro
   return results as Program[];
 }
 
-// Get all programs for a specific diagnosis without age limit, for SEO landing pages
+// Get the full program set for a specific diagnosis without age limits, for SEO landing pages
 export async function getProgramsForDiagnosis(diagnosis: string): Promise<Program[]> {
   const stmt = await crawlerDb.prepare(`
     SELECT * FROM structured_programs 
@@ -3121,7 +3121,7 @@ export async function getAllPrograms(): Promise<Program[]> {
     `);
     return stmt.all() as Program[];
   } catch (err) {
-    console.error('Failed to get all programs:', err);
+    console.error('Failed to get program set:', err);
     return [];
   }
 }

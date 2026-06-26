@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props) {
   const diagnosis = DIAGNOSES_DETAILS.find(d => d.id === slug);
   if (diagnosis) {
     return {
-      title: `${diagnosis.name} Benefits in California | Complete Guide`,
+      title: `${diagnosis.name} Benefits in California | Program Guide`,
       description: `Learn how to get Regional Center funding, school IEP support, and financial help for children with ${diagnosis.name} in California.`,
     };
   }
