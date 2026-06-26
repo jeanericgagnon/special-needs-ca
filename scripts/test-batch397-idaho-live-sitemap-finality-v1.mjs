@@ -46,8 +46,10 @@ assert.match(countyFailure.evidence, /unrelated food-bank or pantry pages/i);
 
 const verifiedRows = readJsonl('data/generated/idaho_verified_sources_v1.jsonl');
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Idaho DHW public sitemap office inventory'));
+assert.equal(countyVerified.samples.filter((sample) => sample.sample_name === 'Idaho DHW public sitemap office inventory').length, 1);
 assert.match(JSON.stringify(countyVerified.samples), /official_public_sitemap_inventory_only/);
+assert.equal(countyVerified.sample_count, countyVerified.samples.length);
+assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 one more bounded live Idaho DHW office-contract pass/i);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/idaho-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /live DHW sitemap confirms office inventory/i);
@@ -63,5 +65,22 @@ assert.match(batchReport, /tightened Idaho’s remaining district and county-loc
 
 const lessons = fs.readFileSync(path.join(repoRoot, 'docs/state-upgrade-lessons-learned.md'), 'utf8');
 assert.match(lessons, /Public Sitemaps Can Confirm Inventory Without Creating A County Contract/);
+
+const allStateAudit = readJson('data/generated/all_state_california_grade_audit_v3.json');
+const auditRow = allStateAudit.states.find((row) => row.stateId === 'idaho');
+assert.equal(auditRow.packetBatch, 'batch397_idaho_live_sitemap_finality_v1');
+assert.equal(auditRow.packetPrimaryGapReason, 'remaining_idaho_camas_and_clark_surfaces_still_reduce_to_wrong_role_contact_board_roster_title_ix_general_education_notice_and_image_only_child_find_lanes_while_live_dhw_sitemap_only_confirms_office_inventory_without_county_contract');
+
+const allStateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/all-state-california-grade-audit-report-v3.md'), 'utf8');
+assert.match(allStateReport, /final live sitemap pass/i);
+assert.match(allStateReport, /live Idaho DHW sitemap confirms office inventory but still no county-to-office contract/i);
+
+const handoff = fs.readFileSync(path.join(repoRoot, 'docs/generated/gemini-source-scout-handoff.md'), 'utf8');
+assert.match(handoff, /- Idaho: `remaining_idaho_camas_and_clark_surfaces_still_reduce_to_wrong_role_contact_board_roster_title_ix_general_education_notice_and_image_only_child_find_lanes_while_live_dhw_sitemap_only_confirms_office_inventory_without_county_contract`/);
+
+const stateCertification = readJson('data/generated/state-certification/idaho.json');
+assert.equal(stateCertification.summary.batch, 'batch397_idaho_live_sitemap_finality_v1');
+assert.equal(stateCertification.checkedAt, '2026-06-25T00:00:00.000Z');
+assert.match(JSON.stringify(stateCertification.summary.final_blockers), /Reviewed 2026-06-25 one more bounded live Idaho district pass/);
 
 console.log('test-batch397-idaho-live-sitemap-finality-v1: ok');

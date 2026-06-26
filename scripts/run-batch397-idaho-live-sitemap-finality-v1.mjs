@@ -16,6 +16,10 @@ const INPUTS = {
   verified: path.join(generatedDir, 'idaho_verified_sources_v1.jsonl'),
   next: path.join(generatedDir, 'idaho_next_action_queue_v2.jsonl'),
   report: path.join(docsGeneratedDir, 'idaho-california-grade-audit-report-v2.md'),
+  audit: path.join(generatedDir, 'all_state_california_grade_audit_v3.json'),
+  allStateReport: path.join(docsGeneratedDir, 'all-state-california-grade-audit-report-v3.md'),
+  handoff: path.join(docsGeneratedDir, 'gemini-source-scout-handoff.md'),
+  stateCertification: path.join(generatedDir, 'state-certification', 'idaho.json'),
 };
 
 const OUTPUTS = {
@@ -24,14 +28,16 @@ const OUTPUTS = {
 };
 
 const BATCH = 'batch397_idaho_live_sitemap_finality_v1';
+const REVIEWED_DATE = '2026-06-25';
+const REVIEWED_AT = '2026-06-25T00:00:00.000Z';
 const PRIMARY_GAP_REASON =
   'remaining_idaho_camas_and_clark_surfaces_still_reduce_to_wrong_role_contact_board_roster_title_ix_general_education_notice_and_image_only_child_find_lanes_while_live_dhw_sitemap_only_confirms_office_inventory_without_county_contract';
 const DISTRICT_STATUS =
   'blocked_remaining_camas_and_clark_surfaces_only_materialize_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_after_shoshone_recovery';
 const DISTRICT_REASON =
-  'Reviewed 2026-06-26 one more bounded live Idaho district pass on the exact residual Camas and Clark hosts. Camas root and `Contact Information` are still public HTTP 200 pages, but `https://www.camascountyschools.org/sitemap.xml` now returns HTTP 404 and the reviewed public pages still preserve only district address/phone plus the same district-linked Google Doc board-roster lane rather than special-education, student-services, 504, Child Find, or procedural-safeguards routing. Clark root, `Contact Us`, `Title IX`, `Parent Notification of General Education Instruction`, and `Parent Resources` all still return HTTP 200, while `https://www.clarkcountyschools161.org/sitemap.xml` now returns HTTP 404. The live Clark surfaces still only preserve wrong-role or too-thin lanes: contact routing, Title IX, general-education intervention notice pages, and the same district-hosted `Idaho Child Find` flyer family without extractable Clark- or Dubois-specific special-education routing evidence. Idaho therefore remains blocked because the final district-owned surfaces are still public but remain the wrong role or too thin for local special-education routing.';
+  `Reviewed ${REVIEWED_DATE} one more bounded live Idaho district pass on the exact residual Camas and Clark hosts. Camas root and \`Contact Information\` are still public HTTP 200 pages, but \`https://www.camascountyschools.org/sitemap.xml\` now returns HTTP 404 and the reviewed public pages still preserve only district address/phone plus the same district-linked Google Doc board-roster lane rather than special-education, student-services, 504, Child Find, or procedural-safeguards routing. Clark root, \`Contact Us\`, \`Title IX\`, \`Parent Notification of General Education Instruction\`, and \`Parent Resources\` all still return HTTP 200, while \`https://www.clarkcountyschools161.org/sitemap.xml\` now returns HTTP 404. The live Clark surfaces still only preserve wrong-role or too-thin lanes: contact routing, Title IX, general-education intervention notice pages, and the same district-hosted \`Idaho Child Find\` flyer family without extractable Clark- or Dubois-specific special-education routing evidence. Idaho therefore remains blocked because the final district-owned surfaces are still public but remain the wrong role or too thin for local special-education routing.`;
 const COUNTY_LOCAL_REASON =
-  'Reviewed 2026-06-26 one more bounded live Idaho DHW office-contract pass on the exact official office root, one exact office leaf, and the now-public sitemap. `https://healthandwelfare.idaho.gov/offices` remains a live `Find a Service Location` root, `https://healthandwelfare.idaho.gov/dhw/caldwell-office` remains a live exact office leaf, and `https://healthandwelfare.idaho.gov/sitemap.xml` now returns HTTP 200. But the public sitemap only confirms office inventory, not county assignment: it enumerates exact office leaves such as Coeur d’Alene, Caldwell, Payette, Boise Westgate, Mountain Home, Burley, Twin Falls, Blackfoot, Pocatello, Idaho Falls, Rexburg, Salmon, and Kellogg, while the county-named URLs that do appear on the host are unrelated food-bank or pantry pages like `adams-county-mobile-pantry-council`, `camas-county-mobile-pantry-fairfield`, and `clark-county-mobile-pantry-dubois`. The live DHW stack still preserves no county-served fields, county-to-office table, service-area contract, or county assignment export for disability-routing offices. Idaho county-local routing therefore remains an explicit split between the existing safe exact-office replacements and the legacy counties that still lack a public county contract.';
+  `Reviewed ${REVIEWED_DATE} one more bounded live Idaho DHW office-contract pass on the exact official office root, one exact office leaf, and the now-public sitemap. \`https://healthandwelfare.idaho.gov/offices\` remains a live \`Find a Service Location\` root, \`https://healthandwelfare.idaho.gov/dhw/caldwell-office\` remains a live exact office leaf, and \`https://healthandwelfare.idaho.gov/sitemap.xml\` now returns HTTP 200. But the public sitemap only confirms office inventory, not county assignment: it enumerates exact office leaves such as Coeur d’Alene, Caldwell, Payette, Boise Westgate, Mountain Home, Burley, Twin Falls, Blackfoot, Pocatello, Idaho Falls, Rexburg, Salmon, and Kellogg, while the county-named URLs that do appear on the host are unrelated food-bank or pantry pages like \`adams-county-mobile-pantry-council\`, \`camas-county-mobile-pantry-fairfield\`, and \`clark-county-mobile-pantry-dubois\`. The live DHW stack still preserves no county-served fields, county-to-office table, service-area contract, or county assignment export for disability-routing offices. Idaho county-local routing therefore remains an explicit split between the existing safe exact-office replacements and the legacy counties that still lack a public county contract.`;
 
 const LESSON_HEADING =
   '### Public Sitemaps Can Confirm Inventory Without Creating A County Contract';
@@ -60,6 +66,16 @@ function writeJsonl(filePath, rows) {
 function writeText(filePath, value) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, value);
+}
+
+function dedupeSamples(samples) {
+  const seen = new Set();
+  return samples.filter((sample) => {
+    const key = `${sample.sample_name}||${sample.source_url}||${sample.final_url || ''}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 function appendLessonIfMissing() {
@@ -118,12 +134,29 @@ function buildBatchReport() {
   ].join('\n') + '\n';
 }
 
+function updateAllStateReport(report) {
+  const oldLine = '- Idaho remains blocked after a final Camas-and-Clark attachment pass: Camas only exposes contact routing plus a board-roster Google Doc, and Clark only exposes Contact Us, Title IX, general-education notice attachments, and image-only Child Find flyers without local special-education routing proof.';
+  const newLine = '- Idaho remains blocked after a final live sitemap pass: Camas only exposes contact routing plus a board-roster Google Doc and a 404 sitemap, Clark only exposes Contact Us, Title IX, general-education notice attachments, image-only Child Find flyers, and a 404 sitemap, and the live Idaho DHW sitemap confirms office inventory but still no county-to-office contract.';
+  return report.includes(oldLine) ? report.replace(oldLine, newLine) : report;
+}
+
+function updateHandoff(text) {
+  return text.replace(
+    /- Idaho: `[^`]+`/,
+    '- Idaho: `remaining_idaho_camas_and_clark_surfaces_still_reduce_to_wrong_role_contact_board_roster_title_ix_general_education_notice_and_image_only_child_find_lanes_while_live_dhw_sitemap_only_confirms_office_inventory_without_county_contract`',
+  );
+}
+
 export function generateBatch397IdahoLiveSitemapFinalityV1() {
   const summary = readJson(INPUTS.summary);
   const gapRows = readJsonl(INPUTS.gap);
   const failureRows = readJsonl(INPUTS.failure);
   const verifiedRows = readJsonl(INPUTS.verified);
   const nextRows = readJsonl(INPUTS.next);
+  const allStateAudit = readJson(INPUTS.audit);
+  const allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
+  const handoff = fs.readFileSync(INPUTS.handoff, 'utf8');
+  const stateCertification = readJson(INPUTS.stateCertification);
 
   const updatedSummary = {
     ...summary,
@@ -166,17 +199,19 @@ export function generateBatch397IdahoLiveSitemapFinalityV1() {
       };
     }
     if (row.family === 'county_local_disability_resources') {
-      const samples = [...(row.samples || [])];
-      samples.push({
+      const samples = dedupeSamples([
+        ...(row.samples || []),
+        {
         sample_name: 'Idaho DHW public sitemap office inventory',
         source_url: 'https://healthandwelfare.idaho.gov/sitemap.xml',
         final_url: 'https://healthandwelfare.idaho.gov/sitemap.xml',
         verification_status: 'verified',
         source_type: 'official_public_sitemap_inventory_only',
         source_table: BATCH,
-        fetched_at: '2026-06-26T00:00:00.000Z',
+        fetched_at: REVIEWED_AT,
         evidence_snippet: 'The live DHW sitemap now returns HTTP 200 and enumerates exact office leaves like Caldwell, Payette, Boise Westgate, Burley, Twin Falls, Pocatello, Idaho Falls, Rexburg, Salmon, and Kellogg, but the county-named URLs on the same host are unrelated food-bank or pantry pages rather than county-to-office disability-routing contracts.',
-      });
+      },
+      ]);
       return {
         ...row,
         sample_count: samples.length,
@@ -192,6 +227,29 @@ export function generateBatch397IdahoLiveSitemapFinalityV1() {
   writeJsonl(INPUTS.failure, updatedFailureRows);
   writeJsonl(INPUTS.verified, updatedVerifiedRows);
   writeText(INPUTS.report, buildReport(updatedSummary, updatedGapRows, updatedFailureRows, updatedVerifiedRows, nextRows));
+  const auditRow = allStateAudit.states.find((row) => row.stateId === 'idaho');
+  if (auditRow) {
+    auditRow.packetBatch = BATCH;
+    auditRow.packetPrimaryGapReason = PRIMARY_GAP_REASON;
+    auditRow.packetRecommendedBatch = 'hold_for_new_role_bearing_district_leaf_or_county_contract';
+    auditRow.completenessPct = 87;
+    auditRow.familyStatuses = {
+      ...auditRow.familyStatuses,
+      district_or_county_education_routing: DISTRICT_STATUS,
+      county_local_disability_resources: 'blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract',
+    };
+  }
+  writeJson(INPUTS.audit, allStateAudit);
+  writeText(INPUTS.allStateReport, updateAllStateReport(allStateReport));
+  writeText(INPUTS.handoff, updateHandoff(handoff));
+  const updatedStateCertification = {
+    ...stateCertification,
+    checkedAt: REVIEWED_AT,
+    summary: updatedSummary,
+    gapRows: updatedGapRows,
+    failures: updatedFailureRows,
+  };
+  writeJson(INPUTS.stateCertification, updatedStateCertification);
   writeJson(OUTPUTS.summary, {
     batch: BATCH,
     generated_at: new Date().toISOString(),
