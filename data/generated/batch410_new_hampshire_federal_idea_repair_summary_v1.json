@@ -1,0 +1,12 @@
+{
+  "batch": "batch410_new_hampshire_federal_idea_repair_v1",
+  "generated_at": "2026-06-26T15:12:43.851Z",
+  "classification": "BLOCKED",
+  "special_education_cleared_from_federal_idea": true,
+  "remaining_blocked_families": 7,
+  "counts_unchanged": {
+    "complete": 43,
+    "blocked": 7,
+    "indexSafe": 43
+  }
+}

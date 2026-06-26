@@ -18,6 +18,7 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 
 ## Notes
 
+- New Hampshire remains blocked after a 2026-06-26 bounded live repair pass: statewide IDEA Part B now clears from the official federal IDEA-by-State New Hampshire pages, but DHHS roots, NHES roots, and live local education-routing surfaces still do not expose a reviewable New Hampshire public contract.
 - Texas remains COMPLETE/index-safe from v10.
 - Pennsylvania remains COMPLETE/index-safe from its reviewed county-grade repair pass.
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.

@@ -2017,11 +2017,11 @@
       "legacyManualReviewRate": 63.16,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 10,
-      "strongCriticalFamilies": 4,
-      "weakCriticalFamilies": 8,
+      "strongCriticalFamilies": 5,
+      "weakCriticalFamilies": 7,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 33,
+      "completenessPct": 42,
       "dbMetrics": {
         "state_id": "new-hampshire",
         "state_code": "NH",
@@ -2069,8 +2069,8 @@
         "medicaid_waiver_hcbs_disability_services": "blocked_saved_dhhs_successor_unresolvable_and_public_dhhs_root_still_access_denied_with_no_reviewable_content_lane",
         "developmental_disability_idd_authority": "blocked_saved_dhhs_successor_unresolvable_and_public_dhhs_root_still_access_denied_with_no_reviewable_content_lane",
         "early_intervention_part_c": "blocked_saved_dhhs_successor_unresolvable_and_public_dhhs_root_still_access_denied_with_no_reviewable_content_lane",
-        "special_education_idea_part_b": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden",
-        "district_or_county_education_routing": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden",
+        "special_education_idea_part_b": "verified_state_grade",
+        "district_or_county_education_routing": "blocked_live_education_roots_still_403_without_local_routing_contract",
         "vocational_rehabilitation_pre_ets": "blocked_vr_hosts_unresolvable_or_forbidden_with_no_public_successor",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
@@ -2080,9 +2080,9 @@
         "county_local_disability_resources": "blocked_official_dhhs_hosts_still_access_denied_with_no_county_reviewable_content_lane"
       },
       "packetGenerated": true,
-      "packetBatch": "batch402_new_hampshire_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_still_return_access_denied_while_robots_txt_remains_public_only",
-      "packetRecommendedBatch": "hold_for_public_official_nh_host_recovery_or_export"
+      "packetBatch": "batch410_new_hampshire_federal_idea_repair_v1",
+      "packetPrimaryGapReason": "federal_part_b_now_clears_but_live_nh_dhhs_nhes_and_local_education_hosts_still_block_public_contracts",
+      "packetRecommendedBatch": "hold_for_live_nh_dhhs_nhes_or_local_education_contract_recovery"
     },
     {
       "stateId": "new-jersey",

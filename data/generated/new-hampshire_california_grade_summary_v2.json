@@ -2,24 +2,23 @@
   "state": "new-hampshire",
   "state_code": "NH",
   "state_name": "New Hampshire",
-  "batch": "batch402_new_hampshire_terminal_refresh_v1",
+  "batch": "batch410_new_hampshire_federal_idea_repair_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
   "county_count": 10,
-  "completeness_pct": 33,
-  "strong_critical_families": 4,
-  "weak_critical_families": 8,
+  "completeness_pct": 42,
+  "strong_critical_families": 5,
+  "weak_critical_families": 7,
   "missing_critical_families": 0,
   "total_critical_families": 12,
-  "primary_gap_reason": "bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_still_return_access_denied_while_robots_txt_remains_public_only",
-  "recommended_batch": "hold_for_public_official_nh_host_recovery_or_export",
+  "primary_gap_reason": "federal_part_b_now_clears_but_live_nh_dhhs_nhes_and_local_education_hosts_still_block_public_contracts",
+  "recommended_batch": "hold_for_live_nh_dhhs_nhes_or_local_education_contract_recovery",
   "critical_gap_families": [
     "medicaid_state_health_coverage",
     "medicaid_waiver_hcbs_disability_services",
     "developmental_disability_idd_authority",
     "early_intervention_part_c",
-    "special_education_idea_part_b",
     "district_or_county_education_routing",
     "vocational_rehabilitation_pre_ets",
     "county_local_disability_resources"
@@ -74,13 +73,6 @@
       "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
     },
     {
-      "family": "special_education_idea_part_b",
-      "severity": "critical",
-      "failure_code": "official_nh_statewide_special_education_host_family_and_direct_successors_still_return_access_denied_shell",
-      "evidence": "Reviewed 2026-06-26 one more bounded live New Hampshire education host-family pass. `https://education.nh.gov/`, `https://www.education.nh.gov/`, `https://www.nh.gov/education/`, and `https://my.doe.nh.gov/ehb/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable statewide or local education-routing content. `https://education.nh.gov/robots.txt` still returns HTTP 200 text only and does not reopen a district-grade routing contract. New Hampshire therefore still lacks a reviewable public DOE lane for statewide special education authority or district/county education routing.",
-      "next_action": "hold_blocked_until_public_nh_special_education_host_or_statewide_leaf_is_reviewable"
-    },
-    {
       "family": "district_or_county_education_routing",
       "severity": "critical",
       "failure_code": "official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell",
@@ -107,9 +99,9 @@
     "medicaid_waiver_hcbs_disability_services": "blocked_saved_dhhs_successor_unresolvable_and_public_dhhs_root_still_access_denied_with_no_reviewable_content_lane",
     "developmental_disability_idd_authority": "blocked_saved_dhhs_successor_unresolvable_and_public_dhhs_root_still_access_denied_with_no_reviewable_content_lane",
     "early_intervention_part_c": "blocked_saved_dhhs_successor_unresolvable_and_public_dhhs_root_still_access_denied_with_no_reviewable_content_lane",
-    "district_or_county_education_routing": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden",
+    "district_or_county_education_routing": "blocked_live_education_roots_still_403_without_local_routing_contract",
     "vocational_rehabilitation_pre_ets": "blocked_vr_hosts_unresolvable_or_forbidden_with_no_public_successor",
     "county_local_disability_resources": "blocked_official_dhhs_hosts_still_access_denied_with_no_county_reviewable_content_lane",
-    "special_education_idea_part_b": "blocked_official_education_hosts_and_diagnostic_surfaces_forbidden"
+    "special_education_idea_part_b": "verified_state_grade"
   }
 }
