@@ -39,6 +39,8 @@ const educationGap = gapRows.find((row) => row.family === 'district_or_county_ed
 assert.ok(educationGap);
 assert.match(educationGap.status_reason, /zero-item shadow `NM Schools` schema/i);
 assert.match(educationGap.status_reason, /Executive Director Name/i);
+assert.match(educationGap.status_reason, /explicitly groups district names under `REC 1` through `REC 10`/i);
+assert.match(educationGap.status_reason, /partial district universe rather than a complete statewide district crosswalk/i);
 assert.match(educationGap.status_reason, /REC Executive Directors Directory/i);
 assert.match(educationGap.status_reason, /timed out after 15 seconds/i);
 assert.match(educationGap.status_reason, /aborted before rendering body text/i);
@@ -48,6 +50,7 @@ assert.ok(educationFailure);
 assert.match(educationFailure.evidence, /zero-item shadow `NM Schools` schema/i);
 assert.match(educationFailure.evidence, /ItemCount=0/i);
 assert.match(educationFailure.evidence, /Email address/i);
+assert.match(educationFailure.evidence, /partial district universe rather than a statewide-complete district crosswalk/i);
 assert.match(educationFailure.evidence, /rec-executive-directors-directory/i);
 assert.match(educationFailure.evidence, /timed out after 15 seconds/i);
 assert.match(educationFailure.evidence, /Playwright navigation/i);
