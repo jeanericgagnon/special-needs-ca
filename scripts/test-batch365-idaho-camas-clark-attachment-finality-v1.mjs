@@ -41,14 +41,18 @@ assert.equal(summary.familyStatuses.district_or_county_education_routing, 'block
 
 const districtGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtGap.family_status, 'blocked_remaining_camas_and_clark_surfaces_only_materialize_wrong_role_contact_board_roster_title_ix_or_general_education_notice_leaves_after_shoshone_recovery');
-assert.match(districtGap.status_reason, /linked Google Doc that resolves to a board-of-trustees roster/i);
+assert.match(districtGap.status_reason, /same-host link scan on both the root and contact page still surfaces no district-owned `special`, `504`, `student-services`, `child-find`, or procedural-safeguards leaf/i);
+assert.match(districtGap.status_reason, /district-linked Google Doc, and it still resolves to a board-of-trustees roster/i);
+assert.match(districtGap.status_reason, /same-host link scan on the root and Parent Resources leaf still surfaces no role-bearing district-owned special-education or student-services URL/i);
 assert.match(districtGap.status_reason, /parent-notification page links district-hosted PDFs/i);
 assert.match(districtGap.status_reason, /Parent Resources page also links district-hosted `Idaho Child Find` PDFs/i);
 assert.match(districtGap.status_reason, /image-only flyer artifacts/i);
 
 const districtFailure = failureRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.equal(districtFailure.failure_code, 'remaining_camas_and_clark_surfaces_materialize_contact_board_roster_title_ix_or_general_education_notice_leaves_but_zero_role_bearing_special_education_or_student_services_routing');
+assert.match(districtFailure.evidence, /same-host href scan across those reviewed Camas pages surfaced no district-owned `special`, `504`, `student-services`, `child-find`, or procedural-safeguards leaf/i);
 assert.match(districtFailure.evidence, /board-of-trustees roster/i);
+assert.match(districtFailure.evidence, /same-host href scan across the Clark root and Parent Resources page likewise surfaced no district-owned role-bearing `special-education`, `special-services`, `student-services`, or procedural-safeguards URL/i);
 assert.match(districtFailure.evidence, /district-hosted PDF attachments linked from those Clark pages/i);
 assert.match(districtFailure.evidence, /district-hosted `Idaho Child Find` flyers/i);
 assert.match(districtFailure.evidence, /image-only PDF artifacts titled `Child Find Flyer 2025-2026 English`/i);
@@ -64,11 +68,13 @@ const districtNext = nextRows.find((row) => row.family === 'district_or_county_e
 assert.equal(districtNext.next_action, 'continue_exact_district_leaf_expansion_only_when_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact');
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
-assert.match(countyFailure.evidence, /Reviewed 2026-06-25 one more bounded live Idaho DHW confirmation/i);
+assert.match(countyFailure.evidence, /Reviewed 2026-06-25 and rechecked 2026-06-26 one more bounded live Idaho DHW confirmation/i);
+assert.match(countyFailure.evidence, /`Grangeville Office - Camas Resource Center`/i);
 assert.match(countyFailure.evidence, /still exposes no truthful county-to-office contract/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 one more bounded live Idaho DHW confirmation/i);
+assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 and rechecked 2026-06-26 one more bounded live Idaho DHW confirmation/i);
+assert.match(countyVerified.blocker_evidence, /`Boise Office - Westgate Building` and `Grangeville Office - Camas Resource Center`/i);
 assert.equal(countyVerified.samples.find((row) => row.sample_name === 'Idaho DHW office root').fetched_at, '2026-06-25T00:00:00.000Z');
 assert.equal(countyVerified.samples.find((row) => row.sample_name === 'Idaho DHW Caldwell Office').fetched_at, '2026-06-25T00:00:00.000Z');
 
