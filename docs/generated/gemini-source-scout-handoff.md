@@ -1,6 +1,6 @@
 # Gemini Source Scout Handoff
 
-Updated: 2026-06-26
+Updated: 2026-06-25
 
 Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.
 
@@ -18,51 +18,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - New Mexico: `official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 
-## Current Focus State: New Hampshire
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`medicaid_state_health_coverage` is the highest-priority New Hampshire blocker because the same official host-family failure still blocks Medicaid, waiver, DD, early-intervention, and county-local routing together. Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved replacement roots still fail DNS resolution. The direct DHHS roots and exact `/dhhs` successor roots still return the same short `Access Denied` shell with HTTP 403. A fresh diagnostic pass is more precise, not more open: `https://www.dhhs.nh.gov/robots.txt` and `https://www.nh.gov/robots.txt` return generic public robots files, `https://www.nh.gov/dhhs/robots.txt` returns 404, and `https://www.dhhs.nh.gov/sitemap.xml` still returns the same short 403 shell, so no public successor or export lane is currently preserved on the official DHHS family. Education remains separately blocked because `education.nh.gov`, `www.education.nh.gov`, exact district-directory leaves, `my.doe.nh.gov/ehb/`, and the obvious `nh.gov` education successors all still return that same shell. VR remains separately blocked because the NHES roots, the BVR disabilities path, and the likely `nh.gov` successors still return the same 403 shell or do not resolve. New Hampshire therefore stays BLOCKED and not index-safe.
+`county_local_disability_resources` is still the only remaining Alaska blocker, but the truth is now dual-lane rather than challenge-only. The current official DPA offices page on `health.alaska.gov` is publicly readable in the reviewed browser lane and it clearly proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, secure upload options, and office-city groups such as Homer/Kenai, Fairbanks/Nome, Anchorage/Matanuska-Susitna Valley, Juneau/Ketchikan/Sitka, and Bethel/Kodiak. But it still only groups offices by broad regions and still does not map boroughs or census areas to those offices. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` 403 shells, so it still offers no reusable raw export or fetch lane. The DFCS successor host remains negative: root, Services, Site Map, Department Contacts, and the live public search page only expose generic navigation results rather than any DPA/public-assistance office directory or county-equivalent assignment contract. Alaska remains BLOCKED because there is still no public official borough- or census-area office-assignment surface.
 
 ### Exact Evidence Needed
 
-- Any reviewed public official New Hampshire DHHS host that actually renders Medicaid, DD, waiver, early-intervention, or district-office content instead of the Access Denied shell.
-- Any public official district-office or county-export surface on the DHHS family that provides real county or district-office routing.
-- Any reviewed public official New Hampshire education directory or district-profile surface that returns district- or county-grade routing instead of the Access Denied shell.
-- Any reviewed public official New Hampshire VR or BVR surface that loads publicly instead of the same blocked shell.
+- Any official Alaska page, table, export, PDF, API, or directory that explicitly maps boroughs or census areas to DPA office locations.
+- Any public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings now visible.
+- Any official DFCS or Department of Health directory leaf that directly names borough/census-area coverage for public-assistance offices.
 
 ### Useful Official URLs Already Tried
 
-- [DHHS root](https://www.dhhs.nh.gov/)
-- [DHHS root without www](https://dhhs.nh.gov/)
-- [DHHS robots.txt](https://www.dhhs.nh.gov/robots.txt)
-- [DHHS sitemap.xml](https://www.dhhs.nh.gov/sitemap.xml)
-- [saved replacement root](https://dhhs.new-hampshire.gov/)
-- [saved DD replacement root](https://dhhs.new-hampshire.gov/dd)
-- [saved waiver replacement root](https://dhhs.new-hampshire.gov/dd/waivers)
-- [saved early-intervention replacement root](https://dhhs.new-hampshire.gov/earlystart)
-- [nh.gov DHHS successor root](https://www.nh.gov/dhhs/)
-- [nh.gov DHHS robots.txt](https://www.nh.gov/dhhs/robots.txt)
-- [DHHS robots.txt](https://www.dhhs.nh.gov/robots.txt)
-- [DHHS sitemap.xml](https://www.dhhs.nh.gov/sitemap.xml)
-- [nh.gov DHHS contact-us](https://www.nh.gov/dhhs/contact-us/)
-- [nh.gov DHHS district offices](https://www.nh.gov/dhhs/district-offices/)
-- [Education root](https://www.education.nh.gov/)
-- [Education root without www](https://education.nh.gov/)
-- [nh.gov Education successor](https://www.nh.gov/education/)
-- [nh.gov Education DOE successor](https://www.nh.gov/education/doe/)
-- [DOE alternate host](https://my.doe.nh.gov/ehb/)
-- [NHES root](https://www.nhes.nh.gov/)
-- [NHES root without www](https://nhes.nh.gov/)
-- [NHES successor root](https://www.nh.gov/nhes/)
-- [nh.gov employment successor](https://www.nh.gov/employment/)
+- [Alaska DPA offices page](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska DPA landing page](https://health.alaska.gov/en/division-of-public-assistance/)
+- [Alaska DPA dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
+- [Alaska Medicaid enrollment snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
+- [DFCS root](https://dfcs.alaska.gov/Pages/default.aspx)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
+- [DFCS public search: public assistance](https://dfcs.alaska.gov/pages/search.aspx?k=public%20assistance)
+- [DFCS public search: office](https://dfcs.alaska.gov/pages/search.aspx?k=office)
+- [DFCS public search: medicaid](https://dfcs.alaska.gov/pages/search.aspx?k=medicaid)
+- [DFCS public search: adult public assistance](https://dfcs.alaska.gov/pages/search.aspx?k=adult%20public%20assistance)
+- [DFCS public search: virtual contact center](https://dfcs.alaska.gov/pages/search.aspx?k=virtual%20contact%20center)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly public official NH DHHS successor host or export that resolves without the Access Denied shell.
-- Any official New Hampshire education directory, profile export, or district-routing surface that becomes publicly reviewable on the current host family.
-- Any official New Hampshire VR or BVR surface that becomes publicly reviewable on the current host family.
+- Any public official borough- or census-area-to-office assignment table on Alaska Department of Health or DFCS.
+- Any public official DPA office directory export, API, or PDF that lists explicit borough/census-area coverage.
 
-## Next State Order After New Hampshire
+## Next State Order After Alaska
 
-1. None remaining in assigned sequence
+1. Maine
+2. Idaho
+3. New Mexico
+4. Arizona
+5. New Hampshire

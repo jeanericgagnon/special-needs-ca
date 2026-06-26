@@ -66,8 +66,8 @@ assert.equal(failure.failure_code, 'reviewed_live_dpa_offices_page_proves_region
 assert.match(failure.evidence, /browser-reviewed lane/i);
 assert.match(failure.evidence, /still return HTTP 403 with the Cloudflare title "Just a moment\.\.\."/i);
 assert.match(failure.evidence, /live public search lane at `https:\/\/dfcs\.alaska\.gov\/pages\/search\.aspx` is real/i);
-assert.match(failure.evidence, /generic site-navigation results such as Home, Divisions, Commissioner's Office/i);
-assert.match(failure.evidence, /with no role-bearing DPA, public-assistance office, or borough-assignment results/i);
+assert.match(failure.evidence, /only a bare SharePoint-style `Search` shell/i);
+assert.match(failure.evidence, /with no rendered DPA, public-assistance office, or borough-assignment result text/i);
 
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(verified);
@@ -75,7 +75,7 @@ assert.equal(verified.blocker_code, failure.failure_code);
 assert.match(verified.query_basis, /browser-readable lane/i);
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DPA offices directory' && sample.verification_status === 'reviewed'));
 assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DPA raw low-token health-host family' && sample.verification_status === 'blocked'));
-assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DFCS public search page' && sample.verification_status === 'reviewed'));
+assert.ok(verified.samples.some((sample) => sample.sample_name === 'Alaska DFCS public search shell' && sample.verification_status === 'reviewed'));
 
 const officesSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DPA offices directory');
 assert.match(officesSample.evidence_snippet, /regional offices, office hours, addresses, fax numbers/i);
@@ -83,10 +83,10 @@ assert.match(officesSample.evidence_snippet, /does not assign boroughs or census
 assert.match(officesSample.evidence_snippet, /Anchorage Municipality/i);
 assert.match(officesSample.evidence_snippet, /Kenai Peninsula Borough/i);
 
-const searchSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DFCS public search page');
-assert.equal(searchSample.source_type, 'official_public_search_with_generic_navigation_only');
-assert.match(searchSample.evidence_snippet, /generic site-navigation results such as Home, Divisions, Commissioner's Office/i);
-assert.match(searchSample.evidence_snippet, /Office of Children's Services/i);
+const searchSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DFCS public search shell');
+assert.equal(searchSample.source_type, 'official_public_search_shell_without_rendered_results');
+assert.match(searchSample.evidence_snippet, /bare SharePoint-style `Search` shell/i);
+assert.match(searchSample.evidence_snippet, /no rendered DPA, public-assistance office, or borough-assignment result text/i);
 
 const next = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(next);
