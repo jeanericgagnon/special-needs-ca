@@ -49,6 +49,8 @@ assert.equal(failureRows.length, 1);
 assert.equal(failureRows[0].family, 'county_local_disability_resources');
 assert.equal(failureRows[0].failure_code, 'official_des_locator_now_proves_14_counties_and_greenlee_locality_zips_but_still_no_explicit_greenlee_county_assignment');
 assert.match(failureRows[0].evidence, /public Visualforce service lookup exposes a `Developmental Disability Services` lane/i);
+assert.match(failureRows[0].evidence, /returned DDS rows still only expose office `county` values `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`/i);
+assert.match(failureRows[0].evidence, /no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci`/i);
 assert.match(failureRows[0].evidence, /Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
@@ -62,6 +64,8 @@ assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town o
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Morenci first-party ZIP'));
 assert.match(countyVerified.blocker_evidence, /14 Arizona counties/i);
 assert.match(countyVerified.blocker_evidence, /Greenlee locality ZIPs `85533`, `85534`, and `85540`/i);
+assert.match(countyVerified.blocker_evidence, /Safford DDS row remains explicitly `county: Graham`/i);
+assert.match(countyVerified.blocker_evidence, /no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci`/i);
 
 assert.equal(nextRows.length, 1);
 assert.equal(nextRows[0].family, 'county_local_disability_resources');
