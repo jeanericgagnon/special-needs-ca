@@ -23,3 +23,9 @@ This v3 audit closes the packet-coverage gap across all 50 states. It does not c
 - The non-complete states are now fully packeted with summary, gap, failure, verified-sources, next-action, and report artifacts.
 - The next phase should use those packet artifacts as the repair control plane instead of creating more queue-expansion batches.
 - Wyoming is now COMPLETE/index-safe from the reviewed public WDE `Special Education Director` directory lane, which returns district-specific local routing contacts for all 23 counties on the official host.
+
+
+
+
+
+- Alaska county-local routing is still blocked: the official DPA offices page is browser-readable again and proves regional offices plus contacts, but it still has no borough/census-area assignment contract, while the raw low-token lane still gets health-host Cloudflare 403 shells and DFCS root/services/site-map/contacts/search still add no county-equivalent mapping.

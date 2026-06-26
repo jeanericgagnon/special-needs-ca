@@ -18,40 +18,43 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - New Mexico: `official_webed_sharepoint_lists_and_six_public_workbooks_are_live_but_still_expose_no_county_field_or_rec_service_area_contract_and_official_dvr_root_still_returns_401_without_reviewed_public_alternate`
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 
-## Current Focus State: New Mexico
+## Current Focus State: Alaska
 
 ### Blocker Reason
 
-`district_or_county_education_routing` remains the highest-priority New Mexico blocker. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public `Document Library` contains only those six workbook files and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. A final bounded API pass tightened the crucial distinction on the host: the live 935-row `2017 NM Schools` list exposes only district/location/contact columns on actual public rows, while a separate zero-item shadow `NM Schools` schema does expose a `County Name` field but cannot satisfy county-grade routing because it has no live rows. `Superintendents.xlsx` preserves district contacts only. `REC Directors.xlsx` preserves REC contact rows only. The principal workbooks preserve school and contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or REC service-area text. New Mexico remains BLOCKED because the public official PED stack still lacks a truthful county-to-district or county-to-REC crosswalk.
+`county_local_disability_resources` is still the only remaining Alaska blocker, but the truth is now dual-lane rather than challenge-only. The current official DPA offices page on `health.alaska.gov` is publicly readable in the reviewed browser lane and it clearly proves regional offices, office hours, addresses, fax numbers, virtual contact-center routing, secure upload options, and office-city groups such as Homer/Kenai, Fairbanks/Nome, Anchorage/Matanuska-Susitna Valley, Juneau/Ketchikan/Sitka, and Bethel/Kodiak. But it still only groups offices by broad regions and still does not map boroughs or census areas to those offices. In the raw low-token lane, the same health-host family still returns Cloudflare `Just a moment...` 403 shells, so it still offers no reusable raw export or fetch lane. The DFCS successor host remains negative: root, Services, Site Map, Department Contacts, and the live public search page only expose generic navigation results rather than any DPA/public-assistance office directory or county-equivalent assignment contract. Alaska remains BLOCKED because there is still no public official borough- or census-area office-assignment surface.
 
 ### Exact Evidence Needed
 
-- Any official PED-managed county-to-district crosswalk, county column, county selector, or county-keyed export on the live WebED host.
-- Any official PED-managed REC service-area artifact that explicitly labels counties served by each REC.
-- Any official district-owned or REC-owned local special-education routing leaf that proves county-grade coverage without inference.
+- Any official Alaska page, table, export, PDF, API, or directory that explicitly maps boroughs or census areas to DPA office locations.
+- Any public detail surface on the current Department of Health DPA host that adds service-area or region-to-borough assignment beyond the regional office groupings now visible.
+- Any official DFCS or Department of Health directory leaf that directly names borough/census-area coverage for public-assistance offices.
 
 ### Useful Official URLs Already Tried
 
-- [PED SharePoint school directory home](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx)
-- [2017 NM Schools list](https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx)
-- [2017 NM Schools live-list metadata](https://webed.ped.state.nm.us/sites/schooldirectory/_api/web/lists(guid'ed760a23-c290-4b26-8fec-4f94210cf7c3')?$select=Title,ItemCount,RootFolder/ServerRelativeUrl&$expand=RootFolder)
-- [NM Schools workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx)
-- [Superintendents workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx)
-- [REC Directors workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx)
-- [Elementary School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx)
-- [Middle School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx)
-- [High School Principals workbook](https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx)
-- [REC home page](https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx)
-- [Special Education Bureau page](https://webnew.ped.state.nm.us/bureaus/special-education/)
+- [Alaska DPA offices page](https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/)
+- [Alaska DPA landing page](https://health.alaska.gov/en/division-of-public-assistance/)
+- [Alaska DPA dashboard PDF](https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf)
+- [Alaska Medicaid enrollment snapshot PDF](https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf)
+- [DFCS root](https://dfcs.alaska.gov/Pages/default.aspx)
+- [DFCS Services](https://dfcs.alaska.gov/Pages/Services.aspx)
+- [DFCS Site Map](https://dfcs.alaska.gov/Pages/Site-Map.aspx)
+- [DFCS Department Contacts](https://dfcs.alaska.gov/Commissioner/Pages/Contacts/default.aspx)
+- [DFCS public search: public assistance](https://dfcs.alaska.gov/pages/search.aspx?q=public%20assistance)
+- [DFCS public search: office](https://dfcs.alaska.gov/pages/search.aspx?q=office)
+- [DFCS public search: medicaid](https://dfcs.alaska.gov/pages/search.aspx?q=medicaid)
+- [DFCS public search: adult public assistance](https://dfcs.alaska.gov/pages/search.aspx?q=adult%20public%20assistance)
+- [DFCS public search: virtual contact center](https://dfcs.alaska.gov/pages/search.aspx?q=virtual%20contact%20center)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any live WebED list, workbook, or site page with an explicit county column or county-keyed filter.
-- Any live WebED row contract, not just a shadow schema, that actually materializes county on public rows.
-- Any official REC service-area contract with county labels on the PED-managed host or REC-owned official hosts.
-- Any official district-owned local special-education or student-services leaf that can clear counties without relying on statewide PED exports.
+- Any public official borough- or census-area-to-office assignment table on Alaska Department of Health or DFCS.
+- Any public official DPA office directory export, API, or PDF that lists explicit borough/census-area coverage.
 
-## Next State Order After New Mexico
+## Next State Order After Alaska
 
-1. Arizona
-2. New Hampshire
+1. Maine
+2. Idaho
+3. New Mexico
+4. Arizona
+5. New Hampshire

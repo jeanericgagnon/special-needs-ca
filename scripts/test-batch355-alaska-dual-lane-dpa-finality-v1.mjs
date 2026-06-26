@@ -39,7 +39,7 @@ assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(summary.batch, 'batch355_alaska_dual_lane_dpa_finality_v1');
 assert.equal(summary.primary_gap_reason, 'reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract');
-assert.match(summary.final_blockers[0].evidence, /Reviewed 2026-06-25 exact official Alaska county-local surfaces/i);
+assert.match(summary.final_blockers[0].evidence, /Reviewed 2026-06-26 exact official Alaska county-local surfaces/i);
 
 assert.equal(gapRows.length, 13);
 assert.equal(summary.final_blockers.length, 1);
@@ -66,7 +66,8 @@ assert.equal(failure.failure_code, 'reviewed_live_dpa_offices_page_proves_region
 assert.match(failure.evidence, /browser-reviewed lane/i);
 assert.match(failure.evidence, /still return HTTP 403 with the Cloudflare title "Just a moment\.\.\."/i);
 assert.match(failure.evidence, /live public search lane at `https:\/\/dfcs\.alaska\.gov\/pages\/search\.aspx` is real/i);
-assert.match(failure.evidence, /still materialize no role-bearing DPA/i);
+assert.match(failure.evidence, /generic site-navigation results such as Home, Divisions, Commissioner's Office/i);
+assert.match(failure.evidence, /with no role-bearing DPA, public-assistance office, or borough-assignment results/i);
 
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(verified);
@@ -81,6 +82,11 @@ assert.match(officesSample.evidence_snippet, /regional offices, office hours, ad
 assert.match(officesSample.evidence_snippet, /does not assign boroughs or census areas/i);
 assert.match(officesSample.evidence_snippet, /Anchorage Municipality/i);
 assert.match(officesSample.evidence_snippet, /Kenai Peninsula Borough/i);
+
+const searchSample = verified.samples.find((sample) => sample.sample_name === 'Alaska DFCS public search page');
+assert.equal(searchSample.source_type, 'official_public_search_with_generic_navigation_only');
+assert.match(searchSample.evidence_snippet, /generic site-navigation results such as Home, Divisions, Commissioner's Office/i);
+assert.match(searchSample.evidence_snippet, /Office of Children's Services/i);
 
 const next = nextRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(next);
@@ -99,7 +105,7 @@ assert.equal(alaskaQueue.repair_lane, 'blocked_until_new_official_public_county_
 
 assert.match(stateReport, /The official Department of Health DPA offices page is publicly readable in the reviewed browser lane\./);
 assert.match(stateReport, /raw low-token lane still gets Cloudflare `Just a moment\.\.\.` 403 shells/i);
-assert.match(stateReport, /live public search page still expose no borough- or census-area DPA office contract/i);
+assert.match(stateReport, /live public search page still expose no borough- or census-area DPA office contract; the search lane now only returns generic site navigation/i);
 assert.match(stateReport, /no borough\/census-area contract terms on the reviewed page/i);
 assert.match(allStateReport, /browser-readable again and proves regional offices plus contacts/i);
 assert.match(handoff, /## Current Focus State: Alaska/);

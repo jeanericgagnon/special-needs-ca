@@ -147,7 +147,7 @@
         "legal_aid": "missing",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "legacy_state_grade"
+        "county_local_disability_resources": "blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract"
       },
       "packetGenerated": true,
       "packetBatch": "batch355_alaska_dual_lane_dpa_finality_v1",
