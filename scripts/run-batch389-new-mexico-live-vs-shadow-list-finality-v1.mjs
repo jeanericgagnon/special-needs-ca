@@ -32,18 +32,22 @@ const NEXT_ACTION = 'author_official_county_crosswalk_from_webed_directory_or_re
 const VR_FAILURE_CODE = 'official_dvr_root_returns_401_without_reviewed_public_alternate';
 const VR_NEXT_ACTION = 'browser_assisted_or_review_alternate_official_vr_root';
 const VR_EVIDENCE =
-  'Reviewed 2026-06-25 the New Mexico VR blocker artifacts plus one more bounded live official probe. The exact official DVR root `https://www.dvr.nm.gov/` still returns HTTP 401 Unauthorized in bounded fetches and remains the only reviewed first-party VR host in the state packet. A bounded likely-official workforce successor probe on `https://www.dws.state.nm.us/` now returns a live `Request Rejected` shell rather than a reviewable public VR lane, and the New Mexico official-domain registry still carries no reviewed alternate VR domain. The NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.';
+  'Reviewed 2026-06-25 the New Mexico VR blocker artifacts plus another bounded live official successor pass. The exact official DVR host family is still closed across multiple exact paths: `https://www.dvr.nm.gov/`, `/home`, `/about-us`, `/services`, `/contact-us`, `/sitemap.xml`, and `/robots.txt` all return the same HTTP 401 Unauthorized shell. The likely official workforce successor family is also still non-reviewable across multiple exact paths: `https://www.dws.state.nm.us/`, `/en-us/JobSeekers/Jobs4Joes`, `/en-us/Job-Seekers/Vocational-Rehabilitation`, `/en-us/Individuals-with-Disabilities`, and `/en-us/Businesses/Business-Services` each return the same live `Request Rejected` shell rather than a public VR or Pre-ETS lane. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after both the DVR 401 family and the DWS rejected-successor family, not on a broader discovery gap.';
 
 const DISTRICT_REASON =
-  'Reviewed 2026-06-25 one more bounded official New Mexico education directory pass on the live PED-managed SharePoint host. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public `Document Library` contains only those six workbook files and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. The official `RECHome.aspx` page does surface one more exact PED leaf, `REC Executive Directors Directory – New Mexico Public Education Department`, but a bounded 12-second replay of that `webnew.ped.state.nm.us` page still did not yield a reviewable public REC service-area contract. A final bounded API pass tightened the row-level truth further: the live 935-row `2017 NM Schools` list exposes only `Title` plus `Column2` through `Column13` on public row payloads, corresponding to district, location, address, city, state, zip, level, type, status, and phone columns, with no county field on actual rows. The same host also exposes a separate zero-item shadow `NM Schools` schema with a `County Name` field, but that list has `ItemCount=0` and cannot satisfy county-grade public routing. `Superintendents.xlsx` preserves district names, codes, contacts, and addresses, but no county field. Fresh bounded workbook inspection now confirms `REC Directors.xlsx` headers are only `REC`, `Executive Director Name`, `Mailing Address`, `Physical Address`, `Phone`, `Fax`, and `Email address`, with no county or service-area field. The elementary, middle, and high school principal workbooks each preserve school/district/contact columns, but no county field. The public `RECHome.aspx` page is also live and still groups districts under REC headings rather than exposing counties or REC service-area labels. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED directory artifacts.';
+  'Reviewed 2026-06-25 one more bounded official New Mexico education directory pass on the live PED-managed SharePoint host. The official `2017 NM Schools` list is still live and REST-backed, and the public workbook stack is broader than the earlier packet captured: `NM Schools.xlsx`, `Superintendents.xlsx`, `REC Directors.xlsx`, `Elementary School Principals.xlsx`, `Middle School Principals.xlsx`, and `High School Principals.xlsx` all download successfully from the same official host. A follow-up schema and folder inventory pass also closed the remaining uncertainty on that host: the public `Document Library` contains only those six workbook files and `SitePages` contains only `Home.aspx`, `RECHome.aspx`, `How To Use This Library.aspx`, `Home1.aspx`, and `untitled_1.aspx`, with no separate county-crosswalk page. The official `RECHome.aspx` page does surface one more exact PED leaf, `REC Executive Directors Directory – New Mexico Public Education Department`, but the exact `webnew.ped.state.nm.us` leaf is not currently materializing as a reviewable public service-area contract either: a bounded plain fetch timed out after 15 seconds, and a browser-style navigation probe to that same official URL aborted before rendering body text. A final bounded API pass tightened the row-level truth further: the live 935-row `2017 NM Schools` list exposes only `Title` plus `Column2` through `Column13` on public row payloads, corresponding to district, location, address, city, state, zip, level, type, status, and phone columns, with no county field on actual rows. The same host also exposes a separate zero-item shadow `NM Schools` schema with a `County Name` field, but that list has `ItemCount=0` and cannot satisfy county-grade public routing. `Superintendents.xlsx` preserves district names, codes, contacts, and addresses, but no county field. Fresh bounded workbook inspection now confirms `REC Directors.xlsx` headers are only `REC`, `Executive Director Name`, `Mailing Address`, `Physical Address`, `Phone`, `Fax`, and `Email address`, with no county or service-area field. The elementary, middle, and high school principal workbooks each preserve school/district/contact columns, but no county field. The public `RECHome.aspx` page is also live and still groups districts under REC headings rather than exposing counties or REC service-area labels. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED directory artifacts.';
 
 const DISTRICT_EVIDENCE =
-  'Reviewed 2026-06-25 bounded official New Mexico PED SharePoint surfaces on `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx`, the public SharePoint REST inventory and field schema for that list family, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx`, and the exact PED leaf `https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/` surfaced from that REC page. The official SharePoint host is genuinely live and materially useful, but every public list and workbook still omits county or REC service-area fields, and the bounded replay of the PED REC executive-directors leaf did not yield a reviewable public service-area contract within 12 seconds. A final bounded API pass tightened the public-list evidence further: the live 935-row `2017 NM Schools` list at GUID `ed760a23-c290-4b26-8fec-4f94210cf7c3` exposes public row payload keys `Title`, `Column2` through `Column13`, corresponding to district, location, address, city, state, zip, level, type, status, and phone only, with no county field on real rows. The same host also exposes a separate zero-item shadow `NM Schools` schema whose fields include `County Name`, but that list has `ItemCount=0` and therefore does not provide a public county-grade routing contract. The public `Document Library` inventory still closes at six workbook files and `SitePages` closes at five public pages, none of which is a county crosswalk or REC service-area contract. `Superintendents.xlsx` exposes district contact columns only. Fresh bounded workbook inspection confirms `REC Directors.xlsx` headers are only `REC`, `Executive Director Name`, `Mailing Address`, `Physical Address`, `Phone`, `Fax`, and `Email address`, with no county or REC service-area column. The principal workbooks expose district/location/contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or service-area text. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED education inventory.';
+  'Reviewed 2026-06-25 bounded official New Mexico PED SharePoint surfaces on `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/Home.aspx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Lists/2017%20NM%20Schools/AllItems.aspx`, the public SharePoint REST inventory and field schema for that list family, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/NM%20Schools.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Superintendents.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/REC%20Directors.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Elementary%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/Middle%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/Document%20Library/High%20School%20Principals.xlsx`, `https://webed.ped.state.nm.us/sites/schooldirectory/SitePages/RECHome.aspx`, and the exact PED leaf `https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/` surfaced from that REC page. The official SharePoint host is genuinely live and materially useful, but every public list and workbook still omits county or REC service-area fields, and the exact PED REC leaf is no longer even a reviewable public fallback under bounded live checks: a plain fetch timed out after 15 seconds, and a browser-style Playwright navigation to the same official URL aborted before rendering body text. A final bounded API pass tightened the public-list evidence further: the live 935-row `2017 NM Schools` list at GUID `ed760a23-c290-4b26-8fec-4f94210cf7c3` exposes public row payload keys `Title`, `Column2` through `Column13`, corresponding to district, location, address, city, state, zip, level, type, status, and phone only, with no county field on real rows. The same host also exposes a separate zero-item shadow `NM Schools` schema whose fields include `County Name`, but that list has `ItemCount=0` and therefore does not provide a public county-grade routing contract. The public `Document Library` inventory still closes at six workbook files and `SitePages` closes at five public pages, none of which is a county crosswalk or REC service-area contract. `Superintendents.xlsx` exposes district contact columns only. Fresh bounded workbook inspection confirms `REC Directors.xlsx` headers are only `REC`, `Executive Director Name`, `Mailing Address`, `Physical Address`, `Phone`, `Fax`, and `Email address`, with no county or REC service-area column. The principal workbooks expose district/location/contact columns only. `RECHome.aspx` still groups districts under REC headings without county labels or service-area text. New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED education inventory.';
 
 const LESSON_HEADING =
   '### Shadow SharePoint Schemas Do Not Count If The Live List Rows Still Omit The Field';
 const LESSON_BODY =
   '*   **Lesson:** If a SharePoint host exposes a helpful field on a zero-row shadow list or schema, verify that the same field exists on the actual live row contract before treating the blocker as cleared. New Mexico\'s WebED host exposed a separate zero-item `NM Schools` schema with `County Name`, but the real 935-row `2017 NM Schools` list still materialized only `Title` and `Column2` through `Column13`, so county-grade routing stayed blocked.';
+const REC_TIMEOUT_LESSON_HEADING =
+  '### Timed-Out Official Leaves Still Do Not Count As Service-Area Contracts';
+const REC_TIMEOUT_LESSON_BODY =
+  '*   **Lesson:** If an exact official successor leaf looks promising but a bounded plain fetch times out and a browser-style probe aborts before rendering body text, treat that leaf as an unavailable lane, not hidden proof. New Mexico PED\'s `REC Executive Directors Directory` URL stayed non-reviewable under both checks, so it could not rescue the missing county or REC service-area contract.';
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -70,6 +74,22 @@ function writeJsonl(filePath, rows) {
 function writeText(filePath, text) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
   fs.writeFileSync(filePath, text);
+}
+
+function appendLessonsIfMissing(filePath) {
+  let current = fs.readFileSync(filePath, 'utf8');
+  let changed = false;
+  if (!current.includes(LESSON_HEADING)) {
+    current = `${current.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`;
+    changed = true;
+  }
+  if (!current.includes(REC_TIMEOUT_LESSON_HEADING)) {
+    current = `${current.trimEnd()}\n\n${REC_TIMEOUT_LESSON_HEADING}\n${REC_TIMEOUT_LESSON_BODY}\n`;
+    changed = true;
+  }
+  if (changed) {
+    fs.writeFileSync(filePath, current);
+  }
 }
 
 function main() {
@@ -126,7 +146,7 @@ function main() {
             source_type: 'official_root_401',
             source_table: 'batch389_new_mexico_live_vs_shadow_list_finality_v1',
             fetched_at: '2026-06-25T00:00:00.000Z',
-            evidence_snippet: 'The exact official DVR root still returned HTTP 401 Unauthorized in bounded live review.',
+            evidence_snippet: 'The exact official DVR root still returned HTTP 401 Unauthorized in bounded live review, and sibling exact paths `/home`, `/about-us`, `/services`, `/contact-us`, `/sitemap.xml`, and `/robots.txt` returned the same 401 shell.',
           },
           {
             sample_name: 'Likely workforce successor probe',
@@ -136,7 +156,7 @@ function main() {
             source_type: 'likely_official_successor_probe_without_reviewable_vr_leaf',
             source_table: 'batch389_new_mexico_live_vs_shadow_list_finality_v1',
             fetched_at: '2026-06-25T00:00:00.000Z',
-            evidence_snippet: 'A bounded likely-official workforce successor probe on the live DWS root returned a `Request Rejected` shell rather than a reviewed public vocational-rehabilitation or Pre-ETS leaf.',
+            evidence_snippet: 'The live DWS root and bounded likely successor paths for Jobs4Joes, Vocational Rehabilitation, Individuals with Disabilities, and Business Services each returned the same `Request Rejected` shell rather than a reviewed public vocational-rehabilitation or Pre-ETS leaf.',
           },
         ],
       };
@@ -151,7 +171,7 @@ function main() {
       ...row,
       query_basis: 'Reviewed 2026-06-25 the full official WebED SharePoint list and workbook stack, then verified the live 935-row list payload and the separate zero-item shadow schema for county-grade routing fields.',
       evidence_strength: 'weak',
-      sample_count: 12,
+      sample_count: 13,
       blocker_code: FAILURE_CODE,
       blocker_evidence: DISTRICT_EVIDENCE,
       samples: [
@@ -187,8 +207,18 @@ function main() {
           fetched_at: '2026-06-25T00:00:00.000Z',
           evidence_snippet: 'A separate `NM Schools` schema exposes a `County Name` field, but it is not the live 935-row routing list and cannot substitute for county-grade public rows.',
         },
+        {
+          sample_name: 'REC executive-directors leaf timeout',
+          source_url: 'https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/',
+          final_url: 'https://webnew.ped.state.nm.us/information/rec-executive-directors-directory/',
+          verification_status: 'blocked',
+          source_type: 'official_exact_leaf_timeout_without_reviewable_service_area_contract',
+          source_table: BATCH,
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'A bounded plain fetch timed out after 15 seconds, and a browser-style navigation probe to the same official URL aborted before rendering body text, so the exact PED REC leaf is not currently a reviewable county or service-area contract.',
+        },
         ...preservedSamples.slice(2),
-      ].slice(0, 12),
+      ].slice(0, 13),
     };
   });
   const finalVerifiedRows = updatedVerifiedRows.map((row) => {
@@ -286,18 +316,13 @@ function main() {
 ${currentFocusSection}
 `);
 
-  let updatedLessons = lessonsText;
-  if (!updatedLessons.includes(LESSON_HEADING)) {
-    updatedLessons = `${updatedLessons.trimEnd()}\n\n${LESSON_HEADING}\n${LESSON_BODY}\n`;
-  }
-
   writeJson(INPUTS.summary, summary);
   writeJsonl(INPUTS.gap, updatedGapRows);
   writeJsonl(INPUTS.failure, updatedFailureRows);
   writeJsonl(INPUTS.verified, finalVerifiedRows);
   writeText(INPUTS.report, updatedReport);
   writeText(INPUTS.handoff, updatedHandoff);
-  writeText(INPUTS.lessons, updatedLessons);
+  appendLessonsIfMissing(INPUTS.lessons);
 
   writeJson(OUTPUTS.batchSummary, {
     batch: BATCH,
@@ -310,8 +335,10 @@ ${currentFocusSection}
     live_list_public_row_columns: ['Title', 'Column2', 'Column3', 'Column4', 'Column5', 'Column6', 'Column7', 'Column8', 'Column9', 'Column10', 'Column11', 'Column12', 'Column13'],
     shadow_schema_has_county_name: true,
     shadow_schema_item_count: 0,
+    rec_leaf_fetch_timeout: true,
+    rec_leaf_browser_abort: true,
     blocker_changed: false,
-    conclusion: 'New Mexico remains blocked because the live 935-row WebED list still omits county on actual public rows, and a separate zero-item shadow schema cannot satisfy county-grade routing.',
+    conclusion: 'New Mexico remains blocked because the live 935-row WebED list still omits county on actual public rows, the exact PED REC leaf is not currently reviewable under bounded live checks, and a separate zero-item shadow schema cannot satisfy county-grade routing.',
   });
 
   writeText(OUTPUTS.batchReport, [
@@ -319,12 +346,13 @@ ${currentFocusSection}
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: tightened the education blocker to distinguish the live 935-row WebED list from a zero-item shadow schema that exposes `County Name` but has no public rows',
+    '- change: tightened the education blocker to distinguish the live 935-row WebED list from a zero-item shadow schema and to prove the exact PED REC leaf still times out or aborts under bounded live checks',
     '',
     '## Conclusion',
     '',
     '- The live official `2017 NM Schools` list remains the controlling public row contract and still exposes only `Title` plus `Column2` through `Column13` on actual rows.',
     '- A separate shadow `NM Schools` schema exposes `County Name`, but it has `ItemCount=0` and cannot be used as county-grade public routing proof.',
+    '- The exact PED `REC Executive Directors Directory` leaf is also not a current fallback contract because a bounded plain fetch timed out after 15 seconds and a browser-style probe aborted before rendering body text.',
     '- New Mexico stays BLOCKED and index_safe=false until a live official county-to-district or county-to-REC contract appears.',
     '',
   ].join('\n'));

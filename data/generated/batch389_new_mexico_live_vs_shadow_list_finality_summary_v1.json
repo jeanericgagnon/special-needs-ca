@@ -23,6 +23,8 @@
   ],
   "shadow_schema_has_county_name": true,
   "shadow_schema_item_count": 0,
+  "rec_leaf_fetch_timeout": true,
+  "rec_leaf_browser_abort": true,
   "blocker_changed": false,
-  "conclusion": "New Mexico remains blocked because the live 935-row WebED list still omits county on actual public rows, and a separate zero-item shadow schema cannot satisfy county-grade routing."
+  "conclusion": "New Mexico remains blocked because the live 935-row WebED list still omits county on actual public rows, the exact PED REC leaf is not currently reviewable under bounded live checks, and a separate zero-item shadow schema cannot satisfy county-grade routing."
 }
