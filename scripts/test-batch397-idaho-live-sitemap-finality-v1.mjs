@@ -30,17 +30,24 @@ assert.equal(summary.primary_gap_reason, 'remaining_idaho_camas_and_clark_surfac
 const gapRows = readJsonl('data/generated/idaho_gap_matrix_v2.jsonl');
 const districtGap = gapRows.find((row) => row.family === 'district_or_county_education_routing');
 assert.match(districtGap.status_reason, /camascountyschools\.org.*sitemap\.xml.*HTTP 404/i);
+assert.match(districtGap.status_reason, /same-host href scan.*all-resources/i);
+assert.match(districtGap.status_reason, /`Food Services` link/i);
 assert.match(districtGap.status_reason, /clarkcountyschools161\.org.*sitemap\.xml.*HTTP 404/i);
-assert.match(districtGap.status_reason, /same district-hosted `Idaho Child Find` flyer family/i);
+assert.match(districtGap.status_reason, /same-host anchor-text scan.*Parent Resources/i);
+assert.match(districtGap.status_reason, /Idaho Child Find.*English and Spanish flyer PDFs/i);
 
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.match(countyGap.status_reason, /healthandwelfare\.idaho\.gov.*sitemap\.xml.*HTTP 200/i);
-assert.match(countyGap.status_reason, /only confirms office inventory/i);
+assert.match(countyGap.status_reason, /\/offices\?page=0.*\/offices\?page=1.*\/offices\?page=2/i);
+assert.match(countyGap.status_reason, /Grangeville Office - Camas Resource Center/i);
+assert.match(countyGap.status_reason, /no `county served`, `counties served`, `serves`, or `service area` field/i);
+assert.match(countyGap.status_reason, /preserve office inventory only, not county assignment/i);
 assert.match(countyGap.status_reason, /adams-county-mobile-pantry-council/i);
 assert.match(countyGap.status_reason, /clark-county-mobile-pantry-dubois/i);
 
 const failureRows = readJsonl('data/generated/idaho_failure_ledger_v2.jsonl');
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
+assert.match(countyFailure.evidence, /paginated office inventory/i);
 assert.match(countyFailure.evidence, /sitemap\.xml` now returns HTTP 200/i);
 assert.match(countyFailure.evidence, /unrelated food-bank or pantry pages/i);
 
@@ -49,10 +56,12 @@ const countyVerified = verifiedRows.find((row) => row.family === 'county_local_d
 assert.equal(countyVerified.samples.filter((sample) => sample.sample_name === 'Idaho DHW public sitemap office inventory').length, 1);
 assert.match(JSON.stringify(countyVerified.samples), /official_public_sitemap_inventory_only/);
 assert.equal(countyVerified.sample_count, countyVerified.samples.length);
+assert.match(countyVerified.blocker_evidence, /paginated office inventory/i);
 assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 one more bounded live Idaho DHW office-contract pass/i);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/idaho-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /live DHW sitemap confirms office inventory/i);
+assert.match(report, /the `all-resources` page still only exposes a `Food Services` link/i);
 
 const batchSummary = readJson('data/generated/batch397_idaho_live_sitemap_finality_summary_v1.json');
 assert.equal(batchSummary.idaho_dhw_sitemap_live, true);
