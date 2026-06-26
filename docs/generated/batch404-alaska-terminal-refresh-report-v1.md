@@ -1,0 +1,9 @@
+# Batch 404 Alaska Terminal Refresh v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: tied Alaska’s blocked terminal state to a fresh 2026-06-26 raw recheck showing the DPA offices page itself is back behind the 403 shell
+
+## Evidence
+
+- Reviewed 2026-06-26 one more bounded live Alaska county-local pass. The current official health-host DPA family still fails closed end to end: `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/`, `https://health.alaska.gov/en/division-of-public-assistance/`, `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf`, and `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` all now return HTTP 403 with the Cloudflare `Just a moment...` shell. The DFCS successor family is still publicly reachable but still does not restore county-equivalent routing: `https://dfcs.alaska.gov/Pages/default.aspx`, `/Pages/Services.aspx`, `/pages/search.aspx`, and `/Commissioner/Pages/Contacts/default.aspx` still return HTTP 200 SharePoint pages, but `https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance` still returns HTTP 404 and the reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. Alaska therefore still lacks any reviewable public borough- or census-area-to-office contract.
