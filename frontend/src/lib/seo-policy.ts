@@ -1,4 +1,13 @@
-import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties';
+import { createRequire } from 'module';
+import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
+import { isAllowlistedStaticPath, isHardBlockedSitemapRoute, isStaticGuidePath, normalizeManifestPath } from './seoRouteManifest.ts';
+import {
+  getEligibleStatesFromAudit,
+  stateAuditStatus as readStateAuditStatus,
+  stateGapReason as readStateGapReason,
+} from './stateAudit.ts';
+
+const nodeRequire = typeof window === 'undefined' ? createRequire(import.meta.url) : null;
 
 export type RouteType =
   | 'state-hub'
@@ -16,6 +25,7 @@ export type RouteType =
 
 export type SeoPolicyInput = {
   routeType: RouteType;
+  path?: string;
   stateId?: string;
   countyId?: string;
   diagnosisId?: string;
@@ -28,11 +38,13 @@ export type SeoPolicyInput = {
   hasRequiredContactInfo?: boolean;
   hasApplicationSteps?: boolean;
   hasEligibilityRules?: boolean;
+  hasVerifiedEligibilityRules?: boolean;
   hasDocuments?: boolean;
   hasUniqueLocalData?: boolean;
   hasNoPlaceholderData?: boolean;
   lastVerifiedDate?: string | null;
   confidenceScore?: number | null;
+  verificationStatus?: string | null;
 };
 
 export type SeoPolicyResult = {
@@ -41,116 +53,24 @@ export type SeoPolicyResult = {
   includeInSitemap: boolean;
   qualityScore: number;
   canonicalPath: string;
+  canonicalUrl: string;
+  schemaEligible: boolean;
+  verificationState: 'official-verified' | 'human-reviewed' | 'crawler-verified' | 'unverified';
   reasons: string[];
   blockers: string[];
 };
 
-interface AuditState {
-  stateId: string;
-  classification: string;
-  indexSafe: boolean;
-}
-
-interface AuditData {
-  states: AuditState[];
-}
-
-interface PriorityQueueState {
-  state: string;
-  classification: string;
-  index_safe: boolean;
-  primary_gap_reason?: string | null;
-}
-
-let auditData: AuditData | null = null;
-const priorityQueueData: PriorityQueueState[] = [];
-
-if (typeof window === 'undefined') {
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const fs = require('fs');
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const path = require('path');
-    
-    // Load grade audit JSON
-    const auditPaths = [
-      path.resolve(process.cwd(), 'data/generated/all_state_california_grade_audit_v3.json'),
-      path.resolve(process.cwd(), '../data/generated/all_state_california_grade_audit_v3.json'),
-    ];
-    let auditPath = auditPaths[0];
-    for (const p of auditPaths) {
-      if (fs.existsSync(p)) {
-        auditPath = p;
-        break;
-      }
-    }
-    if (fs.existsSync(auditPath)) {
-      const fileContent = fs.readFileSync(auditPath, 'utf8');
-      auditData = JSON.parse(fileContent);
-    }
-    
-    // Load priority queue JSONL
-    const pqPaths = [
-      path.resolve(process.cwd(), 'data/generated/all_state_priority_queue_v3.jsonl'),
-      path.resolve(process.cwd(), '../data/generated/all_state_priority_queue_v3.jsonl'),
-    ];
-    let pqPath = pqPaths[0];
-    for (const p of pqPaths) {
-      if (fs.existsSync(p)) {
-        pqPath = p;
-        break;
-      }
-    }
-    if (fs.existsSync(pqPath)) {
-      const lines = fs.readFileSync(pqPath, 'utf8').split('\n');
-      for (const line of lines) {
-        if (line.trim()) {
-          priorityQueueData.push(JSON.parse(line));
-        }
-      }
-    }
-  } catch (err) {
-    console.error('Failed to load SEO state audit data:', err);
-  }
-}
-
-export function stateAuditStatus(stateId: string): { classification: string; indexSafe: boolean } | null {
-  if (!stateId) return null;
-  const normalized = stateId.toLowerCase().trim();
-  
-  if (!auditData || !Array.isArray(auditData.states) || priorityQueueData.length === 0) {
-    return null;
-  }
-  
-  const stateObj = auditData.states.find((s: AuditState) => s && s.stateId === normalized);
-  const pqObj = priorityQueueData.find((s: PriorityQueueState) => s && s.state === normalized);
-  
-  if (!stateObj || !pqObj) return null;
-  
-  // Consistency check
-  const isConsistent = (stateObj.classification === pqObj.classification) &&
-                       (stateObj.indexSafe === pqObj.index_safe);
-  if (!isConsistent) {
-    console.error(`Audit data inconsistency for ${normalized}: JSON says classification=${stateObj.classification}, indexSafe=${stateObj.indexSafe}. PQ says classification=${pqObj.classification}, index_safe=${pqObj.index_safe}`);
-    return null;
-  }
-  
-  return {
-    classification: stateObj.classification,
-    indexSafe: stateObj.indexSafe
-  };
-}
-
-export function stateGapReason(stateId: string): string | null {
-  if (!stateId) return null;
-  const normalized = stateId.toLowerCase().trim();
-  const pqObj = priorityQueueData.find((s: PriorityQueueState) => s && s.state === normalized);
-  return pqObj ? (pqObj.primary_gap_reason || null) : null;
-}
-
 export function canRender(stateId?: string): boolean {
   if (!stateId) return true;
   return stateAuditStatus(stateId) !== null;
+}
+
+export function stateAuditStatus(stateId: string): { classification: string; indexSafe: boolean } | null {
+  return readStateAuditStatus(stateId);
+}
+
+export function stateGapReason(stateId: string): string | null {
+  return readStateGapReason(stateId);
 }
 
 export function canIndex(input: SeoPolicyInput): boolean {
@@ -173,15 +93,7 @@ export const ALL_STATES = [
 ];
 
 export function getEligibleStates(): string[] {
-  if (!auditData || !Array.isArray(auditData.states) || priorityQueueData.length === 0) {
-    return [];
-  }
-  return auditData.states
-    .filter((s: AuditState) => {
-      const status = stateAuditStatus(s.stateId);
-      return status !== null && status.classification === 'COMPLETE' && status.indexSafe === true;
-    })
-    .map((s: AuditState) => s.stateId);
+  return getEligibleStatesFromAudit();
 }
 
 export const SEO_STATE_ALLOWLIST = getEligibleStates();
@@ -221,7 +133,6 @@ export function assertNoPlaceholderData(text: string | null | undefined): boolea
     /Family\s+Resource\s+Center\s+Network/i,
     /compiled\s+and\s+reviewed\s+by\s+special\s+needs\s+family\s+experts/i,
     /compiled\s+and\s+reviewed\s+by\s+experts/i,
-    /expert/i,
     /placeholder/i,
     /fake/i,
     /example\.com/i,
@@ -231,29 +142,124 @@ export function assertNoPlaceholderData(text: string | null | undefined): boolea
   return !placeholderPatterns.some(pattern => pattern.test(text));
 }
 
+let dbHosts: Set<string> | null = null;
+
+function getDbHosts(): Set<string> {
+  if (dbHosts) return dbHosts;
+  dbHosts = new Set();
+  if (typeof window === 'undefined') {
+    try {
+      const fs = nodeRequire ? nodeRequire('fs') : null;
+      const path = nodeRequire ? nodeRequire('path') : null;
+      const Database = nodeRequire ? nodeRequire('better-sqlite3') : null;
+      if (!fs || !path || !Database) {
+        throw new Error('Node database helpers unavailable');
+      }
+
+      const dbPaths = [
+        path.resolve(process.cwd(), 'ca_disability_navigator.db'),
+        path.resolve(process.cwd(), 'frontend/ca_disability_navigator.db'),
+        path.resolve(process.cwd(), '../frontend/ca_disability_navigator.db'),
+      ];
+
+      const dbPath = dbPaths.find((candidate: string) => fs.existsSync(candidate));
+      if (dbPath) {
+        const db = new Database(dbPath, { readonly: true });
+        const queryTables = ['programs', 'regional_centers', 'school_districts', 'county_offices', 'resource_providers'];
+        for (const table of queryTables) {
+          try {
+            const rows = db.prepare(`SELECT source_url FROM ${table} WHERE source_url IS NOT NULL`).all() as Array<{ source_url: string }>;
+            rows.forEach((row) => {
+              try {
+                const parsed = new URL(row.source_url);
+                dbHosts!.add(parsed.hostname.toLowerCase());
+              } catch {}
+            });
+          } catch {}
+        }
+      }
+    } catch (error) {
+      console.warn('Unable to preload DB source hosts for SEO authority checks:', error);
+    }
+  }
+  return dbHosts;
+}
+
 /**
  * Verifies if a given program URL is a valid first-party official source,
  * rejecting common fallbacks, mock URLs, and placeholders.
  */
 export function hasOfficialProgramSource(url: string | null | undefined): boolean {
   if (!url) return false;
-  const trimmed = url.trim().toLowerCase();
+  let trimmed = url.trim();
+  if (trimmed.startsWith('http://')) {
+    trimmed = `https://${trimmed.slice(7)}`;
+  }
+  const lowered = trimmed.toLowerCase();
   if (
-    trimmed === '' ||
-    trimmed === 'null' ||
-    trimmed === 'undefined' ||
-    trimmed === 'https://www.dhcs.ca.gov' ||
-    trimmed === 'https://dhcs.ca.gov' ||
-    trimmed === 'https://www.ablefull.org' ||
-    trimmed === 'https://ablefull.org' ||
-    trimmed.includes('example.com') ||
-    trimmed.startsWith('#')
+    lowered === '' ||
+    lowered === 'null' ||
+    lowered === 'undefined' ||
+    lowered === 'https://www.dhcs.ca.gov' ||
+    lowered === 'https://dhcs.ca.gov' ||
+    lowered === 'https://www.ablefull.org' ||
+    lowered === 'https://ablefull.org' ||
+    lowered.includes('example.com') ||
+    lowered.includes('state.gov') ||
+    lowered.startsWith('#')
   ) {
     return false;
   }
   try {
-    const parsed = new URL(url);
-    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+    const parsed = new URL(trimmed);
+    if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') {
+      return false;
+    }
+
+    const hostname = parsed.hostname.toLowerCase();
+    if (
+      hostname.endsWith('.gov') ||
+      hostname.endsWith('.gov.us') ||
+      hostname.endsWith('.edu') ||
+      /\.state\.[a-z]{2}\.us$/.test(hostname) ||
+      /\.k12\.[a-z]{2}\.us$/.test(hostname)
+    ) {
+      return true;
+    }
+
+    const hosts = getDbHosts();
+    if (hosts.has(hostname) || hosts.has(`www.${hostname}`)) {
+      return true;
+    }
+    for (const host of hosts) {
+      if (hostname.endsWith(`.${host}`)) {
+        return true;
+      }
+    }
+
+    const authoritativeRegistry = new Set([
+      'myflorida.com',
+      'myflfamilies.com',
+      'isbe.net',
+      'gadoe.org',
+      'k12.wa.us',
+      'ode.state.or.us',
+      'wvde.us',
+      'coveredca.com',
+      'texasable.org',
+      'ableunited.com',
+      'floridakidcare.org',
+      'floridaearlysteps.com',
+      'disabilityrightsca.org',
+      'odr-pa.org'
+    ]);
+    for (const domain of authoritativeRegistry) {
+      if (hostname === domain || hostname.endsWith(`.${domain}`)) {
+        return true;
+      }
+    }
+
+    return false;
   } catch {
     return false;
   }
@@ -273,7 +279,8 @@ export function canonicalForRoute(
     path?: string;
     schoolDistrict?: string;
     city?: string;
-  }
+  },
+  programStateId?: string | null
 ): string {
   const state = params.state?.toLowerCase() || 'california';
   const county = params.county?.toLowerCase() || '';
@@ -289,6 +296,9 @@ export function canonicalForRoute(
     case 'condition-hub':
       return `/benefits/${state}/${diagnosis}`;
     case 'program-guide':
+      if (programStateId) {
+        return `/benefits/${programStateId}/program/${program}`;
+      }
       return `/programs/${program}`;
     case 'category-hub':
       return `/benefits/${state}/category/${category}`;
@@ -373,8 +383,7 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     }
   }
 
-  // Heuristic rules for non-California programs are gated out of SEO indexation rules
-  const hasEligibilityRules = input.hasEligibilityRules && stateId === 'california';
+  const hasEligibilityRules = input.hasEligibilityRules && (input.hasVerifiedEligibilityRules ?? (stateId === 'california'));
 
   if (hasEligibilityRules) {
     qualityScore += 10;
@@ -536,10 +545,21 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     program: input.programId,
     schoolDistrict: input.routeType === 'school-district' ? input.programId : undefined,
     city: input.routeType === 'city' ? input.countyId : undefined,
-    path: input.routeType === 'static-page' ? input.stateId : undefined
+    path: input.routeType === 'static-page' ? input.path : undefined
   });
 
   const shouldIndex = blockers.length === 0 && (input.routeType === 'static-page' || qualityScore >= 50);
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const canonicalUrl = `${baseUrl}${canonicalPath}`;
+
+  let verificationState: 'official-verified' | 'human-reviewed' | 'crawler-verified' | 'unverified' = 'unverified';
+  if (input.verificationStatus === 'official_verified') {
+    verificationState = 'official-verified';
+  } else if (input.verificationStatus === 'verified' || input.verificationStatus === 'human_verified') {
+    verificationState = 'human-reviewed';
+  } else if (input.verificationStatus === 'crawler_verified' || input.verificationStatus === 'source_listed') {
+    verificationState = 'crawler-verified';
+  }
 
   return {
     index: shouldIndex,
@@ -547,10 +567,187 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
     includeInSitemap: shouldIndex,
     qualityScore,
     canonicalPath,
+    canonicalUrl,
+    schemaEligible: shouldIndex && ['state-hub', 'county-hub', 'condition-hub', 'program-guide', 'county-condition'].includes(input.routeType),
+    verificationState,
     reasons,
     blockers
   };
 
+}
+
+function deriveStateFromStaticPath(path: string): string | null {
+  const normalized = normalizeManifestPath(path);
+  const parts = normalized.split('/').filter(Boolean);
+  if (parts.length < 2) {
+    return null;
+  }
+
+  const slug = parts[1]?.toLowerCase() || '';
+  const codeMatch = slug.match(/^([a-z]{2})-/i);
+  if (codeMatch) {
+    const codeMap: Record<string, string> = {
+      ak: 'alaska',
+      al: 'alabama',
+      ar: 'arkansas',
+      az: 'arizona',
+      ca: 'california',
+      co: 'colorado',
+      ct: 'connecticut',
+      de: 'delaware',
+      fl: 'florida',
+      ga: 'georgia',
+      hi: 'hawaii',
+      ia: 'iowa',
+      id: 'idaho',
+      il: 'illinois',
+      in: 'indiana',
+      ks: 'kansas',
+      ky: 'kentucky',
+      la: 'louisiana',
+      ma: 'massachusetts',
+      md: 'maryland',
+      me: 'maine',
+      mi: 'michigan',
+      mn: 'minnesota',
+      mo: 'missouri',
+      ms: 'mississippi',
+      mt: 'montana',
+      nc: 'north-carolina',
+      nd: 'north-dakota',
+      ne: 'nebraska',
+      nh: 'new-hampshire',
+      nj: 'new-jersey',
+      nm: 'new-mexico',
+      nv: 'nevada',
+      ny: 'new-york',
+      oh: 'ohio',
+      ok: 'oklahoma',
+      or: 'oregon',
+      pa: 'pennsylvania',
+      ri: 'rhode-island',
+      sc: 'south-carolina',
+      sd: 'south-dakota',
+      tn: 'tennessee',
+      tx: 'texas',
+      ut: 'utah',
+      va: 'virginia',
+      vt: 'vermont',
+      wa: 'washington',
+      wi: 'wisconsin',
+      wv: 'west-virginia',
+      wy: 'wyoming'
+    };
+    return codeMap[codeMatch[1].toLowerCase()] || null;
+  }
+
+  return ALL_STATES.find((state) => slug === state || slug.endsWith(`-${state}`)) || null;
+}
+
+export type ClaimEvidence = {
+  text: string;
+  type: 'eligibility' | 'payout' | 'timeline' | 'contact' | 'office' | 'legal' | 'medical' | 'financial';
+  jurisdiction: string;
+  sourceUrl?: string;
+  reviewedDate?: string | null;
+  confidence: number;
+};
+
+export function verifyClaimEvidence(claim: ClaimEvidence): { verified: boolean; error?: string } {
+  const bannedRegex = /legally entitled|guaranteed|will qualify|\b2-1-1\b|\$2,000|\$1,100\+|typically 15 to 30 days/i;
+  if (bannedRegex.test(claim.text)) {
+    return { verified: false, error: 'claim_contains_high_risk_phrase' };
+  }
+  if (!claim.sourceUrl || !hasOfficialProgramSource(claim.sourceUrl)) {
+    return { verified: false, error: 'claim_missing_verified_source' };
+  }
+  const threshold = claim.type === 'contact' || claim.type === 'office' ? 0.4 : 0.7;
+  if (claim.confidence < threshold) {
+    return { verified: false, error: 'claim_confidence_below_threshold' };
+  }
+  return { verified: true };
+}
+
+export function getSeoPolicyForRoute(
+  routeType: RouteType,
+  params: {
+    stateId?: string;
+    countyId?: string;
+    diagnosisId?: string;
+    programId?: string;
+    category?: string;
+    path?: string;
+  },
+  dbData?: Partial<SeoPolicyInput> & { programStateId?: string | null }
+): SeoPolicyResult {
+  const normalizedPath = normalizeManifestPath(params.path);
+  const targetStateId = params.stateId || (routeType === 'static-page' ? deriveStateFromStaticPath(normalizedPath) || undefined : undefined);
+
+  const input: SeoPolicyInput = {
+    routeType,
+    path: normalizedPath,
+    stateId: targetStateId,
+    countyId: params.countyId,
+    diagnosisId: params.diagnosisId,
+    programId: params.programId,
+    entityCount: dbData?.entityCount,
+    verifiedSourceCount: dbData?.verifiedSourceCount,
+    officialSourceCount: dbData?.officialSourceCount,
+    hasOfficialSource: dbData?.hasOfficialSource,
+    hasRealLocalAssets: dbData?.hasRealLocalAssets,
+    hasRequiredContactInfo: dbData?.hasRequiredContactInfo,
+    hasApplicationSteps: dbData?.hasApplicationSteps,
+    hasEligibilityRules: dbData?.hasEligibilityRules,
+    hasVerifiedEligibilityRules: dbData?.hasVerifiedEligibilityRules,
+    hasDocuments: dbData?.hasDocuments,
+    hasUniqueLocalData: dbData?.hasUniqueLocalData,
+    hasNoPlaceholderData: dbData?.hasNoPlaceholderData,
+    lastVerifiedDate: dbData?.lastVerifiedDate,
+    confidenceScore: dbData?.confidenceScore,
+    verificationStatus: dbData?.verificationStatus
+  };
+
+  const result = evaluateSeoPolicy(input);
+  const blockers = [...result.blockers];
+  const reasons = [...result.reasons];
+
+  if (isHardBlockedSitemapRoute(routeType)) {
+    blockers.push(`${routeType} routes remain blocked until their verification framework is ready`);
+  }
+
+  if (routeType === 'static-page') {
+    if (!isAllowlistedStaticPath(normalizedPath)) {
+      blockers.push(`Static route '${normalizedPath}' is not on the publishing allowlist`);
+    }
+
+    if (isStaticGuidePath(normalizedPath)) {
+      blockers.push('Static guide indexing remains blocked until guide metadata is loaded through a verification-safe adapter');
+    }
+  }
+
+  const canonicalPath = canonicalForRoute(routeType, {
+    state: targetStateId,
+    county: params.countyId,
+    diagnosis: params.diagnosisId,
+    program: params.programId,
+    category: params.category,
+    path: normalizedPath
+  }, dbData?.programStateId || null);
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const canonicalUrl = `${baseUrl}${canonicalPath}`;
+  const isIndexable = blockers.length === 0 && result.index;
+
+  return {
+    ...result,
+    index: isIndexable,
+    includeInSitemap: isIndexable,
+    canonicalPath,
+    canonicalUrl,
+    schemaEligible: isIndexable && ['state-hub', 'county-hub', 'condition-hub', 'program-guide', 'county-condition', 'static-page'].includes(routeType),
+    blockers: Array.from(new Set(blockers)),
+    reasons: Array.from(new Set(reasons))
+  };
 }
 
 export function mapShortDiagToDbId(shortId: string): string {

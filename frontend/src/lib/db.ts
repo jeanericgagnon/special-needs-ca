@@ -31,6 +31,7 @@ function findDbPath(dbName: string): string {
 // Define DB Paths relative to next.js execution
 const crawlerDbPath = findDbPath('ca_disability_crawler.db');
 const navigatorDbPath = findDbPath('ca_disability_navigator.db');
+const isBuildPhase = process.env.NEXT_PHASE === 'phase-production-build';
 
 // Instantiate DB handles lazily using proxies to prevent Next.js build-time lockouts
 const isVercel = process.env.VERCEL === '1';
@@ -201,7 +202,7 @@ function ensureNavigatorDb() {
     }
     if (!readonly) {
       navigatorDbInstance.pragma('foreign_keys = ON');
-      if (!migrationsRun) {
+      if (!migrationsRun && !isBuildPhase) {
         migrationsRun = true;
         runMigrations(navigatorDbInstance);
       }
@@ -2636,6 +2637,27 @@ export interface Selpa {
   confidence_score?: number | null;
 }
 
+async function navigatorTableExists(tableName: string): Promise<boolean> {
+  try {
+    const rows = await navigatorDb.prepare(
+      `SELECT 1 AS ok FROM sqlite_master WHERE type IN ('table', 'view') AND name = ?`
+    ).all(tableName) as Array<{ ok: number }>;
+    return rows.length > 0;
+  } catch {
+    return false;
+  }
+}
+
+async function navigatorColumnExists(tableName: string, columnName: string): Promise<boolean> {
+  if (!(await navigatorTableExists(tableName))) return false;
+  try {
+    const rows = await navigatorDb.prepare(`PRAGMA table_info(${tableName})`).all() as Array<{ name: string }>;
+    return rows.some((row) => row.name === columnName);
+  } catch {
+    return false;
+  }
+}
+
 export interface CountyOffice {
   id: string;
   county_id: string;
@@ -3114,11 +3136,17 @@ export async function getProgramBySlug(slug: string): Promise<Program | null> {
 
     if (programRow) {
       // Look up its eligibility rules to extract age range
-      const rules = await navigatorDb.prepare(`
-        SELECT MIN(min_age_years) as min_age, MAX(max_age_years) as max_age
-        FROM program_eligibility_rules
-        WHERE program_id = ?
-      `).get(programRow.id);
+      let rules: { min_age: number | null; max_age: number | null } | undefined;
+      if (
+        await navigatorColumnExists('program_eligibility_rules', 'min_age_years') &&
+        await navigatorColumnExists('program_eligibility_rules', 'max_age_years')
+      ) {
+        rules = await navigatorDb.prepare(`
+          SELECT MIN(min_age_years) as min_age, MAX(max_age_years) as max_age
+          FROM program_eligibility_rules
+          WHERE program_id = ?
+        `).get(programRow.id) as { min_age: number | null; max_age: number | null } | undefined;
+      }
 
       const ageLimitMin = rules && rules.min_age !== null ? Number(rules.min_age) : 0;
       const ageLimitMax = rules && rules.max_age !== null ? Number(rules.max_age) : 21;
@@ -3245,6 +3273,8 @@ export async function getFunctionalNeeds(): Promise<FunctionalNeed[]> {
 
 export async function getChildrenByUserId(userId: string): Promise<ChildProfile[]> {
   const children = await navigatorDb.prepare('SELECT * FROM child_profiles WHERE case_id = ?').all(userId) as ChildProfile[];
+  const hasConditionLinks = await navigatorTableExists('child_profile_conditions');
+  const hasNeedLinks = await navigatorTableExists('child_profile_needs');
   
   for (const child of children) {
     child.nickname = decrypt(child.nickname);
@@ -3252,11 +3282,19 @@ export async function getChildrenByUserId(userId: string): Promise<ChildProfile[
     child.zip_code = decrypt(child.zip_code);
     child.caregiver_notes = decrypt(child.caregiver_notes);
 
-    const conds = await navigatorDb.prepare('SELECT condition_id FROM child_profile_conditions WHERE child_id = ?').all(child.id) as { condition_id: string }[];
-    child.conditionIds = conds.map(c => c.condition_id);
+    if (hasConditionLinks) {
+      const conds = await navigatorDb.prepare('SELECT condition_id FROM child_profile_conditions WHERE child_id = ?').all(child.id) as { condition_id: string }[];
+      child.conditionIds = conds.map(c => c.condition_id);
+    } else {
+      child.conditionIds = [];
+    }
 
-    const needs = await navigatorDb.prepare('SELECT need_id FROM child_profile_needs WHERE child_id = ?').all(child.id) as { need_id: string }[];
-    child.functionalNeedIds = needs.map(n => n.need_id);
+    if (hasNeedLinks) {
+      const needs = await navigatorDb.prepare('SELECT need_id FROM child_profile_needs WHERE child_id = ?').all(child.id) as { need_id: string }[];
+      child.functionalNeedIds = needs.map(n => n.need_id);
+    } else {
+      child.functionalNeedIds = [];
+    }
   }
   return children;
 }
@@ -3275,17 +3313,27 @@ export async function getChildProfile(childId: string): Promise<ChildProfile | n
   try {
     const child = await navigatorDb.prepare('SELECT * FROM child_profiles WHERE id = ?').get(childId) as ChildProfile | undefined;
     if (!child) return null;
+    const hasConditionLinks = await navigatorTableExists('child_profile_conditions');
+    const hasNeedLinks = await navigatorTableExists('child_profile_needs');
     
     child.nickname = decrypt(child.nickname);
     child.dob = decrypt(child.dob);
     child.zip_code = decrypt(child.zip_code);
     child.caregiver_notes = decrypt(child.caregiver_notes);
 
-    const conds = await navigatorDb.prepare('SELECT condition_id FROM child_profile_conditions WHERE child_id = ?').all(child.id) as { condition_id: string }[];
-    child.conditionIds = conds.map(c => c.condition_id);
+    if (hasConditionLinks) {
+      const conds = await navigatorDb.prepare('SELECT condition_id FROM child_profile_conditions WHERE child_id = ?').all(child.id) as { condition_id: string }[];
+      child.conditionIds = conds.map(c => c.condition_id);
+    } else {
+      child.conditionIds = [];
+    }
 
-    const needs = await navigatorDb.prepare('SELECT need_id FROM child_profile_needs WHERE child_id = ?').all(child.id) as { need_id: string }[];
-    child.functionalNeedIds = needs.map(n => n.need_id);
+    if (hasNeedLinks) {
+      const needs = await navigatorDb.prepare('SELECT need_id FROM child_profile_needs WHERE child_id = ?').all(child.id) as { need_id: string }[];
+      child.functionalNeedIds = needs.map(n => n.need_id);
+    } else {
+      child.functionalNeedIds = [];
+    }
     
     return child;
   } catch (err) {
@@ -3587,6 +3635,16 @@ export async function getProgramAppealInfo(programId: string): Promise<ProgramAp
 }
 
 export async function getMatchedCorePrograms(age: number, conditionIds: string[], needIds: string[]): Promise<CoreProgramMatch[]> {
+  if (
+    !(await navigatorColumnExists('program_eligibility_rules', 'min_age_years')) ||
+    !(await navigatorColumnExists('program_eligibility_rules', 'max_age_years')) ||
+    !(await navigatorColumnExists('program_eligibility_rules', 'required_condition')) ||
+    !(await navigatorColumnExists('program_eligibility_rules', 'required_need'))
+  ) {
+    console.warn('Program eligibility rules table is missing one or more expected matching columns; returning no matched core programs.');
+    return [];
+  }
+
   let querySql = `
     SELECT r.*, p.name, p.description, p.who_it_is_for, p.who_might_qualify, p.official_source_url, p.category, p.last_verified_date
     FROM program_eligibility_rules r
@@ -3693,7 +3751,13 @@ export async function getProgramsByKeywords(age: number, diagnosis: string, keyw
 
 export async function getIepAdvocates(countyId?: string, stateId?: string): Promise<IepAdvocate[]> {
   try {
+    if (!(await navigatorTableExists('iep_advocates'))) {
+      return [];
+    }
     if (countyId) {
+      if (!(await navigatorTableExists('iep_advocate_counties'))) {
+        return [];
+      }
       return await navigatorDb.prepare(`
         SELECT a.* FROM iep_advocates a
         JOIN iep_advocate_counties ac ON a.id = ac.iep_advocate_id
@@ -3701,6 +3765,9 @@ export async function getIepAdvocates(countyId?: string, stateId?: string): Prom
       `).all(countyId) as IepAdvocate[];
     }
     if (stateId) {
+      if (!(await navigatorTableExists('iep_advocate_counties'))) {
+        return [];
+      }
       return await navigatorDb.prepare(`
         SELECT DISTINCT a.* FROM iep_advocates a
         JOIN iep_advocate_counties ac ON a.id = ac.iep_advocate_id
@@ -3958,7 +4025,9 @@ export async function getDirectoryFoundationSnapshot(): Promise<DirectoryFoundat
       FROM nonprofit_organizations
       LEFT JOIN counties ON counties.id = nonprofit_organizations.county_id
     `).all() as Array<NonprofitOrganization & { state_id?: string | null }>;
-    const advocatesAll = await navigatorDb.prepare('SELECT * FROM iep_advocates').all() as IepAdvocate[];
+    const advocatesAll = await navigatorTableExists('iep_advocates')
+      ? await navigatorDb.prepare('SELECT * FROM iep_advocates').all() as IepAdvocate[]
+      : [];
 
     const summarize = (rows: Array<Record<string, any>>, languageField: 'languages' | 'languages_spoken' = 'languages') => {
       return rows.reduce((acc, row) => {
@@ -5148,6 +5217,16 @@ export async function getSchoolDistrictById(id: string): Promise<SchoolDistrict 
 
 export async function getSchoolDistrictLitigation(districtId: string) {
   try {
+    if (!(await navigatorTableExists('legal_decisions'))) {
+      return {
+        totalCases: 0,
+        parentWins: 0,
+        districtWins: 0,
+        unknownWins: 0,
+        cases: []
+      };
+    }
+
     const cases = await navigatorDb.prepare('SELECT * FROM legal_decisions WHERE school_district_id = ? ORDER BY decision_date DESC').all(districtId) as LegalDecision[];
     
     let parentWins = 0;
@@ -5187,10 +5266,11 @@ export async function getSchoolDistrictsWithLitigation() {
   try {
     // 1. Fetch all districts
     const districts = await navigatorDb.prepare('SELECT * FROM school_districts ORDER BY name ASC').all() as SchoolDistrict[];
-    
-    // 2. Fetch case aggregations
-    const caseStats = await navigatorDb.prepare(`
-      SELECT 
+
+    // 2. Fetch case aggregations when litigation data exists; otherwise fail closed.
+    const caseStats = (await navigatorTableExists('legal_decisions'))
+      ? await navigatorDb.prepare(`
+      SELECT
         school_district_id,
         COUNT(*) as total_cases,
         SUM(CASE WHEN outcome = 'parent_win' THEN 1 ELSE 0 END) as parent_wins,
@@ -5204,7 +5284,8 @@ export async function getSchoolDistrictsWithLitigation() {
       parent_wins: number;
       district_wins: number;
       unknown_wins: number;
-    }[];
+    }[]
+      : [];
 
     const statsMap = new Map(caseStats.map(s => [s.school_district_id, s]));
 
@@ -5257,8 +5338,9 @@ export async function getBulkCountyDetails(stateId?: string) {
       WHERE county_id IN (${placeholders})
     `).all(...countyIds) as CountyOffice[];
 
-    const districts = await navigatorDb.prepare(`
-      SELECT sd.*, 
+    const districts = (await navigatorTableExists('legal_decisions'))
+      ? await navigatorDb.prepare(`
+      SELECT sd.*,
         COUNT(ld.id) as totalCases,
         SUM(CASE WHEN ld.outcome = 'parent_win' THEN 1 ELSE 0 END) as parentWins,
         SUM(CASE WHEN ld.outcome = 'district_win' THEN 1 ELSE 0 END) as districtWins,
@@ -5267,6 +5349,16 @@ export async function getBulkCountyDetails(stateId?: string) {
       LEFT JOIN legal_decisions ld ON sd.id = ld.school_district_id
       WHERE sd.county_id IN (${placeholders})
       GROUP BY sd.id
+    `).all(...countyIds) as SchoolDistrict[]
+      : await navigatorDb.prepare(`
+      SELECT
+        sd.*,
+        0 as totalCases,
+        0 as parentWins,
+        0 as districtWins,
+        0 as unknownWins
+      FROM school_districts sd
+      WHERE sd.county_id IN (${placeholders})
     `).all(...countyIds) as SchoolDistrict[];
 
     const nonprofits = await navigatorDb.prepare(`

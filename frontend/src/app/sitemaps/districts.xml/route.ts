@@ -7,12 +7,18 @@ export async function GET() {
 
   let activeDistricts: { id: string; state_id: string; last_verified_date: string | null }[] = [];
   try {
-    activeDistricts = await navigatorDb.prepare(`
-      SELECT DISTINCT sd.id, c.state_id, sd.last_verified_date
-      FROM school_districts sd
-      JOIN counties c ON sd.county_id = c.id
-      JOIN legal_decisions ld ON sd.id = ld.school_district_id
-    `).all() as { id: string; state_id: string; last_verified_date: string | null }[];
+    const hasLegalDecisions = await navigatorDb.prepare(
+      `SELECT 1 AS ok FROM sqlite_master WHERE type IN ('table', 'view') AND name = ?`
+    ).all('legal_decisions') as Array<{ ok: number }>;
+
+    if (hasLegalDecisions.length > 0) {
+      activeDistricts = await navigatorDb.prepare(`
+        SELECT DISTINCT sd.id, c.state_id, sd.last_verified_date
+        FROM school_districts sd
+        JOIN counties c ON sd.county_id = c.id
+        JOIN legal_decisions ld ON sd.id = ld.school_district_id
+      `).all() as { id: string; state_id: string; last_verified_date: string | null }[];
+    }
   } catch (err) {
     console.error('Failed to query active school districts for sitemap:', err);
   }
