@@ -1,0 +1,10 @@
+{
+  "batch": "batch415_south-dakota_dss_local_office_lane_truth_refresh_v1",
+  "generated_at": "2026-06-26T16:41:53.101Z",
+  "classification": "COMPLETE",
+  "behavior_health_county_map_live": true,
+  "county_anchor_count": 66,
+  "county_area_link_count": 66,
+  "county_local_contract_present": true,
+  "completeness_pct": 100
+}

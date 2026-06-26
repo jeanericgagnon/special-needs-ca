@@ -15,9 +15,8 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Idaho: `bounded_2026_06_26_attachment_recheck_confirms_camas_board_doc_and_clark_child_find_manual_policy_attachments_still_fail_to_create_local_special_ed_contract`
 - Maine: `bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract`
 - New Hampshire: `bounded_2026_06_26_browser_recheck_confirms_nh_dhhs_doe_and_nhes_hosts_fail_with_public_access_denied_shells_not_just_raw_fetch_403s`
-- South Dakota: `bounded_2026_06_26_live_recheck_confirms_current_dhs_localoffices_path_now_returns_200_but_still_only_a_page_not_found_shell_without_county_or_local_office_contract`
 
-## Current Focus State: South Dakota
+## Current Focus State: Alaska
 
 ### Blocker Reason
 

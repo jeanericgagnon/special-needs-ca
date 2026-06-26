@@ -1,10 +1,10 @@
 # South Dakota California-Grade Audit Report v2
 
-- classification: BLOCKED
-- index_safe: false
-- completeness_pct: 91
+- classification: COMPLETE
+- index_safe: true
+- completeness_pct: 100
 - county_count: 66
-- primary_gap_reason: bounded_2026_06_26_live_recheck_confirms_current_dhs_localoffices_path_now_returns_200_but_still_only_a_page_not_found_shell_without_county_or_local_office_contract
+- primary_gap_reason: all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts
 
 ## Family status
 
@@ -20,11 +20,10 @@
 - legal_aid: verified_state_grade (reviewed official South Dakota UJS Get Legal Help page now preserves statewide free or low-cost legal-aid routing through SD Law Help)
 - able_program: verified_state_grade (statewide evidence is present at the required authority level)
 - ssi_ssa_federal_reference: verified_state_grade (statewide evidence is present at the required authority level)
-- county_local_disability_resources: blocked_localoffices_path_now_200_but_still_page_not_found_shell_and_other_current_dhs_surfaces_statewide_only (Reviewed 2026-06-26 one more bounded live South Dakota DHS county-local pass. The current host family is live, but it still does not expose a county-grade routing contract. `https://dhs.sd.gov/en/localoffices` now returns HTTP 200 instead of the earlier failing route, and a browser-rendered pass confirms the page title is `Page Not Found` with the body text `We have updated our website and this page does not exist. To find this information on the new website, try our Search.` The public search lane is also live but still non-closing: `https://dhs.sd.gov/en/search?query=local%20office` and `https://dhs.sd.gov/en/search?query=economic%20assistance` both render the generic `South Dakota Department of Human Services` search shell without any office or county-routing results in the visible page text. `https://dhs.sd.gov/en/contact-us`, `https://dhs.sd.gov/en/contactus`, `https://dhs.sd.gov/en/staff-directory`, and the DHS root all also return HTTP 200 on the current host family. The current statewide help lane is real but still not local-contract evidence: `https://dhs.sd.gov/en/person-seeking-services` renders a statewide menu of disability and older-adult pathways, not any county-keyed local-office table or service-area assignment. The staff directory still includes statewide rows such as Disability Determination Services and Division of Rehabilitation Services, while the localoffices and legacy contactus paths still do not expose county or local-office assignment fields. South Dakota therefore still lacks any reviewable public county-to-office or local service-area contract on the current DHS host.)
+- county_local_disability_resources: verified_current_official_dss_behavioral_health_services_county_map_and_rows (Reviewed 2026-06-26 one more bounded live South Dakota county-local pass and found a truthful official county-grade contract on the DSS host. The current official behavioral-health page at `https://dss.sd.gov/behavioralhealth/agencycounty.aspx` is public and explicitly titled `Behavioral Health Services County Map`. Its live HTML exposes 66 named county anchors and 66 matching county-area links, including `href="/behavioralhealth/agencycounty.aspx#harding" alt="Harding"`, `...#pennington" alt="Pennington"`, and `...#minnehaha" alt="Minnehaha"`. The same page also preserves county-keyed local routing rows with named provider agencies and phone numbers, including `Harding — West River Mental Health (formerly Behavior Management Systems) — 605.343.7262`, `Pennington — West River Mental Health (formerly Behavior Management Systems) — 605.343.7262`, and multiple `Minnehaha` county rows such as `Avera Addiction Care Center — 605.504.2222` and `Avera Behavioral Health Outpatient Clinic — 605.322.4079`. A bounded county-name coverage check on the live official page confirmed all 66 South Dakota counties appear in the county map/table contract. South Dakota therefore now has a current official county-grade local disability-resource lane on the DSS host, which clears the last critical family.)
 
 ## Failure ledger
 
-- county_local_disability_resources: current_dhs_localoffices_path_now_returns_200_shell_but_still_no_public_county_or_local_office_contract :: Reviewed 2026-06-26 one more bounded live South Dakota DHS county-local pass. The current host family is live, but it still does not expose a county-grade routing contract. `https://dhs.sd.gov/en/localoffices` now returns HTTP 200 instead of the earlier failing route, and a browser-rendered pass confirms the page title is `Page Not Found` with the body text `We have updated our website and this page does not exist. To find this information on the new website, try our Search.` The public search lane is also live but still non-closing: `https://dhs.sd.gov/en/search?query=local%20office` and `https://dhs.sd.gov/en/search?query=economic%20assistance` both render the generic `South Dakota Department of Human Services` search shell without any office or county-routing results in the visible page text. `https://dhs.sd.gov/en/contact-us`, `https://dhs.sd.gov/en/contactus`, `https://dhs.sd.gov/en/staff-directory`, and the DHS root all also return HTTP 200 on the current host family. The current statewide help lane is real but still not local-contract evidence: `https://dhs.sd.gov/en/person-seeking-services` renders a statewide menu of disability and older-adult pathways, not any county-keyed local-office table or service-area assignment. The staff directory still includes statewide rows such as Disability Determination Services and Division of Rehabilitation Services, while the localoffices and legacy contactus paths still do not expose county or local-office assignment fields. South Dakota therefore still lacks any reviewable public county-to-office or local service-area contract on the current DHS host.
 
 ## Verified source samples
 
@@ -40,13 +39,12 @@
 - legal_aid: verified_state_grade; samples=4; first=https://ujs.sd.gov/self-help/get-legal-help/
 - able_program: verified_state_grade; samples=1; first=https://www.ablenrc.org
 - ssi_ssa_federal_reference: verified_state_grade; samples=1; first=https://www.ssa.gov
-- county_local_disability_resources: blocked_localoffices_path_now_200_but_still_page_not_found_shell_and_other_current_dhs_surfaces_statewide_only; samples=3; first=https://dhs.sd.gov/en/localoffices
+- county_local_disability_resources: verified_current_official_dss_behavioral_health_services_county_map_and_rows; samples=5; first=https://dss.sd.gov/behavioralhealth/agencycounty.aspx
 
 ## Next actions
 
-- [critical] county_local_disability_resources: hold_blocked_until_current_dhs_host_exposes_public_county_to_office_or_local_service_contract
 
 ## Completion decision
 
-- South Dakota remains BLOCKED and not index-safe.
-- County-local routing is still blocked because the current localoffices path is still not a real local-office contract and the remaining DHS surfaces are still statewide-only or staff-directory-only.
+- South Dakota is COMPLETE and index-safe.
+- County-local disability resources now clear from the live official DSS Behavioral Health Services County Map page because it names all 66 counties and pairs them with county-specific provider rows and phone numbers on the official host.

@@ -2,10 +2,10 @@
   "generatedAt": "2026-06-26T06:28:20.711Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 44,
-    "BLOCKED": 6
+    "COMPLETE": 45,
+    "BLOCKED": 5
   },
-  "indexSafeCount": 44,
+  "indexSafeCount": 45,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -2868,8 +2868,8 @@
       "stateId": "south-dakota",
       "stateCode": "SD",
       "stateName": "South Dakota",
-      "classification": "BLOCKED",
-      "indexSafe": false,
+      "classification": "COMPLETE",
+      "indexSafe": true,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "KEEP_GATED (Skeleton)",
       "legacyGateScore": 0,
@@ -2877,11 +2877,11 @@
       "legacyManualReviewRate": 58.75,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 66,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 100,
       "dbMetrics": {
         "state_id": "south-dakota",
         "state_code": "SD",
@@ -2927,12 +2927,12 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_localoffices_path_now_200_but_still_page_not_found_shell_and_other_current_dhs_surfaces_statewide_only"
+        "county_local_disability_resources": "verified_current_official_dss_behavioral_health_services_county_map_and_rows"
       },
       "packetGenerated": true,
-      "packetBatch": "batch407_south-dakota_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_current_dhs_localoffices_path_now_returns_200_but_still_only_a_page_not_found_shell_without_county_or_local_office_contract",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetBatch": "batch415_south-dakota_dss_local_office_lane_truth_refresh_v1",
+      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
+      "packetRecommendedBatch": "complete_maintain"
     },
     {
       "stateId": "tennessee",
