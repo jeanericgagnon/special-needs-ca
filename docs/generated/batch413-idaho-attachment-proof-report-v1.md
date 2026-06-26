@@ -1,0 +1,9 @@
+# Batch 413 Idaho Attachment Proof v1
+
+- classification: BLOCKED
+- index_safe: false
+- change: replaced residual Idaho attachment ambiguity with direct proof that the remaining Camas and Clark district-hosted files still do not create a local special-education routing contract
+
+## Evidence
+
+- Reviewed 2026-06-26 one more bounded Idaho attachment pass on the exact residual Camas and Clark district-owned files. The remaining Camas district-linked Google Doc at `https://docs.google.com/document/d/1OHWebOtQk9Wvwy8zMd5eFYwub5xPQ7Pg_nnMT20hOOA/export?format=txt` is live but resolves only to a board-of-trustees zone roster naming Hill City, Corral, Manard, Fairfield, and Blaine board seats, not any special-education, student-services, 504, Child Find, or procedural-safeguards routing. The second Camas district-linked Drive item at `https://drive.google.com/open?id=1NaLaY28erZn5QX6iu97mRSztjMRONciXd6664nVjWJw` still fails to materialize a reviewable public artifact and returned HTTP 500 on bounded review. The remaining Clark district-hosted attachments also stay wrong-role or too generic: the Federal Policy and Procedure Manual PDF is a federal-funds administration manual, not a local special-education routing artifact; the Idaho Child Find English PDF preserves only the statewide `Please join and support 2025-2026 Idaho Child Find` flyer heading; the Spanish Child Find flyer preserves generic statewide language telling families to contact their local district; and the Equal Education / Nondiscrimination PDF routes grievances to Title IX and the uniform grievance procedure rather than to a district special-education or student-services contact. Idaho therefore still lacks any district-owned, role-bearing local special-education routing evidence for the residual Camas and Clark counties.

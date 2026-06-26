@@ -850,8 +850,8 @@
         "county_local_disability_resources": "blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch401_idaho_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_still_confirms_camas_and_clark_wrong_role_surfaces_only_and_idaho_dhw_office_inventory_without_county_contract",
+      "packetBatch": "batch413_idaho_attachment_proof_v1",
+      "packetPrimaryGapReason": "bounded_2026_06_26_attachment_recheck_confirms_camas_board_doc_and_clark_child_find_manual_policy_attachments_still_fail_to_create_local_special_ed_contract",
       "packetRecommendedBatch": "hold_for_new_role_bearing_district_leaf_or_county_contract"
     },
     {
