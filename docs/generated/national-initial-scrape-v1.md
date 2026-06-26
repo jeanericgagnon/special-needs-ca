@@ -1,28 +1,16 @@
-**National Initial Scrape V1**
-Generated at `2026-06-26T17:19:57Z`
+# National Initial Scrape v1
 
-This milestone freezes the initial national scrape baseline and marks the transition from acquisition-first work into data governance.
+Generated at: 2026-06-26T22:11:32.829Z
 
 - Milestone: `national-initial-scrape-v1`
-- Complete states: `45`
-- Blocked states: `5`
-- Index-safe states: `45`
-- Incorrectly index-safe states: `0`
+- COMPLETE states: 45
+- BLOCKED states: 5
+- index-safe states: 45
+- incorrectly index-safe states: 0
 
-Blocked states:
-- `alaska`
-- `arizona`
-- `idaho`
-- `maine`
-- `new-hampshire`
+## COMPLETE
+alabama, arkansas, california, colorado, connecticut, delaware, florida, georgia, hawaii, illinois, indiana, iowa, kansas, kentucky, louisiana, maryland, massachusetts, michigan, minnesota, mississippi, missouri, montana, nebraska, nevada, new-jersey, new-mexico, new-york, north-carolina, north-dakota, ohio, oklahoma, oregon, pennsylvania, rhode-island, south-carolina, south-dakota, tennessee, texas, utah, vermont, virginia, washington, west-virginia, wisconsin, wyoming
 
-Source artifacts:
-- [all_state_california_grade_audit_v3.json](/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_california_grade_audit_v3.json)
-- [all_state_priority_queue_v3.jsonl](/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_priority_queue_v3.jsonl)
-- [national-initial-scrape-v1.json](/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/national-initial-scrape-v1.json)
+## BLOCKED
+alaska, arizona, idaho, maine, new-hampshire
 
-Governance meaning:
-- The initial scrape baseline is frozen.
-- The `45` complete states become the maintained truth set.
-- The `5` blocked states remain explicitly blocked until new official public evidence appears.
-- Future work should default to governance tasks: audit consistency, truth preservation, blocker tracking, regression prevention, and controlled rechecks.

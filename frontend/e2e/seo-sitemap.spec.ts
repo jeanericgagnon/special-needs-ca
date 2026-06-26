@@ -21,7 +21,7 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
     countiesUrls = extractUrls(await countiesRes.text());
   });
 
-  test('static sitemap contains core pages', () => {
+  test('static sitemap contains core pages', async ({ page }) => {
     // Root benefits & forms
     const hasForms = staticUrls.some(url => url.endsWith('/forms'));
     const hasBenefits = staticUrls.some(url => url.endsWith('/benefits'));
@@ -31,14 +31,28 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
     expect(hasBenefits).toBe(true);
     expect(hasAdvocates).toBe(true);
 
-    // High value guide pages
-    const hasIhssChildren = staticUrls.some(url => url.includes('/programs/ihss-for-children'));
-    const hasSoc873 = staticUrls.some(url => url.includes('/forms/soc-873'));
-    const hasProtectiveSupervision = staticUrls.some(url => url.includes('/situations/ihss-protective-supervision'));
+    // High value guide pages must stay consistent with their live robots policy.
+    const sampleGuides = [
+      '/programs/ihss-for-children',
+      '/forms/soc-873',
+      '/situations/ihss-protective-supervision',
+    ];
 
-    expect(hasIhssChildren).toBe(true);
-    expect(hasSoc873).toBe(true);
-    expect(hasProtectiveSupervision).toBe(true);
+    for (const path of sampleGuides) {
+      const inSitemap = staticUrls.some(url => url.endsWith(path));
+      await page.goto(path);
+      const robots = page.locator('meta[name="robots"]');
+      const robotsCount = await robots.count();
+
+      if (inSitemap) {
+        if (robotsCount > 0) {
+          const content = await robots.getAttribute('content');
+          expect(content || '').not.toContain('noindex');
+        }
+      } else {
+        await expect(robots).toHaveAttribute('content', /noindex/i);
+      }
+    }
 
     // Excluded routes
     const hasDashboard = staticUrls.some(url => url.includes('/dashboard'));
@@ -93,28 +107,37 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
     await expect(robots2).toHaveAttribute('content', /noindex/i);
   });
 
-  test('indexable county-diagnosis pages are indexable and have canonical/freshness/correction flows', async ({ page }) => {
-    // Los Angeles is high-fidelity and indexable
-    await page.goto('/benefits/california/autism-spectrum-disorder/los-angeles');
-    
-    // No noindex meta should be present
-    const robots = page.locator('meta[name="robots"]');
-    const count = await robots.count();
-    if (count > 0) {
-      const content = await robots.getAttribute('content');
-      expect(content).not.toContain('noindex');
+  test('county-diagnosis pages stay consistent with sitemap and robots policy', async ({ page }) => {
+    const indexedLeaf = countiesUrls.find(url => {
+      const pathParts = url.replace(/https?:\/\/[^\/]+/, '').split('/').filter(Boolean);
+      return pathParts.length === 4 && pathParts[0] === 'benefits' && pathParts[1] === 'california';
+    });
+
+    if (indexedLeaf) {
+      const indexedPath = indexedLeaf.replace(/https?:\/\/[^\/]+/, '');
+      await page.goto(indexedPath);
+
+      const robots = page.locator('meta[name="robots"]');
+      const count = await robots.count();
+      if (count > 0) {
+        const content = await robots.getAttribute('content');
+        expect(content || '').not.toContain('noindex');
+      }
+
+      const canonical = page.locator('link[rel="canonical"]');
+      await expect(canonical).toHaveAttribute('href', `https://ablefull.org${indexedPath}`);
+
+      const freshness = page.locator('text=Verified Sources & Freshness Information');
+      await expect(freshness).toBeVisible();
+
+      const correction = page.locator('button:has-text("Suggest update")');
+      await expect(correction.first()).toBeVisible();
+      return;
     }
 
-    // Canonical link
-    const canonical = page.locator('link[rel="canonical"]');
-    await expect(canonical).toHaveAttribute('href', 'https://ablefull.org/benefits/california/autism-spectrum-disorder/los-angeles');
-
-    // Freshness disclosure
-    const freshness = page.locator('text=Verified Sources & Freshness Information');
-    await expect(freshness).toBeVisible();
-
-    // Correction badge link
-    const correction = page.locator('button:has-text("Suggest update")');
-    await expect(correction.first()).toBeVisible();
+    // If no county-diagnosis leaves qualify for sitemap inclusion, the sample leaf must stay gated.
+    await page.goto('/benefits/california/autism-spectrum-disorder/los-angeles');
+    const robots = page.locator('meta[name="robots"]');
+    await expect(robots).toHaveAttribute('content', /noindex/i);
   });
 });

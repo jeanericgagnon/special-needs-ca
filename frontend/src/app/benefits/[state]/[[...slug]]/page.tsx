@@ -7,10 +7,11 @@ import {
   getSchoolDistrictBySlug,
   getLocalProviders,
   getProgramsForDiagnosis,
-  getAllPrograms,
   getProgramBySlug,
   getStateByIdOrCode,
-  getAllStates
+  getAllStates,
+  navigatorDb,
+  Program
 } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCityBySlug } from '@/lib/cities';
@@ -106,12 +107,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const stateCode = stateData.code.toUpperCase();
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
+  let statePrograms: Program[] = [];
+  try {
+    statePrograms = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(stateData.id) as Program[];
+  } catch {
+    statePrograms = [];
+  }
+  const stateProgramDates = statePrograms.map((program) => program.last_verified_date).filter(Boolean) as string[];
+  const stateProgramsLastVerifiedDate = stateProgramDates.length > 0
+    ? stateProgramDates.reduce((min, date) => (date < min ? date : min), stateProgramDates[0])
+    : null;
+  const stateProgramScores = statePrograms
+    .map((program) => normalizeConfidenceScore(program.confidence_score))
+    .filter((score): score is number => score !== null);
+  const stateProgramsConfidenceScore = stateProgramScores.length > 0
+    ? stateProgramScores.reduce((sum, score) => sum + score, 0) / stateProgramScores.length
+    : null;
 
   const stateHubPolicy = getSeoPolicyForRoute('state-hub', {
     stateId: stateData.id
   }, {
-    hasNoPlaceholderData: true,
-    entityCount: 1
+    entityCount: statePrograms.length,
+    confidenceScore: stateProgramsConfidenceScore,
+    hasOfficialSource: statePrograms.length > 0 && statePrograms.some((program) => !!program.source_url),
+    lastVerifiedDate: stateProgramsLastVerifiedDate,
+    hasNoPlaceholderData: statePrograms.every((program) => assertNoPlaceholderData(JSON.stringify(program)))
   });
 
   if (slug.length === 0) {

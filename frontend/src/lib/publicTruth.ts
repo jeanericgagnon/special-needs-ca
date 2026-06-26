@@ -1,5 +1,5 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
-import { stateAuditStatus } from './stateAudit.ts';
+import { stateAuditStatus, stateRuntimeLaunchStatus } from './stateAudit.ts';
 
 /**
  * PUBLIC_RENDERABLE_STATE_IDS defines all states that the application can render in the UI
@@ -129,7 +129,12 @@ type CountyDetailsLike = {
 
 export function isIndexableState(stateId: string): boolean {
   const status = stateAuditStatus(stateId);
-  return status !== null && status.indexSafe === true;
+  if (status === null || status.indexSafe !== true) {
+    return false;
+  }
+
+  const runtimeStatus = stateRuntimeLaunchStatus(stateId);
+  return runtimeStatus !== null && runtimeStatus.runtimeIndexSafe === true;
 }
 
 export function isAcceptablePublicVerificationStatus(status?: string | null): boolean {

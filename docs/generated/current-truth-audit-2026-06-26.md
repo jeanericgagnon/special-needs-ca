@@ -75,49 +75,49 @@ Generated: 2026-06-26
 - Public safe: no
 - Index safe: no
 - Gold eligible: no
-- Composite readiness: 42.9%
+- Composite readiness: 49.3%
 - Indexed county roots: 0/58
 - High-fidelity county-diagnosis priority coverage: 8/8 (100%)
-- Missing core waitlists: ihss-for-children, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education
+- Missing core waitlists: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba
 
 ## Top States By Composite Readiness
 
 | Rank | State | Composite | DD | Offices | Education | Nonprofits | Advocates | Waitlists | Indexed County Root Coverage | County-Diagnosis Priority Coverage |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 1 | Florida | 70% | 77.5% | 59.7% | 61.6% | 77.5% | 66.8% | 76.7% | 100% | 100% |
-| 2 | New York | 56.9% | 49.3% | 59.4% | 33.2% | 77.5% | 45.1% | 76.7% | 100% | 100% |
-| 3 | Pennsylvania | 55.1% | 46.7% | 57.7% | 29% | 77.5% | 42.9% | 76.7% | 100% | 100% |
-| 4 | Illinois | 54.3% | 45.9% | 57.2% | 27.3% | 77.5% | 41.3% | 76.7% | 100% | 100% |
-| 5 | Ohio | 54% | 45.3% | 56.8% | 26.1% | 77.5% | 41.5% | 76.7% | 100% | 100% |
-| 6 | Georgia | 53.4% | 44.9% | 56.6% | 24.6% | 77.5% | 39.9% | 76.7% | 100% | 100% |
-| 7 | California | 42.9% | 20% | 55.9% | 43.8% | 66.3% | 0% | 71.4% | 0% | 100% |
-| 8 | Alabama | 24.2% | 20% | 20% | 20% | 20% | 0% | 65% | 0% | 100% |
-| 9 | Alaska | 24.2% | 20% | 20% | 20% | 20% | 0% | 65% | 0% | 100% |
-| 10 | Arizona | 24.2% | 20% | 20% | 20% | 20% | 0% | 65% | 0% | 100% |
+| 2 | New York | 57.9% | 54.3% | 59.4% | 34.3% | 77.5% | 45.1% | 76.7% | 100% | 100% |
+| 3 | Pennsylvania | 55.6% | 49.2% | 57.7% | 29.5% | 77.5% | 42.9% | 76.7% | 100% | 100% |
+| 4 | Georgia | 55% | 54.9% | 56.6% | 24.6% | 77.5% | 39.9% | 76.7% | 100% | 100% |
+| 5 | Ohio | 55% | 50.3% | 56.8% | 27.4% | 77.5% | 41.5% | 76.7% | 100% | 100% |
+| 6 | Illinois | 54.9% | 48.2% | 57.2% | 28.4% | 77.5% | 41.3% | 76.7% | 100% | 100% |
+| 7 | California | 49.3% | 65% | 55.9% | 43.8% | 66.3% | 0% | 65% | 0% | 100% |
+| 8 | Wyoming | 45% | 65% | 20% | 100% | 20% | 0% | 65% | 100% | 100% |
+| 9 | Hawaii | 39.2% | 65% | 20% | 65% | 20% | 0% | 65% | 0% | 100% |
+| 10 | Iowa | 39.2% | 65% | 20% | 65% | 20% | 0% | 65% | 0% | 100% |
 
 ## Key State Comparison
 
 | State | Composite | Public Safe | Gold Eligible | Source-Listed Offices | Manual Review Districts | Null DD Verification Status | County-Diagnosis Priority Coverage | Missing Core Waitlists |
 | --- | ---: | --- | --- | ---: | ---: | ---: | ---: | --- |
-| California | 42.9% | no | no | 0 | 0 | 0 | 100% | ihss-for-children, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education |
+| California | 49.3% | no | no | 0 | 0 | 0 | 100% | ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba |
 | Florida | 70% | no | no | 14 | 0 | 0 | 100% | fl-cdc-plus, fl-medicaid-dcf |
-| Georgia | 53.4% | no | no | 11 | 0 | 0 | 100% | ga-now-waiver, ga-medicaid |
-| Illinois | 54.3% | no | no | 10 | 0 | 0 | 100% | il-adults-dd-waiver, il-medicaid |
-| New York | 56.9% | no | no | 12 | 0 | 0 | 100% | ny-opwdd-self-direction, ny-medicaid |
-| Ohio | 54% | no | no | 7 | 0 | 0 | 100% | oh-level-one-waiver, oh-medicaid |
-| Pennsylvania | 55.1% | no | no | 8 | 0 | 0 | 100% | pa-community-living-waiver, pa-medicaid |
-| Texas | 24.2% | no | no | 0 | 0 | 0 | 100% | tx-hcs, tx-class, tx-txhml, tx-mdcp, tx-eci, tx-tea-sped |
+| Georgia | 55% | no | no | 11 | 0 | 0 | 100% | ga-now-waiver, ga-medicaid |
+| Illinois | 54.9% | no | no | 10 | 0 | 0 | 100% | il-adults-dd-waiver, il-medicaid |
+| New York | 57.9% | no | no | 12 | 0 | 0 | 100% | ny-opwdd-self-direction, ny-medicaid |
+| Ohio | 55% | no | no | 7 | 0 | 0 | 100% | oh-level-one-waiver, oh-medicaid |
+| Pennsylvania | 55.6% | no | no | 8 | 0 | 0 | 100% | pa-community-living-waiver, pa-medicaid |
+| Texas | 39.2% | no | no | 0 | 0 | 0 | 100% | tx-hcs, tx-class, tx-txhml, tx-mdcp, tx-eci, tx-tea-sped |
 
 ## California Findings
 
 - California public truth is still blocked by route-level integrity or synthetic-content failures.
 - California education layer still includes 65 source-listed records.
 - California nonprofit layer still includes 35 source-listed records.
-- California is missing 9 core waitlist entries: ihss-for-children, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education.
+- California is missing 11 core waitlist entries: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba.
 
 ## Decision Notes
 
-- California composite readiness score: 42.9%
+- California composite readiness score: 49.3%
 - Best non-California peer: Florida at 70%
 - California remains the strongest trust baseline, but not a finished gold standard because one or more truth, trust, or completeness blockers still remain.
 

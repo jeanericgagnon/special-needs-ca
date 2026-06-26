@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-06-26T22:57:46.237Z",
+  "mode": "apply",
+  "states": [
+    "texas"
+  ],
+  "results": [
+    {
+      "stateId": "texas",
+      "stateName": "Texas",
+      "certifiedComplete": true,
+      "clearedPriorImports": {
+        "programs": 0,
+        "state_resource_agencies": 0,
+        "regional_education_agencies": 0,
+        "school_districts": 0
+      },
+      "programsInserted": 2,
+      "stateAgenciesInserted": 2,
+      "regionalEducationInserted": 3,
+      "schoolDistrictsInserted": 0
+    }
+  ]
+}

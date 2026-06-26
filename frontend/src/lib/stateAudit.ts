@@ -18,8 +18,18 @@ interface PriorityQueueState {
   primary_gap_reason?: string | null;
 }
 
+interface RuntimeLaunchState {
+  stateId: string;
+  runtimeIndexSafe: boolean;
+}
+
+interface RuntimeLaunchRegistry {
+  states: RuntimeLaunchState[];
+}
+
 let auditData: AuditData | null = null;
 const priorityQueueData: PriorityQueueState[] = [];
+let runtimeLaunchRegistry: RuntimeLaunchRegistry | null = null;
 
 if (typeof window === 'undefined') {
   try {
@@ -56,6 +66,21 @@ if (typeof window === 'undefined') {
           priorityQueueData.push(JSON.parse(line));
         }
       }
+    }
+
+    const runtimeRegistryPaths = [
+      path.resolve(process.cwd(), 'data/generated/runtime_launch_registry_v1.json'),
+      path.resolve(process.cwd(), '../data/generated/runtime_launch_registry_v1.json'),
+    ];
+    let runtimeRegistryPath = runtimeRegistryPaths[0];
+    for (const p of runtimeRegistryPaths) {
+      if (fs.existsSync(p)) {
+        runtimeRegistryPath = p;
+        break;
+      }
+    }
+    if (fs.existsSync(runtimeRegistryPath)) {
+      runtimeLaunchRegistry = JSON.parse(fs.readFileSync(runtimeRegistryPath, 'utf8'));
     }
   } catch (err) {
     console.error('Failed to load state audit data:', err);
@@ -96,6 +121,21 @@ export function stateGapReason(stateId: string): string | null {
   const normalized = stateId.toLowerCase().trim();
   const pqObj = priorityQueueData.find((s) => s && s.state === normalized);
   return pqObj ? (pqObj.primary_gap_reason || null) : null;
+}
+
+export function stateRuntimeLaunchStatus(stateId: string): { runtimeIndexSafe: boolean } | null {
+  if (!stateId) return null;
+  const normalized = stateId.toLowerCase().trim();
+  if (!runtimeLaunchRegistry || !Array.isArray(runtimeLaunchRegistry.states)) {
+    return null;
+  }
+
+  const row = runtimeLaunchRegistry.states.find((s) => s && s.stateId === normalized);
+  if (!row) return null;
+
+  return {
+    runtimeIndexSafe: row.runtimeIndexSafe === true,
+  };
 }
 
 export function getEligibleStatesFromAudit(): string[] {

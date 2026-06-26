@@ -5,6 +5,7 @@ import {
   getEligibleStatesFromAudit,
   stateAuditStatus as readStateAuditStatus,
   stateGapReason as readStateGapReason,
+  stateRuntimeLaunchStatus as readStateRuntimeLaunchStatus,
 } from './stateAudit.ts';
 
 const nodeRequire = typeof window === 'undefined' ? createRequire(import.meta.url) : null;
@@ -71,6 +72,10 @@ export function stateAuditStatus(stateId: string): { classification: string; ind
 
 export function stateGapReason(stateId: string): string | null {
   return readStateGapReason(stateId);
+}
+
+export function stateRuntimeLaunchStatus(stateId: string): { runtimeIndexSafe: boolean } | null {
+  return readStateRuntimeLaunchStatus(stateId);
 }
 
 export function canIndex(input: SeoPolicyInput): boolean {
@@ -347,7 +352,9 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
   const diagnosisId = input.diagnosisId?.toLowerCase() || '';
 
   const auditStatus = stateId ? stateAuditStatus(stateId) : null;
+  const runtimeLaunchStatus = stateId ? stateRuntimeLaunchStatus(stateId) : null;
   const isEligibleState = auditStatus !== null && auditStatus.classification === 'COMPLETE' && auditStatus.indexSafe === true;
+  const requiresRuntimeParity = ['state-hub', 'state-counties-hub', 'county-hub', 'program-guide', 'category-hub', 'comparison', 'county-condition'].includes(input.routeType);
   const isVerifiedDiagnosis = VERIFIED_DIAGNOSES.includes(diagnosisId);
 
   // 1. Quality Score calculation
@@ -418,6 +425,8 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
       blockers.push(`Missing audit data for state '${stateId}'`);
     } else if (!isEligibleState) {
       blockers.push(`State '${stateId}' is not index-safe (classification: ${auditStatus.classification}, indexSafe: ${auditStatus.indexSafe})`);
+    } else if (requiresRuntimeParity && (!runtimeLaunchStatus || runtimeLaunchStatus.runtimeIndexSafe !== true)) {
+      blockers.push(`State '${stateId}' is not runtime-launch-safe`);
     }
   }
 

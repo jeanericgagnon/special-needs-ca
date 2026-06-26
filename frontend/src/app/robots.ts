@@ -8,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: [
         '/',
+        '/forms',
         '/sitemap.xml',
         '/sitemaps/static.xml',
         '/sitemaps/counties.xml'

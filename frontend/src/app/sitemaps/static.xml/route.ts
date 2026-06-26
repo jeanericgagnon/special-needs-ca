@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { SEO_CLUSTERS } from '@/lib/seo-data';
-import { getProgramBySlug, navigatorDb, getProgramApplicationSteps, getProgramDocumentRequirements, Program, getCounties, getCountyDetails, getBulkCountyDetails, RegionalCenter, SchoolDistrict, CountyOffice, County } from '@/lib/db';
+import { navigatorDb, Program, getCounties, getBulkCountyDetails, RegionalCenter, SchoolDistrict, CountyOffice, County } from '@/lib/db';
 import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
 
 interface StaticUrl {
@@ -182,43 +182,19 @@ export async function GET() {
 
   for (const cluster of Object.values(SEO_CLUSTERS)) {
     if (cluster.category === 'programs') {
-      const prog = await getProgramBySlug(cluster.slug);
-      let hasEligibilityRules = false;
-      let hasApplicationSteps = false;
-      let hasDocuments = false;
-      const hasNoPlaceholderData = true;
-      let confidenceScore: number | null = null;
-      let stateId = 'california';
-
-      if (prog) {
-        stateId = prog.state_id || 'california';
-        const progIdStr = String(prog.id);
-        const ruleCount = await navigatorDb.prepare('SELECT COUNT(*) as count FROM program_eligibility_rules WHERE program_id = ?').get(progIdStr) as { count: number } | undefined;
-        hasEligibilityRules = (ruleCount?.count || 0) > 0;
-        hasApplicationSteps = (await getProgramApplicationSteps(progIdStr)).length > 0;
-        hasDocuments = (await getProgramDocumentRequirements(progIdStr)).length > 0;
-        confidenceScore = normalizeConfidenceScore(prog.confidence_score);
-      }
-
-      const policy = getSeoPolicyForRoute('program-guide', {
-        stateId,
-        programId: cluster.slug,
+      // Authored /programs/* guides are rendered from SEO_CLUSTERS and use static-page
+      // metadata on the page route itself, so sitemap policy must match that behavior.
+      const policy = getSeoPolicyForRoute('static-page', {
         path: `/programs/${cluster.slug}`
       }, {
-        programStateId: stateId,
-        hasOfficialSource: hasOfficialProgramSource(prog?.source_url),
-        lastVerifiedDate: prog?.last_verified_date || null,
-        confidenceScore,
-        hasEligibilityRules,
-        hasVerifiedEligibilityRules: hasEligibilityRules,
-        hasApplicationSteps,
-        hasDocuments,
-        hasNoPlaceholderData,
-        verificationStatus: prog?.verification_status || null
+        hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(cluster)),
+        hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
+        lastVerifiedDate: cluster.lastReviewedDate || null,
+        confidenceScore: 0.85
       });
 
       if (shouldIncludeInSitemap(policy)) {
-        const lastmodTag = prog?.last_verified_date ? `\n    <lastmod>${prog.last_verified_date}</lastmod>` : '';
+        const lastmodTag = cluster.lastReviewedDate ? `\n    <lastmod>${cluster.lastReviewedDate}</lastmod>` : '';
         clusterXmlUrls.push(`  <url>
     <loc>${baseUrl}/${cluster.category}/${cluster.slug}</loc>${lastmodTag}
     <changefreq>weekly</changefreq>
