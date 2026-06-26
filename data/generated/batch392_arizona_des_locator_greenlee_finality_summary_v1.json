@@ -11,10 +11,22 @@
     "85534",
     "85540"
   ],
+  "recovered_search_params": [
+    "srchradmiles",
+    "ctrlat",
+    "ctrlng",
+    "schsvccode"
+  ],
+  "greenlee_replay_row_counts_by_radius": {
+    "50": 1,
+    "100": 4,
+    "150": 15,
+    "250": 28
+  },
   "completeness_pct": 92,
   "counts_unchanged": {
-    "complete": 41,
-    "blocked": 9,
-    "indexSafe": 41
+    "complete": 43,
+    "blocked": 7,
+    "indexSafe": 43
   }
 }

@@ -42,27 +42,33 @@ assert.equal(summary.final_blockers[0].family, 'county_local_disability_resource
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(countyGap);
 assert.equal(countyGap.family_status, 'blocked_des_locator_explicit_for_14_counties_with_greenlee_locality_zip_coverage_but_no_county_level_contract');
-assert.match(countyGap.status_reason, /explicit top-level `county` field covering 14 Arizona counties/i);
+assert.match(countyGap.status_reason, /first-party bundle at `EOLSalesforceScript\.js` exposes the live search contract `srchParms = \{srchradmiles, ctrlat, ctrlng, schsvccode\}`/i);
+assert.match(countyGap.status_reason, /public `Developmental Disability Services` lane still exposes explicit office `county` values for only 14 Arizona counties overall/i);
 assert.match(countyGap.status_reason, /Greenlee locality ZIPs `85533`, `85534`, and `85540`/i);
 
 assert.equal(failureRows.length, 1);
 assert.equal(failureRows[0].family, 'county_local_disability_resources');
 assert.equal(failureRows[0].failure_code, 'official_des_locator_now_proves_14_counties_and_greenlee_locality_zips_but_still_no_explicit_greenlee_county_assignment');
-assert.match(failureRows[0].evidence, /public Visualforce service lookup exposes a `Developmental Disability Services` lane/i);
-assert.match(failureRows[0].evidence, /returned DDS rows still only expose office `county` values `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`/i);
+assert.match(failureRows[0].evidence, /first-party bundle explicitly exposes the search parameter contract `srchParms = \{srchradmiles, ctrlat, ctrlng, schsvccode\}`/i);
+assert.match(failureRows[0].evidence, /At 50 miles the replay returns 1 row, at 100 miles 4 rows, at 150 miles 15 rows, and at 250 miles 28 rows/i);
+assert.match(failureRows[0].evidence, /returned DDS rows still only expose office `county` values such as `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`/i);
 assert.match(failureRows[0].evidence, /no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci`/i);
 assert.match(failureRows[0].evidence, /Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.ok(countyVerified);
-assert.equal(countyVerified.sample_count, 8);
+assert.equal(countyVerified.sample_count, 10);
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DES EOL search contract bundle'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DES DDS office-data county set'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'DDS Tucson office Greenlee ZIP coverage'));
+assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Greenlee-area 250-mile DDS replay'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Greenlee County useful-links page'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Clifton first-party ZIP'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Duncan first-party ZIP'));
 assert.ok(countyVerified.samples.some((sample) => sample.sample_name === 'Town of Morenci first-party ZIP'));
+assert.match(countyVerified.query_basis, /srchParms = \{srchradmiles, ctrlat, ctrlng, schsvccode\}/i);
 assert.match(countyVerified.blocker_evidence, /14 Arizona counties/i);
+assert.match(countyVerified.blocker_evidence, /At 50 miles the replay returns 1 row, at 100 miles 4 rows, at 150 miles 15 rows, and at 250 miles 28 rows/i);
 assert.match(countyVerified.blocker_evidence, /Greenlee locality ZIPs `85533`, `85534`, and `85540`/i);
 assert.match(countyVerified.blocker_evidence, /Safford DDS row remains explicitly `county: Graham`/i);
 assert.match(countyVerified.blocker_evidence, /no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci`/i);
@@ -82,6 +88,9 @@ assert.equal(queueRow.primary_gap_reason, 'official_des_locator_returns_14_expli
 assert.equal(batchSummary.explicit_counties_from_des_locator, 14);
 assert.equal(batchSummary.missing_explicit_county, 'Greenlee');
 assert.deepEqual(batchSummary.greenlee_zip_served_values, ['85533', '85534', '85540']);
+assert.deepEqual(batchSummary.recovered_search_params, ['srchradmiles', 'ctrlat', 'ctrlng', 'schsvccode']);
+assert.deepEqual(batchSummary.greenlee_replay_row_counts_by_radius, { '50': 1, '100': 4, '150': 15, '250': 28 });
+assert.deepEqual(batchSummary.counts_unchanged, { complete: 43, blocked: 7, indexSafe: 43 });
 
 assert.match(report, /proves explicit county-local routing for 14 counties and preserves disability-specific Greenlee locality ZIP coverage/i);
 assert.match(handoff, /- Arizona: `official_des_locator_returns_14_explicit_counties_and_greenlee_zip_served_localities_but_no_reviewed_greenlee_county_contract`/);

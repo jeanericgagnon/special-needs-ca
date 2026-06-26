@@ -39,9 +39,9 @@ const FAILURE_CODE =
 const NEXT_ACTION =
   'hold_blocked_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_reviewable_county_to_office_contract';
 const COUNTY_LOCAL_REASON =
-  'Reviewed 2026-06-26 the live official Arizona DES office-locator application more deeply after the earlier AHCCCS fallback work. The public DES locator root is still challenge-blocked as raw HTML, but the exact public Salesforce-hosted office-locator application at `https://azdes-community.my.salesforce-sites.com/EOL/` is reviewable and its official Visualforce remoting endpoint returns structured office records. The public `Developmental Disability Services` service lane exposes 34 live office rows with exact office names, addresses, phones, service URLs, and an explicit top-level `county` field covering 14 Arizona counties: Apache, Cochise, Coconino, Gila, Graham, La Paz, Maricopa, Mohave, Navajo, Pima, Pinal, Santa Cruz, Yavapai, and Yuma. Greenlee is the only county not named directly in that county field set. A fresh page-backed replay of the same official remoting call against Greenlee-area coordinates now tightens the blocker further at field level: the returned DDS rows still only expose office `county` values `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`; the Tucson DDS row carries Greenlee locality ZIPs `85533`, `85534`, and `85540` inside `zipCodesServed`; the Safford DDS row remains explicitly `county: Graham`; and no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci` in `county`, `serviceDirections`, `specialInstructions`, or other reviewed payload fields. Those ZIPs still match first-party Greenlee locality surfaces preserved on the official Greenlee County and town-host family: Greenlee County keeps useful links for Town of Clifton, Town of Duncan, and Town of Morenci; the Town of Clifton site preserves `Clifton, Arizona 85533`; the Town of Duncan site preserves `Duncan, Arizona 85534`; and the Morenci townsite preserves `Morenci, AZ 85540`. That is strong locality-level evidence, but Arizona still lacks one reviewed public official artifact that names Greenlee County itself inside the DES or AHCCCS county-local routing contract. Arizona therefore remains blocked only on the final Greenlee county-level attachment, not on the earlier statewide absence of office-routing evidence.';
+  'Reviewed 2026-06-26 and rechecked 2026-06-25 the live official Arizona DES office-locator application more deeply after the earlier AHCCCS fallback work. The public DES locator root is still challenge-blocked as raw HTML, but the exact public Salesforce-hosted office-locator application at `https://azdes-community.my.salesforce-sites.com/EOL/` is reviewable and its first-party bundle at `EOLSalesforceScript.js` exposes the live search contract `srchParms = {srchradmiles, ctrlat, ctrlng, schsvccode}` for `EOLEmbedController.getEOLOfficeData`. Replaying that exact official contract confirms the county-local blocker directly from live data. A Greenlee-area replay at `ctrlat 33.0509`, `ctrlng -109.3059`, and `schsvccode DDS` returns one Safford row at 50 miles, 4 rows at 100 miles, 15 rows at 150 miles, and 28 rows at 250 miles. Across those live responses, the public `Developmental Disability Services` lane still exposes explicit office `county` values for only 14 Arizona counties overall, with Greenlee never named directly in any returned office `county` field. The returned DDS rows still only expose office `county` values such as `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`; the Tucson DDS row still carries Greenlee locality ZIPs `85533`, `85534`, and `85540` inside `zipCodesServed`; the Safford DDS row remains explicitly `county: Graham`; and no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci` in `county`, `serviceDirections`, `specialInstructions`, or other reviewed payload fields. Those ZIPs still match first-party Greenlee locality surfaces preserved on the official Greenlee County and town-host family: Greenlee County keeps useful links for Town of Clifton, Town of Duncan, and Town of Morenci; the Town of Clifton site preserves `Clifton, Arizona 85533`; the Town of Duncan site preserves `Duncan, Arizona 85534`; and the Morenci townsite preserves `Morenci, AZ 85540`. That is strong locality-level evidence, but Arizona still lacks one reviewed public official artifact that names Greenlee County itself inside the DES or AHCCCS county-local routing contract. Arizona therefore remains blocked only on the final Greenlee county-level attachment, not on the earlier statewide absence of office-routing evidence.';
 const COUNTY_LOCAL_EVIDENCE =
-  'Reviewed 2026-06-26 bounded official Arizona county-local surfaces across the DES public office-locator family, the public Salesforce-hosted locator application, the official DDS service dataset returned by `EOLEmbedController.getEOLOfficeData`, the official Greenlee County useful-links page, and first-party Clifton, Duncan, and Morenci town surfaces. The official DES public locator roots `https://des.az.gov/office-locator` and `https://des.az.gov/find-your-local-office` still return Cloudflare `Just a moment...` shells in raw fetches, but the linked public Salesforce app at `https://azdes-community.my.salesforce-sites.com/EOL/` is live and reviewable. Its public Visualforce service lookup exposes a `Developmental Disability Services` lane (`serviceCode DDS`), and its official remoting endpoint returns structured DDS office records with explicit `county` fields for 14 Arizona counties plus exact office records, phone numbers, and service URLs. A fresh page-backed replay of that same official remoting contract against Greenlee-area coordinates now proves the negative case directly from the payload: the returned DDS rows still only expose office `county` values `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`; the Tucson DDS row preserves Greenlee locality ZIPs `85533`, `85534`, and `85540` in `zipCodesServed`; the Safford DDS row remains explicitly `county: Graham`; and no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci` in `county`, `serviceDirections`, `specialInstructions`, or other reviewed payload fields. Official county and first-party locality evidence then tightens the remaining geography: Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci; the Town of Clifton preserves `Clifton, Arizona 85533`; the Town of Duncan preserves `Duncan, Arizona 85534`; and Morenci preserves `Morenci, AZ 85540`. Arizona has therefore narrowed from a statewide county-local blocker to a single unresolved county-level contract question: no reviewed public DES or AHCCCS artifact explicitly labels Greenlee County itself as assigned to a particular office.';
+  'Reviewed 2026-06-26 bounded official Arizona county-local surfaces across the DES public office-locator family, the public Salesforce-hosted locator application, the recovered first-party bundle contract in `EOLSalesforceScript.js`, the official DDS service dataset returned by `EOLEmbedController.getEOLOfficeData`, the official Greenlee County useful-links page, and first-party Clifton, Duncan, and Morenci town surfaces. The official DES public locator roots `https://des.az.gov/office-locator` and `https://des.az.gov/find-your-local-office` still return Cloudflare `Just a moment...` shells in raw fetches, but the linked public Salesforce app at `https://azdes-community.my.salesforce-sites.com/EOL/` is live and reviewable. Its first-party bundle explicitly exposes the search parameter contract `srchParms = {srchradmiles, ctrlat, ctrlng, schsvccode}`, and replaying that exact official contract against Greenlee-area coordinates (`ctrlat 33.0509`, `ctrlng -109.3059`, `schsvccode DDS`) now proves the negative case directly from the payload. At 50 miles the replay returns 1 row, at 100 miles 4 rows, at 150 miles 15 rows, and at 250 miles 28 rows. Across those live results, the public `Developmental Disability Services` lane still exposes explicit office `county` fields for only 14 Arizona counties overall, and the returned DDS rows still only expose office `county` values such as `Cochise`, `Gila`, `Graham`, `Navajo`, and `Pima`; the Tucson DDS row preserves Greenlee locality ZIPs `85533`, `85534`, and `85540` in `zipCodesServed`; the Safford DDS row remains explicitly `county: Graham`; and no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci` in `county`, `serviceDirections`, `specialInstructions`, or other reviewed payload fields. Official county and first-party locality evidence then tightens the remaining geography: Greenlee County preserves useful links for the Town of Clifton, Town of Duncan, and Town of Morenci; the Town of Clifton preserves `Clifton, Arizona 85533`; the Town of Duncan preserves `Duncan, Arizona 85534`; and Morenci preserves `Morenci, AZ 85540`. Arizona has therefore narrowed from a statewide county-local blocker to a single unresolved county-level contract question: no reviewed public DES or AHCCCS artifact explicitly labels Greenlee County itself as assigned to a particular office.';
 
 const LESSON_HEADING =
   '### Public Visualforce Locator APIs Can Become Reviewable Official Evidence';
@@ -132,8 +132,8 @@ function main() {
       ...row,
       family_status: COUNTY_LOCAL_STATUS,
       evidence_strength: 'strong',
-      sample_count: 8,
-      query_basis: 'Reviewed 2026-06-26 the live DES public Salesforce locator app, its official DDS remoting dataset, the official Greenlee County useful-links page, and first-party Clifton, Duncan, and Morenci town surfaces to tighten Arizona county-local routing from a statewide blocker to a single Greenlee county-level contract question.',
+      sample_count: 10,
+      query_basis: 'Reviewed 2026-06-26 and rechecked 2026-06-25 the live DES public Salesforce locator app, its first-party `EOLSalesforceScript.js` bundle, the recovered official DDS remoting contract `srchParms = {srchradmiles, ctrlat, ctrlng, schsvccode}`, the live Greenlee-area DDS replay results, the official Greenlee County useful-links page, and first-party Clifton, Duncan, and Morenci town surfaces to tighten Arizona county-local routing from a statewide blocker to a single Greenlee county-level contract question.',
       blocker_code: FAILURE_CODE,
       blocker_evidence: COUNTY_LOCAL_EVIDENCE,
       samples: [
@@ -146,6 +146,16 @@ function main() {
           source_table: BATCH,
           fetched_at: '2026-06-26T00:00:00.000Z',
           evidence_snippet: 'The public DES office-locator app is live on an official Salesforce-hosted state surface and exposes a stable Visualforce remoting contract for office data.',
+        },
+        {
+          sample_name: 'DES EOL search contract bundle',
+          source_url: 'https://azdes-community.my.salesforce-sites.com/EOL/resource/1716997032000/EOLEmbedResources/JS/EOLSalesforceScript.js',
+          final_url: 'https://azdes-community.my.salesforce-sites.com/EOL/resource/1716997032000/EOLEmbedResources/JS/EOLSalesforceScript.js',
+          verification_status: 'verified',
+          source_type: 'official_first_party_app_bundle',
+          source_table: BATCH,
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'The first-party bundle calls `CallRetrieveOfficeData` with `srchParms = {srchradmiles, ctrlat, ctrlng, schsvccode}`, exposing the exact public office-search contract.',
         },
         {
           sample_name: 'DES DDS office-data county set',
@@ -166,6 +176,16 @@ function main() {
           source_table: BATCH,
           fetched_at: '2026-06-26T00:00:00.000Z',
           evidence_snippet: 'The Tucson DDS office record preserves `zipCodesServed` values including `85533`, `85534`, and `85540`, alongside phone `(520) 628-6800` and service URL `https://des.az.gov/ddd`.',
+        },
+        {
+          sample_name: 'Greenlee-area 250-mile DDS replay',
+          source_url: 'https://azdes-community.my.salesforce-sites.com/EOL/apexremote',
+          final_url: 'https://azdes-community.my.salesforce-sites.com/EOL/apexremote',
+          verification_status: 'verified',
+          source_type: 'official_public_locator_api_negative_county_check',
+          source_table: BATCH,
+          fetched_at: '2026-06-25T00:00:00.000Z',
+          evidence_snippet: 'A live replay with `srchradmiles 250`, `ctrlat 33.0509`, `ctrlng -109.3059`, and `schsvccode DDS` returned 28 rows, including Tucson ZIP coverage for `85533`, `85534`, and `85540`, but no literal `Greenlee` county assignment anywhere in the payload.',
         },
         {
           sample_name: 'Greenlee County useful-links page',
@@ -325,11 +345,18 @@ function main() {
     explicit_counties_from_des_locator: 14,
     missing_explicit_county: 'Greenlee',
     greenlee_zip_served_values: ['85533', '85534', '85540'],
+    recovered_search_params: ['srchradmiles', 'ctrlat', 'ctrlng', 'schsvccode'],
+    greenlee_replay_row_counts_by_radius: {
+      '50': 1,
+      '100': 4,
+      '150': 15,
+      '250': 28,
+    },
     completeness_pct: 92,
     counts_unchanged: {
-      complete: 41,
-      blocked: 9,
-      indexSafe: 41,
+      complete: 43,
+      blocked: 7,
+      indexSafe: 43,
     },
   });
 
