@@ -37,7 +37,7 @@ const FAMILY_STATUS =
   'blocked_live_dpa_offices_page_region_only_with_raw_403_regression_and_dfcs_without_county_equivalent_contract';
 const NEXT_ACTION =
   'hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api';
-const UPDATED_AT = '2026-06-26';
+const UPDATED_AT = '2026-06-25';
 const FAMILY_METADATA = {
   medicaid_state_health_coverage: {
     family_label: 'Medicaid / state health coverage',

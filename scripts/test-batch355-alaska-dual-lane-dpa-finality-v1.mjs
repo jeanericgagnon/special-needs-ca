@@ -39,7 +39,7 @@ assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(summary.batch, 'batch355_alaska_dual_lane_dpa_finality_v1');
 assert.equal(summary.primary_gap_reason, 'reviewed_live_dpa_offices_page_still_only_groups_regions_while_raw_health_host_403_persists_and_dfcs_adds_no_borough_or_census_area_contract');
-assert.match(summary.final_blockers[0].evidence, /Reviewed 2026-06-26 exact official Alaska county-local surfaces/i);
+assert.match(summary.final_blockers[0].evidence, /Reviewed 2026-06-25 exact official Alaska county-local surfaces/i);
 
 assert.equal(gapRows.length, 13);
 assert.equal(summary.final_blockers.length, 1);
