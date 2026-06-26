@@ -26,6 +26,7 @@ const verifiedRows = readJsonl(path.join(repoRoot, 'data', 'generated', 'new-mex
 const batchSummary = readJson(path.join(repoRoot, 'data', 'generated', 'batch389_new_mexico_live_vs_shadow_list_finality_summary_v1.json'));
 const handoff = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'gemini-source-scout-handoff.md'), 'utf8');
 const lessons = fs.readFileSync(path.join(repoRoot, 'docs', 'state-upgrade-lessons-learned.md'), 'utf8');
+const stateReport = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'new-mexico-california-grade-audit-report-v2.md'), 'utf8');
 
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
@@ -73,6 +74,9 @@ assert.ok(vrVerified.samples.some((sample) => sample.sample_name === 'Likely wor
 assert.match(vrVerified.samples[0].evidence_snippet, /\/home`, `\/about-us`, `\/services`, `\/contact-us`, `\/sitemap\.xml`, and `\/robots\.txt`/i);
 assert.match(vrVerified.samples[1].evidence_snippet, /Jobs4Joes, Vocational Rehabilitation, Individuals with Disabilities, and Business Services/i);
 assert.match(vrVerified.samples[1].evidence_snippet, /Request Rejected/i);
+assert.match(stateReport, /- vocational_rehabilitation_pre_ets: blocked_official_dvr_root_unauthorized_without_reviewed_alternate \(Reviewed 2026-06-25/i);
+assert.match(stateReport, /- vocational_rehabilitation_pre_ets: official_dvr_root_returns_401_without_reviewed_public_alternate :: Reviewed 2026-06-25/i);
+assert.doesNotMatch(stateReport, /- vocational_rehabilitation_pre_ets:[^\n]*2026-06-23/i);
 
 assert.equal(batchSummary.batch, 'batch389_new_mexico_live_vs_shadow_list_finality_v1');
 assert.equal(batchSummary.classification, 'BLOCKED');

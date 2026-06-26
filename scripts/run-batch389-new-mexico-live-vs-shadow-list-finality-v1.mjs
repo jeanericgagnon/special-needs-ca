@@ -254,6 +254,22 @@ function main() {
     /- district_or_county_education_routing: official_webed_sharepoint_lists_and_six_public_workbooks_verified_live_but_no_county_crosswalk_or_rec_service_area_contract :: [\s\S]*?New Mexico education therefore remains blocked on a missing official county-to-district or county-to-REC crosswalk, not on absence of public PED education inventory\./,
     `- district_or_county_education_routing: ${FAILURE_CODE} :: ${DISTRICT_EVIDENCE}`,
   );
+  updatedReport = updatedReport.replace(
+    /- vocational_rehabilitation_pre_ets: blocked_official_dvr_root_unauthorized_without_reviewed_alternate \([\s\S]*?not on a broader discovery gap\.\)/,
+    `- vocational_rehabilitation_pre_ets: blocked_official_dvr_root_unauthorized_without_reviewed_alternate (${VR_EVIDENCE})`,
+  );
+  updatedReport = updatedReport.replace(
+    /- vocational_rehabilitation_pre_ets: official_dvr_root_returns_401_without_reviewed_public_alternate :: [\s\S]*?not on a broader discovery gap\./,
+    `- vocational_rehabilitation_pre_ets: ${VR_FAILURE_CODE} :: ${VR_EVIDENCE}`,
+  );
+  updatedReport = updatedReport.replace(
+    '- vocational_rehabilitation_pre_ets: blocked_official_dvr_root_unauthorized_without_reviewed_alternate (Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.)',
+    `- vocational_rehabilitation_pre_ets: blocked_official_dvr_root_unauthorized_without_reviewed_alternate (${VR_EVIDENCE})`,
+  );
+  updatedReport = updatedReport.replace(
+    '- vocational_rehabilitation_pre_ets: official_dvr_root_returns_401_without_reviewed_public_alternate :: Reviewed 2026-06-23 the New Mexico VR blocker artifacts plus the NM low-token registry. The exact official DVR root `https://www.dvr.nm.gov/` is still the only reviewed first-party VR host in the state packet and it returns HTTP 401 Unauthorized in bounded fetches. The New Mexico official-domain registry still carries no reviewed alternate VR domain, and the NM unresolved-roles ledger still shows both `vocational_rehabilitation` and `pre_ets` with `no_reviewed_allowed_domains`. New Mexico VR therefore remains blocked on missing reviewed alternate official-root evidence after the 401 lane, not on a broader discovery gap.',
+    `- vocational_rehabilitation_pre_ets: ${VR_FAILURE_CODE} :: ${VR_EVIDENCE}`,
+  );
   if (!updatedReport.includes('The live 935-row `2017 NM Schools` list is now explicitly distinguished')) {
     updatedReport = updatedReport.replace(
       '- The live official WebED host is now stronger than a single-workbook blocker: the public SharePoint list, REST inventory, REC grouping page, and six public workbooks are all reviewable on the PED-managed host.',
