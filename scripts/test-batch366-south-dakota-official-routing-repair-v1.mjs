@@ -13,6 +13,7 @@ generateBatch366SouthDakotaOfficialRoutingRepairV1();
 const summary = JSON.parse(
   fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'south-dakota_california_grade_summary_v2.json'), 'utf8')
 );
+assert.equal(summary.batch, 'batch366_south-dakota_official_routing_repair_v1');
 assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(summary.completeness_pct, 91);
@@ -63,5 +64,16 @@ const report = fs.readFileSync(path.join(repoRoot, 'docs', 'generated', 'south-d
 assert.match(report, /district_or_county_education_routing` is now cleared with official DOE district-directory pages/i);
 assert.match(report, /legal_aid` is now cleared with the official South Dakota UJS `Get Legal Help` page/i);
 assert.match(report, /sole remaining critical blocker/i);
+
+const allStateAudit = JSON.parse(
+  fs.readFileSync(path.join(repoRoot, 'data', 'generated', 'all_state_california_grade_audit_v3.json'), 'utf8')
+);
+const southDakotaAuditRow = allStateAudit.states.find((row) => row.stateId === 'south-dakota');
+assert.ok(southDakotaAuditRow);
+assert.equal(southDakotaAuditRow.packetBatch, 'batch366_south-dakota_official_routing_repair_v1');
+assert.equal(
+  southDakotaAuditRow.packetPrimaryGapReason,
+  'current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing'
+);
 
 console.log('South Dakota official routing repair test passed.');

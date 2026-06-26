@@ -2930,7 +2930,7 @@
         "county_local_disability_resources": "blocked_current_dhs_host_without_public_county_or_local_office_contract"
       },
       "packetGenerated": true,
-      "packetBatch": "batch_7_procedure_hardening_states_v1",
+      "packetBatch": "batch366_south-dakota_official_routing_repair_v1",
       "packetPrimaryGapReason": "current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing",
       "packetRecommendedBatch": "batch_3_procedure_hardening"
     },

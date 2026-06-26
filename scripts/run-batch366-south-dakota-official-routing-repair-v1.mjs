@@ -14,6 +14,7 @@ const INPUTS = {
   failure: path.join(generatedDir, 'south-dakota_failure_ledger_v2.jsonl'),
   verified: path.join(generatedDir, 'south-dakota_verified_sources_v1.jsonl'),
   next: path.join(generatedDir, 'south-dakota_next_action_queue_v2.jsonl'),
+  audit: path.join(generatedDir, 'all_state_california_grade_audit_v3.json'),
 };
 
 const OUTPUTS = {
@@ -21,6 +22,7 @@ const OUTPUTS = {
   batchReport: path.join(docsGeneratedDir, 'batch366-south-dakota-official-routing-repair-report-v1.md'),
   stateReport: path.join(docsGeneratedDir, 'south-dakota-california-grade-audit-report-v2.md'),
 };
+const BATCH = 'batch366_south-dakota_official_routing_repair_v1';
 
 const PRIMARY_GAP_REASON =
   'current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing';
@@ -119,9 +121,11 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
   const failureRows = readJsonl(INPUTS.failure);
   const verifiedRows = readJsonl(INPUTS.verified);
   const nextRows = readJsonl(INPUTS.next);
+  const audit = readJson(INPUTS.audit);
 
   const updatedSummary = {
     ...summary,
+    batch: BATCH,
     completeness_pct: 91,
     strong_critical_families: 11,
     weak_critical_families: 1,
@@ -347,10 +351,20 @@ export function generateBatch366SouthDakotaOfficialRoutingRepairV1() {
   writeJsonl(INPUTS.failure, updatedFailureRows);
   writeJsonl(INPUTS.verified, updatedVerifiedRows);
   writeJsonl(INPUTS.next, updatedNextRows);
+  audit.states = audit.states.map((row) => (
+    row.stateId === 'south-dakota'
+      ? {
+          ...row,
+          packetBatch: BATCH,
+          packetPrimaryGapReason: PRIMARY_GAP_REASON,
+        }
+      : row
+  ));
+  writeJson(INPUTS.audit, audit);
 
   writeJson(OUTPUTS.batchSummary, {
     state: 'south-dakota',
-    batch: 'batch366_south-dakota_official_routing_repair_v1',
+    batch: BATCH,
     classification: 'BLOCKED',
     index_safe: false,
     cleared_families: ['district_or_county_education_routing', 'legal_aid'],
