@@ -587,3 +587,6 @@
 
 ### Public Sitemaps Can Confirm Inventory Without Creating A County Contract
 *   **Lesson:** If a live official sitemap reappears, treat it as inventory evidence first, not as automatic local-routing proof. Idaho DHW’s public sitemap now confirms exact office leaves, but it still exposes no county-to-office assignment surface, and its county-named URLs belong to unrelated food-bank pages rather than disability-routing contracts.
+
+### Live County-Count Reports Still Do Not Prove Office Routing
+*   **Lesson:** If an official reports lane publishes live county or county-and-town PDFs and spreadsheets, inspect one directly before assuming it helps local-office routing. Maine OFI`s live `Geographic Distribution` and `Geographic Overflow` PDFs were public and county-aware, but they still carried only benefit counts by county and town and no office names, service areas, or county-to-office assignment contract, so they strengthened the blocker rather than clearing it.

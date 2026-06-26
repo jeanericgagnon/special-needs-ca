@@ -1,0 +1,22 @@
+{
+  "batch": "batch398_maine_ofi_reports_finality_v1",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "dhhs_district_office_page_live": true,
+  "ofi_contact_page_live": true,
+  "ofi_programs_services_page_live": true,
+  "offices_divisions_page_live": true,
+  "administrative_offices_page_live": true,
+  "dhhs_sitemap_page_live": true,
+  "official_maine_search_live": true,
+  "official_maine_search_county_queries_with_role_results": 0,
+  "ofi_data_reports_page_live": true,
+  "reviewed_geographic_distribution_pdf_counts_only": true,
+  "reviewed_geographic_overflow_pdf_counts_only": true,
+  "ofi_reports_with_office_assignment_contract": 0,
+  "sampled_show_map_shortlinks_live": 2,
+  "sampled_show_map_shortlinks_are_address_geocodes_only": true,
+  "sampled_show_map_shortlinks_have_county_metadata": false,
+  "county_crosswalk_found": false,
+  "result": "official_nav_stack_search_and_reports_expose_addresses_labels_or_counts_without_county_routing_contract"
+}
