@@ -52,6 +52,9 @@ const medicaidFailure = failureRows.find((row) => row.family === 'medicaid_state
 assert.match(medicaidFailure.evidence, /https:\/\/www\.dhhs\.nh\.gov\/robots\.txt/);
 assert.match(medicaidFailure.evidence, /https:\/\/www\.nh\.gov\/dhhs\/sitemap\.xml/);
 
+const vrFailure = failureRows.find((row) => row.family === 'vocational_rehabilitation_pre_ets');
+assert.equal(vrFailure.severity, 'critical');
+
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyVerified.family_status, 'blocked_official_dhhs_hosts_and_diagnostic_surfaces_forbidden');
 assert.match(countyVerified.blocker_evidence, /robots\.txt/);
@@ -65,6 +68,7 @@ assert.equal(auditRow.packetBatch, 'batch367_new_hampshire_robots_sitemap_finali
 assert.equal(auditRow.packetPrimaryGapReason, 'official_nh_dhhs_education_and_vr_host_families_plus_diagnostic_robots_sitemaps_still_return_access_denied_shell_and_saved_dhhs_replacement_hosts_remain_dns_dead');
 
 assert.match(stateReport, /even `robots\.txt` and `sitemap\.xml` on the official DHHS and `nh\.gov\/dhhs` host family return that same short 403 shell/i);
+assert.match(stateReport, /VR remains a critical blocker/i);
 assert.match(allStateReport, /robots\.txt and sitemap\.xml diagnostics return that same shell/i);
 assert.match(handoff, /robots\.txt/);
 assert.match(handoff, /sitemap\.xml/);

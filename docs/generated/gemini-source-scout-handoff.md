@@ -1,6 +1,6 @@
 # Gemini Source Scout Handoff
 
-Updated: 2026-06-25
+Updated: 2026-06-26
 
 Use Gemini findings only as leads, never as authority. Every lead still needs official or first-party verification in the repo workflow.
 
@@ -21,34 +21,50 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
 - Wyoming: `wde_idea_evidence_is_now_public_but_no_reviewable_county_to_district_special_education_crosswalk_or_disability_specific_county_resource_contract`
 
-## Current Focus State: Arizona
+## Current Focus State: New Hampshire
 
 ### Blocker Reason
 
-`county_local_disability_resources` is now the only remaining Arizona blocker. Education no longer controls the state packet: Coconino still clears through the official CAVIAT root plus its live 504 leaf; Mohave now clears because the official Arizona report-cards detail API for Mohave Valley Elementary District preserves exact coordinates that reverse-geocode to Mohave County on the official Census geocoder, and the same district-owned host exposes a live SPECIAL SERVICES leaf; Yavapai now clears because the official Arizona report-cards entity list exposes Prescott Unified District, its detail API preserves exact coordinates that reverse-geocode to Yavapai County, and the same district-owned host preserves a live `Exceptional Student Services` page plus a `Parents Rights Handbook`. Arizona therefore remains BLOCKED only because the county-local office-routing family still lacks a reviewable official county-to-office assignment contract.
+`medicaid_state_health_coverage` is the highest-priority New Hampshire blocker because the same official host-family failure still blocks Medicaid, waiver, DD, early-intervention, and county-local routing together. Reviewed 2026-06-25 bounded exact first-party rechecks across the saved `dhhs.new-hampshire.gov` replacement-host family, the direct `dhhs.nh.gov` agency subdomain family, and the likely public `nh.gov` successor family. The current-looking saved replacement roots still fail DNS resolution. The direct DHHS roots and exact `/dhhs` successor roots still return the same short `Access Denied` shell with HTTP 403. One more bounded diagnostic pass now shows that even `https://www.dhhs.nh.gov/robots.txt`, `https://www.dhhs.nh.gov/sitemap.xml`, `https://www.nh.gov/dhhs/robots.txt`, and `https://www.nh.gov/dhhs/sitemap.xml` return the same short 403 shell, so no public successor or export lane is currently preserved on the official DHHS family. Education remains separately blocked because `education.nh.gov`, `www.education.nh.gov`, exact district-directory leaves, `my.doe.nh.gov/ehb/`, and the obvious `nh.gov` education successors all still return that same shell. VR remains separately blocked because the NHES roots, the BVR disabilities path, and the likely `nh.gov` successors still return the same 403 shell or do not resolve. New Hampshire therefore stays BLOCKED and not index-safe.
 
 ### Exact Evidence Needed
 
-- Any official DES county office directory, county assignment table, or office-locator surface that becomes reviewable without the current challenge shell.
-- Any official AHCCCS ALTCS county-to-office contract in HTML, PDF, or another static admin artifact that explicitly maps counties to offices.
-- Any official Arizona county-admin or state-admin crosswalk that assigns counties to disability-routing offices.
+- Any reviewed public official New Hampshire DHHS host that actually renders Medicaid, DD, waiver, early-intervention, or district-office content instead of the Access Denied shell.
+- Any public official district-office or county-export surface on the DHHS family that provides real county or district-office routing.
+- Any reviewed public official New Hampshire education directory or district-profile surface that returns district- or county-grade routing instead of the Access Denied shell.
+- Any reviewed public official New Hampshire VR or BVR surface that loads publicly instead of the same blocked shell.
 
 ### Useful Official URLs Already Tried
 
-- [AHCCCS ALTCS locations HTML](https://www.azahcccs.gov/members/ALTCSlocations.html)
-- [AHCCCS ALTCS county map PDF lane](https://www.azahcccs.gov/Members/AlreadyCovered/MemberResources/ALTCS.html)
-- [AHCCCS contacts page](https://www.azahcccs.gov/shared/AHCCCScontacts.html)
-- [DES office locator](https://des.az.gov/office-locator)
-- [DES root](https://des.az.gov/)
-- [University Family Care oversight page](https://www.azahcccs.gov/Resources/OversightOfHealthPlans/UniversityFamilyCare.html)
-- [County Administrator Office PDF](https://www.azahcccs.gov/Resources/Downloads/UniversityFamilyCare/CountyAdminOffice.pdf)
+- [DHHS root](https://www.dhhs.nh.gov/)
+- [DHHS root without www](https://dhhs.nh.gov/)
+- [DHHS robots.txt](https://www.dhhs.nh.gov/robots.txt)
+- [DHHS sitemap.xml](https://www.dhhs.nh.gov/sitemap.xml)
+- [saved replacement root](https://dhhs.new-hampshire.gov/)
+- [saved DD replacement root](https://dhhs.new-hampshire.gov/dd)
+- [saved waiver replacement root](https://dhhs.new-hampshire.gov/dd/waivers)
+- [saved early-intervention replacement root](https://dhhs.new-hampshire.gov/earlystart)
+- [nh.gov DHHS successor root](https://www.nh.gov/dhhs/)
+- [nh.gov DHHS robots.txt](https://www.nh.gov/dhhs/robots.txt)
+- [nh.gov DHHS sitemap.xml](https://www.nh.gov/dhhs/sitemap.xml)
+- [nh.gov DHHS contact-us](https://www.nh.gov/dhhs/contact-us/)
+- [nh.gov DHHS district offices](https://www.nh.gov/dhhs/district-offices/)
+- [Education root](https://www.education.nh.gov/)
+- [Education root without www](https://education.nh.gov/)
+- [nh.gov Education successor](https://www.nh.gov/education/)
+- [nh.gov Education DOE successor](https://www.nh.gov/education/doe/)
+- [DOE alternate host](https://my.doe.nh.gov/ehb/)
+- [NHES root](https://www.nhes.nh.gov/)
+- [NHES root without www](https://nhes.nh.gov/)
+- [NHES successor root](https://www.nh.gov/nhes/)
+- [nh.gov employment successor](https://www.nh.gov/employment/)
 
 ### Top Remaining Source-Scouting Targets
 
-- Any newly reviewable DES county office assignment surface.
-- Any official AHCCCS ALTCS county-to-office assignment artifact.
-- Any official Arizona county-admin office-routing contract that survives static review.
+- Any newly public official NH DHHS successor host or export that resolves without the Access Denied shell.
+- Any official New Hampshire education directory, profile export, or district-routing surface that becomes publicly reviewable on the current host family.
+- Any official New Hampshire VR or BVR surface that becomes publicly reviewable on the current host family.
 
-## Next State Order After Arizona
+## Next State Order After New Hampshire
 
-1. New Hampshire
+1. None remaining in assigned sequence

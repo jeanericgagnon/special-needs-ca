@@ -177,7 +177,7 @@ function buildStateReport(summary, gapRows, failureRows, verifiedRows, nextRows)
     '- New Hampshire remains `BLOCKED` and `index_safe=false`.',
     '- The highest-priority blocker is still the DHHS host-family failure because it keeps Medicaid, waiver, DD, early-intervention, and county-local lanes blocked at once.',
     '- Education remains separately blocked because the official education host family and obvious `nh.gov` successors still provide no public district- or county-grade routing surface.',
-    '- VR remains a major blocker because the official NHES lane and the likely successor roots are still either access-denied or unresolvable.',
+    '- VR remains a critical blocker because the official NHES lane and the likely successor roots are still either access-denied or unresolvable.',
   ].join('\n') + '\n';
 }
 
@@ -287,6 +287,7 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
   const queueRows = readJsonl(INPUTS.queue);
   const allStateAudit = readJson(INPUTS.audit);
   const allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
+  const blockerByFamily = new Map(CURRENT_FINAL_BLOCKERS.map((row) => [row.family, row]));
 
   const updatedSummary = {
     ...summary,
@@ -340,8 +341,15 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
   });
 
   const updatedFailureRows = failureRows.map((row) => {
-    if (['medicaid_state_health_coverage','medicaid_waiver_hcbs_disability_services','developmental_disability_idd_authority','early_intervention_part_c','county_local_disability_resources'].includes(row.family)) {
-      return { ...row, evidence: DHHS_REASON };
+    const blocker = blockerByFamily.get(row.family);
+    if (blocker) {
+      return {
+        ...row,
+        severity: blocker.severity,
+        failure_code: blocker.failure_code,
+        evidence: blocker.evidence,
+        next_action: blocker.next_action,
+      };
     }
     return { ...row };
   });
@@ -353,7 +361,19 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
     return { ...row };
   });
 
-  const updatedNextRows = nextRows.map((row) => ({ ...row }));
+  const updatedNextRows = nextRows.map((row) => {
+    const blocker = blockerByFamily.get(row.family);
+    if (blocker) {
+      return {
+        ...row,
+        severity: blocker.severity,
+        failure_code: blocker.failure_code,
+        next_action: blocker.next_action,
+        evidence: blocker.evidence,
+      };
+    }
+    return { ...row };
+  });
 
   const updatedQueueRows = queueRows.map((row) => (
     row.state === 'new-hampshire'
@@ -361,7 +381,7 @@ export function generateBatch367NewHampshireRobotsSitemapFinalityV1() {
           ...row,
           classification: 'BLOCKED',
           index_safe: false,
-          completeness_pct: 42,
+          completeness_pct: 33,
           primary_gap_reason: PRIMARY_GAP_REASON,
           recommended_batch: RECOMMENDED_BATCH,
           status: 'BLOCKED',
