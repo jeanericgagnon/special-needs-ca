@@ -16,9 +16,9 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Maine: `bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract`
 - New Hampshire: `bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_still_return_access_denied_while_robots_txt_remains_public_only`
 - New Mexico: `bounded_2026_06_26_live_recheck_confirms_public_ped_sharepoint_stack_still_lacks_county_or_rec_service_area_contract_and_official_vr_lanes_still_fail_closed`
-- South Dakota: `current_dhs_host_exposes_no_public_county_or_local_office_contract_for_south_dakota_county_local_disability_routing`
+- South Dakota: `bounded_2026_06_26_live_recheck_confirms_current_dhs_localoffices_path_now_returns_200_but_still_only_a_page_not_found_shell_without_county_or_local_office_contract`
 
-## Current Focus State: Maine
+## Current Focus State: South Dakota
 
 ### Blocker Reason
 

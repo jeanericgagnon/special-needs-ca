@@ -1,0 +1,11 @@
+{
+  "batch": "batch407_south-dakota_terminal_refresh_v1",
+  "generated_at": "2026-06-26T13:40:56.221Z",
+  "classification": "BLOCKED",
+  "localoffices_200_shell": true,
+  "contact_us_200": true,
+  "contactus_old_200": true,
+  "staff_directory_200": true,
+  "dhs_root_200": true,
+  "completeness_pct": 91
+}
