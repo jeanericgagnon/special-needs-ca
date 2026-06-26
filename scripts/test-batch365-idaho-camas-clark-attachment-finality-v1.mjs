@@ -68,12 +68,12 @@ const districtNext = nextRows.find((row) => row.family === 'district_or_county_e
 assert.equal(districtNext.next_action, 'continue_exact_district_leaf_expansion_only_when_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact');
 
 const countyFailure = failureRows.find((row) => row.family === 'county_local_disability_resources');
-assert.match(countyFailure.evidence, /Reviewed 2026-06-25 and rechecked 2026-06-26 one more bounded live Idaho DHW confirmation/i);
+assert.match(countyFailure.evidence, /Reviewed 2026-06-25 one more bounded live Idaho DHW confirmation/i);
 assert.match(countyFailure.evidence, /`Grangeville Office - Camas Resource Center`/i);
 assert.match(countyFailure.evidence, /still exposes no truthful county-to-office contract/i);
 
 const countyVerified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
-assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 and rechecked 2026-06-26 one more bounded live Idaho DHW confirmation/i);
+assert.match(countyVerified.blocker_evidence, /Reviewed 2026-06-25 one more bounded live Idaho DHW confirmation/i);
 assert.match(countyVerified.blocker_evidence, /`Boise Office - Westgate Building` and `Grangeville Office - Camas Resource Center`/i);
 assert.equal(countyVerified.samples.find((row) => row.sample_name === 'Idaho DHW office root').fetched_at, '2026-06-25T00:00:00.000Z');
 assert.equal(countyVerified.samples.find((row) => row.sample_name === 'Idaho DHW Caldwell Office').fetched_at, '2026-06-25T00:00:00.000Z');
