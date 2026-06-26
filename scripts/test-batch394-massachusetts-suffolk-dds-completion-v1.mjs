@@ -64,8 +64,8 @@ assert.match(countyVerified.samples.find((sample) => sample.sample_name === 'DDS
 
 assert.match(report, /Massachusetts is now COMPLETE and index_safe=true/i);
 assert.match(report, /current official DDS area-office leaves explicitly cover all Suffolk County municipalities/i);
-assert.match(handoff, /## Current Focus State: Arizona/);
-assert.doesNotMatch(handoff, /## Current Focus State: Massachusetts/);
+assert.match(handoff, /## Current Complete States[\s\S]*Massachusetts/);
+assert.doesNotMatch(handoff, /- Massachusetts:/);
 assert.match(lessons, /### Bounded Slug Probes Can Recover Current First-Party Office Leaves Hidden From A Partial Index/);
 
 assert.equal(batchSummary.suffolk_county_cleared, true);
