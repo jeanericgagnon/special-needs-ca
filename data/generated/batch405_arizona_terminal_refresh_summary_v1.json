@@ -1,13 +1,18 @@
 {
   "batch": "batch405_arizona_terminal_refresh_v1",
-  "generated_at": "2026-06-26T13:35:23.996Z",
+  "generated_at": "2026-06-26T16:50:14.426Z",
   "classification": "BLOCKED",
   "des_wrapper_403": true,
   "des_salesforce_live": true,
+  "des_explicit_county_total": 11,
+  "missing_explicit_counties": [
+    "Greenlee",
+    "La Paz",
+    "Mohave",
+    "Yuma"
+  ],
   "altcs_locations_live": true,
-  "altcs_county_map_stale_html": true,
-  "ahcccs_contacts_stale_html": true,
-  "greenlee_health_live": true,
-  "morenci_directory_live": true,
+  "altcs_county_map_live_pdf": true,
+  "ahcccs_admin_pdfs_support_letters_only": true,
   "completeness_pct": 92
 }

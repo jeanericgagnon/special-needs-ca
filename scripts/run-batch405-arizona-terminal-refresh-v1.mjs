@@ -31,15 +31,15 @@ const BATCH = 'batch405_arizona_terminal_refresh_v1';
 const REVIEWED_DATE = '2026-06-26';
 const REVIEWED_AT = '2026-06-26T00:00:00.000Z';
 const PRIMARY_GAP_REASON =
-  'bounded_2026_06_26_live_recheck_confirms_des_wrapper_still_403_salesforce_locator_still_live_and_no_public_greenlee_county_assignment_on_des_or_ahcccs';
+  'bounded_2026_06_26_live_des_in_page_helper_confirms_only_11_explicit_counties_and_no_literal_greenlee_la_paz_mohave_or_yuma_assignment';
 const COUNTY_STATUS =
-  'blocked_des_salesforce_locator_still_exposes_only_greenlee_locality_zip_coverage_without_explicit_greenlee_county_assignment';
+  'blocked_live_des_helper_only_proves_11_explicit_counties_with_no_greenlee_la_paz_mohave_or_yuma_assignment';
 const FAILURE_CODE =
-  'official_des_locator_still_lacks_explicit_greenlee_assignment_while_live_salesforce_and_ahcccs_fallbacks_remain_non_closing';
+  'official_des_live_helper_exposes_only_11_explicit_counties_and_no_greenlee_la_paz_mohave_or_yuma_county_assignment';
 const NEXT_ACTION =
-  'hold_blocked_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_reviewable_county_to_office_contract';
+  'hold_blocked_until_des_or_ahcccs_publish_explicit_county_assignment_for_greenlee_la_paz_mohave_and_yuma_or_new_reviewable_county_to_office_contract';
 const COUNTY_REASON =
-  `Reviewed ${REVIEWED_DATE} one more bounded live Arizona county-local pass across the exact official DES, Salesforce, AHCCCS, and Greenlee-locality lanes. The official DES wrapper roots \`https://des.az.gov/office-locator\` and \`https://des.az.gov/find-your-local-office\` still return HTTP 403 \`Just a moment...\` shells. The linked public Salesforce-hosted DES office-locator app at \`https://azdes-community.my.salesforce-sites.com/EOL/\` still returns HTTP 200 and remains the only reviewable official DES county-local lane. The AHCCCS fallback family also remains unchanged: \`https://www.azahcccs.gov/Members/ALTCSlocations.html\` is still live, while the older \`ALTCS_CountyMap.pdf\` and \`AHCCCScontacts.html\` URLs still return HTTP 200 HTML stale shells instead of usable office-routing documents. The official Greenlee County health page plus first-party Clifton, Duncan, and Morenci town surfaces remain live, but they still do not name any DES or AHCCCS office assignment for Greenlee County. Arizona therefore still lacks one reviewed public official artifact that explicitly binds Greenlee County itself to a DES or AHCCCS office.`;
+  `Reviewed ${REVIEWED_DATE} one more bounded live Arizona county-local pass using the public DES locator's own in-page helper functions instead of relying only on older replay assumptions. The public wrapper roots \`https://des.az.gov/office-locator\` and \`https://des.az.gov/find-your-local-office\` still stay challenge-blocked as raw HTML, but the public Salesforce-hosted locator app at \`https://azdes-community.my.salesforce-sites.com/EOL/\` remains reviewable in browser context. The live frame still exposes the official service controls \`svcpickerDDS\`, \`svcpickerMA\`, \`svcpickerVR\`, and the current service lookup map through \`LoadSvcDropDown\`, \`xrefSvcCodeJSON\`, and \`geoSearchRadius\`. Re-running the app's own helper at Greenlee-area coordinates (33.0509, -109.3059) with a 250-mile search radius now produces a stricter official result than the older packet claimed. Across every public service code on the live app, explicit office \`county\` values appear for only 11 counties overall: Apache, Cochise, Coconino, Gila, Graham, Maricopa, Navajo, Pima, Pinal, Santa Cruz, and Yavapai. No reviewed live helper result for any service code contains a literal \`Greenlee\`, \`La Paz\`, \`Mohave\`, or \`Yuma\` county assignment. Some services still preserve locality ZIP coverage without county assignment: the live DDS and Child Care helper results include \`85533\`, \`85534\`, and \`85540\`, but still only on office rows whose explicit county fields remain other counties such as Graham or Pima. The accessible AHCCCS fallback lane remains live but still non-closing: \`https://www.azahcccs.gov/Members/ALTCSlocations.html\` names office cards such as Kingman and Yuma, \`https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf\` is text-extractable as county enrollment counts, and the reviewed AHCCCS admin PDFs are still only 2014 Pima support letters. None of those reviewed AHCCCS artifacts publishes a county-to-office assignment contract. Arizona therefore still lacks reviewed public official office-routing proof for at least Greenlee, La Paz, Mohave, and Yuma counties, so the county-local blocker is broader than the prior single-Greenlee packet implied.`;
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -67,7 +67,7 @@ function writeText(filePath, value) {
 
 function updateAllStateReport(report) {
   const line =
-    '- Arizona remains blocked after a 2026-06-26 bounded live recheck: DES wrapper roots still return HTTP 403 `Just a moment...` shells, the public Salesforce locator app remains live, AHCCCS ALTCS locations remains live while the old county-map and contacts URLs stay stale, and no reviewed public DES or AHCCCS artifact explicitly assigns Greenlee County to an office.';
+    '- Arizona remains blocked after a 2026-06-26 bounded live recheck: the DES wrapper roots still return HTTP 403 `Just a moment...` shells, the public Salesforce locator app remains live but exposes explicit office county fields for only 11 counties, and no reviewed public DES or AHCCCS artifact explicitly assigns Greenlee, La Paz, Mohave, or Yuma County to an office.';
   if (/- Arizona remains blocked after[^\n]*/.test(report)) {
     return report.replace(/- Arizona remains blocked after[^\n]*/, line);
   }
@@ -79,7 +79,13 @@ function updateHandoff(text) {
     .replace(/Current Focus State: [^\n]+/, 'Current Focus State: Arizona')
     .replace(
       /- Arizona: `[^`]+`/,
-      '- Arizona: `bounded_2026_06_26_live_recheck_confirms_des_wrapper_still_403_salesforce_locator_still_live_and_no_public_greenlee_county_assignment_on_des_or_ahcccs`',
+      '- Arizona: `bounded_2026_06_26_live_des_in_page_helper_confirms_only_11_explicit_counties_and_no_literal_greenlee_la_paz_mohave_or_yuma_assignment`',
+    )
+    .replace(
+      /### Blocker Reason\s+[\s\S]*?(?=\n## |\s*$)/,
+      `### Blocker Reason
+
+\`county_local_disability_resources\` is still the sole Arizona blocker. The live official DES helper now proves explicit office county fields for only 11 counties total, and no reviewed DES or AHCCCS artifact explicitly assigns Greenlee, La Paz, Mohave, or Yuma County to an office. The Salesforce locator still preserves some ZIP-locality coverage, but not a county-to-office contract.`,
     );
 }
 
@@ -112,7 +118,9 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- Arizona remains BLOCKED and not index-safe.',
-    '- County-local routing is still blocked on one exact unresolved contract: a reviewed public DES or AHCCCS artifact that explicitly assigns Greenlee County to an office.',
+    '- County-local routing is weaker than the prior packet claimed: the current live DES helper proves explicit office county fields for only 11 counties, not a near-complete statewide county contract.',
+    '- No reviewed live DES helper result explicitly labels Greenlee, La Paz, Mohave, or Yuma County in a county field.',
+    '- The AHCCCS fallback lane remains live but still non-closing because it preserves office inventory, county enrollment counts, and support letters rather than a county-to-office contract.',
   ].join('\n') + '\n';
 }
 
@@ -122,7 +130,7 @@ function buildBatchReport() {
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: tied Arizona’s blocked terminal state to a fresh 2026-06-26 live recheck of the DES wrapper, Salesforce app, AHCCCS fallbacks, and Greenlee-locality surfaces',
+    '- change: tied Arizona’s blocked terminal state to a fresh 2026-06-26 live recheck of the DES wrapper, live Salesforce helper outputs, and AHCCCS fallbacks',
     '',
     '## Evidence',
     '',
@@ -248,11 +256,11 @@ export function generateBatch405ArizonaTerminalRefreshV1() {
     classification: 'BLOCKED',
     des_wrapper_403: true,
     des_salesforce_live: true,
+    des_explicit_county_total: 11,
+    missing_explicit_counties: ['Greenlee', 'La Paz', 'Mohave', 'Yuma'],
     altcs_locations_live: true,
-    altcs_county_map_stale_html: true,
-    ahcccs_contacts_stale_html: true,
-    greenlee_health_live: true,
-    morenci_directory_live: true,
+    altcs_county_map_live_pdf: true,
+    ahcccs_admin_pdfs_support_letters_only: true,
     completeness_pct: 92,
   });
   writeText(OUTPUTS.report, buildBatchReport());

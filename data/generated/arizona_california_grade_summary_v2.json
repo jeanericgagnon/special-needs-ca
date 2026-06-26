@@ -2,7 +2,7 @@
   "state": "arizona",
   "state_code": "AZ",
   "state_name": "Arizona",
-  "batch": "batch414_arizona_live_helper_county_downgrade_v1",
+  "batch": "batch405_arizona_terminal_refresh_v1",
   "classification": "BLOCKED",
   "index_safe": false,
   "incorrectly_index_safe": false,
@@ -13,7 +13,7 @@
   "missing_critical_families": 0,
   "total_critical_families": 12,
   "primary_gap_reason": "bounded_2026_06_26_live_des_in_page_helper_confirms_only_11_explicit_counties_and_no_literal_greenlee_la_paz_mohave_or_yuma_assignment",
-  "recommended_batch": "hold_county_local_until_des_or_ahcccs_publish_explicit_county_assignments_for_greenlee_la_paz_mohave_and_yuma",
+  "recommended_batch": "hold_county_local_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_full_county_contract",
   "critical_gap_families": [
     "county_local_disability_resources"
   ],

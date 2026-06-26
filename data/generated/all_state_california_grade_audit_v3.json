@@ -151,7 +151,7 @@
       },
       "packetGenerated": true,
       "packetBatch": "batch404_alaska_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_current_dpa_page_and_related_health_surfaces_all_return_403_while_dfcs_successor_surfaces_still_expose_no_borough_or_census_area_contract",
+      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_current_dpa_page_and_related_health_surfaces_all_return_403_while_dfcs_successor_surfaces_and_daph_branch_still_expose_no_borough_or_census_area_contract",
       "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
     },
     {
@@ -220,7 +220,7 @@
         "county_local_disability_resources": "blocked_live_des_helper_only_proves_11_explicit_counties_with_no_greenlee_la_paz_mohave_or_yuma_assignment"
       },
       "packetGenerated": true,
-      "packetBatch": "batch414_arizona_live_helper_county_downgrade_v1",
+      "packetBatch": "batch405_arizona_terminal_refresh_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_live_des_in_page_helper_confirms_only_11_explicit_counties_and_no_literal_greenlee_la_paz_mohave_or_yuma_assignment",
       "packetRecommendedBatch": "hold_county_local_until_des_or_ahcccs_publish_explicit_county_assignments_for_greenlee_la_paz_mohave_and_yuma"
     },
@@ -2080,8 +2080,8 @@
         "county_local_disability_resources": "blocked_official_dhhs_hosts_still_access_denied_with_no_county_reviewable_content_lane"
       },
       "packetGenerated": true,
-      "packetBatch": "batch412_new_hampshire_browser_proof_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_browser_recheck_confirms_nh_dhhs_doe_and_nhes_hosts_fail_with_public_access_denied_shells_not_just_raw_fetch_403s",
+      "packetBatch": "batch402_new_hampshire_terminal_refresh_v1",
+      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_and_robots_all_return_403_while_federal_idea_page_remains_live",
       "packetRecommendedBatch": "hold_for_live_nh_dhhs_nhes_or_local_education_contract_recovery"
     },
     {

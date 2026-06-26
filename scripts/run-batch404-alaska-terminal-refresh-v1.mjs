@@ -31,11 +31,11 @@ const BATCH = 'batch404_alaska_terminal_refresh_v1';
 const REVIEWED_DATE = '2026-06-26';
 const REVIEWED_AT = '2026-06-26T00:00:00.000Z';
 const PRIMARY_GAP_REASON =
-  'bounded_2026_06_26_live_recheck_confirms_current_dpa_page_and_related_health_surfaces_all_return_403_while_dfcs_successor_surfaces_still_expose_no_borough_or_census_area_contract';
+  'bounded_2026_06_26_live_recheck_confirms_current_dpa_page_and_related_health_surfaces_all_return_403_while_dfcs_successor_surfaces_and_daph_branch_still_expose_no_borough_or_census_area_contract';
 const COUNTY_STATUS =
   'blocked_current_health_host_fully_403_again_and_dfcs_successor_surfaces_still_only_statewide_or_search_shell';
 const COUNTY_REASON =
-  `Reviewed ${REVIEWED_DATE} one more bounded live Alaska county-local pass. The current official health-host DPA family still fails closed end to end: \`https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/\`, \`https://health.alaska.gov/en/division-of-public-assistance/\`, \`https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf\`, and \`https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf\` all now return HTTP 403 with the Cloudflare \`Just a moment...\` shell. The DFCS successor family is still publicly reachable but still does not restore county-equivalent routing: \`https://dfcs.alaska.gov/Pages/default.aspx\`, \`/Pages/Services.aspx\`, \`/pages/search.aspx\`, and \`/Commissioner/Pages/Contacts/default.aspx\` still return HTTP 200 SharePoint pages, but \`https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance\` still returns HTTP 404 and the reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. Alaska therefore still lacks any reviewable public borough- or census-area-to-office contract.`;
+  `Reviewed ${REVIEWED_DATE} one more bounded live Alaska county-local pass. The current official health-host DPA family still fails closed end to end: \`https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/\`, \`https://health.alaska.gov/en/division-of-public-assistance/\`, \`https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf\`, and \`https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf\` all now return HTTP 403 with the Cloudflare \`Just a moment...\` shell. The DFCS successor family is still publicly reachable but still does not restore county-equivalent routing: \`https://dfcs.alaska.gov/Pages/default.aspx\`, \`/Pages/Services.aspx\`, \`/pages/search.aspx\`, and \`/Commissioner/Pages/Contacts/default.aspx\` still return HTTP 200 SharePoint pages, but \`https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance\` still returns HTTP 404 and the reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. The freshly rechecked DFCS Site Map branch also still fails closed as a repair lane: \`https://dfcs.alaska.gov/Pages/Site-Map.aspx\` is live, but the extra surfaced DAPH leaves \`/daph/Pages/services.aspx\` and \`/daph/Pages/paymentassistance/default.aspx\` resolve to Alaska Pioneer Homes services and payment-assistance content rather than public-assistance office routing, while the only office-looking DFCS child lane remains the wrong-role OCS Regional Offices page. Alaska therefore still lacks any reviewable public borough- or census-area-to-office contract.`;
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -63,7 +63,7 @@ function writeText(filePath, value) {
 
 function updateAllStateReport(report) {
   const line =
-    '- Alaska remains blocked after a 2026-06-26 bounded live recheck: the current DPA offices page, DPA root, and related health-host PDFs all return HTTP 403 `Just a moment...` shells again, while DFCS successor root/services/search/contacts still expose no borough- or census-area routing contract and the DFCS search results endpoint still 404s.';
+    '- Alaska remains blocked after a 2026-06-26 bounded live recheck: the current DPA offices page, DPA root, and related health-host PDFs all return HTTP 403 `Just a moment...` shells again, while DFCS successor root/services/search/contacts still expose no borough- or census-area routing contract, the DFCS search results endpoint still 404s, and the extra DAPH branch still resolves only to Alaska Pioneer Homes payment-assistance content rather than public-assistance office routing.';
   if (/- Alaska remains blocked after[^\n]*/.test(report)) {
     return report.replace(/- Alaska remains blocked after[^\n]*/, line);
   }
@@ -75,7 +75,13 @@ function updateHandoff(text) {
     .replace(/Current Focus State: [^\n]+/, 'Current Focus State: Alaska')
     .replace(
       /- Alaska: `[^`]+`/,
-      '- Alaska: `bounded_2026_06_26_live_recheck_confirms_current_dpa_page_and_related_health_surfaces_all_return_403_while_dfcs_successor_surfaces_still_expose_no_borough_or_census_area_contract`',
+      '- Alaska: `bounded_2026_06_26_live_recheck_confirms_current_dpa_page_and_related_health_surfaces_all_return_403_while_dfcs_successor_surfaces_and_daph_branch_still_expose_no_borough_or_census_area_contract`',
+    )
+    .replace(
+      /### Blocker Reason\s+[\s\S]*?(?=\n## |\s*$)/,
+      `### Blocker Reason
+
+\`county_local_disability_resources\` is still the sole Alaska blocker. The current official health-host DPA family still returns public Cloudflare 403 shells in the raw lane, the DFCS successor host still exposes only statewide or wrong-role content, and the extra DAPH branch surfaced from the live DFCS Site Map still resolves to Alaska Pioneer Homes services and payment-assistance pages rather than any borough- or census-area public-assistance office contract.`,
     );
 }
 
@@ -108,7 +114,7 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- Alaska remains BLOCKED and not index-safe.',
-    '- County-local routing is still blocked because the current health-host family is now fully 403 again and the DFCS successor still does not publish a borough or census-area contract.',
+    '- County-local routing is still blocked because the current health-host family is now fully 403 again, the DFCS successor still does not publish a borough or census-area contract, and the extra DAPH branch is still wrong-role Alaska Pioneer Homes content rather than a hidden DPA office lane.',
   ].join('\n') + '\n';
 }
 
@@ -118,7 +124,7 @@ function buildBatchReport() {
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: tied Alaska’s blocked terminal state to a fresh 2026-06-26 raw recheck showing the DPA offices page itself is back behind the 403 shell',
+    '- change: tied Alaska’s blocked terminal state to a fresh 2026-06-26 raw recheck showing the DPA offices page itself is back behind the 403 shell and the extra DFCS DAPH branch is still wrong-role content',
     '',
     '## Evidence',
     '',
@@ -218,8 +224,12 @@ export function generateBatch404AlaskaTerminalRefreshV1() {
     medicaid_snapshot_pdf_403: true,
     dfcs_root_200: true,
     dfcs_services_200: true,
+    dfcs_site_map_200: true,
     dfcs_search_200: true,
     dfcs_search_results_404: true,
+    daph_services_wrong_role: true,
+    daph_payment_assistance_wrong_role: true,
+    ocs_regional_offices_only_remaining_office_like_lane: true,
     completeness_pct: 91,
   });
   writeText(OUTPUTS.report, buildBatchReport());

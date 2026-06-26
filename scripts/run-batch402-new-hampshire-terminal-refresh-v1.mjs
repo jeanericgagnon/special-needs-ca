@@ -30,13 +30,15 @@ const BATCH = 'batch402_new_hampshire_terminal_refresh_v1';
 const REVIEWED_DATE = '2026-06-26';
 const REVIEWED_AT = '2026-06-26T00:00:00.000Z';
 const PRIMARY_GAP_REASON =
-  'bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_still_return_access_denied_while_robots_txt_remains_public_only';
+  'bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_and_robots_all_return_403_while_federal_idea_page_remains_live';
 const DHHS_REASON =
-  `Reviewed ${REVIEWED_DATE} one more bounded live New Hampshire DHHS host-family pass. \`https://www.dhhs.nh.gov/\`, \`https://dhhs.nh.gov/\`, and \`https://www.nh.gov/dhhs/\` all still return the same public HTTP 403 \`Access Denied\` shell rather than any reviewable public DHHS content. The public robots lanes remain readable only: \`https://www.nh.gov/robots.txt\` and \`https://www.dhhs.nh.gov/robots.txt\` still return HTTP 200 text files, but they do not restore any local-routing, Medicaid, DD, EI, or county-local contract. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.`;
+  `Reviewed ${REVIEWED_DATE} one more bounded live New Hampshire DHHS host-family pass. \`https://www.dhhs.nh.gov/\`, \`https://dhhs.nh.gov/\`, and \`https://www.nh.gov/dhhs/\` all still return the same public HTTP 403 \`Access Denied\` shell rather than any reviewable public DHHS content. The robots lanes no longer reopen anything either: \`https://www.nh.gov/robots.txt\` and \`https://www.dhhs.nh.gov/robots.txt\` now also return HTTP 403. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.`;
 const EDUCATION_REASON =
-  `Reviewed ${REVIEWED_DATE} one more bounded live New Hampshire education host-family pass. \`https://education.nh.gov/\`, \`https://www.education.nh.gov/\`, \`https://www.nh.gov/education/\`, and \`https://my.doe.nh.gov/ehb/\` all still return the same public HTTP 403 \`Access Denied\` shell rather than any reviewable statewide or local education-routing content. \`https://education.nh.gov/robots.txt\` still returns HTTP 200 text only and does not reopen a district-grade routing contract. New Hampshire therefore still lacks a reviewable public DOE lane for statewide special education authority or district/county education routing.`;
+  `Reviewed ${REVIEWED_DATE} one more bounded live New Hampshire education host-family pass. \`https://education.nh.gov/\`, \`https://www.education.nh.gov/\`, \`https://www.nh.gov/education/\`, and \`https://my.doe.nh.gov/ehb/\` all still return the same public HTTP 403 \`Access Denied\` shell rather than any reviewable statewide or local education-routing content. \`https://education.nh.gov/robots.txt\` now also returns HTTP 403 and does not reopen a district-grade routing contract. The separate official federal IDEA-by-State page at \`https://sites.ed.gov/idea/state/new-hampshire/\` remains live and keeps statewide IDEA Part B authority verified, but it still does not provide district-, county-, or SAU-grade routing. New Hampshire therefore still lacks a reviewable public DOE lane for local education routing.`;
 const VR_REASON =
-  `Reviewed ${REVIEWED_DATE} one more bounded live New Hampshire employment-security / VR host-family pass. \`https://nhes.nh.gov/\`, \`https://www.nhes.nh.gov/\`, and \`https://www.nh.gov/nhes/\` all still return the same public HTTP 403 \`Access Denied\` shell rather than any reviewable VR or Pre-ETS content. \`https://nhes.nh.gov/robots.txt\` still returns HTTP 200 text only and does not restore a public vocational-rehabilitation or Pre-ETS contract. New Hampshire therefore still lacks a reviewable public VR successor lane.`;
+  `Reviewed ${REVIEWED_DATE} one more bounded live New Hampshire employment-security / VR host-family pass. \`https://nhes.nh.gov/\`, \`https://www.nhes.nh.gov/\`, and \`https://www.nh.gov/nhes/\` all still return the same public HTTP 403 \`Access Denied\` shell rather than any reviewable VR or Pre-ETS content. \`https://nhes.nh.gov/robots.txt\` now also returns HTTP 403 and does not restore a public vocational-rehabilitation or Pre-ETS contract. New Hampshire therefore still lacks a reviewable public VR successor lane.`;
+const IDEA_REASON =
+  `Reviewed ${REVIEWED_DATE} the current live official U.S. Department of Education IDEA-by-State page for New Hampshire at \`https://sites.ed.gov/idea/state/new-hampshire/\`. The page remains publicly reviewable and New Hampshire-specific: it preserves the exact state heading \`New Hampshire - Individuals with Disabilities Education Act\` and current Part B materials, including \`2025 SPP/APR and State Determination Letters, Part B — New Hampshire\`. That federal lane is enough to keep statewide IDEA Part B authority verified even while New Hampshire's own DOE hosts stay blocked.`;
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -74,7 +76,7 @@ function reasonForFamily(family) {
   ) {
     return DHHS_REASON;
   }
-  if (['special_education_idea_part_b', 'district_or_county_education_routing'].includes(family)) {
+  if (family === 'district_or_county_education_routing') {
     return EDUCATION_REASON;
   }
   if (family === 'vocational_rehabilitation_pre_ets') {
@@ -95,7 +97,7 @@ function familyStatusForFamily(family) {
   ) {
     return 'blocked_live_dhhs_roots_still_403_while_robots_txt_only_confirms_host_existence';
   }
-  if (['special_education_idea_part_b', 'district_or_county_education_routing'].includes(family)) {
+  if (family === 'district_or_county_education_routing') {
     return 'blocked_live_education_roots_still_403_while_robots_txt_only_confirms_host_existence';
   }
   if (family === 'vocational_rehabilitation_pre_ets') {
@@ -106,7 +108,7 @@ function familyStatusForFamily(family) {
 
 function updateAllStateReport(report) {
   const line =
-    '- New Hampshire remains blocked after a 2026-06-26 bounded live host-family recheck: DHHS, DOE, and NHES roots plus their obvious `nh.gov` path successors still return the same public HTTP 403 `Access Denied` shells, while only `robots.txt` remains publicly readable and still does not restore any routing contract.';
+    '- New Hampshire remains blocked after a 2026-06-26 bounded live host-family recheck: DHHS, DOE, and NHES roots plus their obvious `nh.gov` path successors still return the same public HTTP 403 `Access Denied` shells, their `robots.txt` lanes now also return 403, and only the federal IDEA-by-State page remains reviewable.';
   return report.replace(
     /- New Hampshire remains blocked after[^\n]*/,
     line,
@@ -116,7 +118,7 @@ function updateAllStateReport(report) {
 function updateHandoff(text) {
   return text.replace(
     /- New Hampshire: `[^`]+`/,
-    '- New Hampshire: `bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_still_return_access_denied_while_robots_txt_remains_public_only`',
+    '- New Hampshire: `bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_and_robots_all_return_403_while_federal_idea_page_remains_live`',
   );
 }
 
@@ -149,8 +151,9 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Completion decision',
     '',
     '- New Hampshire remains BLOCKED and not index-safe.',
-    '- The public official host families are still real enough to expose robots.txt, but the actual agency and successor roots still fail closed behind the same `Access Denied` shell.',
-    '- No reviewable public DHHS, DOE, or NHES routing contract exists today for the blocked families.',
+    '- The public official DHHS, DOE, and NHES host families still fail closed behind the same `Access Denied` shell, and their robots lanes no longer provide any reviewable text foothold either.',
+    '- The federal IDEA-by-State page still keeps statewide IDEA Part B verified.',
+    '- No reviewable public DHHS, DOE local-routing, or NHES routing contract exists today for the blocked families.',
   ].join('\n') + '\n';
 }
 
@@ -160,7 +163,7 @@ function buildBatchReport() {
     '',
     '- classification: BLOCKED',
     '- index_safe: false',
-    '- change: tied New Hampshire’s blocked terminal state to a fresh 2026-06-26 live host-family recheck',
+    '- change: tied New Hampshire’s blocked terminal state to a fresh 2026-06-26 live host-family recheck showing the state host families and robots lanes all still fail closed while federal IDEA remains live',
     '',
     '## Evidence',
     '',
@@ -186,7 +189,7 @@ export function generateBatch402NewHampshireTerminalRefreshV1() {
     batch: BATCH,
     classification: 'BLOCKED',
     index_safe: false,
-    completeness_pct: 33,
+    completeness_pct: 42,
     primary_gap_reason: PRIMARY_GAP_REASON,
     final_blockers: (summary.final_blockers || []).map((row) => {
       const reason = reasonForFamily(row.family);
@@ -207,6 +210,9 @@ export function generateBatch402NewHampshireTerminalRefreshV1() {
 
   const updatedVerifiedRows = verifiedRows.map((row) => {
     const reason = reasonForFamily(row.family);
+    if (row.family === 'special_education_idea_part_b') {
+      return { ...row, family_status: 'verified_state_grade', blocker_code: null, blocker_evidence: null };
+    }
     return reason ? { ...row, blocker_evidence: reason } : row;
   });
 
@@ -241,8 +247,9 @@ export function generateBatch402NewHampshireTerminalRefreshV1() {
     dhhs_roots_403: true,
     education_roots_403: true,
     nhes_roots_403: true,
-    robots_only_public: true,
-    completeness_pct: 33,
+    robots_only_public: false,
+    federal_idea_page_live: true,
+    completeness_pct: 42,
   });
   writeText(OUTPUTS.report, buildBatchReport());
 

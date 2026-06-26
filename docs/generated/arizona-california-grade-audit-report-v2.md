@@ -49,6 +49,6 @@
 ## Completion decision
 
 - Arizona remains BLOCKED and not index-safe.
-- County-local routing is weaker than the prior packet claimed: the current live DES helper proves explicit office county fields for only 11 counties, not a 14-county-plus-one-locality near-complete contract.
+- County-local routing is weaker than the prior packet claimed: the current live DES helper proves explicit office county fields for only 11 counties, not a near-complete statewide county contract.
 - No reviewed live DES helper result explicitly labels Greenlee, La Paz, Mohave, or Yuma County in a county field.
 - The AHCCCS fallback lane remains live but still non-closing because it preserves office inventory, county enrollment counts, and support letters rather than a county-to-office contract.
