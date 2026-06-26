@@ -57,13 +57,12 @@ test.describe('Forms and Guides E2E Tests', () => {
 
   const targetGuides = [
     '/situations/ihss-protective-supervision',
+    '/situations/early-start-age-3-transition',
     '/programs/ihss-for-children',
-    '/programs/regional-centers',
-    '/programs/early-start',
-    '/programs/california-childrens-services',
-    '/programs/medi-cal-for-kids-and-teens',
-    '/programs/calable',
-    '/programs/iep-special-education'
+    '/programs/ssi-for-children',
+    '/programs/medi-cal-epsdt',
+    '/programs/ccs',
+    '/programs/calable'
   ];
 
   for (const guidePath of targetGuides) {

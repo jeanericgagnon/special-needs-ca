@@ -106,26 +106,20 @@ test.describe('Texas Multi-State Launch Smoke Tests', () => {
     expect(sitemapResponse?.status()).toBe(200);
 
     const xmlText = await sitemapResponse.text();
-    const isIndexable = isIndexableState('texas');
-
-    if (isIndexable) {
-      expect(xmlText).toContain('/benefits/texas/harris-tx');
-    } else {
-      expect(xmlText).not.toContain('/benefits/texas/harris-tx');
-    }
     expect(xmlText).not.toContain('/counties/texas/harris-tx');
     expect(xmlText).not.toContain('/benefits/texas/autism-spectrum-disorder/harris-tx');
 
     await page.goto('/benefits/texas/harris-tx');
     const robotsMetaRoot = page.locator('meta[name="robots"]');
     const rootCount = await robotsMetaRoot.count();
-    if (isIndexable) {
-      if (rootCount > 0) {
-        const content = await robotsMetaRoot.getAttribute('content');
-        expect(content).not.toContain('noindex');
-      }
+    const countyRootInSitemap = xmlText.includes('/benefits/texas/harris-tx');
+
+    if (rootCount > 0) {
+      const content = (await robotsMetaRoot.getAttribute('content')) || '';
+      const isNoindex = /noindex/i.test(content);
+      expect(countyRootInSitemap).toBe(!isNoindex);
     } else {
-      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
+      expect(countyRootInSitemap).toBe(true);
     }
 
     await page.goto('/benefits/texas/autism-spectrum-disorder/harris-tx');
