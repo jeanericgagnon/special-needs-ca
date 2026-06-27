@@ -1,9 +1,12 @@
 {
   "batch": "batch404_alaska_terminal_refresh_v1",
-  "generated_at": "2026-06-26T23:57:02.607Z",
+  "generated_at": "2026-06-27T00:18:42.950Z",
   "classification": "BLOCKED",
   "dpa_offices_browser_reviewable": true,
   "dpa_offices_region_only": true,
+  "dpa_region_heading_count": 5,
+  "dpa_page_has_borough_term": false,
+  "dpa_page_has_census_area_term": false,
   "dpa_root_403": true,
   "dpa_dashboard_pdf_403": true,
   "medicaid_snapshot_pdf_403": true,

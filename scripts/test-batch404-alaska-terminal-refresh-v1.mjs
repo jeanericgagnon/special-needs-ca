@@ -32,7 +32,8 @@ const countyGap = gapRows.find((row) => row.family === 'county_local_disability_
 assert.equal(countyGap.family_status, 'blocked_reviewable_dpa_offices_regions_without_borough_assignment_and_raw_health_fetches_403');
 assert.match(countyGap.status_reason, /Reviewed 2026-06-26/i);
 assert.match(countyGap.status_reason, /DPA offices page .* publicly readable again/i);
-assert.match(countyGap.status_reason, /still groups offices only by broad regions/i);
+assert.match(countyGap.status_reason, /five regional groupings/i);
+assert.match(countyGap.status_reason, /contains no literal `borough` or `census area` terms/i);
 assert.match(countyGap.status_reason, /Search\/Pages\/results\.aspx\?k=public%20assistance.*HTTP 404/i);
 assert.match(countyGap.status_reason, /DAPH leaves .* Alaska Pioneer Homes services and payment-assistance content/i);
 
@@ -48,12 +49,15 @@ assert.equal(queueRow.primary_gap_reason, 'bounded_2026_06_26_live_recheck_confi
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/alaska-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /exact official DPA offices page .* publicly readable again/i);
-assert.match(report, /only proves broad regional office groupings/i);
+assert.match(report, /contains no literal `borough` or `census area` terms/i);
 assert.match(report, /DAPH branch is still wrong-role Alaska Pioneer Homes content/i);
 
 const batchSummary = readJson('data/generated/batch404_alaska_terminal_refresh_summary_v1.json');
 assert.equal(batchSummary.dpa_offices_browser_reviewable, true);
 assert.equal(batchSummary.dpa_offices_region_only, true);
+assert.equal(batchSummary.dpa_region_heading_count, 5);
+assert.equal(batchSummary.dpa_page_has_borough_term, false);
+assert.equal(batchSummary.dpa_page_has_census_area_term, false);
 assert.equal(batchSummary.dpa_root_403, true);
 assert.equal(batchSummary.dfcs_site_map_200, true);
 assert.equal(batchSummary.dfcs_search_results_404, true);
