@@ -75,4 +75,5 @@ Generated: 2026-06-27
 
 ## Remaining validation note
 
-- `npm run build` was started during this pass but did not complete within the interactive monitoring window, so compile proof still needs one clean completed run before treating this as the final launch commit.
+- `npm run build` completed cleanly on 2026-06-27 after this report was first generated.
+- The remaining launch risk is blocked-state scope control, not compile health.

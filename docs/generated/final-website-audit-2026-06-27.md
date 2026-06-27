@@ -22,13 +22,13 @@ This is intentionally broader than the launch-only audit. It covers the public w
 - Modeled 50-state completeness: 0/50
 - High-confidence states on the current audit bar: 0/50
 - Strict-gold states: 0/50
-- Public-safe but still blocked states: 0/50 (florida, new-york, pennsylvania, georgia, ohio, illinois, california, wyoming, hawaii, iowa, kansas, kentucky, missouri, nebraska, new-jersey, new-mexico, oregon, tennessee, texas, virginia, washington, wisconsin, alabama, arkansas, colorado, connecticut, delaware, indiana, louisiana, maryland, massachusetts, michigan, minnesota, mississippi, montana, nevada, north-carolina, north-dakota, oklahoma, rhode-island, south-carolina, south-dakota, utah, vermont, west-virginia, alaska, arizona, idaho, maine, new-hampshire)
+- Public-safe but still blocked states: 1/50 (wyoming)
 - Public data headline: The repo has strong national program, routing, nonprofit, advocate, and condition foundations, but provider coverage, normalization, knowledge depth, and workflow/runtime layers are still thin or empty in the checked-in DB.
 
 ### Most Important Truths
 
 - 50/50 modeled completeness does not mean all information categories are deeply built out.
-- 49/50 strict gold means one state is still blocked even on the stricter public-truth bar.
+- 0/50 strict-gold states means 1 state still sits in the public-safe-but-blocked lane on the stricter truth registry.
 - Provider coverage and knowledge-content depth are still the largest visible product information gaps.
 - Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.
 - Several workflow and support layers are still mostly empty despite having schema support.
@@ -81,8 +81,8 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: strong_but_not_exhaustive
 - Final website needs: Program definitions, eligibility rules, document requirements, application steps, appeals, forms, and public-safe program pages.
-- What we have now: 257 programs; 300 eligibility rules; 0 document requirements; 1 application steps; 18 appeal records; 1 live forms and guides; Program verification mix: verified=170; source_listed=63; official_verified=24; Form verification mix: verified=1
-- Current staging or authored work: null staged programs; null staged forms; 0 ready rows unresolved; 507 live programs
+- What we have now: 258 programs; 300 eligibility rules; 0 document requirements; 1 application steps; 18 appeal records; 2 live forms and guides; Program verification mix: verified=170; source_listed=63; official_verified=25; Form verification mix: official_verified=1; verified=1
+- Current staging or authored work: 0 staged programs; 0 staged forms; 0 ready rows unresolved; 507 live programs
 - Current queue or control-plane state: Launch closure: 100% queue closure; Launch forms accounting: 7 cleared, 6 ready exact, 37 author-first fallback
 - Main gap: Programs and forms are structurally strong, but forms exact-state coverage is not finished and generic agency-page overpromotion still has to stay suppressed.
 
@@ -90,7 +90,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: partial
 - Final website needs: Explicit waiver identity, source-backed action paths, waitlist or interest-list visibility, and official linkage where applicable.
-- What we have now: 6 live waitlist rows; null staged waitlist rows; 0 ready rows unresolved; 8 typed live waiver rows; Waitlist launch exact states: florida; georgia; ohio; pennsylvania; illinois; texas
+- What we have now: 6 live waitlist rows; 0 staged waitlist rows; 0 ready rows unresolved; 8 typed live waiver rows; Waitlist launch exact states: florida; georgia; ohio; pennsylvania; illinois; texas
 - Current staging or authored work: Program waitlist source types: null=6
 - Current queue or control-plane state: Waiver closure: 16% state coverage / 100% queue closure; Waitlist closure: 100% identified / 100% followup queue closure
 - Main gap: Waitlists are materially shallower than the broader program layer, and waiver typing/state-level waiver resolution is still incomplete.
@@ -99,8 +99,8 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: strong_but_not_exhaustive
 - Final website needs: Truthful county office lookup, statewide DD/IDD intake paths, regional or district education routing, and complete trust metadata.
-- What we have now: 720 county offices; 116 state resource agencies; 174 regional education agencies; 649 school districts; Office verification mix: generated_county_fallback=657; source_listed=62; verified=1; State routing verification mix: source_listed=57; verified=33; official_verified=26
-- Current staging or authored work: null staged county offices; null staged DD routing rows; null staged regional education rows; null staged school district rows; 50/50 state coverage live; 0 ready rows unresolved; 47/50 regional state coverage; 0 ready rows unresolved
+- What we have now: 720 county offices; 120 state resource agencies; 174 regional education agencies; 649 school districts; Office verification mix: generated_county_fallback=651; source_listed=62; official_verified=6; verified=1; State routing verification mix: source_listed=57; verified=33; official_verified=30
+- Current staging or authored work: 14 staged county offices; 0 staged DD routing rows; 0 staged regional education rows; 0 staged school district rows; 50/50 state coverage live; 0 ready rows unresolved; 47/50 regional state coverage; 0 ready rows unresolved
 - Current queue or control-plane state: 50/50 state coverage live; 0 ready rows remain; 40 repair rows remain; 94% coverage / 100% queue closure
 - Main gap: This is one of the strongest public layers, but regional education is still 47/50 states and final repair-ledger cleanup remains.
 
@@ -108,7 +108,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: thin
 - Final website needs: Truthful anchor providers per state, named clinics/programs, contact and location evidence, and eventually deeper care discovery.
-- What we have now: 1 live providers; null staged providers; 1/50 provider states represented; 1/3050 counties with provider rows; Provider verification mix: verified=1; Launch provider standard: 0 launch-ready states; 10 pull-now planned; 42 authored targets; 1 discovery-only row
+- What we have now: 1 live providers; 0 staged providers; 1/50 provider states represented; 1/3050 counties with provider rows; Provider verification mix: verified=1; Launch provider standard: 0 launch-ready states; 10 pull-now planned; 42 authored targets; 1 discovery-only row
 - Current staging or authored work: 42 authored provider targets; 10 pull-now planned states; 1 discovery-only provider rows
 - Current queue or control-plane state: Runnable universe leftovers: 1; Completion disposition: queued
 - Main gap: This remains the clearest data hole for the final website. Provider rows exist in all states, but county depth and launch-ready anchor coverage are still far from finished.
@@ -117,7 +117,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: strong_but_not_exhaustive
 - Final website needs: Broad local support coverage, trustworthy contact paths, and richer intake/accessibility metadata.
-- What we have now: 1775 live nonprofits; null staged nonprofits; 7/50 nonprofit states represented; 604/3050 counties with nonprofit rows; Nonprofit verification mix: source_listed=1732; generated_county_fallback=42; verified=1
+- What we have now: 1775 live nonprofits; 0 staged nonprofits; 7/50 nonprofit states represented; 604/3050 counties with nonprofit rows; Nonprofit verification mix: source_listed=1732; generated_county_fallback=42; verified=1
 - Current queue or control-plane state: Completion disposition: queued (17 in scope); Runnable universe leftovers: 2
 - Main gap: Coverage breadth is strong, but nonprofit metadata remains sparse and there is no separate live competitive-help table yet.
 
@@ -125,7 +125,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: thin
 - Final website needs: Truth-safe advocate records, specialties, counties served, contact details, and public-safe legal/IEP support presentation.
-- What we have now: 137 live advocates; null staged advocates; 545/3050 counties with advocate coverage links; Advocate verification mix: source_listed=137
+- What we have now: 137 live advocates; 0 staged advocates; 545/3050 counties with advocate coverage links; Advocate verification mix: source_listed=137
 - Current queue or control-plane state: Completion disposition: explicitly_blocked; Blocker: advocate_directory_depth; Runnable universe leftovers: 2
 - Main gap: Advocate volume is high, but truth-safe local advocate depth is still explicitly blocked and directly affects final website confidence.
 
@@ -133,7 +133,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: missing_live
 - Final website needs: Live website rows for housing, goods/supplies, jobs/vocational, care/independent living, and transport/utilities/food.; Actionable service/contact evidence, not just taxonomy or topic tags.
-- What we have now: Live help_resources table: missing; staging_scraped_help_resources rows: null; Completion dispositions: housing=unknown, goods=unknown, jobs=unknown, care=unknown, transport=queued
+- What we have now: Live help_resources table: missing; staging_scraped_help_resources rows: 0; Completion dispositions: housing=unknown, goods=unknown, jobs=unknown, care=unknown, transport=queued
 - Current queue or control-plane state: Runnable universe leftovers: housing=0, goods=0, jobs=0, care=0, transport=0
 - Main gap: This is a major final-website gap: the site model wants these families, but the checked-in live DB has no dedicated public help-resource table and no staged rows.
 
@@ -165,7 +165,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: partial
 - Final website needs: Structured explainers for diagnosis, waivers, school rights, appeals, respite, transition, and related family journeys, with provenance-safe serving.
-- What we have now: 5 live knowledge articles; null staged knowledge articles; 2 promoted live; 54 blocked; 3 unresolved; provenance not yet launch-safe
+- What we have now: 5 live knowledge articles; 0 staged knowledge articles; 2 promoted live; 54 blocked; 3 unresolved; provenance not yet launch-safe
 - Current queue or control-plane state: Completion disposition: explicitly_blocked; Blocker: knowledge_content_depth
 - Main gap: Live article volume is still small, and launch planning still flags provenance-safe topic coverage as unresolved.
 
@@ -194,7 +194,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - The final website clearly wants housing, goods, jobs, care/independent living, transport/utilities/food, and related family-support surfaces.
 - The checked-in live DB currently has no `help_resources` table: missing.
-- `staging_scraped_help_resources` rows: null.
+- `staging_scraped_help_resources` rows: 0.
 - This means the competitive-help portion of a Findhelp-like experience is still a real product/data gap, not just a queue gap.
 
 ## Current Scrape and Acquisition Position

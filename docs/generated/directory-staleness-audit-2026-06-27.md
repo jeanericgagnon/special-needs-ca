@@ -2,7 +2,7 @@
 
 Generated: 2026-06-27
 
-DB audited: /Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/frontend/ca_disability_navigator.db
+DB audited: /Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db
 
 This audit uses the same freshness priority already baked into the directory foundation audit: `last_verified_at` -> `last_verified_date` -> `checked_at` -> `source_last_updated` -> `last_scraped_at`. Rows older than 425 days are treated as stale.
 

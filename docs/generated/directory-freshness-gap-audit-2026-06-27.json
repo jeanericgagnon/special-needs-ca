@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-06-27",
-  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/frontend/ca_disability_navigator.db",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
   "tables": [
     {
       "table": "resource_providers",

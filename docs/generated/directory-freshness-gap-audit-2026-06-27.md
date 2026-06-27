@@ -2,7 +2,7 @@
 
 Generated: 2026-06-27
 
-DB audited: /Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/frontend/ca_disability_navigator.db
+DB audited: /Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db
 
 This audit isolates public-eligible directory rows that still have no machine-usable freshness signal at all. It is narrower than the staleness audit: these rows are not old, they are timestamp-opaque.
 

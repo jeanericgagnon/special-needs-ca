@@ -43,58 +43,9 @@
     "currentModeledCompletenessStates": 0,
     "currentHighConfidenceStates": 0,
     "strictGoldStates": 0,
-    "publicSafeButBlockedStates": 0,
-    "blockedStateIds": [
-      "florida",
-      "new-york",
-      "pennsylvania",
-      "georgia",
-      "ohio",
-      "illinois",
-      "california",
-      "wyoming",
-      "hawaii",
-      "iowa",
-      "kansas",
-      "kentucky",
-      "missouri",
-      "nebraska",
-      "new-jersey",
-      "new-mexico",
-      "oregon",
-      "tennessee",
-      "texas",
-      "virginia",
-      "washington",
-      "wisconsin",
-      "alabama",
-      "arkansas",
-      "colorado",
-      "connecticut",
-      "delaware",
-      "indiana",
-      "louisiana",
-      "maryland",
-      "massachusetts",
-      "michigan",
-      "minnesota",
-      "mississippi",
-      "montana",
-      "nevada",
-      "north-carolina",
-      "north-dakota",
-      "oklahoma",
-      "rhode-island",
-      "south-carolina",
-      "south-dakota",
-      "utah",
-      "vermont",
-      "west-virginia",
-      "alaska",
-      "arizona",
-      "idaho",
-      "maine",
-      "new-hampshire"
+    "publicSafeButBlockedStates": 1,
+    "publicSafeButBlockedStateIds": [
+      "wyoming"
     ],
     "publicDataHeadline": "The repo has strong national program, routing, nonprofit, advocate, and condition foundations, but provider coverage, normalization, knowledge depth, and workflow/runtime layers are still thin or empty in the checked-in DB.",
     "criticalGaps": [
@@ -233,18 +184,18 @@
         "Program definitions, eligibility rules, document requirements, application steps, appeals, forms, and public-safe program pages."
       ],
       "currentHave": [
-        "257 programs",
+        "258 programs",
         "300 eligibility rules",
         "0 document requirements",
         "1 application steps",
         "18 appeal records",
-        "1 live forms and guides",
-        "Program verification mix: verified=170; source_listed=63; official_verified=24",
-        "Form verification mix: verified=1"
+        "2 live forms and guides",
+        "Program verification mix: verified=170; source_listed=63; official_verified=25",
+        "Form verification mix: official_verified=1; verified=1"
       ],
       "staging": [
-        "null staged programs",
-        "null staged forms",
+        "0 staged programs",
+        "0 staged forms",
         "0 ready rows unresolved; 507 live programs"
       ],
       "queue": [
@@ -262,7 +213,7 @@
       ],
       "currentHave": [
         "6 live waitlist rows",
-        "null staged waitlist rows",
+        "0 staged waitlist rows",
         "0 ready rows unresolved; 8 typed live waiver rows",
         "Waitlist launch exact states: florida; georgia; ohio; pennsylvania; illinois; texas"
       ],
@@ -284,17 +235,17 @@
       ],
       "currentHave": [
         "720 county offices",
-        "116 state resource agencies",
+        "120 state resource agencies",
         "174 regional education agencies",
         "649 school districts",
-        "Office verification mix: generated_county_fallback=657; source_listed=62; verified=1",
-        "State routing verification mix: source_listed=57; verified=33; official_verified=26"
+        "Office verification mix: generated_county_fallback=651; source_listed=62; official_verified=6; verified=1",
+        "State routing verification mix: source_listed=57; verified=33; official_verified=30"
       ],
       "staging": [
-        "null staged county offices",
-        "null staged DD routing rows",
-        "null staged regional education rows",
-        "null staged school district rows",
+        "14 staged county offices",
+        "0 staged DD routing rows",
+        "0 staged regional education rows",
+        "0 staged school district rows",
         "50/50 state coverage live; 0 ready rows unresolved",
         "47/50 regional state coverage; 0 ready rows unresolved"
       ],
@@ -313,7 +264,7 @@
       ],
       "currentHave": [
         "1 live providers",
-        "null staged providers",
+        "0 staged providers",
         "1/50 provider states represented",
         "1/3050 counties with provider rows",
         "Provider verification mix: verified=1",
@@ -339,7 +290,7 @@
       ],
       "currentHave": [
         "1775 live nonprofits",
-        "null staged nonprofits",
+        "0 staged nonprofits",
         "7/50 nonprofit states represented",
         "604/3050 counties with nonprofit rows",
         "Nonprofit verification mix: source_listed=1732; generated_county_fallback=42; verified=1"
@@ -360,7 +311,7 @@
       ],
       "currentHave": [
         "137 live advocates",
-        "null staged advocates",
+        "0 staged advocates",
         "545/3050 counties with advocate coverage links",
         "Advocate verification mix: source_listed=137"
       ],
@@ -382,7 +333,7 @@
       ],
       "currentHave": [
         "Live help_resources table: missing",
-        "staging_scraped_help_resources rows: null",
+        "staging_scraped_help_resources rows: 0",
         "Completion dispositions: housing=unknown, goods=unknown, jobs=unknown, care=unknown, transport=queued"
       ],
       "staging": [],
@@ -463,7 +414,7 @@
       ],
       "currentHave": [
         "5 live knowledge articles",
-        "null staged knowledge articles",
+        "0 staged knowledge articles",
         "2 promoted live; 54 blocked; 3 unresolved; provenance not yet launch-safe"
       ],
       "staging": [],
@@ -769,7 +720,7 @@
   },
   "immediateTruths": [
     "50/50 modeled completeness does not mean all information categories are deeply built out.",
-    "49/50 strict gold means one state is still blocked even on the stricter public-truth bar.",
+    "0/50 strict-gold states means 1 state still sits in the public-safe-but-blocked lane on the stricter truth registry.",
     "Provider coverage and knowledge-content depth are still the largest visible product information gaps.",
     "Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.",
     "Several workflow and support layers are still mostly empty despite having schema support."

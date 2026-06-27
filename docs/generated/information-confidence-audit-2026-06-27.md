@@ -19,7 +19,7 @@ Generated: 2026-06-27
 
 - This audit measures direct-verification strength for core programs, required forms, and education coverage, plus local directory truth signals for providers, nonprofits, and advocates.
 - It still does not prove full public-safe rendering, sitemap/index eligibility, or strict gold status by itself.
-- Truth registry snapshot: 0 strict-gold states, 0 public-safe-but-blocked states, 0 registry mismatches.
+- Truth registry snapshot: 0 strict-gold states, 1 public-safe-but-blocked states, 0 registry mismatches.
 - Advocate truth snapshot: 0 state still loses county advocate coverage after truth gating (0 counties, 0 synthetic-pattern rows quarantined).
 
 ## State Ledger

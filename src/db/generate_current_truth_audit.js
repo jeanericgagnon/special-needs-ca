@@ -65,7 +65,6 @@ const WEIGHTED_STATUS = {
   scraped_unverified: 0.25,
   unverified: 0.25,
 };
-const FULLY_VERIFIED_STATUSES = new Set(['official_verified', 'verified', 'human_verified']);
 const PUBLIC_ELIGIBLE_STATUSES = new Set(['official_verified', 'verified', 'human_verified', 'source_listed']);
 const SYNTHETIC_SOURCE_HOST_PATTERNS = [
   /^www\.advocate\./,
@@ -281,7 +280,7 @@ function buildRouteIntegrityAudits() {
       'counties/[state]/[county]/page.tsx',
       countyRootContent,
       [
-        { label: 'shared directory foundation panel is used', pattern: /DirectoryFoundationPanel/ },
+        { label: 'redirect shim sends county route to benefits county surface', pattern: /redirect\(`\/benefits\/\$\{state\}\/\$\{county\}`\)/ },
       ],
       [
         { label: 'legacy vetted wording', pattern: /\bVetted\b/i },

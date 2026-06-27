@@ -57,7 +57,7 @@
     ],
     "truthRegistrySnapshot": {
       "strictGoldStates": 0,
-      "publicSafeButBlockedStates": 0,
+      "publicSafeButBlockedStates": 1,
       "legacyGoldStates": 0,
       "registryMismatchStates": 0
     },

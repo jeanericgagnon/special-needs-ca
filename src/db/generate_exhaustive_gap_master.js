@@ -221,7 +221,7 @@ const payload = {
     strictGoldStates: truthSummary.strictGoldStates || 0,
     publicSafeButBlockedStates: truthSummary.publicSafeButBlockedStates || 0,
     blockedStateIds: blockedStates.map((state) => state.id),
-    coreConclusion: 'The repo is broadly complete on its current modeled 50-state public-truth bar, but it is not yet exhaustive across all information types the product model implies.',
+    coreConclusion: 'The repo has broad launch-safe state coverage, but 0/50 states currently satisfy the stricter modeled-completeness audit and the product is still far from exhaustive across all information types it implies.',
   },
   summary: {
     nationalGapCount: nationalGapMatrix.length,
@@ -238,7 +238,9 @@ const payload = {
   fullGapLayers,
   immediateTruths: [
     '50/50 modeled completeness does not mean all information categories are deeply built out.',
-    '49/50 strict gold means one state is still blocked even on the stricter public-truth bar.',
+    truthSummary.publicSafeButBlockedStates
+      ? `${truthSummary.strictGoldStates || 0}/50 strict-gold states means ${truthSummary.publicSafeButBlockedStates} state still sits in the public-safe-but-blocked lane on the stricter truth registry.`
+      : `${truthSummary.strictGoldStates || 0}/50 strict-gold states means the stricter truth registry still has unresolved blockers beyond launch readiness.`,
     'Provider coverage and knowledge-content depth are still the largest visible product information gaps.',
     'Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.',
     'Several workflow and support layers are still mostly empty despite having schema support.',

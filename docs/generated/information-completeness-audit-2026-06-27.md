@@ -21,7 +21,7 @@ Generated: 2026-06-27
 
 - This audit measures modeled completeness for config, core program guides, required forms, DD routing, county offices, education coverage, and public-safe local directory presence across providers, nonprofits, and advocates.
 - It still does not prove sitemap/index eligibility or strict gold status on its own.
-- Truth registry snapshot: 0 strict-gold states, 0 public-safe-but-blocked states, 0 registry mismatches.
+- Truth registry snapshot: 0 strict-gold states, 1 public-safe-but-blocked states, 0 registry mismatches.
 - Advocate truth snapshot: 0 state still loses county advocate coverage after truth gating (0 counties, 0 synthetic-pattern rows quarantined).
 
 ## Top Blockers

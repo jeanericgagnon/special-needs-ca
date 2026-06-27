@@ -77,10 +77,6 @@ function joinList(values) {
   return values.filter(Boolean).join('; ');
 }
 
-function normalizeGapLabel(label) {
-  return String(label || '').replace(/_/g, ' ');
-}
-
 function markdownTable(headers, rows) {
   return [
     `| ${headers.join(' | ')} |`,
@@ -89,29 +85,13 @@ function markdownTable(headers, rows) {
   ].join('\n');
 }
 
-function statusRank(status) {
-  const order = {
-    strong: 0,
-    strong_but_not_exhaustive: 1,
-    partial: 2,
-    thin: 3,
-    missing_live: 4,
-    demo_only: 5,
-    modeled_only: 6,
-  };
-  return order[status] ?? 999;
-}
-
-function worstStatus(statuses) {
-  return [...statuses].sort((a, b) => statusRank(a) - statusRank(b)).at(-1) || 'partial';
-}
-
 const informationInventoryPath = latestGeneratedJson('information-inventory-');
 const fullGapPath = latestGeneratedJson('full-information-gap-audit-');
 const launchPlanPath = latestGeneratedJson('launch-critical-data-acquisition-plan-');
 const exhaustiveGapPath = latestGeneratedJson('exhaustive-gap-master-');
 const scrapeUniverseQueuePath = latestGeneratedJson('scrape-target-universe-queue-');
 const completionPlanPath = latestGeneratedJson('source-acquisition-completion-plan-');
+const truthRegistryPath = latestGeneratedJson('truth-registry-');
 const californiaGradeAuditPath = path.join(repoRoot, 'data', 'generated', 'all_state_california_grade_audit_v3.json');
 const californiaGradeQueuePath = path.join(repoRoot, 'data', 'generated', 'all_state_priority_queue_v3.jsonl');
 const partialLaunchPolicyPath = path.join(repoRoot, 'data', 'generated', 'launch_partial_state_policy_v1.json');
@@ -121,13 +101,19 @@ const fullGap = readJson(fullGapPath);
 const launchPlan = readJson(launchPlanPath);
 const exhaustiveGap = readJson(exhaustiveGapPath);
 const scrapeUniverseQueue = readJson(scrapeUniverseQueuePath);
-const completionPlan = readJson(completionPlanPath);
+const truthRegistry = readJson(truthRegistryPath);
 const californiaGradeAudit = fs.existsSync(californiaGradeAuditPath) ? readJson(californiaGradeAuditPath) : null;
 const californiaGradeQueue = fs.existsSync(californiaGradeQueuePath)
   ? fs.readFileSync(californiaGradeQueuePath, 'utf8').split('\n').filter(Boolean).map((line) => JSON.parse(line))
   : [];
 const partialLaunchPolicy = fs.existsSync(partialLaunchPolicyPath) ? readJson(partialLaunchPolicyPath) : null;
 const executiveTruth = exhaustiveGap.executiveTruth || {};
+const publicSafeButBlockedStateIds = Array.isArray(truthRegistry.topBlockedStates)
+  ? truthRegistry.topBlockedStates
+      .filter((row) => row?.status === 'public_safe_but_blocked')
+      .map((row) => row.id)
+  : [];
+const publicSafeButBlockedStateCount = truthRegistry.summary?.publicSafeButBlockedStates || 0;
 
 const launchTruth = californiaGradeAudit
   ? {
@@ -295,11 +281,9 @@ const accessibilitySignals = {
   },
 };
 
-const fullGapLayerById = new Map((fullGap.layers || []).map((layer) => [layer.id, layer]));
 const completionAuditById = new Map((fullGap.completionAudit?.families || []).map((family) => [family.id, family]));
 const launchClosureByFamily = new Map((launchPlan.launchClosureTable || []).map((row) => [row.family, row]));
 const scrapeByFamily = scrapeUniverseQueue.summary?.combinedByGapFamily || {};
-const scrapeByStatus = scrapeUniverseQueue.summary?.combinedByStatus || {};
 const scrapeRemainingRows = scrapeUniverseQueue.combinedReadyRows || [];
 
 const routeSurfaces = [
@@ -810,8 +794,8 @@ const payload = {
     currentModeledCompletenessStates: executiveTruth.currentModeledCompletenessStates,
     currentHighConfidenceStates: executiveTruth.currentHighConfidenceStates,
     strictGoldStates: executiveTruth.strictGoldStates,
-    publicSafeButBlockedStates: executiveTruth.publicSafeButBlockedStates,
-    blockedStateIds: executiveTruth.blockedStateIds || [],
+    publicSafeButBlockedStates: publicSafeButBlockedStateCount,
+    publicSafeButBlockedStateIds,
     publicDataHeadline: fullGap.conclusion?.reason || fullGap.conclusion?.headline || fullGap.conclusion || 'Programs and routing are strong; providers, knowledge, normalization, and runtime layers remain the main gaps.',
     criticalGaps,
   },
@@ -847,7 +831,7 @@ const mdLines = [
   `- Modeled 50-state completeness: ${payload.executiveSummary.currentModeledCompletenessStates}/50`,
   `- High-confidence states on the current audit bar: ${payload.executiveSummary.currentHighConfidenceStates}/50`,
   `- Strict-gold states: ${payload.executiveSummary.strictGoldStates}/50`,
-  `- Public-safe but still blocked states: ${payload.executiveSummary.publicSafeButBlockedStates}/50 (${payload.executiveSummary.blockedStateIds.join(', ')})`,
+  `- Public-safe but still blocked states: ${payload.executiveSummary.publicSafeButBlockedStates}/50 (${payload.executiveSummary.publicSafeButBlockedStateIds.join(', ') || '[]'})`,
   `- Public data headline: ${payload.executiveSummary.publicDataHeadline}`,
   '',
   '### Most Important Truths',

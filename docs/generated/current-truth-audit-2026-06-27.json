@@ -1,8 +1,8 @@
 {
   "generatedAt": "2026-06-27",
   "product": {
-    "homepageTitle": "Ablefull — 50-State Disability Benefits Guide",
-    "homepageClaims50States": true,
+    "homepageTitle": "Ablefull — Source-Backed Disability Benefits & Family Action Guides",
+    "homepageClaims50States": false,
     "dashboardLoads": [
       "matched programs",
       "county details",
@@ -37,34 +37,23 @@
       },
       {
         "name": "counties/[state]/[county]/page.tsx",
-        "passes": false,
-        "missingRequired": [
-          "shared directory foundation panel is used"
-        ],
+        "passes": true,
+        "missingRequired": [],
         "foundBanned": []
       }
     ],
-    "routeIntegrityFailures": [
-      {
-        "scope": "counties/[state]/[county]/page.tsx",
-        "missingRequired": [
-          "shared directory foundation panel is used"
-        ],
-        "foundBanned": []
-      }
-    ]
+    "routeIntegrityFailures": []
   },
   "decision": {
     "californiaIsBestBaseline": false,
     "californiaIsFinishedGoldStandard": false,
     "rationale": [
-      "California composite readiness score: 49.3%",
+      "California composite readiness score: 49.6%",
       "Best non-California peer: Florida at 70%",
       "California remains the strongest trust baseline, but not a finished gold standard because one or more truth, trust, or completeness blockers still remain."
     ]
   },
   "californiaFindings": [
-    "California public truth is still blocked by route-level integrity or synthetic-content failures.",
     "California education layer still includes 65 source-listed records.",
     "California nonprofit layer still includes 35 source-listed records.",
     "California is missing 11 core waitlist entries: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba."
@@ -204,10 +193,6 @@
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "localOffices",
               "message": "53 rows still use fallback data origins."
@@ -386,10 +371,6 @@
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "localOffices",
               "message": "50 rows still use fallback data origins."
@@ -572,10 +553,6 @@
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "localOffices",
               "message": "59 rows still use fallback data origins."
@@ -762,10 +739,6 @@
           "goldEligible": false,
           "blockers": [
             {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
-            {
               "category": "localOffices",
               "message": "148 rows still use fallback data origins."
             },
@@ -946,10 +919,6 @@
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "localOffices",
               "message": "81 rows still use fallback data origins."
@@ -1135,10 +1104,6 @@
           "goldEligible": false,
           "blockers": [
             {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
-            {
               "category": "localOffices",
               "message": "92 rows still use fallback data origins."
             },
@@ -1218,9 +1183,9 @@
         "educationAgencyLabel": "Special Education Local Plan Areas (SELPAs)",
         "records": {
           "ddRouting": {
-            "total": 3,
+            "total": 7,
             "fallback": 0,
-            "verified": 3,
+            "verified": 7,
             "source_listed": 0,
             "manual_review_required": 0,
             "null_status": 0,
@@ -1230,14 +1195,14 @@
           },
           "localOffices": {
             "total": 175,
-            "fallback": 174,
-            "verified": 1,
+            "fallback": 168,
+            "verified": 7,
             "source_listed": 0,
             "manual_review_required": 0,
             "null_status": 0,
-            "unverified": 174,
+            "unverified": 168,
             "missingPublicSignal": 0,
-            "weightedDepth": 0.6
+            "weightedDepth": 4
           },
           "education": {
             "total": 143,
@@ -1323,12 +1288,12 @@
         },
         "scores": {
           "ddRouting": 65,
-          "localOffices": 55.9,
+          "localOffices": 57.4,
           "education": 43.8,
           "nonprofits": 66.3,
           "advocates": 0,
           "waitlists": 65,
-          "compositeReadiness": 49.3
+          "compositeReadiness": 49.6
         },
         "verdict": {
           "publicSafe": false,
@@ -1336,12 +1301,8 @@
           "goldEligible": false,
           "blockers": [
             {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
-            {
               "category": "localOffices",
-              "message": "174 rows still use fallback data origins."
+              "message": "168 rows still use fallback data origins."
             },
             {
               "category": "education",
@@ -1365,7 +1326,7 @@
             },
             {
               "category": "localOffices",
-              "message": "174 office rows are still unverified."
+              "message": "168 office rows are still unverified."
             },
             {
               "category": "education",
@@ -1502,14 +1463,10 @@
           "compositeReadiness": 45
         },
         "verdict": {
-          "publicSafe": false,
-          "indexSafe": false,
+          "publicSafe": true,
+          "indexSafe": true,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: wy-dd-waiver, wy-dd-self-direction, wy-medicaid."
@@ -1641,14 +1598,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: hi-dd-waiver, hi-dd-self-direction, hi-medicaid."
@@ -1784,14 +1737,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ia-dd-waiver, ia-dd-self-direction, ia-medicaid."
@@ -1927,14 +1876,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ks-dd-waiver, ks-dd-self-direction, ks-medicaid."
@@ -2070,14 +2015,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ky-dd-waiver, ky-dd-self-direction, ky-medicaid."
@@ -2213,14 +2154,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: mo-dd-waiver, mo-dd-self-direction, mo-medicaid."
@@ -2356,14 +2293,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ne-dd-waiver, ne-dd-self-direction, ne-medicaid."
@@ -2499,14 +2432,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: nj-dd-waiver, nj-dd-self-direction, nj-medicaid."
@@ -2642,14 +2571,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: nm-dd-waiver, nm-dd-self-direction, nm-medicaid."
@@ -2785,14 +2710,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: or-dd-waiver, or-dd-self-direction, or-medicaid."
@@ -2928,14 +2849,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: tn-dd-waiver, tn-dd-self-direction, tn-medicaid."
@@ -3087,14 +3004,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: tx-hcs, tx-class, tx-txhml, tx-mdcp, tx-eci, tx-tea-sped."
@@ -3230,14 +3143,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: va-dd-waiver, va-dd-self-direction, va-medicaid."
@@ -3373,14 +3282,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: wa-dd-waiver, wa-dd-self-direction, wa-medicaid."
@@ -3516,14 +3421,10 @@
           "compositeReadiness": 39.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: wi-dd-waiver, wi-dd-self-direction, wi-medicaid."
@@ -3659,14 +3560,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: al-dd-waiver, al-dd-self-direction, al-medicaid."
@@ -3802,14 +3699,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ar-dd-waiver, ar-dd-self-direction, ar-medicaid."
@@ -3945,14 +3838,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: co-dd-waiver, co-dd-self-direction, co-medicaid."
@@ -4088,14 +3977,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ct-dd-waiver, ct-dd-self-direction, ct-medicaid."
@@ -4231,14 +4116,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: de-dd-waiver, de-dd-self-direction, de-medicaid."
@@ -4374,14 +4255,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: in-dd-waiver, in-dd-self-direction, in-medicaid."
@@ -4517,14 +4394,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: la-dd-waiver, la-dd-self-direction, la-medicaid."
@@ -4660,14 +4533,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: md-dd-waiver, md-dd-self-direction, md-medicaid."
@@ -4803,14 +4672,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ma-dd-waiver, ma-dd-self-direction, ma-medicaid."
@@ -4946,14 +4811,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: mi-dd-waiver, mi-dd-self-direction, mi-medicaid."
@@ -5089,14 +4950,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: mn-dd-waiver, mn-dd-self-direction, mn-medicaid."
@@ -5232,14 +5089,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ms-dd-waiver, ms-dd-self-direction, ms-medicaid."
@@ -5375,14 +5228,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: mt-dd-waiver, mt-dd-self-direction, mt-medicaid."
@@ -5518,14 +5367,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: nv-dd-waiver, nv-dd-self-direction, nv-medicaid."
@@ -5661,14 +5506,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: nc-dd-waiver, nc-dd-self-direction, nc-medicaid."
@@ -5804,14 +5645,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: nd-dd-waiver, nd-dd-self-direction, nd-medicaid."
@@ -5947,14 +5784,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ok-dd-waiver, ok-dd-self-direction, ok-medicaid."
@@ -6090,14 +5923,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ri-dd-waiver, ri-dd-self-direction, ri-medicaid."
@@ -6233,14 +6062,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: sc-dd-waiver, sc-dd-self-direction, sc-medicaid."
@@ -6376,14 +6201,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: sd-dd-waiver, sd-dd-self-direction, sd-medicaid."
@@ -6519,14 +6340,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ut-dd-waiver, ut-dd-self-direction, ut-medicaid."
@@ -6662,14 +6479,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: vt-dd-waiver, vt-dd-self-direction, vt-medicaid."
@@ -6805,14 +6618,10 @@
           "compositeReadiness": 31.7
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: wv-dd-waiver, wv-dd-self-direction, wv-medicaid."
@@ -6948,14 +6757,10 @@
           "compositeReadiness": 24.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: ak-dd-waiver, ak-dd-self-direction, ak-medicaid."
@@ -7091,14 +6896,10 @@
           "compositeReadiness": 24.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: az-dd-waiver, az-dd-self-direction, az-medicaid."
@@ -7234,14 +7035,10 @@
           "compositeReadiness": 24.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: id-dd-waiver, id-dd-self-direction, id-medicaid."
@@ -7377,14 +7174,10 @@
           "compositeReadiness": 24.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: me-dd-waiver, me-dd-self-direction, me-medicaid."
@@ -7520,14 +7313,10 @@
           "compositeReadiness": 24.2
         },
         "verdict": {
-          "publicSafe": false,
+          "publicSafe": true,
           "indexSafe": false,
           "goldEligible": false,
           "blockers": [
-            {
-              "category": "publicTruth",
-              "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-            },
             {
               "category": "waitlists",
               "message": "Missing core waitlist items: nh-dd-waiver, nh-dd-self-direction, nh-medicaid."
@@ -7666,14 +7455,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: al-dd-waiver, al-dd-self-direction, al-medicaid."
@@ -7809,14 +7594,10 @@
         "compositeReadiness": 24.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ak-dd-waiver, ak-dd-self-direction, ak-medicaid."
@@ -7952,14 +7733,10 @@
         "compositeReadiness": 24.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: az-dd-waiver, az-dd-self-direction, az-medicaid."
@@ -8095,14 +7872,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ar-dd-waiver, ar-dd-self-direction, ar-medicaid."
@@ -8147,9 +7920,9 @@
       "educationAgencyLabel": "Special Education Local Plan Areas (SELPAs)",
       "records": {
         "ddRouting": {
-          "total": 3,
+          "total": 7,
           "fallback": 0,
-          "verified": 3,
+          "verified": 7,
           "source_listed": 0,
           "manual_review_required": 0,
           "null_status": 0,
@@ -8159,14 +7932,14 @@
         },
         "localOffices": {
           "total": 175,
-          "fallback": 174,
-          "verified": 1,
+          "fallback": 168,
+          "verified": 7,
           "source_listed": 0,
           "manual_review_required": 0,
           "null_status": 0,
-          "unverified": 174,
+          "unverified": 168,
           "missingPublicSignal": 0,
-          "weightedDepth": 0.6
+          "weightedDepth": 4
         },
         "education": {
           "total": 143,
@@ -8252,12 +8025,12 @@
       },
       "scores": {
         "ddRouting": 65,
-        "localOffices": 55.9,
+        "localOffices": 57.4,
         "education": 43.8,
         "nonprofits": 66.3,
         "advocates": 0,
         "waitlists": 65,
-        "compositeReadiness": 49.3
+        "compositeReadiness": 49.6
       },
       "verdict": {
         "publicSafe": false,
@@ -8265,12 +8038,8 @@
         "goldEligible": false,
         "blockers": [
           {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
-          {
             "category": "localOffices",
-            "message": "174 rows still use fallback data origins."
+            "message": "168 rows still use fallback data origins."
           },
           {
             "category": "education",
@@ -8294,7 +8063,7 @@
           },
           {
             "category": "localOffices",
-            "message": "174 office rows are still unverified."
+            "message": "168 office rows are still unverified."
           },
           {
             "category": "education",
@@ -8431,14 +8200,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: co-dd-waiver, co-dd-self-direction, co-medicaid."
@@ -8574,14 +8339,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ct-dd-waiver, ct-dd-self-direction, ct-medicaid."
@@ -8717,14 +8478,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: de-dd-waiver, de-dd-self-direction, de-medicaid."
@@ -8877,10 +8634,6 @@
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "localOffices",
             "message": "53 rows still use fallback data origins."
@@ -9059,10 +8812,6 @@
         "goldEligible": false,
         "blockers": [
           {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
-          {
             "category": "localOffices",
             "message": "148 rows still use fallback data origins."
           },
@@ -9233,14 +8982,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: hi-dd-waiver, hi-dd-self-direction, hi-medicaid."
@@ -9376,14 +9121,10 @@
         "compositeReadiness": 24.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: id-dd-waiver, id-dd-self-direction, id-medicaid."
@@ -9532,10 +9273,6 @@
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "localOffices",
             "message": "92 rows still use fallback data origins."
@@ -9707,14 +9444,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: in-dd-waiver, in-dd-self-direction, in-medicaid."
@@ -9850,14 +9583,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ia-dd-waiver, ia-dd-self-direction, ia-medicaid."
@@ -9993,14 +9722,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ks-dd-waiver, ks-dd-self-direction, ks-medicaid."
@@ -10136,14 +9861,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ky-dd-waiver, ky-dd-self-direction, ky-medicaid."
@@ -10279,14 +10000,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: la-dd-waiver, la-dd-self-direction, la-medicaid."
@@ -10422,14 +10139,10 @@
         "compositeReadiness": 24.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: me-dd-waiver, me-dd-self-direction, me-medicaid."
@@ -10565,14 +10278,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: md-dd-waiver, md-dd-self-direction, md-medicaid."
@@ -10708,14 +10417,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ma-dd-waiver, ma-dd-self-direction, ma-medicaid."
@@ -10851,14 +10556,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: mi-dd-waiver, mi-dd-self-direction, mi-medicaid."
@@ -10994,14 +10695,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: mn-dd-waiver, mn-dd-self-direction, mn-medicaid."
@@ -11137,14 +10834,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ms-dd-waiver, ms-dd-self-direction, ms-medicaid."
@@ -11280,14 +10973,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: mo-dd-waiver, mo-dd-self-direction, mo-medicaid."
@@ -11423,14 +11112,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: mt-dd-waiver, mt-dd-self-direction, mt-medicaid."
@@ -11566,14 +11251,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ne-dd-waiver, ne-dd-self-direction, ne-medicaid."
@@ -11709,14 +11390,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: nv-dd-waiver, nv-dd-self-direction, nv-medicaid."
@@ -11852,14 +11529,10 @@
         "compositeReadiness": 24.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: nh-dd-waiver, nh-dd-self-direction, nh-medicaid."
@@ -11995,14 +11668,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: nj-dd-waiver, nj-dd-self-direction, nj-medicaid."
@@ -12138,14 +11807,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: nm-dd-waiver, nm-dd-self-direction, nm-medicaid."
@@ -12296,10 +11961,6 @@
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "localOffices",
             "message": "50 rows still use fallback data origins."
@@ -12471,14 +12132,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: nc-dd-waiver, nc-dd-self-direction, nc-medicaid."
@@ -12614,14 +12271,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: nd-dd-waiver, nd-dd-self-direction, nd-medicaid."
@@ -12767,10 +12420,6 @@
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "localOffices",
             "message": "81 rows still use fallback data origins."
@@ -12942,14 +12591,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ok-dd-waiver, ok-dd-self-direction, ok-medicaid."
@@ -13085,14 +12730,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: or-dd-waiver, or-dd-self-direction, or-medicaid."
@@ -13239,10 +12880,6 @@
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "localOffices",
             "message": "59 rows still use fallback data origins."
@@ -13414,14 +13051,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ri-dd-waiver, ri-dd-self-direction, ri-medicaid."
@@ -13557,14 +13190,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: sc-dd-waiver, sc-dd-self-direction, sc-medicaid."
@@ -13700,14 +13329,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: sd-dd-waiver, sd-dd-self-direction, sd-medicaid."
@@ -13843,14 +13468,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: tn-dd-waiver, tn-dd-self-direction, tn-medicaid."
@@ -14002,14 +13623,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: tx-hcs, tx-class, tx-txhml, tx-mdcp, tx-eci, tx-tea-sped."
@@ -14145,14 +13762,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: ut-dd-waiver, ut-dd-self-direction, ut-medicaid."
@@ -14288,14 +13901,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: vt-dd-waiver, vt-dd-self-direction, vt-medicaid."
@@ -14431,14 +14040,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: va-dd-waiver, va-dd-self-direction, va-medicaid."
@@ -14574,14 +14179,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: wa-dd-waiver, wa-dd-self-direction, wa-medicaid."
@@ -14717,14 +14318,10 @@
         "compositeReadiness": 31.7
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: wv-dd-waiver, wv-dd-self-direction, wv-medicaid."
@@ -14860,14 +14457,10 @@
         "compositeReadiness": 39.2
       },
       "verdict": {
-        "publicSafe": false,
+        "publicSafe": true,
         "indexSafe": false,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: wi-dd-waiver, wi-dd-self-direction, wi-medicaid."
@@ -15003,14 +14596,10 @@
         "compositeReadiness": 45
       },
       "verdict": {
-        "publicSafe": false,
-        "indexSafe": false,
+        "publicSafe": true,
+        "indexSafe": true,
         "goldEligible": false,
         "blockers": [
-          {
-            "category": "publicTruth",
-            "message": "Route integrity audit failed for: counties/[state]/[county]/page.tsx."
-          },
           {
             "category": "waitlists",
             "message": "Missing core waitlist items: wy-dd-waiver, wy-dd-self-direction, wy-medicaid."
