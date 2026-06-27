@@ -72,7 +72,7 @@ export const stateConfigs: Record<string, StateConfig> = {
       {
         name: 'Family Resource Centers Network of California (FRCNCA)',
         url: 'https://frcnca.org',
-        description: 'Supports families of children with special needs across California.'
+        description: 'Supports families of children with disabilities across California.'
       }
     ],
     corePrograms: [
@@ -125,19 +125,19 @@ export const stateConfigs: Record<string, StateConfig> = {
     faqs: [
       {
         q: 'How do I start the Regional Center intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access Lanterman Act services for ${diagnosis} in ${county} County, you must request an intake assessment from ${rc}. Under California Welfare & Institutions Code § 4648, the center must complete the initial intake within 15 days of your request and determine eligibility within 120 days. If eligible, your child will receive a designated service coordinator and access to funded respite care, social recreation slots, and behavior services.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `To start a Lanterman Act intake review for ${diagnosis} in ${county} County, request an intake assessment from ${rc}. Under California Welfare & Institutions Code § 4648, the center generally completes the initial intake within 15 days of your request and determines eligibility within 120 days, subject to the current rules and any documented exceptions. If the center finds your child eligible, it can assign a service coordinator and discuss available respite, social recreation, and behavior-service options.`
       },
       {
         q: 'Does my child qualify for paid caregiver hours (IHSS) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, if your child's ${diagnosis} results in severe cognitive or behavioral limitations—such as wandering, self-injury, or inability to perceive danger—they may qualify for IHSS Protective Supervision. This California program can authorize substantial supervision hours for approved parent providers. In ${county} County, actual approved hours and monthly pay depend on the county assessment and current provider pay rates.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Your child may qualify for IHSS Protective Supervision if ${diagnosis} causes severe cognitive or behavioral safety risks such as wandering, self-injury, or inability to recognize danger. The county may authorize supervision hours and a parent or relative provider arrangement when the record supports that level of need and the current provider rules are met. In ${county} County, actual approved hours and monthly pay depend on the county assessment and current local rate estimates.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `If you suspect your child has ${diagnosis} and requires special education, submit a formal assessment request in writing to ${sd}. Under California Education Code § 56321, the district has exactly 15 calendar days from receipt of your letter to provide an Assessment Plan. Once you sign and return that plan, they have 60 calendar days to complete all evaluations and hold the initial IEP meeting. Do not accept informal academic interventions as a substitute for a formal IEP evaluation.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `If you suspect your child has ${diagnosis} and requires special education, submit a formal assessment request in writing to ${sd}. Under California Education Code § 56321, the district generally has 15 calendar days from receipt of your letter to provide an Assessment Plan, subject to the current statutory exceptions. Once you sign and return that plan, the district generally has 60 calendar days to complete the evaluations and hold the initial IEP meeting. Do not assume informal academic interventions replace a formal IEP evaluation request.`
       },
       {
         q: 'Can we get Medi-Cal and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Absolutely. California offers the Regional Center Institutional Deeming waiver (also known as the HCBS DD Waiver) which completely bypasses parental income and asset limits. If your child is eligible for ${rc}, they can qualify for full-scope Medi-Cal based solely on their own income (which is $0), regardless of how much you earn. This covers co-pays, specialized pediatric therapies, and adaptive equipment at no cost.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `California offers an Institutional Deeming pathway through Regional Center-linked waiver eligibility. If your child is found eligible through ${rc}, the state may evaluate Medi-Cal financial eligibility using the child's own income and assets instead of parental income. When the current published criteria are met, that pathway may help open broader Medi-Cal coverage, co-pay relief, specialized pediatric therapies, and adaptive equipment.`
       }
     ]
   },
@@ -224,19 +224,19 @@ export const stateConfigs: Record<string, StateConfig> = {
     faqs: [
       {
         q: 'How do I start the LIDDA intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access local developmental services for families in ${county} County, you must contact ${rc}. They will perform assessments and place your child on the HCS or TxHmL interest lists. Note that waitlists for these programs can be extremely long (often 10-15+ years), so it is critical to register as early as possible.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `To start local developmental-services intake for families in ${county} County, begin with ${rc}. That office can explain the current assessment process and whether your child should be added to the HCS or TxHmL interest lists. Publicly reported wait times for these programs can be very long, so families often ask about intake as early as they can.`
       },
       {
         q: 'Does my child qualify for paid caregiver hours (MDCP) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through Texas Medicaid waiver programs like MDCP (Medically Dependent Children's Program) or CLASS, you can select the Consumer Directed Services (CDS) option. This allows you to hire caregivers, including family members in some programs, to provide personal care services. Pay rates depend on the program, authorization, and provider arrangement, so confirm the current amount with the program administrator.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Texas Medicaid waiver programs such as MDCP (Medically Dependent Children's Program) or CLASS may allow some families to use the Consumer Directed Services (CDS) option when the child meets the current program rules. That option can allow you to hire caregivers, including family members in some programs, to provide personal care services. Pay rates depend on the program, authorization, and provider arrangement, so confirm the current amount with the program administrator.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your evaluation request in writing to ${sd}. Under Texas Education Code § 29.004, the district has 15 school days to provide a consent form. Once consent is signed, they have 45 school days to complete the Full and Individual Initial Evaluation (FIIE) and 30 calendar days after the report to hold the ARD/IEP meeting.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your evaluation request in writing to ${sd}. Under Texas Education Code § 29.004, the district generally has 15 school days to provide a consent form. Once consent is signed, the district generally has 45 school days to complete the Full and Individual Initial Evaluation (FIIE) and 30 calendar days after the report to hold the ARD/IEP meeting, subject to the current rule exceptions.`
       },
       {
         q: 'Can we get Texas Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. By enrolling in a Texas Medicaid waiver program (such as HCS, CLASS, or MDCP), parental income and assets are completely bypassed. Eligibility is determined solely based on the child's financial resources, which ensures access to full Medicaid coverage, pediatric therapies, and private duty nursing.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Texas Medicaid waiver pathways such as HCS, CLASS, or MDCP may allow the state to review the child's financial eligibility separately from parental income and assets when the official waiver rules are met. Confirm the current financial, clinical, and program requirements before relying on coverage for therapies, nursing, or other services.`
       }
     ]
   },
@@ -324,19 +324,19 @@ export const stateConfigs: Record<string, StateConfig> = {
     faqs: [
       {
         q: 'How do I start the APD intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access iBudget waiver services for ${diagnosis} in ${county} County, you must request an intake assessment from ${rc}. Under Florida Chapter 393, the Agency for Persons with Disabilities (APD) must process applications and determine eligibility within 45 days. If eligible, your child will be placed on the iBudget waiver waitlist (interest list) or fast-tracked if in crisis.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `To access iBudget waiver services for ${diagnosis} in ${county} County, request an intake assessment from ${rc}. Under Florida Chapter 393, APD generally processes applications and determines eligibility within 45 days, subject to the current rules and any documented exceptions. If APD finds your child eligible, the agency may place them on the iBudget interest list or review them for crisis prioritization.`
       },
       {
         q: 'Does my child qualify for paid caregiver hours (CDC+) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through the Florida Consumer Directed Care Plus (CDC+) option under the iBudget waiver, you can hire caregivers, including parents or legal guardians. CDC+ gives you budget authority to manage your own care staff. Caregiver wages are set based on your approved iBudget allocation and plan.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `The Florida Consumer Directed Care Plus (CDC+) option under the iBudget waiver may allow some families to hire caregivers, including parents or legal guardians, when they meet the current program rules. CDC+ can let families manage their own care staff and budget choices within the approved plan. Caregiver wages depend on the current iBudget allocation, service authorizations, and plan details.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `If you suspect your child has ${diagnosis} and requires Exceptional Student Education (ESE) services, submit your evaluation request in writing to ${sd}. Under Florida Rule 6A-6.0331, the school district has 30 calendar days to either obtain your consent or refuse in writing. Once consent is signed, they have exactly 60 school days to complete the evaluations and hold the eligibility meeting.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `If you suspect your child has ${diagnosis} and requires Exceptional Student Education (ESE) services, submit your evaluation request in writing to ${sd}. Under Florida Rule 6A-6.0331, the school district generally has 30 calendar days to obtain your consent or refuse in writing. Once consent is signed, the district generally has 60 school days to complete the evaluations and hold the eligibility meeting, subject to the current rule exceptions.`
       },
       {
         q: 'Can we get Florida Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. When your child is enrolled in the Florida iBudget HCBS waiver, parent income and assets are completely bypassed. Eligibility for full-scope Florida Medicaid is determined solely based on the child's financial resources, which are typically $0. This covers therapies, co-pays, and medical equipment at no cost to your family.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `When a child is enrolled in the Florida iBudget HCBS waiver, the state may review Medicaid financial eligibility under waiver-specific rules instead of standard household income rules. Confirm the current waiver, therapy, co-pay, and equipment coverage rules with Florida Medicaid and APD before relying on a no-cost assumption.`
       }
     ]
   },
@@ -350,7 +350,7 @@ export const stateConfigs: Record<string, StateConfig> = {
     medicaidName: 'New York Medicaid',
     educationAgencyLabel: 'Committee on Special Education (CSE)',
     earlyInterventionLabel: 'NYS Early Intervention Program (Ages 0-3)',
-    legalDisclaimer: 'New York OPWDD waiver programs are governed under Article 16 of the NYS Mental Hygiene Law. Special education evaluations and Committees on Special Education (CSE) timelines are governed by Part 200 of the Regulations of the Commissioner of Education. CSE must complete evaluation within 60 calendar days of receiving parental consent.',
+    legalDisclaimer: 'New York OPWDD waiver programs are governed under Article 16 of the NYS Mental Hygiene Law. Special education evaluations and Committees on Special Education (CSE) timelines are governed by Part 200 of the Regulations of the Commissioner of Education. CSE timelines are generally measured from parental consent under the current state rules.',
     timelineDaysPlan: '30 calendar days',
     timelineDaysMeeting: '60 calendar days',
     timelinesCode: '8 NYCRR § 200.4',
@@ -382,19 +382,19 @@ export const stateConfigs: Record<string, StateConfig> = {
     faqs: [
       {
         q: 'How do I start the OPWDD intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To access OPWDD services for ${diagnosis} in ${county} County, you must request an intake assessment through the OPWDD Front Door process at ${rc}. NYS Mental Hygiene Law Article 16 governs eligibility and services. If eligible, your child can access respite care packages and self-direction options.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `To explore OPWDD services for ${diagnosis} in ${county} County, request an intake assessment through the OPWDD Front Door process at ${rc}. NYS Mental Hygiene Law Article 16 governs eligibility and services. If your child is found eligible, the state may discuss respite care packages and self-direction options with you.`
       },
       {
         q: 'Does my child qualify for paid caregiver hours (CDPAP) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through New York's Consumer Directed Personal Assistance Program (CDPAP), you can hire caregivers, including family members (except spouses or parents of minor children). You manage your own personal assistants and care schedule, and wages are paid at local county rates.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `New York's Consumer Directed Personal Assistance Program (CDPAP) may allow eligible families to hire caregivers, including some family members, subject to the current program rules and exclusions such as spouses or parents of minor children. You manage your own personal assistants and care schedule, and wages are paid at local county rates.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your evaluation request in writing to ${sd}. Under NYS Commissioner\'s Regulations Part 200, the school district must obtain your consent and complete the evaluation within 60 calendar days of receiving your consent, followed by an IEP meeting to determine eligibility.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your evaluation request in writing to ${sd}. Under NYS Commissioner\'s Regulations Part 200, the school district generally must obtain your consent and complete the evaluation within 60 calendar days of receiving it, followed by an IEP meeting to determine eligibility under the current rules.`
       },
       {
         q: 'Can we get New York Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. When your child is enrolled in the OPWDD HCBS waiver, parental income and assets are completely bypassed. Eligibility for NY Medicaid is determined based solely on the child's financial resources, enabling full coverage for therapies and adaptive equipment.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `When a child is enrolled in the OPWDD HCBS waiver, New York may review Medicaid eligibility under waiver-specific financial rules rather than standard parental-income rules. Confirm the current Medicaid, therapy, and adaptive-equipment coverage requirements before relying on a coverage decision.`
       }
     ]
   },
@@ -439,19 +439,19 @@ export const stateConfigs: Record<string, StateConfig> = {
     faqs: [
       {
         q: 'How do I start the local intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Contact the local Administrative Entity (AE) at ${rc} to register your child. They will assess your child and complete a PUNS (Prioritization of Urgency of Need for Services) form to place them on the ODP waiver interest list.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Contact the local Administrative Entity (AE) at ${rc} to register your child. The AE can explain the current assessment steps and whether a PUNS (Prioritization of Urgency of Need for Services) form should be completed for the ODP waiver interest list.`
       },
       {
         q: 'Does my child qualify for paid caregiver hours for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through the ODP Participant Directed Services option under the Consolidated or Community Living waivers, you can manage your own staff and select family members or relatives as paid caregivers.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Pennsylvania's ODP Participant Directed Services option under the Consolidated or Community Living waivers may allow eligible families to manage their own staff and select family members or relatives as paid caregivers, subject to the current waiver rules.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your evaluation request in writing to ${sd}. Under 22 Pa. Code Chapter 14, the school district must complete the evaluation report (ER) within 60 calendar days of receiving your signed consent form.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your evaluation request in writing to ${sd}. Under 22 Pa. Code Chapter 14, the school district generally completes the evaluation report (ER) within 60 calendar days of receiving your signed consent form, subject to the current state exceptions and clock rules.`
       },
       {
         q: 'Can we get Pennsylvania Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. PA offers Medical Assistance for children with disabilities (often called Loophole or PH-95). If your child meets SSA disability standards, parent income is completely bypassed, giving access to full Medicaid coverage.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Pennsylvania offers Medical Assistance pathways for children with disabilities, often called PH-95 or the loophole route. If your child meets the current disability and program rules, the state may review Medicaid eligibility without using the standard parental-income calculation. Confirm the current rules before relying on full Medicaid coverage.`
       }
     ]
   },
@@ -500,15 +500,15 @@ export const stateConfigs: Record<string, StateConfig> = {
       },
       {
         q: 'Does my child qualify for paid caregiver hours (HSP) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through the Home Services Program (HSP) administered by Illinois DHS, you can hire personal assistants to provide care, and parents can be paid as caregivers under specific program allocations.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `The Home Services Program (HSP) administered by Illinois DHS may allow eligible families to hire personal assistants to provide care, and in some cases parents can be paid as caregivers under the current program allocations and rules.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to ${sd}. Under ISBE rules, the school district must determine if an evaluation is needed, obtain consent, and complete all evaluations and the IEP meeting within 60 school days of consent.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to ${sd}. Under ISBE rules, the school district generally must determine whether an evaluation is needed, obtain consent, and complete the evaluations and IEP meeting within 60 school days of consent, subject to the current procedural rules.`
       },
       {
         q: 'Can we get Illinois Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, if your child is selected from the PUNS list and enrolled in an Illinois HCBS waiver (such as the Children\'s Support Waiver), parental income is completely bypassed for Medicaid eligibility.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `If your child is selected from the PUNS list and enrolled in an Illinois HCBS waiver such as the Children\'s Support Waiver, the state may review Medicaid eligibility under waiver-specific rules rather than the standard parental-income calculation. Confirm the current waiver and Medicaid rules before relying on that pathway.`
       }
     ]
   },
@@ -557,15 +557,15 @@ export const stateConfigs: Record<string, StateConfig> = {
       },
       {
         q: 'Does my child qualify for paid caregiver hours for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, Ohio\'s waivers (IO, Level One, and SELF) offer participant-directed service options, allowing you to hire caregivers, including family members or neighbors, to provide home care.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Ohio's waivers (IO, Level One, and SELF) may offer participant-directed service options that allow eligible families to hire caregivers, including some family members or neighbors, to provide home care under the current waiver rules.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to ${sd}. Under Ohio Administrative Code 3301-51-06, the school district must complete the evaluation and hold the IEP eligibility meeting within 60 calendar days of receiving your signed consent.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to ${sd}. Under Ohio Administrative Code 3301-51-06, the school district generally completes the evaluation and holds the IEP eligibility meeting within 60 calendar days of receiving your signed consent, subject to the current procedural rules.`
       },
       {
         q: 'Can we get Ohio Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. If your child is enrolled in an Ohio DODD waiver (such as the IO waiver), parental income is completely bypassed, and Medicaid eligibility is based solely on the child\'s resources.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `If your child is enrolled in an Ohio DODD waiver such as the IO waiver, Ohio may review Medicaid eligibility under waiver-specific financial rules using the child\'s circumstances rather than the standard parental-income calculation. Confirm the current waiver and Medicaid requirements before relying on that pathway.`
       }
     ]
   },
@@ -610,19 +610,19 @@ export const stateConfigs: Record<string, StateConfig> = {
     faqs: [
       {
         q: 'How do I start the DBHDD intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Contact the DBHDD Regional Field Office at ${rc} serving ${county} County to request intake. They will perform a developmental assessment and place your child on the COMP or NOW planning list.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Contact the DBHDD Regional Field Office at ${rc} serving ${county} County to request intake. That office can explain the developmental assessment process and whether your child should be added to the COMP or NOW planning list.`
       },
       {
         q: 'Does my child qualify for paid caregiver hours (GAPP) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through the Georgia Pediatric Program (GAPP), children with complex medical or developmental needs can receive paid in-home personal care and private duty skilled nursing, bypassing parental income.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Through the Georgia Pediatric Program (GAPP), some children with complex medical or developmental needs may receive in-home personal care or private duty nursing when they meet the current medical-necessity and program rules. Confirm the current financial and clinical requirements with Georgia Medicaid before relying on coverage.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to ${sd}. Under GaDOE Rule 160-4-7-.04, the school district must complete the evaluation and determine eligibility within 60 calendar days of receiving your signed consent.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Submit your request in writing to ${sd}. Under GaDOE Rule 160-4-7-.04, the school district generally completes the evaluation and determines eligibility within 60 calendar days of receiving your signed consent, subject to the current procedural rules.`
       },
       {
         q: 'Can we get Georgia Medicaid and therapy funding for [diagnosis] if our household income is too high?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes. Georgia's GAPP program and the NOW/COMP waivers utilize institutional deeming, which completely bypasses parental income and resources, qualifying the child for full-scope Medicaid.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Georgia's GAPP program and the NOW/COMP waivers may use institutional deeming in some cases, so the state may evaluate the child without counting parental income and resources, subject to the current Medicaid and waiver rules in effect at review time.`
       }
     ]
   },
@@ -2188,7 +2188,7 @@ export function getDynamicStateConfig(stateId: string, stateName: string, stateC
     return stateConfigs[normalizedId];
   }
 
-  // Generate a programmatic programmatic fallback config using state_programs_map.json
+  // Generate a programmatic fallback config using state_programs_map.json
   const mapData = (stateProgramsMap as Record<string, {
     developmental_services?: { name: string };
     personal_care?: { name: string };

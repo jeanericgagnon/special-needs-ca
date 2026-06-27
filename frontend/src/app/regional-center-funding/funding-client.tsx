@@ -78,11 +78,11 @@ export default function FundingClient() {
   const [sdpEquipment, setSdpEquipment] = useState<number>(3000);
 
   // Input states for Coordinator Request builder & Estimator Letter
-  const [parentName, setParentName] = useState('Sarah Jenkins');
-  const [parentPhone, setParentPhone] = useState('(555) 019-2834');
-  const [childName, setChildName] = useState('Liam');
-  const [childDob, setChildDob] = useState('2018-05-12');
-  const [coordinatorName, setCoordinatorName] = useState('Jane Doe');
+  const [parentName, setParentName] = useState('');
+  const [parentPhone, setParentPhone] = useState('');
+  const [childName, setChildName] = useState('');
+  const [childDob, setChildDob] = useState('');
+  const [coordinatorName, setCoordinatorName] = useState('');
 
   // Respite Quiz Answers
   const [safetyScore, setSafetyScore] = useState<number>(0);
@@ -827,7 +827,7 @@ Under Welfare and Institutions Code Section 4685.8, Regional Centers must assist
             <div className="glass-panel" style={{ padding: '1.25rem', fontSize: '0.85rem' }}>
               <h4 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>⌛ Timeline Note</h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
-                If you file an appeal of a service decrease within **10 days** of receiving a written NOA, the law guarantees you continue receiving the service until the appeal is fully resolved. Do not miss this window.
+                If you file an appeal of a service decrease within **10 days** of receiving a written NOA, current California aid-paid-pending rules may preserve the service while the appeal is reviewed. Confirm the exact timing and continuation rules against the NOA and current public appeal guidance.
               </p>
             </div>
           </div>
@@ -1067,7 +1067,7 @@ Under Welfare and Institutions Code Section 4685.8, Regional Centers must assist
                 ✊ SB 1095 Equity Protections
               </h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
-                SB 1095 enforces strict DDS reporting requirements on service disparities. Each Regional Center is legally mandated to publish annual reports detailing their POS spending differences between racial/ethnic groups and language barriers. Bringing up these transparency reports in IPP meetings is a powerful way to demand equitable funding.
+                SB 1095 added DDS reporting expectations around service disparities. Regional Centers generally publish annual transparency materials on POS spending differences by language and demographic group. Bringing those reports into an IPP meeting can help you ask for a clearer explanation of funding decisions.
               </p>
             </div>
             
@@ -1306,7 +1306,7 @@ Under Welfare and Institutions Code Section 4685.8, Regional Centers must assist
                     <option value="co-employer">Co-Employer Model (~$250/mo | $3,000/yr)</option>
                   </select>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '0.25rem', lineHeight: 1.3 }}>
-                    FMS is legally mandated to process payments and handle employer duties under SDP. FMS fees are paid out of your Individual Budget.
+                    FMS vendors generally handle payment processing and employer-administration tasks under SDP. Confirm the current responsibilities and fee treatment with your chosen FMS and Regional Center because implementation can vary.
                   </p>
                 </div>
 

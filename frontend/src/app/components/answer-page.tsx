@@ -53,6 +53,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
   if (!data) {
     throw new Error(`AnswerPage: data or slug must be provided. Slug: ${slug}`);
   }
+  const reviewableOfficialSources = data.officialSources.filter((source) => Boolean(source.url?.trim()));
   // Client state
   const [selectedCounty, setSelectedCounty] = useState<string>('los-angeles');
   const [countyDetails, setCountyDetails] = useState<CountyDetailsType | null>(null);
@@ -83,7 +84,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
   });
   const [generatedLetter, setGeneratedLetter] = useState<string>('');
   const [copiedLetter, setCopiedLetter] = useState<boolean>(false);
-  const hasSourceBackedEvidence = Array.isArray(data.officialSources) && data.officialSources.length > 0;
+  const hasSourceBackedEvidence = reviewableOfficialSources.length > 0;
   const correctionSuggestionType = data.category === 'programs' ? 'program' : 'other';
   const countyWageDisclosure = countyDetails
     ? getIhssWageDisclosure(
@@ -210,7 +211,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               {data.title}
             </h1>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', fontSize: '0.82rem', color: 'var(--text-light)', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '1rem' }}>
-              <span>Primary source: <strong style={{ color: 'var(--text-main)' }}>{data.officialSources[0]?.name || 'Still being verified'}</strong></span>
+              <span>Primary source: <strong style={{ color: 'var(--text-main)' }}>{reviewableOfficialSources[0]?.name || 'Still being verified'}</strong></span>
               <span>•</span>
               <span>Last Reviewed: <strong style={{ color: 'var(--text-main)' }}>{data.lastReviewedDate}</strong></span>
             </div>
@@ -343,7 +344,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
           </div>
 
           {/* Source Footer references */}
-          <SourceFreshnessDisclosure sources={data.officialSources.map(src => ({
+          <SourceFreshnessDisclosure sources={reviewableOfficialSources.map(src => ({
             name: src.name,
             url: src.url,
             lastReviewedDate: src.lastReviewedDate || data.lastReviewedDate,

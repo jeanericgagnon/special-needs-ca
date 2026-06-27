@@ -269,7 +269,7 @@ function getNotesAndExplanation(name: string): { explanation: string; notes: str
     notes = 'Set up Home & Hospital Instruction under IEP/504 for periods of medical absence. CCS coordinates oncology treatment.';
   } else if (norm.includes('tracheostomy') || norm.includes('ventilator') || norm.includes('g-tube')) {
     explanation = 'A complex medical fragility profile requiring enteral feeding, mechanical ventilation, or airway maintenance devices.';
-    notes = 'Qualifies for HCBA home nursing hours. IEP requires medical services / school nurse allocations. CCS covers device maintenance.';
+    notes = 'May be worth screening for HCBA home nursing hours. School supports may require nursing or medical-service coordination, and CCS may help with device-related services when the current program rules are met.';
   }
 
   return { explanation, notes };

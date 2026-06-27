@@ -5,45 +5,50 @@ import {
   CheckCircle, AlertTriangle, ShieldAlert, PhoneCall, Copy, FileText, 
   ChevronRight, Play, Sparkles, Download, CheckSquare 
 } from 'lucide-react';
+import { getIhssMonthlyEstimate, getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 interface IhssMiniProductProps {
   diagnosisName: string;
   initialCountyId?: string;
   initialCountyName?: string;
-  initialWage?: number;
+  initialWage?: number | null;
   initialPhone?: string;
   initialAddress?: string;
   countiesList?: { id: string; name: string }[];
 }
 
-const STATIC_COUNTIES: Record<string, { phone: string; address: string; wage: number }> = {
+const STATIC_COUNTIES: Record<string, { phone: string; address: string }> = {
   'los-angeles': {
     phone: '(888) 944-4477',
-    address: '2707 S. Grand Ave, Los Angeles, CA 90007',
-    wage: 18.00
+    address: '2707 S. Grand Ave, Los Angeles, CA 90007'
   },
   'orange': {
     phone: '(714) 825-3000',
-    address: '1505 E Warner Ave, Santa Ana, CA 92705',
-    wage: 18.50
+    address: '1505 E Warner Ave, Santa Ana, CA 92705'
   },
   'alameda': {
     phone: '(510) 577-1800',
-    address: '6955 Foothill Blvd, Oakland, CA 94605',
-    wage: 19.25
+    address: '6955 Foothill Blvd, Oakland, CA 94605'
   },
   'san-francisco': {
     phone: '(415) 557-5262',
-    address: '1650 Mission St, San Francisco, CA 94103',
-    wage: 20.75
+    address: '1650 Mission St, San Francisco, CA 94103'
   }
 };
+
+function hasUsableOfficeValue(value?: string | null) {
+  const text = String(value || '').trim();
+  if (!text) return false;
+  if (/local county dpss intake office/i.test(text)) return false;
+  if (/still being verified/i.test(text)) return false;
+  return true;
+}
 
 export default function IhssMiniProduct({
   diagnosisName,
   initialCountyId = '',
   initialCountyName = '',
-  initialWage = 18.00,
+  initialWage = null,
   initialPhone = '',
   initialAddress = '',
   countiesList = []
@@ -60,10 +65,14 @@ export default function IhssMiniProduct({
     (countiesList.find(c => c.id === activeCountyId)?.name || 
      activeCountyId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()));
 
-  const countyDetails = STATIC_COUNTIES[activeCountyId] || {
-    phone: initialPhone || '(888) 944-4477',
-    address: initialAddress || 'Local County DPSS Intake Office',
-    wage: initialWage || 18.00 // QA-ALLOW
+  const wageDisclosure = getIhssWageDisclosure('california', activeCountyId, activeCountyName, initialWage ?? null);
+  const staticCountyDetails = STATIC_COUNTIES[activeCountyId];
+  const countyPhone = staticCountyDetails?.phone || (hasUsableOfficeValue(initialPhone) ? initialPhone : null);
+  const countyAddress = staticCountyDetails?.address || (hasUsableOfficeValue(initialAddress) ? initialAddress : null);
+  const countyDetails = {
+    phone: countyPhone,
+    address: countyAddress,
+    wage: wageDisclosure?.hourlyRate ?? initialWage ?? null
   };
 
   // Safety Screener questionnaire states
@@ -85,48 +94,49 @@ export default function IhssMiniProduct({
   };
 
   // Eligibility calculation
-  const getLikelihood = () => {
+  const getFitAssessment = () => {
     const ageNum = parseFloat(age) || 0;
     const checkedCount = Object.values(behaviors).filter(Boolean).length;
 
     if (ageNum < 2) {
       return {
-        rating: 'Low',
+        rating: 'Lower fit',
         color: '#ef4444',
         bg: 'rgba(239, 68, 68, 0.05)',
-        text: `Children under 2 years old are rarely approved for Protective Supervision. Counties assume infants of this age require 24/7 supervision regardless of Down Syndrome. However, your child may still qualify for 20-50 basic care hours (feeding, bathing).`
+        text: `Children under 2 years old are less likely to fit common Protective Supervision patterns. Counties usually expect infants this age to need close supervision regardless of diagnosis. Your child may still be assessed for basic care hours such as feeding or bathing support.`
       };
     }
 
     if (checkedCount >= 2) {
       return {
-        rating: 'High',
+        rating: 'Higher fit',
         color: '#10b981',
         bg: 'rgba(16, 185, 129, 0.05)',
-        text: `Based on your child's age (${ageNum}) and safety concerns (${checkedCount} checked), there is a high likelihood of qualifying for 24/7 Protective Supervision. This qualifies for a standard allocation of 195 to 283 hours per month.`
+        text: `Based on your child's age (${ageNum}) and safety concerns (${checkedCount} checked), this pattern may support a stronger Protective Supervision request. If the county agrees with the documented risks, families may see hour ranges like 195 to 283 per month, but county decisions vary case by case.`
+        
       };
     }
 
     if (checkedCount === 1) {
       return {
-        rating: 'Moderate',
+        rating: 'Moderate fit',
         color: '#f59e0b',
         bg: 'rgba(245, 158, 11, 0.05)',
-        text: `With 1 checked behavior, your child stands a reasonable chance. To succeed, you will need strong documentation (IEP goals, safety incident log) confirming that this behavior requires constant safety intervention.`
+        text: `With 1 checked behavior, the county may still review Protective Supervision, but families usually need strong documentation such as IEP goals, clinician notes, and a safety incident log showing why constant intervention is needed.`
       };
     }
 
     return {
-      rating: 'Incomplete / Low',
+      rating: 'Limited fit',
       color: '#6b7280',
       bg: 'rgba(107, 114, 128, 0.05)',
       text: `Protective Supervision requires active, dangerous behaviors due to cognitive delays. If your child is fully mobile but does not display safety risks, they will likely be denied Protective Supervision, but can still receive basic care hours.`
     };
   };
 
-  const likelihood = getLikelihood();
+  const fitAssessment = getFitAssessment();
   const estimatedHours = Object.values(behaviors).filter(Boolean).length >= 2 ? 283 : (Object.values(behaviors).filter(Boolean).length === 1 ? 195 : 45);
-  const monthlyCompensation = estimatedHours * countyDetails.wage;
+  const monthlyCompensation = getIhssMonthlyEstimate(wageDisclosure, estimatedHours);
 
   const handleCopyScript = (text: string) => {
     navigator.clipboard.writeText(text);
@@ -182,7 +192,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
             IHSS Protective Supervision Mini-Guide
           </h2>
           <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', margin: '0.2rem 0 0 0' }}>
-            A complete, self-directed tool to check eligibility, call intake, and draft logs for {diagnosisName}.
+            A source-backed planning tool to check fit, prepare an intake call, and draft logs for {diagnosisName}.
           </p>
         </div>
 
@@ -303,10 +313,23 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                   <CheckCircle size={16} /> The Answer
                 </strong>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', lineHeight: '1.5', margin: 0 }}>
-                  <strong>Yes.</strong> Individuals with <strong>{diagnosisName}</strong> are legally eligible to receive paid In-Home Supportive Services (IHSS) Protective Supervision in California. 
-                  This is a state program that pays parent caregivers to visually supervise children who lack safety awareness. 
-                  In <strong>{activeCountyName}</strong>, county pay rates are currently listed at <strong>${countyDetails.wage.toFixed(2)}/hour</strong>. Actual approved hours and monthly pay depend on the county assessment and authorization.
+                  <strong>Maybe.</strong> A child with <strong>{diagnosisName}</strong> may qualify for California IHSS Protective Supervision if the county finds severe cognitive or behavioral safety risks that require constant monitoring.
+                  The county may authorize a parent or relative provider arrangement when it documents that level of need and approves the provider setup.
+                  {' '}In <strong>{activeCountyName}</strong>, we currently show {countyDetails.wage !== null ? <>a checked public county rate estimate of <strong>${countyDetails.wage.toFixed(2)}/hour</strong></> : 'no county-specific rate estimate yet'}.
+                  {' '}Actual approved hours and monthly pay depend on the county assessment, current local rate, and authorization.
                 </p>
+                {wageDisclosure && (
+                  <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.45', margin: '0.6rem 0 0 0' }}>
+                    <a href={wageDisclosure.sourceUrl} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
+                      {wageDisclosure.sourceLabel}
+                    </a>{' '}
+                    • Confirm with{' '}
+                    <a href={wageDisclosure.officialConfirmUrl} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
+                      the official county IHSS office directory
+                    </a>{' '}
+                    • Last checked {wageDisclosure.lastVerifiedDate} • {wageDisclosure.explanation}
+                  </p>
+                )}
               </div>
 
               <div>
@@ -321,10 +344,22 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#fafafa', padding: '1rem', borderRadius: '12px', border: '1px solid #eee' }}>
                 <span style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-main)' }}>📍 Local County Office Info:</span>
                 <span style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>🏢 <strong>{activeCountyName} County IHSS Intake</strong></span>
-                <span style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>📍 Address: {countyDetails.address}</span>
-                <span style={{ fontSize: '0.85rem', color: 'var(--primary-color)', fontWeight: 700 }}>
-                  📞 Call to Apply: <a href={`tel:${countyDetails.phone.replace(/[^\d]/g, '')}`} style={{ textDecoration: 'underline' }}>{countyDetails.phone}</a>
-                </span>
+                {countyDetails.address ? (
+                  <span style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>📍 Address: {countyDetails.address}</span>
+                ) : (
+                  <span style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>
+                    📍 We are still verifying the current county IHSS office address for {activeCountyName}.
+                  </span>
+                )}
+                {countyDetails.phone ? (
+                  <span style={{ fontSize: '0.85rem', color: 'var(--primary-color)', fontWeight: 700 }}>
+                    📞 Call to Apply: <a href={`tel:${countyDetails.phone.replace(/[^\d]/g, '')}`} style={{ textDecoration: 'underline' }}>{countyDetails.phone}</a>
+                  </span>
+                ) : (
+                  <span style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>
+                    📞 We are still verifying the current county IHSS intake phone for {activeCountyName}. Confirm the latest local contact before relying on this tool.
+                  </span>
+                )}
               </div>
             </div>
 
@@ -335,7 +370,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                 Personalized Safety Check
               </h3>
               <p style={{ fontSize: '0.82rem', color: 'var(--text-light)', marginBottom: '1.25rem', lineHeight: '1.4' }}>
-                Check the behaviors that apply to your child to estimate approval likelihood and monthly hours.
+                Check the behaviors that apply to your child to estimate how closely the situation matches common Protective Supervision factors and possible hour ranges.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -409,15 +444,15 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
               </div>
 
               {screenSubmitted && (
-                <div style={{ marginTop: '1.25rem', padding: '1rem', borderRadius: '12px', background: likelihood.bg, border: '1px solid', borderColor: likelihood.color }} className="animate-fade-in">
+                <div style={{ marginTop: '1.25rem', padding: '1rem', borderRadius: '12px', background: fitAssessment.bg, border: '1px solid', borderColor: fitAssessment.color }} className="animate-fade-in">
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-                    <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Approval Likelihood:</strong>
-                    <span style={{ fontSize: '0.85rem', fontWeight: 800, color: likelihood.color, textTransform: 'uppercase' }}>
-                      {likelihood.rating}
+                    <strong style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>Estimated fit for county review:</strong>
+                    <span style={{ fontSize: '0.85rem', fontWeight: 800, color: fitAssessment.color, textTransform: 'uppercase' }}>
+                      {fitAssessment.rating}
                     </span>
                   </div>
                   <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: '0 0 0.75rem 0', lineHeight: '1.4' }}>
-                    {likelihood.text}
+                    {fitAssessment.text}
                   </p>
 
                   <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '0.75rem', marginTop: '0.75rem' }}>
@@ -427,8 +462,17 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-light)' }}>
                       <span>Estimated Compensation:</span>
-                      <strong style={{ color: '#10b981' }}>${monthlyCompensation.toLocaleString(undefined, { maximumFractionDigits: 0 })} / mo</strong>
+                      <strong style={{ color: '#10b981' }}>
+                        {monthlyCompensation !== null
+                          ? `$${monthlyCompensation.toLocaleString(undefined, { maximumFractionDigits: 0 })} / mo`
+                          : 'Still verifying county rate'}
+                      </strong>
                     </div>
+                    <p style={{ fontSize: '0.72rem', color: 'var(--text-light)', margin: '0.45rem 0 0 0', lineHeight: 1.4 }}>
+                      {monthlyCompensation !== null
+                        ? `Uses the current county IHSS rate estimate for ${activeCountyName}. Confirm the latest county rate before relying on this amount.`
+                        : `We are still verifying the current county IHSS rate for ${activeCountyName}. Confirm the latest county rate before relying on a monthly payout estimate.`}
+                    </p>
                   </div>
                 </div>
               )}
@@ -457,7 +501,11 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
               <div>
                 <strong style={{ fontSize: '0.92rem', display: 'block', color: 'var(--text-main)' }}>Apply by Calling your County Office</strong>
                 <span style={{ fontSize: '0.82rem', color: 'var(--text-light)', lineHeight: '1.4', display: 'block', marginTop: '0.2rem' }}>
-                  Call the IHSS intake office for <strong>{activeCountyName} County</strong> at <strong>{countyDetails.phone}</strong>. Specify that you want to apply for In-Home Supportive Services for your child with {diagnosisName}. (See the phone script in the next tab for exactly what to say).
+                  {countyDetails.phone ? (
+                    <>Call the IHSS intake office for <strong>{activeCountyName} County</strong> at <strong>{countyDetails.phone}</strong>. Specify that you want to apply for In-Home Supportive Services for your child with {diagnosisName}. (See the phone script in the next tab for exactly what to say).</>
+                  ) : (
+                    <>We are still verifying the current IHSS intake phone for <strong>{activeCountyName} County</strong>. Use the county&apos;s published IHSS office listing before relying on the next step below.</>
+                  )}
                 </span>
               </div>
             </div>
@@ -469,7 +517,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
               <div>
                 <strong style={{ fontSize: '0.92rem', display: 'block', color: 'var(--text-main)' }}>Obtain Pediatrician Signature on SOC 873</strong>
                 <span style={{ fontSize: '0.82rem', color: 'var(--text-light)', lineHeight: '1.4', display: 'block', marginTop: '0.2rem' }}>
-                  The county will mail you Form SOC 873 (Medical Certification). You must have your child&apos;s pediatrician sign this certifying that they have a developmental delay and require physical care. The signed form must be returned within 45 days.
+                  The county generally sends Form SOC 873 (Medical Certification) after intake. Ask your child&apos;s pediatrician to review and sign it if it fits your child&apos;s current care needs, then confirm the county&apos;s current return window before relying on the deadline.
                 </span>
               </div>
             </div>
@@ -505,7 +553,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
               <div>
                 <strong style={{ fontSize: '0.92rem', display: 'block', color: 'var(--text-main)' }}>Receive the Notice of Action (NOA)</strong>
                 <span style={{ fontSize: '0.82rem', color: 'var(--text-light)', lineHeight: '1.4', display: 'block', marginTop: '0.2rem' }}>
-                  If approved, you will receive a Notice of Action detailing your monthly hours. If denied or given fewer hours than expected, you have exactly <strong>90 days</strong> to file an appeal. You can generate an appeal letter template in the Appeals tab of this dashboard.
+                  If approved, you will receive a Notice of Action detailing your monthly hours. If the request is denied or reduced, review the deadline listed on your current notice before filing an appeal. You can generate an appeal letter template in the Appeals tab of this dashboard.
                 </span>
               </div>
             </div>
@@ -526,7 +574,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
 
           <div style={{ background: '#f9f9f9', padding: '1.5rem', borderRadius: '16px', border: '1px solid #eee', position: 'relative' }}>
             <button 
-              onClick={() => handleCopyScript(`Hello, I'm calling to apply for In-Home Supportive Services (IHSS) on behalf of my child who has ${diagnosisName}. They are currently ${age} years old and require constant Protective Supervision due to severe cognitive deficits. Specifically, they have no safety awareness: they attempt to elope out of the house into traffic, eat non-food items, and climb high furniture without realizing they could fall. They require 24/7 visual monitoring to prevent severe self-harm. Please mail me an application packet and Form SOC 873 immediately.`)}
+              onClick={() => handleCopyScript(`Hello, I'm calling to apply for In-Home Supportive Services (IHSS) on behalf of my child who has ${diagnosisName}. They are currently ${age} years old and may need Protective Supervision because they have severe cognitive safety deficits. Specifically, they have no safety awareness: they attempt to elope out of the house into traffic, eat non-food items, and climb high furniture without realizing they could fall. They require close visual monitoring to stay safe. Please mail me an application packet and let me know the current next steps for Form SOC 873.`)}
               style={{
                 position: 'absolute',
                 top: '1rem',
@@ -548,10 +596,10 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
             </button>
 
             <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--primary-color)', display: 'block', marginBottom: '0.5rem' }}>
-              Script for Calling Intake ({countyDetails.phone}):
+              Script for Calling Intake{countyDetails.phone ? ` (${countyDetails.phone})` : ''}:
             </span>
             <p style={{ fontSize: '0.88rem', color: 'var(--text-main)', fontStyle: 'italic', lineHeight: '1.6', margin: 0, paddingRight: '6rem' }}>
-              &quot;Hello, I&apos;m calling to apply for In-Home Supportive Services (IHSS) on behalf of my child who has {diagnosisName}. They are currently {age} years old and require constant <strong>Protective Supervision</strong> due to severe cognitive deficits. Specifically, they have no safety awareness: they attempt to elope out of the house into traffic, eat non-food items, and climb high furniture without realizing they could fall. They require 24/7 visual monitoring to prevent severe self-harm. Please mail me an application packet and Form SOC 873 immediately.&quot;
+              &quot;Hello, I&apos;m calling to apply for In-Home Supportive Services (IHSS) on behalf of my child who has {diagnosisName}. They are currently {age} years old and may need <strong>Protective Supervision</strong> because they have severe cognitive safety deficits. Specifically, they have no safety awareness: they attempt to elope out of the house into traffic, eat non-food items, and climb high furniture without realizing they could fall. They require close visual monitoring to stay safe. Please mail me an application packet and let me know the current next steps for Form SOC 873.&quot;
             </p>
           </div>
 
@@ -574,7 +622,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
             <FileText size={20} color="var(--primary-color)" /> Essential Documents to Win Protective Supervision
           </h3>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }}>
-            The social worker cannot approve Protective Supervision without documentary evidence. These 3 documents carry the highest weight.
+            Counties usually ask for documentary evidence before authorizing Protective Supervision. These 3 documents often carry the most weight.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>

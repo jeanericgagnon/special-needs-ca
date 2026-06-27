@@ -117,7 +117,7 @@ Sincerely,
       { key: 'care_justification', label: 'Care Needs / Justification (Fills in automatically from calculator)', defaultValue: '- Requires 100% assistance with diapering/toileting.\n- Wakes 2-3 times nightly requiring safety checks.\n- Elopement risk: runs into streets or dangerous areas.' },
       { key: 'requested_hours', label: 'Requested Hours / Month', defaultValue: '24' },
       { key: 'parent_name', label: 'Caregiver Name', defaultValue: 'Sarah Jenkins' },
-      { key: 'parent_phone', label: 'Caregiver Phone Number', defaultValue: '(555) 019-2834' }
+      { key: 'parent_phone', label: 'Caregiver Phone Number', defaultValue: '' }
     ]
   },
   {
@@ -148,7 +148,7 @@ Best regards,
       { key: 'program_cost', label: 'Cost / Tuition Amount', defaultValue: '$180 per month' },
       { key: 'socialization_needs', label: 'Social & Communication Needs', defaultValue: '- Struggles to initiate play with peer groups.\n- Needs visual cues to stay safe in public settings.\n- Has severe physical motor delays requiring a structured coach.' },
       { key: 'parent_name', label: 'Caregiver Name', defaultValue: 'Sarah Jenkins' },
-      { key: 'parent_phone', label: 'Caregiver Phone Number', defaultValue: '(555) 019-2834' }
+      { key: 'parent_phone', label: 'Caregiver Phone Number', defaultValue: '' }
     ]
   },
   {
@@ -174,7 +174,7 @@ Thank you,
       { key: 'requested_service', label: 'Service Requested (e.g. 20 hrs/mo Respite)', defaultValue: '24 hours of In-Home Respite Care' },
       { key: 'child_name', label: 'Child\'s Nickname', defaultValue: 'Liam' },
       { key: 'parent_name', label: 'Caregiver Name', defaultValue: 'Sarah Jenkins' },
-      { key: 'parent_phone', label: 'Caregiver Phone Number', defaultValue: '(555) 019-2834' }
+      { key: 'parent_phone', label: 'Caregiver Phone Number', defaultValue: '' }
     ]
   }
 ];
@@ -208,7 +208,7 @@ export function calculateRespiteTier(answers: RespiteQuizAnswers) {
   } else {
     tier = 'Critical';
     suggestedHours = '45 to 60+ hours per month (Consider Specialized Supervision / Nursing)';
-    summary = 'Your child has intense, constant supervision needs due to severe safety risks (elopement, pica), critical medical fragility, or daily behaviors. You are highly eligible for a maximum hour package, potentially supplemented by specialized supervision (Code 820) or medical nursing respite.';
+    summary = 'Your child has intense, constant supervision needs due to severe safety risks (elopement, pica), critical medical fragility, or daily behaviors. This pattern may support a higher respite request, potentially including specialized supervision (Code 820) or medical nursing respite if the current program rules allow it.';
   }
 
   return {

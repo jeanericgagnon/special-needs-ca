@@ -126,7 +126,7 @@ export const IEP_ACCOMMODATIONS: IEPAccommodation[] = [
     category: 'Speech & Social',
     title: 'Alternative Communication (AAC) Inclusion',
     description: 'Ensure the student’s AAC device, picture board, or communication symbols are present and modeled by all staff members.',
-    rationale: 'Validates non-verbal communication systems and guarantees the student has a voice throughout the school day.'
+    rationale: 'Supports non-verbal communication systems and helps ensure the student can participate consistently throughout the school day.'
   },
 
   // Behavior & Motivation

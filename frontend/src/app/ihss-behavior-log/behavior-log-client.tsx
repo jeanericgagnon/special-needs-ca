@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import PrintButton from '@/components/print-button';
 import CopyButton from '@/components/copy-button';
+import { DEFAULT_CA_IHSS_ESTIMATE_HOURLY, getDefaultCaIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 interface SafetyIncident {
   id: string;
@@ -53,6 +54,7 @@ const DEFAULT_INCIDENTS: SafetyIncident[] = [
 ];
 
 export default function BehaviorLogClient() {
+  const defaultIhssDisclosure = getDefaultCaIhssWageDisclosure();
   const [activeTab, setActiveTab] = useState<'journal' | 'estimator' | 'overtime'>('journal');
   const [incidents, setIncidents] = useState<SafetyIncident[]>([]);
   const [hydrated, setHydrated] = useState(false);
@@ -80,7 +82,7 @@ export default function BehaviorLogClient() {
   const [paramedicalHours, setParamedicalHours] = useState<number>(2);
   const [paramedicalDesc, setParamedicalDesc] = useState<string>('Daily G-tube feeding prep, tube sanitization, and skin site inspection.');
   const [requiresSupervision, setRequiresSupervision] = useState<boolean>(true);
-  const [ihssWage, setIhssWage] = useState<number>(18.00);
+  const [ihssWage, setIhssWage] = useState<number>(DEFAULT_CA_IHSS_ESTIMATE_HOURLY);
 
   // Overtime Planner States
   const [recipientCount, setRecipientCount] = useState<number>(2);
@@ -347,7 +349,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
       "IHSS MULTI-RECIPIENT SCHEDULE & OVERTIME COMPLIANCE REPORT",
       "Provider Name: " + parentName,
       "Log Date: " + new Date(logDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
-      "Provider Pay Rate: $" + ihssWage.toFixed(2) + "/hour",
+      "Provider Pay Rate Estimate: $" + ihssWage.toFixed(2) + "/hour",
       "",
       "I. AUTHORIZED HOURS BREAKDOWN",
       "- Recipient 1: " + monthlyHours1 + " hours/month (~" + weekly1 + " hours/week)",
@@ -366,7 +368,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
       "- Overtime Hours (1.5x): " + overtimeHours.toFixed(1) + " hrs @ $" + (ihssWage * 1.5).toFixed(2) + "/hr = $" + overtimePay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
       "- Travel Hours (Regular): " + weeklyTravelHours + " hrs @ $" + ihssWage.toFixed(2) + "/hr = $" + travelPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
       "TOTAL PROJECTED WEEKLY INCOME: $" + totalWeeklyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
-      "TOTAL PROJECTED MONTHLY PAY (4.33 conversion): $" + totalMonthlyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
+      "TOTAL ESTIMATED MONTHLY PAY (4.33 conversion): $" + totalMonthlyPay.toLocaleString(undefined, { minimumFractionDigits: 2 }),
       "",
       "This workweek schedule is compiled in accordance with CDSS Welfare & Institutions Code Section 12301.15 rules to prevent workweek violations while maximizing authorized recipient hours."
     ];
@@ -470,7 +472,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
             <div>
               <strong style={{ display: 'block', marginBottom: '0.25rem', color: 'var(--text-main)' }}>Why is this log crucial?</strong>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                Under California DSS regulations, minor children only qualify for Protective Supervision if parents prove the child needs **continuous safety monitoring** due to developmental impairments. Standard pediatric delays are insufficient. Social workers expect to see a written, dated log detailing safety risk incidents and the immediate caregiver interventions that kept the child safe.
+                Under California DSS regulations, minor children are generally reviewed for Protective Supervision only when parents can document a need for **continuous safety monitoring** due to developmental impairments. Standard pediatric delays are usually insufficient. Social workers expect to see a written, dated log detailing safety risk incidents and the immediate caregiver interventions that kept the child safe.
               </p>
             </div>
           </div>
@@ -1000,7 +1002,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                 {/* County Wage Settings */}
                 <div style={{ borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '1rem', display: 'grid', gridTemplateColumns: '1fr 120px', gap: '1rem', alignItems: 'flex-end' }}>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
-                    <strong>IHSS County Minimum Wage:</strong> Change this to match your county&apos;s hourly provider wage (ranges from $16.50 to $20.00/hour across California).
+                    <strong>IHSS County Rate Estimate:</strong> Change this to match your county&apos;s current hourly provider rate. We start with a checked California estimate for {defaultIhssDisclosure.countyName} County and you should confirm the latest public county rate before relying on any payout math.
                   </div>
                   <div className="input-group" style={{ marginBottom: 0 }}>
                     <label style={{ fontSize: '0.75rem' }}>Wage / Hour ($)</label>
@@ -1009,10 +1011,17 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       step="0.05"
                       min="16"
                       value={ihssWage}
-                      onChange={(e) => updateIhssWage(Math.max(0, parseFloat(e.target.value) || 16))}
+                      onChange={(e) => updateIhssWage(Math.max(0, parseFloat(e.target.value) || DEFAULT_CA_IHSS_ESTIMATE_HOURLY))}
                       style={{ padding: '0.4rem 0.6rem', fontSize: '0.8rem' }}
                     />
                   </div>
+                </div>
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-light)', marginTop: '0.75rem', lineHeight: 1.5 }}>
+                  Source checked:{' '}
+                  <a href={defaultIhssDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>
+                    public county wage reference
+                  </a>
+                  {' '}• Last checked {defaultIhssDisclosure.lastVerifiedDate}. {defaultIhssDisclosure.explanation}
                 </div>
 
               </div>
@@ -1043,19 +1052,19 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
             {/* Payout Hero Card */}
             <div className="glass-panel" style={{ padding: '1.75rem', border: '2px solid var(--primary-color)', background: 'rgba(var(--primary-rgb), 0.02)' }}>
               <span style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--primary-color)', letterSpacing: '0.04em' }}>
-                Estimated Authorization
+                Estimated Planning Scenario
               </span>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginTop: '0.25rem', marginBottom: '1rem' }}>
                 Total: <span style={{ color: 'var(--primary-color)' }}>{totalMonthlyHours} Hours/Mo</span>
               </h3>
               
               <div style={{ background: 'var(--glass-bg)', border: '1px solid var(--glass-border)', padding: '1rem', borderRadius: '12px', textAlign: 'center', marginBottom: '1rem' }}>
-                <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-light)', fontWeight: 600 }}>Projected Monthly Income</span>
+                <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-light)', fontWeight: 600 }}>Estimated Monthly Income</span>
                 <span style={{ display: 'block', fontSize: '1.5rem', fontWeight: 700, color: '#10b981', marginTop: '0.25rem' }}>
                   ${estimatedMonthlyPayout.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </span>
                 <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-light)', marginTop: '0.1rem' }}>
-                  Estimated pay for parent providers
+                  Estimate only. Confirm the county rate, approval status, and authorized hours before relying on this amount.
                 </span>
               </div>
 
@@ -1101,8 +1110,8 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
               </h4>
               <p style={{ fontSize: '0.8rem', lineHeight: 1.4, color: 'var(--text-light)', marginTop: '0.4rem', margin: 0 }}>
                 {isSeverelyImpaired 
-                  ? 'Since your weekly personal care services total 20+ hours, you are classified as Severely Impaired. If you qualify for Protective Supervision, you will receive the maximum 283 hours/month allocation.'
-                  : 'Your weekly personal care hours total less than the 20-hour threshold. If you qualify for Protective Supervision, your total allocation will cap at 195 hours/month.'
+                  ? 'Since your weekly personal care services total 20+ hours, the county may classify the case as Severely Impaired. If Protective Supervision is later approved, the county often evaluates the case against the 283 hours/month ceiling.'
+                  : 'Your weekly personal care hours total less than the 20-hour threshold. If Protective Supervision is later approved, the county often evaluates the case against the 195 hours/month ceiling.'
                 }
               </p>
             </div>
@@ -1460,7 +1469,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       </div>
                       <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px dashed rgba(0,0,0,0.08)', paddingTop: '0.4rem', marginTop: '0.2rem' }}>
                         <span>Pay Rate:</span>
-                        <strong>${ihssWage.toFixed(2)}/hr</strong>
+                        <strong>${ihssWage.toFixed(2)}/hr estimate</strong>
                       </div>
                     </div>
                   </div>

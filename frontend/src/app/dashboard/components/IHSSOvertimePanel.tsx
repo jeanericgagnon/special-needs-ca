@@ -6,6 +6,11 @@ import {
   Info, Plus, BookOpen, AlertOctagon, AlertTriangle, Trash2
 } from 'lucide-react';
 import CopyButton from '@/components/copy-button';
+import {
+  DEFAULT_CA_IHSS_ESTIMATE_HOURLY,
+  formatIhssEstimateSourceLabel,
+  getDefaultCaIhssWageDisclosure,
+} from '@/lib/ihssWageDisclosure';
 import { 
   getSafetyIncidentsAction, saveSafetyIncidentAction, deleteSafetyIncidentAction,
   getIhssOvertimeScheduleAction, saveIhssOvertimeScheduleAction
@@ -56,6 +61,7 @@ const DEFAULT_INCIDENTS: SafetyIncident[] = [
 ];
 
 export default function IHSSOvertimePanel() {
+  const defaultIhssDisclosure = getDefaultCaIhssWageDisclosure();
   const { currentChild, parentName, setParentName, childName, setChildName, stateConfig, isSpanish } = useChildProfile();
 
   const [ihssSubTab, setIhssSubTab] = useState<'journal' | 'estimator' | 'overtime'>('journal');
@@ -79,7 +85,7 @@ export default function IHSSOvertimePanel() {
   const [paramedicalHours, setParamedicalHours] = useState<number>(2);
   const [paramedicalDesc, setParamedicalDesc] = useState<string>('Daily G-tube feeding prep, tube sanitization, and skin site inspection.');
   const [requiresSupervision, setRequiresSupervision] = useState<boolean>(true);
-  const [ihssWage, setIhssWage] = useState<number>(18.00);
+  const [ihssWage, setIhssWage] = useState<number>(DEFAULT_CA_IHSS_ESTIMATE_HOURLY);
 
   // Overtime states
   const [recipientCount, setRecipientCount] = useState<number>(1);
@@ -136,7 +142,7 @@ export default function IHSSOvertimePanel() {
             setParamedicalHours(s.paramedical_hours ?? 2);
             setParamedicalDesc(s.paramedical_desc ?? 'Daily G-tube feeding prep, tube sanitization, and skin site inspection.');
             setRequiresSupervision(s.requires_supervision === 1);
-            setIhssWage(s.ihss_wage ?? 18.00); // QA-ALLOW
+            setIhssWage(s.ihss_wage ?? DEFAULT_CA_IHSS_ESTIMATE_HOURLY); // QA-ALLOW
             setRecipientCount(s.recipient_count ?? 1);
             setMonthlyHours1(s.monthly_hours_1 ?? 120);
             setMonthlyHours2(s.monthly_hours_2 ?? 80);
@@ -311,7 +317,8 @@ Status: ${isSeverelyImpaired ? 'Highly Impaired / High Needs (20+ hours)' : 'Sta
 
 3. PROJECTED MONTHLY AUTHORIZATION
 Estimated Monthly Hours: ${totalMonthlyHours} Hours
-Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
+Calculated local hourly provider wage estimate: $${ihssWage.toFixed(2)}/hour. Confirm the current county rate, approval status, and authorized hours before relying on this amount.
+Reference source checked: ${defaultIhssDisclosure.sourceUrl} (last checked ${defaultIhssDisclosure.lastVerifiedDate}).`;
   };
 
   return (
@@ -379,8 +386,8 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
               <strong style={{ display: 'block', marginBottom: '0.25rem', color: 'var(--text-main)' }}>{isSpanish ? '¿Por qué es crucial este registro?' : 'Why is this log crucial?'}</strong>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
                 {isSpanish 
-                  ? `Bajo las regulaciones de ${stateConfig.medicaidName}, los niños menores califican para supervisión o atención personal si los padres demuestran que el niño necesita monitoreo continuo de seguridad debido a deficiencias en el desarrollo. Los evaluadores esperan ver un registro detallado de los incidentes y las intervenciones correspondientes.`
-                  : `Under ${stateConfig.name} ${stateConfig.personalCareProgram === 'IHSS Protective Supervision' ? 'DSS' : 'Medicaid'} regulations, minor children qualify for personal care/supervision hours if parents prove the child needs continuous monitoring or assistance due to developmental impairments. Assessors expect to see a written, dated log detailing safety risk incidents and caregiver interventions.`}
+                  ? `Bajo las regulaciones de ${stateConfig.medicaidName}, los niños menores suelen ser evaluados para supervisión o atención personal cuando los padres pueden demostrar que el niño necesita monitoreo continuo de seguridad debido a deficiencias en el desarrollo. Los evaluadores esperan ver un registro detallado de los incidentes y las intervenciones correspondientes.`
+                  : `Under ${stateConfig.name} ${stateConfig.personalCareProgram === 'IHSS Protective Supervision' ? 'DSS' : 'Medicaid'} regulations, minor children are generally evaluated for personal care or supervision hours when parents can document a need for continuous monitoring or assistance due to developmental impairments. Assessors expect to see a written, dated log detailing safety risk incidents and caregiver interventions.`}
               </p>
             </div>
           </div>
@@ -597,9 +604,16 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
               </div>
 
               <div style={{ borderTop: '1px solid #eee', paddingTop: '1rem', display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1rem', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}><strong>County Wage Rate:</strong> Adjust based on your local caregiver hourly rate.</span>
-                <input type="number" step="0.05" value={ihssWage} onChange={(e) => setIhssWage(Math.max(16, parseFloat(e.target.value) || 16))} style={{ padding: '0.3rem', fontSize: '0.8rem', borderRadius: '4px', border: '1px solid #ccc' }} />
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}><strong>County Rate Estimate:</strong> Adjust this to your county&apos;s current caregiver rate. The default uses a checked California estimate for {defaultIhssDisclosure.countyName} County and should be verified before you rely on the payout math.</span>
+                <input type="number" step="0.05" value={ihssWage} onChange={(e) => setIhssWage(Math.max(16, parseFloat(e.target.value) || DEFAULT_CA_IHSS_ESTIMATE_HOURLY))} style={{ padding: '0.3rem', fontSize: '0.8rem', borderRadius: '4px', border: '1px solid #ccc' }} />
               </div>
+              <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.5rem' }}>
+                Source checked:{' '}
+                <a href={defaultIhssDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>
+                  {formatIhssEstimateSourceLabel(defaultIhssDisclosure)}
+                </a>
+                {' '}• Last checked {defaultIhssDisclosure.lastVerifiedDate}.
+              </span>
             </div>
 
             {/* caseworker handout */}
@@ -617,12 +631,15 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
           {/* Right Column: Calculator Output */}
           <div style={{ position: 'sticky', top: '100px', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             <div className="glass-panel" style={{ padding: '1.5rem', border: '2px solid var(--primary-color)', background: 'rgba(var(--primary-rgb), 0.01)' }}>
-              <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--primary-color)', textTransform: 'uppercase' }}>Estimated Authorization</span>
+              <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--primary-color)', textTransform: 'uppercase' }}>Estimated Planning Scenario</span>
               <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginTop: '0.2rem' }}>Total: {totalMonthlyHours} Hours/Mo</h3>
               
               <div style={{ background: '#eefcf5', border: '1px solid #cbf7e1', padding: '0.75rem', borderRadius: '8px', textAlign: 'center', margin: '0.75rem 0' }}>
-                <span style={{ fontSize: '0.7rem', color: 'var(--text-light)', display: 'block' }}>Monthly Provider Payout</span>
+                <span style={{ fontSize: '0.7rem', color: 'var(--text-light)', display: 'block' }}>Estimated Monthly Provider Payout</span>
                 <strong style={{ fontSize: '1.3rem', color: '#10b981' }}>${estimatedMonthlyPayout.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>
+                <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-light)', marginTop: '0.2rem' }}>
+                  Estimate only. Confirm the county rate, approval status, and authorized hours before relying on this amount.
+                </span>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.8rem' }}>
@@ -642,7 +659,7 @@ Calculated local hourly provider wage rate: $${ihssWage.toFixed(2)}/hour`;
             <div className="glass-panel" style={{ padding: '1.25rem', background: isSeverelyImpaired ? 'rgba(16, 185, 129, 0.02)' : 'rgba(245, 158, 11, 0.02)', border: `1px solid ${isSeverelyImpaired ? '#cbf7e1' : '#fef3c7'}` }}>
               <span style={{ fontSize: '0.65rem', fontWeight: 700, color: isSeverelyImpaired ? '#10b981' : '#f59e0b', textTransform: 'uppercase' }}>{isSeverelyImpaired ? (isSpanish ? 'Impedimento Severo' : 'High Needs') : (isSpanish ? 'Impedimento No Severo' : 'Standard Needs')}</span>
               <h4 style={{ fontSize: '0.88rem', fontWeight: 700, margin: '0.2rem 0' }}>{isSpanish ? 'Estado de Necesidad Confirmado (20+ hrs)' : 'High Needs Status Confirmed (20+ hrs)'}</h4>
-              <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--text-light)', lineHeight: 1.3 }}>{isSeverelyImpaired ? `Qualifies for maximum hours under ${stateConfig.personalCareProgram}.` : `Estimated base hours under ${stateConfig.personalCareProgram}.`}</p>
+              <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--text-light)', lineHeight: 1.3 }}>{isSeverelyImpaired ? `May support a high-hours request under ${stateConfig.personalCareProgram}, subject to agency review.` : `Estimated base hours under ${stateConfig.personalCareProgram}.`}</p>
             </div>
             <button
               onClick={handleSaveSchedule}
