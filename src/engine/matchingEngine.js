@@ -194,7 +194,7 @@ export function runMatchingEngine(profile) {
           results.possible.push(recommendation);
         }
       } else if (hasEligibleCondition) {
-        recommendation.whyMatched = `Because your child has ${condNames.join(', ')}, they may qualify for personal care support (bathing, dressing, diapers). Screen for safety concerns to unlock protective supervision.`;
+        recommendation.whyMatched = `Because your child has ${condNames.join(', ')}, they may be worth screening for personal care support (bathing, dressing, diapers). Screen for safety concerns to evaluate protective supervision rules.`;
         recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}`;
         recommendation.whatIsStillUnknown = 'Hours of daily physical care needed and safety elopement habits.';
         recommendation.whatToDoNext = 'Keep a daily care log for 2 weeks tracking safety hazards or extra hygiene routines.';
@@ -294,13 +294,13 @@ export function runMatchingEngine(profile) {
         recommendation.whatToDoNext = 'Call the SSA at 1-800-772-1213 to schedule a financial intake interview.';
         results.highPriority.push(recommendation);
       } else if (hasEligibleCondition) {
-        recommendation.whyMatched = `Because your child has a chronic condition (${condNames.join(', ')}), they may qualify for monthly financial aid if the household meets income/asset tests and has marked functional limitations.`;
+        recommendation.whyMatched = `Because your child has a chronic condition (${condNames.join(', ')}), SSI may be worth screening if the household meets the current income and asset tests and the child has marked functional limitations.`;
         recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}`;
         recommendation.whatIsStillUnknown = 'Household wealth and level of childhood developmental severity.';
         recommendation.whatToDoNext = 'Complete the online Child Disability Report (SSA-3820) and review the SSA Deeming Charts.';
         results.possible.push(recommendation);
       } else {
-        recommendation.whyMatched = 'SSI can provide cash aid for severe childhood disabilities in low-income families. Check the current financial tables and SSA rules to see whether your household may qualify.';
+        recommendation.whyMatched = 'SSI can provide cash aid for severe childhood disabilities in low-income families. Check the current financial tables and SSA rules to see whether your household may fit the current standards.';
         recommendation.childProfileTrigger = 'No automatic listing condition';
         results.possible.push(recommendation);
       }

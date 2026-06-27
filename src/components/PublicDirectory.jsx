@@ -188,7 +188,7 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
                 textAlign: 'center',
                 marginTop: '48px'
               }}>
-                <h3 style={{ fontSize: '20px', marginBottom: '8px' }}>Check if your child qualifies for {detailData.name}</h3>
+                <h3 style={{ fontSize: '20px', marginBottom: '8px' }}>Check whether {detailData.name} may fit your child&apos;s situation</h3>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '14px', marginBottom: '24px' }}>
                   Run a custom matching scan to see what exact files, rules, and local contacts apply based on their functional profile.
                 </p>

@@ -33,7 +33,6 @@ export async function GET() {
     { loc: '/', changefreq: 'monthly', priority: '1.0', routeType: 'static-page', stateId: '' },
     { loc: '/benefits', changefreq: 'weekly', priority: '0.9', routeType: 'static-page', stateId: '' },
     { loc: '/forms', changefreq: 'weekly', priority: '0.8', routeType: 'static-page', stateId: '' },
-    { loc: '/find-help', changefreq: 'weekly', priority: '0.75', routeType: 'static-page', stateId: '' },
     { loc: '/ihss-behavior-log', changefreq: 'weekly', priority: '0.75', routeType: 'static-page', stateId: '' },
     { loc: '/iep-goals', changefreq: 'weekly', priority: '0.75', routeType: 'static-page', stateId: '' },
     { loc: '/regional-center-funding', changefreq: 'weekly', priority: '0.75', routeType: 'static-page', stateId: '' },

@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import Database from 'better-sqlite3';
-import { evaluateSeoPolicy, assertNoPlaceholderData, mapShortDiagToDbId, normalizeConfidenceScore, stateAuditStatus } from '../frontend/src/lib/seo-policy.ts';
+import { evaluateSeoPolicy, getSeoPolicyForRoute, assertNoPlaceholderData, mapShortDiagToDbId, normalizeConfidenceScore, stateAuditStatus } from '../frontend/src/lib/seo-policy.ts';
 import {
   getCountyTruthEligibility,
   isPublicCountyOfficeEligible,
@@ -643,6 +643,17 @@ function verifyUnreadyRouteTypesAreNoindex() {
     logError("Gating failure: 'school-district' route type is indexable!");
   } else {
     logSuccess("'school-district' route type is correctly blocked.");
+  }
+
+  const findHelpPolicy = getSeoPolicyForRoute('static-page', {
+    path: '/find-help'
+  }, {
+    hasNoPlaceholderData: true
+  });
+  if (findHelpPolicy.index || findHelpPolicy.includeInSitemap) {
+    logError("Gating failure: '/find-help' should remain noindex and sitemap-blocked until explicitly certified.");
+  } else {
+    logSuccess("'/find-help' is correctly blocked from indexing and sitemap inclusion.");
   }
 }
 
