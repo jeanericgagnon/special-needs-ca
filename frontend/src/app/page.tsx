@@ -9,7 +9,6 @@ import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosur
 import { DIAGNOSES } from '@/lib/diagnoses';
 import { Metadata } from 'next';
 
-const LAST_REVIEWED_DATE = '2026-06-27';
 const SOURCE_CONFIDENCE = 0.95;
 
 const HOMEPAGE_SOURCES = [
@@ -17,7 +16,6 @@ const HOMEPAGE_SOURCES = [
     name: 'Medicaid.gov program and eligibility information',
     url: 'https://www.medicaid.gov/',
     verificationStatus: 'official_verified',
-    lastReviewedDate: LAST_REVIEWED_DATE,
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
   },
@@ -25,7 +23,6 @@ const HOMEPAGE_SOURCES = [
     name: 'Social Security Administration SSI for children',
     url: 'https://www.ssa.gov/ssi/text-child-ussi.htm',
     verificationStatus: 'official_verified',
-    lastReviewedDate: LAST_REVIEWED_DATE,
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
   },
@@ -33,7 +30,6 @@ const HOMEPAGE_SOURCES = [
     name: 'U.S. Department of Education IDEA information',
     url: 'https://sites.ed.gov/idea/',
     verificationStatus: 'official_verified',
-    lastReviewedDate: LAST_REVIEWED_DATE,
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
   },
