@@ -2454,7 +2454,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                   ⚖️ Special Education Attorney Safeguards
                 </h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.6', margin: 0 }}>
-                  If the school district violates statutory timelines or denies appropriate service placements, you have the right to consult a **Special Education Attorney**. In {stateName}, if you prevail in a due process hearing, the school district is legally required to reimburse your reasonable attorney&apos;s fees. Source-backed special education lawyers or advocates may represent you in mediation, due process filings, and state complaints.
+                  If the school district violates statutory timelines or denies services you believe are required, you may want to consult a special education attorney or qualified advocate. In some IDEA due process cases, hearing officers or courts may award reasonable attorney&apos;s fees to a prevailing parent under the current law, but families should confirm the present rule, scope, and local procedure before relying on that possibility. Any lawyer or advocate listing here should still be confirmed directly for fit, credentials, fees, and current availability.
                 </p>
               </div>
             </div>

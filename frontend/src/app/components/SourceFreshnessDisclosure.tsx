@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink, Calendar, ShieldCheck } from 'lucide-react';
 import ContributionModal from '@/components/contribution-modal';
+import { getSourceReviewDisplay } from '@/lib/sourceReviewLabels';
 
 export interface DisclosureSource {
   name: string;
@@ -45,7 +46,7 @@ export default function SourceFreshnessDisclosure({
       
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
-          We show the public sources we relied on, when we last checked them, and whether they were source-backed or still need deeper verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current official source for your county or program. If something looks wrong, please report a correction before relying on it.
+          We show the public sources we relied on, when we last checked them, and whether each item is reviewed, publicly linked, or still needs deeper verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current official source for your county or program. If something looks wrong, please report a correction before relying on it.
         </p>
 
         <div>
@@ -63,8 +64,7 @@ export default function SourceFreshnessDisclosure({
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem', marginTop: '0.5rem' }}>
           {sources.map((src, idx) => {
-            const status = (src.verificationStatus || 'unverified').toLowerCase();
-            const isVerified = status === 'official_verified' || status === 'human_verified' || status === 'verified';
+            const reviewDisplay = getSourceReviewDisplay(src.verificationStatus);
             const confidenceLabel = typeof src.confidenceScore === 'number' && Number.isFinite(src.confidenceScore)
               ? `${Math.round(src.confidenceScore * 100)}% confidence`
               : null;
@@ -104,14 +104,14 @@ export default function SourceFreshnessDisclosure({
                     style={{ 
                       fontSize: '0.68rem', 
                       fontWeight: 700, 
-                      color: isVerified ? '#0f766e' : '#64748b',
-                      background: isVerified ? 'rgba(15, 118, 110, 0.08)' : 'rgba(100, 116, 139, 0.08)',
+                      color: reviewDisplay.color,
+                      background: reviewDisplay.background,
                       padding: '0.15rem 0.45rem',
                       borderRadius: '10px',
-                      border: `1px solid ${isVerified ? '#0f766e30' : '#64748b30'}`
+                      border: `1px solid ${reviewDisplay.borderColor}`
                     }}
                   >
-                    {isVerified ? 'Source-backed' : 'Needs verification'}
+                    {reviewDisplay.label}
                   </span>
                 </div>
 
