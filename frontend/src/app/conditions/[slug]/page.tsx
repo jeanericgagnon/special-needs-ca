@@ -3,10 +3,13 @@ import { SEO_CLUSTERS } from '@/lib/seo-data';
 import { getCounties } from '@/lib/db';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
+import { getSeoPolicyForRoute, hasOfficialProgramSource } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+const CONDITION_SOURCE_CONFIDENCE = 0.85;
 
 export async function generateStaticParams() {
   const params: { slug: string }[] = [];
@@ -27,22 +30,53 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const cluster = SEO_CLUSTERS[slug];
   if (cluster) {
+    const policy = getSeoPolicyForRoute('static-page', {
+      path: `/conditions/${slug}`,
+      diagnosisId: slug,
+    }, {
+      hasNoPlaceholderData: true,
+      hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
+      lastVerifiedDate: cluster.lastReviewedDate || null,
+      confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+    });
     return {
       title: cluster.metaTitle,
       description: cluster.metaDescription,
+      alternates: {
+        canonical: `/conditions/${slug}`,
+      },
+      robots: policy.index ? undefined : { index: false, follow: true },
     };
   }
 
   const diagnosis = DIAGNOSES_DETAILS.find(d => d.id === slug);
   if (diagnosis) {
+    const diagnosisOfficialSources = [
+      'https://www.dds.ca.gov',
+      'https://www.cde.ca.gov',
+    ];
+    const policy = getSeoPolicyForRoute('static-page', {
+      path: `/conditions/${slug}`,
+      diagnosisId: slug,
+    }, {
+      hasNoPlaceholderData: true,
+      hasOfficialSource: diagnosisOfficialSources.some((url) => hasOfficialProgramSource(url)),
+      lastVerifiedDate: diagnosis.last_verified_date || null,
+      confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+    });
     return {
       title: `${diagnosis.name} Benefits in California | Program Guide`,
-      description: `Learn how to get Regional Center funding, school IEP support, and financial help for children with ${diagnosis.name} in California.`,
+      description: `Learn which California public programs, school supports, and intake paths may apply for children with ${diagnosis.name}, and confirm each next step against current public sources.`,
+      alternates: {
+        canonical: `/conditions/${slug}`,
+      },
+      robots: policy.index ? undefined : { index: false, follow: true },
     };
   }
 
   return {
     title: 'Condition Page Not Found',
+    robots: { index: false, follow: true },
   };
 }
 
@@ -67,12 +101,12 @@ export default async function ConditionPage({ params }: Props) {
     category: 'conditions' as const,
     title: `${diag.name} Benefits in California: Complete Parent Guide`,
     metaTitle: `${diag.name} Benefits California | Lanterman Act & School Aid`,
-    metaDescription: `Discover what public benefits, therapies, and school support plans your child is entitled to in California for ${diag.name}.`,
-    quickAnswer: `${diag.parent_friendly_explanation} In California, children with ${diag.name} can access specialized public benefits. This includes Individualized Education Programs (IEP) in public schools, Regional Center support under the Lanterman Act if developmental criteria are met, Medi-Cal, and Supplemental Security Income (SSI).`,
+    metaDescription: `Discover which California public benefits, therapies, and school support plans may apply for children with ${diag.name}, with source-backed next-step guidance.`,
+    quickAnswer: `${diag.parent_friendly_explanation} In California, children with ${diag.name} may qualify for specialized public benefit and school-support pathways depending on their diagnosis details, functional needs, and current program rules. That can include IEP evaluations in public schools, Regional Center review under the Lanterman Act when developmental criteria are met, Medi-Cal, and Supplemental Security Income (SSI).`,
     tldrPoints: [
-      { label: 'Regional Center Focus', value: diag.regional_center_relevance === 1 ? 'High Eligibility' : 'Conditional' },
-      { label: 'School IEP Support', value: diag.iep_relevance === 1 ? 'Available' : 'Conditional' },
-      { label: 'CCS Therapy Unit', value: diag.ccs_relevance === 1 ? 'Medically Eligible' : 'Check Medical Criteria' },
+      { label: 'Regional Center Fit', value: diag.regional_center_relevance === 1 ? 'High screening fit' : 'Conditional' },
+      { label: 'School IEP Support', value: diag.iep_relevance === 1 ? 'Likely worth screening' : 'Conditional' },
+      { label: 'CCS Therapy Unit', value: diag.ccs_relevance === 1 ? 'Medical screening fit' : 'Check medical criteria' },
       { label: 'CalABLE Savings', value: 'Tax-Exempt' }
     ],
     whenThisMatters: diag.age_specific_notes || 'Immediately at diagnosis or starting early intervention under age 3.',
@@ -103,8 +137,22 @@ export default async function ConditionPage({ params }: Props) {
       { title: 'Guides & Resources Index', url: '/benefits' }
     ],
     officialSources: ([
-      { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov' },
-      { name: 'California Department of Education', url: 'https://www.cde.ca.gov' }
+      {
+        name: 'California Department of Developmental Services',
+        url: 'https://www.dds.ca.gov',
+        verificationStatus: 'official_verified',
+        sourceType: 'official_state',
+        confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+        lastReviewedDate: diag.last_verified_date || null,
+      },
+      {
+        name: 'California Department of Education',
+        url: 'https://www.cde.ca.gov',
+        verificationStatus: 'official_verified',
+        sourceType: 'official_state',
+        confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+        lastReviewedDate: diag.last_verified_date || null,
+      }
     ]),
     lastReviewedDate: diag.last_verified_date || '',
     callScriptTemplate: {
