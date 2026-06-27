@@ -41,30 +41,41 @@ type FindHelpClientProps = {
   foundationSnapshot: DirectoryFoundationSnapshot;
 };
 
+const FIND_HELP_SOURCE_CONFIDENCE = 0.95;
+const FIND_HELP_LAST_REVIEWED_DATE = '2026-06-27';
+
 const FIND_HELP_CORE_SOURCES: DisclosureSource[] = [
   {
     name: 'California Department of Developmental Services regional center information',
     url: 'https://www.dds.ca.gov/rc/',
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
+    confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
+    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Education special education information',
     url: 'https://www.cde.ca.gov/sp/se/',
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
+    confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
+    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Social Services IHSS program information',
     url: 'https://www.cdss.ca.gov/in-home-supportive-services',
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
+    confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
+    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Health Care Services Medi-Cal for Kids & Teens',
     url: 'https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/Children.aspx',
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
+    confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
+    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
   },
 ];
 
