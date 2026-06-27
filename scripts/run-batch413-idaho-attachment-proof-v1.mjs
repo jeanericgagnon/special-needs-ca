@@ -58,6 +58,15 @@ function writeText(filePath, value) {
   fs.writeFileSync(filePath, value);
 }
 
+function deriveCounts(audit) {
+  const rows = Array.isArray(audit.states) ? audit.states : [];
+  return {
+    complete: rows.filter((row) => row.classification === 'COMPLETE').length,
+    blocked: rows.filter((row) => row.classification === 'BLOCKED').length,
+    indexSafe: rows.filter((row) => row.indexSafe === true).length,
+  };
+}
+
 function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
   return [
     '# Idaho California-Grade Audit Report v2',
@@ -241,6 +250,7 @@ export function generateBatch413IdahoAttachmentProofV1() {
     gapRows: updatedGapRows,
     failures: updatedFailureRows,
   };
+  const countsUnchanged = deriveCounts(updatedAudit);
 
   writeJson(INPUTS.summary, updatedSummary);
   writeJsonl(INPUTS.gap, updatedGapRows);
@@ -262,7 +272,7 @@ export function generateBatch413IdahoAttachmentProofV1() {
     clark_child_find_generic_only: true,
     clark_equal_education_wrong_role: true,
     completeness_pct: 87,
-    counts_unchanged: { complete: 44, blocked: 6, indexSafe: 44 },
+    counts_unchanged: countsUnchanged,
   });
   writeText(OUTPUTS.report, buildBatchReport());
 

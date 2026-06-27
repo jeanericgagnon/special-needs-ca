@@ -1,6 +1,6 @@
 {
   "batch": "batch413_idaho_attachment_proof_v1",
-  "generated_at": "2026-06-26T16:11:54.855Z",
+  "generated_at": "2026-06-27T00:08:51.970Z",
   "classification": "BLOCKED",
   "camas_board_doc_wrong_role": true,
   "camas_drive_item_http_500": true,
@@ -9,8 +9,8 @@
   "clark_equal_education_wrong_role": true,
   "completeness_pct": 87,
   "counts_unchanged": {
-    "complete": 44,
-    "blocked": 6,
-    "indexSafe": 44
+    "complete": 45,
+    "blocked": 5,
+    "indexSafe": 45
   }
 }

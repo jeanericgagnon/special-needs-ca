@@ -55,7 +55,7 @@ assert.equal(batchSummary.camas_drive_item_http_500, true);
 assert.equal(batchSummary.clark_manual_wrong_role, true);
 assert.equal(batchSummary.clark_child_find_generic_only, true);
 assert.equal(batchSummary.clark_equal_education_wrong_role, true);
-assert.deepEqual(batchSummary.counts_unchanged, { complete: 44, blocked: 6, indexSafe: 44 });
+assert.deepEqual(batchSummary.counts_unchanged, { complete: 45, blocked: 5, indexSafe: 45 });
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/idaho-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /board, finance, generic Child Find, or generic compliance artifacts/i);
