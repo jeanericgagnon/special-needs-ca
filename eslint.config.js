@@ -5,9 +5,18 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist', 'frontend']),
+  globalIgnores([
+    'dist',
+    'frontend',
+    'prototype_quarantine/**',
+    'scratch/**',
+    'data/**',
+    'docs/**',
+    'public/**',
+    'node_modules/**',
+  ]),
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,mjs,jsx,cjs}'],
     extends: [
       js.configs.recommended,
       reactHooks.configs.flat.recommended,
@@ -20,6 +29,8 @@ export default defineConfig([
   },
   {
     files: [
+      'scripts/**/*.mjs',
+      'scripts/**/*.js',
       'src/scrapers/**/*.js',
       'src/db/**/*.js',
       'src/scratch/**/*.js',

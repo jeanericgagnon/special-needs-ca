@@ -6,8 +6,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "New York Medicaid Application Guide",
     metaTitle: "New York Medicaid Application Guide | Parent Guide",
-    metaDescription: "Guide to apply for NY Medicaid. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Guide to apply for NY Medicaid. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -19,7 +19,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -37,7 +37,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -46,8 +46,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "OPWDD Transitional Referral Guide",
     metaTitle: "OPWDD Transitional Referral Guide | Parent Guide",
-    metaDescription: "Transitional referral for OPWDD. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Transitional referral for OPWDD. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -59,7 +59,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -77,7 +77,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -86,8 +86,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "OPWDD Front Door Guide",
     metaTitle: "OPWDD Front Door Guide | Parent Guide",
-    metaDescription: "OPWDD Front Door process guide. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "OPWDD Front Door process guide. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -99,7 +99,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -117,7 +117,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -126,8 +126,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY CDPAP Medical Evaluation (Form DOH-4359)",
     metaTitle: "NY CDPAP Medical Evaluation (Form DOH-4359) | Parent Guide",
-    metaDescription: "Medical evaluation for CDPAP. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Medical evaluation for CDPAP. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -139,7 +139,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -157,7 +157,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -166,8 +166,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY CDPAP Peer Agreement Guide",
     metaTitle: "NY CDPAP Peer Agreement Guide | Parent Guide",
-    metaDescription: "Peer agreement guidelines. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Peer agreement guidelines. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -179,7 +179,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -197,7 +197,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -206,8 +206,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY Child Health Plus Application Guide",
     metaTitle: "NY Child Health Plus Application Guide | Parent Guide",
-    metaDescription: "Apply for Child Health Plus. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Apply for Child Health Plus. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -219,7 +219,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -237,7 +237,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -246,8 +246,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY Early Intervention Program Referral",
     metaTitle: "NY Early Intervention Program Referral | Parent Guide",
-    metaDescription: "Early Intervention referral. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Early Intervention referral. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -259,7 +259,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -277,7 +277,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -286,8 +286,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "CSE Special Education Evaluation Request",
     metaTitle: "CSE Special Education Evaluation Request | Parent Guide",
-    metaDescription: "Request CSE evaluations. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Request CSE evaluations. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -299,7 +299,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -317,7 +317,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -326,8 +326,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY Special Education IEP Appeal Guide",
     metaTitle: "NY Special Education IEP Appeal Guide | Parent Guide",
-    metaDescription: "Appealing IEP decisions. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Appealing IEP decisions. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -339,7 +339,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -357,7 +357,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -366,8 +366,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY CSE Prior Written Notice Guide",
     metaTitle: "NY CSE Prior Written Notice Guide | Parent Guide",
-    metaDescription: "Prior Written Notice guide. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Prior Written Notice guide. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -379,7 +379,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -397,7 +397,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -406,8 +406,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NYSED Special Ed Due Process Complaint",
     metaTitle: "NYSED Special Ed Due Process Complaint | Parent Guide",
-    metaDescription: "Due Process complaint guidelines. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Due Process complaint guidelines. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -419,7 +419,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -437,7 +437,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -446,8 +446,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NYSED State Complaint Form",
     metaTitle: "NYSED State Complaint Form | Parent Guide",
-    metaDescription: "Submit a state complaint. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Submit a state complaint. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -459,7 +459,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -477,7 +477,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -486,8 +486,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY CSE Student Records Request",
     metaTitle: "NY CSE Student Records Request | Parent Guide",
-    metaDescription: "Request education records. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Request education records. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -499,7 +499,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -517,7 +517,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -526,8 +526,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY Independent Educational Evaluation (IEE) Request",
     metaTitle: "NY Independent Educational Evaluation (IEE) Request | Parent Guide",
-    metaDescription: "Request an IEE. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Request an IEE. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -539,7 +539,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -557,7 +557,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -566,8 +566,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY ABLE Account Opening Guide",
     metaTitle: "NY ABLE Account Opening Guide | Parent Guide",
-    metaDescription: "Opening an ABLE account. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Opening an ABLE account. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -579,7 +579,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -597,7 +597,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -606,8 +606,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY SSI Child Disability Application Checklist",
     metaTitle: "NY SSI Child Disability Application Checklist | Parent Guide",
-    metaDescription: "SSI application checklist. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "SSI application checklist. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -619,7 +619,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -637,7 +637,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -646,8 +646,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY ACCES-VR Transition Application",
     metaTitle: "NY ACCES-VR Transition Application | Parent Guide",
-    metaDescription: "ACCES-VR application guide. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "ACCES-VR application guide. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -659,7 +659,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -677,7 +677,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -686,8 +686,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "OPWDD Self-Direction Planning Guide",
     metaTitle: "OPWDD Self-Direction Planning Guide | Parent Guide",
-    metaDescription: "Planning self-direction. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Planning self-direction. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -699,7 +699,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -717,7 +717,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -726,8 +726,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY Medicaid Annual Renewal Guide",
     metaTitle: "NY Medicaid Annual Renewal Guide | Parent Guide",
-    metaDescription: "Medicaid renewal guide. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Medicaid renewal guide. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -739,7 +739,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -757,7 +757,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -766,8 +766,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "NY Medicaid Fair Hearing Request",
     metaTitle: "NY Medicaid Fair Hearing Request | Parent Guide",
-    metaDescription: "Fair hearing request guide. Official steps and required forms for families in New York.",
-    quickAnswer: "To apply or submit this form in New York, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (866) 762-2237.",
+    metaDescription: "Fair hearing request guide. Current steps and form links under review for families in New York.",
+    quickAnswer: "To apply or submit this form in New York, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (866) 762-2237.",
     tldrPoints: [
       { label: 'Agency', value: "OPWDD / New York Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -779,7 +779,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -797,7 +797,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "New York Official Services Portal", url: "https://www.state.gov/ny" }
+      { name: "New York State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -806,8 +806,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Pennsylvania Medicaid COMPASS Application Guide",
     metaTitle: "Pennsylvania Medicaid COMPASS Application Guide | Parent Guide",
-    metaDescription: "Guide to COMPASS application. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Guide to COMPASS application. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -819,7 +819,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -837,7 +837,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -846,8 +846,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA ODP Intake Request Guide",
     metaTitle: "PA ODP Intake Request Guide | Parent Guide",
-    metaDescription: "ODP intake registration. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "ODP intake registration. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -859,7 +859,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -877,7 +877,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -886,8 +886,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA ODP Waiver Guide",
     metaTitle: "PA ODP Waiver Guide | Parent Guide",
-    metaDescription: "Guide to ODP waiver services. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Guide to ODP waiver services. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -899,7 +899,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -917,7 +917,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -926,8 +926,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA PUNS Registration Guide",
     metaTitle: "PA PUNS Registration Guide | Parent Guide",
-    metaDescription: "PUNS database enrollment. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "PUNS database enrollment. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -939,7 +939,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -957,7 +957,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -966,8 +966,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA CHIP Application Guide",
     metaTitle: "PA CHIP Application Guide | Parent Guide",
-    metaDescription: "Apply for PA CHIP. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Apply for PA CHIP. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -979,7 +979,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -997,7 +997,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1006,8 +1006,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA Early Intervention Referral Guide",
     metaTitle: "PA Early Intervention Referral Guide | Parent Guide",
-    metaDescription: "Early intervention referral. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Early intervention referral. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1019,7 +1019,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1037,7 +1037,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1046,8 +1046,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA IEP Special Ed Evaluation Request",
     metaTitle: "PA IEP Special Ed Evaluation Request | Parent Guide",
-    metaDescription: "Request special education evaluations. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Request special education evaluations. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1059,7 +1059,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1077,7 +1077,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1086,8 +1086,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA NOREP/PWN Guide",
     metaTitle: "PA NOREP/PWN Guide | Parent Guide",
-    metaDescription: "NOREP form guidelines. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "NOREP form guidelines. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1099,7 +1099,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1117,7 +1117,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1126,8 +1126,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA Special Ed Due Process Complaint",
     metaTitle: "PA Special Ed Due Process Complaint | Parent Guide",
-    metaDescription: "Due Process complaint guide. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Due Process complaint guide. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1139,7 +1139,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1157,7 +1157,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1166,8 +1166,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA Bureau of Special Ed State Complaint",
     metaTitle: "PA Bureau of Special Ed State Complaint | Parent Guide",
-    metaDescription: "Submit a state complaint. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Submit a state complaint. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1179,7 +1179,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1197,7 +1197,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1206,8 +1206,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA School Student Records Request",
     metaTitle: "PA School Student Records Request | Parent Guide",
-    metaDescription: "Request school records. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Request school records. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1219,7 +1219,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1237,7 +1237,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1246,8 +1246,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA Independent Educational Evaluation Request",
     metaTitle: "PA Independent Educational Evaluation Request | Parent Guide",
-    metaDescription: "Request a PA IEE. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Request a PA IEE. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1259,7 +1259,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1277,7 +1277,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1286,8 +1286,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA ABLE Account Opening Guide",
     metaTitle: "PA ABLE Account Opening Guide | Parent Guide",
-    metaDescription: "Opening a PA ABLE account. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Opening a PA ABLE account. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1299,7 +1299,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1317,7 +1317,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1326,8 +1326,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA SSI Child Disability Checklist",
     metaTitle: "PA SSI Child Disability Checklist | Parent Guide",
-    metaDescription: "SSI application checklist. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "SSI application checklist. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1339,7 +1339,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1357,7 +1357,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1366,8 +1366,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA OVR Transition Referral Guide",
     metaTitle: "PA OVR Transition Referral Guide | Parent Guide",
-    metaDescription: "Referral for OVR services. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Referral for OVR services. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1379,7 +1379,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1397,7 +1397,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1406,8 +1406,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA Medicaid Annual Renewal Guide",
     metaTitle: "PA Medicaid Annual Renewal Guide | Parent Guide",
-    metaDescription: "Renewal guidelines. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Renewal guidelines. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1419,7 +1419,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1437,7 +1437,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1446,8 +1446,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA Medicaid Fair Hearing Request",
     metaTitle: "PA Medicaid Fair Hearing Request | Parent Guide",
-    metaDescription: "Fair hearing guidelines. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Fair hearing guidelines. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1459,7 +1459,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1477,7 +1477,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1486,8 +1486,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA ODP Consolidated Waiver Guide",
     metaTitle: "PA ODP Consolidated Waiver Guide | Parent Guide",
-    metaDescription: "Consolidated waiver guidelines. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Consolidated waiver guidelines. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1499,7 +1499,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1517,7 +1517,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1526,8 +1526,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA ODP Community Living Waiver Guide",
     metaTitle: "PA ODP Community Living Waiver Guide | Parent Guide",
-    metaDescription: "Community Living waiver guidelines. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "Community Living waiver guidelines. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1539,7 +1539,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1557,7 +1557,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1566,8 +1566,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "PA ODP P/FDS Waiver Guide",
     metaTitle: "PA ODP P/FDS Waiver Guide | Parent Guide",
-    metaDescription: "P/FDS waiver guidelines. Official steps and required forms for families in Pennsylvania.",
-    quickAnswer: "To apply or submit this form in Pennsylvania, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 692-7443.",
+    metaDescription: "P/FDS waiver guidelines. Current steps and form links under review for families in Pennsylvania.",
+    quickAnswer: "To apply or submit this form in Pennsylvania, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 692-7443.",
     tldrPoints: [
       { label: 'Agency', value: "ODP / Pennsylvania Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1579,7 +1579,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1597,7 +1597,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Pennsylvania Official Services Portal", url: "https://www.state.gov/pa" }
+      { name: "Pennsylvania State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1606,8 +1606,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Medicaid ABE Application Guide",
     metaTitle: "Illinois Medicaid ABE Application Guide | Parent Guide",
-    metaDescription: "Medicaid application guide. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Medicaid application guide. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1619,7 +1619,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1637,7 +1637,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1646,8 +1646,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois DD Intake Request Guide",
     metaTitle: "Illinois DD Intake Request Guide | Parent Guide",
-    metaDescription: "DHS DD intake registration. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "DHS DD intake registration. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1659,7 +1659,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1677,7 +1677,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1686,8 +1686,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois PUNS Registration Guide",
     metaTitle: "Illinois PUNS Registration Guide | Parent Guide",
-    metaDescription: "PUNS enrollment guidelines. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "PUNS enrollment guidelines. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1699,7 +1699,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1717,7 +1717,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1726,8 +1726,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Home Services Program (HSP) Application",
     metaTitle: "Illinois Home Services Program (HSP) Application | Parent Guide",
-    metaDescription: "HSP application guide. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "HSP application guide. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1739,7 +1739,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1757,7 +1757,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1766,8 +1766,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois All Kids CHIP Application Guide",
     metaTitle: "Illinois All Kids CHIP Application Guide | Parent Guide",
-    metaDescription: "Apply for All Kids. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Apply for All Kids. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1779,7 +1779,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1797,7 +1797,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1806,8 +1806,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Early Intervention Referral Guide",
     metaTitle: "Illinois Early Intervention Referral Guide | Parent Guide",
-    metaDescription: "EI referral guidelines. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "EI referral guidelines. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1819,7 +1819,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1837,7 +1837,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1846,8 +1846,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois IEP Special Ed Evaluation Request",
     metaTitle: "Illinois IEP Special Ed Evaluation Request | Parent Guide",
-    metaDescription: "Request school evaluations. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Request school evaluations. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1859,7 +1859,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1877,7 +1877,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1886,8 +1886,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "ISBE Special Ed Due Process Complaint",
     metaTitle: "ISBE Special Ed Due Process Complaint | Parent Guide",
-    metaDescription: "Due Process complaint guide. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Due Process complaint guide. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1899,7 +1899,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1917,7 +1917,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1926,8 +1926,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "ISBE Special Ed State Complaint Guide",
     metaTitle: "ISBE Special Ed State Complaint Guide | Parent Guide",
-    metaDescription: "Submit a state complaint. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Submit a state complaint. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1939,7 +1939,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1957,7 +1957,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -1966,8 +1966,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois School Student Records Request",
     metaTitle: "Illinois School Student Records Request | Parent Guide",
-    metaDescription: "Request school records. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Request school records. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -1979,7 +1979,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -1997,7 +1997,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2006,8 +2006,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Independent Educational Evaluation Request",
     metaTitle: "Illinois Independent Educational Evaluation Request | Parent Guide",
-    metaDescription: "Request an IEE. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Request an IEE. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2019,7 +2019,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2037,7 +2037,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2046,8 +2046,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois ABLE Account Opening Guide",
     metaTitle: "Illinois ABLE Account Opening Guide | Parent Guide",
-    metaDescription: "Opening an ABLE account. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Opening an ABLE account. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2059,7 +2059,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2077,7 +2077,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2086,8 +2086,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois SSI Child Disability Checklist",
     metaTitle: "Illinois SSI Child Disability Checklist | Parent Guide",
-    metaDescription: "SSI application checklist. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "SSI application checklist. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2099,7 +2099,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2117,7 +2117,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2126,8 +2126,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois DRS Transition Referral Guide",
     metaTitle: "Illinois DRS Transition Referral Guide | Parent Guide",
-    metaDescription: "DRS transition guidelines. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "DRS transition guidelines. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2139,7 +2139,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2157,7 +2157,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2166,8 +2166,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Medicaid Annual Renewal Guide",
     metaTitle: "Illinois Medicaid Annual Renewal Guide | Parent Guide",
-    metaDescription: "Medicaid renewal guidelines. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Medicaid renewal guidelines. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2179,7 +2179,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2197,7 +2197,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2206,8 +2206,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Medicaid Fair Hearing Request",
     metaTitle: "Illinois Medicaid Fair Hearing Request | Parent Guide",
-    metaDescription: "Fair hearing guidelines. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Fair hearing guidelines. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2219,7 +2219,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2237,7 +2237,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2246,8 +2246,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Children's Support Waiver Guide",
     metaTitle: "Illinois Children's Support Waiver Guide | Parent Guide",
-    metaDescription: "CSW waiver guidelines. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "CSW waiver guidelines. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2259,7 +2259,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2277,7 +2277,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2286,8 +2286,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois Adults DD Waiver Guide",
     metaTitle: "Illinois Adults DD Waiver Guide | Parent Guide",
-    metaDescription: "Adults DD waiver guidelines. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Adults DD waiver guidelines. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2299,7 +2299,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2317,7 +2317,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2326,8 +2326,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Illinois HSP Caregiver Agreement Guide",
     metaTitle: "Illinois HSP Caregiver Agreement Guide | Parent Guide",
-    metaDescription: "HSP caregiver forms. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "HSP caregiver forms. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2339,7 +2339,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2357,7 +2357,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2366,8 +2366,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "ISBE Special Ed Mediation Request",
     metaTitle: "ISBE Special Ed Mediation Request | Parent Guide",
-    metaDescription: "Request mediation. Official steps and required forms for families in Illinois.",
-    quickAnswer: "To apply or submit this form in Illinois, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 843-6154.",
+    metaDescription: "Request mediation. Current steps and form links under review for families in Illinois.",
+    quickAnswer: "To apply or submit this form in Illinois, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 843-6154.",
     tldrPoints: [
       { label: 'Agency', value: "DHS DDD / Illinois Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2379,7 +2379,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2397,7 +2397,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Illinois Official Services Portal", url: "https://www.state.gov/il" }
+      { name: "Illinois State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2406,8 +2406,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Medicaid Benefits Application Guide",
     metaTitle: "Ohio Medicaid Benefits Application Guide | Parent Guide",
-    metaDescription: "Apply for Ohio Medicaid. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Apply for Ohio Medicaid. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2419,7 +2419,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2437,7 +2437,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2446,8 +2446,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio DODD Intake Request Guide",
     metaTitle: "Ohio DODD Intake Request Guide | Parent Guide",
-    metaDescription: "DODD intake registration. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "DODD intake registration. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2459,7 +2459,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2477,7 +2477,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2486,8 +2486,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Individual Options (IO) Waiver Guide",
     metaTitle: "Ohio Individual Options (IO) Waiver Guide | Parent Guide",
-    metaDescription: "IO waiver guidelines. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "IO waiver guidelines. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2499,7 +2499,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2517,7 +2517,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2526,8 +2526,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Level One Waiver Guide",
     metaTitle: "Ohio Level One Waiver Guide | Parent Guide",
-    metaDescription: "Level One waiver guidelines. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Level One waiver guidelines. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2539,7 +2539,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2557,7 +2557,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2566,8 +2566,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio SELF Waiver Guide",
     metaTitle: "Ohio SELF Waiver Guide | Parent Guide",
-    metaDescription: "SELF waiver guidelines. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "SELF waiver guidelines. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2579,7 +2579,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2597,7 +2597,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2606,8 +2606,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Healthy Start CHIP Application Guide",
     metaTitle: "Ohio Healthy Start CHIP Application Guide | Parent Guide",
-    metaDescription: "Apply for Healthy Start. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Apply for Healthy Start. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2619,7 +2619,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2637,7 +2637,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2646,8 +2646,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Early Intervention Referral Guide",
     metaTitle: "Ohio Early Intervention Referral Guide | Parent Guide",
-    metaDescription: "Early Intervention referral. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Early Intervention referral. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2659,7 +2659,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2677,7 +2677,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2686,8 +2686,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio IEP Special Ed Evaluation Request",
     metaTitle: "Ohio IEP Special Ed Evaluation Request | Parent Guide",
-    metaDescription: "Request school evaluations. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Request school evaluations. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2699,7 +2699,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2717,7 +2717,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2726,8 +2726,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Special Ed Due Process Complaint",
     metaTitle: "Ohio Special Ed Due Process Complaint | Parent Guide",
-    metaDescription: "Due Process complaint guide. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Due Process complaint guide. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2739,7 +2739,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2757,7 +2757,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2766,8 +2766,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Special Ed State Complaint Guide",
     metaTitle: "Ohio Special Ed State Complaint Guide | Parent Guide",
-    metaDescription: "Submit a state complaint. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Submit a state complaint. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2779,7 +2779,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2797,7 +2797,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2806,8 +2806,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio School Student Records Request",
     metaTitle: "Ohio School Student Records Request | Parent Guide",
-    metaDescription: "Request school records. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Request school records. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2819,7 +2819,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2837,7 +2837,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2846,8 +2846,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Independent Educational Evaluation Request",
     metaTitle: "Ohio Independent Educational Evaluation Request | Parent Guide",
-    metaDescription: "Request an IEE. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Request an IEE. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2859,7 +2859,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2877,7 +2877,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2886,8 +2886,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio STABLE Account Opening Guide",
     metaTitle: "Ohio STABLE Account Opening Guide | Parent Guide",
-    metaDescription: "Opening a STABLE account. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Opening a STABLE account. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2899,7 +2899,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2917,7 +2917,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2926,8 +2926,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio SSI Child Disability Checklist",
     metaTitle: "Ohio SSI Child Disability Checklist | Parent Guide",
-    metaDescription: "SSI application checklist. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "SSI application checklist. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2939,7 +2939,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2957,7 +2957,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -2966,8 +2966,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio OOD Transition Referral Guide",
     metaTitle: "Ohio OOD Transition Referral Guide | Parent Guide",
-    metaDescription: "OOD transition guidelines. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "OOD transition guidelines. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -2979,7 +2979,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -2997,7 +2997,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3006,8 +3006,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Medicaid Annual Renewal Guide",
     metaTitle: "Ohio Medicaid Annual Renewal Guide | Parent Guide",
-    metaDescription: "Medicaid renewal guidelines. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Medicaid renewal guidelines. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3019,7 +3019,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3037,7 +3037,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3046,8 +3046,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio Medicaid Fair Hearing Request",
     metaTitle: "Ohio Medicaid Fair Hearing Request | Parent Guide",
-    metaDescription: "Fair hearing guidelines. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Fair hearing guidelines. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3059,7 +3059,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3077,7 +3077,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3086,8 +3086,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio DODD Waiting List Assessment Guide",
     metaTitle: "Ohio DODD Waiting List Assessment Guide | Parent Guide",
-    metaDescription: "Waiting list assessment. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Waiting list assessment. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3099,7 +3099,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3117,7 +3117,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3126,8 +3126,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio ODE Special Ed Mediation Request",
     metaTitle: "Ohio ODE Special Ed Mediation Request | Parent Guide",
-    metaDescription: "Request mediation. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "Request mediation. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3139,7 +3139,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3157,7 +3157,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3166,8 +3166,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Ohio STABLE Account Savings Guide",
     metaTitle: "Ohio STABLE Account Savings Guide | Parent Guide",
-    metaDescription: "STABLE savings guide. Official steps and required forms for families in Ohio.",
-    quickAnswer: "To apply or submit this form in Ohio, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (800) 282-9181.",
+    metaDescription: "STABLE savings guide. Current steps and form links under review for families in Ohio.",
+    quickAnswer: "To apply or submit this form in Ohio, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (800) 282-9181.",
     tldrPoints: [
       { label: 'Agency', value: "DODD / Ohio Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3179,7 +3179,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3197,7 +3197,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Ohio Official Services Portal", url: "https://www.state.gov/oh" }
+      { name: "Ohio State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3206,8 +3206,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Medicaid Gateway Application Guide",
     metaTitle: "Georgia Medicaid Gateway Application Guide | Parent Guide",
-    metaDescription: "Apply for GA Medicaid. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Apply for GA Medicaid. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3219,7 +3219,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3237,7 +3237,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3246,8 +3246,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia DBHDD Intake Request Guide",
     metaTitle: "Georgia DBHDD Intake Request Guide | Parent Guide",
-    metaDescription: "DBHDD intake registration. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "DBHDD intake registration. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3259,7 +3259,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3277,7 +3277,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3286,8 +3286,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia COMP Waiver Guide",
     metaTitle: "Georgia COMP Waiver Guide | Parent Guide",
-    metaDescription: "COMP waiver guidelines. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "COMP waiver guidelines. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3299,7 +3299,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3317,7 +3317,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3326,8 +3326,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia NOW Waiver Guide",
     metaTitle: "Georgia NOW Waiver Guide | Parent Guide",
-    metaDescription: "NOW waiver guidelines. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "NOW waiver guidelines. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3339,7 +3339,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3357,7 +3357,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3366,8 +3366,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Pediatric Program (GAPP) Guide",
     metaTitle: "Georgia Pediatric Program (GAPP) Guide | Parent Guide",
-    metaDescription: "Apply for GAPP. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Apply for GAPP. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3379,7 +3379,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3397,7 +3397,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3406,8 +3406,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia PeachCare for Kids Application Guide",
     metaTitle: "Georgia PeachCare for Kids Application Guide | Parent Guide",
-    metaDescription: "Apply for PeachCare. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Apply for PeachCare. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3419,7 +3419,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3437,7 +3437,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3446,8 +3446,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Babies Can't Wait Referral Guide",
     metaTitle: "Georgia Babies Can't Wait Referral Guide | Parent Guide",
-    metaDescription: "Babies Can't Wait referral. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Babies Can't Wait referral. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3459,7 +3459,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3477,7 +3477,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3486,8 +3486,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia IEP Special Ed Evaluation Request",
     metaTitle: "Georgia IEP Special Ed Evaluation Request | Parent Guide",
-    metaDescription: "Request school evaluations. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Request school evaluations. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3499,7 +3499,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3517,7 +3517,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3526,8 +3526,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Special Ed Due Process Complaint",
     metaTitle: "Georgia Special Ed Due Process Complaint | Parent Guide",
-    metaDescription: "Due Process complaint guide. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Due Process complaint guide. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3539,7 +3539,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3557,7 +3557,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3566,8 +3566,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Special Ed State Complaint Guide",
     metaTitle: "Georgia Special Ed State Complaint Guide | Parent Guide",
-    metaDescription: "Submit a state complaint. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Submit a state complaint. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3579,7 +3579,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3597,7 +3597,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3606,8 +3606,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia School Student Records Request",
     metaTitle: "Georgia School Student Records Request | Parent Guide",
-    metaDescription: "Request school records. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Request school records. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3619,7 +3619,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3637,7 +3637,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3646,8 +3646,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Independent Educational Evaluation Request",
     metaTitle: "Georgia Independent Educational Evaluation Request | Parent Guide",
-    metaDescription: "Request an IEE. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Request an IEE. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3659,7 +3659,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3677,7 +3677,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3686,8 +3686,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia ABLE Account Opening Guide",
     metaTitle: "Georgia ABLE Account Opening Guide | Parent Guide",
-    metaDescription: "Opening a GA ABLE account. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Opening a GA ABLE account. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3699,7 +3699,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3717,7 +3717,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3726,8 +3726,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia SSI Child Disability Checklist",
     metaTitle: "Georgia SSI Child Disability Checklist | Parent Guide",
-    metaDescription: "SSI application checklist. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "SSI application checklist. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3739,7 +3739,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3757,7 +3757,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3766,8 +3766,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia GVRA Transition Referral Guide",
     metaTitle: "Georgia GVRA Transition Referral Guide | Parent Guide",
-    metaDescription: "GVRA transition guidelines. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "GVRA transition guidelines. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3779,7 +3779,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3797,7 +3797,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3806,8 +3806,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Medicaid Annual Renewal Guide",
     metaTitle: "Georgia Medicaid Annual Renewal Guide | Parent Guide",
-    metaDescription: "Medicaid renewal guidelines. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Medicaid renewal guidelines. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3819,7 +3819,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3837,7 +3837,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3846,8 +3846,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia Medicaid Fair Hearing Request",
     metaTitle: "Georgia Medicaid Fair Hearing Request | Parent Guide",
-    metaDescription: "Fair hearing guidelines. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Fair hearing guidelines. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3859,7 +3859,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3877,7 +3877,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3886,8 +3886,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia GAPP Medical Necessity Guide",
     metaTitle: "Georgia GAPP Medical Necessity Guide | Parent Guide",
-    metaDescription: "GAPP medical necessity. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "GAPP medical necessity. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3899,7 +3899,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3917,7 +3917,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3926,8 +3926,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "GaDOE Special Ed Mediation Request",
     metaTitle: "GaDOE Special Ed Mediation Request | Parent Guide",
-    metaDescription: "Request mediation. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Request mediation. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3939,7 +3939,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3957,7 +3957,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   },
@@ -3966,8 +3966,8 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     category: 'forms',
     title: "Georgia DBHDD Planning List Registry Guide",
     metaTitle: "Georgia DBHDD Planning List Registry Guide | Parent Guide",
-    metaDescription: "Planning list registration. Official steps and required forms for families in Georgia.",
-    quickAnswer: "To apply or submit this form in Georgia, follow official procedures. Reviewed on 2026-06-12. For official assistance, contact the state office at (404) 885-1234.",
+    metaDescription: "Planning list registration. Current steps and form links under review for families in Georgia.",
+    quickAnswer: "To apply or submit this form in Georgia, review the current state process and confirm the latest submission route before relying on it. Reviewed on 2026-06-12. For state contact help, use (404) 885-1234.",
     tldrPoints: [
       { label: 'Agency', value: "DBHDD / Georgia Services" },
       { label: 'Processing Time', value: '30-45 Days standard' },
@@ -3979,7 +3979,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
       'Requesting school support or IEP evaluations.'
     ],
     whatToDoFirst: [
-      'Download the official form or log in to the state portal.',
+      'Open the current form link or state portal and confirm the latest submission route.',
       'Gather medical assessments and diagnostic reports.',
       'Submit the request in writing or online.'
     ],
@@ -3997,7 +3997,7 @@ export const FIVE_STATES_SEO_CLUSTERS: Record<string, SEOPageData> = {
     ],
     relatedGuides: [],
     officialSources: [
-      { name: "Georgia Official Services Portal", url: "https://www.state.gov/ga" }
+      { name: "Georgia State source link under review", url: "" }
     ],
     lastReviewedDate: '2026-06-12'
   }

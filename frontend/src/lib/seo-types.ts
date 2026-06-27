@@ -14,7 +14,14 @@ export interface SEOPageData {
   whatToSay: string;
   commonMistakes: string[];
   relatedGuides: { title: string; url: string }[];
-  officialSources: { name: string; url: string }[];
+  officialSources: {
+    name: string;
+    url: string;
+    sourceType?: string;
+    confidenceScore?: number | null;
+    verificationStatus?: string | null;
+    lastReviewedDate?: string | null;
+  }[];
   lastReviewedDate: string;
   callScriptTemplate?: {
     intro: string;

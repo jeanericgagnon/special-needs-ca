@@ -57,7 +57,7 @@ test.describe('Ohio Multi-State Launch Smoke Tests', () => {
       expect(bodyText).not.toContain('SELPA');
 
       // Verify source freshness disclosure is rendered at the bottom
-      expect(bodyText).toContain('VERIFIED SOURCES');
+      expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
       
       // Verify correction flow triggers exist (rendered inside TrustBadge) if the state is index-safe
       if (isIndexableState('ohio')) {
@@ -79,28 +79,22 @@ test.describe('Ohio Multi-State Launch Smoke Tests', () => {
     expect(bodyText).not.toContain('Regional Center');
   });
 
-  test('Ohio forms catalog and details guide load correctly', async ({ page }) => {
+  test('Ohio forms catalog holds and unpublished detail pages stay gated', async ({ page }) => {
     // 1. Ohio Forms Catalog page
     const formsResponse = await page.goto('/forms?state=ohio');
     expect(formsResponse?.status()).toBe(200);
 
     const formsH1 = page.locator('h1');
-    await expect(formsH1).toHaveText(/Ohio Special Needs Forms Directory/i);
+    await expect(formsH1).toHaveText(/Ohio Forms Verification In Progress/i);
 
     const bodyText = await page.innerText('body');
-    expect(bodyText).toContain('Ohio Medicaid & Waiver Guides');
-    expect(bodyText).toContain('Exceptional Children IEP');
+    expect(bodyText).toContain('We are still verifying local entries, current forms libraries, and submission routes for Ohio.');
+    expect(bodyText).toContain('We have not yet published a source-backed Ohio forms directory that meets our launch standard.');
     expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
 
-    // 2. Individual Ohio Parent Guide details page
+    // 2. Non-published Ohio detail guides should stay fail-closed until source-safe.
     const guideResponse = await page.goto('/forms/oh-iep-evaluation-request');
-    expect(guideResponse?.status()).toBe(200);
-
-    const guideH1 = page.locator('h1');
-    await expect(guideH1).toHaveText(/Ohio IEP Special Ed Evaluation Request/i);
-    
-    const guideBody = await page.innerText('body');
-    expect(guideBody).toContain('Ohio IEP Special Ed Evaluation Request');
+    expect(guideResponse?.status()).toBe(404);
   });
 
   test('Sitemap quality gates include Ohio county roots and leaves in sitemap', async ({ page }) => {

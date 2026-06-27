@@ -57,7 +57,7 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
       expect(bodyText).not.toContain('SELPA');
 
       // Verify source freshness disclosure is rendered at the bottom
-      expect(bodyText).toContain('VERIFIED SOURCES');
+      expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
       
       // Verify correction flow triggers exist (rendered inside TrustBadge) if the state is index-safe
       if (isIndexableState('florida')) {
@@ -85,12 +85,11 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
     expect(formsResponse?.status()).toBe(200);
 
     const formsH1 = page.locator('h1');
-    await expect(formsH1).toHaveText(/Florida Special Needs Forms Directory/i);
+    await expect(formsH1).toHaveText(/Florida Forms Verification In Progress/i);
 
     const bodyText = await page.innerText('body');
-    expect(bodyText).toContain('Florida Medicaid & Waiver Guides');
-    expect(bodyText).toContain('Florida Early Intervention & Family Support');
-    expect(bodyText).toContain('Florida Special Education & ESE Complaints');
+    expect(bodyText).toContain('We are still verifying local entries, current forms libraries, and submission routes for Florida.');
+    expect(bodyText).toContain('We have not yet published a source-backed Florida forms directory that meets our launch standard.');
     expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
 
     // 2. Individual Florida Parent Guide details page

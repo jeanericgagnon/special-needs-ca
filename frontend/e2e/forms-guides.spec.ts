@@ -43,11 +43,11 @@ test.describe('Forms and Guides E2E Tests', () => {
       expect(bodyText).toContain('Documents & Evidence to Gather');
 
       // Check official download link
-      const downloadLink = page.locator('a:has-text("Official Portal"), a:has-text("Source Website")');
+      const downloadLink = page.locator('a:has-text("Official Portal"), a:has-text("Source Website"), a:has-text("Open Source"), a:has-text("Download Official Form")');
       await expect(downloadLink.first()).toBeAttached();
 
       // Freshness Footnotes
-      const freshness = page.locator('text=Verified Sources & Freshness Information');
+      const freshness = page.getByText(/Source (Notes|Verified Sources) & Freshness Information/i);
       await expect(freshness).toBeVisible();
 
       // Printable templates or script helper (e.g. Call Script or Letter template)
@@ -79,7 +79,7 @@ test.describe('Forms and Guides E2E Tests', () => {
       expect(bodyText).toContain('Common Mistakes');
 
       // Check freshness disclosure
-      const freshness = page.locator('text=Verified Sources & Freshness Information');
+      const freshness = page.getByText(/Source (Notes|Verified Sources) & Freshness Information/i);
       await expect(freshness).toBeVisible();
 
       // Assert no null placeholders

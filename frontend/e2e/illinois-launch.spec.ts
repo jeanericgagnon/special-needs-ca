@@ -6,7 +6,7 @@ test.describe('Illinois Multi-State Launch Smoke Tests', () => {
   
   test('Illinois hub and counties list pages load cleanly', async ({ page }) => {
     // 1. Benefits state hub for Illinois
-    const hubResponse = await page.goto('/benefits/illinois');
+    const hubResponse = await page.goto('/benefits/illinois', { waitUntil: 'domcontentloaded' });
     expect(hubResponse?.status()).toBe(200);
     
     const hubH1 = page.locator('h1');
@@ -22,7 +22,7 @@ test.describe('Illinois Multi-State Launch Smoke Tests', () => {
     expect(bodyTextHub).not.toContain('Medi-Cal');
 
     // 2. Counties list page for Illinois
-    const countiesResponse = await page.goto('/counties/illinois');
+    const countiesResponse = await page.goto('/counties/illinois', { waitUntil: 'domcontentloaded' });
     expect(countiesResponse?.status()).toBe(200);
     
     const countiesH1 = page.locator('h1');
@@ -40,7 +40,7 @@ test.describe('Illinois Multi-State Launch Smoke Tests', () => {
 
     for (const county of pilotCounties) {
       const path = `/counties/illinois/${county}`;
-      const response = await page.goto(path);
+      const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
       expect(response?.status()).toBe(200);
 
       const bodyText = await page.innerText('body');
@@ -57,7 +57,7 @@ test.describe('Illinois Multi-State Launch Smoke Tests', () => {
       expect(bodyText).not.toContain('SELPA');
 
       // Verify source freshness disclosure is rendered at the bottom
-      expect(bodyText).toContain('VERIFIED SOURCES');
+      expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
       
       // Verify correction flow triggers exist (rendered inside TrustBadge) if the state is index-safe
       if (isIndexableState('illinois')) {
@@ -69,7 +69,7 @@ test.describe('Illinois Multi-State Launch Smoke Tests', () => {
 
   test('Illinois county benefits pages load cleanly', async ({ page }) => {
     const path = '/benefits/illinois/cook-il';
-    const response = await page.goto(path);
+    const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
     expect(response?.status()).toBe(200);
 
     const bodyText = await page.innerText('body');
@@ -79,28 +79,22 @@ test.describe('Illinois Multi-State Launch Smoke Tests', () => {
     expect(bodyText).not.toContain('Regional Center');
   });
 
-  test('Illinois forms catalog and details guide load correctly', async ({ page }) => {
+  test('Illinois forms catalog holds and unpublished detail pages stay gated', async ({ page }) => {
     // 1. Illinois Forms Catalog page
-    const formsResponse = await page.goto('/forms?state=illinois');
+    const formsResponse = await page.goto('/forms?state=illinois', { waitUntil: 'domcontentloaded' });
     expect(formsResponse?.status()).toBe(200);
 
     const formsH1 = page.locator('h1');
-    await expect(formsH1).toHaveText(/Illinois Special Needs Forms Directory/i);
+    await expect(formsH1).toHaveText(/Illinois Forms Verification In Progress/i);
 
     const bodyText = await page.innerText('body');
-    expect(bodyText).toContain('Illinois Medicaid & Waiver Guides');
-    expect(bodyText).toContain('ISBE Special Education');
+    expect(bodyText).toContain('We are still verifying local entries, current forms libraries, and submission routes for Illinois.');
+    expect(bodyText).toContain('We have not yet published a source-backed Illinois forms directory that meets our launch standard.');
     expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
 
-    // 2. Individual Illinois Parent Guide details page
-    const guideResponse = await page.goto('/forms/il-iep-evaluation-request');
-    expect(guideResponse?.status()).toBe(200);
-
-    const guideH1 = page.locator('h1');
-    await expect(guideH1).toHaveText(/Illinois IEP Special Ed Evaluation Request/i);
-    
-    const guideBody = await page.innerText('body');
-    expect(guideBody).toContain('Illinois IEP Special Ed Evaluation Request');
+    // 2. Non-published Illinois detail guides should stay fail-closed until source-safe.
+    const guideResponse = await page.goto('/forms/il-iep-evaluation-request', { waitUntil: 'domcontentloaded' });
+    expect(guideResponse?.status()).toBe(404);
   });
 
   test('Sitemap quality gates include Illinois county roots and leaves in sitemap', async ({ page }) => {

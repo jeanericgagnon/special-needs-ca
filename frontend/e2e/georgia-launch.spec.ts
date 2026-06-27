@@ -6,7 +6,7 @@ test.describe('Georgia Multi-State Launch Smoke Tests', () => {
   
   test('Georgia hub and counties list pages load cleanly', async ({ page }) => {
     // 1. Benefits state hub for Georgia
-    const hubResponse = await page.goto('/benefits/georgia');
+    const hubResponse = await page.goto('/benefits/georgia', { waitUntil: 'domcontentloaded' });
     expect(hubResponse?.status()).toBe(200);
     
     const hubH1 = page.locator('h1');
@@ -22,7 +22,7 @@ test.describe('Georgia Multi-State Launch Smoke Tests', () => {
     expect(bodyTextHub).not.toContain('Medi-Cal');
 
     // 2. Counties list page for Georgia
-    const countiesResponse = await page.goto('/counties/georgia');
+    const countiesResponse = await page.goto('/counties/georgia', { waitUntil: 'domcontentloaded' });
     expect(countiesResponse?.status()).toBe(200);
     
     const countiesH1 = page.locator('h1');
@@ -40,7 +40,7 @@ test.describe('Georgia Multi-State Launch Smoke Tests', () => {
 
     for (const county of pilotCounties) {
       const path = `/counties/georgia/${county}`;
-      const response = await page.goto(path);
+      const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
       expect(response?.status()).toBe(200);
 
       const bodyText = await page.innerText('body');
@@ -57,7 +57,7 @@ test.describe('Georgia Multi-State Launch Smoke Tests', () => {
       expect(bodyText).not.toContain('SELPA');
 
       // Verify source freshness disclosure is rendered at the bottom
-      expect(bodyText).toContain('VERIFIED SOURCES');
+      expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
       
       // Verify correction flow triggers exist (rendered inside TrustBadge) if the state is index-safe
       if (isIndexableState('georgia')) {
@@ -69,7 +69,7 @@ test.describe('Georgia Multi-State Launch Smoke Tests', () => {
 
   test('Georgia county benefits pages load cleanly', async ({ page }) => {
     const path = '/benefits/georgia/fulton-ga';
-    const response = await page.goto(path);
+    const response = await page.goto(path, { waitUntil: 'domcontentloaded' });
     expect(response?.status()).toBe(200);
 
     const bodyText = await page.innerText('body');
@@ -79,28 +79,22 @@ test.describe('Georgia Multi-State Launch Smoke Tests', () => {
     expect(bodyText).not.toContain('Regional Center');
   });
 
-  test('Georgia forms catalog and details guide load correctly', async ({ page }) => {
+  test('Georgia forms catalog holds and unpublished detail pages stay gated', async ({ page }) => {
     // 1. Georgia Forms Catalog page
-    const formsResponse = await page.goto('/forms?state=georgia');
+    const formsResponse = await page.goto('/forms?state=georgia', { waitUntil: 'domcontentloaded' });
     expect(formsResponse?.status()).toBe(200);
 
     const formsH1 = page.locator('h1');
-    await expect(formsH1).toHaveText(/Georgia Special Needs Forms Directory/i);
+    await expect(formsH1).toHaveText(/Georgia Forms Verification In Progress/i);
 
     const bodyText = await page.innerText('body');
-    expect(bodyText).toContain('Georgia Medicaid & Waiver Guides');
-    expect(bodyText).toContain('GaDOE Special Education');
+    expect(bodyText).toContain('We are still verifying local entries, current forms libraries, and submission routes for Georgia.');
+    expect(bodyText).toContain('We have not yet published a source-backed Georgia forms directory that meets our launch standard.');
     expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
 
-    // 2. Individual Georgia Parent Guide details page
-    const guideResponse = await page.goto('/forms/ga-iep-evaluation-request');
-    expect(guideResponse?.status()).toBe(200);
-
-    const guideH1 = page.locator('h1');
-    await expect(guideH1).toHaveText(/Georgia IEP Special Ed Evaluation Request/i);
-    
-    const guideBody = await page.innerText('body');
-    expect(guideBody).toContain('Georgia IEP Special Ed Evaluation Request');
+    // 2. Non-published Georgia detail guides should stay fail-closed until source-safe.
+    const guideResponse = await page.goto('/forms/ga-iep-evaluation-request', { waitUntil: 'domcontentloaded' });
+    expect(guideResponse?.status()).toBe(404);
   });
 
   test('Sitemap quality gates include Georgia county roots and leaves in sitemap', async ({ page }) => {

@@ -60,7 +60,7 @@ for (const state of wave3States) {
         expect(bodyText).not.toContain('IHSS');
         expect(bodyText).not.toContain('SELPA');
 
-        expect(bodyText).toContain('VERIFIED SOURCES');
+        expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
         
         const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
         await expect(correctionTriggers.first()).toBeVisible();
@@ -85,10 +85,11 @@ for (const state of wave3States) {
       expect(formsResponse?.status()).toBe(200);
 
       const formsH1 = page.locator('h1');
-      await expect(formsH1).toHaveText(new RegExp(`${state.name} Special Needs Forms Directory`, 'i'));
+      await expect(formsH1).toHaveText(new RegExp(`${state.name} Forms Verification In Progress`, 'i'));
 
       const bodyText = await page.innerText('body');
-      expect(bodyText).toContain('Medicaid');
+      expect(bodyText).toContain(`We are still verifying local entries, current forms libraries, and submission routes for ${state.name}.`);
+      expect(bodyText).toContain(`We have not yet published a source-backed ${state.name} forms directory that meets our launch standard.`);
       expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
     });
 

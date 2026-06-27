@@ -55,7 +55,7 @@ test.describe('Texas Multi-State Launch Smoke Tests', () => {
       expect(bodyText).not.toContain('SELPA');
 
       // Verify source freshness disclosure is rendered at the bottom
-      expect(bodyText).toContain('VERIFIED SOURCES');
+      expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
       
       // Verify correction flow triggers exist (rendered inside TrustBadge) if the state is index-safe
       if (isIndexableState('texas')) {
@@ -82,12 +82,11 @@ test.describe('Texas Multi-State Launch Smoke Tests', () => {
     expect(formsResponse?.status()).toBe(200);
 
     const formsH1 = page.locator('h1');
-    await expect(formsH1).toHaveText(/Texas Special Needs Forms Directory/i);
+    await expect(formsH1).toHaveText(/Texas Forms Verification In Progress/i);
 
     const bodyText = await page.innerText('body');
-    expect(bodyText).toContain('Texas Medicaid & Waiver Guides');
-    expect(bodyText).toContain('Texas Early Intervention & Support Services');
-    expect(bodyText).toContain('Texas Special Education & TEA Complaints');
+    expect(bodyText).toContain('We are still verifying local entries, current forms libraries, and submission routes for Texas.');
+    expect(bodyText).toContain('We have not yet published a source-backed Texas forms directory that meets our launch standard.');
     expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
 
     // 2. Individual Texas Parent Guide details page

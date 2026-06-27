@@ -42,7 +42,7 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
 
     // 6. Step 5: Results View
     // Wait for loader to finish and results to appear
-    const resultsHeader = page.locator('h2:has-text("Here are programs your child may qualify for")');
+    const resultsHeader = page.locator('h2:has-text("Here are programs that may be worth reviewing:")');
     await expect(resultsHeader).toBeVisible();
 
     // Verify the current truthful results experience renders California-specific guidance
@@ -84,7 +84,7 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
     }
 
     // Step 5: Results - Verify Early Start matches (under age 3)
-    await expect(page.locator('h2:has-text("Here are programs your child may qualify for")')).toBeVisible();
+    await expect(page.locator('h2:has-text("Here are programs that may be worth reviewing:")')).toBeVisible();
     
     const bodyText = await page.innerText('body');
     expect(bodyText).toContain('Early Start');
@@ -101,7 +101,7 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
 
     // Step 2: Custom / developmental delay
     await page.fill('#diagnosis', 'Developmental Delay');
-    await page.click('.autocomplete-item:has-text("Developmental Delay")');
+    await page.click('.autocomplete-item:has-text("Developmental Delay (CA Education Code)")');
     await page.click('button:has-text("Next Step")', { force: true });
 
     // Step 3: Generic needs
@@ -115,7 +115,7 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
     }
 
     // Step 5: Results - Verify Mariposa local contacts do not crash
-    await expect(page.locator('h2:has-text("Here are programs your child may qualify for")')).toBeVisible();
+    await expect(page.locator('h2:has-text("Here are programs that may be worth reviewing:")')).toBeVisible();
 
     const bodyText = await page.innerText('body');
     expect(bodyText).toContain('IEP');

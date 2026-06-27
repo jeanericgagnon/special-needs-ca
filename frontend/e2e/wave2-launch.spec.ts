@@ -36,7 +36,11 @@ const wave2States = [
     id: 'idaho',
     name: 'Idaho',
     code: 'ID',
-    counties: ['ada-id', 'adams-id']
+    counties: ['ada-id', 'adams-id'],
+    partialVerificationMode: true,
+    partialHeading: 'Idaho is live only in a partial verification mode',
+    partialCountiesHeading: 'Idaho county directory is still being verified',
+    partialCountyMarker: 'Verification Pending'
   }
 ];
 
@@ -48,12 +52,21 @@ for (const state of wave2States) {
       expect(hubResponse?.status()).toBe(200);
       
       const hubH1 = page.locator('h1');
-      await expect(hubH1).toHaveText(/Guides & Resources: Local Disability Benefits/i);
+      if (state.partialVerificationMode) {
+        await expect(hubH1).toHaveText(new RegExp(state.partialHeading!, 'i'));
+      } else {
+        await expect(hubH1).toHaveText(/Guides & Resources: Local Disability Benefits/i);
+      }
       
       const bodyTextHub = await page.innerText('body');
       expect(bodyTextHub).not.toContain('Application error: a client-side exception has occurred');
       expect(bodyTextHub).not.toContain('Internal Server Error');
-      expect(bodyTextHub).toContain(`${state.name} Medicaid`);
+      if (state.partialVerificationMode) {
+        expect(bodyTextHub).toContain('partial verification mode');
+        expect(bodyTextHub).toContain('noindex');
+      } else {
+        expect(bodyTextHub).toContain(`${state.name} Medicaid`);
+      }
       expect(bodyTextHub).not.toContain('LIDDA');
       expect(bodyTextHub).not.toContain('Regional Center');
       expect(bodyTextHub).not.toContain('Medi-Cal');
@@ -62,7 +75,11 @@ for (const state of wave2States) {
       expect(countiesResponse?.status()).toBe(200);
       
       const countiesH1 = page.locator('h1');
-      await expect(countiesH1).toHaveText(new RegExp(`${state.name} Counties Directory`, 'i'));
+      if (state.partialVerificationMode) {
+        await expect(countiesH1).toHaveText(new RegExp(state.partialCountiesHeading!, 'i'));
+      } else {
+        await expect(countiesH1).toHaveText(new RegExp(`${state.name} Counties Directory`, 'i'));
+      }
     });
 
     test(`At least 2 ${state.name} county detail pages load cleanly without California/Texas leak`, async ({ page }) => {
@@ -78,17 +95,23 @@ for (const state of wave2States) {
         expect(bodyText).not.toContain('Application error: a client-side exception has occurred');
         expect(bodyText).not.toContain('Internal Server Error');
 
-        expect(bodyText).toContain('Medicaid');
-        expect(bodyText).not.toContain('LIDDA');
-        expect(bodyText).not.toContain('Regional Center');
-        expect(bodyText).not.toContain('Medi-Cal');
-        expect(bodyText).not.toContain('IHSS');
-        expect(bodyText).not.toContain('SELPA');
+        if (state.partialVerificationMode) {
+          expect(bodyText).toContain(state.partialCountyMarker!);
+          expect(bodyText).toContain('Not Yet Index-Safe');
+          expect(bodyText).toContain('gated placeholder');
+        } else {
+          expect(bodyText).toContain('Medicaid');
+          expect(bodyText).not.toContain('LIDDA');
+          expect(bodyText).not.toContain('Regional Center');
+          expect(bodyText).not.toContain('Medi-Cal');
+          expect(bodyText).not.toContain('IHSS');
+          expect(bodyText).not.toContain('SELPA');
 
-        expect(bodyText).toContain('VERIFIED SOURCES');
-        
-        const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
-        await expect(correctionTriggers.first()).toBeVisible();
+          expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
+          
+          const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
+          await expect(correctionTriggers.first()).toBeVisible();
+        }
       }
     });
 
@@ -110,10 +133,11 @@ for (const state of wave2States) {
       expect(formsResponse?.status()).toBe(200);
 
       const formsH1 = page.locator('h1');
-      await expect(formsH1).toHaveText(new RegExp(`${state.name} Special Needs Forms Directory`, 'i'));
+      await expect(formsH1).toHaveText(new RegExp(`${state.name} Forms Verification In Progress`, 'i'));
 
       const bodyText = await page.innerText('body');
-      expect(bodyText).toContain('Medicaid');
+      expect(bodyText).toContain(`We are still verifying local entries, current forms libraries, and submission routes for ${state.name}.`);
+      expect(bodyText).toContain(`We have not yet published a source-backed ${state.name} forms directory that meets our launch standard.`);
       expect(bodyText).not.toContain('In-Home Supportive Services (IHSS) Forms');
     });
 
