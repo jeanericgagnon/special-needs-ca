@@ -8,6 +8,9 @@ const safeOfficialForm = {
   slug: 'california-safe-form',
   form_type: 'SOC 856',
   agency: 'California Department of Social Services',
+  who_uses_it: 'Parents or authorized representatives filing an appeal.',
+  who_signs_it: 'Parent or authorized representative',
+  where_to_send_it: 'Mail to the hearing address listed on the official form instructions.',
   source_url: 'https://cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2019/Q-T/SOC856.pdf',
   pdf_url: 'https://cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2019/Q-T/SOC856.pdf',
   evidence_level: 'ca_source_pack_published_v1',
@@ -41,5 +44,15 @@ const missingProvenanceForm = {
 };
 
 assert.equal(isSafePublishedFormGuide(missingProvenanceForm), false);
+
+const missingSignerOrRoute = {
+  ...safeOfficialForm,
+  id: 'form3',
+  slug: 'unsafe-missing-signer-route',
+  who_signs_it: 'See source instructions',
+  where_to_send_it: '',
+};
+
+assert.equal(isSafePublishedFormGuide(missingSignerOrRoute), false);
 
 console.log('published form guides tests passed');
