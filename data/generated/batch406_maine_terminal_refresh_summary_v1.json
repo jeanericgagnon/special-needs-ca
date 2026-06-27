@@ -1,6 +1,6 @@
 {
   "batch": "batch406_maine_terminal_refresh_v1",
-  "generated_at": "2026-06-27T00:14:58.276Z",
+  "generated_at": "2026-06-27T02:14:30.852Z",
   "classification": "BLOCKED",
   "offices_live": true,
   "ofi_contact_live": true,
@@ -10,6 +10,8 @@
   "county_xlsx_live": true,
   "county_town_xlsx_live": true,
   "maine_search_live": true,
+  "county_grade_office_contract_count": 0,
+  "county_grade_unmapped_count": 16,
   "office_page_has_no_county_names": true,
   "geographic_reports_county_town_only": true,
   "no_office_assignment_terms_in_reports": true,

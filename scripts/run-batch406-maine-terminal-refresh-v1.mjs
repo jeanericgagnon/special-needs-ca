@@ -18,7 +18,6 @@ const INPUTS = {
   report: path.join(docsGeneratedDir, 'maine-california-grade-audit-report-v2.md'),
   audit: path.join(generatedDir, 'all_state_california_grade_audit_v3.json'),
   allStateReport: path.join(docsGeneratedDir, 'all-state-california-grade-audit-report-v3.md'),
-  handoff: path.join(docsGeneratedDir, 'gemini-source-scout-handoff.md'),
   stateCertification: path.join(generatedDir, 'state-certification', 'maine.json'),
 };
 
@@ -74,15 +73,6 @@ function updateAllStateReport(report) {
   return `${report.trimEnd()}\n${line}\n`;
 }
 
-function updateHandoff(text) {
-  return text
-    .replace(/Current Focus State: [^\n]+/, 'Current Focus State: Maine')
-    .replace(
-      /- Maine: `[^`]+`/,
-      '- Maine: `bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract`',
-    );
-}
-
 function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
   return [
     '# Maine California-Grade Audit Report v2',
@@ -108,6 +98,11 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Next actions',
     '',
     ...nextRows.map((row) => `- [${row.severity}] ${row.family}: ${row.next_action}`),
+    '',
+    '## County-local accounting',
+    '',
+    `- county-grade office-routing coverage (0/${summary.county_count}): no reviewed public county-to-office or service-area assignment contract`,
+    '- reviewed public evidence types: office inventory, DHHS/OFI navigation surfaces, geographic count PDFs, county workbook, county-and-town workbook, and search surfaces',
     '',
     '## Completion decision',
     '',
@@ -139,7 +134,6 @@ export function generateBatch406MaineTerminalRefreshV1() {
   const queueRows = readJsonl(INPUTS.queue);
   const allStateAudit = readJson(INPUTS.audit);
   const allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
-  const handoff = fs.readFileSync(INPUTS.handoff, 'utf8');
   const stateCertification = readJson(INPUTS.stateCertification);
 
   const updatedSummary = {
@@ -149,6 +143,8 @@ export function generateBatch406MaineTerminalRefreshV1() {
     index_safe: false,
     completeness_pct: 91,
     primary_gap_reason: PRIMARY_GAP_REASON,
+    county_local_office_contract_count: 0,
+    county_local_unmapped_counties: summary.county_count,
     familyStatuses: {
       ...(summary.familyStatuses || {}),
       county_local_disability_resources: COUNTY_STATUS,
@@ -160,6 +156,8 @@ export function generateBatch406MaineTerminalRefreshV1() {
         failure_code: FAILURE_CODE,
         evidence: COUNTY_REASON,
         next_action: NEXT_ACTION,
+        office_contract_count: 0,
+        unmapped_counties: summary.county_count,
       },
     ],
   };
@@ -209,6 +207,7 @@ export function generateBatch406MaineTerminalRefreshV1() {
           completeness_pct: 91,
           weak_critical_families: 1,
           recommended_batch: 'hold_for_new_official_county_crosswalk_contract',
+          final_blockers: updatedSummary.final_blockers,
         }
       : row,
   );
@@ -225,6 +224,7 @@ export function generateBatch406MaineTerminalRefreshV1() {
   if (auditRow) {
     auditRow.packetBatch = BATCH;
     auditRow.packetPrimaryGapReason = PRIMARY_GAP_REASON;
+    auditRow.packetFinalBlockers = updatedSummary.final_blockers;
     auditRow.familyStatuses = {
       ...auditRow.familyStatuses,
       county_local_disability_resources: COUNTY_STATUS,
@@ -232,7 +232,6 @@ export function generateBatch406MaineTerminalRefreshV1() {
   }
   writeJson(INPUTS.audit, allStateAudit);
   writeText(INPUTS.allStateReport, updateAllStateReport(allStateReport));
-  writeText(INPUTS.handoff, updateHandoff(handoff));
 
   const updatedStateCertification = {
     ...stateCertification,
@@ -255,6 +254,8 @@ export function generateBatch406MaineTerminalRefreshV1() {
     county_xlsx_live: true,
     county_town_xlsx_live: true,
     maine_search_live: true,
+    county_grade_office_contract_count: 0,
+    county_grade_unmapped_count: summary.county_count,
     office_page_has_no_county_names: true,
     geographic_reports_county_town_only: true,
     no_office_assignment_terms_in_reports: true,

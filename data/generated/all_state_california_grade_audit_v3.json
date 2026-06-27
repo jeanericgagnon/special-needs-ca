@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T02:10:22.514Z",
+  "generatedAt": "2026-06-27T02:14:09.834Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 45,
@@ -152,24 +152,7 @@
       "packetGenerated": true,
       "packetBatch": "batch404_alaska_terminal_refresh_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract",
-      "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract",
-      "packetFinalBlockers": [
-        {
-          "family": "county_local_disability_resources",
-          "failure_code": "reviewed_live_dpa_offices_page_proves_regional_offices_but_no_borough_assignment_and_raw_health_fetches_still_403",
-          "evidence": "Reviewed 2026-06-26 one more bounded live Alaska county-local pass. In the reviewed browser lane, the exact official DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is publicly readable again and truthfully proves named regional offices, office hours, full street addresses, fax numbers, a virtual contact center, and secure upload routing on the current health host. The live page now proves only five regional groupings: `Alaska Peninsula`, `Northern Alaska`, `Southcentral Alaska`, `Southeast Alaska`, and `Southwest Alaska`. Under those headings it names only city- or office-level locations such as Homer, Kenai, Fairbanks, Nome, Anchorage, Matanuska-Susitna Valley, Juneau, Ketchikan, Sitka, Bethel, and Kodiak. The same reviewed page still contains no literal `borough` or `census area` terms and does not assign any Alaska boroughs or census areas to those offices. In the raw low-token lane, the wider health-host family still fails closed: `https://health.alaska.gov/en/division-of-public-assistance/`, `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf`, and `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` still return HTTP 403 with the Cloudflare `Just a moment...` shell. The DFCS successor family is still publicly reachable but still does not restore county-equivalent routing: `https://dfcs.alaska.gov/Pages/default.aspx`, `/Pages/Services.aspx`, `/pages/search.aspx`, and `/Commissioner/Pages/Contacts/default.aspx` still return HTTP 200 SharePoint pages, but `https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance` still returns HTTP 404 and the reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. The freshly rechecked DFCS Site Map branch also still fails closed as a repair lane: `https://dfcs.alaska.gov/Pages/Site-Map.aspx` is live, but the extra surfaced DAPH leaves `/daph/Pages/services.aspx` and `/daph/Pages/paymentassistance/default.aspx` resolve to Alaska Pioneer Homes services and payment-assistance content rather than public-assistance office routing, while the only office-looking DFCS child lane remains the wrong-role OCS Regional Offices page. Alaska therefore still lacks any reviewable public borough- or census-area-to-office contract.",
-          "next_action": "hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api",
-          "borough_contract_count": 0,
-          "unmapped_geographies_count": 20,
-          "reviewed_region_groupings": [
-            "Alaska Peninsula",
-            "Northern Alaska",
-            "Southcentral Alaska",
-            "Southeast Alaska",
-            "Southwest Alaska"
-          ]
-        }
-      ]
+      "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
     },
     {
       "stateId": "arizona",
@@ -1369,7 +1352,18 @@
       "packetGenerated": true,
       "packetBatch": "batch406_maine_terminal_refresh_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract",
-      "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract"
+      "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract",
+      "packetFinalBlockers": [
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_maine_dhhs_ofi_surfaces_still_expose_offices_and_counts_without_county_assignment_contract",
+          "evidence": "Reviewed 2026-06-26 one more bounded live Maine DHHS/OFI county-local pass. The exact public office and report surfaces are still live and reviewable: `https://www.maine.gov/dhhs/about/contact/offices`, `/ofi/about-us/contact`, `/ofi/programs-services`, `/ofi/about-us/data-reports`, `/offices-divisions`, `/about/contact/administrative-offices`, and `/about/sitemap` all still return HTTP 200. The current official report artifacts are also still live: the Geographic Distribution PDF, Geographic Overflow PDF, counts-by-county workbook, and counts-by-county-and-town workbook all still return HTTP 200. A fresh document-level recheck now proves those reports are geographic counts only, not routing contracts: the 2026 county workbook preserves headers like `COUNTY` and `TOTAL COUNT`; the county-and-town workbook preserves `COUNTY` plus `TOWN`; and the 2026 Geographic Distribution / Overflow PDFs enumerate counties and towns such as Androscoggin, Aroostook, Auburn, Augusta, Bangor, Machias, Portland, Rockland, Sanford, and Skowhegan only as benefit-geography rows. The public District Office Locations page also remains office-address only and does not name counties on-page. No reviewed live DHHS/OFI page, workbook, PDF, sitemap, or search surface publishes `county served`, `service area`, district-office assignments, or any county-to-office routing table. Maine therefore still lacks a reviewable public county-to-office or service-area routing contract on the live DHHS/OFI stack.",
+          "next_action": "hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing",
+          "office_contract_count": 0,
+          "unmapped_counties": 16
+        }
+      ]
     },
     {
       "stateId": "maryland",

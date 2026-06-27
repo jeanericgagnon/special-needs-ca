@@ -46,6 +46,11 @@
 
 - [critical] county_local_disability_resources: hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing
 
+## County-local accounting
+
+- county-grade office-routing coverage (0/16): no reviewed public county-to-office or service-area assignment contract
+- reviewed public evidence types: office inventory, DHHS/OFI navigation surfaces, geographic count PDFs, county workbook, county-and-town workbook, and search surfaces
+
 ## Completion decision
 
 - Maine remains BLOCKED and not index-safe.
