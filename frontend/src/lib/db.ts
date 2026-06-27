@@ -1863,7 +1863,7 @@ function runMigrations(db: Database.Database) {
             null,
             'any',
             'any',
-            `Disability onset of ${cond.name} before age 26 qualifies for a tax-advantaged CalABLE savings account.`
+            `Disability onset of ${cond.name} before age 26 may support eligibility for a tax-advantaged CalABLE savings account, subject to the current account rules.`
           );
         }
 

@@ -678,7 +678,7 @@ Phone: [Insert Phone]`
     ],
     whatToSay: 'I am requesting a Lanterman Act eligibility assessment for my child. They have a developmental delay originating before age 18 that impacts their communication, learning, and self-care.',
     commonMistakes: [
-      'Assuming ADHD qualifies for Regional Center. Under DDS rules, ADHD is generally not a qualifying condition unless accompanied by an intellectual disability or eligible Autism.',
+      'Assuming ADHD alone will qualify for Regional Center. Under DDS rules, ADHD is generally not a qualifying condition unless it appears alongside an intellectual disability or another eligible developmental-disability pathway.',
       'Allowing the center to deny you verbally. Always demand a written Notice of Action (NOA) of eligibility denial so you can file an appeal.',
       'Understating the child\'s deficits during the intake interview.'
     ],
@@ -2444,7 +2444,7 @@ Dear CCS Intake Coordinator,
 
 Please find enclosed the completed CCS Application Form DHCS 4480 along with supporting medical records for my child, ${f.childName || '[Child Name]'}.
 
-My child has a physical medical diagnosis of [Insert Diagnosis] which qualifies for the CCS program. We request enrollment in the program and an evaluation for physical and occupational therapy at our local Medical Therapy Unit (MTU).
+My child has a physical medical diagnosis of [Insert Diagnosis] that may meet the current CCS program criteria. We request enrollment review in the program and an evaluation for physical and occupational therapy at our local Medical Therapy Unit (MTU).
 
 Sincerely,
 ${f.parentName || '[Parent Name]'}`
@@ -3600,7 +3600,7 @@ ${fields.parentName}`
       { label: 'Intake Assessment', value: 'STAR Kids Screening and Assessment Instrument (SK-SAI)' },
       { label: 'MCO Options', value: 'Regional (Superior, Aetna, Driscoll, Cook, etc.)' }
     ],
-    whenThisMatters: 'When your child qualifies for Texas Medicaid (via SSI, MDCP, CLASS, or HCS waivers) and you must choose an MCO and set up care coordination.',
+    whenThisMatters: 'When your child is enrolled in Texas Medicaid (via SSI, MDCP, CLASS, HCS, or another approved pathway) and you must choose an MCO and set up care coordination.',
     signsThisMayApply: [
       'Child is newly enrolled in Medicaid and has a developmental disability or complex medical needs.',
       'Child is placed on MDCP or CLASS waivers and transitioned into STAR Kids.'
@@ -3860,7 +3860,7 @@ I am writing to formally appeal the proposed reduction of ${f.reducedService || 
 
 Pursuant to federal regulations (42 CFR Section 431.230) and Texas Administrative Code guidelines, I am formally requesting that my child\'s services continue at the previously authorized level while this appeal is pending.
 
-This appeal is being submitted within 10 calendar days of the notice date. Please review whether my child qualifies for continued benefits during the appeal process (Aid Paid Pending). 
+This appeal is being submitted within 10 calendar days of the notice date. Please review whether my child may be eligible for continued benefits during the appeal process (Aid Paid Pending). 
 
 I have attached clinical documentation confirming that my child\'s medical condition remains unchanged and that any reduction in services would jeopardize their safety and health. Please issue a continuation authorization to our provider agency immediately.
 
@@ -4906,7 +4906,7 @@ ${f.parentName || '[Parent Name]'}`
     whoToCall: [
       { name: 'Florida KidCare Hotline', number: '888-540-5437', description: 'Central support line' }
     ],
-    whatToSay: 'I am applying for KidCare coverage. I want to check which plan option my child qualifies for based on our income.',
+    whatToSay: 'I am applying for KidCare coverage. I want to check which plan option my child may be eligible for based on our income.',
     commonMistakes: [
       'Failing to pay the monthly premium on time, which can cancel coverage.',
       'Not disclosing child\'s pre-existing special needs.'
