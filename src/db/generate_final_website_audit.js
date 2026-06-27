@@ -112,6 +112,9 @@ const launchPlanPath = latestGeneratedJson('launch-critical-data-acquisition-pla
 const exhaustiveGapPath = latestGeneratedJson('exhaustive-gap-master-');
 const scrapeUniverseQueuePath = latestGeneratedJson('scrape-target-universe-queue-');
 const completionPlanPath = latestGeneratedJson('source-acquisition-completion-plan-');
+const californiaGradeAuditPath = path.join(repoRoot, 'data', 'generated', 'all_state_california_grade_audit_v3.json');
+const californiaGradeQueuePath = path.join(repoRoot, 'data', 'generated', 'all_state_priority_queue_v3.jsonl');
+const partialLaunchPolicyPath = path.join(repoRoot, 'data', 'generated', 'launch_partial_state_policy_v1.json');
 
 const informationInventory = readJson(informationInventoryPath);
 const fullGap = readJson(fullGapPath);
@@ -119,7 +122,49 @@ const launchPlan = readJson(launchPlanPath);
 const exhaustiveGap = readJson(exhaustiveGapPath);
 const scrapeUniverseQueue = readJson(scrapeUniverseQueuePath);
 const completionPlan = readJson(completionPlanPath);
+const californiaGradeAudit = fs.existsSync(californiaGradeAuditPath) ? readJson(californiaGradeAuditPath) : null;
+const californiaGradeQueue = fs.existsSync(californiaGradeQueuePath)
+  ? fs.readFileSync(californiaGradeQueuePath, 'utf8').split('\n').filter(Boolean).map((line) => JSON.parse(line))
+  : [];
+const partialLaunchPolicy = fs.existsSync(partialLaunchPolicyPath) ? readJson(partialLaunchPolicyPath) : null;
 const executiveTruth = exhaustiveGap.executiveTruth || {};
+
+const launchTruth = californiaGradeAudit
+  ? {
+      completeStates: californiaGradeAudit.classifications?.COMPLETE || 0,
+      blockedStates: californiaGradeAudit.classifications?.BLOCKED || 0,
+      indexSafeStates: californiaGradeAudit.indexSafeCount || 0,
+      incorrectlyIndexSafeStates: californiaGradeAudit.incorrectlyIndexSafeStates || [],
+      blockedStateIds: (californiaGradeAudit.states || [])
+        .filter((row) => row.classification === 'BLOCKED')
+        .map((row) => row.stateId),
+      completeStateIds: (californiaGradeAudit.states || [])
+        .filter((row) => row.classification === 'COMPLETE')
+        .map((row) => row.stateId),
+    }
+  : {
+      completeStates: 0,
+      blockedStates: 0,
+      indexSafeStates: 0,
+      incorrectlyIndexSafeStates: [],
+      blockedStateIds: [],
+      completeStateIds: [],
+    };
+
+const queueTruthMismatchCount = californiaGradeQueue.reduce((count, row) => {
+  const auditRow = californiaGradeAudit?.states?.find((stateRow) => stateRow.stateId === row.state);
+  if (!auditRow) return count + 1;
+  return count + (
+    auditRow.classification !== row.classification ||
+    auditRow.indexSafe !== row.index_safe ||
+    auditRow.completenessPct !== row.completeness_pct ||
+    auditRow.missingCriticalFamilies !== row.missing_critical_families ||
+    auditRow.weakCriticalFamilies !== row.weak_critical_families ||
+    (auditRow.packetPrimaryGapReason || 'none') !== row.primary_gap_reason
+      ? 1
+      : 0
+  );
+}, 0);
 
 const db = new Database(dbPath, { readonly: true });
 
@@ -341,18 +386,19 @@ const familyAudits = [
       'Verification metadata must remain complete for public-serving layers.',
     ],
     currentHave: [
-      `${executiveTruth.strictGoldStates}/50 strict-gold states`,
-      `${executiveTruth.publicSafeButBlockedStates}/50 public-safe but blocked states`,
-      `${informationInventory.summary.indexableStateCount} indexable states in the public truth contract`,
+      `${launchTruth.completeStates}/50 California-grade COMPLETE states`,
+      `${launchTruth.blockedStates}/50 BLOCKED states held in noindex launch posture`,
+      `${launchTruth.indexSafeStates} index-safe states in the current launch contract`,
       `${informationInventory.summary.verifiedDiagnosisCount} verified diagnosis slugs`,
     ],
     staging: [
-      `Blocked strict-gold state IDs: ${(executiveTruth.blockedStateIds || []).join(', ')}`,
+      `Partial-gated blocked states: ${(partialLaunchPolicy?.states || []).map((row) => row.stateId).join(', ') || 'none'}`,
     ],
     queue: [
-      'No direct scrape lane; enforced through truth audits, render gating, and promotion rules.',
+      `Audit vs queue mismatch count: ${queueTruthMismatchCount}`,
+      'No direct scrape lane; enforced through truth audits, render gating, sitemap policy, and promotion rules.',
     ],
-    gap: 'California is still the only strict-gold exception; deeper local data must not bypass truth gating.',
+    gap: 'The remaining launch work is not broader indexing. It is keeping the 5 blocked states visible only through explicit partial-state gating without implying local proof.',
   },
   {
     id: 'geography',
@@ -749,9 +795,18 @@ const payload = {
     exhaustiveGapPath,
     scrapeUniverseQueuePath,
     completionPlanPath,
+    californiaGradeAuditPath,
+    californiaGradeQueuePath,
+    partialLaunchPolicyPath,
     dbPath,
   },
   executiveSummary: {
+    launchCompleteStates: launchTruth.completeStates,
+    launchBlockedStates: launchTruth.blockedStates,
+    launchIndexSafeStates: launchTruth.indexSafeStates,
+    launchIncorrectlyIndexSafeStates: launchTruth.incorrectlyIndexSafeStates,
+    partialGatedStateIds: (partialLaunchPolicy?.states || []).map((row) => row.stateId),
+    auditQueueMismatchCount: queueTruthMismatchCount,
     currentModeledCompletenessStates: executiveTruth.currentModeledCompletenessStates,
     currentHighConfidenceStates: executiveTruth.currentHighConfidenceStates,
     strictGoldStates: executiveTruth.strictGoldStates,
@@ -784,6 +839,11 @@ const mdLines = [
   '',
   '## Executive Read',
   '',
+  `- Launch-ready COMPLETE states: ${payload.executiveSummary.launchCompleteStates}/50`,
+  `- Launch-blocked states: ${payload.executiveSummary.launchBlockedStates}/50 (${payload.executiveSummary.partialGatedStateIds.join(', ')})`,
+  `- Launch index-safe states: ${payload.executiveSummary.launchIndexSafeStates}/50`,
+  `- Incorrectly index-safe launch states: ${payload.executiveSummary.launchIncorrectlyIndexSafeStates.join(', ') || '[]'}`,
+  `- Audit/queue mismatch count on launch truth fields: ${payload.executiveSummary.auditQueueMismatchCount}`,
   `- Modeled 50-state completeness: ${payload.executiveSummary.currentModeledCompletenessStates}/50`,
   `- High-confidence states on the current audit bar: ${payload.executiveSummary.currentHighConfidenceStates}/50`,
   `- Strict-gold states: ${payload.executiveSummary.strictGoldStates}/50`,

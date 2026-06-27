@@ -182,7 +182,7 @@ export function runMatchingEngine(profile) {
       const condNames = matchedConditions.map(c => c.name);
       
       if (hasEligibleCondition && (isDangerous || isHighlyDependent)) {
-        recommendation.whyMatched = `Because your child has a developmental condition (${condNames.join(', ')}) combined with severe safety needs (${selectedNeeds.includes('protective-supervision') ? 'Protective Supervision' : 'high-care dependencies'}), they likely worth screening for paid IHSS care hours.`;
+        recommendation.whyMatched = `Because your child has a developmental condition (${condNames.join(', ')}) combined with severe safety needs (${selectedNeeds.includes('protective-supervision') ? 'Protective Supervision' : 'high-care dependencies'}), they are likely worth screening for paid IHSS care hours.`;
         recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}, Needs: ${selectedNeeds.join(', ')}`;
         recommendation.whatIsStillUnknown = `Active Medi-Cal status (required). If family income is too high, you must secure the Regional Center Waiver first.`;
         recommendation.whatToDoNext = `Have your pediatrician complete the SOC 873 Medical Certification and call the County IHSS Intake office at ${localCounty?.ihssContact || 'local DPSS'}.`;

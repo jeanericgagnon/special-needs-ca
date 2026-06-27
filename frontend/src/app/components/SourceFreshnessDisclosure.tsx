@@ -27,12 +27,12 @@ export default function SourceFreshnessDisclosure({ sources }: SourceFreshnessDi
       }}
     >
       <h4 style={{ fontSize: '0.88rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary-color)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-        <ShieldCheck size={16} /> Verified Sources & Freshness Information
+        <ShieldCheck size={16} /> Source Notes & Freshness Information
       </h4>
       
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
-          Our directory relies on official state rules, county social service directories, and direct program citations. We audit listings regularly to maintain accuracy.
+          We show the public sources we relied on, when we last checked them, and whether they were source-backed or still need deeper verification. If something looks wrong, please report a correction before relying on it.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem', marginTop: '0.5rem' }}>
@@ -79,7 +79,7 @@ export default function SourceFreshnessDisclosure({ sources }: SourceFreshnessDi
                       border: `1px solid ${isVerified ? '#0f766e30' : '#64748b30'}`
                     }}
                   >
-                    {isVerified ? 'Verified Source' : 'Public Listing'}
+                    {isVerified ? 'Source-backed' : 'Needs verification'}
                   </span>
                 </div>
 
@@ -103,7 +103,7 @@ export default function SourceFreshnessDisclosure({ sources }: SourceFreshnessDi
                       marginTop: '0.2rem'
                     }}
                   >
-                    Official Portal <ExternalLink size={11} />
+                    Open Source <ExternalLink size={11} />
                   </a>
                 )}
               </div>

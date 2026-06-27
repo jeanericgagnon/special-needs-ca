@@ -233,7 +233,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
               <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
             </div>
             <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', fontStyle: 'italic', display: 'block', marginTop: '0.25rem' }}>
-              Based on {countyName} County wage of ${estimatedWage.toFixed(2)}/hr.
+              Based on an estimated {countyName} County wage of ${estimatedWage.toFixed(2)}/hr. Confirm the current county rate before relying on it.
             </span>
           </div>
 

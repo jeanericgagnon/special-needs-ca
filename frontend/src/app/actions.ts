@@ -172,7 +172,7 @@ export async function analyzeOnboarding(
     detectedNeedIds.push('respite-care');
     detectedNeedNames.push('Respite Care');
     const agencyName = stateId === 'california' ? 'Regional Centers' : (stateId === 'texas' ? 'LIDDAs (via waiver lists)' : (stateId === 'florida' ? 'APD Regional Offices' : (stateId === 'new-york' ? 'OPWDD / CCO care coordinators' : (stateProgramsMap[stateCode]?.developmental_services?.name || `${stateName} Developmental Services`))));
-    explanations.push(`Respite hours are funded by ${agencyName} to prevent caregiver burnout, providing a vetted sitter to look after your child.`);
+    explanations.push(`Respite support is often routed through ${agencyName} to reduce caregiver burnout. Availability can include approved providers, agency-arranged respite, or reimbursement pathways depending on the program.`);
   }
 
   // Hearing / HACCP Waiver Nuance

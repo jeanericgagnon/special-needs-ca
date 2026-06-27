@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Search, MapPin, Calculator, Landmark, ArrowRight } from 'lucide-react';
 import type { County } from '@/lib/db';
 import { trackDirectoryAnalyticsEvent } from '@/lib/directoryAnalytics';
+import { getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 interface CountiesClientProps {
   counties: County[];
@@ -122,7 +123,7 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
           }}
         >
           {filteredCounties.map((county) => {
-            const countyWage = county.ihss_wage_rate || 18.00; // QA-ALLOW
+            const wageDisclosure = getIhssWageDisclosure(stateCode.toLowerCase(), county.name, county.ihss_wage_rate ?? null);
             return (
               <div 
                 key={county.id}
@@ -167,13 +168,20 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
                   </p>
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--text-light)' }}>
-                        <Calculator size={14} color="var(--primary-color)" />
-                        {stateCode.toLowerCase() === 'ca' ? 'IHSS Wage Rate:' : 'Waiver Wage Rate:'}
+                    {wageDisclosure?.hourlyRate ? (
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--text-light)' }}>
+                          <Calculator size={14} color="var(--primary-color)" />
+                          IHSS Pay Estimate:
+                        </span>
+                        <strong style={{ color: '#10b981' }}>${wageDisclosure.hourlyRate.toFixed(2)}/hr</strong>
+                      </div>
+                    ) : null}
+                    {wageDisclosure ? (
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', lineHeight: 1.45 }}>
+                        Estimate only. Confirm the current county pay rate with the local IHSS office before relying on it.
                       </span>
-                      <strong style={{ color: '#10b981' }}>${countyWage.toFixed(2)}/hr</strong>
-                    </div>
+                    ) : null}
                     {county.medi_cal_plans && (
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--text-light)' }}>

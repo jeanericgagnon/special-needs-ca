@@ -36,7 +36,7 @@ export async function generateMetadata({ searchParams }: PageProps) {
     alternates: {
       canonical: `/forms`
     },
-    robots: { index: false, follow: true }
+    robots: { index: true, follow: true }
   };
 }
 

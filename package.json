@@ -306,6 +306,7 @@
     "test:all-state-california-grade-audit-v1": "node scripts/test-all-state-california-grade-audit-v1.mjs",
     "test:all-state-california-grade-audit-v2": "node scripts/test-all-state-california-grade-audit-v2.mjs",
     "test:all-state-california-grade-audit-v3": "node scripts/test-all-state-california-grade-audit-v3.mjs",
+    "test:launch-partial-state-policy": "node scripts/test-launch-partial-state-policy-v1.mjs",
     "test:batch1-fast-finish-states-v1": "node scripts/test-batch1-fast-finish-states-v1.mjs",
     "test:batch2-repair-blocked-states-v1": "node scripts/test-batch2-repair-blocked-states-v1.mjs",
     "test:batch3-procedure-hardening-states-v1": "node scripts/test-batch3-procedure-hardening-states-v1.mjs",

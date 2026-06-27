@@ -43,9 +43,9 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
 
   // Helper for rendering badges
   const getConfidenceText = (score) => {
-    if (score >= 5) return 'Level 1: Official Source Verified';
-    if (score >= 4) return 'Level 2: Organization Verified';
-    return 'Level 3: Partner Verified';
+    if (score >= 5) return 'Level 1: Source-backed record';
+    if (score >= 4) return 'Level 2: Organization-backed record';
+    return 'Level 3: Partner-backed record';
   };
 
   return (
@@ -120,9 +120,9 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
                   <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid var(--glass-border)', padding: '20px', borderRadius: 'var(--radius-md)' }}>
                     <h4 style={{ fontSize: '14px', color: 'var(--text-primary)', marginBottom: '8px' }}>Official Reference Information</h4>
                     <div style={{ fontSize: '12px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                      <div><strong>Official Source:</strong> <a href={detailData.officialSourceUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>{detailData.officialSourceUrl}</a></div>
+                      <div><strong>Source URL:</strong> <a href={detailData.officialSourceUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>{detailData.officialSourceUrl}</a></div>
                       <div><strong>Last Verified:</strong> {detailData.lastVerifiedDate}</div>
-                      <div><strong>Confidence Score:</strong> 100% (Manual Auditor Approved)</div>
+                      <div><strong>Trust note:</strong> Source-backed demo record. Confirm current eligibility, forms, and contact details before relying on them.</div>
                     </div>
                   </div>
                 </div>
@@ -435,7 +435,7 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
               {/* Source citations */}
               <hr style={{ border: 'none', borderTop: '1px solid var(--glass-border)', margin: '40px 0' }} />
               <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-                <strong>Official Source Reference:</strong> <a href={detailData.officialSource} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>{detailData.officialSource}</a>
+                <strong>Source Reference:</strong> <a href={detailData.officialSource} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>{detailData.officialSource}</a>
               </div>
             </div>
           )}
@@ -450,7 +450,7 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
               California Disability <span className="gradient-text">Benefits Directory</span>
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '16px', maxWidth: '640px', margin: '0 auto' }}>
-              Search and browse exhaustive databases of state waivers, local office contacts, educational rights, and developmental guidelines.
+              Search and browse source-backed California program records, local office contacts, educational rights, and developmental guidance.
             </p>
           </div>
 

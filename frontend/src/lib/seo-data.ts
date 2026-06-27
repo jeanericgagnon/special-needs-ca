@@ -120,7 +120,7 @@ Email: [Insert Email Address]`
     title: 'In-Home Supportive Services (IHSS) for Children in California',
     metaTitle: 'IHSS for Children California | Complete Caregiver Pay Guide',
     metaDescription: 'Learn how parent caregivers of minor children can receive paid IHSS caregiving hours in California. Calculate wages, understand eligibility, and apply.',
-    quickAnswer: 'Yes, minor children under age 18 with developmental disabilities can qualify for the California In-Home Supportive Services (IHSS) program. The program pays parent caregivers to provide essential physical care (bathing, dressing, feeding) and safety monitoring. Monthly hours can range from 20 to 283 hours, paid at local county minimum wages ($18.00–$22.00/hour) and exempt from federal and state income taxes under IRS Notice 2014-7.',
+    quickAnswer: 'Yes, minor children under age 18 with developmental disabilities may qualify for the California In-Home Supportive Services (IHSS) program. IHSS can pay parent caregivers for essential physical care and safety monitoring. Authorized hours vary by county assessment, and pay rates are local estimates that should be confirmed with the county IHSS office before you rely on them.',
     tldrPoints: [
       { label: 'Max Monthly Hours', value: '283 Hours' },
       { label: 'Est. Monthly Wage', value: '$3,200 - $5,800/mo' },
@@ -5064,7 +5064,7 @@ for (const [code, stateName] of Object.entries(remainingStateCodes)) {
       tldrPoints: [
         { label: 'State', value: stateName },
         { label: 'Form Type', value: form.name },
-        { label: 'Status', value: 'Factory Proof' }
+        { label: 'Status', value: 'Verification pending' }
       ],
       whenThisMatters: 'When applying for or managing special needs and disability benefits.',
       signsThisMayApply: [
@@ -5079,9 +5079,7 @@ for (const [code, stateName] of Object.entries(remainingStateCodes)) {
         { name: 'Identification Document', description: 'Driver license or state ID card.' },
         { name: 'Medical/Clinical Documentation', description: 'Confirming diagnosis and deficits.' }
       ],
-      whoToCall: [
-        { name: `${stateName} Support Desk`, number: '800-555-0100', description: 'General intake' }
-      ],
+      whoToCall: [],
       whatToSay: `I am calling to submit the ${form.name} for my child.`,
       commonMistakes: [
         'Failing to sign and date the document before submission.',
@@ -5090,9 +5088,7 @@ for (const [code, stateName] of Object.entries(remainingStateCodes)) {
       relatedGuides: [
         { title: `${stateName} Medicaid Guide`, url: `/benefits/${stateName.toLowerCase().replace(/\s+/g, '-')}` }
       ],
-      officialSources: [
-        { name: `${stateName} Department of Human Services`, url: `https://www.${stateName.toLowerCase().replace(/\s+/g, '-')}-services.gov` }
-      ],
+      officialSources: [],
       lastReviewedDate: '2026-06-12'
     };
   }

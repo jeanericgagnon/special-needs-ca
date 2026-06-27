@@ -16,21 +16,85 @@
     ]
   },
   "authoritativeInputs": {
-    "informationInventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/docs/generated/information-inventory-2026-06-20.json",
-    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/docs/generated/full-information-gap-audit-2026-06-20.json",
-    "launchPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/docs/generated/launch-critical-data-acquisition-plan-2026-06-20.json",
-    "exhaustiveGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/docs/generated/exhaustive-gap-master-2026-06-20.json",
-    "scrapeUniverseQueuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/docs/generated/scrape-target-universe-queue-2026-06-20.json",
-    "completionPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/docs/generated/source-acquisition-completion-plan-2026-06-20.json",
-    "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/frontend/ca_disability_navigator.db"
+    "informationInventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-inventory-2026-06-20.json",
+    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-20.json",
+    "launchPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/launch-critical-data-acquisition-plan-2026-06-20.json",
+    "exhaustiveGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/exhaustive-gap-master-2026-06-27.json",
+    "scrapeUniverseQueuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/scrape-target-universe-queue-2026-06-20.json",
+    "completionPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+    "californiaGradeAuditPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_california_grade_audit_v3.json",
+    "californiaGradeQueuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_priority_queue_v3.jsonl",
+    "partialLaunchPolicyPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/launch_partial_state_policy_v1.json",
+    "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db"
   },
   "executiveSummary": {
-    "currentModeledCompletenessStates": 50,
-    "currentHighConfidenceStates": 50,
-    "strictGoldStates": 49,
-    "publicSafeButBlockedStates": 1,
+    "launchCompleteStates": 45,
+    "launchBlockedStates": 5,
+    "launchIndexSafeStates": 45,
+    "launchIncorrectlyIndexSafeStates": [],
+    "partialGatedStateIds": [
+      "arizona",
+      "alaska",
+      "maine",
+      "idaho",
+      "new-hampshire"
+    ],
+    "auditQueueMismatchCount": 0,
+    "currentModeledCompletenessStates": 0,
+    "currentHighConfidenceStates": 0,
+    "strictGoldStates": 0,
+    "publicSafeButBlockedStates": 0,
     "blockedStateIds": [
-      "california"
+      "florida",
+      "new-york",
+      "pennsylvania",
+      "georgia",
+      "ohio",
+      "illinois",
+      "california",
+      "wyoming",
+      "hawaii",
+      "iowa",
+      "kansas",
+      "kentucky",
+      "missouri",
+      "nebraska",
+      "new-jersey",
+      "new-mexico",
+      "oregon",
+      "tennessee",
+      "texas",
+      "virginia",
+      "washington",
+      "wisconsin",
+      "alabama",
+      "arkansas",
+      "colorado",
+      "connecticut",
+      "delaware",
+      "indiana",
+      "louisiana",
+      "maryland",
+      "massachusetts",
+      "michigan",
+      "minnesota",
+      "mississippi",
+      "montana",
+      "nevada",
+      "north-carolina",
+      "north-dakota",
+      "oklahoma",
+      "rhode-island",
+      "south-carolina",
+      "south-dakota",
+      "utah",
+      "vermont",
+      "west-virginia",
+      "alaska",
+      "arizona",
+      "idaho",
+      "maine",
+      "new-hampshire"
     ],
     "publicDataHeadline": "The repo has strong national program, routing, nonprofit, advocate, and condition foundations, but provider coverage, normalization, knowledge depth, and workflow/runtime layers are still thin or empty in the checked-in DB.",
     "criticalGaps": [
@@ -126,18 +190,19 @@
         "Verification metadata must remain complete for public-serving layers."
       ],
       "currentHave": [
-        "49/50 strict-gold states",
-        "1/50 public-safe but blocked states",
-        "50 indexable states in the public truth contract",
+        "45/50 California-grade COMPLETE states",
+        "5/50 BLOCKED states held in noindex launch posture",
+        "45 index-safe states in the current launch contract",
         "6 verified diagnosis slugs"
       ],
       "staging": [
-        "Blocked strict-gold state IDs: california"
+        "Partial-gated blocked states: arizona, alaska, maine, idaho, new-hampshire"
       ],
       "queue": [
-        "No direct scrape lane; enforced through truth audits, render gating, and promotion rules."
+        "Audit vs queue mismatch count: 0",
+        "No direct scrape lane; enforced through truth audits, render gating, sitemap policy, and promotion rules."
       ],
-      "gap": "California is still the only strict-gold exception; deeper local data must not bypass truth gating."
+      "gap": "The remaining launch work is not broader indexing. It is keeping the 5 blocked states visible only through explicit partial-state gating without implying local proof."
     },
     {
       "id": "geography",

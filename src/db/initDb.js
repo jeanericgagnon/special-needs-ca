@@ -6337,8 +6337,8 @@ console.log(`  ✓ Seeded ${seedQueue.length} Stale Verification Queue Items.`);
 
 // Resource Providers Seed
 const seedProviders = [
-  { id: 'prov-1', name: 'Dynamic Pediatric Speech LA', categories: 'speech-therapy', county_id: 'los-angeles', phone: '(213) 492-0198', email: 'intake@dynamicspeechla.com', address: '1200 Wilshire Blvd, LA 90017', accepts_medi_cal: 1, regional_center_vendor_ids: 'LRC-77291' },
-  { id: 'prov-2', name: 'OC Respite Agency Santa Ana', categories: 'respite', county_id: 'orange', phone: '(714) 710-0321', email: 'scheduling@ocrespite.org', address: '800 N Tustin Ave, SA 92705', accepts_medi_cal: 1, regional_center_vendor_ids: 'RCOC-88912' }
+  { id: 'prov-1', name: 'Dynamic Pediatric Speech LA', categories: 'speech-therapy', county_id: 'los-angeles', phone: null, email: null, address: null, accepts_medi_cal: 1, regional_center_vendor_ids: 'LRC-77291' },
+  { id: 'prov-2', name: 'OC Respite Agency Santa Ana', categories: 'respite', county_id: 'orange', phone: null, email: null, address: null, accepts_medi_cal: 1, regional_center_vendor_ids: 'RCOC-88912' }
 ];
 
 const insertProvider = db.prepare('INSERT OR REPLACE INTO resource_providers (id, name, categories, county_id, phone, email, address, accepts_medi_cal, regional_center_vendor_ids) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');

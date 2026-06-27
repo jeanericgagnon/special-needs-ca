@@ -2,7 +2,7 @@
 
 Generated: 2026-06-27
 
-DB audited: /Users/ericgagnon/Documents/Ablefull/special-needs-ca-v4/frontend/ca_disability_navigator.db
+DB audited: /Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db
 
 This is the exhaustive data-and-surface audit for the final website. It answers three questions together:
 
@@ -14,10 +14,15 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 ## Executive Read
 
-- Modeled 50-state completeness: 50/50
-- High-confidence states on the current audit bar: 50/50
-- Strict-gold states: 49/50
-- Public-safe but still blocked states: 1/50 (california)
+- Launch-ready COMPLETE states: 45/50
+- Launch-blocked states: 5/50 (arizona, alaska, maine, idaho, new-hampshire)
+- Launch index-safe states: 45/50
+- Incorrectly index-safe launch states: []
+- Audit/queue mismatch count on launch truth fields: 0
+- Modeled 50-state completeness: 0/50
+- High-confidence states on the current audit bar: 0/50
+- Strict-gold states: 0/50
+- Public-safe but still blocked states: 0/50 (florida, new-york, pennsylvania, georgia, ohio, illinois, california, wyoming, hawaii, iowa, kansas, kentucky, missouri, nebraska, new-jersey, new-mexico, oregon, tennessee, texas, virginia, washington, wisconsin, alabama, arkansas, colorado, connecticut, delaware, indiana, louisiana, maryland, massachusetts, michigan, minnesota, mississippi, montana, nevada, north-carolina, north-dakota, oklahoma, rhode-island, south-carolina, south-dakota, utah, vermont, west-virginia, alaska, arizona, idaho, maine, new-hampshire)
 - Public data headline: The repo has strong national program, routing, nonprofit, advocate, and condition foundations, but provider coverage, normalization, knowledge depth, and workflow/runtime layers are still thin or empty in the checked-in DB.
 
 ### Most Important Truths
@@ -59,10 +64,10 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: strong
 - Final website needs: Every public page must be source-backed and non-synthetic.; Indexing, sitemap inclusion, and render eligibility must follow the same truth rule.; Verification metadata must remain complete for public-serving layers.
-- What we have now: 49/50 strict-gold states; 1/50 public-safe but blocked states; 50 indexable states in the public truth contract; 6 verified diagnosis slugs
-- Current staging or authored work: Blocked strict-gold state IDs: california
-- Current queue or control-plane state: No direct scrape lane; enforced through truth audits, render gating, and promotion rules.
-- Main gap: California is still the only strict-gold exception; deeper local data must not bypass truth gating.
+- What we have now: 45/50 California-grade COMPLETE states; 5/50 BLOCKED states held in noindex launch posture; 45 index-safe states in the current launch contract; 6 verified diagnosis slugs
+- Current staging or authored work: Partial-gated blocked states: arizona, alaska, maine, idaho, new-hampshire
+- Current queue or control-plane state: Audit vs queue mismatch count: 0; No direct scrape lane; enforced through truth audits, render gating, sitemap policy, and promotion rules.
+- Main gap: The remaining launch work is not broader indexing. It is keeping the 5 blocked states visible only through explicit partial-state gating without implying local proof.
 
 ### Geography and coverage foundation
 

@@ -31,11 +31,13 @@ import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/sta
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
 import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
 import { stateAuditStatus, stateGapReason, evaluateSeoPolicy, getSeoPolicyForRoute, normalizeConfidenceScore, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { getPartialStatePolicy, isLaunchSurfaceSuppressed } from '@/lib/launchStatePolicy';
 import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
 import SeoSchema from '@/app/components/seo-schema';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
+import { getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 type Props = {
   params: Promise<{ state: string; slug?: string[] }>;
@@ -87,6 +89,93 @@ function formatParam(val: string): string {
     .join(' ');
 }
 
+function formatFamilyLabel(family: string): string {
+  const labels: Record<string, string> = {
+    county_local_disability_resources: 'County and local routing',
+    district_or_county_education_routing: 'District and county education routing',
+    medicaid_state_health_coverage: 'State Medicaid coverage',
+    medicaid_waiver_hcbs_disability_services: 'Waiver and HCBS services',
+    developmental_disability_idd_authority: 'Developmental disability authority',
+    early_intervention_part_c: 'Early intervention',
+    special_education_idea_part_b: 'Special education IDEA Part B',
+    vocational_rehabilitation_pre_ets: 'Vocational rehabilitation and Pre-ETS',
+    protection_and_advocacy: 'Protection and advocacy',
+    parent_training_information_center: 'Parent training and information',
+    legal_aid: 'Legal aid',
+    able_program: 'ABLE program',
+    ssi_ssa_federal_reference: 'SSI and SSA reference'
+  };
+  return labels[family] || family.replace(/_/g, ' ');
+}
+
+function PartialStateGate({
+  stateName,
+  stateId,
+  heading,
+  body,
+  gapReason,
+  unavailableMessage,
+  suppressedFamilies,
+}: {
+  stateName: string;
+  stateId: string;
+  heading: string;
+  body: string;
+  gapReason?: string | null;
+  unavailableMessage: string;
+  suppressedFamilies: string[];
+}) {
+  return (
+    <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
+      <div style={{ maxWidth: '920px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <div style={{ textAlign: 'center' }}>
+          <StateCoverageBadge stateId={stateId} stateName={stateName} />
+        </div>
+        <div
+          className="glass-panel"
+          style={{
+            background: 'linear-gradient(135deg, rgba(245, 158, 11, 0.10) 0%, rgba(245, 158, 11, 0.04) 100%)',
+            border: '1px solid rgba(245, 158, 11, 0.25)',
+            padding: '2rem',
+            borderRadius: '24px'
+          }}
+        >
+          <h1 style={{ fontSize: '2rem', margin: '0 0 0.75rem 0' }}>{heading}</h1>
+          <p style={{ margin: '0 0 1rem 0', lineHeight: 1.6, color: 'var(--text-main)' }}>{body}</p>
+          <p style={{ margin: '0 0 1rem 0', lineHeight: 1.6, color: '#92400e' }}>{unavailableMessage}</p>
+          {gapReason ? (
+            <p style={{ margin: '0 0 1rem 0', fontSize: '0.92rem', color: 'var(--text-light)', lineHeight: 1.5 }}>
+              Audit gap reason: <strong>{gapReason}</strong>
+            </p>
+          ) : null}
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+            {suppressedFamilies.map((family) => (
+              <span
+                key={family}
+                style={{
+                  background: 'rgba(245, 158, 11, 0.12)',
+                  color: '#92400e',
+                  borderRadius: '999px',
+                  padding: '0.35rem 0.75rem',
+                  fontSize: '0.82rem',
+                  fontWeight: 600
+                }}
+              >
+                {formatFamilyLabel(family)}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="glass-panel" style={{ background: 'rgba(255,255,255,0.94)', padding: '1.5rem 1.75rem', borderRadius: '20px' }}>
+          <p style={{ margin: 0, lineHeight: 1.6, color: 'var(--text-light)' }}>
+            This state remains available only in a partial, gated mode. Statewide audit context may remain visible, but county, district, city, and other local surfaces that rely on unresolved evidence are intentionally suppressed until the official public proof is reviewable.
+          </p>
+        </div>
+      </div>
+    </main>
+  );
+}
+
 
 
 
@@ -106,6 +195,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const config = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const stateName = stateData.name;
   const stateCode = stateData.code.toUpperCase();
+  const partialStatePolicy = getPartialStatePolicy(stateData.id);
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
   let statePrograms: Program[] = [];
@@ -136,6 +226,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 
   if (slug.length === 0) {
+    if (partialStatePolicy) {
+      return {
+        title: `${stateName} Disability Resource Verification Status`,
+        description: `${stateName} remains available in a partial, noindex mode while local county and district evidence is still being verified.`,
+        alternates: { canonical: `/benefits/${stateData.id}` },
+        robots: { index: false, follow: true }
+      };
+    }
     return {
       title: `${stateName} Special Education & Disability Guides & Resources`,
       description: `Select your ${stateName} county to access local developmental benefits, ${catchment} intakes, school district inclusion rates, and special needs advocates.`,
@@ -146,6 +244,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (slug.length === 1) {
     if (slug[0].toLowerCase() === 'programs') {
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'programs-index')) {
+        return {
+          title: `${stateName} statewide program guides are being verified`,
+          description: `${stateName} program guide pages are temporarily suppressed while the statewide launch surface stays in partial verification mode.`,
+          alternates: { canonical: `/benefits/${stateData.id}/programs` },
+          robots: { index: false, follow: true }
+        };
+      }
       const programsPolicy = getSeoPolicyForRoute('static-page', {
         path: `/benefits/${stateData.id}/programs`
       }, {
@@ -161,6 +267,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const countyId = slug[0].toLowerCase();
     const countyDetails = await getCountyDetails(countyId);
     if (countyDetails) {
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'county-hub')) {
+        return {
+          title: `${formatParam(countyId)} County local routing is being verified in ${stateName}`,
+          description: `${stateName} county-level local routing remains gated until the remaining official evidence gap is closed.`,
+          alternates: { canonical: `/benefits/${stateData.id}/${countyId}` },
+          robots: { index: false, follow: true }
+        };
+      }
       const bulkCountyDetails = (await getBulkCountyDetails(stateData.id)).get(countyId);
       const policyCountyDetails = pickCountyPolicyDetails(countyDetails, bulkCountyDetails) || countyDetails;
       const countyFormatted = formatParam(slug[0]);
@@ -197,6 +311,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
     } else {
       const diagnosisFormatted = formatParam(slug[0]);
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'condition-hub')) {
+        return {
+          title: `${diagnosisFormatted} county guides are being verified in ${stateName}`,
+          description: `${stateName} diagnosis-by-county surfaces remain gated until local county and district evidence is reverified.`,
+          alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}` },
+          robots: { index: false, follow: true }
+        };
+      }
       const diagnosisPolicy = getSeoPolicyForRoute('condition-hub', {
         stateId: stateData.id,
         diagnosisId: slug[0].toLowerCase()
@@ -215,6 +337,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (slug.length === 2) {
     if (slug[0].toLowerCase() === 'program') {
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'program-guide')) {
+        return {
+          title: `${stateName} program guides are being verified`,
+          description: `${stateName} program guide pages are temporarily suppressed while the statewide launch surface stays in partial verification mode.`,
+          alternates: { canonical: `/benefits/${stateData.id}/program/${slug[1].toLowerCase()}` },
+          robots: { index: false, follow: true }
+        };
+      }
       const prog = await getProgramBySlug(slug[1].toLowerCase());
       const title = prog ? prog.program_name : formatParam(slug[1]);
       const programPolicy = getSeoPolicyForRoute('program-guide', {
@@ -242,6 +372,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Check if second slug is a county
     const isCounty = (await getCounties(stateData.id)).some(c => c.id === secondSlug);
     if (isCounty) {
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'county-condition')) {
+        return {
+          title: `${diagnosisFormatted} local guides are being verified in ${formatParam(secondSlug)} County, ${stateCode}`,
+          description: `${stateName} diagnosis-specific county guides remain gated until local county and district evidence is reverified.`,
+          alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}/${secondSlug}` },
+          robots: { index: false, follow: true }
+        };
+      }
       const countyFormatted = formatParam(secondSlug);
       const countyDetails = await getCountyDetails(secondSlug);
       const truth = getCountyDiagnosisTruthEligibility(stateData.id, slug[0].toLowerCase(), secondSlug, countyDetails);
@@ -292,6 +430,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Check if second slug is a school district
     const district = await getSchoolDistrictBySlug(secondSlug);
     if (district) {
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'school-district')) {
+        return {
+          title: `${district.name} local education routing is being verified`,
+          description: `${stateName} district-specific local routing remains gated until the remaining official local evidence is reverified.`,
+          alternates: { canonical: `/benefits/${stateData.id}/${slug[0]}/${secondSlug}` },
+          robots: { index: false, follow: true }
+        };
+      }
       return {
         title: `${diagnosisFormatted} IEP & Special Education Support in ${district.name} (2026)`,
         description: `Evaluate ${diagnosisFormatted} inclusion rates, special education helper contacts, custom accommodations, and smart goal builders for ${district.name}.`,
@@ -303,6 +449,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Check if second slug is a city
     const city = getCityBySlug(secondSlug);
     if (city) {
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'city')) {
+        return {
+          title: `${city.name} local guides are being verified in ${stateName}`,
+          description: `${stateName} city-level local guides remain gated until the remaining official local evidence is reverified.`,
+          alternates: { canonical: `/benefits/${stateData.id}/${slug[0]}/${secondSlug}` },
+          robots: { index: false, follow: true }
+        };
+      }
       return {
         title: `${diagnosisFormatted} Therapy Services & Sensory Parks in ${city.name}, ${stateCode}`,
         description: `Find inclusive playgrounds, local support organizations, pediatric therapists, and county waiver hourly caregiver wage rates for ${diagnosisFormatted} in ${city.name}, ${stateCode}.`,
@@ -350,11 +504,26 @@ async function InnerBenefitsCatchAll({ params }: Props) {
   const catchment = config.catchmentName;
   const personalCare = config.personalCareProgram;
   const isIndexedState = isIndexableState(stateData.id);
+  const partialStatePolicy = getPartialStatePolicy(stateData.id);
+  const gapReason = stateGapReason(stateData.id);
 
   // ==========================================
   // CASE 7: Programs Index (/benefits/[state]/programs)
   // ==========================================
   if (slug.length === 1 && slug[0].toLowerCase() === 'programs') {
+    if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'programs-index')) {
+      return (
+        <PartialStateGate
+          stateName={stateName}
+          stateId={stateData.id}
+          heading={`${stateName} statewide program guides are not yet launch-safe`}
+          body={`This state stays available only through its statewide audit surface right now. Program-guide pages are suppressed until the statewide data layer is verified enough to support them truthfully.`}
+          gapReason={gapReason}
+          unavailableMessage={partialStatePolicy.unavailableMessage}
+          suppressedFamilies={partialStatePolicy.suppressedFamilies}
+        />
+      );
+    }
     const allPrograms = (await getAllPrograms()).filter(prg => !prg.state_id || prg.state_id === stateData.id);
     return (
       <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
@@ -453,6 +622,19 @@ async function InnerBenefitsCatchAll({ params }: Props) {
   // CASE 8: Program Detail (/benefits/program/[slug])
   // ==========================================
   if (slug.length === 2 && slug[0].toLowerCase() === 'program') {
+    if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'program-guide')) {
+      return (
+        <PartialStateGate
+          stateName={stateName}
+          stateId={stateData.id}
+          heading={`${stateName} program details are not yet launch-safe`}
+          body={`We are not rendering state-specific program detail pages for ${stateName} until the statewide source layer is complete enough to support them truthfully.`}
+          gapReason={gapReason}
+          unavailableMessage={partialStatePolicy.unavailableMessage}
+          suppressedFamilies={partialStatePolicy.suppressedFamilies}
+        />
+      );
+    }
     const programSlug = slug[1].toLowerCase();
     const program = await getProgramBySlug(programSlug);
     
@@ -645,6 +827,19 @@ async function InnerBenefitsCatchAll({ params }: Props) {
   // ==========================================
   if (slug.length === 0) {
     const counties = await getCounties(stateData.id);
+    if (partialStatePolicy) {
+      return (
+        <PartialStateGate
+          stateName={stateName}
+          stateId={stateData.id}
+          heading={`${stateName} is live only in a partial verification mode`}
+          body={`We are keeping the statewide ${stateName} audit surface available, but county, district, city, and other local navigation stays suppressed until the remaining official evidence is reviewable.`}
+          gapReason={gapReason}
+          unavailableMessage={partialStatePolicy.unavailableMessage}
+          suppressedFamilies={partialStatePolicy.suppressedFamilies}
+        />
+      );
+    }
     return (
       <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
         <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
@@ -759,12 +954,26 @@ async function InnerBenefitsCatchAll({ params }: Props) {
     const countyDetails = await getCountyDetails(countyId);
 
     if (countyDetails) {
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'county-hub')) {
+        return (
+          <PartialStateGate
+            stateName={stateName}
+            stateId={stateData.id}
+            heading={`${formatParam(countyId)} County is not yet verified for public local routing`}
+            body={`This county page stays available only as a gated placeholder because the ${stateName} launch surface still has unresolved local-proof gaps.`}
+            gapReason={gapReason}
+            unavailableMessage={partialStatePolicy.unavailableMessage}
+            suppressedFamilies={partialStatePolicy.suppressedFamilies}
+          />
+        );
+      }
       const bulkCountyDetails = (await getBulkCountyDetails(stateData.id)).get(countyId);
       const policyCountyDetails = pickCountyPolicyDetails(countyDetails, bulkCountyDetails) || countyDetails;
       const countyFormatted = formatParam(countyId);
       const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
       const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
-      const countyWage = countyDetails.ihss_wage_rate || 18.00; // QA-ALLOW
+      const wageDisclosure = getIhssWageDisclosure(stateData.id, countyDetails.name, countyDetails.ihss_wage_rate ?? null);
+      const countyWage = wageDisclosure?.hourlyRate ?? null;
       const countyHubLastVerifiedDate = [
         ...((policyCountyDetails.regionalCenters || []) as Array<any>).map((rc) => rc.last_verified_date).filter(Boolean),
         ...((policyCountyDetails.schoolDistricts || []) as Array<any>).map((sd) => sd.last_verified_date).filter(Boolean),
@@ -1169,25 +1378,30 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               
               {/* Wage details card */}
+              {wageDisclosure ? (
               <div className="glass-panel" style={{ padding: '1.25rem', background: '#fafafa', border: '1px solid #eee' }}>
                 <h3 style={{ fontSize: '1rem', fontWeight: 800, margin: '0 0 0.75rem 0', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-main)' }}>
-                  <Calculator size={16} color="var(--primary-color)" /> {countyDetails.name} County Wages
+                  <Calculator size={16} color="var(--primary-color)" /> {countyDetails.name} County IHSS Pay Estimate
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>{stateData.id === 'california' ? 'IHSS' : 'Waiver'} Wage Rate:</span>
-                    <strong style={{ color: '#10b981' }}>${countyWage.toFixed(2)}/hr</strong>
+                  {wageDisclosure.hourlyRate ? (
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                      <span>Estimated hourly pay:</span>
+                      <strong style={{ color: '#10b981' }}>${wageDisclosure.hourlyRate.toFixed(2)}/hr</strong>
+                    </div>
+                  ) : (
+                    <div style={{ color: 'var(--text-light)' }}>Current county estimate unavailable</div>
+                  )}
+                  <div style={{ color: 'var(--text-light)', lineHeight: 1.5, borderTop: '1px solid #eee', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
+                    {wageDisclosure.explanation}
                   </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <span>Max Monthly Hours:</span>
-                    <strong>283 Hours</strong>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px solid #eee', paddingTop: '0.5rem', marginTop: '0.25rem' }}>
-                    <span>Max Monthly Pay:</span>
-                    <strong style={{ color: '#10b981' }}>${(283 * countyWage).toLocaleString(undefined, { maximumFractionDigits: 0 })}/mo</strong>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.45 }}>
+                    Source: <a href={wageDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>California county IHSS offices</a><br />
+                    Last checked: {wageDisclosure.lastVerifiedDate}
                   </div>
                 </div>
               </div>
+              ) : null}
 
               {/* Quick link to other counties */}
               <div className="glass-panel" style={{ padding: '1.25rem', background: '#fafafa', border: '1px solid #eee' }}>
@@ -1254,6 +1468,19 @@ async function InnerBenefitsCatchAll({ params }: Props) {
     const isDiagnosis = DIAGNOSES.map(slugifyDiagnosis).includes(countyId);
     if (isDiagnosis) {
       const diagnosisFormatted = formatParam(countyId);
+      if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'condition-hub')) {
+        return (
+          <PartialStateGate
+            stateName={stateName}
+            stateId={stateData.id}
+            heading={`${diagnosisFormatted} county guides are still being verified in ${stateName}`}
+            body={`The statewide ${stateName} audit surface remains visible, but diagnosis-by-county navigation is suppressed until the blocked local evidence families are reverified.`}
+            gapReason={gapReason}
+            unavailableMessage={partialStatePolicy.unavailableMessage}
+            suppressedFamilies={partialStatePolicy.suppressedFamilies}
+          />
+        );
+      }
       const countiesList = await getCounties(stateData.id);
 
       return (
@@ -1376,6 +1603,34 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       scopeType = 'city';
     } else {
       notFound();
+    }
+
+    if (partialStatePolicy) {
+      const blockedSurface =
+        (scopeType === 'county' && isLaunchSurfaceSuppressed(stateData.id, 'county-condition')) ||
+        (scopeType === 'district' && isLaunchSurfaceSuppressed(stateData.id, 'school-district')) ||
+        (scopeType === 'city' && isLaunchSurfaceSuppressed(stateData.id, 'city'));
+
+      if (blockedSurface) {
+        const surfaceLabel =
+          scopeType === 'district'
+            ? `${district?.name || 'This district'} local education routing`
+            : scopeType === 'city'
+              ? `${city?.name || 'This city'} local guide`
+              : `${countyFormatted} County local guide`;
+
+        return (
+          <PartialStateGate
+            stateName={stateName}
+            stateId={stateData.id}
+            heading={`${surfaceLabel} is not yet verified`}
+            body={`This ${scopeType}-level surface is intentionally suppressed while ${stateName} remains in a partial launch mode. We only reopen local pages after the blocked official evidence families are reverified.`}
+            gapReason={gapReason}
+            unavailableMessage={partialStatePolicy.unavailableMessage}
+            suppressedFamilies={partialStatePolicy.suppressedFamilies}
+          />
+        );
+      }
     }
 
     // Load County-level details for underlying service models
@@ -1517,7 +1772,9 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
     const rcName = eligibleRegionalCenters[0]?.name || 'the local Regional Center';
     const sdName = districtDetails ? districtDetails.name : (eligibleSchoolDistricts[0]?.name || 'your local school district');
-    const displayWage = countyData.ihss_wage_rate || 18.00; // QA-ALLOW
+    const displayWage = stateData.id === 'california' && countyData.ihss_wage_rate
+      ? countyData.ihss_wage_rate
+      : 0;
     const estHours = 283;
     const monthlyPayout = (estHours * displayWage).toLocaleString(undefined, { maximumFractionDigits: 0 });
 

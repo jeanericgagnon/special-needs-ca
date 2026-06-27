@@ -6,18 +6,16 @@
  * behind each state.
  *
  * Classifications:
- *   exhaustive → California only. Full county × program × provider matrix.
- *   pilot      → All other 49 states. Source-backed pilot coverage.
- *               Priority states (TX/FL/NY/PA/IL/OH/GA) have priority-county
- *               seeding with verified agencies, waivers, and school districts.
- *               Remaining states include state DD/Medicaid agency routing,
- *               federal program guides, and early intervention resources.
+ *   launch_depth → California only. Deepest current public coverage.
+ *   pilot        → All other states. Source-backed pilot coverage.
+ *                  Priority states have stronger state and local routing depth.
+ *                  Remaining states focus on statewide routing and high-trust guides.
  */
 
 import React from 'react';
 import { ShieldCheck, Sparkles } from 'lucide-react';
 
-// States with full exhaustive launch-grade coverage
+// States with the deepest current public launch coverage
 const EXHAUSTIVE_STATES = new Set(['california']);
 
 const PRIORITY_PILOT_STATES = new Set([
@@ -27,10 +25,10 @@ const PRIORITY_PILOT_STATES = new Set([
   'arizona', 'alaska', 'connecticut', 'delaware', 'hawaii', 'iowa', 'kansas', 'kentucky', 'maine', 'massachusetts', 'missouri', 'nevada', 'new-hampshire', 'new-jersey', 'rhode-island', 'vermont', 'wyoming'
 ]);
 
-export type CoverageLevel = 'exhaustive' | 'pilot';
+export type CoverageLevel = 'launch_depth' | 'pilot';
 
 export function getStateCoverageLevel(stateId: string): CoverageLevel {
-  return EXHAUSTIVE_STATES.has(stateId.toLowerCase()) ? 'exhaustive' : 'pilot';
+  return EXHAUSTIVE_STATES.has(stateId.toLowerCase()) ? 'launch_depth' : 'pilot';
 }
 
 interface StateCoverageBadgeProps {
@@ -40,9 +38,9 @@ interface StateCoverageBadgeProps {
 
 export function StateCoverageBadge({ stateId, stateName }: StateCoverageBadgeProps) {
   const isPriority = PRIORITY_PILOT_STATES.has(stateId.toLowerCase());
-  const isExhaustive = EXHAUSTIVE_STATES.has(stateId.toLowerCase());
+  const isLaunchDepth = EXHAUSTIVE_STATES.has(stateId.toLowerCase());
 
-  if (isExhaustive) {
+  if (isLaunchDepth) {
     return (
       <div
         style={{
@@ -61,15 +59,15 @@ export function StateCoverageBadge({ stateId, stateName }: StateCoverageBadgePro
         }}
       >
         <ShieldCheck size={12} />
-        Exhaustive Launch-Grade Coverage
+        Deep Launch Coverage
       </div>
     );
   }
 
   // All 49 non-CA states are pilot states
   const subLabel = isPriority
-    ? `Priority counties in ${stateName} are seeded with verified state agency data, waiver programs, and school district records. Some local resources use statewide locator routing rather than direct office listings.`
-    : `${stateName} includes state DD/Medicaid agency routing, federal program guides, and early intervention resources. Local county resources route to the statewide ${stateName} service locator.`;
+    ? `Priority counties in ${stateName} include source-backed agency routing, waiver guidance, and school district or regional education records. Some local needs still route through statewide locator pages instead of direct office listings.`
+    : `${stateName} currently emphasizes statewide DD or Medicaid routing, federal program guides, and early intervention references. Local county needs may still route through statewide locator pages while local evidence is being expanded.`;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', alignItems: 'flex-start' }}>

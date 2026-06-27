@@ -1,0 +1,182 @@
+{
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "launchReadyCompleteStateCount": 45,
+  "blockedStateCount": 5,
+  "states": [
+    {
+      "stateId": "arizona",
+      "launchBehavior": "partial_gated",
+      "allowedSurfaces": [
+        "state-hub"
+      ],
+      "suppressedSurfaces": [
+        "programs-index",
+        "program-guide",
+        "state-counties-hub",
+        "condition-hub",
+        "county-hub",
+        "county-condition",
+        "school-district",
+        "city"
+      ],
+      "suppressedFamilies": [
+        "county_local_disability_resources"
+      ],
+      "verifiedStatewideFamilies": [
+        "medicaid_state_health_coverage",
+        "medicaid_waiver_hcbs_disability_services",
+        "developmental_disability_idd_authority",
+        "early_intervention_part_c",
+        "special_education_idea_part_b",
+        "district_or_county_education_routing",
+        "vocational_rehabilitation_pre_ets",
+        "protection_and_advocacy",
+        "parent_training_information_center",
+        "legal_aid",
+        "able_program",
+        "ssi_ssa_federal_reference"
+      ],
+      "unavailableMessage": "Arizona remains publicly available only at the statewide audit layer. County-level routing is suppressed until Greenlee County has an explicit official local office assignment."
+    },
+    {
+      "stateId": "alaska",
+      "launchBehavior": "partial_gated",
+      "allowedSurfaces": [
+        "state-hub"
+      ],
+      "suppressedSurfaces": [
+        "programs-index",
+        "program-guide",
+        "state-counties-hub",
+        "condition-hub",
+        "county-hub",
+        "county-condition",
+        "school-district",
+        "city"
+      ],
+      "suppressedFamilies": [
+        "county_local_disability_resources"
+      ],
+      "verifiedStatewideFamilies": [
+        "medicaid_state_health_coverage",
+        "medicaid_waiver_hcbs_disability_services",
+        "developmental_disability_idd_authority",
+        "early_intervention_part_c",
+        "special_education_idea_part_b",
+        "district_or_county_education_routing",
+        "vocational_rehabilitation_pre_ets",
+        "protection_and_advocacy",
+        "parent_training_information_center",
+        "legal_aid",
+        "able_program",
+        "ssi_ssa_federal_reference"
+      ],
+      "unavailableMessage": "Alaska remains publicly available only at the statewide audit layer. County-equivalent routing is suppressed until a reviewable borough or census-area to office assignment contract exists."
+    },
+    {
+      "stateId": "maine",
+      "launchBehavior": "partial_gated",
+      "allowedSurfaces": [
+        "state-hub"
+      ],
+      "suppressedSurfaces": [
+        "programs-index",
+        "program-guide",
+        "state-counties-hub",
+        "condition-hub",
+        "county-hub",
+        "county-condition",
+        "school-district",
+        "city"
+      ],
+      "suppressedFamilies": [
+        "county_local_disability_resources"
+      ],
+      "verifiedStatewideFamilies": [
+        "medicaid_state_health_coverage",
+        "medicaid_waiver_hcbs_disability_services",
+        "developmental_disability_idd_authority",
+        "early_intervention_part_c",
+        "special_education_idea_part_b",
+        "district_or_county_education_routing",
+        "vocational_rehabilitation_pre_ets",
+        "protection_and_advocacy",
+        "parent_training_information_center",
+        "legal_aid",
+        "able_program",
+        "ssi_ssa_federal_reference"
+      ],
+      "unavailableMessage": "Maine remains publicly available only at the statewide audit layer. County-level office routing is suppressed until Maine publishes a public county to office or service-area contract."
+    },
+    {
+      "stateId": "idaho",
+      "launchBehavior": "partial_gated",
+      "allowedSurfaces": [
+        "state-hub"
+      ],
+      "suppressedSurfaces": [
+        "programs-index",
+        "program-guide",
+        "state-counties-hub",
+        "condition-hub",
+        "county-hub",
+        "county-condition",
+        "school-district",
+        "city"
+      ],
+      "suppressedFamilies": [
+        "district_or_county_education_routing",
+        "county_local_disability_resources"
+      ],
+      "verifiedStatewideFamilies": [
+        "medicaid_state_health_coverage",
+        "medicaid_waiver_hcbs_disability_services",
+        "developmental_disability_idd_authority",
+        "early_intervention_part_c",
+        "special_education_idea_part_b",
+        "vocational_rehabilitation_pre_ets",
+        "protection_and_advocacy",
+        "parent_training_information_center",
+        "legal_aid",
+        "able_program",
+        "ssi_ssa_federal_reference"
+      ],
+      "unavailableMessage": "Idaho remains publicly available only at the statewide audit layer. Residual local education routing and county-level office routing stay suppressed until Camas, Clark, and the remaining county office contract gaps are closed."
+    },
+    {
+      "stateId": "new-hampshire",
+      "launchBehavior": "partial_gated",
+      "allowedSurfaces": [
+        "state-hub"
+      ],
+      "suppressedSurfaces": [
+        "programs-index",
+        "program-guide",
+        "state-counties-hub",
+        "condition-hub",
+        "county-hub",
+        "county-condition",
+        "school-district",
+        "city"
+      ],
+      "suppressedFamilies": [
+        "medicaid_state_health_coverage",
+        "medicaid_waiver_hcbs_disability_services",
+        "developmental_disability_idd_authority",
+        "early_intervention_part_c",
+        "district_or_county_education_routing",
+        "vocational_rehabilitation_pre_ets",
+        "county_local_disability_resources"
+      ],
+      "verifiedStatewideFamilies": [
+        "special_education_idea_part_b",
+        "protection_and_advocacy",
+        "parent_training_information_center",
+        "legal_aid",
+        "able_program",
+        "ssi_ssa_federal_reference"
+      ],
+      "unavailableMessage": "New Hampshire remains publicly available only as a statewide audit status page. Public DHHS, DOE, and VR proof lanes are currently not reviewable, so local and programmatic surfaces stay suppressed."
+    }
+  ]
+}

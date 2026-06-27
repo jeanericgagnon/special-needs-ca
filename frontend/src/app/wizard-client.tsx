@@ -74,11 +74,11 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
           if (severeSafetyRisks === true || hasNonNegatedKeyword(additionalText, ['safety', 'wander', 'elope', 'supervision', 'danger', 'behavior'])) {
             value = 45360;
             label = 'IHSS Protective Supervision';
-            calcDesc = 'Based on 210 hours/mo at CA average $18/hr for safety monitoring';
+            calcDesc = 'Illustrative estimate based on 210 hours/mo and a sample California county wage. Confirm the current county rate before relying on it.';
           } else {
             value = 12960;
             label = 'IHSS Personal Care Hours';
-            calcDesc = 'Based on 60 hours/mo at CA average $18/hr for ADL support';
+            calcDesc = 'Illustrative estimate based on 60 hours/mo and a sample California county wage. Confirm the current county rate before relying on it.';
           }
           break;
         case 'regional-centers':

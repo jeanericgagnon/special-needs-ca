@@ -1,10 +1,11 @@
 export const STATIC_ROUTE_ALLOWLIST = new Set([
   '/',
   '/benefits',
-  '/advocates',
   '/forms',
-  '/school-districts',
-  '/find-help'
+  '/find-help',
+  '/ihss-behavior-log',
+  '/iep-goals',
+  '/regional-center-funding'
 ]);
 
 export const STATIC_GUIDE_PREFIXES = [

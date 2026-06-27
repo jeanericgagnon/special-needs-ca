@@ -787,7 +787,15 @@ export default function FamilyDashboard({ activeProfile, setActiveProfile, profi
                         <span className="badge badge-blue" style={{ fontSize: '9px', marginBottom: '4px' }}>Vended Service Provider</span>
                         <strong style={{ display: 'block', fontSize: '13px', color: 'var(--text-primary)' }}>{rp.name}</strong>
                         <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '4px' }}>
-                          <div>Phone: {rp.phone} | Mail: {rp.email}</div>
+                          {rp.phone || rp.email ? (
+                            <div>
+                              {rp.phone ? `Phone: ${rp.phone}` : 'Phone still being verified'}
+                              {rp.phone && rp.email ? ' | ' : ''}
+                              {rp.email ? `Mail: ${rp.email}` : (!rp.phone ? 'Mail still being verified' : '')}
+                            </div>
+                          ) : (
+                            <div>Direct public contact details are still being verified.</div>
+                          )}
                           <div>Vendor IDs: {rp.regionalCenterVendorIds.join(', ')}</div>
                         </div>
                       </div>

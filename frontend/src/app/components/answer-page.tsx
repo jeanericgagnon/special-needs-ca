@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { SEOPageData, SEO_CLUSTERS } from '@/lib/seo-data';
 import { fetchCountyDetailsAction } from '../actions';
 import SourceFreshnessDisclosure from './SourceFreshnessDisclosure';
+import ContributionModal from '@/components/contribution-modal';
 
 interface CountyDetailsType {
   id: string;
@@ -80,6 +81,8 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
   });
   const [generatedLetter, setGeneratedLetter] = useState<string>('');
   const [copiedLetter, setCopiedLetter] = useState<boolean>(false);
+  const hasSourceBackedEvidence = Array.isArray(data.officialSources) && data.officialSources.length > 0;
+  const correctionSuggestionType = data.category === 'programs' ? 'program' : 'other';
 
   // React official state reset inline pattern
   const [prevSlug, setPrevSlug] = useState<string>(data.slug);
@@ -197,10 +200,15 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               {data.title}
             </h1>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', fontSize: '0.82rem', color: 'var(--text-light)', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '1rem' }}>
-              <span>Verified Source: <strong style={{ color: 'var(--text-main)' }}>{data.officialSources[0]?.name || 'CA State Policy'}</strong></span>
+              <span>Primary source: <strong style={{ color: 'var(--text-main)' }}>{data.officialSources[0]?.name || 'Still being verified'}</strong></span>
               <span>•</span>
               <span>Last Reviewed: <strong style={{ color: 'var(--text-main)' }}>{data.lastReviewedDate}</strong></span>
             </div>
+            {!hasSourceBackedEvidence ? (
+              <div style={{ marginTop: '0.9rem', fontSize: '0.84rem', color: '#92400e', lineHeight: 1.5 }}>
+                This page is still being verified. Treat it as guidance only until we attach direct public source links.
+              </div>
+            ) : null}
           </div>
 
           {/* Quick Answer Callout */}
@@ -210,6 +218,9 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
             </h2>
             <p style={{ margin: 0, fontSize: '0.95rem', lineHeight: '1.6', color: 'var(--text-main)' }}>
               {data.quickAnswer}
+            </p>
+            <p style={{ margin: '0.75rem 0 0 0', fontSize: '0.82rem', lineHeight: '1.5', color: 'var(--text-light)' }}>
+              This summary is informational, may include estimates, and should be checked against the linked public sources before you act on it.
             </p>
           </div>
 
@@ -328,6 +339,14 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
             lastReviewedDate: data.lastReviewedDate,
             verificationStatus: 'official_verified'
           }))} />
+          <div style={{ marginTop: '-0.75rem' }}>
+            <ContributionModal
+              suggestionType={correctionSuggestionType}
+              targetId={data.slug}
+              targetName={data.title}
+              buttonLabel="Report a correction"
+            />
+          </div>
 
         </div>
 

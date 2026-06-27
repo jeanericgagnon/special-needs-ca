@@ -228,7 +228,7 @@ export const stateConfigs: Record<string, StateConfig> = {
       },
       {
         q: 'Does my child qualify for paid caregiver hours (MDCP) for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through Texas Medicaid waiver programs like MDCP (Medically Dependent Children's Program) or CLASS, you can select the Consumer Directed Services (CDS) option. This allows you to hire caregivers, including family members in some programs, to provide personal care services. Hourly wages are based on state program allocations, typically averaging around $${wage.toFixed(2)}/hr.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `Yes, through Texas Medicaid waiver programs like MDCP (Medically Dependent Children's Program) or CLASS, you can select the Consumer Directed Services (CDS) option. This allows you to hire caregivers, including family members in some programs, to provide personal care services. Pay rates depend on the program, authorization, and provider arrangement, so confirm the current amount with the program administrator.`
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',

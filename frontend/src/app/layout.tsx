@@ -104,7 +104,7 @@ export default async function RootLayout({
         {/* Global Footer */}
         <footer style={{ background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(10px)', borderTop: '1px solid rgba(0,0,0,0.05)', padding: '2rem 1rem', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-light)' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-            <p>&copy; 2026 Ablefull. All rights reserved.{' '}California is the only exhaustive launch-grade state; all 49 other states offer source-backed pilot coverage.</p>
+            <p>&copy; 2026 Ablefull. All rights reserved.{' '}California currently has the deepest public launch coverage; all other states are available in source-backed pilot or gated launch modes.</p>
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/benefits/california" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>California</Link>
               <Link href="/benefits/texas" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Texas</Link>

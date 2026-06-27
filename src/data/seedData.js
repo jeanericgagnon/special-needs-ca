@@ -845,9 +845,9 @@ export const resourceProviders = [
     name: 'Dynamic Pediatric Speech & Language Center',
     categories: ['speech-therapy'],
     countyId: 'los-angeles',
-    phone: '(213) 555-0198',
-    email: 'info@dynamicspeechla.com',
-    address: '1200 Wilshire Blvd, Los Angeles, CA 90017',
+    phone: null,
+    email: null,
+    address: null,
     acceptsMediCal: true,
     regionalCenterVendorIds: ['LRC-77291', 'SCLARC-0029']
   },
@@ -856,9 +856,9 @@ export const resourceProviders = [
     name: 'Orange County Respite Care Services Agency',
     categories: ['respite'],
     countyId: 'orange',
-    phone: '(714) 555-0321',
-    email: 'scheduling@ocrespite.org',
-    address: '800 N Tustin Ave, Santa Ana, CA 92705',
+    phone: null,
+    email: null,
+    address: null,
     acceptsMediCal: true,
     regionalCenterVendorIds: ['RCOC-88912']
   },
@@ -867,9 +867,9 @@ export const resourceProviders = [
     name: 'Bay Area Adaptive Behavior Intervention (ABA)',
     categories: ['aba', 'behavior-support'],
     countyId: 'san-francisco',
-    phone: '(415) 555-0811',
-    email: 'intake@bayareaaba.com',
-    address: '250 Gough St, San Francisco, CA 94102',
+    phone: null,
+    email: null,
+    address: null,
     acceptsMediCal: true,
     regionalCenterVendorIds: ['GGRC-11029']
   }

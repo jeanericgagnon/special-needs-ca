@@ -14,12 +14,12 @@ export default function AppealsClient() {
   const [copied, setCopied] = useState(false);
 
   // Common Contact States
-  const [parentName, setParentName] = useState('Jane Doe');
-  const [parentEmail, setParentEmail] = useState('jane.doe@example.com');
-  const [parentPhone, setParentPhone] = useState('(310) 555-0199');
-  const [parentAddress, setParentAddress] = useState('123 Caregiver Way, Los Angeles, CA 90001');
-  const [childName, setChildName] = useState('Alex');
-  const [childDob, setChildDob] = useState('2021-04-15');
+  const [parentName, setParentName] = useState('');
+  const [parentEmail, setParentEmail] = useState('');
+  const [parentPhone, setParentPhone] = useState('');
+  const [parentAddress, setParentAddress] = useState('');
+  const [childName, setChildName] = useState('');
+  const [childDob, setChildDob] = useState('');
 
   // Statutory IEP Submission timeline date
   const [iepSubmissionDate, setIepSubmissionDate] = useState('2026-06-01'); // QA-ALLOW
