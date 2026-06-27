@@ -31,11 +31,13 @@ const countyGap = readJsonl('data/generated/maine_gap_matrix_v2.jsonl').find((ro
 assert.equal(countyGap.family_status, 'blocked_live_dhhs_ofi_nav_stack_reports_and_search_surfaces_public_but_still_not_county_grade');
 assert.match(countyGap.status_reason, /Reviewed 2026-06-26/i);
 assert.match(countyGap.status_reason, /all still return HTTP 200/i);
-assert.match(countyGap.status_reason, /do not close county-grade routing/i);
+assert.match(countyGap.status_reason, /county workbook preserves headers like `COUNTY`/i);
+assert.match(countyGap.status_reason, /county-and-town workbook preserves `COUNTY` plus `TOWN`/i);
+assert.match(countyGap.status_reason, /District Office Locations page also remains office-address only and does not name counties on-page/i);
 
 const failureRows = readJsonl('data/generated/maine_failure_ledger_v2.jsonl');
 assert.equal(failureRows[0].failure_code, 'official_maine_dhhs_ofi_surfaces_still_expose_offices_and_counts_without_county_assignment_contract');
-assert.match(failureRows[0].evidence, /Geographic Distribution PDF.*still return HTTP 200/i);
+assert.match(failureRows[0].evidence, /Geographic Distribution \/ Overflow PDFs enumerate counties and towns/i);
 
 const verifiedRows = readJsonl('data/generated/maine_verified_sources_v1.jsonl');
 const verified = verifiedRows.find((row) => row.family === 'county_local_disability_resources');
@@ -54,9 +56,13 @@ assert.equal(batchSummary.offices_live, true);
 assert.equal(batchSummary.ofi_contact_live, true);
 assert.equal(batchSummary.ofi_reports_live, true);
 assert.equal(batchSummary.maine_search_live, true);
+assert.equal(batchSummary.office_page_has_no_county_names, true);
+assert.equal(batchSummary.geographic_reports_county_town_only, true);
+assert.equal(batchSummary.no_office_assignment_terms_in_reports, true);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/maine-california-grade-audit-report-v2.md'), 'utf8');
-assert.match(report, /current public DHHS\/OFI stack is live but still does not publish a county-to-office or service-area contract/i);
+assert.match(report, /county-to-office or service-area contract/i);
+assert.match(report, /county-and-town workbook/i);
 
 const allStateAudit = readJson('data/generated/all_state_california_grade_audit_v3.json');
 const auditRow = allStateAudit.states.find((row) => row.stateId === 'maine');
@@ -65,6 +71,7 @@ assert.equal(auditRow.packetPrimaryGapReason, 'bounded_2026_06_26_live_recheck_c
 
 const allStateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/all-state-california-grade-audit-report-v3.md'), 'utf8');
 assert.match(allStateReport, /Maine remains blocked after a 2026-06-26 bounded live recheck/i);
+assert.match(allStateReport, /county\/town PDFs\/XLSX surfaces all remain public/i);
 
 const handoff = fs.readFileSync(path.join(repoRoot, 'docs/generated/gemini-source-scout-handoff.md'), 'utf8');
 assert.match(handoff, /Current Focus State: Maine/);

@@ -39,7 +39,7 @@ const FAILURE_CODE =
 const NEXT_ACTION =
   'hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing';
 const COUNTY_REASON =
-  `Reviewed ${REVIEWED_DATE} one more bounded live Maine DHHS/OFI county-local pass. The exact public office and report surfaces are still live and reviewable: \`https://www.maine.gov/dhhs/about/contact/offices\`, \`/ofi/about-us/contact\`, \`/ofi/programs-services\`, \`/ofi/about-us/data-reports\`, \`/offices-divisions\`, \`/about/contact/administrative-offices\`, and \`/about/sitemap\` all still return HTTP 200. The current official report artifacts are also still live: the Geographic Distribution PDF, Geographic Overflow PDF, counts-by-county workbook, and counts-by-county-and-town workbook all still return HTTP 200. The official Maine search queries for county/district office routing are also still public and still return HTTP 200. But the public Maine surfaces still do not close county-grade routing: they preserve office names, addresses, labels, counts, or search shells rather than any county-to-office or service-area assignment contract. Maine therefore still lacks a reviewable public county-to-office routing contract on the live DHHS/OFI stack.`;
+  `Reviewed ${REVIEWED_DATE} one more bounded live Maine DHHS/OFI county-local pass. The exact public office and report surfaces are still live and reviewable: \`https://www.maine.gov/dhhs/about/contact/offices\`, \`/ofi/about-us/contact\`, \`/ofi/programs-services\`, \`/ofi/about-us/data-reports\`, \`/offices-divisions\`, \`/about/contact/administrative-offices\`, and \`/about/sitemap\` all still return HTTP 200. The current official report artifacts are also still live: the Geographic Distribution PDF, Geographic Overflow PDF, counts-by-county workbook, and counts-by-county-and-town workbook all still return HTTP 200. A fresh document-level recheck now proves those reports are geographic counts only, not routing contracts: the 2026 county workbook preserves headers like \`COUNTY\` and \`TOTAL COUNT\`; the county-and-town workbook preserves \`COUNTY\` plus \`TOWN\`; and the 2026 Geographic Distribution / Overflow PDFs enumerate counties and towns such as Androscoggin, Aroostook, Auburn, Augusta, Bangor, Machias, Portland, Rockland, Sanford, and Skowhegan only as benefit-geography rows. The public District Office Locations page also remains office-address only and does not name counties on-page. No reviewed live DHHS/OFI page, workbook, PDF, sitemap, or search surface publishes \`county served\`, \`service area\`, district-office assignments, or any county-to-office routing table. Maine therefore still lacks a reviewable public county-to-office or service-area routing contract on the live DHHS/OFI stack.`;
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -67,7 +67,7 @@ function writeText(filePath, value) {
 
 function updateAllStateReport(report) {
   const line =
-    '- Maine remains blocked after a 2026-06-26 bounded live recheck: DHHS district-office, OFI contact/programs/reports, offices/divisions, administrative offices, sitemap, official search queries, and the current county-count PDFs/XLSX surfaces all remain public, but they still expose office labels, addresses, or counts without any county-to-office or service-area routing contract.';
+    '- Maine remains blocked after a 2026-06-26 bounded live recheck: DHHS district-office, OFI contact/programs/reports, offices/divisions, administrative offices, sitemap, official search queries, and the current county/town PDFs/XLSX surfaces all remain public, but they still expose office addresses plus county/town benefit geography without any county-to-office or service-area routing contract.';
   if (/- Maine remains blocked after[^\n]*/.test(report)) {
     return report.replace(/- Maine remains blocked after[^\n]*/, line);
   }
@@ -255,6 +255,9 @@ export function generateBatch406MaineTerminalRefreshV1() {
     county_xlsx_live: true,
     county_town_xlsx_live: true,
     maine_search_live: true,
+    office_page_has_no_county_names: true,
+    geographic_reports_county_town_only: true,
+    no_office_assignment_terms_in_reports: true,
     completeness_pct: 91,
   });
   writeText(OUTPUTS.report, buildBatchReport());
