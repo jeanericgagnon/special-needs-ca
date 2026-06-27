@@ -99,6 +99,11 @@ db.prepare(`
 `).run('office-good', 'Orange County Medi-Cal Office', '800-222-3333', '', 'https://www.dhcs.ca.gov/orange', 'https://www.dhcs.ca.gov/orange', 'official_verified', 'published');
 
 db.prepare(`
+  INSERT INTO county_offices (id, office_name, phone, email, website, source_url, verification_status, display_status)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+`).run('office-fallback', 'Fallback County Office', '800-222-3333', '', 'https://www.real-county.gov/services', 'https://www.real-county.gov/services', 'generated_county_fallback', 'published');
+
+db.prepare(`
   INSERT INTO state_resource_agencies (id, name, intake_phone, agency_intake_contact, early_intervention_contact, website, source_url, verification_status)
   VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 `).run('agency-bad', 'Agency Example', '(555) 019-0000', '', '', 'https://www.example.org/agency', '', 'verified');
@@ -142,6 +147,26 @@ db.prepare(`
   'published'
 );
 
+db.prepare(`
+  INSERT INTO nonprofit_organizations (id, name, phone, email, website, next_step_phone, next_step_email, next_step_url, application_url, referral_url, source_url, verification_status, data_origin, display_status)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+`).run(
+  'nonprofit-fallback',
+  'Fallback Nonprofit',
+  '530-444-2222',
+  '',
+  'https://realnonprofit.org',
+  '',
+  '',
+  '',
+  '',
+  '',
+  'https://realnonprofit.org',
+  'source_listed',
+  'programmatic_fallback',
+  'published'
+);
+
 db.close();
 
 const { summary } = quarantinePlaceholderPublicRecords({
@@ -166,6 +191,7 @@ assert.deepEqual(districtStatuses, [
 const officeStatuses = checkDb.prepare('SELECT id, display_status FROM county_offices ORDER BY id').all();
 assert.deepEqual(officeStatuses, [
   { id: 'office-bad', display_status: 'needs_review' },
+  { id: 'office-fallback', display_status: 'needs_review' },
   { id: 'office-good', display_status: 'published' },
 ]);
 
@@ -181,10 +207,11 @@ assert.deepEqual(providerStatuses, [
 
 const nonprofitStatuses = checkDb.prepare('SELECT id, display_status FROM nonprofit_organizations ORDER BY id').all();
 assert.deepEqual(nonprofitStatuses, [
+  { id: 'nonprofit-fallback', display_status: 'needs_review' },
   { id: 'nonprofit-search-fallback', display_status: 'needs_review' },
 ]);
 
-assert.equal(summary.totalDowngraded, 5);
+assert.equal(summary.totalDowngraded, 7);
 assert.equal(fs.existsSync(path.join(outputDir, 'public-placeholder-quarantine-audit-2099-01-01.json')), true);
 assert.equal(fs.existsSync(path.join(outputDir, 'public-placeholder-quarantine-audit-2099-01-01.md')), true);
 

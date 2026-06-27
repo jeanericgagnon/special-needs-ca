@@ -1,0 +1,268 @@
+{
+  "generatedAt": "2026-06-27",
+  "dbPath": "ca_disability_navigator.db",
+  "totalScanned": 2121,
+  "totalDowngraded": 311,
+  "tables": [
+    {
+      "table": "county_offices",
+      "scanned": 241,
+      "downgraded": 221,
+      "unchanged": 20,
+      "reasonCounts": {
+        "fallback_verification_status:verification_status": 221,
+        "fallback_data_origin:data_origin": 221
+      }
+    },
+    {
+      "table": "school_districts",
+      "scanned": 156,
+      "downgraded": 53,
+      "unchanged": 103,
+      "reasonCounts": {
+        "fallback_verification_status:verification_status": 53,
+        "fallback_data_origin:data_origin": 53
+      }
+    },
+    {
+      "table": "state_resource_agencies",
+      "scanned": 120,
+      "downgraded": 0,
+      "unchanged": 120,
+      "reasonCounts": {}
+    },
+    {
+      "table": "regional_education_agencies",
+      "scanned": 174,
+      "downgraded": 37,
+      "unchanged": 137,
+      "reasonCounts": {
+        "fallback_verification_status:verification_status": 37,
+        "fallback_data_origin:data_origin": 37
+      }
+    },
+    {
+      "table": "iep_advocates",
+      "scanned": 40,
+      "downgraded": 0,
+      "unchanged": 40,
+      "reasonCounts": {}
+    },
+    {
+      "table": "resource_providers",
+      "scanned": 0,
+      "downgraded": 0,
+      "unchanged": 0,
+      "reasonCounts": {}
+    },
+    {
+      "table": "nonprofit_organizations",
+      "scanned": 1390,
+      "downgraded": 0,
+      "unchanged": 1390,
+      "reasonCounts": {}
+    }
+  ],
+  "sampleDowngrades": [
+    {
+      "table": "county_offices",
+      "id": "off-alameda-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alameda-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alpine-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alpine-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alpine-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-amador-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-amador-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-amador-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-butte-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-butte-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-butte-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-calaveras-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-calaveras-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-calaveras-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-colusa-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-colusa-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-colusa-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-contra-costa-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-contra-costa-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-contra-costa-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-del-norte-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-del-norte-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-del-norte-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-el-dorado-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-el-dorado-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    }
+  ]
+}

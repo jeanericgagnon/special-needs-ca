@@ -206,6 +206,17 @@ function isInvalidSourceUrl(value) {
 function getRowReasons(row, config) {
   const reasons = [];
 
+  const verificationStatus = String(row.verification_status || '').trim().toLowerCase();
+  const dataOrigin = String(row.data_origin || '').trim().toLowerCase();
+
+  if (verificationStatus === 'generated_county_fallback') {
+    reasons.push('fallback_verification_status:verification_status');
+  }
+
+  if (dataOrigin === 'programmatic_fallback' || dataOrigin === 'generated_county_fallback') {
+    reasons.push('fallback_data_origin:data_origin');
+  }
+
   for (const field of config.nameFields) {
     if (isPlaceholderName(row[field])) {
       reasons.push(`placeholder_name:${field}`);
