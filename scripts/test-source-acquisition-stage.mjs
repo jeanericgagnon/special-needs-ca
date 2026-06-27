@@ -39,6 +39,7 @@ function testNonprofitCandidate() {
   const candidate = buildPromotionCandidate(makeRecord());
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_nonprofit_organizations');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.extracted_name, 'Example Org');
   assert.equal(candidate.row.extracted_phone, '(800) 555-1212');
 }
@@ -60,6 +61,7 @@ function testDdCandidate() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_state_resource_agencies');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.extracted_name, 'County DD Office');
   assert.equal(candidate.row.agency_type, 'dd_routing');
 }
@@ -75,6 +77,7 @@ function testUnsupportedFamily() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_programs');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.extracted_name, 'Program Name');
   assert.equal(candidate.row.program_type, 'programs_benefits');
   assert.equal(candidate.row.official_source_url, 'https://example.org');
@@ -93,6 +96,7 @@ function testFormsCandidate() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_forms');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.program, 'Forms and Applications');
   assert.equal(candidate.row.official_download_url, 'https://www.hhs.texas.gov/forms/apply.pdf');
 }
@@ -110,6 +114,7 @@ function testWaitlistCandidate() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_waitlists');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.name, 'Texas HCBS Waiver Interest List');
   assert.equal(candidate.row.program_id, '');
   assert.equal(candidate.row.estimate_source_type, 'official_state');
@@ -127,6 +132,7 @@ function testHelpResourceCandidate() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_help_resources');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.help_type, 'housing');
   assert.equal(candidate.row.action_url, 'https://example.org/apply');
 }
@@ -144,7 +150,29 @@ function testKnowledgeCandidate() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_knowledge_content');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.title, 'Understanding Regional Center Appeals');
+}
+
+function testCountyOfficeCandidateCarriesIhssProgramId() {
+  const candidate = buildPromotionCandidate(makeRecord({
+    gapFamily: 'medicaid_hhs_offices',
+    targetTable: 'county_offices',
+    sourceRole: 'county_ihss_entry_from_cdss_directory',
+    sourceUrl: 'https://socialservices.example.ca.gov/ihss',
+    finalUrl: 'https://socialservices.example.ca.gov/ihss',
+    familyExtraction: {
+      officeName: 'County Social Services Agency',
+      contactPhone: '(510) 263-2420',
+      contactAddress: '8477 Enterprise Way, Oakland, CA 94621',
+      publicContactSignalCount: 2,
+    },
+    phones: ['(510) 263-2420'],
+    addressLines: ['8477 Enterprise Way, Oakland, CA 94621'],
+  }));
+  assert.equal(candidate.supported, true);
+  assert.equal(candidate.stagingTable, 'staging_scraped_county_offices');
+  assert.equal(candidate.row.program_id, 'ihss-for-children');
 }
 
 function testEducationRegionalCandidate() {
@@ -162,6 +190,7 @@ function testEducationRegionalCandidate() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_regional_education_agencies');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.extracted_name, 'California Special Education Local Plan Areas');
   assert.equal(candidate.row.agency_type, 'education_routing');
 }
@@ -185,6 +214,7 @@ function testEducationDistrictCandidate() {
   }));
   assert.equal(candidate.supported, true);
   assert.equal(candidate.stagingTable, 'staging_scraped_school_districts');
+  assert.equal(candidate.row.display_status, 'needs_review');
   assert.equal(candidate.row.county_id, 'travis-tx');
   assert.equal(candidate.row.spec_ed_contact_phone, '(512) 414-1700');
 }
@@ -250,7 +280,7 @@ function testStageScriptDryRunNoOpsWhenRequestedFamilyHasNoAcceptedRows() {
     'source-acquisition-runs',
     'run-1',
     'staged',
-    'knowledge-content',
+    'knowledge_content',
     'promotion-summary.json'
   );
   const summary = JSON.parse(fs.readFileSync(summaryPath, 'utf8'));
@@ -572,6 +602,7 @@ testFormsCandidate();
 testWaitlistCandidate();
 testHelpResourceCandidate();
 testKnowledgeCandidate();
+testCountyOfficeCandidateCarriesIhssProgramId();
 testEducationRegionalCandidate();
 testEducationDistrictCandidate();
 testPreserveExistingCountyFields();

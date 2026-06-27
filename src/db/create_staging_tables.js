@@ -46,6 +46,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_county_offices (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     extracted_phone TEXT NOT NULL,
     extracted_email TEXT,
@@ -69,6 +70,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_state_resource_agencies (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     agency_type TEXT NOT NULL,
     counties_served TEXT NOT NULL,
@@ -97,6 +99,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_regional_education_agencies (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     agency_type TEXT NOT NULL,
     counties_served TEXT NOT NULL,
@@ -118,6 +121,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_school_districts (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     spec_ed_contact_phone TEXT NOT NULL,
     spec_ed_contact_email TEXT,
@@ -140,6 +144,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_nonprofit_organizations (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     extracted_website TEXT NOT NULL,
     extracted_phone TEXT NOT NULL,
@@ -161,6 +166,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_iep_advocates (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     credentials TEXT NOT NULL,
     experience_years INTEGER,
@@ -189,6 +195,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_resource_providers (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     categories TEXT NOT NULL,
     extracted_phone TEXT NOT NULL,
@@ -212,6 +219,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_forms (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     slug TEXT NOT NULL,
     program TEXT NOT NULL,
     official_download_url TEXT NOT NULL,
@@ -236,6 +244,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_programs (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     extracted_name TEXT NOT NULL,
     description TEXT,
     who_it_is_for TEXT,
@@ -289,6 +298,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_knowledge_content (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     slug TEXT NOT NULL,
     title TEXT NOT NULL,
     content_category TEXT NOT NULL,
@@ -311,6 +321,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_waitlists (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     program_id TEXT NOT NULL,
     name TEXT NOT NULL,
     duration_label TEXT NOT NULL,
@@ -334,6 +345,7 @@ CREATE TABLE IF NOT EXISTS staging_scraped_sources (
     suggested_target_id TEXT,
     duplicate_candidate_id TEXT,
     review_status TEXT DEFAULT 'pending_review',
+    display_status TEXT DEFAULT 'needs_review',
     program_id TEXT NOT NULL,
     url TEXT NOT NULL,
     type TEXT NOT NULL,
@@ -356,5 +368,28 @@ CREATE TABLE IF NOT EXISTS staging_promotion_audit (
 `;
 
 db.exec(schema);
+const DISPLAY_STATUS_TABLES = [
+  'staging_scraped_county_offices',
+  'staging_scraped_state_resource_agencies',
+  'staging_scraped_regional_education_agencies',
+  'staging_scraped_school_districts',
+  'staging_scraped_nonprofit_organizations',
+  'staging_scraped_iep_advocates',
+  'staging_scraped_resource_providers',
+  'staging_scraped_forms',
+  'staging_scraped_programs',
+  'staging_scraped_help_resources',
+  'staging_scraped_knowledge_content',
+  'staging_scraped_waitlists',
+  'staging_scraped_sources',
+];
+
+for (const tableName of DISPLAY_STATUS_TABLES) {
+  const columns = db.prepare(`PRAGMA table_info(${tableName})`).all();
+  const hasDisplayStatus = columns.some((column) => column.name === 'display_status');
+  if (!hasDisplayStatus) {
+    db.prepare(`ALTER TABLE ${tableName} ADD COLUMN display_status TEXT DEFAULT 'needs_review'`).run();
+  }
+}
 console.log('Staging schema created successfully!');
 db.close();

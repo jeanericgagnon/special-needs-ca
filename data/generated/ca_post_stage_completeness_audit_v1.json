@@ -1,233 +1,133 @@
 {
-  "runId": "ca-v2",
-  "generatedAt": "2026-06-20T19:38:39.740Z",
-  "parseReadyCount": 73,
+  "runId": "ca-v3",
+  "generatedAt": "2026-06-27T22:32:08.977Z",
+  "parseReadyCount": 134,
   "browserAssistedCount": 30,
-  "familyCount": 14,
+  "familyCount": 8,
   "families": [
     {
-      "family": "advocates-legal",
-      "acceptedCount": 0,
-      "rejectedCount": 0,
-      "stagedCount": 1,
-      "unsupportedCount": 0,
-      "fieldCompleteness": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        }
-      ],
-      "provenance": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "authority",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "agency",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "provenanceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        }
-      ]
-    },
-    {
       "family": "advocates_legal",
-      "acceptedCount": 1,
-      "rejectedCount": 0,
-      "stagedCount": 0,
-      "unsupportedCount": 0,
-      "fieldCompleteness": [
-        {
-          "field": "sourceUrl",
-          "present": 1,
-          "missing": 0,
-          "completenessPercent": 100
-        },
-        {
-          "field": "finalUrl",
-          "present": 1,
-          "missing": 0,
-          "completenessPercent": 100
-        },
-        {
-          "field": "savedPath",
-          "present": 1,
-          "missing": 0,
-          "completenessPercent": 100
-        }
-      ],
-      "provenance": [
-        {
-          "field": "sourceUrl",
-          "present": 1,
-          "missing": 0,
-          "completenessPercent": 100
-        },
-        {
-          "field": "finalUrl",
-          "present": 1,
-          "missing": 0,
-          "completenessPercent": 100
-        },
-        {
-          "field": "savedPath",
-          "present": 1,
-          "missing": 0,
-          "completenessPercent": 100
-        },
-        {
-          "field": "authority",
-          "present": 0,
-          "missing": 1,
-          "completenessPercent": 0
-        },
-        {
-          "field": "agency",
-          "present": 0,
-          "missing": 1,
-          "completenessPercent": 0
-        },
-        {
-          "field": "provenanceUrl",
-          "present": 0,
-          "missing": 1,
-          "completenessPercent": 0
-        }
-      ]
-    },
-    {
-      "family": "dd-routing",
-      "acceptedCount": 0,
-      "rejectedCount": 0,
+      "acceptedCount": 2,
+      "rejectedCount": 1,
       "stagedCount": 2,
       "unsupportedCount": 0,
+      "stageDisplayStatus": [
+        {
+          "label": "needs_review",
+          "count": 2
+        }
+      ],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 2
+        }
+      ],
+      "displayEligibleStageCount": 0,
       "fieldCompleteness": [
         {
           "field": "sourceUrl",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         }
       ],
       "provenance": [
         {
           "field": "sourceUrl",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         },
         {
           "field": "authority",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         },
         {
           "field": "agency",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         },
         {
           "field": "provenanceUrl",
-          "present": 0,
+          "present": 2,
           "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         }
       ]
     },
     {
       "family": "dd_routing",
-      "acceptedCount": 2,
-      "rejectedCount": 3,
-      "stagedCount": 0,
+      "acceptedCount": 24,
+      "rejectedCount": 6,
+      "stagedCount": 24,
       "unsupportedCount": 0,
+      "stageDisplayStatus": [
+        {
+          "label": "needs_review",
+          "count": 19
+        },
+        {
+          "label": "published",
+          "count": 5
+        }
+      ],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 24
+        }
+      ],
+      "displayEligibleStageCount": 5,
       "fieldCompleteness": [
         {
           "field": "officeName",
-          "present": 2,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "contactPhone",
-          "present": 2,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "sourceUrl",
-          "present": 2,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 2,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         }
@@ -235,104 +135,39 @@
       "provenance": [
         {
           "field": "sourceUrl",
-          "present": 2,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 2,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 2,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "authority",
-          "present": 0,
-          "missing": 2,
-          "completenessPercent": 0
+          "present": 24,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "agency",
-          "present": 0,
-          "missing": 2,
-          "completenessPercent": 0
+          "present": 24,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "provenanceUrl",
-          "present": 0,
-          "missing": 2,
-          "completenessPercent": 0
-        }
-      ]
-    },
-    {
-      "family": "education-routing",
-      "acceptedCount": 0,
-      "rejectedCount": 0,
-      "stagedCount": 10,
-      "unsupportedCount": 0,
-      "fieldCompleteness": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
+          "present": 24,
           "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        }
-      ],
-      "provenance": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "authority",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "agency",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "provenanceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         }
       ]
     },
@@ -340,8 +175,21 @@
       "family": "education_routing",
       "acceptedCount": 10,
       "rejectedCount": 0,
-      "stagedCount": 0,
+      "stagedCount": 10,
       "unsupportedCount": 0,
+      "stageDisplayStatus": [
+        {
+          "label": "needs_review",
+          "count": 10
+        }
+      ],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 10
+        }
+      ],
+      "displayEligibleStageCount": 0,
       "fieldCompleteness": [
         {
           "field": "sourceUrl",
@@ -383,123 +231,75 @@
         },
         {
           "field": "authority",
-          "present": 0,
-          "missing": 10,
-          "completenessPercent": 0
+          "present": 10,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "agency",
-          "present": 0,
-          "missing": 10,
-          "completenessPercent": 0
+          "present": 10,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "provenanceUrl",
-          "present": 0,
-          "missing": 10,
-          "completenessPercent": 0
-        }
-      ]
-    },
-    {
-      "family": "forms-guides",
-      "acceptedCount": 0,
-      "rejectedCount": 0,
-      "stagedCount": 19,
-      "unsupportedCount": 0,
-      "fieldCompleteness": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
+          "present": 10,
           "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        }
-      ],
-      "provenance": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "authority",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "agency",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "provenanceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         }
       ]
     },
     {
       "family": "forms_guides",
-      "acceptedCount": 19,
+      "acceptedCount": 22,
       "rejectedCount": 1,
-      "stagedCount": 0,
+      "stagedCount": 22,
       "unsupportedCount": 0,
+      "stageDisplayStatus": [
+        {
+          "label": "needs_review",
+          "count": 21
+        },
+        {
+          "label": "published",
+          "count": 1
+        }
+      ],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 22
+        }
+      ],
+      "displayEligibleStageCount": 1,
       "fieldCompleteness": [
         {
           "field": "programName",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "officialDownloadUrl",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "sourceUrl",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         }
@@ -507,135 +307,78 @@
       "provenance": [
         {
           "field": "sourceUrl",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 19,
+          "present": 22,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "authority",
-          "present": 0,
-          "missing": 19,
-          "completenessPercent": 0
+          "present": 22,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "agency",
-          "present": 0,
-          "missing": 19,
-          "completenessPercent": 0
+          "present": 22,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "provenanceUrl",
-          "present": 0,
-          "missing": 19,
-          "completenessPercent": 0
-        }
-      ]
-    },
-    {
-      "family": "general-gap-fill",
-      "acceptedCount": 0,
-      "rejectedCount": 0,
-      "stagedCount": 0,
-      "unsupportedCount": 6,
-      "fieldCompleteness": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
+          "present": 22,
           "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        }
-      ],
-      "provenance": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "authority",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "agency",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "provenanceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         }
       ]
     },
     {
       "family": "general_gap_fill",
-      "acceptedCount": 6,
+      "acceptedCount": 24,
       "rejectedCount": 0,
       "stagedCount": 0,
-      "unsupportedCount": 0,
+      "unsupportedCount": 24,
+      "stageDisplayStatus": [],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 24
+        }
+      ],
+      "displayEligibleStageCount": 0,
       "fieldCompleteness": [
         {
           "field": "programName",
-          "present": 6,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "sourceUrl",
-          "present": 6,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 6,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 6,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         }
@@ -643,113 +386,61 @@
       "provenance": [
         {
           "field": "sourceUrl",
-          "present": 6,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 6,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 6,
+          "present": 24,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "authority",
-          "present": 0,
-          "missing": 6,
-          "completenessPercent": 0
+          "present": 24,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "agency",
-          "present": 0,
-          "missing": 6,
-          "completenessPercent": 0
+          "present": 24,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "provenanceUrl",
-          "present": 0,
-          "missing": 6,
-          "completenessPercent": 0
-        }
-      ]
-    },
-    {
-      "family": "medicaid-hhs-offices",
-      "acceptedCount": 0,
-      "rejectedCount": 0,
-      "stagedCount": 10,
-      "unsupportedCount": 0,
-      "fieldCompleteness": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
+          "present": 24,
           "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        }
-      ],
-      "provenance": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "authority",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "agency",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "provenanceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         }
       ]
     },
     {
       "family": "medicaid_hhs_offices",
       "acceptedCount": 10,
-      "rejectedCount": 18,
-      "stagedCount": 0,
+      "rejectedCount": 26,
+      "stagedCount": 10,
       "unsupportedCount": 0,
+      "stageDisplayStatus": [
+        {
+          "label": "needs_review",
+          "count": 10
+        }
+      ],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 10
+        }
+      ],
+      "displayEligibleStageCount": 0,
       "fieldCompleteness": [
         {
           "field": "officeName",
@@ -803,117 +494,65 @@
         },
         {
           "field": "authority",
-          "present": 0,
-          "missing": 10,
-          "completenessPercent": 0
+          "present": 10,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "agency",
-          "present": 0,
-          "missing": 10,
-          "completenessPercent": 0
+          "present": 10,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "provenanceUrl",
-          "present": 0,
-          "missing": 10,
-          "completenessPercent": 0
-        }
-      ]
-    },
-    {
-      "family": "programs-benefits",
-      "acceptedCount": 0,
-      "rejectedCount": 0,
-      "stagedCount": 3,
-      "unsupportedCount": 0,
-      "fieldCompleteness": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
+          "present": 10,
           "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        }
-      ],
-      "provenance": [
-        {
-          "field": "sourceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "finalUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "savedPath",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "authority",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "agency",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
-        },
-        {
-          "field": "provenanceUrl",
-          "present": 0,
-          "missing": 0,
-          "completenessPercent": 0
+          "completenessPercent": 100
         }
       ]
     },
     {
       "family": "programs_benefits",
-      "acceptedCount": 3,
+      "acceptedCount": 7,
       "rejectedCount": 0,
-      "stagedCount": 0,
+      "stagedCount": 7,
       "unsupportedCount": 0,
+      "stageDisplayStatus": [
+        {
+          "label": "needs_review",
+          "count": 7
+        }
+      ],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 7
+        }
+      ],
+      "displayEligibleStageCount": 0,
       "fieldCompleteness": [
         {
           "field": "programName",
-          "present": 3,
+          "present": 7,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "sourceUrl",
-          "present": 3,
+          "present": 7,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 3,
+          "present": 7,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 3,
+          "present": 7,
           "missing": 0,
           "completenessPercent": 100
         }
@@ -921,39 +560,123 @@
       "provenance": [
         {
           "field": "sourceUrl",
-          "present": 3,
+          "present": 7,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "finalUrl",
-          "present": 3,
+          "present": 7,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "savedPath",
-          "present": 3,
+          "present": 7,
           "missing": 0,
           "completenessPercent": 100
         },
         {
           "field": "authority",
-          "present": 0,
-          "missing": 3,
-          "completenessPercent": 0
+          "present": 7,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "agency",
-          "present": 0,
-          "missing": 3,
-          "completenessPercent": 0
+          "present": 7,
+          "missing": 0,
+          "completenessPercent": 100
         },
         {
           "field": "provenanceUrl",
-          "present": 0,
-          "missing": 3,
-          "completenessPercent": 0
+          "present": 7,
+          "missing": 0,
+          "completenessPercent": 100
+        }
+      ]
+    },
+    {
+      "family": "waivers",
+      "acceptedCount": 1,
+      "rejectedCount": 0,
+      "stagedCount": 1,
+      "unsupportedCount": 0,
+      "stageDisplayStatus": [
+        {
+          "label": "published",
+          "count": 1
+        }
+      ],
+      "acceptedDisplayStatus": [
+        {
+          "label": "unspecified",
+          "count": 1
+        }
+      ],
+      "displayEligibleStageCount": 1,
+      "fieldCompleteness": [
+        {
+          "field": "programName",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "sourceUrl",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "finalUrl",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "savedPath",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        }
+      ],
+      "provenance": [
+        {
+          "field": "sourceUrl",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "finalUrl",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "savedPath",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "authority",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "agency",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
+        },
+        {
+          "field": "provenanceUrl",
+          "present": 1,
+          "missing": 0,
+          "completenessPercent": 100
         }
       ]
     }

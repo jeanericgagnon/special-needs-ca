@@ -66,7 +66,7 @@ function filenameLike(title) {
   return /^[a-f0-9]{32,}\.pdf$/i.test(normalized(title));
 }
 
-function classifyFormRecord(record, text) {
+function classifyFormRecord(record) {
   const sourceRole = lower(record.sourceRole);
   if (hasCue(sourceRole, [/forms_catalog/, /directory/, /information/, /faq/, /fact_sheet/, /directive/])) {
     return {
@@ -162,28 +162,72 @@ function classifyDdRoutingRecord(record, text) {
 function classifyOfficeRecord(record, text) {
   const sourceRole = lower(record.sourceRole);
   const title = normalized(record.pageTitle || record.h1s?.[0] || '');
-  if (!/county_ihss_entry_from_cdss_directory/.test(sourceRole)) {
+  if (!/county_ihss_entry_from_cdss_directory|county_ihss_leaf_candidate/.test(sourceRole)) {
     return {
       entityType: 'directory',
       classificationReason: 'non_county_office_directory_source',
       destinationTable: null,
     };
   }
-  const officeCue = hasCue(text, [/ihss/i, /in-home supportive services/i, /public authority/i, /social services agency/i, /adult services/i]);
-  const titleOfficeCue = hasCue(title, [/ihss/i, /in-home supportive services/i, /public authority/i, /social services agency/i, /adult services/i, /aging services/i, /human services/i]);
-  const genericCountyHomepage = hasCue(title, [/^home\b/i, /official website/i, /county, ca/i, /county of/i]) || genericTitle(title);
-  if (officeCue && titleOfficeCue && !genericCountyHomepage && record.phones?.length && record.addressLines?.length) {
+  const strongOfficeCue = hasCue(text, [
+    /ihss/i,
+    /in-home supportive services/i,
+    /public authority/i,
+    /social services agency/i,
+    /human services agency/i,
+    /county human services/i,
+    /disability assistance \(ihss\)/i,
+  ]);
+  const weakAgingCue = hasCue(text, [
+    /aging services/i,
+    /older adults?/i,
+    /senior services/i,
+    /aging and adult services/i,
+    /area agency on aging/i,
+  ]);
+  const titleStrongOfficeCue = hasCue(title, [
+    /ihss/i,
+    /in-home supportive services/i,
+    /public authority/i,
+    /social services agency/i,
+    /human services/i,
+    /human services agency/i,
+    /adult services/i,
+  ]);
+  const titleWeakAgingCue = hasCue(title, [
+    /aging services/i,
+    /older adults?/i,
+    /senior services/i,
+    /aging and adult services/i,
+  ]);
+  const genericCountyHomepage = (hasCue(title, [/^home\b/i, /official website/i, /county, ca/i, /county of/i]) || genericTitle(title))
+    && !titleStrongOfficeCue;
+  if (strongOfficeCue && titleStrongOfficeCue && !genericCountyHomepage && record.phones?.length && record.addressLines?.length) {
     return {
       entityType: 'office',
       classificationReason: 'local_office_contact_signals_present',
       destinationTable: 'county_offices',
     };
   }
-  if (officeCue && (record.phones?.length || record.addressLines?.length)) {
+  if (titleWeakAgingCue && !titleStrongOfficeCue) {
+    return {
+      entityType: 'policy_or_informational_page',
+      classificationReason: 'aging_services_page_not_disability_office',
+      destinationTable: null,
+    };
+  }
+  if (strongOfficeCue && (record.phones?.length || record.addressLines?.length)) {
     return {
       entityType: 'contact_page',
       classificationReason: 'county_service_page_needs_office_extraction',
       destinationTable: 'county_offices',
+    };
+  }
+  if (weakAgingCue && !strongOfficeCue) {
+    return {
+      entityType: 'policy_or_informational_page',
+      classificationReason: 'aging_services_page_not_disability_office',
+      destinationTable: null,
     };
   }
   return {
@@ -193,7 +237,7 @@ function classifyOfficeRecord(record, text) {
   };
 }
 
-function classifyEducationRecord(record, text) {
+function classifyEducationRecord(record) {
   const sourceRole = lower(record.sourceRole);
   if (hasCue(sourceRole, [/directory/])) {
     return {
@@ -309,6 +353,11 @@ function extractOfficeFields(record) {
 
 function extractDdAgencyFields(record) {
   const title = normalized(record.pageTitle || record.h1s?.[0] || '');
+  const sourceRole = lower(record.sourceRole);
+  const ddsDirectoryAgencyName = /regional_center_root_from_dds_directory/.test(sourceRole)
+    ? normalized(record.agency || '')
+    : '';
+  const canonicalAgencyName = ddsDirectoryAgencyName || (!genericTitle(title) ? title : '');
   const eligibilityLink = findLink(record, [/\beligib/i, /\bapply\b/i, /\bintake\b/i]);
   const appealsLink = findLink(record, [/appeal/i, /complaint/i, /rights/i]);
   const serviceAreaLink = findLink(record, [/service area/i, /catchment/i, /map/i]);
@@ -318,7 +367,7 @@ function extractDdAgencyFields(record) {
   const countyValue = /california$/i.test(normalized(countiesParagraph)) ? '' : countiesParagraph;
   return {
     fields: {
-      name: evidence('name', !genericTitle(title) ? title : '', title, record.h1s?.[0] || record.pageTitle, 'heading'),
+      name: evidence('name', canonicalAgencyName, ddsDirectoryAgencyName || title, ddsDirectoryAgencyName ? 'dds_directory' : (record.h1s?.[0] || record.pageTitle), ddsDirectoryAgencyName ? 'provenance' : 'heading'),
       website: evidence('website', record.finalUrl || record.sourceUrl || '', record.finalUrl || record.sourceUrl || '', 'source', 'metadata'),
       phone: evidence('phone', record.phones?.[0] || '', record.phones?.[0] || '', 'phones', 'contact'),
       address: evidence('address', record.addressLines?.[0] || '', record.addressLines?.[0] || '', 'addressLines', 'contact'),

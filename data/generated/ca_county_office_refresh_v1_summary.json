@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-06-27T20:52:59.018Z",
+  "runIds": [
+    "ca-county-office-fetch-now-v5",
+    "ca-county-office-review-first-v1"
+  ],
+  "family": "medicaid_hhs_offices",
+  "totalRows": 5,
+  "stageReadyCount": 5,
+  "enrichmentRequiredCount": 0,
+  "rejectedCount": 0,
+  "classificationReasons": {
+    "local_office_contact_signals_present": 5
+  },
+  "semanticStatusCounts": {
+    "stage_ready": 5
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-06-27T22:32:09.126Z",
+  "registryFamilies": 10,
+  "registrySeedEntries": 18,
+  "queueRows": 18,
+  "queueByFamily": {
+    "ihss": 2,
+    "selpa": 2,
+    "ccs_mtu": 2,
+    "dhcs_epsdt": 2,
+    "ssi": 2,
+    "calable": 2,
+    "frcnca": 1,
+    "pti_cprc": 2,
+    "help_me_grow": 1,
+    "local_nonprofits": 2
+  },
+  "alignmentStatus": "pass",
+  "alignmentFailures": [],
+  "publishPrefix": "ca_county_office_refresh_v1",
+  "stageReadyRows": 5,
+  "publishedCount": 5,
+  "needsReviewCount": 0,
+  "publishByFamily": {
+    "medicaid_hhs_offices": 5
+  },
+  "publishByDecision": {
+    "published": 5
+  },
+  "publishedCountyOfficeRows": 5,
+  "unsafePublishedCountyOfficeRows": 0,
+  "unsafePublishedCountyOfficeAgencies": [],
+  "upsertRuns": [
+    {
+      "runId": "ca-v3",
+      "mode": "apply",
+      "actionableCount": 8,
+      "skippedCount": 0,
+      "upsertedByTable": {
+        "state_resource_agencies": 5,
+        "forms_and_guides": 1,
+        "county_offices": 1,
+        "programs": 1
+      }
+    },
+    {
+      "runId": "ca-county-office-fetch-now-v5",
+      "mode": "apply",
+      "actionableCount": 2,
+      "skippedCount": 3,
+      "upsertedByTable": {
+        "county_offices": 2
+      }
+    },
+    {
+      "runId": "ca-county-office-review-first-v1",
+      "mode": "apply",
+      "actionableCount": 3,
+      "skippedCount": 2,
+      "upsertedByTable": {
+        "county_offices": 3
+      }
+    }
+  ],
+  "upsertRunId": "ca-v3, ca-county-office-fetch-now-v5, ca-county-office-review-first-v1",
+  "upsertMode": "apply",
+  "actionableCount": 13,
+  "skippedCount": 5,
+  "upsertedByTable": {
+    "state_resource_agencies": 5,
+    "forms_and_guides": 1,
+    "county_offices": 6,
+    "programs": 1
+  },
+  "publicQueryGuards": {
+    "countyOfficesBulkPublishedOnly": true,
+    "schoolDistrictsBulkPublishedOnly": true,
+    "schoolDistrictByIdPublishedOnly": true,
+    "schoolDistrictLitigationListPublishedOnly": true,
+    "schoolDistrictBySlugPublishedOnly": true,
+    "selpasByCountyPublishedOnly": true,
+    "waitlistsPublishedOnly": true,
+    "localProvidersPublishedOnly": true,
+    "programsBulkPublishedOnly": true,
+    "programBySlugPublishedOnly": true
+  },
+  "nationwideCounts": {
+    "completeStates": 45,
+    "blockedStates": 5,
+    "indexSafeStates": 45
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-06-27T22:29:31.287Z",
+  "state": "california",
+  "inputRegistryPath": "data/generated/california-next-source-registry-v1.json",
+  "totalRegistrySeeds": 18,
+  "queueRows": 18,
+  "byFamily": {
+    "ihss": 2,
+    "selpa": 2,
+    "ccs_mtu": 2,
+    "dhcs_epsdt": 2,
+    "ssi": 2,
+    "calable": 2,
+    "frcnca": 1,
+    "pti_cprc": 2,
+    "help_me_grow": 1,
+    "local_nonprofits": 2
+  },
+  "byBatchClass": {
+    "directory_root": 3,
+    "html": 15
+  }
+}

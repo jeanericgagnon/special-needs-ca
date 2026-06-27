@@ -1,0 +1,49 @@
+{
+  "runId": "ca-county-office-review-first-v1",
+  "mode": "apply",
+  "dbPath": "ca_disability_navigator.db",
+  "publishedDecisionCount": 5,
+  "actionableCount": 3,
+  "skippedCount": 2,
+  "upsertedByTable": {
+    "county_offices": 3
+  },
+  "actions": [
+    {
+      "recordId": "california|medicaid_hhs_offices|california|medicaid_hhs_offices|county-ihss-el-dorado|county_ihss_entry_from_cdss_directory|0cbe3af75e59fa780dfc4d44cca83eaa5d2ad3a6ed9d1bbdb63a696d54357734|county_ihss_leaf_candidate|bfc850028716481032b53ea29b942b965f560fab04504d7ba6229552d9101781",
+      "family": "medicaid_hhs_offices",
+      "tableName": "county_offices",
+      "id": "off-el-dorado-ihss",
+      "display_status": "published",
+      "source_url": "https://www.eldoradocounty.ca.gov/Health-Well-Being/Health-and-Human-Services"
+    },
+    {
+      "recordId": "california|medicaid_hhs_offices|california|medicaid_hhs_offices|county-ihss-el-dorado|county_ihss_entry_from_cdss_directory|0cbe3af75e59fa780dfc4d44cca83eaa5d2ad3a6ed9d1bbdb63a696d54357734|county_ihss_leaf_candidate|98ca0227083e872dbb4be23b9a846eb63e745f5eec7e3df260535c7249600243",
+      "family": "medicaid_hhs_offices",
+      "tableName": "county_offices",
+      "id": "off-el-dorado-ihss",
+      "display_status": "published",
+      "source_url": "https://www.eldoradocounty.ca.gov/Health-Well-Being/Human-Services"
+    },
+    {
+      "recordId": "california|medicaid_hhs_offices|california|medicaid_hhs_offices|county-ihss-merced|county_ihss_entry_from_cdss_directory|d79f9dd036182a1f65bfe8bc8dae654a9dea5dd15bfc51355a75fe2bd4c4c192|county_ihss_leaf_candidate|9563f8455243fabb8113193f68120c21a18dbd526b98e3c45e7b92025ffcc07f",
+      "family": "medicaid_hhs_offices",
+      "tableName": "county_offices",
+      "id": "off-merced-ihss",
+      "display_status": "published",
+      "source_url": "https://www.countyofmerced.com/74"
+    }
+  ],
+  "skipped": [
+    {
+      "recordId": "california|medicaid_hhs_offices|california|medicaid_hhs_offices|county-ihss-nevada|county_ihss_entry_from_cdss_directory|bf722931a9b900b5c157137d9017c65d5bfb270e12187cf3034d94f769f48700|county_ihss_leaf_candidate|1bd2e89c2c2e38b852fa4ad296262b0f39175fa996ade6acaa15e7e646d19a4b",
+      "family": "medicaid_hhs_offices",
+      "reason": "missing_staged_candidate"
+    },
+    {
+      "recordId": "california|medicaid_hhs_offices|california|medicaid_hhs_offices|county-ihss-stanislaus|county_ihss_entry_from_cdss_directory|d3c52f57592937971d7785a7e17d81712cd43c3818a400fcfbf2597907f06480|county_ihss_leaf_candidate|58c7808c498764c65c165baf8c33394d45e510e873d16cb7f2a7679786623352",
+      "family": "medicaid_hhs_offices",
+      "reason": "missing_staged_candidate"
+    }
+  ]
+}

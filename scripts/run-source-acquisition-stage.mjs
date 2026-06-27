@@ -21,6 +21,7 @@ import {
 
 const WAIT_TIMEOUT_MS = 5000;
 const WAIT_POLL_MS = 50;
+const tableColumnCache = new Map();
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -46,37 +47,72 @@ function readNdjson(filePath) {
     .map((line) => JSON.parse(line));
 }
 
-function inferOfficeProgramId(db, row) {
-  const sourceUrl = String(row.source_url || '').trim();
-  const stateId = String(row.state_id || '').trim();
-  if (!db || !sourceUrl || !stateId) return '';
+function getTableColumns(db, tableName) {
+  const cacheKey = `${tableName}`;
+  if (tableColumnCache.has(cacheKey)) return tableColumnCache.get(cacheKey);
+  const columns = db.prepare(`PRAGMA table_info(${tableName})`).all().map((row) => row.name);
+  tableColumnCache.set(cacheKey, columns);
+  return columns;
+}
 
-  const exact = db.prepare(`
+function inferOfficeProgramId(db, row) {
+  const existingProgramId = String(row.program_id || '').trim();
+  if (existingProgramId) return existingProgramId;
+
+  const sourceUrl = String(row.source_url || '').trim();
+  const countyId = String(row.county_id || '').trim();
+  if (!db || !sourceUrl) return '';
+
+  const exactQuery = countyId
+    ? db.prepare(`
     SELECT program_id, COUNT(*) AS count
     FROM county_offices
-    WHERE state_id = ?
+    WHERE county_id = ?
       AND source_url = ?
       AND program_id IS NOT NULL
       AND TRIM(program_id) <> ''
     GROUP BY program_id
     ORDER BY count DESC, program_id ASC
     LIMIT 1
-  `).get(stateId, sourceUrl);
+  `)
+    : db.prepare(`
+    SELECT program_id, COUNT(*) AS count
+    FROM county_offices
+    WHERE source_url = ?
+      AND program_id IS NOT NULL
+      AND TRIM(program_id) <> ''
+    GROUP BY program_id
+    ORDER BY count DESC, program_id ASC
+    LIMIT 1
+  `);
+  const exact = countyId ? exactQuery.get(countyId, sourceUrl) : exactQuery.get(sourceUrl);
   if (exact?.program_id) return exact.program_id;
 
   const website = String(row.extracted_website || '').trim();
   if (website) {
-    const byWebsite = db.prepare(`
+    const byWebsiteQuery = countyId
+      ? db.prepare(`
       SELECT program_id, COUNT(*) AS count
       FROM county_offices
-      WHERE state_id = ?
+      WHERE county_id = ?
         AND website = ?
         AND program_id IS NOT NULL
         AND TRIM(program_id) <> ''
       GROUP BY program_id
       ORDER BY count DESC, program_id ASC
       LIMIT 1
-    `).get(stateId, website);
+    `)
+      : db.prepare(`
+      SELECT program_id, COUNT(*) AS count
+      FROM county_offices
+      WHERE website = ?
+        AND program_id IS NOT NULL
+        AND TRIM(program_id) <> ''
+      GROUP BY program_id
+      ORDER BY count DESC, program_id ASC
+      LIMIT 1
+    `);
+    const byWebsite = countyId ? byWebsiteQuery.get(countyId, website) : byWebsiteQuery.get(website);
     if (byWebsite?.program_id) return byWebsite.program_id;
   }
 
@@ -298,9 +334,11 @@ for (const input of familyInputs) {
         const deleteStmt = db.prepare(`DELETE FROM ${entry.candidate.stagingTable} WHERE ${deleteWhereClause(config.keyFields)}`);
         deleteStmt.run(...config.keyFields.map((field) => row[field]));
         dbStats.replaced += 1;
-        const placeholders = config.columns.map(() => '?').join(', ');
-        const insertStmt = db.prepare(`INSERT INTO ${entry.candidate.stagingTable} (${config.columns.join(', ')}) VALUES (${placeholders})`);
-        insertStmt.run(...config.columns.map((column) => row[column] ?? null));
+        const availableColumns = getTableColumns(db, entry.candidate.stagingTable);
+        const insertColumns = config.columns.filter((column) => availableColumns.includes(column));
+        const placeholders = insertColumns.map(() => '?').join(', ');
+        const insertStmt = db.prepare(`INSERT INTO ${entry.candidate.stagingTable} (${insertColumns.join(', ')}) VALUES (${placeholders})`);
+        insertStmt.run(...insertColumns.map((column) => row[column] ?? null));
         dbStats.inserted += 1;
       }
     });

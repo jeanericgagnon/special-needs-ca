@@ -178,6 +178,15 @@ export function dedupeList(values) {
   return results;
 }
 
+function sanitizeAddressLine(value) {
+  return String(value || '')
+    .replace(/\/@.*$/i, '')
+    .replace(/\/data=!.*$/i, '')
+    .replace(/\s+,/g, ',')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function normalizePhone(value) {
   const digits = String(value || '').replace(/\D/g, '');
   if (digits.length === 10) {
@@ -279,6 +288,8 @@ function normalizeMapAddressCandidate(rawValue) {
   const cleaned = String(rawValue || '')
     .replace(/&#038;/g, '&')
     .replace(/\+/g, ' ')
+    .replace(/\/@.*$/i, '')
+    .replace(/\/data=!.*$/i, '')
     .replace(/\s+/g, ' ')
     .replace(/,\s*USA\b/i, '')
     .trim();
@@ -429,6 +440,26 @@ const ADVOCATE_MULTI_STATE_MARKERS = [
   /\bmulti-state\b/i,
 ];
 
+const COUNTY_OFFICE_GOOD_PATTERNS = [
+  /\bihss\b/i,
+  /in-?home supportive services?/i,
+  /human services/i,
+  /social services/i,
+  /adult services/i,
+  /how to apply/i,
+  /\bto apply\b/i,
+  /contact information/i,
+  /public assistance/i,
+];
+
+const COUNTY_OFFICE_BAD_PATTERNS = [
+  /advisory committee/i,
+  /agendas? and minutes?/i,
+  /\bnewsletters?\b/i,
+  /\bour members\b/i,
+  /\bmeeting(s)?\b/i,
+];
+
 function hasAdvocateGoodSignal(text) {
   return ADVOCATE_GOOD_PATTERNS.some((pattern) => pattern.test(text));
 }
@@ -439,6 +470,14 @@ function hasAdvocateBadSignal(text) {
 
 function hasExplicitMultiStateMarker(text) {
   return ADVOCATE_MULTI_STATE_MARKERS.some((pattern) => pattern.test(text));
+}
+
+function hasCountyOfficeGoodSignal(text) {
+  return COUNTY_OFFICE_GOOD_PATTERNS.some((pattern) => pattern.test(text));
+}
+
+function hasCountyOfficeBadSignal(text) {
+  return COUNTY_OFFICE_BAD_PATTERNS.some((pattern) => pattern.test(text));
 }
 
 function hostFromUrl(rawUrl) {
@@ -647,6 +686,8 @@ export function parseCommonExtraction({ row, html }) {
     finalUrl: row.finalUrl || row.sourceUrl,
     provenanceUrl: row.provenanceUrl || row.finalUrl || row.sourceUrl,
     stateId: row.stateId,
+    countyId: row.countyId || row.county_id || '',
+    desiredProgramId: row.desiredProgramId || row.desired_program_id || '',
     gapFamily: row.gapFamily,
     targetTable: row.targetTable,
     sourceQueue: row.sourceQueue,
@@ -667,7 +708,7 @@ export function parseCommonExtraction({ row, html }) {
     h2s,
     phones,
     emails,
-    addressLines: dedupeList([...addressLines, ...multilineAddresses, ...structuredAddresses, ...mapAddresses]),
+    addressLines: dedupeList([...addressLines, ...multilineAddresses, ...structuredAddresses, ...mapAddresses].map(sanitizeAddressLine)),
     links: links.slice(0, 100),
     paragraphs: paragraphs.slice(0, 80),
     textSample: paragraphs.slice(0, 12).join('\n'),
@@ -719,7 +760,11 @@ export function extractDdRouting(common) {
 }
 
 export function extractCountyOffice(common) {
-  const officeName = common.h1s[0] || common.pageTitle || common.sourceName || '';
+  const officeName = common.h1s[0]
+    || common.h2s.find((heading) => hasCountyOfficeGoodSignal(heading))
+    || common.pageTitle
+    || common.sourceName
+    || '';
   const contactEmail = common.emails[0] || '';
   const contactPhone = common.phones[0] || '';
   const contactAddress = common.addressLines[0] || '';
@@ -811,6 +856,8 @@ export function parseFamilyRecord(row, html) {
     parsedAt: new Date().toISOString(),
     ...common,
     stateId: familyExtraction.inferredStateId || common.stateId,
+    countyId: common.countyId || familyExtraction.countyId || '',
+    desiredProgramId: common.desiredProgramId || '',
     familyExtraction,
     parseStatus,
   };
@@ -854,9 +901,19 @@ export function validateFamilyRecord(record) {
     if (!record.familyExtraction.officeName) reasons.push('missing_office_name');
     if (!record.familyExtraction.publicContactSignalCount) reasons.push('missing_dd_contact_signal');
   } else if (record.gapFamily === 'medicaid_hhs_offices') {
+    const officeText = [
+      record.pageTitle,
+      record.metaDescription,
+      record.textSample,
+      record.sourceUrl,
+      record.familyExtraction.officeName,
+      ...(record.h2s || []),
+    ].filter(Boolean).join(' | ');
     if (!record.familyExtraction.officeName) reasons.push('missing_office_name');
     if (!record.familyExtraction.contactPhone) reasons.push('missing_office_phone');
     if (!record.familyExtraction.contactAddress) reasons.push('missing_office_address');
+    if (hasCountyOfficeBadSignal(officeText)) reasons.push('bad_county_office_topic_signal');
+    if (!hasCountyOfficeGoodSignal(officeText)) reasons.push('missing_county_office_relevance_signal');
   } else if (['programs_benefits', 'waivers', 'program_waitlists', 'general_gap_fill', 'transition_programs', 'early_intervention_programs'].includes(record.gapFamily)) {
     if (!record.familyExtraction.programName) addReason('missing_program_name');
     if (looksLikeBlockedOrErrorPage(record.pageTitle, record.metaDescription, record.textSample, record.familyExtraction.programName)) {

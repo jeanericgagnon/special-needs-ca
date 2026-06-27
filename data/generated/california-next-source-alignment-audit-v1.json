@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-06-27T22:29:31.400Z",
+  "state": "california",
+  "status": "pass",
+  "artifactPaths": {
+    "registry": "data/generated/california-next-source-registry-v1.json",
+    "queueSummary": "data/generated/california-next-source-seed-queue-v1.json",
+    "queueJsonl": "data/generated/california-next-source-seed-queue-v1.jsonl",
+    "runPlan": "data/generated/california-next-source-seed-run-plan-v1.json",
+    "mappedPack": "data/generated/california-next-source-seed-pack-v1.jsonl"
+  },
+  "counts": {
+    "families": 10,
+    "totalSeedEntries": 18,
+    "seedReadyEntries": 18,
+    "queueRows": 18,
+    "mappedRows": 18
+  },
+  "byFamily": {
+    "ihss": 2,
+    "selpa": 2,
+    "ccs_mtu": 2,
+    "dhcs_epsdt": 2,
+    "ssi": 2,
+    "calable": 2,
+    "frcnca": 1,
+    "pti_cprc": 2,
+    "help_me_grow": 1,
+    "local_nonprofits": 2
+  },
+  "invariants": {
+    "registrySummaryMatchesDefinitions": true,
+    "seedReadyCountMatchesEntries": true,
+    "queueRowsMatchSeedReadyCount": true,
+    "mappedRowsMatchQueueRows": true,
+    "queueSummaryMatchesQueueJsonl": true,
+    "runPlanMatchesQueueAndMappedPack": true,
+    "allQueueFamiliesPresentInRegistry": true,
+    "allMappedRowsStayNeedsReviewOnIngest": true,
+    "allMappedRowsCarryExpectedStateAndStatus": true,
+    "noDuplicateQueueJobIds": true,
+    "noDuplicateMappedSeedJobIds": true
+  },
+  "failures": []
+}

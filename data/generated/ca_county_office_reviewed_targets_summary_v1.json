@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-06-27T22:31:52.086Z",
+  "reviewedTargetCount": 7,
+  "unresolvedCounties": [
+    "san-luis-obispo",
+    "sierra"
+  ],
+  "byReviewedStatus": {
+    "medium_confidence_leaf_candidate": 4,
+    "high_confidence_leaf_candidate": 3
+  }
+}

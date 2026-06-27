@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-06-27T22:31:52.185Z",
+  "totalCandidates": 9,
+  "countiesWithCandidates": [
+    "el-dorado",
+    "merced",
+    "nevada",
+    "stanislaus"
+  ],
+  "byCounty": {
+    "el-dorado": 2,
+    "merced": 1,
+    "nevada": 2,
+    "stanislaus": 4
+  }
+}

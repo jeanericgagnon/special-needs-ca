@@ -678,6 +678,7 @@ export function classifyOutcome(record, outcome) {
 
 function inferGapFamily(record) {
   const joined = `${record.entity_id} ${record.source_role}`.toLowerCase();
+  if (joined.includes('county_ihss')) return 'medicaid_hhs_offices';
   if (record.batch_class === 'directory_root') {
     if (joined.includes('regional_center') || joined.includes('regional-center')) return 'dd_routing';
     if (joined.includes('selpa') || joined.includes('school') || joined.includes('district')) return 'education_routing';
@@ -697,6 +698,8 @@ export function buildParseAdapterRow(record, outputRow) {
     runId: outputRow.run_id,
     stateId: 'california',
     stateCode: record.state,
+    countyId: record.county_id || record.countyId || '',
+    desiredProgramId: record.desired_program_id || record.desiredProgramId || '',
     gapFamily: inferGapFamily(record),
     sourceFamily: 'california_source_pack',
     sourceRole: record.source_role,
@@ -828,6 +831,8 @@ export function buildOutputRow(record, inputIndex, outcome) {
     agency: record.agency,
     original_status: record.status,
     batch_class: record.batch_class,
+    county_id: record.county_id || record.countyId || '',
+    desired_program_id: record.desired_program_id || record.desiredProgramId || '',
     provenance_url: record.provenance_url || '',
     url: record.url,
     final_url: outcome.finalUrl,
@@ -942,6 +947,8 @@ function buildOutputsFromCompleted(completedRows, repairLedger) {
       agency: row.agency,
       status: row.original_status,
       batch_class: row.batch_class,
+      county_id: row.county_id,
+      desired_program_id: row.desired_program_id,
       provenance_url: row.provenance_url,
       url: row.url,
     }, row))
@@ -953,6 +960,8 @@ function buildOutputsFromCompleted(completedRows, repairLedger) {
       agency: row.agency,
       status: row.original_status,
       batch_class: row.batch_class,
+      county_id: row.county_id,
+      desired_program_id: row.desired_program_id,
       provenance_url: row.provenance_url,
       url: row.url,
     }, row));

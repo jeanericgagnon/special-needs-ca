@@ -347,6 +347,44 @@ function ensureLocalDbCompatibility() {
       if (!cols.has('evidence_level')) {
         db.exec(`ALTER TABLE school_districts ADD COLUMN evidence_level TEXT;`);
       }
+      if (!cols.has('display_status')) {
+        db.exec(`ALTER TABLE school_districts ADD COLUMN display_status TEXT DEFAULT 'published';`);
+      }
+    }
+
+    if (tableExists('regional_education_agencies')) {
+      const cols = new Set(columnNames('regional_education_agencies'));
+      if (!cols.has('display_status')) {
+        db.exec(`ALTER TABLE regional_education_agencies ADD COLUMN display_status TEXT DEFAULT 'published';`);
+      }
+    }
+
+    if (tableExists('state_resource_agencies')) {
+      const cols = new Set(columnNames('state_resource_agencies'));
+      if (!cols.has('display_status')) {
+        db.exec(`ALTER TABLE state_resource_agencies ADD COLUMN display_status TEXT DEFAULT 'published';`);
+      }
+    }
+
+    if (tableExists('iep_advocates')) {
+      const cols = new Set(columnNames('iep_advocates'));
+      if (!cols.has('display_status')) {
+        db.exec(`ALTER TABLE iep_advocates ADD COLUMN display_status TEXT DEFAULT 'published';`);
+      }
+    }
+
+    if (tableExists('resource_providers')) {
+      const cols = new Set(columnNames('resource_providers'));
+      if (!cols.has('display_status')) {
+        db.exec(`ALTER TABLE resource_providers ADD COLUMN display_status TEXT DEFAULT 'published';`);
+      }
+    }
+
+    if (tableExists('nonprofit_organizations')) {
+      const cols = new Set(columnNames('nonprofit_organizations'));
+      if (!cols.has('display_status')) {
+        db.exec(`ALTER TABLE nonprofit_organizations ADD COLUMN display_status TEXT DEFAULT 'published';`);
+      }
     }
 
     db.exec(`
@@ -509,7 +547,8 @@ function ensureLocalDbCompatibility() {
         description TEXT,
         program_triggers TEXT
       );
-      CREATE VIEW IF NOT EXISTS regional_centers AS
+      DROP VIEW IF EXISTS regional_centers;
+      CREATE VIEW regional_centers AS
       SELECT
         id,
         state_id,
@@ -534,9 +573,11 @@ function ensureLocalDbCompatibility() {
         data_origin,
         verification_status,
         last_scraped_at,
-        confidence_score
+        confidence_score,
+        display_status
       FROM state_resource_agencies;
-      CREATE VIEW IF NOT EXISTS selpas AS
+      DROP VIEW IF EXISTS selpas;
+      CREATE VIEW selpas AS
       SELECT
         id,
         name,
@@ -548,7 +589,8 @@ function ensureLocalDbCompatibility() {
         verification_status,
         last_verified_date,
         last_scraped_at,
-        confidence_score
+        confidence_score,
+        display_status
       FROM regional_education_agencies;
     `);
 

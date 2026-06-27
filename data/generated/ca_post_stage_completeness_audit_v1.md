@@ -1,108 +1,60 @@
 # California Post-Stage Completeness Audit
 
-- Run ID: `ca-v2`
-- Parse-ready rows: `73`
+- Run ID: `ca-v3`
+- Parse-ready rows: `134`
 - Browser-assisted rows: `30`
 
 ## Families
 
-### advocates-legal
-
-- Accepted: `0`
-- Rejected: `0`
-- Staged: `1`
-- Unsupported: `0`
-- Field completeness:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-- Provenance:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-  - authority: 0/0 (0%)
-  - agency: 0/0 (0%)
-  - provenanceUrl: 0/0 (0%)
-
 ### advocates_legal
 
-- Accepted: `1`
-- Rejected: `0`
-- Staged: `0`
-- Unsupported: `0`
-- Field completeness:
-  - sourceUrl: 1/1 (100%)
-  - finalUrl: 1/1 (100%)
-  - savedPath: 1/1 (100%)
-- Provenance:
-  - sourceUrl: 1/1 (100%)
-  - finalUrl: 1/1 (100%)
-  - savedPath: 1/1 (100%)
-  - authority: 0/1 (0%)
-  - agency: 0/1 (0%)
-  - provenanceUrl: 0/1 (0%)
-
-### dd-routing
-
-- Accepted: `0`
-- Rejected: `0`
+- Accepted: `2`
+- Rejected: `1`
 - Staged: `2`
 - Unsupported: `0`
+- Stage display status: `needs_review=2`
+- Display-eligible staged rows: `0`
 - Field completeness:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-- Provenance:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-  - authority: 0/0 (0%)
-  - agency: 0/0 (0%)
-  - provenanceUrl: 0/0 (0%)
-
-### dd_routing
-
-- Accepted: `2`
-- Rejected: `3`
-- Staged: `0`
-- Unsupported: `0`
-- Field completeness:
-  - officeName: 2/2 (100%)
-  - contactPhone: 2/2 (100%)
   - sourceUrl: 2/2 (100%)
   - finalUrl: 2/2 (100%)
+  - savedPath: 2/2 (100%)
 - Provenance:
   - sourceUrl: 2/2 (100%)
   - finalUrl: 2/2 (100%)
   - savedPath: 2/2 (100%)
-  - authority: 0/2 (0%)
-  - agency: 0/2 (0%)
-  - provenanceUrl: 0/2 (0%)
+  - authority: 2/2 (100%)
+  - agency: 2/2 (100%)
+  - provenanceUrl: 2/2 (100%)
 
-### education-routing
+### dd_routing
 
-- Accepted: `0`
-- Rejected: `0`
-- Staged: `10`
+- Accepted: `24`
+- Rejected: `6`
+- Staged: `24`
 - Unsupported: `0`
+- Stage display status: `needs_review=19`, `published=5`
+- Display-eligible staged rows: `5`
 - Field completeness:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
+  - officeName: 24/24 (100%)
+  - contactPhone: 24/24 (100%)
+  - sourceUrl: 24/24 (100%)
+  - finalUrl: 24/24 (100%)
 - Provenance:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-  - authority: 0/0 (0%)
-  - agency: 0/0 (0%)
-  - provenanceUrl: 0/0 (0%)
+  - sourceUrl: 24/24 (100%)
+  - finalUrl: 24/24 (100%)
+  - savedPath: 24/24 (100%)
+  - authority: 24/24 (100%)
+  - agency: 24/24 (100%)
+  - provenanceUrl: 24/24 (100%)
 
 ### education_routing
 
 - Accepted: `10`
 - Rejected: `0`
-- Staged: `0`
+- Staged: `10`
 - Unsupported: `0`
+- Stage display status: `needs_review=10`
+- Display-eligible staged rows: `0`
 - Field completeness:
   - sourceUrl: 10/10 (100%)
   - finalUrl: 10/10 (100%)
@@ -111,109 +63,61 @@
   - sourceUrl: 10/10 (100%)
   - finalUrl: 10/10 (100%)
   - savedPath: 10/10 (100%)
-  - authority: 0/10 (0%)
-  - agency: 0/10 (0%)
-  - provenanceUrl: 0/10 (0%)
-
-### forms-guides
-
-- Accepted: `0`
-- Rejected: `0`
-- Staged: `19`
-- Unsupported: `0`
-- Field completeness:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-- Provenance:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-  - authority: 0/0 (0%)
-  - agency: 0/0 (0%)
-  - provenanceUrl: 0/0 (0%)
+  - authority: 10/10 (100%)
+  - agency: 10/10 (100%)
+  - provenanceUrl: 10/10 (100%)
 
 ### forms_guides
 
-- Accepted: `19`
+- Accepted: `22`
 - Rejected: `1`
-- Staged: `0`
+- Staged: `22`
 - Unsupported: `0`
+- Stage display status: `needs_review=21`, `published=1`
+- Display-eligible staged rows: `1`
 - Field completeness:
-  - programName: 19/19 (100%)
-  - officialDownloadUrl: 19/19 (100%)
-  - sourceUrl: 19/19 (100%)
-  - finalUrl: 19/19 (100%)
-  - savedPath: 19/19 (100%)
+  - programName: 22/22 (100%)
+  - officialDownloadUrl: 22/22 (100%)
+  - sourceUrl: 22/22 (100%)
+  - finalUrl: 22/22 (100%)
+  - savedPath: 22/22 (100%)
 - Provenance:
-  - sourceUrl: 19/19 (100%)
-  - finalUrl: 19/19 (100%)
-  - savedPath: 19/19 (100%)
-  - authority: 0/19 (0%)
-  - agency: 0/19 (0%)
-  - provenanceUrl: 0/19 (0%)
-
-### general-gap-fill
-
-- Accepted: `0`
-- Rejected: `0`
-- Staged: `0`
-- Unsupported: `6`
-- Field completeness:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-- Provenance:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-  - authority: 0/0 (0%)
-  - agency: 0/0 (0%)
-  - provenanceUrl: 0/0 (0%)
+  - sourceUrl: 22/22 (100%)
+  - finalUrl: 22/22 (100%)
+  - savedPath: 22/22 (100%)
+  - authority: 22/22 (100%)
+  - agency: 22/22 (100%)
+  - provenanceUrl: 22/22 (100%)
 
 ### general_gap_fill
 
-- Accepted: `6`
+- Accepted: `24`
 - Rejected: `0`
 - Staged: `0`
-- Unsupported: `0`
+- Unsupported: `24`
+- Stage display status: `none`
+- Display-eligible staged rows: `0`
 - Field completeness:
-  - programName: 6/6 (100%)
-  - sourceUrl: 6/6 (100%)
-  - finalUrl: 6/6 (100%)
-  - savedPath: 6/6 (100%)
+  - programName: 24/24 (100%)
+  - sourceUrl: 24/24 (100%)
+  - finalUrl: 24/24 (100%)
+  - savedPath: 24/24 (100%)
 - Provenance:
-  - sourceUrl: 6/6 (100%)
-  - finalUrl: 6/6 (100%)
-  - savedPath: 6/6 (100%)
-  - authority: 0/6 (0%)
-  - agency: 0/6 (0%)
-  - provenanceUrl: 0/6 (0%)
-
-### medicaid-hhs-offices
-
-- Accepted: `0`
-- Rejected: `0`
-- Staged: `10`
-- Unsupported: `0`
-- Field completeness:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-- Provenance:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-  - authority: 0/0 (0%)
-  - agency: 0/0 (0%)
-  - provenanceUrl: 0/0 (0%)
+  - sourceUrl: 24/24 (100%)
+  - finalUrl: 24/24 (100%)
+  - savedPath: 24/24 (100%)
+  - authority: 24/24 (100%)
+  - agency: 24/24 (100%)
+  - provenanceUrl: 24/24 (100%)
 
 ### medicaid_hhs_offices
 
 - Accepted: `10`
-- Rejected: `18`
-- Staged: `0`
+- Rejected: `26`
+- Staged: `10`
 - Unsupported: `0`
+- Stage display status: `needs_review=10`
+- Display-eligible staged rows: `0`
 - Field completeness:
   - officeName: 10/10 (100%)
   - contactPhone: 10/10 (100%)
@@ -224,43 +128,48 @@
   - sourceUrl: 10/10 (100%)
   - finalUrl: 10/10 (100%)
   - savedPath: 10/10 (100%)
-  - authority: 0/10 (0%)
-  - agency: 0/10 (0%)
-  - provenanceUrl: 0/10 (0%)
-
-### programs-benefits
-
-- Accepted: `0`
-- Rejected: `0`
-- Staged: `3`
-- Unsupported: `0`
-- Field completeness:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-- Provenance:
-  - sourceUrl: 0/0 (0%)
-  - finalUrl: 0/0 (0%)
-  - savedPath: 0/0 (0%)
-  - authority: 0/0 (0%)
-  - agency: 0/0 (0%)
-  - provenanceUrl: 0/0 (0%)
+  - authority: 10/10 (100%)
+  - agency: 10/10 (100%)
+  - provenanceUrl: 10/10 (100%)
 
 ### programs_benefits
 
-- Accepted: `3`
+- Accepted: `7`
 - Rejected: `0`
-- Staged: `0`
+- Staged: `7`
 - Unsupported: `0`
+- Stage display status: `needs_review=7`
+- Display-eligible staged rows: `0`
 - Field completeness:
-  - programName: 3/3 (100%)
-  - sourceUrl: 3/3 (100%)
-  - finalUrl: 3/3 (100%)
-  - savedPath: 3/3 (100%)
+  - programName: 7/7 (100%)
+  - sourceUrl: 7/7 (100%)
+  - finalUrl: 7/7 (100%)
+  - savedPath: 7/7 (100%)
 - Provenance:
-  - sourceUrl: 3/3 (100%)
-  - finalUrl: 3/3 (100%)
-  - savedPath: 3/3 (100%)
-  - authority: 0/3 (0%)
-  - agency: 0/3 (0%)
-  - provenanceUrl: 0/3 (0%)
+  - sourceUrl: 7/7 (100%)
+  - finalUrl: 7/7 (100%)
+  - savedPath: 7/7 (100%)
+  - authority: 7/7 (100%)
+  - agency: 7/7 (100%)
+  - provenanceUrl: 7/7 (100%)
+
+### waivers
+
+- Accepted: `1`
+- Rejected: `0`
+- Staged: `1`
+- Unsupported: `0`
+- Stage display status: `published=1`
+- Display-eligible staged rows: `1`
+- Field completeness:
+  - programName: 1/1 (100%)
+  - sourceUrl: 1/1 (100%)
+  - finalUrl: 1/1 (100%)
+  - savedPath: 1/1 (100%)
+- Provenance:
+  - sourceUrl: 1/1 (100%)
+  - finalUrl: 1/1 (100%)
+  - savedPath: 1/1 (100%)
+  - authority: 1/1 (100%)
+  - agency: 1/1 (100%)
+  - provenanceUrl: 1/1 (100%)

@@ -140,6 +140,64 @@ function baseRecord(overrides = {}) {
 
 {
   const row = baseRecord({
+    gapFamily: 'medicaid_hhs_offices',
+    sourceRole: 'county_ihss_entry_from_cdss_directory',
+    pageTitle: 'Aging Services',
+    h1s: ['Aging Services'],
+    phones: ['(209) 468-1104'],
+    addressLines: ['333 E Washington Street, Stockton, CA 95202-3200'],
+    paragraphs: [
+      'Aging Services',
+      'Apply for Assistance Using BenefitsCal',
+      'Disability Assistance (IHSS)',
+      'Forms and Application Packets',
+    ],
+  });
+  const result = evaluateCaliforniaSemanticRecord(row);
+  assert.equal(result.semanticStatus, 'unsupported');
+  assert.equal(result.entityType, 'policy_or_informational_page');
+  assert.equal(result.classificationReason, 'aging_services_page_not_disability_office');
+}
+
+{
+  const row = baseRecord({
+    gapFamily: 'medicaid_hhs_offices',
+    sourceRole: 'county_ihss_leaf_candidate',
+    pageTitle: 'In-Home Supportive Services (IHSS) | Nevada County, CA',
+    h1s: ['In-Home Supportive Services (IHSS)'],
+    phones: ['(530) 265-1639'],
+    addressLines: ['950 Maidu Ave, Nevada City, CA 95959'],
+    paragraphs: [
+      'How to Apply for IHSS:',
+      'To apply for IHSS call (530) 265-1639.',
+    ],
+  });
+  const result = evaluateCaliforniaSemanticRecord(row);
+  assert.equal(result.semanticStatus, 'stage_ready');
+  assert.equal(result.entityType, 'office');
+  assert.equal(result.classificationReason, 'local_office_contact_signals_present');
+}
+
+{
+  const row = baseRecord({
+    gapFamily: 'medicaid_hhs_offices',
+    sourceRole: 'county_ihss_leaf_candidate',
+    pageTitle: 'Human Services Agency | Merced County, CA - Official Website',
+    h1s: ['Human Services Agency'],
+    phones: ['(209) 385-3000'],
+    addressLines: ['2115 West Wardrobe Ave, Merced, CA 95341'],
+    paragraphs: [
+      'Human Services Agency',
+      'County human services and assistance programs.',
+    ],
+  });
+  const result = evaluateCaliforniaSemanticRecord(row);
+  assert.equal(result.semanticStatus, 'stage_ready');
+  assert.equal(result.entityType, 'office');
+}
+
+{
+  const row = baseRecord({
     gapFamily: 'dd_routing',
     sourceRole: 'regional_center_root_from_dds_directory',
     pageTitle: 'Example Regional Center',
@@ -156,6 +214,26 @@ function baseRecord(overrides = {}) {
   const result = evaluateCaliforniaSemanticRecord(row);
   const intakeField = result.fieldEntries.find((entry) => entry.field === 'intake_contact');
   assert.equal(intakeField?.covered, false);
+}
+
+{
+  const row = baseRecord({
+    gapFamily: 'dd_routing',
+    sourceRole: 'regional_center_root_from_dds_directory',
+    agency: 'Far Northern Regional Center',
+    pageTitle: 'Home - Far Northern Regional Center',
+    h1s: ['Home - Far Northern Regional Center'],
+    phones: ['(530) 222-4791'],
+    addressLines: ['1900 Churn Creek Rd Ste 114, Redding, CA 96002'],
+    links: [
+      { text: 'Eligibility', href: 'https://example.ca.gov/eligibility' },
+      { text: 'Appeals', href: 'https://example.ca.gov/appeals' },
+    ],
+  });
+  const result = evaluateCaliforniaSemanticRecord(row);
+  const nameField = result.fieldEntries.find((entry) => entry.field === 'name');
+  assert.equal(nameField?.value, 'Far Northern Regional Center');
+  assert.equal(nameField?.source, 'provenance');
 }
 
 {

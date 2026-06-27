@@ -61,6 +61,21 @@ function percent(numerator, denominator) {
   return Number(((numerator / denominator) * 100).toFixed(1));
 }
 
+function countDisplayStatus(rows) {
+  const counts = new Map();
+  for (const row of rows) {
+    const status = String(
+      row.display_status
+      || row.candidate?.row?.display_status
+      || 'unspecified'
+    ).trim() || 'unspecified';
+    counts.set(status, (counts.get(status) || 0) + 1);
+  }
+  return Array.from(counts.entries())
+    .map(([label, count]) => ({ label, count }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+}
+
 const args = parseArgs(process.argv.slice(2));
 const runId = args.runId || getLatestRunId();
 if (!runId) throw new Error('No source acquisition run found.');
@@ -106,6 +121,9 @@ const familyRows = families.map((family) => {
     rejectedCount: rejected.length,
     stagedCount: staged.length,
     unsupportedCount: unsupported.length,
+    stageDisplayStatus: countDisplayStatus(staged),
+    acceptedDisplayStatus: countDisplayStatus(accepted),
+    displayEligibleStageCount: staged.filter((record) => String(record.candidate?.row?.display_status || '').trim() === 'published').length,
     fieldCompleteness,
     provenance,
   };
@@ -142,6 +160,8 @@ fs.writeFileSync(markdownPath, [
     `- Rejected: \`${family.rejectedCount}\``,
     `- Staged: \`${family.stagedCount}\``,
     `- Unsupported: \`${family.unsupportedCount}\``,
+    `- Stage display status: ${family.stageDisplayStatus.map((row) => `\`${row.label}=${row.count}\``).join(', ') || '`none`'}`,
+    `- Display-eligible staged rows: \`${family.displayEligibleStageCount}\``,
     '- Field completeness:',
     ...family.fieldCompleteness.map((row) => `  - ${row.field}: ${row.present}/${family.acceptedCount} (${row.completenessPercent}%)`),
     '- Provenance:',

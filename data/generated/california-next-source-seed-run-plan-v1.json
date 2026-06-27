@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-06-27T22:29:31.350Z",
+  "runId": "ca-next-source-seed-v1",
+  "mode": "plan-only",
+  "queuePath": "data/generated/california-next-source-seed-queue-v1.jsonl",
+  "mappedPackPath": "data/generated/california-next-source-seed-pack-v1.jsonl",
+  "queueRows": 18,
+  "mappedRows": 18,
+  "byFamily": {
+    "ihss": 2,
+    "selpa": 2,
+    "ccs_mtu": 2,
+    "dhcs_epsdt": 2,
+    "ssi": 2,
+    "calable": 2,
+    "frcnca": 1,
+    "pti_cprc": 2,
+    "help_me_grow": 1,
+    "local_nonprofits": 2
+  },
+  "byBatchClass": {
+    "directory_root": 3,
+    "html": 15
+  }
+}

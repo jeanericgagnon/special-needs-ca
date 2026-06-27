@@ -1,0 +1,16 @@
+{
+  "prefix": "ca_county_office_refresh_v1",
+  "generatedAt": "2026-06-27T20:53:13.133Z",
+  "totalStageReadyRows": 5,
+  "publishedCount": 5,
+  "needsReviewCount": 0,
+  "byFamily": {
+    "medicaid_hhs_offices": 5
+  },
+  "byDecision": {
+    "published": 5
+  },
+  "byClassificationReason": {
+    "local_office_contact_signals_present": 5
+  }
+}

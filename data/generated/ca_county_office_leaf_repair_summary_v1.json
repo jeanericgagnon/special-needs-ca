@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-06-27T22:31:52.177Z",
+  "totalRows": 6,
+  "counties": [
+    "el-dorado",
+    "merced",
+    "nevada",
+    "san-luis-obispo",
+    "sierra",
+    "stanislaus"
+  ],
+  "byLikelyAgency": {
+    "El Dorado County Health and Human Services": 1,
+    "Merced County Human Services Agency": 1,
+    "Nevada County Health and Human Services": 1,
+    "San Luis Obispo County Department of Social Services": 1,
+    "Sierra County Human Services / Social Services": 1,
+    "Stanislaus County Community Services Agency": 1
+  }
+}

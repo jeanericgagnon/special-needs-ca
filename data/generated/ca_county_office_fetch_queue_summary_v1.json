@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-27T22:31:52.226Z",
+  "fetchNowCount": 3,
+  "reviewFirstCount": 4,
+  "unresolvedCount": 2,
+  "fetchNowByCounty": {
+    "nevada": 1,
+    "stanislaus": 2
+  },
+  "reviewFirstByCounty": {
+    "el-dorado": 2,
+    "merced": 1,
+    "nevada": 1
+  },
+  "unresolvedCounties": [
+    "san-luis-obispo",
+    "sierra"
+  ]
+}

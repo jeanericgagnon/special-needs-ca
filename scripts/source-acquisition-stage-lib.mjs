@@ -1,5 +1,3 @@
-import path from 'node:path';
-
 export function slugify(value) {
   return String(value || '')
     .toLowerCase()
@@ -39,12 +37,14 @@ function commonCandidate(record) {
     scrapedAt: record.parsedAt,
     stateId: record.stateId,
     countyId: record.countyId || record.familyExtraction?.countyId || null,
+    desiredProgramId: record.desiredProgramId || '',
     confidenceScore: deriveConfidence(record),
     extractionNotes: `Accepted lightweight ${record.gapFamily} candidate from validated source acquisition pipeline.`,
     rawTextExcerpt: record.textSample || '',
     suggestedTargetId: null,
     duplicateCandidateId: null,
     reviewStatus: 'pending_review',
+    displayStatus: 'needs_review',
     name,
   };
 }
@@ -81,6 +81,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: programName,
         description: record.familyExtraction?.serviceSummary || record.metaDescription || record.textSample || '',
         who_it_is_for: record.familyExtraction?.audienceSummary || '',
@@ -114,6 +115,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: common.name,
         extracted_website: website,
         extracted_phone: phone,
@@ -141,6 +143,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: common.name,
         credentials: '',
         experience_years: null,
@@ -175,6 +178,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: common.name,
         categories: record.gapFamily,
         extracted_phone: phone,
@@ -206,6 +210,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: officeName,
         agency_type: 'dd_routing',
         counties_served: common.stateId,
@@ -242,6 +247,7 @@ export function buildPromotionCandidate(record) {
           suggested_target_id: common.suggestedTargetId,
           duplicate_candidate_id: common.duplicateCandidateId,
           review_status: common.reviewStatus,
+          display_status: common.displayStatus,
           extracted_name: officeName,
           spec_ed_contact_phone: phone,
           spec_ed_contact_email: email,
@@ -270,6 +276,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: officeName,
         agency_type: 'education_routing',
         counties_served: common.stateId,
@@ -282,6 +289,10 @@ export function buildPromotionCandidate(record) {
 
   if (record.gapFamily === 'medicaid_hhs_offices') {
     const officeName = record.familyExtraction?.officeName || common.name;
+    const sourceRole = String(record.sourceRole || '').toLowerCase();
+    const programId = common.desiredProgramId || (/county_ihss_entry_from_cdss_directory|county_ihss_leaf_candidate/.test(sourceRole)
+      ? 'ihss-for-children'
+      : '');
     return {
       supported: true,
       stagingTable: 'staging_scraped_county_offices',
@@ -300,12 +311,13 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: officeName,
         extracted_phone: phone,
         extracted_email: email,
         extracted_address: address,
         extracted_website: website,
-        program_id: '',
+        program_id: programId,
         evidence_level: 'lightweight_office_page',
       },
     };
@@ -331,6 +343,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         slug: slugify(`${common.stateId}-${programName}`),
         program: programName,
         official_download_url: record.familyExtraction?.officialDownloadUrl || common.sourceUrl,
@@ -364,6 +377,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         program_id: '',
         name: waitlistName,
         duration_label: 'Not officially stated',
@@ -396,6 +410,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         extracted_name: common.name,
         gap_family: record.gapFamily,
         help_type: record.gapFamily,
@@ -429,6 +444,7 @@ export function buildPromotionCandidate(record) {
         suggested_target_id: common.suggestedTargetId,
         duplicate_candidate_id: common.duplicateCandidateId,
         review_status: common.reviewStatus,
+        display_status: common.displayStatus,
         slug: slugify(`${common.stateId}-${articleTitle}`),
         title: articleTitle,
         content_category: record.familyExtraction?.contentCategory || record.gapFamily,
@@ -452,7 +468,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'extracted_website', 'extracted_phone', 'focus_condition',
       ],
     };
@@ -463,7 +479,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'description', 'who_it_is_for', 'who_might_qualify', 'official_source_url',
         'category', 'program_type', 'extracted_phone', 'extracted_email', 'action_url',
       ],
@@ -475,7 +491,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'credentials', 'experience_years', 'price_rate', 'counties_served', 'languages_spoken',
         'extracted_phone', 'extracted_email', 'extracted_website', 'specialties', 'description',
       ],
@@ -487,7 +503,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'categories', 'extracted_phone', 'extracted_email', 'extracted_address', 'accepts_medi_cal',
       ],
     };
@@ -498,7 +514,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'agency_type', 'counties_served', 'catchment_boundaries', 'extracted_website',
         'extracted_phone', 'early_intervention_contact', 'agency_intake_contact',
         'eligibility_info_page', 'services_page', 'appeals_info',
@@ -511,7 +527,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'agency_type', 'counties_served', 'extracted_website', 'evidence_level', 'extracted_phone',
       ],
     };
@@ -522,7 +538,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'spec_ed_contact_phone', 'spec_ed_contact_email', 'extracted_website', 'total_enrollment',
         'evidence_level',
       ],
@@ -534,7 +550,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'extracted_phone', 'extracted_email', 'extracted_address', 'extracted_website',
         'program_id', 'evidence_level',
       ],
@@ -546,7 +562,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'slug',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'slug',
         'program', 'official_download_url', 'who_uses_it', 'who_signs_it',
         'where_to_send_it', 'letter_script',
       ],
@@ -558,7 +574,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'program_id',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'program_id',
         'name', 'duration_label', 'duration_months', 'status', 'description',
         'estimate_source_url', 'estimate_source_type', 'last_checked_at',
       ],
@@ -570,7 +586,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'extracted_name',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'extracted_name',
         'gap_family', 'help_type', 'extracted_website', 'extracted_phone',
         'extracted_email', 'extracted_address', 'action_url', 'service_summary',
       ],
@@ -582,7 +598,7 @@ export function insertConfigForTable(tableName) {
       columns: [
         'source_url', 'source_name', 'source_type', 'scraped_at', 'state_id', 'county_id',
         'confidence_score', 'extraction_notes', 'raw_text_excerpt', 'suggested_target_table',
-        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'slug',
+        'suggested_target_id', 'duplicate_candidate_id', 'review_status', 'display_status', 'slug',
         'title', 'content_category', 'canonical_url', 'summary',
       ],
     };
@@ -622,6 +638,7 @@ export function mergePreservedStagingFields(tableName, nextRow, existingRow) {
 
   preserveIfMissing('county_id');
   preserveIfMissing('evidence_level');
+  preserveIfMissing('display_status');
 
   if (tableName === 'staging_scraped_state_resource_agencies') {
     preserveIfMissing('counties_served');

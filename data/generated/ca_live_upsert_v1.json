@@ -1,0 +1,81 @@
+{
+  "runId": "ca-v3",
+  "mode": "apply",
+  "dbPath": "ca_disability_navigator.db",
+  "publishedDecisionCount": 8,
+  "actionableCount": 8,
+  "skippedCount": 0,
+  "upsertedByTable": {
+    "state_resource_agencies": 5,
+    "forms_and_guides": 1,
+    "county_offices": 1,
+    "programs": 1
+  },
+  "actions": [
+    {
+      "recordId": "california|dd_routing|alta-california-regional-center|regional_center_root_from_dds_directory|ad280c83bd6e87293efe4f652db337c52b647071a932fbaf48c871e40fcd3175",
+      "family": "dd_routing",
+      "tableName": "state_resource_agencies",
+      "id": "ca-dd_routing-alta-california-regional-center-acrc",
+      "display_status": "published",
+      "source_url": "https://www.altaregional.org/"
+    },
+    {
+      "recordId": "california|dd_routing|far-northern-regional-center|regional_center_root_from_dds_directory|f795218279dccab20ccaff363cec496c11f8a98d16b0e826f91485f56421793b",
+      "family": "dd_routing",
+      "tableName": "state_resource_agencies",
+      "id": "ca-dd-far-northern-regional-center",
+      "display_status": "published",
+      "source_url": "https://www.farnorthernrc.org/"
+    },
+    {
+      "recordId": "california|dd_routing|kern-regional-center|regional_center_root_from_dds_directory|617a6d5035cd53ef6c401839b699bd105b996b2569aa5c92ac72a25b31e94976",
+      "family": "dd_routing",
+      "tableName": "state_resource_agencies",
+      "id": "ca-dd-kern-regional-center",
+      "display_status": "published",
+      "source_url": "https://www.kernrc.org/"
+    },
+    {
+      "recordId": "california|dd_routing|north-bay-regional-center|regional_center_root_from_dds_directory|d295f5f4a0b598d67a19b13c9dd805e2739eb3f10fd4e55866d9b8ebcf10c15a",
+      "family": "dd_routing",
+      "tableName": "state_resource_agencies",
+      "id": "ca-dd-north-bay-regional-center",
+      "display_status": "published",
+      "source_url": "https://nbrc.net/"
+    },
+    {
+      "recordId": "california|dd_routing|south-central-los-angeles-regional-center|regional_center_root_from_dds_directory|64bbb481683438bf481da0cfef92d740cd283df7c723033c4708a88a012bb1db",
+      "family": "dd_routing",
+      "tableName": "state_resource_agencies",
+      "id": "ca-dd-south-central-los-angeles-regional-center",
+      "display_status": "published",
+      "source_url": "https://www.sclarc.org/"
+    },
+    {
+      "recordId": "california|forms_guides|soc-856|provider_denial_appeal_form_pdf|1de06373756c0b8013ec4f8b753d53b05b97572cd7193e63c0a621e6b1841e4f",
+      "family": "forms_guides",
+      "tableName": "forms_and_guides",
+      "id": "ca-form-soc-856",
+      "display_status": "published",
+      "source_url": "https://cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/2019/Q-T/SOC856.pdf"
+    },
+    {
+      "recordId": "california|medicaid_hhs_offices|county-ihss-alameda|county_ihss_entry_from_cdss_directory|6bc4d4b6d64e52ce3bd3318dfa3e1f5a403a55c59015c59d75d1cc66b407b224",
+      "family": "medicaid_hhs_offices",
+      "tableName": "county_offices",
+      "id": "off-alameda-ihss",
+      "display_status": "published",
+      "source_url": "https://www.alamedacountysocialservices.org/"
+    },
+    {
+      "recordId": "california|waivers|dds-hcbs|hcbs_program_index|6c45c924a1643e3a27681a60ca6937f4177f51c64ab878a7d170484458b6356d",
+      "family": "waivers",
+      "tableName": "programs",
+      "id": "ca-program-home-and-community-based-services-programs",
+      "display_status": "published",
+      "source_url": "https://www.dds.ca.gov/initiatives/hcbs"
+    }
+  ],
+  "skipped": []
+}

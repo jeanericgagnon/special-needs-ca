@@ -180,7 +180,8 @@ SELECT
     data_origin,
     verification_status,
     last_scraped_at,
-    confidence_score
+    confidence_score,
+    display_status
 FROM state_resource_agencies;
 
 CREATE VIEW IF NOT EXISTS selpas AS
@@ -195,7 +196,8 @@ SELECT
     verification_status,
     last_verified_date,
     last_scraped_at,
-    confidence_score
+    confidence_score,
+    display_status
 FROM regional_education_agencies;
 
 -- 10. school_districts
