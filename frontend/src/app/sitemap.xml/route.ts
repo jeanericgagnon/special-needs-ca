@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { navigatorDb } from '@/lib/db';
 import { SITEMAP_CHILD_MANIFEST } from '@/lib/seoRouteManifest';
+import { CANONICAL_SITE_URL } from '@/lib/site-url';
 
 async function tableExists(tableName: string): Promise<boolean> {
   try {
@@ -47,7 +48,7 @@ async function getGlobalSeoLastmod(): Promise<string | null> {
 }
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const baseUrl = CANONICAL_SITE_URL;
   const lastmod = await getGlobalSeoLastmod();
 
   const body = SITEMAP_CHILD_MANIFEST

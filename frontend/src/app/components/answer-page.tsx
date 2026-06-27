@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { SEOPageData, SEO_CLUSTERS } from '@/lib/seo-data';
 import { fetchCountyDetailsAction } from '../actions';
 import SourceFreshnessDisclosure from './SourceFreshnessDisclosure';
-import ContributionModal from '@/components/contribution-modal';
+import { getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 interface CountyDetailsType {
   id: string;
@@ -27,6 +27,8 @@ interface CountyDetailsType {
     phone: string;
     email: string | null;
     website: string;
+    source_url?: string | null;
+    last_verified_date?: string | null;
   }[];
   regionalCenters?: {
     id: string;
@@ -83,6 +85,14 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
   const [copiedLetter, setCopiedLetter] = useState<boolean>(false);
   const hasSourceBackedEvidence = Array.isArray(data.officialSources) && data.officialSources.length > 0;
   const correctionSuggestionType = data.category === 'programs' ? 'program' : 'other';
+  const countyWageDisclosure = countyDetails
+    ? getIhssWageDisclosure(
+        'california',
+        countyDetails.id,
+        countyDetails.name,
+        countyDetails.ihss_wage_rate ?? null,
+      )
+    : null;
 
   // React official state reset inline pattern
   const [prevSlug, setPrevSlug] = useState<string>(data.slug);
@@ -336,17 +346,16 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
           <SourceFreshnessDisclosure sources={data.officialSources.map(src => ({
             name: src.name,
             url: src.url,
-            lastReviewedDate: data.lastReviewedDate,
-            verificationStatus: 'official_verified'
-          }))} />
-          <div style={{ marginTop: '-0.75rem' }}>
-            <ContributionModal
-              suggestionType={correctionSuggestionType}
-              targetId={data.slug}
-              targetName={data.title}
-              buttonLabel="Report a correction"
-            />
-          </div>
+            lastReviewedDate: src.lastReviewedDate || data.lastReviewedDate,
+            verificationStatus: src.verificationStatus || 'official_verified',
+            sourceType: src.sourceType,
+            confidenceScore: src.confidenceScore ?? null
+          }))}
+            correctionSuggestionType={correctionSuggestionType}
+            correctionTargetId={data.slug}
+            correctionTargetName={data.title}
+            correctionButtonLabel="Report a correction"
+          />
 
         </div>
 
@@ -390,10 +399,17 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
                 <div style={{ background: 'white', border: '1px solid #eee', padding: '0.85rem', borderRadius: '10px', fontSize: '0.82rem', display: 'flex', flexDirection: 'column', gap: '0.4rem' }} className="animate-fade-in">
                   <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>📍 Local Resources:</span>
                   
-                  {countyDetails.ihss_wage_rate && (
-                    <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #f6f6f6', paddingBottom: '0.25rem' }}>
-                      <span>County IHSS Wage:</span>
-                      <strong style={{ color: '#10b981' }}>${countyDetails.ihss_wage_rate.toFixed(2)}/hr</strong>
+                  {countyWageDisclosure && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', borderBottom: '1px solid #f6f6f6', paddingBottom: '0.35rem' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <span>County IHSS Rate Estimate:</span>
+                        <strong style={{ color: countyWageDisclosure.hourlyRate ? '#10b981' : 'var(--text-main)' }}>
+                          {countyWageDisclosure.hourlyRate ? `$${countyWageDisclosure.hourlyRate.toFixed(2)}/hr` : 'Still being verified'}
+                        </strong>
+                      </div>
+                      <span style={{ color: 'var(--text-light)', lineHeight: 1.4 }}>
+                        {countyWageDisclosure.explanation}
+                      </span>
                     </div>
                   )}
 
@@ -406,7 +422,9 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
                       </a>
                     </div>
                   ) : (
-                    <span style={{ color: 'var(--text-light)' }}>No local office contacts in DB.</span>
+                    <span style={{ color: 'var(--text-light)', lineHeight: 1.4 }}>
+                      We are still verifying local office contacts for this county. Use the correction flow below if you have a current source-backed update.
+                    </span>
                   )}
 
                   {countyDetails.regionalCenters && countyDetails.regionalCenters.length > 0 && (
@@ -604,17 +622,17 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
           {/* Non-forced Onboarding Wizard CTA Bridge */}
           <div className="glass-panel" style={{ padding: '1.25rem', background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(var(--primary-rgb),0.15)' }}>
             <h4 style={{ fontSize: '0.85rem', fontWeight: 800, margin: '0 0 0.25rem 0', color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
-              <Sparkles size={14} color="var(--primary-color)" /> Need a full assessment?
+              <Sparkles size={14} color="var(--primary-color)" /> Need a planning overview?
             </h4>
             <p style={{ fontSize: '0.72rem', color: 'var(--text-light)', marginBottom: '0.75rem', lineHeight: '1.3' }}>
-              Answer 5 quick questions about your child&apos;s age & diagnosis to build a personalized benefit profile and automatically map all eligibility rules.
+              Answer a few quick questions about your child&apos;s age and diagnosis to review likely public benefit paths, planning prompts, and source-backed next steps.
             </p>
             <Link href="/" style={{ textDecoration: 'none' }}>
               <button 
                 className="btn-primary" 
                 style={{ width: '100%', fontSize: '0.72rem', height: '30px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.2' }}
               >
-                Start Eligibility Wizard <ArrowRight size={12} />
+                Open planning wizard <ArrowRight size={12} />
               </button>
             </Link>
           </div>

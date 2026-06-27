@@ -4,20 +4,21 @@ import { verifyToken } from '@/lib/auth';
 import { logoutAction } from './auth-actions';
 import Link from 'next/link';
 import { HeartHandshake, User, LayoutDashboard, Search, LogOut, BookOpen, MapPin, Compass } from 'lucide-react';
+import { CANONICAL_SITE_URL } from '@/lib/site-url';
 import "./globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+const SITE_URL = CANONICAL_SITE_URL;
 
 export const metadata: Metadata = {
   title: {
-    default: "Ablefull — 50-State Disability Benefits Guide",
+    default: "Ablefull — Source-Backed Disability Benefits & Family Action Guides",
     template: "%s | Ablefull"
   },
-  description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
+  description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Public launch coverage is deepest in California, with other states available through launch-ready, partial, or gated surfaces.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Ablefull",
-    description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
+    description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Public launch coverage is deepest in California, with other states available through launch-ready, partial, or gated surfaces.",
     url: SITE_URL,
     siteName: "Ablefull",
     locale: "en_US",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ablefull",
-    description: "Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.",
+    description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Public launch coverage is deepest in California, with other states available through launch-ready, partial, or gated surfaces.",
   }
 };
 

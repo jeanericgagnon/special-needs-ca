@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
-import { SEO_CLUSTERS } from '@/lib/seo-data';
+import { SEO_CLUSTERS, isPublicSourceBackedFormGuideSlug } from '@/lib/seo-data';
 import { navigatorDb, Program, getCounties, getBulkCountyDetails, RegionalCenter, SchoolDistrict, CountyOffice, County } from '@/lib/db';
 import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
+import { CANONICAL_SITE_URL } from '@/lib/site-url';
 
 interface StaticUrl {
   loc: string;
@@ -13,12 +14,16 @@ interface StaticUrl {
 }
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const baseUrl = CANONICAL_SITE_URL;
 
   const stateProgramsMap: Record<string, Program[]> = {};
   for (const st of SEO_STATE_ALLOWLIST) {
     try {
-      stateProgramsMap[st] = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(st) as Program[];
+      stateProgramsMap[st] = await navigatorDb.prepare(`
+        SELECT * FROM programs
+        WHERE state_id = ?
+          AND COALESCE(display_status, 'published') = 'published'
+      `).all(st) as Program[];
     } catch {
       stateProgramsMap[st] = [];
     }
@@ -230,6 +235,9 @@ export async function GET() {
   </url>`);
       }
     } else if (['forms', 'deadlines', 'situations'].includes(cluster.category)) {
+      if (cluster.category === 'forms' && !isPublicSourceBackedFormGuideSlug(cluster.slug)) {
+        continue;
+      }
       const policy = getSeoPolicyForRoute('static-page', {
         path: `/${cluster.category}/${cluster.slug}`
       }, {

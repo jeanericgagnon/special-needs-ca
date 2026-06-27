@@ -1,16 +1,25 @@
 import type { Metadata } from 'next';
 import LaunchToolLanding from '@/app/components/launch-tool-landing';
 
+const LAST_REVIEWED_DATE = '2026-06-20';
+const SOURCE_CONFIDENCE = 0.95;
+
 const sources = [
   {
     name: 'California Department of Social Services IHSS program information',
     url: 'https://www.cdss.ca.gov/in-home-supportive-services',
     verificationStatus: 'official_verified',
+    lastReviewedDate: LAST_REVIEWED_DATE,
+    sourceType: 'official_state',
+    confidenceScore: SOURCE_CONFIDENCE,
   },
   {
     name: 'California Department of Social Services county IHSS office directory',
     url: 'https://www.cdss.ca.gov/inforesources/county-ihss-offices',
     verificationStatus: 'official_verified',
+    lastReviewedDate: LAST_REVIEWED_DATE,
+    sourceType: 'official_state',
+    confidenceScore: SOURCE_CONFIDENCE,
   },
 ];
 

@@ -1,30 +1,48 @@
 # Canonical Route Manifest
 
-This manifest documents the canonical public route shapes and their publication posture on current main.
+Updated: 2026-06-26
 
-## Canonical routes
+This manifest records the current canonical route contract enforced by the central SEO policy in [frontend/src/lib/seo-policy.ts](/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/src/lib/seo-policy.ts) and the sitemap child manifest in [frontend/src/lib/seoRouteManifest.ts](/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/src/lib/seoRouteManifest.ts).
 
-| Route type | Canonical shape | Publication rule |
-| --- | --- | --- |
-| Home | `/` | indexable static page |
-| Benefits landing | `/benefits` | indexable static page |
-| State hub | `/benefits/<state>` | indexable only when state is `COMPLETE`, `indexSafe=true`, and runtime-launch-safe |
-| State counties hub | `/counties/<state>` | indexable only when the state-counties hub passes central policy |
-| County hub | `/benefits/<state>/<county>` | indexable only when county-level local proof passes central policy |
-| Condition hub | `/conditions/<condition>` | indexable only for verified conditions |
-| County × condition | `/benefits/<state>/<condition>/<county>` | fail-closed; currently limited to verified California leaves only |
-| Program guide | `/programs/<program>` | indexable only when exact state context, official source, verified eligibility, verified steps, and verified documents all exist |
-| Forms guide | `/forms/<slug>` | currently noindex unless explicitly verified through central policy |
-| Situation guide | `/situations/<slug>` | currently noindex unless explicitly verified through central policy |
-| Deadline guide | `/deadlines/<slug>` | currently noindex unless explicitly verified through central policy |
-| Advocates landing | `/advocates` | indexable static page |
-| Find help | `/find-help` | indexable static page |
-| School district page | `/school-districts/<state>/<district>` | hard blocked from indexation |
-| City page | `/benefits/<state>/<condition>/<city>` | hard blocked from indexation |
+## Global Rules
 
-## Static route allowlist
+- Canonical, indexability, sitemap inclusion, schema eligibility, and verification state must all come from `evaluateSeoPolicy`.
+- Unknown states, unknown slugs, and missing audit data fail closed.
+- Only `COMPLETE` plus `indexSafe/index_safe=true` states may index.
+- `BLOCKED` states must render `noindex, follow` and stay out of sitemaps.
+- `school-district` and `city` route families are hard blocked from sitemap inclusion.
 
-Derived from `frontend/src/lib/seoRouteManifest.ts`.
+## Current State Gate
+
+- `COMPLETE`: 45
+- `BLOCKED`: 5
+- `indexSafe`: 45
+- `incorrectlyIndexSafeStates`: `[]`
+- Blocked states: `alaska`, `arizona`, `idaho`, `maine`, `new-hampshire`
+
+Source of truth:
+- [data/generated/all_state_california_grade_audit_v3.json](/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_california_grade_audit_v3.json)
+- [data/generated/all_state_priority_queue_v3.jsonl](/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_priority_queue_v3.jsonl)
+
+## Canonical Dynamic Routes
+
+| Route type | Canonical pattern | Indexable when | Sitemap eligible |
+| --- | --- | --- | --- |
+| `state-hub` | `/benefits/[state]` | State is `COMPLETE` and `indexSafe`; no placeholder data | Yes |
+| `state-counties-hub` | `/counties/[state]` | State is `COMPLETE` and `indexSafe`; route has real local assets and no placeholders | No direct child sitemap entry; county roots flow through counties sitemap |
+| `county-hub` | `/benefits/[state]/[county]` | State is `COMPLETE` and `indexSafe`; local data, contact signal, freshness, and trust all pass | Yes |
+| `condition-hub` | `/benefits/[state]/[diagnosis]` | State is `COMPLETE` and `indexSafe`; diagnosis is verified; no placeholder data | Yes |
+| `program-guide` | `/programs/[slug]` or cluster canonical returned by policy | State context is index-safe and page has verified official program data | Yes via static sitemap route |
+| `category-hub` | `/benefits/[state]/category/[category]` | State is index-safe and category has real program content | Yes |
+| `comparison` | `/benefits/[state]/compare` | State is index-safe and comparison page has enough real entities | Yes |
+| `county-condition` | `/benefits/[state]/[diagnosis]/[county]` | Only when the state is index-safe and the county-diagnosis leaf meets the strict local-data gate | Yes only when policy allows |
+| `school-district` | Policy canonical only | Never currently indexable | No |
+| `city` | Policy canonical only | Never currently indexable | No |
+| `static-page` | Manifest allowlist only | Only for allowlisted static pages and verified guides | Yes when allowlisted |
+
+## Static Route Allowlist
+
+Current allowlisted static roots:
 
 - `/`
 - `/benefits`
@@ -33,28 +51,69 @@ Derived from `frontend/src/lib/seoRouteManifest.ts`.
 - `/school-districts`
 - `/find-help`
 
-## Static guide prefixes
-
-These route families are canonicalized but remain publication-gated.
+Current static guide prefixes:
 
 - `/forms/`
 - `/situations/`
 - `/deadlines/`
 - `/programs/`
 
-## Sitemap child manifest
+Anything outside those allowlists fails closed unless separately handled by the central policy.
+
+## Sitemap Manifest
+
+Current sitemap index children:
 
 - `/sitemaps/static.xml`
 - `/sitemaps/counties.xml`
-- `/sitemaps/districts.xml` hard blocked
-- `/sitemaps/cities.xml` hard blocked
 
-## Source of truth
+Hard blocked sitemap children:
 
-Canonical and publication decisions must come from the central policy in:
+- `/sitemaps/districts.xml`
+- `/sitemaps/cities.xml`
 
-- `frontend/src/lib/seo-policy.ts`
-- `frontend/src/lib/seoRouteManifest.ts`
-- `frontend/src/lib/stateAudit.ts`
+The sitemap index route excludes hard-blocked children and derives `<lastmod>` from the max real `last_verified_date` across core tables, not from a synthetic "today" fallback.
 
-No route may be added to a sitemap unless the same central policy would allow that exact route to render indexable.
+## Robots Contract
+
+The current robots contract:
+
+- allows `/`
+- allows `/forms`
+- allows `/sitemap.xml`
+- allows `/sitemaps/static.xml`
+- allows `/sitemaps/counties.xml`
+- disallows `/dashboard`
+- disallows `/dashboard/*`
+- disallows `/login`
+- disallows `/register`
+- disallows `/api/*`
+
+Important V4 hardening:
+
+- `/_next/*` is no longer blanket-blocked in `robots.txt`
+- noindex decisions for public pages must come from page metadata, not `robots.txt`
+
+## Program Guide Gate
+
+Program pages are only meant to be indexable when the page has:
+
+- exact state context
+- official first-party source support
+- verification date
+- verified eligibility rules
+- verified application steps
+- verified document requirements
+- no generic-template fallback content
+- no placeholder or unsupported YMYL claims
+
+If any of those inputs are absent or inconsistent, policy must fail closed.
+
+## Copy / Coverage Guardrail
+
+Public copy must stay aligned with the audit truth:
+
+- do not claim national completeness
+- do not call blocked states complete
+- do not surface stale "California only" launch copy
+- do surface current dynamic counts where the UI exposes coverage status

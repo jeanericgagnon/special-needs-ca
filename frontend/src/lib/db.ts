@@ -334,7 +334,8 @@ async function runPgMigrations(pool: Pool) {
       official_source_url TEXT,
       category TEXT,
       last_verified_date TEXT,
-      state_id TEXT REFERENCES states(id)
+      state_id TEXT REFERENCES states(id),
+      display_status TEXT DEFAULT 'published'
     );
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS state_id TEXT REFERENCES states(id);
     CREATE TABLE IF NOT EXISTS program_eligibility_rules (
@@ -379,7 +380,8 @@ async function runPgMigrations(pool: Pool) {
       address TEXT NOT NULL,
       phone TEXT NOT NULL,
       email TEXT,
-      website TEXT NOT NULL
+      website TEXT NOT NULL,
+      display_status TEXT DEFAULT 'published'
     );
     CREATE TABLE IF NOT EXISTS state_resource_agencies (
       id TEXT PRIMARY KEY,
@@ -400,7 +402,8 @@ async function runPgMigrations(pool: Pool) {
       languages TEXT,
       last_verified_date TEXT,
       source_urls TEXT,
-      service_area_description TEXT
+      service_area_description TEXT,
+      display_status TEXT DEFAULT 'published'
     );
     CREATE TABLE IF NOT EXISTS regional_education_agencies (
       id TEXT PRIMARY KEY,
@@ -408,7 +411,8 @@ async function runPgMigrations(pool: Pool) {
       agency_type TEXT NOT NULL,
       name TEXT NOT NULL,
       counties_served TEXT NOT NULL,
-      website TEXT NOT NULL
+      website TEXT NOT NULL,
+      display_status TEXT DEFAULT 'published'
     );
     CREATE OR REPLACE VIEW regional_centers AS
     SELECT 
@@ -435,7 +439,8 @@ async function runPgMigrations(pool: Pool) {
       data_origin,
       verification_status,
       last_scraped_at,
-      confidence_score
+      confidence_score,
+      display_status
     FROM state_resource_agencies;
 
     CREATE OR REPLACE VIEW selpas AS
@@ -450,7 +455,8 @@ async function runPgMigrations(pool: Pool) {
       verification_status,
       last_verified_date,
       last_scraped_at,
-      confidence_score
+      confidence_score,
+      display_status
     FROM regional_education_agencies;
 
     CREATE TABLE IF NOT EXISTS school_districts (
@@ -463,7 +469,8 @@ async function runPgMigrations(pool: Pool) {
       total_enrollment INTEGER,
       special_ed_pct REAL,
       inclusion_rate_pct REAL,
-      self_contained_rate_pct REAL
+      self_contained_rate_pct REAL,
+      display_status TEXT DEFAULT 'published'
     );
     CREATE TABLE IF NOT EXISTS resource_providers (
       id TEXT PRIMARY KEY,
@@ -521,7 +528,8 @@ async function runPgMigrations(pool: Pool) {
       last_verified_at TEXT,
       last_verified_date TEXT,
       last_scraped_at TEXT,
-      confidence_score REAL
+      confidence_score REAL,
+      display_status TEXT DEFAULT 'published'
     );
     CREATE TABLE IF NOT EXISTS nonprofit_organizations (
       id TEXT PRIMARY KEY,
@@ -574,7 +582,8 @@ async function runPgMigrations(pool: Pool) {
       last_verified_at TEXT,
       last_verified_date TEXT,
       last_scraped_at TEXT,
-      confidence_score REAL
+      confidence_score REAL,
+      display_status TEXT DEFAULT 'published'
     );
     CREATE TABLE IF NOT EXISTS sources (
       id TEXT PRIMARY KEY,
@@ -658,6 +667,7 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
     ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE county_offices ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -666,6 +676,7 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
     ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE school_districts ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -714,6 +725,7 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS claimed_by TEXT;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS verified_affiliation INTEGER DEFAULT 0;
     ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS claim_email TEXT;
+    ALTER TABLE nonprofit_organizations ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -722,6 +734,7 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
     ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE regional_education_agencies ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -729,6 +742,7 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS verification_status TEXT;
     ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE state_resource_agencies ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS data_origin TEXT;
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS last_verified_date TEXT;
@@ -769,6 +783,7 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS claimed_by TEXT;
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS verified_affiliation INTEGER DEFAULT 0;
     ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS claim_email TEXT;
+    ALTER TABLE iep_advocates ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -815,6 +830,7 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS claimed_by TEXT;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS verified_affiliation INTEGER DEFAULT 0;
     ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS claim_email TEXT;
+    ALTER TABLE resource_providers ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -822,6 +838,9 @@ async function runPgMigrations(pool: Pool) {
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS verification_status TEXT;
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS last_scraped_at TEXT;
     ALTER TABLE programs ADD COLUMN IF NOT EXISTS confidence_score REAL;
+    ALTER TABLE programs ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
+    ALTER TABLE program_waitlists ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
+    ALTER TABLE forms_and_guides ADD COLUMN IF NOT EXISTS display_status TEXT DEFAULT 'published';
 
     ALTER TABLE sources ADD COLUMN IF NOT EXISTS source_url TEXT;
     ALTER TABLE sources ADD COLUMN IF NOT EXISTS source_type TEXT;
@@ -908,7 +927,8 @@ async function runPgMigrations(pool: Pool) {
       verification_status TEXT,
       last_verified_date TEXT,
       last_scraped_at TEXT,
-      confidence_score REAL
+      confidence_score REAL,
+      display_status TEXT DEFAULT 'published'
     );
     CREATE TABLE IF NOT EXISTS service_locations (
       id TEXT PRIMARY KEY,
@@ -1167,7 +1187,7 @@ async function runPgMigrations(pool: Pool) {
       paramedical_hours REAL DEFAULT 0,
       paramedical_desc TEXT,
       requires_supervision INTEGER DEFAULT 1,
-      ihss_wage REAL DEFAULT 18.00,
+      ihss_wage REAL DEFAULT NULL,
       recipient_count INTEGER DEFAULT 1,
       monthly_hours_1 REAL DEFAULT 120,
       monthly_hours_2 REAL DEFAULT 80,
@@ -2111,7 +2131,7 @@ function runMigrations(db: Database.Database) {
       paramedical_hours REAL DEFAULT 0,
       paramedical_desc TEXT,
       requires_supervision INTEGER DEFAULT 1,
-      ihss_wage REAL DEFAULT 18.00,
+      ihss_wage REAL DEFAULT NULL,
       recipient_count INTEGER DEFAULT 1,
       monthly_hours_1 REAL DEFAULT 120,
       monthly_hours_2 REAL DEFAULT 80,
@@ -2252,7 +2272,7 @@ function runMigrations(db: Database.Database) {
           {
             title: 'Your rights as an IEP team member',
             content: 'Under the Individuals with Disabilities Education Act (IDEA) and California Education Code, you are an EQUAL team member with every right to: disagree with assessments, propose different placements or goals, bring any individual to the meeting (advocate, therapist, friend), record the meeting (with 24-hour written notice in California), and reject any part of the IEP in writing.',
-            tip: 'The school district CANNOT hold an IEP meeting or finalize an IEP without you. You have the absolute right to reschedule if the meeting time is inconvenient.',
+            tip: 'If the proposed IEP meeting time does not work, ask the district for another time in writing and keep a copy. Final scheduling rights and next steps depend on the current district process and notice history.',
             citation: 'IDEA 20 U.S.C. § 1414(d); California Ed Code § 56341'
           },
           {
@@ -2635,6 +2655,7 @@ export interface Selpa {
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
+  display_status?: string | null;
 }
 
 async function navigatorTableExists(tableName: string): Promise<boolean> {
@@ -2675,6 +2696,7 @@ export interface CountyOffice {
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
+  display_status?: string | null;
 }
 
 export interface SchoolDistrict {
@@ -2695,6 +2717,7 @@ export interface SchoolDistrict {
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
+  display_status?: string | null;
 }
 
 export interface NonprofitOrganization {
@@ -2748,6 +2771,7 @@ export interface NonprofitOrganization {
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
+  display_status?: string | null;
 }
 
 export interface RegionalCenter {
@@ -2776,6 +2800,7 @@ export interface RegionalCenter {
   verification_status?: string | null;
   last_scraped_at?: string | null;
   confidence_score?: number | null;
+  display_status?: string | null;
 }
 
 export interface DirectoryReview {
@@ -2895,6 +2920,37 @@ export interface CoreProgramMatch {
   confidence_score?: number | null;
 }
 
+export interface FormGuide {
+  id: string;
+  state_id: string;
+  program_id?: string | null;
+  title: string;
+  slug: string;
+  category?: string | null;
+  form_type?: string | null;
+  agency?: string | null;
+  source_url?: string | null;
+  pdf_url?: string | null;
+  description?: string | null;
+  related_action?: string | null;
+  display_context?: string | null;
+  who_uses_it?: string | null;
+  who_signs_it?: string | null;
+  where_to_send_it?: string | null;
+  deadline?: string | null;
+  attachments?: string | null;
+  common_mistakes?: string | null;
+  letter_template?: string | null;
+  call_script?: string | null;
+  evidence_level?: string | null;
+  data_origin?: string | null;
+  verification_status?: string | null;
+  confidence_score?: number | null;
+  last_checked_at?: string | null;
+  last_verified_at?: string | null;
+  display_status?: string | null;
+}
+
 export interface ProgramWaitlist {
   id: string;
   program_id: string;
@@ -2906,6 +2962,7 @@ export interface ProgramWaitlist {
   reserve_capacity_notice: string | null;
   legal_deadline: string | null;
   last_scraped_at: string;
+  display_status?: string | null;
 }
 
 export interface IepAdvocate {
@@ -3114,6 +3171,17 @@ export async function getProgramsForDiagnosis(diagnosis: string): Promise<Progra
 
 export async function getAllPrograms(): Promise<Program[]> {
   try {
+    const stmt = await navigatorDb.prepare(`
+      SELECT * FROM programs
+      WHERE COALESCE(display_status, 'published') = 'published'
+      ORDER BY id ASC
+    `);
+    return stmt.all() as Program[];
+  } catch (err) {
+    console.error('Failed to get published navigator program set:', err);
+  }
+
+  try {
     const stmt = await crawlerDb.prepare(`
       SELECT * FROM structured_programs 
       GROUP BY program_name
@@ -3121,7 +3189,7 @@ export async function getAllPrograms(): Promise<Program[]> {
     `);
     return stmt.all() as Program[];
   } catch (err) {
-    console.error('Failed to get program set:', err);
+    console.error('Failed to get crawler fallback program set:', err);
     return [];
   }
 }
@@ -3131,7 +3199,8 @@ export async function getProgramBySlug(slug: string): Promise<Program | null> {
     // 1. Look up in the navigator DB first
     const programRow = await navigatorDb.prepare(`
       SELECT * FROM programs 
-      WHERE LOWER(id) = ? OR LOWER(name) = ?
+      WHERE (LOWER(id) = ? OR LOWER(name) = ?)
+        AND COALESCE(display_status, 'published') = 'published'
     `).get(slug.toLowerCase(), slug.toLowerCase().replace(/-/g, ' '));
 
     if (programRow) {
@@ -3158,11 +3227,15 @@ export async function getProgramBySlug(slug: string): Promise<Program | null> {
         target_demographic: programRow.who_it_is_for || '',
         age_limit_min: ageLimitMin,
         age_limit_max: ageLimitMax,
-        income_limit: 'Medi-Cal standard / None',
+        income_limit: '',
         diagnosis_required: programRow.who_might_qualify || '',
         county_specific: 'Statewide',
         state_id: programRow.state_id,
+        source_type: programRow.source_type || null,
+        data_origin: programRow.data_origin || null,
+        verification_status: programRow.verification_status || null,
         last_verified_date: programRow.last_verified_date,
+        last_scraped_at: programRow.last_scraped_at || null,
         confidence_score: programRow.confidence_score !== null && programRow.confidence_score !== undefined ? Number(programRow.confidence_score) : null
       } as Program;
     }
@@ -3581,15 +3654,28 @@ export async function getCountyDetails(countyId: string) {
   const county = await navigatorDb.prepare('SELECT * FROM counties WHERE id = ?').get(countyId) as County | undefined;
   if (!county) return undefined;
 
-  const offices = await navigatorDb.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(countyId) as CountyOffice[];
-  const districts = await navigatorDb.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(countyId) as SchoolDistrict[];
-  const nonprofits = await navigatorDb.prepare('SELECT * FROM nonprofit_organizations WHERE county_id = ?').all(countyId) as NonprofitOrganization[];
+  const offices = await navigatorDb.prepare(`
+    SELECT * FROM county_offices
+    WHERE county_id = ?
+      AND COALESCE(display_status, 'published') = 'published'
+  `).all(countyId) as CountyOffice[];
+  const districts = await navigatorDb.prepare(`
+    SELECT * FROM school_districts
+    WHERE county_id = ?
+      AND COALESCE(display_status, 'published') = 'published'
+  `).all(countyId) as SchoolDistrict[];
+  const nonprofits = await navigatorDb.prepare(`
+    SELECT * FROM nonprofit_organizations
+    WHERE county_id = ?
+      AND COALESCE(display_status, 'published') = 'published'
+  `).all(countyId) as NonprofitOrganization[];
 
   // Get matching Regional Centers using junction table
   const rcs = await navigatorDb.prepare(`
     SELECT rc.* FROM regional_centers rc
     JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
     WHERE rcc.county_id = ?
+      AND COALESCE(rc.display_status, 'published') = 'published'
   `).all(countyId) as RegionalCenter[];
 
   // Get matching SELPAs using junction table
@@ -3597,6 +3683,7 @@ export async function getCountyDetails(countyId: string) {
     SELECT s.* FROM selpas s
     JOIN selpa_counties sc ON s.id = sc.selpa_id
     WHERE sc.county_id = ?
+      AND COALESCE(s.display_status, 'published') = 'published'
   `).all(countyId) as Selpa[];
 
   return {
@@ -3615,6 +3702,7 @@ export async function getSelpasByCounty(countyId: string): Promise<Selpa[]> {
       SELECT s.* FROM selpas s
       JOIN selpa_counties sc ON s.id = sc.selpa_id
       WHERE sc.county_id = ?
+        AND COALESCE(s.display_status, 'published') = 'published'
     `).all(countyId) as Selpa[];
   } catch (err) {
     console.error('Failed to query SELPAs:', err);
@@ -3650,6 +3738,7 @@ export async function getMatchedCorePrograms(age: number, conditionIds: string[]
     FROM program_eligibility_rules r
     JOIN programs p ON r.program_id = p.id
     WHERE ? >= r.min_age_years AND ? <= r.max_age_years
+      AND COALESCE(p.display_status, 'published') = 'published'
   `;
   
   const params: (string | number)[] = [age, age];
@@ -3762,6 +3851,7 @@ export async function getIepAdvocates(countyId?: string, stateId?: string): Prom
         SELECT a.* FROM iep_advocates a
         JOIN iep_advocate_counties ac ON a.id = ac.iep_advocate_id
         WHERE ac.county_id = ?
+          AND COALESCE(a.display_status, 'published') = 'published'
       `).all(countyId) as IepAdvocate[];
     }
     if (stateId) {
@@ -3773,9 +3863,13 @@ export async function getIepAdvocates(countyId?: string, stateId?: string): Prom
         JOIN iep_advocate_counties ac ON a.id = ac.iep_advocate_id
         JOIN counties c ON ac.county_id = c.id
         WHERE c.state_id = ?
+          AND COALESCE(a.display_status, 'published') = 'published'
       `).all(stateId) as IepAdvocate[];
     }
-    return await navigatorDb.prepare('SELECT * FROM iep_advocates').all() as IepAdvocate[];
+    return await navigatorDb.prepare(`
+      SELECT * FROM iep_advocates
+      WHERE COALESCE(display_status, 'published') = 'published'
+    `).all() as IepAdvocate[];
   } catch (err) {
     console.error('Failed to query IEP advocates:', err);
     return [];
@@ -3784,10 +3878,69 @@ export async function getIepAdvocates(countyId?: string, stateId?: string): Prom
 
 export async function getProgramWaitlists(): Promise<ProgramWaitlist[]> {
   try {
-    return await navigatorDb.prepare('SELECT * FROM program_waitlists').all() as ProgramWaitlist[];
+    const hasDisplayStatus = await navigatorColumnExists('program_waitlists', 'display_status');
+    return await navigatorDb.prepare(
+      hasDisplayStatus
+        ? `
+      SELECT * FROM program_waitlists
+      WHERE COALESCE(display_status, 'published') = 'published'
+    `
+        : 'SELECT * FROM program_waitlists',
+    ).all() as ProgramWaitlist[];
   } catch (err) {
     console.error('Failed to query program waitlists:', err);
     return [];
+  }
+}
+
+export async function getPublishedFormGuides(stateId?: string): Promise<FormGuide[]> {
+  try {
+    const hasDisplayStatus = await navigatorColumnExists('forms_and_guides', 'display_status');
+    const sql = stateId
+      ? `
+      SELECT * FROM forms_and_guides
+      WHERE state_id = ?
+        ${hasDisplayStatus ? "AND COALESCE(display_status, 'published') = 'published'" : ''}
+      ORDER BY COALESCE(last_checked_at, last_verified_at, source_url, pdf_url, id) DESC
+    `
+      : `
+      SELECT * FROM forms_and_guides
+      ${hasDisplayStatus ? "WHERE COALESCE(display_status, 'published') = 'published'" : ''}
+      ORDER BY COALESCE(last_checked_at, last_verified_at, source_url, pdf_url, id) DESC
+    `;
+    return stateId
+      ? await navigatorDb.prepare(sql).all(stateId) as FormGuide[]
+      : await navigatorDb.prepare(sql).all() as FormGuide[];
+  } catch (err) {
+    console.error('Failed to query published form guides:', err);
+    return [];
+  }
+}
+
+export async function getPublishedFormGuideBySlug(slug: string, stateId?: string): Promise<FormGuide | null> {
+  try {
+    const hasDisplayStatus = await navigatorColumnExists('forms_and_guides', 'display_status');
+    const sql = stateId
+      ? `
+      SELECT * FROM forms_and_guides
+      WHERE LOWER(slug) = ?
+        AND state_id = ?
+        ${hasDisplayStatus ? "AND COALESCE(display_status, 'published') = 'published'" : ''}
+      LIMIT 1
+    `
+      : `
+      SELECT * FROM forms_and_guides
+      WHERE LOWER(slug) = ?
+        ${hasDisplayStatus ? "AND COALESCE(display_status, 'published') = 'published'" : ''}
+      LIMIT 1
+    `;
+    const row = stateId
+      ? await navigatorDb.prepare(sql).get(slug.toLowerCase(), stateId) as FormGuide | undefined
+      : await navigatorDb.prepare(sql).get(slug.toLowerCase()) as FormGuide | undefined;
+    return row || null;
+  } catch (err) {
+    console.error('Failed to query published form guide by slug:', err);
+    return null;
   }
 }
 
@@ -3967,7 +4120,10 @@ export async function saveChildRespiteData(childId: string, scores: { safety: nu
 
 export async function getSchoolDistrictBySlug(slug: string): Promise<SchoolDistrict | undefined> {
   try {
-    const districts = await navigatorDb.prepare('SELECT * FROM school_districts').all() as SchoolDistrict[];
+    const districts = await navigatorDb.prepare(`
+      SELECT * FROM school_districts
+      WHERE COALESCE(display_status, 'published') = 'published'
+    `).all() as SchoolDistrict[];
     return districts.find(d => {
       const s = d.name.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-+/g, '-');
       return s === slug || d.id === slug;
@@ -3980,7 +4136,11 @@ export async function getSchoolDistrictBySlug(slug: string): Promise<SchoolDistr
 
 export async function getLocalProviders(countyId: string): Promise<ResourceProvider[]> {
   try {
-    return await navigatorDb.prepare('SELECT * FROM resource_providers WHERE county_id = ?').all(countyId) as ResourceProvider[];
+    return await navigatorDb.prepare(`
+      SELECT * FROM resource_providers
+      WHERE county_id = ?
+        AND COALESCE(display_status, 'published') = 'published'
+    `).all(countyId) as ResourceProvider[];
   } catch {
     console.error('Failed to query local resource providers:');
     return [];
@@ -5208,7 +5368,11 @@ export interface LegalDecision {
 
 export async function getSchoolDistrictById(id: string): Promise<SchoolDistrict | undefined> {
   try {
-    return await navigatorDb.prepare('SELECT * FROM school_districts WHERE id = ?').get(id) as SchoolDistrict | undefined;
+    return await navigatorDb.prepare(`
+      SELECT * FROM school_districts
+      WHERE id = ?
+        AND COALESCE(display_status, 'published') = 'published'
+    `).get(id) as SchoolDistrict | undefined;
   } catch (err) {
     console.error(`Failed to get school district by id ${id}:`, err);
     return undefined;
@@ -5265,7 +5429,11 @@ export async function getSchoolDistrictLitigation(districtId: string) {
 export async function getSchoolDistrictsWithLitigation() {
   try {
     // 1. Fetch all districts
-    const districts = await navigatorDb.prepare('SELECT * FROM school_districts ORDER BY name ASC').all() as SchoolDistrict[];
+    const districts = await navigatorDb.prepare(`
+      SELECT * FROM school_districts
+      WHERE COALESCE(display_status, 'published') = 'published'
+      ORDER BY name ASC
+    `).all() as SchoolDistrict[];
 
     // 2. Fetch case aggregations when litigation data exists; otherwise fail closed.
     const caseStats = (await navigatorTableExists('legal_decisions'))
@@ -5336,6 +5504,7 @@ export async function getBulkCountyDetails(stateId?: string) {
     const offices = await navigatorDb.prepare(`
       SELECT * FROM county_offices 
       WHERE county_id IN (${placeholders})
+        AND COALESCE(display_status, 'published') = 'published'
     `).all(...countyIds) as CountyOffice[];
 
     const districts = (await navigatorTableExists('legal_decisions'))
@@ -5348,6 +5517,7 @@ export async function getBulkCountyDetails(stateId?: string) {
       FROM school_districts sd
       LEFT JOIN legal_decisions ld ON sd.id = ld.school_district_id
       WHERE sd.county_id IN (${placeholders})
+        AND COALESCE(sd.display_status, 'published') = 'published'
       GROUP BY sd.id
     `).all(...countyIds) as SchoolDistrict[]
       : await navigatorDb.prepare(`
@@ -5359,23 +5529,27 @@ export async function getBulkCountyDetails(stateId?: string) {
         0 as unknownWins
       FROM school_districts sd
       WHERE sd.county_id IN (${placeholders})
+        AND COALESCE(sd.display_status, 'published') = 'published'
     `).all(...countyIds) as SchoolDistrict[];
 
     const nonprofits = await navigatorDb.prepare(`
       SELECT * FROM nonprofit_organizations 
       WHERE county_id IN (${placeholders})
+        AND COALESCE(display_status, 'published') = 'published'
     `).all(...countyIds) as NonprofitOrganization[];
 
     const rcs = await navigatorDb.prepare(`
       SELECT rcc.county_id, rc.* FROM regional_centers rc
       JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
       WHERE rcc.county_id IN (${placeholders})
+        AND COALESCE(rc.display_status, 'published') = 'published'
     `).all(...countyIds) as any[];
 
     const selpas = await navigatorDb.prepare(`
       SELECT sc.county_id, s.* FROM selpas s
       JOIN selpa_counties sc ON s.id = sc.selpa_id
       WHERE sc.county_id IN (${placeholders})
+        AND COALESCE(s.display_status, 'published') = 'published'
     `).all(...countyIds) as any[];
 
     // Group by county_id

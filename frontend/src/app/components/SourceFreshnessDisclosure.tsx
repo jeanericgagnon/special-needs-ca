@@ -1,18 +1,31 @@
 import React from 'react';
-import { ExternalLink, Calendar, ShieldCheck, HelpCircle } from 'lucide-react';
+import { ExternalLink, Calendar, ShieldCheck } from 'lucide-react';
+import ContributionModal from '@/components/contribution-modal';
 
 export interface DisclosureSource {
   name: string;
   url?: string;
   lastReviewedDate?: string | null;
   verificationStatus?: string | null;
+  sourceType?: string | null;
+  confidenceScore?: number | null;
 }
 
 interface SourceFreshnessDisclosureProps {
   sources: DisclosureSource[];
+  correctionSuggestionType?: 'advocate' | 'district' | 'program' | 'other';
+  correctionTargetId?: string | null;
+  correctionTargetName?: string;
+  correctionButtonLabel?: string;
 }
 
-export default function SourceFreshnessDisclosure({ sources }: SourceFreshnessDisclosureProps) {
+export default function SourceFreshnessDisclosure({
+  sources,
+  correctionSuggestionType = 'other',
+  correctionTargetId = null,
+  correctionTargetName,
+  correctionButtonLabel = 'Report a correction',
+}: SourceFreshnessDisclosureProps) {
   if (!sources || sources.length === 0) return null;
 
   return (
@@ -32,13 +45,32 @@ export default function SourceFreshnessDisclosure({ sources }: SourceFreshnessDi
       
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
-          We show the public sources we relied on, when we last checked them, and whether they were source-backed or still need deeper verification. If something looks wrong, please report a correction before relying on it.
+          We show the public sources we relied on, when we last checked them, and whether they were source-backed or still need deeper verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current official source for your county or program. If something looks wrong, please report a correction before relying on it.
+        </p>
+
+        <div>
+          <ContributionModal
+            suggestionType={correctionSuggestionType}
+            targetId={correctionTargetId}
+            targetName={correctionTargetName || 'this page'}
+            buttonLabel={correctionButtonLabel}
+          />
+        </div>
+
+        <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.45 }}>
+          Missing a local office, program, or source-backed contact? Use the correction flow to suggest a source-backed update. We keep thin or unverified local entries gated until that review is complete.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem', marginTop: '0.5rem' }}>
           {sources.map((src, idx) => {
             const status = (src.verificationStatus || 'unverified').toLowerCase();
             const isVerified = status === 'official_verified' || status === 'human_verified' || status === 'verified';
+            const confidenceLabel = typeof src.confidenceScore === 'number' && Number.isFinite(src.confidenceScore)
+              ? `${Math.round(src.confidenceScore * 100)}% confidence`
+              : null;
+            const sourceTypeLabel = src.sourceType
+              ? String(src.sourceType).replace(/_/g, ' ')
+              : null;
             
             let dateText = 'Unknown';
             if (src.lastReviewedDate) {
@@ -87,6 +119,12 @@ export default function SourceFreshnessDisclosure({ sources }: SourceFreshnessDi
                   <Calendar size={12} />
                   <span>Last Reviewed: {dateText}</span>
                 </div>
+
+                {(sourceTypeLabel || confidenceLabel) && (
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
+                    {[sourceTypeLabel ? `Source type: ${sourceTypeLabel}` : null, confidenceLabel].filter(Boolean).join(' • ')}
+                  </div>
+                )}
 
                 {src.url && (
                   <a 

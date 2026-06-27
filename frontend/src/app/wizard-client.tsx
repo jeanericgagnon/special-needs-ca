@@ -17,6 +17,7 @@ import RespiteExplainer from './components/respite-explainer';
 import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
 import { hasNonNegatedKeyword } from '@/lib/negation';
+import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 
 interface WizardClientProps {
   counties: County[];
@@ -25,6 +26,33 @@ interface WizardClientProps {
 }
 
 type WizardStep = 1 | 2 | 3 | 4 | 5;
+
+const WIZARD_DISCLOSURE_SOURCES = [
+  {
+    name: 'California Department of Social Services IHSS program information',
+    url: 'https://www.cdss.ca.gov/in-home-supportive-services',
+    verificationStatus: 'official_verified' as const,
+    sourceType: 'official_state' as const,
+  },
+  {
+    name: 'California Department of Developmental Services regional center information',
+    url: 'https://www.dds.ca.gov/rc/',
+    verificationStatus: 'official_verified' as const,
+    sourceType: 'official_state' as const,
+  },
+  {
+    name: 'California Department of Education special education information',
+    url: 'https://www.cde.ca.gov/sp/se/',
+    verificationStatus: 'official_verified' as const,
+    sourceType: 'official_state' as const,
+  },
+  {
+    name: 'California Department of Health Care Services Medi-Cal for Kids & Teens',
+    url: 'https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/Children.aspx',
+    verificationStatus: 'official_verified' as const,
+    sourceType: 'official_state' as const,
+  },
+];
 
 export default function WizardClient({ counties, diagnosesList, waitlists }: WizardClientProps) {
   const [step, setStep] = useState<WizardStep>(1);
@@ -42,13 +70,13 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
   const [schoolBasedTherapy, setSchoolBasedTherapy] = useState<boolean | null>(null);
   const [exceedsIncomeLimits, setExceedsIncomeLimits] = useState<boolean | null>(null);
 
-  // Financial breakdown toggle and waitlist bypass quiz states
+  // Financial breakdown toggle and reserve-capacity review states
   const [showFinancialBreakdown, setShowFinancialBreakdown] = useState(false);
   const [bypassAgeUnder21, setBypassAgeUnder21] = useState(false);
   const [bypassFacilityStay, setBypassFacilityStay] = useState(false);
   const [bypassWaiverTransfer, setBypassWaiverTransfer] = useState(false);
 
-  // Auto-fill age bypass based on wizard input
+  // Auto-fill the under-21 reserve-capacity review flag based on wizard input
   useEffect(() => {
     if (analysis && age) {
       const ageNum = parseInt(age);
@@ -74,11 +102,11 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
           if (severeSafetyRisks === true || hasNonNegatedKeyword(additionalText, ['safety', 'wander', 'elope', 'supervision', 'danger', 'behavior'])) {
             value = 45360;
             label = 'IHSS Protective Supervision';
-            calcDesc = 'Illustrative estimate based on 210 hours/mo and a sample California county wage. Confirm the current county rate before relying on it.';
+            calcDesc = 'Illustrative estimate based on 210 hours/mo and a checked sample California county wage. Confirm the current county rate before relying on it.';
           } else {
             value = 12960;
             label = 'IHSS Personal Care Hours';
-            calcDesc = 'Illustrative estimate based on 60 hours/mo and a sample California county wage. Confirm the current county rate before relying on it.';
+            calcDesc = 'Illustrative estimate based on 60 hours/mo and a checked sample California county wage. Confirm the current county rate before relying on it.';
           }
           break;
         case 'regional-centers':
@@ -149,7 +177,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
     { label: 'IEP school assessment', text: 'needs school district IEP special education evaluations' },
     { label: 'Physical therapy aids', text: 'needs physical and occupational therapies for orthopedic mobility' },
     { label: 'Feeding / G-Tube therapy', text: 'needs feeding therapies, uses G-Tube or has swallowing difficulties' },
-    { label: 'Medi-Cal waiver bypass', text: 'needs to bypass family income limits via institutional deeming waivers' },
+    { label: 'Medi-Cal waiver review', text: 'may need an institutional deeming or waiver-based Medi-Cal eligibility review' },
     { label: 'Mental health therapies', text: 'needs behavioral health and mental counseling support' },
     { label: 'Wheelchair / Mobility aids', text: 'needs wheelchair access, specialized strollers, and physical equipment' }
   ];
@@ -331,8 +359,18 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
         <HeartHandshake size={48} color="var(--primary-color)" style={{ margin: '0 auto 1rem' }} />
         <h1>Find California disability benefits and local special-needs resources</h1>
         <p style={{ fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', color: 'var(--text-light)' }}>
-          Answer a few questions to see programs your child may qualify for, official application links, and county-specific contacts.
+          Answer a few questions to see which California programs may be worth reviewing, along with source-backed application links and county-specific contacts.
         </p>
+      </div>
+
+      <div style={{ marginBottom: '2rem' }}>
+        <SourceFreshnessDisclosure
+          sources={WIZARD_DISCLOSURE_SOURCES}
+          correctionSuggestionType="program"
+          correctionTargetId="california-benefits-matcher"
+          correctionTargetName="California benefits matcher"
+          correctionButtonLabel="Report a matcher source issue"
+        />
       </div>
 
       {/* Visual Assessment Step Stepper */}
@@ -1012,9 +1050,9 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
 
               <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
                 <div>
-                  <h2 style={{ margin: 0 }}>Here are programs your child may qualify for:</h2>
+                  <h2 style={{ margin: 0 }}>Here are programs that may be worth reviewing:</h2>
                   <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginTop: '0.2rem', margin: 0 }}>
-                    Based on active filters: {age} years old, {countyId.toUpperCase()} County, and diagnosed with {diagnosis}.
+                    Based on the filters you entered: {age} years old, {countyId.toUpperCase()} County, and diagnosed with {diagnosis}. Treat these matches as planning guidance until you confirm the current official source for the exact program and county.
                   </p>
                 </div>
                 <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
@@ -1062,7 +1100,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                           <span style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text-light)' }}>/ year</span>
                         </h3>
                         <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                          Estimated value of matched state program slots, specialized therapies, diapers, and respite care. Bypassing parental income deeming rules unlocks these services at no cost.
+                          Estimated value of matched state program slots, specialized therapies, diapers, and respite care. Some programs may use deeming or waiver rules that change how financial eligibility is reviewed, but final coverage still depends on the current agency decision.
                         </p>
                       </div>
                       
@@ -1142,7 +1180,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                 <WaiverComparison />
               </div>
 
-              {/* Interactive Reserve Capacity Waitlist Bypass Checker */}
+              {/* Interactive Reserve Capacity waitlist review helper */}
               <div className="glass-panel" style={{ 
                 border: '1px solid rgba(239, 68, 68, 0.15)',
                 background: 'rgba(255, 255, 255, 0.8)',
@@ -1153,12 +1191,12 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                   <Clock color="#ef4444" size={22} />
                   <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)', margin: 0 }}>
-                    Reserve Capacity Waitlist Bypass Checker
+                    Reserve Capacity Waitlist Review Checker
                   </h3>
                 </div>
                 
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
-                  The high-needs <strong>HCBA Waiver</strong> is capped and currently carries a 2-year waiting list. However, California reserves slots that completely bypass the waitlist under <strong>Reserve Capacity</strong> rules. Check the conditions below to see if your child qualifies:
+                  The high-needs <strong>HCBA Waiver</strong> is capped and currently carries a standard waitlist. California also reserves some slots under <strong>Reserve Capacity</strong> rules. Check the conditions below to see whether your child may fit one of the review categories:
                 </p>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem', marginBottom: '1.5rem' }}>
@@ -1259,10 +1297,10 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                     <CheckCircle2 color="#10b981" size={24} style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div>
                       <strong style={{ display: 'block', color: 'var(--text-main)', fontSize: '0.95rem', marginBottom: '0.25rem' }}>
-                        🎉 Potential Waitlist Bypass Confirmed!
+                        🎉 Potential Reserve Capacity Match
                       </strong>
                       <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                        Under California Department of Health Care Services (DHCS) regulations, your child matches one or more <strong>Reserve Capacity</strong> rules. When applying for the HCBA Waiver, instruct your local Waiver Agency that you qualify for a priority slot, allowing your child to completely skip the 2-year wait list.
+                        Based on the answers you entered, your child may match one or more California Department of Health Care Services (DHCS) <strong>Reserve Capacity</strong> categories. Ask your local Waiver Agency to review reserve-capacity eligibility with your application. If the agency confirms that status, it may reduce or avoid the standard waitlist depending on the official review.
                       </p>
                     </div>
                   </div>
@@ -1308,7 +1346,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                               <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Category: {program.category.toUpperCase()}</span>
                             )}
                             {program.last_verified_date && (
-                              <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Verified: {program.last_verified_date}</span>
+                              <span style={{ background: 'rgba(0,0,0,0.04)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>Last checked: {program.last_verified_date}</span>
                             )}
                           </div>
 

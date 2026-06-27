@@ -1,5 +1,11 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
 import { stateAuditStatus, stateRuntimeLaunchStatus } from './stateAudit.ts';
+import {
+  isMeaningfulDirectoryEmail,
+  isMeaningfulDirectoryPhone,
+  isMeaningfulDirectoryWebsite,
+  isSyntheticDirectoryUrl,
+} from './directoryFoundation.ts';
 
 /**
  * PUBLIC_RENDERABLE_STATE_IDS defines all states that the application can render in the UI
@@ -93,22 +99,41 @@ export const HIGH_FIDELITY_COUNTY_DIAGNOSIS_COUNTIES_BY_STATE = {
 const PUBLIC_VERIFICATION_STATUSES = new Set(['official_verified', 'verified', 'human_verified', 'source_listed']);
 const FALLBACK_DATA_ORIGINS = new Set(['programmatic_fallback', 'generated_county_fallback']);
 const SYNTHETIC_SOURCE_HOST_PATTERNS = [
-  /^www\.advocate\./,
-  /^www\.therapy\./,
-  /^www\.legal\./,
-  /^www\.pediatrictherapy\./,
-  /^[a-z]{2}-pa\.org$/,
+  /^example\.(com|org|net)$/i,
+  /^www\.example\.(com|org|net)$/i,
+  /^state\.gov$/i,
+  /^www\.state\.gov$/i,
+  /^localhost$/i,
+  /^127\.0\.0\.1$/i,
+  /^0\.0\.0\.0$/i,
+  /^ablefull\.org$/i,
+  /^www\.ablefull\.org$/i,
+  /^www\.advocate\./i,
+  /^www\.therapy\./i,
+  /^www\.legal\./i,
+  /^www\.pediatrictherapy\./i,
+  /^[a-z]{2}-pa\.org$/i,
 ] as const;
 
 type PublicRecordLike = {
   id?: string | null;
+  name?: string | null;
+  office_name?: string | null;
+  program_id?: string | null;
+  display_status?: string | null;
   source_url?: string | null;
   website?: string | null;
+  next_step_url?: string | null;
+  application_url?: string | null;
+  referral_url?: string | null;
   phone?: string | null;
   email?: string | null;
   intake_phone?: string | null;
   spec_ed_contact_phone?: string | null;
   spec_ed_contact_email?: string | null;
+  next_step_phone?: string | null;
+  next_step_email?: string | null;
+  source_type?: string | null;
   verification_status?: string | null;
   data_origin?: string | null;
   last_verified_date?: string | null;
@@ -126,6 +151,16 @@ type CountyDetailsLike = {
   regionalCenters?: PublicRecordLike[];
   selpas?: PublicRecordLike[];
 };
+
+function hasSyntheticSourceHost(url?: string | null): boolean {
+  if (!url) return false;
+  try {
+    const parsed = new URL(url);
+    return SYNTHETIC_SOURCE_HOST_PATTERNS.some((pattern) => pattern.test(parsed.hostname));
+  } catch {
+    return true;
+  }
+}
 
 export function isIndexableState(stateId: string): boolean {
   const status = stateAuditStatus(stateId);
@@ -147,9 +182,9 @@ export function hasPublicContactSignal(record?: PublicRecordLike | null): boolea
   const email = record.email || record.spec_ed_contact_email || '';
   const website = record.website || '';
 
-  const hasPhone = Boolean(phone && !phone.includes('(555)'));
-  const hasEmail = Boolean(email && !email.endsWith('@example.com'));
-  const hasWebsite = Boolean(website);
+  const hasPhone = isMeaningfulDirectoryPhone(phone);
+  const hasEmail = isMeaningfulDirectoryEmail(email);
+  const hasWebsite = isMeaningfulDirectoryWebsite(website);
 
   return Boolean(
     hasPhone ||
@@ -158,12 +193,38 @@ export function hasPublicContactSignal(record?: PublicRecordLike | null): boolea
   );
 }
 
+function hasDirectPublicContactSignal(record?: PublicRecordLike | null): boolean {
+  if (!record) return false;
+  const phone = record.phone || record.intake_phone || record.spec_ed_contact_phone || '';
+  const email = record.email || record.spec_ed_contact_email || '';
+  return isMeaningfulDirectoryPhone(phone) || isMeaningfulDirectoryEmail(email);
+}
+
+function hasInvalidPublicContactField(record?: PublicRecordLike | null): boolean {
+  if (!record) return false;
+  const phone = record.phone || record.intake_phone || record.spec_ed_contact_phone || '';
+  const email = record.email || record.spec_ed_contact_email || '';
+  const website = record.website || '';
+  const nextStepPhone = record.next_step_phone || '';
+  const nextStepEmail = record.next_step_email || '';
+  const actionUrls = [record.next_step_url, record.application_url, record.referral_url].filter(Boolean) as string[];
+
+  if (phone && !isMeaningfulDirectoryPhone(phone)) return true;
+  if (email && !isMeaningfulDirectoryEmail(email)) return true;
+  if (website && !isMeaningfulDirectoryWebsite(website)) return true;
+  if (nextStepPhone && !isMeaningfulDirectoryPhone(nextStepPhone)) return true;
+  if (nextStepEmail && !isMeaningfulDirectoryEmail(nextStepEmail)) return true;
+  if (actionUrls.some((url) => isSyntheticDirectoryUrl(url))) return true;
+  return false;
+}
+
 export function hasPublicSourceUrl(record?: PublicRecordLike | null): boolean {
   if (!record?.source_url) return false;
+  if (hasSyntheticSourceHost(record.source_url)) return false;
 
   try {
     const url = new URL(record.source_url);
-    return !SYNTHETIC_SOURCE_HOST_PATTERNS.some((pattern) => pattern.test(url.hostname));
+    return !url.username && !url.password && !isSyntheticDirectoryUrl(record.source_url);
   } catch {
     return false;
   }
@@ -188,7 +249,7 @@ export function isLikelySyntheticPublicAdvocate(record?: PublicRecordLike | null
 
   const phone = record.phone || '';
   const email = record.email || '';
-  if ((phone && !phone.includes('(555)')) || email) return false;
+  if (isMeaningfulDirectoryPhone(phone) || isMeaningfulDirectoryEmail(email)) return false;
 
   if ((record.website || '').trim() !== 'https://www.cde.ca.gov/sp/se/') return false;
 
@@ -204,12 +265,43 @@ export function isPublicRecordEligible(record?: PublicRecordLike | null): boolea
   if (!record) return false;
 
   return (
+    (record.display_status || 'published') === 'published' &&
     !FALLBACK_DATA_ORIGINS.has(record.data_origin || '') &&
+    (record.data_origin || '') !== 'seed' &&
+    (record.data_origin || '') !== 'manual_seed' &&
+    (record.source_type || '') !== 'seed' &&
     !isLikelySyntheticPublicAdvocate(record) &&
+    !hasInvalidPublicContactField(record) &&
     isAcceptablePublicVerificationStatus(record.verification_status) &&
     hasPublicSourceUrl(record) &&
     hasPublicContactSignal(record)
   );
+}
+
+const COUNTY_OFFICE_STRONG_SIGNAL = /\b(ihss|in-?home supportive|social services?|human services?|health services?|health care services?|public social services?|medi-?cal|medicaid|children'?s services|ccs\b|child health)\b/i;
+const COUNTY_OFFICE_WEAK_AGING_ONLY_SIGNAL = /\b(aging services?|aging and adult services?|area agency on aging|older adults?|senior services?|senior center)\b/i;
+
+export function isPublicCountyOfficeEligible(record?: PublicRecordLike | null): boolean {
+  if (!isPublicRecordEligible(record)) return false;
+
+  const officeText = [
+    record?.office_name,
+    record?.name,
+    record?.source_url,
+    record?.website,
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+
+  const hasStrongOfficeSignal = COUNTY_OFFICE_STRONG_SIGNAL.test(officeText);
+  const hasWeakAgingOnlySignal = COUNTY_OFFICE_WEAK_AGING_ONLY_SIGNAL.test(officeText);
+
+  if (hasWeakAgingOnlySignal && !hasStrongOfficeSignal) {
+    return false;
+  }
+
+  return true;
 }
 
 export function isPublicDirectoryRecordEligible(record?: PublicRecordLike | null): boolean {
@@ -231,7 +323,11 @@ export function isHighFidelityCountyDiagnosisSurface(stateId: string, countyId: 
 }
 
 function hasRequiredCountyOffice(details: CountyDetailsLike, programId: string): boolean {
-  return (details.countyOffices || []).some((office) => office.program_id === programId && isPublicRecordEligible(office));
+  return (details.countyOffices || []).some((office) =>
+    office.program_id === programId &&
+    isPublicCountyOfficeEligible(office) &&
+    hasDirectPublicContactSignal(office)
+  );
 }
 
 export function getCountyTruthEligibility(stateId: string, countyDetails?: CountyDetailsLike | null) {
@@ -242,12 +338,18 @@ export function getCountyTruthEligibility(stateId: string, countyDetails?: Count
   }
 
   if (stateId === 'california') {
-    const hasRegionalCenter = (countyDetails.regionalCenters || []).some(isPublicRecordEligible);
-    const hasSelpa = (countyDetails.selpas || []).some(isPublicRecordEligible);
+    const hasRegionalCenter = (countyDetails.regionalCenters || []).some((record) =>
+      isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)
+    );
+    const hasSelpa = (countyDetails.selpas || []).some((record) =>
+      isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)
+    );
     const hasIhss = hasRequiredCountyOffice(countyDetails, 'ihss-for-children');
     const hasMediCal = hasRequiredCountyOffice(countyDetails, 'medi-cal-for-kids-and-teens');
     const hasCcs = hasRequiredCountyOffice(countyDetails, 'california-childrens-services');
-    const hasDistrict = (countyDetails.schoolDistricts || []).some(isPublicRecordEligible);
+    const hasDistrict = (countyDetails.schoolDistricts || []).some((record) =>
+      isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)
+    );
 
     if (!hasRegionalCenter) blockers.push('missing_public_regional_center');
     if (!hasSelpa) blockers.push('missing_public_selpa');
@@ -266,10 +368,10 @@ export function getCountyTruthEligibility(stateId: string, countyDetails?: Count
   }
 
   const hasAnyPublicRecord =
-    (countyDetails.regionalCenters || []).some(isPublicRecordEligible) ||
-    (countyDetails.selpas || []).some(isPublicRecordEligible) ||
-    (countyDetails.countyOffices || []).some(isPublicRecordEligible) ||
-    (countyDetails.schoolDistricts || []).some(isPublicRecordEligible) ||
+    (countyDetails.regionalCenters || []).some((record) => isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)) ||
+    (countyDetails.selpas || []).some((record) => isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)) ||
+    (countyDetails.countyOffices || []).some((record) => isPublicCountyOfficeEligible(record) && hasDirectPublicContactSignal(record)) ||
+    (countyDetails.schoolDistricts || []).some((record) => isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)) ||
     (countyDetails.localOrganizations || []).some(isPublicDirectoryRecordEligible);
 
   if (!hasAnyPublicRecord) {

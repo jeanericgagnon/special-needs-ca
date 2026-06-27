@@ -90,55 +90,84 @@ export default async function ProgramPage({ params }: Props) {
 
   const stateData = program.state_id ? await getStateByIdOrCode(program.state_id) : null;
   const stateName = stateData ? stateData.name : 'California';
-  const stateCode = stateData ? stateData.code : 'CA';
+  const hasVerifiedSource = Boolean(program.source_url);
+  const hasTargetDemographic = Boolean(program.target_demographic?.trim());
+  const hasDiagnosisSignal = Boolean(program.diagnosis_required?.trim());
+  const hasAgeRange = Number.isFinite(program.age_limit_min) || Number.isFinite(program.age_limit_max);
+  const incomeSummary = program.income_limit?.trim() ? program.income_limit.trim() : null;
+  const verificationStatus = program.verification_status || 'source_listed';
+  const sourceLabel = program.source_type
+    ? program.source_type.replace(/_/g, ' ')
+    : 'program source';
+  const officialSources = program.source_url
+    ? [
+        {
+          name: `${stateName} program source`,
+          url: program.source_url,
+          sourceType: sourceLabel,
+          confidenceScore: program.confidence_score ?? null,
+          verificationStatus,
+          lastReviewedDate: program.last_verified_date || program.last_scraped_at || null
+        }
+      ]
+    : [];
 
   // Construct dynamic SEOPageData on the fly
   const dynamicData = {
     slug: slug,
     category: 'programs' as const,
     title: `${program.program_name} ${stateName} Guide`,
-    metaTitle: `${program.program_name} | ${stateName} Eligibility & Application`,
-    metaDescription: `Find out if you qualify for ${program.program_name} in ${stateName}. Learn about income limits, age rules, and required evidence.`,
-    quickAnswer: `The ${program.program_name} is a ${stateName} program targeting ${program.target_demographic}. It has an age limit of ${program.age_limit_min} to ${program.age_limit_max} years. The income requirement is stated as: ${program.income_limit || 'None specified'}.`,
+    metaTitle: `${program.program_name} | ${stateName} program guide`,
+    metaDescription: `Review source-backed notes, eligibility signals, and next-step guidance for ${program.program_name} in ${stateName}.`,
+    quickAnswer: hasVerifiedSource
+      ? `This page summarizes the currently saved public source for ${program.program_name} in ${stateName}. Eligibility, age rules, and income details may change, so confirm them against the linked source before you act.`
+      : `We have a program record for ${program.program_name} in ${stateName}, but we are still verifying the public source details before treating this page as authoritative guidance.`,
     tldrPoints: [
-      { label: 'Demographic', value: program.target_demographic },
-      { label: 'Age Range', value: `${program.age_limit_min} - ${program.age_limit_max} yrs` },
-      { label: 'Income Limit', value: program.income_limit || 'None' },
+      { label: 'Audience', value: hasTargetDemographic ? program.target_demographic : 'Still being verified' },
+      { label: 'Age Range', value: hasAgeRange ? `${program.age_limit_min} - ${program.age_limit_max} yrs` : 'Still being verified' },
+      { label: 'Income Rule', value: incomeSummary || 'Check the source link' },
       { label: 'County Specific', value: program.county_specific || 'Statewide' }
     ],
-    whenThisMatters: `When seeking assistance under ${program.program_name} for a child falling within the target demographic.`,
+    whenThisMatters: `Use this page when you want a starting point for ${program.program_name} in ${stateName}, then confirm the final rules, forms, deadlines, and local routing through the linked public source.`,
     signsThisMayApply: [
-      `Child is between ${program.age_limit_min} and ${program.age_limit_max} years of age.`,
-      `Meets the stated demographic criteria: ${program.target_demographic}.`,
-      `Meets the specified conditions and diagnoses: ${program.diagnosis_required || 'Any documented disability'}.`
+      hasAgeRange ? `The published eligibility notes reference ages ${program.age_limit_min} through ${program.age_limit_max}.` : 'The published source may include age or stage-based eligibility rules.',
+      hasTargetDemographic ? `The source describes the program as serving: ${program.target_demographic}.` : 'The source describes a target audience, diagnosis group, or support need that may fit your family.',
+      hasDiagnosisSignal ? `The saved qualification notes mention: ${program.diagnosis_required}.` : 'You have a diagnosis, disability, or need that may match the program, but the public criteria still need verification.'
     ],
     whatToDoFirst: [
-      'Locate your local county office or coordinator.',
-      'Gather medical proof of diagnosis.',
-      'Check current income deeming requirements.',
-      'Submit the initial application.'
+      'Open the linked public source and confirm the program is still active.',
+      'Write down any eligibility rules, deadlines, and required forms shown on the source.',
+      'Gather diagnosis, identity, insurance, or school records that the source says are needed.',
+      'Use the linked office, intake, or application route from the source before you submit anything.'
     ],
     documentsToGather: [
-      { name: 'Pediatric medical certification', description: 'Confirming developmental diagnosis.' },
-      { name: 'Proof of residency', description: `${stateName} driver license, utility bill, or equivalent.` }
+      { name: 'Identity and residency records', description: `Keep your current ${stateName} identity and address records ready if the official source asks for them.` },
+      { name: 'Diagnosis or eligibility records', description: 'Bring the medical, educational, or functional documentation named on the public source.' }
     ],
-    whoToCall: stateName === 'California' ? [
-      { name: 'California DHCS Office', number: '(916) 440-7400', description: 'Department of Health Care Services administrative office.' }
-    ] : [
-      { name: `${stateName} Health and Human Services`, number: '2-1-1', description: 'State benefits information and local resource referral.' }
-    ],
-    whatToSay: `I am calling to check eligibility for my child for the ${program.program_name}.`,
+    whoToCall: hasVerifiedSource
+      ? [
+          {
+            name: `${stateName} program contact`,
+            description: 'Use the phone number, office, or intake route listed on the linked public source.'
+          }
+        ]
+      : [
+          {
+            name: `${stateName} program source`,
+            description: 'We are still verifying the public contact route for this program. Open the source link first before relying on this page.'
+          }
+        ],
+    whatToSay: `I am trying to confirm whether ${program.program_name} is the right fit for my family, what the current eligibility rules are, and which application steps or forms you want me to use.`,
     commonMistakes: [
-      'Assuming you do not qualify before submitting an application.',
-      'Submitting incomplete clinical reports or missing signatures.'
+      'Relying on this summary without opening the linked source and checking the current rules.',
+      'Assuming a statewide page automatically handles local intake, deadlines, or county routing.',
+      'Submitting paperwork before confirming which forms and signatures the public source requires today.'
     ],
     relatedGuides: [
       { title: 'Guides & Resources Index', url: '/benefits' }
     ],
-    officialSources: (program.source_url ? [
-      { name: `${stateName} State Program Portal`, url: program.source_url }
-    ] : []),
-    lastReviewedDate: program.last_verified_date || '',
+    officialSources,
+    lastReviewedDate: program.last_verified_date || program.last_scraped_at || '',
     callScriptTemplate: {
       intro: 'General Intake Call Script',
       script: `Hello, I am calling to apply for the ${program.program_name} on behalf of my child, [Child Name], who has [Diagnosis] and is [Age] years old. Please guide me through the intake and application steps.`,

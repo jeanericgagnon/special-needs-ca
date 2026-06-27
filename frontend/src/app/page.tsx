@@ -4,13 +4,44 @@ import { cookies } from 'next/headers';
 import { verifyToken } from '@/lib/auth';
 import Link from 'next/link';
 import { LayoutDashboard } from 'lucide-react';
+import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 
 import { DIAGNOSES } from '@/lib/diagnoses';
 import { Metadata } from 'next';
 
+const LAST_REVIEWED_DATE = '2026-06-27';
+const SOURCE_CONFIDENCE = 0.95;
+
+const HOMEPAGE_SOURCES = [
+  {
+    name: 'Medicaid.gov program and eligibility information',
+    url: 'https://www.medicaid.gov/',
+    verificationStatus: 'official_verified',
+    lastReviewedDate: LAST_REVIEWED_DATE,
+    sourceType: 'official_federal',
+    confidenceScore: SOURCE_CONFIDENCE,
+  },
+  {
+    name: 'Social Security Administration SSI for children',
+    url: 'https://www.ssa.gov/ssi/text-child-ussi.htm',
+    verificationStatus: 'official_verified',
+    lastReviewedDate: LAST_REVIEWED_DATE,
+    sourceType: 'official_federal',
+    confidenceScore: SOURCE_CONFIDENCE,
+  },
+  {
+    name: 'U.S. Department of Education IDEA information',
+    url: 'https://sites.ed.gov/idea/',
+    verificationStatus: 'official_verified',
+    lastReviewedDate: LAST_REVIEWED_DATE,
+    sourceType: 'official_federal',
+    confidenceScore: SOURCE_CONFIDENCE,
+  },
+];
+
 export const metadata: Metadata = {
-  title: 'Ablefull — 50-State Disability Benefits Guide',
-  description: 'Find disability benefits, waiver programs, IEP advocacy, and early intervention resources for your child — across all 50 states.',
+  title: 'Ablefull — Source-Backed Disability Benefits & Family Action Guides',
+  description: 'Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps. California currently has the deepest public launch coverage, while other states may be launch-ready, partial, or gated.',
   alternates: {
     canonical: '/'
   }
@@ -39,6 +70,15 @@ export default async function Home() {
         </div>
       )}
       <WizardClient counties={counties} diagnosesList={DIAGNOSES} waitlists={waitlists} />
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem 3rem 1.5rem' }}>
+        <SourceFreshnessDisclosure
+          sources={HOMEPAGE_SOURCES}
+          correctionSuggestionType="other"
+          correctionTargetId="homepage-action-engine"
+          correctionTargetName="Ablefull homepage"
+          correctionButtonLabel="Report a homepage source issue"
+        />
+      </div>
     </>
   );
 }

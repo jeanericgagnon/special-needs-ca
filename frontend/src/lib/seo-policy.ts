@@ -1,5 +1,4 @@
 import { createRequire } from 'module';
-import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
 import { isAllowlistedStaticPath, isHardBlockedSitemapRoute, isStaticGuidePath, normalizeManifestPath } from './seoRouteManifest.ts';
 import {
   getEligibleStatesFromAudit,
@@ -7,6 +6,7 @@ import {
   stateGapReason as readStateGapReason,
   stateRuntimeLaunchStatus as readStateRuntimeLaunchStatus,
 } from './stateAudit.ts';
+import { CANONICAL_SITE_URL } from './site-url.ts';
 
 const nodeRequire = typeof window === 'undefined' ? createRequire(import.meta.url) : null;
 
@@ -210,6 +210,8 @@ export function hasOfficialProgramSource(url: string | null | undefined): boolea
     lowered === 'https://www.ablefull.org' ||
     lowered === 'https://ablefull.org' ||
     lowered.includes('example.com') ||
+    lowered.includes('example.org') ||
+    lowered.includes('example.net') ||
     lowered.includes('state.gov') ||
     lowered.startsWith('#')
   ) {
@@ -577,7 +579,7 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
   });
 
   const shouldIndex = blockers.length === 0 && (input.routeType === 'static-page' || qualityScore >= 50);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const baseUrl = CANONICAL_SITE_URL;
   const canonicalUrl = `${baseUrl}${canonicalPath}`;
 
   let verificationState: 'official-verified' | 'human-reviewed' | 'crawler-verified' | 'unverified' = 'unverified';
@@ -762,7 +764,7 @@ export function getSeoPolicyForRoute(
     path: normalizedPath
   }, dbData?.programStateId || null);
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const baseUrl = CANONICAL_SITE_URL;
   const canonicalUrl = `${baseUrl}${canonicalPath}`;
   const isIndexable = blockers.length === 0 && result.index;
 

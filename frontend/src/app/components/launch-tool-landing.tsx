@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import SourceFreshnessDisclosure, { type DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
-import ContributionModal from '@/components/contribution-modal';
 
 type LaunchToolLandingProps = {
   eyebrow: string;
@@ -104,16 +103,13 @@ export default function LaunchToolLanding({
           <p style={{ margin: 0, lineHeight: 1.6, color: '#92400e' }}>{disclaimer}</p>
         </section>
 
-        <SourceFreshnessDisclosure sources={sources} />
-
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <ContributionModal
-            suggestionType={correctionSuggestionType}
-            targetId={null}
-            targetName={title}
-            buttonLabel="Report a correction"
-          />
-        </div>
+        <SourceFreshnessDisclosure
+          sources={sources}
+          correctionSuggestionType={correctionSuggestionType}
+          correctionTargetId={title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}
+          correctionTargetName={title}
+          correctionButtonLabel="Report a correction"
+        />
       </div>
     </main>
   );

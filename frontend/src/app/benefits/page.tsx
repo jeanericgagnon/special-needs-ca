@@ -33,9 +33,9 @@ export default function BenefitsPage() {
     <LaunchToolLanding
       eyebrow="Benefits matcher"
       title="Find benefits, forms, and next steps by diagnosis, age, county, and need"
-      description="Ablefull’s public benefits hub is designed to help families move from a child’s diagnosis and needs into source-backed Medicaid, waiver, school, and early-intervention paths. The private workflow is for saving progress, but the public matcher and guides should help you understand the official lanes first."
+      description="Ablefull’s public benefits hub is designed to help families move from a child’s diagnosis and needs into source-backed Medicaid, waiver, school, and early-intervention paths. The private workflow is for saving progress, but the public matcher and guides should help you understand the current public agency routes first."
       bullets={[
-        'Start with state and county routing so you know which official DD, Medicaid, education, or early-intervention system owns the next step.',
+        'Start with state and county routing so you know which public DD, Medicaid, education, or early-intervention system currently owns the next step.',
         'Use source-backed program guides to compare eligibility rules, document requirements, application steps, and appeal paths before acting.',
         'Open the private workflow only when you want to save a plan, keep evidence checklists, or track deadlines across multiple programs.',
       ]}
