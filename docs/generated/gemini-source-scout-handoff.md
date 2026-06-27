@@ -16,8 +16,8 @@ Alabama, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia
 - Maine: `bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract`
 - New Hampshire: `bounded_2026_06_26_live_recheck_confirms_nh_dhhs_doe_and_nhes_host_families_and_robots_all_return_403_while_federal_idea_page_remains_live`
 
-## Current Focus State: Alaska
+## Current Focus State: Arizona
 
 ### Blocker Reason
 
-`county_local_disability_resources` is still the sole Alaska blocker. The exact official DPA offices page is browser-readable again and truthfully proves only regional office groupings, while the wider health-host raw lane still returns public Cloudflare 403 shells on related DPA leaves and PDFs. DFCS successor content still exposes only statewide or wrong-role content, and the extra DAPH branch surfaced from the live DFCS Site Map still resolves to Alaska Pioneer Homes services and payment-assistance pages rather than any borough- or census-area public-assistance office contract.
+`county_local_disability_resources` is still the sole Arizona blocker. The live official DES helper now proves explicit office county fields for only 11 counties total, and no reviewed DES or AHCCCS artifact explicitly assigns Greenlee, La Paz, Mohave, or Yuma County to an office. The Salesforce locator still preserves some ZIP-locality coverage, but not a county-to-office contract.

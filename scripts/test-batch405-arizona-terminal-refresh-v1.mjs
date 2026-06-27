@@ -33,7 +33,7 @@ assert.equal(summary.primary_gap_reason, 'bounded_2026_06_26_live_des_in_page_he
 const countyGap = readJsonl('data/generated/arizona_gap_matrix_v2.jsonl').find((row) => row.family === 'county_local_disability_resources');
 assert.equal(countyGap.family_status, 'blocked_live_des_helper_only_proves_11_explicit_counties_with_no_greenlee_la_paz_mohave_or_yuma_assignment');
 assert.match(countyGap.status_reason, /Reviewed 2026-06-26/i);
-assert.match(countyGap.status_reason, /public wrapper roots .* still stay challenge-blocked/i);
+assert.match(countyGap.status_reason, /public wrapper roots .* browser-readable again/i);
 assert.match(countyGap.status_reason, /LoadSvcDropDown.*xrefSvcCodeJSON.*geoSearchRadius/i);
 assert.match(countyGap.status_reason, /only 11 counties overall/i);
 assert.match(countyGap.status_reason, /No reviewed live helper result .* Greenlee.*La Paz.*Mohave.*Yuma/i);
@@ -55,7 +55,9 @@ const queueRow = queueRows.find((row) => row.state === 'arizona');
 assert.equal(queueRow.primary_gap_reason, 'bounded_2026_06_26_live_des_in_page_helper_confirms_only_11_explicit_counties_and_no_literal_greenlee_la_paz_mohave_or_yuma_assignment');
 
 const batchSummary = readJson('data/generated/batch405_arizona_terminal_refresh_summary_v1.json');
-assert.equal(batchSummary.des_wrapper_403, true);
+assert.equal(batchSummary.des_wrapper_403, false);
+assert.equal(batchSummary.des_wrapper_roots_browser_readable, true);
+assert.equal(batchSummary.des_wrapper_shell_only, true);
 assert.equal(batchSummary.des_salesforce_live, true);
 assert.equal(batchSummary.des_explicit_county_total, 11);
 assert.equal(batchSummary.altcs_locations_live, true);
@@ -74,6 +76,7 @@ assert.equal(auditRow.packetPrimaryGapReason, 'bounded_2026_06_26_live_des_in_pa
 const allStateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/all-state-california-grade-audit-report-v3.md'), 'utf8');
 assert.match(allStateReport, /Arizona remains blocked after a 2026-06-26 bounded live recheck/i);
 assert.match(allStateReport, /Greenlee, La Paz, Mohave, or Yuma County/i);
+assert.match(allStateReport, /wrapper roots are browser-readable again/i);
 
 const handoff = fs.readFileSync(path.join(repoRoot, 'docs/generated/gemini-source-scout-handoff.md'), 'utf8');
 assert.match(handoff, /Current Focus State: Arizona/);
