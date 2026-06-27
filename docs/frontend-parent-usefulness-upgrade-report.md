@@ -32,4 +32,4 @@ In the county detail page hero block, we render structured parent-first guidelin
 2. **"If your child is under 3":** Directs parents to their local ECI contractor (Texas), Early Steps (Florida), or local MH/ID county intakes (Pennsylvania) for early intervention therapies.
 3. **"If you need waiver/DD services":** Directs parents to their local LIDDA (Texas), APD Area Office (Florida), or Regional Center (California) for developmental waiver interest lists.
 4. **"If this is about school/IEP":** Directs parents to the local school district student services contact list.
-5. **Caregiver Wage Calculator:** Outlines local caregiver wage estimates (e.g., $18.00/hr in California, $15.00/hr in Texas) and links to the CDS options.
+5. **Caregiver Wage Calculator:** Outlines local caregiver pay estimates using the shared disclosure helper, including source URL, last-checked date, fallback guidance, and an estimate-only warning rather than a hardcoded statewide default.

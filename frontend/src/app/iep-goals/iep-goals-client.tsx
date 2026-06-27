@@ -150,7 +150,7 @@ Submitted By: Parent / Legal Guardian
 
 --------------------------------------------------
 LEGAL CITATION REFERENCE (CALIFORNIA):
-Under California Education Code Section 56341.1(a)(1), the IEP team is legally mandated to consider the concerns of the parent for enhancing the education of their child. The parent has the absolute right to have their input statement incorporated in full under Section A (Parent Concerns) of the student&apos;s IEP document.
+Under California Education Code Section 56341.1(a)(1), the IEP team is required to consider parent concerns when developing the IEP. Parents can ask that their statement be attached or reflected in the IEP record, subject to current district documentation practices.
 --------------------------------------------------
 
 1. STUDENT STRENGTHS, MOTIVATORS & PERSONAL INTERESTS:
@@ -657,7 +657,7 @@ Parent / Legal Guardian`;
                 Draft Parent Input Concerns
               </h2>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }}>
-                Drafting your parent concerns in advance ensures they are incorporated in full in Section A (Parent Concerns) of the student&apos;s IEP document. Under California Ed Code § 56341.1, the IEP team must legally consider your input.
+                Drafting your parent concerns in advance can make it easier to present them clearly in Section A (Parent Concerns) of the student&apos;s IEP document. Under California Ed Code § 56341.1, the IEP team must consider parent input, but families should still confirm how the district records that input in practice.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -791,7 +791,7 @@ Parent / Legal Guardian`;
                 💡 California Ed Code Tip
               </h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
-                You have the absolute right to have your comments documented exactly as written. The school district cannot censor, edit, or summarize your written concerns.
+                You can ask the district to attach or accurately reflect your written concerns in the IEP record. How the statement is incorporated can vary by district procedure, so keep a copy of what you submitted.
               </p>
             </div>
           </div>
@@ -887,7 +887,7 @@ Parent / Legal Guardian`;
                 Legal Authority Reference
               </h3>
               <p style={{ fontSize: '9.5pt', color: '#555', lineHeight: '1.4', margin: 0 }}>
-                Under federal IDEA law (20 U.S.C. § 1414(d)(3)(A)(ii)) and corresponding state education codes, the IEP team is legally mandated to consider the concerns of the parent for enhancing the education of their child. The parent has the right to have their input statement incorporated in the student&apos;s IEP document.
+                Under federal IDEA law (20 U.S.C. § 1414(d)(3)(A)(ii)) and corresponding state education codes, the IEP team is required to consider parent concerns when developing the student&apos;s IEP. Families can ask that their written input be attached or summarized in the record under current district procedures.
               </p>
             </div>
 

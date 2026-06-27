@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { stateConfigs } from '@/lib/stateConfigs';
 import { DirectoryFoundationSnapshot } from '@/lib/db';
+import SourceFreshnessDisclosure, { type DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
 import {
   getDirectoryFieldCoverage,
   getDirectoryAvailabilityDisplayLabel,
@@ -40,11 +41,44 @@ type FindHelpClientProps = {
   foundationSnapshot: DirectoryFoundationSnapshot;
 };
 
+const FIND_HELP_CORE_SOURCES: DisclosureSource[] = [
+  {
+    name: 'California Department of Developmental Services regional center information',
+    url: 'https://www.dds.ca.gov/rc/',
+    verificationStatus: 'official_verified',
+    sourceType: 'official_state',
+  },
+  {
+    name: 'California Department of Education special education information',
+    url: 'https://www.cde.ca.gov/sp/se/',
+    verificationStatus: 'official_verified',
+    sourceType: 'official_state',
+  },
+  {
+    name: 'California Department of Social Services IHSS program information',
+    url: 'https://www.cdss.ca.gov/in-home-supportive-services',
+    verificationStatus: 'official_verified',
+    sourceType: 'official_state',
+  },
+  {
+    name: 'California Department of Health Care Services Medi-Cal for Kids & Teens',
+    url: 'https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/Children.aspx',
+    verificationStatus: 'official_verified',
+    sourceType: 'official_state',
+  },
+];
+
 function formatTag(tag: string) {
   return tag
     .replace(/_/g, ' ')
     .replace(/-/g, ' ')
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function getRecordReviewedDate(record: DirectoryFoundationSnapshot['samples']['providers'][number] | DirectoryFoundationSnapshot['samples']['nonprofits'][number] | DirectoryFoundationSnapshot['samples']['advocates'][number]) {
+  const lastVerifiedAt = 'last_verified_at' in record ? record.last_verified_at : null;
+  const checkedAt = 'checked_at' in record ? record.checked_at : null;
+  return record.last_verified_date || lastVerifiedAt || record.last_scraped_at || checkedAt || null;
 }
 
 export default function FindHelpClient({ foundationSnapshot }: FindHelpClientProps) {
@@ -94,7 +128,7 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
       title: 'IEP Advocates & Attorneys',
       category: 'IEP & Education',
       icon: <UserCheck size={24} color="#2563eb" />,
-      description: `Browse the county-mapped directories of special education advocates and special needs attorneys in ${stateConfig.name} to help secure school accommodations.`,
+      description: `Browse the county-mapped directories of special education advocates and disability-focused attorneys in ${stateConfig.name} to help prepare school accommodation requests.`,
       href: '/advocates',
       actionText: 'Find Advocates'
     },
@@ -152,7 +186,9 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
       title: 'State Benefits Forms Database',
       category: 'Benefits',
       icon: <FileText size={24} color="#0f766e" />,
-      description: `Download official state agency PDF application forms and parent request templates for ${stateConfig.medicaidName}, ECI, and state appeals.`,
+      description: stateConfig.code === 'CA'
+        ? `Review source-backed California forms, state portal PDFs, and parent request templates tied to ${stateConfig.medicaidName}, early intervention, and appeal workflows.`
+        : `Review the current verification-hold forms hub for ${stateConfig.name}. We only publish a full public forms directory after we confirm source URLs, signer requirements, and submission routes from the publishing agency.`,
       href: `/forms?state=${stateId}`,
       actionText: 'Get State Forms'
     },
@@ -160,7 +196,9 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
       title: 'County Resources Directory',
       category: 'County Resources',
       icon: <MapPin size={24} color="#db2777" />,
-      description: `Locate local ${stateConfig.catchmentName} intake offices, health departments, and school district special education contacts in ${stateConfig.name}'s counties.`,
+      description: stateConfig.code === 'CA'
+        ? `Locate source-backed county intake offices, school district routing, and local disability support contacts across ${stateConfig.name}.`
+        : `Open the county directory surface for ${stateConfig.name}. Some states still keep county pages gated while local office, district, or routing evidence is being reverified.`,
       href: `/counties/${stateId}`,
       actionText: 'Explore Counties'
     }
@@ -203,6 +241,27 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
       .filter(Boolean)
       .some((value) => String(value).toLowerCase().includes(trimmedHubSearchQuery));
   });
+
+  const disclosureSources: DisclosureSource[] = Array.from(
+    new Map(
+      [
+        ...FIND_HELP_CORE_SOURCES.map((source) => [`${source.url}|${source.name}`, source] as const),
+        ...sampleRecords
+          .filter(({ record }) => Boolean(record.source_url))
+          .map(({ kind, record }) => [
+            `${record.source_url}|${record.name}`,
+            {
+              name: `${kind}: ${record.name}`,
+              url: record.source_url || undefined,
+              lastReviewedDate: getRecordReviewedDate(record),
+              verificationStatus: record.verification_status || 'unverified',
+              sourceType: record.source_type || record.data_origin || 'directory_record',
+              confidenceScore: typeof record.confidence_score === 'number' ? record.confidence_score : null,
+            } satisfies DisclosureSource,
+          ] as const),
+      ]
+    ).values()
+  ).slice(0, 8);
 
   const hubSearchResultCount = filteredTools.length + filteredSampleRecords.length;
 
@@ -263,7 +322,7 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
           Parent Support & Tools Hub
         </h1>
         <p style={{ fontSize: '1.25rem', color: 'var(--text-light)', maxWidth: '750px', margin: '0 auto', lineHeight: '1.6' }}>
-          Avoid denials, calculate timelines, and search national advocate lists. Personalize descriptions and local directories using the state selector below.
+          Review source-backed tools, timeline helpers, and structured directory examples. Local directory depth still varies by state and county, so confirm details against the cited source before relying on them.
         </p>
       </div>
 
@@ -369,7 +428,7 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
           <h2 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>Select Your State Context</h2>
           <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', margin: 0 }}>
-            Adapts all tools below with local state agencies, timelines, and forms.
+            Updates labels and guidance below using the currently published state agencies, timelines, and forms.
           </p>
         </div>
         
@@ -639,6 +698,14 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
           })}
         </div>
       </section>
+
+      <SourceFreshnessDisclosure
+        sources={disclosureSources}
+        correctionSuggestionType="other"
+        correctionTargetId={`find-help-${stateId}`}
+        correctionTargetName={`${stateConfig.name} find help hub`}
+        correctionButtonLabel="Report a directory or source issue"
+      />
 
       {/* Grid of Dynamic Cards */}
       <div 

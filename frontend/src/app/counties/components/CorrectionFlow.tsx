@@ -8,6 +8,8 @@ interface TrustBadgeProps {
   status?: string | null;
   lastVerifiedDate?: string | null;
   sourceUrl?: string | null;
+  sourceType?: string | null;
+  confidenceScore?: number | null;
   entityId: string;
   entityName: string;
   entityType: string;
@@ -17,6 +19,8 @@ export function TrustBadge({
   status,
   lastVerifiedDate,
   sourceUrl,
+  sourceType,
+  confidenceScore,
   entityId,
   entityName,
   entityType
@@ -46,16 +50,25 @@ export function TrustBadge({
   let badgeIcon = <HelpCircle size={14} color="#64748b" />;
 
   const normStatus = (status || '').toLowerCase().trim();
+  const hasReviewableSource = Boolean(String(sourceUrl || '').trim());
+  const normSourceType = String(sourceType || '').toLowerCase().trim();
+  const isOfficialSourceType = normSourceType.startsWith('official');
 
-  if (normStatus === 'official_verified' || normStatus === 'human_verified' || normStatus === 'verified') {
+  if (hasReviewableSource && (normStatus === 'official_verified' || normStatus === 'human_verified' || normStatus === 'verified')) {
     badgeColor = '#0f766e'; // Teal
     badgeBg = 'rgba(15, 118, 110, 0.08)';
-    badgeLabel = entityType === 'advocate' ? 'Verified Professional Listing' : 'Verified official contact';
+    badgeLabel = entityType === 'advocate'
+      ? 'Source-backed professional listing — confirm fit and credentials locally'
+      : isOfficialSourceType
+      ? 'Source-backed official contact'
+      : 'Source-backed contact listing';
     badgeIcon = <ShieldCheck size={14} color="#0f766e" />;
-  } else if (normStatus === 'source_listed') {
+  } else if (hasReviewableSource && normStatus === 'source_listed') {
     badgeColor = '#3b82f6'; // Blue
     badgeBg = 'rgba(59, 130, 246, 0.08)';
-    badgeLabel = 'Source-listed, not human verified';
+    badgeLabel = isOfficialSourceType
+      ? 'Official source linked, not human verified'
+      : 'Public source linked, not human verified';
     badgeIcon = <Shield size={14} color="#3b82f6" />;
   } else if (normStatus === 'generated_county_fallback') {
     badgeColor = '#d97706'; // Amber
@@ -68,6 +81,14 @@ export function TrustBadge({
     badgeLabel = 'Stale — Needs verification review';
     badgeIcon = <ShieldAlert size={14} color="#ef4444" />;
   }
+
+  const normalizedSourceType = String(sourceType || '').trim();
+  const sourceTypeLabel = normalizedSourceType
+    ? normalizedSourceType.replace(/_/g, ' ')
+    : '';
+  const confidenceLabel = typeof confidenceScore === 'number' && Number.isFinite(confidenceScore)
+    ? `${Math.round(confidenceScore * 100)}% confidence`
+    : null;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginTop: '0.4rem', marginBottom: '0.4rem' }}>
@@ -130,9 +151,14 @@ export function TrustBadge({
       </div>
 
       {/* Date reviewed */}
-      <span style={{ fontSize: '0.72rem', color: 'var(--text-light)' }}>
-        Last reviewed: {dateText}
-      </span>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', fontSize: '0.72rem', color: 'var(--text-light)' }}>
+        <span>Last reviewed: {dateText}</span>
+        {(sourceTypeLabel || confidenceLabel) && (
+          <span>
+            {[sourceTypeLabel ? `Source type: ${sourceTypeLabel}` : null, confidenceLabel].filter(Boolean).join(' • ')}
+          </span>
+        )}
+      </div>
 
       {/* Suggestion Modal overlay */}
       {isOpen && (
@@ -255,7 +281,7 @@ export function SuggestionModal({
         </div>
 
         <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
-          Help us maintain the accuracy of resources for <strong>{entityName}</strong>. Submissions are reviewed by special needs resource coordinators.
+          Help us maintain the accuracy of resources for <strong>{entityName}</strong>. Submissions are reviewed against public source evidence before we update what appears on the site.
         </p>
 
         {message && (

@@ -1,6 +1,6 @@
 import { getProgramsForDiagnosis, getCountyDetails, getIepAdvocates, getStateByIdOrCode, CountyOffice, SchoolDistrict, IepAdvocate, NonprofitOrganization } from '@/lib/db';
 import { Metadata } from 'next';
-import { CheckCircle2, MapPin, Activity, Phone, Globe, Landmark, ShieldCheck, FileCheck, Mail, Award } from 'lucide-react';
+import { CheckCircle2, MapPin, Activity, Phone, Globe, Landmark, ShieldCheck, FileCheck, Award } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CopyButton from '@/components/copy-button';
@@ -18,6 +18,33 @@ import { evaluateSeoPolicy, normalizeConfidenceScore, assertNoPlaceholderData } 
 type Props = {
   params: Promise<{ state: string; diagnosis: string; county: string }>;
 };
+
+function LocalVerificationNotice({
+  label,
+  countyName,
+  suggestionType = 'other',
+}: {
+  label: string;
+  countyName: string;
+  suggestionType?: 'other' | 'district' | 'program';
+}) {
+  const targetId = `${countyName}-${label}`.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  return (
+    <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: 1.6, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+      <p style={{ margin: 0 }}>
+        We are still verifying local entries for {label} in {countyName} County before showing them publicly.
+      </p>
+      <div>
+        <ContributionModal
+          suggestionType={suggestionType}
+          targetId={targetId}
+          targetName={`${countyName} County ${label}`}
+          buttonLabel="Suggest a local source to review"
+        />
+      </div>
+    </div>
+  );
+}
 
 // Formatting helpers
 function formatParam(val: string): string {
@@ -76,8 +103,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canIndex = truth.indexSafe && policy.index;
 
   return {
-    title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
-    description: `Access ${stateName} state support, ${config.catchmentName} intake, ${config.personalCareProgram} caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
+    title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode}`,
+    description: `Access ${stateName} state support, ${config.catchmentName} intake, ${config.personalCareProgram} pay estimates, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
     alternates: {
       canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
     },
@@ -160,18 +187,22 @@ export default async function SEOLandingPage({ params }: Props) {
     const rc = eligibleRegionalCenters[0];
     freshnessSources.push({
       name: rc.name,
-      url: rc.source_url || rc.website || undefined,
+      url: rc.source_url || undefined,
       lastReviewedDate: rc.last_verified_date,
-      verificationStatus: rc.verification_status
+      verificationStatus: rc.verification_status,
+      sourceType: rc.source_type,
+      confidenceScore: rc.confidence_score ?? null
     });
   }
   if (eligibleDistricts.length > 0) {
     eligibleDistricts.forEach((sd: SchoolDistrict) => {
       freshnessSources.push({
         name: sd.name,
-        url: sd.source_url || sd.website || undefined,
+        url: sd.source_url || undefined,
         lastReviewedDate: sd.last_verified_date,
-        verificationStatus: sd.verification_status
+        verificationStatus: sd.verification_status,
+        sourceType: sd.source_type,
+        confidenceScore: sd.confidence_score ?? null
       });
     });
   }
@@ -179,9 +210,11 @@ export default async function SEOLandingPage({ params }: Props) {
     eligibleCountyOffices.forEach((office: CountyOffice) => {
       freshnessSources.push({
         name: office.office_name,
-        url: office.source_url || office.website || undefined,
+        url: office.source_url || undefined,
         lastReviewedDate: office.last_verified_date,
-        verificationStatus: office.verification_status
+        verificationStatus: office.verification_status,
+        sourceType: office.source_type,
+        confidenceScore: office.confidence_score ?? null
       });
     });
   }
@@ -250,8 +283,8 @@ export default async function SEOLandingPage({ params }: Props) {
         acceptedAnswer: {
           '@type': 'Answer',
           text: ihssOffice
-            ? `You can apply for IHSS wages by contacting the ${ihssOffice.office_name} located at ${ihssOffice.address}. Phone: ${ihssOffice.phone}.`
-            : `Apply for IHSS through your local county department of social services. IHSS pays parents to provide protective safety supervision.`
+            ? `Start the IHSS intake and application process through ${ihssOffice.office_name} at ${ihssOffice.address}. Phone: ${ihssOffice.phone}. If the county authorizes services, some families may be able to use a parent or relative provider when the current local rules allow it.`
+            : `Start IHSS through your local county department of social services. If services are authorized, some families may be able to use a parent or relative provider depending on the current county program rules.`
         }
       }
     ]
@@ -313,7 +346,7 @@ export default async function SEOLandingPage({ params }: Props) {
       'name': org.name,
       'telephone': org.phone,
       'url': org.website,
-      'sameAs': org.source_url || org.website,
+      'sameAs': org.source_url || undefined,
       'areaServed': `${countyFormatted} County, ${stateCode}`,
       'description': org.focus_condition ? `${org.name} supports families with ${org.focus_condition}.` : `${org.name} serves families in ${countyFormatted} County.`
     }))
@@ -356,7 +389,7 @@ export default async function SEOLandingPage({ params }: Props) {
           {diagnosisFormatted} Benefits in {countyFormatted} County
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto 1.5rem', color: 'var(--text-light)', lineHeight: '1.6' }}>
-          Navigating developmental care in {countyFormatted} County. If you have a child with {diagnosisFormatted}, your family may qualify for {config.medicaidName} waivers, safety supervision wages, and educational services.
+          Navigating developmental care in {countyFormatted} County. If you have a child with {diagnosisFormatted}, this page can help you review source-backed {config.medicaidName} pathways, county rate estimates, and educational routing that are currently published for this county.
         </p>
         <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', alignItems: 'center' }}>
           <ShareButton />
@@ -383,7 +416,7 @@ export default async function SEOLandingPage({ params }: Props) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginTop: '1.5rem' }}>
             
             {/* Regional Center */}
-            {eligibleRegionalCenters.length > 0 && (
+            {eligibleRegionalCenters.length > 0 ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', fontSize: '0.9rem' }}>
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
                   <Landmark size={16} /> Regional Center
@@ -399,16 +432,20 @@ export default async function SEOLandingPage({ params }: Props) {
                 <TrustBadge
                   status={eligibleRegionalCenters[0].verification_status}
                   lastVerifiedDate={eligibleRegionalCenters[0].last_verified_date}
-                  sourceUrl={eligibleRegionalCenters[0].source_url || eligibleRegionalCenters[0].website}
+                  sourceUrl={eligibleRegionalCenters[0].source_url}
+                  sourceType={eligibleRegionalCenters[0].source_type}
+                  confidenceScore={eligibleRegionalCenters[0].confidence_score}
                   entityId={eligibleRegionalCenters[0].id}
                   entityName={eligibleRegionalCenters[0].name}
                   entityType="regional_center"
                 />
               </div>
+            ) : (
+              <LocalVerificationNotice label="regional center routing" countyName={countyData.name} />
             )}
 
             {/* School District IEPs */}
-            {eligibleDistricts.length > 0 && (
+            {eligibleDistricts.length > 0 ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', fontSize: '0.9rem' }}>
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
                   <ShieldCheck size={16} /> Special Ed & Inclusion Stats
@@ -451,7 +488,9 @@ export default async function SEOLandingPage({ params }: Props) {
                     <TrustBadge
                       status={district.verification_status}
                       lastVerifiedDate={district.last_verified_date}
-                      sourceUrl={district.source_url || district.website}
+                      sourceUrl={district.source_url}
+                      sourceType={district.source_type}
+                      confidenceScore={district.confidence_score}
                       entityId={district.id}
                       entityName={district.name}
                       entityType="school_district"
@@ -459,10 +498,12 @@ export default async function SEOLandingPage({ params }: Props) {
                   </div>
                 ))}
               </div>
+            ) : (
+              <LocalVerificationNotice label="special education district contacts" countyName={countyData.name} suggestionType="district" />
             )}
 
             {/* County Office Contacts */}
-            {eligibleCountyOffices.length > 0 && (
+            {eligibleCountyOffices.length > 0 ? (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                 <strong style={{ fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--primary-color)' }}>
                   <FileCheck size={16} /> County Service Office
@@ -483,7 +524,9 @@ export default async function SEOLandingPage({ params }: Props) {
                     <TrustBadge
                       status={office.verification_status}
                       lastVerifiedDate={office.last_verified_date}
-                      sourceUrl={office.source_url || office.website}
+                      sourceUrl={office.source_url}
+                      sourceType={office.source_type}
+                      confidenceScore={office.confidence_score}
                       entityId={office.id}
                       entityName={office.office_name}
                       entityType="county_office"
@@ -491,11 +534,13 @@ export default async function SEOLandingPage({ params }: Props) {
                   </div>
                 ))}
               </div>
+            ) : (
+              <LocalVerificationNotice label="county service offices" countyName={countyData.name} />
             )}
 
           </div>
 
-          {eligibleNonprofits.length > 0 && (
+          {eligibleNonprofits.length > 0 ? (
             <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', marginTop: '2.5rem', paddingTop: '2rem' }}>
               <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1.25rem' }}>
                 Local Nonprofit & Family Support Organizations
@@ -515,6 +560,13 @@ export default async function SEOLandingPage({ params }: Props) {
                 ))}
               </div>
             </div>
+          ) : (
+            <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', marginTop: '2.5rem', paddingTop: '2rem' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1rem' }}>
+                Local Nonprofit & Family Support Organizations
+              </h3>
+              <LocalVerificationNotice label="nonprofit and family support listings" countyName={countyData.name} />
+            </div>
           )}
 
           <div style={{ marginTop: '2.5rem', textAlign: 'center', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1.5rem' }} className="no-print">
@@ -529,7 +581,7 @@ export default async function SEOLandingPage({ params }: Props) {
       </div>
 
       {/* Local IEP Advocates Section */}
-      {localAdvocates && localAdvocates.length > 0 && (
+      {localAdvocates && localAdvocates.length > 0 ? (
         <div className="glass-panel" style={{ background: 'rgba(99, 102, 241, 0.02)', marginBottom: '4rem' }}>
           <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '1.25rem' }}>
             <Award color="var(--primary-color)" size={24} />
@@ -570,6 +622,14 @@ export default async function SEOLandingPage({ params }: Props) {
               View Full Advocates Directory for {countyFormatted} County →
             </Link>
           </div>
+        </div>
+      ) : (
+        <div className="glass-panel" style={{ background: 'rgba(99, 102, 241, 0.02)', marginBottom: '4rem' }}>
+          <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', marginBottom: '1.25rem' }}>
+            <Award color="var(--primary-color)" size={24} />
+            <h2 style={{ fontSize: '1.4rem', margin: 0 }}>Local IEP Advocates serving {countyFormatted} County</h2>
+          </div>
+          <LocalVerificationNotice label="IEP advocate listings" countyName={countyData.name} />
         </div>
       )}
 
@@ -615,7 +675,13 @@ export default async function SEOLandingPage({ params }: Props) {
         )}
       </div>
 
-      <SourceFreshnessDisclosure sources={freshnessSources} />
+      <SourceFreshnessDisclosure
+        sources={freshnessSources}
+        correctionSuggestionType="other"
+        correctionTargetId={`${stateId}-${p.diagnosis}-${p.county}`}
+        correctionTargetName={`${diagnosisFormatted} in ${countyFormatted} County`}
+        correctionButtonLabel="Report a correction"
+      />
     </main>
   );
 }

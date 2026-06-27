@@ -96,7 +96,7 @@ export default async function ConditionPage({ params }: Props) {
     whatToSay: `My child has a diagnosis of ${diag.name} and I would like to schedule an intake assessment to establish qualifying services.`,
     commonMistakes: [
       'Waiting for the school to suggest assessments. You must request them in writing to start the 15-day timeline.',
-      'Assuming your income disqualifies you from getting Medi-Cal services for your child.'
+      'Assuming income alone settles Medi-Cal eligibility without checking child-specific pathways, waiver rules, or other current exceptions.'
     ],
     relatedGuides: [
       { title: 'IEP Request Guide', url: '/situations/iep-evaluation-request' },

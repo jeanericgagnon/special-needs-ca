@@ -10,14 +10,13 @@ import {
   getAllPrograms,
   getProgramBySlug,
   getStateByIdOrCode,
-  getAllStates,
   navigatorDb,
   Program
 } from '@/lib/db';
 import { DIAGNOSES, slugifyDiagnosis } from '@/lib/diagnoses';
 import { getCityBySlug } from '@/lib/cities';
 import { Metadata } from 'next';
-import { MapPin, Phone, Landmark, ShieldCheck, Mail, Award, Sparkles, ArrowLeft, ArrowRight, Heart, Calculator, BookOpen, Globe } from 'lucide-react';
+import { MapPin, Phone, Landmark, ShieldCheck, Award, Sparkles, ArrowLeft, ArrowRight, Heart, Calculator, BookOpen, Globe } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ContributionModal from '@/components/contribution-modal';
@@ -27,21 +26,51 @@ import CountyMapClient from '@/app/benefits/components/county-map-client';
 import DirectoryFoundationPanel from '@/app/components/directory-foundation-panel';
 import CaliforniaMap from '@/app/components/california-map';
 import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
-import { type StateConfig, stateConfigs, getDynamicStateConfig } from '@/lib/stateConfigs';
+import { getDynamicStateConfig } from '@/lib/stateConfigs';
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
-import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
-import { stateAuditStatus, stateGapReason, evaluateSeoPolicy, getSeoPolicyForRoute, normalizeConfidenceScore, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { getCountyDiagnosisTruthEligibility, isIndexableState, isPublicCountyOfficeEligible, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
+import { stateGapReason, evaluateSeoPolicy, getSeoPolicyForRoute, normalizeConfidenceScore, assertNoPlaceholderData } from '@/lib/seo-policy';
 import { getPartialStatePolicy, isLaunchSurfaceSuppressed } from '@/lib/launchStatePolicy';
+import { CANONICAL_SITE_URL } from '@/lib/site-url';
 import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
 import SeoSchema from '@/app/components/seo-schema';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
-import { getCountyMetadata, getCountyIntroCopy } from '@/lib/countySeoHelpers';
+import { getCountyIntroCopy } from '@/lib/countySeoHelpers';
 import { getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 type Props = {
   params: Promise<{ state: string; slug?: string[] }>;
 };
+
+const SITE_URL = CANONICAL_SITE_URL;
+
+function LocalVerificationNotice({
+  label,
+  targetName,
+  suggestionType = 'other',
+}: {
+  label: string;
+  targetName: string;
+  suggestionType?: 'other' | 'district' | 'program';
+}) {
+  const targetId = targetName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  return (
+    <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: 1.6, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+      <p style={{ margin: 0 }}>
+        We are still verifying local entries for {label} before showing them publicly on this page.
+      </p>
+      <div>
+        <ContributionModal
+          suggestionType={suggestionType}
+          targetId={targetId}
+          targetName={targetName}
+          buttonLabel="Suggest a local source to review"
+        />
+      </div>
+    </div>
+  );
+}
 
 function pickCountyPolicyDetails<T extends {
   schoolDistricts?: unknown[];
@@ -170,6 +199,14 @@ function PartialStateGate({
           <p style={{ margin: 0, lineHeight: 1.6, color: 'var(--text-light)' }}>
             This state remains available only in a partial, gated mode. Statewide audit context may remain visible, but county, district, city, and other local surfaces that rely on unresolved evidence are intentionally suppressed until the official public proof is reviewable.
           </p>
+          <div style={{ marginTop: '1rem' }}>
+            <ContributionModal
+              suggestionType="other"
+              targetId={`${stateId}-local-proof-gap`}
+              targetName={`${stateName} local routing evidence`}
+              buttonLabel="Suggest a local source to review"
+            />
+          </div>
         </div>
       </div>
     </main>
@@ -200,7 +237,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const personalCare = config.personalCareProgram;
   let statePrograms: Program[] = [];
   try {
-    statePrograms = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(stateData.id) as Program[];
+    statePrograms = await navigatorDb.prepare(`
+      SELECT * FROM programs
+      WHERE state_id = ?
+        AND COALESCE(display_status, 'published') = 'published'
+    `).all(stateData.id) as Program[];
   } catch {
     statePrograms = [];
   }
@@ -235,8 +276,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
     }
     return {
-      title: `${stateName} Special Education & Disability Guides & Resources`,
-      description: `Select your ${stateName} county to access local developmental benefits, ${catchment} intakes, school district inclusion rates, and special needs advocates.`,
+      title: `${stateName} Disability Benefits, School, and Support Guides`,
+      description: `Select your ${stateName} county to review local developmental benefits, ${catchment} intake paths, school district support, and source-backed advocacy links.`,
       alternates: { canonical: `/benefits/${stateData.id}` },
       robots: stateHubPolicy.index ? undefined : { index: false, follow: true }
     };
@@ -258,8 +299,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         hasNoPlaceholderData: true
       });
       return {
-        title: `${stateName} Special Needs Government & Community Guides & Resources`,
-        description: `Explore ${stateName} special needs public programs: ${catchment}, ${personalCare}, healthcare, and ABLE accounts.`,
+        title: `${stateName} Disability Program and Benefits Guides`,
+        description: `Explore ${stateName} public disability programs, including ${catchment}, ${personalCare}, healthcare pathways, and ABLE accounts.`,
         alternates: { canonical: `/benefits/${stateData.id}/programs` },
         robots: programsPolicy.index ? undefined : { index: false, follow: true }
       };
@@ -278,9 +319,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       const bulkCountyDetails = (await getBulkCountyDetails(stateData.id)).get(countyId);
       const policyCountyDetails = pickCountyPolicyDetails(countyDetails, bulkCountyDetails) || countyDetails;
       const countyFormatted = formatParam(slug[0]);
-      const sdList = (policyCountyDetails.schoolDistricts || []) as Array<any>;
-      const coList = (policyCountyDetails.countyOffices || []) as Array<any>;
-      const rcList = (policyCountyDetails.regionalCenters || []) as Array<any>;
+      const sdList = ((policyCountyDetails.schoolDistricts || []) as Array<any>).filter(isPublicRecordEligible);
+      const coList = ((policyCountyDetails.countyOffices || []) as Array<any>).filter(isPublicCountyOfficeEligible);
+      const rcList = ((policyCountyDetails.regionalCenters || []) as Array<any>).filter(isPublicRecordEligible);
       const rcScores = rcList.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((score): score is number => score !== null);
       const sdScores = sdList.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((score): score is number => score !== null);
       const coScores = coList.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((score): score is number => score !== null);
@@ -304,7 +345,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         confidenceScore
       });
       return {
-        title: `Special Needs & IEP Benefits in ${countyFormatted} County, ${stateCode} (2026)`,
+        title: `Special Needs & IEP Benefits in ${countyFormatted} County, ${stateCode}`,
         description: `Browse localized developmental resources and advocacy directories in ${countyFormatted} County. Access ${catchment} intake details and school district inclusion benchmarks.`,
         alternates: { canonical: `/benefits/${stateData.id}/${countyId}` },
         robots: countyPolicy.index ? undefined : { index: false, follow: true }
@@ -327,7 +368,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       });
       const isIndexed = diagnosisPolicy.index && VERIFIED_DIAGNOSIS_SLUGS.includes(slug[0].toLowerCase() as (typeof VERIFIED_DIAGNOSIS_SLUGS)[number]);
       return {
-        title: `${diagnosisFormatted} Support Services by County in ${stateName} (2026)`,
+        title: `${diagnosisFormatted} Support Services by County in ${stateName}`,
         description: `Select a county in ${stateName} to discover specialized ${diagnosisFormatted} programs, ${catchment} support, local school accommodations, and parent advocacy groups.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}` },
         robots: isIndexed ? undefined : { index: false, follow: true }
@@ -360,7 +401,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         verificationStatus: prog?.verification_status || null
       });
       return {
-        title: `${title} - ${stateName} Special Needs Program Guide (2026)`,
+        title: `${title} - ${stateName} Special Needs Program Guide`,
         description: `Source-backed overview of ${title} in ${stateName}. Check eligibility rules, age limits, income guidelines, and related support options.`,
         alternates: { canonical: `/benefits/${stateData.id}/program/${slug[1].toLowerCase()}` },
         robots: programPolicy.index ? undefined : { index: false, follow: true }
@@ -420,8 +461,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       const canIndex = truth.indexSafe && policy.index;
 
       return {
-        title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode} (2026)`,
-        description: `Access ${stateName} state support, ${catchment} intake, waiver caregiver wages, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
+        title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode}`,
+        description: `Access ${stateName} state support, ${catchment} intake, caregiver pay estimates, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}/${secondSlug}` },
         robots: canIndex ? undefined : { index: false, follow: true }
       };
@@ -439,7 +480,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         };
       }
       return {
-        title: `${diagnosisFormatted} IEP & Special Education Support in ${district.name} (2026)`,
+        title: `${diagnosisFormatted} IEP & Special Education Support in ${district.name}`,
         description: `Evaluate ${diagnosisFormatted} inclusion rates, special education helper contacts, custom accommodations, and smart goal builders for ${district.name}.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0]}/${secondSlug}` },
         robots: { index: false, follow: true }
@@ -501,9 +542,6 @@ async function InnerBenefitsCatchAll({ params }: Props) {
   const config = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
   const stateName = stateData.name;
   const stateCode = stateData.code.toUpperCase();
-  const catchment = config.catchmentName;
-  const personalCare = config.personalCareProgram;
-  const isIndexedState = isIndexableState(stateData.id);
   const partialStatePolicy = getPartialStatePolicy(stateData.id);
   const gapReason = stateGapReason(stateData.id);
 
@@ -545,10 +583,10 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             <ShieldCheck size={12} /> Government & Private Support
           </span>
           <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 800 }}>
-            {stateName} Special Needs Guides & Resources
+            {stateName} Disability Guides & Resources
           </h1>
           <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-            Comprehensive collection of guides and resources for specialized public benefits, waivers, healthcare plans, and developmental support programs available for children with special needs in {stateName}.
+            Source-backed guides for public benefits, waivers, healthcare pathways, and developmental support programs currently published for families in {stateName}.
           </p>
         </div>
 
@@ -769,7 +807,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 Regulatory & Statutory Framework
               </h3>
               <p style={{ margin: 0 }}>
-                {config.legalDisclaimer} Eligibility criteria are audited regularly against official state and federal portals.
+                {config.legalDisclaimer} Eligibility criteria on this page should be checked against the current linked state and federal source material before you rely on them.
               </p>
             </div>
           </div>
@@ -866,7 +904,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             <StateCoverageBadge stateId={stateData.id} stateName={stateName} />
           </div>
           <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-            Select your county to browse localized guides for all 78 diagnoses. Discover {config.catchmentName} intake lines, {config.medicaidName} waiver options, local school district special education inclusion rates, and independent IEP advocates.
+            Select your county to check which localized guides are currently published. Where local proof is available, you can review {config.catchmentName} intake lines, {config.medicaidName} options, local school district routing, and advocate listings that remain visible under the current trust policy.
           </p>
         </div>
 
@@ -897,7 +935,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
           </div>
           <Link href={`/benefits/${stateData.id}/programs`} style={{ textDecoration: 'none' }}>
             <button className="btn-primary" style={{ height: '42px', padding: '0 1.5rem', width: 'auto', display: 'flex', alignItems: 'center', gap: '0.4rem', marginTop: 0 }}>
-              Browse Programs Guides & Resources <ArrowRight size={16} />
+              Browse Program Guides & Resources <ArrowRight size={16} />
             </button>
           </Link>
         </div>
@@ -972,7 +1010,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       const countyFormatted = formatParam(countyId);
       const stateConfig = getDynamicStateConfig(stateData.id, stateData.name, stateData.code);
       const countiesList = (await getCounties(stateData.id)).map(c => ({ id: c.id, name: c.name }));
-      const wageDisclosure = getIhssWageDisclosure(stateData.id, countyDetails.name, countyDetails.ihss_wage_rate ?? null);
+      const wageDisclosure = getIhssWageDisclosure(stateData.id, countyDetails.id, countyDetails.name, countyDetails.ihss_wage_rate ?? null);
       const countyWage = wageDisclosure?.hourlyRate ?? null;
       const countyHubLastVerifiedDate = [
         ...((policyCountyDetails.regionalCenters || []) as Array<any>).map((rc) => rc.last_verified_date).filter(Boolean),
@@ -1006,11 +1044,45 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         confidenceScore: countyHubConfidenceScore
       });
       const isIndexable = countyHubPolicy.index;
-      const eligibleRegionalCenters = (countyDetails.regionalCenters || []).filter(isPublicRecordEligible);
-      const eligibleCountyOffices = (countyDetails.countyOffices || []).filter(isPublicRecordEligible);
-      const eligibleSchoolDistricts = (countyDetails.schoolDistricts || []).filter(isPublicRecordEligible);
-      const eligibleSelpas = (countyDetails.selpas || []).filter(isPublicRecordEligible);
-      const eligibleLocalOrganizations = (countyDetails.localOrganizations || []).filter(isPublicDirectoryRecordEligible);
+      const eligibleRegionalCenters = ((policyCountyDetails.regionalCenters || []) as Array<any>).filter(isPublicRecordEligible);
+      const eligibleCountyOffices = ((policyCountyDetails.countyOffices || []) as Array<any>).filter(isPublicCountyOfficeEligible);
+      const eligibleSchoolDistricts = ((policyCountyDetails.schoolDistricts || []) as Array<any>).filter(isPublicRecordEligible);
+      const eligibleSelpas = ((policyCountyDetails.selpas || []) as Array<any>).filter(isPublicRecordEligible);
+      const eligibleLocalOrganizations = ((policyCountyDetails.localOrganizations || []) as Array<any>).filter(isPublicDirectoryRecordEligible);
+      const freshnessSources = [
+        ...eligibleRegionalCenters.map((rc) => ({
+          name: rc.name,
+          url: rc.source_url || undefined,
+          lastReviewedDate: rc.last_verified_date,
+          verificationStatus: rc.verification_status,
+          sourceType: rc.source_type,
+          confidenceScore: rc.confidence_score ?? null
+        })),
+        ...eligibleCountyOffices.map((office) => ({
+          name: office.office_name,
+          url: office.source_url || undefined,
+          lastReviewedDate: office.last_verified_date,
+          verificationStatus: office.verification_status,
+          sourceType: office.source_type,
+          confidenceScore: office.confidence_score ?? null
+        })),
+        ...eligibleSchoolDistricts.map((district) => ({
+          name: district.name,
+          url: district.source_url || undefined,
+          lastReviewedDate: district.last_verified_date,
+          verificationStatus: district.verification_status,
+          sourceType: district.source_type,
+          confidenceScore: district.confidence_score ?? null
+        })),
+        ...eligibleSelpas.map((selpa) => ({
+          name: selpa.name,
+          url: selpa.source_url || undefined,
+          lastReviewedDate: selpa.last_verified_date,
+          verificationStatus: selpa.verification_status,
+          sourceType: selpa.source_type,
+          confidenceScore: selpa.confidence_score ?? null
+        }))
+      ];
 
       const countyName = countyDetails.name;
       const catchmentLabel = stateConfig.catchmentName;
@@ -1051,7 +1123,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               '@type': 'Answer',
               text: stateData.id === 'california' 
                 ? `Under California Education Code, school districts in ${countyName} have 15 calendar days to provide an Assessment Plan once a parent submits a written request. After the plan is signed, they have 60 calendar days to complete evaluations and hold the initial IEP meeting.`
-                : `Under local state rules, school districts in ${countyName} must respond to a parent request for an IEP assessment within standard state timelines (typically 15 to 30 days depending on the state).` // QA-ALLOW
+                : `School district response timelines vary by state. Families in ${countyName} should confirm the current evaluation-request deadline and dispute timeline on the official state or district special education source before relying on a date.`
             }
           }
         ]
@@ -1096,7 +1168,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               {countyDetails.name} County Disability Benefits Guide
             </h1>
             <div style={{ fontSize: '1rem', color: 'var(--text-light)', marginTop: '0.75rem', maxWidth: '850px' }}>
-              {formatIntroCopy(getCountyIntroCopy(stateData.id, stateData.name, stateData.code, countyDetails as any, countyWage, catchmentLabel, insuranceLabel))}
+              {formatIntroCopy(getCountyIntroCopy(stateData.id, stateData.name, stateData.code, countyDetails as any, countyWage, catchmentLabel))}
             </div>
             <div style={{ marginTop: '1rem', display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
               <ContributionModal
@@ -1151,7 +1223,9 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                         <TrustBadge
                           status={rc.verification_status}
                           lastVerifiedDate={rc.last_verified_date}
-                          sourceUrl={rc.source_url || rc.website}
+                          sourceUrl={rc.source_url}
+                          sourceType={rc.source_type}
+                          confidenceScore={rc.confidence_score}
                           entityId={rc.id}
                           entityName={rc.name}
                           entityType="regional_center"
@@ -1170,7 +1244,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                     ))}
                   </div>
                 ) : (
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>Local routing details are being refreshed. Use the statewide catchment route above until county-level intake evidence is reverified.</p>
+                  <LocalVerificationNotice label={`${catchmentLabel} routing`} targetName={`${countyDetails.name} County regional center routing`} />
                 )}
               </div>
 
@@ -1201,7 +1275,9 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                           <TrustBadge
                             status={office.verification_status}
                             lastVerifiedDate={office.last_verified_date}
-                            sourceUrl={office.source_url || office.website}
+                            sourceUrl={office.source_url}
+                            sourceType={office.source_type}
+                            confidenceScore={office.confidence_score}
                             entityId={String(office.id)}
                             entityName={office.office_name}
                             entityType="county_office"
@@ -1211,7 +1287,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                     })}
                   </div>
                 ) : (
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>County office records are being reverified before we show them here publicly.</p>
+                  <LocalVerificationNotice label="county office contacts" targetName={`${countyDetails.name} County office contacts`} />
                 )}
               </div>
 
@@ -1264,7 +1340,9 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                           <TrustBadge
                             status={district.verification_status}
                             lastVerifiedDate={district.last_verified_date}
-                            sourceUrl={district.source_url || district.website}
+                            sourceUrl={district.source_url}
+                            sourceType={district.source_type}
+                            confidenceScore={district.confidence_score}
                             entityId={district.id}
                             entityName={district.name}
                             entityType="school_district"
@@ -1274,7 +1352,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                     })}
                   </div>
                 ) : (
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>District-level routing details are being refreshed before we show them here publicly.</p>
+                  <LocalVerificationNotice label="district special education routing" targetName={`${countyDetails.name} County school district routing`} suggestionType="district" />
                 )}
               </div>
 
@@ -1295,7 +1373,9 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                         <TrustBadge
                           status={selpa.verification_status}
                           lastVerifiedDate={selpa.last_verified_date}
-                          sourceUrl={selpa.source_url || selpa.website}
+                          sourceUrl={selpa.source_url}
+                          sourceType={selpa.source_type}
+                          confidenceScore={selpa.confidence_score}
                           entityId={selpa.id}
                           entityName={selpa.name}
                           entityType="selpa"
@@ -1304,7 +1384,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                     ))}
                   </div>
                 ) : (
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>Regional special education routing is being refreshed for this county.</p>
+                  <LocalVerificationNotice label={educationLabel} targetName={`${countyDetails.name} County ${educationLabel}`} suggestionType="district" />
                 )}
               </div>
 
@@ -1326,7 +1406,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                     ))}
                   </div>
                 ) : (
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-light)' }}>Local support listings are being rechecked before publication.</p>
+                  <LocalVerificationNotice label="local nonprofit support listings" targetName={`${countyDetails.name} County nonprofit support`} />
                 )}
               </div>
 
@@ -1396,7 +1476,8 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                     {wageDisclosure.explanation}
                   </div>
                   <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.45 }}>
-                    Source: <a href={wageDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>California county IHSS offices</a><br />
+                    Source: <a href={wageDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>{wageDisclosure.sourceLabel}</a><br />
+                    Confirm with: <a href={wageDisclosure.officialConfirmUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>official county IHSS office directory</a><br />
                     Last checked: {wageDisclosure.lastVerifiedDate}
                   </div>
                 </div>
@@ -1447,15 +1528,15 @@ async function InnerBenefitsCatchAll({ params }: Props) {
           </div>
 
           <SourceFreshnessDisclosure sources={
-            stateData.id === 'california' ? [
-              { name: 'California Department of Developmental Services', url: 'https://www.dds.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }, // QA-ALLOW
-              { name: 'California Department of Social Services', url: 'https://www.cdss.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }, // QA-ALLOW
-              { name: 'California Department of Health Care Services', url: 'https://www.dhcs.ca.gov', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' } // QA-ALLOW
-            ] : [
-              { name: stateConfig.ddAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }, // QA-ALLOW
-              { name: stateConfig.stateMedicaidAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' }, // QA-ALLOW
-              { name: stateConfig.educationAgency, url: '#', lastReviewedDate: '2026-06-01', verificationStatus: 'official_verified' } // QA-ALLOW
-            ]
+            freshnessSources.length > 0
+              ? freshnessSources
+              : [
+                  {
+                    name: `${stateName} local county evidence`,
+                    lastReviewedDate: countyHubLastVerifiedDate || null,
+                    verificationStatus: 'needs_review'
+                  }
+                ]
           } />
 
         </main>
@@ -1508,7 +1589,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               {diagnosisFormatted} Benefits Guides by County
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', lineHeight: '1.6', maxWidth: '850px' }}>
-              Select a {stateName} county below to view tailored, legally-backed directories outlining local special education services, {config.catchmentName} intake departments, and {config.personalCareProgram} caregiver wages for children with <strong>{diagnosisFormatted}</strong>.
+              Select a {stateName} county below to view source-backed local special education contacts, {config.catchmentName} intake departments, and {config.personalCareProgram} wage estimates for children with <strong>{diagnosisFormatted}</strong>.
             </p>
           </div>
 
@@ -1586,7 +1667,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       countyId = targetSlug;
       countyFormatted = formatParam(countyId);
       pageTitle = `${diagnosisFormatted} Benefits in ${countyFormatted} County`;
-      pageDescription = `Navigating developmental care in ${countyFormatted} County. If you have a child with ${diagnosisFormatted}, your family may qualify for Medi-Cal waivers, safety supervision wages, and educational services.`;
+      pageDescription = `Navigating developmental care in ${countyFormatted} County. Review source-backed Medi-Cal waiver pathways, safety supervision rate estimates, and educational routing for families supporting a child with ${diagnosisFormatted}.`;
       scopeType = 'county';
     } else if (district) {
       countyId = district.county_id;
@@ -1641,7 +1722,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
     const eligibleRegionalCenters = (countyData.regionalCenters || []).filter(isPublicRecordEligible);
     const eligibleSchoolDistricts = (countyData.schoolDistricts || []).filter(isPublicRecordEligible);
-    const eligibleCountyOffices = (countyData.countyOffices || []).filter(isPublicRecordEligible);
+    const eligibleCountyOffices = (countyData.countyOffices || []).filter(isPublicCountyOfficeEligible);
     const eligibleSelpas = (countyData.selpas || []).filter(isPublicRecordEligible);
 
     const countiesList = await getCounties(stateData.id);
@@ -1772,18 +1853,21 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
     const rcName = eligibleRegionalCenters[0]?.name || 'the local Regional Center';
     const sdName = districtDetails ? districtDetails.name : (eligibleSchoolDistricts[0]?.name || 'your local school district');
-    const displayWage = stateData.id === 'california' && countyData.ihss_wage_rate
-      ? countyData.ihss_wage_rate
-      : 0;
+    const ihssWageDisclosure = stateData.id === 'california'
+      ? getIhssWageDisclosure(stateData.id, countyData.id, countyData.name, countyData.ihss_wage_rate ?? null)
+      : null;
+    const displayWage = ihssWageDisclosure?.hourlyRate ?? null;
     const estHours = 283;
-    const monthlyPayout = (estHours * displayWage).toLocaleString(undefined, { maximumFractionDigits: 0 });
+    const monthlyPayout = displayWage !== null
+      ? (estHours * displayWage).toLocaleString(undefined, { maximumFractionDigits: 0 })
+      : null;
 
     // Localized FAQ Accordion Data
     const localizedFaqs = config.faqs.map(faq => ({
       question: faq.q
         .replace(/\[diagnosis\]/g, diagnosisFormatted)
         .replace(/\[county\]/g, countyFormatted),
-      answer: faq.a(countyFormatted, rcName, sdName, displayWage, monthlyPayout, diagnosisFormatted)
+      answer: faq.a(countyFormatted, rcName, sdName, displayWage ?? 0, monthlyPayout ?? 'still being verified', diagnosisFormatted)
     }));
     
     localizedFaqs.push({
@@ -1871,7 +1955,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       '@graph': localAdvocates.map(adv => ({
         '@type': 'ProfessionalService',
         'name': adv.name,
-        'image': 'https://special-needs-ca.vercel.app/avatar-default.png',
+        'image': `${SITE_URL}/avatar-default.png`,
         'telephone': adv.phone,
         'email': adv.email,
         'url': adv.website,
@@ -1986,7 +2070,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             diagnosisName={diagnosisFormatted}
             initialCountyId={countyId}
             initialCountyName={countyFormatted}
-            initialWage={displayWage}
+            initialWage={displayWage ?? undefined}
             initialPhone={ihssPhone}
             initialAddress={ihssAddress}
             countiesList={countiesList.map(c => ({ id: c.id, name: c.name }))}
@@ -2048,7 +2132,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             Parent-to-Parent Advocacy Guide: Securing Support for {diagnosisFormatted}
           </h2>
           <p style={{ fontSize: '0.98rem', color: 'var(--text-main)', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-            Getting a diagnosis for your child is overwhelming, and navigating {stateName}&apos;s service landscape can feel like a full-time job. As families who have walked this road, we compiled the most important, legally-backed advice to help you secure services for <strong>{diagnosisFormatted}</strong> in <strong>{countyFormatted} County</strong>.
+            Getting a diagnosis for your child is overwhelming, and navigating {stateName}&apos;s service landscape can feel like a full-time job. We compiled practical, source-backed guidance to help you prepare for services for <strong>{diagnosisFormatted}</strong> in <strong>{countyFormatted} County</strong>.
           </p>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
@@ -2056,21 +2140,21 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             <div style={{ padding: '1.25rem', background: 'rgba(var(--primary-rgb), 0.02)', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-color)', margin: 0, fontWeight: 700 }}>1. {config.catchmentName} Entitlements</h3>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                Call {eligibleRegionalCenters[0]?.name || `your local ${config.catchmentName}`} intake department immediately. Under state developmental disability regulations, eligibility is a legal right, not a lottery. <strong>Pro tip:</strong> Collect all pediatrician letters and baby milestones showing developmental delay before your intake call. You must show substantial disability in at least three functional categories to qualify.
+                Call {eligibleRegionalCenters[0]?.name || `your local ${config.catchmentName}`} intake department to ask about the current intake process and evidence they review. <strong>Pro tip:</strong> Collect pediatrician letters, evaluations, and developmental-history records before your intake call. The agency may ask for evidence of substantial functional impact before it decides eligibility.
               </p>
             </div>
 
             <div style={{ padding: '1.25rem', background: 'rgba(var(--primary-rgb), 0.02)', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-color)', margin: 0, fontWeight: 700 }}>2. Securing {config.personalCareProgram} Caregiver Wages</h3>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                If {diagnosisFormatted} causes behaviors like wandering (elopement), self-injury, or safety hazards, you can get paid by the state to care for your child. Apply for the {config.personalCareProgram} program. <strong>Pro tip:</strong> Start logging every single dangerous event today. Social workers require a 24-hour log to approve hours.
+                If {diagnosisFormatted} causes wandering (elopement), self-injury, or other safety hazards, your family may be able to request {config.personalCareProgram} support. <strong>Pro tip:</strong> Start logging dangerous events and caregiver interventions today so you can show the county why supervision or care hours are being requested.
               </p>
             </div>
 
             <div style={{ padding: '1.25rem', background: 'rgba(var(--primary-rgb), 0.02)', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-color)', margin: 0, fontWeight: 700 }}>3. School IEP Tactics</h3>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                When dealing with {sdName}, never make requests verbally. Write a formal letter requesting a special education evaluation. Under {config.timelinesCode}, the district has exactly <strong>{config.timelineDaysPlan}</strong> to send you an assessment plan. Do not let them delay with &quot;Response to Intervention&quot; (RTI) trial periods.
+                When dealing with {sdName}, put important requests in writing so you have a dated record. Under {config.timelinesCode}, the district generally has <strong>{config.timelineDaysPlan}</strong> to send an assessment plan. If staff suggest delaying the request, compare that advice against your current state procedural safeguards before relying on it.
               </p>
             </div>
 
@@ -2078,7 +2162,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               <div style={{ padding: '1.25rem', background: 'rgba(var(--primary-rgb), 0.02)', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <h3 style={{ fontSize: '1.1rem', color: 'var(--primary-color)', margin: 0, fontWeight: 700 }}>4. CCS Medical Support</h3>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                  For medical fragility, clinical therapy, or custom equipment, apply for California Children&apos;s Services (CCS). In {countyFormatted} County, children can access school-based Medical Therapy Units (MTUs) for occupational and physical therapy. <strong>Pro tip:</strong> Therapy provided at an MTU bypasses parental income caps entirely.
+                  For medical fragility, clinical therapy, or custom equipment, review California Children&apos;s Services (CCS). In {countyFormatted} County, children may be able to access school-based Medical Therapy Units (MTUs) for occupational and physical therapy when they meet the local CCS criteria. <strong>Pro tip:</strong> Confirm the current financial and clinical rules with your county CCS office before relying on a funding assumption.
                 </p>
               </div>
             )}
@@ -2094,7 +2178,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               Source-Backed Government & Community Support Programs for {diagnosisFormatted}
             </h2>
             <p style={{ fontSize: '0.98rem', color: 'var(--text-light)', lineHeight: '1.6', marginBottom: '1.5rem' }}>
-              Based on crawled state agency rules, the following programs specify qualifying eligibility rules matching <strong>{diagnosisFormatted}</strong>:
+              The following programs include source-backed eligibility or routing details that may be relevant for <strong>{diagnosisFormatted}</strong>. Final eligibility still depends on the current agency review.
             </p>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
@@ -2228,26 +2312,43 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 </span>
               </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1rem' }}>
-                <strong style={{ fontSize: '0.95rem' }}>{config.personalCareProgram} Provider Payout Rate</strong>
-                <span style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                  ${displayWage.toFixed(2)} / Hour
-                </span>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', marginBottom: '0.4rem' }}>
-                  Current hourly rate for parent caregivers in {countyFormatted} County.
-                </span>
-                <div style={{ background: 'rgba(0,0,0,0.02)', padding: '0.75rem', borderRadius: '8px', fontSize: '0.72rem', color: 'var(--text-light)', lineHeight: '1.4' }}>
-                  <p style={{ margin: '0 0 0.4rem 0' }}>
-                    <strong>Assumptions & Estimates:</strong> Maximum monthly payout estimate is based on full-time monthly caregiver hours. Approved hours depend on individual state assessments.
-                  </p>
-                  <p style={{ margin: '0 0 0.4rem 0' }}>
-                    <strong>Data Source:</strong> Verified against official state rate registers. Last reviewed: June 2026.
-                  </p>
-                  <p style={{ margin: 0, fontStyle: 'italic', fontWeight: 600 }}>
-                    *Disclaimer: Actual approved hours and eligibility vary by individual county assessment.
-                  </p>
+              {ihssWageDisclosure ? (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1rem' }}>
+                  <strong style={{ fontSize: '0.95rem' }}>{config.personalCareProgram} Rate Estimate</strong>
+                  <span style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)' }}>
+                    {displayWage !== null ? `$${displayWage.toFixed(2)} / Hour` : 'Still being verified'}
+                  </span>
+                  <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', marginBottom: '0.4rem' }}>
+                    {ihssWageDisclosure.explanation}
+                  </span>
+                  <div style={{ background: 'rgba(0,0,0,0.02)', padding: '0.75rem', borderRadius: '8px', fontSize: '0.72rem', color: 'var(--text-light)', lineHeight: '1.4' }}>
+                    <p style={{ margin: '0 0 0.4rem 0' }}>
+                      <strong>Assumptions & Estimates:</strong> Any monthly payout estimate is based on a full-hour ceiling and should be treated as an estimate only. Approved hours depend on the county assessment and the individual care plan.
+                    </p>
+                    <p style={{ margin: '0 0 0.4rem 0' }}>
+                      <strong>Source:</strong>{' '}
+                      <a href={ihssWageDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                        {ihssWageDisclosure.sourceLabel}
+                      </a>.
+                      {' '}Confirm with the{' '}
+                      <a href={ihssWageDisclosure.officialConfirmUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
+                        official county IHSS office directory
+                      </a>.
+                      {' '}Last checked: {ihssWageDisclosure.lastVerifiedDate}.
+                    </p>
+                    {monthlyPayout ? (
+                      <p style={{ margin: '0 0 0.4rem 0' }}>
+                        <strong>Max monthly estimate at 283 hours:</strong> about ${monthlyPayout}.
+                      </p>
+                    ) : null}
+                    <p style={{ margin: 0, fontStyle: 'italic', fontWeight: 600 }}>
+                      {ihssWageDisclosure.fallbackUsed
+                        ? 'We do not yet have a verified county-specific rate in this dataset. Confirm the current county rate before relying on it.'
+                        : 'Actual approved hours, provider setup, and eligibility vary by family and county assessment.'}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              ) : null}
             </div>
           </div>
 
@@ -2456,7 +2557,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
         {/* Legal footnoting block for extreme E-E-A-T */}
         <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: '1.5rem', marginTop: '4rem', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.4' }}>
-          <p><strong>Legal Disclaimer & Citations:</strong> This information is compiled for educational, planning, and advocacy support, and does not constitute official legal or medical advice. Verification dates represent the last data-freshness synchronization with official state developmental and health care services registers. Actual eligibility outcomes are subject to individual agency assessments.</p>
+          <p><strong>Legal Disclaimer & Citations:</strong> This information is compiled for educational, planning, and advocacy support, and does not constitute official legal or medical advice. Verification dates reflect the latest source or database review dates shown on this page. Actual eligibility outcomes remain subject to individual agency assessments.</p>
           <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
             {config.legalDisclaimer}
           </p>
@@ -2483,7 +2584,7 @@ export default async function BenefitsCatchAll({ params }: Props) {
             <span>⚠️</span>
             <div>
               <strong style={{ display: 'block', fontSize: '0.9rem', marginBottom: '0.15rem' }}>Verification Pending &mdash; Not Yet Index-Safe</strong>
-              <p style={{ margin: 0, lineHeight: 1.4, color: '#b45309' }}>The official data-audit for {stateData.name} is currently incomplete. This page is served with a noindex robots policy.</p>
+              <p style={{ margin: 0, lineHeight: 1.4, color: '#b45309' }}>The current public-data audit for {stateData.name} is still incomplete. This page is served with a noindex robots policy.</p>
               {gapReason && <div style={{ marginTop: '0.5rem', paddingLeft: '0.5rem', borderLeft: '3px solid #f59e0b', fontSize: '0.82rem', color: '#78350f' }}><strong>Known Blockers / Gap Audit:</strong> {gapReason}</div>}
             </div>
           </div>

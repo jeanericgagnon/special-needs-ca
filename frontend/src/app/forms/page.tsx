@@ -2,8 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import { FileText, FileSpreadsheet, Download, ExternalLink, ArrowRight, BookOpen, ShieldAlert } from 'lucide-react';
 import { SEO_CLUSTERS, SEOPageData } from '@/lib/seo-data';
-import { getCounties } from '@/lib/db';
 import { stateConfigs } from '@/lib/stateConfigs';
+import { getSafePublishedFormGuides } from '@/lib/publishedFormGuides';
+import SourceFreshnessDisclosure, { type DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
+import ContributionModal from '@/components/contribution-modal';
 
 type PageProps = {
   searchParams: Promise<{ state?: string }>;
@@ -30,13 +32,20 @@ export async function generateMetadata({ searchParams }: PageProps) {
   const params = await searchParams;
   const stateId = params.state || 'california';
   const stateName = getStateName(stateId);
+  const isCalifornia = stateId === 'california';
   return {
-    title: `${stateName} Special Needs Forms Directory & Parent Guides (2026)`,
-    description: `Complete directory of official ${stateName} forms and parent request templates for Medicaid waivers, early childhood intervention, IEP accommodations, and SSI.`,
-    alternates: {
-      canonical: `/forms`
-    },
-    robots: { index: true, follow: true }
+    title: isCalifornia
+      ? `${stateName} Special Needs Forms Directory & Parent Guides`
+      : `${stateName} Forms Verification In Progress | Ablefull`,
+    description: isCalifornia
+      ? `Source-backed ${stateName} forms and parent request templates for Medicaid waivers, early childhood intervention, IEP accommodations, and SSI.`
+      : `We are still verifying ${stateName} forms, deadlines, and submission routes. Until source review is complete, this forms hub stays noindex and only California guides remain publicly listed.`,
+    alternates: isCalifornia
+      ? {
+          canonical: `/forms`
+        }
+      : undefined,
+    robots: isCalifornia ? { index: true, follow: true } : { index: false, follow: true }
   };
 }
 
@@ -47,6 +56,12 @@ interface FormItem {
   description: string;
   signer: string;
   downloadUrl?: string;
+  submitTo?: string;
+  sourceUrl?: string;
+  sourceTypeLabel?: string;
+  confidenceLabel?: string;
+  lastCheckedLabel?: string;
+  sourceNotes?: DisclosureSource[];
 }
 
 interface FormCategory {
@@ -61,6 +76,8 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
   const params = await searchParams;
   const stateId = params.state || 'california';
   const stateName = getStateName(stateId);
+  const isCalifornia = stateId === 'california';
+  const publishedCaliforniaForms = isCalifornia ? await getSafePublishedFormGuides('california') : [];
 
   // Extract all forms in SEO_CLUSTERS
   const formsMap = new Map<string, SEOPageData>();
@@ -78,7 +95,8 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
         code: defaultCode,
         title: defaultTitle,
         description: 'Detailed step-by-step parent guide and submission instructions.',
-        signer: 'Parent / Physician'
+        signer: 'Parent / Physician',
+        sourceNotes: []
       };
     }
 
@@ -94,7 +112,15 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       title: data.title.replace('Form ' + defaultCode.toUpperCase() + ': ', '').replace('Guide to Form ' + defaultCode.toUpperCase(), ''),
       description: data.quickAnswer ? data.quickAnswer.substring(0, 180) + '...' : data.metaDescription,
       signer,
-      downloadUrl
+      downloadUrl,
+      sourceNotes: (data.officialSources || []).map((source) => ({
+        name: source.name,
+        url: source.url,
+        lastReviewedDate: data.lastReviewedDate || null,
+        verificationStatus: source.url ? 'official_verified' : 'unverified',
+        sourceType: 'official_form_library',
+        confidenceScore: source.url ? 0.9 : 0.5,
+      }))
     };
   };
 
@@ -535,7 +561,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
     return [
       {
         title: 'In-Home Supportive Services (IHSS) Forms',
-        description: 'Official forms needed to apply for and manage California IHSS caregiver pay and 24/7 Protective Supervision.',
+        description: 'Reviewed California forms commonly used to apply for and manage IHSS caregiver pay and 24/7 Protective Supervision.',
         icon: <FileText size={20} color="#0f766e" />,
         color: '#0f766e',
         items: [
@@ -590,7 +616,45 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
     ];
   };
 
-  const categories = getCategories();
+  const categories = isCalifornia ? getCategories() : [];
+  const publishedCaliforniaFormItems: FormItem[] = publishedCaliforniaForms
+    .slice(0, 8)
+    .map((form) => ({
+      slug: form.slug || form.id,
+      code: form.form_type || form.slug?.toUpperCase() || 'Published',
+      title: form.title || form.slug || 'California published form',
+      description:
+        form.description?.trim() ||
+        form.related_action?.trim() ||
+        'Published from the California source-pack pipeline. Confirm the current download, signer, and submission route before you act.',
+      signer: form.who_signs_it?.trim() || 'See source instructions',
+      submitTo: form.where_to_send_it?.trim() || undefined,
+      sourceUrl: form.source_url?.trim() || undefined,
+      downloadUrl: form.pdf_url?.trim() || form.source_url?.trim() || undefined,
+      sourceTypeLabel: form.evidence_level ? form.evidence_level.replace(/_/g, ' ') : undefined,
+      confidenceLabel:
+        typeof form.confidence_score === 'number' && Number.isFinite(form.confidence_score)
+          ? `${Math.round(form.confidence_score * 100)}% confidence`
+          : undefined,
+      lastCheckedLabel: form.last_checked_at || form.last_verified_at || undefined,
+      sourceNotes: [
+        {
+          name: form.agency?.trim() || 'California published form source',
+          url: form.source_url?.trim() || form.pdf_url?.trim() || undefined,
+          lastReviewedDate: form.last_checked_at || form.last_verified_at || null,
+          verificationStatus: form.verification_status || 'needs_review',
+          sourceType: form.evidence_level || undefined,
+          confidenceScore: typeof form.confidence_score === 'number' ? form.confidence_score : null,
+        },
+      ],
+    }));
+  const disclosureSources = Array.from(
+    new Map(
+      [...categories.flatMap((category) => category.items), ...publishedCaliforniaFormItems]
+        .flatMap((item) => item.sourceNotes || [])
+        .map((source) => [`${source.name}|${source.url || ''}`, source])
+    ).values()
+  ).slice(0, 8);
 
   const getVerificationSourcesText = () => {
     switch (stateId) {
@@ -648,10 +712,12 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       {/* Hero Header */}
       <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
         <h1 style={{ fontSize: '2.6rem', marginBottom: '0.75rem', fontWeight: 800 }}>
-          {stateName} Special Needs Forms Directory
+          {isCalifornia ? `${stateName} Special Needs Forms Directory` : `${stateName} Forms Verification In Progress`}
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-          Avoid denials and processing delays. Access official, updated PDF downloads and step-by-step parent guides for major {stateName} {getLocalAgencyLabelText()}, school districts, and state waivers.
+          {isCalifornia
+            ? `Review source-backed state portal PDFs, parent guides, and request templates for major ${stateName} ${getLocalAgencyLabelText()}, school districts, and waiver or Medicaid workflows. Families should still confirm the current form, signer, and submission route before relying on it.`
+            : `We are still verifying local entries, current forms libraries, and submission routes for ${stateName}. Until that review is complete, we do not publish a full public forms directory for this state.`}
         </p>
       </div>
 
@@ -673,118 +739,285 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       >
         <span style={{ fontSize: '1.5rem', display: 'flex', alignItems: 'center' }}><ShieldAlert size={24} color="#0f766e" /></span>
         <div>
-          <strong>Official Source Verification:</strong> All links labeled as <strong style={{ color: '#0f766e' }}>Official PDF / Source</strong> connect directly to state portals (e.g. {getVerificationSourcesText()}). For letters and requests with no direct official form, we provide a <strong>Parent Request Letter Template</strong> to establish legal timelines.
+          {isCalifornia ? (
+            <>
+              <strong>Source-backed link review:</strong> Links labeled as <strong style={{ color: '#0f766e' }}>Reviewed PDF / Source</strong> point to reviewed state or agency document pages (e.g. {getVerificationSourcesText()}). For letters and requests with no direct government form, we provide a <strong>Parent Request Letter Template</strong> to help families document the request and establish timelines.
+            </>
+          ) : (
+            <>
+              <strong>Truth-first hold:</strong> We only publish form guides here after we confirm the source URL, who signs it, where it is submitted, and the last checked date. {stateName} is still in review, so this page stays <strong style={{ color: '#0f766e' }}>noindex</strong> until those checks pass.
+            </>
+          )}
         </div>
       </div>
 
-      {/* Categories Loop */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '3.5rem' }}>
-        {categories.map((cat, catIdx) => (
-          <div key={catIdx}>
-            {/* Category Header */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem' }}>
-              {cat.icon}
-              <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)', margin: 0 }}>
-                {cat.title}
-              </h2>
-            </div>
-            <p style={{ fontSize: '0.95rem', color: 'var(--text-light)', marginBottom: '1.5rem', maxWidth: '900px' }}>
-              {cat.description}
-            </p>
+      {!isCalifornia && (
+        <div
+          className="glass-panel"
+          style={{
+            padding: '1.5rem 1.75rem',
+            borderRadius: '20px',
+            background: 'rgba(255,255,255,0.78)',
+            border: '1px solid var(--glass-border)',
+            marginBottom: '2.5rem'
+          }}
+        >
+          <h2 style={{ margin: '0 0 0.6rem 0', fontSize: '1.2rem', fontWeight: 800 }}>We are still verifying local entries</h2>
+          <p style={{ margin: 0, color: 'var(--text-light)', lineHeight: 1.6 }}>
+            We have not yet published a source-backed {stateName} forms directory that meets our launch standard. We only reopen this page after we verify current form libraries, appeal routes, signer requirements, and submission instructions.
+          </p>
+          <div style={{ marginTop: '1rem' }}>
+            <ContributionModal
+              suggestionType="other"
+              targetId={`${stateId}-forms-proof-gap`}
+              targetName={`${stateName} forms source library`}
+              buttonLabel="Suggest a source to review"
+            />
+          </div>
+        </div>
+      )}
 
-            {/* Grid of Forms */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '1.5rem' }}>
-              {cat.items.map((item) => (
-                <div 
-                  key={item.slug} 
-                  className="glass-panel" 
-                  style={{ 
-                    padding: '1.75rem', 
-                    borderRadius: '20px', 
-                    background: 'rgba(255, 255, 255, 0.75)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    gap: '1rem',
-                    border: '1px solid var(--glass-border)',
-                    height: '100%'
-                  }}
-                >
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.4rem' }}>
-                      <span 
-                        style={{ 
-                          fontSize: '0.75rem', 
-                          fontWeight: 700, 
-                          color: cat.color, 
-                          backgroundColor: `${cat.color}10`, 
-                          padding: '0.2rem 0.5rem', 
-                          borderRadius: '6px',
-                          border: `1px solid ${cat.color}25`
-                        }}
-                      >
-                        {item.code}
-                      </span>
-                      <span style={{ fontSize: '0.72rem', color: 'var(--text-light)' }}>
-                        Signer: <strong>{item.signer}</strong>
-                      </span>
+      {isCalifornia ? (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '3.5rem' }}>
+          {publishedCaliforniaFormItems.length > 0 ? (
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem' }}>
+                <FileText size={20} color="#0f766e" />
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)', margin: 0 }}>
+                  Published California Source-Pack Forms
+                </h2>
+              </div>
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-light)', marginBottom: '1.5rem', maxWidth: '900px' }}>
+                These entries come from the California source-pack publish lane and only appear here after they pass the current published-record gate. Use the source link to confirm the latest signer requirements, submission route, and revision details before acting.
+              </p>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '1.5rem' }}>
+                {publishedCaliforniaFormItems.map((item) => (
+                  <div
+                    key={`published-${item.slug}`}
+                    className="glass-panel"
+                    style={{
+                      padding: '1.75rem',
+                      borderRadius: '20px',
+                      background: 'rgba(255, 255, 255, 0.75)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      gap: '1rem',
+                      border: '1px solid var(--glass-border)',
+                      height: '100%'
+                    }}
+                  >
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.4rem' }}>
+                        <span
+                          style={{
+                            fontSize: '0.75rem',
+                            fontWeight: 700,
+                            color: '#0f766e',
+                            backgroundColor: 'rgba(15, 118, 110, 0.08)',
+                            padding: '0.2rem 0.5rem',
+                            borderRadius: '6px',
+                            border: '1px solid rgba(15, 118, 110, 0.18)'
+                          }}
+                        >
+                          {item.code}
+                        </span>
+                        <span style={{ fontSize: '0.72rem', color: 'var(--text-light)' }}>
+                          Signer: <strong>{item.signer}</strong>
+                        </span>
+                      </div>
+
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', margin: '0.2rem 0 0 0', lineHeight: '1.3' }}>
+                        {item.title}
+                      </h3>
+
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
+                        {item.description}
+                      </p>
+
+                      {item.submitTo ? (
+                        <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.45 }}>
+                          <strong>Submission route:</strong> {item.submitTo}
+                        </p>
+                      ) : null}
+
+                      {(item.sourceTypeLabel || item.confidenceLabel || item.lastCheckedLabel) ? (
+                        <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.45 }}>
+                          {[item.sourceTypeLabel, item.confidenceLabel, item.lastCheckedLabel ? `Last checked: ${item.lastCheckedLabel}` : null]
+                            .filter(Boolean)
+                            .join(' • ')}
+                        </p>
+                      ) : null}
                     </div>
 
-                    <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', margin: '0.2rem 0 0 0', lineHeight: '1.3' }}>
-                      {item.title}
-                    </h3>
-                    
-                    <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
-                      {item.description}
-                    </p>
-                  </div>
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', borderTop: '1px solid #f0f0f0', paddingTop: '0.85rem', marginTop: '0.5rem', flexWrap: 'wrap' }}>
+                      {item.downloadUrl ? (
+                        <a
+                          href={item.downloadUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: '0.82rem',
+                            color: '#0f766e',
+                            textDecoration: 'none',
+                            fontWeight: 700,
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.25rem'
+                          }}
+                        >
+                          <Download size={14} /> Published source
+                        </a>
+                      ) : null}
 
-                  <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', borderTop: '1px solid #f0f0f0', paddingTop: '0.85rem', marginTop: '0.5rem' }}>
-                    {item.downloadUrl ? (
-                      <a 
-                        href={item.downloadUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        style={{ 
-                          fontSize: '0.82rem', 
-                          color: '#0f766e', 
-                          textDecoration: 'none', 
+                      {item.sourceUrl ? (
+                        <a
+                          href={item.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: '0.82rem',
+                            color: 'var(--primary-color)',
+                            textDecoration: 'none',
+                            fontWeight: 700,
+                            marginLeft: 'auto',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.2rem'
+                          }}
+                        >
+                          Open source page <ExternalLink size={13} />
+                        </a>
+                      ) : null}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
+
+          {categories.map((cat, catIdx) => (
+            <div key={catIdx}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.5rem' }}>
+                {cat.icon}
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)', margin: 0 }}>
+                  {cat.title}
+                </h2>
+              </div>
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-light)', marginBottom: '1.5rem', maxWidth: '900px' }}>
+                {cat.description}
+              </p>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '1.5rem' }}>
+                {cat.items.map((item) => (
+                  <div
+                    key={item.slug}
+                    className="glass-panel"
+                    style={{
+                      padding: '1.75rem',
+                      borderRadius: '20px',
+                      background: 'rgba(255, 255, 255, 0.75)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      gap: '1rem',
+                      border: '1px solid var(--glass-border)',
+                      height: '100%'
+                    }}
+                  >
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.4rem' }}>
+                        <span
+                          style={{
+                            fontSize: '0.75rem',
+                            fontWeight: 700,
+                            color: cat.color,
+                            backgroundColor: `${cat.color}10`,
+                            padding: '0.2rem 0.5rem',
+                            borderRadius: '6px',
+                            border: `1px solid ${cat.color}25`
+                          }}
+                        >
+                          {item.code}
+                        </span>
+                        <span style={{ fontSize: '0.72rem', color: 'var(--text-light)' }}>
+                          Signer: <strong>{item.signer}</strong>
+                        </span>
+                      </div>
+
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-main)', margin: '0.2rem 0 0 0', lineHeight: '1.3' }}>
+                        {item.title}
+                      </h3>
+
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
+                        {item.description}
+                      </p>
+                    </div>
+
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', borderTop: '1px solid #f0f0f0', paddingTop: '0.85rem', marginTop: '0.5rem' }}>
+                      {item.downloadUrl ? (
+                        <a
+                          href={item.downloadUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: '0.82rem',
+                            color: '#0f766e',
+                            textDecoration: 'none',
+                            fontWeight: 700,
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.25rem'
+                          }}
+                        >
+                          <Download size={14} /> Reviewed PDF
+                        </a>
+                      ) : (
+                        <span style={{ fontSize: '0.82rem', color: 'var(--text-light)', fontWeight: 500, fontStyle: 'italic' }}>
+                          Reviewed Source Page
+                        </span>
+                      )}
+
+                      <Link
+                        href={`/forms/${item.slug}`}
+                        style={{
+                          fontSize: '0.82rem',
+                          color: 'var(--primary-color)',
+                          textDecoration: 'none',
                           fontWeight: 700,
+                          marginLeft: 'auto',
                           display: 'inline-flex',
                           alignItems: 'center',
-                          gap: '0.25rem'
+                          gap: '0.2'
                         }}
                       >
-                        <Download size={14} /> Official PDF
-                      </a>
-                    ) : (
-                      <span style={{ fontSize: '0.82rem', color: 'var(--text-light)', fontWeight: 500, fontStyle: 'italic' }}>
-                        Official Instructions Page
-                      </span>
-                    )}
-
-                    <Link 
-                      href={`/forms/${item.slug}`}
-                      style={{ 
-                        fontSize: '0.82rem', 
-                        color: 'var(--primary-color)', 
-                        textDecoration: 'none', 
-                        fontWeight: 700,
-                        marginLeft: 'auto',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '0.2'
-                      }}
-                    >
-                      Parent Guide <ArrowRight size={13} />
-                    </Link>
+                        Parent Guide <ArrowRight size={13} />
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <div className="glass-panel" style={{ padding: '1.5rem 1.75rem', borderRadius: '20px', marginTop: '0.5rem' }}>
+          <p style={{ margin: 0, color: 'var(--text-light)', lineHeight: 1.7 }}>
+            We do not currently publish a public {stateName} forms inventory from template data alone. This hub stays in verification hold until we confirm exact current libraries, signer requirements, and submission routes with source evidence.
+          </p>
+        </div>
+      )}
+
+      {isCalifornia && disclosureSources.length > 0 ? (
+        <SourceFreshnessDisclosure
+          sources={disclosureSources}
+          correctionSuggestionType="other"
+          correctionTargetId={`forms-${stateId}`}
+          correctionTargetName={`${stateName} forms hub`}
+          correctionButtonLabel="Report a forms source issue"
+        />
+      ) : null}
     </main>
   );
 }

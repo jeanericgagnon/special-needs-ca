@@ -33,8 +33,7 @@ const strongFail = {
 assert.deepEqual(getPublishedProvenanceIssues(strongFail), [
   'missing_source_type',
   'missing_data_origin',
-  'missing_last_verified_date',
-  'missing_last_scraped_at',
+  'missing_last_checked_signal',
   'missing_confidence_score',
 ]);
 assert.equal(hasStrongPublishedProvenance(strongFail), false);

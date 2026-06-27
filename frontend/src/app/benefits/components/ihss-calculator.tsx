@@ -2,10 +2,16 @@
 
 import React, { useState } from 'react';
 import { DollarSign, ShieldCheck, Printer } from 'lucide-react';
+import {
+  formatIhssEstimateSourceLabel,
+  formatIhssEstimateSummary,
+  getIhssMonthlyEstimate,
+  getIhssWageDisclosure,
+} from '@/lib/ihssWageDisclosure';
 
 interface IhssCalculatorProps {
   countyName: string;
-  wageRate: number;
+  wageRate: number | null;
 }
 
 export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorProps) {
@@ -52,8 +58,9 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
   };
 
   const totalHours = needsSupervision ? getSupervisionHours() : getBasicHours();
-  const estimatedWage = wageRate || 18.50; // QA-ALLOW
-  const monthlyPayout = totalHours * estimatedWage;
+  const wageDisclosure = getIhssWageDisclosure('california', countyName, countyName, wageRate ?? null);
+  const estimatedWage = wageDisclosure?.hourlyRate ?? null;
+  const monthlyPayout = getIhssMonthlyEstimate(wageDisclosure, totalHours);
 
   const handlePrint = () => {
     window.print();
@@ -73,7 +80,14 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
       </div>
 
       <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '1.5rem', lineHeight: '1.5' }} className="no-print">
-        In California, the In-Home Supportive Services (IHSS) program may pay parent providers who are approved to deliver services. Estimate your family&apos;s hours and projected pay using <strong>{countyName} County&apos;s</strong> current provider pay rate of <strong>${estimatedWage.toFixed(2)}/hour</strong>.
+        In California, the In-Home Supportive Services (IHSS) program may pay parent providers when the county authorizes services and approves the provider arrangement. Estimate your family&apos;s hours and projected pay using <strong>{countyName} County&apos;s</strong>{' '}
+        {estimatedWage !== null ? (
+          <>
+            checked public county rate estimate of <strong>${estimatedWage.toFixed(2)}/hour</strong>.
+          </>
+        ) : (
+          <>rate estimate once we verify the current county wage.</>
+        )}
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
@@ -206,7 +220,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
                 ⭐ Protective Supervision Active
               </span>
               <p style={{ fontSize: '0.8rem', color: '#166534', margin: 0, lineHeight: 1.4 }}>
-                When Protective Supervision is approved, basic personal care hours are integrated. The county allocates a standardized package of either <strong>195 hours/month</strong> (Non-Severely Impaired) or <strong>283 hours/month</strong> (Severely Impaired).
+                If Protective Supervision is approved, basic personal care hours are integrated. The county then evaluates the case against either <strong>195 hours/month</strong> (Non-Severely Impaired) or <strong>283 hours/month</strong> (Severely Impaired).
               </p>
             </div>
           )}
@@ -228,13 +242,32 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
               Estimated Caregiver Pay
             </span>
             <div style={{ fontSize: '2.2rem', fontWeight: 800, color: '#10b981', margin: '0.5rem 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <DollarSign size={28} />
-              {monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-              <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
+              {monthlyPayout !== null ? (
+                <>
+                  <DollarSign size={28} />
+                  {monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                  <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
+                </>
+              ) : (
+                <span style={{ fontSize: '1.15rem', color: 'var(--text-light)', fontWeight: 600 }}>Still being verified</span>
+              )}
             </div>
             <span style={{ fontSize: '0.75rem', color: 'var(--text-light)', fontStyle: 'italic', display: 'block', marginTop: '0.25rem' }}>
-              Based on an estimated {countyName} County wage of ${estimatedWage.toFixed(2)}/hr. Confirm the current county rate before relying on it.
+              {formatIhssEstimateSummary(wageDisclosure)}
             </span>
+            {wageDisclosure && (
+              <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.35rem' }}>
+                Source checked:{' '}
+                <a href={wageDisclosure.sourceUrl} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
+                  {formatIhssEstimateSourceLabel(wageDisclosure)}
+                </a>{' '}
+                • Confirm with{' '}
+                <a href={wageDisclosure.officialConfirmUrl} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
+                  official county IHSS office directory
+                </a>{' '}
+                • Last checked {wageDisclosure.lastVerifiedDate}
+              </span>
+            )}
           </div>
 
           <div style={{ background: 'white', padding: '1rem 1.25rem', borderRadius: '16px', border: '1px solid rgba(0,0,0,0.04)', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
@@ -242,7 +275,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
               <ShieldCheck size={15} color="var(--primary-color)" /> Legal Assessment Tip
             </span>
             <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.4 }}>
-              To secure this allocation, you must submit the <strong>SOC 873 Medical Certification</strong> signed by your pediatrician. Start keeping a 24-hour safety log documenting every single risk event (e.g. climbing counters, trying to eat non-food items, opening outer doors) to present to the county caseworker during the home visit.
+              To support this request, submit the <strong>SOC 873 Medical Certification</strong> signed by your pediatrician. Start keeping a 24-hour safety log documenting risk events (for example, climbing counters, trying to eat non-food items, or opening outer doors) to present during the county home-visit review.
             </p>
           </div>
         </div>
@@ -252,7 +285,10 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
       {/* Print representation */}
       <div className="print-only" style={{ display: 'none', borderTop: '2px solid #000', paddingTop: '1.5rem', marginTop: '2rem' }}>
         <h3 style={{ fontSize: '1.3rem', margin: '0 0 0.5rem 0' }}>In-Home Supportive Services (IHSS) Estimate Breakdown</h3>
-        <p style={{ fontSize: '0.9rem', color: '#666' }}>Location: <strong>{countyName} County, CA</strong> | Caregiver Wage: <strong>${estimatedWage.toFixed(2)}/hour</strong></p>
+        <p style={{ fontSize: '0.9rem', color: '#666' }}>
+          Location: <strong>{countyName} County, CA</strong> | Caregiver Wage:{' '}
+          <strong>{estimatedWage !== null ? `$${estimatedWage.toFixed(2)}/hour estimate` : 'Still being verified'}</strong>
+        </p>
         
         <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
           <thead>
@@ -293,7 +329,9 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
             </tr>
             <tr style={{ fontWeight: 'bold', color: '#10b981' }}>
               <td style={{ padding: '0.5rem' }}>Estimated Monthly Pay</td>
-              <td style={{ padding: '0.5rem' }}>${monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 2 })} / month</td>
+              <td style={{ padding: '0.5rem' }}>
+                {monthlyPayout !== null ? `$${monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 2 })} / month` : 'Still being verified'}
+              </td>
             </tr>
           </tbody>
         </table>

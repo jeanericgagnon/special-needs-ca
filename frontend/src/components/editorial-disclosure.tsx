@@ -30,7 +30,7 @@ export default function EditorialDisclosure({
     finalVerificationState = 'unverified';
   }
 
-  const isVerified = finalVerificationState !== 'unverified';
+  const hasReviewedSource = finalVerificationState !== 'unverified';
 
   return (
     <div
@@ -49,24 +49,24 @@ export default function EditorialDisclosure({
       }}
     >
       <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
-        {isVerified ? (
+        {hasReviewedSource ? (
           <ShieldCheck size={18} color="#0f766e" style={{ flexShrink: 0, marginTop: '2px' }} />
         ) : (
           <AlertCircle size={18} color="#b45309" style={{ flexShrink: 0, marginTop: '2px' }} />
         )}
         <div>
           <strong style={{ color: 'var(--text-main)', display: 'block', fontSize: '0.9rem' }}>
-            {isVerified ? 'Verified Guide & Policy Citation' : 'Verification Status Pending'}
+            {hasReviewedSource ? 'Source Notes & Policy Citation' : 'Source Review Pending'}
           </strong>
           <span style={{ fontSize: '0.8rem', lineHeight: '1.4', display: 'block', marginTop: '0.25rem' }}>
             {finalVerificationState === 'official-verified' && (
               <>
-                Source: {sourceUrl ? (
+                Source-backed note: {sourceUrl ? (
                   <a href={sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
-                    {agencyName || 'Official Agency'}
+                    {agencyName || 'Public agency source'}
                   </a>
                 ) : (
-                  agencyName || 'Official Agency'
+                  agencyName || 'Public agency source'
                 )}
                 {lastVerifiedDate ? ` • Last reviewed: ${lastVerifiedDate}` : ''}
                 {policyCitation ? ` (under citation: ${policyCitation})` : ''}.
@@ -74,22 +74,22 @@ export default function EditorialDisclosure({
             )}
             {finalVerificationState === 'human-reviewed' && (
               <>
-                Reviewed by Ablefull editorial workflow on {lastVerifiedDate}.
+                Reviewed in Ablefull&apos;s editorial workflow on {lastVerifiedDate}.
               </>
             )}
             {finalVerificationState === 'crawler-verified' && (
               <>
                 Automatically extracted from {sourceUrl ? (
                   <a href={sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
-                    official portals
+                    public source pages
                   </a>
-                ) : 'official portals'}
+                ) : 'public source pages'}
                 {lastVerifiedDate ? ` • Last updated: ${lastVerifiedDate}` : ''}.
               </>
             )}
             {finalVerificationState === 'unverified' && (
               <>
-                Source verification pending. This page is excluded from search indexing until verification is complete.
+                Source review is still pending. This page stays out of search indexing until that review is complete.
               </>
             )}
           </span>

@@ -14,11 +14,11 @@ export default function PlanningClient() {
   const [activeTab, setActiveTab] = useState<'shield' | 'deeming'>('shield');
 
   // Profile Cache States
-  const [parentName, setParentName] = useState('Sarah Jenkins');
-  const [parentPhone, setParentPhone] = useState('(555) 019-2834');
-  const [childName, setChildName] = useState('Liam');
-  const [childDob, setChildDob] = useState('2018-05-12');
-  const [coordinatorName, setCoordinatorName] = useState('Jane Doe');
+  const [parentName, setParentName] = useState('');
+  const [parentPhone, setParentPhone] = useState('');
+  const [childName, setChildName] = useState('');
+  const [childDob, setChildDob] = useState('');
+  const [coordinatorName, setCoordinatorName] = useState('');
 
   // Load from profile cache on mount
   useEffect(() => {
@@ -85,15 +85,15 @@ export default function PlanningClient() {
     if (expectedBalance === 'high' || fundingSource === 'inheritance') {
       return {
         title: 'Third-Party Special Needs Trust (Master Trust) + CalABLE account combination',
-        desc: 'This is the gold-standard setup. For balances exceeding $100,000 or funds originating from extended family wills/wills, establish a Third-Party SNT. This protects the estate from Medicaid recovery. Supplement this by transferring funds into a CalABLE account for daily disability expenditures (QDEs) to maximize flexibility.',
+        desc: 'This is often a strong setup to review with an attorney when balances may exceed $100,000 or funds are coming from extended-family estates. A Third-Party SNT can help separate those assets from the child while a CalABLE account may still support qualified disability expenses with more day-to-day flexibility.',
         recoveryNote: 'Third-Party SNTs have no Medicaid clawback provisions. Unused funds pass directly to secondary heirs.'
       };
     }
 
     return {
       title: 'Direct CalABLE Account (Standalone)',
-      desc: 'For expected savings under $100,000 primarily funded by parents or wages, a CalABLE account is the most cost-effective and immediate tool. It takes 15 minutes to open online, carries minimal fees, and allows the child or parents to spend money directly using a debit card for Qualified Disability Expenses.',
-      recoveryNote: 'California has outlawed Medicaid estate recovery on CalABLE accounts for residents, making it highly safe.'
+      desc: 'For expected savings under $100,000 that are primarily funded by parents or wages, a CalABLE account can be a lower-friction option to review. Setup time, fees, and spending controls depend on the current program terms, so confirm the live account rules before relying on them.',
+      recoveryNote: 'California limits estate recovery exposure for CalABLE accounts, but families should still confirm the current program language and any account-specific conditions.'
     };
   };
 
@@ -144,22 +144,22 @@ export default function PlanningClient() {
       if (hasMedicalNeeds) {
         return {
           path: 'Home & Community-Based Alternatives (HCBA) Waiver Pathway',
-          desc: 'Your child does not receive Regional Center services, but has complex medical/nursing needs. They are a strong candidate for the California HCBA Waiver (nursing level of care). This waiver completely bypasses parental income, giving the child full Medi-Cal.',
+          desc: 'Your child does not receive Regional Center services, but has complex medical or nursing needs. The California HCBA Waiver may be worth reviewing because the state can evaluate this pathway under institutional deeming when the official nursing-level-of-care criteria are met.',
           action: 'Contact a local HCBA Waiver agency (e.g. Libertana, Partners in Care) in your county to request an intake assessment. Note: slots are capped and waitlisted.'
         };
       }
       return {
         path: 'Regional Center (Lanterman Act) Intake Pathway',
-        desc: 'Institutional Deeming is primarily processed for active Regional Center clients. To qualify, your child must first undergo a Regional Center intake to establish Lanterman Act eligibility.',
-        action: 'Request an intake assessment at your county\'s Regional Center. Diagnosis must originate before age 18 and constitute a substantial disability.'
+        desc: 'Institutional Deeming is primarily processed for active Regional Center clients. In many cases, families need a Regional Center intake and eligibility review before this pathway can be evaluated.',
+        action: 'Request an intake assessment at your county\'s Regional Center and confirm the current intake criteria for age of onset and substantial disability.'
       };
     }
 
     if (majorLimitations >= 3 && hasDiagnosis) {
       return {
         path: 'Lanterman Medicaid HCBS Waiver (Institutional Deeming)',
-        desc: 'Based on your child\'s active Regional Center status and functional limitations in 3+ major life activities, they are highly eligible for the Lanterman Medicaid Waiver. Parental income is 100% bypassed, granting the child full Medi-Cal regardless of your family earnings.',
-        action: 'Email your Service Coordinator directly and request the Medicaid Waiver Deeming packet. Once approved, the child qualifies for full Medi-Cal with zero parent premium copays.'
+        desc: 'Based on your child\'s active Regional Center status and functional limitations in 3+ major life activities, this pathway may be worth reviewing with your service coordinator. Income treatment and Medi-Cal results still depend on the current waiver and deeming review.',
+        action: 'Email your Service Coordinator and ask whether the Medicaid Waiver Deeming packet is the right next step for your child\'s current situation.'
       };
     }
 
@@ -181,7 +181,7 @@ I hope this email finds you well. I am writing to request that the Regional Cent
 
 As a Regional Center client, ${childName} exhibits significant functional limitations in three or more major life activities (specifically in areas including self-care, self-direction, communication, and learning). Under federal and California DHCS guidelines, these limitations satisfy the ICF-DD level of care required for the HCBS Waiver.
 
-Enrollment in this waiver is crucial for our family as it bypasses parental income limitations, granting ${childName} eligibility for Medi-Cal. This will enable access to essential medical services, behavioral therapies, and equipment necessary for support in our home.
+We are asking for a review of whether this waiver pathway could allow Medi-Cal eligibility to be evaluated using ${childName}'s circumstances instead of parental income. If approved, that review may help open access to medical services, behavioral therapies, and equipment needed in our home.
 
 Please let me know what documentation is required to submit the Medicaid Waiver Deeming packet.
 
@@ -259,7 +259,7 @@ ${parentPhone}`;
             </h2>
             
             <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '2rem' }}>
-              California Medicaid (Medi-Cal) and SSI impose a strict **$2,000 asset limit** on individuals. Exceeding this cap disqualifies your child from medical services and monthly checks. Slide the bar to simulate your planned savings and see the shielding impact of CalABLE and SNTs.
+              California Medicaid (Medi-Cal) and SSI often turn on strict resource-limit rules. Going over the standard $2,000 SSI resource cap can put benefits at risk, so use this simulator as an estimate and confirm the current rules for your child&apos;s situation before relying on it.
             </p>
 
             {/* Slider control */}
@@ -325,14 +325,14 @@ ${parentPhone}`;
                   <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', background: 'rgba(239, 68, 68, 0.05)', padding: '0.85rem', borderRadius: '10px' }}>
                     <AlertTriangle size={18} color="#ef4444" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontSize: '0.78rem', color: '#b91c1c', lineHeight: 1.4 }}>
-                      <strong>Benefit Disqualification!</strong> Your child exceeds the $2,000 limit by <strong>${(savingsAmount - 2000).toLocaleString()}</strong>. They will lose Medi-Cal eligibility and monthly SSI payments.
+                      <strong>Benefits may be at risk.</strong> This balance is <strong>${(savingsAmount - 2000).toLocaleString()}</strong> above the standard $2,000 SSI resource limit, so review current SSI and Medi-Cal treatment before relying on an unshielded account.
                     </div>
                   </div>
                 ) : (
                   <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', background: 'rgba(16, 185, 129, 0.05)', padding: '0.85rem', borderRadius: '10px' }}>
                     <CheckCircle2 size={18} color="#10b981" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontSize: '0.78rem', color: '#15803d' }}>
-                      <strong>Eligible.</strong> Balances remain under the $2,000 cap. Benefits are protected.
+                      <strong>Lower-risk range.</strong> This balance stays under the standard $2,000 SSI resource limit, but families should still confirm how the assets are titled and counted.
                     </div>
                   </div>
                 )}
@@ -373,14 +373,14 @@ ${parentPhone}`;
                   <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', background: 'rgba(245, 158, 11, 0.05)', padding: '0.85rem', borderRadius: '10px' }}>
                     <AlertTriangle size={18} color="#f59e0b" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontSize: '0.78rem', color: '#b45309', lineHeight: 1.4 }}>
-                      <strong>SSI Suspended, Medi-Cal Safe.</strong> CalABLE shields up to $100,000 for SSI. The excess limits will temporarily suspend SSI checks, but **Medi-Cal remains 100% active**. (Use SNT to shield over $100k).
+                      <strong>Review the over-cap treatment.</strong> CalABLE accounts can shield up to $100,000 for SSI counting purposes, but balances above that level may change SSI treatment and should be reviewed against the current Medi-Cal and SSI rules. Consider an SNT for amounts over that level.
                     </div>
                   </div>
                 ) : (
                   <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', background: 'rgba(16, 185, 129, 0.05)', padding: '0.85rem', borderRadius: '10px' }}>
                     <Shield size={18} color="#10b981" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontSize: '0.78rem', color: '#15803d', lineHeight: 1.4 }}>
-                      <strong>100% Shielded.</strong> Under California CalABLE/SNT code guidelines, these assets are completely ignored. Benefits remain fully protected.
+                      <strong>Usually shielded when structured correctly.</strong> CalABLE and Special Needs Trust rules can prevent some assets from being counted, but the outcome still depends on account type, ownership, and current program rules.
                     </div>
                   </div>
                 )}
@@ -554,8 +554,8 @@ ${parentPhone}`;
                     <ul style={{ paddingLeft: '1rem', fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem', lineHeight: 1.4 }}>
                       <li><strong>Contribution Cap:</strong> Up to $18,000 annually (or more if the child is employed under ABLE to Work rules).</li>
                       <li><strong>Tax Treatment:</strong> Earnings may receive favorable tax treatment when used for Qualified Disability Expenses (QDE).</li>
-                      <li><strong>What is a QDE?</strong> Extremely broad: housing, groceries, transit, therapies, assistive tech, tuition, and funeral costs.</li>
-                      <li><strong>How to open:</strong> Open directly at <a href="https://calable.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 600 }}>calable.ca.gov</a> with a minimum $25 deposit.</li>
+                      <li><strong>What is a QDE?</strong> Qualified disability expenses can include housing, transit, therapies, assistive tech, tuition, and other categories listed by the program.</li>
+                      <li><strong>How to open:</strong> Review the current enrollment steps at <a href="https://calable.ca.gov" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', fontWeight: 600 }}>calable.ca.gov</a> and confirm any minimum contribution or account terms before starting.</li>
                     </ul>
                   </div>
 
@@ -565,9 +565,9 @@ ${parentPhone}`;
                       <Scale size={14} color="var(--primary-color)" /> Third-Party Special Needs Trust Guidelines
                     </h4>
                     <ul style={{ paddingLeft: '1rem', fontSize: '0.82rem', color: 'var(--text-light)', display: 'flex', flexDirection: 'column', gap: '0.25rem', lineHeight: 1.4 }}>
-                      <li><strong>No Savings Limit:</strong> Can hold millions of dollars without affecting SSI or Medi-Cal.</li>
+                      <li><strong>No fixed cap:</strong> Third-Party SNTs do not use the same savings cap as CalABLE, but benefit treatment still depends on how the trust is drafted and administered.</li>
                       <li><strong>Asset Sourcing:</strong> Must be funded by **family assets** (parents&apos; estate, grandparents&apos; will, life insurance). Never fund with the child&apos;s own wages/direct gifts.</li>
-                      <li><strong>Medicaid Reclamation:</strong> Completely immune to state Medi-Cal estate reclamation rules.</li>
+                      <li><strong>Medicaid Reclamation:</strong> Third-Party SNTs are generally structured to avoid first-party Medicaid payback, but families should confirm the trust language with counsel.</li>
                       <li><strong>Trustee Oversight:</strong> Requires appointing a trustee (family member or corporate) to sign off on distributions. Trustee pays vendors directly; funds cannot go directly to the child.</li>
                     </ul>
                   </div>
@@ -594,7 +594,7 @@ ${parentPhone}`;
                 <Shield size={20} color="var(--primary-color)" /> Medi-Cal Institutional Deeming Screener
               </h2>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
-                Institutional Deeming completely bypasses parent income, allowing children with severe developmental delays or medical needs to qualify for full Medi-Cal. Answer the screening questions below:
+                Institutional Deeming can let the state evaluate a child using the child&apos;s own financial profile instead of parental income when the official California criteria are met. Use the questions below as a screening estimate, then confirm the current rules before relying on the result:
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
@@ -672,7 +672,7 @@ ${parentPhone}`;
                 <Coins size={20} color="var(--primary-color)" /> Regional Center Family Fee (FCPP/AFPF) Calculator
               </h2>
               <p style={{ fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: '1.5', marginBottom: '1.5rem' }}>
-                California charges families above **400% of the Federal Poverty Level (FPL)** cost-sharing fees for Respite/Camp (FCPP) or an annual $150 program fee (AFPF), unless the child has Medi-Cal. Calculate your fee obligation:
+                California may charge families above **400% of the Federal Poverty Level (FPL)** certain respite or annual program fees unless an exemption applies. Use this as a planning estimate and confirm the live fee rules before relying on it:
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.25rem' }}>
@@ -800,7 +800,7 @@ ${parentPhone}`;
               {fplInfo.isFullyExempt && (
                 <div style={{ marginTop: '0.75rem', background: 'rgba(16, 185, 129, 0.05)', padding: '0.5rem 0.75rem', borderRadius: '8px', fontSize: '0.75rem', color: '#15803d', display: 'flex', gap: '0.2rem', alignItems: 'center' }}>
                   <CheckCircle2 size={12} />
-                  <span>Your income is under the cap or child has Medi-Cal. You pay <strong>$0</strong>.</span>
+                  <span>This estimate suggests an exemption because income appears under the cap or the child already has Medi-Cal. Confirm the current fee rules before relying on a $0 result.</span>
                 </div>
               )}
             </div>
@@ -811,7 +811,7 @@ ${parentPhone}`;
                 💡 Medi-Cal Co-Pay Shield
               </h4>
               <p style={{ lineHeight: '1.4', color: 'var(--text-light)' }}>
-                Under Welfare & Institutions Code § 4783(c), the Family Cost Participation Program co-payments **do not apply** to families of children who have active Medi-Cal. Enrolling in the Institutional Deeming Waiver shields you from all respite co-payments!
+                Under Welfare & Institutions Code § 4783(c), families of children who already have active Medi-Cal may qualify for fee exemptions. Confirm the current exemption rules and waiver status before relying on that outcome.
               </p>
             </div>
 

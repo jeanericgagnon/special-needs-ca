@@ -15,7 +15,7 @@ This document details the database schema and table relationships for the nation
 * `id` (TEXT, PRIMARY KEY): e.g., `'los-angeles'`, `'travis-tx'`.
 * `name` (TEXT, NOT NULL): Name of the county.
 * `state_id` (TEXT, FOREIGN KEY references `states(id)`).
-* `ihss_wage_rate` (REAL): Local paid caregiver hourly rate (default 18.00).
+* `ihss_wage_rate` (REAL): County-specific IHSS hourly pay estimate when a checked public source is available. This should be treated as an estimate, not a guaranteed live county rate, and may be `NULL` while a county rate is still being verified.
 
 ### Table: `county_offices`
 * `id` (TEXT, PRIMARY KEY): Unique identifier.
