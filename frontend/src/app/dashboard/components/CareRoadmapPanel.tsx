@@ -134,7 +134,17 @@ Parent/Primary Caregiver`;
     }
 
     setDeclarationText(text);
-  }, [currentChild, childConditions, activeCounty, isSpanish, parentName, childName]);
+  }, [
+    currentChild,
+    childConditions,
+    activeCounty,
+    isSpanish,
+    parentName,
+    childName,
+    stateConfig?.catchmentName,
+    stateConfig?.name,
+    stateConfig?.personalCareProgram,
+  ]);
 
   // Hydrate child-specific details (use Promise.resolve().then() to avoid calling setState synchronously in effect)
   useEffect(() => {
@@ -264,8 +274,8 @@ Parent/Primary Caregiver`;
       severity: 'critical' as const,
       title: isSpanish ? `Solicitar ${stateConfig?.personalCareProgram || 'IHSS'} y Supervisión Protectora` : `Apply for ${stateConfig?.personalCareProgram || 'IHSS'} & Request Protective Supervision`,
       description: isSpanish 
-        ? `Basado en los riesgos de fuga/seguridad de ${childName} y el estado de ${stateConfig?.personalCareProgram || 'IHSS'}, debe solicitar ${stateConfig?.personalCareProgram || 'IHSS'} de inmediato. Inicie la bitácora de incidentes de comportamiento para documentar el peligro de 24 horas.`
-        : `Based on ${childName}'s safety hazards (elopement/self-injury) and untracked ${stateConfig?.personalCareProgram || 'IHSS'} status, start an application immediately. Log behavioral safety incidents to prove need for 24/7 Protective Supervision.`,
+        ? `Basado en los riesgos de fuga/seguridad de ${childName} y el estado de ${stateConfig?.personalCareProgram || 'IHSS'}, priorice la solicitud y comience la bitácora de incidentes para documentar el nivel de supervisión que su familia reporta.`
+        : `Based on ${childName}'s safety hazards (elopement/self-injury) and untracked ${stateConfig?.personalCareProgram || 'IHSS'} status, prioritize the application and start a safety incident log to document the level of supervision your family reports.`,
       actionLabel: isSpanish ? 'Ir a Registro de Seguridad' : 'Go to Safety Log',
       targetTab: 'ihss' as TabType
     });

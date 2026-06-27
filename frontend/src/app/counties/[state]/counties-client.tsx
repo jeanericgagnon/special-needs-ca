@@ -123,7 +123,7 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
           }}
         >
           {filteredCounties.map((county) => {
-            const wageDisclosure = getIhssWageDisclosure(stateCode.toLowerCase(), county.name, county.ihss_wage_rate ?? null);
+            const wageDisclosure = getIhssWageDisclosure(stateCode.toLowerCase(), county.id, county.name, county.ihss_wage_rate ?? null);
             return (
               <div 
                 key={county.id}

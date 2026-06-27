@@ -108,7 +108,7 @@ export default function WaitlistTrackerPanel({ isSpanish = false }: WaitlistTrac
                 category: 'therapy',
                 dateJoined: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
                 position: '12',
-                phone: '(818) 555-0192',
+                phone: '',
                 notes: 'In-network with L.A. Care. Initial intake scheduled but actual services waitlisted.',
                 status: 'contacted'
               }
@@ -351,7 +351,7 @@ export default function WaitlistTrackerPanel({ isSpanish = false }: WaitlistTrac
                       type="text" 
                       value={phone} 
                       onChange={(e) => setPhone(e.target.value)} 
-                      placeholder="(555) 012-3456"
+                      placeholder="(###) ###-####"
                       style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem', width: '100%' }}
                     />
                   </div>

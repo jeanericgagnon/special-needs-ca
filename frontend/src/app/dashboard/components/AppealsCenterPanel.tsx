@@ -308,7 +308,7 @@ export default function AppealsCenterPanel({ isSpanish = false }: AppealsCenterP
         let stateIepMeetingCitation = `el límite de 60 días naturales (Código de Educación de California § 56344)`;
 
         let stateIepStatuteEn = `California Education Code`;
-        let stateIepCitationEn = `California Education Code Section 56321, please provide me with an Assessment Plan within the legally mandated 15-day timeline`;
+        let stateIepCitationEn = `California Education Code Section 56321, please provide me with an Assessment Plan within the current response timeline that applies to this request`;
         let stateIepMeetingCitationEn = `the 60-day calendar limit (California Education Code § 56344)`;
 
         if (stateConfig.code === 'TX') {
@@ -446,8 +446,8 @@ ${parentName}`;
 Departamento de Servicios Sociales de California
 744 P Street, M.S. 21-97
 Sacramento, CA 95814`;
-        let stateAppealsCitation = `Sección 12300 del Código de Bienestar e Instituciones y la Sección 30-757.17 del Manual de Políticas y Procedimientos (MPP) del Departamento de Servicios Sociales de California, mi hijo califica para la Supervisión Proactiva (Protective Supervision) debido a un deterioro mental severo y una falta total de conciencia de seguridad`;
-        let stateAppealsCitationEn = `Welfare and Institutions Code Section 12300 and California Department of Social Services Manual of Policies and Procedures (MPP) Section 30-757.17, my child qualifies for Protective Supervision due to severe mental impairment and a complete lack of safety awareness`;
+        let stateAppealsCitation = `Sección 12300 del Código de Bienestar e Instituciones y la Sección 30-757.17 del Manual de Políticas y Procedimientos (MPP) del Departamento de Servicios Sociales de California, la evidencia presentada respalda mi solicitud de Supervisión Proactiva (Protective Supervision) debido a un deterioro mental severo y una falta total de conciencia de seguridad`;
+        let stateAppealsCitationEn = `Under Welfare and Institutions Code Section 12300 and California Department of Social Services Manual of Policies and Procedures (MPP) Section 30-757.17, the evidence supports my request for Protective Supervision due to severe mental impairment and a complete lack of safety awareness`;
 
         if (stateConfig.code === 'TX') {
           stateAgencyAddress = `Texas Health and Human Services Commission (HHSC)
@@ -455,20 +455,20 @@ Appeals Division
 P.O. Box 149030
 Austin, TX 78714-9030`;
           stateAppealsCitation = `el Código Administrativo de Texas (TAC) Título 26, Parte 1 y las pautas del programa de Medicaid MDCP/CLASS, mi hijo requiere servicios continuos de cuidado personal y supervisión de seguridad bajo la opción de Servicios Dirigidos por el Consumidor (CDS)`;
-          stateAppealsCitationEn = `Texas Administrative Code (TAC) Title 26, Part 1, Chapter 263 and MDCP/CLASS Medicaid guidelines, my child qualifies for continuous personal care and safety supervision services under the Consumer Directed Services (CDS) option due to severe developmental limitations`;
+          stateAppealsCitationEn = `Under Texas Administrative Code (TAC) Title 26, Part 1, Chapter 263 and MDCP/CLASS Medicaid guidelines, the evidence supports my request for continuous personal care and safety supervision services under the Consumer Directed Services (CDS) option due to severe developmental limitations`;
         } else if (stateConfig.code === 'FL') {
           stateAgencyAddress = `Agency for Health Care Administration (AHCA)
 Medicaid Hearing Operations
 P.O. Box 14000
 Tallahassee, FL 32317-4000`;
           stateAppealsCitation = `la Regla 59G-4 del Código Administrativo de Florida y las pautas de exención de APD iBudget / CDC+, mi hijo califica para servicios de cuidado personal y supervisión debido a necesidades críticas de seguridad`;
-          stateAppealsCitationEn = `Florida Administrative Code Rule 59G-4 and APD iBudget / CDC+ waiver guidelines, my child qualifies for personal care and safety oversight services due to severe cognitive and safety impairments`;
+          stateAppealsCitationEn = `Under Florida Administrative Code Rule 59G-4 and APD iBudget / CDC+ waiver guidelines, the evidence supports my request for personal care and safety oversight services due to severe cognitive and safety impairments`;
         } else if (stateConfig.code !== 'CA') {
           stateAgencyAddress = `State Medicaid Appeals Division
 Department of Health and Human Services
 [Ingrese la dirección de apelaciones de Medicaid de su estado]`;
           stateAppealsCitation = `los reglamentos de Medicaid de ${stateConfig.name} y las pautas de servicios de cuidado personal, mi hijo califica para cobertura de cuidado personal y supervisión de seguridad`;
-          stateAppealsCitationEn = `${stateConfig.name} Medicaid regulations and personal care service guidelines, my child qualifies for personal care assistance and safety supervision due to developmental delays`;
+          stateAppealsCitationEn = `Under ${stateConfig.name} Medicaid regulations and personal care service guidelines, the evidence supports my request for personal care assistance and safety supervision due to developmental delays`;
         }
 
         if (isSpanish) {
@@ -987,13 +987,13 @@ ${parentName}`;
     ssiTimelineTitle: isSpanish ? 'Líneas de Tiempo de Apelación del Seguro Social' : 'Social Security Appeal Timelines',
     ssiTimelineSub: isSpanish 
       ? 'Bajo las reglas del Seguro Social (20 CFR § 416.1401), debe presentar una solicitud de Reconsideración dentro de los **60 días naturales** posteriores a la recepción de la notificación.'
-      : 'Under Social Security rules (20 CFR § 416.1401), you must file a request for Reconsideration within **60 calendar days** of receipt of the denial notice.',
+      : 'Under Social Security rules (20 CFR § 416.1401), reconsideration requests are generally due within **60 calendar days** of receiving the denial notice. Confirm the deadline listed on your notice before filing.',
 
     // EPSDT params
     epsdtParamsTitle: isSpanish ? 'Parámetros de Apelación de Terapia (EPSDT)' : 'Therapy Denial Appeal Parameters (EPSDT Mandate)',
     epsdtParamsSub: isSpanish 
       ? 'Proporcione detalles sobre la terapia denegada y el plan. Bajo la ley federal, los planes de Medi-Cal deben autorizar terapias que "corrijan o mejoren" una condición.'
-      : 'Provide details about the denied therapy and insurance plan. Under federal law, Medi-Cal plans must authorize therapies that "correct or ameliorate" a condition.',
+      : 'Provide details about the denied therapy and insurance plan. Under federal EPSDT rules, Medi-Cal child services may be covered when they are needed to "correct or ameliorate" a condition, subject to the current plan review and evidence you submit.',
     therapyTypeLabel: isSpanish ? 'Tipo de Terapia' : 'Therapy Type',
     denialReasonLabel: isSpanish ? 'Motivo de Denegación' : 'Denial Reason',
     insuranceNameLabel: isSpanish ? 'Nombre del Plan de Seguro / Atención Administrada' : 'Insurance / Managed Care Plan Name',
@@ -1012,7 +1012,7 @@ ${parentName}`;
 
     // Preview area
     previewTitle: isSpanish ? 'Carta de Solicitud Generada' : 'Generated Request Letter',
-    previewSub: isSpanish ? 'Formateado instantáneamente según los estándares oficiales de la agencia' : 'Instantly formatted to official agency standards',
+    previewSub: isSpanish ? 'Formateado como borrador usando convenciones actuales de cartas para agencias' : 'Formatted as a draft using current agency letter conventions',
     copiedText: isSpanish ? '¡Copiado!' : 'Copied!',
     copyLabel: isSpanish ? 'Copiar al Portapapeles' : 'Copy to Clipboard',
     printLabel: isSpanish ? 'Imprimir Carta' : 'Print Letter',

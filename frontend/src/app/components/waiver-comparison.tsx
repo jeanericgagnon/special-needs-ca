@@ -22,7 +22,7 @@ const waivers: WaiverDetails[] = [
     shortName: 'Lanterman Waiver',
     agency: 'California Regional Centers (DDS)',
     eligibility: 'Developmental disability (Autism, Intellectual Disability, Cerebral Palsy, Epilepsy, or Fifth Category) originating before age 18 and causing substantial limits in 3+ major life domains.',
-    deemingRule: 'Yes (Institutional Deeming) — Parental income is completely bypassed for Medi-Cal eligibility if the child receives at least one regional center service annually.',
+    deemingRule: 'Institutional Deeming may allow Medi-Cal financial eligibility to be reviewed under child-specific waiver rules when the current Regional Center and waiver criteria are met.',
     waitlist: 'No waitlist. Intakes must be completed within 45 days. (Note: Specific services like behavior therapy or respite placements may have local provider delays.)',
     coreServices: [
       'Respite care hours (parent relief)',
@@ -39,7 +39,7 @@ const waivers: WaiverDetails[] = [
     shortName: 'Nursing/Medical Waiver',
     agency: 'Local Waiver Agencies (DHCS)',
     eligibility: 'Complex medical needs meeting nursing facility level of care (e.g. ventilator dependence, G-tube feeding, continuous IV, severe physical limits).',
-    deemingRule: 'Yes (Institutional Deeming) — Parental income is ignored. The child is evaluated as a household of one, allowing them to qualify for full-scope Medi-Cal.',
+    deemingRule: 'Yes (Institutional Deeming) — this pathway can let the state evaluate the child as a household of one instead of counting parental income, subject to the official Medi-Cal rules in effect at review time.',
     waitlist: 'Yes (Capped list). Capped since July 2023. Current wait list is 1.5 to 2+ years unless under Reserve Capacity (e.g., under age 21 or transitioning).',
     coreServices: [
       'Waiver Personal Care Services (WPCS)',
@@ -57,7 +57,7 @@ const waivers: WaiverDetails[] = [
     agency: 'County Social Services / DHCS',
     eligibility: 'Standard California residents under 21 who meet income guidelines (under 266% FPL) or bypass income via another waiver.',
     deemingRule: 'No — Traditional family income limits apply. Standard Medi-Cal checks caregiver wealth/salary unless the child is linked to HCBS-DD or HCBA.',
-    waitlist: 'No waitlist. Eligible children are enrolled directly once paperwork is verified.',
+    waitlist: 'No standard waitlist. Eligible children can usually enroll once the county confirms the application and eligibility paperwork.',
     coreServices: [
       'Medically necessary Speech, OT, PT, ABA',
       'Routine pediatric medical & dental exams',

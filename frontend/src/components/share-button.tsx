@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 import { Share2, Link as LinkIcon, MessageSquare, Check } from 'lucide-react';
+import { CANONICAL_SITE_URL } from '@/lib/site-url';
+
+const SITE_URL = CANONICAL_SITE_URL;
 
 interface ShareButtonProps {
   title?: string;
@@ -15,7 +18,7 @@ export default function ShareButton({ title = 'CA Special Needs Resource Guide',
   const getShareUrl = () => {
     if (url) return url;
     if (typeof window !== 'undefined') return window.location.href;
-    return 'https://special-needs-ca.vercel.app';
+    return SITE_URL;
   };
 
   const handleCopyLink = async () => {

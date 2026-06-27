@@ -461,7 +461,7 @@ export default function DocumentOcrPanel() {
               <p className="text-center text-xs text-slate-500 italic">
                 {isSpanish 
                   ? 'El cumplimiento con HIPAA requiere la encriptación de datos médicos antes del almacenamiento.' 
-                  : 'HIPAA compliance guarantees the encryption of extracted medical records prior to physical storage.'}
+                  : 'This workflow is designed to encrypt extracted medical records before storage, but you should still confirm the current deployment and compliance configuration before relying on that protection.'}
               </p>
             </div>
           )}

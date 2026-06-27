@@ -124,7 +124,7 @@ export default function WaitlistVisualizer({ activeProgramId, waitlists }: Waitl
             
             {/* Sync Timestamp indicator */}
             <span style={{ display: 'block', fontSize: '0.68rem', color: 'var(--text-light)', marginTop: '0.75rem', textAlign: 'right', fontStyle: 'italic' }}>
-              Checked & Verified: {new Date(p.last_scraped_at).toLocaleDateString()}
+              Last checked: {new Date(p.last_scraped_at).toLocaleDateString()}
             </span>
           </div>
         );

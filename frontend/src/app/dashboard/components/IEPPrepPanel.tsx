@@ -207,7 +207,7 @@ Parent/Guardian: ${parentName}
 
 Dear IEP Team Members,
 
-Pursuant to ${stateIepLaw} and the federal Individuals with Disabilities Education Act (IDEA) (20 U.S.C. § 1414(d)(3)(A)(i)), the IEP team is legally mandated to consider the concerns of the parents for enhancing the education of their child. I request that this statement of concerns be attached in its entirety to the official IEP document.
+Pursuant to ${stateIepLaw} and the federal Individuals with Disabilities Education Act (IDEA) (20 U.S.C. § 1414(d)(3)(A)(i)), the IEP team must consider parent concerns when developing the student's IEP. I request that this statement of concerns be attached or reflected in the IEP record under the district's current procedures.
 
 1. ${childName.toUpperCase()}'S STRENGTHS & INCLUSION INTERESTS:
 ${strengths || 'Not specified'}
@@ -244,7 +244,7 @@ Parent/Guardian Signature`;
     title: isSpanish ? 'Kit de Preparación para Reunión del IEP' : 'IEP Meeting Preparation Kit',
     subtitle: isSpanish 
       ? 'Prepárese para su reunión del IEP, ejerza sus derechos legales e incluya sus preocupaciones en el registro escolar.'
-      : 'Prepare for your upcoming school meeting, exercise your legal rights, and anchor your caregiver concerns in the official record.',
+      : 'Prepare for your upcoming school meeting, document your concerns clearly, and ask the team to include them in the IEP record.',
     checklistTitle: isSpanish ? 'Lista de Verificación de la Reunión del IEP' : 'IEP Pre-Meeting Checklist',
     checklistSubtitle: isSpanish 
       ? 'Siga estos pasos críticos antes del día de la reunión:'
@@ -258,7 +258,7 @@ Parent/Guardian Signature`;
     builderTitle: isSpanish ? 'Generador de Declaración de Preocupaciones' : 'Parent Statement of Concerns Generator',
     builderSubtitle: isSpanish 
       ? 'La ley exige que el distrito considere estas preocupaciones. Rellene el formulario para generar una declaración sólida.'
-      : `${stateConfig?.name || 'State'} law requires the IEP team to review parent concerns. Complete this form to draft a legally grounded statement.`,
+      : `${stateConfig?.name || 'State'} law generally requires the IEP team to review parent concerns. Complete this form to draft a source-aware statement you can bring to the meeting.`,
     
     lblParentName: isSpanish ? 'Nombre del Padre/Tutor' : 'Parent/Guardian Name',
     lblStrengths: isSpanish ? 'Fortalezas de su Hijo (Intereses, habilidades, qué funciona)' : 'Child\'s Strengths & Interests (What they excel at, motivators)',
@@ -275,7 +275,7 @@ Parent/Guardian Signature`;
     printBtn: isSpanish ? 'Imprimir PDF' : 'Print Statement',
     statTip: isSpanish 
       ? `De acuerdo con las pautas de ${stateConfig?.name || 'su estado'}, el equipo del IEP debe considerar las preocupaciones de los padres. El uso de esta plantilla garantiza que sus aportes queden integrados permanentemente.`
-      : `Statutory Safeguard: Under ${stateIepLaw}, the IEP team MUST consider parent concerns. Attaching this document prevents school teams from omitting your input from the IEP notes.`
+      : `Statutory safeguard: Under ${stateIepLaw}, the IEP team generally must consider parent concerns. Attaching this document can help you preserve what you submitted and compare it against the final meeting notes.`
   };
 
   return (

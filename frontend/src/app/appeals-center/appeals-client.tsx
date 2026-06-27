@@ -211,7 +211,7 @@ ${concernsList.map(c => `- ${c}`).join('\n')}
 Supporting details regarding my child's observed challenges:
 ${customIepText}
 
-In accordance with California Education Code Section 56321, please provide me with an Assessment Plan within the legally mandated 15-day timeline from receipt of this request. I request that the assessment cover all areas of suspected disability, which may include Psychoeducational (Cognitive/Academic), Speech and Language, Occupational Therapy (OT/Fine Motor), Physical Therapy (PT/Gross Motor), and Functional Behavior (FBA) assessments.
+In accordance with California Education Code Section 56321, please provide me with an Assessment Plan within the current response timeline that applies after receipt of this request. I request that the assessment cover all areas of suspected disability, which may include Psychoeducational (Cognitive/Academic), Speech and Language, Occupational Therapy (OT/Fine Motor), Physical Therapy (PT/Gross Motor), and Functional Behavior (FBA) assessments.
 
 I look forward to receiving the Assessment Plan within the statutory 15 days so that we can schedule the initial IEP meeting within the 60-day calendar limit (California Education Code § 56344) to collaborate on an educational program that matches ${childName}'s needs.
 
@@ -254,7 +254,7 @@ To Whom It May Concern,
 
 I am writing to formally request a Fair Hearing to appeal the Notice of Action dated ${ihssDenialDate} regarding In-Home Supportive Services (IHSS) benefits for my minor child, ${childName}. The county has denied or reduced hours for my child under the category of Protective Supervision.
 
-I dispute the county's determination. Under Welfare and Institutions Code Section 12300 and California Department of Social Services Manual of Policies and Procedures (MPP) Section 30-757.17, my child qualifies for Protective Supervision due to severe mental impairment and a complete lack of safety awareness. 
+I dispute the county's determination. Based on Welfare and Institutions Code Section 12300 and California Department of Social Services Manual of Policies and Procedures (MPP) Section 30-757.17, I believe my child meets the Protective Supervision criteria because of severe mental impairment and a complete lack of safety awareness. 
 
 ${childName} exhibits dangerous behaviors that require 24/7 active safety monitoring to prevent severe self-harm or accidental death. Specifically, these behaviors include:
 ${safetyList.map(s => `- ${s}`).join('\n')}
@@ -1035,7 +1035,7 @@ ${parentName}`;
                     <Scale size={14} color="#ef4444" /> Social Security Appeal Timelines
                   </h4>
                   <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4, marginBottom: '0.75rem' }}>
-                    Under Social Security rules (20 CFR § 416.1401), you must file a request for Reconsideration within **60 calendar days** of receipt of the denial notice.
+                    Under Social Security rules (20 CFR § 416.1401), reconsideration requests are generally due within **60 calendar days** of receiving the denial notice. Confirm the deadline shown on your notice before filing.
                   </p>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem' }}>
                     <span>Denial Notice Date:</span>
@@ -1054,7 +1054,7 @@ ${parentName}`;
               <div>
                 <h3 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '0.5rem' }}>Therapy Denial Appeal Parameters (EPSDT Mandate)</h3>
                 <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '1.5rem' }}>
-                  Provide details about the denied therapy and insurance plan. Under federal law, Medi-Cal plans must authorize therapies that &quot;correct or ameliorate&quot; a condition.
+                  Provide details about the denied therapy and insurance plan. Under federal EPSDT rules, Medi-Cal child services may be covered when they are needed to &quot;correct or ameliorate&quot; a condition, subject to the current plan review and evidence you submit.
                 </p>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
@@ -1161,7 +1161,7 @@ ${parentName}`;
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
               <div>
                 <h3 style={{ fontSize: '1.2rem', fontWeight: 700, margin: 0 }}>Generated Request Letter</h3>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Instantly formatted to official agency standards</span>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Formatted as a draft using current agency letter conventions</span>
               </div>
 
               <div style={{ display: 'flex', gap: '0.5rem' }}>

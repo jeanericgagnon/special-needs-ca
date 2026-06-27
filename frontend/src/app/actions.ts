@@ -86,29 +86,29 @@ export async function analyzeOnboarding(
 
       if (cond.regional_center_relevance === 1) {
         if (stateId === 'california') {
-          explanations.push(`California Regional Centers prioritize ${cond.name} as a qualifying condition under the Lanterman Act.`);
+          explanations.push(`California Regional Centers often screen ${cond.name} under the Lanterman Act eligibility framework.`);
         } else if (stateId === 'texas') {
-          explanations.push(`Texas LIDDAs prioritize ${cond.name} as a qualifying condition for state-funded IDD services.`);
+          explanations.push(`Texas LIDDAs often screen ${cond.name} during IDD eligibility review for state-funded services.`);
         } else if (stateId === 'florida') {
           explanations.push(`Florida Agency for Persons with Disabilities (APD) prioritizes ${cond.name} for eligibility screening.`);
         } else if (stateId === 'new-york') {
-          explanations.push(`New York OPWDD prioritizes ${cond.name} as a qualifying developmental disability.`);
+          explanations.push(`New York OPWDD often reviews ${cond.name} within its developmental-disability eligibility process.`);
         } else {
           const devServicesName = stateProgramsMap[stateCode]?.developmental_services?.name || `${stateName} Developmental Services`;
-          explanations.push(`${devServicesName} prioritizes ${cond.name} as a qualifying condition.`);
+          explanations.push(`${devServicesName} may review ${cond.name} as part of developmental-services eligibility screening.`);
         }
       }
       if (cond.ccs_relevance === 1) {
         if (stateId === 'california') {
-          explanations.push(`${cond.name} is medically eligible for California Children's Services (CCS) therapy and specialized care.`);
+          explanations.push(`${cond.name} may support screening for California Children's Services (CCS) therapy and specialized care.`);
         } else if (stateId === 'texas') {
-          explanations.push(`${cond.name} qualifies for specialized pediatric medical and therapy support in Texas.`);
+          explanations.push(`${cond.name} may support screening for specialized pediatric medical and therapy services in Texas.`);
         } else if (stateId === 'florida') {
-          explanations.push(`${cond.name} qualifies for Florida Children's Medical Services (CMS) specialized therapy and clinical programs.`);
+          explanations.push(`${cond.name} may support screening for Florida Children's Medical Services (CMS) therapy and clinical programs.`);
         } else if (stateId === 'new-york') {
-          explanations.push(`${cond.name} is eligible for specialized pediatric clinical and therapeutic benefits in New York.`);
+          explanations.push(`${cond.name} may support screening for specialized pediatric clinical and therapeutic services in New York.`);
         } else {
-          explanations.push(`${cond.name} may qualify for specialized pediatric medical and clinical support in ${stateName}.`);
+          explanations.push(`${cond.name} may be a fit for specialized pediatric medical and clinical support screening in ${stateName}.`);
         }
       }
     }
@@ -124,16 +124,16 @@ export async function analyzeOnboarding(
     detectedNeedNames.push('Protective Supervision');
     if (refiners?.severeSafetyRisks === true) {
       if (stateId === 'california') {
-        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) may support eligibility for additional IHSS hours under the Protective Supervision category. Actual approved hours depend on individual county assessment.');
+        explanations.push('Reported safety risks (wandering, elopement, or self-injury) may support eligibility for additional IHSS hours under the Protective Supervision category. Actual approved hours depend on individual county assessment.');
       } else if (stateId === 'texas') {
-        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) may support eligibility for personal care hours or behavioral support under the HCS or CLASS waivers.');
+        explanations.push('Reported safety risks (wandering, elopement, or self-injury) may support eligibility for personal care hours or behavioral support under the HCS or CLASS waivers.');
       } else if (stateId === 'florida') {
-        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) support eligibility for personal care, respite, or behavioral services under the iBudget waiver.');
+        explanations.push('Reported safety risks (wandering, elopement, or self-injury) may support eligibility for personal care, respite, or behavioral services under the iBudget waiver.');
       } else if (stateId === 'new-york') {
-        explanations.push('Confirmed safety risks (wandering, elopement, or self-injury) support eligibility for personal care hours under CDPAP or behavioral support under the OPWDD HCBS waiver.');
+        explanations.push('Reported safety risks (wandering, elopement, or self-injury) may support eligibility for personal care hours under CDPAP or behavioral support under the OPWDD HCBS waiver.');
       } else {
         const hcbsWaiversName = stateProgramsMap[stateCode]?.hcbs_waivers?.name || `${stateName} HCBS Waivers`;
-        explanations.push(`Confirmed safety risks (wandering, elopement, or self-injury) may support eligibility for personal care hours or behavioral support under ${stateName}'s ${hcbsWaiversName} program.`);
+        explanations.push(`Reported safety risks (wandering, elopement, or self-injury) may support eligibility for personal care hours or behavioral support under ${stateName}'s ${hcbsWaiversName} program.`);
       }
     } else {
       if (stateId === 'california') {
@@ -213,7 +213,7 @@ export async function analyzeOnboarding(
     detectedNeedIds.push('vision-services');
     detectedNeedNames.push('Vision Services');
     detectedConditionIds.push('visual-impairment-blindness');
-    explanations.push('Vision delays qualify for Specialized Teachers (TVI) and Orientation & Mobility assessments in schools.');
+    explanations.push('Vision delays may support referrals for Specialized Teachers (TVI) and Orientation & Mobility assessments in schools, depending on the school evaluation.');
   }
 
   // Diapers
@@ -247,7 +247,7 @@ export async function analyzeOnboarding(
   ) {
     detectedNeedIds.push('iep-evaluation');
     detectedNeedNames.push('IEP Evaluation');
-    explanations.push('School district special education departments are legally mandated under the IDEA act to evaluate learning adaptations within 60 days of written parent request.');
+    explanations.push('School districts generally must respond to special education evaluation requests under IDEA/state timelines, but the exact timeline can vary by state rules, consent dates, and school-calendar exceptions.');
   }
 
   // Institutional Deeming Nuance

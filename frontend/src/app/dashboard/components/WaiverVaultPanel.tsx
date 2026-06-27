@@ -394,7 +394,7 @@ export default function WaiverVaultPanel() {
           
           {/* Legal Disclaimer Footnote */}
           <div style={{ marginTop: '2rem', padding: '1.25rem', borderTop: '1px dashed rgba(0,0,0,0.08)', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
-            <strong>Legal & Estimates Disclaimer:</strong> All estimated care hours, respite allocations, and eligibility statements are based on typical ${stateConfig?.name || 'state'} program parameters and are not guaranteed. Actual program eligibility, parental income deeming exemptions, and care hour authorizations are determined solely by county/state social workers (for ${stateConfig?.personalCareProgram || 'personal care'}), local agency caseworkers (for ${stateConfig?.waiverProgram || 'waiver'}/institutional deeming), and pediatric program administrators. This tool does not provide legal or medical advice.
+            <strong>Legal & Estimates Disclaimer:</strong> All estimated care hours, respite allocations, and eligibility statements are planning guidance based on typical ${stateConfig?.name || 'state'} program parameters, not final determinations or promises. Actual program eligibility, parental income deeming exemptions, and care hour authorizations are determined solely by county/state social workers (for ${stateConfig?.personalCareProgram || 'personal care'}), local agency caseworkers (for ${stateConfig?.waiverProgram || 'waiver'}/institutional deeming), and pediatric program administrators. This tool does not provide legal or medical advice.
           </div>
         </div>
       </div>

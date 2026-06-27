@@ -382,11 +382,11 @@ Caregiver Parent`;
       return {
         path: isSpanish ? `Exención de Medicaid (Exención de Ingresos Parentales)` : `${stateConfig.name} Medicaid Waiver (Parental Deeming)`,
         desc: isSpanish
-          ? `Según el estado activo de su hijo en ${stateConfig.catchmentName} y limitaciones funcionales, es altamente elegible para la exención de Medicaid de ${stateConfig.name}. Los ingresos parentales se omiten al 100%, otorgando al niño cobertura completa.`
-          : `Based on your child's active ${stateConfig.catchmentName} status and functional limitations, they are highly eligible for the ${stateConfig.name} Medicaid Waiver. Parental income is 100% bypassed, granting the child full ${stateConfig.medicaidName} regardless of your family earnings.`,
+          ? `Según el estado activo de su hijo en ${stateConfig.catchmentName} y sus limitaciones funcionales, esta vía puede valer una revisión más detallada con su coordinador de servicios.`
+          : `Based on your child's active ${stateConfig.catchmentName} status and functional limitations, this pathway may be worth reviewing with your service coordinator in more detail.`,
         action: isSpanish
-          ? `Envíe un correo electrónico a su coordinador de servicios directamente y solicite el paquete de exención de Medicaid.`
-          : `Email your Service Coordinator directly and request the Medicaid Waiver Deeming packet. Once approved, the child qualifies for full ${stateConfig.medicaidName} with zero parent premium copays.`
+          ? `Envíe un correo electrónico a su coordinador de servicios y pregunte si el paquete de exención de Medicaid es el siguiente paso adecuado.`
+          : `Email your Service Coordinator and ask whether the Medicaid Waiver Deeming packet is the right next step for your family.`,
       };
     }
 

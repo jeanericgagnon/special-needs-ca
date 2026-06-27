@@ -1113,7 +1113,7 @@ Sincerely,
                       Statutory Timeline & Milestone Tracker
                     </h3>
                     <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', marginBottom: '1.5rem', lineHeight: 1.5 }}>
-                      Input the date you submitted formal requests to {stateConfig.name} agencies (IEP, {stateConfig.catchmentName === 'Regional Center' ? 'Regional Center' : stateConfig.catchmentName}, or {stateConfig.personalCareProgram === 'IHSS Protective Supervision' ? 'IHSS' : stateConfig.personalCareProgram}) to compute legally mandated response deadlines and download compliance letters.
+                      Input the date you submitted formal requests to {stateConfig.name} agencies (IEP, {stateConfig.catchmentName === 'Regional Center' ? 'Regional Center' : stateConfig.catchmentName}, or {stateConfig.personalCareProgram === 'IHSS Protective Supervision' ? 'IHSS' : stateConfig.personalCareProgram}) to estimate response timelines under current rules and generate draft follow-up letters. Always confirm the current clock with the official source that applies to your case.
                     </p>
 
                     {/* Pathway Selection */}
