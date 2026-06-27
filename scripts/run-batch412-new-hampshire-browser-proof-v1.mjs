@@ -65,6 +65,15 @@ function writeText(filePath, value) {
   fs.writeFileSync(filePath, value);
 }
 
+function deriveCounts(audit) {
+  const rows = Array.isArray(audit.states) ? audit.states : [];
+  return {
+    complete: rows.filter((row) => row.classification === 'COMPLETE').length,
+    blocked: rows.filter((row) => row.classification === 'BLOCKED').length,
+    indexSafe: rows.filter((row) => row.indexSafe === true).length,
+  };
+}
+
 function reasonForFamily(family) {
   if (
     [
@@ -219,6 +228,7 @@ export function generateBatch412NewHampshireBrowserProofV1() {
     gapRows: updatedGapRows,
     failures: updatedFailureRows,
   };
+  const countsUnchanged = deriveCounts(updatedAudit);
 
   writeJson(INPUTS.summary, updatedSummary);
   writeJsonl(INPUTS.gap, updatedGapRows);
@@ -240,7 +250,7 @@ export function generateBatch412NewHampshireBrowserProofV1() {
     nhes_browser_access_denied: true,
     federal_idea_still_only_statewide_clear_lane: true,
     completeness_pct: 42,
-    counts_unchanged: { complete: 44, blocked: 6, indexSafe: 44 },
+    counts_unchanged: countsUnchanged,
   });
   writeText(OUTPUTS.report, buildBatchReport());
 

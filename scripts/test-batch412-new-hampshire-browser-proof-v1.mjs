@@ -51,7 +51,7 @@ assert.equal(batchSummary.dhhs_browser_access_denied, true);
 assert.equal(batchSummary.education_browser_access_denied, true);
 assert.equal(batchSummary.nhes_browser_access_denied, true);
 assert.equal(batchSummary.federal_idea_still_only_statewide_clear_lane, true);
-assert.deepEqual(batchSummary.counts_unchanged, { complete: 44, blocked: 6, indexSafe: 44 });
+assert.deepEqual(batchSummary.counts_unchanged, { complete: 45, blocked: 5, indexSafe: 45 });
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/new-hampshire-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /browser-rendered `Access Denied` shells/i);
