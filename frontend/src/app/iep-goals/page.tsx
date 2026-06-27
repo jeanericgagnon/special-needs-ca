@@ -46,8 +46,8 @@ export default function IepGoalsPage() {
       ]}
       primaryCtaLabel="Open the private IEP builder"
       primaryCtaHref="/dashboard?tab=iep"
-      secondaryCtaLabel="Review special education guides"
-      secondaryCtaHref="/find-help"
+      secondaryCtaLabel="Review public forms and request guides"
+      secondaryCtaHref="/forms"
       disclaimer="This page provides source-backed educational guidance, not legal advice. School districts can require local forms, timelines, and dispute steps that must be confirmed against current official state or district materials."
       sources={sources}
       correctionSuggestionType="other"
