@@ -780,7 +780,7 @@ Phone: [Insert Phone]`
       { name: 'Private clinical evaluations', description: 'Confirming ongoing therapeutic needs.' }
     ],
     whoToCall: [
-      { name: 'Your assigned Regional Center Service Coordinator', description: 'They are legally required to lead the transition process.' }
+      { name: 'Your assigned Regional Center Service Coordinator', description: 'They usually coordinate the Early Start transition steps with the local school district, but you should still confirm the current handoff process and timeline in writing.' }
     ],
     whatToSay: 'I want to confirm that my child\'s school district transition referral has been submitted. We need the transition conference scheduled as they are turning 2 years, 9 months next week.',
     commonMistakes: [
@@ -1993,8 +1993,8 @@ ${f.parentName || '[Parent Name]'}`
     lastReviewedDate: '2026-06-01',
     callScriptTemplate: {
       intro: 'Challenging School Assessment',
-      script: 'Hi, I am sending our written disagreement with the district\'s psycho-educational report and requesting an IEE at district expense in the areas of speech and OT. Please send me the district\'s list of approved independent assessors.',
-      tips: 'Ask for the district\'s "IEE criteria and cost caps" document.'
+      script: 'Hi, I am sending our written disagreement with the district\'s psycho-educational report and requesting an IEE at district expense in the areas of speech and OT. Please send me the district\'s current IEE criteria and any evaluator list or panel the district uses.',
+      tips: 'Ask for the district\'s current IEE criteria, cost-cap policy if one exists, and any evaluator list or panel they are using right now.'
     },
     letterTemplate: {
       title: 'Independent Educational Evaluation (IEE) Request Letter',
@@ -2019,7 +2019,7 @@ I am writing to formally notify the district that I disagree with the recent ${f
 
 Under 34 C.F.R. § 300.502 and California Education Code Section 56329(b), I am formally requesting an Independent Educational Evaluation (IEE) at public expense. I request independent evaluations in the areas of: [Insert Assessment Areas, e.g., Speech/Language, Occupational Therapy].
 
-Please provide me with the district\'s IEE criteria and policy guidelines, along with a list of approved independent evaluators, without unnecessary delay.
+Please provide me with the district\'s current IEE criteria and policy guidelines, along with any evaluator list or panel the district is presently using, without unnecessary delay.
 
 Sincerely,
 ${f.parentName || '[Parent Name]'}`
@@ -3403,7 +3403,7 @@ Specifically, I disagree with the district\'s findings regarding [Insert Disagre
 Pursuant to 34 CFR § 300.502 and Texas Education Agency rules, I am formally requesting an Independent Educational Evaluation (IEE) at public expense in the following areas:
 - [Insert requested IEE testing areas, e.g., Comprehensive Neuropsychological Evaluation, Assistive Technology Assessment]
 
-Please provide me with the district\'s IEE criteria and a list of approved independent evaluators immediately.
+Please provide me with the district\'s current IEE criteria and any evaluator list or panel the district is presently using.
 
 I understand that the district must, without unnecessary delay, either agree to fund this IEE at public expense or file a due process hearing request to prove that its evaluation is appropriate.
 
@@ -4719,7 +4719,7 @@ I am writing to formally state that I disagree with the school district's recent
 
 Therefore, pursuant to 34 CFR Section 300.502 and Florida ESE rules, I am requesting an Independent Educational Evaluation (IEE) at public expense. I request an independent assessment in the area of ${f.evaluationType || 'speech, occupational therapy, or educational need'}.
 
-Please provide me with the district's IEE criteria and a list of approved evaluators without delay.
+Please provide me with the district's current IEE criteria and any evaluator list or panel the district is presently using, without delay.
 
 Sincerely,
 ${f.parentName || '[Parent Name]'}`
