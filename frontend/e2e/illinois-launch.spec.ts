@@ -1,5 +1,6 @@
 import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
+import { expectCountyBenefitsSitemapMatchesRobots } from './helpers/launch-sitemap';
 
 test.describe('Illinois Multi-State Launch Smoke Tests', () => {
   
@@ -103,34 +104,6 @@ test.describe('Illinois Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include Illinois county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml');
-    expect(sitemapResponse?.status()).toBe(200);
-
-    const xmlText = await sitemapResponse.text();
-    const isIndexable = isIndexableState('illinois');
-
-    if (isIndexable) {
-      expect(xmlText).toContain('/benefits/illinois/cook-il');
-    } else {
-      expect(xmlText).not.toContain('/benefits/illinois/cook-il');
-    }
-    expect(xmlText).not.toContain('/counties/illinois/cook-il');
-    expect(xmlText).not.toContain('/benefits/illinois/autism-spectrum-disorder/cook-il');
-
-    await page.goto('/benefits/illinois/cook-il');
-    const robotsMetaRoot = page.locator('meta[name="robots"]');
-    const rootCount = await robotsMetaRoot.count();
-    if (isIndexable) {
-      if (rootCount > 0) {
-        const content = await robotsMetaRoot.getAttribute('content');
-        expect(content).not.toContain('noindex');
-      }
-    } else {
-      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
-    }
-
-    await page.goto('/benefits/illinois/autism-spectrum-disorder/cook-il');
-    const robotsMeta = page.locator('meta[name="robots"]');
-    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
+    await expectCountyBenefitsSitemapMatchesRobots(page, 'illinois', 'cook-il');
   });
 });

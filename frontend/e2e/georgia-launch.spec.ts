@@ -1,5 +1,6 @@
 import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
+import { expectCountyBenefitsSitemapMatchesRobots } from './helpers/launch-sitemap';
 
 test.describe('Georgia Multi-State Launch Smoke Tests', () => {
   
@@ -103,34 +104,6 @@ test.describe('Georgia Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include Georgia county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml');
-    expect(sitemapResponse?.status()).toBe(200);
-
-    const xmlText = await sitemapResponse.text();
-    const isIndexable = isIndexableState('georgia');
-
-    if (isIndexable) {
-      expect(xmlText).toContain('/benefits/georgia/fulton-ga');
-    } else {
-      expect(xmlText).not.toContain('/benefits/georgia/fulton-ga');
-    }
-    expect(xmlText).not.toContain('/counties/georgia/fulton-ga');
-    expect(xmlText).not.toContain('/benefits/georgia/autism-spectrum-disorder/fulton-ga');
-
-    await page.goto('/benefits/georgia/fulton-ga');
-    const robotsMetaRoot = page.locator('meta[name="robots"]');
-    const rootCount = await robotsMetaRoot.count();
-    if (isIndexable) {
-      if (rootCount > 0) {
-        const content = await robotsMetaRoot.getAttribute('content');
-        expect(content).not.toContain('noindex');
-      }
-    } else {
-      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
-    }
-
-    await page.goto('/benefits/georgia/autism-spectrum-disorder/fulton-ga');
-    const robotsMeta = page.locator('meta[name="robots"]');
-    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
+    await expectCountyBenefitsSitemapMatchesRobots(page, 'georgia', 'fulton-ga');
   });
 });

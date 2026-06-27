@@ -1,5 +1,6 @@
 import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
+import { expectCountyBenefitsSitemapMatchesRobots } from './helpers/launch-sitemap';
 
 test.describe('Wyoming Multi-State Launch Smoke Tests', () => {
   
@@ -85,34 +86,6 @@ test.describe('Wyoming Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include Wyoming county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml');
-    expect(sitemapResponse?.status()).toBe(200);
-
-    const xmlText = await sitemapResponse.text();
-    const isIndexable = isIndexableState('wyoming');
-
-    if (isIndexable) {
-      expect(xmlText).toContain('/benefits/wyoming/laramie-wy');
-    } else {
-      expect(xmlText).not.toContain('/benefits/wyoming/laramie-wy');
-    }
-    expect(xmlText).not.toContain('/counties/wyoming/laramie-wy');
-    expect(xmlText).not.toContain('/benefits/wyoming/autism-spectrum-disorder/laramie-wy');
-
-    await page.goto('/benefits/wyoming/laramie-wy');
-    const robotsMetaRoot = page.locator('meta[name="robots"]');
-    const rootCount = await robotsMetaRoot.count();
-    if (isIndexable) {
-      if (rootCount > 0) {
-        const content = await robotsMetaRoot.getAttribute('content');
-        expect(content).not.toContain('noindex');
-      }
-    } else {
-      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
-    }
-
-    await page.goto('/benefits/wyoming/autism-spectrum-disorder/laramie-wy');
-    const robotsMeta = page.locator('meta[name="robots"]');
-    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
+    await expectCountyBenefitsSitemapMatchesRobots(page, 'wyoming', 'laramie-wy');
   });
 });

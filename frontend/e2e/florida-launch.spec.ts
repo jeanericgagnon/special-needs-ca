@@ -1,5 +1,6 @@
 import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
+import { expectCountyBenefitsSitemapMatchesRobots } from './helpers/launch-sitemap';
 
 test.describe('Florida Multi-State Launch Smoke Tests', () => {
   
@@ -105,34 +106,6 @@ test.describe('Florida Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include Florida county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml', { waitUntil: 'domcontentloaded' });
-    expect(sitemapResponse?.status()).toBe(200);
-
-    const xmlText = await sitemapResponse.text();
-    const isIndexable = isIndexableState('florida');
-
-    if (isIndexable) {
-      expect(xmlText).toContain('/benefits/florida/miami-dade-fl');
-    } else {
-      expect(xmlText).not.toContain('/benefits/florida/miami-dade-fl');
-    }
-    expect(xmlText).not.toContain('/counties/florida/miami-dade-fl');
-    expect(xmlText).not.toContain('/benefits/florida/autism-spectrum-disorder/miami-dade-fl');
-
-    await page.goto('/benefits/florida/miami-dade-fl', { waitUntil: 'domcontentloaded' });
-    const robotsMetaRoot = page.locator('meta[name="robots"]');
-    const rootCount = await robotsMetaRoot.count();
-    if (isIndexable) {
-      if (rootCount > 0) {
-        const content = await robotsMetaRoot.getAttribute('content');
-        expect(content).not.toContain('noindex');
-      }
-    } else {
-      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
-    }
-
-    await page.goto('/benefits/florida/autism-spectrum-disorder/miami-dade-fl', { waitUntil: 'domcontentloaded' });
-    const robotsMeta = page.locator('meta[name="robots"]');
-    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
+    await expectCountyBenefitsSitemapMatchesRobots(page, 'florida', 'miami-dade-fl');
   });
 });

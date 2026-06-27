@@ -2,17 +2,18 @@ import Database from 'better-sqlite3';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { resolveNavigatorDbPath } from './resolveNavigatorDbPath.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '../..');
-const dbPath = path.join(repoRoot, 'ca_disability_navigator.db');
+const dbPath = resolveNavigatorDbPath(repoRoot);
 const stateConfigsPath = path.join(repoRoot, 'frontend/src/lib/stateConfigs.ts');
 const verifiedCountiesPath = path.join(repoRoot, 'frontend/src/lib/verifiedCounties.ts');
 const publicTruthPath = path.join(repoRoot, 'frontend/src/lib/publicTruth.ts');
 const countyCatchAllPath = path.join(repoRoot, 'frontend/src/app/benefits/[state]/[[...slug]]/page.tsx');
 const countyLeafPath = path.join(repoRoot, 'frontend/src/app/benefits/[state]/[diagnosis]/[county]/page.tsx');
-const countyRootPath = path.join(repoRoot, 'frontend/src/app/counties/[state]/[slug]/page.tsx');
+const countyRootPath = path.join(repoRoot, 'frontend/src/app/counties/[state]/[county]/page.tsx');
 const homepagePath = path.join(repoRoot, 'frontend/src/app/page.tsx');
 const dashboardPath = path.join(repoRoot, 'frontend/src/app/dashboard/page.tsx');
 const sitemapPath = path.join(repoRoot, 'frontend/src/app/sitemaps/counties.xml/route.ts');
@@ -277,7 +278,7 @@ function buildRouteIntegrityAudits() {
       ]
     ),
     auditFileSurface(
-      'counties/[state]/[slug]/page.tsx',
+      'counties/[state]/[county]/page.tsx',
       countyRootContent,
       [
         { label: 'shared directory foundation panel is used', pattern: /DirectoryFoundationPanel/ },

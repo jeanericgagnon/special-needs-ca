@@ -1,5 +1,6 @@
 import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
+import { expectCountyBenefitsSitemapMatchesRobots } from './helpers/launch-sitemap';
 
 test.describe('Texas Multi-State Launch Smoke Tests', () => {
   
@@ -102,28 +103,6 @@ test.describe('Texas Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include Texas county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml');
-    expect(sitemapResponse?.status()).toBe(200);
-
-    const xmlText = await sitemapResponse.text();
-    expect(xmlText).not.toContain('/counties/texas/harris-tx');
-    expect(xmlText).not.toContain('/benefits/texas/autism-spectrum-disorder/harris-tx');
-
-    await page.goto('/benefits/texas/harris-tx');
-    const robotsMetaRoot = page.locator('meta[name="robots"]');
-    const rootCount = await robotsMetaRoot.count();
-    const countyRootInSitemap = xmlText.includes('/benefits/texas/harris-tx');
-
-    if (rootCount > 0) {
-      const content = (await robotsMetaRoot.getAttribute('content')) || '';
-      const isNoindex = /noindex/i.test(content);
-      expect(countyRootInSitemap).toBe(!isNoindex);
-    } else {
-      expect(countyRootInSitemap).toBe(true);
-    }
-
-    await page.goto('/benefits/texas/autism-spectrum-disorder/harris-tx');
-    const robotsMeta = page.locator('meta[name="robots"]');
-    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
+    await expectCountyBenefitsSitemapMatchesRobots(page, 'texas', 'harris-tx');
   });
 });

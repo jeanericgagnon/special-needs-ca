@@ -1,0 +1,3158 @@
+{
+  "generatedAt": "2026-06-27",
+  "sources": {
+    "currentTruth": "docs/generated/current-truth-audit-2026-06-26.json",
+    "countyDiagnosisRollout": "docs/generated/county-diagnosis-rollout-2026-06-16.json",
+    "advocateTruthCleanup": "docs/generated/advocate-truth-cleanup-audit-2026-06-17.json"
+  },
+  "summary": {
+    "strictGoldStates": 0,
+    "publicSafeButBlockedStates": 0,
+    "blockedStates": 50,
+    "legacyGoldStates": 0,
+    "registryMismatchStates": 0
+  },
+  "topBlockedStates": [],
+  "states": [
+    {
+      "id": "florida",
+      "name": "Florida",
+      "code": "FL",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 70,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1313
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 100,
+        "education": 95.5,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 33.3
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "53 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "53 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: fl-cdc-plus, fl-medicaid-dcf.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 95.5% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "21 DD routing rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "14 office rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "53 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "30 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "53 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "215 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "31 advocate/provider rows are only source-listed.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "new-york",
+      "name": "New York",
+      "code": "NY",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 57.9,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1116
+      },
+      "coverage": {
+        "ddRouting": 19.4,
+        "localOffices": 100,
+        "education": 19.4,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 33.3
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "50 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "50 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "24 rows are missing a public source URL or contact signal.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ny-opwdd-self-direction, ny-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 19.4% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 19.4% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "7 DD routing rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "12 office rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "50 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "20 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "50 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "198 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "26 advocate/provider rows are only source-listed.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "pennsylvania",
+      "name": "Pennsylvania",
+      "code": "PA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 55.6,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 973
+      },
+      "coverage": {
+        "ddRouting": 11.9,
+        "localOffices": 100,
+        "education": 11.9,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 33.3
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "59 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "59 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "16 rows are missing a public source URL or contact signal.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: pa-community-living-waiver, pa-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 11.9% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 11.9% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "8 DD routing rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "8 office rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "59 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "16 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "59 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "209 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "18 advocate/provider rows are only source-listed.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "georgia",
+      "name": "Georgia",
+      "code": "GA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 55,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 2184
+      },
+      "coverage": {
+        "ddRouting": 6.9,
+        "localOffices": 100,
+        "education": 6.9,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 33.3
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "148 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "148 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "22 rows are missing a public source URL or contact signal.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ga-now-waiver, ga-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 6.9% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 6.9% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "5 DD routing rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "11 office rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "148 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "16 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "148 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "488 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "24 advocate/provider rows are only source-listed.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "ohio",
+      "name": "Ohio",
+      "code": "OH",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 55,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1061
+      },
+      "coverage": {
+        "ddRouting": 8,
+        "localOffices": 100,
+        "education": 8,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 33.3
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "81 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "81 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "14 rows are missing a public source URL or contact signal.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: oh-level-one-waiver, oh-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 8% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 8% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "7 DD routing rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "7 office rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "81 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "14 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "81 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "271 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "16 advocate/provider rows are only source-listed.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "illinois",
+      "name": "Illinois",
+      "code": "IL",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 54.9,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1269
+      },
+      "coverage": {
+        "ddRouting": 9.8,
+        "localOffices": 100,
+        "education": 9.8,
+        "nonprofits": 100,
+        "advocates": 100,
+        "waitlists": 33.3
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "92 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "92 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "20 rows are missing a public source URL or contact signal.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: il-adults-dd-waiver, il-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 9.8% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 9.8% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "9 DD routing rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "10 office rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "92 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "19 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "92 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "316 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "22 advocate/provider rows are only source-listed.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "california",
+      "name": "California",
+      "code": "CA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 49.3,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 116
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 101.7,
+        "education": 37.9,
+        "nonprofits": 101.7,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "174 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "77 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "42 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 37.9% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "174 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "65 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "77 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "35 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "42 nonprofit rows are still unverified.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "wyoming",
+      "name": "Wyoming",
+      "code": "WY",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 45,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 27
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 100,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: wy-dd-waiver, wy-dd-self-direction, wy-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "hawaii",
+      "name": "Hawaii",
+      "code": "HI",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 28
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: hi-dd-waiver, hi-dd-self-direction, hi-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "iowa",
+      "name": "Iowa",
+      "code": "IA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 210
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ia-dd-waiver, ia-dd-self-direction, ia-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "kansas",
+      "name": "Kansas",
+      "code": "KS",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 432
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ks-dd-waiver, ks-dd-self-direction, ks-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "kentucky",
+      "name": "Kentucky",
+      "code": "KY",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 261
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ky-dd-waiver, ky-dd-self-direction, ky-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "missouri",
+      "name": "Missouri",
+      "code": "MO",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 967
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: mo-dd-waiver, mo-dd-self-direction, mo-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "nebraska",
+      "name": "Nebraska",
+      "code": "NE",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 100
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ne-dd-waiver, ne-dd-self-direction, ne-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "new-jersey",
+      "name": "New Jersey",
+      "code": "NJ",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 545
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: nj-dd-waiver, nj-dd-self-direction, nj-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "new-mexico",
+      "name": "New Mexico",
+      "code": "NM",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 117
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: nm-dd-waiver, nm-dd-self-direction, nm-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "oregon",
+      "name": "Oregon",
+      "code": "OR",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 146
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: or-dd-waiver, or-dd-self-direction, or-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "tennessee",
+      "name": "Tennessee",
+      "code": "TN",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 131
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: tn-dd-waiver, tn-dd-self-direction, tn-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "texas",
+      "name": "Texas",
+      "code": "TX",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 3551
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: tx-hcs, tx-class, tx-txhml, tx-mdcp, tx-eci, tx-tea-sped.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "virginia",
+      "name": "Virginia",
+      "code": "VA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 1435
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: va-dd-waiver, va-dd-self-direction, va-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "washington",
+      "name": "Washington",
+      "code": "WA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 343
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: wa-dd-waiver, wa-dd-self-direction, wa-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "wisconsin",
+      "name": "Wisconsin",
+      "code": "WI",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 39.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 172
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: wi-dd-waiver, wi-dd-self-direction, wi-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "alabama",
+      "name": "Alabama",
+      "code": "AL",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 33
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: al-dd-waiver, al-dd-self-direction, al-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "arkansas",
+      "name": "Arkansas",
+      "code": "AR",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 19
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ar-dd-waiver, ar-dd-self-direction, ar-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "colorado",
+      "name": "Colorado",
+      "code": "CO",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 564
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: co-dd-waiver, co-dd-self-direction, co-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "connecticut",
+      "name": "Connecticut",
+      "code": "CT",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 160
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ct-dd-waiver, ct-dd-self-direction, ct-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "delaware",
+      "name": "Delaware",
+      "code": "DE",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 13
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: de-dd-waiver, de-dd-self-direction, de-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "indiana",
+      "name": "Indiana",
+      "code": "IN",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 397
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: in-dd-waiver, in-dd-self-direction, in-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "louisiana",
+      "name": "Louisiana",
+      "code": "LA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 96
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: la-dd-waiver, la-dd-self-direction, la-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "maryland",
+      "name": "Maryland",
+      "code": "MD",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 307
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: md-dd-waiver, md-dd-self-direction, md-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "massachusetts",
+      "name": "Massachusetts",
+      "code": "MA",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 314
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ma-dd-waiver, ma-dd-self-direction, ma-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "michigan",
+      "name": "Michigan",
+      "code": "MI",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 641
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: mi-dd-waiver, mi-dd-self-direction, mi-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "minnesota",
+      "name": "Minnesota",
+      "code": "MN",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 373
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: mn-dd-waiver, mn-dd-self-direction, mn-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "mississippi",
+      "name": "Mississippi",
+      "code": "MS",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 8
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ms-dd-waiver, ms-dd-self-direction, ms-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "montana",
+      "name": "Montana",
+      "code": "MT",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 60
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: mt-dd-waiver, mt-dd-self-direction, mt-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "nevada",
+      "name": "Nevada",
+      "code": "NV",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 27
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: nv-dd-waiver, nv-dd-self-direction, nv-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "north-carolina",
+      "name": "North Carolina",
+      "code": "NC",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 864
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: nc-dd-waiver, nc-dd-self-direction, nc-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "north-dakota",
+      "name": "North Dakota",
+      "code": "ND",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 64
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: nd-dd-waiver, nd-dd-self-direction, nd-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "oklahoma",
+      "name": "Oklahoma",
+      "code": "OK",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 32
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ok-dd-waiver, ok-dd-self-direction, ok-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "rhode-island",
+      "name": "Rhode Island",
+      "code": "RI",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 34
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ri-dd-waiver, ri-dd-self-direction, ri-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "south-carolina",
+      "name": "South Carolina",
+      "code": "SC",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 127
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: sc-dd-waiver, sc-dd-self-direction, sc-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "south-dakota",
+      "name": "South Dakota",
+      "code": "SD",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 2
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: sd-dd-waiver, sd-dd-self-direction, sd-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "utah",
+      "name": "Utah",
+      "code": "UT",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 92
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ut-dd-waiver, ut-dd-self-direction, ut-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "vermont",
+      "name": "Vermont",
+      "code": "VT",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 18
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: vt-dd-waiver, vt-dd-self-direction, vt-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "west-virginia",
+      "name": "West Virginia",
+      "code": "WV",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 31.7,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 14
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: wv-dd-waiver, wv-dd-self-direction, wv-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "alaska",
+      "name": "Alaska",
+      "code": "AK",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 24.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 8
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ak-dd-waiver, ak-dd-self-direction, ak-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "arizona",
+      "name": "Arizona",
+      "code": "AZ",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 24.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 113
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: az-dd-waiver, az-dd-self-direction, az-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "idaho",
+      "name": "Idaho",
+      "code": "ID",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 24.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 186
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: id-dd-waiver, id-dd-self-direction, id-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "maine",
+      "name": "Maine",
+      "code": "ME",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 24.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 22
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: me-dd-waiver, me-dd-self-direction, me-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
+      "id": "new-hampshire",
+      "name": "New Hampshire",
+      "code": "NH",
+      "status": "blocked",
+      "publicSafe": false,
+      "indexSafe": false,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 24.2,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 93
+      },
+      "coverage": {
+        "ddRouting": 0,
+        "localOffices": 0,
+        "education": 0,
+        "nonprofits": 0,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "Route integrity audit failed for: counties/[state]/[slug]/page.tsx.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: nh-dd-waiver, nh-dd-self-direction, nh-medicaid.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "DD routing covers 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Core office coverage is 0% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 0% of expected counties.",
+          "source": "current-truth"
+        }
+      ]
+    }
+  ]
+}

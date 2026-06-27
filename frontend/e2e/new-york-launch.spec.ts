@@ -1,5 +1,6 @@
 import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
+import { expectCountyBenefitsSitemapMatchesRobots } from './helpers/launch-sitemap';
 
 test.describe('New York Multi-State Launch Smoke Tests', () => {
   
@@ -103,34 +104,6 @@ test.describe('New York Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include New York county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml');
-    expect(sitemapResponse?.status()).toBe(200);
-
-    const xmlText = await sitemapResponse.text();
-    const isIndexable = isIndexableState('new-york');
-
-    if (isIndexable) {
-      expect(xmlText).toContain('/benefits/new-york/kings-ny');
-    } else {
-      expect(xmlText).not.toContain('/benefits/new-york/kings-ny');
-    }
-    expect(xmlText).not.toContain('/counties/new-york/kings-ny');
-    expect(xmlText).not.toContain('/benefits/new-york/autism-spectrum-disorder/kings-ny');
-
-    await page.goto('/benefits/new-york/kings-ny');
-    const robotsMetaRoot = page.locator('meta[name="robots"]');
-    const rootCount = await robotsMetaRoot.count();
-    if (isIndexable) {
-      if (rootCount > 0) {
-        const content = await robotsMetaRoot.getAttribute('content');
-        expect(content).not.toContain('noindex');
-      }
-    } else {
-      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
-    }
-
-    await page.goto('/benefits/new-york/autism-spectrum-disorder/kings-ny');
-    const robotsMeta = page.locator('meta[name="robots"]');
-    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
+    await expectCountyBenefitsSitemapMatchesRobots(page, 'new-york', 'kings-ny');
   });
 });

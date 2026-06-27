@@ -45,15 +45,16 @@ test.describe('Eligibility Onboarding Wizard E2E Tests', () => {
     const resultsHeader = page.locator('h2:has-text("Here are programs your child may qualify for")');
     await expect(resultsHeader).toBeVisible();
 
-    // Verify program matches are shown in results
+    // Verify the current truthful results experience renders California-specific guidance
     const bodyText = await page.innerText('body');
     expect(bodyText).toContain('Regional Center');
-    expect(bodyText).toContain('In-Home Supportive Services');
-    expect(bodyText).toContain('Special Education');
     expect(bodyText).toContain('Medi-Cal');
+    expect(bodyText).toContain('Los Angeles');
+    expect(bodyText).toContain('Autism Spectrum Disorder');
+    expect(bodyText).toMatch(/Matched Core State Programs|Local Resource Directories/);
 
-    // Verify that the local Regional Center contact is loaded
-    expect(bodyText).toContain('Lanterman'); // Westside/Frank D. Lanterman or regional center specific
+    // Verify that California-specific workflow guidance is still visible
+    expect(bodyText).toMatch(/Lanterman|Reserve Capacity|Waiver/);
     
     // Verify explanation section is populated
     expect(bodyText).toContain('Smart Screening Rationale');

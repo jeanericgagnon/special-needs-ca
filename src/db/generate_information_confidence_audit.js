@@ -2,11 +2,12 @@ import Database from 'better-sqlite3';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { resolveNavigatorDbPath } from './resolveNavigatorDbPath.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, '../..');
-const dbPath = path.join(repoRoot, 'ca_disability_navigator.db');
+const dbPath = resolveNavigatorDbPath(repoRoot);
 const stateConfigsPath = path.join(repoRoot, 'frontend/src/lib/stateConfigs.ts');
 const docsDir = path.join(repoRoot, 'docs/generated');
 const generatedDate = new Date().toISOString().slice(0, 10);

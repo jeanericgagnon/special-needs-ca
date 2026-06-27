@@ -1,5 +1,6 @@
 import { isIndexableState } from '../src/lib/publicTruth';
 import { test, expect } from '@playwright/test';
+import { expectCountyBenefitsSitemapMatchesRobots } from './helpers/launch-sitemap';
 
 test.describe('New Jersey Multi-State Launch Smoke Tests', () => {
   
@@ -85,34 +86,6 @@ test.describe('New Jersey Multi-State Launch Smoke Tests', () => {
   });
 
   test('Sitemap quality gates include New Jersey county roots and leaves in sitemap', async ({ page }) => {
-    const sitemapResponse = await page.goto('/sitemaps/counties.xml');
-    expect(sitemapResponse?.status()).toBe(200);
-
-    const xmlText = await sitemapResponse.text();
-    const isIndexable = isIndexableState('new-jersey');
-
-    if (isIndexable) {
-      expect(xmlText).toContain('/benefits/new-jersey/bergen-nj');
-    } else {
-      expect(xmlText).not.toContain('/benefits/new-jersey/bergen-nj');
-    }
-    expect(xmlText).not.toContain('/counties/new-jersey/bergen-nj');
-    expect(xmlText).not.toContain('/benefits/new-jersey/autism-spectrum-disorder/bergen-nj');
-
-    await page.goto('/benefits/new-jersey/bergen-nj');
-    const robotsMetaRoot = page.locator('meta[name="robots"]');
-    const rootCount = await robotsMetaRoot.count();
-    if (isIndexable) {
-      if (rootCount > 0) {
-        const content = await robotsMetaRoot.getAttribute('content');
-        expect(content).not.toContain('noindex');
-      }
-    } else {
-      await expect(robotsMetaRoot).toHaveAttribute('content', /noindex/i);
-    }
-
-    await page.goto('/benefits/new-jersey/autism-spectrum-disorder/bergen-nj');
-    const robotsMeta = page.locator('meta[name="robots"]');
-    await expect(robotsMeta).toHaveAttribute('content', /noindex/i);
+    await expectCountyBenefitsSitemapMatchesRobots(page, 'new-jersey', 'bergen-nj');
   });
 });
