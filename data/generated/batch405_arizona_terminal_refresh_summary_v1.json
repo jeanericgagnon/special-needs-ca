@@ -1,12 +1,28 @@
 {
   "batch": "batch405_arizona_terminal_refresh_v1",
-  "generated_at": "2026-06-27T00:49:09.611Z",
+  "generated_at": "2026-06-27T02:04:01.282Z",
   "classification": "BLOCKED",
   "des_wrapper_403": true,
   "des_wrapper_roots_browser_readable": false,
   "des_wrapper_shell_only": true,
   "des_salesforce_live": true,
   "des_explicit_county_total": 14,
+  "covered_explicit_counties": [
+    "Apache",
+    "Cochise",
+    "Coconino",
+    "Gila",
+    "Graham",
+    "La Paz",
+    "Maricopa",
+    "Mohave",
+    "Navajo",
+    "Pima",
+    "Pinal",
+    "Santa Cruz",
+    "Yavapai",
+    "Yuma"
+  ],
   "missing_explicit_counties": [
     "Greenlee"
   ],

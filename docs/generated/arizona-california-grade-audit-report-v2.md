@@ -46,6 +46,11 @@
 
 - [critical] county_local_disability_resources: hold_blocked_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_new_reviewable_county_to_office_contract
 
+## County-local accounting
+
+- explicitly covered counties (14/15): Apache, Cochise, Coconino, Gila, Graham, La Paz, Maricopa, Mohave, Navajo, Pima, Pinal, Santa Cruz, Yavapai, and Yuma
+- unsupported counties (1/15): Greenlee
+
 ## Completion decision
 
 - Arizona remains BLOCKED and not index-safe.
