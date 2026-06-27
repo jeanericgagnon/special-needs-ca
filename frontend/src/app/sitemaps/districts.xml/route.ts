@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
 import { navigatorDb } from '@/lib/db';
 import { evaluateSeoPolicy, shouldIncludeInSitemap } from '@/lib/seo-policy';
+import { CANONICAL_SITE_URL } from '@/lib/site-url';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const baseUrl = CANONICAL_SITE_URL;
 
   let activeDistricts: { id: string; state_id: string; last_verified_date: string | null }[] = [];
   try {

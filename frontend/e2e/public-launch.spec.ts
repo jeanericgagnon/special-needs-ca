@@ -14,10 +14,17 @@ test.describe('Public Launch Smoke Tests', () => {
     await expect(canonical).toHaveAttribute('href', 'https://ablefull.org');
   });
 
-  test('/benefits redirects to /benefits/california', async ({ page }) => {
-    // Navigate to /benefits and verify it redirects to /benefits/california
-    await page.goto('/benefits');
-    expect(page.url()).toContain('/benefits/california');
+  test('/benefits loads as a public landing page with a California launch path', async ({ page }) => {
+    const response = await page.goto('/benefits');
+    expect(response?.status()).toBe(200);
+    expect(page.url()).toContain('/benefits');
+
+    const bodyText = await page.innerText('body');
+    expect(bodyText).toContain('Find benefits, forms, and next steps by diagnosis, age, county, and need');
+    expect(bodyText).toContain('Open California benefits guides');
+
+    const canonical = page.locator('link[rel="canonical"]');
+    await expect(canonical).toHaveAttribute('href', 'https://ablefull.org/benefits');
   });
 
   test('/benefits/california, /counties/california, /forms, /advocates load without crash', async ({ page }) => {

@@ -48,13 +48,14 @@ test.describe('Find Help Tools Hub & Redirections E2E Tests', () => {
     // Select Texas
     await page.selectOption('select', 'texas');
 
-    // Check that Texas local agency LIDDA and Texas Medicaid waiver are mentioned
-    await expect(page.locator('body')).toContainText('LIDDA');
+    // Check that Texas-specific waiver and Medicaid routing context are mentioned
+    await expect(page.locator('body')).toContainText('HCS Waiver');
+    await expect(page.locator('body')).toContainText('Texas Medicaid');
     await expect(page.locator('body')).not.toContainText('California DDS Purchase of Service');
 
     // Select Florida
     await page.selectOption('select', 'florida');
-    await expect(page.locator('body')).toContainText('ABLE United');
+    await expect(page.locator('body')).toContainText(/ABLE United|Florida ABLE/i);
   });
 
   test('/counties root route redirects to /counties/california', async ({ page }) => {

@@ -1,4 +1,4 @@
-import { getPublishedProvenanceIssues, hasMinimumPublishedProvenance } from './publishedProvenance';
+import { getPublishedProvenanceIssues, hasMinimumPublishedProvenance } from './publishedProvenance.ts';
 
 const AVAILABILITY_STATUSES = [
   'available',
@@ -158,6 +158,24 @@ const INVALID_SOURCE_HOSTS = [
   /^www\.pediatrictherapy\./,
   /^[a-z]{2}-pa\.org$/,
 ] as const;
+const PLACEHOLDER_SITE_HOSTS = [
+  /^example\.(com|org|net)$/i,
+  /^www\.example\.(com|org|net)$/i,
+  /^localhost$/i,
+  /^127\.0\.0\.1$/i,
+  /^0\.0\.0\.0$/i,
+  /^ablefull\.org$/i,
+  /^www\.ablefull\.org$/i,
+  /^state\.gov$/i,
+  /^www\.state\.gov$/i,
+] as const;
+const PLACEHOLDER_EMAIL_PATTERNS = [
+  /@example\.(com|org|net)$/i,
+  /^test@/i,
+  /^fake@/i,
+  /^dummy@/i,
+  /^placeholder@/i,
+] as const;
 const VERIFIED_DIRECTORY_STATUSES = new Set(['verified', 'official_verified', 'human_verified', 'source_listed']);
 
 export function parseDirectoryList(value?: string | null): string[] {
@@ -289,10 +307,48 @@ export function isSyntheticDirectoryUrl(url?: string | null): boolean {
   if (!url) return false;
   try {
     const parsed = new URL(url);
-    return INVALID_SOURCE_HOSTS.some((pattern) => pattern.test(parsed.hostname));
+    const pathname = parsed.pathname.toLowerCase();
+    if (
+      (parsed.hostname === 'www.google.com' || parsed.hostname === 'google.com') &&
+      pathname === '/search'
+    ) {
+      return true;
+    }
+    if (
+      (parsed.hostname === 'www.bing.com' || parsed.hostname === 'bing.com') &&
+      pathname === '/search'
+    ) {
+      return true;
+    }
+    return INVALID_SOURCE_HOSTS.some((pattern) => pattern.test(parsed.hostname)) ||
+      PLACEHOLDER_SITE_HOSTS.some((pattern) => pattern.test(parsed.hostname));
   } catch {
     return true;
   }
+}
+
+export function isMeaningfulDirectoryPhone(phone?: string | null): boolean {
+  const trimmed = String(phone || '').trim();
+  if (!trimmed) return false;
+  const digits = trimmed.replace(/\D/g, '');
+  if (digits.length < 10) return false;
+  if (digits.startsWith('555') || digits.slice(3, 6) === '555') return false;
+  if (/^(\d)\1+$/.test(digits)) return false;
+  if (digits.endsWith('1234') || digits.endsWith('0000')) return false;
+  return true;
+}
+
+export function isMeaningfulDirectoryEmail(email?: string | null): boolean {
+  const trimmed = String(email || '').trim().toLowerCase();
+  if (!trimmed) return false;
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) return false;
+  return !PLACEHOLDER_EMAIL_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
+export function isMeaningfulDirectoryWebsite(url?: string | null): boolean {
+  const trimmed = String(url || '').trim();
+  if (!trimmed) return false;
+  return !isSyntheticDirectoryUrl(trimmed);
 }
 
 export function isLikelySyntheticAdvocateProfile(record: DirectoryFoundationRecord): boolean {
@@ -384,6 +440,22 @@ export function validateDirectoryFoundationRecord(record: DirectoryFoundationRec
     issues.push('likely_synthetic_advocate_profile');
   }
 
+  if (record.phone && !isMeaningfulDirectoryPhone(record.phone)) {
+    issues.push('invalid_public_phone');
+  }
+
+  if (record.next_step_phone && !isMeaningfulDirectoryPhone(record.next_step_phone)) {
+    issues.push('invalid_public_next_step_phone');
+  }
+
+  if (record.email && !isMeaningfulDirectoryEmail(record.email)) {
+    issues.push('invalid_public_email');
+  }
+
+  if (record.next_step_email && !isMeaningfulDirectoryEmail(record.next_step_email)) {
+    issues.push('invalid_public_next_step_email');
+  }
+
   return issues;
 }
 
@@ -404,6 +476,10 @@ export function isRenderableDirectoryFoundationRecord(record: DirectoryFoundatio
   return !issues.includes('synthetic_source_url') &&
     !issues.includes('synthetic_website') &&
     !issues.includes('synthetic_action_url') &&
+    !issues.includes('invalid_public_phone') &&
+    !issues.includes('invalid_public_next_step_phone') &&
+    !issues.includes('invalid_public_email') &&
+    !issues.includes('invalid_public_next_step_email') &&
     !issues.includes('missing_source_url') &&
     !issues.includes('missing_source_type') &&
     !issues.includes('missing_data_origin') &&

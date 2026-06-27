@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { Search } from 'lucide-react';
 import Link from 'next/link';
 import AdvocateDirectoryClient from './advocate-directory-client';
+import SourceFreshnessDisclosure, { type DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
 
 
 type Props = {
@@ -18,8 +19,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     : 'California';
 
   return {
-    title: `IEP Advocates & Special Ed Advisors in ${countyName} (2026)`,
-    description: `Find special education IEP advocates in ${countyName}. Compare experience, hourly rates, credentials, and languages to advocate for your child in school.`,
+    title: `California IEP Advocate Listings in ${countyName}`,
+    description: `Review source-backed California special education advocate listings in ${countyName}, including contact details, counties served, and public source notes.`,
     alternates: {
       canonical: `/advocates`
     },
@@ -39,8 +40,18 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
 
   // 2. Fetch advocates (filter by county if selected, defaulting to California statewide if not)
   const advocates = (await getIepAdvocates(selectedCounty, 'california')).filter(isPublicDirectoryRecordEligible);
-  const verifiedAdvocates = advocates.filter(adv => adv.verification_status === 'verified');
-
+  const disclosureSources: DisclosureSource[] = advocates
+    .filter((advocate) => advocate.source_url)
+    .map((advocate) => ({
+      name: advocate.name,
+      url: advocate.source_url || undefined,
+      lastReviewedDate: advocate.last_verified_date || null,
+      verificationStatus: advocate.verification_status || 'unverified',
+      sourceType: advocate.source_type || 'public_listing',
+      confidenceScore: advocate.confidence_score ?? null,
+    }))
+    .filter((source, index, arr) => arr.findIndex((candidate) => candidate.url === source.url) === index)
+    .slice(0, 8);
   // Get name of selected county
   const selectedCountyName = selectedCounty
     ? counties.find(c => c.id === selectedCounty)?.name || selectedCounty
@@ -55,7 +66,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
           California IEP Advocates Directory
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '800px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-          Source-backed special education advisors, consultants, and legal advocates who help families secure accommodation services, IEP goals, and inclusion placements.
+          Publicly listed California special education advocates and advisor organizations with source notes, freshness dates, and contact details. Families should still verify fit, credentials, and availability before relying on a listing.
         </p>
       </div>
 
@@ -120,7 +131,7 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
         <h2 style={{ fontSize: '1.25rem', fontWeight: 600, margin: 0 }}>
           {selectedCountyName 
             ? `Advocates Serving ${selectedCountyName}` 
-            : 'All Registered California Advocates'}
+            : 'California Advocate Listings'}
           <span style={{ fontSize: '0.95rem', color: 'var(--text-light)', fontWeight: 400, marginLeft: '0.75rem' }}>
             ({advocates.length} results)
           </span>
@@ -144,37 +155,15 @@ export default async function AdvocatesDirectoryPage({ searchParams }: Props) {
       {/* Directory Cards Grid with search/sort client */}
       <AdvocateDirectoryClient initialAdvocates={advocates} selectedCounty={selectedCounty} />
 
-      {/* JSON-LD ProfessionalService Schema Markup for Local SEO */}
-      {verifiedAdvocates.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": verifiedAdvocates.map(adv => ({
-                "@type": "ProfessionalService",
-                "name": adv.name,
-                "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400",
-                "telephone": adv.phone,
-                "email": adv.email,
-                "url": adv.website,
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": adv.counties_served.split(',')[0]?.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || "California",
-                  "addressRegion": "CA",
-                  "addressCountry": "US"
-                },
-                "description": `${adv.name} is a professional special education IEP advocate with ${adv.experience_years} years of experience. Credentials: ${adv.credentials}. Hourly rate info: ${adv.price_rate}. Languages: ${adv.languages_spoken}.`,
-                "priceRange": adv.price_rate,
-                "areaServed": adv.counties_served.split(',').map(s => ({
-                  "@type": "AdministrativeArea",
-                  "name": s.trim().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) + " County"
-                }))
-              }))
-            })
-          }}
+      {disclosureSources.length > 0 ? (
+        <SourceFreshnessDisclosure
+          sources={disclosureSources}
+          correctionSuggestionType="other"
+          correctionTargetId={`advocates-${selectedCounty || 'california'}`}
+          correctionTargetName={selectedCountyName ? `California advocates serving ${selectedCountyName}` : 'California advocates directory'}
+          correctionButtonLabel="Report an advocate listing issue"
         />
-      )}
+      ) : null}
     </main>
   );
 }

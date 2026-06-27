@@ -1,10 +1,13 @@
-import { getCounties, getStateByIdOrCode } from '@/lib/db';
+import { getBulkCountyDetails, getCounties, getStateByIdOrCode } from '@/lib/db';
 import { Metadata } from 'next';
 import { MapPin } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import CountiesClient from './counties-client';
 import { getSeoPolicyForRoute } from '@/lib/seo-policy';
 import { getPartialStatePolicy, isLaunchSurfaceSuppressed } from '@/lib/launchStatePolicy';
+import SourceFreshnessDisclosure, { type DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
+import ContributionModal from '@/components/contribution-modal';
+import { isPublicCountyOfficeEligible, isPublicRecordEligible } from '@/lib/publicTruth';
 
 type Props = {
   params: Promise<{ state: string }>;
@@ -44,8 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     hasNoPlaceholderData: true
   });
   return {
-    title: `${stateData.name} Counties Special Needs Resource Directories (2026)`,
-    description: `Select your ${stateData.name} county to access local developmental services, ${catchment} boundary details, Medicaid waiver rates, and special education advocates.`,
+    title: `${stateData.name} County Disability Resource Directories`,
+    description: `Select your ${stateData.name} county to review source-backed local routing for ${catchment}, county offices, school support contacts, and related public benefit pathways.`,
     alternates: {
       canonical: `/counties/${stateData.id}`
     },
@@ -64,6 +67,32 @@ export default async function CountiesDirectoryPage({ params }: Props) {
   const counties = await getCounties(stateData.id);
   const catchment = config.catchmentName;
   const partialStatePolicy = getPartialStatePolicy(stateData.id);
+  const countyDetailsMap = await getBulkCountyDetails(stateData.id);
+  const disclosureSources: DisclosureSource[] = Array.from(
+    countyDetailsMap.values()
+  )
+    .flatMap((details) => [
+      ...(details.regionalCenters || []).filter(isPublicRecordEligible),
+      ...(details.schoolDistricts || []).filter(isPublicRecordEligible),
+      ...(details.countyOffices || []).filter(isPublicCountyOfficeEligible),
+      ...(details.selpas || []).filter(isPublicRecordEligible),
+    ])
+    .filter((record) => Boolean(record?.source_url))
+    .reduce<DisclosureSource[]>((sources, record) => {
+      const key = `${record.source_url}|${record.name || record.office_name || record.id}`;
+      if (sources.some((source) => `${source.url}|${source.name}` === key)) {
+        return sources;
+      }
+      sources.push({
+        name: record.name || record.office_name || 'Public local source',
+        url: record.source_url || undefined,
+        lastReviewedDate: record.last_verified_date || record.last_scraped_at || undefined,
+        sourceType: record.source_type || record.data_origin || 'directory_record',
+        confidenceScore: typeof record.confidence_score === 'number' ? record.confidence_score : null,
+      });
+      return sources;
+    }, [])
+    .slice(0, 10);
 
   if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'state-counties-hub')) {
     return (
@@ -88,6 +117,14 @@ export default async function CountiesDirectoryPage({ params }: Props) {
             <p style={{ margin: 0, lineHeight: 1.6, color: 'var(--text-light)' }}>
               The statewide audit surface can stay visible, but county, district, and city pages remain gated and noindex until the official public local proof is reviewable.
             </p>
+            <div style={{ marginTop: '1rem' }}>
+              <ContributionModal
+                suggestionType="other"
+                targetId={`${stateData.id}-counties-proof-gap`}
+                targetName={`${stateData.name} county local routing evidence`}
+                buttonLabel="Suggest a local source to review"
+              />
+            </div>
           </div>
         </div>
       </main>
@@ -116,11 +153,22 @@ export default async function CountiesDirectoryPage({ params }: Props) {
           {stateData.name} Counties Directory
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '850px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-          Select your county to find direct lines to {catchment} intake desks, county service offices, special education support, and neighborhood helper hubs.
+          Select your county to review source-backed routing for {catchment} intake desks, county service offices, and school support contacts. Thin or unverified local sections stay gated until we can review stronger public proof.
         </p>
       </div>
 
       <CountiesClient counties={counties} stateCode={stateData.code.toLowerCase()} stateName={stateData.name} />
+      {disclosureSources.length > 0 ? (
+        <div style={{ marginTop: '2rem' }}>
+          <SourceFreshnessDisclosure
+            sources={disclosureSources}
+            correctionSuggestionType="other"
+            correctionTargetId={`counties-${stateData.id}`}
+            correctionTargetName={`${stateData.name} counties directory`}
+            correctionButtonLabel="Report a correction"
+          />
+        </div>
+      ) : null}
     </main>
   );
 }

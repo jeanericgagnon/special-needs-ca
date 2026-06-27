@@ -29,7 +29,7 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
 
     expect(hasForms).toBe(true);
     expect(hasBenefits).toBe(true);
-    expect(hasAdvocates).toBe(true);
+    expect(hasAdvocates).toBe(false);
 
     // High value guide pages must stay consistent with their live robots policy.
     const sampleGuides = [
@@ -57,6 +57,7 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
     // Excluded routes
     const hasDashboard = staticUrls.some(url => url.includes('/dashboard'));
     const hasLogin = staticUrls.some(url => url.includes('/login'));
+    expect(hasAdvocates).toBe(false);
     expect(hasDashboard).toBe(false);
     expect(hasLogin).toBe(false);
   });
@@ -127,7 +128,7 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
       const canonical = page.locator('link[rel="canonical"]');
       await expect(canonical).toHaveAttribute('href', `https://ablefull.org${indexedPath}`);
 
-      const freshness = page.locator('text=Verified Sources & Freshness Information');
+      const freshness = page.getByText(/Source (Notes|Verified Sources) & Freshness Information/i);
       await expect(freshness).toBeVisible();
 
       const correction = page.locator('button:has-text("Suggest update")');

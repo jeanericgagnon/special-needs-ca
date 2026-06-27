@@ -34,7 +34,7 @@ test.describe('County Page Detail E2E Tests (Desktop)', () => {
       expect(bodyText).toContain('Nonprofit Support & Local Resources');
 
       // 3. Trust badge/status labels & freshness disclosure
-      const freshness = page.locator('text=Verified Sources & Freshness Information');
+      const freshness = page.getByText(/Source (Notes|Verified Sources) & Freshness Information/i);
       await expect(freshness).toBeVisible();
 
       // Check for correction flow

@@ -15,8 +15,8 @@ export function getCountyMetadata(
   countyDetails: CountyDetails
 ) {
   const countyName = countyDetails.name;
-  let title = `${countyName} County Special Needs Benefits & Resources (${stateCode})`;
-  let description = `Find local service helpline numbers, school district offices, and catchment boundaries for ${countyName} County, ${stateName}.`;
+  let title = `${countyName} County Disability Benefits & Local Support (${stateCode})`;
+  let description = `Find source-backed local service contacts, school district offices, and catchment boundaries for ${countyName} County, ${stateName}.`;
 
   const verifiedOffice = countyDetails.countyOffices?.find(
     (o: CountyOffice) => o.verification_status === 'official_verified'
@@ -24,14 +24,14 @@ export function getCountyMetadata(
 
   if (stateId === 'texas') {
     const eciContractor = countyDetails.regionalCenters?.[0]?.name;
-    title = `${countyName} County ECI & LIDDA Special Needs Resources, TX`;
-    description = `Access local resource coordinates for families in ${countyName} County, Texas. Includes ${
+    title = `${countyName} County ECI & LIDDA Support, TX`;
+    description = `Access source-backed local routing for families in ${countyName} County, Texas. Includes ${
       eciContractor || 'Early Childhood Intervention (ECI)'
     } contacts, local health and human services offices, and school district IEP departments.`;
   } else if (stateId === 'florida') {
     const apdOffice = countyDetails.regionalCenters?.[0]?.name;
-    title = `${countyName} County APD Waiver & Special Needs Resources, FL`;
-    description = `Find contact numbers and intake details for the ${
+    title = `${countyName} County APD Waiver & Disability Support, FL`;
+    description = `Find source-backed contact numbers and intake details for the ${
       apdOffice || 'APD Area Office'
     } serving ${countyName} County, Florida, plus local school district student services and nonprofit support networks.`;
   } else if (stateId === 'pennsylvania') {
@@ -54,14 +54,13 @@ export function getCountyIntroCopy(
   stateCode: string,
   countyDetails: CountyDetails,
   countyWage: number | null,
-  catchmentLabel: string,
-  _insuranceLabel: string
+  catchmentLabel: string
 ) {
   const countyName = countyDetails.name;
   
   if (stateId === 'texas') {
     const eciContract = countyDetails.regionalCenters?.[0]?.name || 'a local ECI contractor';
-    return `For families navigating special needs in ${countyName} County, Texas, services are split by age and department:
+    return `For families navigating disability services in ${countyName} County, Texas, services are split by age and department:
 1. **Under Age 3 (Early Childhood Intervention):** Your local intake is managed by **${eciContract}**. This is a localized program coordinating physical, occupational, and speech therapies at home or daycare.
 2. **Age 3 and Older (LIDDA):** Your primary point of contact for developmental waivers (like HCS, CLASS, and TxHmL) is your Local Intellectual and Developmental Disability Authority (LIDDA). They coordinate long-term services and interest list placements.
 3. **Medicaid & Caregiver Support:** General benefits and the MDCP program are administered by the Texas Health and Human Services Commission (HHSC). Check the current HHSC or provider materials for the latest local home-care pay rate in ${countyName}.
@@ -87,9 +86,9 @@ export function getCountyIntroCopy(
 
   if (stateId === 'california') {
     const rcName = countyDetails.regionalCenters?.[0]?.name || 'your local Regional Center';
-    return `Families seeking disability services in ${countyName} County, California, have access to a structured local system:
+    return `Families seeking disability services in ${countyName} County, California, can use this local public system as a starting point:
 1. **Regional Center Coordination:** Intake for the Lanterman Act, Early Start (0-3), and the Self-Determination Program is managed by **${rcName}**. They serve as the single point of coordination for lifelong developmental services.
-2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. Any wage number we show is an estimate and should be confirmed with the current county IHSS office before you rely on it.
+2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. Any wage number we show is a checked public estimate, not a county pay guarantee, and should be confirmed with the current county IHSS office before you rely on it.
 3. **Special Education boundaries:** School districts are grouped into Special Education Local Plan Areas (SELPAs) to share resources and coordinate regional services.`;
   }
 

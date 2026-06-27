@@ -3,14 +3,21 @@
 import { useDeferredValue, useEffect, useRef, useState } from 'react';
 import { 
   Phone, Mail, Globe, MapPin, Award, Search, 
-  SlidersHorizontal, Star, ChevronDown, ChevronUp, Send 
+  SlidersHorizontal, ChevronDown, ChevronUp, Send 
 } from 'lucide-react';
 import CopyButton from '@/components/copy-button';
 import ContributionModal from '@/components/contribution-modal';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import type { DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
 import DirectoryReviews from '@/app/dashboard/components/DirectoryReviews';
 import { trackDirectoryAnalyticsEvent } from '@/lib/directoryAnalytics';
+import {
+  isMeaningfulDirectoryEmail,
+  isMeaningfulDirectoryPhone,
+  isMeaningfulDirectoryWebsite,
+  isRenderableDirectoryFoundationRecord,
+} from '@/lib/directoryFoundation';
 
 interface Advocate {
   id: string;
@@ -29,6 +36,12 @@ interface Advocate {
   description?: string | null;
   verification_status?: string | null;
   last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  source_name?: string | null;
+  data_origin?: string | null;
+  confidence_score?: number | null;
 }
 
 interface AdvocateDirectoryClientProps {
@@ -99,7 +112,24 @@ export default function AdvocateDirectoryClient({ initialAdvocates, selectedCoun
     );
   };
 
-  const filteredAdvocates = initialAdvocates.filter(adv => {
+  const renderableAdvocates = initialAdvocates.filter((adv) => isRenderableDirectoryFoundationRecord({
+    id: adv.id,
+    name: adv.name,
+    categories: adv.specialties || 'iep_advocacy',
+    website: adv.website,
+    phone: adv.phone,
+    email: adv.email,
+    source_url: adv.source_url,
+    source_type: adv.source_type,
+    data_origin: adv.data_origin,
+    source_name: adv.source_name,
+    verification_status: adv.verification_status,
+    confidence_score: adv.confidence_score,
+    last_verified_date: adv.last_verified_date,
+    last_scraped_at: adv.last_scraped_at,
+  }));
+
+  const filteredAdvocates = renderableAdvocates.filter(adv => {
     // 1. Search text query
     const q = searchQuery.toLowerCase();
     const matchesSearch = 
@@ -136,6 +166,36 @@ export default function AdvocateDirectoryClient({ initialAdvocates, selectedCoun
 
     return true;
   });
+
+  const disclosureSources: DisclosureSource[] = Array.from(
+    new Map(
+      renderableAdvocates
+        .flatMap((adv) => {
+          const url = adv.source_url?.trim();
+          if (!url) return [];
+
+          let sourceLabel = adv.source_name?.trim() || adv.organization_affiliation?.trim() || adv.name;
+          try {
+            const parsed = new URL(url);
+            sourceLabel = adv.source_name?.trim() || parsed.hostname.replace(/^www\./, '');
+          } catch {
+            // Keep the fallback source label when the URL is malformed.
+          }
+
+          return [[
+            url,
+            {
+              name: sourceLabel,
+              url,
+              lastReviewedDate: adv.last_verified_date || adv.last_scraped_at || null,
+              verificationStatus: adv.verification_status || null,
+              sourceType: adv.source_type || adv.data_origin || null,
+              confidenceScore: adv.confidence_score ?? null,
+            } satisfies DisclosureSource,
+          ] as const];
+        })
+    ).values()
+  ).slice(0, 8);
 
   const getNumericPrice = (rateString: string) => {
     const cleanStr = rateString.replace(/[^0-9]/g, '');
@@ -436,8 +496,8 @@ Best regards,
         <span style={{ fontSize: '1.25rem', lineHeight: 1 }}>⚠️</span>
         <div>
           <strong>Important Directory Disclaimer:</strong> The listings in this directory are community-sourced or public listings. 
-          <strong> Inclusion does not constitute an endorsement, recommendation, or verification</strong> of credentials by the Ablefull team. 
-          Please independently verify credentials, references, and billing policies locally before hiring any professional advisor.
+          <strong> Inclusion does not constitute an endorsement or credential review</strong> by the Ablefull team. 
+          We are still verifying local advocate depth county by county, so please confirm credentials, service area, availability, and billing policies directly before relying on a listing.
         </div>
       </div>
 
@@ -445,15 +505,20 @@ Best regards,
       {sortedAdvocates.length === 0 ? (
         <div className="glass-panel" style={{ textAlign: 'center', padding: '4rem 2rem', borderRadius: '20px', background: 'rgba(255,255,255,0.6)' }}>
           <p style={{ fontSize: '1.05rem', color: 'var(--text-light)', marginBottom: '1rem' }}>
-            No advocates match your search criteria. Try typing a different keyword or resetting filters.
+            {selectedCounty
+              ? 'We are still verifying local advocate entries for this county. Try another county, widen the filters, or suggest a source-backed listing.'
+              : 'No advocates match your search criteria. Try typing a different keyword or resetting filters.'}
           </p>
-          <button 
-            onClick={() => { setSearchQuery(''); setSortBy('default'); }}
-            className="btn-primary" 
-            style={{ width: 'auto', padding: '0.6rem 1.5rem', fontSize: '0.9rem' }}
-          >
-            Reset Filters
-          </button>
+          <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button 
+              onClick={() => { setSearchQuery(''); setSortBy('default'); }}
+              className="btn-primary" 
+              style={{ width: 'auto', padding: '0.6rem 1.5rem', fontSize: '0.9rem' }}
+            >
+              Reset Filters
+            </button>
+            <ContributionModal suggestionType="advocate" targetId={null} buttonLabel="Suggest an Advocate" />
+          </div>
         </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -587,7 +652,7 @@ Best regards,
                 <TrustBadge
                   status={adv.verification_status}
                   lastVerifiedDate={adv.last_verified_date}
-                  sourceUrl={adv.website}
+                  sourceUrl={adv.source_url}
                   entityId={adv.id}
                   entityName={adv.name}
                   entityType="advocate"
@@ -663,39 +728,51 @@ Best regards,
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', color: 'var(--text-light)', fontSize: '0.85rem' }}>
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                         <Phone size={12} style={{ flexShrink: 0 }} /> 
-                        <a
-                          href={`tel:${adv.phone}`}
-                          style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
-                          onClick={() => trackDirectoryAnalyticsEvent({
-                            event: 'directory_phone_click',
-                            recordId: adv.id,
-                            recordType: 'advocate',
-                            stateId: 'california',
-                            countyId: selectedCounty || undefined,
-                            pageType: 'advocates',
-                          })}
-                        >
-                          {adv.phone}
-                        </a>
-                        <CopyButton text={adv.phone} size={11} />
+                        {isMeaningfulDirectoryPhone(adv.phone) ? (
+                          <>
+                            <a
+                              href={`tel:${adv.phone}`}
+                              style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
+                              onClick={() => trackDirectoryAnalyticsEvent({
+                                event: 'directory_phone_click',
+                                recordId: adv.id,
+                                recordType: 'advocate',
+                                stateId: 'california',
+                                countyId: selectedCounty || undefined,
+                                pageType: 'advocates',
+                              })}
+                            >
+                              {adv.phone}
+                            </a>
+                            <CopyButton text={adv.phone} size={11} />
+                          </>
+                        ) : (
+                          <span>We are still verifying the public phone for this listing.</span>
+                        )}
                       </span>
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
                         <Mail size={12} style={{ flexShrink: 0 }} /> 
-                        <a
-                          href={`mailto:${adv.email}`}
-                          style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
-                          onClick={() => trackDirectoryAnalyticsEvent({
-                            event: 'directory_email_click',
-                            recordId: adv.id,
-                            recordType: 'advocate',
-                            stateId: 'california',
-                            countyId: selectedCounty || undefined,
-                            pageType: 'advocates',
-                          })}
-                        >
-                          {adv.email}
-                        </a>
-                        <CopyButton text={adv.email} size={11} />
+                        {isMeaningfulDirectoryEmail(adv.email) ? (
+                          <>
+                            <a
+                              href={`mailto:${adv.email}`}
+                              style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
+                              onClick={() => trackDirectoryAnalyticsEvent({
+                                event: 'directory_email_click',
+                                recordId: adv.id,
+                                recordType: 'advocate',
+                                stateId: 'california',
+                                countyId: selectedCounty || undefined,
+                                pageType: 'advocates',
+                              })}
+                            >
+                              {adv.email}
+                            </a>
+                            <CopyButton text={adv.email} size={11} />
+                          </>
+                        ) : (
+                          <span>We are still verifying the public email for this listing.</span>
+                        )}
                       </span>
                     </div>
                   </div>
@@ -723,31 +800,33 @@ Best regards,
                     {isIntakeExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                   </button>
 
-                  <a 
-                    href={adv.website} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    onClick={() => trackDirectoryAnalyticsEvent({
-                      event: 'directory_resource_click',
-                      recordId: adv.id,
-                      recordType: 'advocate',
-                      stateId: 'california',
-                      countyId: selectedCounty || undefined,
-                      pageType: 'advocates',
-                    })}
-                    style={{ 
-                      fontSize: '0.85rem', 
-                      color: 'var(--primary-color)', 
-                      display: 'inline-flex', 
-                      alignItems: 'center', 
-                      gap: '0.3rem', 
-                      textDecoration: 'none', 
-                      fontWeight: 600,
-                      marginLeft: 'auto'
-                    }}
-                  >
-                    <Globe size={13} /> Visit Official Website
-                  </a>
+                  {isMeaningfulDirectoryWebsite(adv.website) && (
+                    <a 
+                      href={adv.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      onClick={() => trackDirectoryAnalyticsEvent({
+                        event: 'directory_resource_click',
+                        recordId: adv.id,
+                        recordType: 'advocate',
+                        stateId: 'california',
+                        countyId: selectedCounty || undefined,
+                        pageType: 'advocates',
+                      })}
+                      style={{ 
+                        fontSize: '0.85rem', 
+                        color: 'var(--primary-color)', 
+                        display: 'inline-flex', 
+                        alignItems: 'center', 
+                        gap: '0.3rem', 
+                        textDecoration: 'none', 
+                        fontWeight: 600,
+                        marginLeft: 'auto'
+                      }}
+                    >
+                      <Globe size={13} /> Visit Listed Website
+                    </a>
+                  )}
                 </div>
 
                 <DirectoryReviews
@@ -831,10 +910,13 @@ Best regards,
         </div>
       )}
 
-      <SourceFreshnessDisclosure sources={[
-        { name: 'California COPAA Advocate Listings', url: 'https://www.copaa.org', lastReviewedDate: '2026-06-01', verificationStatus: 'unverified' }, // QA-ALLOW
-        { name: 'California Office of Administrative Hearings Directory', url: 'https://www.dgs.ca.gov/OAH', lastReviewedDate: '2026-06-01', verificationStatus: 'unverified' } // QA-ALLOW
-      ]} />
+      <SourceFreshnessDisclosure
+        sources={disclosureSources}
+        correctionSuggestionType="advocate"
+        correctionTargetId={selectedCounty ? `advocates-${selectedCounty}` : 'advocates-california'}
+        correctionTargetName={selectedCounty ? `advocates serving ${selectedCounty}` : 'California advocates directory'}
+        correctionButtonLabel="Report an advocate listing issue"
+      />
     </div>
   );
 }

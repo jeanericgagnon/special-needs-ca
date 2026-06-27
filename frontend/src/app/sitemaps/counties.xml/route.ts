@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
-import { getCounties, getCountyDetails, getBulkCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb, RegionalCenter, SchoolDistrict, CountyOffice } from '@/lib/db';
+import { getCounties, getBulkCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb, RegionalCenter, SchoolDistrict, CountyOffice } from '@/lib/db';
 import { getCountyDiagnosisTruthEligibility, isIndexableState } from '@/lib/publicTruth';
 import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore, SEO_STATE_ALLOWLIST } from '@/lib/seo-policy';
+import { CANONICAL_SITE_URL } from '@/lib/site-url';
 
 // Sitemap expansion batch configuration
 // 1 = Top 10 CA counties, 2 = Top 25 CA counties, 3 = All 58 CA counties, 4 = All CA + county x diagnosis leaves
@@ -20,7 +21,7 @@ const TOP_25_CA_COUNTIES = [
 ];
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ablefull.org';
+  const baseUrl = CANONICAL_SITE_URL;
 
   let allCounties: County[] = [];
   const countyDetailsMap = new Map();
@@ -135,7 +136,11 @@ export async function GET() {
 
   // 2. Diagnosis directories (/benefits/[state]/[diagnosis])
   for (const st of states) {
-    const statePrograms = await navigatorDb.prepare('SELECT * FROM programs WHERE state_id = ?').all(st.id) as Program[];
+    const statePrograms = await navigatorDb.prepare(`
+      SELECT * FROM programs
+      WHERE state_id = ?
+        AND COALESCE(display_status, 'published') = 'published'
+    `).all(st.id) as Program[];
     const dates = statePrograms.map((p: Program) => p.last_verified_date).filter(Boolean) as string[];
     const minDate = dates.length > 0 ? dates.reduce((min, d) => d < min ? d : min, dates[0]) : null;
     const scores = statePrograms.map((p: Program) => normalizeConfidenceScore(p.confidence_score)).filter((s: number | null): s is number => s !== null);

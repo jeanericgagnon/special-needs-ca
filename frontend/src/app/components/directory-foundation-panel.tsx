@@ -5,12 +5,14 @@ import { usePathname } from 'next/navigation';
 import { Globe, Mail, Phone } from 'lucide-react';
 import { TrustBadge } from '@/app/counties/components/CorrectionFlow';
 import {
-  getDirectoryFieldCoverage,
   getDirectoryAvailabilityDisplayLabel,
   getStalenessLabel,
   hasDirectoryAvailabilityDetails,
   hasDirectoryPanelAccessibilityDetails,
   hasDirectoryPanelNextStepDetails,
+  isMeaningfulDirectoryEmail,
+  isMeaningfulDirectoryPhone,
+  isMeaningfulDirectoryWebsite,
   isRenderableDirectoryFoundationRecord,
   parseDirectoryList,
 } from '@/lib/directoryFoundation';
@@ -25,6 +27,8 @@ type DirectoryPanelRecord = {
   website?: string | null;
   address?: string | null;
   source_url?: string | null;
+  source_type?: string | null;
+  confidence_score?: number | null;
   verification_status?: string | null;
   last_verified_date?: string | null;
   last_verified_at?: string | null;
@@ -136,7 +140,7 @@ function getPrimaryLinkLabel(record: DirectoryPanelRecord, nextStepText: string 
   if (record.application_url) return 'Apply online';
   if (record.referral_url) return 'See referral details';
   if (nextStepText) return nextStepText;
-  return 'Visit official website';
+  return 'Visit source website';
 }
 
 export default function DirectoryFoundationPanel({
@@ -192,7 +196,6 @@ export default function DirectoryFoundationPanel({
     return null;
   }
 
-  const coverage = getDirectoryFieldCoverage(record);
   const serviceTags = parseDirectoryList(record.service_tags).slice(0, 4);
   const servingTags = parseDirectoryList(record.serving_tags).slice(0, 3);
   const accessFlags = getAccessFlags(record);
@@ -200,7 +203,10 @@ export default function DirectoryFoundationPanel({
   const staleness = getStalenessLabel(record);
   const availabilityLabel = getDirectoryAvailabilityDisplayLabel(record);
   const nextStepText = record.next_step_label || (record.next_step_type ? formatTag(record.next_step_type) : null);
-  const primaryLink = record.next_step_url || record.application_url || record.referral_url || record.website;
+  const publicPhone = isMeaningfulDirectoryPhone(record.phone) ? record.phone : null;
+  const publicEmail = isMeaningfulDirectoryEmail(record.email) ? record.email : null;
+  const publicWebsite = isMeaningfulDirectoryWebsite(record.website) ? record.website : null;
+  const primaryLink = record.next_step_url || record.application_url || record.referral_url || publicWebsite;
   const primaryLinkLabel = getPrimaryLinkLabel(record, nextStepText);
   const saved = isDirectoryResourceSaved(record.id, recordType);
   const showAvailabilityDetails = hasDirectoryAvailabilityDetails(record);
@@ -379,27 +385,27 @@ export default function DirectoryFoundationPanel({
       )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', fontSize: '0.82rem' }}>
-        {record.phone && (
+        {publicPhone && (
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', flexWrap: 'wrap' }}>
             <Phone size={12} style={{ flexShrink: 0 }} />
             <a
-              href={`tel:${record.phone}`}
+              href={`tel:${publicPhone}`}
               style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
               onClick={() => trackEvent('directory_phone_click')}
             >
-              {record.phone}
+              {publicPhone}
             </a>
           </span>
         )}
-        {record.email && (
+        {publicEmail && (
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', flexWrap: 'wrap' }}>
             <Mail size={12} style={{ flexShrink: 0 }} />
             <a
-              href={`mailto:${record.email}`}
+              href={`mailto:${publicEmail}`}
               style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}
               onClick={() => trackEvent('directory_email_click')}
             >
-              {record.email}
+              {publicEmail}
             </a>
           </span>
         )}
@@ -419,7 +425,9 @@ export default function DirectoryFoundationPanel({
       <TrustBadge
         status={record.verification_status}
         lastVerifiedDate={record.last_verified_date || record.last_verified_at}
-        sourceUrl={record.source_url || record.website}
+        sourceUrl={record.source_url}
+        sourceType={record.source_type}
+        confidenceScore={record.confidence_score}
         entityId={record.id}
         entityName={record.name}
         entityType={entityType}
