@@ -11,7 +11,7 @@ const dbPaths = [
   path.resolve(__dirname, '../../frontend/ca_disability_navigator.db')
 ];
 
-// High-trust verified 2026 IHSS hourly wage rates by county
+// Reviewed 2026 IHSS hourly wage estimates by county.
 const STATIC_WAGES = {
   'alameda': 21.60, 'alpine': 17.75, 'amador': 18.40, 'butte': 17.90,
   'calaveras': 17.89, 'colusa': 17.40, 'contra-costa': 20.03, 'del-norte': 18.50,
@@ -87,7 +87,7 @@ async function run() {
       }
     }
   } catch (err) {
-    console.log("⚠️ Live scrape failed (Cloudflare check or timeout). Falling back to verified static 2026 wage dataset...");
+    console.log("⚠️ Live scrape failed (Cloudflare check or timeout). Falling back to the checked static 2026 estimate dataset...");
   } finally {
     await browser.close();
   }
@@ -96,7 +96,7 @@ async function run() {
   if (scrapedCount > 0) {
     console.log(`Successfully parsed ${scrapedCount} live county wage rates.`);
   } else {
-    console.log("Using verified 2026 static wages database.");
+    console.log("Using checked 2026 static wage estimates database.");
     wageRates = STATIC_WAGES;
   }
   
@@ -106,7 +106,7 @@ async function run() {
     const db = new Database(dbPath);
     
     try {
-      db.exec("ALTER TABLE counties ADD COLUMN ihss_wage_rate REAL DEFAULT 16.00;");
+      db.exec("ALTER TABLE counties ADD COLUMN ihss_wage_rate REAL DEFAULT NULL;");
       console.log("  Added ihss_wage_rate column to counties table.");
     } catch (err) {
       // Column already exists

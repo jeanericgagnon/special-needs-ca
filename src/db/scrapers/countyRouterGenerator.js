@@ -23,13 +23,17 @@ const californiaCounties = [
   'Tulare', 'Tuolumne', 'Ventura', 'Yolo', 'Yuba'
 ];
 
+const CA_COUNTY_IHSS_DIRECTORY_URL = 'https://www.cdss.ca.gov/inforesources/county-ihss-offices';
+const CA_BENEFITSCAL_URL = 'https://www.benefitscal.com';
+const CA_CCS_PROGRAM_URL = 'https://www.dhcs.ca.gov/services/ccs/Pages/default.aspx';
+
 const insertCounty = db.prepare('INSERT OR REPLACE INTO counties (id, state_id, name, website) VALUES (?, ?, ?, ?)');
 const insertOffice = db.prepare('INSERT OR REPLACE INTO county_offices (id, county_id, program_id, office_name, address, phone, email, website, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
 
 const seedAllCountiesTx = db.transaction((countiesNames) => {
   for (const name of countiesNames) {
     const slug = name.toLowerCase().replace(/\s+/g, '-');
-    const website = `https://www.${slug}county.ca.gov`;
+    const website = '';
     
     // 1. Seed County Table
     insertCounty.run(slug, 'california', `${name} County`, website);
@@ -40,11 +44,11 @@ const seedAllCountiesTx = db.transaction((countiesNames) => {
       slug,
       'ihss-for-children',
       `${name} County Social Services - IHSS Division`,
-      `County Administration Building, ${name}, CA`,
-      'Phone: (800) 510-2020',
-      `ihss-intake@${slug}county.ca.gov`,
-      `${website}/ihss`,
-      `${website}/ihss`,
+      '',
+      '',
+      '',
+      CA_COUNTY_IHSS_DIRECTORY_URL,
+      CA_COUNTY_IHSS_DIRECTORY_URL,
       'official',
       'programmatic_fallback',
       'generated_county_fallback',
@@ -59,11 +63,11 @@ const seedAllCountiesTx = db.transaction((countiesNames) => {
       slug,
       'medi-cal-for-kids-and-teens',
       `${name} County Social Services - Medi-Cal Intake`,
-      `County Administration Building, ${name}, CA`,
-      'Phone: (800) 281-9799',
-      `medi-cal@${slug}county.ca.gov`,
-      'https://www.benefitscal.com',
-      'https://www.benefitscal.com',
+      '',
+      '',
+      '',
+      CA_BENEFITSCAL_URL,
+      CA_BENEFITSCAL_URL,
       'official',
       'programmatic_fallback',
       'generated_county_fallback',
@@ -78,11 +82,11 @@ const seedAllCountiesTx = db.transaction((countiesNames) => {
       slug,
       'california-childrens-services',
       `${name} County Health Department - CCS Program`,
-      `County Public Health Center, ${name}, CA`,
-      'Phone: (800) 288-4584',
-      `ccs@${slug}county.ca.gov`,
-      `${website}/public-health/ccs`,
-      `${website}/public-health/ccs`,
+      '',
+      '',
+      '',
+      CA_CCS_PROGRAM_URL,
+      CA_CCS_PROGRAM_URL,
       'official',
       'programmatic_fallback',
       'generated_county_fallback',
@@ -233,7 +237,8 @@ try {
     { id: 'np-care-sonoma', name: 'Matrix Parent Network Sonoma', county_id: 'sonoma', website: 'https://matrixparents.org', phone: '707-584-1424', focus_condition: 'any' }
   ];
 
-  // Programmatic scaling to 100% of all 58 counties
+  // Do not synthesize local directory rows for uncovered counties. Missing local
+  // coverage should stay explicit so public surfaces can remain gated.
   const countiesWithDistricts = new Set(seedDistricts.map(sd => sd.county_id));
   const countiesWithSelpas = new Set();
   seedSelpas.forEach(s => {
@@ -243,54 +248,18 @@ try {
   });
   const countiesWithNonprofits = new Set(seedNonprofits.map(np => np.county_id));
 
-  for (const name of californiaCounties) {
+  const missingDistrictCount = californiaCounties.filter((name) => {
     const slug = name.toLowerCase().replace(/\s+/g, '-');
-
-    // Generate district if missing
-    if (!countiesWithDistricts.has(slug)) {
-      const id = `sd-gen-${slug}`;
-      const areaCode = getAreaCode(slug);
-      const phone = `(${areaCode}) 555-${Math.floor(Math.random() * 9000) + 1000}`;
-      seedDistricts.push({
-        id,
-        county_id: slug,
-        name: `${name} County Unified School District`,
-        spec_ed_contact_phone: phone,
-        spec_ed_contact_email: `specialed@${slug}usd.org`,
-        website: `https://www.${slug}usd.org`,
-        total_enrollment: Math.floor(Math.random() * 8000) + 1500,
-        special_ed_pct: parseFloat((Math.random() * 4 + 11).toFixed(1)),
-        inclusion_rate_pct: parseFloat((Math.random() * 15 + 56).toFixed(1)),
-        self_contained_rate_pct: parseFloat((Math.random() * 8 + 16).toFixed(1))
-      });
-    }
-
-    // Generate SELPA if missing
-    if (!countiesWithSelpas.has(slug)) {
-      seedSelpas.push({
-        id: `selpa-gen-${slug}`,
-        state_id: 'california',
-        agency_type: 'selpa',
-        name: `${name} County SELPA`,
-        counties_served: slug,
-        website: `https://www.${slug}coe.org/selpa`
-      });
-    }
-
-    // Generate Nonprofit if missing
-    if (!countiesWithNonprofits.has(slug)) {
-      const areaCode = getAreaCode(slug);
-      const phone = `(${areaCode}) 555-${Math.floor(Math.random() * 9000) + 1000}`;
-      seedNonprofits.push({
-        id: `np-gen-${slug}`,
-        name: `${name} Family Resource & Support Center`,
-        county_id: slug,
-        website: `https://www.google.com/search?q=${encodeURIComponent(name + ' County family resource center special needs')}`,
-        phone,
-        focus_condition: 'any'
-      });
-    }
-  }
+    return !countiesWithDistricts.has(slug);
+  }).length;
+  const missingSelpaCount = californiaCounties.filter((name) => {
+    const slug = name.toLowerCase().replace(/\s+/g, '-');
+    return !countiesWithSelpas.has(slug);
+  }).length;
+  const missingNonprofitCount = californiaCounties.filter((name) => {
+    const slug = name.toLowerCase().replace(/\s+/g, '-');
+    return !countiesWithNonprofits.has(slug);
+  }).length;
 
   // Insert school districts
   const insertDistrict = db.prepare('INSERT OR REPLACE INTO school_districts (id, county_id, name, spec_ed_contact_phone, spec_ed_contact_email, website, total_enrollment, special_ed_pct, inclusion_rate_pct, self_contained_rate_pct, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
@@ -319,7 +288,7 @@ try {
     }
   });
   seedDistrictsTx(seedDistricts);
-  console.log(`  ✓ Seeded ${seedDistricts.length} California School Districts (explicit + generated).`);
+  console.log(`  ✓ Seeded ${seedDistricts.length} California School Districts (explicit only). Missing counties left unseeded: ${missingDistrictCount}.`);
 
   // Insert SELPAs
   const insertEdAgency = db.prepare('INSERT OR REPLACE INTO regional_education_agencies (id, state_id, agency_type, name, counties_served, website, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
@@ -351,7 +320,7 @@ try {
     }
   });
   seedSelpasTx(seedSelpas);
-  console.log(`  ✓ Seeded ${seedSelpas.length} California SELPAs & junctions (explicit + generated).`);
+  console.log(`  ✓ Seeded ${seedSelpas.length} California SELPAs & junctions (explicit only). Missing counties left unseeded: ${missingSelpaCount}.`);
 
   // Insert Nonprofits
   const insertNonprofit = db.prepare('INSERT OR REPLACE INTO nonprofit_organizations (id, name, county_id, website, phone, focus_condition, source_url, source_type, data_origin, verification_status, last_verified_date, last_scraped_at, confidence_score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
@@ -376,7 +345,7 @@ try {
     }
   });
   seedNonprofitsTx(seedNonprofits);
-  console.log(`  ✓ Seeded ${seedNonprofits.length} California Nonprofit Support Organizations (explicit + generated).`);
+  console.log(`  ✓ Seeded ${seedNonprofits.length} California Nonprofit Support Organizations (explicit only). Missing counties left unseeded: ${missingNonprofitCount}.`);
 } catch (err) {
   console.error('❌ Database county/district/selpa generation failed:', err.message);
 } finally {

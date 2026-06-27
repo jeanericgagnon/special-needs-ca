@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS counties (
     state_id TEXT NOT NULL REFERENCES states(id),
     name TEXT NOT NULL,
     website TEXT NOT NULL,
-    ihss_wage_rate REAL DEFAULT 16.00,
+    ihss_wage_rate REAL DEFAULT NULL,
     medi_cal_plans TEXT
 );
 

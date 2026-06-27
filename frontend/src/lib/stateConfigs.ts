@@ -128,7 +128,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `To start a Lanterman Act intake review for ${diagnosis} in ${county} County, request an intake assessment from ${rc}. Under California Welfare & Institutions Code § 4648, the center generally completes the initial intake within 15 days of your request and determines eligibility within 120 days, subject to the current rules and any documented exceptions. If the center finds your child eligible, it can assign a service coordinator and discuss available respite, social recreation, and behavior-service options.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours (IHSS) for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours (IHSS) for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `Your child may qualify for IHSS Protective Supervision if ${diagnosis} causes severe cognitive or behavioral safety risks such as wandering, self-injury, or inability to recognize danger. The county may authorize supervision hours and a parent or relative provider arrangement when the record supports that level of need and the current provider rules are met. In ${county} County, actual approved hours and monthly pay depend on the county assessment and current local rate estimates.`
       },
       {
@@ -227,7 +227,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `To start local developmental-services intake for families in ${county} County, begin with ${rc}. That office can explain the current assessment process and whether your child should be added to the HCS or TxHmL interest lists. Publicly reported wait times for these programs can be very long, so families often ask about intake as early as they can.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours (MDCP) for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours (MDCP) for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `Texas Medicaid waiver programs such as MDCP (Medically Dependent Children's Program) or CLASS may allow some families to use the Consumer Directed Services (CDS) option when the child meets the current program rules. That option can allow you to hire caregivers, including family members in some programs, to provide personal care services. Pay rates depend on the program, authorization, and provider arrangement, so confirm the current amount with the program administrator.`
       },
       {
@@ -327,7 +327,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `To access iBudget waiver services for ${diagnosis} in ${county} County, request an intake assessment from ${rc}. Under Florida Chapter 393, APD generally processes applications and determines eligibility within 45 days, subject to the current rules and any documented exceptions. If APD finds your child eligible, the agency may place them on the iBudget interest list or review them for crisis prioritization.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours (CDC+) for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours (CDC+) for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `The Florida Consumer Directed Care Plus (CDC+) option under the iBudget waiver may allow some families to hire caregivers, including parents or legal guardians, when they meet the current program rules. CDC+ can let families manage their own care staff and budget choices within the approved plan. Caregiver wages depend on the current iBudget allocation, service authorizations, and plan details.`
       },
       {
@@ -385,7 +385,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `To explore OPWDD services for ${diagnosis} in ${county} County, request an intake assessment through the OPWDD Front Door process at ${rc}. NYS Mental Hygiene Law Article 16 governs eligibility and services. If your child is found eligible, the state may discuss respite care packages and self-direction options with you.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours (CDPAP) for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours (CDPAP) for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `New York's Consumer Directed Personal Assistance Program (CDPAP) may allow eligible families to hire caregivers, including some family members, subject to the current program rules and exclusions such as spouses or parents of minor children. You manage your own personal assistants and care schedule, and wages are paid at local county rates.`
       },
       {
@@ -442,7 +442,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `Contact the local Administrative Entity (AE) at ${rc} to register your child. The AE can explain the current assessment steps and whether a PUNS (Prioritization of Urgency of Need for Services) form should be completed for the ODP waiver interest list.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `Pennsylvania's ODP Participant Directed Services option under the Consolidated or Community Living waivers may allow eligible families to manage their own staff and select family members or relatives as paid caregivers, subject to the current waiver rules.`
       },
       {
@@ -499,7 +499,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `Contact the Independent Service Coordination (ISC) agency at ${rc} serving ${county} County. They will complete the intake and register your child on the PUNS database.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours (HSP) for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours (HSP) for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `The Home Services Program (HSP) administered by Illinois DHS may allow eligible families to hire personal assistants to provide care, and in some cases parents can be paid as caregivers under the current program allocations and rules.`
       },
       {
@@ -556,7 +556,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `To begin, contact the County Board of Developmental Disabilities at ${rc} serving ${county} County. They will determine eligibility and perform a waiting list assessment to see if your child has unmet needs.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `Ohio's waivers (IO, Level One, and SELF) may offer participant-directed service options that allow eligible families to hire caregivers, including some family members or neighbors, to provide home care under the current waiver rules.`
       },
       {
@@ -613,7 +613,7 @@ export const stateConfigs: Record<string, StateConfig> = {
         a: (county, rc, sd, wage, payout, diagnosis) => `Contact the DBHDD Regional Field Office at ${rc} serving ${county} County to request intake. That office can explain the developmental assessment process and whether your child should be added to the COMP or NOW planning list.`
       },
       {
-        q: 'Does my child qualify for paid caregiver hours (GAPP) for [diagnosis] in [county] County?',
+        q: 'Could my child qualify for paid caregiver hours (GAPP) for [diagnosis] in [county] County?',
         a: (county, rc, sd, wage, payout, diagnosis) => `Through the Georgia Pediatric Program (GAPP), some children with complex medical or developmental needs may receive in-home personal care or private duty nursing when they meet the current medical-necessity and program rules. Confirm the current financial and clinical requirements with Georgia Medicaid before relying on coverage.`
       },
       {

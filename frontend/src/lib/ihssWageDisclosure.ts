@@ -26,9 +26,9 @@ export const CA_IHSS_WAGE_SOURCE_URL = 'https://galtadvocacy.com/ihss-wages-by-c
 export const CA_IHSS_WAGE_LAST_VERIFIED_DATE = '2026-06-20';
 export const CA_IHSS_WAGE_FALLBACK_URL = 'https://www.cdss.ca.gov/inforesources/county-ihss-offices';
 export const CA_IHSS_WAGE_SOURCE_NOTE =
-  'This estimate is based on a public California county IHSS wage directory that we checked on 2026-06-20. It is not an official county pay notice. Confirm the current rate with the county IHSS office before relying on it.';
+  'This estimate is compiled from a reviewed public California county IHSS wage reference last checked on 2026-06-20. It is not an official county pay notice or county guarantee. Confirm the current rate with the county IHSS office before relying on it.';
 
-// Preserved from the bounded 2026 California IHSS wage dataset already checked into the repo.
+// Preserved from the bounded 2026 California IHSS wage estimate dataset already checked into the repo.
 const CA_IHSS_STATIC_WAGES: Record<string, number> = {
   'alameda': 21.6,
   'alpine': 17.75,
@@ -168,7 +168,7 @@ export function getIhssWageDisclosure(
     countyName,
     hourlyRate: effectiveRate,
     sourceUrl: CA_IHSS_WAGE_SOURCE_URL,
-    sourceLabel: 'Reviewed public county wage reference',
+    sourceLabel: 'Reviewed non-official county wage reference',
     officialConfirmUrl: CA_IHSS_WAGE_FALLBACK_URL,
     lastVerifiedDate: CA_IHSS_WAGE_LAST_VERIFIED_DATE,
     isEstimate: true,
@@ -176,7 +176,7 @@ export function getIhssWageDisclosure(
     explanation:
       countyRate !== null && countyRate !== undefined && Number.isFinite(countyRate) && countyRate > 0
         ? CA_IHSS_WAGE_SOURCE_NOTE
-        : 'This is an estimate from a checked California county IHSS wage reference. County provider pay can change, so confirm the current rate with the local IHSS office before using it.',
+        : 'This is an estimate from a reviewed California county IHSS wage reference. County provider pay can change, so confirm the current rate with the local IHSS office before using it.',
   };
 }
 
@@ -193,7 +193,7 @@ export function formatIhssEstimateSourceLabel(disclosure: IhssWageDisclosure | n
   if (!disclosure) return 'official county IHSS office directory';
   return disclosure.fallbackUsed
     ? 'official county IHSS office directory'
-    : 'reviewed public county wage reference';
+    : 'reviewed non-official county wage reference';
 }
 
 export function formatIhssEstimateSummary(disclosure: IhssWageDisclosure | null): string {
