@@ -15,6 +15,69 @@ type Props = {
 
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
 
+type PublicDirectoryLike = {
+  id?: string;
+  name?: string | null;
+  office_name?: string | null;
+  source_url?: string | null;
+  source_type?: string | null;
+  data_origin?: string | null;
+  confidence_score?: number | null;
+  last_verified_date?: string | null;
+  last_scraped_at?: string | null;
+};
+
+function buildStateCountyDirectoryDisclosureData(
+  countyDetailsMap: Awaited<ReturnType<typeof getBulkCountyDetails>>
+) {
+  const records = Array.from(countyDetailsMap.values()).flatMap((details) => [
+    ...(details.regionalCenters || []).filter(isPublicRecordEligible),
+    ...(details.schoolDistricts || []).filter(isPublicRecordEligible),
+    ...(details.countyOffices || []).filter(isPublicCountyOfficeEligible),
+    ...(details.selpas || []).filter(isPublicRecordEligible),
+  ]) as PublicDirectoryLike[];
+
+  const disclosureSources = records
+    .filter((record) => Boolean(record?.source_url))
+    .reduce<DisclosureSource[]>((sources, record) => {
+      const key = `${record.source_url}|${record.name || record.office_name || record.id}`;
+      if (sources.some((source) => `${source.url}|${source.name}` === key)) {
+        return sources;
+      }
+      sources.push({
+        name: record.name || record.office_name || 'Public local source',
+        url: record.source_url || undefined,
+        lastReviewedDate: record.last_verified_date || record.last_scraped_at || undefined,
+        sourceType: record.source_type || record.data_origin || 'directory_record',
+        confidenceScore: typeof record.confidence_score === 'number' ? record.confidence_score : null,
+      });
+      return sources;
+    }, []);
+
+  const confidenceScores = records
+    .map((record) => (typeof record.confidence_score === 'number' ? record.confidence_score : null))
+    .filter((score): score is number => score !== null && Number.isFinite(score));
+
+  const reviewDates = records
+    .map((record) => record.last_verified_date || record.last_scraped_at || null)
+    .filter((value): value is string => Boolean(value))
+    .sort();
+
+  const hasOfficialSource = disclosureSources.some((source) =>
+    String(source.sourceType || '').toLowerCase().startsWith('official')
+  );
+
+  return {
+    disclosureSources,
+    hasOfficialSource,
+    lastVerifiedDate: reviewDates.at(-1) || null,
+    confidenceScore: confidenceScores.length > 0
+      ? confidenceScores.reduce((sum, score) => sum + score, 0) / confidenceScores.length
+      : null,
+    hasRealLocalAssets: records.length > 0,
+  };
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = await params;
   const stateData = await getStateByIdOrCode(p.state);
@@ -29,6 +92,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const catchment = config.catchmentName;
   const partialStatePolicy = getPartialStatePolicy(stateData.id);
   const counties = await getCounties(stateData.id);
+  const countyDetailsMap = await getBulkCountyDetails(stateData.id);
+  const disclosureData = buildStateCountyDirectoryDisclosureData(countyDetailsMap);
   if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'state-counties-hub')) {
     return {
       title: `${stateData.name} county directory is being verified`,
@@ -43,8 +108,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     stateId: stateData.id
   }, {
     entityCount: counties.length,
-    hasRealLocalAssets: counties.length > 0,
-    hasNoPlaceholderData: true
+    hasRealLocalAssets: disclosureData.hasRealLocalAssets,
+    hasNoPlaceholderData: true,
+    hasOfficialSource: disclosureData.hasOfficialSource,
+    lastVerifiedDate: disclosureData.lastVerifiedDate,
+    confidenceScore: disclosureData.confidenceScore,
   });
   return {
     title: `${stateData.name} County Disability Resource Directories`,
@@ -68,30 +136,8 @@ export default async function CountiesDirectoryPage({ params }: Props) {
   const catchment = config.catchmentName;
   const partialStatePolicy = getPartialStatePolicy(stateData.id);
   const countyDetailsMap = await getBulkCountyDetails(stateData.id);
-  const disclosureSources: DisclosureSource[] = Array.from(
-    countyDetailsMap.values()
-  )
-    .flatMap((details) => [
-      ...(details.regionalCenters || []).filter(isPublicRecordEligible),
-      ...(details.schoolDistricts || []).filter(isPublicRecordEligible),
-      ...(details.countyOffices || []).filter(isPublicCountyOfficeEligible),
-      ...(details.selpas || []).filter(isPublicRecordEligible),
-    ])
-    .filter((record) => Boolean(record?.source_url))
-    .reduce<DisclosureSource[]>((sources, record) => {
-      const key = `${record.source_url}|${record.name || record.office_name || record.id}`;
-      if (sources.some((source) => `${source.url}|${source.name}` === key)) {
-        return sources;
-      }
-      sources.push({
-        name: record.name || record.office_name || 'Public local source',
-        url: record.source_url || undefined,
-        lastReviewedDate: record.last_verified_date || record.last_scraped_at || undefined,
-        sourceType: record.source_type || record.data_origin || 'directory_record',
-        confidenceScore: typeof record.confidence_score === 'number' ? record.confidence_score : null,
-      });
-      return sources;
-    }, [])
+  const disclosureSources = buildStateCountyDirectoryDisclosureData(countyDetailsMap)
+    .disclosureSources
     .slice(0, 10);
 
   if (partialStatePolicy && isLaunchSurfaceSuppressed(stateData.id, 'state-counties-hub')) {
