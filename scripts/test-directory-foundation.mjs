@@ -126,6 +126,13 @@ function run() {
   assert.equal(hasDirectoryPanelAccessibilityDetails(cleanRenderableRecord), true);
   assert.equal(hasDirectorySampleAccessibilitySummary(cleanRenderableRecord), true);
 
+  const invalidTagsOnlyRecord = {
+    ...cleanRenderableRecord,
+    service_tags: 'diagnosis',
+  };
+  assert.equal(validateDirectoryFoundationRecord(invalidTagsOnlyRecord).includes('invalid_service_tags'), true);
+  assert.equal(isRenderableDirectoryFoundationRecord(invalidTagsOnlyRecord), false);
+
   const publicRecordWithoutFreshness = {
     id: 'provider-6',
     name: 'Provider Six',

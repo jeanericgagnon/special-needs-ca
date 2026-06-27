@@ -476,6 +476,8 @@ export function isRenderableDirectoryFoundationRecord(record: DirectoryFoundatio
   return !issues.includes('synthetic_source_url') &&
     !issues.includes('synthetic_website') &&
     !issues.includes('synthetic_action_url') &&
+    !issues.includes('invalid_service_tags') &&
+    !issues.includes('invalid_serving_tags') &&
     !issues.includes('invalid_public_phone') &&
     !issues.includes('invalid_public_next_step_phone') &&
     !issues.includes('invalid_public_email') &&

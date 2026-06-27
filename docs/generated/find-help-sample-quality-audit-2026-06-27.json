@@ -1,0 +1,474 @@
+{
+  "generatedAt": "2026-06-27",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "summary": {
+    "totalTables": 3,
+    "tablesMatchingIdeal": 3,
+    "tablesWithHiddenSelections": 0,
+    "tablesWithSkippedRenderableRows": 0
+  },
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "kind": "Provider",
+      "totalRows": 1,
+      "publicCandidateCount": 1,
+      "renderablePublicCandidateCount": 0,
+      "selectedPreRenderCount": 0,
+      "renderedSelectionCount": 0,
+      "renderedMatchesIdeal": true,
+      "blockers": {
+        "hiddenSelectedCount": 0,
+        "richerRenderableRowsSkippedCount": 0
+      },
+      "selectedPreRender": [],
+      "renderedSelection": [],
+      "idealRenderableSelection": [],
+      "hiddenSelected": [],
+      "richerRenderableRowsOutsideRendered": []
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "kind": "Nonprofit",
+      "totalRows": 1775,
+      "publicCandidateCount": 1733,
+      "renderablePublicCandidateCount": 1390,
+      "selectedPreRenderCount": 3,
+      "renderedSelectionCount": 3,
+      "renderedMatchesIdeal": true,
+      "blockers": {
+        "hiddenSelectedCount": 0,
+        "richerRenderableRowsSkippedCount": 0
+      },
+      "selectedPreRender": [
+        {
+          "id": "fl-np-drf-alachua-fl",
+          "name": "Disability Rights Florida (Statewide Support)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-np-parenttoparent-albany-ny",
+          "name": "Parent to Parent of NYS",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://www.parenttoparentnys.org"
+        },
+        {
+          "id": "pa-np-peal-adams-pa",
+          "name": "The PEAL Center",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://pealcenter.org"
+        }
+      ],
+      "renderedSelection": [
+        {
+          "id": "fl-np-drf-alachua-fl",
+          "name": "Disability Rights Florida (Statewide Support)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-np-parenttoparent-albany-ny",
+          "name": "Parent to Parent of NYS",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://www.parenttoparentnys.org"
+        },
+        {
+          "id": "pa-np-peal-adams-pa",
+          "name": "The PEAL Center",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://pealcenter.org"
+        }
+      ],
+      "idealRenderableSelection": [
+        {
+          "id": "fl-np-drf-alachua-fl",
+          "name": "Disability Rights Florida (Statewide Support)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-np-parenttoparent-albany-ny",
+          "name": "Parent to Parent of NYS",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://www.parenttoparentnys.org"
+        },
+        {
+          "id": "pa-np-peal-adams-pa",
+          "name": "The PEAL Center",
+          "verificationStatus": "source_listed",
+          "richnessScore": 0,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": false,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": null,
+          "sourceUrl": "https://pealcenter.org"
+        }
+      ],
+      "hiddenSelected": [],
+      "richerRenderableRowsOutsideRendered": []
+    },
+    {
+      "table": "iep_advocates",
+      "label": "IEP Advocates",
+      "kind": "Advocate",
+      "totalRows": 137,
+      "publicCandidateCount": 137,
+      "renderablePublicCandidateCount": 40,
+      "selectedPreRenderCount": 3,
+      "renderedSelectionCount": 3,
+      "renderedMatchesIdeal": true,
+      "blockers": {
+        "hiddenSelectedCount": 0,
+        "richerRenderableRowsSkippedCount": 0
+      },
+      "selectedPreRender": [
+        {
+          "id": "fl-advocate-drf",
+          "name": "Disability Rights Florida (Statewide)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish, Creole",
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-adv-legal-statewide",
+          "name": "NYS Protection & Advocacy System (DRNY)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.drny.org"
+        },
+        {
+          "id": "pa-adv-parent-statewide",
+          "name": "PEAL Center Parent Advocate Support",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://pealcenter.org"
+        }
+      ],
+      "renderedSelection": [
+        {
+          "id": "fl-advocate-drf",
+          "name": "Disability Rights Florida (Statewide)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish, Creole",
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-adv-legal-statewide",
+          "name": "NYS Protection & Advocacy System (DRNY)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.drny.org"
+        },
+        {
+          "id": "pa-adv-parent-statewide",
+          "name": "PEAL Center Parent Advocate Support",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://pealcenter.org"
+        }
+      ],
+      "idealRenderableSelection": [
+        {
+          "id": "fl-advocate-drf",
+          "name": "Disability Rights Florida (Statewide)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish, Creole",
+          "sourceUrl": "https://www.disabilityrightsflorida.org"
+        },
+        {
+          "id": "ny-adv-legal-statewide",
+          "name": "NYS Protection & Advocacy System (DRNY)",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://www.drny.org"
+        },
+        {
+          "id": "pa-adv-parent-statewide",
+          "name": "PEAL Center Parent Advocate Support",
+          "verificationStatus": "source_listed",
+          "richnessScore": 1,
+          "freshnessStamp": "2026-06-12",
+          "renderable": true,
+          "issues": [],
+          "coverage": {
+            "hasAvailability": false,
+            "hasNextStep": false,
+            "hasTags": false,
+            "hasAccessibility": true,
+            "hasClaimGroundwork": false
+          },
+          "availabilityStatus": null,
+          "nextStepType": null,
+          "serviceTags": [],
+          "servingTags": [],
+          "languageValue": "English, Spanish",
+          "sourceUrl": "https://pealcenter.org"
+        }
+      ],
+      "hiddenSelected": [],
+      "richerRenderableRowsOutsideRendered": []
+    }
+  ]
+}

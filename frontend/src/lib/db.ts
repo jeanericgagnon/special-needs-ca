@@ -12,6 +12,7 @@ import {
   hasDirectoryAvailabilitySignal,
   hasDirectoryClaimGroundworkSignal,
   hasDirectoryNextStepSignal,
+  isRenderableDirectoryFoundationRecord,
 } from './directoryFoundation';
 
 // Helper to locate DB file dynamically in serverless environments
@@ -4376,9 +4377,16 @@ export async function getDirectoryFoundationSnapshot(): Promise<DirectoryFoundat
       return selected;
     };
 
-    const providers = selectDiverseSamples(providersAll.filter(isPublicSample));
-    const nonprofits = selectDiverseSamples(nonprofitsAll.filter(isPublicSample));
-    const advocates = selectDiverseSamples(advocatesAll.filter(isPublicSample), 'languages_spoken');
+    const providers = selectDiverseSamples(
+      providersAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row))
+    );
+    const nonprofits = selectDiverseSamples(
+      nonprofitsAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row))
+    );
+    const advocates = selectDiverseSamples(
+      advocatesAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row)),
+      'languages_spoken'
+    );
 
     return {
       totals: {

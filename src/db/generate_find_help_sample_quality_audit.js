@@ -81,6 +81,13 @@ const INVALID_SOURCE_HOSTS = [
   /^www\.pediatrictherapy\./,
   /^[a-z]{2}-pa\.org$/,
 ];
+const PLACEHOLDER_EMAIL_PATTERNS = [
+  /@example\.(com|org|net)$/i,
+  /^test@/i,
+  /^fake@/i,
+  /^dummy@/i,
+  /^placeholder@/i,
+];
 
 function parseDirectoryList(value) {
   if (!value) return [];
@@ -88,6 +95,12 @@ function parseDirectoryList(value) {
     .split(',')
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function hasValue(value) {
+  if (value === null || value === undefined) return false;
+  if (typeof value === 'number') return Number.isFinite(value);
+  return String(value).trim().length > 0;
 }
 
 function hasDirectoryAvailabilitySignal(row) {
@@ -155,6 +168,42 @@ function isSyntheticDirectoryUrl(url) {
   }
 }
 
+function isMeaningfulDirectoryPhone(phone) {
+  const trimmed = String(phone || '').trim();
+  if (!trimmed) return false;
+  const digits = trimmed.replace(/\D/g, '');
+  if (digits.length < 10) return false;
+  if (digits.startsWith('555') || digits.slice(3, 6) === '555') return false;
+  if (/^(\d)\1+$/.test(digits)) return false;
+  if (digits.endsWith('1234') || digits.endsWith('0000')) return false;
+  return true;
+}
+
+function isMeaningfulDirectoryEmail(email) {
+  const trimmed = String(email || '').trim().toLowerCase();
+  if (!trimmed) return false;
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) return false;
+  return !PLACEHOLDER_EMAIL_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
+function getPublishedProvenanceIssues(row) {
+  const issues = [];
+  if (!hasValue(row.source_url)) issues.push('missing_source_url');
+  if (!hasValue(row.source_type)) issues.push('missing_source_type');
+  if (!hasValue(row.data_origin)) issues.push('missing_data_origin');
+  if (!hasValue(row.verification_status)) issues.push('missing_verification_status');
+  if (
+    !hasValue(row.last_verified_date) &&
+    !hasValue(row.last_verified_at) &&
+    !hasValue(row.checked_at) &&
+    !hasValue(row.last_scraped_at)
+  ) {
+    issues.push('missing_last_checked_signal');
+  }
+  if (!hasValue(row.confidence_score)) issues.push('missing_confidence_score');
+  return issues;
+}
+
 function invalidTagValues(raw, allowed) {
   return parseDirectoryList(raw).filter((value) => !allowed.has(value));
 }
@@ -203,6 +252,9 @@ function validateRow(row) {
   ) {
     issues.push('verified_without_source_url');
   }
+  for (const issue of getPublishedProvenanceIssues(row)) {
+    issues.push(issue);
+  }
   if (String(row.categories || '').toLowerCase().includes('program') && row.focus_condition) {
     issues.push('possible_provider_program_confusion');
   }
@@ -211,6 +263,18 @@ function validateRow(row) {
   }
   if (isLikelySyntheticAdvocateProfile(row)) {
     issues.push('likely_synthetic_advocate_profile');
+  }
+  if (row.phone && !isMeaningfulDirectoryPhone(row.phone)) {
+    issues.push('invalid_public_phone');
+  }
+  if (row.next_step_phone && !isMeaningfulDirectoryPhone(row.next_step_phone)) {
+    issues.push('invalid_public_next_step_phone');
+  }
+  if (row.email && !isMeaningfulDirectoryEmail(row.email)) {
+    issues.push('invalid_public_email');
+  }
+  if (row.next_step_email && !isMeaningfulDirectoryEmail(row.next_step_email)) {
+    issues.push('invalid_public_next_step_email');
   }
 
   return issues;
@@ -221,6 +285,18 @@ function isRenderableRow(row) {
   return !issues.includes('synthetic_source_url') &&
     !issues.includes('synthetic_website') &&
     !issues.includes('synthetic_action_url') &&
+    !issues.includes('invalid_service_tags') &&
+    !issues.includes('invalid_serving_tags') &&
+    !issues.includes('invalid_public_phone') &&
+    !issues.includes('invalid_public_next_step_phone') &&
+    !issues.includes('invalid_public_email') &&
+    !issues.includes('invalid_public_next_step_email') &&
+    !issues.includes('missing_source_url') &&
+    !issues.includes('missing_source_type') &&
+    !issues.includes('missing_data_origin') &&
+    !issues.includes('missing_verification_status') &&
+    !issues.includes('missing_last_checked_signal') &&
+    !issues.includes('missing_confidence_score') &&
     !issues.includes('unsupported_claim_flags_present') &&
     !issues.includes('likely_synthetic_advocate_profile');
 }
@@ -368,10 +444,9 @@ function summarizeTable({ table, label, kind, languageField }) {
         LEFT JOIN counties ON counties.id = ${table}.county_id
       `).all();
   const publicCandidates = rows.filter(isPublicSample);
-  const publicSorted = [...publicCandidates].sort(sortByCoverageThenFreshness(languageField));
-  const selectedPreRender = selectDiverseSamples(publicCandidates, languageField);
-  const renderedSelection = selectedPreRender.filter(isRenderableRow);
   const renderablePool = publicCandidates.filter(isRenderableRow);
+  const selectedPreRender = selectDiverseSamples(renderablePool, languageField);
+  const renderedSelection = selectedPreRender;
   const idealRenderableSelection = selectDiverseSamples(renderablePool, languageField);
 
   const hiddenSelected = selectedPreRender
