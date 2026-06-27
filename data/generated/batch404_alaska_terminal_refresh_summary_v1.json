@@ -1,10 +1,19 @@
 {
   "batch": "batch404_alaska_terminal_refresh_v1",
-  "generated_at": "2026-06-27T00:18:42.950Z",
+  "generated_at": "2026-06-27T02:11:49.080Z",
   "classification": "BLOCKED",
   "dpa_offices_browser_reviewable": true,
   "dpa_offices_region_only": true,
   "dpa_region_heading_count": 5,
+  "dpa_region_groupings": [
+    "Alaska Peninsula",
+    "Northern Alaska",
+    "Southcentral Alaska",
+    "Southeast Alaska",
+    "Southwest Alaska"
+  ],
+  "county_equivalent_contract_count": 0,
+  "county_equivalent_unmapped_count": 20,
   "dpa_page_has_borough_term": false,
   "dpa_page_has_census_area_term": false,
   "dpa_root_403": true,

@@ -18,7 +18,6 @@ const INPUTS = {
   report: path.join(docsGeneratedDir, 'alaska-california-grade-audit-report-v2.md'),
   audit: path.join(generatedDir, 'all_state_california_grade_audit_v3.json'),
   allStateReport: path.join(docsGeneratedDir, 'all-state-california-grade-audit-report-v3.md'),
-  handoff: path.join(docsGeneratedDir, 'gemini-source-scout-handoff.md'),
   stateCertification: path.join(generatedDir, 'state-certification', 'alaska.json'),
 };
 
@@ -34,6 +33,7 @@ const PRIMARY_GAP_REASON =
   'bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract';
 const COUNTY_STATUS =
   'blocked_reviewable_dpa_offices_regions_without_borough_assignment_and_raw_health_fetches_403';
+const REGION_GROUPINGS = ['Alaska Peninsula', 'Northern Alaska', 'Southcentral Alaska', 'Southeast Alaska', 'Southwest Alaska'];
 const COUNTY_REASON =
   `Reviewed ${REVIEWED_DATE} one more bounded live Alaska county-local pass. In the reviewed browser lane, the exact official DPA offices page at \`https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/\` is publicly readable again and truthfully proves named regional offices, office hours, full street addresses, fax numbers, a virtual contact center, and secure upload routing on the current health host. The live page now proves only five regional groupings: \`Alaska Peninsula\`, \`Northern Alaska\`, \`Southcentral Alaska\`, \`Southeast Alaska\`, and \`Southwest Alaska\`. Under those headings it names only city- or office-level locations such as Homer, Kenai, Fairbanks, Nome, Anchorage, Matanuska-Susitna Valley, Juneau, Ketchikan, Sitka, Bethel, and Kodiak. The same reviewed page still contains no literal \`borough\` or \`census area\` terms and does not assign any Alaska boroughs or census areas to those offices. In the raw low-token lane, the wider health-host family still fails closed: \`https://health.alaska.gov/en/division-of-public-assistance/\`, \`https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf\`, and \`https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf\` still return HTTP 403 with the Cloudflare \`Just a moment...\` shell. The DFCS successor family is still publicly reachable but still does not restore county-equivalent routing: \`https://dfcs.alaska.gov/Pages/default.aspx\`, \`/Pages/Services.aspx\`, \`/pages/search.aspx\`, and \`/Commissioner/Pages/Contacts/default.aspx\` still return HTTP 200 SharePoint pages, but \`https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance\` still returns HTTP 404 and the reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. The freshly rechecked DFCS Site Map branch also still fails closed as a repair lane: \`https://dfcs.alaska.gov/Pages/Site-Map.aspx\` is live, but the extra surfaced DAPH leaves \`/daph/Pages/services.aspx\` and \`/daph/Pages/paymentassistance/default.aspx\` resolve to Alaska Pioneer Homes services and payment-assistance content rather than public-assistance office routing, while the only office-looking DFCS child lane remains the wrong-role OCS Regional Offices page. Alaska therefore still lacks any reviewable public borough- or census-area-to-office contract.`;
 
@@ -70,21 +70,6 @@ function updateAllStateReport(report) {
   return `${report.trimEnd()}\n${line}\n`;
 }
 
-function updateHandoff(text) {
-  return text
-    .replace(/Current Focus State: [^\n]+/, 'Current Focus State: Alaska')
-    .replace(
-      /- Alaska: `[^`]+`/,
-      '- Alaska: `bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract`',
-    )
-    .replace(
-      /### Blocker Reason\s+[\s\S]*?(?=\n## |\s*$)/,
-      `### Blocker Reason
-
-\`county_local_disability_resources\` is still the sole Alaska blocker. The exact official DPA offices page is browser-readable again and truthfully proves only regional office groupings, while the wider health-host raw lane still returns public Cloudflare 403 shells on related DPA leaves and PDFs. DFCS successor content still exposes only statewide or wrong-role content, and the extra DAPH branch surfaced from the live DFCS Site Map still resolves to Alaska Pioneer Homes services and payment-assistance pages rather than any borough- or census-area public-assistance office contract.`,
-    );
-}
-
 function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
   return [
     '# Alaska California-Grade Audit Report v2',
@@ -110,6 +95,11 @@ function buildReport(summary, gapRows, failureRows, verifiedRows, nextRows) {
     '## Next actions',
     '',
     ...nextRows.map((row) => `- [${row.severity}] ${row.family}: ${row.next_action}`),
+    '',
+    '## County-local accounting',
+    '',
+    `- county-equivalent coverage (0/${summary.county_count}): no reviewed public borough- or census-area-to-office assignment contract`,
+    `- reviewed regional office groupings (${REGION_GROUPINGS.length}): ${REGION_GROUPINGS.join(', ')}`,
     '',
     '## Completion decision',
     '',
@@ -141,7 +131,6 @@ export function generateBatch404AlaskaTerminalRefreshV1() {
   const queueRows = readJsonl(INPUTS.queue);
   const allStateAudit = readJson(INPUTS.audit);
   const allStateReport = fs.readFileSync(INPUTS.allStateReport, 'utf8');
-  const handoff = fs.readFileSync(INPUTS.handoff, 'utf8');
   const stateCertification = readJson(INPUTS.stateCertification);
 
   const updatedSummary = {
@@ -151,12 +140,23 @@ export function generateBatch404AlaskaTerminalRefreshV1() {
     index_safe: false,
     completeness_pct: 91,
     primary_gap_reason: PRIMARY_GAP_REASON,
+    county_local_borough_contract_count: 0,
+    county_local_unmapped_geographies_count: summary.county_count,
+    county_local_region_groupings: REGION_GROUPINGS,
     familyStatuses: {
       ...(summary.familyStatuses || {}),
       county_local_disability_resources: COUNTY_STATUS,
     },
     final_blockers: (summary.final_blockers || []).map((row) =>
-      row.family === 'county_local_disability_resources' ? { ...row, evidence: COUNTY_REASON } : row,
+      row.family === 'county_local_disability_resources'
+        ? {
+            ...row,
+            evidence: COUNTY_REASON,
+            borough_contract_count: 0,
+            unmapped_geographies_count: summary.county_count,
+            reviewed_region_groupings: REGION_GROUPINGS,
+          }
+        : row,
     ),
   };
 
@@ -193,6 +193,7 @@ export function generateBatch404AlaskaTerminalRefreshV1() {
           primary_gap_reason: PRIMARY_GAP_REASON,
           recommended_batch: 'hold_for_new_official_borough_assignment_contract',
           repair_lane: 'blocked_until_new_official_public_county_contract',
+          final_blockers: updatedSummary.final_blockers,
         }
       : row,
   );
@@ -209,6 +210,7 @@ export function generateBatch404AlaskaTerminalRefreshV1() {
   if (auditRow) {
     auditRow.packetBatch = BATCH;
     auditRow.packetPrimaryGapReason = PRIMARY_GAP_REASON;
+    auditRow.packetFinalBlockers = updatedSummary.final_blockers;
     auditRow.familyStatuses = {
       ...auditRow.familyStatuses,
       county_local_disability_resources: COUNTY_STATUS,
@@ -216,7 +218,6 @@ export function generateBatch404AlaskaTerminalRefreshV1() {
   }
   writeJson(INPUTS.audit, allStateAudit);
   writeText(INPUTS.allStateReport, updateAllStateReport(allStateReport));
-  writeText(INPUTS.handoff, updateHandoff(handoff));
 
   const updatedStateCertification = {
     ...stateCertification,
@@ -235,6 +236,9 @@ export function generateBatch404AlaskaTerminalRefreshV1() {
     dpa_offices_browser_reviewable: true,
     dpa_offices_region_only: true,
     dpa_region_heading_count: 5,
+    dpa_region_groupings: REGION_GROUPINGS,
+    county_equivalent_contract_count: 0,
+    county_equivalent_unmapped_count: summary.county_count,
     dpa_page_has_borough_term: false,
     dpa_page_has_census_area_term: false,
     dpa_root_403: true,

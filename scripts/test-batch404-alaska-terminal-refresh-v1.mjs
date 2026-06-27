@@ -26,6 +26,9 @@ assert.equal(summary.classification, 'BLOCKED');
 assert.equal(summary.index_safe, false);
 assert.equal(summary.completeness_pct, 91);
 assert.equal(summary.primary_gap_reason, 'bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract');
+assert.equal(summary.county_local_borough_contract_count, 0);
+assert.equal(summary.county_local_unmapped_geographies_count, 20);
+assert.deepEqual(summary.county_local_region_groupings, ['Alaska Peninsula', 'Northern Alaska', 'Southcentral Alaska', 'Southeast Alaska', 'Southwest Alaska']);
 
 const gapRows = readJsonl('data/generated/alaska_gap_matrix_v2.jsonl');
 const countyGap = gapRows.find((row) => row.family === 'county_local_disability_resources');
@@ -46,16 +49,24 @@ assert.match(JSON.stringify(verifiedRows), /Reviewed 2026-06-26/);
 const queueRows = readJsonl('data/generated/all_state_priority_queue_v3.jsonl');
 const queueRow = queueRows.find((row) => row.state === 'alaska');
 assert.equal(queueRow.primary_gap_reason, 'bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract');
+assert.equal(queueRow.final_blockers[0].borough_contract_count, 0);
+assert.equal(queueRow.final_blockers[0].unmapped_geographies_count, 20);
+assert.deepEqual(queueRow.final_blockers[0].reviewed_region_groupings, ['Alaska Peninsula', 'Northern Alaska', 'Southcentral Alaska', 'Southeast Alaska', 'Southwest Alaska']);
 
 const report = fs.readFileSync(path.join(repoRoot, 'docs/generated/alaska-california-grade-audit-report-v2.md'), 'utf8');
 assert.match(report, /exact official DPA offices page .* publicly readable again/i);
 assert.match(report, /contains no literal `borough` or `census area` terms/i);
 assert.match(report, /DAPH branch is still wrong-role Alaska Pioneer Homes content/i);
+assert.match(report, /county-equivalent coverage \(0\/20\): no reviewed public borough- or census-area-to-office assignment contract/i);
+assert.match(report, /reviewed regional office groupings \(5\): Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska/i);
 
 const batchSummary = readJson('data/generated/batch404_alaska_terminal_refresh_summary_v1.json');
 assert.equal(batchSummary.dpa_offices_browser_reviewable, true);
 assert.equal(batchSummary.dpa_offices_region_only, true);
 assert.equal(batchSummary.dpa_region_heading_count, 5);
+assert.deepEqual(batchSummary.dpa_region_groupings, ['Alaska Peninsula', 'Northern Alaska', 'Southcentral Alaska', 'Southeast Alaska', 'Southwest Alaska']);
+assert.equal(batchSummary.county_equivalent_contract_count, 0);
+assert.equal(batchSummary.county_equivalent_unmapped_count, 20);
 assert.equal(batchSummary.dpa_page_has_borough_term, false);
 assert.equal(batchSummary.dpa_page_has_census_area_term, false);
 assert.equal(batchSummary.dpa_root_403, true);
@@ -72,15 +83,14 @@ const allStateAudit = readJson('data/generated/all_state_california_grade_audit_
 const auditRow = allStateAudit.states.find((row) => row.stateId === 'alaska');
 assert.equal(auditRow.packetBatch, 'batch404_alaska_terminal_refresh_v1');
 assert.equal(auditRow.packetPrimaryGapReason, 'bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract');
+assert.equal(auditRow.packetFinalBlockers[0].borough_contract_count, 0);
+assert.equal(auditRow.packetFinalBlockers[0].unmapped_geographies_count, 20);
+assert.deepEqual(auditRow.packetFinalBlockers[0].reviewed_region_groupings, ['Alaska Peninsula', 'Northern Alaska', 'Southcentral Alaska', 'Southeast Alaska', 'Southwest Alaska']);
 
 const allStateReport = fs.readFileSync(path.join(repoRoot, 'docs/generated/all-state-california-grade-audit-report-v3.md'), 'utf8');
 assert.match(allStateReport, /Alaska remains blocked after a 2026-06-26 bounded live recheck/i);
 assert.match(allStateReport, /exact DPA offices page is browser-readable again/i);
 assert.match(allStateReport, /DAPH branch still resolves only to Alaska Pioneer Homes payment-assistance content/i);
-
-const handoff = fs.readFileSync(path.join(repoRoot, 'docs/generated/gemini-source-scout-handoff.md'), 'utf8');
-assert.match(handoff, /Current Focus State: Alaska/);
-assert.match(handoff, /- Alaska: `bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract`/);
 
 const stateCertification = readJson('data/generated/state-certification/alaska.json');
 assert.equal(stateCertification.summary.batch, 'batch404_alaska_terminal_refresh_v1');

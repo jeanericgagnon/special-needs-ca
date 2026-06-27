@@ -46,6 +46,11 @@
 
 - [critical] county_local_disability_resources: hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api
 
+## County-local accounting
+
+- county-equivalent coverage (0/20): no reviewed public borough- or census-area-to-office assignment contract
+- reviewed regional office groupings (5): Alaska Peninsula, Northern Alaska, Southcentral Alaska, Southeast Alaska, Southwest Alaska
+
 ## Completion decision
 
 - Alaska remains BLOCKED and not index-safe.
