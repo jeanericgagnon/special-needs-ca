@@ -3,6 +3,7 @@
 import React, { useState, useTransition } from 'react';
 import { Shield, ShieldAlert, ShieldCheck, AlertTriangle, ExternalLink, HelpCircle, Send } from 'lucide-react';
 import { submitSuggestionAction } from '@/app/actions';
+import { getSourceReviewDisplay } from '@/lib/sourceReviewLabels';
 
 interface TrustBadgeProps {
   status?: string | null;
@@ -53,23 +54,24 @@ export function TrustBadge({
   const hasReviewableSource = Boolean(String(sourceUrl || '').trim());
   const normSourceType = String(sourceType || '').toLowerCase().trim();
   const isOfficialSourceType = normSourceType.startsWith('official');
+  const reviewDisplay = getSourceReviewDisplay(status);
 
   if (hasReviewableSource && (normStatus === 'official_verified' || normStatus === 'human_verified' || normStatus === 'verified')) {
-    badgeColor = '#0f766e'; // Teal
-    badgeBg = 'rgba(15, 118, 110, 0.08)';
+    badgeColor = reviewDisplay.color;
+    badgeBg = reviewDisplay.background;
     badgeLabel = entityType === 'advocate'
       ? 'Source-backed professional listing — confirm fit and credentials locally'
       : isOfficialSourceType
-      ? 'Source-backed official contact'
-      : 'Source-backed contact listing';
-    badgeIcon = <ShieldCheck size={14} color="#0f766e" />;
+      ? 'Source-backed reviewed official contact'
+      : 'Source-backed reviewed contact listing';
+    badgeIcon = <ShieldCheck size={14} color={reviewDisplay.color} />;
   } else if (hasReviewableSource && normStatus === 'source_listed') {
-    badgeColor = '#3b82f6'; // Blue
-    badgeBg = 'rgba(59, 130, 246, 0.08)';
+    badgeColor = reviewDisplay.color;
+    badgeBg = reviewDisplay.background;
     badgeLabel = isOfficialSourceType
-      ? 'Official source linked, not human verified'
-      : 'Public source linked, not human verified';
-    badgeIcon = <Shield size={14} color="#3b82f6" />;
+      ? 'Official source linked'
+      : reviewDisplay.label;
+    badgeIcon = <Shield size={14} color={reviewDisplay.color} />;
   } else if (normStatus === 'generated_county_fallback') {
     badgeColor = '#d97706'; // Amber
     badgeBg = 'rgba(217, 119, 6, 0.08)';
