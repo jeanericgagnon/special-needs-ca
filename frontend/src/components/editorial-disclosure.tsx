@@ -68,7 +68,7 @@ export default function EditorialDisclosure({
                 ) : (
                   agencyName || 'Public agency source'
                 )}
-                {lastVerifiedDate ? ` • Last reviewed: ${lastVerifiedDate}` : ''}
+                {lastVerifiedDate ? ` • Last checked: ${lastVerifiedDate}` : ''}
                 {policyCitation ? ` (under citation: ${policyCitation})` : ''}.
               </>
             )}

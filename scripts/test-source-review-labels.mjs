@@ -2,14 +2,14 @@ import assert from 'node:assert/strict';
 import { getSourceReviewDisplay } from '../frontend/src/lib/sourceReviewLabels.ts';
 
 assert.deepEqual(getSourceReviewDisplay('official_verified'), {
-  label: 'Source-backed reviewed',
+  label: 'Source-backed checked',
   color: '#0f766e',
   background: 'rgba(15, 118, 110, 0.08)',
   borderColor: '#0f766e30',
 });
 
 assert.deepEqual(getSourceReviewDisplay('verified'), {
-  label: 'Source-backed reviewed',
+  label: 'Source-backed checked',
   color: '#0f766e',
   background: 'rgba(15, 118, 110, 0.08)',
   borderColor: '#0f766e30',

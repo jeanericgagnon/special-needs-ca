@@ -218,6 +218,13 @@ function hasInvalidPublicContactField(record?: PublicRecordLike | null): boolean
   return false;
 }
 
+function hasInvalidPublicNameField(record?: PublicRecordLike | null): boolean {
+  if (!record) return false;
+  const value = String(record.office_name || record.name || '').trim();
+  if (!value) return false;
+  return /\b(placeholder|dummy|fake|test record|generated county fallback)\b/i.test(value);
+}
+
 export function hasPublicSourceUrl(record?: PublicRecordLike | null): boolean {
   if (!record?.source_url) return false;
   if (hasSyntheticSourceHost(record.source_url)) return false;
@@ -271,6 +278,7 @@ export function isPublicRecordEligible(record?: PublicRecordLike | null): boolea
     (record.data_origin || '') !== 'manual_seed' &&
     (record.source_type || '') !== 'seed' &&
     !isLikelySyntheticPublicAdvocate(record) &&
+    !hasInvalidPublicNameField(record) &&
     !hasInvalidPublicContactField(record) &&
     isAcceptablePublicVerificationStatus(record.verification_status) &&
     hasPublicSourceUrl(record) &&

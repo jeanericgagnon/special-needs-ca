@@ -127,6 +127,14 @@ assert.equal(
   false,
 );
 
+assert.equal(
+  isPublicRecordEligible({
+    ...publishedRecord,
+    office_name: 'Placeholder County Services Record',
+  }),
+  false,
+);
+
 const countyTruthWithWebsiteOnlyDistrict = getCountyTruthEligibility('california', {
   id: 'los-angeles',
   regionalCenters: [{

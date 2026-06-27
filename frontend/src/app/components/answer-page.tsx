@@ -213,7 +213,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', fontSize: '0.82rem', color: 'var(--text-light)', borderBottom: '1px solid rgba(0,0,0,0.06)', paddingBottom: '1rem' }}>
               <span>Primary source: <strong style={{ color: 'var(--text-main)' }}>{reviewableOfficialSources[0]?.name || 'Still being verified'}</strong></span>
               <span>•</span>
-              <span>Last Reviewed: <strong style={{ color: 'var(--text-main)' }}>{data.lastReviewedDate}</strong></span>
+              <span>Last Checked: <strong style={{ color: 'var(--text-main)' }}>{data.lastReviewedDate}</strong></span>
             </div>
             {!hasSourceBackedEvidence ? (
               <div style={{ marginTop: '0.9rem', fontSize: '0.84rem', color: '#92400e', lineHeight: 1.5 }}>

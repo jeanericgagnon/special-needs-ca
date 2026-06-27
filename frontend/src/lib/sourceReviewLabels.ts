@@ -10,7 +10,7 @@ export function getSourceReviewDisplay(verificationStatus?: string | null): Sour
 
   if (status === 'official_verified' || status === 'human_verified' || status === 'verified') {
     return {
-      label: 'Source-backed reviewed',
+      label: 'Source-backed checked',
       color: '#0f766e',
       background: 'rgba(15, 118, 110, 0.08)',
       borderColor: '#0f766e30',

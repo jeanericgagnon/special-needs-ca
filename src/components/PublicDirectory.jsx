@@ -306,7 +306,7 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px', borderBottom: '1px solid rgba(255,255,255,0.03)', paddingBottom: '6px' }}>
                       <span>School District Special Ed category:</span>
                       <strong style={{ color: detailData.categoryMappings.iepRelevance ? 'var(--accent-teal)' : 'var(--text-muted)' }}>
-                        {detailData.categoryMappings.iepRelevance ? 'Yes (highly eligible)' : 'No'}
+                        {detailData.categoryMappings.iepRelevance ? 'Yes (may support eligibility)' : 'No'}
                       </strong>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px', borderBottom: '1px solid rgba(255,255,255,0.03)', paddingBottom: '6px' }}>

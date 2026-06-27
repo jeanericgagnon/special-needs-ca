@@ -148,13 +148,13 @@ export function runMatchingEngine(profile) {
         
         if (rcDiagnoses.length > 0 || rcNeeds.length > 0) {
           const matchedTerms = [...rcDiagnoses.map(c => c.name), ...rcNeeds.map(n => functionalNeeds.find(fn => fn.id === n)?.name)];
-          recommendation.whyMatched = `Because your child is over age 3 and has developmental markers (${matchedTerms.join(', ')}), they may be highly eligible for lifelong Regional Center services.`;
+          recommendation.whyMatched = `Because your child is over age 3 and has developmental markers (${matchedTerms.join(', ')}), they may be worth screening for ongoing Regional Center services.`;
           recommendation.childProfileTrigger = `Age >= 3, Condition/Needs: ${matchedTerms.join(', ')}`;
           recommendation.whatIsStillUnknown = 'Whether they meet the strict legal standard of substantial limitations in 3 of the 7 major life activity domains.';
           recommendation.whatToDoNext = `Submit an intake referral to the Frank D. Lanterman Regional Center intake line at ${localRC?.intakePhone || 'local office'}.`;
           results.highPriority.push(recommendation);
         } else if (suspectedConditions.length > 0) {
-          recommendation.whyMatched = 'Because your child has suspected undiagnosed conditions and is over 3, they are likely worth screening for Fifth Category or autism eligibility.';
+          recommendation.whyMatched = 'Because your child has suspected undiagnosed conditions and is over 3, they may be worth screening for Fifth Category or autism eligibility.';
           recommendation.childProfileTrigger = 'Age >= 3, Suspected condition';
           recommendation.whatIsStillUnknown = 'Formal psychological and adaptive behavior scores.';
           recommendation.whatToDoNext = 'Request a formal developmental and psychological intake assessment.';
@@ -182,7 +182,7 @@ export function runMatchingEngine(profile) {
       const condNames = matchedConditions.map(c => c.name);
       
       if (hasEligibleCondition && (isDangerous || isHighlyDependent)) {
-        recommendation.whyMatched = `Because your child has a developmental condition (${condNames.join(', ')}) combined with severe safety needs (${selectedNeeds.includes('protective-supervision') ? 'Protective Supervision' : 'high-care dependencies'}), they are likely worth screening for paid IHSS care hours.`;
+        recommendation.whyMatched = `Because your child has a developmental condition (${condNames.join(', ')}) combined with severe safety needs (${selectedNeeds.includes('protective-supervision') ? 'Protective Supervision' : 'high-care dependencies'}), they may be worth screening for paid IHSS care hours.`;
         recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}, Needs: ${selectedNeeds.join(', ')}`;
         recommendation.whatIsStillUnknown = `Active Medi-Cal status (required). If family income is too high, you must secure the Regional Center Waiver first.`;
         recommendation.whatToDoNext = `Have your pediatrician complete the SOC 873 Medical Certification and call the County IHSS Intake office at ${localCounty?.ihssContact || 'local DPSS'}.`;
@@ -230,7 +230,7 @@ export function runMatchingEngine(profile) {
       const ccsCondNames = ccsConditions.map(c => c.name);
       
       if (ccsConditions.length > 0 || ccsNeeds.length > 0) {
-        recommendation.whyMatched = `Because your child has a qualifying physical, sensory, or genetic condition (${[...ccsCondNames, ...ccsNeeds].join(', ')}), they are a high-priority screen for CCS specialty care and school-based Medical Therapy Program (MTP) speech/occupational therapies.`;
+        recommendation.whyMatched = `Because your child has a qualifying physical, sensory, or genetic condition (${[...ccsCondNames, ...ccsNeeds].join(', ')}), CCS may be worth screening for specialty care and school-based Medical Therapy Program (MTP) services.`;
         recommendation.childProfileTrigger = `Triggers: ${[...ccsCondNames, ...ccsNeeds].join(', ')}`;
         recommendation.whatIsStillUnknown = 'Income verification (waived for school-based MTP, required under $40k for medical specialty referrals).';
         recommendation.whatToDoNext = `Submit a CCS application (DHCS 4480) along with diagnostic audiograms/cardiac records to the local CCS office: ${localCounty?.ccsContact || 'county health'}.`;
@@ -256,13 +256,13 @@ export function runMatchingEngine(profile) {
         if (selectedNeeds.includes('iep-evaluation')) iepTriggers.push('IEP assessment needs');
         
         if (iepTriggers.length > 0) {
-          recommendation.whyMatched = `Because your child is school age (${age.years} years old) and has ${iepTriggers.join(' / ')}, they have a legal right to formal school district special education assessments and an IEP.`;
+          recommendation.whyMatched = `Because your child is school age (${age.years} years old) and has ${iepTriggers.join(' / ')}, you can request a formal school district special education assessment and IEP review under IDEA procedures.`;
           recommendation.childProfileTrigger = `Age 3-22, triggers: ${iepTriggers.join(', ')}`;
           recommendation.whatIsStillUnknown = 'Their current school placement and any prior learning logs.';
           recommendation.whatToDoNext = 'Submit a written assessment request letter to the Special Education Director of your school district (see County routing).';
           results.highPriority.push(recommendation);
         } else {
-          recommendation.whyMatched = 'Your child is school age. If you observe any speech, reading, behavior, or motor delays, you are likely worth screening for an IEP.';
+          recommendation.whyMatched = 'Your child is school age. If you observe speech, reading, behavior, or motor delays, they may be worth screening for an IEP.';
           recommendation.childProfileTrigger = 'Age 3-22, no explicit school trigger';
           recommendation.whatToDoNext = 'Consult with their classroom teacher. If delays persist, submit a written evaluation request.';
           results.possible.push(recommendation);
@@ -288,7 +288,7 @@ export function runMatchingEngine(profile) {
       const condNames = matchedConditions.map(c => c.name);
       
       if (hasMedicallyListed) {
-        recommendation.whyMatched = `Because your child has Down Syndrome, they automatically meet the childhood medical listing (110.06) without further testing. If you meet the income requirements, this is a high-priority program.`;
+        recommendation.whyMatched = `Because your child has Down syndrome, SSA listing 110.06 may support an SSI childhood disability claim. Financial eligibility and SSA review still apply.`;
         recommendation.childProfileTrigger = 'Condition: Down Syndrome';
         recommendation.whatIsStillUnknown = 'Household income and liquid asset limits ($2,000/$3,000).';
         recommendation.whatToDoNext = 'Call the SSA at 1-800-772-1213 to schedule a financial intake interview.';
@@ -300,7 +300,7 @@ export function runMatchingEngine(profile) {
         recommendation.whatToDoNext = 'Complete the online Child Disability Report (SSA-3820) and review the SSA Deeming Charts.';
         results.possible.push(recommendation);
       } else {
-        recommendation.whyMatched = 'SSI provides cash aid for severe childhood disabilities in low-income families. Check financial tables to see if your household qualifies.';
+        recommendation.whyMatched = 'SSI can provide cash aid for severe childhood disabilities in low-income families. Check the current financial tables and SSA rules to see whether your household may qualify.';
         recommendation.childProfileTrigger = 'No automatic listing condition';
         results.possible.push(recommendation);
       }
@@ -313,9 +313,9 @@ export function runMatchingEngine(profile) {
       const condNames = matchedConditions.map(c => c.name);
       const isEligible = hasEligibleCondition || selectedNeeds.length > 0;
       if (isEligible) {
-        recommendation.whyMatched = 'Because your child has a documented chronic developmental or sensory condition, they are a high-priority match to open a tax-free CalABLE savings account. This lets you save money for therapies, schools, or houses, protecting them from public benefit asset caps.';
+        recommendation.whyMatched = 'Because your child has a documented chronic developmental or sensory condition, CalABLE may be worth reviewing as a tax-advantaged disability savings option. Eligibility and account use still need source verification.';
         recommendation.childProfileTrigger = `Has conditions/needs: ${[...condNames, ...selectedNeeds].join(', ')}`;
-        recommendation.whatIsStillUnknown = 'None. Child qualifies based on age of onset of disability (< 26 years).';
+        recommendation.whatIsStillUnknown = 'You still need to confirm the disability onset record and current ABLE eligibility rules against the source.';
         recommendation.whatToDoNext = 'Visit CalABLE.ca.gov and open a free account online with an initial $25 contribution.';
         results.highPriority.push(recommendation);
       } else {

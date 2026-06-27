@@ -46,7 +46,7 @@ export default function SourceFreshnessDisclosure({
       
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
-          We show the public sources we relied on, when we last checked them, and whether each item is reviewed, publicly linked, or still needs deeper verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current official source for your county or program. If something looks wrong, please report a correction before relying on it.
+          We show the public sources we relied on, when we last checked them, and whether each item is source-backed, publicly linked, or still needs deeper verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current official source for your county or program. If something looks wrong, please report a correction before relying on it.
         </p>
 
         <div>
@@ -117,7 +117,7 @@ export default function SourceFreshnessDisclosure({
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', color: 'var(--text-light)' }}>
                   <Calendar size={12} />
-                  <span>Last Reviewed: {dateText}</span>
+                  <span>Last Checked: {dateText}</span>
                 </div>
 
                 {(sourceTypeLabel || confidenceLabel) && (

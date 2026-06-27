@@ -60,10 +60,10 @@ export function TrustBadge({
     badgeColor = reviewDisplay.color;
     badgeBg = reviewDisplay.background;
     badgeLabel = entityType === 'advocate'
-      ? 'Source-backed professional listing — confirm fit and credentials locally'
+      ? 'Source-backed checked listing — confirm fit and credentials locally'
       : isOfficialSourceType
-      ? 'Source-backed reviewed official contact'
-      : 'Source-backed reviewed contact listing';
+      ? 'Source-backed checked official contact'
+      : 'Source-backed checked contact listing';
     badgeIcon = <ShieldCheck size={14} color={reviewDisplay.color} />;
   } else if (hasReviewableSource && normStatus === 'source_listed') {
     badgeColor = reviewDisplay.color;
@@ -154,7 +154,7 @@ export function TrustBadge({
 
       {/* Date reviewed */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem', fontSize: '0.72rem', color: 'var(--text-light)' }}>
-        <span>Last reviewed: {dateText}</span>
+        <span>Last checked: {dateText}</span>
         {(sourceTypeLabel || confidenceLabel) && (
           <span>
             {[sourceTypeLabel ? `Source type: ${sourceTypeLabel}` : null, confidenceLabel].filter(Boolean).join(' • ')}
