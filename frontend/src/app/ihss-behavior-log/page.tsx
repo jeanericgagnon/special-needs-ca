@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import LaunchToolLanding from '@/app/components/launch-tool-landing';
 
 const SOURCE_CONFIDENCE = 0.95;
+const IHSS_TOOL_LAST_REVIEWED_DATE = '2026-06-27';
 
 const sources = [
   {
@@ -10,6 +11,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: SOURCE_CONFIDENCE,
+    lastReviewedDate: IHSS_TOOL_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Social Services county IHSS office directory',
@@ -17,6 +19,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: SOURCE_CONFIDENCE,
+    lastReviewedDate: IHSS_TOOL_LAST_REVIEWED_DATE,
   },
 ];
 

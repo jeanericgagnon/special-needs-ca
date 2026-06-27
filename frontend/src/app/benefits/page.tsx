@@ -1,21 +1,33 @@
 import type { Metadata } from 'next';
 import LaunchToolLanding from '@/app/components/launch-tool-landing';
 
+const SOURCE_CONFIDENCE = 0.95;
+const BENEFITS_LAST_REVIEWED_DATE = '2026-06-27';
+
 const sources = [
   {
     name: 'Medicaid.gov program and eligibility information',
     url: 'https://www.medicaid.gov/',
     verificationStatus: 'official_verified',
+    sourceType: 'official_federal',
+    confidenceScore: SOURCE_CONFIDENCE,
+    lastReviewedDate: BENEFITS_LAST_REVIEWED_DATE,
   },
   {
     name: 'Social Security Administration SSI for children',
     url: 'https://www.ssa.gov/ssi/text-child-ussi.htm',
     verificationStatus: 'official_verified',
+    sourceType: 'official_federal',
+    confidenceScore: SOURCE_CONFIDENCE,
+    lastReviewedDate: BENEFITS_LAST_REVIEWED_DATE,
   },
   {
     name: 'U.S. Department of Education IDEA information',
     url: 'https://sites.ed.gov/idea/',
     verificationStatus: 'official_verified',
+    sourceType: 'official_federal',
+    confidenceScore: SOURCE_CONFIDENCE,
+    lastReviewedDate: BENEFITS_LAST_REVIEWED_DATE,
   },
 ];
 

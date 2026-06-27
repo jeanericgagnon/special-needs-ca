@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     default: "Ablefull — Source-Backed Disability Benefits & Family Action Guides",
     template: "%s | Ablefull"
   },
-  description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Public launch coverage is deepest in California, with other states available through launch-ready, partial, or gated surfaces.",
+  description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Ablefull keeps incomplete local surfaces gated and only indexes state and county pages that pass the current launch evidence checks.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Ablefull",
-    description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Public launch coverage is deepest in California, with other states available through launch-ready, partial, or gated surfaces.",
+    description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Ablefull keeps incomplete local surfaces gated and only indexes state and county pages that pass the current launch evidence checks.",
     url: SITE_URL,
     siteName: "Ablefull",
     locale: "en_US",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ablefull",
-    description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Public launch coverage is deepest in California, with other states available through launch-ready, partial, or gated surfaces.",
+    description: "Find source-backed disability benefits, waiver pathways, IEP guidance, and early intervention next steps for your child. Ablefull keeps incomplete local surfaces gated and only indexes state and county pages that pass the current launch evidence checks.",
   }
 };
 
@@ -105,7 +105,7 @@ export default async function RootLayout({
         {/* Global Footer */}
         <footer style={{ background: 'rgba(255, 255, 255, 0.4)', backdropFilter: 'blur(10px)', borderTop: '1px solid rgba(0,0,0,0.05)', padding: '2rem 1rem', marginTop: 'auto', textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-light)' }}>
           <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
-            <p>&copy; 2026 Ablefull. All rights reserved.{' '}California currently has the deepest public launch coverage; all other states are available in source-backed pilot or gated launch modes.</p>
+            <p>&copy; 2026 Ablefull. All rights reserved. We publish source-backed state and county surfaces only when they pass the current launch evidence gate, and we keep incomplete local routes gated until they are reviewable.</p>
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/benefits/california" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>California</Link>
               <Link href="/benefits/texas" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Texas</Link>

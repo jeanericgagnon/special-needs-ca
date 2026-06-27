@@ -3,6 +3,7 @@ import LaunchToolLanding from '@/app/components/launch-tool-landing';
 
 const FEDERAL_SOURCE_CONFIDENCE = 0.93;
 const STATE_SOURCE_CONFIDENCE = 0.94;
+const IEP_TOOL_LAST_REVIEWED_DATE = '2026-06-27';
 
 const sources = [
   {
@@ -11,6 +12,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_federal',
     confidenceScore: FEDERAL_SOURCE_CONFIDENCE,
+    lastReviewedDate: IEP_TOOL_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Education special education rights and dispute resources',
@@ -18,6 +20,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: STATE_SOURCE_CONFIDENCE,
+    lastReviewedDate: IEP_TOOL_LAST_REVIEWED_DATE,
   },
 ];
 
