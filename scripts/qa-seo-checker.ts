@@ -3,6 +3,11 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import Database from 'better-sqlite3';
 import { evaluateSeoPolicy, assertNoPlaceholderData, mapShortDiagToDbId, normalizeConfidenceScore, stateAuditStatus } from '../frontend/src/lib/seo-policy.ts';
+import {
+  getCountyTruthEligibility,
+  isPublicCountyOfficeEligible,
+  isPublicRecordEligible,
+} from '../frontend/src/lib/publicTruth.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,6 +43,60 @@ function getRegionalCentersByCounty(countyId: string): any[] {
     JOIN regional_center_counties rcc ON rc.id = rcc.regional_center_id
     WHERE rcc.county_id = ?
   `).all(countyId) as any[];
+}
+
+function getSelpasByCounty(countyId: string): any[] {
+  if (!tableOrViewExists('selpas') || !tableOrViewExists('selpa_counties')) {
+    return [];
+  }
+  return db.prepare(`
+    SELECT s.* FROM selpas s
+    JOIN selpa_counties sc ON s.id = sc.selpa_id
+    WHERE sc.county_id = ?
+  `).all(countyId) as any[];
+}
+
+function getEligibleCountyAuditInputs(county: any) {
+  const offices = db.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(county.id) as any[];
+  const schoolDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
+  const regionalCenters = getRegionalCentersByCounty(county.id);
+  const selpas = getSelpasByCounty(county.id);
+
+  const eligibleOffices = offices.filter(isPublicCountyOfficeEligible);
+  const eligibleDistricts = schoolDistricts.filter(isPublicRecordEligible);
+  const eligibleRegionalCenters = regionalCenters.filter(isPublicRecordEligible);
+  const eligibleSelpas = selpas.filter(isPublicRecordEligible);
+
+  const rcDates = eligibleRegionalCenters.map(rc => rc.last_verified_date || rc.last_scraped_at).filter(Boolean);
+  const selpaDates = eligibleSelpas.map(selpa => selpa.last_verified_date || selpa.last_scraped_at).filter(Boolean);
+  const sdDates = eligibleDistricts.map(sd => sd.last_verified_date || sd.last_scraped_at).filter(Boolean);
+  const coDates = eligibleOffices.map(co => co.last_verified_date || co.last_scraped_at).filter(Boolean);
+  const allDates = [...rcDates, ...selpaDates, ...sdDates, ...coDates];
+
+  const rcScores = eligibleRegionalCenters.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
+  const selpaScores = eligibleSelpas.map(selpa => normalizeConfidenceScore(selpa.confidence_score)).filter((s): s is number => s !== null);
+  const sdScores = eligibleDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
+  const coScores = eligibleOffices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
+  const allScores = [...rcScores, ...selpaScores, ...sdScores, ...coScores];
+
+  const hasOfficialSource =
+    eligibleRegionalCenters.some(rc => !!rc.source_url && String(rc.source_type || '').toLowerCase().startsWith('official')) ||
+    eligibleSelpas.some(selpa => !!selpa.source_url && String(selpa.source_type || '').toLowerCase().startsWith('official')) ||
+    eligibleDistricts.some(sd => !!sd.source_url && String(sd.source_type || '').toLowerCase().startsWith('official')) ||
+    eligibleOffices.some(co => !!co.source_url && String(co.source_type || '').toLowerCase().startsWith('official'));
+
+  return {
+    offices,
+    eligibleOffices,
+    eligibleDistricts,
+    eligibleRegionalCenters,
+    eligibleSelpas,
+    hasRequiredContactInfo: eligibleOffices.length > 0,
+    hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices)),
+    lastVerifiedDate: allDates.length > 0 ? allDates.sort().at(-1) : null,
+    confidenceScore: allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null,
+    hasOfficialSource,
+  };
 }
 
 let errors = 0;
@@ -202,51 +261,38 @@ states.forEach(state => {
   let stateHasOfficialSource = false;
   
   stateCounties.forEach(county => {
-    const offices = db.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(county.id) as any[];
-    const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
-    const details = getRegionalCentersByCounty(county.id);
-    
-    const hasRequiredContactInfo = offices.length > 0;
-    const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices));
-    
-    const rcDates = details.map(rc => rc.last_verified_date).filter(Boolean);
-    const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean);
-    const coDates = offices.map(co => co.last_verified_date).filter(Boolean);
-    const allDates = [...rcDates, ...sdDates, ...coDates];
-    const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
-    if (lastVerifiedDate) countyDates.push(lastVerifiedDate);
-    
-    const rcScores = details.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
-    const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
-    const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
-    const allScores = [...rcScores, ...sdScores, ...coScores];
-    const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
-    if (confidenceScore !== null) countyScores.push(confidenceScore);
-    
-    let hasOfficialSource = false;
-    if (details.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
-      hasOfficialSource = true;
-      stateHasOfficialSource = true;
-    }
+    const auditInputs = getEligibleCountyAuditInputs(county);
+    if (auditInputs.lastVerifiedDate) countyDates.push(auditInputs.lastVerifiedDate);
+    if (auditInputs.confidenceScore !== null) countyScores.push(auditInputs.confidenceScore);
+    if (auditInputs.hasOfficialSource) stateHasOfficialSource = true;
     
     const cPolicy = evaluateSeoPolicy({
       routeType: 'county-hub',
       stateId: county.state_id,
       countyId: county.id,
-      entityCount: countyDistricts.length,
-      hasOfficialSource,
-      lastVerifiedDate,
-      confidenceScore,
-      hasRequiredContactInfo,
-      hasNoPlaceholderData
+      entityCount: auditInputs.eligibleDistricts.length,
+      hasOfficialSource: auditInputs.hasOfficialSource,
+      lastVerifiedDate: auditInputs.lastVerifiedDate,
+      confidenceScore: auditInputs.confidenceScore,
+      hasRequiredContactInfo: auditInputs.hasRequiredContactInfo,
+      hasNoPlaceholderData: auditInputs.hasNoPlaceholderData
     });
     
-    if (cPolicy.index) {
+    const truth = getCountyTruthEligibility(county.state_id, {
+      id: county.id,
+      countyOffices: auditInputs.offices,
+      schoolDistricts: auditInputs.eligibleDistricts,
+      regionalCenters: auditInputs.eligibleRegionalCenters,
+      selpas: auditInputs.eligibleSelpas,
+      localOrganizations: [],
+    });
+
+    if (cPolicy.index && truth.indexSafe) {
       indexableCountiesCount++;
     }
   });
   
-  const stateCountiesDate = countyDates.length > 0 ? countyDates.reduce((min, d) => d < min ? d : min, countyDates[0]) : null;
+  const stateCountiesDate = countyDates.length > 0 ? countyDates.sort().at(-1) : null;
   const stateCountiesScore = countyScores.length > 0 ? countyScores.reduce((sum, s) => sum + s, 0) / countyScores.length : null;
   
   const stateCountiesPolicy = evaluateSeoPolicy({
@@ -270,54 +316,38 @@ states.forEach(state => {
 
 // 2. County Hubs
 counties.forEach(county => {
-  const offices = db.prepare('SELECT * FROM county_offices WHERE county_id = ?').all(county.id) as any[];
-  const countyDistricts = db.prepare('SELECT * FROM school_districts WHERE county_id = ?').all(county.id) as any[];
-  
-  // Get regional centers view details
-  const details = getRegionalCentersByCounty(county.id);
-
-  const hasRequiredContactInfo = offices.length > 0;
-  const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices));
-
-  // Compute metrics dynamically from sub-entities
-  const rcDates = details.map(rc => rc.last_verified_date).filter(Boolean);
-  const sdDates = countyDistricts.map(sd => sd.last_verified_date).filter(Boolean);
-  const coDates = offices.map(co => co.last_verified_date).filter(Boolean);
-  const allDates = [...rcDates, ...sdDates, ...coDates];
-  const lastVerifiedDate = allDates.length > 0 ? allDates.reduce((min, d) => d < min ? d : min, allDates[0]) : null;
-
-  const rcScores = details.map(rc => normalizeConfidenceScore(rc.confidence_score)).filter((s): s is number => s !== null);
-  const sdScores = countyDistricts.map(sd => normalizeConfidenceScore(sd.confidence_score)).filter((s): s is number => s !== null);
-  const coScores = offices.map(co => normalizeConfidenceScore(co.confidence_score)).filter((s): s is number => s !== null);
-  const allScores = [...rcScores, ...sdScores, ...coScores];
-  const confidenceScore = allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null;
-
-  let hasOfficialSource = false;
-  if (details.some(rc => !!rc.source_url) || countyDistricts.some(sd => !!sd.source_url) || offices.some(co => !!co.source_url)) {
-    hasOfficialSource = true;
-  }
+  const auditInputs = getEligibleCountyAuditInputs(county);
+  const truth = getCountyTruthEligibility(county.state_id, {
+    id: county.id,
+    countyOffices: auditInputs.offices,
+    schoolDistricts: auditInputs.eligibleDistricts,
+    regionalCenters: auditInputs.eligibleRegionalCenters,
+    selpas: auditInputs.eligibleSelpas,
+    localOrganizations: [],
+  });
 
   const policy = evaluateSeoPolicy({
     routeType: 'county-hub',
     stateId: county.state_id,
     countyId: county.id,
-    entityCount: countyDistricts.length,
-    hasOfficialSource,
-    lastVerifiedDate,
-    confidenceScore,
-    hasRequiredContactInfo,
-    hasNoPlaceholderData
+    entityCount: auditInputs.eligibleDistricts.length,
+    hasOfficialSource: auditInputs.hasOfficialSource,
+    lastVerifiedDate: auditInputs.lastVerifiedDate,
+    confidenceScore: auditInputs.confidenceScore,
+    hasRequiredContactInfo: auditInputs.hasRequiredContactInfo,
+    hasNoPlaceholderData: auditInputs.hasNoPlaceholderData
   });
 
   const url = `/benefits/${county.state_id}/${county.id}`;
-  if (policy.index) {
+  if (policy.index && truth.indexSafe) {
     logSuccess(`County Hub indexable: ${url} (Score: ${policy.qualityScore})`);
-    if (!hasNoPlaceholderData) {
+    if (!auditInputs.hasNoPlaceholderData) {
       logError(`Indexable County Hub ${url} contains placeholder data!`);
     }
   } else {
-    if (!policy.blockers.includes('State is not yet in the indexed state allowlist') && county.state_id === 'california') {
-      logSuccess(`County Hub noindexed (correct): ${url} (Blockers: ${policy.blockers.join(', ')})`);
+    const blockers = truth.indexSafe ? policy.blockers : [...policy.blockers, ...truth.blockers];
+    if (!blockers.includes('State is not yet in the indexed state allowlist') && county.state_id === 'california') {
+      logSuccess(`County Hub noindexed (correct): ${url} (Blockers: ${blockers.join(', ')})`);
     }
   }
 });
