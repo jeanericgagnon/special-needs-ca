@@ -367,8 +367,15 @@ export default function FamilyDashboard({ activeProfile, setActiveProfile, profi
                       </div>
 
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '11px', color: 'var(--text-muted)' }}>
-                        <div>Source: <a href={prog.officialSourceUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>Official CDSS guidelines</a></div>
-                        <div>Last verified: {prog.lastVerifiedDate}</div>
+                        <div>
+                          Source:{' '}
+                          {prog.officialSourceUrl ? (
+                            <a href={prog.officialSourceUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>Source page</a>
+                          ) : (
+                            'Still being verified'
+                          )}
+                        </div>
+                        <div>Last verified: {prog.lastVerifiedDate || 'Still being verified'}</div>
                       </div>
                     </div>
                   );
@@ -738,7 +745,7 @@ export default function FamilyDashboard({ activeProfile, setActiveProfile, profi
               <div className="grid-cols-2">
                 {/* Local Mapped Offices */}
                 <div>
-                  <h4 style={{ fontSize: '15px', color: 'var(--text-primary)', marginBottom: '12px' }}>Official Application Offices</h4>
+                  <h4 style={{ fontSize: '15px', color: 'var(--text-primary)', marginBottom: '12px' }}>Current Application Offices</h4>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     {matches.localOffices.map((off, idx) => (
                       <div key={idx} style={{

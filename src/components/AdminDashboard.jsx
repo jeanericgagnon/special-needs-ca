@@ -9,8 +9,8 @@ export default function AdminDashboard() {
   const [queue, setQueue] = useState(initialVerificationQueue);
   const [gaps, setGaps] = useState(coverageGaps);
   const [userSubmissions, setUserSubmissions] = useState([
-    { id: 'sub-1', providerName: 'Empowerment Respite Agency LLC', category: 'respite', countyId: 'los-angeles', phone: '(310) 555-0822', website: 'https://empowerrespite.com', submittedAt: '2026-05-28', status: 'pending' },
-    { id: 'sub-2', providerName: 'Golden Gate Autism Advocates', category: 'advocacy', countyId: 'san-francisco', phone: '(415) 555-0912', website: 'https://ggautismadvocates.org', submittedAt: '2026-05-30', status: 'pending' }
+    { id: 'sub-1', providerName: 'Empowerment Respite Agency LLC', category: 'respite', countyId: 'los-angeles', phone: 'Pending review', website: 'https://empowerrespite.com', submittedAt: '2026-05-28', status: 'pending' },
+    { id: 'sub-2', providerName: 'Golden Gate Autism Advocates', category: 'advocacy', countyId: 'san-francisco', phone: 'Pending review', website: 'https://ggautismadvocates.org', submittedAt: '2026-05-30', status: 'pending' }
   ]);
 
   // Dynamic calculations

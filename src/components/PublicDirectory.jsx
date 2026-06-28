@@ -118,7 +118,7 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
                   </ul>
 
                   <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid var(--glass-border)', padding: '20px', borderRadius: 'var(--radius-md)' }}>
-                    <h4 style={{ fontSize: '14px', color: 'var(--text-primary)', marginBottom: '8px' }}>Official Reference Information</h4>
+                    <h4 style={{ fontSize: '14px', color: 'var(--text-primary)', marginBottom: '8px' }}>Source Reference Information</h4>
                     <div style={{ fontSize: '12px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
                       <div><strong>Source URL:</strong> <a href={detailData.officialSourceUrl} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>{detailData.officialSourceUrl}</a></div>
                       <div><strong>Last Verified:</strong> {detailData.lastVerifiedDate}</div>
@@ -295,7 +295,7 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
 
               <div className="grid-cols-2">
                 <div>
-                  <h3 style={{ fontSize: '18px', color: 'var(--accent-purple)', marginBottom: '12px' }}>Official System Eligibility Mappings</h3>
+                  <h3 style={{ fontSize: '18px', color: 'var(--accent-purple)', marginBottom: '12px' }}>System Eligibility Mappings</h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px', borderBottom: '1px solid rgba(255,255,255,0.03)', paddingBottom: '6px' }}>
                       <span>Regional Center developmental category:</span>
@@ -435,7 +435,7 @@ export default function PublicDirectory({ setCurrentTab, setSelectedCountyId }) 
               {/* Source citations */}
               <hr style={{ border: 'none', borderTop: '1px solid var(--glass-border)', margin: '40px 0' }} />
               <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-                <strong>Source Reference:</strong> <a href={detailData.officialSource} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>{detailData.officialSource}</a>
+                <strong>Source Page:</strong> <a href={detailData.officialSource} target="_blank" rel="noreferrer" style={{ color: 'var(--accent-teal)' }}>{detailData.officialSource}</a>
               </div>
             </div>
           )}

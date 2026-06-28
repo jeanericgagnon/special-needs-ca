@@ -27,7 +27,9 @@ export default function SourceFreshnessDisclosure({
   correctionTargetName,
   correctionButtonLabel = 'Report a correction',
 }: SourceFreshnessDisclosureProps) {
-  if (!sources || sources.length === 0) return null;
+  const hasSources = Array.isArray(sources) && sources.length > 0;
+  const shouldRender = hasSources || Boolean(correctionTargetId || correctionTargetName);
+  if (!shouldRender) return null;
 
   return (
     <div 
@@ -62,8 +64,9 @@ export default function SourceFreshnessDisclosure({
           Missing a local office, program, or source-backed contact? Use the correction flow to suggest a source-backed update. We keep thin or unverified local entries gated until that review is complete.
         </p>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem', marginTop: '0.5rem' }}>
-          {sources.map((src, idx) => {
+        {hasSources ? (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem', marginTop: '0.5rem' }}>
+            {sources.map((src, idx) => {
             const reviewDisplay = getSourceReviewDisplay(src.verificationStatus);
             const confidenceLabel = typeof src.confidenceScore === 'number' && Number.isFinite(src.confidenceScore)
               ? `${Math.round(src.confidenceScore * 100)}% confidence`
@@ -146,8 +149,24 @@ export default function SourceFreshnessDisclosure({
                 )}
               </div>
             );
-          })}
-        </div>
+            })}
+          </div>
+        ) : (
+          <div
+            style={{
+              marginTop: '0.5rem',
+              background: 'rgba(255, 255, 255, 0.5)',
+              border: '1px solid rgba(0, 0, 0, 0.04)',
+              borderRadius: '12px',
+              padding: '1rem',
+              fontSize: '0.82rem',
+              color: 'var(--text-light)',
+              lineHeight: 1.5,
+            }}
+          >
+            We are still verifying the direct public source notes for this surface. Please use the correction flow above if you have a current public source we should review before this page is treated as fully source-backed.
+          </div>
+        )}
       </div>
     </div>
   );

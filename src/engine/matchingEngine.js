@@ -47,6 +47,12 @@ export function runMatchingEngine(profile) {
   const localCounty = counties.find(c => c.id === countyId) || counties[0];
   
   const localRC = regionalCenters.find(rc => rc.countiesServed.includes(countyId)) || regionalCenters[0];
+
+  const hasUsableContact = (value) => {
+    const text = String(value || '').trim();
+    if (!text) return false;
+    return !/^(local dpss|dds line|local office|n\/a|unknown)$/i.test(text);
+  };
   
   const results = {
     highPriority: [],
@@ -123,7 +129,9 @@ export function runMatchingEngine(profile) {
           recommendation.whyMatched = `Because your child is under 3 years old (${age.years}y ${age.months}m) and exhibits ${triggers.join(' and ')}, they are a high-priority match.`;
           recommendation.childProfileTrigger = `Age < 3, Triggers: ${triggers.join(', ')}`;
           recommendation.whatIsStillUnknown = 'The exact level of developmental delay in cognitive and motor sectors.';
-          recommendation.whatToDoNext = `Call the Regional Center Early Start intake at ${localRC?.earlyStartContact || 'DDS line'} and request an early intervention evaluation immediately.`;
+          recommendation.whatToDoNext = hasUsableContact(localRC?.earlyStartContact)
+            ? `Call the current Regional Center Early Start intake at ${localRC.earlyStartContact} and request an early intervention evaluation.`
+            : 'Use the current Regional Center Early Start listing to confirm the right intake contact before requesting an early intervention evaluation.';
           results.highPriority.push(recommendation);
         } else {
           recommendation.whyMatched = 'Your child is under 3 years old. While no specific delays were selected, a screening is worth checking if you have developmental concerns.';
@@ -151,7 +159,9 @@ export function runMatchingEngine(profile) {
           recommendation.whyMatched = `Because your child is over age 3 and has developmental markers (${matchedTerms.join(', ')}), they may be worth screening for ongoing Regional Center services.`;
           recommendation.childProfileTrigger = `Age >= 3, Condition/Needs: ${matchedTerms.join(', ')}`;
           recommendation.whatIsStillUnknown = 'Whether they meet the strict legal standard of substantial limitations in 3 of the 7 major life activity domains.';
-          recommendation.whatToDoNext = `Submit an intake referral to the Frank D. Lanterman Regional Center intake line at ${localRC?.intakePhone || 'local office'}.`;
+          recommendation.whatToDoNext = hasUsableContact(localRC?.intakePhone)
+            ? `Submit an intake referral using the current Regional Center intake contact at ${localRC.intakePhone}.`
+            : 'Use the current Regional Center intake listing to confirm the right contact before submitting an intake referral.';
           results.highPriority.push(recommendation);
         } else if (suspectedConditions.length > 0) {
           recommendation.whyMatched = 'Because your child has suspected undiagnosed conditions and is over 3, they may be worth screening for Fifth Category or autism eligibility.';
@@ -185,7 +195,9 @@ export function runMatchingEngine(profile) {
         recommendation.whyMatched = `Because your child has a developmental condition (${condNames.join(', ')}) combined with severe safety needs (${selectedNeeds.includes('protective-supervision') ? 'Protective Supervision' : 'high-care dependencies'}), they may be worth screening for paid IHSS care hours.`;
         recommendation.childProfileTrigger = `Conditions: ${condNames.join(', ')}, Needs: ${selectedNeeds.join(', ')}`;
         recommendation.whatIsStillUnknown = `Active Medi-Cal status (required). If family income is too high, you must secure the Regional Center Waiver first.`;
-        recommendation.whatToDoNext = `Have your pediatrician complete the SOC 873 Medical Certification and call the County IHSS Intake office at ${localCounty?.ihssContact || 'local DPSS'}.`;
+        recommendation.whatToDoNext = hasUsableContact(localCounty?.ihssContact)
+          ? `Have your pediatrician complete the SOC 873 Medical Certification, then contact the current county IHSS intake office at ${localCounty.ihssContact} to confirm the next step and deadline.`
+          : 'Have your pediatrician complete the SOC 873 Medical Certification, then use the current county IHSS office directory to confirm the right intake contact and deadline before relying on a phone number.';
         
         if (isMediCal) {
           results.highPriority.push(recommendation);
