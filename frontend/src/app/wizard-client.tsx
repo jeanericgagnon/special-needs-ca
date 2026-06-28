@@ -1072,7 +1072,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                 </div>
               </div>
 
-              {/* Projected Financial Care Package Value Hero */}
+              {/* Estimated planning-value summary */}
               {(() => {
                 const { items: financialItems, total: totalFinancialValue } = getEstimatedFinancialValues(analysis.coreMatches);
                 return (
@@ -1104,14 +1104,14 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                           padding: '0.25rem 0.6rem',
                           borderRadius: '20px'
                         }}>
-                          <Coins size={12} /> Projected Care Package Value
+                          <Coins size={12} /> Estimated Planning Value
                         </span>
                         <h3 style={{ fontSize: '2.2rem', fontWeight: 800, color: 'var(--text-main)', margin: '0.2rem 0 0.5rem 0', display: 'flex', alignItems: 'baseline', gap: '0.3rem' }}>
                           ${totalFinancialValue.toLocaleString()}
                           <span style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--text-light)' }}>/ year</span>
                         </h3>
                         <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.5', margin: 0 }}>
-                          Estimated value of matched state program slots, specialized therapies, diapers, and respite care. Some programs may use deeming or waiver rules that change how financial eligibility is reviewed, but final coverage still depends on the current agency decision.
+                          Estimated planning value of source-backed programs and support paths that may be worth reviewing. This is not a guaranteed benefit total, and final coverage, hours, or payments still depend on current agency rules, evidence, and approval decisions.
                         </p>
                       </div>
                       
@@ -1139,7 +1139,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                           )}
                         </button>
                         <span style={{ fontSize: '0.85rem', color: 'var(--text-light)', fontWeight: 500, display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
-                          <TrendingUp size={14} /> {financialItems.length} Programs Matched
+                          <TrendingUp size={14} /> {financialItems.length} Potential program paths
                         </span>
                       </div>
                     </div>
