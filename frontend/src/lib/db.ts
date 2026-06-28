@@ -14,6 +14,7 @@ import {
   hasDirectoryNextStepSignal,
   isRenderableDirectoryFoundationRecord,
 } from './directoryFoundation';
+import { isPublicDirectoryRecordEligible } from './publicTruth';
 
 // Helper to locate DB file dynamically in serverless environments
 function findDbPath(dbName: string): string {
@@ -4378,13 +4379,13 @@ export async function getDirectoryFoundationSnapshot(): Promise<DirectoryFoundat
     };
 
     const providers = selectDiverseSamples(
-      providersAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row))
+      providersAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row) && isPublicDirectoryRecordEligible(row))
     );
     const nonprofits = selectDiverseSamples(
-      nonprofitsAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row))
+      nonprofitsAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row) && isPublicDirectoryRecordEligible(row))
     );
     const advocates = selectDiverseSamples(
-      advocatesAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row)),
+      advocatesAll.filter((row) => isPublicSample(row) && isRenderableDirectoryFoundationRecord(row) && isPublicDirectoryRecordEligible(row)),
       'languages_spoken'
     );
 

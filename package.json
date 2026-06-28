@@ -294,6 +294,7 @@
     "audit:seo-launch-ca": "node src/db/audit_seo_launch_ca.js",
     "test:directory-analytics": "node --experimental-strip-types scripts/test-directory-analytics.mjs",
     "test:directory-foundation": "node --experimental-strip-types scripts/test-directory-foundation.mjs",
+    "test:public-directory-sample-gating": "node scripts/test-public-directory-sample-gating.mjs",
     "test:nonprofit-accessibility-domain": "node scripts/test-nonprofit-accessibility-domain.mjs",
     "test:nonprofit-gap-batch": "node scripts/test-nonprofit-gap-batch.mjs",
     "test:provider-accessibility-workflow": "node scripts/test-provider-accessibility-workflow.mjs",
