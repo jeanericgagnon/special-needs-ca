@@ -46,19 +46,19 @@ const provenanceBackedRoutes = [
   },
   {
     path: 'frontend/src/app/benefits/page.tsx',
-    required: ['LaunchToolLanding'],
+    required: ['LaunchToolLanding', 'disclaimer=', 'sources={sources}', 'correctionSuggestionType="program"'],
   },
   {
     path: 'frontend/src/app/ihss-behavior-log/page.tsx',
-    required: ['LaunchToolLanding'],
+    required: ['LaunchToolLanding', 'disclaimer=', 'sources={sources}', 'correctionSuggestionType="other"'],
   },
   {
     path: 'frontend/src/app/iep-goals/page.tsx',
-    required: ['LaunchToolLanding'],
+    required: ['LaunchToolLanding', 'disclaimer=', 'sources={sources}', 'correctionSuggestionType="other"'],
   },
   {
     path: 'frontend/src/app/regional-center-funding/page.tsx',
-    required: ['LaunchToolLanding'],
+    required: ['LaunchToolLanding', 'disclaimer=', 'sources={sources}', 'correctionSuggestionType="other"'],
   },
   {
     path: 'frontend/src/app/programs/[slug]/page.tsx',
@@ -114,10 +114,31 @@ for (const route of provenanceBackedRoutes) {
 }
 
 const countiesStateHub = read('frontend/src/app/counties/[state]/page.tsx');
+const homepage = read('frontend/src/app/page.tsx');
+const findHelpPage = read('frontend/src/app/find-help/page.tsx');
+
 assert.match(
   countiesStateHub,
   /verificationStatus:\s*record\.verification_status\s*\|\|\s*undefined/,
   'State county hub disclosure sources should preserve per-record verification status for public provenance display.',
+);
+
+assert.match(
+  homepage,
+  /SourceFreshnessDisclosure/,
+  'Homepage should expose a public source freshness disclosure for the launch matcher surface.',
+);
+
+assert.match(
+  homepage,
+  /correctionButtonLabel="Report a homepage source issue"/,
+  'Homepage provenance disclosure should include a direct public correction CTA.',
+);
+
+assert.match(
+  findHelpPage,
+  /robots:\s*\{[\s\S]*index:\s*false,[\s\S]*follow:\s*true,[\s\S]*\}/,
+  'Find-help hub should remain noindex while it aggregates mixed-quality linked surfaces.',
 );
 
 const benefitsStateRoute = read('frontend/src/app/benefits/[state]/[[...slug]]/page.tsx');
