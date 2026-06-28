@@ -10,6 +10,7 @@ import {
   DEFAULT_CA_IHSS_ESTIMATE_HOURLY,
   formatIhssEstimateSourceLabel,
   getDefaultCaIhssWageDisclosure,
+  getIhssWageDisclosure,
 } from '@/lib/ihssWageDisclosure';
 import { 
   getSafetyIncidentsAction, saveSafetyIncidentAction, deleteSafetyIncidentAction,
@@ -62,7 +63,17 @@ const DEFAULT_INCIDENTS: SafetyIncident[] = [
 
 export default function IHSSOvertimePanel() {
   const defaultIhssDisclosure = getDefaultCaIhssWageDisclosure();
-  const { currentChild, parentName, setParentName, childName, setChildName, stateConfig, isSpanish } = useChildProfile();
+  const { currentChild, countyDetails, parentName, setParentName, childName, setChildName, stateConfig, isSpanish } = useChildProfile();
+  const countyIhssDisclosure = countyDetails
+    ? getIhssWageDisclosure(
+        countyDetails.state_id || 'california',
+        countyDetails.id,
+        countyDetails.name,
+        countyDetails.ihss_wage_rate ?? null,
+      )
+    : null;
+  const activeIhssDisclosure = countyIhssDisclosure ?? defaultIhssDisclosure;
+  const activeIhssCountyName = countyDetails?.name || activeIhssDisclosure.countyName;
 
   const [ihssSubTab, setIhssSubTab] = useState<'journal' | 'estimator' | 'overtime'>('journal');
 
@@ -85,7 +96,7 @@ export default function IHSSOvertimePanel() {
   const [paramedicalHours, setParamedicalHours] = useState<number>(2);
   const [paramedicalDesc, setParamedicalDesc] = useState<string>('Daily G-tube feeding prep, tube sanitization, and skin site inspection.');
   const [requiresSupervision, setRequiresSupervision] = useState<boolean>(true);
-  const [ihssWage, setIhssWage] = useState<number>(DEFAULT_CA_IHSS_ESTIMATE_HOURLY);
+  const [ihssWage, setIhssWage] = useState<number>(activeIhssDisclosure.hourlyRate ?? DEFAULT_CA_IHSS_ESTIMATE_HOURLY);
 
   // Overtime states
   const [recipientCount, setRecipientCount] = useState<number>(1);
@@ -142,7 +153,7 @@ export default function IHSSOvertimePanel() {
             setParamedicalHours(s.paramedical_hours ?? 2);
             setParamedicalDesc(s.paramedical_desc ?? 'Daily G-tube feeding prep, tube sanitization, and skin site inspection.');
             setRequiresSupervision(s.requires_supervision === 1);
-            setIhssWage(s.ihss_wage ?? DEFAULT_CA_IHSS_ESTIMATE_HOURLY); // QA-ALLOW
+            setIhssWage(s.ihss_wage ?? activeIhssDisclosure.hourlyRate ?? DEFAULT_CA_IHSS_ESTIMATE_HOURLY); // QA-ALLOW
             setRecipientCount(s.recipient_count ?? 1);
             setMonthlyHours1(s.monthly_hours_1 ?? 120);
             setMonthlyHours2(s.monthly_hours_2 ?? 80);
@@ -182,6 +193,7 @@ export default function IHSSOvertimePanel() {
               if (savedParamedicalDesc) setParamedicalDesc(savedParamedicalDesc);
               if (savedSupervision) setRequiresSupervision(savedSupervision === 'true');
               if (savedWage) setIhssWage(parseFloat(savedWage));
+              else setIhssWage(activeIhssDisclosure.hourlyRate ?? DEFAULT_CA_IHSS_ESTIMATE_HOURLY);
               if (savedRecipientCount) setRecipientCount(parseInt(savedRecipientCount));
               if (savedMonthlyHours1) setMonthlyHours1(parseInt(savedMonthlyHours1));
               if (savedMonthlyHours2) setMonthlyHours2(parseInt(savedMonthlyHours2));
@@ -193,7 +205,7 @@ export default function IHSSOvertimePanel() {
         });
       });
     }
-  }, [currentChild]);
+  }, [activeIhssDisclosure.hourlyRate, currentChild]);
 
   const handleSaveSchedule = async () => {
     if (!currentChild) return;
@@ -317,8 +329,8 @@ Status: ${isSeverelyImpaired ? 'Highly Impaired / High Needs (20+ hours)' : 'Sta
 
 3. PROJECTED MONTHLY AUTHORIZATION
 Estimated Monthly Hours: ${totalMonthlyHours} Hours
-Calculated local hourly provider wage estimate: $${ihssWage.toFixed(2)}/hour. Confirm the current county rate, approval status, and authorized hours before relying on this amount.
-Reference source checked: ${defaultIhssDisclosure.sourceUrl} (last checked ${defaultIhssDisclosure.lastVerifiedDate}).`;
+Checked ${activeIhssCountyName} County hourly provider estimate used for planning: $${ihssWage.toFixed(2)}/hour. Confirm the current county rate, approval status, and authorized hours before relying on this amount.
+Reference source checked: ${activeIhssDisclosure.sourceUrl} (last checked ${activeIhssDisclosure.lastVerifiedDate}).`;
   };
 
   return (
@@ -604,15 +616,15 @@ Reference source checked: ${defaultIhssDisclosure.sourceUrl} (last checked ${def
               </div>
 
               <div style={{ borderTop: '1px solid #eee', paddingTop: '1rem', display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1rem', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}><strong>County Rate Estimate:</strong> Adjust this to your county&apos;s current caregiver rate. The default uses a checked California estimate for {defaultIhssDisclosure.countyName} County and should be verified before you rely on the payout math.</span>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}><strong>County Rate Estimate:</strong> Adjust this to your county&apos;s current caregiver rate. We start with a checked estimate for {activeIhssCountyName} County and you should confirm the latest public county rate before relying on the payout math.</span>
                 <input type="number" step="0.05" value={ihssWage} onChange={(e) => setIhssWage(Math.max(16, parseFloat(e.target.value) || DEFAULT_CA_IHSS_ESTIMATE_HOURLY))} style={{ padding: '0.3rem', fontSize: '0.8rem', borderRadius: '4px', border: '1px solid #ccc' }} />
               </div>
               <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.5rem' }}>
                 Source checked:{' '}
-                <a href={defaultIhssDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>
-                  {formatIhssEstimateSourceLabel(defaultIhssDisclosure)}
+                <a href={activeIhssDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>
+                  {formatIhssEstimateSourceLabel(activeIhssDisclosure)}
                 </a>
-                {' '}• Last checked {defaultIhssDisclosure.lastVerifiedDate}.
+                {' '}• Last checked {activeIhssDisclosure.lastVerifiedDate}. {activeIhssDisclosure.explanation}
               </span>
             </div>
 

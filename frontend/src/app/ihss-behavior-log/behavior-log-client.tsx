@@ -1002,7 +1002,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                 {/* County Wage Settings */}
                 <div style={{ borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '1rem', display: 'grid', gridTemplateColumns: '1fr 120px', gap: '1rem', alignItems: 'flex-end' }}>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
-                    <strong>IHSS County Rate Estimate:</strong> Change this to match your county&apos;s current hourly provider rate. We start with a checked California estimate for {defaultIhssDisclosure.countyName} County and you should confirm the latest public county rate before relying on any payout math.
+                    <strong>IHSS County Rate Estimate:</strong> Change this to match your county&apos;s current hourly provider rate. This standalone tool starts with a checked estimate for {defaultIhssDisclosure.countyName} County because it does not know your county yet, and you should confirm the latest public county rate before relying on any payout math.
                   </div>
                   <div className="input-group" style={{ marginBottom: 0 }}>
                     <label style={{ fontSize: '0.75rem' }}>Wage / Hour ($)</label>

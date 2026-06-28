@@ -1,4 +1,7 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import {
   CA_IHSS_COUNTY_ESTIMATES,
   DEFAULT_CA_IHSS_ESTIMATE_HOURLY,
@@ -8,6 +11,10 @@ import {
   getIhssMonthlyEstimate,
   getIhssWageDisclosure,
 } from '../frontend/src/lib/ihssWageDisclosure.ts';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const repoRoot = path.resolve(__dirname, '..');
 
 const losAngeles = getIhssWageDisclosure('california', 'los-angeles', 'Los Angeles', null);
 assert.ok(losAngeles);
@@ -48,5 +55,19 @@ assert.equal(CA_IHSS_COUNTY_ESTIMATES.some((row) => row.countyId === 'los-angele
 
 const nonCalifornia = getIhssWageDisclosure('texas', 'harris-tx', 'Harris', null);
 assert.equal(nonCalifornia, null);
+
+const dashboardPanelSource = fs.readFileSync(
+  path.join(repoRoot, 'frontend/src/app/dashboard/components/IHSSOvertimePanel.tsx'),
+  'utf8',
+);
+assert.match(dashboardPanelSource, /getIhssWageDisclosure/);
+assert.match(dashboardPanelSource, /activeIhssDisclosure/);
+assert.match(dashboardPanelSource, /checked estimate for \{activeIhssCountyName\} County/i);
+
+const behaviorLogSource = fs.readFileSync(
+  path.join(repoRoot, 'frontend/src/app/ihss-behavior-log/behavior-log-client.tsx'),
+  'utf8',
+);
+assert.match(behaviorLogSource, /does not know your county yet/i);
 
 console.log('ihss wage disclosure tests passed');

@@ -435,6 +435,7 @@
     "test:official-state-domain-repair-pack": "node scripts/test-official-state-domain-repair-pack.mjs",
     "test:track-a-finish-loop": "node scripts/test-track-a-finish-loop.mjs",
     "test:low-token-workflows": "node scripts/test-low-token-workflow-regressions.mjs",
+    "test:ihss-wage-disclosure": "node scripts/test-ihss-wage-disclosure.mjs",
     "run:directory-public-trust-audit": "node --experimental-strip-types scripts/run-directory-public-trust-audit.mjs",
     "test:directory-public-trust-audit": "node scripts/test-directory-public-trust-audit.mjs",
     "test:saved-resources": "node --experimental-strip-types scripts/test-saved-resources.mjs",
