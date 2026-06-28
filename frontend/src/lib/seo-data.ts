@@ -91,7 +91,7 @@ export const SEO_CLUSTERS: Record<string, SEOPageData> = {
     callScriptTemplate: {
       intro: 'Regional Center Lanterman Intake Call Script',
       script: 'Hello, my name is [Parent Name]. I am calling to request a Lanterman Act intake assessment for my child, [Child Name], who was born on [DOB] and has a clinical diagnosis of Down Syndrome. I would like to request an intake coordinator be assigned to establish services, coordinate speech and physical therapy evaluations, and initiate the institutional deeming waiver application for Medi-Cal. Please send me the intake packet and details of next steps.',
-      tips: 'Always ask for the email address of the intake coordinator and send a follow-up email confirming your verbal request. Under California law, Regional Centers have strict timelines to act on written intake requests.'
+      tips: 'Always ask for the email address of the intake coordinator and send a follow-up email confirming your verbal request. Published California intake timelines and response requirements may apply, so confirm the current process with the Regional Center before relying on a deadline.'
     },
     letterTemplate: {
       title: 'Lanterman Regional Center Intake Request Letter',
@@ -538,7 +538,7 @@ Email: [Insert Email]`
       {
         question: 'Has your child received a clinical diagnosis outside of school?',
         options: [
-          { text: 'Yes, Autism/ADHD/Down Syndrome diagnosed by a doctor', score: 'high', reason: 'A clinical report strongly supports the request and forces the district to assess, though it does not guarantee IEP placement on its own.' },
+          { text: 'Yes, Autism/ADHD/Down Syndrome diagnosed by a doctor', score: 'high', reason: 'A clinical report can strengthen a written assessment request and supporting record, though it does not guarantee IEP eligibility or placement on its own.' },
           { text: 'No, but we suspect delays', score: 'med', reason: 'The district is legally bound to assess based on "suspected disability" even without a formal medical diagnosis.' }
         ]
       }
@@ -852,12 +852,12 @@ Phone: [Insert Phone]`
     title: 'Supplemental Security Income (SSI) for Children with Disabilities in California',
     metaTitle: 'SSI for Children with Disabilities California | Pay & Rules Guide',
     metaDescription: 'Learn how to secure monthly federal SSI disability cash payments for children with disabilities in California. Understand parental income deeming rules.',
-    quickAnswer: 'Supplemental Security Income (SSI) is a federal program administered by the Social Security Administration (SSA) that provides monthly cash payments to children with severe disabilities. In California, SSI approval often opens a Medi-Cal pathway, but families should confirm the current enrollment and coverage handling with SSA and Medi-Cal. The child must still meet strict clinical criteria and the applicable household income and asset rules.',
+    quickAnswer: 'Supplemental Security Income (SSI) is a federal program administered by the Social Security Administration (SSA) that provides monthly cash payments to children with severe disabilities. In California, SSI can connect to Medi-Cal enrollment pathways, but families should confirm the current enrollment and coverage handling with SSA and Medi-Cal. The child must still meet the current clinical criteria and the applicable household income and asset rules.',
     tldrPoints: [
       { label: 'Max Monthly Payment', value: 'Federal base rate plus any current California state supplement' },
       { label: 'Asset Limit', value: '$2,000 parent (single) / $3,000 (married)' },
       { label: 'Clinical Criteria', value: 'Marked or extreme limitation' },
-      { label: 'Medi-Cal Link', value: 'SSI approval often opens a Medi-Cal pathway; confirm current enrollment handling' }
+      { label: 'Medi-Cal Link', value: 'SSI can connect to a Medi-Cal pathway; confirm current enrollment handling' }
     ],
     whenThisMatters: 'When your household income and assets fall below the SSA limits, or when your child turns 18 (at age 18, parental income is ignored entirely and only the child\'s income/assets are evaluated).',
     signsThisMayApply: [
@@ -1000,7 +1000,7 @@ Phone: [Insert Phone]`
     },
     letterTemplate: {
       title: 'EPSDT Medical Necessity Request to Pediatrician',
-      description: 'A template letter to request your pediatrician draft a letter containing the exact federal legal keywords required for EPSDT approval.',
+      description: 'A template letter to request your pediatrician draft a source-backed medical-necessity letter for an EPSDT request.',
       fields: [
         { key: 'doctorName', label: 'Doctor Name', placeholder: 'Dr. Smith' },
         { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
@@ -4966,10 +4966,10 @@ ${f.parentName || '[Parent Name]'}`
     title: 'SSI Child Disability Checklist (Florida)',
     metaTitle: 'Florida Child SSI Checklist | Parent Application Help',
     metaDescription: 'Complete checklist of records, timelines, and requirements to apply for childhood Supplemental Security Income (SSI) in Florida.',
-    quickAnswer: 'Applying for childhood SSI requires medical records and a household financial review. SSI approval often opens a Medicaid pathway, but families should confirm the current Florida enrollment handling with SSA and state Medicaid. Freshness note: Reviewed on 2026-06-12.',
+    quickAnswer: 'Applying for childhood SSI requires medical records and a household financial review. SSI can connect to a Medicaid pathway, but families should confirm the current Florida enrollment handling with SSA and state Medicaid. Freshness note: Reviewed on 2026-06-12.',
     tldrPoints: [
       { label: 'Income Limit', value: 'Requires strict parent household resource audit' },
-      { label: 'Medicaid Link', value: 'SSI approval often opens a Medicaid pathway; confirm current enrollment handling' },
+      { label: 'Medicaid Link', value: 'SSI can connect to a Medicaid pathway; confirm current enrollment handling' },
       { label: 'Evidence', value: 'Requires documented marked functional limitations' }
     ],
     whenThisMatters: 'Seeking monthly financial assistance for disability care costs.',
@@ -5055,4 +5055,16 @@ export function isPublicSourceBackedFormGuideSlug(slug: string): boolean {
     !NON_CA_TEMPLATE_FORM_SLUGS.has(slug) &&
     !QUARANTINED_FIVE_STATE_TEMPLATE_SLUGS.has(slug)
   );
+}
+
+export function getClusterSourceConfidence(cluster: SEOPageData | undefined | null): number | null {
+  if (!cluster || !Array.isArray(cluster.officialSources)) return null;
+
+  const scores = cluster.officialSources
+    .map((source) => source.confidenceScore)
+    .filter((score): score is number => typeof score === 'number' && Number.isFinite(score));
+
+  if (scores.length === 0) return null;
+
+  return scores.reduce((sum, score) => sum + score, 0) / scores.length;
 }

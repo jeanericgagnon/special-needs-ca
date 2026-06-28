@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { SEO_CLUSTERS, isPublicSourceBackedFormGuideSlug } from '@/lib/seo-data';
+import { SEO_CLUSTERS, getClusterSourceConfidence, isPublicSourceBackedFormGuideSlug } from '@/lib/seo-data';
 import { navigatorDb, Program, getCounties, getBulkCountyDetails, RegionalCenter, SchoolDistrict, CountyOffice, County } from '@/lib/db';
 import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, SEO_STATE_ALLOWLIST, normalizeConfidenceScore, hasOfficialProgramSource } from '@/lib/seo-policy';
 import { CANONICAL_SITE_URL } from '@/lib/site-url';
@@ -196,7 +196,7 @@ export async function GET() {
         hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(cluster)),
         hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
         lastVerifiedDate: cluster.lastReviewedDate || null,
-        confidenceScore: 0.85
+        confidenceScore: getClusterSourceConfidence(cluster)
       });
 
       if (shouldIncludeInSitemap(policy)) {
@@ -243,7 +243,7 @@ export async function GET() {
         hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(cluster)),
         hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
         lastVerifiedDate: cluster.lastReviewedDate || null,
-        confidenceScore: 0.85
+        confidenceScore: getClusterSourceConfidence(cluster)
       });
 
       if (shouldIncludeInSitemap(policy)) {

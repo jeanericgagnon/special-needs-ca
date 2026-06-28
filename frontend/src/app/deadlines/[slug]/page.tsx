@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { SEO_CLUSTERS } from '@/lib/seo-data';
+import { SEO_CLUSTERS, getClusterSourceConfidence } from '@/lib/seo-data';
 import { getCounties } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 import { getSeoPolicyForRoute, hasOfficialProgramSource } from '@/lib/seo-policy';
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props) {
       hasNoPlaceholderData: true,
       hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
       lastVerifiedDate: cluster.lastReviewedDate || null,
-      confidenceScore: 0.85
+      confidenceScore: getClusterSourceConfidence(cluster)
     });
     return {
       title: cluster.metaTitle,
