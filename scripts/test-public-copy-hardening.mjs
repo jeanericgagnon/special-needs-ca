@@ -11,6 +11,7 @@ const correctionFlow = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/cou
 const footer = fs.readFileSync(path.join(repoRoot, 'src/components/Footer.jsx'), 'utf8');
 const editorialDisclosure = fs.readFileSync(path.join(repoRoot, 'frontend/src/components/editorial-disclosure.tsx'), 'utf8');
 const seoPolicy = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-policy.ts'), 'utf8');
+const wizardClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/wizard-client.tsx'), 'utf8');
 
 assert.match(
   answerPage,
@@ -124,6 +125,30 @@ assert.match(
   answerPage,
   /Suggest a county office source/,
   'County lookup fallback copy should offer a direct county-office source suggestion CTA when local contacts are still under review.'
+);
+
+assert.doesNotMatch(
+  wizardClient,
+  /Projected Care Package Value/,
+  'Benefits matcher should avoid projected-benefit framing that reads more certain than the evidence model supports.'
+);
+
+assert.match(
+  wizardClient,
+  /Estimated Planning Value/,
+  'Benefits matcher should label the summary value as an estimate for planning.'
+);
+
+assert.match(
+  wizardClient,
+  /not a guaranteed benefit total/i,
+  'Benefits matcher should explicitly disclaim that the planning summary is not a guaranteed benefit total.'
+);
+
+assert.match(
+  wizardClient,
+  /Potential program paths/,
+  'Benefits matcher should describe matched outputs as potential program paths rather than definitive matched programs.'
 );
 
 console.log('public copy hardening tests passed');
