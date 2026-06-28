@@ -1,4 +1,5 @@
 import { County, CountyOffice, SchoolDistrict, NonprofitOrganization, RegionalCenter, Selpa } from './db';
+import { isPublicCountyOfficeEligible, isPublicDirectoryRecordEligible, isPublicRecordEligible } from './publicTruth';
 
 export interface CountyDetails extends County {
   countyOffices?: CountyOffice[];
@@ -8,28 +9,40 @@ export interface CountyDetails extends County {
   selpas?: Selpa[];
 }
 
+function sanitizeCountyDetailsForPublic(countyDetails: CountyDetails): CountyDetails {
+  return {
+    ...countyDetails,
+    countyOffices: (countyDetails.countyOffices || []).filter(isPublicCountyOfficeEligible),
+    schoolDistricts: (countyDetails.schoolDistricts || []).filter(isPublicRecordEligible),
+    localOrganizations: (countyDetails.localOrganizations || []).filter(isPublicDirectoryRecordEligible),
+    regionalCenters: (countyDetails.regionalCenters || []).filter(isPublicRecordEligible),
+    selpas: (countyDetails.selpas || []).filter(isPublicRecordEligible),
+  };
+}
+
 export function getCountyMetadata(
   stateId: string,
   stateName: string,
   stateCode: string,
   countyDetails: CountyDetails
 ) {
+  const publicCountyDetails = sanitizeCountyDetailsForPublic(countyDetails);
   const countyName = countyDetails.name;
   let title = `${countyName} County Disability Benefits & Local Support (${stateCode})`;
   let description = `Find source-backed local service contacts, school district offices, and catchment boundaries for ${countyName} County, ${stateName}.`;
 
-  const verifiedOffice = countyDetails.countyOffices?.find(
+  const verifiedOffice = publicCountyDetails.countyOffices?.find(
     (o: CountyOffice) => o.verification_status === 'official_verified'
   )?.office_name;
 
   if (stateId === 'texas') {
-    const eciContractor = countyDetails.regionalCenters?.[0]?.name;
+    const eciContractor = publicCountyDetails.regionalCenters?.[0]?.name;
     title = `${countyName} County ECI & LIDDA Support, TX`;
     description = `Access source-backed local routing for families in ${countyName} County, Texas. Includes ${
       eciContractor || 'Early Childhood Intervention (ECI)'
     } contacts, local health and human services offices, and school district IEP departments.`;
   } else if (stateId === 'florida') {
-    const apdOffice = countyDetails.regionalCenters?.[0]?.name;
+    const apdOffice = publicCountyDetails.regionalCenters?.[0]?.name;
     title = `${countyName} County APD Waiver & Disability Support, FL`;
     description = `Find source-backed contact numbers and intake details for the ${
       apdOffice || 'APD Area Office'
@@ -40,7 +53,7 @@ export function getCountyMetadata(
     title = `${countyName} County MH/ID Office & Early Intervention, PA`;
     description = `Get source-backed intake contacts, school district intermediate units, and local support networks for ${countyName} County, Pennsylvania, including ${mhIdOffice}.`;
   } else if (stateId === 'california') {
-    const rcName = countyDetails.regionalCenters?.[0]?.name || 'Local Regional Center';
+    const rcName = publicCountyDetails.regionalCenters?.[0]?.name || 'Local Regional Center';
     title = `${countyName} County Regional Center & IHSS Benefits, CA`;
     description = `Navigate developmental disability services in ${countyName} County, California. Contact ${rcName}, check school district SELPA boundaries, and review current IHSS pay-rate estimates with source links.`;
   }
@@ -56,10 +69,11 @@ export function getCountyIntroCopy(
   countyWage: number | null,
   catchmentLabel: string
 ) {
+  const publicCountyDetails = sanitizeCountyDetailsForPublic(countyDetails);
   const countyName = countyDetails.name;
   
   if (stateId === 'texas') {
-    const eciContract = countyDetails.regionalCenters?.[0]?.name || 'a local ECI contractor';
+    const eciContract = publicCountyDetails.regionalCenters?.[0]?.name || 'a local ECI contractor';
     return `For families navigating disability services in ${countyName} County, Texas, services are split by age and department:
 1. **Under Age 3 (Early Childhood Intervention):** Your local intake is managed by **${eciContract}**. This is a localized program coordinating physical, occupational, and speech therapies at home or daycare.
 2. **Age 3 and Older (LIDDA):** Your primary point of contact for developmental waivers (like HCS, CLASS, and TxHmL) is your Local Intellectual and Developmental Disability Authority (LIDDA). They coordinate long-term services and interest list placements.
@@ -68,7 +82,7 @@ export function getCountyIntroCopy(
   }
 
   if (stateId === 'florida') {
-    const apdName = countyDetails.regionalCenters?.[0]?.name || 'the local APD Area Office';
+    const apdName = publicCountyDetails.regionalCenters?.[0]?.name || 'the local APD Area Office';
     return `Navigating disability benefits in ${countyName} County, Florida, involves several local and state pathways:
 1. **Developmental Waivers (APD):** Intakes for the iBudget and CDC+ home and community-based waivers are managed by **${apdName}**. You should contact them directly to apply and check your placement on the APD waitlist.
 2. **Early Intervention (Under 3):** Early Steps serves as the local coordinating body for infant and toddler developmental delays, offering in-home therapies and assessments.
@@ -77,7 +91,7 @@ export function getCountyIntroCopy(
   }
 
   if (stateId === 'pennsylvania') {
-    const officeName = countyDetails.countyOffices?.[0]?.office_name || 'the County MH/ID Office';
+    const officeName = publicCountyDetails.countyOffices?.[0]?.office_name || 'the County MH/ID Office';
     return `For parents in ${countyName} County, Pennsylvania, the local developmental disability support structure consists of:
 1. **County MH/ID Intake (Primary Starting Point):** The **${officeName}** acts as the local hub for both early intervention services (ages 0-3) and county-administered intellectual disability funding and waiver intakes. 
 2. **Preschool & School-Age Special Education:** Early intervention for children ages 3-5 is coordinated by regional Intermediate Units (IUs). Once a child reaches kindergarten, special education and IEPs are managed by their local school district.
@@ -85,7 +99,7 @@ export function getCountyIntroCopy(
   }
 
   if (stateId === 'california') {
-    const rcName = countyDetails.regionalCenters?.[0]?.name || 'your local Regional Center';
+    const rcName = publicCountyDetails.regionalCenters?.[0]?.name || 'your local Regional Center';
     return `Families seeking disability services in ${countyName} County, California, can use this local public system as a starting point:
 1. **Regional Center Coordination:** Intake for the Lanterman Act, Early Start (0-3), and the Self-Determination Program is managed by **${rcName}**. They serve as the single point of coordination for lifelong developmental services.
 2. **In-Home Support (IHSS):** The county Department of Social Services administers the IHSS program for personal care services. Any wage number we show is a checked public estimate, not a county pay guarantee, and should be confirmed with the current county IHSS office before you rely on it.
