@@ -1,6 +1,7 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
 import { stateAuditStatus, stateRuntimeLaunchStatus } from './stateAudit.ts';
 import {
+  isMeaningfulDirectoryName,
   isMeaningfulDirectoryEmail,
   isMeaningfulDirectoryPhone,
   isMeaningfulDirectoryWebsite,
@@ -222,7 +223,7 @@ function hasInvalidPublicNameField(record?: PublicRecordLike | null): boolean {
   if (!record) return false;
   const value = String(record.office_name || record.name || '').trim();
   if (!value) return false;
-  return /\b(placeholder|dummy|fake|test record|generated county fallback)\b/i.test(value);
+  return !isMeaningfulDirectoryName(value);
 }
 
 export function hasPublicSourceUrl(record?: PublicRecordLike | null): boolean {

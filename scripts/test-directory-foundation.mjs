@@ -8,6 +8,7 @@ import {
   hasDirectorySampleAccessibilitySummary,
   hasDirectorySampleNextStepSummary,
   isMeaningfulDirectoryEmail,
+  isMeaningfulDirectoryName,
   isMeaningfulDirectoryPhone,
   isMeaningfulDirectoryWebsite,
   isRenderableDirectoryFoundationRecord,
@@ -197,6 +198,8 @@ function run() {
   assert.equal(isMeaningfulDirectoryPhone('(800) 541-5555'), true);
   assert.equal(isMeaningfulDirectoryEmail('placeholder@example.com'), false);
   assert.equal(isMeaningfulDirectoryEmail('intake@dds.ca.gov'), true);
+  assert.equal(isMeaningfulDirectoryName('Provider Seven'), true);
+  assert.equal(isMeaningfulDirectoryName('Generated County Fallback Resource'), false);
   assert.equal(isMeaningfulDirectoryWebsite('https://www.example.org/provider-7'), false);
   assert.equal(isMeaningfulDirectoryWebsite('https://www.dds.ca.gov/provider-7'), true);
 
@@ -209,6 +212,18 @@ function run() {
   assert.equal(placeholderIssues.includes('invalid_public_phone'), true);
   assert.equal(placeholderIssues.includes('invalid_public_email'), true);
   assert.equal(isRenderableDirectoryFoundationRecord(placeholderContactRecord), false);
+
+  const placeholderNameRecord = {
+    ...cleanRenderableRecord,
+    name: 'Placeholder Resource Under Review',
+  };
+  const placeholderNameIssues = validateDirectoryFoundationRecord(placeholderNameRecord);
+  assert.equal(placeholderNameIssues.includes('invalid_public_name'), true);
+  assert.equal(isRenderableDirectoryFoundationRecord(placeholderNameRecord), false);
+  assert.equal(isPublicRecordEligible({
+    ...publicRecordWithFreshness,
+    name: 'Generated County Fallback Office',
+  }), false);
 
   const stateGovSourceDirectoryRecord = {
     ...cleanRenderableRecord,

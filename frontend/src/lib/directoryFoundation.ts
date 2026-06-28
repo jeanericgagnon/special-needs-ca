@@ -176,6 +176,14 @@ const PLACEHOLDER_EMAIL_PATTERNS = [
   /^dummy@/i,
   /^placeholder@/i,
 ] as const;
+const PLACEHOLDER_NAME_PATTERNS = [
+  /\bplaceholder\b/i,
+  /\bdummy\b/i,
+  /\bfake\b/i,
+  /\btest record\b/i,
+  /\bgenerated county fallback\b/i,
+  /\bsource under review\b/i,
+] as const;
 const VERIFIED_DIRECTORY_STATUSES = new Set(['verified', 'official_verified', 'human_verified', 'source_listed']);
 
 export function parseDirectoryList(value?: string | null): string[] {
@@ -351,6 +359,12 @@ export function isMeaningfulDirectoryWebsite(url?: string | null): boolean {
   return !isSyntheticDirectoryUrl(trimmed);
 }
 
+export function isMeaningfulDirectoryName(name?: string | null): boolean {
+  const trimmed = String(name || '').trim();
+  if (!trimmed) return false;
+  return !PLACEHOLDER_NAME_PATTERNS.some((pattern) => pattern.test(trimmed));
+}
+
 export function isLikelySyntheticAdvocateProfile(record: DirectoryFoundationRecord): boolean {
   if (!record.id.startsWith('gen-')) return false;
   if (!VERIFIED_DIRECTORY_STATUSES.has(record.verification_status || '')) return false;
@@ -456,6 +470,10 @@ export function validateDirectoryFoundationRecord(record: DirectoryFoundationRec
     issues.push('invalid_public_next_step_email');
   }
 
+  if (!isMeaningfulDirectoryName(record.name)) {
+    issues.push('invalid_public_name');
+  }
+
   return issues;
 }
 
@@ -482,6 +500,7 @@ export function isRenderableDirectoryFoundationRecord(record: DirectoryFoundatio
     !issues.includes('invalid_public_next_step_phone') &&
     !issues.includes('invalid_public_email') &&
     !issues.includes('invalid_public_next_step_email') &&
+    !issues.includes('invalid_public_name') &&
     !issues.includes('missing_source_url') &&
     !issues.includes('missing_source_type') &&
     !issues.includes('missing_data_origin') &&
