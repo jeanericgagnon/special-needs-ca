@@ -9,6 +9,8 @@ const ihssBehaviorLog = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/ih
 const countyBenefitsPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/[state]/[[...slug]]/page.tsx'), 'utf8');
 const correctionFlow = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/components/CorrectionFlow.tsx'), 'utf8');
 const footer = fs.readFileSync(path.join(repoRoot, 'src/components/Footer.jsx'), 'utf8');
+const editorialDisclosure = fs.readFileSync(path.join(repoRoot, 'frontend/src/components/editorial-disclosure.tsx'), 'utf8');
+const seoPolicy = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-policy.ts'), 'utf8');
 
 assert.match(
   answerPage,
@@ -98,6 +100,18 @@ assert.doesNotMatch(
   `${answerPage}\n${countyBenefitsPage}\n${footer}\n${ihssBehaviorLog}`,
   /\bwagers\b/i,
   'Public app copy must not contain the wagers typo.'
+);
+
+assert.doesNotMatch(
+  `${editorialDisclosure}\n${seoPolicy}`,
+  /\bcrawler-verified\b/i,
+  'Public trust surfaces should not label content as crawler-verified.'
+);
+
+assert.match(
+  editorialDisclosure,
+  /Public source linked from/,
+  'Editorial disclosure should use softer public-source wording instead of automated verification claims.'
 );
 
 console.log('public copy hardening tests passed');

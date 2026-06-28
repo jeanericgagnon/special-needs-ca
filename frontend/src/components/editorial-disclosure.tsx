@@ -2,7 +2,7 @@ import React from 'react';
 import { ShieldCheck, BookOpen, AlertCircle } from 'lucide-react';
 
 interface EditorialDisclosureProps {
-  verificationState?: 'official-verified' | 'human-reviewed' | 'crawler-verified' | 'unverified';
+  verificationState?: 'official-verified' | 'human-reviewed' | 'source-listed' | 'unverified';
   agencyName?: string;
   sourceUrl?: string;
   lastVerifiedDate?: string | null;
@@ -26,7 +26,7 @@ export default function EditorialDisclosure({
   if (finalVerificationState === 'human-reviewed' && !lastVerifiedDate) {
     finalVerificationState = 'unverified';
   }
-  if (finalVerificationState === 'crawler-verified' && !sourceUrl) {
+  if (finalVerificationState === 'source-listed' && !sourceUrl) {
     finalVerificationState = 'unverified';
   }
 
@@ -77,14 +77,14 @@ export default function EditorialDisclosure({
                 Reviewed in Ablefull&apos;s editorial workflow on {lastVerifiedDate}.
               </>
             )}
-            {finalVerificationState === 'crawler-verified' && (
+            {finalVerificationState === 'source-listed' && (
               <>
-                Automatically extracted from {sourceUrl ? (
+                Public source linked from {sourceUrl ? (
                   <a href={sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>
-                    public source pages
+                    a reviewable public page
                   </a>
-                ) : 'public source pages'}
-                {lastVerifiedDate ? ` • Last updated: ${lastVerifiedDate}` : ''}.
+                ) : 'a reviewable public page'}
+                {lastVerifiedDate ? ` • Last checked: ${lastVerifiedDate}` : ''}. Confirm the current agency page before relying on the details.
               </>
             )}
             {finalVerificationState === 'unverified' && (

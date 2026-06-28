@@ -56,7 +56,7 @@ export type SeoPolicyResult = {
   canonicalPath: string;
   canonicalUrl: string;
   schemaEligible: boolean;
-  verificationState: 'official-verified' | 'human-reviewed' | 'crawler-verified' | 'unverified';
+  verificationState: 'official-verified' | 'human-reviewed' | 'source-listed' | 'unverified';
   reasons: string[];
   blockers: string[];
 };
@@ -582,13 +582,13 @@ export function evaluateSeoPolicy(input: SeoPolicyInput): SeoPolicyResult {
   const baseUrl = CANONICAL_SITE_URL;
   const canonicalUrl = `${baseUrl}${canonicalPath}`;
 
-  let verificationState: 'official-verified' | 'human-reviewed' | 'crawler-verified' | 'unverified' = 'unverified';
+  let verificationState: 'official-verified' | 'human-reviewed' | 'source-listed' | 'unverified' = 'unverified';
   if (input.verificationStatus === 'official_verified') {
     verificationState = 'official-verified';
   } else if (input.verificationStatus === 'verified' || input.verificationStatus === 'human_verified') {
     verificationState = 'human-reviewed';
   } else if (input.verificationStatus === 'crawler_verified' || input.verificationStatus === 'source_listed') {
-    verificationState = 'crawler-verified';
+    verificationState = 'source-listed';
   }
 
   return {
