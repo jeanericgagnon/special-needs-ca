@@ -12,6 +12,7 @@ import { fetchCountyDetailsAction } from '../actions';
 import SourceFreshnessDisclosure from './SourceFreshnessDisclosure';
 import { getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 import { resolvePublicSourceVerificationStatus } from '@/lib/sourceReviewLabels';
+import ContributionModal from '@/components/contribution-modal';
 
 interface CountyDetailsType {
   id: string;
@@ -218,8 +219,16 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
               <span>Last Checked: <strong style={{ color: 'var(--text-main)' }}>{displayLastReviewedDate}</strong></span>
             </div>
             {!hasSourceBackedEvidence ? (
-              <div style={{ marginTop: '0.9rem', fontSize: '0.84rem', color: '#92400e', lineHeight: 1.5 }}>
-                This page is still being verified. Treat it as guidance only until we attach direct public source links.
+              <div style={{ marginTop: '0.9rem', fontSize: '0.84rem', color: '#92400e', lineHeight: 1.5, display: 'flex', flexDirection: 'column', gap: '0.65rem', alignItems: 'flex-start' }}>
+                <span>
+                  This page is still being verified. Treat it as guidance only until we attach direct public source links.
+                </span>
+                <ContributionModal
+                  suggestionType={correctionSuggestionType}
+                  targetId={`${data.slug}-source-review`}
+                  targetName={`${data.title} source review`}
+                  buttonLabel="Suggest a public source to review"
+                />
               </div>
             ) : null}
           </div>
@@ -425,9 +434,17 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
                       </a>
                     </div>
                   ) : (
-                    <span style={{ color: 'var(--text-light)', lineHeight: 1.4 }}>
-                      We are still verifying local office contacts for this county. Use the correction flow below if you have a current source-backed update.
-                    </span>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-start' }}>
+                      <span style={{ color: 'var(--text-light)', lineHeight: 1.4 }}>
+                        We are still verifying local office contacts for this county. Use a current public source if you want us to review an update.
+                      </span>
+                      <ContributionModal
+                        suggestionType="other"
+                        targetId={`${countyDetails.id}-county-office-source-review`}
+                        targetName={`${countyDetails.name} County office source review`}
+                        buttonLabel="Suggest a county office source"
+                      />
+                    </div>
                   )}
 
                   {countyDetails.regionalCenters && countyDetails.regionalCenters.length > 0 && (

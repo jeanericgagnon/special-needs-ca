@@ -114,4 +114,16 @@ assert.match(
   'Editorial disclosure should use softer public-source wording instead of automated verification claims.'
 );
 
+assert.match(
+  answerPage,
+  /Suggest a public source to review/,
+  'Thin public guide surfaces should offer a direct source-suggestion CTA when provenance is still being verified.'
+);
+
+assert.match(
+  answerPage,
+  /Suggest a county office source/,
+  'County lookup fallback copy should offer a direct county-office source suggestion CTA when local contacts are still under review.'
+);
+
 console.log('public copy hardening tests passed');
