@@ -23,6 +23,9 @@ const ihssMiniProduct = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/be
 const appealsClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/appeals-center/appeals-client.tsx'), 'utf8');
 const seoData = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-data.ts'), 'utf8');
 const stateConfigs = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/stateConfigs.ts'), 'utf8');
+const advocatesPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/advocates/page.tsx'), 'utf8');
+const findHelpClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/find-help/find-help-client.tsx'), 'utf8');
+const programPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/programs/[slug]/page.tsx'), 'utf8');
 
 assert.match(
   answerPage,
@@ -322,6 +325,42 @@ assert.match(
   countyBenefitsPage,
   /Review .* public support paths|review currently published local special education contacts|Review currently published Medi-Cal waiver pathways|currently published advocacy links/i,
   'Shared county-guide metadata and intro copy should use the reviewed-public wording for local support, education, and waiver guidance.'
+);
+
+assert.doesNotMatch(
+  advocatesPage,
+  /source-backed California special education advocate listings/i,
+  'Advocates directory metadata should not imply every listing is fully source-backed beyond the reviewed public-record standard.'
+);
+
+assert.match(
+  advocatesPage,
+  /publicly listed California special education advocate records/i,
+  'Advocates directory metadata should describe the surface as publicly listed records with source notes.'
+);
+
+assert.doesNotMatch(
+  findHelpClient,
+  /Locate source-backed county intake offices/i,
+  'Find-help county directory teaser should not overclaim local county coverage beyond the reviewed-public routing surface.'
+);
+
+assert.match(
+  findHelpClient,
+  /Review currently published county intake offices/i,
+  'Find-help county directory teaser should describe the county surface as currently published public routing.'
+);
+
+assert.doesNotMatch(
+  programPage,
+  /Learn about eligibility, requirements, and how to apply/i,
+  'DB-backed program fallback metadata should not read like a fully verified guide when it is only as strong as the linked public record.'
+);
+
+assert.match(
+  programPage,
+  /Review the current public program record|confirm details against the linked source/i,
+  'DB-backed program fallback metadata should redirect families back to the linked source before they rely on the page.'
 );
 
 assert.doesNotMatch(

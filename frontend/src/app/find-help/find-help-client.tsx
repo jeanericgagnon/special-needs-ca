@@ -208,7 +208,7 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
       category: 'County Resources',
       icon: <MapPin size={24} color="#db2777" />,
       description: stateConfig.code === 'CA'
-        ? `Locate source-backed county intake offices, school district routing, and local disability support contacts across ${stateConfig.name}.`
+        ? `Review currently published county intake offices, school district routing, and local disability support contacts across ${stateConfig.name}.`
         : `Open the county directory surface for ${stateConfig.name}. Some states still keep county pages gated while local office, district, or routing evidence is being reverified.`,
       href: `/counties/${stateId}`,
       actionText: 'Explore Counties'

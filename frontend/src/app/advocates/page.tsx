@@ -20,7 +20,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 
   return {
     title: `California IEP Advocate Listings in ${countyName}`,
-    description: `Review source-backed California special education advocate listings in ${countyName}, including contact details, counties served, and public source notes.`,
+    description: `Review publicly listed California special education advocate records in ${countyName}, including contact details, counties served, and public source notes.`,
     alternates: {
       canonical: `/advocates`
     },

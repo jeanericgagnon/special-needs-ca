@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props) {
     const stateName = stateData ? stateData.name : 'California';
     return {
       title: `${program.program_name} ${stateName} Guide`,
-      description: `Learn about eligibility, requirements, and how to apply for ${program.program_name} in ${stateName}.`,
+      description: `Review the current public program record for ${program.program_name} in ${stateName}, then confirm eligibility, requirements, and application steps against the linked source before relying on it.`,
       alternates: {
         canonical: `/programs/${slug}`
       },
@@ -118,7 +118,7 @@ export default async function ProgramPage({ params }: Props) {
     category: 'programs' as const,
     title: `${program.program_name} ${stateName} Guide`,
     metaTitle: `${program.program_name} | ${stateName} program guide`,
-    metaDescription: `Review source-backed notes, eligibility signals, and next-step guidance for ${program.program_name} in ${stateName}.`,
+    metaDescription: `Review the current public record, eligibility signals, and next-step guidance for ${program.program_name} in ${stateName}, then confirm details against the linked source.`,
     quickAnswer: hasVerifiedSource
       ? `This page summarizes the currently saved public source for ${program.program_name} in ${stateName}. Eligibility, age rules, and income details may change, so confirm them against the linked source before you act.`
       : `We have a program record for ${program.program_name} in ${stateName}, but we are still verifying the public source details before treating this page as authoritative guidance.`,
