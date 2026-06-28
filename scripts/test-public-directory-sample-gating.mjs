@@ -24,4 +24,19 @@ assert.match(
   'find-help sample records should render only pre-filtered snapshot records',
 );
 
+const countyPageSource = fs.readFileSync(
+  path.join(repoRoot, 'frontend/src/app/benefits/[state]/[[...slug]]/page.tsx'),
+  'utf8',
+);
+assert.match(
+  countyPageSource,
+  /const rawLocalAdvocates = \(await getIepAdvocates\(countyId\)\)\.filter\(isPublicDirectoryRecordEligible\);/,
+  'county diagnosis pages should gate local advocates through the hardened public directory eligibility check',
+);
+assert.match(
+  countyPageSource,
+  /const localProviders = \(await getLocalProviders\(countyId\)\)\.filter\(isPublicDirectoryRecordEligible\);/,
+  'county diagnosis pages should gate local providers through the hardened public directory eligibility check',
+);
+
 console.log('public directory sample gating tests passed');

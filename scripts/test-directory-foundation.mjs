@@ -150,7 +150,16 @@ function run() {
     checked_at: '2026-06-17T00:00:00Z',
   };
   assert.equal(hasPublicFreshnessSignal(publicRecordWithFreshness), true);
-  assert.equal(isPublicDirectoryRecordEligible(publicRecordWithFreshness), true);
+  assert.equal(isPublicDirectoryRecordEligible(publicRecordWithFreshness), false);
+
+  const publicDirectoryRecordWithFreshnessAndProvenance = {
+    ...publicRecordWithFreshness,
+    source_type: 'official_directory',
+    data_origin: 'scraped',
+    confidence_score: 0.83,
+    last_scraped_at: '2026-06-17T00:00:00Z',
+  };
+  assert.equal(isPublicDirectoryRecordEligible(publicDirectoryRecordWithFreshnessAndProvenance), true);
 
   const websiteOnlyPlaceholderRecord = {
     id: 'provider-7',

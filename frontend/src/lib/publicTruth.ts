@@ -1,6 +1,7 @@
 import { NON_CA_VERIFIED_COUNTIES } from './verifiedCounties.ts';
 import { stateAuditStatus, stateRuntimeLaunchStatus } from './stateAudit.ts';
 import {
+  isRenderableDirectoryFoundationRecord,
   isMeaningfulDirectoryName,
   isMeaningfulDirectoryEmail,
   isMeaningfulDirectoryPhone,
@@ -314,7 +315,11 @@ export function isPublicCountyOfficeEligible(record?: PublicRecordLike | null): 
 }
 
 export function isPublicDirectoryRecordEligible(record?: PublicRecordLike | null): boolean {
-  return isPublicRecordEligible(record) && hasPublicFreshnessSignal(record);
+  return (
+    isPublicRecordEligible(record) &&
+    hasPublicFreshnessSignal(record) &&
+    isRenderableDirectoryFoundationRecord(record as Parameters<typeof isRenderableDirectoryFoundationRecord>[0])
+  );
 }
 
 export function isVerifiedNonCaliforniaCounty(countyId: string): boolean {
