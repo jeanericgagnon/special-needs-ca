@@ -1,6 +1,6 @@
 {
   "milestone": "national-initial-scrape-v1",
-  "generatedAt": "2026-06-26T17:19:57Z",
+  "generatedAt": "2026-06-28T02:06:39.880Z",
   "phase": "transition_to_data_governance",
   "summary": {
     "completeStates": 45,
@@ -9,13 +9,6 @@
     "incorrectlyIndexSafeStates": 0
   },
   "incorrectlyIndexSafeStates": [],
-  "blockedStateIds": [
-    "alaska",
-    "arizona",
-    "idaho",
-    "maine",
-    "new-hampshire"
-  ],
   "completeStateIds": [
     "alabama",
     "arkansas",
@@ -62,6 +55,13 @@
     "west-virginia",
     "wisconsin",
     "wyoming"
+  ],
+  "blockedStateIds": [
+    "alaska",
+    "arizona",
+    "idaho",
+    "maine",
+    "new-hampshire"
   ],
   "sourceArtifacts": {
     "allStateAudit": "data/generated/all_state_california_grade_audit_v3.json",

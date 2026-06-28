@@ -28,7 +28,8 @@ This is intentionally broader than the launch-only audit. It covers the public w
 ### Most Important Truths
 
 - 50/50 modeled completeness does not mean all information categories are deeply built out.
-- 0/50 strict-gold states means 1 state still sits in the public-safe-but-blocked lane on the stricter truth registry.
+- 0/50 strict-gold states means 45 states still sit in the public-safe-but-blocked lane on the stricter truth registry.
+- The named launch milestone `national-initial-scrape-v1` freezes the current launch baseline at 45 COMPLETE states, 5 BLOCKED states, and 45 index-safe states.
 - Provider coverage and knowledge-content depth are still the largest visible product information gaps.
 - Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.
 - Several workflow and support layers are still mostly empty despite having schema support.

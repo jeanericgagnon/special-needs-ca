@@ -3,7 +3,8 @@ import path from 'node:path';
 
 const repoRoot = process.cwd();
 const auditPath = path.join(repoRoot, 'data', 'generated', 'all_state_california_grade_audit_v3.json');
-const outJsonPath = path.join(repoRoot, 'data', 'generated', 'national_initial_scrape_v1.json');
+const canonicalJsonPath = path.join(repoRoot, 'data', 'generated', 'national-initial-scrape-v1.json');
+const legacyJsonPath = path.join(repoRoot, 'data', 'generated', 'national_initial_scrape_v1.json');
 const outMdPath = path.join(repoRoot, 'docs', 'generated', 'national-initial-scrape-v1.md');
 
 const audit = JSON.parse(fs.readFileSync(auditPath, 'utf8'));
@@ -11,19 +12,41 @@ const completeStates = audit.states.filter((state) => state.classification === '
 const blockedStates = audit.states.filter((state) => state.classification === 'BLOCKED').map((state) => state.stateId);
 
 const payload = {
-  milestoneId: 'national-initial-scrape-v1',
+  milestone: 'national-initial-scrape-v1',
   generatedAt: new Date().toISOString(),
-  completeStates: completeStates.length,
-  blockedStates: blockedStates.length,
+  phase: 'transition_to_data_governance',
+  summary: {
+    completeStates: completeStates.length,
+    blockedStates: blockedStates.length,
+    indexSafeStates: audit.indexSafeCount,
+    incorrectlyIndexSafeStates: (audit.incorrectlyIndexSafeStates || []).length,
+  },
   incorrectlyIndexSafeStates: audit.incorrectlyIndexSafeStates || [],
-  indexSafeStates: audit.indexSafeCount,
   completeStateIds: completeStates,
   blockedStateIds: blockedStates,
+  sourceArtifacts: {
+    allStateAudit: 'data/generated/all_state_california_grade_audit_v3.json',
+    priorityQueue: 'data/generated/all_state_priority_queue_v3.jsonl',
+  },
+  notes: [
+    'This milestone freezes the 45-state initial scrape baseline.',
+    'From this point forward, work should treat scraping as a completed baseline and move into data governance, truth maintenance, and blocker preservation.',
+  ],
 };
 
-fs.mkdirSync(path.dirname(outJsonPath), { recursive: true });
+fs.mkdirSync(path.dirname(canonicalJsonPath), { recursive: true });
 fs.mkdirSync(path.dirname(outMdPath), { recursive: true });
-fs.writeFileSync(outJsonPath, `${JSON.stringify(payload, null, 2)}\n`);
+fs.writeFileSync(canonicalJsonPath, `${JSON.stringify(payload, null, 2)}\n`);
+fs.writeFileSync(legacyJsonPath, `${JSON.stringify({
+  milestoneId: payload.milestone,
+  generatedAt: payload.generatedAt,
+  completeStates: payload.summary.completeStates,
+  blockedStates: payload.summary.blockedStates,
+  incorrectlyIndexSafeStates: payload.incorrectlyIndexSafeStates,
+  indexSafeStates: payload.summary.indexSafeStates,
+  completeStateIds: payload.completeStateIds,
+  blockedStateIds: payload.blockedStateIds,
+}, null, 2)}\n`);
 
 const md = [
   '# National Initial Scrape v1',
@@ -31,9 +54,9 @@ const md = [
   `Generated at: ${payload.generatedAt}`,
   '',
   '- Milestone: `national-initial-scrape-v1`',
-  `- COMPLETE states: ${payload.completeStates}`,
-  `- BLOCKED states: ${payload.blockedStates}`,
-  `- index-safe states: ${payload.indexSafeStates}`,
+  `- COMPLETE states: ${payload.summary.completeStates}`,
+  `- BLOCKED states: ${payload.summary.blockedStates}`,
+  `- index-safe states: ${payload.summary.indexSafeStates}`,
   `- incorrectly index-safe states: ${payload.incorrectlyIndexSafeStates.length}`,
   '',
   '## COMPLETE',
@@ -45,5 +68,6 @@ const md = [
 ].join('\n');
 
 fs.writeFileSync(outMdPath, `${md}\n`);
-console.log(`Wrote ${outJsonPath}`);
+console.log(`Wrote ${canonicalJsonPath}`);
+console.log(`Wrote ${legacyJsonPath}`);
 console.log(`Wrote ${outMdPath}`);

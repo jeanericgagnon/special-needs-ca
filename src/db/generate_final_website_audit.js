@@ -115,6 +115,20 @@ const publicSafeButBlockedStateIds = Array.isArray(truthRegistry.states)
       .sort()
   : [];
 const publicSafeButBlockedStateCount = truthRegistry.summary?.publicSafeButBlockedStates || 0;
+const nationalInitialScrapeMilestonePath = path.join(repoRoot, 'data', 'generated', 'national-initial-scrape-v1.json');
+const nationalInitialScrapeMilestone = fs.existsSync(nationalInitialScrapeMilestonePath)
+  ? readJson(nationalInitialScrapeMilestonePath)
+  : null;
+
+function formatPublicSafeBlockedTruth(strictGoldStates, publicSafeButBlockedStates) {
+  if (!publicSafeButBlockedStates) {
+    return `${strictGoldStates}/50 strict-gold states means the stricter truth registry still has unresolved blockers beyond launch readiness.`;
+  }
+
+  const noun = publicSafeButBlockedStates === 1 ? 'state' : 'states';
+  const verb = publicSafeButBlockedStates === 1 ? 'still sits' : 'still sit';
+  return `${strictGoldStates}/50 strict-gold states means ${publicSafeButBlockedStates} ${noun} ${verb} in the public-safe-but-blocked lane on the stricter truth registry.`;
+}
 
 const launchTruth = californiaGradeAudit
   ? {
@@ -783,6 +797,7 @@ const payload = {
     californiaGradeAuditPath,
     californiaGradeQueuePath,
     partialLaunchPolicyPath,
+    nationalInitialScrapeMilestonePath,
     dbPath,
   },
   executiveSummary: {
@@ -791,6 +806,7 @@ const payload = {
     launchIndexSafeStates: launchTruth.indexSafeStates,
     launchIncorrectlyIndexSafeStates: launchTruth.incorrectlyIndexSafeStates,
     partialGatedStateIds: (partialLaunchPolicy?.states || []).map((row) => row.stateId),
+    nationalInitialScrapeMilestone,
     auditQueueMismatchCount: queueTruthMismatchCount,
     currentModeledCompletenessStates: executiveTruth.currentModeledCompletenessStates,
     currentHighConfidenceStates: executiveTruth.currentHighConfidenceStates,
@@ -804,7 +820,16 @@ const payload = {
   familyAudits,
   currentScrapePosition: scrapeProgress,
   completionAudit: fullGap.completionAudit,
-  immediateTruths: exhaustiveGap.immediateTruths || [],
+  immediateTruths: [
+    '50/50 modeled completeness does not mean all information categories are deeply built out.',
+    formatPublicSafeBlockedTruth(executiveTruth.strictGoldStates || 0, publicSafeButBlockedStateCount),
+    nationalInitialScrapeMilestone
+      ? `The named launch milestone \`${nationalInitialScrapeMilestone.milestone || nationalInitialScrapeMilestone.milestoneId}\` freezes the current launch baseline at ${nationalInitialScrapeMilestone.summary?.completeStates || nationalInitialScrapeMilestone.completeStates || 0} COMPLETE states, ${nationalInitialScrapeMilestone.summary?.blockedStates || nationalInitialScrapeMilestone.blockedStates || 0} BLOCKED states, and ${nationalInitialScrapeMilestone.summary?.indexSafeStates || nationalInitialScrapeMilestone.indexSafeStates || 0} index-safe states.`
+      : 'The named launch milestone snapshot is missing; regenerate it before treating launch readiness as frozen.',
+    'Provider coverage and knowledge-content depth are still the largest visible product information gaps.',
+    'Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.',
+    'Several workflow and support layers are still mostly empty despite having schema support.',
+  ],
 };
 
 const mdLines = [

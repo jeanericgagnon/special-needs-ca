@@ -206,6 +206,16 @@ const fullGapLayers = (fullGap.layers || []).map((layer) => ({
   gap: layer.gap,
 }));
 
+function formatPublicSafeBlockedTruth(strictGoldStates, publicSafeButBlockedStates) {
+  if (!publicSafeButBlockedStates) {
+    return `${strictGoldStates}/50 strict-gold states means the stricter truth registry still has unresolved blockers beyond launch readiness.`;
+  }
+
+  const noun = publicSafeButBlockedStates === 1 ? 'state' : 'states';
+  const verb = publicSafeButBlockedStates === 1 ? 'still sits' : 'still sit';
+  return `${strictGoldStates}/50 strict-gold states means ${publicSafeButBlockedStates} ${noun} ${verb} in the public-safe-but-blocked lane on the stricter truth registry.`;
+}
+
 const payload = {
   generatedAt: generatedDate,
   inputs: {
@@ -238,9 +248,10 @@ const payload = {
   fullGapLayers,
   immediateTruths: [
     '50/50 modeled completeness does not mean all information categories are deeply built out.',
-    truthSummary.publicSafeButBlockedStates
-      ? `${truthSummary.strictGoldStates || 0}/50 strict-gold states means ${truthSummary.publicSafeButBlockedStates} state still sits in the public-safe-but-blocked lane on the stricter truth registry.`
-      : `${truthSummary.strictGoldStates || 0}/50 strict-gold states means the stricter truth registry still has unresolved blockers beyond launch readiness.`,
+    formatPublicSafeBlockedTruth(
+      truthSummary.strictGoldStates || 0,
+      truthSummary.publicSafeButBlockedStates || 0,
+    ),
     'Provider coverage and knowledge-content depth are still the largest visible product information gaps.',
     'Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.',
     'Several workflow and support layers are still mostly empty despite having schema support.',
