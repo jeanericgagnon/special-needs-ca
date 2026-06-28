@@ -54,7 +54,7 @@ export function getCountyMetadata(
     description = `Get source-backed intake contacts, school district intermediate units, and local support networks for ${countyName} County, Pennsylvania, including ${mhIdOffice}.`;
   } else if (stateId === 'california') {
     const rcName = publicCountyDetails.regionalCenters?.[0]?.name || 'Local Regional Center';
-    title = `${countyName} County Regional Center & IHSS Benefits, CA`;
+    title = `${countyName} County Regional Center & IHSS Estimate Guide, CA`;
     description = `Navigate developmental disability services in ${countyName} County, California. Contact ${rcName}, check school district SELPA boundaries, and review current IHSS pay-rate estimates with source links.`;
   }
 

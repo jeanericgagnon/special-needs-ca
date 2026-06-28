@@ -60,10 +60,10 @@ export function TrustBadge({
     badgeColor = reviewDisplay.color;
     badgeBg = reviewDisplay.background;
     badgeLabel = entityType === 'advocate'
-      ? 'Source-backed checked listing — confirm fit and credentials locally'
+      ? 'Reviewed public listing — confirm fit and credentials locally'
       : isOfficialSourceType
-      ? 'Source-backed checked public contact'
-      : 'Source-backed checked contact listing';
+      ? 'Reviewed public contact'
+      : 'Reviewed public listing';
     badgeIcon = <ShieldCheck size={14} color={reviewDisplay.color} />;
   } else if (hasReviewableSource && normStatus === 'source_listed') {
     badgeColor = reviewDisplay.color;

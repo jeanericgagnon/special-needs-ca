@@ -77,6 +77,16 @@ db.exec(`
     data_origin TEXT,
     display_status TEXT DEFAULT 'published'
   );
+
+  CREATE TABLE forms_and_guides (
+    id TEXT PRIMARY KEY,
+    title TEXT,
+    agency TEXT,
+    source_url TEXT,
+    pdf_url TEXT,
+    verification_status TEXT,
+    display_status TEXT DEFAULT 'published'
+  );
 `);
 
 db.prepare(`
@@ -169,6 +179,32 @@ db.prepare(`
 );
 
 db.prepare(`
+  INSERT INTO forms_and_guides (id, title, agency, source_url, pdf_url, verification_status, display_status)
+  VALUES (?, ?, ?, ?, ?, ?, ?)
+`).run(
+  'form-bad',
+  'Application Form',
+  'Department of Social Services',
+  'https://example.org/forms',
+  'https://example.org/form.pdf',
+  'verified',
+  'published'
+);
+
+db.prepare(`
+  INSERT INTO forms_and_guides (id, title, agency, source_url, pdf_url, verification_status, display_status)
+  VALUES (?, ?, ?, ?, ?, ?, ?)
+`).run(
+  'form-good',
+  'SOC 123',
+  'California Department of Social Services',
+  'https://www.cdss.ca.gov/forms',
+  'https://www.cdss.ca.gov/Portals/9/Additional-Resources/Forms-and-Brochures/SOC123.pdf',
+  'official_verified',
+  'published'
+);
+
+db.prepare(`
   INSERT INTO nonprofit_organizations (id, name, phone, email, website, next_step_phone, next_step_email, next_step_url, application_url, referral_url, source_url, verification_status, data_origin, display_status)
   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `).run(
@@ -243,7 +279,13 @@ assert.deepEqual(nonprofitStatuses, [
   { id: 'nonprofit-search-fallback', display_status: 'needs_review' },
 ]);
 
-assert.equal(summary.totalDowngraded, 8);
+const formStatuses = checkDb.prepare('SELECT id, display_status FROM forms_and_guides ORDER BY id').all();
+assert.deepEqual(formStatuses, [
+  { id: 'form-bad', display_status: 'needs_review' },
+  { id: 'form-good', display_status: 'published' },
+]);
+
+assert.equal(summary.totalDowngraded, 9);
 assert.equal(fs.existsSync(path.join(outputDir, 'public-placeholder-quarantine-audit-2099-01-01.json')), true);
 assert.equal(fs.existsSync(path.join(outputDir, 'public-placeholder-quarantine-audit-2099-01-01.md')), true);
 

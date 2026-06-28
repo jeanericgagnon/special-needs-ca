@@ -43,12 +43,12 @@ export default function SourceFreshnessDisclosure({
       }}
     >
       <h4 style={{ fontSize: '0.88rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary-color)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-        <ShieldCheck size={16} /> Source Notes & Freshness Information
+        <ShieldCheck size={16} /> Sources, Review Dates, and Confidence
       </h4>
       
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
-          We show the public sources we relied on, when we last checked them, and whether each item is source-backed, publicly linked, or still needs deeper verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current official source for your county or program. If something looks wrong, please report a correction before relying on it.
+          We show the public sources we relied on, when we last reviewed them, and whether each item is tied to a reviewed public source, a linked public source, or still needs more verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current source for your county or program. If something looks wrong, please report a correction before relying on it.
         </p>
 
         <div>
@@ -120,7 +120,7 @@ export default function SourceFreshnessDisclosure({
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', color: 'var(--text-light)' }}>
                   <Calendar size={12} />
-                  <span>Last Checked: {dateText}</span>
+                  <span>Last reviewed: {dateText}</span>
                 </div>
 
                 {(sourceTypeLabel || confidenceLabel) && (
@@ -164,7 +164,7 @@ export default function SourceFreshnessDisclosure({
               lineHeight: 1.5,
             }}
           >
-            We are still verifying the direct public source notes for this surface. Please use the correction flow above if you have a current public source we should review before this page is treated as fully source-backed.
+            We are still verifying the direct public source notes for this surface. Please use the correction flow above if you have a current public source we should review before this page is treated as fully reviewed.
           </div>
         )}
       </div>

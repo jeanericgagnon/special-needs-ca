@@ -53,7 +53,7 @@ for (const state of wave4States) {
         expect(bodyText).not.toContain('IHSS');
         expect(bodyText).not.toContain('SELPA');
 
-        expect(bodyText).toMatch(/Source (Notes|Verified Sources) & Freshness Information/i);
+        expect(bodyText).toMatch(/(Source (Notes|Verified Sources) & Freshness Information|Sources, Review Dates, and Confidence)/i);
         
         const correctionTriggers = page.locator('button:has-text("Suggest update"), span:has-text("Verified"), a:has-text("Source")');
         await expect(correctionTriggers.first()).toBeVisible();

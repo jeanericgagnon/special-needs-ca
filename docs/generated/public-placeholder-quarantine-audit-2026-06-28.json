@@ -1,9 +1,19 @@
 {
   "generatedAt": "2026-06-28",
   "dbPath": "ca_disability_navigator.db",
-  "totalScanned": 3576,
-  "totalDowngraded": 1766,
+  "totalScanned": 3578,
+  "totalDowngraded": 1767,
   "tables": [
+    {
+      "table": "forms_and_guides",
+      "scanned": 2,
+      "downgraded": 1,
+      "unchanged": 1,
+      "reasonCounts": {
+        "placeholder_source_url:source_url": 1,
+        "placeholder_source_url:pdf_url": 1
+      }
+    },
     {
       "table": "county_offices",
       "scanned": 720,
@@ -85,6 +95,14 @@
     }
   ],
   "sampleDowngrades": [
+    {
+      "table": "forms_and_guides",
+      "id": "form1",
+      "reasons": [
+        "placeholder_source_url:source_url",
+        "placeholder_source_url:pdf_url"
+      ]
+    },
     {
       "table": "county_offices",
       "id": "office1",
@@ -272,14 +290,6 @@
     {
       "table": "county_offices",
       "id": "off-del-norte-ccs",
-      "reasons": [
-        "fallback_verification_status:verification_status",
-        "fallback_data_origin:data_origin"
-      ]
-    },
-    {
-      "table": "county_offices",
-      "id": "off-el-dorado-medi-cal",
       "reasons": [
         "fallback_verification_status:verification_status",
         "fallback_data_origin:data_origin"

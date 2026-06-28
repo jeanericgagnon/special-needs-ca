@@ -2602,7 +2602,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
         {/* Legal footnoting block for extreme E-E-A-T */}
         <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: '1.5rem', marginTop: '4rem', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.4' }}>
-          <p><strong>Legal Disclaimer & Citations:</strong> This information is compiled for educational, planning, and advocacy support, and does not constitute official legal or medical advice. Verification dates reflect the latest source or database review dates shown on this page. Actual eligibility outcomes remain subject to individual agency assessments.</p>
+          <p><strong>Legal Disclaimer & Citations:</strong> This information is compiled for educational, planning, and advocacy support, and does not constitute legal or medical advice. Verification dates reflect the latest source or database review dates shown on this page. Actual eligibility outcomes remain subject to individual agency assessments.</p>
           <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
             {config.legalDisclaimer}
           </p>

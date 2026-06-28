@@ -82,7 +82,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: strong_but_not_exhaustive
 - Final website needs: Program definitions, eligibility rules, document requirements, application steps, appeals, forms, and public-safe program pages.
-- What we have now: 258 programs; 300 eligibility rules; 0 document requirements; 1 application steps; 18 appeal records; 2 live forms and guides; Program verification mix: verified=170; source_listed=63; official_verified=25; Form verification mix: official_verified=1; verified=1
+- What we have now: 258 programs; 300 eligibility rules; 0 document requirements; 1 application steps; 18 appeal records; 2 live forms and guides; Program verification mix: verified=170; source_listed=63; official_verified=25; Form verification mix: needs_review=1; official_verified=1
 - Current staging or authored work: 0 staged programs; 0 staged forms; 0 ready rows unresolved; 507 live programs
 - Current queue or control-plane state: Launch closure: 100% queue closure; Launch forms accounting: 7 cleared, 6 ready exact, 37 author-first fallback
 - Main gap: Programs and forms are structurally strong, but forms exact-state coverage is not finished and generic agency-page overpromotion still has to stay suppressed.
@@ -174,7 +174,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: modeled_only
 - Final website needs: Healthy source registry, source verifications, user submissions, coverage gaps, and verification queues to sustain the final website.
-- What we have now: 1 sources; 1 source verifications; null user-submitted resources; null coverage gaps; null verification queue items
+- What we have now: 0 sources; 0 source verifications; null user-submitted resources; null coverage gaps; null verification queue items
 - Main gap: Operational maintenance loops are mostly modeled, but almost empty in live data.
 
 ### Family cases, child profiles, reminders, and document tracking

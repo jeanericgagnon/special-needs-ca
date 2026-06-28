@@ -19,7 +19,7 @@ export function getSourceReviewDisplay(verificationStatus?: string | null): Sour
 
   if (status === 'official_verified' || status === 'human_verified' || status === 'verified') {
     return {
-      label: 'Source-backed checked',
+      label: 'Reviewed public source',
       color: '#0f766e',
       background: 'rgba(15, 118, 110, 0.08)',
       borderColor: '#0f766e30',
@@ -36,7 +36,7 @@ export function getSourceReviewDisplay(verificationStatus?: string | null): Sour
   }
 
   return {
-    label: 'Needs deeper verification',
+    label: 'Needs more verification',
     color: '#64748b',
     background: 'rgba(100, 116, 139, 0.08)',
     borderColor: '#64748b30',

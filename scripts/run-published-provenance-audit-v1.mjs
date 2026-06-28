@@ -32,32 +32,40 @@ function getColumns(db, table) {
   return new Set(db.prepare(`PRAGMA table_info(${table})`).all().map((row) => row.name));
 }
 
-function missingMetric(db, table, columns, columnName) {
+function eligibleWhereClause(columns) {
+  if (columns.has('display_status')) {
+    return `COALESCE(display_status, 'published') = 'published'`;
+  }
+  return '1=1';
+}
+
+function missingMetric(db, table, columns, eligibleWhere, columnName) {
   if (!columns.has(columnName)) return null;
-  if (columnName === 'confidence_score') return countWhere(db, table, `${columnName} IS NULL`);
-  return countWhere(db, table, `${columnName} IS NULL OR TRIM(${columnName}) = ''`);
+  if (columnName === 'confidence_score') return countWhere(db, table, `${eligibleWhere} AND ${columnName} IS NULL`);
+  return countWhere(db, table, `${eligibleWhere} AND (${columnName} IS NULL OR TRIM(${columnName}) = '')`);
 }
 
 function run() {
   const db = new Database(dbPath, { readonly: true });
   const rows = TABLES.map((item) => {
     const columns = getColumns(db, item.table);
-    const total = countWhere(db, item.table, '1=1');
-    const missingSource = countWhere(db, item.table, `${item.sourceExpr} IS NULL OR TRIM(${item.sourceExpr}) = ''`);
-    const missingSourceType = missingMetric(db, item.table, columns, 'source_type');
-    const missingDataOrigin = missingMetric(db, item.table, columns, 'data_origin');
-    const missingVerificationStatus = missingMetric(db, item.table, columns, 'verification_status');
-    const missingLastVerifiedDate = missingMetric(db, item.table, columns, 'last_verified_date');
-    const missingLastScrapedAt = missingMetric(db, item.table, columns, 'last_scraped_at');
-    const missingConfidenceScore = missingMetric(db, item.table, columns, 'confidence_score');
+    const eligibleWhere = eligibleWhereClause(columns);
+    const total = countWhere(db, item.table, eligibleWhere);
+    const missingSource = countWhere(db, item.table, `${eligibleWhere} AND (${item.sourceExpr} IS NULL OR TRIM(${item.sourceExpr}) = '')`);
+    const missingSourceType = missingMetric(db, item.table, columns, eligibleWhere, 'source_type');
+    const missingDataOrigin = missingMetric(db, item.table, columns, eligibleWhere, 'data_origin');
+    const missingVerificationStatus = missingMetric(db, item.table, columns, eligibleWhere, 'verification_status');
+    const missingLastVerifiedDate = missingMetric(db, item.table, columns, eligibleWhere, 'last_verified_date');
+    const missingLastScrapedAt = missingMetric(db, item.table, columns, eligibleWhere, 'last_scraped_at');
+    const missingConfidenceScore = missingMetric(db, item.table, columns, eligibleWhere, 'confidence_score');
     const publishBlocked = countWhere(
       db,
       item.table,
       columns.has('verification_status')
-        ? `(${item.sourceExpr} IS NULL OR TRIM(${item.sourceExpr}) = '') OR (verification_status IS NULL OR TRIM(verification_status) = '')`
-        : `(${item.sourceExpr} IS NULL OR TRIM(${item.sourceExpr}) = '')`
+        ? `${eligibleWhere} AND (((${item.sourceExpr} IS NULL OR TRIM(${item.sourceExpr}) = '') OR (verification_status IS NULL OR TRIM(verification_status) = '')))`
+        : `${eligibleWhere} AND ((${item.sourceExpr} IS NULL OR TRIM(${item.sourceExpr}) = ''))`
     );
-    const strongClauses = [`${item.sourceExpr} IS NOT NULL`, `TRIM(${item.sourceExpr}) <> ''`];
+    const strongClauses = [eligibleWhere, `${item.sourceExpr} IS NOT NULL`, `TRIM(${item.sourceExpr}) <> ''`];
     for (const columnName of ['source_type', 'data_origin', 'verification_status', 'last_verified_date', 'last_scraped_at']) {
       if (columns.has(columnName)) {
         strongClauses.push(`${columnName} IS NOT NULL`, `TRIM(${columnName}) <> ''`);
@@ -70,6 +78,7 @@ function run() {
       table: item.table,
       label: item.label,
       total,
+      eligibleWhere,
       strongReady,
       publishBlocked,
       missingSource,

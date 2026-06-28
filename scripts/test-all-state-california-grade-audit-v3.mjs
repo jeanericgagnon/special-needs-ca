@@ -74,6 +74,7 @@ for (const summary of packetSummaries) {
   assert.equal(auditState.strongCriticalFamilies, summary.strong_critical_families, `${summary.state} audit strong critical count must match packet summary`);
   assert.equal(auditState.weakCriticalFamilies, summary.weak_critical_families, `${summary.state} audit weak critical count must match packet summary`);
   assert.equal(auditState.missingCriticalFamilies, summary.missing_critical_families, `${summary.state} audit missing critical count must match packet summary`);
+  assert.equal(auditState.primaryGapReason, summary.primary_gap_reason, `${summary.state} audit primaryGapReason must match packet summary`);
   assert.equal(auditState.packetPrimaryGapReason, summary.primary_gap_reason, `${summary.state} audit primary gap reason must match packet summary`);
 
   assert.equal(priorityState.classification, summary.classification, `${summary.state} priority classification must match packet summary`);

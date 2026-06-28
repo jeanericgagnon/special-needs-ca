@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-06-28T02:42:15.109Z",
+  "dbPath": "ca_disability_navigator.db",
+  "removedCount": 2,
+  "skippedCount": 0,
+  "removed": [
+    {
+      "table": "sources",
+      "id": "src1",
+      "sourceUrl": "https://example.org/source"
+    },
+    {
+      "table": "source_verifications",
+      "id": "sv1",
+      "sourceUrl": "https://example.org/source"
+    }
+  ],
+  "skipped": []
+}

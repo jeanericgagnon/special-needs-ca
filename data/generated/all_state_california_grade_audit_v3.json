@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T02:18:41.360Z",
+  "generatedAt": "2026-06-28T02:51:39.375Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 45,
@@ -79,6 +79,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_79_alabama_packet_truth_repair_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -149,27 +150,11 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_reviewable_dpa_offices_regions_without_borough_assignment_and_raw_health_fetches_403"
       },
+      "primaryGapReason": "bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract",
       "packetGenerated": true,
       "packetBatch": "batch404_alaska_terminal_refresh_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract",
-      "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract",
-      "packetFinalBlockers": [
-        {
-          "family": "county_local_disability_resources",
-          "failure_code": "reviewed_live_dpa_offices_page_proves_regional_offices_but_no_borough_assignment_and_raw_health_fetches_still_403",
-          "evidence": "Reviewed 2026-06-26 one more bounded live Alaska county-local pass. In the reviewed browser lane, the exact official DPA offices page at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` is publicly readable again and truthfully proves named regional offices, office hours, full street addresses, fax numbers, a virtual contact center, and secure upload routing on the current health host. The live page now proves only five regional groupings: `Alaska Peninsula`, `Northern Alaska`, `Southcentral Alaska`, `Southeast Alaska`, and `Southwest Alaska`. Under those headings it names only city- or office-level locations such as Homer, Kenai, Fairbanks, Nome, Anchorage, Matanuska-Susitna Valley, Juneau, Ketchikan, Sitka, Bethel, and Kodiak. The same reviewed page still contains no literal `borough` or `census area` terms and does not assign any Alaska boroughs or census areas to those offices. In the raw low-token lane, the wider health-host family still fails closed: `https://health.alaska.gov/en/division-of-public-assistance/`, `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf`, and `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` still return HTTP 403 with the Cloudflare `Just a moment...` shell. The DFCS successor family is still publicly reachable but still does not restore county-equivalent routing: `https://dfcs.alaska.gov/Pages/default.aspx`, `/Pages/Services.aspx`, `/pages/search.aspx`, and `/Commissioner/Pages/Contacts/default.aspx` still return HTTP 200 SharePoint pages, but `https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance` still returns HTTP 404 and the reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. The freshly rechecked DFCS Site Map branch also still fails closed as a repair lane: `https://dfcs.alaska.gov/Pages/Site-Map.aspx` is live, but the extra surfaced DAPH leaves `/daph/Pages/services.aspx` and `/daph/Pages/paymentassistance/default.aspx` resolve to Alaska Pioneer Homes services and payment-assistance content rather than public-assistance office routing, while the only office-looking DFCS child lane remains the wrong-role OCS Regional Offices page. Alaska therefore still lacks any reviewable public borough- or census-area-to-office contract.",
-          "next_action": "hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api",
-          "borough_contract_count": 0,
-          "unmapped_geographies_count": 20,
-          "reviewed_region_groupings": [
-            "Alaska Peninsula",
-            "Northern Alaska",
-            "Southcentral Alaska",
-            "Southeast Alaska",
-            "Southwest Alaska"
-          ]
-        }
-      ]
+      "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
     },
     {
       "stateId": "arizona",
@@ -236,6 +221,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_live_des_remoting_proves_greenlee_zip_served_localities_but_still_lacks_explicit_greenlee_county_assignment"
       },
+      "primaryGapReason": "bounded_2026_06_26_live_des_salesforce_remoting_confirms_explicit_county_fields_for_la_paz_mohave_and_yuma_and_greenlee_zip_served_localities_but_still_no_greenlee_county_assignment",
       "packetGenerated": true,
       "packetBatch": "batch405_arizona_terminal_refresh_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_live_des_salesforce_remoting_confirms_explicit_county_fields_for_la_paz_mohave_and_yuma_and_greenlee_zip_served_localities_but_still_no_greenlee_county_assignment",
@@ -306,6 +292,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_6_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
@@ -376,6 +363,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -446,6 +434,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
@@ -516,6 +505,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
@@ -586,6 +576,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_14_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
@@ -656,6 +647,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_current_public_myaccess_county_partner_search"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch343_florida_public_myaccess_county_search_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -726,6 +718,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -796,6 +789,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_kalawao_official_exception_path",
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_kalawao_official_exception_path",
@@ -866,6 +860,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract"
       },
+      "primaryGapReason": "bounded_2026_06_26_attachment_recheck_confirms_camas_board_doc_and_clark_child_find_manual_policy_attachments_still_fail_to_create_local_special_ed_contract",
       "packetGenerated": true,
       "packetBatch": "batch413_idaho_attachment_proof_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_attachment_recheck_confirms_camas_board_doc_and_clark_child_find_manual_policy_attachments_still_fail_to_create_local_special_ed_contract",
@@ -946,6 +941,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_134_illinois_iarss_county_map_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -1016,6 +1012,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_142_indiana_school_directory_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -1086,6 +1083,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_143_iowa_district_directory_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -1156,6 +1154,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch348_kansas_official_export_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -1226,6 +1225,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified",
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified",
@@ -1296,6 +1296,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_7_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -1366,21 +1367,11 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_live_dhhs_ofi_nav_stack_reports_and_search_surfaces_public_but_still_not_county_grade"
       },
+      "primaryGapReason": "bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract",
       "packetGenerated": true,
       "packetBatch": "batch406_maine_terminal_refresh_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract",
-      "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract",
-      "packetFinalBlockers": [
-        {
-          "family": "county_local_disability_resources",
-          "severity": "critical",
-          "failure_code": "official_maine_dhhs_ofi_surfaces_still_expose_offices_and_counts_without_county_assignment_contract",
-          "evidence": "Reviewed 2026-06-26 one more bounded live Maine DHHS/OFI county-local pass. The exact public office and report surfaces are still live and reviewable: `https://www.maine.gov/dhhs/about/contact/offices`, `/ofi/about-us/contact`, `/ofi/programs-services`, `/ofi/about-us/data-reports`, `/offices-divisions`, `/about/contact/administrative-offices`, and `/about/sitemap` all still return HTTP 200. The current official report artifacts are also still live: the Geographic Distribution PDF, Geographic Overflow PDF, counts-by-county workbook, and counts-by-county-and-town workbook all still return HTTP 200. A fresh document-level recheck now proves those reports are geographic counts only, not routing contracts: the 2026 county workbook preserves headers like `COUNTY` and `TOTAL COUNT`; the county-and-town workbook preserves `COUNTY` plus `TOWN`; and the 2026 Geographic Distribution / Overflow PDFs enumerate counties and towns such as Androscoggin, Aroostook, Auburn, Augusta, Bangor, Machias, Portland, Rockland, Sanford, and Skowhegan only as benefit-geography rows. The public District Office Locations page also remains office-address only and does not name counties on-page. No reviewed live DHHS/OFI page, workbook, PDF, sitemap, or search surface publishes `county served`, `service area`, district-office assignments, or any county-to-office routing table. Maine therefore still lacks a reviewable public county-to-office or service-area routing contract on the live DHHS/OFI stack.",
-          "next_action": "hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing",
-          "office_contract_count": 0,
-          "unmapped_counties": 16
-        }
-      ]
+      "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract"
     },
     {
       "stateId": "maryland",
@@ -1447,6 +1438,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -1517,6 +1509,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "all_critical_families_verified",
       "packetGenerated": true,
       "packetBatch": "batch394_massachusetts_suffolk_dds_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified",
@@ -1587,6 +1580,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_231_michigan_cepi_session_export_recovery_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -1657,6 +1651,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_browser_reviewed_official_mn_dhs_county_tribal_state_directory"
       },
+      "primaryGapReason": "browser_reviewed_mdeorg_and_mn_dhs_successor_routes_now_clear_minnesota_to_complete",
       "packetGenerated": true,
       "packetBatch": "batch333_minnesota_live_route_and_dhs_404_refresh_v1",
       "packetPrimaryGapReason": "browser_reviewed_mdeorg_and_mn_dhs_successor_routes_now_clear_minnesota_to_complete",
@@ -1737,6 +1732,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_171_mississippi_district_contacts_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -1807,6 +1803,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_172_missouri_arcgis_directory_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -1877,6 +1874,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -1957,6 +1955,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch349_nebraska_official_county_office_regions_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -2027,6 +2026,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -2107,6 +2107,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_live_dhhs_roots_still_403_while_robots_txt_only_confirms_host_existence"
       },
+      "primaryGapReason": "bounded_2026_06_26_browser_recheck_confirms_nh_dhhs_doe_and_nhes_hosts_fail_with_public_access_denied_shells_not_just_raw_fetch_403s",
       "packetGenerated": true,
       "packetBatch": "batch412_new_hampshire_browser_proof_v1",
       "packetPrimaryGapReason": "bounded_2026_06_26_browser_recheck_confirms_nh_dhhs_doe_and_nhes_hosts_fail_with_public_access_denied_shells_not_just_raw_fetch_403s",
@@ -2177,6 +2178,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_17_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
@@ -2257,6 +2259,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_current_official_hca_field_offices_county_service_area_page"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
       "packetGenerated": true,
       "packetBatch": "batch411_new_mexico_ped_county_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
@@ -2327,6 +2330,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch323_new_york_otda_county_local_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -2397,6 +2401,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_286_north_carolina_official_county_contract_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -2467,6 +2472,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -2537,6 +2543,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_live_official_county_jfs_directory"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch332_ohio_education_live_leaf_probe_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -2607,6 +2614,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch347_oklahoma_county_health_fallback_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -2677,6 +2685,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch325_oregon_public_office_locations_api_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -2747,6 +2756,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -2817,6 +2827,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified",
       "packetGenerated": true,
       "packetBatch": "batch364_rhode-island_official_local_routing_finality_v1",
       "packetPrimaryGapReason": "all_critical_families_verified",
@@ -2887,6 +2898,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "batch_280_south_carolina_official_district_directory_completion_v1",
       "packetPrimaryGapReason": "none",
@@ -2957,6 +2969,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_current_official_dss_behavioral_health_services_county_map_and_rows"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
       "packetGenerated": true,
       "packetBatch": "batch415_south-dakota_dss_local_office_lane_truth_refresh_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
@@ -3027,6 +3040,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_independently_reaudited_with_live_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_independently_reaudited_with_live_first_party_or_official_evidence",
@@ -3097,6 +3111,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_county_grade"
       },
+      "primaryGapReason": "none",
       "packetGenerated": true,
       "packetBatch": "texas_complete_state_packet_v1",
       "packetPrimaryGapReason": "none",
@@ -3167,6 +3182,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_current_official_lmha_county_map"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch337_utah_lmha_county_map_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -3237,6 +3253,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch386_vermont_ahs_field_services_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -3307,6 +3324,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_independently_reaudited_with_live_official_or_browser_reviewed_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_independently_reaudited_with_live_official_or_browser_reviewed_official_evidence",
@@ -3377,6 +3395,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch378_washington_ddcs_dvr_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -3447,6 +3466,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -3517,6 +3537,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_state_grade"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch379_wisconsin_dpi_directory_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
@@ -3587,6 +3608,7 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "verified_official_hcbs_bes_county_assignments_pdf"
       },
+      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
       "packetGenerated": true,
       "packetBatch": "batch395_wyoming_wde_special_ed_directory_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",

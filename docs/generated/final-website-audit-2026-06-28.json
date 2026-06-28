@@ -310,7 +310,7 @@
         "18 appeal records",
         "2 live forms and guides",
         "Program verification mix: verified=170; source_listed=63; official_verified=25",
-        "Form verification mix: official_verified=1; verified=1"
+        "Form verification mix: needs_review=1; official_verified=1"
       ],
       "staging": [
         "0 staged programs",
@@ -551,8 +551,8 @@
         "Healthy source registry, source verifications, user submissions, coverage gaps, and verification queues to sustain the final website."
       ],
       "currentHave": [
-        "1 sources",
-        "1 source verifications",
+        "0 sources",
+        "0 source verifications",
         "null user-submitted resources",
         "null coverage gaps",
         "null verification queue items"

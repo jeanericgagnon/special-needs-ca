@@ -426,6 +426,7 @@ function generateAllStateCaliforniaGradeAuditV3() {
       strongCriticalFamilies: summary.strong_critical_families,
       weakCriticalFamilies: summary.weak_critical_families,
       missingCriticalFamilies: summary.missing_critical_families,
+      primaryGapReason: summary.primary_gap_reason,
       packetGenerated: true,
       packetBatch: summary.batch,
       packetPrimaryGapReason: summary.primary_gap_reason,

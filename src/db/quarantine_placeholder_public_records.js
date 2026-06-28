@@ -41,6 +41,16 @@ const INVALID_SOURCE_HOST_PATTERNS = [
 
 const TABLE_CONFIGS = [
   {
+    table: 'forms_and_guides',
+    idField: 'id',
+    nameFields: ['title', 'agency'],
+    phoneFields: [],
+    emailFields: [],
+    websiteFields: [],
+    sourceUrlFields: ['source_url', 'pdf_url'],
+    requiredColumns: ['display_status'],
+  },
+  {
     table: 'county_offices',
     idField: 'id',
     nameFields: ['office_name'],

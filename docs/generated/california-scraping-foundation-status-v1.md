@@ -1,6 +1,6 @@
 # California Scraping Foundation Status v1
 
-Generated: 2026-06-27T22:32:09.126Z
+Generated: 2026-06-28T02:43:36.983Z
 
 ## Registry And Queue
 - Registry families: `10`
@@ -8,6 +8,15 @@ Generated: 2026-06-27T22:32:09.126Z
 - Queue rows: `18`
 - Alignment status: `pass`
 - Alignment failures: none
+- Post-stage audit status: `pass`
+- Post-stage accepted reconciled: `true`
+- Post-stage provenance healthy: `true`
+- Post-stage accepted/staged/unsupported: `100/76/24`
+- Post-stage parse-ready rows: `134`
+- Post-stage browser-assisted rows: `30`
+- Post-stage families with issues: none
+- Published provenance blocked tables: none
+- Published provenance strong-ready gaps: none
 
 ### Queue By Family
 - ihss: 2
@@ -71,3 +80,4 @@ Generated: 2026-06-27T22:32:09.126Z
 - COMPLETE: `45`
 - BLOCKED: `5`
 - index-safe: `45`
+
