@@ -4,6 +4,7 @@
 import { getProgramsByKeywords, getMatchedCorePrograms, getCountyDetails, Program, CoreProgramMatch, getStateByIdOrCode } from '@/lib/db';
 import { hasNonNegatedKeyword } from '@/lib/negation';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
+import { isPublicCountyOfficeEligible, isPublicDirectoryRecordEligible, isPublicRecordEligible } from '@/lib/publicTruth';
 import stateProgramsMapRaw from '@/lib/state_programs_map.json';
 
 const stateProgramsMap = stateProgramsMapRaw as Record<string, any>;
@@ -24,7 +25,17 @@ export interface AnalysisResult {
 }
 
 export async function fetchCountyDetailsAction(countyId: string) {
-  return await getCountyDetails(countyId);
+  const details = await getCountyDetails(countyId);
+  if (!details) return details;
+
+  return {
+    ...details,
+    countyOffices: (details.countyOffices || []).filter(isPublicCountyOfficeEligible),
+    schoolDistricts: (details.schoolDistricts || []).filter(isPublicRecordEligible),
+    localOrganizations: (details.localOrganizations || []).filter(isPublicDirectoryRecordEligible),
+    regionalCenters: (details.regionalCenters || []).filter(isPublicRecordEligible),
+    selpas: (details.selpas || []).filter(isPublicRecordEligible),
+  };
 }
 
 export async function fetchBenefits(age: number, diagnosis: string): Promise<Program[]> {

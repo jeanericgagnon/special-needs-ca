@@ -1080,6 +1080,14 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       const eligibleSchoolDistricts = ((policyCountyDetails.schoolDistricts || []) as Array<any>).filter(isPublicRecordEligible);
       const eligibleSelpas = ((policyCountyDetails.selpas || []) as Array<any>).filter(isPublicRecordEligible);
       const eligibleLocalOrganizations = ((policyCountyDetails.localOrganizations || []) as Array<any>).filter(isPublicDirectoryRecordEligible);
+      const publicCountyDetailsForCopy = {
+        ...policyCountyDetails,
+        regionalCenters: eligibleRegionalCenters,
+        countyOffices: eligibleCountyOffices,
+        schoolDistricts: eligibleSchoolDistricts,
+        selpas: eligibleSelpas,
+        localOrganizations: eligibleLocalOrganizations,
+      };
       const freshnessSources = [
         ...eligibleRegionalCenters.map((rc) => ({
           name: rc.name,
@@ -1199,7 +1207,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               {countyDetails.name} County Disability Benefits Guide
             </h1>
             <div style={{ fontSize: '1rem', color: 'var(--text-light)', marginTop: '0.75rem', maxWidth: '850px' }}>
-              {formatIntroCopy(getCountyIntroCopy(stateData.id, stateData.name, stateData.code, countyDetails as any, countyWage, catchmentLabel))}
+              {formatIntroCopy(getCountyIntroCopy(stateData.id, stateData.name, stateData.code, publicCountyDetailsForCopy as any, countyWage, catchmentLabel))}
             </div>
             <div style={{ marginTop: '1rem', display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
               <ContributionModal
