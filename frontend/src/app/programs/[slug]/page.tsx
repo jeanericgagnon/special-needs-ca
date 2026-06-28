@@ -141,7 +141,7 @@ export default async function ProgramPage({ params }: Props) {
       'Use the linked office, intake, or application route from the source before you submit anything.'
     ],
     documentsToGather: [
-      { name: 'Identity and residency records', description: `Keep your current ${stateName} identity and address records ready if the official source asks for them.` },
+      { name: 'Identity and residency records', description: `Keep your current ${stateName} identity and address records ready if the linked public source asks for them.` },
       { name: 'Diagnosis or eligibility records', description: 'Bring the medical, educational, or functional documentation named on the public source.' }
     ],
     whoToCall: hasVerifiedSource

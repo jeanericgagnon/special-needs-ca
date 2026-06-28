@@ -364,6 +364,18 @@ assert.match(
 );
 
 assert.doesNotMatch(
+  programPage,
+  /official source asks for them/i,
+  'DB-backed program fallback body copy should not escalate the linked source into a stronger official-guide claim than the page contract supports.'
+);
+
+assert.match(
+  programPage,
+  /linked public source asks for them/i,
+  'DB-backed program fallback body copy should keep the guidance tied to the linked public source.'
+);
+
+assert.doesNotMatch(
   seoData,
   /without losing SSI or Medi-Cal eligibility|bypasses this rule completely/,
   'Shared public guide copy should avoid absolute CalABLE eligibility-preservation phrasing without current-source confirmation.'
