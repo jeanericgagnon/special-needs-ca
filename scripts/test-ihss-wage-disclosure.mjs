@@ -25,6 +25,9 @@ assert.equal(losAngeles.hourlyRate, 19.64);
 assert.equal(losAngeles.isEstimate, true);
 assert.equal(losAngeles.fallbackUsed, false);
 assert.equal(losAngeles.sourceLabel, CA_IHSS_WAGE_SOURCE_LABEL);
+assert.equal(losAngeles.sourceType, 'reviewed_public_estimate');
+assert.equal(losAngeles.officialConfirmLabel, 'Official county IHSS office directory');
+assert.equal(typeof losAngeles.confidenceScore, 'number');
 
 const countyOverride = getIhssWageDisclosure('california', 'los-angeles', 'Los Angeles', 19.64);
 assert.ok(countyOverride);
@@ -33,6 +36,7 @@ assert.equal(countyOverride.fallbackUsed, false);
 assert.equal(getIhssMonthlyEstimate(countyOverride, 283), 5558.12);
 assert.equal(formatIhssHourlyEstimateValue(countyOverride), '$19.64/hour estimate');
 assert.equal(formatIhssMonthlyEstimateValue(getIhssMonthlyEstimate(countyOverride, 283)), '$5,558/month estimate');
+assert.match(countyOverride.explanation, /reviewed public California county IHSS wage reference|checked public estimate/i);
 
 const conflictingOverride = getIhssWageDisclosure('california', 'los-angeles', 'Los Angeles', 18);
 assert.ok(conflictingOverride);
@@ -44,6 +48,7 @@ const unknownCounty = getIhssWageDisclosure('california', 'unknown-county', 'Unk
 assert.ok(unknownCounty);
 assert.equal(unknownCounty.hourlyRate, null);
 assert.equal(unknownCounty.fallbackUsed, true);
+assert.equal(unknownCounty.sourceType, 'official_county_directory_fallback');
 assert.match(unknownCounty.explanation, /still verifying/i);
 assert.equal(formatIhssHourlyEstimateValue(unknownCounty), 'Still being verified');
 assert.equal(formatIhssMonthlyEstimateValue(null), 'Still being verified');
@@ -76,11 +81,29 @@ const countyBenefitsPageSource = fs.readFileSync(
 );
 assert.match(countyBenefitsPageSource, /Source Page ↗/);
 assert.match(countyBenefitsPageSource, /\$\\?\{displayWage\.toFixed\(2\)\}\/hour estimate/);
+assert.match(countyBenefitsPageSource, /\$\\?\{wageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hour estimate/);
+assert.doesNotMatch(countyBenefitsPageSource, /\$\\?\{wageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hr/);
 
 const behaviorLogSource = fs.readFileSync(
   path.join(repoRoot, 'frontend/src/app/ihss-behavior-log/behavior-log-client.tsx'),
   'utf8',
 );
 assert.match(behaviorLogSource, /does not know your county yet/i);
+assert.match(behaviorLogSource, /\$\{ihssWage\.toFixed\(2\)\}\/hour estimate/);
+assert.doesNotMatch(behaviorLogSource, /\$\{ihssWage\.toFixed\(2\)\}\/hr estimate/);
+
+const ihssMiniProductSource = fs.readFileSync(
+  path.join(repoRoot, 'frontend/src/app/benefits/components/ihss-mini-product.tsx'),
+  'utf8',
+);
+assert.match(ihssMiniProductSource, /formatIhssHourlyEstimateValue\(wageDisclosure\)/);
+assert.doesNotMatch(ihssMiniProductSource, /countyDetails\.wage\.toFixed\(2\)/);
+
+const countiesClientSource = fs.readFileSync(
+  path.join(repoRoot, 'frontend/src/app/counties/[state]/counties-client.tsx'),
+  'utf8',
+);
+assert.match(countiesClientSource, /formatIhssHourlyEstimateValue\(wageDisclosure\)/);
+assert.doesNotMatch(countiesClientSource, /\$\\?\{wageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hr/);
 
 console.log('ihss wage disclosure tests passed');

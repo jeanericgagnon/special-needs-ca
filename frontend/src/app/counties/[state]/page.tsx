@@ -22,6 +22,7 @@ type PublicDirectoryLike = {
   source_url?: string | null;
   source_type?: string | null;
   data_origin?: string | null;
+  verification_status?: string | null;
   confidence_score?: number | null;
   last_verified_date?: string | null;
   last_scraped_at?: string | null;
@@ -48,6 +49,7 @@ function buildStateCountyDirectoryDisclosureData(
         name: record.name || record.office_name || 'Public local source',
         url: record.source_url || undefined,
         lastReviewedDate: record.last_verified_date || record.last_scraped_at || undefined,
+        verificationStatus: record.verification_status || undefined,
         sourceType: record.source_type || record.data_origin || 'directory_record',
         confidenceScore: typeof record.confidence_score === 'number' ? record.confidence_score : null,
       });
@@ -116,7 +118,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
   return {
     title: `${stateData.name} County Disability Resource Directories`,
-    description: `Select your ${stateData.name} county to review source-backed local routing for ${catchment}, county offices, school support contacts, and related public benefit pathways.`,
+    description: `Select your ${stateData.name} county to review currently published public routing for ${catchment}, county offices, school support contacts, and related benefit pathways.`,
     alternates: {
       canonical: `/counties/${stateData.id}`
     },
@@ -199,7 +201,7 @@ export default async function CountiesDirectoryPage({ params }: Props) {
           {stateData.name} Counties Directory
         </h1>
         <p style={{ fontSize: '1.15rem', maxWidth: '850px', margin: '0 auto', color: 'var(--text-light)', lineHeight: '1.6' }}>
-          Select your county to review source-backed routing for {catchment} intake desks, county service offices, and school support contacts. Thin or unverified local sections stay gated until we can review stronger public proof.
+          Select your county to review currently published public routing for {catchment} intake desks, county service offices, and school support contacts. Thin or unverified local sections stay gated until we can review stronger public proof.
         </p>
       </div>
 

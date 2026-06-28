@@ -47,7 +47,7 @@ Dear Director of Special Education,
 
 I am writing to formally request a comprehensive educational evaluation to determine special education eligibility under the Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act. I suspect my child, ${childName}, has a disability related to ${diagnosisName} that significantly impacts their access to the educational environment and learning.
 
-Under California Education Code § 56321, please note that the school district is required to provide me with an Assessment Plan within fifteen (15) calendar days from receipt of this written request. 
+Please confirm the current Assessment Plan timeline that applies to this written request under California Education Code § 56321 and related guidance.
 
 Please evaluate ${childName} in all areas of suspected disability, including but not limited to:
 1. Psycho-educational evaluation (cognitive, learning profiles)
@@ -55,7 +55,7 @@ Please evaluate ${childName} in all areas of suspected disability, including but
 3. Occupational Therapy (fine motor, sensory processing)
 4. Social-Emotional and Behavioral functioning
 
-I look forward to receiving the Assessment Plan within the statutory 15-day timeline so that evaluations can proceed. Once the Assessment Plan is signed, please compile the evaluations and convene the initial IEP meeting within the 60-day deadline as mandated under CA Education Code § 56344.
+Please provide the Assessment Plan and identify the current timeline the district is following for the evaluation and meeting process under California law.
 
 Thank you for your prompt attention to this matter.
 

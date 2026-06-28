@@ -104,7 +104,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode}`,
-    description: `Access ${stateName} state support, ${config.catchmentName} intake, ${config.personalCareProgram} pay estimates, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
+    description: `Review ${stateName} public benefit routes, ${config.catchmentName} intake links, ${config.personalCareProgram} pay estimates, and school support guidance for ${diagnosisFormatted} in ${countyFormatted} County.`,
     alternates: {
       canonical: `/benefits/${stateId}/${p.diagnosis}/${p.county}`
     },

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Search, MapPin, Calculator, Landmark, ArrowRight } from 'lucide-react';
 import type { County } from '@/lib/db';
 import { trackDirectoryAnalyticsEvent } from '@/lib/directoryAnalytics';
-import { getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
+import { formatIhssHourlyEstimateValue, getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 interface CountiesClientProps {
   counties: County[];
@@ -158,13 +158,7 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
                   </div>
 
                   <p style={{ fontSize: '0.82rem', color: 'var(--text-light)', marginBottom: '1.25rem', lineHeight: '1.4' }}>
-                    Access localized administrative offices, school district IEP numbers, and {
-                      stateCode.toLowerCase() === 'ca' ? 'Lanterman Act service coordinators' :
-                      stateCode.toLowerCase() === 'tx' ? 'LIDDA service coordinators' :
-                      stateCode.toLowerCase() === 'fl' ? 'APD service coordinators' :
-                      stateCode.toLowerCase() === 'ny' ? 'OPWDD Front Door coordinators' :
-                      'local service coordinators'
-                    } for families in {county.name} County.
+                    Review county office pathways, school-support contacts, and currently published public routing options for families in {county.name} County.
                   </p>
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
@@ -174,7 +168,7 @@ export default function CountiesClient({ counties, stateCode, stateName }: Count
                           <Calculator size={14} color="var(--primary-color)" />
                           IHSS Pay Estimate:
                         </span>
-                        <strong style={{ color: '#10b981' }}>${wageDisclosure.hourlyRate.toFixed(2)}/hr</strong>
+                        <strong style={{ color: '#10b981' }}>{formatIhssHourlyEstimateValue(wageDisclosure)}</strong>
                       </div>
                     ) : null}
                     {wageDisclosure ? (

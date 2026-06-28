@@ -1469,7 +1469,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       </div>
                       <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px dashed rgba(0,0,0,0.08)', paddingTop: '0.4rem', marginTop: '0.2rem' }}>
                         <span>Pay Rate:</span>
-                        <strong>${ihssWage.toFixed(2)}/hr estimate</strong>
+                        <strong>${ihssWage.toFixed(2)}/hour estimate</strong>
                       </div>
                     </div>
                   </div>

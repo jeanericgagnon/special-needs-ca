@@ -64,8 +64,8 @@ export async function generateMetadata({ params }: Props) {
       confidenceScore: null,
     });
     return {
-      title: `${diagnosis.name} Benefits in California | Program Guide`,
-      description: `Learn which California public programs, school supports, and intake paths may apply for children with ${diagnosis.name}, and confirm each next step against current public sources.`,
+      title: `${diagnosis.name} California Public Support Guide`,
+      description: `Review source-backed California public benefit, school-support, and intake pathways that families often check for children with ${diagnosis.name}, then confirm the current next step against public sources.`,
       alternates: {
         canonical: `/conditions/${slug}`,
       },
@@ -98,10 +98,10 @@ export default async function ConditionPage({ params }: Props) {
   const dynamicData = {
     slug: slug,
     category: 'conditions' as const,
-    title: `${diag.name} Benefits in California: Parent Guide`,
-    metaTitle: `${diag.name} Benefits California | Lanterman Act & School Aid`,
-    metaDescription: `Discover which California public benefits, therapies, and school support plans may apply for children with ${diag.name}, with source-backed next-step guidance.`,
-    quickAnswer: `${diag.parent_friendly_explanation} In California, children with ${diag.name} may qualify for specialized public benefit and school-support pathways depending on their diagnosis details, functional needs, and current program rules. That can include IEP evaluations in public schools, Regional Center review under the Lanterman Act when developmental criteria are met, Medi-Cal, and Supplemental Security Income (SSI).`,
+    title: `${diag.name} California Public Support Guide`,
+    metaTitle: `${diag.name} California Support Guide | Public Benefits & School Routes`,
+    metaDescription: `Review source-backed California public benefit, school-support, and intake pathways families often check after a ${diag.name} diagnosis, with public next-step guidance and source links.`,
+    quickAnswer: `${diag.parent_friendly_explanation} In California, families often review several public support pathways after a ${diag.name} diagnosis, depending on the child's functional needs, age, and current program rules. That can include school evaluation requests, Regional Center screening when developmental-service criteria may fit, Medi-Cal pathways, and Supplemental Security Income (SSI). Each route still needs current source review and agency confirmation.`,
     tldrPoints: [
       { label: 'Regional Center Fit', value: diag.regional_center_relevance === 1 ? 'High screening fit' : 'Conditional' },
       { label: 'School IEP Support', value: diag.iep_relevance === 1 ? 'Likely worth screening' : 'Conditional' },
@@ -115,20 +115,20 @@ export default async function ConditionPage({ params }: Props) {
       'Significant struggles in traditional school environments or social interactions.'
     ],
     whatToDoFirst: [
-      'Establish a formal diagnostic report signed by your pediatrician or psychologist.',
-      'Contact your local Regional Center to request a Lanterman Act or Early Start assessment.',
-      'Submit a written evaluation request for special education services (IEP) to your school district.'
+      'Keep a formal diagnostic report signed by your pediatrician, psychologist, or specialist ready for current public intake and school review steps.',
+      'Review your local Regional Center intake or Early Start page to see whether a screening request makes sense for your child.',
+      'Prepare a written request for a school special-education evaluation and confirm the district’s current submission path.'
     ],
     documentsToGather: [
       { name: 'Specialist clinical diagnostic report', description: `Verifying clinical diagnosis of ${diag.name}.` },
       { name: 'Private pediatric therapy evaluations', description: 'Speech, occupational, or behavioral therapy records.' }
     ],
     whoToCall: [
-      { name: 'California DDS Intake Liaison', number: '(916) 654-1690', description: 'State developmental services office.' }
+      { name: 'California DDS State Office (statewide information line)', number: '(916) 654-1690', description: 'State developmental-services office for statewide information; use your local Regional Center for intake routing and county-level next steps.' }
     ],
     whatToSay: `My child has a diagnosis of ${diag.name} and I would like to schedule an intake assessment to understand the available services and next steps.`,
     commonMistakes: [
-      'Waiting for the school to suggest assessments. You must request them in writing to start the 15-day timeline.',
+      'Waiting for the school to suggest assessments instead of making a written request and keeping a dated copy for your records.',
       'Assuming income alone settles Medi-Cal eligibility without checking child-specific pathways, waiver rules, or other current exceptions.'
     ],
     relatedGuides: [

@@ -290,7 +290,7 @@ function DashboardInnerClient() {
           daysRemaining: daysToPlan,
           breachType: 'iep-15-day',
           stage: 1,
-          description: `The school district must provide a proposed Assessment Plan to the parent within ${stateConfig.timelineDaysPlan || '15 calendar days'} of the initial written referral.`
+          description: `Use this as a planning reminder for the district Assessment Plan timing. Confirm the current rule and any exceptions on the official school or state source before relying on this date.`
         },
         {
           id: 'iep-meeting',
@@ -300,7 +300,7 @@ function DashboardInnerClient() {
           daysRemaining: daysToMeeting,
           breachType: 'iep-60-day',
           stage: 2,
-          description: `The district must complete the assessments and hold the IEP team eligibility/placement meeting within ${stateConfig.timelineDaysMeeting || '60 calendar days'} of receiving the signed Assessment Plan.`
+          description: `Use this as a planning reminder for the evaluation and meeting timeline after consent. Confirm the current rule and any exceptions on the official school or state source before relying on this date.`
         }
       ];
     } else if (timelineTemplate === 'rc') {
@@ -322,7 +322,7 @@ function DashboardInnerClient() {
           daysRemaining: daysToIntake,
           breachType: 'rc-15-day',
           stage: 1,
-          description: `${stateConfig.catchmentName || 'Intake Agency'} intake and assessment services must be initiated within 15 consecutive days of the initial request.`
+          description: `Use this as a planning reminder for the initial intake response timeline. Confirm the current intake rule and any exceptions on the official source before relying on this date.`
         },
         {
           id: 'rc-eligibility',
@@ -332,7 +332,7 @@ function DashboardInnerClient() {
           daysRemaining: daysToElig,
           breachType: 'rc-120-day',
           stage: 2,
-          description: `The ${stateConfig.catchmentName || 'Intake Agency'} has a maximum of 120 days from the initial request to finalize eligibility determination and hold the service plan meeting.`
+          description: `Use this as a planning reminder for the eligibility and service-plan timeline. Confirm the current rule and any exceptions on the official source before relying on this date.`
         }
       ];
     } else {
@@ -350,7 +350,7 @@ function DashboardInnerClient() {
           daysRemaining: daysToVisit,
           breachType: 'ihss-30-day',
           stage: 1,
-          description: `The local social services or Medicaid department has a maximum of 30 calendar days from the date of application to perform the home visit and issue an eligibility determination for ${stateConfig.personalCareProgram || 'personal care services'}.`
+          description: `Use this as a planning reminder for the local personal-care assessment timeline. Confirm the current county or Medicaid rule before relying on this date.`
         }
       ];
     }
@@ -386,7 +386,7 @@ Dear Special Education Administrator,
 
 I am writing to follow up on the written referral for a special education assessment for my child, ${currentChild.nickname} (DOB: ${dobStr}), which was submitted to the district on ${formattedSubDate}.
 
-Under ${stateConfig.timelinesCode || 'state education guidelines'}, the school district is required to provide parents with a proposed Assessment Plan within ${stateConfig.timelineDaysPlan || '15 calendar days'} of receiving a written referral. 
+Under ${stateConfig.timelinesCode || 'state education guidelines'}, families should confirm the current Assessment Plan timeline that applies to a written referral before relying on a deadline. 
 
 As of today, ${todayStr}, it has been ${daysOverdue} days since my request, and the statutory deadline of ${formattedDueDate} has passed. I have not yet received the proposed Assessment Plan.
 
@@ -412,7 +412,7 @@ Dear IEP Coordinator,
 
 I am writing to formally request the immediate scheduling of an IEP meeting for my child, ${currentChild.nickname} (DOB: ${dobStr}).
 
-On ${formattedSignedDate}, I returned the signed Assessment Plan consenting to special education evaluations. According to ${stateConfig.timelinesCode || 'state education guidelines'}, the school district must complete all assessments and hold an IEP team meeting to determine eligibility and placement within ${stateConfig.timelineDaysMeeting || '60 calendar days'} of receiving the signed consent.
+On ${formattedSignedDate}, I returned the signed Assessment Plan consenting to special education evaluations. According to ${stateConfig.timelinesCode || 'state education guidelines'}, families should confirm the current evaluation and IEP meeting timeline that applies after signed consent before relying on a deadline.
 
 The statutory deadline was ${formattedDueDate}. Today is ${todayStr} (which is ${daysOverdue} days past the deadline), and an IEP meeting has not yet been scheduled or held.
 
@@ -436,7 +436,7 @@ Dear Intake Coordinator,
 
 I am writing to follow up on the request for ${stateConfig.catchmentName || 'Agency'} services for my child, ${currentChild.nickname} (DOB: ${dobStr}), submitted on ${formattedSubDate}.
 
-Pursuant to ${stateConfig.name} guidelines, intake and assessment services must be initiated within 15 days of the initial request for services. 
+Pursuant to ${stateConfig.name} guidance, I am asking you to confirm the current intake timeline that applies to our request. 
 
 The 15-day statutory deadline was ${formattedDueDate}. As of today, it has been ${daysOverdue} days since my request and the intake interview has not been completed.
 

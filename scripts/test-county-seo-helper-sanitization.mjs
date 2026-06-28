@@ -40,14 +40,38 @@ assert.match(
 
 assert.match(
   helperSource,
-  /const eciContractor = publicCountyDetails\.regionalCenters\?\.\[0\]\?\.name;/,
+  /const eciContractor = getPrimaryPublicRegionalCenter\(publicCountyDetails\)\?\.name;/,
   'Texas county metadata should use sanitized regional center data only.'
 );
 
 assert.match(
   helperSource,
-  /const rcName = publicCountyDetails\.regionalCenters\?\.\[0\]\?\.name \|\| 'Local Regional Center';/,
+  /const rcName = getPrimaryPublicRegionalCenter\(publicCountyDetails\)\?\.name;/,
   'California county metadata should use sanitized regional center data only.'
+);
+
+assert.match(
+  helperSource,
+  /We are still verifying the local Regional Center routing details for this county\./,
+  'California county metadata should fail closed when no reviewed public regional center is available.'
+);
+
+assert.doesNotMatch(
+  helperSource,
+  /Find source-backed local service contacts|Access source-backed local routing|Find source-backed contact numbers|Get source-backed intake contacts/,
+  'County SEO helper metadata should not use stronger source-backed-local-routing phrasing than the reviewed public contract supports.'
+);
+
+assert.match(
+  helperSource,
+  /Review currently published public service contacts|Review currently published local routing|Review currently published contact numbers and intake details|Review currently published intake contacts/,
+  'County SEO helper metadata should use the reviewed public-routing phrasing after hardening.'
+);
+
+assert.match(
+  helperSource,
+  /We are still verifying the current Regional Center routing for \$\{countyName\} County\./,
+  'California county intro copy should say the local Regional Center routing is still being verified when the county has no reviewed public regional center.'
 );
 
 assert.match(

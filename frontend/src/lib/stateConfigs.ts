@@ -125,7 +125,7 @@ export const stateConfigs: Record<string, StateConfig> = {
     faqs: [
       {
         q: 'How do I start the Regional Center intake process for [diagnosis] in [county] County?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `To start a Lanterman Act intake review for ${diagnosis} in ${county} County, request an intake assessment from ${rc}. Under California Welfare & Institutions Code § 4648, the center generally completes the initial intake within 15 days of your request and determines eligibility within 120 days, subject to the current rules and any documented exceptions. If the center finds your child eligible, it can assign a service coordinator and discuss available respite, social recreation, and behavior-service options.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `To start a Lanterman Act intake review for ${diagnosis} in ${county} County, request an intake assessment from ${rc}. California intake and eligibility timelines can vary based on the current published rules, the documents you submit, and any stated exceptions, so confirm the active deadlines with the Regional Center or DDS source you are using. If the center finds your child eligible, it can assign a service coordinator and discuss available respite, social recreation, and behavior-service options.`
       },
       {
         q: 'Could my child qualify for paid caregiver hours (IHSS) for [diagnosis] in [county] County?',
@@ -133,7 +133,7 @@ export const stateConfigs: Record<string, StateConfig> = {
       },
       {
         q: 'What are my rights if the school district delays assessing my child with [diagnosis]?',
-        a: (county, rc, sd, wage, payout, diagnosis) => `If you suspect your child has ${diagnosis} and requires special education, submit a formal assessment request in writing to ${sd}. Under California Education Code § 56321, the district generally has 15 calendar days from receipt of your letter to provide an Assessment Plan, subject to the current statutory exceptions. Once you sign and return that plan, the district generally has 60 calendar days to complete the evaluations and hold the initial IEP meeting. Do not assume informal academic interventions replace a formal IEP evaluation request.`
+        a: (county, rc, sd, wage, payout, diagnosis) => `If you suspect your child has ${diagnosis} and requires special education, submit a formal assessment request in writing to ${sd}. Then confirm the current Assessment Plan and meeting timelines on the district or California special-education source that applies to your case before relying on a deadline. Do not assume informal academic interventions replace a formal IEP evaluation request.`
       },
       {
         q: 'Can we get Medi-Cal and therapy funding for [diagnosis] if our household income is too high?',

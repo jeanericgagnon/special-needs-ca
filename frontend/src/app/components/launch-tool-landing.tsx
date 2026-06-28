@@ -88,6 +88,9 @@ export default function LaunchToolLanding({
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
+          <p style={{ margin: '1rem 0 0 0', fontSize: '0.88rem', color: 'var(--text-light)', lineHeight: 1.6 }}>
+            You can review the public guidance on this page without an account. Sign in only if you want to save progress, keep notes, or return to a private working draft later.
+          </p>
         </section>
 
         <section

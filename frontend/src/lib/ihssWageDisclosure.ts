@@ -4,10 +4,13 @@ export type IhssWageDisclosure = {
   hourlyRate: number | null;
   sourceUrl: string;
   sourceLabel: string;
+  sourceType: 'reviewed_public_estimate' | 'official_county_directory_fallback';
   officialConfirmUrl: string;
+  officialConfirmLabel: string;
   lastVerifiedDate: string;
   isEstimate: boolean;
   fallbackUsed: boolean;
+  confidenceScore: number | null;
   explanation: string;
 };
 
@@ -19,6 +22,7 @@ export type IhssCountyEstimateRecord = {
   officialConfirmUrl: string;
   lastVerifiedDate: string;
   isEstimate: true;
+  confidenceScore: number;
   explanation: string;
 };
 
@@ -124,6 +128,7 @@ export const CA_IHSS_COUNTY_ESTIMATES: IhssCountyEstimateRecord[] = Object.entri
     officialConfirmUrl: CA_IHSS_WAGE_FALLBACK_URL,
     lastVerifiedDate: CA_IHSS_WAGE_LAST_VERIFIED_DATE,
     isEstimate: true as const,
+    confidenceScore: 0.68,
     explanation: CA_IHSS_WAGE_SOURCE_NOTE,
   }))
   .sort((a, b) => a.countyName.localeCompare(b.countyName));
@@ -158,10 +163,13 @@ export function getIhssWageDisclosure(
       hourlyRate: null,
       sourceUrl: CA_IHSS_WAGE_FALLBACK_URL,
       sourceLabel: CA_IHSS_WAGE_FALLBACK_LABEL,
+      sourceType: 'official_county_directory_fallback',
       officialConfirmUrl: CA_IHSS_WAGE_FALLBACK_URL,
+      officialConfirmLabel: CA_IHSS_WAGE_FALLBACK_LABEL,
       lastVerifiedDate: CA_IHSS_WAGE_LAST_VERIFIED_DATE,
       isEstimate: true,
       fallbackUsed: true,
+      confidenceScore: null,
       explanation:
         'We are still verifying the current IHSS provider pay estimate for this county. Use the official county IHSS office directory to confirm the latest local rate before relying on it.',
     };
@@ -173,10 +181,13 @@ export function getIhssWageDisclosure(
     hourlyRate: checkedRecord.hourlyRate,
     sourceUrl: checkedRecord.sourceUrl,
     sourceLabel: CA_IHSS_WAGE_SOURCE_LABEL,
+    sourceType: 'reviewed_public_estimate',
     officialConfirmUrl: checkedRecord.officialConfirmUrl,
+    officialConfirmLabel: CA_IHSS_WAGE_FALLBACK_LABEL,
     lastVerifiedDate: checkedRecord.lastVerifiedDate,
     isEstimate: checkedRecord.isEstimate,
     fallbackUsed: false,
+    confidenceScore: checkedRecord.confidenceScore,
     explanation: hasConflictingStoredRate
       ? `${CA_IHSS_WAGE_SOURCE_NOTE} We ignored a conflicting stored county value and kept the checked public estimate for consistent public display.`
       : checkedRecord.explanation,
@@ -204,7 +215,7 @@ export function formatIhssEstimateSummary(disclosure: IhssWageDisclosure | null)
     return 'We are still verifying the current county IHSS rate. Use the county IHSS office before relying on any pay estimate.';
   }
 
-  return `Based on a reviewed ${disclosure.countyName} County wage estimate of $${disclosure.hourlyRate.toFixed(2)}/hr. Confirm the current county rate before relying on it.`;
+  return `Based on a reviewed ${disclosure.countyName} County wage estimate of $${disclosure.hourlyRate.toFixed(2)}/hour estimate. Confirm the current county rate before relying on it.`;
 }
 
 export function formatIhssHourlyEstimateValue(disclosure: IhssWageDisclosure | null): string {
