@@ -295,6 +295,7 @@
     "test:directory-analytics": "node --experimental-strip-types scripts/test-directory-analytics.mjs",
     "test:county-truth-gating": "node scripts/test-county-truth-gating.mjs",
     "test:directory-foundation": "node --experimental-strip-types scripts/test-directory-foundation.mjs",
+    "test:public-copy-hardening": "node scripts/test-public-copy-hardening.mjs",
     "test:public-directory-sample-gating": "node scripts/test-public-directory-sample-gating.mjs",
     "test:nonprofit-accessibility-domain": "node scripts/test-nonprofit-accessibility-domain.mjs",
     "test:nonprofit-gap-batch": "node scripts/test-nonprofit-gap-batch.mjs",

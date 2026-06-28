@@ -826,7 +826,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                   className="btn-primary" 
                   style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', width: 'auto', padding: '0.75rem 1.5rem', height: 'auto' }}
                 >
-                  Visit Official Agency Source <Sparkles size={16} />
+                  Visit Source Page <Sparkles size={16} />
                 </a>
               </div>
             </div>

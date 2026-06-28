@@ -306,7 +306,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
                     <span style={{ display: 'block', fontSize: '0.78rem', color: 'var(--text-light)' }}>{doc.description}</span>
                     {doc.downloadUrl && (
                       <a href={doc.downloadUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', color: 'var(--primary-color)', fontWeight: 600, textDecoration: 'none', marginTop: '0.2rem', fontSize: '0.75rem' }}>
-                        Download Official Form <Download size={10} />
+                        Download Source-Backed Form <Download size={10} />
                       </a>
                     )}
                   </div>

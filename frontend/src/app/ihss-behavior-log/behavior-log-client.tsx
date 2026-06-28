@@ -1539,7 +1539,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
         className="print-expand"
       >
         <h2 style={{ fontSize: '15pt', textAlign: 'center', marginBottom: '1.5rem', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 'bold' }}>
-          OFFICIAL 24-HOUR BEHAVIOR & SAFETY LOG
+          24-HOUR BEHAVIOR & SAFETY LOG
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '1.5rem', background: '#f8fafc', padding: '1rem', borderRadius: '8px', border: '1px solid #cbd5e1' }}>
           <span><strong>Child Recipient:</strong> {childName}</span>
