@@ -117,10 +117,10 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       sourceNotes: (data.officialSources || []).map((source) => ({
         name: source.name,
         url: source.url,
-        lastReviewedDate: data.lastReviewedDate || null,
+        lastReviewedDate: source.lastReviewedDate || data.lastReviewedDate || null,
         verificationStatus: resolvePublicSourceVerificationStatus(source.verificationStatus, Boolean(source.url?.trim())),
-        sourceType: 'official_form_library',
-        confidenceScore: source.url ? 0.9 : 0.5,
+        sourceType: source.sourceType || null,
+        confidenceScore: typeof source.confidenceScore === 'number' ? source.confidenceScore : null,
       }))
     };
   };
