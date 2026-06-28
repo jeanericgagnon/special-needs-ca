@@ -5,7 +5,7 @@ import {
   CheckCircle, AlertTriangle, ShieldAlert, PhoneCall, Copy, FileText, 
   ChevronRight, Play, Sparkles, Download, CheckSquare 
 } from 'lucide-react';
-import { getIhssMonthlyEstimate, getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
+import { formatIhssHourlyEstimateValue, getIhssMonthlyEstimate, getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
 
 interface IhssMiniProductProps {
   diagnosisName: string;
@@ -315,7 +315,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', lineHeight: '1.5', margin: 0 }}>
                   <strong>Maybe.</strong> A child with <strong>{diagnosisName}</strong> may qualify for California IHSS Protective Supervision if the county finds severe cognitive or behavioral safety risks that require constant monitoring.
                   The county may authorize a parent or relative provider arrangement when it documents that level of need and approves the provider setup.
-                  {' '}In <strong>{activeCountyName}</strong>, we currently show {countyDetails.wage !== null ? <>a checked public county rate estimate of <strong>${countyDetails.wage.toFixed(2)}/hour estimate</strong></> : 'no county-specific rate estimate yet'}.
+                  {' '}In <strong>{activeCountyName}</strong>, we currently show {wageDisclosure?.hourlyRate !== null && wageDisclosure?.hourlyRate !== undefined ? <>a checked public county rate estimate of <strong>{formatIhssHourlyEstimateValue(wageDisclosure)}</strong></> : 'no county-specific rate estimate yet'}.
                   {' '}Actual approved hours and monthly pay depend on the county assessment, current local rate, and authorization.
                 </p>
                 {wageDisclosure && (
@@ -705,7 +705,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
             <CheckSquare size={16} color="var(--primary-color)" /> Need to Auto-Generate custom forms?
           </h4>
           <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: 0 }}>
-            Create a free account to save your child&apos;s safety log, track county deadlines, and auto-populate formal appeals letters.
+            Create a free account to save your child&apos;s safety log, track county deadlines, and generate appeal letter drafts you can review against the current notice and source guidance.
           </p>
         </div>
         <a href="/register" style={{ textDecoration: 'none' }}>

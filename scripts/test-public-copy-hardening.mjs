@@ -19,6 +19,7 @@ const countyDiagnosisPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/ap
 const countiesClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/counties-client.tsx'), 'utf8');
 const countiesStatePage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/page.tsx'), 'utf8');
 const ihssCalculator = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/components/ihss-calculator.tsx'), 'utf8');
+const ihssMiniProduct = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/components/ihss-mini-product.tsx'), 'utf8');
 const appealsClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/appeals-center/appeals-client.tsx'), 'utf8');
 const seoData = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-data.ts'), 'utf8');
 const stateConfigs = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/stateConfigs.ts'), 'utf8');
@@ -279,6 +280,18 @@ assert.match(
   appealsClient,
   /confirm the current Assessment Plan timeline|timeline I understand currently applies/i,
   'Public appeals helper letters should redirect families back to the current timeline that applies to the notice or request.'
+);
+
+assert.doesNotMatch(
+  ihssMiniProduct,
+  /formal appeals letters/i,
+  'Public IHSS helper CTAs should not imply the product emits final-form legal appeal letters.'
+);
+
+assert.match(
+  ihssMiniProduct,
+  /appeal letter drafts/i,
+  'Public IHSS helper CTAs should describe generated appeal content as drafts for family review.'
 );
 
 assert.doesNotMatch(
