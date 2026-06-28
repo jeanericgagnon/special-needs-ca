@@ -33,6 +33,7 @@ for (const relativePath of [
   'frontend/src/app/programs/[slug]/page.tsx',
   'frontend/src/app/situations/[slug]/page.tsx',
   'frontend/src/app/deadlines/[slug]/page.tsx',
+  'frontend/src/app/conditions/[slug]/page.tsx',
   'frontend/src/app/sitemaps/static.xml/route.ts',
 ]) {
   const contents = fs.readFileSync(path.join(repoRoot, relativePath), 'utf8');

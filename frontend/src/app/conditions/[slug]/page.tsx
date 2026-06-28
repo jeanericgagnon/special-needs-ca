@@ -1,15 +1,13 @@
 import { notFound } from 'next/navigation';
-import { SEO_CLUSTERS } from '@/lib/seo-data';
+import { SEO_CLUSTERS, getClusterSourceConfidence } from '@/lib/seo-data';
 import { getCounties } from '@/lib/db';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
-import { getSeoPolicyForRoute, hasOfficialProgramSource } from '@/lib/seo-policy';
+import { getSeoPolicyForRoute, hasOfficialProgramSource, assertNoPlaceholderData } from '@/lib/seo-policy';
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
-
-const CONDITION_SOURCE_CONFIDENCE = 0.85;
 
 export async function generateStaticParams() {
   const params: { slug: string }[] = [];
@@ -34,10 +32,10 @@ export async function generateMetadata({ params }: Props) {
       path: `/conditions/${slug}`,
       diagnosisId: slug,
     }, {
-      hasNoPlaceholderData: true,
+      hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(cluster)),
       hasOfficialSource: Array.isArray(cluster.officialSources) && cluster.officialSources.some((source) => hasOfficialProgramSource(source.url)),
       lastVerifiedDate: cluster.lastReviewedDate || null,
-      confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+      confidenceScore: getClusterSourceConfidence(cluster),
     });
     return {
       title: cluster.metaTitle,
@@ -62,7 +60,7 @@ export async function generateMetadata({ params }: Props) {
       hasNoPlaceholderData: true,
       hasOfficialSource: diagnosisOfficialSources.some((url) => hasOfficialProgramSource(url)),
       lastVerifiedDate: diagnosis.last_verified_date || null,
-      confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+      confidenceScore: null,
     });
     return {
       title: `${diagnosis.name} Benefits in California | Program Guide`,
@@ -142,7 +140,7 @@ export default async function ConditionPage({ params }: Props) {
         url: 'https://www.dds.ca.gov',
         verificationStatus: 'official_verified',
         sourceType: 'official_state',
-        confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+        confidenceScore: null,
         lastReviewedDate: diag.last_verified_date || null,
       },
       {
@@ -150,7 +148,7 @@ export default async function ConditionPage({ params }: Props) {
         url: 'https://www.cde.ca.gov',
         verificationStatus: 'official_verified',
         sourceType: 'official_state',
-        confidenceScore: CONDITION_SOURCE_CONFIDENCE,
+        confidenceScore: null,
         lastReviewedDate: diag.last_verified_date || null,
       }
     ]),
