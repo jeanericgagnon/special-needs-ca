@@ -67,9 +67,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const countyData = await getCountyDetails(p.county);
   const truth = getCountyDiagnosisTruthEligibility(stateId, p.diagnosis, p.county, countyData);
 
-  const sdList = countyData?.schoolDistricts || [];
-  const coList = countyData?.countyOffices || [];
-  const rcList = countyData?.regionalCenters || [];
+  const sdList = (countyData?.schoolDistricts || []).filter(isPublicRecordEligible);
+  const coList = (countyData?.countyOffices || []).filter(isPublicRecordEligible);
+  const rcList = (countyData?.regionalCenters || []).filter(isPublicRecordEligible);
   const rcScores = rcList.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
   const sdScores = sdList.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
   const coScores = coList.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
@@ -78,7 +78,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const hasOfficialSource = rcList.some((rc) => !!rc.source_url) || sdList.some((sd) => !!sd.source_url) || coList.some((co) => !!co.source_url);
   const hasRequiredContactInfo = coList.length > 0;
-  const hasNoPlaceholderData = countyData ? assertNoPlaceholderData(JSON.stringify(countyData)) : false;
+  const publicCountyPayload = countyData
+    ? {
+        ...countyData,
+        schoolDistricts: sdList,
+        countyOffices: coList,
+        regionalCenters: rcList,
+        localOrganizations: (countyData.localOrganizations || []).filter(isPublicDirectoryRecordEligible),
+      }
+    : null;
+  const hasNoPlaceholderData = publicCountyPayload ? assertNoPlaceholderData(JSON.stringify(publicCountyPayload)) : false;
   const hasRealLocalAssets = sdList.length > 0 || coList.length > 0 || rcList.length > 0;
   const lastVerifiedDate = [
     ...rcList.map((rc) => rc.last_verified_date).filter(Boolean),
@@ -135,9 +144,9 @@ export default async function SEOLandingPage({ params }: Props) {
 
   const truth = getCountyDiagnosisTruthEligibility(stateId, p.diagnosis, p.county, countyData);
 
-  const sdList = countyData.schoolDistricts || [];
-  const coList = countyData.countyOffices || [];
-  const rcList = countyData.regionalCenters || [];
+  const sdList = (countyData.schoolDistricts || []).filter(isPublicRecordEligible);
+  const coList = (countyData.countyOffices || []).filter(isPublicRecordEligible);
+  const rcList = (countyData.regionalCenters || []).filter(isPublicRecordEligible);
   const rcScores = rcList.map((rc) => normalizeConfidenceScore(rc.confidence_score)).filter((s: number | null): s is number => s !== null);
   const sdScores = sdList.map((sd) => normalizeConfidenceScore(sd.confidence_score)).filter((s: number | null): s is number => s !== null);
   const coScores = coList.map((co) => normalizeConfidenceScore(co.confidence_score)).filter((s: number | null): s is number => s !== null);
@@ -146,7 +155,14 @@ export default async function SEOLandingPage({ params }: Props) {
 
   const hasOfficialSource = rcList.some((rc) => !!rc.source_url) || sdList.some((sd) => !!sd.source_url) || coList.some((co) => !!co.source_url);
   const hasRequiredContactInfo = coList.length > 0;
-  const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(countyData));
+  const publicCountyPayload = {
+    ...countyData,
+    schoolDistricts: sdList,
+    countyOffices: coList,
+    regionalCenters: rcList,
+    localOrganizations: (countyData.localOrganizations || []).filter(isPublicDirectoryRecordEligible),
+  };
+  const hasNoPlaceholderData = assertNoPlaceholderData(JSON.stringify(publicCountyPayload));
   const hasRealLocalAssets = sdList.length > 0 || coList.length > 0 || rcList.length > 0;
   const lastVerifiedDate = [
     ...rcList.map((rc) => rc.last_verified_date).filter(Boolean),
@@ -177,9 +193,9 @@ export default async function SEOLandingPage({ params }: Props) {
   const programs = await getProgramsForDiagnosis(diagnosisFormatted);
 
   // 3. Compile sources for SourceFreshnessDisclosure
-  const eligibleRegionalCenters = (countyData.regionalCenters || []).filter(isPublicRecordEligible);
-  const eligibleDistricts = (countyData.schoolDistricts || []).filter(isPublicRecordEligible);
-  const eligibleCountyOffices = (countyData.countyOffices || []).filter(isPublicRecordEligible);
+  const eligibleRegionalCenters = rcList;
+  const eligibleDistricts = sdList;
+  const eligibleCountyOffices = coList;
   const eligibleNonprofits = (countyData.localOrganizations || []).filter(isPublicDirectoryRecordEligible);
 
   const freshnessSources = [];

@@ -85,6 +85,14 @@ function getEligibleCountyAuditInputs(county: any) {
     eligibleDistricts.some(sd => !!sd.source_url && String(sd.source_type || '').toLowerCase().startsWith('official')) ||
     eligibleOffices.some(co => !!co.source_url && String(co.source_type || '').toLowerCase().startsWith('official'));
 
+  const publicCountyPayload = {
+    ...county,
+    countyOffices: eligibleOffices,
+    schoolDistricts: eligibleDistricts,
+    regionalCenters: eligibleRegionalCenters,
+    selpas: eligibleSelpas,
+  };
+
   return {
     offices,
     eligibleOffices,
@@ -92,7 +100,7 @@ function getEligibleCountyAuditInputs(county: any) {
     eligibleRegionalCenters,
     eligibleSelpas,
     hasRequiredContactInfo: eligibleOffices.length > 0,
-    hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(county)) && assertNoPlaceholderData(JSON.stringify(offices)),
+    hasNoPlaceholderData: assertNoPlaceholderData(JSON.stringify(publicCountyPayload)),
     lastVerifiedDate: allDates.length > 0 ? allDates.sort().at(-1) : null,
     confidenceScore: allScores.length > 0 ? allScores.reduce((sum, s) => sum + s, 0) / allScores.length : null,
     hasOfficialSource,
