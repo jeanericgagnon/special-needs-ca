@@ -616,7 +616,7 @@ Reference source checked: ${activeIhssDisclosure.sourceUrl} (last checked ${acti
               </div>
 
               <div style={{ borderTop: '1px solid #eee', paddingTop: '1rem', display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1rem', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}><strong>County Rate Estimate:</strong> Adjust this to your county&apos;s current caregiver rate. We start with a checked estimate for {activeIhssCountyName} County and you should confirm the latest public county rate before relying on the payout math.</span>
+                <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}><strong>Checked county estimate:</strong> We start with a checked estimate for {activeIhssCountyName} County. Change the field only if you want a private planning override, and confirm the latest public county rate before relying on the payout math.</span>
                 <input type="number" step="0.05" value={ihssWage} onChange={(e) => setIhssWage(Math.max(16, parseFloat(e.target.value) || DEFAULT_CA_IHSS_ESTIMATE_HOURLY))} style={{ padding: '0.3rem', fontSize: '0.8rem', borderRadius: '4px', border: '1px solid #ccc' }} />
               </div>
               <span style={{ fontSize: '0.72rem', color: 'var(--text-light)', display: 'block', marginTop: '0.5rem' }}>
@@ -624,7 +624,7 @@ Reference source checked: ${activeIhssDisclosure.sourceUrl} (last checked ${acti
                 <a href={activeIhssDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>
                   {formatIhssEstimateSourceLabel(activeIhssDisclosure)}
                 </a>
-                {' '}• Last checked {activeIhssDisclosure.lastVerifiedDate}. {activeIhssDisclosure.explanation}
+                {' '}• Last checked {activeIhssDisclosure.lastVerifiedDate}. Checked estimate: {activeIhssDisclosure.hourlyRate !== null ? `$${activeIhssDisclosure.hourlyRate.toFixed(2)}/hour estimate.` : 'Still being verified.'} {activeIhssDisclosure.explanation}
               </span>
             </div>
 

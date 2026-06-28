@@ -127,8 +127,6 @@ export default function BehaviorLogClient() {
       const savedParamedicalHours = localStorage.getItem('ihss_paramedical_hours');
       const savedParamedicalDesc = localStorage.getItem('ihss_paramedical_desc');
       const savedSupervision = localStorage.getItem('ihss_requires_supervision');
-      const savedWage = localStorage.getItem('ihss_wage') || localStorage.getItem('funding_ihss_wage');
-
       if (savedFeeding) setFeedingRank(parseInt(savedFeeding));
       if (savedBowel) setBowelBladderRank(parseInt(savedBowel));
       if (savedBathing) setBathingOralRank(parseInt(savedBathing));
@@ -138,7 +136,6 @@ export default function BehaviorLogClient() {
       if (savedParamedicalHours) setParamedicalHours(parseFloat(savedParamedicalHours));
       if (savedParamedicalDesc) setParamedicalDesc(savedParamedicalDesc);
       if (savedSupervision) setRequiresSupervision(savedSupervision === 'true');
-      if (savedWage) setIhssWage(parseFloat(savedWage));
 
       const savedRecipientCount = localStorage.getItem('ihss_recipient_count');
       const savedMonthlyHours1 = localStorage.getItem('ihss_monthly_hours_1');
@@ -1002,10 +999,10 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                 {/* County Wage Settings */}
                 <div style={{ borderTop: '1px solid rgba(0,0,0,0.04)', paddingTop: '1rem', display: 'grid', gridTemplateColumns: '1fr 120px', gap: '1rem', alignItems: 'flex-end' }}>
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
-                    <strong>IHSS County Rate Estimate:</strong> Change this to match your county&apos;s current hourly provider rate. This standalone tool starts with a checked estimate for {defaultIhssDisclosure.countyName} County because it does not know your county yet, and you should confirm the latest public county rate before relying on any payout math.
+                    <strong>Checked default estimate:</strong> This standalone tool starts with a checked estimate for {defaultIhssDisclosure.countyName} County because it does not know your county yet. Use the override field only for private planning math, and confirm your own county&apos;s latest public rate before relying on any payout estimate.
                   </div>
                   <div className="input-group" style={{ marginBottom: 0 }}>
-                    <label style={{ fontSize: '0.75rem' }}>Wage / Hour ($)</label>
+                    <label style={{ fontSize: '0.75rem' }}>Planning wage override ($/hour)</label>
                     <input
                       type="number"
                       step="0.05"
@@ -1021,7 +1018,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                   <a href={defaultIhssDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>
                     public county wage reference
                   </a>
-                  {' '}• Last checked {defaultIhssDisclosure.lastVerifiedDate}. {defaultIhssDisclosure.explanation}
+                  {' '}• Last checked {defaultIhssDisclosure.lastVerifiedDate}. Default checked estimate: ${defaultIhssDisclosure.hourlyRate?.toFixed(2)}/hour estimate. {defaultIhssDisclosure.explanation}
                 </div>
 
               </div>

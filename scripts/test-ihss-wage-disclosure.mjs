@@ -73,7 +73,9 @@ const dashboardPanelSource = fs.readFileSync(
 );
 assert.match(dashboardPanelSource, /getIhssWageDisclosure/);
 assert.match(dashboardPanelSource, /activeIhssDisclosure/);
-assert.match(dashboardPanelSource, /checked estimate for \{activeIhssCountyName\} County/i);
+assert.match(dashboardPanelSource, /checked county estimate/i);
+assert.match(dashboardPanelSource, /private planning override/i);
+assert.match(dashboardPanelSource, /Checked estimate: .*hour estimate/i);
 
 const countyBenefitsPageSource = fs.readFileSync(
   path.join(repoRoot, 'frontend/src/app/benefits/[state]/[[...slug]]/page.tsx'),
@@ -89,8 +91,11 @@ const behaviorLogSource = fs.readFileSync(
   'utf8',
 );
 assert.match(behaviorLogSource, /does not know your county yet/i);
+assert.match(behaviorLogSource, /planning wage override/i);
+assert.match(behaviorLogSource, /Default checked estimate:/i);
 assert.match(behaviorLogSource, /\$\{ihssWage\.toFixed\(2\)\}\/hour estimate/);
 assert.doesNotMatch(behaviorLogSource, /\$\{ihssWage\.toFixed\(2\)\}\/hr estimate/);
+assert.doesNotMatch(behaviorLogSource, /localStorage\.getItem\('ihss_wage'\)/);
 
 const ihssMiniProductSource = fs.readFileSync(
   path.join(repoRoot, 'frontend/src/app/benefits/components/ihss-mini-product.tsx'),
