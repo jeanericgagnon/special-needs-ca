@@ -407,7 +407,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
                       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <span>County IHSS Rate Estimate:</span>
                         <strong style={{ color: countyWageDisclosure.hourlyRate ? '#10b981' : 'var(--text-main)' }}>
-                          {countyWageDisclosure.hourlyRate ? `$${countyWageDisclosure.hourlyRate.toFixed(2)}/hr` : 'Still being verified'}
+                          {countyWageDisclosure.hourlyRate ? `$${countyWageDisclosure.hourlyRate.toFixed(2)}/hour estimate` : 'Still being verified'}
                         </strong>
                       </div>
                       <span style={{ color: 'var(--text-light)', lineHeight: 1.4 }}>

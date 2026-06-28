@@ -62,14 +62,14 @@ export function TrustBadge({
     badgeLabel = entityType === 'advocate'
       ? 'Source-backed checked listing — confirm fit and credentials locally'
       : isOfficialSourceType
-      ? 'Source-backed checked official contact'
+      ? 'Source-backed checked public contact'
       : 'Source-backed checked contact listing';
     badgeIcon = <ShieldCheck size={14} color={reviewDisplay.color} />;
   } else if (hasReviewableSource && normStatus === 'source_listed') {
     badgeColor = reviewDisplay.color;
     badgeBg = reviewDisplay.background;
     badgeLabel = isOfficialSourceType
-      ? 'Official source linked'
+      ? 'Official public source linked'
       : reviewDisplay.label;
     badgeIcon = <Shield size={14} color={reviewDisplay.color} />;
   } else if (normStatus === 'generated_county_fallback') {
