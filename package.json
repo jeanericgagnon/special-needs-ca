@@ -293,6 +293,7 @@
     "audit:nonprofit-accessibility-domain": "node src/db/validate_nonprofit_accessibility_domain_evidence.js",
     "audit:seo-launch-ca": "node src/db/audit_seo_launch_ca.js",
     "test:directory-analytics": "node --experimental-strip-types scripts/test-directory-analytics.mjs",
+    "test:condition-page-trust-hardening": "node scripts/test-condition-page-trust-hardening.mjs",
     "test:county-truth-gating": "node scripts/test-county-truth-gating.mjs",
     "test:county-details-public-sanitization": "node scripts/test-county-details-public-sanitization.mjs",
     "test:county-seo-helper-sanitization": "node scripts/test-county-seo-helper-sanitization.mjs",

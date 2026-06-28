@@ -4,6 +4,7 @@ import { getCounties } from '@/lib/db';
 import { DIAGNOSES_DETAILS } from '@/lib/diagnoses';
 import AnswerPage from '@/app/components/answer-page';
 import { getSeoPolicyForRoute, hasOfficialProgramSource, assertNoPlaceholderData } from '@/lib/seo-policy';
+import { resolvePublicSourceVerificationStatus } from '@/lib/sourceReviewLabels';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -97,7 +98,7 @@ export default async function ConditionPage({ params }: Props) {
   const dynamicData = {
     slug: slug,
     category: 'conditions' as const,
-    title: `${diag.name} Benefits in California: Complete Parent Guide`,
+    title: `${diag.name} Benefits in California: Parent Guide`,
     metaTitle: `${diag.name} Benefits California | Lanterman Act & School Aid`,
     metaDescription: `Discover which California public benefits, therapies, and school support plans may apply for children with ${diag.name}, with source-backed next-step guidance.`,
     quickAnswer: `${diag.parent_friendly_explanation} In California, children with ${diag.name} may qualify for specialized public benefit and school-support pathways depending on their diagnosis details, functional needs, and current program rules. That can include IEP evaluations in public schools, Regional Center review under the Lanterman Act when developmental criteria are met, Medi-Cal, and Supplemental Security Income (SSI).`,
@@ -125,7 +126,7 @@ export default async function ConditionPage({ params }: Props) {
     whoToCall: [
       { name: 'California DDS Intake Liaison', number: '(916) 654-1690', description: 'State developmental services office.' }
     ],
-    whatToSay: `My child has a diagnosis of ${diag.name} and I would like to schedule an intake assessment to establish qualifying services.`,
+    whatToSay: `My child has a diagnosis of ${diag.name} and I would like to schedule an intake assessment to understand the available services and next steps.`,
     commonMistakes: [
       'Waiting for the school to suggest assessments. You must request them in writing to start the 15-day timeline.',
       'Assuming income alone settles Medi-Cal eligibility without checking child-specific pathways, waiver rules, or other current exceptions.'
@@ -138,7 +139,7 @@ export default async function ConditionPage({ params }: Props) {
       {
         name: 'California Department of Developmental Services',
         url: 'https://www.dds.ca.gov',
-        verificationStatus: 'official_verified',
+        verificationStatus: resolvePublicSourceVerificationStatus(null, true),
         sourceType: 'official_state',
         confidenceScore: null,
         lastReviewedDate: diag.last_verified_date || null,
@@ -146,7 +147,7 @@ export default async function ConditionPage({ params }: Props) {
       {
         name: 'California Department of Education',
         url: 'https://www.cde.ca.gov',
-        verificationStatus: 'official_verified',
+        verificationStatus: resolvePublicSourceVerificationStatus(null, true),
         sourceType: 'official_state',
         confidenceScore: null,
         lastReviewedDate: diag.last_verified_date || null,
