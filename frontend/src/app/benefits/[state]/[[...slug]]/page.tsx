@@ -28,7 +28,7 @@ import CaliforniaMap from '@/app/components/california-map';
 import IhssMiniProduct from '@/app/benefits/components/ihss-mini-product';
 import { getDynamicStateConfig } from '@/lib/stateConfigs';
 import { StateCoverageBadge } from '@/components/state-coverage-badge';
-import { getCountyDiagnosisTruthEligibility, isIndexableState, isPublicCountyOfficeEligible, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
+import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState, isPublicCountyOfficeEligible, isPublicDirectoryRecordEligible, isPublicRecordEligible, VERIFIED_DIAGNOSIS_SLUGS } from '@/lib/publicTruth';
 import { stateGapReason, evaluateSeoPolicy, getSeoPolicyForRoute, normalizeConfidenceScore, assertNoPlaceholderData } from '@/lib/seo-policy';
 import { getPartialStatePolicy, isLaunchSurfaceSuppressed } from '@/lib/launchStatePolicy';
 import { CANONICAL_SITE_URL } from '@/lib/site-url';
@@ -67,6 +67,36 @@ function LocalVerificationNotice({
           targetName={targetName}
           buttonLabel="Suggest a local source to review"
         />
+      </div>
+    </div>
+  );
+}
+
+function CountyVerificationPendingBanner({
+  countyName,
+}: {
+  countyName: string;
+}) {
+  return (
+    <div style={{ background: 'linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%)', border: '1px solid #fde68a', borderRadius: '16px', padding: '1rem 1.1rem', color: '#92400e', fontSize: '0.9rem' }}>
+      <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+        <span>⚠️</span>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+          <div>
+            <strong style={{ display: 'block', fontSize: '0.95rem', marginBottom: '0.15rem' }}>We are still verifying local entries</strong>
+            <p style={{ margin: 0, lineHeight: 1.5 }}>
+              Some local routing or office details for {countyName} County are still under review. We keep thin local sections noindexed and only show public records that pass the current source and trust checks.
+            </p>
+          </div>
+          <div>
+            <ContributionModal
+              suggestionType="other"
+              targetId={`${countyName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-county-verification`}
+              targetName={`${countyName} County local verification`}
+              buttonLabel="Suggest a local source to review"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -1043,7 +1073,8 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         lastVerifiedDate: countyHubLastVerifiedDate,
         confidenceScore: countyHubConfidenceScore
       });
-      const isIndexable = countyHubPolicy.index;
+      const countyTruth = getCountyTruthEligibility(stateData.id, policyCountyDetails);
+      const isIndexable = countyTruth.indexSafe && countyHubPolicy.index;
       const eligibleRegionalCenters = ((policyCountyDetails.regionalCenters || []) as Array<any>).filter(isPublicRecordEligible);
       const eligibleCountyOffices = ((policyCountyDetails.countyOffices || []) as Array<any>).filter(isPublicCountyOfficeEligible);
       const eligibleSchoolDistricts = ((policyCountyDetails.schoolDistricts || []) as Array<any>).filter(isPublicRecordEligible);
@@ -1179,6 +1210,12 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               />
             </div>
           </div>
+
+          {!countyTruth.publicSafe && (
+            <div style={{ marginBottom: '2rem' }}>
+              <CountyVerificationPendingBanner countyName={countyDetails.name} />
+            </div>
+          )}
 
           {/* 2-Column Grid Layout */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: '2rem', alignItems: 'flex-start' }} className="answer-grid-layout">

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getCounties, getBulkCountyDetails, getProgramsForDiagnosis, getAllStates, County, Program, navigatorDb, RegionalCenter, SchoolDistrict, CountyOffice } from '@/lib/db';
-import { getCountyDiagnosisTruthEligibility, isIndexableState } from '@/lib/publicTruth';
+import { getCountyDiagnosisTruthEligibility, getCountyTruthEligibility, isIndexableState } from '@/lib/publicTruth';
 import { getSeoPolicyForRoute, shouldIncludeInSitemap, assertNoPlaceholderData, normalizeConfidenceScore, SEO_STATE_ALLOWLIST } from '@/lib/seo-policy';
 import { CANONICAL_SITE_URL } from '@/lib/site-url';
 
@@ -48,6 +48,8 @@ export async function GET() {
   const counties = allCounties.filter(c => {
     const details = countyDetailsMap.get(c.id);
     if (!details) return false;
+    const countyTruth = getCountyTruthEligibility(c.state_id || 'california', details);
+    if (!countyTruth.indexSafe) return false;
 
     const offices = details.countyOffices || [];
     const countyDistricts = details.schoolDistricts || [];
