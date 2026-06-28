@@ -27,30 +27,41 @@ interface WizardClientProps {
 
 type WizardStep = 1 | 2 | 3 | 4 | 5;
 
+const WIZARD_SOURCE_CONFIDENCE = 0.94;
+const WIZARD_LAST_REVIEWED_DATE = '2026-06-27';
+
 const WIZARD_DISCLOSURE_SOURCES = [
   {
     name: 'California Department of Social Services IHSS program information',
     url: 'https://www.cdss.ca.gov/in-home-supportive-services',
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
+    confidenceScore: WIZARD_SOURCE_CONFIDENCE,
+    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Developmental Services regional center information',
     url: 'https://www.dds.ca.gov/rc/',
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
+    confidenceScore: WIZARD_SOURCE_CONFIDENCE,
+    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Education special education information',
     url: 'https://www.cde.ca.gov/sp/se/',
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
+    confidenceScore: WIZARD_SOURCE_CONFIDENCE,
+    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
   },
   {
     name: 'California Department of Health Care Services Medi-Cal for Kids & Teens',
     url: 'https://www.dhcs.ca.gov/services/medi-cal/eligibility/Pages/Children.aspx',
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
+    confidenceScore: WIZARD_SOURCE_CONFIDENCE,
+    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
   },
 ];
 
@@ -1391,7 +1402,7 @@ export default function WizardClient({ counties, diagnosesList, waitlists }: Wiz
                             className="btn-primary" 
                             style={{ width: 'auto', padding: '0.5rem 1rem', fontSize: '0.8rem', borderRadius: '8px', display: 'inline-flex', gap: '0.3rem' }}
                           >
-                            <Globe size={14} /> Official Site
+                            <Globe size={14} /> Source Page
                           </a>
                         )}
                       </div>

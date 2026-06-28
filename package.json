@@ -297,6 +297,7 @@
     "test:county-truth-gating": "node scripts/test-county-truth-gating.mjs",
     "test:county-details-public-sanitization": "node scripts/test-county-details-public-sanitization.mjs",
     "test:county-seo-helper-sanitization": "node scripts/test-county-seo-helper-sanitization.mjs",
+    "test:wizard-provenance-hardening": "node scripts/test-wizard-provenance-hardening.mjs",
     "test:directory-foundation": "node --experimental-strip-types scripts/test-directory-foundation.mjs",
     "test:public-copy-hardening": "node scripts/test-public-copy-hardening.mjs",
     "test:public-directory-sample-gating": "node scripts/test-public-directory-sample-gating.mjs",
