@@ -25,6 +25,8 @@ export type IhssCountyEstimateRecord = {
 export const CA_IHSS_WAGE_SOURCE_URL = 'https://galtadvocacy.com/ihss-wages-by-county/';
 export const CA_IHSS_WAGE_LAST_VERIFIED_DATE = '2026-06-20';
 export const CA_IHSS_WAGE_FALLBACK_URL = 'https://www.cdss.ca.gov/inforesources/county-ihss-offices';
+export const CA_IHSS_WAGE_SOURCE_LABEL = 'Reviewed public county wage estimate';
+export const CA_IHSS_WAGE_FALLBACK_LABEL = 'Official county IHSS office directory';
 export const CA_IHSS_WAGE_SOURCE_NOTE =
   'This estimate is compiled from a reviewed public California county IHSS wage reference last checked on 2026-06-20. It is not an official county pay notice or county guarantee. Confirm the current rate with the county IHSS office before relying on it.';
 
@@ -142,18 +144,20 @@ export function getIhssWageDisclosure(
   }
 
   const countyId = normalizeCountyId(countyIdOrName);
-  const staticRate = CA_IHSS_STATIC_WAGES[countyId];
-  const effectiveRate = countyRate !== null && countyRate !== undefined && Number.isFinite(countyRate) && countyRate > 0
-    ? countyRate
-    : staticRate ?? null;
+  const checkedRecord = getCaIhssCountyEstimateRecord(countyId);
+  const hasConflictingStoredRate =
+    Number.isFinite(countyRate ?? null) &&
+    (countyRate ?? null) !== null &&
+    checkedRecord !== null &&
+    Math.abs((countyRate as number) - checkedRecord.hourlyRate) > 0.0001;
 
-  if (effectiveRate === null) {
+  if (!checkedRecord) {
     return {
       countyId,
       countyName,
       hourlyRate: null,
       sourceUrl: CA_IHSS_WAGE_FALLBACK_URL,
-      sourceLabel: 'Official county IHSS office directory',
+      sourceLabel: CA_IHSS_WAGE_FALLBACK_LABEL,
       officialConfirmUrl: CA_IHSS_WAGE_FALLBACK_URL,
       lastVerifiedDate: CA_IHSS_WAGE_LAST_VERIFIED_DATE,
       isEstimate: true,
@@ -166,17 +170,16 @@ export function getIhssWageDisclosure(
   return {
     countyId,
     countyName,
-    hourlyRate: effectiveRate,
-    sourceUrl: CA_IHSS_WAGE_SOURCE_URL,
-    sourceLabel: 'Reviewed non-official county wage reference',
-    officialConfirmUrl: CA_IHSS_WAGE_FALLBACK_URL,
-    lastVerifiedDate: CA_IHSS_WAGE_LAST_VERIFIED_DATE,
-    isEstimate: true,
-    fallbackUsed: countyRate === null || countyRate === undefined || !Number.isFinite(countyRate) || countyRate <= 0,
-    explanation:
-      countyRate !== null && countyRate !== undefined && Number.isFinite(countyRate) && countyRate > 0
-        ? CA_IHSS_WAGE_SOURCE_NOTE
-        : 'This is an estimate from a reviewed California county IHSS wage reference. County provider pay can change, so confirm the current rate with the local IHSS office before using it.',
+    hourlyRate: checkedRecord.hourlyRate,
+    sourceUrl: checkedRecord.sourceUrl,
+    sourceLabel: CA_IHSS_WAGE_SOURCE_LABEL,
+    officialConfirmUrl: checkedRecord.officialConfirmUrl,
+    lastVerifiedDate: checkedRecord.lastVerifiedDate,
+    isEstimate: checkedRecord.isEstimate,
+    fallbackUsed: false,
+    explanation: hasConflictingStoredRate
+      ? `${CA_IHSS_WAGE_SOURCE_NOTE} We ignored a conflicting stored county value and kept the checked public estimate for consistent public display.`
+      : checkedRecord.explanation,
   };
 }
 
@@ -190,10 +193,10 @@ export function getDefaultCaIhssWageDisclosure(): IhssWageDisclosure {
 }
 
 export function formatIhssEstimateSourceLabel(disclosure: IhssWageDisclosure | null): string {
-  if (!disclosure) return 'official county IHSS office directory';
+  if (!disclosure) return CA_IHSS_WAGE_FALLBACK_LABEL;
   return disclosure.fallbackUsed
-    ? 'official county IHSS office directory'
-    : 'reviewed non-official county wage reference';
+    ? CA_IHSS_WAGE_FALLBACK_LABEL
+    : CA_IHSS_WAGE_SOURCE_LABEL;
 }
 
 export function formatIhssEstimateSummary(disclosure: IhssWageDisclosure | null): string {

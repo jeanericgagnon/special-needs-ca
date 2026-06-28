@@ -3,6 +3,7 @@ import {
   CA_IHSS_COUNTY_ESTIMATES,
   DEFAULT_CA_IHSS_ESTIMATE_HOURLY,
   DEFAULT_CA_IHSS_ESTIMATE_COUNTY_ID,
+  CA_IHSS_WAGE_SOURCE_LABEL,
   getDefaultCaIhssWageDisclosure,
   getIhssMonthlyEstimate,
   getIhssWageDisclosure,
@@ -13,7 +14,8 @@ assert.ok(losAngeles);
 assert.equal(losAngeles.countyId, DEFAULT_CA_IHSS_ESTIMATE_COUNTY_ID);
 assert.equal(losAngeles.hourlyRate, 19.64);
 assert.equal(losAngeles.isEstimate, true);
-assert.equal(losAngeles.fallbackUsed, true);
+assert.equal(losAngeles.fallbackUsed, false);
+assert.equal(losAngeles.sourceLabel, CA_IHSS_WAGE_SOURCE_LABEL);
 
 const countyOverride = getIhssWageDisclosure('california', 'los-angeles', 'Los Angeles', 19.64);
 assert.ok(countyOverride);
@@ -21,16 +23,27 @@ assert.equal(countyOverride.hourlyRate, 19.64);
 assert.equal(countyOverride.fallbackUsed, false);
 assert.equal(getIhssMonthlyEstimate(countyOverride, 283), 5558.12);
 
+const conflictingOverride = getIhssWageDisclosure('california', 'los-angeles', 'Los Angeles', 18);
+assert.ok(conflictingOverride);
+assert.equal(conflictingOverride.hourlyRate, 19.64);
+assert.equal(conflictingOverride.fallbackUsed, false);
+assert.match(conflictingOverride.explanation, /ignored a conflicting stored county value/i);
+
 const unknownCounty = getIhssWageDisclosure('california', 'unknown-county', 'Unknown County', null);
 assert.ok(unknownCounty);
 assert.equal(unknownCounty.hourlyRate, null);
 assert.equal(unknownCounty.fallbackUsed, true);
 assert.match(unknownCounty.explanation, /still verifying/i);
 
+const unknownCountyOverride = getIhssWageDisclosure('california', 'unknown-county', 'Unknown County', 22.5);
+assert.ok(unknownCountyOverride);
+assert.equal(unknownCountyOverride.hourlyRate, null);
+assert.equal(unknownCountyOverride.fallbackUsed, true);
+
 const defaultDisclosure = getDefaultCaIhssWageDisclosure();
 assert.equal(defaultDisclosure.hourlyRate, DEFAULT_CA_IHSS_ESTIMATE_HOURLY);
 assert.equal(defaultDisclosure.countyId, DEFAULT_CA_IHSS_ESTIMATE_COUNTY_ID);
-assert.match(defaultDisclosure.explanation, /public California county IHSS wage directory|checked California estimate/i);
+assert.match(defaultDisclosure.explanation, /reviewed public California county IHSS wage reference|checked California estimate/i);
 assert.equal(CA_IHSS_COUNTY_ESTIMATES.some((row) => row.countyId === 'los-angeles' && row.hourlyRate === 19.64), true);
 
 const nonCalifornia = getIhssWageDisclosure('texas', 'harris-tx', 'Harris', null);
