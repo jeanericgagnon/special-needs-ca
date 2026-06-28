@@ -116,6 +116,7 @@ for (const route of provenanceBackedRoutes) {
 const countiesStateHub = read('frontend/src/app/counties/[state]/page.tsx');
 const homepage = read('frontend/src/app/page.tsx');
 const findHelpPage = read('frontend/src/app/find-help/page.tsx');
+const answerPage = read('frontend/src/app/components/answer-page.tsx');
 
 assert.match(
   countiesStateHub,
@@ -139,6 +140,18 @@ assert.match(
   homepage,
   /correctionButtonLabel="Report a homepage source issue"/,
   'Homepage provenance disclosure should include a direct public correction CTA.',
+);
+
+assert.match(
+  answerPage,
+  /This summary is informational, may include estimates, and should be checked against the linked public sources before you act on it\./,
+  'AnswerPage should include an explicit public disclaimer on the quick-answer surface before families rely on the summary.',
+);
+
+assert.match(
+  answerPage,
+  /Suggest a public source to review/,
+  'AnswerPage should offer a public source-suggestion CTA when direct source-backed evidence is still missing.',
 );
 
 assert.match(

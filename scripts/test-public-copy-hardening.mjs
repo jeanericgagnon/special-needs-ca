@@ -191,6 +191,12 @@ assert.match(
 
 assert.match(
   answerPage,
+  /This summary is informational, may include estimates, and should be checked against the linked public sources before you act on it\./,
+  'Public answer guides should carry an explicit summary disclaimer before families rely on the quick-answer callout.'
+);
+
+assert.match(
+  answerPage,
   /Suggest a county office source/,
   'County lookup fallback copy should offer a direct county-office source suggestion CTA when local contacts are still under review.'
 );
