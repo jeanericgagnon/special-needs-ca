@@ -16,20 +16,20 @@ assert.match(
 
 assert.match(
   wizardSource,
-  /const WIZARD_LAST_REVIEWED_DATE = '2026-06-27';/,
-  'The public benefits matcher should declare an explicit last-reviewed date for its disclosure sources.'
-);
-
-assert.match(
-  wizardSource,
   /confidenceScore: WIZARD_SOURCE_CONFIDENCE,/,
   'Each matcher disclosure source should expose a confidence score.'
 );
 
+assert.doesNotMatch(
+  wizardSource,
+  /lastReviewedDate:\s*['"]20\d{2}-\d{2}-\d{2}['"]/,
+  'The public benefits matcher should not advertise a hardcoded synthetic last-reviewed date.'
+);
+
 assert.match(
   wizardSource,
-  /lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,/,
-  'Each matcher disclosure source should expose a last-reviewed date.'
+  /lastReviewedDate:\s*CORE_CA_LAUNCH_REVIEWED_DATE,/,
+  'The public benefits matcher should inherit an evidence-derived reviewed date for launch disclosures.'
 );
 
 assert.doesNotMatch(

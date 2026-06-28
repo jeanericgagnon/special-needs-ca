@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import LaunchToolLanding from '@/app/components/launch-tool-landing';
+import { REGIONAL_CENTER_LAUNCH_REVIEWED_DATE } from '@/lib/launchSurfaceReviewDates';
 
 const SOURCE_CONFIDENCE = 0.95;
-const DDS_TOOL_LAST_REVIEWED_DATE = '2026-06-27';
 
 const sources = [
   {
@@ -11,7 +11,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: DDS_TOOL_LAST_REVIEWED_DATE,
+    lastReviewedDate: REGIONAL_CENTER_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'California Lanterman Act and consumer rights resources',
@@ -19,7 +19,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: DDS_TOOL_LAST_REVIEWED_DATE,
+    lastReviewedDate: REGIONAL_CENTER_LAUNCH_REVIEWED_DATE,
   },
 ];
 

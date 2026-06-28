@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import LaunchToolLanding from '@/app/components/launch-tool-landing';
+import { CORE_CA_LAUNCH_REVIEWED_DATE } from '@/lib/launchSurfaceReviewDates';
 
 const SOURCE_CONFIDENCE = 0.95;
-const BENEFITS_LAST_REVIEWED_DATE = '2026-06-27';
 
 const sources = [
   {
@@ -11,7 +11,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: BENEFITS_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'Social Security Administration SSI for children',
@@ -19,7 +19,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: BENEFITS_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'U.S. Department of Education IDEA information',
@@ -27,7 +27,7 @@ const sources = [
     verificationStatus: 'official_verified',
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: BENEFITS_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
 ];
 

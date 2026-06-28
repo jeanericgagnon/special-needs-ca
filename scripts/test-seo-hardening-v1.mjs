@@ -110,6 +110,7 @@ assert.equal(
   false,
   'public county hub IHSS source label must not imply an official county-office source when using a non-official wage reference'
 );
+
 assert.equal(
   /source_url\s*\|\|\s*.*website/.test(publicCountyDiagnosisSource),
   false,
@@ -147,6 +148,36 @@ const homepageSource = fs.readFileSync(
 );
 const layoutSource = fs.readFileSync(
   new URL('../frontend/src/app/layout.tsx', import.meta.url),
+  'utf8'
+);
+assert.equal(
+  layoutSource.includes('href="/benefits/programs"'),
+  false,
+  'global navigation should not link to the dead /benefits/programs route'
+);
+assert.equal(
+  layoutSource.includes('href="/benefits"'),
+  true,
+  'global navigation should point Benefits/Guides traffic to the live benefits hub'
+);
+const siteUrlSource = fs.readFileSync(
+  new URL('../frontend/src/lib/site-url.ts', import.meta.url),
+  'utf8'
+);
+const sitemapIndexSource = fs.readFileSync(
+  new URL('../frontend/src/app/sitemap.xml/route.ts', import.meta.url),
+  'utf8'
+);
+const staticSitemapSource = fs.readFileSync(
+  new URL('../frontend/src/app/sitemaps/static.xml/route.ts', import.meta.url),
+  'utf8'
+);
+const countiesSitemapSource = fs.readFileSync(
+  new URL('../frontend/src/app/sitemaps/counties.xml/route.ts', import.meta.url),
+  'utf8'
+);
+const robotsSource = fs.readFileSync(
+  new URL('../frontend/src/app/robots.ts', import.meta.url),
   'utf8'
 );
 const directoryPanelSource = fs.readFileSync(
@@ -244,6 +275,48 @@ assert.equal(
   layoutSource.includes('verified or gated surfaces'),
   false,
   'layout metadata should avoid stronger verified/gated public launch branding'
+);
+assert.equal(
+  siteUrlSource.includes("export const CANONICAL_SITE_URL = 'https://ablefull.org';"),
+  true,
+  'canonical site URL should stay pinned to the production ablefull.org host'
+);
+assert.equal(
+  /vercel\.app|VERCEL_URL/.test([
+    siteUrlSource,
+    layoutSource,
+    sitemapIndexSource,
+    staticSitemapSource,
+    countiesSitemapSource,
+    robotsSource,
+  ].join('\n')),
+  false,
+  'metadata, robots, and sitemap sources must not leak preview-domain canonicals'
+);
+assert.equal(
+  layoutSource.includes('metadataBase: new URL(SITE_URL)'),
+  true,
+  'layout metadata should derive metadataBase from the shared canonical site URL'
+);
+assert.equal(
+  sitemapIndexSource.includes('const baseUrl = CANONICAL_SITE_URL;'),
+  true,
+  'sitemap index should derive loc values from the shared canonical site URL'
+);
+assert.equal(
+  staticSitemapSource.includes('const baseUrl = CANONICAL_SITE_URL;'),
+  true,
+  'static sitemap should derive loc values from the shared canonical site URL'
+);
+assert.equal(
+  countiesSitemapSource.includes('const baseUrl = CANONICAL_SITE_URL;'),
+  true,
+  'counties sitemap should derive loc values from the shared canonical site URL'
+);
+assert.equal(
+  robotsSource.includes('const baseUrl = CANONICAL_SITE_URL;'),
+  true,
+  'robots route should derive sitemap and host from the shared canonical site URL'
 );
 assert.equal(
   editorialDisclosureSource.includes('Verification Status Pending'),

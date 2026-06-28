@@ -239,6 +239,112 @@ const stateAgencyCols = checkDb.prepare('PRAGMA table_info(state_resource_agenci
 assert.equal(schoolDistrictCols.includes('display_status'), true);
 assert.equal(stateAgencyCols.includes('display_status'), true);
 
+const liveDbPath = path.resolve('frontend/ca_disability_navigator.db');
+const liveDb = new Database(liveDbPath, { readonly: true });
+const publicDirectoryTables = [
+  'county_offices',
+  'school_districts',
+  'state_resource_agencies',
+  'nonprofit_organizations',
+  'iep_advocates',
+  'resource_providers',
+];
+
+function isPlaceholderPhone(value) {
+  const trimmed = String(value || '').trim();
+  if (!trimmed) return false;
+  const digits = trimmed.replace(/\D/g, '');
+  if (digits.length < 10) return true;
+  if (digits.startsWith('555') || digits.slice(3, 6) === '555') return true;
+  if (/^(\d)\1+$/.test(digits)) return true;
+  if (digits.endsWith('1234') || digits.endsWith('0000')) return true;
+  return false;
+}
+
+function isPlaceholderEmail(value) {
+  const trimmed = String(value || '').trim().toLowerCase();
+  if (!trimmed) return false;
+  return trimmed.includes('example.');
+}
+
+for (const table of publicDirectoryTables) {
+  const columns = new Set(
+    liveDb.prepare(`PRAGMA table_info(${table})`).all().map((row) => row.name),
+  );
+  const rows = liveDb.prepare(`
+    SELECT *
+    FROM ${table}
+    WHERE COALESCE(display_status, 'published') = 'published'
+  `).all();
+
+  const phoneFields = [
+    columns.has('phone') ? 'phone' : null,
+    columns.has('intake_phone') ? 'intake_phone' : null,
+    columns.has('next_step_phone') ? 'next_step_phone' : null,
+    columns.has('spec_ed_contact_phone') ? 'spec_ed_contact_phone' : null,
+  ].filter(Boolean);
+
+  const emailFields = [
+    columns.has('email') ? 'email' : null,
+    columns.has('next_step_email') ? 'next_step_email' : null,
+    columns.has('spec_ed_contact_email') ? 'spec_ed_contact_email' : null,
+  ].filter(Boolean);
+
+  const placeholderPhoneCount = rows.filter((row) =>
+    phoneFields.some((field) => isPlaceholderPhone(row[field])),
+  ).length;
+
+  assert.equal(
+    placeholderPhoneCount,
+    0,
+    `${table} should not expose published rows with placeholder 555-style phones in the active app DB`,
+  );
+
+  const placeholderEmailCount = rows.filter((row) =>
+    emailFields.some((field) => isPlaceholderEmail(row[field])),
+  ).length;
+
+  assert.equal(
+    placeholderEmailCount,
+    0,
+    `${table} should not expose published rows with placeholder example-style emails in the active app DB`,
+  );
+
+  const placeholderSourceCount = liveDb.prepare(`
+    SELECT COUNT(*) AS count
+    FROM ${table}
+    WHERE COALESCE(display_status, 'published') = 'published'
+      AND (
+        source_url LIKE 'https://www.google.com/search%'
+        OR source_url LIKE 'https://google.com/search%'
+        OR source_url LIKE '%example.com%'
+        OR source_url LIKE '%example.org%'
+        OR source_url LIKE '%state.gov%'
+      )
+  `).get().count;
+
+  assert.equal(
+    placeholderSourceCount,
+    0,
+    `${table} should not expose published rows with placeholder or search-result source URLs in the active app DB`,
+  );
+
+  const publishedNeedsReviewCount = liveDb.prepare(`
+    SELECT COUNT(*) AS count
+    FROM ${table}
+    WHERE COALESCE(display_status, 'published') = 'published'
+      AND COALESCE(verification_status, '') IN ('needs_review', 'generated_county_fallback')
+  `).get().count;
+
+  assert.equal(
+    publishedNeedsReviewCount,
+    0,
+    `${table} should not expose published rows that still carry needs_review or generated fallback verification in the active app DB`,
+  );
+}
+
+liveDb.close();
+
 const districtStatuses = checkDb.prepare('SELECT id, display_status FROM school_districts ORDER BY id').all();
 assert.deepEqual(districtStatuses, [
   { id: 'dist-bad', display_status: 'needs_review' },

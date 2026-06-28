@@ -18,6 +18,7 @@ import PrintButton from '@/components/print-button';
 import ShareButton from '@/components/share-button';
 import { hasNonNegatedKeyword } from '@/lib/negation';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import { CORE_CA_LAUNCH_REVIEWED_DATE } from '@/lib/launchSurfaceReviewDates';
 
 interface WizardClientProps {
   counties: County[];
@@ -28,7 +29,6 @@ interface WizardClientProps {
 type WizardStep = 1 | 2 | 3 | 4 | 5;
 
 const WIZARD_SOURCE_CONFIDENCE = 0.94;
-const WIZARD_LAST_REVIEWED_DATE = '2026-06-27';
 
 const WIZARD_DISCLOSURE_SOURCES = [
   {
@@ -37,7 +37,7 @@ const WIZARD_DISCLOSURE_SOURCES = [
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
     confidenceScore: WIZARD_SOURCE_CONFIDENCE,
-    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'California Department of Developmental Services regional center information',
@@ -45,7 +45,7 @@ const WIZARD_DISCLOSURE_SOURCES = [
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
     confidenceScore: WIZARD_SOURCE_CONFIDENCE,
-    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'California Department of Education special education information',
@@ -53,7 +53,7 @@ const WIZARD_DISCLOSURE_SOURCES = [
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
     confidenceScore: WIZARD_SOURCE_CONFIDENCE,
-    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'California Department of Health Care Services Medi-Cal for Kids & Teens',
@@ -61,7 +61,7 @@ const WIZARD_DISCLOSURE_SOURCES = [
     verificationStatus: 'official_verified' as const,
     sourceType: 'official_state' as const,
     confidenceScore: WIZARD_SOURCE_CONFIDENCE,
-    lastReviewedDate: WIZARD_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
 ];
 

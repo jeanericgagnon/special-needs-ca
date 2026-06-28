@@ -2360,7 +2360,7 @@ function runMigrations(db: Database.Database) {
           },
           {
             title: 'What documentation you need',
-            content: 'To qualify for Protective Supervision, your child\'s physician must complete the SOC 873 medical certification form. Beyond the SOC 873, you should also gather: (1) A physician\'s letter explicitly describing the child\'s inability to recognize and avoid danger, (2) Behavior therapy records noting elopement, self-injury, PICA, or aggression incidents, (3) School incident reports and IEP safety plans, (4) Your own written safety log documenting specific dangerous incidents with dates and times.',
+            content: 'For a Protective Supervision screening, your child\'s physician must complete the SOC 873 medical certification form. Beyond the SOC 873, you should also gather: (1) A physician\'s letter explicitly describing the child\'s inability to recognize and avoid danger, (2) Behavior therapy records noting elopement, self-injury, PICA, or aggression incidents, (3) School incident reports and IEP safety plans, (4) Your own written safety log documenting specific dangerous incidents with dates and times.',
             tip: 'Generic doctor notes saying "child has autism" are insufficient. The documentation must specifically describe HOW the child cannot recognize danger and what specific safety risks require 24/7 supervision.'
           },
           {

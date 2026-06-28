@@ -12,6 +12,14 @@ const footer = fs.readFileSync(path.join(repoRoot, 'src/components/Footer.jsx'),
 const editorialDisclosure = fs.readFileSync(path.join(repoRoot, 'frontend/src/components/editorial-disclosure.tsx'), 'utf8');
 const seoPolicy = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-policy.ts'), 'utf8');
 const wizardClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/wizard-client.tsx'), 'utf8');
+const launchToolLanding = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/components/launch-tool-landing.tsx'), 'utf8');
+const conditionPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/conditions/[slug]/page.tsx'), 'utf8');
+const appealLetterGenerator = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/components/appeal-letter-generator.tsx'), 'utf8');
+const countyDiagnosisPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/[state]/[diagnosis]/[county]/page.tsx'), 'utf8');
+const countiesClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/counties-client.tsx'), 'utf8');
+const countiesStatePage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/page.tsx'), 'utf8');
+const seoData = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-data.ts'), 'utf8');
+const stateConfigs = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/stateConfigs.ts'), 'utf8');
 
 assert.match(
   answerPage,
@@ -51,6 +59,18 @@ assert.doesNotMatch(
 
 assert.match(
   countyBenefitsPage,
+  /\$\\?\{wageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hour estimate/,
+  'County benefits page should label IHSS values as estimates.'
+);
+
+assert.doesNotMatch(
+  countyBenefitsPage,
+  /\$\\?\{wageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hr/,
+  'County benefits page should avoid rendering IHSS values like hard rates.'
+);
+
+assert.match(
+  countyBenefitsPage,
   /Visit Source Page/,
   'Program CTA should use evidence-safe source wording.'
 );
@@ -69,8 +89,8 @@ assert.doesNotMatch(
 
 assert.match(
   correctionFlow,
-  /Source-backed checked public contact/,
-  'County trust badge should use softer public-contact wording for checked official-source listings.'
+  /Reviewed public contact|Reviewed public listing/,
+  'County trust badge should use softer reviewed-public wording for checked listings.'
 );
 
 assert.match(
@@ -101,6 +121,42 @@ assert.doesNotMatch(
   `${answerPage}\n${countyBenefitsPage}\n${footer}\n${ihssBehaviorLog}`,
   /\bwagers\b/i,
   'Public app copy must not contain the wagers typo.'
+);
+
+assert.doesNotMatch(
+  countyDiagnosisPage,
+  /Access .* school IEP assistance/,
+  'County diagnosis metadata should avoid implying broader local assistance depth than the reviewed public route data supports.'
+);
+
+assert.doesNotMatch(
+  countiesClient,
+  /Lanterman Act service coordinators|LIDDA service coordinators|APD service coordinators|OPWDD Front Door coordinators|local service coordinators/,
+  'County directory cards should not promise per-county coordinator coverage before the county page itself verifies that local public lane.'
+);
+
+assert.match(
+  countiesClient,
+  /currently published public routing options/,
+  'County directory cards should describe the county grid as a reviewed-public routing surface rather than a guaranteed local coordinator directory.'
+);
+
+assert.doesNotMatch(
+  countiesStatePage,
+  /source-backed local routing|source-backed routing/,
+  'State county directory copy should avoid stronger routing-certainty phrasing than the public-review model supports.'
+);
+
+assert.match(
+  countiesStatePage,
+  /currently published public routing/,
+  'State county directory copy should describe the counties hub as a reviewed public-routing surface.'
+);
+
+assert.doesNotMatch(
+  countyBenefitsPage,
+  /Find pediatric Speech & Occupational therapy clinics, sensory-inclusive play areas, and caregiver support networks/i,
+  'City-level leaf metadata should not imply verified clinic or network depth on gated local surfaces.'
 );
 
 assert.doesNotMatch(
@@ -145,10 +201,88 @@ assert.match(
   'Benefits matcher should explicitly disclaim that the planning summary is not a guaranteed benefit total.'
 );
 
+assert.doesNotMatch(
+  `${seoData}\n${conditionPage}\n${countyBenefitsPage}`,
+  /Assuming ADHD alone will qualify/i,
+  'Public indexed guides should avoid framing diagnosis guidance as a direct qualification promise.'
+);
+
+assert.doesNotMatch(
+  seoData,
+  /To qualify for Protective Supervision/i,
+  'Public IHSS guide content should frame Protective Supervision as a screening or review path, not as a qualification promise.'
+);
+
 assert.match(
   wizardClient,
   /Potential program paths/,
   'Benefits matcher should describe matched outputs as potential program paths rather than definitive matched programs.'
+);
+
+assert.match(
+  launchToolLanding,
+  /Sign in only if you want to save progress, keep notes, or return to a private working draft later\./,
+  'Launch tool landing pages should state that login is only for saving private progress.'
+);
+
+assert.doesNotMatch(
+  conditionPage,
+  /California DDS Intake Liaison/,
+  'Condition fallback copy should not imply that the statewide DDS office is a local intake liaison.'
+);
+
+assert.doesNotMatch(
+  conditionPage,
+  /Benefits in California: Parent Guide|Benefits California \| Lanterman Act & School Aid/,
+  'Condition fallback copy should avoid older benefits-guide framing that overstates certainty.'
+);
+
+assert.doesNotMatch(
+  conditionPage,
+  /may qualify for specialized public benefit and school-support pathways/i,
+  'Condition fallback quick-answer should stay at orientation-level guidance instead of sounding like an eligibility conclusion.'
+);
+
+assert.match(
+  conditionPage,
+  /families often review several public support pathways/i,
+  'Condition fallback quick-answer should frame diagnosis pages as source-backed planning guidance.'
+);
+
+assert.doesNotMatch(
+  conditionPage,
+  /start the 15-day timeline/i,
+  'Condition fallback copy should not hard-code an intake timeline trigger in generic diagnosis guidance.'
+);
+
+assert.doesNotMatch(
+  appealLetterGenerator,
+  /statutory 15-day timeline|60-day deadline as mandated/i,
+  'Appeal letter generator should ask families to confirm the current district timeline rather than asserting a guaranteed statutory schedule.'
+);
+
+assert.doesNotMatch(
+  `${seoData}\n${stateConfigs}`,
+  /start the 15-day clock|15 Days to respond; 120 Days to assess|California DDS Intake Division/,
+  'California public helper copy should avoid unsupported hard-clock language and misleading statewide intake labels.'
+);
+
+assert.doesNotMatch(
+  seoData,
+  /without losing SSI or Medi-Cal eligibility|bypasses this rule completely/,
+  'Shared public guide copy should avoid absolute CalABLE eligibility-preservation phrasing without current-source confirmation.'
+);
+
+assert.doesNotMatch(
+  seoData,
+  /official application for In-Home Supportive Services \(IHSS\) in California/,
+  'Shared form guide copy should avoid stronger-than-needed official-application wording when the public trust model only requires source-backed current form guidance.'
+);
+
+assert.match(
+  seoData,
+  /confirm the current contribution cap, SSI treatment threshold, and Medi-Cal treatment|current CDSS IHSS application form families commonly use/,
+  'Shared guide copy should steer families back to current-source confirmation for savings and form workflow rules.'
 );
 
 console.log('public copy hardening tests passed');

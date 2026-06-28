@@ -64,7 +64,7 @@ export default async function RootLayout({
               </Link>
 
 
-              <Link href="/benefits/programs" className="nav-link">
+              <Link href="/benefits" className="nav-link">
                 <BookOpen size={16} />
                 <span>Benefit Guides</span>
               </Link>
@@ -110,7 +110,7 @@ export default async function RootLayout({
               <Link href="/benefits/california" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>California</Link>
               <Link href="/benefits/texas" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Texas</Link>
               <Link href="/benefits/florida" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Florida</Link>
-              <Link href="/benefits/programs" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Guides</Link>
+              <Link href="/benefits" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Guides</Link>
               <Link href="/counties" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Counties</Link>
               <Link href="/advocates" style={{ color: 'var(--text-light)', textDecoration: 'none', fontWeight: 600 }}>Advocates</Link>
               <Link href="/sitemap.xml" style={{ color: 'var(--text-light)', textDecoration: 'none' }}>Sitemap</Link>

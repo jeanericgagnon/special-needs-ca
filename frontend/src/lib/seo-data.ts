@@ -131,7 +131,7 @@ I am writing to formally request a Lanterman Act eligibility assessment for my c
 My child exhibits developmental delays and functional limitations in the following areas:
 ${f.concerns || 'Speech and language delays, motor coordination difficulties, and self-care limitations.'}
 
-Under the Lanterman Developmental Disabilities Services Act (California Welfare and Institutions Code Section 4500 et seq.), my child may request a diagnostic assessment to establish Regional Center eligibility. Please contact me within the statutory 15-day timeline to schedule the intake interview and assessment.
+Under the Lanterman Developmental Disabilities Services Act (California Welfare and Institutions Code Section 4500 et seq.), my child may request a diagnostic assessment to establish Regional Center eligibility. Please confirm the current intake timeline and next steps in writing when you respond.
 
 Thank you for your assistance.
 
@@ -455,10 +455,10 @@ Phone: [Insert Phone Number]`
     title: 'California IEP Evaluation Request: Step-by-Step Parent Guide',
     metaTitle: 'IEP Evaluation Request California | Form Assessment Letter',
     metaDescription: 'California parent guide to requesting a school district special education IEP assessment. Download letter templates.',
-    quickAnswer: 'In California, if your child has a developmental disability or learning delay, you can request a free psycho-educational evaluation from your local school district under IDEA and California special-education rules. To start the process, submit a written IEP evaluation request. The district generally has 15 calendar days to provide an Assessment Plan after receiving your request, subject to the current state exceptions and school-calendar rules.',
+    quickAnswer: 'In California, if your child has a developmental disability or learning delay, you can request a free psycho-educational evaluation from your local school district under IDEA and California special-education rules. To start the process, submit a written IEP evaluation request, then confirm the current Assessment Plan and meeting timelines on the district or state special-education source that applies to your case.',
     tldrPoints: [
-      { label: 'District Deadline', value: '15 Days to provide Assessment Plan' },
-      { label: 'Evaluation Timeline', value: '60 Days from consent' },
+      { label: 'District Timeline', value: 'Confirm current Assessment Plan timing' },
+      { label: 'Evaluation Timeline', value: 'Confirm current meeting timeline after consent' },
       { label: 'Legal Authority', value: 'IDEA Act / CA Ed Code 56321' },
       { label: 'Assessment Cost', value: '100% Free' }
     ],
@@ -473,7 +473,7 @@ Phone: [Insert Phone Number]`
       'Identify the Special Education Director or Principal for your local school district.',
       'Draft a formal IEP evaluation request letter detailing all areas of suspected disability.',
       'Submit the letter via email (providing a timestamped paper trail) or certified mail.',
-      'Follow up if you do not receive the Assessment Plan within the 15-day timeline.'
+      'Follow up in writing if you do not receive the Assessment Plan within the current timeline published by your district or state guidance.'
     ],
     documentsToGather: [
       { name: 'Formal Written Request Letter', description: 'Written template requesting assessments under Ed Code 56321.' },
@@ -485,7 +485,7 @@ Phone: [Insert Phone Number]`
     ],
     whatToSay: 'I am requesting a comprehensive special education assessment for my child under the IDEA Child Find mandate. I want speech, occupational therapy, and psycho-educational testing scheduled.',
     commonMistakes: [
-      'Making the request verbally. School districts are not bound by verbal requests; the 15-day statutory timeline only begins upon receipt of a written letter.',
+      'Making the request verbally instead of keeping a dated written letter or email that you can use to confirm the current district timeline.',
       'Allowing the school to steer you toward a 504 Plan instead of an IEP if your child needs specialized instruction.',
       'Signing an Assessment Plan that excludes critical testing areas (e.g. omitting speech or OT).'
     ],
@@ -502,11 +502,11 @@ Phone: [Insert Phone Number]`
     callScriptTemplate: {
       intro: 'School District Special Ed Intake Call',
       script: 'Hello, I am calling to find the name and email address of the Director of Special Education for [School District]. I want to submit a formal written request for a comprehensive special education evaluation for my child. Could you please provide the correct intake coordinator\'s contact details?',
-      tips: 'Always direct your request to the district office rather than the individual classroom teacher to ensure the 15-day timeline is tracked by administrators.'
+      tips: 'Always direct your request to the district office rather than only to the classroom teacher, and keep a dated written copy so you can confirm the current timeline.'
     },
     letterTemplate: {
       title: 'Special Education Assessment Request Letter',
-      description: 'Formal letter to submit to the School District Special Ed Director to trigger the 15-day Assessment Plan timeline.',
+      description: 'Formal letter to submit to the School District Special Ed Director to create a dated written request and confirm the current Assessment Plan timeline.',
       fields: [
         { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
         { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
@@ -538,7 +538,7 @@ I request evaluations in all areas of suspected disability, including but not li
 3. Occupational Therapy (Sensory and Fine Motor) Assessment
 4. Social-Emotional / Behavioral Assessment
 
-Please note that under California Education Code Section 56321, the school district must provide me with an Assessment Plan within 15 calendar days of receiving this request. I look forward to receiving the plan for my review and signature.
+Please confirm the current Assessment Plan timeline that applies to this written request and send the plan for my review and signature.
 
 Thank you,
 
@@ -607,8 +607,8 @@ Email: [Insert Email]`
     lastReviewedDate: '2026-06-01',
     callScriptTemplate: {
       intro: 'Timeline Violation Escalation Call',
-      script: 'Hello, I am calling to speak with the Special Education program specialist. I submitted a written request for my child\'s IEP assessment on [Request Date]. It has been over 15 calendar days, and I have not received the Assessment Plan. Under California Education Code Section 56321, this timeline is mandatory. Please let me know when the plan will be emailed to me today before I file a compliance complaint.',
-      tips: 'Keep the call polite but firm. Timelines are black-and-white, and districts fear CDE audit findings.'
+      script: 'Hello, I am calling to speak with the Special Education program specialist. I submitted a written request for my child\'s IEP assessment on [Request Date], and I have not yet received the Assessment Plan. Please confirm the current timeline the district is following under California Education Code Section 56321 and let me know when the plan will be emailed to me.',
+      tips: 'Keep the call polite but firm, and compare the response against the current district or California guidance before relying on a deadline.'
     },
     letterTemplate: {
       title: 'Timeline Delay Escalation Letter',
@@ -632,9 +632,9 @@ Dear Special Education Director,
 
 On ${f.requestDate || '[Request Date]'}, I submitted a written request for a comprehensive special education evaluation for my child, ${f.childName || '[Child Name]'}.
 
-Under California Education Code Section 56321(a), the school district has 15 calendar days from receipt of a request to provide the parent with an Assessment Plan. As of today, that timeline has elapsed, and I have not received the plan.
+Based on my understanding of California Education Code Section 56321(a), I expected the district to provide an Assessment Plan within the current applicable timeline after receiving this request. As of today, I have not received the plan.
 
-Please email the completed Assessment Plan to me immediately so we can begin the assessment phase without further delay. If I do not receive the plan within 48 hours, I will file a formal Compliance Complaint with the California Department of Education (CDE).
+Please email the completed Assessment Plan to me as soon as possible and confirm the current timeline the district is following so we can begin the assessment phase without further delay.
 
 Thank you for your immediate attention.
 
@@ -648,8 +648,8 @@ Phone: [Insert Phone]`
       {
         question: 'How many calendar days have passed since you submitted your written request?',
         options: [
-          { text: 'More than 15 calendar days', score: 'high', reason: 'The district is in violation. You should formally escalate using our letter builder.' },
-          { text: 'Fewer than 15 calendar days', score: 'med', reason: 'The district is still within their legal window. Use this time to gather medical documents.' }
+          { text: 'More than 15 calendar days', score: 'high', reason: 'This may justify escalation, but confirm the current district timeline and any statutory exceptions before relying on that count.' },
+          { text: 'Fewer than 15 calendar days', score: 'med', reason: 'Use this time to gather medical documents and confirm the current timeline on the district or state special-education source.' }
         ]
       }
     ]
@@ -662,7 +662,7 @@ Phone: [Insert Phone]`
     metaDescription: 'A source-backed breakdown of California Regional Center eligibility rules under the Lanterman Act.',
     quickAnswer: 'California Regional Centers coordinate and fund long-term services for individuals with developmental disabilities. Under the Lanterman Act, long-term eligibility generally requires a disability that originates before age 18, is expected to continue indefinitely, and constitutes a substantial disability in three or more functional areas (self-care, language, learning, mobility, self-direction, capacity for independent living, or economic self-sufficiency).',
     tldrPoints: [
-      { label: 'Intake Clock', value: '15 Days to respond; 120 Days to assess' },
+      { label: 'Intake Timeline', value: 'Confirm current intake and eligibility timing' },
       { label: 'Functional Needs', value: 'Deficits in 3+ major life areas' },
       { label: 'Eligible Conditions', value: '5 developmental categories' },
       { label: 'Cost of Services', value: '100% State-Funded ($0 parent cost)' }
@@ -690,7 +690,7 @@ Phone: [Insert Phone]`
     ],
     whatToSay: 'I am requesting a Lanterman Act eligibility assessment for my child. They have a developmental delay originating before age 18 that impacts their communication, learning, and self-care.',
     commonMistakes: [
-      'Assuming ADHD alone will qualify for Regional Center. Under DDS rules, ADHD is generally not a qualifying condition unless it appears alongside an intellectual disability or another eligible developmental-disability pathway.',
+      'Assuming ADHD alone is enough for Regional Center intake screening. Under DDS rules, ADHD is generally not a qualifying condition unless it appears alongside an intellectual disability or another eligible developmental-disability pathway.',
       'Allowing the center to deny you verbally. Always demand a written Notice of Action (NOA) of eligibility denial so you can file an appeal.',
       'Understating the child\'s deficits during the intake interview.'
     ],
@@ -1150,8 +1150,8 @@ Phone: [Insert Phone]`
     category: 'programs',
     title: 'CalABLE California: Tax-Advantaged Disability Savings Accounts',
     metaTitle: 'CalABLE Accounts California | Disability Savings Rules',
-    metaDescription: 'Learn how to save money without losing SSI or Medi-Cal eligibility in California. Set up a tax-advantaged CalABLE account.',
-    quickAnswer: 'CalABLE (California\'s Achieving a Better Life Experience program) allows individuals with disabilities to save up to $18,000 per year (and hold up to $100,000 total) in a tax-advantaged investment account without losing resource-tested benefits like SSI and Medi-Cal. Normally, saving more than $2,000 disqualifies a child from SSI, but CalABLE bypasses this rule completely.',
+    metaDescription: 'Learn how California families use CalABLE accounts to save under current SSI and Medi-Cal rules. Review current contribution limits and setup steps.',
+    quickAnswer: 'CalABLE (California\'s Achieving a Better Life Experience program) lets eligible individuals with disabilities save under current annual contribution limits and SSI resource-treatment rules while keeping a dedicated disability-expense account. Families should confirm the current contribution cap, SSI treatment threshold, and Medi-Cal treatment on the live CalABLE and Social Security sources before relying on a savings strategy.',
     tldrPoints: [
       { label: 'Annual Deposit Limit', value: '$18,000' },
       { label: 'SSI Asset Cap Waiver', value: 'Up to $100,000 excluded' },
@@ -1180,8 +1180,8 @@ Phone: [Insert Phone]`
     ],
     whatToSay: 'I want to open a CalABLE account on behalf of my minor child who has a developmental disability. I want to confirm the contribution limits and verify how to link our bank accounts.',
     commonMistakes: [
-      'Depositing more than $18,000 per year, which triggers tax penalties (unless the child is working, in which case they can save more under ABLE to Work).',
-      'Allowing the account balance to exceed $100,000 if receiving SSI. If the balance exceeds $100,000, your monthly SSI checks will be suspended until the balance drops back down.',
+      'Using an older annual contribution limit instead of confirming the current cap and any ABLE to Work exception before making deposits.',
+      'Assuming SSI or Medi-Cal treatment stays the same at every balance level instead of checking the current CalABLE and Social Security rules first.',
       'Using the funds for non-qualified expenses. CalABLE funds must be spent on "qualified disability expenses" (housing, education, transit, assistive tech, health care).'
     ],
     relatedGuides: [
@@ -1251,7 +1251,7 @@ Phone: [Insert Phone]`
     title: 'Form SOC 295: California IHSS Application',
     metaTitle: 'Form SOC 295 PDF | Apply for IHSS in California',
     metaDescription: 'Step-by-step parent guide to completing California Form SOC 295 for In-Home Supportive Services. Download blank PDF and review submission steps.',
-    quickAnswer: 'Form SOC 295 is the official application for In-Home Supportive Services (IHSS) in California. It initiates the application process for receiving caregiver hours. Parents applying for their disabled children should submit this form to their county social services office. Only the parent or legal guardian signs the application on behalf of a minor.',
+    quickAnswer: 'Form SOC 295 is the current CDSS IHSS application form families commonly use to start a California IHSS intake. Parents applying for a minor child generally submit it to the county social services office and should confirm the county\'s current submission route, intake packet, and signer instructions before relying on older workflow assumptions.',
     tldrPoints: [
       { label: 'Form PDF Link', value: 'Download CDSS Official' },
       { label: 'Authorized Signer', value: 'Parent or Guardian' },
@@ -1538,11 +1538,11 @@ ${f.parentName || '[Parent Name]'}`
     title: 'Regional Center Intake Request Form (CA Lanterman Act)',
     metaTitle: 'Regional Center Intake Request Form | Lanterman Act eligibility',
     metaDescription: 'Guide to submitting a California Regional Center intake request. Download instructions, checklist, and sample letters.',
-    quickAnswer: 'The Regional Center Intake Request is a formal request to establish eligibility under the Lanterman Act (for ages 3+) or Early Start (for ages 0-3). While some regional centers use their own web forms, a parent can legally submit a written request letter containing child identification, diagnostics, and functional care deficits. Under California code, the agency has 15 days to respond and 60 days to complete evaluations.',
+    quickAnswer: 'The Regional Center Intake Request is a formal request to establish eligibility under the Lanterman Act (for ages 3+) or Early Start (for ages 0-3). While some regional centers use their own web forms, a parent can submit a written request letter containing child identification, diagnostics, and functional care deficits. Use the current Regional Center or DDS instructions to confirm the intake and evaluation timeline that applies to your case.',
     tldrPoints: [
       { label: 'Official Instructions Page', value: 'Refer to Local Regional Center' },
-      { label: 'Statutory Response Time', value: '15 calendar days' },
-      { label: 'Evaluation Timeline', value: '60 days from signed consent' },
+      { label: 'Response Time', value: 'Confirm current Regional Center intake timeline' },
+      { label: 'Evaluation Timeline', value: 'Confirm current evaluation timeline after intake' },
       { label: 'Age Criteria', value: 'Lanterman: 3+ | Early Start: 0-3' }
     ],
     whenThisMatters: 'Immediately upon recognizing developmental delays, autism indicators, motor delays, or receiving a clinical diagnosis.',
@@ -1561,11 +1561,11 @@ ${f.parentName || '[Parent Name]'}`
       { name: 'Pediatric Medical History', description: 'Standard clinical notes showing motor or developmental delays.' }
     ],
     whoToCall: [
-      { name: 'California DDS Intake Division', description: 'Select your county below to find the specific contact details for your local center.' }
+      { name: 'California DDS State Office', description: 'Use this statewide source to verify the correct local Regional Center or intake path for your county.' }
     ],
     whatToSay: 'I am requesting a developmental intake assessment for my child. I am submitting this request under the California Lanterman Act to determine eligibility for services.',
     commonMistakes: [
-      'Making a verbal request without a written follow-up. Verbal requests do not trigger the legal 15-day timeline.',
+      'Making a verbal request without a written follow-up. Keep a dated written request so you can confirm the current intake timeline with the Regional Center.',
       'Submitting incomplete diagnostic records, which slows down the evaluation schedule.'
     ],
     relatedGuides: [
@@ -1605,7 +1605,7 @@ I am writing as the parent of ${f.childName || '[Child Name]'} to formally reque
 
 My child has a diagnosis of ${f.diagnosis || 'developmental delays'}, which significantly impacts their cognitive development, communication skills, and social functioning in daily life. I have attached the clinical assessments and diagnostic reports for your review.
 
-Under California Title 17 regulations, I look forward to receiving your assessment plan within 15 calendar days of this request.
+Please confirm the current intake timeline and the next step in writing after you receive this request.
 
 Sincerely,
 ${f.parentName || '[Parent Name]'}`
@@ -1726,7 +1726,7 @@ ${f.parentName || '[Parent Name]'}`
       'Draft a detailed service request letter stating the service needed and how it relates to the IPP goals.',
       'Attach pediatrician or therapist recommendations.',
       'Send it to your coordinator and ask for a written Notice of Action if denied.',
-      'Track the 15-day timeline.'
+      'Track the current response timeline shown in the written instructions or response you receive.'
     ],
     documentsToGather: [
       { name: 'Physician / Therapist Letter', description: 'Recommending the specific service.' },
@@ -1878,11 +1878,11 @@ ${f.parentName || '[Parent Name]'}`
     title: 'IEP Assessment Request Letter (Special Ed Evaluation)',
     metaTitle: 'IEP Assessment Request Letter | California Special Ed',
     metaDescription: 'Step-by-step parent guide to requesting a special education IEP assessment in California. Download templates and track school timelines.',
-    quickAnswer: 'An IEP Assessment Request is a formal written letter requesting that a school district evaluate your child for special education eligibility. Under California Education Code Section 56321, once you submit this request in writing, the school district has 15 calendar days to provide you with a written Assessment Plan for your signature.',
+    quickAnswer: 'An IEP Assessment Request is a formal written letter requesting that a school district evaluate your child for special education eligibility. Once you submit this request in writing, confirm the current Assessment Plan timeline and exceptions on the district or California special-education source that applies to your case before relying on a date.',
     tldrPoints: [
       { label: 'Official Instructions Page', value: 'Refer to Local School District' },
-      { label: 'District Response Time', value: '15 calendar days' },
-      { label: 'Evaluation Timeline', value: '60 days from signed consent' },
+      { label: 'District Response Time', value: 'Confirm current Assessment Plan timing' },
+      { label: 'Evaluation Timeline', value: 'Confirm current meeting timeline after consent' },
       { label: 'Signer', value: 'Parent or Guardian' }
     ],
     whenThisMatters: 'When your child has a diagnosed developmental disability, ADHD, or learning delays, and you want the school district to evaluate them for an IEP or 504 plan.',
@@ -1895,7 +1895,7 @@ ${f.parentName || '[Parent Name]'}`
       'Draft a written IEP assessment request letter.',
       'Identify all areas of suspected disability (speech, behavior, academic).',
       'Submit the letter to the school Principal and Special Education Director.',
-      'Request a signed receipt or email confirmation to start the 15-day clock.'
+      'Request a signed receipt or email confirmation so you can document the date and confirm the current district timeline.'
     ],
     documentsToGather: [
       { name: 'Pediatric Clinical Diagnoses', description: 'Autism ADOS, ADHD, or psychologist assessments.' },
@@ -1906,7 +1906,7 @@ ${f.parentName || '[Parent Name]'}`
     ],
     whatToSay: 'I am submitting a written request for a comprehensive special education assessment for my child under California Education Code Section 56321.',
     commonMistakes: [
-      'Making a verbal request to a teacher. Only a written request to an administrator triggers the legal 15-day timeline.',
+      'Making a verbal request to a teacher instead of keeping a dated written request to an administrator or district contact.',
       'Signing a generic Assessment Plan without checking if all areas (like speech or behavior) are included.'
     ],
     relatedGuides: [
@@ -1918,7 +1918,7 @@ ${f.parentName || '[Parent Name]'}`
     lastReviewedDate: '2026-06-01',
     callScriptTemplate: {
       intro: 'Confirming Assessment Timeline',
-      script: 'Hi, I am calling to confirm receipt of the IEP assessment request I submitted for [Child Name] on [Date]. Under California law, the district has 15 days to provide me with the written Assessment Plan. Can you confirm when I will receive it?',
+      script: 'Hi, I am calling to confirm receipt of the IEP assessment request I submitted for [Child Name] on [Date]. Can you confirm the current timeline for sending the written Assessment Plan and tell me when I should expect it?',
       tips: 'Always ask for the case manager\'s contact details.'
     },
     letterTemplate: {
@@ -1946,7 +1946,7 @@ I am writing as the parent of ${f.childName || '[Child Name]'} to formally reque
 
 I request my child be evaluated in all areas of suspected disability, including but not limited to: ${f.suspectedDisabilities || '[Suspected Disabilities]'}.
 
-Under California Education Code Section 56321(a), the district is required to provide me with a written Assessment Plan within 15 calendar days of this request. Please send this plan to my address.
+Please confirm the current Assessment Plan timeline that applies to this written request and send the plan to my address.
 
 Sincerely,
 ${f.parentName || '[Parent Name]'}`
@@ -1955,7 +1955,7 @@ ${f.parentName || '[Parent Name]'}`
       {
         question: 'Have you requested evaluations in writing before?',
         options: [
-          { text: 'No, this is our first written request', score: 'high', reason: 'You are ready to submit this letter to start the 15-day clock.' },
+          { text: 'No, this is our first written request', score: 'high', reason: 'You are ready to submit this letter and document the date so you can confirm the current district timeline.' },
           { text: 'Yes, but the district ignored us', score: 'med', reason: 'You should file this letter again, explicitly citing the Education Code, and cc the Director.' }
         ]
       }

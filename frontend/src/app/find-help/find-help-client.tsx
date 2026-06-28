@@ -36,13 +36,13 @@ import {
 } from '@/lib/directoryFoundation';
 import { getSavedDirectoryResources, removeSavedDirectoryResource, type SavedDirectoryResource } from '@/lib/savedResources';
 import { trackDirectoryAnalyticsEvent } from '@/lib/directoryAnalytics';
+import { CORE_CA_LAUNCH_REVIEWED_DATE } from '@/lib/launchSurfaceReviewDates';
 
 type FindHelpClientProps = {
   foundationSnapshot: DirectoryFoundationSnapshot;
 };
 
 const FIND_HELP_SOURCE_CONFIDENCE = 0.95;
-const FIND_HELP_LAST_REVIEWED_DATE = '2026-06-27';
 
 const FIND_HELP_CORE_SOURCES: DisclosureSource[] = [
   {
@@ -51,7 +51,7 @@ const FIND_HELP_CORE_SOURCES: DisclosureSource[] = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
-    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'California Department of Education special education information',
@@ -59,7 +59,7 @@ const FIND_HELP_CORE_SOURCES: DisclosureSource[] = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
-    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'California Department of Social Services IHSS program information',
@@ -67,7 +67,7 @@ const FIND_HELP_CORE_SOURCES: DisclosureSource[] = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
-    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'California Department of Health Care Services Medi-Cal for Kids & Teens',
@@ -75,7 +75,7 @@ const FIND_HELP_CORE_SOURCES: DisclosureSource[] = [
     verificationStatus: 'official_verified',
     sourceType: 'official_state',
     confidenceScore: FIND_HELP_SOURCE_CONFIDENCE,
-    lastReviewedDate: FIND_HELP_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
 ];
 

@@ -5,12 +5,12 @@ import { verifyToken } from '@/lib/auth';
 import Link from 'next/link';
 import { LayoutDashboard } from 'lucide-react';
 import SourceFreshnessDisclosure from '@/app/components/SourceFreshnessDisclosure';
+import { CORE_CA_LAUNCH_REVIEWED_DATE } from '@/lib/launchSurfaceReviewDates';
 
 import { DIAGNOSES } from '@/lib/diagnoses';
 import { Metadata } from 'next';
 
 const SOURCE_CONFIDENCE = 0.95;
-const HOMEPAGE_LAST_REVIEWED_DATE = '2026-06-27';
 
 const HOMEPAGE_SOURCES = [
   {
@@ -19,7 +19,7 @@ const HOMEPAGE_SOURCES = [
     verificationStatus: 'official_verified',
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: HOMEPAGE_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'Social Security Administration SSI for children',
@@ -27,7 +27,7 @@ const HOMEPAGE_SOURCES = [
     verificationStatus: 'official_verified',
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: HOMEPAGE_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
   {
     name: 'U.S. Department of Education IDEA information',
@@ -35,7 +35,7 @@ const HOMEPAGE_SOURCES = [
     verificationStatus: 'official_verified',
     sourceType: 'official_federal',
     confidenceScore: SOURCE_CONFIDENCE,
-    lastReviewedDate: HOMEPAGE_LAST_REVIEWED_DATE,
+    lastReviewedDate: CORE_CA_LAUNCH_REVIEWED_DATE,
   },
 ];
 
