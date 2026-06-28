@@ -268,6 +268,18 @@ assert.doesNotMatch(
 );
 
 assert.doesNotMatch(
+  `${seoData}\n${countyBenefitsPage}\n${countiesClient}`,
+  /past the 15-day statutory deadline|statutory special-education timelines|The statutory timeline mandates/i,
+  'Public indexed education-routing guidance should tell families to confirm the current timeline instead of asserting hard statutory timing as universal public fact.'
+);
+
+assert.match(
+  `${seoData}\n${countyBenefitsPage}\n${countiesClient}`,
+  /confirm the current .*timeline|confirm the current district or state special-education timeline|confirm the current intake, assessment, and service-start timeline/i,
+  'Public education-routing guidance should redirect families back to the current official timeline that applies to their case.'
+);
+
+assert.doesNotMatch(
   seoData,
   /without losing SSI or Medi-Cal eligibility|bypasses this rule completely/,
   'Shared public guide copy should avoid absolute CalABLE eligibility-preservation phrasing without current-source confirmation.'

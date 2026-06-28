@@ -1161,7 +1161,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
             acceptedAnswer: {
               '@type': 'Answer',
               text: stateData.id === 'california' 
-                ? `Under California Education Code, school districts in ${countyName} have 15 calendar days to provide an Assessment Plan once a parent submits a written request. After the plan is signed, they have 60 calendar days to complete evaluations and hold the initial IEP meeting.`
+                ? `California families in ${countyName} County should confirm the current Assessment Plan and meeting timelines on the district or California special-education source that applies to their case before relying on a deadline.`
                 : `School district response timelines vary by state. Families in ${countyName} should confirm the current evaluation-request deadline and dispute timeline on the official state or district special education source before relying on a date.`
             }
           }
@@ -1512,7 +1512,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                   {wageDisclosure.hourlyRate ? (
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                       <span>Estimated hourly pay:</span>
-                      <strong style={{ color: '#10b981' }}>${wageDisclosure.hourlyRate.toFixed(2)}/hr</strong>
+                      <strong style={{ color: '#10b981' }}>${wageDisclosure.hourlyRate.toFixed(2)}/hour estimate</strong>
                     </div>
                   ) : (
                     <div style={{ color: 'var(--text-light)' }}>Current county estimate unavailable</div>
@@ -1522,7 +1522,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                   </div>
                   <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: 1.45 }}>
                     Source: <a href={wageDisclosure.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>{wageDisclosure.sourceLabel}</a><br />
-                    Confirm with: <a href={wageDisclosure.officialConfirmUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>official county IHSS office directory</a><br />
+                    Confirm with: <a href={wageDisclosure.officialConfirmUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>{wageDisclosure.officialConfirmLabel.toLowerCase()}</a><br />
                     Last checked: {wageDisclosure.lastVerifiedDate}
                   </div>
                 </div>
@@ -1572,17 +1572,23 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
           </div>
 
-          <SourceFreshnessDisclosure sources={
-            freshnessSources.length > 0
-              ? freshnessSources
-              : [
-                  {
-                    name: `${stateName} local county evidence`,
-                    lastReviewedDate: countyHubLastVerifiedDate || null,
-                    verificationStatus: 'needs_review'
-                  }
-                ]
-          } />
+          <SourceFreshnessDisclosure
+            sources={
+              freshnessSources.length > 0
+                ? freshnessSources
+                : [
+                    {
+                      name: `${stateName} local county evidence`,
+                      lastReviewedDate: countyHubLastVerifiedDate || null,
+                      verificationStatus: 'needs_review'
+                    }
+                  ]
+            }
+            correctionSuggestionType="other"
+            correctionTargetId={`${stateData.id}-${countyId}-local-surface`}
+            correctionTargetName={`${countyFormatted} County benefits surface`}
+            correctionButtonLabel="Report a source or routing issue"
+          />
 
         </main>
       );
@@ -1719,13 +1725,13 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       countyFormatted = formatParam(countyId);
       districtDetails = district;
       pageTitle = `${diagnosisFormatted} Support at ${district.name}`;
-      pageDescription = `Reviewing special education resources, local IEP goals, and inclusion metrics for students with ${diagnosisFormatted} in ${district.name}.`;
+      pageDescription = `Review district special education routing, planning prompts, and current public school-support links for students with ${diagnosisFormatted} in ${district.name}.`;
       scopeType = 'district';
     } else if (city) {
       countyId = city.countyId;
       countyFormatted = formatParam(countyId);
       pageTitle = `${diagnosisFormatted} Services in ${city.name}, ${stateCode}`;
-      pageDescription = `Find pediatric Speech & Occupational therapy clinics, sensory-inclusive play areas, and caregiver support networks in ${city.name}.`;
+      pageDescription = `Review gated local guidance for ${diagnosisFormatted} in ${city.name}, including current county-linked public benefit and school-support routes when they are available.`;
       scopeType = 'city';
     } else {
       notFound();
@@ -2377,7 +2383,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                       </a>.
                       {' '}Confirm with the{' '}
                       <a href={ihssWageDisclosure.officialConfirmUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>
-                        official county IHSS office directory
+                        {ihssWageDisclosure.officialConfirmLabel.toLowerCase()}
                       </a>.
                       {' '}Last checked: {ihssWageDisclosure.lastVerifiedDate}.
                     </p>
@@ -2472,7 +2478,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                   👶 {config.earlyInterventionLabel}
                 </h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: '1.6', margin: 0 }}>
-                  If your child is under three years old, early intervention services (speech, physical therapy, occupational therapy) are administered under the **{config.earlyInterventionLabel}** program. Early intervention is coordinated jointly by developmental agencies and school districts. The statutory timeline mandates that assessments and services are established promptly.
+                  If your child is under three years old, early intervention services (speech, physical therapy, occupational therapy) are administered under the **{config.earlyInterventionLabel}** program. Early intervention is coordinated jointly by developmental agencies and school districts. Families should confirm the current intake, assessment, and service-start timeline on the official program source that applies to their county.
                 </p>
               </div>
             </div>

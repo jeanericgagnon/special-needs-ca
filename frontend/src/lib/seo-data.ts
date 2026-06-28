@@ -562,10 +562,10 @@ Email: [Insert Email]`
     title: 'California IEP Timelines & Deadlines: A Parent\'s Cheat Sheet',
     metaTitle: 'California IEP Timeline | School Special Education Deadlines',
     metaDescription: 'A complete cheat sheet on California special education timelines. Know your rights regarding assessment plans, IEP meetings, and annual reviews.',
-    quickAnswer: 'California school districts follow statutory special-education timelines. After a written evaluation request, the district generally has 15 calendar days to provide an Assessment Plan, subject to the current statutory exceptions. Once you sign and return the consent plan, the district generally has 60 calendar days, excluding certain longer school breaks, to complete testing and hold the initial IEP meeting.',
+    quickAnswer: 'California school districts follow special-education timeline rules, but families should still confirm the current district and state guidance that applies to their request. After a written evaluation request, districts often use a roughly 15-calendar-day Assessment Plan window, and after signed consent they often use a roughly 60-calendar-day testing and initial IEP timeline, subject to current exceptions, school-break rules, and any updated state guidance.',
     tldrPoints: [
-      { label: 'Assessment Plan', value: '15 Calendar Days' },
-      { label: 'Consent to Meeting', value: '60 Calendar Days' },
+      { label: 'Assessment Plan', value: 'Confirm current district timeline' },
+      { label: 'Consent to Meeting', value: 'Confirm current post-consent timeline' },
       { label: 'IEP Review', value: 'Annually (365 Days)' },
       { label: 'Re-evaluations', value: 'Every 3 Years (Triennial)' }
     ],
@@ -578,8 +578,8 @@ Email: [Insert Email]`
     ],
     whatToDoFirst: [
       'Keep a detailed calendar log of the exact date your written request was received by the district.',
-      'Check the 15-day calendar deadline for the Assessment Plan.',
-      'Sign and return the Assessment Plan immediately to start the 60-day testing clock.',
+      'Check the current Assessment Plan timeline on the district or California special-education source that applies to your request.',
+      'Sign and return the Assessment Plan promptly, then confirm the current post-consent testing and meeting timeline that applies to your case.',
       'Request draft evaluation reports 5 business days prior to the IEP meeting.'
     ],
     documentsToGather: [
@@ -588,12 +588,12 @@ Email: [Insert Email]`
       { name: 'District Progress Reports & Report Cards', description: 'Demonstrating developmental or academic struggles.' }
     ],
     whoToCall: [
-      { name: 'District SELPA (Special Education Local Plan Area) Office', description: 'Contact your SELPA if the district violates statutory timelines.' }
+      { name: 'District SELPA (Special Education Local Plan Area) Office', description: 'Contact your SELPA if the district appears to be missing the current published timeline or assessment process.' }
     ],
-    whatToSay: 'The district is currently past the 15-day statutory deadline to deliver an Assessment Plan. I want this scheduled immediately or I will submit a compliance complaint to the California Department of Education.',
+    whatToSay: 'I submitted a written assessment request and want to confirm the current Assessment Plan timeline that applies to my child. If the district is already outside that timeline, please explain the reason in writing and tell me the next step for getting the plan issued.',
     commonMistakes: [
-      'Failing to count calendar days versus school days. The 15-day assessment plan deadline runs on calendar days, whereas the 60-day testing clock pauses during summer and winter breaks.',
-      'Assuming the school has all summer to complete testing. The clock freezes when school is out of session for more than 5 consecutive days.',
+      'Relying on an old timeline summary instead of checking the current district or California guidance for school-break exceptions and local process details.',
+      'Assuming the school has all summer to complete testing without confirming how the current break rules affect the timeline in your case.',
       'Failing to file a CDE Compliance Complaint when timelines are violated.'
     ],
     relatedGuides: [

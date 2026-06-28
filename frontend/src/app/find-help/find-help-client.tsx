@@ -166,12 +166,12 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
       category: 'IEP & Education',
       icon: <Clock size={24} color="#2563eb" />,
       description: stateConfig.code === 'CA'
-        ? 'Calculate assessment plan (15 days) and IEP initial meeting (60 days) statutory deadlines under California Education Code § 56321.'
+        ? 'Estimate California assessment-plan and initial-IEP timing, then confirm the current district or state special-education timeline before relying on a deadline.'
         : stateConfig.code === 'FL'
         ? 'Calculate Florida special education assessment and eligibility timelines (60 school days) under FAC Rule 6A-6.0331.'
         : stateConfig.code === 'TX'
         ? 'Calculate Texas school district evaluation (45 school days) and ARD/IEP meeting (30 days) timelines under TEA guidelines.'
-        : 'Calculate statutory timelines for school district evaluations, consent plans, and initial IEP meetings based on state and federal IDEA rules.',
+        : 'Estimate school-district evaluation and initial-IEP timing, then confirm the current state or district rules before relying on a deadline.',
       href: stateConfig.code === 'FL' ? '/deadlines/fl-ibudget-appeal' : '/deadlines/california-iep-timeline',
       actionText: 'Calculate Dates'
     },
