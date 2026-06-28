@@ -7,6 +7,8 @@ import {
   DEFAULT_CA_IHSS_ESTIMATE_HOURLY,
   DEFAULT_CA_IHSS_ESTIMATE_COUNTY_ID,
   CA_IHSS_WAGE_SOURCE_LABEL,
+  formatIhssHourlyEstimateValue,
+  formatIhssMonthlyEstimateValue,
   getDefaultCaIhssWageDisclosure,
   getIhssMonthlyEstimate,
   getIhssWageDisclosure,
@@ -29,6 +31,8 @@ assert.ok(countyOverride);
 assert.equal(countyOverride.hourlyRate, 19.64);
 assert.equal(countyOverride.fallbackUsed, false);
 assert.equal(getIhssMonthlyEstimate(countyOverride, 283), 5558.12);
+assert.equal(formatIhssHourlyEstimateValue(countyOverride), '$19.64/hour estimate');
+assert.equal(formatIhssMonthlyEstimateValue(getIhssMonthlyEstimate(countyOverride, 283)), '$5,558/month estimate');
 
 const conflictingOverride = getIhssWageDisclosure('california', 'los-angeles', 'Los Angeles', 18);
 assert.ok(conflictingOverride);
@@ -41,6 +45,8 @@ assert.ok(unknownCounty);
 assert.equal(unknownCounty.hourlyRate, null);
 assert.equal(unknownCounty.fallbackUsed, true);
 assert.match(unknownCounty.explanation, /still verifying/i);
+assert.equal(formatIhssHourlyEstimateValue(unknownCounty), 'Still being verified');
+assert.equal(formatIhssMonthlyEstimateValue(null), 'Still being verified');
 
 const unknownCountyOverride = getIhssWageDisclosure('california', 'unknown-county', 'Unknown County', 22.5);
 assert.ok(unknownCountyOverride);
@@ -63,6 +69,13 @@ const dashboardPanelSource = fs.readFileSync(
 assert.match(dashboardPanelSource, /getIhssWageDisclosure/);
 assert.match(dashboardPanelSource, /activeIhssDisclosure/);
 assert.match(dashboardPanelSource, /checked estimate for \{activeIhssCountyName\} County/i);
+
+const countyBenefitsPageSource = fs.readFileSync(
+  path.join(repoRoot, 'frontend/src/app/benefits/[state]/[[...slug]]/page.tsx'),
+  'utf8',
+);
+assert.match(countyBenefitsPageSource, /Source Page ↗/);
+assert.match(countyBenefitsPageSource, /\$\\?\{displayWage\.toFixed\(2\)\}\/hour estimate/);
 
 const behaviorLogSource = fs.readFileSync(
   path.join(repoRoot, 'frontend/src/app/ihss-behavior-log/behavior-log-client.tsx'),

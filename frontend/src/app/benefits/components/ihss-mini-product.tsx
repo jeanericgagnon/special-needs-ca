@@ -315,7 +315,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', lineHeight: '1.5', margin: 0 }}>
                   <strong>Maybe.</strong> A child with <strong>{diagnosisName}</strong> may qualify for California IHSS Protective Supervision if the county finds severe cognitive or behavioral safety risks that require constant monitoring.
                   The county may authorize a parent or relative provider arrangement when it documents that level of need and approves the provider setup.
-                  {' '}In <strong>{activeCountyName}</strong>, we currently show {countyDetails.wage !== null ? <>a checked public county rate estimate of <strong>${countyDetails.wage.toFixed(2)}/hour</strong></> : 'no county-specific rate estimate yet'}.
+                  {' '}In <strong>{activeCountyName}</strong>, we currently show {countyDetails.wage !== null ? <>a checked public county rate estimate of <strong>${countyDetails.wage.toFixed(2)}/hour estimate</strong></> : 'no county-specific rate estimate yet'}.
                   {' '}Actual approved hours and monthly pay depend on the county assessment, current local rate, and authorization.
                 </p>
                 {wageDisclosure && (

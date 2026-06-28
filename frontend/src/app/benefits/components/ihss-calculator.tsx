@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { DollarSign, ShieldCheck, Printer } from 'lucide-react';
 import {
+  formatIhssHourlyEstimateValue,
+  formatIhssMonthlyEstimateValue,
   formatIhssEstimateSourceLabel,
   formatIhssEstimateSummary,
   getIhssMonthlyEstimate,
@@ -83,7 +85,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
         In California, the In-Home Supportive Services (IHSS) program may pay parent providers when the county authorizes services and approves the provider arrangement. Estimate your family&apos;s hours and projected pay using <strong>{countyName} County&apos;s</strong>{' '}
         {estimatedWage !== null ? (
           <>
-            checked public county rate estimate of <strong>${estimatedWage.toFixed(2)}/hour</strong>.
+            checked public county rate estimate of <strong>{formatIhssHourlyEstimateValue(wageDisclosure)}</strong>.
           </>
         ) : (
           <>rate estimate once we verify the current county wage.</>
@@ -287,7 +289,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
         <h3 style={{ fontSize: '1.3rem', margin: '0 0 0.5rem 0' }}>In-Home Supportive Services (IHSS) Estimate Breakdown</h3>
         <p style={{ fontSize: '0.9rem', color: '#666' }}>
           Location: <strong>{countyName} County, CA</strong> | Caregiver Wage:{' '}
-          <strong>{estimatedWage !== null ? `$${estimatedWage.toFixed(2)}/hour estimate` : 'Still being verified'}</strong>
+          <strong>{formatIhssHourlyEstimateValue(wageDisclosure)}</strong>
         </p>
         
         <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
@@ -330,7 +332,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
             <tr style={{ fontWeight: 'bold', color: '#10b981' }}>
               <td style={{ padding: '0.5rem' }}>Estimated Monthly Pay</td>
               <td style={{ padding: '0.5rem' }}>
-                {monthlyPayout !== null ? `$${monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 2 })} / month` : 'Still being verified'}
+                {formatIhssMonthlyEstimateValue(monthlyPayout)}
               </td>
             </tr>
           </tbody>

@@ -207,10 +207,26 @@ export function formatIhssEstimateSummary(disclosure: IhssWageDisclosure | null)
   return `Based on a reviewed ${disclosure.countyName} County wage estimate of $${disclosure.hourlyRate.toFixed(2)}/hr. Confirm the current county rate before relying on it.`;
 }
 
+export function formatIhssHourlyEstimateValue(disclosure: IhssWageDisclosure | null): string {
+  if (!disclosure || disclosure.hourlyRate === null) {
+    return 'Still being verified';
+  }
+
+  return `$${disclosure.hourlyRate.toFixed(2)}/hour estimate`;
+}
+
 export function getIhssMonthlyEstimate(disclosure: IhssWageDisclosure | null, monthlyHours: number): number | null {
   if (!disclosure || disclosure.hourlyRate === null || !Number.isFinite(monthlyHours) || monthlyHours <= 0) {
     return null;
   }
 
   return disclosure.hourlyRate * monthlyHours;
+}
+
+export function formatIhssMonthlyEstimateValue(monthlyEstimate: number | null): string {
+  if (monthlyEstimate === null || !Number.isFinite(monthlyEstimate)) {
+    return 'Still being verified';
+  }
+
+  return `$${monthlyEstimate.toLocaleString(undefined, { maximumFractionDigits: 0 })}/month estimate`;
 }

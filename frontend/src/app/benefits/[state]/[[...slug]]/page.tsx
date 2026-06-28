@@ -2265,7 +2265,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                           View Guide <ArrowRight size={12} />
                         </Link>
                         <a href={prog.source_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: 'var(--text-light)' }}>
-                          Official Source ↗
+                          Source Page ↗
                         </a>
                       </div>
                     </div>
@@ -2361,7 +2361,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '1rem' }}>
                   <strong style={{ fontSize: '0.95rem' }}>{config.personalCareProgram} Rate Estimate</strong>
                   <span style={{ fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-main)' }}>
-                    {displayWage !== null ? `$${displayWage.toFixed(2)} / Hour` : 'Still being verified'}
+                    {displayWage !== null ? `$${displayWage.toFixed(2)}/hour estimate` : 'Still being verified'}
                   </span>
                   <span style={{ fontSize: '0.78rem', color: 'var(--text-light)', display: 'block', marginBottom: '0.4rem' }}>
                     {ihssWageDisclosure.explanation}
