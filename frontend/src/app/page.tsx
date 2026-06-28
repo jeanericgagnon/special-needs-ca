@@ -71,6 +71,21 @@ export default async function Home() {
       )}
       <WizardClient counties={counties} diagnosesList={DIAGNOSES} waitlists={waitlists} />
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem 3rem 1.5rem' }}>
+        <section
+          className="glass-panel"
+          style={{
+            padding: '1.5rem 1.75rem',
+            borderRadius: '20px',
+            background: 'rgba(245, 158, 11, 0.08)',
+            border: '1px solid rgba(245, 158, 11, 0.18)',
+            marginBottom: '1.5rem'
+          }}
+        >
+          <strong style={{ display: 'block', marginBottom: '0.5rem', color: '#92400e' }}>Important note</strong>
+          <p style={{ margin: 0, lineHeight: 1.6, color: '#92400e' }}>
+            Ablefull does not promise approval, eligibility, or payment amounts on this public homepage. Treat the matcher output as planning guidance, then confirm the current program, county, and deadline details against the linked public sources before relying on a next step.
+          </p>
+        </section>
         <SourceFreshnessDisclosure
           sources={HOMEPAGE_SOURCES}
           correctionSuggestionType="other"

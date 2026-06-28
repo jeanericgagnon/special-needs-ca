@@ -131,6 +131,12 @@ assert.match(
 
 assert.match(
   homepage,
+  /does not promise approval, eligibility, or payment amounts on this public homepage/i,
+  'Homepage should include an explicit public disclaimer so the indexable matcher surface does not read like a promise of eligibility or benefits.',
+);
+
+assert.match(
+  homepage,
   /correctionButtonLabel="Report a homepage source issue"/,
   'Homepage provenance disclosure should include a direct public correction CTA.',
 );
