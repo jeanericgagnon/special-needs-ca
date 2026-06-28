@@ -92,6 +92,7 @@ export type ClaimStatus = (typeof CLAIM_STATUSES)[number];
 export type DirectoryFoundationRecord = {
   id: string;
   name: string;
+  display_status?: string | null;
   categories?: string | null;
   focus_condition?: string | null;
   website?: string | null;
@@ -490,6 +491,7 @@ export function getStalenessLabel(record: DirectoryFoundationRecord): string | n
 
 export function isRenderableDirectoryFoundationRecord(record: DirectoryFoundationRecord): boolean {
   const issues = validateDirectoryFoundationRecord(record);
+  if ((record.display_status || 'published') !== 'published') return false;
   if (!hasMinimumPublishedProvenance(record)) return false;
   return !issues.includes('synthetic_source_url') &&
     !issues.includes('synthetic_website') &&

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { getCountyTruthEligibility, isPublicCountyOfficeEligible, isPublicRecordEligible } from '../frontend/src/lib/publicTruth.ts';
+import { isRenderableDirectoryFoundationRecord } from '../frontend/src/lib/directoryFoundation.ts';
 
 const publishedRecord = {
   display_status: 'published',
@@ -131,6 +132,30 @@ assert.equal(
   isPublicRecordEligible({
     ...publishedRecord,
     office_name: 'Placeholder County Services Record',
+  }),
+  false,
+);
+
+const publishedDirectoryRecord = {
+  id: 'dir-1',
+  name: 'Published Family Support Center',
+  display_status: 'published',
+  source_url: 'https://www.dds.ca.gov/rc/example',
+  source_type: 'official_state',
+  data_origin: 'scraped',
+  verification_status: 'official_verified',
+  confidence_score: 0.92,
+  last_verified_date: '2026-06-28',
+  last_scraped_at: '2026-06-28T00:00:00.000Z',
+  phone: '800-222-3333',
+  service_tags: 'respite',
+};
+
+assert.equal(isRenderableDirectoryFoundationRecord(publishedDirectoryRecord), true);
+assert.equal(
+  isRenderableDirectoryFoundationRecord({
+    ...publishedDirectoryRecord,
+    display_status: 'needs_review',
   }),
   false,
 );
