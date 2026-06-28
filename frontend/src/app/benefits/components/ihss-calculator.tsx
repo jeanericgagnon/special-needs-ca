@@ -248,7 +248,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
                 <>
                   <DollarSign size={28} />
                   {monthlyPayout.toLocaleString(undefined, { maximumFractionDigits: 0 })}
-                  <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / mo</span>
+                  <span style={{ fontSize: '1rem', color: 'var(--text-light)', fontWeight: 400 }}> / month estimate</span>
                 </>
               ) : (
                 <span style={{ fontSize: '1.15rem', color: 'var(--text-light)', fontWeight: 600 }}>Still being verified</span>
@@ -265,7 +265,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
                 </a>{' '}
                 • Confirm with{' '}
                 <a href={wageDisclosure.officialConfirmUrl} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>
-                  official county IHSS office directory
+                  the current official county IHSS office directory
                 </a>{' '}
                 • Last checked {wageDisclosure.lastVerifiedDate}
               </span>

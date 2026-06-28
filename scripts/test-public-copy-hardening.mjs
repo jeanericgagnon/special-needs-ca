@@ -18,6 +18,7 @@ const appealLetterGenerator = fs.readFileSync(path.join(repoRoot, 'frontend/src/
 const countyDiagnosisPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/[state]/[diagnosis]/[county]/page.tsx'), 'utf8');
 const countiesClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/counties-client.tsx'), 'utf8');
 const countiesStatePage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/page.tsx'), 'utf8');
+const ihssCalculator = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/components/ihss-calculator.tsx'), 'utf8');
 const seoData = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-data.ts'), 'utf8');
 const stateConfigs = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/stateConfigs.ts'), 'utf8');
 
@@ -63,10 +64,16 @@ assert.match(
   'County benefits page should label IHSS values as estimates.'
 );
 
+assert.match(
+  ihssCalculator,
+  /\/ month estimate/,
+  'Public IHSS calculator payout display should label monthly caregiver pay as an estimate.'
+);
+
 assert.doesNotMatch(
-  countyBenefitsPage,
-  /\$\\?\{wageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hr/,
-  'County benefits page should avoid rendering IHSS values like hard rates.'
+  `${countyBenefitsPage}\n${ihssCalculator}`,
+  /\$\\?\{wageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hr|\/ mo\b/,
+  'Public IHSS surfaces should avoid hard-rate shorthand and unlabeled monthly pay displays.'
 );
 
 assert.match(
