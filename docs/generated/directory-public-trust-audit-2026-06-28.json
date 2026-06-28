@@ -1,0 +1,682 @@
+{
+  "generatedAt": "2026-06-28T00:24:27.778Z",
+  "dbPathRelative": "frontend/ca_disability_navigator.db",
+  "tables": [
+    {
+      "table": "iep_advocates",
+      "label": "IEP Advocates",
+      "totalRows": 137,
+      "publicEligibleRows": 40,
+      "renderableRows": 40,
+      "blockedRows": 97,
+      "topIssues": [
+        {
+          "issue": "invalid_public_phone",
+          "count": 97
+        },
+        {
+          "issue": "synthetic_source_url",
+          "count": 96
+        },
+        {
+          "issue": "synthetic_website",
+          "count": 96
+        }
+      ],
+      "samples": [
+        {
+          "id": "ga-adv-legal-statewide",
+          "name": "Georgia Advocacy Office Legal Services",
+          "source_url": "https://thegao.org",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(404) 885-1234",
+          "email": "info@thegao.org",
+          "website": "https://thegao.org",
+          "issues": [
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-adv-local-legal-kings-ny",
+          "name": "Kings Special Needs Advocacy & Legal Aid",
+          "source_url": "https://www.legal.kings-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0211",
+          "email": "legal@kings-ny.gov",
+          "website": "https://www.legal.kings-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-prov-local-therapy-kings-ny",
+          "name": "Kings Pediatric Therapy Services",
+          "source_url": "https://www.pediatrictherapy.kings-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0212",
+          "email": "therapy@kings-ny.gov",
+          "website": "https://www.pediatrictherapy.kings-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-adv-local-legal-queens-ny",
+          "name": "Queens Special Needs Advocacy & Legal Aid",
+          "source_url": "https://www.legal.queens-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0211",
+          "email": "legal@queens-ny.gov",
+          "website": "https://www.legal.queens-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-prov-local-therapy-queens-ny",
+          "name": "Queens Pediatric Therapy Services",
+          "source_url": "https://www.pediatrictherapy.queens-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0212",
+          "email": "therapy@queens-ny.gov",
+          "website": "https://www.pediatrictherapy.queens-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-adv-local-legal-new-york-ny",
+          "name": "New York Special Needs Advocacy & Legal Aid",
+          "source_url": "https://www.legal.new-york-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0211",
+          "email": "legal@new-york-ny.gov",
+          "website": "https://www.legal.new-york-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-prov-local-therapy-new-york-ny",
+          "name": "New York Pediatric Therapy Services",
+          "source_url": "https://www.pediatrictherapy.new-york-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0212",
+          "email": "therapy@new-york-ny.gov",
+          "website": "https://www.pediatrictherapy.new-york-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-adv-local-legal-bronx-ny",
+          "name": "Bronx Special Needs Advocacy & Legal Aid",
+          "source_url": "https://www.legal.bronx-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0211",
+          "email": "legal@bronx-ny.gov",
+          "website": "https://www.legal.bronx-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-prov-local-therapy-bronx-ny",
+          "name": "Bronx Pediatric Therapy Services",
+          "source_url": "https://www.pediatrictherapy.bronx-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0212",
+          "email": "therapy@bronx-ny.gov",
+          "website": "https://www.pediatrictherapy.bronx-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-adv-local-legal-richmond-ny",
+          "name": "Richmond Special Needs Advocacy & Legal Aid",
+          "source_url": "https://www.legal.richmond-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0211",
+          "email": "legal@richmond-ny.gov",
+          "website": "https://www.legal.richmond-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-prov-local-therapy-richmond-ny",
+          "name": "Richmond Pediatric Therapy Services",
+          "source_url": "https://www.pediatrictherapy.richmond-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0212",
+          "email": "therapy@richmond-ny.gov",
+          "website": "https://www.pediatrictherapy.richmond-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "ny-adv-local-legal-nassau-ny",
+          "name": "Nassau Special Needs Advocacy & Legal Aid",
+          "source_url": "https://www.legal.nassau-ny.gov",
+          "verification_status": "source_listed",
+          "display_status": "needs_review",
+          "phone": "(800) 555-0211",
+          "email": "legal@nassau-ny.gov",
+          "website": "https://www.legal.nassau-ny.gov",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "totalRows": 1,
+      "publicEligibleRows": 0,
+      "renderableRows": 0,
+      "blockedRows": 1,
+      "topIssues": [
+        {
+          "issue": "invalid_public_email",
+          "count": 1
+        },
+        {
+          "issue": "invalid_public_phone",
+          "count": 1
+        },
+        {
+          "issue": "invalid_service_tags",
+          "count": 1
+        },
+        {
+          "issue": "missing_data_origin",
+          "count": 1
+        },
+        {
+          "issue": "missing_last_checked_signal",
+          "count": 1
+        },
+        {
+          "issue": "missing_source_type",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "id": "rp1",
+          "name": "Kids Clinic",
+          "source_url": "https://clinic.org/path",
+          "verification_status": "verified",
+          "display_status": "needs_review",
+          "phone": "(800) 555-2222",
+          "email": "clinic@example.org",
+          "website": null,
+          "issues": [
+            "invalid_service_tags",
+            "missing_source_type",
+            "missing_data_origin",
+            "missing_last_checked_signal",
+            "invalid_public_phone",
+            "invalid_public_email"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "totalRows": 1775,
+      "publicEligibleRows": 1390,
+      "renderableRows": 1390,
+      "blockedRows": 385,
+      "topIssues": [
+        {
+          "issue": "invalid_public_phone",
+          "count": 385
+        },
+        {
+          "issue": "synthetic_source_url",
+          "count": 42
+        },
+        {
+          "issue": "synthetic_website",
+          "count": 42
+        },
+        {
+          "issue": "invalid_availability_status",
+          "count": 1
+        },
+        {
+          "issue": "invalid_public_next_step_phone",
+          "count": 1
+        },
+        {
+          "issue": "invalid_service_tags",
+          "count": 1
+        },
+        {
+          "issue": "missing_data_origin",
+          "count": 1
+        },
+        {
+          "issue": "missing_last_checked_signal",
+          "count": 1
+        },
+        {
+          "issue": "missing_source_type",
+          "count": 1
+        }
+      ],
+      "samples": [
+        {
+          "id": "np1",
+          "name": "Parent Support Center",
+          "source_url": "https://nonprofit.org/programs",
+          "verification_status": "verified",
+          "display_status": "needs_review",
+          "phone": "(800) 555-8888",
+          "email": null,
+          "website": "https://nonprofit.org",
+          "issues": [
+            "invalid_availability_status",
+            "invalid_service_tags",
+            "missing_source_type",
+            "missing_data_origin",
+            "missing_last_checked_signal",
+            "invalid_public_phone",
+            "invalid_public_next_step_phone"
+          ]
+        },
+        {
+          "id": "np-gen-alpine",
+          "name": "Alpine Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Alpine%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(707) 555-3022",
+          "email": null,
+          "website": "https://www.google.com/search?q=Alpine%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-amador",
+          "name": "Amador Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Amador%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(530) 555-6418",
+          "email": null,
+          "website": "https://www.google.com/search?q=Amador%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-butte",
+          "name": "Butte Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Butte%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(530) 555-8598",
+          "email": null,
+          "website": "https://www.google.com/search?q=Butte%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-calaveras",
+          "name": "Calaveras Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Calaveras%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(530) 555-9115",
+          "email": null,
+          "website": "https://www.google.com/search?q=Calaveras%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-colusa",
+          "name": "Colusa Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Colusa%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(707) 555-6347",
+          "email": null,
+          "website": "https://www.google.com/search?q=Colusa%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-del-norte",
+          "name": "Del Norte Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Del%20Norte%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(707) 555-7840",
+          "email": null,
+          "website": "https://www.google.com/search?q=Del%20Norte%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-el-dorado",
+          "name": "El Dorado Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=El%20Dorado%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(530) 555-1676",
+          "email": null,
+          "website": "https://www.google.com/search?q=El%20Dorado%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-glenn",
+          "name": "Glenn Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Glenn%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(916) 555-2762",
+          "email": null,
+          "website": "https://www.google.com/search?q=Glenn%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-humboldt",
+          "name": "Humboldt Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Humboldt%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(707) 555-3220",
+          "email": null,
+          "website": "https://www.google.com/search?q=Humboldt%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-imperial",
+          "name": "Imperial Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Imperial%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(760) 555-3115",
+          "email": null,
+          "website": "https://www.google.com/search?q=Imperial%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        },
+        {
+          "id": "np-gen-inyo",
+          "name": "Inyo Family Resource & Support Center",
+          "source_url": "https://www.google.com/search?q=Inyo%20County%20family%20resource%20center%20special%20needs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "(707) 555-9341",
+          "email": null,
+          "website": "https://www.google.com/search?q=Inyo%20County%20family%20resource%20center%20special%20needs",
+          "issues": [
+            "synthetic_source_url",
+            "synthetic_website",
+            "invalid_public_phone"
+          ]
+        }
+      ]
+    },
+    {
+      "table": "county_offices",
+      "label": "County Offices",
+      "totalRows": 720,
+      "publicEligibleRows": 20,
+      "renderableRows": 19,
+      "blockedRows": 701,
+      "topIssues": [
+        {
+          "issue": "not_public_county_office_eligible",
+          "count": 701
+        },
+        {
+          "issue": "not_public_record_eligible",
+          "count": 700
+        }
+      ],
+      "samples": [
+        {
+          "id": "office1",
+          "name": "LA IHSS Office",
+          "source_url": "https://county.example.org/office",
+          "verification_status": "verified",
+          "display_status": "needs_review",
+          "phone": "(800) 555-9999",
+          "email": "test@example.org",
+          "website": "https://county.example.org/office",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-alameda-medi-cal",
+          "name": "Alameda County Social Services - Medi-Cal Intake",
+          "source_url": "https://www.benefitscal.com",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 281-9799",
+          "email": "medi-cal@alamedacounty.ca.gov",
+          "website": "https://www.benefitscal.com",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-alameda-ccs",
+          "name": "Alameda County Health Department - CCS Program",
+          "source_url": "https://www.alamedacounty.ca.gov/public-health/ccs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 288-4584",
+          "email": "ccs@alamedacounty.ca.gov",
+          "website": "https://www.alamedacounty.ca.gov/public-health/ccs",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-alpine-ihss",
+          "name": "Alpine County Social Services - IHSS Division",
+          "source_url": "https://www.alpinecounty.ca.gov/ihss",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 510-2020",
+          "email": "ihss-intake@alpinecounty.ca.gov",
+          "website": "https://www.alpinecounty.ca.gov/ihss",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-alpine-medi-cal",
+          "name": "Alpine County Social Services - Medi-Cal Intake",
+          "source_url": "https://www.benefitscal.com",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 281-9799",
+          "email": "medi-cal@alpinecounty.ca.gov",
+          "website": "https://www.benefitscal.com",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-alpine-ccs",
+          "name": "Alpine County Health Department - CCS Program",
+          "source_url": "https://www.alpinecounty.ca.gov/public-health/ccs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 288-4584",
+          "email": "ccs@alpinecounty.ca.gov",
+          "website": "https://www.alpinecounty.ca.gov/public-health/ccs",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-amador-ihss",
+          "name": "Amador County Social Services - IHSS Division",
+          "source_url": "https://www.amadorcounty.ca.gov/ihss",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 510-2020",
+          "email": "ihss-intake@amadorcounty.ca.gov",
+          "website": "https://www.amadorcounty.ca.gov/ihss",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-amador-medi-cal",
+          "name": "Amador County Social Services - Medi-Cal Intake",
+          "source_url": "https://www.benefitscal.com",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 281-9799",
+          "email": "medi-cal@amadorcounty.ca.gov",
+          "website": "https://www.benefitscal.com",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-amador-ccs",
+          "name": "Amador County Health Department - CCS Program",
+          "source_url": "https://www.amadorcounty.ca.gov/public-health/ccs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 288-4584",
+          "email": "ccs@amadorcounty.ca.gov",
+          "website": "https://www.amadorcounty.ca.gov/public-health/ccs",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-butte-ihss",
+          "name": "Butte County Social Services - IHSS Division",
+          "source_url": "https://www.buttecounty.ca.gov/ihss",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 510-2020",
+          "email": "ihss-intake@buttecounty.ca.gov",
+          "website": "https://www.buttecounty.ca.gov/ihss",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-butte-medi-cal",
+          "name": "Butte County Social Services - Medi-Cal Intake",
+          "source_url": "https://www.benefitscal.com",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 281-9799",
+          "email": "medi-cal@buttecounty.ca.gov",
+          "website": "https://www.benefitscal.com",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        },
+        {
+          "id": "off-butte-ccs",
+          "name": "Butte County Health Department - CCS Program",
+          "source_url": "https://www.buttecounty.ca.gov/public-health/ccs",
+          "verification_status": "generated_county_fallback",
+          "display_status": "needs_review",
+          "phone": "Phone: (800) 288-4584",
+          "email": "ccs@buttecounty.ca.gov",
+          "website": "https://www.buttecounty.ca.gov/public-health/ccs",
+          "issues": [
+            "not_public_record_eligible",
+            "not_public_county_office_eligible"
+          ]
+        }
+      ]
+    }
+  ]
+}
