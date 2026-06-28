@@ -43,12 +43,16 @@ export default function SourceFreshnessDisclosure({
       }}
     >
       <h4 style={{ fontSize: '0.88rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--primary-color)', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-        <ShieldCheck size={16} /> Sources, Review Dates, and Confidence
+        <ShieldCheck size={16} /> Sources, Last Checked Dates, Confidence, and Estimate Notes
       </h4>
       
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.5 }}>
-          We show the public sources we relied on, when we last reviewed them, and whether each item is tied to a reviewed public source, a linked public source, or still needs more verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current source for your county or program. If something looks wrong, please report a correction before relying on it.
+          We show the public sources we relied on, when we last checked them, and whether each item is tied to a checked public source, a linked public source, or still needs more verification. Treat any rates, timelines, and eligibility notes on this page as guidance until you confirm the current source for your county or program. If something looks wrong, please report a correction before relying on it.
+        </p>
+
+        <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', margin: 0, lineHeight: 1.45 }}>
+          Any wage, payment, savings, or monthly-value number shown on this page should be treated as an estimate unless the linked source explicitly publishes a current amount for your exact program, county, or situation.
         </p>
 
         <div>
@@ -75,7 +79,7 @@ export default function SourceFreshnessDisclosure({
               ? String(src.sourceType).replace(/_/g, ' ')
               : null;
             
-            let dateText = 'Unknown';
+            let dateText = 'Review date pending';
             if (src.lastReviewedDate) {
               try {
                 dateText = new Date(src.lastReviewedDate).toLocaleDateString('en-US', {
@@ -120,7 +124,7 @@ export default function SourceFreshnessDisclosure({
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem', color: 'var(--text-light)' }}>
                   <Calendar size={12} />
-                  <span>Last reviewed: {dateText}</span>
+                  <span>Last checked: {dateText}</span>
                 </div>
 
                 {(sourceTypeLabel || confidenceLabel) && (
@@ -144,7 +148,7 @@ export default function SourceFreshnessDisclosure({
                       marginTop: '0.2rem'
                     }}
                   >
-                    Open Source <ExternalLink size={11} />
+                    Open Source Page <ExternalLink size={11} />
                   </a>
                 )}
               </div>

@@ -145,6 +145,15 @@ export type DirectoryFoundationRecord = {
   accepts_medi_cal?: number | null;
 };
 
+const PLACEHOLDER_ADDRESS_PATTERNS = [
+  /\bexample\b/i,
+  /\bplaceholder\b/i,
+  /\bdummy\b/i,
+  /\bfake\b/i,
+  /\bstill being verified\b/i,
+  /\bsource under review\b/i,
+] as const;
+
 const AVAILABILITY_STATUS_SET = new Set(AVAILABILITY_STATUSES);
 const NEXT_STEP_TYPE_SET = new Set(NEXT_STEP_TYPES);
 const FUNDING_STATUS_SET = new Set(FUNDING_STATUSES);
@@ -162,6 +171,7 @@ const INVALID_SOURCE_HOSTS = [
 const PLACEHOLDER_SITE_HOSTS = [
   /^example\.(com|org|net)$/i,
   /^www\.example\.(com|org|net)$/i,
+  /(^|\.)example\.(com|org|net)$/i,
   /^localhost$/i,
   /^127\.0\.0\.1$/i,
   /^0\.0\.0\.0$/i,
@@ -178,6 +188,7 @@ const PLACEHOLDER_EMAIL_PATTERNS = [
   /^placeholder@/i,
 ] as const;
 const PLACEHOLDER_NAME_PATTERNS = [
+  /\bexample\b/i,
   /\bplaceholder\b/i,
   /\bdummy\b/i,
   /\bfake\b/i,
@@ -280,11 +291,13 @@ export function getDirectoryAvailabilityDisplayLabel(record: Partial<DirectoryFo
 }
 
 export function hasDirectoryPanelNextStepDetails(record: Partial<DirectoryFoundationRecord>): boolean {
+  const hasMeaningfulNextStepPhone = isMeaningfulDirectoryPhone(record.next_step_phone);
+  const hasMeaningfulNextStepEmail = isMeaningfulDirectoryEmail(record.next_step_email);
   return Boolean(
     record.next_step_type ||
     record.next_step_label ||
-    record.next_step_phone ||
-    record.next_step_email ||
+    hasMeaningfulNextStepPhone ||
+    hasMeaningfulNextStepEmail ||
     record.next_step_instructions ||
     record.requirements ||
     record.walk_in_available === 1 ||
@@ -293,11 +306,13 @@ export function hasDirectoryPanelNextStepDetails(record: Partial<DirectoryFounda
 }
 
 export function hasDirectorySampleNextStepSummary(record: Partial<DirectoryFoundationRecord>): boolean {
+  const hasMeaningfulNextStepPhone = isMeaningfulDirectoryPhone(record.next_step_phone);
+  const hasMeaningfulNextStepEmail = isMeaningfulDirectoryEmail(record.next_step_email);
   return Boolean(
     record.next_step_type ||
     record.next_step_label ||
-    record.next_step_phone ||
-    record.next_step_email
+    hasMeaningfulNextStepPhone ||
+    hasMeaningfulNextStepEmail
   );
 }
 
@@ -358,6 +373,13 @@ export function isMeaningfulDirectoryWebsite(url?: string | null): boolean {
   const trimmed = String(url || '').trim();
   if (!trimmed) return false;
   return !isSyntheticDirectoryUrl(trimmed);
+}
+
+export function isMeaningfulDirectoryAddress(address?: string | null): boolean {
+  const trimmed = String(address || '').trim();
+  if (!trimmed) return false;
+  if (trimmed.length < 8) return false;
+  return !PLACEHOLDER_ADDRESS_PATTERNS.some((pattern) => pattern.test(trimmed));
 }
 
 export function isMeaningfulDirectoryName(name?: string | null): boolean {

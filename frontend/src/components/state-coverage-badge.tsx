@@ -6,7 +6,8 @@
  * behind each state.
  *
  * Classifications:
- *   launch_depth → California only. Deepest current public coverage.
+ *   launch_depth → States with the deepest current public launch coverage.
+ *                  This still does not imply exhaustive county-by-county completeness.
  *   pilot        → All other states. Source-backed pilot coverage.
  *                  Priority states have stronger state and local routing depth.
  *                  Remaining states focus on statewide routing and high-trust guides.
@@ -15,7 +16,9 @@
 import React from 'react';
 import { ShieldCheck, Sparkles } from 'lucide-react';
 
-// States with the deepest current public launch coverage
+// States with the deepest current public launch coverage.
+// This label is intentionally narrower than "exhaustive" because some
+// local county families still remain gated while review continues.
 const EXHAUSTIVE_STATES = new Set(['california']);
 
 const PRIORITY_PILOT_STATES = new Set([
@@ -59,7 +62,7 @@ export function StateCoverageBadge({ stateId, stateName }: StateCoverageBadgePro
         }}
       >
         <ShieldCheck size={12} />
-        Deep Launch Coverage
+        Deep Reviewed Coverage
       </div>
     );
   }

@@ -85,11 +85,12 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
         In California, the In-Home Supportive Services (IHSS) program may pay parent providers when the county authorizes services and approves the provider arrangement. Estimate your family&apos;s hours and projected pay using <strong>{countyName} County&apos;s</strong>{' '}
         {estimatedWage !== null ? (
           <>
-            checked public county rate estimate of <strong>{formatIhssHourlyEstimateValue(wageDisclosure)}</strong>.
+            checked public county hourly pay estimate of <strong>{formatIhssHourlyEstimateValue(wageDisclosure)}</strong>.
           </>
         ) : (
-          <>rate estimate once we verify the current county wage.</>
+          <>current county pay estimate once we verify the latest public wage reference.</>
         )}
+        {' '}Treat this as planning guidance, not a county pay guarantee.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
@@ -222,7 +223,7 @@ export default function IhssCalculator({ countyName, wageRate }: IhssCalculatorP
                 ⭐ Protective Supervision Active
               </span>
               <p style={{ fontSize: '0.8rem', color: '#166534', margin: 0, lineHeight: 1.4 }}>
-                If Protective Supervision is approved, basic personal care hours are integrated. The county then evaluates the case against either <strong>195 hours/month</strong> (Non-Severely Impaired) or <strong>283 hours/month</strong> (Severely Impaired).
+                If Protective Supervision is later authorized, basic personal care hours are integrated. The county then evaluates the case against either <strong>195 hours/month</strong> (Non-Severely Impaired) or <strong>283 hours/month</strong> (Severely Impaired).
               </p>
             </div>
           )}

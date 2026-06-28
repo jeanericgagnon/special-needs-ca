@@ -46,6 +46,36 @@ function LocalVerificationNotice({
   );
 }
 
+function CountyVerificationPendingBanner({
+  countyName,
+}: {
+  countyName: string;
+}) {
+  return (
+    <div style={{ background: 'linear-gradient(90deg, #fffbeb 0%, #fef3c7 100%)', border: '1px solid #fde68a', borderRadius: '16px', padding: '1rem 1.1rem', color: '#92400e', fontSize: '0.9rem' }}>
+      <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+        <span>⚠️</span>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+          <div>
+            <strong style={{ display: 'block', fontSize: '0.95rem', marginBottom: '0.15rem' }}>We are still verifying local entries</strong>
+            <p style={{ margin: 0, lineHeight: 1.5 }}>
+              Some local routing or office details for {countyName} County are still under review. This page only shows public records that passed the current source and trust checks, and thin local sections stay noindexed until more review is complete.
+            </p>
+          </div>
+          <div>
+            <ContributionModal
+              suggestionType="other"
+              targetId={`${countyName.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-county-verification`}
+              targetName={`${countyName} County local verification`}
+              buttonLabel="Suggest a local source to review"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Formatting helpers
 function formatParam(val: string): string {
   return val
@@ -239,8 +269,8 @@ export default async function SEOLandingPage({ params }: Props) {
     id: string;
     type: 'regional-center' | 'school-board';
     name: string;
-    address: string;
-    phone: string;
+    address?: string;
+    phone?: string;
     description: string;
     x: number;
     y: number;
@@ -254,7 +284,7 @@ export default async function SEOLandingPage({ params }: Props) {
       id: 'rc-1',
       type: 'regional-center',
       name: eligibleRegionalCenters[0].name,
-      address: `Intake Desk, ${countyFormatted}, ${stateCode}`,
+      address: eligibleRegionalCenters[0].office_locations || undefined,
       phone: eligibleRegionalCenters[0].intake_phone,
       description: `${config.catchmentName} coordinating ${config.waiverProgram} developmental support: ${eligibleRegionalCenters[0].catchment_boundaries}`,
       x: 210,
@@ -267,7 +297,7 @@ export default async function SEOLandingPage({ params }: Props) {
       id: 'sd-1',
       type: 'school-board',
       name: eligibleDistricts[0].name,
-      address: `Special Education Department, ${countyFormatted}, ${stateCode}`,
+      address: undefined,
       phone: eligibleDistricts[0].spec_ed_contact_phone || '',
       description: `Special education district coordinator responsible for IEP evaluations, placement, and inclusion LRE classrooms.`,
       x: 580,
@@ -325,12 +355,6 @@ export default async function SEOLandingPage({ params }: Props) {
       'telephone': sd.spec_ed_contact_phone,
       'email': sd.spec_ed_contact_email,
       'url': sd.website,
-      'address': {
-        '@type': 'PostalAddress',
-        'addressLocality': countyFormatted,
-        'addressRegion': stateCode,
-        'addressCountry': 'US'
-      },
       'description': `${sd.name} Special Education department in ${countyFormatted} County. Inclusion rate: ${sd.inclusion_rate_pct}%. SDC self-contained rate: ${sd.self_contained_rate_pct}%.`
     }))
   };
@@ -344,14 +368,9 @@ export default async function SEOLandingPage({ params }: Props) {
       'email': adv.email,
       'url': adv.website,
       'image': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400',
-      'description': `${adv.name} is a professional special education IEP advocate serving ${countyFormatted} County. Credentials: ${adv.credentials}. Rate: ${adv.price_rate}. Experience: ${adv.experience_years} years.`,
+      'description': `${adv.name} is a professional special education IEP advocate with public routing evidence for ${countyFormatted} County. Credentials: ${adv.credentials}. Rate: ${adv.price_rate}. Experience: ${adv.experience_years} years.`,
       'priceRange': adv.price_rate,
-      'address': {
-        '@type': 'PostalAddress',
-        'addressLocality': countyFormatted,
-        'addressRegion': stateCode,
-        'addressCountry': 'US'
-      }
+      'areaServed': adv.counties_served || undefined
     }))
   };
 
@@ -412,6 +431,12 @@ export default async function SEOLandingPage({ params }: Props) {
           <PrintButton label="Print PDF Directory Guide" />
         </div>
       </div>
+
+      {!truth.publicSafe && (
+        <div style={{ marginBottom: '2rem' }}>
+          <CountyVerificationPendingBanner countyName={countyFormatted} />
+        </div>
+      )}
 
       {/* NEW: Interactive Coordinates Map Canvas */}
       {mapResources.length > 0 && (

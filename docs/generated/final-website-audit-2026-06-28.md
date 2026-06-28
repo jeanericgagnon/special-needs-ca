@@ -51,12 +51,13 @@ This is intentionally broader than the launch-only audit. It covers the public w
 | / | Trust framing, search entry points, strong downstream data for benefits, county help, and knowledge journeys. | strong | Not data-blocked itself; value depends on downstream public surfaces staying truthful and deep. |
 | /find-help | Providers, nonprofits, advocates, directory-foundation metadata, truthful local contact paths, and competitive-help categories. | partial | Providers are thin, competitive-help is not live, and nonprofit/advocate metadata is sparse. |
 | /benefits and /benefits/[state]/[[...slug]] | Programs, eligibility, documents, steps, appeals, forms, waitlists, waiver typing, DD routing, and knowledge support. | strong_but_not_exhaustive | Waitlists are shallower than the rest of the program layer and waiver typing is still sparse. |
+| /benefits-matcher | A crawlable, source-backed entry page that explains how diagnosis, age, county, and needs flow into programs, forms, contacts, deadlines, and appeals before families save progress privately. | strong | The landing page is live and source-backed, but its downstream value still depends on benefits, county, and knowledge surfaces staying truthful and deep. |
 | /counties, /counties/[state], /counties/[state]/[slug] | County offices, DD routing, education routing, local nonprofits, truthful providers, and public-truth gating. | partial | Routing is strong, but county-level local care/provider depth remains thin. |
 | /advocates | Truth-safe advocate records, county coverage, contact signals, specialties, and public-eligibility gating. | thin | Advocate count is broad, but truth-safe local depth is still an active blocker and California remains strict-gold blocked here. |
 | /conditions/[slug], /situations/[slug], /programs/[slug] | Condition taxonomy, functional-needs mapping, linked programs, routing, and knowledge content. | partial | Reference taxonomy is strong, but knowledge depth and competitive-help depth are still limited. |
 | /forms and /forms/[slug] | Official forms, official library roots, appeal/download URLs, and state coverage accounting. | partial | Live form count is strong, but only 7 states are fully cleared and 37 are still fallback-authoring states. |
 | /appeals-center and /deadlines/[slug] | Appeal info, deadline logic, waitlists, official forms, and knowledge explainers. | partial | Appeal rows are strong, but waitlist depth and knowledge explainers still need more depth. |
-| /financial-planning, /regional-center-funding, /ihss-behavior-log, /iep-goals | Knowledge content, program/routing context, and runtime persistence where applicable. | partial | These surfaces exist, but supporting content/runtime depth is still uneven. |
+| /financial-planning, /regional-center-funding, /ihss-behavior-log, /iep-goals, /forms-checklist | Knowledge content, program/routing context, and runtime persistence where applicable. | partial | These surfaces exist, but supporting content/runtime depth is still uneven. |
 | /dashboard, /login, /register, /share/log/[token] | Family cases, child profiles, reminders, document tracking, collaboration threads, and sharing tokens. | demo_only | Schema exists, but most runtime tables are empty or demo-only in the checked-in DB. |
 
 ## Data Family Audit
@@ -74,7 +75,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: strong
 - Final website needs: 50-state coverage, full county coverage, and junction-based service-area mapping without fake county cloning.
-- What we have now: 50 states; 3050 counties; 183 regional-center county links; 174 education county links; 1229 advocate county links; 0 virtual service-area county links
+- What we have now: 50 states; 3050 counties; 244 regional-center county links; 174 education county links; 1229 advocate county links; 0 virtual service-area county links
 - Current queue or control-plane state: No major geography scrape backlog remains in the broad runnable universe.
 - Main gap: Foundation-grade. Keep using junction tables instead of fake local duplication.
 
@@ -100,8 +101,8 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: strong_but_not_exhaustive
 - Final website needs: Truthful county office lookup, statewide DD/IDD intake paths, regional or district education routing, and complete trust metadata.
-- What we have now: 720 county offices; 120 state resource agencies; 174 regional education agencies; 649 school districts; Office verification mix: generated_county_fallback=651; needs_review=49; source_listed=14; official_verified=6; State routing verification mix: source_listed=57; verified=33; official_verified=30
-- Current staging or authored work: 14 staged county offices; 0 staged DD routing rows; 0 staged regional education rows; 0 staged school district rows; 50/50 state coverage live; 0 ready rows unresolved; 47/50 regional state coverage; 0 ready rows unresolved
+- What we have now: 720 county offices; 134 state resource agencies; 174 regional education agencies; 649 school districts; Office verification mix: generated_county_fallback=649; needs_review=49; source_listed=14; official_verified=8; State routing verification mix: source_listed=57; official_verified=44; verified=33
+- Current staging or authored work: 17 staged county offices; 0 staged DD routing rows; 0 staged regional education rows; 0 staged school district rows; 50/50 state coverage live; 0 ready rows unresolved; 47/50 regional state coverage; 0 ready rows unresolved
 - Current queue or control-plane state: 50/50 state coverage live; 0 ready rows remain; 40 repair rows remain; 94% coverage / 100% queue closure
 - Main gap: This is one of the strongest public layers, but regional education is still 47/50 states and final repair-ledger cleanup remains.
 

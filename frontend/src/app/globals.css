@@ -150,7 +150,8 @@ input:focus, select:focus, textarea:focus {
 
 /* Layout Utilities */
 .container {
-  max-width: 1000px;
+  width: 100%;
+  max-width: min(1000px, 100vw);
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -777,5 +778,8 @@ input[type="checkbox"] {
   .glass-panel {
     padding: 1.25rem !important;
     border-radius: 16px !important;
+  }
+  .county-hero-ornament {
+    display: none !important;
   }
 }

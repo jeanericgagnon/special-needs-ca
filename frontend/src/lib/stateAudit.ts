@@ -31,35 +31,32 @@ let auditData: AuditData | null = null;
 const priorityQueueData: PriorityQueueState[] = [];
 let runtimeLaunchRegistry: RuntimeLaunchRegistry | null = null;
 
+function resolveGeneratedArtifact(filename: string): string | null {
+  const candidates = [
+    path.resolve(process.cwd(), 'data/generated', filename),
+    path.resolve(process.cwd(), 'frontend/../data/generated', filename),
+    path.resolve(process.cwd(), '../data/generated', filename),
+    path.resolve(process.cwd(), '../../data/generated', filename),
+  ];
+
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+
+  return null;
+}
+
 if (typeof window === 'undefined') {
   try {
-    const auditPaths = [
-      path.resolve(process.cwd(), 'data/generated/all_state_california_grade_audit_v3.json'),
-      path.resolve(process.cwd(), '../data/generated/all_state_california_grade_audit_v3.json'),
-    ];
-    let auditPath = auditPaths[0];
-    for (const p of auditPaths) {
-      if (fs.existsSync(p)) {
-        auditPath = p;
-        break;
-      }
-    }
-    if (fs.existsSync(auditPath)) {
+    const auditPath = resolveGeneratedArtifact('all_state_california_grade_audit_v3.json');
+    if (auditPath) {
       auditData = JSON.parse(fs.readFileSync(auditPath, 'utf8'));
     }
 
-    const pqPaths = [
-      path.resolve(process.cwd(), 'data/generated/all_state_priority_queue_v3.jsonl'),
-      path.resolve(process.cwd(), '../data/generated/all_state_priority_queue_v3.jsonl'),
-    ];
-    let pqPath = pqPaths[0];
-    for (const p of pqPaths) {
-      if (fs.existsSync(p)) {
-        pqPath = p;
-        break;
-      }
-    }
-    if (fs.existsSync(pqPath)) {
+    const pqPath = resolveGeneratedArtifact('all_state_priority_queue_v3.jsonl');
+    if (pqPath) {
       const lines = fs.readFileSync(pqPath, 'utf8').split('\n');
       for (const line of lines) {
         if (line.trim()) {
@@ -68,18 +65,8 @@ if (typeof window === 'undefined') {
       }
     }
 
-    const runtimeRegistryPaths = [
-      path.resolve(process.cwd(), 'data/generated/runtime_launch_registry_v1.json'),
-      path.resolve(process.cwd(), '../data/generated/runtime_launch_registry_v1.json'),
-    ];
-    let runtimeRegistryPath = runtimeRegistryPaths[0];
-    for (const p of runtimeRegistryPaths) {
-      if (fs.existsSync(p)) {
-        runtimeRegistryPath = p;
-        break;
-      }
-    }
-    if (fs.existsSync(runtimeRegistryPath)) {
+    const runtimeRegistryPath = resolveGeneratedArtifact('runtime_launch_registry_v1.json');
+    if (runtimeRegistryPath) {
       runtimeLaunchRegistry = JSON.parse(fs.readFileSync(runtimeRegistryPath, 'utf8'));
     }
   } catch (err) {

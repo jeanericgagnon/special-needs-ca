@@ -200,6 +200,13 @@
       "mainGap": "Waitlists are shallower than the rest of the program layer and waiver typing is still sparse."
     },
     {
+      "route": "/benefits-matcher",
+      "surface": "Public matcher landing page",
+      "needs": "A crawlable, source-backed entry page that explains how diagnosis, age, county, and needs flow into programs, forms, contacts, deadlines, and appeals before families save progress privately.",
+      "currentStatus": "strong",
+      "mainGap": "The landing page is live and source-backed, but its downstream value still depends on benefits, county, and knowledge surfaces staying truthful and deep."
+    },
+    {
       "route": "/counties, /counties/[state], /counties/[state]/[slug]",
       "surface": "County support pages",
       "needs": "County offices, DD routing, education routing, local nonprofits, truthful providers, and public-truth gating.",
@@ -235,7 +242,7 @@
       "mainGap": "Appeal rows are strong, but waitlist depth and knowledge explainers still need more depth."
     },
     {
-      "route": "/financial-planning, /regional-center-funding, /ihss-behavior-log, /iep-goals",
+      "route": "/financial-planning, /regional-center-funding, /ihss-behavior-log, /iep-goals, /forms-checklist",
       "surface": "Specialized planning tools and guidance",
       "needs": "Knowledge content, program/routing context, and runtime persistence where applicable.",
       "currentStatus": "partial",
@@ -284,7 +291,7 @@
       "currentHave": [
         "50 states",
         "3050 counties",
-        "183 regional-center county links",
+        "244 regional-center county links",
         "174 education county links",
         "1229 advocate county links",
         "0 virtual service-area county links"
@@ -354,14 +361,14 @@
       ],
       "currentHave": [
         "720 county offices",
-        "120 state resource agencies",
+        "134 state resource agencies",
         "174 regional education agencies",
         "649 school districts",
-        "Office verification mix: generated_county_fallback=651; needs_review=49; source_listed=14; official_verified=6",
-        "State routing verification mix: source_listed=57; verified=33; official_verified=30"
+        "Office verification mix: generated_county_fallback=649; needs_review=49; source_listed=14; official_verified=8",
+        "State routing verification mix: source_listed=57; official_verified=44; verified=33"
       ],
       "staging": [
-        "14 staged county offices",
+        "17 staged county offices",
         "0 staged DD routing rows",
         "0 staged regional education rows",
         "0 staged school district rows",

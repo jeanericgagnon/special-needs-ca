@@ -21,6 +21,10 @@ const provenanceBackedRoutes = [
     required: ['SourceFreshnessDisclosure', 'correctionTargetId={`forms-${stateId}`}', 'correctionButtonLabel="Report a forms source issue"'],
   },
   {
+    path: 'frontend/src/app/forms-checklist/page.tsx',
+    required: ['LaunchToolLanding', 'disclaimer=', 'sources={sources}', 'correctionSuggestionType="other"'],
+  },
+  {
     path: 'frontend/src/app/advocates/page.tsx',
     required: ['SourceFreshnessDisclosure'],
   },
@@ -46,6 +50,10 @@ const provenanceBackedRoutes = [
   },
   {
     path: 'frontend/src/app/benefits/page.tsx',
+    required: ['LaunchToolLanding', 'disclaimer=', 'sources={sources}', 'correctionSuggestionType="program"'],
+  },
+  {
+    path: 'frontend/src/app/benefits-matcher/page.tsx',
     required: ['LaunchToolLanding', 'disclaimer=', 'sources={sources}', 'correctionSuggestionType="program"'],
   },
   {
@@ -85,8 +93,10 @@ const provenanceBackedRoutes = [
 const syntheticFreshnessFreeRoutes = [
   'frontend/src/app/page.tsx',
   'frontend/src/app/benefits/page.tsx',
+  'frontend/src/app/benefits-matcher/page.tsx',
   'frontend/src/app/wizard-client.tsx',
   'frontend/src/app/find-help/find-help-client.tsx',
+  'frontend/src/app/forms-checklist/page.tsx',
   'frontend/src/app/ihss-behavior-log/page.tsx',
   'frontend/src/app/iep-goals/page.tsx',
   'frontend/src/app/regional-center-funding/page.tsx',
@@ -95,8 +105,10 @@ const syntheticFreshnessFreeRoutes = [
 const launchEntryRoutesNeedingReviewedDates = [
   'frontend/src/app/page.tsx',
   'frontend/src/app/benefits/page.tsx',
+  'frontend/src/app/benefits-matcher/page.tsx',
   'frontend/src/app/wizard-client.tsx',
   'frontend/src/app/find-help/find-help-client.tsx',
+  'frontend/src/app/forms-checklist/page.tsx',
   'frontend/src/app/ihss-behavior-log/page.tsx',
   'frontend/src/app/iep-goals/page.tsx',
   'frontend/src/app/regional-center-funding/page.tsx',

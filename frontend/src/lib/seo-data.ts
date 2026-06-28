@@ -256,7 +256,7 @@ ${f.parentName || '[Parent Name]'}`
         question: 'How much physical care does your child need compared to typical peers?',
         options: [
           { text: 'Significantly more (diapers at age 5, total feeding assistance, etc.)', score: 'high', reason: 'This establishes the "extraordinary care" threshold required to authorize IHSS hours for minors.' },
-          { text: 'Slightly more (needs prompting but physically capable)', score: 'med', reason: 'Prompts can qualify for hours, but you must document the severe cognitive direction deficits.' }
+          { text: 'Slightly more (needs prompting but physically capable)', score: 'med', reason: 'Prompts may still support some hours, but you must document the severe cognitive direction deficits.' }
         ]
       }
     ]
@@ -612,7 +612,7 @@ Email: [Insert Email]`
     },
     letterTemplate: {
       title: 'Timeline Delay Escalation Letter',
-      description: 'Formal letter to submit when the district fails to deliver the Assessment Plan within 15 days.',
+      description: 'Formal letter to submit when the district appears late in issuing the Assessment Plan and you need written timeline confirmation.',
       fields: [
         { key: 'parentName', label: 'Parent Name', placeholder: 'Jane Doe' },
         { key: 'childName', label: 'Child Name', placeholder: 'Tommy Doe' },
@@ -632,7 +632,7 @@ Dear Special Education Director,
 
 On ${f.requestDate || '[Request Date]'}, I submitted a written request for a comprehensive special education evaluation for my child, ${f.childName || '[Child Name]'}.
 
-Based on my understanding of California Education Code Section 56321(a), I expected the district to provide an Assessment Plan within the current applicable timeline after receiving this request. As of today, I have not received the plan.
+Based on my understanding of California Education Code Section 56321(a), the district should provide an Assessment Plan within the current applicable timeline after receiving this request. As of today, I have not received the plan and would like written confirmation of the timeline the district is following.
 
 Please email the completed Assessment Plan to me as soon as possible and confirm the current timeline the district is following so we can begin the assessment phase without further delay.
 
@@ -660,7 +660,7 @@ Phone: [Insert Phone]`
     title: 'California Regional Center Eligibility: Lanterman Act Requirements',
     metaTitle: 'Regional Center Eligibility California | Lanterman Act Rules',
     metaDescription: 'A source-backed breakdown of California Regional Center eligibility rules under the Lanterman Act.',
-    quickAnswer: 'California Regional Centers coordinate and fund long-term services for individuals with developmental disabilities. Under the Lanterman Act, long-term eligibility generally requires a disability that originates before age 18, is expected to continue indefinitely, and constitutes a substantial disability in three or more functional areas (self-care, language, learning, mobility, self-direction, capacity for independent living, or economic self-sufficiency).',
+    quickAnswer: 'California Regional Centers coordinate and fund long-term services for individuals with developmental disabilities. Under the Lanterman Act, long-term eligibility generally requires a disability that originates before age 18, is expected to continue indefinitely, and constitutes a substantial disability in three or more functional areas (self-care, language, learning, mobility, self-direction, capacity for independent living, or economic self-sufficiency). A diagnosis may be a relevant condition for a Regional Center eligibility review under the Lanterman Act, but the center still reviews current records, functional limitations, and the published eligibility rules before making a determination.',
     tldrPoints: [
       { label: 'Intake Timeline', value: 'Confirm current intake and eligibility timing' },
       { label: 'Functional Needs', value: 'Deficits in 3+ major life areas' },
@@ -690,7 +690,7 @@ Phone: [Insert Phone]`
     ],
     whatToSay: 'I am requesting a Lanterman Act eligibility assessment for my child. They have a developmental delay originating before age 18 that impacts their communication, learning, and self-care.',
     commonMistakes: [
-      'Assuming ADHD alone is enough for Regional Center intake screening. Under DDS rules, ADHD is generally not a qualifying condition unless it appears alongside an intellectual disability or another eligible developmental-disability pathway.',
+      'Assuming ADHD alone is enough for Regional Center intake screening. Under DDS rules, ADHD alone is generally not enough for Regional Center eligibility review unless the current record also documents another eligible developmental-disability pathway or closely related functional evidence.',
       'Allowing the center to deny you verbally. Always demand a written Notice of Action (NOA) of eligibility denial so you can file an appeal.',
       'Understating the child\'s deficits during the intake interview.'
     ],
@@ -734,7 +734,7 @@ I am writing to formally request an eligibility assessment under the Lanterman A
 My child has been diagnosed with, or is suspected of having, a developmental disability that constitutes a substantial handicap in the following functional areas:
 ${f.symptoms || 'Communication, Learning, and Self-Care.'}
 
-As defined under California Welfare and Institutions Code Section 4646, the Regional Center must respond to this written intake request within 15 days. Please send me the required intake forms and contact me to schedule our diagnostic evaluations.
+Please send me the required intake forms, confirm the current intake response timeline that applies to this request, and contact me to schedule our diagnostic evaluations.
 
 Thank you for your assistance.
 
@@ -837,7 +837,7 @@ Dear ${f.coordinatorName || 'Service Coordinator'},
 
 I am writing to provide formal written consent to release my child\'s Early Start records, including the current IFSP, all developmental progress reports, and clinical evaluations, to the special education department of ${f.districtName || 'the local school district'}.
 
-My child is approaching age 2 years, 9 months. I request that you submit the official transition referral and schedule our Transition Conference as mandated under California Early Start regulations. 
+My child is approaching age 2 years, 9 months. I request that you submit the current transition referral and schedule our Transition Conference under the current California Early Start transition process. 
 
 Please confirm the date this referral is submitted to the district.
 
@@ -1433,7 +1433,7 @@ ${f.parentName || '[Parent Name]'}`
     ],
     whenThisMatters: 'Required after the county approves Protective Supervision. The hours cannot be released to your timesheet until this agreement is signed and returned.',
     signsThisMayApply: [
-      'Your child has been approved for Protective Supervision.',
+      'You received a county notice approving Protective Supervision.',
       'You are transitioning timesheets to parent provider status.'
     ],
     whatToDoFirst: [
@@ -1614,7 +1614,7 @@ ${f.parentName || '[Parent Name]'}`
       {
         question: 'Is your child older than 3 years old?',
         options: [
-          { text: 'Yes, they are 3 or older', score: 'high', reason: 'They qualify for Lanterman Act assessment. Evaluations look at lifetime developmental disabilities.' },
+          { text: 'Yes, they are 3 or older', score: 'high', reason: 'They may be eligible for Lanterman Act assessment. Evaluations look at lifetime developmental disabilities.' },
           { text: 'No, they are under 3', score: 'med', reason: 'Children under 3 are evaluated under the Early Start program rather than the Lanterman Act.' }
         ]
       }
@@ -2865,7 +2865,7 @@ ${f.parentName || '[Parent Name]'}`
     whoToCall: [
       { name: 'Texas HHS Benefits Helpline', number: '2-1-1', description: 'State benefits information and support.' }
     ],
-    whatToSay: 'I am submitting a Medicaid application for my child. I want to check if they qualify for Medicaid or CHIP programs.',
+    whatToSay: 'I am submitting a Medicaid application for my child. I want to check whether they may be eligible for Medicaid or CHIP programs.',
     commonMistakes: [
       'Failing to disclose all household members.',
       'Assuming you cannot get coverage because of moderate income (waiver programs ignore parental income).'

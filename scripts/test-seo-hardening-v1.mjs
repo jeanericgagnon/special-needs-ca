@@ -1,8 +1,16 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { getSeoPolicyForRoute, hasOfficialProgramSource, verifyClaimEvidence } from '../frontend/src/lib/seo-policy.ts';
-import { SITEMAP_CHILD_MANIFEST, isAllowlistedStaticPath } from '../frontend/src/lib/seoRouteManifest.ts';
-import { QUARANTINED_FIVE_STATE_TEMPLATE_SLUGS } from '../frontend/src/lib/seo-data.ts';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const repoRoot = path.resolve(__dirname, '..');
+process.chdir(repoRoot);
+
+const { getSeoPolicyForRoute, hasOfficialProgramSource, verifyClaimEvidence } = await import('../frontend/src/lib/seo-policy.ts');
+const { SITEMAP_CHILD_MANIFEST, isAllowlistedStaticPath } = await import('../frontend/src/lib/seoRouteManifest.ts');
+const { QUARANTINED_FIVE_STATE_TEMPLATE_SLUGS } = await import('../frontend/src/lib/seo-data.ts');
 
 const benefitsPolicy = getSeoPolicyForRoute('static-page', {
   path: '/benefits'
@@ -51,6 +59,7 @@ const cityPolicy = getSeoPolicyForRoute('city', {
 assert.equal(cityPolicy.includeInSitemap, false, 'city routes must remain blocked from sitemap output');
 
 assert.equal(isAllowlistedStaticPath('/forms/soc-873'), true);
+assert.equal(isAllowlistedStaticPath('/benefits-matcher'), true);
 assert.equal(isAllowlistedStaticPath('/unknown/path'), false);
 
 assert.equal(hasOfficialProgramSource('https://www.cdss.ca.gov/in-home-supportive-services'), true);
@@ -150,6 +159,22 @@ const layoutSource = fs.readFileSync(
   new URL('../frontend/src/app/layout.tsx', import.meta.url),
   'utf8'
 );
+const dashboardPageSource = fs.readFileSync(
+  new URL('../frontend/src/app/dashboard/page.tsx', import.meta.url),
+  'utf8'
+);
+const loginPageSource = fs.readFileSync(
+  new URL('../frontend/src/app/login/page.tsx', import.meta.url),
+  'utf8'
+);
+const registerPageSource = fs.readFileSync(
+  new URL('../frontend/src/app/register/page.tsx', import.meta.url),
+  'utf8'
+);
+const sharedLogPageSource = fs.readFileSync(
+  new URL('../frontend/src/app/share/log/[token]/page.tsx', import.meta.url),
+  'utf8'
+);
 assert.equal(
   layoutSource.includes('href="/benefits/programs"'),
   false,
@@ -159,6 +184,26 @@ assert.equal(
   layoutSource.includes('href="/benefits"'),
   true,
   'global navigation should point Benefits/Guides traffic to the live benefits hub'
+);
+assert.match(
+  dashboardPageSource,
+  /robots:\s*\{\s*index:\s*false,\s*follow:\s*true,\s*\}/s,
+  'private dashboard route must declare noindex,follow metadata'
+);
+assert.match(
+  loginPageSource,
+  /robots:\s*\{\s*index:\s*false,\s*follow:\s*true,\s*\}/s,
+  'login route must declare noindex,follow metadata'
+);
+assert.match(
+  registerPageSource,
+  /robots:\s*\{\s*index:\s*false,\s*follow:\s*true,\s*\}/s,
+  'register route must declare noindex,follow metadata'
+);
+assert.match(
+  sharedLogPageSource,
+  /robots:\s*\{\s*index:\s*false,\s*follow:\s*true,\s*\}/s,
+  'tokenized shared-log route must declare noindex,follow metadata'
 );
 const siteUrlSource = fs.readFileSync(
   new URL('../frontend/src/lib/site-url.ts', import.meta.url),
@@ -179,6 +224,36 @@ const countiesSitemapSource = fs.readFileSync(
 const robotsSource = fs.readFileSync(
   new URL('../frontend/src/app/robots.ts', import.meta.url),
   'utf8'
+);
+assert.match(
+  robotsSource,
+  /['"]\/dashboard['"]/,
+  'robots.txt should explicitly disallow the private dashboard entrypoint'
+);
+assert.match(
+  robotsSource,
+  /['"]\/dashboard\/\*['"]/,
+  'robots.txt should explicitly disallow dashboard child paths'
+);
+assert.match(
+  robotsSource,
+  /['"]\/login['"]/,
+  'robots.txt should explicitly disallow the login route'
+);
+assert.match(
+  robotsSource,
+  /['"]\/register['"]/,
+  'robots.txt should explicitly disallow the register route'
+);
+assert.match(
+  robotsSource,
+  /['"]\/share['"]/,
+  'robots.txt should explicitly disallow the private shared-link entrypoint'
+);
+assert.match(
+  robotsSource,
+  /['"]\/share\/\*['"]/,
+  'robots.txt should explicitly disallow tokenized shared-link paths'
 );
 const directoryPanelSource = fs.readFileSync(
   new URL('../frontend/src/app/components/directory-foundation-panel.tsx', import.meta.url),

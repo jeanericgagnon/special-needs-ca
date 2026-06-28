@@ -290,6 +290,89 @@
       ]
     },
     {
+      "id": "california",
+      "name": "California",
+      "code": "CA",
+      "launchClassification": "COMPLETE",
+      "status": "public_safe_but_blocked",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 55.3,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 116
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 101.7,
+        "education": 36.2,
+        "nonprofits": 101.7,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "166 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "77 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "42 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 36.2% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "167 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "65 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "78 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "35 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "43 nonprofit rows are still unverified.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
       "id": "ohio",
       "name": "Ohio",
       "code": "OH",
@@ -579,94 +662,6 @@
         {
           "id": "current-truth-blocker",
           "message": "23 advocate/provider rows are still unverified.",
-          "source": "current-truth"
-        }
-      ]
-    },
-    {
-      "id": "california",
-      "name": "California",
-      "code": "CA",
-      "launchClassification": "COMPLETE",
-      "status": "public_safe_but_blocked",
-      "publicSafe": true,
-      "indexSafe": true,
-      "legacyGoldEligible": false,
-      "strictGoldEligible": false,
-      "readiness": 49.4,
-      "countyDiagnosis": {
-        "priorityCoveragePct": 100,
-        "missingPriorityCounties": 0,
-        "promotionReadyPriorityCounties": 0
-      },
-      "advocateTruth": {
-        "countiesLosingCoverage": 0,
-        "quarantinedAdvocates": 0,
-        "syntheticAdvocates": 0,
-        "publicSafeAdvocates": 116
-      },
-      "coverage": {
-        "ddRouting": 0,
-        "localOffices": 101.7,
-        "education": 36.2,
-        "nonprofits": 101.7,
-        "advocates": 0,
-        "waitlists": 0
-      },
-      "blockers": [
-        {
-          "id": "current-truth-blocker",
-          "message": "168 rows still use fallback data origins.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "77 rows still use fallback data origins.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "42 rows still use fallback data origins.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "DD routing covers 0% of expected counties.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "Education coverage is 36.2% of expected counties.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "169 office rows are still unverified.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "65 education rows are only source-listed.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "78 education rows are still unverified.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "35 nonprofit rows are only source-listed.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "43 nonprofit rows are still unverified.",
           "source": "current-truth"
         }
       ]
@@ -1372,6 +1367,89 @@
       ]
     },
     {
+      "id": "california",
+      "name": "California",
+      "code": "CA",
+      "launchClassification": "COMPLETE",
+      "status": "public_safe_but_blocked",
+      "publicSafe": true,
+      "indexSafe": true,
+      "legacyGoldEligible": false,
+      "strictGoldEligible": false,
+      "readiness": 55.3,
+      "countyDiagnosis": {
+        "priorityCoveragePct": 100,
+        "missingPriorityCounties": 0,
+        "promotionReadyPriorityCounties": 0
+      },
+      "advocateTruth": {
+        "countiesLosingCoverage": 0,
+        "quarantinedAdvocates": 0,
+        "syntheticAdvocates": 0,
+        "publicSafeAdvocates": 116
+      },
+      "coverage": {
+        "ddRouting": 100,
+        "localOffices": 101.7,
+        "education": 36.2,
+        "nonprofits": 101.7,
+        "advocates": 0,
+        "waitlists": 0
+      },
+      "blockers": [
+        {
+          "id": "current-truth-blocker",
+          "message": "166 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "77 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "42 rows still use fallback data origins.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "Education coverage is 36.2% of expected counties.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "167 office rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "65 education rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "78 education rows are still unverified.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "35 nonprofit rows are only source-listed.",
+          "source": "current-truth"
+        },
+        {
+          "id": "current-truth-blocker",
+          "message": "43 nonprofit rows are still unverified.",
+          "source": "current-truth"
+        }
+      ]
+    },
+    {
       "id": "ohio",
       "name": "Ohio",
       "code": "OH",
@@ -1661,94 +1739,6 @@
         {
           "id": "current-truth-blocker",
           "message": "23 advocate/provider rows are still unverified.",
-          "source": "current-truth"
-        }
-      ]
-    },
-    {
-      "id": "california",
-      "name": "California",
-      "code": "CA",
-      "launchClassification": "COMPLETE",
-      "status": "public_safe_but_blocked",
-      "publicSafe": true,
-      "indexSafe": true,
-      "legacyGoldEligible": false,
-      "strictGoldEligible": false,
-      "readiness": 49.4,
-      "countyDiagnosis": {
-        "priorityCoveragePct": 100,
-        "missingPriorityCounties": 0,
-        "promotionReadyPriorityCounties": 0
-      },
-      "advocateTruth": {
-        "countiesLosingCoverage": 0,
-        "quarantinedAdvocates": 0,
-        "syntheticAdvocates": 0,
-        "publicSafeAdvocates": 116
-      },
-      "coverage": {
-        "ddRouting": 0,
-        "localOffices": 101.7,
-        "education": 36.2,
-        "nonprofits": 101.7,
-        "advocates": 0,
-        "waitlists": 0
-      },
-      "blockers": [
-        {
-          "id": "current-truth-blocker",
-          "message": "168 rows still use fallback data origins.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "77 rows still use fallback data origins.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "42 rows still use fallback data origins.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "DD routing covers 0% of expected counties.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "Education coverage is 36.2% of expected counties.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "169 office rows are still unverified.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "65 education rows are only source-listed.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "78 education rows are still unverified.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "35 nonprofit rows are only source-listed.",
-          "source": "current-truth"
-        },
-        {
-          "id": "current-truth-blocker",
-          "message": "43 nonprofit rows are still unverified.",
           "source": "current-truth"
         }
       ]

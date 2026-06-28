@@ -23,7 +23,7 @@ const waivers: WaiverDetails[] = [
     agency: 'California Regional Centers (DDS)',
     eligibility: 'Developmental disability (Autism, Intellectual Disability, Cerebral Palsy, Epilepsy, or Fifth Category) originating before age 18 and causing substantial limits in 3+ major life domains.',
     deemingRule: 'Institutional Deeming may allow Medi-Cal financial eligibility to be reviewed under child-specific waiver rules when the current Regional Center and waiver criteria are met.',
-    waitlist: 'No waitlist. Intakes must be completed within 45 days. (Note: Specific services like behavior therapy or respite placements may have local provider delays.)',
+    waitlist: 'Public DDS intake materials should be checked directly for the current regional-center process. Service availability and any local delays can vary by center, provider capacity, and the exact support requested.',
     coreServices: [
       'Respite care hours (parent relief)',
       'Behavioral therapies (ABA, PBS) funding',
@@ -40,7 +40,7 @@ const waivers: WaiverDetails[] = [
     agency: 'Local Waiver Agencies (DHCS)',
     eligibility: 'Complex medical needs meeting nursing facility level of care (e.g. ventilator dependence, G-tube feeding, continuous IV, severe physical limits).',
     deemingRule: 'Yes (Institutional Deeming) — this pathway can let the state evaluate the child as a household of one instead of counting parental income, subject to the official Medi-Cal rules in effect at review time.',
-    waitlist: 'Yes (Capped list). Capped since July 2023. Current wait list is 1.5 to 2+ years unless under Reserve Capacity (e.g., under age 21 or transitioning).',
+    waitlist: 'This pathway has used capped enrollment and reserve-capacity rules. Current waitlist length, exceptions, and intake priority can change, so confirm the latest DHCS guidance before relying on an estimate.',
     coreServices: [
       'Waiver Personal Care Services (WPCS)',
       'Private Duty Nursing (RN or LVN care)',
@@ -57,7 +57,7 @@ const waivers: WaiverDetails[] = [
     agency: 'County Social Services / DHCS',
     eligibility: 'Standard California residents under 21 who meet income guidelines (under 266% FPL) or bypass income via another waiver.',
     deemingRule: 'No — Traditional family income limits apply. Standard Medi-Cal checks caregiver wealth/salary unless the child is linked to HCBS-DD or HCBA.',
-    waitlist: 'No standard waitlist. Eligible children can usually enroll once the county confirms the application and eligibility paperwork.',
+    waitlist: 'A separate statewide waitlist is not typically published for standard Medi-Cal enrollment, but application processing and service authorization timelines vary. Confirm the current county or plan process before relying on a timeframe.',
     coreServices: [
       'Medically necessary Speech, OT, PT, ABA',
       'Routine pediatric medical & dental exams',
@@ -80,7 +80,7 @@ export default function WaiverComparison() {
         <h2 style={{ fontSize: '1.4rem', fontWeight: 600, margin: 0 }}>California Medi-Cal Waivers Comparison Matrix</h2>
       </div>
       <p style={{ fontSize: '0.92rem', color: 'var(--text-light)', marginBottom: '2rem', lineHeight: '1.5' }}>
-        Medi-Cal waivers bypass parent income limits, letting special needs children access full healthcare, therapies, and in-home support. Review the side-by-side comparison below.
+        This planning matrix summarizes common California pathways that may let the state review a child separately under current waiver or Medi-Cal rules. It is not a guarantee of eligibility, waitlist position, or approval, so confirm the latest program details on the linked public sources before you rely on it.
       </p>
 
       {/* 1. Desktop Matrix Table (hidden on mobile, styled via flex/table) */}

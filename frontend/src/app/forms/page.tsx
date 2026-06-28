@@ -130,7 +130,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'Texas Medicaid & Waiver Guides',
-          description: 'Official step-by-step guides for Texas Health & Human Services waiver programs and Medicaid/CHIP eligibility.',
+          description: 'Source-backed step-by-step guides for Texas Health & Human Services waiver programs and Medicaid/CHIP eligibility.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -180,7 +180,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'Florida Medicaid & Waiver Guides',
-          description: 'Official applications and parent guides for the APD iBudget waiver, CDC+ budget authority, and health coverage.',
+          description: 'Source-backed applications and parent guides for the APD iBudget waiver, CDC+ budget authority, and health coverage.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -229,7 +229,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'New York Medicaid & Waiver Guides',
-          description: 'Official applications and guides for OPWDD HCBS waiver, CDPAP self-directed care, and NY Medicaid.',
+          description: 'Source-backed applications and guides for OPWDD HCBS waiver, CDPAP self-directed care, and NY Medicaid.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -278,7 +278,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'Pennsylvania Medicaid & Waiver Guides',
-          description: 'Official applications and guides for ODP Consolidated, Community Living, and P/FDS waivers.',
+          description: 'Source-backed applications and guides for ODP Consolidated, Community Living, and P/FDS waivers.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -327,7 +327,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'Illinois Medicaid & Waiver Guides',
-          description: 'Official applications and guides for Children\'s Support, Adults with DD, and Medicaid/ABE.',
+          description: 'Source-backed applications and guides for Children\'s Support, Adults with DD, and Medicaid/ABE.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -373,7 +373,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'Ohio Medicaid & Waiver Guides',
-          description: 'Official applications and guides for Individual Options, Level One, SELF waivers, and Medicaid.',
+          description: 'Source-backed applications and guides for Individual Options, Level One, SELF waivers, and Medicaid.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -419,7 +419,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'Georgia Medicaid & Waiver Guides',
-          description: 'Official applications and guides for COMP waiver, NOW waiver, and GAPP medical nursing.',
+          description: 'Source-backed applications and guides for COMP waiver, NOW waiver, and GAPP medical nursing.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -464,7 +464,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: 'New Jersey Medicaid & Waiver Guides',
-          description: 'Official applications and guides for NJ FamilyCare, DDD programs, and PCA services.',
+          description: 'Source-backed applications and guides for NJ FamilyCare, DDD programs, and PCA services.',
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -514,7 +514,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
       return [
         {
           title: `${stateName} Medicaid & Waiver Guides`,
-          description: `Official applications and guides for ${stateName} Medicaid, developmental disability waivers, and caregiver programs.`,
+          description: `Source-backed applications and guides for ${stateName} Medicaid, developmental disability waivers, and caregiver programs.`,
           icon: <FileText size={20} color="#0f766e" />,
           color: '#0f766e',
           items: [
@@ -606,7 +606,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
         color: '#8b5cf6',
         items: [
           getFormDetails('ccs-application', 'CCS App', 'California Children\'s Services Application'),
-          getFormDetails('dhcs-4480', 'DHCS 4480', 'Official CCS Enrollment Form'),
+          getFormDetails('dhcs-4480', 'DHCS 4480', 'CCS Enrollment Form (DHCS 4480)'),
           getFormDetails('medi-cal-application', 'Medi-Cal App', 'Medi-Cal Single Streamlined Application'),
           getFormDetails('medi-cal-epsdt-request', 'EPSDT Request', 'Medi-Cal EPSDT Supplemental Services Request'),
           getFormDetails('ssi-child-disability-checklist', 'SSI Checklist', 'SSI Child Disability Starter Kit Checklist'),
@@ -686,6 +686,25 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
 
   return (
     <main style={{ maxWidth: '1200px', margin: '0 auto', padding: '2.5rem 1.5rem', minHeight: '80vh' }}>
+      <section
+        className="glass-panel"
+        style={{
+          padding: '1.25rem 1.5rem',
+          borderRadius: '18px',
+          background: 'rgba(255,255,255,0.88)',
+          border: '1px solid rgba(0,0,0,0.06)',
+          marginBottom: '1.5rem'
+        }}
+      >
+        <strong style={{ display: 'block', marginBottom: '0.4rem', color: 'var(--text-main)' }}>Need a simpler starting point?</strong>
+        <p style={{ margin: 0, lineHeight: 1.6, color: 'var(--text-light)' }}>
+          Start with the{' '}
+          <Link href="/forms-checklist" style={{ color: 'var(--primary-color)', textDecoration: 'underline', fontWeight: 600 }}>
+            forms checklist and document prep workflow
+          </Link>
+          {' '}if you want a source-backed overview of signatures, records, and submission routes before opening individual guides.
+        </p>
+      </section>
       
       {/* State Selector Bar */}
       <div style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>

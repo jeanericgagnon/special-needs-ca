@@ -31,6 +31,8 @@ import {
   getStalenessLabel,
   hasDirectorySampleAccessibilitySummary,
   hasDirectorySampleNextStepSummary,
+  isMeaningfulDirectoryEmail,
+  isMeaningfulDirectoryPhone,
   isRenderableDirectoryFoundationRecord,
   parseDirectoryList,
 } from '@/lib/directoryFoundation';
@@ -127,6 +129,14 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
   };
 
   const tools = [
+    {
+      title: 'Benefits Matcher Guide',
+      category: 'Benefits',
+      icon: <Wand2 size={24} color="#0f766e" />,
+      description: 'Review the public benefits-matcher landing page to see how diagnosis, age, county, and support needs turn into source-backed programs, forms, deadlines, and appeal paths before you save a private plan.',
+      href: '/benefits-matcher',
+      actionText: 'Review Matcher'
+    },
     {
       title: 'State Benefits Wizard',
       category: 'Benefits',
@@ -336,6 +346,22 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
           Review source-backed tools, timeline helpers, and structured directory examples. Local directory depth still varies by state and county, so confirm details against the cited source before relying on them.
         </p>
       </div>
+
+      <section
+        className="glass-panel"
+        style={{
+          padding: '1.5rem 1.75rem',
+          borderRadius: '20px',
+          background: 'rgba(245, 158, 11, 0.08)',
+          border: '1px solid rgba(245, 158, 11, 0.18)',
+          marginBottom: '1.5rem',
+        }}
+      >
+        <strong style={{ display: 'block', marginBottom: '0.5rem', color: '#92400e' }}>Important note</strong>
+        <p style={{ margin: 0, lineHeight: 1.6, color: '#92400e' }}>
+          This hub stays <strong>noindex</strong> while we keep verifying local directory depth, contact routes, accessibility details, and next-step instructions. We only show reviewed public listings here, and you should still confirm the current source, county coverage, and intake path before relying on a local resource.
+        </p>
+      </section>
 
       <div
         className="glass-panel"
@@ -647,6 +673,8 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
             const availabilityLabel = getDirectoryAvailabilityDisplayLabel(record);
             const showNextStepSummary = hasDirectorySampleNextStepSummary(record);
             const showAccessibilitySummary = hasDirectorySampleAccessibilitySummary(record);
+            const publicNextStepPhone = isMeaningfulDirectoryPhone(record.next_step_phone) ? record.next_step_phone : null;
+            const publicNextStepEmail = isMeaningfulDirectoryEmail(record.next_step_email) ? record.next_step_email : null;
 
             return (
               <article
@@ -686,8 +714,8 @@ export default function FindHelpClient({ foundationSnapshot }: FindHelpClientPro
                   <div style={{ fontSize: '0.82rem', lineHeight: 1.55 }}>
                     <strong>Next step:</strong>{' '}
                     {record.next_step_label || (record.next_step_type ? formatTag(record.next_step_type) : null)}
-                    {record.next_step_phone ? ` • ${record.next_step_phone}` : ''}
-                    {record.next_step_email ? ` • ${record.next_step_email}` : ''}
+                    {publicNextStepPhone ? ` • ${publicNextStepPhone}` : ''}
+                    {publicNextStepEmail ? ` • ${publicNextStepEmail}` : ''}
                   </div>
                 )}
 

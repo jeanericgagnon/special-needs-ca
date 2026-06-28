@@ -1,7 +1,9 @@
 export const STATIC_ROUTE_ALLOWLIST = new Set([
   '/',
   '/benefits',
+  '/benefits-matcher',
   '/forms',
+  '/forms-checklist',
   '/ihss-behavior-log',
   '/iep-goals',
   '/regional-center-funding'

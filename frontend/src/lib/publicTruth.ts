@@ -202,6 +202,13 @@ function hasDirectPublicContactSignal(record?: PublicRecordLike | null): boolean
   return isMeaningfulDirectoryPhone(phone) || isMeaningfulDirectoryEmail(email);
 }
 
+function hasCaliforniaSelpaPublicSignal(record?: PublicRecordLike | null): boolean {
+  return isPublicRecordEligible(record) && (
+    hasDirectPublicContactSignal(record) ||
+    isMeaningfulDirectoryWebsite(record?.website || '')
+  );
+}
+
 function hasInvalidPublicContactField(record?: PublicRecordLike | null): boolean {
   if (!record) return false;
   const phone = record.phone || record.intake_phone || record.spec_ed_contact_phone || '';
@@ -356,7 +363,7 @@ export function getCountyTruthEligibility(stateId: string, countyDetails?: Count
       isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)
     );
     const hasSelpa = (countyDetails.selpas || []).some((record) =>
-      isPublicRecordEligible(record) && hasDirectPublicContactSignal(record)
+      hasCaliforniaSelpaPublicSignal(record)
     );
     const hasIhss = hasRequiredCountyOffice(countyDetails, 'ihss-for-children');
     const hasMediCal = hasRequiredCountyOffice(countyDetails, 'medi-cal-for-kids-and-teens');

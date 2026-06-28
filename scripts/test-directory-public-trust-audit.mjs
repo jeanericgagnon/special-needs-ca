@@ -40,6 +40,8 @@ assert.ok(advocates.topIssues.some((issue) => (
 
 const countyOffices = byTable.get('county_offices');
 assert.ok(countyOffices.topIssues.some((issue) => issue.issue === 'not_public_record_eligible' || issue.issue === 'not_public_county_office_eligible'));
+assert.equal(countyOffices.publicEligibleRows, countyOffices.renderableRows, 'County-office public eligibility must match the county-office-specific renderable gate.');
+assert.ok(countyOffices.basePublicRecordEligibleRows >= countyOffices.publicEligibleRows, 'County offices may have broader base public-record eligibility than their stricter county-office gate.');
 
 assert.ok(md.includes('# Directory Public Trust Audit'));
 assert.ok(md.includes('placeholder names'));

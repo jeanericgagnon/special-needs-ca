@@ -133,7 +133,7 @@ test.describe('SEO Sitemap and Indexation E2E Tests', () => {
       await expect(canonical).toHaveAttribute('href', `https://ablefull.org${indexedPath}`);
 
       const bodyText = await page.innerText('body');
-      expect(bodyText).toMatch(/(Source (Notes|Verified Sources) & Freshness Information|Sources, Review Dates, and Confidence|Last reviewed:)/i);
+      expect(bodyText).toMatch(/(Source (Notes|Verified Sources) & Freshness Information|Sources, Review Dates, and Confidence|Sources, Last Checked Dates, Confidence, and Estimate Notes|Last reviewed:|Last checked:)/i);
 
       const correction = page.locator('button:has-text("Suggest update")');
       await expect(correction.first()).toBeVisible();

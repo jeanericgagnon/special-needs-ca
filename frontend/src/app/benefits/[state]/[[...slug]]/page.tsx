@@ -574,6 +574,9 @@ async function InnerBenefitsCatchAll({ params }: Props) {
   const stateCode = stateData.code.toUpperCase();
   const partialStatePolicy = getPartialStatePolicy(stateData.id);
   const gapReason = stateGapReason(stateData.id);
+  const softenedLegalDisclaimer = `${stateName} program, education, and dispute rules can change. Use the linked public sources on this page${
+    config.timelinesCode ? ` and ${config.timelinesCode}` : ''
+  } to confirm the current eligibility, assessment, appeal, and timeline rules before relying on any summary here.`;
 
   // ==========================================
   // CASE 7: Programs Index (/benefits/[state]/programs)
@@ -837,7 +840,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
                 Regulatory & Statutory Framework
               </h3>
               <p style={{ margin: 0 }}>
-                {config.legalDisclaimer} Eligibility criteria on this page should be checked against the current linked state and federal source material before you rely on them.
+                {softenedLegalDisclaimer}
               </p>
             </div>
           </div>
@@ -1168,25 +1171,9 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         ]
       };
 
-      const governmentOrganizationSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'GovernmentOrganization',
-        'name': `${countyName} County Disability Services`,
-        'address': {
-          '@type': 'PostalAddress',
-          'addressLocality': countyName,
-          'addressRegion': stateData.code,
-          'addressCountry': 'US'
-        },
-        'areaServed': {
-          '@type': 'AdministrativeArea',
-          'name': `${countyName} County, ${stateData.code}`
-        }
-      };
-
       return (
         <main className="container animate-fade-in" style={{ paddingBottom: '5rem', paddingTop: '2.5rem' }}>
-          {isIndexable && <SeoSchema data={[faqSchema, governmentOrganizationSchema]} />}
+          {isIndexable && <SeoSchema data={[faqSchema]} />}
           
           {/* Back button */}
           <div style={{ marginBottom: '1.5rem' }}>
@@ -1197,7 +1184,10 @@ async function InnerBenefitsCatchAll({ params }: Props) {
 
           {/* Hero Section */}
           <div className="glass-panel" style={{ padding: '2.5rem', marginBottom: '2rem', background: 'linear-gradient(135deg, rgba(var(--primary-rgb), 0.04) 0%, rgba(var(--primary-rgb), 0.01) 100%)', position: 'relative', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.05, transform: 'scale(1.5)' }}>
+            <div
+              className="county-hero-ornament"
+              style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.05, transform: 'scale(1.5)', pointerEvents: 'none' }}
+            >
               <MapPin size={200} color="var(--primary-color)" />
             </div>
             <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--primary-color)', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'block', marginBottom: '0.5rem' }}>
@@ -1959,12 +1949,6 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         'telephone': sd.spec_ed_contact_phone,
         'email': sd.spec_ed_contact_email,
         'url': sd.website,
-        'address': {
-          '@type': 'PostalAddress',
-          'addressLocality': countyFormatted,
-          'addressRegion': stateCode,
-          'addressCountry': 'US'
-        },
         'description': `${sd.name} Special Education department in ${countyFormatted} County. Inclusion rate: ${sd.inclusion_rate_pct}%. SDC self-contained rate: ${sd.self_contained_rate_pct}%.`
       }))
     };
@@ -2010,13 +1994,8 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         'telephone': adv.phone,
         'email': adv.email,
         'url': adv.website,
-        'address': {
-          '@type': 'PostalAddress',
-          'addressLocality': countyFormatted,
-          'addressRegion': stateCode,
-          'addressCountry': 'US'
-        },
-        'description': `${adv.name} is a special education IEP advocate serving ${countyFormatted} County. Credentials: ${adv.credentials}. Specialties: ${adv.specialties || 'IEP, Regional Center, Appeals'}.`
+        'areaServed': adv.counties_served || undefined,
+        'description': `${adv.name} is a special education IEP advocate with public routing evidence for ${countyFormatted} County. Credentials: ${adv.credentials}. Specialties: ${adv.specialties || 'IEP, Regional Center, Appeals'}.`
       }))
     };
 
@@ -2025,8 +2004,8 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       id: string;
       type: 'regional-center' | 'school-board';
       name: string;
-      address: string;
-      phone: string;
+      address?: string;
+      phone?: string;
       description: string;
       x: number;
       y: number;
@@ -2036,7 +2015,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         id: 'rc-1',
         type: 'regional-center',
         name: eligibleRegionalCenters[0].name,
-        address: `Intake Desk, ${countyFormatted}, ${stateCode}`,
+        address: eligibleRegionalCenters[0].office_locations || undefined,
         phone: eligibleRegionalCenters[0].intake_phone,
         description: `${stateName} developmental agency coordinating respite, therapy funding, and developmental support: ${eligibleRegionalCenters[0].catchment_boundaries}`,
         x: 210,
@@ -2048,7 +2027,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         id: 'sd-1',
         type: 'school-board',
         name: eligibleSchoolDistricts[0].name,
-        address: `Special Education Department, ${countyFormatted}, ${stateCode}`,
+        address: undefined,
         phone: eligibleSchoolDistricts[0].spec_ed_contact_phone || '',
         description: `Special education district coordinator responsible for IEP evaluations, placement, and inclusion LRE classrooms.`,
         x: 580,
@@ -2610,7 +2589,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
         <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: '1.5rem', marginTop: '4rem', fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.4' }}>
           <p><strong>Legal Disclaimer & Citations:</strong> This information is compiled for educational, planning, and advocacy support, and does not constitute legal or medical advice. Verification dates reflect the latest source or database review dates shown on this page. Actual eligibility outcomes remain subject to individual agency assessments.</p>
           <p style={{ marginTop: '0.5rem', marginBottom: 0 }}>
-            {config.legalDisclaimer}
+            {softenedLegalDisclaimer}
           </p>
         </div>
       </main>

@@ -1,0 +1,145 @@
+{
+  "generatedAt": "2026-06-28",
+  "purpose": "Machine-readable launch-safe commit manifest for isolating validated trust/SEO/indexing work from unfinished California foundation churn.",
+  "validatedBy": {
+    "counts": {
+      "completeStates": 45,
+      "blockedStates": 5,
+      "indexSafeStates": 45,
+      "incorrectlyIndexSafeStates": 0,
+      "auditQueueMismatchCount": 0
+    },
+    "commands": [
+      "npm run audit:current-truth",
+      "npm run audit:truth-registry",
+      "npm run audit:final-website",
+      "npm run build",
+      "npm run lint",
+      "npm run seo:qa:full",
+      "npm run test:public-trust",
+      "npm run test:e2e"
+    ],
+    "e2eResult": "446 passed"
+  },
+  "blockedStates": [
+    "alaska",
+    "arizona",
+    "idaho",
+    "maine",
+    "new-hampshire"
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "label": "reconciled_audit_truth_and_handoff",
+      "required": true,
+      "files": [
+        "data/generated/all_state_california_grade_audit_v3.json",
+        "docs/generated/current-truth-audit-2026-06-28.json",
+        "docs/generated/current-truth-audit-2026-06-28.md",
+        "docs/generated/truth-registry-2026-06-28.json",
+        "docs/generated/truth-registry-2026-06-28.md",
+        "docs/generated/final-website-audit-2026-06-28.json",
+        "docs/generated/final-website-audit-2026-06-28.md",
+        "docs/generated/launch-readiness-handoff-2026-06-28.md",
+        "docs/generated/launch-safe-commit-isolation-2026-06-28.md",
+        "docs/generated/launch-safe-staging-recipe-2026-06-28.md",
+        "docs/generated/launch-safe-commit-manifest-2026-06-28.json"
+      ]
+    },
+    {
+      "id": "B",
+      "label": "core_runtime_and_seo_safety",
+      "required": true,
+      "files": [
+        "frontend/src/lib/stateAudit.ts",
+        "frontend/src/app/robots.ts",
+        "frontend/src/app/globals.css"
+      ]
+    },
+    {
+      "id": "C",
+      "label": "launch_validation_tests",
+      "required": true,
+      "files": [
+        "scripts/test-seo-hardening-v1.mjs",
+        "scripts/test-public-copy-hardening.mjs",
+        "scripts/test-public-route-provenance-contract.mjs",
+        "scripts/test-ihss-wage-disclosure.mjs",
+        "scripts/test-directory-public-trust-audit.mjs"
+      ]
+    },
+    {
+      "id": "D",
+      "label": "e2e_expectation_refresh",
+      "required": true,
+      "files": [
+        "frontend/e2e/florida-launch.spec.ts",
+        "frontend/e2e/forms-guides.spec.ts",
+        "frontend/e2e/georgia-launch.spec.ts",
+        "frontend/e2e/illinois-launch.spec.ts",
+        "frontend/e2e/new-jersey-launch.spec.ts",
+        "frontend/e2e/new-york-launch.spec.ts",
+        "frontend/e2e/ohio-launch.spec.ts",
+        "frontend/e2e/pennsylvania-launch.spec.ts",
+        "frontend/e2e/seo-sitemap.spec.ts",
+        "frontend/e2e/texas-launch.spec.ts",
+        "frontend/e2e/wave2-launch.spec.ts",
+        "frontend/e2e/wave3-launch.spec.ts",
+        "frontend/e2e/wave4-launch.spec.ts",
+        "frontend/e2e/wave5-launch.spec.ts",
+        "frontend/e2e/wyoming-launch.spec.ts"
+      ]
+    },
+    {
+      "id": "E",
+      "label": "reviewed_trust_and_seo_frontend_surfaces",
+      "required": false,
+      "files": [
+        "frontend/src/app/advocates/advocate-directory-client.tsx",
+        "frontend/src/app/benefits/[state]/[[...slug]]/page.tsx",
+        "frontend/src/app/benefits/[state]/[diagnosis]/[county]/page.tsx",
+        "frontend/src/app/benefits/components/ihss-calculator.tsx",
+        "frontend/src/app/benefits/components/ihss-mini-product.tsx",
+        "frontend/src/app/components/SourceFreshnessDisclosure.tsx",
+        "frontend/src/app/components/directory-foundation-panel.tsx",
+        "frontend/src/app/components/waiver-comparison.tsx",
+        "frontend/src/app/dashboard/page.tsx",
+        "frontend/src/app/find-help/find-help-client.tsx",
+        "frontend/src/app/forms/page.tsx",
+        "frontend/src/app/share/log/[token]/page.tsx",
+        "frontend/src/app/sitemaps/static.xml/route.ts",
+        "frontend/src/components/state-coverage-badge.tsx",
+        "frontend/src/lib/directoryFoundation.ts",
+        "frontend/src/lib/publicTruth.ts",
+        "frontend/src/lib/seo-data.ts",
+        "frontend/src/lib/seoRouteManifest.ts"
+      ]
+    }
+  ],
+  "excludePatterns": [
+    "data/generated/ca_*",
+    "data/generated/california-*",
+    "docs/generated/ca-*",
+    "docs/generated/california-*",
+    "scripts/*ca-*",
+    "scripts/*california-*"
+  ],
+  "validationAfterStage": {
+    "minimalGroups": [
+      "npm run audit:final-website",
+      "npm run seo:qa:full",
+      "npm run test:public-trust"
+    ],
+    "broaderGroups": [
+      "npm run build",
+      "npm run lint",
+      "npm run audit:current-truth",
+      "npm run audit:truth-registry",
+      "npm run audit:final-website",
+      "npm run seo:qa:full",
+      "npm run test:public-trust",
+      "npm run test:e2e"
+    ]
+  }
+}

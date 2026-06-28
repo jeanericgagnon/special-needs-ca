@@ -299,6 +299,22 @@ Best regards,
 
   return (
     <div>
+      <div
+        className="glass-panel"
+        style={{
+          padding: '1.25rem 1.5rem',
+          borderRadius: '18px',
+          background: 'rgba(245, 158, 11, 0.08)',
+          border: '1px solid rgba(245, 158, 11, 0.18)',
+          marginBottom: '1.5rem',
+        }}
+      >
+        <strong style={{ display: 'block', marginBottom: '0.45rem', color: '#92400e' }}>Important note</strong>
+        <p style={{ margin: 0, lineHeight: 1.6, color: '#92400e', fontSize: '0.92rem' }}>
+          This directory stays <strong>noindex</strong> while local advocate depth is still under review. Listings here are source-backed public records, not endorsements or proof of county-level availability, and you should confirm service area, credentials, fees, and current intake before relying on a match.
+        </p>
+      </div>
+
       {/* Search and Sort controls panel */}
       <div 
         className="glass-panel" 

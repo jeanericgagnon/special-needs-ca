@@ -47,7 +47,7 @@ test.describe('Forms and Guides E2E Tests', () => {
       await expect(downloadLink.first()).toBeAttached();
 
       // Freshness Footnotes
-      expect(bodyText).toMatch(/(Source (Notes|Verified Sources) & Freshness Information|Sources, Review Dates, and Confidence|Last reviewed:)/i);
+      expect(bodyText).toMatch(/(Source (Notes|Verified Sources) & Freshness Information|Sources, Review Dates, and Confidence|Sources, Last Checked Dates, Confidence, and Estimate Notes|Last reviewed:|Last checked:)/i);
 
       // Printable templates or script helper (e.g. Call Script or Letter template)
       expect(bodyText).toMatch(/Phone Script|Cover Letter|Briefing Document|Request Letter|Intake Phone Script/i);
@@ -78,7 +78,7 @@ test.describe('Forms and Guides E2E Tests', () => {
       expect(bodyText).toContain('Common Mistakes');
 
       // Check freshness disclosure
-      expect(bodyText).toMatch(/(Source (Notes|Verified Sources) & Freshness Information|Sources, Review Dates, and Confidence|Last reviewed:)/i);
+      expect(bodyText).toMatch(/(Source (Notes|Verified Sources) & Freshness Information|Sources, Review Dates, and Confidence|Sources, Last Checked Dates, Confidence, and Estimate Notes|Last reviewed:|Last checked:)/i);
 
       // Assert no null placeholders
       expect(bodyText).not.toContain('undefined');

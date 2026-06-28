@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { verifyToken } from '@/lib/auth';
@@ -34,6 +35,18 @@ import type {
   ChildWaiver
 } from '@/lib/db';
 import DashboardClient from './dashboard-client';
+
+export const metadata: Metadata = {
+  title: 'Saved plans dashboard | Ablefull',
+  description: 'Access saved plans, reminders, documents, and private family workflow tools. This private dashboard is excluded from indexing.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: '/dashboard',
+  },
+};
 
 interface PageProps {
   searchParams: Promise<{ childId?: string; tab?: string; sub?: string }>;

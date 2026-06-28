@@ -1,7 +1,17 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import { verifyShareToken, getChildProfile, getSafetyIncidents } from '@/lib/db';
 import SharedLogView from './SharedLogView';
 import { ShieldAlert } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Shared behavior log | Ablefull',
+  description: 'View a parent-shared behavior log through a tokenized private link. This route is excluded from indexing.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default async function SharedLogPage({ params }: { params: Promise<{ token: string }> }) {
   const resolvedParams = await params;

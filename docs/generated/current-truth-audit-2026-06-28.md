@@ -20,7 +20,7 @@ Generated: 2026-06-28
 | Alaska | yes | no | no | Missing core waitlist items: ak-dd-waiver, ak-dd-self-direction, ak-medicaid. / DD routing covers 0% of expected counties. / Core office coverage is 0% of expected counties. |
 | Arizona | yes | no | no | Missing core waitlist items: az-dd-waiver, az-dd-self-direction, az-medicaid. / DD routing covers 0% of expected counties. / Core office coverage is 0% of expected counties. |
 | Arkansas | yes | no | no | Missing core waitlist items: ar-dd-waiver, ar-dd-self-direction, ar-medicaid. / DD routing covers 0% of expected counties. / Core office coverage is 0% of expected counties. |
-| California | no | no | no | 168 rows still use fallback data origins. / 77 rows still use fallback data origins. / 42 rows still use fallback data origins. |
+| California | no | no | no | 166 rows still use fallback data origins. / 77 rows still use fallback data origins. / 42 rows still use fallback data origins. |
 | Colorado | yes | no | no | Missing core waitlist items: co-dd-waiver, co-dd-self-direction, co-medicaid. / DD routing covers 0% of expected counties. / Core office coverage is 0% of expected counties. |
 | Connecticut | yes | no | no | Missing core waitlist items: ct-dd-waiver, ct-dd-self-direction, ct-medicaid. / DD routing covers 0% of expected counties. / Core office coverage is 0% of expected counties. |
 | Delaware | yes | no | no | Missing core waitlist items: de-dd-waiver, de-dd-self-direction, de-medicaid. / DD routing covers 0% of expected counties. / Core office coverage is 0% of expected counties. |
@@ -74,7 +74,7 @@ Generated: 2026-06-28
 - Public safe: no
 - Index safe: no
 - Gold eligible: no
-- Composite readiness: 49.4%
+- Composite readiness: 55.3%
 - Indexed county roots: 0/58
 - High-fidelity county-diagnosis priority coverage: 8/8 (100%)
 - Missing core waitlists: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba
@@ -86,10 +86,10 @@ Generated: 2026-06-28
 | 1 | Florida | 70% | 77.5% | 59.7% | 61.6% | 77.5% | 66.8% | 76.7% | 100% | 100% |
 | 2 | New York | 57.5% | 54.3% | 57.2% | 34.3% | 77.5% | 45.1% | 76.7% | 100% | 100% |
 | 3 | Pennsylvania | 55.4% | 49.2% | 56.4% | 29.5% | 77.5% | 42.9% | 76.7% | 100% | 100% |
-| 4 | Ohio | 54.8% | 50.3% | 55.9% | 27.2% | 77.2% | 41.5% | 76.7% | 100% | 100% |
-| 5 | Illinois | 54.7% | 48.2% | 56.1% | 28.4% | 77.2% | 41.3% | 76.7% | 100% | 100% |
-| 6 | Georgia | 53.6% | 54.9% | 55.8% | 24.6% | 69.9% | 39.4% | 76.7% | 100% | 100% |
-| 7 | California | 49.4% | 65% | 57.2% | 43% | 65.9% | 0% | 65% | 0% | 100% |
+| 4 | California | 55.3% | 100% | 57.7% | 43% | 65.9% | 0% | 65% | 0% | 100% |
+| 5 | Ohio | 54.8% | 50.3% | 55.9% | 27.2% | 77.2% | 41.5% | 76.7% | 100% | 100% |
+| 6 | Illinois | 54.7% | 48.2% | 56.1% | 28.4% | 77.2% | 41.3% | 76.7% | 100% | 100% |
+| 7 | Georgia | 53.6% | 54.9% | 55.8% | 24.6% | 69.9% | 39.4% | 76.7% | 100% | 100% |
 | 8 | Hawaii | 39.2% | 65% | 20% | 65% | 20% | 0% | 65% | 0% | 100% |
 | 9 | Iowa | 39.2% | 65% | 20% | 65% | 20% | 0% | 65% | 0% | 100% |
 | 10 | Kansas | 39.2% | 65% | 20% | 65% | 20% | 0% | 65% | 0% | 100% |
@@ -98,7 +98,7 @@ Generated: 2026-06-28
 
 | State | Composite | Public Safe | Gold Eligible | Source-Listed Offices | Manual Review Districts | Null DD Verification Status | County-Diagnosis Priority Coverage | Missing Core Waitlists |
 | --- | ---: | --- | --- | ---: | ---: | ---: | ---: | --- |
-| California | 49.4% | no | no | 0 | 0 | 0 | 100% | ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba |
+| California | 55.3% | no | no | 0 | 0 | 0 | 100% | ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba |
 | Florida | 70% | no | no | 14 | 0 | 0 | 100% | fl-cdc-plus, fl-medicaid-dcf |
 | Georgia | 53.6% | no | no | 0 | 0 | 0 | 100% | ga-now-waiver, ga-medicaid |
 | Illinois | 54.7% | no | no | 0 | 0 | 0 | 100% | il-adults-dd-waiver, il-medicaid |
@@ -115,7 +115,7 @@ Generated: 2026-06-28
 
 ## Decision Notes
 
-- California composite readiness score: 49.4%
+- California composite readiness score: 55.3%
 - Best non-California peer: Florida at 70%
 - California remains the strongest trust baseline, but not a finished gold standard because one or more truth, trust, or completeness blockers still remain.
 

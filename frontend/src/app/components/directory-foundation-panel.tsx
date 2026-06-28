@@ -10,6 +10,7 @@ import {
   hasDirectoryAvailabilityDetails,
   hasDirectoryPanelAccessibilityDetails,
   hasDirectoryPanelNextStepDetails,
+  isMeaningfulDirectoryAddress,
   isMeaningfulDirectoryEmail,
   isMeaningfulDirectoryPhone,
   isMeaningfulDirectoryWebsite,
@@ -206,6 +207,9 @@ export default function DirectoryFoundationPanel({
   const publicPhone = isMeaningfulDirectoryPhone(record.phone) ? record.phone : null;
   const publicEmail = isMeaningfulDirectoryEmail(record.email) ? record.email : null;
   const publicWebsite = isMeaningfulDirectoryWebsite(record.website) ? record.website : null;
+  const publicAddress = isMeaningfulDirectoryAddress(record.address) ? record.address : null;
+  const publicNextStepPhone = isMeaningfulDirectoryPhone(record.next_step_phone) ? record.next_step_phone : null;
+  const publicNextStepEmail = isMeaningfulDirectoryEmail(record.next_step_email) ? record.next_step_email : null;
   const primaryLink = record.next_step_url || record.application_url || record.referral_url || publicWebsite;
   const primaryLinkLabel = getPrimaryLinkLabel(record, nextStepText);
   const saved = isDirectoryResourceSaved(record.id, recordType);
@@ -302,7 +306,7 @@ export default function DirectoryFoundationPanel({
       <strong style={{ display: 'block', color: 'var(--text-main)', marginBottom: '0.1rem', fontSize: '0.95rem' }}>{heading}</strong>
       <h4 style={{ fontSize: '0.95rem', fontWeight: 700, margin: 0 }}>{record.name}</h4>
       {subtitle && <p style={{ fontSize: '0.82rem', margin: 0, color: 'var(--text-light)', lineHeight: 1.45 }}>{subtitle}</p>}
-      {record.address && <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}>{record.address}</span>}
+      {publicAddress && <span style={{ fontSize: '0.78rem', color: 'var(--text-light)' }}>{publicAddress}</span>}
       <div>
         <button
           type="button"
@@ -370,8 +374,8 @@ export default function DirectoryFoundationPanel({
           {record.requirements && <div><strong style={{ color: 'var(--text-main)' }}>Requirements:</strong> {record.requirements}</div>}
           {record.walk_in_available === 1 && <div>Walk-ins available</div>}
           {record.appointment_required === 1 && <div>Appointment required</div>}
-          {record.next_step_phone && <div><strong style={{ color: 'var(--text-main)' }}>Intake phone:</strong> {record.next_step_phone}</div>}
-          {record.next_step_email && <div><strong style={{ color: 'var(--text-main)' }}>Intake email:</strong> {record.next_step_email}</div>}
+          {publicNextStepPhone && <div><strong style={{ color: 'var(--text-main)' }}>Intake phone:</strong> {publicNextStepPhone}</div>}
+          {publicNextStepEmail && <div><strong style={{ color: 'var(--text-main)' }}>Intake email:</strong> {publicNextStepEmail}</div>}
         </div>
       )}
 

@@ -22,10 +22,10 @@ Generated: 2026-06-28
 | Florida | public_safe_but_blocked | yes | yes | no | no | 70% | 0 | 0 | 53 rows still use fallback data origins. |
 | New York | public_safe_but_blocked | yes | yes | no | no | 57.5% | 0 | 0 | 50 rows still use fallback data origins. |
 | Pennsylvania | public_safe_but_blocked | yes | yes | no | no | 55.4% | 0 | 0 | 59 rows still use fallback data origins. |
+| California | public_safe_but_blocked | yes | yes | no | no | 55.3% | 0 | 0 | 166 rows still use fallback data origins. |
 | Ohio | public_safe_but_blocked | yes | yes | no | no | 54.8% | 0 | 0 | 81 rows still use fallback data origins. |
 | Illinois | public_safe_but_blocked | yes | yes | no | no | 54.7% | 0 | 0 | 92 rows still use fallback data origins. |
 | Georgia | public_safe_but_blocked | yes | yes | no | no | 53.6% | 0 | 0 | 148 rows still use fallback data origins. |
-| California | public_safe_but_blocked | yes | yes | no | no | 49.4% | 0 | 0 | 168 rows still use fallback data origins. |
 | Hawaii | public_safe_but_blocked | yes | yes | no | no | 39.2% | 0 | 0 | Missing core waitlist items: hi-dd-waiver, hi-dd-self-direction, hi-medicaid. |
 | Iowa | public_safe_but_blocked | yes | yes | no | no | 39.2% | 0 | 0 | Missing core waitlist items: ia-dd-waiver, ia-dd-self-direction, ia-medicaid. |
 | Kansas | public_safe_but_blocked | yes | yes | no | no | 39.2% | 0 | 0 | Missing core waitlist items: ks-dd-waiver, ks-dd-self-direction, ks-medicaid. |
@@ -79,10 +79,10 @@ Generated: 2026-06-28
 - Florida: 70% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - New York: 57.5% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - Pennsylvania: 55.4% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
+- California: 55.3% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - Ohio: 54.8% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - Illinois: 54.7% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - Georgia: 53.6% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
-- California: 49.4% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - Hawaii: 39.2% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - Iowa: 39.2% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.
 - Kansas: 39.2% readiness, 0 priority county-diagnosis gaps, 0 advocate coverage-loss counties.

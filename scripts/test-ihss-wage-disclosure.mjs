@@ -103,6 +103,9 @@ const ihssMiniProductSource = fs.readFileSync(
 );
 assert.match(ihssMiniProductSource, /formatIhssHourlyEstimateValue\(wageDisclosure\)/);
 assert.doesNotMatch(ihssMiniProductSource, /countyDetails\.wage\.toFixed\(2\)/);
+assert.doesNotMatch(ihssMiniProductSource, /const STATIC_COUNTIES/);
+assert.doesNotMatch(ihssMiniProductSource, /2707 S\. Grand Ave|1505 E Warner Ave|6955 Foothill Blvd|1650 Mission St/);
+assert.match(ihssMiniProductSource, /official county IHSS office directory/i);
 
 const countiesClientSource = fs.readFileSync(
   path.join(repoRoot, 'frontend/src/app/counties/[state]/counties-client.tsx'),

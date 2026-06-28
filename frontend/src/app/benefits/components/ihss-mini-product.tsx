@@ -17,25 +17,6 @@ interface IhssMiniProductProps {
   countiesList?: { id: string; name: string }[];
 }
 
-const STATIC_COUNTIES: Record<string, { phone: string; address: string }> = {
-  'los-angeles': {
-    phone: '(888) 944-4477',
-    address: '2707 S. Grand Ave, Los Angeles, CA 90007'
-  },
-  'orange': {
-    phone: '(714) 825-3000',
-    address: '1505 E Warner Ave, Santa Ana, CA 92705'
-  },
-  'alameda': {
-    phone: '(510) 577-1800',
-    address: '6955 Foothill Blvd, Oakland, CA 94605'
-  },
-  'san-francisco': {
-    phone: '(415) 557-5262',
-    address: '1650 Mission St, San Francisco, CA 94103'
-  }
-};
-
 function hasUsableOfficeValue(value?: string | null) {
   const text = String(value || '').trim();
   if (!text) return false;
@@ -66,9 +47,8 @@ export default function IhssMiniProduct({
      activeCountyId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()));
 
   const wageDisclosure = getIhssWageDisclosure('california', activeCountyId, activeCountyName, initialWage ?? null);
-  const staticCountyDetails = STATIC_COUNTIES[activeCountyId];
-  const countyPhone = staticCountyDetails?.phone || (hasUsableOfficeValue(initialPhone) ? initialPhone : null);
-  const countyAddress = staticCountyDetails?.address || (hasUsableOfficeValue(initialAddress) ? initialAddress : null);
+  const countyPhone = hasUsableOfficeValue(initialPhone) ? initialPhone : null;
+  const countyAddress = hasUsableOfficeValue(initialAddress) ? initialAddress : null;
   const countyDetails = {
     phone: countyPhone,
     address: countyAddress,
@@ -314,9 +294,9 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                 </strong>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-main)', lineHeight: '1.5', margin: 0 }}>
                   <strong>Maybe.</strong> A child with <strong>{diagnosisName}</strong> may qualify for California IHSS Protective Supervision if the county finds severe cognitive or behavioral safety risks that require constant monitoring.
-                  The county may authorize a parent or relative provider arrangement when it documents that level of need and approves the provider setup.
+                  The county may authorize a parent or relative provider arrangement when it documents that level of need and authorizes the provider setup under the current rules.
                   {' '}In <strong>{activeCountyName}</strong>, we currently show {wageDisclosure?.hourlyRate !== null && wageDisclosure?.hourlyRate !== undefined ? <>a checked public county rate estimate of <strong>{formatIhssHourlyEstimateValue(wageDisclosure)}</strong></> : 'no county-specific rate estimate yet'}.
-                  {' '}Actual approved hours and monthly pay depend on the county assessment, current local rate, and authorization.
+                  {' '}Any authorized hours and monthly pay still depend on the county assessment, the current local rate, and the final county decision.
                 </p>
                 {wageDisclosure && (
                   <p style={{ fontSize: '0.78rem', color: 'var(--text-light)', lineHeight: '1.45', margin: '0.6rem 0 0 0' }}>
@@ -342,13 +322,13 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', background: '#fafafa', padding: '1rem', borderRadius: '12px', border: '1px solid #eee' }}>
-                <span style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-main)' }}>📍 Local County Office Info:</span>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>🏢 <strong>{activeCountyName} County IHSS Intake</strong></span>
+                <span style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-main)' }}>📍 Current County IHSS Contact Check</span>
+                <span style={{ fontSize: '0.85rem', color: 'var(--text-main)' }}>🏢 <strong>{activeCountyName} County IHSS intake route</strong></span>
                 {countyDetails.address ? (
                   <span style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>📍 Address: {countyDetails.address}</span>
                 ) : (
                   <span style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>
-                    📍 We are still verifying the current county IHSS office address for {activeCountyName}.
+                    📍 We are still verifying the current county IHSS office address for {activeCountyName}. Use the official county directory before relying on a local office location.
                   </span>
                 )}
                 {countyDetails.phone ? (
@@ -357,7 +337,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
                   </span>
                 ) : (
                   <span style={{ fontSize: '0.82rem', color: 'var(--text-light)' }}>
-                    📞 We are still verifying the current county IHSS intake phone for {activeCountyName}. Confirm the latest local contact before relying on this tool.
+                    📞 We are still verifying the current county IHSS intake phone for {activeCountyName}. Confirm the latest local contact in the official county IHSS office directory before relying on this tool.
                   </span>
                 )}
               </div>
@@ -553,7 +533,7 @@ NOTES FOR HOME VISIT SOCIAL WORKER:
               <div>
                 <strong style={{ fontSize: '0.92rem', display: 'block', color: 'var(--text-main)' }}>Receive the Notice of Action (NOA)</strong>
                 <span style={{ fontSize: '0.82rem', color: 'var(--text-light)', lineHeight: '1.4', display: 'block', marginTop: '0.2rem' }}>
-                  If approved, you will receive a Notice of Action detailing your monthly hours. If the request is denied or reduced, review the deadline listed on your current notice before filing an appeal. You can generate an appeal letter template in the Appeals tab of this dashboard.
+                  If the county approves the request, you will receive a Notice of Action detailing your monthly hours. If the request is denied or reduced, review the deadline listed on your current notice before filing an appeal. You can generate an appeal letter draft in the Appeals tab of this dashboard.
                 </span>
               </div>
             </div>

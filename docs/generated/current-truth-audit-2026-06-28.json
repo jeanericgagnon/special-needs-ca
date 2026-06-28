@@ -48,7 +48,7 @@
     "californiaIsBestBaseline": false,
     "californiaIsFinishedGoldStandard": false,
     "rationale": [
-      "California composite readiness score: 49.4%",
+      "California composite readiness score: 55.3%",
       "Best non-California peer: Florida at 70%",
       "California remains the strongest trust baseline, but not a finished gold standard because one or more truth, trust, or completeness blockers still remain."
     ]
@@ -601,6 +601,191 @@
         }
       },
       {
+        "id": "california",
+        "name": "California",
+        "code": "CA",
+        "countyCount": 60,
+        "expectedCountyCount": 58,
+        "indexedCountyRoots": 0,
+        "indexCoveragePct": 0,
+        "coreProgramsCount": 11,
+        "requiredFormsCount": 22,
+        "priorityMetroCounties": 8,
+        "priorityMetroCountyIds": [
+          "los-angeles",
+          "orange",
+          "san-diego",
+          "riverside",
+          "sacramento",
+          "san-francisco",
+          "alameda",
+          "fresno"
+        ],
+        "catchmentName": "Regional Center",
+        "educationAgencyLabel": "Special Education Local Plan Areas (SELPAs)",
+        "records": {
+          "ddRouting": {
+            "total": 21,
+            "fallback": 0,
+            "verified": 21,
+            "source_listed": 0,
+            "manual_review_required": 0,
+            "null_status": 0,
+            "unverified": 0,
+            "missingPublicSignal": 0,
+            "weightedDepth": 100
+          },
+          "localOffices": {
+            "total": 175,
+            "fallback": 166,
+            "verified": 8,
+            "source_listed": 0,
+            "manual_review_required": 0,
+            "null_status": 0,
+            "unverified": 167,
+            "missingPublicSignal": 0,
+            "weightedDepth": 4.7
+          },
+          "education": {
+            "total": 143,
+            "fallback": 77,
+            "verified": 0,
+            "source_listed": 65,
+            "manual_review_required": 0,
+            "null_status": 0,
+            "unverified": 78,
+            "missingPublicSignal": 0,
+            "weightedDepth": 22.9
+          },
+          "nonprofits": {
+            "total": 78,
+            "fallback": 42,
+            "verified": 0,
+            "source_listed": 35,
+            "manual_review_required": 0,
+            "null_status": 0,
+            "unverified": 43,
+            "missingPublicSignal": 0,
+            "weightedDepth": 22.8
+          },
+          "advocates": {
+            "total": 0,
+            "fallback": 0,
+            "verified": 0,
+            "source_listed": 0,
+            "manual_review_required": 0,
+            "null_status": 0,
+            "unverified": 0,
+            "missingPublicSignal": 0,
+            "weightedDepth": 0
+          }
+        },
+        "coverage": {
+          "ddRouting": 100,
+          "localOffices": 101.7,
+          "education": 36.2,
+          "nonprofits": 101.7,
+          "advocates": 0,
+          "waitlists": 0
+        },
+        "waitlists": {
+          "expected": [
+            "ihss-for-children",
+            "regional-centers",
+            "early-start",
+            "self-determination-program",
+            "medi-cal-for-kids-and-teens",
+            "california-childrens-services",
+            "hearing-aid-coverage",
+            "ssi-for-children",
+            "calable",
+            "iep-special-education",
+            "hcba"
+          ],
+          "present": [],
+          "missing": [
+            "ihss-for-children",
+            "regional-centers",
+            "early-start",
+            "self-determination-program",
+            "medi-cal-for-kids-and-teens",
+            "california-childrens-services",
+            "hearing-aid-coverage",
+            "ssi-for-children",
+            "calable",
+            "iep-special-education",
+            "hcba"
+          ]
+        },
+        "countyDiagnosis": {
+          "priorityCountyCount": 8,
+          "highFidelityPriorityCount": 8,
+          "priorityCoveragePct": 100
+        },
+        "advocateTruth": {
+          "countiesLosingCoverage": 0,
+          "quarantinedAdvocates": 0,
+          "syntheticPatternAdvocates": 0,
+          "publicSafeAdvocates": 116
+        },
+        "scores": {
+          "ddRouting": 100,
+          "localOffices": 57.7,
+          "education": 43,
+          "nonprofits": 65.9,
+          "advocates": 0,
+          "waitlists": 65,
+          "compositeReadiness": 55.3
+        },
+        "verdict": {
+          "publicSafe": false,
+          "indexSafe": false,
+          "goldEligible": false,
+          "blockers": [
+            {
+              "category": "localOffices",
+              "message": "166 rows still use fallback data origins."
+            },
+            {
+              "category": "education",
+              "message": "77 rows still use fallback data origins."
+            },
+            {
+              "category": "nonprofits",
+              "message": "42 rows still use fallback data origins."
+            },
+            {
+              "category": "waitlists",
+              "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba."
+            },
+            {
+              "category": "education",
+              "message": "Education coverage is 36.2% of expected counties."
+            },
+            {
+              "category": "localOffices",
+              "message": "167 office rows are still unverified."
+            },
+            {
+              "category": "education",
+              "message": "65 education rows are only source-listed."
+            },
+            {
+              "category": "education",
+              "message": "78 education rows are still unverified."
+            },
+            {
+              "category": "nonprofits",
+              "message": "35 nonprofit rows are only source-listed."
+            },
+            {
+              "category": "nonprofits",
+              "message": "43 nonprofit rows are still unverified."
+            }
+          ]
+        }
+      },
+      {
         "id": "ohio",
         "name": "Ohio",
         "code": "OH",
@@ -1146,195 +1331,6 @@
             {
               "category": "advocates",
               "message": "23 advocate/provider rows are still unverified."
-            }
-          ]
-        }
-      },
-      {
-        "id": "california",
-        "name": "California",
-        "code": "CA",
-        "countyCount": 60,
-        "expectedCountyCount": 58,
-        "indexedCountyRoots": 0,
-        "indexCoveragePct": 0,
-        "coreProgramsCount": 11,
-        "requiredFormsCount": 22,
-        "priorityMetroCounties": 8,
-        "priorityMetroCountyIds": [
-          "los-angeles",
-          "orange",
-          "san-diego",
-          "riverside",
-          "sacramento",
-          "san-francisco",
-          "alameda",
-          "fresno"
-        ],
-        "catchmentName": "Regional Center",
-        "educationAgencyLabel": "Special Education Local Plan Areas (SELPAs)",
-        "records": {
-          "ddRouting": {
-            "total": 7,
-            "fallback": 0,
-            "verified": 7,
-            "source_listed": 0,
-            "manual_review_required": 0,
-            "null_status": 0,
-            "unverified": 0,
-            "missingPublicSignal": 0,
-            "weightedDepth": 100
-          },
-          "localOffices": {
-            "total": 175,
-            "fallback": 168,
-            "verified": 6,
-            "source_listed": 0,
-            "manual_review_required": 0,
-            "null_status": 0,
-            "unverified": 169,
-            "missingPublicSignal": 0,
-            "weightedDepth": 3.6
-          },
-          "education": {
-            "total": 143,
-            "fallback": 77,
-            "verified": 0,
-            "source_listed": 65,
-            "manual_review_required": 0,
-            "null_status": 0,
-            "unverified": 78,
-            "missingPublicSignal": 0,
-            "weightedDepth": 22.9
-          },
-          "nonprofits": {
-            "total": 78,
-            "fallback": 42,
-            "verified": 0,
-            "source_listed": 35,
-            "manual_review_required": 0,
-            "null_status": 0,
-            "unverified": 43,
-            "missingPublicSignal": 0,
-            "weightedDepth": 22.8
-          },
-          "advocates": {
-            "total": 0,
-            "fallback": 0,
-            "verified": 0,
-            "source_listed": 0,
-            "manual_review_required": 0,
-            "null_status": 0,
-            "unverified": 0,
-            "missingPublicSignal": 0,
-            "weightedDepth": 0
-          }
-        },
-        "coverage": {
-          "ddRouting": 0,
-          "localOffices": 101.7,
-          "education": 36.2,
-          "nonprofits": 101.7,
-          "advocates": 0,
-          "waitlists": 0
-        },
-        "waitlists": {
-          "expected": [
-            "ihss-for-children",
-            "regional-centers",
-            "early-start",
-            "self-determination-program",
-            "medi-cal-for-kids-and-teens",
-            "california-childrens-services",
-            "hearing-aid-coverage",
-            "ssi-for-children",
-            "calable",
-            "iep-special-education",
-            "hcba"
-          ],
-          "present": [],
-          "missing": [
-            "ihss-for-children",
-            "regional-centers",
-            "early-start",
-            "self-determination-program",
-            "medi-cal-for-kids-and-teens",
-            "california-childrens-services",
-            "hearing-aid-coverage",
-            "ssi-for-children",
-            "calable",
-            "iep-special-education",
-            "hcba"
-          ]
-        },
-        "countyDiagnosis": {
-          "priorityCountyCount": 8,
-          "highFidelityPriorityCount": 8,
-          "priorityCoveragePct": 100
-        },
-        "advocateTruth": {
-          "countiesLosingCoverage": 0,
-          "quarantinedAdvocates": 0,
-          "syntheticPatternAdvocates": 0,
-          "publicSafeAdvocates": 116
-        },
-        "scores": {
-          "ddRouting": 65,
-          "localOffices": 57.2,
-          "education": 43,
-          "nonprofits": 65.9,
-          "advocates": 0,
-          "waitlists": 65,
-          "compositeReadiness": 49.4
-        },
-        "verdict": {
-          "publicSafe": false,
-          "indexSafe": false,
-          "goldEligible": false,
-          "blockers": [
-            {
-              "category": "localOffices",
-              "message": "168 rows still use fallback data origins."
-            },
-            {
-              "category": "education",
-              "message": "77 rows still use fallback data origins."
-            },
-            {
-              "category": "nonprofits",
-              "message": "42 rows still use fallback data origins."
-            },
-            {
-              "category": "waitlists",
-              "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba."
-            },
-            {
-              "category": "ddRouting",
-              "message": "DD routing covers 0% of expected counties."
-            },
-            {
-              "category": "education",
-              "message": "Education coverage is 36.2% of expected counties."
-            },
-            {
-              "category": "localOffices",
-              "message": "169 office rows are still unverified."
-            },
-            {
-              "category": "education",
-              "message": "65 education rows are only source-listed."
-            },
-            {
-              "category": "education",
-              "message": "78 education rows are still unverified."
-            },
-            {
-              "category": "nonprofits",
-              "message": "35 nonprofit rows are only source-listed."
-            },
-            {
-              "category": "nonprofits",
-              "message": "43 nonprofit rows are still unverified."
             }
           ]
         }
@@ -7920,9 +7916,9 @@
       "educationAgencyLabel": "Special Education Local Plan Areas (SELPAs)",
       "records": {
         "ddRouting": {
-          "total": 7,
+          "total": 21,
           "fallback": 0,
-          "verified": 7,
+          "verified": 21,
           "source_listed": 0,
           "manual_review_required": 0,
           "null_status": 0,
@@ -7932,14 +7928,14 @@
         },
         "localOffices": {
           "total": 175,
-          "fallback": 168,
-          "verified": 6,
+          "fallback": 166,
+          "verified": 8,
           "source_listed": 0,
           "manual_review_required": 0,
           "null_status": 0,
-          "unverified": 169,
+          "unverified": 167,
           "missingPublicSignal": 0,
-          "weightedDepth": 3.6
+          "weightedDepth": 4.7
         },
         "education": {
           "total": 143,
@@ -7976,7 +7972,7 @@
         }
       },
       "coverage": {
-        "ddRouting": 0,
+        "ddRouting": 100,
         "localOffices": 101.7,
         "education": 36.2,
         "nonprofits": 101.7,
@@ -8024,13 +8020,13 @@
         "publicSafeAdvocates": 116
       },
       "scores": {
-        "ddRouting": 65,
-        "localOffices": 57.2,
+        "ddRouting": 100,
+        "localOffices": 57.7,
         "education": 43,
         "nonprofits": 65.9,
         "advocates": 0,
         "waitlists": 65,
-        "compositeReadiness": 49.4
+        "compositeReadiness": 55.3
       },
       "verdict": {
         "publicSafe": false,
@@ -8039,7 +8035,7 @@
         "blockers": [
           {
             "category": "localOffices",
-            "message": "168 rows still use fallback data origins."
+            "message": "166 rows still use fallback data origins."
           },
           {
             "category": "education",
@@ -8054,16 +8050,12 @@
             "message": "Missing core waitlist items: ihss-for-children, regional-centers, early-start, self-determination-program, medi-cal-for-kids-and-teens, california-childrens-services, hearing-aid-coverage, ssi-for-children, calable, iep-special-education, hcba."
           },
           {
-            "category": "ddRouting",
-            "message": "DD routing covers 0% of expected counties."
-          },
-          {
             "category": "education",
             "message": "Education coverage is 36.2% of expected counties."
           },
           {
             "category": "localOffices",
-            "message": "169 office rows are still unverified."
+            "message": "167 office rows are still unverified."
           },
           {
             "category": "education",
