@@ -17,7 +17,7 @@
   },
   "authoritativeInputs": {
     "informationInventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-inventory-2026-06-20.json",
-    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-20.json",
+    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-28.json",
     "launchPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/launch-critical-data-acquisition-plan-2026-06-20.json",
     "exhaustiveGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/exhaustive-gap-master-2026-06-28.json",
     "scrapeUniverseQueuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/scrape-target-universe-queue-2026-06-20.json",
@@ -453,7 +453,7 @@
       "currentHave": [
         "Live help_resources table: missing",
         "staging_scraped_help_resources rows: 0",
-        "Completion dispositions: housing=unknown, goods=unknown, jobs=unknown, care=unknown, transport=queued"
+        "Completion dispositions: housing=explicitly_blocked, goods=explicitly_blocked, jobs=explicitly_blocked, care=explicitly_blocked, transport=queued"
       ],
       "staging": [],
       "queue": [
@@ -725,10 +725,10 @@
     "missingSourceFamilyCount": 0,
     "actionableBlockerCount": 0,
     "queuedFamilyCount": 3,
-    "processedFamilyCount": 3,
-    "explicitlyBlockedFamilyCount": 4,
-    "unknownGapCount": 5,
-    "allInScopeFamiliesAccountedFor": false,
+    "processedFamilyCount": 4,
+    "explicitlyBlockedFamilyCount": 8,
+    "unknownGapCount": 0,
+    "allInScopeFamiliesAccountedFor": true,
     "families": [
       {
         "id": "programs_waivers_appeals_waitlists",
@@ -740,7 +740,7 @@
       {
         "id": "forms_guides",
         "label": "Forms and guides",
-        "disposition": "unknown",
+        "disposition": "processed",
         "queueCount": 0,
         "blockerId": ""
       },
@@ -782,28 +782,28 @@
       {
         "id": "housing",
         "label": "Housing",
-        "disposition": "unknown",
+        "disposition": "explicitly_blocked",
         "queueCount": 0,
         "blockerId": ""
       },
       {
         "id": "goods_supplies",
         "label": "Goods and supplies",
-        "disposition": "unknown",
+        "disposition": "explicitly_blocked",
         "queueCount": 0,
         "blockerId": ""
       },
       {
         "id": "jobs_vocational",
         "label": "Jobs and vocational support",
-        "disposition": "unknown",
+        "disposition": "explicitly_blocked",
         "queueCount": 0,
         "blockerId": ""
       },
       {
         "id": "care_independent_living",
         "label": "Care and independent living",
-        "disposition": "unknown",
+        "disposition": "explicitly_blocked",
         "queueCount": 0,
         "blockerId": ""
       },

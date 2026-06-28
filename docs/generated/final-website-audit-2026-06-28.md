@@ -134,7 +134,7 @@ This is intentionally broader than the launch-only audit. It covers the public w
 
 - Status: missing_live
 - Final website needs: Live website rows for housing, goods/supplies, jobs/vocational, care/independent living, and transport/utilities/food.; Actionable service/contact evidence, not just taxonomy or topic tags.
-- What we have now: Live help_resources table: missing; staging_scraped_help_resources rows: 0; Completion dispositions: housing=unknown, goods=unknown, jobs=unknown, care=unknown, transport=queued
+- What we have now: Live help_resources table: missing; staging_scraped_help_resources rows: 0; Completion dispositions: housing=explicitly_blocked, goods=explicitly_blocked, jobs=explicitly_blocked, care=explicitly_blocked, transport=queued
 - Current queue or control-plane state: Runnable universe leftovers: housing=0, goods=0, jobs=0, care=0, transport=0
 - Main gap: This is a major final-website gap: the site model wants these families, but the checked-in live DB has no dedicated public help-resource table and no staged rows.
 
@@ -231,24 +231,24 @@ This is intentionally broader than the launch-only audit. It covers the public w
 - Missing source families: 0
 - Actionable blocker classes: 0
 - Queued in-scope families: 3
-- Processed in-scope families: 3
-- Explicitly blocked in-scope families: 4
-- Unknown in-scope families: 5
-- All in-scope families accounted for: no
+- Processed in-scope families: 4
+- Explicitly blocked in-scope families: 8
+- Unknown in-scope families: 0
+- All in-scope families accounted for: yes
 
 | Family | Disposition | Queue | Blocker |
 | --- | --- | --- | --- |
 | Programs, waivers, appeals, and waitlists | processed | 0 |  |
-| Forms and guides | unknown | 0 |  |
+| Forms and guides | processed | 0 |  |
 | County offices and DD routing | processed | 0 |  |
 | Education routing | processed | 0 |  |
 | Nonprofits | queued | 17 |  |
 | Advocates and legal support | explicitly_blocked | 0 | advocate_directory_depth |
 | Providers and care | queued | 1 | provider_directory |
-| Housing | unknown | 0 |  |
-| Goods and supplies | unknown | 0 |  |
-| Jobs and vocational support | unknown | 0 |  |
-| Care and independent living | unknown | 0 |  |
+| Housing | explicitly_blocked | 0 |  |
+| Goods and supplies | explicitly_blocked | 0 |  |
+| Jobs and vocational support | explicitly_blocked | 0 |  |
+| Care and independent living | explicitly_blocked | 0 |  |
 | Transport, utilities, and food | queued | 1 |  |
 | Knowledge content | explicitly_blocked | 0 | knowledge_content_depth |
 | Directory foundation metadata | explicitly_blocked | 0 | directory_foundation_signals |

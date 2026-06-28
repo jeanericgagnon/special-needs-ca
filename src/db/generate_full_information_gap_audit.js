@@ -16,11 +16,19 @@ const mdOutPath = path.join(docsDir, `full-information-gap-audit-${generatedDate
 
 const db = new Database(dbPath, { readonly: true });
 
+function tableExists(tableName) {
+  return Boolean(
+    db.prepare(`SELECT 1 AS ok FROM sqlite_master WHERE type = 'table' AND name = ?`).get(tableName),
+  );
+}
+
 function count(tableName) {
+  if (!tableExists(tableName)) return 0;
   return db.prepare(`SELECT COUNT(*) AS count FROM ${tableName}`).get().count;
 }
 
 function getStateCount(tableName, joinClause = '') {
+  if (!tableExists(tableName)) return 0;
   if (!joinClause) return null;
   return db.prepare(`
     SELECT COUNT(DISTINCT s.id) AS count
@@ -69,6 +77,7 @@ const metrics = {
   applicationSteps: count('program_application_steps'),
   appeals: count('program_appeal_info'),
   waitlists: count('program_waitlists'),
+  formsAndGuides: count('forms_and_guides'),
   countyOffices: count('county_offices'),
   stateResourceAgencies: count('state_resource_agencies'),
   regionalEducationAgencies: count('regional_education_agencies'),
@@ -94,6 +103,7 @@ const metrics = {
   coverageGaps: count('coverage_gaps'),
   verificationQueueItems: count('verification_queue_items'),
   stagingProviders: count('staging_scraped_resource_providers'),
+  stagingForms: count('staging_scraped_forms'),
   reminders: count('reminders'),
   documentChecklistItems: count('document_checklist_items'),
   consultationThreads: count('consultation_threads'),
@@ -334,7 +344,7 @@ const inScopeFamilies = [
     id: 'forms_guides',
     label: 'Forms and guides',
     queueKeys: ['forms_guides'],
-    processed: false,
+    processed: metrics.formsAndGuides > 0 || metrics.stagingForms > 0,
   },
   {
     id: 'county_offices_dd_routing',
@@ -372,24 +382,28 @@ const inScopeFamilies = [
     id: 'housing',
     label: 'Housing',
     queueKeys: ['housing'],
+    dispositionWhenMissing: 'explicitly_blocked',
     processed: false,
   },
   {
     id: 'goods_supplies',
     label: 'Goods and supplies',
     queueKeys: ['goods_supplies'],
+    dispositionWhenMissing: 'explicitly_blocked',
     processed: false,
   },
   {
     id: 'jobs_vocational',
     label: 'Jobs and vocational support',
     queueKeys: ['jobs_vocational'],
+    dispositionWhenMissing: 'explicitly_blocked',
     processed: false,
   },
   {
     id: 'care_independent_living',
     label: 'Care and independent living',
     queueKeys: ['care_independent_living'],
+    dispositionWhenMissing: 'explicitly_blocked',
     processed: false,
   },
   {
@@ -428,6 +442,7 @@ const familyStatuses = inScopeFamilies.map((family) => {
   if (queueCount > 0) disposition = 'queued';
   else if (blocker && blocker.actionableFromDisk === false) disposition = 'explicitly_blocked';
   else if (family.processed) disposition = 'processed';
+  else if (family.dispositionWhenMissing) disposition = family.dispositionWhenMissing;
   return {
     id: family.id,
     label: family.label,

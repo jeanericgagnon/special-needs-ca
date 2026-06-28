@@ -1,6 +1,6 @@
 # Directory Public Trust Audit
 
-Generated: 2026-06-28T00:24:27.778Z
+Generated: 2026-06-28T05:09:13.835Z
 
 Database: `frontend/ca_disability_navigator.db`
 

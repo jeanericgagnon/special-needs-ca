@@ -2,7 +2,7 @@
   "generatedAt": "2026-06-28",
   "inputs": {
     "inventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-inventory-2026-06-20.json",
-    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-20.json",
+    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-28.json",
     "completenessPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-completeness-audit-2026-06-28.json",
     "confidencePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-confidence-audit-2026-06-28.json",
     "truthRegistryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/truth-registry-2026-06-28.json"
@@ -70,7 +70,7 @@
     "nationalGapCount": 12,
     "missingSourceFamilyCount": 0,
     "actionableBlockerCount": 0,
-    "unknownGapCount": 5,
+    "unknownGapCount": 1,
     "allInScopeFamiliesAccountedFor": false
   },
   "currentInventory": {
@@ -350,38 +350,38 @@
     {
       "id": "program_benefits",
       "label": "Programs, waivers, appeals, forms, and waitlists",
-      "currentAuditStatus": "substantial",
-      "exhaustiveStatus": "broad_but_not_exhaustive",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
       "evidence": [
-        "507 programs across 50/50 states",
-        "303 eligibility rules",
-        "502 document requirements",
-        "992 application steps",
-        "451 appeal records",
-        "165 waitlist records"
+        "258 programs across 45/50 states",
+        "300 eligibility rules",
+        "0 document requirements",
+        "1 application steps",
+        "18 appeal records",
+        "6 waitlist records"
       ],
       "gap": "Program foundation is strong, but waitlist depth is still smaller than the rest of the program layer."
     },
     {
       "id": "public_routing_education",
       "label": "County offices, DD routing, and education routing",
-      "currentAuditStatus": "partial",
-      "exhaustiveStatus": "partial",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
       "evidence": [
-        "3678 county offices across 50/50 states",
-        "636 state routing agencies across 50/50 states",
-        "313 regional education agencies across 47/50 states",
-        "3117 school districts across 50/50 states"
+        "720 county offices across 7/50 states",
+        "120 state routing agencies across 22/50 states",
+        "174 regional education agencies across 45/50 states",
+        "649 school districts across 8/50 states"
       ],
       "gap": "Routing layers are broadly populated, but density and local depth still vary by state and county."
     },
     {
       "id": "local_nonprofits",
       "label": "Local nonprofit support organizations",
-      "currentAuditStatus": "substantial",
-      "exhaustiveStatus": "broad_but_not_exhaustive",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
       "evidence": [
-        "29501 nonprofit listings across 50/50 states"
+        "1775 nonprofit listings across 7/50 states"
       ],
       "gap": "Nonprofit coverage is broad, but foundation metadata like accessibility and live capacity is still sparse."
     },
@@ -391,18 +391,18 @@
       "currentAuditStatus": "thin",
       "exhaustiveStatus": "thin",
       "evidence": [
-        "2995 advocate listings"
+        "137 advocate listings"
       ],
       "gap": "Advocate count is strong, but truth quality and public eligibility still need to stay under active audit."
     },
     {
       "id": "local_providers",
       "label": "Clinics, therapists, and local providers",
-      "currentAuditStatus": "partial",
-      "exhaustiveStatus": "partial",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
       "evidence": [
-        "96 provider listings across 50/50 states",
-        "125 staged provider rows waiting in provider staging"
+        "1 provider listings across 1/50 states",
+        "0 staged provider rows waiting in provider staging"
       ],
       "gap": "Provider coverage is the clearest national information gap. This layer exists, but it is nowhere near all-state depth."
     },
@@ -413,7 +413,7 @@
       "exhaustiveStatus": "partial",
       "evidence": [
         "Schema support exists for tags, availability, next steps, accessibility, claims, and trust fields on providers, nonprofits, and advocates.",
-        "Those fields sit on 32592 directory rows total."
+        "Those fields sit on 1913 directory rows total."
       ],
       "gap": "The metadata model exists, but live availability, accessibility, and capacity signals are still sparse on the checked-in DB."
     },
@@ -423,37 +423,37 @@
       "currentAuditStatus": "thin",
       "exhaustiveStatus": "thin",
       "evidence": [
-        "36902 organizations",
-        "36902 organization-program links",
-        "94 service locations",
-        "4314 office locations",
-        "33130 virtual service areas"
+        "1 organizations",
+        "1 organization-program links",
+        "1 service locations",
+        "1 office locations",
+        "0 virtual service areas"
       ],
       "gap": "This migration landing zone is modeled in schema but not yet populated in the checked-in DB."
     },
     {
       "id": "conditions_needs_reference",
       "label": "Conditions, functional needs, and reference knowledge",
-      "currentAuditStatus": "substantial",
-      "exhaustiveStatus": "broad_but_not_exhaustive",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
       "evidence": [
         "78 conditions",
-        "18 functional needs",
-        "7 age bands",
-        "4 insurance types"
+        "0 functional needs",
+        "0 age bands",
+        "0 insurance types"
       ],
-      "gap": "No major structural gap detected in this layer."
+      "gap": "Core condition and need knowledge is populated, but some supporting reference tables are still empty in the checked-in DB."
     },
     {
       "id": "knowledge_content",
       "label": "Knowledge articles and guidance content",
-      "currentAuditStatus": "partial",
-      "exhaustiveStatus": "partial",
+      "currentAuditStatus": "thin",
+      "exhaustiveStatus": "thin",
       "evidence": [
-        "23 knowledge articles",
-        "8 staged knowledge articles"
+        "5 knowledge articles",
+        "0 staged knowledge articles"
       ],
-      "gap": "Knowledge content exists and staged growth is underway, but live article volume is still small relative to the breadth of the rest of the information model."
+      "gap": "Knowledge content exists, but article volume is still small relative to the breadth of the rest of the information model."
     },
     {
       "id": "family_case_runtime",
@@ -461,8 +461,8 @@
       "currentAuditStatus": "demo_only",
       "exhaustiveStatus": "demo_only",
       "evidence": [
-        "1 family cases",
-        "1 child profiles",
+        "0 family cases",
+        "0 child profiles",
         "0 case program status rows"
       ],
       "gap": "The schema supports family/case workflows, but the checked-in DB mostly shows demo-level or empty runtime data."

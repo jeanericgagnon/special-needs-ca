@@ -13,6 +13,7 @@ const canonicalMilestone = readJson('data/generated/national-initial-scrape-v1.j
 const legacyMilestone = readJson('data/generated/national_initial_scrape_v1.json');
 const finalWebsiteAudit = readJson('docs/generated/final-website-audit-2026-06-28.json');
 const exhaustiveGap = readJson('docs/generated/exhaustive-gap-master-2026-06-28.json');
+const fullGap = readJson('docs/generated/full-information-gap-audit-2026-06-28.json');
 
 const completeStates = audit.states.filter((state) => state.classification === 'COMPLETE').map((state) => state.stateId).sort();
 const blockedStates = audit.states.filter((state) => state.classification === 'BLOCKED').map((state) => state.stateId).sort();
@@ -40,5 +41,28 @@ assert.ok(
   exhaustiveGap.immediateTruths.includes(expectedTruthLine),
   'Exhaustive gap master should reflect the current public-safe-but-blocked truth.',
 );
+
+assert.equal(
+  fullGap.completionAudit.unknownGapCount,
+  0,
+  'Full information gap audit should not leave in-scope families in an unknown disposition.',
+);
+assert.equal(
+  fullGap.completionAudit.allInScopeFamiliesAccountedFor,
+  true,
+  'Full information gap audit should account for every in-scope family.',
+);
+
+const formsFamily = fullGap.completionAudit.families.find((family) => family.id === 'forms_guides');
+assert.equal(formsFamily?.disposition, 'processed');
+
+for (const familyId of ['housing', 'goods_supplies', 'jobs_vocational', 'care_independent_living']) {
+  const family = fullGap.completionAudit.families.find((entry) => entry.id === familyId);
+  assert.equal(
+    family?.disposition,
+    'explicitly_blocked',
+    `${familyId} should resolve to an explicit blocked disposition rather than unknown`,
+  );
+}
 
 console.log('launch governance artifact tests passed');

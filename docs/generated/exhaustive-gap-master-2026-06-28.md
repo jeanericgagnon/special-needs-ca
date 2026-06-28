@@ -71,46 +71,46 @@ It separates three different ideas that were getting conflated:
 
 ### Programs, waivers, appeals, forms, and waitlists
 
-- Current audit status: substantial
-- Exhaustive interpretation: broad_but_not_exhaustive
-- Evidence: 507 programs across 50/50 states
-- Evidence: 303 eligibility rules
-- Evidence: 502 document requirements
-- Evidence: 992 application steps
-- Evidence: 451 appeal records
-- Evidence: 165 waitlist records
+- Current audit status: thin
+- Exhaustive interpretation: thin
+- Evidence: 258 programs across 45/50 states
+- Evidence: 300 eligibility rules
+- Evidence: 0 document requirements
+- Evidence: 1 application steps
+- Evidence: 18 appeal records
+- Evidence: 6 waitlist records
 - Gap: Program foundation is strong, but waitlist depth is still smaller than the rest of the program layer.
 
 ### County offices, DD routing, and education routing
 
-- Current audit status: partial
-- Exhaustive interpretation: partial
-- Evidence: 3678 county offices across 50/50 states
-- Evidence: 636 state routing agencies across 50/50 states
-- Evidence: 313 regional education agencies across 47/50 states
-- Evidence: 3117 school districts across 50/50 states
+- Current audit status: thin
+- Exhaustive interpretation: thin
+- Evidence: 720 county offices across 7/50 states
+- Evidence: 120 state routing agencies across 22/50 states
+- Evidence: 174 regional education agencies across 45/50 states
+- Evidence: 649 school districts across 8/50 states
 - Gap: Routing layers are broadly populated, but density and local depth still vary by state and county.
 
 ### Local nonprofit support organizations
 
-- Current audit status: substantial
-- Exhaustive interpretation: broad_but_not_exhaustive
-- Evidence: 29501 nonprofit listings across 50/50 states
+- Current audit status: thin
+- Exhaustive interpretation: thin
+- Evidence: 1775 nonprofit listings across 7/50 states
 - Gap: Nonprofit coverage is broad, but foundation metadata like accessibility and live capacity is still sparse.
 
 ### IEP advocates and advocacy support
 
 - Current audit status: thin
 - Exhaustive interpretation: thin
-- Evidence: 2995 advocate listings
+- Evidence: 137 advocate listings
 - Gap: Advocate count is strong, but truth quality and public eligibility still need to stay under active audit.
 
 ### Clinics, therapists, and local providers
 
-- Current audit status: partial
-- Exhaustive interpretation: partial
-- Evidence: 96 provider listings across 50/50 states
-- Evidence: 125 staged provider rows waiting in provider staging
+- Current audit status: thin
+- Exhaustive interpretation: thin
+- Evidence: 1 provider listings across 1/50 states
+- Evidence: 0 staged provider rows waiting in provider staging
 - Gap: Provider coverage is the clearest national information gap. This layer exists, but it is nowhere near all-state depth.
 
 ### Findhelp-like metadata on directory listings
@@ -118,44 +118,44 @@ It separates three different ideas that were getting conflated:
 - Current audit status: partial
 - Exhaustive interpretation: partial
 - Evidence: Schema support exists for tags, availability, next steps, accessibility, claims, and trust fields on providers, nonprofits, and advocates.
-- Evidence: Those fields sit on 32592 directory rows total.
+- Evidence: Those fields sit on 1913 directory rows total.
 - Gap: The metadata model exists, but live availability, accessibility, and capacity signals are still sparse on the checked-in DB.
 
 ### Organization -> program -> location normalization
 
 - Current audit status: thin
 - Exhaustive interpretation: thin
-- Evidence: 36902 organizations
-- Evidence: 36902 organization-program links
-- Evidence: 94 service locations
-- Evidence: 4314 office locations
-- Evidence: 33130 virtual service areas
+- Evidence: 1 organizations
+- Evidence: 1 organization-program links
+- Evidence: 1 service locations
+- Evidence: 1 office locations
+- Evidence: 0 virtual service areas
 - Gap: This migration landing zone is modeled in schema but not yet populated in the checked-in DB.
 
 ### Conditions, functional needs, and reference knowledge
 
-- Current audit status: substantial
-- Exhaustive interpretation: broad_but_not_exhaustive
+- Current audit status: thin
+- Exhaustive interpretation: thin
 - Evidence: 78 conditions
-- Evidence: 18 functional needs
-- Evidence: 7 age bands
-- Evidence: 4 insurance types
-- Gap: No major structural gap detected in this layer.
+- Evidence: 0 functional needs
+- Evidence: 0 age bands
+- Evidence: 0 insurance types
+- Gap: Core condition and need knowledge is populated, but some supporting reference tables are still empty in the checked-in DB.
 
 ### Knowledge articles and guidance content
 
-- Current audit status: partial
-- Exhaustive interpretation: partial
-- Evidence: 23 knowledge articles
-- Evidence: 8 staged knowledge articles
-- Gap: Knowledge content exists and staged growth is underway, but live article volume is still small relative to the breadth of the rest of the information model.
+- Current audit status: thin
+- Exhaustive interpretation: thin
+- Evidence: 5 knowledge articles
+- Evidence: 0 staged knowledge articles
+- Gap: Knowledge content exists, but article volume is still small relative to the breadth of the rest of the information model.
 
 ### Family, case, and navigator-adjacent workflow data
 
 - Current audit status: demo_only
 - Exhaustive interpretation: demo_only
-- Evidence: 1 family cases
-- Evidence: 1 child profiles
+- Evidence: 0 family cases
+- Evidence: 0 child profiles
 - Evidence: 0 case program status rows
 - Gap: The schema supports family/case workflows, but the checked-in DB mostly shows demo-level or empty runtime data.
 
