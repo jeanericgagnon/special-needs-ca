@@ -51,6 +51,29 @@ assert.doesNotMatch(
   'Printed IHSS safety log should not present itself as official.'
 );
 
+assert.doesNotMatch(
+  ihssBehaviorLog,
+  /else\s*\{\s*setIncidents\(DEFAULT_INCIDENTS\)|catch\s*\{\s*setIncidents\(DEFAULT_INCIDENTS\)/,
+  'Public IHSS behavior log should not auto-seed fabricated sample incidents.'
+);
+
+assert.doesNotMatch(
+  ihssBehaviorLog,
+  /const \[parentName, setParentName\] = useState\('Jane Doe'\)|const \[childName, setChildName\] = useState\('Alex'\)/,
+  'Public IHSS behavior log should not ship hardcoded fake family names.'
+);
+
+const overtimePanel = fs.readFileSync(
+  path.join(repoRoot, 'frontend/src/app/dashboard/components/IHSSOvertimePanel.tsx'),
+  'utf8',
+);
+
+assert.doesNotMatch(
+  overtimePanel,
+  /DEFAULT_INCIDENTS\.forEach\(inc => \{\s*saveSafetyIncidentAction/,
+  'Signed-in IHSS panel should not auto-save fabricated sample incidents into user data.'
+);
+
 assert.match(
   answerPage,
   /\$\\?\{countyWageDisclosure\.hourlyRate\.toFixed\(2\)\}\/hour estimate/,

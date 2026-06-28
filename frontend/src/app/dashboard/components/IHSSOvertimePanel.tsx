@@ -125,18 +125,7 @@ export default function IHSSOvertimePanel() {
               intervention: inc.intervention
             })));
           } else {
-            setIncidents(DEFAULT_INCIDENTS);
-            // Save defaults in background
-            DEFAULT_INCIDENTS.forEach(inc => {
-              saveSafetyIncidentAction({
-                id: inc.id,
-                time: inc.time,
-                category: inc.category,
-                risk_level: inc.riskLevel,
-                details: inc.details,
-                intervention: inc.intervention
-              }, currentChild.id);
-            });
+            setIncidents([]);
           }
         });
 

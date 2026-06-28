@@ -67,8 +67,8 @@ export default function BehaviorLogClient() {
   const [intervention, setIntervention] = useState('');
 
   // Parent/Child info for printable header
-  const [parentName, setParentName] = useState('Jane Doe');
-  const [childName, setChildName] = useState('Alex');
+  const [parentName, setParentName] = useState('');
+  const [childName, setChildName] = useState('');
   const [logDate, setLogDate] = useState('2026-06-02');
 
   // Hours Estimator States
@@ -100,11 +100,10 @@ export default function BehaviorLogClient() {
         try {
           setIncidents(JSON.parse(saved));
         } catch {
-          setIncidents(DEFAULT_INCIDENTS);
+          setIncidents([]);
         }
       } else {
-        setIncidents(DEFAULT_INCIDENTS);
-        localStorage.setItem('ca_special_needs_safety_log', JSON.stringify(DEFAULT_INCIDENTS));
+        setIncidents([]);
       }
       
       const savedChild = localStorage.getItem('ca_special_needs_safety_child') || localStorage.getItem('child_name') || localStorage.getItem('iep_student_name');
@@ -491,6 +490,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       type="text" 
                       value={childName} 
                       onChange={(e) => setChildName(e.target.value)} 
+                      placeholder="Child's name"
                       style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
                     />
                   </div>
@@ -501,6 +501,7 @@ ${requiresSupervision ? `The recipient exhibits severe cognitive and development
                       type="text" 
                       value={parentName} 
                       onChange={(e) => setParentName(e.target.value)} 
+                      placeholder="Parent or caregiver name"
                       style={{ padding: '0.5rem 0.75rem', fontSize: '0.85rem' }}
                     />
                   </div>
