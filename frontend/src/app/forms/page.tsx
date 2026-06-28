@@ -5,6 +5,7 @@ import { SEO_CLUSTERS, SEOPageData } from '@/lib/seo-data';
 import { stateConfigs } from '@/lib/stateConfigs';
 import { getSafePublishedFormGuides } from '@/lib/publishedFormGuides';
 import SourceFreshnessDisclosure, { type DisclosureSource } from '@/app/components/SourceFreshnessDisclosure';
+import { resolvePublicSourceVerificationStatus } from '@/lib/sourceReviewLabels';
 import ContributionModal from '@/components/contribution-modal';
 
 type PageProps = {
@@ -117,7 +118,7 @@ export default async function FormsIndexPage({ searchParams }: PageProps) {
         name: source.name,
         url: source.url,
         lastReviewedDate: data.lastReviewedDate || null,
-        verificationStatus: source.url ? 'official_verified' : 'unverified',
+        verificationStatus: resolvePublicSourceVerificationStatus(source.verificationStatus, Boolean(source.url?.trim())),
         sourceType: 'official_form_library',
         confidenceScore: source.url ? 0.9 : 0.5,
       }))

@@ -5,6 +5,15 @@ export type SourceReviewDisplay = {
   borderColor: string;
 };
 
+export function resolvePublicSourceVerificationStatus(
+  verificationStatus?: string | null,
+  hasReviewableUrl: boolean = false,
+): string {
+  const status = String(verificationStatus || '').trim().toLowerCase();
+  if (status) return status;
+  return hasReviewableUrl ? 'source_listed' : 'needs_review';
+}
+
 export function getSourceReviewDisplay(verificationStatus?: string | null): SourceReviewDisplay {
   const status = String(verificationStatus || '').trim().toLowerCase();
 

@@ -11,6 +11,7 @@ import { SEOPageData, SEO_CLUSTERS } from '@/lib/seo-data';
 import { fetchCountyDetailsAction } from '../actions';
 import SourceFreshnessDisclosure from './SourceFreshnessDisclosure';
 import { getIhssWageDisclosure } from '@/lib/ihssWageDisclosure';
+import { resolvePublicSourceVerificationStatus } from '@/lib/sourceReviewLabels';
 
 interface CountyDetailsType {
   id: string;
@@ -348,7 +349,7 @@ export default function AnswerPage({ data: propData, slug, counties }: AnswerPag
             name: src.name,
             url: src.url,
             lastReviewedDate: src.lastReviewedDate || data.lastReviewedDate,
-            verificationStatus: src.verificationStatus || 'official_verified',
+            verificationStatus: resolvePublicSourceVerificationStatus(src.verificationStatus, Boolean(src.url?.trim())),
             sourceType: src.sourceType,
             confidenceScore: src.confidenceScore ?? null
           }))}

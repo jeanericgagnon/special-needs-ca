@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
-import { getSourceReviewDisplay } from '../frontend/src/lib/sourceReviewLabels.ts';
+import {
+  getSourceReviewDisplay,
+  resolvePublicSourceVerificationStatus,
+} from '../frontend/src/lib/sourceReviewLabels.ts';
 
 assert.deepEqual(getSourceReviewDisplay('official_verified'), {
   label: 'Source-backed checked',
@@ -35,5 +38,10 @@ assert.deepEqual(getSourceReviewDisplay(undefined), {
   background: 'rgba(100, 116, 139, 0.08)',
   borderColor: '#64748b30',
 });
+
+assert.equal(resolvePublicSourceVerificationStatus('official_verified', true), 'official_verified');
+assert.equal(resolvePublicSourceVerificationStatus('source_listed', true), 'source_listed');
+assert.equal(resolvePublicSourceVerificationStatus(undefined, true), 'source_listed');
+assert.equal(resolvePublicSourceVerificationStatus(undefined, false), 'needs_review');
 
 console.log('source review labels tests passed');

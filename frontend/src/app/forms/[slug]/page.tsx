@@ -4,6 +4,7 @@ import { getCounties } from '@/lib/db';
 import AnswerPage from '@/app/components/answer-page';
 import { getSeoPolicyForRoute, hasOfficialProgramSource } from '@/lib/seo-policy';
 import { getSafePublishedFormGuideBySlug, getSafePublishedFormGuides } from '@/lib/publishedFormGuides';
+import { resolvePublicSourceVerificationStatus } from '@/lib/sourceReviewLabels';
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -114,7 +115,7 @@ export default async function FormPage({ params }: Props) {
           url: sourceUrl,
           sourceType: sourceTypeLabel,
           confidenceScore: typeof publishedForm.confidence_score === 'number' ? publishedForm.confidence_score : null,
-          verificationStatus: publishedForm.verification_status || 'official_verified',
+          verificationStatus: resolvePublicSourceVerificationStatus(publishedForm.verification_status, Boolean(sourceUrl)),
           lastReviewedDate: publishedForm.last_checked_at || publishedForm.last_verified_at || null
         }]
       : [];
