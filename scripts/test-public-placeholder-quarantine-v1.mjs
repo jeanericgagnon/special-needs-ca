@@ -57,6 +57,7 @@ db.exec(`
     referral_url TEXT,
     source_url TEXT,
     verification_status TEXT,
+    data_quality_notes TEXT,
     display_status TEXT DEFAULT 'published'
   );
 
@@ -125,6 +126,26 @@ db.prepare(`
   'https://www.dds.ca.gov/provider-placeholder-action',
   'official_verified',
   'published'
+);
+
+db.prepare(`
+  INSERT INTO resource_providers (id, name, phone, email, website, next_step_phone, next_step_email, next_step_url, application_url, referral_url, source_url, verification_status, data_quality_notes, display_status)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+`).run(
+  'provider-already-hidden',
+  'Already Hidden Placeholder Provider',
+  '(800) 555-2222',
+  'clinic@example.org',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  'https://clinic.org/path',
+  'verified',
+  '',
+  'needs_review'
 );
 
 db.prepare(`
@@ -200,9 +221,20 @@ assert.deepEqual(agencyStatuses, [
   { id: 'agency-bad', display_status: 'needs_review' },
 ]);
 
-const providerStatuses = checkDb.prepare('SELECT id, display_status FROM resource_providers ORDER BY id').all();
+const providerStatuses = checkDb.prepare('SELECT id, display_status, verification_status, data_quality_notes FROM resource_providers ORDER BY id').all();
 assert.deepEqual(providerStatuses, [
-  { id: 'provider-bad-action', display_status: 'needs_review' },
+  {
+    id: 'provider-already-hidden',
+    display_status: 'needs_review',
+    verification_status: 'needs_review',
+    data_quality_notes: 'placeholder quarantine: placeholder_name:name, placeholder_phone:phone, placeholder_email:email',
+  },
+  {
+    id: 'provider-bad-action',
+    display_status: 'needs_review',
+    verification_status: 'needs_review',
+    data_quality_notes: 'placeholder quarantine: placeholder_name:name, placeholder_website:website, placeholder_action_url:next_step_url',
+  },
 ]);
 
 const nonprofitStatuses = checkDb.prepare('SELECT id, display_status FROM nonprofit_organizations ORDER BY id').all();
@@ -211,7 +243,7 @@ assert.deepEqual(nonprofitStatuses, [
   { id: 'nonprofit-search-fallback', display_status: 'needs_review' },
 ]);
 
-assert.equal(summary.totalDowngraded, 7);
+assert.equal(summary.totalDowngraded, 8);
 assert.equal(fs.existsSync(path.join(outputDir, 'public-placeholder-quarantine-audit-2099-01-01.json')), true);
 assert.equal(fs.existsSync(path.join(outputDir, 'public-placeholder-quarantine-audit-2099-01-01.md')), true);
 

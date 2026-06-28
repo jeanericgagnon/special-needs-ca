@@ -126,6 +126,7 @@
     "test:published-provenance-v1": "node scripts/test-published-provenance-v1.mjs",
     "test:public-record-display-status": "node scripts/test-public-record-display-status-v1.mjs",
     "test:public-placeholder-quarantine": "node scripts/test-public-placeholder-quarantine-v1.mjs",
+    "test:seeded-advocate-defaults": "node scripts/test-seeded-advocate-defaults-v1.mjs",
     "test:seo-hardening-v1": "node --experimental-specifier-resolution=node scripts/test-seo-hardening-v1.mjs",
     "audit:ca-source-pack-post-stage": "node scripts/audit-ca-source-pack-post-stage.mjs",
     "run:forms-fallback-source-acquisition": "node scripts/run-forms-fallback-source-acquisition.mjs",

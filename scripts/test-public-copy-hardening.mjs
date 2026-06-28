@@ -8,6 +8,7 @@ const answerPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/compone
 const ihssBehaviorLog = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/ihss-behavior-log/behavior-log-client.tsx'), 'utf8');
 const countyBenefitsPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/[state]/[[...slug]]/page.tsx'), 'utf8');
 const correctionFlow = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/components/CorrectionFlow.tsx'), 'utf8');
+const footer = fs.readFileSync(path.join(repoRoot, 'src/components/Footer.jsx'), 'utf8');
 
 assert.match(
   answerPage,
@@ -73,6 +74,30 @@ assert.match(
   correctionFlow,
   /Official public source linked/,
   'County trust badge should distinguish a linked official public source from a verified contact claim.'
+);
+
+assert.doesNotMatch(
+  footer,
+  /\bLast database audit:\b/i,
+  'Footer should not ship a fake sitewide freshness stamp.'
+);
+
+assert.doesNotMatch(
+  footer,
+  /\bBuilt to wow families\b/i,
+  'Footer should avoid throwaway marketing copy on a public trust surface.'
+);
+
+assert.match(
+  footer,
+  /Check each page for source links and last checked dates\./,
+  'Footer should direct families to page-level provenance instead of claiming one global freshness date.'
+);
+
+assert.doesNotMatch(
+  `${answerPage}\n${countyBenefitsPage}\n${footer}\n${ihssBehaviorLog}`,
+  /\bwagers\b/i,
+  'Public app copy must not contain the wagers typo.'
 );
 
 console.log('public copy hardening tests passed');

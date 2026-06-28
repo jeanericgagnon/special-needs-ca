@@ -144,6 +144,12 @@ function ensureColumns(db, tableName, columns) {
   return true;
 }
 
+function getExistingColumns(db, tableName) {
+  return new Set(
+    db.prepare(`PRAGMA table_info(${tableName})`).all().map((row) => row.name)
+  );
+}
+
 function normalizeUrlHost(url) {
   try {
     return new URL(String(url || '').trim()).hostname.toLowerCase();
@@ -334,15 +340,42 @@ export function quarantinePlaceholderPublicRecords({
         continue;
       }
 
+      const existingColumns = getExistingColumns(db, config.table);
+
       const rows = db.prepare(`
         SELECT *
         FROM ${config.table}
-        WHERE COALESCE(display_status, 'published') = 'published'
       `).all();
+
+      const canDowngradeVerification = existingColumns.has('verification_status');
+      const canStoreNotes = existingColumns.has('data_quality_notes');
+      const updateFields = [`display_status = 'needs_review'`];
+
+      if (canDowngradeVerification) {
+        updateFields.push(`
+          verification_status = CASE
+            WHEN verification_status IN ('official_verified', 'verified', 'human_verified', 'source_listed')
+              THEN 'needs_review'
+            ELSE verification_status
+          END
+        `);
+      }
+
+      if (canStoreNotes) {
+        updateFields.push(`
+          data_quality_notes = TRIM(
+            CASE
+              WHEN COALESCE(data_quality_notes, '') = ''
+                THEN ?
+              ELSE data_quality_notes || ' | ' || ?
+            END
+          )
+        `);
+      }
 
       const updateStmt = db.prepare(`
         UPDATE ${config.table}
-        SET display_status = 'needs_review'
+        SET ${updateFields.join(', ')}
         WHERE ${config.idField} = ?
       `);
 
@@ -357,7 +390,12 @@ export function quarantinePlaceholderPublicRecords({
           continue;
         }
 
-        updateStmt.run(row[config.idField]);
+        const note = `placeholder quarantine: ${reasons.join(', ')}`;
+        if (canStoreNotes) {
+          updateStmt.run(note, note, row[config.idField]);
+        } else {
+          updateStmt.run(row[config.idField]);
+        }
         downgraded += 1;
 
         for (const reason of reasons) {

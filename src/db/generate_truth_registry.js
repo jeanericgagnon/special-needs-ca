@@ -26,16 +26,32 @@ function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+function readJsonl(filePath) {
+  return fs.readFileSync(filePath, 'utf8')
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => JSON.parse(line));
+}
+
 function toPercent(value) {
   return typeof value === 'number' ? Math.round(value * 10) / 10 : 0;
 }
 
-function buildStateRegistryRow(state, rolloutByStateId, advocateCleanupByStateId) {
+function buildStateRegistryRow(state, rolloutByStateId, advocateCleanupByStateId, launchAuditByStateId, priorityQueueByStateId) {
   const rollout = rolloutByStateId.get(state.id) || null;
   const advocateCleanup = advocateCleanupByStateId.get(state.id) || null;
+  const launchAudit = launchAuditByStateId.get(state.id) || null;
+  const priorityQueue = priorityQueueByStateId.get(state.id) || null;
 
-  const basePublicSafe = Boolean(state.verdict?.publicSafe);
-  const baseIndexSafe = Boolean(state.verdict?.indexSafe);
+  const launchClassification = launchAudit?.classification || priorityQueue?.classification || 'UNKNOWN';
+  const launchIndexSafe = typeof launchAudit?.indexSafe === 'boolean'
+    ? launchAudit.indexSafe
+    : Boolean(priorityQueue?.index_safe);
+  const launchComplete = launchClassification === 'COMPLETE' && launchIndexSafe;
+
+  const basePublicSafe = launchComplete || Boolean(state.verdict?.publicSafe);
+  const baseIndexSafe = launchIndexSafe;
   const baseGoldEligible = Boolean(state.verdict?.goldEligible);
 
   const countyDiagnosisMissing = rollout?.missingPriorityCount || 0;
@@ -77,7 +93,7 @@ function buildStateRegistryRow(state, rolloutByStateId, advocateCleanupByStateId
 
   const status = strictGoldEligible
     ? 'gold'
-    : basePublicSafe && baseIndexSafe
+    : launchComplete
       ? 'public_safe_but_blocked'
       : 'blocked';
 
@@ -85,6 +101,7 @@ function buildStateRegistryRow(state, rolloutByStateId, advocateCleanupByStateId
     id: state.id,
     name: state.name,
     code: state.code,
+    launchClassification,
     status,
     publicSafe: basePublicSafe,
     indexSafe: baseIndexSafe,
@@ -164,19 +181,31 @@ function renderMarkdown(report) {
 const currentTruthPath = findLatestGeneratedJson('current-truth-audit-');
 const countyDiagnosisRolloutPath = findLatestGeneratedJson('county-diagnosis-rollout-');
 const advocateTruthCleanupPath = findLatestGeneratedJson('advocate-truth-cleanup-audit-');
+const launchAuditPath = path.join(repoRoot, 'data', 'generated', 'all_state_california_grade_audit_v3.json');
+const priorityQueuePath = path.join(repoRoot, 'data', 'generated', 'all_state_priority_queue_v3.jsonl');
 
 const currentTruth = readJson(currentTruthPath);
 const countyDiagnosisRollout = readJson(countyDiagnosisRolloutPath);
 const advocateTruthCleanup = readJson(advocateTruthCleanupPath);
+const launchAudit = readJson(launchAuditPath);
+const priorityQueue = readJsonl(priorityQueuePath);
 
 const rolloutByStateId = new Map((countyDiagnosisRollout.states || []).map((state) => [state.id, state]));
 const advocateCleanupByStateId = new Map((advocateTruthCleanup.states || []).map((state) => [state.stateId, state]));
+const launchAuditByStateId = new Map((launchAudit.states || []).map((state) => [state.stateId, state]));
+const priorityQueueByStateId = new Map((priorityQueue || []).map((state) => [state.state, state]));
 
 const states = (currentTruth.states || [])
-  .map((state) => buildStateRegistryRow(state, rolloutByStateId, advocateCleanupByStateId))
+  .map((state) => buildStateRegistryRow(
+    state,
+    rolloutByStateId,
+    advocateCleanupByStateId,
+    launchAuditByStateId,
+    priorityQueueByStateId,
+  ))
   .sort((a, b) => {
     if (a.strictGoldEligible !== b.strictGoldEligible) return Number(b.strictGoldEligible) - Number(a.strictGoldEligible);
-    if (a.publicSafe !== b.publicSafe) return Number(b.publicSafe) - Number(a.publicSafe);
+    if (a.indexSafe !== b.indexSafe) return Number(b.indexSafe) - Number(a.indexSafe);
     return b.readiness - a.readiness;
   });
 
@@ -186,6 +215,8 @@ const report = {
     currentTruth: path.relative(repoRoot, currentTruthPath),
     countyDiagnosisRollout: path.relative(repoRoot, countyDiagnosisRolloutPath),
     advocateTruthCleanup: path.relative(repoRoot, advocateTruthCleanupPath),
+    launchAudit: path.relative(repoRoot, launchAuditPath),
+    priorityQueue: path.relative(repoRoot, priorityQueuePath),
   },
   summary: {
     strictGoldStates: states.filter((state) => state.strictGoldEligible).length,

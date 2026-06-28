@@ -1,0 +1,772 @@
+{
+  "generatedAt": "2026-06-28",
+  "scope": {
+    "mode": "final_website_data_and_product_surface_audit",
+    "includes": [
+      "public website data layers",
+      "launch-critical public surfaces",
+      "competitive-help families",
+      "runtime and collaboration surfaces that the final site implies",
+      "current scrape/acquisition position"
+    ],
+    "excludes": [
+      "UI polish",
+      "visual design review",
+      "copy tone review"
+    ]
+  },
+  "authoritativeInputs": {
+    "informationInventoryPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/information-inventory-2026-06-20.json",
+    "fullGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/full-information-gap-audit-2026-06-20.json",
+    "launchPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/launch-critical-data-acquisition-plan-2026-06-20.json",
+    "exhaustiveGapPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/exhaustive-gap-master-2026-06-27.json",
+    "scrapeUniverseQueuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/scrape-target-universe-queue-2026-06-20.json",
+    "completionPlanPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/docs/generated/source-acquisition-completion-plan-2026-06-20.json",
+    "californiaGradeAuditPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_california_grade_audit_v3.json",
+    "californiaGradeQueuePath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/all_state_priority_queue_v3.jsonl",
+    "partialLaunchPolicyPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/data/generated/launch_partial_state_policy_v1.json",
+    "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db"
+  },
+  "executiveSummary": {
+    "launchCompleteStates": 45,
+    "launchBlockedStates": 5,
+    "launchIndexSafeStates": 45,
+    "launchIncorrectlyIndexSafeStates": [],
+    "partialGatedStateIds": [
+      "arizona",
+      "alaska",
+      "maine",
+      "idaho",
+      "new-hampshire"
+    ],
+    "auditQueueMismatchCount": 0,
+    "currentModeledCompletenessStates": 0,
+    "currentHighConfidenceStates": 0,
+    "strictGoldStates": 0,
+    "publicSafeButBlockedStates": 45,
+    "publicSafeButBlockedStateIds": [
+      "alabama",
+      "arkansas",
+      "california",
+      "colorado",
+      "connecticut",
+      "delaware",
+      "florida",
+      "georgia",
+      "hawaii",
+      "illinois",
+      "indiana",
+      "iowa",
+      "kansas",
+      "kentucky",
+      "louisiana",
+      "maryland",
+      "massachusetts",
+      "michigan",
+      "minnesota",
+      "mississippi",
+      "missouri",
+      "montana",
+      "nebraska",
+      "nevada",
+      "new-jersey",
+      "new-mexico",
+      "new-york",
+      "north-carolina",
+      "north-dakota",
+      "ohio",
+      "oklahoma",
+      "oregon",
+      "pennsylvania",
+      "rhode-island",
+      "south-carolina",
+      "south-dakota",
+      "tennessee",
+      "texas",
+      "utah",
+      "vermont",
+      "virginia",
+      "washington",
+      "west-virginia",
+      "wisconsin",
+      "wyoming"
+    ],
+    "publicDataHeadline": "The repo has strong national program, routing, nonprofit, advocate, and condition foundations, but provider coverage, normalization, knowledge depth, and workflow/runtime layers are still thin or empty in the checked-in DB.",
+    "criticalGaps": [
+      "Providers and care are still the biggest final-website data hole.",
+      "Competitive-help families are not live in the checked-in DB at all.",
+      "Knowledge content remains too thin for a fully guided national family journey.",
+      "Directory foundation metadata is modeled well but sparsely populated, especially on nonprofits and advocates.",
+      "Normalization is present but too shallow to power a truly location-rich final website.",
+      "Advocates remain truth-sensitive and still block California from strict gold.",
+      "Runtime/feedback/product-support tables are mostly empty, so signed-in workflows are not final-product complete."
+    ]
+  },
+  "publicRouteSurfaces": [
+    {
+      "route": "/",
+      "surface": "Homepage / entry surface",
+      "needs": "Trust framing, search entry points, strong downstream data for benefits, county help, and knowledge journeys.",
+      "currentStatus": "strong",
+      "mainGap": "Not data-blocked itself; value depends on downstream public surfaces staying truthful and deep."
+    },
+    {
+      "route": "/find-help",
+      "surface": "Directory hub",
+      "needs": "Providers, nonprofits, advocates, directory-foundation metadata, truthful local contact paths, and competitive-help categories.",
+      "currentStatus": "partial",
+      "mainGap": "Providers are thin, competitive-help is not live, and nonprofit/advocate metadata is sparse."
+    },
+    {
+      "route": "/benefits and /benefits/[state]/[[...slug]]",
+      "surface": "Benefits and waiver discovery",
+      "needs": "Programs, eligibility, documents, steps, appeals, forms, waitlists, waiver typing, DD routing, and knowledge support.",
+      "currentStatus": "strong_but_not_exhaustive",
+      "mainGap": "Waitlists are shallower than the rest of the program layer and waiver typing is still sparse."
+    },
+    {
+      "route": "/counties, /counties/[state], /counties/[state]/[slug]",
+      "surface": "County support pages",
+      "needs": "County offices, DD routing, education routing, local nonprofits, truthful providers, and public-truth gating.",
+      "currentStatus": "partial",
+      "mainGap": "Routing is strong, but county-level local care/provider depth remains thin."
+    },
+    {
+      "route": "/advocates",
+      "surface": "Advocates directory",
+      "needs": "Truth-safe advocate records, county coverage, contact signals, specialties, and public-eligibility gating.",
+      "currentStatus": "thin",
+      "mainGap": "Advocate count is broad, but truth-safe local depth is still an active blocker and California remains strict-gold blocked here."
+    },
+    {
+      "route": "/conditions/[slug], /situations/[slug], /programs/[slug]",
+      "surface": "Condition and journey pages",
+      "needs": "Condition taxonomy, functional-needs mapping, linked programs, routing, and knowledge content.",
+      "currentStatus": "partial",
+      "mainGap": "Reference taxonomy is strong, but knowledge depth and competitive-help depth are still limited."
+    },
+    {
+      "route": "/forms and /forms/[slug]",
+      "surface": "Forms library",
+      "needs": "Official forms, official library roots, appeal/download URLs, and state coverage accounting.",
+      "currentStatus": "partial",
+      "mainGap": "Live form count is strong, but only 7 states are fully cleared and 37 are still fallback-authoring states."
+    },
+    {
+      "route": "/appeals-center and /deadlines/[slug]",
+      "surface": "Appeals and deadlines guidance",
+      "needs": "Appeal info, deadline logic, waitlists, official forms, and knowledge explainers.",
+      "currentStatus": "partial",
+      "mainGap": "Appeal rows are strong, but waitlist depth and knowledge explainers still need more depth."
+    },
+    {
+      "route": "/financial-planning, /regional-center-funding, /ihss-behavior-log, /iep-goals",
+      "surface": "Specialized planning tools and guidance",
+      "needs": "Knowledge content, program/routing context, and runtime persistence where applicable.",
+      "currentStatus": "partial",
+      "mainGap": "These surfaces exist, but supporting content/runtime depth is still uneven."
+    },
+    {
+      "route": "/dashboard, /login, /register, /share/log/[token]",
+      "surface": "Runtime, account, and collaboration surfaces",
+      "needs": "Family cases, child profiles, reminders, document tracking, collaboration threads, and sharing tokens.",
+      "currentStatus": "demo_only",
+      "mainGap": "Schema exists, but most runtime tables are empty or demo-only in the checked-in DB."
+    }
+  ],
+  "familyAudits": [
+    {
+      "id": "public_truth",
+      "label": "Truth and public eligibility contract",
+      "status": "strong",
+      "needs": [
+        "Every public page must be source-backed and non-synthetic.",
+        "Indexing, sitemap inclusion, and render eligibility must follow the same truth rule.",
+        "Verification metadata must remain complete for public-serving layers."
+      ],
+      "currentHave": [
+        "45/50 California-grade COMPLETE states",
+        "5/50 BLOCKED states held in noindex launch posture",
+        "45 index-safe states in the current launch contract",
+        "6 verified diagnosis slugs"
+      ],
+      "staging": [
+        "Partial-gated blocked states: arizona, alaska, maine, idaho, new-hampshire"
+      ],
+      "queue": [
+        "Audit vs queue mismatch count: 0",
+        "No direct scrape lane; enforced through truth audits, render gating, sitemap policy, and promotion rules."
+      ],
+      "gap": "The remaining launch work is not broader indexing. It is keeping the 5 blocked states visible only through explicit partial-state gating without implying local proof."
+    },
+    {
+      "id": "geography",
+      "label": "Geography and coverage foundation",
+      "status": "strong",
+      "needs": [
+        "50-state coverage, full county coverage, and junction-based service-area mapping without fake county cloning."
+      ],
+      "currentHave": [
+        "50 states",
+        "3050 counties",
+        "183 regional-center county links",
+        "174 education county links",
+        "1229 advocate county links",
+        "0 virtual service-area county links"
+      ],
+      "staging": [],
+      "queue": [
+        "No major geography scrape backlog remains in the broad runnable universe."
+      ],
+      "gap": "Foundation-grade. Keep using junction tables instead of fake local duplication."
+    },
+    {
+      "id": "programs_benefits",
+      "label": "Programs, benefits, appeals, and forms",
+      "status": "strong_but_not_exhaustive",
+      "needs": [
+        "Program definitions, eligibility rules, document requirements, application steps, appeals, forms, and public-safe program pages."
+      ],
+      "currentHave": [
+        "258 programs",
+        "300 eligibility rules",
+        "0 document requirements",
+        "1 application steps",
+        "18 appeal records",
+        "2 live forms and guides",
+        "Program verification mix: verified=170; source_listed=63; official_verified=25",
+        "Form verification mix: official_verified=1; verified=1"
+      ],
+      "staging": [
+        "0 staged programs",
+        "0 staged forms",
+        "0 ready rows unresolved; 507 live programs"
+      ],
+      "queue": [
+        "Launch closure: 100% queue closure",
+        "Launch forms accounting: 7 cleared, 6 ready exact, 37 author-first fallback"
+      ],
+      "gap": "Programs and forms are structurally strong, but forms exact-state coverage is not finished and generic agency-page overpromotion still has to stay suppressed."
+    },
+    {
+      "id": "waivers_waitlists",
+      "label": "Waivers and waitlists",
+      "status": "partial",
+      "needs": [
+        "Explicit waiver identity, source-backed action paths, waitlist or interest-list visibility, and official linkage where applicable."
+      ],
+      "currentHave": [
+        "6 live waitlist rows",
+        "0 staged waitlist rows",
+        "0 ready rows unresolved; 8 typed live waiver rows",
+        "Waitlist launch exact states: florida; georgia; ohio; pennsylvania; illinois; texas"
+      ],
+      "staging": [
+        "Program waitlist source types: null=6"
+      ],
+      "queue": [
+        "Waiver closure: 16% state coverage / 100% queue closure",
+        "Waitlist closure: 100% identified / 100% followup queue closure"
+      ],
+      "gap": "Waitlists are materially shallower than the broader program layer, and waiver typing/state-level waiver resolution is still incomplete."
+    },
+    {
+      "id": "routing",
+      "label": "County offices, DD routing, and education routing",
+      "status": "strong_but_not_exhaustive",
+      "needs": [
+        "Truthful county office lookup, statewide DD/IDD intake paths, regional or district education routing, and complete trust metadata."
+      ],
+      "currentHave": [
+        "720 county offices",
+        "120 state resource agencies",
+        "174 regional education agencies",
+        "649 school districts",
+        "Office verification mix: generated_county_fallback=651; needs_review=49; source_listed=14; official_verified=6",
+        "State routing verification mix: source_listed=57; verified=33; official_verified=30"
+      ],
+      "staging": [
+        "14 staged county offices",
+        "0 staged DD routing rows",
+        "0 staged regional education rows",
+        "0 staged school district rows",
+        "50/50 state coverage live; 0 ready rows unresolved",
+        "47/50 regional state coverage; 0 ready rows unresolved"
+      ],
+      "queue": [
+        "50/50 state coverage live; 0 ready rows remain; 40 repair rows remain",
+        "94% coverage / 100% queue closure"
+      ],
+      "gap": "This is one of the strongest public layers, but regional education is still 47/50 states and final repair-ledger cleanup remains."
+    },
+    {
+      "id": "providers",
+      "label": "Providers and care",
+      "status": "thin",
+      "needs": [
+        "Truthful anchor providers per state, named clinics/programs, contact and location evidence, and eventually deeper care discovery."
+      ],
+      "currentHave": [
+        "1 live providers",
+        "0 staged providers",
+        "1/50 provider states represented",
+        "1/3050 counties with provider rows",
+        "Provider verification mix: needs_review=1",
+        "Launch provider standard: 0 launch-ready states; 10 pull-now planned; 42 authored targets; 1 discovery-only row"
+      ],
+      "staging": [
+        "42 authored provider targets",
+        "10 pull-now planned states",
+        "1 discovery-only provider rows"
+      ],
+      "queue": [
+        "Runnable universe leftovers: 1",
+        "Completion disposition: queued"
+      ],
+      "gap": "This remains the clearest data hole for the final website. Provider rows exist in all states, but county depth and launch-ready anchor coverage are still far from finished."
+    },
+    {
+      "id": "nonprofits",
+      "label": "Nonprofits and parent-support organizations",
+      "status": "strong_but_not_exhaustive",
+      "needs": [
+        "Broad local support coverage, trustworthy contact paths, and richer intake/accessibility metadata."
+      ],
+      "currentHave": [
+        "1775 live nonprofits",
+        "0 staged nonprofits",
+        "7/50 nonprofit states represented",
+        "604/3050 counties with nonprofit rows",
+        "Nonprofit verification mix: source_listed=1390; needs_review=343; generated_county_fallback=42"
+      ],
+      "staging": [],
+      "queue": [
+        "Completion disposition: queued (17 in scope)",
+        "Runnable universe leftovers: 2"
+      ],
+      "gap": "Coverage breadth is strong, but nonprofit metadata remains sparse and there is no separate live competitive-help table yet."
+    },
+    {
+      "id": "advocates",
+      "label": "Advocates and legal / IEP support",
+      "status": "thin",
+      "needs": [
+        "Truth-safe advocate records, specialties, counties served, contact details, and public-safe legal/IEP support presentation."
+      ],
+      "currentHave": [
+        "137 live advocates",
+        "0 staged advocates",
+        "545/3050 counties with advocate coverage links",
+        "Advocate verification mix: needs_review=97; source_listed=40"
+      ],
+      "staging": [],
+      "queue": [
+        "Completion disposition: explicitly_blocked",
+        "Blocker: advocate_directory_depth",
+        "Runnable universe leftovers: 2"
+      ],
+      "gap": "Advocate volume is high, but truth-safe local advocate depth is still explicitly blocked and directly affects final website confidence."
+    },
+    {
+      "id": "competitive_help",
+      "label": "Housing, goods, jobs, care, and other competitive-help families",
+      "status": "missing_live",
+      "needs": [
+        "Live website rows for housing, goods/supplies, jobs/vocational, care/independent living, and transport/utilities/food.",
+        "Actionable service/contact evidence, not just taxonomy or topic tags."
+      ],
+      "currentHave": [
+        "Live help_resources table: missing",
+        "staging_scraped_help_resources rows: 0",
+        "Completion dispositions: housing=unknown, goods=unknown, jobs=unknown, care=unknown, transport=queued"
+      ],
+      "staging": [],
+      "queue": [
+        "Runnable universe leftovers: housing=0, goods=0, jobs=0, care=0, transport=0"
+      ],
+      "gap": "This is a major final-website gap: the site model wants these families, but the checked-in live DB has no dedicated public help-resource table and no staged rows."
+    },
+    {
+      "id": "directory_foundation",
+      "label": "Directory foundation metadata",
+      "status": "partial",
+      "needs": [
+        "Service taxonomy, audience tags, availability, next-step instructions, accessibility, capacity, claim state, and trust freshness across listings."
+      ],
+      "currentHave": [
+        "22 service tags",
+        "12 serving tags",
+        "Provider accessibility signals: accepts_medi_cal=0/0; interpreter_available=0/0; asl_available=0/0; wheelchair_accessible=0/0; virtual_services=0/0; in_person_services=0/0; home_visits=0/0; transportation_help=0/0",
+        "Nonprofit accessibility signals: interpreter_available=0/0; asl_available=0/0; wheelchair_accessible=0/0; virtual_services=0/0; in_person_services=0/0; home_visits=0/0; transportation_help=0/0",
+        "Advocate accessibility signals: interpreter_available=0/137; asl_available=0/137; wheelchair_accessible=0/137; virtual_services=0/137; in_person_services=0/137; home_visits=0/137; transportation_help=0/137"
+      ],
+      "staging": [],
+      "queue": [
+        "Completion disposition: explicitly_blocked",
+        "Blocker: directory_foundation_signals"
+      ],
+      "gap": "Schema support is excellent, but live nonprofit and advocate accessibility/intake/capacity signals are still near-zero in the checked-in DB."
+    },
+    {
+      "id": "normalization",
+      "label": "Org -> program -> location normalization",
+      "status": "thin",
+      "needs": [
+        "Canonical organizations, org-program links, service locations, office locations, and virtual service areas that support location-rich discovery without false local claims."
+      ],
+      "currentHave": [
+        "1 organizations",
+        "1 organization-program links",
+        "1 service locations",
+        "1 office locations",
+        "0 virtual service areas"
+      ],
+      "staging": [],
+      "queue": [
+        "Completion disposition: explicitly_blocked",
+        "Blocker: normalization_depth"
+      ],
+      "gap": "Normalization exists, but service-location depth is still far too thin for a fully location-rich final website."
+    },
+    {
+      "id": "conditions_matching",
+      "label": "Conditions, needs, and matching support",
+      "status": "strong",
+      "needs": [
+        "Condition taxonomy, functional-need taxonomy, age/insurance references, and rule-backed links from disabilities or needs to programs/routing."
+      ],
+      "currentHave": [
+        "78 conditions",
+        "0 functional needs",
+        "null age bands",
+        "null insurance types",
+        "300 eligibility rules",
+        "reference tables present; no direct queue"
+      ],
+      "staging": [],
+      "queue": [
+        "Dependency-verification family: 100% direct data present / 0% dependency verification complete"
+      ],
+      "gap": "The reference layer is strong; the remaining gap is downstream depth in programs, waivers, providers, and knowledge."
+    },
+    {
+      "id": "knowledge",
+      "label": "Knowledge content and guidance",
+      "status": "partial",
+      "needs": [
+        "Structured explainers for diagnosis, waivers, school rights, appeals, respite, transition, and related family journeys, with provenance-safe serving."
+      ],
+      "currentHave": [
+        "5 live knowledge articles",
+        "0 staged knowledge articles",
+        "2 promoted live; 54 blocked; 3 unresolved; provenance not yet launch-safe"
+      ],
+      "staging": [],
+      "queue": [
+        "Completion disposition: explicitly_blocked",
+        "Blocker: knowledge_content_depth"
+      ],
+      "gap": "Live article volume is still small, and launch planning still flags provenance-safe topic coverage as unresolved."
+    },
+    {
+      "id": "sources_ops",
+      "label": "Sources, review, and operational feedback loops",
+      "status": "modeled_only",
+      "needs": [
+        "Healthy source registry, source verifications, user submissions, coverage gaps, and verification queues to sustain the final website."
+      ],
+      "currentHave": [
+        "1 sources",
+        "1 source verifications",
+        "null user-submitted resources",
+        "null coverage gaps",
+        "null verification queue items"
+      ],
+      "staging": [],
+      "queue": [],
+      "gap": "Operational maintenance loops are mostly modeled, but almost empty in live data."
+    },
+    {
+      "id": "family_case",
+      "label": "Family cases, child profiles, reminders, and document tracking",
+      "status": "demo_only",
+      "needs": [
+        "Real runtime support for cases, children, tracking, documents, reminders, and waiver vault flows if the final website includes signed-in family workflows."
+      ],
+      "currentHave": [
+        "null family cases",
+        "0 child profiles",
+        "0 case program statuses",
+        "0 document checklist items",
+        "0 reminders"
+      ],
+      "staging": [],
+      "queue": [],
+      "gap": "This is mostly demo-level runtime data today, not a fully live family workflow layer."
+    },
+    {
+      "id": "support_planning",
+      "label": "Support planning, collaboration, and shared portal flows",
+      "status": "modeled_only",
+      "needs": [
+        "Collaboration threads, share tokens, clinical documents, IEP accommodations/goals, and respite/planning tools if the final website includes family coordination."
+      ],
+      "currentHave": [
+        "0 consultation threads",
+        "0 consultation messages",
+        "0 shared portal tokens",
+        "0 safety incidents",
+        "0 parent declarations",
+        "0 caregiver profiles",
+        "0 transition tasks",
+        "0 caregiver self-care logs",
+        "0 child coordinators",
+        "0 clinical documents",
+        "0 IEP accommodations",
+        "0 IEP goals",
+        "0 respite assessments"
+      ],
+      "staging": [],
+      "queue": [],
+      "gap": "These collaboration/planning surfaces are essentially schema-only in the checked-in DB."
+    }
+  ],
+  "currentScrapePosition": {
+    "completionPlanQueueBaseline": {
+      "readyRows": 20,
+      "readyByStatus": {
+        "ready_js_heavy": 3,
+        "ready_lightweight": 15,
+        "discovery_only": 2
+      },
+      "discoveryOnly": 2,
+      "missingSourceFamilyCount": 0
+    },
+    "scrapeUniverseSummary": {
+      "universeReadyUniqueRows": 3564,
+      "combinedReadyUniqueRows": 7,
+      "excludedResolvedRows": 3557,
+      "resolvedFromRuns": {
+        "accepted": 2840,
+        "rejected": 1348,
+        "sourceRepair": 2742,
+        "terminalBlocked": 477
+      },
+      "combinedByGapFamily": {
+        "nonprofit_support": 2,
+        "advocates_legal": 2,
+        "condition_nonprofits": 1,
+        "general_gap_fill": 1,
+        "providers_care": 1
+      },
+      "combinedByStatus": {
+        "ready_js_heavy": 1,
+        "ready_lightweight": 6
+      },
+      "combinedByQueue": {
+        "scrape_target_universe": 7
+      },
+      "combinedByExecutionLane": {
+        "ready_target_scrape": 7
+      }
+    },
+    "remainingRows": [
+      {
+        "gapFamily": "nonprofit_support",
+        "stateId": "nevada",
+        "targetTable": "nonprofit_organizations",
+        "ledgerStatus": "ready_js_heavy",
+        "sourceUrl": "https://thearcnevada.org/",
+        "crawlMethod": "playwright"
+      },
+      {
+        "gapFamily": "advocates_legal",
+        "stateId": "multi-state",
+        "targetTable": "iep_advocates",
+        "ledgerStatus": "ready_lightweight",
+        "sourceUrl": "http://ideanet.doe.state.in.us/legal/welcome.html",
+        "crawlMethod": "static_fetch"
+      },
+      {
+        "gapFamily": "advocates_legal",
+        "stateId": "multi-state",
+        "targetTable": "iep_advocates",
+        "ledgerStatus": "ready_lightweight",
+        "sourceUrl": "http://www.carlazeiteraba.com/",
+        "crawlMethod": "static_fetch"
+      },
+      {
+        "gapFamily": "condition_nonprofits",
+        "stateId": "nevada",
+        "targetTable": "nonprofit_organizations",
+        "ledgerStatus": "ready_lightweight",
+        "sourceUrl": "https://www.thearcnevada.org/",
+        "crawlMethod": "static_fetch"
+      },
+      {
+        "gapFamily": "general_gap_fill",
+        "stateId": "florida",
+        "targetTable": "program_document_requirements",
+        "ledgerStatus": "ready_lightweight",
+        "sourceUrl": "https://apd.myflorida.com/cdcplus/forms-rules.htm",
+        "crawlMethod": "static_fetch"
+      },
+      {
+        "gapFamily": "nonprofit_support",
+        "stateId": "texas",
+        "targetTable": "nonprofit_organizations",
+        "ledgerStatus": "ready_lightweight",
+        "sourceUrl": "https://www.facebook.com/rgvdsa",
+        "crawlMethod": "static_fetch"
+      },
+      {
+        "gapFamily": "providers_care",
+        "stateId": "indiana",
+        "targetTable": "resource_providers",
+        "ledgerStatus": "ready_lightweight",
+        "sourceUrl": "https://www.rileychildrens.org/contact-and-locations/riley-hospital-for-children-at-iu-health",
+        "crawlMethod": "static_fetch"
+      }
+    ],
+    "notableRuns": [
+      {
+        "run": "2026-06-20T02-33-42-899Z",
+        "lane": "ready_lightweight",
+        "summary": "Queue burned down from 486 to 6; 469 accepted and 467 staged."
+      },
+      {
+        "run": "2026-06-20T03-03-57-641Z",
+        "lane": "ready_pdf",
+        "summary": "Queue burned down from 129 to 0; 41 accepted and 41 staged."
+      },
+      {
+        "run": "2026-06-20T03-05-03-417Z",
+        "lane": "ready_js_heavy",
+        "summary": "JS-heavy tail burned from 3 to 1; two rows became blocked and one remains."
+      }
+    ]
+  },
+  "completionAudit": {
+    "missingSourceFamilyCount": 0,
+    "actionableBlockerCount": 0,
+    "queuedFamilyCount": 3,
+    "processedFamilyCount": 3,
+    "explicitlyBlockedFamilyCount": 4,
+    "unknownGapCount": 5,
+    "allInScopeFamiliesAccountedFor": false,
+    "families": [
+      {
+        "id": "programs_waivers_appeals_waitlists",
+        "label": "Programs, waivers, appeals, and waitlists",
+        "disposition": "processed",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "forms_guides",
+        "label": "Forms and guides",
+        "disposition": "unknown",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "county_offices_dd_routing",
+        "label": "County offices and DD routing",
+        "disposition": "processed",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "education_routing",
+        "label": "Education routing",
+        "disposition": "processed",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "nonprofits",
+        "label": "Nonprofits",
+        "disposition": "queued",
+        "queueCount": 17,
+        "blockerId": ""
+      },
+      {
+        "id": "advocates_legal",
+        "label": "Advocates and legal support",
+        "disposition": "explicitly_blocked",
+        "queueCount": 0,
+        "blockerId": "advocate_directory_depth"
+      },
+      {
+        "id": "providers_care",
+        "label": "Providers and care",
+        "disposition": "queued",
+        "queueCount": 1,
+        "blockerId": "provider_directory"
+      },
+      {
+        "id": "housing",
+        "label": "Housing",
+        "disposition": "unknown",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "goods_supplies",
+        "label": "Goods and supplies",
+        "disposition": "unknown",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "jobs_vocational",
+        "label": "Jobs and vocational support",
+        "disposition": "unknown",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "care_independent_living",
+        "label": "Care and independent living",
+        "disposition": "unknown",
+        "queueCount": 0,
+        "blockerId": ""
+      },
+      {
+        "id": "transport_utilities_food",
+        "label": "Transport, utilities, and food",
+        "disposition": "queued",
+        "queueCount": 1,
+        "blockerId": ""
+      },
+      {
+        "id": "knowledge_content",
+        "label": "Knowledge content",
+        "disposition": "explicitly_blocked",
+        "queueCount": 0,
+        "blockerId": "knowledge_content_depth"
+      },
+      {
+        "id": "directory_foundation_metadata",
+        "label": "Directory foundation metadata",
+        "disposition": "explicitly_blocked",
+        "queueCount": 0,
+        "blockerId": "directory_foundation_signals"
+      },
+      {
+        "id": "normalization_org_program_location",
+        "label": "Org -> program -> location normalization",
+        "disposition": "explicitly_blocked",
+        "queueCount": 0,
+        "blockerId": "normalization_depth"
+      }
+    ]
+  },
+  "immediateTruths": [
+    "50/50 modeled completeness does not mean all information categories are deeply built out.",
+    "0/50 strict-gold states means 1 state still sits in the public-safe-but-blocked lane on the stricter truth registry.",
+    "Provider coverage and knowledge-content depth are still the largest visible product information gaps.",
+    "Directory metadata exists in schema, but most nonprofit and advocate rows still lack rich accessibility and capacity signals.",
+    "Several workflow and support layers are still mostly empty despite having schema support."
+  ]
+}

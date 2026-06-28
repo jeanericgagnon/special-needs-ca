@@ -1,0 +1,289 @@
+{
+  "generatedAt": "2026-06-28",
+  "dbPath": "ca_disability_navigator.db",
+  "totalScanned": 3576,
+  "totalDowngraded": 1766,
+  "tables": [
+    {
+      "table": "county_offices",
+      "scanned": 720,
+      "downgraded": 700,
+      "unchanged": 20,
+      "reasonCounts": {
+        "placeholder_phone:phone": 479,
+        "placeholder_email:email": 1,
+        "fallback_verification_status:verification_status": 651,
+        "fallback_data_origin:data_origin": 651,
+        "placeholder_source_url:source_url": 478,
+        "placeholder_website:website": 478,
+        "placeholder_name:office_name": 430
+      }
+    },
+    {
+      "table": "school_districts",
+      "scanned": 649,
+      "downgraded": 546,
+      "unchanged": 103,
+      "reasonCounts": {
+        "placeholder_name:name": 1,
+        "placeholder_phone:spec_ed_contact_phone": 493,
+        "fallback_verification_status:verification_status": 523,
+        "fallback_data_origin:data_origin": 523
+      }
+    },
+    {
+      "table": "state_resource_agencies",
+      "scanned": 120,
+      "downgraded": 0,
+      "unchanged": 120,
+      "reasonCounts": {}
+    },
+    {
+      "table": "regional_education_agencies",
+      "scanned": 174,
+      "downgraded": 37,
+      "unchanged": 137,
+      "reasonCounts": {
+        "fallback_verification_status:verification_status": 37,
+        "fallback_data_origin:data_origin": 37
+      }
+    },
+    {
+      "table": "iep_advocates",
+      "scanned": 137,
+      "downgraded": 97,
+      "unchanged": 40,
+      "reasonCounts": {
+        "placeholder_phone:phone": 97,
+        "placeholder_source_url:source_url": 96,
+        "placeholder_website:website": 96
+      }
+    },
+    {
+      "table": "resource_providers",
+      "scanned": 1,
+      "downgraded": 1,
+      "unchanged": 0,
+      "reasonCounts": {
+        "placeholder_phone:phone": 1,
+        "placeholder_email:email": 1
+      }
+    },
+    {
+      "table": "nonprofit_organizations",
+      "scanned": 1775,
+      "downgraded": 385,
+      "unchanged": 1390,
+      "reasonCounts": {
+        "placeholder_phone:phone": 385,
+        "placeholder_phone:next_step_phone": 1,
+        "fallback_verification_status:verification_status": 42,
+        "fallback_data_origin:data_origin": 42,
+        "search_result_source_url:source_url": 42,
+        "placeholder_website:website": 42
+      }
+    }
+  ],
+  "sampleDowngrades": [
+    {
+      "table": "county_offices",
+      "id": "office1",
+      "reasons": [
+        "placeholder_phone:phone",
+        "placeholder_email:email"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alameda-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alameda-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alpine-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alpine-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-alpine-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-amador-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-amador-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-amador-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-butte-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-butte-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-butte-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-calaveras-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-calaveras-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-calaveras-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-colusa-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-colusa-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-colusa-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-contra-costa-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-contra-costa-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-contra-costa-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-del-norte-ihss",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-del-norte-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-del-norte-ccs",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    },
+    {
+      "table": "county_offices",
+      "id": "off-el-dorado-medi-cal",
+      "reasons": [
+        "fallback_verification_status:verification_status",
+        "fallback_data_origin:data_origin"
+      ]
+    }
+  ]
+}

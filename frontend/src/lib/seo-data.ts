@@ -1,6 +1,18 @@
 import { FIVE_STATES_SEO_CLUSTERS } from './five-states-seo-data.ts';
+import {
+  formatIhssMonthlyEstimateValue,
+  getDefaultCaIhssWageDisclosure,
+  getIhssMonthlyEstimate,
+} from './ihssWageDisclosure.ts';
 import type { SEOPageData } from './seo-types.ts';
 export type { SEOPageData } from './seo-types.ts';
+
+const DEFAULT_CA_IHSS_SEO_DISCLOSURE = getDefaultCaIhssWageDisclosure();
+const DEFAULT_CA_IHSS_MAX_MONTHLY_EXAMPLE = formatIhssMonthlyEstimateValue(
+  getIhssMonthlyEstimate(DEFAULT_CA_IHSS_SEO_DISCLOSURE, 283),
+);
+const DEFAULT_CA_IHSS_MAX_MONTHLY_EXAMPLE_LABEL =
+  `Up to ${DEFAULT_CA_IHSS_MAX_MONTHLY_EXAMPLE} in the checked ${DEFAULT_CA_IHSS_SEO_DISCLOSURE.countyName} County example at 283 hours; county estimates vary.`;
 
 function isTemplatePlaceholderOfficialSource(url: string | undefined): boolean {
   if (!url) return false;
@@ -44,9 +56,9 @@ export const SEO_CLUSTERS: Record<string, SEOPageData> = {
     metaDescription: 'California parent overview of Regional Center services, IHSS, Institutional Deeming Medi-Cal, SSI, and CalABLE for children with Down Syndrome.',
     quickAnswer: 'California families supporting a child with Down Syndrome (Trisomy 21) may have access to Regional Center services, IHSS, Medi-Cal through the Institutional Deeming Waiver pathway, federal SSI, and CalABLE savings accounts. Each program has its own eligibility, application, and documentation rules.',
     tldrPoints: [
-      { label: 'Est. IHSS Payout', value: '$2,000 - $5,200/mo' },
+      { label: 'IHSS Planning Estimate', value: DEFAULT_CA_IHSS_MAX_MONTHLY_EXAMPLE_LABEL },
       { label: 'Medi-Cal Income Waiver', value: 'Parental income can be excluded in this pathway' },
-      { label: 'SSI Child Payout', value: 'Up to $1,100+/mo' },
+      { label: 'SSI Child Benefit', value: 'Federal base rate plus any current California supplement, subject to current SSA rules' },
       { label: 'Regional Center Age', value: '0 - Lifetime eligibility' }
     ],
     whenThisMatters: 'Immediately upon birth or clinical diagnosis. Early intervention services under the IFSP cover ages 0 to 3, and Lanterman Act services apply from age 3 throughout adulthood.',
@@ -156,7 +168,7 @@ Email: [Insert Email Address]`
     quickAnswer: 'Minor children under age 18 with developmental disabilities may qualify for the California In-Home Supportive Services (IHSS) program when the county finds that the child meets the current service and supervision criteria. IHSS can pay parent caregivers for essential physical care and safety monitoring. Authorized hours vary by county assessment, and pay rates are local estimates that should be confirmed with the county IHSS office before you rely on them.',
     tldrPoints: [
       { label: 'Max Monthly Hours', value: '283 Hours' },
-      { label: 'Est. Monthly Pay', value: 'Approx. $3,200 - $5,800/mo depending on county rate estimate and authorized hours' },
+      { label: 'Est. Monthly Pay', value: DEFAULT_CA_IHSS_MAX_MONTHLY_EXAMPLE_LABEL },
       { label: 'Income Tax Status', value: 'Often excluded from federal income for qualifying live-in providers; confirm current tax rules' },
       { label: 'Parent Eligibility', value: 'Parent pay may be available for qualifying co-residing providers' }
     ],

@@ -117,7 +117,7 @@ export default function Footer({ setCurrentTab }) {
             <AlertCircle size={20} style={{ color: 'var(--accent-coral)', flexShrink: 0, marginTop: '2px' }} />
             <div>
               <strong style={{ color: 'var(--text-primary)', display: 'block', marginBottom: '4px' }}>Legal & Medical Disclaimer</strong>
-              The information provided by this navigator is for educational and informational purposes only. It does not constitute legal, medical, educational, or benefits advice. We recommend screening, but decisions on eligibility are made strictly by official government agencies (such as CDSS, SSA, DDS, and local school districts). Always consult with qualified advocates, attorneys, or clinical specialists.
+              The information provided by this navigator is for educational and informational purposes only. It does not constitute legal, medical, educational, or benefits advice. Use it as planning support, but confirm current eligibility, deadlines, and required steps with the relevant government agency or school district before relying on an outcome. Always consult qualified advocates, attorneys, or clinical specialists when your situation requires case-specific advice.
             </div>
           </div>
 
@@ -129,8 +129,8 @@ export default function Footer({ setCurrentTab }) {
             color: 'var(--text-muted)',
             marginTop: '8px'
           }} className="footer-bottom">
-            <span>© 2026 California Disability Navigator. All rights reserved. Built to wow families.</span>
-            <span>Last database audit: May 2026</span>
+            <span>© 2026 California Disability Navigator. All rights reserved.</span>
+            <span>Check each page for source links and last checked dates.</span>
           </div>
         </div>
       </div>

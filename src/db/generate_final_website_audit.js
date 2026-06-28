@@ -108,10 +108,11 @@ const californiaGradeQueue = fs.existsSync(californiaGradeQueuePath)
   : [];
 const partialLaunchPolicy = fs.existsSync(partialLaunchPolicyPath) ? readJson(partialLaunchPolicyPath) : null;
 const executiveTruth = exhaustiveGap.executiveTruth || {};
-const publicSafeButBlockedStateIds = Array.isArray(truthRegistry.topBlockedStates)
-  ? truthRegistry.topBlockedStates
+const publicSafeButBlockedStateIds = Array.isArray(truthRegistry.states)
+  ? truthRegistry.states
       .filter((row) => row?.status === 'public_safe_but_blocked')
       .map((row) => row.id)
+      .sort()
   : [];
 const publicSafeButBlockedStateCount = truthRegistry.summary?.publicSafeButBlockedStates || 0;
 

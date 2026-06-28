@@ -176,6 +176,26 @@ assert.equal(
   'IHSS public guide copy must not present wages as a deterministic calculator claim'
 );
 assert.equal(
+  seoDataSource.includes('$2,000 - $5,200/mo'),
+  false,
+  'statewide California situation guides must not ship stale unsupported IHSS payout ranges'
+);
+assert.equal(
+  seoDataSource.includes('$1,100+/mo'),
+  false,
+  'statewide California guides must not hardcode unsupported SSI payout amounts'
+);
+assert.equal(
+  seoDataSource.includes('Approx. $3,200 - $5,800/mo'),
+  false,
+  'IHSS guide must not ship a stale hardcoded monthly payout range when the checked estimate helper exists'
+);
+assert.equal(
+  seoDataSource.includes('DEFAULT_CA_IHSS_MAX_MONTHLY_EXAMPLE_LABEL'),
+  true,
+  'IHSS-related SEO guides should derive public planning estimates from the shared wage disclosure helper'
+);
+assert.equal(
   seoDataSource.includes('Strict 45 calendar days'),
   false,
   'public forms guidance must not hardcode a universal strict 45-day county deadline'

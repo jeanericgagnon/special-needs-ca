@@ -1,0 +1,268 @@
+{
+  "generatedAt": "2026-06-28",
+  "dbPath": "/Users/ericgagnon/Documents/Ablefull/special-needs-ca/frontend/ca_disability_navigator.db",
+  "staleThresholdDays": 425,
+  "tables": [
+    {
+      "table": "resource_providers",
+      "label": "Resource Providers",
+      "counts": {
+        "total": 1,
+        "publicEligible": 0,
+        "stale": 0,
+        "publicEligibleStale": 0,
+        "missingFreshnessSignal": 1,
+        "publicEligibleMissingFreshnessSignal": 0,
+        "invalidFreshnessSignal": 0,
+        "manualReviewRequired": 0,
+        "publicEligiblePct": 0,
+        "stalePct": 0,
+        "publicEligibleStalePct": 0,
+        "missingFreshnessSignalPct": 100,
+        "publicEligibleMissingFreshnessSignalPct": 0
+      },
+      "freshnessBuckets": {
+        "0-90d": 0,
+        "91-180d": 0,
+        "181-365d": 0,
+        "366-425d": 0,
+        "426-730d": 0,
+        "731d+": 0,
+        "missing": 1
+      },
+      "staleExamples": [],
+      "states": [
+        {
+          "stateId": "california",
+          "stateName": "California",
+          "total": 1,
+          "publicEligible": 0,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 1,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        }
+      ]
+    },
+    {
+      "table": "nonprofit_organizations",
+      "label": "Nonprofit Organizations",
+      "counts": {
+        "total": 1775,
+        "publicEligible": 1390,
+        "stale": 0,
+        "publicEligibleStale": 0,
+        "missingFreshnessSignal": 1,
+        "publicEligibleMissingFreshnessSignal": 0,
+        "invalidFreshnessSignal": 0,
+        "manualReviewRequired": 0,
+        "publicEligiblePct": 78.3,
+        "stalePct": 0,
+        "publicEligibleStalePct": 0,
+        "missingFreshnessSignalPct": 0.1,
+        "publicEligibleMissingFreshnessSignalPct": 0
+      },
+      "freshnessBuckets": {
+        "0-90d": 1774,
+        "91-180d": 0,
+        "181-365d": 0,
+        "366-425d": 0,
+        "426-730d": 0,
+        "731d+": 0,
+        "missing": 1
+      },
+      "staleExamples": [],
+      "states": [
+        {
+          "stateId": "georgia",
+          "stateName": "Georgia",
+          "total": 488,
+          "publicEligible": 159,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "illinois",
+          "stateName": "Illinois",
+          "total": 316,
+          "publicEligible": 309,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "ohio",
+          "stateName": "Ohio",
+          "total": 271,
+          "publicEligible": 265,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "florida",
+          "stateName": "Florida",
+          "total": 215,
+          "publicEligible": 215,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "pennsylvania",
+          "stateName": "Pennsylvania",
+          "total": 209,
+          "publicEligible": 209,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "new-york",
+          "stateName": "New York",
+          "total": 198,
+          "publicEligible": 198,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "california",
+          "stateName": "California",
+          "total": 78,
+          "publicEligible": 35,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 1,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        }
+      ]
+    },
+    {
+      "table": "iep_advocates",
+      "label": "IEP Advocates",
+      "counts": {
+        "total": 137,
+        "publicEligible": 40,
+        "stale": 0,
+        "publicEligibleStale": 0,
+        "missingFreshnessSignal": 0,
+        "publicEligibleMissingFreshnessSignal": 0,
+        "invalidFreshnessSignal": 0,
+        "manualReviewRequired": 0,
+        "publicEligiblePct": 29.2,
+        "stalePct": 0,
+        "publicEligibleStalePct": 0,
+        "missingFreshnessSignalPct": 0,
+        "publicEligibleMissingFreshnessSignalPct": 0
+      },
+      "freshnessBuckets": {
+        "0-90d": 137,
+        "91-180d": 0,
+        "181-365d": 0,
+        "366-425d": 0,
+        "426-730d": 0,
+        "731d+": 0,
+        "missing": 0
+      },
+      "staleExamples": [],
+      "states": [
+        {
+          "stateId": "florida",
+          "stateName": "Florida",
+          "total": 31,
+          "publicEligible": 31,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "new-york",
+          "stateName": "New York",
+          "total": 26,
+          "publicEligible": 2,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "georgia",
+          "stateName": "Georgia",
+          "total": 24,
+          "publicEligible": 1,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "illinois",
+          "stateName": "Illinois",
+          "total": 22,
+          "publicEligible": 2,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "pennsylvania",
+          "stateName": "Pennsylvania",
+          "total": 18,
+          "publicEligible": 2,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        },
+        {
+          "stateId": "ohio",
+          "stateName": "Ohio",
+          "total": 16,
+          "publicEligible": 2,
+          "stale": 0,
+          "publicEligibleStale": 0,
+          "missingFreshnessSignal": 0,
+          "publicEligibleMissingFreshnessSignal": 0,
+          "stalePct": 0,
+          "publicEligibleStalePct": 0
+        }
+      ]
+    }
+  ]
+}

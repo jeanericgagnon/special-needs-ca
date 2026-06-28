@@ -1470,13 +1470,13 @@ function runMigrations(db: Database.Database) {
   // Seed iep_advocates if empty
   const countAdvocates = db.prepare("SELECT COUNT(*) as count FROM iep_advocates").get() as { count: number };
   if (countAdvocates.count === 0) {
-    const insertAdvocate = db.prepare("INSERT INTO iep_advocates (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website, verification_status, source_type) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'verified', 'seed')");
+    const insertAdvocate = db.prepare("INSERT INTO iep_advocates (id, name, credentials, experience_years, price_rate, counties_served, languages_spoken, phone, email, website, verification_status, source_type) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'needs_review', 'seed')");
 
     const seedAdvocates = [
       ['adv-sarah', 'Sarah Jenkins, M.S.Ed.', 'Board Certified Advocate (COPAA), Former Special Ed Teacher', 15, '$150 / hour', 'los-angeles,orange', 'English', '(310) 492-0142', 'sarah@calspedadvocacy.com', 'https://calspedadvocacy.com'],
       ['adv-marisol', 'Marisol Torres', 'Bilingual IEP Consultant, Parent Advocate Coach', 10, '$120 / hour', 'los-angeles,orange,san-diego', 'English, Spanish', '(714) 843-0189', 'marisol@iep-ayuda.org', 'https://iep-ayuda.org'],
       ['adv-david', 'David Chen', 'Special Ed Law Advocate, JD (Non-practicing)', 12, '$195 / hour', 'san-francisco,alameda,santa-clara', 'English, Cantonese', '(415) 629-0211', 'dchen@bayareaiep.com', 'https://bayareaiep.com'],
-      ['adv-elena', 'Elena Rostova', 'DDS/Regional Center & IEP Specialist', 8, '$110 / hour', 'sacramento,placer', 'English, Russian', '(916) 438-0273', 'elena@sacramentopedadvocate.com', 'https://elena@sacramentopedadvocate.com'],
+      ['adv-elena', 'Elena Rostova', 'DDS/Regional Center & IEP Specialist', 8, '$110 / hour', 'sacramento,placer', 'English, Russian', '(916) 438-0273', 'elena@sacramentopedadvocate.com', 'https://sacramentopedadvocate.com'],
       ['adv-katelyn', 'Katelyn Vance, BCBA', 'Behavior Specialist, Educational Advocate', 9, '$140 / hour', 'san-diego,riverside', 'English', '(619) 398-0304', 'kvance@sandiegoiep.com', 'https://bayareaiep.com']
     ];
 
