@@ -307,7 +307,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
     return {
       title: `${stateName} Disability Benefits, School, and Support Guides`,
-      description: `Select your ${stateName} county to review local developmental benefits, ${catchment} intake paths, school district support, and source-backed advocacy links.`,
+      description: `Select your ${stateName} county to review local developmental benefits, ${catchment} intake paths, school district support, and currently published advocacy links.`,
       alternates: { canonical: `/benefits/${stateData.id}` },
       robots: stateHubPolicy.index ? undefined : { index: false, follow: true }
     };
@@ -492,7 +492,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
       return {
         title: `${diagnosisFormatted} Benefits & Services in ${countyFormatted} County, ${stateCode}`,
-        description: `Access ${stateName} state support, ${catchment} intake, caregiver pay estimates, and school IEP assistance for ${diagnosisFormatted} in ${countyFormatted} County.`,
+        description: `Review ${stateName} public support paths, ${catchment} intake links, caregiver pay estimates, and school support guidance for ${diagnosisFormatted} in ${countyFormatted} County.`,
         alternates: { canonical: `/benefits/${stateData.id}/${slug[0].toLowerCase()}/${secondSlug}` },
         robots: canIndex ? undefined : { index: false, follow: true }
       };
@@ -1640,7 +1640,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
               {diagnosisFormatted} Benefits Guides by County
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', lineHeight: '1.6', maxWidth: '850px' }}>
-              Select a {stateName} county below to view source-backed local special education contacts, {config.catchmentName} intake departments, and {config.personalCareProgram} wage estimates for children with <strong>{diagnosisFormatted}</strong>.
+              Select a {stateName} county below to review currently published local special education contacts, {config.catchmentName} intake departments, and {config.personalCareProgram} wage estimates for children with <strong>{diagnosisFormatted}</strong>.
             </p>
           </div>
 
@@ -1718,7 +1718,7 @@ async function InnerBenefitsCatchAll({ params }: Props) {
       countyId = targetSlug;
       countyFormatted = formatParam(countyId);
       pageTitle = `${diagnosisFormatted} Benefits in ${countyFormatted} County`;
-      pageDescription = `Navigating developmental care in ${countyFormatted} County. Review source-backed Medi-Cal waiver pathways, safety supervision rate estimates, and educational routing for families supporting a child with ${diagnosisFormatted}.`;
+      pageDescription = `Navigating developmental care in ${countyFormatted} County. Review currently published Medi-Cal waiver pathways, safety supervision rate estimates, and educational routing for families supporting a child with ${diagnosisFormatted}.`;
       scopeType = 'county';
     } else if (district) {
       countyId = district.county_id;

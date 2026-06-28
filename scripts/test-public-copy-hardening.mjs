@@ -313,6 +313,18 @@ assert.match(
 );
 
 assert.doesNotMatch(
+  countyBenefitsPage,
+  /Access .* school IEP assistance|view source-backed local special education contacts|Review source-backed Medi-Cal waiver pathways|source-backed advocacy links/i,
+  'Shared county-guide metadata and intro copy should avoid overstating local certainty beyond the reviewed-public routing contract.'
+);
+
+assert.match(
+  countyBenefitsPage,
+  /Review .* public support paths|review currently published local special education contacts|Review currently published Medi-Cal waiver pathways|currently published advocacy links/i,
+  'Shared county-guide metadata and intro copy should use the reviewed-public wording for local support, education, and waiver guidance.'
+);
+
+assert.doesNotMatch(
   seoData,
   /without losing SSI or Medi-Cal eligibility|bypasses this rule completely/,
   'Shared public guide copy should avoid absolute CalABLE eligibility-preservation phrasing without current-source confirmation.'
