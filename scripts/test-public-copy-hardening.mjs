@@ -19,6 +19,7 @@ const countyDiagnosisPage = fs.readFileSync(path.join(repoRoot, 'frontend/src/ap
 const countiesClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/counties-client.tsx'), 'utf8');
 const countiesStatePage = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/counties/[state]/page.tsx'), 'utf8');
 const ihssCalculator = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/benefits/components/ihss-calculator.tsx'), 'utf8');
+const appealsClient = fs.readFileSync(path.join(repoRoot, 'frontend/src/app/appeals-center/appeals-client.tsx'), 'utf8');
 const seoData = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/seo-data.ts'), 'utf8');
 const stateConfigs = fs.readFileSync(path.join(repoRoot, 'frontend/src/lib/stateConfigs.ts'), 'utf8');
 
@@ -266,6 +267,18 @@ assert.doesNotMatch(
   appealLetterGenerator,
   /statutory 15-day timeline|60-day deadline as mandated/i,
   'Appeal letter generator should ask families to confirm the current district timeline rather than asserting a guaranteed statutory schedule.'
+);
+
+assert.doesNotMatch(
+  appealsClient,
+  /statutory 15 days|statutory 30-day window/i,
+  'Public appeals helper letters should ask families to confirm the current applicable timeline instead of asserting fixed statutory windows as universal fact.'
+);
+
+assert.match(
+  appealsClient,
+  /confirm the current Assessment Plan timeline|timeline I understand currently applies/i,
+  'Public appeals helper letters should redirect families back to the current timeline that applies to the notice or request.'
 );
 
 assert.doesNotMatch(

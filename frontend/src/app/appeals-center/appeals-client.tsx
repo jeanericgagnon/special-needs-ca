@@ -213,7 +213,7 @@ ${customIepText}
 
 In accordance with California Education Code Section 56321, please provide me with an Assessment Plan within the current response timeline that applies after receipt of this request. I request that the assessment cover all areas of suspected disability, which may include Psychoeducational (Cognitive/Academic), Speech and Language, Occupational Therapy (OT/Fine Motor), Physical Therapy (PT/Gross Motor), and Functional Behavior (FBA) assessments.
 
-I look forward to receiving the Assessment Plan within the statutory 15 days so that we can schedule the initial IEP meeting within the 60-day calendar limit (California Education Code § 56344) to collaborate on an educational program that matches ${childName}'s needs.
+Please confirm the current Assessment Plan timeline that applies to this request and the current meeting timeline that follows signed consent so we can collaborate on an educational program that matches ${childName}'s needs.
 
 Sincerely,
 
@@ -312,7 +312,7 @@ ${customRcText}
 
 I request an informal meeting with the Regional Center intake director, and if necessary, a formal Fair Hearing to present diagnostic records, psychological evaluations, and IEP reports confirming my child's eligibility. 
 
-Under Lanterman Act rules, I submit this appeal within the statutory 30-day window from the receipt of the denial notice. Please schedule an appeal review and contact me to arrange an informal conference.
+Based on the date on this notice, I am submitting this appeal within the timeline I understand currently applies to the denial. Please schedule an appeal review and contact me to arrange an informal conference.
 
 Sincerely,
 
