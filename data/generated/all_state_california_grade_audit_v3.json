@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-28T03:22:13.388Z",
+  "generatedAt": "2026-06-29T22:57:03.420Z",
   "stateCount": 50,
   "classifications": {
-    "COMPLETE": 45,
-    "BLOCKED": 5
+    "COMPLETE": 44,
+    "BLOCKED": 6
   },
-  "indexSafeCount": 45,
+  "indexSafeCount": 44,
   "incorrectlyIndexSafeStates": [],
   "pilotStates": [
     "texas",
@@ -83,7 +83,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_79_alabama_packet_truth_repair_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "alaska",
@@ -98,11 +110,11 @@
       "legacyManualReviewRate": 56.07,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 20,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 10,
+      "weakCriticalFamilies": 2,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "alaska",
         "state_code": "AK",
@@ -139,7 +151,7 @@
         "medicaid_state_health_coverage": "verified_state_grade",
         "medicaid_waiver_hcbs_disability_services": "verified_state_grade",
         "developmental_disability_idd_authority": "verified_state_grade",
-        "early_intervention_part_c": "verified_state_grade",
+        "early_intervention_part_c": "blocked_reviewed_official_successor_challenge_shell_only",
         "special_education_idea_part_b": "verified_state_grade",
         "district_or_county_education_routing": "verified_state_grade",
         "vocational_rehabilitation_pre_ets": "verified_state_grade",
@@ -148,13 +160,91 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_reviewable_dpa_offices_regions_without_borough_assignment_and_raw_health_fetches_403"
+        "county_local_disability_resources": "blocked_exact_health_host_challenge_and_dfcs_successors_without_borough_assignment_contract"
       },
-      "primaryGapReason": "bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract",
+      "primaryGapReason": "bounded_2026_06_29_exact_official_recheck_confirms_alaska_health_host_part_c_and_dpa_targets_now_fail_closed_on_cloudflare_challenge_while_dfcs_successors_still_publish_no_borough_assignment_contract_and_alaska_labor_dvr_proves_vr_and_pre_ets",
       "packetGenerated": true,
       "packetBatch": "batch404_alaska_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_dpa_offices_page_is_browser_readable_but_region_only_while_raw_health_fetches_still_403_and_dfcs_successor_surfaces_expose_no_borough_or_census_area_contract",
-      "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract"
+      "packetPrimaryGapReason": "bounded_2026_06_29_exact_official_recheck_confirms_alaska_health_host_part_c_and_dpa_targets_now_fail_closed_on_cloudflare_challenge_while_dfcs_successors_still_publish_no_borough_assignment_contract_and_alaska_labor_dvr_proves_vr_and_pre_ets",
+      "packetRecommendedBatch": "hold_for_new_official_borough_assignment_contract",
+      "finalBlockers": [
+        {
+          "family": "early_intervention_part_c",
+          "failure_code": "official_alaska_part_c_successor_targets_reviewed_but_health_host_challenge_blocked_after_fake_dhhs_domain_quarantine",
+          "evidence": "Reviewed bounded exact official Alaska Part C successor targets after the older `dhhs.alaska.gov` Early Start / early-intervention scaffold was quarantined as a programmatically generated fake domain. The live reviewed health-host successors are now known on disk, including `https://health.alaska.gov/dph/wcfh/Pages/partc/default.aspx` and `https://health.alaska.gov/dph/wcfh/Pages/ILP/default.aspx`, but raw HTTP review on 2026-06-29 still resolves both routes only to a Cloudflare `Just a moment...` shell with no reviewable early-intervention content. Alaska early intervention therefore cannot remain green on the fake scaffold, but it is no longer accurate to say there is no candidate at all; the reviewed official Part C successors are currently challenge-blocked and must stay blocked until one becomes publicly reviewable.",
+          "next_action": "hold_blocked_until_reviewed_official_alaska_part_c_successor_is_publicly_reviewable"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "failure_code": "reviewed_live_dpa_offices_page_proves_regional_offices_but_no_borough_assignment_and_raw_health_fetches_still_403",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Alaska county-local pass. The exact official health-host DPA office target at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` now fails closed in the low-token lane with HTTP 403 and a Cloudflare `Just a moment...` shell, matching the same failure now seen on the reviewed Part C successor targets. The wider health-host family still fails closed as well: `https://health.alaska.gov/en/division-of-public-assistance/`, `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf`, and `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` also return HTTP 403 with the same challenge shell. The DFCS successor family remains publicly reachable but still does not restore county-equivalent routing: `https://dfcs.alaska.gov/Pages/default.aspx`, `/Pages/Services.aspx`, and `/Commissioner/Pages/Contacts/default.aspx` still return HTTP 200 SharePoint pages, while `https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance` still returns HTTP 404. Those reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. The freshly rechecked DFCS Site Map branch still fails closed as a repair lane: `https://dfcs.alaska.gov/Pages/Site-Map.aspx` is live, but the extra surfaced DAPH leaves `/daph/Pages/services.aspx` and `/daph/Pages/paymentassistance/default.aspx` resolve to Alaska Pioneer Homes services and payment-assistance content rather than public-assistance office routing, while the only office-looking DFCS child lane remains the wrong-role OCS Regional Offices page. Alaska therefore still lacks any reviewable public borough- or census-area-to-office assignment contract.",
+          "next_action": "hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api",
+          "borough_contract_count": 0,
+          "unmapped_geographies_count": 20,
+          "reviewed_region_groupings": [
+            "Alaska Peninsula",
+            "Northern Alaska",
+            "Southcentral Alaska",
+            "Southeast Alaska",
+            "Southwest Alaska"
+          ]
+        }
+      ],
+      "packetFinalBlockers": [
+        {
+          "family": "early_intervention_part_c",
+          "failure_code": "official_alaska_part_c_successor_targets_reviewed_but_health_host_challenge_blocked_after_fake_dhhs_domain_quarantine",
+          "evidence": "Reviewed bounded exact official Alaska Part C successor targets after the older `dhhs.alaska.gov` Early Start / early-intervention scaffold was quarantined as a programmatically generated fake domain. The live reviewed health-host successors are now known on disk, including `https://health.alaska.gov/dph/wcfh/Pages/partc/default.aspx` and `https://health.alaska.gov/dph/wcfh/Pages/ILP/default.aspx`, but raw HTTP review on 2026-06-29 still resolves both routes only to a Cloudflare `Just a moment...` shell with no reviewable early-intervention content. Alaska early intervention therefore cannot remain green on the fake scaffold, but it is no longer accurate to say there is no candidate at all; the reviewed official Part C successors are currently challenge-blocked and must stay blocked until one becomes publicly reviewable.",
+          "next_action": "hold_blocked_until_reviewed_official_alaska_part_c_successor_is_publicly_reviewable"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "failure_code": "reviewed_live_dpa_offices_page_proves_regional_offices_but_no_borough_assignment_and_raw_health_fetches_still_403",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Alaska county-local pass. The exact official health-host DPA office target at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` now fails closed in the low-token lane with HTTP 403 and a Cloudflare `Just a moment...` shell, matching the same failure now seen on the reviewed Part C successor targets. The wider health-host family still fails closed as well: `https://health.alaska.gov/en/division-of-public-assistance/`, `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf`, and `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` also return HTTP 403 with the same challenge shell. The DFCS successor family remains publicly reachable but still does not restore county-equivalent routing: `https://dfcs.alaska.gov/Pages/default.aspx`, `/Pages/Services.aspx`, and `/Commissioner/Pages/Contacts/default.aspx` still return HTTP 200 SharePoint pages, while `https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance` still returns HTTP 404. Those reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. The freshly rechecked DFCS Site Map branch still fails closed as a repair lane: `https://dfcs.alaska.gov/Pages/Site-Map.aspx` is live, but the extra surfaced DAPH leaves `/daph/Pages/services.aspx` and `/daph/Pages/paymentassistance/default.aspx` resolve to Alaska Pioneer Homes services and payment-assistance content rather than public-assistance office routing, while the only office-looking DFCS child lane remains the wrong-role OCS Regional Offices page. Alaska therefore still lacks any reviewable public borough- or census-area-to-office assignment contract.",
+          "next_action": "hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api",
+          "borough_contract_count": 0,
+          "unmapped_geographies_count": 20,
+          "reviewed_region_groupings": [
+            "Alaska Peninsula",
+            "Northern Alaska",
+            "Southcentral Alaska",
+            "Southeast Alaska",
+            "Southwest Alaska"
+          ]
+        }
+      ],
+      "index_safe": false,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 83,
+      "strong_critical_families": 10,
+      "weak_critical_families": 2,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "bounded_2026_06_29_exact_official_recheck_confirms_alaska_health_host_part_c_and_dpa_targets_now_fail_closed_on_cloudflare_challenge_while_dfcs_successors_still_publish_no_borough_assignment_contract_and_alaska_labor_dvr_proves_vr_and_pre_ets",
+      "final_blockers": [
+        {
+          "family": "early_intervention_part_c",
+          "failure_code": "official_alaska_part_c_successor_targets_reviewed_but_health_host_challenge_blocked_after_fake_dhhs_domain_quarantine",
+          "evidence": "Reviewed bounded exact official Alaska Part C successor targets after the older `dhhs.alaska.gov` Early Start / early-intervention scaffold was quarantined as a programmatically generated fake domain. The live reviewed health-host successors are now known on disk, including `https://health.alaska.gov/dph/wcfh/Pages/partc/default.aspx` and `https://health.alaska.gov/dph/wcfh/Pages/ILP/default.aspx`, but raw HTTP review on 2026-06-29 still resolves both routes only to a Cloudflare `Just a moment...` shell with no reviewable early-intervention content. Alaska early intervention therefore cannot remain green on the fake scaffold, but it is no longer accurate to say there is no candidate at all; the reviewed official Part C successors are currently challenge-blocked and must stay blocked until one becomes publicly reviewable.",
+          "next_action": "hold_blocked_until_reviewed_official_alaska_part_c_successor_is_publicly_reviewable"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "failure_code": "reviewed_live_dpa_offices_page_proves_regional_offices_but_no_borough_assignment_and_raw_health_fetches_still_403",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Alaska county-local pass. The exact official health-host DPA office target at `https://health.alaska.gov/en/resources/division-of-public-assistance-dpa-offices/` now fails closed in the low-token lane with HTTP 403 and a Cloudflare `Just a moment...` shell, matching the same failure now seen on the reviewed Part C successor targets. The wider health-host family still fails closed as well: `https://health.alaska.gov/en/division-of-public-assistance/`, `https://health.alaska.gov/media/b54gx4ic/dpa-dashboard.pdf`, and `https://health.alaska.gov/media/kk5orhkc/medicaid-enrollment-monthly-snapshot.pdf` also return HTTP 403 with the same challenge shell. The DFCS successor family remains publicly reachable but still does not restore county-equivalent routing: `https://dfcs.alaska.gov/Pages/default.aspx`, `/Pages/Services.aspx`, and `/Commissioner/Pages/Contacts/default.aspx` still return HTTP 200 SharePoint pages, while `https://dfcs.alaska.gov/Search/Pages/results.aspx?k=public%20assistance` still returns HTTP 404. Those reviewed successor surfaces still expose no borough or census-area assignment contract for DPA or Medicaid office routing. The freshly rechecked DFCS Site Map branch still fails closed as a repair lane: `https://dfcs.alaska.gov/Pages/Site-Map.aspx` is live, but the extra surfaced DAPH leaves `/daph/Pages/services.aspx` and `/daph/Pages/paymentassistance/default.aspx` resolve to Alaska Pioneer Homes services and payment-assistance content rather than public-assistance office routing, while the only office-looking DFCS child lane remains the wrong-role OCS Regional Offices page. Alaska therefore still lacks any reviewable public borough- or census-area-to-office assignment contract.",
+          "next_action": "hold_blocked_until_alaska_publishes_borough_or_census_area_to_dpa_office_assignment_on_reviewable_public_page_export_or_api",
+          "borough_contract_count": 0,
+          "unmapped_geographies_count": 20,
+          "reviewed_region_groupings": [
+            "Alaska Peninsula",
+            "Northern Alaska",
+            "Southcentral Alaska",
+            "Southeast Alaska",
+            "Southwest Alaska"
+          ]
+        }
+      ],
+      "status": "BLOCKED"
     },
     {
       "stateId": "arizona",
@@ -219,13 +309,103 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_des_remoting_proves_greenlee_zip_served_localities_but_still_lacks_explicit_greenlee_county_assignment"
+        "county_local_disability_resources": "blocked_reviewable_des_locator_wrapper_pages_and_salesforce_locator_still_lack_explicit_greenlee_county_assignment"
       },
-      "primaryGapReason": "bounded_2026_06_26_live_des_salesforce_remoting_confirms_explicit_county_fields_for_la_paz_mohave_and_yuma_and_greenlee_zip_served_localities_but_still_no_greenlee_county_assignment",
+      "primaryGapReason": "bounded_2026_06_29_live_des_successor_recheck_confirms_part_c_and_vocational_rehabilitation_are_publicly_reviewable_while_reviewed_salesforce_remoting_still_only_proves_14_of_15_counties_and_greenlee_lacks_public_county_assignment",
       "packetGenerated": true,
       "packetBatch": "batch405_arizona_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_des_salesforce_remoting_confirms_explicit_county_fields_for_la_paz_mohave_and_yuma_and_greenlee_zip_served_localities_but_still_no_greenlee_county_assignment",
-      "packetRecommendedBatch": "hold_county_local_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_full_county_contract"
+      "packetPrimaryGapReason": "bounded_2026_06_29_live_des_successor_recheck_confirms_part_c_and_vocational_rehabilitation_are_publicly_reviewable_while_reviewed_salesforce_remoting_still_only_proves_14_of_15_counties_and_greenlee_lacks_public_county_assignment",
+      "packetRecommendedBatch": "hold_county_local_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_full_county_contract",
+      "finalBlockers": [
+        {
+          "family": "county_local_disability_resources",
+          "failure_code": "official_des_live_remoting_proves_greenlee_zip_served_localities_but_still_lacks_explicit_greenlee_county_assignment",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Arizona county-local pass. The public DES wrapper lane is reviewable again, but it still does not close the county-local contract for Greenlee. The live page at `https://des.az.gov/find-your-local-office` explicitly tells users to `Use our Office Locator to find the DES local office nearest you` and links into the same DES Office Locator lane, while `https://des.az.gov/office-locator` and `https://des.az.gov/services/disabilities/developmental-disabilities/office-locations` likewise remain wrapper/entry surfaces rather than reviewed county-to-office assignment contracts. The strongest remaining official lane is therefore still the previously reviewed public first-party Salesforce locator at `https://azdes-community.my.salesforce-sites.com/EOL/`, whose embedded frame exposes the official service controls `svcpickerDDS`, `svcpickerMA`, `svcpickerVR`, plus the live remoting/controller path `EOLEmbedController.getEOLOfficeData` with the current service lookup map through `LoadSvcDropDown`, `xrefSvcCodeJSON`, and `geoSearchRadius`. That reviewed remoting lane still narrows the blocker materially: `La Paz`, `Mohave`, and `Yuma` appear as literal office `county` values on returned DES rows, so those counties are no longer the unresolved gap. Greenlee still does not appear as an explicit office `county` value on reviewed DES results for DDS, Medical Assistance, Cash Assistance, Nutrition Assistance, or Vocational Rehabilitation. The strongest remaining Greenlee proof is locality-level rather than county-literal: the Tucson DDS row preserves `zipCodesServed` values `85533`, `85534`, and `85540`, and first-party Greenlee locality surfaces still preserve `Clifton, Arizona 85533`, `Duncan, Arizona 85534`, and `Morenci, AZ 85540`. That is useful service-area evidence, but the reviewed DES payload still resolves Greenlee-area results only to offices whose explicit county fields are other counties such as `Graham`, and no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci` inside `county`, `serviceDirections`, or `specialInstructions`. The accessible AHCCCS fallback lane remains live but still non-closing for Greenlee: `https://www.azahcccs.gov/Members/ALTCSlocations.html` preserves named office cards for `Chinle`, `Flagstaff`, `Kingman`, `Phoenix`, `Prescott`, `Tucson`, and `Yuma`, but no reviewed office card or county-routing text names `Greenlee`, `Clifton`, `Duncan`, or `Morenci`. `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` remains only a county enrollment report rather than a county-to-office assignment contract. Arizona therefore still lacks reviewed public official office-routing proof for Greenlee County even though 14 counties now have explicit reviewed county coverage and Greenlee preserves locality ZIP service-area evidence.",
+          "next_action": "hold_blocked_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_new_reviewable_county_to_office_contract",
+          "covered_counties": [
+            "Apache",
+            "Cochise",
+            "Coconino",
+            "Gila",
+            "Graham",
+            "La Paz",
+            "Maricopa",
+            "Mohave",
+            "Navajo",
+            "Pima",
+            "Pinal",
+            "Santa Cruz",
+            "Yavapai",
+            "Yuma"
+          ],
+          "unsupported_counties": [
+            "Greenlee"
+          ]
+        }
+      ],
+      "packetFinalBlockers": [
+        {
+          "family": "county_local_disability_resources",
+          "failure_code": "official_des_live_remoting_proves_greenlee_zip_served_localities_but_still_lacks_explicit_greenlee_county_assignment",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Arizona county-local pass. The public DES wrapper lane is reviewable again, but it still does not close the county-local contract for Greenlee. The live page at `https://des.az.gov/find-your-local-office` explicitly tells users to `Use our Office Locator to find the DES local office nearest you` and links into the same DES Office Locator lane, while `https://des.az.gov/office-locator` and `https://des.az.gov/services/disabilities/developmental-disabilities/office-locations` likewise remain wrapper/entry surfaces rather than reviewed county-to-office assignment contracts. The strongest remaining official lane is therefore still the previously reviewed public first-party Salesforce locator at `https://azdes-community.my.salesforce-sites.com/EOL/`, whose embedded frame exposes the official service controls `svcpickerDDS`, `svcpickerMA`, `svcpickerVR`, plus the live remoting/controller path `EOLEmbedController.getEOLOfficeData` with the current service lookup map through `LoadSvcDropDown`, `xrefSvcCodeJSON`, and `geoSearchRadius`. That reviewed remoting lane still narrows the blocker materially: `La Paz`, `Mohave`, and `Yuma` appear as literal office `county` values on returned DES rows, so those counties are no longer the unresolved gap. Greenlee still does not appear as an explicit office `county` value on reviewed DES results for DDS, Medical Assistance, Cash Assistance, Nutrition Assistance, or Vocational Rehabilitation. The strongest remaining Greenlee proof is locality-level rather than county-literal: the Tucson DDS row preserves `zipCodesServed` values `85533`, `85534`, and `85540`, and first-party Greenlee locality surfaces still preserve `Clifton, Arizona 85533`, `Duncan, Arizona 85534`, and `Morenci, AZ 85540`. That is useful service-area evidence, but the reviewed DES payload still resolves Greenlee-area results only to offices whose explicit county fields are other counties such as `Graham`, and no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci` inside `county`, `serviceDirections`, or `specialInstructions`. The accessible AHCCCS fallback lane remains live but still non-closing for Greenlee: `https://www.azahcccs.gov/Members/ALTCSlocations.html` preserves named office cards for `Chinle`, `Flagstaff`, `Kingman`, `Phoenix`, `Prescott`, `Tucson`, and `Yuma`, but no reviewed office card or county-routing text names `Greenlee`, `Clifton`, `Duncan`, or `Morenci`. `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` remains only a county enrollment report rather than a county-to-office assignment contract. Arizona therefore still lacks reviewed public official office-routing proof for Greenlee County even though 14 counties now have explicit reviewed county coverage and Greenlee preserves locality ZIP service-area evidence.",
+          "next_action": "hold_blocked_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_new_reviewable_county_to_office_contract",
+          "covered_counties": [
+            "Apache",
+            "Cochise",
+            "Coconino",
+            "Gila",
+            "Graham",
+            "La Paz",
+            "Maricopa",
+            "Mohave",
+            "Navajo",
+            "Pima",
+            "Pinal",
+            "Santa Cruz",
+            "Yavapai",
+            "Yuma"
+          ],
+          "unsupported_counties": [
+            "Greenlee"
+          ]
+        }
+      ],
+      "index_safe": false,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 92,
+      "strong_critical_families": 11,
+      "weak_critical_families": 1,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "bounded_2026_06_29_live_des_successor_recheck_confirms_part_c_and_vocational_rehabilitation_are_publicly_reviewable_while_reviewed_salesforce_remoting_still_only_proves_14_of_15_counties_and_greenlee_lacks_public_county_assignment",
+      "final_blockers": [
+        {
+          "family": "county_local_disability_resources",
+          "failure_code": "official_des_live_remoting_proves_greenlee_zip_served_localities_but_still_lacks_explicit_greenlee_county_assignment",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Arizona county-local pass. The public DES wrapper lane is reviewable again, but it still does not close the county-local contract for Greenlee. The live page at `https://des.az.gov/find-your-local-office` explicitly tells users to `Use our Office Locator to find the DES local office nearest you` and links into the same DES Office Locator lane, while `https://des.az.gov/office-locator` and `https://des.az.gov/services/disabilities/developmental-disabilities/office-locations` likewise remain wrapper/entry surfaces rather than reviewed county-to-office assignment contracts. The strongest remaining official lane is therefore still the previously reviewed public first-party Salesforce locator at `https://azdes-community.my.salesforce-sites.com/EOL/`, whose embedded frame exposes the official service controls `svcpickerDDS`, `svcpickerMA`, `svcpickerVR`, plus the live remoting/controller path `EOLEmbedController.getEOLOfficeData` with the current service lookup map through `LoadSvcDropDown`, `xrefSvcCodeJSON`, and `geoSearchRadius`. That reviewed remoting lane still narrows the blocker materially: `La Paz`, `Mohave`, and `Yuma` appear as literal office `county` values on returned DES rows, so those counties are no longer the unresolved gap. Greenlee still does not appear as an explicit office `county` value on reviewed DES results for DDS, Medical Assistance, Cash Assistance, Nutrition Assistance, or Vocational Rehabilitation. The strongest remaining Greenlee proof is locality-level rather than county-literal: the Tucson DDS row preserves `zipCodesServed` values `85533`, `85534`, and `85540`, and first-party Greenlee locality surfaces still preserve `Clifton, Arizona 85533`, `Duncan, Arizona 85534`, and `Morenci, AZ 85540`. That is useful service-area evidence, but the reviewed DES payload still resolves Greenlee-area results only to offices whose explicit county fields are other counties such as `Graham`, and no returned row contains literal `Greenlee`, `Clifton`, `Duncan`, or `Morenci` inside `county`, `serviceDirections`, or `specialInstructions`. The accessible AHCCCS fallback lane remains live but still non-closing for Greenlee: `https://www.azahcccs.gov/Members/ALTCSlocations.html` preserves named office cards for `Chinle`, `Flagstaff`, `Kingman`, `Phoenix`, `Prescott`, `Tucson`, and `Yuma`, but no reviewed office card or county-routing text names `Greenlee`, `Clifton`, `Duncan`, or `Morenci`. `https://www.azahcccs.gov/PlansProviders/Downloads/ALTCS_CountyMap.pdf` remains only a county enrollment report rather than a county-to-office assignment contract. Arizona therefore still lacks reviewed public official office-routing proof for Greenlee County even though 14 counties now have explicit reviewed county coverage and Greenlee preserves locality ZIP service-area evidence.",
+          "next_action": "hold_blocked_until_des_or_ahcccs_publish_explicit_greenlee_county_assignment_or_new_reviewable_county_to_office_contract",
+          "covered_counties": [
+            "Apache",
+            "Cochise",
+            "Coconino",
+            "Gila",
+            "Graham",
+            "La Paz",
+            "Maricopa",
+            "Mohave",
+            "Navajo",
+            "Pima",
+            "Pinal",
+            "Santa Cruz",
+            "Yavapai",
+            "Yuma"
+          ],
+          "unsupported_counties": [
+            "Greenlee"
+          ]
+        }
+      ],
+      "status": "BLOCKED"
     },
     {
       "stateId": "arkansas",
@@ -296,14 +476,26 @@
       "packetGenerated": true,
       "packetBatch": "batch_6_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "california",
       "stateCode": "CA",
       "stateName": "California",
-      "classification": "COMPLETE",
-      "indexSafe": true,
+      "classification": "BLOCKED",
+      "indexSafe": false,
       "incorrectlyIndexSafe": false,
       "legacyStatusLabel": "COMPLETE_WITH_LEGACY_EXCEPTION",
       "legacyGateScore": 26.7,
@@ -311,11 +503,11 @@
       "legacyManualReviewRate": 70.65,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 58,
-      "strongCriticalFamilies": 12,
-      "weakCriticalFamilies": 0,
+      "strongCriticalFamilies": 11,
+      "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 100,
+      "completenessPct": 92,
       "dbMetrics": {
         "state_id": "california",
         "state_code": "CA",
@@ -361,13 +553,55 @@
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "verified_state_grade"
+        "county_local_disability_resources": "blocked_exact_leaf_and_authoring_exhaustion_after_bounded_county_office_repair"
       },
-      "primaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "primaryGapReason": "county_local_disability_resources_exhausted_after_bounded_exact_leaf_and_browser_review",
       "packetGenerated": true,
-      "packetBatch": "batch_1_fast_finish_states_v1",
-      "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetBatch": "california_truthful_completion_refresh_v3",
+      "packetPrimaryGapReason": "county_local_disability_resources_exhausted_after_bounded_exact_leaf_and_browser_review",
+      "packetRecommendedBatch": "blocked_terminal_county_office_truth",
+      "finalBlockers": [
+        {
+          "family": "county_local_disability_resources",
+          "blocker_code": "county_office_exact_leaf_and_authoring_lanes_exhausted_before_county_complete_public_contract",
+          "blocker_evidence": "California county-local disability resources are no longer ambiguous scrape work. The county-office lane currently publishes 40/58 canonical county offices and leaves 18 counties unresolved. Of those unresolved counties, 14 exact same-domain leaves were retired after bounded lightweight fetch plus browser review, 0 counties still have reviewed exact county leaves worth bounded followup, and 4 county is author-first exhausted because no same-domain county leaf with address + phone + county-role proof remains. The family therefore remains explicitly blocked instead of green from the older statewide CDSS directory assumption.",
+          "blocked_exact_leaf_count": 14,
+          "author_first_exhausted_count": 4,
+          "published_canonical_counties": 40,
+          "missing_canonical_counties": 18
+        }
+      ],
+      "packetFinalBlockers": [
+        {
+          "family": "county_local_disability_resources",
+          "blocker_code": "county_office_exact_leaf_and_authoring_lanes_exhausted_before_county_complete_public_contract",
+          "blocker_evidence": "California county-local disability resources are no longer ambiguous scrape work. The county-office lane currently publishes 40/58 canonical county offices and leaves 18 counties unresolved. Of those unresolved counties, 16 exact same-domain leaves were retired after bounded lightweight fetch plus browser review, and 2 counties are author-first exhausted because no same-domain county leaf with address + phone + county-role proof remains. The family therefore remains explicitly blocked instead of green from the older statewide CDSS directory assumption.",
+          "blocked_exact_leaf_count": 16,
+          "author_first_exhausted_count": 2,
+          "published_canonical_counties": 40,
+          "missing_canonical_counties": 18
+        }
+      ],
+      "index_safe": false,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 92,
+      "strong_critical_families": 11,
+      "weak_critical_families": 1,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "county_local_disability_resources_exhausted_after_bounded_exact_leaf_and_browser_review",
+      "final_blockers": [
+        {
+          "family": "county_local_disability_resources",
+          "blocker_code": "county_office_exact_leaf_and_authoring_lanes_exhausted_before_county_complete_public_contract",
+          "blocker_evidence": "California county-local disability resources are no longer ambiguous scrape work. The county-office lane currently publishes 40/58 canonical county offices and leaves 18 counties unresolved. Of those unresolved counties, 16 exact same-domain leaves were retired after bounded lightweight fetch plus browser review, and 2 counties are author-first exhausted because no same-domain county leaf with address + phone + county-role proof remains. The family therefore remains explicitly blocked instead of green from the older statewide CDSS directory assumption.",
+          "blocked_exact_leaf_count": 16,
+          "author_first_exhausted_count": 2,
+          "published_canonical_counties": 40,
+          "missing_canonical_counties": 18
+        }
+      ],
+      "status": "BLOCKED"
     },
     {
       "stateId": "colorado",
@@ -438,7 +672,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_11_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_3_procedure_hardening",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "connecticut",
@@ -509,7 +755,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_3_procedure_hardening",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "delaware",
@@ -580,7 +838,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_14_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_3_procedure_hardening",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "florida",
@@ -651,7 +921,19 @@
       "packetGenerated": true,
       "packetBatch": "batch343_florida_public_myaccess_county_search_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "georgia",
@@ -722,7 +1004,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_2_repair_blocked_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "hawaii",
@@ -793,7 +1087,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_15_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_kalawao_official_exception_path",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_3_procedure_hardening",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 11,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_kalawao_official_exception_path",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "idaho",
@@ -812,7 +1118,7 @@
       "weakCriticalFamilies": 2,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 87,
+      "completenessPct": 83,
       "dbMetrics": {
         "state_id": "idaho",
         "state_code": "ID",
@@ -860,11 +1166,68 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_split_between_clean_exact_office_leaves_and_legacy_counties_without_public_contract"
       },
-      "primaryGapReason": "bounded_2026_06_26_attachment_recheck_confirms_camas_board_doc_and_clark_child_find_manual_policy_attachments_still_fail_to_create_local_special_ed_contract",
+      "primaryGapReason": "bounded_2026_06_29_exact_target_recheck_confirms_idaho_itp_and_idvr_successors_verify_while_residual_camas_and_clark_local_education_targets_bottom_out_in_roots_404s_or_wrong_role_content_and_dhw_office_stack_still_lacks_county_contract",
       "packetGenerated": true,
-      "packetBatch": "batch413_idaho_attachment_proof_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_attachment_recheck_confirms_camas_board_doc_and_clark_child_find_manual_policy_attachments_still_fail_to_create_local_special_ed_contract",
-      "packetRecommendedBatch": "hold_for_new_role_bearing_district_leaf_or_county_contract"
+      "packetBatch": "batch401_idaho_terminal_refresh_v1",
+      "packetPrimaryGapReason": "bounded_2026_06_29_exact_target_recheck_confirms_idaho_itp_and_idvr_successors_verify_while_residual_camas_and_clark_local_education_targets_bottom_out_in_roots_404s_or_wrong_role_content_and_dhw_office_stack_still_lacks_county_contract",
+      "packetRecommendedBatch": "hold_for_new_role_bearing_district_leaf_or_county_contract",
+      "finalBlockers": [
+        {
+          "family": "district_or_county_education_routing",
+          "severity": "critical",
+          "failure_code": "remaining_camas_and_clark_surfaces_materialize_contact_board_roster_title_ix_or_general_education_notice_leaves_but_zero_role_bearing_special_education_or_student_services_routing",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Idaho district pass on the residual Camas and Clark hosts. The statewide Idaho education families remain restored, but the last local-school repair lane still fails closed. Camas root `https://www.camascountyschools.org/` still returns HTTP 200, but the previously reviewed exact leaf candidate `https://www.camascountyschools.org/page/federal-programs` now returns HTTP 404 and the root still exposes no district-owned special-education, special-services, student-services, 504, Child Find, or procedural-safeguards routing with local contact evidence. Clark root `https://www.clarkcountyschools161.org/` still returns HTTP 200, but the previously reviewed exact leaf candidate `https://www.clarkcountyschools161.org/page/parent-resources` now returns HTTP 404 and the remaining live local-school surfaces still bottom out in generic home, news, contact, Title IX, or general-education notice content rather than role-bearing special-education routing. Both district sitemap lanes still return HTTP 404. Idaho therefore remains blocked because the last residual district-owned public targets now bottom out in roots, 404s, or wrong-role content rather than verified local special-education routing.",
+          "next_action": "hold_blocked_until_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_dhw_office_stack_supports_17_clean_leaf_matches_but_27_legacy_counties_still_lack_public_contract",
+          "evidence": "Reviewed 2026-06-29 one more bounded live Idaho DHW office-contract pass on the exact official office stack. `https://healthandwelfare.idaho.gov/offices`, `https://healthandwelfare.idaho.gov/dhw/caldwell-office`, `/offices?page=0`, `/offices?page=1`, `/offices?page=2`, and `https://healthandwelfare.idaho.gov/sitemap.xml` all still return HTTP 200 on the current official DHW host. The DHW stack is real and reviewable, but it still preserves office inventory only rather than county assignment. The reviewed pages still expose office names and exact office leaves, while the public sitemap still enumerates office URLs only. No reviewed live DHW page or sitemap surface publishes `county served`, `counties served`, `serves`, `service area`, or any county-to-office table or export. Idaho county-local routing therefore still remains an explicit split between the existing safe exact-office replacements and the legacy counties that still lack a public county contract.",
+          "next_action": "hold_blocked_with_17_clean_exact_office_replacements_and_27_legacy_counties_until_idaho_publishes_county_contract"
+        }
+      ],
+      "packetFinalBlockers": [
+        {
+          "family": "district_or_county_education_routing",
+          "severity": "critical",
+          "failure_code": "remaining_camas_and_clark_surfaces_materialize_contact_board_roster_title_ix_or_general_education_notice_leaves_but_zero_role_bearing_special_education_or_student_services_routing",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Idaho district pass on the residual Camas and Clark hosts. The statewide Idaho education families remain restored, but the last local-school repair lane still fails closed. Camas root `https://www.camascountyschools.org/` still returns HTTP 200, but the previously reviewed exact leaf candidate `https://www.camascountyschools.org/page/federal-programs` now returns HTTP 404 and the root still exposes no district-owned special-education, special-services, student-services, 504, Child Find, or procedural-safeguards routing with local contact evidence. Clark root `https://www.clarkcountyschools161.org/` still returns HTTP 200, but the previously reviewed exact leaf candidate `https://www.clarkcountyschools161.org/page/parent-resources` now returns HTTP 404 and the remaining live local-school surfaces still bottom out in generic home, news, contact, Title IX, or general-education notice content rather than role-bearing special-education routing. Both district sitemap lanes still return HTTP 404. Idaho therefore remains blocked because the last residual district-owned public targets now bottom out in roots, 404s, or wrong-role content rather than verified local special-education routing.",
+          "next_action": "hold_blocked_until_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_dhw_office_stack_supports_17_clean_leaf_matches_but_27_legacy_counties_still_lack_public_contract",
+          "evidence": "Reviewed 2026-06-29 one more bounded live Idaho DHW office-contract pass on the exact official office stack. `https://healthandwelfare.idaho.gov/offices`, `https://healthandwelfare.idaho.gov/dhw/caldwell-office`, `/offices?page=0`, `/offices?page=1`, `/offices?page=2`, and `https://healthandwelfare.idaho.gov/sitemap.xml` all still return HTTP 200 on the current official DHW host. The DHW stack is real and reviewable, but it still preserves office inventory only rather than county assignment. The reviewed pages still expose office names and exact office leaves, while the public sitemap still enumerates office URLs only. No reviewed live DHW page or sitemap surface publishes `county served`, `counties served`, `serves`, `service area`, or any county-to-office table or export. Idaho county-local routing therefore still remains an explicit split between the existing safe exact-office replacements and the legacy counties that still lack a public county contract.",
+          "next_action": "hold_blocked_with_17_clean_exact_office_replacements_and_27_legacy_counties_until_idaho_publishes_county_contract"
+        }
+      ],
+      "index_safe": false,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 83,
+      "strong_critical_families": 10,
+      "weak_critical_families": 2,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "bounded_2026_06_29_exact_target_recheck_confirms_idaho_itp_and_idvr_successors_verify_while_residual_camas_and_clark_local_education_targets_bottom_out_in_roots_404s_or_wrong_role_content_and_dhw_office_stack_still_lacks_county_contract",
+      "final_blockers": [
+        {
+          "family": "district_or_county_education_routing",
+          "severity": "critical",
+          "failure_code": "remaining_camas_and_clark_surfaces_materialize_contact_board_roster_title_ix_or_general_education_notice_leaves_but_zero_role_bearing_special_education_or_student_services_routing",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-target Idaho district pass on the residual Camas and Clark hosts. The statewide Idaho education families remain restored, but the last local-school repair lane still fails closed. Camas root `https://www.camascountyschools.org/` still returns HTTP 200, but the previously reviewed exact leaf candidate `https://www.camascountyschools.org/page/federal-programs` now returns HTTP 404 and the root still exposes no district-owned special-education, special-services, student-services, 504, Child Find, or procedural-safeguards routing with local contact evidence. Clark root `https://www.clarkcountyschools161.org/` still returns HTTP 200, but the previously reviewed exact leaf candidate `https://www.clarkcountyschools161.org/page/parent-resources` now returns HTTP 404 and the remaining live local-school surfaces still bottom out in generic home, news, contact, Title IX, or general-education notice content rather than role-bearing special-education routing. Both district sitemap lanes still return HTTP 404. Idaho therefore remains blocked because the last residual district-owned public targets now bottom out in roots, 404s, or wrong-role content rather than verified local special-education routing.",
+          "next_action": "hold_blocked_until_camas_or_clark_publish_role_bearing_special_education_special_services_student_services_504_child_find_or_procedural_safeguards_leaves_with_local_contact"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_dhw_office_stack_supports_17_clean_leaf_matches_but_27_legacy_counties_still_lack_public_contract",
+          "evidence": "Reviewed 2026-06-29 one more bounded live Idaho DHW office-contract pass on the exact official office stack. `https://healthandwelfare.idaho.gov/offices`, `https://healthandwelfare.idaho.gov/dhw/caldwell-office`, `/offices?page=0`, `/offices?page=1`, `/offices?page=2`, and `https://healthandwelfare.idaho.gov/sitemap.xml` all still return HTTP 200 on the current official DHW host. The DHW stack is real and reviewable, but it still preserves office inventory only rather than county assignment. The reviewed pages still expose office names and exact office leaves, while the public sitemap still enumerates office URLs only. No reviewed live DHW page or sitemap surface publishes `county served`, `counties served`, `serves`, `service area`, or any county-to-office table or export. Idaho county-local routing therefore still remains an explicit split between the existing safe exact-office replacements and the legacy counties that still lack a public county contract.",
+          "next_action": "hold_blocked_with_17_clean_exact_office_replacements_and_27_legacy_counties_until_idaho_publishes_county_contract"
+        }
+      ],
+      "status": "BLOCKED"
     },
     {
       "stateId": "illinois",
@@ -945,7 +1308,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_134_illinois_iarss_county_map_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "indiana",
@@ -1016,7 +1391,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_142_indiana_school_directory_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "iowa",
@@ -1087,7 +1474,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_143_iowa_district_directory_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "kansas",
@@ -1102,8 +1501,8 @@
       "legacyManualReviewRate": 59.21,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 105,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
       "completenessPct": 100,
@@ -1158,7 +1557,19 @@
       "packetGenerated": true,
       "packetBatch": "batch348_kansas_official_export_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "kentucky",
@@ -1229,7 +1640,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_3_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetRecommendedBatch": "batch_2_repair_blocked",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "louisiana",
@@ -1300,7 +1723,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_7_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "maine",
@@ -1319,7 +1754,7 @@
       "weakCriticalFamilies": 1,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
-      "completenessPct": 91,
+      "completenessPct": 92,
       "dbMetrics": {
         "state_id": "maine",
         "state_code": "ME",
@@ -1367,11 +1802,53 @@
         "ssi_ssa_federal_reference": "verified_state_grade",
         "county_local_disability_resources": "blocked_live_dhhs_ofi_nav_stack_reports_and_search_surfaces_public_but_still_not_county_grade"
       },
-      "primaryGapReason": "bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract",
+      "primaryGapReason": "bounded_2026_06_29_exact_official_recheck_confirms_maine_doe_part_c_and_maine_dvr_successors_verify_while_dhhs_ofi_office_report_and_search_surfaces_still_expose_no_county_to_office_or_service_area_contract",
       "packetGenerated": true,
       "packetBatch": "batch406_maine_terminal_refresh_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_live_recheck_confirms_maine_dhhs_ofi_nav_stack_reports_and_search_surfaces_are_public_but_still_expose_no_county_to_office_or_service_area_contract",
-      "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract"
+      "packetPrimaryGapReason": "bounded_2026_06_29_exact_official_recheck_confirms_maine_doe_part_c_and_maine_dvr_successors_verify_while_dhhs_ofi_office_report_and_search_surfaces_still_expose_no_county_to_office_or_service_area_contract",
+      "packetRecommendedBatch": "hold_for_new_official_county_crosswalk_contract",
+      "finalBlockers": [
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_maine_dhhs_ofi_surfaces_still_expose_offices_and_counts_without_county_assignment_contract",
+          "evidence": "Reviewed 2026-06-29 one more bounded live Maine DHHS/OFI county-local pass. The exact public office and report surfaces are still live and reviewable: `https://www.maine.gov/dhhs/about/contact/offices`, `/ofi/about-us/contact`, `/ofi/programs-services`, `/ofi/about-us/data-reports`, `/offices-divisions`, `/about/contact/administrative-offices`, and `/about/sitemap` all still return HTTP 200. The current official report artifacts are also still live: the Geographic Distribution PDF, Geographic Overflow PDF, counts-by-county workbook, and counts-by-county-and-town workbook all still return HTTP 200. A fresh document-level recheck now proves those reports are geographic counts only, not routing contracts: the 2026 county workbook preserves headers like `COUNTY` and `TOTAL COUNT`; the county-and-town workbook preserves `COUNTY` plus `TOWN`; and the 2026 Geographic Distribution / Overflow PDFs enumerate counties and towns such as Androscoggin, Aroostook, Auburn, Augusta, Bangor, Machias, Portland, Rockland, Sanford, and Skowhegan only as benefit-geography rows. The public District Office Locations page also remains office-address only and does not name counties on-page. No reviewed live DHHS/OFI page, workbook, PDF, sitemap, or search surface publishes `county served`, `service area`, district-office assignments, or any county-to-office routing table. Maine therefore still lacks a reviewable public county-to-office or service-area routing contract on the live DHHS/OFI stack.",
+          "next_action": "hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing",
+          "office_contract_count": 0,
+          "unmapped_counties": 16
+        }
+      ],
+      "packetFinalBlockers": [
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_maine_dhhs_ofi_surfaces_still_expose_offices_and_counts_without_county_assignment_contract",
+          "evidence": "Reviewed 2026-06-29 one more bounded live Maine DHHS/OFI county-local pass. The exact public office and report surfaces are still live and reviewable: `https://www.maine.gov/dhhs/about/contact/offices`, `/ofi/about-us/contact`, `/ofi/programs-services`, `/ofi/about-us/data-reports`, `/offices-divisions`, `/about/contact/administrative-offices`, and `/about/sitemap` all still return HTTP 200. The current official report artifacts are also still live: the Geographic Distribution PDF, Geographic Overflow PDF, counts-by-county workbook, and counts-by-county-and-town workbook all still return HTTP 200. A fresh document-level recheck now proves those reports are geographic counts only, not routing contracts: the 2026 county workbook preserves headers like `COUNTY` and `TOTAL COUNT`; the county-and-town workbook preserves `COUNTY` plus `TOWN`; and the 2026 Geographic Distribution / Overflow PDFs enumerate counties and towns such as Androscoggin, Aroostook, Auburn, Augusta, Bangor, Machias, Portland, Rockland, Sanford, and Skowhegan only as benefit-geography rows. The public District Office Locations page also remains office-address only and does not name counties on-page. No reviewed live DHHS/OFI page, workbook, PDF, sitemap, or search surface publishes `county served`, `service area`, district-office assignments, or any county-to-office routing table. Maine therefore still lacks a reviewable public county-to-office or service-area routing contract on the live DHHS/OFI stack.",
+          "next_action": "hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing",
+          "office_contract_count": 0,
+          "unmapped_counties": 16
+        }
+      ],
+      "index_safe": false,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 92,
+      "strong_critical_families": 11,
+      "weak_critical_families": 1,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "bounded_2026_06_29_exact_official_recheck_confirms_maine_doe_part_c_and_maine_dvr_successors_verify_while_dhhs_ofi_office_report_and_search_surfaces_still_expose_no_county_to_office_or_service_area_contract",
+      "final_blockers": [
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_maine_dhhs_ofi_surfaces_still_expose_offices_and_counts_without_county_assignment_contract",
+          "evidence": "Reviewed 2026-06-29 one more bounded live Maine DHHS/OFI county-local pass. The exact public office and report surfaces are still live and reviewable: `https://www.maine.gov/dhhs/about/contact/offices`, `/ofi/about-us/contact`, `/ofi/programs-services`, `/ofi/about-us/data-reports`, `/offices-divisions`, `/about/contact/administrative-offices`, and `/about/sitemap` all still return HTTP 200. The current official report artifacts are also still live: the Geographic Distribution PDF, Geographic Overflow PDF, counts-by-county workbook, and counts-by-county-and-town workbook all still return HTTP 200. A fresh document-level recheck now proves those reports are geographic counts only, not routing contracts: the 2026 county workbook preserves headers like `COUNTY` and `TOTAL COUNT`; the county-and-town workbook preserves `COUNTY` plus `TOWN`; and the 2026 Geographic Distribution / Overflow PDFs enumerate counties and towns such as Androscoggin, Aroostook, Auburn, Augusta, Bangor, Machias, Portland, Rockland, Sanford, and Skowhegan only as benefit-geography rows. The public District Office Locations page also remains office-address only and does not name counties on-page. No reviewed live DHHS/OFI page, workbook, PDF, sitemap, or search surface publishes `county served`, `service area`, district-office assignments, or any county-to-office routing table. Maine therefore still lacks a reviewable public county-to-office or service-area routing contract on the live DHHS/OFI stack.",
+          "next_action": "hold_blocked_until_official_maine_dhhs_ofi_or_maine_search_surface_exposes_county_to_office_or_service_area_routing",
+          "office_contract_count": 0,
+          "unmapped_counties": 16
+        }
+      ],
+      "status": "BLOCKED"
     },
     {
       "stateId": "maryland",
@@ -1442,7 +1919,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_12_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "massachusetts",
@@ -1513,7 +2002,19 @@
       "packetGenerated": true,
       "packetBatch": "batch394_massachusetts_suffolk_dds_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified",
-      "packetRecommendedBatch": "none_all_critical_families_verified"
+      "packetRecommendedBatch": "none_all_critical_families_verified",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "michigan",
@@ -1584,7 +2085,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_231_michigan_cepi_session_export_recovery_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "minnesota",
@@ -1655,7 +2168,19 @@
       "packetGenerated": true,
       "packetBatch": "batch333_minnesota_live_route_and_dhs_404_refresh_v1",
       "packetPrimaryGapReason": "browser_reviewed_mdeorg_and_mn_dhs_successor_routes_now_clear_minnesota_to_complete",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_3_procedure_hardening",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "browser_reviewed_mdeorg_and_mn_dhs_successor_routes_now_clear_minnesota_to_complete",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "mississippi",
@@ -1736,7 +2261,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_171_mississippi_district_contacts_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "missouri",
@@ -1807,7 +2344,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_172_missouri_arcgis_directory_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "montana",
@@ -1878,7 +2427,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "nebraska",
@@ -1893,8 +2454,8 @@
       "legacyManualReviewRate": 60.38,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 93,
-      "strongCriticalFamilies": 11,
-      "weakCriticalFamilies": 1,
+      "strongCriticalFamilies": 12,
+      "weakCriticalFamilies": 0,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
       "completenessPct": 100,
@@ -1959,7 +2520,19 @@
       "packetGenerated": true,
       "packetBatch": "batch349_nebraska_official_county_office_regions_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "nevada",
@@ -2030,7 +2603,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_13_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "new-hampshire",
@@ -2045,8 +2630,8 @@
       "legacyManualReviewRate": 63.16,
       "legacyAllowlistedCountyCount": 0,
       "countyCount": 10,
-      "strongCriticalFamilies": 5,
-      "weakCriticalFamilies": 7,
+      "strongCriticalFamilies": 4,
+      "weakCriticalFamilies": 8,
       "missingCriticalFamilies": 0,
       "totalCriticalFamilies": 12,
       "completenessPct": 42,
@@ -2093,25 +2678,187 @@
         "criticalRolesVerifiedPct": 2
       },
       "familyStatuses": {
-        "medicaid_state_health_coverage": "blocked_live_dhhs_roots_still_403_while_robots_txt_only_confirms_host_existence",
-        "medicaid_waiver_hcbs_disability_services": "blocked_live_dhhs_roots_still_403_while_robots_txt_only_confirms_host_existence",
-        "developmental_disability_idd_authority": "blocked_live_dhhs_roots_still_403_while_robots_txt_only_confirms_host_existence",
-        "early_intervention_part_c": "blocked_live_dhhs_roots_still_403_while_robots_txt_only_confirms_host_existence",
+        "medicaid_state_health_coverage": "blocked_live_dhhs_hosts_still_access_denied_in_browser_and_raw_with_no_reviewable_public_content_lane",
+        "medicaid_waiver_hcbs_disability_services": "blocked_live_dhhs_hosts_still_access_denied_in_browser_and_raw_with_no_reviewable_public_content_lane",
+        "developmental_disability_idd_authority": "blocked_live_dhhs_hosts_still_access_denied_in_browser_and_raw_with_no_reviewable_public_content_lane",
+        "early_intervention_part_c": "blocked_live_dhhs_hosts_still_access_denied_in_browser_and_raw_with_no_reviewable_public_content_lane",
         "special_education_idea_part_b": "verified_state_grade",
-        "district_or_county_education_routing": "blocked_live_education_roots_still_403_while_robots_txt_only_confirms_host_existence",
-        "vocational_rehabilitation_pre_ets": "blocked_live_nhes_roots_still_403_while_robots_txt_only_confirms_host_existence",
+        "district_or_county_education_routing": "blocked_live_education_hosts_still_access_denied_in_browser_and_raw_with_no_reviewable_public_routing_lane",
+        "vocational_rehabilitation_pre_ets": "blocked_live_nhes_hosts_still_access_denied_in_browser_and_raw_with_no_reviewable_public_vr_lane",
         "protection_and_advocacy": "verified_state_grade",
         "parent_training_information_center": "verified_state_grade",
         "legal_aid": "verified_state_grade",
         "able_program": "verified_state_grade",
         "ssi_ssa_federal_reference": "verified_state_grade",
-        "county_local_disability_resources": "blocked_live_dhhs_roots_still_403_while_robots_txt_only_confirms_host_existence"
+        "county_local_disability_resources": "blocked_live_dhhs_hosts_still_access_denied_in_browser_and_raw_with_no_county_reviewable_content_lane"
       },
-      "primaryGapReason": "bounded_2026_06_26_browser_recheck_confirms_nh_dhhs_doe_and_nhes_hosts_fail_with_public_access_denied_shells_not_just_raw_fetch_403s",
+      "primaryGapReason": "bounded_2026_06_30_browser_and_raw_host_recheck_confirms_nh_dhhs_doe_and_nhes_roots_all_return_public_access_denied_shells_with_no_browser_recovery_lane",
       "packetGenerated": true,
-      "packetBatch": "batch412_new_hampshire_browser_proof_v1",
-      "packetPrimaryGapReason": "bounded_2026_06_26_browser_recheck_confirms_nh_dhhs_doe_and_nhes_hosts_fail_with_public_access_denied_shells_not_just_raw_fetch_403s",
-      "packetRecommendedBatch": "hold_for_live_nh_dhhs_nhes_or_local_education_contract_recovery"
+      "packetBatch": "batch430_new_hampshire_browser_access_denied_finality_v1",
+      "packetPrimaryGapReason": "bounded_2026_06_30_browser_and_raw_host_recheck_confirms_nh_dhhs_doe_and_nhes_roots_all_return_public_access_denied_shells_with_no_browser_recovery_lane",
+      "packetRecommendedBatch": "hold_for_public_official_nh_host_recovery_or_export",
+      "finalBlockers": [
+        {
+          "family": "medicaid_state_health_coverage",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "medicaid_waiver_hcbs_disability_services",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "developmental_disability_idd_authority",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "early_intervention_part_c",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "district_or_county_education_routing",
+          "severity": "critical",
+          "failure_code": "official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire education pass. `https://education.nh.gov/`, `https://www.education.nh.gov/`, `https://www.nh.gov/education/`, and `https://my.doe.nh.gov/ehb/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable statewide or local education-routing content. `https://education.nh.gov/robots.txt` is publicly reachable again, but it only returns HTTP 200 robots text and does not reopen a district-grade routing contract. The separate official federal IDEA-by-State page at `https://sites.ed.gov/idea/state/new-hampshire/` remains live and keeps statewide IDEA Part B authority verified, but it still does not provide district-, county-, or SAU-grade routing. New Hampshire therefore still lacks a reviewable public DOE lane for local education routing.",
+          "next_action": "hold_blocked_until_public_nh_education_host_or_directory_is_reviewable"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_nh_dhhs_host_family_and_direct_successors_still_return_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved"
+        },
+        {
+          "family": "vocational_rehabilitation_pre_ets",
+          "severity": "critical",
+          "failure_code": "official_nh_vr_host_family_still_access_denied_or_unresolvable_with_no_public_successor",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire employment-security / VR pass. `https://nhes.nh.gov/`, `https://www.nhes.nh.gov/`, and `https://www.nh.gov/nhes/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable VR or Pre-ETS content. The robots lane is publicly reachable again, but it only returns HTTP 200 robots text and does not restore a public vocational-rehabilitation or Pre-ETS contract. New Hampshire therefore still lacks a reviewable public VR successor lane.",
+          "next_action": "hold_blocked_until_public_nh_vr_host_is_preserved"
+        }
+      ],
+      "packetFinalBlockers": [
+        {
+          "family": "medicaid_state_health_coverage",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "medicaid_waiver_hcbs_disability_services",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "developmental_disability_idd_authority",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "early_intervention_part_c",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "district_or_county_education_routing",
+          "severity": "critical",
+          "failure_code": "official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire education pass. `https://education.nh.gov/`, `https://www.education.nh.gov/`, `https://www.nh.gov/education/`, and `https://my.doe.nh.gov/ehb/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable statewide or local education-routing content. `https://education.nh.gov/robots.txt` is publicly reachable again, but it only returns HTTP 200 robots text and does not reopen a district-grade routing contract. The separate official federal IDEA-by-State page at `https://sites.ed.gov/idea/state/new-hampshire/` remains live and keeps statewide IDEA Part B authority verified, but it still does not provide district-, county-, or SAU-grade routing. New Hampshire therefore still lacks a reviewable public DOE lane for local education routing.",
+          "next_action": "hold_blocked_until_public_nh_education_host_or_directory_is_reviewable"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_nh_dhhs_host_family_and_direct_successors_still_return_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved"
+        },
+        {
+          "family": "vocational_rehabilitation_pre_ets",
+          "severity": "critical",
+          "failure_code": "official_nh_vr_host_family_still_access_denied_or_unresolvable_with_no_public_successor",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire employment-security / VR pass. `https://nhes.nh.gov/`, `https://www.nhes.nh.gov/`, and `https://www.nh.gov/nhes/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable VR or Pre-ETS content. The robots lane is publicly reachable again, but it only returns HTTP 200 robots text and does not restore a public vocational-rehabilitation or Pre-ETS contract. New Hampshire therefore still lacks a reviewable public VR successor lane.",
+          "next_action": "hold_blocked_until_public_nh_vr_host_is_preserved"
+        }
+      ],
+      "index_safe": false,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 42,
+      "strong_critical_families": 4,
+      "weak_critical_families": 8,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "bounded_2026_06_30_browser_and_raw_host_recheck_confirms_nh_dhhs_doe_and_nhes_roots_all_return_public_access_denied_shells_with_no_browser_recovery_lane",
+      "final_blockers": [
+        {
+          "family": "medicaid_state_health_coverage",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "medicaid_waiver_hcbs_disability_services",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "developmental_disability_idd_authority",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "early_intervention_part_c",
+          "severity": "critical",
+          "failure_code": "current_nh_dhhs_replacement_host_dns_dead_and_direct_successors_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_live_public_official_nh_dhhs_host_is_preserved"
+        },
+        {
+          "family": "district_or_county_education_routing",
+          "severity": "critical",
+          "failure_code": "official_nh_doe_host_family_and_direct_successors_still_return_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire education pass. `https://education.nh.gov/`, `https://www.education.nh.gov/`, `https://www.nh.gov/education/`, and `https://my.doe.nh.gov/ehb/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable statewide or local education-routing content. `https://education.nh.gov/robots.txt` is publicly reachable again, but it only returns HTTP 200 robots text and does not reopen a district-grade routing contract. The separate official federal IDEA-by-State page at `https://sites.ed.gov/idea/state/new-hampshire/` remains live and keeps statewide IDEA Part B authority verified, but it still does not provide district-, county-, or SAU-grade routing. New Hampshire therefore still lacks a reviewable public DOE lane for local education routing.",
+          "next_action": "hold_blocked_until_public_nh_education_host_or_directory_is_reviewable"
+        },
+        {
+          "family": "county_local_disability_resources",
+          "severity": "critical",
+          "failure_code": "official_nh_dhhs_host_family_and_direct_successors_still_return_access_denied_shell",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire DHHS pass. `https://www.dhhs.nh.gov/`, `https://dhhs.nh.gov/`, and `https://www.nh.gov/dhhs/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable public DHHS content. The robots lanes are publicly reachable again, but still do not reopen a reviewable proof lane: `https://www.nh.gov/robots.txt` and `https://www.dhhs.nh.gov/robots.txt` now return HTTP 200 robots text that only confirms host existence and crawl rules. New Hampshire therefore still lacks a reviewable public DHHS lane for the blocked health, DD, EI, waiver, and county-local families.",
+          "next_action": "hold_blocked_until_public_nh_dhhs_district_directory_or_county_export_is_preserved"
+        },
+        {
+          "family": "vocational_rehabilitation_pre_ets",
+          "severity": "critical",
+          "failure_code": "official_nh_vr_host_family_still_access_denied_or_unresolvable_with_no_public_successor",
+          "evidence": "Reviewed 2026-06-29 one more bounded exact-host New Hampshire employment-security / VR pass. `https://nhes.nh.gov/`, `https://www.nhes.nh.gov/`, and `https://www.nh.gov/nhes/` all still return the same public HTTP 403 `Access Denied` shell rather than any reviewable VR or Pre-ETS content. The robots lane is publicly reachable again, but it only returns HTTP 200 robots text and does not restore a public vocational-rehabilitation or Pre-ETS contract. New Hampshire therefore still lacks a reviewable public VR successor lane.",
+          "next_action": "hold_blocked_until_public_nh_vr_host_is_preserved"
+        }
+      ],
+      "status": "BLOCKED"
     },
     {
       "stateId": "new-jersey",
@@ -2182,7 +2929,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_17_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_3_procedure_hardening",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "new-mexico",
@@ -2263,7 +3022,19 @@
       "packetGenerated": true,
       "packetBatch": "batch411_new_mexico_ped_county_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "new-york",
@@ -2334,7 +3105,19 @@
       "packetGenerated": true,
       "packetBatch": "batch323_new_york_otda_county_local_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "north-carolina",
@@ -2405,7 +3188,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_286_north_carolina_official_county_contract_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "north-dakota",
@@ -2476,7 +3271,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "ohio",
@@ -2547,7 +3354,19 @@
       "packetGenerated": true,
       "packetBatch": "batch332_ohio_education_live_leaf_probe_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "batch_2_repair_blocked"
+      "packetRecommendedBatch": "batch_2_repair_blocked",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "oklahoma",
@@ -2618,7 +3437,19 @@
       "packetGenerated": true,
       "packetBatch": "batch347_oklahoma_county_health_fallback_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "oregon",
@@ -2689,7 +3520,19 @@
       "packetGenerated": true,
       "packetBatch": "batch325_oregon_public_office_locations_api_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "pennsylvania",
@@ -2760,7 +3603,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_1_fast_finish_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "rhode-island",
@@ -2831,7 +3686,19 @@
       "packetGenerated": true,
       "packetBatch": "batch364_rhode-island_official_local_routing_finality_v1",
       "packetPrimaryGapReason": "all_critical_families_verified",
-      "packetRecommendedBatch": "batch_3_procedure_hardening"
+      "packetRecommendedBatch": "batch_3_procedure_hardening",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "south-carolina",
@@ -2902,7 +3769,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_280_south_carolina_official_district_directory_completion_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "south-dakota",
@@ -2973,7 +3852,19 @@
       "packetGenerated": true,
       "packetBatch": "batch415_south-dakota_dss_local_office_lane_truth_refresh_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_official_or_first_party_geography_contracts",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "tennessee",
@@ -3044,7 +3935,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_independently_reaudited_with_live_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_independently_reaudited_with_live_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "texas",
@@ -3115,7 +4018,19 @@
       "packetGenerated": true,
       "packetBatch": "texas_complete_state_packet_v1",
       "packetPrimaryGapReason": "none",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "none",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "utah",
@@ -3186,7 +4101,19 @@
       "packetGenerated": true,
       "packetBatch": "batch337_utah_lmha_county_map_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "vermont",
@@ -3257,7 +4184,19 @@
       "packetGenerated": true,
       "packetBatch": "batch386_vermont_ahs_field_services_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "virginia",
@@ -3328,7 +4267,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_8_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_independently_reaudited_with_live_official_or_browser_reviewed_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_independently_reaudited_with_live_official_or_browser_reviewed_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "washington",
@@ -3399,7 +4350,19 @@
       "packetGenerated": true,
       "packetBatch": "batch378_washington_ddcs_dvr_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "west-virginia",
@@ -3470,7 +4433,19 @@
       "packetGenerated": true,
       "packetBatch": "batch_9_procedure_hardening_states_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "wisconsin",
@@ -3541,7 +4516,19 @@
       "packetGenerated": true,
       "packetBatch": "batch379_wisconsin_dpi_directory_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "complete_maintain"
+      "packetRecommendedBatch": "complete_maintain",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     },
     {
       "stateId": "wyoming",
@@ -3612,7 +4599,19 @@
       "packetGenerated": true,
       "packetBatch": "batch395_wyoming_wde_special_ed_directory_completion_v1",
       "packetPrimaryGapReason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
-      "packetRecommendedBatch": "none_all_critical_families_verified"
+      "packetRecommendedBatch": "none_all_critical_families_verified",
+      "finalBlockers": [],
+      "packetFinalBlockers": [],
+      "index_safe": true,
+      "incorrectly_index_safe": false,
+      "completeness_pct": 100,
+      "strong_critical_families": 12,
+      "weak_critical_families": 0,
+      "missing_critical_families": 0,
+      "total_critical_families": 12,
+      "primary_gap_reason": "all_critical_families_verified_with_reviewed_first_party_or_official_evidence",
+      "final_blockers": [],
+      "status": "COMPLETE"
     }
   ],
   "packetCoverageCount": 50,

@@ -608,3 +608,6 @@
 
 ### Prefer Live In-Page Helper Results Over Stale Replay Assumptions
 *   **Lesson:** If a public locator app stays reviewable in browser context, trust the app’s current in-page helper results over an older replay assumption. Arizona’s DES Salesforce app still exposes public helper functions and service controls, but the live helper now yields explicit county fields for only 11 counties and no literal Greenlee, La Paz, Mohave, or Yuma assignment. That current public surface is stronger evidence than a stale replay narrative.
+
+### Browser-Context 403 Parity Confirms A Host-Family Blocker
+*   **Lesson:** If both raw HTTP and real browser review land on the same public `Access Denied` shell across the exact official roots, treat that host family as truly non-reviewable instead of a scraper-only false positive. New Hampshire DHHS, DOE, and NHES all stayed blocked in browser context on 2026-06-30, so the blocker is public-host availability, not low-token fetch drift.

@@ -1,0 +1,37 @@
+{
+  "batch": "batch430_new_hampshire_browser_access_denied_finality_v1",
+  "state": "new-hampshire",
+  "classification": "BLOCKED",
+  "index_safe": false,
+  "completeness_pct": 42,
+  "browser_verified_access_denied_hosts": [
+    "https://www.dhhs.nh.gov/",
+    "https://dhhs.nh.gov/",
+    "https://www.nh.gov/dhhs/",
+    "https://education.nh.gov/",
+    "https://www.education.nh.gov/",
+    "https://www.nh.gov/education/",
+    "https://my.doe.nh.gov/ehb/",
+    "https://nhes.nh.gov/",
+    "https://www.nhes.nh.gov/",
+    "https://www.nh.gov/nhes/"
+  ],
+  "browser_access_denied_count": 10,
+  "raw_and_browser_parity": true,
+  "dhhs_families_blocked": 5,
+  "education_families_blocked": 1,
+  "vr_families_blocked": 1,
+  "verified_statewide_only_families": [
+    "special_education_idea_part_b",
+    "protection_and_advocacy",
+    "parent_training_information_center",
+    "legal_aid",
+    "able_program",
+    "ssi_ssa_federal_reference"
+  ],
+  "counts_unchanged": {
+    "complete": 44,
+    "blocked": 6,
+    "indexSafe": 44
+  }
+}
