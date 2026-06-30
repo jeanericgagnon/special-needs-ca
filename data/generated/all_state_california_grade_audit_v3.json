@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T22:57:03.420Z",
+  "generatedAt": "2026-06-30T16:58:39.949Z",
   "stateCount": 50,
   "classifications": {
     "COMPLETE": 44,
@@ -575,9 +575,9 @@
         {
           "family": "county_local_disability_resources",
           "blocker_code": "county_office_exact_leaf_and_authoring_lanes_exhausted_before_county_complete_public_contract",
-          "blocker_evidence": "California county-local disability resources are no longer ambiguous scrape work. The county-office lane currently publishes 40/58 canonical county offices and leaves 18 counties unresolved. Of those unresolved counties, 16 exact same-domain leaves were retired after bounded lightweight fetch plus browser review, and 2 counties are author-first exhausted because no same-domain county leaf with address + phone + county-role proof remains. The family therefore remains explicitly blocked instead of green from the older statewide CDSS directory assumption.",
-          "blocked_exact_leaf_count": 16,
-          "author_first_exhausted_count": 2,
+          "blocker_evidence": "California county-local disability resources are no longer ambiguous scrape work. The county-office lane currently publishes 40/58 canonical county offices and leaves 18 counties unresolved. Of those unresolved counties, 14 exact same-domain leaves were retired after bounded lightweight fetch plus browser review, 0 counties still have reviewed exact county leaves worth bounded followup, and 4 county is author-first exhausted because no same-domain county leaf with address + phone + county-role proof remains. The family therefore remains explicitly blocked instead of green from the older statewide CDSS directory assumption.",
+          "blocked_exact_leaf_count": 14,
+          "author_first_exhausted_count": 4,
           "published_canonical_counties": 40,
           "missing_canonical_counties": 18
         }
@@ -594,9 +594,9 @@
         {
           "family": "county_local_disability_resources",
           "blocker_code": "county_office_exact_leaf_and_authoring_lanes_exhausted_before_county_complete_public_contract",
-          "blocker_evidence": "California county-local disability resources are no longer ambiguous scrape work. The county-office lane currently publishes 40/58 canonical county offices and leaves 18 counties unresolved. Of those unresolved counties, 16 exact same-domain leaves were retired after bounded lightweight fetch plus browser review, and 2 counties are author-first exhausted because no same-domain county leaf with address + phone + county-role proof remains. The family therefore remains explicitly blocked instead of green from the older statewide CDSS directory assumption.",
-          "blocked_exact_leaf_count": 16,
-          "author_first_exhausted_count": 2,
+          "blocker_evidence": "California county-local disability resources are no longer ambiguous scrape work. The county-office lane currently publishes 40/58 canonical county offices and leaves 18 counties unresolved. Of those unresolved counties, 14 exact same-domain leaves were retired after bounded lightweight fetch plus browser review, 0 counties still have reviewed exact county leaves worth bounded followup, and 4 county is author-first exhausted because no same-domain county leaf with address + phone + county-role proof remains. The family therefore remains explicitly blocked instead of green from the older statewide CDSS directory assumption.",
+          "blocked_exact_leaf_count": 14,
+          "author_first_exhausted_count": 4,
           "published_canonical_counties": 40,
           "missing_canonical_counties": 18
         }
